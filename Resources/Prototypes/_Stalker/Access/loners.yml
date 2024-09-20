@@ -1,0 +1,7 @@
+- type: accessLevel
+  id: Stalker
+  name: Одиночка
+
+- type: accessLevel
+  id: Neutral
+  name: Нейтралы

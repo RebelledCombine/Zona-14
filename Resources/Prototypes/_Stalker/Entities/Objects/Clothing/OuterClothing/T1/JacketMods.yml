@@ -1,0 +1,51 @@
+
+- type: entity
+  parent: STClothingOuterJacketBase
+  id: ClothingOuterJacketStalkerUpgrade
+  name: улучшенная куртка сталкера
+  description: Куртка сталкера приобрела немного допольнительной защиты от фиизического урона, так и от аномалий. Но к сожалению ткань не выглядит такой прочной.
+  suffix: ST, T1, Universal
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/jacket_stalker.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/jacket_stalker.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHatHoodJacketStalker
+    slot: head
+  - type: STWeight
+    self: 2
+  - type: Armor
+    armorClass: 1
+    modifiers:
+      flatReductions:
+        Blunt: 5
+        Slash: 5
+        Piercing: 5
+      coefficients:
+        Blunt: 0.90
+        Slash: 0.90
+        Piercing: 0.90
+        Heat: 0.80
+        Shock: 0.95
+        Radiation: 0.85
+        Compression: 0.90
+  - type: Craftable
+
+- type: entity
+  parent: STClothingOuterJacketBase
+  id: ClothingOuterAnomalyStalkerJacket
+  name: аномальная куртка сталкера
+  description: Обычная одежда начинающего сталкера. Не спасает носителя ни от пули, ни от аномалий, но удобна в ношении.
+  suffix: ST, T1, Аномальное
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/outerClothing/jacket_stalker.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/outerClothing/jacket_stalker.rsi
+    - type: ToggleableClothing
+      clothingPrototype: ClothingHeadHatHoodJacketStalker
+      slot: head
+    - type: PersonalDamage
+      staminaDamage: -1
+      interval: 1

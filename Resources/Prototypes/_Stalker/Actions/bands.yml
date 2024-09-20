@@ -1,0 +1,21 @@
+- type: entity
+  id: ActionToggleBands
+  name: снять / надеть нашивку
+  description: Переключает видимость нашивки вашей группировки.
+  noSpawn: true
+  components:
+  - type: InstantAction
+    checkCanInteract: false
+    icon: Interface/Actions/r_patch.png
+    event: !type:ToggleBandsEvent
+
+- type: entity
+  id: ActionChangeBand
+  name: сменить нашивку
+  description: Меняет нашивку
+  noSpawn: true
+  components:
+    - type: InstantAction
+      checkCanInteract: false
+      icon: Interface/Actions/r_patch.png
+      event: !type:ChangeBandEvent

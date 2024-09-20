@@ -1,0 +1,54 @@
+- type: entity
+  name: АКМ
+  suffix: ST
+  parent: STBaseWeaponRifle
+  id: STWeaponRifleStalkerAKM
+  description: Икона оружестроения, доведённый до ума и улучшенный АК, известный как АКМ. Самое популярное оружие в мире, использует калибр 7.62х39.
+  components:
+  - type: STWeight
+    self: 3.1
+  - type: Clothing
+    sprite: _Stalker/Objects/Weapons/Guns/Rifles/akm.rsi
+  - type: Item
+    sprite: _Stalker/Objects/Weapons/Guns/Rifles/akm.rsi
+  - type: Sprite
+    sprite: _Stalker/Objects/Weapons/Guns/Rifles/akm.rsi
+  - type: Gun
+    soundGunshot:
+      path: /Audio/_Stalker/Effects/Guns/103_shoot.ogg
+    projectileSpeed: 30
+    minAngle: 52
+    maxAngle: 125
+    angleIncrease: 6
+    angleDecay: 25
+    fireRate: 4
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: Base739Mag10
+        insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
+        priority: 4
+        whitelist:
+          tags:
+            - Magazine739
+      gun_module_muzzle:
+        name: Muzzle
+        priority: 3
+        whitelist:
+          tags:
+            - STWeaponModuleRifleSilencerRu
+      gun_module_scope:
+        name: Scope
+        priority: 2
+        whitelist:
+          tags:
+            - STWeaponModuleRifleScopeRu
+      gun_chamber:
+        name: Chamber
+        startingItem:
+        priority: 1
+        whitelist:
+          tags:
+            - Cartridge739

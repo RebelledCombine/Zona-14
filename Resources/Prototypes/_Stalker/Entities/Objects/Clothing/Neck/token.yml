@@ -1,0 +1,11 @@
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingStalkerNeckToken
+  name: воинский жетон
+  description: воинский жетон, с именем и фамилией носящего.
+  suffix: Stalker, Повязка
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/neck/token.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/neck/token.rsi

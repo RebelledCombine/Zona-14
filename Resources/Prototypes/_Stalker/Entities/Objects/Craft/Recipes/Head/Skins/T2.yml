@@ -1,0 +1,29 @@
+- type: lightCraftingRecipe
+  id:  STCraftSkinClothingHeadHelmetRenegate
+  results:
+    - ClothingHeadInfantryHelmetRenegate
+  steps:
+    firstIngredient: STSkinsKitRenegate
+    secondIngredient: ClothingHeadHelmetInfantry
+    keepFirst: true
+    time: 5
+
+- type: lightCraftingRecipe
+  id:  STCraftSkinClothingHeadInfantryHelmetDeserter
+  results:
+    - ClothingHeadInfantryHelmetDeserter
+  steps:
+    firstIngredient: STSkinsKitDeserters
+    secondIngredient: ClothingHeadHelmetInfantry
+    keepFirst: true
+    time: 5
+
+- type: lightCraftingRecipe
+  id: STCraftSkinClothingHeadHelmetVityaz1T
+  results:
+    - ClothingHeadHelmetVityaz1T
+  steps:
+    firstIngredient: STSkinsKitDeserters
+    secondIngredient: ClothingHeadHelmetVityaz1C
+    keepFirst: true
+    time: 5

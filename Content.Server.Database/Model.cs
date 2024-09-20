@@ -44,6 +44,8 @@ namespace Content.Server.Database
         public DbSet<RoleWhitelist> RoleWhitelists { get; set; } = null!;
         public DbSet<BanTemplate> BanTemplate { get; set; } = null!;
 
+        public DbSet<Stalker> Stalkers { get; set; } = null!; // stalker-changes
+        public DbSet<StalkerStats> StalkerStats { get; set; } = null!; // stalker-changes
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Preference>()
@@ -1206,4 +1208,43 @@ namespace Content.Server.Database
         /// <seealso cref="ServerBan.Hidden"/>
         public bool Hidden { get; set; }
     }
+
+    #region stalker-changes
+
+    public sealed class Stalker
+    {
+        [Required, Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int Id { get; set; }
+
+        [Required]
+        public string? Login { get; set; }
+
+        [Required]
+        public string? Storage { get; set; }
+
+        public Stalker(string storage, string login)
+        {
+            Storage = storage;
+            Login = login;
+        }
+    }
+
+    public sealed class StalkerStats
+    {
+        [Required, Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int Id { get; set; }
+
+        [Required]
+        public string Login { get; set; }
+
+        [Required]
+        public string Characteristic { get; set; }
+
+        [Required]
+        public float Value { get; set; }
+
+        public DateTime? LastTrained { get; set; }
+
+    }
+    #endregion
 }

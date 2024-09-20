@@ -1,0 +1,40 @@
+- type: craftRecipe
+  id: recipeClothingShoesPVH
+  resultProtos:
+    - ClothingShoesPVH
+  craftTime: 40
+  items:
+    CraftPolyarmidFiber:
+      amount: 1
+    CraftRubber:
+      amount: 3
+
+- type: craftRecipe
+  id: newrecipeJacketStalkerUpgrade
+  resultProtos:
+    - ClothingOuterJacketStalkerUpgrade
+  craftTime: 10
+  items:
+    ClothingOuterJacketStalker:
+      amount: 1
+    STCraftCottonFabricT1:
+      amount: 1
+    STCraftBasicThreadKitT1:
+      amount: 1
+    STClothingOuterJacketStalkerUpgradeBlueprint:
+      amount: 1
+      catalyzer: true
+
+- type: craftRecipe
+  id: newrecipeClothingOuterAnomalyStalkerJacket
+  resultProtos:
+  - ClothingOuterAnomalyStalkerJacket
+  craftTime: 10
+  items:
+    ClothingOuterAnomalyStalkerJacketBlueprint:
+      amount: 1
+      catalyzer: true
+    ClothingOuterJacketStalker:
+      amount: 1
+    ZoneArtifactFlower:
+      amount: 1

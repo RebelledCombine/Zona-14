@@ -1,0 +1,15 @@
+- type: entity
+  parent: STBaseBlueprint
+  id: ClothingOuterCoatPahanBlueprint
+  name: Рецепт плаща пахана
+  components:
+    - type: STBlueprint
+      blueprint: newrecipeClothingOuterCoatPahan
+
+- type: entity
+  parent: STBaseBlueprint
+  id: ClothingOuterCoatPoiskBlueprint
+  name: Рецепт плаща Поиска
+  components:
+    - type: STBlueprint
+      blueprint: newrecipeClothingOuterCoatPoisk

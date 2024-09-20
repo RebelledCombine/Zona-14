@@ -1,0 +1,218 @@
+- type: shopPreset
+  id: NpcSidor
+  itemsForSale:
+    # Thermal group - 1
+    ZoneArtifactFireball: 300
+    ZoneArtifactEye: 500
+    ZoneArtifactFlame: 1000
+    # Thermal group - 2
+    ZoneArtifactCristall: 1250
+    ZoneArtifactLithosphere: 2000
+    # Electrical group - 1
+    ZoneArtifactSparkler: 300
+    ZoneArtifactBattery: 600
+    ZoneArtifactFlash: 1200
+    ArtMoon: 1500
+    ZoneArtifactTesla: 2300
+    ZoneArtifactIce: 2500
+    # Gravity group - 1
+    ArtMedusa: 300
+    ZoneArtifactFlower: 500
+    ZoneArtifactNightStar: 1300
+    # Gravity group - 2
+    ZoneArtifactVyvert: 300
+    ZoneArtifactAmoeba: 500
+    ZoneArtifactGravi: 1500
+    ZoneArtifactGoldfish: 2000
+    ZoneArtifactSpring: 2500
+    ZoneArtifactFocus: 1000
+    ZoneArtifactStuntman: 2000
+    ZoneArtifactDistorter: 3000
+    ZoneArtifactSoul: 4000
+    # Acidic group - 1
+    ZoneArtifactBlood: 400
+    ZoneArtifactMeat: 800
+    ZoneArtifactKolobok: 1000
+    # Acidic group - 2
+    ZoneArtifactPellicle: 500
+    ZoneArtifactBaloon: 1800
+
+    # Smuggling
+    TradeBox: 1100
+############################# 65% от цены вкупки в городе
+    FoodMeatSpiderLeg: 40
+    MutantPartBlindDogTail: 75
+    MutantPartZombieHand: 350
+    MutantPartFleshEye: 200
+    MutantPartBoarHoof: 200
+    MutantPartPseudodogTail: 250
+    MutantPartSnorkFoot: 300
+    MutantPartLeshiyRoot: 420
+    MutantPartBloodsuckerTentacles: 500
+    MutantPartPseudogiantHeart: 2000
+    MutantPartOraculeEye: 2500
+  categories:
+    - name: Оружие
+      priority: 1
+      items:
+        STWeaponRifleStalkerSaiga545: 2000
+        STWeaponRifleStalkerFAL: 2500
+        WeaponPistolStalkerAPS: 750
+        STWeaponShotgunStalkerSPAS: 4000
+        STWeaponRifleStalkerL85: 2500
+        STWeaponShotgunToz34: 500
+
+    - name: Магазины
+      priority: 2
+      items:
+        545Mag20: 200
+        545Mag30: 400
+        Base751Mag10: 400
+        751Mag20: 550
+        BaseAPSMag: 400
+        GlockMag24: 400
+
+    - name: Боеприпасы
+      priority: 3
+      items:
+        6mmBuckshotBox: 400
+        7mmBuckshotBox: 100
+        919RIPBox: 400
+        919PSTBox: 300
+        918SP7Box: 300
+        545FMJBox: 500
+        545PCBox: 700
+        556FMJBox: 550
+        556M855Box: 900
+        751UNBox: 600
+        751M80Box: 1000
+    - name: Броня и снаряжение
+      priority: 4
+      items:
+        ClothingOuterJacketStalker: 39
+        STClothingOuterArmorLightPlateVestBaseStalker: 1909
+        STClothingOuterArmorRCBZ: 1350
+        ClothingOuterArmorZaryaStalker: 1947
+        # плащи
+        ClothingOuterCoatStalker: 349
+        # маски
+        ClothingMaskGasM40: 133
+        ClothingMaskGP5: 122
+        # шлемы
+        ClothingHeadHelmetInfantry: 1752
+        ClothingHeadHelmetVityaz1C: 2209
+        # рюкзаки
+        ClothingBackpackTacticBlackStalker: 600
+    - name: Утилиты
+      priority: 5
+      items:
+        CombatKnife: 25
+        TrashBag: 30
+        BoxZiptie: 50
+        BoxSafebox: 50
+        CheapLighter: 5
+        GeigerCounter: 50
+        BaseRadio: 50
+        FlashlightSeclite: 70
+        PowerCellHyper: 35
+        Defibrillator: 1000
+        ClothingShoesPVH: 200
+        HandheldGPSBasic: 50
+        Paper: 2
+        Pen: 5
+        Binocularus1: 1000
+        BoxFlare: 60
+        ClothingBackpackDuffelGreenStalkerHydroponic: 500
+        Beaker: 40
+        Syringe: 20
+        ClothingGoPro: 250
+        ExtendedEmergencyOxygenTankFilledStalker: 50
+        TrashDetectorTier1: 200
+        Matchbox: 20
+        HatchetStalker: 150
+        STCraftPlasticFittingT2: 400
+    - name: Аномалии
+      priority: 6
+      items:
+        # Bolt bags
+        STBoltBagFilled: 50
+        STBoltBagOliveGrayFilled: 50
+        STBoltBagFilledGolden: 5000
+        STBoltBagOliveGrayFilledGolden: 5000
+        # Artifact containers
+        BoxArtcont: 450
+        # Anomaly detectors
+        ZoneAnomalyDetectorAD1: 450
+        ZoneAnomalyDetectorAD2: 1050
+        # Artifact detectors
+        ZoneArtifactDetectorPulse: 200
+        ZoneArtifactDetectorHunter: 900
+    - name: Провизия
+      priority: 7
+      items:
+        STEnergyDrink: 200
+        DrinkVodkaBottleFull: 55
+        FoodBreadPlain: 35
+        DrinkFlaskOld: 30
+        DrinkWaterBottleFull: 45
+        FoodTinMRE: 120
+        DrinkLemonadehBottleFull: 50
+        FoodMeatSalami: 350
+    - name: Медицина
+      priority: 8
+      items:
+        PillDexalin: 10
+        PillDexalinPlusStalker: 30
+        radioprotectpill: 250
+        psyblock: 550
+        MedkitAI2: 250
+        Ointment: 15
+        Gauze: 20
+        Brutepack: 50
+        Tourniquet: 80
+        Bloodpack: 300
+        MedkitMilitary: 450
+        antiradpill: 150
+        MedkitCMSStalker: 750
+        MedkitGrizzlyStalker: 1050
+    - name: Кастомизация
+      priority: 9
+      items:
+        ClothingHeadHatBeaniehat: 10
+        ClothingMaskNeckFacemask: 10
+        ClothingMaskNeckBalaklava1: 10
+        ClothingUniformJumpsuitTacticool: 10
+        ClothingMaskNeckBalaklava2: 10
+        ClothingMaskNeckBalaklava3: 10
+        ClothingHeadBandMerc: 30
+        ClothingHeadBandSkull: 30
+        ClothingHeadHatUshanka: 30
+        ClothingHandsGlovesFingerless: 30
+        ClothingHandsGlovesMercFingerless: 60
+        ClothingShoesColorBlack: 30
+        ClothingShoesBootsWork: 30
+        ClothingShoesLeather: 30
+        ClothingShoesBootsMerc: 30
+        ClothingShoesSwat: 35
+        ClothingHeadHatBlacksoft: 10
+        ClothingHeadHatGreysoft: 10
+        ClothingHeadHatSovietUshankaStalker: 40
+        ClothingTshirtBlue: 10
+        ClothingTshirtOrange: 10
+        # Cloaks
+        ClothingCloakStalker: 30
+    - name: Развлечения
+      priority: 10
+      items:
+        # Dices
+        DiceBag: 20
+        # Board games
+        CheckerBoard: 40
+        ChessBoard: 40
+        BackgammonBoard: 40
+        # Battle maps
+        SandBattlemap: 60
+        GrassBattlemap: 60
+        # Instruments
+        AcousticGuitarInstrument: 300
+        AccordionInstrument: 500

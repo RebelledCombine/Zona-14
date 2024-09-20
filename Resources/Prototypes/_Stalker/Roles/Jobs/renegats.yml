@@ -1,0 +1,32 @@
+- type: job
+  id: StalkerRene
+  name: Ренегат
+  icon: rene
+  description: Просто какой-то дегенерат.
+  playTimeTracker: JobRenegat
+  requirements:
+    - !type:RoleTimeRequirement
+      role: JobRenegat
+      time: 1
+  startingGear: ReneGear
+  supervisors: "ебаш."
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: Access
+          tags:
+            - Renegat
+        - type: Bands
+          band: Stalker
+          bandIcon: rene
+        - type: BlockTackingHolyItems
+
+- type: startingGear
+  id: ReneGear
+  equipment:
+    id: BandPDA
+    belt: ClothingBeltStorageWaistbag
+    head: ClothingHeadHatGreyFlatcap
+    torso: ClothingTorsoTShirtColorBlack
+    legs: ClothingLegsJeansBlue
+    shoes: ClothingShoesBootsWork

@@ -470,6 +470,10 @@ namespace Content.Shared.CCVar
         public static readonly CVarDef<string> DiscordRoundEndRoleWebhook =
             CVarDef.Create("discord.round_end_role", string.Empty, CVar.SERVERONLY);
 
+        
+        public static readonly CVarDef<string> DiscordPdaMessageWebhook = // stalker-changes
+            CVarDef.Create("discord.round_pda_message_webhook", string.Empty, CVar.SERVERONLY | CVar.CONFIDENTIAL);
+
         /*
          * Tips
          */

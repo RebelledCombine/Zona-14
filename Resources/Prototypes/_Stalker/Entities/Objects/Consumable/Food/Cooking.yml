@@ -1,0 +1,220 @@
+# СОЗДАНИЕ
+
+- type: reaction
+  id: CreateCheese
+  impact: Low
+  quantized: true
+  conserveEnergy: false
+  reactants:
+    Milk:
+      amount: 40
+    Enzyme:
+      amount: 5
+      catalyst: true
+  effects:
+    - !type:CreateEntityReactionEffect
+      entity: FoodCheese
+
+- type: reaction
+  id: CreateChocolate
+  impact: Low
+  quantized: true
+  conserveEnergy: false
+  reactants:
+    FoodCocoaPowder:
+      amount: 4
+    Milk:
+      amount: 2
+    Sugar:
+      amount: 2
+  effects:
+    - !type:CreateEntityReactionEffect
+      entity: FoodSnackChocolateBar
+
+- type: reaction
+  id: CreateCakeBatter
+  impact: Low
+  quantized: true
+  conserveEnergy: false
+  reactants:
+    Flour:
+      amount: 15
+    Egg:
+      amount: 12
+    Sugar:
+      amount: 5
+  effects:
+    - !type:CreateEntityReactionEffect
+      entity: FoodCakeBatter
+
+- type: reaction
+  id: CreateButter
+  impact: Low
+  quantized: true
+  conserveEnergy: false
+  reactants:
+    Milk:
+      amount: 30
+    TableSalt:
+      amount: 5
+      catalyst: true
+  effects:
+    - !type:CreateEntityReactionEffect
+      entity: FoodButter
+
+- type: reaction
+  id: CreatePieDough
+  impact: Low
+  quantized: true
+  conserveEnergy: false
+  reactants:
+    Flour:
+      amount: 15
+    Egg:
+      amount: 12
+    TableSalt:
+      amount: 5
+  effects:
+    - !type:CreateEntityReactionEffect
+      entity: FoodDoughPie
+
+- type: reaction
+  id: CreateDough
+  impact: Low
+  quantized: true
+  conserveEnergy: false
+  reactants:
+    Flour:
+      amount: 15
+    Water:
+      amount: 10
+  effects:
+    - !type:CreateEntityReactionEffect
+      entity: FoodDough
+
+#ХЛЕБНОЕ
+
+- type: microwaveMealRecipe
+  id: RecipeBun
+  name: bun recipe
+  result: FoodBreadBun
+  time: 5
+  solids:
+    FoodDoughSlice: 1
+
+- type: microwaveMealRecipe
+  id: RecipePlainBurger
+  name: plain burger recipe
+  result: FoodBurgerPlain
+  time: 10
+  solids:
+    FoodBreadBun: 1
+    FoodMeatCutletCooked: 1
+
+- type: microwaveMealRecipe
+  id: RecipeCheeseburger
+  name: cheeseburger recipe
+  result: FoodBurgerCheese
+  time: 10
+  solids:
+    FoodBreadBun: 1
+    FoodMeatCutletCooked: 1
+    FoodCheeseSlice: 1
+
+- type: microwaveMealRecipe
+  id: RecipeBread
+  name: bread recipe
+  result: FoodBreadPlain
+  time: 10
+  solids:
+    FoodDough: 1
+
+- type: microwaveMealRecipe
+  id: RecipeButteredToast
+  name: buttered toast recipe
+  result: FoodBreadButteredToast
+  time: 5
+  solids:
+    FoodBreadPlainSlice: 1
+    FoodButter: 1
+
+- type: microwaveMealRecipe
+  id: RecipeFrenchToast
+  name: french toast recipe
+  result: FoodBreadFrenchToast
+  time: 5
+  reagents:
+    Milk: 5
+    Egg: 12
+  solids:
+    FoodBreadPlainSlice: 1
+
+- type: microwaveMealRecipe
+  id: RecipeGarlicBread
+  name: garlic bread slice recipe
+  result: FoodBreadGarlicSlice
+  time: 5
+  solids:
+    FoodBreadPlainSlice: 1
+    FoodGarlic: 1
+    FoodButter: 1
+
+- type: microwaveMealRecipe
+  id: RecipeSausage
+  name: sausage in the dough recipe
+  result: FoodMealPigblanket
+  time: 5
+  solids:
+    FoodDoughSlice: 2
+    FoodMeatSausageRaw: 1
+
+# ДРУГОЕ
+
+- type: microwaveMealRecipe
+  id: RecipeOnionRings
+  name: onion rings recipe
+  result: FoodOnionRings
+  time: 15
+  solids:
+    FoodOnionSlice: 1
+
+- type: microwaveMealRecipe
+  id: RecipeCookie
+  name: cookie recipe
+  result: FoodBakedCookie
+  time: 5
+  reagents:
+    Flour: 5
+    Sugar: 5
+  solids:
+    FoodButter: 1
+    FoodSnackChocolateBar: 1
+
+# Рецепты СТАЛКЕР
+
+- type: microwaveMealRecipe
+  id: RecipePlainBurgerDog
+  name: plain burger recipe
+  result: FoodBurgerDog
+  time: 10
+  solids:
+    FoodBreadBun: 1
+    FoodMeatDogCooked: 1
+
+- type: microwaveMealRecipe
+  id: RecipePlainBurgerBoar
+  name: plain burger recipe
+  result: FoodBurgerBoar
+  time: 10
+  solids:
+    FoodBreadBun: 1
+    FoodMeatBoarCooked: 1
+
+- type: microwaveMealRecipe
+  id: RecipePlainBurgerSpider
+  name: plain burger recipe
+  result: FoodBurgerSpider
+  time: 10
+  solids:
+    FoodBreadBun: 1
+    FoodMeatSpiderCooked: 1

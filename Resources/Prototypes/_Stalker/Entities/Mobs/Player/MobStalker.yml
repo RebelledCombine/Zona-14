@@ -1,0 +1,43 @@
+# Stalker
+- type: entity
+  save: false
+  name: Меченый
+  parent: BaseMobHuman
+  id: STMobStalker
+  components:
+    - type: STWeight
+      self: 70
+    - type: Psyonics
+      psy: 300
+    - type: PsyonicsActionShield
+    - type: PsyonicsActionDizzy
+
+- type: entity
+  name: Меченый Spawner
+  id: STSpawnMobStalker
+  parent: MarkerBase
+  suffix: DEBUG
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - sprite: Mobs/Species/Human/parts.rsi
+      state: full
+  - type: ConditionalSpawner
+    prototypes:
+    - STMobStalker
+
+
+- type: entity
+  id: STSpawnPointStalker
+  parent: SpawnPointJobBase
+  name: stalker
+  components:
+  - type: SpawnPoint
+    job_id: JobStalker
+    spawn_type: LateJoin
+  - type: Sprite
+    layers:
+      - state: green
+      - state: miner
+# end stalker

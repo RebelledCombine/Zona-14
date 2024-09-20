@@ -1,0 +1,107 @@
+- type: entity
+  suffix: Stalker, крафт
+  parent: BaseItem
+  id: LogStalker
+  name: бревно
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/towercap.rsi
+    layers:
+    - state: produce
+  - type: Craftable
+  - type: Tag
+    tags:
+    - LogStalker
+
+- type: entity
+  suffix: Stalker, крафт
+  parent: LogStalker
+  id: STLogStalkerT1
+  name: бревно сосны
+
+- type: entity
+  suffix: Stalker, крафт
+  parent: LogStalker
+  id: STLogStalkerT2
+  name: бревно берёзы
+
+- type: entity
+  suffix: Stalker, крафт
+  parent: LogStalker
+  id: STLogStalkerT3
+  name: бревно рыжего леса
+
+- type: entity
+  suffix: Stalker, крафт
+  parent: LogStalker
+  id: STLogStalkerT4
+  name: бревно ивы
+
+- type: Tag
+  id: LogStalker
+
+- type: lightCraftingRecipe
+  id: BonfireOnCraft
+  results:
+    - BonfireOn
+  steps:
+    firstIngredient: Matchstick
+    secondIngredient: BonfireOff
+    time: 5
+
+# ##################### Деревья
+
+- type: lightCraftingRecipe
+  id: CraftLogFromTree
+  results:
+    - LogStalker
+  steps:
+    firstIngredient: HatchetStalker
+    secondIngredient: BaseTree
+    keepFirst: true
+    exactSecond: false
+    time: 10
+
+- type: lightCraftingRecipe
+  id: CraftLogFromTree1
+  results:
+    - STCraftPinePlankT1
+  steps:
+    firstIngredient: HatchetStalker
+    secondIngredient: STLogStalkerT1
+    keepFirst: true
+    exactSecond: false
+    time: 5
+
+- type: lightCraftingRecipe
+  id: CraftLogFromTree2
+  results:
+    - STCraftBirchPlankT2
+  steps:
+    firstIngredient: HatchetStalker
+    secondIngredient: STLogStalkerT2
+    keepFirst: true
+    exactSecond: false
+    time: 5
+
+- type: lightCraftingRecipe
+  id: CraftLogFromTree3
+  results:
+    - STCraftOakPlankT3
+  steps:
+    firstIngredient: HatchetStalker
+    secondIngredient: STLogStalkerT3
+    keepFirst: true
+    exactSecond: false
+    time: 5
+
+- type: lightCraftingRecipe
+  id: CraftLogFromTree4
+  results:
+    - STCraftYewPlankT4
+  steps:
+    firstIngredient: HatchetStalker
+    secondIngredient: STLogStalkerT4
+    keepFirst: true
+    exactSecond: false
+    time: 5

@@ -1,0 +1,119 @@
+- type: entity
+  parent: BaseClothingTorso
+  id: ClothingTorsoTurtlenecksMercenary
+  name: mercenary turtlenecks
+  components:
+    - type: Sprite
+      sprite: _Stalker/Clothing/Torso/Turtlenecks/mercenary.rsi
+    - type: Clothing
+      sprite: _Stalker/Clothing/Torso/Turtlenecks/mercenary.rsi
+
+- type: entity
+  parent: BaseClothingTorso
+  id: ClothingTorsoTurtlenecksUN
+  name: un turtlenecks
+  components:
+    - type: Sprite
+      sprite: _Stalker/Clothing/Torso/Turtlenecks/un.rsi
+    - type: Clothing
+      sprite: _Stalker/Clothing/Torso/Turtlenecks/un.rsi
+
+- type: entity
+  parent: BaseClothingTorso
+  id: ClothingTorsoTurtlenecksFreedomCamouflage
+  name: freedom camouflage turtlenecks
+  components:
+    - type: Sprite
+      sprite: _Stalker/Clothing/Torso/Turtlenecks/freedom_camouflage.rsi
+    - type: Clothing
+      sprite: _Stalker/Clothing/Torso/Turtlenecks/freedom_camouflage.rsi
+
+- type: entity
+  parent: BaseClothingTorso
+  id: ClothingTorsoTurtlenecksDolgCamouflage
+  name: dolg camouflage turtlenecks
+  components:
+    - type: Sprite
+      sprite: _Stalker/Clothing/Torso/Turtlenecks/dolg_camouflage.rsi
+    - type: Clothing
+      sprite: _Stalker/Clothing/Torso/Turtlenecks/dolg_camouflage.rsi
+
+- type: entity
+  parent: BaseClothingTorso
+  id: ClothingTorsoTurtlenecksRedDolgCamouflage
+  name: red dolg camouflage turtlenecks
+  components:
+    - type: Sprite
+      sprite: _Stalker/Clothing/Torso/Turtlenecks/red_dolg_camouflage.rsi
+    - type: Clothing
+      sprite: _Stalker/Clothing/Torso/Turtlenecks/red_dolg_camouflage.rsi
+
+- type: entity
+  parent: BaseClothingTorso
+  id: ClothingTorsoTurtlenecksCovenant
+  name: covenant turtlenecks
+  components:
+    - type: Sprite
+      sprite: _Stalker/Clothing/Torso/Turtlenecks/covenant.rsi
+    - type: Clothing
+      sprite: _Stalker/Clothing/Torso/Turtlenecks/covenant.rsi
+
+- type: entity
+  parent: BaseClothingTorso
+  id: ClothingTorsoTurtlenecksCovenantHead
+  name: covenant head turtlenecks
+  components:
+    - type: Sprite
+      sprite: _Stalker/Clothing/Torso/Turtlenecks/covenant_head.rsi
+    - type: Clothing
+      sprite: _Stalker/Clothing/Torso/Turtlenecks/covenant_head.rsi
+
+- type: entity
+  parent: BaseClothingTorso
+  id: ClothingTorsoTurtlenecksDeserterCamouflage
+  name: deserter turtlenecks camouflage
+  components:
+    - type: Sprite
+      sprite: _Stalker/Clothing/Torso/Turtlenecks/deserter_camouflage.rsi
+    - type: Clothing
+      sprite: _Stalker/Clothing/Torso/Turtlenecks/deserter_camouflage.rsi
+
+- type: entity
+  parent: BaseClothingTorso
+  id: ClothingTorsoTurtlenecksUa
+  name: ukrainian army turtlenecks
+  components:
+    - type: Sprite
+      sprite: _Stalker/Clothing/Torso/Turtlenecks/ua.rsi
+    - type: Clothing
+      sprite: _Stalker/Clothing/Torso/Turtlenecks/ua.rsi
+
+- type: entity
+  parent: BaseClothingTorso
+  id: ClothingTorsoTurtlenecksUa2
+  name: ukrainian army turtlenecks
+  components:
+    - type: Sprite
+      sprite: _Stalker/Clothing/Torso/Turtlenecks/ua2.rsi
+    - type: Clothing
+      sprite: _Stalker/Clothing/Torso/Turtlenecks/ua2.rsi
+
+- type: entity
+  parent: BaseClothingTorso
+  id: ClothingTorsoTurtlenecksClearSky
+  name: clear sky turtlenecks
+  components:
+    - type: Sprite
+      sprite: _Stalker/Clothing/Torso/Turtlenecks/clearsky.rsi
+    - type: Clothing
+      sprite: _Stalker/Clothing/Torso/Turtlenecks/clearsky.rsi
+
+- type: entity
+  parent: BaseClothingTorso
+  id: ClothingTorsoTurtlenecksMilitary
+  name: military turtlenecks
+  components:
+  - type: Sprite
+    sprite: _Stalker/Clothing/Torso/Turtlenecks/military.rsi
+  - type: Clothing
+    sprite: _Stalker/Clothing/Torso/Turtlenecks/military.rsi

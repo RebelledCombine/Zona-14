@@ -1,0 +1,68 @@
+- type: job
+  id: StalkerAnomalist
+  name: Аномалист
+  icon: tec
+  description: Изучение и сохранение зоны. Активное использование аномалий и артефактов. Создание новых аномалий и артефактов. Создание аппаратуры на основе аномалий/артефактов или для работы с аномалиями.
+  playTimeTracker: JobStalkerAnomalist
+  requirements:
+    - !type:RoleTimeRequirement
+      role: JobStalkerAnomalist
+      time: 1
+  startingGear: AnomalistGear
+  supervisors: Вы работаете сами на себя
+  special:
+  - !type:AddComponentSpecial
+    components:
+    - type: Access
+      groups:
+        - Anomalist
+    - type: Bands
+      band: Stalker
+      bandIcon: tec
+    - type: BlockTackingHolyItems
+    - type: TeethPull
+      teethProto: ToothStalker
+      pullingItemTag: PliersStalker
+      teethCount: 3
+      initialTeeth: 3
+
+- type: startingGear
+  id: AnomalistGear
+  equipment:
+    id: AnomalistPDA
+    head: ClothingHeadHatBeaniehat
+    legs: ClothingLegsAnomalistTechnician
+    torso: ClothingTorsoAnomalistTechnician
+    shoes: ClothingShoesBootsCombatFilled
+    gloves: ClothingHandsGlovesFingerless
+    back: ClothingBackpackDuffelHikingVSRF
+    neck: ClothingNeckDogtagStalker
+
+- type: job
+  id: StalkerAnomalistGuardian
+  name: Хранитель
+  icon: tec
+  description: Изучение и сохранение зоны. Активное использование аномалий и артефактов. Создание новых аномалий и артефактов. Создание аппаратуры на основе аномалий/артефактов или для работы с аномалиями.
+  playTimeTracker: StalkerAnomalistGuardian
+  requirements:
+    - !type:RoleTimeRequirement
+      role: StalkerAnomalistGuardian
+      time: 1
+  startingGear: AnomalistGear
+  supervisors: Вы работаете сами на себя
+  special:
+  - !type:AddComponentSpecial
+    components:
+    - type: Access
+      groups:
+        - Anomalist
+        - AnomalistGuardian
+    - type: Bands
+      band: Stalker
+      bandIcon: tec
+    - type: BlockTackingHolyItems
+    - type: TeethPull
+      teethProto: ToothStalker
+      pullingItemTag: PliersStalker
+      teethCount: 3
+      initialTeeth: 3

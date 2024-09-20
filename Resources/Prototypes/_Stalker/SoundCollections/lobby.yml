@@ -1,0 +1,11 @@
+- type: soundCollection
+  id: LobbyMusic
+  files:
+    - /Audio/Lobby/soundtrack_menu_one.ogg
+    - /Audio/Lobby/soundtrack_menu_two.ogg
+    - /Audio/Lobby/soundtrack_menu_three.ogg
+    - /Audio/Lobby/dirge_for_the_planet_ua.ogg
+    - /Audio/Lobby/dirge_for_the_planet_org.ogg
+    - /Audio/Lobby/firelake_gitar.ogg
+    - /Audio/Lobby/stalker.ogg
+    - /Audio/Lobby/firelake_outro.ogg

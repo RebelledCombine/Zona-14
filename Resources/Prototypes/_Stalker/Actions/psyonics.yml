@@ -1,0 +1,131 @@
+- type: entity
+  id: ActionPsyonicsSpringboard
+  name: springboard
+  noSpawn: true
+  components:
+    - type: WorldTargetAction
+      useDelay: 15
+      range: 0
+      checkCanAccess: false
+      itemIconStyle: NoItem
+      icon:
+        sprite: _Stalker/Interface/Actions/psyonics.rsi
+        state: springboard
+      event: !type:PsyonicsActionSpringboardEvent
+
+- type: entity
+  id: ActionPsyonicsRift
+  name: rift
+  noSpawn: true
+  components:
+    - type: WorldTargetAction
+      useDelay: 10
+      range: 0
+      checkCanAccess: false
+      itemIconStyle: NoItem
+      icon:
+        sprite: _Stalker/Interface/Actions/psyonics.rsi
+        state: rift
+      event: !type:PsyonicsActionRiftEvent
+
+- type: entity
+  id: ActionPsyonicsSmoke
+  name: smoke
+  noSpawn: true
+  components:
+    - type: WorldTargetAction
+      useDelay: 10
+      range: 0
+      checkCanAccess: false
+      itemIconStyle: NoItem
+      icon:
+        sprite: _Stalker/Interface/Actions/psyonics.rsi
+        state: smoke
+      event: !type:PsyonicsActionSmokeEvent
+
+- type: entity
+  id: ActionPsyonicsGrab
+  name: grab
+  noSpawn: true
+  components:
+    - type: EntityTargetAction
+      useDelay: 10
+      range: 25
+      checkCanAccess: false
+      itemIconStyle: NoItem
+      icon:
+        sprite: _Stalker/Interface/Actions/psyonics.rsi
+        state: grab
+      event: !type:PsyonicsActionGrabEvent
+
+- type: entity
+  id: ActionPsyonicsFireball
+  name: fireball
+  noSpawn: true
+  components:
+    - type: WorldTargetAction
+      useDelay: 2
+      range: 0
+      checkCanAccess: false
+      itemIconStyle: NoItem
+      icon:
+        sprite: _Stalker/Interface/Actions/psyonics.rsi
+        state: fireball
+      event: !type:PsyonicsActionFireballEvent
+
+- type: entity
+  id: ActionPsyonicsShield
+  name: shield
+  noSpawn: true
+  components:
+    - type: InstantAction
+      useDelay: 2
+      checkCanAccess: false
+      itemIconStyle: NoItem
+      icon:
+        sprite: _Stalker/Interface/Actions/psyonics.rsi
+        state: shield
+      event: !type:PsyonicsActionShieldEvent
+
+- type: entity
+  id: ActionPsyonicsMeditation
+  name: meditation
+  noSpawn: true
+  components:
+    - type: InstantAction
+      useDelay: 2
+      checkCanAccess: false
+      itemIconStyle: NoItem
+      icon:
+        sprite: _Stalker/Interface/Actions/psyonics.rsi
+        state: meditation
+      event: !type:PsyonicsActionMeditationEvent
+
+- type: entity
+  id: ActionPsyonicsLight
+  name: light
+  noSpawn: true
+  components:
+    - type: InstantAction
+      useDelay: 2
+      checkCanAccess: false
+      itemIconStyle: NoItem
+      icon:
+        sprite: _Stalker/Interface/Actions/psyonics.rsi
+        state: light
+      event: !type:PsyonicsActionLightEvent
+
+- type: entity
+  id: ActionPsyonicsDizzy
+  name: dizzy
+  noSpawn: true
+  components:
+    - type: EntityTargetAction
+      useDelay: 10
+      range: 25
+      checkCanAccess: false
+      itemIconStyle: NoItem
+      icon:
+        sprite: _Stalker/Interface/Actions/psyonics.rsi
+        state: dizzy
+      event: !type:PsyonicsActionDizzyEvent

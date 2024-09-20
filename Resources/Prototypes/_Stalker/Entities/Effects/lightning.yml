@@ -1,0 +1,55 @@
+- type: entity
+  name: source lightning
+  id: SourceLightning
+  parent: ChargedLightning
+  noSpawn: true
+  components:
+    - type: Sprite
+      sprite: /Textures/Effects/lightning.rsi
+      drawdepth: Effects
+      layers:
+        - state: blue_lightning
+          shader: unshaded
+    - type: Electrified
+      ignoreInsulation: true
+      requirePower: false
+      shockDamage: 150
+      shockTime: 0
+    - type: Lightning
+      canArc: true
+      lightningPrototype: SourceLightning
+    - type: PointLight
+      enabled: true
+      color: "#f2fdff"
+      radius: 3.5
+      softness: 1
+      autoRot: true
+      castShadows: false
+
+- type: entity
+  name: garland lightning
+  id: GarlandLightning
+  parent: ChargedLightning
+  noSpawn: true
+  components:
+    - type: Sprite
+      sprite: /Textures/Effects/lightning.rsi
+      drawdepth: Effects
+      layers:
+        - state: blue_lightning
+          shader: unshaded
+    - type: Electrified
+      ignoreInsulation: true
+      requirePower: false
+      shockDamage: 30
+      shockTime: 0
+    - type: Lightning
+      canArc: false
+      lightningPrototype: GarlandLightning
+    - type: PointLight
+      enabled: true
+      color: "#f2fdff"
+      radius: 1.0
+      softness: 1
+      autoRot: true
+      castShadows: false

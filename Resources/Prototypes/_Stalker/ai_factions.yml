@@ -1,0 +1,18 @@
+- type: npcFaction
+  id: MutatedHunter
+  hostile:
+    - Passive
+    - Stalker
+    - Mutated
+
+- type: npcFaction
+  id: Mutated
+  hostile:
+    - Passive
+    - Stalker
+    - MutatedHunter
+
+- type: npcFaction
+  id: Stalker
+  hostile:
+    - Mutated

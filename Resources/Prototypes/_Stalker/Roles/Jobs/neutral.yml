@@ -1,0 +1,38 @@
+
+- type: job
+  id: StalkerNeutral
+  name: Нейтрал
+  icon: ne
+  description: Защитники слабых
+  playTimeTracker: JobNeutral
+  requirements:
+    - !type:RoleTimeRequirement
+      role: JobNeutral
+      time: 1
+  startingGear: NeutralGear
+  supervisors: Вы подчиняетесь своему лидеру
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: Access
+          tags:
+            - Neutral
+            - Stalker
+        - type: Bands
+          band: Stalker
+          bandIcon: ne
+        - type: BlockTackingHolyItems
+        - type: TeethPull
+          teethProto: ToothStalker
+          pullingItemTag: PliersStalker
+          teethCount: 3
+          initialTeeth: 3
+
+- type: startingGear
+  id: NeutralGear
+  equipment:
+    id: StalkerPDA
+    belt: ClothingBeltStorageWaistbag
+    torso: ClothingTorsoNeutral
+    legs: ClothingLegsJeansNeutral
+    shoes: ClothingShoesBootsCombatFilled

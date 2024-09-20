@@ -1,0 +1,27 @@
+- type: accessLevel
+  id: MayorCity
+  name: Мэр города
+
+- type: accessLevel
+  id: Prokuror
+  name: Прокурор
+
+- type: accessLevel
+  id: Magistrate
+  name: Судья
+
+- type: accessLevel
+  id: Priest
+  name: Священник
+
+- type: accessLevel
+  id: Barthender
+  name: Бармен
+
+- type: accessLevel
+  id: Doctor
+  name: Врач
+
+- type: accessLevel
+  id: HeadDoctor
+  name: Главный Врач

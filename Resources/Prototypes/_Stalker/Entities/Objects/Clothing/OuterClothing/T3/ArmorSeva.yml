@@ -1,0 +1,285 @@
+# Base
+- type: entity
+  parent: STClothingOuterArmorStorageBasic
+  id: STClothingOuterArmorSevaBase
+  name: костюм "Сева" #base
+  description: "Разработанный Киевским НИИ костюм замкнутого цикла, предназначенный специально для работы в условиях Зоны."
+  suffix: ST, T3, Env
+  noSpawn: true
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/seva_stalker.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/seva_stalker.rsi
+  - type: ToggleableClothing
+    clothingPrototype: STClothingHeadHardsuitSevaHelmBase
+    slot: head
+  - type: Craftable
+  - type: STWeight
+    self: 10
+  - type: Armor
+    armorClass: 2
+    modifiers:
+      flatReductions:
+        Blunt: 5
+        Slash: 5
+        Piercing: 5
+        Heat: 1
+        Radiation: 1
+        Caustic: 1
+        Shock: 1
+        Psy: 0
+      coefficients:
+        Blunt: 0.85
+        Slash: 0.85
+        Piercing: 0.85
+        Heat: 0.45
+        Radiation: 1
+        Caustic: 0.45
+        Shock: 0.45
+        Psy: 0.65
+        Compression: 0.5
+  - type: ExplosionResistance
+    damageCoefficient: 0.90
+
+- type: entity
+  parent: ClothingHeadHardsuitWithLightBase
+  id: STClothingHeadHardsuitSevaHelmBase
+  name: шлем севы #base
+  description: Несмотря, на преимущественно стеклянную состовляющую, довольно прочный.
+  noSpawn: true
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/seva_helm.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/seva_helm.rsi
+  - type: PointLight
+    color: orange
+  - type: BreathMask
+  - type: IngestionBlocker
+  - type: IdentityBlocker
+  - type: Tag
+    tags:
+      - BlockMask
+      - HidesNose
+  - type: PressureProtection
+    highPressureMultiplier: 0.1
+    lowPressureMultiplier: 1000
+  - type: Armor
+    armorClass: 1
+    modifiers:
+      flatReductions:
+        Radiation: 4
+        Blunt: 1
+        Slash: 1
+        Piercing: 1
+        Caustic: 1
+      coefficients:
+        Blunt: 0.95
+        Slash: 0.95
+        Piercing: 0.95
+        Compression: 0.95
+
+# Stalker
+
+- type: entity
+  parent: STClothingOuterArmorSevaBase
+  id: ClothingOuterArmorSevaStalker
+  name: костюм "Сева"
+  description: "Разработанный Киевским НИИ костюм замкнутого цикла, предназначенный специально для работы в условиях Зоны."
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/seva_stalker.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/seva_stalker.rsi
+
+# Sci
+
+- type: entity
+  parent: STClothingOuterArmorSevaBase
+  id: ClothingOuterArmorSevaSciRed
+  name: костюм "Сева" Учёных
+  description: "Разработанный Киевским НИИ костюм замкнутого цикла, предназначенный специально для работы в условиях Зоны."
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/outerClothing/seva_red.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/outerClothing/seva_red.rsi
+
+- type: entity
+  parent: STClothingOuterArmorSevaBase
+  id: ClothingOuterArmorSevaSciGreen
+  name: костюм "Сева" Учёных
+  description: "Разработанный Киевским НИИ костюм замкнутого цикла, предназначенный специально для работы в условиях Зоны."
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/outerClothing/seva_green.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/outerClothing/seva_green.rsi
+
+# Clear sky
+
+- type: entity
+  parent: STClothingOuterArmorSevaBase
+  id: ClothingOuterArmorSevaCN
+  name: костюм "Сева" Чистого Неба
+  description: "Разработанный Киевским НИИ костюм замкнутого цикла, предназначенный специально для работы в условиях Зоны. Имеет встроенный бронежилет. Имеет встроенный бронежилет и усиленную защиту по всем параметрам."
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/seva_cn.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/seva_cn.rsi
+
+# Merc
+
+- type: entity
+  parent: STClothingOuterArmorSevaBase
+  id: ClothingOuterArmorSevaMerc
+  name: костюм "Сева" Наёмников
+  description: Научный костюм наёмников действующих в ЧЗО, вариант «СЕВЫ», производимый по заказу наёмников.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/seva_merc.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/seva_merc.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHardsuitSevaHelmMerc
+    slot: head
+  - type: UserInterface
+    interfaces:
+    - key: enum.StorageUiKey.Key
+      type: StorageBoundUserInterface
+
+- type: entity
+  parent: STClothingHeadHardsuitSevaHelmBase
+  id: ClothingHeadHardsuitSevaHelmMerc
+  name: шлем севы наёмников
+  description: Несмотря, на преимущественно стеклянную состовляющую, довольно прочный.
+  noSpawn: true
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/seva_helm_merc.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/seva_helm_merc.rsi
+
+# Poisk
+
+- type: entity
+  parent: STClothingOuterArmorSevaBase
+  id: ClothingOuterArmorSevaPoisk
+  name: костюм «Сева» группы поиск
+  description: Модифицированный костюм замкнутого цикла, разработанный с учетом специфики работы в условиях Зоны для членов группировки "Поиск".
+  components:
+  - type: Sprite
+    sprite: _Stalker/Clothing/OuterClothing/seva_poisk.rsi
+  - type: Clothing
+    sprite: _Stalker/Clothing/OuterClothing/seva_poisk.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHardsuitSevaHelmPoisk
+
+- type: entity
+  parent: ClothingHeadHardsuitWithLightBase
+  id: ClothingHeadHardsuitSevaHelmPoisk
+  name: шлем севы поиска
+  description: Несмотря, на преимущественно стеклянную состовляющую, довольно прочный.
+  noSpawn: true
+  components:
+  - type: Sprite
+    sprite: _Stalker/Clothing/Head/Seva/poisk.rsi
+  - type: Clothing
+    sprite: _Stalker/Clothing/Head/Seva/poisk.rsi
+  - type: IdentityBlocker
+  - type: IngestionBlocker
+  - type: PointLight
+    color: white
+
+# Neutral
+
+- type: entity
+  parent: STClothingOuterArmorSevaBase
+  id: STClothingOuterArmorSevaNeutral
+  name: костюм "Сева" Нейтралов
+  description: "Разработанный Киевским НИИ костюм замкнутого цикла, был перекрашен членами группировки Нейтралов. Предназначен специально для работы в условиях Зоны."
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/outerClothing/seva_neutral.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/outerClothing/seva_neutral.rsi
+
+# Covenant
+
+- type: entity
+  parent: STClothingOuterArmorSevaBase
+  id: ClothingOuterArmorSevaCovenant
+  name: костюм Сева Завета
+  description: Разработанный Киевским НИИ костюм замкнутого цикла, предназначенный специально для работы в условиях Зоны. Имеет встроенный бронежилет. Имеет встроенный бронежилет и усиленную защиту по всем параметрам.
+  components:
+    - type: Sprite
+      sprite: _Stalker/Clothing/OuterClothing/Seva/covenant.rsi
+    - type: Clothing
+      sprite: _Stalker/Clothing/OuterClothing/Seva/covenant.rsi
+    - type: ToggleableClothing
+      clothingPrototype: ClothingHeadHardsuitSevaHelmCovenant
+
+# Seraphim
+
+- type: entity
+  parent: STClothingOuterArmorSevaBase
+  id: ClothingOuterArmorSevasera
+  name: костюм "Сева" Серафимов
+  description: "Разработанный Киевским НИИ костюм замкнутого цикла, предназначенный специально для работы в условиях Зоны. Имеет встроенный бронежилет. Имеет встроенный бронежилет и усиленную защиту по всем параметрам."
+  components:
+    - type: STWeight
+      self: 12
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/outerClothing/_Sera/seva.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/outerClothing/_Sera/seva.rsi
+    - type: ToggleableClothing
+      clothingPrototype: ClothingHeadHardsuitSevaHelmSera
+      slot: head
+
+- type: entity
+  parent: STClothingHeadHardsuitSevaHelmBase
+  id: ClothingHeadHardsuitSevaHelmSera
+  name: шлем севы серафимов
+  description: Несмотря, на преимущественно стеклянную состовляющую, довольно прочный.
+  noSpawn: true
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/hats/_Sera/seva_helm.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/hats/_Sera/seva_helm.rsi
+    - type: IdentityBlocker
+    - type: IngestionBlocker
+    - type: PointLight
+      color: orange
+
+# Project
+
+- type: entity
+  parent: STClothingOuterArmorSevaBase
+  id: ClothingOuterArmorSevaProjectGROM9
+  name: костюм «Сева GROM-9»
+  description: "Модифицированный костюм Сева версии «GROM-9» был разработан «Проектом» как надежный бронекостюм, обеспечивающий отличную защиту от пси-излучений и электрических разрядов."
+  components:
+  - type: Sprite
+    sprite: _Stalker/Groups/Project/seva_stalker.rsi
+  - type: Clothing
+    sprite: _Stalker/Groups/Project/seva_stalker.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHardsuitSevaHelmProjectGROM9
+    slot: head
+
+- type: entity
+  parent: STClothingHeadHardsuitSevaHelmBase
+  id: ClothingHeadHardsuitSevaHelmProjectGROM9
+  name: шлем севы «GROM-9»
+  description: Несмотря, на преимущественно стеклянную состовляющую, довольно прочный.
+  noSpawn: true
+  components:
+  - type: Sprite
+    sprite: _Stalker/Groups/Project/seva_helm.rsi
+  - type: Clothing
+    sprite: _Stalker/Groups/Project/seva_helm.rsi

@@ -1,0 +1,78 @@
+- type: job
+  id: StalkerPostulant
+  name: Паломник
+  icon: pilgrim
+  description: Послушник в монашеском ордене
+  playTimeTracker: JobPostulant
+  requirements:
+    - !type:RoleTimeRequirement
+      role: JobPostulant
+      time: 1
+  startingGear: PilgrimPostulantGear
+  supervisors: Вы подчиняетесь все кто выше вас в иерархии
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: Access
+          tags:
+          - Pilgrim
+          - Stalker
+        - type: Bands
+          band: Stalker
+          bandIcon: pilgrim
+        - type: TeethPull
+          teethProto: ToothStalker
+          pullingItemTag: PliersStalker
+          teethCount: 3
+          initialTeeth: 3
+
+- type: job
+  id: StalkerBishop
+  name: Епископ
+  icon: pilgrim
+  description: глава монашеского ордена
+  playTimeTracker: JobBishop
+  requirements:
+    - !type:RoleTimeRequirement
+      role: JobBishop
+      time: 1
+  startingGear: PilgrimMonkGear
+  supervisors: Вы подчиняетесь только господу нашему Богу
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: Psyonics
+        - type: PsyonicsActionLight
+        - type: Access
+          tags:
+          - Pilgrim
+          - Stalker
+        - type: Bands
+          band: Stalker
+          bandIcon: pilgrim
+        - type: TeethPull
+          teethProto: ToothStalker
+          pullingItemTag: PliersStalker
+          teethCount: 3
+          initialTeeth: 3
+
+- type: startingGear
+  id: PilgrimPostulantGear
+  equipment:
+    id: PilgrimPDA
+    cloak: ClothingNeckDogtagPilgrim
+    shoes: ClothingShoesBootsLaceup
+    legs: ClothingLegsJeansBlackCargo
+    torso: ClothingTorsoTShirtColorBlack
+    pocket1: STPilgrimBible
+
+- type: startingGear
+  id: PilgrimMonkGear
+  equipment:
+    id: PilgrimPDA
+    cloak: ClothingNeckCloakCassock
+    shoes: ClothingShoesBootsLaceup
+    legs: ClothingLegsJeansBlackCargo
+    pocket1: STPilgrimBible
+    torso: ClothingTorsoTShirtColorBlack
+    pocket2: ClothingNeckDogtagPilgrim

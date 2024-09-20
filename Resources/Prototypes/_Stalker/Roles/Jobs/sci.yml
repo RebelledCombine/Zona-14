@@ -1,0 +1,63 @@
+- type: job
+  id: StalkerScientist
+  name: Учёный
+  icon: sci
+  description: Основная цель - изучение всех аспектов Зоны, использование научных методов для дальнейшего объяснения того, что это за Зона и её предназначения.
+  playTimeTracker: JobStalkerSci
+  requirements:
+    - !type:RoleTimeRequirement
+      role: JobStalkerSci
+      time: 1
+  startingGear: SciGear
+  supervisors: Вы подчиняетесь старшему сотруднику и Институту.
+  special:
+    - !type:AddComponentSpecial
+      components:
+      - type: Access
+        groups:
+          - Sci
+      - type: Bands
+        band: Stalker
+        bandIcon: sci
+      - type: BlockTackingHolyItems
+      - type: TeethPull
+        teethProto: ToothStalker
+        pullingItemTag: PliersStalker
+        teethCount: 3
+        initialTeeth: 3
+
+- type: job
+  id: StalkerHeadScientist
+  name: Ведущий Учёный
+  icon: sci
+  description: Основная цель - изучение всех аспектов Зоны, использование научных методов для дальнейшего объяснения того, что это за Зона и её предназначения.
+  playTimeTracker: JobHeadStalkerSci
+  requirements:
+    - !type:RoleTimeRequirement
+      role: JobHeadStalkerSci
+      time: 1
+  startingGear: SciGear
+  supervisors: Вы подчиняетесь старшему сотруднику и Институту.
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: Access
+          groups:
+            - SciHead
+        - type: Bands
+          band: Stalker
+          bandIcon: sci
+        - type: BlockTackingHolyItems
+        - type: TeethPull
+          teethProto: ToothStalker
+          pullingItemTag: PliersStalker
+          teethCount: 3
+          initialTeeth: 3
+
+- type: startingGear
+  id: SciGear
+  equipment:
+    id: ScientistPDA
+    legs: ClothingLegsJeansSandCargo
+    shoes: ClothingShoesBootsCombatFilled
+    torso: ClothingTorsoShirtWhiteScientific

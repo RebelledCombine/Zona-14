@@ -1,0 +1,32 @@
+- type: entity
+  name: Вспышка
+  parent: Flash
+  id: AnomalyFlash
+  suffix: Stalker, Аномальное, 10 зарядов
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Anomaly/flash.rsi
+      layers:
+      - state: flash
+        map: [ "enum.FlashVisuals.BaseLayer" ]
+      - state: flashing
+        map: [ "enum.FlashVisuals.LightLayer" ]
+        visible: false
+        shader: unshaded
+    - type: LimitedCharges
+      maxCharges: 10
+      charges: 10
+
+- type: entity
+  parent: BaseItem
+  id: AnomalyBinoculars
+  name: аномальный бинокль
+  description: Старый советский армейский бинокль.
+  suffix: Stalker, Аномальное
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Devices/optic/t1.rsi
+      state: icon
+    - type: Item
+      sprite: _Stalker/Objects/Devices/optic/t1.rsi
+      state: icon

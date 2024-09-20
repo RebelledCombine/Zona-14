@@ -1,0 +1,38 @@
+﻿- type: lightCraftingRecipe
+  id: BarricadeDirectional1
+  results:
+    - null
+  steps:
+    firstIngredient: HatchetStalker
+    secondIngredient: BarricadeDirectional
+    keepFirst: true
+    time: 3
+
+- type: lightCraftingRecipe
+  id: LightCraftSandbag
+  results:
+  - sandbag
+  steps:
+    firstIngredient: HydroponicsToolSpade
+    secondIngredient: CraftBag
+    keepFirst: true
+    time: 15
+
+- type: lightCraftingRecipe
+  id: CutRazorWire
+  results:
+  - StalkerFenceMetalBrokenPerimetr
+  steps:
+    firstIngredient: BoltCutter
+    secondIngredient: StalkerFenceMetalStraightPerimetr
+    keepFirst: true
+    time: 5
+
+- type: lightCraftingRecipe
+  id: RestoreRazorWire
+  results:
+  - StalkerFenceMetalStraightPerimetr
+  steps:
+    firstIngredient: RazorWire
+    secondIngredient: StalkerFenceMetalBrokenPerimetr
+    time: 30

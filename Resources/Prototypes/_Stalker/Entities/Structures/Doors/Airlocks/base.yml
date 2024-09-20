@@ -1,0 +1,725 @@
+- type: entity
+  id: HermoDverTypeOneArmyClosed
+  name: гермодверь Правительства
+  parent: HermoDverTypeOne
+  description: Защитно-герметические и герметические устройства, которые используются для охраны защитных сооружений гражданской обороны от вредных воздействий различного характера.
+  suffix: Stalker, Офицалы
+  components:
+  - type: AccessReader
+    access: [["Military"]]
+
+- type: entity
+  id: MetalAltDoorFalloutArmyClosed
+  name: стальная дверь Правительства
+  parent: MetalAltDoorFallout
+  description: Крепкая стальная дверь с надёжным замком.
+  suffix: Stalker, Офицалы
+  components:
+    - type: AccessReader
+      access: [["Military"]]
+
+- type: entity
+  id: MetalAltDoorFalloutMilitaryClosed
+  name: стальная дверь ОКСОП
+  parent: MetalAltDoorFallout
+  description: Крепкая стальная дверь с надёжным замком.
+  suffix: Stalker, Военные
+  components:
+    - type: AccessReader
+      access: [["MilitaryBarraks"]]
+
+- type: entity
+  id: MetalAltDoorFalloutMilitaryStalkerClosed
+  name: стальная дверь Военсталов
+  parent: MetalAltDoorFallout
+  description: Крепкая стальная дверь с надёжным замком.
+  suffix: Stalker, Военсталы
+  components:
+    - type: AccessReader
+      access: [["MilitaryStalker"]]
+
+- type: entity
+  id: MetalAltDoorFalloutMilitaryOfficerClosed
+  name: стальная дверь ОКСОП
+  parent: MetalAltDoorFallout
+  description: Крепкая стальная дверь с надёжным замком.
+  suffix: Stalker, Военные, Офицер
+  components:
+    - type: AccessReader
+      access: [["MilitaryOfficer"]]
+
+- type: entity
+  id: MetalAltDoorFalloutUNClosed
+  name: стальная дверь Миротворцев
+  parent: MetalAltDoorFallout
+  description: Крепкая стальная дверь с надёжным замком.
+  suffix: Stalker, ООН
+  components:
+    - type: AccessReader
+      access: [["UN"]]
+
+- type: entity
+  id: MetalAltDoorFalloutBanditClosed
+  name: стальная дверь бандитов
+  parent: MetalAltDoorFallout
+  description: Крепкая стальная дверь с надёжным замком.
+  suffix: Stalker, Военные
+  components:
+  - type: AccessReader
+    access: [["Bandit"]]
+
+- type: entity
+  id: MetalGrateDoorFalloutMilitaryClosed
+  name: дверь КПЗ военных
+  parent: MetalGrateDoorFallout
+  description: Крепкая решётчатая дверь с надёжным замком.
+  suffix: Stalker, Военные
+  components:
+    - type: AccessReader
+      access: [["MilitaryBarraks"]]
+
+- type: entity
+  id: MetalAltDoorFalloutSciClosed
+  name: стальная дверь НИИ ЧАЗ
+  parent: MetalAltDoorFallout
+  description: Крепкая стальная дверь с надёжным замком.
+  suffix: Stalker, Учёные
+  components:
+    - type: AccessReader
+      access: [["SciBase"]]
+
+- type: entity
+  id: StalkerGateArmyClosed
+  name: ворота
+  parent: StalkerGate
+  description: Высокие стальные ворота, через которые вряд-ли получится перемехануть.
+  suffix: Stalker, Офицалы, Левая
+  components:
+    - type: AccessReader
+      access: [["Military"]]
+
+- type: entity
+  id: StalkerGaterArmyClosed
+  name: ворота
+  parent: StalkerGater
+  description: Высокие стальные ворота, через которые вряд-ли получится перемехануть.
+  suffix: Stalker, Офицалы, Правая
+  components:
+    - type: AccessReader
+      access: [["Military"]]
+
+- type: entity
+  id: HermoDverTypeOneBanditsClosed
+  name: гермодверь
+  parent: HermoDverTypeOne
+  description: Защитно-герметические и герметические устройства, которые используются для охраны защитных сооружений гражданской обороны от вредных воздействий различного характера.
+  suffix: Stalker, Бандиты
+  components:
+  - type: AccessReader
+    access: [["Bandit"]]
+
+- type: entity
+  id: HermoDverTypeOneJournalistClosed
+  name: гермодверь
+  parent: HermoDverTypeOne
+  description: Защитно-герметические и герметические устройства, которые используются для охраны защитных сооружений гражданской обороны от вредных воздействий различного характера.
+  suffix: Stalker, Бандиты
+  components:
+  - type: AccessReader
+    access: [["Journalist"]]
+
+- type: entity
+  id: HermoDverTypeOneDolgClosed
+  name: гермодверь
+  parent: HermoDverTypeOne
+  description: Защитно-герметические и герметические устройства, которые используются для охраны защитных сооружений гражданской обороны от вредных воздействий различного характера.
+  suffix: Stalker, Долг
+  components:
+  - type: AccessReader
+    access: [["Dolg"]]
+
+- type: entity
+  id: MetalAltDoorFalloutDolgClosed
+  name: стальная дверь
+  parent: MetalAltDoorFallout
+  description: Крепкая стальная дверь с надёжным замком.
+  suffix: Stalker, Долг
+  components:
+    - type: AccessReader
+      access: [["Dolg"]]
+
+- type: entity
+  id: HermoDverTypeOneLibertyClosed
+  name: гермодверь
+  parent: HermoDverTypeOne
+  description: Защитно-герметические и герметические устройства, которые используются для охраны защитных сооружений гражданской обороны от вредных воздействий различного характера.
+  suffix: Stalker, Свобода
+  components:
+  - type: AccessReader
+    access: [["Freedom"]]
+
+- type: entity
+  id: MetalAltDoorFalloutFreedomClosed
+  name: стальная дверь
+  parent: MetalAltDoorFallout
+  description: Крепкая стальная дверь с надёжным замком.
+  suffix: Stalker, Свобода
+  components:
+    - type: AccessReader
+      access: [["Freedom"]]
+
+- type: entity
+  id: HermoDverTypeOneCNClosed
+  name: гермодверь
+  parent: HermoDverTypeOne
+  description: Защитно-герметические и герметические устройства, которые используются для охраны защитных сооружений гражданской обороны от вредных воздействий различного характера.
+  suffix: Stalker, ЧН
+  components:
+    - type: AccessReader
+      access: [["CN"]]
+
+- type: entity
+  id: HermoDverTypeOneSeraClosed
+  name: гермодверь
+  parent: HermoDverTypeOne
+  description: Защитно-герметические и герметические устройства, которые используются для охраны защитных сооружений гражданской обороны от вредных воздействий различного характера.
+  suffix: Stalker, Серафимы
+  components:
+    - type: AccessReader
+      access: [["Seraphims"]]
+
+- type: entity
+  id: MetalAltDoorFalloutReneClosed
+  name: стальная дверь
+  parent: MetalAltDoorFallout
+  description: Крепкая стальная дверь с надёжным замком.
+  suffix: Stalker, Ренегаты
+  components:
+    - type: AccessReader
+      access: [["Renegat"]]
+
+- type: entity
+  id: MetalAltDoorFalloutDeserterClosed
+  name: стальная дверь
+  parent: MetalAltDoorFallout
+  description: Крепкая стальная дверь с надёжным замком.
+  suffix: Stalker, Отступники
+  components:
+    - type: AccessReader
+      access: [["Deserter"]]
+
+- type: entity
+  id: HermoDverTypeOneMercClosed
+  name: гермодверь
+  parent: HermoDverTypeOne
+  description: Защитно-герметические и герметические устройства, которые используются для охраны защитных сооружений гражданской обороны от вредных воздействий различного характера.
+  suffix: Stalker, Наёмники
+  components:
+  - type: AccessReader
+    access: [["Merc"]]
+
+- type: entity
+  id: HermoDverTypeTwoMercClosed
+  name: гермодверь
+  parent: HermoDverTypeTwo
+  description: Защитно-герметические и герметические устройства, которые используются для охраны защитных сооружений гражданской обороны от вредных воздействий различного характера.
+  suffix: Stalker, Наёмники
+  components:
+  - type: AccessReader
+    access: [["Merc"]]
+
+- type: entity
+  id: MetalDoorFalloutMercClosed
+  name: стальная дверь
+  parent: MetalDoorFallout
+  description: Крепкая стальная дверь с надёжным замком.
+  suffix: Stalker, Наёмники
+  components:
+  - type: AccessReader
+    access: [["Merc"]]
+
+- type: entity
+  id: MetalAltDoorFalloutMercClosed
+  name: стальная дверь
+  parent: MetalAltDoorFallout
+  description: Крепкая стальная дверь с надёжным замком.
+  suffix: Stalker, Наёмники
+  components:
+  - type: AccessReader
+    access: [["Merc"]]
+
+- type: entity
+  id: MetalWindowDoorFalloutMercClosed
+  name: стальная дверь
+  parent: MetalWindowDoorFallout
+  description: Крепкая стальная дверь, с окном и надёжным замком.
+  suffix: Stalker, Наёмники
+  components:
+  - type: AccessReader
+    access: [["Merc"]]
+
+- type: entity
+  id: MetalGrateDoorFalloutMercClosed
+  name: укрепленная решетчатая дверь
+  parent: MetalGrateDoorFallout
+  description: Крепкая решётчатая дверь с надёжным замком.
+  suffix: Stalker, Наёмники
+  components:
+  - type: AccessReader
+    access: [["Merc"]]
+
+- type: entity
+  id: MetalBarDoorFalloutMercClosed
+  name: решетчатая дверь
+  parent: MetalBarDoorFallout
+  description: Решётчатая дверь с надёжным замком.
+  suffix: Stalker, Наёмники
+  components:
+  - type: AccessReader
+    access: [["Merc"]]
+
+- type: entity
+  id: MetalDoorFalloutSBUClosed
+  name: стальная дверь
+  parent: MetalDoorFallout
+  description: Крепкая стальная дверь с надёжным замком.
+  suffix: Stalker, СБУ
+  components:
+  - type: AccessReader
+    access: [["MilitaryHead"]]
+
+- type: entity
+  id: MetalAltDoorFalloutSBUClosed
+  name: стальная дверь
+  parent: MetalAltDoorFallout
+  description: Крепкая стальная дверь с надёжным замком.
+  suffix: Stalker, СБУ
+  components:
+  - type: AccessReader
+    access: [["MilitaryHead"]]
+
+- type: entity
+  id: MetalWindowDoorFalloutSBUClosed
+  name: стальная дверь
+  parent: MetalWindowDoorFallout
+  description: Крепкая стальная дверь, с окном и надёжным замком.
+  suffix: Stalker, СБУ
+  components:
+  - type: AccessReader
+    access: [["MilitaryHead"]]
+
+- type: entity
+  id: MetalGrateDoorFalloutSBUClosed
+  name: укрепленная решетчатая дверь
+  parent: MetalGrateDoorFallout
+  description: Крепкая решётчатая дверь с надёжным замком.
+  suffix: Stalker, СБУ
+  components:
+  - type: AccessReader
+    access: [["MilitaryHead"]]
+
+- type: entity
+  id: HermoDverTypeOneGrehClosed
+  name: гермодверь
+  parent: HermoDverTypeOne
+  description: Защитно-герметические и герметические устройства, которые используются для охраны защитных сооружений гражданской обороны от вредных воздействий различного характера.
+  suffix: Stalker, Грех
+  components:
+  - type: AccessReader
+    access: [["Greh"]]
+
+- type: entity
+  id: HermoDverTypeTwoGrehClosed
+  name: гермодверь
+  parent: HermoDverTypeTwo
+  description: Защитно-герметические и герметические устройства, которые используются для охраны защитных сооружений гражданской обороны от вредных воздействий различного характера.
+  suffix: Stalker, Грех
+  components:
+  - type: AccessReader
+    access: [["Greh"]]
+
+- type: entity
+  id: MetalDoorFalloutGrehClosed
+  name: стальная дверь
+  parent: MetalDoorFallout
+  description: Крепкая стальная дверь с надёжным замком.
+  suffix: Stalker, Грех
+  components:
+  - type: AccessReader
+    access: [["Greh"]]
+
+- type: entity
+  id: MetalAltDoorFalloutGrehClosed
+  name: стальная дверь
+  parent: MetalAltDoorFallout
+  description: Крепкая стальная дверь с надёжным замком.
+  suffix: Stalker, Грех
+  components:
+  - type: AccessReader
+    access: [["Greh"]]
+
+- type: entity
+  id: MetalWindowDoorFalloutGrehClosed
+  name: стальная дверь
+  parent: MetalWindowDoorFallout
+  description: Крепкая стальная дверь, с окном и надёжным замком.
+  suffix: Stalker, Грех
+  components:
+  - type: AccessReader
+    access: [["Greh"]]
+
+- type: entity
+  id: MetalBarDoorFalloutGrehClosed
+  name: решетчатая дверь
+  parent: MetalBarDoorFallout
+  description: Решётчатая дверь с надёжным замком.
+  suffix: Stalker, Грех
+  components:
+  - type: AccessReader
+    access: [["Greh"]]
+
+- type: entity
+  id: MetalDoorFalloutJournalistClosed
+  name: стальная дверь
+  parent: MetalDoorFallout
+  description: Крепкая стальная дверь с надёжным замком.
+  suffix: Stalker, Журналисты
+  components:
+  - type: AccessReader
+    access: [["Journalist"]]
+
+
+- type: entity
+  id: HermoDverTypeOneSciClosed
+  name: гермодверь
+  parent: HermoDverTypeOne
+  description: Защитно-герметические и герметические устройства, которые используются для охраны защитных сооружений гражданской обороны от вредных воздействий различного характера.
+  suffix: Stalker, Учёные
+  components:
+  - type: AccessReader
+    access: [["SciBase"]]
+
+- type: entity
+  id: HermoDverTypeTwoSciClosed
+  name: гермодверь
+  parent: HermoDverTypeTwo
+  description: Защитно-герметические и герметические устройства, которые используются для охраны защитных сооружений гражданской обороны от вредных воздействий различного характера.
+  suffix: Stalker, Учёные
+  components:
+  - type: AccessReader
+    access: [["SciBase"]]
+
+- type: entity
+  id: MetalDoorFalloutSciClosed
+  name: стальная дверь
+  parent: MetalDoorFallout
+  description: Крепкая стальная дверь с надёжным замком.
+  suffix: Stalker, Учёные
+  components:
+  - type: AccessReader
+    access: [["SciBase"]]
+
+- type: entity
+  id: MetalWindowDoorFalloutSciClosed
+  name: стальная дверь
+  parent: MetalWindowDoorFallout
+  description: Крепкая стальная дверь, с окном и надёжным замком.
+  suffix: Stalker, Учёные
+  components:
+  - type: AccessReader
+    access: [["SciBase"]]
+
+- type: entity
+  id: MetalGrateDoorFalloutSciClosed
+  name: укрепленная решетчатая дверь
+  parent: MetalGrateDoorFallout
+  description: Крепкая решётчатая дверь с надёжным замком.
+  suffix: Stalker, Учёные
+  components:
+  - type: AccessReader
+    access: [["SciBase"]]
+
+- type: entity
+  id: MetalBarDoorFalloutSciClosed
+  name: решетчатая дверь
+  parent: MetalBarDoorFallout
+  description: Решётчатая дверь с надёжным замком.
+  suffix: Stalker, Учёные
+  components:
+  - type: AccessReader
+    access: [["SciBase"]]
+
+- type: entity
+  id: MetalBarDoorFalloutSciHeadClosed
+  name: гермодверь
+  parent: HermoDverTypeOne
+  description: Защитно-герметические и герметические устройства, которые используются для охраны защитных сооружений гражданской обороны от вредных воздействий различного характера.
+  suffix: Stalker, Учёные, Лидер
+  components:
+  - type: AccessReader
+    access: [["SciHead"]]
+
+- type: entity
+  id: WoodRedDoorSciHeadClosed
+  name: красная деревянная дверь
+  parent: WoodRedDoorFallout
+  description: Деревянная дверь, окрашена в красный цвет. Открывается быстрее обычной двери, с надёжным замком.
+  suffix: Stalker, Учёные, Лидер
+  components:
+  - type: AccessReader
+    access: [["SciHead"]]
+
+- type: entity
+  id: MetalRedDoorFalloutSciHeadClosed
+  name: красная стальная дверь
+  parent: MetalRedDoorFallout
+  description: Стальная дверь с надёжным замком. Окрашена в красный цвет.
+  suffix: Stalker, Учёные, Лидер
+  components:
+  - type: AccessReader
+    access: [["SciHead"]]
+
+- type: entity
+  id: MetalDoorFalloutSciHeadClosed
+  name: стальная дверь
+  parent: MetalDoorFallout
+  description: Крепкая стальная дверь с надёжным замком.
+  suffix: Stalker, Учёные, Лидер
+  components:
+  - type: AccessReader
+    access: [["SciHead"]]
+
+- type: entity
+  id: HermoDverTypeOneCircusClosed
+  name: гермодверь
+  parent: HermoDverTypeOne
+  description: Защитно-герметические и герметические устройства, которые используются для охраны защитных сооружений гражданской обороны от вредных воздействий различного характера.
+  suffix: Stalker, Циркачи
+  components:
+  - type: AccessReader
+    access: [["Circus"]]
+
+- type: entity
+  id: HermoDverTypeTwoCircusClosed
+  name: гермодверь
+  parent: HermoDverTypeTwo
+  description: Защитно-герметические и герметические устройства, которые используются для охраны защитных сооружений гражданской обороны от вредных воздействий различного характера.
+  suffix: Stalker, Циркачи
+  components:
+  - type: AccessReader
+    access: [["Circus"]]
+
+- type: entity
+  id: MetalDoorFalloutCircusClosed
+  name: стальная дверь
+  parent: MetalDoorFallout
+  description: Крепкая стальная дверь с надёжным замком.
+  suffix: Stalker, Циркачи
+  components:
+  - type: AccessReader
+    access: [["Circus"]]
+
+- type: entity
+  id: MetalWindowDoorFalloutCircusClosed
+  name: стальная дверь
+  parent: MetalWindowDoorFallout
+  description: Крепкая стальная дверь, с окном и надёжным замком.
+  suffix: Stalker, Циркачи
+  components:
+  - type: AccessReader
+    access: [["Circus"]]
+
+- type: entity
+  id: MetalGrateDoorFalloutCircusClosed
+  name: укрепленная решетчатая дверь
+  parent: MetalGrateDoorFallout
+  description: Крепкая решётчатая дверь с надёжным замком.
+  suffix: Stalker, Циркачи
+  components:
+  - type: AccessReader
+    access: [["Circus"]]
+
+- type: entity
+  id: MetalBarDoorFalloutCircusClosed
+  name: решетчатая дверь
+  parent: MetalBarDoorFallout
+  description: Решётчатая дверь с надёжным замком.
+  suffix: Stalker, Циркачи
+  components:
+  - type: AccessReader
+    access: [["Circus"]]
+
+- type: entity
+  id: MilitaryDoor1
+  name: военные ворота
+  parent: BaseMaterialDoor
+  description: Проезд в стене или ограде, запираемый створами.
+  suffix: Stalker, Военные
+  components:
+  - type: Occluder
+    boundingBox: "-1.5,-0.5,1.5,0.5"
+  - type: AccessReader
+    access: [["Military"]]
+  - type: Sprite
+    sprite: _Stalker/Structures/Doors/Steels/military_door.rsi
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-1.4,-0.5,1.4,0.5"
+        density: 1000
+        mask:
+        - FullTileMask
+        layer:
+        - AirlockLayer
+
+- type: entity
+  id: MetalDoorFalloutJabaClosed
+  name: стальная дверь
+  parent: MetalDoorFallout
+  description: Крепкая стальная дверь с надёжным замком.
+  suffix: Stalker, Жабы
+  components:
+  - type: AccessReader
+    access: [["Jaba"]]
+
+- type: entity
+  id: MetalWindowDoorFalloutJabaClosed
+  name: стальная дверь
+  parent: MetalWindowDoorFallout
+  description: Крепкая стальная дверь, с окном и надёжным замком.
+  suffix: Stalker, Жабы
+  components:
+  - type: AccessReader
+    access: [["Jaba"]]
+
+- type: entity
+  id: MetalWindowDoorFalloutNeutralsClosed
+  name: стальная дверь
+  parent: MetalWindowDoorFallout
+  description: Крепкая стальная дверь, с окном и надёжным замком.
+  suffix: Stalker, Нейтралы
+  components:
+  - type: AccessReader
+    access: [["Neutral"]]
+
+- type: entity
+  id: STMetalBarDoorFalloutNeutralsClosed
+  name: решетчатая дверь
+  parent: MetalBarDoorFallout
+  description: Решётчатая дверь с надёжным замком.
+  suffix: Stalker, Нейтралы
+  components:
+  - type: AccessReader
+    access: [["Neutral"]]
+
+- type: entity
+  id: STHermoDverTypeTwoNeutralsClosed
+  name: гермодверь
+  parent: HermoDverTypeTwo
+  description: Защитно-герметические и герметические устройства, которые используются для охраны защитных сооружений гражданской обороны от вредных воздействий различного характера.
+  suffix: Stalker, Нейтралы
+  components:
+  - type: AccessReader
+    access: [["Neutral"]]
+
+- type: entity
+  id: STMetalAltDoorFalloutNeutralsClosed
+  name: стальная дверь нейтралов
+  parent: MetalAltDoorFallout
+  description: Крепкая стальная дверь с надёжным замком.
+  suffix: Stalker, Нейтралы
+  components:
+  - type: AccessReader
+    access: [["Neutral"]]
+
+- type: entity
+  id: MetalAltDoorFalloutPoliceOfficerClosed
+  name: стальная дверь полиции
+  parent: MetalAltDoorFallout
+  description: Крепкая стальная дверь с надёжным замком.
+  suffix: Stalker, Полиция
+  components:
+    - type: AccessReader
+      access: [["PoliceOfficer"]]
+
+- type: entity
+  id: MetalWindowDoorFalloutPoiskClosed
+  name: стальная дверь
+  parent: MetalWindowDoorFallout
+  description: Крепкая стальная дверь, с окном и надёжным замком.
+  suffix: Stalker, Поиск
+  components:
+  - type: AccessReader
+    access: [["Poisk"]]
+
+- type: entity
+  id: STMetalBarDoorFalloutPoiskClosed
+  name: решетчатая дверь
+  parent: MetalBarDoorFallout
+  description: Решётчатая дверь с надёжным замком.
+  suffix: Stalker, Поиск
+  components:
+  - type: AccessReader
+    access: [["Poisk"]]
+
+- type: entity
+  id: STHermoDverTypeTwoPoiskClosed
+  name: гермодверь
+  parent: HermoDverTypeTwo
+  description: Защитно-герметические и герметические устройства, которые используются для охраны защитных сооружений гражданской обороны от вредных воздействий различного характера.
+  suffix: Stalker, Поиск
+  components:
+  - type: AccessReader
+    access: [["Poisk"]]
+
+- type: entity
+  id: STMetalAltDoorFalloutPoiskClosed
+  name: стальная дверь
+  parent: MetalAltDoorFallout
+  description: Крепкая стальная дверь с надёжным замком.
+  suffix: Stalker, Поиск
+  components:
+  - type: AccessReader
+    access: [["Poisk"]]
+
+- type: entity
+  id: MetalWindowDoorFalloutProjectClosed
+  name: стальная дверь
+  parent: MetalWindowDoorFallout
+  description: Крепкая стальная дверь, с окном и надёжным замком.
+  suffix: Stalker, Проект
+  components:
+  - type: AccessReader
+    access: [["Project"]]
+
+- type: entity
+  id: STMetalBarDoorFalloutProjectClosed
+  name: решетчатая дверь
+  parent: MetalBarDoorFallout
+  description: Решётчатая дверь с надёжным замком.
+  suffix: Stalker, Проект
+  components:
+  - type: AccessReader
+    access: [["Project"]]
+
+- type: entity
+  id: STHermoDverTypeTwoProjectClosed
+  name: гермодверь
+  parent: HermoDverTypeTwo
+  description: Защитно-герметические и герметические устройства, которые используются для охраны защитных сооружений гражданской обороны от вредных воздействий различного характера.
+  suffix: Stalker, Проект
+  components:
+  - type: AccessReader
+    access: [["Project"]]
+
+- type: entity
+  id: STMetalAltDoorFalloutProjectClosed
+  name: стальная дверь
+  parent: MetalAltDoorFallout
+  description: Крепкая стальная дверь с надёжным замком.
+  suffix: Stalker, Проект
+  components:
+  - type: AccessReader
+    access: [["Project"]]

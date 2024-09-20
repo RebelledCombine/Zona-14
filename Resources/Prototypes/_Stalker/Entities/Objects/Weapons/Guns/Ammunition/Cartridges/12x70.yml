@@ -1,0 +1,150 @@
+# 12x70
+
+- type: entity
+  id: BaseShotgunBullet
+  name: shell (.50)
+  parent: BaseCartridgeCaselessRifle
+  abstract: true
+  components:
+  - type: STWeight
+    self: 0.05
+  - type: Tag
+    tags:
+    - Cartridge
+    - ShellShotgun
+  - type: CartridgeAmmo
+    proto: Bullet7mmBuckshot
+    count: 8
+    spread: 25
+    soundEject:
+      collection: ShellEject
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/shotgun_shell.rsi
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: Trash
+    time: 300
+
+- type: entity
+  id: Cartridge7mmBuckshot
+  name: 12x70 Картечь 7мм
+  parent: BaseShotgunBullet
+  components:
+  - type: CartridgeAmmo
+    count: 12
+    proto: Bullet7mmBuckshot
+
+- type: entity
+  id: Cartridge6mmBuckshot
+  name: 12x70 Картечь 6.5мм "Экспресс"
+  parent: BaseShotgunBullet
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet6mmBuckshot
+    count: 9
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/shotgun_shell.rsi
+    layers:
+      - state: express
+        map: [ "enum.AmmoVisualLayers.Base" ]
+
+- type: entity
+  id: CartridgeShotgunBullet
+  name: 12x70 Пуля
+  parent: BaseShotgunBullet
+  components:
+  - type: CartridgeAmmo
+    proto: BulletShotgunBullet
+    count: 1
+  - type: Tag
+    tags:
+    - Cartridge
+    - ShellShotgun
+    - CartridgeShotgunBullet
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/shotgun_shell.rsi
+    layers:
+      - state: bullet
+        map: [ "enum.AmmoVisualLayers.Base" ]
+
+- type: entity
+  id: CartridgeShotgunBulletRIP
+  name: 12x70 Пуля RIP
+  parent: BaseShotgunBullet
+  components:
+  - type: CartridgeAmmo
+    proto: BulletShotgunRIP
+    count: 1
+  - type: Tag
+    tags:
+    - Cartridge
+    - ShellShotgun
+    - CartridgeShotgunBulletRIP
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/shotgun_shell.rsi
+    layers:
+      - state: bullet_RIP
+        map: [ "enum.AmmoVisualLayers.Base" ]
+
+- type: entity
+  id: CartridgeShotgunDart
+  name: 12x70 Дротик
+  parent: BaseShotgunBullet
+  components:
+  - type: CartridgeAmmo
+    proto: BulletShotgunDart
+    count: 1
+  - type: Tag
+    tags:
+    - Cartridge
+    - ShellShotgun
+    - CartridgeShotgunDart
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/shotgun_shell.rsi
+    layers:
+      - state: zabIl
+        map: [ "enum.AmmoVisualLayers.Base" ]
+
+- type: entity
+  id: ShellShotgunBeanbagStalker
+  name: 12х70 нелетальный
+  parent: BaseShellShotgun
+  components:
+    - type: Sprite
+      layers:
+        - state: beanbag
+          map: [ "enum.AmmoVisualLayers.Base" ]
+    - type: CartridgeAmmo
+      proto: PelletShotgunBeanbagStalker
+      count: 1
+    - type: SpentAmmoVisuals
+      state: "beanbag"
+
+- type: entity
+  id: Cartridge8mmBuckshot
+  name: 12x70 Картечь 8.5мм "Магнум"
+  parent: BaseShotgunBullet
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet8mmBuckshot
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/shotgun_shell.rsi
+    layers:
+      - state: magnum
+        map: [ "enum.AmmoVisualLayers.Base" ]
+
+- type: entity
+  id: CartridgeShotgunFlechette
+  name: 12x70 Флешетта
+  parent: BaseShotgunBullet
+  components:
+  - type: CartridgeAmmo
+    proto: BulletShotgunFlechette
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/shotgun_shell.rsi
+    layers:
+      - state: flechette
+        map: [ "enum.AmmoVisualLayers.Base" ]

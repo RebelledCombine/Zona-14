@@ -1,0 +1,67 @@
+- type: job
+  id: StalkerBandit
+  name: Бандит
+  icon: band
+  description: Рейдеры и мародеры Зоны, начиная от мелких головорезов и гангстеров и заканчивая организованными преступными синдикатами.
+  playTimeTracker: JobBandit
+  requirements:
+    - !type:RoleTimeRequirement
+      role: JobBandit
+      time: 1
+  startingGear: BandGear
+  supervisors: Вы никому не подчиняетесь...
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: Access
+          tags:
+            - Bandit
+            - BanditHead
+        - type: Bands
+          band: Stalker
+          bandIcon: band
+        - type: BlockTackingHolyItems
+        - type: TeethPull
+          teethProto: ToothStalker
+          pullingItemTag: PliersStalker
+          teethCount: 3
+          initialTeeth: 3
+
+- type: job
+  id: StalkerHeadBandit
+  name: Пахан
+  icon: band
+  description: Рейдеры и мародеры Зоны, начиная от мелких головорезов и гангстеров и заканчивая организованными преступными синдикатами.
+  playTimeTracker: JobHeadBandit
+  requirements:
+    - !type:RoleTimeRequirement
+      role: JobHeadBandit
+      time: 1
+  startingGear: BandGear
+  supervisors: Вы никому не подчиняетесь...
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: Access
+          tags:
+          - Bandit
+          - BanditHead
+        - type: Bands
+          band: Stalker
+          bandIcon: band
+        - type: BlockTackingHolyItems
+        - type: TeethPull
+          teethProto: ToothStalker
+          pullingItemTag: PliersStalker
+          teethCount: 3
+          initialTeeth: 3
+
+- type: startingGear
+  id: BandGear
+  equipment:
+    id: BandPDA
+    neck: ClothingBandageStalkerPetuh
+    belt: ClothingBeltStorageWaistbag
+    shoes: ClothingShoesBootsCombatFilled
+    legs: ClothingLegsJeansBlue
+    torso: ClothingTorsoJacketAdidas

@@ -1,0 +1,20 @@
+- type: lightCraftingRecipe
+  id: Barricade1
+  results:
+    - STCraftPinePlank
+    - STCraftPinePlank
+  steps:
+    firstIngredient: HatchetStalker
+    secondIngredient: Barricade
+    keepFirst: true
+    time: 14
+
+- type: lightCraftingRecipe
+  id: BarricadeBlock1
+  results:
+    - STCraftPinePlank
+  steps:
+    firstIngredient: HatchetStalker
+    secondIngredient: BarricadeBlock
+    keepFirst: true
+    time: 8

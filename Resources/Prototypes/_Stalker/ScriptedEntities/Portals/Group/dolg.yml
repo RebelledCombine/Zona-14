@@ -1,0 +1,19 @@
+- type: entity
+  parent: MapTeleportBase
+  id: Cordon-Dolg
+  name: Cordon-Dolg (spawn)
+  components:
+    - type: NewMapTeleport
+      allowAll: false
+      portalName: Cordon-Dolg
+    - type: AccessReader
+      access: [["Dolg"]]
+
+- type: entity
+  parent: MapTeleportBaseUncollide
+  id: Cordon-DolgUncollide
+  name: Cordon-DolgUncollide (spawn)
+  components:
+    - type: NewMapTeleport
+      allowAll: false
+      portalName: Cordon-Dolg

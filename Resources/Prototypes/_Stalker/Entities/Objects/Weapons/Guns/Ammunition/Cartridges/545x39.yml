@@ -1,0 +1,73 @@
+# 5.45x39
+
+- type: entity
+  id: BaseCartridge545
+  name: cartridge (5,45x39)
+  parent: BaseCartridgeCaselessRifle
+  abstract: true
+  components:
+  - type: STWeight
+    self: 0.01
+  - type: Tag
+    tags:
+    - Cartridge
+    - Cartridge545
+  - type: CartridgeAmmo
+    proto: BulletLightRifle
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: Trash
+    time: 300
+
+- type: entity
+  id: Cartridge545FMJ
+  name: Патрон (5,45x39)FMJ
+  parent: BaseCartridge545
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet545FMJ
+
+- type: entity
+  id: Cartridge545PC
+  name: Патрон (5,45x39)ПС
+  parent: BaseCartridge545
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet545PC
+
+- type: entity
+  id: Cartridge545HP
+  name: Патрон (5,45x39)HP
+  parent: BaseCartridge545
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet545HP
+
+- type: entity
+  id: Cartridge545BP
+  name: Патрон (5,45x39)БП
+  parent: BaseCartridge545
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet545BP
+
+- type: entity
+  id: Cartridge545BS
+  name: Патрон (5,45x39)БС
+  parent: BaseCartridge545
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet545BS
+
+- type: entity
+  id: Cartridge545NE
+  name: Патрон (5,45x39)"Игольник"
+  parent: BaseCartridge545
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet545NE

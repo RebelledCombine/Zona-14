@@ -1,0 +1,31 @@
+- type: entity
+  id: StalkerSinMobControllerOffAction
+  name: Прекратить атаку
+  description: Делает всех людей поблизости неатакуемыми мутантами. Люди снова будут атакованы мутантами либо через 2 минуты, либо если отменить это.
+  suffix: ST
+  noSpawn: true
+  components:
+    - type: InstantAction
+      useDelay: 1
+      checkCanInteract: false
+      checkConsciousness: false
+      icon:
+        sprite: _Stalker/Interface/Actions/sin.rsi
+        state: off
+      event: !type:StalkerSinMobControllerOffActionEvent
+
+- type: entity
+  id: StalkerSinMobControllerOnAction
+  name: В бой
+  description: Приказывает всем мутантам по близости продолжить атаковать.
+  suffix: ST
+  noSpawn: true
+  components:
+    - type: InstantAction
+      useDelay: 1
+      checkCanInteract: false
+      checkConsciousness: false
+      icon:
+        sprite: _Stalker/Interface/Actions/sin.rsi
+        state: on
+      event: !type:StalkerSinMobControllerOnActionEvent

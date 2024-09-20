@@ -1,0 +1,268 @@
+﻿- type: statusIcon
+  id: band
+  locationPreference: Left
+  icon:
+    sprite: /Textures/_Stalker/Icons/Patches/band.rsi
+    hideOnStealth: true
+    state: band
+
+- type: statusIcon
+  id: sci
+  locationPreference: Left
+  icon:
+    sprite: /Textures/_Stalker/Icons/Patches/band.rsi
+    hideOnStealth: true
+    state: sci
+
+- type: statusIcon
+  id: army
+  locationPreference: Left
+  icon:
+    sprite: /Textures/_Stalker/Icons/Patches/band.rsi
+    hideOnStealth: true
+    state: army
+
+- type: statusIcon
+  id: stalker
+  locationPreference: Left
+  icon:
+    sprite: /Textures/_Stalker/Icons/Patches/band.rsi
+    hideOnStealth: true
+    state: stalker
+
+- type: statusIcon
+  id: seraphim
+  locationPreference: Left
+  icon:
+    sprite: /Textures/_Stalker/Icons/Patches/band.rsi
+    hideOnStealth: true
+    state: seraph
+
+- type: statusIcon
+  id: tec
+  locationPreference: Left
+  icon:
+    sprite: /Textures/_Stalker/Icons/Patches/band.rsi
+    hideOnStealth: true
+    state: tec
+
+- type: statusIcon
+  id: journalist
+  locationPreference: Left
+  icon:
+    sprite: /Textures/_Stalker/Icons/Patches/band.rsi
+    hideOnStealth: true
+    state: journalist
+
+- type: statusIcon
+  id: un
+  locationPreference: Left
+  icon:
+    sprite: /Textures/_Stalker/Icons/Patches/band.rsi
+    hideOnStealth: true
+    state: un
+
+- type: statusIcon
+  id: Dolg
+  locationPreference: Left
+  icon:
+    sprite: /Textures/_Stalker/Icons/Patches/band.rsi
+    hideOnStealth: true
+    state: dolg
+
+- type: statusIcon
+  id: monolith
+  locationPreference: Left
+  icon:
+    sprite: /Textures/_Stalker/Icons/Patches/band.rsi
+    hideOnStealth: true
+    state: monolith
+
+- type: statusIcon
+  id: cn
+  locationPreference: Left
+  icon:
+    sprite: /Textures/_Stalker/Icons/Patches/band.rsi
+    hideOnStealth: true
+    state: cn
+
+- type: statusIcon
+  id: ecologists
+  locationPreference: Left
+  icon:
+    sprite: /Textures/_Stalker/Icons/Patches/band.rsi
+    hideOnStealth: true
+    state: ecologist
+
+- type: statusIcon
+  id: freedom
+  locationPreference: Left
+  icon:
+    sprite: /Textures/_Stalker/Icons/Patches/band.rsi
+    hideOnStealth: true
+    state: freedom
+
+- type: statusIcon
+  id: sbu
+  locationPreference: Left
+  icon:
+    sprite: /Textures/_Stalker/Icons/Patches/band.rsi
+    hideOnStealth: true
+    state: sbu
+
+- type: statusIcon
+  id: rene
+  forbidHide: false
+  locationPreference: Left
+  icon:
+    sprite: /Textures/_Stalker/Icons/Patches/band.rsi
+    hideOnStealth: true
+    state: rene
+
+- type: statusIcon
+  id: mechanic
+  forbidHide: false
+  locationPreference: Left
+  icon:
+    sprite: /Textures/_Stalker/Icons/Patches/band.rsi
+    hideOnStealth: true
+    state: mechanic
+
+- type: statusIcon
+  id: trader
+  forbidHide: false
+  locationPreference: Left
+  icon:
+    sprite: /Textures/_Stalker/Icons/Patches/band.rsi
+    hideOnStealth: true
+    state: trader
+
+- type: statusIcon
+  id: zavet
+  forbidHide: false
+  locationPreference: Left
+  icon:
+    sprite: /Textures/_Stalker/Icons/Patches/band.rsi
+    hideOnStealth: true
+    state: zavet
+
+- type: statusIcon
+  id: clowns
+  forbidHide: false
+  locationPreference: Left
+  icon:
+    sprite: /Textures/_Stalker/Icons/Patches/band.rsi
+    hideOnStealth: true
+    state: clowns
+
+- type: statusIcon
+  id: merc
+  locationPreference: Left
+  icon:
+    sprite: /Textures/_Stalker/Icons/Patches/band.rsi
+    hideOnStealth: true
+    state: merc
+
+- type: statusIcon
+  id: greh
+  locationPreference: Left
+  icon:
+    sprite: /Textures/_Stalker/Icons/Patches/band.rsi
+    hideOnStealth: true
+    state: greh
+
+- type: statusIcon
+  id: deserter
+  locationPreference: Left
+  icon:
+    sprite: /Textures/_Stalker/Icons/Patches/band.rsi
+    hideOnStealth: true
+    state: deserter
+
+- type: statusIcon
+  id: police
+  locationPreference: Left
+  icon:
+    sprite: /Textures/_Stalker/Icons/Patches/band.rsi
+    hideOnStealth: true
+    state: police
+
+- type: statusIcon
+  id: jaba
+  locationPreference: Left
+  icon:
+    sprite: /Textures/_Stalker/Icons/Patches/band.rsi
+    hideOnStealth: true
+    state: jaba
+
+- type: statusIcon
+  id: voen
+  locationPreference: Left
+  icon:
+    sprite: /Textures/_Stalker/Icons/Patches/band.rsi
+    hideOnStealth: true
+    state: voen
+
+- type: statusIcon
+  id: project-1
+  locationPreference: Left
+  icon:
+    sprite: /Textures/_Stalker/Icons/Patches/band.rsi
+    hideOnStealth: true
+    state: project-1
+
+- type: statusIcon
+  id: project-2
+  locationPreference: Left
+  icon:
+    sprite: /Textures/_Stalker/Icons/Patches/band.rsi
+    hideOnStealth: true
+    state: project-2
+
+- type: statusIcon
+  id: project-3
+  locationPreference: Left
+  icon:
+    sprite: /Textures/_Stalker/Icons/Patches/band.rsi
+    hideOnStealth: true
+    state: project-3
+
+- type: statusIcon
+  id: project-4
+  locationPreference: Left
+  icon:
+    sprite: /Textures/_Stalker/Icons/Patches/band.rsi
+    hideOnStealth: true
+    state: project-4
+
+- type: statusIcon
+  id: zombie
+  locationPreference: Left
+  icon:
+    sprite: /Textures/_Stalker/Icons/Patches/band.rsi
+    hideOnStealth: true
+    state: zombie
+
+- type: statusIcon
+  id: ne
+  locationPreference: Left
+  icon:
+    sprite: /Textures/_Stalker/Icons/Patches/band.rsi
+    hideOnStealth: true
+    state: ne
+
+- type: statusIcon
+  id: poisk
+  locationPreference: Left
+  icon:
+    sprite: /Textures/_Stalker/Icons/Patches/band.rsi
+    hideOnStealth: true
+    state: poisk
+
+- type: statusIcon
+  id: pilgrim
+  locationPreference: Left
+  icon:
+    sprite: /Textures/_Stalker/Icons/Patches/band.rsi
+    hideOnStealth: true
+    state: pilgrim

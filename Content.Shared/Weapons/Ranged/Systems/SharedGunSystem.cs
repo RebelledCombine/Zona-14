@@ -534,6 +534,28 @@ public abstract partial class SharedGunSystem : EntitySystem
     {
         public List<(NetCoordinates coordinates, Angle angle, SpriteSpecifier Sprite, float Distance)> Sprites = new();
     }
+
+    // Stalker-Changes-Start
+    public void SetAvailableModes(EntityUid uid, SelectiveFire newModes, GunComponent? gun = null)
+    {
+        if (!Resolve(uid, ref gun))
+            return;
+
+        // if selected mode not supported by new available modes
+        if ((gun.SelectedMode & newModes) == 0)
+        {
+            var newCurrentSelective =
+                newModes == 0 ?
+                SelectiveFire.Invalid :
+                newModes ^ ((newModes - 1) & newModes); // last bit that is one
+
+            SelectFire(uid, gun, newCurrentSelective);
+        }
+
+        gun.AvailableModes = newModes;
+        Dirty(uid, gun);
+    }
+    // Stalker-Changes-End
 }
 
 /// <summary>

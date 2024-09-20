@@ -5,6 +5,7 @@ using System.Text.Json;
 using System.Threading;
 using System.Threading.Tasks;
 using Content.Server.Administration.Logs;
+using Content.Shared._Stalker.Characteristics;
 using Content.Shared.Administration.Logs;
 using Content.Shared.CCVar;
 using Content.Shared.Database;
@@ -325,6 +326,15 @@ namespace Content.Server.Database
         /// <param name="notification">The notification to trigger</param>
         void InjectTestNotification(DatabaseNotification notification);
 
+        #endregion
+
+        #region Stalker-Changes
+
+        Task<bool> EnsureRecordCreated(string login, string defaultValue);
+        Task SetLoginItems(string login, string jsonItems);
+        Task<string?> GetLoginItems(string login);
+        Task SetStalkerStatsAsync(string login, CharacteristicType characteristic, float value, DateTime? trainTime);
+        Task<StalkerStats?> GetStalkerStatAsync(string login, CharacteristicType characteristic);
         #endregion
     }
 
@@ -980,6 +990,39 @@ namespace Content.Server.Database
             return RunDbCommand(() => _db.RemoveJobWhitelist(player, job));
         }
 
+        #region Stalker-Changes
+
+        public Task<bool> EnsureRecordCreated(string login, string defaultValue)
+        {
+            return RunDbCommand(() => _db.EnsureStalkerRecordCreated(login, defaultValue));
+        }
+
+        public Task SetLoginItems(string login, string jsonItems)
+        {
+            DbWriteOpsMetric.Inc();
+            return RunDbCommand(() => _db.SetLoginItems(login, jsonItems));
+        }
+
+        public Task SetStalkerStatsAsync(string login, CharacteristicType characteristic, float value, DateTime? trainTime)
+        {
+            DbWriteOpsMetric.Inc();
+            return RunDbCommand(() => _db.SetStalkerStatsAsync(login, characteristic, value, trainTime));
+        }
+
+        public Task<StalkerStats?> GetStalkerStatAsync(string login, CharacteristicType characteristic)
+        {
+            DbReadOpsMetric.Inc();
+            return RunDbCommand(() => _db.GetStalkerStatAsync(login, characteristic));
+        }
+
+        public Task<string?> GetLoginItems(string login)
+        {
+            DbReadOpsMetric.Inc();
+            return RunDbCommand(() => _db.GetLoginItems(login));
+        }
+
+        #endregion
+
         public void SubscribeToNotifications(Action<DatabaseNotification> handler)
         {
             lock (_notificationHandlers)
@@ -1003,6 +1046,7 @@ namespace Content.Server.Database
                 }
             }
         }
+
 
         // Wrapper functions to run DB commands from the thread pool.
         // This will avoid SynchronizationContext capturing and avoid running CPU work on the main thread.

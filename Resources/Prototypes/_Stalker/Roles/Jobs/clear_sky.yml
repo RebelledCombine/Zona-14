@@ -1,0 +1,39 @@
+- type: job
+  id: StalkerClearSky
+  name: Боец Чистого Неба
+  icon: cn
+  description: Ищет способ сосуществования с Зоной.
+  playTimeTracker: JobClearSky
+  requirements:
+    - !type:RoleTimeRequirement
+      role: JobClearSky
+      time: 1
+  startingGear: StalkerClearSkyGear
+  supervisors: Исследуй Зону и оберегай её секреты от посторонних глаз.
+  special:
+    - !type:AddComponentSpecial
+      components:
+      - type: Access
+        tags:
+          - CN
+      - type: Bands
+        band: Stalker
+        altBand: stalker
+        canChange: true
+        bandIcon: cn
+      - type: BlockTackingHolyItems
+      - type: TeethPull
+        teethProto: ToothStalker
+        pullingItemTag: PliersStalker
+        teethCount: 3
+        initialTeeth: 3
+
+- type: startingGear
+  id: StalkerClearSkyGear
+  equipment:
+    id: ClearSkyPDA
+    belt: ClothingBeltStorageWaistbag
+    torso: ClothingTorsoSweaterStalkerGreen
+    legs: ClothingLegsJeansBlue
+    shoes: ClothingShoesBootsWork
+    outerClothing: ClothingOuterCoatBomber

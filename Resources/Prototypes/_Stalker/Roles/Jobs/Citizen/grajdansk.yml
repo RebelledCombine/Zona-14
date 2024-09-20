@@ -1,0 +1,188 @@
+- type: job
+  id: MayorCity
+  name: Мэр
+  icon: grajdansksprite
+  description: Управляет городом "Чернобыль-4". Именно он является центральным мозгом города.
+  playTimeTracker: JobMayorCity
+  requirements:
+    - !type:RoleTimeRequirement
+      role: JobMayorCity
+      time: 1
+  startingGear: MayorCityGear
+  supervisors: Нет никого главнее вас. Все гражданские структуры подчиняются вам.
+  special:
+    - !type:AddComponentSpecial
+      components:
+      - type: Access
+        tags:
+          - MayorCity
+          - Prokuror
+          - Magistrate
+          - Priest
+          - Barthender
+      - type: Bands
+        band: Stalker
+        bandIcon: grajdansksprite
+      - type: BlockTackingHolyItems
+      - type: TeethPull
+        teethProto: ToothStalker
+        pullingItemTag: PliersStalker
+        teethCount: 3
+        initialTeeth: 3
+
+
+- type: job
+  id: Prokuror
+  name: Прокурор
+  icon: grajdansksprite
+  description: Добывайте правду для её же предоставления в суде.
+  playTimeTracker: JobProkuror
+  requirements:
+    - !type:RoleTimeRequirement
+      role: JobProkuror
+      time: 1
+  startingGear: ProkurorGear
+  supervisors: Вы подчиняетесь мэру города "Чернобыль - 4".
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: Access
+          tags:
+            - Prokuror
+        - type: Bands
+          band: Stalker
+          bandIcon: grajdansksprite
+        - type: BlockTackingHolyItems
+        - type: TeethPull
+          teethProto: ToothStalker
+          pullingItemTag: PliersStalker
+          teethCount: 3
+          initialTeeth: 3
+
+
+- type: job
+  id: Magistrate
+  name: Судья
+  icon: grajdansksprite
+  description: Вершите правосудие, ореинтируясь на законы города "Чернобыль - 4".
+  playTimeTracker: JobMagistrate
+  requirements:
+    - !type:RoleTimeRequirement
+      role: JobMagistrate
+      time: 1
+  startingGear: MagistrateGear
+  supervisors: Вы подчиняетесь мэру города "Чернобыль - 4".
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: Access
+          tags:
+            - Magistrate
+        - type: Bands
+          band: Stalker
+          bandIcon: grajdansksprite
+        - type: BlockTackingHolyItems
+        - type: TeethPull
+          teethProto: ToothStalker
+          pullingItemTag: PliersStalker
+          teethCount: 3
+          initialTeeth: 3
+
+
+- type: job
+  id: Priest
+  name: Священник
+  icon: grajdansksprite
+  description: Помогайте людям в сложных ситуациях, обращая их к религии.
+  playTimeTracker: JobPriest
+  requirements:
+    - !type:RoleTimeRequirement
+      role: JobPriest
+      time: 1
+  startingGear: PriestGear
+  supervisors: Вы подчиняетесь мэру города "Чернобыль - 4".
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: Access
+          tags:
+            - Priest
+        - type: Bands
+          band: Stalker
+          bandIcon: grajdansksprite
+        - type: BlockTackingHolyItems
+        - type: TeethPull
+          teethProto: ToothStalker
+          pullingItemTag: PliersStalker
+          teethCount: 3
+          initialTeeth: 3
+
+
+- type: job
+  id: Bartender
+  name: Бармен
+  icon: grajdansksprite
+  description: Работайте в баре, удовлетворяя алкогольные нужды посетителей.
+  playTimeTracker: JobBartender
+  requirements:
+    - !type:RoleTimeRequirement
+      role: JobBartender
+      time: 1
+  startingGear: BartenderGear
+  supervisors: Вы подчиняетесь мэру города "Чернобыль - 4".
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: Access
+          tags:
+            - Barthender
+        - type: Bands
+          band: Stalker
+          bandIcon: grajdansksprite
+        - type: BlockTackingHolyItems
+        - type: TeethPull
+          teethProto: ToothStalker
+          pullingItemTag: PliersStalker
+          teethCount: 3
+          initialTeeth: 3
+
+
+- type: startingGear
+  id: MayorCityGear
+  equipment:
+    id: StalkerPDA
+    shoes: ClothingShoesBootsLeather
+    legs: ClothingLegsJeansBlackCargo
+    torso: ClothingTorsoSweaterStalkerGreen
+
+- type: startingGear
+  id: ProkurorGear
+  equipment:
+    id: StalkerPDA
+    shoes: ClothingShoesBootsLeather
+    legs: ClothingLegsJeansBlackCargo
+    torso: ClothingTorsoSweaterStalkerGreen
+
+- type: startingGear
+  id: MagistrateGear
+  equipment:
+    id: StalkerPDA
+    shoes: ClothingShoesBootsLeather
+    legs: ClothingLegsJeansBlackCargo
+    torso: ClothingTorsoSweaterStalkerGreen
+
+- type: startingGear
+  id: PriestGear
+  equipment:
+    id: StalkerPDA
+    shoes: ClothingShoesBootsLeather
+    legs: ClothingLegsJeansBlackCargo
+    torso: ClothingTorsoSweaterStalkerGreen
+
+- type: startingGear
+  id: BartenderGear
+  equipment:
+    id: StalkerPDA
+    shoes: ClothingShoesBootsLeather
+    legs: ClothingLegsJeansBlackCargo
+    torso: ClothingTorsoSweaterStalkerGreen

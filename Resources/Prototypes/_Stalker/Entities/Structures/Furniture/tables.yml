@@ -1,0 +1,197 @@
+- type: entity
+  id: OldWoodTable
+  parent: TableBase
+  name: старый деревянный стол
+  description: Некогда этот стол был гордостью, но сейчас предмет, который занимает много места.
+  suffix: Stalker
+  components:
+  - type: SpriteFade
+  - type: Sprite
+    sprite: _Stalker/Structures/Furniture/Tables/old_table.rsi
+  - type: Icon
+    sprite: _Stalker/Structures/Furniture/Tables/old_table.rsi
+    state: full
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.45,-0.45,0.45,0.45"
+        density: 55
+        mask:
+        - TableMask
+        layer:
+        - TableLayer
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Wood
+  - type: IconSmooth
+    key: state
+    base: state_
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 15
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WoodDestroy
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  id: OldBlackTable
+  parent: OldWoodTable
+  name: старый чёрный стол
+  suffix: Stalker
+  components:
+  - type: SpriteFade
+  - type: Sprite
+    sprite: _Stalker/Structures/Furniture/Tables/black_table.rsi
+  - type: Icon
+    sprite: _Stalker/Structures/Furniture/Tables/black_table.rsi
+    state: full
+
+- type: entity
+  id: OldWoodTable2
+  parent: OldWoodTable
+  suffix: Stalker
+  components:
+  - type: SpriteFade
+  - type: Sprite
+    sprite: _Stalker/Structures/Furniture/Tables/old_table2.rsi
+  - type: Icon
+    sprite: _Stalker/Structures/Furniture/Tables/old_table2.rsi
+    state: full
+
+- type: entity
+  id: OldStoneTable
+  parent: OldWoodTable
+  name: старый стальной стол
+  suffix: Stalker
+  components:
+  - type: SpriteFade
+  - type: Sprite
+    sprite: _Stalker/Structures/Furniture/Tables/old_table3.rsi
+  - type: Icon
+    sprite: _Stalker/Structures/Furniture/Tables/old_table3.rsi
+    state: full
+  - type: Damageable
+    damageModifierSet: Metallic
+    damageContainer: Inorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 250
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WoodDestroy
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+
+- type: entity
+  id: OldWoodTable3
+  parent: OldWoodTable
+  suffix: Stalker
+  components:
+  - type: SpriteFade
+  - type: Sprite
+    sprite: _Stalker/Structures/Furniture/Tables/old_table4.rsi
+  - type: Icon
+    sprite: _Stalker/Structures/Furniture/Tables/old_table4.rsi
+    state: full
+
+- type: entity
+  id: OldWoodTable4
+  parent: OldWoodTable
+  suffix: Stalker
+  components:
+  - type: SpriteFade
+  - type: Sprite
+    sprite: _Stalker/Structures/Furniture/Tables/old_table5.rsi
+  - type: Icon
+    sprite: _Stalker/Structures/Furniture/Tables/old_table5.rsi
+    state: full
+
+- type: entity
+  id: OldWoodTable5
+  parent: OldWoodTable
+  suffix: Stalker
+  components:
+  - type: SpriteFade
+  - type: Sprite
+    sprite: _Stalker/Structures/Furniture/Tables/old_table6.rsi
+  - type: Icon
+    sprite: _Stalker/Structures/Furniture/Tables/old_table6.rsi
+    state: full
+
+- type: entity
+  id: OldWoodTable6
+  parent: OldWoodTable
+  suffix: Stalker
+  components:
+  - type: SpriteFade
+  - type: Sprite
+    sprite: _Stalker/Structures/Furniture/Tables/old_table7.rsi
+  - type: Icon
+    sprite: _Stalker/Structures/Furniture/Tables/old_table7.rsi
+    state: full
+
+# БИЛЬЯРДНЫЙ СТОЛ
+
+- type: entity
+  id: BiliardTableStalker
+  parent: BaseStructure
+  name: бильярдный стол
+  suffix: Stalker
+  description: Состоит из рамы, столешницы, основания игровой поверхности, опор, бортов и луз. Предназначен для игры в бильярд.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Structures/Furniture/biliard.rsi
+    state: b1
+  - type: Physics
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.7,-0.3,0.7,0.3"
+        density: 155
+        mask:
+        - TableMask
+        layer:
+        - TableLayer
+
+# ДРУГИЕ СТОЛЫ
+
+- type: entity
+  id: TableOneStalker
+  parent: BaseStructure
+  name: большой стол
+  suffix: Stalker
+  description: Некогда этот стол был гордостью, но сейчас предмет, который занимает много места.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Structures/Furniture/Tables/table.rsi
+    state: t1
+  - type: Physics
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.8,-0.4,0.8,0.5"
+        density: 155
+        mask:
+        - TableMask
+        layer:
+        - TableLayer

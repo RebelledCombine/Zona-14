@@ -1,0 +1,15 @@
+- type: alert
+  id: StalkerSafeZone
+  icons:
+  - sprite: /Textures/Interface/Alerts/human_alive.rsi
+    state: health4
+  name: StalkerSafeZone
+  description: StalkerSafeZone
+
+- type: alert
+  id: StalkerChemCaustic
+  icons:
+  - sprite: /Textures/Interface/Alerts/human_critical.rsi
+    state: critical
+  name: StalkerChemCaustic
+  description: StalkerChemCaustic

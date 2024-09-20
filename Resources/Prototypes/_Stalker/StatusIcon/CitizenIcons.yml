@@ -1,0 +1,13 @@
+- type: statusIcon
+  id: medbeysprite
+  locationPreference: Left
+  icon:
+    sprite: /Textures/_Stalker/Icons/Patches/band.rsi
+    state: med
+
+- type: statusIcon
+  id: grajdansksprite
+  locationPreference: Left
+  icon:
+    sprite: /Textures/_Stalker/Icons/Patches/band.rsi
+    state: uk

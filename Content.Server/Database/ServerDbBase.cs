@@ -8,6 +8,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using Content.Server.Administration.Logs;
 using Content.Server.Administration.Managers;
+using Content.Shared._Stalker.Characteristics;
 using Content.Shared.Administration.Logs;
 using Content.Shared.Database;
 using Content.Shared.Humanoid;
@@ -1616,7 +1617,82 @@ INSERT INTO player_round (players_id, rounds_id) VALUES ({players[player]}, {id}
         }
 
         #endregion
+        #region Stalker-Changes
 
+        public async Task<bool> EnsureStalkerRecordCreated(string login, string defaultValue)
+        {
+            await using var db = await GetDb();
+            var record = await db.DbContext.Stalkers.SingleOrDefaultAsync(s => s.Login == login);
+
+            if (record is not null)
+                return false;
+
+            db.DbContext.Stalkers.Add(new Stalker(defaultValue, login));
+            await db.DbContext.SaveChangesAsync();
+            return true;
+        }
+
+        public async Task SetLoginItems(string login, string jsonItems)
+        {
+            await using var db = await GetDb();
+
+            var record = await db.DbContext.Stalkers.SingleOrDefaultAsync(s => s.Login == login);
+            if (record is null)
+            {
+                db.DbContext.Stalkers.Add(record = new Stalker(jsonItems, login));
+            }
+
+            record.Storage = jsonItems;
+            await db.DbContext.SaveChangesAsync();
+        }
+
+        public async Task<string?> GetLoginItems(string login)
+        {
+            await using var db = await GetDb();
+
+            var record = await db.DbContext.Stalkers.SingleOrDefaultAsync(s => s.Login == login);
+
+            return record?.Storage;
+        }
+
+        public async Task SetStalkerStatsAsync(string login, CharacteristicType characteristic, float value, DateTime? trainTime)
+        {
+            await using var db = await GetDb();
+            var statName = Enum.GetName(characteristic);
+            if (string.IsNullOrEmpty(statName))
+                return;
+
+            var record = await db.DbContext.StalkerStats.FirstOrDefaultAsync(s => s.Login == login && s.Characteristic == statName);
+            if (record is null)
+            {
+                var newStats = new StalkerStats()
+                {
+                    Login = login,
+                    Value = value,
+                    Characteristic = statName,
+                    LastTrained = trainTime
+                };
+                db.DbContext.StalkerStats.Add(newStats);
+            }
+            else
+            {
+                record.Value = value;
+                record.LastTrained = trainTime;
+            }
+
+            await db.DbContext.SaveChangesAsync();
+        }
+
+        public async Task<StalkerStats?> GetStalkerStatAsync(string login, CharacteristicType characteristic)
+        {
+            await using var db = await GetDb();
+            var typeName = Enum.GetName(characteristic);
+            var record = await db.DbContext.StalkerStats.FirstOrDefaultAsync(s => s.Login == login && s.Characteristic == typeName);
+
+            return record;
+        }
+
+        #endregion
         #region Job Whitelists
 
         public async Task<bool> AddJobWhitelist(Guid player, ProtoId<JobPrototype> job)

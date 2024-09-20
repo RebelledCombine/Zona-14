@@ -1,0 +1,591 @@
+- type: entity
+  id: BaseMP5Mag
+  name: магазин МП-5 9x19 (35)
+  description: Магазин 9x19 мм для МП-5 Гадюка. Вместимость пуль 35. Продают пустым.
+  parent: BaseItem
+  tag: Stalker
+  components:
+  - type: STWeight
+    self: 0.2
+  - type: Tag
+    tags:
+      - MagazineMP5
+  - type: BallisticAmmoProvider
+    proto:
+    mayTransfer: true
+    whitelist:
+      tags:
+        - Cartridge919
+    capacity: 35
+  - type: Item
+    size: Small
+    shape:
+      - 0,0,0,1
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    scale: 0.8, 0.8
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Magazines/919/35mp5.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
+  - type: RepositoryItem
+    categoryName: Магазины
+
+- type: entity
+  id: BaseGlockMag10
+  name: магазин Glock 9x19 (10)
+  description: Магазин на Glock 9x19. Вместимость пуль 10. Продают пустым.
+  parent: BaseMP5Mag
+  tag: Stalker
+  components:
+    - type: STWeight
+      self: 0.1
+    - type: Tag
+      tags:
+        - MagazineGlock
+    - type: BallisticAmmoProvider
+      proto:
+      mayTransfer: true
+      whitelist:
+        tags:
+          - Cartridge919
+      capacity: 10
+    - type: Item
+      size: Small
+      shape:
+        - 0,0,0,0
+    - type: ContainerContainer
+      containers:
+        ballistic-ammo: !type:Container
+    - type: Sprite
+      scale: 0.8, 0.8
+      sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Magazines/919/glock/10.rsi
+      layers:
+        - state: base
+          map: ["enum.GunVisualLayers.Base"]
+        - state: mag-1
+          map: ["enum.GunVisualLayers.Mag"]
+    - type: MagazineVisuals
+      magState: mag
+      steps: 2
+      zeroVisible: false
+    - type: Appearance
+
+- type: entity
+  id: GlockMag17
+  name: магазин Glock 9x19 (17)
+  description: Магазин на Glock 9x19. Вместимость пуль 17. Продают пустым.
+  parent: BaseGlockMag10
+  tag: Stalker
+  components:
+    - type: STWeight
+      self: 0.2
+    - type: BallisticAmmoProvider
+      proto:
+      mayTransfer: true
+      whitelist:
+        tags:
+          - Cartridge919
+      capacity: 17
+    - type: Item
+      size: Small
+      shape:
+        - 0,0,0,0
+    - type: Sprite
+      scale: 0.8, 0.8
+      sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Magazines/919/glock/17.rsi
+      layers:
+        - state: base
+          map: ["enum.GunVisualLayers.Base"]
+        - state: mag-1
+          map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  id: GlockMag24
+  name: магазин Glock 9x19 (24)
+  description: Магазин на Glock 9x19. Вместимость пуль 24. Продают пустым.
+  parent: BaseGlockMag10
+  tag: Stalker
+  components:
+    - type: STWeight
+      self: 0.2
+    - type: BallisticAmmoProvider
+      proto:
+      mayTransfer: true
+      whitelist:
+        tags:
+          - Cartridge919
+      capacity: 24
+    - type: Item
+      size: Small
+      shape:
+        - 0,0,0,1
+    - type: Sprite
+      scale: 0.8, 0.8
+      sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Magazines/919/glock/24.rsi
+      layers:
+        - state: base
+          map: ["enum.GunVisualLayers.Base"]
+        - state: mag-1
+          map: ["enum.GunVisualLayers.Mag"]
+- type: entity
+  id: GlockMag33
+  name: магазин Glock 9x19 (33)
+  description: Магазин на Glock 9x19. Вместимость пуль 33. Продают пустым.
+  parent: BaseGlockMag10
+  tag: Stalker
+  components:
+    - type: STWeight
+      self: 0.3
+    - type: BallisticAmmoProvider
+      proto:
+      mayTransfer: true
+      whitelist:
+        tags:
+          - Cartridge919
+      capacity: 33
+    - type: Sprite
+      scale: 0.8, 0.8
+      sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Magazines/919/glock/33.rsi
+      layers:
+        - state: base
+          map: ["enum.GunVisualLayers.Base"]
+        - state: mag-1
+          map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  id: BaseGSH-18Mag10
+  name: магазин ГШ-18 9x19 (10)
+  description: Магазин на ГШ-18 9x19. Вместимость пуль 10. Продают пустым.
+  parent: BaseMP5Mag
+  tag: Stalker
+  components:
+    - type: STWeight
+      self: 0.1
+    - type: Tag
+      tags:
+        - MagazineGSH-18
+    - type: BallisticAmmoProvider
+      proto:
+      mayTransfer: true
+      whitelist:
+        tags:
+          - Cartridge919
+      capacity: 10
+    - type: Item
+      size: Small
+      shape:
+        - 0,0,0,0
+    - type: ContainerContainer
+      containers:
+        ballistic-ammo: !type:Container
+    - type: Sprite
+      scale: 0.8, 0.8
+      sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Magazines/919/gsh-18/10.rsi
+      layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-1
+        map: ["enum.GunVisualLayers.Mag"]
+    - type: MagazineVisuals
+      magState: mag
+      steps: 5
+      zeroVisible: false
+    - type: Appearance
+
+- type: entity
+  id: GSH-18Mag18
+  name: магазин ГШ-18 9x19 (18)
+  description: Магазин на ГШ-18 9x19. Вместимость пуль 18. Продают пустым.
+  parent: BaseGSH-18Mag10
+  tag: Stalker
+  components:
+    - type: STWeight
+      self: 0.1
+    - type: BallisticAmmoProvider
+      proto:
+      mayTransfer: true
+      whitelist:
+        tags:
+          - Cartridge919
+      capacity: 18
+    - type: Item
+      size: Small
+      shape:
+        - 0,0,0,1
+    - type: Sprite
+      scale: 0.8, 0.8
+      sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Magazines/919/gsh-18/18.rsi
+      layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-1
+        map: ["enum.GunVisualLayers.Mag"]
+    - type: MagazineVisuals
+      magState: mag
+      steps: 5
+      zeroVisible: false
+    - type: Appearance
+
+- type: entity
+  id: VityazMag
+  name: магазин ПП-19-01 9x19 (30)
+  description: Магазин 9x19 мм для Витязь. Вместимость пуль 30. Продают пустым.
+  parent: BaseMP5Mag
+  tag: Stalker
+  components:
+  - type: STWeight
+    self: 0.2
+  - type: Tag
+    tags:
+      - MagazineVityaz
+  - type: BallisticAmmoProvider
+    proto:
+    mayTransfer: true
+    whitelist:
+      tags:
+        - Cartridge919
+    capacity: 30
+  - type: Item
+    size: Small
+    shape:
+      - 0,0,0,1
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    scale: 0.8, 0.8
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Magazines/919/vityaz.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  id: BizonMag919
+  name: шнековый магазин 9x19 "Бизон" (64)
+  description: Шнековый магазин на Бизон под 9х19. Вместимость пуль 64. Изменён с помощью инструментов.
+  parent: VityazMag
+  tag: Stalker
+  components:
+  - type: STWeight
+    self: 0.35
+  - type: Tag
+    tags:
+      - MagazineBizon919
+  - type: BallisticAmmoProvider
+    proto:
+    mayTransfer: true
+    whitelist:
+      tags:
+        - Cartridge919
+    capacity: 64
+  - type: Item
+    size: Normal
+    shape:
+      - 0,0,1,1
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    scale: 0.8, 0.8
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Magazines/919/bizon.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
+  - type: Craftable
+
+- type: entity
+  id: BaseTEC9Mag
+  name: магазин TEC-9 9x19 (20)
+  description: Магазин 9x19 для TEC-9. Вместимость пуль 20. Продают пустым.
+  parent: BaseMP5Mag
+  tag: Stalker
+  components:
+  - type: STWeight
+    self: 0.2
+  - type: Item
+    size: Small
+    shape:
+      - 0,0,0,0
+  - type: Sprite
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Magazines/919/tec9.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: BallisticAmmoProvider
+    capacity: 20
+  - type: Tag
+    tags:
+      - MagazineTEC
+
+- type: entity
+  id: BaseTommyGunMag
+  name: магазин ПП Томпсона (40)
+  description: Магазин для "Томми гана". Вместимость пуль 40. Продают пустым.
+  parent: BaseItem
+  tag: Stalker
+  components:
+  - type: STWeight
+    self: 0.6
+  - type: Sprite
+    scale: 0.8, 0.8
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Magazines/919/vityaz.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Tag
+    tags:
+      - MagazineTommyGun
+  - type: BallisticAmmoProvider
+    proto:
+    mayTransfer: true
+    whitelist:
+      tags:
+        - Cartridge919
+    capacity: 40
+  - type: Item
+    size: Small
+    shape:
+      - 0,0,0,1
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  id: TommyGunDrum
+  name: барабан ПП Томпсона (60)
+  description: Барабан для "Томми гана". Вместимость пуль 60. Продают пустым.
+  parent: BaseTommyGunMag
+  tag: Stalker
+  components:
+  - type: STWeight
+    self: 2
+  - type: Item
+    size: Normal
+    shape:
+      - 0,0,2,2
+  - type: Sprite
+    scale: 0.7, 0.7
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Magazines/919/tommygun_drum.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: BallisticAmmoProvider
+    proto:
+    mayTransfer: true
+    whitelist:
+      tags:
+        - Cartridge919
+    capacity: 60
+
+- type: entity
+  id: TommyGunDrum2
+  name: барабан ПП Томпсона оригинальной конструкции (60)
+  description: Барабан для "Томми гана". Вместимость пуль 60. Продают пустым.
+  parent: BaseTommyGunMag
+  tag: Stalker
+  components:
+  - type: STWeight
+    self: 2
+  - type: Item
+    size: Normal
+    shape:
+      - 0,0,2,2
+  - type: Sprite
+    scale: 0.7, 0.7
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Magazines/919/tommygun_drum2.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: BallisticAmmoProvider
+    proto:
+    mayTransfer: true
+    whitelist:
+      tags:
+        - Cartridge919
+    capacity: 60
+
+- type: entity
+  id: TommyGunBigDrum
+  name: барабан ПП Томпсона (100)
+  description: Огромный и редкий Барабан для "Томми гана". Вместимость пуль 100. Продают пустым.
+  parent: BaseTommyGunMag
+  tag: Stalker
+  components:
+  - type: STWeight
+    self: 5
+  - type: Item
+    size: Normal
+    shape:
+      - 0,0,3,3
+  - type: Sprite
+    scale: 0.7, 0.7
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Magazines/919/tommygun_big_drum.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: BallisticAmmoProvider
+    proto:
+    mayTransfer: true
+    whitelist:
+      tags:
+        - Cartridge919
+    capacity: 100
+
+- type: entity
+  id: MP40Mag
+  name: магазин MP-40 9x19 (30)
+  description: Магазин 9x19 мм для MP-40. Вместимость пуль 30. Продают пустым.
+  parent: BaseMP5Mag
+  tag: Stalker
+  components:
+  - type: STWeight
+    SelfWeight: 0.2
+  - type: Tag
+    tags:
+      - MagazineMP40
+  - type: BallisticAmmoProvider
+    proto:
+    mayTransfer: true
+    whitelist:
+      tags:
+        - Cartridge919
+    capacity: 30
+  - type: Item
+    size: Small
+    shape:
+      - 0,0,0,1
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    scale: 0.8, 0.8
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Magazines/919/vityaz.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  id: PP91Mag
+  name: магазин ПП-91 9x19 (30)
+  description: Магазин 9x19 мм для ПП-91 "Кедр". Вместимость пуль 30. Продают пустым.
+  parent: BaseMP5Mag
+  tag: Stalker
+  components:
+  - type: STWeight
+    SelfWeight: 0.1
+  - type: Tag
+    tags:
+      - MagazinePP91
+  - type: BallisticAmmoProvider
+    proto:
+    mayTransfer: true
+    whitelist:
+      tags:
+        - Cartridge919
+    capacity: 30
+  - type: Item
+    size: Small
+    shape:
+      - 0,0,0,1
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    scale: 0.8, 0.8
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Magazines/919/pp-91.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  id: P90Mag
+  name: магазин P90 9x19 (50)
+  description: Магазин 9x19 мм для P90. Вместимость пуль 50. Продают пустым.
+  parent: BaseMP5Mag
+  tag: Stalker
+  components:
+  - type: STWeight
+    self: 0.2
+  - type: Tag
+    tags:
+      - P90Magazin
+  - type: BallisticAmmoProvider
+    proto:
+    mayTransfer: true
+    whitelist:
+      tags:
+        - Cartridge919
+    capacity: 50
+  - type: Item
+    size: Small
+    shape:
+      - 0,0,0,1
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    scale: 0.8, 0.8
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Magazines/919/p90.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance

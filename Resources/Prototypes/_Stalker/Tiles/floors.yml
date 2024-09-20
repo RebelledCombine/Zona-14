@@ -1,0 +1,116 @@
+- type: tile
+  id: FloorStalker
+  name: FloorStalker
+  sprite: /Textures/_Stalker/Tiles/plates.rsi/floor_stalker.png
+  baseTurf: Plating
+  isSubfloor: false
+  canCrowbar: false
+  footstepSounds:
+    collection: FootstepHull
+  heatCapacity: 10000
+  weather: false
+  indestructible: true
+
+- type: tile
+  id: FloorStalker1
+  name: FloorStalker1
+  sprite: /Textures/_Stalker/Tiles/plates.rsi/floor_stalker1.png
+  baseTurf: Plating
+  isSubfloor: false
+  canCrowbar: false
+  footstepSounds:
+    collection: FootstepHull
+  heatCapacity: 10000
+  weather: false
+  indestructible: true
+
+- type: tile
+  id: FloorStalker2
+  name: FloorStalker2
+  sprite: /Textures/_Stalker/Tiles/plates.rsi/floor_stalker2.png
+  baseTurf: Plating
+  isSubfloor: false
+  canCrowbar: false
+  footstepSounds:
+    collection: FootstepHull
+  heatCapacity: 10000
+  weather: false
+  indestructible: true
+
+- type: tile
+  id: FloorStalker3
+  name: FloorStalker3
+  sprite: /Textures/_Stalker/Tiles/plates.rsi/floor_stalker3.png
+  baseTurf: Plating
+  isSubfloor: false
+  canCrowbar: false
+  footstepSounds:
+    collection: FootstepHull
+  heatCapacity: 10000
+  weather: false
+  indestructible: true
+
+- type: tile
+  id: FloorStalker4
+  name: FloorStalker4
+  sprite: /Textures/_Stalker/Tiles/plates.rsi/floor_stalker4.png
+  baseTurf: Plating
+  isSubfloor: false
+  canCrowbar: false
+  footstepSounds:
+    collection: FootstepHull
+  heatCapacity: 10000
+  weather: false
+  indestructible: true
+
+- type: tile
+  id: FloorStalker5
+  name: FloorStalker5
+  sprite: /Textures/_Stalker/Tiles/plates.rsi/floor_stalker5.png
+  baseTurf: Plating
+  isSubfloor: false
+  canCrowbar: false
+  footstepSounds:
+    collection: FootstepHull
+  heatCapacity: 10000
+  weather: false
+  indestructible: true
+
+- type: tile
+  id: FloorStalker6
+  name: FloorStalker6
+  sprite: /Textures/_Stalker/Tiles/plates.rsi/floor_stalker6.png
+  baseTurf: Plating
+  isSubfloor: false
+  canCrowbar: false
+  footstepSounds:
+    collection: FootstepHull
+  heatCapacity: 10000
+  weather: false
+  indestructible: true
+
+- type: tile
+  id: FloorStalker7
+  name: FloorStalker7
+  sprite: /Textures/_Stalker/Tiles/plates.rsi/floor_stalker7.png
+  baseTurf: Plating
+  isSubfloor: false
+  canCrowbar: false
+  footstepSounds:
+    collection: FootstepHull
+  heatCapacity: 10000
+  weather: false
+  indestructible: true
+
+- type: tile
+  id: BirchWoodenFloor
+  name: BirchWoodenFloor
+  sprite: /Textures/_Stalker/Tiles/wood.rsi/birch.png
+  baseTurf: Plating
+  isSubfloor: false
+  canCrowbar: false
+  footstepSounds:
+    collection: FootstepHull
+  heatCapacity: 1000
+  weather: false
+  indestructible: true

@@ -1,0 +1,172 @@
+﻿- type: entity
+  parent: STClothingOuterArmorStorageBasic
+  id: STClothingOuterArmorBase
+  suffix: ST, T3, PvE
+  name: базовый бронекомбез #base
+  abstract: true
+  components:
+  - type: STWeight
+    self: 7.5
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/renegade_armor.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/renegade_armor.rsi
+  - type: Tag
+    tags:
+      - BlockBelt
+  - type: Storage
+    maxItemSize: Big
+    grid:
+      - 0,2,0,3
+      - 0,-2,0,0
+      - 2,2,2,3
+      - 2,-1,3,-0
+      - 4,2,4,3
+      - 5,-1,6,-0
+      - 6,2,6,3
+      - 8,2,8,3
+      - 8,-2,8,0
+  - type: Armor
+    armorClass: 3
+    modifiers:
+      flatReductions:
+        Blunt: 8
+        Slash: 8
+        Piercing: 12
+      coefficients:
+        Blunt: 0.65
+        Slash: 0.65
+        Piercing: 0.4
+        Heat: 0.9
+        Caustic: 0.9
+        Compression: 0.75
+  - type: ExplosionResistance
+    damageCoefficient: 0.8
+  - type: Craftable
+
+# stalker
+- type: entity
+  parent: STClothingOuterArmorBase
+  id: ClothingOuterArmorStalker
+  name: бронекомбез сталкера
+  description: Дешёвый и защищающий от мутантов с аномалиями комбез сталкеров. Обеспечивает 3 класс защиты.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/renegade_armor.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/renegade_armor.rsi
+
+- type: entity
+  parent: STClothingOuterArmorBase
+  id: ClothingOuterArmorRenegate
+  name: бронекомбез ренегатов
+  description: Дешёвый и защищающий от мутантов с аномалиями комбез реников. Обеспечивает 3 класс защиты.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/renegade_armor.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/renegade_armor.rsi
+
+
+- type: entity
+  parent: STClothingOuterArmorBase
+  id: ClothingOuterArmorJaba
+  name: бронекомбез жаб
+  description: Надёжный бронекомбез III типа, обеспечивающий хорошую защиту от аномальных воздействий и физических повреждений.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/medium_armor_jaba.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/medium_armor_jaba.rsi
+
+- type: entity
+  parent: STClothingOuterArmorBase
+  id: ClothingOuterArmorBandits
+  name: бронекомбез бандитов
+  description: Дешёвый и защищающий от мутантов с сталкерами комбез бандюганов. Обеспечивает 3 класс защиты.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/Bandit_armor.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/Bandit_armor.rsi
+# bonus
+  - type: Storage
+    maxItemSize: Big
+    grid:
+      - 0,2,0,3
+      - 0,-2,0,0
+      - 2,2,2,3
+      - 2,-1,3,-0
+      - 4,2,4,3
+      - 5,-1,6,-0
+      - 6,2,6,3
+      - 8,2,8,3
+      - 8,-2,8,0
+      - 10,2,10,3
+      - -2,2,-2,3
+
+- type: entity
+  parent: STClothingOuterArmorBase
+  id: ClothingOuterArmorDeserter
+  name: бронекомбез отступников "Гоплит" # не переименовывайте
+  description: Дешёвый и надёжный бронекомбез отступников хорошо защищающий от мутантов и пуль. 3 класс
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/deserter_armor.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/deserter_armor.rsi
+
+
+- type: entity
+  parent: STClothingOuterArmorBase
+  id: ClothingOuterArmorMerc
+  name: бронекомбез наёмника
+  description: За основу взяты образцы экипировки спецназа западных армий. За счёт специальной обработки ткани усилена устойчивость брони при физическом смещении пластин. По защитным характеристикам немного превосходит армейские бронежилеты. Обеспечивает 3 класс защиты.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/merc_armor.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/merc_armor.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHatHoodJacketMerc
+    slot: head
+
+
+- type: entity
+  parent: STClothingOuterArmorBase
+  id: ClothingOuterArmorFreedomDefender
+  name: бронекомбез «Страж свободы»
+  description: Производимый ремесленниками группировки «Свобода» усиленный комбинезон сталкера. 3 класс
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/freedom_defender.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/freedom_defender.rsi
+
+
+- type: entity
+  parent: STClothingOuterArmorBase
+  id: ClothingOuterArmorCN3a
+  name: бронекомбез «ЧН-3а»
+  description: Штатная экипировка штурмовых отрядов «Чистого неба». Бронежилет способен остановить пистолетную пулю, а встроенный противогаз и брезентовый комбинезон с особой пропиткой обеспечивают хорошую защиту от аномальных воздействий. 3 класс
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/cn3a.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/cn3a.rsi
+# bonus
+  - type: Storage
+    maxItemSize: Big
+    grid:
+      - -3,2,-2,3
+      - 0,2,0,3
+      - 0,-2,0,0
+      - 2,2,2,3
+      - 2,-1,3,-0
+      - 4,2,4,3
+      - 5,-1,6,-0
+      - 6,2,6,3
+      - 8,2,8,3
+      - 8,-2,8,0
+      - 10,2,11,3
+      - -2,2,-2,3

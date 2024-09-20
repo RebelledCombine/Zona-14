@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "size": {
+    "x": 96,
+    "y": 96
+  },
+  "states": [
+    {
+      "name": "birch03"
+    },
+    {
+      "name": "birch04"
+    },
+    {
+      "name": "pine01"
+    },
+    {
+      "name": "pine02"
+    },
+    {
+      "name": "poplar01"
+    },
+    {
+      "name": "poplar02"
+    },
+    {
+      "name": "birch01"
+    },
+    {
+      "name": "birch02"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+- type: entity
+  parent: BaseItem
+  id: StalkerGrinder
+  name: ручной измельчитель
+  description: Ручной измельчитель, подходит для трав и растенний.
+  suffix: Stalker
+  components:
+  - type: ReagentGrinder
+  - type: Sprite
+    sprite: _Stalker/Objects/Devices/grinder.rsi
+    layers:
+    - state: grinder
+  - type: UserInterface
+    interfaces:
+    - key: enum.ReagentGrinderUiKey.Key
+      type: ReagentGrinderBoundUserInterface
+  - type: ActivatableUI
+    key: enum.ReagentGrinderUiKey.Key
+  - type: ItemSlots
+    slots:
+      beakerSlot:
+        whitelist:
+          components:
+          - FitsInDispenser

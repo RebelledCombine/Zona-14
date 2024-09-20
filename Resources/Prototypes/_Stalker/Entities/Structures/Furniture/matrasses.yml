@@ -1,0 +1,69 @@
+- type: entity
+  parent: Bed
+  id: STMatrassBedBase
+  name: матрас
+  suffix: Stalker
+  description: Старый, но всё ещё удобный матрас.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Structures/Furniture/beds.rsi
+    state: matras
+    noRot: true
+  - type: HealOnBuckle
+    damage:
+      groups:
+        Brute: -0.5
+        Burn: -0.5
+        Airloss: -0.5
+        Toxin: -0.5
+        Anomaly: -0.5
+
+- type: entity
+  parent: STMatrassBedBase
+  id: MatrassBed
+  components:
+  - type: Sprite
+    state: matras
+
+- type: entity
+  parent: STMatrassBedBase
+  id: STMatrassBed1
+  components:
+  - type: Sprite
+    state: matras1
+
+- type: entity
+  parent: STMatrassBedBase
+  id: STMatrassBed2
+  components:
+  - type: Sprite
+    state: matras2
+
+- type: entity
+  parent: STMatrassBedBase
+  id: STMatrassBed3
+  components:
+  - type: Sprite
+    state: matras3
+
+- type: entity
+  parent: STMatrassBedBase
+  id: STMatrassBed4
+  components:
+  - type: Sprite
+    state: matras4
+
+
+- type: entity
+  parent: STMatrassBedBase
+  id: STMatrassBed5
+  components:
+  - type: Sprite
+    state: matras5
+
+- type: entity
+  parent: STMatrassBedBase
+  id: STMatrassBed6
+  components:
+  - type: Sprite
+    state: matras6

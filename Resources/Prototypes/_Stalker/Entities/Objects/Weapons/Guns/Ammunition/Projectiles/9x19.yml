@@ -1,0 +1,55 @@
+#9x19
+
+- type: entity
+  id: Bullet919PSOGJ
+  name: bullet (9х19 auto)
+  parent: BaseBullet
+  noSpawn: true
+  components:
+  - type: TimedDespawn
+    lifetime: 2
+  - type: Projectile
+    projectileClass: 1
+    damage:
+      types:
+        Piercing: 23
+  - type: StaminaDamageOnCollide
+    damage: 1
+
+- type: entity
+  id: Bullet919PST
+  name: bullet (9х19 auto)
+  parent: Bullet919PSOGJ
+  noSpawn: true
+  components:
+  - type: Projectile
+    projectileClass: 2
+    damage:
+      types:
+        Piercing: 26
+
+- type: entity
+  id: Bullet919RIP
+  name: bullet (9х18 auto)
+  parent: Bullet919PSOGJ
+  noSpawn: true
+  components:
+  - type: Projectile
+    projectileClass: 0
+    damage:
+      types:
+        Blunt: 5
+        Slash: 5
+        Piercing: 35
+
+- type: entity
+  id: Bullet919PBM
+  name: bullet (9х19 auto)
+  parent: Bullet919PSOGJ
+  noSpawn: true
+  components:
+  - type: Projectile
+    projectileClass: 3
+    damage:
+      types:
+        Piercing: 26

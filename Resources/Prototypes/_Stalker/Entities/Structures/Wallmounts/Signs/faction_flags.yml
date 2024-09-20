@@ -1,0 +1,170 @@
+# Я не знаю почему он здесь, может быть так надо, поэтому не трогаю
+- type: entity
+  parent: PosterBaseStalker
+  id: FactionFlagAnomalists
+  name: anomalist flag
+  description: A large flag with an equally huge gear.
+  suffix: Stalker, Flags, Anomalists
+  components:
+  - type: Sprite
+    sprite: _Stalker/Structures/Wallmounts/faction_flags.rsi
+    state: anomalist
+
+- type: entity
+  parent: PosterBaseStalker
+  id: Banner1
+  name: Флаг бандитов
+  components:
+  - type: Sprite
+    sprite: _Stalker/Structures/Wallmounts/banners.rsi
+    state: banner1
+
+- type: entity
+  parent: PosterBaseStalker
+  id: Banner2
+  name: Флаг Долга
+  suffix: Stalker
+  components:
+  - type: Sprite
+    sprite: _Stalker/Structures/Wallmounts/banners.rsi
+    state: banner2
+
+- type: entity
+  parent: PosterBaseStalker
+  id: Banner3
+  name: Флаг Свободы
+  suffix: Stalker
+  components:
+  - type: Sprite
+    sprite: _Stalker/Structures/Wallmounts/banners.rsi
+    state: banner3
+
+- type: entity
+  parent: PosterBaseStalker
+  id: Banner4
+  name: Флаг наёмников
+  suffix: Stalker
+  components:
+  - type: Sprite
+    sprite: _Stalker/Structures/Wallmounts/banners.rsi
+    state: banner4
+
+- type: entity
+  parent: PosterBaseStalker
+  id: Banner5
+  name: Флаг Завета
+  suffix: Stalker
+  components:
+  - type: Sprite
+    sprite: _Stalker/Structures/Wallmounts/banners.rsi
+    state: banner5
+
+- type: entity
+  parent: PosterBaseStalker
+  id: Banner6
+  name: Флаг конфедератов
+  suffix: Stalker
+  components:
+  - type: Sprite
+    sprite: _Stalker/Structures/Wallmounts/banners.rsi
+    state: banner6
+
+- type: entity
+  parent: PosterBaseStalker
+  id: Banner7
+  name: Флаг добра и позитива
+  suffix: Stalker
+  components:
+  - type: Sprite
+    sprite: _Stalker/Structures/Wallmounts/banners.rsi
+    state: banner7
+
+- type: entity
+  parent: PosterBaseStalker
+  id: Banner8
+  name: Флаг Ренегатов
+  suffix: Stalker
+  components:
+  - type: Sprite
+    sprite: _Stalker/Structures/Wallmounts/banners.rsi
+    state: banner8
+
+- type: entity
+  parent: PosterBaseStalker
+  id: Banner9
+  name: Флаг Русичей
+  suffix: Stalker
+  components:
+  - type: Sprite
+    sprite: _Stalker/Structures/Wallmounts/banners.rsi
+    state: banner9
+
+- type: entity
+  parent: PosterBaseStalker
+  id: Banner10
+  name: Флаг империи
+  suffix: Stalker
+  components:
+  - type: Sprite
+    sprite: _Stalker/Structures/Wallmounts/banners.rsi
+    state: banner10
+
+- type: entity
+  parent: PosterBaseStalker
+  id: Banner11
+  name: Флаг ООН
+  suffix: Stalker
+  components:
+  - type: Sprite
+    sprite: _Stalker/Structures/Wallmounts/banners.rsi
+    state: banner11
+
+- type: entity
+  parent: PosterBaseStalker
+  id: Banner12
+  name: Флаг Серафимов
+  suffix: Stalker
+  components:
+  - type: Sprite
+    sprite: _Stalker/Structures/Wallmounts/banners.rsi
+    state: banner12
+
+- type: entity
+  parent: PosterBaseStalker
+  id: Banner13
+  name: Флаг Греха
+  suffix: Stalker
+  components:
+  - type: Sprite
+    sprite: _Stalker/Structures/Wallmounts/banners.rsi
+    state: banner13
+
+- type: entity
+  parent: PosterBaseStalker
+  id: Banner14
+  name: Флаг Чистого Неба
+  suffix: Stalker
+  components:
+  - type: Sprite
+    sprite: _Stalker/Structures/Wallmounts/banners.rsi
+    state: banner14
+
+- type: entity
+  parent: PosterBaseStalker
+  id: Banner15
+  name: Флаг Отступников
+  suffix: Stalker
+  components:
+  - type: Sprite
+    sprite: _Stalker/Structures/Wallmounts/banners.rsi
+    state: banner15
+
+- type: entity
+  parent: PosterBaseStalker
+  id: Banner16
+  name: Знамя Ордена Паломников
+  suffix: Stalker, Баннер
+  components:
+  - type: Sprite
+    sprite: _Stalker/Structures/Wallmounts/banners.rsi
+    state: banner16

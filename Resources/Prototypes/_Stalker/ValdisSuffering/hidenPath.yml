@@ -1,0 +1,125 @@
+- type: entity
+  parent: BaseCraftItem
+  id: BypassCard
+  name: карточка доступа Привратника
+  description: Карточка для разблокировки шлюза Предбанника в подземке. Открывает его на 30 секунд.
+  suffix: ST, card
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Craft/tech_card.rsi
+      layers:
+        - state: base
+        - state: contacts_gold
+        - state: label_orange
+    - type: Craftable
+
+- type: lightCraftingRecipe
+  id: lightCraftActiveBypassPrivratnik
+  results:
+    - BypassActivated
+  steps:
+    firstIngredient: BypassDeactivated
+    secondIngredient: BypassCard
+    time: 2
+
+- type: entity
+  parent: BlastDoor
+  id: BypassDeactivated
+  name: гермошлюз Привратника
+  description: Для разблокировки этого шлюза нужна специальная одноразовая карточка.
+  components:
+  - type: Craftable
+
+
+- type: entity
+  id: BypassActivated
+  name: гермошлюз Привратника
+  parent: BlastDoorOpen
+  description: для разблокировки этого шлюза нужна специальная одноразовая карточка. Разблокирован.
+  suffix: Stalker
+  noSpawn: true
+  components:
+  - type: TimedDespawn
+    lifetime: 30
+  - type: SpawnOnDespawn
+    prototype: BypassDeactivated
+
+# Билет на вертолёт до Рыжего леса
+- type: entity
+  parent: BypassCard
+  id: STHelicopterToRedForestTicket
+  name: билет на вертолёт до рыжего леса
+  description: билет на вертолёт до рыжего леса. Перепродажа и подделка билетов преследуется по закону.
+  suffix: ST, card
+
+- type: lightCraftingRecipe
+  id: lightCraftHelicopterToRedForestBypass
+  results:
+    - STHelicopterBypassActivated
+  steps:
+    firstIngredient: STHelicopterBypassDeactivated
+    secondIngredient: STHelicopterToRedForestTicket
+    time: 2
+
+- type: entity
+  parent: BypassDeactivated
+  id: STHelicopterBypassDeactivated
+  name: гермошлюз вертолёта
+  description: для разблокировки шлюза вам нужно купить билет
+  components:
+  - type: Craftable
+
+
+- type: entity
+  parent: BypassActivated
+  id: STHelicopterBypassActivated
+  name: гермошлюз вертолёта
+  description: для разблокировки шлюза вам нужно купить билет Разблокирован.
+  suffix: Stalker
+  noSpawn: true
+  components:
+  - type: TimedDespawn
+    lifetime: 2
+  - type: SpawnOnDespawn
+    prototype: STHelicopterBypassDeactivated
+
+
+# Обменник баксов
+- type: entity
+  parent: BypassCard
+  id: DollarBypassCard
+  name: карточка доступа чёрного рынка
+  description: Карточка доступа к обменнику долларов в подземельях Ч-4, открывает дверь на 5 минут.
+  suffix: ST, card
+
+- type: lightCraftingRecipe
+  id: lightCraftActiveBypassTrader
+  results:
+    - DollarBypassActivated
+  steps:
+    firstIngredient: DollarBypassDeactivated
+    secondIngredient: DollarBypassCard
+    time: 2
+
+
+- type: entity
+  parent: BypassDeactivated
+  id: DollarBypassDeactivated
+  name: гермошлюз обменщика
+  description: Для разблокировки этого шлюза нужна специальная одноразовая карточка.
+  components:
+  - type: Craftable
+
+
+- type: entity
+  parent: BypassActivated
+  id: DollarBypassActivated
+  name: гермошлюз обменщика
+  description: для разблокировки этого шлюза нужна специальная одноразовая карточка. Разблокирован.
+  suffix: Stalker
+  noSpawn: true
+  components:
+  - type: TimedDespawn
+    lifetime: 300
+  - type: SpawnOnDespawn
+    prototype: DollarBypassDeactivated

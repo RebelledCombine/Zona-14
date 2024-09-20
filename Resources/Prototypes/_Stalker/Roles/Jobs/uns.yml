@@ -1,0 +1,41 @@
+
+- type: job
+  id: StalkerUN
+  name: Представитель ООН
+  icon: un
+  description: Представитель высот.
+  playTimeTracker: JobUN
+  requirements:
+    - !type:RoleTimeRequirement
+      role: JobUN
+      time: 1
+  startingGear: UNGear
+  supervisors: Вы не кому не подчиняетесь...
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: Access
+          tags:
+            - Journalist
+            - MilitaryHead
+            - MilitaryBarraks
+            - Military
+            - UN
+        - type: Bands
+          band: Stalker
+          bandIcon: un
+        - type: BlockTackingHolyItems
+        - type: TeethPull
+          teethProto: ToothStalker
+          pullingItemTag: PliersStalker
+          teethCount: 3
+          initialTeeth: 3
+
+- type: startingGear
+  id: UNGear
+  equipment:
+    id: MilitaryPDA
+    belt: ClothingBeltStorageWaistbag
+    legs: ClothingLegsJeansGreenCargo
+    shoes: ClothingShoesBootsCombatFilled
+    torso: ClothingTorsoTurtlenecksUN

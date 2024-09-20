@@ -1,0 +1,387 @@
+# Пораждаемая Трамплином, Воронкой, Лифтом
+- type: entity
+  parent: BaseArtifact
+  id: ArtMedusa
+# а куда ты делась в мастере? Нипон
+  suffix: Stalker, Медуза
+  components:
+  - type: Craftable
+  - type: Sprite
+    state: medusa
+  - type: ZoneArtifact
+    anomaly: ZoneAnomalySpringboard
+  - type: ZoneArtifactDetectorTarget
+    detectedLevel: 1
+  - type: PointLight
+    radius: 1.5
+    energy: 4.5
+    color: "#f89b08"
+    castShadows: false
+  - type: PersonalDamage
+    damage:
+      types:
+        Blunt: -0.02
+        Slash: -0.02
+        Asphyxiation: -0.02
+        Radiation: 0.2
+    interval: 1
+  - type: Armor
+    hiddenExamine: true
+    armorClass: 2
+    modifiers:
+      flatReductions:
+        Blunt: -0.5
+        Slash: -0.5
+      coefficients:
+        Compression: 1.1
+
+- type: entity
+  parent: BaseArtifact
+  id: ZoneArtifactFlower
+  suffix: Stalker, Каменный цветок
+  components:
+  - type: Sprite
+    state: flower
+  - type: ZoneArtifact
+    anomaly: ZoneAnomalyPulse
+  - type: ZoneArtifactDetectorTarget
+    detectedLevel: 3
+  - type: PointLight
+    radius: 1.5
+    energy: 5.5
+    color: "#f89b08"
+    castShadows: false
+  - type: PersonalDamage
+    damage:
+      types:
+        Heat: -0.15
+        Shock: -0.25
+        Cold: -0.25
+        Caustic: -0.25
+        Blunt: -0.1
+        Slash: -0.1
+        Asphyxiation: -0.1
+        Radiation: 0.4
+    interval: 1
+  - type: Armor
+    hiddenExamine: true
+    armorClass: 2
+    modifiers:
+      flatReductions:
+        Blunt: -1
+        Slash: -1
+      coefficients:
+        Compression: 1.2
+
+- type: entity
+  name: Ночная звезда
+  parent: BaseArtifact
+  id: ZoneArtifactNightStar
+  suffix: Stalker, Ночная звезда
+  components:
+  - type: Sprite
+    state: night_star
+  - type: ZoneArtifact
+    anomaly: ZoneAnomalyNoGravity
+  - type: ZoneArtifactDetectorTarget
+    detectedLevel: 4
+  - type: PointLight
+    radius: 1.5
+    energy: 5.5
+    color: "#f89b08"
+    castShadows: false
+  - type: PersonalDamage
+    damage:
+      types:
+        Heat: -0.75
+        Shock: -0.75
+        Cold: -0.75
+        Caustic: -0.75
+        Blunt: -0.3
+        Slash: -0.3
+        Asphyxiation: -0.15
+        Compression: -0.75
+        Radiation: 0.8
+    interval: 1
+  - type: Armor
+    hiddenExamine: true
+    armorClass: 2
+    modifiers:
+      flatReductions:
+        Blunt: -1
+        Slash: -1
+      coefficients:
+        Compression: 1.05
+
+# Пораждаемая эпицентром, каруселью
+- type: entity
+  parent: BaseArtifact
+  name: Выверт
+  id: ZoneArtifactVyvert
+  suffix: Stalker, Выверт
+  components:
+  - type: Sprite
+    state: vyvert
+  - type: ZoneArtifact
+    anomaly: AnomSEpicentre
+  - type: ZoneArtifactDetectorTarget
+    detectedLevel: 1
+  - type: PointLight
+    radius: 1.5
+    energy: 4.5
+    color: "#f89b08"
+    castShadows: false
+  - type: PersonalDamage
+    damage:
+      types:
+        Radiation: 0.2
+    interval: 1
+  - type: Armor
+    hiddenExamine: true
+    armorClass: 2
+    modifiers:
+      coefficients:
+        Compression: 1.1
+  - type: STWeight
+    self: -10
+
+- type: entity
+  parent: BaseArtifact
+  id: ZoneArtifactAmoeba
+  suffix: Stalker, Амеба
+  components:
+  - type: Sprite
+    state: amoeba # Сам рисовал xd
+  - type: ZoneArtifact
+    anomaly: AnomSEpicentre
+  - type: ZoneArtifactDetectorTarget
+    detectedLevel: 2
+  - type: PointLight
+    radius: 1.5
+    energy: 4.5
+    color: "#f89b08"
+    castShadows: false
+  - type: PersonalDamage
+    damage:
+      types:
+        Radiation: 0.8
+  - type: Armor
+    hiddenExamine: true
+    armorClass: 2
+    modifiers:
+      coefficients:
+        Compression: 1.2
+    interval: 1
+  - type: STWeight
+    self: -25
+
+- type: entity
+  parent: BaseArtifact
+  id: ZoneArtifactGravi
+  suffix: Stalker, Грави
+  components:
+  - type: Sprite
+    state: gravi
+  - type: ZoneArtifact
+    anomaly: AnomSEpicentre
+  - type: ZoneArtifactDetectorTarget
+    detectedLevel: 4
+  - type: PointLight
+    radius: 1.5
+    energy: 4.5
+    color: "#f89b08"
+    castShadows: false
+  - type: PersonalDamage
+    damage:
+      types:
+        Radiation: 1.6
+  - type: Armor
+    hiddenExamine: true
+    armorClass: 2
+    modifiers:
+      coefficients:
+        Compression: 1.4
+    interval: 1
+  - type: STWeight
+    self: -50
+  - type: ClothingSpeedModifier
+    walkModifier: 1.05
+    sprintModifier: 1.05
+
+- type: entity
+  parent: BaseArtifact
+  id: ZoneArtifactGoldfish
+  suffix: Stalker, Золотая рыбка
+  components:
+  - type: Sprite
+    state: goldfish
+  - type: ZoneArtifact
+    anomaly: AnomSEpicentre
+  - type: ZoneArtifactDetectorTarget
+    detectedLevel: 5
+  - type: PointLight
+    radius: 1.5
+    energy: 4.5
+    color: "#f89b08"
+    castShadows: false
+  - type: PersonalDamage
+    damage:
+      types:
+        Radiation: 0.01
+  - type: Armor
+    hiddenExamine: true
+    armorClass: 2
+    modifiers:
+      coefficients:
+        Compression: 1.05
+    interval: 1
+  - type: STWeight
+    self: -75
+  - type: ClothingSpeedModifier
+    walkModifier: 1.05
+    sprintModifier: 1.05
+
+- type: entity
+  parent: BaseArtifact
+  id: ZoneArtifactSpring
+  suffix: Stalker, Пружина
+  components:
+  - type: Sprite
+    state: spring
+  - type: ZoneArtifact
+    anomaly: AnomSEpicentre
+  - type: ZoneArtifactDetectorTarget
+    detectedLevel: 5
+  - type: PointLight
+    radius: 1.5
+    energy: 4.5
+    color: "#f89b08"
+    castShadows: false
+  - type: PersonalDamage
+    staminaDamage: -2.5
+    damage:
+      types:
+        Heat: 0.08
+  - type: Armor
+    hiddenExamine: true
+    armorClass: 2
+    modifiers:
+      flatReductions:
+        Blunt: -3
+      coefficients:
+        Compression: 0.4
+  - type: ClothingSpeedModifier
+    walkModifier: 1.1
+    sprintModifier: 1.1
+
+# Пораждаемая инверсией
+- type: entity
+  parent: BaseArtifact
+  id: ZoneArtifactFocus
+  suffix: Stalker, Фокус
+  components:
+  - type: Sprite
+    state: focus
+  - type: ZoneArtifact
+    anomaly: ZoneAnomalyInversion
+  - type: ZoneArtifactDetectorTarget
+    detectedLevel: 5
+  - type: PointLight
+    radius: 2.5
+    energy: 4.5
+    color: "#ffffff"
+    castShadows: false
+  - type: Armor
+    hiddenExamine: false
+    armorClass: 2
+    modifiers:
+      flatReductions:
+        Blunt: -5
+        Slash: -5
+        Piercing: -5
+      coefficients:
+        Psy: 0.9
+        Blunt: 5
+        Slash: 5
+        Piercing: 5
+        Heat: 5
+        Shock: 5
+        Radiation: 5
+  - type: Reflect
+    enabled: true
+    reflectProb: 0.7
+    spread: 340
+
+- type: entity
+  parent: BaseArtifact
+  id: ZoneArtifactStuntman
+  suffix: Stalker, Трюкач
+  components:
+  - type: Sprite
+    state: stuntman
+  - type: ZoneArtifact
+    anomaly: ZoneAnomalyInversion
+  - type: ZoneArtifactDetectorTarget
+    detectedLevel: 5
+  - type: PointLight
+    radius: 2.5
+    energy: 5.5
+    color: "#ffffff"
+    castShadows: false
+  - type: Armor
+    hiddenExamine: false
+    armorClass: 3
+    modifiers:
+      flatReductions:
+        Blunt: -5
+        Slash: -5
+        Piercing: -5
+      coefficients:
+        Psy: 0.9
+        Blunt: 5.5
+        Slash: 5.5
+        Piercing: 5.5
+        Heat: 5.5
+        Shock: 5.5
+        Radiation: 5.5
+  - type: Reflect
+    enabled: true
+    reflectProb: 0.8
+    spread: 320
+
+- type: entity
+  parent: BaseArtifact
+  id: ZoneArtifactDistorter
+  suffix: Stalker, Исказитель
+  components:
+  - type: Sprite
+    state: distorter
+  - type: ZoneArtifact
+    anomaly: ZoneAnomalyInversion
+  - type: ZoneArtifactDetectorTarget
+    detectedLevel: 5
+  - type: PointLight
+    radius: 2.5
+    energy: 6.5
+    color: "#ffffff"
+    castShadows: false
+  - type: Armor
+    hiddenExamine: false
+    armorClass: 4
+    modifiers:
+      flatReductions:
+        Blunt: -5
+        Slash: -5
+        Piercing: -5
+      coefficients:
+        Psy: 0.9
+        Blunt: 6
+        Slash: 6
+        Piercing: 6
+        Heat: 6
+        Shock: 6
+        Radiation: 6
+  - type: Reflect
+    enabled: true
+    reflectProb: 0.9
+    spread: 300

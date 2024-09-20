@@ -1,0 +1,84 @@
+- type: entity
+  abstract: true
+  parent: STClothingHeadBase
+  id: STClothingHeadHelmetEnvironmentT4Base
+  name: база шлема защиты от окружения T4
+  suffix: ST, T4, Env
+  components:
+  - type: BreathMask
+  - type: IngestionBlocker
+  - type: IdentityBlocker
+  - type: Tag
+    tags:
+      - BlockMask
+      - HidesNose
+  - type: STWeight
+    self: 3
+  - type: Armor
+    armorClass: 3
+    modifiers:
+      flatReductions:
+        Piercing: 10
+        Blunt: 2
+        Slash: 2
+      coefficients:
+        Piercing: 0.75
+        Heat: 0.85
+        Shock: 0.85
+        Radiation: 0.85
+  - type: ExplosionResistance
+    damageCoefficient: 0.70
+  - type: Reflect
+    reflectProb: 0.08
+    reflects:
+      - NonEnergy
+
+
+- type: entity
+  parent: STClothingHeadHelmetEnvironmentT4Base #Нужны спрайты под шлем с фонариком и без
+  id: ClothingHeadHelmetBulatMercenary
+  name: шлем «Сфера-12» наёмников
+  description: Это шлем, специально разработанный для защиты от колющих атак. Есть устойчивость к другим видам повреждений.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/bulat_helm_mercenary.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/bulat_helm_mercenary.rsi
+
+- type: entity
+  parent: STClothingHeadHelmetEnvironmentT4Base #Нужны спрайты под шлем с фонариком и без
+  id: ClothingHeadHelmetBulatMonolith
+  name: шлем «Сфера-12» монолита
+  description: Является шлемом от Берилла.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/bulat_helm_monolit.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/bulat_helm_monolit.rsi
+  - type: IngestionBlocker
+  - type: IdentityBlocker
+
+- type: entity
+  parent: STClothingHeadHelmetEnvironmentT4Base #Нужны спрайты под шлем с фонариком и без
+  id: ClothingHeadHelmetBulatMilitary
+  name: шлем «Сфера-12» военных
+  description: Является шлемом от Булата.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/bulat_helm_military.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/bulat_helm_military.rsi
+  - type: IngestionBlocker
+  - type: IdentityBlocker
+
+- type: entity
+  parent: STClothingHeadHelmetEnvironmentT4Base
+  id: ClothingHeadHelmetBulatCovenant
+  name: шлем «Сфера-12» Завета
+  description: Является шлемом от Булата.
+  suffix: Stalker, Завет
+  components:
+    - type: Sprite
+      sprite: _Stalker/Clothing/Head/Bulat/covenant.rsi
+    - type: Clothing
+      sprite: _Stalker/Clothing/Head/Bulat/covenant.rsi

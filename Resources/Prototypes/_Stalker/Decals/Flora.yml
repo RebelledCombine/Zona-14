@@ -1,0 +1,234 @@
+﻿- type: decal
+  id: Florabranch1
+  tags: ["stalker", "Flora"]
+  defaultCleanable: true
+  sprite:
+    sprite: _Stalker/Decals/flor.rsi
+    state: branch1
+
+- type: decal
+  id: Florabranch2
+  tags: ["stalker", "Flora"]
+  defaultCleanable: true
+  sprite:
+    sprite: _Stalker/Decals/flor.rsi
+    state: branch2
+
+- type: decal
+  id: Florabranch3
+  tags: ["stalker", "Flora"]
+  defaultCleanable: true
+  sprite:
+    sprite: _Stalker/Decals/flor.rsi
+    state: branch3
+
+- type: decal
+  id: Florabranch4
+  tags: ["stalker", "Flora"]
+  defaultCleanable: true
+  sprite:
+    sprite: _Stalker/Decals/flor.rsi
+    state: branch4
+
+- type: decal
+  id: Florabranch5
+  tags: ["stalker", "Flora"]
+  defaultCleanable: true
+  sprite:
+    sprite: _Stalker/Decals/flor.rsi
+    state: branch5
+
+- type: decal
+  id: Florabranch6
+  tags: ["stalker", "Flora"]
+  defaultCleanable: true
+  sprite:
+    sprite: _Stalker/Decals/flor.rsi
+    state: branch6
+
+- type: decal
+  id: Florabush1
+  tags: ["stalker", "Flora"]
+  defaultCleanable: true
+  sprite:
+    sprite: _Stalker/Decals/flor.rsi
+    state: bush
+
+- type: decal
+  id: Floraflower1
+  tags: ["stalker", "Flora"]
+  defaultCleanable: true
+  sprite:
+    sprite: _Stalker/Decals/flor.rsi
+    state: flower
+
+- type: decal
+  id: Floragrass1
+  tags: ["stalker", "Flora"]
+  defaultCleanable: true
+  sprite:
+    sprite: _Stalker/Decals/flor.rsi
+    state: grass1
+
+- type: decal
+  id: Floragrass2
+  tags: ["stalker", "Flora"]
+  defaultCleanable: true
+  sprite:
+    sprite: _Stalker/Decals/flor.rsi
+    state: grass2
+
+- type: decal
+  id: Floragrass3
+  tags: ["stalker", "Flora"]
+  defaultCleanable: true
+  sprite:
+    sprite: _Stalker/Decals/flor.rsi
+    state: grass3
+
+- type: decal
+  id: Floragrass4
+  tags: ["stalker", "Flora"]
+  defaultCleanable: true
+  sprite:
+    sprite: _Stalker/Decals/flor.rsi
+    state: grass4
+
+- type: decal
+  id: Florashroom1
+  tags: ["stalker", "Flora"]
+  defaultCleanable: true
+  sprite:
+    sprite: _Stalker/Decals/flor.rsi
+    state: shroom
+
+- type: decal
+  id: Floratallgrass1
+  tags: ["stalker", "Flora"]
+  defaultCleanable: true
+  sprite:
+    sprite: _Stalker/Decals/flor.rsi
+    state: tall-grass1
+
+- type: decal
+  id: Floratallgrass2
+  tags: ["stalker", "Flora"]
+  defaultCleanable: true
+  sprite:
+    sprite: _Stalker/Decals/flor.rsi
+    state: tall-grass2
+
+- type: decal
+  id: Floratallgrass3
+  tags: ["stalker", "Flora"]
+  defaultCleanable: true
+  sprite:
+    sprite: _Stalker/Decals/flor.rsi
+    state: tall-grass3
+
+- type: decal
+  id: Floratallgrass4
+  tags: ["stalker", "Flora"]
+  defaultCleanable: true
+  sprite:
+    sprite: _Stalker/Decals/flor.rsi
+    state: tall-grass4
+
+- type: decal
+  id: Floravtallgrass
+  tags: ["stalker", "Flora"]
+  defaultCleanable: true
+  sprite:
+    sprite: _Stalker/Decals/flor.rsi
+    state: vtall-grass1
+
+- type: decal
+  id: Floravtallgrass2
+  tags: ["stalker", "Flora"]
+  defaultCleanable: true
+  sprite:
+    sprite: _Stalker/Decals/flor.rsi
+    state: vtall-grass2
+
+- type: decal
+  id: Grassa_big1
+  tags: ["stalker", "Flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: _Stalker/Decals/bigflor.rsi
+    state: grassc_big1
+
+
+# Трава о которой мечтал Илюша
+- type: decal
+  id: GreenGrass1
+  tags: ["stalker", "Flora"]
+  defaultCleanable: true
+  sprite:
+    sprite: _Stalker/Decals/flor.rsi
+    state: grass-green-1
+
+- type: decal
+  id: GreenGrass2
+  tags: ["stalker", "Flora"]
+  defaultCleanable: true
+  sprite:
+    sprite: _Stalker/Decals/flor.rsi
+    state: grass-green-2
+
+- type: decal
+  id: GreenGrass3
+  tags: ["stalker", "Flora"]
+  defaultCleanable: true
+  sprite:
+    sprite: _Stalker/Decals/flor.rsi
+    state: grass-green-3
+
+- type: decal
+  id: GreenGrass4
+  tags: ["stalker", "Flora"]
+  defaultCleanable: true
+  sprite:
+    sprite: _Stalker/Decals/flor.rsi
+    state: grass-green-4
+
+- type: decal
+  id: GreenGrass5
+  tags: ["stalker", "Flora"]
+  defaultCleanable: true
+  sprite:
+    sprite: _Stalker/Decals/flor.rsi
+    state: grass-green-5
+
+- type: decal
+  id: GreenGrass6
+  tags: ["stalker", "Flora"]
+  defaultCleanable: true
+  sprite:
+    sprite: _Stalker/Decals/flor.rsi
+    state: grass-green-6
+
+- type: decal
+  id: GreenGrass7
+  tags: ["stalker", "Flora"]
+  defaultCleanable: true
+  sprite:
+    sprite: _Stalker/Decals/flor.rsi
+    state: grass-green-7
+
+- type: decal
+  id: GreenGrass8
+  tags: ["stalker", "Flora"]
+  defaultCleanable: true
+  sprite:
+    sprite: _Stalker/Decals/flor.rsi
+    state: grass-green-8
+
+- type: decal
+  id: GreenGrass9
+  tags: ["stalker", "Flora"]
+  defaultCleanable: true
+  sprite:
+    sprite: _Stalker/Decals/flor.rsi
+    state: grass-green-9

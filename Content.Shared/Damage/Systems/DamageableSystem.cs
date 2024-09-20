@@ -303,12 +303,14 @@ namespace Content.Shared.Damage
         public readonly DamageSpecifier OriginalDamage;
         public DamageSpecifier Damage;
         public EntityUid? Origin;
+        public readonly List<EntityUid> IgnoreResistors; // stalker-changes
 
-        public DamageModifyEvent(DamageSpecifier damage, EntityUid? origin = null)
+        public DamageModifyEvent(DamageSpecifier damage, EntityUid? origin = null, List<EntityUid>? ignoreResistors = null)  // stalker-changes
         {
             OriginalDamage = damage;
             Damage = damage;
             Origin = origin;
+            IgnoreResistors = ignoreResistors ?? new List<EntityUid>();
         }
     }
 

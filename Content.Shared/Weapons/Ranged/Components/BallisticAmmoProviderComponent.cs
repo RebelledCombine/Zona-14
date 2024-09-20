@@ -1,3 +1,4 @@
+using Content.Shared._Stalker.Storage;
 using Content.Shared.Weapons.Ranged.Systems;
 using Content.Shared.Whitelist;
 using Robust.Shared.Audio;
@@ -7,7 +8,7 @@ using Robust.Shared.Prototypes;
 
 namespace Content.Shared.Weapons.Ranged.Components;
 
-[RegisterComponent, NetworkedComponent, AutoGenerateComponentState, Access(typeof(SharedGunSystem))]
+[RegisterComponent, NetworkedComponent, AutoGenerateComponentState, Access([typeof(SharedGunSystem), typeof(SharedStalkerStorageSystem)])] // stalker-changes
 public sealed partial class BallisticAmmoProviderComponent : Component
 {
     [ViewVariables(VVAccess.ReadWrite), DataField]
@@ -36,6 +37,9 @@ public sealed partial class BallisticAmmoProviderComponent : Component
     // Realistically just point to the container.
     [DataField, AutoNetworkedField]
     public List<EntityUid> Entities = new();
+
+    [DataField, AutoNetworkedField]
+    public List<EntProtoId> EntProtos = new(); // stalker-changes
 
     /// <summary>
     /// Is the magazine allowed to be manually cycled to eject a cartridge.

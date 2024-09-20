@@ -1,0 +1,16 @@
+- type: entity
+  parent: STBaseBlueprint
+  id: STClothingOuterJacketStalkerUpgradeBlueprint
+  name: Рецепт улучшенной куртки сталкера
+  components:
+    - type: STBlueprint
+      blueprint: newrecipeJacketStalkerUpgrade
+
+- type: entity
+  parent: STBaseBlueprint
+  id: ClothingOuterAnomalyStalkerJacketBlueprint
+  name: Рецепт аномальной куртки сталкера
+  components:
+    - type: STBlueprint
+      blueprint: newrecipeClothingOuterAnomalyStalkerJacket
+

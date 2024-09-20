@@ -1,0 +1,113 @@
+#12x70
+
+- type: entity
+  id: Bullet7mmBuckshot
+  name: bullet (7mm buckshot)
+  parent: BaseBullet
+  noSpawn: true
+  components:
+  - type: TimedDespawn
+    lifetime: 1
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 10
+  - type: StaminaDamageOnCollide
+    damage: 0.1
+
+- type: entity
+  id: Bullet6mmBuckshot
+  name: bullet (6.5mm buckshot)
+  parent: Bullet7mmBuckshot
+  noSpawn: true
+  components:
+  - type: Projectile
+    projectileClass: 1
+    damage:
+      types:
+        Piercing: 17
+
+- type: entity
+  id: BulletShotgunBullet
+  name: bullet (Bullet)
+  parent: Bullet7mmBuckshot
+  noSpawn: true
+  components:
+  - type: Projectile
+    projectileClass: 2
+    damage:
+      types:
+        Piercing: 40
+  - type: StaminaDamageOnCollide
+    damage: 20
+
+
+- type: entity
+  id: BulletShotgunRIP
+  name: bullet (Bullet)
+  parent: Bullet7mmBuckshot
+  noSpawn: true
+  components:
+  - type: Projectile
+    projectileClass: 0
+    damage:
+      types:
+        Blunt: 20
+        Slash: 20
+        Piercing: 40
+  - type: StaminaDamageOnCollide
+    damage: 20
+
+- type: entity
+  id: BulletShotgunDart
+  name: bullet (Dart)
+  parent: Bullet7mmBuckshot
+  noSpawn: true
+  components:
+  - type: Projectile
+    projectileClass: 3
+    damage:
+      types:
+        Piercing: 35
+  - type: StaminaDamageOnCollide
+    damage: 20
+
+- type: entity
+  id: PelletShotgunBeanbagStalker
+  name: beanbag (.50)
+  noSpawn: true
+  parent: BaseBullet
+  components:
+    - type: Sprite
+      sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+      state: buckshot
+    - type: Projectile
+      damage:
+        types:
+          Blunt: 10
+    - type: StaminaDamageOnCollide
+      damage: 80 # 3 hits to stun
+
+- type: entity
+  id: Bullet8mmBuckshot
+  name: bullet (8.5mm buckshot)
+  parent: Bullet7mmBuckshot
+  noSpawn: true
+  components:
+  - type: Projectile
+    projectileClass: 2
+    damage:
+      types:
+        Piercing: 25
+
+- type: entity
+  id: BulletShotgunFlechette
+  name: bullet (Flechette)
+  parent: Bullet7mmBuckshot
+  noSpawn: true
+  components:
+  - type: Projectile
+    projectileClass: 3
+    damage:
+      types:
+        Piercing: 8

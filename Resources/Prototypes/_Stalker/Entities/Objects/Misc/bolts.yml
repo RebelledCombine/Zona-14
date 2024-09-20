@@ -1,0 +1,50 @@
+- type: entity
+  parent: BaseItem
+  id: STBaseBolt
+  suffix: ST
+  abstract: true
+  components:
+    - type: STWeight
+      self: 0.1
+    - type: Tag
+      tags:
+        - STBolt
+    - type: Sprite
+      sprite: _Stalker/Objects/Misc/bolts.rsi
+    - type: Item
+      sprite: _Stalker/Objects/Misc/bolts.rsi
+      size: Tiny
+    - type: Currency
+      price:
+        Roubles: 0
+    - type: ZoneAnomalyActivator
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeCircle
+            radius: 0.25
+          density: 1
+          restitution: 0.0
+          mask:
+            - MobMask
+          layer:
+            - MobLayer
+
+- type: entity
+  parent: STBaseBolt
+  id: STBolt
+  name: bolt
+  description: Крепёжное изделие в форме стержня с наружной резьбой на одном конце. Теперь на 100% из углеродистой стали.
+  components:
+    - type: Sprite
+      state: icon
+      
+- type: entity
+  parent: STBaseBolt
+  id: STBoltGolden
+  name: bolt golden
+  description: Now these bolts are gold plated, you can humiliate poverty with your anomaly detection skills.
+  components:
+    - type: Sprite
+      state: icon_golden

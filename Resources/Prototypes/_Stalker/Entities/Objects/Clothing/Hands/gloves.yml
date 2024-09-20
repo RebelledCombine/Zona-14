@@ -1,0 +1,13 @@
+- type: entity
+  parent: ClothingHandsGlovesSyntheticBase
+  id: ClothingHandsGlovesMitts
+  name: black mitts
+  description: Plain black gloves without fingertips for the hard working.
+  suffix: Stalker
+  components:
+  - type: Sprite
+    sprite: _Stalker/Clothing/Hands/Gloves/mitts.rsi
+  - type: Clothing
+    sprite: _Stalker/Clothing/Hands/Gloves/mitts.rsi
+  - type: Fiber
+    fiberColor: fibers-black

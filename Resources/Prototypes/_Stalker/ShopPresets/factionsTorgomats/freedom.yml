@@ -1,0 +1,29 @@
+- type: shopPreset
+  id: FreedomShopPreset
+  itemsForSale:
+    FoodTinMRETrash: 5
+  categories:
+    - name: Оружие
+      priority: 1
+      items:
+        CombatKnife: 10
+    - name: Броня и снаряжение
+      priority: 4
+      items:
+        ClothingOuterJacketFreedom: 20
+        ClothingMaskGasFreedom: 98
+        STSkinsKitFreedom: 500
+    - name: Утилиты
+      priority: 5
+      items:
+        Matchbox: 20
+        HatchetStalker: 150
+
+- type: shopPreset
+  id: FreedomDollarShopPreset
+  categories:
+  - name: Магазины
+    priority: 2
+    items:
+      556Mag60: 75
+      751Mag20: 95

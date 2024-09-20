@@ -1,0 +1,40 @@
+
+- type: job
+  id: StalkerDeserter
+  name: Отступник
+  icon: "deserter"
+  description: Дезертир из государственых структур.
+  playTimeTracker: JobDeserter
+  requirements:
+    - !type:RoleTimeRequirement
+      role: JobDeserter
+      time: 1
+  startingGear: StalkerDeserterGear
+  supervisors: Ослушайся приказов диктаторов! Защити честь и достоинство зоны!
+  special:
+    - !type:AddComponentSpecial
+      components:
+      - type: Access
+        tags:
+          - Deserter
+          - Stalker
+      - type: Bands
+        band: Stalker
+        bandIcon: deserter
+      - type: BlockTackingHolyItems
+      - type: TeethPull
+        teethProto: ToothStalker
+        pullingItemTag: PliersStalker
+        teethCount: 3
+        initialTeeth: 3
+
+- type: startingGear
+  id: StalkerDeserterGear
+  equipment:
+    id: BandPDA
+    belt: ClothingBeltStorageWaistbag
+    torso: ClothingTorsoTurtlenecksDeserterCamouflage
+    legs: ClothingLegsJeansDeserterCamouflage
+    shoes: ClothingShoesBootsWork
+    outerClothing: ClothingOuterCoatBomber
+    neck: ClothingCapeDeserters

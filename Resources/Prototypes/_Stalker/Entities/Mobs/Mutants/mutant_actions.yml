@@ -1,0 +1,67 @@
+
+- type: entity
+  id: STActionGoliathTentacle
+  name: Тентакль
+  noSpawn: true
+  description: Use your tentacles to grab and stun a target player!
+  components:
+  - type: EntityWorldTargetAction
+    raiseOnUser: true
+    icon:
+      sprite: Mobs/Aliens/Asteroid/goliath.rsi
+      state: goliath_tentacle_spawn
+    iconOn:
+      sprite: Mobs/Aliens/Asteroid/goliath.rsi
+      state: goliath_tentacle_wiggle
+    sound:
+      path: "/Audio/Weapons/slash.ogg"
+    event: !type:GoliathSummonTentacleAction
+    useDelay: 8
+    range: 10
+
+- type: entity
+  id: ActionPsyonicsSmokeMutant
+  name: smoke
+  noSpawn: true
+  components:
+    - type: WorldTargetAction
+      useDelay: 10
+      range: 0
+      checkCanAccess: false
+      itemIconStyle: NoItem
+      icon:
+        sprite: _Stalker/Interface/Actions/psyonics.rsi
+        state: smoke
+      event: !type:PsyonicsActionSmokeEvent
+
+- type: entity
+  id: ActionPsyonicsShieldMutant
+  name: shield
+  noSpawn: true
+  components:
+    - type: InstantAction
+      useDelay: 2
+      checkCanAccess: false
+      itemIconStyle: NoItem
+      icon:
+        sprite: _Stalker/Interface/Actions/psyonics.rsi
+        state: shield
+      event: !type:PsyonicsActionShieldEvent
+
+
+- type: entity
+  id: ActionPsyonicsDizzyMutant
+  name: dizzy
+  noSpawn: true
+  components:
+    - type: EntityTargetAction
+      raiseOnUser: true
+      useDelay: 10
+      range: 25
+      checkCanAccess: false
+      itemIconStyle: NoItem
+      icon:
+        sprite: _Stalker/Interface/Actions/psyonics.rsi
+        state: dizzy
+      event: !type:PsyonicsActionDizzyEvent
+      sound: /Audio/_Stalker/Mutants/controller_dizzy_sound.ogg

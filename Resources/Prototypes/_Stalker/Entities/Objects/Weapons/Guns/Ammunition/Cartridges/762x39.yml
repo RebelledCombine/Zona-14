@@ -1,0 +1,55 @@
+# 7.62x39
+
+- type: entity
+  id: BaseCartridge739
+  name: cartridge (7,62x39 rifle)
+  parent: BaseCartridgeCaselessRifle
+  abstract: true
+  components:
+  - type: STWeight
+    self: 0.02
+  - type: Tag
+    tags:
+    - Cartridge
+    - Cartridge739
+  - type: CartridgeAmmo
+    proto: BulletLightRifle
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+
+- type: entity
+  id: Cartridge739FMJ
+  name: Патрон (7,62x39)FMJ
+  parent: BaseCartridge739
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet739FMJ
+
+- type: entity
+  id: Cartridge739HP
+  name: Патрон (7,62x39)HP
+  parent: BaseCartridge739
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet739HP
+
+- type: entity
+  id: Cartridge739PC
+  name: Патрон (7,62x39)ПС
+  parent: BaseCartridge739
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet739PC
+
+- type: entity
+  id: Cartridge739BP
+  name: Патрон (7,62x39)БП
+  parent: BaseCartridge739
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet739BP

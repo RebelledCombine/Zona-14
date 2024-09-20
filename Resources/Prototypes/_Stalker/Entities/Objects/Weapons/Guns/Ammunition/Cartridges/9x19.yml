@@ -1,0 +1,57 @@
+# 9x19
+
+- type: entity
+  id: BaseCartridge919
+  name: cartridge (9х19 auto)
+  parent: BaseCartridgeCaselessRifle
+  abstract: true
+  components:
+  - type: STWeight
+    self: 0.01
+  - type: Tag
+    tags:
+      - Cartridge
+      - Cartridge919
+  - type: CartridgeAmmo
+    proto: BulletPistol
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: Trash
+    time: 300
+
+- type: entity
+  id: Cartridge919PSOGJ
+  name: Патрон (9х19)ПСО гж
+  parent: BaseCartridge919
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet919PSOGJ
+
+- type: entity
+  id: Cartridge919PST
+  name: Патрон (9х19)ПСТ
+  parent: BaseCartridge919
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet919PST
+
+- type: entity
+  id: Cartridge919RIP
+  name: Патрон (9х19)RIP
+  parent: BaseCartridge919
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet919RIP
+
+- type: entity
+  id: Cartridge919PBM
+  name: Патрон (9х19)ПБМ
+  parent: BaseCartridge919
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet919PBM

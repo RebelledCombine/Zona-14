@@ -1,0 +1,38 @@
+- type: job
+  id: StalkerJaba
+  name: Жаба
+  icon: jaba
+  description: Группа особых бандитов
+  playTimeTracker: JobJaba
+  requirements:
+    - !type:RoleTimeRequirement
+      role: JobJaba
+      time: 1
+  startingGear: JabaGear
+  supervisors: Вы никому не подчиняетесь...
+  special:
+    - !type:AddComponentSpecial
+      components:
+      - type: Access
+        tags:
+          - Jaba
+      - type: Bands
+        band: Stalker
+        bandIcon: jaba
+      - type: BlockTackingHolyItems
+      - type: TeethPull
+        teethProto: ToothStalker
+        pullingItemTag: PliersStalker
+        teethCount: 3
+        initialTeeth: 3
+
+- type: startingGear
+  id: JabaGear
+  equipment:
+    id: BandPDA
+    belt: ClothingBeltStorageWaistbag
+    torso: ClothingTorsoSweaterStalkerGreen
+    legs: ClothingLegsJeansBlue
+    shoes: ClothingShoesBootsFrogLeather
+    outerClothing: ClothingOuterCoatBomber
+    gloves: ClothingHandsGlovesJabs

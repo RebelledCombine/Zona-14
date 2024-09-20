@@ -1,0 +1,85 @@
+- type: entity
+  id: Base754Mag5
+  name: магазин 7,62x54 (5)
+  description: Магазин 7,62x54 для Автоматов. Вместимость пуль 5. Продают пустым.
+  parent: Base545Mag10
+  tag: Stalker
+  components:
+    - type: STWeight
+      self: 0.2
+    - type: Tag
+      tags:
+        - Magazine754
+    - type: BallisticAmmoProvider
+      proto:
+      mayTransfer: true
+      whitelist:
+        tags:
+          - Cartridge754
+      capacity: 5
+    - type: Item
+      size: Small
+      shape:
+        - 0,0,0,0
+    - type: ContainerContainer
+      containers:
+        ballistic-ammo: !type:Container
+    - type: Sprite
+      scale: 0.8, 0.8
+      sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Magazines/754/svd5.rsi
+      layers:
+        - state: base
+          map: ["enum.GunVisualLayers.Base"]
+        - state: mag-1
+          map: ["enum.GunVisualLayers.Mag"]
+    - type: MagazineVisuals
+      magState: mag
+      steps: 2
+      zeroVisible: false
+    - type: Appearance
+- type: entity
+  id: 754Mag10
+  name: магазин 7,62x54 (10)
+  description: Магазин 7,62x54 для Автоматов. Вместимость пуль 10. Продают пустым.
+  parent: Base754Mag5
+  tag: Stalker
+  components:
+    - type: STWeight
+      self: 0.35
+    - type: BallisticAmmoProvider
+      capacity: 10
+    - type: Item
+      size: Small
+      shape:
+        - 0,0,0,1
+    - type: Sprite
+      scale: 0.8, 0.8
+      sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Magazines/754/svd10.rsi
+      layers:
+        - state: base
+          map: ["enum.GunVisualLayers.Base"]
+        - state: mag-1
+          map: ["enum.GunVisualLayers.Mag"]
+- type: entity
+  id: 754Mag20
+  name: магазин 7,62x54 (20)
+  description: Магазин 7,62x54 для Автоматов. Вместимость пуль 20. Продают пустым.
+  parent: Base754Mag5
+  tag: Stalker
+  components:
+    - type: STWeight
+      self: 0.4
+    - type: BallisticAmmoProvider
+      capacity: 20
+    - type: Item
+      size: Normal
+      shape:
+        - 0,0,0,2
+    - type: Sprite
+      scale: 0.8, 0.8
+      sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Magazines/754/svd20.rsi
+      layers:
+        - state: base
+          map: ["enum.GunVisualLayers.Base"]
+        - state: mag-1
+          map: ["enum.GunVisualLayers.Mag"]

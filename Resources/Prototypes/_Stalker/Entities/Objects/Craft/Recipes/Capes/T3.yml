@@ -1,0 +1,20 @@
+- type: craftRecipe
+  id: newrecipeReinforcedCoat
+  resultProtos:
+    - STClothingCapeCoatReinforced
+  craftTime: 10
+  items:
+    ToolkitTearOne:
+      amount: 1
+      catalyzer: true
+    STClothingCapeCoatReinforcedBlueprint:
+      amount: 1
+      catalyzer: true
+    ClothingOuterCoatStalker:
+      amount: 1
+    STCraftSturdyHideT3:
+      amount: 2
+    STCraftGlueKitT3:
+      amount: 1
+    STCraftOakPlankT3:
+      amount: 1

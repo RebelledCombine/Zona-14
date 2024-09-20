@@ -1,0 +1,19 @@
+
+- type: entity
+  parent: STClothingHeadBase
+  id: STClothingHeadTinfoil
+  name: шапочка из фольги
+  description: защищает от вышек 5G
+  suffix: ST, T2, Env
+  components:
+  - type: Sprite
+    sprite: _Stalker/Clothing/Head/Hats/tinfoil.rsi
+  - type: Clothing
+    sprite: _Stalker/Clothing/Head/Hats/tinfoil.rsi
+  - type: Craftable
+  - type: STWeight
+    self: 0.5
+  - type: Armor
+    modifiers:
+      coefficients:
+        Psy: 0.50

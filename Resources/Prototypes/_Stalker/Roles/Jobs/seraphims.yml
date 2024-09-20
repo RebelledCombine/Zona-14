@@ -1,0 +1,56 @@
+- type: job
+  id: Seraphim
+  name: Серафим
+  icon: seraphim
+  description: Таинственная группировка, появившаяся с первых дней жизни Зоны.
+  playTimeTracker: JobSeraphims
+  requirements:
+    - !type:RoleTimeRequirement
+      role: JobSeraphims
+      time: 1
+  startingGear: StalkerGear
+  supervisors: Вы служите во имя Его.
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: Bands
+          band: Stalker
+          bandIcon: seraphim
+        - type: Access
+          tags:
+            - Seraphims
+        - type: BlockTackingHolyItems
+        - type: TeethPull
+          teethProto: ToothStalker
+          pullingItemTag: PliersStalker
+          teethCount: 3
+          initialTeeth: 3
+
+- type: job
+  id: SeraphimHead
+  name: Лидер Серафмиов
+  icon: seraphim
+  description: Таинственная группировка, появившаяся с первых дней жизни Зоны.
+  playTimeTracker: JobHeadSeraphims
+  requirements:
+    - !type:RoleTimeRequirement
+      role: JobHeadSeraphims
+      time: 1
+  startingGear: StalkerGear
+  supervisors: Вы служите во имя Его.
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: Access
+          tags:
+            - Seraphims
+            - SeraphimsHead
+        - type: Bands
+          band: Stalker
+          bandIcon: seraphim
+        - type: BlockTackingHolyItems
+        - type: TeethPull
+          teethProto: ToothStalker
+          pullingItemTag: PliersStalker
+          teethCount: 3
+          initialTeeth: 3

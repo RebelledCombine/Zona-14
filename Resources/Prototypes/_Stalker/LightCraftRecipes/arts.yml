@@ -1,0 +1,41 @@
+##################################################Активации артефактов
+
+- type: lightCraftingRecipe
+  id: ActivateMedusa1
+  results:
+  - ArtMedusaActive1
+  steps:
+    firstIngredient: ArtMedusa
+    secondIngredient: CraftAwl
+    keepSecond: true
+    time: 1
+
+- type: lightCraftingRecipe
+  id: ActivateMedusa2
+  results:
+  - ArtMedusaActive2
+  steps:
+    firstIngredient: ArtMedusa
+    secondIngredient: CraftNeedle
+    keepSecond: true
+    time: 1
+
+- type: lightCraftingRecipe
+  id: ActivateFireball1
+  results:
+  - ZoneArtifactFireballActive1
+  steps:
+    firstIngredient: ZoneArtifactFireball
+    secondIngredient: SolderingIron
+    keepSecond: true
+    time: 1
+
+- type: lightCraftingRecipe
+  id: ActivateFireball2
+  results:
+  - ZoneArtifactFireballActive2
+  steps:
+    firstIngredient: ZoneArtifactFireball
+    secondIngredient: CraftHeater1
+    keepSecond: true
+    time: 3

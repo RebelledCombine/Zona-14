@@ -1,0 +1,52 @@
+# Заря
+- type: entity
+  parent: STBaseBlueprint
+  id: ClothingOuterArmorZaryaHunterBlueprint
+  name: Рецепт зари охотника
+  components:
+    - type: STBlueprint
+      blueprint: recipeZaryaHunter
+
+- type: entity
+  parent: STBaseBlueprint
+  id: ClothingOuterArmorZaryaStalkerModifedType1Blueprint
+  name: Рецепт модификации Зари тип 1
+  components:
+    - type: STBlueprint
+      blueprint: newrecipeClothingOuterArmorZaryaStalkerModifedType1
+
+- type: entity
+  parent: STBaseBlueprint
+  id: ClothingOuterArmorZaryaStalkerModifedType2Blueprint
+  name: Рецепт модификации Зари тип 2
+  components:
+    - type: STBlueprint
+      blueprint: newrecipeClothingOuterArmorZaryaStalkerModifedType2
+
+# 6Б2
+
+- type: entity
+  parent: STBaseBlueprint
+  id: STClothingOuterArmor6B2Blueprint
+  name: Рецепт бронежилета 6Б2
+  components:
+    - type: STBlueprint
+      blueprint: newrecipeClothingOuterArmor6B2
+
+#СН-1
+- type: entity
+  parent: STBaseBlueprint
+  id: ClothingOuterArmorCN1Blueprint
+  name: Рецепт бронежилета СН-1
+  components:
+    - type: STBlueprint
+      blueprint: newrecipeClothingOuterArmorCN1
+
+# Spark
+- type: entity
+  parent: STBaseBlueprint
+  id: ClothingOuterArmorSparkBlueprint
+  name: Рецепт костюма Спарк
+  components:
+    - type: STBlueprint
+      blueprint: newrecipeClothingOuterArmorSpark

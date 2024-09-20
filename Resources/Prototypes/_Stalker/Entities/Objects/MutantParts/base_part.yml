@@ -1,0 +1,19 @@
+- type: entity
+  parent: BaseItem
+  id: BaseMutantPart
+  suffix: Stalker, Mutant part
+  abstract: true
+  components:
+    - type: Craftable
+    - type: Material
+    - type: Sprite
+      state: icon
+    - type: Tag
+      tags:
+        - Khabar
+    - type: STWeight
+      self: 0.5
+    - type: Currency
+      price:
+        Roubles: 1
+        Dollar: 1

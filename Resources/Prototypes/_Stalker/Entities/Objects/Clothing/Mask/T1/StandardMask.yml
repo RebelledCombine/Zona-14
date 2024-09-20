@@ -1,0 +1,116 @@
+- type: entity
+  abstract: true
+  parent: ClothingMaskGas
+  id: STClothingMaskGasStandardT1Base
+  name: база стандартного противогаза T1 от радиации
+  suffix: ST, T1, Rad
+  components:
+  - type: Tag
+    tags:
+      - BlockMask
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/mask/gasmask_exoskelet.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/mask/gasmask_exoskelet.rsi
+  - type: IngestionBlocker
+  - type: IdentityBlocker
+  - type: Craftable
+  - type: Armor
+    modifiers:
+      coefficients:
+        Radiation: 0.85
+
+- type: entity
+  parent: STClothingMaskGasStandardT1Base
+  id: ClothingMaskGasZarya
+  name: стандартный противогаз сталкера
+  description: Дешёвый и эффективный.  Защищает от радиации.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/mask/gasmask_stalker.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/mask/gasmask_stalker.rsi
+
+- type: entity
+  parent: STClothingMaskGasStandardT1Base
+  id: ClothingMaskGasExs
+  name: стандартный противогаз экзоскелета
+  description: Ваще без брони, хоть и от экзы.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/mask/gasmask_exoskelet.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/mask/gasmask_exoskelet.rsi
+
+- type: entity
+  parent: STClothingMaskGasStandardT1Base
+  id: ClothingMaskGasMono
+  name: стандартный противогаз Монолита
+  description: Скрывает глаза и злые помыслы. Защищает от радиации.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/mask/gasmask_monolith.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/mask/gasmask_monolith.rsi
+
+- type: entity
+  parent: STClothingMaskGasStandardT1Base
+  id: ClothingMaskGasChN
+  name: стандартный противогаз Чистого Неба
+  description: Возможно за ним выдающийся учёный, но скорее просто живая дубина.  Защищает от радиации.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/mask/gasmask_cn.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/mask/gasmask_cn.rsi
+  - type: Armor
+    armorLevels:
+       radiation: 1
+
+- type: entity
+  parent: STClothingMaskGasStandardT1Base
+  id: ClothingMaskGasDolg1
+  name: стандартный противогаз Долга 1
+  description: Вряд ли он уничтожит Зону, но он очень старается  Защищает от радиации.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/mask/gasmask_dolg1.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/mask/gasmask_dolg1.rsi
+
+- type: entity
+  parent: STClothingMaskGasStandardT1Base
+  id: ClothingMaskGasFreedom
+  name: стандартный противогаз Свободы
+  description: Увы, не в фектарне. Защищает от радиации.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/mask/gasmask_freedom.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/mask/gasmask_freedom.rsi
+
+- type: entity
+  parent: STClothingMaskGasStandardT1Base
+  id: ClothingMaskGasRenegats
+  name: стандартный противогаз ренегатов
+  description: Дешёвый и эффективный. Защищает от радиации, но всё равно хорош в защите от своих химикатов.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/mask/gasmask_renegat.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/mask/gasmask_renegat.rsi
+  - type: Armor
+    armorLevels:
+       environment: 1
+
+
+- type: entity
+  parent: STClothingMaskGasStandardT1Base
+  id: ClothingMaskGasAnomalists
+  name: stndard anomalists gas mask
+  description: Perhaps there is an outstanding fisherman behind him. Protects against radiation.
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/mask/gasmask_cn.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/mask/gasmask_cn.rsi

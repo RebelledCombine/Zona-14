@@ -1,0 +1,18 @@
+﻿- type: lightCraftingRecipe
+  id: WeaponShotgunAnomalySawedOff
+  results:
+    - WeaponShotgunAnomalySawedOff
+  steps:
+    firstIngredient: CraftSaw
+    secondIngredient: STWeaponShotgunAnomalyToz34
+    keepFirst: true
+    time: 5
+
+- type: lightCraftingRecipe
+  id: ActivateWorkbench
+  results:
+    - StalkerWorkbenchON
+  steps:
+    firstIngredient: Coupon
+    secondIngredient: StalkerWorkbenchOFF
+    time: 3

@@ -1,0 +1,40 @@
+- type: craftRecipe
+  id: newrecipeClothingHeadAssaultHelmet
+  resultProtos:
+    - ClothingHeadAssaultHelmet
+  craftTime: 6
+  items:
+    ClothingHeadAssaultHelmetBlueprint:
+      amount: 1
+      catalyzer: true
+    ToolkitTearOne:
+      amount: 1
+      catalyzer: true
+    STCraftSheetBrassT3:
+      amount: 2
+    STCraftPlasticFittingT3:
+      amount: 2
+    STCraftGlueKitT3:
+      amount: 2
+    STCraftQuartzCrystalT3:
+      amount: 2
+    STCraftMultilayerPCBT3:
+      amount: 1
+
+- type: craftRecipe
+  id: newrecipeSTClothingHeadHelmetMakeshiftTacticalT3
+  resultProtos:
+    - STClothingHeadHelmetMakeshiftTacticalT3
+  craftTime: 6
+  items:
+    ToolkitTearOne:
+      amount: 1
+      catalyzer: true
+    STCraftSheetBrassT3:
+      amount: 3
+    STCraftPlasticFittingT3:
+      amount: 2
+    STCraftGlueKitT3:
+      amount: 2
+    STCraftQuartzCrystalT3:
+      amount: 3

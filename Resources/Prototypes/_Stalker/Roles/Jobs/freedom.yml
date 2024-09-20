@@ -1,0 +1,60 @@
+- type: job
+  id: StalkerFreedom
+  name: Боец Свободы
+  icon: freedom
+  description: Защитник зоны.
+  playTimeTracker: JobFreedom
+  requirements:
+    - !type:RoleTimeRequirement
+      role: JobFreedom
+      time: 1
+  startingGear: FreedomGear
+  supervisors: Кури, защищай Зону и игнорируй авторитеты.
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: Access
+          tags:
+            - Freedom
+        - type: Bands
+          band: Stalker
+          bandIcon: freedom
+        - type: BlockTackingHolyItems
+        - type: TeethPull
+          teethProto: ToothStalker
+          pullingItemTag: PliersStalker
+          teethCount: 3
+          initialTeeth: 3
+
+- type: job
+  id: StalkerHeadFreedom
+  name: Атаман
+  icon: freedom
+  description: Защитник зоны.
+  playTimeTracker: JobHeadFreedom
+  requirements:
+    - !type:RoleTimeRequirement
+      role: JobHeadFreedom
+      time: 1
+  startingGear: FreedomGear
+  supervisors: Командиры? У анархистов?.
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: Access
+          tags:
+            - Freedom
+            - FreedomHead
+        - type: Bands
+          band: Stalker
+          bandIcon: freedom
+        - type: BlockTackingHolyItems
+
+- type: startingGear
+  id: FreedomGear
+  equipment:
+    id: SvobodaPDA
+    belt: ClothingBeltStorageWaistbag
+    legs: ClothingLegsJeansFreedomCamouflage
+    shoes: ClothingShoesBootsWork
+    torso: ClothingTorsoTurtlenecksFreedomCamouflage

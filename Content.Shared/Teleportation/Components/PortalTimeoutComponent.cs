@@ -1,4 +1,4 @@
-﻿using Robust.Shared.GameStates;
+using Robust.Shared.GameStates;
 
 namespace Content.Shared.Teleportation.Components;
 
@@ -14,4 +14,7 @@ public sealed partial class PortalTimeoutComponent : Component
     /// </summary>
     [ViewVariables, DataField, AutoNetworkedField]
     public EntityUid? EnteredPortal;
+
+    // Stalker-Changes
+    public TimeSpan? Cooldown;
 }

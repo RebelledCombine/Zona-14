@@ -1,0 +1,457 @@
+############### Мясо
+
+- type: reagent
+  id: MToxin
+  name: MToxin
+  parent: Toxin
+  desc: MToxin
+  physicalDesc: reagent-physical-desc-sweet
+  flavor: salty
+  color: "#660099"
+  metabolisms:
+    Poison:
+      metabolismRate: 0.2
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Poison: 0.3
+
+- type: reagent
+  id: MRadin
+  name: MRadin
+  group: Medicine
+  desc: MRadin
+  physicalDesc: reagent-physical-desc-cloudy
+  flavor: medicine
+  color: "#bd5902"
+  metabolisms:
+    Medicine:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Radiation: -1
+
+##### Кабан
+
+- type: entity
+  name: сырое мясо кабана
+  parent: FoodMeatRawBase
+  id: FoodMeatBoar
+  description: Кусок сырого мяса кабана.
+  suffix: Stalker, еда
+  components:
+  - type: STWeight
+    self: 1.0
+  - type: Sprite
+    state: goliath
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 9
+        - ReagentId: Fat
+          Quantity: 9
+        - ReagentId: MToxin
+          Quantity: 10
+  - type: InternalTemperature
+    conductivity: 0.43
+  - type: Construction
+    graph: MeatSteak
+    node: start
+    defaultTarget: steak boar
+  - type: Tag
+    tags:
+    - Meat
+  - type: Craftable
+
+- type: entity
+  name: стейк из мяса кабана
+  parent: FoodMeatBase
+  id: FoodMeatBoarCooked
+  description: Приготовленное мясо кабана.
+  suffix: Stalker, еда
+  components:
+  - type: STWeight
+    self: 0.8
+  - type: Craftable
+  - type: Tag
+    tags:
+    - Cooked
+    - Meat
+    - Steak
+  - type: Sprite
+    layers:
+    - state: goliath-cooked
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 10
+        - ReagentId: Protein
+          Quantity: 5
+        - ReagentId: MRadin
+          Quantity: 10
+  - type: Construction
+    graph: MeatSteakBoar
+    node: steak boar
+
+- type: constructionGraph
+  id: MeatSteakBoar
+  start: start
+  graph:
+
+  - node: start
+    edges:
+    - to: steak boar
+      completed:
+      - !type:PlaySound
+        sound: /Audio/Effects/sizzle.ogg
+      steps:
+      - minTemperature: 335
+
+  - node: steak boar
+    entity: FoodMeatBoarCooked
+
+######################## Пёсик
+
+- type: entity
+  name: сырое мясо пса
+  parent: FoodMeatRawBase
+  id: FoodMeatDog
+  description: Кусок сырого мяса пса.
+  suffix: Stalker, еда
+  components:
+  - type: STWeight
+    self: 0.8
+  - type: Sprite
+    state: cutlet
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 9
+        - ReagentId: Fat
+          Quantity: 9
+        - ReagentId: MToxin
+          Quantity: 5
+  - type: InternalTemperature
+    conductivity: 0.43
+  - type: Construction
+    graph: MeatSteak
+    node: start
+    defaultTarget: steak boar
+  - type: Tag
+    tags:
+    - Meat
+  - type: Craftable
+
+- type: entity
+  name: стейк из мяса пса
+  parent: FoodMeatBase
+  id: FoodMeatDogCooked
+  description: Приготовленное мясо пса.
+  suffix: Stalker, еда
+  components:
+  - type: STWeight
+    self: 0.6
+  - type: Craftable
+  - type: Tag
+    tags:
+    - Cooked
+    - Meat
+    - Steak
+  - type: Sprite
+    layers:
+    - state: cutlet-cooked
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 10
+        - ReagentId: Protein
+          Quantity: 5
+        - ReagentId: MRadin
+          Quantity: 5
+  - type: Construction
+    graph: MeatSteakDog
+    node: steak dog
+
+- type: constructionGraph
+  id: MeatSteakDog
+  start: start
+  graph:
+
+  - node: start
+    edges:
+    - to: steak dog
+      completed:
+      - !type:PlaySound
+        sound: /Audio/Effects/sizzle.ogg
+      steps:
+      - minTemperature: 335
+
+  - node: steak dog
+    entity: FoodMeatDogCooked
+
+######################## Паук
+- type: entity
+  name: сырое паучье мясо
+  parent: FoodMeatRawBase
+  id: STFoodMeatSpider
+  description: Кусок сырого мяса паука. Выглядит тошнотворно.
+  suffix: Stalker, еда
+  components:
+  - type: Sprite
+    sprite: Objects/Consumable/Food/meat.rsi
+    state: spider
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 9
+        - ReagentId: Fat
+          Quantity: 9
+        - ReagentId: Ipecac
+          Quantity: 5
+  - type: Tag
+    tags:
+    - Meat
+  - type: Craftable
+
+- type: entity
+  name: стейк из мяса паука
+  parent: FoodMeatBase
+  id: STFoodMeatSpiderCooked
+  description: Приготовленное мясо паука. Выглядит тошнотворно.
+  suffix: Stalker, еда
+  components:
+  - type: STWeight
+    self: 0.6
+  - type: Craftable
+  - type: Tag
+    tags:
+    - Cooked
+    - Meat
+    - Steak
+  - type: Sprite
+    layers:
+    - state: spidercutlet-cooked
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 4
+        - ReagentId: Protein
+          Quantity: 2
+        - ReagentId: MRadin
+          Quantity: 3
+        - ReagentId: Ipecac
+          Quantity: 2
+
+###################################
+#             НАПИТКИ             #
+###################################
+
+- type: entity
+  parent: [DrinkBottleVisualsAll, DrinkBottleGlassBaseFull]
+  id: DrinkLemonadehBottleFull
+  name: бутылка с лимонадом «Дюшес»
+  description: "Один из сортов советского лимонада: безалкогольный сильногазированный тонизирующий напиток светло-жёлтого цвета. Помимо обычной лимонадной основы, оригинальный напиток содержит сироп-настой десертной южной груши сорта «Дюшес»"
+  components:
+  - type: STWeight
+    self: 1.5
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        reagents:
+        - ReagentId: Lemonade
+          Quantity: 50
+        - ReagentId: SodaWater
+          Quantity: 50
+  - type: Label
+    currentLabel: lemonade
+  - type: Sprite
+    sprite: _Stalker/Objects/Counsumable/Drinks/lemonade.rsi
+  - type: Sealable
+
+# Прочая лабудень
+
+- type: entity
+  name: бургер из мяса слепого пса
+  parent: FoodBurgerBase
+  id: FoodBurgerDog
+  description: Бургер из собачатины с чесноком, перцем и салатом. Дешёвая альтернатива более популярному бургеру из кабана.
+  suffix: Stalker, еда
+  components:
+  - type: Sprite
+    state: chicken
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 15
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 3
+        - ReagentId: Protein
+          Quantity: 7
+        - ReagentId: Vitamin
+          Quantity: 1
+  - type: Tag
+    tags:
+    - Meat
+
+- type: entity
+  name: бургер из мяса кабана
+  parent: FoodBurgerBase
+  id: FoodBurgerBoar
+  description: Бургер из кабана с чесноком, перцем и салатом. Более питательный, чем бургер из слепого пса.
+  suffix: Stalker, еда
+  components:
+  - type: Sprite
+    state: chicken
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: Protein
+          Quantity: 8
+        - ReagentId: Vitamin
+          Quantity: 2
+  - type: Tag
+    tags:
+    - Meat
+
+- type: entity
+  name: бургер из мяса паука
+  parent: FoodBurgerBase
+  id: FoodBurgerSpider
+  description: Бургер из паука с чесноком, перцем и салатом. Эта гадость не только отвратительна, но ещё и мало-питательна
+  suffix: Stalker, еда
+  components:
+  - type: Sprite
+    state: soylent
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 10
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 2
+        - ReagentId: Protein
+          Quantity: 4
+        - ReagentId: Vitamin
+          Quantity: 1
+  - type: Tag
+    tags:
+    - Meat
+
+- type: entity
+  name: печёный картофель
+  parent: FoodProduceBase
+  id: FoodPotatoCooked
+  description: Печёный картофель, который может быть как простым, так и праздничным, изысканным блюдом.
+  suffix: Stalker, еда
+  components:
+  - type: STWeight
+    self: 0.36
+  - type: Craftable
+  - type: FlavorProfile
+    flavors:
+      - potatoescooking
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 16
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 14
+        - ReagentId: Vitamin
+          Quantity: 2
+  - type: Sprite
+    sprite: Objects/Weapons/Bombs/hot_potato.rsi
+    state: icon
+    layers:
+    - state: icon
+      map: ["base"]
+  - type: Item
+    sprite: Objects/Weapons/Bombs/hot_potato.rsi
+    size: Small
+  - type: Tag
+    tags:
+    - Potato
+    - Vegetable
+
+- type: entity
+  name: чищенный картофель
+  parent: FoodProduceBase
+  id: FoodPotatoCleaned
+  description: Чищенныё картофель, который может быть как простым, так и праздничным, изысканным блюдом.
+  suffix: Stalker, еда
+  components:
+  - type: STWeight
+    self: 0.39
+  - type: Craftable
+  - type: FlavorProfile
+    flavors:
+      - potatoes
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 13
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 11
+        - ReagentId: Vitamin
+          Quantity: 2
+  - type: Sprite
+    sprite: Objects/Weapons/Bombs/hot_potato.rsi
+    state: icon
+  - type: Item
+    sprite: Objects/Specific/Hydroponics/potato.rsi
+    size: Small
+  - type: Tag
+    tags:
+    - Potato
+    - Vegetable
+
+- type: entity
+  name: картофельные очистки
+  parent: FoodProduceBase
+  id: FoodPotatoCleaning
+  description: Говорят, что из них делают чипсы.
+  suffix: Stalker, еда
+  components:
+  - type: STWeight
+    self: 0.01
+  - type: Craftable
+  - type: FlavorProfile
+    flavors:
+      - potatoes
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 2
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 1
+        - ReagentId: Vitamin
+          Quantity: 1
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/potato.rsi
+    state: potato_cut
+    size: Small
+  - type: Tag
+    tags:
+    - Potato
+    - Vegetable

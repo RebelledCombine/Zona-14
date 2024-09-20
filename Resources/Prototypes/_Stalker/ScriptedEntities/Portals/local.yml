@@ -1,0 +1,81 @@
+﻿- type: entity
+  parent: LocalTeleportBase
+  id: LocalTeleportBasement5
+  tag: Stalker 5
+  name: Чистилище-Сталкер1
+  components:
+    - type: LocalTeleport
+      portalName: Basement5
+- type: entity
+  parent: LocalTeleportBaseUncollide
+  id: LocalTeleportBasement51
+  tag: Stalker 5
+  name: Чистилище-Сталкер1 нонколлижн
+  components:
+    - type: LocalTeleport
+      portalName: Basement5
+- type: entity
+  parent: LocalTeleportBase
+  id: LocalTeleportBasement52
+  tag: Stalker 5
+  name: Чистилище-Сталкер2
+  components:
+    - type: LocalTeleport
+      portalName: Basement52
+- type: entity
+  parent: LocalTeleportBaseUncollide
+  id: LocalTeleportBasement512
+  tag: Stalker 5
+  name: Чистилище-Сталкер2 нонколлижн
+  components:
+    - type: LocalTeleport
+      portalName: Basement52
+
+#############################Военка
+
+- type: entity
+  parent: LocalTeleportBase
+  id: LocalTeleportMilBase1
+  tag: Stalker 1
+  name: Военная база 1
+  components:
+    - type: LocalTeleport
+      portalName: MilBase1
+
+- type: entity
+  parent: LocalTeleportBase
+  id: LocalTeleportMilBase2
+  tag: Stalker 2
+  name: Военная база 2
+  components:
+    - type: LocalTeleport
+      portalName: MilBase2
+
+- type: entity
+  parent: LocalTeleportBase
+  id: LocalTeleportMilBase3
+  tag: Stalker 3
+  name: Военная база 3
+  components:
+    - type: LocalTeleport
+      portalName: MilBase3
+
+################################Подземка Свалки
+
+- type: entity
+  parent: LocalTeleportBase
+  id: LocalTeleportSvUnderground
+  tag: Stalker 1
+  name: Подземелье Свалки 1
+  components:
+    - type: LocalTeleport
+      portalName: SvUnderground
+
+- type: entity
+  parent: LocalTeleportBase
+  id: LocalTeleportSvUnderground2
+  tag: Stalker 2
+  name: Подземелье Свалки 2
+  components:
+    - type: LocalTeleport
+      portalName: SvUnderground2

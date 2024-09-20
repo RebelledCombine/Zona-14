@@ -1,0 +1,60 @@
+- type: entity
+  name: Glock-17
+  parent: STBaseWeaponPistol
+  suffix: ST
+  id: WeaponPistolStalkerGlock
+  description: Один из самых популярных пистолетов в США под 9x19.
+  components:
+    - type: STWeight
+      self: 1
+    - type: Item
+      size: Medium
+    - type: Sprite
+      scale: 0.8, 0.8
+      sprite: _Stalker/Objects/Weapons/Guns/Pistols/glock.rsi
+      layers:
+        - state: base
+          map: ["enum.GunVisualLayers.Base"]
+        - state: mag-0
+          map: ["enum.GunVisualLayers.Mag"]
+    - type: Gun
+      projectileSpeed: 20
+      minAngle: 5
+      maxAngle: 50
+      angleIncrease: 5
+      angleDecay: 25
+      fireRate: 3
+      availableModes:
+        - SemiAuto
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          startingItem: BaseGlockMag10
+          insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
+          ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+          priority: 3
+          whitelist:
+            tags:
+              - MagazineGlock
+        gun_auto_sear:
+          name: Insides
+          priority: 2
+          whitelist:
+            tags:
+              - STModuleAutoSear
+        gun_chamber:
+          name: Chamber
+          startingItem: Cartridge919PSOGJ
+          priority: 1
+          whitelist:
+            tags:
+              - Cartridge919
+    - type: ContainerContainer
+      containers:
+        gun_magazine: !type:ContainerSlot
+        gun_chamber: !type:ContainerSlot
+    - type: Craftable
+    - type: GunWieldBonus
+      minAngle: -25
+      maxAngle: -5

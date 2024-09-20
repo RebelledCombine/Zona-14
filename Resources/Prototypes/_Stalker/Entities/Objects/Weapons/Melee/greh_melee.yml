@@ -1,0 +1,193 @@
+- type: entity
+  name: коса греха
+  parent: BaseItem
+  id: GrehBattleScythe
+  description: Ужасающее двуручное оружие
+  suffix: ST
+  components:
+    - type: Tag
+      tags:
+        - GrehCanTakeOnly
+    - type: Sharp
+    - type: Sprite
+      sprite: Objects/Weapons/Melee/battle_scythe.rsi
+      state: icon
+    - type: Clothing
+      sprite: Objects/Weapons/Melee/battle_scythe.rsi
+      slots:
+        - Back
+    - type: MeleeWeapon
+      attackRate: 0.3
+      range: 2.2
+      damage:
+        types:
+          Piercing: 50
+          Slash: 50
+          Caustic: 15
+    - type: Wieldable
+    - type: Item
+    - type: DamageOtherOnHit
+      damage:
+        types:
+          Slash: 18
+    - type: MeleeRequiresWield
+    - type: Damageable
+      damageContainer: Shield
+    - type: Blocking
+      passiveBlockModifier:
+        coefficients:
+          Blunt: 0.95
+          Slash: 0.95
+          Piercing: 0.95
+          Heat: 0.9
+      activeBlockModifier:
+        coefficients:
+          Blunt: 0.85
+          Slash: 0.85
+          Piercing: 0.85
+          Heat: 0.8
+        flatReductions:
+          Blunt: 0.5
+          Slash: 0.5
+          Piercing: 0.5
+          Heat: 1
+    - type: ShieldRegen
+      health: 100
+      healDamage:
+        types:
+          Piercing: 35
+          Blunt: 15
+          Slash: 15
+          Heat: 15
+
+- type: entity
+  name: святой кинжал греха
+  parent: BaseKnife
+  id: DaggerGreh
+  suffix: ST
+  description: Кромсает врагов
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Melee/dagger.rsi
+    state: icon
+  - type: Item
+    sprite: Objects/Weapons/Melee/dagger.rsi
+  - type: Clothing
+    sprite: Objects/Weapons/Melee/dagger.rsi
+    slots:
+      - Belt
+  - type: MeleeWeapon
+    attackRate: 2.6
+    range: 1.3
+    damage:
+      types:
+        Slash: 17
+        Caustic: 8
+  - type: Damageable
+    damageContainer: Shield
+  - type: Blocking
+    passiveBlockModifier:
+      coefficients:
+        Blunt: 0.95
+        Slash: 0.95
+        Piercing: 0.95
+        Heat: 0.9
+    activeBlockModifier:
+      coefficients:
+        Blunt: 0.85
+        Slash: 0.85
+        Piercing: 0.85
+        Heat: 0.8
+      flatReductions:
+        Blunt: 0.5
+        Slash: 0.5
+        Piercing: 0.5
+        Heat: 1
+  - type: ShieldRegen
+    health: 50
+    healDamage:
+      types:
+        Piercing: 30
+        Blunt: 10
+        Slash: 10
+        Heat: 10
+  - type: Tag
+    tags:
+    - GrehCanTakeOnly
+  - type: HeldSpeedModifier
+    walkModifier: 1.27
+    sprintModifier: 1.27
+  - type: SolutionContainerManager
+    solutions:
+      melee:
+        maxVol: 5
+  - type: MeleeChemicalInjector
+    transferAmount: 1.4
+    solution: melee
+  - type: RefillableSolution
+    solution: melee
+  - type: InjectableSolution
+    solution: melee
+  - type: SolutionInjectOnCollide
+    transferAmount: 2
+    blockSlots: NONE
+  - type: SolutionTransfer
+    maxTransferAmount: 5
+  - type: SolutionRegeneration
+    solution: melee
+    generated:
+      reagents:
+        - ReagentId: Amatoxin
+          Quantity: 1
+
+- type: entity
+  name: святой меч греха
+  parent: BaseKnife
+  id: SwordGreh
+  suffix: ST
+  description: Средний вариант для нарезания неверных.
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Melee/g_sword.rsi
+    state: icon
+  - type: Item
+    sprite: Objects/Weapons/Melee/g_sword.rsi
+  - type: MeleeWeapon
+    attackRate: 1.2
+    range: 1.6
+    damage:
+      types:
+        Slash: 35
+        Piercing: 20
+        Caustic: 10
+  - type: Damageable
+    damageContainer: Shield
+  - type: Blocking
+    passiveBlockModifier:
+      coefficients:
+        Blunt: 0.95
+        Slash: 0.95
+        Piercing: 0.95
+        Heat: 0.9
+    activeBlockModifier:
+      coefficients:
+        Blunt: 0.85
+        Slash: 0.85
+        Piercing: 0.85
+        Heat: 0.8
+      flatReductions:
+        Blunt: 0.5
+        Slash: 0.5
+        Piercing: 0.5
+        Heat: 1
+  - type: ShieldRegen
+    health: 150
+    healDamage:
+      types:
+        Piercing: 60
+        Blunt: 20
+        Slash: 20
+        Heat: 20
+  - type: Tag
+    tags:
+    - GrehCanTakeOnly

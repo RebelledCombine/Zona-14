@@ -1,0 +1,43 @@
+# Штурмовой шлем
+
+- type: lightCraftingRecipe
+  id:  STCraftSkinClothingHeadAssaultHelmetUN
+  results:
+    - ClothingHeadAssaultHelmetUN
+  steps:
+    firstIngredient: STSkinsKitUnitar
+    secondIngredient: ClothingHeadAssaultHelmet
+    keepFirst: true
+    time: 5
+
+- type: lightCraftingRecipe
+  id:  STCraftSkinClothingHeadAssaultHelmetDeserter
+  results:
+    - ClothingHeadAssaultHelmetDeserter
+  steps:
+    firstIngredient: STSkinsKitDeserters
+    secondIngredient: ClothingHeadAssaultHelmet
+    keepFirst: true
+    time: 5
+
+# Сфера 08 шлем
+
+- type: lightCraftingRecipe
+  id:  STCraftSkinClothingHeadHelmetBerill5MMonolith
+  results:
+    - ClothingHeadHelmetBerill5MMonolith
+  steps:
+    firstIngredient: STSkinsKitMonolith
+    secondIngredient: ClothingHeadHelmetBerill5MMilitary
+    keepFirst: true
+    time: 5
+
+- type: lightCraftingRecipe
+  id:  STCraftSkinClothingHeadHelmetBerill5MDolg
+  results:
+    - ClothingHeadHelmetBerill5MDolg
+  steps:
+    firstIngredient: STSkinsKitDolg
+    secondIngredient: ClothingHeadHelmetBerill5MMilitary
+    keepFirst: true
+    time: 5

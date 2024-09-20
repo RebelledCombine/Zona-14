@@ -1,0 +1,10 @@
+- type: lightCraftingRecipe
+  id: STCraftSkin
+  results:
+    - ClothingOuterArmorDeserter6B2
+  steps:
+    firstIngredient: STSkinsKitDeserters
+    secondIngredient: ClothingOuterArmor6B2
+    keepFirst: true
+    time: 5
+

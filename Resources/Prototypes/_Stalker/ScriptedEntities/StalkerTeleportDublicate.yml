@@ -1,0 +1,355 @@
+- type: entity
+  abstract: true
+  id: StalkerDuplicateTeleportBase
+  suffix: Teleport, Portal
+
+- type: entity
+  parent: StalkerDuplicateTeleportBase
+  id: StalkerDublicateWipeSafe
+  name: Сохранение чертежей
+  description: С помощью этого подвала вы сможете сохранить свои чертежи от вайпа
+  suffix: Teleport, Portal, Duplicate, Вайп, Teleport
+  components:
+  - type: Transform
+    anchored: True
+  - type: InteractionOutline
+  - type: Clickable
+  - type: Physics
+    bodyType: Static
+  - type: Sprite
+    layers:
+      - state: t3
+    scale: 0.6, 0.6
+    sprite: _Stalker/Objects/Other/teleport.rsi
+  - type: Fixtures
+    fixtures:
+      portalFixture:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.25,-0.48,0.25,0.48"
+        mask:
+          - FullTileMask
+        layer:
+          - TableLayer
+        hard: false
+  - type: PointLight
+    color: Green
+    radius: 3
+    energy: 1
+    netsync: false
+  - type: DuplicateTeleport
+    prefix: WipeSafe_
+    maxWeight: 0.5
+    mapPath: /Maps/_StalkerMaps/PersonalStalkerArena/WipeSafe.yml
+
+- type: entity
+  parent: StalkerDuplicateTeleportBase
+  id: StalkerDublicateKordon
+  name: Подвал в логово
+  description: С помощью этого подвала вы можете попасть в своё логово.
+  suffix: Teleport, Portal, Duplicate, Kordon
+  components:
+  - type: Transform
+    anchored: True
+  - type: InteractionOutline
+  - type: Clickable
+  - type: Physics
+    bodyType: Static
+  - type: Sprite
+    layers:
+      - state: t2
+    scale: 0.7, 0.7
+    sprite: _Stalker/Objects/Other/teleport.rsi
+  - type: Fixtures
+    fixtures:
+      portalFixture:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.25,-0.48,0.25,0.48"
+        mask:
+          - FullTileMask
+        layer:
+          - TableLayer
+        hard: false
+  - type: PointLight
+    color: OrangeRed
+    radius: 3
+    energy: 1
+    netsync: false
+  - type: DuplicateTeleport
+    prefix: Kordon
+    maxWeight: 350
+  #- type: AccessReader
+  #  access: [["Stalker"]]
+
+- type: entity
+  parent: StalkerDuplicateTeleportBase
+  id: StalkerDublicateRedForest
+  name: Подвал в логово
+  description: С помощью этого подвала вы можете попасть в своё логово.
+  suffix: Teleport, Portal, Duplicate, OrangeForest
+  components:
+  - type: Transform
+    anchored: True
+  - type: InteractionOutline
+  - type: Clickable
+  - type: Physics
+    bodyType: Static
+  - type: Sprite
+    layers:
+      - state: t2
+    scale: 0.7, 0.7
+    sprite: _Stalker/Objects/Other/teleport.rsi
+  - type: Fixtures
+    fixtures:
+      portalFixture:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.25,-0.48,0.25,0.48"
+        mask:
+          - FullTileMask
+        layer:
+          - TableLayer
+        hard: false
+  - type: PointLight
+    color: OrangeRed
+    radius: 3
+    energy: 1
+    netsync: false
+  - type: DuplicateTeleport
+    prefix: RedForest
+    maxWeight: 200
+  - type: AccessReader
+    denyTags:
+      - Military
+      - MilitaryOfficer
+      - MilitaryBarraks
+  #- type: AccessReader
+  #  access: [["Stalker"]]
+
+- type: entity
+  id: StalkerDublicateMilitary
+  parent: StalkerDublicateKordon
+  name: Подвал в логово
+  description: С помощью этого подвала вы можете попасть в своё логово.
+  suffix: Teleport, Portal, Duplicate, Military
+  components:
+  - type: DuplicateTeleport
+    prefix: Military
+    maxWeight: 150
+  - type: AccessReader
+    access: [["MilitaryBarraks"]]
+
+- type: entity
+  id: StalkerDublicateSci
+  parent: StalkerDublicateKordon
+  name: Подвал в логово
+  description: С помощью этого подвала вы можете попасть в своё логово.
+  suffix: Teleport, Portal, Duplicate, Sci
+  components:
+  - type: DuplicateTeleport
+    prefix: Sci
+    maxWeight: 150
+  - type: AccessReader
+    access: [["SciBase"]]
+
+- type: entity
+  id: StalkerDublicateBandit
+  parent: StalkerDublicateKordon
+  name: Подвал в логово
+  description: С помощью этого подвала вы можете попасть в своё логово.
+  suffix: Teleport, Portal, Duplicate, Bandit
+  components:
+  - type: DuplicateTeleport
+    prefix: Bandit
+    maxWeight: 150
+  - type: AccessReader
+    access: [["Bandit"]]
+
+- type: entity
+  id: StalkerDublicateSeraphims
+  parent: StalkerDublicateKordon
+  name: Подвал в логово
+  description: С помощью этого подвала вы можете попасть в своё логово.
+  suffix: Teleport, Portal, Duplicate, Seraphims
+  components:
+  - type: DuplicateTeleport
+    prefix: Seraphims
+  - type: AccessReader
+    access: [["Seraphims"]]
+
+- type: entity
+  id: StalkerDublicateDolg
+  parent: StalkerDublicateKordon
+  name: Подвал в логово
+  description: С помощью этого подвала вы можете попасть в своё логово.
+  suffix: Teleport, Portal, Duplicate, Dolg
+  components:
+  - type: DuplicateTeleport
+    prefix: Dolg
+    maxWeight: 150
+  - type: AccessReader
+    access: [["Dolg"]]
+
+- type: entity
+  id: StalkerDublicateFreedom
+  parent: StalkerDublicateKordon
+  name: Подвал в логово
+  description: С помощью этого подвала вы можете попасть в своё логово.
+  suffix: Teleport, Portal, Duplicate, Freedom
+  components:
+  - type: DuplicateTeleport
+    prefix: Freedom
+    maxWeight: 150
+  - type: AccessReader
+    access: [["Freedom"]]
+
+- type: entity
+  id: StalkerDublicateRenegats
+  parent: StalkerDublicateKordon
+  name: Подвал в логово
+  description: С помощью этого подвала вы можете попасть в своё логово.
+  suffix: Teleport, Portal, Duplicate, Renegat
+  components:
+  - type: DuplicateTeleport
+    prefix: Renegat
+    maxWeight: 150
+  - type: AccessReader
+    access: [["Renegat"]]
+
+- type: entity
+  id: StalkerDublicateCovenant
+  parent: StalkerDublicateKordon
+  name: Подвал в логово
+  description: С помощью этого подвала вы можете попасть в своё логово.
+  suffix: Teleport, Portal, Duplicate, Covenant
+  components:
+  - type: DuplicateTeleport
+    prefix: Covenant
+    maxWeight: 150
+  - type: AccessReader
+    access: [["Covenant"]]
+
+- type: entity
+  id: StalkerDublicateAnomalists
+  parent: StalkerDublicateKordon
+  name: Подвал в логово
+  description: С помощью этого подвала вы можете попасть в своё логово.
+  suffix: Teleport, Portal, Duplicate, Anomalist
+  components:
+  - type: DuplicateTeleport
+    prefix: Anomalist
+    maxWeight: 150
+  - type: AccessReader
+    access: [["Anomalist"]]
+
+- type: entity
+  id: StalkerDublicateMerc
+  parent: StalkerDublicateKordon
+  name: Подвал в логово
+  description: С помощью этого подвала вы можете попасть в своё логово.
+  suffix: Teleport, Portal, Duplicate, Mercenary
+  components:
+  - type: DuplicateTeleport
+    prefix: Kordon
+    maxWeight: 150
+  - type: AccessReader
+    access: [["Merc"]]
+
+- type: entity
+  id: StalkerDublicateGreh
+  parent: StalkerDublicateKordon
+  name: Подвал в логово
+  description: С помощью этого подвала вы можете попасть в своё логово.
+  suffix: Teleport, Portal, Duplicate, Greh
+  components:
+  - type: DuplicateTeleport
+    prefix: Greh
+    maxWeight: 150
+  - type: AccessReader
+    access: [["Greh"]]
+
+- type: entity
+  id: StalkerDublicateClearSky
+  parent: StalkerDublicateKordon
+  name: Подвал в логово
+  description: С помощью этого подвала вы можете попасть в своё логово.
+  suffix: Teleport, Portal, Duplicate, Clear Sky
+  components:
+  - type: DuplicateTeleport
+    prefix: CN
+    maxWeight: 150
+  - type: AccessReader
+    access: [["CN"]]
+
+- type: entity
+  id: StalkerDublicateProject
+  parent: StalkerDublicateKordon
+  name: Подвал в логово
+  description: С помощью этого подвала вы можете попасть в своё логово.
+  suffix: Teleport, Portal, Duplicate, Project
+  components:
+  - type: DuplicateTeleport
+    prefix: Project
+    maxWeight: 150
+  - type: AccessReader
+    access: [["Project"]]
+
+- type: entity
+  id: StalkerDublicatePoisk
+  parent: StalkerDublicateKordon
+  name: Подвал в логово
+  description: С помощью этого подвала вы можете попасть в своё логово.
+  suffix: Teleport, Portal, Duplicate, Poisk
+  components:
+  - type: DuplicateTeleport
+    prefix: Poisk
+    maxWeight: 150
+  - type: AccessReader
+    access: [["Poisk"]]
+
+- type: entity
+  id: StalkerDublicateNeutral
+  parent: StalkerDublicateKordon
+  name: Подвал в логово
+  description: С помощью этого подвала вы можете попасть в своё логово.
+  suffix: Teleport, Portal, Duplicate, Neutral
+  components:
+  - type: DuplicateTeleport
+    prefix: Neutral
+    maxWeight: 150
+  - type: AccessReader
+    access: [["Neutral"]]
+
+- type: entity
+  id: StalkerDublicateBar
+  parent: StalkerDublicateKordon
+  name: Подвал в логово
+  description: С помощью этого подвала вы можете попасть в своё логово.
+  suffix: Teleport, Portal, Duplicate, Bar
+  components:
+  - type: DuplicateTeleport
+    prefix: Bar
+    maxWeight: 150
+
+- type: duplicateSymbols
+  id: DublicateSymbols
+  symbols:
+    - Kordon
+    - CN
+    - Greh
+    - Merc
+    - Anomalist
+    - Covenant
+    - Renegat
+    - Freedom
+    - Dolg
+    - Seraphims
+    - Bandit
+    - Sci
+    - Military
+    - RedForest
+    - Poisk
+    - Project
+    - Neutral
+    - Bar

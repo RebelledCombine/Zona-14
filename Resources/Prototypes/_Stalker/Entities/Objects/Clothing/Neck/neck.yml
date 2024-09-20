@@ -1,0 +1,170 @@
+# Повязки
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingBandageStalkerBlue
+  name: синяя повязка
+  description: Синяя повязка на плечо.
+  suffix: Stalker, Повязка
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/neck/bandages/bandage_blue.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/neck/bandages/bandage_blue.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingBandageStalkerGreen
+  name: зелёная повязка
+  description: Зелёная поязка на плечо.
+  suffix: Stalker, Повязка
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/neck/bandages/bandage_green.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/neck/bandages/bandage_green.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingBandageStalkerYellow
+  name: жёлтая повязка
+  description: Жёлтая поязка на плечо.
+  suffix: Stalker, Повязка
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/neck/bandages/bandage_yellow.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/neck/bandages/bandage_yellow.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingBandageStalkerPurple
+  name: фиолетовая повязка
+  description: Фиолетовая поязка на плечо.
+  suffix: Stalker, Повязка
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/neck/bandages/bandage_purple.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/neck/bandages/bandage_purple.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingBandageStalkerRed
+  name: красная повязка
+  description: Красная поязка на плечо.
+  suffix: Stalker, Повязка
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/neck/bandages/bandage_red.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/neck/bandages/bandage_red.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingBandageStalkerRus
+  name: повязка с русским флагом
+  description: повязка с русским флагом на плечо.
+  suffix: Stalker, Повязка
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/neck/bandages/bandage_rus.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/neck/bandages/bandage_rus.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingBandageStalkerUk
+  name: повязка с украинским флагом
+  description: повязка с украинским флагом на плечо.
+  suffix: Stalker, Повязка
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/neck/bandages/bandage_uk.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/neck/bandages/bandage_uk.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingBandageStalkerMerc
+  name: повязка наёмников
+  description: повязка с цветом символики наёмников.
+  suffix: Stalker, Повязка
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/neck/bandages/bandage_merc.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/neck/bandages/bandage_merc.rsi
+
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingBandageStalkerKrest
+  name: повязка с крестом
+  description: повязка с красным крестом на белом фоне.
+  suffix: Stalker, Повязка
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/neck/bandages/bandage_krest.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/neck/bandages/bandage_krest.rsi
+
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingBandageStalkerPetuh
+  name: повязка с петухом
+  description: повязка с петухом кут - кудаАХ!
+  suffix: Stalker, Повязка
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/neck/bandages/bandage_petuh.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/neck/bandages/bandage_petuh.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingBandageStalkerBelarus
+  name: повязка с беларуским флагом
+  description: повязка с флагом Беларуси.
+  suffix: Stalker, Повязка
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/neck/bandages/bandage_belarus.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/neck/bandages/bandage_belarus.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingBandageStalkerJid
+  name: повязка с израильским флагом
+  description: повязка с флагом Израиля.
+  suffix: Stalker, Повязка
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/neck/bandages/bandage_jid.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/neck/bandages/bandage_jid.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingBandageStalkerWhite
+  name: белая повязка
+  description: белая повязка на плечо.
+  suffix: Stalker, Повязка
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/neck/bandages/bandage_white.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/neck/bandages/bandage_white.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingBandageStalkerPeace
+  name: повязка с флагом мира
+  description: повязка с флагом мира.
+  suffix: Stalker, Повязка
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/neck/bandages/bandage_peace.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/neck/bandages/bandage_peace.rsi

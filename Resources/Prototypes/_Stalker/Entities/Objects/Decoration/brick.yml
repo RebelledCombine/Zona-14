@@ -1,0 +1,8 @@
+- type: entity
+  id: Brick
+  name: Кирпич
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Decoration/Other/brick.rsi
+    state: base
+    snapCardinals: true

@@ -1,0 +1,27 @@
+- type: decal
+  id: seraphim_star1
+  tags: ["stalker", "seraphim"]
+  sprite:
+    sprite: _Stalker/Decals/seraphims.rsi
+    state: Star1
+
+- type: decal
+  id: seraphim_star2
+  tags: ["stalker", "seraphim"]
+  sprite:
+    sprite: _Stalker/Decals/seraphims.rsi
+    state: Star2
+
+- type: decal
+  id: seraphim_star3
+  tags: ["stalker", "seraphim"]
+  sprite:
+    sprite: _Stalker/Decals/seraphims.rsi
+    state: Star3
+
+- type: decal
+  id: seraphim_star4
+  tags: ["stalker", "seraphim"]
+  sprite:
+    sprite: _Stalker/Decals/seraphims.rsi
+    state: Star4

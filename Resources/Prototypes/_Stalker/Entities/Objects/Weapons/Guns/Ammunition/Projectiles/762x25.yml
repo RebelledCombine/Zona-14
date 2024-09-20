@@ -1,0 +1,55 @@
+#7.62x25
+
+- type: entity
+  id: Bullet725PGL
+  name: bullet (7.62х25 rifle)
+  parent: BaseBullet
+  noSpawn: true
+  components:
+  - type: TimedDespawn
+    lifetime: 2
+  - type: Projectile
+    projectileClass: 1
+    damage:
+      types:
+        Piercing: 20
+  - type: StaminaDamageOnCollide
+    damage: 1
+
+- type: entity
+  id: Bullet725PTGJ
+  name: bullet (7.62х25 rifle)
+  parent: BaseBullet
+  noSpawn: true
+  components:
+  - type: Projectile
+    projectileClass: 2
+    damage:
+      types:
+        Piercing: 22
+
+- type: entity
+  id: Bullet725LRNPC
+  name: bullet (7.62х25 rifle)
+  parent: BaseBullet
+  noSpawn: true
+  components:
+  - type: Projectile
+    projectileClass: 0
+    damage:
+      types:
+        Blunt: 5
+        Slash: 5
+        Piercing: 25
+
+- type: entity
+  id: Bullet725PSTGJ
+  name: bullet (7.62х25 rifle)
+  parent: BaseBullet
+  noSpawn: true
+  components:
+  - type: Projectile
+    projectileClass: 3
+    damage:
+      types:
+        Piercing: 24

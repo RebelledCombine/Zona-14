@@ -1,0 +1,165 @@
+﻿- type: entity
+  name: голый ООНовец (переименуй меня)
+  suffix: Stalker, пешка с нашивкой
+  parent: MobHuman
+  id: MobStalkerUN
+  components:
+    - type: Bands
+      band: Stalker
+      bandIcon: un
+
+- type: entity
+  name: голый ренегат (переименуй меня)
+  suffix: Stalker, пешка с нашивкой
+  parent: MobHuman
+  id: MobStalkerRene
+  components:
+    - type: Access
+      tags:
+        - Renegat
+    - type: Bands
+      band: Stalker
+      bandIcon: rene
+
+- type: entity
+  name: голый свободовец (переименуй меня)
+  suffix: Stalker, пешка с нашивкой
+  parent: MobHuman
+  id: MobStalkerFreeadom
+  components:
+    - type: Access
+      tags:
+        - Freedom
+    - type: Bands
+      band: Stalker
+      bandIcon: freedom
+
+- type: entity
+  name: голый долговец (переименуй меня)
+  suffix: Stalker, пешка с нашивкой
+  parent: MobHuman
+  id: MobStalkerDolg
+  components:
+    - type: Access
+      tags:
+        - Dolg
+    - type: Bands
+      band: Stalker
+      bandIcon: Dolg
+
+- type: entity
+  name: голый учёный (переименуй меня)
+  suffix: Stalker, пешка с нашивкой
+  parent: MobHuman
+  id: MobStalkerSci
+  components:
+    - type: Access
+      tags:
+        - Sci
+    - type: Bands
+      band: Stalker
+      bandIcon: sci
+
+- type: entity
+  name: голый бандит (переименуй меня)
+  suffix: Stalker, пешка с нашивкой
+  parent: MobHuman
+  id: MobStalkerbandit
+  components:
+    - type: Access
+      tags:
+        - Bandit
+    - type: Bands
+      band: Stalker
+      bandIcon: band
+
+- type: entity
+  name: голый заветовец (переименуй меня)
+  suffix: Stalker, пешка с нашивкой
+  parent: MobHuman
+  id: MobStalkerZavet
+  components:
+    - type: Access
+      tags:
+        - Covenant
+    - type: Bands
+      band: Stalker
+      bandIcon: zavet
+
+- type: entity
+  name: голый греховец (переименуй меня)
+  suffix: Stalker, пешка с нашивкой
+  parent: MobHuman
+  id: MobStalkerGreh
+  components:
+    - type: Access
+      tags:
+        - Greh
+    - type: Bands
+      band: Stalker
+      bandIcon: greh
+
+- type: entity
+  name: голый член Чистого Неба (переименуй меня)
+  suffix: Stalker, пешка с нашивкой
+  parent: MobHuman
+  id: MobStalkerCS
+  components:
+    - type: Access
+      tags:
+        - CN
+    - type: Bands
+      band: Stalker
+      bandIcon: cn
+
+- type: entity
+  name: голый циркач (переименуй меня)
+  suffix: Stalker, пешка с нашивкой
+  parent: MobHuman
+  id: MobStalkerClown
+  components:
+    - type: Access
+      tags:
+        - Circus
+    - type: Bands
+      band: Stalker
+      bandIcon: clowns
+
+- type: entity
+  name: голый наёмник (переименуй меня)
+  suffix: Stalker, пешка с нашивкой
+  parent: MobHuman
+  id: MobStalkerMerc
+  components:
+    - type: Access
+      tags:
+        - Merc
+    - type: Bands
+      band: Stalker
+      bandIcon: merc
+
+- type: entity
+  name: голый аномалист (переименуй меня)
+  suffix: Stalker, пешка с нашивкой
+  parent: MobHuman
+  id: MobStalkerAnomalist
+  components:
+    - type: Access
+      tags:
+        - Anomalist
+    - type: Bands
+      band: Stalker
+      bandIcon: ecologists
+
+- type: entity
+  name: голый серафим (переименуй меня)
+  suffix: Stalker, пешка с нашивкой
+  parent: MobHuman
+  id: MobStalkerSeraphim
+  components:
+    - type: Access
+      tags:
+        - Seraphims
+    - type: Bands
+      band: Stalker
+      bandIcon: seraphim

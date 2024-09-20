@@ -1,0 +1,641 @@
+﻿#Источники микросхем
+- type: entity
+  parent: BaseStructureStalkerDynamic
+  id: CraftComponentSourceT1PCB
+  suffix: Stalker, ИСТОЧНИК, Т1
+  name: кучка микросхем
+  components:
+    - type: TimedDespawn
+      lifetime: 14400
+    - type: SpawnOnDespawn
+      prototype: BaseTrashCache
+    - type: Sprite
+      sprite: _Stalker/Objects/Craft/craftcomponentsourceboards.yml
+      state: 1
+    - type: Transform
+      noRot: true
+    - type: Storage
+      maxItemSize: Huge
+      grid:
+        - 0,0,6,6
+    - type: ContainerContainer
+      containers:
+        storagebase: !type:Container
+    - type: UserInterface
+      interfaces:
+        - key: enum.StorageUiKey.Key
+          type: StorageBoundUserInterface
+    - type: Clickable
+    - type: StorageFill
+      contents:
+        # Craft random
+        - id: STCraftBasicPCBT1
+          prob: 0.2
+        - id: STCraftBasicPCBT1
+          prob: 0.2
+        - id: STCraftBasicPCBT1
+          prob: 0.2
+        - id: STCraftBasicPCBT1
+          prob: 0.2
+        - id: STCraftBasicPCBT1
+          prob: 0.2
+        - id: STCraftStandardPCBT2
+          prob: 0.05
+        - id: STCraftStandardPCBT2
+          prob: 0.05
+        - id: STCraftMultilayerPCBT3
+          prob: 0.01
+
+
+- type: entity
+  parent: BaseStructureStalkerDynamic
+  id: CraftComponentSourceT2PCB
+  suffix: Stalker, ИСТОЧНИК, Т2
+  name: коробка с платами
+  components:
+    - type: TimedDespawn
+      lifetime: 14400
+    - type: SpawnOnDespawn
+      prototype: BaseTrashCache
+    - type: Sprite
+      sprite: _Stalker/Objects/Craft/craftcomponentsourceboards.yml
+      state: 2
+    - type: Transform
+      noRot: true
+    - type: Storage
+      maxItemSize: Huge
+      grid:
+        - 0,0,6,6
+    - type: ContainerContainer
+      containers:
+        storagebase: !type:Container
+    - type: UserInterface
+      interfaces:
+        - key: enum.StorageUiKey.Key
+          type: StorageBoundUserInterface
+    - type: Clickable
+    - type: StorageFill
+      contents:
+        # Craft random
+        - id: STCraftBasicPCBT1
+          prob: 0.4
+        - id: STCraftBasicPCBT1
+          prob: 0.4
+        - id: STCraftStandardPCBT2
+          prob: 0.1
+        - id: STCraftStandardPCBT2
+          prob: 0.1
+        - id: STCraftStandardPCBT2
+          prob: 0.1
+        - id: STCraftStandardPCBT2
+          prob: 0.1
+        - id: STCraftStandardPCBT2
+          prob: 0.1
+        - id: STCraftMultilayerPCBT3
+          prob: 0.02
+        - id: STCraftMultilayerPCBT3
+          prob: 0.02
+        - id: STCraftHighPerformanceChipT4
+          prob: 0.001
+
+
+- type: entity
+  parent: BaseStructureStalkerDynamic
+  id: CraftComponentSourceT3PCB
+  suffix: Stalker, ИСТОЧНИК, Т3
+  name: гражданское хранилище с электроникой
+  components:
+    - type: TimedDespawn
+      lifetime: 14400
+    - type: SpawnOnDespawn
+      prototype: BaseTrashCache
+    - type: Sprite
+      sprite: _Stalker/Objects/Craft/craftcomponentsourceboards.yml
+      state: 3
+    - type: Transform
+      noRot: true
+    - type: Storage
+      maxItemSize: Huge
+      grid:
+        - 0,0,6,6
+    - type: ContainerContainer
+      containers:
+        storagebase: !type:Container
+    - type: UserInterface
+      interfaces:
+        - key: enum.StorageUiKey.Key
+          type: StorageBoundUserInterface
+    - type: Clickable
+    - type: StorageFill
+      contents:
+        # Craft random
+        - id: STCraftBasicPCBT1
+          prob: 0.6
+        - id: STCraftBasicPCBT1
+          prob: 0.6
+        - id: STCraftStandardPCBT2
+          prob: 0.15
+        - id: STCraftStandardPCBT2
+          prob: 0.15
+        - id: STCraftMultilayerPCBT3
+          prob: 0.03
+        - id: STCraftMultilayerPCBT3
+          prob: 0.03
+        - id: STCraftMultilayerPCBT3
+          prob: 0.03
+        - id: STCraftMultilayerPCBT3
+          prob: 0.03
+        - id: STCraftMultilayerPCBT3
+          prob: 0.03
+        - id: STCraftHighPerformanceChipT4
+          prob: 0.015
+        - id: STCraftNanoChipT5
+          prob: 0.0015
+
+
+- type: entity
+  parent: BaseStructureStalkerDynamic
+  id: CraftComponentSourceT4PCB
+  suffix: Stalker, ИСТОЧНИК, Т4
+  name: военное хранилище с электроникой
+  components:
+    - type: TimedDespawn
+      lifetime: 14400
+    - type: SpawnOnDespawn
+      prototype: BaseTrashCache
+    - type: Sprite
+      sprite: _Stalker/Objects/Craft/craftcomponentsourceboards.yml
+      state: 4
+    - type: Transform
+      noRot: true
+    - type: Storage
+      maxItemSize: Huge
+      grid:
+        - 0,0,6,6
+    - type: ContainerContainer
+      containers:
+        storagebase: !type:Container
+    - type: UserInterface
+      interfaces:
+        - key: enum.StorageUiKey.Key
+          type: StorageBoundUserInterface
+    - type: Clickable
+    - type: StorageFill
+      contents:
+        # Craft random
+        - id: STCraftBasicPCBT1
+          prob: 0.8
+        - id: STCraftBasicPCBT1
+          prob: 0.8
+        - id: STCraftStandardPCBT2
+          prob: 0.2
+        - id: STCraftStandardPCBT2
+          prob: 0.2
+        - id: STCraftMultilayerPCBT3
+          prob: 0.03
+        - id: STCraftMultilayerPCBT3
+          prob: 0.03
+        - id: STCraftHighPerformanceChipT4
+          prob: 0.002
+        - id: STCraftHighPerformanceChipT4
+          prob: 0.002
+        - id: STCraftHighPerformanceChipT4
+          prob: 0.002
+        - id: STCraftHighPerformanceChipT4
+          prob: 0.002
+        - id: STCraftHighPerformanceChipT4
+          prob: 0.002
+        - id: STCraftNanoChipT5
+          prob: 0.0025
+
+
+- type: entity
+  parent: BaseStructureStalkerDynamic
+  id: CraftComponentSourceT5PCB
+  suffix: Stalker, ИСТОЧНИК, Т5
+  name: научное хранилище с электроникой
+  components:
+    - type: TimedDespawn
+      lifetime: 14400
+    - type: SpawnOnDespawn
+      prototype: BaseTrashCache
+    - type: Sprite
+      sprite: _Stalker/Objects/Craft/craftcomponentsourceboards.yml
+      state: 5
+    - type: Transform
+      noRot: true
+    - type: Storage
+      maxItemSize: Huge
+      grid:
+        - 0,0,6,6
+    - type: ContainerContainer
+      containers:
+        storagebase: !type:Container
+    - type: UserInterface
+      interfaces:
+        - key: enum.StorageUiKey.Key
+          type: StorageBoundUserInterface
+    - type: Clickable
+    - type: StorageFill
+      contents:
+        # Craft random
+        - id: STCraftBasicPCBT1
+          prob: 1.0
+        - id: STCraftBasicPCBT1
+          prob: 1.0
+        - id: STCraftBasicPCBT1
+          prob: 1.0
+        - id: STCraftStandardPCBT2
+          prob: 0.25
+        - id: STCraftStandardPCBT2
+          prob: 0.25
+        - id: STCraftStandardPCBT2
+          prob: 0.25
+        - id: STCraftMultilayerPCBT3
+          prob: 0.05
+        - id: STCraftMultilayerPCBT3
+          prob: 0.05
+        - id: STCraftMultilayerPCBT3
+          prob: 0.05
+        - id: STCraftHighPerformanceChipT4
+          prob: 0.002
+        - id: STCraftHighPerformanceChipT4
+          prob: 0.002
+        - id: STCraftHighPerformanceChipT4
+          prob: 0.025
+        - id: STCraftNanoChipT5
+          prob: 0.0025
+        - id: STCraftNanoChipT5
+          prob: 0.0025
+        - id: STCraftNanoChipT5
+          prob: 0.0025
+        - id: STCraftNanoChipT5
+          prob: 0.0025
+        - id: STCraftNanoChipT5
+          prob: 0.0025
+        - id: STCraftNanoChipT5
+          prob: 0.0025
+
+
+
+
+#Пластик
+- type: entity
+  parent: BaseStructureStalkerDynamic
+  id: CraftComponentSourceT1PlasticFitting
+  suffix: Stalker, ИСТОЧНИК, Т1
+  name: куча пластика
+  components:
+    - type: TimedDespawn
+      lifetime: 14400
+    - type: SpawnOnDespawn
+      prototype: BaseTrashCache
+    - type: Sprite
+      sprite: _Stalker/Objects/Craft/craftcomponentsourceaccessories.yml
+      state: 1
+    - type: Transform
+      noRot: true
+    - type: Storage
+      maxItemSize: Huge
+      grid:
+        - 0,0,6,6
+    - type: ContainerContainer
+      containers:
+        storagebase: !type:Container
+    - type: UserInterface
+      interfaces:
+        - key: enum.StorageUiKey.Key
+          type: StorageBoundUserInterface
+    - type: Clickable
+    - type: StorageFill
+      contents:
+        # Craft random
+        - id: STCraftPlasticFittingT1
+          prob: 0.2
+        - id: STCraftPlasticFittingT1
+          prob: 0.2
+        - id: STCraftPlasticFittingT1
+          prob: 0.2
+        - id: STCraftPlasticFittingT1
+          prob: 0.2
+        - id: STCraftPlasticFittingT1
+          prob: 0.2
+        - id: STCraftPlasticFittingT2
+          prob: 0.05
+        - id: STCraftPlasticFittingT2
+          prob: 0.05
+        - id: STCraftPlasticFittingT3
+          prob: 0.01
+
+
+
+
+
+- type: entity
+  parent: BaseStructureStalkerDynamic
+  id: CraftComponentSourceT2PlasticFitting
+  suffix: Stalker, ИСТОЧНИК, Т2
+  name: коробка с пластиком
+  components:
+    - type: TimedDespawn
+      lifetime: 14400
+    - type: SpawnOnDespawn
+      prototype: BaseTrashCache
+    - type: Sprite
+      sprite: _Stalker/Objects/Craft/craftcomponentsourceaccessories.yml
+      state: 2
+    - type: Transform
+      noRot: true
+    - type: Storage
+      maxItemSize: Huge
+      grid:
+        - 0,0,6,6
+    - type: ContainerContainer
+      containers:
+        storagebase: !type:Container
+    - type: UserInterface
+      interfaces:
+        - key: enum.StorageUiKey.Key
+          type: StorageBoundUserInterface
+    - type: Clickable
+    - type: StorageFill
+      contents:
+        # Craft random
+        - id: STCraftPlasticFittingT1
+          prob: 0.4
+        - id: STCraftPlasticFittingT1
+          prob: 0.4
+        - id: STCraftPlasticFittingT2
+          prob: 0.1
+        - id: STCraftPlasticFittingT2
+          prob: 0.1
+        - id: STCraftPlasticFittingT2
+          prob: 0.1
+        - id: STCraftPlasticFittingT2
+          prob: 0.1
+        - id: STCraftPlasticFittingT2
+          prob: 0.1
+        - id: STCraftPlasticFittingT3
+          prob: 0.02
+        - id: STCraftPlasticFittingT3
+          prob: 0.02
+        - id: STCraftPlasticFittingT4
+          prob: 0.001
+
+
+
+
+- type: entity
+  parent: BaseStructureStalkerDynamic
+  id: CraftComponentSourceT3PlasticFitting
+  suffix: Stalker, ИСТОЧНИК, Т3
+  name: гражданское хранилище с пластиком
+  components:
+    - type: TimedDespawn
+      lifetime: 14400
+    - type: SpawnOnDespawn
+      prototype: BaseTrashCache
+    - type: Sprite
+      sprite: _Stalker/Objects/Craft/craftcomponentsourceaccessories.yml
+      state: 3
+    - type: Transform
+      noRot: true
+    - type: Storage
+      maxItemSize: Huge
+      grid:
+        - 0,0,6,6
+    - type: ContainerContainer
+      containers:
+        storagebase: !type:Container
+    - type: UserInterface
+      interfaces:
+        - key: enum.StorageUiKey.Key
+          type: StorageBoundUserInterface
+    - type: Clickable
+    - type: StorageFill
+      contents:
+        # Craft random
+        - id: STCraftPlasticFittingT1
+          prob: 0.6
+        - id: STCraftPlasticFittingT1
+          prob: 0.6
+        - id: STCraftPlasticFittingT2
+          prob: 0.15
+        - id: STCraftPlasticFittingT2
+          prob: 0.15
+        - id: STCraftPlasticFittingT3
+          prob: 0.03
+        - id: STCraftPlasticFittingT3
+          prob: 0.03
+        - id: STCraftPlasticFittingT3
+          prob: 0.03
+        - id: STCraftPlasticFittingT3
+          prob: 0.03
+        - id: STCraftPlasticFittingT3
+          prob: 0.03
+        - id: STCraftPlasticFittingT4
+          prob: 0.015
+        - id: STCraftPlasticFittingT5
+          prob: 0.0015
+
+
+
+
+- type: entity
+  parent: BaseStructureStalkerDynamic
+  id: CraftComponentSourceT4PlasticFitting
+  suffix: Stalker, ИСТОЧНИК, Т4
+  name: военное хранилище с пластиком
+  components:
+    - type: TimedDespawn
+      lifetime: 14400
+    - type: SpawnOnDespawn
+      prototype: BaseTrashCache
+    - type: Sprite
+      sprite: _Stalker/Objects/Craft/craftcomponentsourceaccessories.yml
+      state: 4
+    - type: Transform
+      noRot: true
+    - type: Storage
+      maxItemSize: Huge
+      grid:
+        - 0,0,6,6
+    - type: ContainerContainer
+      containers:
+        storagebase: !type:Container
+    - type: UserInterface
+      interfaces:
+        - key: enum.StorageUiKey.Key
+          type: StorageBoundUserInterface
+    - type: Clickable
+    - type: StorageFill
+      contents:
+        # Craft random
+        - id: STCraftPlasticFittingT1
+          prob: 0.8
+        - id: STCraftPlasticFittingT1
+          prob: 0.8
+        - id: STCraftPlasticFittingT2
+          prob: 0.2
+        - id: STCraftPlasticFittingT2
+          prob: 0.2
+        - id: STCraftPlasticFittingT3
+          prob: 0.03
+        - id: STCraftPlasticFittingT3
+          prob: 0.03
+        - id: STCraftPlasticFittingT4
+          prob: 0.002
+        - id: STCraftPlasticFittingT4
+          prob: 0.002
+        - id: STCraftPlasticFittingT4
+          prob: 0.002
+        - id: STCraftPlasticFittingT4
+          prob: 0.002
+        - id: STCraftPlasticFittingT4
+          prob: 0.002
+        - id: STCraftPlasticFittingT5
+          prob: 0.0025
+
+
+- type: entity
+  parent: BaseStructureStalkerDynamic
+  id: CraftComponentSourceT5PlasticFitting
+  suffix: Stalker, ИСТОЧНИК, Т5
+  name: научное хранилище с пластиком
+  components:
+    - type: TimedDespawn
+      lifetime: 14400
+    - type: SpawnOnDespawn
+      prototype: BaseTrashCache
+    - type: Sprite
+      sprite: _Stalker/Objects/Craft/craftcomponentsourceaccessories.yml
+      state: 5
+    - type: Transform
+      noRot: true
+    - type: Storage
+      maxItemSize: Huge
+      grid:
+        - 0,0,6,6
+    - type: ContainerContainer
+      containers:
+        storagebase: !type:Container
+    - type: UserInterface
+      interfaces:
+        - key: enum.StorageUiKey.Key
+          type: StorageBoundUserInterface
+    - type: Clickable
+    - type: StorageFill
+      contents:
+        # Craft random
+        - id: STCraftPlasticFittingT1
+          prob: 1.0
+        - id: STCraftPlasticFittingT1
+          prob: 1.0
+        - id: STCraftPlasticFittingT1
+          prob: 1.0
+        - id: STCraftPlasticFittingT2
+          prob: 0.25
+        - id: STCraftPlasticFittingT2
+          prob: 0.25
+        - id: STCraftPlasticFittingT2
+          prob: 0.25
+        - id: STCraftPlasticFittingT3
+          prob: 0.25
+        - id: STCraftPlasticFittingT3
+          prob: 0.25
+        - id: STCraftPlasticFittingT3
+          prob: 0.25
+        - id: STCraftPlasticFittingT4
+          prob: 0.002
+        - id: STCraftPlasticFittingT4
+          prob: 0.002
+        - id: STCraftPlasticFittingT4
+          prob: 0.002
+        - id: STCraftPlasticFittingT5
+          prob: 0.0025
+        - id: STCraftPlasticFittingT5
+          prob: 0.0025
+        - id: STCraftPlasticFittingT5
+          prob: 0.0025
+        - id: STCraftPlasticFittingT5
+          prob: 0.0025
+        - id: STCraftPlasticFittingT5
+          prob: 0.0025
+        - id: STCraftPlasticFittingT5
+          prob: 0.0025
+
+# источник клея
+
+- type: entity
+  parent: BaseStructureStalkerDynamic
+  id: CraftComponentSourceGlue
+  suffix: Stalker, ИСТОЧНИК
+  name: Ящик с клейкими материалами
+  components:
+    - type: TimedDespawn
+      lifetime: 14400
+    - type: SpawnOnDespawn
+      prototype: BaseTrashCache
+    - type: Sprite
+      sprite: _Stalker/Objects/Craft/craftcomponentsourseglue.rsi
+      state: 1
+    - type: Transform
+      noRot: true
+    - type: Storage
+      maxItemSize: Huge
+      grid:
+        - 0,0,6,6
+    - type: ContainerContainer
+      containers:
+        storagebase: !type:Container
+    - type: UserInterface
+      interfaces:
+        - key: enum.StorageUiKey.Key
+          type: StorageBoundUserInterface
+    - type: Clickable
+    - type: StorageFill
+      contents:
+        # Craft random
+        - id: CraftTape1
+          prob: 0.05
+        - id: CraftTape2
+          prob: 0.05
+        - id: CraftGlue
+          prob: 0.02
+        - id: CraftTape1
+          prob: 0.05
+        - id: CraftTape2
+          prob: 0.05
+        - id: CraftGlue
+          prob: 0.02
+        - id: CraftTape1
+          prob: 0.05
+        - id: CraftTape2
+          prob: 0.05
+        - id: CraftGlue
+          prob: 0.02
+        - id: CraftTape1
+          prob: 0.05
+        - id: CraftTape2
+          prob: 0.05
+        - id: CraftGlue
+          prob: 0.02
+        - id: CraftTape1
+          prob: 0.05
+        - id: CraftTape2
+          prob: 0.05
+        - id: CraftGlue
+          prob: 0.02
+        - id: CraftTape1
+          prob: 0.05
+        - id: CraftTape2
+          prob: 0.05
+        - id: CraftGlue
+          prob: 0.02
+        - id: CraftTape1
+          prob: 0.05
+        - id: CraftTape2
+          prob: 0.05
+        - id: CraftGlue
+          prob: 0.02
+

@@ -1,0 +1,14 @@
+- type: accessLevel
+  id: Merc
+  name: База Наёмников
+
+- type: accessGroup
+  id: Merc
+  tags:
+    - Merc
+
+- type: accessGroup
+  id: MercHead
+  tags:
+    - HeadMerc
+    - Merc

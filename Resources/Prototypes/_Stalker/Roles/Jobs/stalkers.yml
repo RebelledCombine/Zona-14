@@ -1,0 +1,44 @@
+- type: job
+  id: Stalker
+  name: Сталкер
+  icon: stalker
+  description: Это кочевая полуобъединенная группировка, которая просто живёт за счет Зоны, чтобы заработать немного монет на свою повседневную жизнь.
+  playTimeTracker: JobStalker
+  requirements:
+    - !type:DepartmentTimeRequirement
+      department: StalkerAdvanced
+      time: 1
+      inverted: true
+    # - !type:DepartmentTimeRequirement
+    #   department: StalkerAnomalists
+    #   time: 1
+    #   inverted: true
+  startingGear: StalkerGear
+  supervisors: Вы работаете сами на себя
+  special:
+    - !type:AddComponentSpecial
+      components:
+      - type: Access
+        tags:
+          - Stalker
+      - type: Bands
+        band: Stalker
+        bandIcon: stalker
+      - type: BlockTackingHolyItems
+      - type: TeethPull
+        teethProto: ToothStalker
+        pullingItemTag: PliersStalker
+        teethCount: 3
+        initialTeeth: 3
+
+- type: startingGear
+  id: StalkerGear
+  equipment:
+    id: StalkerPDA
+    belt: ClothingBeltStorageWaistbag
+    torso: ClothingTorsoSweaterStalkerGreen
+    legs: ClothingLegsJeansBlue
+    shoes: ClothingShoesBootsWork
+    outerClothing: ClothingOuterCoatBomber
+    pocket1: BookStalkerFAQ
+    pocket2: PassportUkraine

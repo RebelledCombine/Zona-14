@@ -1,0 +1,110 @@
+- type: entity
+  parent: BaseMutantPart
+  id: MutantPartBlindDogTail
+  name: blind dog tail
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/MutantParts/blind_dog_tail.rsi
+
+- type: entity
+  parent: BaseMutantPart
+  id: MutantPartPseudodogTail
+  name: pseudodog tail
+  components:
+    - type: STWeight
+      self: 2
+    - type: Sprite
+      sprite: _Stalker/Objects/MutantParts/pseudodog_tail.rsi
+
+- type: entity
+  parent: BaseMutantPart
+  id: MutantPartPseudogiantHeart
+  name: pseudogiant heart
+  components:
+    - type: STWeight
+      self: 2
+    - type: Sprite
+      sprite: _Stalker/Objects/MutantParts/pseudogiant_heart.rsi
+      scale: 0.4, 0.4
+
+- type: entity
+  parent: BaseMutantPart
+  id: MutantPartBoarHoof
+  name: boar hoof
+  components:
+    - type: Item
+      size: Small
+    - type: STWeight
+      self: 2
+    - type: Sprite
+      sprite: _Stalker/Objects/MutantParts/boar_hoof.rsi
+
+- type: entity
+  parent: BaseMutantPart
+  id: MutantPartFleshEye
+  name: flesh eye
+  components:
+    - type: Item
+      size: Small
+      shape:
+        - 0,0,1,1
+    - type: STWeight
+      self: 1.2
+    - type: Sprite
+      sprite: _Stalker/Objects/MutantParts/flesh_eye.rsi
+
+- type: entity
+  parent: BaseMutantPart
+  id: MutantPartSnorkFoot
+  name: snork foot
+  components:
+    - type: Item
+      size: Small
+      shape:
+        - 0,0,0,1
+    - type: Sprite
+      sprite: _Stalker/Objects/MutantParts/snork_foot.rsi
+
+- type: entity
+  parent: BaseMutantPart
+  id: MutantPartBloodsuckerTentacles
+  name: bloodsucker tentacles
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/MutantParts/bloodsucker_tentacles.rsi
+
+- type: entity
+  parent: BaseMutantPart
+  id: MutantPartOraculeEye
+  name: oracule eye
+  components:
+    - type: Item
+      size: Small
+      shape:
+        - 0,0,0,1
+    - type: Sprite
+      sprite: _Stalker/Objects/MutantParts/oracule_eye.rsi
+
+- type: entity
+  parent: BaseMutantPart
+  id: MutantPartZombieHand
+  name: zombie hand
+  components:
+    - type: Item
+      size: Small
+      shape:
+        - 0,0,0,1
+    - type: Sprite
+      sprite: _Stalker/Objects/MutantParts/zombie_hand.rsi
+
+- type: entity
+  parent: BaseMutantPart
+  id: MutantPartLeshiyRoot
+  name: leshiy's root
+  components:
+    - type: Item
+      size: Small
+      shape:
+        - 0,0,0,1
+    - type: Sprite
+      sprite: _Stalker/Objects/MutantParts/leshiy_root.rsi

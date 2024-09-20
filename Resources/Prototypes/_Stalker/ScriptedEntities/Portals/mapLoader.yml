@@ -1,0 +1,22 @@
+- type: mapLoader
+  id: StalkerBaseMaps
+  mapPaths:
+    City: "/Maps/_StalkerMaps/TownV19.yml"
+    RedForest: "/Maps/_StalkerMaps/RedForestV33.yml"
+    KordonUnerground: "/Maps/_StalkerMaps/KordonPodzemV21.yml"
+    Svalka: "/Maps/_StalkerMaps/SvalkaV130.yml"
+    SvalkaUnderground: "/Maps/_StalkerMaps/SvalkaPodzamV23.yml"
+    Agro: "/Maps/_StalkerMaps/AgropromV48.yml"
+    MBase: "/Maps/_StalkerMaps/MBaseV13.yml"
+    Boloto: "/Maps/_StalkerMaps/BolotaV15.yml"
+    DarkValley: "/Maps/_StalkerMaps/TemnajDolinaV57.yml"
+    TemLoschina: "/Maps/_StalkerMaps/TemnajLohinaV25.yml"
+    PodzemkaLoschina: "/Maps/_StalkerMaps/PodzemkaLohinaV7.yml"
+    PodzemkaGP: "/Maps/_StalkerMaps/PodzemkaGPV3.yml"
+    AnomalistBase: "/Maps/_StalkerMaps/AnomalistBaseV7.yml"
+    Oazis: "/Maps/_StalkerMaps/OazisV35.yml"
+    Topi: "/Maps/_StalkerMaps/TopiV18.yml"
+    PBUnderground: "/Maps/_StalkerMaps/PredbannikPodzemV8.yml"
+    RostokAndWilds: "/Maps/_StalkerMaps/RostokAndWildsV11.yml"
+    UndegroundWildsBar100rads: "/Maps/_StalkerMaps/UndegroundWildsBar100radsV13.yml"
+    Barrier: "/Maps/_StalkerMaps/BarrierV16.yml"

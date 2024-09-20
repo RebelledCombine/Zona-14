@@ -1,0 +1,38 @@
+
+- type: job
+  id: StalkerJournalist
+  name: Журналист
+  icon: journalist
+  description: Вестники Зоны.
+  playTimeTracker: JobJournalist
+  requirements:
+    - !type:RoleTimeRequirement
+      role: JobJournalist
+      time: 1
+  startingGear: JurGear
+  supervisors: Вы подчиняетесь редакции и ООН...
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: Access
+          tags:
+            - Journalist
+            - Stalker
+        - type: Bands
+          band: Stalker
+          bandIcon: journalist
+        - type: BlockTackingHolyItems
+        - type: TeethPull
+          teethProto: ToothStalker
+          pullingItemTag: PliersStalker
+          teethCount: 3
+          initialTeeth: 3
+
+- type: startingGear
+  id: JurGear
+  equipment:
+    id: StalkerPDA
+    belt: ClothingBeltStorageWaistbag
+    torso: ClothingTorsoSweaterStalkerGreen
+    legs: ClothingLegsJeansBlue
+    shoes: ClothingShoesBootsCombatFilled

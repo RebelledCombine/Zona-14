@@ -1,0 +1,57 @@
+- type: entity
+  id: Pit
+  parent: BaseStructure
+  name: Колодец
+  suffix: Stalker
+  description: Глубокая шахта опускающаяся на многие метры вниз, до самых грунтовых вод.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Structures/Furniture/Pit.rsi
+    state: Pit
+  - type: InteractionOutline
+  - type: Physics
+  - type: Clickable
+  - type: SolutionContainerManager
+    solutions:
+      pool:
+        maxVol: 9999999 #.inf seems to break the whole yaml file, but would definitely be preferable.
+        reagents:
+        - ReagentId: Water
+          Quantity: 9999999
+  - type: DrainableSolution
+    solution: pool
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.390625,-0.453125,0.390625,0.453125"
+        density: 155
+        mask:
+        - MachineMask
+        layer:
+        - WallLayer
+
+- type: entity
+  id: MoonshineStill
+  parent: BaseStructure
+  name: Самогонный аппарат
+  suffix: Stalker
+  description: Большое устройство, предназначенное для фильтрации спирта и преобразования его в самогон.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Structures/Furniture/MoonshineStill.rsi
+    state: samogoni
+  - type: InteractionOutline
+  - type: Physics
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.796875,-0.875,0.796875,0.875"
+        density: 155
+        mask:
+        - MachineMask
+        layer:
+        - WallLayer

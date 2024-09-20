@@ -1,0 +1,22 @@
+
+- type: craftRecipe
+  id: newrecipeSTClothingCapeArmorChainmailSeva
+  resultProtos:
+    - STClothingCapeArmorChainmailSeva
+  craftTime: 10
+  items:
+    ToolkitTearTwo:
+      amount: 1
+      catalyzer: true
+    STClothingCapeArmorChainmailSevaBlueprint:
+      amount: 1
+      catalyzer: true
+    ClothingOuterCoatStalker:
+      amount: 1
+    STCraftHighPerformanceChipT4:
+      amount: 2
+    STCraftSheetAluminumT4:
+      amount: 2
+    STCraftIndustrialThreadStaplesKitT4:
+      amount: 1
+

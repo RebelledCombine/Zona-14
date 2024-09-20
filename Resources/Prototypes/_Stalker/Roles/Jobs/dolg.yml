@@ -1,0 +1,66 @@
+- type: job
+  id: StalkerDolg
+  name: Боец Долга
+  icon: Dolg
+  description: Уничтожитель зоны.
+  playTimeTracker: JobDolg
+  requirements:
+    - !type:RoleTimeRequirement
+      role: JobDolg
+      time: 1
+  startingGear: DolgGear
+  supervisors: Вы подчиняетесь старшим по званию.
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: Access
+          tags:
+            - Dolg
+        - type: Bands
+          band: Stalker
+          bandIcon: Dolg
+        - type: BlockTackingHolyItems
+        - type: TeethPull
+          teethProto: ToothStalker
+          pullingItemTag: PliersStalker
+          teethCount: 3
+          initialTeeth: 3
+
+- type: job
+  id: StalkerHeadDolg
+  name: Лидер Долга
+  icon: Dolg
+  description: Уничтожитель зоны.
+  playTimeTracker: JobHeadDolg
+  requirements:
+    - !type:RoleTimeRequirement
+      role: JobHeadDolg
+      time: 1
+  startingGear: DolgGear
+  supervisors: Вы командуете другими бойцами Долга.
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: Access
+          tags:
+            - Dolg
+            - DolgHead
+        - type: Bands
+          band: Stalker
+          bandIcon: Dolg
+        - type: BlockTackingHolyItems
+        - type: TeethPull
+          teethProto: ToothStalker
+          pullingItemTag: PliersStalker
+          teethCount: 3
+          initialTeeth: 3
+
+- type: startingGear
+  id: DolgGear
+  equipment:
+    id: DolgPDA
+    belt: ClothingBeltStorageWaistbag
+    legs: ClothingLegsJeansDolgCamouflage
+    shoes: ClothingShoesBootsWork
+    torso: ClothingTorsoTurtlenecksDolgCamouflage
+    cloak: ClothingNeckCloakDolg

@@ -1,0 +1,27 @@
+- type: shopPreset
+  id: MercShopPreset
+  itemsForSale:
+    FoodTinMRETrash: 5
+  categories:
+    - name: Оружие
+      priority: 1
+      items:
+        CombatKnife: 10
+    - name: Броня и снаряжение
+      priority: 4
+      items:
+        STSkinsKitMercenary: 500
+        ClothingOuterJacketMerc: 50
+    - name: Утилиты
+      priority: 5
+      items:
+        EncryptionKeyMercStalker: 50
+        ClothingHeadsetMercStalker: 100
+        GeigerCounter: 50
+        BaseRadio: 50
+    - name: Аномалии
+      priority: 6
+      items:
+        # Bolt bags
+        STBoltBagFilled: 65
+        STBoltBagOliveGrayFilled: 65

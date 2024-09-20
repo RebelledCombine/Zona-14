@@ -1,0 +1,154 @@
+- type: entity
+  id: Base556Mag10
+  name: магазин 5,56 (10)
+  description: Магазин 5,56 для штурмовых винтовок. Вместимость пуль 10. Продают пустым.
+  parent: Base545Mag10
+  tag: Stalker
+  components:
+  - type: Tag
+    tags:
+      - Magazine556
+  - type: BallisticAmmoProvider
+    proto:
+    mayTransfer: true
+    whitelist:
+      tags:
+        - Cartridge556
+    capacity: 10
+  - type: Item
+    size: Small
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    scale: 0.8, 0.8
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Magazines/556/10.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
+- type: entity
+  id: 556Mag20
+  name: магазин 5,56 (20)
+  description: Магазин 5,56 для штурмовых винтовок. Вместимость пуль 20. Продают пустым.
+  parent: Base556Mag10
+  tag: Stalker
+  components:
+  - type: STWeight
+    self: 0.25
+  - type: BallisticAmmoProvider
+    capacity: 20
+  - type: Item
+    size: Small
+    shape:
+      - 0,0,0,1
+  - type: Sprite
+    scale: 0.8, 0.8
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Magazines/556/20.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  id: 556Mag30
+  name: магазин 5,56 (30)
+  description: Магазин 5,56 для штурмовых винтовок. Вместимость пуль 30. Продают пустым.
+  parent: Base556Mag10
+  tag: Stalker
+  components:
+  - type: STWeight
+    self: 0.3
+  - type: BallisticAmmoProvider
+    capacity: 30
+  - type: Item
+    size: Normal
+    shape:
+      - 0,0,0,1
+  - type: Sprite
+    scale: 0.8, 0.8
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Magazines/556/30.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+- type: entity
+  id: 556Mag45
+  name: магазин 5,56 (45)
+  description: Магазин 5,56 для штурмовых винтовок. Вместимость пуль 45. Продают пустым.
+  parent: Base556Mag10
+  tag: Stalker
+  components:
+  - type: STWeight
+    self: 0.35
+  - type: BallisticAmmoProvider
+    capacity: 45
+  - type: Item
+    size: Normal
+    shape:
+      - 0,0,0,2
+  - type: Sprite
+    scale: 0.8, 0.8
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Magazines/556/45.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+- type: entity
+  id: 556Mag60
+  name: магазин 5,56 (60)
+  description: Магазин 5,56 для штурмовых винтовок. Вместимость пуль 60. Продают пустым.
+  parent: Base556Mag10
+  tag: Stalker
+  components:
+  - type: STWeight
+    self: 0.5
+  - type: BallisticAmmoProvider
+    capacity: 60
+  - type: Item
+    size: Normal
+    shape:
+      - 0,0,1,1
+  - type: Sprite
+    scale: 0.8, 0.8
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Magazines/556/60.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+- type: entity
+  id: 556box249
+  name: короб M249 (5,56)
+  description: Короб 5,56 для пулемёта M249. Вместимость пуль 100. Продают пустым.
+  parent: MagazineLightRifleBox
+  components:
+    - type: STWeight
+      self: 1.5
+    - type: Tag
+      tags:
+        - Box556
+        - Magazine556
+    - type: BallisticAmmoProvider
+      proto:
+      capacity: 100
+      whitelist:
+        tags:
+          - Cartridge556
+    - type: Item
+    - type: Sprite
+      sprite: Objects/Weapons/Guns/Ammunition/Magazine/LightRifle/light_rifle_box.rsi
+    - type: MagazineVisuals
+      magState: mag
+      steps: 8
+      zeroVisible: false
+    - type: Appearance

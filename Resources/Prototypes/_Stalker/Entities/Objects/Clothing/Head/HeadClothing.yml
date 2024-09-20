@@ -1,0 +1,169 @@
+- type: entity
+  parent: STClothingHeadBase
+  id: ClothingHeadHatBeaniehat
+  name: шапка
+  description: Чёрная шапка. Не даст замёрзнуть голове.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/beaniehat.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/beaniehat.rsi
+
+- type: entity
+  parent: STClothingHeadBase
+  id: ClothingHeadHatMilitary
+  name: кепка военных
+  description: Кепка цвета "Хаки", используется военными
+  suffix: Stalker
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/militarycap.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/militarycap.rsi
+
+- type: entity
+  parent: STClothingHeadBase
+  id: ClothingHeadBeretUN
+  name: берет ООН
+  description: Берет основного контингента ООН и старшего офицерского состава ОКСОП.
+  suffix: Stalker
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/hats/un_beret.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/hats/un_beret.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatSovietUshankaStalker
+  name: советская ушанка
+  description: "Welcome to the Moscow, da?"
+  suffix: Stalker
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/soviet_ushanka.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/soviet_ushanka.rsi
+  - type: AddAccentClothing
+    accent: RussianAccent
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeatBagStalker
+  name: мешок на голову
+  description: Для похищений
+  suffix: Stalker
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/bag.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/bag.rsi
+  - type: Blindfold
+  - type: FlashImmunity
+
+- type: entity
+  parent: STClothingHeadBase
+  id: ClothingHeadHatUN
+  name: кепка ООН
+  description: Кепка голубого цвета с символикой ООН, используется миротворцами.
+  suffix: Stalker
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/uncap.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/uncap.rsi
+
+- type: entity
+  parent: STClothingHeadBase
+  id: ClothingHeadHatUNModification
+  name: кепка с гарнитурой ООН
+  description: Кепка голубого цвета с символикой ООН, имеет гарнитуру. Используется миротворцами.
+  suffix: Stalker
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/uncap_modification.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/uncap_modification.rsi
+
+- type: entity
+  parent: STClothingHeadBase
+  id: ClothingHeadBandana1Military
+  name: чёрная головная бандана
+  description: Ткань чёрного цвета, закрывающая голову.
+  suffix: Stalker
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/bandana-black.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/bandana-black.rsi
+
+- type: entity
+  parent: STClothingHeadBase
+  id: ClothingHeadBandana2Military
+  name: камуфляжная головная бандана
+  description: Ткань зелёного камуфляжа из старого комплекта персональной системы защиты, закрывающая голову.
+  suffix: Stalker
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/bandana-camo-green.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/bandana-camo-green.rsi
+
+- type: entity
+  parent: STClothingHeadBase
+  id: ClothingHeadBeretMilitary
+  name: берет сил охраны периметра
+  description: Офицерский берет военнослужащих С.О.П. (Сил Охраны Периметра) чёрного цвета.
+  suffix: Stalker
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/beret-military.rsi
+    scale: 0.8, 0.8
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/beret-military.rsi
+
+- type: entity
+  parent: STClothingHeadBase
+  id: ClothingHeadHatBeaniehatMilitary
+  name: шапка
+  description: Чёрная шапка. Не даст замёрзнуть голове.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/beaniehat-military.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/beaniehat-military.rsi
+
+- type: entity
+  parent: STClothingHeadBase
+  id: ClothingHeadHatPoliceHat
+  name: полицейская фуражка
+  description: Для важных шишек.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/police_hat.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/police_hat.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatGeneral
+  name: генеральская фуражка
+  description: Где моя ФУРАЖКА?!
+  suffix: ST
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/general_hat.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/general_hat.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: STClothingHeadPeakCap
+  name: бескозырка
+  description: Моряцкая бескозырка, странно видеть её в Зоне.
+  suffix: ST, Deliko
+  components:
+  - type: Sprite
+    sprite: _Stalker/Clothing/Head/Hats/peak_cap.rsi
+  - type: Clothing
+    sprite: _Stalker/Clothing/Head/Hats/peak_cap.rsi

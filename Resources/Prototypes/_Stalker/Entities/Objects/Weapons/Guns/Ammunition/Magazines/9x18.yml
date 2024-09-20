@@ -1,0 +1,123 @@
+- type: entity
+  id: BasePMMag
+  name: магазин ПМм 9x18 (10)
+  description: Магазин 9x18 мм для ПМм. Вместимость пуль 10. Продают пустым.
+  parent: BaseItem
+  tag: Stalker
+  components:
+  - type: Trash
+    time: 900
+  - type: STWeight
+    self: 0.15
+  - type: Tag
+    tags:
+      - MagazinePM
+  - type: BallisticAmmoProvider
+    proto:
+    mayTransfer: true
+    whitelist:
+      tags:
+        - Cartridge918
+    capacity: 10
+  - type: Item
+    size: Small
+    shape:
+      - 0,0,0,0
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Appearance
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Magazine/Pistol/pistol_mag.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-1
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 5
+    zeroVisible: false
+  - type: RepositoryItem
+    categoryName: Магазины
+
+- type: entity
+  id: BaseAPSMag
+  name: магазин АПС 9x18 (20)
+  description: Магазин 9x18 Для пистолетов АПС. Вместимость пуль 20. Продают пустым.
+  parent: BaseItem
+  tag: Stalker
+  components:
+    - type: STWeight
+      self: 0.15
+    - type: Tag
+      tags:
+        - MagazineAPS
+    - type: BallisticAmmoProvider
+      proto:
+      mayTransfer: true
+      whitelist:
+        tags:
+          - Cartridge918
+      capacity: 20
+    - type: Item
+      size: Small
+      shape:
+        - 0,0,0,0
+    - type: ContainerContainer
+      containers:
+        ballistic-ammo: !type:Container
+    - type: Sprite
+      sprite: Objects/Weapons/Guns/Ammunition/Magazine/Pistol/pistol_high_capacity_mag.rsi
+      layers:
+        - state: base
+          map: ["enum.GunVisualLayers.Base"]
+        - state: mag-1
+          map: ["enum.GunVisualLayers.Mag"]
+    - type: MagazineVisuals
+      magState: mag
+      steps: 6
+      zeroVisible: false
+    - type: Appearance
+    - type: RepositoryItem
+      categoryName: Магазины
+######################### Скорпион #########################
+- type: entity
+  id: Vz61Mag
+  name: магазин vz. 61 "Скорпион" (20)
+  description: Магазин на компактного ПП "Скорпион". Вместимость пуль 20. Продают пустым.
+  parent: BizonMag
+  tag: Stalker
+  components:
+  - type: STWeight
+    self: 0.2
+  - type: Tag
+    tags:
+      - MagazineVz61
+  - type: BallisticAmmoProvider
+    proto:
+    mayTransfer: true
+    whitelist:
+      tags:
+        - Cartridge918
+    capacity: 20
+  - type: Item
+    size: Small
+    shape:
+      - 0,0,0,0
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    scale: 0.8, 0.8
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Magazines/919/vz61.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance

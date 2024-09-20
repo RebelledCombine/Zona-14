@@ -121,4 +121,10 @@ public enum LogType
     /// </summary>
     ExplosionHit = 94,
 
+    /// <summary>
+    /// Stalker log types
+    /// </summary>
+    RespawnContainer = 191,
+    PdaMessage = 192,
+
 }

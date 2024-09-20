@@ -1,5 +1,7 @@
 using Content.Shared.Movement.Systems;
 using Robust.Shared.GameStates;
+using Content.Shared._Stalker.ZoneAnomaly.Systems;
+using Content.Shared._Stalker.MoveSpeed;
 
 namespace Content.Shared.Movement.Components
 {
@@ -8,7 +10,7 @@ namespace Content.Shared.Movement.Components
     /// If this is not present on the entity then they will use defaults for movement.
     /// </summary>
     [RegisterComponent, NetworkedComponent, AutoGenerateComponentState]
-    [Access(typeof(MovementSpeedModifierSystem))]
+    [Access([typeof(MovementSpeedModifierSystem), typeof(SharedZoneAnomalyEffectNoGravitySystem), typeof(StalkerMoveSpeedSystemShared)])] // stalker-changes
     public sealed partial class MovementSpeedModifierComponent : Component
     {
         // Weightless
@@ -53,6 +55,26 @@ namespace Content.Shared.Movement.Components
                 Dirty();
             }
         }
+
+        // stalker-changes-start
+        public float _baseWalkSpeedVVpublic
+        {
+            get => _baseWalkSpeedVV;
+            set
+            {
+                _baseWalkSpeedVV = value;
+            }
+        }
+
+        public float _baseSprintSpeedVVpublic
+        {
+            get => BaseSprintSpeed;
+            set
+            {
+                BaseSprintSpeed = value;
+            }
+        }
+        // stalker-changes-end
 
         /// <summary>
         /// Minimum speed a mob has to be moving before applying movement friction.

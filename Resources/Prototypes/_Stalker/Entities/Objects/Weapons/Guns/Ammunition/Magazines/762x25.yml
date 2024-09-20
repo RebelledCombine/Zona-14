@@ -1,0 +1,101 @@
+- type: entity
+  id: TTMag
+  name: магазин ТТ 7,62x25 (8)
+  description: Магазин 7,62x25 для ТТ. Вместимость пуль 8. Продают пустым.
+  parent: BasePPSHMag
+  tag: Stalker
+  components:
+  - type: STWeight
+    self: 0.1
+  - type: MagazineVisuals
+    steps: 7
+  - type: Tag
+    tags:
+      - MagazineTT
+  - type: Item
+    size: Small
+    shape:
+      - 0,0,0,0
+  - type: Sprite
+    scale: 0.6, 0.6
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Magazines/725/tt_mag.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: BallisticAmmoProvider
+    proto:
+    mayTransfer: true
+    whitelist:
+      tags:
+        - Cartridge725
+    capacity: 8
+
+- type: entity
+  id: BasePPSHMag
+  name: магазин ППШ (35)
+  description: Магазин для ППШ-41. Вместимость пуль 35. Продают пустым.
+  parent: BaseItem
+  tag: Stalker
+  components:
+  - type: STWeight
+    self: 0.3
+  - type: Sprite
+    scale: 0.8, 0.8
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Magazines/725/ppsh_magazine.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Tag
+    tags:
+      - MagazinePPSh
+  - type: BallisticAmmoProvider
+    proto:
+    mayTransfer: true
+    whitelist:
+      tags:
+        - Cartridge725
+    capacity: 35
+  - type: Item
+    size: Small
+    shape:
+      - 0,0,0,1
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
+- type: entity
+  id: PPSHDrum
+  name: барабан ППШ (71)
+  description: Барабан для ППШ-41. Вместимость пуль 71. Продают пустым.
+  parent: BasePPSHMag
+  tag: Stalker
+  components:
+  - type: STWeight
+    self: 0.85
+  - type: Item
+    size: Normal
+    shape:
+      - 0,0,2,2
+  - type: Sprite
+    scale: 0.7, 0.7
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Magazines/725/ppsh_drum.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: BallisticAmmoProvider
+    proto:
+    mayTransfer: true
+    whitelist:
+      tags:
+        - Cartridge725
+    capacity: 71

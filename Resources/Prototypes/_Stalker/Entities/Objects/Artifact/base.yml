@@ -1,0 +1,54 @@
+- type: entity
+  parent: BaseItem
+  id: BaseArtifact
+  name: артефакт
+  suffix: Stalker
+  components:
+    - type: PsyonicsAbsorbable
+    - type: STWeight
+      self: 5
+    - type: PointLightDisableOnEquip
+    - type: ZoneArtifactDetectorTarget
+      detectable: true
+      detectedLevel: 1
+    - type: SpawnAnomalyZoneArtifact
+    - type: DetectorZoneArtifact
+    - type: Item
+      size: Normal
+      shape:
+      - 0,0,1,1
+    - type: Sprite
+      sprite: _Stalker/Objects/artifacts.rsi
+      state: soul
+    - type: Clothing
+      quickEquip: true
+      slots:
+        - ARTIFACT
+    - type: Tag
+      tags:
+      - Khabar
+    - type: Material
+    - type: RepositoryItem
+      categoryName: Артефакты
+    - type: Craftable
+    - type: Currency
+      price:
+        Roubles: 1
+        Dollar: 1
+
+- type: entity
+  parent: BaseArtifact
+  id: BaseArtifactStorage
+  components:
+    - type: Storage
+      maxItemSize: Huge
+      grid:
+        - 0,0,3,3
+    - type: UserInterface
+      interfaces:
+      - key: enum.StorageUiKey.Key
+        type: StorageBoundUserInterface
+    - type: ContainerContainer
+      containers:
+        storagebase: !type:Container
+          ents: []

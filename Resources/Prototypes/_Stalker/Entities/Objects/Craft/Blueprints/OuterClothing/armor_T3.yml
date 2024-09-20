@@ -1,0 +1,23 @@
+- type: entity
+  parent: STBaseBlueprint
+  id: ClothingOuterArmorPSZ9DBlueprint
+  name: Рецепт ПСЗ-9д
+  components:
+    - type: STBlueprint
+      blueprint: newrecipeClothingOuterArmorPSZ9D
+
+- type: entity
+  parent: STBaseBlueprint
+  id:   ClothingOuterArmorAborigineStalkerBlueprint
+  name: Рецепт бронекостюма Туземец
+  components:
+    - type: STBlueprint
+      blueprint: newrecipeClothingOuterArmorAborigineStalker
+
+- type: entity
+  parent: STBaseBlueprint
+  id:   STClothingOuterArmorLightPlateVestBasePSZ7Blueprint
+  name: Рецепт ПСЗ-7
+  components:
+    - type: STBlueprint
+      blueprint: newrecipeSTClothingOuterArmorLightPlateVestBasePSZ7

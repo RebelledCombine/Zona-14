@@ -1,0 +1,276 @@
+# ПРОЧЕЕ
+
+- type: entity
+  name: entities-sign-name
+  id: signnew
+  parent: BaseStructureStalkerDynamic
+  description: entities-sign-desc
+  suffix: Stalker
+  components:
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.45,-0.45,0.45,0.45"
+        hard: false
+        layer:
+          - LowImpassable
+  - type: Sprite
+    sprite: _Stalker/Structures/Furniture/sign.rsi
+    state: sign
+    noRot: true
+
+# ПРЕДУПРЕЖДАЮЩИЕ ЗНАКИ
+
+- type: entity
+  parent: BaseStructureStalkerDynamic
+  id: StalkerCheSign1
+  name: Знак "Химическая опасность"
+  description: На знаке изображён символ химической опасности, который информирует о химической опасности за знаком. Может, не стоит туда идти?
+  suffix: Stalker
+  components:
+  - type: Sprite
+    sprite: _Stalker/Structures/Furniture/RadSigns.rsi
+    layers:
+    - state: chemical_sign1
+  - type: Physics
+    canCollide: false
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.10,-0.5,0.10,0.5"
+        density: 1000
+        mask:
+        - FullTileMask
+        layer:
+        - TableLayer
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Effects/metalbreak.ogg
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: BaseStructureStalkerDynamic
+  id: StalkerCheSign2
+  name: Знак "Химическая опасность"
+  description: На знаке изображён символ химической опасности, который информирует о химической опасности за знаком. Может, не стоит туда идти?
+  suffix: Stalker
+  components:
+  - type: Sprite
+    sprite: _Stalker/Structures/Furniture/RadSigns.rsi
+    layers:
+    - state: chemical_sign2
+  - type: Physics
+    canCollide: false
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.10,-0.5,0.10,0.5"
+        density: 1000
+        mask:
+        - FullTileMask
+        layer:
+        - TableLayer
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Effects/metalbreak.ogg
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: BaseStructureStalkerDynamic
+  id: StalkerCheSign3
+  name: Знак "Химическая опасность"
+  description: На знаке изображён символ химической опасности, который информирует о химической опасности за знаком. Может, не стоит туда идти?
+  suffix: Stalker
+  components:
+  - type: Sprite
+    sprite: _Stalker/Structures/Furniture/RadSigns.rsi
+    layers:
+    - state: chemical_sign3
+  - type: Physics
+    canCollide: false
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.10,-0.5,0.10,0.5"
+        density: 1000
+        mask:
+        - FullTileMask
+        layer:
+        - TableLayer
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Effects/metalbreak.ogg
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: BaseStructureStalkerDynamic
+  id: StalkerRadSign1
+  name: Знак "Радиация"
+  description: На знаке изображён символ радиоактивной опасности, который информирует о радиоактивной опасности за знаком. Может, не стоит туда идти?
+  suffix: Stalker
+  components:
+  - type: Sprite
+    sprite: _Stalker/Structures/Furniture/RadSigns.rsi
+    layers:
+    - state: radioactive_sign1
+  - type: Physics
+    canCollide: false
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.10,-0.5,0.10,0.5"
+        density: 1000
+        mask:
+        - FullTileMask
+        layer:
+        - TableLayer
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Effects/metalbreak.ogg
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: BaseStructureStalkerDynamic
+  id: StalkerRadSign2
+  name: Знак "Радиация"
+  description: На знаке изображён символ радиоактивной опасности, который информирует о радиоактивной опасности за знаком. Может, не стоит туда идти?
+  suffix: Stalker
+  components:
+  - type: Sprite
+    sprite: _Stalker/Structures/Furniture/RadSigns.rsi
+    layers:
+    - state: radioactive_sign2
+  - type: Physics
+    canCollide: false
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.10,-0.5,0.10,0.5"
+        density: 1000
+        mask:
+        - FullTileMask
+        layer:
+        - TableLayer
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Effects/metalbreak.ogg
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: BaseStructureStalkerDynamic
+  id: StalkerRadSign3
+  name: Знак "Радиация"
+  description: На знаке изображён символ радиоактивной опасности, который информирует о радиоактивной опасности за знаком. Может, не стоит туда идти?
+  suffix: Stalker
+  components:
+  - type: Sprite
+    sprite: _Stalker/Structures/Furniture/RadSigns.rsi
+    layers:
+    - state: radioactive_sign3
+  - type: Physics
+    canCollide: false
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.10,-0.5,0.10,0.5"
+        density: 1000
+        mask:
+        - FullTileMask
+        layer:
+        - TableLayer
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Effects/metalbreak.ogg
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]

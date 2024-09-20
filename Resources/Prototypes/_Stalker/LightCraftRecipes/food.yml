@@ -1,0 +1,278 @@
+# Костёр
+
+- type: lightCraftingRecipe
+  id: MeatBoarCraft
+  results:
+    - FoodMeatBoarCooked
+  steps:
+    firstIngredient: FoodMeatBoar
+    secondIngredient: Bonfire
+    keepSecond: true
+    exactSecond: false
+    time: 20
+
+- type: lightCraftingRecipe
+  id: MeatSpiderCraft
+  results:
+    - FoodMeatDogCooked
+  steps:
+    firstIngredient: FoodMeatDog
+    secondIngredient: Bonfire
+    keepSecond: true
+    exactSecond: false
+    time: 10
+
+- type: lightCraftingRecipe
+  id: MeatDogCraft
+  results:
+    - STFoodMeatSpiderCooked
+  steps:
+    firstIngredient: STFoodMeatSpider
+    secondIngredient: Bonfire
+    keepSecond: true
+    exactSecond: false
+    time: 10
+
+- type: lightCraftingRecipe
+  id: MeatSteakCraft
+  results:
+    - FoodMeatCooked
+  steps:
+    firstIngredient: FoodMeat
+    secondIngredient: Bonfire
+    keepSecond: true
+    exactSecond: false
+    time: 10
+
+- type: lightCraftingRecipe
+  id: MeatCutletCraft
+  results:
+    - FoodMeatCutletCooked
+  steps:
+    firstIngredient: FoodMeatCutlet
+    secondIngredient: Bonfire
+    keepSecond: true
+    exactSecond: false
+    time: 5
+
+- type: lightCraftingRecipe
+  id: PotatoCraft
+  results:
+    - FoodPotatoCooked
+  steps:
+    firstIngredient: FoodPotato
+    secondIngredient: Bonfire
+    keepSecond: true
+    exactSecond: false
+    time: 5
+
+- type: lightCraftingRecipe
+  id: SausageCraftCooked
+  results:
+    - FoodMeatSausageCooked
+  steps:
+    firstIngredient: FoodMeatSausageRaw
+    secondIngredient: Bonfire
+    keepSecond: true
+    exactSecond: false
+    time: 5
+
+# Плохое (Костёр)
+
+- type: lightCraftingRecipe
+  id: MeatBoarCraftBad
+  results:
+    - Ash
+  steps:
+    firstIngredient: FoodMeatBoarCooked
+    secondIngredient: Bonfire
+    keepSecond: true
+    exactSecond: false
+    time: 3
+
+- type: lightCraftingRecipe
+  id: MeatDogCraftBad
+  results:
+    - Ash
+  steps:
+    firstIngredient: FoodMeatDogCooked
+    secondIngredient: Bonfire
+    keepSecond: true
+    exactSecond: false
+    time: 3
+
+- type: lightCraftingRecipe
+  id: MeatSteakCraftBad
+  results:
+    - Ash
+  steps:
+    firstIngredient: FoodMeatCooked
+    secondIngredient: Bonfire
+    keepSecond: true
+    exactSecond: false
+    time: 4
+
+- type: lightCraftingRecipe
+  id: MeatCutletCraftBad
+  results:
+    - Ash
+  steps:
+    firstIngredient: FoodMeatCutletCooked
+    secondIngredient: Bonfire
+    keepSecond: true
+    exactSecond: false
+    time: 2
+
+- type: lightCraftingRecipe
+  id: SausageCraftBad
+  results:
+    - Ash
+  steps:
+    firstIngredient: FoodMeatSausageCooked
+    secondIngredient: Bonfire
+    keepSecond: true
+    exactSecond: false
+    time: 2
+
+- type: lightCraftingRecipe
+  id: PotatoCraftBad
+  results:
+    - Ash
+  steps:
+    firstIngredient: FoodPotatoCooked
+    secondIngredient: Bonfire
+    keepSecond: true
+    exactSecond: false
+    time: 3
+
+# Газовая плита
+
+- type: lightCraftingRecipe
+  id: MeatBoarCraftGas
+  results:
+    - FoodMeatBoarCooked
+  steps:
+    firstIngredient: FoodMeatBoar
+    secondIngredient: GasStoveS1
+    keepSecond: true
+    exactSecond: false
+    time: 20
+
+- type: lightCraftingRecipe
+  id: MeatDogCraftGas
+  results:
+    - FoodMeatDogCooked
+  steps:
+    firstIngredient: FoodMeatDog
+    secondIngredient: GasStoveS1
+    keepSecond: true
+    exactSecond: false
+    time: 10
+
+- type: lightCraftingRecipe
+  id: MeatSteakCraftGas
+  results:
+    - FoodMeatCooked
+  steps:
+    firstIngredient: FoodMeat
+    secondIngredient: GasStoveS1
+    keepSecond: true
+    exactSecond: false
+    time: 10
+
+- type: lightCraftingRecipe
+  id: MeatCutletCraftGas
+  results:
+    - FoodMeatCutletCooked
+  steps:
+    firstIngredient: FoodMeatCutlet
+    secondIngredient: GasStoveS1
+    keepSecond: true
+    exactSecond: false
+    time: 5
+
+# ПЛОХОЕ (Газовая плита)
+
+- type: lightCraftingRecipe
+  id: MeatBoarCraftGasBad
+  results:
+    - Ash
+  steps:
+    firstIngredient: FoodMeatBoarCooked
+    secondIngredient: GasStoveS1
+    keepSecond: true
+    exactSecond: false
+    time: 3
+
+- type: lightCraftingRecipe
+  id: MeatDogCraftGasBad
+  results:
+    - Ash
+  steps:
+    firstIngredient: FoodMeatDogCooked
+    secondIngredient: GasStoveS1
+    keepSecond: true
+    exactSecond: false
+    time: 3
+
+- type: lightCraftingRecipe
+  id: MeatCutletCraftGasBad
+  results:
+    - Ash
+  steps:
+    firstIngredient: FoodMeatCutletCooked
+    secondIngredient: GasStoveS1
+    keepSecond: true
+    exactSecond: false
+    time: 2
+
+- type: lightCraftingRecipe
+  id: MeatSteakCraftGasBad
+  results:
+    - Ash
+  steps:
+    firstIngredient: FoodMeatCooked
+    secondIngredient: GasStoveS1
+    keepSecond: true
+    exactSecond: false
+    time: 3
+
+# ПРОЧЕЕ
+
+# Починить баг с хлебом!!!
+
+# Бутерброд
+
+- type: lightCraftingRecipe
+  id: sandwichTO
+  results:
+    - FoodMeatButerbrod
+  steps:
+    firstIngredient: FoodMeatSalamiSlice
+    secondIngredient: FoodBreadPlainSlice
+    exactSecond: false
+    time: 1
+
+- type: lightCraftingRecipe
+  id: sandwichTT
+  results:
+    - FoodMeatButerbrod
+  steps:
+    firstIngredient: FoodBreadPlainSlice
+    secondIngredient: FoodMeatSalamiSlice
+    exactSecond: false
+    time: 1
+
+# Чистка картофеля
+
+- type: lightCraftingRecipe
+  id: cleaningpotatoes
+  results:
+    - FoodPotatoCleaning
+    - FoodPotatoCleaned
+  steps:
+    firstIngredient: FoodPotato
+    secondIngredient: KitchenKnife
+    keepSecond: true
+    exactSecond: false
+    time: 4

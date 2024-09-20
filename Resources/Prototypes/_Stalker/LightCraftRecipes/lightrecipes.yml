@@ -1,0 +1,63 @@
+﻿- type: lightCraftingRecipe
+  id: LightCraftRecipeGauze
+  results:
+    - Gauze1
+    - Gauze1
+    - Gauze1
+  steps:
+    firstIngredient: ScissorsStalker
+    secondIngredient: MaterialCloth1Stalker
+    keepFirst: true
+    time: 10
+
+##################################################Ферментизация
+- type: lightCraftingRecipe
+  id: FermentizeBoar
+  results:
+    - regenpill
+  steps:
+    firstIngredient: MutantBoarPart
+    secondIngredient: CraftFerments
+    time: 3
+
+##################################################Постепенные крафты
+
+- type: lightCraftingRecipe
+  id: LightCraftRecipeSmallCardboard
+  results:
+    - CraftSmallCardboard
+    - CraftSmallCardboard
+    - CraftSmallCardboard
+  steps:
+    firstIngredient: ScissorsStalker
+    secondIngredient: CraftLargeCardboard
+    keepFirst: true
+    time: 8
+
+- type: lightCraftingRecipe
+  id: LightCraftRecipeCardboardTube
+  results:
+    - CraftCardboardTube
+  steps:
+    firstIngredient: CraftGlue
+    secondIngredient: CraftSmallCardboard
+    keepFirst: true
+    time: 5
+
+- type: lightCraftingRecipe
+  id: LightCraftRecipeStickDynamite
+  results:
+    - StickDynamite
+  steps:
+    firstIngredient: CraftMaterialGunpowder
+    secondIngredient: CraftCardboardTube
+    time: 10
+
+- type: lightCraftingRecipe
+  id: LightCraftRecipeDynamiteOne
+  results:
+    - DynamiteOne
+  steps:
+    firstIngredient: StickDynamite
+    secondIngredient: CraftFitil
+    time: 3

@@ -1,0 +1,79 @@
+- type: lightCraftingRecipe
+  id: STCraftSkinClothingOuterArmorZaryaJabs
+  results:
+    - ClothingOuterArmorZaryaJabs
+  steps:
+    firstIngredient: STSkinsKitBandits
+    secondIngredient: ClothingOuterArmorZaryaStalker
+    keepFirst: true
+    time: 5
+
+- type: lightCraftingRecipe
+  id: STCraftSkinSTClothingOuterArmorBandits
+  results:
+    - STClothingOuterArmorBandits
+  steps:
+    firstIngredient: STSkinsKitBandits
+    secondIngredient: ClothingOuterArmorZaryaStalker
+    keepFirst: true
+    time: 5
+
+- type: lightCraftingRecipe
+  id: STCraftSkinClothingOuterArmorZaryaDolg
+  results:
+    - ClothingOuterArmorZaryaDolg
+  steps:
+    firstIngredient: STSkinsKitDolg
+    secondIngredient: ClothingOuterArmorZaryaStalker
+    keepFirst: true
+    time: 5
+
+- type: lightCraftingRecipe
+  id: STCraftSkinClothingOuterArmorZaryaNeutral
+  results:
+    - ClothingOuterArmorZaryaNeutral
+  steps:
+    firstIngredient: STSkinsKitNeutral
+    secondIngredient: ClothingOuterArmorZaryaStalker
+    keepFirst: true
+    time: 5
+
+- type: lightCraftingRecipe
+  id: STCraftSkinClothingOuterArmorZaryaPoisk
+  results:
+    - ClothingOuterArmorZaryaPoisk
+  steps:
+    firstIngredient: STSkinsKitPoisk
+    secondIngredient: ClothingOuterArmorZaryaStalker
+    keepFirst: true
+    time: 5
+
+- type: lightCraftingRecipe
+  id: STCraftSkinClothingOuterArmorZaryaSera
+  results:
+    - ClothingOuterArmorZaryaSera
+  steps:
+    firstIngredient: STSkinsKitSeraphim
+    secondIngredient: ClothingOuterArmorZaryaStalker
+    keepFirst: true
+    time: 5
+
+- type: lightCraftingRecipe
+  id: STCraftSkinSTClothingOuterArmorDesertersZarya
+  results:
+    - STClothingOuterArmorDesertersZarya
+  steps:
+    firstIngredient: STSkinsKitDeserters
+    secondIngredient: ClothingOuterArmorZaryaStalker
+    keepFirst: true
+    time: 5
+
+- type: lightCraftingRecipe
+  id: STCraftSkinSTClothingOuterArmorProjectZarya
+  results:
+    - STClothingOuterArmorProjectZarya
+  steps:
+    firstIngredient: STSkinsKitProject
+    secondIngredient: ClothingOuterArmorZaryaStalker
+    keepFirst: true
+    time: 5

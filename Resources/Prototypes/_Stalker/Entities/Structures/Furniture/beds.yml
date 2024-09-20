@@ -1,0 +1,61 @@
+- type: entity
+  parent: Bed
+  id: STMBedBase
+  name: кровать
+  abstract: true
+  description: Старая, но всё ещё удобная кровать.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Structures/Furniture/beds.rsi
+    noRot: true
+  - type: HealOnBuckle
+    damage:
+      groups:
+        Brute: -1
+        Burn: -1
+        Airloss: -1
+        Toxin: -1
+        Anomaly: -1
+
+
+- type: entity
+  parent: STMBedBase
+  id: STBed1
+  components:
+  - type: Sprite
+    state: bed1
+
+- type: entity
+  parent: STMBedBase
+  id: STBed2
+  components:
+  - type: Sprite
+    state: bed2
+
+- type: entity
+  parent: STMBedBase
+  id: STBed3
+  components:
+  - type: Sprite
+    state: bed3
+
+- type: entity
+  parent: STMBedBase
+  id: STBed4
+  components:
+  - type: Sprite
+    state: bed4
+
+- type: entity
+  parent: STMBedBase
+  id: STBed5
+  components:
+  - type: Sprite
+    state: bed5
+
+- type: entity
+  parent: STMBedBase
+  id: STBed6
+  components:
+  - type: Sprite
+    state: bed6

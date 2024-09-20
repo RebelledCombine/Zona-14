@@ -1,0 +1,15 @@
+- type: stPack
+  id: STBlindDogPack
+  head: MobMutantBlindDogPackHead
+  members:
+    - MobMutantBlindDog
+  minMemberCount: 2
+  maxMemberCount: 4
+
+- type: stPack
+  id: STControllerBlindDogPack
+  head: STMutantController
+  members:
+    - MobMutantBlindDog
+  minMemberCount: 3
+  maxMemberCount: 5

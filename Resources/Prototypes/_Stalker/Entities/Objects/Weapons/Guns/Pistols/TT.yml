@@ -1,0 +1,69 @@
+- type: entity
+  parent: STBaseWeaponPistol
+  id: WeaponPistolStalkerTT
+  name: Тульский Токарев
+  suffix: ST
+  description: Легендарный пистолет калибра 7.62х25, разработанный в СССР и прошедший множество войн.
+  components:
+  - type: STWeight
+    self: 0.7
+  - type: Item
+    size: Normal
+  - type: Sprite
+    scale: 0.8, 0.8
+    sprite: _Stalker/Objects/Weapons/Guns/Pistols/tt.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Stalker/Objects/Weapons/Guns/Pistols/tt.rsi
+  - type: Gun
+    soundGunshot:
+      path: /Audio/_Stalker/Effects/Guns/tt.ogg
+    projectileSpeed: 20
+    minAngle: 5
+    maxAngle: 40
+    fireRate: 2
+    angleIncrease: 4
+    angleDecay: 30
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: TTMag
+        insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+        priority: 3
+        whitelist:
+          tags:
+            - MagazineTT
+      gun_auto_sear:
+        name: Insides
+        priority: 2
+        whitelist:
+          tags:
+            - STModuleAutoSear
+      gun_chamber:
+        name: Chamber
+        startingItem: Cartridge725PGL
+        priority: 1
+        whitelist:
+          tags:
+            - Cartridge918
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Craftable
+  - type: GunWieldBonus
+    minAngle: -5
+    maxAngle: -25

@@ -1,0 +1,172 @@
+- type: entity
+  parent: BaseArtifact
+  name: Огненный шар
+  id: ZoneArtifactFireball
+  suffix: Stalker, Огненый шар
+  components:
+  - type: Sprite
+    state: fireball
+  - type: ZoneArtifact
+    anomaly: ZoneAnomalyJarka
+  - type: ZoneArtifactDetectorTarget
+    detectedLevel: 1
+  - type: PointLight
+    radius: 0.5
+    energy: 4
+    color: "#ff0000"
+    castShadows: false
+  - type: PersonalDamage
+    damage:
+      types:
+        Heat: -0.1
+        Cold: -0.5
+    interval: 1
+  - type: Armor
+    hiddenExamine: true
+    armorClass: 2
+    modifiers:
+      coefficients:
+        Radiation: 1.5
+        Shock: 1.1
+        Cold: 0.8
+
+- type: entity
+  parent: BaseArtifact
+  name: Глаз
+  id: ZoneArtifactEye
+  suffix: Stalker, Глаз
+  components:
+  - type: Sprite
+    state: glaz
+  - type: ZoneArtifact
+    anomaly: ZoneAnomalyJarkaStrong
+  - type: ZoneArtifactDetectorTarget
+    detectedLevel: 2
+  - type: PointLight
+    radius: 0.5
+    energy: 4
+    color: "#ff0000"
+    castShadows: false
+  - type: PersonalDamage
+    damage:
+      types:
+        Heat: -1
+        Cold: -1
+    interval: 1
+  - type: Armor
+    hiddenExamine: true
+    armorClass: 2
+    modifiers:
+      coefficients:
+        Shock: 1.4
+        Cold: 0.65
+        Radiation: 1.6
+  - type: ClothingSpeedModifier
+    walkModifier: 0.95
+    sprintModifier: 0.95
+
+- type: entity
+  parent: BaseArtifact
+  name: Пламя
+  id: ZoneArtifactFlame
+  suffix: Stalker, Пламя
+  components:
+  - type: Sprite
+    state: flame
+  - type: ZoneArtifact
+    anomaly: ZoneAnomalySol
+  - type: ZoneArtifactDetectorTarget
+    detectedLevel: 3
+  - type: PointLight
+    radius: 0.5
+    energy: 4
+    color: "#ff0000"
+    castShadows: false
+  - type: PersonalDamage
+    damage:
+      types:
+        Heat: -1.5
+        Cold: -3
+    interval: 1
+  - type: Armor
+    hiddenExamine: true
+    armorClass: 2
+    modifiers:
+      coefficients:
+        Heat: 1.8
+        Shock: 1.8
+        Radiation: 1.8
+  - type: ClothingSpeedModifier
+    walkModifier: 0.95
+    sprintModifier: 0.95
+
+- type: entity
+  parent: BaseArtifact
+  id: ZoneArtifactCristall
+  suffix: Stalker, Кристалл
+  components:
+  - type: Sprite
+    state: cristall
+  - type: ZoneArtifact
+    anomaly: ZoneAnomalySol
+  - type: ZoneArtifactDetectorTarget
+    detectedLevel: 4
+  - type: PointLight
+    radius: 0.5
+    energy: 4
+    color: "#ff0000"
+    castShadows: false
+  - type: PersonalDamage
+    damage:
+      types:
+        Piercing: 0.02
+    interval: 1
+  - type: Armor
+    hiddenExamine: true
+    armorClass: 2
+    modifiers:
+      coefficients:
+        Compression: 0.7
+        Heat: 0.6
+        Psy: 0.1
+
+- type: entity
+  parent: BaseArtifact
+  id: ZoneArtifactLithosphere
+  suffix: Stalker, Литосфера
+  components:
+  - type: Sprite
+    state: lithosphere
+  - type: ZoneArtifact
+    anomaly: ZoneAnomalySol
+  - type: ZoneArtifactDetectorTarget
+    detectedLevel: 5
+  - type: PointLight
+    radius: 0.5
+    energy: 4
+    color: "#ff0000"
+    castShadows: false
+  - type: PersonalDamage
+    staminaDamage: -10
+    damage:
+      types:
+        Asphyxiation: -5
+        Cold: -3
+        Heat: -3
+        Radiation: -1.5
+        Blunt: -0.08
+        Slash: -0.08
+        Piercing: -0.08
+    interval: 1
+  - type: Armor
+    hiddenExamine: true
+    armorClass: 2
+    modifiers:
+      coefficients:
+        Compression: 0.5
+        Cold: 0.6
+        Heat: 0.6
+        Psy: 1.9
+  - type: ClothingSpeedModifier
+    walkModifier: 1.1
+    sprintModifier: 1.1

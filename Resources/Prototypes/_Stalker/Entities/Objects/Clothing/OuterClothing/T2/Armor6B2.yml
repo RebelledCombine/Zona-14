@@ -1,0 +1,56 @@
+- type: entity
+  parent: STClothingOuterArmorBodyBase
+  id: STClothingOuterArmor6B2Base
+  suffix: ST, T2, PvP
+  abstract: true
+  components:
+  - type: Trash
+    time: 900
+  - type: STWeight
+    self: 5.4
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/base_armor.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/base_armor.rsi
+  - type: Armor
+    armorClass: 2
+    modifiers:
+      flatReductions:
+        Blunt: 5
+        Slash: 5
+        Piercing: 9
+      coefficients:
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.7
+        Heat: 0.95
+  - type: ExplosionResistance
+    damageCoefficient: 0.0
+  - type: Craftable
+
+- type: entity
+  parent: STClothingOuterArmor6B2Base
+  id: ClothingOuterArmor6B2
+  name: бронежилет 6Б2
+  description: Стандартный бронежилет II типа, обеспечивающий хоть какую-то защиту от большинства видов повреждений
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/6B2.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/6B2.rsi
+
+
+- type: entity
+  parent: STClothingOuterArmor6B2Base
+  id: ClothingOuterArmorDeserter6B2
+  name: бронежилет 6б2 отступников
+  description: Бронежилет II типа ,обеспечивающий малую защиту от большинства видов повреждений
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/6B2_deserter.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/6B2_deserter.rsi
+  - type: Armor
+    armorLevels:
+      nonPvPPhysical: -2
+      piercing: 2

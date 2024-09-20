@@ -1,0 +1,8 @@
+- type: accessLevel
+  id: CN
+  name: Чистое Небо
+
+- type: accessGroup
+  id: CN
+  tags:
+    - CN

@@ -1,0 +1,66 @@
+- type: entity
+  parent: BaseItem
+  id: BaseAmmoBoxStalker
+  name: Базовая коробка сталкера
+  noSpawn: true
+  suffix: Stalker
+  components:
+  - type: RepositoryItem
+    categoryName: Патроны
+  - type: STWeight
+    self: 0.5
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    fillDelay: 0.2
+    whitelist:
+      tags:
+        - CartridgePistol
+    proto: CartridgePistol
+    capacity: 60
+  - type: Sprite
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/AmmoBoxes.rsi
+    scale: 0.7, 0.7
+  - type: Item
+    size: Small
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  parent: BaseItem
+  id: BaseAmmoCinkBoxStalker
+  name: Базовый ящик сталкера
+  noSpawn: true
+  suffix: Stalker
+  components:
+  - type: Trash
+    time: 900
+  - type: RepositoryItem
+    categoryName: Патроны
+  - type: STWeight
+    self: 20
+  - type: BallisticAmmoProvider
+    fillDelay: 0.2
+    mayTransfer: true
+    whitelist:
+      tags:
+        - CartridgePistol
+    proto: CartridgePistol
+    capacity: 60
+  - type: Sprite
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/AmmoBoxes.rsi
+    scale: 0.7, 0.7
+  - type: Item
+    size: Big
+    shape:
+      - 0,0,3,2
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Appearance
+  - type: MultiHandedItem

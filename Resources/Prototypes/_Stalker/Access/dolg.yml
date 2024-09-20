@@ -1,0 +1,13 @@
+- type: accessLevel
+  id: Dolg
+  name: База Долга
+
+- type: accessGroup
+  id: Dolg
+  tags:
+    - Dolg
+
+- type: accessGroup
+  id: DolgHead
+  tags:
+    - Dolg

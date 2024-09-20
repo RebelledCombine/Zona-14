@@ -1,0 +1,170 @@
+- type: craftRecipe
+  id: newrecipeClothingOuterArmorAVSplateblack
+  resultProtos:
+    - STClothingOuterArmorIOTVBlack
+  craftTime: 15
+  items:
+    ClothingOuterArmorAVSplateblackBlueprint:
+      amount: 1
+      catalyzer: true
+    STClothingOuterArmorLightPlateVestBaseStalker:
+      amount: 1
+    STCraftSheetAluminumT4:
+      amount: 2
+    STCraftPolymerFabricT4:
+      amount: 2
+
+- type: craftRecipe
+  id: newrecipeClothingOuterArmorStalkerCombat
+  resultProtos:
+    - ClothingOuterArmorStalkerCombat
+  craftTime: 15
+  items:
+    ClothingOuterArmorStalkerCombatBlueprint:
+      amount: 1
+      catalyzer: true
+    STClothingOuterArmorLightPlateVestBasePSZ7:
+      amount: 1
+    STCraftSheetAluminumT4:
+      amount: 1
+    STCraftPolymerFabricT4:
+      amount: 1
+
+
+
+- type: craftRecipe
+  id: newrecipeSTClothingOuterArmorIOTVGreen
+  resultProtos:
+    - STClothingOuterArmorIOTVGreen
+  craftTime: 10
+  items:
+    STClothingOuterArmorIOTVGreenBlueprint:
+      amount: 1
+      catalyzer: true
+    ToolkitTearTwo:
+      amount: 1
+      catalyzer: true
+    STClothingOuterArmorLightPlateVestBaseStalker:
+      amount: 1
+    STCraftSheetAluminumT4:
+      amount: 1
+    STCraftPolymerFabricT4:
+      amount: 1
+
+
+- type: craftRecipe
+  id: newrecipeSTClothingOuterArmor6B13
+  resultProtos:
+    - ClothingOuterArmor6B13
+  craftTime: 11
+  items:
+    STClothingOuterArmor6B13Blueprint:
+      amount: 1
+      catalyzer: true
+    ToolkitTearTwo:
+      amount: 1
+      catalyzer: true
+    STClothingOuterArmorLightPlateVestBaseStalker:
+      amount: 1
+    STCraftSheetAluminumT4:
+      amount: 1
+    STCraftPolymerFabricT4:
+      amount: 1
+
+
+
+- type: craftRecipe
+  id: newrecipeSTClothingOuterArmorBerill5M
+  resultProtos:
+    - STClothingOuterArmorBerill5M
+  craftTime: 12
+  items:
+    STClothingOuterArmorBerill5MBlueprint:
+      amount: 1
+      catalyzer: true
+    ToolkitTearTwo:
+      amount: 1
+      catalyzer: true
+    ClothingOuterArmor6B2:
+      amount: 1
+    STCraftPolymerFabricT4:
+      amount: 1
+    STCraftSheetAluminumT4:
+      amount: 1
+    STCraftPlasticFittingT4:
+      amount: 1
+
+
+
+- type: craftRecipe
+  id: newrecipeSTClothingOuterArmorHeavy
+  resultProtos:
+    - STClothingOuterArmorHeavy
+  craftTime: 9
+  items:
+    STClothingOuterArmorHeavyBlueprint:
+      amount: 1
+      catalyzer: true
+    ToolkitTearTwo:
+      amount: 1
+      catalyzer: true
+    ClothingOuterArmorZaryaStalker:
+      amount: 1
+    STCraftIndustrialThreadStaplesKitT4:
+      amount: 1
+    STCraftSheetAluminumT4:
+      amount: 1
+    STCraftPolymerFabricT4:
+      amount: 1
+
+
+
+- type: craftRecipe
+  id: newrecipeSTClothingOuterArmorSSP99
+  resultProtos:
+    - ClothingOuterArmorSSP99
+  craftTime: 6
+  items:
+    STClothingOuterArmorSSP99Blueprint:
+      amount: 1
+      catalyzer: true
+    ToolkitTearTwo:
+      amount: 1
+      catalyzer: true
+    STClothingOuterArmorRCBZ:
+      amount: 1
+    STCraftPlasticFittingT4:
+      amount: 1
+    STCraftSheetAluminumT4:
+      amount: 1
+    STCraftIndustrialThreadStaplesKitT4:
+      amount: 1
+    STCraftPolymerFabricT4:
+      amount: 1
+    STCraftSapphireCrystalT4:
+      amount: 1
+
+
+
+- type: craftRecipe
+  id: newrecipeSTClothingOuterArmorYeger
+  resultProtos:
+    - ClothingOuterArmorYeger
+  craftTime: 6
+  items:
+    STClothingOuterArmorYegerBlueprint:
+      amount: 1
+      catalyzer: true
+    ToolkitTearTwo:
+      amount: 1
+      catalyzer: true
+    ClothingOuterArmorZaryaStalker:
+      amount: 1
+    STCraftPolymerFabricT4:
+      amount: 1
+    STCraftIndustrialThreadStaplesKitT4:
+      amount: 1
+    STCraftSapphireCrystalT4:
+      amount: 1
+    STCraftSheetAluminumT4:
+      amount: 1

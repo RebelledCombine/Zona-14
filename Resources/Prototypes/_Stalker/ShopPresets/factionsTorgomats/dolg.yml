@@ -1,0 +1,30 @@
+- type: shopPreset
+  id: DolgShopPreset
+  itemsForSale:
+    CraftLeather: 120
+  categories:
+    - name: Оружие
+      priority: 1
+      items:
+        CombatKnife: 10
+    - name: Броня и снаряжение
+      priority: 4
+      items:
+        ClothingOuterJacketDolg: 20
+        ClothingMaskGasDolg1: 98
+        ClothingMaskGasDolg2: 98
+        STSkinsKitDolg: 500
+    - name: Утилиты
+      priority: 5
+      items:
+        ExtendedEmergencyOxygenTankFilledStalker: 30
+        DoubleEmergencyOxygenTankStalkerFilled: 200
+
+- type: shopPreset
+  id: DolgDollarShopPreset
+  categories:
+  - name: Магазины
+    priority: 2
+    items:
+      545Mag60: 95
+      739Mag45: 200

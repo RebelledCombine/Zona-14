@@ -1,0 +1,30 @@
+- type: job
+  id: StalkerSBU
+  name: Боец СБУ
+  icon: sbu
+  description: Член защиты службы безопасности Украины.
+  playTimeTracker: JobSBU
+  requirements:
+    - !type:RoleTimeRequirement
+      role: JobSBU
+      time: 1
+  startingGear: MilitaryGear
+  supervisors: Подчиняйся старшим по званию.
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: Access
+          groups:
+            - MilitaryHead
+        - type: Bands
+          altBand: stalker
+          canChange: true
+          band: Stalker
+          bandIcon: sbu
+        - type: BlockTackingHolyItems
+        - type: TeethPull
+          teethProto: ToothStalker
+          pullingItemTag: PliersStalker
+          teethCount: 3
+          initialTeeth: 3
+

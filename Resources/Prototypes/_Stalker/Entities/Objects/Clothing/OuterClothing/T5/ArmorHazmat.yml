@@ -1,0 +1,35 @@
+
+- type: entity
+  parent: STClothingOuterArmorSevaBase
+  id: ClothingOuterArmorHazmatRf
+  name: Бронированный ХАЗМАТ
+  suffix: ST, T5, Env
+  description: Кустарно улучшенный ХАЗМАТ с применением аномальных материалов, обеспечивающий хорошую защиту по всем фронтам. Следует использовать с встроенным шлемом.
+  components:
+    - type: STWeight
+      self: 12
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/outerClothing/armored_hazmat.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/outerClothing/armored_hazmat.rsi
+    - type: ToggleableClothing
+      clothingPrototype: ClothingHeadHazmat
+    - type: Armor
+      armorClass: 4
+      modifiers:
+        flatReductions:
+          Blunt: 5
+          Slash: 5
+          Piercing: 7
+          Radiation: 10
+          Caustic: 10
+        coefficients:
+          Blunt: 0.65
+          Slash: 0.65
+          Piercing: 0.4
+          Heat: 0.55
+          Caustic: 0.55
+          Shock: 0.55
+          Compression: 0.25
+    - type: ExplosionResistance
+      damageCoefficient: 0.95

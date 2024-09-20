@@ -1,0 +1,13 @@
+- type: entity
+  parent: ClothingHeadHatHardhatBase
+  id: STHeadLight
+  name: Налобный фонарик
+  description: Надеваеться на ухо...
+  suffix: ST
+  components:
+  - type: Sprite
+    sprite: _Stalker/Clothing/Ears/headlight.rsi
+  - type: Clothing
+    slots:
+    - ears
+    sprite: _Stalker/Clothing/Ears/headlight.rsi

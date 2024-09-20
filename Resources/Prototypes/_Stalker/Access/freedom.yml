@@ -1,0 +1,8 @@
+- type: accessLevel
+  id: Freedom
+  name: База Свободы
+
+- type: accessGroup
+  id: FreedomHead
+  tags:
+    - Freedom

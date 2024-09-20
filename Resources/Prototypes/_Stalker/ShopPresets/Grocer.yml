@@ -1,0 +1,27 @@
+- type: shopPreset
+  id: NpcGrocer
+  itemsForSale:
+  # Мясо кабана
+    FoodMeatBoar: 20
+    FoodMeatBoarCooked: 50
+  # Мясо собаки
+    FoodMeatDog: 10
+    FoodMeatDogCooked: 35
+  categories:
+    - name: Еда
+      priority: 1
+      items:
+        FoodBreadPlain: 15
+        FoodTinMRE: 30
+        FoodMeatSalami: 60
+        FoodBreadBaguette: 30
+        FoodCheeseSlice: 25
+        FoodButter: 75
+
+    - name: Вода
+      priority: 2
+      items:
+        DrinkFlaskOld: 15
+        DrinkWaterBottleFull: 15
+        DrinkLemonadehBottleFull: 30
+

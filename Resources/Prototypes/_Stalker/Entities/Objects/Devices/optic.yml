@@ -1,0 +1,17 @@
+# БИНОКЛИ
+
+- type: entity
+  parent: BaseItem
+  id: Binocularus1
+  name: старый бинокль
+  description: Старый советский армейский бинокль.
+  suffix: Stalker
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Devices/optic/t1.rsi
+    state: icon
+    scale: 0.8, 0.8
+  - type: Item
+    sprite: _Stalker/Objects/Devices/optic/t1.rsi
+    state: icon
+  - type: Craftable

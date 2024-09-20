@@ -1,0 +1,64 @@
+- type: reagent
+  id: STBaseWater
+  group: Drinks
+  name: reagent-name-water
+  desc: reagent-desc-water
+  physicalDesc: reagent-physical-desc-translucent
+  flavor: water
+  color: "#75b1f0"
+  abstract: true
+  slippery: true
+  recognizable: true
+  boilingPoint: 100
+  meltingPoint: 0
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 3
+  reactiveEffects:
+    Extinguish:
+      methods: [ Touch ]
+      effects:
+      - !type:ExtinguishReaction
+  plantMetabolism:
+  - !type:PlantAdjustWater
+    amount: 1
+  tileReactions:
+  - !type:ExtinguishTileReaction { }
+  - !type:SpillIfPuddlePresentTileReaction { }
+
+- type: reagent
+  parent: STBaseWater
+  id: STWater
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 4
+
+- type: reagent
+  parent: STBaseWater
+  id: STToxicWater
+  plantMetabolism:
+    - !type:PlantAdjustToxins
+      amount: 4
+    - !type:PlantAdjustWeeds
+      amount: -4
+    - !type:PlantAdjustHealth
+      amount: -4
+    - !type:PlantAdjustMutationMod
+      amount: 5
+  metabolisms:
+    Drink:
+      effects:
+        - !type:SatiateThirst
+          factor: 2
+    Poison:
+      metabolismRate: 0.1
+      effects:
+        - !type:HealthChange
+          damage:
+            types:
+              Poison: 1
+              Radiation: 2

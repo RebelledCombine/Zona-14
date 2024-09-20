@@ -1,0 +1,15 @@
+- type: entity
+  parent: STBaseBlueprint
+  id: ClothingOuterCoatBolotniyBlueprint
+  name: Рецепт болотного плаща
+  components:
+    - type: STBlueprint
+      blueprint: newrecipeClothingOuterCoatBolotniy
+
+- type: entity
+  parent: STBaseBlueprint
+  id: ClothingOuterCoatKolchygaBlueprint
+  name: Рецепт плаща Кольчуга
+  components:
+    - type: STBlueprint
+      blueprint: newrecipeClothingOuterCoatKolchyga

@@ -1,0 +1,17 @@
+- type: entity
+  parent: StalkerFenceMetalStraight
+  id: StalkerFenceMetalStraightPerimetr
+  name: Колючая проволока Периметра
+  description: Материал, который используется для ограждения и защиты территории от несанкционированного проникновения. Эту колючку можно перекусить болторезом.
+  suffix: Stalker, traight
+  components:
+  - type: Craftable
+
+- type: entity
+  parent: StalkerFenceMetalBroken
+  id: StalkerFenceMetalBrokenPerimetr
+  name: Колючая проволока
+  description: Материал, который используется для ограждения и защиты территории от несанкционированного проникновения. Эту часть перекусили болторезом, её можно восстановить.
+  suffix: Stalker
+  components:
+  - type: Craftable

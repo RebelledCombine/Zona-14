@@ -1,0 +1,38 @@
+
+- type: job
+  id: StalkerPoisk
+  name: Поиск
+  icon: poisk
+  description: Поиск
+  playTimeTracker: JobPoisk
+  requirements:
+    - !type:RoleTimeRequirement
+      role: JobPoisk
+      time: 1
+  startingGear: PoiskGear
+  supervisors: Вы подчиняетесь своему лидеру
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: Access
+          tags:
+            - Poisk
+            - Stalker
+        - type: Bands
+          band: Stalker
+          bandIcon: poisk
+        - type: BlockTackingHolyItems
+        - type: TeethPull
+          teethProto: ToothStalker
+          pullingItemTag: PliersStalker
+          teethCount: 3
+          initialTeeth: 3
+
+- type: startingGear
+  id: PoiskGear
+  equipment:
+    id: StalkerPDA
+    belt: ClothingBeltStorageWaistbag
+    torso: ClothingTorsoSweaterStalkerGreen
+    legs: ClothingLegsJeansBlue
+    shoes: ClothingShoesBootsCombatFilled

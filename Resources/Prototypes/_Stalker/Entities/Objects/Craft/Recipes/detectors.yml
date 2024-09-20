@@ -1,0 +1,386 @@
+# Старые крафты
+
+- type: craftRecipe
+  id: recipeDetectorAD1
+  resultProtos:
+    - ZoneAnomalyDetectorAD1
+  craftTime: 10
+  items:
+    Toolbox:
+      amount: 1
+      catalyzer: true
+    SolderingIron:
+      amount: 1
+      catalyzer: true
+    CraftResistor:
+      amount: 1
+    CraftElectronicBoard:
+      amount: 1
+    CraftBattery:
+      amount: 1
+    CraftSpeaker1:
+      amount: 1
+
+- type: craftRecipe
+  id: recipeDetectorAD2
+  resultProtos:
+    - ZoneAnomalyDetectorAD2
+  craftTime: 5
+  items:
+    Toolbox:
+      amount: 1
+      catalyzer: true
+    SolderingIron:
+      amount: 1
+      catalyzer: true
+    MultitoolStalker:
+      amount: 1
+      catalyzer: true
+    CraftResistor:
+      amount: 1
+    ZoneAnomalyDetectorAD1:
+      amount: 1
+    CraftChip:
+      amount: 1
+
+- type: craftRecipe
+  id: recipeZoneAnomalyDetectorBMT12
+  resultProtos:
+    - ZoneAnomalyDetectorBMT12
+  craftTime: 60
+  items:
+    ToolkitTearThree:
+      amount: 1
+      catalyzer: true
+    SolderingIron:
+      amount: 1
+      catalyzer: true
+    MultitoolStalker:
+      amount: 1
+      catalyzer: true
+    ZoneAnomalyDetectorUpgradeAD2:
+      amount: 1
+    CraftCoil:
+      amount: 1
+    CraftSpeaker2:
+      amount: 1
+    CraftChip:
+      amount: 2
+    CraftMonitor:
+      amount: 1
+    CraftResistor:
+      amount: 1
+    CraftBattery:
+      amount: 1
+
+- type: craftRecipe
+  id: ZoneAnomalyDetectorUAD14A
+  resultProtos:
+    - ZoneAnomalyDetectorUAD14A
+  craftTime: 15
+  items:
+    ToolkitTearThree:
+      amount: 1
+      catalyzer: true
+    Toolbox:
+      amount: 1
+      catalyzer: true
+    SolderingIron:
+      amount: 1
+      catalyzer: true
+    MultitoolStalker:
+      amount: 1
+      catalyzer: true
+    CraftResistor:
+      amount: 3
+    CraftChip:
+      amount: 1
+    CraftElectronicBoard:
+      amount: 2
+    CraftBattery:
+      amount: 2
+    CraftSpeaker1:
+      amount: 1
+    CraftCoil:
+      amount: 2
+
+- type: craftRecipe
+  id: ZoneAnomalyDetectorUAAL7B
+  resultProtos:
+    - ZoneAnomalyDetectorUAAL7B
+  craftTime: 15
+  items:
+    ToolkitTearThree:
+      amount: 1
+      catalyzer: true
+    Toolbox:
+      amount: 1
+      catalyzer: true
+    SolderingIron:
+      amount: 1
+      catalyzer: true
+    MultitoolStalker:
+      amount: 1
+      catalyzer: true
+    ZoneAnomalyDetectorUAD14A:
+      amount: 1
+    ZoneArtifactFlash:
+      anount: 1
+      catalyzer: true
+    CraftCoil:
+      amount: 2
+
+- type: craftRecipe
+  id: ZoneArtifactDetectorModifiedHunter
+  resultProtos:
+    - ZoneArtifactDetectorModifiedHunter
+  craftTime: 15
+  items:
+    ZoneArtifactDetectorHunter:
+      amount: 1
+    CraftBattery:
+      amount: 1
+    CraftCoil:
+      amount: 2
+
+# Новые Крафты
+
+# Детекторы Аномалий
+- type: craftRecipe
+  id: newrecipeDetectorAD1
+  resultProtos:
+    - ZoneAnomalyDetectorAD1
+  craftTime: 0.5
+  items:
+    STDetectorAD1Blueprint:
+      amount: 1
+      catalyzer: true
+    STCraftBasicPCBT1:
+      amount: 1
+    STCraftPlasticFittingT1:
+      amount: 1
+
+
+- type: craftRecipe
+  id: newrecipeDetectorAD2
+  resultProtos:
+    - ZoneAnomalyDetectorAD2
+  craftTime: 2
+  items:
+    STDetectorAD2Blueprint:
+      amount: 1
+      catalyzer: true
+    STCraftStandardPCBT2:
+      amount: 1
+    STCraftPlasticFittingT1:
+      amount: 1
+    ZoneAnomalyDetectorAD1:
+      amount: 1
+
+# Детекторы Артефактов
+
+- type: craftRecipe
+  id: recipeZoneArtifactDetectorPulse
+  resultProtos:
+    - ZoneArtifactDetectorPulse
+  craftTime: 0.3
+  items:
+    STZoneArtifactDetectorPulseBlueprint:
+      amount: 1
+      catalyzer: true
+    STCraftBasicPCBT1:
+      amount: 1
+    STCraftSheetCopperT1:
+      amount: 1
+
+- type: craftRecipe
+  id: recipeZoneArtifactDetectorHunter
+  resultProtos:
+    - ZoneArtifactDetectorHunter
+  craftTime: 1
+  items:
+    STZoneArtifactDetectorHunterBlueprint:
+      amount: 1
+      catalyzer: true
+    ZoneArtifactDetectorPulse:
+      amount: 1
+    STCraftBasicPCBT1:
+      amount: 1
+
+- type: craftRecipe
+  id: recipeZoneArtifactDetectorResponse
+  resultProtos:
+    - ZoneArtifactDetectorResponse
+  craftTime: 2
+  items:
+    STZoneArtifactDetectorResponseBlueprint:
+      amount: 1
+      catalyzer: true
+    ZoneArtifactDetectorHunter:
+      amount: 1
+    STCraftPlasticFittingT1:
+      amount: 1
+    STCraftStandardPCBT2:
+      amount: 1
+
+- type: craftRecipe
+  id: recipeZoneArtifactDetectorSpruce
+  resultProtos:
+    - ZoneArtifactDetectorSpruce
+  craftTime: 5
+  items:
+    STZoneArtifactDetectorSpruceBlueprint:
+      amount: 1
+      catalyzer: true
+    ZoneArtifactDetectorResponse:
+      amount: 1
+    STCraftSheetBrassT3:
+      amount: 1
+    STCraftTapeKitT2:
+      amount: 1
+    STCraftBasicPCBT1:
+      amount: 1
+
+- type: craftRecipe
+  id: recipeZoneArtifactDetectorBarracuda
+  resultProtos:
+    - ZoneArtifactDetectorBarracuda
+  craftTime: 10
+  items:
+    STZoneArtifactDetectorBarracudaBlueprint:
+      amount: 1
+      catalyzer: true
+    ZoneArtifactDetectorSpruce:
+      amount: 1
+    STCraftSheetBrassT3:
+      amount: 1
+    STCraftMultilayerPCBT3:
+      amount: 1
+    STCraftGlassT2:
+      amount: 1
+    STCraftPlasticFittingT2:
+      amount: 1
+
+- type: craftRecipe
+  id: recipeZoneArtifactDetectorBear
+  resultProtos:
+    - ZoneArtifactDetectorBear
+  craftTime: 20
+  items:
+    STZoneArtifactDetectorBearBlueprint:
+      amount: 1
+      catalyzer: true
+    ZoneArtifactDetectorSpruce:
+      amount: 1
+    STCraftHighPerformanceChipT4:
+      amount: 1
+    STCraftSheetAluminumT4:
+      amount: 1
+    STCraftMultilayerPCBT3:
+      amount: 1
+    STCraftGlueKitT3:
+      amount: 1
+    STCraftStandardPCBT2:
+      amount: 1
+    STCraftGlassT2:
+      amount: 2
+    STCraftPlasticFittingT2:
+      amount: 1
+
+- type: craftRecipe
+  id: recipeZoneArtifactDetectorWolfhound
+  resultProtos:
+    - ZoneArtifactDetectorWolfhound
+  craftTime: 60
+  items:
+    STZoneArtifactDetectorWolfhoundBlueprint:
+      amount: 1
+      catalyzer: true
+    ZoneArtifactDetectorBear:
+      amount: 1
+    STCraftNanoChipT5:
+      amount: 1
+    STCraftSheetSteelT5:
+      amount: 1
+    STCraftIndustrialThreadStaplesKitT4:
+      amount: 1
+    ZoneArtifactNightStar:
+      amount: 1
+
+# Металлоискатели
+
+- type: craftRecipe
+  id: recipeTrashDetectorTier2
+  resultProtos:
+    - TrashDetectorTier2
+  craftTime: 0.2
+  items:
+    TrashDetectorTier2Blueprint:
+      amount: 1
+      catalyzer: true
+    TrashDetectorTier1:
+      amount: 1
+    STCraftPlasticFittingT1:
+      amount: 1
+    STCraftBasicPCBT1:
+      amount: 1
+
+- type: craftRecipe
+  id: recipeTrashDetectorTier3
+  resultProtos:
+    - TrashDetectorTier3
+  craftTime: 1
+  items:
+    TrashDetectorTier3Blueprint:
+      amount: 1
+
+      catalyzer: true
+    TrashDetectorTier2:
+      amount: 1
+    STCraftPlasticFittingT1:
+      amount: 1
+    STCraftPlasticFittingT2:
+      amount: 1
+    STCraftStandardPCBT2:
+      amount: 1
+
+- type: craftRecipe
+  id: recipeTrashDetectorTier4
+  resultProtos:
+    - TrashDetectorTier4
+  craftTime: 10
+  items:
+    TrashDetectorTier4Blueprint:
+      amount: 1
+      catalyzer: true
+    TrashDetectorTier3:
+      amount: 1
+    STCraftPlasticFittingT2:
+      amount: 1
+    STCraftPlasticFittingT3:
+      amount: 1
+    STCraftMultilayerPCBT3:
+      amount: 1
+    STCraftBasicThreadKitT1:
+      amount: 1
+    ZoneArtifactVyvert:
+      amount: 1
+
+- type: craftRecipe
+  id: recipeTrashDetectorTier5
+  resultProtos:
+    - TrashDetectorTier5
+  craftTime: 30
+  items:
+    TrashDetectorTier5Blueprint:
+      amount: 1
+      catalyzer: true
+    TrashDetectorTier4:
+      amount: 1
+    STCraftPlasticFittingT4:
+      amount: 1
+    STCraftHighPerformanceChipT4:
+      amount: 1
+    ZoneArtifactVyvert:
+      amount: 3
+

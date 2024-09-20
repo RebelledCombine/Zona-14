@@ -1,0 +1,72 @@
+- type: entity
+  name: L85
+  suffix: ST
+  parent: STBaseWeaponRifle
+  id: STWeaponRifleStalkerL85
+  description: Британская основная штурмовая винтовка под 5.56, отличается крайне низким разбросом.
+  components:
+    - type: STWeight
+      self: 4.2
+    - type: Item
+      sprite: _Stalker/Objects/Weapons/Guns/Rifles/l85.rsi
+    - type: Sprite
+      sprite: _Stalker/Objects/Weapons/Guns/Rifles/l85.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Weapons/Guns/Rifles/l85.rsi
+    - type: Gun
+      fireRate: 6
+      soundGunshot:
+        path: /Audio/_Stalker/Effects/Guns/l85.ogg
+        params:
+          volume: -2
+      minAngle: 55
+      maxAngle: 75
+      angleIncrease: 3.5
+      angleDecay: 17.5
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          startingItem: Base556Mag10
+          insertSound: /Audio/Weapons/Guns/MagIn/hpistol_magin.ogg
+          ejectSound: /Audio/Weapons/Guns/MagOut/hpistol_magout.ogg
+          priority: 4
+          whitelist:
+            tags:
+              - Magazine556
+        gun_module_muzzle:
+          name: Muzzle
+          priority: 3
+          whitelist:
+            tags:
+              - STWeaponModuleRifleSilencerNato
+        gun_module_scope:
+          name: Scope
+          priority: 2
+          whitelist:
+            tags:
+              - STWeaponModuleRifleScopeNato
+        gun_chamber:
+          name: Chamber
+          startingItem:
+          priority: 1
+          whitelist:
+            tags:
+              - Cartridge556
+
+
+# Скинчики
+
+- type: entity
+  name: L85 Strawberry
+  suffix: ST, Скин
+  parent: STWeaponRifleStalkerL85
+  id: STWeaponGunAKS74UWhiteStrawberry
+  description: Британская L85 в малиновой раскраске.
+  components:
+  - type: Clothing
+    sprite: _Stalker/Objects/Weapons/Guns/Rifles/_Skins/l85_straberry.rsi
+  - type: Item
+    sprite: _Stalker/Objects/Weapons/Guns/Rifles/_Skins/l85_straberry.rsi
+  - type: Sprite
+    sprite: _Stalker/Objects/Weapons/Guns/Rifles/_Skins/l85_straberry.rsi

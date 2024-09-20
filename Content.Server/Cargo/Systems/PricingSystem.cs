@@ -1,4 +1,4 @@
-﻿using Content.Server.Administration;
+using Content.Server.Administration;
 using Content.Server.Body.Systems;
 using Content.Server.Cargo.Components;
 using Content.Shared.Chemistry.EntitySystems;
@@ -295,7 +295,7 @@ public sealed class PricingSystem : EntitySystem
         return price;
     }
 
-    private double GetSolutionsPrice(EntityUid uid)
+    public double GetSolutionsPrice(EntityUid uid) // stalker-changes
     {
         var price = 0.0;
 

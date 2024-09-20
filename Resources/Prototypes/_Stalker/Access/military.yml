@@ -1,0 +1,83 @@
+- type: accessLevel
+  id: UN
+  name: Миротворцы
+
+- type: accessLevel
+  id: Military
+  name: База военных
+
+- type: accessLevel
+  id: MilitaryBarraks
+  name: Казармы
+
+- type: accessLevel
+  id: MilitaryOfficer
+  name: Офицер
+
+- type: accessLevel
+  id: MilitaryStalker
+  name: Военстал
+
+- type: accessLevel
+  id: PoliceOfficer
+  name: Полицейский
+
+- type: accessLevel
+  id: MilitaryHead
+  name: Штаб
+
+- type: accessLevel
+  id: SciBase
+  name: Учёные
+
+- type: accessLevel
+  id: SciHead
+  name: Глава учёных
+
+- type: accessGroup
+  id: Military
+  tags:
+    - Military
+    - MilitaryBarraks
+
+- type: accessGroup
+  id: MilitaryOfficer
+  tags:
+    - Military
+    - MilitaryBarraks
+    - MilitaryOfficer
+
+- type: accessGroup
+  id: PoliceOfficer
+  tags:
+    - Military
+    - MilitaryBarraks
+    - PoliceOfficer
+
+- type: accessGroup
+  id: MilitaryStalker
+  tags:
+    - Military
+    - MilitaryBarraks
+    - MilitaryStalker
+
+- type: accessGroup
+  id: MilitaryHead
+  tags:
+    - Military
+    - MilitaryBarraks
+    - MilitaryOfficer
+    - MilitaryHead
+
+- type: accessGroup
+  id: Sci
+  tags:
+    - Military
+    - SciBase
+
+- type: accessGroup
+  id: SciHead
+  tags:
+    - Military
+    - SciBase
+    - SciHead

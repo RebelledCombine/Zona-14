@@ -1,0 +1,63 @@
+# 7.62x54
+
+- type: entity
+  id: BaseCartridge754
+  name: cartridge (7,62x54 rifle)
+  parent: BaseCartridgeCaselessRifle
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - Cartridge754
+  - type: CartridgeAmmo
+    proto: BulletLightRifle
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: STWeight
+    self: 0.02
+
+- type: entity
+  id: Cartridge754FMJ
+  name: Патрон (7,62x54)FMJ
+  parent: BaseCartridge754
+  components:
+    - type: CartridgeAmmo
+      proto: Bullet754FMJ
+
+- type: entity
+  id: Cartridge754PC
+  name: Патрон (7,62x54)ПС
+  parent: BaseCartridge754
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet754PC
+
+- type: entity
+  id: Cartridge754HPBT
+  name: Патрон (7,62x54)HP BT
+  parent: BaseCartridge754
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet754HPBT
+
+- type: entity
+  id: Cartridge754BT
+  name: Патрон (7,62x54)БТ
+  parent: BaseCartridge754
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet754BT
+
+- type: entity
+  id: Cartridge754SNB
+  name: Патрон (7,62x54)СНБ
+  parent: BaseCartridge754
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet754SAPB

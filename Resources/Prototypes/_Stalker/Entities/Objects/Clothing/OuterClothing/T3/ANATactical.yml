@@ -1,0 +1,72 @@
+- type: entity
+  parent: STClothingOuterArmorStorageBasic
+  id: STClothingOuterArmorLightPlateVestBaseANAgreen
+  name: ANA Tactical
+  suffix: ST, T3, PvP
+  description: Надёжный бронеразгруз 3 класса брони, вмещающий любого размера магазины.
+  components:
+  - type: Trash
+    time: 900
+  - type: STWeight
+    self: 8.5
+  - type: Storage
+    maxItemSize: Big
+    grid:
+      - 0,2,0,4
+      - 2,2,2,3
+      - 2,-1,3,-0
+      - 4,2,4,3
+      - 5,-1,6,-0
+      - 6,2,6,3
+      - 8,2,8,4
+  - type: Tag
+    tags:
+      - BlockBelt
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/ANA/Green.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/ANA/Green.rsi
+  - type: Armor
+    armorClass: 3
+    modifiers:
+      flatReductions:
+        Blunt: 10
+        Slash: 10
+        Piercing: 6
+      coefficients:
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.5
+        Heat: 0.9
+  - type: ExplosionResistance
+    damageCoefficient: 0.8
+  - type: Craftable
+
+
+- type: entity
+  parent: STClothingOuterArmorLightPlateVestBaseANAgreen
+  id: STClothingOuterArmorLightPlateVestBaseANAgray
+  name: ANA Tactical
+  description: Надёжный бронеразгруз 3 класса брони, вмещающий любого размера магазины.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/ANA/Gray.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/ANA/Gray.rsi
+  - type: Craftable
+
+- type: entity
+  parent: STClothingOuterArmorLightPlateVestBaseANAgreen
+  id: STClothingOuterArmorLightPlateVestBaseANAPilgrim
+  name: ANA Tactical Паломника
+  description: Надёжный бронеразгруз 3 класса брони, вмещающий любого размера магазины либо библию и кадило
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/ANA/Pilgrim.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/ANA/Pilgrim.rsi
+  - type: Craftable
+  - type: ToggleableClothing
+    slot: head
+    requiredSlot: NECK
+    clothingPrototype: ClothingHeadCassock

@@ -1,0 +1,67 @@
+- type: job
+  id: Doctor
+  name: Врач
+  icon: medbeysprite
+  description: Спасают людей, жертвуя своими силами.
+  playTimeTracker: JobDoctor
+  requirements:
+    - !type:RoleTimeRequirement
+      role: JobDoctor
+      time: 1
+  startingGear: DoctorStalkerGear
+  supervisors: Вы подчиняетесь Главному Врачу.
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: Access
+          tags:
+            - Doctor
+        - type: Bands
+          band: Stalker
+          bandIcon: medbeysprite
+        - type: BlockTackingHolyItems
+        - type: TeethPull
+          teethProto: ToothStalker
+          pullingItemTag: PliersStalker
+          teethCount: 3
+          initialTeeth: 3
+
+
+- type: job
+  id: HeadDoctor
+  name: Главный Врач
+  icon: medbeysprite
+  description: Руководит медицинским составом, одновременно оказывая помощь нуждающимся.
+  playTimeTracker: JobHeadDoctor
+  requirements:
+    - !type:RoleTimeRequirement
+      role: JobHeadDoctor
+      time: 1
+  startingGear: DoctorStalkerGear
+  supervisors: Вы подчиняетесь мэру города "Чернобыль - 4"
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: Access
+          tags:
+            - HeadDoctor
+        - type: Bands
+          band: Stalker
+          bandIcon: medbeysprite
+        - type: BlockTackingHolyItems
+        - type: TeethPull
+          teethProto: ToothStalker
+          pullingItemTag: PliersStalker
+          teethCount: 3
+          initialTeeth: 3
+
+
+- type: startingGear
+  id: DoctorStalkerGear
+  equipment:
+    id: StalkerPDA
+    shoes: ClothingShoesColorWhite
+    legs: ClothingLegsJeansBlackCargo
+    torso: ClothingTorsoSweaterStalkerGreen
+    outerClothing: ClothingOuterCoatLab
+    back: ClothingBackpackDuffelMedicalStalker

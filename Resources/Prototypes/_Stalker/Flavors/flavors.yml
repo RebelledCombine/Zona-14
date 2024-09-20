@@ -1,0 +1,14 @@
+- type: flavor
+  id: stalkermed
+  flavorType: Base
+  description: как отсрочка смерти.
+
+- type: flavor
+  id: potatoescooking
+  flavorType: Complex
+  description: flavor-complex-cooking-potatoes
+
+- type: flavor
+  id: condensedmilk
+  flavorType: Complex
+  description: flavor-complex-condensed-milk

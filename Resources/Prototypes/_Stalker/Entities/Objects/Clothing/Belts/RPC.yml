@@ -1,0 +1,225 @@
+- type: entity
+  parent: ClothingBeltStorageStalkerBase
+  id: ClothingBeltTarzanBlack
+  name: РПС "Тарзан"
+  description: Очень полезная чёрная РПС для переноски любых вещей, от рации до магазинов. Пользуется особой популярностью среди сталкерского сообщества.
+  suffix: ST
+  components:
+  - type: Tag
+    tags:
+      - BlockBelt
+  - type: STWeight
+    self: 1
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+      - 0,2,0,3
+      - 1,-0,1,-0
+      - 2,2,2,3
+      - 3,-0,3,-0
+      - 4,2,4,3
+      - 5,-0,5,-0
+      - 6,2,6,3
+      - 7,-0,7,-0
+      - 8,2,8,3
+      - 9,-0,9,-0
+      - 10,2,10,3
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/belt/tarzan_black.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/belt/tarzan_black.rsi
+
+- type: entity
+  parent: ClothingBeltTarzanBlack
+  id: ClothingBeltTarzanGreen
+  name: РПС "Тарзан"
+  description: Очень полезная зелёная РПС для переноски любых вещей, от рации до магазинов. Пользуется особой популярностью среди сталкерского сообщества.
+  suffix: ST
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/belt/tarzan_green.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/belt/tarzan_green.rsi
+
+- type: entity
+  parent: ClothingBeltTarzanBlack
+  id: ClothingBeltTarzanOrange
+  name: РПС "Тарзан"
+  description: Очень полезная оранжевая РПС для переноски любых вещей, от рации до магазинов. Пользуется особой популярностью среди сталкерского сообщества.
+  suffix: ST
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/belt/tarzan_orange.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/belt/tarzan_orange.rsi
+
+- type: entity
+  parent: ClothingBeltStorageStalkerBase
+  id: ClothingBeltBandolierStalker
+  name: патронташ
+  description: Патронташ для патронов любого калибра.
+  components:
+    - type: STWeight
+      self: 0.5
+    - type: Sprite
+      sprite: Clothing/Belt/bandolier.rsi
+    - type: Clothing
+      sprite: Clothing/Belt/bandolier.rsi
+    - type: Item
+      size: Huge
+    - type: Tag
+      tags:
+        - Folder
+    - type: Storage
+      maxItemSize: Normal
+      grid:
+        - 0,0,7,7
+      quickInsert: true
+      areaInsert: true
+      whitelist:
+        tags:
+          - CartridgeAmmo
+          - Cartridge
+
+
+- type: entity
+  parent: ClothingBeltStorageStalkerBase
+  id: STClothingBeltThrowingKnifes
+  name: портупея
+  description: Позволяет удобно хранить и быстро доставать ножи
+  components:
+    - type: STWeight
+      self: 0.5
+    - type: Sprite
+      sprite: _Stalker/Clothing/Belts/knife_belt.rsi
+    - type: Clothing
+      sprite: _Stalker/Clothing/Belts/knife_belt.rsi
+    - type: Item
+      size: Huge
+    - type: Tag
+      tags:
+        - Folder
+    - type: Storage
+      maxItemSize: Normal
+      grid:
+        - 0,0,7,7
+      quickInsert: true
+      areaInsert: true
+      whitelist:
+        tags:
+          - Knife
+    - type: ItemMapper
+      mapLayers:
+        knife:
+          whitelist:
+            tags:
+              - Knife
+      sprite: _Stalker/Clothing/Belts/knife_belt_overlay.rsi
+      spriteLayers:
+      - knife
+    - type: Appearance
+
+- type: entity
+  parent: ClothingBeltMercWebbing
+  id: ClothingBeltMercWebbingStalker
+  name: Тактическая разгрузка
+  description: Крайне вместительный разгруз с двумя большими подсумками на боках.
+  suffix: ST
+  components:
+    - type: STWeight
+      self: 1
+    - type: Storage
+      maxItemSize: Big
+      grid:
+        - 0,2,0,3
+        - 0,-1,0,0
+        - 2,2,2,3
+        - 2,-2,3,-0
+        - 4,2,4,3
+        - 5,-2,6,-0
+        - 6,2,6,3
+        - 8,2,8,3
+        - 8,-1,8,0
+    - type: Tag
+      tags:
+        - BlockBelt
+
+- type: entity
+  parent: ClothingBeltStorageStalkerBase
+  id: ClothingBeltZavet
+  name: РПС "Завет"
+  description: стандартный RPC, используемый группировкой «Завет».
+  suffix: ST
+  components:
+  - type: STWeight
+    self: 1
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+      - 0,2,0,3
+      - 1,-0,1,-0
+      - 2,2,2,3
+      - 3,-0,3,-0
+      - 4,2,4,3
+      - 5,-0,5,-0
+      - 6,2,6,3
+      - 7,-0,7,-0
+      - 8,2,8,3
+      - 9,-0,9,-0
+      - 10,2,10,3
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/belt/zavet.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/belt/zavet.rsi
+
+- type: entity
+  parent: ClothingBeltTarzanBlack
+  id: ClothingBeltGreenWebbingStalker
+  name: поясная сумка ПСЗ
+  description: Набор подсумков и поясная сумка старого зелёного варианта комплекта персональной системы защиты, не предназаченного для местности ЧЗО.
+  suffix: ST
+  components:
+    - type: STWeight
+      self: 3
+    - type: Tag
+      tags:
+        - Folder
+    - type: Storage
+      maxItemSize: Big
+      grid:
+        - 2,0,7,3
+        - 0,4,0,2
+        - 1,0,0,2
+        - 0,0,0,0
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/belt/belt_green.rsi
+      state: icon
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/belt/belt_green.rsi
+
+- type: entity
+  parent: ClothingBeltTarzanBlack
+  id: ClothingBeltWebbingOfficerStalker
+  name: поясная сумка с кобурой ПСЗ
+  description: Набор подсумков и поясная сумка офицерского комплекта персональной системы защиты в раскраске вудланд, имеющий пистолетную кобуру.
+  suffix: ST
+  components:
+    - type: STWeight
+      self: 3
+    - type: Tag
+      tags:
+        - Folder
+    - type: Storage
+      maxItemSize: Big
+      grid:
+        - 4,0,9,3
+        - 0,1,0,1
+        - 0,0,1,0
+        - 0,4,0,2
+        - 1,0,0,2
+        - 2,2,2,2
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/belt/belt_officer.rsi
+      state: icon
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/belt/belt_officer.rsi

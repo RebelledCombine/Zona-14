@@ -50,7 +50,12 @@ public abstract partial class SharedGunSystem
 
         if (GetBallisticShots(component) >= component.Capacity)
             return;
-
+        // stalker-changes-start
+        var meta = MetaData(args.Used);
+        if (meta.EntityPrototype == null)
+            return;
+        component.EntProtos.Add(meta.EntityPrototype.ID);
+        // stalker-changes-end
         component.Entities.Add(args.Used);
         Containers.Insert(args.Used, component.Container);
         // Not predicted so
@@ -249,10 +254,16 @@ public abstract partial class SharedGunSystem
 
                 args.Ammo.Add((entity, EnsureShootable(entity)));
                 component.Entities.RemoveAt(component.Entities.Count - 1);
+                component.EntProtos.RemoveAt(component.EntProtos.Count - 1);
                 Containers.Remove(entity, component.Container);
             }
             else if (component.UnspawnedCount > 0)
             {
+                // Stalker-Changes-start
+                var copy = component.EntProtos;
+                copy.Reverse();
+                component.EntProtos.RemoveAt(0);
+                // Stalker-Changes-end
                 component.UnspawnedCount--;
                 entity = Spawn(component.Proto, args.Coordinates);
                 args.Ammo.Add((entity, EnsureShootable(entity)));

@@ -1,0 +1,102 @@
+# Заря
+- type: craftRecipe
+  id: recipeZaryaHunter
+  resultProtos:
+    - ClothingOuterArmorZaryaHunter
+  craftTime: 10
+  items:
+    ClothingOuterArmorZaryaHunterBlueprint:
+      amount: 1
+      catalyzer: true
+    STCraftSheetIronT2:
+      amount: 2
+    STCraftHideT2:
+      amount: 2
+    STCraftPlasticFittingT2:
+      amount: 1
+
+- type: craftRecipe
+  id: newrecipeClothingOuterArmorZaryaStalkerModifedType1
+  resultProtos:
+    - ClothingOuterArmorZaryaStalkerModifedType1
+  craftTime: 10
+  items:
+    ClothingOuterArmorZaryaStalker:
+      amount: 1
+    ClothingOuterArmorZaryaStalkerModifedType1Blueprint:
+      amount: 1
+      catalyzer: true
+    STCraftSheetIronT2:
+      amount: 1
+    STCraftHideT2:
+      amount: 1
+    STCraftTapeKitT2:
+      amount: 1
+
+
+- type: craftRecipe
+  id: newrecipeClothingOuterArmorZaryaStalkerModifedType2
+  resultProtos:
+    - ClothingOuterArmorZaryaStalkerModifedType2
+  craftTime: 10
+  items:
+    ClothingOuterArmorZaryaStalker:
+      amount: 1
+    ClothingOuterArmorZaryaStalkerModifedType2Blueprint:
+      amount: 1
+      catalyzer: true
+    STCraftSheetIronT2:
+      amount: 1
+    STCraftHideT2:
+      amount: 1
+    STCraftPlasticFittingT2:
+      amount: 1
+
+# 6Б2
+- type: craftRecipe
+  id: newrecipeClothingOuterArmor6B2
+  resultProtos:
+    - ClothingOuterArmor6B2
+  craftTime: 5
+  items:
+    STClothingOuterArmor6B2Blueprint:
+      amount: 1
+      catalyzer: true
+    STCraftSheetIronT2:
+      amount: 1
+    STCraftTapeKitT2:
+      amount: 1
+    STCraftHideT2:
+      amount: 1
+
+# ArmorCN1
+- type: craftRecipe
+  id: newrecipeClothingOuterArmorCN1
+  resultProtos:
+    - ClothingOuterArmorCN1
+  craftTime: 5
+  items:
+    ClothingOuterArmorCN1Blueprint:
+      amount: 1
+      catalyzer: true
+    STCraftSheetIronT2:
+      amount: 1
+    STCraftTapeKitT2:
+      amount: 1
+    STCraftGlassT2:
+      amount: 1
+# Spark
+- type: craftRecipe
+  id: newrecipeClothingOuterArmorSpark
+  resultProtos:
+    - ClothingOuterArmorSpark
+  craftTime: 5
+  items:
+    ClothingOuterArmorSparkBlueprint:
+      amount: 1
+      catalyzer: true
+    STCraftPlasticFittingT2:
+      amount: 1
+    STCraftGlassT2:
+      amount: 1
+

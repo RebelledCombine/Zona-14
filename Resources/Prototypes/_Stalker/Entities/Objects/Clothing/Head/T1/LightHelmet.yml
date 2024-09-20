@@ -1,0 +1,70 @@
+- type: entity
+  abstract: true
+  parent: STClothingHeadBase
+  id: STClothingHeadHelmetTacticalT1Base
+  name: база тактического шлема T1
+  suffix: ST, T1, Tactical
+  components:
+  - type: STWeight
+    self: 2
+  - type: Armor
+    armorClass: 1
+    modifiers:
+      flatReductions:
+        Slash: 6
+        Blunt: 6
+        Piercing: 3
+      coefficients:
+        Piercing: 0.90
+  - type: ExplosionResistance
+    damageCoefficient: 0.95
+  - type: Craftable
+  - type: Reflect
+    reflectProb: 0.03
+    reflects:
+      - NonEnergy
+
+
+- type: entity
+  parent: STClothingHeadHelmetTacticalT1Base
+  id: ClothingHeadHelmetLight
+  name: легкий шлем
+  description: обычный лёгкий шлем
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/helm_light.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/helm_light.rsi
+
+- type: entity
+  parent: STClothingHeadHelmetTacticalT1Base
+  id: ClothingHeadHelmetDolg
+  name: легкий шлем долга
+  description: обычный пехотный шлем перекрашенный в цвета долга.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/helm_dolg.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/helm_dolg.rsi
+
+- type: entity
+  parent: STClothingHeadHelmetTacticalT1Base
+  id: ClothingHeadMercLight
+  name: легкий шлем наёмника
+  description: Это легкий шлем, разработанный для защиты от колющих атак.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/merc_head_light.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/merc_head_light.rsi
+
+- type: entity
+  parent: STClothingHeadHelmetTacticalT1Base
+  id: ClothingHeadHelmetLightDeserters
+  name: легкий шлем отступников
+  description: обычный лёгкий шлем отступников
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/helm_light_deserter.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/helm_light_deserter.rsi

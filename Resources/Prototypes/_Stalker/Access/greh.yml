@@ -1,0 +1,8 @@
+- type: accessLevel
+  id: Greh
+  name: База Греха
+
+- type: accessGroup
+  id: Greh
+  tags:
+    - Greh

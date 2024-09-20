@@ -1,0 +1,69 @@
+- type: lightCraftingRecipe
+  id: STCraftSkinClothingOuterArmorSevaCN
+  results:
+    - ClothingOuterArmorSevaCN
+  steps:
+    firstIngredient: STSkinsKitClearSky
+    secondIngredient: ClothingOuterArmorSevaStalker
+    keepFirst: true
+    time: 5
+
+- type: lightCraftingRecipe
+  id: STCraftSkinClothingOuterArmorSevaCovenant
+  results:
+    - ClothingOuterArmorSevaCovenant
+  steps:
+    firstIngredient: STSkinsKitCovenant
+    secondIngredient: ClothingOuterArmorSevaStalker
+    keepFirst: true
+    time: 5
+
+- type: lightCraftingRecipe
+  id: STCraftSkinClothingOuterArmorSevaMerc
+  results:
+    - ClothingOuterArmorSevaMerc
+  steps:
+    firstIngredient: STSkinsKitMercenary
+    secondIngredient: ClothingOuterArmorSevaStalker
+    keepFirst: true
+    time: 5
+
+- type: lightCraftingRecipe
+  id: STCraftSkinClothingOuterArmorSevaPoisk
+  results:
+    - ClothingOuterArmorSevaPoisk
+  steps:
+    firstIngredient: STSkinsKitPoisk
+    secondIngredient: ClothingOuterArmorSevaStalker
+    keepFirst: true
+    time: 5
+
+- type: lightCraftingRecipe
+  id: STCraftSkinClothingOuterArmorSevaProjectGROM9
+  results:
+    - ClothingOuterArmorSevaProjectGROM9
+  steps:
+    firstIngredient: STSkinsKitProject
+    secondIngredient: ClothingOuterArmorSevaStalker
+    keepFirst: true
+    time: 5
+
+- type: lightCraftingRecipe
+  id: STCraftSkinClothingOuterArmorSevasera
+  results:
+    - ClothingOuterArmorSevasera
+  steps:
+    firstIngredient: STSkinsKitSeraphim
+    secondIngredient: ClothingOuterArmorSevaStalker
+    keepFirst: true
+    time: 5
+
+- type: lightCraftingRecipe
+  id: STCraftSkinClothingOuterArmorSevaNeutral
+  results:
+    - STClothingOuterArmorSevaNeutral
+  steps:
+    firstIngredient: STSkinsKitNeutral
+    secondIngredient: ClothingOuterArmorSevaStalker
+    keepFirst: true
+    time: 5

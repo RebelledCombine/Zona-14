@@ -1,0 +1,197 @@
+# Base
+- type: entity
+  abstract: true
+  parent: STClothingCapeBase
+  id: STClothingCapeT1Base
+  name: база плаща T1
+  suffix: ST, T1
+  components:
+  - type: STWeight
+    self: 2
+  - type: Craftable
+  - type: Armor
+    armorClass: 1
+    modifiers:
+      coefficients:
+        Blunt: 0.95
+        Slash: 0.95
+        Piercing: 0.95
+        Heat: 0.95
+
+# Дождевик
+- type: entity
+  parent: STClothingCapeT1Base
+  id: ClothingOuterCoatDoshdevik
+  name: дождевик
+  suffix: ST, T1
+  description: плотный плащ с защищающий вас от дождя и некоторых химикатов.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/cloak/doshdevik.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/cloak/doshdevik.rsi
+  - type: Armor
+    armorClass: 1
+    modifiers:
+      flatReductions:
+        Caustic: 1.5
+  - type: ToggleableClothing
+    slot: head
+    requiredSlot: CLOAK
+    clothingPrototype: ClothingHeadHelmetDoshdevikCoat
+
+- type: entity
+  parent: STClothingHeadHatBase
+  id: ClothingHeadHelmetDoshdevikCoat
+  name: капюшон дождевика
+  description: Покрывает вашу голову
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/cloak/doshdevik.rsi
+    state: icon-HELM
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/cloak/doshdevik.rsi
+    state: equipped-HELMET
+
+# KKK
+- type: entity
+  parent: STClothingCapeT1Base
+  id: ClothingOuterCoatKKK
+  name: куклус плащ
+  suffix: ST, T1
+  description: ккк.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/cloak/kkk.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/cloak/kkk.rsi
+  - type: ToggleableClothing
+    slot: head
+    requiredSlot: CLOAK
+    clothingPrototype: ClothingHeadHelmetKKKCoat
+  - type: Armor
+    armorClass: 1
+    modifiers:
+      flatReductions:
+        Heat: 0.5
+
+- type: entity
+  parent: STClothingHeadHatBase
+  id: ClothingHeadHelmetKKKCoat
+  name: капюшон куклус плаща
+  noSpawn: true
+  description: Покрывает вашу голову ККК.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/kkk_hood.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/kkk_hood.rsi
+
+# Пахана
+- type: entity
+  parent: STClothingCapeT1Base
+  id: ClothingOuterCoatPahan
+  name: плащ пахана
+  description: плотный плащ перекрашенный в чёрный цвет.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/cloak/coat_pahan.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/cloak/coat_pahan.rsi
+  - type: ToggleableClothing
+    slot: head
+    requiredSlot: CLOAK
+    clothingPrototype: ClothingHeadHelmetPahanCoat
+  - type: Armor
+    armorLevels:
+      piercing: 1
+
+- type: entity
+  parent: STClothingHeadHatBase
+  id: ClothingHeadHelmetPahanCoat
+  name: капюшон плаща пахана
+  noSpawn: true
+  description: Покрывает вашу голову
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/coat_hat_pahan.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/coat_hat_pahan.rsi
+
+# Poisk
+- type: entity
+  parent: STClothingCapeT1Base
+  id: ClothingOuterCoatPoisk
+  name: плащ исследователя
+  description: Этот плащ не просто украшение, он символизирует стремление к приключениям и жажду открытий.
+  components:
+  - type: UserInterface
+    interfaces:
+    - key: enum.StorageUiKey.Key
+      type: StorageBoundUserInterface
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/cloak/poisk_plash.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/cloak/poisk_plash.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHatHoodCoatStalker
+    slot: head
+  - type: Armor
+    armorLevels:
+      environment: 1
+
+- type: entity
+  parent: STClothingHeadHatBase
+  id: ClothingHeadHatHoodCoatPoisk
+  noSpawn: true
+  name: капюшон
+  components:
+  - type: Sprite
+    sprite: _Stalker/Clothing/Head/Hats/coat_hat_poisk.rsi
+  - type: Clothing
+    sprite: _Stalker/Clothing/Head/Hats/coat_hat_poisk.rsi
+
+# Паломники
+- type: entity
+  parent: STClothingCapeT1Base
+  id: ClothingNeckCloakCassock
+  name: ряса паломника
+  description: сделана из грубой ткани серой ткани, помогает отречься от мирского
+  suffix: ST, паломники
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/cloak/cassock.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/cloak/cassock.rsi
+    - type: ToggleableClothing
+      slot: head
+      requiredSlot: CLOAK
+      clothingPrototype: ClothingHeadCassock
+
+# СКИНЫ
+- type: entity
+  parent: STClothingCapeBase
+  id: ClothingTorsoTurtlenecksCamouflage
+  name: рваный плащ выживших
+  description: Странный плащ, рваный в хлам. Кустарно перекрашен в какой-то камуфляж.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/cloak/camouflage.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/cloak/camouflage.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetSeraRuined
+    requiredSlot:
+    - neck
+    slot: head
+
+- type: entity
+  parent: STClothingCapeBase
+  id: ClothingCapeDeserters
+  name: плащ дезертиров
+  description: Кусок ткани в пиксельном тёмно-сером камуфляже, при желании можно носить как плащ
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/cloak/desertercape.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/cloak/desertercape.rsi

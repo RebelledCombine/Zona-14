@@ -1,0 +1,13 @@
+- type: entity
+  parent: BookBase
+  id: BookCookingStalker
+  name: готовка
+  description: Книга, предназначенная в качестве основного пособия для поваров по кулинарии и кулинарному искусству.
+  suffix: Stalker, гайды
+  components:
+    - type: Sprite
+      sprite: Objects/Misc/authorbooks.rsi
+      layers:
+        - state: book_earth
+    - type: Paper
+      content: book-text-cooking-stalker

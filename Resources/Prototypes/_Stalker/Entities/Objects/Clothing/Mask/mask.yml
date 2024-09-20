@@ -1,0 +1,223 @@
+- type: entity
+  parent: ClothingMaskPullableBase
+  id: ClothingMaskNeckFacemask
+  name: маска
+  description: Защитная маска для лица, подключаемая к источнику подачи воздуха.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/mask/facemask1.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/mask/facemask1.rsi
+  - type: IngestionBlocker
+  - type: IdentityBlocker
+  - type: Tag
+    tags:
+    - WhitelistChameleon
+
+- type: entity
+  parent: ClothingMaskBase
+  id: ClothingMaskNeckBalaklava1
+  name: балаклава
+  description: Представляет собой маску с отверстиями для глаз и носа.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/mask/balaklava1.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/mask/balaklava1.rsi
+  - type: IdentityBlocker
+  - type: Tag
+    tags:
+    - HidesHair
+    - HidesBeard
+
+- type: entity
+  parent: ClothingMaskBase
+  id: ClothingMaskNeckBalaklava2
+  name: балаклава
+  description: Представляет собой маску с отверстиями для глаз и носа.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/mask/balaklava2.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/mask/balaklava2.rsi
+  - type: IdentityBlocker
+  - type: Tag
+    tags:
+    - HidesHair
+    - HidesBeard
+
+- type: entity
+  parent: ClothingMaskBase
+  id: ClothingMaskNeckBalaklava3
+  name: балаклава
+  description: Представляет собой маску с отверстиями для глаз и носа.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/mask/balaklava3.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/mask/balaklava3.rsi
+  - type: IngestionBlocker
+  - type: IdentityBlocker
+  - type: Tag
+    tags:
+    - HidesHair
+    - HidesBeard
+
+- type: entity
+  parent: ClothingMaskBase
+  id: ClothingMaskNeckBalaklava4
+  name: балаклава
+  description: Представляет собой маску с отверстиями для глаз и носа.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/mask/balaklava4.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/mask/balaklava4.rsi
+  - type: IngestionBlocker
+  - type: IdentityBlocker
+  - type: Tag
+    tags:
+    - HidesHair
+    - HidesBeard
+
+- type: entity
+  parent: ClothingMaskBase
+  id: ClothingMaskNeckBlackFace
+  name: маска
+  description: Представляет собой маску с отверстиями для глаз и носа.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/mask/blackface.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/mask/blackface.rsi
+  - type: IngestionBlocker
+  - type: IdentityBlocker
+  - type: Tag
+    tags:
+    - HidesHair
+    - HidesBeard
+
+- type: entity
+  parent: ClothingMaskBase
+  id: ClothingMaskNeckBloodSucker
+  name: маска кровососа
+  description: Маска с лицом кровососа, неизвестного происхождения.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/mask/bloodsucker.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/mask/bloodsucker.rsi
+  - type: IngestionBlocker
+  - type: IdentityBlocker
+  - type: Tag
+    tags:
+    - HidesHair
+    - HidesBeard
+
+- type: entity
+  parent: ClothingMaskBase
+  id: ClothingGagMuteStalker
+  name: кляп
+  description: Предназначен для того чтобы заткнуть рот человеку.
+  components:
+  - type: Item
+    size: Tiny
+  - type: Sprite
+    sprite: Clothing/Mask/muzzle.rsi
+  - type: Clothing
+    sprite: Clothing/Mask/muzzle.rsi
+  - type: IngestionBlocker
+  - type: AddAccentClothing
+    accent: ReplacementAccent
+    replacement: mumble
+
+- type: entity
+  parent: ClothingMaskBase
+  id: ClothingMaskGreh
+  name: маска греховца
+  description: Под ней греховцы прячут свое уродливое лицо.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/mask/mask_greh.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/mask/mask_greh.rsi
+  - type: BreathMask
+  - type: IdentityBlocker
+  - type: Tag
+    tags:
+    - GrehCanTakeOnly
+  - type: Unremoveable
+
+- type: entity
+  parent: ClothingMaskBase
+  id: ClothingMaskNeckFacemaskJoker
+  name: маска джокера
+  description: Она скрывает за собой хладнокровного убийцу, либо обычного психа.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/mask/joker_mask.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/mask/joker_mask.rsi
+  - type: IngestionBlocker
+  - type: IdentityBlocker
+  - type: Tag
+    tags:
+    - HidesHair
+    - HidesBeard
+
+- type: entity
+  parent: ClothingMaskBase
+  id: ClothingMaskSkull
+  name: маска черепа
+  description: Выглядит устрашающее, как будто за ним скрывается депрессивная личность.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/mask/mask_skull.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/mask/mask_skull.rsi
+  - type: BreathMask
+  - type: IngestionBlocker
+  - type: IdentityBlocker
+  - type: Tag
+    tags:
+    - HidesHair
+    - HidesBeard
+
+- type: entity
+  parent: ClothingMaskBase
+  id: ClothingMaskRenegate
+  name: укреплённая сварочная маска
+  description: Сварочная маска, с добавленными к ней листами стали для защиты от пуль и ударов. Дело рук шизофреника.
+  components:
+  - type: STWeight
+    self: 3
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/mask/tegilla_rene.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/mask/tegilla_rene.rsi
+  - type: Tag
+    tags:
+      - HidesNose
+  - type: Armor
+    armorClass: 3
+    modifiers:
+      flatReductions:
+        Piercing: 3
+      coefficients:
+        Piercing: 0.95
+
+- type: entity
+  parent: ClothingMaskPullableBase
+  id: ClothingMaskNeckFacemaskDS
+  name: маска
+  description: Защитная маска для лица чёрного цвета
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/mask/facemaskDS.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/mask/facemaskDS.rsi
+  - type: IngestionBlocker
+  - type: IdentityBlocker
+  - type: Tag
+    tags:
+    - WhitelistChameleon

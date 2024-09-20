@@ -1,0 +1,221 @@
+# Base
+- type: entity
+  parent: STClothingOuterBaseLarge
+  id: STClothingOuterArmorSSP99Base
+  name: ССП-99 # base
+  abstract: true
+  suffix: ST, T4, Env
+  components:
+  - type: STWeight
+    self: 7
+  - type: Craftable
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/ssp99.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/ssp99.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetSSP99
+  - type: Armor
+    armorClass: 2
+    modifiers:
+      flatReductions:
+        Blunt: 5
+        Slash: 5
+        Piercing: 5
+        Heat: 3
+        Caustic: 1
+        Radiation: 3
+        Shock: 1
+        Psy: 1
+      coefficients:
+        Blunt: 0.90
+        Slash: 0.90
+        Piercing: 0.90
+        Heat: 0.60
+        Caustic: 0.70
+        Shock: 0.60
+        Psy: 0.80
+        Radiation: 0.80
+        Compression: 0.80
+  - type: ExplosionResistance
+    damageCoefficient: 0.90
+  - type: ClothingSpeedModifier
+    walkModifier: 0.95
+    sprintModifier: 0.95
+
+
+- type: entity
+  parent: ClothingHeadHardsuitBase
+  id: STClothingHeadHelmetSSP99Base
+  name: шлем зелёного «Эколога»
+  description: Защитит от аномалий и радиации, но точно не от пуль.
+  noSpawn: true
+  abstract: true
+  components:
+  - type: Armor
+    armorClass: 1
+    modifiers:
+      flatReductions:
+        Radiation: 1
+        Caustic: 1
+      coefficients:
+        Heat: 0.6
+        Radiation: 0.5
+        Caustic: 0.6
+        Shock: 0.6
+        Psy: 0.85
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/ssp99_helm.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/ssp99_helm.rsi
+  - type: IdentityBlocker
+  - type: IngestionBlocker
+  - type: PressureProtection
+    highPressureMultiplier: 0.1
+    lowPressureMultiplier: 1000
+
+# Stalker
+- type: entity
+  parent: STClothingOuterArmorSSP99Base
+  id: ClothingOuterArmorSSP99
+  name: Зеленый ССП-99 «Эколог»
+  description: Научный костюм серого цвета. Не дорогой, и не сложный в изготовлении костюм защиты. Похожими пользуются в специальных лабораториях или пожарные.
+  components:
+  - type: Armor
+    armorLevels:
+      radiation: 3
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/ssp99.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/ssp99.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetSSP99
+
+- type: entity
+  parent: STClothingHeadHelmetSSP99Base
+  id: ClothingHeadHelmetSSP99
+  name: шлем зелёного «Эколога»
+  description: Защитит от аномалий и радиации, но точно не от пуль.
+  noSpawn: true
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/ssp99_helm.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/ssp99_helm.rsi
+
+# Zavet
+
+- type: entity
+  parent: STClothingOuterArmorSSP99Base
+  id: ClothingOuterArmorSSP99Zavet
+  name: ССП «Завет»
+  description: Броня ССП, используемый группировкой «Завет».
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/outerClothing/zavet_ssp/zavet_ssp.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/outerClothing/zavet_ssp/zavet_ssp.rsi
+    - type: ToggleableClothing
+      clothingPrototype: ClothingHeadHelmetSSPZavet
+
+- type: entity
+  parent: STClothingHeadHelmetSSP99Base
+  id: ClothingHeadHelmetSSPZavet
+  name: шлем «Завет»
+  description: Шлем для брони ССП, используемый группировкой «Завет».
+  noSpawn: true
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/outerClothing/zavet_ssp/helmet.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/outerClothing/zavet_ssp/helmet.rsi
+
+# Amber
+
+- type: entity
+  parent: STClothingOuterArmorSSP99Base
+  id: ClothingOuterArmorSSP99Amber
+  name: Оранжевый ССП-99 «Янтарь»
+  description: Костюм представляет собой базовую вариацию костюма эколога SSP-99.
+  components:
+  - type: Armor
+    armorLevels:
+      heat: 3
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/ssp99red.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/ssp99red.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetSSP99Amber
+
+- type: entity
+  parent: STClothingHeadHelmetSSP99Base
+  id: ClothingHeadHelmetSSP99Amber
+  name: шлем оранжевого «Янтаря»
+  description: Защитит от аномалий и радиации, но точно не от пуль.
+  noSpawn: true
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/hats/ssp99_red.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/hats/ssp99_red.rsi
+
+# Diamond
+
+- type: entity
+  parent: STClothingOuterArmorSSP99Base
+  id: ClothingOuterArmorSSP99White
+  name: Белый ССП-99 «Алмаз»
+  description: Один из тех костюмов НИИ «ЧаЗ», которые можно назвать удачными.
+  components:
+  - type: Armor
+    armorLevels:
+      shock: 3
+      psy: 3
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/ssp99white.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/ssp99white.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetSSP99White
+
+- type: entity
+  parent: STClothingHeadHelmetSSP99Base
+  id: ClothingHeadHelmetSSP99White
+  name: шлем белого ССП-99 «Алмаз»
+  description: Защитит от аномалий и радиации, но точно не от пуль.
+  noSpawn: true
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/hats/ssp99_white.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/hats/ssp99_white.rsi
+
+# Project
+
+- type: entity
+  parent: STClothingOuterArmorSSP99Base
+  id: STClothingOuterArmorSSP99Project
+  name: костюм «ССП NJ-1»"
+  description: "Специальный электрозащитный костюм, разработанный «Проектом» версии NJ-1, в особом понимании изолирует слабые электрические воздействия как на костюм, так и на его носителя."
+  components:
+  - type: Sprite
+    sprite: _Stalker/Groups/Project/ssp_nj1.rsi
+  - type: Clothing
+    sprite: _Stalker/Groups/Project/ssp_nj1.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHardsuitSevaHelmNJ1
+    slot: head
+
+- type: entity
+  parent: STClothingHeadHelmetSSP99Base
+  id: ClothingHeadHardsuitSevaHelmNJ1
+  name: "шлем ССП «NJ-1»"
+  description: Несмотря, на преимущественно стеклянную состовляющую, довольно прочный.
+  suffix: Stalker
+  noSpawn: true
+  components:
+  - type: Sprite
+    sprite: _Stalker/Groups/Project/ssp_helm_nj1.rsi
+  - type: Clothing
+    sprite: _Stalker/Groups/Project/ssp_helm_nj1.rsi

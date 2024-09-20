@@ -1,0 +1,20 @@
+- type: shopPreset
+  id: PilgrimShopPreset
+  itemsForSale:
+    FoodTinMRETrash: 5
+  categories:
+    - name: Оружие
+      priority: 1
+      items:
+        CombatKnife: 10
+    - name: Броня и снаряжение
+      priority: 2
+      items:
+        STSkinsKitPilgrim: 500
+        ClothingNeckCloakCassock: 100
+        ClothingHeadPilgrimDoctor: 50
+        ClothingNeckDogtagPilgrim: 20
+    - name: Другое
+      priority: 3
+      items:
+        STPilgrimBible: 50

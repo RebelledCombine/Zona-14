@@ -1,0 +1,71 @@
+- type: entity
+  id: RandomLootBox1
+  name: рандомный спавн лута
+  nospawn: true
+  suffix: Stalker, НЕ МАППИТЬ
+  parent: FlexibleMarker
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: Objects/Specific/Xenoarchaeology/xeno_artifacts.rsi
+        state: ano01
+  - type: RandomSpawner
+    rarePrototypes:
+      - MedkitAI2
+      - STEnergyDrink
+      - antiradpill
+      - MedkitMilitary
+      - psyblock
+      - Defibrillator
+      - HandheldGPSBasic
+      - GeigerCounter
+      - CasseteTwoDonateRadio
+      - CasseteThreeDonateRadio
+      -  CasseteFourDonateRadio
+      -  CasseteFiveDonateRadio
+      -  CasseteSixDonateRadio
+      -  CasseteSevenDonateRadio
+      -  CasseteEightDonateRadio
+      -  CasseteNineDonateRadio
+      -  CasseteTenDonateRadio
+      -  CasseteElevenDonateRadio
+      -  CasseteTwelveDonateRadio
+      -  CasseteThirteenDonateRadio
+      -  CasseteFourteenDonateRadio
+      -  CasseteFiveteenDonateRadio
+      -  CasseteSixteenDonateRadio
+      -  CasseteSeventeenDonateRadio
+      -  CasseteEighteenDonateRadio
+      -  CasseteNineteenDonateRadio
+      -  CasseteTwentyOneDonateRadio
+      -  CasseteTwentyTwoDonateRadio
+      -  CasseteTwentyThreeDonateRadio
+      -  CasseteTwentyFourDonateRadio
+      -  CasseteTwentyFiveDonateRadio
+      -  CasseteTwentyDonateRadio
+      -  CasseteTwentySixDonateRadio
+      -  CasseteTwentySevenDonateRadio
+      -  CasseteTwentyEightDonateRadio
+      -  CasseteTwentyNineDonateRadio
+      -  CasseteThirtyOneDonateRadio
+    rareChance: 0.30
+    prototypes:
+      - DrinkVodkaBottleFull
+      - FoodTinMRE
+      - FoodSnackEnergy
+      - DrinkWaterBottleFull
+      - FoodMeatRatdoubleKebab
+      - FoodCondimentPacketKetchup
+      - FoodTinPeaches
+      - FoodTinBeans
+      - FoodMeatRatKebab
+      - FoodTofuSlice
+      - FoodPelmeniBowl
+      - FoodSnackChocolate
+      - FoodCondimentPacketSoy
+      - FoodCondimentPacketSalt
+      - FoodBreadPlain
+      - FoodSnackChips
+    chance: 0.40
+    offset: 0.0 

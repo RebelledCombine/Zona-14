@@ -1,0 +1,188 @@
+# Пораждаемая Электрой, Герляндой
+- type: entity
+  parent: BaseArtifact
+  id: ZoneArtifactSparkler
+  suffix: Stalker, Бенгальский огонь
+  components:
+  - type: Sprite
+    state: sparkler
+  - type: ZoneArtifact
+    anomaly: ZoneAnomalyElectra
+  - type: ZoneArtifactDetectorTarget
+    detectedLevel: 1
+  - type: PointLight
+    radius: 1.5
+    energy: 4.5
+    color: "#09efff"
+    castShadows: false
+  - type: PersonalDamage
+    staminaDamage: -1.5
+    damage:
+      types:
+        Radiation: 0.25
+    interval: 1
+  - type: Armor
+    hiddenExamine: true
+    armorClass: 2
+    modifiers:
+      coefficients:
+        Shock: 0.75
+
+- type: entity
+  parent: BaseArtifact
+  id: ZoneArtifactBattery
+  suffix: Stalker, Батарейка
+  components:
+  - type: Sprite
+    state: battery
+  - type: ZoneArtifact
+    anomaly: ZoneAnomalyGarland
+  - type: ZoneArtifactDetectorTarget
+    detectedLevel: 2
+  - type: PointLight
+    radius: 1.5
+    energy: 5.5
+    color: "#09efff"
+    castShadows: false
+  - type: PersonalDamage
+    staminaDamage: -3
+    damage:
+      types:
+        Radiation: 0.5
+    interval: 1
+  - type: Armor
+    hiddenExamine: true
+    armorClass: 2
+    modifiers:
+      coefficients:
+        Shock: 0.6
+
+- type: entity
+  parent: BaseArtifact
+  id: ZoneArtifactFlash
+  suffix: Stalker, Вспышка
+  components:
+  - type: Sprite
+    state: flash
+  - type: ZoneArtifact
+    anomaly: ZoneAnomalySource
+  - type: ZoneArtifactDetectorTarget
+    detectedLevel: 3
+  - type: PointLight
+    radius: 1.5
+    energy: 7.5
+    color: "#09efff"
+    castShadows: false
+  - type: PersonalDamage
+    staminaDamage: -6
+    damage:
+      types:
+        Radiation: 1
+    interval: 1
+  - type: Armor
+    hiddenExamine: true
+    armorClass: 2
+    modifiers:
+      coefficients:
+        Shock: 0.4
+        Psy: 0.4
+
+# Пораждаемая Источником
+- type: entity
+  parent: BaseArtifact
+  id: ArtMoon
+  suffix: Stalker, Лунный свет
+  components:
+  - type: Sprite
+    state: moon
+  - type: PointLight
+    radius: 1.5
+    energy: 7.5
+    color: "#1e90ff"
+    castShadows: false
+  - type: ZoneArtifact
+    anomaly: ZoneAnomalySource
+  - type: ZoneArtifactDetectorTarget
+    detectedLevel: 3
+  - type: PersonalDamage
+    damage:
+      types:
+        Radiation: -2
+        Cold: -0.25
+    interval: 1
+  - type: Armor
+    hiddenExamine: true
+    armorClass: 2
+    modifiers:
+      coefficients:
+        Psy: 0.9
+        Compression: 0.8
+  - type: ClothingSpeedModifier
+    walkModifier: 1.01
+    sprintModifier: 1.01
+
+- type: entity
+  parent: BaseArtifact
+  id: ZoneArtifactTesla
+  suffix: Stalker, Тесла
+  components:
+  - type: Sprite
+    state: tesla
+  - type: PointLight
+    radius: 1.5
+    energy: 7.5
+    color: "#1e90ff"
+    castShadows: false
+  - type: ZoneArtifact
+    anomaly: ZoneAnomalySource
+  - type: ZoneArtifactDetectorTarget
+    detectedLevel: 5
+  - type: PersonalDamage
+    damage:
+      types:
+        Radiation: -4
+        Cold: -0.5
+    interval: 1
+  - type: Armor
+    hiddenExamine: true
+    armorClass: 2
+    modifiers:
+      coefficients:
+        Psy: 0.7
+        Compression: 0.7
+  - type: ClothingSpeedModifier
+    walkModifier: 1.01
+    sprintModifier: 1.01
+
+- type: entity
+  parent: BaseArtifact
+  id: ZoneArtifactIce
+  suffix: Stalker, Снежинка
+  components:
+  - type: Sprite
+    state: ice
+  - type: PointLight
+    radius: 2.5
+    energy: 9.5
+    color: "#1e90ff"
+    castShadows: false
+  - type: ZoneArtifact
+    anomaly: ZoneAnomalySource
+  - type: ZoneArtifactDetectorTarget
+    detectedLevel: 5
+  - type: PersonalDamage
+    damage:
+      types:
+        Radiation: -6
+        Cold: -1
+    interval: 1
+  - type: Armor
+    hiddenExamine: true
+    armorClass: 2
+    modifiers:
+      coefficients:
+        Psy: 0.6
+        Compression: 0.5
+  - type: ClothingSpeedModifier
+    walkModifier: 1.01
+    sprintModifier: 1.01

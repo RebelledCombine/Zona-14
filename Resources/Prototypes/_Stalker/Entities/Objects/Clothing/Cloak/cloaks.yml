@@ -1,0 +1,57 @@
+- type: entity
+  parent: STClothingCapeBase
+  id: ClothingNeckCloakZavet
+  suffix: Stalker, Завет
+  name: плащ Завета
+  description: стандартный плащ, используемый группировкой «Завет».
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/cloak/zavet_plash.rsi
+  - type: StealTarget
+    stealGroup: HeadCloak
+
+- type: entity
+  parent: STClothingCapeBase
+  id: ClothingNeckCloakDolg
+  suffix: Stalker, Долг
+  name: плащ Долга
+  description: стандартный плащ, используемый группировкой «Долг».
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/cloak/cape_dolg.rsi
+
+- type: entity
+  parent: STClothingCapeBase
+  id: ClothingCloakStalker
+  name: плащ сталкера
+  description: Оторванные куски ткани из мусора, придают вам опыт и загадочность.
+  suffix: Stalker, Плащ
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/cloak/stalker.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/cloak/stalker.rsi
+
+- type: entity
+  parent: STClothingCapeBase
+  id: ClothingNeckAnomalistLurker
+  name: плащ «Скрытень» аномалистов 
+  description: Тебя не пристрелят, если не найдут.
+  suffix: Stalker, Плащ, Аномалисты
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/cloak/lurker_anomalist.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/cloak/lurker_anomalist.rsi
+
+- type: entity
+  parent: STClothingCapeBase
+  id: ClothingCloakShortCoverBlack
+  name: короткая чёрная накидка
+  description: Куски ткани, придают вам опыт и загадочность.
+  suffix: Stalker, Плащ
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/cloak/short_cover_black.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/cloak/short_cover_black.rsi

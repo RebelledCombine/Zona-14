@@ -23,6 +23,8 @@ public sealed partial class StaminaComponent : Component
     [ViewVariables(VVAccess.ReadWrite), DataField, AutoNetworkedField]
     public float Decay = 3f;
 
+    [DataField, AutoNetworkedField]
+    public float DecayModifier = 1f; // stalker-changes
     /// <summary>
     /// How much time after receiving damage until stamina starts decreasing.
     /// </summary>
@@ -41,6 +43,8 @@ public sealed partial class StaminaComponent : Component
     [ViewVariables(VVAccess.ReadWrite), DataField, AutoNetworkedField]
     public float CritThreshold = 100f;
 
+    [DataField, AutoNetworkedField]
+    public float CritThresholdModifier = 1f; // stalker-changes
     /// <summary>
     /// How long will this mob be stunned for?
     /// </summary>

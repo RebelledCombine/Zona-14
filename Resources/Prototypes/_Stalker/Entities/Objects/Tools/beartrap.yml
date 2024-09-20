@@ -1,0 +1,70 @@
+- type: entity
+  name: капкан
+  parent: BaseItem
+  id: Beartrap
+  suffix: Stalker
+  description: Полезная штука, чтоб ловить наглых животных. Очень полезная.
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Tools/beartrap.rsi
+      drawdepth: SmallMobs # if mice can hide under tables, so can mousetraps
+      layers:
+        - state: mousetrap
+          map: ["base"]
+    - type: StepTrigger
+      intersectRatio: 0.2
+      requiredTriggeredSpeed: 0
+    - type: Mousetrap
+    - type: TriggerOnStepTrigger
+    - type: DamageUserOnTrigger
+      damage:
+        groups:
+          Brute: 75
+    - type: StaminaDamageUserOnTrigger
+    - type: EmitSoundOnUse
+      sound: "/Audio/Items/Handcuffs/cuff_end.ogg"
+    - type: EmitSoundOnTrigger
+      sound: "/Audio/Items/snap.ogg"
+    - type: Item
+      sprite: _Stalker/Objects/Tools/beartrap.rsi
+    - type: Appearance
+    - type: GenericVisualizer
+      visuals:
+        enum.MousetrapVisuals.Visual:
+          base:
+            Armed: { state: mousetraparmed }
+            Unarmed: { state: mousetrap }
+    - type: Physics
+      bodyType: Dynamic
+    - type: CollisionWake
+      enabled: false
+    - type: Fixtures
+      fixtures:
+        slips:
+          shape:
+            !type:PhysShapeAabb
+            bounds: "-0.2,-0.2,0.2,0.2"
+          hard: false
+          layer:
+            - LowImpassable
+        fix1:
+          shape:
+            !type:PhysShapeAabb
+            bounds: "-0.2,-0.2,0.2,0.2"
+          density: 30000
+          mask:
+            - ItemMask
+    - type: Rotatable
+    - type: Anchorable
+
+- type: entity
+  name: капкан
+  suffix: Stalker
+  parent: Beartrap
+  noSpawn: true
+  id: BeartrapArmed
+  description: Полезная штука, чтоб ловить наглых животных. Очень полезная.
+  components:
+    - type: Mousetrap
+      isActive: false
+    - type: ShoesRequiredStepTrigger

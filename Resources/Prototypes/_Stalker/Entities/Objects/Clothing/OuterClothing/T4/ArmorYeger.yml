@@ -1,0 +1,64 @@
+- type: entity
+  parent: STClothingOuterBaseLarge
+  id: ClothingOuterArmorYeger
+  name: Егерь
+  description: Разработанный анималистами костюм для ведение боевых действий в аномальных зонах. Благодоря пропитки в аномалии имеет отличную пулестойкость.
+  suffix: ST, T4, Env
+  components:
+  - type: STWeight
+    self: 7
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/yeger.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/yeger.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetYeger
+    slot: head
+  - type: Armor
+    armorClass: 4
+    modifiers:
+      flatReductions:
+        Blunt: 10
+        Slash: 10
+        Piercing: 10
+        Radiation: 1
+      coefficients:
+        Blunt: 0.7
+        Slash: 0.7
+        Piercing: 0.7
+        Heat: 0.4
+        Radiation: 0.4
+        Caustic: 0.8
+        Shock: 0.25
+        Psy: 0.25
+        Compression: 0.25
+  - type: ExplosionResistance
+    damageCoefficient: 0.90
+
+- type: entity
+  parent: ClothingHeadHardsuitWithLightBase
+  id: ClothingHeadHelmetYeger
+  name: шлем «Егеря»
+  description: Защитит от аномалий и радиации, но точно не от пуль.
+  suffix: ST, T4
+  noSpawn: true
+  components:
+  - type: Armor
+    armorClass: 1
+    modifiers:
+      coefficients:
+        Heat: 0.5
+        Shock: 0.5
+        Radiation: 0.2
+        Psy: 0.2
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/yeger_helm.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/yeger_helm.rsi
+  - type: IdentityBlocker
+  - type: IngestionBlocker
+  - type: PressureProtection
+    highPressureMultiplier: 0.1
+    lowPressureMultiplier: 1000
+  - type: PointLight
+    color: "#f9ffaf"

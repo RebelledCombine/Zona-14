@@ -1,0 +1,164 @@
+- type: entity
+  parent: BaseArtifact
+  name: Плёнка
+  id: ZoneArtifactPellicle
+  suffix: Stalker, Плёнка
+  components:
+  - type: Sprite
+    state: pellicle
+  - type: ZoneArtifact
+    anomaly: ZoneAnomalyKissel
+  - type: ZoneArtifactDetectorTarget
+    detectedLevel: 1
+  - type: PointLight
+    radius: 1.5
+    energy: 2.5
+    color: "#7fff00"
+    castShadows: false
+  - type: PersonalDamage
+    damage:
+      types:
+        Radiation: -0.5
+        Poison: -0.5
+    interval: 1
+  - type: Armor
+    hiddenExamine: true
+    armorClass: 2
+    modifiers:
+      coefficients:
+        Caustic: 0.6
+        Cellular: 1.6
+        Bloodloss: 0.8
+        Poison: 0.75
+
+
+- type: entity
+  parent: BaseArtifact
+  name: Кровь Камня
+  id: ZoneArtifactBlood
+  suffix: Stalker, Кровь камня
+  components:
+  - type: Sprite
+    state: blood
+  - type: ZoneArtifact
+    anomaly: ZoneAnomalyKissel
+  - type: ZoneArtifactDetectorTarget
+    detectedLevel: 2
+  - type: PointLight
+    radius: 1.5
+    energy: 2.5
+    color: "#7fff00"
+    castShadows: false
+  - type: PersonalDamage
+    damage:
+      types:
+        Radiation: -1
+    interval: 1
+  - type: Armor
+    hiddenExamine: true
+    armorClass: 2
+    modifiers:
+      coefficients:
+        Caustic: 1.2
+        Bloodloss: 1.3
+        Shock: 0.65
+
+- type: entity
+  parent: BaseArtifact
+  name: Ломоть мяса
+  id: ZoneArtifactMeat
+  suffix: Stalker, Ломоть мяса
+  components:
+  - type: Sprite
+    state: meat
+  - type: ZoneArtifact
+    anomaly: ZoneAnomalyKissel
+  - type: ZoneArtifactDetectorTarget
+    detectedLevel: 3
+  - type: PointLight
+    radius: 1.5
+    energy: 2.5
+    color: "#7fff00"
+    castShadows: false
+  - type: PersonalDamage
+    damage:
+      types:
+        Radiation: -2
+    interval: 1
+  - type: Armor
+    hiddenExamine: true
+    armorClass: 2
+    modifiers:
+      coefficients:
+        Heat: 0.6
+        Shock: 1.1
+        Bloodloss: 1.45
+
+- type: entity
+  parent: BaseArtifact
+  name: Колобок
+  id: ZoneArtifactKolobok
+  suffix: Stalker, Колобок
+  components:
+  - type: Sprite
+    state: kolobok
+  - type: ZoneArtifact
+    anomaly: ZoneAnomalyKissel
+  - type: ZoneArtifactDetectorTarget
+    detectedLevel: 4
+  - type: PointLight
+    radius: 1.5
+    energy: 2.5
+    color: "#7fff00"
+    castShadows: false
+  - type: PersonalDamage
+    damage:
+      types:
+        Radiation: -3
+    interval: 1
+  - type: Armor
+    hiddenExamine: true
+    armorClass: 2
+    modifiers:
+      coefficients:
+        Caustic: 0.5
+        Heat: 1.2
+        Bloodloss: 1.75
+
+- type: entity
+  parent: BaseArtifact
+  id: ZoneArtifactBaloon
+  suffix: Stalker, Пузырь
+  components:
+  - type: Sprite
+    state: baloon
+  - type: ZoneArtifact
+    anomaly: ZoneAnomalyKissel
+  - type: ZoneArtifactDetectorTarget
+    detectedLevel: 4
+  - type: PointLight
+    radius: 1.5
+    energy: 2.5
+    color: "#7fff00"
+    castShadows: false
+  - type: PersonalDamage
+    damage:
+      types:
+        Bloodloss: -3
+        Radiation: -1
+        Poison: -2
+        Cellular: -0.95
+        Heat: -0.95
+        Shock: -0.95
+        Cold: -0.95
+        Caustic: -0.95
+    interval: 1
+  - type: Armor
+    hiddenExamine: true
+    armorClass: 2
+    modifiers:
+      coefficients:
+        Cellular: 0.5
+        Poison: 0.5
+        Caustic: 0.5
+        Asphyxiation: 1.9

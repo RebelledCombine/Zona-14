@@ -1,0 +1,43 @@
+- type: entity
+  parent: STBaseWeaponMachineGun
+  id: WeaponMachineGunRPD
+  name: РПД
+  description: Ручной Пулемёт Дегтярёва — советский ручной пулемёт, разработанный в 1944 году под 7,62x39 патрон.
+  suffix: ST, Machine gun
+  components:
+    - type: Item
+      sprite: _Stalker/Objects/Weapons/Guns/MachineGuns/rpd.rsi
+    - type: Sprite
+      sprite: _Stalker/Objects/Weapons/Guns/MachineGuns/rpd.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Weapons/Guns/MachineGuns/rpd.rsi
+      timeToEquip: 4
+    - type: Gun
+      fireRate: 12
+      minAngle: 100
+      maxAngle: 170
+      angleIncrease: 1
+      angleDecay: 5
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          startingItem: null
+          insertSound: /Audio/Weapons/Guns/MagIn/hpistol_magin.ogg
+          ejectSound: /Audio/Weapons/Guns/MagOut/hpistol_magout.ogg
+          priority: 2
+          whitelist:
+            tags:
+              - Magazine762x39RPD
+        gun_chamber:
+          name: Chamber
+          startingItem: null
+          priority: 1
+          whitelist:
+            tags:
+              - Cartridge739
+    - type: GunWieldBonus
+      minAngle: -70
+      maxAngle: -60
+    - type: PullDoAfter
+      pullTime: 5

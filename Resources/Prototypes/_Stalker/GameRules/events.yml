@@ -1,0 +1,14 @@
+- type: entity
+  parent: BaseGameRule
+  id: AnomalyExplosion
+  noSpawn: true
+  components:
+    - type: StationEvent
+      earliestStart: 30
+      reoccurrenceDelay: 100
+      duration: 325
+    - type: AnomalyExplosionRule
+      damage:
+        types:
+          Psy: 2
+      damageTime: 128

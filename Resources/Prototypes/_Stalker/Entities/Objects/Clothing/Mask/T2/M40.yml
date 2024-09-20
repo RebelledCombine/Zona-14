@@ -1,0 +1,22 @@
+
+- type: entity
+  parent: ClothingMaskGas
+  id: ClothingMaskGasM40
+  suffix: ST, T2, Rad
+  name: противогаз M40
+  description: Скрывает тайны человека. Американский противогаз, защищает от радиации и немного от токсинов. Данный противогаз не был выпущен масштабно.
+  components:
+  - type: Tag
+    tags:
+      - BlockMask
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/mask/m40.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/mask/m40.rsi
+  - type: IngestionBlocker
+  - type: IdentityBlocker
+  - type: Armor
+    modifiers:
+      coefficients:
+        Radiation: 0.85
+        Caustic: 0.9

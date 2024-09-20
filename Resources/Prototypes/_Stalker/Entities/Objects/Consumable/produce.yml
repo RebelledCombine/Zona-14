@@ -1,0 +1,2275 @@
+# Барбарис
+
+- type: entity
+  name: барбарис
+  parent: FoodProduceBase
+  id: StalkerFoodBarbaris
+  description: гроздь ягод барбариса, можно выжмать.
+  suffix: Stalker, Ягоды
+  components:
+  - type: FlavorProfile
+    flavors:
+      - berry
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 11
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: Vitamin
+          Quantity: 4
+  - type: Sprite
+    sprite: _Stalker/Objects/Counsumable/Food/Plants.rsi
+    state: StalkerFoodBarbaris
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: StalkerOilBarbaris
+        Quantity: 10
+  - type: Tag
+    tags:
+    - Fruit
+
+- type: ore
+  id: StalkerOreBerries1
+  oreEntity: StalkerFoodBarbaris
+
+- type: entity
+  name: кустарник с ягодами
+  parent: BaseStructure
+  id: StalkerBarriesStructureBarbaris
+  suffix: Stalker, Ягоды, Кустарник
+  description: Кустарник.
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Counsumable/Food/Plants.rsi
+      state: plant-01
+      scale: 1.1, 1.1
+    - type: Transform
+      anchored: true
+    - type: Physics
+      bodyType: Static
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeCircle
+            radius: 0.2
+    - type: InteractionOutline
+    - type: OreVein
+      oreChance: 1.0
+      currentOre: StalkerOreBerries1
+    - type: Gatherable
+      whitelist:
+        components:
+          - Hands
+    - type: Damageable
+      damageContainer: Inorganic
+      damageModifierSet: Wood
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 150
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+
+########## Годжи
+
+- type: entity
+  name: годжи
+  parent: FoodProduceBase
+  id: StalkerFoodGoji
+  description: гроздь ягод годжи, можно выжмать.
+  suffix: Stalker, Ягоды
+  components:
+  - type: FlavorProfile
+    flavors:
+      - berry
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 11
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: Vitamin
+          Quantity: 4
+  - type: Sprite
+    sprite: _Stalker/Objects/Counsumable/Food/Plants.rsi
+    state: StalkerFoodGoji
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: StalkerOilGoji
+        Quantity: 10
+  - type: Tag
+    tags:
+    - Fruit
+
+- type: ore
+  id: StalkerOreBerries2
+  oreEntity: StalkerFoodGoji
+
+- type: entity
+  name: кустарник с ягодами
+  parent: BaseStructure
+  id: StalkerBarriesStructureGoji
+  suffix: Stalker, Ягоды, Кустарник
+  description: Кустарник.
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Counsumable/Food/Plants.rsi
+      state: plant-01
+      scale: 1.1, 1.1
+    - type: Transform
+      anchored: true
+    - type: Physics
+      bodyType: Static
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeCircle
+            radius: 0.2
+    - type: InteractionOutline
+    - type: OreVein
+      oreChance: 1.0
+      currentOre: StalkerOreBerries2
+    - type: Gatherable
+      whitelist:
+        components:
+          - Hands
+    - type: Damageable
+      damageContainer: Inorganic
+      damageModifierSet: Wood
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 150
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+
+######## Ирга
+
+- type: entity
+  name: ирга
+  parent: FoodProduceBase
+  id: StalkerFoodIrga
+  description: гроздь ягод иргы, можно выжмать.
+  suffix: Stalker, Ягоды
+  components:
+  - type: FlavorProfile
+    flavors:
+      - berry
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 11
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: Vitamin
+          Quantity: 4
+  - type: Sprite
+    sprite: _Stalker/Objects/Counsumable/Food/Plants.rsi
+    state: StalkerFoodIrga
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: StalkerOilIrga
+        Quantity: 10
+  - type: Tag
+    tags:
+    - Fruit
+
+- type: ore
+  id: StalkerOreBerries3
+  oreEntity: StalkerFoodIrga
+
+- type: entity
+  name: кустарник с ягодами
+  parent: BaseStructure
+  id: StalkerBarriesStructureIrga
+  suffix: Stalker, Ягоды, Кустарник
+  description: Кустарник.
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Counsumable/Food/Plants.rsi
+      state: plant-01
+      scale: 1.1, 1.1
+    - type: Transform
+      anchored: true
+    - type: Physics
+      bodyType: Static
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeCircle
+            radius: 0.2
+    - type: InteractionOutline
+    - type: OreVein
+      oreChance: 1.0
+      currentOre: StalkerOreBerries3
+    - type: Gatherable
+      whitelist:
+        components:
+          - Hands
+    - type: Damageable
+      damageContainer: Inorganic
+      damageModifierSet: Wood
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 150
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+
+######## Клюква
+
+- type: entity
+  name: клюква
+  parent: FoodProduceBase
+  id: StalkerFoodKlukva
+  description: гроздь ягод клюквы, можно выжмать.
+  suffix: Stalker, Ягоды
+  components:
+  - type: FlavorProfile
+    flavors:
+      - berry
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 11
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: Vitamin
+          Quantity: 4
+  - type: Sprite
+    sprite: _Stalker/Objects/Counsumable/Food/Plants.rsi
+    state: StalkerFoodKlukva
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: StalkerOilKlukva
+        Quantity: 10
+  - type: Tag
+    tags:
+    - Fruit
+
+- type: ore
+  id: StalkerOreBerries4
+  oreEntity: StalkerFoodKlukva
+
+- type: entity
+  name: кустарник с ягодами
+  parent: BaseStructure
+  id: StalkerBarriesStructureKlukva
+  suffix: Stalker, Ягоды, Кустарник
+  description: Кустарник.
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Counsumable/Food/Plants.rsi
+      state: plant-01
+      scale: 1.1, 1.1
+    - type: Transform
+      anchored: true
+    - type: Physics
+      bodyType: Static
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeCircle
+            radius: 0.2
+    - type: InteractionOutline
+    - type: OreVein
+      oreChance: 1.0
+      currentOre: StalkerOreBerries4
+    - type: Gatherable
+      whitelist:
+        components:
+          - Hands
+    - type: Damageable
+      damageContainer: Inorganic
+      damageModifierSet: Wood
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 150
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+
+####### Крыжовник
+
+- type: entity
+  name: крыжовник
+  parent: FoodProduceBase
+  id: StalkerFoodKrijovnik
+  description: гроздь ягод крыжовника, можно выжмать.
+  suffix: Stalker, Ягоды
+  components:
+  - type: FlavorProfile
+    flavors:
+      - berry
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 11
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: Vitamin
+          Quantity: 4
+  - type: Sprite
+    sprite: _Stalker/Objects/Counsumable/Food/Plants.rsi
+    state: StalkerFoodKrijovnik
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: StalkerOilKrijovnik
+        Quantity: 10
+  - type: Tag
+    tags:
+    - Fruit
+
+- type: ore
+  id: StalkerOreBerries5
+  oreEntity: StalkerFoodKrijovnik
+
+- type: entity
+  name: кустарник с ягодами
+  parent: BaseStructure
+  id: StalkerBarriesStructureKrijovnik
+  suffix: Stalker, Ягоды, Кустарник
+  description: Кустарник.
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Counsumable/Food/Plants.rsi
+      state: plant-01
+      scale: 1.1, 1.1
+    - type: Transform
+      anchored: true
+    - type: Physics
+      bodyType: Static
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeCircle
+            radius: 0.2
+    - type: InteractionOutline
+    - type: OreVein
+      oreChance: 1.0
+      currentOre: StalkerOreBerries5
+    - type: Gatherable
+      whitelist:
+        components:
+          - Hands
+    - type: Damageable
+      damageContainer: Inorganic
+      damageModifierSet: Wood
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 150
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+
+####### Малина
+
+- type: entity
+  name: малина
+  parent: FoodProduceBase
+  id: StalkerFoodMalina
+  description: гроздь ягод малины, можно выжмать.
+  suffix: Stalker, Ягоды
+  components:
+  - type: FlavorProfile
+    flavors:
+      - berry
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 11
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: Vitamin
+          Quantity: 4
+  - type: Sprite
+    sprite: _Stalker/Objects/Counsumable/Food/Plants.rsi
+    state: StalkerFoodMalina
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: StalkerOilMalina
+        Quantity: 10
+  - type: Tag
+    tags:
+    - Fruit
+
+- type: ore
+  id: StalkerOreBerries6
+  oreEntity: StalkerFoodMalina
+
+- type: entity
+  name: кустарник с ягодами
+  parent: BaseStructure
+  id: StalkerBarriesStructureMalina
+  suffix: Stalker, Ягоды, Кустарник
+  description: Кустарник.
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Counsumable/Food/Plants.rsi
+      state: plant-01
+      scale: 1.1, 1.1
+    - type: Transform
+      anchored: true
+    - type: Physics
+      bodyType: Static
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeCircle
+            radius: 0.2
+    - type: InteractionOutline
+    - type: OreVein
+      oreChance: 1.0
+      currentOre: StalkerOreBerries6
+    - type: Gatherable
+      whitelist:
+        components:
+          - Hands
+    - type: Damageable
+      damageContainer: Inorganic
+      damageModifierSet: Wood
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 150
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+
+###### Морошка
+
+- type: entity
+  name: морошка
+  parent: FoodProduceBase
+  id: StalkerFoodMoroshka
+  description: гроздь ягод морошки, можно выжмать.
+  suffix: Stalker, Ягоды
+  components:
+  - type: FlavorProfile
+    flavors:
+      - berry
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 11
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: Vitamin
+          Quantity: 4
+  - type: Sprite
+    sprite: _Stalker/Objects/Counsumable/Food/Plants.rsi
+    state: StalkerFoodMoroshka
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: StalkerOilMoroshka
+        Quantity: 10
+  - type: Tag
+    tags:
+    - Fruit
+
+- type: ore
+  id: StalkerOreBerries7
+  oreEntity: StalkerFoodMoroshka
+
+- type: entity
+  name: кустарник с ягодами
+  parent: BaseStructure
+  id: StalkerBarriesStructureMoroshka
+  suffix: Stalker, Ягоды, Кустарник
+  description: Кустарник.
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Counsumable/Food/Plants.rsi
+      state: plant-01
+      scale: 1.1, 1.1
+    - type: Transform
+      anchored: true
+    - type: Physics
+      bodyType: Static
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeCircle
+            radius: 0.2
+    - type: InteractionOutline
+    - type: OreVein
+      oreChance: 1.0
+      currentOre: StalkerOreBerries7
+    - type: Gatherable
+      whitelist:
+        components:
+          - Hands
+    - type: Damageable
+      damageContainer: Inorganic
+      damageModifierSet: Wood
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 150
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+
+###### Облепиха
+
+- type: entity
+  name: облепиха
+  parent: FoodProduceBase
+  id: StalkerFoodOblepixa
+  description: гроздь ягод облепихи, можно выжмать.
+  suffix: Stalker, Ягоды
+  components:
+  - type: FlavorProfile
+    flavors:
+      - berry
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 11
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: Vitamin
+          Quantity: 4
+  - type: Sprite
+    sprite: _Stalker/Objects/Counsumable/Food/Plants.rsi
+    state: StalkerFoodOblepixa
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: StalkerOilOblepixa
+        Quantity: 10
+  - type: Tag
+    tags:
+    - Fruit
+
+- type: ore
+  id: StalkerOreBerries8
+  oreEntity: StalkerFoodOblepixa
+
+- type: entity
+  name: кустарник с ягодами
+  parent: BaseStructure
+  id: StalkerBarriesStructureOblepixa
+  suffix: Stalker, Ягоды, Кустарник
+  description: Кустарник.
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Counsumable/Food/Plants.rsi
+      state: plant-01
+      scale: 1.1, 1.1
+    - type: Transform
+      anchored: true
+    - type: Physics
+      bodyType: Static
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeCircle
+            radius: 0.2
+    - type: InteractionOutline
+    - type: OreVein
+      oreChance: 1.0
+      currentOre: StalkerOreBerries8
+    - type: Gatherable
+      whitelist:
+        components:
+          - Hands
+    - type: Damageable
+      damageContainer: Inorganic
+      damageModifierSet: Wood
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 150
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+
+###### Брусника
+
+- type: entity
+  name: брусника
+  parent: FoodProduceBase
+  id: StalkerFoodBrusnika
+  description: гроздь ягод брусники, можно выжмать.
+  suffix: Stalker, Ягоды
+  components:
+  - type: FlavorProfile
+    flavors:
+      - berry
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 11
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: Vitamin
+          Quantity: 4
+  - type: Sprite
+    sprite: _Stalker/Objects/Counsumable/Food/Plants.rsi
+    state: StalkerFoodBrusnika
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: StalkerJuiceBrusnika
+        Quantity: 10
+  - type: Tag
+    tags:
+    - Fruit
+
+- type: ore
+  id: StalkerOreBerries9
+  oreEntity: StalkerFoodBrusnika
+
+- type: entity
+  name: кустарник с ягодами
+  parent: BaseStructure
+  id: StalkerBarriesStructureBrusnika
+  suffix: Stalker, Ягоды, Кустарник
+  description: Кустарник.
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Counsumable/Food/Plants.rsi
+      state: plant-01
+      scale: 1.1, 1.1
+    - type: Transform
+      anchored: true
+    - type: Physics
+      bodyType: Static
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeCircle
+            radius: 0.2
+    - type: InteractionOutline
+    - type: OreVein
+      oreChance: 1.0
+      currentOre: StalkerOreBerries9
+    - type: Gatherable
+      whitelist:
+        components:
+          - Hands
+    - type: Damageable
+      damageContainer: Inorganic
+      damageModifierSet: Wood
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 150
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+
+###### Голубика
+
+- type: entity
+  name: голубика
+  parent: FoodProduceBase
+  id: StalkerFoodGolubika
+  description: гроздь ягод голубики, можно выжмать.
+  suffix: Stalker, Ягоды
+  components:
+  - type: FlavorProfile
+    flavors:
+      - berry
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 11
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: Vitamin
+          Quantity: 4
+  - type: Sprite
+    sprite: _Stalker/Objects/Counsumable/Food/Plants.rsi
+    state: StalkerFoodGolubika
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: StalkerJuiceGolubika
+        Quantity: 10
+  - type: Tag
+    tags:
+    - Fruit
+
+- type: ore
+  id: StalkerOreBerries10
+  oreEntity: StalkerFoodGolubika
+
+- type: entity
+  name: кустарник с ягодами
+  parent: BaseStructure
+  id: StalkerBarriesStructureGolubika
+  suffix: Stalker, Ягоды, Кустарник
+  description: Кустарник.
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Counsumable/Food/Plants.rsi
+      state: plant-01
+      scale: 1.1, 1.1
+    - type: Transform
+      anchored: true
+    - type: Physics
+      bodyType: Static
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeCircle
+            radius: 0.2
+    - type: InteractionOutline
+    - type: OreVein
+      oreChance: 1.0
+      currentOre: StalkerOreBerries10
+    - type: Gatherable
+      whitelist:
+        components:
+          - Hands
+    - type: Damageable
+      damageContainer: Inorganic
+      damageModifierSet: Wood
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 150
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+
+######## Виноград
+
+- type: entity
+  name: виноград
+  parent: FoodProduceBase
+  id: StalkerFoodVinograd
+  description: гроздь ягод винограда, можно выжмать.
+  suffix: Stalker, Ягоды
+  components:
+  - type: FlavorProfile
+    flavors:
+      - berry
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 11
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: Vitamin
+          Quantity: 4
+  - type: Sprite
+    sprite: _Stalker/Objects/Counsumable/Food/Plants.rsi
+    state: StalkerFoodVinograd
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: StalkerJuiceVinograd
+        Quantity: 10
+  - type: Tag
+    tags:
+    - Fruit
+
+- type: ore
+  id: StalkerOreBerries11
+  oreEntity: StalkerFoodVinograd
+
+- type: entity
+  name: кустарник с ягодами
+  parent: BaseStructure
+  id: StalkerBarriesStructureVinograd
+  suffix: Stalker, Ягоды, Кустарник
+  description: Кустарник.
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Counsumable/Food/Plants.rsi
+      state: plant-01
+      scale: 1.1, 1.1
+    - type: Transform
+      anchored: true
+    - type: Physics
+      bodyType: Static
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeCircle
+            radius: 0.2
+    - type: InteractionOutline
+    - type: OreVein
+      oreChance: 1.0
+      currentOre: StalkerOreBerries11
+    - type: Gatherable
+      whitelist:
+        components:
+          - Hands
+    - type: Damageable
+      damageContainer: Inorganic
+      damageModifierSet: Wood
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 150
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+
+####### Вишня
+
+- type: entity
+  name: вишня
+  parent: FoodProduceBase
+  id: StalkerFoodVishna
+  description: гроздь ягод вишни, можно выжмать.
+  suffix: Stalker, Ягоды
+  components:
+  - type: FlavorProfile
+    flavors:
+      - berry
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 11
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: Vitamin
+          Quantity: 4
+  - type: Sprite
+    sprite: _Stalker/Objects/Counsumable/Food/Plants.rsi
+    state: StalkerFoodVishna
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: StalkerJuiceVishna
+        Quantity: 10
+  - type: Tag
+    tags:
+    - Fruit
+
+- type: ore
+  id: StalkerOreBerries12
+  oreEntity: StalkerFoodVishna
+
+- type: entity
+  name: кустарник с ягодами
+  parent: BaseStructure
+  id: StalkerBarriesStructureVishna
+  suffix: Stalker, Ягоды, Кустарник
+  description: Кустарник.
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Counsumable/Food/Plants.rsi
+      state: plant-01
+      scale: 1.1, 1.1
+    - type: Transform
+      anchored: true
+    - type: Physics
+      bodyType: Static
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeCircle
+            radius: 0.2
+    - type: InteractionOutline
+    - type: OreVein
+      oreChance: 1.0
+      currentOre: StalkerOreBerries12
+    - type: Gatherable
+      whitelist:
+        components:
+          - Hands
+    - type: Damageable
+      damageContainer: Inorganic
+      damageModifierSet: Wood
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 150
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+
+######## Ежевика
+
+- type: entity
+  name: ежевика
+  parent: FoodProduceBase
+  id: StalkerFoodEjevika
+  description: гроздь ягод ежевики, можно выжмать.
+  suffix: Stalker, Ягоды
+  components:
+  - type: FlavorProfile
+    flavors:
+      - berry
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 11
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: Vitamin
+          Quantity: 4
+  - type: Sprite
+    sprite: _Stalker/Objects/Counsumable/Food/Plants.rsi
+    state: StalkerFoodEjevika
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: StalkerJuiceEjevika
+        Quantity: 10
+  - type: Tag
+    tags:
+    - Fruit
+
+- type: ore
+  id: StalkerOreBerries13
+  oreEntity: StalkerFoodEjevika
+
+- type: entity
+  name: кустарник с ягодами
+  parent: BaseStructure
+  id: StalkerBarriesStructureEjevika
+  suffix: Stalker, Ягоды, Кустарник
+  description: Кустарник.
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Counsumable/Food/Plants.rsi
+      state: plant-01
+      scale: 1.1, 1.1
+    - type: Transform
+      anchored: true
+    - type: Physics
+      bodyType: Static
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeCircle
+            radius: 0.2
+    - type: InteractionOutline
+    - type: OreVein
+      oreChance: 1.0
+      currentOre: StalkerOreBerries13
+    - type: Gatherable
+      whitelist:
+        components:
+          - Hands
+    - type: Damageable
+      damageContainer: Inorganic
+      damageModifierSet: Wood
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 150
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+
+##### клубника
+
+- type: entity
+  name: клубника
+  parent: FoodProduceBase
+  id: StalkerFoodKlubnika
+  description: гроздь ягод клубники, можно выжмать.
+  suffix: Stalker, Ягоды
+  components:
+  - type: FlavorProfile
+    flavors:
+      - berry
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 11
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: Vitamin
+          Quantity: 4
+  - type: Sprite
+    sprite: _Stalker/Objects/Counsumable/Food/Plants.rsi
+    state: StalkerFoodKlubnika
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: StalkerJuiceKlubnika
+        Quantity: 10
+  - type: Tag
+    tags:
+    - Fruit
+
+- type: ore
+  id: StalkerOreBerries14
+  oreEntity: StalkerFoodKlubnika
+
+- type: entity
+  name: кустарник с ягодами
+  parent: BaseStructure
+  id: StalkerBarriesStructureKlubnika
+  suffix: Stalker, Ягоды, Кустарник
+  description: Кустарник.
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Counsumable/Food/Plants.rsi
+      state: plant-01
+      scale: 1.1, 1.1
+    - type: Transform
+      anchored: true
+    - type: Physics
+      bodyType: Static
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeCircle
+            radius: 0.2
+    - type: InteractionOutline
+    - type: OreVein
+      oreChance: 1.0
+      currentOre: StalkerOreBerries14
+    - type: Gatherable
+      whitelist:
+        components:
+          - Hands
+    - type: Damageable
+      damageContainer: Inorganic
+      damageModifierSet: Wood
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 150
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+
+##### Смородина
+
+- type: entity
+  name: смородина
+  parent: FoodProduceBase
+  id: StalkerFoodSmorodina
+  description: гроздь ягод смородины, можно выжмать.
+  suffix: Stalker, Ягоды
+  components:
+  - type: FlavorProfile
+    flavors:
+      - berry
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 11
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: Vitamin
+          Quantity: 4
+  - type: Sprite
+    sprite: _Stalker/Objects/Counsumable/Food/Plants.rsi
+    state: StalkerFoodSmorodina
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: StalkerJuiceSmorodini
+        Quantity: 10
+  - type: Tag
+    tags:
+    - Fruit
+
+- type: ore
+  id: StalkerOreBerries15
+  oreEntity: StalkerFoodSmorodina
+
+- type: entity
+  name: кустарник с ягодами
+  parent: BaseStructure
+  id: StalkerBarriesStructureSmorodina
+  suffix: Stalker, Ягоды, Кустарник
+  description: Кустарник.
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Counsumable/Food/Plants.rsi
+      state: plant-01
+      scale: 1.1, 1.1
+    - type: Transform
+      anchored: true
+    - type: Physics
+      bodyType: Static
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeCircle
+            radius: 0.2
+    - type: InteractionOutline
+    - type: OreVein
+      oreChance: 1.0
+      currentOre: StalkerOreBerries15
+    - type: Gatherable
+      whitelist:
+        components:
+          - Hands
+    - type: Damageable
+      damageContainer: Inorganic
+      damageModifierSet: Wood
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 150
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+
+##### Черешня
+
+- type: entity
+  name: черешня
+  parent: FoodProduceBase
+  id: StalkerFoodChereshna
+  description: гроздь ягод черешни, можно выжмать.
+  suffix: Stalker, Ягоды
+  components:
+  - type: FlavorProfile
+    flavors:
+      - berry
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 11
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: Vitamin
+          Quantity: 4
+  - type: Sprite
+    sprite: _Stalker/Objects/Counsumable/Food/Plants.rsi
+    state: StalkerFoodChereshna
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: StalkerJuiceChereshna
+        Quantity: 10
+  - type: Tag
+    tags:
+    - Fruit
+
+- type: ore
+  id: StalkerOreBerries16
+  oreEntity: StalkerFoodChereshna
+
+- type: entity
+  name: кустарник с ягодами
+  parent: BaseStructure
+  id: StalkerBarriesStructureChereshna
+  suffix: Stalker, Ягоды, Кустарник
+  description: Кустарник.
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Counsumable/Food/Plants.rsi
+      state: plant-01
+      scale: 1.1, 1.1
+    - type: Transform
+      anchored: true
+    - type: Physics
+      bodyType: Static
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeCircle
+            radius: 0.2
+    - type: InteractionOutline
+    - type: OreVein
+      oreChance: 1.0
+      currentOre: StalkerOreBerries16
+    - type: Gatherable
+      whitelist:
+        components:
+          - Hands
+    - type: Damageable
+      damageContainer: Inorganic
+      damageModifierSet: Wood
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 150
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+
+###### волчеягодник
+
+- type: entity
+  name: волчеягодник
+  parent: FoodProduceBase
+  id: StalkerFoodVolk
+  description: гроздь ягод волчеягодника, можно выжмать.
+  suffix: Stalker, Ягоды
+  components:
+  - type: FlavorProfile
+    flavors:
+      - berry
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 11
+        reagents:
+        - ReagentId: StalkerToxin1
+          Quantity: 10
+  - type: Sprite
+    sprite: _Stalker/Objects/Counsumable/Food/Plants.rsi
+    state: StalkerFoodVolk
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: StalkerToxin1
+        Quantity: 10
+  - type: Tag
+    tags:
+    - Fruit
+
+- type: ore
+  id: StalkerOreBerries17
+  oreEntity: StalkerFoodVolk
+
+- type: entity
+  name: кустарник с ягодами
+  parent: BaseStructure
+  id: StalkerBarriesStructureVolk
+  suffix: Stalker, Ягоды, Кустарник
+  description: Кустарник.
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Counsumable/Food/Plants.rsi
+      state: plant-01
+      scale: 1.1, 1.1
+    - type: Transform
+      anchored: true
+    - type: Physics
+      bodyType: Static
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeCircle
+            radius: 0.2
+    - type: InteractionOutline
+    - type: OreVein
+      oreChance: 1.0
+      currentOre: StalkerOreBerries17
+    - type: Gatherable
+      whitelist:
+        components:
+          - Hands
+    - type: Damageable
+      damageContainer: Inorganic
+      damageModifierSet: Wood
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 150
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+
+####### воронец
+
+- type: entity
+  name: воронец
+  parent: FoodProduceBase
+  id: StalkerFoodVoronec
+  description: Воронец, можно выжмать.
+  suffix: Stalker, Ягоды
+  components:
+  - type: FlavorProfile
+    flavors:
+      - grass
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 11
+        reagents:
+        - ReagentId: StalkerToxin2
+          Quantity: 10
+  - type: Sprite
+    sprite: _Stalker/Objects/Counsumable/Food/Plants.rsi
+    state: StalkerFoodVoronec
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: StalkerToxin2
+        Quantity: 10
+  - type: Tag
+    tags:
+    - Fruit
+
+- type: ore
+  id: StalkerOreBerries18
+  oreEntity: StalkerFoodVoronec
+
+- type: entity
+  name: трава
+  parent: BaseStructure
+  id: StalkerBarriesStructureVoronec
+  suffix: Stalker, Ягоды, Кустарник
+  description: Трава, можно собрать.
+  components:
+    - type: Sprite
+      sprite: _Stalker/Decals/flor.rsi
+      state: branch2
+      scale: 1.1, 1.1
+    - type: Transform
+      anchored: true
+    - type: Physics
+      bodyType: Static
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeCircle
+            radius: 0.2
+    - type: InteractionOutline
+    - type: OreVein
+      oreChance: 1.0
+      currentOre: StalkerOreBerries18
+    - type: Gatherable
+      whitelist:
+        components:
+          - Hands
+    - type: Damageable
+      damageContainer: Inorganic
+      damageModifierSet: Wood
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 150
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+
+###### ландыш
+
+- type: entity
+  name: ландыш
+  parent: FoodProduceBase
+  id: StalkerFoodLandish
+  description: Ландыш, можно выжмать.
+  suffix: Stalker, Ягоды
+  components:
+  - type: FlavorProfile
+    flavors:
+      - grass
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 11
+        reagents:
+        - ReagentId: StalkerToxin3
+          Quantity: 10
+  - type: Sprite
+    sprite: _Stalker/Objects/Counsumable/Food/Plants.rsi
+    state: StalkerFoodLandish
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: StalkerToxin3
+        Quantity: 10
+  - type: Tag
+    tags:
+    - Fruit
+
+- type: ore
+  id: StalkerOreBerries19
+  oreEntity: StalkerFoodLandish
+
+- type: entity
+  name: трава
+  parent: BaseStructure
+  id: StalkerBarriesStructureLandish
+  suffix: Stalker, Ягоды, Кустарник
+  description: Трава, можно собрать.
+  components:
+    - type: Sprite
+      sprite: _Stalker/Decals/flor.rsi
+      state: branch2
+      scale: 1.1, 1.1
+    - type: Transform
+      anchored: true
+    - type: Physics
+      bodyType: Static
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeCircle
+            radius: 0.2
+    - type: InteractionOutline
+    - type: OreVein
+      oreChance: 1.0
+      currentOre: StalkerOreBerries19
+    - type: Gatherable
+      whitelist:
+        components:
+          - Hands
+    - type: Damageable
+      damageContainer: Inorganic
+      damageModifierSet: Wood
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 150
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+
+####### очанка лекарственная
+
+- type: entity
+  name: очанка лекарственная
+  parent: FoodProduceBase
+  id: StalkerFoodOchanka
+  description: очанка лекарственная, можно выжмать.
+  suffix: Stalker, Ягоды
+  components:
+  - type: FlavorProfile
+    flavors:
+      - grass
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 11
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: Vitamin
+          Quantity: 4
+  - type: Sprite
+    sprite: _Stalker/Objects/Counsumable/Food/Plants.rsi
+    state: StalkerFoodOchanka
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: StalkerOilGrass1
+        Quantity: 10
+  - type: Tag
+    tags:
+    - Fruit
+
+- type: ore
+  id: StalkerOreBerries20
+  oreEntity: StalkerFoodOchanka
+
+- type: entity
+  name: трава
+  parent: BaseStructure
+  id: StalkerBarriesStructureOchanka
+  suffix: Stalker, Ягоды, Кустарник
+  description: Трава, можно собрать.
+  components:
+    - type: Sprite
+      sprite: _Stalker/Decals/flor.rsi
+      state: branch2
+      scale: 1.1, 1.1
+    - type: Transform
+      anchored: true
+    - type: Physics
+      bodyType: Static
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeCircle
+            radius: 0.2
+    - type: InteractionOutline
+    - type: OreVein
+      oreChance: 1.0
+      currentOre: StalkerOreBerries20
+    - type: Gatherable
+      whitelist:
+        components:
+          - Hands
+    - type: Damageable
+      damageContainer: Inorganic
+      damageModifierSet: Wood
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 150
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+
+##### лапчатка белая
+
+- type: entity
+  name: лапчатка белая
+  parent: FoodProduceBase
+  id: StalkerFoodlapchatka
+  description: Воронец, можно выжмать.
+  suffix: Stalker, Ягоды
+  components:
+  - type: FlavorProfile
+    flavors:
+      - grass
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 11
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: Vitamin
+          Quantity: 4
+  - type: Sprite
+    sprite: _Stalker/Objects/Counsumable/Food/Plants.rsi
+    state: StalkerFoodlapchatka
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: StalkerOilGrass2
+        Quantity: 10
+  - type: Tag
+    tags:
+    - Fruit
+
+- type: ore
+  id: StalkerOreBerries21
+  oreEntity: StalkerFoodlapchatka
+
+- type: entity
+  name: трава
+  parent: BaseStructure
+  id: StalkerBarriesStructureLapchatka
+  suffix: Stalker, Ягоды, Кустарник
+  description: Трава, можно собрать.
+  components:
+    - type: Sprite
+      sprite: _Stalker/Decals/flor.rsi
+      state: branch2
+      scale: 1.1, 1.1
+    - type: Transform
+      anchored: true
+    - type: Physics
+      bodyType: Static
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeCircle
+            radius: 0.2
+    - type: InteractionOutline
+    - type: OreVein
+      oreChance: 1.0
+      currentOre: StalkerOreBerries21
+    - type: Gatherable
+      whitelist:
+        components:
+          - Hands
+    - type: Damageable
+      damageContainer: Inorganic
+      damageModifierSet: Wood
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 150
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+
+##### аир обыкновенный
+
+- type: entity
+  name: аир обыкновенный
+  parent: FoodProduceBase
+  id: StalkerFoodAir
+  description: аир обыкновенный, можно выжмать.
+  suffix: Stalker, Ягоды
+  components:
+  - type: FlavorProfile
+    flavors:
+      - grass
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 11
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: Vitamin
+          Quantity: 4
+  - type: Sprite
+    sprite: _Stalker/Objects/Counsumable/Food/Plants.rsi
+    state: StalkerFoodAir
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: StalkerOilGrass3
+        Quantity: 10
+  - type: Tag
+    tags:
+    - Fruit
+
+- type: ore
+  id: StalkerOreBerries22
+  oreEntity: StalkerFoodAir
+
+- type: entity
+  name: трава
+  parent: BaseStructure
+  id: StalkerBarriesStructureAir
+  suffix: Stalker, Ягоды, Кустарник
+  description: Трава, можно собрать.
+  components:
+    - type: Sprite
+      sprite: _Stalker/Decals/flor.rsi
+      state: branch2
+      scale: 1.1, 1.1
+    - type: Transform
+      anchored: true
+    - type: Physics
+      bodyType: Static
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeCircle
+            radius: 0.2
+    - type: InteractionOutline
+    - type: OreVein
+      oreChance: 1.0
+      currentOre: StalkerOreBerries22
+    - type: Gatherable
+      whitelist:
+        components:
+          - Hands
+    - type: Damageable
+      damageContainer: Inorganic
+      damageModifierSet: Wood
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 150
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+
+######## липа сердцевидная
+
+- type: entity
+  name: липа сердцевидная
+  parent: FoodProduceBase
+  id: StalkerFoodLipa
+  description: липа сердцевидная, можно выжмать.
+  suffix: Stalker, Ягоды
+  components:
+  - type: FlavorProfile
+    flavors:
+      - grass
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 11
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: Vitamin
+          Quantity: 4
+  - type: Sprite
+    sprite: _Stalker/Objects/Counsumable/Food/Plants.rsi
+    state: StalkerFoodLipa
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: StalkerOilGrass4
+        Quantity: 10
+  - type: Tag
+    tags:
+    - Fruit
+
+- type: ore
+  id: StalkerOreBerries23
+  oreEntity: StalkerFoodLipa
+
+- type: entity
+  name: трава
+  parent: BaseStructure
+  id: StalkerBarriesStructureLipa
+  suffix: Stalker, Ягоды, Кустарник
+  description: Трава, можно собрать.
+  components:
+    - type: Sprite
+      sprite: _Stalker/Decals/flor.rsi
+      state: branch2
+      scale: 1.1, 1.1
+    - type: Transform
+      anchored: true
+    - type: Physics
+      bodyType: Static
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeCircle
+            radius: 0.2
+    - type: InteractionOutline
+    - type: OreVein
+      oreChance: 1.0
+      currentOre: StalkerOreBerries23
+    - type: Gatherable
+      whitelist:
+        components:
+          - Hands
+    - type: Damageable
+      damageContainer: Inorganic
+      damageModifierSet: Wood
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 150
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+
+##### ятрышник пятнистый
+
+- type: entity
+  name: ятрышник пятнистый
+  parent: FoodProduceBase
+  id: StalkerFoodYatrishnik
+  description: Ятрышник пятнистий, можно выжмать.
+  suffix: Stalker, Ягоды
+  components:
+  - type: FlavorProfile
+    flavors:
+      - grass
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 11
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: Vitamin
+          Quantity: 4
+  - type: Sprite
+    sprite: _Stalker/Objects/Counsumable/Food/Plants.rsi
+    state: StalkerFoodYatrishnik
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: StalkerOilGrass5
+        Quantity: 10
+  - type: Tag
+    tags:
+    - Fruit
+
+- type: ore
+  id: StalkerOreBerries24
+  oreEntity: StalkerFoodYatrishnik
+
+- type: entity
+  name: трава
+  parent: BaseStructure
+  id: StalkerBarriesStructureYatrishnik
+  suffix: Stalker, Ягоды, Кустарник
+  description: Трава, можно собрать.
+  components:
+    - type: Sprite
+      sprite: _Stalker/Decals/flor.rsi
+      state: branch2
+      scale: 1.1, 1.1
+    - type: Transform
+      anchored: true
+    - type: Physics
+      bodyType: Static
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeCircle
+            radius: 0.2
+    - type: InteractionOutline
+    - type: OreVein
+      oreChance: 1.0
+      currentOre: StalkerOreBerries24
+    - type: Gatherable
+      whitelist:
+        components:
+          - Hands
+    - type: Damageable
+      damageContainer: Inorganic
+      damageModifierSet: Wood
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 150
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+
+############### Реагенты
+#########Масла
+
+- type: reagent
+  id: StalkerOilBarbaris
+  name: Масло барбариса
+  desc: Получено после имельчения ягод барбариса
+  physicalDesc: reagent-physical-desc-sweet
+  flavor: berry
+  color: "#660099"
+  metabolisms:
+    Medicine:
+      effects:
+      - !type:ModifyBleedAmount
+        amount: -10
+
+- type: reagent
+  id: StalkerOilGoji
+  name: Масло годжи
+  desc: Получено после имельчения ягод Годжи
+  physicalDesc: reagent-physical-desc-sweet
+  flavor: berry
+  color: "#660099"
+  metabolisms:
+    Medicine:
+      effects:
+      - !type:HealthChange
+        damage:
+          groups:
+            Toxin: -2.5
+
+
+- type: reagent
+  id: StalkerOilIrga
+  name: Масло иргы
+  desc: Получено после имельчения ягод Иргы
+  physicalDesc: reagent-physical-desc-sweet
+  flavor: berry
+  color: "#660099"
+  metabolisms:
+    Medicine:
+      effects:
+      - !type:HealthChange
+        damage:
+          groups:
+            Toxin: -2.5
+
+- type: reagent
+  id: StalkerOilKlukva
+  name: Масло клюквы
+  desc: Получено после имельчения ягод Клюквы
+  physicalDesc: reagent-physical-desc-sweet
+  flavor: berry
+  color: "#660099"
+  metabolisms:
+    Medicine:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Heat: -2.5
+
+- type: reagent
+  id: StalkerOilKrijovnik
+  name: Масло крыжовника
+  desc: Получено после имельчения ягод крыжовника
+  physicalDesc: reagent-physical-desc-sweet
+  flavor: berry
+  color: "#660099"
+  metabolisms:
+    Medicine:
+      effects:
+      - !type:HealthChange
+        damage:
+          groups:
+            Brute: -2.5
+
+- type: reagent
+  id: StalkerOilMalina
+  name: Масло малины
+  desc: Получено после имельчения ягод малины
+  physicalDesc: reagent-physical-desc-sweet
+  flavor: berry
+  color: "#660099"
+  metabolisms:
+    Medicine:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Radiation: -1
+
+- type: reagent
+  id: StalkerOilMoroshka
+  name: Масло морошки
+  desc: Получено после имельчения ягод морошки
+  physicalDesc: reagent-physical-desc-sweet
+  flavor: berry
+  color: "#660099"
+  metabolisms:
+    Medicine:
+      effects:
+      - !type:ModifyBleedAmount
+        amount: -10
+
+- type: reagent
+  id: StalkerOilOblepixa
+  name: Масло облепихи
+  desc: Получено после имельчения ягод облепихи
+  physicalDesc: reagent-physical-desc-sweet
+  flavor: berry
+  color: "#660099"
+  metabolisms:
+    Medicine:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Heat: -2.5
+
+
+#####Травы
+
+- type: reagent
+  id: StalkerOilGrass1
+  name: Очанка лекарственная
+  desc: Получено после имельчения очанки лекарственной
+  physicalDesc: flavor-complex-grass
+  flavor: grass
+  color: "#660099"
+  metabolisms:
+    Medicine:
+      effects:
+      - !type:ModifyBleedAmount
+        amount: -10
+
+- type: reagent
+  id: StalkerOilGrass2
+  name: Лапчатка белая
+  desc: Получено после имельчения лапчатки белой
+  physicalDesc: flavor-complex-grass
+  flavor: grass
+  color: "#660099"
+  metabolisms:
+    Medicine:
+      effects:
+      - !type:HealthChange
+        damage:
+          groups:
+            Brute: -2.5
+
+- type: reagent
+  id: StalkerOilGrass3
+  name: Аир обыкновенный
+  desc: Получено после имельчения лира обыкновенного
+  physicalDesc: flavor-complex-grass
+  flavor: grass
+  color: "#660099"
+  metabolisms:
+    Medicine:
+      effects:
+      - !type:HealthChange
+        damage:
+          groups:
+            Brute: -2.5
+
+- type: reagent
+  id: StalkerOilGrass4
+  name: Липа сердцевидная
+  desc: Получено после имельчения липа сердцевидной
+  physicalDesc: flavor-complex-grass
+  flavor: grass
+  color: "#660099"
+  metabolisms:
+    Medicine:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Radiation: -1
+
+- type: reagent
+  id: StalkerOilGrass5
+  name: Ятрышник пятнистый
+  desc: Получено после имельчения ятрышника пятнистного
+  physicalDesc: flavor-complex-grass
+  flavor: grass
+  color: "#660099"
+  metabolisms:
+    Medicine:
+      effects:
+      - !type:HealthChange
+        damage:
+          groups:
+            Toxin: -2.5
+########Соки
+
+
+- type: reagent
+  id: StalkerJuiceBrusnika
+  name: Сок брусники
+  parent: BaseJuice
+  desc: Получено после имельчения ягод брусники
+  physicalDesc: reagent-physical-desc-sweet
+  flavor: berry
+  color: "#660099"
+
+
+- type: reagent
+  id: StalkerJuiceGolubika
+  name: Сок голубики
+  parent: BaseJuice
+  desc: Получено после имельчения ягод голубики
+  physicalDesc: reagent-physical-desc-sweet
+  flavor: berry
+  color: "#660099"
+
+- type: reagent
+  id: StalkerJuiceVinograd
+  name: Сок винограда
+  parent: BaseJuice
+  desc: Получено после имельчения ягод винограда
+  physicalDesc: reagent-physical-desc-sweet
+  flavor: berry
+  color: "#660099"
+
+- type: reagent
+  id: StalkerJuiceVishna
+  name: Сок вишни
+  parent: BaseJuice
+  desc: Получено после имельчения ягод вишни
+  physicalDesc: reagent-physical-desc-sweet
+  flavor: berry
+  color: "#660099"
+
+- type: reagent
+  id: StalkerJuiceEjevika
+  name: Сок ежевики
+  parent: BaseJuice
+  desc: Получено после имельчения ягод ежевики
+  physicalDesc: reagent-physical-desc-sweet
+  flavor: berry
+  color: "#660099"
+
+- type: reagent
+  id: StalkerJuiceKlubnika
+  name: Сок клубники
+  parent: BaseJuice
+  desc: Получено после имельчения ягод клубники
+  physicalDesc: reagent-physical-desc-sweet
+  flavor: berry
+  color: "#660099"
+
+- type: reagent
+  id: StalkerJuiceSmorodini
+  name: Сок смородины
+  parent: BaseJuice
+  desc: Получено после имельчения ягод смородины
+  physicalDesc: reagent-physical-desc-sweet
+  flavor: berry
+  color: "#660099"
+
+- type: reagent
+  id: StalkerJuiceChereshna
+  name: Сок черешни
+  parent: BaseJuice
+  desc: Получено после имельчения ягод черешни
+  physicalDesc: reagent-physical-desc-sweet
+  flavor: berry
+  color: "#660099"
+
+#####Яды
+
+- type: reagent
+  id: StalkerToxin1
+  name: Сок волчеягодника
+  parent: Toxin
+  desc: Получено после имельчения волчеягодника
+  physicalDesc: reagent-physical-desc-sweet
+  flavor: berry
+  color: "#660099"
+  metabolisms:
+    Poison:
+      metabolismRate: 0.2
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Poison: 0.3
+
+- type: reagent
+  id: StalkerToxin2
+  name: Сок воронца
+  parent: Toxin
+  desc: Получено после имельчения воронца
+  physicalDesc: reagent-physical-desc-sweet
+  flavor: berry
+  color: "#660099"
+  metabolisms:
+    Poison:
+      metabolismRate: 0.2
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Poison: 0.3
+
+- type: reagent
+  id: StalkerToxin3
+  name: Сок ландыша
+  desc: Получено после имельчения ландыша
+  physicalDesc: reagent-physical-desc-sweet
+  flavor: berry
+  color: "#660099"
+  metabolisms:
+    Poison:
+      metabolismRate: 0.2
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Poison: 0.3
+
+
+######### Спавнеры
+
+- type: entity
+  name: Периодический спавнер растений
+  id: StalkerTimedSpawner30
+  parent: MarkerBase
+  suffix: Stalker, раз в 30 минут
+  components:
+    - type: Sprite
+      layers:
+        - state: blue
+        - sprite: _Stalker/Objects/Counsumable/Food/Plants.rsi
+          state: plant-01
+        - state: timed
+    - type: Timer
+    - type: TimedSpawner
+      prototypes:
+      - RandomSpawnerBarriesStalker
+      chance: 0.33
+      intervalSeconds: 3600
+      minimumEntitiesSpawned: 1
+      maximumEntitiesSpawned: 1
+
+- type: entity
+  name: Trash Spawner
+  id: RandomSpawnerBarriesStalker
+  parent: MarkerBase
+  suffix: Stalker
+  noSpawn: true
+  components:
+    - type: Sprite
+      layers:
+        - state: red
+        - sprite: Objects/Consumable/Food/snacks.rsi
+          state: pistachio-trash
+    - type: RandomSpawner
+      prototypes:
+      - StalkerBarriesStructureYatrishnik
+      - StalkerBarriesStructureLipa
+      - StalkerBarriesStructureAir
+      - StalkerBarriesStructureLapchatka
+      - StalkerBarriesStructureOchanka
+      - StalkerBarriesStructureLandish
+      - StalkerBarriesStructureVoronec
+      - StalkerBarriesStructureVolk
+      - StalkerBarriesStructureChereshna
+      - StalkerBarriesStructureSmorodina
+      - StalkerBarriesStructureKlubnika
+      - StalkerBarriesStructureEjevika
+      - StalkerBarriesStructureVishna
+      - StalkerBarriesStructureVinograd
+      - StalkerBarriesStructureGolubika
+      - StalkerBarriesStructureBrusnika
+      - StalkerBarriesStructureOblepixa
+      - StalkerBarriesStructureMoroshka
+      - StalkerBarriesStructureMalina
+      - StalkerBarriesStructureKrijovnik
+      - StalkerBarriesStructureKlukva
+      - StalkerBarriesStructureIrga
+      - StalkerBarriesStructureGoji
+      - StalkerBarriesStructureBarbaris
+      chance: 1
+      offset: 5
+
+
+# - type: entity
+#   name: Периодический спавнер растений
+#   id: StalkerTimedSpawnertest
+#   parent: MarkerBase
+#   suffix: Stalker, раз в секунда
+#   components:
+#     - type: Sprite
+#       layers:
+#         - state: blue
+#         - sprite: _Stalker/Objects/Counsumable/Food/Plants.rsi
+#           state: plant-01
+#         - state: timed
+#     - type: Timer
+#     - type: TimedSpawner
+#       prototypes:
+#       - RandomSpawnerBarriesStalker
+#       chance: 0.25
+#       intervalSeconds: 3
+#       minimumEntitiesSpawned: 1
+#       maximumEntitiesSpawned: 1

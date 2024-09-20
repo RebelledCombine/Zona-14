@@ -1,0 +1,19 @@
+- type: entity
+  parent: MapTeleportBase
+  id: Cordon-Freedom
+  name: Cordon-Freedom (spawn)
+  components:
+    - type: NewMapTeleport
+      allowAll: false
+      portalName: Cordon-Freedom
+    - type: AccessReader
+      access: [["Freedom"]]
+
+- type: entity
+  parent: MapTeleportBaseUncollide
+  id: Cordon-FreedomUncollide
+  name: Cordon-FreedomUncollide (spawn)
+  components:
+    - type: NewMapTeleport
+      allowAll: false
+      portalName: Cordon-Freedom

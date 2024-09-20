@@ -1,0 +1,36 @@
+- type: characteristic
+  id: Strength
+  group: Strength
+  name: Сила
+
+- type: characteristic
+  id: Dexterity
+  group: Dexterity
+  name: Ловкость
+
+- type: characteristic
+  id: Endurance
+  group: Endurance
+  name: Выносливость
+
+- type: characteristic
+  id: Knowledge
+  group: Knowledge
+  name: Знания
+
+- type: characteristic
+  id: Attention
+  group: Attention
+  name: Внимательность
+
+- type: characteristic
+  id: Psionics
+  group: Psionics
+  name: Псионика
+  access: ServerOnly
+
+- type: characteristic
+  id: Karma
+  group: Karma
+  name: Карма
+  access: ServerOnly

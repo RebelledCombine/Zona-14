@@ -1,0 +1,53 @@
+- type: entity
+  parent: [ BaseItem, BaseFoldable ]
+  id: BaseMachineAnomalyDestructor
+  name: P.A.D.
+  description: An Anomalous Particle Emitter, capable of shooting out unstable particles which can interface with anomalies.
+  suffix: Stalker
+  components:
+    - type: Tag
+      tags:
+        - Structure
+    - type: STWeight
+      self: 7.5
+    - type: Item
+      sprite: _Stalker/Objects/Devices/Anomaly/Destructors/pad.rsi
+      size: Huge
+    - type: Sprite
+      noRot: true
+      sprite: _Stalker/Objects/Devices/Anomaly/Destructors/pad.rsi
+      layers:
+        - state: base
+          map: ["unfoldedLayer"]
+        - state: screen
+          map: ["screenUnfoldedLayer"]
+          shader: unshaded
+        - state: icon
+          map: ["foldedLayer"]
+          visible: false
+    - type: Appearance
+    - type: GenericVisualizer
+      visuals:
+        enum.FoldedVisuals.State:
+          foldedLayer:
+            True: {visible: true}
+            False: {visible: false}
+          unfoldedLayer:
+            True: {visible: false}
+            False: {visible: true}
+          screenUnfoldedLayer:
+            True: {visible: false}
+            False: {visible: true}
+    - type: PointLight
+      color: "#33b41f"
+      enabled: true
+      radius: 1.5
+      softness: 5
+
+- type: entity   
+  parent: BaseMachineAnomalyDestructor
+  id: BaseMachineAnomalyDestructorFolded
+  suffix: Stalker, Folded
+  components:
+    - type: Foldable
+      folded: true

@@ -1,0 +1,39 @@
+- type: shopPreset
+  id: ShopPresetJaba
+  categories:
+    - name: Оружие
+      priority: 1
+      items:
+        CombatKnife: 10
+    - name: Броня и снаряжение
+      priority: 2
+      items:
+        STSkinsKitJabs: 500
+    - name: Кастомизация
+      priority: 3
+      items:
+        ClothingTorsoJaba: 5
+        ClothingLegsJeansJaba: 5
+        ClothingHandsGlovesJabs: 30
+        ClothingShoesBootsFrogLeather: 30
+        ClothingMaskSkull: 10
+        ClothingEyesGlassesCheapSunglasses: 5
+    - name: Рецепты
+      priority: 4
+      items:
+        DrawingRecipeJaba: 500
+        CraftArmorPlateBlack: 400
+    - name: Аномалии
+      priority: 5
+      items:
+        BoxArtcont: 200
+    - name: Развлечения
+      priority: 6
+      items:
+        GoldDiceBag: 300
+        CardBin: 200
+    - name: Утилиты
+      priority: 7
+      items:
+        STCraftIndustrialThreadStaplesKitT4: 3000
+        STCraftPlasticFittingT4: 3000

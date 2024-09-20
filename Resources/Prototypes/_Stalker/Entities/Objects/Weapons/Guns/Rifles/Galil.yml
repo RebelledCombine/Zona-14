@@ -1,0 +1,64 @@
+- type: entity
+  name: Galil
+  suffix: ST
+  parent: STBaseWeaponRifle
+  id: WeaponRifleStalkerGalil
+  description: Израильское автоматическое ружьё под калибр 5,56.
+  components:
+  - type: STWeight
+    self: 4.5
+  - type: Item
+    sprite: _Stalker/Objects/Weapons/Guns/Rifles/galil.rsi
+    shape:
+      - 0,0,7,1
+  - type: Sprite
+    sprite: _Stalker/Objects/Weapons/Guns/Rifles/galil.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Weapons/Guns/Rifles/galil.rsi
+  - type: Gun
+    fireRate: 8
+    soundGunshot:
+      path: /Audio/_Stalker/Effects/Guns/sks_shoot.ogg
+      params:
+        volume: -2
+    minAngle: 50
+    maxAngle: 100
+    angleIncrease: 3
+    angleDecay: 25
+    shotsPerBurst: 3
+    ShotsPerBurstModified: 3
+    selectedMode: Burst
+    availableModes:
+      - Burst
+      - SemiAuto
+      - FullAuto
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: Base556Mag10
+        insertSound: /Audio/Weapons/Guns/MagIn/hpistol_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/hpistol_magout.ogg
+        priority: 4
+        whitelist:
+          tags:
+            - Magazine556
+      gun_module_muzzle:
+        name: Muzzle
+        priority: 3
+        whitelist:
+          tags:
+            - STWeaponModuleRifleSilencerNato
+      gun_module_scope:
+        name: Scope
+        priority: 2
+        whitelist:
+          tags:
+            - STWeaponModuleRifleScopeNato
+      gun_chamber:
+        name: Chamber
+        startingItem:
+        priority: 1
+        whitelist:
+          tags:
+            - Cartridge556

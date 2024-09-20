@@ -1,0 +1,44 @@
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadWildHat
+  name: wild hat
+  description: A hat for true adventure lovers.
+  suffix: Stalker
+  components:
+  - type: Sprite
+    sprite: _Stalker/Clothing/Head/Hats/wild_hat.rsi
+  - type: Clothing
+    sprite: _Stalker/Clothing/Head/Hats/wild_hat.rsi
+  - type: Tag
+    tags:
+    - ClothMade
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadWildHatAnomalist
+  name: anomalist wild hat
+  description: A anomalists hat to jump through gravi.
+  suffix: Stalker, Anomalists
+  components:
+  - type: Sprite
+    sprite: _Stalker/Clothing/Head/Hats/wild_hat_anomalist.rsi
+  - type: Clothing
+    sprite: _Stalker/Clothing/Head/Hats/wild_hat_anomalist.rsi
+  - type: Tag
+    tags:
+    - ClothMade
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadPilgrimDoctor
+  name: маска с клювом
+  description: необычно выглядящяя шапка паломника
+  suffix: Stalker, Паломники
+  components:
+  - type: Sprite
+    sprite: _Stalker/Clothing/Head/Hats/pilgrim_hat.rsi
+  - type: Clothing
+    sprite: _Stalker/Clothing/Head/Hats/pilgrim_hat.rsi
+  - type: Tag
+    tags:
+    - ClothMade

@@ -1,0 +1,8 @@
+- type: accessLevel
+  id: Covenant
+  name: База завета
+
+- type: accessGroup
+  id: Covenant
+  tags:
+    - Covenant

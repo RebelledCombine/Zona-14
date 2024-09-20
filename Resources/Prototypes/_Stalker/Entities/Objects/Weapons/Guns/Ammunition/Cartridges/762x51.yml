@@ -1,0 +1,55 @@
+# 7.62x51
+
+- type: entity
+  id: BaseCartridge751
+  name: cartridge (7,62x51 rifle)
+  parent: BaseCartridgeCaselessRifle
+  abstract: true
+  components:
+  - type: STWeight
+    self: 0.02
+  - type: Tag
+    tags:
+    - Cartridge
+    - Cartridge751
+  - type: CartridgeAmmo
+    proto: BulletLightRifle
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+
+- type: entity
+  id: Cartridge751M80
+  name: Патрон (7,62x51)M80
+  parent: BaseCartridge751
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet751M80
+
+- type: entity
+  id: Cartridge751Noiser
+  name: Патрон (7,62x51)Ultra Noiser
+  parent: BaseCartridge751
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet751Noiser
+
+- type: entity
+  id: Cartridge751M61
+  name: Патрон (7,62x51)M61
+  parent: BaseCartridge751
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet751M61
+
+- type: entity
+  id: Cartridge751M993
+  name: Патрон (7,62x51)M993
+  parent: BaseCartridge751
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet751M993

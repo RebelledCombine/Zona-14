@@ -1,0 +1,47 @@
+- type: job
+  id: StalkerZavet
+  name: Завет
+  icon: zavet
+  description: Это небольшая армия крайне опасных фанатиков.
+  playTimeTracker: JobZavet
+  requirements:
+    - !type:RoleTimeRequirement
+      role: JobZavet
+      time: 1
+  startingGear: StalkerZavetGear
+  supervisors: Вы работаете на Высшие Силы.
+  special:
+    - !type:AddComponentSpecial
+      components:
+      - type: Access
+        groups:
+          - Covenant
+        tags:
+          - Covenant
+      - type: Bands
+        band: Stalker
+        bandIcon: zavet
+      - type: BlockTackingHolyItems
+      - type: TeethPull
+        teethProto: ToothStalker
+        pullingItemTag: PliersStalker
+        teethCount: 3
+        initialTeeth: 3
+
+- type: startingGear
+  id: StalkerZavetGear
+  equipment:
+    id: StalkerPDA
+    belt: ClothingBeltStorageWaistbag
+    torso: ClothingTorsoTurtlenecksCovenantHead
+    legs: ClothingLegsJeansBlackCargo
+    shoes: ClothingShoesBootsWork
+
+- type: startingGear
+  id: StalkerZavetLeaderGear
+  equipment:
+    id: StalkerPDA
+    belt: ClothingBeltStorageWaistbag
+    torso: ClothingTorsoTurtlenecksCovenant
+    legs: ClothingLegsJeansBrownCargo
+    shoes: ClothingShoesBootsWork

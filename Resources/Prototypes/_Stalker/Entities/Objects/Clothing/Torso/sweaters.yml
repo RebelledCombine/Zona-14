@@ -1,0 +1,35 @@
+- type: entity
+  parent: BaseClothingTorso
+  id: ClothingTorsoSweaterStalkerGreen
+  name: stalker green sweater
+  components:
+    - type: Sprite
+      sprite: _Stalker/Clothing/Torso/Sweaters/stalker_green.rsi
+    - type: Clothing
+      sprite: _Stalker/Clothing/Torso/Sweaters/stalker_green.rsi
+
+- type: entity
+  parent: BaseClothingTorso
+  id: ClothingTorsoSweaterStalkerGreenGreh
+  name: stalker greh sweater
+  components:
+    - type: Sprite
+      sprite: _Stalker/Clothing/Torso/Sweaters/greh_green.rsi
+    - type: Clothing
+      sprite: _Stalker/Clothing/Torso/Sweaters/greh_green.rsi
+    - type: Armor
+      modifiers:
+        flatReductions:
+          Radiation: 500
+          Psy: 500
+    - type: Tag
+      tags:
+      - GrehCanTakeOnly
+    - type: Unremoveable
+    - type: PersonalDamage
+      damage:
+        types:
+          Radiation: -100
+          Psy: -100
+          BloodLoss: -100
+      interval: 1

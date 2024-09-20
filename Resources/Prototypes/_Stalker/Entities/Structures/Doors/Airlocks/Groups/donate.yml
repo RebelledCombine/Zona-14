@@ -1,0 +1,39 @@
+- type: accessLevel
+  id: Donate
+  name: донат
+
+- type: entity
+  parent: HermoDverTypeOne
+  id: HermoDverTypeOneDonateClosed
+  suffix: Stalker, Donate
+  components:
+  - type: AccessReader
+    access: [["Donate"]]
+  - type: CkeyAccess
+
+- type: entity
+  parent: MetalAltDoorFallout
+  id: MetalAltDoorFalloutDonateClosed
+  suffix: Stalker, Donate
+  components:
+    - type: AccessReader
+      access: [["Donate"]]
+    - type: CkeyAccess
+
+- type: entity
+  parent: StalkerGate
+  id: StalkerGateLeftDonateClosed
+  suffix: Stalker, Donate, Left
+  components:
+    - type: AccessReader
+      access: [["Donate"]]
+    - type: CkeyAccess
+
+- type: entity
+  parent: StalkerGater
+  id: StalkerGateRightDonateClosed
+  suffix: Stalker, Donate, Right
+  components:
+    - type: AccessReader
+      access: [["Donate"]]
+    - type: CkeyAccess

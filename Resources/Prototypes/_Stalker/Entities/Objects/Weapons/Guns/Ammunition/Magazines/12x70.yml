@@ -1,0 +1,157 @@
+- type: entity
+  id: Base1270Mag
+  name: магазин Сайги 12х70 (5)
+  description: Магазин Сайги 12х70 для дробовиков АК. Вместимость дробей 5. Продают пустым.
+  parent: Base545Mag10
+  tag: Stalker
+  components:
+  - type: STWeight
+    self: 0.2
+  - type: Tag
+    tags:
+      - MagazineSaiga
+  - type: BallisticAmmoProvider
+    proto:
+    mayTransfer: true
+    whitelist:
+      tags:
+        - ShellShotgun
+    capacity: 5
+  - type: Item
+    size: Small
+    shape:
+      - 0,0,0,1
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    scale: 0.8, 0.8
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Magazines/1270/Saiga/5.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
+- type: entity
+  id: Saiga1270Mag10
+  name: магазин Сайги 12х70 (10)
+  description: Магазин Сайги 12х70 для дробовиков АК. Вместимость дробей 10. Продают пустым.
+  parent: Base1270Mag
+  tag: Stalker
+  components:
+  - type: STWeight
+    self: 0.4
+  - type: BallisticAmmoProvider
+    capacity: 10
+  - type: Item
+    size: Normal
+    shape:
+      - 0,0,0,2
+  - type: Sprite
+    scale: 0.8, 0.8
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Magazines/1270/Saiga/10.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+- type: entity
+  id: Saiga1270Drum
+  name: барабан Сайги 12х70 (20)
+  description: Барабан Сайги 12х70 для дробовиков АК. Вместимость дробей 20. Продают пустым.
+  parent: Base1270Mag
+  tag: Stalker
+  components:
+  - type: STWeight
+    self: 0.5
+  - type: BallisticAmmoProvider
+    capacity: 20
+  - type: Item
+    size: Normal
+    shape:
+      - 0,0,1,1
+  - type: Sprite
+    scale: 0.8, 0.8
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Magazines/1270/Saiga/drum.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  parent: BaseItem
+  id: BaseMagazineUSAS12x70
+  name: magazine USAS 12x70 (10)
+  description: USAS 12x70 magazine for AK shotguns. Capacity of fractions is 10. Sold empty.
+  suffix: Stalker
+  abstract: true
+  components:
+  - type: STWeight
+    self: 0.7
+  - type: Tag
+    tags:
+    - MagazineUSAS
+  - type: BallisticAmmoProvider
+    proto: ShellShotgun
+    mayTransfer: true
+    whitelist:
+      tags:
+      - ShellShotgun
+    capacity: 10
+  - type: Item
+    size: Normal
+    shape:
+    - 0,0,0,2
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Sprite
+  - type: Appearance
+
+- type: entity
+  parent: BaseMagazineUSAS12x70
+  id: Magazine10USAS12x70
+  name: magazine USAS 12x70 (10)
+  description: USAS 12x70 magazine for AK shotguns. Capacity of fractions is 10. Sold empty.
+  suffix: Stalker
+  components:
+  - type: STWeight
+    self: 0.4
+  - type: BallisticAmmoProvider
+    capacity: 10
+  - type: Sprite
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Magazines/usas_10.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  parent: BaseMagazineUSAS12x70
+  id: Magazine20USAS12x70
+  name: drum USAS 12x70 (10)
+  description: USAS 12x70 drum for AK shotguns. Capacity of fractions is 20. Sold empty.
+  suffix: Stalker
+  components:
+  - type: STWeight
+    self: 0.4
+  - type: BallisticAmmoProvider
+    capacity: 20
+  - type: Sprite
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Magazines/usas_20.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]

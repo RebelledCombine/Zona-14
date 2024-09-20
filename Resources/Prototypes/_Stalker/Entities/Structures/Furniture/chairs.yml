@@ -1,0 +1,70 @@
+- type: entity
+  name: старый деревянный стул
+  id: OldWoodChairStalker
+  parent: SeatBase
+  suffix: Stalker
+  description: Некогда этот стул был гордостью, но сейчас предмет, который занимает много места.
+  components:
+    - type: Transform
+      anchored: true
+    - type: Physics
+      bodyType: Static
+    - type: Anchorable
+    - type: Rotatable
+    - type: Sprite
+      sprite: _Stalker/Structures/Furniture/Chairs/old_chairs.rsi
+      state: s1
+
+- type: entity
+  id: OldWoodChairStalker2
+  parent: OldWoodChairStalker
+  suffix: Stalker
+  components:
+  - type: Sprite
+    sprite: _Stalker/Structures/Furniture/Chairs/old_chairs.rsi
+    state: s2
+
+- type: entity
+  id: OldWoodChairStalker3
+  parent: OldWoodChairStalker
+  suffix: Stalker
+  components:
+  - type: Sprite
+    sprite: _Stalker/Structures/Furniture/Chairs/old_chairs.rsi
+    state: s3
+
+- type: entity
+  name: деревянный стул
+  id: ChairWoodStalker
+  parent: ChairBase
+  suffix: Stalker
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    state: wooden
+  - type: Physics
+    bodyType: Static
+  - type: Transform
+    anchored: true
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 25
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WoodDestroy
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          MaterialWoodPlank:
+            min: 1
+            max: 1
+  - type: Tag
+    tags:
+    - Wooden

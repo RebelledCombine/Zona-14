@@ -1,0 +1,42 @@
+- type: reagent
+  id: STTaurine
+  name: taurine
+  group: Narcotics
+  desc: Often used by stalkers on multi-day hikes when there is no opportunity to stop and rest. The drink contains easily digestible carbohydrates, as well as drugs that cause the release of adrenaline into the blood.
+  physicalDesc: reagent-physical-desc-fizzy
+  flavor: soda
+  color: "#ffffbf"
+  boilingPoint: 212.0
+  meltingPoint: 170.0
+  metabolisms:
+    Narcotic:
+      metabolismRate: 0.05
+      effects:
+      - !type:MovespeedModifier
+        conditions:
+        walkSpeedModifier: 1.1
+        sprintSpeedModifier: 1.1
+      - !type:GenericStatusEffect
+        conditions:
+        key: Stun
+        time: 3
+        type: Remove
+      - !type:GenericStatusEffect
+        conditions:
+        key: KnockedDown
+        time: 3
+        type: Remove
+      - !type:GenericStatusEffect
+        conditions:
+        key: ForcedSleep
+        component: ForcedSleeping
+        refresh: false
+        type: Remove
+    Medicine:
+      metabolismRate: 0.1
+      effects:
+        - !type:ResetNarcolepsy
+        - !type:SatiateHunger
+          factor: 2
+        - !type:SatiateThirst
+          factor: 2
