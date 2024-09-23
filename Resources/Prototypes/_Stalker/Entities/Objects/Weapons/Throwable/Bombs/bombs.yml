@@ -22,7 +22,7 @@
       stickPopupSuccess: comp-sticky-success-stick-bomb
       unstickPopupStart: comp-sticky-start-unstick-bomb
       unstickPopupSuccess: comp-sticky-success-unstick-bomb
-      blacklist: 
+      blacklist:
         components:
         - Item
     - type: SpaceGarbage
@@ -285,7 +285,7 @@
     shape:
       - 0,0,2,2
   - type: Sprite
-    sprite: Objects/Weapons/Bombs/timerdynamite.rsi
+    sprite: Objects/Weapons/Bombs/dynamite.rsi
     state: icon
     layers:
     - state: icon

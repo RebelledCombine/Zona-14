@@ -1141,9 +1141,9 @@
     - type: STWeight
       self: 2
     - type: Sprite
-      sprite: Clothing/Head/Helmets/band_helmet.rsi
+      sprite: _Stalker/Objects/Clothing/hats/renegade_merc_helmet.rsi
     - type: Clothing
-      sprite: Clothing/Head/Helmets/band_helmet.rsi
+      sprite: _Stalker/Objects/Clothing/hats/renegade_merc_helmet.rsi
 
 - type: entity
   parent: STClothingHeadBase

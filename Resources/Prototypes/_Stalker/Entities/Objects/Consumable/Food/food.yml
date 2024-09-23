@@ -475,9 +475,6 @@
     - Meat
     - meaty
     - bread
-  - type: Sprite
-    sprite: Objects/Consumable/Food/buterbrod.rsi
-    state: b1
   - type: SolutionContainerManager
     solutions:
       food:

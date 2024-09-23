@@ -44,9 +44,9 @@
   description: Пехотный шлем с нанесенными на него полосками, как буд-то adidas, почитается бандитскими формированиями.
   components:
     - type: Sprite
-      sprite: Clothing/Head/Helmets/band_helmet.rsi
+      sprite: _Stalker/Objects/Clothing/hats/renegade_merc_helmet.rsi
     - type: Clothing
-      sprite: Clothing/Head/Helmets/band_helmet.rsi
+      sprite: _Stalker/Objects/Clothing/hats/renegade_merc_helmet.rsi
 
 - type: entity
   parent: STClothingHeadHelmetCombatT2Base

@@ -68,12 +68,12 @@
   description: Кромсает врагов
   components:
   - type: Sprite
-    sprite: Objects/Weapons/Melee/dagger.rsi
+    sprite: _Stalker/Objects/Weapons/Melee/dagger.rsi
     state: icon
   - type: Item
-    sprite: Objects/Weapons/Melee/dagger.rsi
+    sprite: _Stalker/Objects/Weapons/Melee/dagger.rsi
   - type: Clothing
-    sprite: Objects/Weapons/Melee/dagger.rsi
+    sprite: _Stalker/Objects/Weapons/Melee/dagger.rsi
     slots:
       - Belt
   - type: MeleeWeapon

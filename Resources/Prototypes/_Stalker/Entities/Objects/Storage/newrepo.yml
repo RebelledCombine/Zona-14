@@ -1,0 +1,55 @@
+﻿- type: entity
+  parent: BaseStructure
+  id: DebugRepository
+  name: хранилище
+  suffix: Stalker
+  components:
+    - type: StalkerRepository
+    - type: Sprite
+      sprite: _Stalker/Structures/Machines/VendingMachines/torgomat_mini.rsi
+      layers:
+        - state: "off"
+          map: [ "enum.VendingMachineVisualLayers.Base" ]
+        - state: "off"
+          map: [ "enum.VendingMachineVisualLayers.BaseUnshaded" ]
+          shader: unshaded
+        - state: torgomat_mini
+        - state: normal-unshaded
+    - type: ActivatableUI
+      key: enum.StalkerRepositoryUiKey.Key
+      singleUser: true
+    - type: UserInterface
+      interfaces:
+        enum.StalkerRepositoryUiKey.Key:
+          type: StalkerRepositoryBoundUserInterface
+
+
+- type: entity
+  parent: BaseStructure
+  id: STWipeSafeRepository
+  name: безопасное хранилище ДЛЯ ЧЕРТЕЖЕЙ
+  suffix: Stalker
+  components:
+    - type: StalkerRepository
+      whitelist:
+        tags:
+          - WipeSafe
+        components:
+          - STBlueprint
+    - type: Sprite
+      sprite: _Stalker/Structures/Machines/VendingMachines/torgomat_mini_red.rsi
+      layers:
+        - state: "off"
+          map: [ "enum.VendingMachineVisualLayers.Base" ]
+        - state: "off"
+          map: [ "enum.VendingMachineVisualLayers.BaseUnshaded" ]
+          shader: unshaded
+        - state: torgomat_mini
+        - state: normal-unshaded
+    - type: ActivatableUI
+      key: enum.StalkerRepositoryUiKey.Key
+      singleUser: true
+    - type: UserInterface
+      interfaces:
+        enum.StalkerRepositoryUiKey.Key:
+          type: StalkerRepositoryBoundUserInterface
