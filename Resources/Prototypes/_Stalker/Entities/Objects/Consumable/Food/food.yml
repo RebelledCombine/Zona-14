@@ -455,3 +455,36 @@
     tags:
     - Potato
     - Vegetable
+
+# Stalker
+
+- type: entity
+  name: бутерброд
+  parent: FoodMeatBase
+  id: FoodMeatButerbrod
+  suffix: Stalker, Еда
+  description: Ломтик хлеба или булки с намазанной или уложенной сверху начинкой из какого-либо продукта, готового к употреблению
+  components:
+  - type: STWeight
+    self: 0.34
+  - type: Craftable
+  - type: Tag
+    tags:
+    - Raw
+    - Cutlet
+    - Meat
+    - meaty
+    - bread
+  - type: Sprite
+    sprite: Objects/Consumable/Food/buterbrod.rsi
+    state: b1
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 11
+        - ReagentId: Protein
+          Quantity: 6
+        - ReagentId: Vitamin
+          Quantity: 5

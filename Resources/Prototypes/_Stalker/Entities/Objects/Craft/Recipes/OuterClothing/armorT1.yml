@@ -1,15 +1,4 @@
 - type: craftRecipe
-  id: recipeClothingShoesPVH
-  resultProtos:
-    - ClothingShoesPVH
-  craftTime: 40
-  items:
-    CraftPolyarmidFiber:
-      amount: 1
-    CraftRubber:
-      amount: 3
-
-- type: craftRecipe
   id: newrecipeJacketStalkerUpgrade
   resultProtos:
     - ClothingOuterJacketStalkerUpgrade

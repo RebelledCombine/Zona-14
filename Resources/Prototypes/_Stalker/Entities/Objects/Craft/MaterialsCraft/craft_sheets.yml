@@ -1,7 +1,7 @@
 ﻿- type: lightCraftingRecipe
   id: LightCraftSheetCopper
   results:
-    - STCraftSheetCopper
+    - STCraftSheetCopperT1
   steps:
     firstIngredient: StalkerWorktable1
     secondIngredient: CraftMetalParts

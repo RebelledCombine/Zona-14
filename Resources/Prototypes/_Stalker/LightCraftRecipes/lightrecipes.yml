@@ -16,7 +16,7 @@
   results:
     - regenpill
   steps:
-    firstIngredient: MutantBoarPart
+    firstIngredient: MutantPartBoarHoof
     secondIngredient: CraftFerments
     time: 3
 
