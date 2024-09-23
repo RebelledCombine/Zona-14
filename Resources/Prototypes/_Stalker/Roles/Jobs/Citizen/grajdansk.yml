@@ -119,7 +119,7 @@
 
 
 - type: job
-  id: Bartender
+  id: StalkerBartender
   name: Бармен
   icon: grajdansksprite
   description: Работайте в баре, удовлетворяя алкогольные нужды посетителей.
@@ -128,7 +128,7 @@
     - !type:RoleTimeRequirement
       role: JobBartender
       time: 1
-  startingGear: BartenderGear
+  startingGear: StalkerBartenderGear
   supervisors: Вы подчиняетесь мэру города "Чернобыль - 4".
   special:
     - !type:AddComponentSpecial
@@ -180,7 +180,7 @@
     torso: ClothingTorsoSweaterStalkerGreen
 
 - type: startingGear
-  id: BartenderGear
+  id: StalkerBartenderGear
   equipment:
     id: StalkerPDA
     shoes: ClothingShoesBootsLeather

@@ -8,9 +8,9 @@
   - Botany
   - Chef
   - Janitorial
-  
+
 - type: guideEntry
-  id: Bartender
+  id: STBartender
   name: guide-entry-bartender
   text: "/ServerInfo/Guidebook/Service/Bartender.xml"
   filterEnabled: True

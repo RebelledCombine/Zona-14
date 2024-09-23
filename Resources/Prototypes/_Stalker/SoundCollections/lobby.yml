@@ -1,5 +1,5 @@
 - type: soundCollection
-  id: LobbyMusic
+  id: STLobbyMusic
   files:
     - /Audio/Lobby/soundtrack_menu_one.ogg
     - /Audio/Lobby/soundtrack_menu_two.ogg
