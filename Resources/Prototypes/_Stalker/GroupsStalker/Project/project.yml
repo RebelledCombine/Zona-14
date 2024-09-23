@@ -168,9 +168,9 @@
   description: Кобура для ношения пистолета и боеприпасов.
   components:
   - type: Sprite
-    sprite: Clothing/Belt/holster_project.rsi
+    sprite: _Stalker/Clothing/Belts/holster_project.rsi
   - type: Clothing
-    sprite: Clothing/Belt/holster_project.rsi
+    sprite: _Stalker/Clothing/Belts/holster_project.rsi
   - type: Storage
     grid:
     - 0,0,3,1

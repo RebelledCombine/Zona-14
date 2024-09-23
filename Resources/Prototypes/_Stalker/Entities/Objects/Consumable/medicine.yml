@@ -601,7 +601,7 @@
   - type: Label
     currentLabel: таблетка АкваТабс
   - type: Sprite
-    sprite: Objects/Specific/Chemistry/aquatabs.rsi
+    sprite: _Stalker/Objects/Specific/Chemistry/aquatabs.rsi
     state: pill_canister_two
   - type: StorageFill
     contents:
