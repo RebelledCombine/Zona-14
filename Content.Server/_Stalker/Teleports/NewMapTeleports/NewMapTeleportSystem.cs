@@ -1,5 +1,6 @@
 using System.Linq;
 using Content.Server._Stalker.IncomingDamage;
+using Content.Server.GameTicking.Events;
 using Content.Shared._Stalker.Teleport;
 using Content.Shared.Access.Systems;
 using Content.Shared.CombatMode.Pacification;
@@ -40,10 +41,10 @@ public sealed class NewMapTeleportSystem : SharedTeleportSystem
 
         SubscribeLocalEvent<NewMapTeleportComponent, StartCollideEvent>(OnStartCollide);
         SubscribeLocalEvent<NewMapTeleportComponent, EndCollideEvent>(OnEndCollide);
-        SubscribeLocalEvent<RoundStartedEvent>(OnRoundStart);
+        SubscribeLocalEvent<RoundStartingEvent>(OnRoundStart);
     }
 
-    private void OnRoundStart(RoundStartedEvent args)
+    private void OnRoundStart(RoundStartingEvent args)
     {
         var prototypes = _protoMan.EnumeratePrototypes<MapLoaderPrototype>();
         foreach (var prototype in prototypes)
@@ -105,8 +106,9 @@ public sealed class NewMapTeleportSystem : SharedTeleportSystem
     {
         var map = CreateValidId();
         var mapId = new MapId(map);
-        _mapLoader.TryLoad(mapId, path, out _);
-        _mapManager.DoMapInitialize(mapId);
+        if (_mapLoader.TryLoad(mapId, path, out _))
+            _mapManager.DoMapInitialize(mapId);
+        else _sawmill.Error($"Map with id {mapId} from {path} load failed.");
     }
     private void OnStartCollide(EntityUid uid, NewMapTeleportComponent component, ref StartCollideEvent args)
     {

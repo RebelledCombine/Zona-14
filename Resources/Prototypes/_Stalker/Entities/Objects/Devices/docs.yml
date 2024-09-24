@@ -97,7 +97,7 @@
     - type: InteractionOutline
     - type: Pullable
     - type: Sprite
-      sprite: Objects/Misc/books.rsi
+      sprite: _Stalker/Objects/Misc/books.rsi
       scale: 0.8, 0.8
       layers:
       - state: docs1
@@ -126,7 +126,7 @@
     - type: InteractionOutline
     - type: Pullable
     - type: Sprite
-      sprite: Objects/Misc/books.rsi
+      sprite: _Stalker/Objects/Misc/books.rsi
       scale: 0.8, 0.8
       layers:
       - state: docs1
@@ -180,7 +180,7 @@
   suffix: Stalker, книга, PodpivAss_Lex
   components:
   - type: Sprite
-    sprite: Objects/Misc/books.rsi
+    sprite: _Stalker/Objects/Misc/books.rsi
     layers:
     - state: book_seraphim
   - type: ActivatableUI
@@ -199,7 +199,7 @@
   suffix: Stalker, книга, Паломники
   components:
   - type: Sprite
-    sprite: Objects/Misc/books.rsi
+    sprite: _Stalker/Objects/Misc/books.rsi
     layers:
     - state: pilgrim_bible
   - type: ActivatableUI

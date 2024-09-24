@@ -46,7 +46,7 @@
     proto: Bullet6mmBuckshot
     count: 9
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Ammunition/Casings/shotgun_shell.rsi
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Casings/shotgun_shell.rsi
     layers:
       - state: express
         map: [ "enum.AmmoVisualLayers.Base" ]
@@ -65,7 +65,7 @@
     - ShellShotgun
     - CartridgeShotgunBullet
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Ammunition/Casings/shotgun_shell.rsi
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Casings/shotgun_shell.rsi
     layers:
       - state: bullet
         map: [ "enum.AmmoVisualLayers.Base" ]
@@ -84,7 +84,7 @@
     - ShellShotgun
     - CartridgeShotgunBulletRIP
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Ammunition/Casings/shotgun_shell.rsi
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Casings/shotgun_shell.rsi
     layers:
       - state: bullet_RIP
         map: [ "enum.AmmoVisualLayers.Base" ]
@@ -103,7 +103,7 @@
     - ShellShotgun
     - CartridgeShotgunDart
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Ammunition/Casings/shotgun_shell.rsi
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Casings/shotgun_shell.rsi
     layers:
       - state: zabIl
         map: [ "enum.AmmoVisualLayers.Base" ]
@@ -131,7 +131,7 @@
   - type: CartridgeAmmo
     proto: Bullet8mmBuckshot
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Ammunition/Casings/shotgun_shell.rsi
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Casings/shotgun_shell.rsi
     layers:
       - state: magnum
         map: [ "enum.AmmoVisualLayers.Base" ]
@@ -144,7 +144,7 @@
   - type: CartridgeAmmo
     proto: BulletShotgunFlechette
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Ammunition/Casings/shotgun_shell.rsi
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Casings/shotgun_shell.rsi
     layers:
       - state: flechette
         map: [ "enum.AmmoVisualLayers.Base" ]

@@ -11,3 +11,16 @@
     sprite: _Stalker/Clothing/Hands/Gloves/mitts.rsi
   - type: Fiber
     fiberColor: fibers-black
+
+- type: entity
+  parent: ClothingHandsBase
+  id: ClothingHandsGlovesJabs
+  name: перчатки жаб
+  suffix: Stalker
+  description: Уникальные боевые перчатки группировки Жабы.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/gloves/hands_jaba.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/gloves/hands_jaba.rsi
+  - type: Insulated

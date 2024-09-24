@@ -9,7 +9,14 @@
 # Table: null
 
 # Stalker Upstream 23/9/2024
+SurveillanceCameraWirelessRouterBase: SurveillanceCameraWirelessRouterBase
 
+# 22.09.2024 - Stalker 14
+NPCDollarTrader: null
+
+# 03.09.2024 - Stalker 14
+Lep1: STPowerlines1
+Lep2: STPowerlines2
 
 # 2023-07-03
 ClothingHeadHelmetHelmet: ClothingHeadHelmetBasic

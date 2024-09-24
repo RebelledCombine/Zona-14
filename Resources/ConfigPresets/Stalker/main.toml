@@ -1,7 +1,7 @@
 [game]
 hostname = "☢️ Corvax — S.T.A.L.K.E.R. ☣️"
 desc = "Server at S.T.A.L.K.E.R. setting.\nIn devlopment."
-map_pool = "StalkerDefaultMapPool"
+map_pool = "StalkerMapPool"
 maxplayers = 80
 soft_max_players = 60
 map_rotation = false
