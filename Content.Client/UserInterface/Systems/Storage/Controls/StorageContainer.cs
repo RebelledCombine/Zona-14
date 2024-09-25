@@ -1,6 +1,7 @@
-﻿using System.Diagnostics.CodeAnalysis;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Numerics;
+using Content.Client._Stalker.Utilities.BoxExtensions;
 using Content.Client.Hands.Systems;
 using Content.Client.Items.Systems;
 using Content.Client.Storage.Systems;
@@ -51,6 +52,34 @@ public sealed class StorageContainer : BaseWindow
     private readonly string _sidebarFatTexturePath = "Storage/sidebar_fat";
     private Texture? _sidebarFatTexture;
 
+    // Stalker-Changes-Start
+    private readonly Dictionary<ConnectionState, Texture?> _textureMapping;
+    private record ConnectionState(bool Top, bool Bottom, bool Left, bool Right);
+    public event Action? OnCraftButtonPressed;
+    public event Action? OnDisassembleButtonPressed;
+    private readonly string _addTexturePath = "Storage/tile_empty_add";
+    private Texture? _addEmptyTexture;
+    private readonly string _bottomLeftTexturePath = "Storage/tile_empty_bottom_left";
+    private Texture? _bottomLeftEmptyTexture;
+    private readonly string _topLeftTexturePath = "Storage/tile_empty_top_left";
+    private Texture? _topLeftEmptyTexture;
+    private readonly string _bottomRightTexturePath = "Storage/tile_empty_bottom_right";
+    private Texture? _bottomRightEmptyTexture;
+    private readonly string _topRightTexturePath = "Storage/tile_empty_top_right";
+    private Texture? _topRightEmptyTexture;
+    private readonly string _leftBoundaryTexturePath = "Storage/tile_empty_boundary_left";
+    private Texture? _leftBoundaryEmptyTexture;
+    private readonly string _rightBoundaryTexturePath = "Storage/tile_empty_boundary_right";
+    private Texture? _rightBoundaryEmptyTexture;
+    private readonly string _bottomBoundaryTexturePath = "Storage/tile_empty_boundary_bottom";
+    private Texture? _bottomBoundaryEmptyTexture;
+    private readonly string _topBoundaryTexturePath = "Storage/tile_empty_boundary_top";
+    private Texture? _topBoundaryEmptyTexture;
+    private readonly string _craftTexturePath = "Storage/craft";
+    private Texture? _craftTexture;
+    private readonly string _disassebleTexturePath = "Storage/disasseble";
+    private Texture? _disassembleTexture;
+    // Stalker-Changes-End
     public StorageContainer()
     {
         IoCManager.InjectDependencies(this);
@@ -105,12 +134,35 @@ public sealed class StorageContainer : BaseWindow
         };
 
         AddChild(container);
+
+        _textureMapping = new Dictionary<ConnectionState, Texture?>
+        {
+            { new ConnectionState(true, true, true, true), _emptyTexture },
+            { new ConnectionState(true, false, false, true), _bottomRightEmptyTexture },
+            { new ConnectionState(true, false, true, false), _bottomLeftEmptyTexture },
+            { new ConnectionState(false, true, false, true), _topRightEmptyTexture },
+            { new ConnectionState(false, true, true, false), _topLeftEmptyTexture },
+            { new ConnectionState(false, true, true, true), _topBoundaryEmptyTexture },
+            { new ConnectionState(true, true, false, true), _rightBoundaryEmptyTexture },
+            { new ConnectionState(true, true, true, false), _leftBoundaryEmptyTexture },
+            { new ConnectionState(true, false, true, true), _bottomBoundaryEmptyTexture }
+        };
     }
 
     protected override void OnThemeUpdated()
     {
         base.OnThemeUpdated();
-
+        // Stalker-Changes-Start
+        _addEmptyTexture = Theme.ResolveTextureOrNull(_addTexturePath)?.Texture;
+        _bottomLeftEmptyTexture = Theme.ResolveTextureOrNull(_bottomLeftTexturePath)?.Texture;
+        _topLeftEmptyTexture = Theme.ResolveTextureOrNull(_topLeftTexturePath)?.Texture;
+        _bottomRightEmptyTexture = Theme.ResolveTextureOrNull(_bottomRightTexturePath)?.Texture;
+        _topRightEmptyTexture = Theme.ResolveTextureOrNull(_topRightTexturePath)?.Texture;
+        _leftBoundaryEmptyTexture = Theme.ResolveTextureOrNull(_leftBoundaryTexturePath)?.Texture;
+        _rightBoundaryEmptyTexture = Theme.ResolveTextureOrNull(_rightBoundaryTexturePath)?.Texture;
+        _bottomBoundaryEmptyTexture = Theme.ResolveTextureOrNull(_bottomBoundaryTexturePath)?.Texture;
+        _topBoundaryEmptyTexture = Theme.ResolveTextureOrNull(_topBoundaryTexturePath)?.Texture;
+        // Stalker-Changes-End
         _emptyTexture = Theme.ResolveTextureOrNull(_emptyTexturePath)?.Texture;
         _blockedTexture = Theme.ResolveTextureOrNull(_blockedTexturePath)?.Texture;
         _emptyOpaqueTexture = Theme.ResolveTextureOrNull(_emptyOpaqueTexturePath)?.Texture;
@@ -145,6 +197,54 @@ public sealed class StorageContainer : BaseWindow
         #region Sidebar
         _sidebar.Children.Clear();
         _sidebar.Rows = boundingGrid.Height + 1;
+        var craftButton = new TextureButton // Stalker-Changes-Start
+        {
+            TextureNormal = _craftTexture,
+            Scale = new Vector2(2, 2),
+            Visible = comp.Craft,
+        };
+        craftButton.OnPressed += _ => OnCraftButtonPressed?.Invoke();
+        var diassembleButton = new TextureButton
+        {
+            TextureNormal = _disassembleTexture,
+            Scale = new Vector2(2, 2),
+            Visible = comp.Disassemble
+        };
+        diassembleButton.OnPressed += _ => OnDisassembleButtonPressed?.Invoke();
+
+        var craftContainer = new BoxContainer
+        {
+            Children =
+            {
+                new TextureRect
+                {
+                    Texture = boundingGrid.Height == 1 ? _sidebarBottomTexture : _sidebarMiddleTexture,
+                    TextureScale = new Vector2(2, 2),
+                    Children =
+                    {
+                        craftButton
+                    }
+                }
+            }
+        };
+        var disassembleContainer = new BoxContainer
+        {
+            Children =
+            {
+                new TextureRect
+                {
+                    Texture = boundingGrid.Height == 1 ? _sidebarBottomTexture : _sidebarMiddleTexture,
+                    TextureScale = new Vector2(2, 2),
+                    Children =
+                    {
+                        diassembleButton
+                    }
+                }
+            }
+        };
+
+        // Stalker-Changes-End
+
         var exitButton = new TextureButton
         {
             TextureNormal = _entity.System<StorageSystem>().OpenStorageAmount == 1
@@ -183,7 +283,9 @@ public sealed class StorageContainer : BaseWindow
             }
         };
         _sidebar.AddChild(exitContainer);
-        for (var i = 0; i < boundingGrid.Height - 1; i++)
+        _sidebar.AddChild(craftContainer); // Stalker-Changes
+        _sidebar.AddChild(disassembleContainer); // Stalker-Changes
+        for (var i = 0; i < boundingGrid.Height - 3; i++) // Stalker-Changes
         {
             _sidebar.AddChild(new TextureRect
             {
@@ -192,14 +294,17 @@ public sealed class StorageContainer : BaseWindow
             });
         }
 
-        if (boundingGrid.Height > 0)
+        if (boundingGrid.Height != 1) // Stalker-Changes-Start
         {
-            _sidebar.AddChild(new TextureRect
+            if (boundingGrid.Height > 0)
             {
-                Texture = _sidebarBottomTexture,
-                TextureScale = new Vector2(2, 2),
-            });
-        }
+                _sidebar.AddChild(new TextureRect
+                {
+                    Texture = _sidebarBottomTexture,
+                    TextureScale = new Vector2(2, 2),
+                });
+            }
+        } // Stalker-Changes-End
 
         #endregion
 
@@ -228,7 +333,7 @@ public sealed class StorageContainer : BaseWindow
             for (var x = boundingGrid.Left; x <= boundingGrid.Right; x++)
             {
                 var texture = comp.Grid.Contains(x, y)
-                    ? emptyTexture
+                    ? GetAppropriateTexture(comp.Grid, new Vector2i(x, y)) // Stalker-Changes
                     : blockedTexture;
 
                 _backgroundGrid.AddChild(new TextureRect
@@ -510,4 +615,22 @@ public sealed class StorageContainer : BaseWindow
 
         _entity.System<StorageSystem>().CloseStorageWindow(StorageEntity.Value);
     }
+
+
+// Stalker-Changes-starts
+
+    private Texture? GetAppropriateTexture(List<Box2i> grid, Vector2i position)
+    {
+        var hashSet = new HashSet<Vector2i>(grid.SelectMany(BoxExtensions.GetAllPoints));
+
+        var top = hashSet.Contains(position - Vector2i.Up);
+        var bottom = hashSet.Contains(position - Vector2i.Down);
+        var left = hashSet.Contains(position - Vector2i.Left);
+        var right = hashSet.Contains(position - Vector2i.Right);
+
+        ConnectionState key = new(top, bottom, left, right);
+
+        return _textureMapping.GetValueOrDefault(key, _addEmptyTexture);
+    }
+// Stalker-Changes-Ends
 }

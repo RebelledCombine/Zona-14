@@ -2,6 +2,7 @@ using Robust.Client.UserInterface.Controls;
 using Robust.Client.UserInterface.CustomControls;
 using Robust.Shared.Timing;
 using static Robust.Client.UserInterface.Controls.BoxContainer;
+using System.Numerics;
 
 namespace Content.Client.Strip
 {
@@ -18,6 +19,7 @@ namespace Content.Client.Strip
         {
             var box = new BoxContainer() { Orientation = LayoutOrientation.Vertical, Margin = new Thickness(0, 8) };
             Contents.AddChild(box);
+            MinSize = new Vector2(305, 530); // Stalker-Changes-UI
             box.AddChild(SnareContainer);
             box.AddChild(HandsContainer);
             box.AddChild(InventoryContainer);

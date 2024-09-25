@@ -20,6 +20,7 @@ using Content.Shared.Administration.Logs;
 using Content.Client.Lobby;
 using Content.Shared.Administration.Managers;
 using Content.Shared.Players.PlayTimeTracking;
+using Content.Client._Stalker.Sponsors;
 
 namespace Content.Client.IoC
 {
@@ -51,6 +52,7 @@ namespace Content.Client.IoC
             collection.Register<ISharedPlaytimeManager, JobRequirementsManager>();
             collection.Register<MappingManager>();
             collection.Register<DebugMonitorManager>();
+            collection.Register<SponsorsManager>(); // Stalker-Changes
         }
     }
 }

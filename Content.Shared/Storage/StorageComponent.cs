@@ -131,6 +131,22 @@ namespace Content.Shared.Storage
         [DataField]
         public bool HideStackVisualsWhenClosed = true;
 
+        // stalker-changes-start
+        /// <summary>
+        /// Makes crafting button visible
+        /// This needed to make a crafting bench xd
+        /// </summary>
+        [DataField("craft")]
+        public bool Craft;
+
+        /// <summary>
+        /// Makes dissasemble button visible
+        /// This needed to make a disassembling branch
+        /// </summary>
+        [DataField]
+        public bool Disassemble = false;
+        // stalker-changes-ends
+
         [Serializable, NetSerializable]
         public enum StorageUiKey : byte
         {

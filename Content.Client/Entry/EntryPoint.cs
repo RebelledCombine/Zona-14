@@ -1,3 +1,5 @@
+using Content.Client._Stalker.Overlays;
+using Content.Client._Stalker.Sponsors;
 using Content.Client.Administration.Managers;
 using Content.Client.Changelog;
 using Content.Client.Chat.Managers;
@@ -71,6 +73,7 @@ namespace Content.Client.Entry
         [Dependency] private readonly ILogManager _logManager = default!;
         [Dependency] private readonly ContentReplayPlaybackManager _replayMan = default!;
         [Dependency] private readonly DebugMonitorManager _debugMonitorManager = default!;
+        [Dependency] private readonly SponsorsManager _sponsors = default!; // Stalker-Changes-Sponsors
 
         public override void Init()
         {
@@ -153,6 +156,7 @@ namespace Content.Client.Entry
 
             _overlayManager.AddOverlay(new SingularityOverlay());
             _overlayManager.AddOverlay(new RadiationPulseOverlay());
+            _overlayManager.AddOverlay(new VignetteOverlay()); // Stalker-Changes-Vignette
             _chatManager.Initialize();
             _clientPreferencesManager.Initialize();
             _euiManager.Initialize();
@@ -160,6 +164,7 @@ namespace Content.Client.Entry
             _userInterfaceManager.SetDefaultTheme("SS14DefaultTheme");
             _userInterfaceManager.SetActiveTheme(_configManager.GetCVar(CVars.InterfaceTheme));
             _documentParsingManager.Initialize();
+            _sponsors.Initialize(); // Stalker-Changes-Sponsors
 
             _baseClient.RunLevelChanged += (_, args) =>
             {
