@@ -73,4 +73,7 @@ public sealed partial class ProjectileComponent : Component
     /// </summary>
     [DataField]
     public bool DamagedEntity;
+
+    [DataField("projectileClass", false, 1, false, false, null)]
+    public int? ProjectileClass; // Stalker-Changes
 }

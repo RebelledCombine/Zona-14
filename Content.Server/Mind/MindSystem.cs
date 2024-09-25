@@ -2,6 +2,7 @@ using Content.Server.Administration.Logs;
 using Content.Server.GameTicking;
 using Content.Server.Ghost;
 using Content.Server.Mind.Commands;
+using Content.Shared._Stalker.RespawnContainer;
 using Content.Shared.Database;
 using Content.Shared.Ghost;
 using Content.Shared.Mind;
@@ -24,6 +25,7 @@ public sealed class MindSystem : SharedMindSystem
     [Dependency] private readonly GhostSystem _ghosts = default!;
     [Dependency] private readonly SharedTransformSystem _transform = default!;
     [Dependency] private readonly PvsOverrideSystem _pvsOverride = default!;
+    [Dependency] private readonly SharedRespawnContainerSystem _respawn = default!; // Stalker-Changes
 
     public override void Initialize()
     {
@@ -145,7 +147,10 @@ public sealed class MindSystem : SharedMindSystem
         // Do this AFTER the entity changes above as this will fire off a player-detached event
         // which will run ghosting twice.
         if (GetSession(mind) is { } session)
+        {
+            _respawn.Visit(session, entity); // Stalker-Changes-Respawn
             _players.SetAttachedEntity(session, entity);
+        }
 
         Log.Info($"Session {mind.Session?.Name} visiting entity {entity}.");
     }
@@ -167,7 +172,10 @@ public sealed class MindSystem : SharedMindSystem
 
         var owned = mind.OwnedEntity;
         if (GetSession(mind) is { } session)
+        {
+            _respawn.UnVisit(session, owned); // Stalker-Changes-Respawn
             _players.SetAttachedEntity(session, owned);
+        }
 
         if (owned.HasValue)
         {
@@ -220,6 +228,8 @@ public sealed class MindSystem : SharedMindSystem
 
             entity = Spawn(GameTicker.ObserverPrototypeName, position);
             component = EnsureComp<MindContainerComponent>(entity.Value);
+            if (TryComp<RespawnContainerComponent>(mind.OwnedEntity, out var respawnCont)) // Stalker-Changes-Respawn
+                _respawn.TransferTo((mind.OwnedEntity.Value, respawnCont), entity.Value);
             var ghostComponent = Comp<GhostComponent>(entity.Value);
             _ghosts.SetCanReturnToBody(ghostComponent, false);
         }
@@ -263,6 +273,8 @@ public sealed class MindSystem : SharedMindSystem
 
         if (entity != null)
         {
+            if (TryComp<RespawnContainerComponent>(oldEntity, out var respawnContainer)) // Stalker-Changes-Respawn
+                _respawn.TransferTo((oldEntity.Value, respawnContainer), entity.Value);
             component!.Mind = mindId;
             mind.OwnedEntity = entity;
             mind.OriginalOwnedEntity ??= GetNetEntity(mind.OwnedEntity);

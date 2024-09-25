@@ -1,5 +1,6 @@
 namespace Content.Server.Cargo.Components;
 using Content.Shared.Actions;
+using Content.Shared.Whitelist;
 using Robust.Shared.Serialization.TypeSerializers.Implementations;
 
 /// <summary>
@@ -23,4 +24,12 @@ public sealed partial class CargoPalletComponent : Component
     /// </summary>
     [DataField]
     public BuySellType PalletType;
+
+    // Stalker-Changes-Start
+    /// <summary>
+    /// Which entities can be sold by that pallet. If empty, everything can be sold.
+    /// </summary>
+    [DataField]
+    public EntityWhitelist? Whitelist = null;
+    // Stalker-Changes-End
 }

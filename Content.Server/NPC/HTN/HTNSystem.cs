@@ -152,7 +152,11 @@ public sealed class HTNSystem : EntitySystem
             // If we're over our max count or it's not MapInit then ignore the NPC.
             if (count >= maxUpdates)
                 break;
-
+            // Stalker-Changes-Start
+            // ignore NPC if its paused(e.g on paused map)
+            if (Paused(uid) || !comp.Enabled) // Stalker-Changes
+                continue;
+            // Stalker-Changes-End
             if (comp.PlanningJob != null)
             {
                 if (comp.PlanningJob.Exception != null)

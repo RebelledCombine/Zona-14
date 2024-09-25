@@ -124,7 +124,8 @@ namespace Content.Shared.Damage
         ///     null if the user had no applicable components that can take damage.
         /// </returns>
         public DamageSpecifier? TryChangeDamage(EntityUid? uid, DamageSpecifier damage, bool ignoreResistances = false,
-            bool interruptsDoAfters = true, DamageableComponent? damageable = null, EntityUid? origin = null)
+            bool interruptsDoAfters = true, DamageableComponent? damageable = null, EntityUid? origin = null,
+            List<EntityUid>? ignoreResistors = null) // Stalker-Changes
         {
             if (!uid.HasValue || !_damageableQuery.Resolve(uid.Value, ref damageable, false))
             {
@@ -154,7 +155,7 @@ namespace Content.Shared.Damage
                     damage = DamageSpecifier.ApplyModifierSet(damage, modifierSet);
                 }
 
-                var ev = new DamageModifyEvent(damage, origin);
+                var ev = new DamageModifyEvent(damage, origin, ignoreResistors);
                 RaiseLocalEvent(uid.Value, ev);
                 damage = ev.Damage;
 
@@ -310,7 +311,7 @@ namespace Content.Shared.Damage
             OriginalDamage = damage;
             Damage = damage;
             Origin = origin;
-            IgnoreResistors = ignoreResistors ?? new List<EntityUid>();
+            IgnoreResistors = ignoreResistors ?? new List<EntityUid>();  // stalker-changes
         }
     }
 

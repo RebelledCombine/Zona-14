@@ -6,6 +6,13 @@ namespace Content.Server.NPC.HTN;
 [RegisterComponent]
 public sealed partial class HTNComponent : NPCComponent
 {
+    // Stalker-Changes-Start
+    [ViewVariables(VVAccess.ReadOnly)]
+    public bool Enabled = true;
+
+    [ViewVariables(VVAccess.ReadOnly), DataField]
+    public float UpdateRange = 30f;
+    // Stalker-Changes-End
     /// <summary>
     /// The base task to use for planning
     /// </summary>

@@ -23,5 +23,8 @@ namespace Content.Shared.Damage
 
         [DataField("flatReductions", customTypeSerializer: typeof(PrototypeIdDictionarySerializer<float, DamageTypePrototype>))]
         public Dictionary<string, float> FlatReduction = new();
+
+        [DataField]
+        public int Class = 0; // Stalker-Changes
     }
 }

@@ -1,3 +1,4 @@
+using Content.Server.Administration;
 using Content.Server.Popups;
 using Content.Shared.Administration;
 using Content.Shared.Mind;
@@ -5,7 +6,7 @@ using Robust.Shared.Console;
 
 namespace Content.Server.Ghost
 {
-    [AnyCommand]
+    [AdminCommand(AdminFlags.Adminhelp)] // Stalker-Changes
     public sealed class GhostCommand : IConsoleCommand
     {
         [Dependency] private readonly IEntityManager _entities = default!;

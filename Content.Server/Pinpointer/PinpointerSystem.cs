@@ -100,6 +100,7 @@ public sealed class PinpointerSystem : SharedPinpointerSystem
         while (query.MoveNext(out var uid, out var pinpointer))
         {
             UpdateDirectionToTarget(uid, pinpointer);
+            LocateTarget(uid, pinpointer); // Stalker-Changes
         }
     }
 

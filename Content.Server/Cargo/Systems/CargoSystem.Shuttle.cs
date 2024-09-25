@@ -245,7 +245,7 @@ public sealed partial class CargoSystem
         amount = 0;
         toSell = new HashSet<EntityUid>();
 
-        foreach (var (palletUid, _, _) in GetCargoPallets(gridUid, BuySellType.Sell))
+        foreach (var (palletUid, pallet, _) in GetCargoPallets(gridUid, BuySellType.Sell)) // Stalker-Changes
         {
             // Containers should already get the sell price of their children so can skip those.
             _setEnts.Clear();
@@ -268,6 +268,11 @@ public sealed partial class CargoSystem
 
                 if (_blacklistQuery.HasComponent(ent))
                     continue;
+
+                // Stalker-Changes-Start
+                if (_whitelistSys.IsWhitelistFail(pallet.Whitelist, ent))
+                    continue;
+                // Stalker-Changes-End
 
                 var price = _pricing.GetPrice(ent);
                 if (price == 0)

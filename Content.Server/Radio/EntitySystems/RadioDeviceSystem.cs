@@ -7,11 +7,15 @@ using Content.Server.Power.EntitySystems;
 using Content.Server.Radio.Components;
 using Content.Server.Speech;
 using Content.Server.Speech.Components;
+using Content.Shared._Stalker.RadioStalker;
+using Content.Shared._Stalker.RadioStalker.Components;
 using Content.Shared.Examine;
 using Content.Shared.Interaction;
 using Content.Shared.Power;
 using Content.Shared.Radio;
 using Content.Shared.Radio.Components;
+using Content.Shared.UserInterface;
+using Robust.Server.GameObjects;
 using Robust.Shared.Prototypes;
 
 namespace Content.Server.Radio.EntitySystems;
@@ -27,6 +31,7 @@ public sealed class RadioDeviceSystem : EntitySystem
     [Dependency] private readonly RadioSystem _radio = default!;
     [Dependency] private readonly InteractionSystem _interaction = default!;
     [Dependency] private readonly SharedAppearanceSystem _appearance = default!;
+    [Dependency] private readonly UserInterfaceSystem _ui = default!; // Stalker-Changes
 
     // Used to prevent a shitter from using a bunch of radios to spam chat.
     private HashSet<(string, EntityUid)> _recentlySent = new();
@@ -49,6 +54,11 @@ public sealed class RadioDeviceSystem : EntitySystem
         SubscribeLocalEvent<IntercomComponent, ToggleIntercomMicMessage>(OnToggleIntercomMic);
         SubscribeLocalEvent<IntercomComponent, ToggleIntercomSpeakerMessage>(OnToggleIntercomSpeaker);
         SubscribeLocalEvent<IntercomComponent, SelectIntercomChannelMessage>(OnSelectIntercomChannel);
+
+        SubscribeLocalEvent<RadioStalkerComponent, BeforeActivatableUIOpenEvent>(OnBeforeRadioUiOpen); // Stalker-Changes
+        SubscribeLocalEvent<RadioStalkerComponent, ToggleRadioMicMessage>(OnToggleRadioMic); // Stalker-Changes
+        SubscribeLocalEvent<RadioStalkerComponent, ToggleRadioSpeakerMessage>(OnToggleRadioSpeaker); // Stalker-Changes
+        //SubscribeLocalEvent<RadioStalkerComponent, SelectRadioChannelMessage>(OnSelectRadioChannel); // Stalker-Changes ST-TODO. I have no idea what this method is supposed to do. Removed it for now
     }
 
     public override void Update(float frameTime)
@@ -281,4 +291,41 @@ public sealed class RadioDeviceSystem : EntitySystem
             speaker.Channels = new(){ channel };
         Dirty(ent);
     }
+
+ // Stalker-Changes
+    private void OnBeforeRadioUiOpen(EntityUid uid, RadioStalkerComponent component, BeforeActivatableUIOpenEvent args)
+    {
+        UpdateRadioUi(uid);
+    }
+    private void OnToggleRadioMic(EntityUid uid, RadioStalkerComponent component, ToggleRadioMicMessage args)
+    {
+        if (component.RequiresPower)
+            return;
+
+        SetMicrophoneEnabled(uid, args.Actor, args.Enabled, true);
+        SetSpeakerEnabled(uid, args.Actor, false, true);
+        UpdateRadioUi(uid);
+    }
+    private void OnToggleRadioSpeaker(EntityUid uid, RadioStalkerComponent component, ToggleRadioSpeakerMessage args)
+    {
+        if (component.RequiresPower && !this.IsPowered(uid, EntityManager))
+            return;
+
+        SetSpeakerEnabled(uid, args.Actor, args.Enabled, true);
+        SetMicrophoneEnabled(uid, args.Actor, false, true);
+        UpdateRadioUi(uid);
+    }
+
+
+    private void UpdateRadioUi(EntityUid uid)
+    {
+        var micComp = CompOrNull<RadioMicrophoneComponent>(uid);
+        var speakerComp = CompOrNull<RadioSpeakerComponent>(uid);
+
+        var micEnabled = micComp?.Enabled ?? false;
+        var speakerEnabled = speakerComp?.Enabled ?? false;
+        var state = new RadioStalkerBoundUIState(micEnabled, speakerEnabled);
+        _ui.SetUiState(uid, RadioStalkerUiKey.Key, state);
+    }
+ // Stalker-Changes-Ends
 }
