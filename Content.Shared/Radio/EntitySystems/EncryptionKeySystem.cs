@@ -1,4 +1,5 @@
 using System.Linq;
+using Content.Shared._Stalker.RadioStalker.Components;
 using Content.Shared.Chat;
 using Content.Shared.DoAfter;
 using Content.Shared.Examine;
@@ -99,7 +100,7 @@ public sealed partial class EncryptionKeySystem : EntitySystem
         if (args.Handled)
             return;
 
-        if (HasComp<EncryptionKeyComponent>(args.Used))
+        if (HasComp<EncryptionKeyComponent>(args.Used) || HasComp<ConfigurableEncryptionKeyComponent>(args.Used)) // Stalker-Changes
         {
             args.Handled = true;
             TryInsertKey(uid, component, args);

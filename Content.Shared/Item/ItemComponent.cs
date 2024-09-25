@@ -60,6 +60,14 @@ public sealed partial class ItemComponent : Component
     /// </summary>
     [DataField, AutoNetworkedField]
     public Vector2i StoredOffset;
+
+    // Stalker-Changes-Start
+    /// <summary>
+    /// Do this item needs to be multiplied with weight when thrown
+    /// </summary>
+    [DataField, ViewVariables(VVAccess.ReadWrite)]
+    public bool MultiplyWeight;
+    // Stalker-Changes-End
 }
 
 /// <summary>

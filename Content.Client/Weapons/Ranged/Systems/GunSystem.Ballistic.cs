@@ -32,7 +32,6 @@ public sealed partial class GunSystem
         {
             var existing = component.Entities[^1];
             component.Entities.RemoveAt(component.Entities.Count - 1);
-            component.EntProtos.RemoveAt(component.EntProtos.Count - 1); // Stalker-Changes
 
             Containers.Remove(existing, component.Container);
             EnsureShootable(existing);
@@ -40,11 +39,8 @@ public sealed partial class GunSystem
         else if (component.UnspawnedCount > 0)
         {
             component.UnspawnedCount--;
-            var copy = component.EntProtos;
-            copy.Reverse();
             ent = Spawn(component.Proto, coordinates);
             EnsureShootable(ent.Value);
-            component.EntProtos.RemoveAt(0); // Stalker-Changes
         }
 
         if (ent != null && IsClientSide(ent.Value))

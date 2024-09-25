@@ -12,7 +12,7 @@ namespace Content.Shared.FixedPoint
     [Serializable, CopyByRef]
     public struct FixedPoint2 : ISelfSerialize, IComparable<FixedPoint2>, IEquatable<FixedPoint2>, IFormattable
     {
-        public int Value { get; private set; }
+        public int Value { get; set; } // Stalker-Changes-Serialization
         private const int Shift = 2;
         private const int ShiftConstant = 100; // Must be equal to pow(10, Shift)
 

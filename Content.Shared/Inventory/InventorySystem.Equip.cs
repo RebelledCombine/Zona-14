@@ -11,6 +11,7 @@ using Content.Shared.Item;
 using Content.Shared.Movement.Systems;
 using Content.Shared.Popups;
 using Content.Shared.Strip.Components;
+using Content.Shared.Tag;
 using Content.Shared.Whitelist;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Containers;
@@ -32,6 +33,7 @@ public abstract partial class InventorySystem
     [Dependency] private readonly IGameTiming _gameTiming = default!;
     [Dependency] private readonly SharedTransformSystem _transform = default!;
     [Dependency] private readonly EntityWhitelistSystem _whitelistSystem = default!;
+    [Dependency] private readonly TagSystem _tagSystem = default!; // Stalker-Changes
 
     [ValidatePrototypeId<ItemSizePrototype>]
     private const string PocketableItemSize = "Small";
@@ -50,6 +52,8 @@ public abstract partial class InventorySystem
         if(!TryGetSlot(uid, args.Container.ID, out var slotDef, inventory: component))
             return;
 
+        HideSlotsOnConcealerUnequip(uid, component, args.Container.ID); // stalker-changes
+
         var unequippedEvent = new DidUnequipEvent(uid, args.Entity, slotDef);
         RaiseLocalEvent(uid, unequippedEvent, true);
 
@@ -62,6 +66,7 @@ public abstract partial class InventorySystem
         if(!TryGetSlot(uid, args.Container.ID, out var slotDef, inventory: component))
            return;
 
+        HideSlotsOnConcealerEquip(uid, component, args.Container.ID); // stalker-changes
         var equippedEvent = new DidEquipEvent(uid, args.Entity, slotDef);
         RaiseLocalEvent(uid, equippedEvent, true);
 
@@ -234,6 +239,37 @@ public abstract partial class InventorySystem
 
         Resolve(itemUid, ref clothing, ref item, false);
 
+        if (slot == "mask" && TryGetSlotEntity(target, "head", out var headItem, inventory)) // Stalker-Changes-Start
+        {
+            if (_tagSystem.HasTag(itemUid, "BlockMask") && _tagSystem.HasTag(headItem.Value, "BlockMask"))
+            {
+                return false;
+            }
+        }
+
+        if (slot == "head" && TryGetSlotEntity(target, "mask", out var maskItem, inventory))
+        {
+            if (_tagSystem.HasTag(itemUid, "BlockMask") && _tagSystem.HasTag(maskItem.Value, "BlockMask"))
+            {
+                return false;
+            }
+        }
+
+        if (slot == "belt" && TryGetSlotEntity(target, "outerClothing", out var outerItem, inventory))
+        {
+            if (_tagSystem.HasTag(itemUid, "BlockBelt") && _tagSystem.HasTag(outerItem.Value, "BlockBelt"))
+            {
+                return false;
+            }
+        }
+
+        if (slot == "outerClothing" && TryGetSlotEntity(target, "belt", out var beltItem, inventory))
+        {
+            if (_tagSystem.HasTag(itemUid, "BlockBelt") && _tagSystem.HasTag(beltItem.Value, "BlockBelt"))
+            {
+                return false;
+            }
+        } // Stalker-Changes-End
         if (slotDefinition == null && !TryGetSlot(target, slot, out slotDefinition, inventory: inventory))
             return false;
 
@@ -467,6 +503,45 @@ public abstract partial class InventorySystem
         if ((containerSlot == null || slotDefinition == null) && !TryGetSlotContainer(target, slot, out containerSlot, out slotDefinition, inventory))
             return false;
 
+        if (slot == "mask" && TryGetSlotEntity(target, "head", out var headItem, inventory) && // Stalker-Changes-Start
+            TryGetSlotEntity(target, slot, out var maskItem, inventory))
+        {
+            if (_tagSystem.HasTag(maskItem.Value, "BlockMask") && _tagSystem.HasTag(headItem.Value, "BlockMask"))
+            {
+                reason = "You need to unequip your mask or hat first";
+                return false;
+            }
+        }
+
+        else if (slot == "belt" && TryGetSlotEntity(target, "outerClothing", out var outerItem, inventory) &&
+            TryGetSlotEntity(target, slot, out var beltItem, inventory))
+        {
+            if (_tagSystem.HasTag(beltItem.Value, "BlockBelt") && _tagSystem.HasTag(outerItem.Value, "BlockBelt"))
+            {
+                reason = "You need to unequip your belt or outer first";
+                return false;
+            }
+        }
+
+        else if (slot == "head" && TryGetSlotEntity(target, "mask", out var maskItemReverse, inventory) &&
+            TryGetSlotEntity(target, slot, out var headItemRevert, inventory))
+        {
+            if (_tagSystem.HasTag(maskItemReverse.Value, "BlockMask") && _tagSystem.HasTag(headItemRevert.Value, "BlockMask"))
+            {
+                reason = "You need to unequip your mask or hat first";
+                return false;
+            }
+        }
+
+        else if (slot == "outerClothing" && TryGetSlotEntity(target, "belt", out var beltItemReverse, inventory) &&
+            TryGetSlotEntity(target, slot, out var outerItemReverse, inventory))
+        {
+            if (_tagSystem.HasTag(beltItemReverse.Value, "BlockBelt") && _tagSystem.HasTag(outerItemReverse.Value, "BlockBelt"))
+            {
+                reason = "You need to unequip your belt or outer first";
+                return false;
+            }
+        } // Stalker-Changes-End
         if (containerSlot.ContainedEntity is not {} itemUid)
             return false;
 

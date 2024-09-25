@@ -36,6 +36,9 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Robust.Shared.Serialization;
 using Robust.Shared.Utility;
+using Content.Shared.Access.Systems;
+using Content.Shared._Stalker.PullDoAfter;
+using Content.Shared.Hands;
 
 namespace Content.Shared.Storage.EntitySystems;
 
@@ -61,6 +64,8 @@ public abstract class SharedStorageSystem : EntitySystem
     [Dependency] protected readonly UseDelaySystem UseDelay = default!;
     [Dependency] private readonly EntityWhitelistSystem _whitelistSystem = default!;
     [Dependency] private readonly ISharedAdminLogManager _adminLog = default!;
+    [Dependency] private readonly SharedPullDoAfterSystem _pullDoAfter = default!; // Stalker-Changes
+    [Dependency] private readonly AccessReaderSystem _access = default!; // Stalker-Changes
 
     private EntityQuery<ItemComponent> _itemQuery;
     private EntityQuery<StackComponent> _stackQuery;
@@ -133,6 +138,7 @@ public abstract class SharedStorageSystem : EntitySystem
         SubscribeAllEvent<StorageSaveItemLocationEvent>(OnSaveItemLocation);
 
         SubscribeLocalEvent<StorageComponent, GotReclaimedEvent>(OnReclaimed);
+        SubscribeLocalEvent<StorageComponent, PullDoAfterEvent>(OnPull); // Stalker-Changes
 
         CommandBinds.Builder
             .Bind(ContentKeyFunctions.OpenBackpack, InputCmdHandler.FromDelegate(HandleOpenBackpack, handle: false))
@@ -361,6 +367,10 @@ public abstract class SharedStorageSystem : EntitySystem
     /// <returns>true if inserted, false otherwise</returns>
     private void OnInteractUsing(EntityUid uid, StorageComponent storageComp, InteractUsingEvent args)
     {
+        // Stalker-Changes-Start
+        if (!_access.IsAllowed(args.User, args.Target))
+            return;
+        // Stalker-Changes-End
         if (args.Handled || !CanInteract(args.User, (uid, storageComp), storageComp.ClickInsert, false))
             return;
 
@@ -381,9 +391,12 @@ public abstract class SharedStorageSystem : EntitySystem
     /// </summary>
     private void OnActivate(EntityUid uid, StorageComponent storageComp, ActivateInWorldEvent args)
     {
+        // Stalker-Changes-Start
+        if (!_access.IsAllowed(args.User, args.Target))
+            return;
+        // Stalker-Changes-End
         if (args.Handled || !args.Complex || !CanInteract(args.User, (uid, storageComp), storageComp.ClickInsert))
             return;
-
         // Toggle
         if (_ui.IsUiOpen(uid, StorageComponent.StorageUiKey.Key, args.User))
         {
@@ -595,6 +608,15 @@ public abstract class SharedStorageSystem : EntitySystem
         // If the user's active hand is empty, try pick up the item.
         if (player.Comp.ActiveHandEntity == null)
         {
+            // Stalker-Changes-Start
+            var entity = GetEntity(msg.InteractedItemUid);
+            var uid = GetEntity(msg.StorageUid);
+            if (TryComp<PullDoAfterComponent>(entity, out var pullComp))
+            {
+                _pullDoAfter.StartInteractDoAfter((entity, pullComp), player, uid);
+                return;
+            }
+            // Stalker-Changes-End
             _adminLog.Add(
                 LogType.Storage,
                 LogImpact.Low,
@@ -643,7 +665,13 @@ public abstract class SharedStorageSystem : EntitySystem
     {
         if (!ValidateInput(args, msg.StorageEnt, msg.ItemEnt, out var player, out var storage, out var item))
             return;
-
+        // Stalker-Changes-Start
+        if (TryComp<PullDoAfterComponent>(item, out var pullComp))
+        {
+            _pullDoAfter.StartRemoveDoAfter((item, pullComp), player, storage);
+            return;
+        }
+        // Stalker-Changes-End
         _adminLog.Add(
             LogType.Storage,
             LogImpact.Low,
@@ -1050,6 +1078,8 @@ public abstract class SharedStorageSystem : EntitySystem
             _popupSystem.PopupClient(Loc.GetString("comp-storage-cant-insert"), uid, player);
             return false;
         }
+
+        RaiseLocalEvent(toInsert, new HandDeselectedEvent(player)); // Stalker-Changes
         return true;
     }
 
@@ -1521,6 +1551,53 @@ public abstract class SharedStorageSystem : EntitySystem
         item = new(itemUid.Value, itemComp);
         return true;
     }
+
+    // Stalker-Changes-Start
+    private void OnPull(Entity<StorageComponent> ent, ref PullDoAfterEvent args)
+    {
+        if (args.Target == null || args.Cancelled)
+            return;
+
+        var entity = args.Target.Value;
+
+        if (!TryComp<PullDoAfterComponent>(args.Target.Value, out _))
+            return;
+
+        var storageEnt = GetEntity(args.StorageEnt);
+        if (!TryComp<StorageComponent>(storageEnt, out var storageComp))
+            return;
+
+        if (args.Interact)
+        {
+            if (!TryComp(args.User, out HandsComponent? hands) || hands.Count == 0)
+                return;
+
+            if (_sharedHandsSystem.TryPickupAnyHand(args.User, entity, handsComp: hands)
+                && storageComp.StorageRemoveSound != null)
+                Audio.PlayPredicted(storageComp.StorageRemoveSound, storageEnt, args.User);
+            {
+                return;
+            }
+        }
+        TransformSystem.DropNextTo(entity, args.User);
+        Audio.PlayPredicted(storageComp.StorageRemoveSound, storageEnt, args.User);
+        var ev = new StorageAfterRemoveItemEvent(entity, storageEnt, args.User);
+        RaiseLocalEvent(args.User, ev, true);
+    }
+
+    public sealed class StorageAfterRemoveItemEvent : EntityEventArgs
+    {
+        public readonly EntityUid StorageEnt;
+        public readonly EntityUid ItemEnt;
+        public readonly EntityUid User;
+        public StorageAfterRemoveItemEvent(EntityUid itemEnt, EntityUid storageEnt, EntityUid user)
+        {
+            ItemEnt = itemEnt;
+            StorageEnt = storageEnt;
+            User = user;
+        }
+    }
+    // Stalker-Changes-End
 
     [Serializable, NetSerializable]
     protected sealed class StorageComponentState : ComponentState

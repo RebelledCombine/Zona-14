@@ -1,5 +1,7 @@
+using Content.Shared._Stalker.PullDoAfter;
 using Content.Shared.ActionBlocker;
 using Content.Shared.Containers.ItemSlots;
+using Content.Shared.DoAfter;
 using Content.Shared.Hands.Components;
 using Content.Shared.Hands.EntitySystems;
 using Content.Shared.Input;
@@ -11,6 +13,7 @@ using Content.Shared.Whitelist;
 using Robust.Shared.Containers;
 using Robust.Shared.Input.Binding;
 using Robust.Shared.Player;
+using Robust.Shared.Serialization;
 
 namespace Content.Shared.Interaction;
 
@@ -27,6 +30,7 @@ public sealed class SmartEquipSystem : EntitySystem
     [Dependency] private readonly SharedPopupSystem _popup = default!;
     [Dependency] private readonly ActionBlockerSystem _actionBlocker = default!;
     [Dependency] private readonly EntityWhitelistSystem _whitelistSystem = default!;
+    [Dependency] private readonly SharedDoAfterSystem _doAfter = default!;
 
     /// <inheritdoc/>
     public override void Initialize()
@@ -34,6 +38,7 @@ public sealed class SmartEquipSystem : EntitySystem
         CommandBinds.Builder
             .Bind(ContentKeyFunctions.SmartEquipBackpack, InputCmdHandler.FromDelegate(HandleSmartEquipBackpack, handle: false, outsidePrediction: false))
             .Bind(ContentKeyFunctions.SmartEquipBelt, InputCmdHandler.FromDelegate(HandleSmartEquipBelt, handle: false, outsidePrediction: false))
+            .Bind(ContentKeyFunctions.SmartEquipOuterClothing, InputCmdHandler.FromDelegate(HandleSmartEquipOuterClothing, handle: false, outsidePrediction: false))  //Stalker-Changes
             .Register<SmartEquipSystem>();
     }
 
@@ -121,7 +126,8 @@ public sealed class SmartEquipSystem : EntitySystem
             }
 
             _hands.TryDrop(uid, hands.ActiveHand, handsComp: hands);
-            _inventory.TryEquip(uid, handItem.Value, equipmentSlot, predicted: true, checkDoafter:true);
+            // _inventory.TryEquip(uid, handItem.Value, equipmentSlot, predicted: true, checkDoafter:true); // Stalker-Changes
+            _inventory.TryEquip(uid, handItem.Value, equipmentSlot, predicted: true, checkDoafter: true); // Stalker-Changes
             return;
         }
 
@@ -135,6 +141,13 @@ public sealed class SmartEquipSystem : EntitySystem
                     return;
                 case null:
                     var removing = storage.Container.ContainedEntities[^1];
+                    // Stalker-Changes-Start
+                    if (TryComp<PullDoAfterComponent>(removing, out var pullComp))
+                    {
+                        StartSmartRemoveDoAfter((removing, pullComp), uid, slotItem);
+                        return;
+                    }
+                    // Stalker-Changes-End
                     _container.RemoveEntity(slotItem, removing);
                     _hands.TryPickup(uid, removing, handsComp: hands);
                     return;
@@ -215,4 +228,45 @@ public sealed class SmartEquipSystem : EntitySystem
         _inventory.TryUnequip(uid, equipmentSlot, inventory: inventory, predicted: true, checkDoafter: true);
         _hands.TryPickup(uid, slotItem, handsComp: hands);
     }
+
+// Stalker-Changes-Start
+    private void HandleSmartEquipOuterClothing(ICommonSession? session)
+    {
+        HandleSmartEquip(session, "outerClothing");
+    }
+    private void StartSmartRemoveDoAfter(Entity<PullDoAfterComponent> used, EntityUid user, EntityUid container)
+    {
+        var args = new DoAfterArgs(EntityManager,
+            user, used.Comp.PullTime,
+            new SmartPullDoAfterEvent(GetNetEntity(container)), used, used, used)
+        {
+            BreakOnDamage = true,
+            BlockDuplicate = true,
+            BreakOnHandChange = true,
+            Hidden = used.Comp.Hidden,
+            NeedHand = true
+        };
+        _doAfter.TryStartDoAfter(args);
+    }
+
+    private void HandleDoAfter(Entity<PullDoAfterComponent> entity, ref SmartPullDoAfterEvent args)
+    {
+        if (args.Cancelled)
+            return;
+
+        _container.RemoveEntity(GetEntity(args.StorageEnt), entity);
+        _hands.TryPickup(args.User, entity);
+    }
 }
+
+[Serializable, NetSerializable]
+public sealed partial class SmartPullDoAfterEvent : SimpleDoAfterEvent
+{
+    public NetEntity StorageEnt;
+
+    public SmartPullDoAfterEvent(NetEntity storageEnt)
+    {
+        StorageEnt = storageEnt;
+    }
+}
+// Stalker-Changes-End

@@ -38,9 +38,6 @@ public sealed partial class BallisticAmmoProviderComponent : Component
     [DataField, AutoNetworkedField]
     public List<EntityUid> Entities = new();
 
-    [DataField, AutoNetworkedField]
-    public List<EntProtoId> EntProtos = new(); // stalker-changes
-
     /// <summary>
     /// Is the magazine allowed to be manually cycled to eject a cartridge.
     /// </summary>

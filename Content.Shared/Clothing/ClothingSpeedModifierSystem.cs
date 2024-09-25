@@ -7,6 +7,7 @@ using Content.Shared.Verbs;
 using Robust.Shared.Containers;
 using Robust.Shared.GameStates;
 using Robust.Shared.Utility;
+using Content.Shared.Armor;
 
 namespace Content.Shared.Clothing;
 
@@ -62,6 +63,9 @@ public sealed class ClothingSpeedModifierSystem : EntitySystem
     {
         if (!args.CanInteract || !args.CanAccess)
             return;
+
+        if (TryComp<ArmorComponent>(uid, out var armorComponent) && armorComponent.Hidden) // Stalker-Changes
+            return; // Stalker-Changes
 
         var walkModifierPercentage = MathF.Round((1.0f - component.WalkModifier) * 100f, 1);
         var sprintModifierPercentage = MathF.Round((1.0f - component.SprintModifier) * 100f, 1);

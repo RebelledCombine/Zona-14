@@ -15,7 +15,7 @@ public partial struct ReagentId : IEquatable<ReagentId>
 {
     // TODO rename data field.
     [DataField("ReagentId", customTypeSerializer: typeof(PrototypeIdSerializer<ReagentPrototype>), required: true)]
-    public string Prototype { get; private set; }
+    public string Prototype { get; set; } // Stalker-Changes-Serialization
 
     /// <summary>
     /// Any additional data that is unique to this reagent type. E.g., for blood this could be DNA data.

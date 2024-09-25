@@ -86,7 +86,7 @@ public partial class ListingData : IEquatable<ListingData>
         OriginalCost = originalCost;
         RestockTime = restockTime;
         DiscountDownTo = new Dictionary<ProtoId<CurrencyPrototype>, FixedPoint2>(dataDiscountDownTo);
-        Count = 1; // stalker-changes
+        Count = count ?? 1; // stalker-changes
     }
 
     [ViewVariables]

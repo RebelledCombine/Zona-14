@@ -11,11 +11,11 @@ namespace Content.Shared.Chemistry.Reagent;
 public partial struct ReagentQuantity : IEquatable<ReagentQuantity>
 {
     [DataField("Quantity", required:true)]
-    public FixedPoint2 Quantity { get; private set; }
+    public FixedPoint2 Quantity { get; set; } // Stalker-Changes-Serialization
 
     [IncludeDataField]
     [ViewVariables]
-    public ReagentId Reagent { get; private set; }
+    public ReagentId Reagent { get; set; } // Stalker-Changes-Serialization
 
     public ReagentQuantity(string reagentId, FixedPoint2 quantity, List<ReagentData>? data = null)
         : this(new ReagentId(reagentId, data), quantity)

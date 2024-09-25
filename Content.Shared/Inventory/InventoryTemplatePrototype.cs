@@ -39,7 +39,7 @@ public sealed partial class SlotDefinition
     [DataField("displayName", required: true)]
     public string DisplayName { get; private set; } = string.Empty;
 
-    [DataField("stripHidden")] public bool StripHidden { get; private set; }
+    [DataField("stripHidden")] public bool StripHidden { get; set; } // stalker-changes
 
     /// <summary>
     ///     Offset for the clothing sprites.

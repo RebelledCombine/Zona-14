@@ -6,14 +6,19 @@ using Robust.Shared.Containers;
 using Robust.Shared.Map;
 using Robust.Shared.Physics;
 using Robust.Shared.Physics.Components;
+using Content.Shared.DoAfter; // Stalker-Changes
+using Content.Shared.Inventory;
+using Robust.Shared.Serialization; // Stalker-Changes
 
 namespace Content.Shared.Hands.EntitySystems;
 
 public abstract partial class SharedHandsSystem : EntitySystem
 {
+    [Dependency] private readonly SharedDoAfterSystem _doAfter = default!; // Stalker-Changes
     private void InitializePickup()
     {
         SubscribeLocalEvent<HandsComponent, EntInsertedIntoContainerMessage>(HandleEntityInserted);
+        SubscribeLocalEvent<HandsComponent, PickupDoAfterEvent>(HandleDoAfter); // Stalker-Changes
     }
 
     protected virtual void HandleEntityInserted(EntityUid uid, HandsComponent hands, EntInsertedIntoContainerMessage args)
@@ -228,8 +233,26 @@ public abstract partial class SharedHandsSystem : EntitySystem
         var handContainer = hand.Container;
         if (handContainer == null || handContainer.ContainedEntity != null)
             return;
+        if (_inventory.TryGetSlots(uid, out var slots)) // Stalker-Changes-Start
+        {
+            var inserted = false;
+            foreach (var slot in slots)
+            {
+                if (_inventory.TryGetSlotEntity(uid, slot.Name, out var entityUid) && entityUid == entity)
+                {
+                    StartDoAfter(uid, entity, slot.Name, hand, null);
+                    inserted = true;
+                }
+            }
 
-        if (!ContainerSystem.Insert(entity, handContainer))
+            if (!inserted)
+            {
+                ContainerSystem.Insert(entity, handContainer);
+            }
+        }
+
+        else if // Stalker-Changes-End
+            (!ContainerSystem.Insert(entity, handContainer))
         {
             Log.Error($"Failed to insert {ToPrettyString(entity)} into users hand container when picking up. User: {ToPrettyString(uid)}. Hand: {hand.Name}.");
             return;
@@ -242,4 +265,78 @@ public abstract partial class SharedHandsSystem : EntitySystem
         if (hand == hands.ActiveHand)
             RaiseLocalEvent(entity, new HandSelectedEvent(uid), false);
     }
+    private void HandleDoAfter(EntityUid uid, HandsComponent component, PickupDoAfterEvent args) // Stalker-Changes-Start
+    {
+        if (args.Cancelled)
+            return;
+        var handContainer = args.Hand.Container;
+        if (!args.Used.HasValue)
+            return;
+        if (handContainer == null || ContainerSystem.Insert(args.Used.Value, handContainer))
+        {
+            Log.Error($"Failed to insert {ToPrettyString(args.Used.Value)} into users hand container when picking up. User: {ToPrettyString(uid)}. Hand: {args.Hand.Name}.");
+            return;
+        }
+        _adminLogger.Add(LogType.Pickup, LogImpact.Low, $"{ToPrettyString(uid):user} picked up {ToPrettyString(args.Used.Value):entity}");
+
+        Dirty(uid, component);
+
+        if (args.Hand == component.ActiveHand)
+            RaiseLocalEvent(args.Used.Value, new HandSelectedEvent(uid), false);
+    }
+    public bool StartDoAfter(EntityUid user, EntityUid? itemUid, string slot, Hand hand, ClothingComponent? clothing, bool check = true, bool animateUser = false, bool animate = true)
+    {
+        var time = TimeSpan.Zero;
+        if (itemUid != null)
+        {
+            if (!Resolve(itemUid.Value, ref clothing, false))
+                return false;
+            time = clothing.EquipDelay;
+        }
+        else
+        {
+            if (!_inventory.TryGetSlotEntity(user, slot, out var slotent))
+                time = TimeSpan.FromSeconds(1);
+            if (slotent.HasValue && Resolve(slotent.Value, ref clothing, false))
+                time = clothing.EquipDelay;
+        }
+        var args = new DoAfterArgs(EntityManager, user, time,
+            new PickupDoAfterEvent(check, animateUser, animate, hand),
+            user, user, itemUid)
+        {
+            BlockDuplicate = true,
+            DamageThreshold = 5,
+            BreakOnDamage = true
+        };
+        return _doAfter.TryStartDoAfter(args);
+    }
+
+    [Serializable, NetSerializable]
+    private sealed partial class PickupDoAfterEvent : DoAfterEvent
+    {
+        [DataField("checkActionBlocker", required: true)]
+        public bool CheckActionBlocker;
+
+        [DataField("animateUser", required: true)]
+        public bool AnimateUser;
+
+        [DataField("animate", required: true)]
+        public bool Animate;
+
+        [DataField("hand", required: true)]
+        public Hand Hand = default!;
+
+        private PickupDoAfterEvent()
+        {
+        }
+
+        public PickupDoAfterEvent(bool check, bool animateUser, bool animate, Hand hand)
+        {
+            CheckActionBlocker = check;
+            AnimateUser = animateUser;
+            Animate = animate;
+            Hand = hand;
+        }
+        public override DoAfterEvent Clone() => this;
+    } // Stalker-Changes-End
 }
