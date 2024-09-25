@@ -10,7 +10,7 @@ ent-STBoltBagOliveGrayFilled = { ent-STBoltBagOliveGray }
     .desc = { ent-STBoltBagOliveGray.desc }
     .suffix = Stalker, Заполненный
 #золотые болты, у сидора за 5к продаются
-ent-STBoltBagFilledGolden = мешок для болтов
+ent-STBoltBagGolden = мешок для болтов
     .desc = Позволяет вам носить ваши 3 тонны ЗОЛОТЫХ болтов для определения аномалий в зоне. Лучший друг богатого сталкера, который всегда выведет из трудной ситуации.
     .suffix = Stalker, Заполненный, Золотой
 ent-STBoltBagFilledGolden = { ent-STBoltBag }

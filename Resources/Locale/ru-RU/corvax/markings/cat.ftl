@@ -3,6 +3,7 @@ marking-CatTailStripes = Кошачий хвост (Полосатый)
 marking-CatTailStripes-tail_cat_wag_stripes_prime = Первичные полосы
 marking-CatTailStripes-tail_cat_wag_stripes_second = Вторичные полосы
 marking-CatEars = Кошачьи ушки
+marking-CatTail = Кошачий хвост
 marking-CatEars-ears_cat_outer = Наружное ухо
 marking-CatEars-ears_cat_inner = Внутреннее ухо
 marking-CatEarsStubby = Короткие ушки

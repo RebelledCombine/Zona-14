@@ -1,11 +1,15 @@
 - type: entity
   save: false
   parent:
-  - BaseMob
-  - MobDamageable
-  - MobPolymorphable
-  - MobCombat
-  - StripableInventoryBase
+    - BaseMob
+    - MobDamageable
+    - MobCombat
+    - MobCharacteristics
+    - MobWeight
+    - MobAnomalyTarget
+    - MobLay
+    - MobPolymorphable
+    - StripableInventoryBase
   id: BaseMobSpecies
   abstract: true
   components:
