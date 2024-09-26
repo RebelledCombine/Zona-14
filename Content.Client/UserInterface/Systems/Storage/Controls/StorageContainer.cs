@@ -162,6 +162,8 @@ public sealed class StorageContainer : BaseWindow
         _rightBoundaryEmptyTexture = Theme.ResolveTextureOrNull(_rightBoundaryTexturePath)?.Texture;
         _bottomBoundaryEmptyTexture = Theme.ResolveTextureOrNull(_bottomBoundaryTexturePath)?.Texture;
         _topBoundaryEmptyTexture = Theme.ResolveTextureOrNull(_topBoundaryTexturePath)?.Texture;
+        _craftTexture = Theme.ResolveTextureOrNull(_craftTexturePath)?.Texture;
+        _disassembleTexture = Theme.ResolveTextureOrNull(_disassebleTexturePath)?.Texture;
         // Stalker-Changes-End
         _emptyTexture = Theme.ResolveTextureOrNull(_emptyTexturePath)?.Texture;
         _blockedTexture = Theme.ResolveTextureOrNull(_blockedTexturePath)?.Texture;

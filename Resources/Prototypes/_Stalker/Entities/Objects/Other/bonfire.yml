@@ -15,7 +15,6 @@
   - type: AlwaysHot
   - type: Tag
     tags:
-      - NoPaint
       - Structure
   - type: TimedDespawn
     lifetime: 600
@@ -46,9 +45,6 @@
     sound:
       path: /Audio/Ambience/Objects/fireplace.ogg
   - type: AlwaysHot
-  - type: Tag
-    tags:
-      - NoPaint
   - type: TimedDespawn
     lifetime: 300
   - type: SpawnOnDespawn

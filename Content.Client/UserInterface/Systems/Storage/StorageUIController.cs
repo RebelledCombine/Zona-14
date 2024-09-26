@@ -7,6 +7,7 @@ using Content.Client.UserInterface.Systems.Hotbar.Widgets;
 using Content.Client.UserInterface.Systems.Storage.Controls;
 using Content.Client.Verbs.UI;
 using Content.Shared.CCVar;
+using Content.Shared.Crafting.Events;
 using Content.Shared.Input;
 using Content.Shared.Interaction;
 using Content.Shared.Item;
@@ -216,11 +217,15 @@ public sealed class StorageUIController : UIController, IOnSystemChanged<Storage
         {
             container.OnPiecePressed -= OnPiecePressed;
             container.OnPieceUnpressed -= OnPieceUnpressed;
+            container.OnCraftButtonPressed -= OnCraftButtonPressed; // stalker-changes
+            container.OnDisassembleButtonPressed -= OnDisassembleButtonPressed; // stalker-changes
         }
 
         _container = container;
         container.OnPiecePressed += OnPiecePressed;
         container.OnPieceUnpressed += OnPieceUnpressed;
+        container.OnCraftButtonPressed += OnCraftButtonPressed; // stalker-changes
+        container.OnDisassembleButtonPressed += OnDisassembleButtonPressed;  // stalker-changes
 
         if (!StaticStorageUIEnabled)
             _container.Orphan();
@@ -386,4 +391,21 @@ public sealed class StorageUIController : UIController, IOnSystemChanged<Storage
         if (!StaticStorageUIEnabled && _container?.Parent != null && _lastContainerPosition != null)
             _lastContainerPosition = _container.GlobalPosition;
     }
+    // stalker-changes-start
+    private void OnCraftButtonPressed()
+    {
+        if (_container?.StorageEntity is not { } storageEnt)
+            return;
+        _entity.RaisePredictiveEvent(new CraftStartedEvent(
+            _entity.GetNetEntity(storageEnt)));
+    }
+
+    private void OnDisassembleButtonPressed()
+    {
+        if (_container?.StorageEntity is not { } storageEnt)
+            return;
+        _entity.RaisePredictiveEvent(new DisassembleStartedEvent(_entity.GetNetEntity(storageEnt)));
+    }
+
+    // stalker-changes-end
 }

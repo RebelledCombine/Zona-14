@@ -91,6 +91,8 @@ public abstract partial class SharedGunSystem : EntitySystem
         InitializeContainer();
         InitializeSolution();
 
+        InitializeModule(); // stalker-changes
+
         // Interactions
         SubscribeLocalEvent<GunComponent, GetVerbsEvent<AlternativeVerb>>(OnAltVerb);
         SubscribeLocalEvent<GunComponent, ExaminedEvent>(OnExamine);
@@ -591,4 +593,10 @@ public enum AmmoVisuals : byte
     HasAmmo, // used for generic visualizers. c# stuff can just check ammocount != 0
     MagLoaded,
     BoltClosed,
+    // stalker-changes
+    MuzzleEquiped,
+    ScopeEquiped,
+    UnderbarrelEquiped,
+    SelectiveFireEquiped
+    // stalker-changes ends
 }
