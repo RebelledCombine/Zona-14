@@ -28,7 +28,7 @@
   - type: Tag
     tags:
     - HidesHair
-    - HidesBeard
+    # - HidesBeard
 
 - type: entity
   parent: ClothingMaskBase
@@ -44,7 +44,7 @@
   - type: Tag
     tags:
     - HidesHair
-    - HidesBeard
+    # - HidesBeard
 
 - type: entity
   parent: ClothingMaskBase
@@ -61,7 +61,7 @@
   - type: Tag
     tags:
     - HidesHair
-    - HidesBeard
+    # - HidesBeard
 
 - type: entity
   parent: ClothingMaskBase
@@ -78,7 +78,7 @@
   - type: Tag
     tags:
     - HidesHair
-    - HidesBeard
+    # - HidesBeard
 
 - type: entity
   parent: ClothingMaskBase
@@ -95,7 +95,7 @@
   - type: Tag
     tags:
     - HidesHair
-    - HidesBeard
+    # - HidesBeard
 
 - type: entity
   parent: ClothingMaskBase
@@ -112,7 +112,7 @@
   - type: Tag
     tags:
     - HidesHair
-    - HidesBeard
+    # - HidesBeard
 
 - type: entity
   parent: ClothingMaskBase
@@ -163,7 +163,7 @@
   - type: Tag
     tags:
     - HidesHair
-    - HidesBeard
+    # - HidesBeard
 
 - type: entity
   parent: ClothingMaskBase
@@ -181,7 +181,7 @@
   - type: Tag
     tags:
     - HidesHair
-    - HidesBeard
+    # - HidesBeard
 
 - type: entity
   parent: ClothingMaskBase

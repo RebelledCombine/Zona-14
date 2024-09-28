@@ -16,7 +16,7 @@
 - type: gameMap
   id: Dev
   mapName: Dev
-  mapPath: /Maps/_StalkerMaps/dev_map.yml #stalker-changes
+  mapPath: /Maps/Test/dev_map.yml
   minPlayers: 0
   stations:
     Dev:

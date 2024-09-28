@@ -1,0 +1,4 @@
+- type: mapLoader
+  id: STDefault
+  mapPaths:
+    town: "/Maps/_ST/World/town.yml"
