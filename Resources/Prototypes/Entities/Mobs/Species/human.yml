@@ -21,7 +21,6 @@
     - Hair
     - Snout
   - type: Inventory
-    templateId: stalkerhuman
     femaleDisplacements:
       jumpsuit:
         sizeMaps:

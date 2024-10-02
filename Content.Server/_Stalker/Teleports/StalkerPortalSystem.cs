@@ -1,3 +1,4 @@
+using System.Linq;
 using System.Numerics;
 using Content.Server._Stalker.Sponsors;
 using Content.Server._Stalker.StalkerDB;
@@ -23,6 +24,7 @@ namespace Content.Server._Stalker.Teleports;
 
 public sealed class StalkerPortalSystem : SharedTeleportSystem
 {
+    [Dependency] private readonly MapSystem _mapSystem = default!;
     [Dependency] private readonly IMapManager _mapManager = default!;
     [Dependency] private readonly MapLoaderSystem _map = default!;
     [Dependency] private readonly MetaDataSystem _metaDataSystem = default!;
@@ -126,12 +128,15 @@ public sealed class StalkerPortalSystem : SharedTeleportSystem
 
             SetReturnPortal(stalkerTeleportData.GridId,teleportName,returnTeleportEntityUid);
 
-            return (stalkerTeleportData.MapId,stalkerTeleportData.GridId);
+            return (stalkerTeleportData.MapId, stalkerTeleportData.GridId);
         }
 
         ArenaMap[admin.UserId] = _mapManager.GetMapEntityId(_mapManager.CreateMap());
         _metaDataSystem.SetEntityName(ArenaMap[admin.UserId], $"STALKER_MAP-{admin.Name}");
-        var grids = _map.LoadMap(Comp<MapComponent>(ArenaMap[admin.UserId]).MapId, ArenaMapPath);
+
+        var map = Comp<MapComponent>(ArenaMap[admin.UserId]);
+
+        var grids = _mapManager.GetAllMapGrids(map.MapId).Select(mc => mc.Owner).ToList();
         if (grids.Count != 0)
         {
             _metaDataSystem.SetEntityName(grids[0], $"STALKER_GRID-{admin.Name}");

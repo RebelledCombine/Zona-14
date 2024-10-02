@@ -12,5 +12,5 @@ public sealed partial class DuplicateTeleportComponent : Component
     public float MaxWeight;
 
     [DataField("mapPath")]
-    public string ArenaMapPath = "/Maps/_StalkerMaps/PersonalStalkerArena/StalkerMap.yml";
+    public string ArenaMapPath = "/Maps/_ST/PersonalStalkerArena/StalkerMap.yml";
 }

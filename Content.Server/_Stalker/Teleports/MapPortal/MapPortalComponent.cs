@@ -1,4 +1,4 @@
-﻿using Robust.Shared.Map;
+using Robust.Shared.Map;
 
 namespace Content.Server._Stalker.Teleports.MapPortal;
 
@@ -19,7 +19,7 @@ public sealed partial class MapPortalComponent : Component
     // Stores id of the created map.
     // TODO: It shouldn't be string type, make it MapId class.
     [DataField("mapId")]
-    public int MapId;
+    public MapId MapId;
 
     public bool Loading;
 

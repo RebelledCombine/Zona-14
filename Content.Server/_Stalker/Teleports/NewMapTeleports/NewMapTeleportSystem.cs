@@ -1,5 +1,7 @@
 using System.Linq;
+using System.Threading.Tasks;
 using Content.Server._Stalker.IncomingDamage;
+using Content.Server.GameTicking;
 using Content.Server.GameTicking.Events;
 using Content.Shared._Stalker.Teleport;
 using Content.Shared.Access.Systems;
@@ -21,6 +23,7 @@ namespace Content.Server._Stalker.Teleports.NewMapTeleports;
 public sealed class NewMapTeleportSystem : SharedTeleportSystem
 {
     [Dependency] private readonly IMapManager _mapManager = default!;
+    [Dependency] private readonly MapSystem _mapSystem = default!;
     [Dependency] private readonly MapLoaderSystem _mapLoader = default!;
     [Dependency] private readonly LinkedEntitySystem _link = default!;
     [Dependency] private readonly PullingSystem _pulling = default!;
@@ -41,10 +44,10 @@ public sealed class NewMapTeleportSystem : SharedTeleportSystem
 
         SubscribeLocalEvent<NewMapTeleportComponent, StartCollideEvent>(OnStartCollide);
         SubscribeLocalEvent<NewMapTeleportComponent, EndCollideEvent>(OnEndCollide);
-        SubscribeLocalEvent<RoundStartingEvent>(OnRoundStart);
+        //SubscribeLocalEvent<RoundStartedEvent>(OnRoundStart);
+        SubscribeLocalEvent<PostGameMapLoad>(OnPostGameMapLoad);
     }
-
-    private void OnRoundStart(RoundStartingEvent args)
+    private void OnPostGameMapLoad(PostGameMapLoad args)
     {
         var prototypes = _protoMan.EnumeratePrototypes<MapLoaderPrototype>();
         foreach (var prototype in prototypes)
@@ -104,11 +107,13 @@ public sealed class NewMapTeleportSystem : SharedTeleportSystem
 
     private void LoadMap(string path)
     {
-        var map = CreateValidId();
-        var mapId = new MapId(map);
-        if (_mapLoader.TryLoad(mapId, path, out _))
-            _mapManager.DoMapInitialize(mapId);
-        else _sawmill.Error($"Map with id {mapId} from {path} load failed.");
+        var map = _mapSystem.CreateMap(out var mapId);
+        if (_mapLoader.TryLoad(mapId, path, out _) && !_mapSystem.IsInitialized(mapId))
+        {
+            _mapSystem.InitializeMap(mapId);
+        }
+        if (!_mapSystem.IsInitialized(mapId))
+            _sawmill.Error($"Map with id {mapId} from {path} load failed.");
     }
     private void OnStartCollide(EntityUid uid, NewMapTeleportComponent component, ref StartCollideEvent args)
     {

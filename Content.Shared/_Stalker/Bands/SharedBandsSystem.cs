@@ -29,8 +29,8 @@ public sealed class SharedBandsSystem : EntitySystem
         EnsureComp<StatusIconComponent>(uid);
 
         var proto = _proto.Index<JobIconPrototype>(component.BandStatusIcon);
-        if (proto.HideOnStealth)
-            return;
+        //if (proto.HideOnStealth)
+        //    return;
         if (component is { AltBand: not null, CanChange: true })
             _actions.AddAction(uid, ref component.ActionChangeEntity, component.ActionChange, uid);
 
@@ -53,8 +53,8 @@ public sealed class SharedBandsSystem : EntitySystem
         RemComp<StatusIconComponent>(uid);
 
         var proto = _proto.Index<JobIconPrototype>(component.BandStatusIcon);
-        if (proto.HideOnStealth)
-            return;
+        //if (proto.HideOnStealth)
+        //    return;
 
         _actions.RemoveAction(uid, component.ActionEntity);
         if (component.ActionChangeEntity != null)
@@ -66,8 +66,8 @@ public sealed class SharedBandsSystem : EntitySystem
             return;
 
         var proto = _proto.Index<JobIconPrototype>(component.BandStatusIcon);
-        if (proto.HideOnStealth)
-            return;
+        //if (proto.HideOnStealth)
+        //    return;
 
         component.Enabled = !component.Enabled;
         Dirty(uid, component);

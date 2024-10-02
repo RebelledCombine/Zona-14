@@ -40,7 +40,7 @@
   - type: DuplicateTeleport
     prefix: WipeSafe_
     maxWeight: 0.5
-    mapPath: /Maps/_StalkerMaps/PersonalStalkerArena/WipeSafe.yml
+    mapPath: /Maps/_ST/PersonalStalkerArena/WipeSafe.yml
 
 - type: entity
   parent: StalkerDuplicateTeleportBase

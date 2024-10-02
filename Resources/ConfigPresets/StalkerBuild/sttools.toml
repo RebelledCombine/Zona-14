@@ -22,6 +22,7 @@ enabled = false
 auto_call_time = 0
 emergency = false
 arrivals = false
+preload_grids = false
 
 [ic]
 flavor_text = true
@@ -54,3 +55,11 @@ tags = "lang:ru,lang:en,rp:medium,region:eu_e"
 [events]
 # Annoying
 enabled = false
+
+[worldgen]
+enabled = false
+[procgen]
+preload = false
+[salvage]
+duration = 999999
+expedition_cooldown = 999999

@@ -1,4 +1,4 @@
-﻿using System.Linq;
+using System.Linq;
 using Robust.Shared.Map;
 
 namespace Content.Shared._Stalker.Teleport;
@@ -24,14 +24,6 @@ public abstract class SharedTeleportSystem : EntitySystem
         // raise after event for other systems to perform cleanup
         var ev = new AfterEntityTeleportedEvent(entity, originMapId, destinationMapId);
         RaiseLocalEvent(ref ev);
-    }
-    protected int CreateValidId()
-    {
-        var mapIds = _mapMan.GetAllMapIds();
-        var mapId = mapIds.LastOrDefault();
-        var map = (int)mapId + 1;
-
-        return map;
     }
 }
 

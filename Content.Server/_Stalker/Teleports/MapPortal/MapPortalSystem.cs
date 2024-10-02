@@ -16,11 +16,14 @@ namespace Content.Server._Stalker.Teleports.MapPortal;
 /// </summary>
 public sealed class MapPortalSystem : SharedTeleportSystem
 {
+    [Dependency] private readonly MapSystem _mapSystem = default!;
     [Dependency] private readonly MapLoaderSystem _mapLoader = default!;
     [Dependency] private readonly IRobustRandom _random = default!;
     [Dependency] private readonly IMapManager _mapManager = default!;
     [Dependency] private readonly LinkedEntitySystem _linkedEntitySystem = default!;
     [Dependency] private readonly PullingSystem _pulling = default!;
+    [Dependency] private readonly ILogManager _logManager = default!;
+    private ISawmill _sawmill = default!;
 
 
     public override void Initialize()
@@ -29,6 +32,7 @@ public sealed class MapPortalSystem : SharedTeleportSystem
 
         SubscribeLocalEvent<MapPortalComponent, StartCollideEvent>(OnStartCollide);
         SubscribeLocalEvent<MapPortalComponent, EndCollideEvent>(OnEndCollide);
+        _sawmill = _logManager.GetSawmill("MapPortalSystem");
     }
 
     private void OnStartCollide(EntityUid uid, MapPortalComponent component, ref StartCollideEvent args)
@@ -90,18 +94,17 @@ public sealed class MapPortalSystem : SharedTeleportSystem
 
         if (component.MapPath == null)
             return;
-        if (component.MapId != 0 && _mapManager.MapExists(new MapId(component.MapId)))
-        {
+        if (_mapSystem.MapExists(component.MapId))
             return;
-        }
 
-        component.MapId = CreateValidId();
-        var mapId = new MapId(component.MapId);
-        // Loads map from a specified path and initializes it.
-        _mapLoader.TryLoad(mapId, component.MapPath, out var grids);
+        var map = _mapSystem.CreateMap(out var mapId, true);
+        component.MapId = mapId;
+        //// Loads map from a specified path and initializes it.
+        if (!_mapLoader.TryLoad(mapId, component.MapPath, out var grids))
+            _sawmill.Error($"Map with id {mapId} from {component.MapPath} load failed.");
 
-        if (!_mapManager.IsMapInitialized(mapId))
-            _mapManager.DoMapInitialize(mapId);
+        //if (!_mapSystem.IsMapInitialized(mapId))
+        //    _mapManager.DoMapInitialize(mapId);
 
 
         Dirty(uid, component);

@@ -2,8 +2,7 @@
 # Straight in-game baby
 lobbyenabled = false
 # Dev map for faster loading & convenience
-map = "STDev" # st-changes-dev-map
-map_pool = "STDefaultMapPool"  # st-changes-map-pool
+map = "Dev"
 role_timers = false
 
 [ghost]

@@ -22,7 +22,7 @@ public sealed class StalkerBandTeleportSystem : SharedTeleportSystem
     [Dependency] private readonly StalkerStorageSystem _stalkerStorageSystem = default!;
     [Dependency] private readonly AccessReaderSystem _accessReaderSystem = default!;
     [Dependency] private readonly StalkerPortalSystem _stalkerPortals = default!;
-    private const string ArenaMapPath = "/Maps/_StalkerMaps/PersonalStalkerArena/StalkerMap.yml";
+    private const string ArenaMapPath = "/Maps/_ST/PersonalStalkerArena/StalkerMap.yml";
     private Dictionary<string, EntityUid> ArenaMap { get; } = new();
     private Dictionary<string, EntityUid?> ArenaGrid { get; } = new();
 

@@ -1,12 +1,11 @@
 [game]
 hostname = "☢️ S.T.A.L.K.E.R. Release."
 desc = "Server at S.T.A.L.K.E.R. setting.\nIn devlopment."
-map = "STWorld" # st-changes-dev-map
+#map = "STWorld" # st-changes-dev-map
 map_pool = "STDefaultMapPool"  # st-changes-map-pool
 
 maxplayers = 80
 soft_max_players = 60
-
 map_rotation = false
 role_timers = true
 peaceful_end = false
@@ -21,6 +20,7 @@ enabled = false
 auto_call_time = 0
 emergency = false
 arrivals = false
+preload_grids = false
 
 [ic]
 flavor_text = true
@@ -48,4 +48,13 @@ maxlinvelocity = 60.0
 
 [hub]
 advertise = false
-tags = "lang:ru,lang:en,rp:medium,region:eu_e"
+tags = "lang:ru,lang:en,rp:high,region:eu_e"
+
+[events]
+# Annoying
+enabled = false
+
+[worldgen]
+enabled = false
+[procgen]
+preload = false

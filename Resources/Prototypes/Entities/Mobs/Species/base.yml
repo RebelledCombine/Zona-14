@@ -285,6 +285,19 @@
         Asphyxiation: -1.0
   - type: FireVisuals
     alternateState: Standing
+    # stalker-changes-start
+  - type: Inventory
+    templateId: stalkerhuman
+  - type: PsyonicsShieldVisuals
+    sprite: _Stalker/Effects/psyonic_shield.rsi
+    state: Standing
+  - type: PsyonicsMeditationVisuals
+    sprite: _Stalker/Effects/psyonic_meditation.rsi
+    state: base
+  - type: PsyonicsLightVisuals
+    sprite: _Stalker/Effects/psyonic_light.rsi
+    state: base
+    # stalker-changes-end
 
 - type: entity
   save: false

@@ -7,7 +7,7 @@ namespace Content.Shared._Stalker.ZoneAnomaly.Effects.Components;
 public sealed partial class ZoneAnomalyEffectMapTeleporterComponent : Component
 {
     [DataField]
-    public ResPath MapPath = new("/Maps/_StalkerMaps/Anomaly/bubble_small.yml");
+    public ResPath MapPath = new("/Maps/_ST/Anomaly/bubble_small.yml");
 
     [DataField]
     public MapId? MapId;

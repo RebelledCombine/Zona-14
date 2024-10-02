@@ -28,7 +28,7 @@
   - type: Tag
     tags:
     - HidesHair
-    # - HidesBeard
+   # - HidesBeard
 
 - type: entity
   parent: ClothingMaskBase
