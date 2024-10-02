@@ -649,7 +649,7 @@
   - type: Pill
     pillType: 4
   - type: Sprite
-    state: pill22s
+    state: pill16
   - type: Label
     currentLabel: таблетка AquaTabs
   - type: SolutionContainerManager
