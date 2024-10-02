@@ -66,6 +66,7 @@
   objectType: Structure
   placementMode: SnapgridCenter
   canBuildInImpassable: false
+  hide: false
   conditions:
     - !type:TileNotBlocked
 
