@@ -19,6 +19,8 @@ using Robust.Shared.Utility;
 using static Content.Client.CharacterInfo.CharacterInfoSystem;
 using static Robust.Client.UserInterface.Controls.BaseButton;
 
+using HumanoidProfileCharacteristicControl = Content.Client._Stalker.Preferences.UI.HumanoidProfileCharacteristicControl; // stalker-changes
+
 namespace Content.Client.UserInterface.Systems.Character;
 
 [UsedImplicitly]
@@ -107,7 +109,7 @@ public sealed class CharacterUIController : UIController, IOnStateEntered<Gamepl
             return;
         }
 
-        var (entity, job, objectives, briefing, entityName) = data;
+        var (entity, job, objectives, briefing, characteristicsByType, entityName) = data; // stalker-changes
 
         _window.SpriteView.SetEntity(entity);
         _window.NameLabel.Text = entityName;
@@ -171,7 +173,26 @@ public sealed class CharacterUIController : UIController, IOnStateEntered<Gamepl
         }
 
         _window.RolePlaceholder.Visible = briefing == null && !controls.Any() && !objectives.Any();
+        UpdatedCharacteristics(data); // stalker-changes
     }
+    // stalker-changes-start
+    private void UpdatedCharacteristics(CharacterData characterData)
+    {
+        if (_window is null)
+            return;
+
+        _window.CharacteristicContainer.Children.Clear();
+
+        if (characterData.CharacteristicsByType == null)
+            return;
+
+        foreach (var (type, characteristic) in characterData.CharacteristicsByType)
+        {
+            var child = new HumanoidProfileCharacteristicControl(characteristic);
+            _window.CharacteristicContainer.Children.Add(child);
+        }
+    }
+    // stalker-changes-end
 
     private void CharacterDetached(EntityUid uid)
     {

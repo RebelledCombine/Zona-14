@@ -1,4 +1,5 @@
-﻿using Content.Shared.Objectives;
+using Content.Shared._Stalker.Characteristics;
+using Content.Shared.Objectives;
 using Robust.Shared.Serialization;
 
 namespace Content.Shared.CharacterInfo;
@@ -21,12 +22,19 @@ public sealed class CharacterInfoEvent : EntityEventArgs
     public readonly string JobTitle;
     public readonly Dictionary<string, List<ObjectiveInfo>> Objectives;
     public readonly string? Briefing;
+    public readonly Dictionary<CharacteristicType, Characteristic>? Characteristics; // stalker-changes
 
-    public CharacterInfoEvent(NetEntity netEntity, string jobTitle, Dictionary<string, List<ObjectiveInfo>> objectives, string? briefing)
+    public CharacterInfoEvent(
+        NetEntity netEntity,
+        string jobTitle,
+        Dictionary<string, List<ObjectiveInfo>> objectives,
+        Dictionary<CharacteristicType, Characteristic>? characteristicsByType, // stalker-changes
+        string? briefing)
     {
         NetEntity = netEntity;
         JobTitle = jobTitle;
         Objectives = objectives;
         Briefing = briefing;
+        Characteristics = characteristicsByType; // stalker-changes
     }
 }

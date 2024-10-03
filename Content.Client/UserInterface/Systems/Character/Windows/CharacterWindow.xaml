@@ -17,6 +17,10 @@
             <Label Name="ObjectivesLabel" Access="Public" Text="{Loc 'character-info-objectives-label'}" HorizontalAlignment="Center"/>
             <BoxContainer Orientation="Vertical" Name="Objectives" Access="Public"/>
             <cc:Placeholder Name="RolePlaceholder" Access="Public" PlaceholderText="{Loc 'character-info-roles-antagonist-text'}"/>
+<!--stalker-changes-start-->
+            <BoxContainer Name="CharacteristicContainer" Orientation="Vertical" Access="Public">
+            </BoxContainer>
+<!--stalker-changes-end-->
         </BoxContainer>
     </ScrollContainer>
 </windows:CharacterWindow>
