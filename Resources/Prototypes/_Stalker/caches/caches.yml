@@ -100,7 +100,7 @@
   - type: Clickable
   - type: Sprite
     noRot: true
-    sprite: Objects/Decoration/Flora/flora_rockssolid.rsi
+    sprite: _Stalker/Objects/Decoration/Flora/flora_rockssolid.rsi
     state: rocksolid01
   - type: Physics
     bodyType: Static
@@ -123,7 +123,7 @@
   - type: Clickable
   - type: Sprite
     noRot: true
-    sprite: Objects/Decoration/Flora/flora_rockssolid.rsi
+    sprite: _Stalker/Objects/Decoration/Flora/flora_rockssolid.rsi
     state: rocksolid02
   - type: Physics
     bodyType: Static

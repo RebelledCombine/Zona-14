@@ -1,0 +1,21 @@
+- type: weather
+  id: Rain
+  sprite:
+    sprite: /Textures/_Stalker/Effects/weather.rsi
+    state: rain
+  sound:
+    collection: Rain
+    params:
+      loop: true
+      volume: -8
+
+- type: weather
+  id: Storm
+  sprite:
+    sprite: /Textures/_Stalker/Effects/weather.rsi
+    state: storm
+  sound:
+    path: /Audio/Effects/Weather/rain_heavy.ogg
+    params:
+      loop: true
+      volume: -8
