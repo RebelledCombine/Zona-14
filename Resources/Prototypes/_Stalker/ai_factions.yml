@@ -11,6 +11,7 @@
     - Passive
     - Stalker
     - MutatedHunter
+    - NanoTrasen
 
 - type: npcFaction
   id: Stalker

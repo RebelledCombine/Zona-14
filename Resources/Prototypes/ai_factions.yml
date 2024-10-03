@@ -16,6 +16,7 @@
   - Xeno
   - Zombie
   - Revolutionary
+  - Mutated # stalker-changes
 
 - type: npcFaction
   id: Mouse
@@ -42,6 +43,7 @@
   - PetsNT
   - Zombie
   - Revolutionary
+  - Stalker # stalker-changes
 
 - type: npcFaction
   id: SimpleNeutral
