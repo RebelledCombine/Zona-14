@@ -1,3 +1,4 @@
+using Content.Server._Stalker.Mind;
 using Content.Server.Body.Components;
 using Content.Server.Ghost;
 using Content.Server.Humanoid;
@@ -10,6 +11,7 @@ using Content.Shared.Mobs.Systems;
 using Content.Shared.Movement.Events;
 using Content.Shared.Movement.Systems;
 using Robust.Shared.Audio;
+using Robust.Shared.Player;
 using Robust.Shared.Timing;
 using System.Numerics;
 
@@ -118,11 +120,12 @@ public sealed class BodySystem : SharedBodySystem
         var xform = Transform(bodyId);
         if (xform.MapUid is null)
             return new HashSet<EntityUid>();
-
+        TryComp<ActorComponent>(bodyId, out var actor); // stalker-changes
+        var session = actor?.PlayerSession; // stalker-changes
         var gibs = base.GibBody(bodyId, gibOrgans, body, launchGibs: launchGibs,
             splatDirection: splatDirection, splatModifier: splatModifier, splatCone:splatCone);
 
-        var ev = new BeingGibbedEvent(gibs);
+        var ev = new BeingGibbedEvent(gibs, session); // stalker-changes
         RaiseLocalEvent(bodyId, ref ev);
 
         QueueDel(bodyId);

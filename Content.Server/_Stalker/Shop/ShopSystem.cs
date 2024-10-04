@@ -416,7 +416,10 @@ public sealed class ShopSystem : SharedShopSystem
             var solPrice = 0.0d;
             if (TryComp<SolutionContainerManagerComponent>(item, out _))
             {
-                solPrice = _pricing.GetSolutionsPrice(item);
+                // ST-TODO: to be honest I don't think we really need it.
+                // Also it creates a headache going to food and medicine ingridients and
+                // making them cost 0 or balance it out
+                //solPrice = _pricing.GetSolutionsPrice(item);
             }
 
             var meta = MetaData(item);
