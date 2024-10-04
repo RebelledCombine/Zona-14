@@ -64,10 +64,11 @@ public abstract partial class SharedArmorSystem : EntitySystem
         var msg = new FormattedMessage();
         msg.AddMarkupOrThrow(Loc.GetString("armor-examine"));
 
+        msg.PushNewline(); // Stalker-Changes
+        msg.AddMarkup(Loc.GetString("armor-class-value", ("value", comp.ArmorClass ?? 0))); // Stalker-Changes
+
         foreach (var coefficientArmor in armorModifiers.Coefficients)
         {
-            msg.AddMarkup(Loc.GetString("armor-class-value", ("value", comp.ArmorClass ?? 0))); // Stalker-Changes
-
             msg.PushNewline();
 
             var armorType = Loc.GetString("armor-damage-type-" + coefficientArmor.Key.ToLower());
