@@ -11,10 +11,10 @@
     - name: Готовая продукция
       priority: 1
       items:
-        GroundCannabis: 30
+      # Don't add here anything that can be used to craft contraband-narcotics brickets
+      # it was easy money hack
         FoodBakedCannabisBrownie: 50
         SmokingPipeFilledCannabis: 100
-        LeavesCannabis: 35
         Blunt: 60
     - name: Садоводство
       priority: 2
