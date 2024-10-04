@@ -1,0 +1,15 @@
+- type: weather
+  id: STRain
+  suffix: ST
+  parent: Rain
+  sprite:
+    sprite: /Textures/_Stalker/Effects/weather.rsi
+    state: rain
+
+- type: weather
+  id: STStorm
+  parent: Storm
+  suffix: ST
+  sprite:
+    sprite: /Textures/_Stalker/Effects/weather.rsi
+    state: storm

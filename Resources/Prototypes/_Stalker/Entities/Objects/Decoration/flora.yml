@@ -714,3 +714,168 @@
           STLogStalkerT4:
             min: 1
             max: 2
+
+# КАМНИ
+# moved to _Stalker
+- type: entity
+  id: STBaseRock
+  parent: BaseRock
+  suffic: ST
+  abstract: true
+  components:
+  - type: Sprite
+    noRot: true
+    sprite: _Stalker/Objects/Decoration/Flora/flora_rockssolid.rsi
+
+- type: entity
+  parent: STBaseRock
+  id: STFloraRockSolid01
+  components:
+  - type: Sprite
+    state: rocksolid01
+
+- type: entity
+  parent: STBaseRock
+  id: STFloraRockSolid02
+  components:
+  - type: Sprite
+    state: rocksolid02
+
+- type: entity
+  parent: STBaseRock
+  id: STFloraRockSolid03
+  components:
+  - type: Sprite
+    state: rocksolid03
+
+# ДУБ small
+# moved to _Stalker
+
+- type: entity
+  id: STBaseTree
+  description: Yep, it's a tree.
+  parent: BaseTree
+  suffix: ST
+  abstract: true
+  components:
+  - type: Sprite
+    noRot: true
+    sprite: _Stalker/Objects/Decoration/Flora/flora_trees.rsi
+    drawdepth: Overdoors
+    offset: 0,0.9
+
+- type: entity
+  parent: STBaseTree
+  id: STFloraTree01
+  name: tree
+  components:
+  - type: Sprite
+    state: tree01
+
+- type: entity
+  parent: STBaseTree
+  id: STFloraTree02
+  name: tree
+  components:
+  - type: Sprite
+    state: tree02
+
+- type: entity
+  parent: STBaseTree
+  id: STFloraTree03
+  name: tree
+  components:
+  - type: Sprite
+    state: tree03
+
+- type: entity
+  parent: STBaseTree
+  id: STFloraTree04
+  name: tree
+  components:
+  - type: Sprite
+    state: tree04
+
+- type: entity
+  parent: STBaseTree
+  id: STFloraTree05
+  name: tree
+  components:
+  - type: Sprite
+    state: tree05
+
+- type: entity
+  parent: STBaseTree
+  id: STFloraTree06
+  name: tree
+  components:
+  - type: Sprite
+    state: tree06
+
+# Large
+
+- type: entity
+  parent: STBaseTree
+  id: STBaseTreeLarge
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Decoration/Flora/flora_treeslarge.rsi
+    offset: 0,1.55
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.18,-0.35,0.18,0.35"
+        density: 2000
+        layer:
+        - WallLayer
+
+- type: entity
+  parent: STBaseTreeLarge
+  id: STFloraTreeLarge01
+  name: large tree
+  components:
+  - type: Sprite
+    state: treelarge01
+
+- type: entity
+  parent: STBaseTreeLarge
+  id: STFloraTreeLarge02
+  name: large tree
+  components:
+  - type: Sprite
+    state: treelarge02
+
+- type: entity
+  parent: STBaseTreeLarge
+  id: STFloraTreeLarge03
+  name: large tree
+  components:
+  - type: Sprite
+    state: treelarge03
+
+- type: entity
+  parent: STBaseTreeLarge
+  id: STFloraTreeLarge04
+  name: large tree
+  components:
+  - type: Sprite
+    state: treelarge04
+
+- type: entity
+  parent: STBaseTreeLarge
+  id: STFloraTreeLarge05
+  name: large tree
+  components:
+  - type: Sprite
+    state: treelarge05
+
+- type: entity
+  parent: STBaseTreeLarge
+  id: STFloraTreeLarge06
+  name: large tree
+  components:
+  - type: Sprite
+    state: treelarge06
