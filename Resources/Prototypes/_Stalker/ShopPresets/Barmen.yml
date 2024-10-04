@@ -168,9 +168,9 @@
         radioprotectpill: 250
         psyblock: 550
         MedkitAI2: 350
-        Ointment: 50
-        Gauze: 30
-        Brutepack: 50
+        STOintment: 50
+        STGauze: 30
+        STBrutepack: 50
         Tourniquet: 80
         Bloodpack: 300
         MedkitMilitary: 400

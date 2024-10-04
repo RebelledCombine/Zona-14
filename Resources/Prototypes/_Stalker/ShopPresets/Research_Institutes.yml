@@ -141,9 +141,9 @@
         MedkitMilitary: 100
         MedkitScience: 200
         # Pack
-        Ointment: 10
-        Gauze: 10
-        Brutepack: 25
+        STOintment: 10
+        STGauze: 10
+        STBrutepack: 25
         Tourniquet: 50
         Bloodpack: 80
         # Back

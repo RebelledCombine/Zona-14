@@ -53,14 +53,14 @@
     psyblock: 5
     SelfSteampack: 10
     MedkitAI2: 25
-    Brutepack: 50
-    Gauze: 50
+    STBrutepack: 50
+    STGauze: 50
     MilitarySteampack: 5
     MedkitMilitary: 10
     antiradpill: 5
     STEnergyDrink: 5
     FoodBreadPlain: 100
-    Ointment: 50
+    STOintment: 50
     DrinkFlaskOld: 50
     DrinkWaterBottleFull: 50
     FoodTinMRE: 50
@@ -154,12 +154,12 @@
     PlicePmCrate: 15
     PillDexalin: 50
     MedkitAI2: 25
-    Brutepack: 50
-    Gauze: 50
+    STBrutepack: 50
+    STGauze: 50
     MedkitMilitary: 10
     antiradpill: 5
     FoodBreadPlain: 100
-    Ointment: 50
+    STOintment: 50
     DrinkFlaskOld: 50
     DrinkWaterBottleFull: 50
     FoodTinMRE: 50
@@ -218,13 +218,13 @@
     radioprotectpill: 5
     psyblock: 5
     MedkitAI2: 25
-    Brutepack: 50
-    Gauze: 50
+    STBrutepack: 50
+    STGauze: 50
     MedkitMilitary: 10
     antiradpill: 5
     STEnergyDrink: 5
     FoodBreadPlain: 100
-    Ointment: 50
+    STOintment: 50
     DrinkFlaskOld: 50
     DrinkWaterBottleFull: 50
     FoodTinMRE: 50

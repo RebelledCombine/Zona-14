@@ -1,5 +1,13 @@
 - type: entity
   parent: BaseHealingItem
+  abstract: true
+  id: STBaseHealingItem
+  components:
+  - type: Item
+    size: Tiny
+
+- type: entity
+  parent: STBaseHealingItem
   id: BaseMedkit
   suffix: Stalker
   abstract: true
@@ -19,6 +27,24 @@
     healingEndSound:
       path: "/Audio/Items/Medical/brutepack_end.ogg"
   - type: Stack
+
+- type: entity
+  parent: [STBaseHealingItem, Brutepack]
+  id: STBrutepack
+  name: набор от ушибов
+  description: помогает от физических повреждений
+
+- type: entity
+  parent: [STBaseHealingItem, Ointment]
+  id: STOintment
+  name: мазь
+  description: помогает от ожогов и обморожения
+
+- type: entity
+  parent: [STBaseHealingItem, Gauze]
+  id: STGauze
+  name: бинт
+  description: останавливает кровотечение
 
 - type: entity
   parent: BaseMedkit
