@@ -72,6 +72,13 @@ public sealed class ZoneAnomalyEffectGravityWellSystem : EntitySystem
             // Normalized vector pointing towards the epicenter
             var radialDirection = displacement / distance;
 
+            // **Adjust radial direction based on mode**
+            if (effect.Comp.Mode == ZoneAnomalyEffectGravityWellMode.Repel)
+            {
+                // Reverse the radial direction for repulsion
+                radialDirection = -radialDirection;
+            }
+
             // Perpendicular vector for tangential force (rotating around the center)
             var tangentialDirection = new Vector2(-radialDirection.Y, radialDirection.X);
 
@@ -90,9 +97,6 @@ public sealed class ZoneAnomalyEffectGravityWellSystem : EntitySystem
         }
     }
 
-
-
-
     private float GetScaling(Entity<ZoneAnomalyEffectGravityWellComponent> effect, float distance)
     {
         var maxDistance = effect.Comp.Distance;
@@ -102,10 +106,10 @@ public sealed class ZoneAnomalyEffectGravityWellSystem : EntitySystem
 
         switch (effect.Comp.Gradient)
         {
-            case ZoneAnomalyEffectGravityWellGradient.Liner:
+            case ZoneAnomalyEffectGravityWellGradient.Linear:
                 // Scaling increases linearly with distance
                 return distance / maxDistance;
-            case ZoneAnomalyEffectGravityWellGradient.ReversedLiner:
+            case ZoneAnomalyEffectGravityWellGradient.ReversedLinear:
                 // Scaling decreases linearly with distance
                 return 1f - (distance / maxDistance);
             default:

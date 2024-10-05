@@ -19,7 +19,7 @@
       period: 0.005
       radial: 40
       tangential: 0.1
-      gradient: Liner
+      gradient: Linear
     - type: Stealth
     - type: ZoneAnomalyEffectStealth
       idle: -0.3
@@ -74,7 +74,7 @@
       period: 0.005
       radial: 10
       tangential: 0.1
-      gradient: Liner
+      gradient: Linear
     - type: Stealth
     - type: ZoneAnomalyEffectStealth
       idle: -0.3

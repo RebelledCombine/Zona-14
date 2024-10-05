@@ -26,12 +26,22 @@ public sealed partial class ZoneAnomalyEffectGravityWellComponent : Component
 
     [DataField, ViewVariables(VVAccess.ReadWrite)]
     public float Tangential = 0.001f;
+
+    [DataField, ViewVariables(VVAccess.ReadWrite)]
+    public ZoneAnomalyEffectGravityWellMode Mode = ZoneAnomalyEffectGravityWellMode.Attract;
 }
 
 [Serializable, NetSerializable]
 public enum ZoneAnomalyEffectGravityWellGradient
 {
     Default,
-    Liner,
-    ReversedLiner,
+    Linear,
+    ReversedLinear,
+}
+
+[Serializable, NetSerializable]
+public enum ZoneAnomalyEffectGravityWellMode
+{
+    Attract,
+    Repel,
 }
