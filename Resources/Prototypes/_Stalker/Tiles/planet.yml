@@ -200,6 +200,9 @@
   suffix: ST
   name: tiles-dirt-floor
   sprite: /Textures/_Stalker/Tiles/Planet/dirt.rsi/dirt.png
+  variants: 1
+  placementVariants:
+  - 1.0
   isSubfloor: true
   footstepSounds:
     collection: FootstepAsteroid
