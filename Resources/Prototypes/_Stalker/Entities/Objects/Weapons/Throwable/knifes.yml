@@ -1,6 +1,6 @@
 - type: entity
   abstract: true
-  parent: CombatKnife
+  parent: STCombatKnife
   id: STThrowingKnifeBase
   description: Метательный нож. Оружие настоящих охотников.
   components:

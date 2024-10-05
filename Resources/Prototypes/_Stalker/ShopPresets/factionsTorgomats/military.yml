@@ -45,7 +45,7 @@
         STWeaponRifleStalkerAK74: 3
     - name: Броня
       priority: 2
-      items: 
+      items:
         STClothingOuterArmorLightPlateVestBaseMilitary: 1
         STClothingOuterArmorLightPlateVestBaseANAgreen: 2
         ClothingHeadHelmetSH68: 1
@@ -58,11 +58,11 @@
       items:
         45ACPLFMJBox: 1
         45ACPHydroshockBox: 3
-        754PCBox: 3 
+        754PCBox: 3
         751M80Box: 1
         751UNBox: 1
         754HPBox: 1
-        739PCBox: 4 
+        739PCBox: 4
         545BPBox: 3
         # 545BPBox: 1 T4 Ammo
         # 751M993Box: 2 T5 Ammo
@@ -73,7 +73,7 @@
         ClothingBeltMedicalStalker: 1
         ClothingBackpackTacticBlackStalker: 1
         ClothingBackpackTacticGreenStalker: 1
-        ClothingBackpackDuffelHikingCommon: 2    
+        ClothingBackpackDuffelHikingCommon: 2
         ClothingBackpackDuffelOliveTacticStalker: 2
         ClothingBackpackDuffelMilitaryOlive: 2
         ClothingBeltBandolierStalker: 1
@@ -99,7 +99,7 @@
       priority: 7
       items:
         DG05SmokeGrenade: 1
-        RGD5Grenade: 1   
+        RGD5Grenade: 1
         HydrocyanicGrenadeStalker: 3
     - name: Другое
       priority: 8
@@ -145,7 +145,7 @@
         # SupplyTalons: 1000
         ClothingHeadHatBeaniehat: 50
         ClothingMaskNeckFacemask: 50
-        CombatKnife: 10
+        STCombatKnife: 10
         Lighter: 30
         ClothingStalkerNeckToken: 5
         ClothingMaskNeckBalaklava1: 50

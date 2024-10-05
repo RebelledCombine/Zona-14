@@ -4,7 +4,7 @@
     - BananiumHorn # ProtoId of crafting result, this doesn't require amount or smth, because crafts will be recursive, and will continue until container is empty
   items:
     # ProtoId of item to use in crafting
-    CombatKnife:
+    STCombatKnife:
       # Required details for an item.
       amount: 1
       tag: true

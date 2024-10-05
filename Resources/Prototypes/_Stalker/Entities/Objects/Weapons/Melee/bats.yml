@@ -20,7 +20,7 @@
     - type: UseDelay
       delay: 1
     - type: StaminaDamageOnHit
-      damage: 30
+      damage: 50
     - type: MeleeWeapon
       wideAnimationRotation: -135
       damage:

@@ -106,7 +106,7 @@
     - name: Утилиты
       priority: 5
       items:
-        CombatKnife: 25
+        STCombatKnife: 25
         TrashBag: 30
         BoxZiptie: 50
         BoxSafebox: 50

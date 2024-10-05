@@ -50,7 +50,7 @@
     - name: Ножи
       priority: 5
       items:
-        CombatKnife: 10
+        STCombatKnife: 10
     - name: Модификации
       priority: 6
       items:

@@ -44,7 +44,7 @@
     - name: Утилиты
       priority: 6
       items:
-        CombatKnife: 15
+        STCombatKnife: 15
         KitchenKnife: 5
         HatchetStalker: 150
         TrashBag: 20

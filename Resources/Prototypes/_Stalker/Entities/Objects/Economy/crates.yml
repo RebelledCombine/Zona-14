@@ -140,7 +140,7 @@
         - id: PowerCellHyper
         - id: PowerCellHyper
         - id: BaseRadio
-        - id: CombatKnife
+        - id: STCombatKnife
         - id: DrinkFlaskOld
         - id: DrinkFlaskOld
         - id: FoodTinMRE
@@ -179,7 +179,7 @@
         - id: FlashlightSeclite
         - id: PowerCellHyper
         - id: BaseRadio
-        - id: CombatKnife
+        - id: STCombatKnife
         - id: ClothingBackpackDuffelGreenStalker
       sound:
         path: /Audio/Effects/unwrap.ogg
@@ -229,7 +229,7 @@
         - id: PowerCellHyper
         - id: PowerCellHyper
         - id: BaseRadio
-        - id: CombatKnife
+        - id: STCombatKnife
         - id: DrinkFlaskOld
         - id: DrinkFlaskOld
         - id: FoodTinMRE
@@ -282,7 +282,7 @@
         - id: PowerCellHyper
         - id: PowerCellHyper
         - id: BaseRadio
-        - id: CombatKnife
+        - id: STCombatKnife
         - id: DrinkFlaskOld
         - id: DrinkFlaskOld
         - id: FoodTinMRE
@@ -335,7 +335,7 @@
         - id: PowerCellHyper
         - id: PowerCellHyper
         - id: BaseRadio
-        - id: CombatKnife
+        - id: STCombatKnife
         - id: DrinkFlaskOld
         - id: DrinkFlaskOld
         - id: FoodTinMRE
@@ -388,7 +388,7 @@
         - id: PowerCellHyper
         - id: PowerCellHyper
         - id: BaseRadio
-        - id: CombatKnife
+        - id: STCombatKnife
         - id: DrinkFlaskOld
         - id: DrinkFlaskOld
         - id: FoodTinMRE
@@ -921,7 +921,7 @@
         - id: PowerCellHyper
         - id: PowerCellHyper
         - id: BaseRadio
-        - id: CombatKnife
+        - id: STCombatKnife
         - id: DrinkFlaskOld
         - id: DrinkFlaskOld
         - id: FoodTinMRE
@@ -974,7 +974,7 @@
         - id: PowerCellHyper
         - id: PowerCellHyper
         - id: BaseRadio
-        - id: CombatKnife
+        - id: STCombatKnife
         - id: DrinkFlaskOld
         - id: DrinkFlaskOld
         - id: FoodTinMRE

@@ -8,7 +8,7 @@
     - name: Оружие
       priority: 1
       items:
-        CombatKnife: 10
+        STCombatKnife: 10
     - name: Магазины
       priority: 2
       items:
