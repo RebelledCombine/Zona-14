@@ -767,7 +767,7 @@
       godmodeCooldown: 5
 
 - type: entity
-  parent: MapTeleportBase
+  parent: MapTeleportBaseUncollide
   id: RedForest-Vertushka
   noSpawn: false
   name: Рыжий лес - Вертушка
