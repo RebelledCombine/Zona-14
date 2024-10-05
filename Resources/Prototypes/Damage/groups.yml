@@ -6,6 +6,7 @@
     - Slash
     - Piercing
     - Compression # stalker-changes
+    - Psy # stalker-changes
 
 - type: damageGroup
   id: Burn
