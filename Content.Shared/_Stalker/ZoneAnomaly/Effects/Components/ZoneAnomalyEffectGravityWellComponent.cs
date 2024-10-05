@@ -16,9 +16,6 @@ public sealed partial class ZoneAnomalyEffectGravityWellComponent : Component
     public float Radial = 10f;
 
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public float Tangential = 0.001f;
-
-    [DataField, ViewVariables(VVAccess.ReadWrite)]
     public ZoneAnomalyEffectGravityWellGradient Gradient = ZoneAnomalyEffectGravityWellGradient.Default;
 
     [DataField, ViewVariables(VVAccess.ReadWrite)]
