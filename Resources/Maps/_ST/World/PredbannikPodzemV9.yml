@@ -43056,7 +43056,7 @@ entities:
     - type: Transform
       pos: 23.5,34.5
       parent: 1
-- proto: ClockworkGrille
+- proto: STClockworkGrille
   entities:
   - uid: 426
     components:
@@ -43075,7 +43075,7 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 33.5,33.5
       parent: 1
-- proto: ClockworkGrilleBroken
+- proto: STClockworkGrilleBroken
   entities:
   - uid: 429
     components:
@@ -52910,7 +52910,7 @@ entities:
     - type: Transform
       pos: 23.5,17.5
       parent: 1
-- proto: Grille
+- proto: STGrille
   entities:
   - uid: 2289
     components:
@@ -53158,7 +53158,7 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -113.5,-14.5
       parent: 1
-- proto: GrilleBroken
+- proto: STGrilleBroken
   entities:
   - uid: 2331
     components:
@@ -53172,7 +53172,7 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 60.5,-117.5
       parent: 1
-- proto: GrilleDiagonal
+- proto: STGrilleDiagonal
   entities:
   - uid: 2333
     components:

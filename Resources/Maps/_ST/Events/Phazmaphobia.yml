@@ -4113,7 +4113,7 @@ entities:
     - type: Transform
       pos: 71.20881,-6.508173
       parent: 2
-- proto: Grille
+- proto: STGrille
   entities:
   - uid: 367
     components:
@@ -4292,7 +4292,7 @@ entities:
       rot: 3.141592653589793 rad
       pos: 75.5,-26.5
       parent: 2
-- proto: GrilleBroken
+- proto: STGrilleBroken
   entities:
   - uid: 883
     components:

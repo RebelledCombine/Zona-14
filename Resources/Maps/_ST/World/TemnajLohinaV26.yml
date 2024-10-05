@@ -71247,7 +71247,7 @@ entities:
     missingComponents:
     - Item
     - Pullable
-- proto: ClockworkGrille
+- proto: STClockworkGrille
   entities:
   - uid: 784
     components:
@@ -71425,7 +71425,7 @@ entities:
     - type: Transform
       pos: 67.5,97.5
       parent: 1
-- proto: ClockworkGrilleBroken
+- proto: STClockworkGrilleBroken
   entities:
   - uid: 815
     components:
@@ -90380,7 +90380,7 @@ entities:
     - type: Transform
       pos: 243.5,26.5
       parent: 1
-- proto: Grille
+- proto: STGrille
   entities:
   - uid: 4390
     components:

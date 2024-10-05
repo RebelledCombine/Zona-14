@@ -63354,7 +63354,7 @@ entities:
       parent: 1
     - type: Physics
       bodyType: Static
-- proto: GrilleBroken
+- proto: STGrilleBroken
   entities:
   - uid: 478
     components:

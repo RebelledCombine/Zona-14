@@ -1,7 +1,57 @@
 - type: entity
+  id: STBaseMaterialDoor
+  parent: BaseStructure
+  abstract: true
+  components:
+    - type: InteractionOutline
+    - type: Sprite
+      sprite: Structures/Doors/MineralDoors/metal_door.rsi
+      layers:
+      - state: closed
+        map: ["enum.DoorVisualLayers.Base"]
+    - type: AnimationPlayer
+    - type: Physics
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeAabb
+            bounds: "-0.49,-0.49,0.49,0.49"
+          density: 100
+          mask:
+          - FullTileMask
+          layer:
+          - AirlockLayer
+    - type: Door
+      bumpOpen: false
+      clickOpen: true
+      canCrush: false
+      closeTimeOne: 0.2
+      closeTimeTwo: 0.6
+      openTimeOne: 0.6
+      openTimeTwo: 0.2
+      openingAnimationTime: 1.2
+      closingAnimationTime: 1.2
+      openSound:
+        path: /Audio/Effects/stonedoor_openclose.ogg
+      closeSound:
+        path: /Audio/Effects/stonedoor_openclose.ogg
+    - type: Appearance
+    - type: Airtight
+    - type: RCDDeconstructable
+      cost: 6
+      delay: 6
+      fx: EffectRCDDeconstruct6
+    - type: IconSmooth
+      key: walls
+      mode: NoSprite
+    - type: Occluder
+    - type: BlockWeather
+
+- type: entity
   id: StalkerMetalDoor
   name: металическая дверь
-  parent: BaseMaterialDoor
+  parent: STBaseMaterialDoor
   description: Старая металическая дверь.
   suffix: Stalker
   components:
@@ -27,7 +77,7 @@
   id: MetalDoorFallout
   name: Стальная дверь
   suffix: Door, KMIN
-  parent: BaseMaterialDoor
+  parent: STBaseMaterialDoor
   description: Обычная стальная дверь.
   components:
   - type: Sprite
@@ -84,7 +134,7 @@
   id: MetalRedDoorFallout
   name: Красная стальная дверь
   suffix: Door, KMIN
-  parent: BaseMaterialDoor
+  parent: STBaseMaterialDoor
   description: Обычная стальная дверь, окрашена в красный цвет.
   components:
   - type: Sprite
@@ -113,7 +163,7 @@
   id: MetalAltDoorFallout
   name: Стальная дверь
   suffix: Door, KMIN
-  parent: BaseMaterialDoor
+  parent: STBaseMaterialDoor
   description: Обычная стальная дверь.
   components:
   - type: Sprite
@@ -142,7 +192,7 @@
   id: MetalBarDoorFallout
   name: Решетчатая дверь
   suffix: Door, KMIN
-  parent: BaseMaterialDoor
+  parent: STBaseMaterialDoor
   description: Обычная решетчатая дверь.
   components:
   - type: Sprite
@@ -174,7 +224,7 @@
   id: MetalGrateDoorFallout
   name: Укрепленная решетчатая дверь
   suffix: Door, KMIN
-  parent: BaseMaterialDoor
+  parent: STBaseMaterialDoor
   description: Обычная решетчатая дверь
   components:
   - type: Sprite
@@ -206,7 +256,7 @@
   id: MetalWindowDoorFallout
   name: Оконная стальная дверь
   suffix: Door, KMIN
-  parent: BaseMaterialDoor
+  parent: STBaseMaterialDoor
   description: Обычная стальная дверь, с окном.
   components:
   - type: Sprite
@@ -238,7 +288,7 @@
   id: WoodDoorFallout
   name: Деревянная дверь
   suffix: Door, KMIN
-  parent: BaseMaterialDoor
+  parent: STBaseMaterialDoor
   description: Обычная деревянная дверь.
   components:
   - type: Sprite
@@ -267,7 +317,7 @@
   id: WoodWhiteDoorFallout
   name: Белая деревянная дверь
   suffix: Door, KMIN
-  parent: BaseMaterialDoor
+  parent: STBaseMaterialDoor
   description: Обычная деревянная дверь, окрашена в белый цвет.
   components:
   - type: Sprite
@@ -296,7 +346,7 @@
   id: WoodGreenDoorFallout
   name: Зелёная деревянная дверь
   suffix: Door, KMIN
-  parent: BaseMaterialDoor
+  parent: STBaseMaterialDoor
   description: Обычная деревянная дверь, окрашена в зелёный цвет.
   components:
   - type: Sprite
@@ -325,7 +375,7 @@
   id: WoodRedDoorFallout
   name: Красная деревянная дверь
   suffix: Door, KMIN
-  parent: BaseMaterialDoor
+  parent: STBaseMaterialDoor
   description: Обычная деревянная дверь, окрашена в красный цвет. Открывается быстрее обычной двери.
   components:
   - type: Sprite
@@ -354,7 +404,7 @@
   id: WoodBlueDoorFallout
   name: Синяя деревянная дверь
   suffix: Door, KMIN
-  parent: BaseMaterialDoor
+  parent: STBaseMaterialDoor
   description: Обычная деревянная дверь, окрашена в синий цвет.
   components:
   - type: Sprite

@@ -82399,7 +82399,7 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 168.5,6.5
       parent: 1
-- proto: Grille
+- proto: STGrille
   entities:
   - uid: 2065
     components:
@@ -82936,7 +82936,7 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 185.5,47.5
       parent: 1
-- proto: GrilleBroken
+- proto: STGrilleBroken
   entities:
   - uid: 2159
     components:

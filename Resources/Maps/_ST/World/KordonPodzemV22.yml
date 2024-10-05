@@ -35624,7 +35624,7 @@ entities:
     - type: Transform
       pos: 36.5,42.5
       parent: 1
-- proto: ClockworkGrille
+- proto: STClockworkGrille
   entities:
   - uid: 16431
     components:
@@ -48914,7 +48914,7 @@ entities:
         - 0
         - 0
         - 0
-- proto: Grille
+- proto: STGrille
   entities:
   - uid: 2763
     components:

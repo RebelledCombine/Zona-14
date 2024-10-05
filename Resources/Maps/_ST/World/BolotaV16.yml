@@ -52349,7 +52349,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-- proto: ClockworkGrille
+- proto: STClockworkGrille
   entities:
   - uid: 15612
     components:
@@ -52369,7 +52369,7 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -194.5,-157.5
       parent: 1
-- proto: ClockworkGrilleBroken
+- proto: STClockworkGrilleBroken
   entities:
   - uid: 15440
     components:
@@ -89722,7 +89722,7 @@ entities:
     - type: Transform
       pos: -28.5,-164.5
       parent: 1
-- proto: Grille
+- proto: STGrille
   entities:
   - uid: 10059
     components:
@@ -89770,7 +89770,7 @@ entities:
     - type: Transform
       pos: -66.5,-140.5
       parent: 1
-- proto: GrilleBroken
+- proto: STGrilleBroken
   entities:
   - uid: 15631
     components:

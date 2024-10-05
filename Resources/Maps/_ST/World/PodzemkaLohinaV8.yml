@@ -9296,7 +9296,7 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 27.5,-51.5
       parent: 1
-- proto: ClockworkGrille
+- proto: STClockworkGrille
   entities:
   - uid: 74
     components:
@@ -9524,7 +9524,7 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 20.5,-25.5
       parent: 1
-- proto: ClockworkGrilleBroken
+- proto: STClockworkGrilleBroken
   entities:
   - uid: 509
     components:
@@ -9643,7 +9643,7 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 19.5,-25.5
       parent: 1
-- proto: ClockworkGrilleDiagonal
+- proto: STClockworkGrilleDiagonal
   entities:
   - uid: 55
     components:
