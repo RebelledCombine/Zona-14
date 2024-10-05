@@ -96,7 +96,7 @@
   suffix: Stalker
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge545NC
+    proto: Cartridge545NE
   - type: Sprite
     layers:
     - state: 545
