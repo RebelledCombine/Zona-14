@@ -309,6 +309,10 @@
   - type: StaminaCritThresholdModifier
   - type: STLay
   - type: RespawnOnDeath
+  - type: ApproachEmitter
+    range: 20
+    minRange: 15
+    useMinRange: true
     # stalker-changes-end
 
 - type: entity
