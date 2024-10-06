@@ -1,0 +1,4 @@
+- type: shader
+  id: STDizzy
+  kind: source
+  path: "/Textures/Shaders/drunk.swsl"

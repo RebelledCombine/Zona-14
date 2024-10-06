@@ -24,7 +24,7 @@ public sealed class DizzyOverlay : Overlay
     public DizzyOverlay()
     {
         IoCManager.InjectDependencies(this);
-        _dizzyShader = _prototypeManager.Index<ShaderPrototype>("Drunk").InstanceUnique();
+        _dizzyShader = _prototypeManager.Index<ShaderPrototype>("STDizzy").InstanceUnique();
     }
 
     public void Stop()

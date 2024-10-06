@@ -49,8 +49,6 @@
   special:
     - !type:AddComponentSpecial
       components:
-        - type: Psyonics
-        - type: PsyonicsActionLight
         - type: Access
           tags:
           - Pilgrim
