@@ -3,10 +3,10 @@ meta:
   postmapinit: false
 tilemap:
   0: Space
-  31: FloorConcreteMono
-  56: FloorGrayConcrete
-  77: FloorOldConcrete
-  79: FloorOldConcreteSmooth
+  31: STFloorConcreteMono
+  56: STFloorGrayConcrete
+  77: STFloorOldConcrete
+  79: STFloorOldConcreteSmooth
   136: FloorWhiteMono
   145: Plating
 entities:

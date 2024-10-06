@@ -9,20 +9,20 @@ tilemap:
   22: FloorBrassReebe
   23: STFloorBrokenWood
   27: STFloorCaveDrought
-  30: FloorConcrete
-  32: FloorConcreteSmooth
+  30: STFloorConcrete
+  32: STFloorConcreteSmooth
   33: FloorDark
   43: FloorDarkScheben
   45: STFloorDirt
   51: FloorGold
-  56: FloorGrayConcrete
-  57: FloorGrayConcreteMono
-  58: FloorGrayConcreteSmooth
+  56: STFloorGrayConcrete
+  57: STFloorGrayConcreteMono
+  58: STFloorGrayConcreteSmooth
   70: FloorMetalDiamond
   74: FloorMiningLight
-  77: FloorOldConcrete
-  78: FloorOldConcreteMono
-  79: FloorOldConcreteSmooth
+  77: STFloorOldConcrete
+  78: STFloorOldConcreteMono
+  79: STFloorOldConcreteSmooth
   80: STFloorPlanetDirt
   81: FloorPlanetGrass
   82: FloorPlanetGreenGrass

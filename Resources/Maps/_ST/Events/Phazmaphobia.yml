@@ -9,15 +9,15 @@ tilemap:
   22: STFloorBrokenWood
   37: FloorDarkMono
   41: FloorDarkPlastic
-  55: FloorGrayConcrete
-  56: FloorGrayConcreteMono
+  55: STFloorGrayConcrete
+  56: STFloorGrayConcreteMono
   64: FloorKitchen
   65: FloorLaundry
   66: FloorLino
   68: FloorMetalDiamond
-  74: FloorOldConcrete
-  75: FloorOldConcreteMono
-  76: FloorOldConcreteSmooth
+  74: STFloorOldConcrete
+  75: STFloorOldConcreteMono
+  76: STFloorOldConcreteSmooth
   77: STFloorPlanetDirt
   79: FloorPlanetGreenGrass
   82: FloorPlastic

@@ -5,17 +5,17 @@ tilemap:
   0: Space
   23: STFloorBrokenWood
   26: FloorCave
-  30: FloorConcrete
-  31: FloorConcreteMono
-  32: FloorConcreteSmooth
-  56: FloorGrayConcrete
-  57: FloorGrayConcreteMono
-  58: FloorGrayConcreteSmooth
+  30: STFloorConcrete
+  31: STFloorConcreteMono
+  32: STFloorConcreteSmooth
+  56: STFloorGrayConcrete
+  57: STFloorGrayConcreteMono
+  58: STFloorGrayConcreteSmooth
   68: FloorLino
   70: FloorMetalDiamond
-  77: FloorOldConcrete
-  78: FloorOldConcreteMono
-  79: FloorOldConcreteSmooth
+  77: STFloorOldConcrete
+  78: STFloorOldConcreteMono
+  79: STFloorOldConcreteSmooth
   80: STFloorPlanetDirt
   81: FloorPlanetGrass
   82: FloorPlanetGreenGrass

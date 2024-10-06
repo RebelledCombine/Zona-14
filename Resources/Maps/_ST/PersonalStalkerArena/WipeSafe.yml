@@ -4,7 +4,7 @@ meta:
 tilemap:
   0: Space
   23: STFloorBrokenWood
-  31: FloorConcreteMono
+  31: STFloorConcreteMono
   136: FloorWhiteMono
   141: STFloorWood
   145: Plating

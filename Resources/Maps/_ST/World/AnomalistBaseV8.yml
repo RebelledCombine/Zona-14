@@ -5,12 +5,12 @@ tilemap:
   0: Space
   16: FloorBasalt
   25: FloorCave
-  55: FloorGrayConcrete
-  56: FloorGrayConcreteMono
-  57: FloorGrayConcreteSmooth
-  74: FloorOldConcrete
-  75: FloorOldConcreteMono
-  76: FloorOldConcreteSmooth
+  55: STFloorGrayConcrete
+  56: STFloorGrayConcreteMono
+  57: STFloorGrayConcreteSmooth
+  74: STFloorOldConcrete
+  75: STFloorOldConcreteMono
+  76: STFloorOldConcreteSmooth
   77: STFloorPlanetDirt
   78: FloorPlanetGrass
   88: FloorScheben

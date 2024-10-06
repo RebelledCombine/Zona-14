@@ -4,11 +4,11 @@ meta:
 tilemap:
   0: Space
   22: STFloorBrokenWood
-  55: FloorGrayConcrete
-  56: FloorGrayConcreteMono
-  57: FloorGrayConcreteSmooth
-  74: FloorOldConcrete
-  76: FloorOldConcreteSmooth
+  55: STFloorGrayConcrete
+  56: STFloorGrayConcreteMono
+  57: STFloorGrayConcreteSmooth
+  74: STFloorOldConcrete
+  76: STFloorOldConcreteSmooth
   77: STFloorPlanetDirt
   78: FloorPlanetGrass
   79: FloorPlanetGreenGrass

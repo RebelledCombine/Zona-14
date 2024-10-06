@@ -3,8 +3,8 @@ meta:
   postmapinit: false
 tilemap:
   0: Space
-  56: FloorGrayConcrete
-  57: FloorGrayConcreteMono
+  56: STFloorGrayConcrete
+  57: STFloorGrayConcreteMono
   80: STFloorPlanetDirt
   81: FloorPlanetGrass
   104: FloorStalker

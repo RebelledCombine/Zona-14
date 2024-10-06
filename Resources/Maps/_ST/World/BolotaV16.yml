@@ -8,18 +8,18 @@ tilemap:
   23: STFloorBrokenWood
   26: FloorCave
   27: STFloorCaveDrought
-  32: FloorConcreteSmooth
+  32: STFloorConcreteSmooth
   43: FloorDarkScheben
   45: STFloorDirt
   51: FloorGold
-  58: FloorGrayConcreteSmooth
+  58: STFloorGrayConcreteSmooth
   59: FloorGreenCircuit
   60: FloorGym
   63: FloorHydro
   70: FloorMetalDiamond
   72: FloorMining
-  77: FloorOldConcrete
-  79: FloorOldConcreteSmooth
+  77: STFloorOldConcrete
+  79: STFloorOldConcreteSmooth
   80: STFloorPlanetDirt
   81: FloorPlanetGrass
   82: FloorPlanetGreenGrass

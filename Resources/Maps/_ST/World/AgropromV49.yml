@@ -9,11 +9,11 @@ tilemap:
   26: STFloorCaveDrought
   42: FloorDarkScheben
   44: STFloorDirt
-  55: FloorGrayConcrete
-  56: FloorGrayConcreteMono
-  57: FloorGrayConcreteSmooth
+  55: STFloorGrayConcrete
+  56: STFloorGrayConcreteMono
+  57: STFloorGrayConcreteSmooth
   62: FloorHydro
-  76: FloorOldConcreteSmooth
+  76: STFloorOldConcreteSmooth
   77: STFloorPlanetDirt
   78: FloorPlanetGrass
   79: FloorPlanetGreenGrass

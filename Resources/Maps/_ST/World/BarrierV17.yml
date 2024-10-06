@@ -5,7 +5,7 @@ tilemap:
   0: Space
   13: FloorAstroGrass
   26: STFloorCaveDrought
-  57: FloorGrayConcreteSmooth
+  57: STFloorGrayConcreteSmooth
   77: STFloorPlanetDirt
   78: FloorPlanetGrass
   79: FloorPlanetGreenGrass
