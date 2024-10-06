@@ -86,22 +86,22 @@ public sealed class JoinQueueManager
             SendToGame(session);
             return;
         }
-        // ST-TODO: HavePrivilegedJoin is not defined
-        //var isPrivileged = await _connectionManager.HavePrivilegedJoin(session.Name, session.UserId);
-        //var currentOnline = _playerManager.PlayerCount - 1; // Do not count current session in general online, because we are still deciding her fate
-        //var haveFreeSlot = currentOnline < _cfg.GetCVar(CCVars.SoftMaxPlayers);
-        //if (isPrivileged || haveFreeSlot)
-        //{
-        //    SendToGame(session);
 
-        //    if (isPrivileged && !haveFreeSlot)
-        //    {
-        //        QueueBypassCount.Inc();
-        //        _sawmill.Info($"{session.Name} bypassed soft slots by privileges");
-        //    }
+        var isPrivileged = await _connectionManager.HavePrivilegedJoin(session.UserId);
+        var currentOnline = _playerManager.PlayerCount - 1; // Do not count current session in general online, because we are still deciding her fate
+        var haveFreeSlot = currentOnline < _cfg.GetCVar(CCVars.SoftMaxPlayers);
+        if (isPrivileged || haveFreeSlot)
+        {
+            SendToGame(session);
 
-        //    return;
-        //}
+            if (isPrivileged && !haveFreeSlot)
+            {
+                QueueBypassCount.Inc();
+                _sawmill.Info($"{session.Name} bypassed soft slots by privileges");
+            }
+
+            return;
+        }
 
         //_queue.Add(session);
         ProcessQueue(false, session.ConnectedTime);

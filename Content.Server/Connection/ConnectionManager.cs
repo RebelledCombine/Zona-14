@@ -2,6 +2,7 @@ using System.Collections.Immutable;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Runtime.InteropServices;
+using Content.Server._Stalker.Sponsors;
 using Content.Server.Chat.Managers;
 using Content.Server.Database;
 using Content.Server.GameTicking;
@@ -39,6 +40,8 @@ namespace Content.Server.Connection
         /// <param name="user">The user to give a temporary bypass.</param>
         /// <param name="duration">How long the bypass should last for.</param>
         void AddTemporaryConnectBypass(NetUserId user, TimeSpan duration);
+
+        Task<bool> HavePrivilegedJoin(NetUserId userId); // Stalker-Changes-Sponsors
     }
 
     /// <summary>
@@ -56,6 +59,7 @@ namespace Content.Server.Connection
         [Dependency] private readonly IGameTiming _gameTiming = default!;
         [Dependency] private readonly ILogManager _logManager = default!;
         [Dependency] private readonly IChatManager _chatManager = default!;
+        [Dependency] private readonly SponsorsManager _sponsors = default!;
 
         private ISawmill _sawmill = default!;
         private readonly Dictionary<NetUserId, TimeSpan> _temporaryBypasses = [];
@@ -391,5 +395,19 @@ namespace Content.Server.Connection
             await _db.AssignUserIdAsync(name, assigned);
             return assigned;
         }
+
+        // Stalker-Changes-Sponsors-Start
+        public async Task<bool> HavePrivilegedJoin(NetUserId userId)
+        {
+            var adminBypass = _cfg.GetCVar(CCVars.AdminBypassMaxPlayers) && await _db.GetAdminDataForAsync(userId) != null;
+            var havePriorityJoin = _sponsors.HavePriorityJoin(userId);
+            var wasInGame = EntitySystem.TryGet<GameTicker>(out var ticker) &&
+                            ticker.PlayerGameStatuses.TryGetValue(userId, out var status) &&
+                            status == PlayerGameStatus.JoinedGame;
+            return adminBypass ||
+                   havePriorityJoin ||
+                   wasInGame;
+        }
+        // Stalker-Changes-Sponsors-End
     }
 }
