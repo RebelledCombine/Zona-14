@@ -1,0 +1,94 @@
+- type: job
+  id: EvolverPackFang
+  name: Клык Стаи
+  icon: pack
+  description: Свирепый воин стаи, представляющий её дикую мощь и первичные инстинкты.
+  playTimeTracker: JobEvolverPackFang
+  requirements:
+    - !type:RoleTimeRequirement
+      role: JobEvolverPackFang
+      time: 1
+    - !type:SpeciesRequirement
+      species:
+      - Moth
+      - Diona
+      - Arachnid
+      - Reptilian
+      - SlimePerson
+      - Vox
+  startingGear: STEvolverPackFangGear
+  supervisors: Защищать стаю и расширять её территорию, действуя в первых рядах атак.
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: Access
+          tags:
+            - Pack
+            - Evolver
+        - type: Bands
+          band: Evolver
+          bandIcon: pack
+        - type: BlockTackingHolyItems
+        - type: TeethPull
+          teethProto: ToothStalker
+          pullingItemTag: PliersStalker
+          teethCount: 3
+          initialTeeth: 3
+
+- type: startingGear
+  id: STEvolverPackFangGear
+  equipment:
+    id: BandPDA
+    belt: ClothingBeltStorageWaistbag
+    torso: STClothingTorsoJacketGray
+    legs: STClothingLegsPantsGray
+    shoes: ClothingShoesSwat
+
+
+- type: job
+  id: EvolverPackAlpha
+  name: Альфа Стаи
+  icon: pack
+  description: лидер стаи, управляющий её действиями и защищающий её законы и порядок.
+  playTimeTracker: JobEvolverPackAlpha
+  requirements:
+    - !type:RoleTimeRequirement
+      role: JobEvolverPackAlpha
+      time: 1
+    - !type:SpeciesRequirement
+      species:
+      - Moth
+      - Diona
+      - Arachnid
+      - Reptilian
+      - SlimePerson
+      - Vox
+  startingGear: STEvolverPackAlphaGear
+  supervisors: Поддерживать и укреплять власть в стае, координируя её нападения и защиту.
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: Access
+          tags:
+            - Evolver
+            - Pack
+        - type: Bands
+          band: Evolver
+          bandIcon: pack
+        - type: BlockTackingHolyItems
+        - type: TeethPull
+          teethProto: ToothStalker
+          pullingItemTag: PliersStalker
+          teethCount: 3
+          initialTeeth: 3
+
+- type: startingGear
+  id: STEvolverPackAlphaGear
+  equipment:
+    id: BandPDA
+    belt: ClothingBeltStorageWaistbag
+    neck: ClothingNeckDogtagBrigand
+    eyes: ClothingEyesGlassesSunglasses
+    torso: STClothingTorsoJacketGray
+    legs: STClothingLegsPantsGray
+    shoes: ClothingShoesSwat

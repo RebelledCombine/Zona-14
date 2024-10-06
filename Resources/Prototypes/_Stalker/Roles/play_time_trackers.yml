@@ -92,3 +92,17 @@
 
 - type: playTimeTracker
   id: JobStalkerBartender
+
+# Эволверы и их группировки
+- type: playTimeTracker
+  id: JobEvolver
+
+- type: playTimeTracker
+  id: JobEvolverPackFang
+- type: playTimeTracker
+  id: JobEvolverPackAlpha
+
+- type: playTimeTracker
+  id: JobEvolverSymbioteMedium
+- type: playTimeTracker
+  id: JobEvolverSymbioteArchon

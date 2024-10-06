@@ -8,6 +8,10 @@
     - !type:RoleTimeRequirement
       role: JobStalkerMercenary
       time: 1
+    - !type:SpeciesRequirement
+      species:
+      - Human
+      - Dwarf
   startingGear: StalkerMercenaryGear
   supervisors: Вы чётко спланированная операция с отличной подготовкой — вот залог вашего успеха.
   special:
@@ -49,6 +53,10 @@
     - !type:RoleTimeRequirement
       role: JobStalkerHeadMercenary
       time: 1
+    - !type:SpeciesRequirement
+      species:
+      - Human
+      - Dwarf
   startingGear: StalkerHeadMercenaryGear
   supervisors: вы координируете тактические операции, обеспечиваете эффективное взаимодействие членов группировки и принимаете оперативные решения на поле боя
   special:

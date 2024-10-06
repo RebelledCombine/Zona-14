@@ -8,6 +8,10 @@
     - !type:RoleTimeRequirement
       role: JobClearSky
       time: 1
+    - !type:SpeciesRequirement
+      species:
+      - Human
+      - Dwarf
   startingGear: StalkerClearSkyGear
   supervisors: Исследуй Зону и оберегай её секреты от посторонних глаз.
   special:

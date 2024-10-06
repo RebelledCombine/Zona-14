@@ -9,6 +9,10 @@
     - !type:RoleTimeRequirement
       role: JobPoisk
       time: 1
+    - !type:SpeciesRequirement
+      species:
+      - Human
+      - Dwarf
   startingGear: PoiskGear
   supervisors: Вы подчиняетесь своему лидеру
   special:

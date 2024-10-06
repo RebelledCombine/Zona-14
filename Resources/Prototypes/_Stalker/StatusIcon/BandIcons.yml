@@ -266,3 +266,28 @@
     sprite: /Textures/_Stalker/Icons/Patches/band.rsi
     hideOnStealth: true
     state: pilgrim
+
+# Evolvers
+- type: jobIcon
+  id: evolver
+  locationPreference: Right
+  icon:
+    sprite: /Textures/_Stalker/Icons/Patches/band.rsi
+    hideOnStealth: true
+    state: evolver
+
+- type: jobIcon
+  id: pack
+  locationPreference: Right
+  icon:
+    sprite: /Textures/_Stalker/Icons/Patches/band.rsi
+    hideOnStealth: true
+    state: pack
+
+- type: jobIcon
+  id: symbiote
+  locationPreference: Right
+  icon:
+    sprite: /Textures/_Stalker/Icons/Patches/band.rsi
+    hideOnStealth: true
+    state: symbiote

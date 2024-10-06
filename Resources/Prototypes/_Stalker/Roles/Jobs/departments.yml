@@ -3,6 +3,7 @@
   color: "#9FED58"
   name: department-Stalker
   description: department-Stalker-description
+  weight: 10
   roles:
   - Stalker
 
@@ -31,6 +32,7 @@
   name: department-StalkerAdvanced
   description: department-StalkerAdvanced-description
   color: "#9FED58"
+  weight: 9
   roles:
   - StalkerDolg
   - StalkerHeadDolg
@@ -50,6 +52,7 @@
   name: department-StalkerBrigands
   description: department-StalkerBrigands-description
   color: "#111111"
+  weight: 8
   roles:
   - StalkerBandit
   - StalkerHeadBandit
@@ -64,6 +67,7 @@
   name: department-StalkerOfficials
   description: department-StalkerOfficials-description
   color: "#0000FF"
+  weight: 7
   roles:
   - Military
   - MilitaryOfficer
@@ -76,12 +80,26 @@
   name: department-StalkerReligius
   description: department-StalkerReligius-description
   color: "#C0C0C0"
+  weight: 6
   roles:
   - StalkerPostulant
   - StalkerBishop
   - StalkerGreh
   - Seraphim
   - SeraphimHead
+
+- type: department
+  id: Evolver
+  name: department-Evolver
+  description: department-Evolver-description
+  color: "#1070C0"
+  weight: -10
+  roles:
+  - EvolverPackFang
+  - EvolverPackAlpha
+  - EvolverSymbioteMedium
+  - EvolverSymbioteArchon
+  - Evolver
 
 # - type: department
 #   id: StalkerAnomalists

@@ -1,0 +1,41 @@
+- type: job
+  id: Evolver
+  name: Эволвер
+  icon: evolver
+  description: разумные мутанты, стремящиеся к постоянной эволюции и адаптации в Зоне.
+  playTimeTracker: JobEvolver
+  requirements:
+    - !type:SpeciesRequirement
+      species:
+      - Moth
+      - Diona
+      - Arachnid
+      - Reptilian
+      - SlimePerson
+      - Vox
+  startingGear: STEvolverGear
+  supervisors: Защитить Зону для усиления своих способностей и продолжения мутации.
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: Access
+          tags:
+            - Evolver
+        - type: Bands
+          band: Evolver
+          bandIcon: pack
+        - type: BlockTackingHolyItems
+        - type: TeethPull
+          teethProto: ToothStalker
+          pullingItemTag: PliersStalker
+          teethCount: 3
+          initialTeeth: 3
+
+- type: startingGear
+  id: STEvolverGear
+  equipment:
+    id: BandPDA
+    belt: ClothingBeltStorageWaistbag
+    torso: STClothingTorsoJacketGray
+    legs: STClothingLegsPantsGray
+    shoes: ClothingShoesSwat

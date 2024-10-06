@@ -8,6 +8,10 @@
     - !type:RoleTimeRequirement
       role: JobRenegat
       time: 1
+    - !type:SpeciesRequirement
+      species:
+      - Human
+      - Dwarf
   startingGear: ReneGear
   supervisors: "ебаш."
   special:

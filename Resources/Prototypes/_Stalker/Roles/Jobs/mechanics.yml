@@ -8,6 +8,10 @@
     - !type:RoleTimeRequirement
       role: JobMechanic
       time: 1
+    - !type:SpeciesRequirement
+      species:
+      - Human
+      - Dwarf
   startingGear: MechanicGear
   supervisors: Вы работаете сами на себя.
   special:

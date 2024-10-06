@@ -8,6 +8,10 @@
     - !type:RoleTimeRequirement
       role: JobTrader
       time: 1
+    - !type:SpeciesRequirement
+      species:
+      - Human
+      - Dwarf
   startingGear: TraderGear
   supervisors: Вы работаете сами на себя.
   special:

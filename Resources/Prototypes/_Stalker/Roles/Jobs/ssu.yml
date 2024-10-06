@@ -8,6 +8,10 @@
     - !type:RoleTimeRequirement
       role: JobSBU
       time: 1
+    - !type:SpeciesRequirement
+      species:
+      - Human
+      - Dwarf
   startingGear: MilitaryGear
   supervisors: Подчиняйся старшим по званию.
   special:

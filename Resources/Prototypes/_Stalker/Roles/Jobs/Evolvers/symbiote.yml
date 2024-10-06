@@ -1,0 +1,89 @@
+- type: job
+  id: EvolverSymbioteMedium
+  name: Медиум Симбиот
+  icon: symbiote
+  description: управляющий телепатией и пси-энергиями
+  playTimeTracker: JobEvolverSymbioteMedium
+  requirements:
+    - !type:RoleTimeRequirement
+      role: JobEvolverSymbioteMedium
+      time: 1
+    - !type:SpeciesRequirement
+      species:
+      - Moth
+      - Diona
+      - Arachnid
+      - Reptilian
+      - SlimePerson
+      - Vox
+  startingGear: STEvolverSymbioteMediumGear
+  supervisors: Изучасть и развивать Пси способности, сохранить Зону
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: Access
+          tags:
+            - Evolver
+        - type: Bands
+          band: Evolver
+          bandIcon: symbiote
+        - type: BlockTackingHolyItems
+        - type: TeethPull
+          teethProto: ToothStalker
+          pullingItemTag: PliersStalker
+          teethCount: 3
+          initialTeeth: 3
+
+- type: job
+  id: EvolverSymbioteArchon
+  name: Архон Симбиот
+  icon: symbiote
+  description: высший симбиот, обладающий абсолютной властью над пси-энергией и пространством
+  playTimeTracker: JobEvolverSymbioteArchon
+  requirements:
+    - !type:RoleTimeRequirement
+      role: JobEvolverSymbioteArchon
+      time: 1
+    - !type:SpeciesRequirement
+      species:
+      - Moth
+      - Diona
+      - Arachnid
+      - Reptilian
+      - SlimePerson
+      - Vox
+  startingGear: STEvolverSymbioteArchonGear
+  supervisors: Защищать Зону, контролируя пси-пространство и управляя симбиотами.
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: Access
+          tags:
+            - Evolver
+        - type: Bands
+          band: Evolver
+          bandIcon: symbiote
+        - type: BlockTackingHolyItems
+        - type: TeethPull
+          teethProto: ToothStalker
+          pullingItemTag: PliersStalker
+          teethCount: 3
+          initialTeeth: 3
+
+- type: startingGear
+  id: STEvolverSymbioteMediumGear
+  equipment:
+    id: BandPDA
+    belt: ClothingBeltStorageWaistbag
+    torso: STClothingTorsoJacketGray
+    legs: STClothingLegsPantsGray
+    shoes: ClothingShoesSwat
+
+- type: startingGear
+  id: STEvolverSymbioteArchonGear
+  equipment:
+    id: BandPDA
+    belt: ClothingBeltStorageWaistbag
+    torso: STClothingTorsoJacketGray
+    legs: STClothingLegsPantsGray
+    shoes: ClothingShoesSwat

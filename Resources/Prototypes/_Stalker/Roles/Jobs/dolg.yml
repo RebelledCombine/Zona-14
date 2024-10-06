@@ -8,6 +8,10 @@
     - !type:RoleTimeRequirement
       role: JobDolg
       time: 1
+    - !type:SpeciesRequirement
+      species:
+      - Human
+      - Dwarf
   startingGear: DolgGear
   supervisors: Вы подчиняетесь старшим по званию.
   special:
@@ -36,6 +40,10 @@
     - !type:RoleTimeRequirement
       role: JobHeadDolg
       time: 1
+    - !type:SpeciesRequirement
+      species:
+      - Human
+      - Dwarf
   startingGear: DolgGear
   supervisors: Вы командуете другими бойцами Долга.
   special:

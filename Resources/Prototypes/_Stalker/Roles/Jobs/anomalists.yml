@@ -8,6 +8,10 @@
     - !type:RoleTimeRequirement
       role: JobStalkerAnomalist
       time: 1
+    - !type:SpeciesRequirement
+      species:
+      - Human
+      - Dwarf
   startingGear: AnomalistGear
   supervisors: Вы работаете сами на себя
   special:

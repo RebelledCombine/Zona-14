@@ -8,6 +8,10 @@
     - !type:RoleTimeRequirement
       role: JobStalkerSci
       time: 1
+    - !type:SpeciesRequirement
+      species:
+      - Human
+      - Dwarf
   startingGear: SciGear
   supervisors: Вы подчиняетесь старшему сотруднику и Институту.
   special:
@@ -36,6 +40,10 @@
     - !type:RoleTimeRequirement
       role: JobHeadStalkerSci
       time: 1
+    - !type:SpeciesRequirement
+      species:
+      - Human
+      - Dwarf
   startingGear: SciGear
   supervisors: Вы подчиняетесь старшему сотруднику и Институту.
   special:

@@ -9,6 +9,10 @@
     - !type:RoleTimeRequirement
       role: JobNeutral
       time: 1
+    - !type:SpeciesRequirement
+      species:
+      - Human
+      - Dwarf
   startingGear: NeutralGear
   supervisors: Вы подчиняетесь своему лидеру
   special:

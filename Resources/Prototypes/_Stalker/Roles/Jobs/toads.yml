@@ -8,6 +8,10 @@
     - !type:RoleTimeRequirement
       role: JobJaba
       time: 1
+    - !type:SpeciesRequirement
+      species:
+      - Human
+      - Dwarf
   startingGear: JabaGear
   supervisors: Вы никому не подчиняетесь...
   special:

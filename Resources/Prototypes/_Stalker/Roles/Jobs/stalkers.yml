@@ -9,6 +9,11 @@
       department: StalkerAdvanced
       time: 1
       inverted: true
+    - !type:SpeciesRequirement
+      species:
+      - Human
+      - Dwarf
+      - Gingerbread
     # - !type:DepartmentTimeRequirement
     #   department: StalkerAnomalists
     #   time: 1

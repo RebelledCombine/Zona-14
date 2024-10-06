@@ -8,6 +8,10 @@
     - !type:RoleTimeRequirement
       role: JobPolice
       time: 1
+    - !type:SpeciesRequirement
+      species:
+      - Human
+      - Dwarf
   startingGear: PoliceGear
   supervisors: Вы подчиняетесь старшим по званию.
   special:

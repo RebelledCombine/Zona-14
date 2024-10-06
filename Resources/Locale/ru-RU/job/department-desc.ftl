@@ -15,3 +15,4 @@ department-StalkerReligius-description = Верующие которые ищу�
 department-StalkerBrigands-description = занимаются разбоем и нарушают законы
 department-StalkerOfficials-description = выполняют государственные задания в Зоне
 department-StalkerAdvanced-description = Организованные сталкеры
+department-Evolver-description = стремятся к постоянной эволюции и адаптации в Зоне.

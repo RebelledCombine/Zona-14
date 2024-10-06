@@ -8,6 +8,10 @@
     - !type:RoleTimeRequirement
       role: JobFreedom
       time: 1
+    - !type:SpeciesRequirement
+      species:
+      - Human
+      - Dwarf
   startingGear: FreedomGear
   supervisors: Кури, защищай Зону и игнорируй авторитеты.
   special:
@@ -36,6 +40,10 @@
     - !type:RoleTimeRequirement
       role: JobHeadFreedom
       time: 1
+    - !type:SpeciesRequirement
+      species:
+      - Human
+      - Dwarf
   startingGear: FreedomGear
   supervisors: Командиры? У анархистов?.
   special:

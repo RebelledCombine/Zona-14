@@ -112,6 +112,15 @@
     },
     {
         "name": "pilgrim"
+    },
+    {
+        "name": "pack"
+    },
+    {
+        "name": "symbiote"
+    },
+    {
+        "name": "evolver"
     }
   ]
 }

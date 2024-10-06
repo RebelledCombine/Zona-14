@@ -8,6 +8,10 @@
     - !type:RoleTimeRequirement
       role: JobStalkerClown
       time: 1
+    - !type:SpeciesRequirement
+      species:
+      - Human
+      - Dwarf
   startingGear: StalkerClownGear
   supervisors: " Смех продлевает жизнь. Буквально."
   special:

@@ -9,6 +9,10 @@
     - !type:RoleTimeRequirement
       role: JobGreh
       time: 1
+    - !type:SpeciesRequirement
+      species:
+      - Human
+      - Dwarf
   startingGear: StalkerGrehGear
   supervisors: Защищайте оазис во имя матери зоны.
   special:

@@ -8,6 +8,10 @@
     - !type:RoleTimeRequirement
       role: JobProjectPawn
       time: 1
+    - !type:SpeciesRequirement
+      species:
+      - Human
+      - Dwarf
   startingGear: ProjectPawnGear
   supervisors: Вы подчиняетесь всему Алгоритму «Проекта», а также Оркестратору «Проекта»
   special:
@@ -53,6 +57,10 @@
     - !type:RoleTimeRequirement
       role: JobProjectOrchestrator
       time: 1
+    - !type:SpeciesRequirement
+      species:
+      - Human
+      - Dwarf
   startingGear: ProjectOrchestratorGear
   supervisors: Вы управляете всем Алгоритмом «Проекта», ваша обьязанность - направлять свой «Проект» в нужное место.
   special:

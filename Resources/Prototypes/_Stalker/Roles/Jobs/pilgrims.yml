@@ -8,6 +8,10 @@
     - !type:RoleTimeRequirement
       role: JobPostulant
       time: 1
+    - !type:SpeciesRequirement
+      species:
+      - Human
+      - Dwarf
   startingGear: PilgrimPostulantGear
   supervisors: Вы подчиняетесь все кто выше вас в иерархии
   special:
@@ -36,6 +40,10 @@
     - !type:RoleTimeRequirement
       role: JobBishop
       time: 1
+    - !type:SpeciesRequirement
+      species:
+      - Human
+      - Dwarf
   startingGear: PilgrimMonkGear
   supervisors: Вы подчиняетесь только господу нашему Богу
   special:

@@ -8,6 +8,10 @@
     - !type:RoleTimeRequirement
       role: JobSeraphims
       time: 1
+    - !type:SpeciesRequirement
+      species:
+      - Human
+      - Dwarf
   startingGear: StalkerGear
   supervisors: Вы служите во имя Его.
   special:
@@ -36,6 +40,10 @@
     - !type:RoleTimeRequirement
       role: JobHeadSeraphims
       time: 1
+    - !type:SpeciesRequirement
+      species:
+      - Human
+      - Dwarf
   startingGear: StalkerGear
   supervisors: Вы служите во имя Его.
   special:

@@ -9,6 +9,10 @@
     - !type:RoleTimeRequirement
       role: JobDeserter
       time: 1
+    - !type:SpeciesRequirement
+      species:
+      - Human
+      - Dwarf
   startingGear: StalkerDeserterGear
   supervisors: Ослушайся приказов диктаторов! Защити честь и достоинство зоны!
   special:

@@ -8,6 +8,10 @@
     - !type:RoleTimeRequirement
       role: JobBandit
       time: 1
+    - !type:SpeciesRequirement
+      species:
+      - Human
+      - Dwarf
   startingGear: BandGear
   supervisors: Вы никому не подчиняетесь...
   special:
@@ -37,6 +41,10 @@
     - !type:RoleTimeRequirement
       role: JobHeadBandit
       time: 1
+    - !type:SpeciesRequirement
+      species:
+      - Human
+      - Dwarf
   startingGear: BandGear
   supervisors: Вы никому не подчиняетесь...
   special:

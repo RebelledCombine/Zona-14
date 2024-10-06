@@ -8,6 +8,10 @@
     - !type:RoleTimeRequirement
       role: JobZavet
       time: 1
+    - !type:SpeciesRequirement
+      species:
+      - Human
+      - Dwarf
   startingGear: StalkerZavetGear
   supervisors: Вы работаете на Высшие Силы.
   special:
