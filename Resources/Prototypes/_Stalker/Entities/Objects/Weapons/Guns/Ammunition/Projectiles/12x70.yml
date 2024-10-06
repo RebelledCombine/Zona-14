@@ -22,7 +22,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 10
+        Piercing: 12
 
 - type: entity
   id: Bullet7mmBuckshot
@@ -46,7 +46,7 @@
     projectileClass: 1
     damage:
       types:
-        Piercing: 12
+        Piercing: 15
 
 - type: entity
   id: Bullet6mmBuckshot
@@ -70,7 +70,7 @@
     projectileClass: 2
     damage:
       types:
-        Piercing: 15
+        Piercing: 17
 
 - type: entity
   id: Bullet8mmBuckshot
