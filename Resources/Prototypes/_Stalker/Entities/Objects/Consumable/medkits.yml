@@ -29,24 +29,6 @@
   - type: Stack
 
 - type: entity
-  parent: [STBaseHealingItem, Brutepack]
-  id: STBrutepack
-  name: набор от ушибов
-  description: помогает от физических повреждений
-
-- type: entity
-  parent: [STBaseHealingItem, Ointment]
-  id: STOintment
-  name: мазь
-  description: помогает от ожогов и обморожения
-
-- type: entity
-  parent: [STBaseHealingItem, Gauze]
-  id: STGauze
-  name: бинт
-  description: останавливает кровотечение
-
-- type: entity
   parent: BaseMedkit
   id: MedkitAI2
   name: аптечка АИ-2
@@ -57,16 +39,17 @@
   - type: Healing
     damage:
       groups:
-        Brute: -90
+        Brute: -100
         Burn: -100
-        Airloss: -30
+        Airloss: -70
+        Toxin: -50
       types:
-        Compression: -10
+        Compression: -30
     ModifyBloodLevel: 3
-    bloodlossModifier: -1
+    bloodlossModifier: -15
   - type: Stack
     stackType: MedkitAI2
-    count: 2
+    count: 5
 
 - type: stack
   id: MedkitAI2
@@ -75,7 +58,7 @@
     sprite: _Stalker/Objects/medicine.rsi
     state: medkit-1
   spawn: MedkitAI2
-  maxCount: 2
+  maxCount: 5
 
 - type: entity
   parent: BaseMedkit
@@ -90,16 +73,17 @@
   - type: Healing
     damage:
       groups:
-        Brute: -150
-        Burn: -150
-        Airloss: -60
+        Brute: -130
+        Burn: -130
+        Airloss: -100
+        Toxin: -100
       types:
-        Compression: -80
-    ModifyBloodLevel: 8
-    bloodlossModifier: -3
+        Compression: -90
+    ModifyBloodLevel: 15
+    bloodlossModifier: -25
   - type: Stack
     stackType: MedkitMilitary
-    count: 2
+    count: 5
 
 - type: stack
   id: MedkitMilitary
@@ -108,7 +92,7 @@
     sprite: _Stalker/Objects/medicine.rsi
     state: medkit-1
   spawn: MedkitMilitary
-  maxCount: 2
+  maxCount: 5
 
 - type: entity
   parent: BaseMedkit
@@ -123,18 +107,18 @@
   - type: Healing
     damage:
       groups:
-        Brute: -200
-        Burn: -300
+        Brute: -150
+        Burn: -190
         Airloss: -120
         Toxin: -300
       types:
         Compression: -150
         Psy: -80
-    ModifyBloodLevel: 15
-    bloodlossModifier: -7
+    ModifyBloodLevel: 45
+    bloodlossModifier: -45
   - type: Stack
     stackType: MedkitScience
-    count: 2
+    count: 5
 
 - type: stack
   id: MedkitScience
@@ -143,7 +127,7 @@
     sprite: "_Stalker/Objects/medicine.rsi"
     state: medkit-1
   spawn: MedkitScience
-  maxCount: 2
+  maxCount: 5
 
 - type: entity
   name: элитная аптечка
@@ -233,3 +217,57 @@
     state: medkit-5
   spawn: MedkitLAR
   maxCount: 2
+
+- type: entity
+  parent: [STBaseHealingItem, Tourniquet]
+  id: STTourniquet
+  suffix: ST
+  name: tourniquet
+  description: Stops bleeding! Hopefully.
+  components:
+    - type: Sprite
+      state: tourniquet
+    - type: Healing
+      damageContainers:
+        - Biological
+      damage:
+        groups:
+          Brute: 5
+        types:
+          Asphyxiation: 5 
+      bloodlossModifier: -10 
+      delay: 0.5
+      healingBeginSound:
+        path: "/Audio/Items/Medical/brutepack_begin.ogg"
+      healingEndSound:
+        path: "/Audio/Items/Medical/brutepack_end.ogg"
+    - type: Stack
+      stackType: STTourniquet
+      count: 5
+
+- type: stack
+  id: STTourniquet
+  name: tourniquet
+  icon:
+    sprite: "Objects/Specific/Medical/medical.rsi"
+    state: tourniquet
+  spawn: STTourniquet
+  maxCount: 5
+
+- type: entity
+  parent: [STBaseHealingItem, Brutepack]
+  id: STBrutepack
+  name: набор от ушибов
+  description: помогает от физических повреждений
+
+- type: entity
+  parent: [STBaseHealingItem, Ointment]
+  id: STOintment
+  name: мазь
+  description: помогает от ожогов и обморожения
+
+- type: entity
+  parent: [STBaseHealingItem, Gauze]
+  id: STGauze
+  name: бинт
+  description: останавливает кровотечение
