@@ -46,6 +46,18 @@
       path: "/Audio/Items/Medical/brutepack_begin.ogg"
     healingEndSound:
       path: "/Audio/Items/Medical/brutepack_end.ogg"
+  - type: Stack
+    stackType: STBrutepack
+    count: 10
+
+- type: stack
+  id: STBrutepack
+  name: набор от ушибов
+  icon:
+    sprite: Objects/Specific/Medical/medical.rsi
+    state: brutepack
+  spawn: STBrutepack
+  maxCount: 10
 
 - type: entity
   parent: [STBaseHealingItem, Ointment]
@@ -53,6 +65,19 @@
   suffix: ST
   name: мазь
   description: помогает от ожогов и обморожения
+  components:
+  - type: Stack
+    stackType: STOintment
+    count: 10
+
+- type: stack
+  id: STOintment
+  name: мазь
+  icon:
+    sprite: Objects/Specific/Medical/medical.rsi
+    state: ointment
+  spawn: STOintment
+  maxCount: 10
 
 - type: entity
   parent: [STBaseHealingItem, Gauze]
@@ -60,6 +85,19 @@
   suffix: ST
   name: бинт
   description: останавливает кровотечение
+  components:
+  - type: Stack
+    stackType: STGauze
+    count: 10
+
+- type: stack
+  id: STGauze
+  name: бинт
+  icon:
+    sprite: _Stalker/Objects/medicine.rsi
+    state: gauze
+  spawn: STGauze
+  maxCount: 10
 
 - type: entity
   parent: BaseMedkit
