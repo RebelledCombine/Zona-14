@@ -12,7 +12,7 @@
 
 #06.01.2024 - Stalker14
 Window: STWindow
-ReinforcedWindow: STReinforcedWindow
+ReinforcedWindow: STReinforcedWindow 
 ComfyChair: STComfyChair
 ChairWood: STChairWood
 WoodenBench: STWoodenBench
