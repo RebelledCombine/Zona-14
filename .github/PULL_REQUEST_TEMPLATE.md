@@ -1,7 +1,7 @@
-<!-- Guidelines: https://docs.spacestation14.io/en/getting-started/pr-guideline -->
+<!-- По всем вопросам обращайтесь в наш дискорд https://discord.gg/stalker14 -->
 
 ## Что я изменил
-<!-- What did you change? -->
+<!-- Напишите что вы изменили или добавьте картинки -->
 
 <!-- Проставить X — [X]: -->
 ## Убедитесь что вы проверили и согласны со следующим
