@@ -105,6 +105,7 @@
   - unpausemap
   - restart
   - shutdown
+  - delay_restart
 
 - Flags: SPAWN
   Commands:
