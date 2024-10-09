@@ -13,7 +13,6 @@
   id: BaseMobSpecies
   abstract: true
   components:
-  - type: Stagger
   - type: Sprite
     layers:
     - map: [ "enum.HumanoidVisualLayers.Chest" ]
