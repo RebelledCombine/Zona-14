@@ -4,7 +4,7 @@
   name: potted plant
   description: A little bit of nature contained in a pot.
   abstract: true
-  suffix: ST, Маппинг
+  suffix: ST, Mapping
   components:
   - type: Sprite
     drawdepth: Overdoors

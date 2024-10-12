@@ -1,7 +1,7 @@
 - type: entity
   id: STBarricade
   parent: Barricade
-  suffix: ST, Маппинг
+  suffix: ST, Mapping
   components:
   - type: Sprite
     sprite: _Stalker/Structures/barricades.rsi
@@ -10,7 +10,7 @@
 - type: entity
   id: STBarricadeBlock
   parent: BarricadeBlock
-  suffix: ST, Маппинг
+  suffix: ST, Mapping
   components:
   - type: Sprite
     sprite: _Stalker/Structures/barricades.rsi
@@ -20,7 +20,7 @@
 - type: entity
   id: STBarricadeDirectional
   parent: BarricadeDirectional
-  suffix: ST, Маппинг
+  suffix: ST, Mapping
   components:
   - type: Sprite
     sprite: _Stalker/Structures/barricades.rsi
