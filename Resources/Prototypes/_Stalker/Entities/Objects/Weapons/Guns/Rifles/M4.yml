@@ -62,28 +62,27 @@
               - Cartridge556
 
 - type: entity
-  name: AR-15s
-  suffix: ST
-  parent: STWeaponRifleM4
-  id: STWeaponRifleAR15s
-  description: AR-15 platform is very similar to the M4, but it is designed to fire only in semi-automatic mode.
-  components:
-    - type: Gun
-      fireRate: 4
-      selectedMode: SemiAuto
-      availableModes:
-      - SemiAuto
-
-- type: entity
   name: HK-416
   suffix: ST
   parent: STWeaponRifleM4
   id: STWeaponRifleHK416
   description: HK-416 Немецкий автомат, адаптированный под американскую модульную систему AR-15, созданный фирмой Heckler & Koch.
   components:
-    - type: Item
-      sprite: _Stalker/Objects/Weapons/Guns/Rifles/hk416.rsi
-    - type: Sprite
-      sprite: _Stalker/Objects/Weapons/Guns/Rifles/hk416.rsi
-    - type: Clothing
-      sprite: _Stalker/Objects/Weapons/Guns/Rifles/hk416.rsi
+  - type: STWeight
+    self: 3.8
+  - type: Item
+    sprite: _Stalker/Objects/Weapons/Guns/Rifles/hk416.rsi
+  - type: Sprite
+    sprite: _Stalker/Objects/Weapons/Guns/Rifles/hk416.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Weapons/Guns/Rifles/hk416.rsi
+  - type: Gun
+    fireRate: 7
+    soundGunshot:
+      path: /Audio/_Stalker/Effects/Guns/m4.ogg
+      params:
+        volume: -2
+    minAngle: 50
+    maxAngle: 105
+    angleIncrease: 3.8
+    angleDecay: 32.5
