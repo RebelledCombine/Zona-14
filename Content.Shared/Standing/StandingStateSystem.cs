@@ -31,7 +31,8 @@ namespace Content.Shared.Standing
             bool force = false,
             StandingStateComponent? standingState = null,
             AppearanceComponent? appearance = null,
-            HandsComponent? hands = null)
+            HandsComponent? hands = null,
+            bool fixtureAttempt = true)  // stalker-changes
         {
             // TODO: This should actually log missing comps...
             if (!Resolve(uid, ref standingState, false))
@@ -69,7 +70,8 @@ namespace Content.Shared.Standing
             _appearance.SetData(uid, RotationVisuals.RotationState, RotationState.Horizontal, appearance);
 
             // Change collision masks to allow going under certain entities like flaps and tables
-            if (TryComp(uid, out FixturesComponent? fixtureComponent))
+            if (TryComp(uid, out FixturesComponent? fixtureComponent)
+                && fixtureAttempt) // stalker-changes
             {
                 foreach (var (key, fixture) in fixtureComponent.Fixtures)
                 {
