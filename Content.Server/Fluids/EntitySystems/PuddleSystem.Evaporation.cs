@@ -22,7 +22,7 @@ public sealed partial class PuddleSystem
     public static string[] EvaporationReagents = new[] { Water, Blood, Vodka, STWater};
 
     //stalker-changes-end
-    private void OnEvaporationMapInit(Entity<EvaporationComponent> entity, ref MapInitEvent args) // stalker-changes
+    private void OnEvaporationMapInit(Entity<EvaporationComponent> entity, ref MapInitEvent args)
     {
         entity.Comp.NextTick = _timing.CurTime + EvaporationCooldown;
     }
