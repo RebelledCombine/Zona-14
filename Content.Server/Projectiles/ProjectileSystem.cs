@@ -54,12 +54,8 @@ public sealed class ProjectileSystem : SharedProjectileSystem
             "gloves",
             "shoes",
             "id",
-            "pocket1",
-            "pocket2",
-            "suitstorage",
             "legs",
-            "torso",
-            "dopweapon"
+            "torso"
         };
 
         foreach (var slot in slots)
