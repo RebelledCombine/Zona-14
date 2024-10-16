@@ -56,11 +56,11 @@ public sealed class ProjectileSystem : SharedProjectileSystem
             }
         }
 
-        if (_inventory.TryGetSlotEntity(args.OtherEntity, "neck", out var neck) && TryComp(neck, out armorComp) && armorComp.ArmorClass.HasValue)
+        if (_inventory.TryGetSlotEntity(args.OtherEntity, "cloak", out var cloak) && TryComp(cloak, out armorComp) && armorComp.ArmorClass.HasValue)
         {
             if (component.ProjectileClass >= armorComp.ArmorClass.Value)
             {
-                ignore.Add(neck.Value);
+                ignore.Add(cloak.Value);
             }
         }
 
