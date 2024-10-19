@@ -63,6 +63,8 @@ namespace Content.Server.Database
         /// <returns>The ban with the given id or null if none exist.</returns>
         Task<ServerBanDef?> GetServerBanAsync(int id);
 
+        Task<ServerBanDef?> GetLastServerBanAsync(); // stalker-changes
+
         /// <summary>
         ///     Looks up an user's most recent received un-pardoned ban.
         ///     This will NOT return a pardoned ban.
@@ -494,6 +496,12 @@ namespace Content.Server.Database
         {
             DbReadOpsMetric.Inc();
             return RunDbCommand(() => _db.GetServerBanAsync(address, userId, hwId));
+        }
+
+        public Task<ServerBanDef?> GetLastServerBanAsync()
+        {
+            DbReadOpsMetric.Inc();
+            return RunDbCommand(() => _db.GetLastServerBanAsync());
         }
 
         public Task<List<ServerBanDef>> GetServerBansAsync(

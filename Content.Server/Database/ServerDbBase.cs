@@ -397,6 +397,8 @@ namespace Content.Server.Database
             NetUserId? userId,
             ImmutableArray<byte>? hwId);
 
+        public abstract Task<ServerBanDef?> GetLastServerBanAsync(); // Stalker-Bans
+
         /// <summary>
         ///     Looks up an user's ban history.
         ///     This will return pardoned bans as well.
