@@ -68,7 +68,7 @@
 - type: entity
   name: ЛЭП
   parent: STPowerlines1
-  id: STPowerlines7
+  id: STPowerlines8
   suffix: ST, Mapping
   components:
   - type: Sprite

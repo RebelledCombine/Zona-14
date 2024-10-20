@@ -178,7 +178,7 @@
 
 - type: entity
   parent: BaseStructure
-  id: StalkerWorkbench
+  id: STBrockenWorkbench
   name: сломанный токарный стол
   description: Сломанный токарный стол, покрытый пылью и масляными пятнами, застыл в тишине, как молчаливый свидетель остановленного производства.
   suffix: ST, Mapping
