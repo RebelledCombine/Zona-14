@@ -8,7 +8,9 @@ using System.Threading;
 using System.Threading.Tasks;
 using Content.Server.Administration.Logs;
 using Content.Server.Administration.Managers;
+using Content.Shared._Stalker.Bands;
 using Content.Shared._Stalker.Characteristics;
+using Content.Shared._Stalker.WarZone;
 using Content.Shared.Administration.Logs;
 using Content.Shared.Database;
 using Content.Shared.Humanoid;
@@ -1706,7 +1708,75 @@ INSERT INTO player_round (players_id, rounds_id) VALUES ({players[player]}, {id}
 
             return record;
         }
+        public async Task SetStalkerBandAsync(ProtoId<STBandPrototype> band, float rewardPoints)
+        {
+            await using var db = await GetDb();
 
+            var record = await db.DbContext.StalkerBands.FirstOrDefaultAsync(s => s.BandProtoId == band.Id);
+            if (record is null)
+            {
+                var newBand = new StalkerBand()
+                {
+                    BandProtoId = band.Id,
+                    RewardPoints = rewardPoints
+                };
+                db.DbContext.StalkerBands.Add(newBand);
+            }
+            else
+            {
+                record.RewardPoints = rewardPoints;
+            }
+
+            await db.DbContext.SaveChangesAsync();
+        }
+
+        public async Task<StalkerBand?> GetStalkerBandAsync(ProtoId<STBandPrototype> band)
+        {
+            await using var db = await GetDb();
+            var record = await db.DbContext.StalkerBands
+                .Include(b => b.ZoneOwnerships)
+                .FirstOrDefaultAsync(s => s.BandProtoId == band.Id);
+
+            return record;
+        }
+        public async Task SetStalkerZoneOwnershipAsync(ProtoId<STWarZonePrototype> warZone, ProtoId<STBandPrototype> owner)
+        {
+            await using var db = await GetDb();
+            var ownerRecord = await db.DbContext.StalkerBands.FirstOrDefaultAsync(s => s.BandProtoId == owner.Id);
+
+            if (ownerRecord == null)
+            {
+                await SetStalkerBandAsync(owner, 0);
+                ownerRecord = await db.DbContext.StalkerBands.FirstOrDefaultAsync(s => s.BandProtoId == owner.Id);
+            }
+
+            var record = await db.DbContext.StalkerZoneOwnerships.FirstOrDefaultAsync(s => s.ZoneProtoId == warZone.Id);
+            if (record is null)
+            {
+                var newZone = new StalkerZoneOwnership()
+                {
+                    ZoneProtoId = warZone.Id,
+                    OwnerId = ownerRecord!.Id,
+                    LastCapturedByCurrentOwnerAt = DateTime.UtcNow
+                };
+                db.DbContext.StalkerZoneOwnerships.Add(newZone);
+            }
+            else
+            {
+                record.OwnerId = ownerRecord!.Id;
+                record.LastCapturedByCurrentOwnerAt = DateTime.UtcNow;
+            }
+
+            await db.DbContext.SaveChangesAsync();
+        }
+
+        public async Task<StalkerZoneOwnership?> GetStalkerWarOwnershipAsync(ProtoId<STWarZonePrototype> warZone)
+        {
+            await using var db = await GetDb();
+            var record = await db.DbContext.StalkerZoneOwnerships.FirstOrDefaultAsync(s => s.ZoneProtoId == warZone.Id);
+
+            return record;
+        }
         #endregion
         #region Job Whitelists
 

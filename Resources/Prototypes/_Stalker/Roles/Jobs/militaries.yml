@@ -172,3 +172,14 @@
     pocket1: 739Mag75
     pocket2: 739Mag75
     suitstorage: STWeaponRifleStalkerAK103
+
+- type: stBand
+  id: STMilitaryBand
+  name: Military
+  faction: Stalker
+  maxMembers: 10
+  managingRankId: 3
+  hierarchy:
+    1: Military
+    2: MilitaryOfficer
+    3: MilitaryHead

@@ -5,7 +5,9 @@ using System.Text.Json;
 using System.Threading;
 using System.Threading.Tasks;
 using Content.Server.Administration.Logs;
+using Content.Shared._Stalker.Bands;
 using Content.Shared._Stalker.Characteristics;
+using Content.Shared._Stalker.WarZone;
 using Content.Shared.Administration.Logs;
 using Content.Shared.CCVar;
 using Content.Shared.Database;
@@ -335,6 +337,13 @@ namespace Content.Server.Database
         Task<string?> GetLoginItems(string login);
         Task SetStalkerStatsAsync(string login, CharacteristicType characteristic, float value, DateTime? trainTime);
         Task<StalkerStats?> GetStalkerStatAsync(string login, CharacteristicType characteristic);
+
+        Task SetStalkerBandAsync(ProtoId<STBandPrototype> band, float rewardPoints);
+
+        Task<StalkerBand?> GetStalkerBandAsync(ProtoId<STBandPrototype> band);
+        Task SetStalkerZoneOwnershipAsync(ProtoId<STWarZonePrototype> warZone, ProtoId<STBandPrototype> owner);
+
+        Task<StalkerZoneOwnership?> GetStalkerWarOwnershipAsync(ProtoId<STWarZonePrototype> warZone);
         #endregion
     }
 
@@ -1019,6 +1028,29 @@ namespace Content.Server.Database
         {
             DbReadOpsMetric.Inc();
             return RunDbCommand(() => _db.GetStalkerStatAsync(login, characteristic));
+        }
+
+        public Task SetStalkerBandAsync(ProtoId<STBandPrototype> band, float rewardPoints)
+        {
+            DbWriteOpsMetric.Inc();
+            return RunDbCommand(() => _db.SetStalkerBandAsync(band, rewardPoints));
+        }
+
+        public Task<StalkerBand?> GetStalkerBandAsync(ProtoId<STBandPrototype> band)
+        {
+            DbReadOpsMetric.Inc();
+            return RunDbCommand(() => _db.GetStalkerBandAsync(band));
+        }
+        public Task SetStalkerZoneOwnershipAsync(ProtoId<STWarZonePrototype> warZone, ProtoId<STBandPrototype> owner)
+        {
+            DbWriteOpsMetric.Inc();
+            return RunDbCommand(() => _db.SetStalkerZoneOwnershipAsync(warZone, owner));
+        }
+
+        public Task<StalkerZoneOwnership?> GetStalkerWarOwnershipAsync(ProtoId<STWarZonePrototype> warZone)
+        {
+            DbReadOpsMetric.Inc();
+            return RunDbCommand(() => _db.GetStalkerWarOwnershipAsync(warZone));
         }
 
         public Task<string?> GetLoginItems(string login)
