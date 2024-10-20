@@ -201,10 +201,10 @@ public sealed partial class BanManager : IBanManager, IPostInjectInit
 
         var severityLoc = severity switch // stalker-changes-start
         {
-            NoteSeverity.None => "Отсутствует",
-            NoteSeverity.Minor => "Низкая",
-            NoteSeverity.Medium => "Средняя",
-            NoteSeverity.High => "Высокая"
+            NoteSeverity.None => Loc.GetString("admin-banmanager-ban-reason-none"),
+            NoteSeverity.Minor => Loc.GetString("admin-banmanager-ban-reason-low"),
+            NoteSeverity.Medium => Loc.GetString("admin-banmanager-ban-reason-middle"),
+            NoteSeverity.High => Loc.GetString("admin-banmanager-ban-reason-high")
         };
         var lastBan = await _db.GetLastServerBanAsync();
         _webhook.GenerateWebhook(adminName, targetName, lastBan?.Id.ToString(), severityLoc, minutes, reason); // stalker-changes-end
