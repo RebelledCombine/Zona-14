@@ -96,25 +96,42 @@ public sealed class DiscordAuthManager : IPostInjectInit
         _sawmill.Debug($"Player {userId} check Discord verification");
 
         var requestUrl = $"{_apiUrl}/check?userid={userId}&api_token={_apiKey}";
-        var response = await _httpClient.GetAsync(requestUrl, cancel);
-        if (!response.IsSuccessStatusCode)
-            return null;
 
-        var discordData = await response.Content.ReadFromJsonAsync<DiscordUserData>(cancel);
-        return discordData;
+        // try catch block to catch HttpRequestExceptions due to remote service unavailability
+        try
+        {
+            var response = await _httpClient.GetAsync(requestUrl, cancel);
+            if (!response.IsSuccessStatusCode)
+                return null;
+
+            var discordData = await response.Content.ReadFromJsonAsync<DiscordUserData>(cancel);
+            return discordData;
+        }
+        catch (Exception)
+        {
+            return null;
+        }
     }
 
     public async Task<string> GenerateLink(NetUserId userId, CancellationToken cancel = default)
     {
         _sawmill.Debug($"Generating link for {userId}");
         var requestUrl = $"{_apiUrl}/link?userid={userId}&api_token={_apiKey}";
-        var response = await _httpClient.GetAsync(requestUrl, cancel);
 
-        if (!response.IsSuccessStatusCode)
-            return "Service Unavailable"; // TODO: Add web page to redirect in such cases
+        // try catch block to catch HttpRequestExceptions due to remote service unavailability
+        try
+        {
+            var response = await _httpClient.GetAsync(requestUrl, cancel);
+            if (!response.IsSuccessStatusCode)
+                return "Service Unavailable"; // TODO: Add web page to redirect in such cases
 
-        var link = await response.Content.ReadFromJsonAsync<DiscordLinkResponse>(cancel);
-        return link!.Link;
+            var link = await response.Content.ReadFromJsonAsync<DiscordLinkResponse>(cancel);
+            return link!.Link;
+        }
+        catch (Exception)
+        {
+            return "Service Unavailable";
+        }
     }
 }
 
