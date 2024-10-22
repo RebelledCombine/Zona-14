@@ -338,12 +338,27 @@ namespace Content.Server.Database
                 .HasMany(c => c.ZoneOwnerships)
                 .WithOne(z => z.Band)
                 .HasForeignKey(z => z.BandId)
-                .OnDelete(DeleteBehavior.Cascade);  // This ensures cascade delete when the band got deleted
+                .OnDelete(DeleteBehavior.Cascade);
 
+            modelBuilder.Entity<StalkerFaction>()
+                .HasMany(c => c.ZoneOwnerships)
+                .WithOne(z => z.Faction)
+                .HasForeignKey(z => z.FactionId)
+                .OnDelete(DeleteBehavior.Cascade);
+
+            // Relationship between StalkerBand and StalkerZoneOwnership
             modelBuilder.Entity<StalkerZoneOwnership>()
                 .HasOne(z => z.Band)
                 .WithMany(b => b.ZoneOwnerships)
-                .HasForeignKey(z => z.BandId);
+                .HasForeignKey(z => z.BandId)
+                .OnDelete(DeleteBehavior.Cascade);
+
+            // Relationship between StalkerFaction and StalkerZoneOwnership
+            modelBuilder.Entity<StalkerZoneOwnership>()
+                .HasOne(z => z.Faction)
+                .WithMany(f => f.ZoneOwnerships)
+                .HasForeignKey(z => z.FactionId)
+                .OnDelete(DeleteBehavior.Cascade);
             // stalker-changes-ends
         }
 
@@ -1328,13 +1343,13 @@ namespace Content.Server.Database
         /// <summary>
         /// Band Owner
         /// </summary>
-        [ForeignKey("BandId")]
+        [ForeignKey(nameof(BandId))]
         public StalkerBand? Band { get; set; } = default!;
 
         /// <summary>
-        /// Band Owner
+        /// Faction Owner
         /// </summary>
-        [ForeignKey("BandId")]
+        [ForeignKey(nameof(FactionId))]
         public StalkerFaction? Faction { get; set; } = default!;
 
         /// <summary>

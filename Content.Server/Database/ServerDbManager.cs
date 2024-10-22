@@ -345,7 +345,10 @@ namespace Content.Server.Database
         Task SetStalkerFactionAsync(ProtoId<NpcFactionPrototype> faction, float rewardPoints);
 
         Task<StalkerFaction?> GetStalkerFactionAsync(ProtoId<NpcFactionPrototype> faction);
-        Task SetStalkerZoneOwnershipAsync(ProtoId<STWarZonePrototype> warZone, ProtoId<STBandPrototype> owner);
+        Task SetStalkerZoneOwnershipAsync(
+            ProtoId<STWarZonePrototype> warZone,
+            ProtoId<STBandPrototype>? capturingBand = null,
+            ProtoId<NpcFactionPrototype>? capturingFaction = null);
 
         Task<StalkerZoneOwnership?> GetStalkerWarOwnershipAsync(ProtoId<STWarZonePrototype> warZone);
         #endregion
