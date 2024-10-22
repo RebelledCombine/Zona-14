@@ -1756,14 +1756,14 @@ INSERT INTO player_round (players_id, rounds_id) VALUES ({players[player]}, {id}
                 var newZone = new StalkerZoneOwnership()
                 {
                     ZoneProtoId = warZone.Id,
-                    OwnerId = ownerRecord!.Id,
+                    BandId = ownerRecord!.Id,
                     LastCapturedByCurrentOwnerAt = DateTime.UtcNow
                 };
                 db.DbContext.StalkerZoneOwnerships.Add(newZone);
             }
             else
             {
-                record.OwnerId = ownerRecord!.Id;
+                record.BandId = ownerRecord!.Id;
                 record.LastCapturedByCurrentOwnerAt = DateTime.UtcNow;
             }
 

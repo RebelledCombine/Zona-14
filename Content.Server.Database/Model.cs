@@ -335,14 +335,14 @@ namespace Content.Server.Database
             // stalker-changes-start
             modelBuilder.Entity<StalkerBand>()
                 .HasMany(c => c.ZoneOwnerships)
-                .WithOne(z => z.Owner)
-                .HasForeignKey(z => z.OwnerId)
+                .WithOne(z => z.Band)
+                .HasForeignKey(z => z.BandId)
                 .OnDelete(DeleteBehavior.Cascade);  // This ensures cascade delete when the band got deleted
 
             modelBuilder.Entity<StalkerZoneOwnership>()
-                .HasOne(z => z.Owner)
+                .HasOne(z => z.Band)
                 .WithMany(b => b.ZoneOwnerships)
-                .HasForeignKey(z => z.OwnerId);
+                .HasForeignKey(z => z.BandId);
             // stalker-changes-ends
         }
 
@@ -1283,6 +1283,26 @@ namespace Content.Server.Database
         public ICollection<StalkerZoneOwnership> ZoneOwnerships { get; set; } = new List<StalkerZoneOwnership>();
     }
 
+    public sealed class StalkerFaction
+    {
+        [Required, Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int Id { get; set; }
+
+        /// <summary>
+        /// Id of faction prototype <see cref="Content.Shared.NPC.PrototypesNpcFactionPrototype"/>
+        /// </summary>
+        [Required]
+        public string FactionProtoId { get; set; } = default!;
+
+        /// <summary>
+        /// Reward points for holding zones.
+        /// </summary>
+        [Required]
+        public float RewardPoints { get; set; } = 0;
+
+        public ICollection<StalkerZoneOwnership> ZoneOwnerships { get; set; } = new List<StalkerZoneOwnership>();
+    }
+
     public sealed class StalkerZoneOwnership
     {
         [Required, Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
@@ -1297,13 +1317,24 @@ namespace Content.Server.Database
         /// <summary>
         /// Clan Owner id in database
         /// </summary>
-        public int? OwnerId { get; set; } = null;
+        public int? BandId { get; set; } = null;
+
+        /// <summary>
+        /// Clan Owner id in database
+        /// </summary>
+        public int? FactionId { get; set; } = null;
 
         /// <summary>
         /// Band Owner
         /// </summary>
-        [ForeignKey("OwnerId")]
-        public StalkerBand? Owner { get; set; } = default!;
+        [ForeignKey("BandId")]
+        public StalkerBand? Band { get; set; } = default!;
+
+        /// <summary>
+        /// Band Owner
+        /// </summary>
+        [ForeignKey("BandId")]
+        public StalkerFaction? Faction { get; set; } = default!;
 
         /// <summary>
         /// When the zone was captured by current owner
