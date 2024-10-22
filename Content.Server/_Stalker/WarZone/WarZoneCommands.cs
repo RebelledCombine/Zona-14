@@ -14,7 +14,7 @@ namespace Content.Server._Stalker.WarZone;
 [AdminCommand(AdminFlags.Admin)]
 public sealed class STWarZoneChangeOwnerCommand : IConsoleCommand
 {
-    [Dependency] SharedWarZoneSystem _sharedWarZone = default!;
+    //[Dependency] SharedWarZoneSystem _sharedWarZone = default!;
     [Dependency] IPrototypeManager _prototype = default!;
 
     public string Command => "st_warzone_changeowner";
