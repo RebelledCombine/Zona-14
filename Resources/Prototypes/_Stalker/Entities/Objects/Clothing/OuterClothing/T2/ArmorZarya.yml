@@ -294,6 +294,29 @@
   - type: Clothing
     sprite: _Stalker/Objects/Clothing/hats/Bandit_zarya_cap.rsi
 
+- type: entity
+  parent: STClothingOuterArmorZaryaBase
+  id: STClothingOuterArmorSeraphim
+  name: комбинезон "Заря" Серафима
+  description: комбинезон "Заря", модифицированная под мотивы группировки "Серафим".
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/zarya_seraphim.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/zarya_seraphim.rsi
+
+- type: entity
+  parent: STClothingHeadHatBase
+  id: ClothingHeadSeraphimCap
+  name: капюшон "Зари" Серафима
+  description: Зёленый капюшон от аналога "Зари", представленного Серафимом.
+  noSpawn: true
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/zarya_seraphim_cap.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/zarya_seraphim_cap.rsi
+
 #СКИНЫ
 
 - type: entity
