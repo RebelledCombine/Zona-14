@@ -59,12 +59,15 @@
       - type: Bands
         band: Stalker
         bandIcon: army
+        bandProto: STMilitaryBand
+        bandRankId: 1
       - type: BlockTackingHolyItems
       - type: TeethPull
         teethProto: ToothStalker
         pullingItemTag: PliersStalker
         teethCount: 3
         initialTeeth: 3
+
 
 
 - type: job
@@ -93,6 +96,8 @@
         - type: Bands
           band: Stalker
           bandIcon: army
+          bandProto: STMilitaryBand
+          bandRankId: 2
         - type: BlockTackingHolyItems
         - type: TeethPull
           teethProto: ToothStalker
@@ -126,6 +131,8 @@
         - type: Bands
           band: Stalker
           bandIcon: army
+          bandProto: STMilitaryBand
+          bandRankId: 3
         - type: BlockTackingHolyItems
 
 - type: startingGear
