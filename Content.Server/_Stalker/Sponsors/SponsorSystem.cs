@@ -318,7 +318,7 @@ public sealed class SponsorSystem : EntitySystem
             return;
         }
 
-        if (!_sponsors.TryGetSponsorData(session.UserId, out var data))
+        if (!_sponsors.TryGetInfo(session.UserId, out var data))
         {
             shell.WriteError($"{ckey} is not a sponsor.");
             return;
