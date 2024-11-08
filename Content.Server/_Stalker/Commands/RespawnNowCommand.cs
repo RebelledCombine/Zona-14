@@ -158,19 +158,6 @@ public sealed class RespawnNowCommand : IConsoleCommand
             shell.WriteLine("You respawned");
         }
     }
-
-    public void Damage(DamageableSystem DS, EntityUid NewPlayerEntity)
-    {
-        if (!_protoMan.TryIndex<DamageTypePrototype>("Blunt", out var prototype))
-        {
-            return;
-        }
-        var Damage = new DamageSpecifier(prototype, FixedPoint2.New(80));
-
-        DS.TryChangeDamage(NewPlayerEntity, Damage, true);
-
-    }
-
 }
 /// <summary>
 /// Raised when player types <see cref="RespawnNowCommand"/> in console on previous player entity.
