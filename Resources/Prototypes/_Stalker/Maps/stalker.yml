@@ -1,5 +1,5 @@
 
-- type: gameMap
+- type: gameMap # arena-changes-start
   id: STWorld
   mapName: 'StalkerMap'
   mapPath: "/Maps/_Arena_/lobby.yml"
@@ -14,4 +14,4 @@
           overflowJobs:
             - Arenolog
           availableJobs:
-            Arenolog: [ -1, -1 ]
+            Arenolog: [ -1, -1 ] # arena-changes-end
