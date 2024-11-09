@@ -77,10 +77,10 @@
     - type: STWeight
       self: 2.5
     - type: Sprite
-      sprite: _Stalker/Objects/Clothing/outerClothing/IssgSpark.rsi
+      sprite: _Stalker/Objects/Clothing/outerClothing/Jewelry/ISSGspark.rsi
       state: icon-suit
     - type: Clothing
-      sprite: _Stalker/Objects/Clothing/outerClothing/IssgSpark.rsi
+      sprite: _Stalker/Objects/Clothing/outerClothing/Jewelry/ISSGspark.rsi
     - type: ToggleableClothing
       clothingPrototype: ClothingHeadHelmetIssgSpark
     - type: PersonalDamage
@@ -108,9 +108,9 @@
   description: Плотный кусок резины на вашей голове.
   components:
     - type: Sprite
-      sprite: _Stalker/Objects/Clothing/hats/IssgSpark_helm.rsi
+      sprite: _Stalker/Objects/Clothing/outerClothing/Jewelry/ISSGspark.rsi
     - type: Clothing
-      sprite: _Stalker/Objects/Clothing/hats/IssgSpark_helm.rsi
+      sprite: _Stalker/Objects/Clothing/outerClothing/Jewelry/ISSGspark.rsi
     - type: Armor
       armorClass: 1
       modifiers:
