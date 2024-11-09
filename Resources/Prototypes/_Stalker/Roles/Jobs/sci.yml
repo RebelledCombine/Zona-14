@@ -33,7 +33,7 @@
 
 - type: job
   id: StalkerISSG
-  name: оперативник ISSG
+  name: Оперативник ISSG
   icon: ecologists
   description: Выполнения приказов института - ваше всё.
   playTimeTracker: JobStalkerISSG
