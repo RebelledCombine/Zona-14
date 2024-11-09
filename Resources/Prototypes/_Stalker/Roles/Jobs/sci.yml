@@ -58,7 +58,7 @@
         altBand: stalker
         canChange: true
         band: Stalker
-        bandIcon: sci
+        bandIcon: ecologists
       - type: BlockTackingHolyItems
       - type: TeethPull
         teethProto: ToothStalker
