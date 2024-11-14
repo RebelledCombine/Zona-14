@@ -1,6 +1,6 @@
 - type: entity
   parent: BaseStructure
-  id: BaseRailing
+  id: BaseRailingStalker
   abstract: true
   name: railing
   description: Basic railing meant to protect idiots like you from falling.
@@ -26,7 +26,7 @@
 
 - type: entity
   parent: BaseRailing
-  id: Railing
+  id: RailingStalker
   components:
   - type: Sprite
     state: side
@@ -71,7 +71,7 @@
 
 - type: entity
   parent: BaseRailing
-  id: RailingCorner
+  id: RailingCornerStalker
   components:
   - type: Sprite
     state: corner
@@ -125,7 +125,7 @@
 
 - type: entity
   parent: BaseRailing
-  id: RailingCornerSmall
+  id: RailingCornerSmallStalker
   components:
   - type: Sprite
     state: corner_small
@@ -170,7 +170,7 @@
 
 - type: entity
   parent: BaseRailing
-  id: RailingRound
+  id: RailingRoundStalker
   components:
   - type: Sprite
     state: round
