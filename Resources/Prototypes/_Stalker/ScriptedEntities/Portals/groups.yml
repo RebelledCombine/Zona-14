@@ -441,3 +441,29 @@
       portalName: Cordon-Neutral
     - type: AccessReader
       access: [["Neutral"]]
+
+####################################Жабы
+
+- type: entity
+  parent: MapTeleportBase
+  id: Lobby-Jaba
+  noSpawn: false
+  name: Lobby-Jaba
+  components:
+    - type: NewMapTeleport
+      allowAll: false
+      portalName: Lobby-Jaba
+    - type: AccessReader
+      access: [["Jaba"]]
+
+- type: entity
+  parent: MapTeleportBaseUncollide
+  id: Lobby-JabaUncollide
+  noSpawn: false
+  name: Lobby-JabaUncollide
+  components:
+    - type: NewMapTeleport
+      allowAll: false
+      portalName: Lobby-Jaba
+    - type: AccessReader
+      access: [["Jaba"]]

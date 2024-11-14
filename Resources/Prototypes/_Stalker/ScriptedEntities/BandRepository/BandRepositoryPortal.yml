@@ -199,6 +199,23 @@
 
 # Repository for Military - End
 
+# Repository for Jabs - Start
+
+- type: entity
+  parent: BandRepositoryBase
+  id: PortalBandJabaRepository
+  suffix: 1000
+  name: Band-Jaba-Repository
+  description: Подвал гениев крафтов... Не может быть! Там-...
+  components:
+    - type: AccessReader
+      access: [["Jaba"]]
+    - type: StalkerBandTeleport
+      portalName: _PortalBandJabaRepository
+      repositoryWeight: 1000
+
+# Repository for Jabs - End
+
 # Repository for Deserters - Start
 
 
