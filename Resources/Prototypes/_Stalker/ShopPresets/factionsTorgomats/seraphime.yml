@@ -6,12 +6,13 @@
     - name: Оружие
       priority: 1
       items:
-        STWeaponShotgunToz34: 4000
+        STWeaponShotgunToz34: 900
         STCombatKnife: 60
         STWeaponShotgunMP155T: 100
     - name: Броня и снаряжение
       priority: 2
       items:
+        ClothingMaskGasSera: 180
         ClothingBackpackDuffelGreenStalker: 300 # 4,4
         ClothingBackpackDuffelBlackStalker: 300 # 4,4
         ClothingBackpackDuffelMedicalStalker: 500
@@ -21,8 +22,7 @@
         ClothingBeltTarzanGreen: 1000
         ClothingBeltTarzanOrange: 1000
         STClothingCapeT1Serafim: 356
-        ClothingMaskXoma: 380
-        ClothingMaskGasM40: 1000
+        STSkinsKitSeraphim: 1000
     - name: Утилиты
       priority: 3
       items:
@@ -69,10 +69,10 @@
         PillDexalinPlusStalker: 700
         radioprotectpill: 129
         psyblock: 1300
-        MedkitAI2: 4000
-        STOintment: 150
-        STGauze: 100
-        STBrutepack: 300
+        MedkitAI2Sera: 4000
+        STOintmentSera: 150
+        STGauzeSera: 100
+        STBrutepackSera: 300
         Tourniquet: 128
         Bloodpack: 800
         MedkitMilitary: 7000
@@ -102,6 +102,7 @@
     - name: Броня и снаряжение
       priority: 2
       items:
+        ClothingMaskGasSera: 45
         STClothingCapeT2SerafimPrestige: 200
         STSkinsKitSeraphim: 350
         ClothingBackpackTacticBlackStalker: 250
@@ -159,10 +160,10 @@
         PillDexalinPlusStalker: 15
         radioprotectpill: 30
         psyblock: 120
-        MedkitAI2: 200
-        Ointment: 5
-        Gauze: 5
-        Brutepack: 15
+        MedkitAI2Sera: 200
+        STOintmentSera: 5
+        STGauzeSera: 5
+        STBrutepackSera: 15
         Tourniquet: 3
         Bloodpack: 100
         MedkitMilitary: 450
@@ -203,6 +204,7 @@
     - name: Броня и снаряжение
       priority: 2
       items:
+        ClothingMaskGasSera: 90
         STClothingOuterArmorRassvetSera: 600
         STClothingOuterArmorSeraphimStrash: 1300
         STClothingCapeT1Serafim: 150
@@ -247,10 +249,10 @@
         PillDexalinPlusStalker: 30
         radioprotectpill: 45
         psyblock: 140
-        MedkitAI2: 220
-        Ointment: 10
-        Gauze: 10
-        Brutepack: 20
+        MedkitAI2Sera: 220
+        STOintmentSera: 10
+        STGauzeSera: 10
+        STBrutepackSera: 20
         Tourniquet: 15
         Bloodpack: 110
         MedkitMilitary: 500
