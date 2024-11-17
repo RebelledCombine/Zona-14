@@ -15,8 +15,14 @@ Railing : STRailing
 RailingCorner : STRailingCorner
 RailingCornerSmall : STRailingCornerSmall
 RailingRound : STRailingRound
-
+#14.11.2024 - Stalker14
+Cordon-Sera : Base-Sera
+Cordon-SeraUncollide : Base-SeraUncollide
+WallRockBasalt : STWallRockBasalt
 #11.10.2024 - Stalker14
+Grille: STGrille
+GrilleBroken: STGrilleBroken
+GrilleDiagonal: STGrilleDiagonal
 Barricade: STBarricade
 BarricadeBlock: STBarricadeBlock
 BarricadeDirectional: STBarricadeDirectional
@@ -65,6 +71,7 @@ WindowDirectional: null
 
 #06.10.2024 - Stalker14
 Window: STWindow
+TintedWindow : STReinforcedWindow
 ReinforcedWindow: STReinforcedWindow 
 ComfyChair: STComfyChair
 ChairWood: STChairWood

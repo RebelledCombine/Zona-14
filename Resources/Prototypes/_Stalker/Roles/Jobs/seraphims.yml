@@ -13,7 +13,7 @@
       species:
       - Human
       - Dwarf
-  startingGear: StalkerGear
+  startingGear: SeraphimGear
   supervisors: Вы служите во имя Его.
   special:
     - !type:AddComponentSpecial
@@ -34,6 +34,19 @@
           teethCount: 3
           initialTeeth: 3
 
+- type: startingGear
+  id: SeraphimGear
+  equipment:
+    id: STSeraphimPDA
+    neck: ClothingStalkerNeckTokenSeraphim
+    belt: ClothingBeltStorageWaistbag
+    shoes: STClothingShoesBootsSeraFilled
+    legs: STClothingLegsSerafimPants
+    torso: STClothingTorsoSerafimLittleChaos
+    mask: STClothingMaskKufei
+    gloves: STClothingHandsGlovesSera
+
+
 - type: job
   id: SeraphimHead
   name: Лидер Серафмиов
@@ -49,7 +62,7 @@
       species:
       - Human
       - Dwarf
-  startingGear: StalkerGear
+  startingGear: SeraphimHeadGear
   supervisors: Вы служите во имя Его.
   special:
     - !type:AddComponentSpecial
@@ -70,3 +83,15 @@
           pullingItemTag: PliersStalker
           teethCount: 3
           initialTeeth: 3
+
+- type: startingGear
+  id: SeraphimHeadGear
+  equipment:
+    id: STSeraphimPDA
+    neck: ClothingStalkerNeckTokenSeraphim
+    belt: ClothingBeltStorageWaistbag
+    shoes: STClothingShoesBootsSeraFilled
+    legs: STClothingLegsSerafimPants
+    torso: STClothingTorsoSerafimFullReady
+    mask: STClothingMaskKufei
+    gloves: STClothingHandsGlovesSera
