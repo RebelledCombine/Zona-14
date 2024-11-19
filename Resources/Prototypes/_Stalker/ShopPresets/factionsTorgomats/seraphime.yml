@@ -196,9 +196,9 @@
     - name: Оружие
       priority: 1
       items:
-        STWeaponRifleStalkerAK12: 1600
-        STWeaponRifleStalkerAK104: 900
-        STWeaponRifleStalkerVeprSerafim: 2800
+        STWeaponRifleStalkerAK12: 1450
+        STWeaponRifleStalkerAK12Sera: 1900
+        STWeaponRifleStalkerVeprSerafim: 2500
         STWeaponShotgunSaiga12Sera: 1200
         STWeaponShotgunToz34: 300
         STCombatKnife: 30
