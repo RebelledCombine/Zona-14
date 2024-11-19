@@ -33,9 +33,9 @@
           pullingItemTag: PliersStalker
           teethCount: 3
           initialTeeth: 3
-    - !type:AddImplantSpecial
-      implants: [ STSeraBombImplant ]
-
+        - type: AutoImplant
+          implants:
+          - STSeraBombImplant
 - type: startingGear
   id: SeraphimGear
   equipment:
@@ -51,7 +51,7 @@
 
 - type: job
   id: SeraphimHead
-  name: Лидер Серафмиов
+  name: Лидер Серафимов
   icon: seraphim
   description: Таинственная группировка, появившаяся с первых дней жизни Зоны.
   playTimeTracker: JobHeadSeraphims
@@ -85,9 +85,9 @@
           pullingItemTag: PliersStalker
           teethCount: 3
           initialTeeth: 3
-    - !type:AddImplantSpecial
-      implants: [ STSeraBombImplant ]
-
+        - type: AutoImplant
+          implants:
+          - STSeraBombImplant
 - type: startingGear
   id: SeraphimHeadGear
   equipment:
