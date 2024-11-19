@@ -33,6 +33,8 @@
           pullingItemTag: PliersStalker
           teethCount: 3
           initialTeeth: 3
+    - !type:AddImplantSpecial
+      implants: [ STSeraBombImplant ]
 
 - type: startingGear
   id: SeraphimGear
@@ -83,6 +85,8 @@
           pullingItemTag: PliersStalker
           teethCount: 3
           initialTeeth: 3
+    - !type:AddImplantSpecial
+      implants: [ STSeraBombImplant ]
 
 - type: startingGear
   id: SeraphimHeadGear
