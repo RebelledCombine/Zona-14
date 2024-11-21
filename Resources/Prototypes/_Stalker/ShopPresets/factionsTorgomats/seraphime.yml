@@ -29,7 +29,7 @@
         ExtendedEmergencyOxygenTankFilledStalker: 30
         DoubleEmergencyOxygenTankStalkerFilled: 200
         STSkinsKitSeraphim: 1000
-        KitchenKnife: 10
+        STSeraKnife: 10
         HatchetStalker: 300
         TrashBag: 100
         Matchbox: 60
@@ -124,6 +124,7 @@
         Defibrillator: 70
         GeigerCounter: 25
         STTorchSera: 25
+        STSeraKnife: 10
     - name: Аномалии
       priority: 4
       items:
@@ -227,6 +228,7 @@
         ExtendedEmergencyOxygenTankFilledStalker: 300
         DoubleEmergencyOxygenTankStalkerFilled: 200
         STTorchSera: 50
+        STSeraKnife: 10
     - name: Аномалии
       priority: 4
       items:
