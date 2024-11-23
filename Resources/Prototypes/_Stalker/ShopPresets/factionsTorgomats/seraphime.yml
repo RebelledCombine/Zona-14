@@ -97,7 +97,9 @@
       items:
         STWeaponShotgunMP155T: 25
         STWeaponShotgunToz34: 300
-        CombatKnife: 10
+        STSeraKnife: 10
+        STWeaponShotgunStalkerBenelli: 1166
+        STWeaponShotgunStalkerBenelliSera: 1166
     - name: Броня и снаряжение
       priority: 2
       items:
@@ -124,7 +126,6 @@
         Defibrillator: 70
         GeigerCounter: 25
         STTorchSera: 25
-        STSeraKnife: 10
     - name: Аномалии
       priority: 4
       items:
@@ -208,7 +209,9 @@
         STWeaponRifleStalkerVeprSerafim: 2500
         STWeaponShotgunSaiga12Sera: 1200
         STWeaponShotgunToz34: 300
-        STCombatKnife: 30
+        STSeraKnife: 30
+        STWeaponShotgunStalkerBenelli: 1300
+        STWeaponShotgunStalkerBenelliSera: 1300
     - name: Броня и снаряжение
       priority: 2
       items:
@@ -228,7 +231,6 @@
         ExtendedEmergencyOxygenTankFilledStalker: 300
         DoubleEmergencyOxygenTankStalkerFilled: 200
         STTorchSera: 50
-        STSeraKnife: 10
     - name: Аномалии
       priority: 4
       items:
