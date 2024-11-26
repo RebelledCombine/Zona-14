@@ -101,6 +101,8 @@
   name: камуфляжный плащ «Тихий»
   suffix: ST
   description: Добротный плащ с плотной подкладкой и маскировкой.
+  components:
+  - type: Sprite
     sprite: _Stalker/Objects/Clothing/cloak/coat_tihiy.rsi
   - type: Clothing
     sprite: _Stalker/Objects/Clothing/cloak/coat_tihiy.rsi
