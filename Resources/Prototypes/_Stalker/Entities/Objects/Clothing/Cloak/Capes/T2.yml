@@ -50,7 +50,7 @@
   parent: STClothingHeadHatBase
   id: ClothingHeadHelmetBolotniyCoat
   name: капюшон плаща "болотника"
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   description: Покрывает вашу голову
   components:
   - type: STWeight
@@ -87,13 +87,40 @@
   parent: STClothingHeadHatBase
   id: ClothingHeadHelmetBlackCoat
   name: черный капюшон
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   description: Покрывает вашу голову
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/hats/coat_hat_pahan.rsi
   - type: Clothing
     sprite: _Stalker/Objects/Clothing/hats/coat_hat_pahan.rsi
+
+- type: entity
+  parent: ClothingOuterCoatKolchyga
+  id: STClothingOuterCoatTihiy
+  name: камуфляжный плащ «Тихий»
+  suffix: ST
+  description: Добротный плащ с плотной подкладкой и маскировкой.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/cloak/coat_tihiy.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/cloak/coat_tihiy.rsi
+  - type: ToggleableClothing
+    clothingPrototype: STClothingHeadHelmetTihiy
+  - type: Craftable
+
+- type: entity
+  parent: STClothingHeadHatBase
+  id: STClothingHeadHelmetTihiy
+  name: камуфляжный капюшон
+  noSpawn: true
+  description: Покрывает вашу голову.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/coat_hat_tihiy.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/coat_hat_tihiy.rsi
 
 # кожанный плащ
 - type: entity
@@ -115,7 +142,7 @@
 - type: entity
   parent: STClothingHeadHatBase
   id: ClothingHeadHatHoodCoatStalker
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   name: капюшон
   components:
   - type: Sprite
@@ -146,7 +173,7 @@
   parent: STClothingHeadHatBase
   id: STClothingHeadHelmetNovember
   name: осенний капюшон
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   description: Покрывает вашу голову
   components:
   - type: Sprite

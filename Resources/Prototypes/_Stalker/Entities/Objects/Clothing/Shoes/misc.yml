@@ -62,9 +62,3 @@
     sprite: _Stalker/Objects/Clothing/shoes/hunter_boots.rsi
   - type: Clothing
     sprite: _Stalker/Objects/Clothing/shoes/hunter_boots.rsi
-  - type: FootstepModifier
-    footstepSoundCollection:
-      path: /Audio/_Stalker/Mutants/step_hoof_asphalt5.ogg
-      params:
-        volume: 0
-        variation: 0.3
