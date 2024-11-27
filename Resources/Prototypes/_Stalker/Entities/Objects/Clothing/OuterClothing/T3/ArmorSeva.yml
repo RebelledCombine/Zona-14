@@ -116,7 +116,7 @@
     - type: Sprite
       sprite: _Stalker/Objects/Clothing/outerClothing/seva_sci.rsi
     - type: Clothing
-      sprite: _Stalker/Objects/Clothing/uterClothing/seva_sci.rsi
+      sprite: _Stalker/Objects/Clothing/outerClothing/seva_sci.rsi
     - type: ToggleableClothing
       clothingPrototype: ClothingHeadHardsuitSevaHelmSci
       slot: head
