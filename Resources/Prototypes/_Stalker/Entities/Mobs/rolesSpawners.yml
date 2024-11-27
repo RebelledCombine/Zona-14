@@ -51,7 +51,7 @@
   name: кукла ОКСОП Спецназ (переименуй меня)
   suffix: Stalker, пешка с нашивкой
   parent: MobHuman
-  id: MobStalkerMilitaryHead
+  id: MobStalkerSpecnaz
   components:
     - type: Bands
       band: Stalker
