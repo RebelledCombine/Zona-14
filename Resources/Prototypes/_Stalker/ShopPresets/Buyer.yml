@@ -96,6 +96,10 @@
       priority: 7
       items:
         KhattabkaGrenade: 400
+    - name: Повязка
+      priority: 8
+      items:
+        ClothingBandageStalkerUk: 50
   sponsorCategories:
     1:
       - name: Оружие

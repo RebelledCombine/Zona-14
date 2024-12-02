@@ -57,7 +57,7 @@
     - name: Оружие
       priority: 1
       items:
-        STWeaponRifleSKS: 4000
+        STWeaponRifleSKS: 3000
         STWeaponRifleStalkerAK74: 3500
         STWeaponSMGPP91: 1500
         STWeaponRifleM16: 4000
@@ -106,6 +106,7 @@
         STClothingOuterArmorLightPlateVestBaseANAgreen: 3081
         ClothingOuterArmorStalker: 2971
         ClothingOuterArmorSevaStalker: 2504
+        ClothingOuterArmorCN1Green: 2000
         # mask
         ClothingMaskGP7: 165
         ClothingMaskGasZarya: 125
@@ -119,9 +120,12 @@
         ClothingBackpackDuffelMedicalStalker: 350 # 7,7 med only
         ClothingBackpackTacticBeigeStalker: 425  # 6,5
         ClothingBackpackTacticOliveStalker: 425
-        ClothingBackpackMercStalker: 850 # 6,6
+        ClothingBackpackMercStalker: 650 # 6,6
+        ClothingBackpackDuffelBlackTacticStalker: 900
+        ClothingBackpackDuffelOliveTacticStalker: 900
         # belt
         ClothingBeltBandolierStalker: 45
+        ClothingBeltVoron: 440
     - name: Утилиты
       priority: 5
       items:
@@ -203,6 +207,7 @@
     - name: Кастомизация
       priority: 9
       items:
+        ClothingBandageStalkerJid: 50
         ClothingHeadHatBeaniehat: 10
         ClothingMaskNeckFacemask: 10
         ClothingMaskNeckBalaklava1: 10

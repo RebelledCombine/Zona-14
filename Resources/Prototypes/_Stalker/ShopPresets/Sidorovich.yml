@@ -58,12 +58,12 @@
         STWeaponRifleStalkerSaiga545: 1300
         STWeaponRifleStalkerFAL: 1700
         WeaponPistolStalkerAPS: 750
-        STWeaponShotgunStalkerSPAS: 3000
+        STWeaponShotgunStalkerSPAS: 2200
         STWeaponRifleStalkerL85: 2500
         STWeaponShotgunToz34: 350
         STWeaponRifleStalkerAK74: 2800
         STWeaponRifleSig550: 2500
-        STWeaponRifleSCARH: 6500
+        STWeaponRifleSCARH: 4500
 
     - name: Магазины
       priority: 2
@@ -191,6 +191,7 @@
     - name: Кастомизация
       priority: 10
       items:
+        ClothingBandageStalkerBelarus: 50
         ClothingHeadHatBeaniehat: 10
         ClothingMaskNeckFacemask: 10
         ClothingMaskNeckBalaklava1: 10

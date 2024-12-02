@@ -8,7 +8,7 @@
         STWeaponShotgunToz34: 200
         STWeaponShotgunMossberg: 600
         STWeaponShotgunMP153: 900
-        STWeaponSniperMosin: 1500
+        STWeaponSniperMosin: 1100
 
     - name: Патроны
       priority: 2
@@ -16,7 +16,7 @@
         6mmBuckshotBox: 300
         8mmBuckshotBox: 1250
         7mmBuckshotBox: 40
-        754HPBox: 500
+        754HPBox: 400
 
     - name: Кейс
       priority: 3
