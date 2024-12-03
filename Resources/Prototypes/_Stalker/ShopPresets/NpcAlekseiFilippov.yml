@@ -12,9 +12,9 @@
         STWeaponShotgunToz34: 500
         STWeaponRifleStalkerGalatz: 4000
         STWeaponGunAKS74U: 2000
-        STWeaponSMGMp5: 2500
+        STWeaponSMGMp5: 1850
         STWeaponRevolverChiappaRhino60DS: 1000
-        STWeaponSniperMosin: 2000
+        STWeaponSniperMosin: 1700
     - name: Магазины
       priority: 2
       items:
@@ -32,6 +32,7 @@
     - name: Боеприпасы
       priority: 3
       items:
+        754FMJBox: 700
         6mmBuckshotBox: 500
         7mmBuckshotBox: 85
         919RIPBox: 500
