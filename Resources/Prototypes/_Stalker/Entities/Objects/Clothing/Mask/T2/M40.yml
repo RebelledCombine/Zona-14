@@ -1,3 +1,4 @@
+
 - type: entity
   parent: ClothingMaskGas
   id: ClothingMaskGasM40
@@ -19,15 +20,3 @@
       coefficients:
         Radiation: 0.85
         Caustic: 0.9
-
-## Скины
-- type: entity
-  parent: ClothingMaskGasM40
-  id: ClothingMaskGasM40Military
-  name: противогаз М40 в раскраске военных
-  description: Чувствуется запах дешёвой краски.
-  components:
-  - type: Sprite
-    sprite: _Stalker/Objects/Clothing/mask/m40military.rsi
-  - type: Clothing
-    sprite: _Stalker/Objects/Clothing/mask/m40military.rsi

@@ -81,9 +81,3 @@
       priority: 4
       items:
         BriefcaseWeapon: 250
-    - name: Гранаты
-      priority: 5
-      items:
-        HydrocyanicGrenadeStalker: 1000
-        PhosphorusGrenadeStalker: 3000
-        LewisiteGrenadeStalker: 800
