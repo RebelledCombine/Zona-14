@@ -47,10 +47,18 @@ public abstract partial class SharedGunSystem
 
         if (_whitelistSystem.IsWhitelistFailOrNull(component.Whitelist, args.Used))
             return;
-
         if (GetBallisticShots(component) >= component.Capacity)
             return;
+        // stalker-changes-start
+        var meta = MetaData(args.Used);
+        if (meta.EntityPrototype == null)
+            return;
+        // stalker-changes-end
+
         component.Entities.Add(args.Used);
+
+        component.EntProtos.Add(meta.EntityPrototype.ID); // stalker-changes
+
         Containers.Insert(args.Used, component.Container);
         // Not predicted so
         Audio.PlayPredicted(component.SoundInsert, uid, args.User);
@@ -248,14 +256,28 @@ public abstract partial class SharedGunSystem
 
                 args.Ammo.Add((entity, EnsureShootable(entity)));
                 component.Entities.RemoveAt(component.Entities.Count - 1);
+                component.EntProtos.RemoveAt(component.EntProtos.Count - 1); // stalker-changes
                 Containers.Remove(entity, component.Container);
             }
             else if (component.UnspawnedCount > 0)
-            {
-                component.UnspawnedCount--;
-                entity = Spawn(component.Proto, args.Coordinates);
-                args.Ammo.Add((entity, EnsureShootable(entity)));
-            }
+            { // stalker-changes-start
+                var copy = component.EntProtos;
+                copy.Reverse();
+                var proto = copy.FirstOrNull();
+                if (proto != null)
+                {
+                    entity = Spawn(proto.Value, args.Coordinates);
+                    args.Ammo.Add((entity, EnsureShootable(entity)));
+                    component.EntProtos.RemoveAt(component.EntProtos.Count - 1); // Stalker-Changes
+                    component.UnspawnedCount--;
+                }
+                else
+                {
+                    component.UnspawnedCount--;
+                    entity = Spawn(component.Proto, args.Coordinates);
+                    args.Ammo.Add((entity, EnsureShootable(entity)));
+                }
+            } // stalker-changes-end
         }
 
         UpdateBallisticAppearance(uid, component);
