@@ -65,6 +65,7 @@
   - type: Armor
     armorClass: 4
     modifiers:
+      flatReductions:
         Caustic: 1
       coefficients:
         Blunt: 0.8
