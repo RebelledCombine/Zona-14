@@ -1,7 +1,7 @@
 - type: lightCraftingRecipe
   id: STCraftSkinSTCOuterArmorBulatMercenary
   results:
-    - OuterArmorBulatMercenary
+    - ClothingOuterArmorBulatMercenary
   steps:
     firstIngredient: STSkinsKitMercenary
     secondIngredient: ClothingOuterArmorBulatMilitary
