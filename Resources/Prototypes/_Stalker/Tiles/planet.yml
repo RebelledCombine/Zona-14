@@ -23,6 +23,8 @@
   canCrowbar: false
   footstepSounds:
     collection: STFootstepGrass
+    params:
+      volume: -8
   itemDrop: FloorTileItemGrass
   heatCapacity: 10000
   weather: true
@@ -53,6 +55,8 @@
   canCrowbar: false
   footstepSounds:
     collection: STFootstepGrass
+    params:
+      volume: -8
   itemDrop: FloorTileItemGrass
   heatCapacity: 10000
   weather: true
@@ -83,6 +87,8 @@
   canCrowbar: false
   footstepSounds:
     collection: STFootstepGrass
+    params:
+      volume: -8
   itemDrop: FloorTileItemGrass
   heatCapacity: 10000
   weather: true
