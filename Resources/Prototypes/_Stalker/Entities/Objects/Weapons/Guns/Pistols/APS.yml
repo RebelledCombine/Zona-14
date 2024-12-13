@@ -70,6 +70,7 @@
   parent: WeaponPistolStalkerAPS
   id: WeaponPistolStalkerAPSHugo
   name: АПС «Хуго»
+  description: Массивный и надежный пистолет с прочной металлической рамой — верный спутник бывалого сталкера. Это оружие последнего шанса, готовое прийти на помощь, когда мирное решение конфликта становится невозможным.
   suffix: ST, Скин
   components:
   - type: Clothing
