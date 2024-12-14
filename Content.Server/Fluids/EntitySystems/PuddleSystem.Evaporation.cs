@@ -18,8 +18,17 @@ public sealed partial class PuddleSystem
 
     [ValidatePrototypeId<ReagentPrototype>]
     private const string Vodka = "Vodka";
+    [ValidatePrototypeId<ReagentPrototype>]
+    private static string[] evaporationReagents = new[] {"Absinthe", "BlueCuracao", "Champagne", "Cognac", "Cola",
+                                                        "Grenadine", "Gin", "Gildlager", "CoffeeLiqueur", "MelonLiquor",
+                                                        "Patron", "PoisonWine", "Rum", "SpaceMountainWind", "SpaceUp", "Tequila",
+                                                        "Vermouth", "Vodka", "Whiskey", "Wine", "Beer", "Ale",
+                                                        "Water", "SodaWater", "TonicWater", "Sake", "JuiceLime", "JuiceOrange",
+                                                        "Cream", "Sugar", "LemonLime", "Mead", "Ice", "CoconutWater", "Coffee",
+                                                        "Tea", "GreenTea", "IcedTea", "DrGibb", "RootBeer", "JuiceWatermelon", "EnergyDrink",
+                                                        "STWater","Blood","Lemonade", "STTaurine", "RootBeer", "Tea", "Milk", "SolDry", "JuiceTomato"};
 
-    public static string[] EvaporationReagents = new[] { Water, Blood, Vodka, STWater};
+    public static global::System.String[] EvaporationReagents { get => evaporationReagents; set => evaporationReagents = value; }
 
     //stalker-changes-end
     private void OnEvaporationMapInit(Entity<EvaporationComponent> entity, ref MapInitEvent args)
@@ -62,7 +71,7 @@ public sealed partial class PuddleSystem
             var reagentTick = evaporation.EvaporationAmount * EvaporationCooldown.TotalSeconds;
             puddleSolution.SplitSolutionWithOnly(reagentTick, EvaporationReagents);
 
-            // Despawn if we're done
+            // Despawn if we"re done
             if (puddleSolution.Volume == FixedPoint2.Zero)
             {
                 // Spawn a *sparkle*
