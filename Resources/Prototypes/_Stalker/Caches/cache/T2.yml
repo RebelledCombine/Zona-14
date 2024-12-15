@@ -59,7 +59,7 @@
 
 - type: entity
   parent: [STBaseCache, STCacheStorageFillT2]
-  id: STCache3T2
+  id: STCache4T2
   categories: [ HideSpawnMenu ]
   components:
     - type: SpawnOnDespawn
