@@ -9,6 +9,45 @@
 # Table: null
 
 #14.12.2024 - global-update Stalker14
+BaseCache : null 
+RandomCacheSpawnerForest : null
+penmCache : null
+birch01Cache : null
+birch02Cache : null
+birch03Cache : null
+birch04Cache : null
+pine01Cache : null
+rock01Cache : null
+rock02Cache : null
+rock03Cache : null
+RandomCacheSpawnerHead : null
+head4Cache : null
+head3Cache : null
+head2Cache : null
+head1Cache : null
+GreenCrateTearTwoCache : null
+RandomCacheSpawnerGreenCrateTear2 : null
+RandomCacheSpawnerBlueCrateTear2 : null
+BlueCrateTearTwoCache : null
+RandomCacheSpawnerGreenCrateTear3 : null
+GreenCrateCacheOazis : null
+BaseBookshelfCache : null
+RandomCacheSpawnerBookshelf : null
+CacheSpawnerBookshelfIron : null
+RandomCacheSpawnerBookshelfOld : null
+RandomCacheSpawnerShelfOld : null
+bookshelf2Cache : null
+bookshelf3Cache : null
+bookshelf4Cache : null
+bookshelf5Cache : null
+BaseYaschikResource : null
+RandomCacheSpawnerKonmod : null
+BaseYaschikComponents : null
+RandomCacheSpawnerYaschikComponents : null
+RandomCacheSpawnerYaschikResourceTest : null
+RandomCacheSpawnerYaschikResourceBase : null
+ 
+#14.12.2024 - global-update Stalker14
 RandomCacheSpawnerTrash : null
 BaseTrashCache : null
 trash2Cache : null
@@ -17,6 +56,7 @@ trash4Cache : null
 trash5Cache : null
 STMonolithCrate : null
 RandomCacheSpawnerMonolithCrate : null
+
 #10.12.2024 - global-update Stalker14
 BlinddogTrigger : null
 BlinddogTrigger1 : null
@@ -98,13 +138,17 @@ ZombieTriggerUR10: null
 
 #24.11.2024 - Stalker14
 CrateTrashCart : null
+
 # Stalker Upstream 23/9/2024
+
 #18.11.2024 - Stalker14
 MetalAltDoorFalloutSeraClosed : MetalWindowDoorFalloutSeraphimsClosed
+
 #14.11.2024 - Stalker14
 Cordon-Sera : Base-Sera
 Cordon-SeraUncollide : Base-SeraUncollide
 WallRockBasalt : STWallRockBasalt
+
 #11.10.2024 - Stalker14
 Grille: STGrille
 GrilleBroken: STGrilleBroken

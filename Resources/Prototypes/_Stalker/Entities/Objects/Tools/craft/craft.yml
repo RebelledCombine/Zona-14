@@ -1,4 +1,4 @@
-﻿
+
 - type: entity
   parent: BaseItem
   id: CraftGunpowderBank
@@ -126,11 +126,7 @@
     - type: RepositoryItem
       categoryName: Крафты
 
-
-
-
-
-
+- type: entity
   parent: PartBase
   id: PartRodMetalStalker
   name: металические трубы

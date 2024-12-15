@@ -3,7 +3,6 @@
   id: STTrashStorageFillT4
   abstract: true
   suffix: ST, Cache, T4
-  name: storage fill comp
   components:
     - type: StorageFill
       contents:
@@ -37,8 +36,6 @@
           prob: 0.3
         - id: STOintment
           prob: 0.3
-        - id: STCraftBasicPCBT1
-          prob: 0.1
         - id: STCraftHighPerformanceChipT4
           prob: 0.05
         - id: STCraftIndustrialThreadStaplesKitT4
@@ -57,7 +54,7 @@
 - type: entity
   parent: [STBaseTrashCache, STTrashStorageFillT4]
   id: STTrash1CacheT4
-  name: мусор
+  categories: [ HideSpawnMenu ]
   components:
     - type: Sprite
       sprite: _Stalker/Objects/Decoration/trash.yml
@@ -68,7 +65,7 @@
 - type: entity
   parent: [STBaseTrashCache, STTrashStorageFillT4]
   id: STTrash2CacheT4
-  name: мусор
+  categories: [ HideSpawnMenu ]
   components:
     - type: Sprite
       sprite: _Stalker/Objects/Decoration/trash.yml
@@ -79,7 +76,7 @@
 - type: entity
   parent: [STBaseTrashCache, STTrashStorageFillT4]
   id: STTrash3CacheT4
-  name: мусор
+  categories: [ HideSpawnMenu ]
   components:
     - type: Sprite
       sprite: _Stalker/Objects/Decoration/trash.yml
@@ -90,7 +87,7 @@
 - type: entity
   parent: [STBaseTrashCache, STTrashStorageFillT4]
   id: STTrash4CacheT4
-  name: мусор
+  categories: [ HideSpawnMenu ]
   components:
     - type: Sprite
       sprite: _Stalker/Objects/Decoration/trash.yml
@@ -101,7 +98,7 @@
 - type: entity
   parent: [STBaseTrashCache, STTrashStorageFillT4]
   id: STTrash5CacheT4
-  name: мусор
+  categories: [ HideSpawnMenu ]
   components:
     - type: Sprite
       sprite: _Stalker/Objects/Decoration/trash.yml

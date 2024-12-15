@@ -3,7 +3,6 @@
   id: STTrashStorageFillT5
   abstract: true
   suffix: ST, Cache, T5
-  name: storage fill comp
   components:
     - type: StorageFill
       contents:
@@ -55,7 +54,7 @@
 - type: entity
   parent: [STBaseTrashCache, STTrashStorageFillT5]
   id: STTrash1CacheT5
-  name: мусор
+  categories: [ HideSpawnMenu ]
   components:
     - type: Sprite
       sprite: _Stalker/Objects/Decoration/trash.yml
@@ -66,7 +65,7 @@
 - type: entity
   parent: [STBaseTrashCache, STTrashStorageFillT5]
   id: STTrash2CacheT5
-  name: мусор
+  categories: [ HideSpawnMenu ]
   components:
     - type: Sprite
       sprite: _Stalker/Objects/Decoration/trash.yml
@@ -77,7 +76,7 @@
 - type: entity
   parent: [STBaseTrashCache, STTrashStorageFillT5]
   id: STTrash3CacheT5
-  name: мусор
+  categories: [ HideSpawnMenu ]
   components:
     - type: Sprite
       sprite: _Stalker/Objects/Decoration/trash.yml
@@ -88,7 +87,7 @@
 - type: entity
   parent: [STBaseTrashCache, STTrashStorageFillT5]
   id: STTrash4CacheT5
-  name: мусор
+  categories: [ HideSpawnMenu ]
   components:
     - type: Sprite
       sprite: _Stalker/Objects/Decoration/trash.yml
@@ -99,7 +98,7 @@
 - type: entity
   parent: [STBaseTrashCache, STTrashStorageFillT5]
   id: STTrash5CacheT5
-  name: мусор
+  categories: [ HideSpawnMenu ]
   components:
     - type: Sprite
       sprite: _Stalker/Objects/Decoration/trash.yml
