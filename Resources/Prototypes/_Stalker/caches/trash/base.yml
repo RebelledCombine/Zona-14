@@ -2,7 +2,8 @@
   parent: BaseStructureStalkerDynamic
   id: STBaseTrashCache
   abstract: true
-  name: base trach cache
+  name: мусор
+  description: Куча мусора, возможно стоит поискать в ней что-то ещё пригодное к использованию.
   components:
     - type: TimedDespawn
       lifetime: 7220
