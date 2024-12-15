@@ -606,20 +606,8 @@
     - type: StorageFill
       contents:
         # Craft random
-        - id: CraftMonitor
-          prob: 0.005
-        - id: CraftBattery
-          prob: 0.006
         - id: TechCardCalibrationDosimeter
           prob: 0.001
-        - id: CraftAntenna
-          prob: 0.005
-        - id: CraftHeater1
-          prob: 0.007
-        - id: CraftPlasticParts
-          prob: 0.009
-        - id: CraftTransformerCoil
-          prob: 0.01
         # Meds random
         - id: MedkitAI2
           prob: 0.25
@@ -1231,8 +1219,6 @@
         - id: CraftGlue
           prob: 0.05
         - id: ScissorsStalker
-          prob: 0.05
-        - id: CraftTape1
           prob: 0.05
         - id: ClothingEyesGlassesCheapSunglasses
           prob: 0.05

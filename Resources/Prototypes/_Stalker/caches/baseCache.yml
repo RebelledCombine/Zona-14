@@ -4,17 +4,14 @@
 
 - type: entity
   parent: BaseStructureStalkerDynamic
-  id: BaseCache
+  id: 
   categories: [ HideSpawnMenu ]
-  suffix: Stalker, ТАЙНИК
+  suffix: Stalker
   name: пень
   components:
   - type: Tag
     tags:
       - StalkerCache
-  - type: Sprite
-    sprite: _Stalker/Objects/Decoration/Flora/flora.rsi
-    state: pen
   - type: Transform
     noRot: true
   - type: Storage
@@ -31,99 +28,6 @@
   - type: Clickable
   - type: StorageFill
     contents:
-##########################################################CraftRandom
-      - id: CraftFitil
-        prob: 0.02
-      - id: CraftGlue
-        prob: 0.02
-      - id: CraftDisplay
-        prob: 0.004
-      - id: CraftSmallCardboard
-        prob: 0.008
-      - id: CraftLargeCardboard
-        prob: 0.007
-      - id: ScissorsStalker
-        prob: 0.008
-      - id: CraftChip
-        prob: 0.009
-      - id: WirecutterStalker
-        prob: 0.05
-      - id: ScrewdriverStalker
-        prob: 0.05
-      - id: WrenchStalker
-        prob: 0.05
-      - id: MultitoolStalker
-        prob: 0.01
-      - id: CraftPolyarmidFiber
-        prob: 0.01
-      - id: MaterialCloth1Stalker
-        prob: 0.2
-      - id: CraftLeatherPatch
-        prob: 0.2
-      - id: CraftBattery
-        prob: 0.05
-      - id: CraftBolt
-        prob: 0.2
-      - id: CraftCoil
-        prob: 0.01
-      - id: CraftNails
-        prob: 0.2
-      - id: CraftProtector1
-        prob: 0.05
-      - id: CraftProtector2
-        prob: 0.01
-      - id: CraftSpeaker1
-        prob: 0.05
-      - id: CraftSpeaker2
-        prob: 0.01
-      - id: CraftTape1
-        prob: 0.05
-      - id: CraftTape2
-        prob: 0.01
-      - id: CraftTapeMeasure
-        prob: 0.05
-      - id: CraftAlcohol
-        prob: 0.005
-      - id: CraftAntenna
-        prob: 0.03
-      - id: CraftAwl
-        prob: 0.01
-      - id: BoltCutter
-        prob: 0.01
-      - id: CraftCapsules
-        prob: 0.005
-      - id: CraftChip
-        prob: 0.005
-      - id: CraftCWelding
-        prob: 0.005
-      - id: CraftElectronicBoard
-        prob: 0.005
-      - id: CraftHeater1
-        prob: 0.05
-      - id: CraftHeater2
-        prob: 0.005
-      - id: CraftLeatherbox
-        prob: 0.001
-      - id: CraftMetalParts
-        prob: 0.03
-      - id: CraftMonitor
-        prob: 0.001
-      - id: CraftNeedle
-        prob: 0.01
-      - id: CraftPlasticParts
-        prob: 0.01
-      - id: CraftResistor
-        prob: 0.005 #ы
-      - id: CraftScrap
-        prob: 0.1
-      - id: SolderingIron
-        prob: 0.05
-      - id: Toolbox
-        prob: 0.001
-      - id: CraftTransformerCoil
-        prob: 0.005
-      - id: PartRodMetalStalker
-        prob: 0.2
 ##########################################################AmmoRandom
       - id: 7mmBuckshotBox
         prob: 0.1
