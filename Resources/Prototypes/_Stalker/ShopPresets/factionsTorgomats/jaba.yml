@@ -21,7 +21,6 @@
     - name: Рецепты
       priority: 4
       items:
-        # Эксклюзивная возможность покупать чертежи т3 на пп
         ST919PBMBoxCinkBlueprint: 29000
         ST918PBMBoxCinkBlueprint: 29000
         STGasMaskM51Blueprint: 18000
