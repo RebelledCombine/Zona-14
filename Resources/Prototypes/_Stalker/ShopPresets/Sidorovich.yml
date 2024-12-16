@@ -116,6 +116,8 @@
         545FMJBox: 325
         # 5.56
         556FMJBox: 390
+        # 7.54
+        754FMJBox : 845
     - name: Броня и снаряжение
       priority: 4
       items:

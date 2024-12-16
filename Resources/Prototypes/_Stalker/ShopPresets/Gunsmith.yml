@@ -49,6 +49,8 @@
         545FMJBox: 250
         # 5.56
         556FMJBox: 300
+        # 7.54
+        754FMJBox : 650
     - name: Кейс
       priority: 4
       items:
