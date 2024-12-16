@@ -104,6 +104,9 @@
     - name: Боеприпасы
       priority: 3
       items:
+        6mmBuckshotBox: 430
+        8mmBuckshotBox: 1420
+        7mmBuckshotBox: 59
         # .45
         45ACPLFMJBox: 150
         45ACPMFMJBox: 338
