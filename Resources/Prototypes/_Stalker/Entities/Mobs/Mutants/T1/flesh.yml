@@ -12,7 +12,7 @@
       thresholds:
         - trigger:
             !type:DamageTrigger
-            damage: 300
+            damage: 200
           behaviors:
             - !type:PlaySoundBehavior
               sound:
@@ -31,7 +31,7 @@
     - type: MobThresholds
       thresholds:
         0: Alive
-        300: Dead
+        200: Dead
     - type: NpcFactionMember
       factions:
         - Passive
@@ -71,7 +71,7 @@
     - type: FactionException
     - type: SlowOnDamage
       speedModifierThresholds:
-        300: 0.7
+        150: 0.7
     - type: StaminaDamageOnHit
       damage: 7.5
     - type: STWeight
