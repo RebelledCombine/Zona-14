@@ -43,7 +43,7 @@
 - type: entity
   id: STTrashT3CacheSpawner
   name: trash trigger T3 (25%)
-  suffix: ST, T1, Trigger, Cache
+  suffix: ST, T3, Trigger, Cache
   parent: FlexibleMarker
   components:
     - type: Sprite
@@ -64,7 +64,7 @@
 - type: entity
   id: STTrashT4CacheSpawner
   name: trash trigger T4 (25%)
-  suffix: ST, T1, Trigger, Cache
+  suffix: ST, T4, Trigger, Cache
   parent: FlexibleMarker
   components:
     - type: Sprite
@@ -85,7 +85,7 @@
 - type: entity
   id: STTrashT5CacheSpawner
   name: trash trigger T5 (25%)
-  suffix: ST, T1, Trigger, Cache
+  suffix: ST, T5, Trigger, Cache
   parent: FlexibleMarker
   components:
     - type: Sprite

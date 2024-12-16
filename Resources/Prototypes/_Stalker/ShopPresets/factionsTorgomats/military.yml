@@ -7,13 +7,13 @@
     FoodTinPeachesTrash: 0
     FoodTinBeansTrash: 0
   categories:
-    - name: Оружие
-      priority: 1
-      items:
-        WeaponMachineGunRPD: 9
-        STWeaponRifleM14: 15
-        STWeaponRifleStalkerAK103: 11
-        STWeaponRifleSVDS: 13
+    # - name: Оружие
+    #   priority: 1
+    #   items:
+    #     WeaponMachineGunRPD: 9
+    #     STWeaponRifleM14: 15
+    #     STWeaponRifleStalkerAK103: 11
+    #     STWeaponRifleSVDS: 13
     - name: Броня и снаряжение
       priority: 2
       items:
@@ -30,8 +30,8 @@
       priority: 4
       items:
         FragGrenade: 2
-        PhosphorusGrenadeStalker: 6
-        MK3A2Grenade: 5
+        # PhosphorusGrenadeStalker: 6
+        # MK3A2Grenade: 5
 - type: shopPreset
   id: MilitaryPremiumShopPreset
   itemsForSale:
@@ -43,11 +43,11 @@
       items:
         ArmySaigaCrate: 5
         LgbtKnife: 1
-        STWeaponRevolverDanWesson715: 1
-        STWeaponRifleSKS: 3
+        # STWeaponRevolverDanWesson715: 1
+        # STWeaponRifleSKS: 3
         # STWeaponGunAKS74U: 1
         WeaponRifleStalkerGroza545: 14
-        STSTWeaponRifleStalkerAK74M: 4
+        # STSTWeaponRifleStalkerAK74M: 4
         STWeaponRifleStalkerAK74: 3
     - name: Броня
       priority: 2
@@ -63,13 +63,13 @@
       priority: 3
       items:
         45ACPLFMJBox: 1
-        45ACPHydroshockBox: 3
+        # 45ACPHydroshockBox: 3
         754PCBox: 3
         751M80Box: 1
         751UNBox: 1
         754HPBox: 1
         739PCBox: 4
-        545BPBox: 3
+        # 545BPBox: 3
         # 545BPBox: 1 T4 Ammo
         # 751M993Box: 2 T5 Ammo
         # 754BTBox: 2 T5 Ammo
@@ -91,8 +91,8 @@
         751Mag30: 2
         754Mag10: 1
         754Mag20: 2
-        Magazine762x39RPD: 2
-        739Mag45: 2
+        # Magazine762x39RPD: 2
+        # 739Mag45: 2
     - name: Обвесы
       priority: 6
       items:

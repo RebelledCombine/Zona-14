@@ -527,13 +527,6 @@
         - STWeaponRifleStalkerSaiga545
         - WeaponRifleStalkerSaiga739
         - STWeaponSniperMosin
-        - STCraftHighPerformanceChipT4
-        - STCraftIndustrialThreadStaplesKitT4
-        - STCraftPolymerFabricT4
-        - STCraftSapphireCrystalT4
-        - STCraftYewPlankT4
-        - STCraftPlasticFittingT4
-        - STCraftSheetAluminumT4
       chance: 1
       offset: 0.5
 

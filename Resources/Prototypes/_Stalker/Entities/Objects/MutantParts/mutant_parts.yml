@@ -30,7 +30,7 @@
 - type: entity
   parent: BaseMutantPart
   id: MutantPartOldBoarHoof
-  name: boar hoof
+  name: копыто старого кабана
   components:
     - type: Item
       size: Small
@@ -42,7 +42,7 @@
 - type: entity
   parent: BaseMutantPart
   id: MutantPartSeasonedBoarHoof
-  name: boar hoof
+  name: копыто матерого кабана
   components:
     - type: Item
       size: Small
@@ -54,7 +54,7 @@
 - type: entity
   parent: BaseMutantPart
   id: MutantPartBoarHoof
-  name: boar hoof
+  name: копыто кабана
   components:
     - type: Item
       size: Small

@@ -30,6 +30,7 @@ Cordon1-Predbannik : null
 Predbannik-Cordon1 : null
 JabaFirstFloorToSecondFloor : null
 #14.12.2024 - global-update Stalker14
+StalkerShopMechanic : null 
 BaseCache : null 
 RandomCacheSpawnerForest : null
 penmCache : null
@@ -79,6 +80,8 @@ STMonolithCrate : null
 RandomCacheSpawnerMonolithCrate : null
 
 #10.12.2024 - global-update Stalker14
+CraftComponentSourceGlue: null 
+STPlotyTrigger1420 : null 
 BlinddogTrigger : null
 BlinddogTrigger1 : null
 BlinddogTrigger10 : null
