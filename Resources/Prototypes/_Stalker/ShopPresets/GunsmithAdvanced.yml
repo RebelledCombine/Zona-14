@@ -30,6 +30,7 @@
         STWeaponRifleStalkerAKM: 3900
         STWeaponRifleStalkerFAL: 3650
         STWeaponRifleStalkerVepr: 9800
+        STWeaponSniperMosin: 2450
         STWeaponSMGMp5: 2450
         STWeaponSMGBizon: 3400
     - name: Магазины

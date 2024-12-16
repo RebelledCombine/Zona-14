@@ -83,7 +83,7 @@
         STWeaponRifleStalkerL85: 2730
         STWeaponRifleStalkerFAL: 4745
         STWeaponSMGMp5: 3185
-
+        STWeaponSniperMosin: 3185
     - name: Магазины
       priority: 2
       items:

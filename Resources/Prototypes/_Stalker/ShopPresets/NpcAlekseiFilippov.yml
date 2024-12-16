@@ -73,7 +73,7 @@
         STWeaponShotgunMP153: 1650
         STWeaponRifleStalkerSaiga545: 1650
         STWeaponRifleStalkerFAL: 5475
-
+        STWeaponSniperMosin: 3675
     - name: Магазины # 1.5
       priority: 2
       items:
