@@ -4,8 +4,8 @@
     City: /Maps/_ST/World/TownV24.yml
     # RedForest: /Maps/_ST/World/RedForestV44.yml
     KordonUnerground: /Maps/_ST/World/KordonPodzemV31.yml
-    # Svalka: /Maps/_ST/World/SvalkaV136.yml
-    # SvalkaUnderground: /Maps/_ST/World/SvalkaPodzemkaV29.yml
+    Svalka: /Maps/_ST/World/SvalkaV137.yml
+    SvalkaUnderground: /Maps/_ST/World/SvalkaPodzemkaV30.yml
     Boloto: /Maps/_ST/World/BolotaV24.yml
     MBase: /Maps/_ST/World/MBaseV15.yml
     TemLoschina: /Maps/_ST/World/TemnajLohinaV39.yml
