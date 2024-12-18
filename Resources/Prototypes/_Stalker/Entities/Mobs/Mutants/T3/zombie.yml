@@ -157,19 +157,6 @@
         - map: ["enum.DamageStateVisualLayers.Base"]
           state: zombie
           sprite: /Textures/_Stalker/Mobs/Mutants/zombie/ISSG.rsi
-
-- type: entity
-  name: зомбированный
-  suffix: Stalker, Т3
-  parent: MobStalkerZombieBase
-  id: MobStalkerZombieISSG
-  description:
-  components:
-    - type: Sprite
-      layers:
-        - map: ["enum.DamageStateVisualLayers.Base"]
-          state: zombie
-          sprite: /Textures/_Stalker/Mobs/Mutants/zombie/ISSG.rsi
     - type: RechargeBasicEntityAmmo
       rechargeCooldown: 1.7
     - type: BasicEntityAmmoProvider
