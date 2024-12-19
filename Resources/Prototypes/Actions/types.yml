@@ -180,8 +180,8 @@
   - type: InstantAction
     checkCanInteract: false
     checkConsciousness: false
-    icon: Interface/Actions/harmOff.png
-    iconOn: Interface/Actions/harm.png
+    icon: _Stalker/Interface/Actions/harmOff.png
+    iconOn: _Stalker/Interface/Actions/harm.png
     event: !type:ToggleCombatActionEvent
     priority: -100
 

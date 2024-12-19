@@ -92,7 +92,7 @@
         556Mag20: 163
         751Mag20: 319
         BaseMP5Mag: 163
-
+        BaseGSH-18Mag10: 111
     - name: Боеприпасы
       priority: 3
       items:
@@ -112,7 +112,8 @@
         918PGJBox: 130
         918PSTBox: 293
         # 5.45
-        545FMJBox: 325
+        545FMJBox:
+        545PCBox: 650
         # 5.56
         556FMJBox: 390
         # 7.54
@@ -132,8 +133,6 @@
         # шлемы
         ClothingHeadHelmetInfantry: 1752
         ClothingHeadHelmetVityaz1C: 2209
-        # рюкзаки
-        ClothingBackpackTacticBlackStalker: 600
     - name: Рюкзаки
       priority: 5
       items:
@@ -141,6 +140,7 @@
         ClothingBackpackDuffelBlackStalker: 65 # 4,4
         ClothingBackpackTacticBeigeStalker: 350  # 6,5
         ClothingBackpackTacticOliveStalker: 350
+        ClothingBackpackTacticBlackStalker: 350
     - name: Утилиты
       priority: 6
       items:

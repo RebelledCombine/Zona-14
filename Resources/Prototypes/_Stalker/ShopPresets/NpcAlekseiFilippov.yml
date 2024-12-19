@@ -84,6 +84,8 @@
         545Mag20: 188
         556Mag20: 188
         751Mag20: 368
+        BaseGSH-18Mag10: 85
+        BaseMP5Mag: 125
     - name: Боеприпасы # 1.5
       priority: 3
       items:
@@ -104,6 +106,7 @@
         918PSTBox: 338
         # 5.45
         545FMJBox: 375
+        545PCBox: 750
         # 5.56
         556FMJBox: 450
         # 7.54
