@@ -118,7 +118,7 @@
         ClothingOuterCoatStalker: 698
         ClothingMaskGasM40: 266
         ClothingMaskGP5: 244
-    - name: Рюкзаки 
+    - name: Рюкзаки
       priority: 5
       items:
         ClothingBackpackDuffelGreenStalker: 30
@@ -143,7 +143,7 @@
         DrinkWaterBottleFull: 45
         FoodTinMRE: 120
         DrinkLemonadehBottleFull: 50
-        FoodMeatSalami: 350
+        STFoodMeatSalami: 350
     - name: Медицина # цены бара * 1.5
       priority: 9
       items:
