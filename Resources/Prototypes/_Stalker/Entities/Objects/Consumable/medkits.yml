@@ -33,14 +33,14 @@
   id: STBrutepack
   suffix: ST
   name: набор от ушибов
-  description: Помогает от механических повреждений
+  description: Компактный комплект для лечения травм, содержащий охлаждающий пакет и противовоспалительные средства. Помогает снять боль, уменьшить отеки и ускорить заживление ушибов. Полезен после стычек с мутантами или неудачного падения.
   components:
   - type: Healing
     damageContainers:
       - Biological
     damage:
       groups:
-        Brute: -15
+        Brute: -5
     bloodlossModifier: -5 # a suture should stop ongoing bleeding
     healingBeginSound:
       path: "/Audio/Items/Medical/brutepack_begin.ogg"
@@ -90,7 +90,7 @@
   id: STOintment
   suffix: ST
   name: мазь
-  description: помогает от ожогов и обморожения
+  description: Универсальное средство для обработки мелких ран, ожогов и раздражений. Ускоряет регенерацию тканей и защищает от инфекций. Наносится тонким слоем, расходуется экономно. Имеет слабый, но специфический запах, характерный для аптечных препаратов.
   components:
   - type: Stack
     stackType: STOintment
@@ -136,8 +136,20 @@
   id: STGauze
   suffix: ST
   name: бинт
-  description: останавливает кровотечение
+  description: Используется для остановки кровотечений и перевязки ран. Эффективно снижает риск заражения, если применен вовремя. Обязательный предмет в выживании, занимает мало места, но может спасти жизнь в экстремальных условиях.
   components:
+  - type: Healing
+    damageContainers:
+      - Biological
+    damage:
+      types:
+        Slash: -1
+        Piercing: -1
+    bloodlossModifier: -10
+    healingBeginSound:
+      path: "/Audio/Items/Medical/brutepack_begin.ogg"
+    healingEndSound:
+      path: "/Audio/Items/Medical/brutepack_end.ogg"
   - type: Stack
     stackType: STGauze
     count: 10
