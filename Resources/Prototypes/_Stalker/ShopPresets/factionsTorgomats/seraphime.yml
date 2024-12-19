@@ -137,7 +137,7 @@
     MutantPartBloodsuckerTentacles: 300
     MutantPartOraculeEye: 800
     MutantPartPseudogiantHeart: 2000
-
+    MutantPartZombieHand: 150
   categories:
     - name: Оружие
       priority: 1
@@ -292,7 +292,7 @@
     MutantPartBloodsuckerTentacles: 150
     MutantPartOraculeEye: 400
     MutantPartPseudogiantHeart: 1000
-
+    MutantPartZombieHand: 75
   categories:
     - name: Оружие
       priority: 1

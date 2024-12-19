@@ -58,7 +58,7 @@
     MutantPartBloodsuckerTentacles: 630
     MutantPartOraculeEye: 1680
     MutantPartPseudogiantHeart: 4200
-
+    MutantPartZombieHand: 315
     # Smuggling
     TradeBox: 1650  
   categories:

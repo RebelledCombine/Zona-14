@@ -58,6 +58,7 @@
     MutantPartBloodsuckerTentacles: 450
     MutantPartOraculeEye: 1200
     MutantPartPseudogiantHeart: 3000
+    MutantPartZombieHand: 225
 
   categories:
     - name: Оружие # 1.5

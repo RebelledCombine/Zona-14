@@ -13,8 +13,6 @@
         - MobStalkerZombieChN
         - MobStalkerZombieRHBZ
         - MobStalkerZombieMerc
-      chance: 0.14
-      offset: 0.0
       restricted:
         - MobStalkerZombieBase
         - MobStalkerZombieISSG
@@ -39,8 +37,6 @@
         - MobStalkerZombieChN
         - MobStalkerZombieRHBZ
         - MobStalkerZombieMerc
-      chance: 0.14
-      offset: 0.0
       restricted:
         - MobStalkerZombieBase
         - MobStalkerZombieISSG
@@ -65,8 +61,6 @@
         - MobStalkerZombieChN
         - MobStalkerZombieRHBZ
         - MobStalkerZombieMerc
-      chance: 0.14
-      offset: 0.0
       restricted:
         - MobStalkerZombieBase
         - MobStalkerZombieISSG
@@ -90,9 +84,7 @@
         - MobStalkerZombieGlod
         - MobStalkerZombieChN
         - MobStalkerZombieRHBZ
-        - MobStalkerZombieMerc
-      chance: 0.14
-      offset: 0.0
+        - MobStalkerZombieMercы
       restricted:
         - MobStalkerZombieBase
         - MobStalkerZombieISSG

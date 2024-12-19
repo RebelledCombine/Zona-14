@@ -42,16 +42,16 @@
     - type: Jumpscare
       chargeDamage:
         types:
-          Blunt: 5
-          Slash: 35
-      jumpPower: 90
+          Blunt: 15
+          Slash: 45
+      jumpPower: 70
       updateCooldown: 1
     - type: MobThresholds
       thresholds:
         0: Alive
         250: Dead
     - type: MeleeWeapon
-      attackRate: 1
+      attackRate: 1.2
       heavyWindupModifier: 1
       heavyDamageModifier: 1.5
       angle: 30
@@ -68,10 +68,10 @@
       wideAnimation: WeaponArcClaw
       damage:
         types:
-          Slash: 30
+          Slash: 45
     - type: MovementSpeedModifier
-      baseWalkSpeed: 3
-      baseSprintSpeed: 3.6
+      baseWalkSpeed: 4
+      baseSprintSpeed: 4.6
     - type: Sprite
       layers:
         - map: ["enum.DamageStateVisualLayers.Base", "movement"]
@@ -87,7 +87,7 @@
           state: snork
     - type: SlowOnDamage
       speedModifierThresholds:
-        150: 0.7
+        200: 0.7
     - type: StaminaDamageOnHit
       damage: 5
     - type: STWeight

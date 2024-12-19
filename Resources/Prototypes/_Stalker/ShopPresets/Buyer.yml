@@ -58,6 +58,7 @@
     MutantPartBloodsuckerTentacles: 900
     MutantPartOraculeEye: 2400
     MutantPartPseudogiantHeart: 6000
+    MutantPartZombieHand: 450
 
     ### Наркотики
     STCannabisBox: 4500
