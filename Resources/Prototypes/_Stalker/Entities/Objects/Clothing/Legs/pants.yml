@@ -30,7 +30,7 @@
 
 - type: entity
   parent: BaseClothingLegs
-  id: ClothingLegsJeansRussianPixel
+  id: ClothingLegsJeansBlackNew
   name: black jeans
   components:
     - type: Sprite
@@ -40,7 +40,7 @@
 
 - type: entity
   parent: BaseClothingLegs
-  id: ClothingLegsJeansRussianPixel
+  id: ClothingLegsJeansGorka
   name: gorka jeans
   components:
     - type: Sprite
