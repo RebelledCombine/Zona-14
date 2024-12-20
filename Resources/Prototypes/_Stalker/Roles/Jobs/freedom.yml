@@ -21,6 +21,7 @@
         - type: Access
           tags:
             - Freedom
+            - Stalker
         - type: Bands
           band: Stalker
           bandIcon: freedom
@@ -54,6 +55,7 @@
         - type: Access
           tags:
             - Freedom
+            - Stalker
             - FreedomHead
         - type: Bands
           band: Stalker
