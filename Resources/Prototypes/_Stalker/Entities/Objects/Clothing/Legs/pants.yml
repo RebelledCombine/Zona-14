@@ -41,12 +41,33 @@
 - type: entity
   parent: BaseClothingLegs
   id: ClothingLegsJeansGorka
-  name: gorka jeans
+  name: gorka 4 jeans
   components:
     - type: Sprite
       sprite: _Stalker/Clothing/Legs/Jeans/gorka.rsi
     - type: Clothing
       sprite: _Stalker/Clothing/Legs/Jeans/gorka.rsi
+
+- type: entity
+  parent: BaseClothingLegs
+  id: ClothingLegsJeansGorka6
+  name: gorka 6 jeans
+  components:
+    - type: Sprite
+      sprite: _Stalker/Clothing/Legs/Jeans/gorka6.rsi
+    - type: Clothing
+      sprite: _Stalker/Clothing/Legs/Jeans/gorka6.rsi
+
+- type: entity
+  parent: BaseClothingLegs
+  id: ClothingLegsJeansBereza
+  name: bereza jeans
+  components:
+    - type: Sprite
+      sprite: _Stalker/Clothing/Legs/Jeans/bereza.rsi
+    - type: Clothing
+      sprite: _Stalker/Clothing/Legs/Jeans/bereza.rsi
+
 - type: entity
   parent: BaseClothingLegs
   id: ClothingLegsJeansGreenCargo

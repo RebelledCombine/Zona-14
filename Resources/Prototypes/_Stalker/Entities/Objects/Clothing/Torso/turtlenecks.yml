@@ -21,12 +21,32 @@
 - type: entity
   parent: BaseClothingTorso
   id: ClothingTorsoTurtlenecksGorka
-  name: gorka turtlenecks
+  name: gorka 4 turtlenecks
   components:
     - type: Sprite
       sprite: _Stalker/Clothing/Torso/Turtlenecks/gorka.rsi
     - type: Clothing
       sprite: _Stalker/Clothing/Torso/Turtlenecks/gorka.rsi
+
+- type: entity
+  parent: BaseClothingTorso
+  id: ClothingTorsoTurtlenecksGorka6
+  name: gorka 6 turtlenecks
+  components:
+    - type: Sprite
+      sprite: _Stalker/Clothing/Torso/Turtlenecks/gorka6.rsi
+    - type: Clothing
+      sprite: _Stalker/Clothing/Torso/Turtlenecks/gorka6.rsi
+
+- type: entity
+  parent: BaseClothingTorso
+  id: ClothingTorsoTurtlenecksBereza
+  name: bereza turtlenecks
+  components:
+    - type: Sprite
+      sprite: _Stalker/Clothing/Torso/Turtlenecks/bereza.rsi
+    - type: Clothing
+      sprite: _Stalker/Clothing/Torso/Turtlenecks/bereza.rsi
 
 - type: entity
   parent: BaseClothingTorso

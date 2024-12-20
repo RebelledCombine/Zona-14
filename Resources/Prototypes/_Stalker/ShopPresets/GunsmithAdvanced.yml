@@ -52,6 +52,7 @@
         Base754Mag5: 365
         BizonMag: 450
         BaseMP5Mag: 125
+        939Mag20: 300
     - name: Патроны
       priority: 3
       items:
