@@ -80,7 +80,7 @@
         STWeaponRifleStalkerVepr: 14700
         STWeaponSMGMp5: 3675
         STWeaponSMGBizon: 5100
-
+        STWeaponRifleVSS: 13050
     - name: Магазины
       priority: 2
       items:
