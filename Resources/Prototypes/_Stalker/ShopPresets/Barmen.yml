@@ -254,6 +254,7 @@
     - name: Кастомизация
       priority: 9
       items:
+        ClothingBandageStalkerJid: 50
         ClothingBandageStalkerBelarus: 50
         ClothingHeadHatBeaniehat: 10
         ClothingMaskNeckFacemask: 10
