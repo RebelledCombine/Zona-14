@@ -10,6 +10,45 @@
 
 - type: entity
   parent: BaseClothingLegs
+  id: ClothingLegsJeansStalker
+  name: stalker jeans
+  components:
+    - type: Sprite
+      sprite: _Stalker/Clothing/Legs/Jeans/stalker.rsi
+    - type: Clothing
+      sprite: _Stalker/Clothing/Legs/Jeans/stalker.rsi
+
+- type: entity
+  parent: BaseClothingLegs
+  id: ClothingLegsJeansRussianPixel
+  name: russian pixel jeans
+  components:
+    - type: Sprite
+      sprite: _Stalker/Clothing/Legs/Jeans/russiangorka.rsi
+    - type: Clothing
+      sprite: _Stalker/Clothing/Legs/Jeans/russiangorka.rsi
+
+- type: entity
+  parent: BaseClothingLegs
+  id: ClothingLegsJeansRussianPixel
+  name: black jeans
+  components:
+    - type: Sprite
+      sprite: _Stalker/Clothing/Legs/Jeans/black.rsi
+    - type: Clothing
+      sprite: _Stalker/Clothing/Legs/Jeans/black.rsi
+
+- type: entity
+  parent: BaseClothingLegs
+  id: ClothingLegsJeansRussianPixel
+  name: gorka jeans
+  components:
+    - type: Sprite
+      sprite: _Stalker/Clothing/Legs/Jeans/gorka.rsi
+    - type: Clothing
+      sprite: _Stalker/Clothing/Legs/Jeans/gorka.rsi
+- type: entity
+  parent: BaseClothingLegs
   id: ClothingLegsJeansGreenCargo
   name: green cargo jeans
   components:

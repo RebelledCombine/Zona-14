@@ -38,11 +38,15 @@
       priority: 1
       items:
         ClothingLegsJeansBlue: 10
+        ClothingLegsJeansStalker: 10
         ClothingLegsJeansGreenCargo: 10
         ClothingLegsJeansGreyCargo: 10
         ClothingLegsJeansBlackCargo: 10
         ClothingLegsJeansBrownCargo: 10
         ClothingLegsJeansSandCargo: 10
+        ClothingLegsJeansRussianPixel: 20
+        ClothingLegsJeansBlackNew: 20
+        ClothingLegsJeansGorka: 20
         ClothingHeadHatBeaniehat: 10
         ClothingMaskNeckFacemask: 10
         ClothingMaskNeckBalaklava1: 10
@@ -64,6 +68,9 @@
         ClothingTorsoTShirtPivozavr: 30
         ClothingTorsoTShirtSailorSuit: 30
         ClothingTorsoTShirtColorBlack: 30
+        ClothingTorsoTurtlenecksBlack: 90
+        ClothingTorsoTurtlenecksGorka: 90
+        ClothingTorsoTurtlenecksGorkaRus: 90
         # Cloaks
         ClothingCloakStalker: 30
         ClothingOuterCoatKKK: 67

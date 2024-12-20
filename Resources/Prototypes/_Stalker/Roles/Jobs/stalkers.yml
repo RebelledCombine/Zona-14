@@ -55,7 +55,7 @@
     id: StalkerPDA
     belt: ClothingBeltStorageWaistbag
     torso: ClothingTorsoSweaterStalkerGreen
-    legs: ClothingLegsJeansBlue
+    legs: ClothingLegsJeansStalker
     shoes: ClothingShoesBootsWork
     outerClothing: ClothingOuterCoatBomber
     pocket1: BookStalkerFAQ

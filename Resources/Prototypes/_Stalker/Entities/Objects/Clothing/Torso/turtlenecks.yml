@@ -10,6 +10,36 @@
 
 - type: entity
   parent: BaseClothingTorso
+  id: ClothingTorsoTurtlenecksBlack
+  name: black turtlenecks
+  components:
+    - type: Sprite
+      sprite: _Stalker/Clothing/Torso/Turtlenecks/black.rsi
+    - type: Clothing
+      sprite: _Stalker/Clothing/Torso/Turtlenecks/black.rsi
+
+- type: entity
+  parent: BaseClothingTorso
+  id: ClothingTorsoTurtlenecksGorka
+  name: gorka turtlenecks
+  components:
+    - type: Sprite
+      sprite: _Stalker/Clothing/Torso/Turtlenecks/gorka.rsi
+    - type: Clothing
+      sprite: _Stalker/Clothing/Torso/Turtlenecks/gorka.rsi
+
+- type: entity
+  parent: BaseClothingTorso
+  id: ClothingTorsoTurtlenecksGorkaRus
+  name: russian pixel turtlenecks
+  components:
+    - type: Sprite
+      sprite: _Stalker/Clothing/Torso/Turtlenecks/russiangorka.rsi
+    - type: Clothing
+      sprite: _Stalker/Clothing/Torso/Turtlenecks/russiangorka.rsi
+
+- type: entity
+  parent: BaseClothingTorso
   id: ClothingTorsoTurtlenecksUN
   name: un turtlenecks
   components:
