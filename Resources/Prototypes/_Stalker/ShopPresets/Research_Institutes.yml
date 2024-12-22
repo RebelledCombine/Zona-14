@@ -1,64 +1,64 @@
 - type: shopPreset
-  id: NpcResearchInstitut # 1x
+  id: NpcResearchInstitut # 0x
   itemsForSale:
     # Thermal group - 1
-    ZoneArtifactFireball: 675
-    ZoneArtifactEye: 1125
-    ZoneArtifactFlame: 2250
+    ZoneArtifactFireball: 472
+    ZoneArtifactEye: 787
+    ZoneArtifactFlame: 1575
     # Thermal group - 2
-    ZoneArtifactCristall: 2812
-    ZoneArtifactLithosphere: 4500
+    ZoneArtifactCristall: 1968
+    ZoneArtifactLithosphere: 3150
     # Electrical group - 1
-    ZoneArtifactSparkler: 675
-    ZoneArtifactBattery: 1350
-    ZoneArtifactFlash: 2700
-    ArtMoon: 3375
-    ZoneArtifactTesla: 5062
-    ZoneArtifactIce: 5625
+    ZoneArtifactSparkler: 472
+    ZoneArtifactBattery: 945
+    ZoneArtifactFlash: 1890
+    ArtMoon: 2362
+    ZoneArtifactTesla: 3543
+    ZoneArtifactIce: 3937
     # Gravity group - 1
-    ArtMedusa: 562
-    ZoneArtifactFlower: 1125
-    ZoneArtifactNightStar: 2812
+    ArtMedusa: 393
+    ZoneArtifactFlower: 787
+    ZoneArtifactNightStar: 1968
     # Gravity group - 2
-    ZoneArtifactVyvert: 675
-    ZoneArtifactAmoeba: 1125
-    ZoneArtifactGravi: 3375
-    ZoneArtifactGoldfish: 4500
-    ZoneArtifactSpring: 5625
-    ZoneArtifactFocus: 2250
-    ZoneArtifactStuntman: 4500
-    ZoneArtifactDistorter: 6750
-    ZoneArtifactSoul: 5625
+    ZoneArtifactVyvert: 472
+    ZoneArtifactAmoeba: 787
+    ZoneArtifactGravi: 2362
+    ZoneArtifactGoldfish: 3150
+    ZoneArtifactSpring: 3937
+    ZoneArtifactFocus: 1575
+    ZoneArtifactStuntman: 3150
+    ZoneArtifactDistorter: 4725
+    ZoneArtifactSoul: 3937
     # Acidic group - 1
-    ZoneArtifactBlood: 900
-    ZoneArtifactMeat: 1687
-    ZoneArtifactKolobok: 2250
+    ZoneArtifactBlood: 630
+    ZoneArtifactMeat: 1181
+    ZoneArtifactKolobok: 1575
     # Acidic group - 2
-    ZoneArtifactPellicle: 1125
-    ZoneArtifactBaloon: 3937
+    ZoneArtifactPellicle: 787
+    ZoneArtifactBaloon: 2755
 
     # Mutant parts
 
     #Boars -------- Health * T * 0.45
-    MutantPartBoarHoof: 135 # T1
-    MutantPartSeasonedBoarHoof: 324 # T2
-    MutantPartOldBoarHoof: 607 # T3
+    MutantPartBoarHoof: 94 # T1
+    MutantPartSeasonedBoarHoof: 227 # T2
+    MutantPartOldBoarHoof: 425 # T3
 
     #T1 -------- Health * 1
-    MutantPartBlindDogTail: 90
-    MutantPartFleshEye: 200
-    FoodMeatSpiderLeg: 50
+    MutantPartBlindDogTail: 63
+    MutantPartFleshEye: 140
+    FoodMeatSpiderLeg: 35
 
     #T2 -------- Health * 1.8
-    MutantPartLeshiyRoot: 900
-    MutantPartPseudodogTail: 450
-    MutantPartSnorkFoot: 450
+    MutantPartLeshiyRoot: 630
+    MutantPartPseudodogTail: 315
+    MutantPartSnorkFoot: 315
 
     #T3 -------- Health * 3
-    MutantPartBloodsuckerTentacles: 900
-    MutantPartOraculeEye: 2400
-    MutantPartPseudogiantHeart: 6000
-
+    MutantPartBloodsuckerTentacles: 630
+    MutantPartOraculeEye: 1680
+    MutantPartPseudogiantHeart: 4200
+    MutantPartZombieHand: 315
   categories:
     - name: ССП-99
       priority: 1
@@ -128,6 +128,7 @@
         ZoneArtifactDetectorPulse: 100
         ZoneArtifactDetectorHunter: 400
         ZoneArtifactDetectorResponse: 1000
+        ZoneArtifactDetectorSpruce: 1500
     - name: Провизия
       priority: 6
       items:
@@ -170,9 +171,41 @@
         #SelfSteampack: 30
         #MilitarySteampack: 200
         #SciSteampack: 500
-
-    - name: Кастомизация
+    - name: Оружие
       priority: 8
+      items:
+        WeaponPistolStalkerGlock: 300
+        STWeaponRevolverSWModel325: 1275
+        STWeaponRevolverSWModel625: 1650
+        STWeaponShotgunStalkerSPAS: 1250
+        STWeaponRifleStalkerL85: 2100
+        STWeaponSMGMp5: 2450
+        STWeaponShotgunMossberg: 600
+        STWeaponSMGBizon: 3400
+    - name: Магазины
+      priority: 9
+      items:
+        BaseGlockMag10: 85
+        SpeedLoader45ACPEmpty: 75
+        556Mag20: 125
+        556Mag30: 175
+        BaseMP5Mag: 125
+        BizonMag: 450
+    - name: Патроны
+      priority: 10
+      items:
+        7mmBuckshotBox: 50
+        6mmBuckshotBox: 400
+        8mmBuckshotBox: 1400
+        919PSOGJBox: 100
+        919PSTBox: 225
+        45ACPLFMJBox: 100
+        45ACPMFMJBox: 225
+        556FMJBox: 300
+        918PGJBox: 100
+        918PSTBox: 225
+    - name: Кастомизация
+      priority: 11
       items:
         ClothingMaskNeckFacemask: 20
         ClothingHandsGlovesFingerless: 35
@@ -197,7 +230,7 @@
         ClothingUniformJumpsuitCasualRed: 5
         ClothingHeadHatSovietUshankaStalker: 40
     - name: Крафты
-      priority: 9
+      priority: 12
       items:
         CraftFerments: 450
         # Tech cards
