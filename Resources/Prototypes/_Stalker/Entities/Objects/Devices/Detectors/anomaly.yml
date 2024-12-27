@@ -216,8 +216,8 @@
           shader: unshaded
     - type: ZoneAnomalyDetector
       level: 4
-      beepSound: /Audio/_Stalker/Items/Detectors/Anomaly/da_beep3.ogg
+      beepSound: /Audio/_Stalker/Items/Detectors/Anomaly/da_beep2.ogg
       distance: 25
-      maxBeepInterval: 0.5
-      minBeepInterval: 0.001
+      maxBeepInterval: 0.9
+      minBeepInterval: 0.2
 
