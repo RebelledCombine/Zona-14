@@ -208,7 +208,7 @@
   suffix: Stalker, Detector
   components:
     - type: Sprite
-      sprite: _Stalker/Objects/Devices/ZoneAnomalyDetectors/uaal_7b.rsi
+      sprite: _Stalker/Objects/Devices/ZoneAnomalyDetectors/ad_2m.rsi
       layers:
         - state: base
         - state: screen_off
@@ -216,8 +216,8 @@
           shader: unshaded
     - type: ZoneAnomalyDetector
       level: 4
-      beepSound: /Audio/_Stalker/Items/Detectors/Anomaly/da_beep2.ogg
-      distance: 25
+      beepSound: /Audio/_Stalker/Items/Detectors/Anomaly/da_beep3.ogg
+      distance: 12
       maxBeepInterval: 0.9
-      minBeepInterval: 0.2
+      minBeepInterval: 0.05
 
