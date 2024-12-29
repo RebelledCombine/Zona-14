@@ -42,9 +42,9 @@
     STDetectorAD3Blueprint:
       amount: 1
       catalyzer: true
-    STCraftStandardPCBT2:
+    STCraftStandardPCBT3:
       amount: 2
-    STCraftPlasticFittingT2:
+    STCraftPlasticFittingT3:
       amount: 1
     ZoneAnomalyDetectorAD2:
       amount: 1
