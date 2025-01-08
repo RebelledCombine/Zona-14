@@ -71,7 +71,7 @@
 - type: lightCraftingRecipe
   id: STCraftSkinSTClothingOuterArmorLightPlateVestBaseUN
   results:
-    - STClothingOuterArmorLightPlateVestBaseUN
+    - STClothingOuterArmorLightPlateVestBaseClearSky
   steps:
     firstIngredient: STSkinsKitClearSky
     secondIngredient: STClothingOuterArmorLightPlateVestBaseStalker
