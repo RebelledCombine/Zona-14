@@ -39,7 +39,7 @@
 - type: entity
   parent: STClothingOuterArmorHeavyPlateVestBase
   id: STClothingOuterArmorLightPlateVestBaseHeavyMilitary
-  name: тяжёлый бронежилет военных
+  name: Военный Бронежилет «Цитадель»
   description: Тяжёлый бронежилет V типа, обеспечивающий достойную защиту от большинства видов повреждений
   components:
   - type: Sprite
@@ -52,7 +52,7 @@
 - type: entity
   parent: STClothingOuterArmorHeavyPlateVestBase
   id: STClothingOuterArmorLightPlateVestBaseHeavyMonolith
-  name: тяжёлый бронежилет монолита
+  name: Бронежилет «Цитадель» монолита
   description: Тяжёлый бронежилет V типа, обеспечивающий достойную защиту от большинства видов повреждений
   components:
   - type: Sprite
@@ -63,7 +63,7 @@
 - type: entity
   parent: STClothingOuterArmorHeavyPlateVestBase
   id: STClothingOuterArmorLightPlateVestBaseHeavyBandit
-  name: тяжёлый бронежилет бандитов
+  name: Бандитский Бронежилет «Цитадель»
   description: Стыренный и перекрашенный мусорской тяжёлый бронежилет V типа, обеспечивающий достойную защиту от большинства видов повреждений
   components:
   - type: Sprite
@@ -75,7 +75,7 @@
 - type: entity
   parent: STClothingOuterArmorHeavyPlateVestBase
   id: ClothingOuterArmorHeavyJaba
-  name: тяжёлый бронежилет жаб
+  name: Бронежилет «Цитадель» жаб
   description: Тяжёлый бронежилет IV типа, обеспечивающий достаточную защиту от физического урона.
   components:
   - type: Sprite
@@ -88,7 +88,7 @@
 - type: entity
   parent: STClothingOuterArmorHeavyPlateVestBase
   id: ClothingOuterArmorHeavyUNTAR
-  name: тяжёлый бронежилет UNTAR
+  name: Бронежилет UNTAR-H
   description: Тяжёлый бронежилет V типа, обеспечивающий достойную защиту от большинства видов повреждений
   components:
   - type: Sprite
@@ -101,8 +101,8 @@
 - type: entity
   parent: STClothingOuterArmorHeavyPlateVestBase
   id: ClothingOuterArmorHeavyDebt
-  name: тяжёлый бронежилет Авангарда
-  description: тяжёлый бронежилет V типа, улучшенный умельцами Авангарда, специально для тяжёлых стычек между группировками.
+  name: Бронежилет «Цитадель» Долга
+  description: тяжёлый бронежилет V типа, улучшенный умельцами Долга, специально для тяжёлых стычек между группировками.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/outerClothing/heavy_duty_armor.rsi
