@@ -28,7 +28,7 @@
 - type: entity
   parent: STClothingHeadHelmetCombatT2Base
   id: ClothingHeadHelmetInfantry
-  name: пехотный шлем
+  name: шлем "Пласт-4"
   description: Шлем неизвестного производства и марки, тем не менее защищающий вашу бошечку. Огромная партия этих шлемов как-то попала в ЧЗО.
   components:
     - type: Sprite
@@ -39,7 +39,7 @@
 - type: entity
   parent: STClothingHeadHelmetCombatT2Base
   id: ClothingHeadHelmetInfantryBand
-  name: бандитский пехотный шлем
+  name: бандитский "Пласт"
   description: Пехотный шлем с нанесенными на него полосками, как буд-то adidas, почитается бандитскими формированиями.
   components:
     - type: Sprite
@@ -50,7 +50,7 @@
 - type: entity
   parent: STClothingHeadHelmetCombatT2Base
   id: ClothingHeadInfantryHelmetRenegate
-  name: пехотный шлем ренегата
+  name: шлем "Пласт-4" ренегата
   description: Обычный пехотный шлем, перекрашенный в цвета ренегата, и с небольшими изменениями.
   components:
   - type: Sprite
@@ -61,7 +61,7 @@
 - type: entity
   parent: STClothingHeadHelmetCombatT2Base
   id: ClothingHeadInfantryHelmetDeserter
-  name: пехотный шлем отступников
+  name: шлем "Пласт-4" отступников
   description: Неизвестно, что это за шлем, но он очень хорошо защищает вашу голову.
   components:
   - type: Sprite
@@ -72,7 +72,7 @@
 - type: entity
   parent: STClothingHeadHelmetCombatT2Base
   id: ClothingHeadInfantryHelmetUN
-  name: пехотный шлем ООН
+  name: шлем "Пласт-4-AM"
   description: Неизвестно, что это за шлем, но он очень хорошо защищает вашу голову.
   components:
   - type: Sprite
