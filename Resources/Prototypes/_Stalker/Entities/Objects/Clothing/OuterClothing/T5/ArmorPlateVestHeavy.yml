@@ -40,7 +40,7 @@
   parent: STClothingOuterArmorHeavyPlateVestBase
   id: STClothingOuterArmorLightPlateVestBaseHeavyMilitary
   name: Военный Бронежилет «Цитадель»
-  description: Тяжёлый бронежилет V типа, обеспечивающий достойную защиту от большинства видов повреждений
+  description: Тяжёлый бронежилет V типа, обеспечивающий достойную защиту от большинства видов повреждений.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/outerClothing/plate_heavy_military.rsi
@@ -53,7 +53,7 @@
   parent: STClothingOuterArmorHeavyPlateVestBase
   id: STClothingOuterArmorLightPlateVestBaseHeavyMonolith
   name: Бронежилет «Цитадель» монолита
-  description: Тяжёлый бронежилет V типа, обеспечивающий достойную защиту от большинства видов повреждений
+  description: Тяжёлый бронежилет V типа, обеспечивающий достойную защиту от большинства видов повреждений.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/outerClothing/plate_heavy_monolit.rsi
@@ -64,7 +64,7 @@
   parent: STClothingOuterArmorHeavyPlateVestBase
   id: STClothingOuterArmorLightPlateVestBaseHeavyBandit
   name: Бандитский Бронежилет «Цитадель»
-  description: Стыренный и перекрашенный мусорской тяжёлый бронежилет V типа, обеспечивающий достойную защиту от большинства видов повреждений
+  description: Стыренный и перекрашенный мусорской тяжёлый бронежилет V типа, обеспечивающий достойную защиту от большинства видов повреждений.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/outerClothing/plate_heavy_bandit.rsi
@@ -89,7 +89,7 @@
   parent: STClothingOuterArmorHeavyPlateVestBase
   id: ClothingOuterArmorHeavyUNTAR
   name: Бронежилет UNTAR-H
-  description: Тяжёлый бронежилет V типа, обеспечивающий достойную защиту от большинства видов повреждений
+  description: Тяжёлый бронежилет V типа, обеспечивающий достойную защиту от большинства видов повреждений.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/outerClothing/heavy_unstar.rsi
