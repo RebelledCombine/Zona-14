@@ -31,6 +31,7 @@
       modifiers:
         flatReductions:
           Psy: 5
+    - type: Unremoveable
 
 - type: entity
   parent: BaseItem
