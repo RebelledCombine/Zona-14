@@ -1107,7 +1107,7 @@
 - type: entity
   parent: MapTeleportBase
   id: UndergrundSvalka-Bar1
-  name: Подземка Свалки - Бар
+  name: Подземка Свалки - Бар1
   components:
     - type: NewMapTeleport
       portalName: UndergrundSvalka-Bar1
@@ -1119,7 +1119,7 @@
 - type: entity
   parent: MapTeleportBase
   id: UndergrundSvalka-Bar2
-  name: Подземка Свалки - Бар
+  name: Подземка Свалки - Бар2
   components:
     - type: NewMapTeleport
       portalName: UndergrundSvalka-Bar2
