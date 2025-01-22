@@ -79,5 +79,5 @@
       reflects:
         - NonEnergy
     - type: HideLayerClothing
-    slots:
-    - Hair
+      slots:
+      - Hair
