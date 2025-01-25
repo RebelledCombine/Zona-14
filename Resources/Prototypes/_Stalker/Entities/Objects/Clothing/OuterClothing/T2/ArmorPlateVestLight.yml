@@ -188,17 +188,6 @@
 
 - type: entity
   parent: STClothingOuterArmorLightPlateVestBase
-  id: STClothingOuterArmorLightPlateVestBasePolice
-  name: лёгкий бронежилет полиции
-  description: Стандартный бронежилет II типа, обеспечивающий достойную защиту от большинства видов повреждений
-  components:
-  - type: Sprite
-    sprite: _Stalker/Objects/Clothing/outerClothing/plate_police.rsi
-  - type: Clothing
-    sprite: _Stalker/Objects/Clothing/outerClothing/plate_police.rsi
-
-- type: entity
-  parent: STClothingOuterArmorLightPlateVestBase
   id: STClothingOuterArmorLightPlateVestBaseMerc
   name: бронежилет «Щиток-2» наёмников
   description: Лёгкий бронежилет второго класса защиты, основа основ.

@@ -1,16 +1,16 @@
 - type: entity
   parent: STClothingOuterArmorStorageBasic
-  id: ClothingOuterArmorPSZ9D
+  id: STClothingOuterArmorVeryHeavy
   name: КСН-13 «Бегемот»
   description: Костюм Специального Назначения «Бегемот», используется государственными оперативниками в условиях ЧЗО.
   suffix: ST, T4, PvE
   components:
   - type: STWeight
-    self: 10
+    self: 6.5
   - type: Sprite
-    sprite: _Stalker/Objects/Clothing/outerClothing/psz9d.rsi
+    sprite: _Stalker/Objects/Clothing/outerClothing/armored_merc_armor.rsi
   - type: Clothing
-    sprite: _Stalker/Objects/Clothing/outerClothing/psz9d.rsi
+    sprite: _Stalker/Objects/Clothing/outerClothing/armored_merc_armor.rsi
   - type: Tag
     tags:
       - BlockBelt
@@ -50,14 +50,6 @@
         Compression: 0.8
   - type: ExplosionResistance
     damageCoefficient: 0.80
-  
-- type: entity
-  parent: ClothingOuterArmorPSZ9D
-  id: STClothingOuterArmorHeavySera
-  name: бронированный комбинезон OP-14 'Серафимов'
-  description: Создан на основе обыкновенного комбинезона, бронированный потому что повышена защита броневыми пластинами от большинства физических повреждений. Так-же увеличивает вес, но предоставленая отличная защита от снарядов для таких комбенизонов как этот.
-  components:
-  - type: Sprite
-    sprite: _Stalker/Clothing/OuterClothing/serafim-T4PVE.rsi
-  - type: Clothing
-    sprite: _Stalker/Clothing/OuterClothing/serafim-T4PVE.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHatHoodJacketMerc
+    slot: head

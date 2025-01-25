@@ -1,7 +1,6 @@
-
 - type: entity
   parent: STClothingOuterArmorStorageBasic
-  id: STClothingOuterArmorHeavy
+  id: STClothingOuterArmorHeavyM
   name: бронированный комбинезон
   description: Создан на основе обыкновенного комбинезона, бронированный потому что повышена защита броневыми пластинами от большинства физических повреждений. Так-же увеличивает вес, но предоставленая отличная защита от снарядов для таких комбенизонов как этот.
   suffix: ST, T3, PvE
@@ -32,7 +31,7 @@
     damageCoefficient: 0.65
 
 - type: entity
-  parent: STClothingOuterArmorHeavy
+  parent: STClothingOuterArmorHeavyM
   id: STClothingOuterArmorHeavyDolg
   name: бронированный комбинезон 'Долга'
   description: Создан на основе обыкновенного комбинезона, бронированный потому что повышена защита броневыми пластинами от большинства физических повреждений. Так-же увеличивает вес, но предоставленая отличная защита от снарядов для таких комбенизонов как этот.
