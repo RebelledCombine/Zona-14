@@ -30,7 +30,10 @@
     armorClass: 3
     modifiers:
       coefficients:
-        Blunt: 0.6
+        Blunt: 0.4
+        Slash: 0.8
+        Piercing: 0.5
+        Heat: 0.9
   - type: Craftable
 
 
