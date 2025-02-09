@@ -30,6 +30,8 @@
       size: Small
       shape:
         - 0,0,3,3
+    - type: STWeight
+      self: 25
     - type: Sprite
       sprite: _Stalker/Structures/Furniture/carton_box.rsi
       state: kb2
