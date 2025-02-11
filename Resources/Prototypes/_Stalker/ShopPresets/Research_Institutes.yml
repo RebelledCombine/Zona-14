@@ -8,7 +8,7 @@
         STCombatKnife: 10
             # Guns
         WeaponPistolStalkerGlock: 200
-        S&W Model 625: 1650
+        STWeaponRevolverSWModel625: 1650
     - name: Магазины
       priority: 2
       items:
