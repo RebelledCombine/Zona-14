@@ -99,13 +99,12 @@
     sprite: _Stalker/Objects/Devices/ArtifactDetectors/response.rsi
     layers:
       - state: base
-        map: ["base"]
   - type: GenericVisualizer
     visuals:
       enum.ZoneArtifactDetectorVisuals.Layer:
         base:
-          Enabled: { state: active }
           Disabled: { state: base }
+          Enabled: { state: icon }
           Detected: { state: active }
   - type: ZoneArtifactDetector
     level: 2
@@ -247,13 +246,12 @@
     sprite: _Stalker/Objects/Devices/ArtifactDetectors/response_cvoboda.rsi
     layers:
       - state: base
-        map: ["base"]
   - type: GenericVisualizer
     visuals:
       enum.ZoneArtifactDetectorVisuals.Layer:
         base:
-          Enabled: { state: active }
           Disabled: { state: base }
+          Enabled: { state: icon }
           Detected: { state: active }
   - type: ZoneArtifactDetector
     level: 1
