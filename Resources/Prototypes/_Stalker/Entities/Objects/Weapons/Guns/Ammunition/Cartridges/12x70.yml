@@ -3,7 +3,7 @@
 - type: entity
   id: BaseShotgunBullet
   name: shell (.50)
-  parent: BaseCartridgeCaselessRifle
+  parent: BaseCartridge
   abstract: true
   components:
   - type: STWeight
@@ -13,6 +13,7 @@
     - Cartridge
     - ShellShotgun
   - type: CartridgeAmmo
+    deleteOnSpawn: true
     proto: Bullet7mmBuckshot
     count: 8
     spread: 25
@@ -36,6 +37,13 @@
   - type: CartridgeAmmo
     count: 12
     proto: Bullet7mmBuckshot
+  - type: Sprite
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Casings/shotgun_shell.rsi
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: SpentAmmoVisuals
+    state: "base"
 
 - type: entity
   id: Cartridge6mmBuckshot
@@ -50,6 +58,8 @@
     layers:
       - state: express
         map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: SpentAmmoVisuals
+    state: "express"
 
 - type: entity
   id: CartridgeShotgunBullet
@@ -69,6 +79,8 @@
     layers:
       - state: bullet
         map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: SpentAmmoVisuals
+    state: "bullet"
 
 - type: entity
   id: CartridgeShotgunBulletRIP
@@ -88,6 +100,8 @@
     layers:
       - state: bullet_RIP
         map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: SpentAmmoVisuals
+    state: "bullet_RIP"
 
 - type: entity
   id: CartridgeShotgunDart
@@ -107,6 +121,8 @@
     layers:
       - state: zabIl
         map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: SpentAmmoVisuals
+    state: "zabIl"
 
 - type: entity
   id: ShellShotgunBeanbagStalker
@@ -116,8 +132,8 @@
     - type: Sprite
       layers:
         - state: beanbag
-          map: [ "enum.AmmoVisualLayers.Base" ]
     - type: CartridgeAmmo
+      deleteOnSpawn: true
       proto: PelletShotgunBeanbagStalker
       count: 1
     - type: SpentAmmoVisuals
@@ -135,6 +151,8 @@
     layers:
       - state: magnum
         map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: SpentAmmoVisuals
+    state: "magnum"
 
 - type: entity
   id: CartridgeShotgunFlechette
@@ -148,3 +166,5 @@
     layers:
       - state: flechette
         map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: SpentAmmoVisuals
+    state: "flechette"
