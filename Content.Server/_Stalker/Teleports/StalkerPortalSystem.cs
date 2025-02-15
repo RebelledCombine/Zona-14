@@ -1,8 +1,10 @@
 using System.Linq;
 using System.Numerics;
+using Content.Server._Stalker.Procedural;
 using Content.Server._Stalker.Sponsors;
 using Content.Server._Stalker.StalkerDB;
 using Content.Server._Stalker.Storage;
+using Content.Server.Station.Systems;
 using Content.Shared._Stalker.CCCCVars;
 using Content.Shared._Stalker.StalkerRepository;
 using Content.Shared._Stalker.Teleport;
@@ -34,6 +36,8 @@ public sealed class StalkerPortalSystem : SharedTeleportSystem
     [Dependency] private readonly AccessReaderSystem _accessReaderSystem = default!;
     [Dependency] private readonly IConfigurationManager _config = default!;
     [Dependency] private readonly IPrototypeManager _proto = default!;
+    [Dependency] private readonly IEntityManager _ent = default!;
+
 
     //Путь к карте сталкер арены
     public const string ArenaMapPath = "/Maps/_StalkerMaps/PersonalStalkerArena/StalkerMap.yml";
@@ -102,7 +106,7 @@ public sealed class StalkerPortalSystem : SharedTeleportSystem
 
     private void HandleStalkerPortalPersonal(EntityUid uid, StalkerPortalPersonalComponent component, EntityUid otherEntity, EntityUid ourEntity)
     {
-        if (!TryComp<ActorComponent>(otherEntity, out _))
+        if (!TryComp<ActorComponent>(otherEntity, out var actor))
             return;
 
         if (TryComp<PortalTimeoutComponent>(otherEntity, out var timeout) &&
@@ -113,7 +117,24 @@ public sealed class StalkerPortalSystem : SharedTeleportSystem
 
         if (component.ReturnPortalEntity.IsValid())
         {
+            var player = actor.PlayerSession;
+            var data = GetFromStalkerTeleportDataList(player.Name);
+            var gridIdNet = NetEntity.Parse(data.GridId.ToString());
+
+            Logger.Debug($"player {player}");
+            Logger.Debug($"data {data}");
+            Logger.Debug($"gridIdNet {gridIdNet}");
+
+
+
+            if (!_ent.TryGetEntity(gridIdNet, out var gridId) || !_ent.HasComponent<MapGridComponent>(gridId))
+                return;
+
+            _ent.DeleteEntity(gridId);
+            Logger.Debug($"tried to delete {gridId}");
+
             TeleportEntity(otherEntity, new EntityCoordinates(component.ReturnPortalEntity, new Vector2(0, -1f)));
+            RemoveFromStalkerTeleportDataList(player.Name);
         }
     }
 
@@ -231,6 +252,20 @@ public sealed class StalkerPortalSystem : SharedTeleportSystem
         }
         return null!;
     }
+
+    public bool RemoveFromStalkerTeleportDataList(string inputLogin)
+    {
+        for (int i = 0; i < StalkerArenaDataList.Count; i++) // InvalidOperationException
+        {
+            if (StalkerArenaDataList[i].Login == inputLogin)
+            {
+                StalkerArenaDataList.RemoveAt(i);
+                return true;
+            }
+        }
+        return false;
+    }
+
 
     //Данные о сталкер арене
     public sealed class StalkerArenaData
