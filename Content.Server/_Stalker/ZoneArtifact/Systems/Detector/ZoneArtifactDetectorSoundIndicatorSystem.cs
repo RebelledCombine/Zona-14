@@ -33,7 +33,7 @@ public sealed class ZoneArtifactDetectorSoundIndicatorSystem : EntitySystem
             var interval = (indicator.MaxInterval - indicator.MinInterval) * scalingFactor + indicator.MinInterval;
 
 
-                indicator.NextTime = _timing.CurTime + interval;
+            indicator.NextTime = _timing.CurTime + interval;
         }
     }
 }
