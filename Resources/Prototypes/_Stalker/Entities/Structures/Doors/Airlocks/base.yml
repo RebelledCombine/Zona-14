@@ -639,7 +639,7 @@
   name: стальная дверь
   parent: MetalAltDoorFallout
   description: Крепкая стальная дверь с надёжным замком.
-  suffix: ST, mapping, Проект
+  suffix: ST, mapping, Оркестратор Проекта
   components:
   - type: AccessReader
     access: [["ProjectOrchestrator"]]
