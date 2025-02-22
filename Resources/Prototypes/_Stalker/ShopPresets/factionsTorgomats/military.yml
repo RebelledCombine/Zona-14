@@ -157,8 +157,6 @@
         ClothingMaskNeckBalaklava1: 50
         ClothingMaskNeckBalaklava2: 50
         ClothingMaskNeckBalaklava3: 50
-        ClothingMaskBalaklavaHat: 50
-        ClothingHeadBalaklavaHat: 50
         ClothingHeadBandMerc: 50
         ClothingHeadBandSkull: 50
         ClothingHeadHatUshanka: 50
@@ -462,7 +460,6 @@
       items:
         ClothingHeadBandana1Military: 15
         ClothingHeadBandana2Military: 15
-        ClothingHeadBalaklavaHat: 50
 
     - name: Провизия
       priority: 2
