@@ -3,4 +3,4 @@ ent-GasStationstalker = бензоколонка
     .suffix = ST, Mapping
 ent-TVStalker = телевизор
     .desc = Телевизионный приёмник.
-    .suffix = ST, Mapping
+    .suffix = { ent-GasStationstalker.suffix }
