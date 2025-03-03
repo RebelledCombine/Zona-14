@@ -1,15 +1,8 @@
 - type: entity
   id: FlexibleMarkerTrigger
   abstract: true
-  suffix: Stalker
   components:
   - type: ApproachTrigger
-    range: 40
-    minRange: 15
-    useMinRange: true
-    whitelist:
-      components:
-        - Dna
   - type: Marker
   - type: Clickable
   - type: InteractionOutline
@@ -44,10 +37,6 @@
   suffix: Stalker, КД 40 МИНУТ
   components:
   - type: ApproachTrigger
-    range: 40
-    whitelist:
-      components:
-        - Dna
 
 - type: entity
   name: базовый триггер (1-4) (20%)
@@ -56,12 +45,6 @@
   parent: MarkerBase
   components:
     - type: ApproachTrigger
-      range: 40
-      minRange: 15
-      useMinRange: true
-      whitelist:
-        components:
-          - Dna
     - type: Sprite
       layers:
         - state: blue
@@ -84,12 +67,6 @@
   parent: MarkerBase
   components:
     - type: ApproachTrigger
-      range: 40
-      minRange: 15
-      useMinRange: true
-      whitelist:
-        components:
-          - Dna
     - type: Sprite
       layers:
         - state: blue
@@ -111,12 +88,6 @@
   abstract: true
   components:
     - type: ApproachTrigger
-      range: 40
-      minRange: 15
-      useMinRange: true
-      whitelist:
-        components:
-          - Dna
     - type: Sprite
       layers:
         - state: blue
@@ -138,12 +109,6 @@
   parent: MarkerBase
   components:
     - type: ApproachTrigger
-      range: 40
-      minRange: 15
-      useMinRange: true
-      whitelist:
-        components:
-          - Dna
     - type: Sprite
       layers:
         - state: blue
@@ -165,12 +130,6 @@
   parent: MarkerBase
   components:
     - type: ApproachTrigger
-      range: 40
-      minRange: 15
-      useMinRange: true
-      whitelist:
-        components:
-          - Dna
     - type: Sprite
       layers:
         - state: blue
@@ -192,12 +151,6 @@
   parent: MarkerBase
   components:
     - type: ApproachTrigger
-      range: 40
-      minRange: 15
-      useMinRange: true
-      whitelist:
-        components:
-          - Dna
     - type: Sprite
       layers:
         - state: blue
