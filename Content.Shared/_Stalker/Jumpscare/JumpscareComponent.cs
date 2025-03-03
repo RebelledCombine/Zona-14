@@ -47,7 +47,7 @@ namespace Content.Shared._Stalker.Jumpscare
         public float UpdateCooldown;
 
         [DataField, AutoPausedField]
-        public TimeSpan? SlowdownTime = TimeSpan.FromSeconds(0.1f);
+        public TimeSpan SlowdownTime = TimeSpan.FromSeconds(0.1f);
 
         // steps params
         [ViewVariables(VVAccess.ReadWrite)]
