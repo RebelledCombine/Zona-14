@@ -19,9 +19,9 @@
     armorClass: 3
     modifiers:
       flatReductions:
-        Blunt: 8
-        Slash: 8
-        Piercing: 8
+        Blunt: 2
+        Slash: 2
+        Piercing: 4
         Caustic: 1
         Radiation: 3.5
         Heat: 1
