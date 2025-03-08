@@ -66,11 +66,6 @@
       unequipSound: null
     - type: Armor
       armorClass: 2
-      modifiers:
-        flatReductions:
-          Piercing: 7
-          Blunt: 1
-          Slash: 1
         coefficients:
           Piercing: 0.75
     - type: Reflect
