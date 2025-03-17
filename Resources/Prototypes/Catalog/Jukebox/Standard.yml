@@ -1,41 +1,65 @@
 - type: jukebox
-  id: FlipFlap
-  name: X-CEED - Flip Flap
+  id: RSongOne
+  name: Линии вогню - Океан эльзы
   path:
-    path: /Audio/Jukebox/flip-flap.ogg
+    path: /Audio/_Stalker/ua_radio.ogg
 
 - type: jukebox
-  id: Tintin
-  name: Jeroen Tel - Tintin on the Moon
+  id: RSongTwo
+  name: In The Army Now - Status Quo
   path:
-    path: /Audio/Jukebox/title3.ogg
+    path: /Audio/_Stalker/un_radio.ogg
 
 - type: jukebox
-  id: Thunderdome
-  name: MashedByMachines - Sector 11
+  id: RSongThree
+  name: perry como - magic moments 
   path:
-    path: /Audio/Jukebox/sector11.ogg
+    path: /Audio/_Stalker/un_radio2.ogg
 
 - type: jukebox
-  id: Constellations
-  name: Qwertyquerty - Constellations
+  id: RSongFour
+  name: Thank You USA - Armend Miftari
   path:
-    path: /Audio/Jukebox/constellations.ogg
+    path: /Audio/_Stalker/un_radio3.ogg
 
 - type: jukebox
-  id: Drifting
-  name: Qwertyquerty - Drifting
+  id: RSongFive
+  name: Солдат - 5’Nizza
   path:
-    path: /Audio/Jukebox/drifting.ogg
+    path: /Audio/_Stalker/army_radio.ogg
 
 - type: jukebox
-  id: starlight
-  name: Qwertyquerty - Starlight
+  id: RSongSix
+  name: Бомж - Сектор Газа
   path:
-    path: /Audio/Jukebox/starlight.ogg
+    path: /Audio/_Stalker/army_radio2.ogg
 
 - type: jukebox
-  id: sunset
-  name: PigeonBeans - Sunset
+  id: RSongSeven
+  name: Шансоньетка - Александр Васильевич Новиков
   path:
-    path: /Audio/Jukebox/sunset.ogg
+    path: /Audio/_Stalker/army_radio3.ogg
+
+- type: jukebox
+  id: RSongEight
+  name: Музыка бандитов - S.T.A.L.K.E.R.
+  path:
+    path: /Audio/_Stalker/bandit_radio.ogg
+    
+- type: jukebox
+  id: RSongNine
+  name: Музыка из бара - S.T.A.L.K.E.R.
+  path:
+    path: /Audio/_Stalker/bar_100_rentgen.ogg
+    
+- type: jukebox
+  id: RSongTem
+  name: Музыка из бара Чистого неба - S.T.A.L.K.E.R.
+  path:
+    path: /Audio/_Stalker/bar_chistoe_nebo.ogg
+    
+- type: jukebox
+  id: RSongEleven
+  name: ЧЁРНЫЙ СТАЛКЕР - MALIW4N
+  path:
+    path: /Audio/_Stalker/cherniy_stalker.ogg

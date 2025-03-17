@@ -7,6 +7,12 @@
   "states": [
     {
       "name": "base"
+    },
+    {
+      "name": "on"
+    },
+    {
+      "name": "select"
     }
   ]
 }
