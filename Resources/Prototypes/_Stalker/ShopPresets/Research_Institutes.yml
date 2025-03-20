@@ -16,7 +16,7 @@
         STWeaponGunAKS74U: 1750
         STWeaponSubMachineGunVityaz: 2250
         STWeaponRifleM16: 3000
-        STWeaponRifleStalkerAK74: 3500
+        STWeaponRifleStalkerAKS74: 3500
     - name: Магазины
       priority: 2
       items:
@@ -62,7 +62,6 @@
         ClothingOuterArmorSSP24Topaz: 2750
         STClothingOuterArmorLightPlateVestBaseANAgray: 2750
         STClothingOuterArmorLightPlateVestBaseANAgreen: 2750
-        ClothingOuterArmorUzk5: 3500
     - name: Хранилища и Контейнеры
       priority: 5
       items:
@@ -122,6 +121,8 @@
         ClothingBackpackDuffelGreenStalkerHydroponic: 500
         Beaker: 40
         Syringe: 20
+        LargeBeaker: 50
+        BaseChemistryEmptyVial: 40
         ClothingGoPro: 250
         ExtendedEmergencyOxygenTankFilledStalker: 50
         TrashDetectorTier1: 200
@@ -175,6 +176,8 @@
         ClothingMaskNeckFacemask: 20
         ClothingHandsGlovesFingerless: 35
         ClothingHandsGlovesMercFingerless: 35
+        ClothingHandsGlovesNitrile: 35
+        ClothingHandsGlovesLatex: 35
         ClothingShoesBootsMerc: 5
         ClothingShoesSwat: 5
         ClothingOuterCoatLab: 5
