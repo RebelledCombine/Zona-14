@@ -7,3 +7,22 @@
   components:
     - type: Paper
       content: book-text-cooking-stalker
+
+- type: entity
+  parent: BookBase
+  id: ArtyfactsGuideStalker
+  name: Сборник артефактов
+  description: Книга написанная цветной ручкой в твёрдом переплёте. На корешке написано "От Студентки♥"
+  suffix: Stalker, гайды, книга, Студентка
+  components:
+    - type: Paper
+      content: book-text-artguide-stalker
+    - type: Sprite
+      sprite: Objects/Misc/books.rsi
+      layers:
+        - state: paper
+        - state: cover_old
+          color: "#8e795c"
+        - state: decor_wingette
+          color: "#453827"
+        - state: icon_stars
