@@ -141,6 +141,20 @@
 
 - type: entity
   parent: BaseMutantPart
+  id: MutantPartBloodsuckerHead
+  name: bloodsucker head
+  components:
+    - type: STWeight
+      self: 6
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/mask/bloodsucker.rsi
+    - type: Item
+      size: Small
+      shape:
+        - 1,1,1,1
+
+- type: entity
+  parent: BaseMutantPart
   id: MutantPartOraculeEye
   name: oracule eye
   components:

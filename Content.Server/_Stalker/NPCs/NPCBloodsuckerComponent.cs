@@ -11,7 +11,7 @@ public sealed partial class NPCBloodsuckerComponent : Component
     public string TargetKey = "Target";
 
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public float AttackRadius = 0.8ff;
+    public float AttackRadius = 1.5f;
 
     [DataField("nextTimeUpdate", customTypeSerializer: typeof(TimeOffsetSerializer))]
     [AutoPausedField]
@@ -29,7 +29,7 @@ public sealed partial class NPCBloodsuckerComponent : Component
     public TimeSpan? EndTime = TimeSpan.FromSeconds(0f);
 
     [DataField, ViewVariables(VVAccess.ReadOnly)]
-    public float ReloadTime = 36f;
+    public float ReloadTime = 12f;
 
     [DataField, ViewVariables(VVAccess.ReadWrite)]
     public float RandomiseReloadTime = 12f;

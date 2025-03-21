@@ -82,9 +82,24 @@ public sealed class NPCBloodsuckerSystem : EntitySystem
             user.Comp.ReloadTime + _random.NextFloat(-user.Comp.RandomiseReloadTime, user.Comp.RandomiseReloadTime)
         );
 
-        _stunSystem.TrySlowdown(target, TimeSpan.FromSeconds(user.Comp.StunTime), false, 0f, 0f); // we want target to stay still all the time
-        _stunSystem.TrySlowdown(user.Owner, TimeSpan.FromSeconds(user.Comp.StunTime), false, 0f, 0f); // we want user to stay still all the time
-        _stunSystem.TryStun(user.Owner, TimeSpan.FromSeconds(user.Comp.StunTime), false); // we dont want bloodsucker to attack while suckin
+        _stunSystem.TrySlowdown(target, TimeSpan.FromSeconds(user.Comp.StunTime + 0.5f), false, 0f, 0f); // we want target to stay still all the time // +0.5 since there is a possibility that mob will attack not enouch times on these delay due to tickrate and serverlag
+        _stunSystem.TrySlowdown(user.Owner, TimeSpan.FromSeconds(user.Comp.StunTime + 0.5f), false, 0f, 0f); // we want user to stay still all the time
+        _stunSystem.TryStun(user.Owner, TimeSpan.FromSeconds(user.Comp.StunTime), false + 0.5f); // we dont want bloodsucker to attack while suckin
+
+        if (TryComp<MobStateComponent>(target, out var mobState) && _mobState.IsAlive(target, mobState))
+        {
+            _damage.TryChangeDamage(target, user.Comp.DamageOnSuck, true, origin: user.Owner); // damage target
+            _damage.TryChangeDamage(user.Owner, user.Comp.HealOnSuck, true, origin: target); // heal user
+
+
+            _audio.PlayPvs(user.Comp.BloodsuckSound, user); // play sound on suck
+            _popup.PopupEntity(Loc.GetString("action-bloodsucker-sucks-blood"), user, Shared.Popups.PopupType.LargeCaution); // popup a message on suck
+            _stunSystem.TryKnockdown(target, TimeSpan.FromSeconds(0.3), false); // knockdown each time on suck (i guess its better be here, since i dont like how easy it is to kill him while he is staying still)
+
+            // camera recoil on suck
+            var kick = new Vector2(_random.NextFloat(), _random.NextFloat()) * user.Comp.ShakeStrength;
+            _sharedCameraRecoil.KickCamera(target, kick);
+        }
     }
 
     // staging, iterating each second (3 seconds of stun = 3 stages, 3 times more damage, etc)
@@ -108,15 +123,11 @@ public sealed class NPCBloodsuckerSystem : EntitySystem
 
             _audio.PlayPvs(user.Comp.BloodsuckSound, user); // play sound on suck
             _popup.PopupEntity(Loc.GetString("action-bloodsucker-sucks-blood"), user, Shared.Popups.PopupType.LargeCaution); // popup a message on suck
-            _stunSystem.TryKnockdown(target, TimeSpan.FromSeconds(0.1), false); // knockdown each time on suck (i guess its better be here, since i dont like how easy it is to kill him while he is staying still)
+            _stunSystem.TryKnockdown(target, TimeSpan.FromSeconds(0.3), false); // knockdown each time on suck (i guess its better be here, since i dont like how easy it is to kill him while he is staying still)
 
             // camera recoil on suck
             var kick = new Vector2(_random.NextFloat(), _random.NextFloat()) * user.Comp.ShakeStrength;
             _sharedCameraRecoil.KickCamera(target, kick);
-
-            // dizzy effect 
-            _dizzy.TryApplyDizziness(target, 0.5f); // 0.5 since this iteration takes 1 second, and we dont want to flash target for all iteration cycles
-            // TODO: rewrite dizzy and implement some stuff like ColorFlashEffectEvent so we can control collors and efffects
         }
 
         user.Comp.CurrentStep++;
