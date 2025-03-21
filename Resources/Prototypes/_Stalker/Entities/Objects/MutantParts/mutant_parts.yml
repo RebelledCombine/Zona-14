@@ -69,7 +69,7 @@
       shape:
         - 0,0,1,0
         - 0,1,0,1
-- 
+
 - type: entity
   parent: BaseMutantPart
   id: MutantPartSeasonedBoarHoof
