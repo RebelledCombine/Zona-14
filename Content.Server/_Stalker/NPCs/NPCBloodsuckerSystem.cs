@@ -82,9 +82,10 @@ public sealed class NPCBloodsuckerSystem : EntitySystem
             user.Comp.ReloadTime + _random.NextFloat(-user.Comp.RandomiseReloadTime, user.Comp.RandomiseReloadTime)
         );
 
-        _stunSystem.TrySlowdown(target, TimeSpan.FromSeconds(user.Comp.StunTime + 0.5f), false, 0f, 0f); // we want target to stay still all the time // +0.5 since there is a possibility that mob will attack not enouch times on these delay due to tickrate and serverlag
-        _stunSystem.TrySlowdown(user.Owner, TimeSpan.FromSeconds(user.Comp.StunTime + 0.5f), false, 0f, 0f); // we want user to stay still all the time
-        _stunSystem.TryStun(user.Owner, TimeSpan.FromSeconds(user.Comp.StunTime), false + 0.5f); // we dont want bloodsucker to attack while suckin
+        float stun = user.Comp.StunTime + 0.5f;
+        _stunSystem.TrySlowdown(target, TimeSpan.FromSeconds(stun), false, 0f, 0f); // we want target to stay still all the time // +0.5 since there is a possibility that mob will attack not enouch times on these delay due to tickrate and serverlag
+        _stunSystem.TrySlowdown(user.Owner, TimeSpan.FromSeconds(stun), false, 0f, 0f); // we want user to stay still all the time
+        _stunSystem.TryStun(user.Owner, TimeSpan.FromSeconds(stun), false); // we dont want bloodsucker to attack while suckin
 
         if (TryComp<MobStateComponent>(target, out var mobState) && _mobState.IsAlive(target, mobState))
         {
