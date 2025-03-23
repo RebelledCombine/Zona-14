@@ -11,12 +11,12 @@
 - type: entity
   parent: BookBase
   id: STArtGuide
-  name: book-text-artguide-stalker.name
-  description: book-text-artguide-stalker.desc
-  suffix: book-text-artguide-stalker.suffix
+  name: Battered book
+  description: A battered hardcover book with "By Ms Student♥" written on the spine.
+  suffix: ST
   components:
     - type: Paper
-      content: book-text-artguide-stalker
+      content: ent-STArtGuide.content
       stampState: paper_stamp-trader
       stampedBy:
       - stampedName: Студентка
