@@ -14,6 +14,7 @@
     - 0,0,4,1
   - type: Sprite
     sprite: _Stalker/Objects/Weapons/Guns/SMGs/vector.rsi
+    scale: 0.75, 0.75
   - type: Clothing
     sprite: _Stalker/Objects/Weapons/Guns/SMGs/vector.rsi
   - type: Gun
@@ -24,6 +25,22 @@
       path: /Audio/_Stalker/Effects/Guns/919.ogg
   - type: ItemSlots
     slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: BaseMP5Mag
+        insertSound: /Audio/Weapons/Guns/MagIn/smg_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/smg_magout.ogg
+        priority: 4
+        whitelist:
+          tags:
+          - MagazineMP5
+        gun_chamber:
+          name: Chamber
+          startingItem: Cartridge919PSOGJ
+          priority: 1
+          whitelist:
+            tags:
+            - Cartridge919
       gun_module_muzzle:
         name: Muzzle
         priority: 3
@@ -54,6 +71,7 @@
     sprite: _Stalker/Objects/Weapons/Guns/SMGs/vector_black.rsi
   - type: Sprite
     sprite: _Stalker/Objects/Weapons/Guns/SMGs/vector_black.rsi
+    scale: 0.75, 0.75
   - type: Clothing
     sprite: _Stalker/Objects/Weapons/Guns/SMGs/vector_black.rsi
 
@@ -68,5 +86,6 @@
     sprite: _Stalker/Objects/Weapons/Guns/SMGs/vector_forest.rsi
   - type: Sprite
     sprite: _Stalker/Objects/Weapons/Guns/SMGs/vector_forest.rsi
+    scale: 0.75, 0.75
   - type: Clothing
     sprite: _Stalker/Objects/Weapons/Guns/SMGs/vector_forest.rsi
