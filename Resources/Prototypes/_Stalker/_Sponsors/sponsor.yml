@@ -79,3 +79,7 @@
       items:
         STWeaponSMGVector9Forest: 4000
         MP5Mag50: 500
+    onlyweed:
+    - name: Персональная категория
+      items:
+        STWeaponRifleAK203: 15000
