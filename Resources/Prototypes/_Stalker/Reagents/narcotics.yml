@@ -57,7 +57,7 @@
       - !type:GenericStatusEffect
         conditions:
         - !type:ReagentThreshold
-          reagent: Nocturine
+          reagent: NocturneSerum
           min: 0.1
         key: ForcedSleep
         component: ForcedSleeping
@@ -91,7 +91,7 @@
   meltingPoint: 170.0
   metabolisms:
     Narcotic:
-      metabolismRate: 1.0
+      metabolismRate: 0.5
       effects:
       - !type:MovespeedModifier
         walkSpeedModifier: 1.1
@@ -122,25 +122,25 @@
         time: 10
         type: Remove
     Medicine:
-      metabolismRate: 1.0
+      metabolismRate: 0.5
       effects:
       - !type:ModifyBloodLevel
         amount: 25
       - !type:ResetNarcolepsy
       - !type:SatiateHunger
-        factor: 10
+        factor: 20
       - !type:SatiateThirst
-        factor: 10
+        factor: 20
       - !type:HealthChange
         conditions:
         - !type:TotalDamage
         damage:
           groups:
-            Burn: -10
-            Brute: -1
-            Airloss: -10
-            Toxin: -10
-            Genetic: -100
+            Burn: -20
+            Brute: -5
+            Airloss: -20
+            Toxin: -20
+            Genetic: -20
           types:
-            Compression: -100
-            Psy: -80
+            Compression: -20
+            Psy: -20
