@@ -23,7 +23,7 @@
           tags:
             - Merc
         - type: Bands
-          altBand: Stalker
+          altBand: stalker
           canChange: true
           band: Stalker
           bandIcon: merc
@@ -70,7 +70,7 @@
             - HeadMerc
             - Merc
         - type: Bands
-          altBand: Stalker
+          altBand: stalker
           canChange: true
           band: Stalker
           bandIcon: merc
