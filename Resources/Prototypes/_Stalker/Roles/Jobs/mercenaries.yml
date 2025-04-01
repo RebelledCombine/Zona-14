@@ -23,10 +23,10 @@
           tags:
             - Merc
         - type: Bands
-          altBand: vagner
+          altBand: stalker
           canChange: true
           band: Stalker
-          bandIcon: merc
+          bandIcon: vagner
         - type: BlockTackingHolyItems
         - type: TeethPull
           teethProto: ToothStalker
