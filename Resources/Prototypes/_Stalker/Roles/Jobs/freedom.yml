@@ -24,7 +24,7 @@
             - Freedom
         - type: Bands
           band: Stalker
-          bandIcon: lnr
+          bandIcon: freedom
         - type: BlockTackingHolyItems
         - type: TeethPull
           teethProto: ToothStalker
@@ -60,7 +60,7 @@
             - FreedomHead
         - type: Bands
           band: Stalker
-          bandIcon: lnr
+          bandIcon: freedom
         - type: BlockTackingHolyItems
 
 - type: startingGear
