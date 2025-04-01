@@ -372,3 +372,26 @@
     hideOnStealth: true
     state: ussr
 
+- type: jobIcon
+  id: uk
+  locationPreference: Right
+  icon:
+    sprite: /Textures/_Stalker/Icons/Patches/band.rsi
+    hideOnStealth: true
+    state: uk
+
+- type: jobIcon
+  id: cn
+  locationPreference: Right
+  icon:
+    sprite: /Textures/_Stalker/Icons/Patches/band.rsi
+    hideOnStealth: true
+    state: cn
+
+- type: jobIcon
+  id: nato
+  locationPreference: Right
+  icon:
+    sprite: /Textures/_Stalker/Icons/Patches/band.rsi
+    hideOnStealth: true
+    state: nato
