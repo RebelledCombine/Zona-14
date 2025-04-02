@@ -7,6 +7,7 @@
     state: band
 
 - type: jobIcon
+  id: sci
   locationPreference: Left
   icon:
     sprite: /Textures/_Stalker/Icons/Patches/band.rsi
