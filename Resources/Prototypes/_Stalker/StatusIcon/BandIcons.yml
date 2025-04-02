@@ -7,7 +7,6 @@
     state: band
 
 - type: jobIcon
-  id: sci
   locationPreference: Left
   icon:
     sprite: /Textures/_Stalker/Icons/Patches/band.rsi
@@ -381,12 +380,12 @@
     state: uk
 
 - type: jobIcon
-  id: cn
+  id: china
   locationPreference: Right
   icon:
     sprite: /Textures/_Stalker/Icons/Patches/band.rsi
     hideOnStealth: true
-    state: cn
+    state: china
 
 - type: jobIcon
   id: nato
