@@ -2,7 +2,7 @@
   name: постовой СОП
   suffix: Stalker, Т5
   parent: BaseMobMutant
-  id: MobStalkerMilitary
+  id: MobStalkerMilitaryGuard
   description:
   components:
   - type: Stamina
