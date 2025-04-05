@@ -161,7 +161,6 @@
         ClothingBeltTarzanBlack: 200 # T1 - PVP
         ClothingBeltTarzanGreen: 200 # T1 - PVP
         ClothingBeltTarzanOrange: 200 # T1 - PVP
-        ClothingBeltVoron: 560 # T2 - PVP
           # Containers
         MedkitCMSStalker: 450 # T1
         MedkitGrizzlyStalker: 850 # T2
@@ -171,7 +170,7 @@
           # Cloaks
         ClothingOuterCoatDoshdevik: 60 # T1
         ClothingOuterCoatStalker: 350 # T2
-        STClothingCapeArmorChainmailSeva: 2500 # T3
+        STClothingCapeArmorChainmailSeva: 2500 # T4
           # Gasmasks
         ClothingMaskGasZarya: 100 # T1
         ClothingMaskGP5: 200 # T2
@@ -205,7 +204,7 @@
         CheapLighter: 5
         GeigerCounter: 50
         BaseRadio: 50
-        FlashlightSeclite: 50
+        STFlashlightSeclite: 50
         PowerCellHyper: 50
         HandheldGPSBasic: 50
         Paper: 2
