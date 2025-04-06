@@ -42,7 +42,7 @@
         - ReagentId: Fat
           Quantity: 4
   - type: Trash
-    time: 30
+    time: 300
 
 - type: reagent
   id: MRadin
