@@ -1,6 +1,19 @@
 - type: shopPreset
   id: BandsShopPreset
   itemsForSale:
+    #detectr
+    ZoneArtifactDetectorSpruce: 1200
+    ZoneArtifactDetectorBarracuda: 2500
+    ZoneArtifactDetectorBear: 5000
+    ZoneArtifactDetectorWolfhound: 10000 #т5
+    #organs
+    OrganHumanBrain: 500
+    OrganHumanEyes: 400
+    OrganHumanLungs: 800
+    OrganHumanHeart: 1200
+    OrganHumanStomach: 600
+    OrganHumanLiver: 1500
+    OrganHumanKidneys: 3000 #ПОЧКИ!!!
     # values
     IngotGold1: 750
     IngotSilver1: 500
@@ -275,7 +288,6 @@
       items:
         STBoltBagFilled: 50
         BoxArtcont: 500 # T1
-        ZoneAnomalyDetectorAD1: 450 # T1
           # Detectors
         ZoneArtifactDetectorPulse: 100 # T1
         ZoneArtifactDetectorHunter: 400 # T2
