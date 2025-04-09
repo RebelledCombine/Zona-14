@@ -16,11 +16,14 @@ public sealed partial class STWarZonePrototype : IPrototype
     public float RewardPointsPerPeriod { get; set; } = default!;
 
     [DataField, ViewVariables]
-    public TimeSpan RewardPeriod { get; set; } = default!;
+    public int RewardPeriod { get; set; } = default!;
 
     [DataField]
     public HashSet<BaseWarZoneRequirenment>? Requirements;
 
     [DataField]
     public int CaptureCooldownHours { get; set; } = 12;
+
+    [DataField]
+    public bool ShouldAwardWhenDefenderPresent { get; set; } = false;
 }

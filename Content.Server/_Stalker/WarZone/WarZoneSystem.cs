@@ -43,6 +43,7 @@ public sealed partial class WarZoneSystem : EntitySystem
         // Removed MobStateChangedEvent subscription due to missing type
 
         _ = SyncFactionsAndBandsWithDatabase();
+        _ = InitializeAllZonesAsync(); // Added to initialize reward times for all zones
     }
 
     public override void Update(float frameTime)
@@ -277,9 +278,6 @@ public sealed partial class WarZoneSystem : EntitySystem
         // Convert the period from seconds to TimeSpan
         var period = TimeSpan.FromSeconds(wzProto.RewardPeriod);
 
-        // Debug message to help track reward distribution
-        Logger.DebugS("warzone", $"Zone {wzComp.PortalName}: Time diff = {(now - lastRewardTime).TotalSeconds}s, Required period = {period.TotalSeconds}s");
-
         if (now - lastRewardTime < period)
             return;
 
@@ -287,8 +285,10 @@ public sealed partial class WarZoneSystem : EntitySystem
             return;
 
         // Only award points if there is a defender
-        if (state.DefendingBandId == null && state.DefendingFactionId == null)
-            return; var points = wzProto.RewardPointsPerPeriod;
+        if (state.DefendingBandId == null && state.DefendingFactionId == null && !wzProto.ShouldAwardWhenDefenderPresent)
+            return; 
+            
+        var points = wzProto.RewardPointsPerPeriod;
         bool rewarded = false;
 
         if (state.DefendingBandId.HasValue)
@@ -500,6 +500,59 @@ public sealed partial class WarZoneSystem : EntitySystem
         catch (Exception ex)
         {
             Logger.ErrorS("warzone", $"Error syncing factions/bands with DB: {ex}");
+        }
+    }
+
+    private async Task InitializeAllZonesAsync()
+    {
+        try
+        {
+            // Find all zone entities in the world
+            var zones = new HashSet<EntityUid>();
+            var query = EntityQueryEnumerator<WarZoneComponent>();
+            
+            // First pass - collect all zone entities
+            while (query.MoveNext(out var uid, out var component))
+            {
+                zones.Add(uid);
+                
+                // Create a state for this zone if not exists
+                if (!_activeCaptures.TryGetValue(uid, out var state))
+                {
+                    state = new CaptureState { InitialLoadComplete = false };
+                    _activeCaptures[uid] = state;
+                    
+                    // Load the zone state asynchronously
+                    _ = LoadInitialZoneStateAsync(uid, component.ZoneProto, state);
+                }
+                
+                // Load ownership and last capture time data from DB
+                var ownership = await _dbManager.GetStalkerWarOwnershipAsync(component.ZoneProto);
+                if (ownership != null)
+                {
+                    // Set up reward times for zones that have owners
+                    if (ownership.BandId != null || ownership.FactionId != null)
+                    {
+                        // Initialize last reward time to either:
+                        // 1. The last captured time from DB, or
+                        // 2. Current time if no capture time exists (to start rewards immediately)
+                        var lastRewardTime = ownership.LastCapturedByCurrentOwnerAt.HasValue
+                            ? _gameTiming.CurTime - (DateTime.UtcNow - ownership.LastCapturedByCurrentOwnerAt.Value)
+                            : _gameTiming.CurTime;
+                        
+                        _lastRewardTimes[uid] = lastRewardTime;
+                        
+                        Logger.InfoS("warzone", $"Initialized reward timing for zone '{component.PortalName}', " +
+                                           $"owned by {(ownership.BandId != null ? $"band:{ownership.BandId}" : $"faction:{ownership.FactionId}")}");
+                    }
+                }
+            }
+            
+            Logger.InfoS("warzone", $"Initialized {zones.Count} war zones with {_lastRewardTimes.Count} reward timers");
+        }
+        catch (Exception ex)
+        {
+            Logger.ErrorS("warzone", $"Error initializing war zones: {ex}");
         }
     }
 
