@@ -11,7 +11,7 @@ public sealed partial class ZoneOwnershipRequirenment : BaseWarZoneRequirenment
     [DataField("requiredZones")]
     public List<ProtoId<STWarZonePrototype>> RequiredZones = new();
 
-    public override bool Check(
+    public override CaptureBlockReason Check(
         int? attackerBand,
         int? attackerFaction,
         Dictionary<ProtoId<STWarZonePrototype>, (int? BandId, int? FactionId)> ownerships,
@@ -23,7 +23,7 @@ public sealed partial class ZoneOwnershipRequirenment : BaseWarZoneRequirenment
         foreach (var zoneId in RequiredZones)
         {
             if (!ownerships.TryGetValue(zoneId, out var owner))
-                return false;
+                return CaptureBlockReason.Ownership;
 
             var owns = false;
             if (attackerBand != null && owner.BandId == attackerBand)
@@ -32,7 +32,7 @@ public sealed partial class ZoneOwnershipRequirenment : BaseWarZoneRequirenment
                 owns = true;
 
             if (!owns)
-                return false;
+                return CaptureBlockReason.Ownership;
         }
 
         // Check capture cooldown for this zone
@@ -43,10 +43,10 @@ public sealed partial class ZoneOwnershipRequirenment : BaseWarZoneRequirenment
             var cooldown = TimeSpan.FromHours(proto.CaptureCooldownHours);
             if (DateTime.UtcNow - lastCaptureTime < cooldown)
             {
-                return false;
+                return CaptureBlockReason.Cooldown;
             }
         }
 
-        return true;
+        return CaptureBlockReason.None;
     }
 }

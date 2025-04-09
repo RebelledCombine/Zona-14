@@ -14,7 +14,7 @@ public sealed partial class CaptureTimeRequirenment : BaseWarZoneRequirenment
     [NonSerialized]
     public float ProgressSeconds = 0f;
 
-    public override bool Check(
+    public override CaptureBlockReason Check(
         int? attackerBand,
         int? attackerFaction,
         Dictionary<ProtoId<STWarZonePrototype>, (int? BandId, int? FactionId)> ownerships,
@@ -24,7 +24,7 @@ public sealed partial class CaptureTimeRequirenment : BaseWarZoneRequirenment
         float frameTime)
     {
         ProgressSeconds += frameTime;
-        return ProgressSeconds >= CaptureTime;
+        return ProgressSeconds >= CaptureTime ? CaptureBlockReason.None : CaptureBlockReason.CaptureTime;
     }
 
     public void Reset()

@@ -9,7 +9,7 @@ namespace Content.Shared._Stalker.WarZone.Requirenments;
 [Serializable, NetSerializable]
 public abstract partial class BaseWarZoneRequirenment
 {
-    public abstract bool Check(
+    public abstract CaptureBlockReason Check(
         int? attackerBand,
         int? attackerFaction,
         Dictionary<ProtoId<STWarZonePrototype>, (int? BandId, int? FactionId)> ownerships,

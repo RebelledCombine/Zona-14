@@ -79,7 +79,11 @@ public sealed partial class WarZoneSystem : EntitySystem
 
             if (state.CurrentAttackerBandId != null || state.CurrentAttackerFactionId != null)
             {
-                _chatManager.DispatchServerAnnouncement($"Capture attempt on '{wzComp.PortalName}' was abandoned!");
+                // Only announce abandonment if the current attacker is not the defender (i.e., capture wasn't just completed)
+                if (state.CurrentAttackerBandId != state.DefendingBandId || state.CurrentAttackerFactionId != state.DefendingFactionId)
+                {
+                    _chatManager.DispatchServerAnnouncement($"Capture attempt on '{wzComp.PortalName}' was abandoned!");
+                }
                 state.CurrentAttackerBandId = null;
                 state.CurrentAttackerFactionId = null;
                 state.PresentBandIds.Clear();
@@ -151,18 +155,27 @@ public sealed partial class WarZoneSystem : EntitySystem
 
         if (wzProto.Requirements != null)
         {
+            CaptureBlockReason blockReason = CaptureBlockReason.None;
             foreach (var req in wzProto.Requirements)
             {
-                if (!req.Check(attackerBand, attackerFaction, ownerships, lastCaptureTimes, zonePrototypes, wzComp.ZoneProto, frameTimeSec))
+                blockReason = req.Check(attackerBand, attackerFaction, ownerships, lastCaptureTimes, zonePrototypes, wzComp.ZoneProto, frameTimeSec);
+                if (blockReason != CaptureBlockReason.None)
                 {
                     allMet = false;
                     break;
                 }
+    
+                if (!allMet)
+                {
+                    if (blockReason == CaptureBlockReason.Cooldown)
+                    {
+                        // TODO: Send local message to attacker instead?
+                        _chatManager.DispatchServerAnnouncement($"Zone '{wzComp.PortalName}' is on capture cooldown!");
+                    }
+                    return;
+                }
             }
         }
-
-        if (!allMet)
-            return;
 
         state.DefendingBandId = attackerBand;
         state.DefendingFactionId = attackerFaction;
