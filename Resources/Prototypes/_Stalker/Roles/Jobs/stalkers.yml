@@ -64,7 +64,7 @@
 - type: stBand
   id: STStalkerBand
   name: Stalker
-  faction: Stalker
+  factionId: Stalker
   maxMembers: 10000
   managingRankId: 999
   databaseId: 1
