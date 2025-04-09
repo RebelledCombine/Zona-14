@@ -231,6 +231,7 @@
         918PGJBox: 65
         918PSTBox: 170
         918PBMBox: 200
+
     - name: shop-category-armor
       priority: 4
       items:
