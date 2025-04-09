@@ -12,6 +12,7 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
 using Robust.Shared.Physics.Events;
 using Content.Server.Chat.Managers;
+using Content.Server.Popups; // Added for PopupEntity
 using Content.Shared.Physics;
 using Content.Shared.Mobs;
 using Content.Shared._Stalker.Bands;
@@ -26,6 +27,7 @@ public sealed partial class WarZoneSystem : EntitySystem
     [Dependency] private readonly IEntityManager _entityManager = default!;
     [Dependency] private readonly IServerDbManager _dbManager = default!;
     [Dependency] private readonly IChatManager _chatManager = default!;
+    [Dependency] private readonly PopupSystem _popup = default!; // Added dependency
 
     private readonly Dictionary<EntityUid, CaptureState> _activeCaptures = new();
     private readonly Dictionary<EntityUid, TimeSpan> _lastRewardTimes = new();
@@ -80,9 +82,13 @@ public sealed partial class WarZoneSystem : EntitySystem
             if (state.CurrentAttackerBandId != null || state.CurrentAttackerFactionId != null)
             {
                 // Only announce abandonment if the current attacker is not the defender (i.e., capture wasn't just completed)
-                if (state.CurrentAttackerBandId != state.DefendingBandId || state.CurrentAttackerFactionId != state.DefendingFactionId)
+                // Only announce abandonment if the current attacker is not the defender (i.e., capture wasn't just completed)
+                // AND if there was actually an attacker defined before they left.
+                if ((state.CurrentAttackerBandId != state.DefendingBandId || state.CurrentAttackerFactionId != state.DefendingFactionId) &&
+                    (state.CurrentAttackerBandId != null || state.CurrentAttackerFactionId != null))
                 {
-                    _chatManager.DispatchServerAnnouncement($"Capture attempt on '{wzComp.PortalName}' was abandoned!");
+                    string attackerName = GetAttackerName(state.CurrentAttackerBandId, state.CurrentAttackerFactionId);
+                    _chatManager.DispatchServerAnnouncement($"Capture attempt on '{wzComp.PortalName}' by {attackerName} was abandoned!");
                 }
                 state.CurrentAttackerBandId = null;
                 state.CurrentAttackerFactionId = null;
@@ -114,7 +120,8 @@ public sealed partial class WarZoneSystem : EntitySystem
             state.CurrentAttackerBandId = attackerBand;
             state.CurrentAttackerFactionId = attackerFaction;
 
-            var announce = $"Capture attempt started on '{wzComp.PortalName}'!";
+            string attackerName = GetAttackerName(attackerBand, attackerFaction);
+            var announce = $"Capture attempt by {attackerName} started on '{wzComp.PortalName}'!";
             _chatManager.DispatchServerAnnouncement(announce);
         }
 
@@ -167,10 +174,12 @@ public sealed partial class WarZoneSystem : EntitySystem
     
                 if (!allMet)
                 {
+                    // Cooldown message is now handled locally via Popup in OnStartCollide
+                    // The capture attempt will simply not progress here if requirements aren't met.
+                    // We can potentially add more detailed feedback later if needed.
                     if (blockReason == CaptureBlockReason.Cooldown)
                     {
-                        // TODO: Send local message to attacker instead?
-                        _chatManager.DispatchServerAnnouncement($"Zone '{wzComp.PortalName}' is on capture cooldown!");
+                        // No server announcement needed anymore.
                     }
                     return;
                 }
@@ -219,7 +228,15 @@ public sealed partial class WarZoneSystem : EntitySystem
             bandProtoId,
             factionProtoId);
 
-        var msg = $"Zone '{wzComp.PortalName}' captured!";
+        // Update cooldown end time
+        // Use CaptureCooldownHours and convert to TimeSpan
+        if (_activeCaptures.TryGetValue(zone, out var captureState) && wzProto.CaptureCooldownHours > 0)
+        {
+            captureState.CooldownEndTime = _gameTiming.CurTime + TimeSpan.FromHours(wzProto.CaptureCooldownHours);
+        }
+
+        string defenderName = GetAttackerName(state.DefendingBandId, state.DefendingFactionId);
+        var msg = $"Zone '{wzComp.PortalName}' captured by {defenderName}!";
         _chatManager.DispatchServerAnnouncement(msg);
     }
 
@@ -319,6 +336,19 @@ public sealed partial class WarZoneSystem : EntitySystem
             _activeCaptures[uid] = state;
         }
 
+        // Check for cooldown before adding entity to capture state
+        var now = _gameTiming.CurTime;
+        if (state.CooldownEndTime.HasValue && now < state.CooldownEndTime.Value)
+        {
+            var remainingTime = state.CooldownEndTime.Value - now;
+            // Use component.PortalName which should be available here via the 'component' parameter
+            var portalName = component.PortalName ?? "Unknown Zone"; // Use null-coalescing for safety
+            var message = $"Zone '{portalName}' is on cooldown. Next capture available in {remainingTime.TotalMinutes:F1} minutes.";
+            _popup.PopupEntity(message, other);
+            // Optionally, we could return here to prevent adding the entity if the zone is on cooldown,
+            // but for now, just notify them. The UpdateCaptureAsync logic will prevent progress anyway.
+        }
+
         if (bandDbId.HasValue)
             state.PresentBandIds.Add(bandDbId.Value);
         if (factionDbId.HasValue)
@@ -394,9 +424,12 @@ public sealed partial class WarZoneSystem : EntitySystem
             {
                 ResetAllRequirements(zone);
 
-                if (_entityManager.TryGetComponent(zone, out WarZoneComponent? wzComp))
+                // Announce abandonment only if there was a current attacker defined before they left/died.
+                if ((state.CurrentAttackerBandId != null || state.CurrentAttackerFactionId != null) &&
+                    _entityManager.TryGetComponent(zone, out WarZoneComponent? wzComp))
                 {
-                    _chatManager.DispatchServerAnnouncement($"Capture attempt on '{wzComp.PortalName}' was abandoned!");
+                    string attackerName = GetAttackerName(state.CurrentAttackerBandId, state.CurrentAttackerFactionId);
+                    _chatManager.DispatchServerAnnouncement($"Capture attempt on '{wzComp.PortalName}' by {attackerName} was abandoned!");
                 }
 
                 state.CurrentAttackerBandId = null;
@@ -435,6 +468,32 @@ public sealed partial class WarZoneSystem : EntitySystem
         }
     }
 
+    // Moved from inside SyncFactionsAndBandsWithDatabase
+    private string GetAttackerName(int? bandId, int? factionId)
+    {
+        if (bandId.HasValue)
+        {
+            foreach (var bandProto in _prototypeManager.EnumeratePrototypes<STBandPrototype>())
+            {
+                if (bandProto.DatabaseId == bandId.Value)
+                {
+                    return bandProto.Name;
+                }
+            }
+        }
+        else if (factionId.HasValue)
+        {
+            foreach (var factionProto in _prototypeManager.EnumeratePrototypes<NpcFactionPrototype>())
+            {
+                if (factionProto.DatabaseId == factionId.Value)
+                {
+                    return factionProto.ID; // Use ID instead of Name
+                }
+            }
+        }
+        return "Unknown";
+    }
+
     private sealed class CaptureState
     {
         public int? DefendingBandId;
@@ -442,6 +501,8 @@ public sealed partial class WarZoneSystem : EntitySystem
 
         public int? CurrentAttackerBandId;
         public int? CurrentAttackerFactionId;
+
+        public TimeSpan? CooldownEndTime; // Added field
 
         public HashSet<int> PresentBandIds = new();
         public HashSet<int> PresentFactionIds = new();
