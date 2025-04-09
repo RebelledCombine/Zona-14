@@ -242,6 +242,8 @@
         - Stalker
     - type: Bands
       band: Stalker
+      bandProto: STStalkerBand
+      bandRankId: 1
       bandIcon: stalker
     - type: Loadout
       prototypes: [ StalkerGear ]
@@ -262,6 +264,8 @@
         - Stalker
     - type: Bands
       band: Stalker
+      bandProto: STStalkerBand
+      bandRankId: 1
       bandIcon: stalker
     - type: Loadout
       prototypes: [ StalkerGearT4 ]
