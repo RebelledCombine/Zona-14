@@ -5,7 +5,9 @@ using Content.Shared._Stalker.Bands;
 using Content.Shared.Database; // For PlayerRecord, RoleWhitelist
 using Content.Shared.Eui;
 using Content.Shared.Roles; // For JobPrototype
+using Content.Server.UserInterface;
 using Robust.Server.GameObjects;
+using Robust.Server.Player;
 using Robust.Shared.Network; // For NetUserId
 using Robust.Shared.Prototypes; // For IPrototypeManager
 using System.Collections.Generic;

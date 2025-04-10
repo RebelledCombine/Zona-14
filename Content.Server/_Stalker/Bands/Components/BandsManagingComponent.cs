@@ -1,5 +1,6 @@
 using Robust.Shared.GameStates;
 using Robust.Shared.Serialization;
+using Robust.Shared.Serialization.TypeSerializers.Implementations;
 using System; // For Enum
 
 namespace Content.Server._Stalker.Bands.Components
