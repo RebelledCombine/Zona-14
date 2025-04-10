@@ -65,7 +65,7 @@ namespace Content.Client._Stalker.Bands.UI
                         HorizontalAlignment = HAlignment.Right
                     };
 
-                    var memberId = member.PlayerUserId;
+                    var memberId = member.UserId;
                     removeButton.OnPressed += _ => OnRemoveMemberButtonPressed?.Invoke(memberId);
 
                     memberBox.AddChild(nameLabel);

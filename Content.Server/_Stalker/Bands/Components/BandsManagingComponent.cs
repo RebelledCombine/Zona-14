@@ -14,7 +14,7 @@ namespace Content.Server._Stalker.Bands.Components
         /// <summary>
         /// The BUI key used for this component.
         /// </summary>
-        [DataField("uiKey", customTypeSerializer: typeof(EnumSerializer<BandsManagingUiKey>))]
+        [DataField("uiKey", customTypeSerializer: typeof(EnumSerializer))]
         public Enum UiKey = BandsManagingUiKey.Key;
     }
 
