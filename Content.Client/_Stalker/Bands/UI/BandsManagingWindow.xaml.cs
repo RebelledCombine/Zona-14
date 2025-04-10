@@ -5,6 +5,7 @@ using Robust.Client.UserInterface;
 using Robust.Client.UserInterface.Controls;
 using Robust.Client.UserInterface.XAML;
 using System;
+using Robust.Client.UserInterface.Controls;
 
 namespace Content.Client._Stalker.Bands.UI
 {
@@ -46,7 +47,7 @@ namespace Content.Client._Stalker.Bands.UI
                 {
                     var memberBox = new BoxContainer
                     {
-                        Orientation = LayoutOrientation.Horizontal,
+                        Orientation = BoxContainer.LayoutOrientation.Horizontal,
                         HorizontalExpand = true,
                         Margin = new Thickness(0, 2)
                     };

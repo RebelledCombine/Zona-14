@@ -216,7 +216,7 @@ namespace Content.Server._Stalker.Bands
                 foreach (var playerRole in playerRoles)
                 {
                     var playerRank = band.Hierarchy.FirstOrDefault(kvp => kvp.Value.Id == playerRole.RoleId);
-                    if (playerRank.Value != default &amp;&amp; playerRank.Key < managingRankKey) // Lower key means higher rank
+                    if (playerRank.Value != default && playerRank.Key < managingRankKey) // Lower key means higher rank
                     {
                         return true;
                     }
