@@ -134,7 +134,7 @@
 
     #7.62x25
     WeaponPistolStalkerTT: 125
-    STWeaponPPsh: 1250
+    STWeaponPPsh: 600
 
     #9x39
     STWeaponRifleStalkerVAL: 7500
