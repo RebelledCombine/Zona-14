@@ -10,9 +10,9 @@ namespace Content.Shared._Stalker.WarZone.Requirenments;
 public abstract partial class BaseWarZoneRequirenment
 {
     public abstract CaptureBlockReason Check(
-        int? attackerBand,
-        int? attackerFaction,
-        Dictionary<ProtoId<STWarZonePrototype>, (int? BandId, int? FactionId)> ownerships,
+        string? attackerBandProtoId,
+        string? attackerFactionProtoId,
+        Dictionary<ProtoId<STWarZonePrototype>, (string? BandProtoId, string? FactionProtoId)> ownerships,
         Dictionary<ProtoId<STWarZonePrototype>, DateTime?> lastCaptureTimes,
         Dictionary<ProtoId<STWarZonePrototype>, STWarZonePrototype> zonePrototypes,
         ProtoId<STWarZonePrototype> currentZoneId,

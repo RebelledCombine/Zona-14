@@ -16,16 +16,16 @@ public sealed partial class WarZoneComponent : Component
     public ProtoId<STWarZonePrototype> ZoneProto;
 
     [DataField, ViewVariables(VVAccess.ReadOnly)]
-    public int? DefendingBandId = null;
+    public string? DefendingBandProtoId = null;
 
     [DataField, ViewVariables(VVAccess.ReadOnly)]
-    public int? DefendingFactionId = null;
+    public string? DefendingFactionProtoId = null;
 
     [DataField, ViewVariables(VVAccess.ReadOnly)]
-    public int? CurrentAttackerBandId = null;
+    public string? CurrentAttackerBandProtoId = null;
 
     [DataField, ViewVariables(VVAccess.ReadOnly)]
-    public int? CurrentAttackerFactionId = null;
+    public string? CurrentAttackerFactionProtoId = null;
 
     [DataField, ViewVariables(VVAccess.ReadOnly)]
     public TimeSpan? CooldownEndTime = null;
@@ -34,8 +34,8 @@ public sealed partial class WarZoneComponent : Component
     public bool InitialLoadComplete = false;
 
     [DataField, ViewVariables(VVAccess.ReadOnly)]
-    public HashSet<int> PresentBandIds = new();
+    public HashSet<string> PresentBandProtoIds = new();
 
     [DataField, ViewVariables(VVAccess.ReadOnly)]
-    public HashSet<int> PresentFactionIds = new();
+    public HashSet<string> PresentFactionProtoIds = new();
 }

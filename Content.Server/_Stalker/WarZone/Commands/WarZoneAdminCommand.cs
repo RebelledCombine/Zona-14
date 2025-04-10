@@ -20,10 +20,10 @@ public sealed class WarZoneAdminCommand : IConsoleCommand
     public string Command => "warzoneadmin";
     public string Description => "Admin command to modify warzone points and ownership.";
     public string Help => "Usage:\n" +
-                          "warzoneadmin setpoints band <dbid> <points>\n" +
-                          "warzoneadmin setpoints faction <dbid> <points>\n" +
-                          "warzoneadmin setowner <zoneProtoId> band <dbid>\n" +
-                          "warzoneadmin setowner <zoneProtoId> faction <dbid>\n" +
+                          "warzoneadmin setpoints band <bandProtoId> <points>\n" +
+                          "warzoneadmin setpoints faction <factionProtoId> <points>\n" +
+                          "warzoneadmin setowner <zoneProtoId> band <bandProtoId>\n" +
+                          "warzoneadmin setowner <zoneProtoId> faction <factionProtoId>\n" +
                           "warzoneadmin clearowner <zoneProtoId>";
 
     public async void Execute(IConsoleShell shell, string argStr, string[] args)
@@ -45,11 +45,7 @@ public sealed class WarZoneAdminCommand : IConsoleCommand
             }
 
             var target = args[1];
-            if (!int.TryParse(args[2], out var dbid))
-            {
-                shell.WriteLine("Invalid dbid.");
-                return;
-            }
+            var protoId = args[2];
 
             if (!int.TryParse(args[3], out var points))
             {
@@ -59,31 +55,15 @@ public sealed class WarZoneAdminCommand : IConsoleCommand
 
             if (target == "band")
             {
-                warZoneSystem.SetBandPoints(dbid, points);
-                foreach (var bandProto in _prototypeManager.EnumeratePrototypes<Content.Shared._Stalker.Bands.STBandPrototype>())
-                {
-                    if (bandProto.DatabaseId == dbid)
-                    {
-                        await _dbManager.SetStalkerBandAsync(bandProto.ID, points);
-                        shell.WriteLine($"Set band {dbid} points to {points}");
-                        return;
-                    }
-                }
-                shell.WriteLine($"Band with dbid {dbid} not found.");
+                warZoneSystem.SetBandPoints(protoId, points);
+                await _dbManager.SetStalkerBandAsync(protoId, points);
+                shell.WriteLine($"Set band '{protoId}' points to {points}");
             }
             else if (target == "faction")
             {
-                warZoneSystem.SetFactionPoints(dbid, points);
-                foreach (var factionProto in _prototypeManager.EnumeratePrototypes<Content.Shared.NPC.Prototypes.NpcFactionPrototype>())
-                {
-                    if (factionProto.DatabaseId == dbid)
-                    {
-                        await _dbManager.SetStalkerFactionAsync(factionProto.ID, points);
-                        shell.WriteLine($"Set faction {dbid} points to {points}");
-                        return;
-                    }
-                }
-                shell.WriteLine($"Faction with dbid {dbid} not found.");
+                warZoneSystem.SetFactionPoints(protoId, points);
+                await _dbManager.SetStalkerFactionAsync(protoId, points);
+                shell.WriteLine($"Set faction '{protoId}' points to {points}");
             }
             else
             {
@@ -93,62 +73,6 @@ public sealed class WarZoneAdminCommand : IConsoleCommand
             return;
         }
 
-        if (args[0] == "setpoints")
-        {
-            if (args.Length != 3)
-            {
-                shell.WriteLine(Help);
-                return;
-            }
-
-            var target = args[1];
-            if (!int.TryParse(args[2], out var dbid))
-            {
-                shell.WriteLine("Invalid dbid.");
-                return;
-            }
-
-            if (!int.TryParse(args[3], out var points))
-            {
-                shell.WriteLine("Invalid points value.");
-                return;
-            }
-
-            if (target == "band")
-            {
-                warZoneSystem.SetBandPoints(dbid, points);
-                foreach (var bandProto in _prototypeManager.EnumeratePrototypes<Content.Shared._Stalker.Bands.STBandPrototype>())
-                {
-                    if (bandProto.DatabaseId == dbid)
-                    {
-                        await _dbManager.SetStalkerBandAsync(bandProto.ID, points);
-                        shell.WriteLine($"Set band {dbid} points to {points}");
-                        return;
-                    }
-                }
-                shell.WriteLine($"Band with dbid {dbid} not found.");
-            }
-            else if (target == "faction")
-            {
-                warZoneSystem.SetFactionPoints(dbid, points);
-                foreach (var factionProto in _prototypeManager.EnumeratePrototypes<Content.Shared.NPC.Prototypes.NpcFactionPrototype>())
-                {
-                    if (factionProto.DatabaseId == dbid)
-                    {
-                        await _dbManager.SetStalkerFactionAsync(factionProto.ID, points);
-                        shell.WriteLine($"Set faction {dbid} points to {points}");
-                        return;
-                    }
-                }
-                shell.WriteLine($"Faction with dbid {dbid} not found.");
-            }
-            else
-            {
-                shell.WriteLine(Help);
-            }
-
-            return;
-        }
 
         if (args[0] == "setowner")
         {
@@ -161,11 +85,7 @@ public sealed class WarZoneAdminCommand : IConsoleCommand
             var zoneProtoId = args[1];
             var target = args[2];
 
-            if (!int.TryParse(args[3], out var dbid))
-            {
-                shell.WriteLine("Invalid dbid.");
-                return;
-            }
+            var protoId = args[3];
 
             WarZoneComponent? foundComp = null;
             foreach (var (_, wzComp) in warZoneSystem.GetAllWarZones())
@@ -188,43 +108,15 @@ public sealed class WarZoneAdminCommand : IConsoleCommand
 
             if (target == "band")
             {
-                foundComp.DefendingBandId = dbid;
-                foundComp.DefendingFactionId = null;
-
-                foreach (var bandProto in _prototypeManager.EnumeratePrototypes<Content.Shared._Stalker.Bands.STBandPrototype>())
-                {
-                    if (bandProto.DatabaseId == dbid)
-                    {
-                        bandProtoId = bandProto.ID;
-                        break;
-                    }
-                }
-
-                if (bandProtoId == null)
-                {
-                    shell.WriteLine($"Band with dbid {dbid} not found.");
-                    return;
-                }
+                foundComp.DefendingBandProtoId = protoId;
+                foundComp.DefendingFactionProtoId = null;
+                bandProtoId = protoId;
             }
             else if (target == "faction")
             {
-                foundComp.DefendingBandId = null;
-                foundComp.DefendingFactionId = dbid;
-
-                foreach (var factionProto in _prototypeManager.EnumeratePrototypes<Content.Shared.NPC.Prototypes.NpcFactionPrototype>())
-                {
-                    if (factionProto.DatabaseId == dbid)
-                    {
-                        factionProtoId = factionProto.ID;
-                        break;
-                    }
-                }
-
-                if (factionProtoId == null)
-                {
-                    shell.WriteLine($"Faction with dbid {dbid} not found.");
-                    return;
-                }
+                foundComp.DefendingBandProtoId = null;
+                foundComp.DefendingFactionProtoId = protoId;
+                factionProtoId = protoId;
             }
             else
             {
@@ -233,7 +125,7 @@ public sealed class WarZoneAdminCommand : IConsoleCommand
             }
 
             await _dbManager.SetStalkerZoneOwnershipAsync(zoneProtoId, bandProtoId, factionProtoId);
-            shell.WriteLine($"Set owner of warzone {zoneProtoId} to {target} {dbid}");
+            shell.WriteLine($"Set owner of warzone {zoneProtoId} to {target} '{protoId}'");
             return;
         }
 
@@ -263,8 +155,8 @@ public sealed class WarZoneAdminCommand : IConsoleCommand
                 return;
             }
 
-            foundComp.DefendingBandId = null;
-            foundComp.DefendingFactionId = null;
+            foundComp.DefendingBandProtoId = null;
+            foundComp.DefendingFactionProtoId = null;
             foundComp.CooldownEndTime = null;
 
             await _dbManager.ClearStalkerZoneOwnershipAsync(zoneProtoId);

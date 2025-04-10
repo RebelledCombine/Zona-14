@@ -45,9 +45,4 @@ public sealed class STBandPrototype : IPrototype
     [DataField]
     public int? ManagingRankId { get; set; } = null;
 
-    /// <summary>
-    /// The database ID for this band. This is used to match the band with its database record.
-    /// </summary>
-    [DataField]
-    public int DatabaseId { get; set; } = 0;
 }

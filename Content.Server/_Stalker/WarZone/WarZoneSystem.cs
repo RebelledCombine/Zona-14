@@ -28,22 +28,22 @@ public sealed partial class WarZoneSystem : EntitySystem
     [Dependency] private readonly IChatManager _chatManager = default!;
     [Dependency] private readonly PopupSystem _popup = default!;
 
-    private readonly Dictionary<int, float> _bandPoints = new();
-    private readonly Dictionary<int, float> _factionPoints = new();
+    private readonly Dictionary<string, float> _bandPoints = new();
+    private readonly Dictionary<string, float> _factionPoints = new();
     private readonly Dictionary<EntityUid, TimeSpan> _lastRewardTimes = new();
 
-    public IReadOnlyDictionary<int, float> BandPoints => _bandPoints;
-    public IReadOnlyDictionary<int, float> FactionPoints => _factionPoints;
+    public IReadOnlyDictionary<string, float> BandPoints => _bandPoints;
+    public IReadOnlyDictionary<string, float> FactionPoints => _factionPoints;
     public TimeSpan CurrentTime => _gameTiming.CurTime;
 
-    public void SetBandPoints(int dbid, float points)
+    public void SetBandPoints(string protoId, float points)
     {
-        _bandPoints[dbid] = points;
+        _bandPoints[protoId] = points;
     }
 
-    public void SetFactionPoints(int dbid, float points)
+    public void SetFactionPoints(string protoId, float points)
     {
-        _factionPoints[dbid] = points;
+        _factionPoints[protoId] = points;
     }
 
     public IEnumerable<(EntityUid Uid, WarZoneComponent Component)> GetAllWarZones()
@@ -78,11 +78,11 @@ public sealed partial class WarZoneSystem : EntitySystem
                 if (band == null)
                 {
                     await _dbManager.SetStalkerBandAsync(bandProto.ID, 0);
-                    _bandPoints[bandProto.DatabaseId] = 0;
+                    _bandPoints[bandProto.ID] = 0;
                 }
                 else
                 {
-                    _bandPoints[bandProto.DatabaseId] = band.RewardPoints;
+                    _bandPoints[bandProto.ID] = band.RewardPoints;
                 }
             }
 
@@ -92,17 +92,17 @@ public sealed partial class WarZoneSystem : EntitySystem
                 if (faction == null)
                 {
                     await _dbManager.SetStalkerFactionAsync(factionProto.ID, 0);
-                    _factionPoints[factionProto.DatabaseId] = 0;
+                    _factionPoints[factionProto.ID] = 0;
                 }
                 else
                 {
-                    _factionPoints[factionProto.DatabaseId] = faction.RewardPoints;
+                    _factionPoints[factionProto.ID] = faction.RewardPoints;
                 }
             }
 
             component.InitialLoadComplete = false;
-            component.PresentBandIds = new();
-            component.PresentFactionIds = new();
+            component.PresentBandProtoIds = new();
+            component.PresentFactionProtoIds = new();
 
             _ = LoadInitialZoneStateAsync(uid, component);
 
@@ -149,65 +149,71 @@ public sealed partial class WarZoneSystem : EntitySystem
         if (!_prototypeManager.TryIndex<STWarZonePrototype>(comp.ZoneProto, out var wzProto))
             return;
 
-        if (comp.PresentBandIds.Count > 1 || comp.PresentFactionIds.Count > 1)
+        if (comp.PresentBandProtoIds.Count > 1 || comp.PresentFactionProtoIds.Count > 1)
         {
             ResetAllRequirements(zone);
             return;
         }
 
-        if (comp.PresentBandIds.Count == 0 && comp.PresentFactionIds.Count == 0)
+        if (comp.PresentBandProtoIds.Count == 0 && comp.PresentFactionProtoIds.Count == 0)
         {
             ResetAllRequirements(zone);
 
-            if (comp.CurrentAttackerBandId != null || comp.CurrentAttackerFactionId != null)
+            if (comp.CurrentAttackerBandProtoId != null || comp.CurrentAttackerFactionProtoId != null)
             {
-                if ((comp.CurrentAttackerBandId != comp.DefendingBandId || comp.CurrentAttackerFactionId != comp.DefendingFactionId) &&
-                    (comp.CurrentAttackerBandId != null || comp.CurrentAttackerFactionId != null))
+                if ((comp.CurrentAttackerBandProtoId != comp.DefendingBandProtoId || comp.CurrentAttackerFactionProtoId != comp.DefendingFactionProtoId) &&
+                    (comp.CurrentAttackerBandProtoId != null || comp.CurrentAttackerFactionProtoId != null))
                 {
-                    string attackerName = GetAttackerName(comp.CurrentAttackerBandId, comp.CurrentAttackerFactionId);
-                    _chatManager.DispatchServerAnnouncement($"Capture attempt on '{comp.PortalName}' by {attackerName} was abandoned!");
+                    string attackerName = GetAttackerName(comp.CurrentAttackerBandProtoId, comp.CurrentAttackerFactionProtoId);
+                    _chatManager.DispatchServerAnnouncement(Loc.GetString(
+                        "warzone-capture-abandoned",
+                        ("zone", comp.PortalName ?? "Unknown"),
+                        ("attacker", attackerName)));
                 }
-                comp.CurrentAttackerBandId = null;
-                comp.CurrentAttackerFactionId = null;
-                comp.PresentBandIds.Clear();
-                comp.PresentFactionIds.Clear();
+                comp.CurrentAttackerBandProtoId = null;
+                comp.CurrentAttackerFactionProtoId = null;
+                comp.PresentBandProtoIds.Clear();
+                comp.PresentFactionProtoIds.Clear();
             }
 
             return;
         }
 
-        int? attackerBand = null;
-        int? attackerFaction = null;
+        string? attackerBand = null;
+        string? attackerFaction = null;
 
-        if (comp.PresentBandIds.Count == 1)
-            attackerBand = GetFirst(comp.PresentBandIds);
-        if (comp.PresentFactionIds.Count == 1)
-            attackerFaction = GetFirst(comp.PresentFactionIds);
+        if (comp.PresentBandProtoIds.Count == 1)
+            attackerBand = GetFirst(comp.PresentBandProtoIds);
+        if (comp.PresentFactionProtoIds.Count == 1)
+            attackerFaction = GetFirst(comp.PresentFactionProtoIds);
 
-        if ((attackerBand != null && attackerBand == comp.DefendingBandId) ||
-            (attackerFaction != null && attackerFaction == comp.DefendingFactionId))
+        if ((attackerBand != null && attackerBand == comp.DefendingBandProtoId) ||
+            (attackerFaction != null && attackerFaction == comp.DefendingFactionProtoId))
         {
             ResetAllRequirements(zone);
             return;
         }
 
-        bool isDefender = (attackerBand != null && attackerBand == comp.DefendingBandId) ||
-                          (attackerFaction != null && attackerFaction == comp.DefendingFactionId);
+        bool isDefender = (attackerBand != null && attackerBand == comp.DefendingBandProtoId) ||
+                          (attackerFaction != null && attackerFaction == comp.DefendingFactionProtoId);
 
         bool zoneCooldownActive = comp.CooldownEndTime.HasValue && now < comp.CooldownEndTime.Value;
 
         if (!isDefender && !zoneCooldownActive && comp.InitialLoadComplete &&
-            (attackerBand != comp.CurrentAttackerBandId || attackerFaction != comp.CurrentAttackerFactionId) &&
+            (attackerBand != comp.CurrentAttackerBandProtoId || attackerFaction != comp.CurrentAttackerFactionProtoId) &&
             (attackerBand != null || attackerFaction != null))
         {
-            comp.CurrentAttackerBandId = attackerBand;
-            comp.CurrentAttackerFactionId = attackerFaction;
+            comp.CurrentAttackerBandProtoId = attackerBand;
+            comp.CurrentAttackerFactionProtoId = attackerFaction;
 
             string attackerName = GetAttackerName(attackerBand, attackerFaction);
-            _chatManager.DispatchServerAnnouncement($"Capture attempt by {attackerName} started on '{comp.PortalName}'!");
+            _chatManager.DispatchServerAnnouncement(Loc.GetString(
+                "warzone-capture-started",
+                ("attacker", attackerName),
+                ("zone", comp.PortalName ?? "Unknown")));
         }
 
-        var ownerships = new Dictionary<ProtoId<STWarZonePrototype>, (int? BandId, int? FactionId)>();
+        var ownerships = new Dictionary<ProtoId<STWarZonePrototype>, (string? BandProtoId, string? FactionProtoId)>();
         var lastCaptureTimes = new Dictionary<ProtoId<STWarZonePrototype>, DateTime?>();
         var zonePrototypes = new Dictionary<ProtoId<STWarZonePrototype>, STWarZonePrototype>();
 
@@ -230,7 +236,9 @@ public sealed partial class WarZoneSystem : EntitySystem
             var ownership = await _dbManager.GetStalkerWarOwnershipAsync(rid);
             if (ownership != null)
             {
-                ownerships[rid] = (ownership.BandId, ownership.FactionId);
+                string? zoneBandProtoId = ownership.Band?.BandProtoId;
+                string? zoneFactionProtoId = ownership.Faction?.FactionProtoId;
+                ownerships[rid] = (zoneBandProtoId, zoneFactionProtoId);
                 lastCaptureTimes[rid] = ownership.LastCapturedByCurrentOwnerAt;
             }
 
@@ -258,34 +266,20 @@ public sealed partial class WarZoneSystem : EntitySystem
         if (!allMet)
             return;
 
-        comp.DefendingBandId = attackerBand;
-        comp.DefendingFactionId = attackerFaction;
+        comp.DefendingBandProtoId = attackerBand;
+        comp.DefendingFactionProtoId = attackerFaction;
 
         ProtoId<STBandPrototype>? bandProtoId = null;
         ProtoId<NpcFactionPrototype>? factionProtoId = null;
 
-        if (attackerBand.HasValue)
+        if (attackerBand != null)
         {
-            foreach (var bandProto in _prototypeManager.EnumeratePrototypes<STBandPrototype>())
-            {
-                if (bandProto.DatabaseId == attackerBand.Value)
-                {
-                    bandProtoId = bandProto.ID;
-                    break;
-                }
-            }
+            bandProtoId = attackerBand;
         }
 
-        if (attackerFaction.HasValue)
+        if (attackerFaction != null)
         {
-            foreach (var factionProto in _prototypeManager.EnumeratePrototypes<NpcFactionPrototype>())
-            {
-                if (factionProto.DatabaseId == attackerFaction.Value)
-                {
-                    factionProtoId = factionProto.ID;
-                    break;
-                }
-            }
+            factionProtoId = attackerFaction;
         }
 
         if (bandProtoId != null && factionProtoId != null)
@@ -301,10 +295,12 @@ public sealed partial class WarZoneSystem : EntitySystem
             comp.CooldownEndTime = _gameTiming.CurTime + TimeSpan.FromHours(wzProto.CaptureCooldownHours);
         }
 
-        string defenderName = GetAttackerName(comp.DefendingBandId, comp.DefendingFactionId);
-        _chatManager.DispatchServerAnnouncement($"Zone '{comp.PortalName}' captured by {defenderName}!");
+        string defenderName = GetAttackerName(comp.DefendingBandProtoId, comp.DefendingFactionProtoId);
+        _chatManager.DispatchServerAnnouncement(Loc.GetString(
+            "warzone-captured",
+            ("zone", comp.PortalName ?? "Unknown"),
+            ("attacker", defenderName)));
 
-        // Reset reward timer on capture
         _lastRewardTimes[zone] = _gameTiming.CurTime;
     }
 
@@ -339,45 +335,31 @@ public sealed partial class WarZoneSystem : EntitySystem
         if (now - lastRewardTime < period)
             return;
 
-        if (wzComp.DefendingBandId == null && wzComp.DefendingFactionId == null && wzProto.ShouldAwardWhenDefenderPresent)
+        if (wzComp.DefendingBandProtoId == null && wzComp.DefendingFactionProtoId == null && wzProto.ShouldAwardWhenDefenderPresent)
             return;
 
         var points = wzProto.RewardPointsPerPeriod;
         bool rewarded = false;
 
-        if (wzComp.DefendingBandId.HasValue)
+        if (wzComp.DefendingBandProtoId != null)
         {
-            var bandDbId = wzComp.DefendingBandId.Value;
-            foreach (var bandProto in _prototypeManager.EnumeratePrototypes<STBandPrototype>())
-            {
-                if (bandProto.DatabaseId == bandDbId)
-                {
-                    var currentPoints = _bandPoints.TryGetValue(bandDbId, out var val) ? val : 0;
-                    var newPoints = currentPoints + (int)points;
-                    _bandPoints[bandDbId] = newPoints;
-                    _dbManager.SetStalkerBandAsync(new ProtoId<STBandPrototype>(bandProto.ID), newPoints);
-                    Logger.InfoS("warzone", $"Awarded {points} points to band {bandProto.Name} (total: {newPoints}) for controlling {wzComp.PortalName}");
-                    rewarded = true;
-                    break;
-                }
-            }
+            var bandProtoId = wzComp.DefendingBandProtoId;
+            var currentPoints = _bandPoints.TryGetValue(bandProtoId, out var val) ? val : 0;
+            var newPoints = currentPoints + (int)points;
+            _bandPoints[bandProtoId] = newPoints;
+            _dbManager.SetStalkerBandAsync(new ProtoId<STBandPrototype>(bandProtoId), newPoints);
+            Logger.InfoS("warzone", $"Awarded {points} points to band {bandProtoId} (total: {newPoints}) for controlling {wzComp.PortalName}");
+            rewarded = true;
         }
-        else if (wzComp.DefendingFactionId.HasValue)
+        else if (wzComp.DefendingFactionProtoId != null)
         {
-            var factionDbId = wzComp.DefendingFactionId.Value;
-            foreach (var factionProto in _prototypeManager.EnumeratePrototypes<NpcFactionPrototype>())
-            {
-                if (factionProto.DatabaseId == factionDbId)
-                {
-                    var currentPoints = _factionPoints.TryGetValue(factionDbId, out var val) ? val : 0;
-                    var newPoints = currentPoints + (int)points;
-                    _factionPoints[factionDbId] = newPoints;
-                    _dbManager.SetStalkerFactionAsync(new ProtoId<NpcFactionPrototype>(factionProto.ID), newPoints);
-                    Logger.InfoS("warzone", $"Awarded {points} points to faction {factionProto.ID} (total: {newPoints}) for controlling {wzComp.PortalName}");
-                    rewarded = true;
-                    break;
-                }
-            }
+            var factionProtoId = wzComp.DefendingFactionProtoId;
+            var currentPoints = _factionPoints.TryGetValue(factionProtoId, out var val) ? val : 0;
+            var newPoints = currentPoints + (int)points;
+            _factionPoints[factionProtoId] = newPoints;
+            _dbManager.SetStalkerFactionAsync(new ProtoId<NpcFactionPrototype>(factionProtoId), newPoints);
+            Logger.InfoS("warzone", $"Awarded {points} points to faction {factionProtoId} (total: {newPoints}) for controlling {wzComp.PortalName}");
+            rewarded = true;
         }
 
         if (rewarded)
@@ -386,7 +368,7 @@ public sealed partial class WarZoneSystem : EntitySystem
         }
     }
 
-    private static int? GetFirst(HashSet<int> set)
+    private static string? GetFirst(HashSet<string> set)
     {
         foreach (var g in set)
             return g;
@@ -401,37 +383,40 @@ public sealed partial class WarZoneSystem : EntitySystem
             return;
 
         var bandProtoId = bands.BandProto;
-        int? bandDbId = null;
-        int? factionDbId = null;
+        string? bandId = null;
+        string? factionId = null;
 
         if (_prototypeManager.TryIndex<STBandPrototype>(bandProtoId, out var bandProto))
         {
-            bandDbId = bandProto.DatabaseId;
+            bandId = bandProto.ID;
 
             if (_prototypeManager.TryIndex<NpcFactionPrototype>(bandProto.FactionId, out var factionProto))
             {
-                factionDbId = factionProto.DatabaseId;
+                factionId = factionProto.ID;
             }
         }
 
-        if (component.PresentBandIds == null)
-            component.PresentBandIds = new();
-        if (component.PresentFactionIds == null)
-            component.PresentFactionIds = new();
+        if (component.PresentBandProtoIds == null)
+            component.PresentBandProtoIds = new();
+        if (component.PresentFactionProtoIds == null)
+            component.PresentFactionProtoIds = new();
 
         var now = _gameTiming.CurTime;
         if (component.CooldownEndTime.HasValue && now < component.CooldownEndTime.Value)
         {
             var remainingTime = component.CooldownEndTime.Value - now;
             var portalName = component.PortalName ?? "Unknown Zone";
-            var message = $"Zone '{portalName}' is on cooldown. Next capture available in {remainingTime.TotalMinutes:F1} minutes.";
+            var message = Loc.GetString(
+                "warzone-cooldown",
+                ("zone", portalName),
+                ("minutes", $"{remainingTime.TotalMinutes:F1}"));
             _popup.PopupEntity(message, other);
         }
 
-        if (bandDbId.HasValue)
-            component.PresentBandIds.Add(bandDbId.Value);
-        if (factionDbId.HasValue)
-            component.PresentFactionIds.Add(factionDbId.Value);
+        if (bandId != null)
+            component.PresentBandProtoIds.Add(bandId);
+        if (factionId != null)
+            component.PresentFactionProtoIds.Add(factionId);
     }
 
     private void OnEndCollide(EntityUid uid, WarZoneComponent component, ref readonly EndCollideEvent args)
@@ -442,26 +427,26 @@ public sealed partial class WarZoneSystem : EntitySystem
             return;
 
         var bandProtoId = bands.BandProto;
-        int? bandDbId = null;
-        int? factionDbId = null;
+        string? bandId = null;
+        string? factionId = null;
 
         if (_prototypeManager.TryIndex<STBandPrototype>(bandProtoId, out var bandProto))
         {
-            bandDbId = bandProto.DatabaseId;
+            bandId = bandProto.ID;
 
             if (_prototypeManager.TryIndex<NpcFactionPrototype>(bandProto.FactionId, out var factionProto))
             {
-                factionDbId = factionProto.DatabaseId;
+                factionId = factionProto.ID;
             }
         }
 
-        if (component.PresentBandIds == null || component.PresentFactionIds == null)
+        if (component.PresentBandProtoIds == null || component.PresentFactionProtoIds == null)
             return;
 
-        if (bandDbId.HasValue)
-            component.PresentBandIds.Remove(bandDbId.Value);
-        if (factionDbId.HasValue)
-            component.PresentFactionIds.Remove(factionDbId.Value);
+        if (bandId != null)
+            component.PresentBandProtoIds.Remove(bandId);
+        if (factionId != null)
+            component.PresentFactionProtoIds.Remove(factionId);
     }
 
     private void OnEntityTerminating(EntityUid uid, MetaDataComponent component, ref EntityTerminatingEvent args)
@@ -474,16 +459,16 @@ public sealed partial class WarZoneSystem : EntitySystem
         if (!_entityManager.TryGetComponent(uid, out BandsComponent? bands))
             return;
 
-        int? bandDbId = null;
-        int? factionDbId = null;
+        string? bandId = null;
+        string? factionId = null;
 
         if (_prototypeManager.TryIndex<STBandPrototype>(bands.BandProto, out var bandProto))
         {
-            bandDbId = bandProto.DatabaseId;
+            bandId = bandProto.ID;
 
             if (_prototypeManager.TryIndex<NpcFactionPrototype>(bandProto.FactionId, out var factionProto))
             {
-                factionDbId = factionProto.DatabaseId;
+                factionId = factionProto.ID;
             }
         }
 
@@ -492,57 +477,53 @@ public sealed partial class WarZoneSystem : EntitySystem
         {
             bool changed = false;
 
-            if (wzComp.PresentBandIds != null && bandDbId.HasValue && wzComp.PresentBandIds.Remove(bandDbId.Value))
+            if (wzComp.PresentBandProtoIds != null && bandId != null && wzComp.PresentBandProtoIds.Remove(bandId))
                 changed = true;
 
-            if (wzComp.PresentFactionIds != null && factionDbId.HasValue && wzComp.PresentFactionIds.Remove(factionDbId.Value))
+            if (wzComp.PresentFactionProtoIds != null && factionId != null && wzComp.PresentFactionProtoIds.Remove(factionId))
                 changed = true;
 
-            // Add null checks before accessing Count
             if (changed &&
-                wzComp.PresentBandIds != null &&
-                wzComp.PresentFactionIds != null &&
-                wzComp.PresentBandIds.Count == 0 &&
-                wzComp.PresentFactionIds.Count == 0)
+                wzComp.PresentBandProtoIds != null &&
+                wzComp.PresentFactionProtoIds != null &&
+                wzComp.PresentBandProtoIds.Count == 0 &&
+                wzComp.PresentFactionProtoIds.Count == 0)
             {
                 ResetAllRequirements(zoneUid);
 
-                if (wzComp != null && (wzComp.CurrentAttackerBandId != null || wzComp.CurrentAttackerFactionId != null))
+                if (wzComp != null && (wzComp.CurrentAttackerBandProtoId != null || wzComp.CurrentAttackerFactionProtoId != null))
                 {
-                    string attackerName = GetAttackerName(wzComp.CurrentAttackerBandId, wzComp.CurrentAttackerFactionId);
-                    _chatManager.DispatchServerAnnouncement($"Capture attempt on '{wzComp.PortalName}' by {attackerName} was abandoned!");
+                    string attackerName = GetAttackerName(wzComp.CurrentAttackerBandProtoId, wzComp.CurrentAttackerFactionProtoId);
+                    _chatManager.DispatchServerAnnouncement(Loc.GetString(
+                        "warzone-capture-abandoned",
+                        ("zone", wzComp.PortalName ?? "Unknown"),
+                        ("attacker", attackerName)));
                 }
 
                 if (wzComp != null)
                 {
-                    wzComp.CurrentAttackerBandId = null;
-                    wzComp.CurrentAttackerFactionId = null;
-                    if (wzComp.PresentBandIds != null)
-                        wzComp.PresentBandIds.Clear();
-                    if (wzComp.PresentFactionIds != null)
-                        wzComp.PresentFactionIds.Clear();
+                    wzComp.CurrentAttackerBandProtoId = null;
+                    wzComp.CurrentAttackerFactionProtoId = null;
+                    if (wzComp.PresentBandProtoIds != null)
+                        wzComp.PresentBandProtoIds.Clear();
+                    if (wzComp.PresentFactionProtoIds != null)
+                        wzComp.PresentFactionProtoIds.Clear();
                 }
             }
         }
     }
 
-    private string GetAttackerName(int? bandId, int? factionId)
+    private string GetAttackerName(string? bandProtoId, string? factionProtoId)
     {
-        if (bandId.HasValue)
+        if (!string.IsNullOrEmpty(bandProtoId))
         {
-            foreach (var bandProto in _prototypeManager.EnumeratePrototypes<STBandPrototype>())
-            {
-                if (bandProto.DatabaseId == bandId.Value)
-                    return bandProto.Name;
-            }
+            if (_prototypeManager.TryIndex<STBandPrototype>(bandProtoId, out var bandProto))
+                return bandProto.Name;
         }
-        else if (factionId.HasValue)
+        else if (!string.IsNullOrEmpty(factionProtoId))
         {
-            foreach (var factionProto in _prototypeManager.EnumeratePrototypes<NpcFactionPrototype>())
-            {
-                if (factionProto.DatabaseId == factionId.Value)
-                    return factionProto.ID;
-            }
+            if (_prototypeManager.TryIndex<NpcFactionPrototype>(factionProtoId, out var factionProto))
+                return factionProto.ID;
         }
         return "Unknown";
     }
@@ -561,9 +542,8 @@ public sealed partial class WarZoneSystem : EntitySystem
 
             if (ownership != null)
             {
-                // Store raw DB numerical IDs directly
-                component.DefendingBandId = ownership.BandId;
-                component.DefendingFactionId = ownership.FactionId;
+                component.DefendingBandProtoId = ownership.BandId != null && ownership.Band != null ? ownership.Band.BandProtoId : null;
+                component.DefendingFactionProtoId = ownership.FactionId != null && ownership.Faction != null ? ownership.Faction.FactionProtoId : null;
 
                 if (ownership.LastCapturedByCurrentOwnerAt.HasValue && wzProto.CaptureCooldownHours > 0)
                 {

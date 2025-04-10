@@ -1,6 +1,6 @@
 # Existing meta-prototype
 - type: stWarZone
-  id: KordonMine
+  id: KordonVillage
   rewardPointsPerPeriod: 1
   rewardPeriod: 10
   requirements:
@@ -12,13 +12,13 @@
 # Entity prototype referencing the above meta-prototype
 - type: entity
   id: WarZoneEntity_Kordon
-  parent: BlankFlag
+  parent: MarkerBase
   name: Kordon War Zone Entity
   description: A physical marker for the Kordon War Zone.
   components:
     - type: WarZone
-      proto: KordonMine
-      portalName: Kordon War Zone
+      proto: KordonVillage
+      portalName: Kordon Village
     - type: Physics
       bodyType: Static
       canCollide: true
@@ -37,5 +37,8 @@
           #   - MobMask
           # layer:
           #   - MidImpassable # Changed from WorldLayer to an existing layer
-    # - type: TriggerOnCollide
-    #   fixtureID: floortrap
+    - type: PointLight
+      enabled: true
+      radius: 3.5
+      color: Cyan
+      energy: 1

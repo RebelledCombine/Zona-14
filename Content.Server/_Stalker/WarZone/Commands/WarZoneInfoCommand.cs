@@ -30,10 +30,10 @@ public sealed class WarZoneInfoCommand : IConsoleCommand
         {
             var zoneId = wzComp.ZoneProto;
             var owner = "None";
-            if (wzComp.DefendingBandId.HasValue)
-                owner = $"Band {wzComp.DefendingBandId.Value}";
-            else if (wzComp.DefendingFactionId.HasValue)
-                owner = $"Faction {wzComp.DefendingFactionId.Value}";
+            if (!string.IsNullOrEmpty(wzComp.DefendingBandProtoId))
+                owner = $"Band {wzComp.DefendingBandProtoId}";
+            else if (!string.IsNullOrEmpty(wzComp.DefendingFactionProtoId))
+                owner = $"Faction {wzComp.DefendingFactionProtoId}";
 
             var cooldown = wzComp.CooldownEndTime.HasValue
                 ? (wzComp.CooldownEndTime.Value - warZoneSystem.CurrentTime).TotalSeconds
@@ -49,30 +49,20 @@ public sealed class WarZoneInfoCommand : IConsoleCommand
         foreach (var kvp in warZoneSystem.BandPoints)
         {
             string name = "Unknown";
-            foreach (var bandProto in _prototypeManager.EnumeratePrototypes<Content.Shared._Stalker.Bands.STBandPrototype>())
-            {
-                if (bandProto.DatabaseId == kvp.Key)
-                {
-                    name = bandProto.Name;
-                    break;
-                }
-            }
-            sb.AppendLine($"Band DB ID: {kvp.Key}, Name: {name}, Points: {kvp.Value}");
+            if (_prototypeManager.TryIndex<Content.Shared._Stalker.Bands.STBandPrototype>(kvp.Key, out var bandProto))
+                name = bandProto.Name;
+
+            sb.AppendLine($"Band Proto ID: {kvp.Key}, Name: {name}, Points: {kvp.Value}");
         }
 
         sb.AppendLine("\n=== Faction Points ===");
         foreach (var kvp in warZoneSystem.FactionPoints)
         {
             string name = "Unknown";
-            foreach (var factionProto in _prototypeManager.EnumeratePrototypes<Content.Shared.NPC.Prototypes.NpcFactionPrototype>())
-            {
-                if (factionProto.DatabaseId == kvp.Key)
-                {
-                    name = factionProto.ID;
-                    break;
-                }
-            }
-            sb.AppendLine($"Faction DB ID: {kvp.Key}, Name: {name}, Points: {kvp.Value}");
+            if (_prototypeManager.TryIndex<Content.Shared.NPC.Prototypes.NpcFactionPrototype>(kvp.Key, out var factionProto))
+                name = factionProto.ID;
+
+            sb.AppendLine($"Faction Proto ID: {kvp.Key}, Name: {name}, Points: {kvp.Value}");
         }
 
         shell.WriteLine(sb.ToString());

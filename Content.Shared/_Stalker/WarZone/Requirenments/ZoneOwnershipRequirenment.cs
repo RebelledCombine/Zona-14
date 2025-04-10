@@ -12,9 +12,9 @@ public sealed partial class ZoneOwnershipRequirenment : BaseWarZoneRequirenment
     public List<ProtoId<STWarZonePrototype>> RequiredZones = new();
 
     public override CaptureBlockReason Check(
-        int? attackerBand,
-        int? attackerFaction,
-        Dictionary<ProtoId<STWarZonePrototype>, (int? BandId, int? FactionId)> ownerships,
+        string? attackerBandProtoId,
+        string? attackerFactionProtoId,
+        Dictionary<ProtoId<STWarZonePrototype>, (string? BandProtoId, string? FactionProtoId)> ownerships,
         Dictionary<ProtoId<STWarZonePrototype>, DateTime?> lastCaptureTimes,
         Dictionary<ProtoId<STWarZonePrototype>, STWarZonePrototype> zonePrototypes,
         ProtoId<STWarZonePrototype> currentZoneId,
@@ -26,9 +26,9 @@ public sealed partial class ZoneOwnershipRequirenment : BaseWarZoneRequirenment
                 return CaptureBlockReason.Ownership;
 
             var owns = false;
-            if (attackerBand != null && owner.BandId == attackerBand)
+            if (attackerBandProtoId != null && owner.BandProtoId == attackerBandProtoId)
                 owns = true;
-            if (attackerFaction != null && owner.FactionId == attackerFaction)
+            if (attackerFactionProtoId != null && owner.FactionProtoId == attackerFactionProtoId)
                 owns = true;
 
             if (!owns)

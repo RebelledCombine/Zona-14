@@ -67,6 +67,5 @@
   factionId: Stalker
   maxMembers: 10000
   managingRankId: 999
-  databaseId: 1
   hierarchy:
     1: Stalker
