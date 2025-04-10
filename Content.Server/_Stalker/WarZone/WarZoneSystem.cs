@@ -32,6 +32,27 @@ public sealed partial class WarZoneSystem : EntitySystem
     private readonly Dictionary<int, float> _factionPoints = new();
     private readonly Dictionary<EntityUid, TimeSpan> _lastRewardTimes = new();
 
+    public IReadOnlyDictionary<int, float> BandPoints => _bandPoints;
+    public IReadOnlyDictionary<int, float> FactionPoints => _factionPoints;
+    public TimeSpan CurrentTime => _gameTiming.CurTime;
+
+    public void SetBandPoints(int dbid, float points)
+    {
+        _bandPoints[dbid] = points;
+    }
+
+    public void SetFactionPoints(int dbid, float points)
+    {
+        _factionPoints[dbid] = points;
+    }
+
+    public IEnumerable<(EntityUid Uid, WarZoneComponent Component)> GetAllWarZones()
+    {
+        var query = EntityQueryEnumerator<WarZoneComponent>();
+        while (query.MoveNext(out var uid, out var comp))
+            yield return (uid, comp);
+    }
+
     public override void Initialize()
     {
         base.Initialize();

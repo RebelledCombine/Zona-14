@@ -10,20 +10,21 @@ using Content.Server.Administration;
 
 namespace Content.Server._Stalker.WarZone.Commands;
 
+[AnyCommand]
 public sealed class WarZoneInfoCommand : IConsoleCommand
 {
+    [Dependency] private readonly EntityManager _entityManager = default!;
     public string Command => "warzoneinfo";
     public string Description => "Lists warzones, their owners, cooldowns, and points for bands and factions.";
     public string Help => "Usage: warzoneinfo";
 
     public void Execute(IConsoleShell shell, string argStr, string[] args)
     {
-        var warZoneSystem = IoCManager.Resolve<WarZoneSystem>();
+        var warZoneSystem = _entityManager.System<WarZoneSystem>();
         var sb = new StringBuilder();
 
         sb.AppendLine("=== Warzones ===");
-        var query = warZoneSystem.EntityQueryEnumerator<WarZoneComponent>();
-        while (query.MoveNext(out var uid, out var wzComp))
+        foreach (var (uid, wzComp) in warZoneSystem.GetAllWarZones())
         {
             var zoneId = wzComp.ZoneProto;
             var owner = "None";
@@ -33,7 +34,7 @@ public sealed class WarZoneInfoCommand : IConsoleCommand
                 owner = $"Faction {wzComp.DefendingFactionId.Value}";
 
             var cooldown = wzComp.CooldownEndTime.HasValue
-                ? (wzComp.CooldownEndTime.Value - warZoneSystem.GameTiming.CurTime).TotalSeconds
+                ? (wzComp.CooldownEndTime.Value - warZoneSystem.CurrentTime).TotalSeconds
                 : 0;
 
             if (cooldown < 0)
