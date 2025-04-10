@@ -3,6 +3,7 @@
   id: KordonVillage
   rewardPointsPerPeriod: 1
   rewardPeriod: 30
+  captureCooldownHours: 2
   requirements:
     - !type:ZoneOwnershipRequirenment
       requiredZones: []
