@@ -7,12 +7,14 @@ using Robust.Shared.GameObjects;
 using Robust.Shared.IoC;
 using Robust.Shared.Console;
 using Content.Server.Administration;
+using Robust.Shared.Prototypes;
 
 namespace Content.Server._Stalker.WarZone.Commands;
 
 [AnyCommand]
 public sealed class WarZoneInfoCommand : IConsoleCommand
 {
+    [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
     [Dependency] private readonly EntityManager _entityManager = default!;
     public string Command => "warzoneinfo";
     public string Description => "Lists warzones, their owners, cooldowns, and points for bands and factions.";
@@ -46,13 +48,31 @@ public sealed class WarZoneInfoCommand : IConsoleCommand
         sb.AppendLine("\n=== Band Points ===");
         foreach (var kvp in warZoneSystem.BandPoints)
         {
-            sb.AppendLine($"Band DB ID: {kvp.Key}, Points: {kvp.Value}");
+            string name = "Unknown";
+            foreach (var bandProto in _prototypeManager.EnumeratePrototypes<Content.Shared._Stalker.Bands.STBandPrototype>())
+            {
+                if (bandProto.DatabaseId == kvp.Key)
+                {
+                    name = bandProto.Name;
+                    break;
+                }
+            }
+            sb.AppendLine($"Band DB ID: {kvp.Key}, Name: {name}, Points: {kvp.Value}");
         }
 
         sb.AppendLine("\n=== Faction Points ===");
         foreach (var kvp in warZoneSystem.FactionPoints)
         {
-            sb.AppendLine($"Faction DB ID: {kvp.Key}, Points: {kvp.Value}");
+            string name = "Unknown";
+            foreach (var factionProto in _prototypeManager.EnumeratePrototypes<Content.Shared.NPC.Prototypes.NpcFactionPrototype>())
+            {
+                if (factionProto.DatabaseId == kvp.Key)
+                {
+                    name = factionProto.ID;
+                    break;
+                }
+            }
+            sb.AppendLine($"Faction DB ID: {kvp.Key}, Name: {name}, Points: {kvp.Value}");
         }
 
         shell.WriteLine(sb.ToString());
