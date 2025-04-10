@@ -361,6 +361,7 @@ namespace Content.Server.Database
             ProtoId<NpcFactionPrototype>? capturingFaction = null);
 
         Task<StalkerZoneOwnership?> GetStalkerWarOwnershipAsync(ProtoId<STWarZonePrototype> warZone);
+        Task ClearStalkerZoneOwnershipAsync(ProtoId<STWarZonePrototype> warZone);
         #endregion
     }
 
@@ -1095,6 +1096,12 @@ namespace Content.Server.Database
         {
             DbReadOpsMetric.Inc();
             return RunDbCommand(() => _db.GetStalkerWarOwnershipAsync(warZone));
+        }
+
+        public Task ClearStalkerZoneOwnershipAsync(ProtoId<STWarZonePrototype> warZone)
+        {
+            DbWriteOpsMetric.Inc();
+            return RunDbCommand(() => _db.ClearStalkerZoneOwnershipAsync(warZone));
         }
 
         public Task<string?> GetLoginItems(string login)

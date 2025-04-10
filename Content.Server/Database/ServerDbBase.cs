@@ -1890,6 +1890,27 @@ INSERT INTO player_round (players_id, rounds_id) VALUES ({players[player]}, {id}
 
             return record;
         }
+
+        /// <summary>
+        /// Clears ownership of the specified warzone (sets both band and faction to null).
+        /// </summary>
+        /// <param name="warZone">The warzone prototype ID.</param>
+        public async Task ClearStalkerZoneOwnershipAsync(ProtoId<STWarZonePrototype> warZone)
+        {
+            await using var db = await GetDb();
+
+            var record = await db.DbContext.StalkerZoneOwnerships
+                .FirstOrDefaultAsync(s => s.ZoneProtoId == warZone.Id);
+
+            if (record is null)
+                return;
+
+            record.BandId = null;
+            record.FactionId = null;
+            record.LastCapturedByCurrentOwnerAt = DateTime.UnixEpoch;
+
+            await db.DbContext.SaveChangesAsync();
+        }
         #endregion
         #region Job Whitelists
 

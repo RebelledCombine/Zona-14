@@ -267,7 +267,7 @@ public sealed class WarZoneAdminCommand : IConsoleCommand
             foundComp.DefendingFactionId = null;
             foundComp.CooldownEndTime = null;
 
-            await _dbManager.SetStalkerZoneOwnershipAsync(zoneProtoId, null, null);
+            await _dbManager.ClearStalkerZoneOwnershipAsync(zoneProtoId);
 
             shell.WriteLine($"Cleared ownership of warzone {zoneProtoId}");
             return;
