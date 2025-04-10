@@ -14,6 +14,8 @@
     slots:
     - Back
     - suitStorage
+  - type: PullDoAfter
+    pullTime: 2.0
   - type: AmmoCounter
   - type: Gun
     fireRate: 1.5
