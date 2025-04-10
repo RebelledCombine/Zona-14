@@ -28,7 +28,6 @@ public sealed partial class WarZoneSystem : EntitySystem
     [Dependency] private readonly IChatManager _chatManager = default!;
     [Dependency] private readonly PopupSystem _popup = default!;
 
-    private readonly Dictionary<EntityUid, CaptureState> _activeCaptures = new();
     private readonly Dictionary<EntityUid, TimeSpan> _lastRewardTimes = new();
 
     public override void Initialize()
@@ -50,7 +49,6 @@ public sealed partial class WarZoneSystem : EntitySystem
     {
         try
         {
-            // Sync all bands
             foreach (var bandProto in _prototypeManager.EnumeratePrototypes<STBandPrototype>())
             {
                 var band = await _dbManager.GetStalkerBandAsync(bandProto.ID);
@@ -58,7 +56,6 @@ public sealed partial class WarZoneSystem : EntitySystem
                     await _dbManager.SetStalkerBandAsync(bandProto.ID, 0);
             }
 
-            // Sync all factions
             foreach (var factionProto in _prototypeManager.EnumeratePrototypes<NpcFactionPrototype>())
             {
                 var faction = await _dbManager.GetStalkerFactionAsync(factionProto.ID);
@@ -66,13 +63,11 @@ public sealed partial class WarZoneSystem : EntitySystem
                     await _dbManager.SetStalkerFactionAsync(factionProto.ID, 0);
             }
 
-            if (!_activeCaptures.TryGetValue(uid, out var state))
-            {
-                state = new CaptureState { InitialLoadComplete = false };
-                _activeCaptures[uid] = state;
+            component.InitialLoadComplete = false;
+            component.PresentBandIds = new();
+            component.PresentFactionIds = new();
 
-                _ = LoadInitialZoneStateAsync(uid, component.ZoneProto, state);
-            }
+            _ = LoadInitialZoneStateAsync(uid, component);
 
             var ownership = await _dbManager.GetStalkerWarOwnershipAsync(component.ZoneProto);
             if (ownership != null && (ownership.BandId != null || ownership.FactionId != null))
@@ -98,9 +93,10 @@ public sealed partial class WarZoneSystem : EntitySystem
 
         var now = _gameTiming.CurTime;
 
-        foreach (var (zone, state) in _activeCaptures)
+        var query = EntityQueryEnumerator<WarZoneComponent>();
+        while (query.MoveNext(out var uid, out var comp))
         {
-            _ = UpdateCaptureAsync(zone, state, now);
+            _ = UpdateCaptureAsync(uid, comp, now);
         }
 
         foreach (var (zone, lastRewardTime) in _lastRewardTimes)
@@ -109,36 +105,35 @@ public sealed partial class WarZoneSystem : EntitySystem
         }
     }
 
-    private async Task UpdateCaptureAsync(EntityUid zone, CaptureState state, TimeSpan now)
+    private async Task UpdateCaptureAsync(EntityUid zone, WarZoneComponent comp, TimeSpan now)
     {
         var frameTimeSec = (float)_gameTiming.FrameTime.TotalSeconds;
 
-        if (!_entityManager.TryGetComponent(zone, out WarZoneComponent? wzComp) ||
-            !_prototypeManager.TryIndex<STWarZonePrototype>(wzComp.ZoneProto, out var wzProto))
+        if (!_prototypeManager.TryIndex<STWarZonePrototype>(comp.ZoneProto, out var wzProto))
             return;
 
-        if (state.PresentBandIds.Count > 1 || state.PresentFactionIds.Count > 1)
+        if (comp.PresentBandIds.Count > 1 || comp.PresentFactionIds.Count > 1)
         {
             ResetAllRequirements(zone);
             return;
         }
 
-        if (state.PresentBandIds.Count == 0 && state.PresentFactionIds.Count == 0)
+        if (comp.PresentBandIds.Count == 0 && comp.PresentFactionIds.Count == 0)
         {
             ResetAllRequirements(zone);
 
-            if (state.CurrentAttackerBandId != null || state.CurrentAttackerFactionId != null)
+            if (comp.CurrentAttackerBandId != null || comp.CurrentAttackerFactionId != null)
             {
-                if ((state.CurrentAttackerBandId != state.DefendingBandId || state.CurrentAttackerFactionId != state.DefendingFactionId) &&
-                    (state.CurrentAttackerBandId != null || state.CurrentAttackerFactionId != null))
+                if ((comp.CurrentAttackerBandId != comp.DefendingBandId || comp.CurrentAttackerFactionId != comp.DefendingFactionId) &&
+                    (comp.CurrentAttackerBandId != null || comp.CurrentAttackerFactionId != null))
                 {
-                    string attackerName = GetAttackerName(state.CurrentAttackerBandId, state.CurrentAttackerFactionId);
-                    _chatManager.DispatchServerAnnouncement($"Capture attempt on '{wzComp.PortalName}' by {attackerName} was abandoned!");
+                    string attackerName = GetAttackerName(comp.CurrentAttackerBandId, comp.CurrentAttackerFactionId);
+                    _chatManager.DispatchServerAnnouncement($"Capture attempt on '{comp.PortalName}' by {attackerName} was abandoned!");
                 }
-                state.CurrentAttackerBandId = null;
-                state.CurrentAttackerFactionId = null;
-                state.PresentBandIds.Clear();
-                state.PresentFactionIds.Clear();
+                comp.CurrentAttackerBandId = null;
+                comp.CurrentAttackerFactionId = null;
+                comp.PresentBandIds.Clear();
+                comp.PresentFactionIds.Clear();
             }
 
             return;
@@ -147,32 +142,32 @@ public sealed partial class WarZoneSystem : EntitySystem
         int? attackerBand = null;
         int? attackerFaction = null;
 
-        if (state.PresentBandIds.Count == 1)
-            attackerBand = GetFirst(state.PresentBandIds);
-        if (state.PresentFactionIds.Count == 1)
-            attackerFaction = GetFirst(state.PresentFactionIds);
+        if (comp.PresentBandIds.Count == 1)
+            attackerBand = GetFirst(comp.PresentBandIds);
+        if (comp.PresentFactionIds.Count == 1)
+            attackerFaction = GetFirst(comp.PresentFactionIds);
 
-        if ((attackerBand != null && attackerBand == state.DefendingBandId) ||
-            (attackerFaction != null && attackerFaction == state.DefendingFactionId))
+        if ((attackerBand != null && attackerBand == comp.DefendingBandId) ||
+            (attackerFaction != null && attackerFaction == comp.DefendingFactionId))
         {
             ResetAllRequirements(zone);
             return;
         }
 
-        bool isDefender = (attackerBand != null && attackerBand == state.DefendingBandId) ||
-                          (attackerFaction != null && attackerFaction == state.DefendingFactionId);
+        bool isDefender = (attackerBand != null && attackerBand == comp.DefendingBandId) ||
+                          (attackerFaction != null && attackerFaction == comp.DefendingFactionId);
 
-        bool zoneCooldownActive = state.CooldownEndTime.HasValue && now < state.CooldownEndTime.Value;
+        bool zoneCooldownActive = comp.CooldownEndTime.HasValue && now < comp.CooldownEndTime.Value;
 
-        if (!isDefender && !zoneCooldownActive && state.InitialLoadComplete &&
-            (attackerBand != state.CurrentAttackerBandId || attackerFaction != state.CurrentAttackerFactionId) &&
+        if (!isDefender && !zoneCooldownActive && comp.InitialLoadComplete &&
+            (attackerBand != comp.CurrentAttackerBandId || attackerFaction != comp.CurrentAttackerFactionId) &&
             (attackerBand != null || attackerFaction != null))
         {
-            state.CurrentAttackerBandId = attackerBand;
-            state.CurrentAttackerFactionId = attackerFaction;
+            comp.CurrentAttackerBandId = attackerBand;
+            comp.CurrentAttackerFactionId = attackerFaction;
 
             string attackerName = GetAttackerName(attackerBand, attackerFaction);
-            _chatManager.DispatchServerAnnouncement($"Capture attempt by {attackerName} started on '{wzComp.PortalName}'!");
+            _chatManager.DispatchServerAnnouncement($"Capture attempt by {attackerName} started on '{comp.PortalName}'!");
         }
 
         var ownerships = new Dictionary<ProtoId<STWarZonePrototype>, (int? BandId, int? FactionId)>();
@@ -214,7 +209,7 @@ public sealed partial class WarZoneSystem : EntitySystem
         {
             foreach (var req in wzProto.Requirements)
             {
-                var blockReason = req.Check(attackerBand, attackerFaction, ownerships, lastCaptureTimes, zonePrototypes, wzComp.ZoneProto, frameTimeSec);
+                var blockReason = req.Check(attackerBand, attackerFaction, ownerships, lastCaptureTimes, zonePrototypes, comp.ZoneProto, frameTimeSec);
                 if (blockReason != CaptureBlockReason.None)
                 {
                     allMet = false;
@@ -226,8 +221,8 @@ public sealed partial class WarZoneSystem : EntitySystem
         if (!allMet)
             return;
 
-        state.DefendingBandId = attackerBand;
-        state.DefendingFactionId = attackerFaction;
+        comp.DefendingBandId = attackerBand;
+        comp.DefendingFactionId = attackerFaction;
 
         ProtoId<STBandPrototype>? bandProtoId = null;
         ProtoId<NpcFactionPrototype>? factionProtoId = null;
@@ -260,17 +255,17 @@ public sealed partial class WarZoneSystem : EntitySystem
             bandProtoId = null;
 
         await _dbManager.SetStalkerZoneOwnershipAsync(
-            wzComp.ZoneProto,
+            comp.ZoneProto,
             bandProtoId,
             factionProtoId);
 
-        if (_activeCaptures.TryGetValue(zone, out var captureState) && wzProto.CaptureCooldownHours > 0)
+        if (wzProto.CaptureCooldownHours > 0)
         {
-            captureState.CooldownEndTime = _gameTiming.CurTime + TimeSpan.FromHours(wzProto.CaptureCooldownHours);
+            comp.CooldownEndTime = _gameTiming.CurTime + TimeSpan.FromHours(wzProto.CaptureCooldownHours);
         }
 
-        string defenderName = GetAttackerName(state.DefendingBandId, state.DefendingFactionId);
-        _chatManager.DispatchServerAnnouncement($"Zone '{wzComp.PortalName}' captured by {defenderName}!");
+        string defenderName = GetAttackerName(comp.DefendingBandId, comp.DefendingFactionId);
+        _chatManager.DispatchServerAnnouncement($"Zone '{comp.PortalName}' captured by {defenderName}!");
     }
 
     private void ResetAllRequirements(EntityUid zone)
@@ -304,20 +299,17 @@ public sealed partial class WarZoneSystem : EntitySystem
         if (now - lastRewardTime < period)
             return;
 
-        if (!_activeCaptures.TryGetValue(zone, out var state))
-            return;
-
-        if (state.DefendingBandId == null && state.DefendingFactionId == null && wzProto.ShouldAwardWhenDefenderPresent)
+        if (wzComp.DefendingBandId == null && wzComp.DefendingFactionId == null && !wzProto.ShouldAwardWhenDefenderPresent)
             return;
 
         var points = wzProto.RewardPointsPerPeriod;
         bool rewarded = false;
 
-        if (state.DefendingBandId.HasValue)
+        if (wzComp.DefendingBandId.HasValue)
         {
             foreach (var bandProto in _prototypeManager.EnumeratePrototypes<STBandPrototype>())
             {
-                if (bandProto.DatabaseId == state.DefendingBandId.Value)
+                if (bandProto.DatabaseId == wzComp.DefendingBandId.Value)
                 {
                     _dbManager.SetStalkerBandAsync(new ProtoId<STBandPrototype>(bandProto.ID), (int)points);
                     Logger.InfoS("warzone", $"Awarded {points} points to band {bandProto.Name} for controlling {wzComp.PortalName}");
@@ -326,11 +318,11 @@ public sealed partial class WarZoneSystem : EntitySystem
                 }
             }
         }
-        else if (state.DefendingFactionId.HasValue)
+        else if (wzComp.DefendingFactionId.HasValue)
         {
             foreach (var factionProto in _prototypeManager.EnumeratePrototypes<NpcFactionPrototype>())
             {
-                if (factionProto.DatabaseId == state.DefendingFactionId.Value)
+                if (factionProto.DatabaseId == wzComp.DefendingFactionId.Value)
                 {
                     _dbManager.SetStalkerFactionAsync(new ProtoId<NpcFactionPrototype>(factionProto.ID), (int)points);
                     Logger.InfoS("warzone", $"Awarded {points} points to faction {factionProto.ID} for controlling {wzComp.PortalName}");
@@ -374,26 +366,24 @@ public sealed partial class WarZoneSystem : EntitySystem
             }
         }
 
-        if (!_activeCaptures.TryGetValue(uid, out var state))
-        {
-            state = new CaptureState { InitialLoadComplete = false };
-            _activeCaptures[uid] = state;
-            _ = Task.Run(() => LoadInitialZoneStateAsync(uid, component.ZoneProto, state));
-        }
+        if (component.PresentBandIds == null)
+            component.PresentBandIds = new();
+        if (component.PresentFactionIds == null)
+            component.PresentFactionIds = new();
 
         var now = _gameTiming.CurTime;
-        if (state.CooldownEndTime.HasValue && now < state.CooldownEndTime.Value)
+        if (component.CooldownEndTime.HasValue && now < component.CooldownEndTime.Value)
         {
-            var remainingTime = state.CooldownEndTime.Value - now;
+            var remainingTime = component.CooldownEndTime.Value - now;
             var portalName = component.PortalName ?? "Unknown Zone";
             var message = $"Zone '{portalName}' is on cooldown. Next capture available in {remainingTime.TotalMinutes:F1} minutes.";
             _popup.PopupEntity(message, other);
         }
 
         if (bandDbId.HasValue)
-            state.PresentBandIds.Add(bandDbId.Value);
+            component.PresentBandIds.Add(bandDbId.Value);
         if (factionDbId.HasValue)
-            state.PresentFactionIds.Add(factionDbId.Value);
+            component.PresentFactionIds.Add(factionDbId.Value);
     }
 
     private void OnEndCollide(EntityUid uid, WarZoneComponent component, ref readonly EndCollideEvent args)
@@ -417,13 +407,13 @@ public sealed partial class WarZoneSystem : EntitySystem
             }
         }
 
-        if (!_activeCaptures.TryGetValue(uid, out var state))
+        if (component.PresentBandIds == null || component.PresentFactionIds == null)
             return;
 
         if (bandDbId.HasValue)
-            state.PresentBandIds.Remove(bandDbId.Value);
+            component.PresentBandIds.Remove(bandDbId.Value);
         if (factionDbId.HasValue)
-            state.PresentFactionIds.Remove(factionDbId.Value);
+            component.PresentFactionIds.Remove(factionDbId.Value);
     }
 
     private void OnEntityTerminating(EntityUid uid, MetaDataComponent component, ref EntityTerminatingEvent args)
@@ -449,31 +439,41 @@ public sealed partial class WarZoneSystem : EntitySystem
             }
         }
 
-        foreach (var (zone, state) in _activeCaptures)
+        var query = EntityQueryEnumerator<WarZoneComponent>();
+        while (query.MoveNext(out var zoneUid, out var wzComp))
         {
             bool changed = false;
 
-            if (bandDbId.HasValue && state.PresentBandIds.Remove(bandDbId.Value))
+            if (wzComp.PresentBandIds != null && bandDbId.HasValue && wzComp.PresentBandIds.Remove(bandDbId.Value))
                 changed = true;
 
-            if (factionDbId.HasValue && state.PresentFactionIds.Remove(factionDbId.Value))
+            if (wzComp.PresentFactionIds != null && factionDbId.HasValue && wzComp.PresentFactionIds.Remove(factionDbId.Value))
                 changed = true;
 
-            if (changed && state.PresentBandIds.Count == 0 && state.PresentFactionIds.Count == 0)
+            // Add null checks before accessing Count
+            if (changed &&
+                wzComp.PresentBandIds != null &&
+                wzComp.PresentFactionIds != null &&
+                wzComp.PresentBandIds.Count == 0 &&
+                wzComp.PresentFactionIds.Count == 0)
             {
-                ResetAllRequirements(zone);
+                ResetAllRequirements(zoneUid);
 
-                if ((state.CurrentAttackerBandId != null || state.CurrentAttackerFactionId != null) &&
-                    _entityManager.TryGetComponent(zone, out WarZoneComponent? wzComp))
+                if (wzComp != null && (wzComp.CurrentAttackerBandId != null || wzComp.CurrentAttackerFactionId != null))
                 {
-                    string attackerName = GetAttackerName(state.CurrentAttackerBandId, state.CurrentAttackerFactionId);
+                    string attackerName = GetAttackerName(wzComp.CurrentAttackerBandId, wzComp.CurrentAttackerFactionId);
                     _chatManager.DispatchServerAnnouncement($"Capture attempt on '{wzComp.PortalName}' by {attackerName} was abandoned!");
                 }
 
-                state.CurrentAttackerBandId = null;
-                state.CurrentAttackerFactionId = null;
-                state.PresentBandIds.Clear();
-                state.PresentFactionIds.Clear();
+                if (wzComp != null)
+                {
+                    wzComp.CurrentAttackerBandId = null;
+                    wzComp.CurrentAttackerFactionId = null;
+                    if (wzComp.PresentBandIds != null)
+                        wzComp.PresentBandIds.Clear();
+                    if (wzComp.PresentFactionIds != null)
+                        wzComp.PresentFactionIds.Clear();
+                }
             }
         }
     }
@@ -499,32 +499,17 @@ public sealed partial class WarZoneSystem : EntitySystem
         return "Unknown";
     }
 
-    private sealed class CaptureState
-    {
-        public int? DefendingBandId;
-        public int? DefendingFactionId;
-
-        public int? CurrentAttackerBandId;
-        public int? CurrentAttackerFactionId;
-        public TimeSpan? CooldownEndTime;
-
-        public bool InitialLoadComplete = true;
-
-        public HashSet<int> PresentBandIds = new();
-        public HashSet<int> PresentFactionIds = new();
-    }
-
-    private async Task LoadInitialZoneStateAsync(EntityUid zoneUid, ProtoId<STWarZonePrototype> zoneProtoId, CaptureState state)
+    private async Task LoadInitialZoneStateAsync(EntityUid zoneUid, WarZoneComponent component)
     {
         try
         {
-            if (!_prototypeManager.TryIndex<STWarZonePrototype>(zoneProtoId, out var wzProto))
+            if (!_prototypeManager.TryIndex<STWarZonePrototype>(component.ZoneProto, out var wzProto))
             {
-                Logger.ErrorS("warzone", $"Could not find STWarZonePrototype with ID '{zoneProtoId}' during async state load for zone {zoneUid}.");
+                Logger.ErrorS("warzone", $"Could not find STWarZonePrototype with ID '{component.ZoneProto}' during async state load for zone {zoneUid}.");
                 return;
             }
 
-            var ownership = await _dbManager.GetStalkerWarOwnershipAsync(zoneProtoId);
+            var ownership = await _dbManager.GetStalkerWarOwnershipAsync(component.ZoneProto);
 
             if (ownership != null && ownership.LastCapturedByCurrentOwnerAt.HasValue && wzProto.CaptureCooldownHours > 0)
             {
@@ -535,7 +520,7 @@ public sealed partial class WarZoneSystem : EntitySystem
                 if (cooldownEndDateTime > currentDateTime)
                 {
                     TimeSpan remainingCooldown = cooldownEndDateTime - currentDateTime;
-                    state.CooldownEndTime = _gameTiming.CurTime + remainingCooldown;
+                    component.CooldownEndTime = _gameTiming.CurTime + remainingCooldown;
                 }
 
                 int? dbBandId = null;
@@ -554,16 +539,16 @@ public sealed partial class WarZoneSystem : EntitySystem
                         dbFactionId = dbFactionProto.DatabaseId;
                 }
 
-                state.DefendingBandId = dbBandId;
-                state.DefendingFactionId = dbFactionId;
+                component.DefendingBandId = dbBandId;
+                component.DefendingFactionId = dbFactionId;
             }
 
-            state.InitialLoadComplete = true;
+            component.InitialLoadComplete = true;
         }
         catch (Exception ex)
         {
-            state.InitialLoadComplete = true;
-            Logger.ErrorS("warzone", $"Exception during async zone state load for {zoneUid} ({zoneProtoId}): {ex}");
+            component.InitialLoadComplete = true;
+            Logger.ErrorS("warzone", $"Exception during async zone state load for {zoneUid} ({component.ZoneProto}): {ex}");
         }
     }
 }
