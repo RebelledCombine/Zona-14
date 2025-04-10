@@ -31,12 +31,8 @@ ent-CraftFitil = фитиль
 ent-CraftHideBloodSucker = шкура мутанта
     .desc = Необработанная шкура кровососа, достаточно крепкая.
     .suffix = { ent-CraftGunpowderBank.suffix }
-	
-ent-GunpowderStalker = чёрный порох
-    .desc = Взрывчатое соединение.
-    .suffix = Stalker, крафт
 
-ent-GunpowderStalker = чёрный порох
+ent-GunpowderStalker_craft = чёрный порох
     .desc = Взрывчатое соединение.
     .suffix = Stalker, крафт
 
