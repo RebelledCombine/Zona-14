@@ -2,7 +2,7 @@
 - type: stWarZone
   id: KordonMine
   rewardPointsPerPeriod: 1
-  rewardPeriod: 60
+  rewardPeriod: 10
   requirements:
     - !type:ZoneOwnershipRequirenment
       requiredZones: []

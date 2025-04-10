@@ -12,8 +12,7 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
 using Robust.Shared.Physics.Events;
 using Content.Server.Chat.Managers;
-using Content.Server.Popups; // Added for PopupEntity
-using Content.Shared.Physics;
+using Content.Server.Popups;
 using Content.Shared.Mobs;
 using Content.Shared._Stalker.Bands;
 using Content.Shared.NPC.Prototypes;
@@ -27,7 +26,7 @@ public sealed partial class WarZoneSystem : EntitySystem
     [Dependency] private readonly IEntityManager _entityManager = default!;
     [Dependency] private readonly IServerDbManager _dbManager = default!;
     [Dependency] private readonly IChatManager _chatManager = default!;
-    [Dependency] private readonly PopupSystem _popup = default!; // Added dependency
+    [Dependency] private readonly PopupSystem _popup = default!;
 
     private readonly Dictionary<EntityUid, CaptureState> _activeCaptures = new();
     private readonly Dictionary<EntityUid, TimeSpan> _lastRewardTimes = new();
@@ -35,15 +34,62 @@ public sealed partial class WarZoneSystem : EntitySystem
     public override void Initialize()
     {
         base.Initialize();
-        // Event handlers need to match the expected signature, including ref readonly for ref structs
+
+        SubscribeLocalEvent<WarZoneComponent, ComponentInit>(OnWarZoneInit);
         SubscribeLocalEvent<WarZoneComponent, StartCollideEvent>(OnStartCollide);
         SubscribeLocalEvent<WarZoneComponent, EndCollideEvent>(OnEndCollide);
-
         SubscribeLocalEvent<MetaDataComponent, EntityTerminatingEvent>(OnEntityTerminating);
-        // Removed MobStateChangedEvent subscription due to missing type
+    }
 
-        _ = SyncFactionsAndBandsWithDatabase();
-        _ = InitializeAllZonesAsync(); // Added to initialize reward times for all zones
+    private void OnWarZoneInit(EntityUid uid, WarZoneComponent component, ComponentInit args)
+    {
+        _ = InitializeWarZoneAsync(uid, component);
+    }
+
+    private async Task InitializeWarZoneAsync(EntityUid uid, WarZoneComponent component)
+    {
+        try
+        {
+            // Sync all bands
+            foreach (var bandProto in _prototypeManager.EnumeratePrototypes<STBandPrototype>())
+            {
+                var band = await _dbManager.GetStalkerBandAsync(bandProto.ID);
+                if (band == null)
+                    await _dbManager.SetStalkerBandAsync(bandProto.ID, 0);
+            }
+
+            // Sync all factions
+            foreach (var factionProto in _prototypeManager.EnumeratePrototypes<NpcFactionPrototype>())
+            {
+                var faction = await _dbManager.GetStalkerFactionAsync(factionProto.ID);
+                if (faction == null)
+                    await _dbManager.SetStalkerFactionAsync(factionProto.ID, 0);
+            }
+
+            if (!_activeCaptures.TryGetValue(uid, out var state))
+            {
+                state = new CaptureState { InitialLoadComplete = false };
+                _activeCaptures[uid] = state;
+
+                _ = LoadInitialZoneStateAsync(uid, component.ZoneProto, state);
+            }
+
+            var ownership = await _dbManager.GetStalkerWarOwnershipAsync(component.ZoneProto);
+            if (ownership != null && (ownership.BandId != null || ownership.FactionId != null))
+            {
+                var lastRewardTime = ownership.LastCapturedByCurrentOwnerAt.HasValue
+                    ? _gameTiming.CurTime - (DateTime.UtcNow - ownership.LastCapturedByCurrentOwnerAt.Value)
+                    : _gameTiming.CurTime;
+
+                _lastRewardTimes[uid] = lastRewardTime;
+
+                Logger.InfoS("warzone", $"Initialized reward timing for zone '{component.PortalName}', owned by {(ownership.BandId != null ? $"band:{ownership.BandId}" : $"faction:{ownership.FactionId}")}");
+            }
+        }
+        catch (Exception ex)
+        {
+            Logger.ErrorS("warzone", $"Error initializing war zone {component.ZoneProto}: {ex}");
+        }
     }
 
     public override void Update(float frameTime)
@@ -83,8 +129,6 @@ public sealed partial class WarZoneSystem : EntitySystem
 
             if (state.CurrentAttackerBandId != null || state.CurrentAttackerFactionId != null)
             {
-                // Only announce abandonment if the current attacker is not the defender (i.e., capture wasn't just completed)
-                // AND if there was actually an attacker defined before they left.
                 if ((state.CurrentAttackerBandId != state.DefendingBandId || state.CurrentAttackerFactionId != state.DefendingFactionId) &&
                     (state.CurrentAttackerBandId != null || state.CurrentAttackerFactionId != null))
                 {
@@ -114,14 +158,9 @@ public sealed partial class WarZoneSystem : EntitySystem
             ResetAllRequirements(zone);
             return;
         }
-        // Check if we're actually starting a capture attempt
-        // Skip announcement if:
-        // 1. This band/faction is the defending band/faction (they already own it)
-        // 2. The zone is on cooldown
-        // 3. Initial load from DB hasn't completed (might be a false attempt)
 
         bool isDefender = (attackerBand != null && attackerBand == state.DefendingBandId) ||
-                         (attackerFaction != null && attackerFaction == state.DefendingFactionId);
+                          (attackerFaction != null && attackerFaction == state.DefendingFactionId);
 
         bool zoneCooldownActive = state.CooldownEndTime.HasValue && now < state.CooldownEndTime.Value;
 
@@ -133,8 +172,7 @@ public sealed partial class WarZoneSystem : EntitySystem
             state.CurrentAttackerFactionId = attackerFaction;
 
             string attackerName = GetAttackerName(attackerBand, attackerFaction);
-            var announce = $"Capture attempt by {attackerName} started on '{wzComp.PortalName}'!";
-            _chatManager.DispatchServerAnnouncement(announce);
+            _chatManager.DispatchServerAnnouncement($"Capture attempt by {attackerName} started on '{wzComp.PortalName}'!");
         }
 
         var ownerships = new Dictionary<ProtoId<STWarZonePrototype>, (int? BandId, int? FactionId)>();
@@ -174,32 +212,23 @@ public sealed partial class WarZoneSystem : EntitySystem
 
         if (wzProto.Requirements != null)
         {
-            CaptureBlockReason blockReason = CaptureBlockReason.None;
             foreach (var req in wzProto.Requirements)
             {
-                blockReason = req.Check(attackerBand, attackerFaction, ownerships, lastCaptureTimes, zonePrototypes, wzComp.ZoneProto, frameTimeSec);
+                var blockReason = req.Check(attackerBand, attackerFaction, ownerships, lastCaptureTimes, zonePrototypes, wzComp.ZoneProto, frameTimeSec);
                 if (blockReason != CaptureBlockReason.None)
                 {
-                    // Requirement not met, capture fails
                     allMet = false;
                     break;
                 }
             }
         }
 
-        // If any requirements weren't met, don't proceed with capture
         if (!allMet)
-        {
-            // Cooldown message is now handled locally via Popup in OnStartCollide
-            // The capture attempt will simply not progress here if requirements aren't met.
             return;
-        }
 
-        // All requirements met, proceed with capture
         state.DefendingBandId = attackerBand;
         state.DefendingFactionId = attackerFaction;
 
-        // Find the band and faction prototype IDs from the database IDs
         ProtoId<STBandPrototype>? bandProtoId = null;
         ProtoId<NpcFactionPrototype>? factionProtoId = null;
 
@@ -227,27 +256,21 @@ public sealed partial class WarZoneSystem : EntitySystem
             }
         }
 
-        // If both band and faction are present, prefer faction ownership
         if (bandProtoId != null && factionProtoId != null)
-        {
             bandProtoId = null;
-        }
 
         await _dbManager.SetStalkerZoneOwnershipAsync(
             wzComp.ZoneProto,
             bandProtoId,
             factionProtoId);
 
-        // Update cooldown end time
-        // Use CaptureCooldownHours and convert to TimeSpan
         if (_activeCaptures.TryGetValue(zone, out var captureState) && wzProto.CaptureCooldownHours > 0)
         {
             captureState.CooldownEndTime = _gameTiming.CurTime + TimeSpan.FromHours(wzProto.CaptureCooldownHours);
         }
 
         string defenderName = GetAttackerName(state.DefendingBandId, state.DefendingFactionId);
-        var msg = $"Zone '{wzComp.PortalName}' captured by {defenderName}!";
-        _chatManager.DispatchServerAnnouncement(msg);
+        _chatManager.DispatchServerAnnouncement($"Zone '{wzComp.PortalName}' captured by {defenderName}!");
     }
 
     private void ResetAllRequirements(EntityUid zone)
@@ -267,6 +290,7 @@ public sealed partial class WarZoneSystem : EntitySystem
                 captureReq.Reset();
         }
     }
+
     private void DistributeRewards(EntityUid zone, TimeSpan lastRewardTime, TimeSpan now)
     {
         if (!_entityManager.TryGetComponent(zone, out WarZoneComponent? wzComp))
@@ -275,7 +299,6 @@ public sealed partial class WarZoneSystem : EntitySystem
         if (!_prototypeManager.TryIndex<STWarZonePrototype>(wzComp.ZoneProto, out var wzProto))
             return;
 
-        // Convert the period from seconds to TimeSpan
         var period = TimeSpan.FromSeconds(wzProto.RewardPeriod);
 
         if (now - lastRewardTime < period)
@@ -284,10 +307,9 @@ public sealed partial class WarZoneSystem : EntitySystem
         if (!_activeCaptures.TryGetValue(zone, out var state))
             return;
 
-        // Only award points if there is a defender
-        if (state.DefendingBandId == null && state.DefendingFactionId == null && !wzProto.ShouldAwardWhenDefenderPresent)
-            return; 
-            
+        if (state.DefendingBandId == null && state.DefendingFactionId == null && wzProto.ShouldAwardWhenDefenderPresent)
+            return;
+
         var points = wzProto.RewardPointsPerPeriod;
         bool rewarded = false;
 
@@ -297,7 +319,6 @@ public sealed partial class WarZoneSystem : EntitySystem
             {
                 if (bandProto.DatabaseId == state.DefendingBandId.Value)
                 {
-                    // Convert points to int to match the expected parameter type
                     _dbManager.SetStalkerBandAsync(new ProtoId<STBandPrototype>(bandProto.ID), (int)points);
                     Logger.InfoS("warzone", $"Awarded {points} points to band {bandProto.Name} for controlling {wzComp.PortalName}");
                     rewarded = true;
@@ -311,7 +332,6 @@ public sealed partial class WarZoneSystem : EntitySystem
             {
                 if (factionProto.DatabaseId == state.DefendingFactionId.Value)
                 {
-                    // Convert points to int to match the expected parameter type
                     _dbManager.SetStalkerFactionAsync(new ProtoId<NpcFactionPrototype>(factionProto.ID), (int)points);
                     Logger.InfoS("warzone", $"Awarded {points} points to faction {factionProto.ID} for controlling {wzComp.PortalName}");
                     rewarded = true;
@@ -322,7 +342,6 @@ public sealed partial class WarZoneSystem : EntitySystem
 
         if (rewarded)
         {
-            // Update the last reward time only if rewards were actually distributed
             _lastRewardTimes[zone] = now;
         }
     }
@@ -334,7 +353,6 @@ public sealed partial class WarZoneSystem : EntitySystem
         return null;
     }
 
-    // Keep synchronous, use ref readonly as required by event
     private void OnStartCollide(EntityUid uid, WarZoneComponent component, ref readonly StartCollideEvent args)
     {
         var other = args.OtherEntity;
@@ -356,31 +374,20 @@ public sealed partial class WarZoneSystem : EntitySystem
             }
         }
 
-        // Get or create the capture state
         if (!_activeCaptures.TryGetValue(uid, out var state))
         {
-            // First interaction with this zone since server start.
-            // Create state object immediately, add it, then start background task to load data.
-            state = new CaptureState
-            {
-                InitialLoadComplete = false // Mark as not loaded yet
-            };
+            state = new CaptureState { InitialLoadComplete = false };
             _activeCaptures[uid] = state;
-            // Use Task.Run to avoid blocking and handle potential exceptions within the task
             _ = Task.Run(() => LoadInitialZoneStateAsync(uid, component.ZoneProto, state));
         }
 
-        // Check for cooldown before adding entity to capture state
         var now = _gameTiming.CurTime;
         if (state.CooldownEndTime.HasValue && now < state.CooldownEndTime.Value)
         {
             var remainingTime = state.CooldownEndTime.Value - now;
-            // Use component.PortalName which should be available here via the 'component' parameter
-            var portalName = component.PortalName ?? "Unknown Zone"; // Use null-coalescing for safety
+            var portalName = component.PortalName ?? "Unknown Zone";
             var message = $"Zone '{portalName}' is on cooldown. Next capture available in {remainingTime.TotalMinutes:F1} minutes.";
             _popup.PopupEntity(message, other);
-            // Optionally, we could return here to prevent adding the entity if the zone is on cooldown,
-            // but for now, just notify them. The UpdateCaptureAsync logic will prevent progress anyway.
         }
 
         if (bandDbId.HasValue)
@@ -389,7 +396,6 @@ public sealed partial class WarZoneSystem : EntitySystem
             state.PresentFactionIds.Add(factionDbId.Value);
     }
 
-    // Use ref readonly for ref struct event
     private void OnEndCollide(EntityUid uid, WarZoneComponent component, ref readonly EndCollideEvent args)
     {
         var other = args.OtherEntity;
@@ -425,8 +431,6 @@ public sealed partial class WarZoneSystem : EntitySystem
         RemoveEntityFromAllCaptures(uid);
     }
 
-    // Removed OnMobStateChanged due to missing MobStateChangedEvent type
-
     private void RemoveEntityFromAllCaptures(EntityUid uid)
     {
         if (!_entityManager.TryGetComponent(uid, out BandsComponent? bands))
@@ -459,7 +463,6 @@ public sealed partial class WarZoneSystem : EntitySystem
             {
                 ResetAllRequirements(zone);
 
-                // Announce abandonment only if there was a current attacker defined before they left/died.
                 if ((state.CurrentAttackerBandId != null || state.CurrentAttackerFactionId != null) &&
                     _entityManager.TryGetComponent(zone, out WarZoneComponent? wzComp))
                 {
@@ -475,88 +478,6 @@ public sealed partial class WarZoneSystem : EntitySystem
         }
     }
 
-    private async Task SyncFactionsAndBandsWithDatabase()
-    {
-        try
-        {
-            foreach (var bandProto in _prototypeManager.EnumeratePrototypes<STBandPrototype>())
-            {
-                var band = await _dbManager.GetStalkerBandAsync(bandProto.ID);
-                if (band == null)
-                {
-                    await _dbManager.SetStalkerBandAsync(bandProto.ID, 0);
-                }
-            }
-
-            foreach (var factionProto in _prototypeManager.EnumeratePrototypes<NpcFactionPrototype>())
-            {
-                var faction = await _dbManager.GetStalkerFactionAsync(factionProto.ID);
-                if (faction == null)
-                {
-                    await _dbManager.SetStalkerFactionAsync(factionProto.ID, 0);
-                }
-            }
-        }
-        catch (Exception ex)
-        {
-            Logger.ErrorS("warzone", $"Error syncing factions/bands with DB: {ex}");
-        }
-    }
-
-    private async Task InitializeAllZonesAsync()
-    {
-        try
-        {
-            // Find all zone entities in the world
-            var zones = new HashSet<EntityUid>();
-            var query = EntityQueryEnumerator<WarZoneComponent>();
-            
-            // First pass - collect all zone entities
-            while (query.MoveNext(out var uid, out var component))
-            {
-                zones.Add(uid);
-                
-                // Create a state for this zone if not exists
-                if (!_activeCaptures.TryGetValue(uid, out var state))
-                {
-                    state = new CaptureState { InitialLoadComplete = false };
-                    _activeCaptures[uid] = state;
-                    
-                    // Load the zone state asynchronously
-                    _ = LoadInitialZoneStateAsync(uid, component.ZoneProto, state);
-                }
-                
-                // Load ownership and last capture time data from DB
-                var ownership = await _dbManager.GetStalkerWarOwnershipAsync(component.ZoneProto);
-                if (ownership != null)
-                {
-                    // Set up reward times for zones that have owners
-                    if (ownership.BandId != null || ownership.FactionId != null)
-                    {
-                        // Initialize last reward time to either:
-                        // 1. The last captured time from DB, or
-                        // 2. Current time if no capture time exists (to start rewards immediately)
-                        var lastRewardTime = ownership.LastCapturedByCurrentOwnerAt.HasValue
-                            ? _gameTiming.CurTime - (DateTime.UtcNow - ownership.LastCapturedByCurrentOwnerAt.Value)
-                            : _gameTiming.CurTime;
-                        
-                        _lastRewardTimes[uid] = lastRewardTime;
-                        
-                        Logger.InfoS("warzone", $"Initialized reward timing for zone '{component.PortalName}', " +
-                                           $"owned by {(ownership.BandId != null ? $"band:{ownership.BandId}" : $"faction:{ownership.FactionId}")}");
-                    }
-                }
-            }
-            
-            Logger.InfoS("warzone", $"Initialized {zones.Count} war zones with {_lastRewardTimes.Count} reward timers");
-        }
-        catch (Exception ex)
-        {
-            Logger.ErrorS("warzone", $"Error initializing war zones: {ex}");
-        }
-    }
-
-    // Moved from inside SyncFactionsAndBandsWithDatabase
     private string GetAttackerName(int? bandId, int? factionId)
     {
         if (bandId.HasValue)
@@ -564,9 +485,7 @@ public sealed partial class WarZoneSystem : EntitySystem
             foreach (var bandProto in _prototypeManager.EnumeratePrototypes<STBandPrototype>())
             {
                 if (bandProto.DatabaseId == bandId.Value)
-                {
                     return bandProto.Name;
-                }
             }
         }
         else if (factionId.HasValue)
@@ -574,9 +493,7 @@ public sealed partial class WarZoneSystem : EntitySystem
             foreach (var factionProto in _prototypeManager.EnumeratePrototypes<NpcFactionPrototype>())
             {
                 if (factionProto.DatabaseId == factionId.Value)
-                {
-                    return factionProto.ID; // Use ID instead of Name
-                }
+                    return factionProto.ID;
             }
         }
         return "Unknown";
@@ -589,16 +506,14 @@ public sealed partial class WarZoneSystem : EntitySystem
 
         public int? CurrentAttackerBandId;
         public int? CurrentAttackerFactionId;
-        public TimeSpan? CooldownEndTime; // Added field
+        public TimeSpan? CooldownEndTime;
 
-        public bool InitialLoadComplete = true; // Default true, set to false during initial creation
+        public bool InitialLoadComplete = true;
 
         public HashSet<int> PresentBandIds = new();
         public HashSet<int> PresentFactionIds = new();
     }
 
-
-    // Async helper method to load initial state without blocking the event handler
     private async Task LoadInitialZoneStateAsync(EntityUid zoneUid, ProtoId<STWarZonePrototype> zoneProtoId, CaptureState state)
     {
         try
@@ -613,25 +528,19 @@ public sealed partial class WarZoneSystem : EntitySystem
 
             if (ownership != null && ownership.LastCapturedByCurrentOwnerAt.HasValue && wzProto.CaptureCooldownHours > 0)
             {
-                // Calculate cooldown end time (when next capture will be allowed)
                 DateTime captureTime = ownership.LastCapturedByCurrentOwnerAt.Value;
                 DateTime cooldownEndDateTime = captureTime.AddHours(wzProto.CaptureCooldownHours);
-
-                // Get current server time and check if cooldown is still active
-                DateTime currentDateTime = DateTime.UtcNow; // Use UTC for server-side
+                DateTime currentDateTime = DateTime.UtcNow;
 
                 if (cooldownEndDateTime > currentDateTime)
                 {
-                    // Calculate remaining time and store it as TimeSpan
                     TimeSpan remainingCooldown = cooldownEndDateTime - currentDateTime;
                     state.CooldownEndTime = _gameTiming.CurTime + remainingCooldown;
                 }
 
-                // Pre-populate defender info from DB record
                 int? dbBandId = null;
                 if (ownership.BandId.HasValue)
                 {
-                    // Need to handle ProtoId<T> properly
                     string bandProtoIdStr = ownership.BandId.Value.ToString();
                     if (_prototypeManager.TryIndex<STBandPrototype>(bandProtoIdStr, out var dbBandProto))
                         dbBandId = dbBandProto.DatabaseId;
@@ -640,23 +549,19 @@ public sealed partial class WarZoneSystem : EntitySystem
                 int? dbFactionId = null;
                 if (ownership.FactionId.HasValue)
                 {
-                    // Need to handle ProtoId<T> properly
                     string factionProtoIdStr = ownership.FactionId.Value.ToString();
                     if (_prototypeManager.TryIndex<NpcFactionPrototype>(factionProtoIdStr, out var dbFactionProto))
                         dbFactionId = dbFactionProto.DatabaseId;
                 }
 
-                // Update the state object (which is shared with the main dictionary)
                 state.DefendingBandId = dbBandId;
                 state.DefendingFactionId = dbFactionId;
             }
 
-            // Mark as loaded - this prevents false capture announcements regardless of result
             state.InitialLoadComplete = true;
         }
         catch (Exception ex)
         {
-            // Ensure we mark as complete even on error to prevent indefinite waiting
             state.InitialLoadComplete = true;
             Logger.ErrorS("warzone", $"Exception during async zone state load for {zoneUid} ({zoneProtoId}): {ex}");
         }
