@@ -147,6 +147,17 @@
     sprite: _Stalker/Objects/Decoration/Transport/old_cars.rsi
     scale: 0.8, 0.8
     state: car_red_us
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.7,-1.4,0.6,1.3"
+        density: 155
+        mask:
+        - MachineMask
+        layer:
+        - WallLayer
 
 - type: entity
   id: CarGreenUS
@@ -158,6 +169,17 @@
     sprite: _Stalker/Objects/Decoration/Transport/old_cars.rsi
     scale: 0.8, 0.8
     state: car_green_us
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.7,-1.4,0.6,1.3"
+        density: 155
+        mask:
+        - MachineMask
+        layer:
+        - WallLayer
 
 - type: entity
   id: BrokenCarGreen
@@ -180,6 +202,17 @@
     sprite: _Stalker/Objects/Decoration/Transport/old_cars.rsi
     scale: 0.8, 0.8
     state: linkoln_broken
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.7,-1.4,0.6,1.3"
+        density: 155
+        mask:
+        - MachineMask
+        layer:
+        - WallLayer
 
 # ЗИЛы
 
@@ -200,7 +233,7 @@
       fix1:
         shape:
           !type:PhysShapeAabb
-          bounds: "-0.3,-1.4,0.8,1.5"
+          bounds: "-0.7,-1.9,1.0,1.9"
         density: 155
         mask:
         - MachineMask
@@ -300,7 +333,7 @@
       fix1:
         shape:
           !type:PhysShapeAabb
-          bounds: "-0.7,-1.2,0.8,1.0"
+          bounds: "-0.6,-1.0,0.6,0.8"
         density: 155
         mask:
         - MachineMask
@@ -359,7 +392,7 @@
       fix1:
         shape:
           !type:PhysShapeAabb
-          bounds: "-0.8,-2.7,0.4,2.9"
+          bounds: "-0.8,-2.7,0.7,2.9"
         density: 155
         mask:
         - MachineMask
