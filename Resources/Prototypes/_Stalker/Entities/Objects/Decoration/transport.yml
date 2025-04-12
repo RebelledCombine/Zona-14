@@ -398,3 +398,43 @@
         - MachineMask
         layer:
         - WallLayer
+
+# Танк
+
+- type: entity
+  id: STtank
+  parent: kraz
+  name: танк
+  suffix: ST, Mapping
+  description: An armored combat vehicle, on a tracked track, with cannon and additional machine-gun armament mounted in a rotating full-turn turret.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Decoration/Transport/tank.rsi
+    scale: 0.9, 0.9
+    state: tank_one
+  - type: Physics
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-1.2,-1.9,1.4,2.2"
+        density: 155
+        mask:
+        - MachineMask
+        layer:
+        - WallLayer
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 1000
+        behaviors:
+          - !type:PlaySoundBehavior
+            sound:
+              collection: MetalBreak
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
