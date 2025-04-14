@@ -1,7 +1,7 @@
 - type: entity
   name: постовой СОП
   suffix: Stalker, Т5, немощный
-  parent: BaseMobMutant
+  parent: MobStalkerBaseGuard
   id: MobStalkerMilitaryGuard
   description:
   components:
@@ -55,10 +55,10 @@
       Unsexed: MaleHuman
   - type: HTN
     rootTask:
-      task: TurretCompound
+      task: STMonolith
     blackboard:
       VisionRadius: !type:Single
-        35.0
+        25
       AggroVisionRadius: !type:Single
         20
   - type: STWeight
@@ -116,7 +116,7 @@
 - type: entity
   name: Вова Вист
   suffix: Stalker, Т6, мега-мощный
-  parent: MobStalkerMilitaryGuard
+  parent: MobStalkerBaseGuard
   id: MobStalkerMilitaryVovaVist
   description: Вова Вист обладает превосходными навыками ведения стрельбы из пулемёта, в совокупности с аномальной мощью его пулемёта, этого достаточно, чтобы сделать военного одним из самых опасных людей в Зоне. Даже такой легендарный сталкер, как Шрам, продемонстрировал нечеловеческие возможности и все свои навыки, выложившись на полную и получив огромную порцию пятиточечной боли, чтобы прорваться в Деревню Новичков, избегая зоркого глаза, доведённого до предела мастерства и смертельных пуль Вовы Виста.
   components:
@@ -135,18 +135,21 @@
         Base: dead
   - type: HTN
     rootTask:
-      task: TurretCompound
+      task: STMonolith
     blackboard:
       VisionRadius: !type:Single
-        100
+        30
       AggroVisionRadius: !type:Single
-        100
-  - type: RechargeBasicEntityAmmo
-    rechargeCooldown: 60
-  - type: BasicEntityAmmoProvider
+        30
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 50
+  - type: Battery
+    maxCharge: 100
+    startingCharge: 100
+  - type: ProjectileBatteryAmmoProvider
     proto: Bullet918PGJ
-    capacity: 999999999
-    count: 999999999
+    fireCost: 1
   - type: Gun
     soundGunshot:
       path: /Audio/_Stalker/Effects/Guns/pkm_shot.ogg
@@ -163,7 +166,7 @@
 - type: entity
   name: Рядовой Оковчук
   suffix: Stalker, Т5, мощный
-  parent: MobStalkerMilitaryGuard
+  parent: MobStalkerBaseGuard
   id: MobStalkerMilitarySniper
   description:
   components:
@@ -182,18 +185,21 @@
         Base: dead
   - type: HTN
     rootTask:
-      task: TurretCompound
+      task: STMonolith
     blackboard:
       VisionRadius: !type:Single
-        1000
+        45
       AggroVisionRadius: !type:Single
-        1000
-  - type: RechargeBasicEntityAmmo
-    rechargeCooldown: 10
-  - type: BasicEntityAmmoProvider
+        45
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 25
+  - type: Battery
+    maxCharge: 100
+    startingCharge: 100
+  - type: ProjectileBatteryAmmoProvider
     proto: Bullet754FMJ
-    capacity: 1
-    count: 1
+    fireCost: 80
   - type: Gun
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/sniper.ogg
