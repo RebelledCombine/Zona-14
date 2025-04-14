@@ -3,115 +3,6 @@
   suffix: Stalker, Т5, немощный
   parent: MobStalkerBaseGuard
   id: MobStalkerMilitaryGuard
-  description:
-  components:
-  - type: Stamina
-    decay: 14
-    cooldown: 5
-    critThreshold: 600
-  - type: Fixtures
-    fixtures:
-      fix1:
-        shape:
-          !type:PhysShapeCircle
-          radius: 0.35
-        density: 500000
-        mask:
-        - MobMask
-        layer:
-        - MobLayer
-  - type: Sprite
-    layers:
-    - map: ["enum.DamageStateVisualLayers.Base"]
-      state: alive
-      sprite: /Textures/_Stalker/Mobs/Military/PSZ.rsi
-  - type: DamageStateVisuals
-    states:
-      Alive:
-        Base: alive
-      Critical:
-        Base: dead
-      Dead:
-        Base: dead
-  - type: Damageable
-    damageModifierSet: STNPCGuardModifierSet
-  - type: Bands
-    band: Zombie
-    bandIcon: zombie
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 250
-  - type: MovementSpeedModifier
-    baseWalkSpeed: 0.0
-    baseSprintSpeed: 1.3
-  - type: Speech
-    speechSounds: Alto
-  - type: Vocal
-    sounds:
-      Male: MaleHuman
-      Female: FemaleHuman
-      Unsexed: MaleHuman
-  - type: HTN
-    rootTask:
-      task: STMonolith
-    blackboard:
-      VisionRadius: !type:Single
-        25
-      AggroVisionRadius: !type:Single
-        20
-  - type: STWeight
-    self: 120
-  - type: Tag
-    tags:
-    - DoorBumpOpener
-  - type: Tool
-    speed: 1.5
-    qualities:
-    - Prying
-  - type: Prying
-    pryPowered: !type:Bool
-      true
-    force: !type:Bool
-      true
-  - type: RechargeBasicEntityAmmo
-    rechargeCooldown: 60
-  - type: BasicEntityAmmoProvider
-    proto: Bullet545PC
-    capacity: 1
-    count: 300
-  - type: Gun
-    soundGunshot:
-      path: /Audio/_Stalker/Effects/Guns/n_ak74u_shot.ogg
-    fireRate: 5
-    useKey: false
-    selectedMode: FullAuto
-    minAngle: 45
-    maxAngle: 75
-    angleIncrease: 2
-    angleDecay: 15
-    availableModes:
-    - FullAuto
-  - type: MobThresholds
-    thresholds:
-      0: Alive
-      249: Critical
-      250: Dead
-  - type: PassiveDamage
-    allowedStates:
-    - Alive
-    - Critical
-    damageCap: 200
-    damage:
-      groups:
-        Burn: -100
-        Toxin: -100
-        Airloss: -100
-        Brute: -1
-  - type: NpcFactionMember
-    factions:
-    - Military
 
 - type: entity
   name: Вова Вист
@@ -125,22 +16,14 @@
     - map: ["enum.DamageStateVisualLayers.Base"]
       state: alive
       sprite: /Textures/_Stalker/Mobs/Military/Vist.rsi
-  - type: DamageStateVisuals
-    states:
-      Alive:
-        Base: alive
-      Critical:
-        Base: dead
-      Dead:
-        Base: dead
   - type: HTN
     rootTask:
       task: STMonolith
     blackboard:
       VisionRadius: !type:Single
-        30
+        25
       AggroVisionRadius: !type:Single
-        30
+        20
   - type: BatterySelfRecharger
     autoRecharge: true
     autoRechargeRate: 50
