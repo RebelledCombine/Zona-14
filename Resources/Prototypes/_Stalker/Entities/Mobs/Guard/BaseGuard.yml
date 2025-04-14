@@ -6,6 +6,8 @@
   description:
   abstract: true
   components:
+  - type: NPCRetaliation
+    attackMemoryLength: 10
   - type: BatterySelfRecharger
     autoRecharge: true
     autoRechargeRate: 5

@@ -1,6 +1,6 @@
 - type: entity
   name: Сталкер Ополченец
-  suffix: Stalker, Т6, мега-мощный
+  suffix: Stalker, Т6
   parent: MobStalkerBaseGuard
   id: MobStalkerGuard
   description: Ополченец с неплохим снаряжением, стоящий на защите сталкерства.
@@ -13,14 +13,6 @@
     - map: ["enum.DamageStateVisualLayers.Base"]
       state: alive
       sprite: /Textures/_Stalker/Mobs/Guards/Stalker.rsi
-  - type: HTN
-    rootTask:
-      task: STMonolith
-    blackboard:
-      VisionRadius: !type:Single
-        25
-      AggroVisionRadius: !type:Single
-        20
   - type: BatterySelfRecharger
     autoRecharge: true
     autoRechargeRate: 10

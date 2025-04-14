@@ -16,14 +16,6 @@
     - map: ["enum.DamageStateVisualLayers.Base"]
       state: alive
       sprite: /Textures/_Stalker/Mobs/Military/Vist.rsi
-  - type: HTN
-    rootTask:
-      task: STMonolith
-    blackboard:
-      VisionRadius: !type:Single
-        25
-      AggroVisionRadius: !type:Single
-        20
   - type: BatterySelfRecharger
     autoRecharge: true
     autoRechargeRate: 50
@@ -71,9 +63,9 @@
       task: STMonolith
     blackboard:
       VisionRadius: !type:Single
-        45
+        30
       AggroVisionRadius: !type:Single
-        45
+        25
   - type: BatterySelfRecharger
     autoRecharge: true
     autoRechargeRate: 25

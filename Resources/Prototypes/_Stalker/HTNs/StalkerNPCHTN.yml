@@ -126,35 +126,70 @@
   id: STGuard
   branches:
   - tasks:
+    - !type:HTNCompoundTask
+      task: STGuardRangedCombatCompound
+  - tasks:
+    - !type:HTNCompoundTask
+      task: STGuardIdleCompound
+
+- type: htnCompound
+  id: STGuardIdleCompound
+  branches:
+  - tasks:
+    - !type:HTNPrimitiveTask
+      operator: !type:WaitOperator
+        key: IdleTime
+      preconditions:
+      - !type:KeyExistsPrecondition
+        key: IdleTime
+
+- type: htnCompound
+  id: STGuardGunCombatCompound
+  branches:
+  - tasks:
     - !type:HTNPrimitiveTask
       operator: !type:UtilityOperator
         proto: STMonolithNearbyGunTargets
-
     - !type:HTNPrimitiveTask
       preconditions:
       - !type:KeyExistsPrecondition
         key: Target
-      - !type:TargetInRangePrecondition
-        targetKey: Target
-        # TODO: Non-scuffed
-        rangeKey: RangedRange
-      - !type:TargetInLOSPrecondition
-        targetKey: Target
-        rangeKey: RangedRange
       operator: !type:GunOperator
         targetKey: Target
         requireLOS: true
       services:
       - !type:UtilityService
         id: RangedService
-        proto: NearbyGunTargets
+        proto: STMonolithNearbyGunTargets
         key: Target
 
+- type: htnCompound
+  id: STGuardRangedCombatCompound
+  branches:
+  - preconditions:
+    - !type:GunAmmoPrecondition
+      minPercent: 0.001
+    tasks:
+    - !type:HTNCompoundTask
+      task: STGuardGunCombatCompound
+  -  preconditions:
+     - !type:ActiveHandComponentPrecondition
+       components:
+       - type: Gun
+       invert: true
+     tasks:
+     - !type:HTNCompoundTask
+       task: PickupGunCompound
+  - preconditions:
+    - !type:ActiveHandComponentPrecondition
+      components:
+      - type: Gun
+    - !type:GunAmmoPrecondition
+      maxPercent: 0.001
+    tasks:
+    - !type:HTNPrimitiveTask
+      preconditions:
+      - !type:ActiveHandEntityPrecondition
+      operator: !type:DropOperator
 
-- type: utilityCurvePreset
-  id: STGuardTargetDistance
-  curve: !type:QuadraticCurve
-    slope: -0.5
-    exponent: 1
-    yOffset: 1
-    xOffset: 0
+
