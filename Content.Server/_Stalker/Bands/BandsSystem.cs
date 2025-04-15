@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Content.Server._Stalker.Bands.Components;
 using Content.Server.Database;
 using Content.Server.Mind;
 using Content.Shared._Stalker.Bands;
@@ -19,6 +18,7 @@ using Content.Shared.StatusIcon.Components; // Added
 using Robust.Shared.Player; // Added for ICommonSession
 using Content.Server.Players.JobWhitelist; // Added for JobWhitelistManager
 using Robust.Shared.Log; // Added for Logger
+using Content.Shared._Stalker.Bands.Components;
 
 namespace Content.Server._Stalker.Bands
 {
@@ -47,6 +47,8 @@ namespace Content.Server._Stalker.Bands
             SubscribeLocalEvent<BandsManagingComponent, ComponentStartup>(SubscribeUpdateUiState);
             SubscribeLocalEvent<BandsManagingComponent, BandsManagingAddMemberMessage>(OnAddMember);
             SubscribeLocalEvent<BandsManagingComponent, BandsManagingRemoveMemberMessage>(OnRemoveMember);
+
+            SubscribeLocalEvent<BandsComponent, ComponentInit>(OnInit);
         }
 
         // --- UI Update Subscription & Handling ---
@@ -69,25 +71,17 @@ namespace Content.Server._Stalker.Bands
         {
             var (uid, component) = ent;
 
-            NetUserId? userId = null;
-            ICommonSession? session = null; // Keep session for potential future use
+            if (actor == null)
+                return;
 
-            // Prioritize actor if provided (e.g., from BoundUIOpenedEvent)
-            if (actor != null && _mindSystem.TryGetSession(actor.Value, out session))
+            if (!_mindSystem.TryGetMind(actor.Value, out _, out var mindComp) || !_mindSystem.TryGetSession(mindComp, out var session))
             {
-                userId = session.UserId;
-            }
-            else
-            {
-                // If no actor/session, cannot update UI meaningfully.
-                Logger.WarningS("bands", $"Could not determine user context for BandsManaging UI update on {ToPrettyString(uid)}");
-                // Send an empty/default state
                 _uiSystem.SetUiState(uid, BandsUiKey.Key, new BandsManagingBoundUserInterfaceState(null, 0, new(), false));
                 return;
             }
 
             // If userId is still null after checks, we cannot proceed.
-            if (userId == null)
+            if (session.UserId == null)
             {
                  Logger.ErrorS("bands", $"Failed to obtain NetUserId for BandsManaging UI update on {ToPrettyString(uid)}.");
                 _uiSystem.SetUiState(uid, BandsUiKey.Key, new BandsManagingBoundUserInterfaceState(null, 0, new(), false));
@@ -95,7 +89,7 @@ namespace Content.Server._Stalker.Bands
             }
 
 
-            var bandInfo = await GetPlayerBandInfoAsync(userId.Value);
+            var bandInfo = await GetPlayerBandInfoAsync(session.UserId);
             // Don't return early if bandInfo is null, send state indicating no band or not manageable.
             List<BandMemberInfo> members = new(); // Use BandMemberInfo directly
             string? bandName = null;
@@ -107,7 +101,7 @@ namespace Content.Server._Stalker.Bands
                 members = await GetBandMembersAsync(bandInfo.Prototype); // This now returns List<BandMemberInfo>
                 bandName = bandInfo.Prototype.Name;
                 maxMembers = bandInfo.Prototype.MaxMembers;
-                canManage = await CanPlayerManageBandAsync(userId.Value);
+                canManage = await CanPlayerManageBandAsync(session.UserId);
             }
 
             // No longer need to convert, members is already List<BandMemberInfo>

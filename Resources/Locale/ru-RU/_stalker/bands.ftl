@@ -1,0 +1,11 @@
+bands-managing-window-title = Управление группой
+bands-managing-window-band-name-label = Название группы:
+bands-managing-window-band-name-placeholder = Группа без названия
+bands-managing-window-band-members-label = Участники:
+bands-managing-window-members-list-header = Список участников
+bands-managing-window-no-members-text = В этой группе пока нет участников.
+bands-managing-window-add-member-header = Добавить участника
+bands-managing-window-player-name-label = Имя игрока:
+bands-managing-window-player-name-placeholder = Введите имя игрока...
+bands-managing-window-add-button = Добавить
+bands-managing-window-band-name-unknown = Неизвестно

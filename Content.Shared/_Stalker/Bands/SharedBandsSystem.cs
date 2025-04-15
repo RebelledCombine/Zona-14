@@ -27,55 +27,51 @@ namespace Content.Shared._Stalker.Bands
         public override void Initialize()
         {
             base.Initialize();
-            // Subscriptions for BandsComponent events are now handled in the concrete client/server systems to avoid duplicate subscriptions.
         }
 
-        private void OnInit(EntityUid uid, BandsComponent component, ComponentInit args)
-        {
-            EnsureComp<StatusIconComponent>(uid);
+        // private void OnInit(EntityUid uid, BandsComponent component, ComponentInit args)
+        // {
+        //     EnsureComp<StatusIconComponent>(uid);
 
-            var proto = _protoManager.Index<JobIconPrototype>(component.BandStatusIcon);
+        //     if (component is { AltBand: not null, CanChange: true })
+        //         _actions.AddAction(uid, ref component.ActionChangeEntity, component.ActionChange, uid);
 
-            if (component is { AltBand: not null, CanChange: true })
-                _actions.AddAction(uid, ref component.ActionChangeEntity, component.ActionChange, uid);
+        //     _actions.AddAction(uid, ref component.ActionEntity, component.Action, uid);
+        // }
+        // private void OnChange(Entity<BandsComponent> entity, ref ChangeBandEvent args)
+        // {
+        //     var comp = entity.Comp;
+        //     if (comp.AltBand == null || !comp.CanChange)
+        //         return;
 
-            _actions.AddAction(uid, ref component.ActionEntity, component.Action, uid);
-        }
+        //     (comp.BandStatusIcon, comp.AltBand) = (comp.AltBand, comp.BandStatusIcon);
+        //     Dirty(entity);
+        //     args.Handled = true;
+        // }
 
-        private void OnChange(Entity<BandsComponent> entity, ref ChangeBandEvent args)
-        {
-            var comp = entity.Comp;
-            if (comp.AltBand == null || !comp.CanChange)
-                return;
+        // private void OnRemove(EntityUid uid, BandsComponent component, ComponentRemove args)
+        // {
+        //     RemComp<StatusIconComponent>(uid);
 
-            (comp.BandStatusIcon, comp.AltBand) = (comp.AltBand, comp.BandStatusIcon);
-            Dirty(entity);
-            args.Handled = true;
-        }
+        //     var proto = _protoManager.Index<JobIconPrototype>(component.BandStatusIcon);
 
-        private void OnRemove(EntityUid uid, BandsComponent component, ComponentRemove args)
-        {
-            RemComp<StatusIconComponent>(uid);
+        //     _actions.RemoveAction(uid, component.ActionEntity);
+        //     if (component.ActionChangeEntity != null)
+        //         _actions.RemoveAction(uid, component.ActionChangeEntity);
+        // }
 
-            var proto = _protoManager.Index<JobIconPrototype>(component.BandStatusIcon);
+        // private void OnToggle(EntityUid uid, BandsComponent component, ToggleBandsEvent args)
+        // {
+        //     if (!_mobState.IsAlive(uid))
+        //         return;
 
-            _actions.RemoveAction(uid, component.ActionEntity);
-            if (component.ActionChangeEntity != null)
-                _actions.RemoveAction(uid, component.ActionChangeEntity);
-        }
+        //     var proto = _protoManager.Index<JobIconPrototype>(component.BandStatusIcon);
 
-        private void OnToggle(EntityUid uid, BandsComponent component, ToggleBandsEvent args)
-        {
-            if (!_mobState.IsAlive(uid))
-                return;
+        //     component.Enabled = !component.Enabled;
+        //     Dirty(uid, component);
 
-            var proto = _protoManager.Index<JobIconPrototype>(component.BandStatusIcon);
-
-            component.Enabled = !component.Enabled;
-            Dirty(uid, component);
-
-            args.Handled = true;
-        }
+        //     args.Handled = true;
+        // }
     }
 
     [Serializable, NetSerializable]

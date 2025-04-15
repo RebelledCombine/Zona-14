@@ -1,0 +1,11 @@
+bands-managing-window-title = Manage Band
+bands-managing-window-band-name-label = Band Name:
+bands-managing-window-band-name-placeholder = Unnamed Band
+bands-managing-window-band-members-label = Members:
+bands-managing-window-members-list-header = Members List
+bands-managing-window-no-members-text = This band has no members yet.
+bands-managing-window-add-member-header = Add Member
+bands-managing-window-player-name-label = Player Name:
+bands-managing-window-player-name-placeholder = Enter player name...
+bands-managing-window-add-button = Add
+bands-managing-window-band-name-unknown = Unknown band

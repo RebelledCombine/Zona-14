@@ -85,13 +85,12 @@
     bodyType: Static
   - type: Advertise
     pack: NPCStalkerSidorAds
-    # test start
   - type: BandsManaging
   - type: ActivatableUI
     key: enum.BandsUiKey.Key
   - type: UserInterface
     interfaces:
-      enum.ShopUiKey.Key:
+      enum.BandsUiKey.Key: # Corrected key to match ActivatableUI
         type: BandsManagingUserInterface
     # test end
   # - type: ActivatableUI

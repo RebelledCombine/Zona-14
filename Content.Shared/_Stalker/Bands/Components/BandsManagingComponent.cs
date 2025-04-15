@@ -3,19 +3,17 @@ using Robust.Shared.Serialization;
 using Robust.Shared.Serialization.TypeSerializers.Implementations;
 using Content.Shared._Stalker.Bands;
 
-namespace Content.Server._Stalker.Bands.Components
+namespace Content.Shared._Stalker.Bands.Components
 {
     /// <summary>
     /// Component attached to entities that can open the Band Management UI.
     /// </summary>
     [RegisterComponent, NetworkedComponent]
-    [Access(typeof(SharedBandsSystem))]
+    // [Access(typeof(SharedBandsSystem))]
     public sealed partial class BandsManagingComponent : Component
     {
         /// <summary>
         /// The BUI key used for this component.
         /// </summary>
-        [DataField("uiKey", customTypeSerializer: typeof(EnumSerializer))]
-        public Enum UiKey = BandsUiKey.Key;
     }
 }
