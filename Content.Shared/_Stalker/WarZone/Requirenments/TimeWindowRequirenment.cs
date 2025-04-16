@@ -1,8 +1,6 @@
 using System;
-using System.Collections.Generic;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization;
-using Robust.Shared.IoC; // Keep for DataDefinition if needed elsewhere, or remove if unused
 
 namespace Content.Shared._Stalker.WarZone.Requirenments;
 
@@ -24,17 +22,14 @@ public sealed partial class TimeWindowRequirenment : BaseWarZoneRequirenment
         ProtoId<STWarZonePrototype> currentZoneId,
         float frameTime,
         EntityUid? attackerEntity,
-        Action<EntityUid, string, (string, object)[]?>? feedbackCallback) // Added attackerEntity and feedbackCallback
+        Action<EntityUid, string, (string, object)[]?>? feedbackCallback)
     {
         var currentUtcTime = DateTime.UtcNow;
         var currentHour = currentUtcTime.Hour;
 
-        // Basic validation (optional, could rely on prototype validation)
         if (StartHourUtc < 0 || StartHourUtc > 23 || EndHourUtc < 0 || EndHourUtc > 23)
         {
-             // Consider logging an error here if RobustToolbox logging is available in Shared
-             // Logger.ErrorS("warzone", $"Invalid UTC hours in TimeWindowRequirement for zone {currentZoneId}. Start: {StartHourUtc}, End: {EndHourUtc}");
-             return CaptureBlockReason.TimeWindow; // Or a specific Error reason
+            return CaptureBlockReason.TimeWindow; // Or a specific Error reason
         }
 
         // Handle time ranges that span across midnight
@@ -46,7 +41,7 @@ public sealed partial class TimeWindowRequirenment : BaseWarZoneRequirenment
                 return CaptureBlockReason.None;
             }
         }
-        else // StartHourUtc > EndHourUtc
+        else
         {
             // Range spans midnight (e.g., 22 to 4)
             if (currentHour >= StartHourUtc || currentHour < EndHourUtc)
@@ -55,7 +50,6 @@ public sealed partial class TimeWindowRequirenment : BaseWarZoneRequirenment
             }
         }
 
-        // If we reach here, the time is outside the allowed window
         if (attackerEntity.HasValue && feedbackCallback != null)
         {
             // Provide feedback using the callback
