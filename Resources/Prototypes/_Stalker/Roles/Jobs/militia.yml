@@ -44,7 +44,7 @@
       species:
       - Human
       - Dwarf
-  startingGear: MilitiaGear
+  startingGear: MilitiaCommanderGear
   supervisors: job-militia-commander-supervisor
   canBeAntag: false
   special:
@@ -74,6 +74,18 @@
     torso: ClothingTorsoSweaterStalkerGreen
     legs: ClothingLegsJeansStalker
     shoes: ClothingShoesBootsCombat
+    neck: ClothingBandageStalkerWhite
+
+- type: startingGear
+  id: MilitiaCommanderGear
+  equipment:
+    id: StalkerPDA
+    belt: ClothingBeltStorageWaistbag
+    torso: ClothingTorsoTurtlenecksBlackTurtleneck
+    legs: ClothingLegsJeansStalker
+    shoes: ClothingShoesBootsMercFilled
+    neck: ClothingBandageStalkerWhite
+    head: ClothingHeadHatBeret
 
 - type: stBand
   id: STMilitiaBand

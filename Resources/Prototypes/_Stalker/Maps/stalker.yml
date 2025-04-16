@@ -46,3 +46,4 @@
             StalkerHeadMercenary: [ 0, -1 ]
             # Militia
             StalkerMilitia: [ 0, -1 ]
+            StalkerMilitiaCommander: [ 0, -1 ]

@@ -65,7 +65,7 @@
         - MilitiaAccess
         - Stalker
     - type: Loadout
-      prototypes: [ StalkerGear ]
+      prototypes: [ MilitiaGear ]
 
 - type: entity
   name: кукла Командир Ополчение (переименуй меня)
@@ -83,7 +83,7 @@
         - MilitiaAccess
         - Stalker
     - type: Loadout
-      prototypes: [ StalkerGear ]
+      prototypes: [ MilitiaCommanderGear ]
 
 - type: entity
   name: кукла ренегат (переименуй меня)
