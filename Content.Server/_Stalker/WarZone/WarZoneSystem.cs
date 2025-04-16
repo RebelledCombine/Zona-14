@@ -224,6 +224,22 @@ public sealed partial class WarZoneSystem : EntitySystem
             return; // Block capture attempt due to cooldown
         }
 
+        // --- BEGIN Check and Announce Capture Start ---
+        // Check if it's a new, valid, non-defending attacker starting the capture.
+        bool isNewAttacker = (attackerBand != comp.CurrentAttackerBandProtoId || attackerFaction != comp.CurrentAttackerFactionProtoId);
+        bool isValidAttacker = (attackerBand != null || attackerFaction != null);
+        bool isNotDefender = !((attackerBand != null && attackerBand == comp.DefendingBandProtoId) || (attackerFaction != null && attackerFaction == comp.DefendingFactionProtoId));
+
+        if (comp.InitialLoadComplete && isValidAttacker && isNotDefender && isNewAttacker)
+        {
+            // Update the current attacker *before* announcing
+            comp.CurrentAttackerBandProtoId = attackerBand;
+            comp.CurrentAttackerFactionProtoId = attackerFaction;
+            // Announce locally
+            AnnounceCaptureStartedLocal(zone, comp, attackerBand, attackerFaction);
+        }
+        // --- END Check and Announce Capture Start ---
+
         // Prepare data for requirement checks
         var ownerships = new Dictionary<ProtoId<STWarZonePrototype>, (string? BandProtoId, string? FactionProtoId)>();
         var lastCaptureTimes = new Dictionary<ProtoId<STWarZonePrototype>, DateTime?>();
@@ -302,22 +318,8 @@ public sealed partial class WarZoneSystem : EntitySystem
         if (comp.CaptureProgressTime < wzProto.CaptureTime)
             return;
 
-        // Requirements met! Announce capture start locally if it's a new attacker.
-        if (comp.InitialLoadComplete &&
-            (attackerBand != comp.CurrentAttackerBandProtoId || attackerFaction != comp.CurrentAttackerFactionProtoId) &&
-            (attackerBand != null || attackerFaction != null))
-        {
-            comp.CurrentAttackerBandProtoId = attackerBand;
-            comp.CurrentAttackerFactionProtoId = attackerFaction;
-
-            string attackerName = GetAttackerName(attackerBand, attackerFaction);
-            // Use ChatManager.ChatMessageToManyFiltered for local announcement
-            var message = Loc.GetString("st-warzone-capture-started-local", ("attacker", attackerName), ("zone", comp.PortalName ?? "Unknown"));
-            var mapCoords = _transformSystem.GetMapCoordinates(zone); // Convert to MapCoordinates
-            var filter = Filter.Empty().AddInRange(mapCoords, ChatSystem.VoiceRange);
-            // Send on Emotes channel, hideChat=false, recordReplay=true (standard for environmental messages)
-            _chatManager.ChatMessageToManyFiltered(filter, ChatChannel.Emotes, message, message, zone, false, true, colorOverride: null); // Added colorOverride
-        }
+        // Requirements and capture time met! Set the new defender.
+        // Local announcement moved earlier and into its own method.
 
         comp.DefendingBandProtoId = attackerBand;
         comp.DefendingFactionProtoId = attackerFaction;
@@ -589,7 +591,7 @@ public sealed partial class WarZoneSystem : EntitySystem
         if (wzComp.CurrentAttackerBandProtoId != wzComp.DefendingBandProtoId || wzComp.CurrentAttackerFactionProtoId != wzComp.DefendingFactionProtoId)
         {
             string attackerName = GetAttackerName(wzComp.CurrentAttackerBandProtoId, wzComp.CurrentAttackerFactionProtoId);
-            var message = Loc.GetString("st-warzone-capture-abandoned-local", ("zone", wzComp.PortalName ?? "Unknown"), ("attacker", attackerName));
+            var message = Loc.GetString("st-warzone-capture-abandoned", ("zone", wzComp.PortalName ?? "Unknown"), ("attacker", attackerName));
             // Use ChatManager.ChatMessageToManyFiltered for local announcement
             var mapCoords = _transformSystem.GetMapCoordinates(zoneUid); // Convert to MapCoordinates
             var filter = Filter.Empty().AddInRange(mapCoords, ChatSystem.VoiceRange);
@@ -600,6 +602,20 @@ public sealed partial class WarZoneSystem : EntitySystem
         wzComp.CurrentAttackerBandProtoId = null;
         wzComp.CurrentAttackerFactionProtoId = null;
     }
+
+    // --- BEGIN NEW METHOD ---
+    // Helper to announce capture start locally
+    private void AnnounceCaptureStartedLocal(EntityUid zoneUid, WarZoneComponent wzComp, string? attackerBand, string? attackerFaction)
+    {
+        // We assume the checks for validity (new attacker, not defender, etc.) are done before calling this.
+        string attackerName = GetAttackerName(attackerBand, attackerFaction);
+        var message = Loc.GetString("st-warzone-capture-started", ("attacker", attackerName), ("zone", wzComp.PortalName ?? "Unknown"));
+        var mapCoords = _transformSystem.GetMapCoordinates(zoneUid); // Convert to MapCoordinates
+        var filter = Filter.Empty().AddInRange(mapCoords, ChatSystem.VoiceRange);
+        // Send on Emotes channel, hideChat=false, recordReplay=true (standard for environmental messages)
+        _chatManager.ChatMessageToManyFiltered(filter, ChatChannel.Emotes, message, message, zoneUid, false, true, colorOverride: null);
+    }
+    // --- END NEW METHOD ---
 
     private async Task LoadInitialZoneStateAsync(EntityUid zoneUid, WarZoneComponent component)
     {
