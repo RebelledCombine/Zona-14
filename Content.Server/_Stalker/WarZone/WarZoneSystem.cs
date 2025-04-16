@@ -225,7 +225,8 @@ public sealed partial class WarZoneSystem : EntitySystem
         }
 
         // Prepare data for requirement checks
-        var ownerships = new Dictionary<ProtoId<STWarZonePrototype>, (string? BandProtoId, string? FactionProtoId)>();        var lastCaptureTimes = new Dictionary<ProtoId<STWarZonePrototype>, DateTime?>();
+        var ownerships = new Dictionary<ProtoId<STWarZonePrototype>, (string? BandProtoId, string? FactionProtoId)>();
+        var lastCaptureTimes = new Dictionary<ProtoId<STWarZonePrototype>, DateTime?>();
         var zonePrototypes = new Dictionary<ProtoId<STWarZonePrototype>, STWarZonePrototype>();
 
         var requiredZoneIds = new HashSet<ProtoId<STWarZonePrototype>>();
@@ -282,7 +283,8 @@ public sealed partial class WarZoneSystem : EntitySystem
                     feedbackCallback); // Pass the feedback callback
                 if (blockReason != CaptureBlockReason.None)
                 {
-                    allMet = false;                    break;
+                    allMet = false;
+                    break;
                 }
             }
         }
