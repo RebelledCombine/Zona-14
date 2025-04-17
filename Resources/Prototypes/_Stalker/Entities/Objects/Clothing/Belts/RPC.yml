@@ -91,9 +91,9 @@
     - type: STWeight
       self: 0.5
     - type: Sprite
-      sprite: _Stalker/Clothing/Belts/knife_belt.rsi
+      sprite: _Stalker/Objects/Clothing/Belts/knife_belt.rsi
     - type: Clothing
-      sprite: _Stalker/Clothing/Belts/knife_belt.rsi
+      sprite: _Stalker/Objects/Clothing/Belts/knife_belt.rsi
     - type: Item
       size: Huge
     - type: Tag
@@ -114,7 +114,7 @@
           whitelist:
             tags:
               - Knife
-      sprite: _Stalker/Clothing/Belts/knife_belt_overlay.rsi
+      sprite: _Stalker/Objects/Clothing/Belts/knife_belt_overlay.rsi
       spriteLayers:
       - knife
     - type: Appearance
