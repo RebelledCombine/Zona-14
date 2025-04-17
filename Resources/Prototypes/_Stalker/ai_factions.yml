@@ -53,6 +53,7 @@
   hostile:
   - Mutated
   - MutatedHunter
+  - Hostile
 
 - type: npcFaction
   id: Military
