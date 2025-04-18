@@ -60,7 +60,6 @@
           - STCartridge556
 
 - type: entity
-  abstract: true
   parent: STBaseWeaponRifleM4
   id: STWeaponRifleM4
   name: Colt M4 "Cobra"
