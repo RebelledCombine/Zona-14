@@ -7,7 +7,7 @@
     STWeaponRifleStalkerVAL: STWeaponRifleASVAL
     WeaponRifleStalkerF2000: STWeaponRifleF2000
     STWeaponRifleStalkerGalatz: STWeaponRifleGalatz
-    STWeaponRifleStalkerL85: STWeaponRifleL85WhiteStrawberry
+    STWeaponRifleStalkerL85: STBaseWeaponRifleL85
     STWeaponRifleM14: STWeaponRifleM14
     STWeaponSMGStalkerP90: STWeaponSMGFNP90
     STWeaponShotgunProtecta: STweaponShotgunPRETecta
@@ -17,6 +17,7 @@
     STWeaponSMGMp5: STWeaponSMGMP5
     STWeaponShotgunStalkerSPAS: STWeaponShotgunSPAS
     STWeaponGunAKS74U: STWeaponRifleAKS74U
+    STWeaponGunAKS74UWhiteStrawberry: STWeaponRifleL85WhiteStrawberry
     STWeaponRifleStalkerFAL: STWeaponRifleFAL
     STWeaponRifleStalkerAKS74: STWeaponRifleAKS74
     WeaponShotgunAnomalySawedOff: STWeaponShotgunSawedOfAnomaly
@@ -32,6 +33,7 @@
     Cartridge545BP: STCartridge545BP
     Cartridge545BS: STCartridge545BS
     Cartridge545NE: STCartridge545NE
+    Cartridge556: STCartridge556
     STWeaponShotgunSaiga12Sera: STWeaponShotgunSaiga12Seraphim
     STWeaponSMGBizon: STWeaponSMGPP19
     STWeaponRifleSVDS: STWeaponSniperSVDS
@@ -39,3 +41,12 @@
     STWeaponRifleSVDSGrass: STWeaponSniperSVDSGrass
     STWeaponRifleSVU: STWeaponSniperSVU
     STWeaponRifleSVUSera: STWeaponSniperSVUSeraphim
+    STWeaponGunAKS74UWhite: STWeaponRifleAKS74UWhite
+    STWeaponGunAKS74UBlack: STWeaponRifleAKS74UBlack
+    WeaponSubMachineGunStalkerTommyGun: STWeaponSMGThompson
+    STWeaponPPsh: STWeaponSMGPPSh41
+    STWeaponRifleStalkerG36: STWeaponRifleG36
+    STWeaponRifleCovenantG36: STWeaponRifleG36Covenant
+    STWeaponRifleStalkerAK103: STWeaponRifleAK103
+    STWeaponRifleAK103kamo: STWeaponRifleAK103Kamo
+    STWeaponRifleVSS: STWeaponSniperVSS
