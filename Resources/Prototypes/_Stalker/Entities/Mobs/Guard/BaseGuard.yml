@@ -10,7 +10,7 @@
     attackMemoryLength: 10
   - type: BatterySelfRecharger
     autoRecharge: true
-    autoRechargeRate: 5
+    autoRechargeRate: 2
   - type: Battery
     maxCharge: 100
     startingCharge: 100
@@ -119,4 +119,8 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 350
+        damage: 250
+      behaviors:
+      - !type:TriggerBehavior
+      - !type:DoActsBehavior
+        acts: ["Destruction"]

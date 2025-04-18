@@ -92,8 +92,8 @@
 - type: stBand
   id: STBanditsBand
   name: Bandits
-  factionId: Bandits
-  maxMembers: 10
+  factionId: Bandit
+  maxMembers: 25
   managingRankId: 2
   hierarchy:
     1: StalkerBandit

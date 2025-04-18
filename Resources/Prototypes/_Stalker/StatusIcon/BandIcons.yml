@@ -318,6 +318,16 @@
     hideOnStealth: true
     state: tulpari
 
+- type: jobIcon
+  id: militia
+  locationPreference: Left
+  isShaded: true
+  icon:
+    sprite: /Textures/_Stalker/Icons/Patches/band.rsi
+    hideOnStealth: true
+    state: militia
+
+
 # Evolvers
 - type: jobIcon
   id: evolver

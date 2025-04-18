@@ -38,6 +38,34 @@ public sealed partial class WarZoneComponent : Component
 
     [DataField, ViewVariables(VVAccess.ReadOnly)]
     public HashSet<string> PresentFactionProtoIds = new();
+
+    /// <summary>
+    /// Tracks the specific entities currently inside the zone's trigger area.
+    /// </summary>
+    [DataField, ViewVariables(VVAccess.ReadOnly)]
+    public HashSet<EntityUid> PresentEntities = new();
+
+    /// <summary>
+    /// Current capture progress in seconds
+    /// </summary>
+    [ViewVariables(VVAccess.ReadOnly)]
+    public float CaptureProgressTime = 0f;
+    
+    /// <summary>
+    /// Normalized capture progress (0.0 to 1.0)
+    /// </summary>
     [ViewVariables(VVAccess.ReadOnly)]
     public float CaptureProgress = 0f;
+
+    /// <summary>
+    /// Last announced progress step (each 10% increment: 0–10)
+    /// </summary>
+    [DataField, ViewVariables(VVAccess.ReadOnly)]
+    public int LastAnnouncedProgressStep = 0;
+
+    /// <summary>
+    /// The next game time when the capture logic should be updated for this zone.
+    /// </summary>
+    [DataField]
+    public TimeSpan NextCheckTime = TimeSpan.Zero;
 }
