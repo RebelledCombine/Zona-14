@@ -20,15 +20,15 @@
         STWeaponShotgunMP153: 1100
         STWeaponShotgunSPAS: 1250
         STWeaponShotgunProtecta: 2300
-        STWeaponRifleStalkerSaiga545: 1100
-        STWeaponGunAKS74U: 2100
-        STWeaponRifleStalkerAKS74: 3300
-        STWeaponRifleStalkerL85: 2100
+        STWeaponRifleSaiga545: 1100
+        STWeaponRifleAKS74U: 2100
+        STWeaponRifleAKS74: 3300
+        STWeaponRifleL85: 2100
         STWeaponRifleM16: 2450
         STWeaponRifleM4: 3500
-        STWeaponRifleSig550: 3700
-        STWeaponRifleStalkerAKM: 3900
-        STWeaponRifleStalkerFAL: 3650
+        STWeaponRifleSIG550: 3700
+        STWeaponRifleAKM: 3900
+        STWeaponRifleFAL: 3650
         STWeaponSniperVepr: 9800
         STWeaponSniperVSS: 8700
         STWeaponSniperMosin: 2450

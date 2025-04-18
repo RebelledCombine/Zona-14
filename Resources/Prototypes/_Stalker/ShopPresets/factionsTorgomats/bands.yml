@@ -89,30 +89,30 @@
     STWeaponShotgunSaiga12: 140
 
     #5.45x39
-    STWeaponRifleStalkerSaiga545: 400
-    STWeaponGunAKS74U: 745
-    STWeaponRifleStalkerAKS74: 1500
-    STSTWeaponRifleStalkerAK74M: 2175
+    STWeaponRifleSaiga545: 400
+    STWeaponRifleAKS74U: 745
+    STWeaponRifleAKS74: 1500
+    STWeaponRifleAK74M: 2175
     STWeaponRifleStalkerAK12: 2250
 
     #5.56x39
-    STWeaponRifleStalkerL85: 950
+    STWeaponRifleL85: 950
     STWeaponRifleM16: 1550
-    STWeaponRifleSig550: 1800
+    STWeaponRifleSIG550: 1800
     STWeaponRifleM4: 1600
-    WeaponRifleStalkerGalil: 2250
-    STWeaponRifleStalkerG36: 2175
+    STWeaponRifleGalil: 2250
+    STWeaponRifleG36: 2175
 
     #7.62x39
-    STWeaponRifleStalkerAKM: 1500
-    STWeaponRifleStalkerAK103: 2500
+    STWeaponRifleAKM: 1500
+    STWeaponRifleAK103: 2500
     STWeaponRifleStalkerAK104: 2750
-    WeaponMachineGunRPD: 4500
+    STWeaponMachineGunRPD: 4500
     STWeaponSniperSKS: 850
 
     #7.62x51
-    STWeaponRifleStalkerFAL: 750
-    STWeaponRifleStalkerGalatz: 2000
+    STWeaponRifleFAL: 750
+    STWeaponRifleGalatz: 2000
     STWeaponRifleSCARH: 1625
     STWeaponRifleM14: 2125
 
@@ -137,7 +137,7 @@
     STWeaponSMGPPSh41: 600
 
     #9x39
-    STWeaponRifleStalkerVAL: 7500
+    STWeaponRifleASVAL: 7500
     STWeaponSniperVSS: 6000
 
     #.45 acp
@@ -161,9 +161,9 @@
         STWeaponShotgunMossbergM88: 630 # T2
         STWeaponShotgunMP153: 900 # T3
           # 5,45x39
-        STWeaponRifleStalkerSaiga545: 1700
-        STWeaponGunAKS74U: 2000
-        STWeaponRifleStalkerAKS74: 4000
+        STWeaponRifleSaiga545: 1700
+        STWeaponRifleAKS74U: 2000
+        STWeaponRifleAKS74: 4000
         # Smg
         STWeaponSMGMP5: 1200
         STWeaponSMGVZ61: 500

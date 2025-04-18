@@ -235,8 +235,8 @@
     FlashlightSeclite: 50
     PowerCellHyper: 100
     HandheldGPSBasic: 50
-    STWeaponRifleSig550: 4
-    STWeaponRifleStalkerL85: 4
+    STWeaponRifleSIG550: 4
+    STWeaponRifleL85: 4
     STWeaponRifleM4: 6
     STWeaponShotgunSPAS: 6
     7mmBuckshotBox: 20

@@ -10,7 +10,7 @@
     sprite: _Stalker/Objects/Weapons/Guns/Snipers/vss.rsi
     size: Large
     shape:
-      - 0,0,6,1
+    - 0,0,6,1
   - type: Sprite
     sprite: _Stalker/Objects/Weapons/Guns/Snipers/vss.rsi
   - type: Gun
@@ -50,7 +50,7 @@
         priority: 1
         whitelist:
           tags:
-          - Cartridge939
+          - STCartridge939
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot

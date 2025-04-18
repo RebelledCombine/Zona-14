@@ -116,7 +116,7 @@
     1:
       - name: sponsor
         items:
-          STWeaponGunAKS74UWhite: 650
+          STWeaponRifleAKS74UWhite: 650
   contributorCategories:
     - name: contributor
       items:

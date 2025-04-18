@@ -7538,7 +7538,7 @@ entities:
     - type: Scope
       offset: 6
       zoom: 1.2
-- proto: STWeaponRifleStalkerAK103
+- proto: STWeaponRifleAK103
   entities:
   - uid: 1356
     components:

@@ -72,16 +72,16 @@
         STWeaponShotgunMossbergM88: 630 # T2
         STWeaponShotgunSPAS: 1300 # T3
           # Nato
-        STWeaponRifleStalkerL85: 2100
-        STWeaponRifleStalkerFAL: 1500
+        STWeaponRifleL85: 2100
+        STWeaponRifleFAL: 1500
         STWeaponRifleM16: 3100
         STWeaponRifleM14: 3750
           # Smg
         STWeaponSMGPP19: 2000
         STWeaponSMGMP5: 2000
           # Other
-        STWeaponRifleStalkerAKS74: 3500
-        STWeaponRifleStalkerAKM: 3500
+        STWeaponRifleAKS74: 3500
+        STWeaponRifleAKM: 3500
         WeaponPistolStalkerTT: 300
         WeaponPistolStalkerGlock: 250
         STWeaponSniperVepr: 4000

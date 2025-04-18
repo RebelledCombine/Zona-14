@@ -18,8 +18,8 @@
     LordVladimer:
     - name: Лулрд
       items:
-        STWeaponGunAKS74UWhite: 50
-        STWeaponRifleStalkerVAL: 800
+        STWeaponRifleAKS74UWhite: 50
+        STWeaponRifleASVAL: 800
         STWeaponShotgunSawedOfAnomaly: 50
         8mmBuckshotBox: 5
         939BPBox: 50
@@ -39,14 +39,14 @@
     KLeymi:
     - name: Персональная категория
       items:
-        STWeaponRifleAK103kamo: 10000
+        STWeaponRifleAK103Kamo: 10000
     QEWAEWA2:
     - name: Персональная категория
       items:
         STClothingOuterCoatNovember: 500
         STWeaponRifleHK416: 3500
         ClothingOuterArmorKeeper: 2500
-        STWeaponRifleStalkerA545: 3500
+        STWeaponRifleA545: 3500
         STWeaponRifleARX160: 7000
         ClothingHeadHelmetKeeper: 2000
     Deliko:
@@ -76,7 +76,7 @@
     Resads:
     - name: Персональная категория
       items:
-        STWeaponRifleSigSniper: 10000
+        STWeaponRifleSIG739: 10000
     Neko_Gecko:
     - name: Персональная категория
       items:

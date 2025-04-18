@@ -10,9 +10,9 @@
     # - name: shop-category-weapons
     #   priority: 1
     #   items:
-    #     WeaponMachineGunRPD: 9
+    #     STWeaponMachineGunRPD: 9
     #     STWeaponRifleM14: 15
-    #     STWeaponRifleStalkerAK103: 11
+    #     STWeaponRifleAK103: 11
     #     STWeaponSniperSVDS: 13
     - name: shop-category-armor
       priority: 2
@@ -45,9 +45,9 @@
         LgbtKnife: 1
         # STWeaponRevolverDanWesson715: 1
         # STWeaponSniperSKS: 3
-        # STWeaponGunAKS74U: 1
-        WeaponRifleStalkerGroza545: 14
-        # STSTWeaponRifleStalkerAK74M: 4
+        # STWeaponRifleAKS74U: 1
+        STWeaponRifleOC14: 14
+        # STWeaponRifleAK74M: 4
         STWeaponRifleStalkerAK74: 3
     - name: shop-category-armor
       priority: 2
@@ -191,23 +191,23 @@
         STWeaponShotgunMP153: 900 # T2
         STWeaponShotgunSaiga12: 3150 # T4
           # 5,45x39
-        STWeaponGunAKS74U: 1490
-        STWeaponRifleStalkerAKS74: 3000
-        STSTWeaponRifleStalkerAK74M: 4350
-        WeaponMachineGunRPD: 9000
+        STWeaponRifleAKS74U: 1490
+        STWeaponRifleAKS74: 3000
+        STWeaponRifleAK74M: 4350
+        STWeaponMachineGunRPD: 9000
         STWeaponSniperSVDS: 11000
           # Smg
         STWeaponSMGPP91: 750
         STWeaponSMGPP19: 1700
         STWeaponSMGPP1901: 1500
           # Other
-        STWeaponRifleStalkerAK103: 5000
+        STWeaponRifleAK103: 5000
         WeaponPistolStalkerPM: 100 #T1
         WeaponPistolStalkerAPS: 500 #T2
         WeaponPistolStalkerTT: 550
         STWeaponSniperMosin: 1000
-        STWeaponRifleStalkerAKM: 3000
-        STWeaponRifleStalkerVAL: 15000
+        STWeaponRifleAKM: 3000
+        STWeaponRifleASVAL: 15000
         STWeaponSniperVSS: 12000
         ArmyCrateNewStandart: 6000
         ArmyCrateNewOfficer: 9000
@@ -499,10 +499,10 @@
       priority: 5
       items:
           # 5,45x39
-        STWeaponGunAKS74U: 1490
-        STWeaponGunAKS74UBlack: 1690
-        STWeaponRifleStalkerAKS74: 3000
-        STWeaponRifleStalkerAKS74Green: 3250
+        STWeaponRifleAKS74U: 1490
+        STWeaponRifleAKS74UBlack: 1690
+        STWeaponRifleAKS74: 3000
+        STWeaponRifleAKS74Green: 3250
 
     - name: shop-category-medicine
       priority: 6

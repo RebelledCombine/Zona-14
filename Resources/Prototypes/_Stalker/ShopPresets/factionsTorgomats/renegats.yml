@@ -77,9 +77,9 @@
         STWeaponShotgunMP155T: 45 #T0.5
         STWeaponShotgunTOZ34: 200 # T1
           # 5,45x39
-        STWeaponRifleStalkerSaiga545: 800
-        STWeaponGunAKS74U: 1490
-        STWeaponRifleStalkerAKS74: 3000
+        STWeaponRifleSaiga545: 800
+        STWeaponRifleAKS74U: 1490
+        STWeaponRifleAKS74: 3000
         STWeaponSMGPP19: 1700
           # Other
         STWeaponRevolverRugerRedhawk: 300

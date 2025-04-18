@@ -11,9 +11,9 @@
         STWeaponShotgunMP153: 1100 # T2
         STWeaponShotgunSaiga12: 3200 # T4
           # 5,45x39
-        STWeaponRifleStalkerAKS74: 3200
-        WeaponRifleStalkerGroza545: 3500
-        STSTWeaponRifleStalkerAK74M: 4800
+        STWeaponRifleAKS74: 3200
+        STWeaponRifleOC14: 3500
+        STWeaponRifleAK74M: 4800
           # Smg
         STWeaponSMGPP1901: 2500
           # Other

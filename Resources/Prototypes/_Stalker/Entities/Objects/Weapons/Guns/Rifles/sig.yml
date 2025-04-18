@@ -1,9 +1,7 @@
 - type: entity
-  name: Sig-550
-  suffix: ST
+  abstract: true
   parent: STBaseWeaponRifle
-  id: STWeaponRifleSig550
-  description: Немецкая винтовка СИГ под 5.56.
+  id: STBaseWeaponRifleSIG
   components:
   - type: STWeight
     self: 3.5
@@ -19,7 +17,6 @@
       path: /Audio/_Stalker/Effects/Guns/scar.ogg
       params:
         volume: -2
-    projectileSpeed: 30
     minAngle: 50
     maxAngle: 90
     angleIncrease: 3
@@ -28,9 +25,9 @@
     ShotsPerBurstModified: 3
     selectedMode: Burst
     availableModes:
-      - Burst
-      - SemiAuto
-      - FullAuto
+    - Burst
+    - SemiAuto
+    - FullAuto
   - type: ItemSlots
     slots:
       gun_magazine:
@@ -41,33 +38,39 @@
         priority: 4
         whitelist:
           tags:
-            - Magazine556
+          - Magazine556
       gun_module_muzzle:
         name: Muzzle
         priority: 3
         whitelist:
           tags:
-            - STWeaponModuleRifleSilencerNato
+          - STWeaponModuleRifleSilencerNato
       gun_module_scope:
         name: Scope
         priority: 2
         whitelist:
           tags:
-            - STWeaponModuleRifleScopeNato
+          - STWeaponModuleRifleScopeNato
       gun_chamber:
         name: Chamber
         startingItem:
         priority: 1
         whitelist:
           tags:
-            - STCartridge556
+          - STCartridge556
 
 - type: entity
-  name: SigXI 739
-  suffix: ST, Skin
-  parent: STBaseWeaponRifle
-  id: STWeaponRifleSigSniper
-  description: Немецкая винтовка СИГ, модифицированная в карабин под советский 7.62х39. Имеет встроенный оптический прицел.
+  abstract: true
+  parent: STBaseWeaponRifleSIG
+  id: STWeaponRifleSIG550
+  name: SIG-550
+  description: Swiss rifle with impeccable reputation. Appears in the Zone with western mercenaries and scientists. Famous for tight groupings and reliable mechanics but demands quality ammunition.
+
+- type: entity
+  parent: STBaseWeaponRifleSIG
+  id: STWeaponRifleSIG739
+  name: SIG-739 "Precision"
+  description: Custom sniper variant chambered in Soviet 7.62x39mm. Integrated scope and modified barrel make it perfect for long-range engagements in the Zone. Rare and expensive.
   components:
   - type: STWeight
     self: 5
@@ -86,7 +89,6 @@
       path: /Audio/_Stalker/Effects/Guns/sks_shoot.ogg
       params:
         volume: 0
-    projectileSpeed: 35
     minAngle: 40
     maxAngle: 100
     angleIncrease: 2

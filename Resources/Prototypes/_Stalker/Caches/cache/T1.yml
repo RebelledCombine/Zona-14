@@ -35,7 +35,7 @@
           prob: 0.005
         - id: STWeaponShotgunMP133
           prob: 0.005
-        - id: STWeaponRifleStalkerSaiga545
+        - id: STWeaponRifleSaiga545
           prob: 0.005
         - id: BoxArtcont
           prob: 0.01

@@ -78,8 +78,8 @@
          # 7,62x25
         WeaponPistolStalkerTT: 300 #T1
           # 5,45x39
-        STWeaponRifleStalkerSaiga545: 1250 # T3
-        STWeaponGunAKS74U: 1750 # T3
+        STWeaponRifleSaiga545: 1250 # T3
+        STWeaponRifleAKS74U: 1750 # T3
           # Other
         STWeaponSMGMP5: 2000
         WeaponPistolStalkerAPS: 600 #T2
@@ -311,7 +311,7 @@
     1:
       - name: sponsor
         items:
-          STWeaponGunAKS74UWhite: 650
+          STWeaponRifleAKS74UWhite: 650
   contributorCategories:
     - name: contributor
       items:

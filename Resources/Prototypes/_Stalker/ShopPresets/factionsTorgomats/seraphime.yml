@@ -116,8 +116,8 @@
         STWeaponShotgunBenelliM4Super90: 220
         STWeaponShotgunSaiga12Seraphim: 560
         # 5,45x39
-        STWeaponRifleStalkerSaiga545: 225
-        STWeaponGunAKS74U: 315
+        STWeaponRifleSaiga545: 225
+        STWeaponRifleAKS74U: 315
         STWeaponRifleStalkerAK12Sera: 900
         STWeaponRifleStalkerAK12: 900
         # Smg
@@ -613,9 +613,9 @@
         STWeaponShotgunMossbergM88: 500 # T2
         STWeaponShotgunBenelliM4Super90Seraphim: 1050
           # 5,45x39
-        STWeaponRifleStalkerSaiga545: 630
-        STWeaponGunAKS74U: 1530
-        STWeaponRifleStalkerAKS74: 2000
+        STWeaponRifleSaiga545: 630
+        STWeaponRifleAKS74U: 1530
+        STWeaponRifleAKS74: 2000
         STWeaponRifleStalkerAK12Sera: 6190
         STWeaponSniperSVUSeraphim: 7900
           # Smg

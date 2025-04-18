@@ -72,12 +72,12 @@
         STWeaponShotgunMossbergM88: 630 # T2
         STWeaponShotgunProtecta: 2610
           # Nato
-        STWeaponRifleStalkerFAL: 1500
-        STWeaponRifleStalkerG36: 4250
+        STWeaponRifleFAL: 1500
+        STWeaponRifleG36: 4250
         STWeaponRifleM4: 3200
-        STWeaponRifleSig550: 3700
+        STWeaponRifleSIG550: 3700
         STWeaponRifleSCARH: 3250
-        STWeaponRifleStalkerL85: 1900
+        STWeaponRifleL85: 1900
           # Smg
         STWeaponSMGMP5: 1800
           # Other
