@@ -73,3 +73,5 @@
     requireWielding: true
     offset: 9
     useInHand: false
+  - type: STWeaponDamageFalloff
+    falloffMultiplier: 0
