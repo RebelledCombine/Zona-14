@@ -18,7 +18,7 @@ public sealed partial class STProjectileAccuracyComponent : Component
     };
 
     [DataField, AutoNetworkedField]
-    public float TargetOccluded = -0.15f;
+    public float TargetOccluded = 0.15f;
 
     /// <summary>
     /// Minimum hit chance.
