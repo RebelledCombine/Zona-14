@@ -432,7 +432,7 @@
     damageModifierSet: Metallic
   - type: IconSmooth
     key: walls
-    base: necropolis
+    base: metal
 
 - type: entity
   parent: BaseWall
