@@ -46,7 +46,7 @@ public sealed class STWeaponModuleSystem : STSharedWeaponModuleSystem
         if (spriteComponent.BaseRSI is null)
             return;
 
-        if (!_weaponModuleQuery.Resolve(ent, ref ent.Comp))
+        if (!_weaponModuleQuery.Resolve(ent, ref ent.Comp, logMissing: false))
             return;
 
         var prototype = MetaData(ent).EntityPrototype;
