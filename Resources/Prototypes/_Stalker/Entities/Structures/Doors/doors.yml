@@ -44,6 +44,9 @@
       fx: EffectRCDDeconstruct6
     - type: Occluder
     - type: BlockWeather
+    - type: IconSmooth
+      key: xd
+      mode: NoSprite
 
 - type: entity
   id: StalkerMetalDoor
