@@ -3,8 +3,8 @@
 - type: entity
   id: Bullet918PGJ
   name: bullet (9х18 auto)
-  parent: BaseBullet
-  noSpawn: true
+  parent: STBaseBullet
+  categories: [ HideSpawnMenu ]
   components:
   - type: TimedDespawn
     lifetime: 2
@@ -20,7 +20,7 @@
   id: Bullet918PST
   name: bullet (9х18 auto)
   parent: Bullet918PGJ
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
     projectileClass: 2
@@ -32,7 +32,7 @@
   id: Bullet918SP7
   name: bullet (9х18 auto)
   parent: Bullet918PGJ
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
     projectileClass: 0
@@ -46,7 +46,7 @@
   id: Bullet918PBM
   name: bullet (9х18 auto)
   parent: Bullet918PGJ
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
     projectileClass: 3
@@ -73,8 +73,8 @@
 # - type: entity
 #   id: Bullet918Radiation
 #   name: bullet (9х18 auto) radiation
-#   parent: BaseBullet
-#   noSpawn: true
+#   parent: STBaseBullet
+#   categories: [ HideSpawnMenu ]
 #   components:
 #   - type: Projectile
 #     projectileClass: 2
@@ -86,7 +86,7 @@
 # - type: entity
 #   id: Bullet918Tranquilizer
 #   name: bullet (9х18 auto) sleeping
-#   parent: BaseBullet
+#   parent: STBaseBullet
 #   components:
 #   - type: Projectile
 #     projectileClass: 2
@@ -98,7 +98,7 @@
 #       ammo:
 #         maxVol: 15
 #   - type: CartridgeAmmo
-#     proto: Cartridge918Tranq
+#     proto: STCartridge918Tranq
 #     count: 1
 #   - type: RefillableSolution
 #     solution: ammo
@@ -109,9 +109,9 @@
 #     solution: ammo
 
 # - type: entity
-#   id: Cartridge918Tranq
+#   id: STCartridge918Tranq
 #   name: Патрон (9х18) tranq
-#   parent: BaseCartridge918
+#   parent: BaseSTCartridge918
 #   components:
 #   - type: CartridgeAmmo
 #     proto: Bullet918Tranquilizer
@@ -129,7 +129,7 @@
 # - type: entity
 #   id: Bullet918Freezing
 #   name: bullet (9х18 auto) freeze
-#   parent: BaseBullet
+#   parent: STBaseBullet
 #   components:
 #   - type: Projectile
 #     projectileClass: 2
@@ -141,7 +141,7 @@
 #       ammo:
 #         maxVol: 150
 #   - type: CartridgeAmmo
-#     proto: Cartridge918Freezing
+#     proto: STCartridge918Freezing
 #     count: 1
 #   - type: RefillableSolution
 #     solution: ammo
@@ -152,9 +152,9 @@
 #     solution: ammo
 
 # - type: entity
-#   id: Cartridge918Freezing
+#   id: STCartridge918Freezing
 #   name: Патрон (9х18) freeze
-#   parent: BaseCartridge918
+#   parent: BaseSTCartridge918
 #   components:
 #   - type: CartridgeAmmo
 #     proto: Bullet918Tranquilizer

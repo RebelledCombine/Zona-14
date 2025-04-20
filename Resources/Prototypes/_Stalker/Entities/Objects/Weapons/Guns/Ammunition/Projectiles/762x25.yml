@@ -3,8 +3,8 @@
 - type: entity
   id: Bullet725PGL
   name: bullet (7.62х25 rifle)
-  parent: BaseBullet
-  noSpawn: true
+  parent: STBaseBullet
+  categories: [ HideSpawnMenu ]
   components:
   - type: TimedDespawn
     lifetime: 2
@@ -19,8 +19,8 @@
 - type: entity
   id: Bullet725PTGJ
   name: bullet (7.62х25 rifle)
-  parent: BaseBullet
-  noSpawn: true
+  parent: STBaseBullet
+  categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
     projectileClass: 2
@@ -31,8 +31,8 @@
 - type: entity
   id: Bullet725LRNPC
   name: bullet (7.62х25 rifle)
-  parent: BaseBullet
-  noSpawn: true
+  parent: STBaseBullet
+  categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
     projectileClass: 0
@@ -45,8 +45,8 @@
 - type: entity
   id: Bullet725PSTGJ
   name: bullet (7.62х25 rifle)
-  parent: BaseBullet
-  noSpawn: true
+  parent: STBaseBullet
+  categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
     projectileClass: 3

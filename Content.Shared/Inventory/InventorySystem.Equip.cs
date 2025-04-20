@@ -1,4 +1,5 @@
 using System.Diagnostics.CodeAnalysis;
+using Content.Shared._Stalker.PullDoAfter;
 using Content.Shared.Armor;
 using Content.Shared.Clothing.Components;
 using Content.Shared.DoAfter;
@@ -10,6 +11,7 @@ using Content.Shared.Inventory.Events;
 using Content.Shared.Item;
 using Content.Shared.Movement.Systems;
 using Content.Shared.Popups;
+using Content.Shared.Strip;
 using Content.Shared.Strip.Components;
 using Content.Shared.Tag;
 using Content.Shared.Whitelist;
@@ -33,6 +35,7 @@ public abstract partial class InventorySystem
     [Dependency] private readonly IGameTiming _gameTiming = default!;
     [Dependency] private readonly SharedTransformSystem _transform = default!;
     [Dependency] private readonly EntityWhitelistSystem _whitelistSystem = default!;
+    [Dependency] private readonly SharedStrippableSystem _strippable = default!;
     [Dependency] private readonly TagSystem _tagSystem = default!; // Stalker-Changes
 
     [ValidatePrototypeId<ItemSizePrototype>]
@@ -158,24 +161,26 @@ public abstract partial class InventorySystem
             return false;
         }
 
+
+
         if (checkDoafter &&
             clothing != null &&
             clothing.EquipDelay > TimeSpan.Zero &&
             (clothing.Slots & slotDefinition.SlotFlags) != 0 &&
             _containerSystem.CanInsert(itemUid, slotContainer))
-        {
+        { // stalker-changes-start
             var args = new DoAfterArgs(
                 EntityManager,
                 actor,
-                clothing.EquipDelay,
+                TryComp<PullDoAfterComponent>(itemUid, out var pullDoAfterComponent) ? TimeSpan.FromSeconds(pullDoAfterComponent.PullTime) : clothing.EquipDelay,
                 new ClothingEquipDoAfterEvent(slot),
                 itemUid,
                 target,
                 itemUid)
             {
-                BreakOnMove = true,
+                BreakOnMove = false,
                 NeedHand = true,
-            };
+            }; // stalker-changes-end
 
             _doAfter.TryStartDoAfter(args);
             return false;
@@ -268,7 +273,40 @@ public abstract partial class InventorySystem
             {
                 return false;
             }
-        } // Stalker-Changes-End
+        } 
+		
+		if (slot == "cloak" && TryGetSlotEntity(target, "outerClothing", out var outerCloakItem, inventory))
+        {
+            if (_tagSystem.HasTag(itemUid, "BlockCloak") && _tagSystem.HasTag(outerCloakItem.Value, "BlockCloak"))
+            {
+                return false;
+            }
+        }
+
+        if (slot == "outerClothing" && TryGetSlotEntity(target, "cloak", out var cloakItem, inventory))
+        {
+            if (_tagSystem.HasTag(itemUid, "BlockCloak") && _tagSystem.HasTag(cloakItem.Value, "BlockCloak"))
+            {
+                return false;
+            }
+        }
+		
+		if (slot == "back" && TryGetSlotEntity(target, "outerClothing", out var outerBackItem, inventory))
+        {
+            if (_tagSystem.HasTag(itemUid, "BlockBack") && _tagSystem.HasTag(outerBackItem.Value, "BlockBack"))
+            {
+                return false;
+            }
+        }
+
+        if (slot == "outerClothing" && TryGetSlotEntity(target, "back", out var backItem, inventory))
+        {
+            if (_tagSystem.HasTag(itemUid, "BlockBack") && _tagSystem.HasTag(backItem.Value, "BlockBack"))
+            {
+                return false;
+            }
+        }// Stalker-Changes-End
+		
         if (slotDefinition == null && !TryGetSlot(target, slot, out slotDefinition, inventory: inventory))
             return false;
 
@@ -452,27 +490,27 @@ public abstract partial class InventorySystem
             return false;
         }
 
-        //we need to do this to make sure we are 100% removing this entity, since we are now dropping dependant slots
-        if (!force && !_containerSystem.CanRemove(removedItem.Value, slotContainer))
+        // we need to do this to make sure we are 100% removing this entity, since we are now dropping dependant slots
+        if (!force && !_containerSystem.CanRemove(removedItem.Value, slotContainer)) // stalker-changes-start
             return false;
 
         if (checkDoafter &&
             Resolve(removedItem.Value, ref clothing, false) &&
             (clothing.Slots & slotDefinition.SlotFlags) != 0 &&
             clothing.UnequipDelay > TimeSpan.Zero)
-        {
+        { // stalker-changes-start
             var args = new DoAfterArgs(
                 EntityManager,
                 actor,
-                clothing.UnequipDelay,
+                TryComp<PullDoAfterComponent>(removedItem, out var pullDoAfterComponent) ? TimeSpan.FromSeconds(pullDoAfterComponent.PullTime) : clothing.UnequipDelay,
                 new ClothingUnequipDoAfterEvent(slot),
                 removedItem.Value,
                 target,
                 removedItem.Value)
             {
-                BreakOnMove = true,
+                BreakOnMove = false,
                 NeedHand = true,
-            };
+            }; // stalker-changes-end
 
             _doAfter.TryStartDoAfter(args);
             return false;

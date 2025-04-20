@@ -3,6 +3,10 @@
   id: BlockMask
 - type: Tag
   id: BlockBelt
+- type: Tag
+  id: BlockBack
+- type: Tag
+  id: BlockCloak
 
 ###============------------------------------------============###
 ###============------------[New Одежда]------------============###
@@ -19,7 +23,24 @@
   abstract: true
   components:
   - type: RepositoryItem
-    categoryName: Броня
+    categoryName: Экипировка
+  - type: PullDoAfter
+    pullTime: 6
+
+- type: entity
+  parent: ClothingMaskGas
+  id: STClothingMaskGas
+  suffix: ST
+  abstract: true
+  components:
+  - type: RepositoryItem
+    categoryName: Экипировка
+  - type: PullDoAfter
+    pullTime: 2
+  - type: HideLayerClothing
+    slots:
+    - Snout
+    - FacialHair
 
 - type: entity
   parent: ClothingOuterBaseLarge
@@ -29,6 +50,8 @@
   components:
   - type: RepositoryItem
     categoryName: Броня
+  - type: PullDoAfter
+    pullTime: 6
 
 - type: entity
   parent: ClothingOuterArmorBasic
@@ -41,13 +64,15 @@
   id: STClothingOuterArmorStorageBasic
   name: база бронекостюмов с подсумками
   suffix: ST
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   # abstract: true
   components:
   - type: Tag
     tags:
       - BlockBelt
       - Folder
+  - type: RepositoryItem
+    categoryName: Экипировка
   - type: Storage
     maxItemSize: Normal
     grid:
@@ -73,7 +98,7 @@
   id: ClothingOuterArmorStorageToggleableBasic
   name: база бронекостюмов с подсумками
   suffix: ST
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   abstract: true
   components:
   - type: Storage
@@ -90,6 +115,8 @@
     tags:
       - BlockBelt
       - Folder
+  - type: RepositoryItem
+    categoryName: Экипировка
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHatHoodWinterDefault
     slot: head
@@ -110,7 +137,7 @@
   name: база встроенных голов
   suffix: ST
   description: Капюшоны, шлема и т.п. тема
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     state: icon
@@ -135,12 +162,16 @@
   - type: Clothing
     slots:
     - HEAD
+  - type: RepositoryItem
+    categoryName: Экипировка
   - type: Sprite
     state: icon
   - type: Tag
     tags:
       - ClothMade
       - WhitelistChameleon
+  - type: PullDoAfter
+    pullTime: 2
 
 - type: entity
   abstract: true
@@ -148,7 +179,7 @@
   id: ClothingHeadStalkerLightBase
   name: база шлемов с фонариком
   suffix: ST
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     layers:
@@ -217,6 +248,8 @@
     areaInsert: true
   - type: Item
     size: Ginormous
+  - type: RepositoryItem
+    categoryName: Снаряжение
   - type: ContainerContainer
     containers:
       storagebase: !type:Container
@@ -228,7 +261,8 @@
   - type: Dumpable
   - type: Tag
     tags:
-      - Folder
+    - Folder
+    - BlockBelt
 
 - type: entity
   abstract: true
@@ -253,10 +287,15 @@
     equipDelay: 2
     slots:
     - CLOAK
+  - type: RepositoryItem
+    categoryName: Экипировка
   - type: Item
     size: Large
     shape:
       - 0,0,3,2
+  - type: Tag
+    tags:
+    - BlockCloak
 
 - type: entity
   parent: ClothingBackpackDuffel
@@ -264,6 +303,8 @@
   suffix: ST
   abstract: true
   components:
+    - type: PullDoAfter
+      pullTime: 3
     - type: ClothingSpeedModifier
       walkModifier: 1
       sprintModifier: 1
@@ -275,11 +316,12 @@
       quickInsert: true
       areaInsert: true
     - type: RepositoryItem
-      categoryName: Рюкзаки
+      categoryName: Снаряжение
     - type: Dumpable
     - type: Tag
       tags:
       - Folder
+      - BlockBack
     - type: Craftable
 
 - type: entity

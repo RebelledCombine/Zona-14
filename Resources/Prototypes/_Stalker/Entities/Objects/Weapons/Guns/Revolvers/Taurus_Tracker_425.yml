@@ -1,5 +1,4 @@
 
-
 - type: entity
   parent: STBaseWeaponGameRevolver
   id: STWeaponRevolverTaurusTracker455
@@ -28,11 +27,11 @@
       whitelist:
         tags:
           - Cartridge45ACP
-          - SpeedLoader45ACP
-      proto: Cartridge45ACPLFMJ
+          - STSpeedLoader45ACP
+      proto: Null
       capacity: 5
-      chambers: [ True, True, True, True, True, True ]
-      ammoSlots: [ null, null, null, null, null, null ]
+      chambers: [ True, True, True, True, True ]
+      ammoSlots: [ null, null, null, null, null ]
       soundEject:
         path: /Audio/Weapons/Guns/MagOut/revolver_magout.ogg
       soundInsert:

@@ -88,8 +88,8 @@
     species: Human
   - type: SlowOnDamage
     speedModifierThresholds:
-      60: 0.7
-      80: 0.5
+      50: 0.7 # stalker-changes
+      60: 0.5 # stalker-changes
   - type: Fixtures
     fixtures: # TODO: This needs a second fixture just for mob collisions.
       fix1:
@@ -290,7 +290,7 @@
     # stalker-changes-start
   - type: Stagger
   - type: Inventory
-    templateId: stalkerhuman
+    templateId: STMain
   - type: PsyonicsShieldVisuals
     sprite: _Stalker/Effects/psyonic_shield.rsi
     state: Standing
@@ -313,8 +313,8 @@
   - type: STLay
   - type: RespawnOnDeath
   - type: ApproachEmitter
-    range: 20
-    minRange: 15
+    range: 30
+    minRange: 20
     useMinRange: true
     # stalker-changes-end
 

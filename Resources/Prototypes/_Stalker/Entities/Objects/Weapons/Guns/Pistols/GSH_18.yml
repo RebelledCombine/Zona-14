@@ -3,7 +3,7 @@
   parent: STBaseWeaponPistol
   id: WeaponPistolGSH18
   suffix: ST
-  description: истолет ГШ-18 был разработан в конце 1990-х годов в тульском Конструкторском бюро приборостроения (КБП). Название он получил по первым буквам фамилий конструкторов, под руководством которых проектировался – Василия Грязева и Аркадия Шипунова, и числа «18», означающего емкость магазина.
+  description: Пистолет ГШ-18 был разработан в конце 1990-х годов в тульском Конструкторском бюро приборостроения (КБП). Название он получил по первым буквам фамилий конструкторов, под руководством которых проектировался – Василия Грязева и Аркадия Шипунова, и числа «18», означающего емкость магазина.
   components:
     - type: STWeight
       self: 0.47
@@ -45,11 +45,11 @@
               - STModuleAutoSear
         gun_chamber:
           name: Chamber
-          startingItem: Cartridge919PSOGJ
+          startingItem: STCartridge919PSOGJ
           priority: 1
           whitelist:
             tags:
-              - Cartridge919
+              - STCartridge919
     - type: ContainerContainer
       containers:
         gun_magazine: !type:ContainerSlot
