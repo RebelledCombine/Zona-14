@@ -85,9 +85,9 @@
 - type: stBand
   id: STAnomalistsBand
   name: Anomalists
-  factionId: Anomalists
+  factionId: Stalker
   maxMembers: 10
-  managingRankId: 3
+  managingRankId: 2
   hierarchy:
     1: StalkerAnomalist
     2: StalkerAnomalistGuardian

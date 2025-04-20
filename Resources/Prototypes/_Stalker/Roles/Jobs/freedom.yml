@@ -79,8 +79,8 @@
   id: STFreedomBand
   name: Freedom
   factionId: Freedom
-  maxMembers: 10
-  managingRankId: 3
+  maxMembers: 20
+  managingRankId: 2
   hierarchy:
     1: StalkerFreedom
     2: StalkerHeadFreedom

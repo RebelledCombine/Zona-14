@@ -22,8 +22,14 @@ public sealed partial class STWarZonePrototype : IPrototype
     public HashSet<BaseWarZoneRequirenment>? Requirements;
 
     [DataField]
-    public int CaptureCooldownHours { get; set; } = 12;
+    public float CaptureCooldownHours { get; set; } = 12;
 
     [DataField]
     public bool ShouldAwardWhenDefenderPresent { get; set; } = false;
+    
+    /// <summary>
+    /// Time required to capture this zone in seconds
+    /// </summary>
+    [DataField("captureTime"), ViewVariables]
+    public float CaptureTime { get; set; } = 1800f; // Default 30 minutes
 }
