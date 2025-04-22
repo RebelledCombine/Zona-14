@@ -1,12 +1,10 @@
 using System.Linq;
 using System.Threading.Tasks;
-using Content.Server._Stalker.Sponsors;
 using Content.Server._Stalker.StalkerDB;
 using Content.Server._Stalker.Storage;
 using Content.Server._Stalker.Teleports;
 using Content.Server.Administration.Logs;
 using Content.Server.Mind;
-using Content.Shared._Stalker.Sponsors;
 using Content.Shared._Stalker.StalkerRepository;
 using Content.Shared._Stalker.Storage;
 using Content.Shared._Stalker.Weight;
@@ -27,19 +25,17 @@ using Content.Shared.Mind.Components;
 using Content.Shared.Storage;
 using Content.Shared.Tag;
 using Content.Shared.UserInterface;
-using Content.Shared.VendingMachines;
 using Content.Shared.Weapons.Ranged.Components;
 using Content.Shared.Whitelist;
 using Robust.Server.GameObjects;
 using Robust.Server.Player;
-using Robust.Shared.Configuration;
 using Robust.Shared.Containers;
 using Robust.Shared.Map;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization.Manager;
 using RepositoryEjectMessage = Content.Shared._Stalker.StalkerRepository.RepositoryEjectMessage;
-using SponsorsManager = Content.Server._Stalker.Sponsors.SponsorManager.SponsorsManager;
+using Content.Server._Stalker.Sponsors.SponsorManager;
 
 namespace Content.Server._Stalker.StalkerRepository;
 public sealed class StalkerRepositorySystem : EntitySystem

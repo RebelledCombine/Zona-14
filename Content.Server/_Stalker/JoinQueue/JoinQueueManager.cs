@@ -1,7 +1,5 @@
 using System.Linq;
-using System.Threading.Tasks;
 using Content.Server._Stalker.Discord.DiscordAuth;
-using Content.Server._Stalker.Sponsors;
 using Content.Server.Connection;
 using Content.Shared._Stalker.CCCCVars;
 using Content.Shared._Stalker.JoinQueue;
@@ -13,7 +11,7 @@ using Robust.Shared.Enums;
 using Robust.Shared.Network;
 using Robust.Shared.Player;
 using Robust.Shared.Timing;
-using SponsorsManager = Content.Server._Stalker.Sponsors.SponsorManager.SponsorsManager;
+using Content.Server._Stalker.Sponsors.SponsorManager;
 
 namespace Content.Server._Stalker.JoinQueue;
 

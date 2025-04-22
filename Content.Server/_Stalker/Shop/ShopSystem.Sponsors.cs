@@ -1,11 +1,10 @@
 using System.Linq;
-using Content.Server._Stalker.Sponsors;
+using Content.Server._Stalker.Sponsors.SponsorManager;
 using Content.Shared._Stalker.Shop;
 using Content.Shared._Stalker.Shop.Prototypes;
 using Content.Shared._Stalker.Sponsors;
 using Robust.Shared.Network;
 using Robust.Shared.Prototypes;
-using SponsorsManager = Content.Server._Stalker.Sponsors.SponsorManager.SponsorsManager;
 
 namespace Content.Server._Stalker.Shop;
 

@@ -1,6 +1,5 @@
 using Content.Server._Stalker.Discord.DiscordAuth;
 using Content.Server._Stalker.JoinQueue;
-using Content.Server._Stalker.Sponsors;
 using Content.Server.Acz;
 using Content.Server.Administration;
 using Content.Server.Administration.Logs;
@@ -26,7 +25,6 @@ using Content.Server.Preferences.Managers;
 using Content.Server.ServerInfo;
 using Content.Server.ServerUpdates;
 using Content.Server.Voting.Managers;
-using Content.Shared._Stalker.CCCCVars;
 using Content.Shared.CCVar;
 using Content.Shared.Kitchen;
 using Content.Shared.Localizations;
@@ -37,7 +35,7 @@ using Robust.Shared.ContentPack;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
 using Robust.Shared.Utility;
-using SponsorsManager = Content.Server._Stalker.Sponsors.SponsorManager.SponsorsManager;
+using Content.Server._Stalker.Sponsors.SponsorManager;
 
 namespace Content.Server.Entry
 {
