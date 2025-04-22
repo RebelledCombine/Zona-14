@@ -3,7 +3,7 @@ using Content.Shared._Stalker.Sponsors;
 using Robust.Shared.Network;
 using Robust.Shared.Prototypes;
 
-namespace Content.Server._Stalker.Sponsors;
+namespace Content.Server._Stalker.Sponsors.SponsorManager;
 
 public sealed partial class SponsorsManager
 {
@@ -52,13 +52,13 @@ public sealed partial class SponsorsManager
         // dry run
         if (args is null)
         {
-            _sponsorPrototypes = _prototype
-                .EnumeratePrototypes<SponsorPrototype>()
-                .ToHashSet();
+            _sponsorPrototypes = Enumerable
+                .ToHashSet<SponsorPrototype>(_prototype
+                    .EnumeratePrototypes<SponsorPrototype>());
             
-            _contributorPrototype = _prototype
-                .EnumeratePrototypes<ContributorPrototype>()
-                .ToHashSet()
+            _contributorPrototype = Enumerable
+                .ToHashSet<ContributorPrototype>(_prototype
+                    .EnumeratePrototypes<ContributorPrototype>())
                 .FirstOrDefault();
             
             return;
@@ -67,13 +67,13 @@ public sealed partial class SponsorsManager
         if (!args.WasModified<SponsorPrototype>() || !args.WasModified<ContributorPrototype>())
             return;
 
-        _sponsorPrototypes = _prototype
-            .EnumeratePrototypes<SponsorPrototype>()
-            .ToHashSet();
+        _sponsorPrototypes = Enumerable
+            .ToHashSet<SponsorPrototype>(_prototype
+                .EnumeratePrototypes<SponsorPrototype>());
             
-        _contributorPrototype = _prototype
-            .EnumeratePrototypes<ContributorPrototype>()
-            .ToHashSet()
+        _contributorPrototype = Enumerable
+            .ToHashSet<ContributorPrototype>(_prototype
+                .EnumeratePrototypes<ContributorPrototype>())
             .FirstOrDefault();
 
         ValidateContributorPrototype();

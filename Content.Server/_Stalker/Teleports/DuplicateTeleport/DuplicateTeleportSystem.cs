@@ -15,6 +15,7 @@ using Robust.Shared.Map.Components;
 using Robust.Shared.Network;
 using Robust.Shared.Physics.Events;
 using Robust.Shared.Player;
+using SponsorSystem = Content.Server._Stalker.Sponsors.System.SponsorSystem;
 
 namespace Content.Server._Stalker.Teleports.DuplicateTeleport;
 

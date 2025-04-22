@@ -13,13 +13,13 @@ using Robust.Server.Player;
 using Robust.Shared.Console;
 using Robust.Shared.Prototypes;
 
-namespace Content.Server._Stalker.Sponsors;
+namespace Content.Server._Stalker.Sponsors.System;
 
 public sealed partial class SponsorSystem : EntitySystem
 {
     [Dependency] private readonly IConsoleHost _consoleHost = default!;
     [Dependency] private readonly IPlayerManager _playerManager = default!;
-    [Dependency] private readonly SponsorsManager _sponsors = default!;
+    [Dependency] private readonly SponsorManager.SponsorsManager _sponsors = default!;
     [Dependency] private readonly StalkerRepositorySystem _repositorySystem = default!;
     [Dependency] private readonly IPrototypeManager _prototype = default!;
     [Dependency] private readonly SharedHandsSystem _hands = default!;

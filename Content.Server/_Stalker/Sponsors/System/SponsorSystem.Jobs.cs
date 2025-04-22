@@ -1,4 +1,3 @@
-using System.Linq;
 using Content.Server.Players.JobWhitelist;
 using Content.Shared._Stalker.Sponsors;
 using Content.Shared.Roles;
@@ -6,7 +5,7 @@ using Robust.Shared.Network;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
 
-namespace Content.Server._Stalker.Sponsors;
+namespace Content.Server._Stalker.Sponsors.System;
 
 public sealed partial class SponsorSystem
 {

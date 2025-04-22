@@ -13,6 +13,7 @@ using Robust.Shared.Enums;
 using Robust.Shared.Network;
 using Robust.Shared.Player;
 using Robust.Shared.Timing;
+using SponsorsManager = Content.Server._Stalker.Sponsors.SponsorManager.SponsorsManager;
 
 namespace Content.Server._Stalker.JoinQueue;
 

@@ -39,6 +39,7 @@ using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization.Manager;
 using RepositoryEjectMessage = Content.Shared._Stalker.StalkerRepository.RepositoryEjectMessage;
+using SponsorsManager = Content.Server._Stalker.Sponsors.SponsorManager.SponsorsManager;
 
 namespace Content.Server._Stalker.StalkerRepository;
 public sealed class StalkerRepositorySystem : EntitySystem

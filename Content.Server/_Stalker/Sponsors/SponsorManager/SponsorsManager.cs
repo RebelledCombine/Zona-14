@@ -12,7 +12,7 @@ using Robust.Shared.Configuration;
 using Robust.Shared.Network;
 using Robust.Shared.Player;
 
-namespace Content.Server._Stalker.Sponsors;
+namespace Content.Server._Stalker.Sponsors.SponsorManager;
 
 public sealed partial class SponsorsManager
 {

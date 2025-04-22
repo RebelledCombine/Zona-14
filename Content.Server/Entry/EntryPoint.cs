@@ -37,6 +37,7 @@ using Robust.Shared.ContentPack;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
 using Robust.Shared.Utility;
+using SponsorsManager = Content.Server._Stalker.Sponsors.SponsorManager.SponsorsManager;
 
 namespace Content.Server.Entry
 {

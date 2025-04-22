@@ -5,7 +5,7 @@ using Content.Shared._Stalker.Sponsors;
 using Robust.Shared.Network;
 using Robust.Shared.Prototypes;
 
-namespace Content.Server._Stalker.Sponsors;
+namespace Content.Server._Stalker.Sponsors.SponsorManager;
 
 public sealed partial class SponsorsManager
 {

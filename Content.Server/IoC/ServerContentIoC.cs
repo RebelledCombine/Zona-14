@@ -33,6 +33,7 @@ using Content.Shared.Chat;
 using Content.Shared.Kitchen;
 using Content.Shared.Players.PlayTimeTracking;
 using Content.Shared.Players.RateLimiting;
+using SponsorsManager = Content.Server._Stalker.Sponsors.SponsorManager.SponsorsManager;
 
 namespace Content.Server.IoC
 {

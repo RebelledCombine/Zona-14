@@ -19,6 +19,7 @@ using Robust.Shared.Prototypes;
 using Content.Server._Stalker.Trash;
 using Content.Shared.Mind;
 using Content.Shared.Mind.Components;
+using SponsorSystem = Content.Server._Stalker.Sponsors.System.SponsorSystem;
 
 
 namespace Content.Server._Stalker.Teleports;

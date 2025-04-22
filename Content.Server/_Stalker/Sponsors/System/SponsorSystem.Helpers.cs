@@ -1,6 +1,6 @@
 using Robust.Shared.Network;
 
-namespace Content.Server._Stalker.Sponsors;
+namespace Content.Server._Stalker.Sponsors.System;
 
 public sealed partial class SponsorSystem
 {
