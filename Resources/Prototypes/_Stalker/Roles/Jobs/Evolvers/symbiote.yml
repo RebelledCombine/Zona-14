@@ -25,6 +25,8 @@
         - type: Bands
           band: Evolver
           bandIcon: symbiote
+          bandProto: STEvolversBand
+          bandRankId: 3
         - type: BlockTackingHolyItems
         - type: TeethPull
           teethProto: ToothStalker
@@ -59,6 +61,8 @@
         - type: Bands
           band: Evolver
           bandIcon: symbiote
+          bandProto: STEvolversBand
+          bandRankId: 5
         - type: BlockTackingHolyItems
         - type: TeethPull
           teethProto: ToothStalker

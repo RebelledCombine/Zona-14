@@ -25,6 +25,8 @@
         - type: Bands
           band: Evolver
           bandIcon: pack
+          bandProto: STEvolversBand
+          bandRankId: 1
         - type: BlockTackingHolyItems
         - type: TeethPull
           teethProto: ToothStalker
