@@ -24,7 +24,7 @@
     minAngle: 5
     maxAngle: 40
     fireRate: 2
-    angleIncrease: 4
+    angleIncrease: 0.5
     angleDecay: 30
     selectedMode: SemiAuto
     availableModes:

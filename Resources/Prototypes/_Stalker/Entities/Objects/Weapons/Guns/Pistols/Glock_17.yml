@@ -19,7 +19,7 @@
       projectileSpeed: 20
       minAngle: 5
       maxAngle: 50
-      angleIncrease: 5
+      angleIncrease: 1
       angleDecay: 25
       fireRate: 3
       availableModes:
