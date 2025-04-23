@@ -64,9 +64,6 @@
     steps: 1
     zeroVisible: true
   - type: Craftable
-  - type: GunWieldBonus
-    minAngle: -5
-    maxAngle: -25
 
 # REDO-MODULES
 - type: entity

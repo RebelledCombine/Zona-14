@@ -118,3 +118,7 @@
   - type: Scope
     zoom: 1.4
     offset: 12
+  - type: STWeaponDamageFalloff
+    falloffMultiplier: 0.2
+  - type: STWeaponAccuracy
+    accuracyMultiplier: 3

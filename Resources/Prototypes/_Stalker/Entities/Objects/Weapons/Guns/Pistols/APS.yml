@@ -62,9 +62,6 @@
       steps: 1
       zeroVisible: true
     - type: Craftable
-    - type: GunWieldBonus
-      minAngle: -10
-      maxAngle: -10
 
 - type: entity
   parent: WeaponPistolStalkerAPS

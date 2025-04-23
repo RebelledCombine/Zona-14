@@ -55,6 +55,3 @@
         gun_magazine: !type:ContainerSlot
         gun_chamber: !type:ContainerSlot
     - type: Craftable
-    - type: GunWieldBonus
-      minAngle: -25
-      maxAngle: -5
