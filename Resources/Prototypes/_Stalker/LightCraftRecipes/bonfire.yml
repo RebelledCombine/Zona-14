@@ -112,7 +112,7 @@
   results:
     - LogStalker
   steps:
-    firstIngredient: HatchetStalkerSponsor
+    firstIngredient: STHatchetSponsor
     secondIngredient: STBaseTree
     keepFirst: true
     exactSecond: false
@@ -123,7 +123,7 @@
   results:
     - STCraftPinePlankT1
   steps:
-    firstIngredient: HatchetStalkerSponsor
+    firstIngredient: STHatchetSponsor
     secondIngredient: STLogStalkerT1
     keepFirst: true
     exactSecond: false
@@ -134,7 +134,7 @@
   results:
     - STCraftBirchPlankT2
   steps:
-    firstIngredient: HatchetStalkerSponsor
+    firstIngredient: STHatchetSponsor
     secondIngredient: STLogStalkerT2
     keepFirst: true
     exactSecond: false
@@ -145,7 +145,7 @@
   results:
     - STCraftOakPlankT3
   steps:
-    firstIngredient: HatchetStalkerSponsor
+    firstIngredient: STHatchetSponsor
     secondIngredient: STLogStalkerT3
     keepFirst: true
     exactSecond: false
@@ -156,7 +156,7 @@
   results:
     - STCraftYewPlankT4
   steps:
-    firstIngredient: HatchetStalkerSponsor
+    firstIngredient: STHatchetSponsor
     secondIngredient: STLogStalkerT4
     keepFirst: true
     exactSecond: false
