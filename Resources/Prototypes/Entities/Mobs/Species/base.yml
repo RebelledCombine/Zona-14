@@ -317,6 +317,9 @@
     range: 30
     minRange: 20
     useMinRange: true
+  - type: BlowoutTarget
+  - type: STEvasion
+    evasion: 1
     # stalker-changes-end
 
 - type: entity
