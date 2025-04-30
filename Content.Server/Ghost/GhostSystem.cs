@@ -472,9 +472,9 @@ namespace Content.Server.Ghost
             var ghost = SpawnAtPosition(GameTicker.ObserverPrototypeName, spawnPosition.Value);
             // stalker-changes-start
 
-            if (!TryComp<GhostComponent>(ghost, out var ghostComponent) && mind.Comp?.Session != null)
+            if (!TryComp<GhostComponent>(ghost, out var ghostComponent))
             {
-                _gameTicker.Respawn(mind.Comp.Session);
+                if (mind.Comp?.Session != null)  _gameTicker.Respawn(mind.Comp.Session);
                 return null;
             }
 
