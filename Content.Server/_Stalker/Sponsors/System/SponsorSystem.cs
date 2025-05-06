@@ -36,6 +36,7 @@ public sealed partial class SponsorSystem : EntitySystem
         _consoleHost.RegisterCommand("st_list_sponsors", ListSponsors);
         
         InitializeJobs();
+        InitializeSpecies();
     }
 
     #region GiveLoadout

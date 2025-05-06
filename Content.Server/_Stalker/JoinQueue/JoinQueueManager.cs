@@ -11,7 +11,6 @@ using Robust.Shared.Enums;
 using Robust.Shared.Network;
 using Robust.Shared.Player;
 using Robust.Shared.Timing;
-using Content.Server._Stalker.Sponsors.SponsorManager;
 
 namespace Content.Server._Stalker.JoinQueue;
 
@@ -42,7 +41,6 @@ public sealed class JoinQueueManager
     [Dependency] private readonly IConfigurationManager _cfg = default!;
     [Dependency] private readonly IServerNetManager _netManager = default!;
     [Dependency] private readonly DiscordAuthManager _discordAuthManager = default!;
-    [Dependency] private readonly SponsorsManager _sponsors = default!;
     private ISawmill _sawmill = default!;
 
     /// <summary>

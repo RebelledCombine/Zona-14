@@ -47,6 +47,7 @@ public sealed partial class SponsorsManager
             new AuthenticationHeaderValue("Bearer", _apiKey);
         
         InitializeHelpers();
+        InitializeSpecies();
     }
 
     private void OnDisconnect(object? sender, NetDisconnectedArgs e)
