@@ -210,7 +210,7 @@
 - type: entity
   parent: DrumAutoAssSmall
   id: DrumAutoAssVeryBig
-  name: Барабан AA-12 (20)
+  name: Барабан AA-12 (32)
   description: AA 12x70 magazine for shotguns.
   suffix: Stalker
   components:

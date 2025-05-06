@@ -1,48 +1,31 @@
 - type: entity
-  parent: STBaseWeaponShotgunAuto
+  parent: STBaseWeaponShotgunUSAS
   id: STWeaponShotgunAA
   name: AA-12
   description: Automatic Shotgun.
   suffix: ST, Shotgun
   components:
-    - type: Craftable
     - type: STWeight
-      self: 3.6
+      self: 5
     - type: Clothing
       sprite: _Stalker/Objects/Weapons/Guns/Shotguns/aa12/aa12.rsi
     - type: Item
       sprite: _Stalker/Objects/Weapons/Guns/Shotguns/aa12/aa12.rsi
-      size: Large
-      shape:
-        - 0,0,6,1
     - type: Sprite
       sprite: _Stalker/Objects/Weapons/Guns/Shotguns/aa12/aa12.rsi
-      layers:
-        - state: base
-          map: ["enum.GunVisualLayers.Base"]
-        - state: mag-0
-          map: ["enum.GunVisualLayers.Mag"]
-    - type: Wieldable
-    - type: GunWieldBonus
-      minAngle: -20
-      maxAngle: -20
     - type: Gun
       soundGunshot:
         path: /Audio/_Stalker/Effects/Guns/saiga_shoot.ogg
-      projectileSpeed: 24
+      projectileSpeed: 35
       minAngle: 60
-      maxAngle: 80
+      maxAngle: 120
       angleIncrease: 10
-      angleDecay: 50
+      angleDecay: 35
       fireRate: 4
       selectedMode: FullAuto
       availableModes:
         - SemiAuto
         - FullAuto
-    - type: ChamberMagazineAmmoProvider
-      soundRack:
-        path: /Audio/Weapons/Guns/Cock/ltrifle_cock.ogg
-    - type: STWeaponModuleContainer
     - type: ItemSlots
       slots:
         gun_magazine:
@@ -54,35 +37,6 @@
           whitelist:
             tags:
               - DrumAutoAss
-        gun_auto_sear:
-          name: Insides
-          priority: 2
-          whitelist:
-            tags:
-              - STModuleAutoSear
-        gun_chamber:
-          name: Chamber
-          startingItem:
-          priority: 1
-          whitelist:
-            tags:
-              - ShellShotgun
-        gun_module_muzzle:
-          name: Muzzle
-          priority: 1
-          whitelist:
-            tags:
-              - STWeaponModuleShotgunChoke
-    - type: ContainerContainer
-      containers:
-        gun_magazine: !type:ContainerSlot
-        gun_chamber: !type:ContainerSlot
-        gun_module_muzzle: !type:ContainerSlot
-    - type: MagazineVisuals
-      magState: mag
-      steps: 1
-      zeroVisible: true
-    - type: Appearance
 
 #
 - type: entity
