@@ -202,7 +202,6 @@ ent-PosterLegitCar1 = Неизвестная картина
 ent-PosterLegitCar2 = Звездная ночь
     .desc = Одно из самых известных произведений великого художника Винсента Ван Гога. Которое стало одной из самых узнаваемых и популярных работ Ван Гога.
     .suffix = { ent-PosterContrabandLogo.suffix }
-#
 ent-PosterZavetContraband = Уверуй!
     .desc = Уверуй в силу завета! Вступай в завет!
     .suffix = { ent-PosterContrabandLogo.suffix }
@@ -218,7 +217,6 @@ ent-PosterInWomb = В утробе
 ent-PosterinSingularity = Черная дыра
     .desc = Большой сгусток энергии, крайне опасный и непредсказуем, всунешь руку?
     .suffix = { ent-PosterContrabandLogo.suffix }
-#
 ent-PosterLegitCar3 = { ent-PosterLegitCar1 }
     .desc = { ent-PosterLegitCar1.desc }
     .suffix = { ent-PosterContrabandLogo.suffix }
