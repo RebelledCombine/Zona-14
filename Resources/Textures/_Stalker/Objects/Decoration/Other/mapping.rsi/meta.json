@@ -20,6 +20,9 @@
       {
           "name": "bench",
           "directions": 4
+      },
+      {
+          "name": "tire"
       }
   ]
 }
