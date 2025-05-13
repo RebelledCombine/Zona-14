@@ -155,3 +155,15 @@
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Other/gorka.rsi
     state: gorka
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.80,-0.50,0.80,0.45"
+        density: 6000
+        mask:
+        - MachineMask
+        layer:
+        - MidImpassable
+        - LowImpassable
