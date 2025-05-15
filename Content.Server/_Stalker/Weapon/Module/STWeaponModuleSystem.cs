@@ -69,6 +69,17 @@ public sealed class STWeaponModuleSystem : STSharedWeaponModuleSystem
         args.MaxAngle *= effect.MaxAngleModifier;
         args.ProjectileSpeed *= effect.ProjectileSpeedModifier;
 
+        if (TryComp(entity.Owner, out FarGunshotComponent? farGunshotComponent)
+            && farGunshotComponent.Sound is not null)
+        {
+            farGunshotComponent.SilencerDecrease = effect.FarshotSoundDecrease;
+
+            var farAudioParams = farGunshotComponent.Sound.Params;
+
+            farAudioParams.Volume += effect.SoundGunshotVolumeAddition;
+            farGunshotComponent.Sound.Params = farAudioParams;
+        }
+
         if (args.SoundGunshot is null)
             return;
 
@@ -79,11 +90,6 @@ public sealed class STWeaponModuleSystem : STSharedWeaponModuleSystem
         // not only one volume reducing module
         audioParams.Volume += effect.SoundGunshotVolumeAddition;
         args.SoundGunshot!.Params = audioParams;
-
-        if (TryComp(entity.Owner, out FarGunshotComponent? farGunshotComponent))
-        {
-            farGunshotComponent.SilencerDecrease = effect.FarshotSoundDecrease;
-        }
     }
 
     private void UpdateContainerEffect(BaseContainer container)

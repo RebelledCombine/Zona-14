@@ -4,6 +4,7 @@
   id: STBaseWeaponSniperVSS
   components:
   - type: FarGunshot
+    sound: /Audio/_DZ/Effects/FarGunshots/supressed1.ogg
     silencerDecrease: 0.1
   - type: Clothing
     sprite: _Stalker/Objects/Weapons/Guns/Snipers/VSS/base.rsi

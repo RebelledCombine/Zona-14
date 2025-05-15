@@ -1,4 +1,5 @@
 ﻿using Content.Shared.Weapons.Ranged.Components;
+using Robust.Shared.Audio;
 using Robust.Shared.Serialization;
 
 namespace Content.Shared._Stalker.Weapon.Module.Effects;
