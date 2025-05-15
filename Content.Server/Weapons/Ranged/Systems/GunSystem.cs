@@ -115,6 +115,11 @@ public sealed partial class GunSystem : SharedGunSystem
                         var uid = Spawn(cartridge.Prototype, fromEnt);
                         CreateAndFireProjectiles(uid, cartridge);
 
+                        // stalker-changes-start
+                        var farSoundEvent = new FargunshotEvent(gunUid.Id);
+                        RaiseLocalEvent(gunUid, farSoundEvent);
+                        // stalker-changes-end
+
                         RaiseLocalEvent(ent!.Value, new AmmoShotEvent()
                         {
                             FiredProjectiles = shotProjectiles,
@@ -270,11 +275,6 @@ public sealed partial class GunSystem : SharedGunSystem
 
                 ShootOrThrow(ammoEnt, angles[0].ToVec(), gunVelocity, gun, gunUid, user);
                 shotProjectiles.Add(ammoEnt);
-
-                // stalker-changes-start
-                var farSoundEvent = new FargunshotEvent(gunUid.Id);
-                RaiseLocalEvent(gunUid, farSoundEvent);
-                // stalker-changes-end
 
                 for (var i = 1; i < ammoSpreadComp.Count; i++)
                 {

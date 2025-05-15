@@ -1,5 +1,4 @@
 ﻿using Content.Shared._DZ.FarGunshot;
-using Content.Shared.Weapons.Ranged.Events;
 using Robust.Server.GameObjects;
 using Robust.Shared.Audio;
 using Robust.Shared.Audio.Systems;
@@ -11,6 +10,7 @@ public sealed class FarGunshotSystem : EntitySystem
 {
     [Dependency] private readonly SharedAudioSystem _audio = default!;
     [Dependency] private readonly TransformSystem _transform = default!;
+
 
     public override void Initialize()
     {
@@ -31,6 +31,7 @@ public sealed class FarGunshotSystem : EntitySystem
 
         if (component.Range <= 14f) // we need this since i want to decrease number of uselles iterations
             return;
+
 
         // Create a filter for players who are far enough to hear the distant gunshot,
         // excluding those within close range (14)
