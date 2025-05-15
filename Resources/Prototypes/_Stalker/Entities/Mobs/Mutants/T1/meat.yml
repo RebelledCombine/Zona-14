@@ -134,3 +134,6 @@
     radius: 1
     energy: 0.1
     color: "#00ff1a"
+  - type: NpcFactionMember
+    factions:
+    - Meat
