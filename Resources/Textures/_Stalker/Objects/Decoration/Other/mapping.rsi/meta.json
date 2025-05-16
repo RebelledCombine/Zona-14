@@ -23,6 +23,12 @@
       },
       {
           "name": "tire"
+      },
+      {
+          "name": "books"
+      },
+      {
+          "name": "gen"
       }
   ]
 }

@@ -190,3 +190,37 @@
         layer:
         - MidImpassable
         - LowImpassable
+
+- type: entity
+  id: StackBooks
+  name: Стопка книг
+  suffix: ST, Mapping
+  description: Потрёпанная стопка книг с пожелтевшими от времени страницами и выцветшими обложками. Среди изданий можно заметить советские учебники, сборники классиков литературы и несколько научно-популярных журналов. Корешки некоторых томов потрескались от многочисленных прочтений, а на полях встречаются карандашные пометки прежних владельцев.
+  parent: BaseStructureStalkerDynamic
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Decoration/Other/mapping.rsi
+    state: books
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.45,-0.10,0.45,0.50"
+        density: 6000
+        mask:
+        - MachineMask
+        layer:
+        - MidImpassable
+        - LowImpassable
+
+- type: entity
+  id: OldGen
+  name: Старый генератор
+  suffix: ST, Mapping
+  description: Массивный дизельный генератор советской эпохи с облупившейся зеленоватой краской и многочисленными следами ремонта. Внушительные размеры и грубая конструкция говорят о его индустриальном прошлом. Несмотря на ржавчину, покрывающую металлические части, и пятна масла вокруг топливного бака, механизм внутри кажется способным заработать при правильном обращении. Его низкий гул когда-то был привычным звуком на многих объектах, где централизованное электроснабжение давало сбои.
+  parent: BaseStructureStalkerDynamic
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Decoration/Other/mapping.rsi
+    state: gen
