@@ -25,6 +25,10 @@
       pullingItemTag: PliersStalker
       teethCount: 3
       initialTeeth: 3
+    - type: Psyonics
+      psy: 75
+    - type: PsyonicsActionMeditation
+    - type: PsyonicsActionLight
 
 - type: job
   id: StalkerAnomalistGuardian
@@ -60,12 +64,14 @@
   equipment:
     id: AnomalistPDA
     belt: ClothingBeltBandolierStalker
-    torso: ClothingTorsoSweaterStalkerGreen
-    legs: ClothingLegsJeansBlue
-    shoes: ClothingShoesNovice
+    torso: ClothingTorsoAnomalistTechnician
+    eyes: ClothingEyesGogglesAnomalist
+    legs: ClothingLegsAnomalistTechnician
+    shoes: ClothingShoesBootsCombat
     back: ClothingBackpackTownBlackStalker
-    outerClothing: ClothingOuterJacketStalker
-    mask: ClothingMaskGasMarlya
+    outerClothing: ClothingOuterCoatIvyAnomalist
+    mask: ClothingMaskGasAnomalists
+    head: ClothingHeadWildHatAnomalist
 
 - type: stBand
   id: STAnomalistsBand
