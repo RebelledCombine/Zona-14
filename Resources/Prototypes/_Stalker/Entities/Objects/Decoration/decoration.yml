@@ -19,11 +19,11 @@
       fix1:
         shape:
           !type:PhysShapeAabb
-          bounds: "-0.08,-0.08,0.08,0.08"
+          bounds: "-0.18,-0.18,0.18,0.38"
         mask:
         - TabletopMachineMask
         layer:
-        - TabletopMachineLayer
+        - WallLayer
         density: 200
   - type: Destructible
     thresholds:
@@ -48,6 +48,45 @@
       - !type:PlaySoundBehavior
         sound:
           path: /Audio/Effects/metal_break1.ogg
+          
+- type: entity
+  id: GasStationstalkertwo
+  parent: GasStationstalker
+  name: бензоколонка
+  suffix: ST, Mapping
+  description: Старая бензоколонка, врядли она работает.
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _Stalker/Structures/Machines/gasstation.rsi
+    state: gasstationtwo
+   
+- type: entity
+  id: GasStationstalkernew
+  parent: GasStationstalker
+  name: бензоколонка
+  suffix: ST, Mapping
+  description: Старая бензоколонка, врядли она работает.
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _Stalker/Structures/Machines/gasstation.rsi
+    state: gasstationnew
+    
+- type: entity
+  id: GasStationstalkernewtwo
+  parent: GasStationstalker
+  name: бензоколонка
+  suffix: ST, Mapping
+  description: Старая бензоколонка, врядли она работает.
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _Stalker/Structures/Machines/gasstation.rsi
+    state: gasstationnewtwo
 
 - type: entity
   id: TVStalker
