@@ -167,7 +167,7 @@
 - type: entity
   name: базовый триггер (1-4) (50%) 30м
   abstract: true
-  id: STBaseTrigger145010
+  id: STBaseTrigger145030
   parent: MarkerBase
   components:
     - type: ApproachTrigger
