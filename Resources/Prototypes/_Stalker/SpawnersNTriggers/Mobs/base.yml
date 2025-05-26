@@ -319,7 +319,7 @@
   components:
     - type: ApproachTrigger
     - type: Sprite
-	    layers:
+      layers:
         - state: blue
         - sprite: Mobs/Aliens/Xenos/burrower.rsi
           state: crit
