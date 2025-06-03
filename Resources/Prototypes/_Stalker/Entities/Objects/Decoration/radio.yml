@@ -2076,6 +2076,9 @@
   components:
     - type: StorageFill
       contents:
+        - id: CasseteArstotzkaOneContributorRadio
+        - id: CasseteArstotzkaTwoContributorRadio
+        - id: CasseteArstotzkaThreeContributorRadio
         - id: Cassete9mmContributorRadio
         - id: CasseteAction1ContributorRadio
         - id: CasseteJusttheTwoofUsAICoverContributorRadio
@@ -2104,6 +2107,60 @@
         - id: CasseteYaochenustalContributorRadio
         - id: CassetevietnamContributorRadio
 
+
+- type: entity
+  parent: BaseItem
+  id: CasseteArstotzkaOneContributorRadio
+  suffix: Stalker, кассета, (Glory to Arstotzka)
+  name: кассета "Glory to Arstotzka"
+  description: Совершенно новая кассета. Предположительно, на неё записана какая-то песня. На передней части кассеты имеется зашифрованная запись C.o.n.t.r.i.b.u.t.o.r.
+  components:
+  - type: STWeight
+    self: 0.15
+  - type: Cassete
+    sound: /Audio/_Stalker/Music/Radio/Contributor/arstotzka_1.ogg
+  - type: Tag
+    tags:
+      - Cassete
+  - type: Sprite
+    sprite: _Stalker/Objects/Misc/casete.rsi
+    state: c6
+
+- type: entity
+  parent: BaseItem
+  id: CasseteArstotzkaTwoContributorRadio
+  suffix: Stalker, кассета, (Arstotzka Bad Ending)
+  name: кассета "Arstotzka Bad Ending"
+  description: Совершенно новая кассета. Предположительно, на неё записана какая-то песня. На передней части кассеты имеется зашифрованная запись C.o.n.t.r.i.b.u.t.o.r.
+  components:
+  - type: STWeight
+    self: 0.15
+  - type: Cassete
+    sound: /Audio/_Stalker/Music/Radio/Contributor/arstotzka_3.ogg
+  - type: Tag
+    tags:
+      - Cassete
+  - type: Sprite
+    sprite: _Stalker/Objects/Misc/casete.rsi
+    state: c6
+
+- type: entity
+  parent: BaseItem
+  id: CasseteArstotzkaThreeContributorRadio
+  suffix: Stalker, кассета, (Arstotzka Good Ending)
+  name: кассета "Arstotzka Good Ending"
+  description: Совершенно новая кассета. Предположительно, на неё записана какая-то песня. На передней части кассеты имеется зашифрованная запись C.o.n.t.r.i.b.u.t.o.r.
+  components:
+  - type: STWeight
+    self: 0.15
+  - type: Cassete
+    sound: /Audio/_Stalker/Music/Radio/Contributor/arstotzka_2.ogg
+  - type: Tag
+    tags:
+      - Cassete
+  - type: Sprite
+    sprite: _Stalker/Objects/Misc/casete.rsi
+    state: c6
 
 - type: entity
   parent: BaseItem
