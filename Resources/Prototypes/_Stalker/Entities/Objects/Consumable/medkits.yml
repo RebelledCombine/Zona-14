@@ -68,6 +68,31 @@
   maxCount: 10
 
 - type: entity
+  parent: STBaseHealingItem
+  id: STTourniquet
+  name: жгут
+  description: Сильно давит на конечность, перекрывая кровоток, если накладывать неумеючи может содрать кожу и оставить синяки.
+  components:
+    - type: Sprite
+      sprite: _Stalker\Objects\Specific\Medical\Other
+      state: esmarch
+      scale: 0.6, 0.6
+    - type: Healing
+      damageContainers:
+        - Biological
+      damage:
+        groups:
+          Brute: 0
+        types:
+          Asphyxiation: 5
+      bloodlossModifier: -20
+      delay: 0.5
+      healingBeginSound:
+        path: "/Audio/Items/Medical/brutepack_begin.ogg"
+      healingEndSound:
+        path: "/Audio/Items/Medical/brutepack_end.ogg"
+
+- type: entity
   parent: STBrutepack
   id: STBrutepackSera
   suffix: ST, Скин
