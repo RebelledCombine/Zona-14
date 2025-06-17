@@ -525,9 +525,43 @@
   maxCount: 4
 
 - type: entity
+  id: STpillboxbase
+  parent: BaseStorageItem
+  abstract: true
+  components:
+  - type: Item
+    size: Tiny
+  - type: Storage
+    grid:
+    - 0,0,4,1
+    quickInsert: true
+    areaInsert: true
+    areaInsertRadius: 1
+    storageInsertSound: /Audio/Effects/pill_insert.ogg
+    storageRemoveSound: /Audio/Effects/pill_remove.ogg
+    whitelist: 
+      tags:
+      - Pill
+  - type: Dumpable
+  - type: Sprite
+    layers:
+      - map: [ base ]
+        state: icon
+  - type: Tag
+    tags:
+    - PillCanister
+  - type: GenericVisualizer
+    visuals:
+      enum.StorageVisuals.Open:
+        base:
+          True: { state: icon-open }
+          False: { state: icon }
+  - type: Appearance
+
+- type: entity
   name: упаковка йодорадина
   description: Упаковка таблеток йодорадина, каждая таблетка весит 10 грамм. Поможет вывести радионуклиды из организма. Принимать до 30 грамм за раз!
-  parent: PillCanister
+  parent: STpillboxbase
   id: STPillboxAntirad
   suffix: ST, T1
   components:
@@ -535,11 +569,16 @@
     contents:
     - id: antiradpill
       amount: 10
+  - type: Sprite
+    sprite: _Stalker/Objects/Medicine/pillboxes/antirad.rsi
+    state: icon
+  - type: Item
+    sprite: _Stalker/Objects/Medicine/pillboxes/antirad.rsi
 
 - type: entity
   name: упаковка пробудофилина
-  description: Упаковка таблеток пробудофилина, каждая таблетка весит 10 грамм. Поможет возоновить кровообращения и дыхание. Принимать до 20 грамм за раз!
-  parent: PillCanister
+  description: Упаковка таблеток пробудофилина, каждая таблетка весит 10 грамм. Поможет возобновить кровообращение и дыхание. Принимать до 20 грамм за раз!
+  parent: STpillboxbase
   id: STPillboxProbud
   suffix: ST, T2
   components:
@@ -547,11 +586,16 @@
     contents:
     - id: wakeuppill
       amount: 10
+  - type: Sprite
+    sprite: _Stalker/Objects/Medicine/pillboxes/probud.rsi
+    state: icon
+  - type: Item
+    sprite: _Stalker/Objects/Medicine/pillboxes/probud.rsi
 
 - type: entity
   name: упаковка фуфломицина
   description: Упаковка таблеток фуфломицина, каждая таблетка весит 10 грамм. Поможет уверить себя в своей неуязвимости для пси-волн. Принимать до 10 грамм за раз!
-  parent: PillCanister
+  parent: STpillboxbase
   id: STPillboxShiza
   suffix: ST, T5
   components:
@@ -559,3 +603,8 @@
     contents:
     - id: shizopill
       amount: 10
+  - type: Sprite
+    sprite: _Stalker/Objects/Medicine/pillboxes/shizabox.rsi
+    state: icon
+  - type: Item
+    sprite: _Stalker/Objects/Medicine/pillboxes/shizabox.rsi
