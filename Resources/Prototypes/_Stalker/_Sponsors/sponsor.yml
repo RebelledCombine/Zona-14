@@ -33,7 +33,8 @@
   discordRoleId: "1233831339682172979"
   sponsorPriority: 4
 
-# Contributor Definition # README: Prototype of this type should be unique, no other prototypes should have this type
+# Contributor Definition
+# README: Prototype of this type should be unique, no other prototypes should have this type
 - type: contributor
   id: SponsorContributor
   repositoryWeight: 250.0

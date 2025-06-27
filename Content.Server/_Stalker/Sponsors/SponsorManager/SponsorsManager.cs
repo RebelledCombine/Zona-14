@@ -8,6 +8,7 @@ using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 using Content.Server._Stalker.Discord.DiscordAuth;
 using Content.Shared._Stalker.CCCCVars;
+using Content.Shared._Stalker.Sponsors.Messages;
 using Robust.Shared.Configuration;
 using Robust.Shared.Network;
 using Robust.Shared.Player;
@@ -21,7 +22,7 @@ public sealed partial class SponsorsManager
     [Dependency] private readonly INetManager _netMgr = default!;
     private readonly HttpClient _httpClient = new();
     private readonly Dictionary<NetUserId, SponsorData> _cachedSponsors = new();
-    
+
     private string _apiUrl = string.Empty;
     private string _apiKey = string.Empty;
     private bool _enabled;
@@ -35,6 +36,8 @@ public sealed partial class SponsorsManager
     public void Initialize()
     {
         _sawmill = Logger.GetSawmill("sponsors");
+        _netMgr.RegisterNetMessage<MsgSponsorVerified>();
+
         _cfg.OnValueChanged(CCCCVars.DiscordAuthEnabled, val => { _enabled = val; }, true);
         _cfg.OnValueChanged(CCCCVars.SponsorsApiUrl, val => { _apiUrl = val; }, true);
         _cfg.OnValueChanged(CCCCVars.SponsorsApiKey, val => { _apiKey = val; }, true);
@@ -45,7 +48,7 @@ public sealed partial class SponsorsManager
 
         _httpClient.DefaultRequestHeaders.Authorization =
             new AuthenticationHeaderValue("Bearer", _apiKey);
-        
+
         InitializeHelpers();
         InitializeSpecies();
     }
@@ -134,14 +137,15 @@ public sealed partial class SponsorsManager
             return;
 
         var data = new SponsorData(
-            sponsorPrototype?.ID, 
-            e.UserId, 
-            isGiven, 
+            sponsorPrototype?.ID,
+            e.UserId,
+            isGiven,
             contributorPrototype is null
         );
-        
+
         _cachedSponsors.Add(e.UserId, data);
         SponsorPlayerCached?.Invoke(e.UserId);
+        _netMgr.ServerSendMessage(new MsgSponsorVerified(), e.Channel);
 
         _sawmill.Debug($"{e.UserId} is sponsor now. PrototypeID: {data.SponsorProtoId}");
     }

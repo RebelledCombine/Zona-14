@@ -604,16 +604,15 @@ namespace Content.Client.Lobby.UI
             _species.Clear();
 
             // Stalker-Changes-Start | Sponsors
-            _sponsors.RequestSpeciesInfo();
             _species.AddRange(
                 _prototypeManager.EnumeratePrototypes<SpeciesPrototype>()
-                    .Where(o => 
-                        (!o.IsSponsor || 
-                        _sponsors.AllowedSpecies?.Contains(o.ID) == true) && 
+                    .Where(o =>
+                        (!o.IsSponsor ||
+                        _sponsors.AllowedSpecies?.Contains(o.ID) == true) &&
                         o.RoundStart
                     ));
             // Stalker-Changes-End | Sponsors
-            
+
             var speciesIds = _species.Select(o => o.ID).ToList();
 
             for (var i = 0; i < _species.Count; i++)

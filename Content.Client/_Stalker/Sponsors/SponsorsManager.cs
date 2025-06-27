@@ -10,16 +10,17 @@ namespace Content.Client._Stalker.Sponsors;
 public sealed class SponsorsManager
 {
     [Dependency] private readonly IClientNetManager _netMgr = default!;
-    
+
     private SponsorInfo? _info;
     private List<ProtoId<SpeciesPrototype>>? _allowedSpecies;
-    
+
     public List<ProtoId<SpeciesPrototype>>? AllowedSpecies => _allowedSpecies;
     public event Action? SponsorSpeciesUpdated;
-    
+
     public void Initialize()
     {
-        _netMgr.RegisterNetMessage<MsgSponsorInfo>(msg => _info = msg.Info);
+        // _netMgr.RegisterNetMessage<MsgSponsorInfo>(msg => _info = msg.Info);
+        _netMgr.RegisterNetMessage<MsgSponsorVerified>(OnSponsorVerified);
         _netMgr.RegisterNetMessage<MsgSponsorRequestSpecies>(msg =>
         {
             _allowedSpecies = msg.AllowedSpecies.ConvertAll(p => new ProtoId<SpeciesPrototype>(p));
@@ -37,9 +38,11 @@ public sealed class SponsorsManager
 
     public void RequestSpeciesInfo()
     {
-        if (_allowedSpecies is not null)
-            return;
-        
         _netMgr.ClientSendMessage(new MsgSponsorRequestSpecies());
+    }
+
+    private void OnSponsorVerified(MsgSponsorVerified msg)
+    {
+        RequestSpeciesInfo();
     }
 }

@@ -2,6 +2,7 @@ using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Content.Server._Stalker.Sponsors.SponsorManager;
 using Content.Server._Stalker.StalkerRepository;
 using Content.Server.Administration;
 using Content.Shared._Stalker.Sponsors;
@@ -19,7 +20,7 @@ public sealed partial class SponsorSystem : EntitySystem
 {
     [Dependency] private readonly IConsoleHost _consoleHost = default!;
     [Dependency] private readonly IPlayerManager _playerManager = default!;
-    [Dependency] private readonly SponsorManager.SponsorsManager _sponsors = default!;
+    [Dependency] private readonly SponsorsManager _sponsors = default!;
     [Dependency] private readonly StalkerRepositorySystem _repositorySystem = default!;
     [Dependency] private readonly IPrototypeManager _prototype = default!;
     [Dependency] private readonly SharedHandsSystem _hands = default!;
@@ -34,7 +35,7 @@ public sealed partial class SponsorSystem : EntitySystem
 
         // debug
         _consoleHost.RegisterCommand("st_list_sponsors", ListSponsors);
-        
+
         InitializeJobs();
         InitializeSpecies();
     }
@@ -61,7 +62,7 @@ public sealed partial class SponsorSystem : EntitySystem
         if (useLevelSpecified)
             sponsorProtoId = args[2];
 
-        if (!_sponsors.TryGetInfo(session.UserId, out var sponsorInfo) || 
+        if (!_sponsors.TryGetInfo(session.UserId, out var sponsorInfo) ||
             sponsorInfo.SponsorProtoId is null)
         {
             shell.WriteError($"User with ckey {ckey} is not sponsor");
@@ -70,8 +71,8 @@ public sealed partial class SponsorSystem : EntitySystem
 
         SponsorPrototype? userSpecifiedSponsorPrototype = null;
         if (useLevelSpecified && sponsorProtoId is not null)
-            userSpecifiedSponsorPrototype = _prototype.Index<SponsorPrototype>(sponsorProtoId);   
-        
+            userSpecifiedSponsorPrototype = _prototype.Index<SponsorPrototype>(sponsorProtoId);
+
         var sponsorPrototypeIndex = _prototype.Index(sponsorInfo.SponsorProtoId.Value);
 
         if (userSpecifiedSponsorPrototype is not null &&
@@ -219,7 +220,7 @@ public sealed partial class SponsorSystem : EntitySystem
             shell.WriteError("There are no contributor prototype defined...");
             return;
         }
-        
+
         if (!_playerManager.TryGetSessionByUsername(ckey, out var session))
             return;
 
