@@ -145,7 +145,7 @@
         ClothingOuterArmorZaryaJabs: 1750 # T2 - universal
         STClothingOuterArmorLightPlateVestBaseANAgreen: 2500 # T3 - PVP
         ClothingOuterArmorJaba: 2900 # T3 - PVE
-        ClothingOuterArmorSevaStalker: 2250 # T3 - ENV
+        ClothingOuterArmorSevaStalker: 3350 # T3 - ENV
     - name: shop-category-storage-and-containers
       priority: 4
       items:
@@ -198,7 +198,6 @@
         STGasMaskM51Blueprint: 5000
         STSkinsKitJabs: 500
         STCombatKnife: 15
-        TrashBag: 30
         BoxZiptie: 50
         BoxSafebox: 300
         CheapLighter: 5

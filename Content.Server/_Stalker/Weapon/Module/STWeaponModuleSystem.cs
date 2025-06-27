@@ -1,3 +1,4 @@
+using Content.Server._DZ.FarGunshot;
 using Content.Server._Stalker.Weapon.Scoping;
 using Content.Shared._Stalker.Weapon.Module;
 using Content.Shared._Stalker.Weapon.Module.Effects;
@@ -68,6 +69,17 @@ public sealed class STWeaponModuleSystem : STSharedWeaponModuleSystem
         args.MaxAngle *= effect.MaxAngleModifier;
         args.ProjectileSpeed *= effect.ProjectileSpeedModifier;
 
+        if (TryComp(entity.Owner, out FarGunshotComponent? farGunshotComponent)
+            && farGunshotComponent.Sound is not null)
+        {
+            farGunshotComponent.SilencerDecrease = effect.FarshotSoundDecrease;
+
+            var farAudioParams = farGunshotComponent.Sound.Params;
+
+            farAudioParams.Volume += effect.SoundGunshotVolumeAddition;
+            farGunshotComponent.Sound.Params = farAudioParams;
+        }
+
         if (args.SoundGunshot is null)
             return;
 
@@ -76,7 +88,7 @@ public sealed class STWeaponModuleSystem : STSharedWeaponModuleSystem
         // Hotfix how to handle super silent silencers happening because volume additions
         // pile up. We need to find something else, because a user in the future might have
         // not only one volume reducing module
-        audioParams.Volume = effect.SoundGunshotVolumeAddition;
+        audioParams.Volume += effect.SoundGunshotVolumeAddition;
         args.SoundGunshot!.Params = audioParams;
     }
 
