@@ -190,6 +190,15 @@
 # Tier - 4
 
 - type: entity
+  parent: ClothingBackpackTacticBase
+  id: STClothingBackpackT4
+  name: Тегавая хуйня НЕ СПАВНИТЬ
+  description: Тегавая хуйня НЕ СПАВНИТЬ
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/backpacks/Hiking/hiking_neutral.rsi
+
+- type: entity
   parent: STClothingBackBase
   id: ClothingBackpackDuffelMilitaryBlue
   name: Синий армейский рюкзак
@@ -201,7 +210,9 @@
   - type: Storage #55 клеток 56
     grid:
     - 0,0,7,6
-
+  - type: Tag
+    tags:
+    - STClothingBackpackT4
 
 
 - type: entity
@@ -216,6 +227,9 @@
   - type: Storage #55 клеток 56
     grid:
     - 0,0,7,6
+  - type: Tag
+    tags:
+    - STClothingBackpackT4
 
 
 - type: entity
@@ -230,8 +244,9 @@
   - type: Storage #55 клеток 56
     grid:
     - 0,0,7,6
-
-
+  - type: Tag
+    tags:
+    - STClothingBackpackT4
 
 - type: entity
   parent: STClothingBackBase
@@ -245,6 +260,9 @@
   - type: Storage #54 клеток 56 бы
     grid:
     - 0,0,7,6
+  - type: Tag
+    tags:
+    - STClothingBackpackT4
 
 - type: entity
   parent: ClothingBackpackDuffelHikingVSRF
@@ -270,6 +288,9 @@
   - type: Storage #56 клеток
     grid:
     - 0,0,7,6
+  - type: Tag
+    tags:
+    - STClothingBackpackT4
 
 - type: entity
   parent: STClothingBackBase
@@ -283,6 +304,9 @@
   - type: Storage #56 клеток
     grid:
     - 0,0,7,6
+  - type: Tag
+    tags:
+    - STClothingBackpackT4
 
 # Tier - 4.5
 
