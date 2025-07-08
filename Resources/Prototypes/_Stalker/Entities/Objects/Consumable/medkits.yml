@@ -180,6 +180,7 @@
   name: мазь с антибиотиком
   icon:
     sprite: _Stalker/Objects/Medicine/GoodOinment.rsi
+    state: ointment
   spawn: STOintmentGood
   maxCount: 4
 
