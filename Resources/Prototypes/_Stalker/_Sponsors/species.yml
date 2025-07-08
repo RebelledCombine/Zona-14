@@ -2,7 +2,6 @@
   id: SponsorDwarf # Should be unique
   speciesId: Dwarf # Prototype ID of the species prototype (- type: species)
   sponsorIds: # A list of prototype IDs of sponsors (- type: sponsor)
-  - SponsorBread
   - SponsorBacker
   - SponsorOMind
   - SponsorPseudogiant
