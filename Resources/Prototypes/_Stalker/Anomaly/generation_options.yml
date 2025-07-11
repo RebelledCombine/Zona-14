@@ -12,7 +12,7 @@
 - type: stAnomalyGenerationOptions
   id: STKordonGenerationOptions
   options:
-    totalCount: 450
+    totalCount: 350
     anomalyEntries:
     # Electrical
     - protoId: ZoneAnomalyElectra
@@ -33,7 +33,7 @@
 - type: stAnomalyGenerationOptions
   id: STSvalkaGenerationOptions
   options:
-    totalCount: 400
+    totalCount: 500
     anomalyEntries:
     # Electrical
     - protoId: ZoneAnomalyElectra
@@ -59,7 +59,7 @@
 - type: stAnomalyGenerationOptions
   id: STBolotaGenerationOptions
   options:
-    totalCount: 300
+    totalCount: 200
     anomalyEntries:
     # Chemical
     - protoId: ZoneAnomalySmoke
@@ -123,7 +123,7 @@
 - type: stAnomalyGenerationOptions
   id: STTemnajLohinaGenerationOptions
   options:
-    totalCount: 150
+    totalCount: 350
     anomalyEntries:
     # Gravity
     - protoId: ZoneAnomalyGrabber
@@ -141,7 +141,7 @@
 - type: stAnomalyGenerationOptions
   id: STTemnajDolinaGenerationOptions
   options:
-    totalCount: 400
+    totalCount: 200
     anomalyEntries:
     # Electrical
     - protoId: ZoneAnomalySource
@@ -166,7 +166,6 @@
     # Psy
     - protoId: ZoneAnomalyBarabashka
     - protoId: ZoneAnomalyRift
-      weight: 3
 
 # Топи
 - type: stAnomalyGenerationOptions
@@ -208,7 +207,7 @@
 - type: stAnomalyGenerationOptions
   id: STRedForestGenerationOptions
   options:
-    totalCount: 500
+    totalCount: 400
     anomalyEntries:
     - protoId: ZoneAnomalyKissel
     - protoId: ZoneAnomalyNoGravity
@@ -234,7 +233,7 @@
 - type: stAnomalyGenerationOptions
   id: STRostokAndWildsGenerationOptions
   options:
-    totalCount: 500
+    totalCount: 100
     anomalyEntries:
     # Electrical
     - protoId: ZoneAnomalySource
@@ -265,3 +264,29 @@
     # Psy
     - protoId: ZoneAnomalyBarabashka
       weight: 0.5
+
+# Лима
+- type: stAnomalyGenerationOptions
+  id: STLimaGenerationOptions
+  options:
+    totalCount: 500
+    anomalyEntries:
+    - protoId: ZoneAnomalyKissel
+    - protoId: ZoneAnomalyNoGravity
+    - protoId: ZoneAnomalyElectra
+    - protoId: ZoneAnomalyGravi
+    - protoId: ZoneAnomalySpringboard
+    - protoId: ZoneAnomalyLamp
+    - protoId: ZoneAnomalyJarka
+    - protoId: ZoneAnomalyGazirovka
+    - protoId: ZoneAnomalyBarabashka
+    - protoId: ZoneAnomalySmoke
+    - protoId: ZoneAnomalySource
+    - protoId: ZoneAnomalyGrabber
+    - protoId: ZoneAnomalyWitchesCircle
+    - protoId: ZoneAnomalyFreezer
+    - protoId: ZoneAnomalySteam
+    - protoId: ZoneAnomalySol
+    - protoId: STAnomalyHush
+      weight: 0.09
+    - protoId: ZoneAnomalyRift
