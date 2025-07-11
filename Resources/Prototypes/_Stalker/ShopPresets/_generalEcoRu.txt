@@ -413,6 +413,33 @@
     STClothingCapeCoatReinforced: 0
 
 
+    # MEDI
+
+    #T1
+    STBrutepack: #лечит 25 физ. урона (Piercing: -7 Blunt: -4 Slash: -7 delay: 8)
+    STOintment: #лечит 16 терм. урона (Heat: -8 Caustic: -4 Shock: -4 delay: 8)
+    STGauze: #останавливает кровотечение (bloodlossModifier: -10 delay: 6)
+    STPillboxAntirad: #содержит 10 таблеток antiradpill (Radiation: -15 за одну)
+
+    #T2
+    STTourniquet: #останавливает кровотечение (bloodlossModifier: -20 delay: 0.5)
+    MedkitAI2: #лечит 25 физ. урона и 10 рад. (Piercing: -10 Blunt: -5 Slash: -10 Radiation: -10 delay: 6)
+    AntiRadMedipen: #лечит 45 рад. (содержит аналог трёх таблеток antiradpill)
+    STPillboxProbud: #содержит 10 таблеток wakeuppill (10 унций Bloodloss: -3 Asphyxiation: -2)
+
+    #T3
+    STOintmentGood: #лечит 40 терм. урона (Heat: -20 Caustic: -10 Shock: -10 delay: 8)
+    MedkitMilitary: #лечит 50 физ. урона (Piercing: -20 Blunt: -10 Slash: -20 delay: 8)
+    MedkitScience: #лечит 45 терм. урона и 20 рад. (Heat: -15 Caustic: -15 Shock: -15 Radiation: -20 delay: 9)
+    WakeUpMedipen: #содержит аналог 2 таблеток wakeuppill (20 унций Bloodloss: -3 Asphyxiation: -2 за унцию)
+
+    #T4
+    MedkitElite: #лечит 30 яда и 40 рад. (Poison: -30 Radiation: -40 delay: 9)
+    MedkitLAR: #лечит 15 яда 15 компр. 75 терм. (Poison: -15 Compression: -15 Heat: -25 Caustic: -25 Shock: -25 delay: 9)
+
+    #T5
+    STPillboxShiza: #содержит 10 таблеток shizopill (Psy: -3 за унцию)
+
 #---------------------------------------------------------------------СПИСОК---------------------------------------------------------------------#
 
     # ---GRAVITY---

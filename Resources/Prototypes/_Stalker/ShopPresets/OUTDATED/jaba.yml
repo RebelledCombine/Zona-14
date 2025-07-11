@@ -327,9 +327,3 @@
         ClothingTorsoTurtlenecksGorka6B: 50
         ClothingTorsoTurtlenecksKhakiTurtleneck: 50
         ClothingTorsoTurtlenecksMatrosska: 50
-    - name: shop-category-metal-detectors
-      priority: 12
-      items:
-        TrashDetectorTier2: 100
-        TrashDetectorTier3: 300
-        TrashDetectorTier4: 750

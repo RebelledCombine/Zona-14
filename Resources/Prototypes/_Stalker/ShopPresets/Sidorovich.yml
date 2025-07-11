@@ -65,6 +65,12 @@
     MutantPartOraculeEye: 1600
     MutantPartPseudogiantHeart: 4000
     MutantPartZombieHand: 600
+
+    # Values
+    Dollar: 37
+    Goldcoins: 3500
+
+
   categories:
     - name: Контрабанда
       priority: 0
@@ -94,6 +100,7 @@
         WeaponPistolStalkerAPS: 900 #T2
         STWeaponSniperSKS: 1850 # T2
         STWeaponSniperMosin: 1500
+        STWeaponSMGPPSh41: 2750
           # Nato
     - name: shop-category-magazines
       priority: 2
@@ -221,19 +228,12 @@
     - name: shop-category-medicine
       priority: 10
       items:
-          # Cheap
-        PillDexalin: 20
-        PillDexalinPlusStalker: 45
-        STOintment: 20
-        STGauze: 25
-        STBrutepack: 20
-          # Expensive
-        antiradpill: 100
-        radioprotectpill: 150
-        Bloodpack: 250
-        psyblock: 350
-        MedkitAI2: 200
-        MedkitMilitary: 400
+        STPillboxAntirad: 350
+        STGauze: 100
+        STOintment: 85
+        STBrutepack: 65
+        Bloodpack: 550
+        MedkitAI2: 350
         Defibrillator: 1000
     - name: shop-category-customization
       priority: 11
@@ -323,6 +323,7 @@
       - name: О-сознание
         items:
           STWeaponRifleSVDSWood: 800
+          Base754Mag5: 400
   contributorCategories:
     - name: contributor
       items:

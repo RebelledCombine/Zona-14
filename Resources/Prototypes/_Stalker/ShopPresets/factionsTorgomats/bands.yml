@@ -350,12 +350,6 @@
         STModuleSilencerSMGT1: 600
         STModuleSniperSightT1: 600
         STModuleSilencerSniperT1: 400
-    - name: shop-category-metalsearchers
-      priority: 12
-      items:
-        TrashDetectorTier2: 500
-        TrashDetectorTier3: 2000
-        TrashDetectorTier4: 3999
     - name: shop-category-customization
       priority: 13
       items:
