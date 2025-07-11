@@ -34,6 +34,8 @@
       - type: Thirst
         baseDecayRate: 0
       - type: PersonalDamageBlock
+      - type: Damageable
+        damageModifierSet: STPlayerMonolithModifierSet
       - type: BlockTackingHolyItems
       - type: TeethPull
         teethProto: ToothStalker
