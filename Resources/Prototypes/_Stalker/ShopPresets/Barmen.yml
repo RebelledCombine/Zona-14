@@ -219,6 +219,13 @@
     - name: shop-category-medicine
       priority: 7
       items:
+        STPillboxAntirad: 350
+        STGauze: 100
+        STOintment: 85
+        STBrutepack: 65
+        Bloodpack: 550
+        MedkitAI2: 350
+        Defibrillator: 1000
     - name: shop-category-medicine
       priority: 10
       items:
