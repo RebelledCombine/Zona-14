@@ -65,6 +65,6 @@ public sealed class RDWeightExamineSystem : EntitySystem
             return;
 
         entity.Comp.Current = current;
-        DirtyField(entity, entity.Comp, nameof(RDWeightExamineComponent.Current));
+        Dirty(entity);
     }
 }

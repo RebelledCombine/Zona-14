@@ -13,7 +13,7 @@ using Robust.Shared.GameStates;
 
 namespace Content.Shared._RD.Weight.Components;
 
-[RegisterComponent, NetworkedComponent, AutoGenerateComponentState(fieldDeltas: true)]
+[RegisterComponent, NetworkedComponent, AutoGenerateComponentState]
 [Access(typeof(RDWeightSystem), Other = AccessPermissions.None)]
 public sealed partial class RDWeightComponent : Component
 {

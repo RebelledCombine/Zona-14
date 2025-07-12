@@ -88,7 +88,7 @@ public sealed class RDWeightSystem : RDEntitySystem
             }
 
             entity.Comp.Inside = weight;
-            DirtyField(entity, entity.Comp, nameof(RDWeightComponent.Inside));
+            Dirty(entity);
 
             var ev = new RDWeightRefreshEvent((entity, entity.Comp), GetTotal(entity));
             RaiseLocalEvent(entity, ref ev);

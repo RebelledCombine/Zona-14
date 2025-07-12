@@ -14,7 +14,7 @@ using Robust.Shared.GameStates;
 
 namespace Content.Shared._RD.Weight.Components;
 
-[RegisterComponent, NetworkedComponent, AutoGenerateComponentState(fieldDeltas: true)]
+[RegisterComponent, NetworkedComponent, AutoGenerateComponentState]
 [Access(typeof(RDWeightSpeedModifierSystem), Other = AccessPermissions.None)]
 public sealed partial class RDWeightSpeedModifierComponent : Component
 {

@@ -44,7 +44,7 @@ public sealed class RDWeightAlertSystem : EntitySystem
             _alerts.ClearAlert(entity, previous.Value);
 
         entity.Comp.Alert = current;
-        DirtyField(entity, entity.Comp, nameof(RDWeightAlertsComponent.Alert));
+        Dirty(entity);
 
         if (current is null)
             return;

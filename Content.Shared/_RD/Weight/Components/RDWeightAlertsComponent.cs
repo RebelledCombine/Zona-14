@@ -15,7 +15,7 @@ using Robust.Shared.Serialization;
 
 namespace Content.Shared._RD.Weight.Components;
 
-[RegisterComponent, NetworkedComponent, AutoGenerateComponentState(fieldDeltas: true)]
+[RegisterComponent, NetworkedComponent, AutoGenerateComponentState]
 public sealed partial class RDWeightAlertsComponent : Component
 {
     [DataField, AutoNetworkedField]

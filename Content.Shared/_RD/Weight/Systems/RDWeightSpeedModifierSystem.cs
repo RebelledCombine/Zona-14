@@ -51,7 +51,7 @@ public sealed class RDWeightSpeedModifierSystem : EntitySystem
             return;
 
         entity.Comp.Value = value;
-        DirtyField(entity, entity.Comp, nameof(RDWeightSpeedModifierComponent.Value));
+        Dirty(entity);
 
         _movementSpeedModifierSystem.RefreshMovementSpeedModifiers(entity);
     }
