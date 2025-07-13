@@ -4,6 +4,7 @@ using Content.Server._Stalker.Utils;
 using Content.Shared._Stalker.Anomaly.Triggers.Events;
 using Content.Shared.Whitelist;
 using Robust.Server.GameObjects;
+using Robust.Shared.Map;
 using Robust.Shared.Map.Components;
 using Robust.Shared.Random;
 
@@ -34,10 +35,16 @@ public sealed class STAnomalyEffectTunnelSystem : EntitySystem
             if (options.Type == STAnomalyEffectTunnelType.Exit)
                 continue;
 
-            if (!_mapKey.TryGet(options.Map, out var mapEntity))
-                continue;
+            var maps = new List<MapId>();
+            foreach (var map in options.Maps)
+            {
+                if (!_mapKey.TryGet(map, out var mapEntity))
+                    continue;
 
-            var destinations = GetDestinations(mapEntity.Value, group);
+                maps.Add(mapEntity.Value.Comp.MapId);
+            }
+
+            var destinations = GetDestinations(maps, group);
             if (destinations.Count == 0)
                 continue;
 
@@ -59,13 +66,13 @@ public sealed class STAnomalyEffectTunnelSystem : EntitySystem
         }
     }
 
-    private List<EntityUid> GetDestinations(Entity<MapComponent> mapEntity, string group)
+    private List<EntityUid> GetDestinations(List<MapId> maps, string group)
     {
         var result = new List<EntityUid>();
         var query = EntityQueryEnumerator<STAnomalyEffectTunnelComponent, TransformComponent>();
         while (query.MoveNext(out var uid, out var effectComponent, out var transformComponent))
         {
-            if (transformComponent.MapID != mapEntity.Comp.MapId)
+            if (!maps.Contains(transformComponent.MapID))
                 continue;
 
             if (!effectComponent.Options.TryGetValue(group, out var options))

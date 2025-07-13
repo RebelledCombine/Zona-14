@@ -13,7 +13,7 @@ public sealed partial class STAnomalyEffectTunnelComponent : Component
 public partial struct STAnomalyEffectTunnelOptions
 {
     [DataField]
-    public string Map;
+    public List<string> Maps = new();
 
     [DataField]
     public float Range;
