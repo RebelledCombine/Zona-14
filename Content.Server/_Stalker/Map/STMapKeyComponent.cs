@@ -1,10 +1,8 @@
-﻿using Robust.Shared.GameStates;
+﻿namespace Content.Server._Stalker.Map;
 
-namespace Content.Server._Stalker.Map;
-
-[RegisterComponent, NetworkedComponent, AutoGenerateComponentState]
+[RegisterComponent]
 public sealed partial class STMapKeyComponent : Component
 {
-    [DataField, AutoNetworkedField]
+    [DataField]
     public string Value;
 }
