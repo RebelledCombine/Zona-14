@@ -224,6 +224,7 @@
     - protoId: ZoneAnomalyBarabashka
     - protoId: ZoneAnomalySmoke
     - protoId: ZoneAnomalySource
+      weight: 0.5
     - protoId: ZoneAnomalyGrabber
     - protoId: ZoneAnomalyWitchesCircle
     - protoId: ZoneAnomalyFreezer
@@ -232,7 +233,9 @@
     - protoId: STAnomalyHush
       weight: 0.09
     - protoId: ZoneAnomalyRift
-      weight: 2
+      weight: 0.5
+    - protoId: STAnomalyBubbleLimaExit
+      weight: 0.65
 
 - type: stAnomalyGenerationOptions
   id: STRostokAndWildsGenerationOptions
@@ -273,10 +276,12 @@
 - type: stAnomalyGenerationOptions
   id: STLimaGenerationOptions
   options:
-    totalCount: 100
+    totalCount: 250
     anomalyEntries:
     - protoId: ZoneAnomalyKissel
     - protoId: ZoneAnomalyNoGravity
+    - protoId: STAnomalyBubbleLima
+      weight: 0.35
     - protoId: ZoneAnomalyElectra
     - protoId: ZoneAnomalyGravi
     - protoId: ZoneAnomalySpringboard
@@ -294,3 +299,4 @@
     - protoId: STAnomalyHush
       weight: 0.09
     - protoId: ZoneAnomalyRift
+    - protoId: STAnomalyBubbleLima
