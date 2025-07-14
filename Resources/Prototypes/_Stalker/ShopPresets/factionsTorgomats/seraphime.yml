@@ -119,8 +119,8 @@
         # 5,45x39
         STWeaponRifleSaiga545: 1125
         STWeaponRifleAKS74U: 1800
-        STWeaponRifleStalkerAK12Sera: 7400
-        STWeaponRifleStalkerAK12: 7400
+        STWeaponRifleStalkerAK12Sera: 9400
+        STWeaponRifleStalkerAK12: 9400
         # Smg
         STWeaponSMGMP5: 1500
         STWeaponSMGStalkerCP2VereskSera: 1700
@@ -180,7 +180,7 @@
       priority: 5
       items:
         Base1270Mag: 250 #T1
-        Saiga1270Mag10: 500
+        Saiga1270Mag10: 900
           # 5,45x39
         Base545Mag10: 150 #T1
         545Mag20: 300 #T2
@@ -518,9 +518,6 @@
         # 7.54
         754FMJBox: 325
         754HPBox: 325
-        # 9.39
-        939SP5Box: 190
-        939SP6Box: 360
 
 - type: shopPreset
   id: SerafimShopPresetHeavy1
