@@ -10,8 +10,6 @@
     - type: RandomSpawner
       prototypes:
         # values
-        - Goldcoins
-        - Goldcoins5
         - ClothingNeckBronzeheart
         - ClothingNeckCargomedal
         - ClothingNeckEngineermedal
