@@ -209,10 +209,11 @@
 - type: stAnomalyGenerationOptions
   id: STRedForestGenerationOptions
   options:
-    totalCount: 400
+    totalCount: 500
     anomalyEntries:
     - protoId: ZoneAnomalyKissel
     - protoId: STAnomalyBubble
+      weight: 0.3
     - protoId: ZoneAnomalyNoGravity
     - protoId: ZoneAnomalyElectra
     - protoId: ZoneAnomalyGravi
