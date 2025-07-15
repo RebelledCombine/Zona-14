@@ -125,7 +125,7 @@
 - type: stAnomalyGenerationOptions
   id: STTemnajLohinaGenerationOptions
   options:
-    totalCount: 350
+    totalCount: 150
     anomalyEntries:
     # Gravity
     - protoId: ZoneAnomalyGrabber
