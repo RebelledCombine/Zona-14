@@ -186,7 +186,7 @@
   - type: Sprite
     sprite: _Stalker/Objects/Anomalies/bubble2.rsi
     layers:
-      - state: idle
+    - state: idle
 
 - type: entity
   id: STAnomalyBubbleExit
@@ -221,8 +221,11 @@
   - type: STAnomalyEffectTunnel
     options:
       StartCollide:
-        maps: [RedForest]
+        maps: [ RedForest ]
         range: 1
+        whitelist:
+          components:
+          - Dna
 
 - type: entity
   parent: STAnomalyBubbleExit
