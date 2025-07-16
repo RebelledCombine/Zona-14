@@ -49,6 +49,7 @@
     - type: PsyonicsActionLight
     - type: PsyonicsActionRift
     - type: PsyonicsActionSpringboard
+    - type: STPsyonicsStealthComponent
     - type: Access
       groups:
         - Anomalist
