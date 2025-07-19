@@ -78,9 +78,12 @@
         MedkitMilitary: 7000
         antiradpill: 300
 
+
 - type: shopPreset
-  id: SerafimShopPresetLight
+  id: SeraphimeShopPresetLight
   itemsForSale:
+# Mutant parts 1.5x Sidorovich
+
 #Boars -------- Health * T *
     MutantPartBoarHoof: 205 # T1
     MutantPartSeasonedBoarHoof: 405 # T2
@@ -129,25 +132,21 @@
         STWeaponSniperMosin: 1000
         STWeaponSniperVeprSeraphim: 15000
         STWeaponSniperVepr: 15000
-
-
     - name: shop-category-armor
       priority: 2
       items:
         ClothingHeadHelmetSH68: 600 # T1 - PVE
-
         ClothingHeadHelmetInfantrySera: 1500 # T2 - PVP
         ClothingHeadHelmetVityaz1C: 3500 # T2 - PVE
         ClothingHeadAssaultHelmetSeraZastup: 4000 # T3 - PVP
           # OuterClothing #
         ClothingOuterJacketSera: 12 # T1 - PVE
-        STClothingOuterArmorLightPlateVestBaseSera: 1500 # T2 - PvP
+        STClothingOuterArmorLightPlateVestBaseSera: 1500
         ClothingOuterArmorSera6b2: 1750 # T2 - PvP
         ClothingOuterArmorRCBZSera: 2000 # T2 - ENV
         STClothingOuterArmorRassvetSera: 2000 # T2 - universal
-        STClothingOuterArmorLightPlateVestBaseSera: 5500
+        STClothingOuterArmorLightPlateVestSera: 5000 # T3 - PVP
         ClothingOuterArmorSevasera: 6000 # T3 - ENV
-        ClothingOuterCoatSeraphim: 100
     - name: shop-category-utilities
       priority: 3
       items:
@@ -345,17 +344,21 @@
           # BackPacks
         ClothingBackpackDuffelBlackStalker: 150 # T1
         ClothingBackpackTacticBlackStalker: 450 # T2
-        ClothingBackpackTacticSera: 450 # T2
-        ClothingBackpackMercStalker: 2000 # T3
+        ClothingBackpackTacticSera: 650 # T2
+        ClothingBackpackMercStalker: 900 # T3
         ClothingBackpackDuffelHikingCommon: 900
-        ClothingBackpackDuffelSuperStalker: 2000
+        ClothingBackpackDuffelSuperStalker: 3000
           # Belts
         ClothingBeltBandolierStalker: 20 # T1 - PVE
+        ClothingBeltTarzanGreen: 100
+        ClothingBeltGreenWebbingStalker: 700
           # Containers
         MedkitCMSStalker: 600 # T1
         MedkitGrizzlyStalker: 850 # T2
     - name: Контрабанда
-      TradeBoxSera: 10000
+      priority: 13
+      items:
+        TradeBoxSera: 10000
 
 - type: shopPreset
   id: SerafimShopPresetHeavy
@@ -507,17 +510,18 @@
         754FMJBox: 325
         754HPBox: 325
 
+
 - type: shopPreset
-  id: SerafimShopPresetHeavy1
+  id: SeraphimeShopPresetHeavy1
   itemsForSale:
     TradeBoxSera: 300
     # Mutant parts
 
     #T3 --------
-    MutantPartBloodsuckerTentacles: 100
-    MutantPartOraculeEye: 150
-    MutantPartPseudogiantHeart: 500
-    MutantPartZombieHand: 30
+    MutantPartBloodsuckerTentacles: 50
+    MutantPartOraculeEye: 75
+    MutantPartPseudogiantHeart: 250
+    MutantPartZombieHand: 15
     #Fix
     Roubles: 0
   categories:
@@ -567,7 +571,6 @@
         754Mag20: 10
           # Smg
         VityazMag: 4
-          # Other
     - name: shop-category-ammunition
       priority: 3
       items:
@@ -607,7 +610,6 @@
         ClothingHeadAltinHelmetLimaSera: 25 # T3 - PvP
         ClothingHeadHelmetUlach: 55  # T4 - ENV
           # OuterClothing #
-        STClothingOuterArmorLightPlateVestBaseSera: 15 # T2 - PvP
         ClothingOuterArmor6B2: 15 # T2 - PvP
         STClothingOuterArmorLightPlateVestSera: 20 # T3 - PVP
         STClothingOuterArmorSeraphimStrash: 112 # T4 - Universal
@@ -620,12 +622,13 @@
           # BackPacks
         ClothingBackpackTacticGreenStalker: 5 # T2
         ClothingBackpackTacticSera: 5 # T2
-        ClothingBackpackMercStalker: 15 # T3
+        ClothingBackpackDuffelSuperStalker: 15 
           # Belts
         ClothingBeltBandolierStalker: 1 # T1 - PVE
         ClothingBeltTarzanBlack: 2 # T1 - PVP
         ClothingBeltTarzanGreen: 2 # T1 - PVP
         ClothingBeltTarzanOrange: 2 # T1 - PVP
+        ClothingBeltGreenWebbingStalker: 5
           # Containers
         MedkitCMSStalker: 6 # T1
         MedkitGrizzlyStalker: 12 # T2
@@ -650,7 +653,6 @@
     - name: shop-category-utilities
       priority: 8
       items:
-
         STTorchSera: 2
         STCombatKnife: 1
         TrashBag: 1
@@ -673,7 +675,6 @@
         ExtendedEmergencyOxygenTankFilledStalker: 3
         TrashDetectorTier1: 3
         Matchbox: 1
-        HatchetStalker: 4
     - name: shop-category-provisions
       priority: 9
       items:
@@ -707,7 +708,7 @@
         Bloodpack: 3
         psyblock: 3
         Defibrillator: 10
-        MekditAI2Sera: 2
+        MedkitAI2Sera: 2
         STOintmentGood: 3 #лечит 40 терм. урона (Heat: -20 Caustic: -10 Shock: -10 delay: 8)
         MedkitMilitary: 3 #лечит 50 физ. урона (Piercing: -20 Blunt: -10 Slash: -20 delay: 8)
         MedkitScience: 6 #лечит 45 терм. урона и 20 рад. (Heat: -15 Caustic: -15 Shock: -15 Radiation: -20 delay: 9)
@@ -786,8 +787,3 @@
         ClothingTorsoTurtlenecksGorka6B: 1
         ClothingTorsoTurtlenecksKhakiTurtleneck: 1
         ClothingTorsoTurtlenecksMatrosska: 1
-    - name: Наборы - Ковен Лиманска
-
-    - name: Наборы - Ковен Лощины
-
-    - name: Наборы - Оружие
