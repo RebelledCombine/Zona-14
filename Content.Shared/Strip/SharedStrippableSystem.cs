@@ -14,6 +14,7 @@ using Content.Shared.Interaction.Components;
 using Content.Shared.Interaction.Events;
 using Content.Shared.Inventory;
 using Content.Shared.Inventory.VirtualItem;
+using Content.Shared.NameModifier.EntitySystems;
 using Content.Shared.Popups;
 using Content.Shared.Strip.Components;
 using Content.Shared.Verbs;
@@ -632,12 +633,18 @@ public abstract class SharedStrippableSystem : EntitySystem
 
     public bool TryOpenStrippingUi(EntityUid user, Entity<StrippableComponent> target, bool openInCombat = false)
     {
+        if (_ui.IsUiOpen(target.Owner, StrippingUiKey.Key, user))
+            return false;
+
         if (!openInCombat && TryComp<CombatModeComponent>(user, out var mode) && mode.IsInCombatMode)
             return false;
 
         if (!HasComp<StrippingComponent>(user))
             return false;
 
+        var popup = Loc.GetString("someone-examine-your-equipment", ("name", Identity.Name(user, EntityManager)));
+
+        _popupSystem.PopupClient(popup, user, target.Owner, PopupType.Medium);
         _ui.OpenUi(target.Owner, StrippingUiKey.Key, user);
         return true;
     }
