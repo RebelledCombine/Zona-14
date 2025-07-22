@@ -95,7 +95,7 @@
       ClothingOuterArmor6B13: 120
       ClothingOuterArmorAborigineStalker: 75
       ClothingOuterArmorStalkerCombat: 200
-      ClothingOuterArmorPSZ9D: 350
+      STClothingOuterArmorVeryHeavy: 350
       ClothingOuterArmorUzk5: 500
   - name: shop-category-storage-and-containers
     priority: 5
