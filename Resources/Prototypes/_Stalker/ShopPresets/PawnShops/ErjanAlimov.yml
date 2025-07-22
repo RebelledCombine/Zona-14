@@ -40,6 +40,7 @@
         STGoldShovel: 100000
         ClothingHeadBandGold: 300
         GoldenPlunger: 10000
+        FlippoEngravedLighter: 5000
     - name: Потребление
       priority: 2
       items:

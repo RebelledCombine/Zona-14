@@ -110,8 +110,10 @@
         6mmBuckshotBox: 200
         7mmBuckshotBox: 65
         # .45
-        45ACPLFMJBox: 130
-        45ACPMFMJBox: 525
+        45ACPLFMJBox: 100
+        45ACPMFMJBox: 350
+        45ACPRIPBox: 200
+        45ACPAPBox: 1000
         # 7.25
         725PBox: 130
         725PTBox: 525
@@ -308,8 +310,9 @@
         SandBattlemap: 60
         GrassBattlemap: 60
         # Instruments
-        AcousticGuitarInstrument: 300
+        AcousticGuitarInstrument: 500
         AccordionInstrument: 500
+        HarmonicaInstrument: 500
         CardBin: 100
         PokerCardBin: 150
     - name: shop-category-storage-and-containers
