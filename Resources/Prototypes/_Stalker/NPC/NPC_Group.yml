@@ -420,6 +420,7 @@
 - type: entity
   parent: NPCDoll
   id: NPCSabbatSerafim
+  noSpawn: false
   name: Саббат [→   ←]
   suffix: ST, Serafim
   description: Саббат, паладин, ветеран битв с Ложным Идолом сразивший множество рабов Идола, сейчас он помогает в поставках снаряжения и отправляет поставки провизии и медикаментов в северные ковены.
@@ -440,7 +441,7 @@
         type: ShopBoundUserInterface
   - type: Shop
     moneyId: Fangs
-    shopPresetId: SeraphimeShopPresetHeavy1
+    shopPresetId: SerafimShopPresetHeavy
   - type: TypingIndicator
     proto: robot
   - type: TTS # Corvax-TTS
