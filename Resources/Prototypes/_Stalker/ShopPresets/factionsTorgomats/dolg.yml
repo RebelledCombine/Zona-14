@@ -127,6 +127,7 @@
         BoxArtcont: 750
         ZoneAnomalyDetectorAD1: 450 # T1
         ZoneAnomalyDetectorAD2: 1000 # T2
+        STPsyHelm1: 2500
     - name: shop-category-utilities
       priority: 8
       items:

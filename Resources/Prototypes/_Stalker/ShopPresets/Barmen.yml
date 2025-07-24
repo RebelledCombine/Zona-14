@@ -78,17 +78,14 @@
         STWeaponRevolverSWModel325: 1000
         STWeaponRevolverSWModel625: 1450
         STWeaponShotgunMossbergM88: 600
-        STWeaponShotgunMP153: 1000
         STWeaponShotgunSPAS: 2000
         STWeaponRifleAKS74U: 3000
         STWeaponRifleAKS74: 5500
         STWeaponRifleL85: 2250
         STWeaponRifleAKM: 6700
-        STWeaponSniperMosin: 1300
         STWeaponSMGMP5: 2600
         STWeaponSMGPP19: 3300
         STWeaponSMGPP1901: 2000
-        STWeaponRifleSIG550: 3000
         STWeaponRifleFAL: 3000
         STThrowingknifeYellow: 500
         WeaponPistolGSH18: 500
@@ -114,6 +111,7 @@
       items:
         6mmBuckshotBox: 200
         7mmBuckshotBox: 65
+        ShotgunFlechette: 300
         # .45
         45ACPLFMJBox: 100
         45ACPMFMJBox: 350
@@ -163,6 +161,7 @@
         ClothingHeadHelmetVityaz1C: 3500
         ClothingHeadHelmetInfantry: 500
         STClothingHeadHelmetMakeshiftTacticalT3: 1000
+        STPsyHelm1: 2500
         # belt
         ClothingBeltBandolierStalker: 75
         ClothingBeltTarzanOrange: 200

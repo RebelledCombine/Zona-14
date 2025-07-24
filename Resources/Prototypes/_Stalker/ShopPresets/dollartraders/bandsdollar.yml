@@ -1,5 +1,5 @@
 - type: shopPreset
-  id: BandsShopPreset
+  id: BandsDollarShopPreset
   itemsForSale:
     # Thermal group - 1
     ZoneArtifactFireball: 400
@@ -292,7 +292,6 @@
         TrashDetectorTier1: 200
         TrashDetectorTier2: 400
         TrashDetectorTier3: 800
-        STPsyHelm1: 2500
     - name: shop-category-utilities
       priority: 8
       items:

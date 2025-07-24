@@ -1,5 +1,5 @@
 - type: shopPreset
-  id: FreedomShopPreset
+  id: FreedomDollarShopPreset
   itemsForSale:
     # Thermal group - 1 x1.5 Sidorovich
     ZoneArtifactFireball: 600
@@ -146,7 +146,6 @@
           # Detectors
         ZoneArtifactDetectorPulse: 50 # T1
         ZoneArtifactDetectorResponseCvoboda: 100 # T2
-        STPsyHelm1: 2500
         ZoneArtifactDetectorResponse: 1000 # T2
     - name: shop-category-utilities
       priority: 8

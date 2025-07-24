@@ -87,7 +87,7 @@
           # 7mm
         STWeaponShotgunTOZ34: 250 # T1
         STWeaponShotgunMP133: 500 # T2
-        STWeaponShotgunMP153: 700 # T2
+        STWeaponShotgunMP153: 1700 # T2
          # 9x18
         WeaponPistolStalkerPM: 50 #T1
          # 7,62x25
@@ -161,6 +161,7 @@
         ClothingOuterArmorZaryaStalker: 2000 # T2 - PVE
         SetZaryaStalkerBuyableCrate: 3300
         ClothingOuterArmorSevaStalker: 15000
+        STPsyHelm1: 5000
 
     - name: shop-category-storage-and-containers
       priority: 5
