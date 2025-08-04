@@ -51,6 +51,9 @@ namespace Content.Server._Stalker.Bands
 
             // Subscribe to the new buy message
             SubscribeLocalEvent<BandsManagingComponent, BandsManagingBuyItemMessage>(OnBuyItem);
+
+            SubscribeLocalEvent<BandsComponent, ToggleBandsEvent>(OnToggle);
+            SubscribeLocalEvent<BandsComponent, ChangeBandEvent>(OnChange);
         }
 
         private void SubscribeUpdateUiState<T>(Entity<BandsManagingComponent> ent, ref T ev) where T : notnull
