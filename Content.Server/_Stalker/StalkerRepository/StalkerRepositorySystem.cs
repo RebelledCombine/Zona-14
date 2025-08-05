@@ -75,7 +75,6 @@ public sealed class StalkerRepositorySystem : EntitySystem
         SubscribeLocalEvent<StalkerRepositoryComponent, InteractUsingEvent>(OnInteractUsing);
         SubscribeLocalEvent<StalkerRepositoryComponent, RepositoryInjectFromUserMessage>(OnInjectMessage);
         SubscribeLocalEvent<StalkerRepositoryComponent, RepositoryEjectMessage>(OnEjectMessage);
-        SubscribeLocalEvent<StalkerRepositoryComponent, GetVerbsEvent<Verb>>(AddClearVerb);
 
         // else updating shit, so it won't be hacked by others
         SubscribeLocalEvent<ItemComponent, HandSelectedEvent>(OnSelected);
@@ -85,25 +84,6 @@ public sealed class StalkerRepositorySystem : EntitySystem
 
 
         _sawmill = Logger.GetSawmill("repository");
-    }
-
-    private void AddClearVerb(Entity<StalkerRepositoryComponent> ent, ref GetVerbsEvent<Verb> args)
-    {
-        var uid = args.Target;
-
-        // Clear Storage
-        Verb clearStorageVerb = new();
-        if (!TryComp<StalkerRepositoryComponent>(args.Target, out var repo))
-            return;
-
-        clearStorageVerb.Text = Loc.GetString("clear-storage-verb-text");
-        clearStorageVerb.Category = VerbCategory.Admin;
-        clearStorageVerb.Act = () =>
-        {
-            _stalkerStorageSystem.ClearStorage(uid);
-        };
-        clearStorageVerb.Impact = LogImpact.Extreme;
-        args.Verbs.Add(clearStorageVerb);
     }
 
     #endregion

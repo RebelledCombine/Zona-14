@@ -113,6 +113,23 @@ namespace Content.Server.Administration.Systems
                 mark.Impact = LogImpact.Low;
                 args.Verbs.Add(mark);
 
+                // Clear Storage
+                if (TryComp<StalkerRepositoryComponent>(args.Target, out var repo))
+                {
+                    Verb clearStorageVerb = new();
+
+                    clearStorageVerb.Text = Loc.GetString("clear-storage-verb-text");
+                    clearStorageVerb.Category = VerbCategory.Admin;
+                    clearStorageVerb.Act = () =>
+                    {
+                        _stalkerStorageSystem.ClearStorage(args.Target);
+                    };
+                    clearStorageVerb.Impact = LogImpact.Extreme;
+
+                    args.Verbs.Add(clearStorageVerb);
+                }
+
+
                 if (TryComp(args.Target, out ActorComponent? targetActor))
                 {
                     // AdminHelp
