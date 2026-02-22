@@ -38,5 +38,3 @@
             StalkerNoviceFreedom: [ 0, 15 ]
             StalkerFreedom: [ 0, -1 ]
             StalkerHeadFreedom: [ 0, -1 ]
-            # Monolith
-            StalkerMonolith: [ 0, -1 ]
