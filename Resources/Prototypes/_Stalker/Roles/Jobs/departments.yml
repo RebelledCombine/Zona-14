@@ -6,10 +6,12 @@
   weight: 10
   roles:
   - Stalker
+  - StalkerRookie
   - StalkerVeteran
   - StalkerGuide
-  - StalkerClearSkyHead
-  - StalkerClearSky
+  - StalkerNoviceFreedom
+  - StalkerNoviceDolg
+  - StalkerMonolithFree
 
 # - type: department
 #   id: StalkerDisabled
@@ -37,12 +39,12 @@
   color: "#9FED58"
   weight: 9
   roles:
-  - StalkerNoviceDolg
   - StalkerDolg
   - StalkerHeadDolg
-  - StalkerNoviceFreedom
   - StalkerFreedom
   - StalkerHeadFreedom
+  - StalkerClearSkyHead
+  - StalkerClearSky
   #- StalkerClearSky # Stalker-TODO: Jobs cannot have multiple primary departments!
   - StalkerNeutral
   - StalkerPoisk

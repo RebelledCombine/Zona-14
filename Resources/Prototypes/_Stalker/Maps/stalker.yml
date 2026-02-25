@@ -1,7 +1,7 @@
 - type: gameMap
   id: STWorld
   mapName: 'StalkerMap'
-  mapPath: "/Maps/_ST/World/KordonV175.yml"
+  mapPath: "/Maps/_ST/World/KordonV178.yml"
   minPlayers: 0
   stations:
     Stalker:
@@ -12,10 +12,12 @@
         - type: StationJobs
           availableJobs:
             Stalker: [ 0, -1 ]
+            StalkerRookie: [ 0, -1 ]
             StalkerVeteran: [ 0, -1 ]
             StalkerGuide: [ 0, -1 ]
             StalkerClearSky: [ 0, -1 ]
             StalkerClearSkyHead: [ 0, -1 ]
+            StalkerMonolithFree: [ 0, 20 ]
             StalkerRene: [ 0, -1 ]
             # Seraphim
             Seraphim: [ 0, -1 ]
@@ -26,15 +28,13 @@
             sci_decan: [ 0, -1 ]
             sci_rector: [ 0, -1 ]
             # Duty
-            StalkerNoviceDolg: [ 0, -1 ]
+            StalkerNoviceDolg: [ 0, 15 ]
             StalkerDolg: [ 0, -1 ]
             StalkerHeadDolg: [ 0, -1 ]
             # Brigades
             StalkerBandit: [ 0, -1 ]
             StalkerHeadBandit: [0, -1]
             #Freedom
-            StalkerNoviceFreedom: [ 0, -1 ]
+            StalkerNoviceFreedom: [ 0, 15 ]
             StalkerFreedom: [ 0, -1 ]
             StalkerHeadFreedom: [ 0, -1 ]
-            # Monolith
-            StalkerMonolith: [ 0, -1 ]
