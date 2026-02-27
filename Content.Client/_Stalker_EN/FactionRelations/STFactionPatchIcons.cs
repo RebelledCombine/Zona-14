@@ -19,13 +19,14 @@ public static class STFactionPatchIcons
         ["Freedom"] = (PatchRsiPath, "freedom"),
         ["Bandits"] = (PatchRsiPath, "band"),
         ["Duty"] = (PatchRsiPath, "dolg"),
-        ["Ecologist"] = (PatchRsiPath, "ecologist"),
+        ["Ecologist"] = (PatchRsiPath, "sci_rector"),
         ["Neutrals"] = (PatchRsiPath, "ne"),
         ["Mercenaries"] = (PatchRsiPath, "merc"),
         ["Military"] = (PatchRsiPath, "army"),
-        ["Monolith"] = (PatchRsiPath, "monolith"),
+        ["Monolith"] = (PatchRsiPath, "monolithfree"),
         ["Clear Sky"] = (PatchRsiPath, "cn"),
         ["Renegades"] = (PatchRsiPath, "rene"),
         ["Rookies"] = (PatchRsiPathEN, "rookie"),
+        ["Seraph"] = (PatchRsiPath, "seraph_cherubim"),
     };
 }

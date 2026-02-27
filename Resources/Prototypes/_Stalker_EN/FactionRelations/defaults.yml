@@ -12,6 +12,7 @@
     - Monolith
     - ClearSky
     - Renegades
+    - Seraph
   bandMapping:
     Stalker: Loners
     Freedom: Freedom
@@ -19,8 +20,9 @@
     Dolg: Duty
     Scientists: Ecologist
     Monolith: Monolith
-    "Clear Sky": ClearSky
+    Clear Sky: ClearSky
     Renegades: Renegades
+    Seraphims: Seraph
   relations:
     # Loners relations
     - factionA: Bandits
@@ -87,5 +89,19 @@
 
     # ClearSky relations
     - factionA: ClearSky
+      factionB: Renegades
+      relation: War
+
+    # Seraph relations
+    - factionA: Seraph
+      factionB: Duty
+      relation: Hostile
+    - factionA: Seraph
+      factionB: Freedom
+      relation: War
+    - factionA: Seraph
+      factionB: Monolith
+      relation: War
+    - factionA: Seraph
       factionB: Renegades
       relation: War

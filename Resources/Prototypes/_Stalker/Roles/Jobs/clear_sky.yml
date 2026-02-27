@@ -24,6 +24,8 @@
           - CN
       - type: Bands
         band: Stalker
+        altBand: stalker
+        canChange: true
         bandIcon: cn
         bandProto: STClearSkyBand
         bandRankId: 2
@@ -60,6 +62,8 @@
           - CN
       - type: Bands
         band: Stalker
+        altBand: stalker
+        canChange: true
         bandIcon: cn
         bandProto: STClearSkyBand
         bandRankId: 2
