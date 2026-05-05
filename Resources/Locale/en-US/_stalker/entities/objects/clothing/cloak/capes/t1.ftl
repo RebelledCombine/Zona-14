@@ -1,4 +1,5 @@
 ent-STClothingCapeT1Base = T1 raincoat base
+    .desc = { "" }
     .suffix = ST, T1
 ent-ClothingOuterCoatDoshdevik = raincoat
     .desc = a thick raincoat that protects you from rain and certain chemicals.
@@ -12,6 +13,7 @@ ent-ClothingHeadHelmetPahanCoat = hood of the pahan's cloak
 ent-ClothingOuterCoatPoisk = explorer's cloak
     .desc = This cape is not just a piece of jewelry, it symbolizes the desire for adventure and the thirst for discovery.
 ent-ClothingHeadHatHoodCoatPoisk = hood
+    .desc = Hoods, helmets and the like.
 ent-ClothingNeckCloakCassock = pilgrim's cassock
     .desc = made of coarse gray cloth, helps to renounce worldly things
     .suffix = ST, pilgrims
