@@ -22,4 +22,36 @@
   id: 2
   time: '2026-05-05T11:03:27Z'
   url: https://github.com/Zona-14/Zona-14/pull/6
+- author: teecoding
+  changes:
+  - message: Muzzle smoke and a new muzzle flash sprite when firing guns.
+    type: Add
+  id: 3
+  time: '2026-05-05T19:09:47Z'
+  url: https://github.com/Zona-14/Zona-14/pull/10
+- author: teecoding
+  changes:
+  - message: Added four gun cases (standard, large, military, mercenary) for storing
+      firearms with radiation-resistant lining.
+    type: Add
+  id: 4
+  time: '2026-05-05T12:36:23Z'
+  url: https://github.com/Zona-14/Zona-14/pull/7
+- author: teecoding
+  changes:
+  - message: Hair, facial hair, and eye colors are now restricted to a desaturated
+      Stalker palette.
+    type: Tweak
+  id: 5
+  time: '2026-05-05T12:34:18Z'
+  url: https://github.com/Zona-14/Zona-14/pull/8
+- author: teecoding
+  changes:
+  - message: Particle system, with welder sparks, fire, and gib mist visuals.
+    type: Add
+  - message: Particle Quality option in graphics settings.
+    type: Add
+  id: 6
+  time: '2026-05-05T18:42:21Z'
+  url: https://github.com/Zona-14/Zona-14/pull/9
 Order: 0
