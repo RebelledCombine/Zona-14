@@ -113,6 +113,7 @@ public sealed partial class GunSystem : SharedGunSystem
                         RaiseLocalEvent(ent!.Value, new AmmoShotEvent()
                         {
                             FiredProjectiles = shotProjectiles,
+                            Angle = mapAngle, // stalker-en
                         });
 
                         SetCartridgeSpent(ent.Value, cartridge, true);
@@ -165,6 +166,7 @@ public sealed partial class GunSystem : SharedGunSystem
         RaiseLocalEvent(gunUid, new AmmoShotEvent()
         {
             FiredProjectiles = shotProjectiles,
+            Angle = mapAngle, // stalker-en
         });
 
         void CreateAndFireProjectiles(EntityUid ammoEnt, AmmoComponent ammoComp)
