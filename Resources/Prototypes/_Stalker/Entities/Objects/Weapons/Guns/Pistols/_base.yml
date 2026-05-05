@@ -71,3 +71,6 @@
   - type: STWeaponAccuracy
     accuracyMultiplierUnwielded: 1.5
     modifiedAccuracyMultiplier: 1.5
+  - type: ParticleOnGunShot # stalker-en-start
+    effect: MuzzleSmoke
+    inheritAngle: true # stalker-en-end

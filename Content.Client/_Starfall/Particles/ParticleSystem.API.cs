@@ -23,10 +23,11 @@ public sealed partial class ParticleSystem
         ProtoId<ParticleEffectPrototype> effectId,
         EntityUid entity,
         Color? colorOverride = null,
-        bool attach = true)
+        bool attach = true,
+        ParticleRuntimeOverrides? overrride = null) // stalker-en
     {
         var coords = _transform.GetMapCoordinates(entity);
-        return SpawnEffect(effectId, coords, attach ? entity : null, colorOverride);
+        return SpawnEffect(effectId, coords, attach ? entity : null, colorOverride, overrride); // stalker-en
     }
 
     /// <summary>
@@ -39,9 +40,10 @@ public sealed partial class ParticleSystem
     public ActiveEmitter? CreateParticle(
         ProtoId<ParticleEffectPrototype> effectId,
         MapCoordinates coords,
-        Color? colorOverride = null)
+        Color? colorOverride = null,
+        ParticleRuntimeOverrides? overrride = null) // stalker-en
     {
-        return SpawnEffect(effectId, coords, null, colorOverride);
+        return SpawnEffect(effectId, coords, null, colorOverride, overrride); // stalker-en
     }
 
     /// <summary>

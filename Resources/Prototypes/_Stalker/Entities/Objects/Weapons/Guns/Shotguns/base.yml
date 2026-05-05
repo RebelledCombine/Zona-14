@@ -44,6 +44,9 @@
           - STWeaponModuleShotgunChoke
   - type: STWeaponAccuracy
     accuracyMultiplier: 1.15
+  - type: ParticleOnGunShot # stalker-en-start
+    effect: MuzzleSmoke
+    inheritAngle: true # stalker-en-end
 
 - type: entity
   abstract: true
