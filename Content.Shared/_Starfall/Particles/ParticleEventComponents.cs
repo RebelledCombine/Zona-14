@@ -73,6 +73,10 @@ public sealed partial class ParticleOnPrimedComponent : ParticleOnEventBase
 [RegisterComponent]
 public sealed partial class ParticleOnGunShotComponent : ParticleOnEventBase
 {
+    // stalker-en-start
+    [DataField]
+    public bool InheritAngle = false;
+    // stalker-en-end
 }
 
 /// <summary>
