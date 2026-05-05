@@ -1,5 +1,10 @@
 name: Diff RSIs
 
+permissions:
+  contents: read
+  pull-requests: write
+  issues: write
+
 on:
   pull_request_target:
     paths:
