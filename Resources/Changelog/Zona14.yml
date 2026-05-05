@@ -1,2 +1,25 @@
-﻿Entries: []
+﻿Entries:
+- author: teecoding
+  changes:
+  - message: English translations for _Stalker entity prototypes (around 500 entities).
+    type: Add
+  - message: English clients no longer see Russian text leaked through the fluent
+      fallback.
+    type: Fix
+  - message: replaced Cyrillic look-alike characters in legacy en-US locale files.
+    type: Fix
+  - message: dropped the ru-RU cross-culture fallback so missing en-US keys are now
+      visible as raw fluent IDs.
+    type: Tweak
+  id: 1
+  time: '2026-05-05T11:20:08Z'
+  url: https://github.com/Zona-14/Zona-14/pull/5
+- author: teecoding
+  changes:
+  - message: Cleaned up prototype data so anomalies, mutants, armor and radio actions
+      load with the correct values again.
+    type: Fix
+  id: 2
+  time: '2026-05-05T11:03:27Z'
+  url: https://github.com/Zona-14/Zona-14/pull/6
 Order: 0
