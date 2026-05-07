@@ -312,12 +312,16 @@ public sealed partial class GunSystem : SharedGunSystem
 
     protected override void Popup(string message, EntityUid? uid, EntityUid? user) { }
 
-    protected override void CreateEffect(EntityUid gunUid, MuzzleFlashEvent message, EntityUid? user = null)
+    // Zona14: also remove `player`'s session so relayed/mounted firers don't get a duplicate flash.
+    protected override void CreateEffect(EntityUid gunUid, MuzzleFlashEvent message, EntityUid? user = null, EntityUid? player = null)
     {
         var filter = Filter.Pvs(gunUid, entityManager: EntityManager);
 
         if (TryComp<ActorComponent>(user, out var actor))
             filter.RemovePlayer(actor.PlayerSession);
+
+        if (TryComp(player, out actor)) // Zona14
+            filter.RemovePlayer(actor.PlayerSession); // Zona14
 
         RaiseNetworkEvent(message, filter);
     }
