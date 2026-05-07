@@ -251,7 +251,7 @@ public abstract partial class SharedGunSystem : EntitySystem
             User = user,
             Used = (gunUid, gun)
         };
-        RaiseLocalEvent(gunUid, ref prevention, true); // stalker-changes
+        RaiseLocalEvent(gunUid, ref prevention); // Zona14: broadcast removed; SharedSniperZoneSystem catches the user-targeted raise on line 258 via SniperZoneCheckComponent
         if (prevention.Cancelled)
             return false;
 
