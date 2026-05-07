@@ -1,3 +1,4 @@
+using System.Linq; // Zona14
 using System.Numerics;
 using Content.Client.Animations;
 using Content.Client.Gameplay;
@@ -44,6 +45,8 @@ public sealed partial class GunSystem : SharedGunSystem
     [Dependency] private readonly SharedMapSystem _maps = default!;
     [Dependency] private readonly SharedTransformSystem _xform = default!;
     [Dependency] private readonly SpriteSystem _sprite = default!;
+    [Dependency] private readonly Content.Client._Zona14.Weapons.Ranged.Prediction.GunPredictionSystem _gunPrediction = default!; // Zona14
+    [Dependency] private readonly Content.Client._Zona14.Movement.RMCLagCompensationSystem _rmcLagCompensation = default!; // Zona14
 
     public static readonly EntProtoId HitscanProto = "HitscanEffect";
 
@@ -203,14 +206,24 @@ public sealed partial class GunSystem : SharedGunSystem
         if (_state.CurrentState is GameplayStateBase screen)
             target = GetNetEntity(screen.GetClickedEntity(mousePos));
 
+        // Zona14: spawn predicted projectiles client-side, then send their IDs to the server.
+        if (_player.LocalSession is not { } session)
+            return;
+
         Log.Debug($"Sending shoot request tick {Timing.CurTick} / {Timing.CurTime}");
+
+        var projectiles = _gunPrediction.ShootRequested(GetNetEntity(gunUid),
+            GetNetCoordinates(coordinates), target, null, session);
 
         RaisePredictiveEvent(new RequestShootEvent
         {
             Target = target,
             Coordinates = GetNetCoordinates(coordinates),
             Gun = GetNetEntity(gunUid),
+            Shot = projectiles?.Select(e => e.Id).ToList(), // Zona14
+            LastRealTick = _rmcLagCompensation.GetLastRealTick(null), // Zona14
         });
+        // End Zona14
     }
 
     // Zona14: prediction-aware Shoot — client doesn't track its own list at this layer;
