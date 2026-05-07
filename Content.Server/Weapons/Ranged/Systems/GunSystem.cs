@@ -3,6 +3,7 @@ using Content.Server.Cargo.Systems;
 using Content.Server.Weapons.Ranged.Components;
 using Content.Shared.Cargo;
 using Content.Shared._DZ.FarGunshot; // Stalker-using
+using Content.Shared._Zona14.Weapons.Ranged.Prediction; // Zona14
 using Content.Shared.Damage;
 using Content.Shared.Damage.Systems;
 using Content.Shared.Projectiles;
@@ -50,10 +51,37 @@ public sealed partial class GunSystem : SharedGunSystem
         args.Price += price * component.UnspawnedCount;
     }
 
-    public override void Shoot(EntityUid gunUid, GunComponent gun, List<(EntityUid? Entity, IShootable Shootable)> ammo,
-        EntityCoordinates fromCoordinates, EntityCoordinates toCoordinates, out bool userImpulse, EntityUid? user = null, bool throwItems = false)
+    // Zona14: prediction-aware Shoot — returns spawned projectiles, tags predicted twins.
+    public override List<EntityUid>? Shoot(EntityUid gunUid, GunComponent gun,
+        List<(EntityUid? Entity, IShootable Shootable)> ammo,
+        EntityCoordinates fromCoordinates, EntityCoordinates toCoordinates,
+        out bool userImpulse, EntityUid? user = null, bool throwItems = false,
+        List<int>? predictedProjectiles = null, ICommonSession? userSession = null)
     {
         userImpulse = true;
+        var spawned = new List<EntityUid>();
+
+        // Zona14: tag each projectile with predicted-twin metadata when prediction is on.
+        void MarkPredicted(EntityUid projectile, int index)
+        {
+            if (predictedProjectiles == null || userSession == null)
+                return;
+
+            if (index < 0 || index >= predictedProjectiles.Count)
+                return;
+
+            var predicted = predictedProjectiles[index];
+
+            var comp = new PredictedProjectileServerComponent
+            {
+                Shooter = userSession,
+                ClientId = predicted,
+                ClientEnt = user,
+            };
+            AddComp(projectile, comp, true);
+            Dirty(projectile, comp);
+        }
+        // End Zona14
 
         if (user != null)
         {
@@ -62,7 +90,7 @@ public sealed partial class GunSystem : SharedGunSystem
             if (selfEvent.Cancelled)
             {
                 userImpulse = false;
-                return;
+                return null; // Zona14
             }
         }
 
@@ -104,6 +132,8 @@ public sealed partial class GunSystem : SharedGunSystem
                     {
                         var uid = Spawn(cartridge.Prototype, fromEnt);
                         CreateAndFireProjectiles(uid, cartridge);
+                        spawned.Add(uid); // Zona14
+                        MarkPredicted(uid, spawned.Count - 1); // Zona14
 
                         // stalker-changes-start
                         var farSoundEvent = new FargunshotEvent(gunUid.Id);
@@ -138,6 +168,8 @@ public sealed partial class GunSystem : SharedGunSystem
                     if (ent == null)
                         break;
                     CreateAndFireProjectiles(ent.Value, newAmmo);
+                    spawned.Add(ent.Value); // Zona14
+                    MarkPredicted(ent.Value, spawned.Count - 1); // Zona14
 
                     break;
                 case HitscanAmmoComponent:
@@ -168,6 +200,8 @@ public sealed partial class GunSystem : SharedGunSystem
             FiredProjectiles = shotProjectiles,
             Angle = mapAngle, // stalker-en
         });
+
+        return spawned; // Zona14
 
         void CreateAndFireProjectiles(EntityUid ammoEnt, AmmoComponent ammoComp)
         {
