@@ -1,13 +1,13 @@
 - type: mapLoader
   id: StalkerBaseMaps
   mapPaths:
-    Garbage: /Maps/_ST/World/SvalkaV173.yml
-    #Agroprom: /Maps/_ST/World/AgropromV109.yml #Zona14 Disabled for now
+    BarUnderground: /Maps/_ST/World/UndegroundWildsBar100radsV38.yml
     MilitaryBase: /Maps/_ST/World/MBaseV15.yml
     Darkscape: /Maps/_ST/World/TemnajLohinaV99.yml
     Swamps: /Maps/_ST/World/BolotaV83.yml
+    Garbage: /Maps/_ST/World/SvalkaV173.yml
+    #Agroprom: /Maps/_ST/World/AgropromV109.yml #Zona14 Disabled for now
     #DarkValley: /Maps/_ST/World/TemnajDolinaGEN2V80.yml #Zona14 Disabled for now
     #Rostok: /Maps/_ST/World/RostokAndWildsV85.yml #Zona14 Disabled for now
     #RedForest: /Maps/_ST/World/RedForestV92.yml #Zona14 Disabled for now
     #Limansk: /Maps/_ST/World/limanskV155.yml #Zona14 Disabled for now
-    BarUnderground: /Maps/_ST/World/UndegroundWildsBar100radsV38.yml
