@@ -1,6 +1,9 @@
 // SPDX-License-Identifier: MIT
+using System.Collections.Generic;
 using Content.Shared._Zona14.Weapons.Ranged.Prediction;
+using Content.Shared.Weapons.Ranged.Events;
 using Robust.Shared.GameObjects;
+using Robust.Shared.Timing;
 
 namespace Content.IntegrationTests.Tests._Zona14.Prediction;
 
@@ -24,5 +27,18 @@ public sealed class PredictionComponentRegistrationTest
         });
 
         await pair.CleanReturnAsync();
+    }
+
+    [Test]
+    public void RequestShootEventCarriesShotAndTick()
+    {
+        var ev = new RequestShootEvent
+        {
+            Shot = new List<int> { 1, 2, 3 },
+            LastRealTick = new GameTick(42),
+        };
+
+        Assert.That(ev.Shot, Is.EqualTo(new[] { 1, 2, 3 }));
+        Assert.That(ev.LastRealTick, Is.EqualTo(new GameTick(42)));
     }
 }
