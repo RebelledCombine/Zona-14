@@ -62,7 +62,7 @@ public sealed class StaminaActiveSystem : EntitySystem
                 active.Change = true;
                 DirtyFields(uid, active, null, nameof(active.Slowed), nameof(active.Change)); // Zona14: Network this
                 _speed.RefreshMovementSpeedModifiers(uid);
-                return;
+                continue;
             }
         }
     }
