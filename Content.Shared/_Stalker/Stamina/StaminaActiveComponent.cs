@@ -29,7 +29,6 @@ public sealed partial class StaminaActiveComponent : Component
     /// Modifier to set entity sprint speed to a walking speed. Counts himself.
     /// Nothing will happen if you'll set it manually
     /// </summary>
-    [AutoNetworkedField] // Zona14: Networked
     public float SprintModifier = 0.5f;
 
     [AutoNetworkedField] // Zona14: Networked
