@@ -28,29 +28,15 @@ public sealed class ProjectileSystem : SharedProjectileSystem
     [Dependency] private readonly InventorySystem _inventory = default!; // Stalker-Changes
     [Dependency] private readonly IPrototypeManager _prototype = default!; // Stalker-Changes
 
-    public override void Initialize()
-    {
-        base.Initialize();
-        SubscribeLocalEvent<ProjectileComponent, StartCollideEvent>(OnStartCollide);
-    }
+    // Zona14: OnStartCollide subscription and the OnStartCollide guards now live in
+    //         SharedProjectileSystem so the client-side predicted twin routes through the same
+    //         entry point. ProjectileCollide is an override of the shared method.
 
-    private void OnStartCollide(EntityUid uid, ProjectileComponent component, ref StartCollideEvent args)
-    {
-        // This is so entities that shouldn't get a collision are ignored.
-        if (args.OurFixtureId != ProjectileFixture || !args.OtherFixture.Hard
-            || component.ProjectileSpent || component is { Weapon: null, OnlyCollideWhenShot: true })
-            return;
-
-        // Zona14: collision body extracted to public ProjectileCollide so the prediction
-        //         system can apply server-validated hits without re-implementing damage logic.
-        ProjectileCollide((uid, component, args.OurBody), args.OtherEntity, predicted: false);
-    }
-
-    // Zona14: extracted from OnStartCollide for prediction validation. Preserves the
-    //         stalker-fork armor / ignoreResistors / penetration logic byte-for-byte.
-    //         When `predicted` is true, the firer's client has already drawn the hit
-    //         effect / shake / impact broadcast, so we skip those to avoid double-rendering.
-    public void ProjectileCollide(Entity<ProjectileComponent, PhysicsComponent> projectile,
+    // Zona14: server override of SharedProjectileSystem.ProjectileCollide. Preserves the
+    //         stalker-fork armor / ignoreResistors / penetration logic byte-for-byte. When
+    //         `predicted` is true, the firer's client has already drawn the hit effect / shake
+    //         / impact broadcast, so we skip those to avoid double-rendering.
+    public override void ProjectileCollide(Entity<ProjectileComponent, PhysicsComponent> projectile,
         EntityUid target, bool predicted = false)
     {
         var (uid, component, ourBody) = projectile;
@@ -109,7 +95,8 @@ public sealed class ProjectileSystem : SharedProjectileSystem
         }
         var deleted = Deleted(target);
 
-        if (_damageableSystem.TryChangeDamage((target, damageableComponent), ev.Damage, out var damage, component.IgnoreResistances || ignoreResitance, origin: component.Shooter, ignoreResistors: ignore) && Exists(component.Shooter)) // Stalker-Changes-IgnoreResistors
+        var damageApplied = _damageableSystem.TryChangeDamage((target, damageableComponent), ev.Damage, out var damage, component.IgnoreResistances || ignoreResitance, origin: component.Shooter, ignoreResistors: ignore); // Stalker-Changes-IgnoreResistors
+        if (damageApplied && Exists(component.Shooter))
         {
             if (!deleted && !predicted)
             {
@@ -160,6 +147,15 @@ public sealed class ProjectileSystem : SharedProjectileSystem
                 component.ProjectileSpent = true;
             }
         }
+        else
+        {
+            // Zona14: damage didn't apply (no DamageableComponent on target, damage spec rejected,
+            // or shooter de-spawned mid-flight). The bullet still physically struck a hard fixture
+            // — without this, ProjectileSpent stays false and the DeleteOnCollide check below
+            // never QueueDels the projectile, so it sits stuck against the target. Penetration
+            // tracking depends on `damage` info we don't have in this branch, so just mark spent.
+            component.ProjectileSpent = true;
+        }
 
         if (!deleted)
         {
@@ -174,7 +170,14 @@ public sealed class ProjectileSystem : SharedProjectileSystem
 
         if (!predicted && component.ImpactEffect != null && TryComp(uid, out TransformComponent? xform))
         {
-            RaiseNetworkEvent(new ImpactEffectEvent(component.ImpactEffect, GetNetCoordinates(xform.Coordinates)), Filter.Pvs(xform.Coordinates, entityMan: EntityManager));
+            var filter = Filter.Pvs(xform.Coordinates, entityMan: EntityManager);
+            // Zona14: exclude the shooter — their client twin already raised a local
+            // ImpactEffectEvent via SharedProjectileSystem.ProjectileCollide's IsClientSide
+            // branch. Without this, the shooter sees two impact effects: one immediate from
+            // the predicted twin, one a frame or two later from the server broadcast.
+            if (component.Shooter is { } shooter && TryComp(shooter, out ActorComponent? actor))
+                filter = filter.RemovePlayer(actor.PlayerSession);
+            RaiseNetworkEvent(new ImpactEffectEvent(component.ImpactEffect, GetNetCoordinates(xform.Coordinates)), filter);
         }
     }
 }
