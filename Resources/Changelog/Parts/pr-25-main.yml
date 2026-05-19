@@ -1,0 +1,10 @@
+author: teecoding
+time: '2026-05-19T12:41:15Z'
+url: https://github.com/Zona-14/Zona-14/pull/25
+changes:
+- type: Add
+  message: 'RULES: Server rules and faction pages are now available in English under
+    the Rules window.'
+- type: Tweak
+  message: Tutorial intro is now in English and points at the Zona-14 Discord.
+category: Main
