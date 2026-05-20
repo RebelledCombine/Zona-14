@@ -1,7 +1,0 @@
-author: Roland410
-time: '2026-05-17T20:22:58Z'
-url: https://github.com/Zona-14/Zona-14/pull/24
-changes:
-- type: Fix
-  message: Removes nonexistent items from traders to fix build errors.
-category: Main

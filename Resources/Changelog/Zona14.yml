@@ -137,4 +137,21 @@
   id: 15
   time: '2026-05-14T12:22:35Z'
   url: https://github.com/Zona-14/Zona-14/pull/22
+- author: Roland410
+  changes:
+  - message: Removes nonexistent items from traders to fix build errors.
+    type: Fix
+  id: 16
+  time: '2026-05-17T20:22:58Z'
+  url: https://github.com/Zona-14/Zona-14/pull/24
+- author: teecoding
+  changes:
+  - message: 'RULES: Server rules and faction pages are now available in English under
+      the Rules window.'
+    type: Add
+  - message: Tutorial intro is now in English and points at the Zona-14 Discord.
+    type: Tweak
+  id: 17
+  time: '2026-05-19T12:41:15Z'
+  url: https://github.com/Zona-14/Zona-14/pull/25
 Order: 0
