@@ -27,4 +27,24 @@ public static class Zona14CVars
 
     public static readonly CVarDef<float> LagCompensationMarginTiles =
         CVarDef.Create("zona14.lag_compensation_margin_tiles", 0.25f, CVar.SERVER | CVar.REPLICATED);
+
+    // Ported from funky-station Content.Shared/_Funkystation/CCVars/CCVars.Funky.cs@2e50750ab6 (content warning CVars)
+
+    /// <summary>
+    /// If the content warning should be displayed.
+    /// </summary>
+    public static readonly CVarDef<bool> ContentWarningDisplay =
+        CVarDef.Create("zona14.content_warning.display", true, CVar.SERVER | CVar.REPLICATED);
+
+    /// <summary>
+    /// If ignoring the content warning should kick (quit) the client.
+    /// </summary>
+    public static readonly CVarDef<bool> ContentWarningKickOnIgnore =
+        CVarDef.Create("zona14.content_warning.kick_on_ignore", true, CVar.SERVER | CVar.REPLICATED);
+
+    /// <summary>
+    /// If the content warning popup was acknowledged on this client.
+    /// </summary>
+    public static readonly CVarDef<bool> ContentWarningAcknowledged =
+        CVarDef.Create("zona14.content_warning.acknowledged", false, CVar.CLIENTONLY | CVar.ARCHIVE);
 }
