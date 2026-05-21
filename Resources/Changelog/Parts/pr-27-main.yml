@@ -1,0 +1,16 @@
+author: Roland410
+time: '2026-05-21T08:32:54Z'
+url: https://github.com/Zona-14/Zona-14/pull/27
+changes:
+- type: Fix
+  message: Map Renderer now properly aligns tiles under entities and decals.
+- type: Fix
+  message: Map Renderer no longer crashes on maps with deserialization errors.
+- type: Fix
+  message: Map Renderer can now render maps larger than 1 GB image size (e.g. KordonV188).
+- type: Fix
+  message: Map Renderer no longer crashes on maps with doors in denying state.
+- type: Fix
+  message: Map Renderer now applies sprite scale correctly, preventing oversized graffiti
+    overlays.
+category: Main
