@@ -154,4 +154,27 @@
   id: 17
   time: '2026-05-19T12:41:15Z'
   url: https://github.com/Zona-14/Zona-14/pull/25
+- author: Roland410
+  changes:
+  - message: Map Renderer now properly aligns tiles under entities and decals.
+    type: Fix
+  - message: Map Renderer no longer crashes on maps with deserialization errors.
+    type: Fix
+  - message: Map Renderer can now render maps larger than 1 GB image size (e.g. KordonV188).
+    type: Fix
+  - message: Map Renderer no longer crashes on maps with doors in denying state.
+    type: Fix
+  - message: Map Renderer now applies sprite scale correctly, preventing oversized
+      graffiti overlays.
+    type: Fix
+  id: 18
+  time: '2026-05-21T08:32:54Z'
+  url: https://github.com/Zona-14/Zona-14/pull/27
+- author: teecoding
+  changes:
+  - message: Content warning popup is tall enough to show the Accept/Reject buttons.
+    type: Fix
+  id: 19
+  time: '2026-05-21T08:24:19Z'
+  url: https://github.com/Zona-14/Zona-14/pull/28
 Order: 0

@@ -1,7 +1,0 @@
-author: teecoding
-time: '2026-05-21T08:24:19Z'
-url: https://github.com/Zona-14/Zona-14/pull/28
-changes:
-- type: Fix
-  message: Content warning popup is tall enough to show the Accept/Reject buttons.
-category: Main
