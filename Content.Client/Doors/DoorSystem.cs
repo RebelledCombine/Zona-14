@@ -134,6 +134,8 @@ public sealed class DoorSystem : SharedDoorSystem
 
                 return;
             case DoorState.Denying:
+                if (entity.Comp.DenyingAnimation == null) // Zona14: DenyingAnimation may not be initialized
+                    return;
                 _animationSystem.Play(entity, (Animation)entity.Comp.DenyingAnimation, DoorComponent.AnimationKey);
 
                 return;

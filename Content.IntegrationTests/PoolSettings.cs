@@ -1,4 +1,6 @@
-﻿namespace Content.IntegrationTests;
+﻿using Robust.Shared.Log; // Zona14: FailureLogLevel support
+
+namespace Content.IntegrationTests;
 
 /// <inheritdoc/>
 public sealed class PoolSettings : PairSettings
@@ -45,6 +47,14 @@ public sealed class PoolSettings : PairSettings
     /// Set this to the path of a map to have the given server/client pair load the map.
     /// </summary>
     public string Map { get; init; } = PoolManager.TestMap;
+
+    // Zona14: allow callers (e.g. MapRenderer) to override the failure log level
+    /// <summary>
+    /// Override the log level at which the test log handler triggers a failure.
+    /// If null, defaults are used (Warning for client, Error for server).
+    /// Set to <see cref="LogLevel.Fatal"/> to prevent non-fatal errors from crashing the process.
+    /// </summary>
+    public LogLevel? FailureLogLevel { get; init; }
 
     public override bool CanFastRecycle(PairSettings nextSettings)
     {

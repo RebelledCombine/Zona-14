@@ -16,17 +16,45 @@ using Robust.Shared.ContentPack;
 using Robust.Shared.EntitySerialization;
 using Robust.Shared.EntitySerialization.Systems;
 using Robust.Shared.GameObjects;
+using Robust.Shared.Log;
 using Robust.Shared.Map;
 using Robust.Shared.Map.Components;
 using Robust.Shared.Maths;
 using Robust.Shared.Timing;
 using Robust.UnitTesting.Pool;
+using System.Buffers;
 using SixLabors.ImageSharp;
+using SixLabors.ImageSharp.Memory;
 using SixLabors.ImageSharp.PixelFormats;
 using SixLabors.ImageSharp.Processing;
 
 namespace Content.MapRenderer.Painters
 {
+    // Zona14: Custom allocator that raises the single-buffer allocation limit
+    // beyond ImageSharp 3.1.x's hardcoded 1 GB cap in SimpleGcMemoryAllocator.
+    // This is needed for very large maps like KordonV188 (~1.45 GB image buffer).
+    internal sealed class UnlimitedGcMemoryAllocator : MemoryAllocator
+    {
+        protected override int GetBufferCapacityInBytes() => int.MaxValue;
+
+        public override IMemoryOwner<T> Allocate<T>(int length, AllocationOptions options = AllocationOptions.None)
+        {
+            if (length < 0)
+                throw new ArgumentOutOfRangeException(nameof(length));
+
+            return new ArrayMemoryOwner<T>(new T[length]);
+        }
+
+        private sealed class ArrayMemoryOwner<T> : IMemoryOwner<T>
+            where T : struct
+        {
+            private readonly T[] _array;
+            public ArrayMemoryOwner(T[] array) => _array = array;
+            public Memory<T> Memory => _array;
+            public void Dispose() { }
+        }
+    }
+
     public sealed class MapPainter : IAsyncDisposable
     {
         private readonly RenderMap _map;
@@ -53,6 +81,10 @@ namespace Content.MapRenderer.Painters
                 Fresh = true,
                 // Seriously whoever made MapPainter use GameMapPrototype I wish you step on a lego one time.
                 Map = _map is RenderMapPrototype prototype ? prototype.Prototype : PoolManager.TestMap,
+                // The map renderer is not a test — don't crash on error-level logs.
+                // Maps may have non-fatal deserialization errors (e.g. orphaned entity references)
+                // that should be logged but not cause the renderer to abort.
+                FailureLogLevel = LogLevel.Fatal,
             };
             _pair = await PoolManager.GetServerClient(poolSettings, _testContextLike);
 
@@ -211,7 +243,11 @@ namespace Content.MapRenderer.Painters
                 if (grid.LocalAABB.IsEmpty())
                     customOffset = new Vector2(-minX, -minY);
 
-                var gridCanvas = new Image<Rgba32>(w, h);
+                // Zona14: use custom unbounded allocator so very large maps
+                // (e.g. KordonV188 ~1.45 GB) don't hit the 1 GB cap.
+                var imgConfig = Configuration.Default.Clone(); // Zona14
+                imgConfig.MemoryAllocator = new UnlimitedGcMemoryAllocator(); // Zona14
+                var gridCanvas = new Image<Rgba32>(imgConfig, w, h); // Zona14
 
                 await server.WaitPost(() =>
                 {

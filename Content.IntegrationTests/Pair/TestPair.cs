@@ -87,7 +87,7 @@ public sealed partial class TestPair : RobustIntegrationTest.TestPair
 
         opts.LoadTestAssembly = false;
         opts.ContentStart = true;
-        opts.FailureLogLevel = LogLevel.Warning;
+        opts.FailureLogLevel = (Settings as PoolSettings)?.FailureLogLevel ?? LogLevel.Warning; // Zona14: propagate FailureLogLevel from PoolSettings
         opts.Options = new()
         {
             LoadConfigAndUserData = false,
@@ -109,6 +109,7 @@ public sealed partial class TestPair : RobustIntegrationTest.TestPair
 
         opts.LoadTestAssembly = false;
         opts.ContentStart = true;
+        opts.FailureLogLevel = (Settings as PoolSettings)?.FailureLogLevel; // Zona14: propagate FailureLogLevel from PoolSettings
         opts.Options = new()
         {
             LoadConfigAndUserData = false,

@@ -138,16 +138,25 @@ public sealed class EntityPainter
             coloredImage.Mutate(o => o.BackgroundColor(imageColor));
 
             var (imgX, imgY) = rsi?.Size ?? (EyeManager.PixelsPerMeter, EyeManager.PixelsPerMeter);
-            var offsetX = (int)(entity.Sprite.Offset.X + customOffset.X) * EyeManager.PixelsPerMeter;
-            var offsetY = (int)(entity.Sprite.Offset.Y + customOffset.X) * EyeManager.PixelsPerMeter;
+
+            // Zona14: Apply sprite scale so entities with large RSI files but small
+            // scale factors (e.g. graffiti 712×712 at scale 0.045) render at the
+            // intended size instead of full resolution.
+            var scale = entity.Sprite.Scale; // Zona14
+            imgX = Math.Max(1, (int)(imgX * scale.X)); // Zona14
+            imgY = Math.Max(1, (int)(imgY * scale.Y)); // Zona14
+
+            var spriteOffsetX = (int)(entity.Sprite.Offset.X * EyeManager.PixelsPerMeter); // Zona14: sprite offset separate from canvas offset
+            var spriteOffsetY = (int)(entity.Sprite.Offset.Y * EyeManager.PixelsPerMeter); // Zona14: sprite offset separate from canvas offset
             image.Mutate(o => o
                 .DrawImage(coloredImage, PixelColorBlendingMode.Multiply, PixelAlphaCompositionMode.SrcAtop, 1)
                 .Resize(imgX, imgY)
                 .Flip(FlipMode.Vertical)
                 .Rotate(spriteRotation));
 
-            var pointX = (int)entity.X + offsetX - imgX / 2;
-            var pointY = (int)entity.Y + offsetY - imgY / 2;
+            // Zona14: customOffset is now a pixel-space canvas offset computed at render time
+            var pointX = (int)(entity.X + customOffset.X) + spriteOffsetX - imgX / 2; // Zona14
+            var pointY = (int)(entity.Y + customOffset.Y) + spriteOffsetY - imgY / 2; // Zona14
             canvas.Mutate(o => o.DrawImage(image, new Point(pointX, pointY), 1));
         }
     }

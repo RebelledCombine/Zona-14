@@ -54,12 +54,21 @@ namespace Content.MapRenderer.Painters
                 return;
             }
 
+            // Zona14: Compute canvas offset at render time using the CURRENT grid state,
+            // matching TilePainter's offset logic.  Entity/decal positions are stored as
+            // raw pixel coords relative to grid origin (0,0), so we apply the full
+            // canvas offset here to align them with tiles.
+            var bounds = grid.LocalAABB; // Zona14
+            var canvasOffsetX = (-bounds.Left + customOffset.X) * grid.TileSize * TilePainter.TileImageSize; // Zona14
+            var canvasOffsetY = (-bounds.Bottom + customOffset.Y) * grid.TileSize * TilePainter.TileImageSize; // Zona14
+            var canvasOffset = new Vector2(canvasOffsetX, canvasOffsetY); // Zona14
+
             // Decals are always painted before entities, and are also optional.
             if (_decals.TryGetValue(gridUid, out var decals))
-                _decalPainter.Run(gridCanvas, CollectionsMarshal.AsSpan(decals), customOffset);
+                _decalPainter.Run(gridCanvas, CollectionsMarshal.AsSpan(decals), canvasOffset); // Zona14: pass pixel-space offset
 
 
-            _entityPainter.Run(gridCanvas, entities, customOffset);
+            _entityPainter.Run(gridCanvas, entities, canvasOffset); // Zona14: pass pixel-space offset
             Console.WriteLine($"{nameof(GridPainter)} painted grid {gridUid} in {(int) stopwatch.Elapsed.TotalMilliseconds} ms");
         }
 
@@ -132,14 +141,15 @@ namespace Content.MapRenderer.Painters
             return decals;
         }
 
+        // Zona14: Don't include AABB offset here — it may be stale when entities
+        // are collected at a different time than tiles are painted.  The canvas
+        // offset is computed at render time in Run() instead.
         private static (float x, float y) TransformLocalPosition(Vector2 position, MapGridComponent grid)
         {
-            var xOffset = (int) -grid.LocalAABB.Left;
-            var yOffset = (int) -grid.LocalAABB.Bottom;
-            var tileSize = grid.TileSize;
+            var tileSize = grid.TileSize; // Zona14
 
-            var x = (position.X + xOffset) * tileSize * TilePainter.TileImageSize;
-            var y = (position.Y + yOffset) * tileSize * TilePainter.TileImageSize;
+            var x = position.X * tileSize * TilePainter.TileImageSize; // Zona14: raw pixel coords, no AABB offset
+            var y = position.Y * tileSize * TilePainter.TileImageSize; // Zona14: raw pixel coords, no AABB offset
 
             return (x, y);
         }

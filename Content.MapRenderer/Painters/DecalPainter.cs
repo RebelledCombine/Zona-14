@@ -96,8 +96,9 @@ public sealed class DecalPainter
             .DrawImage(coloredImage, PixelColorBlendingMode.Multiply, PixelAlphaCompositionMode.SrcAtop, 1.0f)
             .Flip(FlipMode.Vertical));
 
-        var pointX = (int) data.X + (int) (customOffset.X * EyeManager.PixelsPerMeter);
-        var pointY = (int) data.Y + (int) (customOffset.Y * EyeManager.PixelsPerMeter);
+        // Zona14: customOffset is now a pixel-space canvas offset computed at render time
+        var pointX = (int)(data.X + customOffset.X); // Zona14
+        var pointY = (int)(data.Y + customOffset.Y); // Zona14
 
         // Woohoo!
         canvas.Mutate(o => o.DrawImage(image, new Point(pointX, pointY), alpha));
