@@ -526,6 +526,14 @@ public abstract partial class SharedGunSystem : EntitySystem
                         spawned.Add(uid);
                         MarkPredicted(uid, spawned.Count - 1);
 
+                        // Zona14: delete client-predicted projectile for guns that skip prediction (launchers).
+                        // Matches RMC-14 SharedGunSystem.cs@2f5dc02e44 line 571-575.
+                        if (_netManager.IsClient && HasComp<GunIgnorePredictionComponent>(gunUid))
+                        {
+                            spawned.Remove(uid);
+                            QueueDel(uid);
+                        }
+
                         // stalker-changes-start
                         var farSoundEvent = new FargunshotEvent(gunUid.Id);
                         RaiseLocalEvent(gunUid, farSoundEvent);

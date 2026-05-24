@@ -5,6 +5,7 @@
   description: A rooty tooty point and shooty.
   abstract: true
   components:
+  - type: GunIgnorePrediction # Zona14: launcher projectiles skip client-side prediction (RMC-14 parity)
   - type: Sprite
   - type: Clothing
     sprite: Objects/Weapons/Guns/Launchers/china_lake.rsi
