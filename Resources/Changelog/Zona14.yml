@@ -177,4 +177,31 @@
   id: 19
   time: '2026-05-21T08:24:19Z'
   url: https://github.com/Zona-14/Zona-14/pull/28
+- author: teecoding
+  changes:
+  - message: Five-tier bullet system with FMJ, AP, and HP variants for every caliber.
+    type: Add
+  - message: .44 Magnum HP ammo variant with bullet, cartridge, speed-loader, and
+      ammo box.
+    type: Add
+  - message: Armor penetration is now gradient instead of all-or-nothing based on
+      bullet vs armor tier difference.
+    type: Tweak
+  - message: 25% minimum damage floor so heavily armored targets still take chip damage.
+    type: Tweak
+  - message: Bullet damage reduced across the board to raise time-to-kill to roughly
+      1-2 seconds for rifles.
+    type: Tweak
+  - message: Weapon fire rates aligned to real-world RPM per class. SMGs spray faster,
+      rifles are controlled, snipers unchanged.
+    type: Tweak
+  - message: Weapon spread tuned per class so SMGs feel like spray weapons and rifles
+      feel precise.
+    type: Tweak
+  - message: Penetration tier thresholds and damage floor are now server CVars for
+      live tuning.
+    type: Tweak
+  id: 20
+  time: '2026-05-24T12:49:30Z'
+  url: https://github.com/Zona-14/Zona-14/pull/30
 Order: 0
