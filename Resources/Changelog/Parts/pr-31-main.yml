@@ -1,7 +1,0 @@
-author: teecoding
-time: '2026-05-24T17:30:11Z'
-url: https://github.com/Zona-14/Zona-14/pull/31
-changes:
-- type: Fix
-  message: Fixed a crash when cycling a ballistic weapon with desynced ammo tracking.
-category: Main

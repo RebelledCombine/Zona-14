@@ -1,8 +1,0 @@
-author: teecoding
-time: '2026-05-24T18:02:20Z'
-url: https://github.com/Zona-14/Zona-14/pull/32
-changes:
-- type: Fix
-  message: Launcher projectiles (RG-6, RPG-7, RPO Shmel) no longer slow down and freeze
-    mid-flight.
-category: Main

@@ -204,4 +204,19 @@
   id: 20
   time: '2026-05-24T12:49:30Z'
   url: https://github.com/Zona-14/Zona-14/pull/30
+- author: teecoding
+  changes:
+  - message: Fixed a crash when cycling a ballistic weapon with desynced ammo tracking.
+    type: Fix
+  id: 21
+  time: '2026-05-24T17:30:11Z'
+  url: https://github.com/Zona-14/Zona-14/pull/31
+- author: teecoding
+  changes:
+  - message: Launcher projectiles (RG-6, RPG-7, RPO Shmel) no longer slow down and
+      freeze mid-flight.
+    type: Fix
+  id: 22
+  time: '2026-05-24T18:02:20Z'
+  url: https://github.com/Zona-14/Zona-14/pull/32
 Order: 0
