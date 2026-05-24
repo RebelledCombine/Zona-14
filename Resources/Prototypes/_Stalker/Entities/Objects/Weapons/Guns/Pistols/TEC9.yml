@@ -17,11 +17,11 @@
         map: ["enum.GunVisualLayers.Mag"]
   - type: Gun
     projectileSpeed: 45
-    minAngle: 8
-    maxAngle: 15
-    angleIncrease: 1
-    angleDecay: 4
-    fireRate: 7
+    minAngle: 10 # Zona14: 8<10
+    maxAngle: 35 # Zona14: 15<35
+    angleIncrease: 2.0 # Zona14: 1<2.0
+    angleDecay: 8 # Zona14: 4<8
+    fireRate: 8 # Zona14: 7<8
     availableModes:
     - SemiAuto
   - type: ItemSlots

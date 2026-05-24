@@ -9,7 +9,7 @@
     pullTime: 3.5
   - type: GunWieldBonus
     minAngle: -50
-    maxAngle: -50
+    maxAngle: -60 # Zona14: -50<-60
   - type: Clothing
     sprite: _Stalker/Objects/Weapons/Guns/Rifles/ak103.rsi
   - type: Sprite
@@ -21,9 +21,9 @@
       path: /Audio/_Stalker/Effects/Guns/103_shoot.ogg
     minAngle: 55
     maxAngle: 110
-    fireRate: 7
-    angleIncrease: 1.7
-    angleDecay: 7.5
+    fireRate: 10 # Zona14: 7<10
+    angleIncrease: 2.0 # Zona14: 1.2<2.0
+    angleDecay: 8 # Zona14: 5<8
     projectileSpeed: 65
     selectedMode: FullAuto
     availableModes:
@@ -84,8 +84,8 @@
     sprite: _Stalker/Objects/Weapons/Guns/Rifles/_Skins/ak103donate.rsi
   - type: Gun
     angleDecay: 8
-    angleIncrease: 1.8
-    fireRate: 8
+    angleIncrease: 2.0
+    fireRate: 10
 
 - type: entity
   parent: STBaseWeaponRifleAK103
@@ -103,11 +103,11 @@
   - type: Gun
     soundGunshot:
       path: /Audio/_Stalker/Effects/Guns/203_Sound.ogg
-    minAngle: 50
-    maxAngle: 95
-    angleIncrease: 1.25
+    minAngle: 52 # Zona14: 50<52
+    maxAngle: 100 # Zona14: 95<100
+    angleIncrease: 2.0
     angleDecay: 8
-    fireRate: 7
+    fireRate: 10
   - type: STWeaponDamageFalloff
     falloffMultiplier: 0.85
   - type: STWeaponAccuracy
@@ -214,13 +214,13 @@
   - type: Item
     sprite: _Stalker/Objects/Weapons/Guns/Rifles/_Skins/ak15.rsi
   - type: Gun
-    fireRate: 8
+    fireRate: 12 # Zona14: 8<12
     soundGunshot:
       path: /Audio/_Stalker/Effects/Guns/203_Sound.ogg
-    minAngle: 48
-    maxAngle: 93
-    angleIncrease: 1.2
-    angleDecay: 5
+    minAngle: 50 # Zona14: 48<50
+    maxAngle: 95 # Zona14: 93<95
+    angleIncrease: 2.0
+    angleDecay: 8
   - type: ItemSlots
     slots:
       gun_magazine:

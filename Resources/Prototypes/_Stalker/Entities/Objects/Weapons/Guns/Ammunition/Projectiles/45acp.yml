@@ -1,23 +1,24 @@
+#.45 ACP - Tier 2 pistol caliber (heavier round, more stopping power than 9x19)
 
 - type: entity
   id: Bullet45ACPLFMJ
-  name: bullet (.45 ACP Lasermatch FMJ magnum)
+  name: bullet (.45 ACP FMJ) # Zona14: bullet (.45 ACP Match FMJ magnum)<bullet (.45 ACP FMJ)
   parent: STBasePistolBullet
   categories: [ HideSpawnMenu ]
   components:
   - type: TimedDespawn
     lifetime: 2
   - type: Projectile
-    projectileClass: 1
+    projectileClass: 2 # Zona14: 1<2
     damage:
       types:
-        Piercing: 29
+        Piercing: 15 # Zona14: 33<15
   - type: StaminaDamageOnCollide
-    damage: 1
+    damage: 1 # Zona14: 5<1
 
 - type: entity
   id: Bullet45ACPMFMJ
-  name: bullet (.45 ACP Match FMJ magnum)
+  name: bullet (.45 ACP FMJ)
   parent: Bullet45ACPLFMJ
   categories: [ HideSpawnMenu ]
   components:
@@ -25,13 +26,30 @@
     projectileClass: 2
     damage:
       types:
-        Piercing: 33
+        Piercing: 15
   - type: StaminaDamageOnCollide
-    damage: 5
+    damage: 1
 
 - type: entity
   id: Bullet45ACPHydroshock
-  name: bullet (.45 ACP Hydra-Shok magnum)
+  name: bullet (.45 ACP HP) # Zona14: bullet (.45 ACP RIP magnum)<bullet (.45 ACP HP)
+  parent: Bullet45ACPLFMJ
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    projectileClass: 1 # Zona14: 0<1
+    damage:
+      types:
+        Mutant: 28 # Zona14: 40<28
+        Piercing: 4 # Zona14: 10<4
+        Blunt: 7 # Zona14: 10<7
+        Slash: 7 # Zona14: 10<7
+  - type: StaminaDamageOnCollide
+    damage: 2 # Zona14: 30<2
+
+- type: entity
+  id: Bullet45ACPRIP
+  name: bullet (.45 ACP HP)
   parent: Bullet45ACPLFMJ
   categories: [ HideSpawnMenu ]
   components:
@@ -39,32 +57,16 @@
     projectileClass: 1
     damage:
       types:
-        Blunt: 10
-        Slash: 10
-        Piercing: 40
+        Mutant: 28
+        Piercing: 4
+        Blunt: 7
+        Slash: 7
   - type: StaminaDamageOnCollide
-    damage: 15
-
-- type: entity
-  id: Bullet45ACPRIP
-  name: bullet (.45 ACP RIP magnum)
-  parent: Bullet45ACPLFMJ
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: Projectile
-    projectileClass: 0
-    damage:
-      types:
-        Mutant: 40
-        Piercing: 10
-        Blunt: 10
-        Slash: 10
-  - type: StaminaDamageOnCollide
-    damage: 30
+    damage: 2
 
 - type: entity
   id: Bullet45ACPAP
-  name: bullet (.45 ACP AP magnum)
+  name: bullet (.45 ACP AP) # Zona14: bullet (.45 ACP AP magnum)<bullet (.45 ACP AP)
   parent: Bullet45ACPLFMJ
   categories: [ HideSpawnMenu ]
   components:
@@ -72,6 +74,6 @@
     projectileClass: 3
     damage:
       types:
-        Piercing: 42
+        Piercing: 13 # Zona14: 42<13
   - type: StaminaDamageOnCollide
-    damage: 5
+    damage: 1

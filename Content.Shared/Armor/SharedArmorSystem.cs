@@ -71,26 +71,16 @@ public abstract partial class SharedArmorSystem : EntitySystem
             return;
 
         // stalker-changes-start
-        if (args.Args.IgnoreResistors.Contains(uid))
+        // Zona14: gradient penetration — TryGetValue replaces Contains for per-piece fraction
+        if (args.Args.IgnoreResistors.TryGetValue(uid, out var penetration))
         {
             if (component.Modifiers == null)
                 return;
 
-            var modifiedModifiers = new DamageModifierSet
-            {
-                Coefficients = new Dictionary<string, float>(component.Modifiers.Coefficients),
-                FlatReduction = new Dictionary<string, float>(component.Modifiers.FlatReduction)
-            };
-
-            foreach (var key in modifiedModifiers.Coefficients.Keys.ToList())
-            {
-                modifiedModifiers.Coefficients[key] = 1f;
-            }
-
-            args.Args.Damage = DamageSpecifier.ApplyModifierSet(args.Args.Damage, modifiedModifiers);
-
+            args.Args.Damage = DamageSpecifier.ApplyModifierSet(args.Args.Damage, BuildPenetratedModifiers(component.Modifiers, penetration)); // Zona14
             return;
         }
+        // End Zona14
 
         if (component.Modifiers == null)
             return;
@@ -110,26 +100,16 @@ public abstract partial class SharedArmorSystem : EntitySystem
             return;
 
         // stalker-changes-start
-        if (args.Args.IgnoreResistors.Contains(uid))
+        // Zona14: gradient penetration — TryGetValue replaces Contains for per-piece fraction
+        if (args.Args.IgnoreResistors.TryGetValue(uid, out var penetration))
         {
             if (component.Modifiers == null)
                 return;
 
-            var modifiedModifiers = new DamageModifierSet
-            {
-                Coefficients = new Dictionary<string, float>(component.Modifiers.Coefficients),
-                FlatReduction = component.Modifiers.FlatReduction
-            };
-
-            foreach (var key in modifiedModifiers.Coefficients.Keys.ToList())
-            {
-                modifiedModifiers.Coefficients[key] = 1f;
-            }
-
-            args.Args.Damage = DamageSpecifier.ApplyModifierSet(args.Args.Damage, modifiedModifiers);
-
+            args.Args.Damage = DamageSpecifier.ApplyModifierSet(args.Args.Damage, BuildPenetratedModifiers(component.Modifiers, penetration)); // Zona14
             return;
         }
+        // End Zona14
 
         if (component.Modifiers == null)
             return;
@@ -137,6 +117,26 @@ public abstract partial class SharedArmorSystem : EntitySystem
         args.Args.Damage = DamageSpecifier.ApplyModifierSet(args.Args.Damage, component.Modifiers);
         // stalker-changes-end
     }
+
+    // Zona14: gradient penetration helper — blends armor toward no-protection by fraction
+    private static DamageModifierSet BuildPenetratedModifiers(DamageModifierSet modifiers, float penetration)
+    {
+        penetration = Math.Clamp(penetration, 0f, 1f);
+        var result = new DamageModifierSet
+        {
+            Coefficients = new Dictionary<string, float>(),
+            FlatReduction = new Dictionary<string, float>()
+        };
+
+        foreach (var (key, coeff) in modifiers.Coefficients)
+            result.Coefficients[key] = coeff + (1f - coeff) * penetration;
+
+        foreach (var (key, flat) in modifiers.FlatReduction)
+            result.FlatReduction[key] = flat * (1f - penetration);
+
+        return result;
+    }
+    // End Zona14
 
     private void OnArmorVerbExamine(EntityUid uid, ArmorComponent component, GetVerbsEvent<ExamineVerb> args)
     {

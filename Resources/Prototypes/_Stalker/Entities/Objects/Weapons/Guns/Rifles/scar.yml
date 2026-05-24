@@ -10,7 +10,7 @@
     pullTime: 3
   - type: GunWieldBonus
     minAngle: -50
-    maxAngle: -55
+    maxAngle: -65 # Zona14: -50<-65
   - type: Item
     sprite: _Stalker/Objects/Weapons/Guns/Rifles/scar.rsi
   - type: Sprite
@@ -22,11 +22,11 @@
       path: /Audio/_Stalker/Effects/Guns/scar.ogg
       params:
         volume: -2
-    minAngle: 55
-    maxAngle: 105
-    fireRate: 6
-    angleIncrease: 1.3
-    angleDecay: 5
+    minAngle: 55 # Zona14: 60<55
+    maxAngle: 110 # Zona14: 105<110
+    fireRate: 10 # Zona14: 5.5<10
+    angleIncrease: 2.0 # Zona14: 1.3<2.0
+    angleDecay: 8 # Zona14: 3.5<8
     projectileSpeed: 65
     selectedMode: FullAuto
     availableModes:
@@ -104,8 +104,8 @@
   - type: PullDoAfter
     pullTime: 4
   - type: GunWieldBonus
-    minAngle: -50
-    maxAngle: -50
+    minAngle: -52 # Zona14: -50<-52
+    maxAngle: -65
   - type: Clothing
     sprite: _Stalker/Objects/Weapons/Guns/Rifles/ARX160.rsi
   - type: Item
@@ -114,11 +114,11 @@
     sprite: _Stalker/Objects/Weapons/Guns/Rifles/ARX160.rsi
     scale: 0.75, 0.75
   - type: Gun
-    minAngle: 60
+    minAngle: 55
     maxAngle: 110
-    fireRate: 8
-    angleIncrease: 1.3
-    angleDecay: 5.5
+    fireRate: 12 # Zona14: 8<12
+    angleIncrease: 2.0
+    angleDecay: 8
     projectileSpeed: 70
   - type: STWeaponDamageFalloff
     falloffMultiplier: 0.8
@@ -209,11 +209,11 @@
       path: /Audio/_Stalker/Effects/Guns/103_shoot.ogg
       params:
         volume: -2
-    minAngle: 50
-    maxAngle: 90
-    fireRate: 5.5
-    angleIncrease: 1.3
-    angleDecay: 3.5
+    minAngle: 52 # Zona14: 50<52
+    maxAngle: 105 # Zona14: 90<105
+    fireRate: 10
+    angleIncrease: 2.0
+    angleDecay: 8
     projectileSpeed: 70
   - type: STWeaponDamageFalloff
     falloffMultiplier: 0.8

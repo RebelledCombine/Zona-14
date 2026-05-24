@@ -39,7 +39,7 @@ public sealed class PsyonicsShieldSystem : BasePsyonicsActionSystem<PsyonicsActi
     }
     private void OnDamageModified(EntityUid uid, PsyonicsActionShieldComponent component, DamageModifyEvent args)
     {
-        if (args.IgnoreResistors.Contains(uid))
+        if (args.IgnoreResistors.ContainsKey(uid)) // Zona14: Contains<ContainsKey
             return;
 
         if (!component.IsActive)

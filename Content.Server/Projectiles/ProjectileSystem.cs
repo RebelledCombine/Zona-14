@@ -4,12 +4,15 @@ using Content.Server.Effects;
 using Content.Server.Weapons.Ranged.Systems;
 using Content.Shared.Armor;
 using Content.Shared.Camera;
-using Content.Shared.Inventory;
+using Content.Shared.CCVar;
+using Content.Shared.Damage;
 using Content.Shared.Damage.Components;
 using Content.Shared.Damage.Systems;
 using Content.Shared.Database;
 using Content.Shared.FixedPoint;
+using Content.Shared.Inventory;
 using Content.Shared.Projectiles;
+using Robust.Shared.Configuration;
 using Robust.Shared.Physics.Components;
 using Robust.Shared.Physics.Events;
 using Robust.Shared.Player;
@@ -27,10 +30,34 @@ public sealed class ProjectileSystem : SharedProjectileSystem
     [Dependency] private readonly SharedCameraRecoilSystem _sharedCameraRecoil = default!;
     [Dependency] private readonly InventorySystem _inventory = default!; // Stalker-Changes
     [Dependency] private readonly IPrototypeManager _prototype = default!; // Stalker-Changes
+    // Zona14: runtime-tunable penetration CVars
+    [Dependency] private readonly IConfigurationManager _config = default!;
+    // End Zona14
+
+    // Zona14: cached CVar values for tier penetration + damage floor
+    private float _penTierBelow;
+    private float _penTierMatch;
+    private float _penTierAboveOne;
+    private float _penTierAboveTwo;
+    private float _minDamageFloor;
+    // End Zona14
 
     // Zona14: OnStartCollide subscription and the OnStartCollide guards now live in
     //         SharedProjectileSystem so the client-side predicted twin routes through the same
     //         entry point. ProjectileCollide is an override of the shared method.
+
+    // Zona14: subscribe to penetration + floor CVars
+    public override void Initialize()
+    {
+        base.Initialize();
+
+        Subs.CVar(_config, CCVars.PlaytestPenTierBelow, value => _penTierBelow = value, true);
+        Subs.CVar(_config, CCVars.PlaytestPenTierMatch, value => _penTierMatch = value, true);
+        Subs.CVar(_config, CCVars.PlaytestPenTierAboveOne, value => _penTierAboveOne = value, true);
+        Subs.CVar(_config, CCVars.PlaytestPenTierAboveTwo, value => _penTierAboveTwo = value, true);
+        Subs.CVar(_config, CCVars.PlaytestMinProjectileDamageFloor, value => _minDamageFloor = value, true);
+    }
+    // End Zona14
 
     // Zona14: server override of SharedProjectileSystem.ProjectileCollide. Preserves the
     //         stalker-fork armor / ignoreResistors / penetration logic byte-for-byte. When
@@ -41,34 +68,10 @@ public sealed class ProjectileSystem : SharedProjectileSystem
     {
         var (uid, component, ourBody) = projectile;
 
-        // stalker-changes-start
+        // Zona14: 5-tier armor penetration + damage floor
+        var ignore = BuildPenetrationDict(target, component.ProjectileClass);
+
         var ignoreResitance = false;
-        List<EntityUid> ignore = new();
-        string[] slots = {
-            "outerClothing",
-            "head",
-            "cloak",
-            "eyes",
-            "ears",
-            "mask",
-            "jumpsuit",
-            "neck",
-            "back",
-            "belt",
-            "gloves",
-            "shoes",
-            "id",
-            "legs",
-            "torso"
-        };
-
-        foreach (var slot in slots)
-        {
-            if (_inventory.TryGetSlotEntity(target, slot, out var entity) && TryComp<ArmorComponent>(entity, out var armorComp) && armorComp.ArmorClass.HasValue)
-                if (component.ProjectileClass >= armorComp.ArmorClass.Value)
-                    ignore.Add(entity.Value);
-        }
-
         if (TryComp<DamageableComponent>(target, out var damageable) && damageable.DamageModifierSetId != null)
             if (_prototype.TryIndex(damageable.DamageModifierSetId, out var damageModifierSetPrototype))
                 ignoreResitance = component.ProjectileClass >= damageModifierSetPrototype.Class;
@@ -107,45 +110,9 @@ public sealed class ProjectileSystem : SharedProjectileSystem
                 LogImpact.Medium,
                 $"Projectile {ToPrettyString(uid):projectile} shot by {ToPrettyString(component.Shooter!.Value):user} hit {otherName:target} and dealt {damage:damage} damage");
 
-            // If penetration is to be considered, we need to do some checks to see if the projectile should stop.
-            if (component.PenetrationThreshold != 0)
-            {
-                // If a damage type is required, stop the bullet if the hit entity doesn't have that type.
-                if (component.PenetrationDamageTypeRequirement != null)
-                {
-                    var stopPenetration = false;
-                    foreach (var requiredDamageType in component.PenetrationDamageTypeRequirement)
-                    {
-                        if (!damage.DamageDict.Keys.Contains(requiredDamageType))
-                        {
-                            stopPenetration = true;
-                            break;
-                        }
-                    }
-                    if (stopPenetration)
-                        component.ProjectileSpent = true;
-                }
+            EnforceMinimumDamageFloor(target, damageableComponent, ev.Damage, damage, component.Shooter); // Zona14
 
-                // If the object won't be destroyed, it "tanks" the penetration hit.
-                if (damage.GetTotal() < damageRequired)
-                {
-                    component.ProjectileSpent = true;
-                }
-
-                if (!component.ProjectileSpent)
-                {
-                    component.PenetrationAmount += damageRequired;
-                    // The projectile has dealt enough damage to be spent.
-                    if (component.PenetrationAmount >= component.PenetrationThreshold)
-                    {
-                        component.ProjectileSpent = true;
-                    }
-                }
-            }
-            else
-            {
-                component.ProjectileSpent = true;
-            }
+            TryPhysicsPenetrate(component, damage, damageRequired);
         }
         else
         {
@@ -180,4 +147,123 @@ public sealed class ProjectileSystem : SharedProjectileSystem
             RaiseNetworkEvent(new ImpactEffectEvent(component.ImpactEffect, GetNetCoordinates(xform.Coordinates)), filter);
         }
     }
+
+    // Zona14: extracted penetration, damage floor, and tier lookup methods
+    private void TryPhysicsPenetrate(ProjectileComponent component, DamageSpecifier? dealtDamage, FixedPoint2 damageRequired)
+    {
+        if (dealtDamage == null)
+        {
+            component.ProjectileSpent = true;
+            return;
+        }
+
+        if (component.PenetrationThreshold != 0)
+        {
+            if (component.PenetrationDamageTypeRequirement != null)
+            {
+                var stopPenetration = false;
+                foreach (var requiredDamageType in component.PenetrationDamageTypeRequirement)
+                {
+                    if (!dealtDamage.DamageDict.Keys.Contains(requiredDamageType))
+                    {
+                        stopPenetration = true;
+                        break;
+                    }
+                }
+                if (stopPenetration)
+                    component.ProjectileSpent = true;
+            }
+
+            if (dealtDamage.GetTotal() < damageRequired)
+            {
+                component.ProjectileSpent = true;
+            }
+
+            if (!component.ProjectileSpent)
+            {
+                component.PenetrationAmount += damageRequired;
+                if (component.PenetrationAmount >= component.PenetrationThreshold)
+                {
+                    component.ProjectileSpent = true;
+                }
+            }
+        }
+        else
+        {
+            component.ProjectileSpent = true;
+        }
+    }
+
+    private void EnforceMinimumDamageFloor(
+        EntityUid target,
+        DamageableComponent? damageableComponent,
+        DamageSpecifier originalDamage,
+        DamageSpecifier? dealtDamage,
+        EntityUid? shooter)
+    {
+        if (damageableComponent == null || dealtDamage == null)
+            return;
+
+        var originalEffective = 0f;
+        foreach (var (type, value) in originalDamage.DamageDict)
+        {
+            if (damageableComponent.Damage.DamageDict.ContainsKey(type))
+                originalEffective += (float) value;
+        }
+
+        var dealtTotal = (float) dealtDamage.GetTotal();
+        var minimumTotal = originalEffective * _minDamageFloor;
+
+        if (originalEffective > 0f && dealtTotal < minimumTotal)
+        {
+            var supplement = new DamageSpecifier();
+            supplement.DamageDict["Blunt"] = (FixedPoint2) Math.Max(0f, minimumTotal - dealtTotal);
+            _damageableSystem.TryChangeDamage((target, damageableComponent), supplement, true, false, origin: shooter);
+        }
+    }
+
+    private Dictionary<EntityUid, float> BuildPenetrationDict(EntityUid target, int? projectileClass)
+    {
+        var ignore = new Dictionary<EntityUid, float>();
+        string[] slots =
+        {
+            "outerClothing",
+            "head",
+            "cloak",
+            "eyes",
+            "ears",
+            "mask",
+            "jumpsuit",
+            "neck",
+            "back",
+            "belt",
+            "gloves",
+            "shoes",
+            "id",
+            "legs",
+            "torso"
+        };
+
+        foreach (var slot in slots)
+        {
+            if (_inventory.TryGetSlotEntity(target, slot, out var entity)
+                && TryComp<ArmorComponent>(entity, out var armorComp)
+                && armorComp.ArmorClass.HasValue)
+            {
+                var classDiff = (projectileClass ?? 0) - armorComp.ArmorClass.Value;
+                var penetration = classDiff switch
+                {
+                    <= -1 => _penTierBelow,
+                    0 => _penTierMatch,
+                    1 => _penTierAboveOne,
+                    _ => _penTierAboveTwo
+                };
+                if (penetration > 0f)
+                    ignore[entity.Value] = penetration;
+            }
+        }
+
+        return ignore;
+    }
+    // End Zona14
 }

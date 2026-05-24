@@ -8,8 +8,8 @@
     - type: PullDoAfter
       pullTime: 1.7
     - type: GunWieldBonus
-      minAngle: -39
-      maxAngle: -45
+      minAngle: -25 # Zona14: -39<-25
+      maxAngle: -40 # Zona14: -45<-40
     - type: Item
       sprite: _Stalker/Objects/Weapons/Guns/SMGs/pp19.rsi
     - type: Sprite
@@ -18,10 +18,10 @@
       sprite: _Stalker/Objects/Weapons/Guns/SMGs/pp19.rsi
     - type: Gun
       minAngle: 40
-      maxAngle: 70
-      fireRate: 10
-      angleIncrease: 1.8
-      angleDecay: 7
+      maxAngle: 100 # Zona14: 70<100
+      fireRate: 12 # Zona14: 10<12
+      angleIncrease: 3.5 # Zona14: 1.8<3.5
+      angleDecay: 9 # Zona14: 7<9
       projectileSpeed: 55
       selectedMode: FullAuto
       availableModes:

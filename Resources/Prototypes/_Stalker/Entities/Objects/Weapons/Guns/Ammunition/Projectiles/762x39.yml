@@ -1,51 +1,55 @@
-#7.62x39
+#7.62x39 - Tier 4 battle rifle caliber
 
 - type: entity
   id: Bullet739FMJ
-  name: bullet (7.62х39 rifle)
+  name: bullet (7.62x39 FMJ) # Zona14: bullet (7.62х39 rifle)<bullet (7.62x39 FMJ)
   parent: STBaseMRBullet
   categories: [ HideSpawnMenu ]
   components:
   - type: TimedDespawn
     lifetime: 6
   - type: Projectile
-    projectileClass: 3
+    projectileClass: 4 # Zona14: 3<4
     damage:
       types:
-        Piercing: 34
+        Piercing: 21 # Zona14: 34<21
   - type: StaminaDamageOnCollide
-    damage: 4
+    damage: 3 # Zona14: 4<3
 
 - type: entity
   id: Bullet739HP
-  name: bullet (7.62х39 rifle)
+  name: bullet (7.62x39 HP) # Zona14: bullet (7.62х39 rifle)<bullet (7.62x39 HP)
   parent: Bullet739FMJ
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
-    projectileClass: 0
+    projectileClass: 3 # Zona14: 0<3
     damage:
       types:
-        Mutant: 55
-        Piercing: 10
-        Blunt: 15
-        Slash: 10
+        Mutant: 75 # Zona14: 55<75
+        Piercing: 8 # Zona14: 10<8
+        Blunt: 11 # Zona14: 15<11
+        Slash: 11 # Zona14: 10<11
+  - type: StaminaDamageOnCollide
+    damage: 5 # Zona14: added
 
 - type: entity
   id: Bullet739PC
-  name: bullet (7.62х39 rifle)
+  name: bullet (7.62x39 AP) # Zona14: bullet (7.62х39 rifle)<bullet (7.62x39 AP)
   parent: Bullet739FMJ
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
-    projectileClass: 4
+    projectileClass: 5 # Zona14: 4<5
     damage:
       types:
-        Piercing: 35
+        Piercing: 18 # Zona14: 30<18
+  - type: StaminaDamageOnCollide
+    damage: 2 # Zona14: added
 
 - type: entity
   id: Bullet739BP
-  name: bullet (7.62х39 rifle)
+  name: bullet (7.62x39 AP)
   parent: Bullet739FMJ
   categories: [ HideSpawnMenu ]
   components:
@@ -53,4 +57,6 @@
     projectileClass: 5
     damage:
       types:
-        Piercing: 30
+        Piercing: 18
+  - type: StaminaDamageOnCollide
+    damage: 2

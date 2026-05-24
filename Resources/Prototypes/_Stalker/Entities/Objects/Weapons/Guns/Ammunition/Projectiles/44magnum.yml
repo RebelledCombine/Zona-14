@@ -1,29 +1,49 @@
+#.44 Remington Magnum - Tier 3 heavy pistol caliber (high stopping power)
+
 - type: entity
-  parent: STBaseLRBullet
+  parent: STBaseLRBullet # Zona14: added
   id: BulletRemingtonMagnum
-  name: bullet (.44 remington magnum)
-  suffix: Stalker
-  categories: [ HideSpawnMenu ]
+  name: bullet (.44 Remington Magnum FMJ) # Zona14: bullet (.44 remington magnum)<bullet (.44 Remington Magnum FMJ)
+  suffix: Stalker # Zona14: added
+  categories: [ HideSpawnMenu ] # Zona14: added
   components:
   - type: Projectile
-    projectileClass: 2
+    projectileClass: 3 # Zona14: 2<3
     damage:
       types:
-        Piercing: 30
+        Piercing: 19 # Zona14: 30<19
   - type: StaminaDamageOnCollide
-    damage: 10
+    damage: 3 # Zona14: 10<3
 
 - type: entity
   parent: STBaseLRBullet
   id: BulletRemingtonMagnumAP
-  name: bullet (.44 remington magnum armor-piercing)
+  name: bullet (.44 Remington Magnum AP) # Zona14: bullet (.44 remington magnum armor-piercing)<bullet (.44 Remington Magnum AP)
   suffix: Stalker
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
-    projectileClass: 3
+    projectileClass: 4 # Zona14: 3<4
     damage:
       types:
-        Piercing: 35
+        Piercing: 16 # Zona14: added
   - type: StaminaDamageOnCollide
-    damage: 15
+    damage: 1 # Zona14: added
+
+- type: entity
+  parent: STBaseLRBullet
+  id: BulletRemingtonMagnumHP # Zona14: added
+  name: bullet (.44 Remington Magnum HP) # Zona14: added
+  suffix: Stalker
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    projectileClass: 2 # Zona14: added
+    damage:
+      types:
+        Mutant: 50 # Zona14: added
+        Piercing: 6 # Zona14: 35<6
+        Blunt: 9 # Zona14: added
+        Slash: 9 # Zona14: added
+  - type: StaminaDamageOnCollide
+    damage: 4 # Zona14: 15<4

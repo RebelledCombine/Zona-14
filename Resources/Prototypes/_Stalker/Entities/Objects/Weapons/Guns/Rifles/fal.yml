@@ -8,8 +8,8 @@
   - type: PullDoAfter
     pullTime: 4.5
   - type: GunWieldBonus
-    minAngle: -48
-    maxAngle: -55
+    minAngle: -50 # Zona14: -48<-50
+    maxAngle: -65 # Zona14: -55<-65
   - type: Item
     sprite: _Stalker/Objects/Weapons/Guns/Rifles/fal.rsi
   - type: Sprite
@@ -24,9 +24,9 @@
         volume: -2
     minAngle: 50
     maxAngle: 115
-    fireRate: 3
-    angleIncrease: 4.5
-    angleDecay: 27
+    fireRate: 5 # Zona14: 3<5
+    angleIncrease: 2.0 # Zona14: 4.5<2.0
+    angleDecay: 8 # Zona14: 27<8
     projectileSpeed: 75
     selectedMode: SemiAuto
     availableModes:

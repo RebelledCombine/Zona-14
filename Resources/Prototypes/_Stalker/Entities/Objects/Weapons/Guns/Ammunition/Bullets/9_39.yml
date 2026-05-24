@@ -1,3 +1,5 @@
+#9x39 - Tier 3 special subsonic caliber (STBaseSPBullet - shorter effective range, suppressed weapons)
+
 - type: entity
   parent: STBaseSPBullet
   id: STBullet9x39
@@ -10,80 +12,86 @@
 - type: entity
   parent: STBullet9x39
   id: STBullet9x39PSO
+  name: bullet (9x39 HP) # Zona14: added
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
-    projectileClass: 0
+    projectileClass: 2 # Zona14: 0<2
     damage:
       types:
-        Blunt: 10
-        Slash: 10
-        Piercing: 10
-        Mutant: 100
+        Mutant: 45 # Zona14: 100<45
+        Piercing: 5 # Zona14: 10<5
+        Blunt: 9 # Zona14: 10<9
+        Slash: 9 # Zona14: 10<9
   - type: StaminaDamageOnCollide
-    damage: 30
+    damage: 4 # Zona14: 30<4
 
 - type: entity
   parent: STBullet9x39
   id: STBullet9x39SP6Uch
+  name: bullet (9x39 FMJ) # Zona14: added
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
-    projectileClass: 1
+    projectileClass: 3 # Zona14: 2<3
     damage:
       types:
-        Blunt: 5
+        Piercing: 18 # Zona14: 36<18
   - type: StaminaDamageOnCollide
-    damage: 10
+    damage: 2 # Zona14: 4<2
 
 - type: entity
   parent: STBullet9x39
   id: STBullet9x39SP5
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: Projectile
-    projectileClass: 2
-    damage:
-      types:
-        Piercing: 36
-  - type: StaminaDamageOnCollide
-    damage: 4
-
-- type: entity
-  parent: STBullet9x39
-  id: STBullet9x39PAB9
+  name: bullet (9x39 FMJ)
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
     projectileClass: 3
     damage:
       types:
-        Piercing: 38
+        Piercing: 18
   - type: StaminaDamageOnCollide
-    damage: 6
+    damage: 2
+
+- type: entity
+  parent: STBullet9x39
+  id: STBullet9x39PAB9
+  name: bullet (9x39 AP) # Zona14: added
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    projectileClass: 4 # Zona14: 5<4
+    damage:
+      types:
+        Piercing: 15 # Zona14: 42<15
+  - type: StaminaDamageOnCollide
+    damage: 1 # Zona14: 10<1
 
 - type: entity
   parent: STBullet9x39
   id: STBullet9x39SP6
+  name: bullet (9x39 AP)
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
     projectileClass: 4
     damage:
       types:
-        Piercing: 40
+        Piercing: 15
   - type: StaminaDamageOnCollide
-    damage: 8
+    damage: 1
 
 - type: entity
   parent: STBullet9x39
   id: STBullet9x39AA
+  name: bullet (9x39 AP)
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
-    projectileClass: 5
+    projectileClass: 4
     damage:
       types:
-        Piercing: 42
+        Piercing: 15
   - type: StaminaDamageOnCollide
-    damage: 10
+    damage: 1

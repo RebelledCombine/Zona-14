@@ -96,7 +96,7 @@ public sealed partial class DamageableSystem
         bool interruptsDoAfters = true,
         EntityUid? origin = null,
         bool ignoreGlobalModifiers = false,
-        List<EntityUid>? ignoreResistors = null // Stalker-Changes : ignoreResistors
+        Dictionary<EntityUid, float>? ignoreResistors = null // Stalker-Changes : ignoreResistors // Zona14: List<Dictionary
     )
     {
         //! Empty just checks if the DamageSpecifier is _literally_ empty, as in, is internal dictionary of damage types is empty.
@@ -123,7 +123,7 @@ public sealed partial class DamageableSystem
         bool interruptsDoAfters = true,
         EntityUid? origin = null,
         bool ignoreGlobalModifiers = false,
-        List<EntityUid>? ignoreResistors = null // Stalker-Changes : ignoreResistors
+        Dictionary<EntityUid, float>? ignoreResistors = null // Stalker-Changes : ignoreResistors // Zona14: List<Dictionary
     )
     {
         var damageDone = new DamageSpecifier();

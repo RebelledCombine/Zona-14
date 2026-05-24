@@ -8,8 +8,8 @@
   - type: PullDoAfter
     pullTime: 2
   - type: GunWieldBonus
-    minAngle: -50
-    maxAngle: -55
+    minAngle: -43 # Zona14: -50<-43
+    maxAngle: -75 # Zona14: -55<-75
   - type: FarGunshot
     sound: /Audio/_DZ/Effects/FarGunshots/supressed1.ogg
     silencerDecrease: 0.1
@@ -27,11 +27,11 @@
       path: /Audio/_Stalker/Effects/Guns/n_vintorez_shot.ogg
       params:
         volume: -10
-    minAngle: 50
+    minAngle: 45 # Zona14: 52<45
     maxAngle: 85
-    fireRate: 6
-    angleIncrease: 2.5
-    angleDecay: 20
+    fireRate: 15 # Zona14: 6<15
+    angleIncrease: 2.0 # Zona14: 2.5<2.0
+    angleDecay: 8 # Zona14: 20<8
     projectileSpeed: 75
   - type: ChamberMagazineAmmoProvider
     soundRack:
@@ -105,9 +105,11 @@
       path: /Audio/_Stalker/Effects/Guns/hk417.ogg
       params:
         volume: -10
-    minAngle: 50
+    minAngle: 45
     maxAngle: 90
-    angleIncrease: 2.5
+    fireRate: 5 # Zona14: added
+    angleIncrease: 1.0 # Zona14: 2.5<1.0
+    angleDecay: 8
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto
@@ -151,14 +153,14 @@
   - type: Sprite
     sprite: _Stalker/Objects/Weapons/Guns/Snipers/VSK.rsi
   - type: GunWieldBonus
-    minAngle: -50
-    maxAngle: -55
+    minAngle: -43
+    maxAngle: -75
   - type: Gun
-    minAngle: 52
-    maxAngle: 85
-    fireRate: 4
-    angleIncrease: 2.5
-    angleDecay: 20
+    minAngle: 45
+    maxAngle: 80 # Zona14: 85<80
+    fireRate: 12 # Zona14: 4<12
+    angleIncrease: 2.0
+    angleDecay: 8
     projectileSpeed: 75
     selectedMode: FullAuto
     availableModes:

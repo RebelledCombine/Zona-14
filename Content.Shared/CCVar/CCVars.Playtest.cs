@@ -91,4 +91,41 @@ public sealed partial class CCVars
         public static readonly CVarDef<float> PlaytestStaminaDamageModifier =
             CVarDef.Create("playtest.stamina_damage_modifier", 1f, CVar.SERVER | CVar.REPLICATED);
 
+        // Zona14: armor penetration tier CVars
+        /// <summary>
+        ///     Penetration fraction when projectile class is below armor class (classDiff ≤ −1). 0 = full armor.
+        /// </summary>
+        [CVarControl(AdminFlags.VarEdit)]
+        public static readonly CVarDef<float> PlaytestPenTierBelow =
+            CVarDef.Create("playtest.pen_tier_below", 0.0f, CVar.SERVER | CVar.REPLICATED);
+
+        /// <summary>
+        ///     Penetration fraction when projectile class matches armor class (classDiff = 0).
+        /// </summary>
+        [CVarControl(AdminFlags.VarEdit)]
+        public static readonly CVarDef<float> PlaytestPenTierMatch =
+            CVarDef.Create("playtest.pen_tier_match", 0.5f, CVar.SERVER | CVar.REPLICATED);
+
+        /// <summary>
+        ///     Penetration fraction when projectile is one tier above armor (classDiff = 1).
+        /// </summary>
+        [CVarControl(AdminFlags.VarEdit)]
+        public static readonly CVarDef<float> PlaytestPenTierAboveOne =
+            CVarDef.Create("playtest.pen_tier_above_one", 0.75f, CVar.SERVER | CVar.REPLICATED);
+
+        /// <summary>
+        ///     Penetration fraction when projectile is two+ tiers above armor (classDiff ≥ 2).
+        /// </summary>
+        [CVarControl(AdminFlags.VarEdit)]
+        public static readonly CVarDef<float> PlaytestPenTierAboveTwo =
+            CVarDef.Create("playtest.pen_tier_above_two", 0.9f, CVar.SERVER | CVar.REPLICATED);
+
+        /// <summary>
+        ///     Minimum damage floor as a fraction of original damage. Blunt supplement tops up if armor reduces below this.
+        /// </summary>
+        [CVarControl(AdminFlags.VarEdit)]
+        public static readonly CVarDef<float> PlaytestMinProjectileDamageFloor =
+            CVarDef.Create("playtest.min_projectile_damage_floor", 0.25f, CVar.SERVER | CVar.REPLICATED);
+        // End Zona14
+
 }

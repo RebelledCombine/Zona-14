@@ -8,8 +8,8 @@
   - type: PullDoAfter
     pullTime: 1.5
   - type: GunWieldBonus
-    minAngle: -43
-    maxAngle: -45
+    minAngle: -25 # Zona14: -43<-25
+    maxAngle: -40 # Zona14: -45<-40
   - type: Item
     sprite: _Stalker/Objects/Weapons/Guns/Rifles/inhands/PP2000.rsi
   - type: Sprite
@@ -18,10 +18,10 @@
     sprite: _Stalker/Objects/Weapons/Guns/Rifles/inhands/PP2000.rsi
   - type: Gun
     minAngle: 45
-    maxAngle: 85
-    fireRate: 10.5
-    angleIncrease: 1.5
-    angleDecay: 7
+    maxAngle: 100 # Zona14: 85<100
+    fireRate: 12 # Zona14: 10.5<12
+    angleIncrease: 3.5 # Zona14: 1.5<3.5
+    angleDecay: 9 # Zona14: 7<9
     projectileSpeed: 60
     soundGunshot:
       path: /Audio/_Stalker/Effects/Guns/n_mp5_shot.ogg

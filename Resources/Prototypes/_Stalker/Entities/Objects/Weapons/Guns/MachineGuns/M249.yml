@@ -14,18 +14,18 @@
   - type: Clothing
     sprite: _Stalker/Objects/Weapons/Guns/MGs/m249.rsi
   - type: Gun
-    fireRate: 9
+    fireRate: 12 # Zona14: 9<12
     soundGunshot:
       path: /Audio/_Stalker/Effects/Guns/l85.ogg
       params:
         volume: -2
-    minAngle: 48
-    maxAngle: 95
-    angleIncrease: 0.8
+    minAngle: 50 # Zona14: 48<50
+    maxAngle: 130 # Zona14: 95<130
+    angleIncrease: 3.5 # Zona14: 0.8<3.5
     selectedMode: FullAuto
     availableModes:
     - FullAuto
-    angleDecay: 8
+    angleDecay: 6 # Zona14: 8<6
   - type: ItemSlots
     slots:
       gun_magazine:
@@ -50,8 +50,8 @@
       gun_magazine: !type:ContainerSlot
       gun_chamber: !type:ContainerSlot
   - type: GunWieldBonus
-    minAngle: -28
-    maxAngle: -77
+    minAngle: -25 # Zona14: -28<-25
+    maxAngle: -55 # Zona14: -77<-55
   - type: PullDoAfter
     pullTime: 5
   - type: STWeaponDamageFalloff

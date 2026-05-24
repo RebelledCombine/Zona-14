@@ -1,51 +1,55 @@
-#5.45
+#5.45x39 - Tier 3 intermediate rifle caliber
 
 - type: entity
   id: Bullet545FMJ
-  name: bullet (5,45x39)
+  name: bullet (5.45x39 FMJ) # Zona14: bullet (5,45x39)<bullet (5.45x39 FMJ)
   parent: STBaseLRBullet
   categories: [ HideSpawnMenu ]
   components:
   - type: TimedDespawn
     lifetime: 4
   - type: Projectile
-    projectileClass: 2
+    projectileClass: 3 # Zona14: 2<3
     damage:
       types:
-        Piercing: 26
+        Piercing: 16 # Zona14: 26<16
   - type: StaminaDamageOnCollide
     damage: 2
 
 - type: entity
   id: Bullet545PC
-  name: bullet (5,45x39)
+  name: bullet (5.45x39 AP) # Zona14: bullet (5,45x39)<bullet (5.45x39 AP)
   parent: Bullet545FMJ
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
-    projectileClass: 3
+    projectileClass: 4 # Zona14: 6<4
     damage:
       types:
-        Piercing: 28
+        Piercing: 14 # Zona14: 18<14
+  - type: StaminaDamageOnCollide
+    damage: 1 # Zona14: added
 
 - type: entity
   id: Bullet545HP
-  name: bullet (5,45x39)
+  name: bullet (5.45x39 HP) # Zona14: bullet (5,45x39)<bullet (5.45x39 HP)
   parent: Bullet545FMJ
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
-    projectileClass: 0
+    projectileClass: 2 # Zona14: 0<2
     damage:
       types:
-        Mutant: 35
-        Piercing: 10
-        Blunt: 10
-        Slash: 10
+        Mutant: 40 # Zona14: 35<40
+        Piercing: 5 # Zona14: 10<5
+        Blunt: 9 # Zona14: 10<9
+        Slash: 9 # Zona14: 10<9
+  - type: StaminaDamageOnCollide
+    damage: 3 # Zona14: added
 
 - type: entity
   id: Bullet545BP
-  name: bullet (5,45x39)
+  name: bullet (5.45x39 AP)
   parent: Bullet545FMJ
   categories: [ HideSpawnMenu ]
   components:
@@ -53,30 +57,34 @@
     projectileClass: 4
     damage:
       types:
-        Piercing: 26
+        Piercing: 14
+  - type: StaminaDamageOnCollide
+    damage: 1
 
 - type: entity
   id: Bullet545BS
-  name: bullet (5,45x39)
+  name: bullet (5.45x39 AP)
   parent: Bullet545FMJ
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
-    projectileClass: 5
+    projectileClass: 4
     damage:
       types:
-        Piercing: 28
+        Piercing: 14
+  - type: StaminaDamageOnCollide
+    damage: 1
 
 - type: entity
   id: Bullet545NE
-  name: bullet (5,45x39)
+  name: bullet (5.45x39 AP)
   parent: Bullet545FMJ
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
-    projectileClass: 6
+    projectileClass: 4
     damage:
       types:
-        Piercing: 18
+        Piercing: 14
   - type: StaminaDamageOnCollide
     damage: 0

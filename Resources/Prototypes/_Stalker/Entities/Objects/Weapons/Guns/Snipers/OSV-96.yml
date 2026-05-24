@@ -13,14 +13,17 @@
     sprite: _Stalker/Objects/Weapons/Guns/Snipers/osv-96.rsi
   - type: Sprite
     sprite: _Stalker/Objects/Weapons/Guns/Snipers/osv-96.rsi
+  - type: GunWieldBonus
+    minAngle: -48 # Zona14: added
+    maxAngle: -75 # Zona14: added
   - type: Gun
     soundGunshot:
       path: /Audio/_Stalker/Effects/Guns/osv96.ogg
-    minAngle: 50
-    maxAngle: 120
-    angleDecay: 60
-    angleIncrease: 2
-    fireRate: 0.4
+    minAngle: 45 # Zona14: 50<45
+    maxAngle: 80 # Zona14: 120<80
+    angleDecay: 5 # Zona14: 60<5
+    angleIncrease: 0.5 # Zona14: 2<0.5
+    fireRate: 0.7 # Zona14: 0.4<0.7
   - type: STWeaponAccuracy
     accuracyMultiplier: 8
   - type: ChamberMagazineAmmoProvider

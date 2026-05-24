@@ -2,7 +2,7 @@
   parent: BaseCartridge
   id: BaseCartridgeRemingtonMagnum
   name: cartridge (.44 remington magnum)
-  suffix: Stalker
+  suffix: Stalker # Zona14: added
   abstract: true
   components:
   - type: Tag
@@ -21,7 +21,7 @@
     state: "base"
 
 - type: entity
-  parent: BaseCartridgeRemingtonMagnum
+  parent: BaseCartridgeRemingtonMagnum # Zona14: added
   id: CartridgeRemingtonMagnum
   name: cartridge (.44 remington magnum)
   suffix: Stalker
@@ -37,3 +37,12 @@
   components:
   - type: CartridgeAmmo
     proto: BulletRemingtonMagnumAP
+
+- type: entity
+  parent: BaseCartridgeRemingtonMagnum
+  id: CartridgeRemingtonMagnumHP # Zona14: added
+  name: cartridge (.44 remington magnum hollow-point) # Zona14: added
+  suffix: Stalker
+  components:
+  - type: CartridgeAmmo
+    proto: BulletRemingtonMagnumHP # Zona14: added

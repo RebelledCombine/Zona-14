@@ -21,11 +21,11 @@
     soundGunshot:
       path: /Audio/_Stalker/Effects/Guns/tt.ogg
     projectileSpeed: 55
-    minAngle: 5
-    maxAngle: 20
-    fireRate: 5
-    angleIncrease: 0.5
-    angleDecay: 5
+    minAngle: 6 # Zona14: 5<6
+    maxAngle: 22 # Zona14: 20<22
+    fireRate: 6 # Zona14: 5<6
+    angleIncrease: 2.0 # Zona14: 0.5<2.0
+    angleDecay: 8 # Zona14: 5<8
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto

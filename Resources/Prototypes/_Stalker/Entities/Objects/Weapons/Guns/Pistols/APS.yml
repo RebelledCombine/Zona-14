@@ -17,15 +17,19 @@
           map: ["enum.GunVisualLayers.Mag"]
     - type: Clothing
       sprite: _Stalker/Objects/Weapons/Guns/Pistols/aps.rsi
+    - type: Wieldable
+    - type: GunWieldBonus
+      minAngle: -3 # Zona14: added
+      maxAngle: -10 # Zona14: added
     - type: Gun
       soundGunshot:
         path: /Audio/_Stalker/Effects/Guns/pm-shoot.ogg
       projectileSpeed: 45
-      minAngle: 10
-      maxAngle: 50
-      fireRate: 8
-      angleIncrease: 1.5
-      angleDecay: 3
+      minAngle: 12 # Zona14: 10<12
+      maxAngle: 60 # Zona14: 50<60
+      fireRate: 12 # Zona14: 8<12
+      angleIncrease: 3.0 # Zona14: 1.5<3.0
+      angleDecay: 6 # Zona14: 3<6
       selectedMode: FullAuto
       availableModes:
         - FullAuto
