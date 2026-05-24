@@ -33,7 +33,10 @@ public sealed partial class GunSystem
         {
             var existing = component.Entities[^1];
             component.Entities.RemoveAt(component.Entities.Count - 1);
-            component.EntProtos.RemoveAt(component.EntProtos.Count - 1); // stalker-changes
+            // Zona14: guard empty EntProtos
+            if (component.EntProtos.Count > 0)
+                component.EntProtos.RemoveAt(component.EntProtos.Count - 1);
+            // End Zona14
 
             Containers.Remove(existing, component.Container);
             EnsureShootable(existing);
