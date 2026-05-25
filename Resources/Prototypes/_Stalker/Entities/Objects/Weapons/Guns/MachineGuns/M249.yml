@@ -14,7 +14,7 @@
   - type: Clothing
     sprite: _Stalker/Objects/Weapons/Guns/MGs/m249.rsi
   - type: Gun
-    fireRate: 12 # Zona14: 9<12
+    fireRate: 7.5 # Zona14: 9<12<7.5
     soundGunshot:
       path: /Audio/_Stalker/Effects/Guns/l85.ogg
       params:

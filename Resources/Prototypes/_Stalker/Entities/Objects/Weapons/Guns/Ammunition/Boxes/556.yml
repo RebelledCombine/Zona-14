@@ -22,23 +22,6 @@
 
 - type: entity
   parent: 556FMJBox
-  id: 556M855Box
-  name: Коробка патронов (5,56) M885
-  description: Для штурмовых винтовок, в коробке 30 штук. Обеспечивает пробитие 3 класса брони.
-  suffix: Stalker
-  components:
-    - type: BallisticAmmoProvider
-      proto: Cartridge556M855
-    - type: Sprite
-      layers:
-        - state: 556
-          map: ["enum.GunVisualLayers.Base"]
-        - state: 556ammo-1
-          map: ["enum.GunVisualLayers.Mag"]
-        - state: t2
-
-- type: entity
-  parent: 556FMJBox
   id: 556WarmagBox
   name: Коробка патронов (5,56) Warmag
   description: Для штурмовых винтовок, в коробке 30 штук. Бесполезно против брони.
@@ -56,25 +39,8 @@
 
 - type: entity
   parent: 556FMJBox
-  id: 556M856Box
-  name: Коробка патронов (5,56) M856
-  description: Для штурмовых винтовок, в коробке 30 штук. Обеспечивает пробитие 4 класса брони.
-  suffix: Stalker
-  components:
-    - type: BallisticAmmoProvider
-      proto: Cartridge556M856
-    - type: Sprite
-      layers:
-        - state: 556
-          map: ["enum.GunVisualLayers.Base"]
-        - state: 556ammo-1
-          map: ["enum.GunVisualLayers.Mag"]
-        - state: t3
-
-- type: entity
-  parent: 556FMJBox
   id: 545M995Box
-  name: Коробка патронов (5,56) M995
+  name: Коробка патронов (5,56) AP M995
   description: Для штурмовых винтовок, в коробке 30 штук. Обеспечивает пробитие 5 класса брони.
   suffix: Stalker
   components:
@@ -89,23 +55,6 @@
         - state: t4
 
 - type: entity
-  parent: 556FMJBox
-  id: 556SSAAPBox
-  name: Коробка патронов (5,56) SSA AP
-  description: Для штурмовых винтовок, в коробке 30 штук. Обеспечивает пробитие 6 класса брони.
-  suffix: Stalker
-  components:
-    - type: BallisticAmmoProvider
-      proto: Cartridge556SSAAP
-    - type: Sprite
-      layers:
-        - state: 556
-          map: ["enum.GunVisualLayers.Base"]
-        - state: 556ammo-1
-          map: ["enum.GunVisualLayers.Mag"]
-        - state: antiarmor
-
-- type: entity
   parent: BaseAmmoCinkBoxStalker
   id: 556FMJBoxCink
   name: ящик патронов (5,56) FMJ
@@ -118,22 +67,6 @@
       whitelist:
         tags:
           - STCartridge556
-    - type: Sprite
-      layers:
-        - state: cink
-          map: ["enum.GunVisualLayers.Base"]
-        - state: cink
-          map: ["enum.GunVisualLayers.Mag"]
-
-- type: entity
-  parent: 556FMJBoxCink
-  id: 556M855BoxCink
-  name: ящик патронов (5,56) M885
-  description: Для штурмовых винтовок, в коробке 300 штук. Обеспечивает пробитие 3 класса брони.
-  suffix: Stalker
-  components:
-    - type: BallisticAmmoProvider
-      proto: Cartridge556M855
     - type: Sprite
       layers:
         - state: cink
@@ -159,45 +92,13 @@
 
 - type: entity
   parent: 556FMJBoxCink
-  id: 556M856BoxCink
-  name: ящик патронов (5,56) M856
-  description: Для штурмовых винтовок, в коробке 300 штук. Обеспечивает пробитие 4 класса брони.
-  suffix: Stalker
-  components:
-    - type: BallisticAmmoProvider
-      proto: Cartridge556M856
-    - type: Sprite
-      layers:
-        - state: cink
-          map: ["enum.GunVisualLayers.Base"]
-        - state: cink
-          map: ["enum.GunVisualLayers.Mag"]
-
-- type: entity
-  parent: 556FMJBoxCink
   id: 545M995BoxCink
-  name: ящик патронов (5,56) M995
-  description: Для штурмовых винтовок, в коробке 30 штук. Обеспечивает пробитие 5 класса брони.
+  name: ящик патронов (5,56) AP M995
+  description: Для штурмовых винтовок, в коробке 300 штук. Обеспечивает пробитие 5 класса брони.
   suffix: Stalker
   components:
     - type: BallisticAmmoProvider
       proto: Cartridge556M995
-    - type: Sprite
-      layers:
-        - state: cink
-          map: ["enum.GunVisualLayers.Base"]
-        - state: cink
-          map: ["enum.GunVisualLayers.Mag"]
-
-- type: entity
-  parent: 556FMJBoxCink
-  id: 556SSAAPBoxCink
-  name: ящик патронов (5,56) SSA AP
-  description: Для штурмовых винтовок, в коробке 300 штук. Обеспечивает пробитие 6 класса брони.
-  suffix: Stalker
-  components:
-    - type: BallisticAmmoProvider
-      proto: Cartridge556SSAAP
     - type: Sprite
       layers:
         - state: cink

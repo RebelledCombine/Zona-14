@@ -17,7 +17,7 @@
   - type: Sprite
     sprite: _Stalker/Objects/Weapons/Guns/Rifles/groza.rsi
   - type: Gun
-    fireRate: 12 # Zona14: 5.5<12
+    fireRate: 7 # Zona14: 5.5<12
     soundGunshot:
       path: /Audio/_Stalker/Effects/Guns/n_groza_shot.ogg
       params:
@@ -94,7 +94,7 @@
       path: /Audio/_Stalker/Effects/Guns/scar.ogg
       params:
         volume: -2
-    fireRate: 12
+    fireRate: 7
     minAngle: 48
     maxAngle: 90
     angleDecay: 8
@@ -131,7 +131,7 @@
           tags:
           - STCartridge939
   - type: Gun
-    fireRate: 12
+    fireRate: 7
     soundGunshot:
       path: /Audio/_Stalker/Effects/Guns/n_groza_shot.ogg
       params:

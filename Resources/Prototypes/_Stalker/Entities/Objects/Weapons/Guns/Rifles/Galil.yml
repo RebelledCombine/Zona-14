@@ -23,7 +23,7 @@
         volume: -2
     minAngle: 50 # Zona14: 45<50
     maxAngle: 95 # Zona14: 75<95
-    fireRate: 11 # Zona14: 9.5<11
+    fireRate: 6.5 # Zona14: 9.5<11<6.5
     angleIncrease: 2.0 # Zona14: 0.9<2.0
     angleDecay: 8 # Zona14: 5<8
     projectileSpeed: 60

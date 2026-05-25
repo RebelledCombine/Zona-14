@@ -25,7 +25,7 @@
     - SemiAuto
     - FullAuto
     angleDecay: 5
-    fireRate: 7.5
+    fireRate: 7
     soundGunshot:
       path: /Audio/_Stalker/Effects/Guns/l85.ogg
   - type: ItemSlots

@@ -23,7 +23,7 @@
 - type: entity
   parent: BaseAmmoBoxStalker
   id: 13x108PCBox
-  name: коробка патронов (12,7x108) ПС
+  name: коробка патронов (12,7x108) AP ПС
   description: Для винтовки OSV-96, в коробке 10 штук. Обеспечивает пробитие 5 класса брони.
   suffix: Stalker
   components:

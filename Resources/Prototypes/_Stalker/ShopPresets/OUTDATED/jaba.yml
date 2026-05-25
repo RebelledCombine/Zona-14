@@ -112,20 +112,16 @@
         7mmBuckshotBox: 45
         # .45
         45ACPLFMJBox: 100
-        45ACPMFMJBox: 200
         45ACPAPBox: 625
         # 9.19
         919PSOGJBox: 65
         919PSTBox: 170
-        919PBMBox: 425
         # 9.18
         918PGJBox: 65
         918PSTBox: 170
-        918PBMBox: 425
         # 5.56
         556FMJBox: 300
         556WarmagBox: 1115
-        556M855Box: 745
         # 7.51
         751M80Box: 745
     - name: shop-category-armor

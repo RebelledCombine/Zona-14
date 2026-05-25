@@ -26,10 +26,8 @@
   - name: shop-category-ammunition
     priority: 3
     items:
-      556M855BoxCink: 80
       751M80BoxCink: 120
       754PCBox: 10
-      556M856BoxCink: 80
       739PCBoxCink: 80
       751M61BoxCink: 80
   - name: shop-category-armor

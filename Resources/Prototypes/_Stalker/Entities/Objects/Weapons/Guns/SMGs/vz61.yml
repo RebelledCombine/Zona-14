@@ -8,8 +8,8 @@
   - type: PullDoAfter
     pullTime: 1.5
   - type: GunWieldBonus
-    minAngle: -20 # Zona14: -35<-20
-    maxAngle: -35 # Zona14: -45<-35
+    minAngle: -12 # Zona14: -35<-20<-12
+    maxAngle: -30 # Zona14: -45<-35<-30
   - type: Clothing
     sprite: Objects/Weapons/Guns/Pistols/viper.rsi
   - type: Item
@@ -18,10 +18,10 @@
   - type: Sprite
     sprite: _Stalker/Objects/Weapons/Guns/SMGs/vz61.rsi
   - type: Gun
-    minAngle: 45 # Zona14: 40<45
-    maxAngle: 110 # Zona14: 85<110
-    fireRate: 14 # Zona14: 12<14
-    angleIncrease: 4.0 # Zona14: 1.5<4.0
+    minAngle: 18 # Zona14: 40<45<18
+    maxAngle: 65 # Zona14: 85<110<65
+    fireRate: 8.5 # Zona14: 12<14<8.5
+    angleIncrease: 2.0 # Zona14: 1.5<4.0<2.0
     angleDecay: 9 # Zona14: 5.5<9
     projectileSpeed: 55
     soundGunshot:

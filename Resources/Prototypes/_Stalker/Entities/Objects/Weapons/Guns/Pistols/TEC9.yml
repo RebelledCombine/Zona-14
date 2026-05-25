@@ -21,7 +21,7 @@
     maxAngle: 35 # Zona14: 15<35
     angleIncrease: 2.0 # Zona14: 1<2.0
     angleDecay: 8 # Zona14: 4<8
-    fireRate: 8 # Zona14: 7<8
+    fireRate: 9 # Zona14: 7<8<9
     availableModes:
     - SemiAuto
   - type: ItemSlots

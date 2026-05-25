@@ -20,10 +20,8 @@
     priority: 3
     items:
       919RIPBoxCink: 15
-      919PBMBoxCink: 25
       8mmBuckshotBoxCink: 35
       556WarmagBoxCink: 35
-      556M856BoxCink: 110
   - name: shop-category-armor
     priority: 4
     items:

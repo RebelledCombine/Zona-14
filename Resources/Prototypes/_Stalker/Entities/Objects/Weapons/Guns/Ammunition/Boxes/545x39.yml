@@ -22,23 +22,6 @@
 
 - type: entity
   parent: 545FMJBox
-  id: 545PCBox
-  name: Коробка патронов (5,45x39) ПС
-  description: Для автоматов Калашникова разных моделей, в коробке 30 штук. Усиленная пуля. Пробивает 3 класс брони.
-  suffix: Stalker
-  components:
-  - type: BallisticAmmoProvider
-    proto: STCartridge545PC
-  - type: Sprite
-    layers:
-    - state: 545
-      map: ["enum.GunVisualLayers.Base"]
-    - state: 545ammo-1
-      map: ["enum.GunVisualLayers.Mag"]
-    - state: t2
-
-- type: entity
-  parent: 545FMJBox
   id: 545HPBox
   name: Коробка патронов (5,45x39) HP
   description: Для автоматов Калашникова разных моделей, в коробке 30 штук. Ничего не пробьёт, но наносит ужасный урон, в том числе заброневой.
@@ -57,7 +40,7 @@
 - type: entity
   parent: 545FMJBox
   id: 545BPBox
-  name: Коробка патронов (5,45x39) БП
+  name: Коробка патронов (5,45x39) AP
   description: Для автоматов Калашникова разных моделей, в коробке 30 штук. Пробивает 4 класс брони.
   suffix: Stalker
   components:
@@ -70,40 +53,6 @@
     - state: 545ammo-1
       map: ["enum.GunVisualLayers.Mag"]
     - state: t3
-
-- type: entity
-  parent: 545FMJBox
-  id: 545BSBox
-  name: Коробка патронов (5,45x39) БC
-  description: Для автоматов Калашникова разных моделей, в коробке 30 штук. Пробивает 5 класс брони.
-  suffix: Stalker
-  components:
-  - type: BallisticAmmoProvider
-    proto: STCartridge545BS
-  - type: Sprite
-    layers:
-    - state: 545
-      map: ["enum.GunVisualLayers.Base"]
-    - state: 545ammo-1
-      map: ["enum.GunVisualLayers.Mag"]
-    - state: t4
-
-- type: entity
-  parent: 545FMJBox
-  id: 545NCBox
-  name: Коробка патронов (5,45x39) Игольники
-  description: Для автоматов Калашникова разных моделей, в коробке 30 штук. Пробивает 6 класс брони.
-  suffix: Stalker
-  components:
-  - type: BallisticAmmoProvider
-    proto: STCartridge545NE
-  - type: Sprite
-    layers:
-    - state: 545
-      map: ["enum.GunVisualLayers.Base"]
-    - state: 545ammo-1
-      map: ["enum.GunVisualLayers.Mag"]
-    - state: antiarmor
 
 - type: entity
   parent: BaseAmmoCinkBoxStalker
@@ -127,25 +76,9 @@
 
 - type: entity
   parent: 545FMJBoxCink
-  id: 545PCBoxCink
-  name: ящик патронов (5,45x39) ПС
-  description: Для автоматов Калашникова разных моделей, в коробке 300 штук. Усиленная пуля. Пробивает 3 класс брони.
-  suffix: Stalker
-  components:
-  - type: BallisticAmmoProvider
-    proto: STCartridge545PC
-  - type: Sprite
-    layers:
-    - state: cink
-      map: ["enum.GunVisualLayers.Base"]
-    - state: cink
-      map: ["enum.GunVisualLayers.Mag"]
-
-- type: entity
-  parent: 545FMJBoxCink
   id: 545HPBoxCink
   name: ящик патронов (5,45x39) HP
-  description: Для автоматов Калашникова разных моделей, в коробке 30- штук. Ничего не пробьёт, но наносит ужасный урон, в том числе заброневой.
+  description: Для автоматов Калашникова разных моделей, в коробке 300 штук. Ничего не пробьёт, но наносит ужасный урон, в том числе заброневой.
   suffix: Stalker
   components:
   - type: BallisticAmmoProvider
@@ -160,44 +93,12 @@
 - type: entity
   parent: 545FMJBoxCink
   id: 545BPBoxCink
-  name: ящик патронов (5,45x39) БП
-  description: Для автоматов Калашникова разных моделей, в коробке 30 штук. Пробивает 4 класс брони.
+  name: ящик патронов (5,45x39) AP
+  description: Для автоматов Калашникова разных моделей, в коробке 300 штук. Пробивает 4 класс брони.
   suffix: Stalker
   components:
   - type: BallisticAmmoProvider
     proto: STCartridge545BP
-  - type: Sprite
-    layers:
-    - state: cink
-      map: ["enum.GunVisualLayers.Base"]
-    - state: cink
-      map: ["enum.GunVisualLayers.Mag"]
-
-- type: entity
-  parent: 545FMJBoxCink
-  id: 545BSBoxCink
-  name: ящик патронов (5,45x39) БC
-  description: Для автоматов Калашникова разных моделей, в коробке 30 штук. Пробивает 5 класс брони.
-  suffix: Stalker
-  components:
-  - type: BallisticAmmoProvider
-    proto: STCartridge545BS
-  - type: Sprite
-    layers:
-    - state: cink
-      map: ["enum.GunVisualLayers.Base"]
-    - state: cink
-      map: ["enum.GunVisualLayers.Mag"]
-
-- type: entity
-  parent: 545FMJBoxCink
-  id: 545NCBoxCink
-  name: ящик патронов (5,45x39) Игольники
-  description: Для автоматов Калашникова разных моделей, в коробке 30 штук. Пробивает 6 класс брони.
-  suffix: Stalker
-  components:
-  - type: BallisticAmmoProvider
-    proto: STCartridge545NE
   - type: Sprite
     layers:
     - state: cink

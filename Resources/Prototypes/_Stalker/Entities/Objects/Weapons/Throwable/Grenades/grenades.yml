@@ -7,15 +7,15 @@
   components:
     - type: Explosive
       explosionType: Default
-      maxIntensity: 10
-      intensitySlope: 3
-      totalIntensity: 80 # about a ~4 tile radius
+      maxIntensity: 8        # ~20% less peak damage — survivable at range
+      intensitySlope: 2      # gentler falloff = wider effective radius
+      totalIntensity: 120    # ~6 tile radius (was 80/~4 tiles)
       canCreateVacuum: false
     - type: TriggerOnUse
     - type: TimerTrigger
     - type: ScatteringGrenade
       fillPrototype: PelletClusterLethal
-      capacity: 80
+      capacity: 60           # fewer pellets to match reduced damage
     - type: ContainerContainer
       containers:
         cluster-payload: !type:Container
@@ -37,15 +37,15 @@
   components:
     - type: Explosive
       explosionType: Default
-      maxIntensity: 5
-      intensitySlope: 2
-      totalIntensity: 40 # about a ~4 tile radius
+      maxIntensity: 4        # ~20% less peak damage — lighter than F1
+      intensitySlope: 1.5    # gentler falloff = wider effective area
+      totalIntensity: 65     # ~5 tile radius (was 40/~4 tiles)
       canCreateVacuum: false
     - type: TriggerOnUse
     - type: TimerTrigger
     - type: ScatteringGrenade
       fillPrototype: PelletClusterLethal
-      capacity: 80
+      capacity: 60           # fewer pellets to match reduced damage
     - type: ContainerContainer
       containers:
         cluster-payload: !type:Container

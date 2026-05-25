@@ -24,7 +24,7 @@
       projectileSpeed: 35
       minAngle: 10
       maxAngle: 30 # Zona14: 50<30
-      fireRate: 5 # Zona14: 9<5
+      fireRate: 3 # Zona14: 9<5<3
       angleIncrease: 2.0 # Zona14: 1.5<2.0
       angleDecay: 8 # Zona14: 5<8
       selectedMode: SemiAuto # Zona14: FullAuto<SemiAuto

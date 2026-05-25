@@ -21,7 +21,7 @@
       path: /Audio/_Stalker/Effects/Guns/103_shoot.ogg
     minAngle: 55
     maxAngle: 110
-    fireRate: 10 # Zona14: 7<10
+    fireRate: 6 # Zona14: 7<10<6
     angleIncrease: 2.0 # Zona14: 1.2<2.0
     angleDecay: 8 # Zona14: 5<8
     projectileSpeed: 65
@@ -85,7 +85,7 @@
   - type: Gun
     angleDecay: 8
     angleIncrease: 2.0
-    fireRate: 10
+    fireRate: 6
 
 - type: entity
   parent: STBaseWeaponRifleAK103
@@ -107,7 +107,7 @@
     maxAngle: 100 # Zona14: 95<100
     angleIncrease: 2.0
     angleDecay: 8
-    fireRate: 10
+    fireRate: 6
   - type: STWeaponDamageFalloff
     falloffMultiplier: 0.85
   - type: STWeaponAccuracy
@@ -214,7 +214,7 @@
   - type: Item
     sprite: _Stalker/Objects/Weapons/Guns/Rifles/_Skins/ak15.rsi
   - type: Gun
-    fireRate: 12 # Zona14: 8<12
+    fireRate: 7 # Zona14: 8<12<7
     soundGunshot:
       path: /Audio/_Stalker/Effects/Guns/203_Sound.ogg
     minAngle: 50 # Zona14: 48<50

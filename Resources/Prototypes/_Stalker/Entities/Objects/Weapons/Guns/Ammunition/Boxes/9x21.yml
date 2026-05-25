@@ -44,7 +44,7 @@
 - type: entity
   parent: 921PGJBox
   id: 921BTGJBox
-  name: Коробка патронов (9х21) БТ гж
+  name: Коробка патронов (9х21) AP БТ гж
   description: Для СР-1 и СР-2М, в коробке 30 штук. Обеспечивает пробитие 3 класса брони.
   suffix: Stalker
   components:
@@ -57,23 +57,6 @@
     - state: 45ammo-1
       map: ["enum.GunVisualLayers.Mag"]
     - state: t3_large
-
-- type: entity
-  parent: 921PGJBox
-  id: 9217N42Box
-  name: Коробка патронов (9х21) 7Н42 "Зубило"
-  description: Для СР-1 и СР-2М, в коробке 30 штук. Обеспечивает пробитие 4 класса брони.
-  suffix: Stalker
-  components:
-  - type: BallisticAmmoProvider
-    proto: STCartridge9217N42
-  - type: Sprite
-    layers:
-    - state: 921
-      map: ["enum.GunVisualLayers.Base"]
-    - state: 45ammo1-1
-      map: ["enum.GunVisualLayers.Mag"]
-    - state: t4_large
 
 - type: entity
   parent: BaseAmmoCinkBoxStalker
@@ -114,28 +97,12 @@
 - type: entity
   parent: 921PGJBoxCink
   id: 921BTGJBoxCink
-  name: ящик патронов (9х21) БТ гж
+  name: ящик патронов (9х21) AP БТ гж
   description: Для СР-1 и СР-2М, в коробке 300 штук. Обеспечивает пробитие 3 класса брони.
   suffix: Stalker
   components:
   - type: BallisticAmmoProvider
     proto: STCartridge921BTGJ
-  - type: Sprite
-    layers:
-    - state: cink
-      map: ["enum.GunVisualLayers.Base"]
-    - state: cink
-      map: ["enum.GunVisualLayers.Mag"]
-
-- type: entity
-  parent: 921PGJBoxCink
-  id: 9217N42BoxCink
-  name: ящик патронов (9х21) 7Н42 "Зубило"
-  description: Для СР-1 и СР-2М, в коробке 300 штук. Обеспечивает пробитие 4 класса брони.
-  suffix: Stalker
-  components:
-  - type: BallisticAmmoProvider
-    proto: STCartridge9217N42
   - type: Sprite
     layers:
     - state: cink

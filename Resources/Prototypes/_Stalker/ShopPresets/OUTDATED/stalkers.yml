@@ -116,20 +116,16 @@
         725PBox: 130
         725PTBox: 540
         725LRNPCBox: 338
-        725PSTBox: 1200
         # 9.19
         919PSOGJBox: 230
         919PSTBox: 540
         919RIPBox: 338
-        919PBMBox: 1500
         # 5.45
         545FMJBox: 220
         545HPBox: 125
-        545PCBox: 1800
         # 5.56
         556FMJBox: 280
         556WarmagBox: 280
-        556M855Box: 1900
         # 7.39
         739FMJBox: 1000
         739HPBox: 500

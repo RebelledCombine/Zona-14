@@ -95,7 +95,6 @@
         7mmBuckshotBox: 60
         # .45
         45ACPLFMJBox: 150
-        45ACPMFMJBox: 338
         # 7.25
         725PBox: 150
         725PTBox: 338
@@ -107,7 +106,6 @@
         918PSTBox: 338
         # 5.45
         545FMJBox: 375
-        545PCBox: 750
         # 5.56
         556FMJBox: 450
         # 7.54

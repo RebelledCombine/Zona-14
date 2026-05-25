@@ -129,7 +129,6 @@
         # 5.45
         545FMJBox: 500
         545HPBox: 250
-        545PCBox: 1250
         # 7.39
         739HPBox: 400
         739FMJBox: 1350
@@ -139,18 +138,15 @@
         # 9.18
         918PGJBox: 80
         918PSTBox: 560
-        918PBMBox: 1000
         918SP7Box: 250
         # 9.19
         919PSOGJBox: 80
         919PSTBox: 560
         919RIPBox: 250
-        919PBMBox: 1000
         # 7.25
         725PBox: 100
         725LRNPCBox: 50
         725PTBox: 465
-        725PSTBox: 1000
     - name: shop-category-armor
       priority: 4
       items:

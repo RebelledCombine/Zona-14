@@ -21,6 +21,7 @@
     pullTime: 2.5
   - type: Gun
     projectileSpeed: 60
+    fireRate: 6
     selectedMode: FullAuto
     availableModes:
     - SemiAuto

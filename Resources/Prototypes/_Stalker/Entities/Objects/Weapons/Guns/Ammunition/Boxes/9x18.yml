@@ -23,7 +23,7 @@
 - type: entity
   parent: 918PGJBox
   id: 918PSTBox
-  name: Коробка патронов (9х18) ПСТ гж
+  name: Коробка патронов (9х18) ПСТ AP гж
   description: Для ПМм, в коробке 30 штук. Обеспечивает пробитие 2 класса брони.
   suffix: Stalker
   components:
@@ -55,24 +55,6 @@
     - state: exp
 
 - type: entity
-  parent: 918PGJBox
-  id: 918PBMBox
-  name: Коробка патронов (9х18) ПБМ гж
-  description: Для ПМм, в коробке 30 штук. Обеспечивает пробитие 3 класса брони.
-  suffix: Stalker
-  components:
-  - type: BallisticAmmoProvider
-    proto: STCartridge918PBM
-  - type: Sprite
-    layers:
-    - state: 918
-      map: ["enum.GunVisualLayers.Base"]
-    - state: 919ammo2-1
-      map: ["enum.GunVisualLayers.Mag"]
-    - state: t4
-    - state: antiarmor_large
-
-- type: entity
   parent: BaseAmmoCinkBoxStalker
   id: 918PGJBoxCink
   name: ящик патронов (9х18) П гж
@@ -95,7 +77,7 @@
 - type: entity
   parent: 918PGJBoxCink
   id: 918PSTBoxCink
-  name: ящик патронов (9х18) ПСТ гж
+  name: ящик патронов (9х18) ПСТ AP гж
   description: Для ПМм, в коробке 300 штук. Обеспечивает пробитие 2 класса брони.
   suffix: Stalker
   components:
@@ -117,22 +99,6 @@
   components:
   - type: BallisticAmmoProvider
     proto: STCartridge918SP7
-  - type: Sprite
-    layers:
-    - state: cink
-      map: ["enum.GunVisualLayers.Base"]
-    - state: cink
-      map: ["enum.GunVisualLayers.Mag"]
-
-- type: entity
-  parent: 918PGJBoxCink
-  id: 918PBMBoxCink
-  name: ящик патронов (9х18) ПБМ гж
-  description: Для ПМм, в коробке 300 штук. Обеспечивает пробитие 3 класса брони.
-  suffix: Stalker
-  components:
-  - type: BallisticAmmoProvider
-    proto: STCartridge918PBM
   - type: Sprite
     layers:
     - state: cink

@@ -22,16 +22,16 @@
       map: ["enum.GunVisualLayers.Mag"]
   - type: Wieldable
   - type: GunWieldBonus
-    minAngle: -25 # Zona14: -40<-25
-    maxAngle: -40
+    minAngle: -12 # Zona14: -40<-25<-12
+    maxAngle: -30 # Zona14: -40<-30
   - type: PullDoAfter
     pullTime: 1.5
   - type: Gun
     projectileSpeed: 50
-    minAngle: 40 # Zona14: added
-    maxAngle: 100 # Zona14: added
-    fireRate: 13 # Zona14: added
-    angleIncrease: 3.5 # Zona14: added
+    minAngle: 18 # Zona14: added<18
+    maxAngle: 65 # Zona14: added<65
+    fireRate: 8 # Zona14: added<8
+    angleIncrease: 2.0 # Zona14: added<2.0
     angleDecay: 9 # Zona14: added
     selectedMode: FullAuto
     availableModes:

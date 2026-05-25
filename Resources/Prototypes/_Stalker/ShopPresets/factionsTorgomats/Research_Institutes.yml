@@ -132,7 +132,6 @@
       918PSTBox: 180
       45ACPRIPBox: 150
       45ACPLFMJBox: 100
-      45ACPMFMJBox: 250
       6mmBuckshotBox: 115
       7mmBuckshotBox: 45
       8mmBuckshotBox: 420
@@ -140,10 +139,8 @@
       MagazineBoxRemingtonMagnumAP: 520
       545HPBox: 200
       545FMJBox: 170
-      545PCBox: 2000
       556WarmagBox: 200
       556FMJBox: 300
-      556M855Box: 3000
   - name: shop-category-armor
     priority: 4
     items:

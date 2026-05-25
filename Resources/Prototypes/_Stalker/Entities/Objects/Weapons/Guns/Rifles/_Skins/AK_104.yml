@@ -21,7 +21,7 @@
       path: /Audio/_Stalker/Effects/Guns/103_shoot.ogg
     minAngle: 55 # Zona14: 60<55
     maxAngle: 105 # Zona14: 100<105
-    fireRate: 10 # Zona14: 8<10
+    fireRate: 6 # Zona14: 8<10<6
     angleIncrease: 2.0 # Zona14: 1.75<2.0
     angleDecay: 8
     projectileSpeed: 65

@@ -40,7 +40,7 @@
     maxAngle: 25 # Zona14: added
     angleIncrease: 2.0 # Zona14: added
     angleDecay: 8 # Zona14: added
-    fireRate: 6
+    fireRate: 4
     selectedMode: SemiAuto
     availableModes:
       - SemiAuto

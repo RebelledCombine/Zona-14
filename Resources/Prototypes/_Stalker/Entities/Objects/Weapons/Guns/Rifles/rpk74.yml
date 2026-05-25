@@ -17,7 +17,7 @@
     angleIncrease: 2.5 # Zona14: 1.4<2.5
     angleDecay: 7 # Zona14: 5<7
     projectileSpeed: 55
-    fireRate: 10 # Zona14: 6.5<10
+    fireRate: 6 # Zona14: 6.5<10<6
   - type: Clothing
     sprite: _Stalker/Objects/Weapons/Guns/Rifles/inhands/RPK-74mag.rsi
   - type: Item

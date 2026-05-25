@@ -20,7 +20,7 @@
   - type: Gun
     minAngle: 55 # Zona14: 60<55
     maxAngle: 130 # Zona14: 120<130
-    fireRate: 12 # Zona14: 6.5<12
+    fireRate: 7 # Zona14: 6.5<12<7
     angleIncrease: 3.5 # Zona14: 2<3.5
     angleDecay: 6 # Zona14: 10<6
     projectileSpeed: 60

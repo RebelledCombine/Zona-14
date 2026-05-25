@@ -139,15 +139,11 @@
       6mmBuckshotBox: 100
       8mmBuckshotBox: 350
       45ACPRIPBox: 300
-      45ACPMFMJBox: 150
       45ACPAPBox: 600
       556WarmagBox: 250
-      556M855Box: 1300
       754FMJBox: 1500
       545HPBox: 150
-      545PCBox: 1250
       545BPBox: 1900
-      918PBMBox: 600
       751UNBox: 800
       751M80Box: 1600
   - name: shop-category-armor
