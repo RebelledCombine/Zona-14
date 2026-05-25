@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   parent: BaseAmmoBoxStalker
   id: 13x108FMJBox
   name: коробка патронов (12,7x108) FMJ

@@ -61,6 +61,42 @@
         - state: exp
 
 - type: entity
+  parent: 754PCBox
+  id: 754BTBox
+  categories: [ HideSpawnMenu ]  # Zona14: added — redundant variant hidden from UI, entity kept for loot/craft compatibility
+  name: коробка патронов (7,62x54) БТ
+  description: Для винтовки Мосина, в коробке 10 штук. Обеспечивает пробитие 5 класса брони.
+  suffix: Stalker
+  components:
+    - type: BallisticAmmoProvider
+      proto: STCartridge754BT
+    - type: Sprite
+      layers:
+        - state: 76254
+          map: ["enum.GunVisualLayers.Base"]
+        - state: 76254ammo-1
+          map: ["enum.GunVisualLayers.Mag"]
+        - state: t4
+
+- type: entity
+  parent: 754PCBox
+  id: 754SNBBox
+  categories: [ HideSpawnMenu ]  # Zona14: added — redundant variant hidden from UI, entity kept for loot/craft compatibility
+  name: коробка патронов (7,62x54) СНБ
+  description: Для винтовки Мосина, в коробке 10 штук. Обеспечивает пробитие 6 класса брони.
+  suffix: Stalker
+  components:
+    - type: BallisticAmmoProvider
+      proto: STCartridge754SNB
+    - type: Sprite
+      layers:
+        - state: 76254
+          map: ["enum.GunVisualLayers.Base"]
+        - state: 76254ammo-1
+          map: ["enum.GunVisualLayers.Mag"]
+        - state: antiarmor
+
+- type: entity
   parent: BaseAmmoCinkBoxStalker
   id: 754FMJBoxCink
   name: ящик патронов (7,62x54) FMJ
@@ -83,7 +119,7 @@
 - type: entity
   parent: BaseAmmoCinkBoxStalker
   id: 754PCBoxCink
-  name: коробка патронов (7,62x54) БТ
+  name: ящик патронов (7,62x54) ПС
   description: Для винтовки Мосина, в коробке 100 штук. Обеспечивает пробитие 4 класса брони.
   suffix: Stalker
   components:
@@ -109,6 +145,40 @@
   components:
     - type: BallisticAmmoProvider
       proto: STCartridge754HPBT
+    - type: Sprite
+      layers:
+        - state: cink
+          map: ["enum.GunVisualLayers.Base"]
+        - state: cink
+          map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  parent: 754PCBoxCink
+  id: 754BTBoxCink
+  categories: [ HideSpawnMenu ]  # Zona14: added — redundant variant hidden from UI, entity kept for loot/craft compatibility
+  name: ящик патронов (7,62x54) БТ
+  description: Для винтовки Мосина, в коробке 100 штук. Обеспечивает пробитие 5 класса брони.
+  suffix: Stalker
+  components:
+    - type: BallisticAmmoProvider
+      proto: STCartridge754BT
+    - type: Sprite
+      layers:
+        - state: cink
+          map: ["enum.GunVisualLayers.Base"]
+        - state: cink
+          map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  parent: 754PCBoxCink
+  id: 754SNBBoxCink
+  categories: [ HideSpawnMenu ]  # Zona14: added — redundant variant hidden from UI, entity kept for loot/craft compatibility
+  name: ящик патронов (7,62x54) СНБ
+  description: Для винтовки Мосина, в коробке 100 штук. Обеспечивает пробитие 6 класса брони.
+  suffix: Stalker
+  components:
+    - type: BallisticAmmoProvider
+      proto: STCartridge754SNB
     - type: Sprite
       layers:
         - state: cink

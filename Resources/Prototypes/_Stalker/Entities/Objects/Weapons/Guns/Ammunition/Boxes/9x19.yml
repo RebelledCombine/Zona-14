@@ -59,6 +59,25 @@
     - state: exp
 
 - type: entity
+  parent: 919PSOGJBox
+  id: 919PBMBox
+  categories: [ HideSpawnMenu ]  # Zona14: added — redundant variant hidden from UI, entity kept for loot/craft compatibility
+  name: Коробка патронов (9х19) ПБМ гж
+  description: Для МП-5 Гадюка, в коробке 30 штук. Обеспечивает пробитие только 3 класса брони.
+  suffix: Stalker
+  components:
+  - type: BallisticAmmoProvider
+    proto: STCartridge919PBM
+  - type: Sprite
+    layers:
+    - state: 919
+      map: ["enum.GunVisualLayers.Base"]
+    - state: 919ammo-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: t4
+    - state: antiarmor_large
+
+- type: entity
   parent: BaseAmmoCinkBoxStalker
   id: 919PSOGJBoxCink
   name: ящик патронов (9х19) ПСО гж
@@ -81,7 +100,7 @@
 - type: entity
   parent: 919PSOGJBoxCink
   id: 919PSTBoxCink
-  name: Коробка патронов (9х19) ПБМ гж
+  name: ящик патронов (9х19) ПСТ гж
   description: Для МП-5 Гадюка, в коробке 300 штук. Обеспечивает пробитие только 2 класса брони.
   suffix: Stalker
   components:
@@ -103,6 +122,23 @@
   components:
   - type: BallisticAmmoProvider
     proto: STCartridge919RIP
+  - type: Sprite
+    layers:
+    - state: cink
+      map: ["enum.GunVisualLayers.Base"]
+    - state: cink
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  parent: 919PSOGJBoxCink
+  id: 919PBMBoxCink
+  categories: [ HideSpawnMenu ]  # Zona14: added — redundant variant hidden from UI, entity kept for loot/craft compatibility
+  name: ящик патронов (9х19) ПБМ гж
+  description: Для МП-5 Гадюка, в коробке 300 штук. Обеспечивает пробитие только 3 класса брони.
+  suffix: Stalker
+  components:
+  - type: BallisticAmmoProvider
+    proto: STCartridge919PBM
   - type: Sprite
     layers:
     - state: cink

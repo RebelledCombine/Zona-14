@@ -26,7 +26,7 @@
     sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Boxes/9_39/world.rsi
     layers: ["base", "mag"]
 
-# T1 Expansive (HP)
+# T1 Expansive
 - type: entity
   parent: STBaseBox9x39
   id: STBox9x39PSO
@@ -43,7 +43,25 @@
     - state: pso-open-1
       map: ["enum.GunVisualLayers.Mag", "mag"]
 
-# T2 FMJ
+# T1 Training
+- type: entity
+  parent: STBaseBox9x39
+  id: STBox9x39SP6Uch
+  categories: [ HideSpawnMenu ]  # Zona14: added — redundant variant hidden from UI, entity kept for loot/craft compatibility
+  name: коробка патронов 9x39 СП-6УЧ
+  components:
+  - type: MagazineVisuals
+    magState: sp6-uch-open
+  - type: BallisticAmmoProvider
+    proto: STCartridge9x39SP6Uch
+  - type: Sprite
+    layers:
+    - state: sp6-uch
+      map: ["enum.GunVisualLayers.Base", "base"]
+    - state: sp6-uch-open-1
+      map: ["enum.GunVisualLayers.Mag", "mag"]
+
+# T2
 - type: entity
   parent: STBaseBox9x39
   id: STBox9x39SP5
@@ -60,11 +78,11 @@
     - state: sp5-open-1
       map: ["enum.GunVisualLayers.Mag", "mag"]
 
-# T3 AP
+# T3
 - type: entity
   parent: STBaseBox9x39
   id: STBox9x39PAB9
-  name: коробка патронов 9x39 СП-6УЧ
+  name: коробка патронов 9x39 ПАБ-9
   components:
   - type: MagazineVisuals
     magState: pab9-open
@@ -75,4 +93,40 @@
     - state: pab9
       map: ["enum.GunVisualLayers.Base", "base"]
     - state: pab9-open-1
+      map: ["enum.GunVisualLayers.Mag", "mag"]
+
+# T4
+- type: entity
+  parent: STBaseBox9x39
+  id: STBox9x39SP6
+  categories: [ HideSpawnMenu ]  # Zona14: added — redundant variant hidden from UI, entity kept for loot/craft compatibility
+  name: коробка патронов 9x39 СП-6
+  components:
+  - type: MagazineVisuals
+    magState: sp6-open
+  - type: BallisticAmmoProvider
+    proto: STCartridge9x39SP6
+  - type: Sprite
+    layers:
+    - state: sp6
+      map: ["enum.GunVisualLayers.Base", "base"]
+    - state: sp6-open-1
+      map: ["enum.GunVisualLayers.Mag", "mag"]
+
+# T5
+- type: entity
+  parent: STBaseBox9x39
+  id: STBox9x39AA
+  categories: [ HideSpawnMenu ]  # Zona14: added — redundant variant hidden from UI, entity kept for loot/craft compatibility
+  name: коробка патронов 9x39 ББ
+  components:
+  - type: MagazineVisuals
+    magState: aa-open
+  - type: BallisticAmmoProvider
+    proto: STCartridge9x39AA
+  - type: Sprite
+    layers:
+    - state: aa
+      map: ["enum.GunVisualLayers.Base", "base"]
+    - state: aa-open-1
       map: ["enum.GunVisualLayers.Mag", "mag"]

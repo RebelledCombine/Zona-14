@@ -54,6 +54,24 @@
           map: ["enum.GunVisualLayers.Mag"]
 
 - type: entity
+  parent: 751M80Box
+  id: 751M993Box
+  categories: [ HideSpawnMenu ]  # Zona14: added — redundant variant hidden from UI, entity kept for loot/craft compatibility
+  name: Коробка патронов (7,62x51) M993
+  description: Для винтовок НАТО, в коробке 30 штук. Обеспечивает пробитие 5 класса брони.
+  suffix: Stalker
+  components:
+    - type: BallisticAmmoProvider
+      proto: Cartridge751M993
+    - type: Sprite
+      layers:
+        - state: 76251
+          map: ["enum.GunVisualLayers.Base"]
+        - state: 76239ammo-1
+          map: ["enum.GunVisualLayers.Mag"]
+        - state: antiarmor
+
+- type: entity
   parent: BaseAmmoCinkBoxStalker
   id: 751M80BoxCink
   name: ящик патронов (7,62x51) М80
@@ -92,12 +110,29 @@
 - type: entity
   parent: 751M80BoxCink
   id: 751M61BoxCink
-  name: Коробка патронов (7,62x51) M993
+  name: ящик патронов (7,62x51) M61
   description: Для винтовок НАТО, в коробке 300 штук. Обеспечивает пробитие 4 класса брони.
   suffix: Stalker
   components:
     - type: BallisticAmmoProvider
       proto: Cartridge751M61
+    - type: Sprite
+      layers:
+        - state: cink
+          map: ["enum.GunVisualLayers.Base"]
+        - state: cink
+          map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  parent: 751M80BoxCink
+  id: 751M993BoxCink
+  categories: [ HideSpawnMenu ]  # Zona14: added — redundant variant hidden from UI, entity kept for loot/craft compatibility
+  name: ящик патронов (7,62x51) M993
+  description: Для винтовок НАТО, в коробке 300 штук. Обеспечивает пробитие 5 класса брони.
+  suffix: Stalker
+  components:
+    - type: BallisticAmmoProvider
+      proto: Cartridge751M993
     - type: Sprite
       layers:
         - state: cink
