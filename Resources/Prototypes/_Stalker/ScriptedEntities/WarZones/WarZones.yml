@@ -1,4 +1,4 @@
-# 1. Создание прототипа зоны
+﻿# 1. Создание прототипа зоны
 - type: stWarZone
   id: KordonVillage # Идентификатор зоны. Сохраняется в БД, поэтому не меняйте его.
   rewardPointsPerPeriod: 1 # Сколько очков будет начисляться за период
@@ -301,13 +301,13 @@
   #патроны
 #    - productEntity: 921PEGJBoxCink
 #      price: 70
-    - productEntity: 918PBMBoxCink
+    - productEntity: 918PSTBoxCink  # Zona14: 918PBMBoxCink<918PSTBoxCink
       price: 70
-    - productEntity: 919PBMBoxCink
+    - productEntity: 919PSTBoxCink  # Zona14: 919PBMBoxCink<919PSTBoxCink
       price: 70
-    - productEntity: 545PCBoxCink
+    - productEntity: 545BPBoxCink  # Zona14: 545PCBoxCink<545BPBoxCink
       price: 90
-    - productEntity: 556M855BoxCink
+    - productEntity: 545M995BoxCink  # Zona14: 556M855BoxCink<545M995BoxCink
       price: 90
     - productEntity: 739FMJBoxCink
       price: 110
@@ -319,17 +319,17 @@
 #      price: 125
     - productEntity: 754FMJBoxCink
       price: 125
-    - productEntity: 545BPBoxCink
+    - productEntity: 545BPBoxCink  # Zona14: 545PCBoxCink<545BPBoxCink
       price: 155
-    - productEntity: 556M856BoxCink
+    - productEntity: 545M995BoxCink  # Zona14: 556M855BoxCink<545M995BoxCink
       price: 155
-    - productEntity: 739PCBoxCink
+    - productEntity: 739PCBoxCink  # Zona14: 739BPBoxCink<739PCBoxCink
       price: 185
-    - productEntity: 751M61BoxCink
+    - productEntity: 751M61BoxCink  # Zona14: 751M993BoxCink<751M61BoxCink
       price: 185
-    - productEntity: 754PCBoxCink
+    - productEntity: 754PCBoxCink  # Zona14: 754BTBoxCink<754PCBoxCink
       price: 185
     - productEntity: 939SP6BoxCink
       price: 195
-#    - productEntity: 9217N42BoxCink
+#    - productEntity: 921BTGJBoxCink
 #      price: 195

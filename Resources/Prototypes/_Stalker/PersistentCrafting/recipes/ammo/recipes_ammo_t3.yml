@@ -1,8 +1,8 @@
-- type: persistentCraftRecipe
-  id: PersistentCraftAmmo_newrecipe545PCBoxCink
+﻿- type: persistentCraftRecipe
+  id: PersistentCraftAmmo_newrecipe545BPBoxCink
   name: persistent-craft-recipe-generic-name
   description: persistent-craft-recipe-generic-desc
-  displayProto: 545PCBox
+  displayProto: 545BPBox  # Zona14: 545PCBox<545BPBox
   branch: Ammo
   tier: 3
   requiredNode: PersistentCraftWeaponAmmoNodeT3
@@ -12,16 +12,16 @@
   - proto: STCraftAnomalyDust
     amount: 6
   results:
-  - proto: 545PCBox
+  - proto: 545BPBox  # Zona14: 545PCBox<545BPBox
     amount: 4
   category: ammo
   subCategory: tier-3
 
 - type: persistentCraftRecipe
-  id: PersistentCraftAmmo_newrecipe918PBMBoxCink
+  id: PersistentCraftAmmo_newrecipe918PSTBoxCink
   name: persistent-craft-recipe-generic-name
   description: persistent-craft-recipe-generic-desc
-  displayProto: 918PBMBox
+  displayProto: 918PSTBox  # Zona14: 918PBMBox<918PSTBox
   branch: Ammo
   tier: 3
   requiredNode: PersistentCraftWeaponAmmoNodeT3
@@ -31,16 +31,16 @@
   - proto: STCraftAnomalyDust
     amount: 6
   results:
-  - proto: 918PBMBox
+  - proto: 918PSTBox  # Zona14: 918PBMBox<918PSTBox
     amount: 4
   category: ammo
   subCategory: tier-3
 
 - type: persistentCraftRecipe
-  id: PersistentCraftAmmo_newrecipe919PBMBoxCink
+  id: PersistentCraftAmmo_newrecipe919PSTBoxCink
   name: persistent-craft-recipe-generic-name
   description: persistent-craft-recipe-generic-desc
-  displayProto: 919PBMBox
+  displayProto: 919PSTBox  # Zona14: 919PBMBox<919PSTBox
   branch: Ammo
   tier: 3
   requiredNode: PersistentCraftWeaponAmmoNodeT3
@@ -50,16 +50,16 @@
   - proto: STCraftAnomalyDust
     amount: 6
   results:
-  - proto: 919PBMBox
+  - proto: 919PSTBox  # Zona14: 919PBMBox<919PSTBox
     amount: 4
   category: ammo
   subCategory: tier-3
 
 - type: persistentCraftRecipe
-  id: PersistentCraftAmmo_newrecipe556M855BoxCink
+  id: PersistentCraftAmmo_newrecipe545M995BoxCink
   name: persistent-craft-recipe-generic-name
   description: persistent-craft-recipe-generic-desc
-  displayProto: 556M855Box
+  displayProto: 545M995Box  # Zona14: 556M855Box<545M995Box
   branch: Ammo
   tier: 3
   requiredNode: PersistentCraftWeaponAmmoNodeT3
@@ -69,16 +69,16 @@
   - proto: STCraftAnomalyDust
     amount: 6
   results:
-  - proto: 556M855Box
+  - proto: 545M995Box  # Zona14: 556M855Box<545M995Box
     amount: 4
   category: ammo
   subCategory: tier-3
 
 - type: persistentCraftRecipe
-  id: PersistentCraftAmmo_newrecipe725PSTBoxCink
+  id: PersistentCraftAmmo_newrecipe725PTBoxCink
   name: persistent-craft-recipe-generic-name
   description: persistent-craft-recipe-generic-desc
-  displayProto: 725PSTBox
+  displayProto: 725PTBox  # Zona14: 725PSTBox<725PTBox
   branch: Ammo
   tier: 3
   requiredNode: PersistentCraftWeaponAmmoNodeT3
@@ -88,7 +88,7 @@
   - proto: STCraftAnomalyDust
     amount: 6
   results:
-  - proto: 725PSTBox
+  - proto: 725PTBox  # Zona14: 725PSTBox<725PTBox
     amount: 4
   category: ammo
   subCategory: tier-3
@@ -211,7 +211,7 @@
   id: PersistentCraftAmmo_newrecipe939BPBoxCink
   name: persistent-craft-recipe-generic-name
   description: persistent-craft-recipe-generic-desc
-  displayProto: STBox9x39PAB9
+  displayProto: STBox9x39PAB9  # Zona14: STBox9x39SP6/STBox9x39AA<STBox9x39PAB9
   branch: Ammo
   tier: 3
   requiredNode: PersistentCraftWeaponAmmoNodeT3
@@ -221,7 +221,7 @@
   - proto: STCraftAnomalyDust
     amount: 6
   results:
-  - proto: STBox9x39PAB9
+  - proto: STBox9x39PAB9  # Zona14: STBox9x39SP6/STBox9x39AA<STBox9x39PAB9
     amount: 4
   category: ammo
   subCategory: tier-3

@@ -1,4 +1,4 @@
-- type: entity
+﻿- type: entity
   abstract: true
   parent: STBaseWeaponRifle
   id: STBaseWeaponRifleGalatz
@@ -19,7 +19,7 @@
   - type: Gun
     minAngle: 45
     maxAngle: 100 # Zona14: 120<100
-    fireRate: 4
+    fireRate: 4  # Zona14: 5<4
     angleIncrease: 1.0 # Zona14: 5.5<1.0
     angleDecay: 8 # Zona14: 30<8
     projectileSpeed: 75

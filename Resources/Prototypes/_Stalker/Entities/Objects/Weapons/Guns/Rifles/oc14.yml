@@ -1,4 +1,4 @@
-- type: entity
+﻿- type: entity
   abstract: true
   parent: STBaseWeaponRifle
   id: STBaseWeaponRifleOC14
@@ -94,7 +94,7 @@
       path: /Audio/_Stalker/Effects/Guns/scar.ogg
       params:
         volume: -2
-    fireRate: 7
+    fireRate: 7  # Zona14: 12<7
     minAngle: 48
     maxAngle: 90
     angleDecay: 8
@@ -131,7 +131,7 @@
           tags:
           - STCartridge939
   - type: Gun
-    fireRate: 7
+    fireRate: 7  # Zona14: 12<7
     soundGunshot:
       path: /Audio/_Stalker/Effects/Guns/n_groza_shot.ogg
       params:

@@ -1,4 +1,4 @@
-- type: entity
+﻿- type: entity
   parent: STBaseBlueprint
   id: ST7mmBuckshotBoxCinkBluePrint
   name: Рецепт ящик картечи 7мм
@@ -74,11 +74,11 @@
 
 - type: entity
   parent: STBaseBlueprint
-  id: ST545PCBoxCinkBlueprint
+  id: ST545BPBoxCinkBlueprint  # Zona14: ST545PCBoxCinkBlueprint<ST545BPBoxCinkBlueprint
   name: Рецепт ящик пуль 5,45x39 ПС  # PC = T3
   components:
     - type: STBlueprint
-      blueprint: newrecipe545PCBoxCink
+      blueprint: newrecipe545BPBoxCink  # Zona14: newrecipe545PCBoxCink<newrecipe545BPBoxCink
 
 - type: entity
   parent: STBaseBlueprint
@@ -90,27 +90,27 @@
 
 - type: entity
   parent: STBaseBlueprint
-  id: ST545BPBoxCinkBlueprint
+  id: ST545BPBoxCinkBlueprint  # Zona14: ST545PCBoxCinkBlueprint<ST545BPBoxCinkBlueprint
   name: Рецепт ящик пуль 5,45x39 БП # БП = T4
   components:
     - type: STBlueprint
-      blueprint: newrecipe545BPBoxCink
+      blueprint: newrecipe545BPBoxCink  # Zona14: newrecipe545PCBoxCink<newrecipe545BPBoxCink
 
 - type: entity
   parent: STBaseBlueprint
-  id: ST545BSBoxCinkBlueprint
+  id: ST545BPBoxCinkBlueprint  # Zona14: ST545PCBoxCinkBlueprint<ST545BPBoxCinkBlueprint
   name: Рецепт ящик пуль 5,45x39 БC # БC = T5
   components:
     - type: STBlueprint
-      blueprint: newrecipe545BSBoxCink
+      blueprint: newrecipe545BPBoxCink  # Zona14: newrecipe545PCBoxCink<newrecipe545BPBoxCink
 
 - type: entity
   parent: STBaseBlueprint
-  id: ST545NCBoxCinkBlueprint
+  id: ST545BPBoxCinkBlueprint  # Zona14: ST545PCBoxCinkBlueprint<ST545BPBoxCinkBlueprint
   name: Рецепт ящик пуль 5,45x39 Игольники
   components:
     - type: STBlueprint
-      blueprint: newrecipe545NCBoxCink
+      blueprint: newrecipe545BPBoxCink  # Zona14: newrecipe545PCBoxCink<newrecipe545BPBoxCink
 
 ################################################################################ 9x18
 
@@ -124,11 +124,11 @@
 
 - type: entity
   parent: STBaseBlueprint
-  id: ST918PSTBoxCinkBlueprint
+  id: ST918PSTBoxCinkBlueprint  # Zona14: ST918PBMBoxCinkBlueprint<ST918PSTBoxCinkBlueprint
   name: Рецепт ящик пуль 9х18 ПСТ гж
   components:
     - type: STBlueprint
-      blueprint: newrecipe918PSTBoxCink
+      blueprint: newrecipe918PSTBoxCink  # Zona14: newrecipe918PBMBoxCink<newrecipe918PSTBoxCink
 
 - type: entity
   parent: STBaseBlueprint
@@ -140,11 +140,11 @@
 
 - type: entity
   parent: STBaseBlueprint
-  id: ST918PBMBoxCinkBlueprint
+  id: ST918PSTBoxCinkBlueprint  # Zona14: ST918PBMBoxCinkBlueprint<ST918PSTBoxCinkBlueprint
   name: Рецепт ящик пуль 9х18 ПБМ гж
   components:
     - type: STBlueprint
-      blueprint: newrecipe918PBMBoxCink
+      blueprint: newrecipe918PSTBoxCink  # Zona14: newrecipe918PBMBoxCink<newrecipe918PSTBoxCink
 
 ############################################################################# 9x19
 
@@ -158,11 +158,11 @@
 
 - type: entity
   parent: STBaseBlueprint
-  id: ST919PSTBoxCinkBlueprint
+  id: ST919PSTBoxCinkBlueprint  # Zona14: ST919PBMBoxCinkBlueprint<ST919PSTBoxCinkBlueprint
   name: Рецепт ящик пуль 9х19 ПСТ гж
   components:
     - type: STBlueprint
-      blueprint: newrecipe919PSTBoxCink
+      blueprint: newrecipe919PSTBoxCink  # Zona14: newrecipe919PBMBoxCink<newrecipe919PSTBoxCink
 
 - type: entity
   parent: STBaseBlueprint
@@ -174,11 +174,11 @@
 
 - type: entity
   parent: STBaseBlueprint
-  id: ST919PBMBoxCinkBlueprint
+  id: ST919PSTBoxCinkBlueprint  # Zona14: ST919PBMBoxCinkBlueprint<ST919PSTBoxCinkBlueprint
   name: Рецепт ящик пуль 9х19 ПБМ гж
   components:
     - type: STBlueprint
-      blueprint: newrecipe919PBMBoxCink
+      blueprint: newrecipe919PSTBoxCink  # Zona14: newrecipe919PBMBoxCink<newrecipe919PSTBoxCink
 
 ################################################## 7,62x54
 
@@ -192,11 +192,11 @@
 
 - type: entity
   parent: STBaseBlueprint
-  id: ST754PCBoxCinkBlueprint
+  id: ST754PCBoxCinkBlueprint  # Zona14: ST754BTBoxCinkBlueprint<ST754PCBoxCinkBlueprint
   name: Рецепт ящик пуль 7,62x54 ПС
   components:
     - type: STBlueprint
-      blueprint: newrecipe754PCBoxCink
+      blueprint: newrecipe754PCBoxCink  # Zona14: newrecipe754BTBoxCink<newrecipe754PCBoxCink
 
 - type: entity
   parent: STBaseBlueprint
@@ -208,19 +208,19 @@
 
 - type: entity
   parent: STBaseBlueprint
-  id: ST754BTBoxCinkBlueprint
+  id: ST754PCBoxCinkBlueprint  # Zona14: ST754BTBoxCinkBlueprint<ST754PCBoxCinkBlueprint
   name: Рецепт ящик пуль 7,62x54 БТ
   components:
     - type: STBlueprint
-      blueprint: newrecipe754BTBoxCink
+      blueprint: newrecipe754PCBoxCink  # Zona14: newrecipe754BTBoxCink<newrecipe754PCBoxCink
 
 - type: entity
   parent: STBaseBlueprint
-  id: ST754SNBBoxCinkBlueprint
+  id: ST754PCBoxCinkBlueprint  # Zona14: ST754BTBoxCinkBlueprint<ST754PCBoxCinkBlueprint
   name: Рецепт ящик пуль 7,62x54 СНБ
   components:
     - type: STBlueprint
-      blueprint: newrecipe754SNBBoxCink
+      blueprint: newrecipe754PCBoxCink  # Zona14: newrecipe754BTBoxCink<newrecipe754PCBoxCink
 
 ########### 5,56
 
@@ -234,11 +234,11 @@
 
 - type: entity
   parent: STBaseBlueprint
-  id: ST556M855BoxCinkBlueprint
+  id: ST545M995BoxCinkBlueprint  # Zona14: ST556M855BoxCinkBlueprint<ST545M995BoxCinkBlueprint
   name: Рецепт ящик пуль 5,56 M855
   components:
     - type: STBlueprint
-      blueprint: newrecipe556M855BoxCink
+      blueprint: newrecipe545M995BoxCink  # Zona14: newrecipe556M855BoxCink<newrecipe545M995BoxCink
 
 - type: entity
   parent: STBaseBlueprint
@@ -250,27 +250,27 @@
 
 - type: entity
   parent: STBaseBlueprint
-  id: ST556M856BoxCinkBlueprint
+  id: ST545M995BoxCinkBlueprint  # Zona14: ST556M855BoxCinkBlueprint<ST545M995BoxCinkBlueprint
   name: Рецепт ящик пуль 5,56 M856
   components:
     - type: STBlueprint
-      blueprint: newrecipe556M856BoxCink
+      blueprint: newrecipe545M995BoxCink  # Zona14: newrecipe556M855BoxCink<newrecipe545M995BoxCink
 
 - type: entity
   parent: STBaseBlueprint
-  id: ST545M995BoxCinkBlueprint
+  id: ST545M995BoxCinkBlueprint  # Zona14: ST556M855BoxCinkBlueprint<ST545M995BoxCinkBlueprint
   name: Рецепт ящик пуль 5,56 M995
   components:
     - type: STBlueprint
-      blueprint: newrecipe545M995BoxCink
+      blueprint: newrecipe545M995BoxCink  # Zona14: newrecipe556M855BoxCink<newrecipe545M995BoxCink
 
 - type: entity
   parent: STBaseBlueprint
-  id: ST556SSAAPBoxCinkBlueprint
+  id: ST545M995BoxCinkBlueprint  # Zona14: ST556M855BoxCinkBlueprint<ST545M995BoxCinkBlueprint
   name: Рецепт ящик пуль 5,56 SSA AP
   components:
     - type: STBlueprint
-      blueprint: newrecipe556SSAAPBoxCink
+      blueprint: newrecipe545M995BoxCink  # Zona14: newrecipe556M855BoxCink<newrecipe545M995BoxCink
 
 ################## 7,62x25
 
@@ -284,7 +284,7 @@
 
 - type: entity
   parent: STBaseBlueprint
-  id: ST725PTBoxCinkBlueprint
+  id: ST725PTBoxCinkBlueprint  # Zona14: ST725PSTBoxCinkBlueprint<ST725PTBoxCinkBlueprint
   name: Рецепт ящик пуль 7,62x25 ПТ гж
   components:
     - type: STBlueprint
@@ -300,11 +300,11 @@
 
 - type: entity
   parent: STBaseBlueprint
-  id: ST725PSTBoxCinkBlueprint
+  id: ST725PTBoxCinkBlueprint  # Zona14: ST725PSTBoxCinkBlueprint<ST725PTBoxCinkBlueprint
   name: Рецепт ящик пуль 7,62x25 Пст гж
   components:
     - type: STBlueprint
-      blueprint: newrecipe725PSTBoxCink
+      blueprint: newrecipe725PTBoxCink
 
 ####################### 7,62x39
 
@@ -318,11 +318,11 @@
 
 - type: entity
   parent: STBaseBlueprint
-  id: ST739PCBoxCinkBlueprint
+  id: ST739PCBoxCinkBlueprint  # Zona14: ST739BPBoxCinkBlueprint<ST739PCBoxCinkBlueprint
   name: Рецепт ящик пуль 7,62x39 ПС
   components:
     - type: STBlueprint
-      blueprint: newrecipe739PCBoxCink
+      blueprint: newrecipe739PCBoxCink  # Zona14: newrecipe739BPBoxCink<newrecipe739PCBoxCink
 
 - type: entity
   parent: STBaseBlueprint
@@ -334,11 +334,11 @@
 
 - type: entity
   parent: STBaseBlueprint
-  id: ST739BPBoxCinkBlueprint
+  id: ST739PCBoxCinkBlueprint  # Zona14: ST739BPBoxCinkBlueprint<ST739PCBoxCinkBlueprint
   name: Рецепт ящик пуль 7,62x39 БП
   components:
     - type: STBlueprint
-      blueprint: newrecipe739BPBoxCink
+      blueprint: newrecipe739PCBoxCink  # Zona14: newrecipe739BPBoxCink<newrecipe739PCBoxCink
 
 ########################## 7,62x51
 
@@ -360,25 +360,25 @@
 
 - type: entity
   parent: STBaseBlueprint
-  id: ST751M61BoxCinkBlueprint
+  id: ST751M61BoxCinkBlueprint  # Zona14: ST751M993BoxCinkBlueprint<ST751M61BoxCinkBlueprint
   name: Рецепт ящик пуль 7,62x51 M61
   components:
     - type: STBlueprint
-      blueprint: newrecipe751M61BoxCink
+      blueprint: newrecipe751M61BoxCink  # Zona14: newrecipe751M993BoxCink<newrecipe751M61BoxCink
 
 - type: entity
   parent: STBaseBlueprint
-  id: ST751M993BoxCinkBlueprint
+  id: ST751M61BoxCinkBlueprint  # Zona14: ST751M993BoxCinkBlueprint<ST751M61BoxCinkBlueprint
   name: Рецепт ящик пуль 7,62x51 M993
   components:
     - type: STBlueprint
-      blueprint: newrecipe751M993BoxCink
+      blueprint: newrecipe751M61BoxCink  # Zona14: newrecipe751M993BoxCink<newrecipe751M61BoxCink
 
 ############################## .45 ACP
 
 - type: entity
   parent: STBaseBlueprint
-  id: ST45ACPLFMJBoxCinkBlueprint
+  id: ST45ACPLFMJBoxCinkBlueprint  # Zona14: ST45ACPMFMJBoxCinkBlueprint<ST45ACPLFMJBoxCinkBlueprint
   name: Рецепт ящик пуль .45 ACP Lasermatch FMJ
   components:
     - type: STBlueprint
@@ -386,23 +386,23 @@
 
 - type: entity
   parent: STBaseBlueprint
-  id: ST45ACPMFMJBoxCinkBlueprint
+  id: ST45ACPLFMJBoxCinkBlueprint  # Zona14: ST45ACPMFMJBoxCinkBlueprint<ST45ACPLFMJBoxCinkBlueprint
   name: Рецепт ящик пуль .45 ACP Match FMJ
   components:
     - type: STBlueprint
-      blueprint: newrecipe45ACPMFMJBoxCink
+      blueprint: newrecipe45ACPLFMJBoxCink
 
 - type: entity
   parent: STBaseBlueprint
-  id: ST45ACPHydroshockBoxCinkBlueprint
+  id: ST45ACPRIPBoxCinkBlueprint  # Zona14: ST45ACPHydroshockBoxCinkBlueprint<ST45ACPRIPBoxCinkBlueprint
   name: Рецепт ящик пуль .45 ACP Hydro-shock
   components:
     - type: STBlueprint
-      blueprint: newrecipe45ACPHydroshockBoxCink
+      blueprint: newrecipe45ACPRIPBoxCink
 
 - type: entity
   parent: STBaseBlueprint
-  id: ST45ACPRIPBoxCinkBlueprint
+  id: ST45ACPRIPBoxCinkBlueprint  # Zona14: ST45ACPHydroshockBoxCinkBlueprint<ST45ACPRIPBoxCinkBlueprint
   name: Рецепт ящик пуль .45 ACP RIP
   components:
     - type: STBlueprint

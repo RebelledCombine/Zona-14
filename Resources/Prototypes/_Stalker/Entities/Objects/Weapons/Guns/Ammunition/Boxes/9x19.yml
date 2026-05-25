@@ -1,4 +1,4 @@
-- type: entity
+﻿- type: entity
   parent: BaseAmmoBoxStalker
   id: 919PSOGJBox
   name: Коробка патронов (9х19) ПСО гж
@@ -27,7 +27,7 @@
 - type: entity
   parent: 919PSOGJBox
   id: 919PSTBox
-  name: Коробка патронов (9х19) ПСТ AP гж
+  name: Коробка патронов (9х19) ПСТ гж
   description: Для МП-5 Гадюка, в коробке 30 штук. Обеспечивает пробитие только 2 класса брони.
   suffix: Stalker
   components:
@@ -81,7 +81,7 @@
 - type: entity
   parent: 919PSOGJBoxCink
   id: 919PSTBoxCink
-  name: ящик патронов (9х19) ПСТ AP гж
+  name: Коробка патронов (9х19) ПБМ гж
   description: Для МП-5 Гадюка, в коробке 300 штук. Обеспечивает пробитие только 2 класса брони.
   suffix: Stalker
   components:

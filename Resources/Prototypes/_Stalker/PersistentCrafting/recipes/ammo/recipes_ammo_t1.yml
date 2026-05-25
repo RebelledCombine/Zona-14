@@ -1,4 +1,4 @@
-- type: persistentCraftRecipe
+﻿- type: persistentCraftRecipe
   id: PersistentCraftAmmo_newrecipe7mmBuckshotBoxCink
   name: persistent-craft-recipe-generic-name
   description: persistent-craft-recipe-generic-desc
@@ -154,7 +154,7 @@
   id: PersistentCraftAmmo_newrecipe45ACPLFMJBoxCink
   name: persistent-craft-recipe-generic-name
   description: persistent-craft-recipe-generic-desc
-  displayProto: 45ACPLFMJBox
+  displayProto: 45ACPLFMJBox  # Zona14: 45ACPMFMJBox<45ACPLFMJBox
   branch: Ammo
   tier: 1
   requiredNode: PersistentCraftWeaponAmmoNodeT1
@@ -164,16 +164,16 @@
   - proto: STCraftAnomalyDust
     amount: 1
   results:
-  - proto: 45ACPLFMJBox
+  - proto: 45ACPLFMJBox  # Zona14: 45ACPMFMJBox<45ACPLFMJBox
     amount: 4
   category: ammo
   subCategory: tier-1
 
 - type: persistentCraftRecipe
-  id: PersistentCraftAmmo_newrecipe45ACPHydroshockBoxCink
+  id: PersistentCraftAmmo_newrecipe45ACPRIPBoxCink
   name: persistent-craft-recipe-generic-name
   description: persistent-craft-recipe-generic-desc
-  displayProto: 45ACPHydroshockBox
+  displayProto: 45ACPRIPBox  # Zona14: 45ACPHydroshockBox<45ACPRIPBox
   branch: Ammo
   tier: 1
   requiredNode: PersistentCraftWeaponAmmoNodeT1
@@ -183,7 +183,7 @@
   - proto: STCraftAnomalyDust
     amount: 1
   results:
-  - proto: 45ACPHydroshockBox
+  - proto: 45ACPRIPBox  # Zona14: 45ACPHydroshockBox<45ACPRIPBox
     amount: 4
   category: ammo
   subCategory: tier-1
@@ -325,7 +325,7 @@
   id: PersistentCraftAmmo_newrecipe45ACPRIPBoxCink
   name: persistent-craft-recipe-generic-name
   description: persistent-craft-recipe-generic-desc
-  displayProto: 45ACPRIPBox
+  displayProto: 45ACPRIPBox  # Zona14: 45ACPHydroshockBox<45ACPRIPBox
   branch: Ammo
   tier: 1
   requiredNode: PersistentCraftWeaponAmmoNodeT1
@@ -335,7 +335,7 @@
   - proto: STCraftAnomalyDust
     amount: 1
   results:
-  - proto: 45ACPRIPBox
+  - proto: 45ACPRIPBox  # Zona14: 45ACPHydroshockBox<45ACPRIPBox
     amount: 4
   category: ammo
   subCategory: tier-1

@@ -1,4 +1,4 @@
-### Военные
+﻿### Военные
 
 - type: entity
   parent: VendingMachine
@@ -48,12 +48,12 @@
     BoxZiptie: 10
     CraftBag: 10
     545FMJBox: 50
-    545PCBox: 5
+    545BPBox: 5  # Zona14: 545PCBox<545BPBox
     545HPBox: 7
-    # 545BPBox: 3 Убрано всё т4 по просьбе вииса
+    # 545BPBox: 3 Убрано всё т4 по просьбе вииса  # Zona14: 545PCBox<545BPBox
     739FMJBox: 5
     754FMJBox: 3
-    919PBMBox: 10
+    919PSTBox: 10  # Zona14: 919PBMBox<919PSTBox
     PillDexalin: 50
     # SelfSteampack: 10
     MedkitAI2: 25
@@ -168,8 +168,8 @@
     FlashlightSeclite: 50
     PowerCellHyper: 100
     HandheldGPSBasic: 50
-    918PBMBox: 30
-    545BPBox: 10
+    918PSTBox: 30  # Zona14: 918PBMBox<918PSTBox
+    545BPBox: 10  # Zona14: 545PCBox<545BPBox
     TearGasGrenadeStalker: 5
     SecurityWhistle: 10
     hunterLicense: 5
@@ -237,7 +237,7 @@
     7mmBuckshotBox: 20
     556Mag30: 30
     556FMJBox: 50
-    556M855Box: 10
+    545M995Box: 10  # Zona14: 556M855Box<545M995Box
 
 - type: entity
   parent: BaseVendingMachineRestock
@@ -577,7 +577,7 @@
     ClothingHeadHelmetInfantrySera: 3
     STClothingOuterArmorRassvetSera: 3
     STGauze: 6
-    545PCBox: 9
+    545BPBox: 9  # Zona14: 545PCBox<545BPBox
     545HPBox: 9
 
 

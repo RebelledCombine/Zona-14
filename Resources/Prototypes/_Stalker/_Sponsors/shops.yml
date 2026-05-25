@@ -1,4 +1,4 @@
-- type: personalShop
+﻿- type: personalShop
   id: PersonalLordVladimerShop
   username: LordVladimer
   categories:
@@ -52,7 +52,7 @@
         13x108PCBox: 5000
         STBaseWeaponRifleAKMPSO1M: 4500
         739FMJBox: 2200
-        739PCBox: 3700
+        739PCBox: 3700  # Zona14: 739BPBox<739PCBox
         739HPBox: 1500
         739Mag30: 500
 
@@ -268,8 +268,8 @@
     items:
       STWeaponSniperVSK94: 4500
       Base939MagVSK: 300
-      STBox9x39PAB9: 2300
-      STBox9x39SP6: 4300
+      STBox9x39PAB9: 2300  # Zona14: STBox9x39SP6/STBox9x39AA<STBox9x39PAB9
+      STBox9x39PAB9: 4300  # Zona14: STBox9x39SP6/STBox9x39AA<STBox9x39PAB9
       STClothingOuterArmorGonchiy: 8200
       STBaseWeaponShotgunVepr12De21: 6200
       Base1270Mag: 300
@@ -302,7 +302,7 @@
     items:
       STWeaponRifleAK308: 4500
       751M80Box: 2200
-      751M61Box: 3700
+      751M61Box: 3700  # Zona14: 751M993Box<751M61Box
       751Mag30: 500
       STClothingHandsGlovesKrava: 100
       ClothingEyesProtectionGlassesKrava: 100
@@ -339,8 +339,8 @@
       STWeaponRifleLR300White: 15000
       556Mag30: 400
       556WarmagBox: 350
-      556M855Box: 1800
-      556M856Box: 3800
+      545M995Box: 1800  # Zona14: 556M855Box<545M995Box
+      545M995Box: 3800  # Zona14: 556M855Box<545M995Box
       ClothingOuterCoatSevaWhite: 1300
       ClothingOuterCoatKevlarBlack: 1300
 
@@ -353,5 +353,5 @@
       STWeaponRifleRPK74Vedma: 5000
       Base545MagRPK: 300
       545HPBox: 300
-      545PCBox: 1800
-      545BPBox: 2700
+      545BPBox: 1800  # Zona14: 545PCBox<545BPBox
+      545BPBox: 2700  # Zona14: 545PCBox<545BPBox

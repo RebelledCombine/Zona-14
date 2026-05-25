@@ -1,4 +1,4 @@
-- type: entity
+﻿- type: entity
   name: STBasePistol
   parent: STBaseWeaponGun
   id: STBaseWeaponPistol
@@ -40,7 +40,7 @@
     maxAngle: 25 # Zona14: added
     angleIncrease: 2.0 # Zona14: added
     angleDecay: 8 # Zona14: added
-    fireRate: 4
+    fireRate: 4  # Zona14: 6<4
     selectedMode: SemiAuto
     availableModes:
       - SemiAuto

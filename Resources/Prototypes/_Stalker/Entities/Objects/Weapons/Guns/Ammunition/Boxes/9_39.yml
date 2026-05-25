@@ -1,4 +1,4 @@
-- type: entity
+﻿- type: entity
   parent:
   - BaseAmmoBoxStalker
   - STBaseEntity
@@ -64,7 +64,7 @@
 - type: entity
   parent: STBaseBox9x39
   id: STBox9x39PAB9
-  name: коробка патронов 9x39 AP ПАБ-9
+  name: коробка патронов 9x39 СП-6УЧ
   components:
   - type: MagazineVisuals
     magState: pab9-open

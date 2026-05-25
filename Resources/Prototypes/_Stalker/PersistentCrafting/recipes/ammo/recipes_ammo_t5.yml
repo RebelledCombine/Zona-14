@@ -1,8 +1,8 @@
 ﻿# - type: persistentCraftRecipe
-#   id: PersistentCraftAmmo_newrecipe545BSBoxCink
+#   id: PersistentCraftAmmo_newrecipe545BPBoxCink
 #   name: persistent-craft-recipe-generic-name
 #   description: persistent-craft-recipe-generic-desc
-#   displayProto: 545BSBox
+#   displayProto: 545BPBox  # Zona14: 545PCBox<545BPBox
 #   branch: Ammo
 #   tier: 5
 #   requiredNode: PersistentCraftWeaponAmmoNodeT5
@@ -12,16 +12,16 @@
 #   - proto: STCraftAnomalyDust
 #     amount: 30
 #   results:
-#   - proto: 545BSBox
+#   - proto: 545BPBox  # Zona14: 545PCBox<545BPBox
 #     amount: 4
 #   category: ammo
 #   subCategory: tier-5
 
 # - type: persistentCraftRecipe
-#   id: PersistentCraftAmmo_newrecipe545NCBoxCink
+#   id: PersistentCraftAmmo_newrecipe545BPBoxCink
 #   name: persistent-craft-recipe-generic-name
 #   description: persistent-craft-recipe-generic-desc
-#   displayProto: 545NCBox
+#   displayProto: 545BPBox  # Zona14: 545PCBox<545BPBox
 #   branch: Ammo
 #   tier: 5
 #   requiredNode: PersistentCraftWeaponAmmoNodeT5
@@ -31,7 +31,7 @@
 #   - proto: STCraftAnomalyDust
 #     amount: 30
 #   results:
-#   - proto: 545NCBox
+#   - proto: 545BPBox  # Zona14: 545PCBox<545BPBox
 #     amount: 4
 #   category: ammo
 #   subCategory: tier-5
@@ -40,7 +40,7 @@
 #   id: PersistentCraftAmmo_newrecipe545M995BoxCink
 #   name: persistent-craft-recipe-generic-name
 #   description: persistent-craft-recipe-generic-desc
-#   displayProto: 545M995Box
+#   displayProto: 545M995Box  # Zona14: 556M855Box<545M995Box
 #   branch: Ammo
 #   tier: 5
 #   requiredNode: PersistentCraftWeaponAmmoNodeT5
@@ -50,16 +50,16 @@
 #   - proto: STCraftAnomalyDust
 #     amount: 30
 #   results:
-#   - proto: 545M995Box
+#   - proto: 545M995Box  # Zona14: 556M855Box<545M995Box
 #     amount: 4
 #   category: ammo
 #   subCategory: tier-5
 
 # - type: persistentCraftRecipe
-#   id: PersistentCraftAmmo_newrecipe556SSAAPBoxCink
+#   id: PersistentCraftAmmo_newrecipe545M995BoxCink
 #   name: persistent-craft-recipe-generic-name
 #   description: persistent-craft-recipe-generic-desc
-#   displayProto: 556SSAAPBox
+#   displayProto: 545M995Box  # Zona14: 556M855Box<545M995Box
 #   branch: Ammo
 #   tier: 5
 #   requiredNode: PersistentCraftWeaponAmmoNodeT5
@@ -69,16 +69,16 @@
 #   - proto: STCraftAnomalyDust
 #     amount: 30
 #   results:
-#   - proto: 556SSAAPBox
+#   - proto: 545M995Box  # Zona14: 556M855Box<545M995Box
 #     amount: 4
 #   category: ammo
 #   subCategory: tier-5
 
 # - type: persistentCraftRecipe
-#   id: PersistentCraftAmmo_newrecipe739BPBoxCink
+#   id: PersistentCraftAmmo_newrecipe739PCBoxCink
 #   name: persistent-craft-recipe-generic-name
 #   description: persistent-craft-recipe-generic-desc
-#   displayProto: 739BPBox
+#   displayProto: 739PCBox  # Zona14: 739BPBox<739PCBox
 #   branch: Ammo
 #   tier: 5
 #   requiredNode: PersistentCraftWeaponAmmoNodeT5
@@ -88,16 +88,16 @@
 #   - proto: STCraftAnomalyDust
 #     amount: 30
 #   results:
-#   - proto: 739BPBox
+#   - proto: 739PCBox  # Zona14: 739BPBox<739PCBox
 #     amount: 4
 #   category: ammo
 #   subCategory: tier-5
 
 # - type: persistentCraftRecipe
-#   id: PersistentCraftAmmo_newrecipe751M993BoxCink
+#   id: PersistentCraftAmmo_newrecipe751M61BoxCink
 #   name: persistent-craft-recipe-generic-name
 #   description: persistent-craft-recipe-generic-desc
-#   displayProto: 751M993Box
+#   displayProto: 751M61Box  # Zona14: 751M993Box<751M61Box
 #   branch: Ammo
 #   tier: 5
 #   requiredNode: PersistentCraftWeaponAmmoNodeT5
@@ -107,16 +107,16 @@
 #   - proto: STCraftAnomalyDust
 #     amount: 30
 #   results:
-#   - proto: 751M993Box
+#   - proto: 751M61Box  # Zona14: 751M993Box<751M61Box
 #     amount: 4
 #   category: ammo
 #   subCategory: tier-5
 
 # - type: persistentCraftRecipe
-#   id: PersistentCraftAmmo_newrecipe754BTBoxCink
+#   id: PersistentCraftAmmo_newrecipe754PCBoxCink
 #   name: persistent-craft-recipe-generic-name
 #   description: persistent-craft-recipe-generic-desc
-#   displayProto: 754BTBox
+#   displayProto: 754PCBox  # Zona14: 754BTBox<754PCBox
 #   branch: Ammo
 #   tier: 5
 #   requiredNode: PersistentCraftWeaponAmmoNodeT5
@@ -126,16 +126,16 @@
 #   - proto: STCraftAnomalyDust
 #     amount: 30
 #   results:
-#   - proto: 754BTBox
+#   - proto: 754PCBox  # Zona14: 754BTBox<754PCBox
 #     amount: 4
 #   category: ammo
 #   subCategory: tier-5
 
 # - type: persistentCraftRecipe
-#   id: PersistentCraftAmmo_newrecipe754SNBBoxCink
+#   id: PersistentCraftAmmo_newrecipe754PCBoxCink
 #   name: persistent-craft-recipe-generic-name
 #   description: persistent-craft-recipe-generic-desc
-#   displayProto: 754SNBBox
+#   displayProto: 754PCBox  # Zona14: 754BTBox<754PCBox
 #   branch: Ammo
 #   tier: 5
 #   requiredNode: PersistentCraftWeaponAmmoNodeT5
@@ -145,7 +145,7 @@
 #   - proto: STCraftAnomalyDust
 #     amount: 30
 #   results:
-#   - proto: 754SNBBox
+#   - proto: 754PCBox  # Zona14: 754BTBox<754PCBox
 #     amount: 4
 #   category: ammo
 #   subCategory: tier-5

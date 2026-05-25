@@ -1,4 +1,4 @@
-- type: entity
+﻿- type: entity
   parent: BaseAmmoBoxStalker
   id: 754FMJBox
   name: коробка патронов (7,62x54) FMJ
@@ -23,7 +23,7 @@
 - type: entity
   parent: BaseAmmoBoxStalker
   id: 754PCBox
-  name: коробка патронов (7,62x54) AP ПС
+  name: коробка патронов (7,62x54) ПС
   description: Для винтовки Мосина, в коробке 10 штук. Обеспечивает пробитие 4 класса брони.
   suffix: Stalker
   components:
@@ -83,7 +83,7 @@
 - type: entity
   parent: BaseAmmoCinkBoxStalker
   id: 754PCBoxCink
-  name: ящик патронов (7,62x54) AP ПС
+  name: коробка патронов (7,62x54) БТ
   description: Для винтовки Мосина, в коробке 100 штук. Обеспечивает пробитие 4 класса брони.
   suffix: Stalker
   components:

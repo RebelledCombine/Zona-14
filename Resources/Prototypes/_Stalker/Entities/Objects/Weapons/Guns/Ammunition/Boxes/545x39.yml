@@ -1,4 +1,4 @@
-- type: entity
+﻿- type: entity
   parent: BaseAmmoBoxStalker
   id: 545FMJBox
   name: Коробка патронов (5,45x39) FMJ
@@ -40,7 +40,7 @@
 - type: entity
   parent: 545FMJBox
   id: 545BPBox
-  name: Коробка патронов (5,45x39) AP
+  name: Коробка патронов (5,45x39) ПС
   description: Для автоматов Калашникова разных моделей, в коробке 30 штук. Пробивает 4 класс брони.
   suffix: Stalker
   components:
@@ -78,7 +78,7 @@
   parent: 545FMJBoxCink
   id: 545HPBoxCink
   name: ящик патронов (5,45x39) HP
-  description: Для автоматов Калашникова разных моделей, в коробке 300 штук. Ничего не пробьёт, но наносит ужасный урон, в том числе заброневой.
+  description: Для автоматов Калашникова разных моделей, в коробке 30 штук. Усиленная пуля. Пробивает 3 класс брони.
   suffix: Stalker
   components:
   - type: BallisticAmmoProvider
@@ -93,8 +93,8 @@
 - type: entity
   parent: 545FMJBoxCink
   id: 545BPBoxCink
-  name: ящик патронов (5,45x39) AP
-  description: Для автоматов Калашникова разных моделей, в коробке 300 штук. Пробивает 4 класс брони.
+  name: Коробка патронов (5,45x39) БП
+  description: Коробка патронов (5,45x39) БC
   suffix: Stalker
   components:
   - type: BallisticAmmoProvider

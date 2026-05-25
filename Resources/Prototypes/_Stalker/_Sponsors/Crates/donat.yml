@@ -1,4 +1,4 @@
-- type: entity
+﻿- type: entity
   parent: BaseItem
   id: DonatestandartCrate
   name: начальный набор
@@ -175,7 +175,7 @@
         - id: 8mmBuckshotBox
         - id: 8mmBuckshotBox
         - id: 8mmBuckshotBox
-        - id: 918PBMBoxCink
+        - id: 918PSTBoxCink  # Zona14: 918PBMBoxCink<918PSTBoxCink
         - id: BaseAPSMag
         - id: BaseAPSMag
         - id: BaseAPSMag

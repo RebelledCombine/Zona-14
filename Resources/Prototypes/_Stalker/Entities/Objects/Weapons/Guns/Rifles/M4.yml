@@ -1,4 +1,4 @@
-- type: entity
+﻿- type: entity
   abstract: true
   parent: STBaseWeaponRifle
   id: STBaseWeaponRifleM4
@@ -146,7 +146,7 @@
       path: /Audio/_Stalker/Effects/Guns/t_lr300_shot.ogg
     minAngle: 48 # Zona14: 45<48
     maxAngle: 90 # Zona14: 85<90
-    fireRate: 7.5
+    fireRate: 7.5  # Zona14: 13<7.5
     angleIncrease: 2.0
     angleDecay: 8
     projectileSpeed: 60

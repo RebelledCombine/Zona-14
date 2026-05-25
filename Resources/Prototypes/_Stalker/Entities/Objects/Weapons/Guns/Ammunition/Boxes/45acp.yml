@@ -1,4 +1,4 @@
-- type: entity
+﻿- type: entity
   parent: BaseAmmoBoxStalker
   id: 45ACPLFMJBox
   name: Коробка патронов (.45 ACP) Lasermatch FMJ
@@ -64,7 +64,7 @@
   parent: BaseAmmoCinkBoxStalker
   id: 45ACPLFMJBoxCink
   name: ящик патронов (.45 ACP) Lasermatch FMJ
-  description: Для некоторых пистолетов и револьверов, в коробке 300 штук. Обеспечивает пробитие только 1 класса брони.
+  description: Коробка патронов (.45 ACP) Match FMJ
   suffix: Stalker
   components:
     - type: BallisticAmmoProvider
@@ -104,7 +104,7 @@
   parent: 45ACPLFMJBoxCink
   id: 45ACPAPBoxCink
   name: ящик патронов (.45 ACP) AP
-  description: Для некоторых пистолетов и револьверов, в коробке 300 штук. Обеспечивает пробитие 3 класса брони.
+  description: Для некоторых пистолетов и револьверов, в коробке 30 штук. Обеспечивает пробитие 2 класса брони.
   suffix: Stalker
   components:
     - type: BallisticAmmoProvider

@@ -1,4 +1,4 @@
-- type: entity
+﻿- type: entity
   parent: STBaseCache
   id: STCacheStorageProect
   suffix: Project
@@ -94,9 +94,9 @@
         - id: ClothingMaskNeckFacemask
         - id: ClothingShoesBootsCombat
         - id: STCombatKnife
-        - id: 45ACPMFMJBox
-        - id: 45ACPMFMJBox
-        - id: 45ACPMFMJBox
+        - id: 45ACPLFMJBox  # Zona14: 45ACPMFMJBox<45ACPLFMJBox
+        - id: 45ACPLFMJBox  # Zona14: 45ACPMFMJBox<45ACPLFMJBox
+        - id: 45ACPLFMJBox  # Zona14: 45ACPMFMJBox<45ACPLFMJBox
         - id: STSpeedLoader45ACPEmpty
         - id: STSpeedLoader45ACPEmpty
         - id: STBoltBagFilled
@@ -153,14 +153,14 @@
         - id: BaseMP5Mag
         - id: BaseMP5Mag
         - id: Binocularus1
-        - id: 919PBMBox
-        - id: 919PBMBox
-        - id: 919PBMBox
-        - id: 919PBMBox
-        - id: 919PBMBox
-        - id: 919PBMBox
-        - id: 919PBMBox
-        - id: 919PBMBox
+        - id: 919PSTBox  # Zona14: 919PBMBox<919PSTBox
+        - id: 919PSTBox  # Zona14: 919PBMBox<919PSTBox
+        - id: 919PSTBox  # Zona14: 919PBMBox<919PSTBox
+        - id: 919PSTBox  # Zona14: 919PBMBox<919PSTBox
+        - id: 919PSTBox  # Zona14: 919PBMBox<919PSTBox
+        - id: 919PSTBox  # Zona14: 919PBMBox<919PSTBox
+        - id: 919PSTBox  # Zona14: 919PBMBox<919PSTBox
+        - id: 919PSTBox  # Zona14: 919PBMBox<919PSTBox
         - id: GeigerCounter
         - id: STSkinsKitProject
       sound:
@@ -213,15 +213,15 @@
     - id: 556Mag30
     - id: 556Mag30
     - id: 556Mag30
-    - id: 556M855Box
-    - id: 556M855Box
-    - id: 556M855Box
-    - id: 556M855Box
-    - id: 556M855Box
-    - id: 556M855Box
-    - id: 556M855Box
-    - id: 556M856Box
-    - id: 556M856Box
+    - id: 545M995Box  # Zona14: 556M855Box<545M995Box
+    - id: 545M995Box  # Zona14: 556M855Box<545M995Box
+    - id: 545M995Box  # Zona14: 556M855Box<545M995Box
+    - id: 545M995Box  # Zona14: 556M855Box<545M995Box
+    - id: 545M995Box  # Zona14: 556M855Box<545M995Box
+    - id: 545M995Box  # Zona14: 556M855Box<545M995Box
+    - id: 545M995Box  # Zona14: 556M855Box<545M995Box
+    - id: 545M995Box  # Zona14: 556M855Box<545M995Box
+    - id: 545M995Box  # Zona14: 556M855Box<545M995Box
     - id: GeigerCounter
     - id: STSkinsKitProject
     sound:

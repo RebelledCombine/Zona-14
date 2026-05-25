@@ -1,4 +1,4 @@
-
+﻿
 - type: entity
   id: STBlueprintT3Random
   name: Blueprints box (T3)
@@ -25,7 +25,7 @@
       prob: 0.025
     - id: ST6mmBuckshotBoxCinkBluePrint
       prob: 0.025
-    - id: ST545PCBoxCinkBlueprint
+    - id: ST545BPBoxCinkBlueprint  # Zona14: ST545PCBoxCinkBlueprint<ST545BPBoxCinkBlueprint
       prob: 0.025
     - id: ST545HPBoxCinkBlueprint
       prob: 0.025
@@ -37,19 +37,19 @@
       prob: 0.025
     - id: ST739HPBoxCinkBlueprint
       prob: 0.025
-    - id: ST725PSTBoxCinkBlueprint
+    - id: ST725PTBoxCinkBlueprint  # Zona14: ST725PSTBoxCinkBlueprint<ST725PTBoxCinkBlueprint
       prob: 0.025
     - id: ST725LRNPCBoxCinkBlueprint
       prob: 0.025
-    - id: ST556M855BoxCinkBlueprint
+    - id: ST545M995BoxCinkBlueprint  # Zona14: ST556M855BoxCinkBlueprint<ST545M995BoxCinkBlueprint
       prob: 0.025
     - id: ST556WarmagBoxCinkBlueprint
       prob: 0.025
-    - id: ST918PBMBoxCinkBlueprint
+    - id: ST918PSTBoxCinkBlueprint  # Zona14: ST918PBMBoxCinkBlueprint<ST918PSTBoxCinkBlueprint
       prob: 0.025
     - id: ST918SP7BoxCinkBlueprint
       prob: 0.025
-    - id: ST919PBMBoxCinkBlueprint
+    - id: ST919PSTBoxCinkBlueprint  # Zona14: ST919PBMBoxCinkBlueprint<ST919PSTBoxCinkBlueprint
       prob: 0.025
     - id: ST919RIPBoxCinkBlueprint
       prob: 0.025

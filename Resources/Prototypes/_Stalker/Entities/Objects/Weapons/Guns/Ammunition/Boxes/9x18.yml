@@ -1,4 +1,4 @@
-- type: entity
+﻿- type: entity
   parent: BaseAmmoBoxStalker
   id: 918PGJBox
   name: Коробка патронов (9х18) П гж
@@ -23,7 +23,7 @@
 - type: entity
   parent: 918PGJBox
   id: 918PSTBox
-  name: Коробка патронов (9х18) ПСТ AP гж
+  name: Коробка патронов (9х18) ПСТ гж
   description: Для ПМм, в коробке 30 штук. Обеспечивает пробитие 2 класса брони.
   suffix: Stalker
   components:
@@ -77,7 +77,7 @@
 - type: entity
   parent: 918PGJBoxCink
   id: 918PSTBoxCink
-  name: ящик патронов (9х18) ПСТ AP гж
+  name: Коробка патронов (9х18) ПБМ гж
   description: Для ПМм, в коробке 300 штук. Обеспечивает пробитие 2 класса брони.
   suffix: Stalker
   components:

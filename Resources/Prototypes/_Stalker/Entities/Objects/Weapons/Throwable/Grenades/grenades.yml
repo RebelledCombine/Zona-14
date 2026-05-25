@@ -1,4 +1,4 @@
-- type: entity
+﻿- type: entity
   name: граната Ф1
   description: Она же "Лимонка", не ультимативное, но крайне мощное оружие, имеющее основным поражающим фактором осколки.
   parent: GrenadeBase
@@ -7,15 +7,15 @@
   components:
     - type: Explosive
       explosionType: Default
-      maxIntensity: 8        # ~20% less peak damage — survivable at range
-      intensitySlope: 2      # gentler falloff = wider effective radius
-      totalIntensity: 120    # ~6 tile radius (was 80/~4 tiles)
+      maxIntensity: 8  # Zona14: 10<8
+      intensitySlope: 2  # Zona14: 3<2
+      totalIntensity: 120  # Zona14: 80<120
       canCreateVacuum: false
     - type: TriggerOnUse
     - type: TimerTrigger
     - type: ScatteringGrenade
       fillPrototype: PelletClusterLethal
-      capacity: 60           # fewer pellets to match reduced damage
+      capacity: 60  # Zona14: 80<60
     - type: ContainerContainer
       containers:
         cluster-payload: !type:Container
@@ -37,15 +37,15 @@
   components:
     - type: Explosive
       explosionType: Default
-      maxIntensity: 4        # ~20% less peak damage — lighter than F1
-      intensitySlope: 1.5    # gentler falloff = wider effective area
-      totalIntensity: 65     # ~5 tile radius (was 40/~4 tiles)
+      maxIntensity: 4  # Zona14: 5<4
+      intensitySlope: 1.5  # Zona14: 2<1.5
+      totalIntensity: 65  # Zona14: 40<65
       canCreateVacuum: false
     - type: TriggerOnUse
     - type: TimerTrigger
     - type: ScatteringGrenade
       fillPrototype: PelletClusterLethal
-      capacity: 60           # fewer pellets to match reduced damage
+      capacity: 60  # Zona14: 80<60
     - type: ContainerContainer
       containers:
         cluster-payload: !type:Container
@@ -299,7 +299,7 @@
     - type: Explosive
       explosionType: Default
       maxIntensity: 25
-      intensitySlope: 2
+      intensitySlope: 2  # Zona14: 3<2
       totalIntensity: 50
       canCreateVacuum: false
     - type: TriggerOnUse

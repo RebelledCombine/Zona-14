@@ -1,4 +1,4 @@
-################# ООН
+﻿################# ООН
 
 ### Т4 СЕТ
 
@@ -31,12 +31,12 @@
         - id: Brutepack
         - id: MedkitMilitary
         - id: MedkitMilitary
-        - id: 556M856Box
-        - id: 556M856Box
-        - id: 556M856Box
-        - id: 556M856Box
-        - id: 556M856Box
-        - id: 556M856Box
+        - id: 545M995Box  # Zona14: 556M855Box<545M995Box
+        - id: 545M995Box  # Zona14: 556M855Box<545M995Box
+        - id: 545M995Box  # Zona14: 556M855Box<545M995Box
+        - id: 545M995Box  # Zona14: 556M855Box<545M995Box
+        - id: 545M995Box  # Zona14: 556M855Box<545M995Box
+        - id: 545M995Box  # Zona14: 556M855Box<545M995Box
         - id: 556Mag30
         - id: 556Mag30
         - id: 556Mag30
@@ -77,12 +77,12 @@
         - id: Brutepack
         - id: MedkitMilitary
         - id: MedkitMilitary
-        - id: 919PBMBox
-        - id: 919PBMBox
-        - id: 919PBMBox
-        - id: 919PBMBox
-        - id: 919PBMBox
-        - id: 919PBMBox
+        - id: 919PSTBox  # Zona14: 919PBMBox<919PSTBox
+        - id: 919PSTBox  # Zona14: 919PBMBox<919PSTBox
+        - id: 919PSTBox  # Zona14: 919PBMBox<919PSTBox
+        - id: 919PSTBox  # Zona14: 919PBMBox<919PSTBox
+        - id: 919PSTBox  # Zona14: 919PBMBox<919PSTBox
+        - id: 919PSTBox  # Zona14: 919PBMBox<919PSTBox
         - id: BaseMP5Mag
         - id: BaseMP5Mag
         - id: BaseMP5Mag
@@ -136,12 +136,12 @@
         - id: 545Mag30
         - id: 545Mag30
         - id: 545Mag30
-        - id: 545PCBox
-        - id: 545PCBox
-        - id: 545PCBox
-        - id: 545PCBox
-        - id: 545PCBox
-        - id: 545PCBox
+        - id: 545BPBox  # Zona14: 545PCBox<545BPBox
+        - id: 545BPBox  # Zona14: 545PCBox<545BPBox
+        - id: 545BPBox  # Zona14: 545PCBox<545BPBox
+        - id: 545BPBox  # Zona14: 545PCBox<545BPBox
+        - id: 545BPBox  # Zona14: 545PCBox<545BPBox
+        - id: 545BPBox  # Zona14: 545PCBox<545BPBox
         - id: STFoodBreadPlain
         - id: STFoodBreadPlain
         - id: FlashlightSeclite
@@ -173,9 +173,9 @@
         - id: Base545Mag10
         - id: Base545Mag10
         - id: Base545Mag10
-        - id: 545PCBox
-        - id: 545PCBox
-        - id: 545PCBox
+        - id: 545BPBox  # Zona14: 545PCBox<545BPBox
+        - id: 545BPBox  # Zona14: 545PCBox<545BPBox
+        - id: 545BPBox  # Zona14: 545PCBox<545BPBox
         - id: Gauze
         - id: FlashlightSeclite
         - id: PowerCellHyper
@@ -341,7 +341,7 @@
         - id: WeaponPistolStalkerPM
         - id: BasePMMag
         - id: BasePMMag
-        - id: 918PBMBox
+        - id: 918PSTBox  # Zona14: 918PBMBox<918PSTBox
         - id: MedkitAI2
         - id: MedkitAI2
         - id: 545Mag45
@@ -349,12 +349,12 @@
         - id: 545Mag30
         - id: 545Mag30
         - id: 545Mag30
-        - id: 545PCBox
-        - id: 545PCBox
-        - id: 545PCBox
-        - id: 545PCBox
-        - id: 545PCBox
-        - id: 545PCBox
+        - id: 545BPBox  # Zona14: 545PCBox<545BPBox
+        - id: 545BPBox  # Zona14: 545PCBox<545BPBox
+        - id: 545BPBox  # Zona14: 545PCBox<545BPBox
+        - id: 545BPBox  # Zona14: 545PCBox<545BPBox
+        - id: 545BPBox  # Zona14: 545PCBox<545BPBox
+        - id: 545BPBox  # Zona14: 545PCBox<545BPBox
         - id: MedkitMilitary
         - id: MedkitMilitary
         - id: MedkitScience
@@ -399,12 +399,12 @@
         - id: BoxMRE
         - id: STWeaponSMGPP1901
         - id: ClothingBackpackDuffelCommonStalker
-        - id: 919PSTBox
-        - id: 919PSTBox
-        - id: 919PSTBox
-        - id: 919PSTBox
-        - id: 919PSTBox
-        - id: 919PSTBox
+        - id: 919PSTBox  # Zona14: 919PBMBox<919PSTBox
+        - id: 919PSTBox  # Zona14: 919PBMBox<919PSTBox
+        - id: 919PSTBox  # Zona14: 919PBMBox<919PSTBox
+        - id: 919PSTBox  # Zona14: 919PBMBox<919PSTBox
+        - id: 919PSTBox  # Zona14: 919PBMBox<919PSTBox
+        - id: 919PSTBox  # Zona14: 919PBMBox<919PSTBox
         - id: BaseRadio
         - id: Brutepack
         - id: Brutepack
@@ -444,12 +444,12 @@
         - id: BoxMRE
         - id: STWeaponRifleAKS74U
         - id: ClothingBackpackDuffelCommonStalker
-        - id: 545PCBox
-        - id: 545PCBox
-        - id: 545PCBox
-        - id: 545PCBox
-        - id: 545PCBox
-        - id: 545PCBox
+        - id: 545BPBox  # Zona14: 545PCBox<545BPBox
+        - id: 545BPBox  # Zona14: 545PCBox<545BPBox
+        - id: 545BPBox  # Zona14: 545PCBox<545BPBox
+        - id: 545BPBox  # Zona14: 545PCBox<545BPBox
+        - id: 545BPBox  # Zona14: 545PCBox<545BPBox
+        - id: 545BPBox  # Zona14: 545PCBox<545BPBox
         - id: BaseRadio
         - id: Brutepack
         - id: Brutepack
@@ -490,14 +490,14 @@
         - id: 545Mag30
         - id: STWeaponRifleAKS74
         - id: ClothingBackpackDuffelMilitaryOlive
-        - id: 545PCBox
-        - id: 545PCBox
-        - id: 545PCBox
-        - id: 545PCBox
-        - id: 545PCBox
-        - id: 545PCBox
-        - id: 545PCBox
-        - id: 545PCBox
+        - id: 545BPBox  # Zona14: 545PCBox<545BPBox
+        - id: 545BPBox  # Zona14: 545PCBox<545BPBox
+        - id: 545BPBox  # Zona14: 545PCBox<545BPBox
+        - id: 545BPBox  # Zona14: 545PCBox<545BPBox
+        - id: 545BPBox  # Zona14: 545PCBox<545BPBox
+        - id: 545BPBox  # Zona14: 545PCBox<545BPBox
+        - id: 545BPBox  # Zona14: 545PCBox<545BPBox
+        - id: 545BPBox  # Zona14: 545PCBox<545BPBox
         - id: BaseRadio
         - id: Brutepack
         - id: Brutepack
@@ -539,10 +539,10 @@
         - id: STWeaponRifleAK103
         - id: ClothingHeadsetStalker
         - id: ClothingBackpackDuffelMilitaryOlive
-        - id: 739BPBox
-        - id: 739BPBox
-        - id: 739BPBox
-        - id: 739BPBox
+        - id: 739PCBox  # Zona14: 739BPBox<739PCBox
+        - id: 739PCBox  # Zona14: 739BPBox<739PCBox
+        - id: 739PCBox  # Zona14: 739BPBox<739PCBox
+        - id: 739PCBox  # Zona14: 739BPBox<739PCBox
         - id: 739FMJBox
         - id: 739FMJBox
         - id: 739FMJBox
@@ -943,14 +943,14 @@
         - id: 545Mag30
         - id: 545Mag30
         - id: 545Mag30
-        - id: 545PCBox
-        - id: 545PCBox
-        - id: 545PCBox
-        - id: 545PCBox
-        - id: 545PCBox
-        - id: 545PCBox
-        - id: 545PCBox
-        - id: 545PCBox
+        - id: 545BPBox  # Zona14: 545PCBox<545BPBox
+        - id: 545BPBox  # Zona14: 545PCBox<545BPBox
+        - id: 545BPBox  # Zona14: 545PCBox<545BPBox
+        - id: 545BPBox  # Zona14: 545PCBox<545BPBox
+        - id: 545BPBox  # Zona14: 545PCBox<545BPBox
+        - id: 545BPBox  # Zona14: 545PCBox<545BPBox
+        - id: 545BPBox  # Zona14: 545PCBox<545BPBox
+        - id: 545BPBox  # Zona14: 545PCBox<545BPBox
         - id: MedkitMilitary
         - id: MedkitMilitary
         - id: MedkitMilitary
@@ -1000,10 +1000,10 @@
         - id: BasePMMag
         - id: BasePMMag
         - id: BasePMMag
-        - id: 918PBMBox
-        - id: 918PBMBox
-        - id: 918PBMBox
-        - id: 918PBMBox
+        - id: 918PSTBox  # Zona14: 918PBMBox<918PSTBox
+        - id: 918PSTBox  # Zona14: 918PBMBox<918PSTBox
+        - id: 918PSTBox  # Zona14: 918PBMBox<918PSTBox
+        - id: 918PSTBox  # Zona14: 918PBMBox<918PSTBox
         - id: MedkitMilitary
         - id: MedkitMilitary
         - id: MedkitMilitary
@@ -1054,16 +1054,16 @@
         - id: 739Mag30
         - id: 739Mag30
         - id: 739Mag30
-        - id: 739PCBox
-        - id: 739PCBox
-        - id: 739PCBox
-        - id: 739PCBox
-        - id: 739PCBox
-        - id: 739PCBox
-        - id: 739PCBox
-        - id: 739PCBox
-        - id: 739PCBox
-        - id: 739PCBox
+        - id: 739PCBox  # Zona14: 739BPBox<739PCBox
+        - id: 739PCBox  # Zona14: 739BPBox<739PCBox
+        - id: 739PCBox  # Zona14: 739BPBox<739PCBox
+        - id: 739PCBox  # Zona14: 739BPBox<739PCBox
+        - id: 739PCBox  # Zona14: 739BPBox<739PCBox
+        - id: 739PCBox  # Zona14: 739BPBox<739PCBox
+        - id: 739PCBox  # Zona14: 739BPBox<739PCBox
+        - id: 739PCBox  # Zona14: 739BPBox<739PCBox
+        - id: 739PCBox  # Zona14: 739BPBox<739PCBox
+        - id: 739PCBox  # Zona14: 739BPBox<739PCBox
         - id: MedkitMilitary
         - id: MedkitMilitary
         - id: MedkitMilitary
@@ -1148,15 +1148,15 @@
         - id: Brutepack
         - id: MedkitMilitary
         - id: MedkitMilitary
-        - id: 919PBMBox
-        - id: 919PBMBox
-        - id: 919PBMBox
-        - id: 919PBMBox
-        - id: 919PBMBox
-        - id: 919PBMBox
-        - id: 919PBMBox
-        - id: 919PBMBox
-        - id: 919PBMBox
+        - id: 919PSTBox  # Zona14: 919PBMBox<919PSTBox
+        - id: 919PSTBox  # Zona14: 919PBMBox<919PSTBox
+        - id: 919PSTBox  # Zona14: 919PBMBox<919PSTBox
+        - id: 919PSTBox  # Zona14: 919PBMBox<919PSTBox
+        - id: 919PSTBox  # Zona14: 919PBMBox<919PSTBox
+        - id: 919PSTBox  # Zona14: 919PBMBox<919PSTBox
+        - id: 919PSTBox  # Zona14: 919PBMBox<919PSTBox
+        - id: 919PSTBox  # Zona14: 919PBMBox<919PSTBox
+        - id: 919PSTBox  # Zona14: 919PBMBox<919PSTBox
         - id: P90Mag
         - id: P90Mag
         - id: P90Mag
@@ -1203,7 +1203,7 @@
         - id: 545Mag30
         - id: STWeaponRifleAKS74U
         - id: WeaponPistolStalkerPM
-        - id: 918PSTBox
+        - id: 918PSTBox  # Zona14: 918PBMBox<918PSTBox
         - id: BasePMMag
         - id: BasePMMag
         - id: BasePMMag
@@ -1212,12 +1212,12 @@
         - id: PowerCellHigh
         - id: PowerCellHigh
         - id: ClothingHeadHelmetBerill5MMilitary
-        - id: 545PCBox
-        - id: 545PCBox
-        - id: 545PCBox
-        - id: 545PCBox
-        - id: 545PCBox
-        - id: 545PCBox
+        - id: 545BPBox  # Zona14: 545PCBox<545BPBox
+        - id: 545BPBox  # Zona14: 545PCBox<545BPBox
+        - id: 545BPBox  # Zona14: 545PCBox<545BPBox
+        - id: 545BPBox  # Zona14: 545PCBox<545BPBox
+        - id: 545BPBox  # Zona14: 545PCBox<545BPBox
+        - id: 545BPBox  # Zona14: 545PCBox<545BPBox
         - id: BaseRadio
         - id: STBrutepack
         - id: STBrutepack
@@ -1264,7 +1264,7 @@
         - id: 739Mag30
         - id: STWeaponRifleAKM
         - id: WeaponPistolStalkerPM
-        - id: 918PSTBox
+        - id: 918PSTBox  # Zona14: 918PBMBox<918PSTBox
         - id: BasePMMag
         - id: BasePMMag
         - id: BasePMMag
@@ -1328,19 +1328,19 @@
         - id: BaseMP5Mag
         - id: STWeaponSMGMP5
         - id: WeaponPistolStalkerPM
-        - id: 918PSTBox
+        - id: 918PSTBox  # Zona14: 918PBMBox<918PSTBox
         - id: BasePMMag
         - id: BasePMMag
         - id: BasePMMag
         - id: FlashlightSeclite
         - id: PowerCellHigh
         - id: PowerCellHigh
-        - id: 919PBMBox
-        - id: 919PBMBox
-        - id: 919PBMBox
-        - id: 919PBMBox
-        - id: 919PBMBox
-        - id: 919PBMBox
+        - id: 919PSTBox  # Zona14: 919PBMBox<919PSTBox
+        - id: 919PSTBox  # Zona14: 919PBMBox<919PSTBox
+        - id: 919PSTBox  # Zona14: 919PBMBox<919PSTBox
+        - id: 919PSTBox  # Zona14: 919PBMBox<919PSTBox
+        - id: 919PSTBox  # Zona14: 919PBMBox<919PSTBox
+        - id: 919PSTBox  # Zona14: 919PBMBox<919PSTBox
         - id: BaseRadio
         - id: STBrutepack
         - id: STBrutepack
@@ -1449,12 +1449,12 @@
       state: icon
     - type: SpawnItemsOnUse
       items:
-        - id: 545PCBox
-        - id: 545PCBox
-        - id: 545PCBox
-        - id: 545PCBox
-        - id: 545PCBox
-        - id: 545PCBox
+        - id: 545BPBox  # Zona14: 545PCBox<545BPBox
+        - id: 545BPBox  # Zona14: 545PCBox<545BPBox
+        - id: 545BPBox  # Zona14: 545PCBox<545BPBox
+        - id: 545BPBox  # Zona14: 545PCBox<545BPBox
+        - id: 545BPBox  # Zona14: 545PCBox<545BPBox
+        - id: 545BPBox  # Zona14: 545PCBox<545BPBox
       sound:
         path: /Audio/Effects/unwrap.ogg
 
@@ -1632,11 +1632,11 @@
       state: icon
     - type: SpawnItemsOnUse
       items:
-        - id: 545PCBox
-        - id: 545PCBox
-        - id: 545PCBox
-        - id: 545PCBox
-        - id: 545PCBox
+        - id: 545BPBox  # Zona14: 545PCBox<545BPBox
+        - id: 545BPBox  # Zona14: 545PCBox<545BPBox
+        - id: 545BPBox  # Zona14: 545PCBox<545BPBox
+        - id: 545BPBox  # Zona14: 545PCBox<545BPBox
+        - id: 545BPBox  # Zona14: 545PCBox<545BPBox
       sound:
         path: /Audio/Effects/unwrap.ogg
 
@@ -1680,11 +1680,11 @@
       state: icon
     - type: SpawnItemsOnUse
       items:
-        - id: 556M855Box
-        - id: 556M855Box
-        - id: 556M855Box
-        - id: 556M855Box
-        - id: 556M855Box
+        - id: 545M995Box  # Zona14: 556M855Box<545M995Box
+        - id: 545M995Box  # Zona14: 556M855Box<545M995Box
+        - id: 545M995Box  # Zona14: 556M855Box<545M995Box
+        - id: 545M995Box  # Zona14: 556M855Box<545M995Box
+        - id: 545M995Box  # Zona14: 556M855Box<545M995Box
       sound:
         path: /Audio/Effects/unwrap.ogg
 
@@ -1973,11 +1973,11 @@
         - id: FlashlightSeclite
         - id: PowerCellHigh
         - id: ClothingHeadHelmetLight
-        - id: 919PSTBox
-        - id: 919PSTBox
-        - id: 919PSTBox
-        - id: 919PSTBox
-        - id: 919PSTBox
+        - id: 919PSTBox  # Zona14: 919PBMBox<919PSTBox
+        - id: 919PSTBox  # Zona14: 919PBMBox<919PSTBox
+        - id: 919PSTBox  # Zona14: 919PBMBox<919PSTBox
+        - id: 919PSTBox  # Zona14: 919PBMBox<919PSTBox
+        - id: 919PSTBox  # Zona14: 919PBMBox<919PSTBox
         - id: STCombatKnife
         - id: STBrutepack
         - id: STBrutepack

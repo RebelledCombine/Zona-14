@@ -1,4 +1,4 @@
-- type: entity
+﻿- type: entity
   abstract: true
   parent: STBaseWeaponSMG
   id: STBaseWeaponSMGMP5
@@ -97,7 +97,7 @@
   - type: Clothing
     sprite: _Stalker/Objects/Weapons/Guns/SMGs/vector.rsi
   - type: Gun
-    minAngle: 18
+    minAngle: 18  # Zona14: -25<18
     maxAngle: 65 # Zona14: 95<110<65
     angleIncrease: 2.0 # Zona14: 1<4.0<2.0
     angleDecay: 9

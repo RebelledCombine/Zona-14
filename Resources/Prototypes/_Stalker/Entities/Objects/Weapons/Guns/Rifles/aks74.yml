@@ -1,4 +1,4 @@
-- type: entity
+﻿- type: entity
   abstract: true
   parent: STBaseWeaponRifle
   id: STBaseWeaponRifleAKS74
@@ -89,7 +89,7 @@
     angleIncrease: 2.0
     angleDecay: 8
     projectileSpeed: 60
-    fireRate: 6.5
+    fireRate: 6.5  # Zona14: 11<6.5
   - type: Clothing
     sprite: _Stalker/Objects/Weapons/Guns/Rifles/ak74m.rsi
   - type: Item
@@ -226,7 +226,7 @@
       path: /Audio/_Stalker/Effects/Guns/103_shoot.ogg
     minAngle: 50
     maxAngle: 100 # Zona14: 95<100
-    fireRate: 6
+    fireRate: 6  # Zona14: 11<6
     angleIncrease: 2.0
     angleDecay: 8
   - type: ItemSlots
@@ -283,7 +283,7 @@
       path: /Audio/_Stalker/Effects/Guns/n_ak74u_shot.ogg
     minAngle: 55 # Zona14: 50<55
     maxAngle: 110 # Zona14: 105<110
-    fireRate: 6.5
+    fireRate: 6.5  # Zona14: 11<6.5
     angleIncrease: 2.0
     angleDecay: 8
     projectileSpeed: 55
@@ -351,7 +351,7 @@
   - type: Gun
     minAngle: 50
     maxAngle: 95
-    fireRate: 6.5
+    fireRate: 6.5  # Zona14: 11<6.5
     angleIncrease: 2.0
     angleDecay: 8
     projectileSpeed: 60
@@ -390,7 +390,7 @@
       path: /Audio/_Stalker/Effects/Guns/103_shoot.ogg
     minAngle: 50
     maxAngle: 100
-    fireRate: 6
+    fireRate: 6  # Zona14: 11<6
     angleIncrease: 2.0
     angleDecay: 8
     projectileSpeed: 55

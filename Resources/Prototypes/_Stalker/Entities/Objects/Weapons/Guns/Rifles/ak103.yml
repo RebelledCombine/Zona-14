@@ -1,4 +1,4 @@
-- type: entity
+﻿- type: entity
   abstract: true
   parent: STBaseWeaponRifle
   id: STBaseWeaponRifleAK103
@@ -85,7 +85,7 @@
   - type: Gun
     angleDecay: 8
     angleIncrease: 2.0
-    fireRate: 6
+    fireRate: 6  # Zona14: 10<6
 
 - type: entity
   parent: STBaseWeaponRifleAK103
@@ -107,7 +107,7 @@
     maxAngle: 100 # Zona14: 95<100
     angleIncrease: 2.0
     angleDecay: 8
-    fireRate: 6
+    fireRate: 6  # Zona14: 10<6
   - type: STWeaponDamageFalloff
     falloffMultiplier: 0.85
   - type: STWeaponAccuracy

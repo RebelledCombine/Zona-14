@@ -1,4 +1,4 @@
-- type: entity
+﻿- type: entity
   parent: BaseAmmoBoxStalker
   id: 556FMJBox
   name: коробка патронов (5,56) FMJ
@@ -40,7 +40,7 @@
 - type: entity
   parent: 556FMJBox
   id: 545M995Box
-  name: Коробка патронов (5,56) AP M995
+  name: Коробка патронов (5,56) M885
   description: Для штурмовых винтовок, в коробке 30 штук. Обеспечивает пробитие 5 класса брони.
   suffix: Stalker
   components:
@@ -93,8 +93,8 @@
 - type: entity
   parent: 556FMJBoxCink
   id: 545M995BoxCink
-  name: ящик патронов (5,56) AP M995
-  description: Для штурмовых винтовок, в коробке 300 штук. Обеспечивает пробитие 5 класса брони.
+  name: Для штурмовых винтовок, в коробке 30 штук. Обеспечивает пробитие 3 класса брони.
+  description: Коробка патронов (5,56) M856
   suffix: Stalker
   components:
     - type: BallisticAmmoProvider

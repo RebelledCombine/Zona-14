@@ -1,4 +1,4 @@
-# Кастомка серафимов
+﻿# Кастомка серафимов
 - type: entity
   name: АК-12
   suffix: ST, t4, Кастомка
@@ -102,7 +102,7 @@
     maxAngle: 120 # Zona14: 95<120
     angleIncrease: 2.5 # Zona14: 0.8<2.5
     angleDecay: 7 # Zona14: added
-    fireRate: 7
+    fireRate: 7  # Zona14: 12<7
   - type: STWeight
     self: 5
   - type: STWeaponAccuracy

@@ -1,4 +1,4 @@
-- type: entity
+﻿- type: entity
   abstract: true
   parent: STBaseWeaponRifle
   id: STBaseWeaponRifleSCARH
@@ -211,7 +211,7 @@
         volume: -2
     minAngle: 52 # Zona14: 50<52
     maxAngle: 105 # Zona14: 90<105
-    fireRate: 6
+    fireRate: 6  # Zona14: 10<6
     angleIncrease: 2.0
     angleDecay: 8
     projectileSpeed: 70

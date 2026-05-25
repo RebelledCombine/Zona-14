@@ -1,4 +1,4 @@
-# Кастомка серафимов, возможно в будущем станет общедоступной
+﻿# Кастомка серафимов, возможно в будущем станет общедоступной
 - type: entity
   name: СР-2 «Вереск»
   suffix: ST, Скин
@@ -23,7 +23,7 @@
     - type: Clothing
       sprite: _Stalker/Objects/Weapons/Guns/SMGs/cp2.rsi
     - type: Gun
-      minAngle: 18
+      minAngle: 18  # Zona14: -25<18
       maxAngle: 65 # Zona14: 70<110<65
       fireRate: 9 # Zona14: 9.5<15<9
       angleIncrease: 2.0 # Zona14: 1.2<3.5<2.0
@@ -108,11 +108,11 @@
     - type: Clothing
       sprite: _Stalker/Objects/Weapons/Guns/SMGs/cp2.rsi
     - type: Gun
-      minAngle: 18
-      maxAngle: 65
-      angleIncrease: 2.0
+      minAngle: 18  # Zona14: -25<18
+      maxAngle: 65  # Zona14: -40<65
+      angleIncrease: 2.0  # Zona14: 3.5<2.0
       angleDecay: 9
-      fireRate: 9
+      fireRate: 9  # Zona14: 15<9
       soundGunshot:
         path: /Audio/_Stalker/Effects/Guns/919.ogg
     - type: ItemSlots

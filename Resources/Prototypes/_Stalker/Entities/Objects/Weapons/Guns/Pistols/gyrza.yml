@@ -1,4 +1,4 @@
-- type: entity
+﻿- type: entity
   name: СР-1 тактический
   parent: STBaseWeaponPistol
   id: WeaponPistolGyrzaTactikal
@@ -23,7 +23,7 @@
       maxAngle: 28 # Zona14: 15<28
       angleIncrease: 2.0 # Zona14: 1.5<2.0
       angleDecay: 8 # Zona14: 4<8
-      fireRate: 5
+      fireRate: 5  # Zona14: 7<5
       availableModes:
         - SemiAuto
     - type: ItemSlots

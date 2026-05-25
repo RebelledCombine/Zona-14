@@ -1,4 +1,4 @@
-- type: entity
+﻿- type: entity
   parent: BaseAmmoBoxStalker
   id: 921PGJBox
   name: Коробка патронов (9х21) П гж
@@ -44,7 +44,7 @@
 - type: entity
   parent: 921PGJBox
   id: 921BTGJBox
-  name: Коробка патронов (9х21) AP БТ гж
+  name: Коробка патронов (9х21) БТ гж
   description: Для СР-1 и СР-2М, в коробке 30 штук. Обеспечивает пробитие 3 класса брони.
   suffix: Stalker
   components:
@@ -97,7 +97,7 @@
 - type: entity
   parent: 921PGJBoxCink
   id: 921BTGJBoxCink
-  name: ящик патронов (9х21) AP БТ гж
+  name: Коробка патронов (9х21) 7Н42 "Зубило"
   description: Для СР-1 и СР-2М, в коробке 300 штук. Обеспечивает пробитие 3 класса брони.
   suffix: Stalker
   components:

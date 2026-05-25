@@ -1,4 +1,4 @@
-- type: entity
+﻿- type: entity
   abstract: true
   parent: STBaseWeaponSMG
   id: STBaseWeaponSMGMP40
@@ -20,8 +20,8 @@
     sprite: _Stalker/Objects/Weapons/Guns/SMGs/mp40.rsi
     equipDelay: 1
   - type: Gun
-    minAngle: 22
-    maxAngle: 75
+    minAngle: 22  # Zona14: -25<22
+    maxAngle: 75  # Zona14: -35<75
     fireRate: 5 # Zona14: 7<8<5
     angleIncrease: 2.5 # Zona14: 1.5<3.0<2.5
     angleDecay: 8 # Zona14: 3<8

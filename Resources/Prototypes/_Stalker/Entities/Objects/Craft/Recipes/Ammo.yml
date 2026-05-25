@@ -1,4 +1,4 @@
-######################### Shotguns ammo #########################
+﻿######################### Shotguns ammo #########################
 
 - type: craftRecipe
   id: newrecipe7mmBuckshotBoxCink
@@ -149,15 +149,15 @@
       amount: 5
 
 - type: craftRecipe
-  id: newrecipe545PCBoxCink
+  id: newrecipe545BPBoxCink  # Zona14: newrecipe545PCBoxCink<newrecipe545BPBoxCink
   resultProtos:
-    - 545PCBoxCink
-    - 545PCBoxCink
-    - 545PCBoxCink
+    - 545BPBoxCink
+    - 545BPBoxCink
+    - 545BPBoxCink
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
-    ST545PCBoxCinkBlueprint:
+    ST545BPBoxCinkBlueprint:  # Zona14: ST545PCBoxCinkBlueprint<ST545BPBoxCinkBlueprint
       amount: 1
       catalyzer: true
     CraftMaterialGunpowder:
@@ -182,7 +182,7 @@
       amount: 3
 
 - type: craftRecipe
-  id: newrecipe545BPBoxCink
+  id: newrecipe545BPBoxCink  # Zona14: newrecipe545PCBoxCink<newrecipe545BPBoxCink
   resultProtos:
     - 545BPBoxCink
     - 545BPBoxCink
@@ -191,7 +191,7 @@
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
-    ST545BPBoxCinkBlueprint:
+    ST545BPBoxCinkBlueprint:  # Zona14: ST545PCBoxCinkBlueprint<ST545BPBoxCinkBlueprint
       amount: 1
       catalyzer: true
     CraftMaterialGunpowder:
@@ -200,17 +200,17 @@
       amount: 5
 
 - type: craftRecipe
-  id: newrecipe545BSBoxCink
+  id: newrecipe545BPBoxCink  # Zona14: newrecipe545PCBoxCink<newrecipe545BPBoxCink
   resultProtos:
-    - 545BSBoxCink
-    - 545BSBoxCink
-    - 545BSBoxCink
-    - 545BSBoxCink
-    - 545BSBoxCink
+    - 545BPBoxCink
+    - 545BPBoxCink
+    - 545BPBoxCink
+    - 545BPBoxCink
+    - 545BPBoxCink
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
-    ST545BSBoxCinkBlueprint:
+    ST545BPBoxCinkBlueprint:  # Zona14: ST545PCBoxCinkBlueprint<ST545BPBoxCinkBlueprint
       amount: 1
       catalyzer: true
     CraftMaterialGunpowder:
@@ -219,16 +219,16 @@
       amount: 5
 
 - type: craftRecipe
-  id: newrecipe545NCBoxCink
+  id: newrecipe545BPBoxCink  # Zona14: newrecipe545PCBoxCink<newrecipe545BPBoxCink
   resultProtos:
-    - 545NCBoxCink
-    - 545NCBoxCink
-    - 545NCBoxCink
-    - 545NCBoxCink
+    - 545BPBoxCink
+    - 545BPBoxCink
+    - 545BPBoxCink
+    - 545BPBoxCink
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
-    ST545NCBoxCinkBlueprint:
+    ST545BPBoxCinkBlueprint:  # Zona14: ST545PCBoxCinkBlueprint<ST545BPBoxCinkBlueprint
       amount: 1
       catalyzer: true
     CraftMaterialGunpowder:
@@ -254,14 +254,14 @@
       amount: 3
 
 - type: craftRecipe
-  id: newrecipe918PSTBoxCink
+  id: newrecipe918PSTBoxCink  # Zona14: newrecipe918PBMBoxCink<newrecipe918PSTBoxCink
   resultProtos:
     - 918PSTBoxCink
     - 918PSTBoxCink
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
-    ST918PSTBoxCinkBlueprint:
+    ST918PSTBoxCinkBlueprint:  # Zona14: ST918PBMBoxCinkBlueprint<ST918PSTBoxCinkBlueprint
       amount: 1
       catalyzer: true
     CraftMaterialGunpowder:
@@ -286,15 +286,15 @@
       amount: 3
 
 - type: craftRecipe
-  id: newrecipe918PBMBoxCink
+  id: newrecipe918PSTBoxCink  # Zona14: newrecipe918PBMBoxCink<newrecipe918PSTBoxCink
   resultProtos:
-    - 918PBMBoxCink
-    - 918PBMBoxCink
-    - 918PBMBoxCink
+    - 918PSTBoxCink
+    - 918PSTBoxCink
+    - 918PSTBoxCink
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
-    ST918PBMBoxCinkBlueprint:
+    ST918PSTBoxCinkBlueprint:  # Zona14: ST918PBMBoxCinkBlueprint<ST918PSTBoxCinkBlueprint
       amount: 1
       catalyzer: true
     CraftMaterialGunpowder:
@@ -320,14 +320,14 @@
       amount: 3
 
 - type: craftRecipe
-  id: newrecipe919PSTBoxCink
+  id: newrecipe919PSTBoxCink  # Zona14: newrecipe919PBMBoxCink<newrecipe919PSTBoxCink
   resultProtos:
     - 919PSTBoxCink
     - 919PSTBoxCink
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
-    ST919PSTBoxCinkBlueprint:
+    ST919PSTBoxCinkBlueprint:  # Zona14: ST919PBMBoxCinkBlueprint<ST919PSTBoxCinkBlueprint
       amount: 1
       catalyzer: true
     CraftMaterialGunpowder:
@@ -352,15 +352,15 @@
       amount: 3
 
 - type: craftRecipe
-  id: newrecipe919PBMBoxCink
+  id: newrecipe919PSTBoxCink  # Zona14: newrecipe919PBMBoxCink<newrecipe919PSTBoxCink
   resultProtos:
-    - 919PBMBoxCink
-    - 919PBMBoxCink
-    - 919PBMBoxCink
+    - 919PSTBoxCink
+    - 919PSTBoxCink
+    - 919PSTBoxCink
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
-    ST919PBMBoxCinkBlueprint:
+    ST919PSTBoxCinkBlueprint:  # Zona14: ST919PBMBoxCinkBlueprint<ST919PSTBoxCinkBlueprint
       amount: 1
       catalyzer: true
     CraftMaterialGunpowder:
@@ -387,15 +387,15 @@
       amount: 5
 
 - type: craftRecipe
-  id: newrecipe556M855BoxCink
+  id: newrecipe545M995BoxCink  # Zona14: newrecipe556M855BoxCink<newrecipe545M995BoxCink
   resultProtos:
-    - 556M855BoxCink
-    - 556M855BoxCink
-    - 556M855BoxCink
+    - 545M995BoxCink
+    - 545M995BoxCink
+    - 545M995BoxCink
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
-    ST556M855BoxCinkBlueprint:
+    ST545M995BoxCinkBlueprint:  # Zona14: ST556M855BoxCinkBlueprint<ST545M995BoxCinkBlueprint
       amount: 1
       catalyzer: true
     CraftMaterialGunpowder:
@@ -420,16 +420,16 @@
       amount: 3
 
 - type: craftRecipe
-  id: newrecipe556M856BoxCink
+  id: newrecipe545M995BoxCink  # Zona14: newrecipe556M855BoxCink<newrecipe545M995BoxCink
   resultProtos:
-    - 556M856BoxCink
-    - 556M856BoxCink
-    - 556M856BoxCink
-    - 556M856BoxCink
+    - 545M995BoxCink
+    - 545M995BoxCink
+    - 545M995BoxCink
+    - 545M995BoxCink
   craftTime: 35
   requiredWorkbench: StalkerWorktable1
   items:
-    ST556M856BoxCinkBlueprint:
+    ST545M995BoxCinkBlueprint:  # Zona14: ST556M855BoxCinkBlueprint<ST545M995BoxCinkBlueprint
       amount: 1
       catalyzer: true
     CraftMaterialGunpowder:
@@ -438,7 +438,7 @@
       amount: 5
 
 - type: craftRecipe
-  id: newrecipe545M995BoxCink
+  id: newrecipe545M995BoxCink  # Zona14: newrecipe556M855BoxCink<newrecipe545M995BoxCink
   resultProtos:
     - 545M995BoxCink
     - 545M995BoxCink
@@ -447,7 +447,7 @@
   craftTime: 35
   requiredWorkbench: StalkerWorktable1
   items:
-    ST545M995BoxCinkBlueprint:
+    ST545M995BoxCinkBlueprint:  # Zona14: ST556M855BoxCinkBlueprint<ST545M995BoxCinkBlueprint
       amount: 1
       catalyzer: true
     CraftMaterialGunpowder:
@@ -456,16 +456,16 @@
       amount: 5
 
 - type: craftRecipe
-  id: newrecipe556SSAAPBoxCink
+  id: newrecipe545M995BoxCink  # Zona14: newrecipe556M855BoxCink<newrecipe545M995BoxCink
   resultProtos:
-    - 556SSAAPBoxCink
-    - 556SSAAPBoxCink
-    - 556SSAAPBoxCink
-    - 556SSAAPBoxCink
+    - 545M995BoxCink
+    - 545M995BoxCink
+    - 545M995BoxCink
+    - 545M995BoxCink
   craftTime: 35
   requiredWorkbench: StalkerWorktable1
   items:
-    ST556SSAAPBoxCinkBlueprint:
+    ST545M995BoxCinkBlueprint:  # Zona14: ST556M855BoxCinkBlueprint<ST545M995BoxCinkBlueprint
       amount: 1
       catalyzer: true
     CraftMaterialGunpowder:
@@ -498,7 +498,7 @@
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
-    ST725PTBoxCinkBlueprint:
+    ST725PTBoxCinkBlueprint:  # Zona14: ST725PSTBoxCinkBlueprint<ST725PTBoxCinkBlueprint
       amount: 1
       catalyzer: true
     CraftMaterialGunpowder:
@@ -524,15 +524,15 @@
       amount: 3
 
 - type: craftRecipe
-  id: newrecipe725PSTBoxCink
+  id: newrecipe725PTBoxCink
   resultProtos:
-    - 725PSTBoxCink
-    - 725PSTBoxCink
-    - 725PSTBoxCink
+    - 725PTBoxCink
+    - 725PTBoxCink
+    - 725PTBoxCink
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
-    ST725PSTBoxCinkBlueprint:
+    ST725PTBoxCinkBlueprint:  # Zona14: ST725PSTBoxCinkBlueprint<ST725PTBoxCinkBlueprint
       amount: 1
       catalyzer: true
     CraftMaterialGunpowder:
@@ -560,7 +560,7 @@
       amount: 5
 
 - type: craftRecipe
-  id: newrecipe739PCBoxCink
+  id: newrecipe739PCBoxCink  # Zona14: newrecipe739BPBoxCink<newrecipe739PCBoxCink
   resultProtos:
     - 739PCBoxCink
     - 739PCBoxCink
@@ -569,7 +569,7 @@
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
-    ST739PCBoxCinkBlueprint:
+    ST739PCBoxCinkBlueprint:  # Zona14: ST739BPBoxCinkBlueprint<ST739PCBoxCinkBlueprint
       amount: 1
       catalyzer: true
     CraftMaterialGunpowder:
@@ -595,17 +595,17 @@
       amount: 3
 
 - type: craftRecipe
-  id: newrecipe739BPBoxCink
+  id: newrecipe739PCBoxCink  # Zona14: newrecipe739BPBoxCink<newrecipe739PCBoxCink
   resultProtos:
-    - 739BPBoxCink
-    - 739BPBoxCink
-    - 739BPBoxCink
-    - 739BPBoxCink
-    - 739BPBoxCink
+    - 739PCBoxCink
+    - 739PCBoxCink
+    - 739PCBoxCink
+    - 739PCBoxCink
+    - 739PCBoxCink
   craftTime: 39
   requiredWorkbench: StalkerWorktable1
   items:
-    ST739BPBoxCinkBlueprint:
+    ST739PCBoxCinkBlueprint:  # Zona14: ST739BPBoxCinkBlueprint<ST739PCBoxCinkBlueprint
       amount: 1
       catalyzer: true
     CraftMaterialGunpowder:
@@ -650,7 +650,7 @@
       amount: 5
 
 - type: craftRecipe
-  id: newrecipe751M61BoxCink
+  id: newrecipe751M61BoxCink  # Zona14: newrecipe751M993BoxCink<newrecipe751M61BoxCink
   resultProtos:
     - 751M61BoxCink
     - 751M61BoxCink
@@ -659,7 +659,7 @@
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
-    ST751M61BoxCinkBlueprint:
+    ST751M61BoxCinkBlueprint:  # Zona14: ST751M993BoxCinkBlueprint<ST751M61BoxCinkBlueprint
       amount: 1
       catalyzer: true
     CraftMaterialGunpowder:
@@ -668,17 +668,17 @@
       amount: 5
 
 - type: craftRecipe
-  id: newrecipe751M993BoxCink
+  id: newrecipe751M61BoxCink  # Zona14: newrecipe751M993BoxCink<newrecipe751M61BoxCink
   resultProtos:
-    - 751M993BoxCink
-    - 751M993BoxCink
-    - 751M993BoxCink
-    - 751M993BoxCink
-    - 751M993BoxCink
+    - 751M61BoxCink
+    - 751M61BoxCink
+    - 751M61BoxCink
+    - 751M61BoxCink
+    - 751M61BoxCink
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
-    ST751M993BoxCinkBlueprint:
+    ST751M61BoxCinkBlueprint:  # Zona14: ST751M993BoxCinkBlueprint<ST751M61BoxCinkBlueprint
       amount: 1
       catalyzer: true
     CraftMaterialGunpowder:
@@ -695,7 +695,7 @@
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
-    ST45ACPLFMJBoxCinkBlueprint:
+    ST45ACPLFMJBoxCinkBlueprint:  # Zona14: ST45ACPMFMJBoxCinkBlueprint<ST45ACPLFMJBoxCinkBlueprint
       amount: 1
       catalyzer: true
     CraftMaterialGunpowder:
@@ -704,30 +704,14 @@
       amount: 3
 
 - type: craftRecipe
-  id: newrecipe45ACPMFMJBoxCink
+  id: newrecipe45ACPLFMJBoxCink
   resultProtos:
-    - 45ACPMFMJBoxCink
-    - 45ACPMFMJBoxCink
+    - 45ACPLFMJBoxCink
+    - 45ACPLFMJBoxCink
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
-    ST45ACPMFMJBoxCinkBlueprint:
-      amount: 1
-      catalyzer: true
-    CraftMaterialGunpowder:
-      amount: 2
-    STCraftSheetIronT2:
-      amount: 5
-
-- type: craftRecipe
-  id: newrecipe45ACPHydroshockBoxCink
-  resultProtos:
-    - 45ACPHydroshockBoxCink
-    - 45ACPHydroshockBoxCink
-  craftTime: 30
-  requiredWorkbench: StalkerWorktable1
-  items:
-    ST45ACPHydroshockBoxCinkBlueprint:
+    ST45ACPLFMJBoxCinkBlueprint:  # Zona14: ST45ACPMFMJBoxCinkBlueprint<ST45ACPLFMJBoxCinkBlueprint
       amount: 1
       catalyzer: true
     CraftMaterialGunpowder:
@@ -743,7 +727,23 @@
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
-    ST45ACPRIPBoxCinkBlueprint:
+    ST45ACPRIPBoxCinkBlueprint:  # Zona14: ST45ACPHydroshockBoxCinkBlueprint<ST45ACPRIPBoxCinkBlueprint
+      amount: 1
+      catalyzer: true
+    CraftMaterialGunpowder:
+      amount: 2
+    STCraftSheetIronT2:
+      amount: 5
+
+- type: craftRecipe
+  id: newrecipe45ACPRIPBoxCink
+  resultProtos:
+    - 45ACPRIPBoxCink
+    - 45ACPRIPBoxCink
+  craftTime: 30
+  requiredWorkbench: StalkerWorktable1
+  items:
+    ST45ACPRIPBoxCinkBlueprint:  # Zona14: ST45ACPHydroshockBoxCinkBlueprint<ST45ACPRIPBoxCinkBlueprint
       amount: 1
       catalyzer: true
     CraftMaterialGunpowder:
@@ -892,7 +892,7 @@
       amount: 5
 
 - type: craftRecipe
-  id: newrecipe754PCBoxCink
+  id: newrecipe754PCBoxCink  # Zona14: newrecipe754BTBoxCink<newrecipe754PCBoxCink
   resultProtos:
     - 754PCBoxCink
     - 754PCBoxCink
@@ -901,7 +901,7 @@
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
-    ST754PCBoxCinkBlueprint:
+    ST754PCBoxCinkBlueprint:  # Zona14: ST754BTBoxCinkBlueprint<ST754PCBoxCinkBlueprint
       amount: 1
       catalyzer: true
     CraftMaterialGunpowder:
@@ -926,16 +926,16 @@
       amount: 3
 
 - type: craftRecipe
-  id: newrecipe754BTBoxCink
+  id: newrecipe754PCBoxCink  # Zona14: newrecipe754BTBoxCink<newrecipe754PCBoxCink
   resultProtos:
-    - 754BTBoxCink
-    - 754BTBoxCink
-    - 754BTBoxCink
-    - 754BTBoxCink
+    - 754PCBoxCink
+    - 754PCBoxCink
+    - 754PCBoxCink
+    - 754PCBoxCink
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
-    ST754BTBoxCinkBlueprint:
+    ST754PCBoxCinkBlueprint:  # Zona14: ST754BTBoxCinkBlueprint<ST754PCBoxCinkBlueprint
       amount: 1
       catalyzer: true
     CraftMaterialGunpowder:
@@ -944,16 +944,16 @@
       amount: 5
 
 - type: craftRecipe
-  id: newrecipe754SNBBoxCink
+  id: newrecipe754PCBoxCink  # Zona14: newrecipe754BTBoxCink<newrecipe754PCBoxCink
   resultProtos:
-    - 754SNBBoxCink
-    - 754SNBBoxCink
-    - 754SNBBoxCink
-    - 754SNBBoxCink
+    - 754PCBoxCink
+    - 754PCBoxCink
+    - 754PCBoxCink
+    - 754PCBoxCink
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
-    ST754SNBBoxCinkBlueprint:
+    ST754PCBoxCinkBlueprint:  # Zona14: ST754BTBoxCinkBlueprint<ST754PCBoxCinkBlueprint
       amount: 1
       catalyzer: true
     CraftMaterialGunpowder:
