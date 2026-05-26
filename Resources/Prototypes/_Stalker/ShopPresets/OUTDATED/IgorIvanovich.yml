@@ -1,9 +1,10 @@
-- type: shopPreset
-  id: IgorIvanovichShopPreset
-  itemsForSale:
-    ZoneArtifactFlame: 1
-  categories:
-    - name: Детекторы
-      priority: 1
-      items:
-        ZoneArtifactDetectorBarracuda: 52000
+﻿# Zona14: commented out — OUTDATED shop preset, not in use, kept for reference
+# - type: shopPreset
+#   id: IgorIvanovichShopPreset
+#   itemsForSale:
+#     ZoneArtifactFlame: 1
+#   categories:
+#     - name: Детекторы
+#       priority: 1
+#       items:
+#         ZoneArtifactDetectorBarracuda: 52000

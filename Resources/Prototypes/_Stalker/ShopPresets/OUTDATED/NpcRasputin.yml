@@ -1,12 +1,13 @@
-- type: shopPreset
-  id: NpcRasput
-  categories:
-    - name: Боеприпасы
-      priority: 1
-      items:
-        Ammobox1255TP: 2000
-        545BPBox: 600
-        739PCBox: 550
-        751M61Box: 620
-        754PCBox: 500
+﻿# Zona14: commented out — OUTDATED shop preset, not in use, kept for reference
+# - type: shopPreset
+#   id: NpcRasput
+#   categories:
+#     - name: Боеприпасы
+#       priority: 1
+#       items:
+#         Ammobox1255TP: 2000
+#         545BPBox: 600
+#         739PCBox: 550
+#         751M61Box: 620
+#         754PCBox: 500
         # Все ценны примерные для рассмотрения клейми и ореха отталкивался от пробития и силы калибра то есть 12,55 самый дорого 9,39 потом 7.39/7.51 и т.д.

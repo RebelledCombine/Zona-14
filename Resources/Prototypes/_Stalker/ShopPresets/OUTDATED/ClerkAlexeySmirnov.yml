@@ -1,7 +1,8 @@
-- type: shopPreset
-  id: NPCClerkAlexeySmirnov
-  categories:
-    - name: Невыгодные Лицензии
-      priority: 1
-      items:
-        hunterLicense: 4000
+﻿# Zona14: commented out — OUTDATED shop preset, not in use, kept for reference
+# - type: shopPreset
+#   id: NPCClerkAlexeySmirnov
+#   categories:
+#     - name: Невыгодные Лицензии
+#       priority: 1
+#       items:
+#         hunterLicense: 4000

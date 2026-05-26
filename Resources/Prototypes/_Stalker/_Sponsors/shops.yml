@@ -1,354 +1,355 @@
-﻿- type: personalShop
-  id: PersonalLordVladimerShop
-  username: LordVladimer
-  categories:
-    - name: Лулрд
-      items:
-        STWeaponRifleAKS74UWhite: 50
-        STWeaponRifleASVAL: 800
-        STWeaponShotgunSawedOfAnomaly: 50
-        8mmBuckshotBox: 5
-        939BPBoxCink: 50
-        939Mag30: 50
-        919RIPBox: 20
-        MedkitScience: 50
-        SciSteampack: 50
-        ClothingOuterArmorReingerElite: 5000
-        PP91Mag: 10
-        STWeaponSMGPP91Anomaly: 450
-        ClothingBeltWebbingOfficerStalker: 25
-        ClothingBackpackDuffelHikingVSRFAnomaly: 250
+﻿# Zona14: commented out — sponsor personal shops not in use, kept for reference
+# - type: personalShop
+#   id: PersonalLordVladimerShop
+#   username: LordVladimer
+#   categories:
+#     - name: Лулрд
+#       items:
+#         STWeaponRifleAKS74UWhite: 50
+#         STWeaponRifleASVAL: 800
+#         STWeaponShotgunSawedOfAnomaly: 50
+#         8mmBuckshotBox: 5
+#         939BPBoxCink: 50
+#         939Mag30: 50
+#         919RIPBox: 20
+#         MedkitScience: 50
+#         SciSteampack: 50
+#         ClothingOuterArmorReingerElite: 5000
+#         PP91Mag: 10
+#         STWeaponSMGPP91Anomaly: 450
+#         ClothingBeltWebbingOfficerStalker: 25
+#         ClothingBackpackDuffelHikingVSRFAnomaly: 250
 
-- type: personalShop
-  id: PersonalTornadoTechShop
-  username: TornadoTech
-  categories:
-    - name: Договорняк
-      items:
-        STWeaponSniperVSSOracle: 12000
-        STModuleSniperSightT2: 1200
-        Base939Mag10: 100
-        939Mag20: 120
-        939Mag30: 450
+# - type: personalShop
+#   id: PersonalTornadoTechShop
+#   username: TornadoTech
+#   categories:
+#     - name: Договорняк
+#       items:
+#         STWeaponSniperVSSOracle: 12000
+#         STModuleSniperSightT2: 1200
+#         Base939Mag10: 100
+#         939Mag20: 120
+#         939Mag30: 450
 
-- type: personalShop
-  id: PersonalNazoltofShop
-  username: nazoltof
-  categories:
-    - name: Персональная категория
-      items:
-        STWeaponSniperSVDSGrass: 12000
+# - type: personalShop
+#   id: PersonalNazoltofShop
+#   username: nazoltof
+#   categories:
+#     - name: Персональная категория
+#       items:
+#         STWeaponSniperSVDSGrass: 12000
 
-- type: personalShop
-  id: PersonalKLeymiShop
-  username: KLeymi
-  categories:
-    - name: Персональная категория
-      items:
-        STWeaponSniperOSV96: 15000
-        13x108Mag10: 390
-        13x108FMJBox: 2500
-        13x108HPBox: 1200
-        13x108PCBox: 5000
-        STBaseWeaponRifleAKMPSO1M: 4500
-        739FMJBox: 2200
-        739PCBox: 3700  # Zona14: 739BPBox<739PCBox
-        739HPBox: 1500
-        739Mag30: 500
+# - type: personalShop
+#   id: PersonalKLeymiShop
+#   username: KLeymi
+#   categories:
+#     - name: Персональная категория
+#       items:
+#         STWeaponSniperOSV96: 15000
+#         13x108Mag10: 390
+#         13x108FMJBox: 2500
+#         13x108HPBox: 1200
+#         13x108PCBox: 5000
+#         STBaseWeaponRifleAKMPSO1M: 4500
+#         739FMJBox: 2200
+#         739PCBox: 3700  # Zona14: 739BPBox<739PCBox
+#         739HPBox: 1500
+#         739Mag30: 500
 
 
-- type: personalShop
-  id: PersonalQEWAEWA2Shop
-  username: QEWAEWA2
-  categories:
-    - name: Персональная категория
-      items:
-        STClothingOuterCoatNovember: 500
-        STWeaponRifleHK416: 3500
-        ClothingOuterArmorKeeper: 2500
-        STWeaponRifleA545: 3500
-        STWeaponRifleARX160: 7000
-        ClothingHeadHelmetKeeper: 2000
+# - type: personalShop
+#   id: PersonalQEWAEWA2Shop
+#   username: QEWAEWA2
+#   categories:
+#     - name: Персональная категория
+#       items:
+#         STClothingOuterCoatNovember: 500
+#         STWeaponRifleHK416: 3500
+#         ClothingOuterArmorKeeper: 2500
+#         STWeaponRifleA545: 3500
+#         STWeaponRifleARX160: 7000
+#         ClothingHeadHelmetKeeper: 2000
 
-- type: personalShop
-  id: PersonalDelikoShop
-  username: Deliko
-  categories:
-    - name: Персональная категория
-      items:
-        ClothingJaketGray: 50
-        STClothingHeadPeakCap: 50
+# - type: personalShop
+#   id: PersonalDelikoShop
+#   username: Deliko
+#   categories:
+#     - name: Персональная категория
+#       items:
+#         ClothingJaketGray: 50
+#         STClothingHeadPeakCap: 50
 
-- type: personalShop
-  id: PersonalPodpivAssLexShop
-  username: PodpivAss_Lex
-  categories:
-    - name: Персональная категория
-      items:
-        ClothingMaskGP5Green: 50
-        ClothingTorsoTurtlenecksCamouflage: 50
-        BookStalkerSeraphimFAQ: 20
-        ClothingOuterArmorZaryaSeraRuined: 1000
-        STClothingOldRoadCape: 50
-        ClothingMaskGasSeraFirstborn: 150
-        ClothingOuterArmorFirstbornSeraphimes: 3500
+# - type: personalShop
+#   id: PersonalPodpivAssLexShop
+#   username: PodpivAss_Lex
+#   categories:
+#     - name: Персональная категория
+#       items:
+#         ClothingMaskGP5Green: 50
+#         ClothingTorsoTurtlenecksCamouflage: 50
+#         BookStalkerSeraphimFAQ: 20
+#         ClothingOuterArmorZaryaSeraRuined: 1000
+#         STClothingOldRoadCape: 50
+#         ClothingMaskGasSeraFirstborn: 150
+#         ClothingOuterArmorFirstbornSeraphimes: 3500
 
-- type: personalShop
-  id: PersonalFarforikShop
-  username: farforik
-  categories:
-    - name: Персональная категория
-      items:
-        STWeaponSniperVeprGrass: 8000
-        STWeaponShotgunShizoToz34: 800
-        754Mag10: 200
-        ClothingShoesPVHCastom: 400
+# - type: personalShop
+#   id: PersonalFarforikShop
+#   username: farforik
+#   categories:
+#     - name: Персональная категория
+#       items:
+#         STWeaponSniperVeprGrass: 8000
+#         STWeaponShotgunShizoToz34: 800
+#         754Mag10: 200
+#         ClothingShoesPVHCastom: 400
 
-- type: personalShop
-  id: PersonalRet4Shop
-  username: Ret4
-  categories:
-    - name: Персональная категория
-      items:
-        ClothingOuterCoatRet: 1754
-        STweaponShotgunPRETecta: 2900
-        CasseteFiftyEightDonateRadio: 500
-        CasseteFiftyNineDonateRadio: 500
-        CasseteSixtyDonateRadio: 500
+# - type: personalShop
+#   id: PersonalRet4Shop
+#   username: Ret4
+#   categories:
+#     - name: Персональная категория
+#       items:
+#         ClothingOuterCoatRet: 1754
+#         STweaponShotgunPRETecta: 2900
+#         CasseteFiftyEightDonateRadio: 500
+#         CasseteFiftyNineDonateRadio: 500
+#         CasseteSixtyDonateRadio: 500
 
-- type: personalShop
-  id: PersonalResadsShop
-  username: Resads
-  categories:
-    - name: Персональная категория
-      items:
-        STWeaponRifleSIG739: 10000
+# - type: personalShop
+#   id: PersonalResadsShop
+#   username: Resads
+#   categories:
+#     - name: Персональная категория
+#       items:
+#         STWeaponRifleSIG739: 10000
 
-- type: personalShop
-  id: PersonalNekoGeckoShop
-  username: Neko_Gecko
-  categories:
-    - name: Персональная категория
-      items:
-        STWeaponSMGVector9Black: 4000
-        STWeaponSMGVector9: 4000
-        STWeaponSMGVector9Forest: 4000
-        MP5Mag50: 500
+# - type: personalShop
+#   id: PersonalNekoGeckoShop
+#   username: Neko_Gecko
+#   categories:
+#     - name: Персональная категория
+#       items:
+#         STWeaponSMGVector9Black: 4000
+#         STWeaponSMGVector9: 4000
+#         STWeaponSMGVector9Forest: 4000
+#         MP5Mag50: 500
 
-- type: personalShop
-  id: PersonalDesaylerShop
-  username: Desayler
-  categories:
-    - name: Персональная категория
-      items:
-        ClothingNeckExoSpeed: 10000
-        STWeaponRifleStalkerRPK16Camo: 8000
+# - type: personalShop
+#   id: PersonalDesaylerShop
+#   username: Desayler
+#   categories:
+#     - name: Персональная категория
+#       items:
+#         ClothingNeckExoSpeed: 10000
+#         STWeaponRifleStalkerRPK16Camo: 8000
 
-- type: personalShop
-  id: PersonalFomaaShop
-  username: Fomaa
-  categories:
-    - name: Персональная категория
-      items:
-        STClothingMaskFoma: 800
-        STClothingHeadHatFoma: 100
-        ClothingCloakFoma: 1000
-        STClothingHandsGlovesFoma: 150
-        ClothingEyesGlassesFoma: 250
+# - type: personalShop
+#   id: PersonalFomaaShop
+#   username: Fomaa
+#   categories:
+#     - name: Персональная категория
+#       items:
+#         STClothingMaskFoma: 800
+#         STClothingHeadHatFoma: 100
+#         ClothingCloakFoma: 1000
+#         STClothingHandsGlovesFoma: 150
+#         ClothingEyesGlassesFoma: 250
 
-- type: personalShop
-  id: PersonalSamura1Shop
-  username: Samura1
-  categories:
-    - name: Персональная категория
-      items:
-        STWeaponRifleAUG: 4000
+# - type: personalShop
+#   id: PersonalSamura1Shop
+#   username: Samura1
+#   categories:
+#     - name: Персональная категория
+#       items:
+#         STWeaponRifleAUG: 4000
 
-- type: personalShop
-  id: PersonalLeopard2a7Shop
-  username: Leopard2a7
-  categories:
-    - name: Персональная категория
-      items:
-        WeaponPistolStalkerLP08: 900
-        LP08Drum : 300
+# - type: personalShop
+#   id: PersonalLeopard2a7Shop
+#   username: Leopard2a7
+#   categories:
+#     - name: Персональная категория
+#       items:
+#         WeaponPistolStalkerLP08: 900
+#         LP08Drum : 300
 
-- type: personalShop
-  id: PersonalSandmitShop
-  username: sandmit
-  categories:
-  - name: Персональная категория
-    items:
-      CasseteFiftyEightRadio: 250
-      STWeaponSniperHK417: 15000
-      STWeaponRifleStalkerAK15: 15000
+# - type: personalShop
+#   id: PersonalSandmitShop
+#   username: sandmit
+#   categories:
+#   - name: Персональная категория
+#     items:
+#       CasseteFiftyEightRadio: 250
+#       STWeaponSniperHK417: 15000
+#       STWeaponRifleStalkerAK15: 15000
 
-- type: personalShop
-  id: PersonalSkywalkerShop
-  username: SkyWalker88
-  categories:
-  - name: Персональная категория
-    items:
-      STClothingOuterArmorSkyWalker: 8500
+# - type: personalShop
+#   id: PersonalSkywalkerShop
+#   username: SkyWalker88
+#   categories:
+#   - name: Персональная категория
+#     items:
+#       STClothingOuterArmorSkyWalker: 8500
 
-- type: personalShop
-  id: PersonalkenkonShop
-  username: kenkon
-  categories:
-  - name: Персональная категория
-    items:
-      STWeaponRifleAM17: 10000
+# - type: personalShop
+#   id: PersonalkenkonShop
+#   username: kenkon
+#   categories:
+#   - name: Персональная категория
+#     items:
+#       STWeaponRifleAM17: 10000
 
-- type: personalShop
-  id: PersonalDanILDO655Shop
-  username: DanILDO655
-  categories:
-  - name: Персональная категория
-    items:
-      STWeaponRifleSCARL: 3000
-      STWeaponRifleOC14AltSkin1: 5000
-      STClothingOuterArmorBerillBereza: 6500
-      ClothingHeadHelmetBereza: 3500
+# - type: personalShop
+#   id: PersonalDanILDO655Shop
+#   username: DanILDO655
+#   categories:
+#   - name: Персональная категория
+#     items:
+#       STWeaponRifleSCARL: 3000
+#       STWeaponRifleOC14AltSkin1: 5000
+#       STClothingOuterArmorBerillBereza: 6500
+#       ClothingHeadHelmetBereza: 3500
 
-- type: personalShop
-  id: PersonalHLoRka_202Shop
-  username: HLoRka_202
-  categories:
-  - name: Персональная категория
-    items:
-      STWeaponSniperSVUTop: 12000
-      WeaponPistolGyrzaTactikal: 700
+# - type: personalShop
+#   id: PersonalHLoRka_202Shop
+#   username: HLoRka_202
+#   categories:
+#   - name: Персональная категория
+#     items:
+#       STWeaponSniperSVUTop: 12000
+#       WeaponPistolGyrzaTactikal: 700
 
-- type: personalShop
-  id: Personalclown_228Shop
-  username: clown_228
-  categories:
-  - name: Персональная категория
-    items:
-      ClothingOuterArmorSevaVano: 8500
+# - type: personalShop
+#   id: Personalclown_228Shop
+#   username: clown_228
+#   categories:
+#   - name: Персональная категория
+#     items:
+#       ClothingOuterArmorSevaVano: 8500
 
-- type: personalShop
-  id: PersonalmuhakaShop
-  username: muhaka
-  categories:
-  - name: Персональная категория
-    items:
-      claymoreBattle: 3500
-      STClothingOuterArmorPeresvet: 8500
+# - type: personalShop
+#   id: PersonalmuhakaShop
+#   username: muhaka
+#   categories:
+#   - name: Персональная категория
+#     items:
+#       claymoreBattle: 3500
+#       STClothingOuterArmorPeresvet: 8500
 
-- type: personalShop
-  id: PersonalDasiusWLShop
-  username: DasiusWL
-  categories:
-  - name: Персональная категория
-    items:
-      CasseteSixtyOneDonateRadio: 500
+# - type: personalShop
+#   id: PersonalDasiusWLShop
+#   username: DasiusWL
+#   categories:
+#   - name: Персональная категория
+#     items:
+#       CasseteSixtyOneDonateRadio: 500
 
-- type: personalShop
-  id: PersonalGleb_TreikShop
-  username: Gleb_Treik
-  categories:
-  - name: Персональная категория
-    items:
-      STWeaponSniperSKSpersecutor: 3500
+# - type: personalShop
+#   id: PersonalGleb_TreikShop
+#   username: Gleb_Treik
+#   categories:
+#   - name: Персональная категория
+#     items:
+#       STWeaponSniperSKSpersecutor: 3500
 
-- type: personalShop
-  id: PersonalK981vzShop
-  username: K981vz
-  categories:
-  - name: Персональная категория
-    items:
-      CasseteSixtyTwoDonateRadioAnimaciya: 500
+# - type: personalShop
+#   id: PersonalK981vzShop
+#   username: K981vz
+#   categories:
+#   - name: Персональная категория
+#     items:
+#       CasseteSixtyTwoDonateRadioAnimaciya: 500
 
-- type: personalShop
-  id: Personalde21_Shop
-  username: de21_
-  categories:
-  - name: Персональная категория
-    items:
-      STWeaponSniperVSK94: 4500
-      Base939MagVSK: 300
-      STBox9x39PAB9: 4300  # Zona14: STBox9x39SP6+STBox9x39AA merged<STBox9x39PAB9
-      STClothingOuterArmorGonchiy: 8200
-      STBaseWeaponShotgunVepr12De21: 6200
-      Base1270Mag: 300
+# - type: personalShop
+#   id: Personalde21_Shop
+#   username: de21_
+#   categories:
+#   - name: Персональная категория
+#     items:
+#       STWeaponSniperVSK94: 4500
+#       Base939MagVSK: 300
+#       STBox9x39PAB9: 4300  # Zona14: STBox9x39SP6+STBox9x39AA merged<STBox9x39PAB9
+#       STClothingOuterArmorGonchiy: 8200
+#       STBaseWeaponShotgunVepr12De21: 6200
+#       Base1270Mag: 300
 
-- type: personalShop
-  id: Personalnikita2282288Shop
-  username: nikita2282288
-  categories:
-  - name: Персональная категория
-    items:
-      STWeaponRifleSCARSSR: 4500
-      754RBox: 3100
-      Base754RMag30: 500
+# - type: personalShop
+#   id: Personalnikita2282288Shop
+#   username: nikita2282288
+#   categories:
+#   - name: Персональная категория
+#     items:
+#       STWeaponRifleSCARSSR: 4500
+#       754RBox: 3100
+#       Base754RMag30: 500
 
-- type: personalShop
-  id: PersonalPearllovekaShop
-  username: Pearlloveka
-  categories:
-  - name: Персональная категория
-    items:
-      STWeaponSniperPP2000Pearl: 4500
-      BasePP2000PearlMag: 200
-      BasePP2000PearlMag20: 400
+# - type: personalShop
+#   id: PersonalPearllovekaShop
+#   username: Pearlloveka
+#   categories:
+#   - name: Персональная категория
+#     items:
+#       STWeaponSniperPP2000Pearl: 4500
+#       BasePP2000PearlMag: 200
+#       BasePP2000PearlMag20: 400
 
-- type: personalShop
-  id: PersonalkravaShop
-  username: krava
-  categories:
-  - name: Персональная категория
-    items:
-      STWeaponRifleAK308: 4500
-      751M80Box: 2200
-      751M61Box: 3700  # Zona14: 751M993Box<751M61Box
-      751Mag30: 500
-      STClothingHandsGlovesKrava: 100
-      ClothingEyesProtectionGlassesKrava: 100
-      ClothingBackpackDuffelBlackMilitaryTacticStalkerKrava: 1000
-      ClothingOuterCoatKrava: 700
-      STClothingOuterArmorKrava: 7000
+# - type: personalShop
+#   id: PersonalkravaShop
+#   username: krava
+#   categories:
+#   - name: Персональная категория
+#     items:
+#       STWeaponRifleAK308: 4500
+#       751M80Box: 2200
+#       751M61Box: 3700  # Zona14: 751M993Box<751M61Box
+#       751Mag30: 500
+#       STClothingHandsGlovesKrava: 100
+#       ClothingEyesProtectionGlassesKrava: 100
+#       ClothingBackpackDuffelBlackMilitaryTacticStalkerKrava: 1000
+#       ClothingOuterCoatKrava: 700
+#       STClothingOuterArmorKrava: 7000
 
-- type: personalShop
-  id: PersonalgeneralfimozShop
-  username: generalfimoz
-  categories:
-  - name: Персональная категория
-    items:
-      STWeaponShotgunOrigin12: 3000
-      Origin1270Drum: 400
+# - type: personalShop
+#   id: PersonalgeneralfimozShop
+#   username: generalfimoz
+#   categories:
+#   - name: Персональная категория
+#     items:
+#       STWeaponShotgunOrigin12: 3000
+#       Origin1270Drum: 400
 
-- type: personalShop
-  id: PersonalXhedaieShop
-  username: Xhedaie
-  categories:
-  - name: Персональная категория
-    items:
-      STBaseWeaponShotgunVepr12Molot: 6200
-      Base1270Mag: 300
+# - type: personalShop
+#   id: PersonalXhedaieShop
+#   username: Xhedaie
+#   categories:
+#   - name: Персональная категория
+#     items:
+#       STBaseWeaponShotgunVepr12Molot: 6200
+#       Base1270Mag: 300
 
-- type: personalShop
-  id: PersonalRUTShop
-  username: RUT
-  categories:
-  - name: Персональная категория
-    items:
-      ClothingOuterArmorHazmatRfWhite: 25000
-      Base1270Mag: 300
-      STWeaponRifleLR300White: 15000
-      556Mag30: 400
-      556WarmagBox: 350
-      545M995Box: 3800  # Zona14: 556M855Box+556M856Box merged<545M995Box
-      ClothingOuterCoatSevaWhite: 1300
-      ClothingOuterCoatKevlarBlack: 1300
+# - type: personalShop
+#   id: PersonalRUTShop
+#   username: RUT
+#   categories:
+#   - name: Персональная категория
+#     items:
+#       ClothingOuterArmorHazmatRfWhite: 25000
+#       Base1270Mag: 300
+#       STWeaponRifleLR300White: 15000
+#       556Mag30: 400
+#       556WarmagBox: 350
+#       545M995Box: 3800  # Zona14: 556M855Box+556M856Box merged<545M995Box
+#       ClothingOuterCoatSevaWhite: 1300
+#       ClothingOuterCoatKevlarBlack: 1300
 
-- type: personalShop
-  id: PersonalHolicShop
-  username: Holic
-  categories:
-  - name: Персональная категория
-    items:
-      STWeaponRifleRPK74Vedma: 5000
-      Base545MagRPK: 300
-      545HPBox: 300
-      545BPBox: 2700  # Zona14: 545PCBox+545BSBox merged<545BPBox
+# - type: personalShop
+#   id: PersonalHolicShop
+#   username: Holic
+#   categories:
+#   - name: Персональная категория
+#     items:
+#       STWeaponRifleRPK74Vedma: 5000
+#       Base545MagRPK: 300
+#       545HPBox: 300
+#       545BPBox: 2700  # Zona14: 545PCBox+545BSBox merged<545BPBox
