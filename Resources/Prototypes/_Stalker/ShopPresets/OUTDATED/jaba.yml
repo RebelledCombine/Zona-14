@@ -189,8 +189,8 @@
     - name: shop-category-utilities
       priority: 7
       items:
-        ST919PBMBoxCinkBlueprint: 10000
-        ST918PBMBoxCinkBlueprint: 10000
+        ST919PSTBoxCinkBlueprint: 10000  # Zona14: ST919PBMBoxCinkBlueprint<ST919PSTBoxCinkBlueprint
+        ST918PSTBoxCinkBlueprint: 10000  # Zona14: ST918PBMBoxCinkBlueprint<ST918PSTBoxCinkBlueprint
         STGasMaskM51Blueprint: 5000
         STSkinsKitJabs: 500
         STCombatKnife: 15
