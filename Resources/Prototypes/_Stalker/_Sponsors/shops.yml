@@ -268,8 +268,7 @@
     items:
       STWeaponSniperVSK94: 4500
       Base939MagVSK: 300
-      STBox9x39PAB9: 2300  # Zona14: STBox9x39SP6/STBox9x39AA<STBox9x39PAB9
-      STBox9x39PAB9: 4300  # Zona14: STBox9x39SP6/STBox9x39AA<STBox9x39PAB9
+      STBox9x39PAB9: 4300  # Zona14: STBox9x39SP6+STBox9x39AA merged<STBox9x39PAB9
       STClothingOuterArmorGonchiy: 8200
       STBaseWeaponShotgunVepr12De21: 6200
       Base1270Mag: 300
@@ -339,8 +338,7 @@
       STWeaponRifleLR300White: 15000
       556Mag30: 400
       556WarmagBox: 350
-      545M995Box: 1800  # Zona14: 556M855Box<545M995Box
-      545M995Box: 3800  # Zona14: 556M855Box<545M995Box
+      545M995Box: 3800  # Zona14: 556M855Box+556M856Box merged<545M995Box
       ClothingOuterCoatSevaWhite: 1300
       ClothingOuterCoatKevlarBlack: 1300
 
@@ -353,5 +351,4 @@
       STWeaponRifleRPK74Vedma: 5000
       Base545MagRPK: 300
       545HPBox: 300
-      545BPBox: 1800  # Zona14: 545PCBox<545BPBox
-      545BPBox: 2700  # Zona14: 545PCBox<545BPBox
+      545BPBox: 2700  # Zona14: 545PCBox+545BSBox merged<545BPBox
