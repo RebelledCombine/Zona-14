@@ -1,4 +1,4 @@
-# Duty - 1
+# MARK: Duty
 
 - type: entity
   parent: NPCDoll
@@ -40,7 +40,7 @@
     - Binary
     - Common
 
-# Bandits - 2
+# MARK: Bandits
 
 - type: entity
   parent: NPCDoll
@@ -82,7 +82,7 @@
     - Binary
     - Common
 
-# Ecologist - 3
+# MARK: Ecologists
 
 - type: entity
   parent: NPCDoll
@@ -124,7 +124,7 @@
     - Binary
     - Common
 
-# Clear Sky - 4
+# MARK: Clear Sky
 
 - type: entity
   parent: NPCDoll
@@ -166,7 +166,7 @@
     - Binary
     - Common
 
-# Freedom - 5
+# MARK: Freedom
 
 - type: entity
   parent: NPCDoll
@@ -208,7 +208,7 @@
     - Binary
     - Common
 
-# Militaries - 6
+# MARK: Militaries
 
 
 - type: entity
@@ -291,7 +291,7 @@
     - Binary
     - Common
 
-#Mercs - 7
+# MARK: Mercenaries
 
 - type: entity
   parent: NPCDoll
@@ -333,7 +333,7 @@
     - Binary
     - Common
 
-# Neutrals and Militia - 8
+# MARK: Neutrals & Militia
 
 - type: entity
   parent: NPCDoll

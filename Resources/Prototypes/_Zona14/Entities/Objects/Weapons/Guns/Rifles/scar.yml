@@ -1,3 +1,4 @@
+# MARK: SCAR-H Base & Variants
 - type: entity
   abstract: true
   parent: Z14STBaseWeaponRifle
@@ -96,6 +97,7 @@
   - type: STWeaponAccuracy
     accuracyMultiplier: 1.5
 
+# MARK: ARX-160
 - type: entity
   parent: Z14STBaseWeaponRifleSCARH
   id: Z14STWeaponRifleARX160
@@ -130,6 +132,7 @@
   - type: STWeaponAccuracy
     accuracyMultiplier: 1.57
 
+# MARK: SCAR-SSR
 - type: entity
   parent: Z14STBaseWeaponRifleSCARH
   id: Z14STWeaponRifleSCARSSR
@@ -196,6 +199,7 @@
     zoom: 1.65
     offset: 14
 
+# MARK: AK-308
 - type: entity
   parent: Z14STBaseWeaponRifleSCARH
   id: Z14STWeaponRifleAK308

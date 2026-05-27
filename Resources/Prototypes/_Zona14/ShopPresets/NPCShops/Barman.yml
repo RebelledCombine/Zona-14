@@ -3,6 +3,7 @@
   minSellPrice: 5
   itemsForSale:
 
+# MARK: Artifacts
     # Thermal group - 1
     ZoneArtifactFireball: 540
     ZoneArtifactEye: 810
@@ -60,6 +61,7 @@
     ZoneArtifactPellicle: 535
     ZoneArtifactBaloon: 4800
 
+# MARK: Mutant Parts
     # Mutant parts
 
     #Boars -------- PENDING REWORK
@@ -97,6 +99,7 @@
     MutantPartBurerBrain: 2000
     MutantPartControllerBrain: 3500
 
+# MARK: Meat & Cooking
     # Meat
     STFoodMeatSalo: 95
     FoodMeatBoar: 55
@@ -156,6 +159,7 @@
     # Smuggling
     TradeBox: 4000
 
+# MARK: Items to Buy
   categories:
     - name: shop-category-weapons
       priority: 1
@@ -163,10 +167,10 @@
         # Melee
         STThrowingknifeYellow: 500
         # Pistols
-        WeaponPistolStalkerAPS: 800
-        WeaponPistolGSH18: 500
-        WeaponPistolStalkerTT: 125
-        WeaponPistolStalkerGlock: 300
+        Z14WeaponPistolStalkerAPS: 800
+        Z14WeaponPistolGSH18: 500
+        Z14WeaponPistolStalkerTT: 125
+        Z14WeaponPistolStalkerGlock: 300
         STWeaponRevolverSWModel325: 1000
         STWeaponRevolverSWModel625: 1450
         STWeaponRevolverSWPC325TR: 350
@@ -174,15 +178,15 @@
         STWeaponShotgunMossbergM88: 600
         STWeaponShotgunSPAS: 2100
         # SMGs
-        STWeaponSMGMP5: 2600
-        STWeaponSMGPP19: 3300
-        STWeaponSMGPP1901: 2000
+        Z14STWeaponSMGMP5: 2600
+        Z14STWeaponSMGPP19: 3300
+        Z14STWeaponSMGPP1901: 2000
         # Rifles
-        STWeaponRifleAKS74U: 3000
-        STWeaponRifleAKS74: 5500
-        STWeaponRifleL85: 2250
-        STWeaponRifleAKM: 6700
-        STWeaponRifleFAL: 3000
+        Z14STWeaponRifleAKS74U: 3000
+        Z14STWeaponRifleAKS74: 5500
+        Z14STWeaponRifleL85: 2250
+        Z14STWeaponRifleAKM: 6700
+        Z14STWeaponRifleFAL: 3000
 
     - name: shop-category-magazines
       priority: 2
@@ -211,37 +215,37 @@
         6mmBuckshotBox: 375 # T1
         8mmBuckshotBox: 825 # T2
         # .45
-        45ACPLFMJBox: 100 # T1
-        45ACPMFMJBox: 590 # T2
-        45ACPRIPBox: 750 # Mutant
-        45ACPAPBox: 1600 # T3
+        Z1445ACPLFMJBox: 100 # T1
+        Z1445ACPMFMJBox: 590 # T2
+        Z1445ACPRIPBox: 750 # Mutant
+        Z1445ACPAPBox: 1600 # T3
         # 7.25
-        725PBox: 130 # T1
-        725PTBox: 300 # T2
-        725LRNPCBox: 625 # Mutant
-        725PSTBox: 1450 # T3
+        Z14725PBox: 130 # T1
+        Z14725PTBox: 300 # T2
+        Z14725LRNPCBox: 625 # Mutant
+        Z14725PSTBox: 1450 # T3
         # 9.19
-        919PSOGJBox: 80 # T1
-        919PSTBox: 560 # T2
-        919RIPBox: 625 # Mutant
-        919PBMBox: 1450 # T3
+        Z14919PSOGJBox: 80 # T1
+        Z14919PSTBox: 560 # T2
+        Z14919RIPBox: 625 # Mutant
+        Z14919PBMBox: 1450 # T3
         # 9.18
-        918PGJBox: 80 # T1
-        918PSTBox: 560 # T2
-        918SP7Box: 625 # Mutant
-        918PBMBox: 1425 # T3
+        Z14918PGJBox: 80 # T1
+        Z14918PSTBox: 560 # T2
+        Z14918SP7Box: 625 # Mutant
+        Z14918PBMBox: 1425 # T3
         # 5.45
-        545FMJBox: 650 # T2
-        545HPBox: 725 # Mutant
-        545PCBox: 1650 # T3
+        Z14545FMJBox: 650 # T2
+        Z14545HPBox: 725 # Mutant
+        Z14545PCBox: 1650 # T3
         # 5.56
-        556FMJBox: 650 # T2
-        556M855Box: 1650 # T3
-        556WarmagBox: 725 # Mutant
+        Z14556FMJBox: 650 # T2
+        Z14556M855Box: 1650 # T3
+        Z14556WarmagBox: 725 # Mutant
         # 7.62
-        739FMJBox: 1950 # T3
-        739HPBox: 850 # Mutant
-        751UNBox: 850 # Mutant
+        Z14739FMJBox: 1950 # T3
+        Z14739HPBox: 850 # Mutant
+        Z14751UNBox: 850 # Mutant
 
     - name: shop-category-medicine
       priority: 4

@@ -1,3 +1,4 @@
+# MARK: AKS-74 Base & Variants
 - type: entity
   abstract: true
   parent: Z14STBaseWeaponRifle
@@ -203,6 +204,7 @@
   - type: STWeaponAccuracy
     accuracyMultiplier: 1.46
 
+# MARK: AKS-74 Skins
 - type: entity
   parent: Z14STBaseWeaponRifleAKS74
   id: Z14STWeaponRifleAKS74Green
@@ -272,7 +274,7 @@
           tags:
           - STWeaponModuleRifleScopeRu
 
-# AKS 74u
+# MARK: AKS-74U Variants
 - type: entity
   abstract: true
   parent: Z14STBaseWeaponRifleAKS74
@@ -313,6 +315,7 @@
   categories: [ Zona14 ]
   name: AKS-74U
 
+# MARK: AKS-74U Skins
 - type: entity
   parent: Z14STBaseWeaponRifleAKS74U
   id: Z14STWeaponRifleAKS74UWhite
@@ -356,6 +359,7 @@
   - type: Sprite
     sprite: _Stalker/Objects/Weapons/Guns/Rifles/_Skins/aks74u-seraph.rsi
 
+# MARK: AM-17
 - type: entity
   parent: Z14STWeaponRifleStalkerAK12
   id: Z14STWeaponRifleAM17
@@ -390,6 +394,7 @@
   - type: STWeaponAccuracy
     accuracyMultiplier: 1.47
 
+# MARK: AK-105
 - type: entity
   name: AK-105 "Swamp Creature"
   parent: Z14STBaseWeaponRifle

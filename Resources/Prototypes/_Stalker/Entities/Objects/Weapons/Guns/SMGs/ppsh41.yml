@@ -13,15 +13,12 @@
     sprite: _Stalker/Objects/Weapons/Guns/SMGs/ppsh41.rsi
   - type: Clothing
     sprite: _Stalker/Objects/Weapons/Guns/SMGs/ppsh41.rsi
-  - type: GunWieldBonus
-    minAngle: -25 # Zona14: added
-    maxAngle: -35 # Zona14: added
   - type: Gun
-    minAngle: 50 # Zona14: 55<50
-    maxAngle: 120 # Zona14: 100<120
-    angleIncrease: 4.0 # Zona14: 0.5<4.0
-    angleDecay: 9 # Zona14: 5<9
-    fireRate: 16 # Zona14: 14<16
+    minAngle: 55
+    maxAngle: 100
+    angleIncrease: 0.5
+    angleDecay: 5
+    fireRate: 14
     soundGunshot:
       path: /Audio/_Stalker/Effects/Guns/PPSh.ogg
   - type: ItemSlots

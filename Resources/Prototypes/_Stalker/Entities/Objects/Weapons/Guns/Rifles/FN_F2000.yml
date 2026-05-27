@@ -8,8 +8,8 @@
   - type: PullDoAfter
     pullTime: 3.5
   - type: GunWieldBonus
-    minAngle: -50 # Zona14: -47<-50
-    maxAngle: -62 # Zona14: -50<-62
+    minAngle: -47
+    maxAngle: -50
   - type: Item
     sprite: _Stalker/Objects/Weapons/Guns/Rifles/fn-f2000.rsi
   - type: Sprite
@@ -21,11 +21,11 @@
       path: /Audio/_Stalker/Effects/Guns/n_fn2000_shot.ogg
       params:
         volume: -2
-    minAngle: 48 # Zona14: 45<48
+    minAngle: 45
     maxAngle: 95
-    fireRate: 14 # Zona14: 8.5<14
-    angleIncrease: 2.0 # Zona14: 1<2.0
-    angleDecay: 8 # Zona14: 7.5<8
+    fireRate: 8.5
+    angleIncrease: 1
+    angleDecay: 7.5
     projectileSpeed: 60
   - type: ItemSlots
     slots:

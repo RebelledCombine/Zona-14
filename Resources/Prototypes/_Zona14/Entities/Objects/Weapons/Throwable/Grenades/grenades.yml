@@ -1,3 +1,4 @@
+# MARK: Frag Grenades
 - type: entity
   name: F1 grenade
   description: Also known as "Limonka". Not the ultimate weapon, but an extremely powerful one, with fragmentation as its primary damage factor.
@@ -80,6 +81,7 @@
         - !type:DoActsBehavior
           acts: ["Destruction"]
 
+# MARK: Incendiary Grenades
 - type: entity
   parent: GrenadeBase
   id: Z14KhattabkaGrenade
@@ -110,7 +112,7 @@
       layers:
         - state: icon
           map: ["enum.TriggerVisualLayers.Base"]
-# To be repaired
+# MARK: Smoke & Signal Grenades
 - type: entity
   name: signal flare
   description: Calls in mortar fire with smoke rounds.
@@ -164,6 +166,7 @@
     primingSound:
       path: /Audio/Effects/Smoke-grenade.ogg
 
+# MARK: Offensive Grenades
 - type: entity
   parent: GrenadeBase
   id: Z14MK3A2Grenade
@@ -201,6 +204,7 @@
             Primed: { state: primed }
             Unprimed: { state: icon }
 
+# MARK: Flashbangs
 - type: entity
   name: M84 grenade
   description: An American flashbang grenade. A non-lethal device that produces a blinding flash and deafening blast.
@@ -252,6 +256,7 @@
     primingSound:
       path: /Audio/Items/smoke_grenade_prime.ogg
 
+# MARK: Stick Grenades
 - type: entity
   parent: GrenadeBase
   id: Z14StielhandgranateM24Bundle
@@ -336,7 +341,7 @@
             Primed: { state: primed }
             Unprimed: { state: icon }
 
-######################## Suicide bombers
+# MARK: Explosive Packs
 - type: entity
   parent: Clothing
   id: Z14STExplosionPack

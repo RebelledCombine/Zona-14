@@ -10,7 +10,7 @@
   - type: PullDoAfter
     pullTime: 3
   - type: GunWieldBonus
-    minAngle: -48 # Zona14: -50<-48
+    minAngle: -50
     maxAngle: -70
   - type: Item
     sprite: _Stalker/Objects/Weapons/Guns/Snipers/Mosin.rsi
@@ -22,11 +22,11 @@
   - type: Gun
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/sniper.ogg
-    minAngle: 45 # Zona14: 50<45
+    minAngle: 50
     maxAngle: 80
     fireRate: 0.6
-    angleIncrease: 0.5 # Zona14: 5<0.5
-    angleDecay: 5 # Zona14: 25<5
+    angleIncrease: 5
+    angleDecay: 25
     projectileSpeed: 75
   - type: BallisticAmmoProvider
     capacity: 5

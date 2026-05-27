@@ -19,10 +19,10 @@
       sprite: _Stalker/Objects/Weapons/Guns/Pistols/gyrza.rsi
     - type: Gun
       projectileSpeed: 45
-      minAngle: 7 # Zona14: 5<7
-      maxAngle: 28 # Zona14: 15<28
-      angleIncrease: 2.0 # Zona14: 1.5<2.0
-      angleDecay: 8 # Zona14: 4<8
+      minAngle: 5
+      maxAngle: 15
+      angleIncrease: 1.5
+      angleDecay: 4
       fireRate: 7
       availableModes:
         - SemiAuto

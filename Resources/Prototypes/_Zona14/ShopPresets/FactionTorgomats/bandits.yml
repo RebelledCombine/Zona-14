@@ -2,6 +2,7 @@
   id: BandsShopPresetZONA # Pending Economy Change
   minSellPrice: 5
   itemsForSale:
+# MARK: Artifacts
     # Thermal group - 1
     ZoneArtifactFireball: 310
     ZoneArtifactEye: 510
@@ -59,6 +60,7 @@
     ZoneArtifactPellicle: 440
     ZoneArtifactBaloon: 3300
 
+# MARK: Mutant Parts
      # Mutant parts
 
     #Boars -------- Health * T * 0.45
@@ -93,6 +95,7 @@
     MutantPartBurerBrain: 1500
     MutantPartControllerBrain: 2500
 
+# MARK: Values & Misc
     #Value
     STJewelrySilver: 400
     STJewelryGold: 600
@@ -125,6 +128,7 @@
     longrangemetaldetector: 900
     Binocularus1: 200
 
+# MARK: Items to Buy
   categories:
     - name: shop-category-weapons
       priority: 1
@@ -132,25 +136,25 @@
         # Melee
         StalkerBallBat: 50
         # Pistols
-        WeaponPistolStalkerTT: 250
-        WeaponPistolStalkerAPS: 500
+        Z14WeaponPistolStalkerTT: 250
+        Z14WeaponPistolStalkerAPS: 500
         STWeaponRevolverSWPC325TR: 700
         # Shotguns
         STWeaponShotgunTOZ34: 100 # T2
         STWeaponShotgunMossbergM88: 500 # T2
         STWeaponShotgunMP153: 1000 # T3
         # Rifles
-        STWeaponRifleSaiga545: 1200
-        STWeaponRifleAKS74U: 2000
-        STWeaponRifleL85: 3000
-        STWeaponRifleAKS74: 3000
+        Z14STWeaponRifleSaiga545: 1200
+        Z14STWeaponRifleAKS74U: 2000
+        Z14STWeaponRifleL85: 3000
+        Z14STWeaponRifleAKS74: 3000
         # SMGs
-        STWeaponSMGMP5: 2000
-        STWeaponSMGMP40: 500
-        STWeaponSMGPP19: 3000
+        Z14STWeaponSMGMP5: 2000
+        Z14STWeaponSMGMP40: 500
+        Z14STWeaponSMGPP19: 3000
         # Snipers
-        STWeaponSniperMosin: 1000
-        STWeaponSniperSKS: 1500
+        Z14STWeaponSniperMosin: 1000
+        Z14STWeaponSniperSKS: 1500
 
     - name: shop-category-magazines
       priority: 2
@@ -182,39 +186,39 @@
         7mmBuckshotBox: 75 # T0
         8mmBuckshotBox: 800 # T2
         # 7.25
-        725PBox: 90 # T1
-        725LRNPCBox: 625 # Mutant
-        725PTBox: 200 # T2
-        725PSTBox: 1450 # T3
+        Z14725PBox: 90 # T1
+        Z14725LRNPCBox: 625 # Mutant
+        Z14725PTBox: 200 # T2
+        Z14725PSTBox: 1450 # T3
         # 9.19
-        919PSOGJBox: 100 # T1
-        919PSTBox: 500 # T2
-        919PBMBox: 1450 # T3
-        919RIPBox: 625 # Mutant
+        Z14919PSOGJBox: 100 # T1
+        Z14919PSTBox: 500 # T2
+        Z14919PBMBox: 1450 # T3
+        Z14919RIPBox: 625 # Mutant
         # 9.18
-        918PGJBox: 100 # T1
-        918PSTBox: 500 # T2
-        918PBMBox: 1450 # T3
-        918SP7Box: 625 # Mutant
+        Z14918PGJBox: 100 # T1
+        Z14918PSTBox: 500 # T2
+        Z14918PBMBox: 1450 # T3
+        Z14918SP7Box: 625 # Mutant
         # 5.45
-        545FMJBox: 500 # T2
-        545HPBox: 725 # Mutant
-        545PCBox: 1650 # T3
+        Z14545FMJBox: 500 # T2
+        Z14545HPBox: 725 # Mutant
+        Z14545PCBox: 1650 # T3
         # 5.56
-        556FMJBox: 500 # T2
-        556WarmagBox: 725 # Mutant
-        556M855Box: 1650 # T3
+        Z14556FMJBox: 500 # T2
+        Z14556WarmagBox: 725 # Mutant
+        Z14556M855Box: 1650 # T3
         # 7.39
-        739HPBox: 850 # Mutant
-        739FMJBox: 1950 # T3
+        Z14739HPBox: 850 # Mutant
+        Z14739FMJBox: 1950 # T3
         # 7.54
-        754FMJBox: 2500 # T3
-        754HPBox: 1350 # Mutant
+        Z14754FMJBox: 2500 # T3
+        Z14754HPBox: 1350 # Mutant
         # .45
-        45ACPLFMJBox: 110 # T1
-        45ACPMFMJBox: 550 # T2
-        45ACPAPBox: 1550 # T3
-        45ACPRIPBox: 750 # Mutant
+        Z1445ACPLFMJBox: 110 # T1
+        Z1445ACPMFMJBox: 550 # T2
+        Z1445ACPAPBox: 1550 # T3
+        Z1445ACPRIPBox: 750 # Mutant
 
     - name: shop-category-medicine # 50% discount from stalkers
       priority: 4
@@ -371,9 +375,9 @@
       items:
         SnapPop: 50
         CraftGunpowderBank: 200
-        KhattabkaGrenade: 350
-        DG05SmokeGrenade: 500
-        RGD5Grenade: 1000
+        Z14KhattabkaGrenade: 350
+        Z14DG05SmokeGrenade: 500
+        Z14RGD5Grenade: 1000
         DynamiteOne: 1500
 
     - name: shop-category-customization

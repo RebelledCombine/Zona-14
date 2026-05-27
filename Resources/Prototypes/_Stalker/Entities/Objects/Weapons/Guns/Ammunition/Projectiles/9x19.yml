@@ -1,55 +1,51 @@
-#9x19 - Tier 2 pistol caliber
+#9x19
 
 - type: entity
   id: Bullet919PSOGJ
-  name: bullet (9x19 FMJ) # Zona14: bullet (9х19 auto)<bullet (9x19 FMJ)
+  name: bullet (9х19 auto)
   parent: STBasePistolBullet
   categories: [ HideSpawnMenu ]
   components:
   - type: TimedDespawn
     lifetime: 2
   - type: Projectile
-    projectileClass: 2 # Zona14: 1<2
+    projectileClass: 1
     damage:
       types:
-        Piercing: 14 # Zona14: 23<14
-  - type: StaminaDamageOnCollide
-    damage: 1 # Zona14: added
-
-- type: entity
-  id: Bullet919PST
-  name: bullet (9x19 AP) # Zona14: bullet (9х19 auto)<bullet (9x19 AP)
-  parent: Bullet919PSOGJ
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: Projectile
-    projectileClass: 3 # Zona14: 2<3
-    damage:
-      types:
-        Piercing: 12 # Zona14: 26<12
+        Piercing: 23
   - type: StaminaDamageOnCollide
     damage: 1
 
 - type: entity
-  id: Bullet919RIP
-  name: bullet (9x19 HP) # Zona14: bullet (9х18 auto)<bullet (9x19 HP)
+  id: Bullet919PST
+  name: bullet (9х19 auto)
   parent: Bullet919PSOGJ
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
-    projectileClass: 1 # Zona14: 0<1
+    projectileClass: 2
     damage:
       types:
-        Mutant: 25 # Zona14: 20<25
-        Piercing: 4 # Zona14: 5<4
-        Blunt: 7 # Zona14: 5<7
-        Slash: 7 # Zona14: 5<7
-  - type: StaminaDamageOnCollide
-    damage: 2 # Zona14: added
+        Piercing: 26
+
+- type: entity
+  id: Bullet919RIP
+  name: bullet (9х18 auto)
+  parent: Bullet919PSOGJ
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    projectileClass: 0
+    damage:
+      types:
+        Mutant: 20
+        Piercing: 5
+        Blunt: 5
+        Slash: 5
 
 - type: entity
   id: Bullet919PBM
-  name: bullet (9x19 AP)
+  name: bullet (9х19 auto)
   parent: Bullet919PSOGJ
   categories: [ HideSpawnMenu ]
   components:
@@ -57,6 +53,4 @@
     projectileClass: 3
     damage:
       types:
-        Piercing: 12
-  - type: StaminaDamageOnCollide
-    damage: 1
+        Piercing: 26

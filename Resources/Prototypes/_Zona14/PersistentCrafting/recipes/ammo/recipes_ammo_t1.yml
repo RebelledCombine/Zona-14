@@ -1,0 +1,382 @@
+# MARK: T1 Ammo Recipes
+- type: persistentCraftRecipe
+  id: Z14PersistentCraftAmmo_newrecipe7mmBuckshotBoxCink
+  categories: [ Zona14 ]
+  name: persistent-craft-recipe-generic-name
+  description: persistent-craft-recipe-generic-desc
+  displayProto: 7mmBuckshotBox
+  branch: Ammo
+  tier: 1
+  requiredNode: PersistentCraftWeaponAmmoNodeT1
+  craftTime: 6
+  pointReward: 0
+  ingredients:
+  - proto: STCraftAnomalyDust
+    amount: 1
+  results:
+  - proto: 7mmBuckshotBox
+    amount: 6
+  category: ammo
+  subCategory: tier-1
+
+- type: persistentCraftRecipe
+  id: Z14PersistentCraftAmmo_newrecipe6mmBuckshotBoxCink
+  categories: [ Zona14 ]
+  name: persistent-craft-recipe-generic-name
+  description: persistent-craft-recipe-generic-desc
+  displayProto: 6mmBuckshotBox
+  branch: Ammo
+  tier: 1
+  requiredNode: PersistentCraftWeaponAmmoNodeT1
+  craftTime: 6
+  pointReward: 0
+  ingredients:
+  - proto: STCraftAnomalyDust
+    amount: 1
+  results:
+  - proto: 6mmBuckshotBox
+    amount: 6
+  category: ammo
+  subCategory: tier-1
+
+- type: persistentCraftRecipe
+  id: Z14PersistentCraftAmmo_newrecipe1255PS12ACink
+  categories: [ Zona14 ]
+  name: persistent-craft-recipe-generic-name
+  description: persistent-craft-recipe-generic-desc
+  displayProto: Ammobox1255PS12A
+  branch: Ammo
+  tier: 1
+  requiredNode: PersistentCraftWeaponAmmoNodeT1
+  craftTime: 6
+  pointReward: 0
+  ingredients:
+  - proto: STCraftAnomalyDust
+    amount: 1
+  results:
+  - proto: Ammobox1255PS12A
+    amount: 4
+  category: ammo
+  subCategory: tier-1
+
+- type: persistentCraftRecipe
+  id: Z14PersistentCraftAmmo_newrecipeShotgunBulletUnlethalBoxCink
+  categories: [ Zona14 ]
+  name: persistent-craft-recipe-generic-name
+  description: persistent-craft-recipe-generic-desc
+  displayProto: ShotgunBulletUnlethalBox
+  branch: Ammo
+  tier: 1
+  requiredNode: PersistentCraftWeaponAmmoNodeT1
+  craftTime: 6
+  pointReward: 0
+  ingredients:
+  - proto: STCraftAnomalyDust
+    amount: 1
+  results:
+  - proto: ShotgunBulletUnlethalBox
+    amount: 6
+  category: ammo
+  subCategory: tier-1
+
+- type: persistentCraftRecipe
+  id: Z14PersistentCraftAmmo_newrecipeShotgunBulletBoxRIPCink
+  categories: [ Zona14 ]
+  name: persistent-craft-recipe-generic-name
+  description: persistent-craft-recipe-generic-desc
+  displayProto: ShotgunBulletBoxRIP
+  branch: Ammo
+  tier: 1
+  requiredNode: PersistentCraftWeaponAmmoNodeT1
+  craftTime: 6
+  pointReward: 0
+  ingredients:
+  - proto: STCraftAnomalyDust
+    amount: 1
+  results:
+  - proto: ShotgunBulletBoxRIP
+    amount: 6
+  category: ammo
+  subCategory: tier-1
+
+- type: persistentCraftRecipe
+  id: Z14PersistentCraftAmmo_newrecipe918PGJBoxCink
+  categories: [ Zona14 ]
+  name: persistent-craft-recipe-generic-name
+  description: persistent-craft-recipe-generic-desc
+  displayProto: Z14918PGJBox
+  branch: Ammo
+  tier: 1
+  requiredNode: PersistentCraftWeaponAmmoNodeT1
+  craftTime: 6
+  pointReward: 0
+  ingredients:
+  - proto: STCraftAnomalyDust
+    amount: 1
+  results:
+  - proto: Z14918PGJBox
+    amount: 4
+  category: ammo
+  subCategory: tier-1
+
+- type: persistentCraftRecipe
+  id: Z14PersistentCraftAmmo_newrecipe919PSOGJBoxCink
+  categories: [ Zona14 ]
+  name: persistent-craft-recipe-generic-name
+  description: persistent-craft-recipe-generic-desc
+  displayProto: Z14919PSOGJBox
+  branch: Ammo
+  tier: 1
+  requiredNode: PersistentCraftWeaponAmmoNodeT1
+  craftTime: 6
+  pointReward: 0
+  ingredients:
+  - proto: STCraftAnomalyDust
+    amount: 1
+  results:
+  - proto: Z14919PSOGJBox
+    amount: 4
+  category: ammo
+  subCategory: tier-1
+
+- type: persistentCraftRecipe
+  id: Z14PersistentCraftAmmo_newrecipe725PBoxCink
+  categories: [ Zona14 ]
+  name: persistent-craft-recipe-generic-name
+  description: persistent-craft-recipe-generic-desc
+  displayProto: Z14725PBox
+  branch: Ammo
+  tier: 1
+  requiredNode: PersistentCraftWeaponAmmoNodeT1
+  craftTime: 6
+  pointReward: 0
+  ingredients:
+  - proto: STCraftAnomalyDust
+    amount: 1
+  results:
+  - proto: Z14725PBox
+    amount: 4
+  category: ammo
+  subCategory: tier-1
+
+- type: persistentCraftRecipe
+  id: Z14PersistentCraftAmmo_newrecipe45ACPLFMJBoxCink
+  categories: [ Zona14 ]
+  name: persistent-craft-recipe-generic-name
+  description: persistent-craft-recipe-generic-desc
+  displayProto: Z1445ACPLFMJBox
+  branch: Ammo
+  tier: 1
+  requiredNode: PersistentCraftWeaponAmmoNodeT1
+  craftTime: 6
+  pointReward: 0
+  ingredients:
+  - proto: STCraftAnomalyDust
+    amount: 1
+  results:
+  - proto: Z1445ACPLFMJBox
+    amount: 4
+  category: ammo
+  subCategory: tier-1
+
+- type: persistentCraftRecipe
+  id: Z14PersistentCraftAmmo_newrecipe45ACPHydroshockBoxCink
+  categories: [ Zona14 ]
+  name: persistent-craft-recipe-generic-name
+  description: persistent-craft-recipe-generic-desc
+  displayProto: Z1445ACPHydroshockBox
+  branch: Ammo
+  tier: 1
+  requiredNode: PersistentCraftWeaponAmmoNodeT1
+  craftTime: 6
+  pointReward: 0
+  ingredients:
+  - proto: STCraftAnomalyDust
+    amount: 1
+  results:
+  - proto: Z1445ACPHydroshockBox
+    amount: 4
+  category: ammo
+  subCategory: tier-1
+
+- type: persistentCraftRecipe
+  id: Z14PersistentCraftAmmo_newrecipe545HPBoxCink
+  categories: [ Zona14 ]
+  name: persistent-craft-recipe-generic-name
+  description: persistent-craft-recipe-generic-desc
+  displayProto: Z14545HPBox
+  branch: Ammo
+  tier: 1
+  requiredNode: PersistentCraftWeaponAmmoNodeT1
+  craftTime: 6
+  pointReward: 0
+  ingredients:
+  - proto: STCraftAnomalyDust
+    amount: 1
+  results:
+  - proto: Z14545HPBox
+    amount: 4
+  category: ammo
+  subCategory: tier-1
+
+- type: persistentCraftRecipe
+  id: Z14PersistentCraftAmmo_newrecipe918SP7BoxCink
+  categories: [ Zona14 ]
+  name: persistent-craft-recipe-generic-name
+  description: persistent-craft-recipe-generic-desc
+  displayProto: Z14918SP7Box
+  branch: Ammo
+  tier: 1
+  requiredNode: PersistentCraftWeaponAmmoNodeT1
+  craftTime: 6
+  pointReward: 0
+  ingredients:
+  - proto: STCraftAnomalyDust
+    amount: 1
+  results:
+  - proto: Z14918SP7Box
+    amount: 4
+  category: ammo
+  subCategory: tier-1
+
+- type: persistentCraftRecipe
+  id: Z14PersistentCraftAmmo_newrecipe919RIPBoxCink
+  categories: [ Zona14 ]
+  name: persistent-craft-recipe-generic-name
+  description: persistent-craft-recipe-generic-desc
+  displayProto: Z14919RIPBox
+  branch: Ammo
+  tier: 1
+  requiredNode: PersistentCraftWeaponAmmoNodeT1
+  craftTime: 6
+  pointReward: 0
+  ingredients:
+  - proto: STCraftAnomalyDust
+    amount: 1
+  results:
+  - proto: Z14919RIPBox
+    amount: 4
+  category: ammo
+  subCategory: tier-1
+
+- type: persistentCraftRecipe
+  id: Z14PersistentCraftAmmo_newrecipe556WarmagBoxCink
+  categories: [ Zona14 ]
+  name: persistent-craft-recipe-generic-name
+  description: persistent-craft-recipe-generic-desc
+  displayProto: Z14556WarmagBox
+  branch: Ammo
+  tier: 1
+  requiredNode: PersistentCraftWeaponAmmoNodeT1
+  craftTime: 7
+  pointReward: 0
+  ingredients:
+  - proto: STCraftAnomalyDust
+    amount: 1
+  results:
+  - proto: Z14556WarmagBox
+    amount: 4
+  category: ammo
+  subCategory: tier-1
+
+- type: persistentCraftRecipe
+  id: Z14PersistentCraftAmmo_newrecipe725LRNPCBoxCink
+  categories: [ Zona14 ]
+  name: persistent-craft-recipe-generic-name
+  description: persistent-craft-recipe-generic-desc
+  displayProto: Z14725LRNPCBox
+  branch: Ammo
+  tier: 1
+  requiredNode: PersistentCraftWeaponAmmoNodeT1
+  craftTime: 6
+  pointReward: 0
+  ingredients:
+  - proto: STCraftAnomalyDust
+    amount: 1
+  results:
+  - proto: Z14725LRNPCBox
+    amount: 4
+  category: ammo
+  subCategory: tier-1
+
+- type: persistentCraftRecipe
+  id: Z14PersistentCraftAmmo_newrecipe739HPBoxCink
+  categories: [ Zona14 ]
+  name: persistent-craft-recipe-generic-name
+  description: persistent-craft-recipe-generic-desc
+  displayProto: Z14739HPBox
+  branch: Ammo
+  tier: 1
+  requiredNode: PersistentCraftWeaponAmmoNodeT1
+  craftTime: 6
+  pointReward: 0
+  ingredients:
+  - proto: STCraftAnomalyDust
+    amount: 1
+  results:
+  - proto: Z14739HPBox
+    amount: 4
+  category: ammo
+  subCategory: tier-1
+
+- type: persistentCraftRecipe
+  id: Z14PersistentCraftAmmo_newrecipe751UNBoxCink
+  categories: [ Zona14 ]
+  name: persistent-craft-recipe-generic-name
+  description: persistent-craft-recipe-generic-desc
+  displayProto: Z14751UNBox
+  branch: Ammo
+  tier: 1
+  requiredNode: PersistentCraftWeaponAmmoNodeT1
+  craftTime: 12
+  pointReward: 0
+  ingredients:
+  - proto: STCraftAnomalyDust
+    amount: 1
+  results:
+  - proto: Z14751UNBox
+    amount: 4
+  category: ammo
+  subCategory: tier-1
+
+- type: persistentCraftRecipe
+  id: Z14PersistentCraftAmmo_newrecipe45ACPRIPBoxCink
+  categories: [ Zona14 ]
+  name: persistent-craft-recipe-generic-name
+  description: persistent-craft-recipe-generic-desc
+  displayProto: Z1445ACPRIPBox
+  branch: Ammo
+  tier: 1
+  requiredNode: PersistentCraftWeaponAmmoNodeT1
+  craftTime: 6
+  pointReward: 0
+  ingredients:
+  - proto: STCraftAnomalyDust
+    amount: 1
+  results:
+  - proto: Z1445ACPRIPBox
+    amount: 4
+  category: ammo
+  subCategory: tier-1
+
+- type: persistentCraftRecipe
+  id: Z14PersistentCraftAmmo_newrecipe754HPBoxCink
+  categories: [ Zona14 ]
+  name: persistent-craft-recipe-generic-name
+  description: persistent-craft-recipe-generic-desc
+  displayProto: Z14754HPBox
+  branch: Ammo
+  tier: 1
+  requiredNode: PersistentCraftWeaponAmmoNodeT1
+  craftTime: 6
+  pointReward: 0
+  ingredients:
+  - proto: STCraftAnomalyDust
+    amount: 1
+  results:
+  - proto: Z14754HPBox
+    amount: 4
+  category: ammo
+  subCategory: tier-1
+
+

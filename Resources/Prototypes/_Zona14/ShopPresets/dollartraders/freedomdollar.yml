@@ -1,0 +1,72 @@
+- type: shopPreset
+  id: Z14FreedomDollarShopPreset
+  itemsForSale:
+    ChevronMonolit: 3
+  categories:
+    - name: shop-category-weapons
+      priority: 1
+      items:
+            # Guns
+          # 7mm
+        STWeaponShotgunBenelliM4Super90: 10
+        STWeaponShotgunProtecta: 25
+          # 5,45x39
+        Z14STWeaponRifleG36: 140
+        Z14STWeaponRifleM4: 200
+        Z14STWeaponRifleASVAL: 500
+        Z14STWeaponRifleAK103: 300
+        Z14STWeaponRifleSIG550: 150
+        Z14KhattabkaGrenade: 1
+        Z14TearGasGrenadeStalker: 7
+        Z14RGD5Grenade: 10
+        Z14STWeaponRifleStalkerRPK16: 1000
+    - name: shop-category-magazines
+      priority: 2
+      items:
+          # 5,45x39
+        556Mag45: 30 #T3
+        739Mag45: 30
+        939Mag20: 30
+        545Mag60: 60
+    - name: shop-category-ammunition
+      priority: 3
+      items:
+        ShotgunFlechetteCink: 35
+        Z14556M856BoxCink: 80
+        Z14739PCBoxCink: 120
+        939SP6BoxCink: 150
+        Z14751M61BoxCink: 120
+        Z14545BPBoxCink: 100
+        BluntRainbow: 1
+    - name: shop-category-armor
+      priority: 4
+      items:
+        ClothingOuterArmorFreedomDefender: 20
+        STClothingOuterArmorVolchankaFreedom: 300
+        ClothingHeadAssaultHelmetMilitary: 30
+        ClothingHeadHelmetAborigine: 45
+        ClothingHeadHelmetUlach: 80
+        STPsyHelm2: 20
+
+    - name: shop-category-storage-and-containers
+      priority: 5
+      items:
+        ClothingBackpackDuffelOliveTacticStalker: 40
+        ClothingBackpackDuffelMilitaryOlive: 40
+        ClothingBeltWebbingDoubleFreedomVeterSmall: 10
+
+    - name: shop-category-raincoats-and-gasmasks
+      priority: 6
+      items:
+          # Gasmasks
+        ClothingMaskunix5000: 40
+        ClothingMaskRCBZ2: 30
+
+    - name: shop-category-modules
+      priority: 7
+      items:
+        STModuleAutoSear: 50
+        STModuleSMGGripT2: 60
+        STModuleSniperSightT2: 30
+        STModuleScopeRiflesT2Nato: 50
+        STModuleScopeRiflesT2Ru: 50

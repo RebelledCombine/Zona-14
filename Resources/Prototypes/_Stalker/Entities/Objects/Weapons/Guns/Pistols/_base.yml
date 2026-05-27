@@ -31,15 +31,7 @@
     slots:
     - suitStorage
     - Belt
-  - type: Wieldable
-  - type: GunWieldBonus
-    minAngle: -3 # Zona14: added
-    maxAngle: -10 # Zona14: added
   - type: Gun
-    minAngle: 8 # Zona14: added
-    maxAngle: 25 # Zona14: added
-    angleIncrease: 2.0 # Zona14: added
-    angleDecay: 8 # Zona14: added
     fireRate: 6
     selectedMode: SemiAuto
     availableModes:
@@ -79,8 +71,6 @@
   - type: STWeaponAccuracy
     accuracyMultiplierUnwielded: 1.5
     modifiedAccuracyMultiplier: 1.5
-  - type: PullDoAfter # Zona14 change
-    pullTime: 1.5 # Zona 14 change
   - type: ParticleOnGunShot # stalker-en-start
     effect: MuzzleSmoke
     inheritAngle: true # stalker-en-end

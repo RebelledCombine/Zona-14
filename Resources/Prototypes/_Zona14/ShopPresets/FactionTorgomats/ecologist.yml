@@ -2,6 +2,7 @@
   id: NpcResearchInstituteZONA # 1.25x
   minSellPrice: 5
   itemsForSale:
+# MARK: Artifacts
     # Thermal group - 1
     ZoneArtifactFireball: 680
     ZoneArtifactEye: 1020
@@ -59,6 +60,7 @@
     ZoneArtifactPellicle: 680
     ZoneArtifactBaloon: 6120
 
+# MARK: Mutant Parts
     # Mutant parts
 
     # Boars -------- Health * T * 0.45
@@ -92,6 +94,7 @@
     MutantPartBurerBrain: 2800
     MutantPartControllerBrain: 5875
 
+# MARK: Fish & Other
     #Fish -------- Unc * 1.5
     #Only anomalous fish
     STFishGoldfish: 1500
@@ -111,6 +114,7 @@
     STJunkTagWhite: 100
     STJunkTracker: 250
 
+# MARK: Items to Buy
   categories:
     - name: shop-category-weapons
       priority: 1
@@ -118,7 +122,7 @@
         # Melee
         STCombatKnife: 10
         # Pistols
-        WeaponPistolStalkerGlock: 200
+        Z14WeaponPistolStalkerGlock: 200
         STWeaponRevolverRugerRedhawk: 750
         STWeaponRevolverSWModel625: 1650
         # Shotguns
@@ -126,11 +130,11 @@
         STWeaponShotgunMossbergM88: 650
         STWeaponShotgunSPAS: 1550
         # SMGs
-        STWeaponSMGPP1901: 2450
+        Z14STWeaponSMGPP1901: 2450
         # Rifles
-        STWeaponRifleAKS74U: 2050
-        STWeaponRifleM16: 3200
-        STWeaponRifleAKS74: 3800
+        Z14STWeaponRifleAKS74U: 2050
+        Z14STWeaponRifleM16: 3200
+        Z14STWeaponRifleAKS74: 3800
 
     - name: shop-category-magazines
       priority: 2
@@ -153,21 +157,21 @@
         6mmBuckshotBox: 250
         7mmBuckshotBox: 45
         # 9.19
-        919PSOGJBox: 75
-        919PSTBox: 180
-        919RIPBox: 400
+        Z14919PSOGJBox: 75
+        Z14919PSTBox: 180
+        Z14919RIPBox: 400
         # .45
-        45ACPRIPBox: 450
-        45ACPLFMJBox: 90
-        45ACPMFMJBox: 200
+        Z1445ACPRIPBox: 450
+        Z1445ACPLFMJBox: 90
+        Z1445ACPMFMJBox: 200
         # 5.45
-        545HPBox: 400
-        545FMJBox: 270
-        545PCBox: 2500
+        Z14545HPBox: 400
+        Z14545FMJBox: 270
+        Z14545PCBox: 2500
         # 5.56
-        556WarmagBox: 500
-        556FMJBox: 300
-        556M855Box: 3000
+        Z14556WarmagBox: 500
+        Z14556FMJBox: 300
+        Z14556M855Box: 3000
 
     - name: shop-category-medicine # 70% discount from stalkers
       priority: 4
@@ -267,7 +271,7 @@
         BoxArtcontOrange: 250
         ZoneAnomalyDetectorAD1: 250 # T1
         ZoneAnomalyDetectorAD2: 1000 # T2
-        ZoneAnomalyDetectorAD3: 2400 # Т3
+        ZoneAnomalyDetectorAD3: 2400 # T3
           # Detectors
         ZoneArtifactDetectorPulse: 50 # T1
         ZoneArtifactDetectorHunter: 100 # T2

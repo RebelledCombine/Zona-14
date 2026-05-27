@@ -11,7 +11,7 @@
     pullTime: 3.5
   - type: GunWieldBonus
     minAngle: -50
-    maxAngle: -62 # Zona14: -50<-62
+    maxAngle: -50
   - type: Clothing
     sprite: _Stalker/Objects/Weapons/Guns/Rifles/_Skins/ak104.rsi
   - type: Sprite
@@ -19,10 +19,10 @@
   - type: Gun
     soundGunshot:
       path: /Audio/_Stalker/Effects/Guns/103_shoot.ogg
-    minAngle: 55 # Zona14: 60<55
-    maxAngle: 105 # Zona14: 100<105
-    fireRate: 10 # Zona14: 8<10
-    angleIncrease: 2.0 # Zona14: 1.75<2.0
+    minAngle: 60
+    maxAngle: 100
+    fireRate: 8
+    angleIncrease: 1.75
     angleDecay: 8
     projectileSpeed: 65
   - type: ItemSlots

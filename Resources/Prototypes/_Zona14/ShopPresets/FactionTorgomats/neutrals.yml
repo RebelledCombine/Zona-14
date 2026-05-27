@@ -3,6 +3,7 @@
   minSellPrice: 5
   itemsForSale:
 
+# MARK: Artifacts
     # Thermal group - 1
     ZoneArtifactFireball: 500
     ZoneArtifactEye: 610
@@ -61,6 +62,7 @@
     ZoneArtifactPellicle: 500
     ZoneArtifactBaloon: 3645
 
+# MARK: Mutant Parts
     # Mutant parts
 
     #Boars -------- Health * T * 0.45
@@ -98,6 +100,7 @@
     MutantPartBurerBrain: 1500
     MutantPartControllerBrain: 2625
 
+# MARK: Meat
     # Meat
     FoodMeatDogCooked: 70
     STFoodMeatSpiderCooked: 35
@@ -107,30 +110,31 @@
     FoodMeatSTFishSteakCooked: 75
     FoodMeatSTEelCooked: 150
 
+# MARK: Items to Buy
   categories:
   - name: shop-category-weapons
     priority: 1
     items:
       # Pistols
-      WeaponPistolStalkerTT: 50 # T1
-      WeaponPistolStalkerPM: 50 # T1
+      Z14WeaponPistolStalkerTT: 50 # T1
+      Z14WeaponPistolStalkerPM: 50 # T1
       STWeaponRevolverSWModel325: 500
       STWeaponRevolverSWPC325TR: 1000
-      WeaponPistolStalkerAPS: 900 # T2
+      Z14WeaponPistolStalkerAPS: 900 # T2
       # Shotguns
       STWeaponShotgunTOZ34: 250 # T1
       STWeaponShotgunMP133: 500 # T2
       STWeaponShotgunMossbergM88: 650
       # SMGs
-      STWeaponSMGMP40: 1000
-      STWeaponSMGPPSh41: 2250
-      STWeaponSMGPP91: 2850
+      Z14STWeaponSMGMP40: 1000
+      Z14STWeaponSMGPPSh41: 2250
+      Z14STWeaponSMGPP91: 2850
       # Rifles
-      STWeaponRifleSaiga545: 1750 # T3
-      STWeaponRifleAKS74U: 2000
+      Z14STWeaponRifleSaiga545: 1750 # T3
+      Z14STWeaponRifleAKS74U: 2000
       # Snipers
-      STWeaponSniperSKS: 1850 # T2
-      STWeaponSniperMosin: 1500
+      Z14STWeaponSniperSKS: 1850 # T2
+      Z14STWeaponSniperMosin: 1500
 
   - name: shop-category-magazines
     priority: 2
@@ -155,35 +159,35 @@
       7mmBuckshotBox: 30 # T0
       6mmBuckshotBox: 275 # T2
       # 5.45
-      545FMJBox: 700 # T2
-      545HPBox: 425 # Mutant
-      545PCBox: 1650 # T3
+      Z14545FMJBox: 700 # T2
+      Z14545HPBox: 425 # Mutant
+      Z14545PCBox: 1650 # T3
       # 7.39
-      739HPBox: 700 # Mutant
-      739FMJBox: 1950 # T3
+      Z14739HPBox: 700 # Mutant
+      Z14739FMJBox: 1950 # T3
       # 7.54
-      754HPBox: 775 # Mutant
-      754FMJBox: 2500 # T3
+      Z14754HPBox: 775 # Mutant
+      Z14754FMJBox: 2500 # T3
       # 9.18
-      918PGJBox: 65 # T1
-      918SP7Box: 595 # Mutant
-      918PSTBox: 450 # T2
-      918PBMBox: 1450 # T3
+      Z14918PGJBox: 65 # T1
+      Z14918SP7Box: 595 # Mutant
+      Z14918PSTBox: 450 # T2
+      Z14918PBMBox: 1450 # T3
       # 9.19
-      919PSOGJBox: 65 # T1
-      919RIPBox: 595 # Mutant
-      919PBMBox: 1450 # T3
-      919PSTBox: 450 # T2
+      Z14919PSOGJBox: 65 # T1
+      Z14919RIPBox: 595 # Mutant
+      Z14919PBMBox: 1450 # T3
+      Z14919PSTBox: 450 # T2
       # 7.25
-      725PBox: 75 # T1
-      725LRNPCBox: 595 # Mutant
-      725PTBox: 465 # T2
-      725PSTBox: 1450 # T3
+      Z14725PBox: 75 # T1
+      Z14725LRNPCBox: 595 # Mutant
+      Z14725PTBox: 465 # T2
+      Z14725PSTBox: 1450 # T3
       #45
-      45ACPRIPBox: 625 # Mutant
-      45ACPLFMJBox: 100 # T1
-      45ACPMFMJBox: 1550 # T2
-      45ACPAPBox: 1950 # T3
+      Z1445ACPRIPBox: 625 # Mutant
+      Z1445ACPLFMJBox: 100 # T1
+      Z1445ACPMFMJBox: 1550 # T2
+      Z1445ACPAPBox: 1950 # T3
 
   - name: shop-category-medicine
     priority: 4

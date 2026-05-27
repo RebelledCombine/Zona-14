@@ -1,8 +1,8 @@
-#7.62x25 - Tier 1 pistol caliber (slightly weaker than 9x18)
+#7.62x25
 
 - type: entity
   id: Bullet725PGL
-  name: bullet (7.62x25 FMJ) # Zona14: bullet (7.62х25 rifle)<bullet (7.62x25 FMJ)
+  name: bullet (7.62х25 rifle)
   parent: STBasePistolBullet
   categories: [ HideSpawnMenu ]
   components:
@@ -12,51 +12,45 @@
     projectileClass: 1
     damage:
       types:
-        Piercing: 10 # Zona14: 20<10
-  - type: StaminaDamageOnCollide
-    damage: 1 # Zona14: added
-
-- type: entity
-  id: Bullet725PTGJ
-  name: bullet (7.62x25 AP) # Zona14: bullet (7.62х25 rifle)<bullet (7.62x25 AP)
-  parent: Bullet725PGL # Zona14: STBasePistolBullet<Bullet725PGL
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: Projectile
-    projectileClass: 2 # Zona14: 3<2
-    damage:
-      types:
-        Piercing: 8 # Zona14: 24<8
-  - type: StaminaDamageOnCollide
-    damage: 0 # Zona14: added
-
-- type: entity
-  id: Bullet725LRNPC
-  name: bullet (7.62x25 HP) # Zona14: bullet (7.62х25 rifle)<bullet (7.62x25 HP)
-  parent: Bullet725PGL
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: Projectile
-    projectileClass: 0
-    damage:
-      types:
-        Mutant: 12 # Zona14: 10<12
-        Piercing: 2 # Zona14: 10<2
-        Blunt: 4 # Zona14: 10<4
-        Slash: 4 # Zona14: 10<4
+        Piercing: 20
   - type: StaminaDamageOnCollide
     damage: 1
 
 - type: entity
-  id: Bullet725PSTGJ
-  name: bullet (7.62x25 AP)
-  parent: Bullet725PGL
+  id: Bullet725PTGJ
+  name: bullet (7.62х25 rifle)
+  parent: STBasePistolBullet
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
     projectileClass: 2
     damage:
       types:
-        Piercing: 8
-  - type: StaminaDamageOnCollide
-    damage: 0
+        Piercing: 22
+
+- type: entity
+  id: Bullet725LRNPC
+  name: bullet (7.62х25 rifle)
+  parent: STBasePistolBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    projectileClass: 0
+    damage:
+      types:
+        Mutant: 10
+        Piercing: 10
+        Blunt: 10
+        Slash: 10
+
+- type: entity
+  id: Bullet725PSTGJ
+  name: bullet (7.62х25 rifle)
+  parent: STBasePistolBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    projectileClass: 3
+    damage:
+      types:
+        Piercing: 24

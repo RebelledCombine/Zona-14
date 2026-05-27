@@ -8,8 +8,8 @@
   - type: PullDoAfter
     pullTime: 1.5
   - type: GunWieldBonus
-    minAngle: -25 # Zona14: -40<-25
-    maxAngle: -40 # Zona14: -45<-40
+    minAngle: -40
+    maxAngle: -45
   - type: Item
     sprite: _Stalker/Objects/Weapons/Guns/SMGs/mp5/mp5.rsi
   - type: Sprite
@@ -17,11 +17,11 @@
   - type: Clothing
     sprite: _Stalker/Objects/Weapons/Guns/SMGs/mp5/mp5.rsi
   - type: Gun
-    minAngle: 40 # Zona14: 38<40
-    maxAngle: 100 # Zona14: 85<100
-    fireRate: 13 # Zona14: 9<13
-    angleIncrease: 3.5 # Zona14: 1.3<3.5
-    angleDecay: 9 # Zona14: 8<9
+    minAngle: 40
+    maxAngle: 85
+    fireRate: 9
+    angleIncrease: 1.3
+    angleDecay: 5
     projectileSpeed: 55
     soundGunshot:
       path: /Audio/_Stalker/Effects/Guns/n_mp5_shot.ogg
@@ -97,11 +97,11 @@
   - type: Clothing
     sprite: _Stalker/Objects/Weapons/Guns/SMGs/vector.rsi
   - type: Gun
-    minAngle: 40
-    maxAngle: 110 # Zona14: 95<110
-    angleIncrease: 4.0 # Zona14: 1<4.0
-    angleDecay: 9
-    fireRate: 16 # Zona14: 11<16
+    minAngle: 38
+    maxAngle: 95
+    angleIncrease: 1
+    angleDecay: 8
+    fireRate: 11
     soundGunshot:
       path: /Audio/_Stalker/Effects/Guns/919.ogg
   - type: STScopeVisuals

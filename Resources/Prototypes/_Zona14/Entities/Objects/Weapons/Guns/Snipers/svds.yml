@@ -1,3 +1,4 @@
+# MARK: SVD-S Base
 - type: entity
   abstract: true
   parent: STBaseWeaponSniper
@@ -77,6 +78,7 @@
   name: SVDS (Dragunov Sniper Rifle)
   description: A modernized folding version of the legendary SVD sniper rifle, chambered in 7.62x54mmR. Features improved ergonomics and comes equipped with a medium-range scope. A favorite among Zone marksmen for its reliability and stopping power.
 
+# MARK: SVD-S Skins
 - type: entity
   parent: Z14STBaseWeaponRifleSVDS
   id: Z14STWeaponSniperSVDSGrass
@@ -107,6 +109,7 @@
   - type: Sprite
     sprite: _Stalker/Objects/Weapons/Guns/Snipers/SVDS/covenant.rsi
 
+# MARK: SVU Variants
 - type: entity
   parent: Z14STBaseWeaponRifleSVDS
   id: Z14STWeaponSniperSVU
@@ -137,6 +140,7 @@
   - type: Sprite
     sprite: _Stalker/Objects/Weapons/Guns/Snipers/SVU/seraphim.rsi
 
+# MARK: SVD-S Selfmade
 - type: entity
   parent: Z14STBaseWeaponRifleSVDS
   id: Z14STWeaponRifleSVDSWood
@@ -211,6 +215,7 @@
   - type: Sprite
     sprite: _Stalker/Objects/Weapons/Guns/Snipers/SVU/Top.rsi
 
+# MARK: RR-2000 Special
 - type: entity
   parent: Z14STBaseWeaponRifleSVDS
   id: Z14STWeaponSniperPP2000Pearl

@@ -1,3 +1,4 @@
+# MARK: AK-103 Base & Variants
 - type: entity
   abstract: true
   parent: Z14STBaseWeaponRifle
@@ -72,6 +73,7 @@
   name: AK-103
   description: Modern Kalashnikov variant chambered in 7.62x39mm. Prized in the Zone for reliability and firepower. Main weapon of many factions.
 
+# MARK: AK-103 Skins
 - type: entity
   parent: Z14STBaseWeaponRifleAK103
   id: Z14STWeaponRifleAK103Kamo
@@ -118,6 +120,7 @@
   - type: STWeaponAccuracy
     accuracyMultiplier: 1.65
 
+# MARK: Saiga 7.62 Variants
 - type: entity
   parent: Z14STWeaponRifleSaiga545
   id: Z14STWeaponRifleSaiga739
@@ -208,6 +211,7 @@
     - FullAuto
     fireRate: 6
 
+# MARK: AK-15
 - type: entity
   name: AK-15
   parent: Z14STWeaponRifleStalkerAK12

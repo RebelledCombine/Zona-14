@@ -1,0 +1,362 @@
+# MARK: War Zone Meta-Prototypes
+- type: stWarZone
+  id: Z14KordonVillage # Zone ID. Persisted in DB, do not change.
+  categories: [ Zona14 ]
+  suffix: Z14
+  rewardPointsPerPeriod: 1 # Points awarded per period
+  rewardPeriod: 1230 # Reward period in seconds
+  captureCooldownHours: 2 # Capture cooldown in hours
+  captureTime: 10 # Capture time in seconds. 30 minutes.
+  requirements:
+    - !type:ZoneOwnershipRequirenment
+      requiredZones: [] # Zones that must be owned before this zone can be captured. Untested.
+
+- type: stWarZone
+  id: Z14SvalkaDepo
+  categories: [ Zona14 ]
+  suffix: Z14
+  rewardPointsPerPeriod: 1
+  rewardPeriod: 1230 # Reward period in seconds
+  captureCooldownHours: 96
+  shouldAwardWhenDefenderPresent: true
+  captureTime: 850 # Capture time in seconds.
+  requirements:
+  - !type:ZoneOwnershipRequirenment
+    requiredZones: []
+  - !type:TimeWindowRequirenment
+    startHourUtc: 16 # Start hour in UTC (e.g., 10:00 UTC = 10)
+    endHourUtc: 17   # End hour in UTC (e.g., 18:00 UTC = 18)
+
+# MARK: War Zone Entities
+- type: entity
+  id: Z14WarZoneEntity_Kordon
+  categories: [ Zona14 ]
+  suffix: Z14
+  parent: MarkerBase
+  name: Kordon Village War Zone
+  description: A physical marker for the Kordon War Zone.
+  components:
+    - type: WarZone # Required component. Persists zone state.
+      proto: KordonVillage
+      portalName: Kordon Village
+    - type: Physics
+      bodyType: Static
+      canCollide: true
+    - type: Fixtures
+      fixtures:
+        trigger:
+          shape:
+            !type:PhysShapeCircle
+            radius: 3 # Capture zone radius. Leaving the zone cancels capture.
+          hard: false
+          mask:
+            - MobMask
+          layer:
+            - MidImpassable
+    - type: PointLight # Highlights the zone
+      enabled: true
+      radius: 4
+      color: Cyan
+      energy: 1
+
+- type: entity
+  id: Z14WarZoneEntity_Svalka_Depo
+  categories: [ Zona14 ]
+  suffix: Z14
+  parent: MarkerBase
+  name: Depo War Zone
+  description: A physical marker for the Depo War Zone.
+  components:
+  - type: WarZone
+    proto: SvalkaDepo
+    portalName: Depo
+  - type: Physics
+    bodyType: Static
+    canCollide: true
+  - type: Fixtures
+    fixtures:
+      trigger:
+        shape:
+          !type:PhysShapeCircle
+          radius: 5
+        hard: false
+        mask:
+        - MobMask
+        layer:
+        - MidImpassable
+  - type: PointLight
+    enabled: true
+    radius: 15
+    color: Cyan
+    energy: 1
+
+- type: stWarZone
+  id: Z14SvalkaCemetery
+  categories: [ Zona14 ]
+  suffix: Z14
+  rewardPointsPerPeriod: 1
+  rewardPeriod: 1230 # Reward period in seconds
+  captureCooldownHours: 96
+  shouldAwardWhenDefenderPresent: true
+  captureTime: 800 # Capture time in seconds.
+  requirements:
+  - !type:ZoneOwnershipRequirenment
+    requiredZones: []
+  - !type:TimeWindowRequirenment
+    startHourUtc: 16 # Start hour in UTC (e.g., 10:00 UTC = 10)
+    endHourUtc: 17   # End hour in UTC (e.g., 18:00 UTC = 18)
+
+- type: entity
+  id: Z14WarZoneEntity_Svalka_Cemetery
+  categories: [ Zona14 ]
+  suffix: Z14
+  parent: MarkerBase
+  name: Cemetery War Zone
+  description: A physical marker for the Cemetery War Zone.
+  components:
+  - type: WarZone
+    proto: SvalkaCemetery
+    portalName: Cemetery
+  - type: Physics
+    bodyType: Static
+    canCollide: true
+  - type: Fixtures
+    fixtures:
+      trigger:
+        shape:
+          !type:PhysShapeCircle
+          radius: 5
+        hard: false
+        mask:
+        - MobMask
+        layer:
+        - MidImpassable
+  - type: PointLight
+    enabled: true
+    radius: 15
+    color: Cyan
+    energy: 1
+
+- type: stWarZone
+  id: Z14LimanskLenin
+  categories: [ Zona14 ]
+  suffix: Z14
+  rewardPointsPerPeriod: 1
+  rewardPeriod: 1230 # Reward period in seconds
+  captureCooldownHours: 96
+  shouldAwardWhenDefenderPresent: true
+  captureTime: 850 # Capture time in seconds.
+  requirements:
+  - !type:ZoneOwnershipRequirenment
+    requiredZones: []
+  - !type:TimeWindowRequirenment
+    startHourUtc: 17 # Start hour in UTC (e.g., 10:00 UTC = 10)
+    endHourUtc: 19   # End hour in UTC (e.g., 18:00 UTC = 18)
+
+- type: entity
+  id: Z14WarZoneEntity_Limansk_Lenin
+  categories: [ Zona14 ]
+  suffix: Z14
+  parent: MarkerBase
+  name: Lenin War Zone
+  description: A physical marker for the Depo War Zone.
+  components:
+  - type: WarZone
+    proto: LimanskLenin
+    portalName: Lenin
+  - type: Physics
+    bodyType: Static
+    canCollide: true
+  - type: Fixtures
+    fixtures:
+      trigger:
+        shape:
+          !type:PhysShapeCircle
+          radius: 5
+        hard: false
+        mask:
+        - MobMask
+        layer:
+        - MidImpassable
+  - type: PointLight
+    enabled: true
+    radius: 15
+    color: Cyan
+    energy: 1
+
+- type: stWarZone
+  id: Z14KordonFerma
+  categories: [ Zona14 ]
+  suffix: Z14
+  rewardPointsPerPeriod: 1
+  rewardPeriod: 1230 # Reward period in seconds
+  captureCooldownHours: 96
+  shouldAwardWhenDefenderPresent: true
+  captureTime: 875 # Capture time in seconds.
+  requirements:
+  - !type:ZoneOwnershipRequirenment
+    requiredZones: []
+  - !type:TimeWindowRequirenment
+    startHourUtc: 11 # Start hour in UTC (e.g., 10:00 UTC = 10)
+    endHourUtc: 12   # End hour in UTC (e.g., 18:00 UTC = 18)
+
+- type: entity
+  id: Z14WarZoneEntity_Kordon_Ferma
+  categories: [ Zona14 ]
+  suffix: Z14
+  parent: MarkerBase
+  name: Ferma War Zone
+  description: A physical marker for the Depo War Zone.
+  components:
+  - type: WarZone
+    proto: KordonFerma
+    portalName: Ferma
+  - type: Physics
+    bodyType: Static
+    canCollide: true
+  - type: Fixtures
+    fixtures:
+      trigger:
+        shape:
+          !type:PhysShapeCircle
+          radius: 8
+        hard: false
+        mask:
+        - MobMask
+        layer:
+        - MidImpassable
+  - type: PointLight
+    enabled: true
+    radius: 15
+    color: Cyan
+    energy: 1
+
+- type: stWarZone
+  id: Z14KordonATP
+  categories: [ Zona14 ]
+  suffix: Z14
+  rewardPointsPerPeriod: 1
+  rewardPeriod: 1230 # Reward period in seconds
+  captureCooldownHours: 96
+  shouldAwardWhenDefenderPresent: true
+  captureTime: 875 # Capture time in seconds.
+  requirements:
+  - !type:ZoneOwnershipRequirenment
+    requiredZones: []
+  - !type:TimeWindowRequirenment
+    startHourUtc: 13 # Start hour in UTC (e.g., 10:00 UTC = 10)
+    endHourUtc: 14   # End hour in UTC (e.g., 18:00 UTC = 18)
+
+- type: entity
+  id: Z14WarZoneEntity_Kordon_ATP
+  categories: [ Zona14 ]
+  suffix: Z14
+  parent: MarkerBase
+  name: KordonATP War Zone
+  description: A physical marker for the Depo War Zone.
+  components:
+  - type: WarZone
+    proto: KordonATP
+    portalName: KordonATP
+  - type: Physics
+    bodyType: Static
+    canCollide: true
+  - type: Fixtures
+    fixtures:
+      trigger:
+        shape:
+          !type:PhysShapeCircle
+          radius: 8
+        hard: false
+        mask:
+        - MobMask
+        layer:
+        - MidImpassable
+  - type: PointLight
+    enabled: true
+    radius: 15
+    color: Cyan
+    energy: 1
+
+
+# MARK: Band Shop Listings
+- type: stBandShopListings
+  id: Z14STBandShopListings
+  categories: [ Zona14 ]
+  suffix: Z14
+  items:
+  #misc
+    - productEntity: FitnessCenterCard
+      price: 500
+    - productEntity: Z14STWeaponSniperVSS
+      price: 420
+    - productEntity: STClothingOuterArmorVeryHeavy
+      price: 400
+    - productEntity: Z14STWeaponRifleOC14939
+      price: 370
+#    - productEntity: Z14STWeaponSMGStalkerCP2Veresk921
+#      price: 320
+    - productEntity: Z14STWeaponSniperSVDS
+      price: 310
+    - productEntity: ClothingHeadHelmetUlach
+      price: 300
+    - productEntity: Z14STWeaponRifleHK416
+      price: 270
+    - productEntity: Z14STWeaponRifleAM17
+      price: 270
+#      productEntity: STShotgunKS23
+#      price: 240
+    - productEntity: ClothingBeltCrafterStalker
+      price: 200
+    - productEntity: StalkerMedBandShopCrate
+      price: 75
+    - productEntity: 939Mag30
+      price: 45
+    - productEntity: 754Mag20
+      price: 45
+    - productEntity: 754Mag10
+      price: 35
+#    - productEntity: SR2MMag30
+#      price: 35
+#    - productEntity: 2375ShrapnelBuckshotBox
+#      price: 40
+#    - productEntity: 2375BarricadaBulletBox
+#      price: 30
+#    - productEntity: 2375VolnaRBulletBox
+#      price: 15
+
+  #ammo
+#    - productEntity: Z14921PEGJBoxCink
+#      price: 70
+    - productEntity: Z14918PBMBoxCink
+      price: 70
+    - productEntity: Z14919PBMBoxCink
+      price: 70
+    - productEntity: Z14545PCBoxCink
+      price: 90
+    - productEntity: Z14556M855BoxCink
+      price: 90
+    - productEntity: Z14739FMJBoxCink
+      price: 110
+    - productEntity: Z14751M80BoxCink
+      price: 110
+    - productEntity: 939BPBoxCink
+      price: 125
+#    - productEntity: Z14921BTGJBoxCink
+#      price: 125
+    - productEntity: Z14754FMJBoxCink
+      price: 125
+    - productEntity: Z14545BPBoxCink
+      price: 155
+    - productEntity: Z14556M856BoxCink
+      price: 155
+    - productEntity: Z14739PCBoxCink
+      price: 185
+    - productEntity: Z14751M61BoxCink
+      price: 185
+    - productEntity: Z14754PCBoxCink
+      price: 185
+    - productEntity: 939SP6BoxCink
+      price: 195
+#    - productEntity: Z149217N42BoxCink
+#      price: 195

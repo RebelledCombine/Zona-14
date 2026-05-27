@@ -1,0 +1,233 @@
+- type: entity
+  parent: STBaseCache
+  id: Z14STCacheStorageProect
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Project crate
+  description: A rather old crate. It might be worth searching.
+  components:
+    - type: StorageFill
+      contents:
+        - id: ProectPVP
+          prob: 0.3
+        - id: ProectPVP2
+          prob: 0.3
+        - id: ProectPVE
+          prob: 0.4
+        - id: ProectENV
+          prob: 0.3
+    - type: TimedDespawn
+      lifetime: 9999999
+    - type: Sprite
+      sprite: _Stalker/Objects/Other/Boxes/black_crate.rsi
+      state: icon
+
+- type: entity
+  parent: BaseItem
+  id: Z14ProectPVE
+  categories: [ Zona14 ]
+  name: Project hunting kit
+  description: Standard Project equipment supply kit
+  suffix: Z14, T3
+  components:
+    - type: Item
+      size: Small
+      shape:
+        - 0,0,3,3
+    - type: STWeight
+      self: 15
+    - type: Sprite
+      sprite: _Stalker/Structures/Furniture/carton_box.rsi
+      state: kb2
+    - type: Icon
+      sprite: _Stalker/Structures/Furniture/carton_box.rsi
+      state: kb2
+    - type: SpawnItemsOnUse
+      items:
+        - id: ClothingOuterArmorZaryaStalker
+        - id: STWeaponShotgunMossbergM88
+        - id: MedkitMilitary
+        - id: MedkitScience
+        - id: MedkitAI2
+        - id: MedkitAI2
+        - id: STGauze
+        - id: ClothingMaskNeckFacemask
+        - id: ClothingShoesBootsCombat
+        - id: STCombatKnife
+        - id: ClothingBeltBandolierStalker
+        - id: 7mmBuckshotBox
+        - id: 7mmBuckshotBox
+        - id: 6mmBuckshotBox
+        - id: 6mmBuckshotBox
+        - id: 6mmBuckshotBox
+        - id: ClothingHeadHelmetLight
+        - id: ClothingBackpackDuffelMilitaryOlive
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  parent: BaseItem
+  id: Z14ProectENV
+  categories: [ Zona14 ]
+  name: Project artifact kit
+  description: Standard Project equipment supply kit
+  suffix: Z14, T3
+  components:
+    - type: Item
+      size: Small
+      shape:
+        - 0,0,3,3
+    - type: STWeight
+      self: 15
+    - type: Sprite
+      sprite: _Stalker/Structures/Furniture/carton_box.rsi
+      state: kb2
+    - type: Icon
+      sprite: _Stalker/Structures/Furniture/carton_box.rsi
+      state: kb2
+    - type: SpawnItemsOnUse
+      items:
+        - id: ClothingOuterArmorSevaStalker
+        - id: STWeaponRevolverChiappaRhino60DS
+        - id: MedkitScience
+        - id: MedkitScience
+        - id: MedkitAI2
+        - id: MedkitLAR
+        - id: STGauze
+        - id: ClothingMaskNeckFacemask
+        - id: ClothingShoesBootsCombat
+        - id: STCombatKnife
+        - id: Z1445ACPMFMJBox
+        - id: Z1445ACPMFMJBox
+        - id: Z1445ACPMFMJBox
+        - id: STSpeedLoader45ACPEmpty
+        - id: STSpeedLoader45ACPEmpty
+        - id: STBoltBagFilled
+        - id: GeigerCounter
+        - id: ZoneArtifactDetectorResponse
+        - id: STSkinsKitProject
+        - id: ClothingBackpackDuffelMilitaryOlive
+        - id: BoxArtcont
+        - id: BoxArtcont
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  parent: BaseItem
+  id: Z14ProectPVP
+  categories: [ Zona14 ]
+  name: Project combat kit
+  description: Standard Project equipment supply kit
+  suffix: Z14, T2
+  components:
+    - type: Item
+      size: Small
+      shape:
+        - 0,0,3,3
+    - type: STWeight
+      self: 15
+    - type: Sprite
+      sprite: _Stalker/Structures/Furniture/carton_box.rsi
+      state: kb2
+    - type: Icon
+      sprite: _Stalker/Structures/Furniture/carton_box.rsi
+      state: kb2
+    - type: SpawnItemsOnUse
+      items:
+        - id: STClothingOuterArmorLightPlateVestBaseStalker
+        - id: ClothingHeadHelmetLight
+        - id: Z14STWeaponSMGMP5
+        - id: MedkitMilitary
+        - id: MedkitMilitary
+        - id: MedkitAI2
+        - id: MedkitAI2
+        - id: STGauze
+        - id: STBrutepack
+        - id: ClothingMaskNeckFacemask
+        - id: ClothingShoesBootsCombat
+        - id: STCombatKnife
+        - id: STModuleSMGGripT1
+        - id: ClothingBackpackStalkerZaryaBlack
+        - id: STPillboxProbud
+        - id: BaseMP5Mag
+        - id: BaseMP5Mag
+        - id: BaseMP5Mag
+        - id: BaseMP5Mag
+        - id: BaseMP5Mag
+        - id: BaseMP5Mag
+        - id: BaseMP5Mag
+        - id: Binocularus1
+        - id: Z14919PBMBox
+        - id: Z14919PBMBox
+        - id: Z14919PBMBox
+        - id: Z14919PBMBox
+        - id: Z14919PBMBox
+        - id: Z14919PBMBox
+        - id: Z14919PBMBox
+        - id: Z14919PBMBox
+        - id: GeigerCounter
+        - id: STSkinsKitProject
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  parent: BaseItem
+  id: Z14ProectPVP2
+  categories: [ Zona14 ]
+  name: advanced Project combat kit
+  description: Advanced Project equipment supply kit
+  suffix: Z14, T3
+  components:
+  - type: Item
+    size: Small
+    shape:
+    - 0,0,3,3
+  - type: STWeight
+    self: 15
+  - type: Sprite
+    sprite: _Stalker/Structures/Furniture/carton_box.rsi
+    state: kb2
+  - type: Icon
+    sprite: _Stalker/Structures/Furniture/carton_box.rsi
+    state: kb2
+  - type: SpawnItemsOnUse
+    items:
+    - id: STClothingOuterArmorLightPlateVestBaseANAgreen
+    - id: ClothingHeadHelmetInfantry
+    - id: Binocularus1
+    - id: Z14STWeaponRifleM4
+    - id: MedkitMilitary
+    - id: MedkitMilitary
+    - id: MedkitMilitary
+    - id: MedkitMilitary
+    - id: ClothingBackpackStalkerZaryaBlack
+    - id: STPillboxProbud
+    - id: MedkitAI2
+    - id: MedkitAI2
+    - id: MedkitScience
+    - id: MedkitScience
+    - id: STGauze
+    - id: STBrutepack
+    - id: ClothingMaskGasXM40Project
+    - id: ClothingShoesBootsCombat
+    - id: STCombatKnife
+    - id: 556Mag30
+    - id: 556Mag30
+    - id: 556Mag30
+    - id: 556Mag30
+    - id: 556Mag30
+    - id: 556Mag30
+    - id: 556Mag30
+    - id: Z14556M855Box
+    - id: Z14556M855Box
+    - id: Z14556M855Box
+    - id: Z14556M855Box
+    - id: Z14556M855Box
+    - id: Z14556M855Box
+    - id: Z14556M855Box
+    - id: Z14556M856Box
+    - id: Z14556M856Box
+    - id: GeigerCounter
+    - id: STSkinsKitProject
+    sound:
+      path: /Audio/Effects/unwrap.ogg

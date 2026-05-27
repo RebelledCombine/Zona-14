@@ -2,6 +2,7 @@
   id: DolgShopPresetZONA # Mutant parts 1.5x Barman - Pending Economy Change
   minSellPrice: 5
   itemsForSale:
+# MARK: Mutant Parts
     #Boars -------- Health * T
     MutantPartBoarHoof: 275 # T1
     MutantPartSeasonedBoarHoof: 545 # T2
@@ -33,31 +34,32 @@
     MutantPartBurerBrain: 3500
     MutantPartControllerBrain: 6500
 
+# MARK: Items to Buy
   categories:
     - name: shop-category-weapons
       priority: 1
       items:
         # Pistols
-        WeaponPistolStalkerAPS: 500 #T2
-        WeaponPistolStalkerTT: 250
+        Z14WeaponPistolStalkerAPS: 500 #T2
+        Z14WeaponPistolStalkerTT: 250
         # Shotguns
         STWeaponShotgunTOZ34: 200
         STWeaponShotgunMP133: 340
         STWeaponShotgunMP153: 800
         # Rifles
-        STWeaponRifleSaiga545: 1000
-        STWeaponRifleAKS74U: 1500
-        STWeaponRifleAKS74: 4000
-        STWeaponRifleOC14: 5650
-        STWeaponRifleAK103: 8000
-        STWeaponRifleAKM: 6000
+        Z14STWeaponRifleSaiga545: 1000
+        Z14STWeaponRifleAKS74U: 1500
+        Z14STWeaponRifleAKS74: 4000
+        Z14STWeaponRifleOC14: 5650
+        Z14STWeaponRifleAK103: 8000
+        Z14STWeaponRifleAKM: 6000
         # SMGs
-        STWeaponSMGPP91: 1200
-        STWeaponSMGStalkerCP2Veresk: 2000
-        STWeaponSMGPP19: 3000
+        Z14STWeaponSMGPP91: 1200
+        Z14STWeaponSMGStalkerCP2Veresk: 2000
+        Z14STWeaponSMGPP19: 3000
         # Snipers
-        STWeaponSniperMosin: 1200
-        STWeaponSniperSKS: 1500
+        Z14STWeaponSniperMosin: 1200
+        Z14STWeaponSniperSKS: 1500
 
     - name: shop-category-magazines
       priority: 2
@@ -85,29 +87,29 @@
         7mmBuckshotBox: 50 # T0
         8mmBuckshotBox: 750 # T2
         # 7.25
-        725PBox: 90 # T1
-        725LRNPCBox: 500 # Mutant
+        Z14725PBox: 90 # T1
+        Z14725LRNPCBox: 500 # Mutant
         # 9.19
-        919PSOGJBox: 100 # T1
-        919PSTBox: 450 # T2
-        919PBMBox: 1450 # T3
-        919RIPBox: 500 # Mutant
+        Z14919PSOGJBox: 100 # T1
+        Z14919PSTBox: 450 # T2
+        Z14919PBMBox: 1450 # T3
+        Z14919RIPBox: 500 # Mutant
         # 9.18
-        918PGJBox: 100 # T1
-        918PSTBox: 450 # T2
-        918PBMBox: 1450 # T3
-        918SP7Box: 500 # Mutant
+        Z14918PGJBox: 100 # T1
+        Z14918PSTBox: 450 # T2
+        Z14918PBMBox: 1450 # T3
+        Z14918SP7Box: 500 # Mutant
         # 5.45
-        545FMJBox: 500 # T2
-        545HPBox: 625 # Mutant
-        545PCBox: 1650 # T3
+        Z14545FMJBox: 500 # T2
+        Z14545HPBox: 625 # Mutant
+        Z14545PCBox: 1650 # T3
         # 7.39
-        739FMJBox: 1950 # T3
-        739HPBox: 750 # Mutant
+        Z14739FMJBox: 1950 # T3
+        Z14739HPBox: 750 # Mutant
 
         # 7.54
-        754FMJBox: 2500 # T3
-        754HPBox: 1250 # Mutant
+        Z14754FMJBox: 2500 # T3
+        Z14754HPBox: 1250 # Mutant
         # Other
 
     - name: shop-category-medicine
@@ -257,8 +259,8 @@
     - name: shop-category-grenades
       priority: 12
       items:
-        KhattabkaGrenade: 550
-        DG05SmokeGrenade: 425
+        Z14KhattabkaGrenade: 550
+        Z14DG05SmokeGrenade: 425
 
     - name: shop-category-customization
       priority: 13

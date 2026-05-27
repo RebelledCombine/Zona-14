@@ -11,7 +11,7 @@
     pullTime: 3.5
   - type: GunWieldBonus
     minAngle: -53
-    maxAngle: -65 # Zona14: -60<-65
+    maxAngle: -65
   - type: Clothing
     sprite: _Stalker/Objects/Weapons/Guns/Rifles/abakan.rsi
   - type: Item
@@ -23,9 +23,9 @@
       path: /Audio/_Stalker/Effects/Guns/n_abakan_shot.ogg
     minAngle: 55
     maxAngle: 95
-    fireRate: 10 # Zona14: 7.5<10
-    angleIncrease: 1.5 # Zona14: 1.4<1.5
-    angleDecay: 8 # Zona14: 6<8
+    fireRate: 7.5
+    angleIncrease: 1.4
+    angleDecay: 7
     projectileSpeed: 60
     selectedMode: FullAuto
     availableModes:
@@ -49,8 +49,8 @@
   - type: PullDoAfter
     pullTime: 2.5
   - type: GunWieldBonus
-    minAngle: -50 # Zona14: -43<-50
-    maxAngle: -65
+    minAngle: -43
+    maxAngle: -60
   - type: Clothing
     sprite: _Stalker/Objects/Weapons/Guns/Rifles/aek971.rsi
   - type: Item
@@ -60,11 +60,11 @@
   - type: Gun
     soundGunshot:
       path: /Audio/_Stalker/Effects/Guns/aek971.ogg
-    minAngle: 48 # Zona14: 45<48
-    maxAngle: 100 # Zona14: 105<100
-    fireRate: 15 # Zona14: 9<15
-    angleIncrease: 2.0 # Zona14: 1<2.0
-    angleDecay: 8
+    minAngle: 45
+    maxAngle: 105
+    fireRate: 9
+    angleIncrease: 1
+    angleDecay: 6
     projectileSpeed: 60
     selectedMode: FullAuto
     availableModes:

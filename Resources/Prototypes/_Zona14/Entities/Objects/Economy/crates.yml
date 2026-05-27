@@ -1,0 +1,2271 @@
+# MARK: UN Kits
+
+- type: entity
+  parent: BaseItem
+  id: Z14UNstandartCrate
+  categories: [ Zona14 ]
+  name: UN kit
+  description: Standard UN equipment supply kit, T4
+  suffix: Z14, T4
+  components:
+    - type: Item
+      size: Large
+      shape:
+        - 0,0,6,6
+    - type: Sprite
+      sprite: _Stalker/Structures/Furniture/carton_box.rsi
+      state: kb2
+    - type: Icon
+      sprite: _Stalker/Structures/Furniture/carton_box.rsi
+      state: kb2
+    - type: SpawnItemsOnUse
+      items:
+        - id: ClothingBeltTarzanGreen
+        - id: ClothingOuterArmorUNTAR
+        - id: ClothingHeadHelmetUlachUN
+        - id: ClothingBackpackDuffelCommonStalker
+        - id: BaseRadio
+        - id: Brutepack
+        - id: Brutepack
+        - id: Brutepack
+        - id: MedkitMilitary
+        - id: MedkitMilitary
+        - id: Z14556M856Box
+        - id: Z14556M856Box
+        - id: Z14556M856Box
+        - id: Z14556M856Box
+        - id: Z14556M856Box
+        - id: Z14556M856Box
+        - id: 556Mag30
+        - id: 556Mag30
+        - id: 556Mag30
+        - id: 556Mag30
+        - id: BoxMRE
+        - id: BoxMRE
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  parent: BaseItem
+  id: Z14UNstandartCrateT3
+  categories: [ Zona14 ]
+  name: UN kit
+  description: Standard UN equipment supply kit, T3.
+  suffix: Z14, T3
+  components:
+    - type: Item
+      size: Large
+      shape:
+        - 0,0,6,6
+    - type: Sprite
+      sprite: _Stalker/Structures/Furniture/carton_box.rsi
+      state: kb2
+    - type: Icon
+      sprite: _Stalker/Structures/Furniture/carton_box.rsi
+      state: kb2
+    - type: SpawnItemsOnUse
+      items:
+        - id: ClothingBeltTarzanGreen
+        - id: STClothingOuterArmorLightPlateVestBaseANAUN
+        - id: ClothingHeadInfantryHelmetUN
+        - id: ClothingBackpackDuffelCommonStalker
+        - id: BaseRadio
+        - id: Brutepack
+        - id: Brutepack
+        - id: Brutepack
+        - id: MedkitMilitary
+        - id: MedkitMilitary
+        - id: Z14919PBMBox
+        - id: Z14919PBMBox
+        - id: Z14919PBMBox
+        - id: Z14919PBMBox
+        - id: Z14919PBMBox
+        - id: Z14919PBMBox
+        - id: BaseMP5Mag
+        - id: BaseMP5Mag
+        - id: BaseMP5Mag
+        - id: BaseMP5Mag
+        - id: BoxMRE
+        - id: BoxMRE
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+
+# MARK: Army Equipment Crates
+
+- type: entity
+  parent: BaseItem
+  id: Z14ArmyAK1Crate
+  categories: [ Zona14 ]
+  name: old PSZ-7 AKSU kit
+  description: Basic army PSZ kit designed for SOP soldiers, first version.
+  suffix: Z14, T3
+  components:
+    - type: STWeight
+      self: 87.2
+    - type: Item
+      size: Ginormous
+    - type: MultiHandedItem
+    - type: Sprite
+      sprite: _Stalker/Structures/Furniture/olive_bag.rsi
+      state: icon
+    - type: SpawnItemsOnUse
+      items:
+        - id: STClothingOuterArmorLightPlateVestBasePSZ7v3
+        - id: Zipties
+        - id: ClothingHeatBagStalker
+        - id: PowerCellHyper
+        - id: Binocularus1
+        - id: ClothingHeadBandana2Military
+        - id: Z14STWeaponRifleAKS74U
+        - id: ClothingBeltGreenWebbingStalker
+        - id: DrinkMREFlask
+        - id: DrinkMREFlask
+        - id: Zipties
+        - id: Zipties
+        - id: STCombatKnife
+        - id: MedkitMilitary
+        - id: MedkitMilitary
+        - id: MedkitMilitary
+        - id: MedkitMilitary
+        - id: MedkitMilitary
+        - id: 545Mag30
+        - id: 545Mag30
+        - id: 545Mag30
+        - id: 545Mag30
+        - id: 545Mag30
+        - id: 545Mag30
+        - id: Z14545PCBox
+        - id: Z14545PCBox
+        - id: Z14545PCBox
+        - id: Z14545PCBox
+        - id: Z14545PCBox
+        - id: Z14545PCBox
+        - id: STFoodBreadPlain
+        - id: STFoodBreadPlain
+        - id: FlashlightSeclite
+        - id: BaseRadio
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  parent: UNstandartCrate
+  id: Z14DuryAK2Crate
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: AKSU kit with Duty jacket
+  description: A kit for those who are completely broke.
+  components:
+    - type: Item
+      size: Large
+      shape:
+        - 0,0,5,5
+    - type: Sprite
+      sprite: _Stalker/Structures/Furniture/carton_box.rsi
+      state: kb3
+    - type: Icon
+      sprite: _Stalker/Structures/Furniture/carton_box.rsi
+      state: kb3
+    - type: SpawnItemsOnUse
+      items:
+        - id: ClothingOuterJacketDolg
+        - id: Z14STWeaponRifleAKS74U
+        - id: 545Mag30
+        - id: Base545Mag10
+        - id: Base545Mag10
+        - id: Base545Mag10
+        - id: Z14545PCBox
+        - id: Z14545PCBox
+        - id: Z14545PCBox
+        - id: Gauze
+        - id: FlashlightSeclite
+        - id: PowerCellHyper
+        - id: BaseRadio
+        - id: STCombatKnife
+        - id: ClothingBackpackDuffelGreenStalker
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  parent: BaseItem
+  id: Z14ArmyAKCUCrate
+  categories: [ Zona14 ]
+  name: SOP private kit
+  description: Basic army kit designed for SOP soldiers, modified for the Exclusion Zone.
+  suffix: Z14, T3
+  components:
+    - type: STWeight
+      self: 87.2
+    - type: Item
+      size: Ginormous
+    - type: MultiHandedItem
+    - type: Sprite
+      sprite: _Stalker/Structures/Furniture/olive_bag.rsi
+      state: icon
+    - type: SpawnItemsOnUse
+      items:
+        - id: STClothingOuterArmorLightPlateVestBaseMilitary
+        - id: Zipties
+        - id: Zipties
+        - id: PowerCellHyper
+        - id: ClothingHeadHatMilitary
+        - id: Z14STWeaponRifleAKS74U
+        - id: ClothingBeltGreenWebbingStalker
+        - id: ClothingBackpackTacticOliveStalker
+        - id: DrinkMREFlask
+        - id: DrinkMREFlask
+        - id: FoodTinMRE
+        - id: FoodTinMRE
+        - id: Z14RGD5Grenade
+        - id: STFoodBreadPlain
+        - id: STCombatKnife
+        - id: MedkitAI2
+        - id: MedkitAI2
+        - id: MedkitMilitary
+        - id: MedkitMilitary
+        - id: MedkitScience
+        - id: STOintment
+        - id: STGauze
+        - id: STGauze
+        - id: 545Mag30
+        - id: 545Mag30
+        - id: 545Mag30
+        - id: 545Mag30
+        - id: 545Mag30
+        - id: 545Mag30
+        - id: Z14545FMJBox
+        - id: Z14545FMJBox
+        - id: Z14545FMJBox
+        - id: Z14545FMJBox
+        - id: Z14545FMJBox
+        - id: Z14545FMJBox
+        - id: STFlashlightSeclite
+        - id: BaseRadio
+        - id: STPillboxProbud
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  parent: UNstandartCrate
+  id: Z14ArmyAKCCrate
+  categories: [ Zona14 ]
+  name: SOP sergeant kit
+  description: Sergeant army kit designed for SOP soldiers, modified for the Exclusion Zone.
+  suffix: Z14, T3
+  components:
+    - type: STWeight
+      self: 87.2
+    - type: Item
+      size: Ginormous
+    - type: MultiHandedItem
+    - type: Sprite
+      sprite: _Stalker/Structures/Furniture/olive_bag.rsi
+      state: icon
+    - type: SpawnItemsOnUse
+      items:
+        - id: STClothingOuterArmorLightPlateVestBaseMilitary
+        - id: Zipties
+        - id: Zipties
+        - id: PowerCellHyper
+        - id: ClothingHeadHatMilitary
+        - id: Z14STWeaponRifleAKS74
+        - id: ClothingBeltGreenWebbingStalker
+        - id: ClothingBackpackTacticOliveStalker
+        - id: DrinkMREFlask
+        - id: DrinkMREFlask
+        - id: FoodTinMRE
+        - id: FoodTinMRE
+        - id: Z14RGD5Grenade
+        - id: Z14RGD5Grenade
+        - id: STFoodBreadPlain
+        - id: STCombatKnife
+        - id: MedkitAI2
+        - id: MedkitAI2
+        - id: MedkitMilitary
+        - id: MedkitMilitary
+        - id: MedkitScience
+        - id: STTourniquet
+        - id: STOintmentGood
+        - id: STGauze
+        - id: STGauze
+        - id: 545Mag30
+        - id: 545Mag30
+        - id: 545Mag30
+        - id: 545Mag30
+        - id: 545Mag30
+        - id: 545Mag30
+        - id: Z14545FMJBox
+        - id: Z14545FMJBox
+        - id: Z14545FMJBox
+        - id: Z14545FMJBox
+        - id: Z14545FMJBox
+        - id: Z14545FMJBox
+        - id: STFlashlightSeclite
+        - id: BaseRadio
+        - id: Binocularus1
+        - id: STPillboxProbud
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  parent: BaseItem
+  id: Z14ArmyAKMOfficerCrate
+  categories: [ Zona14 ]
+  name: SOP officer kit
+  description: Officer PSZ kit designed for SOP officers.
+  suffix: Z14, T3
+  components:
+    - type: STWeight
+      self: 87.2
+    - type: Item
+      size: Ginormous
+    - type: MultiHandedItem
+    - type: Sprite
+      sprite: _Stalker/Structures/Furniture/olive_bag.rsi
+      state: icon
+    - type: SpawnItemsOnUse
+      items:
+        - id: Zipties
+        - id: Zipties
+        - id: PowerCellHyper
+        - id: STClothingOuterArmorLightPlateVestBaseMilitary
+        - id: Z14STWeaponRifleAKS74
+        - id: ClothingHeadBeretMilitary
+        - id: ClothingBeltWebbingOfficerStalker
+        - id: ClothingBackpackTacticOliveStalker
+        - id: DrinkMREFlask
+        - id: DrinkMREFlask
+        - id: FoodTinMRE
+        - id: FoodTinMRE
+        - id: Z14RGD5Grenade
+        - id: Z14RGD5Grenade
+        - id: Z14RGD5Grenade
+        - id: STFoodBreadPlain
+        - id: STCombatKnife
+        - id: Z14WeaponPistolStalkerPM
+        - id: BasePMMag
+        - id: BasePMMag
+        - id: Z14918PBMBox
+        - id: MedkitAI2
+        - id: MedkitAI2
+        - id: 545Mag45
+        - id: 545Mag45
+        - id: 545Mag30
+        - id: 545Mag30
+        - id: 545Mag30
+        - id: Z14545PCBox
+        - id: Z14545PCBox
+        - id: Z14545PCBox
+        - id: Z14545PCBox
+        - id: Z14545PCBox
+        - id: Z14545PCBox
+        - id: MedkitMilitary
+        - id: MedkitMilitary
+        - id: MedkitScience
+        - id: MedkitScience
+        - id: STTourniquet
+        - id: STOintmentGood
+        - id: STGauze
+        - id: STFlashlightSeclite
+        - id: BaseRadio
+        - id: Binocularus1
+        - id: Bloodpack
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  parent: UNstandartCrate
+  id: Z14ArmySMGCrate
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: OKSOP Vityaz kit
+  description: Basic OKSOP equipment supply kit
+  components:
+    - type: Item
+      size: Large
+      shape:
+        - 0,0,5,5
+    - type: Sprite
+      sprite: _Stalker/Structures/Furniture/carton_box.rsi
+      state: kb3
+    - type: Icon
+      sprite: _Stalker/Structures/Furniture/carton_box.rsi
+      state: kb3
+    - type: SpawnItemsOnUse
+      items:
+        - id: STClothingOuterArmorLightPlateVestBaseMilitary
+        - id: ClothingMaskXoma
+        - id: ClothingHeadHelmetBerill5MMilitary
+        - id: VityazMag
+        - id: VityazMag
+        - id: VityazMag
+        - id: VityazMag
+        - id: VityazMag
+        - id: BoxMRE
+        - id: BoxMRE
+        - id: Z14STWeaponSMGPP1901
+        - id: ClothingBackpackDuffelCommonStalker
+        - id: Z14919PSTBox
+        - id: Z14919PSTBox
+        - id: Z14919PSTBox
+        - id: Z14919PSTBox
+        - id: Z14919PSTBox
+        - id: Z14919PSTBox
+        - id: BaseRadio
+        - id: Brutepack
+        - id: Brutepack
+        - id: Brutepack
+        - id: MedkitMilitary
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  parent: UNstandartCrate
+  id: Z14ArmyAKSUCrate
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: OKSOP Ksyukha kit
+  description: Improved OKSOP equipment supply kit
+  components:
+    - type: Item
+      size: Large
+      shape:
+        - 0,0,6,6
+    - type: Sprite
+      sprite: _Stalker/Structures/Furniture/carton_box.rsi
+      state: kb2
+    - type: Icon
+      sprite: _Stalker/Structures/Furniture/carton_box.rsi
+      state: kb2
+    - type: SpawnItemsOnUse
+      items:
+        - id: ClothingBeltTarzanGreen
+        - id: STClothingOuterArmorLightPlateVestBasePSZ7
+        - id: ClothingMaskGP7
+        - id: ClothingHeadHelmetBerill5MMilitary
+        - id: 545Mag30
+        - id: 545Mag30
+        - id: 545Mag30
+        - id: 545Mag30
+        - id: 545Mag30
+        - id: BoxMRE
+        - id: BoxMRE
+        - id: Z14STWeaponRifleAKS74U
+        - id: ClothingBackpackDuffelCommonStalker
+        - id: Z14545PCBox
+        - id: Z14545PCBox
+        - id: Z14545PCBox
+        - id: Z14545PCBox
+        - id: Z14545PCBox
+        - id: Z14545PCBox
+        - id: BaseRadio
+        - id: Brutepack
+        - id: Brutepack
+        - id: Brutepack
+        - id: MedkitMilitary
+        - id: MedkitMilitary
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+
+
+
+- type: entity
+  parent: UNstandartCrate
+  id: Z14ArmySergCrate
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: OKSOP Sergeant kit
+  description: OKSOP equipment supply kit for squad leaders. Equivalent to class 4.
+  components:
+    - type: Item
+      size: Large
+      shape:
+        - 0,0,6,6
+    - type: Sprite
+      sprite: _Stalker/Structures/Furniture/carton_box.rsi
+      state: kb2
+    - type: Icon
+      sprite: _Stalker/Structures/Furniture/carton_box.rsi
+      state: kb2
+    - type: SpawnItemsOnUse
+      items:
+        - id: ClothingBeltGreenWebbingStalker
+        - id: ClothingOuterArmor6B13
+        - id: ClothingMaskGP21
+        - id: ClothingHeadHelmetBulatMilitary
+        - id: 545Mag45
+        - id: 545Mag45
+        - id: 545Mag30
+        - id: 545Mag30
+        - id: 545Mag30
+        - id: Z14STWeaponRifleAKS74
+        - id: ClothingBackpackDuffelMilitaryOlive
+        - id: Z14545PCBox
+        - id: Z14545PCBox
+        - id: Z14545PCBox
+        - id: Z14545PCBox
+        - id: Z14545PCBox
+        - id: Z14545PCBox
+        - id: Z14545PCBox
+        - id: Z14545PCBox
+        - id: BaseRadio
+        - id: Brutepack
+        - id: Brutepack
+        - id: BoxMRE
+        - id: BoxMRE
+        - id: MedkitMilitary
+        - id: MedkitMilitary
+        - id: MedkitMilitary
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  parent: UNstandartCrate
+  id: Z14ArmyOffiCrate
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: OKSOP Officer kit
+  description: OKSOP equipment supply kit for commanders. Equivalent to class 5.
+  components:
+    - type: Item
+      size: Large
+      shape:
+        - 0,0,6,6
+    - type: Sprite
+      sprite: _Stalker/Structures/Furniture/carton_box.rsi
+      state: kb2
+    - type: Icon
+      sprite: _Stalker/Structures/Furniture/carton_box.rsi
+      state: kb2
+    - type: SpawnItemsOnUse
+      items:
+        - id: ClothingHeadHelmetBulatMilitary
+        - id: ClothingMaskGP21
+        - id: STClothingOuterArmorLightPlateVestBaseHeavyMilitary
+        - id: ClothingHeadHatBeretSecurity
+        - id: ClothingBeltWebbingOfficerStalker
+        - id: 739Mag30
+        - id: 739Mag30
+        - id: 739Mag30
+        - id: 739Mag30
+        - id: Z14STWeaponRifleAK103
+        - id: ClothingHeadsetStalker
+        - id: ClothingBackpackDuffelMilitaryOlive
+        - id: Z14739BPBox
+        - id: Z14739BPBox
+        - id: Z14739BPBox
+        - id: Z14739BPBox
+        - id: Z14739FMJBox
+        - id: Z14739FMJBox
+        - id: Z14739FMJBox
+        - id: Z14739FMJBox
+        - id: BaseRadio
+        - id: Brutepack
+        - id: Brutepack
+        - id: Brutepack
+        - id: MedkitMilitary
+        - id: MedkitMilitary
+        - id: MedkitMilitary
+        - id: BoxMRE
+        - id: BoxMRE
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  parent: UNstandartCrate
+  id: Z14ArmySaigaCrate
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Saiga kit
+  description: OKSOP equipment supply kit, includes only a Saiga with ammo and magazines.
+  components:
+    - type: Item
+      size: Large
+      shape:
+        - 0,0,4,4
+    - type: Sprite
+      sprite: _Stalker/Structures/Furniture/carton_box.rsi
+      state: kb2
+    - type: Icon
+      sprite: _Stalker/Structures/Furniture/carton_box.rsi
+      state: kb2
+    - type: SpawnItemsOnUse
+      items:
+        - id: STWeaponShotgunSaiga12
+        - id: Base1270Mag
+        - id: Base1270Mag
+        - id: Base1270Mag
+        - id: Base1270Mag
+        - id: Base1270Mag
+        - id: Base1270Mag
+        - id: 6mmBuckshotBox
+        - id: 6mmBuckshotBox
+        - id: 6mmBuckshotBox
+        - id: 6mmBuckshotBox
+        - id: 6mmBuckshotBox
+        - id: 6mmBuckshotBox
+        - id: 6mmBuckshotBox
+        - id: 6mmBuckshotBox
+        - id: 6mmBuckshotBox
+        - id: 6mmBuckshotBox
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+
+# MARK: Science Crates
+
+- type: entity
+  parent: UNstandartCrate
+  id: Z14ArmySciCrate
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: scientist kit
+  description: Scientist equipment supply kit.
+  components:
+    - type: Item
+      size: Large
+      shape:
+        - 0,0,6,6
+    - type: Sprite
+      sprite: _Stalker/Structures/Furniture/carton_box.rsi
+      state: kb2
+    - type: Icon
+      sprite: _Stalker/Structures/Furniture/carton_box.rsi
+      state: kb2
+    - type: SpawnItemsOnUse
+      items:
+        - id: ClothingBackpackTacticBeigeStalker
+        - id: Z14WeaponPistolStalkerGlock
+        - id: BaseGlockMag10
+        - id: BaseGlockMag10
+        - id: GlockMag17
+        - id: GlockMag17
+        - id: Z14919RIPBox
+        - id: Z14919RIPBox
+        - id: Z14919RIPBox
+        - id: Z14919RIPBox
+        - id: ClothingOuterArmorSSP99
+        - id: MedkitScience
+        - id: MedkitScience
+        - id: ClothingMaskGP7
+        - id: GeigerCounter
+        - id: BoxMRE
+        - id: BoxMRE
+        - id: GeigerCounter
+        - id: GeigerCounter
+        - id: GeigerCounter
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+
+# MARK: Medical Crates
+
+- type: entity
+  parent: UNstandartCrate
+  id: Z14AntiradCrate
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: anti-radiation kit
+  description: "Anti-radiation kit with an advertising sticker: 'Your reliable protection against harmful radiation'"
+  components:
+    - type: Item
+      size: Normal
+      shape:
+        - 0,0,3,3
+    - type: Sprite
+      sprite: _Stalker/Structures/Furniture/carton_box.rsi
+      state: kb2
+    - type: Icon
+      sprite: _Stalker/Structures/Furniture/carton_box.rsi
+      state: kb2
+    - type: SpawnItemsOnUse
+      items:
+        - id: DrinkVodkaBottleFull
+        - id: PillCanister
+        - id: antiradpill
+        - id: antiradpill
+        - id: DrinkShotGlass
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  parent: UNstandartCrate
+  id: Z14SanitarCrate
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: medic kit
+  description: Kit intended for providing medical assistance.
+  components:
+    - type: Item
+      size: Normal
+      shape:
+        - 0,0,4,4
+    - type: Sprite
+      sprite: _Stalker/Structures/Furniture/carton_box.rsi
+      state: kb2
+    - type: Icon
+      sprite: _Stalker/Structures/Furniture/carton_box.rsi
+      state: kb2
+    - type: SpawnItemsOnUse
+      items:
+        - id: MedkitCMSStalker
+        - id: MedkitAI2
+        - id: MedkitAI2
+        - id: MedkitAI2
+        - id: MedkitAI2
+        - id: MedkitAI2
+        - id: MedkitAI2
+        - id: MedkitAI2
+        - id: MedkitAI2
+        - id: MedkitAI2
+        - id: MedkitAI2
+        - id: Bloodpack
+        - id: Tourniquet
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  parent: UNstandartCrate
+  id: Z14PolevoyVrachCrate
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: field medic kit
+  description: Extended version of the medical kit.
+  components:
+    - type: Item
+      size: Large
+      shape:
+        - 0,0,5,5
+    - type: Sprite
+      sprite: _Stalker/Structures/Furniture/carton_box.rsi
+      state: kb2
+    - type: Icon
+      sprite: _Stalker/Structures/Furniture/carton_box.rsi
+      state: kb2
+    - type: SpawnItemsOnUse
+      items:
+        - id: MedkitGrizzlyStalker
+        - id: MedkitMilitary
+        - id: MedkitMilitary
+        - id: MedkitMilitary
+        - id: MedkitMilitary
+        - id: MedkitMilitary
+        - id: MedkitMilitary
+        - id: MedkitMilitary
+        - id: MedkitMilitary
+        - id: MedkitMilitary
+        - id: MedkitMilitary
+        - id: Bloodpack
+        - id: Bloodpack
+        - id: Bloodpack
+        - id: Tourniquet
+        - id: Tourniquet
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  parent: UNstandartCrate
+  id: Z14ResearcherCrate
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: researcher kit
+  description: Kit for searching for anomalous formations in the Zone.
+  components:
+    - type: Item
+      size: Large
+      shape:
+        - 0,0,5,5
+    - type: Sprite
+      sprite: _Stalker/Structures/Furniture/carton_box.rsi
+      state: kb2
+    - type: Icon
+      sprite: _Stalker/Structures/Furniture/carton_box.rsi
+      state: kb2
+    - type: SpawnItemsOnUse
+      items:
+        - id: ClothingOuterArmorSpark
+        - id: ClothingMaskGP7
+        - id: ZoneArtifactDetectorResponse
+        - id: antiradpill
+        - id: GeigerCounter
+        - id: GlockMag17
+        - id: GlockMag17
+        - id: Z14919RIPBox
+        - id: Z14919RIPBox
+        - id: Z14WeaponPistolStalkerGlock
+
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  parent: UNstandartCrate
+  id: Z14SaviorCrate
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: rescuer kit
+  description: Ultimate version of the medical kit.
+  components:
+    - type: Item
+      size: Large
+      shape:
+        - 0,0,5,5
+    - type: Sprite
+      sprite: _Stalker/Structures/Furniture/carton_box.rsi
+      state: kb2
+    - type: Icon
+      sprite: _Stalker/Structures/Furniture/carton_box.rsi
+      state: kb2
+    - type: SpawnItemsOnUse
+      items:
+        - id: MedkitGrizzlyStalker
+        - id: MedkitMilitary
+        - id: MedkitMilitary
+        - id: MedkitMilitary
+        - id: MedkitMilitary
+        - id: MedkitMilitary
+        - id: MedkitAI2
+        - id: MedkitAI2
+        - id: MedkitAI2
+        - id: MedkitAI2
+        - id: MedkitAI2
+        - id: MedkitAI2
+        - id: MedkitAI2
+        - id: MedkitAI2
+        - id: MedkitAI2
+        - id: MedkitAI2
+        - id: Defibrillator
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+
+# MARK: Trade Boxes
+
+- type: entity
+  parent: BaseItem
+  id: Z14TradeBox
+  categories: [ Zona14 ]
+  name: contraband package
+  description: Contraband carefully disguised as an ordinary box.
+  suffix: Z14, Economy, Contraband
+  components:
+    - type: STWeight
+      self: 20
+    - type: Item
+      size: Ginormous
+      shape:
+        - 0,0,7,8
+    - type: Sprite
+      sprite: _Stalker/Structures/Furniture/carton_box.rsi
+      state: kb2
+    - type: Icon
+      sprite: _Stalker/Structures/Furniture/carton_box.rsi
+      state: kb2
+    - type: MultiHandedItem
+
+- type: entity
+  parent: BaseItem
+  id: Z14TradeBox2
+  categories: [ Zona14 ]
+  name: supplies and documents package for Sidorovich
+  description: Contraband carefully disguised as an ordinary box.
+  suffix: Z14, Economy, For Clear Sky
+  components:
+    - type: STWeight
+      self: 40
+    - type: Item
+      size: Ginormous
+      shape:
+        - 0,0,7,8
+    - type: Sprite
+      sprite: _Stalker/Structures/Furniture/carton_box.rsi
+      state: kb2
+    - type: Icon
+      sprite: _Stalker/Structures/Furniture/carton_box.rsi
+      state: kb2
+    - type: MultiHandedItem
+
+- type: entity
+  parent: BaseItem
+  id: Z14STLoaderBox
+  categories: [ Zona14 ]
+  name: crate for the buyer
+  description: Loader's work, hard but necessary labor
+  suffix: Z14, Economy
+  components:
+  - type: Item
+    size: Ginormous
+    shape:
+      - 0,0,10,10
+  - type: STWeight
+    self: 50
+  - type: Trash
+    time: 600
+  - type: Sprite
+    sprite: _Stalker/Structures/Furniture/carton_box.rsi
+    state: kb3
+  - type: Icon
+    sprite: _Stalker/Structures/Furniture/carton_box.rsi
+    state: kb3
+  - type: MultiHandedItem
+
+- type: entity
+  parent: BaseItem
+  id: Z14STCannabisBox
+  categories: [ Zona14 ]
+  name: premium herb package
+  description: Carefully disguised as a carton of cigarettes
+  suffix: Z14, Economy, Contraband
+  components:
+    - type: STWeight
+      self: 5
+    - type: Item
+      size: Large
+      shape:
+      - 0,0,2,2
+    - type: Sprite
+      sprite: Objects/Consumable/Smokeables/Cigarettes/Cartons/red.rsi
+      state: icon
+    - type: Icon
+      sprite: Objects/Consumable/Smokeables/Cigarettes/Cartons/red.rsi
+      state: icon
+
+- type: entity
+  parent: BaseItem
+  id: Z14TradeBoxSera
+  categories: [ Zona14 ]
+  name: Seraphim supplies package
+  description: A box of Seraphim supplies, addressed to the northern Limansk coven from the southern coven
+  suffix: Z14, Economy, Contraband
+  components:
+    - type: STWeight
+      self: 15
+    - type: Item
+      size: Large
+      shape:
+        - 0,0,4,2
+    - type: Sprite
+      sprite: _Stalker/Sponsors/donat_crates.rsi
+      state: donat_green
+    - type: Icon
+      sprite: _Stalker/Sponsors/donat_crates.rsi
+      state: donat_green
+    - type: MultiHandedItem
+
+# MARK: Police Crates
+
+- type: entity
+  parent: UNstandartCrate
+  id: Z14PoliceAKCrate
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: police AKSU kit
+  description: Basic AKSU kit for police
+  components:
+    - type: Item
+      size: Large
+      shape:
+        - 0,0,5,5
+    - type: Sprite
+      sprite: _Stalker/Structures/Furniture/carton_box.rsi
+      state: kb3
+    - type: Icon
+      sprite: _Stalker/Structures/Furniture/carton_box.rsi
+      state: kb3
+    - type: SpawnItemsOnUse
+      items:
+        - id: STClothingOuterArmorLightPlateVestBasePolice
+        - id: ClothingHeadHatPoliceHat
+        - id: Z14STWeaponRifleAKS74U
+        - id: ClothingBeltWebbingOfficerStalker
+        - id: 545Mag30
+        - id: 545Mag30
+        - id: 545Mag30
+        - id: 545Mag30
+        - id: 545Mag30
+        - id: 545Mag30
+        - id: Z14545PCBox
+        - id: Z14545PCBox
+        - id: Z14545PCBox
+        - id: Z14545PCBox
+        - id: Z14545PCBox
+        - id: Z14545PCBox
+        - id: Z14545PCBox
+        - id: Z14545PCBox
+        - id: MedkitMilitary
+        - id: MedkitMilitary
+        - id: MedkitMilitary
+        - id: MedkitMilitary
+        - id: MedkitMilitary
+        - id: Gauze
+        - id: Gauze
+        - id: FlashlightSeclite
+        - id: PowerCellHyper
+        - id: PowerCellHyper
+        - id: BaseRadio
+        - id: STCombatKnife
+        - id: DrinkFlaskOld
+        - id: DrinkFlaskOld
+        - id: FoodTinMRE
+        - id: FoodTinMRE
+        - id: BoxHandcuff
+        - id: ClothingHandsGlovesColorBlack
+        - id: Truncheon
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  parent: UNstandartCrate
+  id: Z14PlicePmCrate
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: police PM kit
+  description: PM kit for police
+  components:
+    - type: Item
+      size: Large
+      shape:
+        - 0,0,5,5
+    - type: Sprite
+      sprite: _Stalker/Structures/Furniture/carton_box.rsi
+      state: kb3
+    - type: Icon
+      sprite: _Stalker/Structures/Furniture/carton_box.rsi
+      state: kb3
+    - type: SpawnItemsOnUse
+      items:
+        - id: STClothingOuterArmorLightPlateVestBasePolice
+        - id: Z14WeaponPistolStalkerPM
+        - id: ClothingBeltWebbingOfficerStalker
+        - id: BasePMMag
+        - id: BasePMMag
+        - id: BasePMMag
+        - id: BasePMMag
+        - id: BasePMMag
+        - id: BasePMMag
+        - id: Z14918PBMBox
+        - id: Z14918PBMBox
+        - id: Z14918PBMBox
+        - id: Z14918PBMBox
+        - id: MedkitMilitary
+        - id: MedkitMilitary
+        - id: MedkitMilitary
+        - id: MedkitMilitary
+        - id: MedkitMilitary
+        - id: Gauze
+        - id: Gauze
+        - id: FlashlightSeclite
+        - id: PowerCellHyper
+        - id: PowerCellHyper
+        - id: BaseRadio
+        - id: STCombatKnife
+        - id: DrinkFlaskOld
+        - id: DrinkFlaskOld
+        - id: FoodTinMRE
+        - id: FoodTinMRE
+        - id: BoxHandcuff
+        - id: ClothingHandsGlovesColorBlack
+        - id: Truncheon
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  parent: UNstandartCrate
+  id: Z14PoliceAK103Crate
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: police special forces kit
+  description: Kit for martial law situations.
+  components:
+    - type: Item
+      size: Large
+      shape:
+        - 0,0,5,5
+    - type: Sprite
+      sprite: _Stalker/Structures/Furniture/carton_box.rsi
+      state: kb3
+    - type: Icon
+      sprite: _Stalker/Structures/Furniture/carton_box.rsi
+      state: kb3
+    - type: SpawnItemsOnUse
+      items:
+        - id: ClothingOuterArmor6B13Police
+        - id: ClothingHeadHelmetUlach
+        - id: Z14STWeaponRifleAK103
+        - id: ClothingBeltWebbingOfficerStalker
+        - id: 739Mag30
+        - id: 739Mag30
+        - id: 739Mag30
+        - id: 739Mag30
+        - id: 739Mag30
+        - id: 739Mag30
+        - id: Z14739PCBox
+        - id: Z14739PCBox
+        - id: Z14739PCBox
+        - id: Z14739PCBox
+        - id: Z14739PCBox
+        - id: Z14739PCBox
+        - id: Z14739PCBox
+        - id: Z14739PCBox
+        - id: Z14739PCBox
+        - id: Z14739PCBox
+        - id: MedkitMilitary
+        - id: MedkitMilitary
+        - id: MedkitMilitary
+        - id: MedkitMilitary
+        - id: MedkitMilitary
+        - id: MedkitMilitary
+        - id: MedkitMilitary
+        - id: Gauze
+        - id: Gauze
+        - id: Tourniquet
+        - id: Tourniquet
+        - id: Tourniquet
+        - id: FlashlightSeclite
+        - id: PowerCellHyper
+        - id: PowerCellHyper
+        - id: BaseRadio
+        - id: DrinkFlaskOld
+        - id: DrinkFlaskOld
+        - id: FoodTinMRE
+        - id: FoodTinMRE
+        - id: BoxHandcuff
+        - id: Z14TearGasGrenadeStalker
+        - id: Z14TearGasGrenadeStalker
+        - id: Z14TearGasGrenadeStalker
+        - id: GrenadeFlashBang
+        - id: GrenadeFlashBang
+        - id: GrenadeFlashBang
+        - id: GrenadeFlashBang
+        - id: ClothingHandsGlovesColorBlack
+        - id: ClothingMaskNeckBalaklava3
+        - id: ClothingBackpackTacticBlackStalker
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+
+# MARK: Miscellaneous Crates
+
+- type: entity
+  name: weapon case
+  parent: BriefcaseBase
+  id: Z14BriefcaseWeapon
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: A case for legally carrying weapons.
+  components:
+  - type: Sprite
+    sprite: Objects/Storage/Briefcases/briefcase_brown.rsi
+    state: icon
+  - type: Item
+    sprite: Objects/Storage/Briefcases/briefcase_brown.rsi
+  - type: Storage
+    grid:
+    - 0,0,3,8
+    whitelist:
+      components:
+      - Gun
+      - BallisticAmmoProvider
+
+
+
+- type: entity
+  parent: BaseItem
+  id: Z14UNstandartCrateT3P90
+  categories: [ Zona14 ]
+  name: UN kit with P90
+  description: Standard UN equipment supply kit, T3.
+  suffix: Z14, T3
+  components:
+    - type: Item
+      size: Large
+      shape:
+        - 0,0,6,6
+    - type: Sprite
+      sprite: _Stalker/Structures/Furniture/carton_box.rsi
+      state: kb2
+    - type: Icon
+      sprite: _Stalker/Structures/Furniture/carton_box.rsi
+      state: kb2
+    - type: SpawnItemsOnUse
+      items:
+        - id: ClothingBeltTarzanGreen
+        - id: STClothingOuterArmorLightPlateVestBaseUN
+        - id: ClothingHeadAssaultHelmetUN
+        - id: ClothingBackpackDuffelCommonStalker
+        - id: BaseRadio
+        - id: Brutepack
+        - id: Brutepack
+        - id: Brutepack
+        - id: MedkitMilitary
+        - id: MedkitMilitary
+        - id: Z14919PBMBox
+        - id: Z14919PBMBox
+        - id: Z14919PBMBox
+        - id: Z14919PBMBox
+        - id: Z14919PBMBox
+        - id: Z14919PBMBox
+        - id: Z14919PBMBox
+        - id: Z14919PBMBox
+        - id: Z14919PBMBox
+        - id: P90Mag
+        - id: P90Mag
+        - id: P90Mag
+        - id: P90Mag
+        - id: BoxMRE
+        - id: BoxMRE
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  parent: UNstandartCrate
+  id: Z14ArmyCrateNewStandart
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: new standard OKSOP kit
+  description: OKSOP equipment supply kit
+  components:
+    - type: Item
+      size: Large
+      shape:
+        - 0,0,6,6
+    - type: Sprite
+      sprite: _Stalker/Structures/Furniture/carton_box.rsi
+      state: kb2
+    - type: Icon
+      sprite: _Stalker/Structures/Furniture/carton_box.rsi
+      state: kb2
+    - type: SpawnItemsOnUse
+      items:
+        - id: FoodTinMRE
+        - id: FoodTinMRE
+        - id: DrinkFlaskOld
+        - id: DrinkFlaskOld
+        - id: DrinkWaterBottleFull
+        - id: DrinkWaterBottleFull
+        - id: STGauze
+        - id: STGauze
+        - id: STClothingShoesBootsCombatFilled
+        - id: STClothingOuterArmorLightPlateVestBasePSZ7v3
+        - id: ClothingMaskGP7
+        - id: 545Mag30
+        - id: 545Mag30
+        - id: 545Mag30
+        - id: 545Mag30
+        - id: 545Mag30
+        - id: 545Mag30
+        - id: Z14STWeaponRifleAKS74U
+        - id: Z14WeaponPistolStalkerPM
+        - id: Z14918PSTBox
+        - id: BasePMMag
+        - id: BasePMMag
+        - id: BasePMMag
+        - id: ClothingBeltGreenWebbingStalker
+        - id: FlashlightSeclite
+        - id: PowerCellHigh
+        - id: PowerCellHigh
+        - id: ClothingHeadHelmetBerill5MMilitary
+        - id: Z14545PCBox
+        - id: Z14545PCBox
+        - id: Z14545PCBox
+        - id: Z14545PCBox
+        - id: Z14545PCBox
+        - id: Z14545PCBox
+        - id: BaseRadio
+        - id: STBrutepack
+        - id: STBrutepack
+        - id: STBrutepack
+        - id: MedkitMilitary
+        - id: MedkitMilitary
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  parent: UNstandartCrate
+  id: Z14ArmyCrateNewOfficer
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: new officer OKSOP kit
+  description: OKSOP equipment supply kit
+  components:
+    - type: Item
+      size: Large
+      shape:
+        - 0,0,6,6
+    - type: Sprite
+      sprite: _Stalker/Structures/Furniture/carton_box.rsi
+      state: kb2
+    - type: Icon
+      sprite: _Stalker/Structures/Furniture/carton_box.rsi
+      state: kb2
+    - type: SpawnItemsOnUse
+      items:
+        - id: FoodTinMRE
+        - id: FoodTinMRE
+        - id: DrinkFlaskOld
+        - id: DrinkFlaskOld
+        - id: DrinkWaterBottleFull
+        - id: DrinkWaterBottleFull
+        - id: STGauze
+        - id: STGauze
+        - id: STClothingShoesBootsCombatFilled
+        - id: STClothingOuterArmorLightPlateVestBasePSZ7
+        - id: ClothingMaskGP21
+        - id: 739Mag30
+        - id: 739Mag30
+        - id: 739Mag30
+        - id: 739Mag30
+        - id: 739Mag30
+        - id: 739Mag30
+        - id: Z14STWeaponRifleAKM
+        - id: Z14WeaponPistolStalkerPM
+        - id: Z14918PSTBox
+        - id: BasePMMag
+        - id: BasePMMag
+        - id: BasePMMag
+        - id: ClothingBeltWebbingOfficerStalker
+        - id: FlashlightSeclite
+        - id: PowerCellHigh
+        - id: PowerCellHigh
+        - id: ClothingHeadHelmetBerill5MMilitary
+        - id: Z14739FMJBox
+        - id: Z14739FMJBox
+        - id: Z14739FMJBox
+        - id: Z14739FMJBox
+        - id: Z14739FMJBox
+        - id: Z14739FMJBox
+        - id: BaseRadio
+        - id: STBrutepack
+        - id: STBrutepack
+        - id: STBrutepack
+        - id: MedkitMilitary
+        - id: MedkitMilitary
+        - id: MedkitMilitary
+        - id: MedkitMilitary
+        - id: MedkitMilitary
+        - id: ClothingHeadBeretMilitary
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  parent: UNstandartCrate
+  id: Z14ArmyCrateIssgBase
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: ISSG kit
+  description: ISSG equipment supply kit
+  components:
+    - type: Item
+      size: Large
+      shape:
+        - 0,0,6,6
+    - type: Sprite
+      sprite: _Stalker/Structures/Furniture/carton_box.rsi
+      state: kb2
+    - type: Icon
+      sprite: _Stalker/Structures/Furniture/carton_box.rsi
+      state: kb2
+    - type: SpawnItemsOnUse
+      items:
+        - id: FoodTinMRE
+        - id: FoodTinMRE
+        - id: DrinkFlaskOld
+        - id: DrinkFlaskOld
+        - id: DrinkWaterBottleFull
+        - id: DrinkWaterBottleFull
+        - id: STGauze
+        - id: STGauze
+        - id: STClothingShoesBootsCombatFilled
+        # - id: ClothingOuterArmorIssgSpark # Stalker-TODO: This prototype does not exist
+        - id: BaseMP5Mag
+        - id: BaseMP5Mag
+        - id: BaseMP5Mag
+        - id: BaseMP5Mag
+        - id: BaseMP5Mag
+        - id: BaseMP5Mag
+        - id: Z14STWeaponSMGMP5
+        - id: Z14WeaponPistolStalkerPM
+        - id: Z14918PSTBox
+        - id: BasePMMag
+        - id: BasePMMag
+        - id: BasePMMag
+        - id: FlashlightSeclite
+        - id: PowerCellHigh
+        - id: PowerCellHigh
+        - id: Z14919PBMBox
+        - id: Z14919PBMBox
+        - id: Z14919PBMBox
+        - id: Z14919PBMBox
+        - id: Z14919PBMBox
+        - id: Z14919PBMBox
+        - id: BaseRadio
+        - id: STBrutepack
+        - id: STBrutepack
+        - id: STBrutepack
+        - id: MedkitMilitary
+        - id: MedkitMilitary
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+
+# MARK: SOP Provisions
+
+- type: entity
+  parent: BaseItem
+  id: Z14ArmyProvisionCrate
+  categories: [ Zona14 ]
+  name: army provisions kit
+  description: Basic army kit containing food supplies, designed for SOP soldiers.
+  suffix: Z14
+  components:
+    - type: STWeight
+      self: 87.2
+    - type: Item
+      size: Ginormous
+    - type: MultiHandedItem
+    - type: Sprite
+      sprite: _Stalker/Structures/Furniture/olive_bag.rsi
+      state: icon
+    - type: SpawnItemsOnUse
+      items:
+        - id: DrinkMREFlask
+        - id: DrinkMREFlask
+        - id: DrinkMREFlask
+        - id: DrinkMREFlask
+        - id: STFoodBreadPlain
+        - id: STFoodBreadPlain
+        - id: STFoodBreadPlain
+        - id: STFoodBreadPlain
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  parent: BaseItem
+  id: Z14ArmyMedkitMilitaryCrate
+  categories: [ Zona14 ]
+  name: army medkit kit
+  description: Basic army kit containing military medkits, designed for SOP soldiers.
+  suffix: Z14
+  components:
+    - type: STWeight
+      self: 87.2
+    - type: Item
+      size: Ginormous
+    - type: MultiHandedItem
+    - type: Sprite
+      sprite: _Stalker/Structures/Furniture/olive_bag.rsi
+      state: icon
+    - type: SpawnItemsOnUse
+      items:
+        - id: MedkitAI2
+        - id: MedkitAI2
+        - id: MedkitScience
+        - id: MedkitScience
+        - id: MedkitMilitary
+        - id: MedkitMilitary
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  parent: BaseItem
+  id: Z14Army545Mag30Crate
+  categories: [ Zona14 ]
+  name: army 5.45 magazine kit
+  description: Basic army kit containing 30-round magazines for 5.45x39, designed for SOP soldiers.
+  suffix: Z14
+  components:
+    - type: STWeight
+      self: 87.2
+    - type: Item
+      size: Ginormous
+    - type: MultiHandedItem
+    - type: Sprite
+      sprite: _Stalker/Structures/Furniture/olive_bag.rsi
+      state: icon
+    - type: SpawnItemsOnUse
+      items:
+        - id: 545Mag30
+        - id: 545Mag30
+        - id: 545Mag30
+        - id: 545Mag30
+        - id: 545Mag30
+        - id: 545Mag30
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  parent: BaseItem
+  id: Z14Army545Crate
+  categories: [ Zona14 ]
+  name: army 5.45 PS ammo kit
+  description: Basic army kit containing PS rounds in 5.45x39, designed for SOP soldiers.
+  suffix: Z14, T3
+  components:
+    - type: STWeight
+      self: 87.2
+    - type: Item
+      size: Ginormous
+    - type: MultiHandedItem
+    - type: Sprite
+      sprite: _Stalker/Structures/Furniture/olive_bag.rsi
+      state: icon
+    - type: SpawnItemsOnUse
+      items:
+        - id: Z14545PCBox
+        - id: Z14545PCBox
+        - id: Z14545PCBox
+        - id: Z14545PCBox
+        - id: Z14545PCBox
+        - id: Z14545PCBox
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  parent: BaseItem
+  id: Z14Army739Crate
+  categories: [ Zona14 ]
+  name: army 7.62 PS ammo kit
+  description: Basic army kit containing PS rounds in 7.62x39, designed for SOP soldiers.
+  suffix: Z14, T3
+  components:
+  - type: STWeight
+    self: 87.2
+  - type: Item
+    size: Ginormous
+  - type: MultiHandedItem
+  - type: Sprite
+    sprite: _Stalker/Structures/Furniture/olive_bag.rsi
+    state: icon
+  - type: SpawnItemsOnUse
+    items:
+    - id: Z14739FMJBox
+    - id: Z14739FMJBox
+    - id: Z14739FMJBox
+    - id: Z14739FMJBox
+    - id: Z14739FMJBox
+    - id: Z14739FMJBox
+    sound:
+      path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  parent: BaseItem
+  id: Z14Army739Mag30Crate
+  categories: [ Zona14 ]
+  name: army 7.62 magazine kit
+  description: Basic army kit containing 30-round magazines for 7.62x39, designed for SOP soldiers.
+  suffix: Z14, T3
+  components:
+  - type: STWeight
+    self: 87.2
+  - type: Item
+    size: Ginormous
+  - type: MultiHandedItem
+  - type: Sprite
+    sprite: _Stalker/Structures/Furniture/olive_bag.rsi
+    state: icon
+  - type: SpawnItemsOnUse
+    items:
+    - id: 739Mag30
+    - id: 739Mag30
+    - id: 739Mag30
+    - id: 739Mag30
+    - id: 739Mag30
+    - id: 739Mag30
+    sound:
+      path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  parent: BaseItem
+  id: Z14ArmyBloodPackMilitaryCrate
+  categories: [ Zona14 ]
+  name: army blood pack kit
+  description: Basic army kit containing blood packs, designed for SOP soldiers.
+  suffix: Z14
+  components:
+  - type: STWeight
+    self: 87.2
+  - type: Item
+    size: Ginormous
+  - type: MultiHandedItem
+  - type: Sprite
+    sprite: _Stalker/Structures/Furniture/olive_bag.rsi
+    state: icon
+  - type: SpawnItemsOnUse
+    items:
+    - id: Bloodpack
+    - id: Bloodpack
+    - id: Bloodpack
+    - id: Bloodpack
+    - id: Bloodpack
+    sound:
+      path: /Audio/Effects/unwrap.ogg
+
+# MARK: Monolith Crates
+
+- type: entity
+  parent: BaseItem
+  id: Z14MonolithCrateBasicTools
+  categories: [ Zona14 ]
+  name: Monolith basic tools crate
+  suffix: Z14, T3
+  components:
+    - type: STWeight
+      self: 47.2
+    - type: Item
+      size: Ginormous
+    - type: MultiHandedItem
+    - type: Sprite
+      sprite: _Stalker/Structures/Furniture/Sets/military-box.rsi
+      state: icon
+    - type: SpawnItemsOnUse
+      items:
+        - id: PowerCellHyper
+        - id: PowerCellHyper
+        - id: STCombatKnife
+        - id: Binocularus1
+        - id: BaseRadio
+        - id: FlashlightSeclite
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  parent: BaseItem
+  id: Z14MonolithCrateMedkit
+  categories: [ Zona14 ]
+  name: Monolith medical crate
+  suffix: Z14, T3
+  components:
+    - type: STWeight
+      self: 47.2
+    - type: Item
+      size: Ginormous
+    - type: MultiHandedItem
+    - type: Sprite
+      sprite: _Stalker/Structures/Furniture/Sets/military-box.rsi
+      state: icon
+    - type: SpawnItemsOnUse
+      items:
+        - id: MedkitMilitary
+        - id: MedkitMilitary
+        - id: MedkitScience
+        - id: MedkitScience
+        - id: MedkitScience
+        - id: MedkitAI2
+        - id: STOintmentGood
+        - id: STTourniquet
+        - id: STTourniquet
+        - id: STTourniquet
+        - id: STGauze
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  parent: BaseItem
+  id: Z14MonolithCrate545Mag30
+  categories: [ Zona14 ]
+  name: Monolith 5.45 magazine crate
+  suffix: Z14, T3
+  components:
+    - type: STWeight
+      self: 47.2
+    - type: Item
+      size: Ginormous
+    - type: MultiHandedItem
+    - type: Sprite
+      sprite: _Stalker/Structures/Furniture/Sets/military-box.rsi
+      state: icon
+    - type: SpawnItemsOnUse
+      items:
+        - id: 545Mag30
+        - id: 545Mag30
+        - id: 545Mag30
+        - id: 545Mag30
+        - id: 545Mag30
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  parent: BaseItem
+  id: Z14MonolithCrate545PC
+  categories: [ Zona14 ]
+  name: Monolith 5.45x39 PS ammo crate
+  suffix: Z14, T3
+  components:
+    - type: STWeight
+      self: 47.2
+    - type: Item
+      size: Ginormous
+    - type: MultiHandedItem
+    - type: Sprite
+      sprite: _Stalker/Structures/Furniture/Sets/military-box.rsi
+      state: icon
+    - type: SpawnItemsOnUse
+      items:
+        - id: Z14545PCBox
+        - id: Z14545PCBox
+        - id: Z14545PCBox
+        - id: Z14545PCBox
+        - id: Z14545PCBox
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  parent: BaseItem
+  id: Z14MonolithCrate556Mag30
+  categories: [ Zona14 ]
+  name: Monolith 5.56 magazine crate
+  suffix: Z14, T3
+  components:
+    - type: STWeight
+      self: 47.2
+    - type: Item
+      size: Ginormous
+    - type: MultiHandedItem
+    - type: Sprite
+      sprite: _Stalker/Structures/Furniture/Sets/military-box.rsi
+      state: icon
+    - type: SpawnItemsOnUse
+      items:
+        - id: 556Mag30
+        - id: 556Mag30
+        - id: 556Mag30
+        - id: 556Mag30
+        - id: 556Mag30
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  parent: BaseItem
+  id: Z14MonolithCrate556M855
+  categories: [ Zona14 ]
+  name: Monolith 5.56x45 M855 ammo crate
+  suffix: Z14, T3
+  components:
+    - type: STWeight
+      self: 47.2
+    - type: Item
+      size: Ginormous
+    - type: MultiHandedItem
+    - type: Sprite
+      sprite: _Stalker/Structures/Furniture/Sets/military-box.rsi
+      state: icon
+    - type: SpawnItemsOnUse
+      items:
+        - id: Z14556M855Box
+        - id: Z14556M855Box
+        - id: Z14556M855Box
+        - id: Z14556M855Box
+        - id: Z14556M855Box
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  parent: BaseItem
+  id: Z14MonolithCrate754Mag10
+  categories: [ Zona14 ]
+  name: Monolith 7.62x54 magazine crate
+  suffix: Z14, T3
+  components:
+    - type: STWeight
+      self: 47.2
+    - type: Item
+      size: Ginormous
+    - type: MultiHandedItem
+    - type: Sprite
+      sprite: _Stalker/Structures/Furniture/Sets/military-box.rsi
+      state: icon
+    - type: SpawnItemsOnUse
+      items:
+        - id: 754Mag10
+        - id: 754Mag10
+        - id: 754Mag10
+        - id: 754Mag10
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  parent: BaseItem
+  id: Z14MonolithCrate754FMJ
+  categories: [ Zona14 ]
+  name: Monolith 7.62x54 FMJ ammo crate
+  suffix: Z14, T3
+  components:
+    - type: STWeight
+      self: 47.2
+    - type: Item
+      size: Ginormous
+    - type: MultiHandedItem
+    - type: Sprite
+      sprite: _Stalker/Structures/Furniture/Sets/military-box.rsi
+      state: icon
+    - type: SpawnItemsOnUse
+      items:
+        - id: Z14754FMJBox
+        - id: Z14754FMJBox
+        - id: Z14754FMJBox
+        - id: Z14754FMJBox
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+
+# MARK: Stalker Kits
+
+- type: entity
+  parent: BaseItem
+  id: Z14StalkerHunterCrate
+  categories: [ Zona14 ]
+  name: hunting kit
+  description: Basic hunting gear kit.
+  suffix: Z14
+  components:
+    - type: Item
+      size: Large
+      shape:
+        - 0,0,6,6
+    - type: Sprite
+      sprite: _Stalker/Structures/Furniture/carton_box.rsi
+      state: kb2
+    - type: Icon
+      sprite: _Stalker/Structures/Furniture/carton_box.rsi
+      state: kb2
+    - type: SpawnItemsOnUse
+      items:
+        - id: ClothingOuterArmorZaryaStalker
+        - id: ClothingBeltBandolierStalker
+        - id: STWeaponShotgunTOZ34
+        - id: 7mmBuckshotBox
+        - id: 7mmBuckshotBox
+        - id: 7mmBuckshotBox
+        - id: 7mmBuckshotBox
+        - id: Z14WeaponPistolStalkerTT
+        - id: TTMag
+        - id: TTMag
+        - id: TTMag
+        - id: TTMag
+        - id: TTMag
+        - id: Z14725LRNPCBox
+        - id: Z14725LRNPCBox
+        - id: Z14725LRNPCBox
+        - id: ClothingBackpackTacticBlackStalker
+        - id: STGauze
+        - id: STGauze
+        - id: STBrutepack
+        - id: STBrutepack
+        - id: STCombatKnife
+
+
+- type: entity
+  parent: BaseItem
+  id: Z14StalkerArtefactHunterCrate
+  categories: [ Zona14 ]
+  name: artifact hunter kit
+  description: Basic gear kit for artifact hunting.
+  suffix: Z14
+  components:
+    - type: Item
+      size: Large
+      shape:
+        - 0,0,6,6
+    - type: Sprite
+      sprite: _Stalker/Structures/Furniture/carton_box.rsi
+      state: kb2
+    - type: Icon
+      sprite: _Stalker/Structures/Furniture/carton_box.rsi
+      state: kb2
+    - type: SpawnItemsOnUse
+      items:
+        - id: STClothingOuterArmorRCBZ
+        - id: ZoneArtifactDetectorResponse
+        - id: Z14WeaponPistolStalkerTT
+        - id: TTMag
+        - id: TTMag
+        - id: TTMag
+        - id: Z14725LRNPCBox
+        - id: Z14725LRNPCBox
+        - id: ClothingBackpackTacticBlackStalker
+        - id: STGauze
+        - id: MedkitAI2
+        - id: STCombatKnife
+        - id: BoxArtcont
+        - id: BoxArtcont
+        - id: BoxArtcont
+
+
+- type: entity
+  parent: BaseItem
+  id: Z14StalkerBasedCrate
+  categories: [ Zona14 ]
+  name: basic gear kit
+  description: Basic equipment kit.
+  suffix: Z14
+  components:
+    - type: Item
+      size: Large
+      shape:
+        - 0,0,6,6
+    - type: Sprite
+      sprite: _Stalker/Structures/Furniture/carton_box.rsi
+      state: kb2
+    - type: Icon
+      sprite: _Stalker/Structures/Furniture/carton_box.rsi
+      state: kb2
+    - type: SpawnItemsOnUse
+      items:
+        - id: ClothingOuterArmourJacketStalkerWhite
+        - id: Z14STWeaponRifleSaiga545
+        - id: 545Mag20
+        - id: 545Mag20
+        - id: 545Mag20
+        - id: 545Mag20
+        - id: Z14545FMJBox
+        - id: Z14545FMJBox
+        - id: Z14545FMJBox
+        - id: MedkitAI2
+        - id: STCombatKnife
+        - id: ClothingHeadHelmetLight
+        - id: STGauze
+        - id: STGauze
+
+# MARK: Capture Point Kits
+
+- type: entity
+  parent: BaseItem
+  id: Z14StalkerMedBandShopCrate
+  categories: [ Zona14 ]
+  name: medical supplies kit
+  description: Kit containing various medical supplies.
+  suffix: Z14
+  components:
+    - type: Item
+      size: Large
+      shape:
+        - 0,0,6,6
+    - type: Sprite
+      sprite: _Stalker/Structures/Furniture/carton_box.rsi
+      state: kb2
+    - type: Icon
+      sprite: _Stalker/Structures/Furniture/carton_box.rsi
+      state: kb2
+    - type: SpawnItemsOnUse
+      items:
+        - id: MedkitAI2
+        - id: MedkitAI2
+        - id: MedkitAI2
+        - id: MedkitAI2
+        - id: MedkitAI2
+        - id: MedkitAI2
+        - id: MedkitMilitary
+        - id: MedkitMilitary
+        - id: MedkitMilitary
+        - id: MedkitMilitary
+        - id: MedkitMilitary
+        - id: MedkitMilitary
+        - id: MedkitMilitary
+        - id: MedkitMilitary
+        - id: STGauze
+        - id: STGauze
+        - id: STGauze
+        - id: STGauze
+        - id: STGauze
+        - id: STGauze
+        - id: STGauze
+        - id: STGauze
+        - id: STGauze
+        - id: STGauze
+        - id: STPillboxProbud
+        - id: STPillboxAntirad
+        - id: Bloodpack
+        - id: Bloodpack
+        - id: Bloodpack
+
+
+
+# MARK: Renegades
+
+- type: entity
+  parent: UNstandartCrate
+  id: Z14DesertirCrate
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Renegade gear kit
+  description: Equipment kit
+  components:
+    - type: Item
+      size: Large
+      shape:
+        - 0,0,6,6
+    - type: Sprite
+      sprite: _Stalker/Structures/Furniture/carton_box.rsi
+      state: kb2
+    - type: Icon
+      sprite: _Stalker/Structures/Furniture/carton_box.rsi
+      state: kb2
+    - type: SpawnItemsOnUse
+      items:
+        - id: FoodTinMRE
+        - id: DrinkWaterBottleFull
+        - id: ClothingOuterArmorDeserter6B2
+        - id: 545Mag30
+        - id: 545Mag30
+        - id: STGauze
+        - id: Z14STWeaponRifleAKS74U
+        - id: FlashlightSeclite
+        - id: PowerCellHigh
+        - id: ClothingHeadHelmetLightDeserters
+        - id: Z14545FMJBox
+        - id: Z14545FMJBox
+        - id: Z14545FMJBox
+        - id: Z14545FMJBox
+        - id: STCombatKnife
+        - id: STBrutepack
+        - id: STBrutepack
+        - id: STBrutepack
+        - id: MedkitMilitary
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+
+# MARK: Loners
+
+- type: entity
+  parent: UNstandartCrate
+  id: Z14VeteranCrate
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Stalker Militia gear kit
+  description: Equipment kit
+  components:
+    - type: Item
+      size: Large
+      shape:
+        - 0,0,6,6
+    - type: Sprite
+      sprite: _Stalker/Structures/Furniture/carton_box.rsi
+      state: kb2
+    - type: Icon
+      sprite: _Stalker/Structures/Furniture/carton_box.rsi
+      state: kb2
+    - type: SpawnItemsOnUse
+      items:
+        - id: STClothingOuterKirasa
+        - id: PP91Mag
+        - id: PP91Mag
+        - id: PP91Mag
+        - id: STGauze
+        - id: Z14STWeaponSMGPP91
+        - id: FlashlightSeclite
+        - id: PowerCellHigh
+        - id: ClothingHeadHelmetLight
+        - id: Z14919PSTBox
+        - id: Z14919PSTBox
+        - id: Z14919PSTBox
+        - id: Z14919PSTBox
+        - id: Z14919PSTBox
+        - id: STCombatKnife
+        - id: STBrutepack
+        - id: STBrutepack
+        - id: STBrutepack
+        - id: MedkitMilitary
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+
+# MARK: Bandits
+
+- type: entity
+  parent: UNstandartCrate
+  id: Z14BandityCrate
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Bandit gear kit
+  description: Equipment kit
+  components:
+    - type: Item
+      size: Large
+      shape:
+        - 0,0,6,6
+    - type: Sprite
+      sprite: _Stalker/Structures/Furniture/carton_box.rsi
+      state: kb2
+    - type: Icon
+      sprite: _Stalker/Structures/Furniture/carton_box.rsi
+      state: kb2
+    - type: SpawnItemsOnUse
+      items:
+        - id: ClothingOuterArmourCoatBanditBlack
+        - id: 545Mag30
+        - id: 545Mag30
+        - id: STGauze
+        - id: Z14STWeaponRifleAKS74U
+        - id: FlashlightSeclite
+        - id: PowerCellHigh
+        - id: ClothingHeadHelmetLight
+        - id: Z14545FMJBox
+        - id: Z14545FMJBox
+        - id: Z14545FMJBox
+        - id: Z14545FMJBox
+        - id: STCombatKnife
+        - id: STBrutepack
+        - id: STBrutepack
+        - id: STBrutepack
+        - id: MedkitMilitary
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+
+# MARK: Freedom
+
+- type: entity
+  parent: UNstandartCrate
+  id: Z14FreedomCrate
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Freedom gear kit
+  description: Equipment kit
+  components:
+    - type: Item
+      size: Large
+      shape:
+        - 0,0,6,6
+    - type: Sprite
+      sprite: _Stalker/Structures/Furniture/carton_box.rsi
+      state: kb2
+    - type: Icon
+      sprite: _Stalker/Structures/Furniture/carton_box.rsi
+      state: kb2
+    - type: SpawnItemsOnUse
+      items:
+        - id: STClothingOuterArmorLightPlateVestBaseFreedom
+        - id: 556Mag30
+        - id: 556Mag30
+        - id: STGauze
+        - id: Z14STWeaponRifleL85
+        - id: FlashlightSeclite
+        - id: PowerCellHigh
+        - id: ClothingHeadHelmetLight
+        - id: Z14556FMJBox
+        - id: Z14556FMJBox
+        - id: Z14556FMJBox
+        - id: Z14556FMJBox
+        - id: STCombatKnife
+        - id: STBrutepack
+        - id: STBrutepack
+        - id: STBrutepack
+        - id: MedkitMilitary
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+
+# MARK: Covenant
+
+- type: entity
+  parent: UNstandartCrate
+  id: Z14ZavetCrate
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Covenant gear kit
+  description: Equipment kit
+  components:
+    - type: Item
+      size: Large
+      shape:
+        - 0,0,6,6
+    - type: Sprite
+      sprite: _Stalker/Structures/Furniture/carton_box.rsi
+      state: kb2
+    - type: Icon
+      sprite: _Stalker/Structures/Furniture/carton_box.rsi
+      state: kb2
+    - type: SpawnItemsOnUse
+      items:
+        - id: STClothingOuterArmorLightPlateVestBaseZavet
+        - id: 556Mag30
+        - id: 556Mag30
+        - id: STGauze
+        - id: Z14STWeaponRifleL85
+        - id: FlashlightSeclite
+        - id: PowerCellHigh
+        - id: ClothingHeadHelmetLight
+        - id: Z14556FMJBox
+        - id: Z14556FMJBox
+        - id: Z14556FMJBox
+        - id: Z14556FMJBox
+        - id: STCombatKnife
+        - id: STBrutepack
+        - id: STBrutepack
+        - id: STBrutepack
+        - id: MedkitMilitary
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+
+# MARK: Seraphim
+
+- type: entity
+  parent: UNstandartCrate
+  id: Z14SefirotCrate
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Seraphim gear kit
+  description: Equipment kit
+  components:
+    - type: Item
+      size: Large
+      shape:
+        - 0,0,6,6
+    - type: Sprite
+      sprite: _Stalker/Structures/Furniture/carton_box.rsi
+      state: kb2
+    - type: Icon
+      sprite: _Stalker/Structures/Furniture/carton_box.rsi
+      state: kb2
+    - type: SpawnItemsOnUse
+      items:
+        - id: STClothingOuterArmorLightPlateVestBaseSera
+        - id: 545Mag30
+        - id: 545Mag30
+        - id: STGauze
+        - id: Z14STWeaponRifleAKS74USERAPH
+        - id: FlashlightSeclite
+        - id: PowerCellHigh
+        - id: ClothingHeadHelmetLight
+        - id: Z14545FMJBox
+        - id: Z14545FMJBox
+        - id: Z14545FMJBox
+        - id: Z14545FMJBox
+        - id: STCombatKnife
+        - id: STBrutepack
+        - id: STBrutepack
+        - id: STBrutepack
+        - id: MedkitMilitary
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+
+# MARK: Duty
+
+- type: entity
+  parent: UNstandartCrate
+  id: Z14DutyCrate
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Duty gear kit
+  description: Equipment kit
+  components:
+    - type: Item
+      size: Large
+      shape:
+        - 0,0,6,6
+    - type: Sprite
+      sprite: _Stalker/Structures/Furniture/carton_box.rsi
+      state: kb2
+    - type: Icon
+      sprite: _Stalker/Structures/Furniture/carton_box.rsi
+      state: kb2
+    - type: SpawnItemsOnUse
+      items:
+        - id: STClothingOuterArmorLightPlateVestBaseDolg
+        - id: 545Mag30
+        - id: 545Mag30
+        - id: STGauze
+        - id: Z14STWeaponRifleAKS74U
+        - id: FlashlightSeclite
+        - id: PowerCellHigh
+        - id: ClothingHeadHelmetLight
+        - id: Z14545FMJBox
+        - id: Z14545FMJBox
+        - id: Z14545FMJBox
+        - id: Z14545FMJBox
+        - id: STCombatKnife
+        - id: STBrutepack
+        - id: STBrutepack
+        - id: STBrutepack
+        - id: MedkitMilitary
+      sound:
+        path: /Audio/Effects/unwrap.ogg

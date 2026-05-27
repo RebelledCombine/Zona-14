@@ -8,7 +8,7 @@
   - type: PullDoAfter
     pullTime: 5
   - type: GunWieldBonus
-    minAngle: -25 # Zona14: -50<-25
+    minAngle: -50
     maxAngle: -50
   - type: Item
     sprite: _Stalker/Objects/Weapons/Guns/MachineGuns/rpd.rsi
@@ -18,11 +18,11 @@
     sprite: _Stalker/Objects/Weapons/Guns/MachineGuns/rpd.rsi
     equipDelay: 4
   - type: Gun
-    minAngle: 55 # Zona14: 60<55
-    maxAngle: 130 # Zona14: 120<130
-    fireRate: 12 # Zona14: 6.5<12
-    angleIncrease: 3.5 # Zona14: 2<3.5
-    angleDecay: 6 # Zona14: 10<6
+    minAngle: 60
+    maxAngle: 120
+    fireRate: 6.5
+    angleIncrease: 2
+    angleDecay: 10
     projectileSpeed: 60
   - type: ItemSlots
     slots:

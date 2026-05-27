@@ -11,8 +11,8 @@
   - type: PullDoAfter
     pullTime: 3.5
   - type: GunWieldBonus
-    minAngle: -50 # Zona14: -45<-50
-    maxAngle: -62 # Zona14: -50<-62
+    minAngle: -45
+    maxAngle: -50
   - type: Clothing
     sprite: _Stalker/Objects/Weapons/Guns/Rifles/_Skins/ak12.rsi
   - type: Sprite
@@ -23,11 +23,11 @@
   - type: Gun
     soundGunshot:
       path: /Audio/_Stalker/Effects/Guns/ak.ogg
-    minAngle: 48 # Zona14: 45<48
-    maxAngle: 90 # Zona14: 85<90
-    fireRate: 12 # Zona14: 9<12
-    angleIncrease: 2.0 # Zona14: 1.5<2.0
-    angleDecay: 8 # Zona14: 6<8
+    minAngle: 45
+    maxAngle: 85
+    fireRate: 7
+    angleIncrease: 1.5
+    angleDecay: 6
     projectileSpeed: 60
     selectedMode: FullAuto
     availableModes:
@@ -98,11 +98,10 @@
   - type: Gun
     soundGunshot:
       path: /Audio/_Stalker/Effects/Guns/ak.ogg
-    minAngle: 50 # Zona14: 48<50
-    maxAngle: 120 # Zona14: 95<120
-    angleIncrease: 2.5 # Zona14: 0.8<2.5
-    angleDecay: 7 # Zona14: added
-    fireRate: 12
+    minAngle: 48
+    maxAngle: 95
+    angleIncrease: 0.8
+    fireRate: 9
   - type: STWeight
     self: 5
   - type: STWeaponAccuracy

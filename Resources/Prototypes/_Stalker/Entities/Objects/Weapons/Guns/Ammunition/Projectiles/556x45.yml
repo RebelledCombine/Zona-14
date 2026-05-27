@@ -1,24 +1,24 @@
-#5.56x45 - Tier 3 intermediate rifle caliber
+#5.56
 
 - type: entity
   id: Bullet556FMJ
-  name: bullet (5.56x45 FMJ) # Zona14: bullet (5,56x45 rifle)<bullet (5.56x45 FMJ)
+  name: bullet (5,56x45 rifle)
   parent: STBaseLRBullet
   categories: [ HideSpawnMenu ]
   components:
   - type: TimedDespawn
     lifetime: 4
   - type: Projectile
-    projectileClass: 3 # Zona14: 4<3
+    projectileClass: 2
     damage:
       types:
-        Piercing: 17 # Zona14: 27<17
+        Piercing: 27
   - type: StaminaDamageOnCollide
-    damage: 2 # Zona14: added
+    damage: 2
 
 - type: entity
   id: Bullet556M855
-  name: bullet (5.56x45 FMJ)
+  name: bullet (5,56x45 rifle)
   parent: Bullet556FMJ
   categories: [ HideSpawnMenu ]
   components:
@@ -26,58 +26,11 @@
     projectileClass: 3
     damage:
       types:
-        Piercing: 17
-  - type: StaminaDamageOnCollide
-    damage: 2
+        Piercing: 29
 
 - type: entity
   id: Bullet556M856
-  name: bullet (5.56x45 FMJ)
-  parent: Bullet556FMJ
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: Projectile
-    projectileClass: 3
-    damage:
-      types:
-        Piercing: 17
-  - type: StaminaDamageOnCollide
-    damage: 2
-
-- type: entity
-  id: Bullet556Warmag
-  name: bullet (5.56x45 HP) # Zona14: bullet (5,56x45 rifle)<bullet (5.56x45 HP)
-  parent: Bullet556FMJ
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: Projectile
-    projectileClass: 2 # Zona14: 0<2
-    damage:
-      types:
-        Mutant: 45 # Zona14: 35<45
-        Piercing: 5 # Zona14: 10<5
-        Blunt: 9 # Zona14: 10<9
-        Slash: 9 # Zona14: 10<9
-  - type: StaminaDamageOnCollide
-    damage: 3 # Zona14: added
-
-- type: entity
-  id: Bullet556M995
-  name: bullet (5.56x45 AP) # Zona14: bullet (5,56x45 rifle)<bullet (5.56x45 AP)
-  parent: Bullet556FMJ
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: Projectile
-    projectileClass: 4 # Zona14: 6<4
-    damage:
-      types:
-        Piercing: 15 # Zona14: 18<15
-  - type: StaminaDamageOnCollide
-    damage: 1 # Zona14: added
-
-- type: entity
-  id: Bullet556SSAAP
-  name: bullet (5.56x45 AP)
+  name: bullet (5,56x45 rifle)
   parent: Bullet556FMJ
   categories: [ HideSpawnMenu ]
   components:
@@ -85,6 +38,45 @@
     projectileClass: 4
     damage:
       types:
-        Piercing: 15
+        Piercing: 27
+
+- type: entity
+  id: Bullet556Warmag
+  name: bullet (5,56x45 rifle)
+  parent: Bullet556FMJ
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    projectileClass: 0
+    damage:
+      types:
+        Mutant: 35
+        Piercing: 10
+        Blunt: 10
+        Slash: 10
+
+- type: entity
+  id: Bullet556M995
+  name: bullet (5,56x45 rifle)
+  parent: Bullet556FMJ
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    projectileClass: 5
+    damage:
+      types:
+        Piercing: 25
+
+- type: entity
+  id: Bullet556SSAAP
+  name: bullet (5,56x45 rifle)
+  parent: Bullet556FMJ
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    projectileClass: 6
+    damage:
+      types:
+        Piercing: 18
   - type: StaminaDamageOnCollide
     damage: 0

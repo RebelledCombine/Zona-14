@@ -9,7 +9,7 @@
     pullTime: 4.5
   - type: GunWieldBonus
     minAngle: -50
-    maxAngle: -75 # Zona14: -55<-75
+    maxAngle: -55
   - type: Item
     sprite: _Stalker/Objects/Weapons/Guns/Rifles/galatz.rsi
   - type: Sprite
@@ -18,10 +18,10 @@
     sprite: _Stalker/Objects/Weapons/Guns/Rifles/galatz.rsi
   - type: Gun
     minAngle: 45
-    maxAngle: 100 # Zona14: 120<100
+    maxAngle: 120
     fireRate: 5
-    angleIncrease: 1.0 # Zona14: 5.5<1.0
-    angleDecay: 8 # Zona14: 30<8
+    angleIncrease: 5.5
+    angleDecay: 30
     projectileSpeed: 75
     selectedMode: SemiAuto
     availableModes:

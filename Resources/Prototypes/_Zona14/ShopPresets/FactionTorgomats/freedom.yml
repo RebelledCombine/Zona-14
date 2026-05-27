@@ -2,6 +2,7 @@
   id: FreedomShopPresetZONA # Artifacts 1.5x Barman - Pending Economy Change
   minSellPrice: 5
   itemsForSale:
+# MARK: Artifacts
     # Thermal group - 1
     ZoneArtifactFireball: 810
     ZoneArtifactEye: 1215
@@ -59,6 +60,7 @@
     ZoneArtifactPellicle: 810
     ZoneArtifactBaloon: 7290
 
+# MARK: Meat & Cooking
     # Meat
     STFoodMeatSalo: 135
     FoodMeatBoar: 70
@@ -79,6 +81,7 @@
     FoodSTFrogLegs: 750
     STFoodJarSalo: 750
 
+# MARK: Items to Buy
   categories:
     - name: shop-category-weapons
       priority: 1
@@ -86,22 +89,22 @@
         # Pistols
         STWeaponRevolverRugerRedhawk: 850
         STWeaponRevolverSWPC325TR: 400
-        WeaponPistolStalkerGlock: 400
+        Z14WeaponPistolStalkerGlock: 400
         # Shotguns
         STWeaponShotgunTOZ34: 225 # T2
         STWeaponShotgunMossbergM88: 500 # T2
         STWeaponShotgunSPAS: 2000 # T3
         # SMGs
-        STWeaponSMGMP5: 1800 # T3
-        STWeaponSMGThompson: 3800
+        Z14STWeaponSMGMP5: 1800 # T3
+        Z14STWeaponSMGThompson: 3800
         # Nato Rifles
-        STWeaponRifleM16: 2500 # T2
-        STWeaponRifleSCARH: 6000 # T3
-        STWeaponRifleFAL: 1750 # T3
+        Z14STWeaponRifleM16: 2500 # T2
+        Z14STWeaponRifleSCARH: 6000 # T3
+        Z14STWeaponRifleFAL: 1750 # T3
         STWeaponRifleFALo: 8000 # T3
-        STWeaponRifleGalil: 7000 # T3
+        Z14STWeaponRifleGalil: 7000 # T3
         # Snipers
-        STWeaponSniperMosin: 1200
+        Z14STWeaponSniperMosin: 1200
 
     - name: shop-category-magazines
       priority: 2
@@ -131,29 +134,29 @@
         7mmBuckshotBox: 45 # T0
         8mmBuckshotBox: 800 # T2
         # 9.19
-        919PSOGJBox: 100 # T1
-        919PSTBox: 500 # T2
-        919PBMBox: 1425 # T3
-        919RIPBox: 450 # Mutant
+        Z14919PSOGJBox: 100 # T1
+        Z14919PSTBox: 500 # T2
+        Z14919PBMBox: 1425 # T3
+        Z14919RIPBox: 450 # Mutant
         # 9.18
-        918PGJBox: 100 # T1
-        918PSTBox: 500 # T2
-        918PBMBox: 1425 # T3
-        918SP7Box: 450 # Mutant
+        Z14918PGJBox: 100 # T1
+        Z14918PSTBox: 500 # T2
+        Z14918PBMBox: 1425 # T3
+        Z14918SP7Box: 450 # Mutant
         # 5.56
-        556FMJBox: 500 # T2
-        556WarmagBox: 550 # Mutant
-        556M855Box: 1650 # T3
+        Z14556FMJBox: 500 # T2
+        Z14556WarmagBox: 550 # Mutant
+        Z14556M855Box: 1650 # T3
         # 7.51
-        751M80Box: 1950 # T3
-        751UNBox: 850 # Mutant
+        Z14751M80Box: 1950 # T3
+        Z14751UNBox: 850 # Mutant
         # 7.54
-        754FMJBox: 2500 # T3
+        Z14754FMJBox: 2500 # T3
         # .45
-        45ACPLFMJBox: 110 # T1
-        45ACPMFMJBox: 550 # T2
-        45ACPAPBox: 1500 # T3
-        45ACPRIPBox: 500 # Mutant
+        Z1445ACPLFMJBox: 110 # T1
+        Z1445ACPMFMJBox: 550 # T2
+        Z1445ACPAPBox: 1500 # T3
+        Z1445ACPRIPBox: 500 # Mutant
 
     - name: shop-category-medicine
       priority: 4
@@ -314,8 +317,8 @@
     - name: shop-category-grenades
       priority: 12
       items:
-        KhattabkaGrenade: 550
-        DG05SmokeGrenade: 425
+        Z14KhattabkaGrenade: 550
+        Z14DG05SmokeGrenade: 425
 
     - name: shop-category-customization
       priority: 13

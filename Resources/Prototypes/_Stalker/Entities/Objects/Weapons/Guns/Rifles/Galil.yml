@@ -8,8 +8,8 @@
   - type: PullDoAfter
     pullTime: 5
   - type: GunWieldBonus
-    minAngle: -50 # Zona14: -40<-50
-    maxAngle: -62 # Zona14: -55<-62
+    minAngle: -40
+    maxAngle: -55
   - type: Item
     sprite: _Stalker/Objects/Weapons/Guns/Rifles/galil.rsi
   - type: Sprite
@@ -21,11 +21,11 @@
       path: /Audio/_Stalker/Effects/Guns/sks_shoot.ogg
       params:
         volume: -2
-    minAngle: 50 # Zona14: 45<50
-    maxAngle: 95 # Zona14: 75<95
-    fireRate: 11 # Zona14: 9.5<11
-    angleIncrease: 2.0 # Zona14: 0.9<2.0
-    angleDecay: 8 # Zona14: 5<8
+    minAngle: 45
+    maxAngle: 75
+    fireRate: 9.5
+    angleIncrease: 0.9
+    angleDecay: 5
     projectileSpeed: 60
     selectedMode: FullAuto
     availableModes:

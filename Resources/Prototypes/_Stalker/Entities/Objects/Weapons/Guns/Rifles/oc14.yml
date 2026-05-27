@@ -8,8 +8,8 @@
   - type: PullDoAfter
     pullTime: 4
   - type: GunWieldBonus
-    minAngle: -50 # Zona14: -48<-50
-    maxAngle: -62 # Zona14: -50<-62
+    minAngle: -48
+    maxAngle: -50
   - type: Clothing
     sprite: _Stalker/Objects/Weapons/Guns/Rifles/groza.rsi
   - type: Item
@@ -17,15 +17,15 @@
   - type: Sprite
     sprite: _Stalker/Objects/Weapons/Guns/Rifles/groza.rsi
   - type: Gun
-    fireRate: 12 # Zona14: 5.5<12
+    fireRate: 5.5
     soundGunshot:
       path: /Audio/_Stalker/Effects/Guns/n_groza_shot.ogg
       params:
           volume: -2
-    minAngle: 48 # Zona14: 45<48
-    maxAngle: 90 # Zona14: 60<90
-    angleIncrease: 2.0 # Zona14: 1<2.0
-    angleDecay: 8 # Zona14: 7<8
+    minAngle: 45
+    maxAngle: 60
+    angleIncrease: 1
+    angleDecay: 7
     projectileSpeed: 60
     selectedMode: Burst
     availableModes:
@@ -94,10 +94,10 @@
       path: /Audio/_Stalker/Effects/Guns/scar.ogg
       params:
         volume: -2
-    fireRate: 12
-    minAngle: 48
-    maxAngle: 90
-    angleDecay: 8
+    fireRate: 6
+    minAngle: 45
+    maxAngle: 55
+    angleDecay: 9
 
 - type: entity
   parent: STBaseWeaponRifleOC14
@@ -131,15 +131,15 @@
           tags:
           - STCartridge939
   - type: Gun
-    fireRate: 12
+    fireRate: 5.5
     soundGunshot:
       path: /Audio/_Stalker/Effects/Guns/n_groza_shot.ogg
       params:
           volume: -2
-    minAngle: 48
-    maxAngle: 90
-    angleIncrease: 2.0
-    angleDecay: 8
+    minAngle: 45
+    maxAngle: 60
+    angleIncrease: 1
+    angleDecay: 7
     projectileSpeed: 60
     selectedMode: Burst
     availableModes:

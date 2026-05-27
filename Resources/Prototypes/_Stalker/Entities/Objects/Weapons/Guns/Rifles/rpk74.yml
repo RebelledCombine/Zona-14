@@ -8,16 +8,16 @@
     self: 5.5
   - type: GunWieldBonus
     minAngle: -45
-    maxAngle: -55 # Zona14: -45<-55
+    maxAngle: -45
   - type: PullDoAfter
     pullTime: 4
   - type: Gun
-    minAngle: 50 # Zona14: 45<50
+    minAngle: 45
     maxAngle: 125
-    angleIncrease: 2.5 # Zona14: 1.4<2.5
-    angleDecay: 7 # Zona14: 5<7
+    angleIncrease: 1.4
+    angleDecay: 5
     projectileSpeed: 55
-    fireRate: 10 # Zona14: 6.5<10
+    fireRate: 6.5
   - type: Clothing
     sprite: _Stalker/Objects/Weapons/Guns/Rifles/inhands/RPK-74mag.rsi
   - type: Item

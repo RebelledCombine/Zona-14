@@ -1,0 +1,77 @@
+#-----------------------DOLLARS-----------------------
+- type: shopPreset
+  id: Z14STMercenaryDollarTrader
+  itemsForSale:
+    ChevronMonolit: 3
+  categories:
+  - name: shop-category-weapons
+    priority: 1
+    items:
+      STWeaponShotgunProtecta: 25
+      Z14STWeaponSMGThompson: 350 #practically a machine gun, maybe even better
+      Z14STWeaponRifleM14: 125
+      Z14STWeaponRifleG36: 140
+      Z14STWeaponRifleSIG550: 150
+      Z14STWeaponSniperSVDS: 250
+      Z14STWeaponRifleLR300v1: 200
+      Z14STWeaponRifleLR300v2: 200
+  - name: shop-category-magazines
+    priority: 2
+    items:
+      BaseTommyGunMag: 10
+      TommyGunDrum2: 25
+      Base751Mag10: 5
+      754Mag20: 10
+      556Mag45: 30
+  - name: shop-category-ammunition
+    priority: 3
+    items:
+      Z14556M855BoxCink: 80
+      Z14751M80BoxCink: 120
+      Z14754PCBox: 10
+      Z14556M856BoxCink: 80
+      Z14739PCBoxCink: 80
+      Z14751M61BoxCink: 80
+  - name: shop-category-armor
+    priority: 4
+    items:
+      ClothingOuterArmorMerc: 20
+      ClothingOuterArmorMerc2: 20
+      ClothingHeadHelmetUlachEasy: 80
+      ClothingHeadHelmetBulatMercenary: 80
+      STClothingOuterArmorIOTVMerc: 300
+      STClothingOuterArmorVeryHeavy: 350
+  - name: shop-category-storage-and-containers
+    priority: 5
+    items:
+      ClothingBackpackDuffelBlackTacticStalker: 20
+  - name: shop-category-medicine
+    priority: 10
+    items:
+      BoxMRE: 5
+      Defibrillator: 10
+      STOintmentGood: 2 #heals 40 thermal damage (Heat: -20 Caustic: -10 Shock: -10 delay: 8)
+      MedkitMilitary: 2 #heals 50 physical damage (Piercing: -20 Blunt: -10 Slash: -20 delay: 8)
+      MedkitScience: 5 #heals 45 thermal + 20 radiation damage (Heat: -15 Caustic: -15 Shock: -15 Radiation: -20 delay: 9)
+      WakeUpMedipen: 5 #contains equivalent of 2 wakeuppill tablets (20 units Bloodloss: -3 Asphyxiation: -2 per unit)
+      MedkitAI2: 1
+      AntiRadMedipen: 5
+      STPillboxShiza: 100
+      MedkitElite: 10
+      MedkitLAR: 25
+  - name: shop-category-modules
+    priority: 11
+    items:
+      STModuleAutoSear: 50
+      STModuleSMGGripT2: 60
+      STModuleSniperSightT2: 30
+      STModuleScopeRiflesT2Nato: 50
+      STModuleScopeRiflesT2Ru: 50
+
+
+
+
+
+
+
+

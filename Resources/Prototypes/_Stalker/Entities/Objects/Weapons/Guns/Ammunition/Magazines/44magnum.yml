@@ -2,7 +2,7 @@
 - type: entity
   id: BaseSpeedLoaderRemingtonMagnum
   name: "speed loader (.44 remington magnum)"
-  suffix: Stalker # Zona14: added
+  suffix: Stalker
   parent: BaseItem
   abstract: true
   components:
@@ -45,20 +45,12 @@
   - type: Appearance
 
 - type: entity
-  parent: SpeedLoaderRemingtonMagnum # Zona14: added
+  parent: SpeedLoaderRemingtonMagnum
   id: SpeedLoaderRemingtonMagnumAP
   suffix: Stalker
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeRemingtonMagnumAP
-
-- type: entity
-  parent: SpeedLoaderRemingtonMagnum
-  id: SpeedLoaderRemingtonMagnumHP # Zona14: added
-  suffix: Stalker
-  components:
-  - type: BallisticAmmoProvider
-    proto: CartridgeRemingtonMagnumHP # Zona14: added
 
 - type: entity
   parent: SpeedLoaderRemingtonMagnum

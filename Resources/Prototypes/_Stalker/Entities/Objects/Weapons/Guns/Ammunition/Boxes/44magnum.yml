@@ -1,7 +1,7 @@
 - type: entity
   parent: BaseItem
   id: BaseMagazineBoxRemingtonMagnum
-  suffix: Stalker # Zona14: added
+  suffix: Stalker
   abstract: true
   components:
   - type: RepositoryItem
@@ -28,7 +28,7 @@
 
 # Boxes
 - type: entity
-  parent: BaseMagazineBoxRemingtonMagnum # Zona14: added
+  parent: BaseMagazineBoxRemingtonMagnum
   id: MagazineBoxRemingtonMagnum
   name: ammunition box (.44 remington magnum)
   suffix: Stalker
@@ -38,9 +38,9 @@
   - type: Sprite
     layers:
     - state: base
-      map: ["enum.GunVisualLayers.Base"] # Zona14: added
+      map: ["enum.GunVisualLayers.Base"]
     - state: mag-1
-      map: ["enum.GunVisualLayers.Mag"] # Zona14: added
+      map: ["enum.GunVisualLayers.Mag"]
 
 - type: entity
   parent: BaseMagazineBoxRemingtonMagnum
@@ -57,18 +57,3 @@
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
     - state: piercing
-
-- type: entity
-  parent: BaseMagazineBoxRemingtonMagnum
-  id: MagazineBoxRemingtonMagnumHP # Zona14: added
-  name: ammunition box (.44 remington magnum hollow-point) # Zona14: added
-  suffix: Stalker
-  components:
-  - type: BallisticAmmoProvider
-    proto: CartridgeRemingtonMagnumHP # Zona14: added
-  - type: Sprite
-    layers:
-    - state: base
-      map: ["enum.GunVisualLayers.Base"]
-    - state: mag-1
-      map: ["enum.GunVisualLayers.Mag"]

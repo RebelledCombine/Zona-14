@@ -15,14 +15,11 @@
     scale: 0.7, 0.7
   - type: Clothing
     sprite: _Stalker/Objects/Weapons/Guns/SMGs/tommygun.rsi
-  - type: GunWieldBonus
-    minAngle: -25 # Zona14: added
-    maxAngle: -40 # Zona14: added
   - type: Gun
     minAngle: 50
-    maxAngle: 110 # Zona14: 90<110
-    angleIncrease: 3.5 # Zona14: 1.5<3.5
-    angleDecay: 9 # Zona14: 8<9
+    maxAngle: 90
+    angleIncrease: 1.5
+    angleDecay: 8
     fireRate: 12
     selectedMode: Burst
     availableModes:

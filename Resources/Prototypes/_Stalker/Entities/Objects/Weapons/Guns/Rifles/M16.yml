@@ -8,8 +8,8 @@
   - type: PullDoAfter
     pullTime: 3
   - type: GunWieldBonus
-    minAngle: -50 # Zona14: -45<-50
-    maxAngle: -60 # Zona14: -45<-60
+    minAngle: -45
+    maxAngle: -45
   - type: Item
     sprite: _Stalker/Objects/Weapons/Guns/Rifles/inhands/M16.rsi
   - type: Sprite
@@ -21,11 +21,11 @@
       path: /Audio/_Stalker/Effects/Guns/m4.ogg
       params:
         volume: -2
-    minAngle: 48 # Zona14: 45<48
-    maxAngle: 90 # Zona14: 85<90
-    fireRate: 13 # Zona14: 9<13
-    angleIncrease: 2.0 # Zona14: 1.25<2.0
-    angleDecay: 8 # Zona14: 6<8
+    minAngle: 45
+    maxAngle: 85
+    fireRate: 9
+    angleIncrease: 1.25
+    angleDecay: 6
     projectileSpeed: 55
     selectedMode: Burst
     availableModes:

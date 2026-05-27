@@ -1,3 +1,4 @@
+# MARK: OC-14 Groza Base & Variants
 - type: entity
   abstract: true
   parent: Z14STBaseWeaponRifle
@@ -64,6 +65,7 @@
   name: OC-14 «Groza»
   description: The automatic grenade launcher system is a very successful variant of an assault rifle in the Zone - compact, reliable, and at the same time universal and powerful. Military stalkers really like the «Groza».
 
+# MARK: OC-14 Groza Skins
 - type: entity
   parent: Z14STBaseWeaponRifleOC14
   id: Z14STWeaponRifleOC14Alt
@@ -106,6 +108,7 @@
     maxAngle: 90
     angleDecay: 8
 
+# MARK: OC-14 Groza 9x39
 - type: entity
   parent: Z14STBaseWeaponRifleOC14
   id: Z14STWeaponRifleOC14939
@@ -160,6 +163,7 @@
   - type: STWeaponAccuracy
     accuracyMultiplier: 1.44
 
+# MARK: OC-14 Liturgia
 - type: entity
   parent: Z14STBaseWeaponRifleOC14
   id: Z14STWeaponRifleOC14Liturgia

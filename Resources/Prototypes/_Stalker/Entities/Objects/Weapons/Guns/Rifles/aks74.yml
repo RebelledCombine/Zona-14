@@ -12,19 +12,19 @@
   - type: Sprite
     sprite: _Stalker/Objects/Weapons/Guns/Rifles/aks74.rsi
   - type: GunWieldBonus
-    minAngle: -50 # Zona14: -43<-50
-    maxAngle: -60 # Zona14: -55<-60
+    minAngle: -50
+    maxAngle: -45
   - type: PullDoAfter
     pullTime: 3.5
   - type: Gun
     soundGunshot:
       path: /Audio/_Stalker/Effects/Guns/ak.ogg
-    minAngle: 50 # Zona14: 45<50
-    maxAngle: 95 # Zona14: 80<95
-    angleIncrease: 2.0 # Zona14: 1<2.0
-    angleDecay: 8 # Zona14: 3.5<8
+    minAngle: 50
+    maxAngle: 90
+    angleIncrease: 1.4
+    angleDecay: 4
     projectileSpeed: 55
-    fireRate: 11 # Zona14: 7<11
+    fireRate: 6
     selectedMode: FullAuto
     availableModes:
     - SemiAuto
@@ -79,17 +79,17 @@
   - type: STWeight
     self: 4
   - type: GunWieldBonus
-    minAngle: -50
-    maxAngle: -60
+    minAngle: -45
+    maxAngle: -50
   - type: PullDoAfter
     pullTime: 4
   - type: Gun
-    minAngle: 48 # Zona14: 45<48
-    maxAngle: 90 # Zona14: 85<90
-    angleIncrease: 2.0
-    angleDecay: 8
+    minAngle: 45
+    maxAngle: 85
+    angleIncrease: 1.5
+    angleDecay: 5.5
     projectileSpeed: 60
-    fireRate: 11
+    fireRate: 6.5
   - type: Clothing
     sprite: _Stalker/Objects/Weapons/Guns/Rifles/ak74m.rsi
   - type: Item
@@ -174,15 +174,15 @@
   - type: STWeight
     self: 3.5
   - type: GunWieldBonus
-    minAngle: -50
-    maxAngle: -60
+    minAngle: -43
+    maxAngle: -55
   - type: Gun
-    minAngle: 48
+    minAngle: 45
     maxAngle: 90
-    angleIncrease: 1.5 # Zona14: 1.2<1.5
-    angleDecay: 8
+    angleIncrease: 1.2
+    angleDecay: 5
     projectileSpeed: 60
-    fireRate: 10 # Zona14: 5.5<10
+    fireRate: 8
     selectedMode: FullAuto
     availableModes:
     - SemiAuto
@@ -224,11 +224,10 @@
   - type: Gun
     soundGunshot:
       path: /Audio/_Stalker/Effects/Guns/103_shoot.ogg
-    minAngle: 50
-    maxAngle: 100 # Zona14: 95<100
-    fireRate: 10
-    angleIncrease: 2.0
-    angleDecay: 8
+    minAngle: 45
+    maxAngle: 85
+    fireRate: 8
+    angleIncrease: 1
   - type: ItemSlots
     slots:
       gun_magazine:
@@ -277,15 +276,15 @@
     sprite: _Stalker/Objects/Weapons/Guns/Rifles/aks74u.rsi
   - type: GunWieldBonus
     minAngle: -45
-    maxAngle: -55 # Zona14: -50<-55
+    maxAngle: -45
   - type: Gun
     soundGunshot:
       path: /Audio/_Stalker/Effects/Guns/n_ak74u_shot.ogg
-    minAngle: 55 # Zona14: 50<55
-    maxAngle: 110 # Zona14: 105<110
-    fireRate: 11
-    angleIncrease: 2.0
-    angleDecay: 8
+    minAngle: 50
+    maxAngle: 105
+    fireRate: 5
+    angleIncrease: 1.4
+    angleDecay: 4.5
     projectileSpeed: 55
   - type: STWeaponDamageFalloff
     falloffMultiplier: 0.8
@@ -346,14 +345,14 @@
   - type: PullDoAfter
     pullTime: 3.5
   - type: GunWieldBonus
-    minAngle: -48 # Zona14: -40<-48
-    maxAngle: -55
+    minAngle: -45
+    maxAngle: -50
   - type: Gun
-    minAngle: 50
-    maxAngle: 95
-    fireRate: 11
-    angleIncrease: 2.0
-    angleDecay: 8
+    minAngle: 45
+    maxAngle: 80
+    fireRate: 7
+    angleIncrease: 1.6
+    angleDecay: 6.5
     projectileSpeed: 60
   - type: Clothing
     sprite: _Stalker/Objects/Weapons/Guns/Rifles/_Skins/am17.rsi
@@ -379,8 +378,8 @@
   - type: PullDoAfter
     pullTime: 3
   - type: GunWieldBonus
-    minAngle: -48
-    maxAngle: -58 # Zona14: -45<-58
+    minAngle: -40
+    maxAngle: -45
   - type: Clothing
     sprite: _Stalker/Objects/Weapons/Guns/Rifles/_Skins/ak105.rsi
   - type: Sprite
@@ -388,11 +387,11 @@
   - type: Gun
     soundGunshot:
       path: /Audio/_Stalker/Effects/Guns/103_shoot.ogg
-    minAngle: 50
-    maxAngle: 100
-    fireRate: 10
-    angleIncrease: 2.0
-    angleDecay: 8
+    minAngle: 45
+    maxAngle: 95
+    fireRate: 5.5
+    angleIncrease: 1
+    angleDecay: 3.5
     projectileSpeed: 55
   - type: ItemSlots
     slots:

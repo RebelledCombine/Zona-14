@@ -23,11 +23,11 @@
     soundGunshot:
       path: /Audio/_Stalker/Effects/Guns/pm-shoot.ogg
     projectileSpeed: 45
-    minAngle: 8 # Zona14: 5<8
-    maxAngle: 25 # Zona14: 20<25
+    minAngle: 5
+    maxAngle: 20
     fireRate: 6
-    angleIncrease: 2.0 # Zona14: 1<2.0
-    angleDecay: 8 # Zona14: 4<8
+    angleIncrease: 1
+    angleDecay: 4
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto
@@ -84,11 +84,11 @@
       soundGunshot:
         path: /Audio/_Stalker/Effects/Guns/pm-shoot.ogg
       projectileSpeed: 45
-      minAngle: 7 # Zona14: 5<7
-      maxAngle: 25 # Zona14: 20<25
-      fireRate: 7 # Zona14: 6<7
-      angleIncrease: 2.0 # Zona14: 1.3<2.0
-      angleDecay: 8 # Zona14: 3<8
+      minAngle: 5
+      maxAngle: 20
+      fireRate: 6
+      angleIncrease: 1.3
+      angleDecay: 3
       selectedMode: SemiAuto
       availableModes:
         - SemiAuto

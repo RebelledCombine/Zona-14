@@ -1,3 +1,4 @@
+# MARK: M4 Base & Variants
 - type: entity
   abstract: true
   parent: Z14STBaseWeaponRifle
@@ -126,6 +127,7 @@
   - type: STWeaponAccuracy
     accuracyMultiplier: 1.46
 
+# MARK: LR-300 Variants
 - type: entity
   parent: Z14STBaseWeaponRifleM4
   id: Z14STWeaponRifleLR300v1
@@ -198,6 +200,7 @@
   - type: Clothing
     sprite: _Stalker/Objects/Weapons/Guns/Rifles/_Skins/lr-300-white.rsi
 
+# MARK: SCAR-L
 - type: entity
   parent: Z14STBaseWeaponRifleM4
   id: Z14STWeaponRifleSCARL

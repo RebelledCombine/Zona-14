@@ -8,8 +8,8 @@
   - type: PullDoAfter
     pullTime: 3
   - type: GunWieldBonus
-    minAngle: -50 # Zona14: -45<-50
-    maxAngle: -62 # Zona14: -50<-62
+    minAngle: -45
+    maxAngle: -50
   - type: Item
     sprite: _Stalker/Objects/Weapons/Guns/Rifles/sig-550.rsi
   - type: Sprite
@@ -21,11 +21,11 @@
       path: /Audio/_Stalker/Effects/Guns/n_sig550_shot.ogg
       params:
         volume: -2
-    minAngle: 45 # Zona14: 40<45
-    maxAngle: 90 # Zona14: 60<90
-    fireRate: 12 # Zona14: 5<12
-    angleIncrease: 2.0 # Zona14: 1.75<2.0
-    angleDecay: 8 # Zona14: 5.5<8
+    minAngle: 40
+    maxAngle: 60
+    fireRate: 5
+    angleIncrease: 1.75
+    angleDecay: 5.5
     projectileSpeed: 55
     selectedMode: FullAuto
     availableModes:

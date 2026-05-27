@@ -5,6 +5,7 @@
     FoodTinMRETrash: 0
     FoodTinPeachesTrash: 0
     FoodTinBeansTrash: 0
+# MARK: Artifacts
     # Thermal group - 1
     ZoneArtifactFireball: 405
     ZoneArtifactEye: 610
@@ -63,6 +64,7 @@
     ZoneArtifactPellicle: 405
     ZoneArtifactBaloon: 3645
 
+# MARK: Mutant Parts
     # Mutant parts
 
     #Boars -------- Health * T * 0.45
@@ -100,6 +102,7 @@
     MutantPartBurerBrain: 1500
     MutantPartControllerBrain: 2625
 
+# MARK: Meat & Cooking
     # Meat
     FoodMeatDogCooked: 70
     STFoodMeatSpiderCooked: 35
@@ -150,34 +153,35 @@
     STFoodJarMeatEel: 1250
     STFoodJarWholeEelFermented: 2100
 
+# MARK: Items to Buy
   categories:
   - name: shop-category-weapons
     priority: 1
     items:
       #Pistols
-      WeaponPistolStalkerPM: 150
-      WeaponPistolStalkerAPS: 250
-      WeaponPistolGSH18: 300
+      Z14WeaponPistolStalkerPM: 150
+      Z14WeaponPistolStalkerAPS: 250
+      Z14WeaponPistolGSH18: 300
       # Shotguns
       STWeaponShotgunMP153: 650
       STWeaponShotgunMossbergM88: 500
       #STWeaponShotgunSaiga12: 6500
       # SMGs
-      STWeaponSMGPP19: 1000
-      STWeaponSMGPP1901: 1200
+      Z14STWeaponSMGPP19: 1000
+      Z14STWeaponSMGPP1901: 1200
       # Rifles
       # 5.45
-      STWeaponRifleAKS74U: 600
-      STWeaponRifleAKS74UBlack: 600
-      STWeaponRifleAKS74: 900
-      STWeaponRifleAKS74Green: 900
-      # STWeaponRifleStalkerAbakan: 2500
+      Z14STWeaponRifleAKS74U: 600
+      Z14STWeaponRifleAKS74UBlack: 600
+      Z14STWeaponRifleAKS74: 900
+      Z14STWeaponRifleAKS74Green: 900
+      # Z14STWeaponRifleStalkerAbakan: 2500
       # 7.62
-      STWeaponSniperSKS: 800
-      STWeaponRifleAKMC: 600
-      STWeaponRifleAKM: 1200
+      Z14STWeaponSniperSKS: 800
+      Z14STWeaponRifleAKMC: 600
+      Z14STWeaponRifleAKM: 1200
       # Snipers
-      STWeaponSniperMosin: 850
+      Z14STWeaponSniperMosin: 850
 
   - name: shop-category-magazines
     priority: 2
@@ -206,28 +210,28 @@
       8mmBuckshotBox: 535 # T2
       #ShotgunFlechette: 50 # T3
       # 9x18
-      918PGJBox: 50  # T1
-      918PSTBox: 365 # T2
-      918PBMBox: 925 # T3
-      918SP7Box: 405 # Mutant
+      Z14918PGJBox: 50  # T1
+      Z14918PSTBox: 365 # T2
+      Z14918PBMBox: 925 # T3
+      Z14918SP7Box: 405 # Mutant
       # 9x19
-      919PSOGJBox: 55 # T1
-      919PSTBox: 365 # T2
-      919PBMBox: 945 # T3
-      919RIPBox: 405 # Mutant
+      Z14919PSOGJBox: 55 # T1
+      Z14919PSTBox: 365 # T2
+      Z14919PBMBox: 945 # T3
+      Z14919RIPBox: 405 # Mutant
       # 5.45
-      545FMJBox: 425 # T2
-      545HPBox: 470 # Mutant
-      545PCBox: 1070 # T3
+      Z14545FMJBox: 425 # T2
+      Z14545HPBox: 470 # Mutant
+      Z14545PCBox: 1070 # T3
       # 7.25
-      725PSTBox: 940 # T3
-      725LRNPCBox: 405 # Mutant
+      Z14725PSTBox: 940 # T3
+      Z14725LRNPCBox: 405 # Mutant
       # 7.62
-      739FMJBox: 1270 # T3
-      739HPBox: 550 # Mutant
+      Z14739FMJBox: 1270 # T3
+      Z14739HPBox: 550 # Mutant
       # 7.54
-      754FMJBox: 1090 # T3
-      754HPBox: 660 # Mutant
+      Z14754FMJBox: 1090 # T3
+      Z14754HPBox: 660 # Mutant
 
   - name: shop-category-medicine
     priority: 4
@@ -373,9 +377,9 @@
   - name: shop-category-grenades
     priority: 12
     items:
-      RGD5Grenade: 50
-      TearGasGrenadeStalker: 35
-      DG05SmokeGrenade: 25
+      Z14RGD5Grenade: 50
+      Z14TearGasGrenadeStalker: 35
+      Z14DG05SmokeGrenade: 25
 
   - name: "Morale Boosters"
     priority: 13

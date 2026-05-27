@@ -1,46 +1,45 @@
-#.338 Lapua Magnum - Tier 5 heavy sniper caliber (damage reduced ~30% to preserve two-shot feel)
-
+# .338
 - type: entity
   parent: STBaseHRBullet
   id: Bullet338Partition
-  name: bullet (.338 Lapua Magnum HP) # Zona14: bullet (.338 Lapua Magnum)<bullet (.338 Lapua Magnum HP)
+  name: bullet (.338 Lapua Magnum)
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
-    projectileClass: 4 # Zona14: 0<4
+    projectileClass: 0
     damage:
       types:
-        Mutant: 180 # Zona14: 380<180
-        Piercing: 18 # Zona14: 10<18
-        Blunt: 27 # Zona14: 10<27
-        Slash: 27 # Zona14: 10<27
+        Mutant: 380
+        Piercing: 10
+        Blunt: 10
+        Slash: 10
   - type: StaminaDamageOnCollide
-    damage: 14 # Zona14: 10<14
+    damage: 10
 
 - type: entity
   parent: STBaseHRBullet
   id: Bullet338FMJ
-  name: bullet (.338 Lapua Magnum FMJ) # Zona14: bullet (.338 Lapua Magnum)<bullet (.338 Lapua Magnum FMJ)
+  name: bullet (.338 Lapua Magnum)
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
-    projectileClass: 5 # Zona14: 4<5
+    projectileClass: 4
     damage:
       types:
-        Piercing: 52 # Zona14: 77<52
+        Piercing: 77
   - type: StaminaDamageOnCollide
-    damage: 8 # Zona14: 20<8
+    damage: 20
 
 - type: entity
   parent: STBaseHRBullet
   id: Bullet338FMJBT
-  name: bullet (.338 Lapua Magnum AP) # Zona14: bullet (.338 Lapua Magnum)<bullet (.338 Lapua Magnum AP)
+  name: bullet (.338 Lapua Magnum)
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
-    projectileClass: 6 # Zona14: 5<6
+    projectileClass: 5
     damage:
       types:
-        Piercing: 46 # Zona14: 79<46
+        Piercing: 79
   - type: StaminaDamageOnCollide
-    damage: 4 # Zona14: 20<4
+    damage: 20

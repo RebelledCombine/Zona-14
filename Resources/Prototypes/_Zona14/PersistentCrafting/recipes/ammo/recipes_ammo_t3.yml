@@ -1,0 +1,242 @@
+# MARK: T3 Ammo Recipes
+- type: persistentCraftRecipe
+  id: Z14PersistentCraftAmmo_newrecipe545PCBoxCink
+  categories: [ Zona14 ]
+  name: persistent-craft-recipe-generic-name
+  description: persistent-craft-recipe-generic-desc
+  displayProto: Z14545PCBox
+  branch: Ammo
+  tier: 3
+  requiredNode: PersistentCraftWeaponAmmoNodeT3
+  craftTime: 6
+  pointReward: 0
+  ingredients:
+  - proto: STCraftAnomalyDust
+    amount: 6
+  results:
+  - proto: Z14545PCBox
+    amount: 4
+  category: ammo
+  subCategory: tier-3
+
+- type: persistentCraftRecipe
+  id: Z14PersistentCraftAmmo_newrecipe918PBMBoxCink
+  categories: [ Zona14 ]
+  name: persistent-craft-recipe-generic-name
+  description: persistent-craft-recipe-generic-desc
+  displayProto: Z14918PBMBox
+  branch: Ammo
+  tier: 3
+  requiredNode: PersistentCraftWeaponAmmoNodeT3
+  craftTime: 6
+  pointReward: 0
+  ingredients:
+  - proto: STCraftAnomalyDust
+    amount: 6
+  results:
+  - proto: Z14918PBMBox
+    amount: 4
+  category: ammo
+  subCategory: tier-3
+
+- type: persistentCraftRecipe
+  id: Z14PersistentCraftAmmo_newrecipe919PBMBoxCink
+  categories: [ Zona14 ]
+  name: persistent-craft-recipe-generic-name
+  description: persistent-craft-recipe-generic-desc
+  displayProto: Z14919PBMBox
+  branch: Ammo
+  tier: 3
+  requiredNode: PersistentCraftWeaponAmmoNodeT3
+  craftTime: 6
+  pointReward: 0
+  ingredients:
+  - proto: STCraftAnomalyDust
+    amount: 6
+  results:
+  - proto: Z14919PBMBox
+    amount: 4
+  category: ammo
+  subCategory: tier-3
+
+- type: persistentCraftRecipe
+  id: Z14PersistentCraftAmmo_newrecipe556M855BoxCink
+  categories: [ Zona14 ]
+  name: persistent-craft-recipe-generic-name
+  description: persistent-craft-recipe-generic-desc
+  displayProto: Z14556M855Box
+  branch: Ammo
+  tier: 3
+  requiredNode: PersistentCraftWeaponAmmoNodeT3
+  craftTime: 6
+  pointReward: 0
+  ingredients:
+  - proto: STCraftAnomalyDust
+    amount: 6
+  results:
+  - proto: Z14556M855Box
+    amount: 4
+  category: ammo
+  subCategory: tier-3
+
+- type: persistentCraftRecipe
+  id: Z14PersistentCraftAmmo_newrecipe725PSTBoxCink
+  categories: [ Zona14 ]
+  name: persistent-craft-recipe-generic-name
+  description: persistent-craft-recipe-generic-desc
+  displayProto: Z14725PSTBox
+  branch: Ammo
+  tier: 3
+  requiredNode: PersistentCraftWeaponAmmoNodeT3
+  craftTime: 6
+  pointReward: 0
+  ingredients:
+  - proto: STCraftAnomalyDust
+    amount: 6
+  results:
+  - proto: Z14725PSTBox
+    amount: 4
+  category: ammo
+  subCategory: tier-3
+
+- type: persistentCraftRecipe
+  id: Z14PersistentCraftAmmo_newrecipe739FMJBoxCink
+  categories: [ Zona14 ]
+  name: persistent-craft-recipe-generic-name
+  description: persistent-craft-recipe-generic-desc
+  displayProto: Z14739FMJBox
+  branch: Ammo
+  tier: 3
+  requiredNode: PersistentCraftWeaponAmmoNodeT3
+  craftTime: 6
+  pointReward: 0
+  ingredients:
+  - proto: STCraftAnomalyDust
+    amount: 6
+  results:
+  - proto: Z14739FMJBox
+    amount: 4
+  category: ammo
+  subCategory: tier-3
+
+- type: persistentCraftRecipe
+  id: Z14PersistentCraftAmmo_newrecipe751M80BoxCink
+  categories: [ Zona14 ]
+  name: persistent-craft-recipe-generic-name
+  description: persistent-craft-recipe-generic-desc
+  displayProto: Z14751M80Box
+  branch: Ammo
+  tier: 3
+  requiredNode: PersistentCraftWeaponAmmoNodeT3
+  craftTime: 6
+  pointReward: 0
+  ingredients:
+  - proto: STCraftAnomalyDust
+    amount: 6
+  results:
+  - proto: Z14751M80Box
+    amount: 4
+  category: ammo
+  subCategory: tier-3
+
+- type: persistentCraftRecipe
+  id: Z14PersistentCraftAmmo_newrecipe45ACPAPBoxCink
+  categories: [ Zona14 ]
+  name: persistent-craft-recipe-generic-name
+  description: persistent-craft-recipe-generic-desc
+  displayProto: Z1445ACPAPBox
+  branch: Ammo
+  tier: 3
+  requiredNode: PersistentCraftWeaponAmmoNodeT3
+  craftTime: 6
+  pointReward: 0
+  ingredients:
+  - proto: STCraftAnomalyDust
+    amount: 6
+  results:
+  - proto: Z1445ACPAPBox
+    amount: 4
+  category: ammo
+  subCategory: tier-3
+
+- type: persistentCraftRecipe
+  id: Z14PersistentCraftAmmo_newrecipe754FMJBoxCink
+  categories: [ Zona14 ]
+  name: persistent-craft-recipe-generic-name
+  description: persistent-craft-recipe-generic-desc
+  displayProto: Z14754FMJBox
+  branch: Ammo
+  tier: 3
+  requiredNode: PersistentCraftWeaponAmmoNodeT3
+  craftTime: 6
+  pointReward: 0
+  ingredients:
+  - proto: STCraftAnomalyDust
+    amount: 6
+  results:
+  - proto: Z14754FMJBox
+    amount: 4
+  category: ammo
+  subCategory: tier-3
+
+- type: persistentCraftRecipe
+  id: Z14PersistentCraftAmmo_newrecipeShotgunFlechetteCink
+  categories: [ Zona14 ]
+  name: persistent-craft-recipe-generic-name
+  description: persistent-craft-recipe-generic-desc
+  displayProto: ShotgunFlechette
+  branch: Ammo
+  tier: 3
+  requiredNode: PersistentCraftWeaponAmmoNodeT3
+  craftTime: 6
+  pointReward: 0
+  ingredients:
+  - proto: STCraftAnomalyDust
+    amount: 6
+  results:
+  - proto: ShotgunFlechette
+    amount: 6
+  category: ammo
+  subCategory: tier-3
+
+- type: persistentCraftRecipe
+  id: Z14PersistentCraftAmmo_newrecipeShotgunDarttBoxCink
+  categories: [ Zona14 ]
+  name: persistent-craft-recipe-generic-name
+  description: persistent-craft-recipe-generic-desc
+  displayProto: ShotgunDarttBox
+  branch: Ammo
+  tier: 3
+  requiredNode: PersistentCraftWeaponAmmoNodeT3
+  craftTime: 6
+  pointReward: 0
+  ingredients:
+  - proto: STCraftAnomalyDust
+    amount: 6
+  results:
+  - proto: ShotgunDarttBox
+    amount: 6
+  category: ammo
+  subCategory: tier-3
+
+- type: persistentCraftRecipe
+  id: Z14PersistentCraftAmmo_newrecipe939BPBoxCink
+  categories: [ Zona14 ]
+  name: persistent-craft-recipe-generic-name
+  description: persistent-craft-recipe-generic-desc
+  displayProto: Z14STBox9x39PAB9
+  branch: Ammo
+  tier: 3
+  requiredNode: PersistentCraftWeaponAmmoNodeT3
+  craftTime: 6
+  pointReward: 0
+  ingredients:
+  - proto: STCraftAnomalyDust
+    amount: 6
+  results:
+  - proto: Z14STBox9x39PAB9
+    amount: 4
+  category: ammo
+  subCategory: tier-3
+
+

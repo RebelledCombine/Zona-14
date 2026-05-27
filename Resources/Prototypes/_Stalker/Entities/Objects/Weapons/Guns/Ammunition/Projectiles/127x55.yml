@@ -1,54 +1,53 @@
-#12.7x55 - Tier 4 special subsonic caliber (STBaseSPBullet - shorter effective range, heavy bullet)
-
+# 12,7x55
 - type: entity
   id: Bullet1255PS12A
-  name: bullet (12.7x55 FMJ) # Zona14: bullet (12,7x55)<bullet (12.7x55 FMJ)
+  name: bullet (12,7x55)
   parent: STBaseSPBullet
   categories: [ HideSpawnMenu ]
   components:
   - type: TimedDespawn
     lifetime: 4
   - type: Projectile
-    projectileClass: 4 # Zona14: 1<4
+    projectileClass: 1
     damage:
       types:
-        Piercing: 21 # Zona14: 44.5<21
-        Blunt: 2 # Zona14: 6<2
-        Slash: 2 # Zona14: 6<2
+        Blunt: 6
+        Slash: 6
+        Piercing: 44.5
   - type: StaminaDamageOnCollide
-    damage: 3 # Zona14: 5<3
+    damage: 5
 
 - type: entity
   id: Bullet1255TP
-  name: bullet (12.7x55 HP) # Zona14: bullet (12,7x55)<bullet (12.7x55 HP)
+  name: bullet (12,7x55)
   parent: STBaseSPBullet
   categories: [ HideSpawnMenu ]
   components:
   - type: TimedDespawn
     lifetime: 4
   - type: Projectile
-    projectileClass: 3 # Zona14: 2<3
+    projectileClass: 2
     damage:
       types:
-        Mutant: 85 # Zona14: added
-        Piercing: 7 # Zona14: 54<7
-        Blunt: 10 # Zona14: 6.5<10
-        Slash: 10 # Zona14: 6.5<10
+        Blunt: 6.5
+        Slash: 6.5
+        Piercing: 54
   - type: StaminaDamageOnCollide
-    damage: 4 # Zona14: 5<4
+    damage: 5
+
 
 - type: entity
   id: Bullet1255BP
-  name: bullet (12.7x55 AP) # Zona14: bullet (12,7x55)<bullet (12.7x55 AP)
+  name: bullet (12,7x55)
   parent: STBaseSPBullet
   categories: [ HideSpawnMenu ]
   components:
   - type: TimedDespawn
     lifetime: 4
   - type: Projectile
-    projectileClass: 5 # Zona14: 4<5
+    projectileClass: 4
     damage:
       types:
-        Piercing: 28 # Zona14: 65<28
+        Piercing: 65
   - type: StaminaDamageOnCollide
-    damage: 2 # Zona14: 5<2
+    damage: 5
