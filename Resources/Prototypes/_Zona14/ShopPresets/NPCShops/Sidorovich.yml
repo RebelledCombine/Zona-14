@@ -1,5 +1,5 @@
 - type: shopPreset
-  id: NpcSidorZONA # 0.75x Barman - Pending Economy Change
+  id: Z14NpcSidor # 0.75x Barman - Pending Economy Change
   minSellPrice: 5
   itemsForSale:
 # MARK: Artifacts

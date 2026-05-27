@@ -1,5 +1,5 @@
 - type: shopPreset
-  id: KeshaShopPresetZONA # Smart bastard
+  id: Z14KeshaShopPreset # Smart bastard
   minSellPrice: 5
   itemsForSale:
 # MARK: Artifacts

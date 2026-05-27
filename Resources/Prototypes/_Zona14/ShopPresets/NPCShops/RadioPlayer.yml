@@ -1,5 +1,5 @@
 - type: shopPreset
-  id: NpcRadioPlayerZONA #Cassette guy
+  id: Z14NpcRadioPlayer #Cassette guy
   minSellPrice: 5
   itemsForSale:
     CasseteOneRadio: 340

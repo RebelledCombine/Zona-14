@@ -1,5 +1,5 @@
 - type: shopPreset
-  id: NpcResearchInstituteZONA # 1.25x
+  id: Z14NpcResearchInstitute # 1.25x
   minSellPrice: 5
   itemsForSale:
 # MARK: Artifacts

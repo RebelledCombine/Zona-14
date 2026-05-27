@@ -1,5 +1,5 @@
 - type: shopPreset
-  id: STFoodBotanicPresetZONA
+  id: Z14STFoodBotanicPreset
   minSellPrice: 5
   itemsForSale:
     FoodSTTomato: 30

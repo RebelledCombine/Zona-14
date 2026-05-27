@@ -1,9 +1,9 @@
 - type: entity
   parent: NPCDoll
-  id: NPCRadioPlayerZONA
+  id: Z14NPCRadioPlayer
   name: Radio Amateur [→   ←]
   description: He is engaged in the design, construction, modification and use of radio engineering and electronic devices. He loves everything related to the Soviet Union. He tries to be secretive.
-  suffix: Z14, Music, ZONA-TRADER
+  suffix: Z14, Music, Trader
   components:
   - type: Sprite
     sprite: _Stalker/NPC/RadioPlayer.rsi
@@ -21,7 +21,7 @@
         type: ShopBoundUserInterface
   - type: Shop
     moneyId: Roubles
-    shopPresetId: NpcRadioPlayerZONA
+    shopPresetId: Z14NpcRadioPlayer
   - type: TypingIndicator
     proto: robot
   - type: TTS # Corvax-TTS
@@ -40,10 +40,10 @@
 
 - type: entity
   parent: NPCDoll
-  id: NPCVadikNarikZONA
+  id: Z14NPCVadikNarik
   name: Vadik Goy [→ ? ←]
   description: An ordinary drug addict who both sells and buys everything related to cannabis.
-  suffix: Z14, WEED, ZONA-TRADER
+  suffix: Z14, WEED, Trader
   components:
   - type: Sprite
     sprite: _Stalker/NPC/VadikNarik.rsi
@@ -61,7 +61,7 @@
         type: ShopBoundUserInterface
   - type: Shop
     moneyId: Roubles
-    shopPresetId: NpcVadikNarikZONA
+    shopPresetId: Z14NpcVadikNarik
   - type: TypingIndicator
     proto: robot
   - type: TTS # Corvax-TTS
@@ -80,10 +80,10 @@
 
 - type: entity
   parent: NPCDoll
-  id: NPCBotanikMaksZONA
+  id: Z14NPCBotanikMaks
   name: Max [→   ←]
   description: Max is a skilled botanist with a green thumb and a passion for plants. He has a deep knowledge of plants and the ability to grow them in any conditions.
-  suffix: Z14, Cooking, ZONA-TRADER
+  suffix: Z14, Cooking, Trader
   components:
   - type: Sprite
     sprite: _Stalker/NPC/BotanikMaks.rsi
@@ -101,7 +101,7 @@
         type: ShopBoundUserInterface
   - type: Shop
     moneyId: Roubles
-    shopPresetId: STFoodBotanicPresetZONA
+    shopPresetId: Z14STFoodBotanicPreset
   - type: TypingIndicator
     proto: robot
   - type: TTS # Corvax-TTS
@@ -120,21 +120,21 @@
 
 - type: entity
   parent: NPCPetrAlkash
-  id: NPCNikitaAlkashZONA
+  id: Z14NPCNikitaAlkash
   name: Nikitich [→   ←]
   description: Petrukha's twin brother, but without his entrepreneurial streak. Vice-President of B.O.M.J., which was founded by his brother.
-  suffix: Z14, ZONA-TRADER
+  suffix: Z14, Trader
   components:
   - type: Shop
     moneyId: Roubles
-    shopPresetId: NpcNikitaAlkashZONA
+    shopPresetId: Z14NpcNikitaAlkash
 
 - type: entity
   parent: NPCDoll
-  id: NPCKeshaZONA
+  id: Z14NPCKesha
   name: Kesha [→ ? ←]
   description: A shady fellow who's set up his business in Garbage. It's better to avoid getting on his bad side.
-  suffix: Z14, ZONA-TRADER
+  suffix: Z14, Trader
   components:
   - type: Sprite
     sprite: _Stalker/NPC/Buyer.rsi
@@ -154,7 +154,7 @@
         type: ShopBoundUserInterface
   - type: Shop
     moneyId: Roubles
-    shopPresetId: KeshaShopPresetZONA
+    shopPresetId: Z14KeshaShopPreset
   - type: TypingIndicator
     proto: robot
   - type: TTS # Corvax-TTS
@@ -175,9 +175,9 @@
 
 - type: entity
   parent: NPCDoll
-  id: NPCErjanAlimovZONA
+  id: Z14NPCErjanAlimov
   name: Yerzhan Alimov [→   ←]
-  suffix: Z14, Buying the worst price, ZONA-TRADER
+  suffix: Z14, Buying the worst price, Trader
   description: We buy jewelry at good prices!
   components:
   - type: Sprite
@@ -186,7 +186,7 @@
   - type: Physics
   - type: Shop
     moneyId: Roubles
-    shopPresetId: NpcErjanAlimovZONA
+    shopPresetId: Z14NpcErjanAlimov
   - type: ActivatableUI
     key: enum.ShopUiKey.Key
     singleUser: true
@@ -197,10 +197,10 @@
 
 - type: entity
   parent: NPCDoll
-  id: NPCJuryIzvorotinZONA
+  id: Z14NPCJuryIzvorotin
   name: Yuri Izvorotin [→   ←]
   description: We buy jewelry. Slippery typical. Someone else would not have survived with such a business.
-  suffix: Z14, Buying average prices, ZONA-TRADER
+  suffix: Z14, Buying average prices, Trader
   components:
   - type: Sprite
     sprite: _Stalker/Objects/NPCs/jury_izvorotin.rsi
@@ -208,7 +208,7 @@
   - type: Physics
   - type: Shop
     moneyId: Roubles
-    shopPresetId: NpcJuryIzvorotinZONA
+    shopPresetId: Z14NpcJuryIzvorotin
   - type: ActivatableUI
     key: enum.ShopUiKey.Key
     singleUser: true

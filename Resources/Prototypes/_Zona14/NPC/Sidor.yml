@@ -1,10 +1,10 @@
 
 - type: entity
   parent: NPCDoll
-  id: NPCSidorovichZONA
+  id: Z14NPCSidorovich
   name: Sidorovich [→   ←]
   description: An old squeeze who will not donate even a ruble to save someone. Rancorous.
-  suffix: Z14, ZONA-TRADER
+  suffix: Z14, Trader
   components:
   - type: Sprite
     sprite: _Stalker/NPC/Sidor.rsi
@@ -22,7 +22,7 @@
         type: ShopBoundUserInterface
   - type: Shop
     moneyId: Roubles
-    shopPresetId: NpcSidorZONA
+    shopPresetId: Z14NpcSidor
   - type: TypingIndicator
     proto: robot
   - type: TTS # Corvax-TTS

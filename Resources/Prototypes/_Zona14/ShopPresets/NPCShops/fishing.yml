@@ -1,5 +1,5 @@
 - type: shopPreset
-  id: STFishShopPresetZONA
+  id: Z14STFishShopPreset
   minSellPrice: 5
   itemsForSale:
     # normal fish

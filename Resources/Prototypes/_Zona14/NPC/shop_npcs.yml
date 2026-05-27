@@ -1,8 +1,8 @@
 - type: entity
   parent: NPCDoll
-  id: NPCUncleZONA
+  id: Z14NPCUncle
   name: Uncle [→   ←]
-  suffix: Z14, ZONA-TRADER
+  suffix: Z14, Trader
   description: He smells like weed and beer and he looks like he's ready to get back to the lake.
   components:
   - type: Sprite
@@ -22,7 +22,7 @@
         type: ShopBoundUserInterface
   - type: Shop
     moneyId: Roubles
-    shopPresetId: STFishShopPresetZONA
+    shopPresetId: Z14STFishShopPreset
   - type: TypingIndicator
     proto: robot
   - type: TTS # Corvax-TTS

@@ -1,5 +1,5 @@
 - type: shopPreset
-  id: NpcErjanAlimovZONA
+  id: Z14NpcErjanAlimov
   minSellPrice: 5
   itemsForSale:
     STJewelrySilver: 400

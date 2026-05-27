@@ -1,5 +1,5 @@
 - type: shopPreset
-  id: STNPCBarmanPresetZONA # 1x Standard - Pending Economy Change
+  id: Z14STNPCBarmanPreset # 1x Standard - Pending Economy Change
   minSellPrice: 5
   itemsForSale:
 

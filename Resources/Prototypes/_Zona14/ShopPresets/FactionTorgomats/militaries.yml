@@ -1,5 +1,5 @@
 - type: shopPreset
-  id: OKSOPShopPresetZONA # OKSOP REWORK IN-PROGRESS, SELL PRICES ARE SAME AS SIDOROVICH
+  id: Z14OKSOPShopPreset # OKSOP REWORK IN-PROGRESS, SELL PRICES ARE SAME AS SIDOROVICH
   minSellPrice: 5
   itemsForSale:
     FoodTinMRETrash: 0
@@ -394,7 +394,7 @@
       CasseteGimnUSSRContributorRadio: 500
 
 - type: shopPreset
-  id: OKSOPOfficerShopPresetZONA #Officer vendor
+  id: Z14OKSOPOfficerShopPreset #Officer vendor
   minSellPrice: 5
   itemsForSale:
     FoodTinMRETrash: 0

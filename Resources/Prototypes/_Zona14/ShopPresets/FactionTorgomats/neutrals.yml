@@ -1,5 +1,5 @@
 - type: shopPreset
-  id: NeutralsShopPresetZoneZONA # Sidorovich Prices, higher t1 sell prices
+  id: Z14NeutralsShopPresetZone # Sidorovich Prices, higher t1 sell prices
   minSellPrice: 5
   itemsForSale:
 

@@ -1,5 +1,5 @@
 - type: shopPreset
-  id: MercShopPresetZONA # Pending Economy Change
+  id: Z14MercShopPreset # Pending Economy Change
   minSellPrice: 5
   itemsForSale:
 # MARK: Artifacts

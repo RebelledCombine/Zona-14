@@ -87,11 +87,10 @@
 - type: entity
   parent: BaseVendingMachineRestock
   id: Z14VendingMachineRestockMilitary
-  categories: [ Zona14 ]
+  categories: [ Zona14, StSkipRestockTest ]
   suffix: Z14
   name: military supply restock
   description: A crate with everything you need to eliminate illegals.
-  categories: [ StSkipRestockTest ]
   components:
     - type: VendingMachineRestock
       canRestock:
@@ -254,11 +253,10 @@
 - type: entity
   parent: BaseVendingMachineRestock
   id: Z14VendingMachineRestockUN
-  categories: [ Zona14 ]
+  categories: [ Zona14, StSkipRestockTest ]
   suffix: Z14
   name: UN supply restock
   description: A crate with everything you need to express concern.
-  categories: [ StSkipRestockTest ]
   components:
     - type: VendingMachineRestock
       canRestock:
@@ -331,11 +329,10 @@
 - type: entity
   parent: BaseVendingMachineRestock
   id: Z14VendingMachineRestockLaborer
-  categories: [ Zona14 ]
+  categories: [ Zona14, StSkipRestockTest ]
   suffix: Z14
   name: porter crate restock
   description: A crate of crates for porters.
-  categories: [ StSkipRestockTest ]
   components:
     - type: VendingMachineRestock
       canRestock:
@@ -409,11 +406,10 @@
 - type: entity
   parent: BaseItem
   id: Z14MilitaryPSZInventoryRestock
-  categories: [ Zona14 ]
+  categories: [ Zona14, StSkipRestockTest ]
   suffix: Z14
   name: PSZ restock kit
   description: Place on storage.
-  categories: [ StSkipRestockTest ]
   components:
     - type: VendingMachineRestock
       canRestock:
@@ -490,11 +486,10 @@
 - type: entity
   parent: BaseItem
   id: Z14MilitaryPSZInventoryRestockOfficer
-  categories: [ Zona14 ]
+  categories: [ Zona14, StSkipRestockTest ]
   suffix: Z14
   name: officer PSZ restock kit
   description: Place in officer crate.
-  categories: [ StSkipRestockTest ]
   components:
     - type: VendingMachineRestock
       canRestock:
@@ -553,11 +548,10 @@
 - type: entity
   parent: BaseItem
   id: Z14MonolithInventoryRestock
-  categories: [ Zona14 ]
+  categories: [ Zona14, StSkipRestockTest ]
   suffix: Z14
   name: Monolith restock crate
   description: Place on storage.
-  categories: [ StSkipRestockTest ]
   components:
     - type: VendingMachineRestock
       canRestock:

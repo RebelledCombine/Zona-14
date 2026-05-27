@@ -2,9 +2,9 @@
 
 - type: entity
   parent: NPCDoll
-  id: NPCDolgZONA
+  id: Z14NPCDolg
   name: Sergeant Prokopenko [→   ←]
-  suffix: Z14, Duty, ZONA-TRADER
+  suffix: Z14, Duty, Trader
   description: Sells good hunting gear and supplies that are very important for survival in the zone.
   components:
   - type: Sprite
@@ -23,7 +23,7 @@
         type: ShopBoundUserInterface
   - type: Shop
     moneyId: Roubles
-    shopPresetId: DolgShopPresetZONA
+    shopPresetId: Z14DolgShopPreset
   - type: TypingIndicator
     proto: robot
   - type: TTS # Corvax-TTS
@@ -44,9 +44,9 @@
 
 - type: entity
   parent: NPCDoll
-  id: NPCBandZONA
+  id: Z14NPCBand
   name: Mafaniy 'Junk'[→   ←]
-  suffix: Z14, Bandit, ZONA-TRADER
+  suffix: Z14, Bandit, Trader
   description: Sells good hunting gear and supplies that are very important for survival in the zone.
   components:
   - type: Sprite
@@ -65,7 +65,7 @@
         type: ShopBoundUserInterface
   - type: Shop
     moneyId: Roubles
-    shopPresetId: BandsShopPresetZONA
+    shopPresetId: Z14BandsShopPreset
   - type: TypingIndicator
     proto: robot
   - type: TTS # Corvax-TTS
@@ -86,10 +86,10 @@
 
 - type: entity
   parent: NPCDoll
-  id: NPCResearchInstitutesZONA
+  id: Z14NPCResearchInstitutes
   name: Prof. Round [→   ←]
   description: They say that the professor has a diploma from Moscow State University. Should we believe the rumors?
-  suffix: Z14, Ecologist, ZONA-TRADER
+  suffix: Z14, Ecologist, Trader
   components:
   - type: Sprite
     sprite: _Stalker/NPC/Scientist.rsi
@@ -107,7 +107,7 @@
         type: ShopBoundUserInterface
   - type: Shop
     moneyId: Roubles
-    shopPresetId: NpcResearchInstituteZONA
+    shopPresetId: Z14NpcResearchInstitute
   - type: TypingIndicator
     proto: robot
   - type: TTS # Corvax-TTS
@@ -128,9 +128,9 @@
 
 - type: entity
   parent: NPCDoll
-  id: NPCclearSkyZONA
+  id: Z14NPCclearSky
   name: Dimka 'Postmaster'[→   ←]
-  suffix: Z14, Clear Sky, ZONA-TRADER
+  suffix: Z14, Clear Sky, Trader
   description: Sells good hunting gear and supplies that are very important for survival in the zone.
   components:
   - type: Sprite
@@ -149,7 +149,7 @@
         type: ShopBoundUserInterface
   - type: Shop
     moneyId: Roubles
-    shopPresetId: ClearSkyShopPresetZONA
+    shopPresetId: Z14ClearSkyShopPreset
   - type: TypingIndicator
     proto: robot
   - type: TTS # Corvax-TTS
@@ -170,9 +170,9 @@
 
 - type: entity
   parent: NPCDoll
-  id: NPCFreedomZONA
+  id: Z14NPCFreedom
   name: Vasyan 'Bilibob'[→   ←]
-  suffix: Z14, Freedom, ZONA-TRADER
+  suffix: Z14, Freedom, Trader
   description: Stepfather of a stalker named 'Kebab'. Sells good hunting equipment and supplies that are very important for survival in the zone.
   components:
   - type: Sprite
@@ -191,7 +191,7 @@
         type: ShopBoundUserInterface
   - type: Shop
     moneyId: Roubles
-    shopPresetId: FreedomShopPresetZONA
+    shopPresetId: Z14FreedomShopPreset
   - type: TypingIndicator
     proto: robot
   - type: TTS # Corvax-TTS
@@ -213,9 +213,9 @@
 
 - type: entity
   parent: NPCDoll
-  id: NPCMilitaryGruntZONA # OKSOP
+  id: Z14NPCMilitaryGrunt # OKSOP
   name: Banner [→   ←]
-  suffix: Z14, OKSOP, ZONA-TRADER
+  suffix: Z14, OKSOP, Trader
   description: He sells government property among the soldiers.
   components:
   - type: Sprite
@@ -234,7 +234,7 @@
         type: ShopBoundUserInterface
   - type: Shop
     moneyId: Roubles
-    shopPresetId: OKSOPShopPresetZONA
+    shopPresetId: Z14OKSOPShopPreset
   - type: TypingIndicator
     proto: robot
   - type: TTS # Corvax-TTS
@@ -253,9 +253,9 @@
 
 - type: entity
   parent: NPCDoll
-  id: NPCMilitaryOfficerZONA # OKSOP Officers
+  id: Z14NPCMilitaryOfficer # OKSOP Officers
   name: Vitaly 'Quartermaster'[→ ←]
-  suffix: Z14, Military, ZONA-TRADER
+  suffix: Z14, Military, Trader
   description: He's the Quartermaster sells government property among the soldiers.
   components:
   - type: Sprite
@@ -274,7 +274,7 @@
         type: ShopBoundUserInterface
   - type: Shop
     moneyId: Roubles
-    shopPresetId: OKSOPOfficerShopPresetZONA
+    shopPresetId: Z14OKSOPOfficerShopPreset
   - type: TypingIndicator
     proto: robot
   - type: TTS # Corvax-TTS
@@ -295,9 +295,9 @@
 
 - type: entity
   parent: NPCDoll
-  id: NPCMercHummingbirdZONA
+  id: Z14NPCMercHummingbird
   name: Hummingbird [→ ←]
-  suffix: Z14, Mercenaries, ZONA-TRADER
+  suffix: Z14, Mercenaries, Trader
   description: He buys weapons in bulk in Europe and America and sells them in the zone.
   components:
   - type: Sprite
@@ -316,7 +316,7 @@
         type: ShopBoundUserInterface
   - type: Shop
     moneyId: Roubles
-    shopPresetId: MercShopPresetZONA
+    shopPresetId: Z14MercShopPreset
   - type: TypingIndicator
     proto: robot
   - type: TTS # Corvax-TTS
@@ -337,9 +337,9 @@
 
 - type: entity
   parent: NPCDoll
-  id: NPCStalkZONA
+  id: Z14NPCStalk
   name: Jackal [→   ←]
-  suffix: Z14, Neutrals, ZONA-TRADER
+  suffix: Z14, Neutrals, Trader
   description: Sells good hunting gear and supplies that are very important for survival in the zone.
   components:
   - type: Sprite
@@ -358,7 +358,7 @@
         type: ShopBoundUserInterface
   - type: Shop
     moneyId: Roubles
-    shopPresetId: NeutralsShopPresetZoneZONA
+    shopPresetId: Z14NeutralsShopPresetZone
   - type: TypingIndicator
     proto: robot
   - type: TTS # Corvax-TTS

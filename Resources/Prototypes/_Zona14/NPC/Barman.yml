@@ -1,9 +1,9 @@
 ﻿- type: entity
   parent: NPCDoll
-  id: NPCBarmenZONA
+  id: Z14NPCBarmen
   name: Barman [→   ←]
   description: Bartender in a bar. A little less greedy than Sidor, but the same miser. By the way, are they brothers?
-  suffix: Z14, ZONA-TRADER
+  suffix: Z14, Trader
   components:
   - type: Sprite
     sprite: _Stalker/NPC/Barmen.rsi
@@ -21,7 +21,7 @@
         type: ShopBoundUserInterface
   - type: Shop
     moneyId: Roubles
-    shopPresetId: STNPCBarmanPresetZONA
+    shopPresetId: Z14STNPCBarmanPreset
   - type: TypingIndicator
     proto: robot
   - type: TTS # Corvax-TTS

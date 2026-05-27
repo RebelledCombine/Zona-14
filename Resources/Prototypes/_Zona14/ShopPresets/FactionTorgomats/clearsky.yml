@@ -1,5 +1,5 @@
 - type: shopPreset
-  id: ClearSkyShopPresetZONA # Pending Economy Change
+  id: Z14ClearSkyShopPreset # Pending Economy Change
   minSellPrice: 5
   itemsForSale:
 # MARK: Artifacts

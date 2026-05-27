@@ -1,5 +1,5 @@
 - type: shopPreset
-  id: NpcJuryIzvorotinZONA
+  id: Z14NpcJuryIzvorotin
   minSellPrice: 5
   itemsForSale:
     STJewelrySilver: 400

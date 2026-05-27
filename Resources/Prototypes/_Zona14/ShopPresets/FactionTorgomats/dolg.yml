@@ -1,5 +1,5 @@
 - type: shopPreset
-  id: DolgShopPresetZONA # Mutant parts 1.5x Barman - Pending Economy Change
+  id: Z14DolgShopPreset # Mutant parts 1.5x Barman - Pending Economy Change
   minSellPrice: 5
   itemsForSale:
 # MARK: Mutant Parts
