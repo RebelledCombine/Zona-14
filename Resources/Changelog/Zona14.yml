@@ -219,4 +219,44 @@
   id: 22
   time: '2026-05-24T18:02:20Z'
   url: https://github.com/Zona-14/Zona-14/pull/32
+- author: teecoding
+  changes:
+  - message: 85 combat prototypes (weapons, ammo, grenades) cloned into _Zona14/ with
+      Z14 prefix and Zona14 category.
+    type: Add
+  - message: Zona14 entity category for filtering fork entities in spawn menus.
+    type: Add
+  - message: 'Fire rates, SMG spread, and grenade values from #30 and #34 baked into
+      Z14 prototypes.'
+    type: Tweak
+  - message: Z14 suffix added to all existing _Zona14/ prototypes (NPCs, shops, portals,
+      roles, guidebook).
+    type: Tweak
+  - message: NPC trader suffixes migrated from ST to Z14.
+    type: Tweak
+  - message: Russian prototype text translated to English across all _Zona14/ combat
+      entities.
+    type: Tweak
+  - message: Broken 9x39 ammo box prototype reference corrected.
+    type: Fix
+  id: 23
+  time: '2026-05-27T12:27:52Z'
+  url: https://github.com/Zona-14/Zona-14/pull/35
+- author: teecoding
+  changes:
+  - message: Migrated combat data layer (shops, caches, crafting, economy) into _Zona14
+      with Z14 prototype IDs.
+    type: Tweak
+  - message: Added MARK section comments to _Zona14 YAML files for VSCode navigation.
+    type: Tweak
+  id: 24
+  time: '2026-05-27T14:43:51Z'
+  url: https://github.com/Zona-14/Zona-14/pull/36
+- author: teecoding
+  changes:
+  - message: Standardized 38 legacy prototype IDs to use the Z14 naming convention.
+    type: Tweak
+  id: 25
+  time: '2026-05-27T15:37:50Z'
+  url: https://github.com/Zona-14/Zona-14/pull/37
 Order: 0
