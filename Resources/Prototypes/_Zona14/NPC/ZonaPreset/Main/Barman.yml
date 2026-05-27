@@ -3,7 +3,7 @@
   id: NPCBarmenZONA
   name: Barman [→   ←]
   description: Bartender in a bar. A little less greedy than Sidor, but the same miser. By the way, are they brothers?
-  suffix: ST, ZONA-TRADER
+  suffix: Z14, ZONA-TRADER
   components:
   - type: Sprite
     sprite: _Stalker/NPC/Barmen.rsi

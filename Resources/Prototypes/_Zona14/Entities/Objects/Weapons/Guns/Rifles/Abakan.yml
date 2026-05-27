@@ -1,0 +1,79 @@
+- type: entity
+  name: AN-94 "Abakan"
+  parent: Z14STWeaponRifleAK74M
+  id: Z14STWeaponRifleStalkerAbakan
+  suffix: Z14
+  categories: [ Zona14 ]
+  description: A weapon of Soviet elite forces. Developed as a replacement for the aging AKS. In the Abakan, not only the internal mechanisms but the entire receiver and barrel are movable, reducing recoil and significantly improving accuracy.
+  components:
+  - type: STWeight
+    self: 4.5
+  - type: PullDoAfter
+    pullTime: 3.5
+  - type: GunWieldBonus
+    minAngle: -53
+    maxAngle: -65
+  - type: Clothing
+    sprite: _Stalker/Objects/Weapons/Guns/Rifles/abakan.rsi
+  - type: Item
+    sprite: _Stalker/Objects/Weapons/Guns/Rifles/abakan.rsi
+  - type: Sprite
+    sprite: _Stalker/Objects/Weapons/Guns/Rifles/abakan.rsi
+  - type: Gun
+    soundGunshot:
+      path: /Audio/_Stalker/Effects/Guns/n_abakan_shot.ogg
+    minAngle: 55
+    maxAngle: 95
+    fireRate: 6
+    angleIncrease: 1.5
+    angleDecay: 8
+    projectileSpeed: 60
+    selectedMode: FullAuto
+    availableModes:
+    - SemiAuto
+    - FullAuto
+    - Burst
+  - type: STWeaponDamageFalloff
+    falloffMultiplier: 0.5
+  - type: STWeaponAccuracy
+    accuracyMultiplier: 1.45
+
+- type: entity
+  name: AEK-971
+  suffix: Z14, Custom
+  parent: Z14STWeaponRifleAK74M
+  id: Z14STWeaponRifleStalkerAek971
+  categories: [ Zona14 ]
+  description: A Soviet assault rifle developed in 1978 at the Degtyarev plant in Kovrov under the supervision of Stanislav Koksharov, based on the Konstantinov rifle system.
+  components:
+  - type: STWeight
+    self: 3
+  - type: PullDoAfter
+    pullTime: 2.5
+  - type: GunWieldBonus
+    minAngle: -50
+    maxAngle: -65
+  - type: Clothing
+    sprite: _Stalker/Objects/Weapons/Guns/Rifles/aek971.rsi
+  - type: Item
+    sprite: _Stalker/Objects/Weapons/Guns/Rifles/aek971.rsi
+  - type: Sprite
+    sprite: _Stalker/Objects/Weapons/Guns/Rifles/aek971.rsi
+  - type: Gun
+    soundGunshot:
+      path: /Audio/_Stalker/Effects/Guns/aek971.ogg
+    minAngle: 48
+    maxAngle: 100
+    fireRate: 9
+    angleIncrease: 2.0
+    angleDecay: 8
+    projectileSpeed: 60
+    selectedMode: FullAuto
+    availableModes:
+    - SemiAuto
+    - FullAuto
+    - Burst
+  - type: STWeaponDamageFalloff
+    falloffMultiplier: 0.8
+  - type: STWeaponAccuracy
+    accuracyMultiplier: 1.46

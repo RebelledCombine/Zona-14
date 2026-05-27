@@ -1,0 +1,202 @@
+- type: entity
+  abstract: true
+  parent: Z14STBaseWeaponRifle
+  id: Z14STBaseWeaponRifleOC14
+  categories: [ Zona14 ]
+  components:
+  - type: STWeight
+    self: 4
+  - type: PullDoAfter
+    pullTime: 4
+  - type: GunWieldBonus
+    minAngle: -50
+    maxAngle: -62
+  - type: Clothing
+    sprite: _Stalker/Objects/Weapons/Guns/Rifles/groza.rsi
+  - type: Item
+    sprite: _Stalker/Objects/Weapons/Guns/Rifles/groza.rsi
+  - type: Sprite
+    sprite: _Stalker/Objects/Weapons/Guns/Rifles/groza.rsi
+  - type: Gun
+    fireRate: 7
+    soundGunshot:
+      path: /Audio/_Stalker/Effects/Guns/n_groza_shot.ogg
+      params:
+          volume: -2
+    minAngle: 48
+    maxAngle: 90
+    angleIncrease: 2.0
+    angleDecay: 8
+    projectileSpeed: 60
+    selectedMode: Burst
+    availableModes:
+    - Burst
+    - SemiAuto
+    - FullAuto
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: Base545Mag10
+        insertSound: /Audio/_Stalker/Weapons/Guns/RifleGen/MagIn/rifle_magin.ogg
+        ejectSound: /Audio/_Stalker/Weapons/Guns/RifleGen/MagOut/rifle_magout.ogg
+        priority: 4
+        whitelist:
+          tags:
+          - Magazine545
+      gun_chamber:
+        name: Chamber
+        startingItem: STCartridge545FMJ
+        priority: 1
+        whitelist:
+          tags:
+          - STCartridge545
+  - type: STWeaponDamageFalloff
+    falloffMultiplier: 0.6
+  - type: STWeaponAccuracy
+    accuracyMultiplier: 1.47
+
+- type: entity
+  parent: Z14STBaseWeaponRifleOC14
+  id: Z14STWeaponRifleOC14
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: OC-14 «Groza»
+  description: The automatic grenade launcher system is a very successful variant of an assault rifle in the Zone - compact, reliable, and at the same time universal and powerful. Military stalkers really like the «Groza».
+
+- type: entity
+  parent: Z14STBaseWeaponRifleOC14
+  id: Z14STWeaponRifleOC14Alt
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: OC-14 «Groza»
+  description: An assault rifle-grenade launcher system, 70% unified with AK-type assault rifles (the main differences are the 9 x 39 mm caliber, the bullpup layout, and greater opportunities for modernization). Designed to arm rapid response units. Highly valued by the military and stalkers for its ability to reliably hit an enemy protected by a bulletproof vest or located in cover.
+  components:
+  - type: Item
+    sprite: _Stalker/Objects/Weapons/Guns/Rifles/_Skins/groza-alt.rsi
+  - type: Sprite
+    sprite: _Stalker/Objects/Weapons/Guns/Rifles/_Skins/groza-alt.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Weapons/Guns/Rifles/_Skins/groza-alt.rsi
+  - type: Gun
+    soundGunshot:
+      path: /Audio/_Stalker/Effects/Guns/groza_shoot.ogg
+
+- type: entity
+  parent: Z14STBaseWeaponRifleOC14
+  id: Z14STWeaponRifleOC14AltSkin1
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: OC-14 «Groza»
+  description: An assault rifle-grenade launcher system, 70% unified with AK-type assault rifles (the main differences are the 9 x 39 mm caliber, the bullpup layout, and greater opportunities for modernization). Designed to arm rapid response units. Highly valued by the military and stalkers for its ability to reliably hit an enemy protected by a bulletproof vest or located in cover.
+  components:
+  - type: Item
+    sprite: _Stalker/Objects/Weapons/Guns/Rifles/groza-merc.rsi
+  - type: Sprite
+    sprite: _Stalker/Objects/Weapons/Guns/Rifles/groza-merc.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Weapons/Guns/Rifles/groza-merc.rsi
+  - type: Gun
+    soundGunshot:
+      path: /Audio/_Stalker/Effects/Guns/scar.ogg
+      params:
+        volume: -2
+    fireRate: 7
+    minAngle: 48
+    maxAngle: 90
+    angleDecay: 8
+
+- type: entity
+  parent: Z14STBaseWeaponRifleOC14
+  id: Z14STWeaponRifleOC14939
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: OC-14 «Groza» 9x39
+  description: An assault rifle-grenade launcher system, 70% unified with AK-type assault rifles (the main differences are the 9 x 39 mm caliber, the bullpup layout, and greater opportunities for modernization). Designed to arm rapid response units. Highly valued by the military and stalkers for its ability to reliably hit an enemy protected by a bulletproof vest or located in cover.
+  components:
+  - type: STWeight
+    self: 4
+  - type: PullDoAfter
+    pullTime: 4
+  - type: GunWieldBonus
+    minAngle: -48
+    maxAngle: -50
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: Base939Mag10
+        insertSound: /Audio/_Stalker/Weapons/Guns/RifleGen/MagIn/rifle_magin.ogg
+        ejectSound: /Audio/_Stalker/Weapons/Guns/RifleGen/MagOut/rifle_magout.ogg
+        priority: 4
+        whitelist:
+          tags:
+          - Magazine939
+      gun_chamber:
+        name: Chamber
+        startingItem:
+        priority: 1
+        whitelist:
+          tags:
+          - STCartridge939
+  - type: Gun
+    fireRate: 7
+    soundGunshot:
+      path: /Audio/_Stalker/Effects/Guns/n_groza_shot.ogg
+      params:
+          volume: -2
+    minAngle: 48
+    maxAngle: 90
+    angleIncrease: 2.0
+    angleDecay: 8
+    projectileSpeed: 60
+    selectedMode: Burst
+    availableModes:
+    - Burst
+    - SemiAuto
+    - FullAuto
+  - type: STWeaponDamageFalloff
+    falloffMultiplier: 0.6
+  - type: STWeaponAccuracy
+    accuracyMultiplier: 1.44
+
+- type: entity
+  parent: Z14STBaseWeaponRifleOC14
+  id: Z14STWeaponRifleOC14Liturgia
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: OC-14 «Liturgia»
+  description: An assault rifle-grenade launcher system, 70% unified with AK-type assault rifles (the main differences are the 9 x 39 mm caliber, the bullpup layout, and greater opportunities for modernization). Designed to arm rapid response units. Highly valued by the military and stalkers for its ability to reliably hit an enemy protected by a bulletproof vest or located in cover.
+  components:
+  - type: STWeight
+    self: 4
+  - type: Item
+    sprite: _Stalker/Objects/Weapons/Guns/Rifles/_Skins/groza_liturgia.rsi
+  - type: Sprite
+    sprite: _Stalker/Objects/Weapons/Guns/Rifles/_Skins/groza_liturgia.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Weapons/Guns/Rifles/_Skins/groza_liturgia.rsi
+  - type: Gun
+    soundGunshot:
+      path: /Audio/_Stalker/Effects/Guns/val_shoot.ogg
+  - type: FarGunshot
+    sound: /Audio/_DZ/Effects/FarGunshots/supressed1.ogg
+    silencerDecrease: 0.2
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: Base739Mag10
+        insertSound: /Audio/_Stalker/Weapons/Guns/RifleGen/MagIn/rifle_magin.ogg
+        ejectSound: /Audio/_Stalker/Weapons/Guns/RifleGen/MagOut/rifle_magout.ogg
+        priority: 4
+        whitelist:
+          tags:
+          - Magazine739
+      gun_chamber:
+        name: Chamber
+        startingItem:
+        priority: 1
+        whitelist:
+          tags:
+          - STCartridge739

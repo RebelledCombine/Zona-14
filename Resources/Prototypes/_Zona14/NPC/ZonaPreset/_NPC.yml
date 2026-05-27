@@ -3,7 +3,7 @@
   id: NPCRadioPlayerZONA
   name: Radio Amateur [→   ←]
   description: He is engaged in the design, construction, modification and use of radio engineering and electronic devices. He loves everything related to the Soviet Union. He tries to be secretive.
-  suffix: ST, Music, ZONA-TRADER
+  suffix: Z14, Music, ZONA-TRADER
   components:
   - type: Sprite
     sprite: _Stalker/NPC/RadioPlayer.rsi
@@ -43,7 +43,7 @@
   id: NPCVadikNarikZONA
   name: Vadik Goy [→ ? ←]
   description: An ordinary drug addict who both sells and buys everything related to cannabis.
-  suffix: ST, WEED, ZONA-TRADER
+  suffix: Z14, WEED, ZONA-TRADER
   components:
   - type: Sprite
     sprite: _Stalker/NPC/VadikNarik.rsi
@@ -83,7 +83,7 @@
   id: NPCBotanikMaksZONA
   name: Max [→   ←]
   description: Max is a skilled botanist with a green thumb and a passion for plants. He has a deep knowledge of plants and the ability to grow them in any conditions.
-  suffix: ST, Cooking, ZONA-TRADER
+  suffix: Z14, Cooking, ZONA-TRADER
   components:
   - type: Sprite
     sprite: _Stalker/NPC/BotanikMaks.rsi
@@ -123,7 +123,7 @@
   id: NPCNikitaAlkashZONA
   name: Nikitich [→   ←]
   description: Petrukha's twin brother, but without his entrepreneurial streak. Vice-President of B.O.M.J., which was founded by his brother.
-  suffix: ST, ZONA-TRADER
+  suffix: Z14, ZONA-TRADER
   components:
   - type: Shop
     moneyId: Roubles
@@ -134,7 +134,7 @@
   id: NPCKeshaZONA
   name: Kesha [→ ? ←]
   description: A shady fellow who's set up his business in Garbage. It's better to avoid getting on his bad side.
-  suffix: ST, ZONA-TRADER
+  suffix: Z14, ZONA-TRADER
   components:
   - type: Sprite
     sprite: _Stalker/NPC/Buyer.rsi
@@ -177,7 +177,7 @@
   parent: NPCDoll
   id: NPCErjanAlimovZONA
   name: Yerzhan Alimov [→   ←]
-  suffix: ST, Buying the worst price, ZONA-TRADER
+  suffix: Z14, Buying the worst price, ZONA-TRADER
   description: We buy jewelry at good prices!
   components:
   - type: Sprite
@@ -200,7 +200,7 @@
   id: NPCJuryIzvorotinZONA
   name: Yuri Izvorotin [→   ←]
   description: We buy jewelry. Slippery typical. Someone else would not have survived with such a business.
-  suffix: ST, Buying average prices, ZONA-TRADER
+  suffix: Z14, Buying average prices, ZONA-TRADER
   components:
   - type: Sprite
     sprite: _Stalker/Objects/NPCs/jury_izvorotin.rsi

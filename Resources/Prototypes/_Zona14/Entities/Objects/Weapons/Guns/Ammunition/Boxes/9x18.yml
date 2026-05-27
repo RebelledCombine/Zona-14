@@ -1,0 +1,149 @@
+- type: entity
+  parent: BaseAmmoBoxStalker
+  id: Z14918PGJBox
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: ammo box (9x18) P GZh
+  description: For PMm, 30 rounds per box. Penetrates only class 1 armor.
+  components:
+  - type: MagazineVisuals
+    magState: 919ammo2
+  - type: BallisticAmmoProvider
+    proto: STCartridge918PGJ
+    capacity: 30
+    whitelist:
+      tags:
+        - STCartridge918
+  - type: Sprite
+    layers:
+    - state: 918
+      map: ["enum.GunVisualLayers.Base"]
+    - state: 919ammo2-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  parent: Z14918PGJBox
+  id: Z14918PSTBox
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: ammo box (9x18) PST GZh
+  description: For PMm, 30 rounds per box. Penetrates class 2 armor.
+  components:
+  - type: BallisticAmmoProvider
+    proto: STCartridge918PST
+  - type: Sprite
+    layers:
+    - state: 918
+      map: ["enum.GunVisualLayers.Base"]
+    - state: 919ammo2-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: t2_large
+
+- type: entity
+  parent: Z14918PGJBox
+  id: Z14918SP7Box
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: ammo box (9x18) SP7 GZh
+  description: Expanding ammunition for former Warsaw Pact SMGs and pistols. Cannot penetrate armor, but deals massive damage to lightly armored or unarmored targets.
+  components:
+  - type: BallisticAmmoProvider
+    proto: STCartridge918SP7
+  - type: Sprite
+    layers:
+    - state: 918
+      map: ["enum.GunVisualLayers.Base"]
+    - state: 919ammo2-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: exp
+
+- type: entity
+  parent: Z14918PGJBox
+  id: Z14918PBMBox
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: ammo box (9x18) PBM GZh
+  description: For PMm, 30 rounds per box. Penetrates class 3 armor.
+  components:
+  - type: BallisticAmmoProvider
+    proto: STCartridge918PBM
+  - type: Sprite
+    layers:
+    - state: 918
+      map: ["enum.GunVisualLayers.Base"]
+    - state: 919ammo2-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: t4
+    - state: antiarmor_large
+
+- type: entity
+  parent: BaseAmmoCinkBoxStalker
+  id: Z14918PGJBoxCink
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: ammo crate (9x18) P GZh
+  description: For PMm, 300 rounds per crate. Penetrates only class 1 armor.
+  components:
+  - type: BallisticAmmoProvider
+    proto: STCartridge918PGJ
+    capacity: 300
+    whitelist:
+      tags:
+        - STCartridge918
+  - type: Sprite
+    layers:
+    - state: cink
+      map: ["enum.GunVisualLayers.Base"]
+    - state: cink
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  parent: Z14918PGJBoxCink
+  id: Z14918PSTBoxCink
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: ammo crate (9x18) PST GZh
+  description: For PMm, 300 rounds per crate. Penetrates class 2 armor.
+  components:
+  - type: BallisticAmmoProvider
+    proto: STCartridge918PST
+  - type: Sprite
+    layers:
+    - state: cink
+      map: ["enum.GunVisualLayers.Base"]
+    - state: cink
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  parent: Z14918PGJBoxCink
+  id: Z14918SP7BoxCink
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: ammo crate (9x18) SP7 GZh
+  description: Expanding ammunition for former Warsaw Pact SMGs and pistols. Cannot penetrate armor, but deals massive damage to lightly armored or unarmored targets.
+  components:
+  - type: BallisticAmmoProvider
+    proto: STCartridge918SP7
+  - type: Sprite
+    layers:
+    - state: cink
+      map: ["enum.GunVisualLayers.Base"]
+    - state: cink
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  parent: Z14918PGJBoxCink
+  id: Z14918PBMBoxCink
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: ammo crate (9x18) PBM GZh
+  description: For PMm, 300 rounds per crate. Penetrates class 3 armor.
+  components:
+  - type: BallisticAmmoProvider
+    proto: STCartridge918PBM
+  - type: Sprite
+    layers:
+    - state: cink
+      map: ["enum.GunVisualLayers.Base"]
+    - state: cink
+      map: ["enum.GunVisualLayers.Mag"]

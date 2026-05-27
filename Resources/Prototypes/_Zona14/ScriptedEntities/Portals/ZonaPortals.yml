@@ -7,6 +7,7 @@
 - type: entity
   parent: MapTeleportBase
   id: Zona-Lobby-Dytiatky
+  suffix: Z14
   name: Zona-Lobby-Dytiatky
   components:
     - type: NewMapTeleport
@@ -17,6 +18,7 @@
 - type: entity
   parent: MapTeleportBaseUncollide
   id: Zona-Lobby-Dytiatky-Exit
+  suffix: Z14
   name: Zona-Lobby-Dytiatky-Exit
   components:
     - type: NewMapTeleport
@@ -32,7 +34,7 @@
 - type: entity
   parent: LocalTeleportBase
   id: Zona-RV-Sidorovich1
-  suffix: Zona14, LocalTeleport
+  suffix: Z14, Zona14, LocalTeleport
   name: Zona-RV-Sidorovich1
   components:
     - type: LocalTeleport
@@ -41,7 +43,7 @@
 - type: entity
   parent: LocalTeleportBase
   id: Zona-RV-Sidorovich2
-  suffix: Zona14, LocalTeleport
+  suffix: Z14, Zona14, LocalTeleport
   name: Zona-RV-Sidorovich2
   components:
     - type: LocalTeleport
@@ -50,7 +52,7 @@
 - type: entity
   parent: LocalTeleportBase
   id: Zona-RV-Sidorovich3
-  suffix: Zona14, LocalTeleport
+  suffix: Z14, Zona14, LocalTeleport
   name: Zona-RV-Sidorovich3
   components:
     - type: LocalTeleport
@@ -64,6 +66,7 @@
 - type: entity
   parent: MapTeleportBase
   id: Zona-Cordon-Garbage
+  suffix: Z14
   name: Zona-Cordon-Garbage
   components:
   - type: NewMapTeleport

@@ -1,0 +1,61 @@
+- type: entity
+  name: Glock-17
+  parent: Z14STBaseWeaponPistol
+  id: Z14WeaponPistolStalkerGlock
+  suffix: Z14
+  categories: [ Zona14 ]
+  description: One of the most popular pistols in the USA, chambered in 9x19.
+  components:
+    - type: STWeight
+      self: 1
+    - type: Sprite
+      scale: 0.8, 0.8
+      sprite: _Stalker/Objects/Weapons/Guns/Pistols/glock.rsi
+      layers:
+        - state: base
+          map: ["enum.GunVisualLayers.Base"]
+        - state: mag-0
+          map: ["enum.GunVisualLayers.Mag"]
+    - type: Gun
+      projectileSpeed: 45
+      minAngle: 7
+      maxAngle: 28
+      angleIncrease: 2.0
+      angleDecay: 8
+      fireRate: 5
+      availableModes:
+        - SemiAuto
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          startingItem: BaseGlockMag10
+          insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
+          ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+          priority: 3
+          whitelist:
+            tags:
+              - MagazineGlock
+        gun_auto_sear:
+          name: Insides
+          priority: 2
+          whitelist:
+            tags:
+              - STModuleAutoSear
+        gun_chamber:
+          name: Chamber
+          startingItem: STCartridge919PSOGJ
+          priority: 1
+          whitelist:
+            tags:
+              - STCartridge919
+    - type: ContainerContainer
+      containers:
+        gun_magazine: !type:ContainerSlot {}
+        gun_auto_sear: !type:ContainerSlot {}
+        gun_chamber: !type:ContainerSlot {}
+    - type: Craftable
+    - type: STWeaponDamageFalloff
+      falloffMultiplier: 1.4
+    - type: STWeaponAccuracy
+      accuracyMultiplier: 1.4

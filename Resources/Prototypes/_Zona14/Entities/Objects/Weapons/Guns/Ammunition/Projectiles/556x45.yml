@@ -1,0 +1,96 @@
+#5.56x45 - Tier 3 intermediate rifle caliber
+
+- type: entity
+  id: Z14Bullet556FMJ
+  suffix: Z14
+  name: bullet (5.56x45 FMJ)
+  parent: STBaseLRBullet
+  categories: [ HideSpawnMenu, Zona14 ]
+  components:
+  - type: TimedDespawn
+    lifetime: 4
+  - type: Projectile
+    projectileClass: 3
+    damage:
+      types:
+        Piercing: 17
+  - type: StaminaDamageOnCollide
+    damage: 2
+
+- type: entity
+  id: Z14Bullet556M855
+  suffix: Z14
+  name: bullet (5.56x45 FMJ)
+  parent: Z14Bullet556FMJ
+  categories: [ HideSpawnMenu, Zona14 ]
+  components:
+  - type: Projectile
+    projectileClass: 3
+    damage:
+      types:
+        Piercing: 17
+  - type: StaminaDamageOnCollide
+    damage: 2
+
+- type: entity
+  id: Z14Bullet556M856
+  suffix: Z14
+  name: bullet (5.56x45 FMJ)
+  parent: Z14Bullet556FMJ
+  categories: [ HideSpawnMenu, Zona14 ]
+  components:
+  - type: Projectile
+    projectileClass: 3
+    damage:
+      types:
+        Piercing: 17
+  - type: StaminaDamageOnCollide
+    damage: 2
+
+- type: entity
+  id: Z14Bullet556Warmag
+  suffix: Z14
+  name: bullet (5.56x45 HP)
+  parent: Z14Bullet556FMJ
+  categories: [ HideSpawnMenu, Zona14 ]
+  components:
+  - type: Projectile
+    projectileClass: 2
+    damage:
+      types:
+        Mutant: 45
+        Piercing: 5
+        Blunt: 9
+        Slash: 9
+  - type: StaminaDamageOnCollide
+    damage: 3
+
+- type: entity
+  id: Z14Bullet556M995
+  suffix: Z14
+  name: bullet (5.56x45 AP)
+  parent: Z14Bullet556FMJ
+  categories: [ HideSpawnMenu, Zona14 ]
+  components:
+  - type: Projectile
+    projectileClass: 4
+    damage:
+      types:
+        Piercing: 15
+  - type: StaminaDamageOnCollide
+    damage: 1
+
+- type: entity
+  id: Z14Bullet556SSAAP
+  suffix: Z14
+  name: bullet (5.56x45 AP)
+  parent: Z14Bullet556FMJ
+  categories: [ HideSpawnMenu, Zona14 ]
+  components:
+  - type: Projectile
+    projectileClass: 4
+    damage:
+      types:
+        Piercing: 15
+  - type: StaminaDamageOnCollide
+    damage: 0

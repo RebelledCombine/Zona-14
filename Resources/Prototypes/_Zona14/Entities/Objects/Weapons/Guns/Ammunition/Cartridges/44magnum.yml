@@ -1,0 +1,51 @@
+- type: entity
+  parent: BaseCartridge
+  id: Z14BaseCartridgeRemingtonMagnum
+  categories: [ Zona14 ]
+  name: cartridge (.44 remington magnum)
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - CartridgeRemingtonMagnum
+  - type: CartridgeAmmo
+    deleteOnSpawn: true
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+    state: "base"
+
+- type: entity
+  parent: Z14BaseCartridgeRemingtonMagnum
+  id: Z14CartridgeRemingtonMagnum
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: cartridge (.44 remington magnum)
+  components:
+  - type: CartridgeAmmo
+    proto: Z14BulletRemingtonMagnum
+
+- type: entity
+  parent: Z14BaseCartridgeRemingtonMagnum
+  id: Z14CartridgeRemingtonMagnumAP
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: cartridge (.44 remington magnum armor-piercing)
+  components:
+  - type: CartridgeAmmo
+    proto: Z14BulletRemingtonMagnumAP
+
+- type: entity
+  parent: Z14BaseCartridgeRemingtonMagnum
+  id: Z14CartridgeRemingtonMagnumHP
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: cartridge (.44 remington magnum hollow-point)
+  components:
+  - type: CartridgeAmmo
+    proto: Z14BulletRemingtonMagnumHP

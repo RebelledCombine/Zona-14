@@ -1,0 +1,153 @@
+- type: entity
+  parent: BaseAmmoBoxStalker
+  id: Z14919PSOGJBox
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: ammo box (9x19) PSO GZh
+  description: For MP-5 Viper, 30 rounds per box. Penetrates only class 1 armor.
+  components:
+  - type: Item
+    size: Small
+    shape:
+      - 0,0,1,0
+  - type: MagazineVisuals
+    magState: 919ammo
+  - type: BallisticAmmoProvider
+    proto: STCartridge919PSOGJ
+    capacity: 30
+    whitelist:
+      tags:
+        - STCartridge919
+  - type: Sprite
+    layers:
+    - state: 919
+      map: ["enum.GunVisualLayers.Base"]
+    - state: 919ammo-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  parent: Z14919PSOGJBox
+  id: Z14919PSTBox
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: ammo box (9x19) PST GZh
+  description: For MP-5 Viper, 30 rounds per box. Penetrates only class 2 armor.
+  components:
+  - type: BallisticAmmoProvider
+    proto: STCartridge919PST
+  - type: Sprite
+    layers:
+    - state: 919
+      map: ["enum.GunVisualLayers.Base"]
+    - state: 919ammo-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: t2_large
+
+- type: entity
+  parent: Z14919PSOGJBox
+  id: Z14919RIPBox
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: ammo box (9x19) RIP
+  description: Expanding ammunition for NATO SMGs and pistols. Cannot penetrate armor, but deals massive damage to lightly armored or unarmored targets.
+  components:
+  - type: BallisticAmmoProvider
+    proto: STCartridge919RIP
+  - type: Sprite
+    layers:
+    - state: 919
+      map: ["enum.GunVisualLayers.Base"]
+    - state: 919ammo-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: exp
+
+- type: entity
+  parent: Z14919PSOGJBox
+  id: Z14919PBMBox
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: ammo box (9x19) PBM GZh
+  description: For MP-5 Viper, 30 rounds per box. Penetrates only class 3 armor.
+  components:
+  - type: BallisticAmmoProvider
+    proto: STCartridge919PBM
+  - type: Sprite
+    layers:
+    - state: 919
+      map: ["enum.GunVisualLayers.Base"]
+    - state: 919ammo-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: t4
+    - state: antiarmor_large
+
+- type: entity
+  parent: BaseAmmoCinkBoxStalker
+  id: Z14919PSOGJBoxCink
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: ammo crate (9x19) PSO GZh
+  description: For MP-5 Viper, 300 rounds per crate. Penetrates only class 1 armor.
+  components:
+  - type: BallisticAmmoProvider
+    proto: STCartridge919PSOGJ
+    capacity: 300
+    whitelist:
+      tags:
+        - STCartridge919
+  - type: Sprite
+    layers:
+    - state: cink
+      map: ["enum.GunVisualLayers.Base"]
+    - state: cink
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  parent: Z14919PSOGJBoxCink
+  id: Z14919PSTBoxCink
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: ammo crate (9x19) PST GZh
+  description: For MP-5 Viper, 300 rounds per crate. Penetrates only class 2 armor.
+  components:
+  - type: BallisticAmmoProvider
+    proto: STCartridge919PST
+  - type: Sprite
+    layers:
+    - state: cink
+      map: ["enum.GunVisualLayers.Base"]
+    - state: cink
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  parent: Z14919PSOGJBoxCink
+  id: Z14919RIPBoxCink
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: ammo crate (9x19) RIP
+  description: Expanding ammunition for NATO SMGs and pistols. Cannot penetrate armor, but deals massive damage to lightly armored or unarmored targets.
+  components:
+  - type: BallisticAmmoProvider
+    proto: STCartridge919RIP
+  - type: Sprite
+    layers:
+    - state: cink
+      map: ["enum.GunVisualLayers.Base"]
+    - state: cink
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  parent: Z14919PSOGJBoxCink
+  id: Z14919PBMBoxCink
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: ammo crate (9x19) PBM GZh
+  description: For MP-5 Viper, 300 rounds per crate. Penetrates only class 3 armor.
+  components:
+  - type: BallisticAmmoProvider
+    proto: STCartridge919PBM
+  - type: Sprite
+    layers:
+    - state: cink
+      map: ["enum.GunVisualLayers.Base"]
+    - state: cink
+      map: ["enum.GunVisualLayers.Mag"]

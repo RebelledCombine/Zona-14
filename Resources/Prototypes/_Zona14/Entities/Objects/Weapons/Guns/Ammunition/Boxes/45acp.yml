@@ -1,0 +1,216 @@
+- type: entity
+  parent: BaseAmmoBoxStalker
+  id: Z1445ACPLFMJBox
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: ammo box (.45 ACP) Lasermatch FMJ
+  description: For select pistols and revolvers, 30 rounds per box. Penetrates only class 1 armor.
+  components:
+    - type: MagazineVisuals
+      magState: 45ammo
+    - type: BallisticAmmoProvider
+      capacity: 30
+      proto: Cartridge45ACPLFMJ
+      whitelist:
+        tags:
+          - Cartridge45ACP
+    - type: Sprite
+      layers:
+      - state: 45(1)
+        map: ["enum.GunVisualLayers.Base"]
+      - state: 45ammo-1
+        map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  parent: Z1445ACPLFMJBox
+  id: Z1445ACPMFMJBox
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: ammo box (.45 ACP) Match FMJ
+  description: For select pistols and revolvers, 30 rounds per box. Penetrates class 2 armor.
+  components:
+    - type: MagazineVisuals
+      magState: 45ammo1
+    - type: BallisticAmmoProvider
+      capacity: 30
+      proto: Cartridge45ACPMFMJ
+      whitelist:
+        tags:
+          - Cartridge45ACP
+    - type: Sprite
+      layers:
+      - state: 45(1)
+        map: ["enum.GunVisualLayers.Base"]
+      - state: 45ammo1-1
+        map: ["enum.GunVisualLayers.Mag"]
+      - state: t2_small
+
+- type: entity
+  parent: Z1445ACPLFMJBox
+  id: Z1445ACPHydroshockBox
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: ammo box (.45 ACP) Hydro-shock
+  description: For select pistols and revolvers, 30 rounds per box. Penetrates class 1 armor.
+  components:
+    - type: MagazineVisuals
+      magState: 45ammo2
+    - type: BallisticAmmoProvider
+      capacity: 30
+      proto: Cartridge45ACPHydroshock
+      whitelist:
+        tags:
+          - Cartridge45ACP
+    - type: Sprite
+      layers:
+      - state: 45(2)
+        map: ["enum.GunVisualLayers.Base"]
+      - state: 45ammo2-1
+        map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  parent: Z1445ACPLFMJBox
+  id: Z1445ACPRIPBox
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: ammo box (.45 ACP) RIP
+  description: For select pistols and revolvers, 30 rounds per box. Useless against armor.
+  components:
+    - type: BallisticAmmoProvider
+      capacity: 30
+      proto: Cartridge45ACPRIP
+      whitelist:
+        tags:
+          - Cartridge45ACP
+    - type: Sprite
+      layers:
+      - state: 45(3)
+        map: ["enum.GunVisualLayers.Base"]
+      - state: 45ammo-1
+        map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  parent: Z1445ACPLFMJBox
+  id: Z1445ACPAPBox
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: ammo box (.45 ACP) AP
+  description: For select pistols and revolvers, 30 rounds per box. Penetrates class 3 armor.
+  components:
+    - type: BallisticAmmoProvider
+      capacity: 30
+      proto: Cartridge45ACPAP
+      whitelist:
+        tags:
+          - Cartridge45ACP
+    - type: Sprite
+      layers:
+      - state: 45(4)
+        map: ["enum.GunVisualLayers.Base"]
+      - state: 45ammo-1
+        map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  parent: BaseAmmoCinkBoxStalker
+  id: Z1445ACPLFMJBoxCink
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: ammo crate (.45 ACP) Lasermatch FMJ
+  description: For select pistols and revolvers, 30 rounds per box. Penetrates only class 1 armor.
+  components:
+    - type: BallisticAmmoProvider
+      capacity: 300
+      proto: Cartridge45ACPLFMJ
+      whitelist:
+        tags:
+          - Cartridge45ACP
+    - type: Sprite
+      layers:
+      - state: cink
+        map: ["enum.GunVisualLayers.Base"]
+      - state: cink
+        map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  parent: Z1445ACPLFMJBoxCink
+  id: Z1445ACPMFMJBoxCink
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: ammo crate (.45 ACP) Match FMJ
+  description: For select pistols and revolvers, 300 rounds per crate. Penetrates class 2 armor.
+  components:
+    - type: BallisticAmmoProvider
+      capacity: 300
+      proto: Cartridge45ACPMFMJ
+      whitelist:
+        tags:
+          - Cartridge45ACP
+    - type: Sprite
+      layers:
+      - state: cink
+        map: ["enum.GunVisualLayers.Base"]
+      - state: cink
+        map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  parent: Z1445ACPLFMJBoxCink
+  id: Z1445ACPHydroshockBoxCink
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: ammo crate (.45 ACP) Hydro-shock
+  description: For select pistols and revolvers, 300 rounds per crate. Penetrates class 1 armor.
+  components:
+    - type: BallisticAmmoProvider
+      capacity: 300
+      proto: Cartridge45ACPHydroshock
+      whitelist:
+        tags:
+          - Cartridge45ACP
+    - type: Sprite
+      layers:
+      - state: cink
+        map: ["enum.GunVisualLayers.Base"]
+      - state: cink
+        map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  parent: Z1445ACPLFMJBoxCink
+  id: Z1445ACPRIPBoxCink
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: ammo crate (.45 ACP) RIP
+  description: For select pistols and revolvers, 300 rounds per crate. Useless against armor.
+  components:
+    - type: BallisticAmmoProvider
+      capacity: 300
+      proto: Cartridge45ACPRIP
+      whitelist:
+        tags:
+          - Cartridge45ACP
+    - type: Sprite
+      layers:
+      - state: cink
+        map: ["enum.GunVisualLayers.Base"]
+      - state: cink
+        map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  parent: Z1445ACPLFMJBoxCink
+  id: Z1445ACPAPBoxCink
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: ammo crate (.45 ACP) AP
+  description: For select pistols and revolvers, 30 rounds per box. Penetrates class 3 armor.
+  components:
+    - type: BallisticAmmoProvider
+      capacity: 30
+      proto: Cartridge45ACPAP
+      whitelist:
+        tags:
+          - Cartridge45ACP
+    - type: Sprite
+      layers:
+      - state: cink
+        map: ["enum.GunVisualLayers.Base"]
+      - state: cink
+        map: ["enum.GunVisualLayers.Mag"]

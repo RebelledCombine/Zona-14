@@ -1,0 +1,89 @@
+- type: entity
+  parent: Z14STBaseWeaponPistol
+  id: Z14WeaponPistolStalkerAPS
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: APS
+  description: Stechkin automatic pistol chambered in 9x18 with a proprietary 20-round magazine.
+  components:
+    - type: STWeight
+      self: 0.5
+    - type: Sprite
+      scale: 0.6, 0.6
+      sprite: _Stalker/Objects/Weapons/Guns/Pistols/aps.rsi
+      layers:
+        - state: base
+          map: ["enum.GunVisualLayers.Base"]
+        - state: mag-0
+          map: ["enum.GunVisualLayers.Mag"]
+    - type: Clothing
+      sprite: _Stalker/Objects/Weapons/Guns/Pistols/aps.rsi
+    - type: Wieldable
+    - type: GunWieldBonus
+      minAngle: -3
+      maxAngle: -10
+    - type: Gun
+      soundGunshot:
+        path: /Audio/_Stalker/Effects/Guns/pm-shoot.ogg
+      projectileSpeed: 45
+      minAngle: 12
+      maxAngle: 60
+      fireRate: 5
+      angleIncrease: 3.0
+      angleDecay: 6
+      selectedMode: FullAuto
+      availableModes:
+        - FullAuto
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          startingItem:
+          insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
+          ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+          priority: 3
+          whitelist:
+            tags:
+              - MagazineAPS
+        gun_auto_sear:
+          name: Insides
+          priority: 2
+          whitelist:
+            tags:
+              - STModuleAutoSear
+        gun_chamber:
+          name: Chamber
+          startingItem:
+          priority: 1
+          whitelist:
+            tags:
+              - STCartridge918
+    - type: ContainerContainer
+      containers:
+        gun_magazine: !type:ContainerSlot
+        gun_auto_sear: !type:ContainerSlot {}
+        gun_chamber: !type:ContainerSlot
+    - type: MagazineVisuals
+      magState: mag
+      steps: 1
+      zeroVisible: true
+    - type: Craftable
+    - type: STWeaponDamageFalloff
+      falloffMultiplier: 1.4
+    - type: STWeaponAccuracy
+      accuracyMultiplier: 1.4
+
+- type: entity
+  parent: Z14WeaponPistolStalkerAPS
+  id: Z14WeaponPistolStalkerAPSHugo
+  categories: [ Zona14 ]
+  name: APS "Hugo"
+  description: A massive and reliable pistol with a sturdy metal frame — a trusted companion for experienced stalkers. A weapon of last resort, ready to step in when a peaceful resolution is no longer possible.
+  suffix: Z14, Skin
+  components:
+  - type: Clothing
+    sprite: _Stalker/Objects/Weapons/Guns/Pistols/_Skins/apshugo.rsi
+  - type: Item
+    sprite: _Stalker/Objects/Weapons/Guns/Pistols/_Skins/apshugo.rsi
+  - type: Sprite
+    sprite: _Stalker/Objects/Weapons/Guns/Pistols/_Skins/apshugo.rsi

@@ -1,0 +1,428 @@
+- type: entity
+  name: F1 grenade
+  description: Also known as "Limonka". Not the ultimate weapon, but an extremely powerful one, with fragmentation as its primary damage factor.
+  parent: GrenadeBase
+  id: Z14FragGrenade
+  categories: [ Zona14 ]
+  suffix: Z14, Grenade
+  components:
+    - type: Explosive
+      explosionType: Default
+      maxIntensity: 8
+      intensitySlope: 3
+      totalIntensity: 120
+      canCreateVacuum: false
+    - type: TriggerOnUse
+    - type: TimerTrigger
+    - type: ScatteringGrenade
+      fillPrototype: PelletClusterLethal
+      capacity: 60
+    - type: ContainerContainer
+      containers:
+        cluster-payload: !type:Container
+    - type: TwoStageTrigger
+      keysIn:
+      - timer
+      triggerDelay: 0
+      components:
+        - type: ExplodeOnTrigger
+          keysIn:
+          - stageTwo
+
+- type: entity
+  name: RGD-5 grenade
+  description: A Soviet offensive hand grenade. Classified as an anti-personnel fragmentation hand grenade of the offensive type.
+  parent: GrenadeBase
+  id: Z14RGD5Grenade
+  categories: [ Zona14 ]
+  suffix: Z14, Grenade
+  components:
+    - type: Explosive
+      explosionType: Default
+      maxIntensity: 4
+      intensitySlope: 2
+      totalIntensity: 65
+      canCreateVacuum: false
+    - type: TriggerOnUse
+    - type: TimerTrigger
+    - type: ScatteringGrenade
+      fillPrototype: PelletClusterLethal
+      capacity: 60
+    - type: ContainerContainer
+      containers:
+        cluster-payload: !type:Container
+    - type: TwoStageTrigger
+      keysIn:
+      - timer
+      triggerDelay: 0
+      components:
+        - type: ExplodeOnTrigger
+          keysIn:
+          - stageTwo
+    - type: Sprite
+      sprite: _Stalker/Objects/Weapons/Grenades/rgdgrenade.rsi
+      layers:
+      - state: icon
+        map: ["enum.TriggerVisualLayers.Base"]
+    - type: GenericVisualizer
+      visuals:
+        enum.Trigger.TriggerVisuals.VisualState:
+          enum.ConstructionVisuals.Layer:
+            Primed: { state: primed }
+            Unprimed: { state: icon }
+    - type: Destructible
+      thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 60
+        behaviors:
+        - !type:TriggerBehavior
+        - !type:DoActsBehavior
+          acts: ["Destruction"]
+
+- type: entity
+  parent: GrenadeBase
+  id: Z14KhattabkaGrenade
+  categories: [ Zona14 ]
+  name: Khattabka grenade
+  description: Not the ultimate weapon, but extremely powerful.
+  suffix: Z14, Grenade
+  components:
+    - type: Explosive
+      explosionType: Default
+      maxIntensity: 10
+      intensitySlope: 3.99
+      totalIntensity: 10
+      canCreateVacuum: false
+    - type: TriggerOnUse
+    - type: TimerTrigger
+      delay: 2
+    - type: TwoStageTrigger
+      keysIn:
+      - timer
+      triggerDelay: 0
+      components:
+        - type: ExplodeOnTrigger
+          keysIn:
+          - stageTwo
+    - type: Sprite
+      sprite: _Stalker/Objects/Weapons/Grenades/khatabka.rsi
+      layers:
+        - state: icon
+          map: ["enum.TriggerVisualLayers.Base"]
+# To be repaired
+- type: entity
+  name: signal flare
+  description: Calls in mortar fire with smoke rounds.
+  parent: GrenadeBase
+  id: Z14SignalSmoke
+  categories: [ Zona14 ]
+  suffix: Z14, Grenade
+  components:
+    - type: Sprite
+      sprite: Objects/Weapons/Grenades/smoke.rsi
+    - type: TimerTriggerVisuals
+      primingSound:
+        path: /Audio/Effects/Smoke-grenade.ogg
+    - type: TriggerOnUse
+    - type: TimerTrigger
+      delay: 4
+    - type: DeleteOnTrigger
+      keysIn:
+      - timer
+    - type: SpawnOnTrigger
+      proto: HowitzerTimedSpawnerfast
+
+
+- type: entity
+  parent: SmokeGrenade
+  id: Z14TearGasGrenadeStalker
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: K-51 grenade
+  description: A Soviet tear gas grenade. Designed not for crowd control, but for the battlefield. Inhaling the gas is highly inadvisable.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Weapons/Grenades/tear_gas_stalker.rsi
+  - type: SmokeOnTrigger
+    duration: 30
+    spreadAmount: 20
+    solution:
+      reagents:
+      - ReagentId: TearGas
+        Quantity: 100
+  - type: STWeight
+    self: 0.20
+  - type: EmitSoundOnTrigger
+    keysIn:
+    - timer
+    sound: /Audio/Effects/smoke.ogg
+  - type: DeleteOnTrigger
+    keysIn:
+    - timer
+  - type: TimerTriggerVisuals
+    primingSound:
+      path: /Audio/Effects/Smoke-grenade.ogg
+
+- type: entity
+  parent: GrenadeBase
+  id: Z14MK3A2Grenade
+  categories: [ Zona14 ]
+  name: MK3A2 grenade
+  description: A US concussion hand grenade. Designed to damage unarmored or lightly armored vehicles, small structures, and to incapacitate enemy combatants.
+  suffix: Z14, Grenade
+  components:
+    - type: Explosive
+      explosionType: Default
+      maxIntensity: 100
+      intensitySlope: 5
+      totalIntensity: 240
+      canCreateVacuum: false
+    - type: TriggerOnUse
+    - type: TimerTrigger
+      delay: 1.5
+    - type: TwoStageTrigger
+      keysIn:
+      - timer
+      triggerDelay: 0
+      components:
+        - type: ExplodeOnTrigger
+          keysIn:
+          - stageTwo
+    - type: Sprite
+      sprite: _Stalker/Objects/Weapons/Grenades/fugasgrenade.rsi
+      layers:
+      - state: icon
+        map: ["enum.TriggerVisualLayers.Base"]
+    - type: GenericVisualizer
+      visuals:
+        enum.Trigger.TriggerVisuals.VisualState:
+          enum.ConstructionVisuals.Layer:
+            Primed: { state: primed }
+            Unprimed: { state: icon }
+
+- type: entity
+  name: M84 grenade
+  description: An American flashbang grenade. A non-lethal device that produces a blinding flash and deafening blast.
+  parent: GrenadeBase
+  id: Z14GrenadeFlashBangStalker
+  categories: [ Zona14 ]
+  suffix: Z14, Grenade
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Weapons/Grenades/flashbang.rsi
+  - type: FlashOnTrigger
+    range: 7
+    duration: 25
+  - type: EmitSoundOnTrigger
+    keysIn:
+    - timer
+    sound:
+      path: "/Audio/Effects/flash_bang.ogg"
+  - type: DeleteOnTrigger
+    keysIn:
+    - timer
+  - type: SpawnOnTrigger
+    proto: GrenadeFlashEffect
+  - type: Appearance
+
+- type: entity
+  parent: GrenadeBase
+  id: Z14DG05SmokeGrenade
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: DG-05 grenade
+  description: DG-05 hand smoke grenade. Designed to deploy a smoke screen.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Weapons/Grenades/dggrenade.rsi
+  - type: SmokeOnTrigger
+    keysIn:
+    - timer
+    duration: 20
+    spreadAmount: 15
+  - type: EmitSoundOnTrigger
+    keysIn:
+    - timer
+    sound: /Audio/Items/smoke_grenade_smoke.ogg
+  - type: DeleteOnTrigger
+    keysIn:
+    - timer
+  - type: TimerTriggerVisuals
+    primingSound:
+      path: /Audio/Items/smoke_grenade_prime.ogg
+
+- type: entity
+  parent: GrenadeBase
+  id: Z14StielhandgranateM24Bundle
+  categories: [ Zona14 ]
+  name: Stielhandgranate M24 Bundle
+  description: A modified variant of the German Stielhandgranate M24 hand grenade used during World War II. The main difference from the standard version is that several additional grenade heads without handles are strapped to the main Stielhandgranate M24, increasing the device's destructive power.
+  suffix: Z14, Grenade
+  components:
+    - type: STWeight
+      self: 3.6
+    - type: Item
+      size: Large
+    - type: Explosive
+      explosionType: Default
+      maxIntensity: 50
+      intensitySlope: 4
+      totalIntensity: 150
+      canCreateVacuum: false
+    - type: TriggerOnUse
+    - type: TimerTrigger
+      delay: 1.5
+    - type: TwoStageTrigger
+      keysIn:
+      - timer
+      triggerDelay: 0
+      components:
+        - type: ExplodeOnTrigger
+          keysIn:
+          - stageTwo
+    - type: Sprite
+      sprite: _Stalker/Objects/Weapons/Grenades/stielhandgranate_m24_bundle.rsi
+      layers:
+      - state: icon
+        map: ["enum.TriggerVisualLayers.Base"]
+    - type: GenericVisualizer
+      visuals:
+        enum.Trigger.TriggerVisuals.VisualState:
+          enum.ConstructionVisuals.Layer:
+            Primed: { state: primed }
+            Unprimed: { state: icon }
+
+- type: entity
+  parent: GrenadeBase
+  id: Z14StielhandgranateM24
+  categories: [ Zona14 ]
+  name: Stielhandgranate M24
+  description: A German fragmentation grenade widely used during World War II. Also known unofficially as the "potato masher" due to its distinctive shape with a long handle and cylindrical body.
+  suffix: Z14, Grenade
+  components:
+    - type: STWeight
+      self: 1.1
+    - type: Item
+      size: Small
+      shape:
+        - 0,0,2,1
+    - type: Explosive
+      explosionType: Default
+      maxIntensity: 25
+      intensitySlope: 2
+      totalIntensity: 50
+      canCreateVacuum: false
+    - type: TriggerOnUse
+    - type: TimerTrigger
+      delay: 1.5
+    - type: TwoStageTrigger
+      keysIn:
+      - timer
+      triggerDelay: 0
+      components:
+        - type: ExplodeOnTrigger
+          keysIn:
+          - stageTwo
+    - type: Sprite
+      sprite: _Stalker/Objects/Weapons/Grenades/stielhandgranate.rsi
+      layers:
+      - state: icon
+        map: ["enum.TriggerVisualLayers.Base"]
+    - type: GenericVisualizer
+      visuals:
+        enum.Trigger.TriggerVisuals.VisualState:
+          enum.ConstructionVisuals.Layer:
+            Primed: { state: primed }
+            Unprimed: { state: icon }
+
+######################## Suicide bombers
+- type: entity
+  parent: Clothing
+  id: Z14STExplosionPack
+  categories: [ Zona14 ]
+  name: Explosive pack
+  description: A backpack stuffed with explosives. Unfortunately, without a detonator — you'll need to find another way to set it off.
+  suffix: Z14, Explosive
+  components:
+  - type: STWeight
+    self: 10
+  - type: Explosive
+    explosionType: Default
+    maxIntensity: 10
+    intensitySlope: 3
+    totalIntensity: 500
+    canCreateVacuum: false
+  - type: Sprite
+    sprite: Corvax/Back/Backpacks/military.rsi
+    state: icon
+  - type: Item
+    size: Huge
+  - type: Clothing
+    quickEquip: false
+    slots:
+    - back
+  - type: RepositoryItem
+    categoryName: Weapons
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 30
+      behaviors:
+      - !type:TriggerBehavior
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+  - type: Appearance
+
+- type: entity
+  parent: ClothingBeltTarzanBlack
+  id: Z14STClothingBeltShahid
+  categories: [ Zona14 ]
+  name: suicide belt
+  description: A belt and pouches densely packed with explosives.
+  suffix: Z14, Explosive
+  components:
+  - type: STWeight
+    self: 5
+  - type: Tag
+    tags:
+    - Folder
+  - type: Storage
+    maxItemSize: Large
+    grid:
+    - 2,0,7,3
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/belt/belt_green.rsi
+    state: icon
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/belt/belt_green.rsi
+  - type: RepositoryItem
+    categoryName: Weapons
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 30
+      behaviors:
+      - !type:TriggerBehavior
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+  - type: Appearance
+  - type: Explosive
+    explosionType: Default
+    maxIntensity: 10
+    intensitySlope: 3
+    totalIntensity: 200
+    canCreateVacuum: false
+  - type: SubdermalImplant
+    permanent: true
+    implantAction: ActionActivateMicroBomb
+  - type: TriggerOnActivateImplant
+  - type: ExplodeOnTrigger
+  - type: GibOnTrigger
+    deleteItems: true

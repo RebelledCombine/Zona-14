@@ -1,0 +1,66 @@
+#9x18 - Tier 1 pistol caliber
+
+- type: entity
+  id: Z14Bullet918PGJ
+  suffix: Z14
+  name: bullet (9x18 FMJ)
+  parent: STBasePistolBullet
+  categories: [ HideSpawnMenu, Zona14 ]
+  components:
+  - type: TimedDespawn
+    lifetime: 2
+  - type: Projectile
+    projectileClass: 1
+    damage:
+      types:
+        Piercing: 11
+  - type: StaminaDamageOnCollide
+    damage: 1
+
+- type: entity
+  id: Z14Bullet918PST
+  suffix: Z14
+  name: bullet (9x18 AP)
+  parent: Z14Bullet918PGJ
+  categories: [ HideSpawnMenu, Zona14 ]
+  components:
+  - type: Projectile
+    projectileClass: 2
+    damage:
+      types:
+        Piercing: 9
+  - type: StaminaDamageOnCollide
+    damage: 0
+
+- type: entity
+  id: Z14Bullet918SP7
+  suffix: Z14
+  name: bullet (9x18 HP)
+  parent: Z14Bullet918PGJ
+  categories: [ HideSpawnMenu, Zona14 ]
+  components:
+  - type: Projectile
+    projectileClass: 0
+    damage:
+      types:
+        Mutant: 15
+        Piercing: 3
+        Blunt: 5
+        Slash: 5
+  - type: StaminaDamageOnCollide
+    damage: 1
+
+- type: entity
+  id: Z14Bullet918PBM
+  suffix: Z14
+  name: bullet (9x18 AP)
+  parent: Z14Bullet918PGJ
+  categories: [ HideSpawnMenu, Zona14 ]
+  components:
+  - type: Projectile
+    projectileClass: 2
+    damage:
+      types:
+        Piercing: 9
+  - type: StaminaDamageOnCollide
+    damage: 0

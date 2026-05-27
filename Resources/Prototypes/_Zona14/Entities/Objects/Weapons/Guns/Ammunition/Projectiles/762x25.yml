@@ -1,0 +1,66 @@
+#7.62x25 - Tier 1 pistol caliber (slightly weaker than 9x18)
+
+- type: entity
+  id: Z14Bullet725PGL
+  suffix: Z14
+  name: bullet (7.62x25 FMJ)
+  parent: STBasePistolBullet
+  categories: [ HideSpawnMenu, Zona14 ]
+  components:
+  - type: TimedDespawn
+    lifetime: 2
+  - type: Projectile
+    projectileClass: 1
+    damage:
+      types:
+        Piercing: 10
+  - type: StaminaDamageOnCollide
+    damage: 1
+
+- type: entity
+  id: Z14Bullet725PTGJ
+  suffix: Z14
+  name: bullet (7.62x25 AP)
+  parent: Z14Bullet725PGL
+  categories: [ HideSpawnMenu, Zona14 ]
+  components:
+  - type: Projectile
+    projectileClass: 2
+    damage:
+      types:
+        Piercing: 8
+  - type: StaminaDamageOnCollide
+    damage: 0
+
+- type: entity
+  id: Z14Bullet725LRNPC
+  suffix: Z14
+  name: bullet (7.62x25 HP)
+  parent: Z14Bullet725PGL
+  categories: [ HideSpawnMenu, Zona14 ]
+  components:
+  - type: Projectile
+    projectileClass: 0
+    damage:
+      types:
+        Mutant: 12
+        Piercing: 2
+        Blunt: 4
+        Slash: 4
+  - type: StaminaDamageOnCollide
+    damage: 1
+
+- type: entity
+  id: Z14Bullet725PSTGJ
+  suffix: Z14
+  name: bullet (7.62x25 AP)
+  parent: Z14Bullet725PGL
+  categories: [ HideSpawnMenu, Zona14 ]
+  components:
+  - type: Projectile
+    projectileClass: 2
+    damage:
+      types:
+        Piercing: 8
+  - type: StaminaDamageOnCollide
+    damage: 0

@@ -4,7 +4,7 @@
   parent: NPCDoll
   id: NPCDolgZONA
   name: Sergeant Prokopenko [→   ←]
-  suffix: ST, Duty, ZONA-TRADER
+  suffix: Z14, Duty, ZONA-TRADER
   description: Sells good hunting gear and supplies that are very important for survival in the zone.
   components:
   - type: Sprite
@@ -46,7 +46,7 @@
   parent: NPCDoll
   id: NPCBandZONA
   name: Mafaniy 'Junk'[→   ←]
-  suffix: ST, Bandit, ZONA-TRADER
+  suffix: Z14, Bandit, ZONA-TRADER
   description: Sells good hunting gear and supplies that are very important for survival in the zone.
   components:
   - type: Sprite
@@ -89,7 +89,7 @@
   id: NPCResearchInstitutesZONA
   name: Prof. Round [→   ←]
   description: They say that the professor has a diploma from Moscow State University. Should we believe the rumors?
-  suffix: ST, Ecologist, ZONA-TRADER
+  suffix: Z14, Ecologist, ZONA-TRADER
   components:
   - type: Sprite
     sprite: _Stalker/NPC/Scientist.rsi
@@ -130,7 +130,7 @@
   parent: NPCDoll
   id: NPCclearSkyZONA
   name: Dimka 'Postmaster'[→   ←]
-  suffix: ST, Clear Sky, ZONA-TRADER
+  suffix: Z14, Clear Sky, ZONA-TRADER
   description: Sells good hunting gear and supplies that are very important for survival in the zone.
   components:
   - type: Sprite
@@ -172,7 +172,7 @@
   parent: NPCDoll
   id: NPCFreedomZONA
   name: Vasyan 'Bilibob'[→   ←]
-  suffix: ST, Freedom, ZONA-TRADER
+  suffix: Z14, Freedom, ZONA-TRADER
   description: Stepfather of a stalker named 'Kebab'. Sells good hunting equipment and supplies that are very important for survival in the zone.
   components:
   - type: Sprite
@@ -215,7 +215,7 @@
   parent: NPCDoll
   id: NPCMilitaryGruntZONA # OKSOP
   name: Banner [→   ←]
-  suffix: ST, OKSOP, ZONA-TRADER
+  suffix: Z14, OKSOP, ZONA-TRADER
   description: He sells government property among the soldiers.
   components:
   - type: Sprite
@@ -255,7 +255,7 @@
   parent: NPCDoll
   id: NPCMilitaryOfficerZONA # OKSOP Officers
   name: Vitaly 'Quartermaster'[→ ←]
-  suffix: ST, Military, ZONA-TRADER
+  suffix: Z14, Military, ZONA-TRADER
   description: He's the Quartermaster sells government property among the soldiers.
   components:
   - type: Sprite
@@ -297,7 +297,7 @@
   parent: NPCDoll
   id: NPCMercHummingbirdZONA
   name: Hummingbird [→ ←]
-  suffix: ST, Mercenaries, ZONA-TRADER
+  suffix: Z14, Mercenaries, ZONA-TRADER
   description: He buys weapons in bulk in Europe and America and sells them in the zone.
   components:
   - type: Sprite
@@ -339,7 +339,7 @@
   parent: NPCDoll
   id: NPCStalkZONA
   name: Jackal [→   ←]
-  suffix: ST, Neutrals, ZONA-TRADER
+  suffix: Z14, Neutrals, ZONA-TRADER
   description: Sells good hunting gear and supplies that are very important for survival in the zone.
   components:
   - type: Sprite

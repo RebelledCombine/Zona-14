@@ -1,0 +1,70 @@
+- type: entity
+  abstract: true
+  parent: STBaseWeaponShotgunCompact
+  id: Z14STBaseWeaponShotgunSawedOf
+  categories: [ Zona14 ]
+  components:
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Weapons/Guns/Shotguns/SawnOff_TOZ_34.rsi
+  - type: Clothing
+    sprite: _Stalker_EN/Objects/Weapons/Guns/Shotguns/SawnOff_TOZ_34.rsi
+  - type: Item
+    sprite: _Stalker_EN/Objects/Weapons/Guns/Shotguns/SawnOff_TOZ_34.rsi
+    size: Normal
+    heldPrefix: sawn
+  - type: STWeight
+    self: 2
+  - type: PullDoAfter
+    pullTime: 2
+  - type: GunWieldBonus
+    minAngle: -50
+    maxAngle: -50
+  - type: Gun
+    minAngle: 60
+    maxAngle: 70
+    fireRate: 7
+    angleIncrease: 10
+    angleDecay: 50
+    projectileSpeed: 50
+  - type: BallisticAmmoProvider
+    capacity: 2
+  - type: STWeaponDamageFalloff
+    falloffMultiplier: 0.8
+  - type: STWeaponAccuracy
+    accuracyMultiplier: 1.15
+
+- type: entity
+  parent: Z14STBaseWeaponShotgunSawedOf
+  id: Z14STWeaponShotgunSawedOf
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: Sawed-off Shotgun
+  description: Crudely shortened double-barreled shotgun. The weapon of choice for rookie stalkers - cheap, angry and fits under a trenchcoat. Only effective point-blank.
+
+- type: entity
+  parent: Z14STBaseWeaponShotgunSawedOf
+  id: Z14STWeaponShotgunSawedOfAnomaly
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: Anomalous Sawed-off
+  description: Anomaly-tainted sawed-off shotgun. Barrels glow faintly and capacity defies physics. 'The Zone loves to distort even simple weapons'.
+  components:
+  - type: STWeight
+    self: 1
+  - type: Item
+    size: Normal
+    shape:
+    - 0,0,3,1
+  - type: BallisticAmmoProvider
+    capacity: 4
+    proto: Cartridge7mmBuckshot
+    whitelist:
+      tags:
+      - ShellShotgun
+  - type: Gun
+    minAngle: 30
+    maxAngle: 80
+    fireRate: 7
+    angleIncrease: 15
+    angleDecay: 75
+

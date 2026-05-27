@@ -1,0 +1,66 @@
+#9x21 - Tier 3 heavy pistol caliber
+
+- type: entity
+  id: Z14Bullet921PGJ
+  suffix: Z14
+  name: bullet (9x21 FMJ)
+  parent: STBasePistolBullet
+  categories: [ HideSpawnMenu, Zona14 ]
+  components:
+  - type: TimedDespawn
+    lifetime: 2
+  - type: Projectile
+    projectileClass: 3
+    damage:
+      types:
+        Piercing: 18
+  - type: StaminaDamageOnCollide
+    damage: 2
+
+- type: entity
+  id: Z14Bullet921PEGJ
+  suffix: Z14
+  name: bullet (9x21 HP)
+  parent: Z14Bullet921PGJ
+  categories: [ HideSpawnMenu, Zona14 ]
+  components:
+  - type: Projectile
+    projectileClass: 2
+    damage:
+      types:
+        Mutant: 45
+        Piercing: 5
+        Blunt: 9
+        Slash: 9
+  - type: StaminaDamageOnCollide
+    damage: 4
+
+- type: entity
+  id: Z14Bullet921BTGJ
+  suffix: Z14
+  name: bullet (9x21 AP)
+  parent: Z14Bullet921PGJ
+  categories: [ HideSpawnMenu, Zona14 ]
+  components:
+  - type: Projectile
+    projectileClass: 4
+    damage:
+      types:
+        Piercing: 15
+  - type: StaminaDamageOnCollide
+    damage: 1
+
+- type: entity
+  id: Z14Bullet9217N42
+  suffix: Z14
+  name: bullet (9x21 AP)
+  parent: Z14Bullet921PGJ
+  categories: [ HideSpawnMenu, Zona14 ]
+  components:
+  - type: Projectile
+    projectileClass: 4
+    damage:
+      types:
+        Piercing: 15
+  - type: StaminaDamageOnCollide
+    damage: 1

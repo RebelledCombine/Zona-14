@@ -1,0 +1,218 @@
+- type: entity
+  parent: BaseAmmoBoxStalker
+  id: Z14556FMJBox
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: ammo box (5.56) FMJ
+  description: For assault rifles, 30 rounds per box. Penetrates class 2 armor.
+  components:
+    - type: MagazineVisuals
+      magState: 556ammo
+    - type: BallisticAmmoProvider
+      capacity: 30
+      proto: Cartridge556FMJ
+      whitelist:
+        tags:
+          - STCartridge556
+    - type: Sprite
+      layers:
+        - state: 556
+          map: ["enum.GunVisualLayers.Base"]
+        - state: 556ammo-1
+          map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  parent: Z14556FMJBox
+  id: Z14556M855Box
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: ammo box (5.56) M855
+  description: For assault rifles, 30 rounds per box. Penetrates class 3 armor.
+  components:
+    - type: BallisticAmmoProvider
+      proto: Cartridge556M855
+    - type: Sprite
+      layers:
+        - state: 556
+          map: ["enum.GunVisualLayers.Base"]
+        - state: 556ammo-1
+          map: ["enum.GunVisualLayers.Mag"]
+        - state: t2
+
+- type: entity
+  parent: Z14556FMJBox
+  id: Z14556WarmagBox
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: ammo box (5.56) Warmag
+  description: For assault rifles, 30 rounds per box. Useless against armor.
+  components:
+    - type: BallisticAmmoProvider
+      proto: Cartridge556Warmag
+    - type: Sprite
+      layers:
+        - state: 556
+          map: ["enum.GunVisualLayers.Base"]
+        - state: 556ammo-1
+          map: ["enum.GunVisualLayers.Mag"]
+        - state: exp
+
+- type: entity
+  parent: Z14556FMJBox
+  id: Z14556M856Box
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: ammo box (5.56) M856
+  description: For assault rifles, 30 rounds per box. Penetrates class 4 armor.
+  components:
+    - type: BallisticAmmoProvider
+      proto: Cartridge556M856
+    - type: Sprite
+      layers:
+        - state: 556
+          map: ["enum.GunVisualLayers.Base"]
+        - state: 556ammo-1
+          map: ["enum.GunVisualLayers.Mag"]
+        - state: t3
+
+- type: entity
+  parent: Z14556FMJBox
+  id: Z14545M995Box
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: ammo box (5.56) M995
+  description: For assault rifles, 30 rounds per box. Penetrates class 5 armor.
+  components:
+    - type: BallisticAmmoProvider
+      proto: Cartridge556M995
+    - type: Sprite
+      layers:
+        - state: 556
+          map: ["enum.GunVisualLayers.Base"]
+        - state: 556ammo-1
+          map: ["enum.GunVisualLayers.Mag"]
+        - state: t4
+
+- type: entity
+  parent: Z14556FMJBox
+  id: Z14556SSAAPBox
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: ammo box (5.56) SSA AP
+  description: For assault rifles, 30 rounds per box. Penetrates class 6 armor.
+  components:
+    - type: BallisticAmmoProvider
+      proto: Cartridge556SSAAP
+    - type: Sprite
+      layers:
+        - state: 556
+          map: ["enum.GunVisualLayers.Base"]
+        - state: 556ammo-1
+          map: ["enum.GunVisualLayers.Mag"]
+        - state: antiarmor
+
+- type: entity
+  parent: BaseAmmoCinkBoxStalker
+  id: Z14556FMJBoxCink
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: ammo crate (5.56) FMJ
+  description: For assault rifles, 300 rounds per crate. Penetrates class 2 armor.
+  components:
+    - type: BallisticAmmoProvider
+      capacity: 300
+      proto: Cartridge556FMJ
+      whitelist:
+        tags:
+          - STCartridge556
+    - type: Sprite
+      layers:
+        - state: cink
+          map: ["enum.GunVisualLayers.Base"]
+        - state: cink
+          map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  parent: Z14556FMJBoxCink
+  id: Z14556M855BoxCink
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: ammo crate (5.56) M855
+  description: For assault rifles, 300 rounds per crate. Penetrates class 3 armor.
+  components:
+    - type: BallisticAmmoProvider
+      proto: Cartridge556M855
+    - type: Sprite
+      layers:
+        - state: cink
+          map: ["enum.GunVisualLayers.Base"]
+        - state: cink
+          map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  parent: Z14556FMJBoxCink
+  id: Z14556WarmagBoxCink
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: ammo crate (5.56) Warmag
+  description: For assault rifles, 300 rounds per crate. Useless against armor.
+  components:
+    - type: BallisticAmmoProvider
+      proto: Cartridge556Warmag
+    - type: Sprite
+      layers:
+        - state: cink
+          map: ["enum.GunVisualLayers.Base"]
+        - state: cink
+          map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  parent: Z14556FMJBoxCink
+  id: Z14556M856BoxCink
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: ammo crate (5.56) M856
+  description: For assault rifles, 300 rounds per crate. Penetrates class 4 armor.
+  components:
+    - type: BallisticAmmoProvider
+      proto: Cartridge556M856
+    - type: Sprite
+      layers:
+        - state: cink
+          map: ["enum.GunVisualLayers.Base"]
+        - state: cink
+          map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  parent: Z14556FMJBoxCink
+  id: Z14545M995BoxCink
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: ammo crate (5.56) M995
+  description: For assault rifles, 300 rounds per crate. Penetrates class 5 armor.
+  components:
+    - type: BallisticAmmoProvider
+      proto: Cartridge556M995
+    - type: Sprite
+      layers:
+        - state: cink
+          map: ["enum.GunVisualLayers.Base"]
+        - state: cink
+          map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  parent: Z14556FMJBoxCink
+  id: Z14556SSAAPBoxCink
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: ammo crate (5.56) SSA AP
+  description: For assault rifles, 300 rounds per crate. Penetrates class 6 armor.
+  components:
+    - type: BallisticAmmoProvider
+      proto: Cartridge556SSAAP
+    - type: Sprite
+      layers:
+        - state: cink
+          map: ["enum.GunVisualLayers.Base"]
+        - state: cink
+          map: ["enum.GunVisualLayers.Mag"]

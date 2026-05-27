@@ -1,0 +1,84 @@
+#.45 ACP - Tier 2 pistol caliber (heavier round, more stopping power than 9x19)
+
+- type: entity
+  id: Z14Bullet45ACPLFMJ
+  suffix: Z14
+  name: bullet (.45 ACP FMJ)
+  parent: STBasePistolBullet
+  categories: [ HideSpawnMenu, Zona14 ]
+  components:
+  - type: TimedDespawn
+    lifetime: 2
+  - type: Projectile
+    projectileClass: 2
+    damage:
+      types:
+        Piercing: 15
+  - type: StaminaDamageOnCollide
+    damage: 1
+
+- type: entity
+  id: Z14Bullet45ACPMFMJ
+  suffix: Z14
+  name: bullet (.45 ACP FMJ)
+  parent: Z14Bullet45ACPLFMJ
+  categories: [ HideSpawnMenu, Zona14 ]
+  components:
+  - type: Projectile
+    projectileClass: 2
+    damage:
+      types:
+        Piercing: 15
+  - type: StaminaDamageOnCollide
+    damage: 1
+
+- type: entity
+  id: Z14Bullet45ACPHydroshock
+  suffix: Z14
+  name: bullet (.45 ACP HP)
+  parent: Z14Bullet45ACPLFMJ
+  categories: [ HideSpawnMenu, Zona14 ]
+  components:
+  - type: Projectile
+    projectileClass: 1
+    damage:
+      types:
+        Mutant: 28
+        Piercing: 4
+        Blunt: 7
+        Slash: 7
+  - type: StaminaDamageOnCollide
+    damage: 2
+
+- type: entity
+  id: Z14Bullet45ACPRIP
+  suffix: Z14
+  name: bullet (.45 ACP HP)
+  parent: Z14Bullet45ACPLFMJ
+  categories: [ HideSpawnMenu, Zona14 ]
+  components:
+  - type: Projectile
+    projectileClass: 1
+    damage:
+      types:
+        Mutant: 28
+        Piercing: 4
+        Blunt: 7
+        Slash: 7
+  - type: StaminaDamageOnCollide
+    damage: 2
+
+- type: entity
+  id: Z14Bullet45ACPAP
+  suffix: Z14
+  name: bullet (.45 ACP AP)
+  parent: Z14Bullet45ACPLFMJ
+  categories: [ HideSpawnMenu, Zona14 ]
+  components:
+  - type: Projectile
+    projectileClass: 3
+    damage:
+      types:
+        Piercing: 13
+  - type: StaminaDamageOnCollide
+    damage: 1

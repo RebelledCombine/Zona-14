@@ -1,0 +1,77 @@
+- type: entity
+  parent: BaseItem
+  id: Z14BaseMagazineBoxRemingtonMagnum
+  categories: [ Zona14 ]
+  abstract: true
+  components:
+  - type: RepositoryItem
+    categoryName: Ammunition
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+      - CartridgeRemingtonMagnum
+    proto: Z14CartridgeRemingtonMagnum
+    capacity: 30
+  - type: Item
+    size: Small
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Boxes/magnum.rsi
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
+
+# Boxes
+- type: entity
+  parent: Z14BaseMagazineBoxRemingtonMagnum
+  id: Z14MagazineBoxRemingtonMagnum
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: ammunition box (.44 remington magnum)
+  components:
+  - type: BallisticAmmoProvider
+    proto: Z14CartridgeRemingtonMagnum
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  parent: Z14BaseMagazineBoxRemingtonMagnum
+  id: Z14MagazineBoxRemingtonMagnumAP
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: ammunition box (.44 remington magnum armor-piercing)
+  components:
+  - type: BallisticAmmoProvider
+    proto: Z14CartridgeRemingtonMagnumAP
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: piercing
+
+- type: entity
+  parent: Z14BaseMagazineBoxRemingtonMagnum
+  id: Z14MagazineBoxRemingtonMagnumHP
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: ammunition box (.44 remington magnum hollow-point)
+  components:
+  - type: BallisticAmmoProvider
+    proto: Z14CartridgeRemingtonMagnumHP
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]

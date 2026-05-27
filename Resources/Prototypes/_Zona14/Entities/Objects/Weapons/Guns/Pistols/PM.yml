@@ -1,0 +1,123 @@
+- type: entity
+  parent: Z14STBaseWeaponPistol
+  id: Z14WeaponPistolStalkerPM
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: PMm
+  description: A common Soviet-made pistol found throughout the Zone. There is hardly a more affordable and low-maintenance weapon for a novice stalker.
+  components:
+  - type: STWeight
+    self: 0.5
+  - type: Trash
+    time: 300
+  - type: Sprite
+    scale: 0.8, 0.8
+    sprite: _Stalker/Objects/Weapons/Guns/Pistols/Pm.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Stalker/Objects/Weapons/Guns/Pistols/Pm.rsi
+  - type: Gun
+    soundGunshot:
+      path: /Audio/_Stalker/Effects/Guns/pm-shoot.ogg
+    projectileSpeed: 45
+    minAngle: 8
+    maxAngle: 25
+    fireRate: 3.5
+    angleIncrease: 2.0
+    angleDecay: 8
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: BasePMMag
+        insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+        priority: 3
+        whitelist:
+          tags:
+            - MagazinePM
+      gun_auto_sear:
+        name: Insides
+        priority: 2
+        whitelist:
+          tags:
+            - STModuleAutoSear
+      gun_chamber:
+        name: Chamber
+        startingItem: STCartridge918PGJ
+        priority: 1
+        whitelist:
+          tags:
+            - STCartridge918
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot {}
+      gun_auto_sear: !type:ContainerSlot {}
+      gun_chamber: !type:ContainerSlot {}
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Craftable
+  - type: STWeaponDamageFalloff
+    falloffMultiplier: 1.4
+  - type: STWeaponAccuracy
+    accuracyMultiplier: 1.4
+
+# REDO-MODULES
+- type: entity
+  parent: Z14WeaponPistolStalkerPM
+  id: Z14WeaponPistolStalkerPMModifed
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: PMm 9x19
+  description: The PMm rechambered for 9x19 using a Glock-19 magazine, improving ergonomics and rate of fire. Recoil and muzzle velocity are slightly reduced.
+  components:
+    - type: STWeight
+      self: 0.5
+    - type: Gun
+      soundGunshot:
+        path: /Audio/_Stalker/Effects/Guns/pm-shoot.ogg
+      projectileSpeed: 45
+      minAngle: 7
+      maxAngle: 25
+      fireRate: 4
+      angleIncrease: 2.0
+      angleDecay: 8
+      selectedMode: SemiAuto
+      availableModes:
+        - SemiAuto
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          startingItem:
+          insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
+          ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+          priority: 2
+          whitelist:
+            tags:
+              - MagazineGlock
+        gun_chamber:
+          name: Chamber
+          startingItem: STCartridge919PSOGJ
+          priority: 1
+          whitelist:
+            tags:
+              - STCartridge919
+    - type: ContainerContainer
+      containers:
+        gun_magazine: !type:ContainerSlot
+        gun_chamber: !type:ContainerSlot
+    - type: Craftable
+    - type: STWeaponDamageFalloff
+      falloffMultiplier: 1.4
+    - type: STWeaponAccuracy
+      accuracyMultiplier: 1.4

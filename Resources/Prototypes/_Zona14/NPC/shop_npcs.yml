@@ -2,7 +2,7 @@
   parent: NPCDoll
   id: NPCUncleZONA
   name: Uncle [→   ←]
-  suffix: ST, ZONA-TRADER
+  suffix: Z14, ZONA-TRADER
   description: He smells like weed and beer and he looks like he's ready to get back to the lake.
   components:
   - type: Sprite

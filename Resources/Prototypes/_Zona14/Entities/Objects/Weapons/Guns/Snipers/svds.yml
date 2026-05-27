@@ -1,0 +1,278 @@
+- type: entity
+  abstract: true
+  parent: STBaseWeaponSniper
+  id: Z14STBaseWeaponRifleSVDS
+  categories: [ Zona14 ]
+  components:
+  - type: STWeight
+    self: 5
+  - type: PullDoAfter
+    pullTime: 5
+  - type: GunWieldBonus
+    minAngle: -43
+    maxAngle: -75
+  - type: Clothing
+    sprite: _Stalker/Objects/Weapons/Guns/Snipers/SVDS/base.rsi
+  - type: Item
+    sprite: _Stalker/Objects/Weapons/Guns/Snipers/SVDS/base.rsi
+  - type: Sprite
+    sprite: _Stalker/Objects/Weapons/Guns/Snipers/SVDS/base.rsi
+  - type: Gun
+    soundGunshot:
+      path: /Audio/_Stalker/Effects/Guns/svd.ogg
+    minAngle: 45
+    maxAngle: 90
+    fireRate: 5
+    angleIncrease: 1.0
+    angleDecay: 8
+    projectileSpeed: 75
+  - type: STWeaponDamageFalloff
+    falloffMultiplier: 0.2
+  - type: STWeaponAccuracy
+    accuracyMultiplier: 5
+  - type: ChamberMagazineAmmoProvider
+    soundRack:
+      path: /Audio/_Stalker/Weapons/Guns/RifleGen/Cock/rifle_cock.ogg
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: 754Mag10
+        insertSound: /Audio/_Stalker/Weapons/Guns/RifleGen/MagIn/rifle_magin.ogg
+        ejectSound: /Audio/_Stalker/Weapons/Guns/RifleGen/MagOut/rifle_magout.ogg
+        priority: 4
+        whitelist:
+          tags:
+          - Magazine754
+      gun_module_scope:
+        name: Scope
+        priority: 3
+        whitelist:
+          tags:
+          - STWeaponModuleSniperSight
+      gun_module_muzzle:
+        name: Muzzle
+        priority: 2
+        whitelist:
+          tags:
+          - STWeaponModuleSniperSilencer
+      gun_chamber:
+        name: Chamber
+        priority: 1
+        whitelist:
+          tags:
+          - STCartridge754
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_module_muzzle: !type:ContainerSlot
+      gun_module_scope: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+
+- type: entity
+  parent: Z14STBaseWeaponRifleSVDS
+  id: Z14STWeaponSniperSVDS
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: SVDS (Dragunov Sniper Rifle)
+  description: A modernized folding version of the legendary SVD sniper rifle, chambered in 7.62x54mmR. Features improved ergonomics and comes equipped with a medium-range scope. A favorite among Zone marksmen for its reliability and stopping power.
+
+- type: entity
+  parent: Z14STBaseWeaponRifleSVDS
+  id: Z14STWeaponSniperSVDSGrass
+  categories: [ Zona14 ]
+  name: SVDS Ghillie Sniper Rifle
+  suffix: Z14, Custom
+  description: A carefully modified SVDS with camouflage netting and minor tuning for maximum concealment in the Zone's wilderness. The 7.62x54mmR rounds ensure no mutant walks away from a well-placed shot.
+  components:
+  - type: Clothing
+    sprite: _Stalker/Objects/Weapons/Guns/Snipers/SVDS/srdcGrass.rsi
+  - type: Item
+    sprite: _Stalker/Objects/Weapons/Guns/Snipers/SVDS/srdcGrass.rsi
+  - type: Sprite
+    sprite: _Stalker/Objects/Weapons/Guns/Snipers/SVDS/srdcGrass.rsi
+
+- type: entity
+  parent: Z14STBaseWeaponRifleSVDS
+  id: Z14STWeaponSniperSVDSCovenant
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: Covenant SVDS Sniper Rifle
+  description: A custom SVDS variant used by Covenant faction snipers. Features unique camouflage and faction markings while retaining all the deadly precision of the original. Chambered in 7.62x54mmR.
+  components:
+  - type: Clothing
+    sprite: _Stalker/Objects/Weapons/Guns/Snipers/SVDS/covenant.rsi
+  - type: Item
+    sprite: _Stalker/Objects/Weapons/Guns/Snipers/SVDS/covenant.rsi
+  - type: Sprite
+    sprite: _Stalker/Objects/Weapons/Guns/Snipers/SVDS/covenant.rsi
+
+- type: entity
+  parent: Z14STBaseWeaponRifleSVDS
+  id: Z14STWeaponSniperSVU
+  categories: [ Zona14 ]
+  name: SVU Compact Sniper Rifle
+  suffix: Z14, Custom
+  description: A bullpup conversion of the SVDS designed for urban operations in the Zone. The shortened barrel reduces range but improves handling in tight spaces, while still delivering 7.62x54mmR stopping power.
+  components:
+  - type: Clothing
+    sprite: _Stalker/Objects/Weapons/Guns/Snipers/SVU/base.rsi
+  - type: Item
+    sprite: _Stalker/Objects/Weapons/Guns/Snipers/SVU/base.rsi
+  - type: Sprite
+    sprite: _Stalker/Objects/Weapons/Guns/Snipers/SVU/base.rsi
+
+- type: entity
+  parent: Z14STBaseWeaponRifleSVDS
+  id: Z14STWeaponSniperSVUSeraphim
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: Seraphim SVU Sniper Rifle
+  description: An elite SVU variant used by the mysterious Seraphim faction. Features advanced modifications and distinctive white finish, making it both deadly and recognizable in the Zone's harsh environment.
+  components:
+  - type: Clothing
+    sprite: _Stalker/Objects/Weapons/Guns/Snipers/SVU/seraphim.rsi
+  - type: Item
+    sprite: _Stalker/Objects/Weapons/Guns/Snipers/SVU/seraphim.rsi
+  - type: Sprite
+    sprite: _Stalker/Objects/Weapons/Guns/Snipers/SVU/seraphim.rsi
+
+- type: entity
+  parent: Z14STBaseWeaponRifleSVDS
+  id: Z14STWeaponRifleSVDSWood
+  categories: [ Zona14 ]
+  name: Selfmade chatter
+  suffix: Z14, Custom
+  description: A selfmade rifle for an SVD magazine. Oblique, but wildly lethal.
+  components:
+    - type: STWeight
+      self: 4
+    - type: PullDoAfter
+      pullTime: 3
+    - type: GunWieldBonus
+      minAngle: -48
+      maxAngle: -70
+    - type: Clothing
+      sprite: _Stalker/Objects/Weapons/Guns/Snipers/SVDS/wood.rsi
+    - type: Item
+      sprite: _Stalker/Objects/Weapons/Guns/Snipers/SVDS/wood.rsi
+    - type: Sprite
+      sprite: _Stalker/Objects/Weapons/Guns/Snipers/SVDS/wood.rsi
+    - type: Gun
+      soundGunshot:
+        path: /Audio/_Stalker/Effects/Guns/svd.ogg
+      minAngle: 50
+      maxAngle: 150
+      fireRate: 1
+      angleIncrease: 10
+      angleDecay: 50
+      projectileSpeed: 75
+    - type: ChamberMagazineAmmoProvider
+      soundRack:
+        path: /Audio/_Stalker/Weapons/Guns/RifleGen/Cock/rifle_cock.ogg
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          startingItem: 754Mag10
+          insertSound: /Audio/_Stalker/Weapons/Guns/RifleGen/MagIn/rifle_magin.ogg
+          ejectSound: /Audio/_Stalker/Weapons/Guns/RifleGen/MagOut/rifle_magout.ogg
+          priority: 4
+          whitelist:
+            tags:
+              - Magazine754
+        gun_chamber:
+          name: Chamber
+          priority: 1
+          whitelist:
+            tags:
+              - STCartridge754
+    - type: ContainerContainer
+      containers:
+        gun_magazine: !type:ContainerSlot
+        gun_chamber: !type:ContainerSlot
+    - type: STWeaponDamageFalloff
+      falloffMultiplier: 0.2
+    - type: STWeaponAccuracy
+      accuracyMultiplier: 5
+
+- type: entity
+  parent: Z14STBaseWeaponRifleSVDS
+  id: Z14STWeaponSniperSVUTop
+  categories: [ Zona14 ]
+  name: SVU "Swamp"
+  suffix: Z14, Custom
+  description: A shortened semi-automatic bullpup sniper rifle developed by TsKIB SOO based on the SVD. Development of a shortened SVD-based sniper rifle for Soviet airborne troops began at TsKIB SOO in 1977. The barrel is equipped with a massive suppressor designed by L. V. Bondarev. The suppressor reduces the sound of the shot by 10-12% compared to the SVD, nearly eliminates muzzle flash, and disperses the sound so that pinpointing the shooter's position becomes impossible. The furniture is made of polyamide. This particular specimen has most of its body, including the stock, wrapped in camouflage tape, with additional wrapping on the scope and muzzle device to break up the weapon's silhouette against vegetation.
+  components:
+  - type: Clothing
+    sprite: _Stalker/Objects/Weapons/Guns/Snipers/SVU/Top.rsi
+  - type: Item
+    sprite: _Stalker/Objects/Weapons/Guns/Snipers/SVU/Top.rsi
+  - type: Sprite
+    sprite: _Stalker/Objects/Weapons/Guns/Snipers/SVU/Top.rsi
+
+- type: entity
+  parent: Z14STBaseWeaponRifleSVDS
+  id: Z14STWeaponSniperPP2000Pearl
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: RR-2000
+  description: A weapon created by either a desperate genius or a madman. Apparently the barrel was made by welding several identical barrels together... Wait, why does it have a detachable cylinder?! An illegible signature is scratched into the handguard.
+  components:
+  - type: STWeight
+    self: 5
+  - type: PullDoAfter
+    pullTime: 5
+  - type: GunWieldBonus
+    minAngle: -50
+    maxAngle: -70
+  - type: Clothing
+    sprite: _Stalker/Objects/Weapons/Guns/Revolvers/РР-2000.rsi
+  - type: Item
+    sprite: _Stalker/Objects/Weapons/Guns/Revolvers/РР-2000.rsi
+  - type: Sprite
+    sprite: _Stalker/Objects/Weapons/Guns/Revolvers/РР-2000.rsi
+  - type: Gun
+    soundGunshot:
+      path: /Audio/_Stalker/Effects/Guns/revolver.ogg
+    minAngle: 0
+    maxAngle: 20
+    fireRate: 3
+    angleIncrease: 3
+    angleDecay: 10
+    projectileSpeed: 60
+  - type: STWeaponDamageFalloff
+    falloffMultiplier: 0.2
+  - type: STWeaponAccuracy
+    accuracyMultiplier: 5
+  - type: ChamberMagazineAmmoProvider
+    soundRack:
+      path: /Audio/_Stalker/Weapons/Guns/RifleGen/Cock/rifle_cock.ogg
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: BasePP2000PearlMag
+        insertSound: /Audio/Weapons/Guns/MagIn/revolver_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/revolver_magout.ogg
+        priority: 3
+        whitelist:
+          tags:
+          - MagazinePP2000Pearl
+      gun_module_scope:
+        name: Scope
+        priority: 2
+        whitelist:
+          tags:
+          - STWeaponModuleSniperSight
+      gun_chamber:
+        name: Chamber
+        priority: 1
+        whitelist:
+          tags:
+          - Cartridge45ACP
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_module_scope: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot

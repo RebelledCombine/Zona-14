@@ -1,0 +1,148 @@
+- type: entity
+  parent: BaseAmmoBoxStalker
+  id: Z14739FMJBox
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: ammo box (7.62x39) FMJ
+  description: For select Kalashnikov rifle models, 30 rounds per box. Penetrates class 3 armor.
+  components:
+  - type: MagazineVisuals
+    magState: 76239ammo
+  - type: BallisticAmmoProvider
+    capacity: 30
+    proto: STCartridge739FMJ
+    whitelist:
+      tags:
+        - STCartridge739
+  - type: Sprite
+    layers:
+    - state: 76239
+      map: ["enum.GunVisualLayers.Base"]
+    - state: 76239ammo-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  parent: Z14739FMJBox
+  id: Z14739PCBox
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: ammo box (7.62x39) PS
+  description: For select Kalashnikov rifle models, 30 rounds per box. Penetrates class 4 armor.
+  components:
+  - type: BallisticAmmoProvider
+    proto: STCartridge739PC
+  - type: Sprite
+    layers:
+    - state: 76239
+      map: ["enum.GunVisualLayers.Base"]
+    - state: 76239ammo-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: t3
+
+- type: entity
+  parent: Z14739FMJBox
+  id: Z14739HPBox
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: ammo box (7.62x39) HP
+  description: For select Kalashnikov rifle models, 30 rounds per box. Useless against armor.
+  components:
+  - type: BallisticAmmoProvider
+    proto: STCartridge739HP
+  - type: Sprite
+    layers:
+    - state: 76239
+      map: ["enum.GunVisualLayers.Base"]
+    - state: 76239ammo-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: exp
+
+- type: entity
+  parent: Z14739FMJBox
+  id: Z14739BPBox
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: ammo box (7.62x39) BP
+  description: For select Kalashnikov rifle models, 30 rounds per box. Penetrates class 5 armor.
+  components:
+  - type: BallisticAmmoProvider
+    proto: STCartridge739BP
+  - type: Sprite
+    layers:
+    - state: 76239
+      map: ["enum.GunVisualLayers.Base"]
+    - state: 76239ammo-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: antiarmor
+
+- type: entity
+  parent: BaseAmmoCinkBoxStalker
+  id: Z14739FMJBoxCink
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: ammo crate (7.62x39) FMJ
+  description: For select Kalashnikov rifle models, 300 rounds per crate. Penetrates class 3 armor.
+  components:
+  - type: BallisticAmmoProvider
+    capacity: 300
+    proto: STCartridge739FMJ
+    whitelist:
+      tags:
+        - STCartridge739
+  - type: Sprite
+    layers:
+    - state: cink
+      map: ["enum.GunVisualLayers.Base"]
+    - state: cink
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  parent: Z14739FMJBoxCink
+  id: Z14739PCBoxCink
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: ammo crate (7.62x39) PS
+  description: For select Kalashnikov rifle models, 300 rounds per crate. Penetrates class 4 armor.
+  components:
+  - type: BallisticAmmoProvider
+    proto: STCartridge739PC
+  - type: Sprite
+    layers:
+    - state: cink
+      map: ["enum.GunVisualLayers.Base"]
+    - state: cink
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  parent: Z14739FMJBoxCink
+  id: Z14739HPBoxCink
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: ammo crate (7.62x39) HP
+  description: For select Kalashnikov rifle models, 300 rounds per crate. Useless against armor.
+  components:
+  - type: BallisticAmmoProvider
+    proto: STCartridge739HP
+  - type: Sprite
+    layers:
+    - state: cink
+      map: ["enum.GunVisualLayers.Base"]
+    - state: cink
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  parent: Z14739FMJBoxCink
+  id: Z14739BPBoxCink
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: ammo crate (7.62x39) BP
+  description: For select Kalashnikov rifle models, 300 rounds per crate. Penetrates class 5 armor.
+  components:
+  - type: BallisticAmmoProvider
+    proto: STCartridge739BP
+  - type: Sprite
+    layers:
+    - state: cink
+      map: ["enum.GunVisualLayers.Base"]
+    - state: cink
+      map: ["enum.GunVisualLayers.Mag"]

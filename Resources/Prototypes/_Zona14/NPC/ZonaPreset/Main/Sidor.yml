@@ -4,7 +4,7 @@
   id: NPCSidorovichZONA
   name: Sidorovich [→   ←]
   description: An old squeeze who will not donate even a ruble to save someone. Rancorous.
-  suffix: ST, ZONA-TRADER
+  suffix: Z14, ZONA-TRADER
   components:
   - type: Sprite
     sprite: _Stalker/NPC/Sidor.rsi

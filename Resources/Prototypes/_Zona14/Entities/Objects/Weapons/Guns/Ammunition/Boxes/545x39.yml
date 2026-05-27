@@ -1,0 +1,218 @@
+- type: entity
+  parent: BaseAmmoBoxStalker
+  id: Z14545FMJBox
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: ammo box (5.45x39) FMJ
+  description: For various Kalashnikov rifle models, 30 rounds per box. Penetrates class 2 armor.
+  components:
+  - type: MagazineVisuals
+    magState: 545ammo
+  - type: BallisticAmmoProvider
+    capacity: 30
+    proto: STCartridge545FMJ
+    whitelist:
+      tags:
+        - STCartridge545
+  - type: Sprite
+    layers:
+    - state: 545
+      map: ["enum.GunVisualLayers.Base"]
+    - state: 545ammo-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  parent: Z14545FMJBox
+  id: Z14545PCBox
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: ammo box (5.45x39) PS
+  description: For various Kalashnikov rifle models, 30 rounds per box. Enhanced bullet. Penetrates class 3 armor.
+  components:
+  - type: BallisticAmmoProvider
+    proto: STCartridge545PC
+  - type: Sprite
+    layers:
+    - state: 545
+      map: ["enum.GunVisualLayers.Base"]
+    - state: 545ammo-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: t2
+
+- type: entity
+  parent: Z14545FMJBox
+  id: Z14545HPBox
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: ammo box (5.45x39) HP
+  description: For various Kalashnikov rifle models, 30 rounds per box. Cannot penetrate armor, but deals devastating damage including behind-armor damage.
+  components:
+  - type: BallisticAmmoProvider
+    proto: STCartridge545HP
+  - type: Sprite
+    layers:
+    - state: 545
+      map: ["enum.GunVisualLayers.Base"]
+    - state: 545ammo-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: exp
+
+- type: entity
+  parent: Z14545FMJBox
+  id: Z14545BPBox
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: ammo box (5.45x39) BP
+  description: For various Kalashnikov rifle models, 30 rounds per box. Penetrates class 4 armor.
+  components:
+  - type: BallisticAmmoProvider
+    proto: STCartridge545BP
+  - type: Sprite
+    layers:
+    - state: 545
+      map: ["enum.GunVisualLayers.Base"]
+    - state: 545ammo-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: t3
+
+- type: entity
+  parent: Z14545FMJBox
+  id: Z14545BSBox
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: ammo box (5.45x39) BS
+  description: For various Kalashnikov rifle models, 30 rounds per box. Penetrates class 5 armor.
+  components:
+  - type: BallisticAmmoProvider
+    proto: STCartridge545BS
+  - type: Sprite
+    layers:
+    - state: 545
+      map: ["enum.GunVisualLayers.Base"]
+    - state: 545ammo-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: t4
+
+- type: entity
+  parent: Z14545FMJBox
+  id: Z14545NCBox
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: ammo box (5.45x39) Igolnik
+  description: For various Kalashnikov rifle models, 30 rounds per box. Penetrates class 6 armor.
+  components:
+  - type: BallisticAmmoProvider
+    proto: STCartridge545NE
+  - type: Sprite
+    layers:
+    - state: 545
+      map: ["enum.GunVisualLayers.Base"]
+    - state: 545ammo-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: antiarmor
+
+- type: entity
+  parent: BaseAmmoCinkBoxStalker
+  id: Z14545FMJBoxCink
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: ammo crate (5.45x39) FMJ
+  description: For various Kalashnikov rifle models, 300 rounds per crate. Penetrates class 2 armor.
+  components:
+  - type: BallisticAmmoProvider
+    capacity: 300
+    proto: STCartridge545FMJ
+    whitelist:
+      tags:
+        - STCartridge545
+  - type: Sprite
+    layers:
+    - state: cink
+      map: ["enum.GunVisualLayers.Base"]
+    - state: cink
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  parent: Z14545FMJBoxCink
+  id: Z14545PCBoxCink
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: ammo crate (5.45x39) PS
+  description: For various Kalashnikov rifle models, 300 rounds per crate. Enhanced bullet. Penetrates class 3 armor.
+  components:
+  - type: BallisticAmmoProvider
+    proto: STCartridge545PC
+  - type: Sprite
+    layers:
+    - state: cink
+      map: ["enum.GunVisualLayers.Base"]
+    - state: cink
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  parent: Z14545FMJBoxCink
+  id: Z14545HPBoxCink
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: ammo crate (5.45x39) HP
+  description: For various Kalashnikov rifle models, 300 rounds per crate. Cannot penetrate armor, but deals devastating damage including behind-armor damage.
+  components:
+  - type: BallisticAmmoProvider
+    proto: STCartridge545HP
+  - type: Sprite
+    layers:
+    - state: cink
+      map: ["enum.GunVisualLayers.Base"]
+    - state: cink
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  parent: Z14545FMJBoxCink
+  id: Z14545BPBoxCink
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: ammo crate (5.45x39) BP
+  description: For various Kalashnikov rifle models, 300 rounds per crate. Penetrates class 4 armor.
+  components:
+  - type: BallisticAmmoProvider
+    proto: STCartridge545BP
+  - type: Sprite
+    layers:
+    - state: cink
+      map: ["enum.GunVisualLayers.Base"]
+    - state: cink
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  parent: Z14545FMJBoxCink
+  id: Z14545BSBoxCink
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: ammo crate (5.45x39) BS
+  description: For various Kalashnikov rifle models, 300 rounds per crate. Penetrates class 5 armor.
+  components:
+  - type: BallisticAmmoProvider
+    proto: STCartridge545BS
+  - type: Sprite
+    layers:
+    - state: cink
+      map: ["enum.GunVisualLayers.Base"]
+    - state: cink
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  parent: Z14545FMJBoxCink
+  id: Z14545NCBoxCink
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: ammo crate (5.45x39) Igolnik
+  description: For various Kalashnikov rifle models, 300 rounds per crate. Penetrates class 6 armor.
+  components:
+  - type: BallisticAmmoProvider
+    proto: STCartridge545NE
+  - type: Sprite
+    layers:
+    - state: cink
+      map: ["enum.GunVisualLayers.Base"]
+    - state: cink
+      map: ["enum.GunVisualLayers.Mag"]

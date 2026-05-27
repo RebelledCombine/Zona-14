@@ -1,0 +1,174 @@
+# Seraphim custom, may become publicly available in the future
+- type: entity
+  name: 'SR-2 "Veresk"'
+  suffix: Z14, Skin
+  parent: Z14STBaseWeaponSMG
+  id: Z14STWeaponSMGStalkerCP2Veresk
+  categories: [ Zona14 ]
+  description: A compact submachine gun developed for the powerful armor-piercing 9x21mm cartridge by order of the FSB and FSO. This variant is a makeshift modification allowing it to fire 9x19 Parabellum.
+  components:
+    - type: STWeight
+      self: 2.6
+    - type: PullDoAfter
+      pullTime: 1.5
+    - type: GunWieldBonus
+      minAngle: -25
+      maxAngle: -40
+    - type: Item
+      sprite: _Stalker/Objects/Weapons/Guns/SMGs/cp2.rsi
+      size: Large
+      shape:
+        - 0,0,5,1
+    - type: Sprite
+      sprite: _Stalker/Objects/Weapons/Guns/SMGs/cp2.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Weapons/Guns/SMGs/cp2.rsi
+    - type: Gun
+      minAngle: 18
+      maxAngle: 71.5
+      fireRate: 9
+      angleIncrease: 2
+      angleDecay: 9
+      projectileSpeed: 55
+      soundGunshot:
+        path: /Audio/_Stalker/Effects/Guns/919.ogg
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          startingItem: VityazMag
+          insertSound: /Audio/_Stalker/Weapons/Guns/RifleGen/MagIn/rifle_magin.ogg
+          ejectSound: /Audio/_Stalker/Weapons/Guns/RifleGen/MagOut/rifle_magout.ogg
+          priority: 4
+          whitelist:
+            tags:
+              - MagazineVityaz
+        gun_chamber:
+          name: Chamber
+          startingItem: STCartridge919PSOGJ
+          priority: 1
+          whitelist:
+            tags:
+              - STCartridge919
+    - type: STWeaponDamageFalloff
+      falloffMultiplier: 0.8
+    - type: STWeaponAccuracy
+      accuracyMultiplier: 1.42
+
+- type: entity
+  name: 'SR-2 "Veresk" Seraphim'
+  parent: Z14STWeaponSMGStalkerCP2Veresk
+  id: Z14STWeaponSMGStalkerCP2VereskSera
+  suffix: Z14
+  categories: [ Zona14 ]
+  components:
+    - type: Item
+      sprite: _Stalker/Objects/Weapons/Guns/SMGs/cp2sera.rsi
+      size: Large
+      shape:
+        - 0,0,5,1
+    - type: Sprite
+      sprite: _Stalker/Objects/Weapons/Guns/SMGs/cp2sera.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Weapons/Guns/SMGs/cp2sera.rsi
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          startingItem: VityazMag
+          insertSound: /Audio/_Stalker/Weapons/Guns/RifleGen/MagIn/rifle_magin.ogg
+          ejectSound: /Audio/_Stalker/Weapons/Guns/RifleGen/MagOut/rifle_magout.ogg
+          priority: 4
+          whitelist:
+            tags:
+              - MagazineVityaz
+        gun_chamber:
+          name: Chamber
+          startingItem: STCartridge919PSOGJ
+          priority: 1
+          whitelist:
+            tags:
+              - STCartridge919
+
+# 9x21
+
+- type: entity
+  name: 'SR-2M "Veresk" 9x21'
+  suffix: Z14, Skin
+  parent: Z14STBaseWeaponSMG
+  id: Z14STWeaponSMGStalkerCP2Veresk921
+  categories: [ Zona14 ]
+  description: A compact submachine gun developed for the powerful armor-piercing 9x21mm cartridge by order of the FSB and FSO. Now with the original caliber!
+  components:
+    - type: STWeight
+      self: 2.2
+    - type: Item
+      sprite: _Stalker/Objects/Weapons/Guns/SMGs/cp2.rsi
+      size: Large
+      shape:
+        - 0,0,5,1
+    - type: Sprite
+      sprite: _Stalker/Objects/Weapons/Guns/SMGs/cp2.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Weapons/Guns/SMGs/cp2.rsi
+    - type: Gun
+      minAngle: 18
+      maxAngle: 71.5
+      angleIncrease: 2
+      angleDecay: 9
+      fireRate: 9
+      soundGunshot:
+        path: /Audio/_Stalker/Effects/Guns/919.ogg
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          startingItem: SR2MMag30
+          insertSound: /Audio/_Stalker/Weapons/Guns/RifleGen/MagIn/rifle_magin.ogg
+          ejectSound: /Audio/_Stalker/Weapons/Guns/RifleGen/MagOut/rifle_magout.ogg
+          priority: 4
+          whitelist:
+            tags:
+              - MagazineSR2M
+        gun_chamber:
+          name: Chamber
+          startingItem: STCartridge921PGJ
+          priority: 1
+          whitelist:
+            tags:
+              - STCartridge921PGJ
+
+- type: entity
+  name: 'SR-2M "Veresk" Seraphim 9x21'
+  parent: Z14STWeaponSMGStalkerCP2Veresk921
+  id: Z14STWeaponSMGStalkerCP2VereskSera921
+  suffix: Z14
+  categories: [ Zona14 ]
+  components:
+    - type: Item
+      sprite: _Stalker/Objects/Weapons/Guns/SMGs/cp2sera.rsi
+      size: Large
+      shape:
+        - 0,0,5,1
+    - type: Sprite
+      sprite: _Stalker/Objects/Weapons/Guns/SMGs/cp2sera.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Weapons/Guns/SMGs/cp2sera.rsi
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          startingItem: SR2MMag30
+          insertSound: /Audio/_Stalker/Weapons/Guns/RifleGen/MagIn/rifle_magin.ogg
+          ejectSound: /Audio/_Stalker/Weapons/Guns/RifleGen/MagOut/rifle_magout.ogg
+          priority: 4
+          whitelist:
+            tags:
+              - MagazineSR2M
+        gun_chamber:
+          name: Chamber
+          startingItem: STCartridge921PGJ
+          priority: 1
+          whitelist:
+            tags:
+              - STCartridge921PGJ

@@ -1,0 +1,170 @@
+- type: entity
+  parent: BaseAmmoBoxStalker
+  id: Z14751M80Box
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: ammo box (7.62x51) M80
+  description: For NATO rifles, 30 rounds per box. Penetrates class 3 armor.
+  components:
+    - type: MagazineVisuals
+      magState: 76239ammo
+    - type: BallisticAmmoProvider
+      capacity: 30
+      proto: Cartridge751M80
+      whitelist:
+        tags:
+          - STCartridge751
+    - type: Sprite
+      layers:
+        - state: 76251
+          map: ["enum.GunVisualLayers.Base"]
+        - state: 76239ammo-1
+          map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  parent: Z14751M80Box
+  id: Z14751UNBox
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: ammo box (7.62x51) Ultra Noiser
+  description: For NATO rifles, 30 rounds per box. Useless against armor.
+  components:
+    - type: BallisticAmmoProvider
+      proto: Cartridge751Noiser
+    - type: Sprite
+      layers:
+        - state: 76251
+          map: ["enum.GunVisualLayers.Base"]
+        - state: 76239ammo-1
+          map: ["enum.GunVisualLayers.Mag"]
+        - state: t3
+
+- type: entity
+  parent: Z14751M80Box
+  id: Z14751M61Box
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: ammo box (7.62x51) M61
+  description: For NATO rifles, 30 rounds per box. Penetrates class 4 armor.
+  components:
+    - type: BallisticAmmoProvider
+      proto: Cartridge751M61
+    - type: Sprite
+      layers:
+        - state: 76251
+          map: ["enum.GunVisualLayers.Base"]
+        - state: 76239ammo-1
+          map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  parent: Z14751M80Box
+  id: Z14751M993Box
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: ammo box (7.62x51) M993
+  description: For NATO rifles, 30 rounds per box. Penetrates class 5 armor.
+  components:
+    - type: BallisticAmmoProvider
+      proto: Cartridge751M993
+    - type: Sprite
+      layers:
+        - state: 76251
+          map: ["enum.GunVisualLayers.Base"]
+        - state: 76239ammo-1
+          map: ["enum.GunVisualLayers.Mag"]
+        - state: antiarmor
+
+- type: entity
+  parent: BaseAmmoCinkBoxStalker
+  id: Z14751M80BoxCink
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: ammo crate (7.62x51) M80
+  description: For NATO rifles, 300 rounds per crate. Penetrates class 3 armor.
+  components:
+    - type: BallisticAmmoProvider
+      capacity: 300
+      proto: Cartridge751M80
+      whitelist:
+        tags:
+          - STCartridge751
+    - type: Sprite
+      layers:
+        - state: cink
+          map: ["enum.GunVisualLayers.Base"]
+        - state: cink
+          map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  parent: Z14751M80BoxCink
+  id: Z14751UNBoxCink
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: ammo crate (7.62x51) Ultra Noiser
+  description: For NATO rifles, 300 rounds per crate. Useless against armor.
+  components:
+    - type: BallisticAmmoProvider
+      proto: Cartridge751Noiser
+    - type: Sprite
+      layers:
+        - state: cink
+          map: ["enum.GunVisualLayers.Base"]
+        - state: cink
+          map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  parent: Z14751M80BoxCink
+  id: Z14751M61BoxCink
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: ammo crate (7.62x51) M61
+  description: For NATO rifles, 300 rounds per crate. Penetrates class 4 armor.
+  components:
+    - type: BallisticAmmoProvider
+      proto: Cartridge751M61
+    - type: Sprite
+      layers:
+        - state: cink
+          map: ["enum.GunVisualLayers.Base"]
+        - state: cink
+          map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  parent: Z14751M80BoxCink
+  id: Z14751M993BoxCink
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: ammo crate (7.62x51) M993
+  description: For NATO rifles, 300 rounds per crate. Penetrates class 5 armor.
+  components:
+    - type: BallisticAmmoProvider
+      proto: Cartridge751M993
+    - type: Sprite
+      layers:
+        - state: cink
+          map: ["enum.GunVisualLayers.Base"]
+        - state: cink
+          map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  parent: BaseAmmoBoxStalker
+  id: Z14754RBox
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: ammo box (7.62x54mm) R
+  description: Penetrates class 4 armor.
+  components:
+    - type: MagazineVisuals
+      magState: 76239ammo
+    - type: BallisticAmmoProvider
+      capacity: 30
+      proto: Cartridge754R
+      whitelist:
+        tags:
+          - STCartridge754R
+    - type: Sprite
+      layers:
+        - state: 76254R
+          map: ["enum.GunVisualLayers.Base"]
+        - state: 76239ammo-1
+          map: ["enum.GunVisualLayers.Mag"]

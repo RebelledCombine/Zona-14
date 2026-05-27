@@ -1,0 +1,152 @@
+- type: entity
+  parent: BaseAmmoBoxStalker
+  id: Z14921PGJBox
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: ammo box (9x21) P GZh
+  description: For SR-1 and SR-2M, 30 rounds per box. Penetrates class 2 armor.
+  components:
+  - type: Item
+    size: Small
+    shape:
+      - 0,0,1,0
+  - type: MagazineVisuals
+    magState: 919ammo
+  - type: BallisticAmmoProvider
+    proto: STCartridge921PGJ
+    capacity: 30
+    whitelist:
+      tags:
+        - STCartridge921
+  - type: Sprite
+    layers:
+    - state: 921
+      map: ["enum.GunVisualLayers.Base"]
+    - state: 919ammo2-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  parent: Z14921PGJBox
+  id: Z14921PEGJBox
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: ammo box (9x21) PE GZh
+  description: For SR-1 and SR-2M, 30 rounds per box. Cannot penetrate armor, but deals massive damage to unarmored targets.
+  components:
+  - type: BallisticAmmoProvider
+    proto: STCartridge921PEGJ
+  - type: Sprite
+    layers:
+    - state: 921
+      map: ["enum.GunVisualLayers.Base"]
+    - state: 919ammo-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: exp_large
+
+- type: entity
+  parent: Z14921PGJBox
+  id: Z14921BTGJBox
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: ammo box (9x21) BT GZh
+  description: For SR-1 and SR-2M, 30 rounds per box. Penetrates class 3 armor.
+  components:
+  - type: BallisticAmmoProvider
+    proto: STCartridge921BTGJ
+  - type: Sprite
+    layers:
+    - state: 921
+      map: ["enum.GunVisualLayers.Base"]
+    - state: 45ammo-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: t3_large
+
+- type: entity
+  parent: Z14921PGJBox
+  id: Z149217N42Box
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: ammo box (9x21) 7N42 "Zubilo"
+  description: For SR-1 and SR-2M, 30 rounds per box. Penetrates class 4 armor.
+  components:
+  - type: BallisticAmmoProvider
+    proto: STCartridge9217N42
+  - type: Sprite
+    layers:
+    - state: 921
+      map: ["enum.GunVisualLayers.Base"]
+    - state: 45ammo1-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: t4_large
+
+- type: entity
+  parent: BaseAmmoCinkBoxStalker
+  id: Z14921PGJBoxCink
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: ammo crate (9x21) P GZh
+  description: For SR-1 and SR-2M, 300 rounds per crate. Penetrates class 2 armor.
+  components:
+  - type: BallisticAmmoProvider
+    proto: STCartridge921PGJ
+    capacity: 300
+    whitelist:
+      tags:
+        - STCartridge921
+  - type: Sprite
+    layers:
+    - state: cink
+      map: ["enum.GunVisualLayers.Base"]
+    - state: cink
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  parent: Z14921PGJBoxCink
+  id: Z14921PEGJBoxCink
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: ammo crate (9x21) PE GZh
+  description: Expanding ammunition for SR-1 and SR-2M. Cannot penetrate armor, but deals massive damage to lightly armored or unarmored targets.
+  components:
+  - type: BallisticAmmoProvider
+    proto: STCartridge921PEGJ
+  - type: Sprite
+    layers:
+    - state: cink
+      map: ["enum.GunVisualLayers.Base"]
+    - state: cink
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  parent: Z14921PGJBoxCink
+  id: Z14921BTGJBoxCink
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: ammo crate (9x21) BT GZh
+  description: For SR-1 and SR-2M, 300 rounds per crate. Penetrates class 3 armor.
+  components:
+  - type: BallisticAmmoProvider
+    proto: STCartridge921BTGJ
+  - type: Sprite
+    layers:
+    - state: cink
+      map: ["enum.GunVisualLayers.Base"]
+    - state: cink
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  parent: Z14921PGJBoxCink
+  id: Z149217N42BoxCink
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: ammo crate (9x21) 7N42 "Zubilo"
+  description: For SR-1 and SR-2M, 300 rounds per crate. Penetrates class 4 armor.
+  components:
+  - type: BallisticAmmoProvider
+    proto: STCartridge9217N42
+  - type: Sprite
+    layers:
+    - state: cink
+      map: ["enum.GunVisualLayers.Base"]
+    - state: cink
+      map: ["enum.GunVisualLayers.Mag"]

@@ -1,0 +1,70 @@
+- type: entity
+  parent: Z14STBaseWeaponPistol
+  id: Z14WeaponPistolStalkerTT
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: Tula Tokarev
+  description: A legendary 7.62x25 caliber pistol developed in the USSR and battle-tested across many wars.
+  components:
+  - type: STWeight
+    self: 0.5
+  - type: Sprite
+    scale: 0.8, 0.8
+    sprite: _Stalker/Objects/Weapons/Guns/Pistols/tt.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Stalker/Objects/Weapons/Guns/Pistols/tt.rsi
+  - type: Gun
+    soundGunshot:
+      path: /Audio/_Stalker/Effects/Guns/tt.ogg
+    projectileSpeed: 55
+    minAngle: 6
+    maxAngle: 22
+    fireRate: 3.5
+    angleIncrease: 2.0
+    angleDecay: 8
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: TTMag
+        insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+        priority: 3
+        whitelist:
+          tags:
+            - MagazineTT
+      gun_auto_sear:
+        name: Insides
+        priority: 2
+        whitelist:
+          tags:
+            - STModuleAutoSear
+      gun_chamber:
+        name: Chamber
+        startingItem: STCartridge725PGL
+        priority: 1
+        whitelist:
+          tags:
+            - STCartridge918
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot {}
+      gun_auto_sear: !type:ContainerSlot {}
+      gun_chamber: !type:ContainerSlot {}
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Craftable
+  - type: STWeaponDamageFalloff
+    falloffMultiplier: 1.4
+  - type: STWeaponAccuracy
+    accuracyMultiplier: 1.4

@@ -1,0 +1,148 @@
+- type: entity
+  parent: BaseAmmoBoxStalker
+  id: Z14725PBox
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: ammo box (7.62x25) P gl
+  description: For TT and PPSh, 30 rounds per box. Penetrates only class 1 armor.
+  components:
+  - type: MagazineVisuals
+    magState: 76225ammo
+  - type: BallisticAmmoProvider
+    capacity: 30
+    proto: STCartridge725PGL
+    whitelist:
+      tags:
+        - STCartridge725
+  - type: Sprite
+    layers:
+    - state: 76225
+      map: ["enum.GunVisualLayers.Base"]
+    - state: 76225ammo-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  parent: Z14725PBox
+  id: Z14725PTBox
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: ammo box (7.62x25) PT GZh
+  description: For TT and PPSh, 30 rounds per box. Penetrates class 2 armor.
+  components:
+    - type: BallisticAmmoProvider
+      proto: STCartridge725PTGJ
+    - type: Sprite
+      layers:
+        - state: 76225
+          map: ["enum.GunVisualLayers.Base"]
+        - state: 76225ammo-1
+          map: ["enum.GunVisualLayers.Mag"]
+        - state: t2
+
+- type: entity
+  parent: Z14725PBox
+  id: Z14725LRNPCBox
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: ammo box (7.62x25) LRNPC
+  description: For TT and PPSh, 30 rounds per box. Useless against armor.
+  components:
+    - type: BallisticAmmoProvider
+      proto: STCartridge725LRNPC
+    - type: Sprite
+      layers:
+        - state: 76225
+          map: ["enum.GunVisualLayers.Base"]
+        - state: 76225ammo-1
+          map: ["enum.GunVisualLayers.Mag"]
+        - state: exp
+
+- type: entity
+  parent: Z14725PBox
+  id: Z14725PSTBox
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: ammo box (7.62x25) Pst GZh
+  description: For TT and PPSh, 30 rounds per box. Penetrates class 3 armor.
+  components:
+    - type: BallisticAmmoProvider
+      proto: STCartridge725PSTGJ
+    - type: Sprite
+      layers:
+        - state: 76225
+          map: ["enum.GunVisualLayers.Base"]
+        - state: 76225ammo-1
+          map: ["enum.GunVisualLayers.Mag"]
+        - state: t3
+
+- type: entity
+  parent: BaseAmmoCinkBoxStalker
+  id: Z14725PBoxCink
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: ammo crate (7.62x25) P gl
+  description: For TT and PPSh, 300 rounds per crate. Penetrates only class 1 armor.
+  components:
+  - type: BallisticAmmoProvider
+    capacity: 300
+    proto: STCartridge725PGL
+    whitelist:
+      tags:
+        - STCartridge725
+  - type: Sprite
+    layers:
+    - state: cink
+      map: ["enum.GunVisualLayers.Base"]
+    - state: cink
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  parent: Z14725PBoxCink
+  id: Z14725PTBoxCink
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: ammo crate (7.62x25) PT GZh
+  description: For TT and PPSh, 300 rounds per crate. Penetrates class 2 armor.
+  components:
+    - type: BallisticAmmoProvider
+      proto: STCartridge725PTGJ
+    - type: Sprite
+      layers:
+        - state: cink
+          map: ["enum.GunVisualLayers.Base"]
+        - state: cink
+          map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  parent: Z14725PBoxCink
+  id: Z14725LRNPCBoxCink
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: ammo crate (7.62x25) LRNPC
+  description: For TT and PPSh, 300 rounds per crate. Useless against armor.
+  components:
+    - type: BallisticAmmoProvider
+      proto: STCartridge725LRNPC
+    - type: Sprite
+      layers:
+        - state: cink
+          map: ["enum.GunVisualLayers.Base"]
+        - state: cink
+          map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  parent: Z14725PBoxCink
+  id: Z14725PSTBoxCink
+  suffix: Z14
+  categories: [ Zona14 ]
+  name: ammo crate (7.62x25) Pst GZh
+  description: For TT and PPSh, 300 rounds per crate. Penetrates class 3 armor.
+  components:
+    - type: BallisticAmmoProvider
+      proto: STCartridge725PSTGJ
+    - type: Sprite
+      layers:
+        - state: cink
+          map: ["enum.GunVisualLayers.Base"]
+        - state: cink
+          map: ["enum.GunVisualLayers.Mag"]

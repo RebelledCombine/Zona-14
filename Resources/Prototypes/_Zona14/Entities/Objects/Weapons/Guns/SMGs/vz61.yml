@@ -1,0 +1,69 @@
+- type: entity
+  abstract: true
+  parent: Z14STBaseWeaponSMG
+  id: Z14STBaseWeaponSMGViper
+  categories: [ Zona14 ]
+  components:
+  - type: STWeight
+    self: 1.5
+  - type: PullDoAfter
+    pullTime: 1.5
+  - type: GunWieldBonus
+    minAngle: -20
+    maxAngle: -35
+  - type: Clothing
+    sprite: Objects/Weapons/Guns/Pistols/viper.rsi
+  - type: Item
+    sprite: _Stalker/Objects/Weapons/Guns/SMGs/vz61.rsi
+    size: Normal
+  - type: Sprite
+    sprite: _Stalker/Objects/Weapons/Guns/SMGs/vz61.rsi
+  - type: Gun
+    minAngle: 20.2
+    maxAngle: 71.5
+    fireRate: 8.5
+    angleIncrease: 2.3
+    angleDecay: 9
+    projectileSpeed: 55
+    soundGunshot:
+      path: /Audio/_Stalker/Effects/Guns/919.ogg
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: Vz61Mag
+        insertSound: /Audio/_Stalker/Weapons/Guns/RifleGen/MagIn/rifle_magin.ogg
+        ejectSound: /Audio/_Stalker/Weapons/Guns/RifleGen/MagOut/rifle_magout.ogg
+        priority: 4
+        whitelist:
+          tags:
+          - MagazineVz61
+      gun_module_muzzle:
+        name: Muzzle
+        priority: 3
+        whitelist:
+          tags:
+          - STWeaponModuleSMGSilencer
+      gun_module_underbarrel:
+        name: Underbarrel
+        priority: 2
+        whitelist:
+          tags:
+          - STWeaponModuleSMGGrip
+      gun_chamber:
+        name: Chamber
+        startingItem: STCartridge918PGJ
+        priority: 1
+        whitelist:
+          tags:
+          - STCartridge918
+  - type: STWeaponDamageFalloff
+    falloffMultiplier: 1.4
+  - type: STWeaponAccuracy
+    accuracyMultiplier: 1.4
+
+- type: entity
+  parent: Z14STBaseWeaponSMGViper
+  id: Z14STWeaponSMGVZ61
+  suffix: Z14
+  categories: [ Zona14 ]
