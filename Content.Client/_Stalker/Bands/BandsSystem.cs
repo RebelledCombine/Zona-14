@@ -20,7 +20,7 @@ public sealed class BandsSystem : SharedBandsSystem
     [Dependency] private readonly TransformSystem _transform = default!; //Zona-14
     [Dependency] private readonly IGameTiming _timing = default!; //Zona-14
 
-    private const float MaxDistanceForBandPatch = 5f; //Zona-14
+    private const float MaxDistanceForBandPatch = 7f; //Zona-14
     private const float RecognitionDelay = 2f; //Zona-14
     private const float KnownDuration = 30f; //Zona-14
 
