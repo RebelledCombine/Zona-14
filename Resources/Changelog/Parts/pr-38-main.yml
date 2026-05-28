@@ -1,7 +1,0 @@
-author: BELNAKBU
-time: '2026-05-28T07:31:19Z'
-url: https://github.com/Zona-14/Zona-14/pull/38
-changes:
-- type: Tweak
-  message: Increased band patch recognition range from 5 to 7 tiles.
-category: Main
