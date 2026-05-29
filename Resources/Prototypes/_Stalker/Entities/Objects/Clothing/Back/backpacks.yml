@@ -9,7 +9,7 @@
     - type: STWeight
       self: 1.7
     - type: STWeightInsideReduction
-      reductionFraction: 0.50 # Zona14 change
+      reductionFraction: 0.50  # Zona14: 0.60<0.50
     - type: Sprite
       sprite: _Stalker/Objects/Clothing/backpacks/Duffels/duffel.rsi
     - type: Storage # 6 клеток подряд + доп 1 клетка отдельно (всего 7)
@@ -39,7 +39,7 @@
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/backpacks/town_black.rsi
   - type: STWeightInsideReduction
-    reductionFraction: 0.50 # Zona14 change
+    reductionFraction: 0.50  # Zona14: 0.60<0.50
   - type: Storage #14 клеток
     grid:
         - 0,0,1,0
@@ -56,7 +56,7 @@
   description: Удобный, однако невместительный рюкзак за копейки.
   components:
   - type: STWeightInsideReduction
-    reductionFraction: 0.50 # Zona14 change
+    reductionFraction: 0.50  # Zona14: 0.60<0.50
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/backpacks/town_white.rsi
 
@@ -70,7 +70,7 @@
   suffix: ST
   components:
   - type: STWeightInsideReduction
-    reductionFraction: 0.50 # Zona14 change
+    reductionFraction: 0.50  # Zona14: 0.60<0.50
   - type: Craftable
   - type: Storage
     grid:
@@ -178,7 +178,7 @@
   suffix: ST
   components:
   - type: STWeightInsideReduction
-    reductionFraction: 0.60
+    reductionFraction: 0.50  # Zona14: 0.60<0.50
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/backpacks/Other/backpack1.rsi
   - type: Storage #40  клеток (способен носить 2 втомата внутри, доступен только гп)
@@ -210,7 +210,7 @@
     quickInsert: true
     areaInsert: true
   - type: STWeightInsideReduction
-    reductionFraction: 0.50 # Zona14 change
+    reductionFraction: 0.50  # Zona14: 0.60<0.50
   - type: Sprite
     sprite: Clothing/Back/Backpacks/merc.rsi
 
@@ -256,7 +256,7 @@
     - STClothingBackpackT4
     - BlockBack
   - type: STWeightInsideReduction
-    reductionFraction: 0.50 # Zona14 change
+    reductionFraction: 0.50  # Zona14: 0.55<0.50
 
 - type: entity
   parent: STClothingBackBase
@@ -284,7 +284,7 @@
     - STClothingBackpackT4
     - BlockBack
   - type: STWeightInsideReduction
-    reductionFraction: 0.50 # Zona14 change
+    reductionFraction: 0.50  # Zona14: 0.55<0.50
 
 - type: entity
   parent: ClothingBackpackDuffelHikingVSRF
@@ -316,7 +316,7 @@
     - STClothingBackpackT4
     - BlockBack
   - type: STWeightInsideReduction
-    reductionFraction: 0.55
+    reductionFraction: 0.50  # Zona14: 0.55<0.50
 
 - type: entity
   parent: STClothingBackBase
@@ -335,7 +335,7 @@
     - STClothingBackpackT4
     - BlockBack
   - type: STWeightInsideReduction
-    reductionFraction: 0.55
+    reductionFraction: 0.50  # Zona14: 0.55<0.50
 
 - type: entity
   parent: STClothingBackBase
@@ -354,7 +354,7 @@
     - STClothingBackpackT4
     - BlockBack
   - type: STWeightInsideReduction
-    reductionFraction: 0.55
+    reductionFraction: 0.50  # Zona14: 0.55<0.50
 
 - type: entity
   parent: STClothingBackBase
@@ -373,7 +373,7 @@
     - STClothingBackpackT4
     - BlockBack
   - type: STWeightInsideReduction
-    reductionFraction: 0.55
+    reductionFraction: 0.50  # Zona14: 0.55<0.50
 
 - type: entity
   parent: STClothingBackBase
@@ -392,7 +392,7 @@
     - STClothingBackpackT4
     - BlockBack
   - type: STWeightInsideReduction
-    reductionFraction: 0.55
+    reductionFraction: 0.50  # Zona14: 0.55<0.50
 
 # Tier - 5
 
@@ -429,7 +429,7 @@
     - STClothingBackpackT5
     - BlockBack
   - type: STWeightInsideReduction
-    reductionFraction: 0.60
+    reductionFraction: 0.50  # Zona14: 0.60<0.50
 
 - type: entity
   parent: STClothingBackBase
@@ -448,7 +448,7 @@
     - STClothingBackpackT5
     - BlockBack
   - type: STWeightInsideReduction
-    reductionFraction: 0.60
+    reductionFraction: 0.50  # Zona14: 0.60<0.50
 # Tier - 6
 
 - type: entity
@@ -464,7 +464,7 @@
     grid:
     - 0,0,8,7 #72 Клеткок
   - type: STWeightInsideReduction
-    reductionFraction: 0.60
+    reductionFraction: 0.50  # Zona14: 0.60<0.50
 # Аномальные
 
 

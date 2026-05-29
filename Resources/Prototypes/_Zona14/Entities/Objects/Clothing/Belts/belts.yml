@@ -1,0 +1,26 @@
+- type: entity
+  parent: ClothingBeltStorageStalkerBase
+  id: Z14HolsterBelt
+  name: Holster with Pouches
+  description: Pistol holster with additional pouches for magazines and other small items. A good choice for a stalker who needs to keep their hands free while still having quick access to their sidearm and essential gear.
+  suffix: Z14
+  categories: [ Zona14 ]
+  components:
+    - type: STWeightInsideReduction
+      reductionFraction: 0.50
+    - type: STWeight
+      self: 3
+    - type: Storage
+      maxItemSize: Normal
+      grid:
+        - 0,0,1,0
+        - 0,0,0,1
+        - 3,0,3,1
+        - 5,0,5,1
+        - 7,0,7,1
+        - 9,0,9,1
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/belt/belt_merc_loner_holster.rsi
+      state: icon
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/belt/belt_merc_loner_holster.rsi

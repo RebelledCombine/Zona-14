@@ -15,13 +15,18 @@
     sprite: _Stalker/Objects/Clothing/belt/crafter_bag.rsi
     state: icon
   - type: Storage
+    areaInsert: true  # Zona14: added
     maxItemSize: Normal
     grid:
     - 0,0,9,9
     whitelist:
       components:
         - Material
+    blacklist:  # Zona14: added
+      tags:  # Zona14: added
+      - STArtifact  # Zona14: added
+      - Khabar  # Zona14: added
   - type: Item
-    size: Large
+    size: Ginormous  # Zona14: Large<Ginormous
     # shape:
     # - 0,0,3,3

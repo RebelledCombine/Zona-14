@@ -36,7 +36,7 @@
         components:
           - PAI
     penSlot:
-      priority: -1
+      priority: 4  # Zona14: -1<4
       whitelist:
         tags:
           - Write
@@ -62,7 +62,15 @@
       cassette_slot: !type:ContainerSlot {}
       program-container: !type:Container
         ents: []
+  - type: Boombox  # Zona14: added
   - type: ItemSlots
+    slots:
+      cassette_slot:  # Zona14: added
+        name: Cassete  # Zona14: added
+        priority: 3  # Zona14: added
+        whitelist:  # Zona14: added
+          tags:  # Zona14: added
+            - Cassete  # Zona14: added
   - type: PowerCellSlot
     cellSlotId: cell_slot
   - type: Clothing
@@ -118,6 +126,7 @@
     addPrefix: false
     blinkingBehaviourId: blinking
     radiatingBehaviourId: radiating
+    toggleOnInteract: false  # Zona14: added
   - type: LightBehaviour
     behaviours:
       - !type:FadeBehaviour
@@ -141,7 +150,8 @@
     enabled: false
     mask: /Textures/Effects/LightMasks/cone.png
     autoRot: true
-    radius: 3
+    radius: 5  # Zona14: 3<5
+    energy: 2.5  # Zona14: added
     netsync: false
 
 - type: entity
@@ -152,11 +162,23 @@
   components:
   - type: PdaBorderColor
     borderColor: "#717059"
+  - type: Boombox  # Zona14: added
+  - type: HandheldGPS  # Zona14: added
+  - type: Tag
+    tags:
+    - GPS  # Zona14: added
+    - Flashlight
   - type: ItemSlots
     slots:
+      cassette_slot:  # Zona14: added
+        name: Cassete  # Zona14: added
+        priority: 3  # Zona14: added
+        whitelist:  # Zona14: added
+          tags:  # Zona14: added
+            - Cassete  # Zona14: added
       cell_slot:
         name: power-cell-slot-component-slot-name-default
-        startingItem: PowerCellSmall
+        startingItem: PowerCellHyper  # Zona14: PowerCellSmall<PowerCellHyper
       dogtag_slot:
         name: Dogtag
         startingItem: ClothingNeckDogtagStalker
@@ -188,7 +210,7 @@
     slots:
       cell_slot:
         name: power-cell-slot-component-slot-name-default
-        startingItem: PowerCellSmall
+        startingItem: PowerCellHyper  # Zona14: PowerCellSmall<PowerCellHyper
       dogtag_slot:
         name: Dogtag
         startingItem: ClothingNeckDogtagStalker
@@ -225,7 +247,7 @@
     slots:
       cell_slot:
         name: power-cell-slot-component-slot-name-default
-        startingItem: PowerCellSmall
+        startingItem: PowerCellHyper  # Zona14: PowerCellSmall<PowerCellHyper
       dogtag_slot:
         name: Dogtag
         startingItem: ClothingNeckDogtagStalker
@@ -256,7 +278,7 @@
     slots:
       cell_slot:
         name: power-cell-slot-component-slot-name-default
-        startingItem: PowerCellSmall
+        startingItem: PowerCellHyper  # Zona14: PowerCellSmall<PowerCellHyper
       dogtag_slot:
         name: Dogtag
         startingItem: ClothingNeckDogtagOfficial
@@ -289,7 +311,7 @@
             - Cassete
       cell_slot:
         name: power-cell-slot-component-slot-name-default
-        startingItem: PowerCellSmall
+        startingItem: PowerCellHyper  # Zona14: PowerCellSmall<PowerCellHyper
       dogtag_slot:
         name: Dogtag
         startingItem: ClothingNeckDogtagBrigand
@@ -316,7 +338,7 @@
     slots:
       cell_slot:
         name: power-cell-slot-component-slot-name-default
-        startingItem: PowerCellSmall
+        startingItem: PowerCellHyper  # Zona14: PowerCellSmall<PowerCellHyper
       dogtag_slot:
         name: Dogtag
         startingItem: ClothingNeckDogtagStalker
@@ -348,7 +370,7 @@
     slots:
       cell_slot:
         name: power-cell-slot-component-slot-name-default
-        startingItem: PowerCellSmall
+        startingItem: PowerCellHyper  # Zona14: PowerCellSmall<PowerCellHyper
       dogtag_slot:
         name: Dogtag
         startingItem: ClothingNeckDogtagStalker
@@ -384,7 +406,7 @@
     slots:
       cell_slot:
         name: power-cell-slot-component-slot-name-default
-        startingItem: PowerCellSmall
+        startingItem: PowerCellHyper  # Zona14: PowerCellSmall<PowerCellHyper
       dogtag_slot:
         name: Dogtag
         startingItem: ClothingNeckDogtagStalker
@@ -413,7 +435,7 @@
     slots:
       cell_slot:
         name: power-cell-slot-component-slot-name-default
-        startingItem: PowerCellSmall
+        startingItem: PowerCellHyper  # Zona14: PowerCellSmall<PowerCellHyper
       dogtag_slot:
         name: Dogtag
         startingItem: ClothingNeckDogtagOfficial
@@ -446,7 +468,7 @@
     slots:
       cell_slot:
         name: power-cell-slot-component-slot-name-default
-        startingItem: PowerCellSmall
+        startingItem: PowerCellHyper  # Zona14: PowerCellSmall<PowerCellHyper
       dogtag_slot:
         name: Dogtag
         startingItem: ClothingNeckDogtagPilgrim
@@ -480,7 +502,7 @@
             - Cassete
       cell_slot:
         name: power-cell-slot-component-slot-name-default
-        startingItem: PowerCellSmall
+        startingItem: PowerCellHyper  # Zona14: PowerCellSmall<PowerCellHyper
       dogtag_slot:
         name: Dogtag
         startingItem: ClothingNeckDogtagBrigand
@@ -512,7 +534,7 @@
             - Cassete
       cell_slot:
         name: power-cell-slot-component-slot-name-default
-        startingItem: PowerCellSmall
+        startingItem: PowerCellHyper  # Zona14: PowerCellSmall<PowerCellHyper
       dogtag_slot:
         name: Dogtag
         startingItem: ClothingNeckDogtagBrigand
