@@ -344,7 +344,7 @@
       ##-------------------------------------------
       ClothingBackpackMercStalker: 799 # T3 |pve backpack
       ClothingBackpackStalkerZaryaBlack: 999 # T3 |pvp backpack
-      ClothingBackpackDuffelCommonStalker: 1100  # T3 |pvp backpack
+      Z14ClothingBackpackDuffelCommonStalker: 1100  # T3 |pvp backpack # Zona14: ClothingBackpackDuffelCommonStalker<Z14ClothingBackpackDuffelCommonStalker
         ##-------------------------------------------
       # Belts
       ClothingBeltBandolierStalker: 20 # T1 - PVE

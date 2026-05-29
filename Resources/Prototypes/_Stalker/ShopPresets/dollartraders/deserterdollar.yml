@@ -31,8 +31,8 @@
   - name: shop-category-storage-and-containers
     priority: 5
     items:
-      ClothingBackpackDuffelBlackTacticStalker: 20
-      ClothingBackpackDuffelBlackMilitaryTacticStalker: 20
+      Z14ClothingBackpackDuffelBlackTacticStalker: 20 # Zona14: ClothingBackpackDuffelBlackTacticStalker<Z14ClothingBackpackDuffelBlackTacticStalker
+      Z14ClothingBackpackDuffelBlackMilitaryTacticStalker: 20 # Zona14: ClothingBackpackDuffelBlackMilitaryTacticStalker<Z14ClothingBackpackDuffelBlackMilitaryTacticStalker
   - name: shop-category-modules
     priority: 7
     items:

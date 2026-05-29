@@ -37,7 +37,7 @@
 - type: startingGear
   id: STEvolverGear
   equipment:
-    id: BandPDA
+    id: Z14BandPDA # Zona14: BandPDA<Z14BandPDA
     torso: STClothingTorsoJacketGray
     legs: STClothingLegsPantsGray
     shoes: ClothingShoesSwat

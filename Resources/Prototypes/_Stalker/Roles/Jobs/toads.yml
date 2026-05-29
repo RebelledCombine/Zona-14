@@ -70,7 +70,7 @@
 - type: startingGear
   id: JabaGear
   equipment:
-    id: BandPDA
+    id: Z14BandPDA # Zona14: BandPDA<Z14BandPDA
     torso: ClothingTorsoJaba
     legs: ClothingLegsJeansJaba
     shoes: ClothingShoesBootsFrogLeather

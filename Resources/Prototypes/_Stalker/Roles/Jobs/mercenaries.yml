@@ -44,7 +44,7 @@
 - type: startingGear
   id: StalkerMercenaryGear
   equipment:
-    id: BandPDA
+    id: Z14BandPDA # Zona14: BandPDA<Z14BandPDA
     dogtag: ClothingNeckDogtagMercenary
 
 - type: job
@@ -94,7 +94,7 @@
 - type: startingGear
   id: StalkerHeadMercenaryGear
   equipment:
-    id: BandPDA
+    id: Z14BandPDA # Zona14: BandPDA<Z14BandPDA
     dogtag: ClothingNeckDogtagMercenaryCommander
 
 - type: stBand

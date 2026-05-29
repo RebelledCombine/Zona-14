@@ -38,7 +38,7 @@
   - name: shop-category-storage-and-containers
     priority: 5
     items:
-      ClothingBackpackDuffelSuperStalker: 40
+      Z14ClothingBackpackDuffelSuperStalker: 40 # Zona14: ClothingBackpackDuffelSuperStalker<Z14ClothingBackpackDuffelSuperStalker
       ClothingBeltWebbingDoubleStalkerZaryaSmall: 5
   - name: shop-category-raincoats-and-gasmasks
     priority: 6

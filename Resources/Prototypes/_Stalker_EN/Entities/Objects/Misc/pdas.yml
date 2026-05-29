@@ -1,4 +1,3 @@
-# Zona14: QoL updates - Boombox, priority fixes, PowerCellHyper
 - type: entity
   abstract: true
   parent: BaseStalkerPDA
@@ -44,7 +43,7 @@
   - type: Pda # stalker-en-changes-start
     penSlot:
       startingItem: Pen
-      priority: 4
+      priority: 1
       whitelist:
         tags:
         - Write
@@ -53,18 +52,16 @@
     slots:
       cassette_slot:
         name: Cassete
-        priority: 3
+        priority: 2
         whitelist:
           tags:
             - Cassete
       cell_slot:
         name: power-cell-slot-component-slot-name-default
-        priority: 2
-        startingItem: PowerCellHyper
+        startingItem: PowerCellSmall
       dogtag_slot:
         name: Dogtag
-        priority: 1
-#        startingItem: ClothingNeckDogtagMercenary
+#        startingItem: ClothingNeckDogtagBrigand
         whitelist:
           tags:
           - Dogtag
@@ -94,27 +91,18 @@
   - type: Pda # stalker-en-changes-start
     penSlot:
       startingItem: Pen
-      priority: 4
+      priority: 1
       whitelist:
         tags:
         - Write
-  - type: Boombox
   - type: ItemSlots
     slots:
-      cassette_slot:
-        name: Cassete
-        priority: 3
-        whitelist:
-          tags:
-            - Cassete
       cell_slot:
         name: power-cell-slot-component-slot-name-default
-        priority: 2
-        startingItem: PowerCellHyper
+        startingItem: PowerCellSmall
       dogtag_slot:
         name: Dogtag
-        priority: 1
-#        startingItem: ClothingNeckDogtagMilitary
+        startingItem: ClothingNeckDogtagOfficial
         whitelist:
           tags:
           - Dogtag
@@ -147,30 +135,123 @@
   - type: Pda # stalker-en-changes-start
     penSlot:
       startingItem: Pen
-      priority: 4
+      priority: 1
       whitelist:
         tags:
         - Write
-  - type: Boombox
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+        startingItem: PowerCellSmall
+      dogtag_slot:
+        name: Dogtag
+#        startingItem: ClothingNeckDogtagOfficial
+        whitelist:
+          tags:
+          - Dogtag
+  - type: PointLight
+    enabled: false
+    radius: 5
+    energy: 2.5
+    netsync: false # stalker-en-changes-end
+
+- type: entity
+  parent: BaseStalkerPDAEN
+  id: STRuggedPdaEN
+  name: Rugged PDA
+  suffix: ST, PDA
+  description: A PDA modified for use in dangerous areas of the zone, it has all the utilities needed to survive in harsh environments.
+  components:
+  - type: Icon
+    state: rugged_off
+  - type: Appearance
+    appearanceDataInit:
+      enum.PdaVisuals.PdaType:
+        !type:String
+        rugged_on
+  - type: PdaBorderColor
+    borderColor: "#61614F"
+  - type: Pda
+    penSlot:
+      startingItem: Pen
+      priority: 1
+      whitelist:
+        tags:
+        - Write
   - type: ItemSlots
     slots:
       cassette_slot:
         name: Cassete
-        priority: 3
+        priority: 2
         whitelist:
           tags:
             - Cassete
       cell_slot:
         name: power-cell-slot-component-slot-name-default
-        priority: 2
         startingItem: PowerCellHyper
       dogtag_slot:
         name: Dogtag
-        priority: 1
-#        startingItem: ClothingNeckDogtagMilitary
         whitelist:
           tags:
-          - Dogtag
+            - Dogtag
+  - type: HealthAnalyzer
+    scanDelay: 2
+    scanningEndSound:
+      path: "/Audio/Items/Medical/healthscanner.ogg"
+  - type: Boombox
+  - type: HandheldGPS
+  - type: PointLight
+    enabled: false
+    radius: 7
+    energy: 3.5
+    netsync: false
+
+- type: entity
+  parent: BaseStalkerPDA
+  id: OldPDA
+  name: Old Stalker's PDA
+  suffix: ST, Zombiefied
+  description: A worn, bloodstained PDA with cracks, very dusty, dirt here and there. Does it work at all?
+  components:
+  - type: PdaBorderColor
+    borderColor: "#717059"
+  - type: Appearance
+    appearanceDataInit:
+     enum.PdaVisuals.PdaType:
+       !type:String
+       old_pda
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Devices/pda.rsi
+    layers:
+    - map: [ "enum.PdaVisualLayers.Base" ]
+      state: old_pda
+    - state: "light_overlay"
+      map: [ "enum.PdaVisualLayers.Flashlight" ]
+      shader: "unshaded"
+      visible: false
+    - state: "id_overlay"
+      map: [ "enum.PdaVisualLayers.IdLight" ]
+      shader: "unshaded"
+      visible: false
+  - type: Pda # stalker-en-changes-start
+    penSlot:
+      startingItem: Pen
+      priority: 1
+      whitelist:
+        tags:
+        - Write
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+        startingItem: PowerCellSmall
+      dogtag_slot:
+        name: Dogtag
+#        startingItem: ClothingNeckDogtagStalker
+        whitelist:
+          tags:
+            - Dogtag
   - type: PointLight
     enabled: false
     radius: 5

@@ -40,7 +40,7 @@
 - type: startingGear
   id: UNGear
   equipment:
-    id: MilitaryPDA
+    id: Z14MilitaryPDA # Zona14: MilitaryPDA<Z14MilitaryPDA
     legs: ClothingLegsJeansGreenCargo
     shoes: STClothingShoesBootsCombatFilled
     torso: ClothingTorsoTurtlenecksUN

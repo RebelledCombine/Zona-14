@@ -165,7 +165,7 @@
     priority: 5
     items:
       MedkitGrizzlyStalker: 2000
-      ClothingBackpackDuffelMilitaryOlive: 700
+      Z14ClothingBackpackDuffelMilitaryOlive: 700 # Zona14: ClothingBackpackDuffelMilitaryOlive<Z14ClothingBackpackDuffelMilitaryOlive
   - name: shop-category-raincoats-and-gasmasks
     priority: 6
     items:

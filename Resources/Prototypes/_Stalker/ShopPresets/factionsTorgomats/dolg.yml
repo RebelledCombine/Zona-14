@@ -204,9 +204,9 @@
       ClothingBeltTarzanBlack: 20
       ClothingBeltBandolierStalker: 20 # T1 - PVE
       ClothingBeltWebbingHolsterDolgPS5M: 700 # t3 belt
-      ClothingBackpackDuffelOliveTacticStalker: 1200
-      ClothingBackpackDuffelSuperStalkerGray: 1600
-      ClothingBackpackDuffelSuperStalker: 1600
+      Z14ClothingBackpackDuffelOliveTacticStalker: 1200 # Zona14: ClothingBackpackDuffelOliveTacticStalker<Z14ClothingBackpackDuffelOliveTacticStalker
+      Z14ClothingBackpackDuffelSuperStalkerGray: 1600 # Zona14: ClothingBackpackDuffelSuperStalkerGray<Z14ClothingBackpackDuffelSuperStalkerGray
+      Z14ClothingBackpackDuffelSuperStalker: 1600 # Zona14: ClothingBackpackDuffelSuperStalker<Z14ClothingBackpackDuffelSuperStalker
   - name: shop-category-raincoats-and-gasmasks
     priority: 6
     items:

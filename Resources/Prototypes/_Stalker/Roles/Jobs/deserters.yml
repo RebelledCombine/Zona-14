@@ -70,7 +70,7 @@
 - type: startingGear
   id: StalkerDeserterGear
   equipment:
-    id: BandPDA
+    id: Z14BandPDA # Zona14: BandPDA<Z14BandPDA
     torso: ClothingTorsoTurtlenecksDeserterCamouflage
     legs: ClothingLegsJeansDeserterCamouflage
     shoes: STClothingShoesBootsCombatFilled

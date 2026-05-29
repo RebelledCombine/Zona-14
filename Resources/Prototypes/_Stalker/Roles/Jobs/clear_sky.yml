@@ -88,13 +88,13 @@
 - type: startingGear
   id: StalkerClearSkyGear
   equipment:
-    id: ClearSkyPDA
+    id: Z14ClearSkyPDA # Zona14: ClearSkyPDA<Z14ClearSkyPDA
     dogtag: ClothingNeckDogtagClearSky
 
 - type: startingGear
   id: StalkerClearSkyGearHead
   equipment:
-    id: ClearSkyPDA
+    id: Z14ClearSkyPDA # Zona14: ClearSkyPDA<Z14ClearSkyPDA
     dogtag: ClothingNeckDogtagClearSkyLeader
 
 - type: stBand

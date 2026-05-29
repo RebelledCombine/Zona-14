@@ -36,7 +36,7 @@
         components:
           - PAI
     penSlot:
-      priority: 4 # Zona14: updated
+      priority: -1
       whitelist:
         tags:
           - Write
@@ -62,7 +62,6 @@
       cassette_slot: !type:ContainerSlot {}
       program-container: !type:Container
         ents: []
-  - type: Boombox # Zona14: updated
   - type: ItemSlots
   - type: PowerCellSlot
     cellSlotId: cell_slot
@@ -75,12 +74,12 @@
   - type: CartridgeLoader
     uiKey: enum.PdaUiKey.Key
     preinstalled:
-      - NanoTaskCartridge # stalker-en-changes
       - NotekeeperCartridge
       - STMessengerCartridge # stalker-en-changes: replaced upstream messenger
       - STFactionRelationsCartridge # stalker-en-changes
       - STMercBoardCartridge # stalker-en-changes
       - STTradeBoardCartridge # stalker-en-changes
+      - STNewsCartridge # stalker-en-changes
     cartridgeSlot:
       priority: -1
       name: Cartridge
@@ -112,14 +111,11 @@
     context: "human"
   - type: StationRecordKeyStorage
   - type: PdaVisuals
-  - type: HandheldGPS # Zona14: updated
   - type: Tag
     tags:
-    - GPS # Zona14: updated
     - Flashlight
   - type: HandheldLight
     addPrefix: false
-    toggleOnInteract: false # stalker-14-en: prevent E from toggling flashlight, only open PDA UI
     blinkingBehaviourId: blinking
     radiatingBehaviourId: radiating
   - type: LightBehaviour
@@ -156,38 +152,17 @@
   components:
   - type: PdaBorderColor
     borderColor: "#717059"
-  - type: Pda # stalker-en-changes-start
-    penSlot:
-      startingItem: Pen
-      priority: 4
-      whitelist:
-        tags:
-        - Write
-  - type: Boombox
   - type: ItemSlots
     slots:
-      cassette_slot:
-        name: Cassete
-        priority: 3
-        whitelist:
-          tags:
-            - Cassete
       cell_slot:
         name: power-cell-slot-component-slot-name-default
-        priority: 2
-        startingItem: PowerCellHyper
+        startingItem: PowerCellSmall
       dogtag_slot:
         name: Dogtag
-        priority: 1
-#        startingItem: ClothingNeckDogtagLoner
+        startingItem: ClothingNeckDogtagStalker
         whitelist:
           tags:
             - Dogtag
-  - type: PointLight
-    enabled: false
-    radius: 5
-    energy: 2.5
-    netsync: false # stalker-en-changes-end
 
 - type: entity
   parent: [ BaseStalkerPDA, GeigerCounter]
@@ -209,30 +184,14 @@
   - type: Geiger
     showControl: true
     showExamine: true
-  - type: Pda # stalker-en-changes-start
-    penSlot:
-      startingItem: Pen
-      priority: 4
-      whitelist:
-        tags:
-        - Write
-  - type: Boombox
   - type: ItemSlots
     slots:
-      cassette_slot:
-        name: Cassete
-        priority: 3
-        whitelist:
-          tags:
-            - Cassete
       cell_slot:
         name: power-cell-slot-component-slot-name-default
-        priority: 2
-        startingItem: PowerCellHyper
+        startingItem: PowerCellSmall
       dogtag_slot:
         name: Dogtag
-        priority: 1
-#        startingItem: ClothingNeckDogtagLoner
+        startingItem: ClothingNeckDogtagStalker
         whitelist:
           tags:
             - Dogtag
@@ -242,11 +201,6 @@
       flatReductions:
         Radiation: 2
         Psy: 2
-  - type: PointLight
-    enabled: false
-    radius: 5
-    energy: 2.5
-    netsync: false # stalker-en-changes-end
 
 - type: entity
   parent: [ BaseStalkerPDA, GeigerCounter ]
@@ -267,38 +221,17 @@
       path: "/Audio/Items/Medical/healthscanner.ogg"
   - type: PdaBorderColor
     borderColor: "#3c1a69"
-  - type: Pda # stalker-en-changes-start
-    penSlot:
-      startingItem: Pen
-      priority: 4
-      whitelist:
-        tags:
-        - Write
-  - type: Boombox
   - type: ItemSlots
     slots:
-      cassette_slot:
-        name: Cassete
-        priority: 3
-        whitelist:
-          tags:
-            - Cassete
       cell_slot:
         name: power-cell-slot-component-slot-name-default
-        priority: 2
-        startingItem: PowerCellHyper
+        startingItem: PowerCellSmall
       dogtag_slot:
         name: Dogtag
-        priority: 1
-#        startingItem: ClothingNeckDogtagLoner
+        startingItem: ClothingNeckDogtagStalker
         whitelist:
           tags:
             - Dogtag
-  - type: PointLight
-    enabled: false
-    radius: 5
-    energy: 2.5
-    netsync: false # stalker-en-changes-end
 
 - type: entity
   parent: BaseStalkerPDA
@@ -319,38 +252,17 @@
       path: "/Audio/Items/Medical/healthscanner.ogg"
   - type: PdaBorderColor
     borderColor: "#094a83"
-  - type: Pda # stalker-en-changes-start
-    penSlot:
-      startingItem: Pen
-      priority: 4
-      whitelist:
-        tags:
-        - Write
-  - type: Boombox
   - type: ItemSlots
     slots:
-      cassette_slot:
-        name: Cassete
-        priority: 3
-        whitelist:
-          tags:
-            - Cassete
       cell_slot:
         name: power-cell-slot-component-slot-name-default
-        priority: 2
-        startingItem: PowerCellHyper
+        startingItem: PowerCellSmall
       dogtag_slot:
         name: Dogtag
-        priority: 1
-#        startingItem: ClothingNeckDogtagEco
+        startingItem: ClothingNeckDogtagOfficial
         whitelist:
           tags:
             - Dogtag
-  - type: PointLight
-    enabled: false
-    radius: 5
-    energy: 2.5
-    netsync: false # stalker-en-changes-end
 
 - type: entity
   parent: BaseStalkerPDA
@@ -367,43 +279,28 @@
       enum.PdaVisuals.PdaType:
         !type:String
         band_on
-  - type: Pda # stalker-en-changes-start
-    penSlot:
-      startingItem: Pen
-      priority: 4
-      whitelist:
-        tags:
-        - Write
   - type: Boombox
   - type: ItemSlots
     slots:
       cassette_slot:
         name: Cassete
-        priority: 3
         whitelist:
           tags:
             - Cassete
       cell_slot:
         name: power-cell-slot-component-slot-name-default
-        priority: 2
-        startingItem: PowerCellHyper
+        startingItem: PowerCellSmall
       dogtag_slot:
         name: Dogtag
-        priority: 1
-#        startingItem: ClothingNeckDogtagBandit
+        startingItem: ClothingNeckDogtagBrigand
         whitelist:
           tags:
             - Dogtag
-  - type: PointLight
-    enabled: false
-    radius: 5
-    energy: 2.5
-    netsync: false # stalker-en-changes-end
 
 - type: entity
   parent: BaseStalkerPDA
   id: DolgPDA
-  name: КПК Авангарда
+  name: КПК Долга
   description: Объединены общей сетью и позволяют обмениваться информацией.
   components:
   - type: PdaBorderColor
@@ -415,30 +312,14 @@
       enum.PdaVisuals.PdaType:
         !type:String
         dolg_on
-  - type: Pda # stalker-en-changes-start
-    penSlot:
-      startingItem: Pen
-      priority: 4
-      whitelist:
-        tags:
-        - Write
-  - type: Boombox
   - type: ItemSlots
     slots:
-      cassette_slot:
-        name: Cassete
-        priority: 3
-        whitelist:
-          tags:
-            - Cassete
       cell_slot:
         name: power-cell-slot-component-slot-name-default
-        priority: 2
-        startingItem: PowerCellHyper
+        startingItem: PowerCellSmall
       dogtag_slot:
         name: Dogtag
-        priority: 1
-#        startingItem: ClothingNeckDogtagDuty
+        startingItem: ClothingNeckDogtagStalker
         whitelist:
           tags:
             - Dogtag
@@ -446,12 +327,12 @@
     enabled: false
     radius: 5
     energy: 2.5
-    netsync: false # stalker-en-changes-end
+    netsync: false
 
 - type: entity
   parent: BaseStalkerPDA
   id: FreedomPDA
-  name: КПК «PCZI»
+  name: КПК «Свободы»
   description: Объединены общей сетью и позволяют обмениваться информацией. КПК пропитан запахом дешевого протвейна и канабиса.
   components:
   - type: PdaBorderColor
@@ -463,38 +344,17 @@
       enum.PdaVisuals.PdaType:
         !type:String
         svo_on
-  - type: Pda # stalker-en-changes-start
-    penSlot:
-      startingItem: Pen
-      priority: 4
-      whitelist:
-        tags:
-        - Write
-  - type: Boombox
   - type: ItemSlots
     slots:
-      cassette_slot:
-        name: Cassete
-        priority: 3
-        whitelist:
-          tags:
-            - Cassete
       cell_slot:
         name: power-cell-slot-component-slot-name-default
-        priority: 2
-        startingItem: PowerCellHyper
+        startingItem: PowerCellSmall
       dogtag_slot:
         name: Dogtag
-        priority: 1
-#        startingItem: ClothingNeckDogtagFreedom
+        startingItem: ClothingNeckDogtagStalker
         whitelist:
           tags:
             - Dogtag
-  - type: PointLight
-    enabled: false
-    radius: 5
-    energy: 2.5
-    netsync: false # stalker-en-changes-end
 
 - type: entity
   parent: BaseStalkerPDA
@@ -520,38 +380,18 @@
     tags:
     - GPS
     - Flashlight
-  - type: Pda # stalker-en-changes-start
-    penSlot:
-      startingItem: Pen
-      priority: 4
-      whitelist:
-        tags:
-        - Write
-  - type: Boombox
   - type: ItemSlots
     slots:
-      cassette_slot:
-        name: Cassete
-        priority: 3
-        whitelist:
-          tags:
-            - Cassete
       cell_slot:
         name: power-cell-slot-component-slot-name-default
-        priority: 2
-        startingItem: PowerCellHyper
+        startingItem: PowerCellSmall
       dogtag_slot:
         name: Dogtag
-        priority: 1
-#        startingItem: ClothingNeckDogtagClearSky
+        startingItem: ClothingNeckDogtagStalker
         whitelist:
           tags:
             - Dogtag
-  - type: PointLight
-    enabled: false
-    radius: 5
-    energy: 2.5
-    netsync: false # stalker-en-changes-end
+
 
 - type: entity
   parent: BaseStalkerPDA
@@ -569,30 +409,14 @@
         svo_on
   - type: PdaBorderColor
     borderColor: "#285714"
-  - type: Pda # stalker-en-changes-start
-    penSlot:
-      startingItem: Pen
-      priority: 4
-      whitelist:
-        tags:
-        - Write
-  - type: Boombox
   - type: ItemSlots
     slots:
-      cassette_slot:
-        name: Cassete
-        priority: 3
-        whitelist:
-          tags:
-            - Cassete
       cell_slot:
         name: power-cell-slot-component-slot-name-default
-        priority: 2
-        startingItem: PowerCellHyper
+        startingItem: PowerCellSmall
       dogtag_slot:
         name: Dogtag
-        priority: 1
-#        startingItem: ClothingNeckDogtagMilitary
+        startingItem: ClothingNeckDogtagOfficial
         whitelist:
           tags:
             - Dogtag
@@ -600,7 +424,8 @@
     enabled: false
     radius: 5
     energy: 2.5
-    netsync: false # stalker-en-changes-end
+    netsync: false
+
 
 - type: entity
   parent: BaseStalkerPDA
@@ -617,38 +442,17 @@
       enum.PdaVisuals.PdaType:
         !type:String
         pilgrim_on
-  - type: Pda # stalker-en-changes-start
-    penSlot:
-      startingItem: Pen
-      priority: 4
-      whitelist:
-        tags:
-        - Write
-  - type: Boombox
   - type: ItemSlots
     slots:
-      cassette_slot:
-        name: Cassete
-        priority: 3
-        whitelist:
-          tags:
-            - Cassete
       cell_slot:
         name: power-cell-slot-component-slot-name-default
-        priority: 2
-        startingItem: PowerCellHyper
+        startingItem: PowerCellSmall
       dogtag_slot:
         name: Dogtag
-        priority: 1
-#        startingItem: ClothingNeckDogtagLoner
+        startingItem: ClothingNeckDogtagPilgrim
         whitelist:
           tags:
             - Dogtag
-  - type: PointLight
-    enabled: false
-    radius: 5
-    energy: 2.5
-    netsync: false # stalker-en-changes-end
 
 - type: entity
   parent: BaseStalkerPDA
@@ -656,7 +460,7 @@
   name: КПК бойца «Монолита»
   description: Объединены общей сетью и позволяют обмениваться информацией.
   components:
-#  - type: Unremoveable
+  - type: Unremoveable
   - type: PdaBorderColor
     borderColor: "#797B80"
   - type: Icon
@@ -666,42 +470,23 @@
       enum.PdaVisuals.PdaType:
         !type:String
         mono_on
-  - type: Pda # stalker-en-changes-start
-    penSlot:
-      startingItem: Pen
-      priority: 4
-      whitelist:
-        tags:
-        - Write
   - type: Boombox
   - type: ItemSlots
     slots:
       cassette_slot:
         name: Cassete
-        priority: 3
         whitelist:
           tags:
             - Cassete
       cell_slot:
         name: power-cell-slot-component-slot-name-default
-        priority: 2
-        startingItem: PowerCellHyper
+        startingItem: PowerCellSmall
       dogtag_slot:
         name: Dogtag
-        priority: 1
-#        startingItem: ClothingNeckDogtagMonolith
+        startingItem: ClothingNeckDogtagBrigand
         whitelist:
           tags:
             - Dogtag
-  - type: PersonalDamage # EN as a treat
-    damage:
-      types:
-        Radiation: 1
-  - type: PointLight
-    enabled: false
-    radius: 5
-    energy: 2.5
-    netsync: false # stalker-en-changes-end
 
 - type: entity
   parent: BaseStalkerPDA
@@ -718,30 +503,19 @@
       enum.PdaVisuals.PdaType:
         !type:String
         band_on
-  - type: Pda # stalker-en-changes-start
-    penSlot:
-      startingItem: Pen
-      priority: 4
-      whitelist:
-        tags:
-        - Write
-  - type: Boombox
   - type: ItemSlots
     slots:
       cassette_slot:
         name: Cassete
-        priority: 3
         whitelist:
           tags:
             - Cassete
       cell_slot:
         name: power-cell-slot-component-slot-name-default
-        priority: 2
-        startingItem: PowerCellHyper
+        startingItem: PowerCellSmall
       dogtag_slot:
         name: Dogtag
-        priority: 1
-#        startingItem: ClothingNeckDogtagLoner
+        startingItem: ClothingNeckDogtagBrigand
         whitelist:
           tags:
             - Dogtag
@@ -750,8 +524,3 @@
     delay: 1
     offset: 14
     useInHand: true
-  - type: PointLight
-    enabled: false
-    radius: 5
-    energy: 2.5
-    netsync: false # stalker-en-changes-end

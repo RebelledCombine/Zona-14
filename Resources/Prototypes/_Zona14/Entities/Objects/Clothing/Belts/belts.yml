@@ -24,3 +24,25 @@
       state: icon
     - type: Clothing
       sprite: _Stalker/Objects/Clothing/belt/belt_merc_loner_holster.rsi
+
+# Z14 Crafter Bag — areaInsert, blacklist, Ginormous size
+- type: entity
+  parent: ClothingBeltCrafterStalker
+  id: Z14ClothingBeltCrafterStalker
+  suffix: Z14
+  categories: [ Zona14 ]
+  components:
+  - type: Storage
+    areaInsert: true
+    maxItemSize: Normal
+    grid:
+    - 0,0,9,9
+    blacklist:
+      tags:
+      - STArtifact
+      - Khabar
+    whitelist:
+      components:
+        - Material
+  - type: Item
+    size: Ginormous
