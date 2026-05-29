@@ -1,3 +1,4 @@
+# Zona14: belt name corrections ported from Roland410/omgbalance
 ent-ClothingBeltTarzanBlack = RPS "Tarzan" Black
     .desc = A very useful black RPS for carrying everything from walkie-talkies to magazines. It is especially popular among the stalker community.
     .suffix = ST
