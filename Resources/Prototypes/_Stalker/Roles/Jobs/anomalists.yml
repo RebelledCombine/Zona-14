@@ -61,7 +61,7 @@
 - type: startingGear
   id: AnomalistGear
   equipment:
-    id: AnomalistPDA
+    id: Z14AnomalistPDA # Zona14: AnomalistPDA<Z14AnomalistPDA
     belt: ClothingBeltBandolierStalker
     torso: ClothingTorsoAnomalistTechnician
     eyes: ClothingEyesGogglesAnomalist

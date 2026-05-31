@@ -29,7 +29,7 @@
 - type: startingGear
   id: PoliceGear
   equipment:
-    id: StalkerPDA
+    id: Z14StalkerPDA # Zona14: StalkerPDA<Z14StalkerPDA
     torso: ClothingTorsoJacketPolice
     legs: ClothingLegsJeansPolice
     shoes: STClothingShoesBootsCombatFilled

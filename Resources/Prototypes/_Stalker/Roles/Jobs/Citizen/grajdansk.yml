@@ -150,7 +150,7 @@
 - type: startingGear
   id: MayorCityGear
   equipment:
-    id: StalkerPDA
+    id: Z14StalkerPDA # Zona14: StalkerPDA<Z14StalkerPDA
     shoes: ClothingShoesBootsLeather
     legs: ClothingLegsJeansBlackCargo
     torso: ClothingTorsoSweaterStalkerGreen
@@ -158,7 +158,7 @@
 - type: startingGear
   id: ProkurorGear
   equipment:
-    id: StalkerPDA
+    id: Z14StalkerPDA # Zona14: StalkerPDA<Z14StalkerPDA
     shoes: ClothingShoesBootsLeather
     legs: ClothingLegsJeansBlackCargo
     torso: ClothingTorsoSweaterStalkerGreen
@@ -166,7 +166,7 @@
 - type: startingGear
   id: MagistrateGear
   equipment:
-    id: StalkerPDA
+    id: Z14StalkerPDA # Zona14: StalkerPDA<Z14StalkerPDA
     shoes: ClothingShoesBootsLeather
     legs: ClothingLegsJeansBlackCargo
     torso: ClothingTorsoSweaterStalkerGreen
@@ -174,7 +174,7 @@
 - type: startingGear
   id: PriestGear
   equipment:
-    id: StalkerPDA
+    id: Z14StalkerPDA # Zona14: StalkerPDA<Z14StalkerPDA
     shoes: ClothingShoesBootsLeather
     legs: ClothingLegsJeansBlackCargo
     torso: ClothingTorsoSweaterStalkerGreen
@@ -182,7 +182,7 @@
 - type: startingGear
   id: StalkerBartenderGear
   equipment:
-    id: StalkerPDA
+    id: Z14StalkerPDA # Zona14: StalkerPDA<Z14StalkerPDA
     shoes: ClothingShoesBootsLeather
     legs: ClothingLegsJeansBlackCargo
     torso: ClothingTorsoSweaterStalkerGreen

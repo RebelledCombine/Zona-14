@@ -1,0 +1,317 @@
+# Z14 PDA overrides — balance changes moved from _Stalker/pda.yml
+# Each entity parents from the original and adds only the Roland-branch delta.
+
+# BaseStalkerPDA: pen slot priority fix + toggleOnInteract:false + PointLight upgrade
+- type: entity
+  abstract: true
+  parent: BaseStalkerPDA
+  id: Z14BaseStalkerPDA
+  suffix: Z14
+  categories: [ HideSpawnMenu, Zona14 ]
+  components:
+  - type: Pda
+    paiSlot:
+      priority: -2
+      whitelist:
+        components:
+          - PAI
+    penSlot:
+      priority: 4
+      whitelist:
+        tags:
+          - Write
+    idSlot:
+      name: ID Card
+      ejectSound: /Audio/Machines/id_swipe.ogg
+      insertSound: /Audio/Machines/id_insert.ogg
+      whitelist:
+        components:
+          - IdCard
+  - type: Boombox
+  - type: ItemSlots
+    slots:
+      cassette_slot:
+        name: Cassete
+        priority: 3
+        whitelist:
+          tags:
+            - Cassete
+  - type: HandheldLight
+    addPrefix: false
+    blinkingBehaviourId: blinking
+    radiatingBehaviourId: radiating
+    toggleOnInteract: false
+  - type: PointLight
+    enabled: false
+    mask: /Textures/Effects/LightMasks/cone.png
+    autoRot: true
+    radius: 5
+    energy: 2.5
+    netsync: false
+
+# StalkerPDA: add Boombox, HandheldGPS, GPS tag, cassette_slot, PointLight, PowerCellHyper
+- type: entity
+  parent: StalkerPDA
+  id: Z14StalkerPDA
+  suffix: Z14
+  categories: [ Zona14 ]
+  components:
+  - type: Boombox
+  - type: HandheldGPS
+  - type: Tag
+    tags:
+    - GPS
+    - Flashlight
+  - type: HandheldLight
+    addPrefix: false
+    blinkingBehaviourId: blinking
+    radiatingBehaviourId: radiating
+    toggleOnInteract: false
+  - type: PointLight
+    enabled: false
+    mask: /Textures/Effects/LightMasks/cone.png
+    autoRot: true
+    radius: 5
+    energy: 2.5
+    netsync: false
+  - type: ItemSlots
+    slots:
+      cassette_slot:
+        name: Cassete
+        priority: 3
+        whitelist:
+          tags:
+            - Cassete
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+        startingItem: PowerCellHyper
+      dogtag_slot:
+        name: Dogtag
+        startingItem: ClothingNeckDogtagStalker
+        whitelist:
+          tags:
+            - Dogtag
+
+# STSeraphimPDA: PowerCellHyper only
+- type: entity
+  parent: STSeraphimPDA
+  id: Z14STSeraphimPDA
+  suffix: Z14
+  categories: [ Zona14 ]
+  components:
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+        startingItem: PowerCellHyper
+      dogtag_slot:
+        name: Dogtag
+        startingItem: ClothingNeckDogtagStalker
+        whitelist:
+          tags:
+            - Dogtag
+
+# AnomalistPDA: PowerCellHyper only
+- type: entity
+  parent: AnomalistPDA
+  id: Z14AnomalistPDA
+  suffix: Z14
+  categories: [ Zona14 ]
+  components:
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+        startingItem: PowerCellHyper
+      dogtag_slot:
+        name: Dogtag
+        startingItem: ClothingNeckDogtagStalker
+        whitelist:
+          tags:
+            - Dogtag
+
+# ScientistPDA: PowerCellHyper only
+- type: entity
+  parent: ScientistPDA
+  id: Z14ScientistPDA
+  suffix: Z14
+  categories: [ Zona14 ]
+  components:
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+        startingItem: PowerCellHyper
+      dogtag_slot:
+        name: Dogtag
+        startingItem: ClothingNeckDogtagOfficial
+        whitelist:
+          tags:
+            - Dogtag
+
+# BandPDA: already has Boombox+cassette in master — only PowerCellHyper needed
+- type: entity
+  parent: BandPDA
+  id: Z14BandPDA
+  suffix: Z14
+  categories: [ Zona14 ]
+  components:
+  - type: ItemSlots
+    slots:
+      cassette_slot:
+        name: Cassete
+        whitelist:
+          tags:
+            - Cassete
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+        startingItem: PowerCellHyper
+      dogtag_slot:
+        name: Dogtag
+        startingItem: ClothingNeckDogtagBrigand
+        whitelist:
+          tags:
+            - Dogtag
+
+# DolgPDA: PointLight was already in master — only PowerCellHyper needed
+- type: entity
+  parent: DolgPDA
+  id: Z14DolgPDA
+  suffix: Z14
+  categories: [ Zona14 ]
+  components:
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+        startingItem: PowerCellHyper
+      dogtag_slot:
+        name: Dogtag
+        startingItem: ClothingNeckDogtagStalker
+        whitelist:
+          tags:
+            - Dogtag
+
+# FreedomPDA: PowerCellHyper only
+- type: entity
+  parent: FreedomPDA
+  id: Z14FreedomPDA
+  suffix: Z14
+  categories: [ Zona14 ]
+  components:
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+        startingItem: PowerCellHyper
+      dogtag_slot:
+        name: Dogtag
+        startingItem: ClothingNeckDogtagStalker
+        whitelist:
+          tags:
+            - Dogtag
+
+# ClearSkyPDA: already has HandheldGPS + GPS tag in master — only PowerCellHyper needed
+- type: entity
+  parent: ClearSkyPDA
+  id: Z14ClearSkyPDA
+  suffix: Z14
+  categories: [ Zona14 ]
+  components:
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+        startingItem: PowerCellHyper
+      dogtag_slot:
+        name: Dogtag
+        startingItem: ClothingNeckDogtagStalker
+        whitelist:
+          tags:
+            - Dogtag
+
+# MilitaryPDA: PointLight was already in master — only PowerCellHyper needed
+- type: entity
+  parent: MilitaryPDA
+  id: Z14MilitaryPDA
+  suffix: Z14
+  categories: [ Zona14 ]
+  components:
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+        startingItem: PowerCellHyper
+      dogtag_slot:
+        name: Dogtag
+        startingItem: ClothingNeckDogtagOfficial
+        whitelist:
+          tags:
+            - Dogtag
+
+# PilgrimPDA: PowerCellHyper only
+- type: entity
+  parent: PilgrimPDA
+  id: Z14PilgrimPDA
+  suffix: Z14
+  categories: [ Zona14 ]
+  components:
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+        startingItem: PowerCellHyper
+      dogtag_slot:
+        name: Dogtag
+        startingItem: ClothingNeckDogtagPilgrim
+        whitelist:
+          tags:
+            - Dogtag
+
+# MonolithPDA: already has Boombox+cassette in master — only PowerCellHyper needed
+- type: entity
+  parent: MonolithPDA
+  id: Z14MonolithPDA
+  suffix: Z14
+  categories: [ Zona14 ]
+  components:
+  - type: ItemSlots
+    slots:
+      cassette_slot:
+        name: Cassete
+        whitelist:
+          tags:
+            - Cassete
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+        startingItem: PowerCellHyper
+      dogtag_slot:
+        name: Dogtag
+        startingItem: ClothingNeckDogtagBrigand
+        whitelist:
+          tags:
+            - Dogtag
+
+# JabaPDA: already has cassette in master — only PowerCellHyper needed
+- type: entity
+  parent: JabaPDA
+  id: Z14JabaPDA
+  suffix: Z14
+  categories: [ Zona14 ]
+  components:
+  - type: ItemSlots
+    slots:
+      cassette_slot:
+        name: Cassete
+        whitelist:
+          tags:
+            - Cassete
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+        startingItem: PowerCellHyper
+      dogtag_slot:
+        name: Dogtag
+        startingItem: ClothingNeckDogtagBrigand
+        whitelist:
+          tags:
+            - Dogtag

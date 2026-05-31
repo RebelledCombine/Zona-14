@@ -44,7 +44,7 @@
   - name: shop-category-storage-and-containers
     priority: 5
     items:
-      ClothingBackpackDuffelBlackTacticStalker: 20
+      Z14ClothingBackpackDuffelBlackTacticStalker: 20 # Zona14: ClothingBackpackDuffelBlackTacticStalker<Z14ClothingBackpackDuffelBlackTacticStalker
   - name: shop-category-medicine
     priority: 10
     items:

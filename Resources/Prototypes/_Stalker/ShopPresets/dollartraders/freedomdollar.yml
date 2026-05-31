@@ -51,8 +51,8 @@
     - name: shop-category-storage-and-containers
       priority: 5
       items:
-        ClothingBackpackDuffelOliveTacticStalker: 40
-        ClothingBackpackDuffelMilitaryOlive: 40
+        Z14ClothingBackpackDuffelOliveTacticStalker: 40 # Zona14: ClothingBackpackDuffelOliveTacticStalker<Z14ClothingBackpackDuffelOliveTacticStalker
+        Z14ClothingBackpackDuffelMilitaryOlive: 40 # Zona14: ClothingBackpackDuffelMilitaryOlive<Z14ClothingBackpackDuffelMilitaryOlive
         ClothingBeltWebbingDoubleFreedomVeterSmall: 10
 
     - name: shop-category-raincoats-and-gasmasks

@@ -59,7 +59,7 @@
 - type: startingGear
   id: DoctorStalkerGear
   equipment:
-    id: StalkerPDA
+    id: Z14StalkerPDA # Zona14: StalkerPDA<Z14StalkerPDA
     shoes: ClothingShoesColorWhite
     legs: ClothingLegsJeansBlackCargo
     torso: ClothingTorsoSweaterStalkerGreen
