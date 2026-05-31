@@ -96,12 +96,12 @@
 - type: startingGear
   id: BandGear
   equipment:
-    id: Z14BandPDA # Zona14: BandPDA<Z14BandPDA
+    id: BandPDA
     dogtag: ClothingNeckDogtagBandit
 - type: startingGear
   id: BandHeadGear
   equipment:
-    id: Z14BandPDA # Zona14: BandPDA<Z14BandPDA
+    id: BandPDA
     dogtag: ClothingNeckDogtagBanditPahan # EN
 
 - type: stBand

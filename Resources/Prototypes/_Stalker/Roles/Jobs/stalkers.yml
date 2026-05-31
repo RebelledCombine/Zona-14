@@ -130,7 +130,7 @@
 - type: startingGear
   id: StalkerGear
   equipment:
-    id: Z14StalkerPDA # Zona14: StalkerPDA<Z14StalkerPDA
+    id: StalkerPDA
     dogtag: ClothingNeckDogtagLoner # EN
 
 - type: job

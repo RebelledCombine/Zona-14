@@ -41,7 +41,7 @@
 - type: startingGear
   id: StalkerClownGear
   equipment:
-    id: Z14StalkerPDA # Zona14: StalkerPDA<Z14StalkerPDA
+    id: StalkerPDA
     belt: ClothingBeltStorageWaistbag
     mask: ClothingMaskClown
     torso: ClothingTorsoSweaterStalkerGreen

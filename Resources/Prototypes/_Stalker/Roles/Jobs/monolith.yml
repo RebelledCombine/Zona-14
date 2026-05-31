@@ -101,7 +101,7 @@
 - type: startingGear
   id: MonolithGear
   equipment:
-    id: Z14MonolithPDA # Zona14: MonolithPDA<Z14MonolithPDA
+    id: MonolithPDA
     ears: STClothingChip
     torso: ClothingTorsoTurtlenecksMonolithCamouflage
     legs: ClothingLegsJeansMonolithCamouflage
@@ -111,7 +111,7 @@
 - type: startingGear
   id: MonolithGearFre
   equipment:
-    id: Z14MonolithPDA # Zona14: MonolithPDA<Z14MonolithPDA
+    id: MonolithPDA
     ears: STClothingChip
     torso: ClothingTorsoTurtlenecksMonolithCamouflage
     legs: ClothingLegsJeansMonolithCamouflage

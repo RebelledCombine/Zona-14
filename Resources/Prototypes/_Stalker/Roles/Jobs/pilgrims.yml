@@ -80,7 +80,7 @@
 - type: startingGear
   id: PilgrimPostulantGear
   equipment:
-    id: Z14PilgrimPDA # Zona14: PilgrimPDA<Z14PilgrimPDA
+    id: PilgrimPDA
     cloak: ClothingNeckDogtagPilgrim
     shoes: ClothingShoesBootsLaceup
     legs: ClothingLegsJeansBlackCargo
@@ -90,7 +90,7 @@
 - type: startingGear
   id: PilgrimMonkGear
   equipment:
-    id: Z14PilgrimPDA # Zona14: PilgrimPDA<Z14PilgrimPDA
+    id: PilgrimPDA
     cloak: ClothingNeckCloakCassock
     shoes: ClothingShoesBootsLaceup
     legs: ClothingLegsJeansBlackCargo

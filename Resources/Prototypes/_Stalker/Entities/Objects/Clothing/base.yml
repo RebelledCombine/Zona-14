@@ -27,7 +27,7 @@
   - type: RepositoryItem
     categoryName: Экипировка
   - type: PullDoAfter
-    pullTime: 10  # Zona14: 6<10
+    pullTime: 6
 
 - type: entity
   parent: ClothingMaskGas
@@ -56,7 +56,7 @@
   - type: RepositoryItem
     categoryName: Броня
   - type: PullDoAfter
-    pullTime: 10  # Zona14: 6<10
+    pullTime: 6
 
 - type: entity
   parent: STClothingOuterBaseLarge
@@ -208,8 +208,8 @@
   - type: ToggleableLightVisuals
   - type: PointLight
     enabled: false
-    radius: 5  # Zona14: 3<5
-    energy: 2.5  # Zona14: 2<2.5
+    radius: 3
+    energy: 2
     mask: /Textures/Effects/LightMasks/cone.png
     autoRot: true
     netsync: false
@@ -326,7 +326,7 @@
   abstract: true
   components:
     - type: PullDoAfter
-      pullTime: 5  # Zona14: 3<5
+      pullTime: 3
     - type: ClothingSpeedModifier
       walkModifier: 1
       sprintModifier: 1

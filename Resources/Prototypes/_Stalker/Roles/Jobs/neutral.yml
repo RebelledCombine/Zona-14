@@ -42,8 +42,7 @@
 - type: startingGear
   id: NeutralGear
   equipment:
-    id: Z14StalkerPDA # Zona14: StalkerPDA<Z14StalkerPDA
-    neck: ClothingNeckDogtagNeutral  # Zona14: added
+    id: StalkerPDA
     torso: ClothingTorsoNeutral
     legs: ClothingLegsJeansNeutral
     shoes: STClothingShoesBootsCombatFilled

@@ -182,7 +182,7 @@
     legs: ClothingLegsJeansUa
     torso: ClothingTorsoTurtlenecksUa
     shoes: STClothingShoesBootsCombatFilled
-    id: Z14MilitaryPDA # Zona14: MilitaryPDA<Z14MilitaryPDA
+    id: MilitaryPDA
     dogtag: ClothingNeckDogtagMilitary
 
 - type: startingGear
@@ -191,7 +191,7 @@
     legs: ClothingLegsJeansUa
     torso: ClothingTorsoTurtlenecksUa
     shoes: STClothingShoesBootsCombatFilled
-    id: Z14MilitaryPDA # Zona14: MilitaryPDA<Z14MilitaryPDA
+    id: MilitaryPDA
     dogtag: ClothingNeckDogtagMilitary
 
 - type: startingGear
@@ -200,13 +200,13 @@
     legs: ClothingLegsJeansUa
     torso: ClothingTorsoTurtlenecksUa
     shoes: STClothingShoesBootsCombatFilled
-    id: Z14MilitaryPDA # Zona14: MilitaryPDA<Z14MilitaryPDA
+    id: MilitaryPDA
     dogtag: ClothingNeckDogtagMilitaryCommander
 
 - type: startingGear
   id: MilitarySpecGear
   equipment:
-    id: Z14MilitaryPDA # Zona14: MilitaryPDA<Z14MilitaryPDA
+    id: MilitaryPDA
     legs: ClothingLegsJeansGreenCargo
     torso: ClothingTorsoTurtlenecksMilitary
     shoes: STClothingShoesBootsCombatFilled
@@ -215,10 +215,10 @@
 - type: startingGear
   id: OksopSpecOps
   equipment:
-    id: Z14MilitaryPDA # Zona14: MilitaryPDA<Z14MilitaryPDA
+    id: MilitaryPDA
     belt: ClothingBeltMercWebbing
     mask: ClothingMaskNeckBalaklava3
-    back: Z14ClothingBackpackDuffelCommonStalker # Zona14: ClothingBackpackDuffelCommonStalker<Z14ClothingBackpackDuffelCommonStalker
+    back: ClothingBackpackDuffelCommonStalker
     legs: ClothingLegsJeansGreenCargo
     torso: ClothingTorsoTurtlenecksMilitary
     shoes: ClothingShoesBootsCombat

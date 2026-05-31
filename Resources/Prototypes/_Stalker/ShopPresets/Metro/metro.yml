@@ -74,7 +74,7 @@
       items:
         ClothingBackpackMercStalker: 30
         STOxygenTanksZarya: 15
-        Z14ClothingBackpackDuffelCommonStalker: 40 # Zona14: ClothingBackpackDuffelCommonStalker<Z14ClothingBackpackDuffelCommonStalker
+        ClothingBackpackDuffelCommonStalker: 40
         ClothingBackpackStalkerZaryaBlack: 35
         ClothingBackpackTownBlackStalker: 10
         ClothingBackpackTacticOliveStalker: 25

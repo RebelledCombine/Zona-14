@@ -44,7 +44,7 @@
 - type: startingGear
   id: JurGear
   equipment:
-    id: Z14StalkerPDA # Zona14: StalkerPDA<Z14StalkerPDA
+    id: StalkerPDA
     dogtag: ClothingNeckDogtagJournalist
     
 - type: stBand

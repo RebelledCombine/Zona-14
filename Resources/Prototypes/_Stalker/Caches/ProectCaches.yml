@@ -59,7 +59,7 @@
         - id: 6mmBuckshotBox
         - id: 6mmBuckshotBox
         - id: ClothingHeadHelmetLight
-        - id: Z14ClothingBackpackDuffelMilitaryOlive # Zona14: ClothingBackpackDuffelMilitaryOlive<Z14ClothingBackpackDuffelMilitaryOlive
+        - id: ClothingBackpackDuffelMilitaryOlive
       sound:
         path: /Audio/Effects/unwrap.ogg
 
@@ -103,7 +103,7 @@
         - id: GeigerCounter
         - id: ZoneArtifactDetectorResponse
         - id: STSkinsKitProject
-        - id: Z14ClothingBackpackDuffelMilitaryOlive # Zona14: ClothingBackpackDuffelMilitaryOlive<Z14ClothingBackpackDuffelMilitaryOlive
+        - id: ClothingBackpackDuffelMilitaryOlive
         - id: BoxArtcont
         - id: BoxArtcont
       sound:

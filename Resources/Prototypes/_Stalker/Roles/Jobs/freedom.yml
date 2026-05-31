@@ -93,13 +93,13 @@
 - type: startingGear
   id: FreedomGear
   equipment:
-    id: Z14FreedomPDA # Zona14: FreedomPDA<Z14FreedomPDA
+    id: FreedomPDA
     dogtag: ClothingNeckDogtagFreedom # EN
 
 - type: startingGear
   id: FreedomGearHead
   equipment:
-    id: Z14FreedomPDA # Zona14: FreedomPDA<Z14FreedomPDA
+    id: FreedomPDA
     dogtag: ClothingNeckDogtagFreedomAtaman # EN
 
 - type: stBand

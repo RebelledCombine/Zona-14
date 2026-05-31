@@ -73,7 +73,7 @@
 - type: startingGear
   id: StalkerZavetGear
   equipment:
-    id: Z14StalkerPDA # Zona14: StalkerPDA<Z14StalkerPDA
+    id: StalkerPDA
     torso: ClothingTorsoTurtlenecksCovenantHead
     legs: ClothingLegsJeansBlackCargo
     shoes: ClothingShoesBootsWork
@@ -81,7 +81,7 @@
 - type: startingGear
   id: StalkerZavetLeaderGear
   equipment:
-    id: Z14StalkerPDA # Zona14: StalkerPDA<Z14StalkerPDA
+    id: StalkerPDA
     torso: ClothingTorsoTurtlenecksCovenant
     legs: ClothingLegsJeansBrownCargo
     shoes: ClothingShoesBootsWork

@@ -73,7 +73,7 @@
 - type: startingGear
   id: STEvolverSymbioteMediumGear
   equipment:
-    id: Z14BandPDA # Zona14: BandPDA<Z14BandPDA
+    id: BandPDA
     torso: STClothingTorsoJacketGray
     legs: STClothingLegsPantsGray
     shoes: ClothingShoesSwat
@@ -81,7 +81,7 @@
 - type: startingGear
   id: STEvolverSymbioteArchonGear
   equipment:
-    id: Z14BandPDA # Zona14: BandPDA<Z14BandPDA
+    id: BandPDA
     torso: STClothingTorsoJacketGray
     legs: STClothingLegsPantsGray
     shoes: ClothingShoesSwat

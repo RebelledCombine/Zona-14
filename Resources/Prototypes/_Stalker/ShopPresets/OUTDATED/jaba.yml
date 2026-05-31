@@ -154,8 +154,8 @@
         ClothingBackpackTacticBlackStalker: 450 # T2
         ClothingBackpackMercStalker: 850 # T3
         ClothingBackpackDuffelHikingCommon: 900
-        Z14ClothingBackpackDuffelBlackTacticStalker: 1300 # Zona14: ClothingBackpackDuffelBlackTacticStalker<Z14ClothingBackpackDuffelBlackTacticStalker
-        Z14ClothingBackpackDuffelSuperStalker: 2900 # T4.5 # Zona14: ClothingBackpackDuffelSuperStalker<Z14ClothingBackpackDuffelSuperStalker
+        ClothingBackpackDuffelBlackTacticStalker: 1300
+        ClothingBackpackDuffelSuperStalker: 2900 # T4.5
           # Belts
         ClothingBeltBandolierStalker: 20 # T1 - PVE
         ClothingBeltTarzanBlack: 200 # T1 - PVP

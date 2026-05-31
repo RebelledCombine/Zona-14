@@ -45,7 +45,7 @@
 - type: startingGear
   id: SeraphimGear
   equipment:
-    id: Z14STSeraphimPDA # Zona14: STSeraphimPDA<Z14STSeraphimPDA
+    id: STSeraphimPDA
     neck: ClothingStalkerNeckTokenSeraphim
     mask: STClothingMaskKufei
 
@@ -102,7 +102,7 @@
 - type: startingGear
   id: SeraphimHeadGear
   equipment:
-    id: Z14STSeraphimPDA # Zona14: STSeraphimPDA<Z14STSeraphimPDA
+    id: STSeraphimPDA
     neck: ClothingStalkerNeckTokenSeraphim
     mask: STClothingMaskKufei
 - type: stBand
@@ -169,5 +169,5 @@
 - type: startingGear
   id: SeraphimCherubimGear
   equipment:
-    id: Z14STSeraphimPDA # Zona14: STSeraphimPDA<Z14STSeraphimPDA
+    id: STSeraphimPDA
     neck: ClothingStalkerNeckKulonSeraphim

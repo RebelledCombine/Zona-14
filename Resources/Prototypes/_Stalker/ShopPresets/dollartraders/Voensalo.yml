@@ -61,8 +61,8 @@
     - name: shop-category-storage-and-containers
       priority: 5
       items:
-        Z14ClothingBackpackDuffelBlackTacticStalker: 40 # Zona14: ClothingBackpackDuffelBlackTacticStalker<Z14ClothingBackpackDuffelBlackTacticStalker
-        Z14ClothingBackpackDuffelBlackMilitaryTacticStalker: 40 # Zona14: ClothingBackpackDuffelBlackMilitaryTacticStalker<Z14ClothingBackpackDuffelBlackMilitaryTacticStalker
+        ClothingBackpackDuffelBlackTacticStalker: 40
+        ClothingBackpackDuffelBlackMilitaryTacticStalker: 40
         ClothingBeltWebbingDoubleStalkerZaryaSmall: 10
 
     - name: shop-category-raincoats-and-gasmasks

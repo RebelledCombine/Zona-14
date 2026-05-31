@@ -178,7 +178,7 @@
 - type: startingGear
   id: SciGear
   equipment:
-    id: Z14ScientistPDA # Zona14: ScientistPDA<Z14ScientistPDA
+    id: ScientistPDA
     dogtag: ClothingNeckDogtagEco # EN
 
 - type: stBand
@@ -194,7 +194,7 @@
 - type: startingGear
   id: SciGear2
   equipment:
-    id: Z14ScientistPDA # Zona14: ScientistPDA<Z14ScientistPDA
+    id: ScientistPDA
     legs: ClothingLegsJeansSandCargo
     shoes: STClothingShoesBootsCombatFilled
     torso: ClothingTorsoShirtWhiteScientific
@@ -215,7 +215,7 @@
 - type: startingGear
   id: SciGear3
   equipment:
-    id: Z14ScientistPDA # Zona14: ScientistPDA<Z14ScientistPDA
+    id: ScientistPDA
     dogtag: ClothingNeckDogtagEcoLeader # EN
     outerClothing: ClothingOuterCoatRD
     head: ClothingHeadBeretUN

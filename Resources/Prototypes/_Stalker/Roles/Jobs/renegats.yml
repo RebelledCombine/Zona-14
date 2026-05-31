@@ -40,7 +40,7 @@
 - type: startingGear
   id: ReneGear
   equipment:
-    id: Z14BandPDA # Zona14: BandPDA<Z14BandPDA
+    id: BandPDA
     dogtag: ClothingNeckDogtagRenegade # EN
 
 - type: stBand

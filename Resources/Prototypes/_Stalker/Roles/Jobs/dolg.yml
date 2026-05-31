@@ -91,13 +91,13 @@
 - type: startingGear
   id: DolgGear
   equipment:
-    id: Z14DolgPDA # Zona14: DolgPDA<Z14DolgPDA
+    id: DolgPDA
     dogtag: ClothingNeckDogtagDuty
 
 - type: startingGear
   id: DolgGearHead
   equipment:
-    id: Z14DolgPDA # Zona14: DolgPDA<Z14DolgPDA
+    id: DolgPDA
     dogtag: ClothingNeckDogtagDutyCommander
 
 - type: stBand

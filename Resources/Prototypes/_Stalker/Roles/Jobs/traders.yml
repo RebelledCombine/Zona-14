@@ -35,7 +35,7 @@
 - type: startingGear
   id: TraderGear
   equipment:
-    id: Z14StalkerPDA # Zona14: StalkerPDA<Z14StalkerPDA
+    id: StalkerPDA
     legs: ClothingLegsJeansSandCargo
     torso: ClothingTorsoTurtlenecksDeserterCamouflage
     shoes: ClothingShoesAerostatic

@@ -71,7 +71,7 @@
 - type: startingGear
   id: MilitiaGear
   equipment:
-    id: Z14StalkerPDA # Zona14: StalkerPDA<Z14StalkerPDA
+    id: StalkerPDA
     torso: ClothingTorsoSweaterStalkerGreen
     legs: ClothingLegsJeansStalker
     shoes: ClothingShoesBootsCombat
@@ -81,7 +81,7 @@
 - type: startingGear
   id: MilitiaCommanderGear
   equipment:
-    id: Z14StalkerPDA # Zona14: StalkerPDA<Z14StalkerPDA
+    id: StalkerPDA
     torso: ClothingTorsoTurtlenecksBlackTurtleneck
     legs: ClothingLegsJeansStalker
     shoes: ClothingShoesBootsMercFilled

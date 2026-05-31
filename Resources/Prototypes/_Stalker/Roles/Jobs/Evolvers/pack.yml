@@ -38,7 +38,7 @@
 - type: startingGear
   id: STEvolverPackFangGear
   equipment:
-    id: Z14BandPDA # Zona14: BandPDA<Z14BandPDA
+    id: BandPDA
     torso: STClothingTorsoJacketGray
     legs: STClothingLegsPantsGray
     shoes: ClothingShoesSwat
@@ -84,7 +84,7 @@
 - type: startingGear
   id: STEvolverPackAlphaGear
   equipment:
-    id: Z14BandPDA # Zona14: BandPDA<Z14BandPDA
+    id: BandPDA
     neck: ClothingNeckDogtagBrigand
     eyes: ClothingEyesGlassesSunglasses
     torso: STClothingTorsoJacketGray

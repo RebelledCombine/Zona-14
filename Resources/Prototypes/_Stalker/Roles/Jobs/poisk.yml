@@ -37,7 +37,7 @@
 - type: startingGear
   id: PoiskGear
   equipment:
-    id: Z14StalkerPDA # Zona14: StalkerPDA<Z14StalkerPDA
+    id: StalkerPDA
     torso: ClothingTorsoSweaterStalkerGreen
     legs: ClothingLegsJeansBlue
     shoes: STClothingShoesBootsCombatFilled
