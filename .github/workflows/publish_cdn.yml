@@ -48,6 +48,15 @@ jobs:
       run: |
         cd RobustToolbox
         git fetch --depth=1
+
+    - name: Cache NuGet packages
+      uses: actions/cache@v4
+      with:
+        path: ~/.nuget/packages
+        key: ${{ runner.os }}-nuget-${{ hashFiles('**/Directory.Packages.props', '**/*.csproj') }}
+        restore-keys: |
+          ${{ runner.os }}-nuget-
+
     - name: Install dependencies
       run: dotnet restore
 

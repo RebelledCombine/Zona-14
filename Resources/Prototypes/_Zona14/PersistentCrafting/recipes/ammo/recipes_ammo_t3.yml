@@ -1,7 +1,6 @@
 # MARK: T3 Ammo Recipes
 - type: persistentCraftRecipe
   id: Z14PersistentCraftAmmo_newrecipe545PCBoxCink
-  categories: [ Zona14 ]
   name: persistent-craft-recipe-generic-name
   description: persistent-craft-recipe-generic-desc
   displayProto: Z14545PCBox
@@ -21,7 +20,6 @@
 
 - type: persistentCraftRecipe
   id: Z14PersistentCraftAmmo_newrecipe918PBMBoxCink
-  categories: [ Zona14 ]
   name: persistent-craft-recipe-generic-name
   description: persistent-craft-recipe-generic-desc
   displayProto: Z14918PBMBox
@@ -41,7 +39,6 @@
 
 - type: persistentCraftRecipe
   id: Z14PersistentCraftAmmo_newrecipe919PBMBoxCink
-  categories: [ Zona14 ]
   name: persistent-craft-recipe-generic-name
   description: persistent-craft-recipe-generic-desc
   displayProto: Z14919PBMBox
@@ -61,7 +58,6 @@
 
 - type: persistentCraftRecipe
   id: Z14PersistentCraftAmmo_newrecipe556M855BoxCink
-  categories: [ Zona14 ]
   name: persistent-craft-recipe-generic-name
   description: persistent-craft-recipe-generic-desc
   displayProto: Z14556M855Box
@@ -81,7 +77,6 @@
 
 - type: persistentCraftRecipe
   id: Z14PersistentCraftAmmo_newrecipe725PSTBoxCink
-  categories: [ Zona14 ]
   name: persistent-craft-recipe-generic-name
   description: persistent-craft-recipe-generic-desc
   displayProto: Z14725PSTBox
@@ -101,7 +96,6 @@
 
 - type: persistentCraftRecipe
   id: Z14PersistentCraftAmmo_newrecipe739FMJBoxCink
-  categories: [ Zona14 ]
   name: persistent-craft-recipe-generic-name
   description: persistent-craft-recipe-generic-desc
   displayProto: Z14739FMJBox
@@ -121,7 +115,6 @@
 
 - type: persistentCraftRecipe
   id: Z14PersistentCraftAmmo_newrecipe751M80BoxCink
-  categories: [ Zona14 ]
   name: persistent-craft-recipe-generic-name
   description: persistent-craft-recipe-generic-desc
   displayProto: Z14751M80Box
@@ -141,7 +134,6 @@
 
 - type: persistentCraftRecipe
   id: Z14PersistentCraftAmmo_newrecipe45ACPAPBoxCink
-  categories: [ Zona14 ]
   name: persistent-craft-recipe-generic-name
   description: persistent-craft-recipe-generic-desc
   displayProto: Z1445ACPAPBox
@@ -161,7 +153,6 @@
 
 - type: persistentCraftRecipe
   id: Z14PersistentCraftAmmo_newrecipe754FMJBoxCink
-  categories: [ Zona14 ]
   name: persistent-craft-recipe-generic-name
   description: persistent-craft-recipe-generic-desc
   displayProto: Z14754FMJBox
@@ -181,7 +172,6 @@
 
 - type: persistentCraftRecipe
   id: Z14PersistentCraftAmmo_newrecipeShotgunFlechetteCink
-  categories: [ Zona14 ]
   name: persistent-craft-recipe-generic-name
   description: persistent-craft-recipe-generic-desc
   displayProto: ShotgunFlechette
@@ -201,7 +191,6 @@
 
 - type: persistentCraftRecipe
   id: Z14PersistentCraftAmmo_newrecipeShotgunDarttBoxCink
-  categories: [ Zona14 ]
   name: persistent-craft-recipe-generic-name
   description: persistent-craft-recipe-generic-desc
   displayProto: ShotgunDarttBox
@@ -221,7 +210,6 @@
 
 - type: persistentCraftRecipe
   id: Z14PersistentCraftAmmo_newrecipe939BPBoxCink
-  categories: [ Zona14 ]
   name: persistent-craft-recipe-generic-name
   description: persistent-craft-recipe-generic-desc
   displayProto: Z14STBox9x39PAB9

@@ -8,6 +8,10 @@ on:
       - 'Tools/_Zona14/check-conventions.sh'
       - '.github/workflows/zona14-convention.yml'
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
 jobs:
   check:
     name: Zona14 convention check

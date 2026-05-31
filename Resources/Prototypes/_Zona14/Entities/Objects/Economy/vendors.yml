@@ -31,8 +31,6 @@
 
 - type: vendingMachineInventory
   id: Z14MilitaryInventory
-  categories: [ Zona14 ]
-  suffix: Z14
   startingInventory:
     Syringe: 6
     ClothingMaskGasM40Military: 6
@@ -155,8 +153,6 @@
 
 - type: vendingMachineInventory
   id: Z14PoliceInventory
-  categories: [ Zona14 ]
-  suffix: Z14
   startingInventory:
     BoxHandcuff: 5
     PoliceAKCrate: 2
@@ -216,8 +212,6 @@
 
 - type: vendingMachineInventory
   id: Z14UNInventory
-  categories: [ Zona14 ]
-  suffix: Z14
   startingInventory:
     BoxFlare: 50
     BoxZiptie: 5
@@ -321,8 +315,6 @@
 
 - type: vendingMachineInventory
   id: Z14LaborerInventory
-  categories: [ Zona14 ]
-  suffix: Z14
   startingInventory:
     STLoaderBox: 100
 
@@ -393,8 +385,6 @@
 
 - type: vendingMachineInventory
   id: Z14MilitaryPSZInventory
-  categories: [ Zona14 ]
-  suffix: Z14
   startingInventory:
     ArmyAKCUCrate: 5
     ArmyAKCCrate: 3
@@ -474,8 +464,6 @@
 
 - type: vendingMachineInventory
   id: Z14MilitaryPSZInventoryOfficer
-  categories: [ Zona14 ]
-  suffix: Z14
   startingInventory:
     ArmyAKMOfficerCrate: 2
     MilitaryPSZInventoryRestock: 6
@@ -525,8 +513,6 @@
 
 - type: vendingMachineInventory
   id: Z14MonolithInventory
-  categories: [ Zona14 ]
-  suffix: Z14
   startingInventory:
     SetMonolithMarlyaBuyableCrate: 10
     SetMonolithBalaklavaBuyableCrate: 10
@@ -598,8 +584,6 @@
 
 - type: vendingMachineInventory
   id: Z14SeraphimInventory
-  categories: [ Zona14 ]
-  suffix: Z14
   startingInventory:
     Z14STWeaponRifleAKS74USERAPH: 3
     545Mag30: 18
@@ -663,8 +647,6 @@
 
 - type: vendingMachineInventory
   id: Z14DeserterComplect
-  categories: [ Zona14 ]
-  suffix: Z14
   startingInventory:
     DesertirCrate: 8
 
@@ -718,8 +700,6 @@
 
 - type: vendingMachineInventory
   id: Z14VeteranComplect
-  categories: [ Zona14 ]
-  suffix: Z14
   startingInventory:
     VeteranCrate: 8
 
@@ -773,8 +753,6 @@
 
 - type: vendingMachineInventory
   id: Z14BanditComplect
-  categories: [ Zona14 ]
-  suffix: Z14
   startingInventory:
     BandityCrate: 8
 
@@ -828,8 +806,6 @@
 
 - type: vendingMachineInventory
   id: Z14FreedomComplect
-  categories: [ Zona14 ]
-  suffix: Z14
   startingInventory:
     FreedomCrate: 8
 
@@ -883,8 +859,6 @@
 
 - type: vendingMachineInventory
   id: Z14ZavetComplect
-  categories: [ Zona14 ]
-  suffix: Z14
   startingInventory:
     ZavetCrate: 8
 
@@ -938,8 +912,6 @@
 
 - type: vendingMachineInventory
   id: Z14SerafimComplect
-  categories: [ Zona14 ]
-  suffix: Z14
   startingInventory:
     SefirotCrate: 8
 
@@ -993,8 +965,6 @@
 
 - type: vendingMachineInventory
   id: Z14DolgComplect
-  categories: [ Zona14 ]
-  suffix: Z14
   startingInventory:
     DutyCrate: 8
 
@@ -1048,8 +1018,6 @@
 
 - type: vendingMachineInventory
   id: Z14ProjectComplect
-  categories: [ Zona14 ]
-  suffix: Z14
   startingInventory:
     ProectENV: 4
     ProectPVE: 4

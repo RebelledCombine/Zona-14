@@ -1,7 +1,6 @@
 # MARK: T2 Ammo Recipes
 - type: persistentCraftRecipe
   id: Z14PersistentCraftAmmo_newrecipe545FMJBoxCink
-  categories: [ Zona14 ]
   name: persistent-craft-recipe-generic-name
   description: persistent-craft-recipe-generic-desc
   displayProto: Z14545FMJBox
@@ -21,7 +20,6 @@
 
 - type: persistentCraftRecipe
   id: Z14PersistentCraftAmmo_newrecipe918PSTBoxCink
-  categories: [ Zona14 ]
   name: persistent-craft-recipe-generic-name
   description: persistent-craft-recipe-generic-desc
   displayProto: Z14918PSTBox
@@ -41,7 +39,6 @@
 
 - type: persistentCraftRecipe
   id: Z14PersistentCraftAmmo_newrecipe919PSTBoxCink
-  categories: [ Zona14 ]
   name: persistent-craft-recipe-generic-name
   description: persistent-craft-recipe-generic-desc
   displayProto: Z14919PSTBox
@@ -61,7 +58,6 @@
 
 - type: persistentCraftRecipe
   id: Z14PersistentCraftAmmo_newrecipe556FMJBoxCink
-  categories: [ Zona14 ]
   name: persistent-craft-recipe-generic-name
   description: persistent-craft-recipe-generic-desc
   displayProto: Z14556FMJBox
@@ -81,7 +77,6 @@
 
 - type: persistentCraftRecipe
   id: Z14PersistentCraftAmmo_newrecipe725PTBoxCink
-  categories: [ Zona14 ]
   name: persistent-craft-recipe-generic-name
   description: persistent-craft-recipe-generic-desc
   displayProto: Z14725PTBox
@@ -101,7 +96,6 @@
 
 - type: persistentCraftRecipe
   id: Z14PersistentCraftAmmo_newrecipe45ACPMFMJBoxCink
-  categories: [ Zona14 ]
   name: persistent-craft-recipe-generic-name
   description: persistent-craft-recipe-generic-desc
   displayProto: Z1445ACPMFMJBox
@@ -121,7 +115,6 @@
 
 - type: persistentCraftRecipe
   id: Z14PersistentCraftAmmo_newrecipe939SP5BoxCink
-  categories: [ Zona14 ]
   name: persistent-craft-recipe-generic-name
   description: persistent-craft-recipe-generic-desc
   displayProto: Z14STBox9x39SP5
@@ -141,7 +134,6 @@
 
 - type: persistentCraftRecipe
   id: Z14PersistentCraftAmmo_newrecipe1255TPCink
-  categories: [ Zona14 ]
   name: persistent-craft-recipe-generic-name
   description: persistent-craft-recipe-generic-desc
   displayProto: Ammobox1255TP
@@ -161,7 +153,6 @@
 
 - type: persistentCraftRecipe
   id: Z14PersistentCraftAmmo_newrecipe8mmBuckshotBoxCink
-  categories: [ Zona14 ]
   name: persistent-craft-recipe-generic-name
   description: persistent-craft-recipe-generic-desc
   displayProto: 8mmBuckshotBox
@@ -181,7 +172,6 @@
 
 - type: persistentCraftRecipe
   id: Z14PersistentCraftAmmo_newrecipeShotgunBulletBoxCink
-  categories: [ Zona14 ]
   name: persistent-craft-recipe-generic-name
   description: persistent-craft-recipe-generic-desc
   displayProto: ShotgunBulletBox

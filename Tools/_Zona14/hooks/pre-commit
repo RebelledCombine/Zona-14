@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+# Zona-14 pre-commit hook — runs convention checks before each commit.
+# Install: git config core.hooksPath Tools/_Zona14/hooks
+#
+# Requires: jq (sudo apt install jq / brew install jq).
+# Skips gracefully if jq is missing (prints a warning instead of blocking).
+
+set -u
+
+REPO_ROOT="$(git rev-parse --show-toplevel 2>/dev/null)"
+SCRIPT="$REPO_ROOT/Tools/_Zona14/check-conventions.sh"
+
+if [[ ! -f "$SCRIPT" ]]; then
+    echo "pre-commit: check-conventions.sh not found at $SCRIPT — skipping." >&2
+    exit 0
+fi
+
+if ! command -v jq >/dev/null 2>&1; then
+    echo "pre-commit: WARNING — 'jq' not installed; skipping convention check." >&2
+    echo "  Install with: sudo apt install jq  (or: brew install jq)" >&2
+    exit 0
+fi
+
+# Use HEAD as base for the first commit on a branch; otherwise use merge-base with origin/master.
+if git rev-parse --verify origin/master >/dev/null 2>&1; then
+    BASE="$(git merge-base origin/master HEAD 2>/dev/null || echo HEAD)"
+else
+    BASE="HEAD"
+fi
+
+bash "$SCRIPT" "$BASE" HEAD

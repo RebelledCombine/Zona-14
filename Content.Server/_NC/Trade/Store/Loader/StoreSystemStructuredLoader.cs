@@ -7,7 +7,7 @@ namespace Content.Server._NC.Trade;
 
 public sealed class StoreSystemStructuredLoader : EntitySystem
 {
-    private static readonly ISawmill Sawmill = Logger.GetSawmill("ncstore-loader");
+    private ISawmill Sawmill => Log; // Zona14: per-instance sawmill (was static Logger.GetSawmill, which routes to a contextless handler in pooled integration tests)
 
     [Dependency] private readonly NcContractSystem _contracts = default!;
 

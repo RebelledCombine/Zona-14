@@ -13,7 +13,7 @@ public sealed partial class NcContractSystem : EntitySystem
     private const double DefaultJitter = 0.06;
     private const int MaxRewardDepth = 6;
     private const int DepthInProgress = -1;
-    private static readonly ISawmill Sawmill = Logger.GetSawmill("nccontracts");
+    private ISawmill Sawmill => Log; // Zona14: per-instance sawmill (was static Logger.GetSawmill, which routes to a contextless handler in pooled integration tests)
     private readonly Dictionary<string, List<string>> _ancestorsCache = new(StringComparer.Ordinal);
     private readonly List<(EntityUid Store, string Difficulty)> _cooldownKeysToRemoveScratch = new();
     private readonly Dictionary<(EntityUid Store, string Difficulty), CooldownState> _contractCooldown = new();

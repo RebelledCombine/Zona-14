@@ -12,7 +12,7 @@ namespace Content.Server._NC.Trade;
 
 public sealed partial class NcStoreLogicSystem : EntitySystem
 {
-    private static readonly ISawmill Sawmill = Logger.GetSawmill("ncstore-logic");
+    private ISawmill Sawmill => Log; // Zona14: per-instance sawmill (was static Logger.GetSawmill, which routes to a contextless handler in pooled integration tests)
     private static readonly IComparer<string> OrdinalIds = new OrdinalIdComparer();
 
     [Dependency] private readonly IComponentFactory _compFactory = default!;

@@ -1,7 +1,6 @@
 # MARK: Shotguns
 - type: persistentCraftRecipe
   id: Z14PersistentCraftWeaponRecipeToz34T1
-  categories: [ Zona14 ]
   name: persistent-craft-recipe-generic-name
   description: persistent-craft-recipe-generic-desc
   displayProto: STWeaponShotgunTOZ34
@@ -20,7 +19,6 @@
 
 - type: persistentCraftRecipe
   id: Z14PersistentCraftWeaponRecipeObrezT1
-  categories: [ Zona14 ]
   name: persistent-craft-recipe-generic-name
   description: persistent-craft-recipe-generic-desc
   displayProto: Z14STWeaponShotgunSawedOf
@@ -39,7 +37,6 @@
 
 - type: persistentCraftRecipe
   id: Z14PersistentCraftWeaponRecipeMP133T2
-  categories: [ Zona14 ]
   name: persistent-craft-recipe-generic-name
   description: persistent-craft-recipe-generic-desc
   displayProto: STWeaponShotgunMP133
@@ -58,7 +55,6 @@
 
 - type: persistentCraftRecipe
   id: Z14PersistentCraftWeaponRecipeMossbergT2
-  categories: [ Zona14 ]
   name: persistent-craft-recipe-generic-name
   description: persistent-craft-recipe-generic-desc
   displayProto: STWeaponShotgunMossbergM88
@@ -77,7 +73,6 @@
 
 - type: persistentCraftRecipe
   id: Z14PersistentCraftWeaponRecipeMP153T3
-  categories: [ Zona14 ]
   name: persistent-craft-recipe-generic-name
   description: persistent-craft-recipe-generic-desc
   displayProto: STWeaponShotgunMP153
@@ -97,7 +92,6 @@
 
 - type: persistentCraftRecipe
   id: Z14PersistentCraftWeaponRecipeSpas12T3
-  categories: [ Zona14 ]
   name: persistent-craft-recipe-generic-name
   description: persistent-craft-recipe-generic-desc
   displayProto: STWeaponShotgunSPAS
@@ -116,7 +110,6 @@
 
 - type: persistentCraftRecipe
   id: Z14PersistentCraftWeaponRecipeProtectaT4
-  categories: [ Zona14 ]
   name: persistent-craft-recipe-generic-name
   description: persistent-craft-recipe-generic-desc
   displayProto: STWeaponShotgunProtecta
@@ -138,7 +131,6 @@
 # MARK: Assault Rifles (Soviet)
 - type: persistentCraftRecipe
   id: Z14PersistentCraftWeaponRecipeAKS74UT1
-  categories: [ Zona14 ]
   name: persistent-craft-recipe-generic-name
   description: persistent-craft-recipe-generic-desc
   displayProto: Z14STWeaponRifleAKS74U
@@ -157,7 +149,6 @@
 
 - type: persistentCraftRecipe
   id: Z14PersistentCraftWeaponRecipeVsvGlukharT2
-  categories: [ Zona14 ]
   name: persistent-craft-recipe-generic-name
   description: persistent-craft-recipe-generic-desc
   displayProto: STMetroWeaponRifleVSV
@@ -176,7 +167,6 @@
 
 - type: persistentCraftRecipe
   id: Z14PersistentCraftWeaponRecipeAKS74T3
-  categories: [ Zona14 ]
   name: persistent-craft-recipe-generic-name
   description: persistent-craft-recipe-generic-desc
   displayProto: Z14STWeaponRifleAKS74
@@ -195,7 +185,6 @@
 
 - type: persistentCraftRecipe
   id: Z14PersistentCraftWeaponRecipeRPK74T3
-  categories: [ Zona14 ]
   name: persistent-craft-recipe-generic-name
   description: persistent-craft-recipe-generic-desc
   displayProto: Z14STWeaponRifleRPK74
@@ -214,7 +203,6 @@
 
 - type: persistentCraftRecipe
   id: Z14PersistentCraftWeaponRecipeAK74MT45
-  categories: [ Zona14 ]
   name: persistent-craft-recipe-generic-name
   description: persistent-craft-recipe-generic-desc
   displayProto: Z14STWeaponRifleAK74M
@@ -236,7 +224,6 @@
 # MARK: Snipers & DMRs
 - type: persistentCraftRecipe
   id: Z14PersistentCraftWeaponRecipeSaiga762T15
-  categories: [ Zona14 ]
   name: persistent-craft-recipe-generic-name
   description: persistent-craft-recipe-generic-desc
   displayProto: Z14STWeaponRifleSaiga739
@@ -255,7 +242,6 @@
 
 - type: persistentCraftRecipe
   id: Z14PersistentCraftWeaponRecipeSKST2
-  categories: [ Zona14 ]
   name: persistent-craft-recipe-generic-name
   description: persistent-craft-recipe-generic-desc
   displayProto: Z14STWeaponSniperSKS
@@ -274,7 +260,6 @@
 
 - type: persistentCraftRecipe
   id: Z14PersistentCraftWeaponRecipeMosinT2
-  categories: [ Zona14 ]
   name: persistent-craft-recipe-generic-name
   description: persistent-craft-recipe-generic-desc
   displayProto: Z14STWeaponSniperMosin
@@ -314,7 +299,6 @@
 # MARK: Assault Rifles (NATO)
 - type: persistentCraftRecipe
   id: Z14PersistentCraftWeaponRecipeL85T1
-  categories: [ Zona14 ]
   name: persistent-craft-recipe-generic-name
   description: persistent-craft-recipe-generic-desc
   displayProto: Z14STWeaponRifleL85
@@ -333,7 +317,6 @@
 
 - type: persistentCraftRecipe
   id: Z14PersistentCraftWeaponRecipeM16T2
-  categories: [ Zona14 ]
   name: persistent-craft-recipe-generic-name
   description: persistent-craft-recipe-generic-desc
   displayProto: Z14STWeaponRifleM16
@@ -352,7 +335,6 @@
 
 - type: persistentCraftRecipe
   id: Z14PersistentCraftWeaponRecipeSig550T3
-  categories: [ Zona14 ]
   name: persistent-craft-recipe-generic-name
   description: persistent-craft-recipe-generic-desc
   displayProto: Z14STWeaponRifleSIG550
@@ -371,7 +353,6 @@
 
 - type: persistentCraftRecipe
   id: Z14PersistentCraftWeaponRecipeM4T3
-  categories: [ Zona14 ]
   name: persistent-craft-recipe-generic-name
   description: persistent-craft-recipe-generic-desc
   displayProto: Z14STWeaponRifleM4
@@ -410,7 +391,6 @@
 
 - type: persistentCraftRecipe
   id: Z14PersistentCraftWeaponRecipeFnFalT2
-  categories: [ Zona14 ]
   name: persistent-craft-recipe-generic-name
   description: persistent-craft-recipe-generic-desc
   displayProto: Z14STWeaponRifleFAL
@@ -429,7 +409,6 @@
 
 - type: persistentCraftRecipe
   id: Z14PersistentCraftWeaponRecipeGalatzT3
-  categories: [ Zona14 ]
   name: persistent-craft-recipe-generic-name
   description: persistent-craft-recipe-generic-desc
   displayProto: Z14STWeaponRifleGalatz
@@ -448,7 +427,6 @@
 
 - type: persistentCraftRecipe
   id: Z14PersistentCraftWeaponRecipeScarHT4
-  categories: [ Zona14 ]
   name: persistent-craft-recipe-generic-name
   description: persistent-craft-recipe-generic-desc
   displayProto: Z14STWeaponRifleSCARH
@@ -470,7 +448,6 @@
 # MARK: Pistols & Revolvers
 - type: persistentCraftRecipe
   id: Z14PersistentCraftWeaponRecipeGlockT15
-  categories: [ Zona14 ]
   name: persistent-craft-recipe-generic-name
   description: persistent-craft-recipe-generic-desc
   displayProto: Z14WeaponPistolStalkerGlock
@@ -490,7 +467,6 @@
 # MARK: SMGs & PDWs
 - type: persistentCraftRecipe
   id: Z14PersistentCraftWeaponRecipeKedrT2
-  categories: [ Zona14 ]
   name: persistent-craft-recipe-generic-name
   description: persistent-craft-recipe-generic-desc
   displayProto: Z14STWeaponSMGPP91
@@ -509,7 +485,6 @@
 
 - type: persistentCraftRecipe
   id: Z14PersistentCraftWeaponRecipeMp5T3
-  categories: [ Zona14 ]
   name: persistent-craft-recipe-generic-name
   description: persistent-craft-recipe-generic-desc
   displayProto: Z14STWeaponSMGMP5
@@ -528,7 +503,6 @@
 
 - type: persistentCraftRecipe
   id: Z14PersistentCraftWeaponRecipeVityazT35
-  categories: [ Zona14 ]
   name: persistent-craft-recipe-generic-name
   description: persistent-craft-recipe-generic-desc
   displayProto: Z14STWeaponSMGPP1901
@@ -547,7 +521,6 @@
 
 - type: persistentCraftRecipe
   id: Z14PersistentCraftWeaponRecipeTaurusJudgeT1
-  categories: [ Zona14 ]
   name: persistent-craft-recipe-generic-name
   description: persistent-craft-recipe-generic-desc
   displayProto: STWeaponRevolverTaurusJudge
@@ -566,7 +539,6 @@
 
 - type: persistentCraftRecipe
   id: Z14PersistentCraftWeaponRecipeSW625T25
-  categories: [ Zona14 ]
   name: persistent-craft-recipe-generic-name
   description: persistent-craft-recipe-generic-desc
   displayProto: STWeaponRevolverSWModel625
@@ -585,7 +557,6 @@
 
 - type: persistentCraftRecipe
   id: Z14PersistentCraftWeaponRecipeChiappaT35
-  categories: [ Zona14 ]
   name: persistent-craft-recipe-generic-name
   description: persistent-craft-recipe-generic-desc
   displayProto: STWeaponRevolverChiappaRhino60DS
@@ -604,7 +575,6 @@
 
 - type: persistentCraftRecipe
   id: Z14PersistentCraftWeaponRecipeDanWessonT35
-  categories: [ Zona14 ]
   name: persistent-craft-recipe-generic-name
   description: persistent-craft-recipe-generic-desc
   displayProto: STWeaponRevolverDanWesson715
@@ -623,7 +593,6 @@
 
 - type: persistentCraftRecipe
   id: Z14PersistentCraftWeaponRecipeApsT2
-  categories: [ Zona14 ]
   name: persistent-craft-recipe-generic-name
   description: persistent-craft-recipe-generic-desc
   displayProto: Z14WeaponPistolStalkerAPS
@@ -642,7 +611,6 @@
 
 - type: persistentCraftRecipe
   id: Z14PersistentCraftWeaponRecipeBizonT2
-  categories: [ Zona14 ]
   name: persistent-craft-recipe-generic-name
   description: persistent-craft-recipe-generic-desc
   displayProto: Z14STWeaponSMGPP19
@@ -661,7 +629,6 @@
 
 - type: persistentCraftRecipe
   id: Z14PersistentCraftWeaponRecipeVz61T2
-  categories: [ Zona14 ]
   name: persistent-craft-recipe-generic-name
   description: persistent-craft-recipe-generic-desc
   displayProto: Z14STWeaponSMGVZ61
@@ -680,7 +647,6 @@
 
 - type: persistentCraftRecipe
   id: Z14PersistentCraftWeaponRecipeBizon919T3
-  categories: [ Zona14 ]
   name: persistent-craft-recipe-generic-name
   description: persistent-craft-recipe-generic-desc
   displayProto: Z14STWeaponSMGPP19919

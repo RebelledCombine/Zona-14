@@ -41,3 +41,15 @@ The workflow [`.github/workflows/zona14-convention.yml`](../../.github/workflows
 - `0` — pass (possibly with warnings on stderr).
 - `1` — at least one fatal check failed.
 - `2` — usage error or missing dependency (`jq`).
+
+## `hooks/pre-commit`
+
+Git pre-commit hook that runs `check-conventions.sh` automatically before each commit.
+
+### Install
+
+```bash
+git config core.hooksPath Tools/_Zona14/hooks
+```
+
+The hook skips gracefully if `jq` is missing (prints a warning instead of blocking the commit).

@@ -8,14 +8,46 @@ on:
     types: [ opened, reopened, synchronize, ready_for_review ]
     branches: [ master ]
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
 jobs:
-  build:
+  # Zona14: sharded build+test matrix. Each entry self-builds (NuGet-restore is cached) and runs only
+  # its slice on its own runner, so they run in parallel and wall-clock drops toward the longest shard.
+  # The integration shards run at NUnit.NumberOfTestWorkers=1 + workstation GC so each stays under the
+  # 16GB runner limit (the EntityTest spawn-all tests peak ~7.4GB; two in parallel OOM-kill the runner).
+  # Shards are balanced by measured duration; int-D is the exact negation of int-A/B/C so the union
+  # covers every integration test with no overlap or gap.
+  test:
+    name: ${{ matrix.name }}
     if: github.actor != 'PJBot' && github.event.pull_request.draft == false
     strategy:
+      fail-fast: false
       matrix:
-        os: [ubuntu-latest]
+        include:
+          - id: unit
+            name: Content.Tests
+            kind: unit
+            filter: ""
+          - id: int-a
+            name: Integration A (spawn-dirty)
+            kind: integration
+            filter: "FullyQualifiedName~Content.IntegrationTests.Tests.EntityTest.SpawnAndDirtyAllEntities"
+          - id: int-b
+            name: Integration B (spawn-count/diffmaps)
+            kind: integration
+            filter: "FullyQualifiedName~Content.IntegrationTests.Tests.EntityTest.SpawnAndDeleteEntityCountTest|FullyQualifiedName~Content.IntegrationTests.Tests.EntityTest.SpawnAndDeleteAllEntitiesOnDifferentMaps"
+          - id: int-c
+            name: Integration C (spawn-samespot/misc)
+            kind: integration
+            filter: "FullyQualifiedName~Content.IntegrationTests.Tests.EntityTest.SpawnAndDeleteAllEntitiesInTheSameSpot|FullyQualifiedName~Content.IntegrationTests.Tests.Shuttle.DockTest|FullyQualifiedName~Content.IntegrationTests.Tests.Chemistry.ReagentDataTest|FullyQualifiedName~Content.IntegrationTests.Tests.Utility.SandboxTest|FullyQualifiedName~Content.IntegrationTests.Tests.SaveLoadSaveTest"
+          - id: int-d
+            name: Integration D (rest)
+            kind: integration
+            filter: "FullyQualifiedName!~Content.IntegrationTests.Tests.EntityTest.SpawnAndDirtyAllEntities&FullyQualifiedName!~Content.IntegrationTests.Tests.EntityTest.SpawnAndDeleteEntityCountTest&FullyQualifiedName!~Content.IntegrationTests.Tests.EntityTest.SpawnAndDeleteAllEntities&FullyQualifiedName!~Content.IntegrationTests.Tests.Shuttle.DockTest&FullyQualifiedName!~Content.IntegrationTests.Tests.Chemistry.ReagentDataTest&FullyQualifiedName!~Content.IntegrationTests.Tests.Utility.SandboxTest&FullyQualifiedName!~Content.IntegrationTests.Tests.SaveLoadSaveTest"
 
-    runs-on: ${{ matrix.os }}
+    runs-on: ubuntu-latest
 
     steps:
     - name: Checkout Master
@@ -38,6 +70,14 @@ jobs:
       with:
         dotnet-version: 10.0.x
 
+    - name: Cache NuGet packages
+      uses: actions/cache@v4
+      with:
+        path: ~/.nuget/packages
+        key: ${{ runner.os }}-nuget-${{ hashFiles('**/Directory.Packages.props', '**/*.csproj') }}
+        restore-keys: |
+          ${{ runner.os }}-nuget-
+
     - name: Install dependencies
       run: dotnet restore
 
@@ -45,28 +85,36 @@ jobs:
       run: dotnet build --configuration DebugOpt --no-restore /m
 
     - name: Run Content.Tests
+      if: matrix.kind == 'unit'
       shell: pwsh
       run: dotnet test --no-build --configuration DebugOpt Content.Tests/Content.Tests.csproj -- NUnit.ConsoleOut=0 NUnit.TestOutputXml="logs" NUnit.WorkDirectory="$(pwd)/test_results"
 
     - name: Run Content.IntegrationTests
+      if: matrix.kind == 'integration'
       shell: pwsh
       run: |
-        $env:DOTNET_gcServer=1
-        dotnet test --no-build --configuration DebugOpt Content.IntegrationTests/Content.IntegrationTests.csproj -- NUnit.ConsoleOut=0 NUnit.MapWarningTo=Failed NUnit.TestOutputXml="logs" NUnit.WorkDirectory="$(pwd)/test_results"
+        # Zona14: workstation GC (gcServer=0) + single worker keeps this shard under the 16GB runner limit.
+        $env:DOTNET_gcServer=0
+        dotnet test --no-build --configuration DebugOpt Content.IntegrationTests/Content.IntegrationTests.csproj --filter "${{ matrix.filter }}" -- NUnit.ConsoleOut=0 NUnit.MapWarningTo=Failed NUnit.NumberOfTestWorkers=1 NUnit.TestOutputXml="logs" NUnit.WorkDirectory="$(pwd)/test_results"
 
     - name: Archive NUnit3 test results.
       if: always()
       uses: actions/upload-artifact@v4
       with:
-        name: nunit3-results-${{ matrix.os }}
+        name: nunit3-results-${{ matrix.id }}
         path: test_results/*
         retention-days: 7
         compression-level: 9
   ci-success:
     name: Build & Test Debug
+    if: always()
     needs:
-      - build
+      - test
     runs-on: ubuntu-latest
     steps:
       - name: CI succeeded
+        if: ${{ !contains(needs.*.result, 'failure') && !contains(needs.*.result, 'cancelled') }}
         run: exit 0
+      - name: CI failed
+        if: ${{ contains(needs.*.result, 'failure') || contains(needs.*.result, 'cancelled') }}
+        run: exit 1

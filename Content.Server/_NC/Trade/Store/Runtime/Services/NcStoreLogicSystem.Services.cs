@@ -262,7 +262,7 @@ public sealed partial class NcStoreLogicSystem
             }
             catch (Exception e)
             {
-                Logger.GetSawmill("ncstore-logic").Error($"Spawn failed during purchase batch: {e}");
+                _sys.Sawmill.Error($"Spawn failed during purchase batch: {e}"); // Zona14: route through per-instance sawmill (was static Logger.GetSawmill)
                 return false;
             }
         }

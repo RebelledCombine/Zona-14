@@ -49,6 +49,13 @@ public sealed class EmbedTest : InteractionTest
         // Disconnect the client
         var cNetMgr = Client.ResolveDependency<IClientNetManager>();
         await Client.WaitPost(Client.EntMan.FlushEntities);
+        // Zona14: actually disconnect the client (matching this test's stated intent) so the
+        // server stops sending it entity states. A bare FlushEntities leaves the client connected
+        // but entity-less, so the next server delta for an unchanged-but-dirtied entity (e.g. the
+        // RDWatcher networked singleton, which dirties a field every tick) is applied as a "new"
+        // entity without a MetaDataComponent, throwing MissingMetadataException during pool teardown.
+        await Client.WaitPost(() => cNetMgr.ClientDisconnect("Disconnecting while projectile embedded"));
+        // End Zona14
         await Pair.RunTicksSync(1);
     }
 

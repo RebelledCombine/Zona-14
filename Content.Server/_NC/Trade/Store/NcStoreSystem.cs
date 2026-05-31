@@ -17,7 +17,7 @@ public sealed class NcStoreSystem : EntitySystem
 {
     private const float MaxUseDistance = 2.5f;
     private const float MaxCrateDistance = 4f;
-    private static readonly ISawmill Sawmill = Logger.GetSawmill("ncstore");
+    private ISawmill Sawmill => Log; // Zona14: per-instance sawmill (was static Logger.GetSawmill, which routes to a contextless handler in pooled integration tests)
     [Dependency] private readonly AccessReaderSystem _accessReader = default!;
     [Dependency] private readonly AudioSystem _audio = default!;
     [Dependency] private readonly IEntityManager _entMan = default!;

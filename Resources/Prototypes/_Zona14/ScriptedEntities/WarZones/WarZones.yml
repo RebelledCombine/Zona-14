@@ -1,8 +1,6 @@
 # MARK: War Zone Meta-Prototypes
 - type: stWarZone
   id: Z14KordonVillage # Zone ID. Persisted in DB, do not change.
-  categories: [ Zona14 ]
-  suffix: Z14
   rewardPointsPerPeriod: 1 # Points awarded per period
   rewardPeriod: 1230 # Reward period in seconds
   captureCooldownHours: 2 # Capture cooldown in hours
@@ -13,8 +11,6 @@
 
 - type: stWarZone
   id: Z14SvalkaDepo
-  categories: [ Zona14 ]
-  suffix: Z14
   rewardPointsPerPeriod: 1
   rewardPeriod: 1230 # Reward period in seconds
   captureCooldownHours: 96
@@ -92,8 +88,6 @@
 
 - type: stWarZone
   id: Z14SvalkaCemetery
-  categories: [ Zona14 ]
-  suffix: Z14
   rewardPointsPerPeriod: 1
   rewardPeriod: 1230 # Reward period in seconds
   captureCooldownHours: 96
@@ -115,7 +109,7 @@
   description: A physical marker for the Cemetery War Zone.
   components:
   - type: WarZone
-    proto: SvalkaCemetery
+    proto: Z14SvalkaCemetery
     portalName: Cemetery
   - type: Physics
     bodyType: Static
@@ -139,8 +133,6 @@
 
 - type: stWarZone
   id: Z14LimanskLenin
-  categories: [ Zona14 ]
-  suffix: Z14
   rewardPointsPerPeriod: 1
   rewardPeriod: 1230 # Reward period in seconds
   captureCooldownHours: 96
@@ -186,8 +178,6 @@
 
 - type: stWarZone
   id: Z14KordonFerma
-  categories: [ Zona14 ]
-  suffix: Z14
   rewardPointsPerPeriod: 1
   rewardPeriod: 1230 # Reward period in seconds
   captureCooldownHours: 96
@@ -233,8 +223,6 @@
 
 - type: stWarZone
   id: Z14KordonATP
-  categories: [ Zona14 ]
-  suffix: Z14
   rewardPointsPerPeriod: 1
   rewardPeriod: 1230 # Reward period in seconds
   captureCooldownHours: 96
@@ -282,8 +270,6 @@
 # MARK: Band Shop Listings
 - type: stBandShopListings
   id: Z14STBandShopListings
-  categories: [ Zona14 ]
-  suffix: Z14
   items:
   #misc
     - productEntity: FitnessCenterCard
