@@ -22,3 +22,8 @@ ent-751M61BoxCink = Large Ammo Box (7.62x51) M61
 ent-751M993BoxCink = Large Ammo Box (7.62x51) M993
     .desc = For NATO rifles, 300 pieces in a box. Provides penetration of armor class 5.
     .suffix = { ent-751M80Box.suffix }
+
+# Zona14: merged content from case-duplicate file to fix Windows case-insensitive checkout collision
+ent-754RBox = ammo box (7.62x54mm R)
+    .desc = Provides class 4 armor penetration.
+    .suffix = Stalker

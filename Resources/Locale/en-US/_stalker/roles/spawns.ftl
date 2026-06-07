@@ -19,3 +19,11 @@ ent-SpawnPointNeutral = Neutral Job Spawn
 ent-SpawnPointPoisk = Poisk Job Spawn
     .desc = Spawn point for Poisk faction.
     .suffix = { ent-SpawnPointStalker.suffix }
+
+# Zona14: merged content from case-duplicate file to fix Windows case-insensitive checkout collision
+ent-SpawnPointSci_decan = dean Job Spawn
+    .desc = { "" }
+    .suffix = Stalker
+ent-SpawnPointSci_rector = rector Job Spawn
+    .desc = { "" }
+    .suffix = Stalker

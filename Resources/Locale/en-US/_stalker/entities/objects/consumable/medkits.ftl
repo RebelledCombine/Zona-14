@@ -45,3 +45,11 @@ ent-STPillboxProbud = probudophiline pill pack
 ent-STPillboxShiza = fuflomycin pill pack
     .desc = A pack of fuflomycin tablets, each weighing 10 g. Helps convince you of your invulnerability to psi waves. Take up to 10 g at once!
     .suffix = ST, T5
+
+# Zona14: merged content from case-duplicate file to fix Windows case-insensitive checkout collision
+ent-STGauzeBarbaris = barberry-soaked bandage
+    .desc = The pulp of Zone barberry has strong antiseptic properties; stalkers use it to soak bandages, which lets them effectively fight infections and speeds up wound healing.
+    .suffix = ST, T1
+ent-STGauzeUniversal = universal-salve-soaked bandage
+    .desc = A universal salve made from a mixture of pulp from various Zone berries and herbs has powerful antiseptic properties and promotes the rapid healing of various wounds.
+    .suffix = ST, T1

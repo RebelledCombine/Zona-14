@@ -38,3 +38,8 @@ ent-NPCDeserterMubarack = Mubarak [→ ←]
 ent-NPCDeserterAbdul = Abdul [→ ←]
     .desc = Abdul, Mubarak's brother, a deserter from the OKSOP and an honorary member of the "renegades" gang, smuggles contraband across the border of the Chernobyl Exclusion Zone, and is not particularly bright.
     .suffix = ST, Deserter, Dollar
+
+# Zona14: merged content from case-duplicate file to fix Windows case-insensitive checkout collision
+ent-NPCProject = JEW-488 [->   <-]
+    .desc = Provides an unknown group of people with equipment.
+    .suffix = ST, Project

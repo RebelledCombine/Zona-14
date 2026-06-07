@@ -70,3 +70,8 @@ ent-STClothingBackpackT4 = Tag* thing DO NOT SPAWN
 ent-STClothingBackpackT5 = { ent-STClothingBackpackT4 }
     .desc = { ent-STClothingBackpackT4.desc }
     .suffix = ST
+
+# Zona14: merged content from case-duplicate file to fix Windows case-insensitive checkout collision
+ent-ClothingBackpackDuffelBlackMilitaryTacticStalkerKrava = camouflage bag "Valkyrie"
+    .desc = A spacious bag suitable for carrying weapons and equipment.
+    .suffix = ST, Custom

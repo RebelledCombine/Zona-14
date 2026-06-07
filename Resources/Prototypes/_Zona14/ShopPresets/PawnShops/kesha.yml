@@ -193,3 +193,355 @@
       STModuleSilencerSMGT1: 1600
       STModuleSniperSightT1: 1600
       STModuleSilencerSniperT1: 1400
+
+# Zona14: merged content from case-duplicate file to fix Windows case-insensitive checkout collision
+- type: shopPreset
+  id: Z14KeshaShopPreset # Smart bastard
+  minSellPrice: 5
+  itemsForSale:
+# MARK: Artifacts
+    # Thermal group - 1
+    ZoneArtifactFireball: 400
+    ZoneArtifactEye: 600
+    ZoneArtifactFlame: 1200
+    ZoneArtifactBunch: 1150
+    ZoneArtifactRock: 1000
+    ZoneArtifactSun: 1900
+    ZoneArtifactRoot: 2100
+    ZoneArtifactConflagration: 400
+    # Thermal group - 2
+    ZoneArtifactCristall: 2400
+    ZoneArtifactLithosphere: 4800
+    # Electrical group - 1
+    ZoneArtifactSparkler: 400
+    ZoneArtifactBattery: 600
+    ZoneArtifactFlash: 1200
+    ZoneArtifactAccumulator: 900
+    ZoneArtifactDiamond: 1900
+    ZoneArtifactCharger: 1900
+    ArtMoon: 2400
+    ZoneArtifactTesla: 3600
+    ZoneArtifactIce: 4800
+    # Gravity group - 1
+    ArtMedusa: 400
+    ZoneArtifactFlower: 600
+    ZoneArtifactNightStar: 2400
+    ZoneArtifactWhirlwind: 450
+    ZoneArtifactPebble: 400
+    ZoneArtifactRosin: 600
+    ZoneArtifactStoneCube: 1200
+    ZoneArtifactDarkCube: 2800
+    # Gravity group - 2
+    ZoneArtifactVyvert: 400
+    ZoneArtifactAmoeba: 600
+    ZoneArtifactFloodlight: 600
+    ZoneArtifactGravi: 1200
+    ZoneArtifactGoldfish: 4800
+    ZoneArtifactSpring: 3600
+    ZoneArtifactFocus: 3600
+    ZoneArtifactStuntman: 4800
+    ZoneArtifactDistorter: 4800
+    ZoneArtifactSoul: 3600
+    ZoneArtifactCompass: 2450
+    ZoneArtifactCrucifix: 2800
+    ZoneArtifactThorn: 2500 # kesha whimsy
+    ZoneArtifactArf: 410
+    # Acidic group - 1
+    ZoneArtifactToxic: 500
+    ZoneArtifactCytoplasm: 2100
+    ZoneArtifactBlood: 1200
+    ZoneArtifactMeat: 2400
+    ZoneArtifactKolobok: 3600
+    ZoneArtifactBeer: 750
+    # Acidic group - 2
+    ZoneArtifactPellicle: 400
+    ZoneArtifactBaloon: 3600
+
+# MARK: Mutant Parts
+     # Mutant parts
+
+  #Boars -------- Health * T * 0.45
+    MutantPartBoarHoof: 200 # T1
+    MutantPartSeasonedBoarHoof: 290 # T2
+    MutantPartOldBoarHoof: 385 # T3
+
+    #T1 -------- Health * 1
+    MutantPartBlindDogTail: 65
+    MutantPartFleshEye: 140
+    FoodMeatSpiderLeg: 35
+
+    #T2 -------- Health * 1.8
+    MutantPartLeshiyRoot: 385
+    MutantPartPseudodogTail: 210
+    MutantPartSnorkFoot: 350
+
+    #T3 -------- Health * 3
+    MutantPartBloodsuckerTentacles: 725
+    MutantPartOraculeEye: 920
+    MutantPartPseudogiantHeart: 2800
+    MutantPartZombieHand: 420
+    MutantPartChimeraTooth: 5570
+    ClothingMaskChimera: 8000
+    MutantPartIzlomArm: 665
+
+# MARK: Weapons & Values (Sell)
+     #Weapons and armour ---- min cost / 2
+
+    #12x70
+    STWeaponShotgunMP155T: 20
+    STWeaponShotgunTOZ34: 100
+    STWeaponShotgunMP133: 170
+    STWeaponShotgunMP153: 400
+    STWeaponShotgunBenelliM4Super90: 550
+    STWeaponShotgunMossbergM88: 200
+    STWeaponShotgunSPAS: 580
+    STWeaponShotgunProtecta: 950
+    STWeaponShotgunSaiga12: 550
+
+    #5.45x39
+    Z14STWeaponRifleSaiga545: 400
+    Z14STWeaponRifleAKS74U: 450
+    Z14STWeaponRifleAKS74: 1500
+    Z14STWeaponRifleAK74M: 2175
+    Z14STWeaponRifleStalkerAK12: 2250
+    Z14STWeaponRifleOC14: 2250
+
+    #5.56x39
+    Z14STWeaponRifleL85: 950
+    Z14STWeaponRifleM16: 1550
+    Z14STWeaponRifleSIG550: 1800
+    Z14STWeaponRifleM4: 1600
+    Z14STWeaponRifleGalil: 2250
+    Z14STWeaponRifleG36: 2175
+    Z14STWeaponRifleLR300v1: 1000
+    Z14STWeaponRifleLR300v2: 1000
+
+    #7.62x39
+    Z14STWeaponRifleAKM: 1500
+    Z14STWeaponRifleAK103: 2500
+    Z14STWeaponRifleStalkerAK104: 2750
+    Z14STWeaponMachineGunRPD: 4500
+    Z14STWeaponSniperSKS: 350
+    Z14STWeaponRifleAKMC: 200
+
+    #7.62x51
+    Z14STWeaponRifleFAL: 750
+    STWeaponRifleFALo: 1950
+    Z14STWeaponRifleGalatz: 2000
+    Z14STWeaponRifleSCARH: 2625
+    Z14STWeaponRifleM14: 2125
+
+    #7.62x54
+    Z14STWeaponSniperMosin: 400
+    Z14STWeaponSniperSVDS: 5500
+    Z14STWeaponSniperSVU: 5500
+    Z14STWeaponSniperVepr: 2000
+
+    #9x18 9x19
+    Z14WeaponPistolStalkerGlock: 100
+    Z14WeaponStalkerPistolTec9: 100
+    Z14WeaponPistolStalkerAPS: 350
+    Z14STWeaponSMGMP40: 350
+    Z14STWeaponSMGMP5: 850
+    Z14STWeaponSMGPP91: 375
+    Z14STWeaponSMGThompson: 2500
+    Z14STWeaponSMGStalkerCP2Veresk: 750
+    Z14STWeaponSMGPP1901: 750
+    Z14STWeaponSMGPP19: 1250
+    Z14STWeaponSMGVZ61: 250
+
+    #7.62x25
+    Z14WeaponPistolStalkerTT: 25
+    Z14STWeaponSMGPPSh41: 600
+
+    #9x39
+    Z14STWeaponRifleASVAL: 7500
+    Z14STWeaponSniperVSS: 6000
+
+    #.45 acp
+    STWeaponRevolverRugerRedhawk: 150
+    STWeaponRevolverSWPC325TR: 425
+    STWeaponRevolverChiappaRhino60DS: 450
+    STWeaponRevolverSWModel325: 200
+    STWeaponRevolverSWModel625: 725
+
+    #medical
+    Defibrillator: 650
+
+    #values
+    TradeBox: 3000
+
+# MARK: Items to Buy
+  categories:
+    - name: shop-category-weapons
+      priority: 1
+      items:
+            # Melee
+        StalkerBallBat: 70
+            # Guns
+        # 7mm
+        STWeaponShotgunSPAS: 3500 # T3
+        STWeaponShotgunBenelliM4Super90: 6500 #i dont think its actually that good
+        # Smg
+        Z14STWeaponSMGMP5: 2250
+        Z14STWeaponSMGPP91: 2750
+        Z14STWeaponSMGStalkerCP2Veresk: 5000
+        # Other
+        Z14STWeaponRifleSaiga739: 1400
+        Z14WeaponPistolStalkerTT: 250
+        Z14WeaponPistolStalkerAPS: 500
+        STWeaponRevolverSWPC325TR: 1000
+        STWeaponRevolverTaurusTracker455: 4000
+        STWeaponRevolverChiappaRhino60DS: 5000
+    - name: shop-category-magazines
+      priority: 2
+      items:
+          # Smg
+        BaseMP5Mag: 200
+        PP91Mag: 300
+        PPSHDrum: 2000
+        BasePPSHMag: 350
+        VityazMag: 400
+          # Other
+        TTMag: 100
+        STSpeedLoader45ACPEmpty: 300
+        BaseAPSMag: 100
+    - name: shop-category-ammunition
+      priority: 3
+      items:
+        6mmBuckshotBox: 325
+        7mmBuckshotBox: 45
+        8mmBuckshotBox: 650
+         # 7.25
+        Z14725PBox: 120
+        Z14725PTBox: 280
+        Z14725PSTBox: 1325
+        Z14725LRNPCBox: 600
+        # 9.19
+        Z14919PSOGJBox: 75
+        Z14919PSTBox: 525
+        Z14919RIPBox: 575
+        Z14919PBMBox: 1325
+        # 5.56
+        Z14556FMJBox: 600
+        Z14556M855Box: 1500
+        Z14556WarmagBox: 655
+        # 5.45
+        Z14545FMJBox: 625
+        Z14545HPBox: 690
+        Z14545PCBox: 1500
+         # .45
+        Z1445ACPLFMJBox: 80
+        Z1445ACPMFMJBox: 550
+        Z1445ACPRIPBox: 625
+        Z1445ACPAPBox: 1400
+
+    - name: shop-category-armor
+      priority: 4
+      items:
+          # OuterClothing #
+        STClothingOuterArmorLightPlateVestBaseStalker: 1250
+        ClothingOuterArmor6B2: 2000
+        ClothingHeadHelmetInfantry: 400
+        STClothingHeadHelmetMakeshiftTacticalT3: 1000
+        ClothingOuterArmorSpark: 1750
+        ClothingOuterArmorZaryaStalkerModifedType2: 2500
+        ClothingOuterArmorZaryaStalkerModifedType1: 3800
+        ClothingOuterArmorZaryaHunter: 2500
+    - name: shop-category-storage-and-containers
+      priority: 5
+      items:
+          # BackPacks
+        ClothingBackpackTownBlackStalker: 50 # T1
+        ClothingBackpackTownWhiteStalker: 50 # T1
+        ##-------------------------------------------
+          # Belts
+        ClothingBeltBandolierStalker: 20 # T1 - PVE
+          # Containers
+        MedkitCMSStalker: 1000 # T1
+        MedkitGrizzlyStalker: 2000 # T2
+    - name: shop-category-raincoats-and-gasmasks
+      priority: 6
+      items:
+        ClothingMaskXoma: 600 # T1
+        ClothingMaskGP5: 500 # T1
+        ClothingMaskGP7: 3800 # T3
+    - name: shop-category-research-equipment
+      priority: 7
+      items:
+        STBoltBagFilled: 50
+        BoxArtcont: 1000 # T1
+        BoxArtcontBlack: 1000
+        BoxArtcontBlue: 1000
+        BoxArtcontYellow: 1000
+        BoxArtcontOrange: 1000
+        ZoneAnomalyDetectorAD1: 500 # T1
+        ZoneAnomalyDetectorUpgradeAD2: 3000
+        TrashDetectorTier1: 200
+        TrashDetectorTier2: 1600
+        TrashDetectorTier3: 3500
+    - name: shop-category-utilities
+      priority: 8
+      items:
+        CraftSaw: 20000
+        STCombatKnife: 25
+        BoxZiptie: 50
+        BoxSafebox: 300
+        CheapLighter: 5
+        GeigerCounter: 50
+        BaseRadio: 50
+        STRadioHeadset: 150
+        STFlashlightSeclite: 50
+        PowerCellHyper: 50
+        HandheldGPSBasic: 50
+        Paper: 2
+        Pen: 5
+        Binocularus1: 2500
+        BoxFlare: 60
+        Beaker: 40
+        Syringe: 20
+        ClothingGoPro: 250
+        ExtendedEmergencyOxygenTankFilledStalker: 50
+        Matchbox: 10
+        HatchetStalker: 150
+    - name: shop-category-provisions
+      priority: 9
+      items:
+        STEnergyDrink: 200
+        STEnergyDrinkMonster: 300
+        STEnergyDrinkRevo: 150
+        STDrinkBeerCanBaltic: 40
+        DrinkCossackVodkaBottleFull: 100
+        STFoodBreadPlain: 60
+        DrinkFlaskOld: 60
+        DrinkWaterBottleFull: 100
+        FoodTinMRE: 500
+        DrinkLemonadehBottleFull: 100
+        STFoodMeatSalami: 1000
+    - name: shop-category-medicine # 50% discount from stalkers
+      priority: 10
+      items:
+        STPillboxAntirad: 200
+        STGauze: 80
+        STOintment: 100
+        STBrutepack: 100
+        Bloodpack: 1000
+        MedkitAI2: 200
+        Defibrillator: 1000
+        AntiRadMedipen: 200
+    - name: shop-category-modules
+      priority: 11
+      items:
+        STModuleScopeRiflesT1Ru: 1600
+        STModuleScopeRiflesT1Nato: 1600
+        STModuleSilencerRiflesT1Ru: 1400
+        STModuleSilencerRiflesT1Nato: 1400
+        STModuleShotgunChokeT1: 1200
+        STModuleSMGGripT1: 1600
+        STModuleSilencerSMGT1: 1600
+        STModuleSniperSightT1: 1600
+        STModuleSilencerSniperT1: 1400
+        STModuleSilencerRiflesT2Ru: 4600
+        STModuleSilencerRiflesT2Nato: 4600
+        STModuleSilencerSniperT2: 4600
+        STModuleSilencerSMGT2: 4800

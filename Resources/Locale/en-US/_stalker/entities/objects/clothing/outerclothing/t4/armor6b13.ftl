@@ -11,3 +11,7 @@ ent-ClothingOuterArmorUNTAR = UNTAR Body Armor
     .desc = Standard Type IV body armor that provides decent protection against most types of damage. Adapted from 6B13.
 ent-STClothingOuterArmorVolchankaFreedom = Lupus chest plate
     .desc = A reinforced chest plate produced by the Wola Group artisans that protects against bullets more than anything else. It is an artisanal modification of the 6b13.
+
+# Zona14: merged content from case-duplicate file to fix Windows case-insensitive checkout collision
+ent-ClothingOuterArmor6B13Zavet = 6B13 Zavet
+    .desc = A standard type IV body armor, providing decent protection from most types of damage.

@@ -18,3 +18,7 @@ ent-STClothingOuterArmorLightPlateVestBaseANAgrayOld = { ent-STClothingOuterArmo
     .desc = Reliable class 3 plate carrier that fits any magazine size, in a stylish black color. This version is heavily worn, with noticeably degraded protective capabilities.
 ent-STClothingOuterArmorLightPlateVestBaseANAproject = ANA Tactical 'Project'
     .desc = A reliable Class 3 carrier accommodating magazines of any size.
+
+# Zona14: merged content from case-duplicate file to fix Windows case-insensitive checkout collision
+ent-STClothingOuterArmorLightPlateVestBaseANAzavet = "Steppe-4" armored rig of the Covenant
+    .desc = A reliable class 3 armored rig that fits magazines of any size.

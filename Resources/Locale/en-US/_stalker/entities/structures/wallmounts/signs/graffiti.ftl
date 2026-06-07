@@ -67,3 +67,8 @@ ent-Graffiti22 = { ent-Graffiti1 }
 ent-Graffiti23 = Graffiti
     .desc = Graffiti left behind by someone.
     .suffix = ST, Mapping
+
+# Zona14: merged content from case-duplicate file to fix Windows case-insensitive checkout collision
+ent-Graffiti27 = graffiti
+    .desc = Graffiti left behind by someone.
+    .suffix = ST, Mapping

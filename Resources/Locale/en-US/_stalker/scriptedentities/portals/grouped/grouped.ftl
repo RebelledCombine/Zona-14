@@ -19,3 +19,7 @@ ent-TemnajaLoshinaNorth-Predbannik3South = TemnajaLoshinaNorth-Predbannik3South
 ent-BaseMonolith-RandomLocationmonolith = BaseMonolith-RandomLocationmonolith
 ent-BaseProject-RandomLocationProject = BaseProject-RandomLocationProject
 ent-RandomLocationProject-BaseProject = RandomLocationProject-BaseProject
+
+# Zona14: merged content from case-duplicate file to fix Windows case-insensitive checkout collision
+ent-EnterLohinaOneside = Hollow Entrance
+ent-EnterLohinaOnesideUncollide = Hollow Exit Uncollide

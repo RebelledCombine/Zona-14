@@ -27,3 +27,7 @@ ent-ClothingMaskGasZaryaMono = Monolens stalker gas mask
     .desc = Cheap and effective. Protects against radiation. Features a monolens.
 ent-ClothingMaskGasMarlyaRuined = Dusty Gauze Mask
     .desc = A dusty gauze mask turned gray from the massive amount of radioactive dust it's filtered. Honestly, nothing would be better than this.
+
+# Zona14: merged content from case-duplicate file to fix Windows case-insensitive checkout collision
+ent-ClothingMaskGasSeraFirstborn = Firstborn gas mask
+    .desc = An old gas mask with a green four-pointed star painted on it - the sacred symbol of the Seraphim.

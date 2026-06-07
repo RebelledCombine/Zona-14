@@ -15,3 +15,15 @@ ent-ClothingHeadHelmetVityaz1M = Vityaz 1M 'Duty' helmet
     .desc = The Vityaz-M shockproof helmet was manufactured at the Research Institute of Steel. Development of the helmet began in the late 1980s. The helmet received a visor, although it turned out to be massive.
 ent-ClothingHeadHelmetVityaz1Merc = Vityaz 1S 'Mercenary' Helmet
     .desc = Vityaz 1C helmet modified by a certain mercenary company.
+
+# Zona14: merged content from case-duplicate file to fix Windows case-insensitive checkout collision
+ent-ClothingHeadHelmetVityaz1Zavet = "Vityaz 1M" helmet of the Covenant
+    .desc = The "Vityaz-M" impact-resistant helmet was manufactured at the Steel Research Institute. Development began in the late 1980s. The helmet received a visor, though it ended up rather bulky.
+ent-ClothingHeadHelmetVityazSkull1 = horned skull
+    .desc = The skull of a horned animal with steel plates inside.
+ent-ClothingHeadHelmetVityazSkull2 = horned skull
+    .desc = A steel skull of a horned animal.
+ent-ClothingHeadHelmetVityazSkull3 = horned skull
+    .desc = The skull of a horned animal with steel plates inside.
+ent-ClothingHeadHelmetVityazSkull4 = horned skull
+    .desc = A steel skull of a horned animal.

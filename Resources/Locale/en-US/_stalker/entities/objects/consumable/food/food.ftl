@@ -50,3 +50,8 @@ ent-STFoodMeatSaloCooked = cooked salo
 ent-STFoodMeatMeatbat = “Zyryanovskaya” sausage
     .desc = A sausage made in Zyryanovka settlement; it’s heavy enough to hit someone hard.
     .suffix = { ent-STFoodMeatSalo.suffix }
+
+# Zona14: merged content from case-duplicate file to fix Windows case-insensitive checkout collision
+ent-STFoodBreadSliceBase = { "" }
+    .desc = { "" }
+    .suffix = Stalker, Food

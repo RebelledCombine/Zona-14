@@ -101,3 +101,7 @@ ent-NPCMercHummingbird = Hummingbird [→ ←]
 ent-NPCMolitChevron = Pleiades
     .desc = Exchanges monolith chevrons for rare items.
     .suffix = ST, Chevron, DO NOT MAP YET
+
+# Zona14: merged content from case-duplicate file to fix Windows case-insensitive checkout collision
+ent-NPCJa = Toad [-> ? <-]
+    .desc = The main trader at this old boat station. Better to be on his good side.

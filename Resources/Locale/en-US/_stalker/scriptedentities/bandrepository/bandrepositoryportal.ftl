@@ -109,3 +109,8 @@ ent-PortalBandPoiskRepository = Band-Poisk-Repository
 ent-PortalBandMonolithRepository = Band-Monolith-Repository
     .desc = { ent-PortalBandMilitaryStalkerRepository.desc }
     .suffix = { ent-PortalBandNeutralsRepository.suffix }
+
+# Zona14: merged content from case-duplicate file to fix Windows case-insensitive checkout collision
+ent-PortalBandResearchInstitutesRepository-Kordon = Band-ResearchInstitutes-Repository
+    .desc = Band-ResearchInstitutes-Repository-desc
+    .suffix = Cordon

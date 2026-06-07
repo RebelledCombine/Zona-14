@@ -13,3 +13,6 @@ ent-longrangemetaldetectorCrategrass = Cache (grass sprite)
 ent-longrangemetaldetectorCrategrassSpawner = geocache spawner grass (10%)
 ent-longrangemetaldetectorCrategrassSpawner05 = Geocache Spawner Grass (5%)
 ent-longrangemetaldetectorCrategrassSpawner01 = Geocache Spawner Grass (1%)\
+
+# Zona14: merged content from case-duplicate file to fix Windows case-insensitive checkout collision
+ent-longrangemetaldetectorCrateSpawner25 = stash spawner invisible (25%)

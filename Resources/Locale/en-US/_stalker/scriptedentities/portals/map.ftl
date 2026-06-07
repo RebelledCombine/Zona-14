@@ -154,3 +154,9 @@ ent-RedForest-LimaOneside = Red Forest – Lima
 ent-RedForest-LimaOnesideUncollide = Red Forest – Lima Uncollide
 ent-Bar-Topi = Bar‑Topi
 ent-Topi-Bar = Topi‑Bar
+
+# Zona14: merged content from case-duplicate file to fix Windows case-insensitive checkout collision
+ent-RedForest-Limansk = Red Forest - Limansk
+ent-Limansk-RedForest = Limansk - Red Forest
+ent-RedForest-Limansk2 = Red Forest - Limansk
+ent-Limansk-RedForest2 = Limansk - Red Forest 2

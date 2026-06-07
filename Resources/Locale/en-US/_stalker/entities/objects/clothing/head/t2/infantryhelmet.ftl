@@ -28,3 +28,7 @@ ent-ClothingHeadHelmetInfantryDolg = “Vostok” Duty Helmet
     .desc = Infantry helmet model “Vostok”, Class 2 protection. Manufacturer unknown.
 ent-STClothingHeadHelmetFASTNeutral = neutral FAST helmet
     .desc = A repainted and slightly modified FAST helmet, reworked by Neutral craftsmen.
+
+# Zona14: merged content from case-duplicate file to fix Windows case-insensitive checkout collision
+ent-ClothingHeadHelmetInfantryProject = modified "Vostok" helmet
+    .desc = A "Vostok" infantry helmet of the second protection class, manufacturer unknown.

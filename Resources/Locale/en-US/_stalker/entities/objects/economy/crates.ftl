@@ -145,3 +145,25 @@ ent-MonolithCrate762FMJ = Monolith 7.62x39 FMJ Ammo Crate
 ent-MonolithCrate739Mag30 = Monolith 7.62 Magazines Crate
     .desc = A supply crate containing 7.62mm magazines for the Monolith faction.
     .suffix = { ent-MonolithCrateBasicTools.suffix }
+
+# Zona14: merged content from case-duplicate file to fix Windows case-insensitive checkout collision
+ent-ArmyBloodPackMilitaryCrate = army blood pack kit
+    .desc = A basic army kit containing blood packs, intended for S.O.P. soldiers.
+    .suffix = Stalker
+ent-StalkerMedBandShopCrate = medical kit
+    .desc = A kit containing various medicine.
+    .suffix = Stalker
+ent-DesertirCrate = Renegades equipment kit
+    .desc = An equipment kit.
+ent-VeteranCrate = Stalker Militia equipment kit
+    .desc = An equipment kit.
+ent-BandityCrate = Bandits equipment kit
+    .desc = An equipment kit.
+ent-FreedomCrate = Freedom equipment kit
+    .desc = An equipment kit.
+ent-ZavetCrate = Covenant equipment kit
+    .desc = An equipment kit.
+ent-SefirotCrate = Seraphim equipment kit
+    .desc = An equipment kit.
+ent-DutyCrate = Bandits equipment kit
+    .desc = An equipment kit.

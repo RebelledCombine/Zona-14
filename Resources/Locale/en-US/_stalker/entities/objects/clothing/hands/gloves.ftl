@@ -13,3 +13,8 @@ ent-STClothingHandsGlovesCombat = combat gloves
 ent-STClothingHandsGlovesFoma = Tactical Gloves
     .desc = Tactical gloves are hard-wearing, with reinforced palms, knuckle protection and tactile sensitivity for weapons and work.
     .suffix = ST, Skin
+
+# Zona14: merged content from case-duplicate file to fix Windows case-insensitive checkout collision
+ent-STClothingHandsGlovesKrava = fingerless combat gloves
+    .desc = Tactical gloves made for comfortable wear by military personnel.
+    .suffix = ST, Custom

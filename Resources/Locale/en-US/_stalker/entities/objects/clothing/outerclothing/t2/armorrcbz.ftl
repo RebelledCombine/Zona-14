@@ -20,3 +20,7 @@ ent-ClothingOuterArmorRCBZProjectPJ5 = RChBZ PJ-5 suit
     .desc = Universal development of the "Project" prototype of the "PJ-5" version of the CBRN suit, which is protective equipment specially designed to provide maximum protection in chemical, biological and radiation atmospheres.
 ent-ClothingHelmRCBZProjectPJ5 = Mask "PJ-5"
     .desc = The PJ-5 version of the Effective Personal Protective Equipment for Chemical, Biological and Radiation Hazards developed by Proekt is the first prototype helmet that provides reliable air filtration by trapping harmful substances and particles, and protects the respiratory tract and skin from the effects of hazardous factors.
+
+# Zona14: merged content from case-duplicate file to fix Windows case-insensitive checkout collision
+ent-ClothingOuterArmorRCBZJournalists = "RCBZ" Journalists suit
+    .desc = Designed for working in conditions requiring radiation, chemical and biological protection (RCBZ). Used in expeditions to dangerous chemical zones to ensure the safety of the wearer. Not intended for combat operations, but specialized for providing protection and safety in conditions of threats from radiation, chemical and biological substances.

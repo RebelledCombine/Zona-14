@@ -43,3 +43,17 @@ ent-ClothingOuterCoatAugustM = August-M Raincoat
 ent-ClothingHeadHelmetAugustM = August-M Hood
     .desc = A durable hood that hides the owner's head.
     .suffix = Stalker
+
+# Zona14: merged content from case-duplicate file to fix Windows case-insensitive checkout collision
+ent-ClothingOuterCoatKrava = "Valkyrie" camouflage cloak
+    .desc = An advanced "Valkyrie" camouflage cloak. Made from lightweight components and materials that do not restrict the wearer's movement.
+    .suffix = ST, custom
+ent-ClothingHeadHelmetKrava = "Valkyrie" cloak hood
+    .desc = A sturdy hood that conceals the wearer's head.
+    .suffix = ST
+ent-ClothingOuterCoatKevlarBlack = kevlar cloak
+    .desc = A repainted kevlar cloak.
+    .suffix = ST, T3
+ent-ClothingOuterCoatSevaWhite = SEVA chainmail cloak
+    .desc = A repainted chainmail cloak.
+    .suffix = ST, T3

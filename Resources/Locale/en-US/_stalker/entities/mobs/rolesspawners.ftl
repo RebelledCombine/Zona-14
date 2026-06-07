@@ -74,3 +74,14 @@ ent-MobStalkerZombified = Zombified doll (rename me)
 ent-MobStalkerRookie = Rookie doll (rename me)
     .desc = NPC spawner
     .suffix = Stalker, patch pawn
+
+# Zona14: merged content from case-duplicate file to fix Windows case-insensitive checkout collision
+ent-MobStalkerLastDay = last day puppet (rename me)
+    .desc = { "" }
+    .suffix = Stalker, pawn with patch
+ent-MobStalkerSci_decan = dean puppet (rename me)
+    .desc = { "" }
+    .suffix = Stalker, pawn with patch
+ent-MobStalkerSci_rector = rector puppet (rename me)
+    .desc = { "" }
+    .suffix = Stalker, pawn with patch

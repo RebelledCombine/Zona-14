@@ -47,3 +47,17 @@ ent-ClothingHeadHelmetFreedomWind = "Wind of Freedom" Hood
     .desc = { ent-ClothingHeadHelmetDolgPS5M.desc }
 ent-ClothingOuterArmorMonolithOld = Monolith Suit
     .desc = A stalker suit of the "Monolith" faction, origin unknown. Rated as third-class armor, slightly inferior to the PSZ-9a military vest. Structurally resembles common stalker suits combining a ballistic vest and radiation protection suit. Provides moderate protection against weak firearms. Anomaly resistance is poor due to the lack of air filtration.
+
+# Zona14: merged content from case-duplicate file to fix Windows case-insensitive checkout collision
+ent-ClothingOuterArmorFirstbornSeraphimes = Firstborn suit
+    .desc = An old worn-out Monolith suit. Such suits were worn by the first Seraphim, who later named themselves the Firstborn.
+ent-ClothingHeadHelmetHatFirstbornSeraphimes = Firstborn hood
+    .desc = Hoods, helmets and the like.
+ent-STClothingOuterArmorPeresvet = "Peresvet" armor suit
+    .desc = An armor suit made by some craftsman with a peculiar appearance.
+    .suffix = ST, T4, PvP
+ent-STClothingHeadPeresvet = "Peresvet" armor suit helmet #base
+    .desc = Helmet from the "Peresvet" set.
+ent-STClothingOuterArmorKrava = "Valkyrie" camo Ratnik
+    .desc = Russian combat soldier gear, designed to improve the effectiveness and survivability of a serviceman on the battlefield. This particular model looks extremely worn out, but is still wearable.
+    .suffix = ST, T3, custom

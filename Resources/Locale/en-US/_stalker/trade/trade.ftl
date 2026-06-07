@@ -28,3 +28,11 @@ ent-PrizeTicket60 = { ent-PrizeTicket }
    .suffix = 60
    .desc = { ent-PrizeTicket.desc }
 # End Zona14
+
+# Zona14: merged content from case-duplicate file to fix Windows case-insensitive checkout collision
+ent-Trademachine = City vending machine
+    .desc = Need it now - it's right here. Pick, pay, take.
+    .suffix = vendor, normal
+ent-TrademachineCity = Kayot
+    .desc = Hands out tasks to stalkers.
+    .suffix = ST, QUESTS

@@ -16,3 +16,7 @@ ent-STClothingShoesBootsCombat = Combat Boots
 ent-STClothingShoesBootsCombatFilled = { ent-STClothingShoesBootsCombat }
     .suffix = ST, Filled
     .desc = { ent-STClothingShoesBootsCombat.desc }
+
+# Zona14: merged content from case-duplicate file to fix Windows case-insensitive checkout collision
+ent-ClothingShoesPVHCastom = boots with frogs
+    .desc = Reliable protection from moisture, dirt, toxic waste and the most unpleasant weather conditions. Made of durable and flexible polyvinyl chloride that prevents reagents from penetrating inside your feet.

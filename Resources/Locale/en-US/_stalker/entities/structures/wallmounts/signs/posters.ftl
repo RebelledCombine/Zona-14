@@ -259,3 +259,11 @@ ent-PosterinSingularity = Black Hole
 ent-PosterKarta = Old Map
     .desc = A time-worn map of the area. Most of the markings have faded, and some areas are completely worn out. Still, you can make out schematic drawings of anomaly zones and danger spots in a few places.
     .suffix = { ent-PosterZavetContraband.suffix }
+
+# Zona14: merged content from case-duplicate file to fix Windows case-insensitive checkout collision
+ent-PosterRedline = Red Line flag
+    .desc = Death to the Reich!
+    .suffix = ST, Mapping, Metro
+ent-PosterReich = Reich flag
+    .desc = Death to the Red Line!
+    .suffix = ST, Mapping, Metro

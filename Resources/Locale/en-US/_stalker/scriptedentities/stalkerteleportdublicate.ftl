@@ -64,3 +64,11 @@ ent-StalkerDublicateMechanic = { ent-StalkerDublicateKordon }
 ent-StalkerDublicateBar = { ent-StalkerDublicateKordon }
     .desc = { ent-StalkerDublicateKordon.desc }
     .suffix = Teleport, Portal, Duplicate, Bar
+
+# Zona14: merged content from case-duplicate file to fix Windows case-insensitive checkout collision
+ent-StalkerDublicateBoloto = basement to lair
+    .desc = Using this basement, you can travel to your lair.
+    .suffix = Teleport, Portal, Duplicate, Boloto
+ent-StalkerDublicateAtom = basement to lair
+    .desc = Using this basement, you can travel to your lair.
+    .suffix = Teleport, Portal, Duplicate, Atom

@@ -8,3 +8,8 @@ ent-STWeaponSMGVector9Black = KRISS Vector 9mm (Black)
     .desc = Tactical black variant maintaining all advanced recoil mitigation features in sleek low-visibility package.
 ent-STWeaponSMGVector9Forest = KRISS Vector 9mm (Forest Camo)
     .desc = Woodland camouflage version optimized for northern forested areas of the Zone.
+
+# Zona14: merged content from case-duplicate file to fix Windows case-insensitive checkout collision
+ent-STBaseWeaponSMGVector9 = { "" }
+    .desc = { "" }
+    .suffix = ST, Custom

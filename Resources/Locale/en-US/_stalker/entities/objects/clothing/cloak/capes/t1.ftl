@@ -33,3 +33,10 @@ ent-STClothingHeadHelmetSerafim = Seraphim Cloak Hood
     .desc = Covers your head
 ent-ClothingCapeRenegat = Rogue Cloak
     .desc = Piece of cloth in pixelated poop camouflage, can be worn as a raincoat if desired
+
+# Zona14: merged content from case-duplicate file to fix Windows case-insensitive checkout collision
+ent-STClothingOldRoadCape = old road cloak
+    .desc = A worn-out cloak that protects against dust and wind.
+    .suffix = ST, T1, Skin
+ent-STClothingHeadOldRoadHelmet = old road cloak hood
+    .desc = Covers your head.

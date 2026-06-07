@@ -28,3 +28,11 @@ ent-MP5Mag50 = MP-5 Magazine (50)
     .desc = MP-5 9x19 magazine. Bullet capacity 50. They sell empty.
 ent-LP08Drum = Luger drum (32)
     .desc = A drum magazine for the Luger using 9x19. Capacity: 32 rounds. Sold empty.
+
+# Zona14: merged content from case-duplicate file to fix Windows case-insensitive checkout collision
+ent-BasePP2000Mag = PP-2000 9x19 magazine (20)
+    .desc = 9x19mm magazine for the PP-2000. Holds 20 rounds. Sold empty.
+    .suffix = Stalker
+ent-BaseOTS126Mag = OTs-126 9x19 magazine (10)
+    .desc = 9x19mm magazine for the OTs-126. Holds 10 rounds. Sold empty.
+    .suffix = Stalker

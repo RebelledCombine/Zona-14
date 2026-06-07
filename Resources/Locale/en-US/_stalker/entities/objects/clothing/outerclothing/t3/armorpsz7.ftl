@@ -12,3 +12,8 @@ ent-STClothingOuterArmorDesertersPSZ7 = Decurion Renegade PSZ-7
 ent-STClothingOuterArmorLightPlateVestBasePSZ7rene = PSZ-7 'Fang'
     .desc = Former military "PSZ-7" and now a walking nightmare. A brown jumpsuit, bone spikes sticking out in all directions, and a skull on his belt as a reminder. You're the prey. The renegades have turned this armor into the embodiment of their madness.
     .suffix = ST, T3, PvP
+
+# Zona14: merged content from case-duplicate file to fix Windows case-insensitive checkout collision
+ent-STClothingOuterArmorLightPlateVestBasePSZ7Zavet = PSZ-7 of the Covenant
+    .desc = An army body armor of the PSZ-7 Covenant series, no different from the basic one except for the coloring.
+    .suffix = ST, T3, PvP

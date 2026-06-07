@@ -19,3 +19,11 @@ ent-ClothingHeadAssaultHelmetSeraZastup = helmet “Zastupnik”
     .desc = combat helmet “Zenit,” third-class protection, with painted stripes.
 ent-ClothingHeadAssaultHelmetLimaSeraZastup = { ent-ClothingHeadAssaultHelmetSeraZastup }
     .desc = gray combat helmet “Zenit,” third-class protection, with painted stripes.
+
+# Zona14: merged content from case-duplicate file to fix Windows case-insensitive checkout collision
+ent-ClothingHeadArmorSkyWalkerHelm = "SFERA S-10" exo-helmet
+    .desc = A helmet that offers decent combat performance, and thanks to a built-in gas mask it boasts fairly good radiation protection. Other characteristics, particularly anomaly resistance, are quite poor.
+ent-ClothingHeadAssaultHelmetZavet = "Zenit" helmet of Zavet
+    .desc = A "Zenit" combat helmet of the third protection class.
+ent-ClothingHeadAssaultHelmetFreedom = "Zenit" helmet of Freedom
+    .desc = A "Zenit" combat helmet of the third protection class.

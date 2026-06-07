@@ -12,3 +12,8 @@ ent-ClothingHeadHelmetBulatCovenant = Covenant Sphere-12 Helmet
     .suffix = Stalker, Covenant
 ent-ClothingHeadHelmetBerill5MCN = Clear Sky Sphere-12 Helmet
     .desc = This is a helmet specifically designed to protect against stabbing attacks. There is resistance to other types of damage.
+
+# Zona14: merged content from case-duplicate file to fix Windows case-insensitive checkout collision
+ent-ClothingHeadHelmetCN3b = "ChN-3b" helmet
+    .desc = { "" }
+    .suffix = ST, T4, Env

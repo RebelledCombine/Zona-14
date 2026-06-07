@@ -22,3 +22,14 @@ ent-DrumAutoAssBig = AA-12 Drum (20)
 ent-DrumAutoAssVeryBig = AA-12 Drum (32)
     .desc = { ent-DrumAutoAssSmall.desc }
     .suffix = { ent-DrumAutoAssSmall.suffix }
+
+# Zona14: merged content from case-duplicate file to fix Windows case-insensitive checkout collision
+ent-Base1270OriginMag = Origin-12 12x70 magazine (5)
+    .desc = Origin-12 12x70 magazine. Holds 5 shells. Sold empty.
+    .suffix = Stalker
+ent-Origin1270Mag10 = Origin-12 12x70 magazine (10)
+    .desc = Origin-12 12x70 magazine. Holds 10 shells. Sold empty.
+    .suffix = Stalker
+ent-Origin1270Drum = Origin-12 12x70 drum (20)
+    .desc = Origin-12 12x70 drum magazine. Holds 20 shells. Sold empty.
+    .suffix = Stalker

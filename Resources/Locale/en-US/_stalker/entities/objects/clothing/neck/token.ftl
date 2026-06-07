@@ -4,3 +4,8 @@ ent-ClothingStalkerNeckToken = Warrior Token
 ent-ClothingStalkerNeckTokenSeraphim = Seraphim token
     .desc = This is a unique military insignia associated with the Seraphim's religious faction. Its design reflects the symbolism of the group - it is made of durable metal. The obverse of the token is engraved with the main creed of the Seraphim, possibly incorporating elements of ancient languages or sacred signs. The reverse side is for the owner's personal information - name, identification number, and possibly rank in the group.
     .suffix = Stalker, Headband
+
+# Zona14: merged content from case-duplicate file to fix Windows case-insensitive checkout collision
+ent-ClothingStalkerNeckKulonSeraphim = green pendant
+    .desc = A Seraphim pendant belonging to someone extremely important... it gives off a dim color that, while not noticeable, still means something... Maybe it helps communicate with other covens? Or it indicates artifacts? However, no one but it itself will ever know.
+    .suffix = Stalker, Armband

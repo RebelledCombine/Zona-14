@@ -60,3 +60,9 @@ ent-STClothingOuterArmorCN-4a = CN-4A Seva Suit
     .desc = An unofficial version of the SEVA scientific suit for Clear Sky research teams, supplied to the Zone by smugglers. Still retains the scent of the mainland.
 ent-STClothingOuterArmorCN-4aResearcher = CHN-4a Explorer
     .desc = An unofficial version of the SEVA scientific suit, extensively modified by Novikov, a Clear Sky technician. The suit is highly ergonomic, providing much-needed mobility when exploring anomalous fields. It is extremely popular among the group's veteran researchers.
+
+# Zona14: merged content from case-duplicate file to fix Windows case-insensitive checkout collision
+ent-ClothingOuterArmorSevaVano = "SEVA" suit M1 V.A.N.O
+    .desc = A SEVA suit made by a folk craftsman with improved characteristics for fighting both mutants and hostiles. Modified with composite plates and stitched with polycarbonate thread. The arms and legs are painted white, while the chestplate and helmet, by contrast, are black. A white skull is visible on the chestplate.
+ent-ClothingHeadHardsuitSevaVano = SEVA helmet M1 V.A.N.O
+    .desc = Despite being made primarily of glass, it is quite durable.
