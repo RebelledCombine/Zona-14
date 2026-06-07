@@ -1,12 +1,13 @@
 - type: mapLoader
   id: StalkerBaseMaps
   mapPaths:
-    BarUnderground: /Maps/_ST/World/UndegroundWildsBar100radsV38.yml
+    BarUnderground: /Maps/_Zona14/World/RostokBarAndRVBunker.yml # Zona14 change
     Dytiatky: /Maps/_Zona14/World/Dytiatky.yml # Zona14 change
     MilitaryBase: /Maps/_ST/World/MBaseV15.yml
-    Darkscape: /Maps/_ST/World/TemnajLohinaV99.yml
-    Swamps: /Maps/_ST/World/BolotaV83.yml
-    Garbage: /Maps/_ST/World/SvalkaV173.yml
+    Darkscape: /Maps/_Zona14/World/Darkscape.yml # Zona14 change
+    Swamps: /Maps/_Zona14/World/Swamps.yml # Zona14 change
+    Garbage: /Maps/_Zona14/World/Garbage.yml # Zona14 change
+    Cordon: /Maps/_Zona14/World/Cordon.yml # Zona14 change
     #Agroprom: /Maps/_ST/World/AgropromV109.yml #Zona14 Disabled for now
     #DarkValley: /Maps/_ST/World/TemnajDolinaGEN2V80.yml #Zona14 Disabled for now
     #Rostok: /Maps/_ST/World/RostokAndWildsV85.yml #Zona14 Disabled for now
