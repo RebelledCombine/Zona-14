@@ -1,0 +1,8 @@
+author: teecoding
+time: '2026-06-07T21:39:30Z'
+url: https://github.com/Zona-14/Zona-14/pull/46
+changes:
+- type: Fix
+  message: 'MAPS: Fixed garbled Russian text on signs, papers, graves, and items across
+    the Cordon, Darkscape, Garbage, and Swamps maps.'
+category: Main
