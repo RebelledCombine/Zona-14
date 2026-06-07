@@ -266,4 +266,21 @@
   id: 26
   time: '2026-05-28T07:31:19Z'
   url: https://github.com/Zona-14/Zona-14/pull/38
+- author: Roland410
+  changes:
+  - message: The Cemetery war zone now activates correctly.
+    type: Fix
+  id: 27
+  time: '2026-05-31T11:08:57Z'
+  url: https://github.com/Zona-14/Zona-14/pull/41
+- author: Noguchi47
+  changes:
+  - message: Added new faction bases to Cordon, Garbage, Swamps, and Darkscape.
+    type: Add
+  - message: Added ghost warp locations across several maps for easier navigation
+      and event management.
+    type: Add
+  id: 28
+  time: '2026-06-07T16:32:27Z'
+  url: https://github.com/Zona-14/Zona-14/pull/44
 Order: 0
