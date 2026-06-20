@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: LocalTeleportBase
   id: LocalTeleportBasement5
   suffix: Stalker 5
-  name: Чистилище-Сталкер1
+  name: Purgatory-Stalker 1
   components:
     - type: LocalTeleport
       portalName: Basement5
@@ -11,7 +12,7 @@
   parent: LocalTeleportBaseUncollide
   id: LocalTeleportBasement51
   suffix: Stalker 5
-  name: Чистилище-Сталкер1 нонколлижн
+  name: Purgatory-Stalker 1 (No Collision)
   components:
     - type: LocalTeleport
       portalName: Basement5
@@ -20,7 +21,7 @@
   parent: LocalTeleportBase
   id: LocalTeleportBasement52
   suffix: Stalker 5
-  name: Чистилище-Сталкер2
+  name: Purgatory-Stalker 2
   components:
     - type: LocalTeleport
       portalName: Basement52
@@ -29,18 +30,18 @@
   parent: LocalTeleportBaseUncollide
   id: LocalTeleportBasement512
   suffix: Stalker 5
-  name: Чистилище-Сталкер2 нонколлижн
+  name: Purgatory-Stalker 2 (No Collision)
   components:
     - type: LocalTeleport
       portalName: Basement52
 
-#############################Военка
+# Zona14: ############################Военка
 
 - type: entity
   parent: LocalTeleportBase
   id: LocalTeleportMilBase1
   suffix: Stalker 1
-  name: Военная база 1
+  name: Military Base 1
   components:
     - type: LocalTeleport
       portalName: MilBase1
@@ -49,7 +50,7 @@
   parent: LocalTeleportBase
   id: LocalTeleportMilBase2
   suffix: Stalker 2
-  name: Военная база 2
+  name: Military Base 2
   components:
     - type: LocalTeleport
       portalName: MilBase2
@@ -58,18 +59,18 @@
   parent: LocalTeleportBase
   id: LocalTeleportMilBase3
   suffix: Stalker 3
-  name: Военная база 3
+  name: Military Base 3
   components:
     - type: LocalTeleport
       portalName: MilBase3
 
-################################Подземка Свалки
+# Zona14: ###############################Подземка Свалки
 
 - type: entity
   parent: LocalTeleportBase
   id: LocalTeleportSvUnderground
   suffix: Stalker 1
-  name: Подземелье Свалки 1
+  name: Dump Dungeon 1
   components:
     - type: LocalTeleport
       portalName: SvUnderground
@@ -78,22 +79,22 @@
   parent: LocalTeleportBase
   id: LocalTeleportSvUnderground2
   suffix: Stalker 2
-  name: Подземелье Свалки 2
+  name: Dump Dungeon 2
   components:
     - type: LocalTeleport
       portalName: SvUnderground2
 
-################################Этажи для жаб
+# Zona14: ###############################Этажи для жаб
 - type: entity
   parent: LocalTeleportBase
   id: LocalTeleportJabasFloors
   suffix: Jaba
-  name: Жабий подвал
+  name: "Toad's Basement"
   components:
     - type: LocalTeleport
       portalName: JabasFloors
 
-################################Вход в базу монолита
+# Zona14: ###############################Вход в базу монолита
 - type: entity
   parent: LocalTeleportBase
   id: LocalTeleportmonolith

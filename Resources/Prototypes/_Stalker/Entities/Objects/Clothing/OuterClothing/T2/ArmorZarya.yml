@@ -1,3 +1,4 @@
+# Zona14: translated Russian names/descriptions to English
 
 - type: entity
   parent: STClothingOuterArmorStorageBasic
@@ -45,8 +46,8 @@
 - type: entity
   parent: STClothingOuterArmorZaryaBase
   id: ClothingOuterArmorZaryaStalker
-  name: комбинезон «Заря»
-  description: Производимый «народными умельцами» комбинезон сталкера представляет собой эффективное сочетание лёгкого армейского бронежилета и комбинезона из прорезиненной ткани. Усилен за счёт встроенных кевларовых пластин. Неплохо защищает от слабого стрелкового оружия. В целом крайне недостаточен для глубоких рейдов и серьёзных операций в узлах Зоны.
+  name: Sunrise suit
+  description: Produced by "craftsmen", the stalker suit is an effective combination of a light army body armor and a jumpsuit made of rubberized fabric. Reinforced with built-in Kevlar plates. Good protection against weak small arms. In general, it is extremely insufficient for deep raids and serious operations in the nodes of the Zone.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/outerClothing/zarya_stalker.rsi
@@ -59,9 +60,9 @@
 - type: entity
   parent: STClothingHeadHatBase
   id: ClothingHeadHelmetZaryaStalker
-  name: капюшон «Заря»
+  name: hood "Sunrise"
   categories: [ HideSpawnMenu ]
-  description: Вольный как воздух у облаков.
+  description: Free as air in clouds.
   components:
     - type: Sprite
       sprite: _Stalker/Objects/Clothing/hats/zarya_helm_stalker.rsi
@@ -77,8 +78,8 @@
 - type: entity
   parent: STClothingOuterArmorZaryaBase
   id: ClothingOuterArmorZaryaTourist
-  name: комбинезон «Турист»
-  description:  Разработанный НИИЧАЗ комбинезон, предназначенный для походов за периметр. В целом крайне недостаточен для глубоких рейдов и серьёзных операций в узлах Зоны, но способен значительно облегчить ношу владельца.
+  name: '"Tourist" overalls'
+  description: NIICHAZ-designed overalls designed for hiking outside the perimeter. In general, it is extremely insufficient for deep raids and serious operations in the nodes of the Zone, but it is able to significantly lighten the burden of the owner.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/outerClothing/zarya_tourist.rsi
@@ -111,8 +112,8 @@
 - type: entity
   parent: STClothingOuterArmorZaryaBase
   id: ClothingOuterArmorZaryaHunter
-  name: комбинезон «Кинолог»
-  description: Крайне популярная среди сталкеров кустарная модификация «Зари». Создан для защиты от мутантов.
+  name: '"Cynologist" overalls'
+  description: A very popular homemade modification of the Sunrise among stalkers. Designed to protect against mutants.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/outerClothing/zarya_hunter.rsi
@@ -144,8 +145,8 @@
 - type: entity
   parent: STClothingOuterArmorZaryaBase
   id: ClothingOuterArmorZaryaJabs
-  name: комбинезон «Путник»
-  description: «Заря» жаб, чуть-чуть легче обычной
+  name: Wayfarer Jumpsuit
+  description: '"Sunrise" of toads, a little lighter than usual'
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/outerClothing/zarya_jab.rsi
@@ -158,8 +159,8 @@
 - type: entity
   parent: STClothingOuterArmorZaryaBase
   id: ClothingOuterArmorZaryaMilitary
-  name: пустынная «Заря» 'Военных'
-  description: «Заря» 'Военных', с усиленной бронёй и увеличенными защитами вообще от всего - эталон модификации бандитских умельцев.
+  name: Desert Sunrise 'Military'
+  description: "\"Sunrise\" of the Military, with reinforced armor and increased defenses against everything in general - the standard of modification of bandit craftsmen."
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/outerClothing/zarya_military.rsi
@@ -189,8 +190,8 @@
 - type: entity
   parent: STClothingOuterArmorZaryaBase
   id: ClothingOuterArmorZaryaRene
-  name: костюм "Заря" 'Пугало'
-  description: Коричневый комбинезон, заляпанный оранжевой краской , ржавые пластины, прикрученные чем попало… эта "Заря" выглядит так, будто ее собрали из мусора на помойке. Не знаешь, что страшнее - владелец или сама броня.
+  name: Sunrise Scarecrow Costume
+  description: "Brown jumpsuit stained with orange paint, rusty plates screwed with anything... this \"Sunrise\" looks as if it was collected from the garbage in the garbage. You don't know what is more terrible - the owner or the armor itself."
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/outerClothing/rene_zarya.rsi
@@ -215,9 +216,9 @@
 - type: entity
   parent: STClothingOuterArmorZaryaBase
   id: STClothingOuterArmorRassvetSera
-  name: комбинезон «Рассвет»
+  name: Sunrise Jumpsuit
   suffix: ST, T1, PVE
-  description: комбинезон «Рассвет», используемый группировкой «Серафимы» для выполнения тактических задач с повышенной защитой от агрессивной фауны.
+  description: Sunrise Jumpsuit, used by the Seraphim for tactical missions with increased protection against aggressive fauna.
   components:
     - type: Sprite
       sprite: _Stalker/Objects/Clothing/outerClothing/_Sera/rassvet.rsi
@@ -245,8 +246,8 @@
 - type: entity
   parent: STClothingHeadHatBase
   id: ClothingHeadCapoSera
-  name: капюшон
-  description: Защиты не обеспечивает.
+  name: hood
+  description: Does not provide protection.
   categories: [ HideSpawnMenu ]
   components:
     - type: Sprite
@@ -260,8 +261,8 @@
 - type: entity
   parent: STClothingOuterArmorZaryaBase
   id: ClothingOuterArmorZaryaNeutral
-  name: комбинезон «Светило»
-  description: «Заря» нейтралов, отлично подойдёт для выхода в Зону и битвы с мутантами, но не перестрелки.
+  name: Luminary Jumpsuit
+  description: '"Sunrise" of neutrals, perfect for entering the Zone and fighting mutants, but not for firefights.'
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/outerClothing/zarya_neytralov.rsi
@@ -293,8 +294,8 @@
 - type: entity
   parent: STClothingOuterArmorZaryaBase
   id: ClothingOuterArmorZaryaDolg
-  name: комбинезон «Патруль»
-  description: Представляет собой сочетание двухслойной прорезиненной ткани с плексигласовой прокладкой и встроенного бронежилета. По сути, тот же самый комбинезон «Заря» только модифицирован умельцами группировки «Долг» для более безопасных вылазок в условиях Зоны.
+  name: Overalls "Patrol"
+  description: It is a combination of a two-layer rubberized fabric with a plexiglass padding and a built-in body armor. In fact, the same "Sunrise" jumpsuit is only modified by the craftsmen of the "Dolg" group for safer sorties in the conditions of the Zone.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/outerClothing/zarya_dolg.rsi
@@ -329,7 +330,7 @@
 - type: entity
   parent: STClothingHeadHatBase
   id: ClothingHeadHelmetZaryaDolg
-  name: капюшон Зари Долга
+  name: Sunrise of Duty Hood
   categories: [ HideSpawnMenu ]
   components:
     - type: Sprite
@@ -343,8 +344,8 @@
 - type: entity
   parent: STClothingOuterArmorZaryaBase
   id: ClothingOuterArmorZaryaPoisk
-  name: комбинезон «Декс»
-  description: Легкий и мобильный комбинезон «Заря» группировки «Поиск» представляет собой усовершенствованную версию стандартного костюма.
+  name: Dex Jumpsuit
+  description: "The Poisk Group's Lightweight and Mobile Sunrise Jumpsuit is an improved version of the Standard Suit."
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/outerClothing/zarya_poisk.rsi
@@ -356,8 +357,8 @@
 - type: entity
   parent: STClothingOuterArmorZaryaBase
   id: ClothingOuterArmorZaryaStalkerModifedType1
-  name: комбинезон «Заря-3»
-  description: Модифицированный комбинезон «Заря», предназначен для защиты от мутантов.
+  name: Sunrise-3 overalls
+  description: Modified "Sunrise" coveralls, designed to protect against mutants.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/outerClothing/zarya_stalker.rsi
@@ -383,8 +384,8 @@
 - type: entity
   parent: STClothingOuterArmorZaryaBase
   id: ClothingOuterArmorZaryaStalkerModifedType2
-  name: комбинезон «Заря-7»
-  description: Одна из итераций "Зари", большая часть брони заменена изолирующим материалом.
+  name: Overalls "Sunrise-7"
+  description: One of the iterations of Sunrise, most of the armor has been replaced with insulating material.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/outerClothing/zarya_stalker.rsi
@@ -420,9 +421,9 @@
 - type: entity
   parent: STClothingOuterArmorZaryaBase
   id: STClothingOuterArmorProjectZarya
-  name: Модифицированная Заря
+  name: Sunrise made according to an incomprehensible project
   suffix: ST, T2, PvE, Project
-  description: Странная Заря, сделанная непонятно кем и непонятно зачем.
+  description: A strange Sunrise made by who knows who and why
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/outerClothing/project_zarya.rsi
@@ -435,8 +436,8 @@
 - type: entity
   parent: STClothingHeadHatBase
   id: ClothingHeadCapoProject
-  name: капюшон
-  description: Защиты не обеспечивает.
+  name: hood
+  description: Does not provide protection.
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
@@ -457,8 +458,8 @@
 - type: entity
   parent: STClothingOuterArmorZaryaBase
   id: STClothingOuterArmorDesertersZarya
-  name: Заря отступников "Триарий" # не переименовывайте
-  description: бронекомбез "Заря" Отступников, практически ничем не отличается от обычной, кроме пары дополнительных бронепластин.
+  name: Apostate Sunrise "Triarius"
+  description: "Renegades' Sunrise armored combat, almost no different from the usual one, except for a couple of additional armor plates."
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/outerClothing/deserter_zarya.rsi
@@ -468,8 +469,8 @@
 - type: entity
   parent: STClothingOuterArmorZaryaBase
   id: STClothingOuterArmorBandits
-  name: заря бандитов «Бродяга»
-  description: Совмещённая с плащём «Заря», улучшенная и перекрашенная под бандитские понты. Обеспечивает 2 класс защиты.
+  name: Sunrise of the Bandits "Tramp"
+  description: Combined with the Sunrise cloak, upgraded and repainted to look like a bandit show-off. Provides protection class 2.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/outerClothing/Bandit_zarya.rsi
@@ -506,8 +507,8 @@
 - type: entity
   parent: STClothingHeadHatBase
   id: ClothingHeadWandererCap
-  name: капюшон Бродяги
-  description: Тёмный капюшон от бандитского понтового аналога Зари.
+  name: "Rogue's Hood"
+  description: "Dark hood from Sunrise's bandit show-off counterpart."
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
@@ -516,13 +517,13 @@
     sprite: _Stalker/Objects/Clothing/hats/Bandit_zarya_cap.rsi
 
 
-#СКИНЫ
+# Zona14: СКИНЫ
 
 - type: entity
   parent: STClothingOuterArmorZaryaBase
   id: ClothingOuterArmorZaryaSeraRuined
-  name: комбинезон «Заря»
-  description: Кустарно перекрашенная и убитая в хлам «Заря»
+  name: Sunrise jumpsuit
+  description: Homemade repainted and trash "Sunrise"
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/outerClothing/zarya_ruined.rsi

@@ -1,0 +1,40 @@
+- type: entity
+  parent: Z14GasMaskBase
+  id: Z14STClothingMaskSeraphimSkull
+  categories: [ Zona14 ]
+  name: steel skull mask
+  description: A mask has always served to hide the face, protect from toxic gases or bullets. But this mask's purpose is to terrify.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/mask/skullmasksera.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/mask/skullmasksera.rsi
+  - type: Tag
+    tags:
+      - BlockMask
+  - type: STWeight
+    self: 4
+  - type: ContainerContainer
+    containers:
+      toggleable-clothing: !type:ContainerSlot {}
+  - type: ToggleableClothing
+    slot: head
+    requiredSlot: mask
+    clothingPrototype: STClothingHeadHelmetSerafimSkull
+
+- type: entity
+  parent: STClothingHeadHelmetSerafim
+  id: Z14STClothingHeadHelmetSerafimSkull
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/Head/Sera_/coat_hat_skull.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/Head/Sera_/coat_hat_skull.rsi
+  - type: IngestionBlocker
+  - type: IdentityBlocker
+  - type: Tag
+    tags:
+      - BlockMask

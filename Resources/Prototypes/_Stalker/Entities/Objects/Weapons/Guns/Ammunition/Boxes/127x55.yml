@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: BaseAmmoBoxStalker
   id: Ammobox1255PS12A
-  name: Коробка 12,7x55 ПС12А
-  description: Для РШ и АШ-12, 1й класс пробития, 20 штук
+  name: 12.7x55 PS12A Ammo Box
+  description: For RSh and ASh-12, 1st penetration class, 20 pieces
   components:
   - type: MagazineVisuals
     magState: 1270red
@@ -22,8 +23,8 @@
 - type: entity
   parent: BaseAmmoBoxStalker
   id: Ammobox1255TP
-  name: Коробка 12,7x55 ТП
-  description: Для РШ и АШ-12, 2й класс пробития, 20 штук
+  name: 12.7x55 TP Ammo Box
+  description: For RSh and ASh-12, 2nd penetration class, 20 pieces
   components:
   - type: MagazineVisuals
     magState: 1270red
@@ -43,8 +44,8 @@
 - type: entity
   parent: BaseAmmoBoxStalker
   id: Ammobox1255BP
-  name: Коробка 12,7x55 БП
-  description: Для РШ и АШ-12, 4й класс пробития, 20 штук
+  name: 12.7x55 BP Ammo Box
+  description: For RSh and ASh-12, 4th penetration class, 20 pieces
   components:
   - type: MagazineVisuals
     magState: 1270red
@@ -64,8 +65,8 @@
 - type: entity
   parent: BaseAmmoCinkBoxStalker
   id: Ammobox1255PS12ACink
-  name: ящик 12,7x55 ПС12А
-  description: Для РШ и АШ-12, 1й класс пробития, 200 штук
+  name: 12.7x55 PS12A Large Ammo Box
+  description: For RSh and ASh-12, 1st penetration class, 200 pieces
   components:
   - type: BallisticAmmoProvider
     capacity: 200
@@ -83,8 +84,8 @@
 - type: entity
   parent: BaseAmmoCinkBoxStalker
   id: Ammobox1255TPCink
-  name: ящик 12,7x55 ТП
-  description: Для РШ и АШ-12, 2й класс пробития, 200 штук
+  name: 12.7x55 TP Large Ammo Box
+  description: For RSh and ASh-12, 2nd penetration class, 200 pieces
   components:
   - type: BallisticAmmoProvider
     capacity: 200
@@ -102,8 +103,8 @@
 - type: entity
   parent: BaseAmmoCinkBoxStalker
   id: Ammobox1255BPCink
-  name: ящик 12,7x55 БП
-  description: Для РШ и АШ-12, 4й класс пробития, 200 штук
+  name: 12.7x55 BP Large Ammo Box
+  description: For RSh and ASh-12, 4th penetration class, 200 pieces
   components:
   - type: BallisticAmmoProvider
     capacity: 200

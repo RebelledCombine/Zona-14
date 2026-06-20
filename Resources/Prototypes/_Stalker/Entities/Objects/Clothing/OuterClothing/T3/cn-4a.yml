@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: STClothingOuterArmorStorageBasic
   id: STClothingOuterArmorCN-4a
-  name: ЧН-4а
-  description: Неофициальная версия научного комбинезона «СЕВА» для исследовательских групп «Чистого неба», поставляемая в Зону контрабандистами. Всё ещё сохранила запах Большой земли.
+  name: CN-4A Seva Suit
+  description: An unofficial version of the SEVA scientific suit for Clear Sky research teams, supplied to the Zone by smugglers. Still retains the scent of the mainland.
   suffix: ST, T3, Env
   components:
   - type: Sprite

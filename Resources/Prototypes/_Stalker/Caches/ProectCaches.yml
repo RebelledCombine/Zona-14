@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: STBaseCache
   id: STCacheStorageProect
   suffix: Project
-  name: ящик проекта
-  description: Довольно старый ящик. Возможно, стоит его обыскать.
+  name: Project Crate
+  description: A fairly old crate. Might be worth searching.
   components:
     - type: StorageFill
       contents:
@@ -24,9 +25,9 @@
 - type: entity
   parent: BaseItem
   id: ProectPVE
-  name: набор Проекта для охоты
-  description: Набор стандартный поставки экипировки Проекта
-  suffix: Stalker, т3, Project
+  name: Project Hunting Kit
+  description: Standard Project equipment supply kit.
+  suffix: Stalker, t3, Project # Zona14: Stalker, т3, Project
   components:
     - type: Item
       size: Small
@@ -66,9 +67,9 @@
 - type: entity
   parent: BaseItem
   id: ProectENV
-  name: набор Проекта для артефактов
-  description: Набор стандартный поставки экипировки Проекта
-  suffix: Stalker, т3, Project
+  name: Project Artifact Kit
+  description: "{ ent-ProectPVE.desc }"
+  suffix: Stalker, t3, Project # Zona14: Stalker, т3, Project
   components:
     - type: Item
       size: Small
@@ -112,9 +113,9 @@
 - type: entity
   parent: BaseItem
   id: ProectPVP
-  name: набор Проекта для охоты на двух ногую дичь
-  description: Набор стандартный поставки экипировки Проекта
-  suffix: Stalker, т2, Project
+  name: Project PvP Kit
+  description: "{ ent-ProectPVE.desc }"
+  suffix: Stalker, t2, Project # Zona14: Stalker, т2, Project
   components:
     - type: Item
       size: Small
@@ -169,9 +170,9 @@
 - type: entity
   parent: BaseItem
   id: ProectPVP2
-  name: продвинутый набор Проекта для охоты на двух ногую дичь
-  description: Набор продвинутый поставки экипировки Проекта
-  suffix: Stalker, т3, Project
+  name: Advanced Project PvP Kit
+  description: An advanced Project equipment supply kit.
+  suffix: Stalker, t3, Project # Zona14: Stalker, т3, Project
   components:
   - type: Item
     size: Small

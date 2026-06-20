@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: STClothingOuterArmorStorageBasic
   id: ClothingOuterArmorZN1
-  name: бронежилет с комбезинозом «ЗН-1».
-  description: Данный бронежилет разрабатывался для проведения поисковых операций в областях с низкой аномальной активностью. Использование довольно качественных материалов повысило устойчивость к износу.
+  name: body armor with "ZN-1" overalls.
+  description: This body armor was designed to conduct search operations in areas with low anomalous activity. The use of fairly high-quality materials has increased the resistance to wear.
   suffix: ST, T2, Universal
   components:
   - type: STWeight
@@ -54,7 +55,7 @@
 - type: entity
   parent: STClothingHeadHatBase
   id: ClothingHeadHelmetZN1
-  name: капюшон «ЗН-1»
+  name: hood "ZN-1"
   categories: [ HideSpawnMenu ]
   components:
     - type: Sprite
@@ -85,9 +86,9 @@
 - type: entity
   parent: ClothingOuterArmorZN1
   id: ClothingOuterArmorCN1
-  name: бронежилет с комбезинозом «СН-1».
+  name: body armor with "CH-1" overalls.
   suffix: ST, T2, Universal
-  description: Стандартный бронежилет II типа, обеспечивающий достойную защиту от большинства видов повреждений
+  description: Standard Type II body armor, providing decent protection against most types of damage
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/outerClothing/cn1.rsi
@@ -100,7 +101,7 @@
   parent: ClothingHeadHelmetZN1
   id: ClothingHeadHelmetCN1
   suffix: ST, T2, Universal
-  name: капюшон «СН-1»
+  name: hood "CH-1"
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite

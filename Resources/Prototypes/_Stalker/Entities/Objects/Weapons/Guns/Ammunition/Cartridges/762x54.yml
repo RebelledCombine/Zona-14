@@ -1,3 +1,4 @@
+# Zona14: translated Russian names/descriptions to English
 # 7.62x54
 
 - type: entity
@@ -25,7 +26,7 @@
 
 - type: entity
   id: STCartridge754FMJ
-  name: Патрон (7,62x54)FMJ
+  name: Cartridge (7.62x54) FMJ
   parent: BaseSTCartridge754
   components:
     - type: CartridgeAmmo
@@ -33,7 +34,7 @@
 
 - type: entity
   id: STCartridge754PC
-  name: Патрон (7,62x54)ПС
+  name: Cartridge (7.62x54) PS
   parent: BaseSTCartridge754
   components:
   - type: CartridgeAmmo
@@ -41,7 +42,7 @@
 
 - type: entity
   id: STCartridge754HPBT
-  name: Патрон (7,62x54)HP BT
+  name: Cartridge (7.62x54) HP BT
   parent: BaseSTCartridge754
   components:
   - type: CartridgeAmmo
@@ -49,7 +50,7 @@
 
 - type: entity
   id: STCartridge754BT
-  name: Патрон (7,62x54)БТ
+  name: Cartridge (7.62x54) BT
   parent: BaseSTCartridge754
   components:
   - type: CartridgeAmmo
@@ -57,7 +58,7 @@
 
 - type: entity
   id: STCartridge754SNB
-  name: Патрон (7,62x54)СНБ
+  name: Cartridge (7.62x54) SNB
   parent: BaseSTCartridge754
   components:
   - type: CartridgeAmmo

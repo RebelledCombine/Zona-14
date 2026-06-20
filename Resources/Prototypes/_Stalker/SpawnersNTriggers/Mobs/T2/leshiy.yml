@@ -1,5 +1,6 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
-  name: триггер леший (1-4) (20%)
+  name: leshy trigger (1-4) (20%)
   id: STTriggerLeshiy142010
   parent: STBaseTrigger142010
   suffix: ST, T2, Trigger
@@ -11,7 +12,7 @@
         - MobMutantLeshiy
 
 - type: entity
-  name: триггер леший (1-4) (50%)
+  name: leshy trigger (1-4) (50%)
   id: STTriggerLeshiy145030
   parent: STBaseTrigger145030
   suffix: ST, T2, Trigger
@@ -23,7 +24,7 @@
         - MobMutantLeshiy
 
 - type: entity
-  name: триггер леший (1-2) (10%)
+  name: leshy trigger (1-2) (10%)
   id: STTriggerLeshiy121010
   parent: STBaseTrigger121010
   suffix: ST, T2, Trigger
@@ -35,7 +36,7 @@
         - MobMutantLeshiy
 
 - type: entity
-  name: триггер леший (1-2) (50%)
+  name: leshy trigger (1-2) (50%)
   id: STTriggerLeshiy125030
   parent: STBaseTrigger125030
   suffix: ST, T2, Trigger

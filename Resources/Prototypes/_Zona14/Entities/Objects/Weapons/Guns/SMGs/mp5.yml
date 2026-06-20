@@ -74,7 +74,7 @@
   id: Z14STWeaponSMGMP5Celebra
   suffix: Z14
   categories: [ Zona14 ]
-  name: H&K MP-5 "Celebra"
+  name: 'H&K MP-5 "Celebra"'
   description: Custom MP-5 variant with distinctive Poisk faction markings. Features unique blue finish while maintaining all the reliability of the original design.
   components:
   - type: Item

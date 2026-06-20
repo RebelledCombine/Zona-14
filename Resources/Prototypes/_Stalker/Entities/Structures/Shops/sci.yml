@@ -1,10 +1,11 @@
+# Zona14: translated Russian names/descriptions to English
 
 - type: entity
   parent: StalkerShop
   id: StalkerShopSci
-  name: Торгомат, учёные
-  description: Теперь ещё и покупает!
-  suffix: ST, Mapping, Т4
+  name: Torgomat, Scientists
+  description: Now he also buys!
+  suffix: ST, Mapping, T4 # Zona14: ST, Mapping, Т4
   components:
     - type: Sprite
       drawdepth: Objects

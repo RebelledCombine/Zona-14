@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: STClothingHeadBase
   id: ClothingHeadHatBeaniehat
-  name: шапка
-  description: Чёрная шапка. Не даст замёрзнуть голове.
+  name: hat
+  description: Black hat. It will not let your head freeze.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/hats/beaniehat.rsi
@@ -16,8 +17,8 @@
 - type: entity
   parent: STClothingHeadBase
   id: ClothingHeadHatMilitary
-  name: кепка военных
-  description: Кепка цвета "Хаки", используется военными
+  name: military cap
+  description: Khaki cap, used by the military
   suffix: Stalker
   components:
   - type: Sprite
@@ -28,8 +29,8 @@
 - type: entity
   parent: STClothingHeadBase
   id: ClothingHeadBeretUN
-  name: берет ООН
-  description: Берет основного контингента ООН и старшего офицерского состава ОКСОП.
+  name: UN beret
+  description: Beret of the main UN contingent and senior officers of the Oksop.
   suffix: Stalker
   components:
     - type: Sprite
@@ -40,8 +41,8 @@
 - type: entity
   parent: STClothingHeadBase
   id: ClothingHeadBeretCN
-  name: берет Чистого Неба
-  description: Берет группировки Чистое Небо. Выполнен в характерном синем цвете, плавно переходящем в голубой.
+  name: Clear Sky beret
+  description: A beret of the Clear Sky faction. Made in a characteristic blue color smoothly transitioning into light blue.
   suffix: Stalker
   components:
     - type: Sprite
@@ -52,7 +53,7 @@
 - type: entity
   parent: ClothingHeadBase
   id: ClothingHeadHatSovietUshankaStalker
-  name: советская ушанка
+  name: Soviet Ushanka
   description: "Welcome to the Moscow, da?"
   suffix: Stalker
   components:
@@ -70,8 +71,8 @@
 - type: entity
   parent: [ClothingHeadBase, BaseFoldable]
   id: STClothingHeadHatFoma
-  name: старая ушанка
-  description: Серая советская ушанка – практичный зимний головной убор из плотного сукна с меховыми отворотами. Надежно защищает от мороза, универсален и лаконичен. Классика советской эпохи.
+  name: Old Ushanka
+  description: Gray Soviet ushanka is a practical winter headdress made of thick cloth with fur lapels. It reliably protects against frost, is versatile and concise. Classics of the Soviet era.
   components:
   - type: Clothing
     sprite: _Stalker/Objects/Clothing/hats/foma.rsi
@@ -95,8 +96,8 @@
 - type: entity
   parent: ClothingHeadBase
   id: ClothingHeatBagStalker
-  name: мешок на голову
-  description: Для похищений
+  name: head bag
+  description: For kidnappings
   suffix: Stalker
   components:
   - type: Sprite
@@ -114,8 +115,8 @@
 - type: entity
   parent: STClothingHeadBase
   id: ClothingHeadHatUN
-  name: кепка ООН
-  description: Кепка голубого цвета с символикой ООН, используется миротворцами.
+  name: UN Cap
+  description: Blue cap with UN symbols, used by peacekeepers.
   suffix: Stalker
   components:
   - type: Sprite
@@ -126,8 +127,8 @@
 - type: entity
   parent: STClothingHeadBase
   id: ClothingHeadHatUNModification
-  name: кепка с гарнитурой ООН
-  description: Кепка голубого цвета с символикой ООН, имеет гарнитуру. Используется миротворцами.
+  name: cap with UN headset
+  description: Blue cap with UN symbols, has a typeface. Used by peacekeepers.
   suffix: Stalker
   components:
   - type: Sprite
@@ -138,8 +139,8 @@
 - type: entity
   parent: STClothingHeadBase
   id: ClothingHeadBandana1Military
-  name: чёрная головная бандана
-  description: Ткань чёрного цвета, закрывающая голову.
+  name: Black Head Bandana
+  description: Black cloth covering the head.
   suffix: Stalker
   components:
   - type: Sprite
@@ -150,8 +151,8 @@
 - type: entity
   parent: STClothingHeadBase
   id: ClothingHeadBandana2Military
-  name: камуфляжная головная бандана
-  description: Ткань зелёного камуфляжа из старого комплекта персональной системы защиты, закрывающая голову.
+  name: Camouflage Head Bandana
+  description: A green camouflage cloth from the old Personal Protection System Kit that covers the head.
   suffix: Stalker
   components:
   - type: Sprite
@@ -162,8 +163,8 @@
 - type: entity
   parent: STClothingHeadBase
   id: ClothingHeadBeretMilitary
-  name: берет сил охраны периметра
-  description: Офицерский берет военнослужащих С.О.П. (Сил Охраны Периметра) чёрного цвета.
+  name: Beret Perimeter Guard Force
+  description: "Officer's beret of the O.K.S.O.P. (Perimeter Guard Forces) is black."
   suffix: Stalker
   components:
   - type: Sprite
@@ -175,8 +176,8 @@
 - type: entity
   parent: STClothingHeadBase
   id: ClothingHeadHatPoliceHat
-  name: полицейская фуражка
-  description: Для важных шишек.
+  name: police cap
+  description: For important shots.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/hats/police_hat.rsi
@@ -186,8 +187,8 @@
 - type: entity
   parent: ClothingHeadBase
   id: ClothingHeadHatGeneral
-  name: генеральская фуражка
-  description: Где моя ФУРАЖКА?!
+  name: "General's Cap"
+  description: "Where's my CAP?!"
   suffix: ST
   components:
   - type: Sprite
@@ -198,8 +199,8 @@
 - type: entity
   parent: ClothingHeadBase
   id: STClothingHeadPeakCap
-  name: бескозырка
-  description: Моряцкая бескозырка, странно видеть её в Зоне.
+  name: visor
+  description: "Sailorless Visor, it's strange to see it in the Zone."
   suffix: ST, Deliko
   components:
   - type: Sprite
@@ -210,7 +211,7 @@
 - type: entity
   parent: STClothingHeadBase
   id: ClothingHeadCapMerc
-  name: merc's cap
+  name: "merc's cap"
   suffix: Stalker
   components:
   - type: Sprite
@@ -221,7 +222,7 @@
 - type: entity
   parent: STClothingHeadBase
   id: STClothingHeadBeretDolg
-  name: Duty's beret
+  name: "Duty's beret"
   description: This is the Red Beret of the officers of the Duty.
   suffix: Stalker
   components:
@@ -234,8 +235,8 @@
 - type: entity
   parent: STClothingHeadHelmetTacticalT1Base
   id: ClothingHeadHatSerahat
-  name: зелёная повязка
-  description: Зелёная повязка на голову с нашивкой серафимов на ней.
+  name: green headband
+  description: Green headband with Seraphim patch.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/hats/serahat.rsi
@@ -245,8 +246,8 @@
 - type: entity
   parent: STClothingHeadBase
   id: ClothingHeadCapDeserter
-  name: кепка отступников
-  description: Кепка в чёрно-чером пиксельном камуфляже.
+  name: Deserter Cap
+  description: Cap with a black and black pixelated camouflage pattern.
   suffix: Stalker
   components:
   - type: Sprite
@@ -257,8 +258,8 @@
 - type: entity
   parent: STClothingHeadBase
   id: ClothingHeadCapDeserterRadio
-  name: гарнитура отступников
-  description: Кепка в чёрно-чером пиксельном камуфляже, теперь с гарнитурой.
+  name: Deserter Headset
+  description: A cap in black and black pixelated camouflage, now with a headset.
   suffix: Stalker
   components:
   - type: Sprite

@@ -1,4 +1,4 @@
-# Барбарис
+# Zona14: Барбарис
 
 - type: entity
   name: barberry
@@ -77,7 +77,7 @@
             - !type:DoActsBehavior
               acts: [ "Destruction" ]
 
-########## Годжи
+# Zona14: ######### Годжи
 
 - type: entity
   name: goji
@@ -156,7 +156,7 @@
             - !type:DoActsBehavior
               acts: [ "Destruction" ]
 
-######## Ирга
+# Zona14: ####### Ирга
 
 - type: entity
   name: irga
@@ -235,7 +235,7 @@
             - !type:DoActsBehavior
               acts: [ "Destruction" ]
 
-######## Клюква
+# Zona14: ####### Клюква
 
 - type: entity
   name: cranberry
@@ -314,7 +314,7 @@
             - !type:DoActsBehavior
               acts: [ "Destruction" ]
 
-####### Крыжовник
+# Zona14: ###### Крыжовник
 
 - type: entity
   name: gooseberry
@@ -393,7 +393,7 @@
             - !type:DoActsBehavior
               acts: [ "Destruction" ]
 
-####### Малина
+# Zona14: ###### Малина
 
 - type: entity
   name: raspberry
@@ -472,7 +472,7 @@
             - !type:DoActsBehavior
               acts: [ "Destruction" ]
 
-###### Морошка
+# Zona14: ##### Морошка
 
 - type: entity
   name: cloudberry
@@ -551,7 +551,7 @@
             - !type:DoActsBehavior
               acts: [ "Destruction" ]
 
-###### Облепиха
+# Zona14: ##### Облепиха
 
 - type: entity
   name: sea-buckthorn
@@ -630,7 +630,7 @@
             - !type:DoActsBehavior
               acts: [ "Destruction" ]
 
-###### Брусника
+# Zona14: ##### Брусника
 
 - type: entity
   name: lingonberry
@@ -709,7 +709,7 @@
             - !type:DoActsBehavior
               acts: [ "Destruction" ]
 
-###### Голубика
+# Zona14: ##### Голубика
 
 - type: entity
   name: blueberry
@@ -788,7 +788,7 @@
             - !type:DoActsBehavior
               acts: [ "Destruction" ]
 
-######## Виноград
+# Zona14: ####### Виноград
 
 - type: entity
   name: grape
@@ -867,7 +867,7 @@
             - !type:DoActsBehavior
               acts: [ "Destruction" ]
 
-####### Вишня
+# Zona14: ###### Вишня
 
 - type: entity
   name: cherry
@@ -946,7 +946,7 @@
             - !type:DoActsBehavior
               acts: [ "Destruction" ]
 
-######## Ежевика
+# Zona14: ####### Ежевика
 
 - type: entity
   name: blackberry
@@ -1025,7 +1025,7 @@
             - !type:DoActsBehavior
               acts: [ "Destruction" ]
 
-##### клубника
+# Zona14: #### клубника
 
 - type: entity
   name: strawberry
@@ -1104,7 +1104,7 @@
             - !type:DoActsBehavior
               acts: [ "Destruction" ]
 
-##### Смородина
+# Zona14: #### Смородина
 
 - type: entity
   name: currant
@@ -1183,7 +1183,7 @@
             - !type:DoActsBehavior
               acts: [ "Destruction" ]
 
-##### Черешня
+# Zona14: #### Черешня
 
 - type: entity
   name: cherry
@@ -1262,7 +1262,7 @@
             - !type:DoActsBehavior
               acts: [ "Destruction" ]
 
-###### волчеягодник
+# Zona14: ##### волчеягодник
 
 - type: entity
   name: volcheyagodnik
@@ -1339,7 +1339,7 @@
             - !type:DoActsBehavior
               acts: [ "Destruction" ]
 
-####### воронец
+# Zona14: ###### воронец
 
 - type: entity
   name: baneberry
@@ -1416,7 +1416,7 @@
             - !type:DoActsBehavior
               acts: [ "Destruction" ]
 
-###### ландыш
+# Zona14: ##### ландыш
 
 - type: entity
   name: lily
@@ -1493,7 +1493,7 @@
             - !type:DoActsBehavior
               acts: [ "Destruction" ]
 
-####### очанка лекарственная
+# Zona14: ###### очанка лекарственная
 
 - type: entity
   name: medicinal glasses
@@ -1572,7 +1572,7 @@
             - !type:DoActsBehavior
               acts: [ "Destruction" ]
 
-##### лапчатка белая
+# Zona14: #### лапчатка белая
 
 - type: entity
   name: lapchatka white
@@ -1651,7 +1651,7 @@
             - !type:DoActsBehavior
               acts: [ "Destruction" ]
 
-##### аир обыкновенный
+# Zona14: #### аир обыкновенный
 
 - type: entity
   name: Calamus ordinary
@@ -1730,7 +1730,7 @@
             - !type:DoActsBehavior
               acts: [ "Destruction" ]
 
-######## липа сердцевидная
+# Zona14: ####### липа сердцевидная
 
 - type: entity
   name: linden tree is heart-shaped
@@ -1809,7 +1809,7 @@
             - !type:DoActsBehavior
               acts: [ "Destruction" ]
 
-##### ятрышник пятнистый
+# Zona14: #### ятрышник пятнистый
 
 - type: entity
   name: spotted hawthorn
@@ -1888,7 +1888,7 @@
             - !type:DoActsBehavior
               acts: [ "Destruction" ]
 
-############### Сушёные ягоды
+# Zona14: ############## Сушёные ягоды
 
 - type: entity
   name: dried barberry
@@ -1950,7 +1950,7 @@
     state: StalkerBonfireVishna
   - type: Craftable
 
-############### Мякоть
+# Zona14: ############## Мякоть
 
 - type: entity
   name: pulp barbaris
@@ -2060,8 +2060,8 @@
     state: PulpVolk
   - type: Craftable
 
-############### Реагенты
-#########Масла
+# Zona14: ############## Реагенты
+# Zona14: ########Масла
 
 - type: reagent
   id: StalkerOilBarbaris
@@ -2181,7 +2181,7 @@
             Heat: -2.5
 
 
-#####Травы
+# Zona14: ####Травы
 
 - type: reagent
   id: StalkerOilGrass1
@@ -2255,7 +2255,7 @@
         damage:
           groups:
             Toxin: -2.5
-########Соки
+# Zona14: #######Соки
 
 
 - type: reagent
@@ -2331,7 +2331,7 @@
   flavor: berry
   color: "#660099"
 
-#####Яды
+# Zona14: ####Яды
 
 - type: reagent
   id: StalkerToxin1
@@ -2384,7 +2384,7 @@
             Poison: 0.3
 
 
-######### Спавнеры
+# Zona14: ######## Спавнеры
 
 - type: entity
   name: periodic plant spawner
@@ -2451,10 +2451,10 @@
 
 
 # - type: entity
-#   name: Периодический спавнер растений
+# Zona14: name: Периодический спавнер растений
 #   id: StalkerTimedSpawnertest
 #   parent: MarkerBase
-#   suffix: Stalker, раз в секунда
+# Zona14: suffix: Stalker, раз в секунда
 #   components:
 #     - type: Sprite
 #       layers:

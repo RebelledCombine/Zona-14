@@ -1,7 +1,8 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: STBaseBlueprint
   id:   STClothingHeadTinfoilBlueprint
-  name: Рецепт шапочки из фольги
+  name: Foil Hat Recipe
   components:
     - type: STBlueprint
       blueprint: newrecipeSTClothingHeadTinfoil

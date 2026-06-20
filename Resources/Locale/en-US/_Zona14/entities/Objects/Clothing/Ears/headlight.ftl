@@ -1,0 +1,3 @@
+ent-Z14STHeadLight = Headlamp
+    .desc = Put on the ear...
+    .suffix = Z14

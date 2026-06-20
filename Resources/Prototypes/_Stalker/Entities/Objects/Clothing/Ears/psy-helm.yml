@@ -1,3 +1,4 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   abstract: true
   parent: Clothing
@@ -16,8 +17,8 @@
 - type: entity
   parent: STClothingPsyHelm
   id: STPsyHelm1
-  name: пси-шлем
-  description: Кустарный прототип устройства защиты от пси-излучения. Внешне выглядит как большие наушники.
+  name: Psi-Helmet
+  description: A makeshift prototype device for psi-radiation protection. Looks like oversized headphones.
   suffix: ST
   components:
   - type: Sprite
@@ -33,8 +34,8 @@
 - type: entity
   parent: STClothingPsyHelm
   id: STPsyHelm2
-  name: пси-шлем
-  description: Ненастроенный прототип, разработанный учёными для защиты от пси-излучения. Внешне выглядит как большие наушники с несколькими электродами, касающимися лба и затылка.
+  name: "{ ent-STPsyHelm1 }"
+  description: An unconfigured prototype developed by scientists to protect against psi-radiation. Looks like large headphones with electrodes touching the forehead and back of the head.
   suffix: ST
   components:
   - type: Sprite
@@ -50,8 +51,8 @@
 - type: entity
   parent: STClothingPsyHelm
   id: STPsyHelm3
-  name: пси-шлем
-  description: Настроенный прототип, разработанный учёными для защиты от пси-излучения. Внешне выглядит как большие наушники с несколькими электродами, касающимися лба, висков и затылка.
+  name: "{ ent-STPsyHelm1 }"
+  description: A tuned prototype developed by scientists to protect against psi-radiation. Looks like large headphones with electrodes on the forehead, temples, and back of the head.
   suffix: ST
   components:
   - type: Sprite

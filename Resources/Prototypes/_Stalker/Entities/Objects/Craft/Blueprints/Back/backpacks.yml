@@ -1,7 +1,8 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: STBaseBlueprint
   id: ClothingBackpackDuffelCommonStalkerBlueprint
-  name: Рецепт армейского рюкзака (Т3)
+  name: army duffel backpack (T3) recipe
   components:
     - type: STBlueprint
       blueprint: recipeClothingBackpackDuffelCommonStalker
@@ -10,7 +11,7 @@
 - type: entity
   parent: STBaseBlueprint
   id: ClothingBackpackDuffelMilitaryOliveBlueprint
-  name: Рецепт темно-зеленного армейского рюкзака (Т4)
+  name: dark green army duffel backpack (T4) recipe
   components:
     - type: STBlueprint
       blueprint: recipeClothingBackpackDuffelMilitaryOlive
@@ -18,7 +19,7 @@
 - type: entity
   parent: STBaseBlueprint
   id: ClothingBackpackDuffelBlackMilitaryTacticStalkerBlueprint
-  name: Рецепт черного армейского рюкзака (Т4)
+  name: black tactical duffel backpack (T4) recipe
   components:
     - type: STBlueprint
       blueprint: recipeClothingBackpackDuffelBlackMilitaryTacticStalker
@@ -26,7 +27,7 @@
 - type: entity
   parent: STBaseBlueprint
   id: ClothingBackpackDuffelMilitaryBlueBlueprint
-  name: Рецепт синего армейского рюкзака (Т4)
+  name: blue army duffel backpack (T4) recipe
   components:
     - type: STBlueprint
       blueprint: recipeClothingBackpackDuffelMilitaryBlue
@@ -35,7 +36,7 @@
 - type: entity
   parent: STBaseBlueprint
   id: ClothingBackpackDuffelHikingVSRFBlueprint
-  name: Рецепт походного рюкзака (Т4)
+  name: hiking duffel backpack (T4) recipe
   components:
     - type: STBlueprint
       blueprint: recipeClothingBackpackDuffelHikingVSRF
@@ -43,7 +44,7 @@
 - type: entity
   parent: STBaseBlueprint
   id: ClothingBackpackDuffelOliveTacticStalkerBlueprint
-  name: Рецепт оливкового армейского тактического рюкзака (Т4)
+  name: olive tactical duffel backpack (T4) recipe
   components:
     - type: STBlueprint
       blueprint: recipeClothingBackpackDuffelOliveTacticStalker
@@ -51,51 +52,51 @@
 - type: entity
   parent: STBaseBlueprint
   id: ClothingBackpackDuffelBlackTacticStalkerBlueprint
-  name: Рецепт черного армейского тактического рюкзака (Т4)
+  name: black tactical duffel backpack (T4) recipe
   components:
     - type: STBlueprint
       blueprint: recipeClothingBackpackDuffelBlackTacticStalker
 
-# Псевдо чертеж. Короче, чтобы не делать для каждый крафт для одно предмета, в котором используеться один и тот же объект но с разным рескином нужно, использовать теги. Но увы, в ванили такой хуйни, это поэтому такие уостыли.
+# Zona14: Псевдо чертеж. Короче, чтобы не делать для каждый крафт для одно предмета, в котором используеться один и тот же объект но с разным рескином нужно, использовать теги. Но увы, в ванили такой хуйни, это поэтому такие уостыли.
 
 - type: entity
   parent: BaseItem
-  name: Рецепт проффесионаольного серого рюкзака (Т5)
-  description: Любой рюкзак (т4) - 1шт, шкура Т2 - 5шт, набор базовых ниток T1 - 2шт, артефакт выверт - 3шт.
+  name: Professional gray backpack recipe (T5)
+  description: Any backpack (T4) - 1pc, T2 hide - 5pcs, basic thread set T1 - 2pcs, Vyvert artifact - 3pcs.
   id: ClothingBackpackDuffelSuperStalkerGrayBlueprint
-  suffix: ST, крафт
+  suffix: ST, craft # Zona14: ST, крафт
   components:
     - type: Sprite
       state: blueprint
       sprite: _Stalker/Objects/Craft/blueprint.rsi
     - type: Craftable
     - type: RepositoryItem
-      categoryName: Крафты
+      categoryName: Crafting # Zona14: Крафты
 
 - type: entity
   parent: BaseItem
-  name: Рецепт проффесионаольного зеленого рюкзака (Т5)
-  description: Любой рюкзак (т4) - 1шт, шкура Т2 - 5шт, набор базовых ниток T1 - 2шт, артефакт выверт - 3шт.
+  name: Professional green backpack recipe (T5)
+  description: Any backpack (T4) - 1pc, T2 hide - 5pcs, basic thread set T1 - 2pcs, Vyvert artifact - 3pcs.
   id: ClothingBackpackDuffelSuperStalkerBlueprint
-  suffix: ST, крафт
+  suffix: ST, craft # Zona14: ST, крафт
   components:
     - type: Sprite
       state: blueprint
       sprite: _Stalker/Objects/Craft/blueprint.rsi
     - type: Craftable
     - type: RepositoryItem
-      categoryName: Крафты
+      categoryName: Crafting # Zona14: Крафты
 
 - type: entity
   parent: BaseItem
-  name: Рецепт проффесионального рюкзака (Т6)
-  description: Любой рюкзак (т5) - 1шт, крепкая шкура T3 - 1шт, набор базовых ниток T1 - 2шт, артефакт Амёба - 2шт.
+  name: Professional backpack recipe (T6)
+  description: Any backpack (T5) - 1pc, T3 sturdy hide - 1pc, basic thread set T1 - 2pcs, Amoeba artifact - 2pcs.
   id: ClothingBackpackDuffelRareStalkerBlueprint
-  suffix: ST, крафт
+  suffix: ST, craft # Zona14: ST, крафт
   components:
     - type: Sprite
       state: blueprint
       sprite: _Stalker/Objects/Craft/blueprint.rsi
     - type: Craftable
     - type: RepositoryItem
-      categoryName: Крафты
+      categoryName: Crafting # Zona14: Крафты

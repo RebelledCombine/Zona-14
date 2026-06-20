@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: BaseMobMutant
   id: MobMutantRogonosets
-  name: Рогоносец
+  name: Cuckold
   suffix: ST, Boss
-  description: Гиганский мутировавший олень
+  description: Giant Mutated Deer
   components:
     - type: Butcherable
       spawned:

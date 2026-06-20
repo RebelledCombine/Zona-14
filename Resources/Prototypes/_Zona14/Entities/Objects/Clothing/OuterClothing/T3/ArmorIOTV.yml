@@ -1,0 +1,12 @@
+- type: entity
+  parent: Z14ArmorBaseT1PvP
+  id: Z14STClothingOuterIOTV
+  categories: [ Zona14 ]
+  name: IOTV Body Armor
+  description: Class 3 body armor.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/IOTV.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/IOTV.rsi

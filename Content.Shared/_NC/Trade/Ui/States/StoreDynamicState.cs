@@ -54,9 +54,9 @@ public sealed class StoreDynamicState : BoundUserInterfaceState
     public bool HasSellTab { get; }
     public bool HasContractsTab { get; }
 
-    /// <summary>Стоимость пропуска одного контракта. 0 — пропуск отключён.</summary>
+    /// <summary>Cost of skipping one contract. 0 means skipping is disabled.</summary> // Zona14: translated from Russian
     public int ContractSkipCost { get; }
 
-    /// <summary>Валюта для оплаты пропуска (stack type id).</summary>
+    /// <summary>Currency for paying to skip (stack type id).</summary> // Zona14: translated from Russian
     public string ContractSkipCurrency { get; }
 }

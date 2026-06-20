@@ -35,30 +35,30 @@
   - name: shop-category-armor
     priority: 4
     items:
-      ClothingOuterArmorMerc: 20
-      ClothingOuterArmorMerc2: 20
-      ClothingHeadHelmetUlachEasy: 80
-      ClothingHeadHelmetBulatMercenary: 80
-      STClothingOuterArmorIOTVMerc: 300
-      STClothingOuterArmorVeryHeavy: 350
+      Z14ClothingOuterArmorMerc: 20
+      Z14ClothingOuterArmorMerc2: 20
+      Z14ClothingHeadHelmetUlachEasy: 80
+      Z14ClothingHeadHelmetBulatMercenary: 80
+      Z14STClothingOuterArmorIOTVMerc: 300
+      Z14STClothingOuterArmorVeryHeavy: 350
   - name: shop-category-storage-and-containers
     priority: 5
     items:
-      ClothingBackpackDuffelBlackTacticStalker: 20
+      Z14ClothingBackpackDuffelBlackTacticStalker: 20
   - name: shop-category-medicine
     priority: 10
     items:
       BoxMRE: 5
       Defibrillator: 10
-      STOintmentGood: 2 #heals 40 thermal damage (Heat: -20 Caustic: -10 Shock: -10 delay: 8)
-      MedkitMilitary: 2 #heals 50 physical damage (Piercing: -20 Blunt: -10 Slash: -20 delay: 8)
-      MedkitScience: 5 #heals 45 thermal + 20 radiation damage (Heat: -15 Caustic: -15 Shock: -15 Radiation: -20 delay: 9)
-      WakeUpMedipen: 5 #contains equivalent of 2 wakeuppill tablets (20 units Bloodloss: -3 Asphyxiation: -2 per unit)
-      MedkitAI2: 1
-      AntiRadMedipen: 5
-      STPillboxShiza: 100
-      MedkitElite: 10
-      MedkitLAR: 25
+      Z14STOintmentGood: 2 #heals 40 thermal damage (Heat: -20 Caustic: -10 Shock: -10 delay: 8)
+      Z14MedkitMilitary: 2 #heals 50 physical damage (Piercing: -20 Blunt: -10 Slash: -20 delay: 8)
+      Z14MedkitScience: 5 #heals 45 thermal + 20 radiation damage (Heat: -15 Caustic: -15 Shock: -15 Radiation: -20 delay: 9)
+      Z14WakeUpMedipen: 5 #contains equivalent of 2 Z14wakeuppill tablets (20 units Bloodloss: -3 Asphyxiation: -2 per unit)
+      Z14MedkitAI2: 1
+      Z14AntiRadMedipen: 5
+      Z14STPillboxShiza: 100
+      Z14MedkitElite: 10
+      Z14MedkitLAR: 25
   - name: shop-category-modules
     priority: 11
     items:

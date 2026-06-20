@@ -1,6 +1,7 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: STDarkLight
-  name: тусклый источник света
+  name: dim light source
   description: An invisible, non-physical source of illumination for use in completely dark areas.
   # This prototype has no sprite or item components. It's purely a
   # light emitter and can be spawned anywhere without a physical
@@ -18,7 +19,7 @@
 
 - type: entity
   id: STDarkLightSpawner
-  name: спавнер тусклого источника света
+  name: dim light source spawner
   suffix: ST, Trigger
   parent: FlexibleMarker
   components:

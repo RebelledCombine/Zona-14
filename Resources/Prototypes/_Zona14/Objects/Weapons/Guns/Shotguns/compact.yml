@@ -1,0 +1,7 @@
+- type: entity
+  parent: STBaseWeaponShotgunCompact
+  id: Z14STWeaponShotgunCompact
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Zipgun 'Stalker's Friend'
+  description: Crudely crafted single-shot shotgun assembled from scrap parts. Primitive but potentially life-saving in skilled hands. Valued in the Zone for its compact size and simplicity.

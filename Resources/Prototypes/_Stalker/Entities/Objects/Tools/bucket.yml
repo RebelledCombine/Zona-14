@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: [ DrinkBaseMaterialStrongMetal, DrinkBase, DrinkVisualsFill ]
   id: STBucket
   name: bucket
-  description: It's a boring old bucket.
+  description: "It's a boring old bucket."
   components:
   - type: Edible
     utensil: Spoon
@@ -38,10 +39,10 @@
 
 - type: entity
   parent: STBucket
-  name: навозное ведро
+  name: manure bucket
   id: STNavozBucket
   suffix: Fill
-  description: Обычное оцинкованное ведро.
+  description: Normal galvanized bucket.
   components:
     - type: STWeight
       self: 2.0
@@ -54,10 +55,10 @@
 
 - type: entity
   parent: STBucket
-  name: ведро
+  name: bucket
   id: STEmpBucket
   suffix: Empty
-  description: Обычное оцинкованное ведро.
+  description: Normal galvanized bucket.
   components:
     - type: STWeight
       self: 1.0

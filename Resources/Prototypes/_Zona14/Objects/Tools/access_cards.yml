@@ -1,0 +1,17 @@
+- type: entity
+  parent: IDCardStandard
+  id: Z14STJobMilitaryIDCard
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Key Card for Access
+  description: Loss of this card will be considered a war crime.
+  components:
+    - type: Sprite
+      layers:
+        - state: default
+          color: "#32CD32"
+    - type: Access
+      groups:
+        - Military
+        - MilitaryOfficer
+        - MilitaryHead

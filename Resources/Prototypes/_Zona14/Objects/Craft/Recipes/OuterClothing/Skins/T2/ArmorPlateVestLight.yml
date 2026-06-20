@@ -1,0 +1,139 @@
+- type: lightCraftingRecipe
+  id: Z14STCraftSkinSTClothingOuterArmorLightPlateVestBaseBand
+  results:
+    - STClothingOuterArmorLightPlateVestBaseBand
+  steps:
+    firstIngredient: STSkinsKitBandits
+    secondIngredient: STClothingOuterArmorLightPlateVestBaseStalker
+    keepFirst: true
+    time: 5
+
+- type: lightCraftingRecipe
+  id: Z14STCraftSkinSTClothingOuterArmorLightPlateVestBaseFreedom
+  results:
+    - STClothingOuterArmorLightPlateVestBaseFreedom
+  steps:
+    firstIngredient: STSkinsKitFreedom
+    secondIngredient: STClothingOuterArmorLightPlateVestBaseStalker
+    keepFirst: true
+    time: 5
+
+- type: lightCraftingRecipe
+  id: Z14STCraftSkinSTClothingOuterArmorLightPlateVestBaseMerc
+  results:
+    - STClothingOuterArmorLightPlateVestBaseMerc
+  steps:
+    firstIngredient: STSkinsKitMercenary
+    secondIngredient: STClothingOuterArmorLightPlateVestBaseStalker
+    keepFirst: true
+    time: 5
+
+- type: lightCraftingRecipe
+  id: Z14STCraftSkinSTClothingOuterArmorLightPlateVestBaseMilitary
+  results:
+    - STClothingOuterArmorLightPlateVestBaseMilitary
+  steps:
+    firstIngredient: STSkinsKitMilitary
+    secondIngredient: STClothingOuterArmorLightPlateVestBaseStalker
+    keepFirst: true
+    time: 5
+
+- type: lightCraftingRecipe
+  id: Z14STCraftSkinSTClothingOuterArmorLightPlateVestBaseMonolith
+  results:
+    - STClothingOuterArmorLightPlateVestBaseMonolith
+  steps:
+    firstIngredient: STSkinsKitMonolith
+    secondIngredient: STClothingOuterArmorLightPlateVestBaseStalker
+    keepFirst: true
+    time: 5
+
+- type: lightCraftingRecipe
+  id: Z14STCraftSkinSTClothingOuterArmorLightPlateVestBasePolice
+  results:
+    - STClothingOuterArmorLightPlateVestBasePolice
+  steps:
+    firstIngredient: STSkinsKitNeutral
+    secondIngredient: STClothingOuterArmorLightPlateVestBaseStalker
+    keepFirst: true
+    time: 5
+
+- type: lightCraftingRecipe
+  id: Z14STCraftSkinSTClothingOuterArmorLightPlateVestBaseRenegate
+  results:
+    - STClothingOuterArmorLightPlateVestBaseRenegate
+  steps:
+    firstIngredient: STSkinsKitRenegate
+    secondIngredient: STClothingOuterArmorLightPlateVestBaseStalker
+    keepFirst: true
+    time: 5
+
+- type: lightCraftingRecipe
+  id: Z14STCraftSkinSTClothingOuterArmorLightPlateVestBaseUN
+  results:
+    - STClothingOuterArmorLightPlateVestBaseUN
+  steps:
+    firstIngredient: STSkinsKitUnitar
+    secondIngredient: STClothingOuterArmorLightPlateVestBaseStalker
+    keepFirst: true
+    time: 5
+
+- type: lightCraftingRecipe
+  id: Z14STCraftSkinSTClothingOuterArmorLightPlateVestBaseCN
+  results:
+    - STClothingOuterArmorLightPlateVestBaseClearSky
+  steps:
+    firstIngredient: STSkinsKitClearSky
+    secondIngredient: STClothingOuterArmorLightPlateVestBaseStalker
+    keepFirst: true
+    time: 5
+
+- type: lightCraftingRecipe
+  id: Z14STCraftSkinSTClothingOuterArmorLightPlateVestBaseZavet
+  results:
+    - STClothingOuterArmorLightPlateVestBaseZavet
+  steps:
+    firstIngredient: STSkinsKitCovenant
+    secondIngredient: STClothingOuterArmorLightPlateVestBaseStalker
+    keepFirst: true
+    time: 5
+
+- type: lightCraftingRecipe
+  id: Z14STCraftSkinSTClothingOuterArmorLightPlateVestBasePilgrim
+  results:
+    - STClothingOuterArmorLightPlateVestBasePilgrim
+  steps:
+    firstIngredient: STSkinsKitPilgrim
+    secondIngredient: STClothingOuterArmorLightPlateVestBaseStalker
+    keepFirst: true
+    time: 5
+
+- type: lightCraftingRecipe
+  id: Z14STCraftSkinSTClothingOuterArmorLightPlateVestBaseClearSky
+  results:
+    - STClothingOuterArmorLightPlateVestBaseClearSky
+  steps:
+    firstIngredient: STSkinsKitClearSky
+    secondIngredient: STClothingOuterArmorLightPlateVestBaseStalker
+    keepFirst: true
+    time: 5
+
+- type: lightCraftingRecipe
+  id: Z14STCraftSkinSTClothingOuterArmorLightPlateVestBaseDolg
+  results:
+    - STClothingOuterArmorLightPlateVestBaseDolg
+  steps:
+    firstIngredient: STSkinsKitDolg
+    secondIngredient: STClothingOuterArmorLightPlateVestBaseStalker
+    keepFirst: true
+    time: 5
+
+- type: lightCraftingRecipe
+  id: Z14STCraftSkinClothingOuterArmorLightPlateVestBaseProject
+  results:
+  - STClothingOuterArmorLightPlateVestBaseProject
+  steps:
+    firstIngredient: STSkinsKitProject
+    secondIngredient: STClothingOuterArmorLightPlateVestBaseStalker
+    keepFirst: true
+    time: 5

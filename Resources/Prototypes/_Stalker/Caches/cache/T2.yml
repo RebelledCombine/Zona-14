@@ -1,10 +1,11 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: STBaseCache
   id: STCacheStorageFillT2
   abstract: true
   suffix: ST, Cache, T2
-  name: ящик
-  description: Довольно таки старый ящик. Возможно, стоит его обыскать. Может, можно найти что-то полезное в нём.
+  name: crate
+  description: A pretty old crate. Might be worth searching. Maybe you can find something useful inside.
   components:
     - type: InteractionOutline
     - type: StorageFill

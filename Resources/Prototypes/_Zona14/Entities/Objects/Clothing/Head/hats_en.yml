@@ -1,0 +1,19 @@
+- type: entity
+  parent: Z14HelmetBase
+  id: Z14ClothingHeadBear
+  categories: [ Zona14 ]
+  name: bear trophy
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/MutantParts/bear_trophy.rsi
+  - type: Clothing
+    sprite: _Stalker_EN/Objects/MutantParts/bear_trophy.rsi
+  - type: Item
+    size: Normal
+    shape:
+    - 0,0,1,1
+  - type: HideLayerClothing
+    slots:
+    - Hair
+    - HeadTop

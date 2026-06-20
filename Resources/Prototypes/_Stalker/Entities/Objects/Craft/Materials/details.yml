@@ -1,10 +1,11 @@
+# Zona14: translated Russian names/descriptions to English
 
 - type: entity
   parent: STBaseIngridient
   id: STCraftBattery
-  name: аккумулятор
-  description: Аккумулятор.
-  suffix: Stalker, крафт
+  name: Battery
+  description: Battery
+  suffix: Stalker, craft # Zona14: Stalker, крафт
   components:
     - type: Sprite
       state: battery
@@ -14,14 +15,14 @@
       count: 1
     - type: Craftable
     - type: RepositoryItem
-      categoryName: Крафты
+      categoryName: Crafting # Zona14: Крафты
       
 - type: entity
   parent: STBaseIngridient
   id: STCraftCoil
-  name: катушка
-  description: Катушка.
-  suffix: Stalker, крафт
+  name: Coil
+  description: Coil
+  suffix: Stalker, craft # Zona14: Stalker, крафт
   components:
     - type: Sprite
       state: coil
@@ -31,14 +32,14 @@
       count: 1
     - type: Craftable
     - type: RepositoryItem
-      categoryName: Крафты
+      categoryName: Crafting # Zona14: Крафты
       
 - type: entity
   parent: STBaseIngridient
   id: STCraftCapacitor
-  name: конденсатор
-  description: Конденсатор.
-  suffix: Stalker, крафт
+  name: Capacitor
+  description: Capacitor
+  suffix: Stalker, craft # Zona14: Stalker, крафт
   components:
     - type: Sprite
       state: capacitor
@@ -48,14 +49,14 @@
       count: 1
     - type: Craftable
     - type: RepositoryItem
-      categoryName: Крафты
+      categoryName: Crafting # Zona14: Крафты
     
 - type: entity
   parent: STBaseIngridient
   id: STCraftTransformer
-  name: трансформатор
-  description: Трансформатор.
-  suffix: Stalker, крафт
+  name: Transformer
+  description: Transformer
+  suffix: Stalker, craft # Zona14: Stalker, крафт
   components:
     - type: Sprite
       state: transformer
@@ -65,4 +66,4 @@
       count: 1
     - type: Craftable
     - type: RepositoryItem
-      categoryName: Крафты
+      categoryName: Crafting # Zona14: Крафты

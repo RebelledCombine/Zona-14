@@ -1,3 +1,4 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: STCartridge
   id: STCartridge9x39
@@ -16,7 +17,7 @@
 - type: entity
   parent: STCartridge9x39
   id: STCartridge9x39PSO
-  name: патрон 9x39 ПСО
+  name: 9x39 PSO Round
   components:
   - type: CartridgeAmmo
     proto: STBullet9x39PSO
@@ -24,7 +25,7 @@
 - type: entity
   parent: STCartridge9x39
   id: STCartridge9x39SP6Uch
-  name: патрон 9x39 СП-6УЧ
+  name: 9x39 SP-6UCh Round
   components:
   - type: CartridgeAmmo
     proto: STBullet9x39SP6Uch
@@ -32,7 +33,7 @@
 - type: entity
   parent: STCartridge9x39
   id: STCartridge9x39SP5
-  name: патрон 9x39 СП-5
+  name: 9x39 SP-5 Round
   components:
   - type: CartridgeAmmo
     proto: STBullet9x39SP5
@@ -40,7 +41,7 @@
 - type: entity
   parent: STCartridge9x39
   id: STCartridge9x39PAB9
-  name: патрон 9x39 ПАБ-9
+  name: 9x39 PAB-9 Round
   components:
   - type: CartridgeAmmo
     proto: STBullet9x39PAB9
@@ -48,7 +49,7 @@
 - type: entity
   parent: STCartridge9x39
   id: STCartridge9x39SP6
-  name: патрон 9x39 СП-6
+  name: 9x39 SP-6 Round
   components:
   - type: CartridgeAmmo
     proto: STBullet9x39SP6
@@ -56,7 +57,7 @@
 - type: entity
   parent: STCartridge9x39
   id: STCartridge9x39AA
-  name: патрон 9x39 БП
+  name: 9x39 AP Round
   components:
   - type: CartridgeAmmo
     proto: STBullet9x39AA

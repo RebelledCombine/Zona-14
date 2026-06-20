@@ -1,0 +1,35 @@
+- type: entity
+  parent: STBaseModuleMuzzleShortgun
+  id: Z14STModuleShotgunChokeT1
+  categories: [ Zona14 ]
+  name: makeshift shotgun choke
+  suffix: Z14
+  components:
+  - type: Tag
+    tags:
+    - STWeaponModuleShotgunChoke
+  - type: STWeaponModule
+    effect:
+      minAngleModifier: 0.7
+  - type: Sprite
+    state: choke_T1
+  - type: Icon
+    state: choke_T1
+
+- type: entity
+  parent: STBaseModuleMuzzleShortgun
+  id: Z14STModuleShotgunChokeT2
+  categories: [ Zona14 ]
+  name: legal shotgun choke
+  suffix: Z14
+  components:
+  - type: Tag
+    tags:
+    - STWeaponModuleShotgunChoke
+  - type: STWeaponModule
+    effect:
+      minAngleModifier: 0.5
+  - type: Sprite
+    state: choke_T2
+  - type: Icon
+    state: choke_T2

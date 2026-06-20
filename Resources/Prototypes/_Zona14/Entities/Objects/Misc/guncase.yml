@@ -1,0 +1,83 @@
+- type: entity
+  parent: StalkerGunCaseBase
+  id: Z14StalkerGunCaseStandard
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: gun case
+
+- type: entity
+  parent: StalkerGunCaseBase
+  id: Z14StalkerGunCaseDouble
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: large gun case
+  description: A large case capable of comfortably storing three large guns. The modified lining blocks radiation both internally and externally.
+  components:
+  - type: Storage
+    maxItemSize: Large
+    grid:
+    - 0,0,7,1
+    - 0,3,7,4
+    - 0,6,7,7
+    whitelist:
+      components:
+        - Gun
+        - BallisticAmmoProvider
+
+- type: entity
+  parent: StalkerGunCaseBase
+  id: Z14StalkerGunCaseMilitary
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: military grade gun case
+  description: A large gun case issued by the Ukrainian government. It has extra pockets to store magazine and is lined with material to block radiation.
+  components:
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Other/Storage/guncase_military.rsi
+    layers:
+    - state: icon
+      map: [ "closedLayer" ]
+    - state: icon-open
+      map: [ "openLayer" ]
+      visible: false
+  - type: Storage
+    maxItemSize: Large
+    grid:
+    - 0,0,0,7
+    - 2,0,9,1
+    - 2,3,9,4
+    - 2,6,9,7
+    - 11,0,11,7
+    whitelist:
+      components:
+      - Gun
+      - BallisticAmmoProvider
+
+- type: entity
+  parent: StalkerGunCaseBase
+  id: Z14StalkerGunCaseMercenary
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: mercenary gun case
+  description: An understated and practical gun case for transporting weapons through the zone. It's been lined with material to block radiation.
+  components:
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Other/Storage/guncase_merc.rsi
+    layers:
+    - state: icon
+      map: [ "closedLayer" ]
+    - state: icon-open
+      map: [ "openLayer" ]
+      visible: false
+  - type: Storage
+    maxItemSize: Large
+    grid:
+    - 0,0,0,7
+    - 2,0,9,1
+    - 2,3,9,4
+    - 2,6,9,7
+    - 11,0,11,7
+    whitelist:
+      components:
+      - Gun
+      - BallisticAmmoProvider

@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: STBaseStructure
   id: STBaseTrashCache
   abstract: true
-  name: мусор
-  description: Куча мусора, возможно стоит поискать в ней что-то ещё пригодное к использованию.
+  name: garbage
+  description: A pile of junk, it may be worth looking for something usable in it.
   components:
     - type: TimedDespawn
       lifetime: 1800

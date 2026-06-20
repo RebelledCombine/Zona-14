@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
-  name: Неизвестный
-  suffix: Stalker, Т6, NPC
+  name: Unknown
+  suffix: Stalker, T6, NPC # Zona14: Stalker, Т6, NPC
   parent: MobStalkerBaseGuard
   id: MobHostileGuardPatrool
-  description: Агрессивный уебан, хрен пойми кто - но враждебен.
+  description: Aggressive fucker, very hostile.
   components:
   - type: HTN
     rootTask:

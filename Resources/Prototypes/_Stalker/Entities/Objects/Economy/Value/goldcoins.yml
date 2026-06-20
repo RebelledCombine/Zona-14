@@ -1,10 +1,11 @@
+# Zona14: translated Russian names/descriptions to English
 - type: Tag
   id: Goldcoins
 - type: entity
   parent: BaseItem
   id: Goldcoins
-  name: золотая монета
-  description: Настоящая золотая монета. В любом ломбарде уйдёт за хорошие деньги.
+  name: Gold Coin
+  description: "It is said to be smelted from real gold. Wait, it's just a GTO badge..."
   suffix: Stalker
   components:
   - type: PhysicalComposition

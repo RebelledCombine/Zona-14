@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: PaletteLowStalker
   parent: PaletteStalker
-  name: поддон
+  name: pallet
   suffix: ST, Mapping
-  description: Обычный деревянный поддон повёрнутый на бок.
+  description: A regular wooden pallet turned on its side.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Other/palette_low.rsi
@@ -12,7 +13,7 @@
 - type: entity
   id: PaletteLowStalker2
   parent: PaletteLowStalker
-  description: Обычный деревянный поддон лежачий на земле.
+  description: "{ ent-PaletteLowStalker.desc }"
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Other/palette_low.rsi

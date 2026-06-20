@@ -1,0 +1,9 @@
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14STClothingCapeArmorChainmailSevaBlueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Seva Cloak Recipe
+  components:
+    - type: STBlueprint
+      blueprint: newrecipeSTClothingCapeArmorChainmailSeva

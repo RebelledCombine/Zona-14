@@ -10,7 +10,7 @@
     keepFirst: true
     time: 10
 
-##################################################Ферментизация
+# Zona14: #################################################Ферментизация
 - type: lightCraftingRecipe
   id: FermentizeBoar
   results:
@@ -20,7 +20,7 @@
     secondIngredient: CraftFerments
     time: 3
 
-##################################################Постепенные крафты
+# Zona14: #################################################Постепенные крафты
 
 - type: lightCraftingRecipe
   id: LightCraftRecipeSmallCardboard

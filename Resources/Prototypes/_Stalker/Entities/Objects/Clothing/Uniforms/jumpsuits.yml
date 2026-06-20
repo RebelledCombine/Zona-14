@@ -1,10 +1,11 @@
-# МАЙКА С ПИВОЗАВРОМ
+# Zona14: translated Russian names/descriptions to English
+# Zona14: МАЙКА С ПИВОЗАВРОМ
 
 - type: entity
   parent: ClothingUniformBase
   id: StalkerPivozavr
-  name: Футболка с пивозавром
-  description: Может быть это скоро станет модным.
+  name: Beer T-shirt
+  description: Maybe it will become fashionable soon.
   suffix: Stalker
   components:
   - type: Sprite
@@ -17,8 +18,8 @@
 - type: entity
   parent: ClothingUniformBase
   id: StalkerJumpsuitJocker
-  name: костюм джокера
-  description: Нестандартный костюм, некоторые думают что он шуточный. Но как-бы не так...
+  name: Joker Costume
+  description: "Custom costume, some people think it's a joke. But not so..."
   suffix: Stalker
   components:
   - type: Sprite
@@ -31,8 +32,8 @@
 - type: entity
   parent: UnsensoredClothingUniformSkirtBase
   id: ClothingUniformJumpsuitBandit
-  name: спортивный костюм
-  description: Изначально предназначался для использования в спорте в основном как одежда поверх основного спортивного костюма для соревнований, но в условиях зоны - неплохой такой удобный костюм.
+  name: Tracksuit
+  description: Originally intended for use in sports mainly as clothing over the main tracksuit for competitions, but in the conditions of the zone - not a bad such comfortable suit.
   suffix: Stalker
   components:
   - type: Sprite
@@ -45,8 +46,8 @@
 - type: entity
   parent: UnsensoredClothingUniformSkirtBase
   id: ClothingUniformJumpsuitMerc
-  name: костюм наёмника
-  description: Стандартный костюм сервого цвета, применяется группировкой «Наёмники».
+  name: Mercenary Uniform
+  description: A standard servo-colored suit used by the Mercenaries group.
   suffix: Stalker
   components:
     - type: Sprite
@@ -59,8 +60,8 @@
 - type: entity
   parent: UnsensoredClothingUniformSkirtBase
   id: ClothingUniformJumpsuitMilitary1
-  name: форма ОКСОП
-  description: Специальная униформа ОКСОП, которую иногда можно увидеть на вояках.
+  name: OKSOP Uniform
+  description: A special OKSOP uniform that can sometimes be seen wearing soldiers.
   suffix: Stalker
   components:
     - type: Sprite
@@ -73,8 +74,8 @@
 - type: entity
   parent: UnsensoredClothingUniformSkirtBase
   id: ClothingUniformJumpsuitMilitary2
-  name: матроска военных
-  description: Униформа, которую традиционно носят рядовые моряки военно-морского флота и других государственных морских служб. Непонятно, как она смогла оказаться в ЧЗО.
+  name: Military Uniform
+  description: Uniform traditionally worn by ordinary sailors of the navy and other state maritime services. It is not clear how she was able to end up in the Chernobyl Exclusion Zone.
   suffix: Stalker
   components:
     - type: Sprite
@@ -87,8 +88,8 @@
 - type: entity
   parent: UnsensoredClothingUniformSkirtBase
   id: ClothingUniformJumpsuitMilitaryRU
-  name: униформа ВС РФ
-  description: Неизменный атрибут кадровых служащих РФ в рядах ОКСОП.
+  name: uniform of the Armed Forces of the Russian Federation
+  description: An invariable attribute of personnel employees of the Russian Federation in the ranks of OKSOP.
   suffix: Stalker
   components:
     - type: Sprite
@@ -101,8 +102,8 @@
 - type: entity
   parent: UnsensoredClothingUniformSkirtBase
   id: ClothingUniformJumpsuitMilitaryKZ
-  name: униформа ВС Казахстана
-  description: Неизменный атрибут кадровых служащих Казахстана в рядах ОКСОП.
+  name: uniform of the Armed Forces of Kazakhstan
+  description: An invariable attribute of personnel employees of Kazakhstan in the ranks of OKSOP.
   suffix: Stalker
   components:
     - type: Sprite
@@ -115,8 +116,8 @@
 - type: entity
   parent: UnsensoredClothingUniformSkirtBase
   id: ClothingUniformJumpsuitMilitaryUA
-  name: униформа ВСУ
-  description: Неизменный атрибут кадровых служащих ВСУ в рядах ОКСОП.
+  name: APU uniform
+  description: An invariable attribute of career employees of the Armed Forces of Ukraine in the ranks of OKSOP.
   suffix: Stalker
   components:
     - type: Sprite
@@ -129,8 +130,8 @@
 - type: entity
   parent: UnsensoredClothingUniformSkirtBase
   id: ClothingUniformJumpsuitMilitaryUA2
-  name: униформа ВСУ
-  description: Неизменный атрибут кадровых служащих ВСУ в рядах ОКСОП.
+  name: APU uniform
+  description: An invariable attribute of career employees of the Armed Forces of Ukraine in the ranks of OKSOP.
   suffix: Stalker
   components:
     - type: Sprite
@@ -143,8 +144,8 @@
 - type: entity
   parent: UnsensoredClothingUniformSkirtBase
   id: ClothingUniformJumpsuitMilitaryFR
-  name: униформа Франции
-  description: Униформа армии Франции (не путать с Иностранным Легионом).
+  name: French Uniforms
+  description: Uniform of the French Army (not to be confused with the Foreign Legion).
   suffix: Stalker
   components:
     - type: Sprite
@@ -157,8 +158,8 @@
 - type: entity
   parent: UnsensoredClothingUniformSkirtBase
   id: ClothingUniformJumpsuitMilitaryLIT
-  name: униформа Литвы
-  description: Униформа армии Литвы.
+  name: Lithuanian uniform
+  description: Uniform of the Lithuanian army.
   suffix: Stalker
   components:
     - type: Sprite
@@ -171,8 +172,8 @@
 - type: entity
   parent: UnsensoredClothingUniformSkirtBase
   id: ClothingUniformJumpsuitMilitaryPOL
-  name: униформа Польши
-  description: Униформа армии Польши.
+  name: uniform of Poland
+  description: Uniform of the Polish Army.
   suffix: Stalker
   components:
     - type: Sprite
@@ -185,8 +186,8 @@
 - type: entity
   parent: UnsensoredClothingUniformSkirtBase
   id: ClothingUniformJumpsuitStalker
-  name: комбинезон сталкера
-  description: Банальная комбинация бытовой одежды. Даже в Зону многие приходят в джинсах.
+  name: "Stalker's Overalls"
+  description: A banal combination of household clothes. Even in the Zone, many people come in jeans.
   suffix: Stalker
   components:
     - type: Sprite
@@ -199,8 +200,8 @@
 - type: entity
   parent: UnsensoredClothingUniformSkirtBase
   id: ClothingUniformJumpsuitStalkerM85
-  name: униформа М85
-  description: После развала Чехословакии огромное количество униформы попало на гражданский рынок, это - один из образцов, сделанных уже на подобии чешского комплекта.
+  name: M85 Uniform
+  description: After the collapse of Czechoslovakia, a huge number of uniforms ended up on the civilian market, this is one of the samples made in the likeness of the Czech kit.
   suffix: Stalker
   components:
     - type: Sprite
@@ -213,8 +214,8 @@
 - type: entity
   parent: UnsensoredClothingUniformSkirtBase
   id: ClothingUniformJumpsuitMonolith
-  name: форма монолита
-  description: стандартный комбинезон, используемый группировкой «Монолит». Обычно его носят штурмовики, дозорные либо разведчики. Неплохо защищает от слабого стрелкового оружия. Уровень защиты от аномальной активности оставляет желать лучшего из-за отсутствия системы фильтрации воздуха.
+  name: monolith Uniform
+  description: the default jumpsuit used by the Monolith faction. It is usually worn by stormtroopers, patrols or scouts. Good protection against weak small arms. The level of protection against anomalous activity leaves much to be desired due to the lack of an air filtration system.
   suffix: Stalker
   components:
     - type: Sprite
@@ -227,8 +228,8 @@
 - type: entity
   parent: UnsensoredClothingUniformSkirtBase
   id: ClothingUniformJumpsuitUN
-  name: форма ООН
-  description: Униформа ООН без опозновательных знаков - для ООНовцев без границ.
+  name: UN uniform
+  description: UN uniforms without identification marks - for UN Without Borders.
   suffix: Stalker
   components:
     - type: Sprite
@@ -241,8 +242,8 @@
 - type: entity
   parent: UnsensoredClothingUniformSkirtBase
   id: ClothingUniformJumpsuitFreedom1
-  name: форма группировки «Воля»
-  description: стандартный комбинезон, используемый группировкой «Воля».
+  name: Freedom Uniform
+  description: standard jumpsuit used by the Freedom Group.
   suffix: Stalker
   components:
     - type: Sprite
@@ -255,8 +256,8 @@
 - type: entity
   parent: UnsensoredClothingUniformSkirtBase
   id: ClothingUniformJumpsuitFreedom2
-  name: форма группировки «Воля» Флектарн
-  description: стандартный комбинезон, используемый группировкой «Воля». Камо позаимствовано у Бундсвера.
+  name: "Flectarn's Freedom Uniform"
+  description: standard jumpsuit used by the Freedom Group. Kamo is borrowed from Bundsweer.
   suffix: Stalker
   components:
     - type: Sprite
@@ -269,8 +270,8 @@
 - type: entity
   parent: UnsensoredClothingUniformSkirtBase
   id: ClothingUniformJumpsuitDolg1
-  name: форма Долга
-  description: стандартный комбинезон, используемый группировкой «Долг».
+  name: Duty Uniform
+  description: standard jumpsuit used by the Duty group.
   suffix: Stalker
   components:
     - type: Sprite
@@ -283,8 +284,8 @@
 - type: entity
   parent: UnsensoredClothingUniformSkirtBase
   id: ClothingUniformJumpsuitDolg2
-  name: форма Долга чёрная
-  description: стандартный комбинезон, используемый группировкой «Долг».
+  name: Duty Uniform Black
+  description: standard jumpsuit used by the Duty group.
   suffix: Stalker
   components:
     - type: Sprite
@@ -297,9 +298,9 @@
 - type: entity
   parent: UnsensoredClothingUniformSkirtBase
   id: ClothingUniformJumpsuitZavetBoez
-  name: форма бойца завета
-  description: стандартный комбинезон, используемый группировкой «Завет».
-  suffix: Stalker, Завет
+  name: Covenant Fighter Uniform
+  description: standard jumpsuit used by the Covenant Group.
+  suffix: Stalker, Covenant # Zona14: Stalker, Завет
   components:
     - type: Sprite
       sprite: _Stalker/Objects/Clothing/uniform/zavet/zavet.rsi
@@ -311,9 +312,9 @@
 - type: entity
   parent: UnsensoredClothingUniformSkirtBase
   id: ClothingUniformJumpsuitZavetLead
-  name: форма лидера завета
-  description: стандартный комбинезон, используемый группировкой «Завет».
-  suffix: Stalker, Завет
+  name: Covenant Leader Uniform
+  description: standard jumpsuit used by the Covenant Group.
+  suffix: Stalker, Covenant # Zona14: Stalker, Завет
   components:
     - type: Sprite
       sprite: _Stalker/Objects/Clothing/uniform/zavet/zavet_lead.rsi
@@ -325,8 +326,8 @@
 - type: entity
   parent: UnsensoredClothingUniformSkirtBase
   id: ClothingUniformJumpsuitMercV1
-  name: синий костюм наёмника
-  description: Костюм имеет синий оттенок, и тёмные штаны. Применяется группировкой «Наёмники».
+  name: Blue Mercenary Suit
+  description: The costume has a blue tint, and dark pants. Used by the Mercenaries group.
   suffix: Stalker
   components:
     - type: Sprite
@@ -339,8 +340,8 @@
 - type: entity
   parent: ClothingUniformBase
   id: ClothingUniformJumpsuitGreh
-  name: форма греха
-  description: Старая, рваная, но святая.
+  name: Uniform of Sin
+  description: Old, torn, but holy.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/uniform/greh_uniform.rsi
@@ -364,8 +365,8 @@
 - type: entity
   parent: UnsensoredClothingUniformSkirtBase
   id: ClothingUniformJumpsuitDeserter
-  name: форма Отступника
-  description: Стандартный комбинезон, используемый группировкой «Отступники».
+  name: Renegade Uniform
+  description: Standard jumpsuit used by the Renegade faction.
   suffix: Stalker
   components:
     - type: Sprite
@@ -378,8 +379,8 @@
 - type: entity
   parent: UnsensoredClothingUniformSkirtBase
   id: ClothingUniformJumpsuitClearSky
-  name: форма Чистого Неба
-  description: Стандартный комбинезон, используемый группировкой «Чистое Небо».
+  name: Clear Sky Uniform
+  description: The default jumpsuit used by the Clear Sky Group.
   suffix: Stalker
   components:
     - type: Sprite
@@ -392,8 +393,8 @@
 - type: entity
   parent: UnsensoredClothingUniformSkirtBase
   id: ClothingUniformJumpsuitJaba
-  name: форма Жаб
-  description: Стандартный комбинезон, используемый группировкой «Жабы».
+  name: Toad Uniform
+  description: Standard jumpsuit used by the Toad Group.
   suffix: Stalker
   components:
     - type: Sprite
@@ -418,8 +419,8 @@
 - type: entity
   parent: UnsensoredClothingUniformSkirtBase
   id: ClothingUniformPolice
-  name: полицейская униформа
-  description: Я здесь закон!
+  name: Police Uniform
+  description: "I'm the law here!"
   suffix: Stalker, police
   components:
   - type: Sprite
@@ -429,8 +430,8 @@
 - type: entity
   parent: UnsensoredClothingUniformSkirtBase
   id: ClothingUniformSerafimFanatic
-  name: Футболка с пивозавром
-  description: Может быть это скоро станет модным.
+  name: Seraphim Uniform
+  description: Maybe it will become fashionable soon.
   suffix: Stalker, Serafim
   components:
   - type: Sprite
@@ -441,8 +442,8 @@
 - type: entity
   parent: UnsensoredClothingUniformSkirtBase
   id: ClothingUniformSerafimFullReady
-  name: Футболка с пивозавром
-  description: Может быть это скоро станет модным.
+  name: Seraphim Uniform
+  description: Maybe it will become fashionable soon.
   suffix: Stalker, Serafim
   components:
   - type: Sprite
@@ -453,8 +454,8 @@
 - type: entity
   parent: UnsensoredClothingUniformSkirtBase
   id: ClothingUniformSerafimLittleChaos
-  name: Футболка с пивозавром
-  description: Может быть это скоро станет модным.
+  name: Seraphim Uniform
+  description: Maybe it will become fashionable soon.
   suffix: Stalker, Serafim
   components:
   - type: Sprite

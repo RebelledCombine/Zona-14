@@ -1,0 +1,19 @@
+ent-Z14ClothingHeadHatHoodCoatBanditBlack = { ent-ClothingHeadHatHoodCoatBanditBrown }
+    .desc = Hoods, helmets and the like.
+    .suffix = Z14
+
+ent-Z14ClothingHeadHatHoodCoatBanditBrown = hood
+    .desc = Hoods, helmets and the like.
+    .suffix = Z14
+
+ent-Z14ClothingOuterCoatBanditBlack = { ent-ClothingOuterCoatBanditBrown }
+    .desc = An ordinary cloak made of black leather. It does not provide noticeable protection to the carrier. Except that it will not let you freeze at night and soften the bite of a blind dog. Quite inconvenient in the conditions of the Zone, but, nevertheless, it is often used by bandits - perhaps solely because of its appearance.
+    .suffix = Z14
+
+ent-Z14ClothingOuterCoatBanditBrown = Bandit Leather Cloak
+    .desc = Normal brown leather cloak. It does not provide noticeable protection to the carrier. Except that it will not let you freeze at night and soften the bite of a blind dog. Quite inconvenient in the conditions of the Zone, but, nevertheless, it is often used by bandits - perhaps solely because of its appearance.
+    .suffix = Z14
+
+ent-Z14STClothingOuterCoatBase = Basic Cloak
+    .desc = Basic description of the cloak.
+    .suffix = Z14

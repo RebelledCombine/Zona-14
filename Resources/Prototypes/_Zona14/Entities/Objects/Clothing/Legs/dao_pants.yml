@@ -1,0 +1,11 @@
+- type: entity
+  parent: Z14BaseClothingLegs
+  id: Z14ClothingLegsOrangeDaoPants
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: orange dao pants
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/Legs/dao_pants.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/Legs/dao_pants.rsi

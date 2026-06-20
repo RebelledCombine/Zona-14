@@ -15,11 +15,11 @@ public sealed class PersistentCraftProfileService
     private readonly HashSet<string> _reusablePath = new();
 
     /// <summary>
-    /// Auto-unlock ноды (Cost ≤ 0), отсортированные в топологическом порядке.
-    /// Гарантия: если нода A — пререквизит ноды B, то A идёт раньше B в списке.
-    /// Строится один раз в конструкторе алгоритмом Кана, после чего
-    /// <see cref="EnsureAutoTierNodesUnlocked"/> выполняется за один проход O(m),
-    /// где m — количество auto-unlock нод.
+    /// Auto-unlock nodes (Cost ≤ 0), sorted in topological order. // Zona14: translated comment
+    /// Guarantee: if node A is a prerequisite of node B, then A comes before B in the list. // Zona14: translated comment
+    /// Built once in the constructor using Kahn's algorithm, after which // Zona14: translated comment
+    /// <see cref="EnsureAutoTierNodesUnlocked"/> executes in a single O(m) pass, // Zona14: translated comment
+    /// where m is the number of auto-unlock nodes. // Zona14: translated comment
     /// </summary>
     private readonly List<PersistentCraftNodePrototype> _autoUnlockTopological;
 
@@ -36,15 +36,15 @@ public sealed class PersistentCraftProfileService
     }
 
     /// <summary>
-    /// Алгоритм Кана: строит топологический порядок для auto-unlock нод.
-    /// Учитываются только рёбра между auto-unlock нодами; пререквизиты
-    /// с Cost > 0 (ручные ноды) считаются «внешними» — они проверяются
-    /// в рантайме через profile.UnlockedNodes.Contains.
+    /// Kahn's algorithm: builds topological order for auto-unlock nodes. // Zona14: translated comment
+    /// Only edges between auto-unlock nodes are considered; prerequisites // Zona14: translated comment
+    /// with Cost > 0 (manual nodes) are treated as "external" — they are checked // Zona14: translated comment
+    /// at runtime via profile.UnlockedNodes.Contains. // Zona14: translated comment
     /// </summary>
     private static List<PersistentCraftNodePrototype> BuildAutoUnlockTopologicalOrder(
         IReadOnlyList<PersistentCraftNodePrototype> allNodes)
     {
-        // Собираем только auto-unlock ноды в словарь
+        // Collect only auto-unlock nodes into a dictionary // Zona14: translated comment
         var autoNodes = new Dictionary<string, PersistentCraftNodePrototype>();
         for (var i = 0; i < allNodes.Count; i++)
         {
@@ -56,9 +56,9 @@ public sealed class PersistentCraftProfileService
         if (autoNodes.Count == 0)
             return new List<PersistentCraftNodePrototype>();
 
-        // Считаем in-degree и строим граф зависимых (dependents).
-        // Ребро prerequisiteId → nodeId означает: «когда prerequisiteId обработан,
-        // уменьшить in-degree у nodeId». Учитываем только рёбра между auto-unlock нодами.
+        // Calculate in-degree and build dependents graph. // Zona14: translated comment
+        // Edge prerequisiteId → nodeId means: "when prerequisiteId is processed, // Zona14: translated comment
+        // decrement in-degree of nodeId". Only edges between auto-unlock nodes are considered. // Zona14: translated comment
         var inDegree = new Dictionary<string, int>(autoNodes.Count);
         var dependents = new Dictionary<string, List<string>>(autoNodes.Count);
 
@@ -73,7 +73,7 @@ public sealed class PersistentCraftProfileService
                 if (!autoNodes.ContainsKey(prereqId))
                     continue;
 
-                // prereqId → node.ID: когда prereq обработан, node.ID получает -1 к in-degree
+                // prereqId → node.ID: when prereq is processed, node.ID gets -1 to in-degree // Zona14: translated comment
                 inDegree.TryGetValue(node.ID, out var current);
                 inDegree[node.ID] = current + 1;
 
@@ -87,7 +87,7 @@ public sealed class PersistentCraftProfileService
             }
         }
 
-        // BFS (алгоритм Кана): начинаем с нод без auto-unlock пререквизитов
+        // BFS (Kahn's algorithm): start with nodes that have no auto-unlock prerequisites // Zona14: translated comment
         var queue = new Queue<string>();
         foreach (var (nodeId, degree) in inDegree)
         {
@@ -113,9 +113,9 @@ public sealed class PersistentCraftProfileService
             }
         }
 
-        // Если result.Count < autoNodes.Count — есть цикл среди auto-unlock нод.
-        // ValidateNodeCycles в CraftingSystem уже предупреждает об этом при запуске,
-        // поэтому здесь просто пропускаем циклические ноды (они не попадут в список).
+        // If result.Count < autoNodes.Count — there is a cycle among auto-unlock nodes. // Zona14: translated comment
+        // ValidateNodeCycles in CraftingSystem already warns about this at startup, // Zona14: translated comment
+        // so here we simply skip cyclic nodes (they won't be included in the list). // Zona14: translated comment
 
         return result;
     }
@@ -174,10 +174,10 @@ public sealed class PersistentCraftProfileService
 
     public void EnsureAutoTierNodesUnlocked(PersistentCraftProfileComponent profile)
     {
-        // Один проход по предвычисленному топологическому порядку auto-unlock нод — O(m).
-        // Благодаря топологической сортировке, к моменту обработки ноды все её
-        // auto-unlock пререквизиты уже были рассмотрены. Пререквизиты с Cost > 0
-        // (ручные ноды) проверяются через profile.UnlockedNodes.Contains.
+        // Single pass over the precomputed topological order of auto-unlock nodes — O(m). // Zona14: translated comment
+        // Thanks to topological sorting, by the time a node is processed all its // Zona14: translated comment
+        // auto-unlock prerequisites have already been considered. Prerequisites with Cost > 0 // Zona14: translated comment
+        // (manual nodes) are checked via profile.UnlockedNodes.Contains. // Zona14: translated comment
         for (var i = 0; i < _autoUnlockTopological.Count; i++)
         {
             var node = _autoUnlockTopological[i];
@@ -248,7 +248,7 @@ public sealed class PersistentCraftProfileService
 
     public List<PersistentCraftBranchState> BuildBranchStates(PersistentCraftProfileComponent profile)
     {
-        // Считаем потраченные очки за один проход по нодам — для всех веток сразу.
+        // Count spent points in a single pass over nodes — for all branches at once. // Zona14: translated comment
         var spentByBranch = new Dictionary<string, int>(_branchRegistry.OrderedBranchIds.Count);
         for (var i = 0; i < _nodeCache.Count; i++)
         {

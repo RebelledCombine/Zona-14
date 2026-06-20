@@ -1,6 +1,7 @@
+# Zona14: translated Russian names/descriptions to English
 - type: tile
   id: FloorPlanetGreenGrass
-  name: Зелёная трава Stalker
+  name: Green grass Stalker
   sprite: /Textures/_Stalker/Tiles/Greengrass/grass.png
   variants: 4
   placementVariants:
@@ -29,7 +30,7 @@
 
 - type: tile
   id: FloorPlanetRedGrass
-  name: Красная трава Stalker
+  name: Red grass Stalker
   sprite: /Textures/_Stalker/Tiles/Redgrass/grass.png
   variants: 4
   placementVariants:
@@ -58,7 +59,7 @@
 
 - type: tile
   id: FloorPlanetYellowGrass
-  name: Жёлтая трава Stalker
+  name: Yellow grass Stalker
   sprite: /Textures/_Stalker/Tiles/Yellowgrass/grass.png
   variants: 4
   placementVariants:
@@ -85,10 +86,10 @@
   weather: true
   indestructible: true
 
-# Песок
+# Zona14: Песок
 - type: tile
   id: FloorPlanetSand
-  name: песок Stalker
+  name: sand Stalker
   sprite: /Textures/_Stalker/Tiles/Sand/sand.png
   variants: 5
   placementVariants:
@@ -117,10 +118,10 @@
   indestructible: true
 
 
-# Щебёнка
+# Zona14: Щебёнка
 - type: tile
   id: FloorScheben
-  name: щебень Stalker
+  name: gravel Stalker
   sprite: /Textures/_Stalker/Tiles/scheben.png
   variants: 4
   placementVariants:
@@ -136,7 +137,7 @@
   indestructible: true
 - type: tile
   id: FloorDarkScheben
-  name: тёмный щебень Stalker
+  name: dark gravel Stalker
   sprite: /Textures/_Stalker/Tiles/darkscheben.png
   variants: 4
   placementVariants:
@@ -152,7 +153,7 @@
   indestructible: true
 - type: tile
   id: FloorRoad
-  name: дорога Stalker
+  name: road Stalker
   sprite: /Textures/_Stalker/Tiles/road.png
   variants: 4
   placementVariants:
@@ -170,7 +171,7 @@
 # Wasteland
 - type: tile
   id: StalkerFloorSnowDug
-  name: Грязный снег
+  name: Dirty Snow
   sprite: /Textures/_Stalker/Tiles/snow.rsi/snow13.png
   edgeSpritePriority: 1
   edgeSprites:

@@ -1,7 +1,8 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: BaseItem
-  name: карта
-  description: Приятная на ощупь бумажная игральная карта выпуска NanoTrasen.
+  name: map
+  description: A pleasant-to-touch paper playing card manufactured by NanoTrasen.
   id: BaseCard
   suffix: ST
   abstract: true
@@ -419,9 +420,9 @@
 - type: entity
   parent: BaseCardBin
   id: CardBinEmpty
-  name: колода карт
-  description: Колода карт для тех кому действительно более не чем занятся.
-  suffix: Пустая
+  name: Deck of cards
+  description: A deck of cards for those who really have nothing else to do.
+  suffix: Empty # Zona14: Пустая
   components:
   - type: Bin
     maxItems: 37
@@ -432,9 +433,9 @@
 - type: entity
   parent: BaseCardBin
   id: PokerCardBinEmpty
-  name: колода карт
-  description: Покерная колода карт для тех кому действительно более не чем занятся.
-  suffix: Пустая
+  name: "{ ent-CardBinEmpty }"
+  description: A poker deck of cards for those who really have nothing else to do.
+  suffix: Empty # Zona14: Пустая
   components:
   - type: Bin
     maxItems: 53
@@ -445,8 +446,8 @@
 - type: entity
   parent: BaseCardBin
   id: PokerCardBin
-  name: колода карт
-  description: Покерная колода карт для тех кому действительно более не чем занятся.
+  name: "{ ent-CardBinEmpty }"
+  description: "{ ent-PokerCardBinEmpty.desc }"
   suffix: 52
   components:
   - type: Bin
@@ -511,8 +512,8 @@
 - type: entity
   parent: BaseCardBin
   id: CardBin
-  name: колода карт
-  description: Колода карт для тех кому действительно более не чем занятся.
+  name: "{ ent-CardBinEmpty }"
+  description: "{ ent-CardBinEmpty.desc }"
   suffix: 36
   components:
   - type: Bin

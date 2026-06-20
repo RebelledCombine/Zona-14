@@ -1,0 +1,301 @@
+- type: entity
+  parent: Z14BaseClothingTorso
+  id: Z14ClothingTorsoTurtlenecksMercenary
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: mercenary turtlenecks
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/Torso/Turtlenecks/mercenary.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/Torso/Turtlenecks/mercenary.rsi
+
+- type: entity
+  parent: Z14BaseClothingTorso
+  id: Z14ClothingTorsoTurtlenecksBlack
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: black turtlenecks
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/Torso/Turtlenecks/black.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/Torso/Turtlenecks/black.rsi
+
+- type: entity
+  parent: Z14BaseClothingTorso
+  id: Z14ClothingTorsoTurtlenecksGorka
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: gorka 4 turtlenecks
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/Torso/Turtlenecks/gorka.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/Torso/Turtlenecks/gorka.rsi
+
+- type: entity
+  parent: Z14BaseClothingTorso
+  id: Z14ClothingTorsoTurtlenecksGorka6
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: gorka 6 turtlenecks
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/Torso/Turtlenecks/gorka6.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/Torso/Turtlenecks/gorka6.rsi
+
+- type: entity
+  parent: Z14BaseClothingTorso
+  id: Z14ClothingTorsoTurtlenecksBereza
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: bereza turtlenecks
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/Torso/Turtlenecks/bereza.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/Torso/Turtlenecks/bereza.rsi
+
+- type: entity
+  parent: Z14BaseClothingTorso
+  id: Z14ClothingTorsoTurtlenecksGorkaRus
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: russian pixel turtlenecks
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/Torso/Turtlenecks/russiangorka.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/Torso/Turtlenecks/russiangorka.rsi
+
+- type: entity
+  parent: Z14BaseClothingTorso
+  id: Z14ClothingTorsoTurtlenecksUN
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: un turtlenecks
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/Torso/Turtlenecks/un.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/Torso/Turtlenecks/un.rsi
+
+- type: entity
+  parent: Z14BaseClothingTorso
+  id: Z14ClothingTorsoTurtlenecksFreedomCamouflage
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: volition camouflage turtlenecks
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/Torso/Turtlenecks/freedom_camouflage.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/Torso/Turtlenecks/freedom_camouflage.rsi
+
+- type: entity
+  parent: Z14BaseClothingTorso
+  id: Z14ClothingTorsoTurtlenecksDolgCamouflage
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: dolg camouflage turtlenecks
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/Torso/Turtlenecks/dolg_camouflage.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/Torso/Turtlenecks/dolg_camouflage.rsi
+
+- type: entity
+  parent: Z14BaseClothingTorso
+  id: Z14ClothingTorsoTurtlenecksRedDolgCamouflage
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: red dolg camouflage turtlenecks
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/Torso/Turtlenecks/red_dolg_camouflage.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/Torso/Turtlenecks/red_dolg_camouflage.rsi
+
+- type: entity
+  parent: Z14BaseClothingTorso
+  id: Z14ClothingTorsoTurtlenecksCovenant
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: covenant turtlenecks
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/Torso/Turtlenecks/covenant.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/Torso/Turtlenecks/covenant.rsi
+
+- type: entity
+  parent: Z14BaseClothingTorso
+  id: Z14ClothingTorsoTurtlenecksCovenantHead
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: covenant head turtlenecks
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/Torso/Turtlenecks/covenant_head.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/Torso/Turtlenecks/covenant_head.rsi
+
+- type: entity
+  parent: Z14BaseClothingTorso
+  id: Z14ClothingTorsoTurtlenecksDeserterCamouflage
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: deserter turtlenecks camouflage
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/Torso/Turtlenecks/deserter_camouflage.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/Torso/Turtlenecks/deserter_camouflage.rsi
+
+- type: entity
+  parent: Z14BaseClothingTorso
+  id: Z14ClothingTorsoTurtlenecksUa
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: ukrainian army turtlenecks
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/Torso/Turtlenecks/ua.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/Torso/Turtlenecks/ua.rsi
+
+- type: entity
+  parent: Z14BaseClothingTorso
+  id: Z14ClothingTorsoTurtlenecksUa2
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: ukrainian army turtlenecks
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/Torso/Turtlenecks/ua2.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/Torso/Turtlenecks/ua2.rsi
+
+- type: entity
+  parent: Z14BaseClothingTorso
+  id: Z14ClothingTorsoTurtlenecksClearSky
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: clear sky turtlenecks
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/Torso/Turtlenecks/clearsky.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/Torso/Turtlenecks/clearsky.rsi
+
+- type: entity
+  parent: Z14BaseClothingTorso
+  id: Z14ClothingTorsoTurtlenecksMilitary
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: military turtlenecks
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/Torso/Turtlenecks/military.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/Torso/Turtlenecks/military.rsi
+
+- type: entity
+  parent: Z14BaseClothingTorso
+  id: Z14ClothingTorsoTurtlenecksMonolithCamouflage
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: monolith camouflage turtlenecks
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/Torso/Turtlenecks/monolith.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/Torso/Turtlenecks/monolith.rsi
+    - type: Unremoveable
+
+- type: entity
+  parent: Z14BaseClothingTorso
+  id: Z14ClothingTorsoTurtlenecksBattleTurtleneckbBlack
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: battle turtleneck black
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/Torso/Turtlenecks/battle_turtleneck_black.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/Torso/Turtlenecks/battle_turtleneck_black.rsi
+
+- type: entity
+  parent: Z14BaseClothingTorso
+  id: Z14ClothingTorsoTurtlenecksBlackTurtleneck
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: black turtleneck
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/Torso/Turtlenecks/black_turtleneck.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/Torso/Turtlenecks/black_turtleneck.rsi
+
+- type: entity
+  parent: Z14BaseClothingTorso
+  id: Z14ClothingTorsoTurtlenecksCombatForest
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: combat forest
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/Torso/Turtlenecks/combat_forest.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/Torso/Turtlenecks/combat_forest.rsi
+
+- type: entity
+  parent: Z14BaseClothingTorso
+  id: Z14ClothingTorsoTurtlenecksGorka5
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: gorka 5
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/Torso/Turtlenecks/gorka5.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/Torso/Turtlenecks/gorka5.rsi
+
+- type: entity
+  parent: Z14BaseClothingTorso
+  id: Z14ClothingTorsoTurtlenecksGorka6B
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: gorka 6
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/Torso/Turtlenecks/gorka6b.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/Torso/Turtlenecks/gorka6b.rsi
+
+- type: entity
+  parent: Z14BaseClothingTorso
+  id: Z14ClothingTorsoTurtlenecksKhakiTurtleneck
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: khaki turtleneck
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/Torso/Turtlenecks/khaki_turtleneck.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/Torso/Turtlenecks/khaki_turtleneck.rsi
+
+- type: entity
+  parent: Z14BaseClothingTorso
+  id: Z14ClothingTorsoTurtlenecksMatrosska
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: matrosska
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/Torso/Turtlenecks/matrosska.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/Torso/Turtlenecks/matrosska.rsi
+

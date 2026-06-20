@@ -1,13 +1,14 @@
-################# ООН
+# Zona14: translated Russian names/descriptions to English
+# Zona14: ################ ООН
 
-### Т4 СЕТ
+# Zona14: ## Т4 СЕТ
 
 - type: entity
   parent: BaseItem
   id: UNstandartCrate
-  name: набор ООН
-  description: Набор стандартный поставки экипировки ООН, т4
-  suffix: Stalker, т4
+  name: UN Kit
+  description: UN Standard Issue Equipment Kit, T4
+  suffix: Stalker, t4 # Zona14: Stalker, т4
   components:
     - type: Item
       size: Large
@@ -46,14 +47,14 @@
       sound:
         path: /Audio/Effects/unwrap.ogg
 
-###### т3
+# Zona14: ##### т3
 
 - type: entity
   parent: BaseItem
   id: UNstandartCrateT3
-  name: набор ООН
-  description: Набор стандартный поставки экипировки ООН, т3.
-  suffix: Stalker, т3
+  name: "{ ent-UNstandartCrate }"
+  description: UN Standard Issue Equipment Kit, T3
+  suffix: Stalker, t3 # Zona14: Stalker, т3
   components:
     - type: Item
       size: Large
@@ -98,9 +99,9 @@
 - type: entity
   parent: BaseItem
   id: ArmyAK1Crate
-  name: старый комплект ПСЗ-7 АКСУ
-  description: Базовый армейский комплект ПСЗ предназначенный для солдат С.О.П. первой версии.
-  suffix: Stalker, т3
+  name: old PSZ-7 AKSU kit
+  description: A kit of the basic PSZ-7 AKSU of the first version.
+  suffix: Stalker, t3 # Zona14: Stalker, т3
   components:
     - type: STWeight
       self: 87.2
@@ -152,8 +153,8 @@
 - type: entity
   parent: UNstandartCrate
   id: DuryAK2Crate
-  name: комплект АКСУ и куртка Долга
-  description: Набор для тех, кто совсем на мели.
+  name: AKSU kit and avant-garde jacket
+  description: A kit for those who are completely broke.
   components:
     - type: Item
       size: Large
@@ -188,9 +189,9 @@
 - type: entity
   parent: BaseItem
   id: ArmyAKCUCrate
-  name: рядовой комплект СОП
-  description: Базовый армейский комплект предназначенный для солдат С.О.П. переделанный под ЧЗО.
-  suffix: Stalker, т3
+  name: OKSOP Standard Issued Kit
+  description: Basic army kit intended for OKSOP soldiers, converted for the Chernobyl Exclusion Zone.
+  suffix: Stalker, t3 # Zona14: Stalker, т3
   components:
     - type: STWeight
       self: 87.2
@@ -246,9 +247,9 @@
 - type: entity
   parent: UNstandartCrate
   id: ArmyAKCCrate
-  name: сержантский комплект СОП
-  description: Сержантский армейский комплект предназначенный для солдат С.О.П. переделанный под ЧЗО.
-  suffix: Stalker, т3
+  name: OKSOP Sergeant Kit
+  description: "Sergeant's army kit intended for OKSOP soldiers, converted for the Chernobyl Exclusion Zone."
+  suffix: Stalker, t3 # Zona14: Stalker, т3
   components:
     - type: STWeight
       self: 87.2
@@ -307,9 +308,9 @@
 - type: entity
   parent: BaseItem
   id: ArmyAKMOfficerCrate
-  name: офицерский комплект СОП
-  description: Офицерский комплект ПСЗ предназначенный для офицеров С.О.П.
-  suffix: Stalker, т3
+  name: OKSOP Officer Kit
+  description: "Officer's kit intended for OKSOP soldiers, converted for the Chernobyl Exclusion Zone."
+  suffix: Stalker, t3 # Zona14: Stalker, т3
   components:
     - type: STWeight
       self: 87.2
@@ -372,8 +373,8 @@
 - type: entity
   parent: UNstandartCrate
   id: ArmySMGCrate
-  name: набор ОКСОП Витязь
-  description: Набор базовой поставки экипировки ОКСОП
+  name: OKSOP Vityaz Kit
+  description: OKSOP Base Gear Pack
   components:
     - type: Item
       size: Large
@@ -416,8 +417,8 @@
 - type: entity
   parent: UNstandartCrate
   id: ArmyAKSUCrate
-  name: набор ОКСОП Ксюха
-  description: Набор улучшенной поставки экипировки ОКСОП
+  name: Ksyukha OKSOP Kit
+  description: Improved OKSOP Gear Supply Pack
   components:
     - type: Item
       size: Large
@@ -464,8 +465,8 @@
 - type: entity
   parent: UNstandartCrate
   id: ArmySergCrate
-  name: набор ОКСОП Сержант
-  description: Набор поставки экипировки ОКСОП для командиров отделения. Эквивалентно 4 классу.
+  name: OKSOP Sgt Pack
+  description: OKSOP Kit for Squad Leaders. Equivalent to Grade 4.
   components:
     - type: Item
       size: Large
@@ -512,8 +513,8 @@
 - type: entity
   parent: UNstandartCrate
   id: ArmyOffiCrate
-  name: набор ОКСОП Офицер
-  description: Набор поставки экипировки ОКСОП для командиров. Эквивалентно 5 классу.
+  name: OKSOP Officer Pack
+  description: OKSOP Commander Outfit Pack. Equivalent to Grade 5.
   components:
     - type: Item
       size: Large
@@ -562,8 +563,8 @@
 - type: entity
   parent: UNstandartCrate
   id: ArmySaigaCrate
-  name: набор с Сайгой
-  description: Набор поставки экипировки ОКСОП, включает в себя только сайгу и боеприпасы с магазинами к ней.
+  name: Saiga Kit
+  description: The Oxop Outfit Pack, which includes only the saiga and ammunition with its magazines.
   components:
     - type: Item
       size: Large
@@ -602,8 +603,8 @@
 - type: entity
   parent: UNstandartCrate
   id: ArmySciCrate
-  name: набор учёных
-  description: Набор поставки экипировки учёных.
+  name: Scientist Recruitment
+  description: A tightly packaged box containing a neatly folded SSP-99 suit, a service sidearm, and some medical equipment.
   components:
     - type: Item
       size: Large
@@ -645,8 +646,8 @@
 - type: entity
   parent: UNstandartCrate
   id: AntiradCrate
-  name: антирадиационный набор
-  description: "Антирадиационный набор с рекламной наклейкой: «Ваш надёжный защитник от вредного воздействия радиации»"
+  name: Anti-Radiation Kit
+  description: Anti-radiation kit with class A radioprotectants as well as medication for after exposure.
   components:
     - type: Item
       size: Normal
@@ -671,8 +672,8 @@
 - type: entity
   parent: UNstandartCrate
   id: SanitarCrate
-  name: набор санитара
-  description: Набор предназначен для предоставления медицинской помощи.
+  name: Orderly Kit
+  description: A box of AI-2 Medkits and a convenient CMS Kit.
   components:
     - type: Item
       size: Normal
@@ -705,8 +706,8 @@
 - type: entity
   parent: UNstandartCrate
   id: PolevoyVrachCrate
-  name: набор полевого врача
-  description: Расширенная версия медицинского набора.
+  name: Advanced Medical Box
+  description: Enhanced version of the Orderly kit.
   components:
     - type: Item
       size: Large
@@ -742,8 +743,8 @@
 - type: entity
   parent: UNstandartCrate
   id: ResearcherCrate
-  name: набор исследователя
-  description: Набор для поиска аномальных образований зоны.
+  name: Artifact Hunter Crate
+  description: A kit to search for anomalous formations in the zone.
   components:
     - type: Item
       size: Large
@@ -774,8 +775,8 @@
 - type: entity
   parent: UNstandartCrate
   id: SaviorCrate
-  name: набор спасателя
-  description: Последний вариант медицинского набора.
+  name: Rescue Pack
+  description: Grizly, Medkits, defib, GO!
   components:
     - type: Item
       size: Large
@@ -812,8 +813,8 @@
 - type: entity
   parent: BaseItem
   id: TradeBox
-  name: брикет контрабанды
-  description: Тщательно замаскированная под обычную коробку, контрабанда.
+  name: contraband briquette
+  description: Carefully disguised as a regular box, contraband.
   suffix: Stalker, Economy, Contraband
   components:
     - type: STWeight
@@ -833,8 +834,8 @@
 - type: entity
   parent: BaseItem
   id: TradeBox2
-  name: брикет запасов и документов сидоровичу
-  description: Тщательно замаскированная под обычную коробку, контрабанда.
+  name: briquette of stocks and documents to Sidorovich
+  description: "{ ent-TradeBox.desc }"
   suffix: Stalker, Economy, For Clear Sky
   components:
     - type: STWeight
@@ -854,8 +855,8 @@
 - type: entity
   parent: BaseItem
   id: STLoaderBox
-  name: Ящик для скупщика
-  description: Работа грузчика, сложный но нужный труд
+  name: Fence Box
+  description: Job of a loader, difficult but necessary work
   suffix: Stalker, Economy
   components:
   - type: Item
@@ -877,8 +878,8 @@
 - type: entity
   parent: BaseItem
   id: STCannabisBox
-  name: брикет отборной травы
-  description: Тщательно замаскированный под блок сигарет
+  name: selected grass briquette
+  description: Carefully disguised as a cigarette block
   suffix: Stalker, Economy, Contraband
   components:
     - type: STWeight
@@ -897,8 +898,8 @@
 - type: entity
   parent: BaseItem
   id: TradeBoxSera
-  name: брикет припасов серафимов
-  description: Коробка припасов серафимов, адресованная северному ковену Лиманска от Южного ковена
+  name: Seraphim Supply Crate
+  description: A supply crate from the Seraphim, addressed to the northern Limansk coven from the southern one.
   suffix: Stalker, Economy, Contraband
   components:
     - type: STWeight
@@ -918,8 +919,8 @@
 - type: entity
   parent: UNstandartCrate
   id: PoliceAKCrate
-  name: комплект АКСУ полицейский
-  description: Набор базовой АКСУ для полиции
+  name: CSSU Police Kit
+  description: Basic CSSA Kit for Police
   components:
     - type: Item
       size: Large
@@ -976,8 +977,8 @@
 - type: entity
   parent: UNstandartCrate
   id: PlicePmCrate
-  name: комплект ПМ полицейский
-  description: Набор ПМ для полиции
+  name: PM Police Kit
+  description: Police PM Kit
   components:
     - type: Item
       size: Large
@@ -1029,8 +1030,8 @@
 - type: entity
   parent: UNstandartCrate
   id: PoliceAK103Crate
-  name: комплект спецназа полицейский
-  description: Набор на случай военного положения.
+  name: Special Forces Police Kit
+  description: Martial Law Kit.
   components:
     - type: Item
       size: Large
@@ -1099,10 +1100,10 @@
         path: /Audio/Effects/unwrap.ogg
 
 - type: entity
-  name: оружейный кейс
+  name: weapon case
   parent: BriefcaseBase
   id: BriefcaseWeapon
-  description: Кейс для легальной переноски оружия.
+  description: Case for legally carrying a weapon.
   components:
   - type: Sprite
     sprite: Objects/Storage/Briefcases/briefcase_brown.rsi
@@ -1122,9 +1123,9 @@
 - type: entity
   parent: BaseItem
   id: UNstandartCrateT3P90
-  name: набор ООН c p90
-  description: Набор стандартный поставки экипировки ООН, т3.
-  suffix: Stalker, т3
+  name: UN Kit with p90
+  description: "{ ent-UNstandartCrateT3.desc }"
+  suffix: Stalker, t3 # Zona14: Stalker, т3
   components:
     - type: Item
       size: Large
@@ -1169,8 +1170,8 @@
 - type: entity
   parent: UNstandartCrate
   id: ArmyCrateNewStandart
-  name: набор ОКСОП новый стандартный
-  description: Набор поставки экипировки ОКСОП
+  name: OKSOP New Standard Kit
+  description: Oxop Equipment Delivery Kit
   components:
     - type: Item
       size: Large
@@ -1230,8 +1231,8 @@
 - type: entity
   parent: UNstandartCrate
   id: ArmyCrateNewOfficer
-  name: набор ОКСОП новый офицерский
-  description: Набор поставки экипировки ОКСОП
+  name: OKSOP Kit New Officer
+  description: "{ ent-ArmyCrateNewStandart.desc }"
   components:
     - type: Item
       size: Large
@@ -1295,8 +1296,8 @@
 - type: entity
   parent: UNstandartCrate
   id: ArmyCrateIssgBase
-  name: набор ISSG
-  description: Набор поставки экипировки  ISSG
+  name: ISSG Kit
+  description: ISSG Gear Kit
   components:
     - type: Item
       size: Large
@@ -1350,13 +1351,13 @@
       sound:
         path: /Audio/Effects/unwrap.ogg
 
-### ПРОВИЗИЯ СОП
+# Zona14: ## ПРОВИЗИЯ СОП
 
 - type: entity
   parent: BaseItem
   id: ArmyProvisionCrate
-  name: армейский комплект провизии
-  description: Базовый армейский комплект, содержащий продовольственные запасы, предназначенный для солдат С.О.П.
+  name: Army Provisioning Kit
+  description: Basic Army Kit containing food supplies intended for S.O.P. soldiers.
   suffix: Stalker
   components:
     - type: STWeight
@@ -1383,8 +1384,8 @@
 - type: entity
   parent: BaseItem
   id: ArmyMedkitMilitaryCrate
-  name: армейский комплект аптечек
-  description: Базовый армейский комплект, содержащий армейские аптечки, предназначенный для солдат С.О.П.
+  name: Army First Aid Kit
+  description: Basic Army Kit containing Army First Aid Kits, designed for S.O.P. soldiers.
   suffix: Stalker
   components:
     - type: STWeight
@@ -1409,8 +1410,8 @@
 - type: entity
   parent: BaseItem
   id: Army545Mag30Crate
-  name: армейский комплект обойм 5.45
-  description: Базовый армейский комплект, содержащий обоймы на 30 патрон под калибр 5.45 х 39, предназначенный для солдат С.О.П.
+  name: Army 5.45x39 Magazines Kit
+  description: Basic Army Kit, containing 30-round cartridges chambered at 5.45x39 caliber, intended for OKSOP soldiers.
   suffix: Stalker
   components:
     - type: STWeight
@@ -1435,8 +1436,8 @@
 - type: entity
   parent: BaseItem
   id: Army545Crate
-  name: армейский комплект ПС патронов 5.45
-  description: Базовый армейский комплект, содержащий ПС патроны калибра 5.45 х 39, предназначенный для солдат С.О.П.
+  name: Army 5.45x39 PS Ammo Boxes
+  description: Basic Army Kit containing 5.45x39 caliber SAR cartridges, intended for OKSOP soldiers.
   suffix: Stalker, T3
   components:
     - type: STWeight
@@ -1461,8 +1462,8 @@
 - type: entity
   parent: BaseItem
   id: Army739Crate
-  name: армейский комплект ПС патронов 7.62
-  description: Базовый армейский комплект, содержащий ПС патроны калибра 7.62 х 39, предназначенный для солдат С.О.П.
+  name: Army 7.62x39 FMJ Ammo Boxes Kit
+  description: Basic army kit containing 7.62x39 caliber PS cartridges, intended for OKSOP officers.
   suffix: Stalker, T3
   components:
   - type: STWeight
@@ -1487,8 +1488,8 @@
 - type: entity
   parent: BaseItem
   id: Army739Mag30Crate
-  name: армейский комплект обойм 7.62
-  description: Базовый армейский комплект, содержащий обоймы на 30 патрон под калибр 7.62 х 39, предназначенный для солдат С.О.П.
+  name: Army 7.62x39 Magazines Kit
+  description: Basic army kit containing 30 round magazines for 7.62x39 caliber, intended for OKSOP officers.
   suffix: Stalker, T3
   components:
   - type: STWeight
@@ -1513,8 +1514,8 @@
 - type: entity
   parent: BaseItem
   id: ArmyBloodPackMilitaryCrate
-  name: армейский комплект пакет с кровью
-  description: Базовый армейский комплект, содержащий пакеты с кровью, предназначенный для солдат С.О.П.
+  name: army blood pack kit
+  description: A basic army kit containing blood packs, intended for S.O.P. soldiers.
   suffix: Stalker
   components:
   - type: STWeight
@@ -1535,12 +1536,12 @@
     sound:
       path: /Audio/Effects/unwrap.ogg
 
-### МОНОЛИТ
+# Zona14: ## МОНОЛИТ
 
 - type: entity
   parent: BaseItem
   id: MonolithCrateBasicTools
-  name: ящик с базовыми инструментами «Монолита»
+  name: Monolith Basic Tools Crate
   suffix: Stalker, T3
   components:
     - type: STWeight
@@ -1565,7 +1566,7 @@
 - type: entity
   parent: BaseItem
   id: MonolithCrateMedkit
-  name: ящик медицины «Монолита»
+  name: Monolith Medical Crate
   suffix: Stalker, T3
   components:
     - type: STWeight
@@ -1595,7 +1596,7 @@
 - type: entity
   parent: BaseItem
   id: MonolithCrate545Mag30
-  name: ящик обойм 5.45 «Монолита»
+  name: Monolith 5.45 Magazines Crate
   suffix: Stalker, T3
   components:
     - type: STWeight
@@ -1619,7 +1620,7 @@
 - type: entity
   parent: BaseItem
   id: MonolithCrate545PC
-  name: ящик ПС патронов 5.45х39 «Монолита»
+  name: Monolith 5.45x39 PS Ammo Crate
   suffix: Stalker, T3
   components:
     - type: STWeight
@@ -1643,7 +1644,7 @@
 - type: entity
   parent: BaseItem
   id: MonolithCrate556Mag30
-  name: ящик обойм 5.56 «Монолита»
+  name: Monolith 5.56 Magazines Crate
   suffix: Stalker, T3
   components:
     - type: STWeight
@@ -1667,7 +1668,7 @@
 - type: entity
   parent: BaseItem
   id: MonolithCrate556M855
-  name: ящик M855 патронов 5.56х45 «Монолита»
+  name: Monolith 5.56x45 M855 Ammo Crate
   suffix: Stalker, T3
   components:
     - type: STWeight
@@ -1691,7 +1692,7 @@
 - type: entity
   parent: BaseItem
   id: MonolithCrate754Mag10
-  name: ящик обойм 7.62х54 «Монолита»
+  name: Monolith 7.62x54 Magazines Crate
   suffix: Stalker, T3
   components:
     - type: STWeight
@@ -1714,7 +1715,7 @@
 - type: entity
   parent: BaseItem
   id: MonolithCrate754FMJ
-  name: ящик FMJ патронов 7.62х54 «Монолита»
+  name: Monolith 7.62x54 FMJ Ammo Crate
   suffix: Stalker, T3
   components:
     - type: STWeight
@@ -1734,13 +1735,13 @@
       sound:
         path: /Audio/Effects/unwrap.ogg
 
-### СТАЛКЕРСКИЕ НАБОРЫ
+# Zona14: ## СТАЛКЕРСКИЕ НАБОРЫ
 
 - type: entity
   parent: BaseItem
   id: StalkerHunterCrate
-  name: набор для охоты
-  description: Набор базового снаряжения для охоты.
+  name: hunting kit
+  description: A set of basic hunting gear.
   suffix: Stalker
   components:
     - type: Item
@@ -1782,8 +1783,8 @@
 - type: entity
   parent: BaseItem
   id: StalkerArtefactHunterCrate
-  name: набор артхантера
-  description: Набор базового снаряжения для поиска артефактов.
+  name: artifact hunter’s kit
+  description: A set of basic equipment for artefact hunting.
   suffix: Stalker
   components:
     - type: Item
@@ -1818,8 +1819,8 @@
 - type: entity
   parent: BaseItem
   id: StalkerBasedCrate
-  name: базовый набор снаряжения
-  description: Набор базового снаряжения.
+  name: basic gear kit
+  description: A basic equipment set.
   suffix: Stalker
   components:
     - type: Item
@@ -1849,13 +1850,13 @@
         - id: STGauze
         - id: STGauze
 
-### НАБОРЫ ЗА ОЧКИ С ТОЧЕК ЗАХВАТА
+# Zona14: ## НАБОРЫ ЗА ОЧКИ С ТОЧЕК ЗАХВАТА
 
 - type: entity
   parent: BaseItem
   id: StalkerMedBandShopCrate
-  name: набор медицины
-  description: Набор содержащий различную медицину.
+  name: medical kit
+  description: A kit containing various medicine.
   suffix: Stalker
   components:
     - type: Item
@@ -1902,13 +1903,13 @@
 
 
 
-# Отступы
+# Zona14: Отступы
 
 - type: entity
   parent: UNstandartCrate
   id: DesertirCrate
-  name: набор снаряжения Отступников
-  description: Набор экипировки
+  name: Renegades equipment kit
+  description: An equipment kit.
   components:
     - type: Item
       size: Large
@@ -1944,13 +1945,13 @@
       sound:
         path: /Audio/Effects/unwrap.ogg
 
-###ОДИНОЧКИ
+# Zona14: ##ОДИНОЧКИ
 
 - type: entity
   parent: UNstandartCrate
   id: VeteranCrate
-  name: набор снаряжения Сталкеров Ополченцев
-  description: Набор экипировки
+  name: Stalker Militia equipment kit
+  description: An equipment kit.
   components:
     - type: Item
       size: Large
@@ -1986,13 +1987,13 @@
       sound:
         path: /Audio/Effects/unwrap.ogg
 
-#БАНДИТЫ
+# Zona14: БАНДИТЫ
 
 - type: entity
   parent: UNstandartCrate
   id: BandityCrate
-  name: набор снаряжения Бандитов
-  description: Набор экипировки
+  name: Bandits equipment kit
+  description: An equipment kit.
   components:
     - type: Item
       size: Large
@@ -2026,13 +2027,13 @@
       sound:
         path: /Audio/Effects/unwrap.ogg
 
-#Свобода
+# Zona14: Свобода
 
 - type: entity
   parent: UNstandartCrate
   id: FreedomCrate
-  name: набор снаряжения Свободы
-  description: Набор экипировки
+  name: Freedom equipment kit
+  description: An equipment kit.
   components:
     - type: Item
       size: Large
@@ -2066,13 +2067,13 @@
       sound:
         path: /Audio/Effects/unwrap.ogg
 
-#ЗАВЕТ
+# Zona14: ЗАВЕТ
 
 - type: entity
   parent: UNstandartCrate
   id: ZavetCrate
-  name: набор снаряжения Завета
-  description: Набор экипировки
+  name: Covenant equipment kit
+  description: An equipment kit.
   components:
     - type: Item
       size: Large
@@ -2106,13 +2107,13 @@
       sound:
         path: /Audio/Effects/unwrap.ogg
 
-#СЕРАФИМЫ
+# Zona14: СЕРАФИМЫ
 
 - type: entity
   parent: UNstandartCrate
   id: SefirotCrate
-  name: набор снаряжения Серафимов
-  description: Набор экипировки
+  name: Seraphim equipment kit
+  description: An equipment kit.
   components:
     - type: Item
       size: Large
@@ -2146,13 +2147,13 @@
       sound:
         path: /Audio/Effects/unwrap.ogg
 
-#ДОЛГ
+# Zona14: ДОЛГ
 
 - type: entity
   parent: UNstandartCrate
   id: DutyCrate
-  name: набор снаряжения Бандитов
-  description: Набор экипировки
+  name: Bandits equipment kit
+  description: An equipment kit.
   components:
     - type: Item
       size: Large

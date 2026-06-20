@@ -1,3 +1,4 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: [ClothingMaskBaseButcherable, BaseFoldable]
   id: ClothingMaskBalaklavaBase
@@ -35,52 +36,52 @@
     hideOnToggle: true
 
 
-# Трёхдырчатая балаклава 
+# Zona14: Трёхдырчатая балаклава
 
 - type: entity
   parent: ClothingMaskBalaklavaBase
   id: ClothingMaskNeckBalaklava1
-  name: трёхдырчатая балаклава 
-  description: Представляет собой вязанную балаклаву с тремя отверстиями для глаз и рта.
+  name: three-hole balaclava
+  description: It is a knitted balaclava with three holes for the eyes and mouth.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/mask/balaklava1.rsi
   - type: Clothing
     sprite: _Stalker/Objects/Clothing/mask/balaklava1.rsi
 
-# Трёхдырчатая балаклава с большими дырками
+# Zona14: Трёхдырчатая балаклава с большими дырками
 
 - type: entity
   parent: ClothingMaskBalaklavaBase
   id: ClothingMaskNeckBalaklava4
-  name: трёхдырчатая балаклава 
-  description: Представляет собой вязанную балаклаву с тремя отверстиями для глаз и рта.
+  name: balaclava
+  description: A mask with holes for the eyes and nose.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/mask/balaklava4.rsi
   - type: Clothing
     sprite: _Stalker/Objects/Clothing/mask/balaklava4.rsi
 
-# Лыжная  маска со ртом
+# Zona14: Лыжная  маска со ртом
 
 - type: entity
   parent: ClothingMaskBalaklavaBase
   id: ClothingMaskNeckBalaklava2
-  name: лыжная маска со ртом
-  description: Представляет собой лыжную маску с прорезями для глаз и рта.
+  name: Mouth Ski Mask
+  description: A ski goggle with slits for the eyes and mouth.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/mask/balaklava2.rsi
   - type: Clothing
     sprite: _Stalker/Objects/Clothing/mask/balaklava2.rsi
 
-# Лыжная маска
+# Zona14: Лыжная маска
 
 - type: entity
   parent: ClothingMaskBalaklavaBase
   id: ClothingMaskNeckBalaklava3
-  name: лыжная маска
-  description: Представляет собой лыжную маску с прорезью для глаз.
+  name: Ski Mask
+  description: Is a ski goggle with an eye slot.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/mask/balaklava3.rsi

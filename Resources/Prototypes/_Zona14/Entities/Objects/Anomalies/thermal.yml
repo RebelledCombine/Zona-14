@@ -1,0 +1,494 @@
+- type: entity
+  parent: Z14ZoneAnomalyBase
+  id: Z14ZoneAnomalyBaseThermal
+  categories: [ Zona14 ]
+  abstract: true
+  components:
+  - type: STAnomalyTips
+    icon:
+      sprite: /Textures/_Stalker/Interface/Overlays/anomaly_tips.rsi
+      state: fiery
+
+- type: entity
+  parent: Z14ZoneAnomalyBaseThermal
+  id: Z14ZoneAnomalyJarka
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+    - type: ZoneAnomalyUpdateTriggerCollide
+    - type: ZoneAnomalyEffectDamage
+      fireStacks: 0.25
+      damageUpdate: true
+      damage:
+        types:
+          Heat: 2
+    - type: ZoneAnomalyEffectDestroy
+      whitelist:
+        tags:
+          - STBolt
+    - type: ZoneAnomalyEffectPointLight
+    - type: ZoneAnomaly
+      detectedLevel: 0
+      preparingDelay: 0
+      activationDelay: 4
+      chargeTime: 0
+    - type: Stealth
+    - type: Sprite
+      sprite: _Stalker/Objects/Anomalies/jarka.rsi
+      offset: 0, 0.5
+      layers:
+      - state: idle
+        map: ["base"]
+    - type: PointLight
+      radius: 10
+      energy: 12
+      color: "#f37011"
+      castShadows: true
+      enabled: false
+    - type: AmbientSound
+      volume: -16
+      range: 8
+      sound:
+        path: /Audio/_Stalker/Effects/fireball_idle.ogg
+    - type: GenericVisualizer
+      visuals:
+        enum.ZoneAnomalyVisuals.Layer:
+          base:
+            Activated: { state: active }
+            Charging: { state: idle }
+            Idle: { state: idle }
+    - type: ZoneArtifactSpawner
+      artifacts:
+        - id: null
+          ratio: 450
+        - id: Z14ZoneArtifactFireball
+          tier: 1
+          ratio: 15
+        - id: Z14ZoneArtifactEye
+          tier: 2
+          ratio: 10
+        - id: Z14ZoneArtifactBunch
+          tier: 3
+          ratio: 10
+        - id: Z14ZoneArtifactConflagration
+          tier: 2
+          ratio: 15
+        - id: Z14ZoneArtifactFlame
+          tier: 3
+          ratio: 5
+
+- type: entity
+  parent: Z14ZoneAnomalyJarka
+  id: Z14ZoneAnomalyJarkaStrong
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+    - type: ZoneAnomaly
+      detectedLevel: 1
+    - type: ZoneAnomalyEffectDamage
+      fireStacks: 0.4
+      damageUpdate: true
+      damage:
+        types:
+          Heat: 5
+    - type: Stealth
+    - type: Sprite
+      sprite: _Stalker/Objects/Anomalies/jarka_strong.rsi
+    - type: ZoneArtifactSpawner
+      artifacts:
+        - id: null
+          ratio: 400
+        - id: Z14ZoneArtifactFireball
+          tier: 1
+          ratio: 20
+        - id: Z14ZoneArtifactEye
+          tier: 2
+          ratio: 10
+        - id: Z14ZoneArtifactBunch
+          tier: 3
+          ratio: 15
+        - id: Z14ZoneArtifactConflagration
+          tier: 2
+          ratio: 12
+        - id: Z14ZoneArtifactRoot
+          tier: 4
+          ratio: 5
+        - id: Z14ZoneArtifactSun
+          tier: 4
+          ratio: 5
+        - id: Z14ZoneArtifactRock
+          tier: 4
+          ratio: 5
+        - id: Z14ZoneArtifactFlame
+          tier: 3
+          ratio: 15
+        - id: Z14ZoneArtifactCristall
+          tier: 4
+          ratio: 5
+
+- type: entity
+  parent: Z14ZoneAnomalyBaseThermal
+  id: Z14ZoneAnomalyJarkaLong
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+    - type: ZoneAnomalyUpdateTriggerCollide
+    - type: ZoneAnomalyEffectDamage
+      fireStacks: 0.25
+      damageUpdate: true
+      damage:
+        types:
+          Heat: 2
+    - type: ZoneAnomalyEffectDestroy
+      whitelist:
+        tags:
+          - STBolt
+    - type: ZoneAnomalyEffectPointLight
+    - type: ZoneAnomaly
+      detectedLevel: 0
+      preparingDelay: 0
+      activationDelay: 60 # Zona14 change
+      chargeTime: 0
+    - type: Stealth
+    - type: Sprite
+      sprite: _Stalker/Objects/Anomalies/jarka.rsi
+      offset: 0, 0.5
+      layers:
+      - state: idle
+        map: ["base"]
+    - type: PointLight
+      radius: 10
+      energy: 12
+      color: "#f37011"
+      castShadows: true
+      enabled: false
+    - type: AmbientSound
+      volume: -16
+      range: 8
+      sound:
+        path: /Audio/_Stalker/Effects/fireball_idle.ogg
+    - type: GenericVisualizer
+      visuals:
+        enum.ZoneAnomalyVisuals.Layer:
+          base:
+            Activated: { state: active }
+            Charging: { state: idle }
+            Idle: { state: idle }
+    - type: ZoneArtifactSpawner
+      artifacts:
+        - id: null
+          ratio: 450
+        - id: Z14ZoneArtifactFireball
+          tier: 1
+          ratio: 15
+        - id: Z14ZoneArtifactEye
+          tier: 2
+          ratio: 10
+        - id: Z14ZoneArtifactBunch
+          tier: 3
+          ratio: 8
+        - id: Z14ZoneArtifactFlame
+          tier: 3
+          ratio: 5
+        - id: Z14ZoneArtifactConflagration
+          tier: 2
+          ratio: 12
+        - id: Z14ZoneArtifactRock
+          tier: 4
+          ratio: 5
+        - id: Z14ZoneArtifactSun
+          tier: 4
+          ratio: 5
+        - id: Z14ZoneArtifactRoot
+          tier: 4
+          ratio: 5
+
+- type: entity
+  parent: Z14ZoneAnomalyJarka
+  id: Z14ZoneAnomalySteam
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+    - type: ZoneAnomalyUpdateTriggerCollide
+    - type: ZoneAnomalyEffectDamage
+      fireStacks: 0.5
+      damageUpdate: true
+      damage:
+        types:
+          Heat: 8
+    - type: ZoneAnomaly
+      detectedLevel: 0
+      preparingDelay: 0
+      activationDelay: 4
+      chargeTime: 0
+    - type: Stealth
+    - type: Sprite
+      sprite: _Stalker/Objects/Anomalies/steam.rsi
+      offset: 0, 1
+    - type: ZoneArtifactSpawner
+      artifacts:
+        - id: null
+          ratio: 600
+        - id: Z14ZoneArtifactFireball
+          tier: 1
+          ratio: 40
+        - id: Z14ZoneArtifactEye
+          tier: 2
+          ratio: 20
+        - id: Z14ZoneArtifactBunch
+          tier: 3
+          ratio: 20
+        - id: Z14ZoneArtifactFlame
+          tier: 3
+          ratio: 15
+        - id: Z14ZoneArtifactCristall
+          tier: 4
+          ratio: 10
+        - id: Z14ZoneArtifactRock
+          tier: 4
+          ratio: 10
+        - id: Z14ZoneArtifactRoot
+          tier: 4
+          ratio: 5
+        - id: Z14ZoneArtifactSun
+          tier: 4
+          ratio: 10
+        - id: Z14ZoneArtifactLithosphere
+          tier: 5
+          ratio: 5
+
+- type: entity
+  id: Z14ZoneAnomalySol
+  categories: [ Zona14 ]
+  parent: Z14ZoneAnomalyBaseThermal
+  suffix: Z14
+  components:
+    - type: ZoneAnomalyUpdateTriggerCollide
+    - type: ZoneAnomalyEffectExplosion
+      protoId: Son
+      totalIntensity: 300
+      slope: 10
+      maxTileIntensity: 700
+    - type: ZoneAnomalyEffectDestroy
+      whitelist:
+        tags:
+          - STBolt
+    - type: ZoneAnomalyEffectPointLight
+    - type: ZoneAnomaly
+      detectedLevel: 2
+      preparingDelay: 0
+      activationDelay: 3
+      chargeTime: 5
+    - type: Sprite
+      sprite: _Stalker/Objects/Other/Anomalys/sol.rsi
+      layers:
+        - state: idle
+          map: ["base"]
+          shader: unshaded
+    - type: PointLight
+      radius: 10
+      energy: 12
+      color: "#f3b511"
+      castShadows: true
+      enabled: false
+    - type: AmbientSound
+      volume: -16
+      range: 8
+      sound:
+        path: /Audio/_Stalker/Effects/fireball_idle.ogg
+    - type: GenericVisualizer
+      visuals:
+        enum.ZoneAnomalyVisuals.Layer:
+          base:
+            Activated: { state: active }
+            Idle: { state: idle }
+    - type: ZoneArtifactSpawner
+      artifacts:
+        - id: null
+          ratio: 300
+        - id: Z14ZoneArtifactFlame
+          tier: 3
+          ratio: 15
+        - id: Z14ZoneArtifactCristall
+          tier: 4
+          ratio: 10
+        - id: Z14ZoneArtifactLithosphere
+          tier: 5
+          ratio: 5
+
+- type: entity
+  parent: Z14ZoneAnomalyBaseThermal
+  id: Z14ZoneAnomalyWitchesCircle
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: ZoneAnomalyTriggerStartCollide
+  - type: ZoneAnomalyEffectDamage
+    fireStacks: 20
+  - type: ZoneAnomalyEffectPointLight
+  - type: ZoneAnomaly
+    detectedLevel: 1
+    preparingDelay: 0
+    activationDelay: 1
+    chargeTime: 5
+  - type: PointLight
+    radius: 20
+    energy: 30
+    color: "#ff5900"
+    enabled: false
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 2.5
+        hard: false
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+        - LowImpassable
+  - type: ZoneArtifactSpawner
+    artifacts:
+      - id: null
+        ratio: 400
+      - id: Z14ZoneArtifactFireball
+        tier: 1
+        ratio: 25
+      - id: Z14ZoneArtifactEye
+        tier: 2
+        ratio: 15
+      - id: Z14ZoneArtifactBunch
+        tier: 3
+        ratio: 12
+      - id: Z14ZoneArtifactFlame
+        tier: 3
+        ratio: 10
+      - id: Z14ZoneArtifactCristall
+        tier: 4
+        ratio: 5
+      - id: Z14ZoneArtifactRoot
+        tier: 4
+        ratio: 5
+      - id: Z14ZoneArtifactRock
+        tier: 4
+        ratio: 5
+      - id: Z14ZoneArtifactSun
+        tier: 4
+        ratio: 8
+
+- type: entity
+  parent: Z14ZoneAnomalyBaseThermal
+  id: Z14ZoneAnomalyFreezer
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: ZoneAnomalyUpdateTriggerCollide
+  - type: ZoneAnomalyEffectHeat
+    heat: -20
+    update: true
+    ignoreResistance: true
+  - type: ZoneAnomalyEffectPointLight
+  - type: ZoneAnomaly
+    detectedLevel: 1
+    preparingDelay: 0.5
+    activationDelay: 15
+    chargeTime: 5
+  - type: PointLight
+    radius: 7
+    energy: 10
+    color: "#ffffff"
+    enabled: false
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 2.5
+        hard: false
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+        - LowImpassable
+  - type: ZoneArtifactSpawner
+    artifacts:
+      - id: null
+        ratio: 400
+      - id: Z14ZoneArtifactFireball
+        tier: 1
+        ratio: 25
+      - id: Z14ZoneArtifactEye
+        tier: 2
+        ratio: 15
+      - id: Z14ZoneArtifactBunch
+        tier: 3
+        ratio: 8
+      - id: Z14ZoneArtifactFlame
+        tier: 3
+        ratio: 10
+      - id: Z14ZoneArtifactCristall
+        tier: 4
+        ratio: 5
+      - id: Z14ZoneArtifactRock
+        tier: 4
+        ratio: 5
+      - id: Z14ZoneArtifactRoot
+        tier: 4
+        ratio: 5
+      - id: Z14ZoneArtifactSun
+        tier: 4
+        ratio: 8
+  - type: STAnomalyTips
+    icon:
+      sprite: /Textures/_Stalker/Interface/Overlays/anomaly_tips.rsi
+      state: icy
+
+- type: entity
+  parent: Z14ZoneAnomalyBaseThermal
+  id: Z14ZoneAnomalyJarkaNoArts
+  suffix: Z14
+  categories: [ HideSpawnMenu, Zona14 ]
+  components:
+    - type: ZoneAnomalyUpdateTriggerCollide
+    - type: ZoneAnomalyEffectDamage
+      fireStacks: 0.4
+      damageUpdate: true
+      damage:
+        types:
+          Heat: 3
+    - type: ZoneAnomalyEffectDestroy
+      whitelist:
+        tags:
+          - STBolt
+    - type: ZoneAnomalyEffectPointLight
+    - type: ZoneAnomaly
+      detectedLevel: 0
+      preparingDelay: 0
+      activationDelay: 4
+      chargeTime: 0
+    - type: Stealth
+    - type: Sprite
+      sprite: _Stalker/Objects/Anomalies/jarka.rsi
+      offset: 0, 0.5
+      layers:
+      - state: idle
+        map: ["base"]
+    - type: PointLight
+      radius: 10
+      energy: 12
+      color: "#f37011"
+      castShadows: true
+      enabled: false
+    - type: AmbientSound
+      volume: -16
+      range: 8
+      sound:
+        path: /Audio/_Stalker/Effects/fireball_idle.ogg
+    - type: GenericVisualizer
+      visuals:
+        enum.ZoneAnomalyVisuals.Layer:
+          base:
+            Activated: { state: active }
+            Charging: { state: idle }
+            Idle: { state: idle }

@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: STClothingOuterArmorStorageBasic
   id: ClothingOuterArmorStalkerCombat
-  name: Бронекостюм «Пионер»
-  description: Кустарная броня с полным комплексом защиты для уверенных в себе комбатантов.
+  name: Pioneer Armor Suit
+  description: Full-protection makeshift armor for confident combatants.
   suffix: ST, T4, Universal
   components:
   - type: STWeight
@@ -37,8 +38,8 @@
 - type: entity
   parent: ClothingOuterArmorStalkerCombat
   id: ClothingOuterArmorStalkerCombatCN
-  name: БронеКостюм 'TVM-12'
-  description: Кустарная броня с полным комплексом защиты для уверенных в себе комбатантов.
+  name: ArmorSuit 'TVM-12'
+  description: Full-protection makeshift armor for confident combatants.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/outerClothing/tvm-12.rsi
@@ -73,8 +74,8 @@
 - type: entity
   parent: ClothingOuterArmorStalkerCombatCN
   id: ClothingOuterArmorCN3b
-  name: бронекомбез «ЧН-3б»
-  description: Штатная экипировка штурмовых отрядов «Чистого неба». Бронежилет способен остановить пистолетную пулю, а встроенный брезентовый комбинезон с особой пропиткой обеспечивают хорошую защиту от аномальных воздействий. 3 класс
+  name: '"CN-3b" armored suit'
+  description: "Standard issue gear of Clear Sky's assault squads. The body armor can stop a pistol round, and the built-in canvas jumpsuit with a special impregnation provides good protection from anomalous effects. Class 3."
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/outerClothing/cn3b.rsi

@@ -87,14 +87,14 @@ public sealed class TrashDeletingSystem : EntitySystem
         if (!_warningIssued && _timing.CurTime >= _nextTimeUpdate - TimeSpan.FromSeconds(30))
         {
             var timeBeforeCleanup = Math.Round((_nextTimeUpdate - _timing.CurTime).TotalSeconds);
-            _chat.DispatchServerAnnouncement($"Очистка мусора и пустых схронов произойдет через {timeBeforeCleanup} секунд, предметы на полу могут пропасть!");
+            _chat.DispatchServerAnnouncement(Loc.GetString("st-trash-cleanup-warning", ("seconds", timeBeforeCleanup))); // Zona14: localized
             _warningIssued = true;
         }
 
         if (_timing.CurTime <= _nextTimeUpdate)
             return;
 
-        _chat.DispatchServerAnnouncement("Произошла очистка мусора и пустых схронов, некоторые предметы на полу пропали!");
+        _chat.DispatchServerAnnouncement(Loc.GetString("st-trash-cleanup-done")); // Zona14: localized
         RaiseLocalEvent(new RequestClearArenaGridsEvent());
 
         var trashEnts = EntityQueryEnumerator<TrashComponent>();

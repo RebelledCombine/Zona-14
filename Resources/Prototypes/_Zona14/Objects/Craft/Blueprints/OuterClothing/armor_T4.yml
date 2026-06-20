@@ -1,0 +1,127 @@
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14ClothingOuterArmorAVSplateblackBlueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: AVS Plate IV Ranger Armor Recipe
+  components:
+    - type: STBlueprint
+      blueprint: newrecipeClothingOuterArmorAVSplateblack
+
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14ClothingOuterArmorStalkerCombatBlueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Combat Armor Recipe
+  components:
+    - type: STBlueprint
+      blueprint: newrecipeClothingOuterArmorStalkerCombat
+
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14STClothingOuterArmorIOTVGreenBlueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Green IOTV Armor Vest Recipe
+  components:
+    - type: STBlueprint
+      blueprint: newrecipeSTClothingOuterArmorIOTVGreen
+
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14STClothingOuterArmor6B13Blueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Military 6B13 Recipe
+  components:
+    - type: STBlueprint
+      blueprint: newrecipeSTClothingOuterArmor6B13
+
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14STClothingOuterArmorBerill5MBlueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Beryl-5M Armor Suit Recipe
+  components:
+    - type: STBlueprint
+      blueprint: newrecipeSTClothingOuterArmorBerill5M
+
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14STClothingOuterArmorHeavyBlueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Armored Coveralls Recipe
+  components:
+    - type: STBlueprint
+      blueprint: newrecipeSTClothingOuterArmorHeavy
+
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14STClothingOuterArmorSSP99Blueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Green SSP-99M “Ecologist” Recipe
+  components:
+    - type: STBlueprint
+      blueprint: newrecipeClothingOuterArmorSSP99
+
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14STClothingOuterArmorYegerFreedomBlueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Yeger recipe
+  components:
+    - type: STBlueprint
+      blueprint: newrecipeSTClothingOuterArmorYegerFreedom
+
+# - type: entity
+  # parent: STBaseBlueprint
+  # id: STClothingOuterArmorReingerBlueprint
+  # name: Ranger combat armor recipe
+  # components:
+    # - type: STBlueprint
+      # blueprint: newrecipeSTClothingOuterArmorReinger
+
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14STClothingOuterArmorSSP99WhiteBlueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: white SSP‑99M “Diamond” recipe
+  components:
+    - type: STBlueprint
+      blueprint: newrecipeClothingOuterArmorSSP99White
+
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14ClothingOuterArmorSSP24TopazBlueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: pale green SSP‑99M “Topaz” recipe
+  components:
+    - type: STBlueprint
+      blueprint: newrecipeClothingOuterArmorSSP24Topaz
+
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14ClothingOuterArmorSSP24SapfireBlueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: blue SSP‑99M “Sapphire” recipe
+  components:
+    - type: STBlueprint
+      blueprint: newrecipeClothingOuterArmorSSP24Sapfire
+
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14ClothingOuterArmorSSP24RubyBlueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: red SSP‑99M “Ruby” recipe
+  components:
+    - type: STBlueprint
+      blueprint: newrecipeClothingOuterArmorSSP24Ruby

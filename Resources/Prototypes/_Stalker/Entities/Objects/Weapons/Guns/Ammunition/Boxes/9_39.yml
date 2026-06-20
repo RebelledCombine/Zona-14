@@ -1,3 +1,4 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent:
   - BaseAmmoBoxStalker
@@ -30,7 +31,7 @@
 - type: entity
   parent: STBaseBox9x39
   id: STBox9x39PSO
-  name: коробка патронов 9x39 ПСО
+  name: box of 9x39PSO cartridges (30 pieces)
   components:
   - type: MagazineVisuals
     magState: pso-open
@@ -47,7 +48,7 @@
 - type: entity
   parent: STBaseBox9x39
   id: STBox9x39SP6Uch
-  name: коробка патронов 9x39 СП-6УЧ
+  name: box of 9x39 SP-6Uch rounds (30 pieces)
   components:
   - type: MagazineVisuals
     magState: sp6-uch-open
@@ -64,7 +65,7 @@
 - type: entity
   parent: STBaseBox9x39
   id: STBox9x39SP5
-  name: коробка патронов 9x39 СП-5
+  name: box of 9x39 SP-5 ammo (30 pieces)
   components:
   - type: MagazineVisuals
     magState: sp5-open
@@ -81,7 +82,7 @@
 - type: entity
   parent: STBaseBox9x39
   id: STBox9x39PAB9
-  name: коробка патронов 9x39 ПАБ-9
+  name: box of 9x39 PAB-9 rounds (30 pieces)
   components:
   - type: MagazineVisuals
     magState: pab9-open
@@ -98,7 +99,7 @@
 - type: entity
   parent: STBaseBox9x39
   id: STBox9x39SP6
-  name: коробка патронов 9x39 СП-6
+  name: box of 9x39 SP-6 ammo (30 pieces)
   components:
   - type: MagazineVisuals
     magState: sp6-open
@@ -115,7 +116,7 @@
 - type: entity
   parent: STBaseBox9x39
   id: STBox9x39AA
-  name: коробка патронов 9x39 ББ
+  name: box of 9x39 AA ammo (30 pieces)
   components:
   - type: MagazineVisuals
     magState: aa-open

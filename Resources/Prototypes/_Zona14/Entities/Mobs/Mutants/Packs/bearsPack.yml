@@ -1,0 +1,8 @@
+- type: stPack
+  id: Z14STBearFamilyPack
+  head: Z14STMobMutantBearT3
+  members:
+  - Z14STMobMutantBearT1
+  - Z14STMobMutantBearT2
+  minMemberCount: 2
+  maxMemberCount: 3

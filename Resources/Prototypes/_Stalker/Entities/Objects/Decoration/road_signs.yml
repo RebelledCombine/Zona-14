@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: RoadSigns1
   parent: STBaseTreeLarge
-  name: дорожный знак
+  name: road sign
   suffix: ST, Mapping
-  description: Дорожный знак, "Главная дорога".
+  description: Road sign, "Main Road".
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/road_signs.rsi
@@ -20,9 +21,9 @@
 - type: entity
   id: RoadSigns2
   parent: RoadSigns1
-  name: дорожный знак
+  name: "{ ent-RoadSigns1 }"
   suffix: ST, Mapping
-  description: Дорожный знак, "Главная дорога".
+  description: "{ ent-RoadSigns1.desc }"
   components:
   - type: Sprite
     state: signs2
@@ -30,9 +31,9 @@
 - type: entity
   id: RoadSigns3
   parent: RoadSigns1
-  name: дорожный знак
+  name: "{ ent-RoadSigns1 }"
   suffix: ST, Mapping
-  description: Дорожный знак, "Остановка запрещена".
+  description: Road sign, "No stopping".
   components:
   - type: Sprite
     state: signs3
@@ -40,9 +41,9 @@
 - type: entity
   id: RoadSigns4
   parent: RoadSigns1
-  name: дорожный знак
+  name: "{ ent-RoadSigns1 }"
   suffix: ST, Mapping
-  description: Дорожный знак, "Пешеходный переход".
+  description: Road sign, "Pedestrian crossing".
   components:
   - type: Sprite
     state: signs4
@@ -50,9 +51,9 @@
 - type: entity
   id: RoadSigns5
   parent: RoadSigns1
-  name: дорожный знак
+  name: "{ ent-RoadSigns1 }"
   suffix: ST, Mapping
-  description: Дорожный знак, "Припять".
+  description: Road sign, "Pripyat".
   components:
   - type: Sprite
     state: signs5
@@ -60,9 +61,9 @@
 - type: entity
   id: RoadSigns6
   parent: RoadSigns1
-  name: дорожный знак
+  name: "{ ent-RoadSigns1 }"
   suffix: ST, Mapping
-  description: Дорожный знак, "Стоп".
+  description: Road sign, "Stop".
   components:
   - type: Sprite
     state: signs6
@@ -70,9 +71,9 @@
 - type: entity
   id: RoadSigns7
   parent: RoadSigns1
-  name: дорожный знак
+  name: "{ ent-RoadSigns1 }"
   suffix: ST, Mapping
-  description: Дорожный знак, "Стоп".
+  description: "{ ent-RoadSigns6.desc }"
   components:
   - type: Sprite
     state: signs7
@@ -80,9 +81,9 @@
 - type: entity
   id: RoadSigns8
   parent: RoadSigns1
-  name: дорожный знак
+  name: "{ ent-RoadSigns1 }"
   suffix: ST, Mapping
-  description: Дорожный знак, "Стоянка запрещена".
+  description: Road sign, "Parking prohibited".
   components:
   - type: Sprite
     state: signs8
@@ -90,9 +91,9 @@
 - type: entity
   id: RoadSigns9
   parent: RoadSigns1
-  name: дорожный знак
+  name: Road Sign
   suffix: ST, Mapping
-  description: Дорожный знак.
+  description: A road sign.
   components:
   - type: Sprite
     state: signs9
@@ -100,9 +101,9 @@
 - type: entity
   id: RoadSigns10
   parent: RoadSigns1
-  name: дорожный знак
+  name: "{ ent-RoadSigns9 }"
   suffix: ST, Mapping
-  description: Дорожный знак.
+  description: "{ ent-RoadSigns9.desc }"
   components:
   - type: Sprite
     state: signs10

@@ -4,7 +4,7 @@
   id: Z14STWeaponRevolverRH12
   suffix: Z14
   categories: [ Zona14 ]
-  name: Assault Revolver 12.7x55
+  name: Assault Revolver-12.7x55
   description: A revolver by Tula KBP. A byproduct of the 'Vykhlop' program, which also produced the ASh-12 assault rifle.
   components:
     - type: Item

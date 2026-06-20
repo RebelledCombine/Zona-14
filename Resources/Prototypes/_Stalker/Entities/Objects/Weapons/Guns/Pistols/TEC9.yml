@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   name: TEC-9
   parent: STBaseWeaponPistol
   id: WeaponStalkerPistolTec9
-  description: самозарядный пистолет, разработанный в Швеции, в 1980-х годах и выпущенный на рынок в 1984-м году.
+  description: This semi-automatic pistol was developed in Sweden in the 1980s and entered the market in 1984. It uses 9x19mm ammo.
   suffix: ST
   components:
   - type: STWeight

@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: Bricks
   parent: BaseStructureDynamic
-  name: Кирпичи
+  name: Bricks
   suffix: ST, Mapping
-  description: Глиняннные кирпичи сложенные странной формой.
+  description: Mud bricks stacked in a strange shape.
   placement:
     mode: PlaceFree
   components:

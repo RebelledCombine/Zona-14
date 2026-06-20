@@ -1,0 +1,12 @@
+ent-Z14STEmissionEvent = Emission Event
+    .desc = A common item found in the Zone.
+    .suffix = Z14
+ent-Z14STEmissionEventDebug = Emission Event Debug
+    .desc = A common item found in the Zone.
+    .suffix = Z14
+ent-Z14STEmissionEventScheduler = Emission Event Scheduler
+    .desc = A common item found in the Zone.
+    .suffix = Z14
+ent-Z14STWeatherScheduler = Weather Scheduler
+    .desc = A common item found in the Zone.
+    .suffix = Z14

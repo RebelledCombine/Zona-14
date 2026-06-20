@@ -1,0 +1,83 @@
+- type: entity
+  parent: Z14BaseClothingTorso
+  id: Z14STClothingTosroTurtlenecksCZ
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Czechoslovakia army turtlenecks
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/Torso/Turtlenecks/cz.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/Torso/Turtlenecks/cz.rsi
+
+- type: entity
+  parent: Z14BaseClothingTorso
+  id: Z14STClothingTosroTurtlenecksFr
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: France army turtlenecks
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/Torso/Turtlenecks/fr.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/Torso/Turtlenecks/fr.rsi
+
+- type: entity
+  parent: Z14BaseClothingTorso
+  id: Z14STClothingTosroTurtlenecksKz
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Kazakhstan army turtlenecks
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/Torso/Turtlenecks/kz.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/Torso/Turtlenecks/kz.rsi
+
+- type: entity
+  parent: Z14BaseClothingTorso
+  id: Z14STClothingTosroTurtlenecksLit
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Litva army turtlenecks
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/Torso/Turtlenecks/lit.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/Torso/Turtlenecks/lit.rsi
+
+- type: entity
+  parent: Z14BaseClothingTorso
+  id: Z14STClothingTosroTurtlenecksPol
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Poland army turtlenecks
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/Torso/Turtlenecks/pol.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/Torso/Turtlenecks/pol.rsi
+
+- type: entity
+  parent: Z14BaseClothingTorso
+  id: Z14STClothingTosroTurtlenecksRu
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Russian army turtlenecks
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/Torso/Turtlenecks/ru.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/Torso/Turtlenecks/ru.rsi
+
+- type: entity
+  parent: Z14BaseClothingTorso
+  id: Z14ClothingTorsoTankMilitary
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: military tank
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/Torso/Military/tankmilitary.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/Torso/Military/tankmilitary.rsi

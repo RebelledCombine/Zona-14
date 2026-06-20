@@ -1,4 +1,4 @@
-#Сталкеры
+# Zona14: Сталкеры
 - type: loadoutGroup
   id: STlegsGroup
   name: loadout-group-st-legs
@@ -168,7 +168,7 @@
   - ClothingMaskNeckFacemaskDS
   - ClothingMaskNeckFacemask
   - ClothingMaskNeckBalaklava2
-#Общее
+# Zona14: Общее
 - type: loadoutGroup
   id: STSuitstorageGroup
   name: loadout-group-st-weapon
@@ -265,7 +265,7 @@
   - ClothingEyesSalesman
   - ClothingEyesGlasses
 
-#Ветераны
+# Zona14: Ветераны
 
 - type: loadoutGroup
   id: STOuterClothingVeteran
@@ -275,7 +275,7 @@
   loadouts:
   - ClothingOuterJacketNeytral
 
-#Бандиты
+# Zona14: Бандиты
 - type: loadoutGroup
   id: STOuterClothingBandit
   name: loadout-group-st-outer
@@ -320,7 +320,7 @@
   - STTorsoSTClothingTosroTurtlenecksPol
   - STTorsoSTClothingTosroTurtlenecksRu
 
-#Долг
+# Zona14: Долг
 - type: loadoutGroup
   id: STOuterClothingDolg
   name: loadout-group-st-outer
@@ -364,7 +364,7 @@
   - STTorsoSTClothingTosroTurtlenecksPol
   - STTorsoSTClothingTosroTurtlenecksRu
 
-#Свобода
+# Zona14: Свобода
 - type: loadoutGroup
   id: STOuterClothingFreedom
   name: loadout-group-st-outer
@@ -437,7 +437,7 @@
   - STlegsClothingLegsNavyPants
   - STlegsClothingLegsRussianNumber
 
-#Учёные
+# Zona14: Учёные
 - type: loadoutGroup
   id: STOuterClothingSci
   name: loadout-group-st-outer
@@ -480,7 +480,7 @@
   - STTorsoSTClothingTosroTurtlenecksPol
   - STTorsoSTClothingTosroTurtlenecksRu
 
-#Серафимы
+# Zona14: Серафимы
 - type: loadoutGroup
   id: STOuterClothingSeraphims
   name: loadout-group-st-outer
@@ -597,7 +597,7 @@
   - STlegsClothingLegsNavyPants
   - STlegsClothingLegsRussianNumber
 
-#Чистое небо
+# Zona14: Чистое небо
 - type: loadoutGroup
   id: STOuterClothingStalkerClearSky
   name: loadout-group-st-outer
@@ -671,7 +671,7 @@
   - STTorsoSTClothingTosroTurtlenecksRu
 
 
-#Ренегаты
+# Zona14: Ренегаты
 
 - type: loadoutGroup
   id: STOuterClothingStalkerRene

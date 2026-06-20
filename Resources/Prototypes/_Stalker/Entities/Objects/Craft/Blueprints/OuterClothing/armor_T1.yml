@@ -1,7 +1,8 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: STBaseBlueprint
   id: STClothingOuterJacketStalkerUpgradeBlueprint
-  name: Рецепт улучшенной куртки сталкера
+  name: Improved Stalker Jacket Recipe
   components:
     - type: STBlueprint
       blueprint: newrecipeJacketStalkerUpgrade
@@ -9,7 +10,7 @@
 - type: entity
   parent: STBaseBlueprint
   id: ClothingOuterAnomalyStalkerJacketBlueprint
-  name: Рецепт аномальной куртки сталкера
+  name: Anomalous Stalker Jacket Recipe
   components:
     - type: STBlueprint
       blueprint: newrecipeClothingOuterAnomalyStalkerJacket
@@ -17,7 +18,7 @@
 - type: entity
   parent: STBaseBlueprint
   id: ClothingOuterCoatBanditBlackBlueprint
-  name: Рецепт черного кожаного плаща бандитов
+  name: black bandit leather coat recipe
   components:
     - type: STBlueprint
       blueprint: newrecipeClothingOuterCoatBanditBlack
@@ -25,7 +26,7 @@
 - type: entity
   parent: STBaseBlueprint
   id: ClothingOuterCoatBanditBrownBlueprint
-  name: Рецепт коричного кожаного плаща бандитов
+  name: brown bandit leather coat recipe
   components:
     - type: STBlueprint
       blueprint: newrecipeClothingOuterCoatBanditBrown
@@ -33,7 +34,7 @@
 - type: entity
   parent: STBaseBlueprint
   id: STClothingOuterArmorRCBZBlueprint
-  name: Рецепт РХБЗ
+  name: NBC suit recipe
   components:
     - type: STBlueprint
       blueprint: newrecipeCSTClothingOuterArmorRCBZ

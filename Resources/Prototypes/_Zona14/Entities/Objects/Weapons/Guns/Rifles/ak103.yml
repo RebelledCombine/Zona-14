@@ -78,7 +78,7 @@
   parent: Z14STBaseWeaponRifleAK103
   id: Z14STWeaponRifleAK103Kamo
   categories: [ Zona14 ]
-  name: AK-103 "Veteran"
+  name: 'AK-103 "Veteran"'
   suffix: Z14, Custom
   description: Carefully modified AK-103 with improved characteristics. Shows signs of numerous customizations - clearly a weapon of an experienced stalker.
   components:

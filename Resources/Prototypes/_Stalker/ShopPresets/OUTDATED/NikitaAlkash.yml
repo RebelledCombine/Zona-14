@@ -27,11 +27,11 @@
     PowerCellHyper: 30
 
   categories:
-    - name: Водка
+    - name: Vodka # Zona14: Водка
       priority: 1
       items:
         DrinkVodkaBottleFull: 45
-    - name: Разное
+    - name: Miscellaneous # Zona14: Разное
       priority: 2
       items:
         ClothingBandageStalkerRus: 40

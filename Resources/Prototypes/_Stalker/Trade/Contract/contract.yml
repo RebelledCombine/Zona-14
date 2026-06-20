@@ -1,3 +1,4 @@
+# Zona14: translated Russian names/descriptions to English
 # City contract board set for supported execution modes.
 
 - type: storeContractPack
@@ -62,8 +63,8 @@
 
 - type: storeContract
   id: trade_contract_ZoneArtifactVyvert
-  name: "Добудь Выверт"
-  description: "Нужен выверт для мази. А то спина болит у уважаемого Жабы."
+  name: Obtain Vyvert
+  description: "Need a Vyvert for the ointment. The respected Frog's back hurts."
   difficulty: Easy
   targets:
   - id: ZoneArtifactVyvert
@@ -80,8 +81,8 @@
 
 - type: storeContract
   id: trade_contract_ArtMedusa
-  name: "Добудь Медузу"
-  description: "Нужна медуза для ожерелья. Зарю не забудь одеть."
+  name: Obtain Jellyfish
+  description: "Need a Jellyfish for the necklace. Don't forget to put on the Zarya."
   difficulty: Easy
   targets:
   - id: ArtMedusa
@@ -98,8 +99,8 @@
 
 - type: storeContract
   id: trade_contract_MutantPartFleshEye
-  name: "Глаз Плоти"
-  description: "Глаза Плоти для борща. Вкусно пальчики оближешь."
+  name: Flesh Eye
+  description: "Flesh eyes for borscht. Delicious, you'll lick your fingers."
   difficulty: Easy
   targets:
   - id: MutantPartFleshEye
@@ -116,8 +117,8 @@
 
 - type: storeContract
   id: trade_contract_MutantPartBlindDogTail
-  name: "Хвосты слепых псов"
-  description: "Хвосты собак на лекарство."
+  name: Blind dog tails
+  description: Dog tails for medicine.
   difficulty: Easy
   targets:
   - id: MutantPartBlindDogTail
@@ -134,8 +135,8 @@
 
 - type: storeContract
   id: trade_contract_delivery_BoxCrate
-  name: "Доставить ящик к покупателю"
-  description: "Нужно донести ящик к покупателю. Не задавай вопросов."
+  name: Deliver crate to buyer
+  description: "Need to deliver the crate to the buyer. Don't ask questions."
   difficulty: Easy
   repeatable: true
   objectiveType: Delivery
@@ -161,8 +162,8 @@
 
 - type: storeContract
   id: trade_contract_recovery_BoxCrate
-  name: "Вернуть ящик с болота"
-  description: "Клиент так и не забрал свой груз, а теперь там ошивается стая матерых кабанов. Отправляйся на место, разберись с кабанами и притащи ящик обратно к автомату."
+  name: Retrieve crate from swamp
+  description: The client never picked up their cargo, and now a pack of mature boars is lurking there. Head to the location, deal with the boars and bring the crate back to the vending machine.
   difficulty: Easy
   repeatable: true
   objectiveType: Delivery
@@ -189,8 +190,8 @@
 
 - type: storeContract
   id: trade_contract_delivery_TechCardCalibrationDosimeter
-  name: "Важная карта"
-  description: "Калибровочная карта потерялась, а мне срочно требуеться... Акуратнее там псевдо собаки."
+  name: Important map
+  description: The calibration card got lost, and I urgently need it... Watch out for pseudodogs.
   difficulty: Medium
   repeatable: true
   objectiveType: Delivery
@@ -216,8 +217,8 @@
 
 - type: storeContract
   id: trade_contract_hunt_old_boar
-  name: "Кабан"
-  description: "Убей кабана"
+  name: Boar
+  description: Kill the boar
   difficulty: Medium
   repeatable: true
   objectiveType: Hunt
@@ -241,8 +242,8 @@
 
 - type: storeContract
   id: trade_contract_delivery_STMobMutantPseudodogLegendary
-  name: "Опасная псевдособака"
-  description: "ОНА СОЖРАЛА ДАНИЛУ, УБЕЙ ТВАРЬ И ПРИНЕСИ ДОКАЗАТЕЛЬСТВА."
+  name: Dangerous pseudodog
+  description: SHE ATE DANILA, KILL THE CREATURE AND BRING PROOF.
   difficulty: Medium
   repeatable: true
   objectiveType: Hunt
@@ -264,8 +265,8 @@
 
 - type: storeContract
   id: trade_contract_delivery_MobMutantLeshiy
-  name: "Леший"
-  description: "Достал Леший... отобрал ведро грибов!!!"
+  name: Leshy
+  description: That damn Leshy... stole a bucket of mushrooms!!!
   difficulty: Medium
   repeatable: true
   objectiveType: Hunt
@@ -287,8 +288,8 @@
 
 - type: storeContract
   id: trade_contract_delivery_STMobMutantBearT2Common
-  name: "Мэдвэдь"
-  description: "Убей медведэ... он сожрал мой мед"
+  name: Medved
+  description: Kill the bear... it ate my honey
   difficulty: Medium
   repeatable: true
   objectiveType: Hunt
@@ -311,8 +312,8 @@
 
 - type: storeContract
   id: trade_contract_delivery_MobMutantPoltergeistIce
-  name: "Полтейргест"
-  description: "Какая то тварь завелась не понятная"
+  name: Poltergeist
+  description: Some unknown creature has appeared
   difficulty: Hard
   repeatable: true
   objectiveType: Hunt
@@ -334,8 +335,8 @@
 
 - type: storeContract
   id: trade_contract_delivery_STMobMutantBloodsuckerUncommon
-  name: "Кровосос"
-  description: "Смертельно опасен... в одиночку не идите."
+  name: Bloodsucker
+  description: Deadly dangerous... do not go alone.
   difficulty: Hard
   repeatable: true
   objectiveType: Hunt
@@ -357,8 +358,8 @@
 
 - type: storeContract
   id: trade_contract_delivery_STMobMutantBearPsiUncommon
-  name: "Огромный опасный медведь"
-  description: "Очень опасен, не идите в одиночку."
+  name: Huge dangerous bear
+  description: Very dangerous, do not go alone.
   difficulty: Hard
   repeatable: true
   objectiveType: Hunt

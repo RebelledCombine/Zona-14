@@ -1,0 +1,172 @@
+- type: entity
+  abstract: true
+  parent: Z14HelmetBase
+  id: Z14STClothingHeadHelmetTacticalT3Base
+  categories: [ Zona14 ]
+  name: T3 Tactical Helmet Base
+  components:
+  - type: IngestionBlocker
+  - type: IdentityBlocker
+  - type: Tag
+    tags:
+      - BlockMask
+  - type: HelmetVisor
+    toggleAction: ActionToggleHelmetVisor
+    equippedPrefixUp: visor-up
+    iconStateUp: icon-visor-up
+    visorUpReflectProb: 0.09
+    visorUpModifiers:
+      coefficients:
+        Blunt: 0.80
+        Slash: 0.80
+        Piercing: 0.85
+    isToggleable: true
+  - type: HideLayerClothing
+    slots:
+    - Hair
+    - Snout
+  - type: SlotBlockOverride
+    tag: BlockMask
+
+- type: entity
+  parent: Z14STClothingHeadHelmetTacticalT3Base
+  id: Z14ClothingHeadHelmetVityaz1C
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Vityaz 1C helmet
+  description: Vityaz-S shock-resistant helmet, manufactured at the Steel Research Institute. Development began in the late 1980s. The helmet received a visor, albeit massive.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/Vityaz1C.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/Vityaz1C.rsi
+
+- type: entity
+  parent: Z14STClothingHeadHelmetTacticalT3Base
+  id: Z14ClothingHeadHelmetVityaz1T
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Vityaz 1T helmet
+  description: Vityaz 1S shock-resistant helmet, modified by the Deserters
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/Vityaz1T.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/Vityaz1T.rsi
+
+- type: entity
+  parent: Z14STClothingHeadHelmetTacticalT3Base
+  id: Z14ClothingHeadHelmetVityaz1L
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Vityaz 1L helmet
+  description: Vityaz 1S shock-resistant helmet, modified by the Renegades.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/Vityaz1L.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/Vityaz1L.rsi
+
+- type: entity
+  parent: Z14STClothingHeadHelmetTacticalT3Base
+  id: Z14ClothingHeadHelmetVityaz1B
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Vityaz 1B helmet
+  description: Vityaz 1S shock-resistant helmet with three stripes applied
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/Vityaz1B.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/Vityaz1B.rsi
+
+- type: entity
+  parent: Z14STClothingHeadHelmetTacticalT3Base
+  id: Z14ClothingHeadHelmetVityaz1P
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: '"Capelan" helmet'
+  description: Vityaz 1S shock-resistant helmet, modified by the Pilgrims.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/Kapelan.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/Kapelan.rsi
+
+- type: entity
+  parent: Z14STClothingHeadHelmetTacticalT3Base
+  id: Z14ClothingHeadHelmetVityaz1M
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Vityaz 1M 'Duty' helmet
+  description: Vityaz-M shock-resistant helmet, manufactured at the Steel Research Institute. Development began in the late 1980s. The helmet received a visor, albeit massive.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/Vityaz1M.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/Vityaz1M.rsi
+
+- type: entity
+  parent: Z14STClothingHeadHelmetTacticalT3Base
+  id: Z14ClothingHeadHelmetVityaz1Zavet
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: '"Vityaz 1M" helmet of the Covenant'
+  description: Vityaz-M shock-resistant helmet, manufactured at the Steel Research Institute. Development began in the late 1980s. The helmet received a visor, albeit massive.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/Vityaz1Z.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/Vityaz1Z.rsi
+
+- type: entity
+  parent: Z14STClothingHeadHelmetTacticalT3Base
+  id: Z14ClothingHeadHelmetVityazSkull1
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: horned skull
+  description: Skull of a horned animal with steel plates inside.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/VityazS1.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/VityazS1.rsi
+
+- type: entity
+  parent: Z14STClothingHeadHelmetTacticalT3Base
+  id: Z14ClothingHeadHelmetVityazSkull2
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: horned skull
+  description: Steel skull of a horned animal.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/VityazS2.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/VityazS2.rsi
+
+- type: entity
+  parent: Z14STClothingHeadHelmetTacticalT3Base
+  id: Z14ClothingHeadHelmetVityazSkull3
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: horned skull
+  description: Skull of a horned animal with steel plates inside.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/VityazS3.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/VityazS3.rsi
+
+- type: entity
+  parent: Z14STClothingHeadHelmetTacticalT3Base
+  id: Z14ClothingHeadHelmetVityazSkull4
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: horned skull
+  description: Steel skull of a horned animal.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/VityazS4.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/VityazS4.rsi

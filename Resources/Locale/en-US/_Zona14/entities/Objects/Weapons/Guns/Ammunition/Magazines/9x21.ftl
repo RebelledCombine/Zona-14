@@ -1,0 +1,11 @@
+ent-Z14SR1Mag = SR-1 magazine (18)
+    .desc = Magazine for the SR-1 "Gyurza". 18-round capacity. Sold empty.
+    .suffix = Z14
+
+ent-Z14SR2MMag20 = SR-2M "Veresk" magazine 9x21 (20)
+    .desc = 9x21mm magazine for the SR-2M. 20-round capacity. Sold empty.
+    .suffix = Z14
+
+ent-Z14SR2MMag30 = SR-2M "Veresk" magazine 9x21 (30)
+    .desc = 9x21mm magazine for the SR-2M. 30-round capacity. Sold empty.
+    .suffix = Z14

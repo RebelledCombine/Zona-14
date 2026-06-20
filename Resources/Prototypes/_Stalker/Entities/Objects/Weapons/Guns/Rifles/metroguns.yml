@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: STBaseWeaponRifle
   id: STMetroWeaponRifleVSV
-  name: ВСВ "Глухарь"
-  description: Точный и мощный автомат для боя на средней дистанции. Из-за невысокой дульной скорости стреляет тише других и не обладает высокой настильностью.
+  name: VSV "Glukhar"
+  description: "An accurate and powerful assault rifle for medium-range combat. Due to its low muzzle velocity, it fires quieter than others and doesn't have a very flat shooting range."
   components:
   - type: STWeight
     self: 2

@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 # AnomalyExpsShelter
 - type: entity
   id: StalkerExplSafezoneTriggerIn
   parent: MarkerBase
-  name: Защита от выброса
+  name: Emission protection
   description: Transports you to a linked destination!
   suffix: Stalker
   components:
@@ -30,7 +31,7 @@
           hard: false
 - type: entity
   id: StalkerExplSafezoneTriggerOut
-  name: Отключение защиты от выброса
+  name: Disabling Emission Protection
   description: Transports you to a linked destination!
   parent: MarkerBase
   suffix: Stalker
@@ -61,7 +62,7 @@
 - type: entity
   id: StalkerPaciTriggerIn
   parent: MarkerBase
-  name: Включение пацифизма
+  name: Turning on pacifism
   description: Transports you to a linked destination!
   suffix: Stalker
   components:
@@ -93,7 +94,7 @@
       radius: 5
 - type: entity
   id: StalkerPaciTriggerOut
-  name: Выключение пацифизма
+  name: Turning Off Pacifism
   description: Transports you to a linked destination!
   parent: MarkerBase
   suffix: Stalker
@@ -125,7 +126,7 @@
 - type: entity
   id: StalkerSafezoneTriggerIn
   parent: MarkerBase
-  name: Вход в сейфзону
+  name: Entrance to the safe area
   description: Transports you to a linked destination!
   suffix: Stalker
   components:
@@ -157,7 +158,7 @@
 
 - type: entity
   id: StalkerSafezoneTriggerOut
-  name: Выход из сейфзоны
+  name: Leaving the safe area
   description: Transports you to a linked destination!
   parent: MarkerBase
   suffix: Stalker

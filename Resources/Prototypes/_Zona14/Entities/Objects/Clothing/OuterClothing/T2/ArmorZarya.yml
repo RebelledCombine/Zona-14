@@ -1,0 +1,671 @@
+
+- type: entity
+  parent: Z14ArmorBaseT1PvP
+  id: Z14STClothingOuterArmorZaryaBase
+  categories: [ Zona14 ]
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/zarya_stalker.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/zarya_stalker.rsi
+  - type: Craftable
+  - type: Tag
+    tags:
+    - BlockGloves
+
+# Stalker №1 - 1
+
+- type: entity
+  parent: Z14STClothingOuterArmorZaryaBase
+  id: Z14ClothingOuterArmorZaryaStalker
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Sunrise suit
+  description: A craftsman-made stalker suit combining a light army body armor with rubberized fabric. Reinforced with built-in Kevlar plates. Decent against light weapons. Insufficient for deep Zone raids.
+  components:
+  - type: STWeight
+    self: 5
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/zarya_stalker.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/zarya_stalker.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetZaryaStalker
+    slot: head
+
+- type: entity
+  parent: STClothingHeadHatBase
+  id: Z14ClothingHeadHelmetZaryaStalker
+  suffix: Z14
+  name: 'hood "Sunrise"'
+  categories: [ HideSpawnMenu, Zona14 ]
+  description: Free as the air among clouds.
+  components:
+    - type: STWeight
+      self: 1
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/hats/zarya_helm_stalker.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/hats/zarya_helm_stalker.rsi
+    - type: HideLayerClothing
+      slots:
+      - Hair
+      hideOnToggle: true
+
+# Stalker №2
+
+- type: entity
+  parent: Z14STClothingOuterArmorZaryaBase
+  id: Z14ClothingOuterArmorZaryaTourist
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: '"Tourist" overalls'
+  description:  A NIICHAZ-developed suit for beyond-the-perimeter expeditions. Insufficient for deep raids but significantly lightens the wearer's load.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/zarya_tourist.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/zarya_tourist.rsi
+  - type: Armor
+    modifiers:
+      flatReductions:
+        Blunt: 2
+        Slash: 2
+        Piercing: 2
+        Heat: 1
+        Cold: 1
+        Shock: 1
+        Radiation: 1
+        Caustic: 1
+        Compression: 1
+        Psy: 1
+      coefficients:
+        Blunt: 0.90
+        Slash: 0.90
+        Piercing: 0.90
+        Heat: 0.90
+        Cold: 0.90
+        Shock: 0.90
+        Radiation: 0.90
+        Caustic: 0.90
+        Compression: 0.90
+        Psy: 0.90
+  - type: GrantsArtifactSlots
+    slots: 4 # Stalker-Changes | Number of artifact slots this armor grants
+  - type: STWeight
+    self: 5
+- type: entity
+  parent: Z14STClothingOuterArmorZaryaBase
+  id: Z14ClothingOuterArmorZaryaHunter
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: '"Cynologist" overalls'
+  description: An extremely popular field-modified Zarya among stalkers. Designed for mutant protection.
+  components:
+  - type: STWeight
+    self: 5
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/zarya_hunter.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/zarya_hunter.rsi
+  - type: Armor
+    modifiers:
+      flatReductions:
+        Blunt: 2
+        Slash: 2
+        Piercing: 2
+        Heat: 1
+        Cold: 1
+        Shock: 1
+        Radiation: 1
+        Caustic: 1
+        Compression: 1
+        Psy: 1
+      coefficients:
+        Blunt: 0.90
+        Slash: 0.90
+        Piercing: 0.90
+        Heat: 0.90
+        Cold: 0.90
+        Shock: 0.90
+        Radiation: 0.90
+        Caustic: 0.90
+        Compression: 0.90
+        Psy: 0.90
+  - type: GrantsArtifactSlots
+    slots: 4 # Stalker-Changes | Number of artifact slots this armor grants
+
+
+
+# Jabs - 2
+
+- type: entity
+  parent: Z14STClothingOuterArmorZaryaBase
+  id: Z14ClothingOuterArmorZaryaJabs
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Wayfarer Jumpsuit
+  description: '"Zarya" of the Toads, slightly lighter than the standard version'
+  components:
+  - type: STWeight
+    self: 5
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/zarya_jab.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/zarya_jab.rsi
+  # Bonus
+
+# Military - 3 +
+
+- type: entity
+  parent: Z14STClothingOuterArmorZaryaBase
+  id: Z14ClothingOuterArmorZaryaMilitary
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Desert Sunrise 'Military'
+  description: '"Zarya" of the Military, with reinforced armor and increased protection against everything — the standard of bandit craftsmen modifications.'
+  components:
+  - type: STWeight
+    self: 5
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/zarya_military.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/zarya_military.rsi
+  - type: Armor
+    modifiers:
+      flatReductions:
+        Blunt: 2
+        Slash: 2
+        Piercing: 2
+        Heat: 1
+        Cold: 1
+        Shock: 1
+        Radiation: 1
+        Caustic: 1
+        Compression: 1
+        Psy: 1
+      coefficients:
+        Blunt: 0.90
+        Slash: 0.90
+        Piercing: 0.90
+        Heat: 0.90
+        Cold: 0.90
+        Shock: 0.90
+        Radiation: 0.90
+        Caustic: 0.90
+        Compression: 0.90
+        Psy: 0.90
+  - type: GrantsArtifactSlots
+    slots: 4 # Stalker-Changes | Number of artifact slots this armor grants
+
+
+# Renegates - 4 +
+
+- type: entity
+  parent: Z14STClothingOuterArmorZaryaBase
+  id: Z14ClothingOuterArmorZaryaRene
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Sunrise Scarecrow Costume
+  description: Brown jumpsuit splattered with orange paint, rusty plates screwed on with whatever was available... this Zarya looks like it was assembled from garbage. Hard to say what's scarier — the owner or the armor itself.
+  components:
+  - type: STWeight
+    self: 5
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/rene_zarya.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/rene_zarya.rsi
+  - type: Armor
+    modifiers:
+      flatReductions:
+        Blunt: 2
+        Slash: 2
+        Piercing: 2
+        Heat: 1
+        Cold: 1
+        Shock: 1
+        Radiation: 1
+        Caustic: 1
+        Compression: 1
+        Psy: 1
+      coefficients:
+        Blunt: 0.90
+        Slash: 0.90
+        Piercing: 0.90
+        Heat: 0.90
+        Cold: 0.90
+        Shock: 0.90
+        Radiation: 0.90
+        Caustic: 0.90
+        Compression: 0.90
+        Psy: 0.90
+  - type: GrantsArtifactSlots
+    slots: 4 # Stalker-Changes | Number of artifact slots this armor grants
+
+# Serafims - 3
+
+- type: entity
+  parent: Z14STClothingOuterArmorZaryaBase
+  id: Z14STClothingOuterArmorRassvetSera
+  categories: [ Zona14 ]
+  name: Sunrise Jumpsuit
+  suffix: Z14
+  description: Dawn suit used by the Seraphim faction for tactical missions with enhanced protection from aggressive fauna.
+  components:
+    - type: STWeight
+      self: 5
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/outerClothing/_Sera/rassvet.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/outerClothing/_Sera/rassvet.rsi
+    - type: ToggleableClothing
+      clothingPrototype: ClothingHeadCapoSera
+      slot: head
+    - type: Armor
+      modifiers:
+        flatReductions:
+          Blunt: 2
+          Slash: 2
+          Piercing: 2
+          Heat: 1
+          Cold: 1
+          Shock: 1
+          Radiation: 1
+          Caustic: 1
+          Compression: 1
+          Psy: 1
+        coefficients:
+          Blunt: 0.90
+          Slash: 0.90
+          Piercing: 0.90
+          Heat: 0.90
+          Cold: 0.90
+          Shock: 0.90
+          Radiation: 0.90
+          Caustic: 0.90
+          Compression: 0.90
+          Psy: 0.90
+- type: entity
+  parent: STClothingHeadHatBase
+  id: Z14ClothingHeadCapoSera
+  suffix: Z14
+  name: hood
+  description: Provides no protection.
+  categories: [ HideSpawnMenu, Zona14 ]
+  components:
+    - type: STWeight
+      self: 1
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/Head/Sera_/rassvet_helm.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/Head/Sera_/rassvet_helm.rsi
+    - type: HideLayerClothing
+      slots:
+      - Hair
+
+- type: entity
+  parent: Z14STClothingOuterArmorZaryaBase
+  id: Z14ClothingOuterArmorZaryaNeutral
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Luminary Jumpsuit
+  description: '"Zarya" of the Neutrals, great for Zone expeditions and fighting mutants, but not for firefights.'
+  components:
+  - type: STWeight
+    self: 5
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/zarya_neytralov.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/zarya_neytralov.rsi
+  - type: Armor
+    modifiers:
+      flatReductions:
+        Blunt: 2
+        Slash: 2
+        Piercing: 2
+        Heat: 1
+        Cold: 1
+        Shock: 1
+        Radiation: 1
+        Caustic: 1
+        Compression: 1
+        Psy: 1
+      coefficients:
+        Blunt: 0.90
+        Slash: 0.90
+        Piercing: 0.90
+        Heat: 0.90
+        Cold: 0.90
+        Shock: 0.90
+        Radiation: 0.90
+        Caustic: 0.90
+        Compression: 0.90
+        Psy: 0.90
+  - type: GrantsArtifactSlots
+    slots: 4 # Stalker-Changes | Number of artifact slots this armor grants
+
+# Dolg - 4
+
+- type: entity
+  parent: Z14STClothingOuterArmorZaryaBase
+  id: Z14ClothingOuterArmorZaryaDolg
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: 'Overalls "Patrol"'
+  description: A combination of double-layer rubberized fabric with plexiglass lining and built-in body armor. Essentially the same Zarya suit, modified by Duty faction craftsmen for safer Zone expeditions.
+  components:
+  - type: STWeight
+    self: 5
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/zarya_dolg.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/zarya_dolg.rsi
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+        ents: []
+
+      toggleable-clothing: !type:ContainerSlot {}
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+      - 0,3,0,5
+      - 2,3,2,4
+      - 2,0,3,1
+      - 4,3,4,4
+      - 5,0,6,1
+      - 6,3,6,4
+      - 8,3,8,5
+    blacklist:
+      tags:
+      - STArtifact
+  - type: Armor
+    modifiers:
+      flatReductions:
+        Blunt: 2
+        Slash: 2
+        Piercing: 2
+        Heat: 1
+        Cold: 1
+        Shock: 1
+        Radiation: 1
+        Caustic: 1
+        Compression: 1
+        Psy: 1
+      coefficients:
+        Blunt: 0.90
+        Slash: 0.90
+        Piercing: 0.90
+        Heat: 0.90
+        Cold: 0.90
+        Shock: 0.90
+        Radiation: 0.90
+        Caustic: 0.90
+        Compression: 0.90
+        Psy: 0.90
+  - type: GrantsArtifactSlots
+    slots: 4 # Stalker-Changes | Number of artifact slots this armor grants
+
+- type: entity
+  parent: STClothingHeadHatBase
+  id: Z14ClothingHeadHelmetZaryaDolg
+  suffix: Z14
+  name: Sunrise of Duty Hood
+  categories: [ HideSpawnMenu, Zona14 ]
+  components:
+    - type: STWeight
+      self: 1
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/hats/zarya_helm_dolg.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/hats/zarya_helm_dolg.rsi
+    - type: HideLayerClothing
+      slots:
+      - Hair
+
+- type: entity
+  parent: Z14STClothingOuterArmorZaryaBase
+  id: Z14ClothingOuterArmorZaryaPoisk
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Dex Jumpsuit
+  description: A light and mobile Zarya suit of the Search faction, an improved version of the standard suit.
+  components:
+  - type: STWeight
+    self: 5
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/zarya_poisk.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/zarya_poisk.rsi
+
+# Mods
+
+- type: entity
+  parent: Z14STClothingOuterArmorZaryaBase
+  id: Z14ClothingOuterArmorZaryaStalkerModifedType1
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Sunrise-3 overalls
+  description: Modified Zarya suit designed for mutant protection.
+  components:
+  - type: STWeight
+    self: 5
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/zarya_stalker.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/zarya_stalker.rsi
+  - type: Armor
+    modifiers:
+      flatReductions:
+        Blunt: 2
+        Slash: 2
+        Piercing: 2
+        Heat: 1
+        Cold: 1
+        Shock: 1
+        Radiation: 1
+        Caustic: 1
+        Compression: 1
+        Psy: 1
+      coefficients:
+        Blunt: 0.90
+        Slash: 0.90
+        Piercing: 0.90
+        Heat: 0.90
+        Cold: 0.90
+        Shock: 0.90
+        Radiation: 0.90
+        Caustic: 0.90
+        Compression: 0.90
+        Psy: 0.90
+  - type: GrantsArtifactSlots
+    slots: 4 # Stalker-Changes | Number of artifact slots this armor grants
+
+- type: entity
+  parent: Z14STClothingOuterArmorZaryaBase
+  id: Z14ClothingOuterArmorZaryaStalkerModifedType2
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: 'Overalls "Sunrise-7"'
+  description: One of the Zarya iterations, most of the armor replaced with insulating material.
+  components:
+  - type: STWeight
+    self: 5
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/zarya_stalker.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/zarya_stalker.rsi
+  - type: Armor
+    modifiers:
+      flatReductions:
+        Blunt: 2
+        Slash: 2
+        Piercing: 2
+        Heat: 1
+        Cold: 1
+        Shock: 1
+        Radiation: 1
+        Caustic: 1
+        Compression: 1
+        Psy: 1
+      coefficients:
+        Blunt: 0.90
+        Slash: 0.90
+        Piercing: 0.90
+        Heat: 0.90
+        Cold: 0.90
+        Shock: 0.90
+        Radiation: 0.90
+        Caustic: 0.90
+        Compression: 0.90
+        Psy: 0.90
+  - type: GrantsArtifactSlots
+    slots: 4 # Stalker-Changes | Number of artifact slots this armor grants
+
+# Mods
+
+# Old groups
+
+- type: entity
+  parent: Z14STClothingOuterArmorZaryaBase
+  id: Z14STClothingOuterArmorProjectZarya
+  categories: [ Zona14 ]
+  name: Sunrise made according to an incomprehensible project
+  suffix: Z14
+  description: A strange Zarya, made by nobody knows who and nobody knows why.
+  components:
+  - type: STWeight
+    self: 5
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/project_zarya.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/project_zarya.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadCapoProject
+    slot: head
+
+- type: entity
+  parent: STClothingHeadHatBase
+  id: Z14ClothingHeadCapoProject
+  suffix: Z14
+  name: hood
+  description: Provides no protection.
+  categories: [ HideSpawnMenu, Zona14 ]
+  components:
+  - type: STWeight
+    self: 1
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/zarya_helm_project.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/zarya_helm_project.rsi
+- type: entity
+  parent: Z14STClothingOuterArmorZaryaBase
+  id: Z14STClothingOuterArmorDesertersZarya
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: 'Apostate Sunrise "Triarius"'
+  description: Deserters' Zarya armored suit, practically identical to the standard one except for a couple of extra armor plates.
+  components:
+  - type: STWeight
+    self: 5
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/deserter_zarya.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/deserter_zarya.rsi
+
+- type: entity
+  parent: Z14STClothingOuterArmorZaryaBase
+  id: Z14STClothingOuterArmorBandits
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: 'Sunrise of the Bandits "Tramp"'
+  description: Combined with a Zarya cloak, improved and repainted with bandit flair. Class 2 protection.
+  components:
+  - type: STWeight
+    self: 5
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/Bandit_zarya.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/Bandit_zarya.rsi
+# bonus
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+        ents: []
+
+      toggleable-clothing: !type:ContainerSlot {}
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+      - 0,3,0,5
+      - 2,3,2,4
+      - 2,0,3,1
+      - 4,3,4,4
+      - 5,0,6,1
+      - 6,3,6,4
+      - 8,3,8,5
+    blacklist:
+      tags:
+      - STArtifact
+  - type: Armor
+    modifiers:
+      flatReductions:
+        Blunt: 2
+        Slash: 2
+        Piercing: 2
+        Heat: 1
+        Cold: 1
+        Shock: 1
+        Radiation: 1
+        Caustic: 1
+        Compression: 1
+        Psy: 1
+      coefficients:
+        Blunt: 0.90
+        Slash: 0.90
+        Piercing: 0.90
+        Heat: 0.90
+        Cold: 0.90
+        Shock: 0.90
+        Radiation: 0.90
+        Caustic: 0.90
+        Compression: 0.90
+        Psy: 0.90
+  - type: GrantsArtifactSlots
+    slots: 4 # Stalker-Changes | Number of artifact slots this armor grants
+
+- type: entity
+  parent: STClothingHeadHatBase
+  id: Z14ClothingHeadWandererCap
+  suffix: Z14
+  name: Rogue's Hood
+  description: Dark hood from the bandit flashy Zarya variant.
+  categories: [ HideSpawnMenu, Zona14 ]
+  components:
+  - type: STWeight
+    self: 1
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/Bandit_zarya_cap.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/Bandit_zarya_cap.rsi
+
+
+#SKINS
+
+- type: entity
+  parent: Z14STClothingOuterArmorZaryaBase
+  id: Z14ClothingOuterArmorZaryaSeraRuined
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Sunrise jumpsuit
+  description: A crudely repainted and beaten-up Zarya
+  components:
+  - type: STWeight
+    self: 5
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/zarya_ruined.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/zarya_ruined.rsi
+  - type: ToggleableClothing
+    clothingPrototype: Z14ClothingHeadHelmetSeraRuined

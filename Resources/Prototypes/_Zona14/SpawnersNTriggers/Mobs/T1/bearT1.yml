@@ -1,0 +1,156 @@
+- type: entity
+  name: young bear trigger (1-2) (10%) 10m
+  id: Z14STTriggerBearT1121010
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger121010
+  suffix: Z14
+  components:
+  - type: SpawnOnApproach
+    prototypes:
+    - Z14STMobMutantBearT1
+    restricted:
+    - Z14STMobMutantBearT1
+
+- type: entity
+  name: young bear trigger (1-2) (10%) 30m
+  id: Z14STTriggerBearT1121030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger121030
+  suffix: Z14
+  components:
+  - type: SpawnOnApproach
+    prototypes:
+    - Z14STMobMutantBearT1
+    restricted:
+    - Z14STMobMutantBearT1
+
+- type: entity
+  name: young bear trigger (1-2) (25%) 10m
+  id: Z14STTriggerBearT1122510
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger122510
+  suffix: Z14
+  components:
+  - type: SpawnOnApproach
+    prototypes:
+    - Z14STMobMutantBearT1
+    restricted:
+    - Z14STMobMutantBearT1
+
+- type: entity
+  name: young bear trigger (1-2) (25%) 30m
+  id: Z14STTriggerBearT1122530
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger122530
+  suffix: Z14
+  components:
+  - type: SpawnOnApproach
+    prototypes:
+    - Z14STMobMutantBearT1
+    restricted:
+    - Z14STMobMutantBearT1
+
+- type: entity
+  name: young bear trigger (1-2) (50%) 10m
+  id: Z14STTriggerBearT1125010
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger125010
+  suffix: Z14
+  components:
+  - type: SpawnOnApproach
+    prototypes:
+    - Z14STMobMutantBearT1
+    restricted:
+    - Z14STMobMutantBearT1
+
+- type: entity
+  name: young bear trigger (1-2) (50%) 30m
+  id: Z14STTriggerBearT1125030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger125030
+  suffix: Z14
+  components:
+  - type: SpawnOnApproach
+    prototypes:
+    - Z14STMobMutantBearT1
+    restricted:
+    - Z14STMobMutantBearT1
+
+- type: entity
+  name: young bear trigger (1-2) (75%) 10m
+  id: Z14STTriggerBearT1127510
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger127510
+  suffix: Z14
+  components:
+  - type: SpawnOnApproach
+    prototypes:
+    - Z14STMobMutantBearT1
+    restricted:
+    - Z14STMobMutantBearT1
+
+- type: entity
+  name: young bear trigger (1-2) (75%) 30m
+  id: Z14STTriggerBearT1127530
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger127530
+  suffix: Z14
+  components:
+  - type: SpawnOnApproach
+    prototypes:
+    - Z14STMobMutantBearT1
+    restricted:
+    - Z14STMobMutantBearT1
+
+- type: entity
+  name: young bear trigger (1-2) (100%) 10m
+  id: Z14STTriggerBearT11210010
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger1210010
+  suffix: Z14
+  components:
+  - type: SpawnOnApproach
+    prototypes:
+    - Z14STMobMutantBearT1
+    restricted:
+    - Z14STMobMutantBearT1
+
+
+- type: entity
+  name: young bear trigger (1) (100%) 30m
+  id: Z14STTriggerBearT11110030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger1110030
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+      - Z14STMobMutantBearT1
+      restricted:
+      - Z14STMobMutantBearT1
+
+- type: entity
+  name: young bear trigger (2) (100%) 30m
+  id: Z14STTriggerBearT12210030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger2210030
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+      - Z14STMobMutantBearT1
+      restricted:
+      - Z14STMobMutantBearT1
+
+- type: entity
+  name: young bear trigger (3) (100%) 30m
+  id: Z14STTriggerBearT13310030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger3310030
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+      - Z14STMobMutantBearT1
+      restricted:
+      - Z14STMobMutantBearT1

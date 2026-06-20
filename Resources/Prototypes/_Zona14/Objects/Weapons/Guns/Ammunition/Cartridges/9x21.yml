@@ -1,0 +1,71 @@
+- type: entity
+  id: Z14STCartridge921PGJ
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: cartridge (9x21) P bimetal jacket
+  parent: STCartridge921
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Tag
+    tags:
+      - Cartridge
+      - STCartridge921PGJ
+  - type: CartridgeAmmo
+    proto: Bullet921PGJ
+  - type: SpentAmmoVisuals
+    state: "base"
+
+- type: entity
+  id: Z14STCartridge921PEGJ
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: cartridge (9x21) PE bimetal jacket
+  parent: STCartridge921
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: CartridgeAmmo
+    proto: Bullet921PEGJ
+  - type: SpentAmmoVisuals
+    state: "base"
+
+- type: entity
+  id: Z14STCartridge921BTGJ
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: cartridge (9x21) BT bimetal jacket
+  parent: STCartridge921
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: CartridgeAmmo
+    proto: Bullet921BTGJ
+  - type: SpentAmmoVisuals
+    state: "base"
+
+- type: entity
+  id: Z14STCartridge9217N42
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: cartridge (9x21) 7N42
+  parent: STCartridge921
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: CartridgeAmmo
+    proto: Bullet9217N42
+  - type: SpentAmmoVisuals
+    state: "base"

@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
-  name: Вспышка
+  name: Flash
   parent: Flash
   id: AnomalyFlash
-  suffix: Stalker, Аномальное, 10 зарядов
+  suffix: Stalker, Anomalous, 10 charges # Zona14: Stalker, Аномальное, 10 зарядов
   components:
     - type: Sprite
       sprite: _Stalker/Objects/Anomaly/flash.rsi

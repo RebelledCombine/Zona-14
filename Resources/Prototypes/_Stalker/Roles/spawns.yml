@@ -1,7 +1,8 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: SpawnPointStalker
   parent: SpawnPointJobBase
-  name: Сталкер Job Spawn
+  name: Stalker Job Spawn
   suffix: Stalker
   components:
     - type: SpawnPoint
@@ -14,7 +15,7 @@
 - type: entity
   id: SpawnPointSci
   parent: SpawnPointJobBase
-  name: Учёный Job Spawn
+  name: Scientist Job Spawn
   suffix: Stalker
   components:
     - type: SpawnPoint
@@ -27,7 +28,7 @@
 - type: entity
   id: SpawnPointSci_decan
   parent: SpawnPointJobBase
-  name: декан Job Spawn
+  name: dean Job Spawn
   suffix: Stalker
   components:
     - type: SpawnPoint
@@ -40,7 +41,7 @@
 - type: entity
   id: SpawnPointSci_rector
   parent: SpawnPointJobBase
-  name: ректор Job Spawn
+  name: rector Job Spawn
   suffix: Stalker
   components:
     - type: SpawnPoint
@@ -53,7 +54,7 @@
 - type: entity
   id: SpawnPointStalkerAnomalist
   parent: SpawnPointJobBase
-  name: Аномалист Job Spawn
+  name: Anomalist Job Spawn
   suffix: Stalker
   components:
     - type: SpawnPoint
@@ -66,7 +67,7 @@
 - type: entity
   id: SpawnPointBand
   parent: SpawnPointJobBase
-  name: Бандит Job Spawn
+  name: Bandit Job Spawn
   suffix: Stalker
   components:
     - type: SpawnPoint
@@ -79,7 +80,7 @@
 - type: entity
   id: SpawnPointMilitary
   parent: SpawnPointJobBase
-  name: Военный Job Spawn
+  name: Military Job Spawn
   suffix: Stalker
   components:
     - type: SpawnPoint
@@ -92,7 +93,7 @@
 - type: entity
   id: SpawnPointNeutral
   parent: SpawnPointJobBase
-  name: Нейтрал Job Spawn
+  name: Neutral Job Spawn
   suffix: Stalker
   components:
     - type: SpawnPoint
@@ -105,7 +106,7 @@
 - type: entity
   id: SpawnPointPoisk
   parent: SpawnPointJobBase
-  name: Поиск Job Spawn
+  name: Poisk Job Spawn
   suffix: Stalker
   components:
     - type: SpawnPoint

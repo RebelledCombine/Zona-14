@@ -1,0 +1,297 @@
+- type: entity
+  parent: BaseSTSpeedLoader45ACP
+  id: Z14STSpeedLoader45ACP
+  categories: [ HideSpawnMenu, Zona14 ]
+  name: Speedloader (.45 ACP)
+  suffix: Z14
+  components:
+    - type: BallisticAmmoProvider
+      proto: Cartridge45ACPLFMJ
+    - type: Sprite
+      sprite: Objects/Weapons/Guns/Ammunition/SpeedLoaders/Magnum/magnum_speed_loader.rsi
+      layers:
+        - state: base
+          map: ["enum.GunVisualLayers.Base"]
+        - state: base-6
+          map: ["enum.GunVisualLayers.Mag"]
+    - type: MagazineVisuals
+      magState: base
+      steps: 7
+      zeroVisible: false
+    - type: Appearance
+
+- type: entity
+  parent: STSpeedLoader45ACP
+  id: Z14STSpeedLoader45ACPEmpty
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+    - type: BallisticAmmoProvider
+      proto: null
+
+
+- type: entity
+  id: Z14BaseTommyGunMag
+  categories: [ Zona14 ]
+  name: Thompson's SMG Magazine (40)
+  description: Magazine for "Tommy Gun" using .45ACP. Bullet capacity 40. They sell empty.
+  parent: BaseItem
+  suffix: Z14
+  components:
+  - type: STBulkBuyable # stalker-14-en
+    maxQuantity: 10
+  - type: STWeight
+    self: 0.6
+  - type: Sprite
+    scale: 0.8, 0.8
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Magazines/919/vityaz.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Tag
+    tags:
+      - MagazineTommyGun
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - Cartridge45ACP
+    capacity: 40
+  - type: Item
+    size: Small
+    shape:
+      - 0,0,0,1
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+      item_slot: !type:ContainerSlot { }
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  id: Z14TommyGunDrum
+  categories: [ Zona14 ]
+  name: Thompson SMG drum (60)
+  description: Drum for "Tommy gun" using .45ACP. Bullet capacity 60. They sell empty.
+  parent: BaseTommyGunMag
+  suffix: Z14
+  components:
+  - type: STWeight
+    self: 2
+  - type: Item
+    size: Normal
+    shape:
+      - 0,0,1,1
+  - type: Sprite
+    scale: 0.7, 0.7
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Magazines/919/tommygun_drum.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - Cartridge45ACP
+    capacity: 60
+
+- type: entity
+  id: Z14TommyGunDrum2
+  categories: [ Zona14 ]
+  name: original Thompson SMG drum (60)
+  description: "Drum for Tommy gun using .45ACP. Bullet capacity 60. They sell empty."
+  parent: BaseTommyGunMag
+  suffix: Z14
+  components:
+  - type: STWeight
+    self: 2
+  - type: Item
+    size: Normal
+    shape:
+      - 0,0,1,1
+  - type: Sprite
+    scale: 0.7, 0.7
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Magazines/919/tommygun_drum2.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - Cartridge45ACP
+    capacity: 60
+
+- type: entity
+  id: Z14TommyGunBigDrum
+  categories: [ Zona14 ]
+  name: Thompson SMG drum (100)
+  description: A huge and rare Drum for "Tommy Gun" using .45ACP. Bullet capacity 100. They sell empty.
+  parent: BaseTommyGunMag
+  suffix: Z14
+  components:
+  - type: STWeight
+    self: 5
+  - type: Item
+    size: Normal
+    shape:
+      - 0,0,1,1
+  - type: Sprite
+    scale: 0.7, 0.7
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Magazines/919/tommygun_big_drum.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - Cartridge45ACP
+    capacity: 100
+
+- type: entity
+  id: Z14BasePP2000PearlMag
+  categories: [ Zona14 ]
+  name: PP-2000 magazine (10)
+  description: Magazine for the PP-2000. 10-round capacity. Sold empty.
+  parent: BaseItem
+  suffix: Z14
+  components:
+  - type: STBulkBuyable # stalker-14-en
+    maxQuantity: 10
+  - type: STWeight
+    self: 0.6
+  - type: Sprite
+    scale: 0.8, 0.8
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Magazines/pp_2000/10.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Tag
+    tags:
+      - MagazinePP2000Pearl
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - Cartridge45ACP
+    capacity: 10
+  - type: Item
+    size: Small
+    shape:
+      - 0,0,0,1
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+      item_slot: !type:ContainerSlot { }
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
+  - type: ItemSlots
+    slots:
+      item_slot:
+        name: mop-bucket-slot-component-slot-name-item123
+        ejectVerbText: mop-bucket-slot-component-eject-verb123
+        whitelist:
+          tags:
+            - STElasticRubberRed
+            - STElasticRubberGreen
+            - STElasticRubberBlue
+  - type: ItemMapper
+    mapLayers:
+      10red:
+        whitelist:
+          tags:
+            - STElasticRubberRed
+      10green:
+        whitelist:
+          tags:
+            - STElasticRubberGreen
+      10blue:
+        whitelist:
+          tags:
+            - STElasticRubberBlue
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Magazines/pp_2000/elastic_rubber.rsi
+
+- type: entity
+  id: Z14BasePP2000PearlMag20
+  categories: [ Zona14 ]
+  name: PP-2000 magazine (20)
+  description: Magazine for the PP-2000. 20-round capacity. Sold empty.
+  parent: BaseItem
+  suffix: Z14
+  components:
+  - type: STBulkBuyable # stalker-14-en
+    maxQuantity: 10
+  - type: STWeight
+    self: 0.6
+  - type: Sprite
+    scale: 0.8, 0.8
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Magazines/pp_2000/20.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Tag
+    tags:
+      - MagazinePP2000Pearl
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - Cartridge45ACP
+    capacity: 20
+  - type: Item
+    size: Small
+    shape:
+      - 0,0,0,1
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+      item_slot: !type:ContainerSlot { }
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
+  - type: ItemSlots
+    slots:
+      item_slot:
+        name: mop-bucket-slot-component-slot-name-item123
+        ejectVerbText: mop-bucket-slot-component-eject-verb123
+        whitelist:
+          tags:
+            - STElasticRubberRed
+            - STElasticRubberGreen
+            - STElasticRubberBlue
+  - type: ItemMapper
+    mapLayers:
+      20red:
+        whitelist:
+          tags:
+            - STElasticRubberRed
+      20green:
+        whitelist:
+          tags:
+            - STElasticRubberGreen
+      20blue:
+        whitelist:
+          tags:
+            - STElasticRubberBlue
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Magazines/pp_2000/elastic_rubber.rsi

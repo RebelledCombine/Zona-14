@@ -1,6 +1,7 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
-  name: постовой СОП
-  suffix: Stalker, Т5, немощный, NPC
+  name: SOP sentry
+  suffix: Stalker, T5, feeble, NPC # Zona14: Stalker, Т5, немощный, NPC
   parent: MobStalkerBaseGuard
   id: MobStalkerMilitaryGuard
   components:
@@ -9,11 +10,11 @@
      - Sci
 
 - type: entity
-  name: Вова Вист
-  suffix: Stalker, Т6, мега-мощный, NPC
+  name: Vova Vist
+  suffix: Stalker, T6, mega-powerful, NPC # Zona14: Stalker, Т6, мега-мощный, NPC
   parent: MobStalkerBaseGuard
   id: MobStalkerMilitaryVovaVist
-  description: Вова Вист обладает превосходными навыками ведения стрельбы из пулемёта, в совокупности с аномальной мощью его пулемёта, этого достаточно, чтобы сделать военного одним из самых опасных людей в Зоне. Даже такой легендарный сталкер, как Шрам, продемонстрировал нечеловеческие возможности и все свои навыки, выложившись на полную и получив огромную порцию пятиточечной боли, чтобы прорваться в Деревню Новичков, избегая зоркого глаза, доведённого до предела мастерства и смертельных пуль Вовы Виста.
+  description: Vova Vist has excellent machine gun firing skills, combined with the anomalous power of his machine gun, which is enough to make a military man one of the most dangerous people in the Zone. Even such a legendary stalker as Scar demonstrated superhuman capabilities and all his skills, giving his all and receiving a huge portion of five-point pain to break into the Village of Rookies, avoiding the keen eye, brought to the limit of skill and deadly bullets of Vova Vista.
   components:
   - type: Sprite
     sprite: /Textures/_Stalker/Mobs/Military/Vist.rsi
@@ -39,8 +40,8 @@
     - FullAuto
 
 - type: entity
-  name: Рядовой Оковчук
-  suffix: Stalker, Т5, мощный, NPC
+  name: Private Okovchuk
+  suffix: Stalker, T5, powerful, NPC # Zona14: Stalker, Т5, мощный, NPC
   parent: MobStalkerBaseGuard
   id: MobStalkerMilitarySniper
   description:

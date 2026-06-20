@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: CrateGenericSteel
   id: BlueCrate
-  name: синий ящик
+  name: blue box
   suffix: ST, Mapping
-  description: Потрёпанный синий ящик может быть использован для хранилища различных предметов. К сожалению, слишком примечательный, поэтому не стоит в нём оставлять ценное добро.
+  description: The Tattered Blue Crate can be used to store various items. Unfortunately, it is too remarkable, so you should not leave valuable goods in it.
   components:
   - type: Transform
     anchored: true  
@@ -17,9 +18,9 @@
 - type: entity
   parent: CrateGenericSteel
   id: GreenCrateTearTwo
-  name: зелёный ящик
+  name: green box
   suffix: ST, Mapping
-  description: Потрёпанный зелёный ящик. К сожалению, слишком примечательный, поэтому не стоит в нём оставлять ценное добро.
+  description: Tattered green crate. Unfortunately, it is too remarkable, so you should not leave valuable goods in it.
   components:
   - type: Transform
     anchored: true  

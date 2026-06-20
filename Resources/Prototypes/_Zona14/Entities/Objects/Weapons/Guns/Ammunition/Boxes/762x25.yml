@@ -3,7 +3,7 @@
   id: Z14725PBox
   suffix: Z14
   categories: [ Zona14 ]
-  name: ammo box (7.62x25) P gl
+  name: Ammo Box (7.62x25) P ch
   description: For TT and PPSh, 30 rounds per box. Penetrates only class 1 armor.
   components:
   - type: MagazineVisuals
@@ -26,7 +26,7 @@
   id: Z14725PTBox
   suffix: Z14
   categories: [ Zona14 ]
-  name: ammo box (7.62x25) PT GZh
+  name: Ammo Box (7.62x25) PT gzh
   description: For TT and PPSh, 30 rounds per box. Penetrates class 2 armor.
   components:
     - type: BallisticAmmoProvider
@@ -44,7 +44,7 @@
   id: Z14725LRNPCBox
   suffix: Z14
   categories: [ Zona14 ]
-  name: ammo box (7.62x25) LRNPC
+  name: Ammo Box (7.62x25) LRNPC
   description: For TT and PPSh, 30 rounds per box. Useless against armor.
   components:
     - type: BallisticAmmoProvider
@@ -62,7 +62,7 @@
   id: Z14725PSTBox
   suffix: Z14
   categories: [ Zona14 ]
-  name: ammo box (7.62x25) Pst GZh
+  name: Ammo Box (7.62x25) Pst gzh
   description: For TT and PPSh, 30 rounds per box. Penetrates class 3 armor.
   components:
     - type: BallisticAmmoProvider
@@ -80,7 +80,7 @@
   id: Z14725PBoxCink
   suffix: Z14
   categories: [ Zona14 ]
-  name: ammo crate (7.62x25) P gl
+  name: Large Ammo Box (7.62x25) P ch
   description: For TT and PPSh, 300 rounds per crate. Penetrates only class 1 armor.
   components:
   - type: BallisticAmmoProvider
@@ -101,7 +101,7 @@
   id: Z14725PTBoxCink
   suffix: Z14
   categories: [ Zona14 ]
-  name: ammo crate (7.62x25) PT GZh
+  name: Large Ammo Box (7.62x25) PT gzh
   description: For TT and PPSh, 300 rounds per crate. Penetrates class 2 armor.
   components:
     - type: BallisticAmmoProvider
@@ -118,7 +118,7 @@
   id: Z14725LRNPCBoxCink
   suffix: Z14
   categories: [ Zona14 ]
-  name: ammo crate (7.62x25) LRNPC
+  name: Large Ammo Box (7.62x25) LRNPC
   description: For TT and PPSh, 300 rounds per crate. Useless against armor.
   components:
     - type: BallisticAmmoProvider
@@ -135,7 +135,7 @@
   id: Z14725PSTBoxCink
   suffix: Z14
   categories: [ Zona14 ]
-  name: ammo crate (7.62x25) Pst GZh
+  name: Large Ammo Box (7.62x25) PST gj
   description: For TT and PPSh, 300 rounds per crate. Penetrates class 3 armor.
   components:
     - type: BallisticAmmoProvider

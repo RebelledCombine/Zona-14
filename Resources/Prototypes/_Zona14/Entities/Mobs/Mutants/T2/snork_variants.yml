@@ -1,0 +1,40 @@
+- type: entity
+  parent: Z14MobMutantSnork
+  id: Z14STMobMutantSnorkCommon
+  categories: [ Zona14 ]
+  name: Snork
+  suffix: Z14
+  components:
+  - type: STMobVariant
+    quality: Common
+    applied: true
+
+- type: entity
+  parent: Z14MobMutantSnork
+  id: Z14STMobMutantSnorkUncommon
+  categories: [ Zona14 ]
+  name: Adapted Snork
+  suffix: Z14
+  components:
+  - type: STMobVariant
+    quality: Uncommon
+
+- type: entity
+  parent: Z14MobMutantSnork
+  id: Z14STMobMutantSnorkRare
+  categories: [ Zona14 ]
+  name: Mutated Snork
+  suffix: Z14
+  components:
+  - type: STMobVariant
+    quality: Rare
+
+- type: entity
+  parent: Z14MobMutantSnork
+  id: Z14STMobMutantSnorkLegendary
+  categories: [ Zona14 ]
+  name: Singular Snork
+  suffix: Z14
+  components:
+  - type: STMobVariant
+    quality: Legendary

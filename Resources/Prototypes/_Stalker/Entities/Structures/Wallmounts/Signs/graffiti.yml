@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: PosterBaseStalker
   id: Graffiti1
-  name: Граффити
-  description: Оставленное кем-то граффити.
+  name: Graffiti
+  description: Graffiti left by someone.
   suffix: ST, Mapping
   components:
   - type: Sprite
@@ -13,8 +14,8 @@
 - type: entity
   parent: PosterBaseStalker
   id: Graffiti2
-  name: Граффити
-  description: Оставленное кем-то граффити.
+  name: "{ ent-Graffiti1 }"
+  description: "{ ent-Graffiti1.desc }"
   suffix: ST, Mapping
   components:
   - type: Sprite
@@ -25,8 +26,8 @@
 - type: entity
   parent: PosterBaseStalker
   id: Graffiti3
-  name: Граффити
-  description: Оставленное кем-то граффити.
+  name: "{ ent-Graffiti1 }"
+  description: "{ ent-Graffiti1.desc }"
   suffix: ST, Mapping
   components:
   - type: Sprite
@@ -36,8 +37,8 @@
 - type: entity
   parent: PosterBaseStalker
   id: Graffiti4
-  name: Граффити
-  description: Оставленное кем-то граффити.
+  name: "{ ent-Graffiti1 }"
+  description: "{ ent-Graffiti1.desc }"
   suffix: ST, Mapping
   components:
   - type: Sprite
@@ -48,8 +49,8 @@
 - type: entity
   parent: PosterBaseStalker
   id: Graffiti5
-  name: Граффити
-  description: Оставленное кем-то граффити.
+  name: "{ ent-Graffiti1 }"
+  description: "{ ent-Graffiti1.desc }"
   suffix: ST, Mapping
   components:
   - type: Sprite
@@ -60,8 +61,8 @@
 - type: entity
   parent: PosterBaseStalker
   id: Graffiti6
-  name: Граффити
-  description: Оставленное кем-то граффити.
+  name: "{ ent-Graffiti1 }"
+  description: "{ ent-Graffiti1.desc }"
   suffix: ST, Mapping
   components:
   - type: Sprite
@@ -72,8 +73,8 @@
 - type: entity
   parent: PosterBaseStalker
   id: Graffiti7
-  name: Граффити
-  description: Оставленное кем-то граффити.
+  name: "{ ent-Graffiti1 }"
+  description: "{ ent-Graffiti1.desc }"
   suffix: ST, Mapping
   components:
   - type: Sprite
@@ -84,8 +85,8 @@
 - type: entity
   parent: PosterBaseStalker
   id: Graffiti8
-  name: Граффити
-  description: Оставленное кем-то граффити.
+  name: "{ ent-Graffiti1 }"
+  description: "{ ent-Graffiti1.desc }"
   suffix: ST, Mapping
   components:
   - type: Sprite
@@ -96,8 +97,8 @@
 - type: entity
   parent: PosterBaseStalker
   id: Graffiti9
-  name: Граффити
-  description: Оставленное кем-то граффити.
+  name: "{ ent-Graffiti1 }"
+  description: "{ ent-Graffiti1.desc }"
   suffix: ST, Mapping
   components:
   - type: Sprite
@@ -108,8 +109,8 @@
 - type: entity
   parent: PosterBaseStalker
   id: Graffiti10
-  name: Граффити
-  description: Оставленное кем-то граффити.
+  name: "{ ent-Graffiti1 }"
+  description: "{ ent-Graffiti1.desc }"
   suffix: ST, Mapping
   components:
   - type: Sprite
@@ -120,8 +121,8 @@
 - type: entity
   parent: PosterBaseStalker
   id: Graffiti11
-  name: Граффити
-  description: Оставленное кем-то граффити.
+  name: "{ ent-Graffiti1 }"
+  description: "{ ent-Graffiti1.desc }"
   suffix: ST, Mapping
   components:
   - type: Sprite
@@ -132,8 +133,8 @@
 - type: entity
   parent: PosterBaseStalker
   id: Graffiti12
-  name: Граффити
-  description: Оставленное кем-то граффити.
+  name: "{ ent-Graffiti1 }"
+  description: "{ ent-Graffiti1.desc }"
   suffix: ST, Mapping
   components:
   - type: Sprite
@@ -144,8 +145,8 @@
 - type: entity
   parent: PosterBaseStalker
   id: Graffiti13
-  name: Граффити
-  description: Оставленное кем-то граффити.
+  name: "{ ent-Graffiti1 }"
+  description: "{ ent-Graffiti1.desc }"
   suffix: ST, Mapping
   components:
   - type: Sprite
@@ -155,8 +156,8 @@
 - type: entity
   parent: PosterBaseStalker
   id: Graffiti14
-  name: Граффити
-  description: Оставленное кем-то граффити.
+  name: "{ ent-Graffiti1 }"
+  description: "{ ent-Graffiti1.desc }"
   suffix: ST, Mapping
   components:
   - type: Sprite
@@ -167,8 +168,8 @@
 - type: entity
   parent: PosterBaseStalker
   id: Graffiti15
-  name: Граффити
-  description: Оставленное кем-то граффити.
+  name: "{ ent-Graffiti1 }"
+  description: "{ ent-Graffiti1.desc }"
   suffix: ST, Mapping
   components:
   - type: Sprite
@@ -179,8 +180,8 @@
 - type: entity
   parent: PosterBaseStalker
   id: Graffiti16
-  name: Граффити
-  description: Оставленное кем-то граффити.
+  name: "{ ent-Graffiti1 }"
+  description: "{ ent-Graffiti1.desc }"
   suffix: ST, Mapping
   components:
   - type: Sprite
@@ -191,8 +192,8 @@
 - type: entity
   parent: PosterBaseStalker
   id: Graffiti17
-  name: Граффити
-  description: Оставленное кем-то граффити.
+  name: "{ ent-Graffiti1 }"
+  description: "{ ent-Graffiti1.desc }"
   suffix: ST, Mapping
   components:
   - type: Sprite
@@ -203,8 +204,8 @@
 - type: entity
   parent: PosterBaseStalker
   id: Graffiti18
-  name: Граффити
-  description: Оставленное кем-то граффити.
+  name: "{ ent-Graffiti1 }"
+  description: "{ ent-Graffiti1.desc }"
   suffix: ST, Mapping
   components:
   - type: Sprite
@@ -215,8 +216,8 @@
 - type: entity
   parent: PosterBaseStalker
   id: Graffiti19
-  name: Граффити
-  description: Оставленное кем-то граффити.
+  name: "{ ent-Graffiti1 }"
+  description: "{ ent-Graffiti1.desc }"
   suffix: ST, Mapping
   components:
   - type: Sprite
@@ -227,8 +228,8 @@
 - type: entity
   parent: PosterBaseStalker
   id: Graffiti20
-  name: Граффити
-  description: Оставленное кем-то граффити.
+  name: "{ ent-Graffiti1 }"
+  description: "{ ent-Graffiti1.desc }"
   suffix: ST, Mapping
   components:
   - type: Sprite
@@ -239,8 +240,8 @@
 - type: entity
   parent: PosterBaseStalker
   id: Graffiti21
-  name: Граффити
-  description: Оставленное кем-то граффити.
+  name: "{ ent-Graffiti1 }"
+  description: "{ ent-Graffiti1.desc }"
   suffix: ST, Mapping
   components:
   - type: Sprite
@@ -251,8 +252,8 @@
 - type: entity
   parent: PosterBaseStalker
   id: Graffiti22
-  name: Граффити
-  description: Оставленное кем-то граффити.
+  name: "{ ent-Graffiti1 }"
+  description: "{ ent-Graffiti1.desc }"
   suffix: ST, Mapping
   components:
   - type: Sprite
@@ -263,8 +264,8 @@
 - type: entity
   parent: PosterBaseStalker
   id: Graffiti23
-  name: Граффити
-  description: Оставленное кем-то граффити.
+  name: Graffiti
+  description: Graffiti left behind by someone.
   suffix: ST, Mapping
   components:
   - type: Sprite
@@ -275,8 +276,8 @@
 - type: entity
   parent: PosterBaseStalker
   id: Graffiti24
-  name: Граффити
-  description: Оставленное кем-то граффити.
+  name: Graffiti
+  description: Graffiti left by someone.
   suffix: ST, Mapping
   components:
   - type: Sprite
@@ -286,8 +287,8 @@
 - type: entity
   parent: PosterBaseStalker
   id: Graffiti25
-  name: Граффити
-  description: Оставленное кем-то граффити.
+  name: Graffiti
+  description: Graffiti left by someone.
   suffix: ST, Mapping
   components:
   - type: Sprite
@@ -297,8 +298,8 @@
 - type: entity
   parent: PosterBaseStalker
   id: Graffiti26
-  name: Граффити
-  description: Оставленное кем-то граффити.
+  name: Graffiti
+  description: Graffiti left by someone.
   suffix: ST, Mapping
   components:
   - type: Sprite
@@ -308,8 +309,8 @@
 - type: entity
   parent: PosterBaseStalker
   id: Graffiti27
-  name: Граффити
-  description: Оставленное кем-то граффити.
+  name: graffiti
+  description: Graffiti left behind by someone.
   suffix: ST, Mapping
   components:
   - type: Sprite

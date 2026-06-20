@@ -1,0 +1,16 @@
+
+- type: entity
+  parent: Z14HelmetBase
+  id: Z14STClothingHeadTinfoil
+  categories: [ Zona14 ]
+  name: foil cap
+  description: protects from 5G towers
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/Head/Hats/tinfoil.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/Head/Hats/tinfoil.rsi
+  - type: HideLayerClothing
+    slots:
+    - Hair

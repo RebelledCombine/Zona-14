@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: StalkerDuplicateTeleportBase
   id: STPredbannikTeleport
-  name: Подвал в логово Предбанника
-  description: С помощью этого подвала вы можете попасть в своё логово.
+  name: Basement to the lair
+  description: With the help of this basement, you can get to your lair.
   components:
     - type: STAnomalyGeneratorSpawnBlocker
       size: 20
@@ -45,8 +46,8 @@
 - type: entity
   id: StalkerTeleportMilitary
   parent: STPredbannikTeleport
-  name: Подвал в логово
-  description: С помощью этого подвала вы можете попасть в своё логово.
+  name: Basement to the lair
+  description: "{ ent-STPredbannikTeleport.desc }"
   suffix: Cache, Military
   components:
     - type: AccessReader
@@ -57,8 +58,8 @@
 - type: entity
   id: StalkerTeleportSci
   parent: STPredbannikTeleport
-  name: Подвал в логово
-  description: С помощью этого подвала вы можете попасть в своё логово.
+  name: "{ ent-StalkerTeleportMilitary }"
+  description: "{ ent-STPredbannikTeleport.desc }"
   suffix: Cache, Sci
   components:
     - type: AccessReader
@@ -69,8 +70,8 @@
 - type: entity
   id: StalkerTeleportBandit
   parent: STPredbannikTeleport
-  name: Подвал в логово
-  description: С помощью этого подвала вы можете попасть в своё логово.
+  name: "{ ent-StalkerTeleportMilitary }"
+  description: "{ ent-STPredbannikTeleport.desc }"
   suffix: Cache, Bandit
   components:
     - type: AccessReader
@@ -81,8 +82,8 @@
 - type: entity
   id: StalkerTeleportSeraphims
   parent: STPredbannikTeleport
-  name: Подвал в логово
-  description: С помощью этого подвала вы можете попасть в своё логово.
+  name: "{ ent-StalkerTeleportMilitary }"
+  description: "{ ent-STPredbannikTeleport.desc }"
   suffix: Cache, Seraphims
   components:
     - type: AccessReader
@@ -93,8 +94,8 @@
 - type: entity
   id: StalkerTeleportDolg
   parent: STPredbannikTeleport
-  name: Подвал в логово
-  description: С помощью этого подвала вы можете попасть в своё логово.
+  name: "{ ent-StalkerTeleportMilitary }"
+  description: "{ ent-STPredbannikTeleport.desc }"
   suffix: Cache, Dolg
   components:
     - type: AccessReader
@@ -105,8 +106,8 @@
 - type: entity
   id: StalkerTeleportFreedom
   parent: STPredbannikTeleport
-  name: Подвал в логово
-  description: С помощью этого подвала вы можете попасть в своё логово.
+  name: "{ ent-StalkerTeleportMilitary }"
+  description: "{ ent-STPredbannikTeleport.desc }"
   suffix: Cache, Freedom
   components:
     - type: AccessReader
@@ -117,8 +118,8 @@
 - type: entity
   id: StalkerTeleportRenegats
   parent: STPredbannikTeleport
-  name: Подвал в логово
-  description: С помощью этого подвала вы можете попасть в своё логово.
+  name: "{ ent-StalkerTeleportMilitary }"
+  description: "{ ent-STPredbannikTeleport.desc }"
   suffix: Cache, Renegat
   components:
     - type: AccessReader
@@ -129,8 +130,8 @@
 - type: entity
   id: StalkerTeleportDeserters
   parent: STPredbannikTeleport
-  name: Подвал в логово
-  description: С помощью этого подвала вы можете попасть в своё логово.
+  name: "{ ent-StalkerTeleportMilitary }"
+  description: "{ ent-STPredbannikTeleport.desc }"
   suffix: Cache, Deserter
   components:
     - type: DuplicateTeleport
@@ -139,8 +140,8 @@
 - type: entity
   id: StalkerTeleportCovenant
   parent: STPredbannikTeleport
-  name: Подвал в логово
-  description: С помощью этого подвала вы можете попасть в своё логово.
+  name: "{ ent-StalkerTeleportMilitary }"
+  description: "{ ent-STPredbannikTeleport.desc }"
   suffix: Cache, Covenant
   components:
     - type: AccessReader
@@ -151,8 +152,8 @@
 - type: entity
   id: StalkerTeleportAnomalists
   parent: STPredbannikTeleport
-  name: Подвал в логово
-  description: С помощью этого подвала вы можете попасть в своё логово.
+  name: "{ ent-StalkerTeleportMilitary }"
+  description: "{ ent-STPredbannikTeleport.desc }"
   suffix: Cache, Anomalist
   components:
     - type: AccessReader
@@ -163,8 +164,8 @@
 - type: entity
   id: StalkerTeleportMerc
   parent: STPredbannikTeleport
-  name: Подвал в логово
-  description: С помощью этого подвала вы можете попасть в своё логово.
+  name: "{ ent-StalkerTeleportMilitary }"
+  description: "{ ent-STPredbannikTeleport.desc }"
   suffix: Cache, Mercenary
   components:
     - type: AccessReader
@@ -175,8 +176,8 @@
 - type: entity
   id: StalkerTeleportGreh
   parent: STPredbannikTeleport
-  name: Подвал в логово
-  description: С помощью этого подвала вы можете попасть в своё логово.
+  name: "{ ent-StalkerTeleportMilitary }"
+  description: "{ ent-STPredbannikTeleport.desc }"
   suffix: Cache, Greh
   components:
     - type: AccessReader
@@ -187,8 +188,8 @@
 - type: entity
   id: StalkerTeleportClearSky
   parent: STPredbannikTeleport
-  name: Подвал в логово
-  description: С помощью этого подвала вы можете попасть в своё логово.
+  name: "{ ent-StalkerTeleportMilitary }"
+  description: "{ ent-STPredbannikTeleport.desc }"
   suffix: Cache, Clear Sky
   components:
     - type: AccessReader
@@ -199,9 +200,9 @@
   ###########################################################
 - type: entity
   id: STTeleportReturnPersonal
-  name: выход из логова
-  description: С помощью этой лестницы вы можете выйти из логова
-  suffix: персональный
+  name: Exit from the lair
+  description: With these stairs, you can exit the lair
+  suffix: personal # Zona14: персональный
   components:
     - type: Transform
       anchored: True

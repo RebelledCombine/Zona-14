@@ -1,0 +1,17 @@
+- type: entity
+  parent: Z14ArmorBaseT1PvP
+  id: Z14STClothingOuterArmorCN-4aResearcher
+  categories: [ Zona14 ]
+  name: CHN-4a Explorer
+  description: An unofficial SEVA scientific suit, extensively modified by Novikov, a Clear Sky technician. Highly ergonomic for mobility in anomalous fields. Extremely popular among veteran researchers.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/seva_cn.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/seva_cn.rsi
+  - type: ToggleableClothing
+    clothingPrototype: Z14STClothingHeadHardsuitSevaHelmBase
+    slot: head
+
+  - type: Craftable

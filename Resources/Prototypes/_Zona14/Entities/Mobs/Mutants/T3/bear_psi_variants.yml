@@ -1,0 +1,40 @@
+- type: entity
+  parent: Z14STMobMutantBearPsi
+  id: Z14STMobMutantBearPsiCommon
+  categories: [ Zona14 ]
+  name: Psi-Bear
+  suffix: Z14
+  components:
+  - type: STMobVariant
+    quality: Common
+    applied: true
+
+- type: entity
+  parent: Z14STMobMutantBearPsi
+  id: Z14STMobMutantBearPsiUncommon
+  categories: [ Zona14 ]
+  name: Adapted Psi-Bear
+  suffix: Z14
+  components:
+  - type: STMobVariant
+    quality: Uncommon
+
+- type: entity
+  parent: Z14STMobMutantBearPsi
+  id: Z14STMobMutantBearPsiRare
+  categories: [ Zona14 ]
+  name: Mutated Psi-Bear
+  suffix: Z14
+  components:
+  - type: STMobVariant
+    quality: Rare
+
+- type: entity
+  parent: Z14STMobMutantBearPsi
+  id: Z14STMobMutantBearPsiLegendary
+  categories: [ Zona14 ]
+  name: Singular Psi-Bear
+  suffix: Z14
+  components:
+  - type: STMobVariant
+    quality: Legendary

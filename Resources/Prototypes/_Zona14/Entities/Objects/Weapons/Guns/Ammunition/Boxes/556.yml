@@ -26,7 +26,7 @@
   id: Z14556M855Box
   suffix: Z14
   categories: [ Zona14 ]
-  name: ammo box (5.56) M855
+  name: Ammo Box (5.56) M885
   description: For assault rifles, 30 rounds per box. Penetrates class 3 armor.
   components:
     - type: BallisticAmmoProvider
@@ -44,7 +44,7 @@
   id: Z14556WarmagBox
   suffix: Z14
   categories: [ Zona14 ]
-  name: ammo box (5.56) Warmag
+  name: Ammo Box (5.56) Warmag
   description: For assault rifles, 30 rounds per box. Useless against armor.
   components:
     - type: BallisticAmmoProvider
@@ -62,7 +62,7 @@
   id: Z14556M856Box
   suffix: Z14
   categories: [ Zona14 ]
-  name: ammo box (5.56) M856
+  name: Ammo Box (5.56) M856
   description: For assault rifles, 30 rounds per box. Penetrates class 4 armor.
   components:
     - type: BallisticAmmoProvider
@@ -80,7 +80,7 @@
   id: Z14545M995Box
   suffix: Z14
   categories: [ Zona14 ]
-  name: ammo box (5.56) M995
+  name: Ammo Box (5.56) M995
   description: For assault rifles, 30 rounds per box. Penetrates class 5 armor.
   components:
     - type: BallisticAmmoProvider
@@ -98,7 +98,7 @@
   id: Z14556SSAAPBox
   suffix: Z14
   categories: [ Zona14 ]
-  name: ammo box (5.56) SSA AP
+  name: Ammo Box (5.56) SSA AP
   description: For assault rifles, 30 rounds per box. Penetrates class 6 armor.
   components:
     - type: BallisticAmmoProvider
@@ -116,7 +116,7 @@
   id: Z14556FMJBoxCink
   suffix: Z14
   categories: [ Zona14 ]
-  name: ammo crate (5.56) FMJ
+  name: Large Ammo Box (5.56) FMJ
   description: For assault rifles, 300 rounds per crate. Penetrates class 2 armor.
   components:
     - type: BallisticAmmoProvider
@@ -137,7 +137,7 @@
   id: Z14556M855BoxCink
   suffix: Z14
   categories: [ Zona14 ]
-  name: ammo crate (5.56) M855
+  name: Large Ammo Box (5.56) M885
   description: For assault rifles, 300 rounds per crate. Penetrates class 3 armor.
   components:
     - type: BallisticAmmoProvider
@@ -154,7 +154,7 @@
   id: Z14556WarmagBoxCink
   suffix: Z14
   categories: [ Zona14 ]
-  name: ammo crate (5.56) Warmag
+  name: Large Ammo Box (5,56) Warmag
   description: For assault rifles, 300 rounds per crate. Useless against armor.
   components:
     - type: BallisticAmmoProvider
@@ -171,7 +171,7 @@
   id: Z14556M856BoxCink
   suffix: Z14
   categories: [ Zona14 ]
-  name: ammo crate (5.56) M856
+  name: Large Ammo Box (5.56) M856
   description: For assault rifles, 300 rounds per crate. Penetrates class 4 armor.
   components:
     - type: BallisticAmmoProvider
@@ -188,7 +188,7 @@
   id: Z14545M995BoxCink
   suffix: Z14
   categories: [ Zona14 ]
-  name: ammo crate (5.56) M995
+  name: Large Ammo Box (5.56) M995
   description: For assault rifles, 300 rounds per crate. Penetrates class 5 armor.
   components:
     - type: BallisticAmmoProvider
@@ -205,7 +205,7 @@
   id: Z14556SSAAPBoxCink
   suffix: Z14
   categories: [ Zona14 ]
-  name: ammo crate (5.56) SSA AP
+  name: Large Ammo Box (5.56) SSA AP
   description: For assault rifles, 300 rounds per crate. Penetrates class 6 armor.
   components:
     - type: BallisticAmmoProvider

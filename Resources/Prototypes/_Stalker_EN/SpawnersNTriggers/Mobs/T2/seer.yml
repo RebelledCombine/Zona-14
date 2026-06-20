@@ -1,5 +1,6 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
-  name: seer trigger (1-2) (10%) 30м
+  name: seer trigger (1-2) (10%) 30m
   id: STTriggerSeer121030
   parent: STBaseTrigger121030
   suffix: ST, T2, Trigger
@@ -11,7 +12,7 @@
     - MobMutantSeer
 
 - type: entity
-  name: seer trigger (1-2) (25%) 30м
+  name: seer trigger (1-2) (25%) 30m
   id: STTriggerSeer122530
   parent: STBaseTrigger122530
   suffix: ST, T2, Trigger
@@ -24,7 +25,7 @@
 
 
 - type: entity
-  name: seer trigger (1-2) (50%) 30м
+  name: seer trigger (1-2) (50%) 30m
   id: STTriggerSeer125030
   parent: STBaseTrigger125030
   suffix: ST, T2, Trigger
@@ -36,7 +37,7 @@
     - MobMutantSeer
 
 - type: entity
-  name: seer trigger (1-2) (75%) 30м
+  name: seer trigger (1-2) (75%) 30m
   id: STTriggerSeer127530
   parent: STBaseTrigger127530
   suffix: ST, T2, Trigger
@@ -48,7 +49,7 @@
     - MobMutantSeer
 
 - type: entity
-  name: seer trigger (1-4) (25%) 30м
+  name: seer trigger (1-4) (25%) 30m
   id: STTriggerSeer142530
   parent: STBaseTrigger142530
   suffix: ST, T2, Trigger
@@ -60,7 +61,7 @@
     - MobMutantSeer
 
 - type: entity
-  name: seer trigger (1-4) (50%) 30м
+  name: seer trigger (1-4) (50%) 30m
   id: STTriggerSeer145030
   parent: STBaseTrigger145010
   suffix: ST, T2, Trigger
@@ -72,7 +73,7 @@
     - MobMutantSeer
 
 - type: entity
-  name: seer trigger (1-4) (75%) 30м
+  name: seer trigger (1-4) (75%) 30m
   id: STTriggerSeer145070
   parent: STBaseTrigger147530
   suffix: ST, T2, Trigger

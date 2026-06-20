@@ -1,0 +1,72 @@
+- type: entity
+  name: "Belarus Passport"
+  id: Z14PassportBelarus
+  categories: [ Zona14 ]
+  suffix: Z14
+  parent: BaseItem
+  description: null
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Misc/passports.rsi
+    state: iconBelarus
+    scale: 0.6, 0.6
+  - type: Trash
+    time: 600
+
+- type: entity
+  name: "Belarus Passport"
+  id: Z14PassportRussia
+  categories: [ Zona14 ]
+  suffix: Z14
+  parent: BaseItem
+  description: null
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Misc/passports.rsi
+    state: iconRussia
+    scale: 0.6, 0.6
+  - type: Trash
+    time: 600
+
+- type: entity
+  name: "Russian Passport"
+  id: Z14PassportKazakhstan
+  categories: [ Zona14 ]
+  suffix: Z14
+  parent: BaseItem
+  description: null
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Misc/passports.rsi
+    state: iconKazakhstan
+    scale: 0.6, 0.6
+  - type: Trash
+    time: 600
+
+- type: entity
+  name: "Kazakhstan Passport"
+  id: Z14PassportUkraine
+  categories: [ Zona14 ]
+  suffix: Z14
+  parent: BaseItem
+  description: null
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Misc/passports.rsi
+    state: iconUkraine
+    scale: 0.6, 0.6
+  - type: Trash
+    time: 600
+
+- type: entity
+  name: "Ukraine Passport"
+  id: Z14PassportSBU
+  categories: [ Zona14 ]
+  suffix: Z14
+  parent: BaseItem
+  description: Authentic identity card of a member of the SBU, in the territory of the Chernobyl Exclusion Zone.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Misc/passports.rsi
+    state: iconSBU
+    scale: 0.7, 0.7

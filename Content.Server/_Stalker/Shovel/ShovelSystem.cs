@@ -96,7 +96,7 @@ public sealed class ShovelSystem : EntitySystem
         }
         else
         {
-            _popup.PopupEntity("Место уже занято", args.User, PopupType.Large);
+            _popup.PopupEntity(Loc.GetString("st-shovel-spot-occupied"), args.User, PopupType.Large); // Zona14: localized
         }
     }
 
@@ -162,7 +162,7 @@ public sealed class ShovelSystem : EntitySystem
 
         ActivationVerb verb = new()
         {
-            Text = Loc.GetString("Выкопать грядку"),
+            Text = Loc.GetString("st-shovel-dig-bed"), // Zona14: localized
             Icon = new SpriteSpecifier.Texture(new ("/Textures/Interface/VerbIcons/light.svg.192dpi.png")),
 
             Act = () => PlowGround(@event.User, ent,"hydroponicsSoil",30)
@@ -174,7 +174,7 @@ public sealed class ShovelSystem : EntitySystem
 
         ActivationVerb verb2 = new()
         {
-            Text = Loc.GetString("Выкопать могилу"),
+            Text = Loc.GetString("st-shovel-dig-grave"), // Zona14: localized
             Icon = new SpriteSpecifier.Texture(new ("/Textures/Interface/VerbIcons/light.svg.192dpi.png")),
 
             Act = () => PlowGround(@event.User, ent,"CrateStoneGrave",60)
@@ -208,7 +208,7 @@ public sealed class ShovelSystem : EntitySystem
         }
         else
         {
-            _popup.PopupEntity("Не подходящая местность", eventUser, PopupType.Large);
+            _popup.PopupEntity(Loc.GetString("st-shovel-wrong-terrain"), eventUser, PopupType.Large); // Zona14: localized
         }
     }
 }

@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   abstract: true
   parent: STClothingHeadBase
   id: STClothingHeadHelmetTacticalT1Base
-  name: база тактического шлема T1
+  name: T1 Tactical Helmet Base
   suffix: ST, T1, Tactical
   components:
   - type: STWeight
@@ -26,8 +27,8 @@
 - type: entity
   parent: STClothingHeadHelmetTacticalT1Base
   id: ClothingHeadHelmetLight
-  name: шлем «Сито»
-  description: Лёгкий шлем, представляющий из себя тончайший кусок металла, способный защитить вашу черепушку от картечины.
+  name: Sieve Helmet
+  description: A lightweight helmet, which is the thinnest piece of metal that can protect your skull from buckshot.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/hats/helm_light.rsi
@@ -40,8 +41,8 @@
 - type: entity
   parent: STClothingHeadHelmetTacticalT1Base
   id: ClothingHeadHelmetDolg
-  name: шлем «Сито» Долга
-  description: Лёгкий шлем, представляющий из себя тончайший кусок металла, способный защитить вашу черепушку от картечины, но в цветах Долга!
+  name: Duty Sieve Helmet
+  description: A lightweight helmet, which is the thinnest piece of metal that can protect your skull from buckshot, but in the colors of Duty!
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/hats/helm_dolg.rsi
@@ -54,8 +55,8 @@
 - type: entity
   parent: STClothingHeadHelmetTacticalT1Base
   id: ClothingHeadMercLight
-  name: наёмнический шлем «Сито»
-  description: Лёгкий шлем, представляющий из себя тончайший кусок металла, способный защитить вашу черепушку от картечины.
+  name: Sieve Mercenary Helmet
+  description: A lightweight helmet, which is the thinnest piece of metal that can protect your skull from buckshot.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/hats/merc_head_light.rsi
@@ -68,8 +69,8 @@
 - type: entity
   parent: STClothingHeadHelmetTacticalT1Base
   id: ClothingHeadHelmetLightDeserters
-  name: отступнический шлем «Сито»
-  description: Лёгкий шлем, представляющий из себя тончайший кусок металла, способный защитить вашу черепушку от картечины и излишнего внимания государства.
+  name: Renegade Sieve Helmet
+  description: A lightweight helmet, which is the thinnest piece of metal that can protect your skull from buckshot and excessive attention from the state.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/hats/helm_light_deserter.rsi
@@ -82,9 +83,9 @@
 - type: entity
   parent: STClothingHeadHelmetTacticalT1Base
   id: ClothingHeadHelmetLightProject
-  name: Модифицированный шлем «Сито»
+  name: Project Sieve Helmet
   suffix: ST, T1, Tactical, Project
-  description: Лёгкий шлем, представляющий из себя тончайший кусок металла, способный защитить вашу черепушку от картечины и излишнего внимания государства.
+  description: An ultra-thin metal helmet capable of protecting your skull from buckshot and excessive government attention.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/hats/helm_light_project.rsi

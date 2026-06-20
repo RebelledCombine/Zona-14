@@ -1,7 +1,8 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: STDolgDetectionStalkerTrigger
   parent: MarkerBase
-  name: Долг Детекшн Сталкеров
+  name: Duty Stalker Detection
   description: Make a Sound and Text.
   suffix: Stalker SoundsTriggers
   components:
@@ -32,7 +33,7 @@
 - type: entity
   id: STDolgDetectionEnemyTrigger
   parent: STDolgDetectionStalkerTrigger
-  name: Долг Детекшн Врагов
+  name: Duty enemy detection
   description: Make a Sound and Text.
   suffix: Stalker SoundsTriggers
   components:
@@ -57,7 +58,7 @@
 - type: entity
   id: STSciDetectStalkerTrigger
   parent: STDolgDetectionStalkerTrigger
-  name: Учёные Детекшн Сталкеров
+  name: Ecologist stalker detection
   description: Make a Sound and Text.
   suffix: Stalker SoundsTriggers
   components:
@@ -82,7 +83,7 @@
 - type: entity
   id: STOKSOPDetectionEnemyTrigger
   parent: STDolgDetectionStalkerTrigger
-  name: ОКСОП Детекшн Врагов
+  name: Military enemy detection
   description: Make a Sound and Text.
   suffix: Stalker SoundsTriggers
   components:

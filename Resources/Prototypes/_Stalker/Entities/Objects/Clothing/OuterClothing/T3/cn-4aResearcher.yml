@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: STClothingOuterArmorStorageBasic
   id: STClothingOuterArmorCN-4aResearcher
-  name: ЧН-4а Исследователь
-  description: Неофициальная версия научного комбинезона «СЕВА», основательно модифицированная Новиковым, техником «Чистого неба». Комбинезон отличается высокой эргономичностью, обеспечивающей столь необходимую мобильность при исследовании аномальных полей. Чрезвычайно популярен среди исследователей-ветеранов группировки.
+  name: CHN-4a Explorer
+  description: "An unofficial version of the SEVA scientific suit, extensively modified by Novikov, a Clear Sky technician. The suit is highly ergonomic, providing much-needed mobility when exploring anomalous fields. It is extremely popular among the group's veteran researchers."
   suffix: ST, T3, Env
   components:
   - type: Sprite

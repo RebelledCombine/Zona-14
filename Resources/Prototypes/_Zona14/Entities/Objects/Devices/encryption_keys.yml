@@ -1,0 +1,47 @@
+- type: entity
+  abstract: true
+  parent: BaseItem
+  id: Z14BaseConfigurableEncryptionKey
+  categories: [ Zona14 ]
+  components:
+  - type: Item
+    sprite: _Stalker/Objects/Devices/encryption_keys.rsi
+  - type: Sprite
+    sprite: _Stalker/Objects/Devices/encryption_keys.rsi
+  - type: ConfigurableEncryptionKey
+  - type: UserInterface
+    interfaces:
+      enum.ConfigurableEncryptionKeyUiKey.Key:
+        type: ConfigurableEncryptionKeyBoundUserInterface
+  - type: ActivatableUI
+    key: enum.ConfigurableEncryptionKeyUiKey.Key
+
+- type: entity
+  parent: Z14BaseConfigurableEncryptionKey
+  id: Z14ConfigurableEncryptionKey
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: configurable encryption key
+  description: Configurable encryption key to input your own frequency!
+  components:
+  - type: Sprite
+    layers:
+    - state: crypt_gray
+    - state: configurable_label
+
+- type: entity
+  parent: EncryptionKey
+  id: Z14EncryptionKeyMercStalker
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Mercenary Encryption Key
+  description: Mercenary encryption key with a secure communication channel
+  components:
+  - type: EncryptionKey
+    channels:
+    - Merc
+    defaultChannel: Merc
+  - type: Sprite
+    layers:
+    - state: crypt_gray
+    - state: common_label

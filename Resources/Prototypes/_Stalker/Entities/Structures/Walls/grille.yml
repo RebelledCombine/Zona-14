@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: STGrille
   suffix: ST, Mapping
   parent: BaseStructure
-  name: металлическая решётка
-  description: дешего и сердито
+  name: metal grille
+  description: cheap and angry
   components:
     - type: MeleeSound
       soundGroups:

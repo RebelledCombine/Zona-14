@@ -1,0 +1,29 @@
+- type: entity
+  parent: Z14GasMaskBase
+  id: Z14ClothingMaskXoma
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: 'gas mask PBF OZK "Khomiak"'
+  description: Boxless filtering gas mask designed to protect the face, eyes, and respiratory system from biological aerosols, chemical warfare agents, toxic chemicals, and dust. Protects from toxins.
+  components:
+  - type: Tag
+    tags:
+      - BlockMask
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/mask/pbfxoma.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/mask/pbfxoma.rsi
+
+- type: entity
+  parent: Z14ClothingMaskXoma
+  id: Z14ClothingMaskGasDolg2
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Standard Duty Gas Mask
+  description: He's unlikely to destroy the Zone, but he's trying hard. Protects from radiation.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/mask/gasmask_dolg2.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/mask/gasmask_dolg2.rsi
+

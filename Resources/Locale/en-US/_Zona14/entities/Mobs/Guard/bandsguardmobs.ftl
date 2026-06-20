@@ -1,0 +1,3 @@
+ent-Z14MobBanditSecurityTop = Killa
+    .desc = Security guard for Bandits, I wouldn't mess with them...
+    .suffix = Z14

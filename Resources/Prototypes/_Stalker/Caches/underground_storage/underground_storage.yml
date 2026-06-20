@@ -1,3 +1,4 @@
+# Zona14: translated Russian names/descriptions to English
 - type: lightCraftingRecipe
   id: UndergroundStorage
   results:
@@ -12,8 +13,8 @@
 - type: entity
   id: UndergroundStorageClose
   parent: BaseStructure
-  name: прикоп
-  description: Закопанный Тайник
+  name: Buried Stash
+  description: A buried stash.
   components:
   - type: Transform
     anchored: true
@@ -40,8 +41,8 @@
 - type: entity
   id: UndergroundStorageOpen
   parent: BaseStructure
-  name: прикоп
-  description: Закопанный Тайник
+  name: "{ ent-UndergroundStorageClose }"
+  description: "{ ent-UndergroundStorageClose.desc }"
   components:
   - type: Storage
     maxItemSize: Ginormous

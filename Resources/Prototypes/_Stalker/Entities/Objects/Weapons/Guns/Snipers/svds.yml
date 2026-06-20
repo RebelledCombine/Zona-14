@@ -1,3 +1,4 @@
+﻿# Zona14: translated Russian names/descriptions to English
 - type: entity
   abstract: true
   parent: STBaseWeaponSniper
@@ -78,8 +79,8 @@
   parent: STBaseWeaponRifleSVDS
   id: STWeaponSniperSVDSGrass
   name: SVDS Ghillie Sniper Rifle
-  suffix: ST, Кастомка
-  description: A carefully modified SVDS with camouflage netting and minor tuning for maximum concealment in the Zone's wilderness. The 7.62x54mmR rounds ensure no mutant walks away from a well-placed shot.
+  suffix: ST, Custom # Zona14: ST, Кастомка
+  description: "A carefully modified SVDS with camouflage netting and minor tuning for maximum concealment in the Zone's wilderness. The 7.62x54mmR rounds ensure no mutant walks away from a well-placed shot."
   components:
   - type: Clothing
     sprite: _Stalker/Objects/Weapons/Guns/Snipers/SVDS/srdcGrass.rsi
@@ -105,7 +106,7 @@
   parent: STBaseWeaponRifleSVDS
   id: STWeaponSniperSVU
   name: SVU Compact Sniper Rifle
-  suffix: ST, Кастомка
+  suffix: ST, Custom # Zona14: ST, Кастомка
   description: A bullpup conversion of the SVDS designed for urban operations in the Zone. The shortened barrel reduces range but improves handling in tight spaces, while still delivering 7.62x54mmR stopping power.
   components:
   - type: Clothing
@@ -119,7 +120,7 @@
   parent: STBaseWeaponRifleSVDS
   id: STWeaponSniperSVUSeraphim
   name: Seraphim SVU Sniper Rifle
-  description: An elite SVU variant used by the mysterious Seraphim faction. Features advanced modifications and distinctive white finish, making it both deadly and recognizable in the Zone's harsh environment.
+  description: "An elite SVU variant used by the mysterious Seraphim faction. Features advanced modifications and distinctive white finish, making it both deadly and recognizable in the Zone's harsh environment."
   components:
   - type: Clothing
     sprite: _Stalker/Objects/Weapons/Guns/Snipers/SVU/seraphim.rsi
@@ -132,7 +133,7 @@
   parent: STBaseWeaponRifleSVDS
   id: STWeaponRifleSVDSWood
   name: Selfmade chatter
-  suffix: ST, Кастомка
+  suffix: ST, Custom # Zona14: ST, Кастомка
   description: A selfmade rifle for an SVD magazine. Oblique, but wildly lethal.
   components:
     - type: STWeight
@@ -189,9 +190,9 @@
 - type: entity
   parent: STBaseWeaponRifleSVDS
   id: STWeaponSniperSVUTop
-  name: СВУ "Топь"
-  suffix: ST, Кастомка
-  description: Снайперская винтовка укороченная — самозарядная снайперская винтовка компоновки булл-пап, разработанная ЦКИБ СОО на основе СВД. Разработка предназначенной для воздушно-десантных войск СССР укороченной снайперской винтовки на базе СВД началась в ЦКИБ СОО в 1977 году. В 1979 году демонстрационные образцы винтовки СВУ конструктора Л. В. Бондарева были предложены частям ВДВ, однако до их производства дело тогда не дошло. В 1991 году было начато серийное производство СВУ, первые серийные винтовки поступили на вооружение 106-й гвардейской воздушно-десантной дивизии, где они прошли войсковые испытания. Ствол оснащён массивным маскирующим дульным устройством, разработанным конструктором Л. В. Бондарёвым. Глушитель обеспечивает снижение уровня звука выстрела на 10-12 % по сравнению с СВД, практически полностью устраняет дульное пламя и рассеивает звук выстрела таким образом, что определить точную позицию стрелка становится невозможным. Фурнитура выполнена из полиамида. У данного образца подавляющая часть корпуса, включая приклад, обмотана камуфляжной лентой, а на прицеле и дульном устройстве намотана дополнительная обмотка, разбивающая силуэт оружия на фоне растительности.
+  name: SVU "Top"
+  suffix: ST, Custom # Zona14: ST, Кастомка
+  description: The shortened sniper rifle - a self-loading sniper rifle of bullpup layout, developed by TsKIB SOO on the basis of the SVD. Development of a shortened SVD-based sniper rifle for the USSR airborne troops began at TsKIB SOO in 1977. In 1979 demonstration samples of designer L. V. Bondarev's SVU rifle were offered to the airborne forces, but it did not reach production at that time. Serial production of the SVU began in 1991, and the first production rifles entered service with the 106th Guards Airborne Division, where they underwent field trials. The barrel is fitted with a massive masking muzzle device designed by L. V. Bondarev. The suppressor reduces the sound level of the shot by 10-12% compared to the SVD, almost completely eliminates muzzle flash, and disperses the sound of the shot in such a way that determining the shooter's exact position becomes impossible. The furniture is made of polyamide. On this example, the bulk of the body, including the stock, is wrapped in camouflage tape, with additional wrapping on the scope and muzzle device that breaks up the silhouette of the weapon against vegetation.
   components:
   - type: Clothing
     sprite: _Stalker/Objects/Weapons/Guns/Snipers/SVU/Top.rsi
@@ -203,8 +204,8 @@
 - type: entity
   parent: STBaseWeaponRifleSVDS
   id: STWeaponSniperPP2000Pearl
-  name: РР-2000
-  description: Пушка созданная либо отчаянным гением, либо шизофреником. Судя по всему ствол был создан путем сварки нескольких таких же стволов... Стоп, почему у него съемный барабан?! На цевье выцарапана неразборчивая подпись создателя.
+  name: PP-2000
+  description: A gun made either by a desperate genius or by a schizophrenic. Apparently the barrel was made by welding several identical barrels together... Wait, why does it have a removable drum?! An illegible signature of the maker is scratched into the forend.
   components:
   - type: STWeight
     self: 5
@@ -214,11 +215,11 @@
     minAngle: -50
     maxAngle: -70
   - type: Clothing
-    sprite: _Stalker/Objects/Weapons/Guns/Revolvers/РР-2000.rsi
+    sprite: _Stalker/Objects/Weapons/Guns/Revolvers/PP-2000.rsi # Zona14: РР-2000<PP-2000
   - type: Item
-    sprite: _Stalker/Objects/Weapons/Guns/Revolvers/РР-2000.rsi
+    sprite: _Stalker/Objects/Weapons/Guns/Revolvers/PP-2000.rsi # Zona14: РР-2000<PP-2000
   - type: Sprite
-    sprite: _Stalker/Objects/Weapons/Guns/Revolvers/РР-2000.rsi
+    sprite: _Stalker/Objects/Weapons/Guns/Revolvers/PP-2000.rsi # Zona14: РР-2000<PP-2000
   - type: Gun
     soundGunshot:
       path: /Audio/_Stalker/Effects/Guns/revolver.ogg

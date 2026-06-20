@@ -1,4 +1,4 @@
-- type: shopPreset
+﻿- type: shopPreset
   id: NpcAlekseiFilipp
   itemsForSale: # Barmen
     # Thermal group - 1
@@ -61,7 +61,7 @@
     MutantPartZombieHand: 225
 
   categories:
-    - name: Оружие # 1.5
+    - name: Weapons # 1.5 # Zona14: Оружие
       priority: 1
       items:
         STWeaponShotgunTOZ34: 300
@@ -76,7 +76,7 @@
         STWeaponRifleSaiga545: 1650
         STWeaponRifleFAL: 5475
         STWeaponSniperMosin: 3675
-    - name: Магазины # 1.5
+    - name: Magazines # 1.5 # Zona14: Магазины
       priority: 2
       items:
         BasePMMag: 113
@@ -87,7 +87,7 @@
         751Mag20: 368
         BaseGSH-18Mag10: 85
         BaseMP5Mag: 125
-    - name: Боеприпасы # 1.5
+    - name: Ammunition # 1.5 # Zona14: Боеприпасы
       priority: 3
       items:
         6mmBuckshotBox: 450
@@ -112,7 +112,7 @@
         556FMJBox: 450
         # 7.54
         754FMJBox : 975
-    - name: Броня и снаряжение # цена сидора * 2
+    - name: Armor and equipment # Sidorovich price * 2 # Zona14: Броня и снаряжение
       priority: 4
       items:
         ClothingOuterJacketStalker: 78
@@ -122,22 +122,22 @@
         ClothingOuterCoatStalker: 698
         ClothingMaskGasM40: 266
         ClothingMaskGP5: 244
-    - name: Рюкзаки
+    - name: Backpacks # Zona14: Рюкзаки
       priority: 5
       items:
         ClothingBackpackDuffelGreenStalker: 30
         ClothingBackpackDuffelBlackStalker: 30
         ClothingBackpackDuffelMedicalStalker: 150
-    - name: Пояса
+    - name: Belts # Zona14: Пояса
       priority: 6
       items:
         ClothingBeltBandolierStalker: 20
-    - name: Аномалии
+    - name: Anomalies # Zona14: Аномалии
       priority: 7
       items:
         STBoltBagFilled: 100
         STBoltBagOliveGrayFilled: 100
-    - name: Провизия
+    - name: Provisions # Zona14: Провизия
       priority: 8
       items:
         STEnergyDrink: 650
@@ -148,7 +148,7 @@
         FoodTinMRE: 120
         DrinkLemonadehBottleFull: 50
         STFoodMeatSalami: 350
-    - name: Медицина # цены бара * 1.5
+    - name: Medicine # bar prices * 1.5 # Zona14: Медицина
       priority: 9
       items:
         PillDexalin: 15

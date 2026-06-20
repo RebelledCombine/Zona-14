@@ -1,10 +1,11 @@
+# Zona14: translated Russian names/descriptions to English
 - type: Tag
   id: Dollar
 - type: entity
   parent: BaseItem
   id: Dollar
-  name: доллар
-  description: Денежная единица США, одна из основных резервных валют мира.
+  name: Dollars
+  description: The monetary unit of the United States, one of the main reserve currencies of the world.
   suffix: Stalker
   components:
   - type: PhysicalComposition
@@ -42,7 +43,7 @@
     tags:
     - Dollar
   - type: RepositoryItem
-    categoryName: Деньги
+    categoryName: Money # Zona14: Деньги
 
 
 - type: currency

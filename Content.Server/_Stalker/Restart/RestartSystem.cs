@@ -63,10 +63,10 @@ public partial class RestartSystem : EntitySystem
             return;
 
         var delta = data.Comp.Time - _timing.CurTime;
-        _chat.DispatchServerAnnouncement($"Перезапуск сервера через: {Math.Round(delta.TotalMinutes, 1)} минут");
+        _chat.DispatchServerAnnouncement(Loc.GetString("st-restart-countdown", ("minutes", Math.Round(delta.TotalMinutes, 1)))); // Zona14: localized
         if (delta < _teleportDelay)
         {
-            _chat.DispatchServerAnnouncement($"Вы можете использовать команду home для быстрого возврата в Чистилище");
+            _chat.DispatchServerAnnouncement(Loc.GetString("st-restart-home-hint")); // Zona14: localized
         }
 
         data.Comp.IntervalLast = _timing.CurTime + data.Comp.IntervalDelay;
@@ -75,7 +75,7 @@ public partial class RestartSystem : EntitySystem
     public void StartRestart(TimeSpan delay)
     {
         var data = GetData();
-        _chat.DispatchServerAnnouncement($"Запущен авто-рестарт сервера через: {Math.Round(delay.TotalMinutes, 1)} минут");
+        _chat.DispatchServerAnnouncement(Loc.GetString("st-restart-auto-started", ("minutes", Math.Round(delay.TotalMinutes, 1)))); // Zona14: localized
 
         data.Comp.Time = _timing.CurTime + delay;
         data.Comp.IntervalLast = _timing.CurTime + data.Comp.IntervalDelay;
@@ -92,26 +92,26 @@ public partial class RestartSystem : EntitySystem
         var session = shell.Player;
         if (spawn == null)
         {
-            shell.WriteError("Нет спавнера Stalker Job Spawn на картах");
+            shell.WriteError(Loc.GetString("st-restart-error-no-spawner")); // Zona14: localized
             return;
         }
         if (session?.AttachedEntity == null)
         {
-            shell.WriteError("Сущность не игрок");
+            shell.WriteError(Loc.GetString("st-restart-error-not-player")); // Zona14: localized
             return;
         }
         if (data.Comp.Time == default)
         {
-            shell.WriteError("Рестарт не запланирован");
+            shell.WriteError(Loc.GetString("st-restart-error-not-scheduled")); // Zona14: localized
             return;
         }
 
         var portalAvailableTime = data.Comp.Time - _teleportDelay;
         if (portalAvailableTime >= _timing.CurTime)
         {
-            var message = $"Телепортация возможно только за {_teleportDelay} до рестарта";
+            var message = Loc.GetString("st-restart-error-too-early", ("delay", _teleportDelay)); // Zona14: localized
             shell.WriteError(message);
-            _sawmill.Info($"{session.AttachedEntity.Value.Id} {session.Name} пытался телепортироваться в чистилище");
+            _sawmill.Info($"{session.AttachedEntity.Value.Id} {session.Name} tried to teleport to purgatory"); // Zona14: localized log
             return;
         }
 
@@ -119,9 +119,9 @@ public partial class RestartSystem : EntitySystem
 
         if (_usedHomeCommand.Contains(uid))
         {
-            var message = $"Телепортация возможнa только один раз";
+            var message = Loc.GetString("st-restart-error-already-used"); // Zona14: localized
             shell.WriteError(message);
-            _sawmill.Info($"{session.AttachedEntity.Value.Id} {session.Name} пытался повторно телепортироваться в чистилище");
+            _sawmill.Info($"{session.AttachedEntity.Value.Id} {session.Name} tried to teleport to purgatory again"); // Zona14: localized log
             return;
         }
 
@@ -130,8 +130,8 @@ public partial class RestartSystem : EntitySystem
 
         transformSystem.SetCoordinates(session.AttachedEntity.Value, targetCoords);
         transformSystem.AttachToGridOrMap(session.AttachedEntity.Value);
-        _sawmill.Info($"{session.AttachedEntity.Value.Id} {session.Name} телепортировался в Чистилище");
-        shell.WriteLine("Успешная телепортация");
+        _sawmill.Info($"{session.AttachedEntity.Value.Id} {session.Name} teleported to Purgatory"); // Zona14: localized log
+        shell.WriteLine(Loc.GetString("st-restart-success")); // Zona14: localized
         _usedHomeCommand.Add(uid);
     }
 

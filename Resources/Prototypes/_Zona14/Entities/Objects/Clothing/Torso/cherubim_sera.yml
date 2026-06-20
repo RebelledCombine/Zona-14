@@ -1,0 +1,12 @@
+- type: entity
+  parent: Z14BaseClothingTorso
+  id: Z14STClothingTorsoSerafimCherubimFullReady
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Cherubim robes
+  description: An old, worn cherub uniform that hasn't been removed in years... it emanates the strong aura characteristic of the Seraphim faction.
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/Torso/Serafims/cherubim.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/Torso/Serafims/cherubim.rsi

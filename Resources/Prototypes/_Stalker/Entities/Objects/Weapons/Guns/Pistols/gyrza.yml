@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
-  name: СР-1 тактический
+  name: SR-1 Tactical
   parent: STBaseWeaponPistol
   id: WeaponPistolGyrzaTactikal
-  suffix: ST, Кастомка
-  description: Пистолет, разработанный для силовых подразделений специального назначения по программе НИОКР «Грач».
+  suffix: ST, Custom # Zona14: ST, Кастомка
+  description: "A pistol developed for special-purpose security forces under the \"Grach\" R&D program."
   components:
     - type: STWeight
       self: 1

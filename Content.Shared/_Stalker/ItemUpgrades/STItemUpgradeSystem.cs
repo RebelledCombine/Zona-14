@@ -50,11 +50,11 @@ public sealed partial class STItemUpgradeSystem : EntitySystem
 
         if (installed.Count == 0)
         {
-            args.PushMarkup("[color=gray]Модификации: отсутствуют[/color]");
+            args.PushMarkup(Loc.GetString("st-upgrades-examine-none")); // Zona14: localized
             return;
         }
 
-        args.PushMarkup($"[color=yellow]Модификации:[/color] {string.Join(", ", installed)}");
+        args.PushMarkup(Loc.GetString("st-upgrades-examine-list", ("list", string.Join(", ", installed)))); // Zona14: localized
     }
 
     private void OnGunRefreshModifiers(Entity<STItemUpgradesComponent> ent, ref GunRefreshModifiersEvent args)
@@ -295,7 +295,7 @@ public sealed partial class STItemUpgradeSystem : EntitySystem
 
     private void RefreshGun(Entity<STItemUpgradesComponent> ent)
     {
-        // Ничего не делаем.
+        // Do nothing. // Zona14: translated comment
     }
 
     private IEnumerable<STItemUpgradeEntry> GetInstalledUpgrades(Entity<STItemUpgradesComponent> ent)

@@ -1,0 +1,2535 @@
+# Barberry
+
+- type: entity
+  name: Barberry
+  parent: FoodProduceBase
+  id: Z14StalkerFoodBarbaris
+  categories: [ Zona14 ]
+  description: This is a cherished fruit that can be found in abandoned gardens and abandoned areas of the Zone. Its bright red berries contrast with the dull palette of dead forests and crumbling buildings, attracting the attention of stalkers sophisticated in cooking and alchemy. Despite its beauty, barberry is an ambiguous symbol its sweet taste is deceptive, and only experienced stalkers are aware of its possible properties.
+  suffix: Z14
+  components:
+  - type: FlavorProfile
+    flavors:
+      - berry
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 11
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: Vitamin
+          Quantity: 4
+  - type: Sprite
+    sprite: _Stalker/Objects/Counsumable/Food/Plants.rsi
+    state: StalkerFoodBarbaris
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: Z14StalkerOilBarbaris
+        Quantity: 10
+  - type: Tag
+    tags:
+    - Fruit
+  - type: Craftable
+
+- type: ore
+  id: Z14StalkerOreBerries1
+  oreEntity: Z14StalkerFoodBarbaris
+
+- type: entity
+  name: shrub with berries
+  parent: BaseStructure
+  id: Z14StalkerBarriesStructureBarbaris
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: To be honest, I've seen more pleasant shrubs. It's usually a prickly, gnarled mess, covered in gnarled branches, as if the tree has arthritis. The leaves are small, withered, with red veins — a sign of radiation damage. But the most important thing is the berries. At first glance, these berries are quite appetizing. Large and juicy. But don't rush to eat them, rookie! These aren't raspberries from Grandma's garden.
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Counsumable/Food/Plants.rsi
+      state: plant-01
+      scale: 1.1, 1.1
+    - type: Transform
+      anchored: true
+    - type: Physics
+      bodyType: Static
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeCircle
+            radius: 0.2
+    - type: InteractionOutline
+    - type: OreVein
+      oreChance: 1.0
+      currentOre: Z14StalkerOreBerries1
+    - type: Gatherable
+      toolWhitelist:
+        components:
+          - Hands
+    - type: Damageable
+      damageContainer: Inorganic
+      damageModifierSet: Wood
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 150
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+
+########## Goji
+
+- type: entity
+  name: goji
+  parent: FoodProduceBase
+  id: Z14StalkerFoodGoji
+  categories: [ Zona14 ]
+  description: This is a unique berry that frames the myths and legends of the Zone. Outwardly, they resemble ordinary berries, but their bright red color hides special properties. Legends say that the Goji absorbed the power of the Zone, receiving both a blessing and a curse from it.
+  suffix: Z14
+  components:
+  - type: FlavorProfile
+    flavors:
+      - berry
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 11
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: Vitamin
+          Quantity: 4
+  - type: Sprite
+    sprite: _Stalker/Objects/Counsumable/Food/Plants.rsi
+    state: StalkerFoodGoji
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: Z14StalkerOilGoji
+        Quantity: 10
+  - type: Tag
+    tags:
+    - Fruit
+  - type: Craftable
+
+- type: ore
+  id: Z14StalkerOreBerries2
+  oreEntity: Z14StalkerFoodGoji
+
+- type: entity
+  name: shrub with berries
+  parent: BaseStructure
+  id: Z14StalkerBarriesStructureGoji
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: To be honest, I've seen more pleasant shrubs. It's usually a prickly, gnarled mess, covered in gnarled branches, as if the tree has arthritis. The leaves are small, withered, with red veins — a sign of radiation damage. But the most important thing is the berries. At first glance, these berries are quite appetizing. Large and juicy. But don't rush to eat them, rookie! These aren't raspberries from Grandma's garden.
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Counsumable/Food/Plants.rsi
+      state: plant-01
+      scale: 1.1, 1.1
+    - type: Transform
+      anchored: true
+    - type: Physics
+      bodyType: Static
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeCircle
+            radius: 0.2
+    - type: InteractionOutline
+    - type: OreVein
+      oreChance: 1.0
+      currentOre: Z14StalkerOreBerries2
+    - type: Gatherable
+      toolWhitelist:
+        components:
+          - Hands
+    - type: Damageable
+      damageContainer: Inorganic
+      damageModifierSet: Wood
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 150
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+
+######## Serviceberry
+
+- type: entity
+  name: Irga
+  parent: FoodProduceBase
+  id: Z14StalkerFoodIrga
+  categories: [ Zona14 ]
+  description: Take a look at this mysterious bunch of irgi, which brings the atmosphere of long-forgotten forests to the world of the Zone. Clusters of bright dark blue berries seem to glow under the soft light of the cloudy sun, attracting the attention of adventurers. Irga is a rare gift of nature that grows in places that are difficult for humans to access, often protected by anomalies and mutants.
+  suffix: Z14
+  components:
+  - type: FlavorProfile
+    flavors:
+      - berry
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 11
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: Vitamin
+          Quantity: 4
+  - type: Sprite
+    sprite: _Stalker/Objects/Counsumable/Food/Plants.rsi
+    state: StalkerFoodIrga
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: Z14StalkerOilIrga
+        Quantity: 10
+  - type: Tag
+    tags:
+    - Fruit
+  - type: Craftable
+
+- type: ore
+  id: Z14StalkerOreBerries3
+  oreEntity: Z14StalkerFoodIrga
+
+- type: entity
+  name: shrub with berries
+  parent: BaseStructure
+  id: Z14StalkerBarriesStructureIrga
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: To be honest, I've seen more pleasant shrubs. It's usually a prickly, gnarled mess, covered in gnarled branches, as if the tree has arthritis. The leaves are small, withered, with red veins — a sign of radiation damage. But the most important thing is the berries. At first glance, these berries are quite appetizing. Large and juicy. But don't rush to eat them, rookie! These aren't raspberries from Grandma's garden.
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Counsumable/Food/Plants.rsi
+      state: plant-01
+      scale: 1.1, 1.1
+    - type: Transform
+      anchored: true
+    - type: Physics
+      bodyType: Static
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeCircle
+            radius: 0.2
+    - type: InteractionOutline
+    - type: OreVein
+      oreChance: 1.0
+      currentOre: Z14StalkerOreBerries3
+    - type: Gatherable
+      toolWhitelist:
+        components:
+          - Hands
+    - type: Damageable
+      damageContainer: Inorganic
+      damageModifierSet: Wood
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 150
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+
+######## Cranberry
+
+- type: entity
+  name: cranberries
+  parent: FoodProduceBase
+  id: Z14StalkerFoodKlukva
+  categories: [ Zona14 ]
+  description: It is a small berry that lives in the abandoned and semi-abandoned corners of the Chernobyl zone. It has a bright red color that stands out against the background of mosses and dead geometries, creating a contrast with the gray of the surrounding nature.
+  suffix: Z14
+  components:
+  - type: FlavorProfile
+    flavors:
+      - berry
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 11
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: Vitamin
+          Quantity: 4
+  - type: Sprite
+    sprite: _Stalker/Objects/Counsumable/Food/Plants.rsi
+    state: StalkerFoodKlukva
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: Z14StalkerOilKlukva
+        Quantity: 10
+  - type: Tag
+    tags:
+    - Fruit
+  - type: Craftable
+
+- type: ore
+  id: Z14StalkerOreBerries4
+  oreEntity: Z14StalkerFoodKlukva
+
+- type: entity
+  name: shrub with berries
+  parent: BaseStructure
+  id: Z14StalkerBarriesStructureKlukva
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: To be honest, I've seen more pleasant shrubs. It's usually a prickly, gnarled mess, covered in gnarled branches, as if the tree has arthritis. The leaves are small, withered, with red veins — a sign of radiation damage. But the most important thing is the berries. At first glance, these berries are quite appetizing. Large and juicy. But don't rush to eat them, rookie! These aren't raspberries from Grandma's garden.
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Counsumable/Food/Plants.rsi
+      state: plant-01
+      scale: 1.1, 1.1
+    - type: Transform
+      anchored: true
+    - type: Physics
+      bodyType: Static
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeCircle
+            radius: 0.2
+    - type: InteractionOutline
+    - type: OreVein
+      oreChance: 1.0
+      currentOre: Z14StalkerOreBerries4
+    - type: Gatherable
+      toolWhitelist:
+        components:
+          - Hands
+    - type: Damageable
+      damageContainer: Inorganic
+      damageModifierSet: Wood
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 150
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+
+####### Gooseberry
+
+- type: entity
+  name: gooseberry
+  parent: FoodProduceBase
+  id: Z14StalkerFoodKrijovnik
+  categories: [ Zona14 ]
+  description: These are small berries hiding among the thorny shrubs overgrown in the abandoned corners of the Zone. These fruits seem to absorb abnormal energy, giving them an unusual taste and properties. They can be both poisonous and beneficial, depending on the place of gathering and the time of the year.
+  suffix: Z14
+  components:
+  - type: FlavorProfile
+    flavors:
+      - berry
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 11
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: Vitamin
+          Quantity: 4
+  - type: Sprite
+    sprite: _Stalker/Objects/Counsumable/Food/Plants.rsi
+    state: StalkerFoodKrijovnik
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: Z14StalkerOilKrijovnik
+        Quantity: 10
+  - type: Tag
+    tags:
+    - Fruit
+  - type: Craftable
+
+- type: ore
+  id: Z14StalkerOreBerries5
+  oreEntity: Z14StalkerFoodKrijovnik
+
+- type: entity
+  name: shrub with berries
+  parent: BaseStructure
+  id: Z14StalkerBarriesStructureKrijovnik
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: To be honest, I've seen more pleasant shrubs. It's usually a prickly, gnarled mess, covered in gnarled branches, as if the tree has arthritis. The leaves are small, withered, with red veins — a sign of radiation damage. But the most important thing is the berries. At first glance, these berries are quite appetizing. Large and juicy. But don't rush to eat them, rookie! These aren't raspberries from Grandma's garden.
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Counsumable/Food/Plants.rsi
+      state: plant-01
+      scale: 1.1, 1.1
+    - type: Transform
+      anchored: true
+    - type: Physics
+      bodyType: Static
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeCircle
+            radius: 0.2
+    - type: InteractionOutline
+    - type: OreVein
+      oreChance: 1.0
+      currentOre: Z14StalkerOreBerries5
+    - type: Gatherable
+      toolWhitelist:
+        components:
+          - Hands
+    - type: Damageable
+      damageContainer: Inorganic
+      damageModifierSet: Wood
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 150
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+
+####### Raspberry
+
+- type: entity
+  name: raspberries
+  parent: FoodProduceBase
+  id: Z14StalkerFoodMalina
+  categories: [ Zona14 ]
+  description: These are small but powerful fruits growing in the abandoned corners of the Zone. Their bright red color attracts attention, like a dangerous light in a dark void. Raspberries have not only a sweet, but also a slightly sour taste, which makes stalkers nostalgic for bygone times.
+  suffix: Z14
+  components:
+  - type: FlavorProfile
+    flavors:
+      - berry
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 11
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: Vitamin
+          Quantity: 4
+  - type: Sprite
+    sprite: _Stalker/Objects/Counsumable/Food/Plants.rsi
+    state: StalkerFoodMalina
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: Z14StalkerOilMalina
+        Quantity: 10
+  - type: Tag
+    tags:
+    - Fruit
+  - type: Craftable
+
+- type: ore
+  id: Z14StalkerOreBerries6
+  oreEntity: Z14StalkerFoodMalina
+
+- type: entity
+  name: shrub with berries
+  parent: BaseStructure
+  id: Z14StalkerBarriesStructureMalina
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: To be honest, I've seen more pleasant shrubs. It's usually a prickly, gnarled mess, covered in gnarled branches, as if the tree has arthritis. The leaves are small, withered, with red veins — a sign of radiation damage. But the most important thing is the berries. At first glance, these berries are quite appetizing. Large and juicy. But don't rush to eat them, rookie! These aren't raspberries from Grandma's garden.
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Counsumable/Food/Plants.rsi
+      state: plant-01
+      scale: 1.1, 1.1
+    - type: Transform
+      anchored: true
+    - type: Physics
+      bodyType: Static
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeCircle
+            radius: 0.2
+    - type: InteractionOutline
+    - type: OreVein
+      oreChance: 1.0
+      currentOre: Z14StalkerOreBerries6
+    - type: Gatherable
+      toolWhitelist:
+        components:
+          - Hands
+    - type: Damageable
+      damageContainer: Inorganic
+      damageModifierSet: Wood
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 150
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+
+###### Cloudberry
+
+- type: entity
+  name: cloudberries
+  parent: FoodProduceBase
+  id: Z14StalkerFoodMoroshka
+  categories: [ Zona14 ]
+  description: This is a rare and mysterious berry plant that lives in unexplored corners of the Zone. These bright orange berries grow on low-growing bushes, preferring the moist spheres of dimly lit wells and swampy areas where the magic of anomalies seeps through.
+  suffix: Z14
+  components:
+  - type: FlavorProfile
+    flavors:
+      - berry
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 11
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: Vitamin
+          Quantity: 4
+  - type: Sprite
+    sprite: _Stalker/Objects/Counsumable/Food/Plants.rsi
+    state: StalkerFoodMoroshka
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: Z14StalkerOilMoroshka
+        Quantity: 10
+  - type: Tag
+    tags:
+    - Fruit
+  - type: Craftable
+
+- type: ore
+  id: Z14StalkerOreBerries7
+  oreEntity: Z14StalkerFoodMoroshka
+
+- type: entity
+  name: shrub with berries
+  parent: BaseStructure
+  id: Z14StalkerBarriesStructureMoroshka
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: To be honest, I've seen more pleasant shrubs. It's usually a prickly, gnarled mess, covered in gnarled branches, as if the tree has arthritis. The leaves are small, withered, with red veins — a sign of radiation damage. But the most important thing is the berries. At first glance, these berries are quite appetizing. Large and juicy. But don't rush to eat them, rookie! These aren't raspberries from Grandma's garden.
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Counsumable/Food/Plants.rsi
+      state: plant-01
+      scale: 1.1, 1.1
+    - type: Transform
+      anchored: true
+    - type: Physics
+      bodyType: Static
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeCircle
+            radius: 0.2
+    - type: InteractionOutline
+    - type: OreVein
+      oreChance: 1.0
+      currentOre: Z14StalkerOreBerries7
+    - type: Gatherable
+      toolWhitelist:
+        components:
+          - Hands
+    - type: Damageable
+      damageContainer: Inorganic
+      damageModifierSet: Wood
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 150
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+
+###### Sea buckthorn
+
+- type: entity
+  name: sea buckthorn
+  parent: FoodProduceBase
+  id: Z14StalkerFoodOblepixa
+  categories: [ Zona14 ]
+  description: Mysterious sea buckthorn berries are hiding in the dense thickets of the abandoned forests of the Zone where nature has again prevailed over the ruins of civilization. These bright orange fruits, resembling bright beads, attract attention with their unusual shape and rich color. However, do not be deceived by their beauty sea buckthorn in the Zone is endowed with strange properties.
+  suffix: Z14
+  components:
+  - type: FlavorProfile
+    flavors:
+      - berry
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 11
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: Vitamin
+          Quantity: 4
+  - type: Sprite
+    sprite: _Stalker/Objects/Counsumable/Food/Plants.rsi
+    state: StalkerFoodOblepixa
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: Z14StalkerOilOblepixa
+        Quantity: 10
+  - type: Tag
+    tags:
+    - Fruit
+  - type: Craftable
+
+- type: ore
+  id: Z14StalkerOreBerries8
+  oreEntity: Z14StalkerFoodOblepixa
+
+- type: entity
+  name: shrub with berries
+  parent: BaseStructure
+  id: Z14StalkerBarriesStructureOblepixa
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: To be honest, I've seen more pleasant shrubs. It's usually a prickly, gnarled mess, covered in gnarled branches, as if the tree has arthritis. The leaves are small, withered, with red veins — a sign of radiation damage. But the most important thing is the berries. At first glance, these berries are quite appetizing. Large and juicy. But don't rush to eat them, rookie! These aren't raspberries from Grandma's garden.
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Counsumable/Food/Plants.rsi
+      state: plant-01
+      scale: 1.1, 1.1
+    - type: Transform
+      anchored: true
+    - type: Physics
+      bodyType: Static
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeCircle
+            radius: 0.2
+    - type: InteractionOutline
+    - type: OreVein
+      oreChance: 1.0
+      currentOre: Z14StalkerOreBerries8
+    - type: Gatherable
+      toolWhitelist:
+        components:
+          - Hands
+    - type: Damageable
+      damageContainer: Inorganic
+      damageModifierSet: Wood
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 150
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+
+###### Lingonberry
+
+- type: entity
+  name: lingonberries
+  parent: FoodProduceBase
+  id: Z14StalkerFoodBrusnika
+  categories: [ Zona14 ]
+  description: In the gloomy and mysterious expanses of the Zone, among the moss and dead trees, a tiny lingonberry berry lurks. Unlike its bright counterparts, this berry has a darkened, almost black skin, which makes it almost invisible against the background of wriggling roots and a leafy underlying layer.
+  suffix: Z14
+  components:
+  - type: FlavorProfile
+    flavors:
+      - berry
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 11
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: Vitamin
+          Quantity: 4
+  - type: Sprite
+    sprite: _Stalker/Objects/Counsumable/Food/Plants.rsi
+    state: StalkerFoodBrusnika
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: Z14StalkerJuiceBrusnika
+        Quantity: 10
+  - type: Tag
+    tags:
+    - Fruit
+  - type: Craftable
+
+- type: ore
+  id: Z14StalkerOreBerries9
+  oreEntity: Z14StalkerFoodBrusnika
+
+- type: entity
+  name: shrub with berries
+  parent: BaseStructure
+  id: Z14StalkerBarriesStructureBrusnika
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: To be honest, I've seen more pleasant shrubs. It's usually a prickly, gnarled mess, covered in gnarled branches, as if the tree has arthritis. The leaves are small, withered, with red veins — a sign of radiation damage. But the most important thing is the berries. At first glance, these berries are quite appetizing. Large and juicy. But don't rush to eat them, rookie! These aren't raspberries from Grandma's garden.
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Counsumable/Food/Plants.rsi
+      state: plant-01
+      scale: 1.1, 1.1
+    - type: Transform
+      anchored: true
+    - type: Physics
+      bodyType: Static
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeCircle
+            radius: 0.2
+    - type: InteractionOutline
+    - type: OreVein
+      oreChance: 1.0
+      currentOre: Z14StalkerOreBerries9
+    - type: Gatherable
+      toolWhitelist:
+        components:
+          - Hands
+    - type: Damageable
+      damageContainer: Inorganic
+      damageModifierSet: Wood
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 150
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+
+###### Blueberry
+
+- type: entity
+  name: blueberries
+  parent: FoodProduceBase
+  id: Z14StalkerFoodGolubika
+  categories: [ Zona14 ]
+  description: Berries are the main thing. Large, round, the color of the night sky, with a slight bluish coating. It was as if the deepest radiance of the Zone was frozen in them. From a distance, they look like jewels and beckon to you. And for good reason, I'll tell you.
+  suffix: Z14
+  components:
+  - type: FlavorProfile
+    flavors:
+      - berry
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 11
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: Vitamin
+          Quantity: 4
+  - type: Sprite
+    sprite: _Stalker/Objects/Counsumable/Food/Plants.rsi
+    state: StalkerFoodGolubika
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: Z14StalkerJuiceGolubika
+        Quantity: 10
+  - type: Tag
+    tags:
+    - Fruit
+  - type: Craftable
+
+- type: ore
+  id: Z14StalkerOreBerries10
+  oreEntity: Z14StalkerFoodGolubika
+
+- type: entity
+  name: shrub with berries
+  parent: BaseStructure
+  id: Z14StalkerBarriesStructureGolubika
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: To be honest, I've seen more pleasant shrubs. It's usually a prickly, gnarled mess, covered in gnarled branches, as if the tree has arthritis. The leaves are small, withered, with red veins — a sign of radiation damage. But the most important thing is the berries. At first glance, these berries are quite appetizing. Large and juicy. But don't rush to eat them, rookie! These aren't raspberries from Grandma's garden.
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Counsumable/Food/Plants.rsi
+      state: plant-01
+      scale: 1.1, 1.1
+    - type: Transform
+      anchored: true
+    - type: Physics
+      bodyType: Static
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeCircle
+            radius: 0.2
+    - type: InteractionOutline
+    - type: OreVein
+      oreChance: 1.0
+      currentOre: Z14StalkerOreBerries10
+    - type: Gatherable
+      toolWhitelist:
+        components:
+          - Hands
+    - type: Damageable
+      damageContainer: Inorganic
+      damageModifierSet: Wood
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 150
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+
+######## Grape
+
+- type: entity
+  name: grapes
+  parent: FoodProduceBase
+  id: Z14StalkerFoodVinograd
+  categories: [ Zona14 ]
+  description: They look like ordinary grapes, well, almost. The vine is gnarled, and the leaves are faded, as if the sun had burned them out. The clusters, however, are noticeable — large, juicy berries from bright green to dark purple. But don't rush to rejoice — the "Drunken Bush" is known for its surprise.
+  suffix: Z14
+  components:
+  - type: FlavorProfile
+    flavors:
+      - berry
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 11
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: Vitamin
+          Quantity: 4
+  - type: Sprite
+    sprite: _Stalker/Objects/Counsumable/Food/Plants.rsi
+    state: StalkerFoodVinograd
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: Z14StalkerJuiceVinograd
+        Quantity: 10
+  - type: Tag
+    tags:
+    - Fruit
+  - type: Craftable
+
+- type: ore
+  id: Z14StalkerOreBerries11
+  oreEntity: Z14StalkerFoodVinograd
+
+- type: entity
+  name: shrub with berries
+  parent: BaseStructure
+  id: Z14StalkerBarriesStructureVinograd
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: To be honest, I've seen more pleasant shrubs. It's usually a prickly, gnarled mess, covered in gnarled branches, as if the tree has arthritis. The leaves are small, withered, with red veins — a sign of radiation damage. But the most important thing is the berries. At first glance, these berries are quite appetizing. Large and juicy. But don't rush to eat them, rookie! These aren't raspberries from Grandma's garden.
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Counsumable/Food/Plants.rsi
+      state: plant-01
+      scale: 1.1, 1.1
+    - type: Transform
+      anchored: true
+    - type: Physics
+      bodyType: Static
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeCircle
+            radius: 0.2
+    - type: InteractionOutline
+    - type: OreVein
+      oreChance: 1.0
+      currentOre: Z14StalkerOreBerries11
+    - type: Gatherable
+      toolWhitelist:
+        components:
+          - Hands
+    - type: Damageable
+      damageContainer: Inorganic
+      damageModifierSet: Wood
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 150
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+
+####### Cherry
+
+- type: entity
+  name: cherrys
+  parent: FoodProduceBase
+  id: Z14StalkerFoodVishna
+  categories: [ Zona14 ]
+  description: The berries are large, juicy, dark maroon, almost black in color. From a distance, they look like drops of blood hanging from the branches. They look delicious, but don't rush to reach for them. The zone does not forgive mistakes.
+  suffix: Z14
+  components:
+  - type: FlavorProfile
+    flavors:
+      - berry
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 11
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: Vitamin
+          Quantity: 4
+  - type: Sprite
+    sprite: _Stalker/Objects/Counsumable/Food/Plants.rsi
+    state: StalkerFoodVishna
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: Z14StalkerJuiceVishna
+        Quantity: 10
+  - type: Tag
+    tags:
+    - Fruit
+  - type: Craftable
+
+- type: ore
+  id: Z14StalkerOreBerries12
+  oreEntity: Z14StalkerFoodVishna
+
+- type: entity
+  name: shrub with berries
+  parent: BaseStructure
+  id: Z14StalkerBarriesStructureVishna
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: To be honest, I've seen more pleasant shrubs. It's usually a prickly, gnarled mess, covered in gnarled branches, as if the tree has arthritis. The leaves are small, withered, with red veins — a sign of radiation damage. But the most important thing is the berries. At first glance, these berries are quite appetizing. Large and juicy. But don't rush to eat them, rookie! These aren't raspberries from Grandma's garden.
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Counsumable/Food/Plants.rsi
+      state: plant-01
+      scale: 1.1, 1.1
+    - type: Transform
+      anchored: true
+    - type: Physics
+      bodyType: Static
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeCircle
+            radius: 0.2
+    - type: InteractionOutline
+    - type: OreVein
+      oreChance: 1.0
+      currentOre: Z14StalkerOreBerries12
+    - type: Gatherable
+      toolWhitelist:
+        components:
+          - Hands
+    - type: Damageable
+      damageContainer: Inorganic
+      damageModifierSet: Wood
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 150
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+
+######## Blackberry
+
+- type: entity
+  name: blackberry
+  parent: FoodProduceBase
+  id: Z14StalkerFoodEjevika
+  categories: [ Zona14 ]
+  description: The berries are small, like beads, but black, glossy, like varnish. They look tempting, but, as always in the Zone, it's not that simple. If you're lucky, you can get a good portion, but if you're not…
+  suffix: Z14
+  components:
+  - type: FlavorProfile
+    flavors:
+      - berry
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 11
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: Vitamin
+          Quantity: 4
+  - type: Sprite
+    sprite: _Stalker/Objects/Counsumable/Food/Plants.rsi
+    state: StalkerFoodEjevika
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: Z14StalkerJuiceEjevika
+        Quantity: 10
+  - type: Tag
+    tags:
+    - Fruit
+  - type: Craftable
+
+- type: ore
+  id: Z14StalkerOreBerries13
+  oreEntity: Z14StalkerFoodEjevika
+
+- type: entity
+  name: shrub with berries
+  parent: BaseStructure
+  id: Z14StalkerBarriesStructureEjevika
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: To be honest, I've seen more pleasant shrubs. It's usually a prickly, gnarled mess, covered in gnarled branches, as if the tree has arthritis. The leaves are small, withered, with red veins — a sign of radiation damage. But the most important thing is the berries. At first glance, these berries are quite appetizing. Large and juicy. But don't rush to eat them, rookie! These aren't raspberries from Grandma's garden.
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Counsumable/Food/Plants.rsi
+      state: plant-01
+      scale: 1.1, 1.1
+    - type: Transform
+      anchored: true
+    - type: Physics
+      bodyType: Static
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeCircle
+            radius: 0.2
+    - type: InteractionOutline
+    - type: OreVein
+      oreChance: 1.0
+      currentOre: Z14StalkerOreBerries13
+    - type: Gatherable
+      toolWhitelist:
+        components:
+          - Hands
+    - type: Damageable
+      damageContainer: Inorganic
+      damageModifierSet: Wood
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 150
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+
+##### Strawberry
+
+- type: entity
+  name: strawberries
+  parent: FoodProduceBase
+  id: Z14StalkerFoodKlubnika
+  categories: [ Zona14 ]
+  description: Like a precious stone, scattered on the dead grass. The berries are small, but bright red, glossy, as if varnished. The smell is intoxicating, sweet as nectar. It's tempting to pick and eat. But don't rush! In the Zone, even the most beautiful things can be deadly.
+  suffix: Z14
+  components:
+  - type: FlavorProfile
+    flavors:
+      - berry
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 11
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: Vitamin
+          Quantity: 4
+  - type: Sprite
+    sprite: _Stalker/Objects/Counsumable/Food/Plants.rsi
+    state: StalkerFoodKlubnika
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: Z14StalkerJuiceKlubnika
+        Quantity: 10
+  - type: Tag
+    tags:
+    - Fruit
+  - type: Craftable
+
+- type: ore
+  id: Z14StalkerOreBerries14
+  oreEntity: Z14StalkerFoodKlubnika
+
+- type: entity
+  name: shrub with berries
+  parent: BaseStructure
+  id: Z14StalkerBarriesStructureKlubnika
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: To be honest, I've seen more pleasant shrubs. It's usually a prickly, gnarled mess, covered in gnarled branches, as if the tree has arthritis. The leaves are small, withered, with red veins — a sign of radiation damage. But the most important thing is the berries. At first glance, these berries are quite appetizing. Large and juicy. But don't rush to eat them, rookie! These aren't raspberries from Grandma's garden.
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Counsumable/Food/Plants.rsi
+      state: plant-01
+      scale: 1.1, 1.1
+    - type: Transform
+      anchored: true
+    - type: Physics
+      bodyType: Static
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeCircle
+            radius: 0.2
+    - type: InteractionOutline
+    - type: OreVein
+      oreChance: 1.0
+      currentOre: Z14StalkerOreBerries14
+    - type: Gatherable
+      toolWhitelist:
+        components:
+          - Hands
+    - type: Damageable
+      damageContainer: Inorganic
+      damageModifierSet: Wood
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 150
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+
+##### Currant
+
+- type: entity
+  name: currants
+  parent: FoodProduceBase
+  id: Z14StalkerFoodSmorodina
+  categories: [ Zona14 ]
+  description: Currant and in the currant Zone, would you say? Not quite. This one is similar to the usual one, but it has its own highlight. The bushes are usually low-growing, sprawling, with a pungent tart smell. The leaves are dark green, rough to the touch. The berries, depending on the type, are black or red, strung on a brush like beads. And you need to be careful with these beads.
+  suffix: Z14
+  components:
+  - type: FlavorProfile
+    flavors:
+      - berry
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 11
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: Vitamin
+          Quantity: 4
+  - type: Sprite
+    sprite: _Stalker/Objects/Counsumable/Food/Plants.rsi
+    state: StalkerFoodSmorodina
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: Z14StalkerJuiceSmorodini
+        Quantity: 10
+  - type: Tag
+    tags:
+    - Fruit
+  - type: Craftable
+
+- type: ore
+  id: Z14StalkerOreBerries15
+  oreEntity: Z14StalkerFoodSmorodina
+
+- type: entity
+  name: shrub with berries
+  parent: BaseStructure
+  id: Z14StalkerBarriesStructureSmorodina
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: To be honest, I've seen more pleasant shrubs. It's usually a prickly, gnarled mess, covered in gnarled branches, as if the tree has arthritis. The leaves are small, withered, with red veins — a sign of radiation damage. But the most important thing is the berries. At first glance, these berries are quite appetizing. Large and juicy. But don't rush to eat them, rookie! These aren't raspberries from Grandma's garden.
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Counsumable/Food/Plants.rsi
+      state: plant-01
+      scale: 1.1, 1.1
+    - type: Transform
+      anchored: true
+    - type: Physics
+      bodyType: Static
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeCircle
+            radius: 0.2
+    - type: InteractionOutline
+    - type: OreVein
+      oreChance: 1.0
+      currentOre: Z14StalkerOreBerries15
+    - type: Gatherable
+      toolWhitelist:
+        components:
+          - Hands
+    - type: Damageable
+      damageContainer: Inorganic
+      damageModifierSet: Wood
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 150
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+
+##### Sweet cherry
+
+- type: entity
+  name: wild cherries
+  parent: FoodProduceBase
+  id: Z14StalkerFoodChereshna
+  categories: [ Zona14 ]
+  description: It's a piece of a former life, lost in the radioactive chaos. The berries are large, fleshy, from light pink to maroon, almost black. They look like a reminder of a happy past that cannot be returned. But be careful, nostalgia can be deadly.
+  suffix: Z14
+  components:
+  - type: FlavorProfile
+    flavors:
+      - berry
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 11
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: Vitamin
+          Quantity: 4
+  - type: Sprite
+    sprite: _Stalker/Objects/Counsumable/Food/Plants.rsi
+    state: StalkerFoodChereshna
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: Z14StalkerJuiceChereshna
+        Quantity: 10
+  - type: Tag
+    tags:
+    - Fruit
+  - type: Craftable
+
+- type: ore
+  id: Z14StalkerOreBerries16
+  oreEntity: Z14StalkerFoodChereshna
+
+- type: entity
+  name: shrub with berries
+  parent: BaseStructure
+  id: Z14StalkerBarriesStructureChereshna
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: To be honest, I've seen more pleasant shrubs. It's usually a prickly, gnarled mess, covered in gnarled branches, as if the tree has arthritis. The leaves are small, withered, with red veins — a sign of radiation damage. But the most important thing is the berries. At first glance, these berries are quite appetizing. Large and juicy. But don't rush to eat them, rookie! These aren't raspberries from Grandma's garden.
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Counsumable/Food/Plants.rsi
+      state: plant-01
+      scale: 1.1, 1.1
+    - type: Transform
+      anchored: true
+    - type: Physics
+      bodyType: Static
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeCircle
+            radius: 0.2
+    - type: InteractionOutline
+    - type: OreVein
+      oreChance: 1.0
+      currentOre: Z14StalkerOreBerries16
+    - type: Gatherable
+      toolWhitelist:
+        components:
+          - Hands
+    - type: Damageable
+      damageContainer: Inorganic
+      damageModifierSet: Wood
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 150
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+
+###### Daphne
+
+- type: entity
+  name: wolfberries
+  parent: FoodProduceBase
+  id: Z14StalkerFoodVolk
+  categories: [ Zona14 ]
+  description: The consequences can be terrible. Nausea, vomiting, severe abdominal pain, cramps, burns of the mucous membrane of the mouth and throat, internal bleeding. In severe cases, kidney failure, paralysis, and death.
+  suffix: Z14
+  components:
+  - type: FlavorProfile
+    flavors:
+      - berry
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 11
+        reagents:
+        - ReagentId: Z14StalkerToxin1
+          Quantity: 10
+  - type: Sprite
+    sprite: _Stalker/Objects/Counsumable/Food/Plants.rsi
+    state: StalkerFoodVolk
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: Z14StalkerToxin1
+        Quantity: 10
+  - type: Tag
+    tags:
+    - Fruit
+  - type: Craftable
+
+- type: ore
+  id: Z14StalkerOreBerries17
+  oreEntity: Z14StalkerFoodVolk
+
+- type: entity
+  name: shrub with berries
+  parent: BaseStructure
+  id: Z14StalkerBarriesStructureVolk
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: To be honest, I've seen more pleasant shrubs. It's usually a prickly, gnarled mess, covered in gnarled branches, as if the tree has arthritis. The leaves are small, withered, with red veins — a sign of radiation damage. But the most important thing is the berries. At first glance, these berries are quite appetizing. Large and juicy. But don't rush to eat them, rookie! These aren't raspberries from Grandma's garden.
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Counsumable/Food/Plants.rsi
+      state: plant-01
+      scale: 1.1, 1.1
+    - type: Transform
+      anchored: true
+    - type: Physics
+      bodyType: Static
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeCircle
+            radius: 0.2
+    - type: InteractionOutline
+    - type: OreVein
+      oreChance: 1.0
+      currentOre: Z14StalkerOreBerries17
+    - type: Gatherable
+      toolWhitelist:
+        components:
+          - Hands
+    - type: Damageable
+      damageContainer: Inorganic
+      damageModifierSet: Wood
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 150
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+
+####### Baneberry
+
+- type: entity
+  name: voronets
+  parent: FoodProduceBase
+  id: Z14StalkerFoodVoronec
+  categories: [ Zona14 ]
+  description: The living embodiment of a nightmare lurking in the shadow of the Zone. Meeting Voronets is a bad sign, stalker. Stay away if life is precious. Don't touch, don't taste, don't even breathe in his direction.
+  suffix: Z14
+  components:
+  - type: FlavorProfile
+    flavors:
+      - grass
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 11
+        reagents:
+        - ReagentId: Z14StalkerToxin2
+          Quantity: 10
+  - type: Sprite
+    sprite: _Stalker/Objects/Counsumable/Food/Plants.rsi
+    state: StalkerFoodVoronec
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: Z14StalkerToxin2
+        Quantity: 10
+  - type: Tag
+    tags:
+    - Fruit
+  - type: Craftable
+
+- type: ore
+  id: Z14StalkerOreBerries18
+  oreEntity: Z14StalkerFoodVoronec
+
+- type: entity
+  name: grass
+  parent: BaseStructure
+  id: Z14StalkerBarriesStructureVoronec
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: The area is inhospitable, and the grass here grows to match it — tough, prickly, surviving against all odds. But even among this dead meat, you can find useful plants if you know what to look for. Remember, stalker, knowledge is your best defense.
+  components:
+    - type: Sprite
+      sprite: _Stalker/Decals/flor.rsi
+      state: branch2
+      scale: 1.1, 1.1
+    - type: Transform
+      anchored: true
+    - type: Physics
+      bodyType: Static
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeCircle
+            radius: 0.2
+    - type: InteractionOutline
+    - type: OreVein
+      oreChance: 1.0
+      currentOre: Z14StalkerOreBerries18
+    - type: Gatherable
+      toolWhitelist:
+        components:
+          - Hands
+    - type: Damageable
+      damageContainer: Inorganic
+      damageModifierSet: Wood
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 150
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+
+###### Lily of the valley
+
+- type: entity
+  name: lily of the valley
+  parent: FoodProduceBase
+  id: Z14StalkerFoodLandish
+  categories: [ Zona14 ]
+  description: Don't be fooled by the gentle look, stalker. In the Zone, even beauty can be deadly. Lily of the Valley is a vivid example of this. Delicate, graceful, with snow-white bells, it seems to remind of a carefree life that was left far behind. But look more closely, and you will see the shadow of death hidden behind this beauty.
+  suffix: Z14
+  components:
+  - type: FlavorProfile
+    flavors:
+      - grass
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 11
+        reagents:
+        - ReagentId: Z14StalkerToxin3
+          Quantity: 10
+  - type: Sprite
+    sprite: _Stalker/Objects/Counsumable/Food/Plants.rsi
+    state: StalkerFoodLandish
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: Z14StalkerToxin3
+        Quantity: 10
+  - type: Tag
+    tags:
+    - Fruit
+  - type: Craftable
+
+- type: ore
+  id: Z14StalkerOreBerries19
+  oreEntity: Z14StalkerFoodLandish
+
+- type: entity
+  name: grass
+  parent: BaseStructure
+  id: Z14StalkerBarriesStructureLandish
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: The area is inhospitable, and the grass here grows to match it — tough, prickly, surviving against all odds. But even among this dead meat, you can find useful plants if you know what to look for. Remember, stalker, knowledge is your best defense.
+  components:
+    - type: Sprite
+      sprite: _Stalker/Decals/flor.rsi
+      state: branch2
+      scale: 1.1, 1.1
+    - type: Transform
+      anchored: true
+    - type: Physics
+      bodyType: Static
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeCircle
+            radius: 0.2
+    - type: InteractionOutline
+    - type: OreVein
+      oreChance: 1.0
+      currentOre: Z14StalkerOreBerries19
+    - type: Gatherable
+      toolWhitelist:
+        components:
+          - Hands
+    - type: Damageable
+      damageContainer: Inorganic
+      damageModifierSet: Wood
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 150
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+
+####### Eyebright
+
+- type: entity
+  name: eyebright officinalis
+  parent: FoodProduceBase
+  id: Z14StalkerFoodOchanka
+  categories: [ Zona14 ]
+  description: Ochanka officinalis is a useful herb that can help you in the conditions of the Zone. But remember that this is not a panacea for all diseases. Be careful, and knowledge will help you survive.
+  suffix: Z14
+  components:
+  - type: FlavorProfile
+    flavors:
+      - grass
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 11
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: Vitamin
+          Quantity: 4
+  - type: Sprite
+    sprite: _Stalker/Objects/Counsumable/Food/Plants.rsi
+    state: StalkerFoodOchanka
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: Z14StalkerOilGrass1
+        Quantity: 10
+  - type: Tag
+    tags:
+    - Fruit
+  - type: Craftable
+
+- type: ore
+  id: Z14StalkerOreBerries20
+  oreEntity: Z14StalkerFoodOchanka
+
+- type: entity
+  name: grass
+  parent: BaseStructure
+  id: Z14StalkerBarriesStructureOchanka
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: The area is inhospitable, and the grass here grows to match it — tough, prickly, surviving against all odds. But even among this dead meat, you can find useful plants if you know what to look for. Remember, stalker, knowledge is your best defense.
+  components:
+    - type: Sprite
+      sprite: _Stalker/Decals/flor.rsi
+      state: branch2
+      scale: 1.1, 1.1
+    - type: Transform
+      anchored: true
+    - type: Physics
+      bodyType: Static
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeCircle
+            radius: 0.2
+    - type: InteractionOutline
+    - type: OreVein
+      oreChance: 1.0
+      currentOre: Z14StalkerOreBerries20
+    - type: Gatherable
+      toolWhitelist:
+        components:
+          - Hands
+    - type: Damageable
+      damageContainer: Inorganic
+      damageModifierSet: Wood
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 150
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+
+##### White cinquefoil
+
+- type: entity
+  name: White cinquefoil
+  parent: FoodProduceBase
+  id: Z14StalkerFoodlapchatka
+  categories: [ Zona14 ]
+  description: The area is inhospitable, and the grass here grows to match it — tough, prickly, surviving against all odds. But even among this dead meat, you can find useful plants if you know what to look for. Remember, stalker, knowledge is your best defense.
+  suffix: Z14
+  components:
+  - type: FlavorProfile
+    flavors:
+      - grass
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 11
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: Vitamin
+          Quantity: 4
+  - type: Sprite
+    sprite: _Stalker/Objects/Counsumable/Food/Plants.rsi
+    state: StalkerFoodlapchatka
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: Z14StalkerOilGrass2
+        Quantity: 10
+  - type: Tag
+    tags:
+    - Fruit
+  - type: Craftable
+
+- type: ore
+  id: Z14StalkerOreBerries21
+  oreEntity: Z14StalkerFoodlapchatka
+
+- type: entity
+  name: grass
+  parent: BaseStructure
+  id: Z14StalkerBarriesStructureLapchatka
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: The area is inhospitable, and the grass here grows to match it — tough, prickly, surviving against all odds. But even among this dead meat, you can find useful plants if you know what to look for. Remember, stalker, knowledge is your best defense.
+  components:
+    - type: Sprite
+      sprite: _Stalker/Decals/flor.rsi
+      state: branch2
+      scale: 1.1, 1.1
+    - type: Transform
+      anchored: true
+    - type: Physics
+      bodyType: Static
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeCircle
+            radius: 0.2
+    - type: InteractionOutline
+    - type: OreVein
+      oreChance: 1.0
+      currentOre: Z14StalkerOreBerries21
+    - type: Gatherable
+      toolWhitelist:
+        components:
+          - Hands
+    - type: Damageable
+      damageContainer: Inorganic
+      damageModifierSet: Wood
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 150
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+
+##### Sweet flag
+
+- type: entity
+  name: calamus
+  parent: FoodProduceBase
+  id: Z14StalkerFoodAir
+  categories: [ Zona14 ]
+  description: In the Zone, any medicine is worth its weight in gold, and even if it grows right under your nose... ordinary calamus, known to stalkers as the root of health, is just such a treasure. This modest-looking plant has amazing properties.
+  suffix: Z14
+  components:
+  - type: FlavorProfile
+    flavors:
+      - grass
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 11
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: Vitamin
+          Quantity: 4
+  - type: Sprite
+    sprite: _Stalker/Objects/Counsumable/Food/Plants.rsi
+    state: StalkerFoodAir
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: Z14StalkerOilGrass3
+        Quantity: 10
+  - type: Tag
+    tags:
+    - Fruit
+  - type: Craftable
+
+- type: ore
+  id: Z14StalkerOreBerries22
+  oreEntity: Z14StalkerFoodAir
+
+- type: entity
+  name: grass
+  parent: BaseStructure
+  id: Z14StalkerBarriesStructureAir
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: The area is inhospitable, and the grass here grows to match it — tough, prickly, surviving against all odds. But even among this dead meat, you can find useful plants if you know what to look for. Remember, stalker, knowledge is your best defense.
+  components:
+    - type: Sprite
+      sprite: _Stalker/Decals/flor.rsi
+      state: branch2
+      scale: 1.1, 1.1
+    - type: Transform
+      anchored: true
+    - type: Physics
+      bodyType: Static
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeCircle
+            radius: 0.2
+    - type: InteractionOutline
+    - type: OreVein
+      oreChance: 1.0
+      currentOre: Z14StalkerOreBerries22
+    - type: Gatherable
+      toolWhitelist:
+        components:
+          - Hands
+    - type: Damageable
+      damageContainer: Inorganic
+      damageModifierSet: Wood
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 150
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+
+######## Small-leaved linden
+
+- type: entity
+  name: heart-shaped linden
+  parent: FoodProduceBase
+  id: Z14StalkerFoodLipa
+  categories: [ Zona14 ]
+  description: Among the ugly mutants and sinister anomalies of the Zone, seeing a blooming lime tree is like meeting a guardian angel. The heart—shaped linden is not just a tree, it is a symbol of hope and peace in this cursed place.
+  suffix: Z14
+  components:
+  - type: FlavorProfile
+    flavors:
+      - grass
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 11
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: Vitamin
+          Quantity: 4
+  - type: Sprite
+    sprite: _Stalker/Objects/Counsumable/Food/Plants.rsi
+    state: StalkerFoodLipa
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: Z14StalkerOilGrass4
+        Quantity: 10
+  - type: Tag
+    tags:
+    - Fruit
+  - type: Craftable
+
+- type: ore
+  id: Z14StalkerOreBerries23
+  oreEntity: Z14StalkerFoodLipa
+
+- type: entity
+  name: grass
+  parent: BaseStructure
+  id: Z14StalkerBarriesStructureLipa
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: The area is inhospitable, and the grass here grows to match it — tough, prickly, surviving against all odds. But even among this dead meat, you can find useful plants if you know what to look for. Remember, stalker, knowledge is your best defense.
+  components:
+    - type: Sprite
+      sprite: _Stalker/Decals/flor.rsi
+      state: branch2
+      scale: 1.1, 1.1
+    - type: Transform
+      anchored: true
+    - type: Physics
+      bodyType: Static
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeCircle
+            radius: 0.2
+    - type: InteractionOutline
+    - type: OreVein
+      oreChance: 1.0
+      currentOre: Z14StalkerOreBerries23
+    - type: Gatherable
+      toolWhitelist:
+        components:
+          - Hands
+    - type: Damageable
+      damageContainer: Inorganic
+      damageModifierSet: Wood
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 150
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+
+##### Spotted orchid
+
+- type: entity
+  name: spotted orchid
+  parent: FoodProduceBase
+  id: Z14StalkerFoodYatrishnik
+  categories: [ Zona14 ]
+  description: Only the strong survive in the Zone. A rare plant that can give you this power. The Spotted Hawthorn is not conspicuous, but experienced stalkers know that it harbors powerful potential.
+  suffix: Z14
+  components:
+  - type: FlavorProfile
+    flavors:
+      - grass
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 11
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: Vitamin
+          Quantity: 4
+  - type: Sprite
+    sprite: _Stalker/Objects/Counsumable/Food/Plants.rsi
+    state: StalkerFoodYatrishnik
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: Z14StalkerOilGrass5
+        Quantity: 10
+  - type: Tag
+    tags:
+    - Fruit
+  - type: Craftable
+
+- type: ore
+  id: Z14StalkerOreBerries24
+  oreEntity: Z14StalkerFoodYatrishnik
+
+- type: entity
+  name: grass
+  parent: BaseStructure
+  id: Z14StalkerBarriesStructureYatrishnik
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: The area is inhospitable, and the grass here grows to match it — tough, prickly, surviving against all odds. But even among this dead meat, you can find useful plants if you know what to look for. Remember, stalker, knowledge is your best defense.
+  components:
+    - type: Sprite
+      sprite: _Stalker/Decals/flor.rsi
+      state: branch2
+      scale: 1.1, 1.1
+    - type: Transform
+      anchored: true
+    - type: Physics
+      bodyType: Static
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeCircle
+            radius: 0.2
+    - type: InteractionOutline
+    - type: OreVein
+      oreChance: 1.0
+      currentOre: Z14StalkerOreBerries24
+    - type: Gatherable
+      toolWhitelist:
+        components:
+          - Hands
+    - type: Damageable
+      damageContainer: Inorganic
+      damageModifierSet: Wood
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 150
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+
+############### Dried berries
+
+- type: entity
+  name: dried barberry
+  parent: Z14StalkerFoodBarbaris
+  id: Z14StalkerFoodBarbarisBonfire
+  categories: [ Zona14 ]
+  description: This is a cherished fruit that can be found in abandoned gardens and abandoned areas of the Zone. Its bright red berries contrast with the dull palette of dead forests and crumbling buildings, attracting the attention of stalkers sophisticated in cooking and alchemy. Despite its beauty, barberry is an ambiguous symbol its sweet taste is deceptive, and only experienced stalkers are aware of its possible properties.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Craft/produce.rsi
+    state: StalkerBonfireBarbaris
+  - type: Craftable
+
+- type: entity
+  name: dried goji berries
+  parent: Z14StalkerFoodGoji
+  id: Z14StalkerFoodGojiBonfire
+  categories: [ Zona14 ]
+  description: This is a cherished fruit that can be found in abandoned gardens and abandoned areas of the Zone. Its bright red berries contrast with the dull palette of dead forests and crumbling buildings, attracting the attention of stalkers sophisticated in cooking and alchemy. Despite its beauty, barberry is an ambiguous symbol its sweet taste is deceptive, and only experienced stalkers are aware of its possible properties.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Craft/produce.rsi
+    state: StalkerBonfireGoji
+  - type: Craftable
+
+- type: entity
+  name: dried gooseberry
+  parent: Z14StalkerFoodKrijovnik
+  id: Z14StalkerFoodKrijovnikBonfire
+  categories: [ Zona14 ]
+  description: This is a cherished fruit that can be found in abandoned gardens and abandoned areas of the Zone. Its bright red berries contrast with the dull palette of dead forests and crumbling buildings, attracting the attention of stalkers sophisticated in cooking and alchemy. Despite its beauty, barberry is an ambiguous symbol its sweet taste is deceptive, and only experienced stalkers are aware of its possible properties.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Craft/produce.rsi
+    state: StalkerBonfireKrijovnik
+  - type: Craftable
+
+- type: entity
+  name: dried raspberry
+  parent: Z14StalkerFoodMalina
+  id: Z14StalkerFoodMalinaBonfire
+  categories: [ Zona14 ]
+  description: This is a cherished fruit that can be found in abandoned gardens and abandoned areas of the Zone. Its bright red berries contrast with the dull palette of dead forests and crumbling buildings, attracting the attention of stalkers sophisticated in cooking and alchemy. Despite its beauty, barberry is an ambiguous symbol its sweet taste is deceptive, and only experienced stalkers are aware of its possible properties.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Craft/produce.rsi
+    state: StalkerBonfireMalina
+  - type: Craftable
+
+- type: entity
+  name: dried cherry
+  parent: Z14StalkerFoodVishna
+  id: Z14StalkerFoodVishnaBonfire
+  categories: [ Zona14 ]
+  description: This is a cherished fruit that can be found in abandoned gardens and abandoned areas of the Zone. Its bright red berries contrast with the dull palette of dead forests and crumbling buildings, attracting the attention of stalkers sophisticated in cooking and alchemy. Despite its beauty, barberry is an ambiguous symbol its sweet taste is deceptive, and only experienced stalkers are aware of its possible properties.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Craft/produce.rsi
+    state: StalkerBonfireVishna
+  - type: Craftable
+
+############### Pulp
+
+- type: entity
+  name: barberry pulp
+  parent: Z14StalkerFoodBarbaris
+  id: Z14StalkerFoodBarbarisPulb
+  categories: [ Zona14 ]
+  description: This is a cherished fruit that can be found in abandoned gardens and abandoned areas of the Zone. Its bright red berries contrast with the dull palette of dead forests and crumbling buildings, attracting the attention of stalkers sophisticated in cooking and alchemy. Despite its beauty, barberry is an ambiguous symbol its sweet taste is deceptive, and only experienced stalkers are aware of its possible properties.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Craft/produce.rsi
+    state: PulpBarbaris
+  - type: Craftable
+
+- type: entity
+  name: sweet cherry pulp
+  parent: Z14StalkerFoodChereshna
+  id: Z14StalkerFoodChereshnaPulb
+  categories: [ Zona14 ]
+  description: This is a cherished fruit that can be found in abandoned gardens and abandoned areas of the Zone. Its bright red berries contrast with the dull palette of dead forests and crumbling buildings, attracting the attention of stalkers sophisticated in cooking and alchemy. Despite its beauty, barberry is an ambiguous symbol its sweet taste is deceptive, and only experienced stalkers are aware of its possible properties.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Craft/produce.rsi
+    state: PulpChereshnyas
+  - type: Craftable
+
+- type: entity
+  name: blackberry pulp
+  parent: Z14StalkerFoodEjevika
+  id: Z14StalkerFoodEjevikaPulb
+  categories: [ Zona14 ]
+  description: This is a cherished fruit that can be found in abandoned gardens and abandoned areas of the Zone. Its bright red berries contrast with the dull palette of dead forests and crumbling buildings, attracting the attention of stalkers sophisticated in cooking and alchemy. Despite its beauty, barberry is an ambiguous symbol its sweet taste is deceptive, and only experienced stalkers are aware of its possible properties.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Craft/produce.rsi
+    state: PulpEjevika
+  - type: Craftable
+
+- type: entity
+  name: goji pulp
+  parent: Z14StalkerFoodGoji
+  id: Z14StalkerFoodGojiPulb
+  categories: [ Zona14 ]
+  description: This is a cherished fruit that can be found in abandoned gardens and abandoned areas of the Zone. Its bright red berries contrast with the dull palette of dead forests and crumbling buildings, attracting the attention of stalkers sophisticated in cooking and alchemy. Despite its beauty, barberry is an ambiguous symbol its sweet taste is deceptive, and only experienced stalkers are aware of its possible properties.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Craft/produce.rsi
+    state: PulpGoji
+  - type: Craftable
+
+- type: entity
+  name: blueberry pulp
+  parent: Z14StalkerFoodGolubika
+  id: Z14StalkerFoodGolubikaPulb
+  categories: [ Zona14 ]
+  description: This is a cherished fruit that can be found in abandoned gardens and abandoned areas of the Zone. Its bright red berries contrast with the dull palette of dead forests and crumbling buildings, attracting the attention of stalkers sophisticated in cooking and alchemy. Despite its beauty, barberry is an ambiguous symbol its sweet taste is deceptive, and only experienced stalkers are aware of its possible properties.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Craft/produce.rsi
+    state: PulpGolubika
+  - type: Craftable
+
+- type: entity
+  name: serviceberry pulp
+  parent: Z14StalkerFoodIrga
+  id: Z14StalkerFoodIrgaPulb
+  categories: [ Zona14 ]
+  description: This is a cherished fruit that can be found in abandoned gardens and abandoned areas of the Zone. Its bright red berries contrast with the dull palette of dead forests and crumbling buildings, attracting the attention of stalkers sophisticated in cooking and alchemy. Despite its beauty, barberry is an ambiguous symbol its sweet taste is deceptive, and only experienced stalkers are aware of its possible properties.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Craft/produce.rsi
+    state: PulpIrga
+  - type: Craftable
+
+- type: entity
+  name: cranberry pulp
+  parent: Z14StalkerFoodKlukva
+  id: Z14StalkerFoodKlukvaPulb
+  categories: [ Zona14 ]
+  description: This is a cherished fruit that can be found in abandoned gardens and abandoned areas of the Zone. Its bright red berries contrast with the dull palette of dead forests and crumbling buildings, attracting the attention of stalkers sophisticated in cooking and alchemy. Despite its beauty, barberry is an ambiguous symbol its sweet taste is deceptive, and only experienced stalkers are aware of its possible properties.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Craft/produce.rsi
+    state: PulpKlukva
+  - type: Craftable
+
+- type: entity
+  name: wolfberry pulp
+  parent: Z14StalkerFoodVolk
+  id: Z14StalkerFoodVolkPulb
+  categories: [ Zona14 ]
+  description: This is a cherished fruit that can be found in abandoned gardens and abandoned areas of the Zone. Its bright red berries contrast with the dull palette of dead forests and crumbling buildings, attracting the attention of stalkers sophisticated in cooking and alchemy. Despite its beauty, barberry is an ambiguous symbol its sweet taste is deceptive, and only experienced stalkers are aware of its possible properties.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Craft/produce.rsi
+    state: PulpVolk
+  - type: Craftable
+
+- type: entity
+  name: universal salve
+  parent: Z14StalkerFoodVolk
+  id: Z14StalkerFoodUniPulb
+  categories: [ Zona14 ]
+  description: Used by stalkers to create healing bandages.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Craft/produce.rsi
+    state: PulpVolk
+  - type: Craftable
+
+############### Reagents
+#########Oils
+
+- type: reagent
+  id: Z14StalkerOilBarbaris
+  name: reagent-name-stalker-oil-barbaris
+  desc: reagent-desc-stalker-oil-common
+  physicalDesc: reagent-physical-desc-sweet
+  flavor: berry
+  color: "#660099"
+  metabolisms:
+    Medicine:
+      effects:
+      - !type:ModifyBleed
+        amount: -10
+
+- type: reagent
+  id: Z14StalkerOilGoji
+  name: reagent-name-stalker-oil-goji
+  desc: reagent-desc-stalker-oil-common
+  physicalDesc: reagent-physical-desc-sweet
+  flavor: berry
+  color: "#660099"
+  metabolisms:
+    Medicine:
+      effects:
+      - !type:HealthChange
+        damage:
+          groups:
+            Toxin: -2.5
+
+
+- type: reagent
+  id: Z14StalkerOilIrga
+  name: reagent-name-stalker-oil-irga
+  desc: reagent-desc-stalker-oil-common
+  physicalDesc: reagent-physical-desc-sweet
+  flavor: berry
+  color: "#660099"
+  metabolisms:
+    Medicine:
+      effects:
+      - !type:HealthChange
+        damage:
+          groups:
+            Toxin: -2.5
+
+- type: reagent
+  id: Z14StalkerOilKlukva
+  name: reagent-name-stalker-oil-klukva
+  desc: reagent-desc-stalker-oil-common
+  physicalDesc: reagent-physical-desc-sweet
+  flavor: berry
+  color: "#660099"
+  metabolisms:
+    Medicine:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Heat: -2.5
+
+- type: reagent
+  id: Z14StalkerOilKrijovnik
+  name: reagent-name-stalker-oil-krijovnik
+  desc: reagent-desc-stalker-oil-common
+  physicalDesc: reagent-physical-desc-sweet
+  flavor: berry
+  color: "#660099"
+  metabolisms:
+    Medicine:
+      effects:
+      - !type:HealthChange
+        damage:
+          groups:
+            Brute: -2.5
+
+- type: reagent
+  id: Z14StalkerOilMalina
+  name: reagent-name-stalker-oil-malina
+  desc: reagent-desc-stalker-oil-common
+  physicalDesc: reagent-physical-desc-sweet
+  flavor: berry
+  color: "#660099"
+  metabolisms:
+    Medicine:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Radiation: -1
+
+- type: reagent
+  id: Z14StalkerOilMoroshka
+  name: reagent-name-stalker-oil-moroshka
+  desc: reagent-desc-stalker-oil-common
+  physicalDesc: reagent-physical-desc-sweet
+  flavor: berry
+  color: "#660099"
+  metabolisms:
+    Medicine:
+      effects:
+      - !type:ModifyBleed
+        amount: -10
+
+- type: reagent
+  id: Z14StalkerOilOblepixa
+  name: reagent-name-stalker-oil-oblepixa
+  desc: reagent-desc-stalker-oil-common
+  physicalDesc: reagent-physical-desc-sweet
+  flavor: berry
+  color: "#660099"
+  metabolisms:
+    Medicine:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Heat: -2.5
+
+
+#####Herbs
+
+- type: reagent
+  id: Z14StalkerOilGrass1
+  name: reagent-name-stalker-oil-grass-1
+  desc: reagent-desc-stalker-oil-common
+  physicalDesc: flavor-complex-grass
+  flavor: grass
+  color: "#660099"
+  metabolisms:
+    Medicine:
+      effects:
+      - !type:ModifyBleed
+        amount: -10
+
+- type: reagent
+  id: Z14StalkerOilGrass2
+  name: reagent-name-stalker-oil-grass-2
+  desc: reagent-desc-stalker-oil-common
+  physicalDesc: flavor-complex-grass
+  flavor: grass
+  color: "#660099"
+  metabolisms:
+    Medicine:
+      effects:
+      - !type:HealthChange
+        damage:
+          groups:
+            Brute: -2.5
+
+- type: reagent
+  id: Z14StalkerOilGrass3
+  name: reagent-name-stalker-oil-grass-3
+  desc: reagent-desc-stalker-oil-common
+  physicalDesc: flavor-complex-grass
+  flavor: grass
+  color: "#660099"
+  metabolisms:
+    Medicine:
+      effects:
+      - !type:HealthChange
+        damage:
+          groups:
+            Brute: -2.5
+
+- type: reagent
+  id: Z14StalkerOilGrass4
+  name: reagent-name-stalker-oil-grass-4
+  desc: reagent-desc-stalker-oil-common
+  physicalDesc: flavor-complex-grass
+  flavor: grass
+  color: "#660099"
+  metabolisms:
+    Medicine:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Radiation: -1
+
+- type: reagent
+  id: Z14StalkerOilGrass5
+  name: reagent-name-stalker-oil-grass-5
+  desc: reagent-desc-stalker-oil-common
+  physicalDesc: flavor-complex-grass
+  flavor: grass
+  color: "#660099"
+  metabolisms:
+    Medicine:
+      effects:
+      - !type:HealthChange
+        damage:
+          groups:
+            Toxin: -2.5
+########Juices
+
+
+- type: reagent
+  id: Z14StalkerJuiceBrusnika
+  name: reagent-name-stalker-juice-brusnika
+  parent: BaseJuice
+  desc: reagent-desc-stalker-juice-common
+  physicalDesc: reagent-physical-desc-sweet
+  flavor: berry
+  color: "#660099"
+
+
+- type: reagent
+  id: Z14StalkerJuiceGolubika
+  name: reagent-name-stalker-juice-golubika
+  parent: BaseJuice
+  desc: reagent-desc-stalker-juice-common
+  physicalDesc: reagent-physical-desc-sweet
+  flavor: berry
+  color: "#660099"
+
+- type: reagent
+  id: Z14StalkerJuiceVinograd
+  name: reagent-name-stalker-juice-vinograd
+  parent: BaseJuice
+  desc: reagent-desc-stalker-juice-common
+  physicalDesc: reagent-physical-desc-sweet
+  flavor: berry
+  color: "#660099"
+
+- type: reagent
+  id: Z14StalkerJuiceVishna
+  name: reagent-name-stalker-juice-vishna
+  parent: BaseJuice
+  desc: reagent-desc-stalker-juice-common
+  physicalDesc: reagent-physical-desc-sweet
+  flavor: berry
+  color: "#660099"
+
+- type: reagent
+  id: Z14StalkerJuiceEjevika
+  name: reagent-name-stalker-juice-ejevika
+  parent: BaseJuice
+  desc: reagent-desc-stalker-juice-common
+  physicalDesc: reagent-physical-desc-sweet
+  flavor: berry
+  color: "#660099"
+
+- type: reagent
+  id: Z14StalkerJuiceKlubnika
+  name: reagent-name-stalker-juice-klubnika
+  parent: BaseJuice
+  desc: reagent-desc-stalker-juice-common
+  physicalDesc: reagent-physical-desc-sweet
+  flavor: berry
+  color: "#660099"
+
+- type: reagent
+  id: Z14StalkerJuiceSmorodini
+  name: reagent-name-stalker-juice-smorodini
+  parent: BaseJuice
+  desc: reagent-desc-stalker-juice-common
+  physicalDesc: reagent-physical-desc-sweet
+  flavor: berry
+  color: "#660099"
+
+- type: reagent
+  id: Z14StalkerJuiceChereshna
+  name: reagent-name-stalker-juice-chereshna
+  parent: BaseJuice
+  desc: reagent-desc-stalker-juice-common
+  physicalDesc: reagent-physical-desc-sweet
+  flavor: berry
+  color: "#660099"
+
+#####Poisons
+
+- type: reagent
+  id: Z14StalkerToxin1
+  name: reagent-name-stalker-toxin-1
+  parent: Toxin
+  desc: reagent-desc-stalker-toxin-common
+  physicalDesc: reagent-physical-desc-sweet
+  flavor: berry
+  color: "#660099"
+  metabolisms:
+    Poison:
+      metabolismRate: 0.2
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Poison: 0.3
+
+- type: reagent
+  id: Z14StalkerToxin2
+  name: reagent-name-stalker-toxin-2
+  parent: Toxin
+  desc: reagent-desc-stalker-toxin-common
+  physicalDesc: reagent-physical-desc-sweet
+  flavor: berry
+  color: "#660099"
+  metabolisms:
+    Poison:
+      metabolismRate: 0.2
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Poison: 0.3
+
+- type: reagent
+  id: Z14StalkerToxin3
+  name: reagent-name-stalker-toxin-3
+  desc: reagent-desc-stalker-toxin-common
+  physicalDesc: reagent-physical-desc-sweet
+  flavor: berry
+  color: "#660099"
+  metabolisms:
+    Poison:
+      metabolismRate: 0.2
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Poison: 0.3
+
+
+######### Spawners
+
+- type: entity
+  name: Periodic Plant Spawner
+  id: Z14StalkerTimedSpawner30
+  categories: [ Zona14 ]
+  parent: MarkerBase
+  description: Plant spawner once every 30 minutes
+  suffix: Z14
+  components:
+    - type: Sprite
+      layers:
+        - state: blue
+        - sprite: _Stalker/Objects/Counsumable/Food/Plants.rsi
+          state: plant-01
+        - state: timed
+    - type: Timer
+    - type: TimedSpawner
+      prototypes:
+      - Z14RandomSpawnerBarriesStalker
+      chance: 0.33
+      intervalSeconds: 3600
+      minimumEntitiesSpawned: 1
+      maximumEntitiesSpawned: 1
+
+- type: entity
+  name: Trash Spawner
+  id: Z14RandomSpawnerBarriesStalker
+  parent: MarkerBase
+  suffix: Z14
+  categories: [ HideSpawnMenu, Zona14 ]
+  components:
+    - type: Sprite
+      layers:
+        - state: red
+        - sprite: Objects/Consumable/Food/snacks.rsi
+          state: pistachio-trash
+    - type: RandomSpawner
+      prototypes:
+      - Z14StalkerBarriesStructureYatrishnik
+      - Z14StalkerBarriesStructureLipa
+      - Z14StalkerBarriesStructureAir
+      - Z14StalkerBarriesStructureLapchatka
+      - Z14StalkerBarriesStructureOchanka
+      - Z14StalkerBarriesStructureLandish
+      - Z14StalkerBarriesStructureVoronec
+      - Z14StalkerBarriesStructureVolk
+      - Z14StalkerBarriesStructureChereshna
+      - Z14StalkerBarriesStructureSmorodina
+      - Z14StalkerBarriesStructureKlubnika
+      - Z14StalkerBarriesStructureEjevika
+      - Z14StalkerBarriesStructureVishna
+      - Z14StalkerBarriesStructureVinograd
+      - Z14StalkerBarriesStructureGolubika
+      - Z14StalkerBarriesStructureBrusnika
+      - Z14StalkerBarriesStructureOblepixa
+      - Z14StalkerBarriesStructureMoroshka
+      - Z14StalkerBarriesStructureMalina
+      - Z14StalkerBarriesStructureKrijovnik
+      - Z14StalkerBarriesStructureKlukva
+      - Z14StalkerBarriesStructureIrga
+      - Z14StalkerBarriesStructureGoji
+      - Z14StalkerBarriesStructureBarbaris
+      chance: 1
+      offset: 5
+
+
+# - type: entity
+#   name: Periodic plant spawner
+#   id: StalkerTimedSpawnertest
+#   parent: MarkerBase
+#   suffix: Stalker, once per second
+#   components:
+#     - type: Sprite
+#       layers:
+#         - state: blue
+#         - sprite: _Stalker/Objects/Counsumable/Food/Plants.rsi
+#           state: plant-01
+#         - state: timed
+#     - type: Timer
+#     - type: TimedSpawner
+#       prototypes:
+#       - RandomSpawnerBarriesStalker
+#       chance: 0.25
+#       intervalSeconds: 3
+#       minimumEntitiesSpawned: 1
+#       maximumEntitiesSpawned: 1

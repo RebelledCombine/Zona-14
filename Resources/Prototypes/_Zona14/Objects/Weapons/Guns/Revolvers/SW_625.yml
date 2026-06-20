@@ -1,0 +1,51 @@
+- type: entity
+  parent: STBaseWeaponGameRevolver
+  id: Z14STWeaponRevolverSWModel625
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: S&W Model 625
+  description: The six-shooter classic revolver has excellent workmanship and is available in .45 ACP. It differs from the S&W Model 325 in its low recoil and good rate of fire.
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Weapons/Guns/Revolvers/s&w_model_625.rsi
+      scale: 0.9, 0.9
+      layers:
+      - state: icon
+        map: ["enum.GunVisualLayers.Base"]
+    - type: Gun
+      minAngle: 0
+      maxAngle: 50
+      fireRate: 3
+      angleIncrease: 7
+      angleDecay: 7
+      projectileSpeed: 50
+      selectedMode: SemiAuto
+      soundGunshot:
+        path: /Audio/_Stalker/Effects/Guns/revolver3.ogg
+        params:
+          volume: -4
+    - type: RevolverAmmoProvider
+      whitelist:
+        tags:
+          - Cartridge45ACP
+          - STSpeedLoader45ACP
+      proto: null
+      capacity: 6
+      chambers: [ null, null, null, null, null, null ]
+      ammoSlots: [ null, null, null, null, null, null ]
+      soundEject:
+        path: /Audio/Weapons/Guns/MagOut/revolver_magout.ogg
+      soundInsert:
+        path: /Audio/Weapons/Guns/MagIn/revolver_magin.ogg
+    - type: STWeight
+      self: 1.58
+    - type: StaticPrice
+      price: 30
+    - type: UseDelay
+      delay: 1
+    - type: RepositoryItem
+      categoryName: Weapons
+    - type: STWeaponDamageFalloff
+      falloffMultiplier: 0.8
+    - type: STWeaponAccuracy
+      accuracyMultiplier: 1.43

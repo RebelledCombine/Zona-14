@@ -1,0 +1,92 @@
+- type: entity
+  parent: BaseItem
+  id: Z14STBoltBag
+  categories: [ Zona14 ]
+  name: bolt bag
+  description: Allows you to carry your 3 tons of bolts to detect anomalies in the area. A stalker's best friend who will always get you out of a difficult situation.
+  suffix: Z14
+  components:
+    - type: Storage
+      maxItemSize: Tiny
+      areaInsert: true
+      quickInsert: true
+      whitelist:
+        tags:
+          - STBolt
+      grid:
+        - 0,0,7,7
+    - type: ContainerContainer
+      containers:
+        storagebase: !type:Container
+          ents: []
+    - type: UserInterface
+      interfaces:
+        enum.StorageUiKey.Key:
+          type: StorageBoundUserInterface
+    - type: STWeight
+      self: 0.05
+    - type: Sprite
+      sprite: _Stalker/Objects/Misc/bolts_bag.rsi
+      state: icon
+    - type: Clothing
+      slots: [ belt ]
+      quickEquip: false
+    - type: Item
+      size: Small
+
+- type: entity
+  parent: STBoltBag
+  id: Z14STBoltBagFilled
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+    - type: StorageFill
+      contents:
+        - id: STBolt
+          amount: 64
+
+- type: entity
+  parent: STBoltBag
+  id: Z14STBoltBagFilledGolden
+  categories: [ Zona14 ]
+  name: golden bolt bag
+  description: Allows you to carry your 3 tons of golden bolts to detect anomalies in the area. A stalker's best friend who will always get you out of a difficult situation.
+  suffix: Z14
+  components:
+    - type: StorageFill
+      contents:
+        - id: STBoltGolden
+          amount: 64
+
+- type: entity
+  parent: STBoltBag
+  id: Z14STBoltBagOliveGray
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+    - type: Sprite
+      state: olive_gray
+
+- type: entity
+  parent: STBoltBagOliveGray
+  id: Z14STBoltBagOliveGrayFilled
+  categories: [ Zona14 ]
+  name: golden bolt bag
+  description: Allows you to carry your 3 tons of golden bolts to detect anomalies in the area. A stalker's best friend who will always get you out of a difficult situation.
+  suffix: Z14
+  components:
+    - type: StorageFill
+      contents:
+        - id: STBolt
+          amount: 64
+
+- type: entity
+  parent: STBoltBagOliveGray
+  id: Z14STBoltBagOliveGrayFilledGolden
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+    - type: StorageFill
+      contents:
+        - id: STBoltGolden
+          amount: 64

@@ -1,0 +1,182 @@
+- type: entity
+  name: neutral flesh trigger (1-4) (20%)
+  id: Z14STTriggerFleshNeutral142010
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger142010
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+        - Z14MobMutantFleshNeutral
+      restricted:
+        - Z14MobMutantFleshNeutral
+
+- type: entity
+  name: neutral flesh trigger (1-4) (50%)
+  id: Z14STTriggerFleshNeutral145010
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger145010
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+        - Z14MobMutantFleshNeutral
+      restricted:
+        - Z14MobMutantFleshNeutral
+
+- type: entity
+  name: neutral flesh trigger (1-2) (10%)
+  id: Z14STTriggerFleshNeutral121010
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger121010
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+        - Z14MobMutantFleshNeutral
+      restricted:
+        - Z14MobMutantFleshNeutral
+
+- type: entity
+  name: neutral flesh trigger (1-2) (50%)
+  id: Z14STTriggerFleshNeutral125010
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger125010
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+        - Z14MobMutantFleshNeutral
+      restricted:
+        - Z14MobMutantFleshNeutral
+
+- type: entity
+  name: flesh trigger (1-4) (20%)
+  id: Z14STTriggerFlesh142010
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger142010
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+        - Z14MobMutantFleshAgressive
+      restricted:
+        - Z14MobMutantFleshAgressive
+
+- type: entity
+  name: flesh trigger (1-4) (50%)
+  id: Z14STTriggerFlesh145010
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger145010
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+        - Z14MobMutantFleshAgressive
+      restricted:
+        - Z14MobMutantFleshAgressive
+
+- type: entity
+  name: flesh trigger (1-2) (10%)
+  id: Z14STTriggerFlesh121010
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger121010
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+        - Z14MobMutantFleshAgressive
+      restricted:
+        - Z14MobMutantFleshAgressive
+
+- type: entity
+  name: flesh trigger (1-2) (50%)
+  id: Z14STTriggerFlesh125010
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger125010
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+        - Z14MobMutantFleshAgressive
+      restricted:
+        - Z14MobMutantFleshAgressive
+
+
+- type: entity
+  name: neutral flesh trigger (1) (100%) 30m
+  id: Z14STTriggerFleshNeutral1110030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger1110030
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+      - Z14MobMutantFleshNeutral
+      restricted:
+      - Z14MobMutantFleshNeutral
+
+- type: entity
+  name: neutral flesh trigger (2) (100%) 30m
+  id: Z14STTriggerFleshNeutral2210030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger2210030
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+      - Z14MobMutantFleshNeutral
+      restricted:
+      - Z14MobMutantFleshNeutral
+
+- type: entity
+  name: neutral flesh trigger (3) (100%) 30m
+  id: Z14STTriggerFleshNeutral3310030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger3310030
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+      - Z14MobMutantFleshNeutral
+      restricted:
+      - Z14MobMutantFleshNeutral
+
+- type: entity
+  name: flesh trigger (1) (100%) 30m
+  id: Z14STTriggerFlesh1110030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger1110030
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+      - Z14MobMutantFleshAgressive
+      restricted:
+      - Z14MobMutantFleshAgressive
+
+- type: entity
+  name: flesh trigger (2) (100%) 30m
+  id: Z14STTriggerFlesh2210030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger2210030
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+      - Z14MobMutantFleshAgressive
+      restricted:
+      - Z14MobMutantFleshAgressive
+
+- type: entity
+  name: flesh trigger (3) (100%) 30m
+  id: Z14STTriggerFlesh3310030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger3310030
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+      - Z14MobMutantFleshAgressive
+      restricted:
+      - Z14MobMutantFleshAgressive

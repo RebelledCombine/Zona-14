@@ -1,0 +1,44 @@
+- type: entity
+  parent: Z14MobMutantOraclesBrown
+  id: Z14STMobMutantOracleCommon
+  categories: [ Zona14 ]
+  name: Oracle
+  description: A massive mutant toad, capable of swallowing a full-grown boar whole.
+  suffix: Z14
+  components:
+  - type: STMobVariant
+    quality: Common
+    applied: true
+
+- type: entity
+  parent: Z14MobMutantOraclesBrown
+  id: Z14STMobMutantOracleUncommon
+  categories: [ Zona14 ]
+  name: Adapted Oracle
+  description: A massive mutant toad, capable of swallowing a full-grown boar whole.
+  suffix: Z14
+  components:
+  - type: STMobVariant
+    quality: Uncommon
+
+- type: entity
+  parent: Z14MobMutantOraclesBrown
+  id: Z14STMobMutantOracleRare
+  categories: [ Zona14 ]
+  name: Mutated Oracle
+  description: A massive mutant toad, capable of swallowing a full-grown boar whole.
+  suffix: Z14
+  components:
+  - type: STMobVariant
+    quality: Rare
+
+- type: entity
+  parent: Z14MobMutantOraclesBrown
+  id: Z14STMobMutantOracleLegendary
+  categories: [ Zona14 ]
+  name: Singular Oracle
+  description: A massive mutant toad, capable of swallowing a full-grown boar whole.
+  suffix: Z14
+  components:
+  - type: STMobVariant
+    quality: Legendary

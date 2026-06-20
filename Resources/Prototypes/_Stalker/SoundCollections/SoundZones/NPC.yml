@@ -79,7 +79,7 @@
   - /Audio/_Stalker/SoundTriggers/npc/Sci/Exit/Mar_csky_doctor_meet_bye_3.ogg
 
 - type: soundCollection
-  id: CollideCrazy # Для Гуардов
+  id: CollideCrazy # Zona14: Для Гуардов
   files:
   - /Audio/_Stalker/SoundTriggers/npc/Attacker/Mil_crazy1.ogg
   - /Audio/_Stalker/SoundTriggers/npc/Attacker/Mil_crazy2.ogg

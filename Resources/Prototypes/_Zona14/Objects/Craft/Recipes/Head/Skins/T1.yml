@@ -1,0 +1,60 @@
+- type: lightCraftingRecipe
+  id: Z14STCraftSkinSTCraftSkinClothingHeadHelmetDolg
+  results:
+    - ClothingHeadHelmetDolg
+  steps:
+    firstIngredient: STSkinsKitDolg
+    secondIngredient: ClothingHeadHelmetLight
+    keepFirst: true
+    time: 5
+
+- type: lightCraftingRecipe
+  id: Z14STCraftSkinSTCraftSkinClothingHeadMercLight
+  results:
+    - ClothingHeadMercLight
+  steps:
+    firstIngredient: STSkinsKitMercenary
+    secondIngredient: ClothingHeadHelmetLight
+    keepFirst: true
+    time: 5
+
+- type: lightCraftingRecipe
+  id: Z14STCraftSkinClothingHeadHelmetLightDeserters
+  results:
+    - ClothingHeadHelmetLightDeserters
+  steps:
+    firstIngredient: STSkinsKitDeserters
+    secondIngredient: ClothingHeadHelmetLight
+    keepFirst: true
+    time: 5
+
+- type: lightCraftingRecipe
+  id: Z14STCraftSkinClothingHeadHelmetLightProject
+  results:
+  - ClothingHeadHelmetLightProject
+  steps:
+    firstIngredient: STSkinsKitProject
+    secondIngredient: ClothingHeadHelmetLight
+    keepFirst: true
+    time: 5
+
+# SH68
+- type: lightCraftingRecipe
+  id: Z14STCraftSkinClothingHeadHelmetSH6Renegate
+  results:
+    - ClothingHeadHelmetSH6Renegate
+  steps:
+    firstIngredient: STSkinsKitRenegate
+    secondIngredient: ClothingHeadHelmetSH68
+    keepFirst: true
+    time: 5
+
+- type: lightCraftingRecipe
+  id: Z14STCraftSkinClothingHeadHelmetSH68Band
+  results:
+    - ClothingHeadHelmetSH68Band
+  steps:
+    firstIngredient: STSkinsKitBandits
+    secondIngredient: ClothingHeadHelmetLight
+    keepFirst: true
+    time: 5

@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: ClothingOuterStorageToggleableBase
   id: STClothingOuterCoatBase
-  name: Базовый плащ
-  description: Базовое описание плаща.
+  name: Basic Cloak
+  description: Basic description of the cloak.
   suffix: ST, T1, Universal
   abstract: true
   components:
@@ -58,8 +59,8 @@
 - type: entity
   parent: STClothingOuterCoatBase
   id: ClothingOuterCoatBanditBrown
-  name: кожаный плащ бандитов
-  description: Обычный плащ из коричневой кожи. Заметной защиты носителю не обеспечивает. Разве что не даст замёрзнуть ночью и смягчит укус слепого пса. Довольно неудобен в условиях Зоны, но, тем не менее, часто используется бандитами — возможно, исключительно из-за внешнего вида.
+  name: Bandit Leather Cloak
+  description: Normal brown leather cloak. It does not provide noticeable protection to the carrier. Except that it will not let you freeze at night and soften the bite of a blind dog. Quite inconvenient in the conditions of the Zone, but, nevertheless, it is often used by bandits - perhaps solely because of its appearance.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/outerClothing/coat_bandit_brown.rsi
@@ -73,7 +74,7 @@
   parent: STClothingHeadHatHoodBase
   id: ClothingHeadHatHoodCoatBanditBrown
   categories: [ HideSpawnMenu ]
-  name: капюшон
+  name: hood
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/hats/coat_bandit_hat_brown.rsi
@@ -85,8 +86,8 @@
 - type: entity
   parent: STClothingOuterCoatBase
   id: ClothingOuterCoatBanditBlack
-  name: кожаный плащ бандитов
-  description: Обычный плащ из чёрной кожи. Заметной защиты носителю не обеспечивает. Разве что не даст замёрзнуть ночью и смягчит укус слепого пса. Довольно неудобен в условиях Зоны, но, тем не менее, часто используется бандитами — возможно, исключительно из-за внешнего вида.
+  name: "{ ent-ClothingOuterCoatBanditBrown }"
+  description: An ordinary cloak made of black leather. It does not provide noticeable protection to the carrier. Except that it will not let you freeze at night and soften the bite of a blind dog. Quite inconvenient in the conditions of the Zone, but, nevertheless, it is often used by bandits - perhaps solely because of its appearance.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/outerClothing/coat_bandit_black.rsi
@@ -100,7 +101,7 @@
   parent: STClothingHeadHatHoodBase
   id: ClothingHeadHatHoodCoatBanditBlack
   categories: [ HideSpawnMenu ]
-  name: капюшон
+  name: "{ ent-ClothingHeadHatHoodCoatBanditBrown }"
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/hats/coat_bandit_hat_black.rsi

@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: BaseMobMutant
   id: MobMutantSpiderLapach
   suffix: ST, T1
-  name: Паук Лапач
+  name: Spider Lapach
   components:
     - type: Damageable
       damageModifierSet: STMutantT1DamageModifierSet

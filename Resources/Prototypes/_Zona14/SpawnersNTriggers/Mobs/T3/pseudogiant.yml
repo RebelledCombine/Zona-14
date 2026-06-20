@@ -1,0 +1,169 @@
+- type: entity
+  name: pseudogiant trigger (1) (10%) 10m
+  id: Z14STTriggerPseudogiant11010
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger111010
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+        - Z14MobMutantPseudogiant
+      restricted:
+        - Z14MobMutantPseudogiant
+
+- type: entity
+  name: pseudogiant trigger (1) (10%) 30m
+  id: Z14STTriggerPseudogiant11030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger111030
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+        - Z14MobMutantPseudogiant
+      restricted:
+        - Z14MobMutantPseudogiant
+
+- type: entity
+  name: pseudogiant trigger (1) (25%) 10m
+  id: Z14STTriggerPseudogiant12510
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger112510
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+        - Z14MobMutantPseudogiant
+      restricted:
+        - Z14MobMutantPseudogiant
+
+- type: entity
+  name: pseudogiant trigger (1) (25%) 30m
+  id: Z14STTriggerPseudogiant12530
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger112530
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+        - Z14MobMutantPseudogiant
+      restricted:
+        - Z14MobMutantPseudogiant
+
+- type: entity
+  name: pseudogiant trigger (1) (50%) 10m
+  id: Z14STTriggerPseudogiant15010
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger115010
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+        - Z14MobMutantPseudogiant
+      restricted:
+        - Z14MobMutantPseudogiant
+
+- type: entity
+  name: pseudogiant trigger (1) (50%) 30m
+  id: Z14STTriggerPseudogiant15030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger115030
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+        - Z14MobMutantPseudogiant
+      restricted:
+        - Z14MobMutantPseudogiant
+
+- type: entity
+  name: pseudogiant trigger (1) (75%) 10m
+  id: Z14STTriggerPseudogiant117510
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger117510
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+        - Z14MobMutantPseudogiant
+      restricted:
+        - Z14MobMutantPseudogiant
+
+- type: entity
+  name: pseudogiant trigger (1) (75%) 30m
+  id: Z14STTriggerPseudogiant117530
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger117530
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+        - Z14MobMutantPseudogiant
+      restricted:
+        - Z14MobMutantPseudogiant
+
+- type: entity
+  name: pseudogiant trigger (1) (100%) 10m
+  id: Z14STTriggerPseudogiant1110010
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger1110010
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+        - Z14MobMutantPseudogiant
+      restricted:
+        - Z14MobMutantPseudogiant
+
+- type: entity
+  name: pseudogiant trigger (1) (100%) 30m
+  id: Z14STTriggerPseudogiant110030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger1110030
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+        - Z14MobMutantPseudogiant
+      restricted:
+        - Z14MobMutantPseudogiant
+
+
+- type: entity
+  name: pseudogiant trigger (1) (100%) 30m
+  id: Z14STTriggerPseudogiant1110030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger1110030
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+      - Z14MobMutantPseudogiant
+      restricted:
+      - Z14MobMutantPseudogiant
+
+- type: entity
+  name: pseudogiant trigger (2) (100%) 30m
+  id: Z14STTriggerPseudogiant2210030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger2210030
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+      - Z14MobMutantPseudogiant
+      restricted:
+      - Z14MobMutantPseudogiant
+
+- type: entity
+  name: pseudogiant trigger (3) (100%) 30m
+  id: Z14STTriggerPseudogiant3310030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger3310030
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+      - Z14MobMutantPseudogiant
+      restricted:
+      - Z14MobMutantPseudogiant

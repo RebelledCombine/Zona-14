@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
-  name: Патрульный Серафимов
+  name: Seraphim patrolman
   parent: MobHostileGuardPatrool
   id: MobSeraphimsGuardLite
-  description: Патрульный Серафимов, приносит божью волю свинцом.
+  description: A Seraphim patrolman, delivering divine will through lead.
   components:
   - type: NpcFactionMember
     factions:
@@ -28,10 +29,10 @@
     sprite: /Textures/_Stalker/Mobs/Guards/Seraphims/Lite.rsi
 
 - type: entity
-  name: Патрульный Серафимов
+  name: Seraphim patrolman
   parent: MobHostileGuardPatrool
   id: MobSeraphimsGuardMedium
-  description: Патрульный Серафимов, приносит божью волю свинцом.
+  description: "Seraphim Patrolman brings God's will with lead."
   components:
   - type: NpcFactionMember
     factions:
@@ -57,10 +58,10 @@
     sprite: /Textures/_Stalker/Mobs/Guards/Seraphims/Medium.rsi
 
 - type: entity
-  name: Патрульный Серафимов
+  name: Seraphim patrolman
   parent: MobHostileGuardPatrool
   id: MobSeraphimsGuardHeavy
-  description: Патрульный Серафимов, приносит божью волю свинцом.
+  description: "Seraphim Patrolman brings God's will with lead."
   components:
   - type: NpcFactionMember
     factions:
@@ -86,11 +87,11 @@
     sprite: /Textures/_Stalker/Mobs/Guards/Seraphims/Heavy.rsi
 
 - type: entity
-  name: Охранник серафимов
-  suffix: Stalker, Т6, NPC
+  name: Seraphim guard
+  suffix: Stalker, T6, NPC # Zona14: Stalker, Т6, NPC
   parent: MobStalkerBaseGuard
   id: MobSeraphimSecurityLite
-  description: Охранник Серафимов, приносит божью волю свинцом.
+  description: Security guard for Seraphim.
   components:
   - type: NpcFactionMember
     factions:
@@ -134,11 +135,11 @@
         Brute: -1
 
 - type: entity
-  name: Охранник серафимов
-  suffix: Stalker, Т6, NPC
+  name: Seraphim guard
+  suffix: Stalker, T6, NPC # Zona14: Stalker, Т6, NPC
   parent: MobStalkerBaseGuard
   id: MobSeraphimSecurityMedium
-  description: Охранник Серафимов, приносит божью волю свинцом.
+  description: Security guard for Seraphim.
   components:
   - type: NpcFactionMember
     factions:
@@ -182,11 +183,11 @@
         Brute: -1
 
 - type: entity
-  name: Охранник серафимов
-  suffix: Stalker, Т6, NPC
+  name: Seraphim guard
+  suffix: Stalker, T6, NPC # Zona14: Stalker, Т6, NPC
   parent: MobStalkerBaseGuard
   id: MobSeraphimSecurityHeavy
-  description: Охранник Серафимов, приносит божью волю свинцом.
+  description: Security guard for Seraphim.
   components:
   - type: NpcFactionMember
     factions:

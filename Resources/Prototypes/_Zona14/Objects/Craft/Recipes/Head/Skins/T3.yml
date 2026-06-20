@@ -1,0 +1,74 @@
+- type: lightCraftingRecipe
+  id:  Z14STCraftSkinClothingHeadAssaultHelmetUN
+  results:
+    - ClothingHeadAssaultHelmetUN
+  steps:
+    firstIngredient: STSkinsKitUnitar
+    secondIngredient: ClothingHeadAssaultHelmet
+    keepFirst: true
+    time: 5
+
+- type: lightCraftingRecipe
+  id: Z14STCraftSkinClothingHeadAssaultHelmetDeserter
+  results:
+    - ClothingHeadAssaultHelmetDeserter
+  steps:
+    firstIngredient: STSkinsKitDeserters
+    secondIngredient: ClothingHeadAssaultHelmet
+    keepFirst: true
+    time: 5
+
+- type: lightCraftingRecipe
+  id: Z14STCraftSkinClothingHeadAssaultHelmetBand
+  results:
+    - ClothingHeadAssaultHelmetBandit
+  steps:
+    firstIngredient: STSkinsKitBandits
+    secondIngredient: ClothingHeadAssaultHelmet
+    keepFirst: true
+    time: 5
+
+- type: lightCraftingRecipe
+  id:  Z14STCraftSkinClothingHeadAssaultHelmetDolg
+  results:
+    - ClothingHeadAssaultHelmetDolg
+  steps:
+    firstIngredient: STSkinsKitDolg
+    secondIngredient: ClothingHeadAssaultHelmet
+    keepFirst: true
+    time: 5
+
+# Sphere 08 helmet
+
+- type: lightCraftingRecipe
+  id:  Z14STCraftSkinClothingHeadHelmetBerill5MMonolith
+  results:
+    - ClothingHeadHelmetBerill5MMonolith
+  steps:
+    firstIngredient: STSkinsKitMonolith
+    secondIngredient: ClothingHeadHelmetBerill5MMilitary
+    keepFirst: true
+    time: 5
+
+- type: lightCraftingRecipe
+  id:  Z14STCraftSkinClothingHeadHelmetBerill5MDolg
+  results:
+    - ClothingHeadHelmetBerill5MDolg
+  steps:
+    firstIngredient: STSkinsKitDolg
+    secondIngredient: ClothingHeadHelmetBerill5MMilitary
+    keepFirst: true
+    time: 5
+
+# Vityaz
+
+- type: lightCraftingRecipe
+  id:  Z14STCraftSkinClothingHeadHelmetVityaz1M
+  results:
+    - ClothingHeadHelmetBerill5MDolg
+  steps:
+    firstIngredient: STSkinsKitDolg
+    secondIngredient: ClothingHeadHelmetVityaz1C
+    keepFirst: true
+    time: 5
+

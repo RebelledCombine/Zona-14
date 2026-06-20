@@ -1,10 +1,11 @@
+# Zona14: translated Russian names/descriptions to English
 
 - type: entity
   parent: StalkerShop
   id: StalkerShopPilgrim
-  name: Торгомат, Паломники
-  description: Как торговец туда поместился?
-  suffix: ST, Mapping, Паломники
+  name: Torgomat, Pilgrims
+  description: How did the merchant fit there?
+  suffix: ST, Mapping, Pilgrims # Zona14: ST, Mapping, Паломники
   components:
     - type: Sprite
       drawdepth: Objects

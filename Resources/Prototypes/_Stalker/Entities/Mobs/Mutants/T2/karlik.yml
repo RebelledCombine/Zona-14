@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: STMutantKarlik
   parent: BaseMobMutant
-  name: Карлик
+  name: Karlik
   suffix: ST, T2
-  description: Обитатель подземелий, катакомб. Говорят, что они являются жертвами учёных, и теперь их внутренняя злоба за все злодеяния и боль вырвались наружу. Слабые псионики, способные оказать сопротивление сталкеру, и заманить в ловушку.
+  description: A dweller of dungeons and catacombs. They say these creatures are the victims of scientists, and now their inner rage at all the cruelty and pain has burst forth. Weak psionics, capable of resisting a stalker and luring them into a trap.
   components:
   - type: EmitSoundOnSpawn
     sound:

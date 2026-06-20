@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: STClothingMaskGas
   id: ClothingMaskGasM40
   suffix: ST, T2, Rad
-  name: противогаз M40
-  description: Скрывает тайны человека. Американский противогаз, защищает от радиации и немного от токсинов. Данный противогаз не был выпущен масштабно.
+  name: M40 gas mask
+  description: Hides human secrets. An American gas mask, protects against radiation. This gas mask was not produced on a large scale.
   components:
   - type: Tag
     tags:
@@ -23,12 +24,12 @@
         Radiation: 0.85
         Caustic: 0.9
 
-## Скины
+# Zona14: # Скины
 - type: entity
   parent: ClothingMaskGasM40
   id: ClothingMaskGasM40Military
-  name: противогаз М40 в раскраске военных
-  description: Чувствуется запах дешёвой краски.
+  name: M40 Gas Mask in Military Livery
+  description: You can smell cheap paint.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/mask/m40military.rsi

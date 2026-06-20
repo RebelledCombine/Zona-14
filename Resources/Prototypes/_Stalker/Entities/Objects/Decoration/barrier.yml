@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: BarrierBlockStalker
   parent: BaseShippingContainer
-  name: шлагбаум
-  suffix: ST, не открывается, Mapping
-  description: Устройство для быстрого преграждения и освобождения пути.
+  name: barrier
+  suffix: ST, not opens, Mapping # Zona14: ST, не открывается, Mapping
+  description: A device for quickly blocking and clearing the way.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Other/barrier.rsi
@@ -25,9 +26,9 @@
 
 - type: entity
   id: BarrierBlockDynamicStalker
-  name: шлагбаум
-  suffix: ST, Открывается, Mapping
-  description: Устройство для быстрого преграждения и освобождения пути.
+  name: "{ ent-BarrierBlockStalker }"
+  suffix: ST, Opens, Mapping # Zona14: ST, Открывается, Mapping
+  description: "{ ent-BarrierBlockStalker.desc }"
   parent: BaseMaterialDoor
   components:
   - type: Sprite

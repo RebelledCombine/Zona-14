@@ -1,0 +1,75 @@
+- type: entity
+  abstract: true
+  parent: Z14HelmetBase
+  id: Z14STClothingHeadHelmetTacticalT4Base
+  categories: [ Zona14 ]
+  name: T4 Tactical Helmet Base
+  components:
+  - type: HideLayerClothing
+    slots:
+    - Hair
+
+- type: entity
+  parent: Z14STClothingHeadHelmetTacticalT4Base
+  id: Z14ClothingHeadHelmetUlach
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: ulach
+  description: A helmet specifically designed for protection against piercing attacks.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/ulach.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/ulach.rsi
+
+- type: entity
+  parent: Z14STClothingHeadHelmetTacticalT4Base
+  id: Z14ClothingHeadHelmetUlachUN
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: UN Ulach
+  description: UN contingent helmet.
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/hats/ulach-un.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/hats/ulach-un.rsi
+
+- type: entity
+  parent: Z14STClothingHeadHelmetTacticalT4Base
+  id: Z14ClothingHeadHelmetUlachZavet
+  categories: [ Zona14 ]
+  name: Covenant Ulach
+  description: Ulach used by the Covenant faction.
+  suffix: Z14
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/hats/zavet_ulach.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/hats/zavet_ulach.rsi
+
+- type: entity
+  parent: Z14STClothingHeadHelmetTacticalT4Base
+  id: Z14ClothingHeadHelmetHardUlachUN
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: UN Tactical Shock Absorber
+  description: UN contingent helmet with strong protection against impact and piercing attacks. A modified version of the UN Ulach, but more advanced. Armor class 3.
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/hats/hard-ulach-un.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/hats/hard-ulach-un.rsi
+
+- type: entity
+  parent: Z14STClothingHeadHelmetTacticalT4Base
+  id: Z14ClothingHeadHelmetUlachEasy
+  categories: [ Zona14 ]
+  name: lightweight
+  suffix: Z14
+  description: A helmet designed for protection against piercing attacks and mobility for the Mercenaries faction. Armor class 2.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/normal_merc_helm.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/normal_merc_helm.rsi

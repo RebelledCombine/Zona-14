@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: STClothingOuterJacketBase
   id: ClothingOuterArmourJacketBandit
-  name: кольчужная куртка бандитов
-  description: Обычный слабенький бандитский бронежилет, но в подкладку вшито кольчужное полотно. Сделать такой под силу почти каждому, но терпения хватит далеко не всем.
+  name: Bandit Chainmail Jacket
+  description: A basic, low-tier bandit flak jacket with chainmail sewn into the lining. Just about anyone can make one, but not everyone has the patience.
   suffix: ST, T2, PVP
   components:
   - type: Sprite
@@ -39,8 +40,8 @@
 - type: entity
   parent: STClothingOuterJacketBase
   id: ClothingOuterArmourJacketStalker
-  name: кольчужная куртка сталкера
-  description: Обычная куртка сталкера, но в подкладку вшито кольчужное полотно. Сделать такой под силу почти каждому, но терпения хватит далеко не всем.
+  name: Stalker Chainmail Jacket
+  description: A standard stalker jacket with chainmail sewn into the lining. Just about anyone can make one, but not everyone has the patience.
   suffix: ST, T2, PVP
   components:
   - type: Sprite
@@ -67,8 +68,8 @@
 - type: entity
   parent: STClothingOuterJacketBase
   id: ClothingOuterArmourJacketStalkerWhite
-  name: кольчужная куртка сталкера
-  description: Обычная куртка сталкера белого цвета, но в подкладку вшито кольчужное полотно. Сделать такой под силу почти каждому, но терпения хватит далеко не всем.
+  name: "{ ent-ClothingOuterArmourJacketStalker }"
+  description: A white-colored stalker jacket with chainmail sewn into the lining. Just about anyone can make one, but not everyone has the patience.
   suffix: ST, T2, PVP
   components:
   - type: Sprite
@@ -95,8 +96,8 @@
 - type: entity
   parent: STClothingOuterJacketBase
   id: ClothingOuterJacketStalkerUpgrade
-  name: улучшенная куртка сталкера
-  description: Куртка сталкера приобрела немного допольнительной защиты от фиизического урона, так и от аномалий. Но к сожалению ткань не выглядит такой прочной.
+  name: Improved Stalker Jacket
+  description: The Stalker Jacket has gained some additional protection from phisic damage and anomalies. But unfortunately, the fabric does not look so durable.
   suffix: ST, T1, Universal
   components:
   - type: Sprite
@@ -130,9 +131,9 @@
 - type: entity
   parent: STClothingOuterJacketBase
   id: ClothingOuterAnomalyStalkerJacket
-  name: аномальная куртка сталкера
-  description: Обычная одежда начинающего сталкера. Не спасает носителя ни от пули, ни от аномалий, но удобна в ношении.
-  suffix: ST, T1, Аномальное
+  name: Anomalous Stalker Jacket
+  description: Normal clothing of a novice stalker. It does not save the wearer from either a bullet or anomalies, but it is comfortable to wear.
+  suffix: ST, T1, Anomalous # Zona14: ST, T1, Аномальное
   components:
     - type: Sprite
       sprite: _Stalker/Objects/Clothing/outerClothing/jacket_stalker.rsi
@@ -148,8 +149,8 @@
 - type: entity
   parent: STClothingOuterJacketBase
   id: ClothingOuterJacketStalkerUpgradeWhite
-  name: улучшенная куртка сталкера
-  description: Куртка сталкера белого цвета приобрела немного допольнительной защиты от фиизического урона, так и от аномалий. Но к сожалению ткань не выглядит такой прочной.
+  name: Improved Stalker Jacket
+  description: "The white stalker jacket has gained some additional protection against both physical damage and anomalies. Unfortunately, the fabric doesn't look particularly durable."
   suffix: ST, T1, Universal
   components:
   - type: Sprite
@@ -181,9 +182,9 @@
 - type: entity
   parent: STClothingOuterJacketBase
   id: ClothingOuterAnomalyStalkerJacketWhite
-  name: аномальная куртка сталкера
-  description: Обычная одежда начинающего сталкера белого цвета. Не спасает носителя ни от пули, ни от аномалий, но удобна в ношении.
-  suffix: ST, T1, Аномальное
+  name: Anomalous Stalker Jacket
+  description: A regular outfit for a novice stalker in white. It won’t protect the wearer from bullets or anomalies, but it’s comfortable to wear.
+  suffix: ST, T1, Anomalous # Zona14: ST, T1, Аномальное
   components:
     - type: Sprite
       sprite: _Stalker/Objects/Clothing/outerClothing/jacket_stalker_white.rsi

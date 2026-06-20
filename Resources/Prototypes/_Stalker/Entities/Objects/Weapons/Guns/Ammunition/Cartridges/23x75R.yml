@@ -1,6 +1,7 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: CartridgeShrapnel25Buckshot
-  name: 23х75мм R "Шрапнель-25"
+  name: 23x75mm R "Shrapnel-25"
   parent: BaseShotgunBullet
   components:
   - type: Tag
@@ -19,7 +20,7 @@
 
 - type: entity
   id: CartridgeShotgunBarricadaBullet
-  name: 23х75мм R "Баррикада"
+  name: 23x75mm R "Barricada"
   parent: BaseShotgunBullet
   components:
   - type: CartridgeAmmo
@@ -38,7 +39,7 @@
 
 - type: entity
   id: CartridgeShotgunVolnaRBullet
-  name: 23х75мм R "Волна Р"
+  name: 23x75mm R "Volna R"
   parent: BaseShotgunBullet
   components:
   - type: CartridgeAmmo
@@ -57,7 +58,7 @@
 
 #- type: entity
 #  id: CartridgeShotgunZvezdaBullet
-#  name: 23х75мм R "Звезда"
+# Zona14: name: 23х75мм R "Звезда"
 #  parent: BaseShotgunBullet
 #  components:
 #  - type: CartridgeAmmo

@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 #9x19
 
 - type: entity
   id: Bullet919PSOGJ
-  name: bullet (9х19 auto)
+  name: bullet (9x19 auto)
   parent: STBasePistolBullet
   categories: [ HideSpawnMenu ]
   components:
@@ -18,7 +19,7 @@
 
 - type: entity
   id: Bullet919PST
-  name: bullet (9х19 auto)
+  name: "{ ent-Bullet919PSOGJ }"
   parent: Bullet919PSOGJ
   categories: [ HideSpawnMenu ]
   components:
@@ -30,7 +31,7 @@
 
 - type: entity
   id: Bullet919RIP
-  name: bullet (9х18 auto)
+  name: bullet (9x18 auto)
   parent: Bullet919PSOGJ
   categories: [ HideSpawnMenu ]
   components:
@@ -45,7 +46,7 @@
 
 - type: entity
   id: Bullet919PBM
-  name: bullet (9х19 auto)
+  name: "{ ent-Bullet919PSOGJ }"
   parent: Bullet919PSOGJ
   categories: [ HideSpawnMenu ]
   components:

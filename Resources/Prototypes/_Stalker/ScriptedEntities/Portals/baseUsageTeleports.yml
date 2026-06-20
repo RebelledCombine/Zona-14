@@ -1,15 +1,16 @@
+# Zona14: translated Russian names/descriptions to English
 # Comment
 - type: entity
   id: MapTeleportUsage
   parent: MapTeleportBase
-  name: Базовый телепорт
-  description: |-
-    Базовый телепорт, необходимый для маппинга
-    локаций под ивенты. Или для постоянных
-    переходов между локациями.
+  name: Map Teleport
+  description: |- # Zona14: translated from Russian
+    Basic teleport required for mapping
+    locations for events. Or for permanent
+    transitions between locations.
 
-    Для работы данного портала
-    найдите компонент: NewMapTeleportComponent.
+    For this portal to work,
+    find component: NewMapTeleportComponent.
   suffix: Map, Mapping, Teleport
   components:
     - type: NewMapTeleport
@@ -22,14 +23,14 @@
 - type: entity
   id: MapTeleportUsageUncollide
   parent: MapTeleportBaseUncollide
-  name: Базовый телепорт (Без коллизии)
-  description: |-
-    Базовый телепорт, необходимый для маппинга
-    локаций под ивенты. Или для постоянных переходов между локациями.
-    Не переносит игрока между локациями.
+  name: Map Teleport (No Collision)
+  description: |- # Zona14: translated from Russian
+    Basic teleport required for mapping
+    locations for events. Or for permanent transitions between locations.
+    Does not transport the player between locations.
 
-    Для работы данного портала
-    найдите компонент: NewMapTeleportComponent.
+    For this portal to work,
+    find component: NewMapTeleportComponent.
   suffix: Map, Mapping, Teleport, Uncollibe
   components:
     - type: NewMapTeleport
@@ -42,14 +43,14 @@
 - type: entity
   id: LocaleTeleportUsage
   parent: LocalTeleportBase
-  name: Базовый телепорт (Локальный)
-  description: |-
-    Базовый телепорт, необходимый для маппинга
-    локаций под ивенты. Или для постоянных
-    переходов на локации.
+  name: Map Teleport (Local)
+  description: |- # Zona14: translated from Russian
+    Basic teleport required for mapping
+    locations for events. Or for permanent
+    transitions to locations.
 
-    Для работы данного портала
-    найдите компонент: LocalTeleportComponent.
+    For this portal to work,
+    find component: LocalTeleportComponent.
   suffix: Local, Mapping, Teleport
   components:
     - type: LocalTeleport

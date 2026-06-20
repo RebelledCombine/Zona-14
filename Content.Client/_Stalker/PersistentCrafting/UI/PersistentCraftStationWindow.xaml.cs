@@ -52,8 +52,8 @@ public sealed partial class PersistentCraftStationWindow : DefaultWindow
     private static readonly Color MissingColor = PersistentCraftUiTheme.Danger;
     private static readonly ISawmill Sawmill = Logger.GetSawmill("persistent-craft.ui.station");
     private const float RecipeResultFlashDuration = 0.7f;
-    private const float RecipeIconScaleLarge = 2.1f;   // для иконок размером >= 90px
-    private const float RecipeIconScaleSmall = 1.15f;  // для иконок размером < 90px
+    private const float RecipeIconScaleLarge = 2.1f;   // for icons >= 90px // Zona14: translated comment
+    private const float RecipeIconScaleSmall = 1.15f;  // for icons < 90px // Zona14: translated comment
     private const float RecipeIconLargeThreshold = 90f;
 
     private readonly Dictionary<string, BoxContainer> _branchContainers = new();

@@ -1,0 +1,125 @@
+# Blind Dog Small variants
+- type: entity
+  parent: Z14MobMutantBlindDogSmall
+  id: Z14STMobMutantBlindDogSmallCommon
+  categories: [ Zona14 ]
+  name: Small Blind Dog
+  suffix: Z14
+  components:
+  - type: STMobVariant
+    quality: Common
+    applied: true
+
+- type: entity
+  parent: Z14MobMutantBlindDogSmall
+  id: Z14STMobMutantBlindDogSmallUncommon
+  categories: [ Zona14 ]
+  name: Adapted Small Blind Dog
+  suffix: Z14
+  components:
+  - type: STMobVariant
+    quality: Uncommon
+
+- type: entity
+  parent: Z14MobMutantBlindDogSmall
+  id: Z14STMobMutantBlindDogSmallRare
+  categories: [ Zona14 ]
+  name: Mutated Small Blind Dog
+  suffix: Z14
+  components:
+  - type: STMobVariant
+    quality: Rare
+
+- type: entity
+  parent: Z14MobMutantBlindDogSmall
+  id: Z14STMobMutantBlindDogSmallLegendary
+  categories: [ Zona14 ]
+  name: Singular Small Blind Dog
+  suffix: Z14
+  components:
+  - type: STMobVariant
+    quality: Legendary
+
+# Blind Dog Tall variants
+- type: entity
+  parent: Z14MobMutantBlindDogTall
+  id: Z14STMobMutantBlindDogTallCommon
+  categories: [ Zona14 ]
+  name: Tall Blind Dog
+  suffix: Z14
+  components:
+  - type: STMobVariant
+    quality: Common
+    applied: true
+
+- type: entity
+  parent: Z14MobMutantBlindDogTall
+  id: Z14STMobMutantBlindDogTallUncommon
+  categories: [ Zona14 ]
+  name: Adapted Tall Blind Dog
+  suffix: Z14
+  components:
+  - type: STMobVariant
+    quality: Uncommon
+
+- type: entity
+  parent: Z14MobMutantBlindDogTall
+  id: Z14STMobMutantBlindDogTallRare
+  categories: [ Zona14 ]
+  name: Mutated Tall Blind Dog
+  suffix: Z14
+  components:
+  - type: STMobVariant
+    quality: Rare
+
+- type: entity
+  parent: Z14MobMutantBlindDogTall
+  id: Z14STMobMutantBlindDogTallLegendary
+  categories: [ Zona14 ]
+  name: Singular Tall Blind Dog
+  suffix: Z14
+  components:
+  - type: STMobVariant
+    quality: Legendary
+
+# Blind Dog Red variants
+- type: entity
+  parent: Z14MobMutantBlindDogRed
+  id: Z14STMobMutantBlindDogRedCommon
+  categories: [ Zona14 ]
+  name: Red Blind Dog
+  suffix: Z14
+  components:
+  - type: STMobVariant
+    quality: Common
+    applied: true
+
+- type: entity
+  parent: Z14MobMutantBlindDogRed
+  id: Z14STMobMutantBlindDogRedUncommon
+  categories: [ Zona14 ]
+  name: Adapted Red Blind Dog
+  suffix: Z14
+  components:
+  - type: STMobVariant
+    quality: Uncommon
+
+- type: entity
+  parent: Z14MobMutantBlindDogRed
+  id: Z14STMobMutantBlindDogRedRare
+  categories: [ Zona14 ]
+  name: Mutated Red Blind Dog
+  suffix: Z14
+  components:
+  - type: STMobVariant
+    quality: Rare
+
+- type: entity
+  parent: Z14MobMutantBlindDogRed
+  id: Z14STMobMutantBlindDogRedLegendary
+  categories: [ Zona14 ]
+  name: Singular Red Blind Dog
+  suffix: Z14
+  components:
+  - type: STMobVariant
+    quality: Legendary

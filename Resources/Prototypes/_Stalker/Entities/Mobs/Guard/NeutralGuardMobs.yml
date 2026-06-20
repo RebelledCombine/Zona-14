@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
-  name: Охранник нейтралов
-  suffix: Stalker, Т6, NPC
+  name: Neutral guard
+  suffix: Stalker, T6, NPC # Zona14: Stalker, Т6, NPC
   parent: MobStalkerBaseGuard
   id: MobNeutralSecurity
-  description: Охранник нейтралов.
+  description: Neutral guard.
   components:
   - type: NpcFactionMember
     factions:

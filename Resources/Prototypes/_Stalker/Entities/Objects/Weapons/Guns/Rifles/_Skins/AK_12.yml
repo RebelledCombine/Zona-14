@@ -1,10 +1,11 @@
-# Кастомка серафимов
+# Zona14: translated Russian names/descriptions to English
+# Zona14: Кастомка серафимов
 - type: entity
-  name: АК-12
-  suffix: ST, t4, Кастомка
+  name: AK-12
+  suffix: ST, t4, Custom # Zona14: ST, t4, Кастомка
   parent: STBaseWeaponRifle
   id: STWeaponRifleStalkerAK12
-  description: Данная модель является вершиной развития системы АК и отличается от предыдущих поколений продуманной эргономикой, адаптацией к всесуточному применению и повышенной точностью и кучностью стрельбы.
+  description: This model is the pinnacle of the development of the AK system and differs from previous generations in well-thought-out ergonomics, adaptation to all-day use and increased accuracy and accuracy of fire.
   components:
   - type: STWeight
     self: 3.5
@@ -69,7 +70,7 @@
     falloffMultiplier: 0.7
 
 - type: entity
-  name: АК-12 серафимов
+  name: AK-12 Seraphim
   parent: STWeaponRifleStalkerAK12
   id: STWeaponRifleStalkerAK12Sera
   components:
@@ -82,11 +83,11 @@
     sprite: _Stalker/Objects/Weapons/Guns/Rifles/_Skins/ak12sera.rsi
 
 - type: entity
-  name: РПК-16
+  name: RPK-16
   parent: STWeaponRifleStalkerAK12
   id: STWeaponRifleStalkerRPK16
-  description: Вариация АК-12 под взводный ручной пулемёт.
-  suffix: ST, Кастомка
+  description: A variation of the AK-12 for a platoon light machine gun.
+  suffix: ST, Custom # Zona14: ST, Кастомка
   components:
   - type: Clothing
     sprite: _Stalker/Objects/Weapons/Guns/Rifles/_Skins/rpk16.rsi
@@ -108,11 +109,11 @@
     accuracyMultiplier: 1.3
 
 - type: entity
-  name: РПК-16 "Осень"
+  name: RPK-16 "Autumn"
   parent: STWeaponRifleStalkerRPK16
   id: STWeaponRifleStalkerRPK16Camo
-  description: Вариация АК-12 под взводный ручной пулемёт в осеннем комуфляже.
-  suffix: ST, Кастомка
+  description: A variation of the AK-12 for the platoon light machine gun in autumn camouflage.
+  suffix: ST, Custom # Zona14: ST, Кастомка
   components:
   - type: Clothing
     sprite: _Stalker/Objects/Weapons/Guns/Rifles/_Skins/rpk16camo.rsi

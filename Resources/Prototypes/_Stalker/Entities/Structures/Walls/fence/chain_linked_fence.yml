@@ -1,5 +1,6 @@
+# Zona14: translated Russian names/descriptions to English
 
-# КОЛЮЧАЯ ПРОВОЛОКА
+# Zona14: КОЛЮЧАЯ ПРОВОЛОКА
 - type: entity
   parent: BaseStructure
   id: STBaseFenceMetal
@@ -58,8 +59,8 @@
 - type: entity
   parent: STFenceMetalBroken
   id: StalkerFenceMetalBroken
-  name: Колючая проволока перекусанная
-  description: Материал, который используется для ограждения и защиты территории от несанкционированного проникновения.
+  name: Barbed wire bitten
+  description: Material that is used to fence and protect an area from unauthorized entry.
   suffix: ST, Mapping
   components:
   - type: Sprite
@@ -76,8 +77,8 @@
 - type: entity
   parent: STBaseFenceMetal
   id: StalkerFenceMetalStraight
-  name: Колючая проволока
-  description: Материал, который используется для ограждения и защиты территории от несанкционированного проникновения.
+  name: Barbed wire
+  description: "{ ent-StalkerFenceMetalBroken.desc }"
   suffix: ST, Mapping, traight
   components:
   - type: Icon
@@ -93,9 +94,9 @@
 - type: entity
   parent: FenceMetalStraightConst
   id: StalkerFenceMetalStraightConst
-  name: Колючая проволока
-  description: Материал, который используется для ограждения и защиты территории от несанкционированного проникновения.
-  suffix: ST, Mapping, traight, разбираемый
+  name: "{ ent-StalkerFenceMetalStraight }"
+  description: "{ ent-StalkerFenceMetalBroken.desc }"
+  suffix: ST, Mapping, traight, destructible # Zona14: ST, Mapping, traight, разбираемый
   components:
   - type: Icon
     sprite: _Stalker/Structures/Walls/fencerazor.rsi
@@ -110,8 +111,8 @@
 - type: entity
   parent: STBaseFenceMetal
   id: StalkerFenceRazorMetalCorner
-  name: Колючая проволока
-  description: Материал, который используется для ограждения и защиты территории от несанкционированного проникновения.
+  name: "{ ent-StalkerFenceMetalStraight }"
+  description: "{ ent-StalkerFenceMetalBroken.desc }"
   suffix: ST, Mapping, corner
   components:
   - type: Sprite
@@ -124,8 +125,8 @@
 - type: entity
   parent: STBaseFenceMetal
   id: StalkerFenceMetalEnd
-  name: Колючая проволока
-  description: Материал, который используется для ограждения и защиты территории от несанкционированного проникновения.
+  name: "{ ent-StalkerFenceMetalStraight }"
+  description: "{ ent-StalkerFenceMetalBroken.desc }"
   suffix: ST, Mapping, end
   components:
   - type: Icon

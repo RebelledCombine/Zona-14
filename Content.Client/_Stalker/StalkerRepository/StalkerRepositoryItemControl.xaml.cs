@@ -21,8 +21,8 @@ public sealed partial class StalkerRepositoryItemControl : Control
         {
             name = item.Name[.._nameLength] + "..";
         }
-        ItemName.Text = item.Count == 1 ? name : $"{name}\n{item.Count} шт.";
-        SelectButton.Text = "Выбрать";
+        ItemName.Text = item.Count == 1 ? name : $"{name}\n{Loc.GetString("st-repository-count", ("count", item.Count))}"; // Zona14: localized
+        SelectButton.Text = Loc.GetString("st-repository-select"); // Zona14: localized
         SelectButton.ToggleMode = true;
 
         ItemTexture.Texture = _itemTexture;

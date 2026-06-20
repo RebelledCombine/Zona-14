@@ -1,0 +1,18 @@
+- type: entity
+  parent: ClothingHeadsetGrey
+  id: Z14ClothingHeadsetStalker
+  name: headset
+  description: Insert an encryption key to use.
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+    - type: ContainerContainer
+      containers:
+        key_slots: !type:Container
+    - type: ContainerFill
+      containers:
+        key_slots:
+          - ConfigurableEncryptionKey
+    - type: Headset
+    - type: EncryptionKeyHolder
+      keySlots: 2

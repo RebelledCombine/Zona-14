@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: STClothingMaskGas
   id: STClothingMaskGasPPM88
-  name: Противогаз ППM88
-  description: Противогаз состоит из лицевой части с панорамным стеклом, фильтрующе-поглощающей коробки и соединительной трубки, разработан в Российской Федерации
+  name: PPM88 Gas Mask
+  description: The gas mask consists of a front part with a panoramic glass, a filtering and absorbing box and a connecting tube, developed in the Russian Federation
   suffix: ST, Rad
   components:
   - type: Tag

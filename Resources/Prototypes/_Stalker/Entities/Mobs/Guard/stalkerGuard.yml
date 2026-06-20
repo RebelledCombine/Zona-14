@@ -1,7 +1,8 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: GuardFactionControllerOffAction
-  name: Прекратить атаку
-  description: Делает всех людей поблизости неатакуемыми мутантами. Люди снова будут атакованы мутантами либо через 2 минуты, либо если отменить это.
+  name: Stop the attack
+  description: Makes all nearby people unattackable by mutants. Humans will be attacked by mutants again, either after 2 minutes or if this is canceled.
   suffix: ST
   categories: [ HideSpawnMenu ]
   components:
@@ -17,8 +18,8 @@
 
 - type: entity
   id: GuardFactionControllerOnAction
-  name: В бой
-  description: Приказывает всем мутантам по близости продолжить атаковать.
+  name: Into battle
+  description: Tells all nearby mutants to continue attacking.
   suffix: ST
   categories: [ HideSpawnMenu ]
   components:

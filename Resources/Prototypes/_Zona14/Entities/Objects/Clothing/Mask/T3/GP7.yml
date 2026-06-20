@@ -1,0 +1,40 @@
+
+- type: entity
+  parent: Z14GasMaskBase
+  id: Z14ClothingMaskGP7
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: GP-7 gas mask
+  description: Filtering PPE for respiratory organs, eyes, and facial skin. The MGP mask prototype from the GP-7 kit was manufactured in 1979 at ENPO Neorganika, and the filter prototype GP-7K-MKG dates to Q2 1980. Protects from toxins.
+  components:
+  - type: Tag
+    tags:
+      - BlockMask
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/mask/gp7.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/mask/gp7.rsi
+- type: entity
+  parent: Z14ClothingMaskGP7
+  id: Z14STClothingMaskGP7Neutral
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: GP-7 neutral gas mask
+  description: Filtering PPE for respiratory organs, eyes, and facial skin. The MGP mask prototype from the GP-7 kit was manufactured in 1979 at ENPO Neorganika, and the filter prototype GP-7K-MKG dates to Q2 1980. Protects from toxins.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/mask/gp7neutral.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/mask/gp7neutral.rsi
+- type: entity
+  parent: Z14ClothingMaskGP7
+  id: Z14STClothingMaskFoma
+  categories: [ Zona14 ]
+  name: Wierd Gasmask
+  suffix: Z14
+  description: Wierd gasmask, made from part of SEVA helmet. Totally makeshift and you can't be sure that it will protect you.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/mask/foma.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/mask/foma.rsi

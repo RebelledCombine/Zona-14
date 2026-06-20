@@ -1,0 +1,20 @@
+- type: entity
+  name: pinpointer
+  id: Z14PinpointerArt
+  categories: [ Zona14 ]
+  suffix: Z14
+  parent: PinpointerNuclear
+  components:
+  - type: Sprite
+    noRot: True
+    sprite: _Stalker/Objects/Devices/medved.rsi
+    layers:
+    - state: pinpointer
+      map: ["enum.PinpointerLayers.Base"]
+    - state: pinonnull
+      map: ["enum.PinpointerLayers.Screen"]
+      shader: unshaded
+      visible: false
+  - type: Pinpointer
+    component: NukeDisk
+    targetName: nuclear authentication disk

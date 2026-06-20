@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: DrawingRecipeJaba
-  suffix: Stalker, крафт
+  suffix: Stalker, craft # Zona14: Stalker, крафт
   parent: BaseItem
-  name: чертёж снаряжения жаб
+  name: Toad Equipment Blueprint
   components:
   - type: Item
     size: Small

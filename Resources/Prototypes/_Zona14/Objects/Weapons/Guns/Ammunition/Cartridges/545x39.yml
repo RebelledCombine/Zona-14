@@ -1,0 +1,59 @@
+- type: entity
+  id: Z14STCartridge545FMJ
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Cartridge (5.45x39) FMJ
+  parent: BaseSTCartridge545
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet545FMJ
+
+- type: entity
+  id: Z14STCartridge545PC
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Cartridge (5.45x39) PS
+  parent: BaseSTCartridge545
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet545PC
+
+- type: entity
+  id: Z14STCartridge545HP
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Cartridge (5.45x39) HP
+  parent: BaseSTCartridge545
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet545HP
+
+- type: entity
+  id: Z14STCartridge545BP
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Cartridge (5.45x39) BP
+  parent: BaseSTCartridge545
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet545BP
+
+- type: entity
+  id: Z14STCartridge545BS
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Cartridge (5.45x39) BS
+  parent: BaseSTCartridge545
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet545BS
+
+- type: entity
+  id: Z14STCartridge545NE
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Cartridge (5.45x39) "Needler"
+  parent: BaseSTCartridge545
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet545NE

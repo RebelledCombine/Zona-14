@@ -1,7 +1,8 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: STDolgPropogandaTrigger
   parent: MarkerBase
-  name: Долг Пропоганда
+  name: Duty Propaganda
   description: Make a Sound and Text.
   suffix: Stalker SoundsTriggers
   components:
@@ -34,7 +35,7 @@
 - type: entity
   id: STBarPropogandaTrigger
   parent: STDolgPropogandaTrigger
-  name: Бар Пропоганда
+  name: Bar propoganda
   description: Make a Sound and Text.
   suffix: Stalker SoundsTriggers
   components:
@@ -58,7 +59,7 @@
 - type: entity
   id: STOksopPropogandaTrigger
   parent: STDolgPropogandaTrigger
-  name: ОКСОП Пропоганда
+  name: Military propoganda
   description: Make a Sound and Text.
   suffix: Stalker SoundsTriggers
   components:
@@ -82,7 +83,7 @@
 - type: entity
   id: STSvobodaPropogandaTrigger
   parent: STDolgPropogandaTrigger
-  name: Свобода Пропоганда
+  name: Freedom propoganda
   description: Make a Sound and Text.
   suffix: Stalker SoundsTriggers
   components:

@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
-  name: АК-104
+  name: AK-104
   suffix: ST
   parent: STBaseWeaponRifle
   id: STWeaponRifleStalkerAK104
-  description: Данная модель входит в так называемую «сотую» серию автоматов Калашникова и отличается полной заменой деревянных частей на полимерные и наличием боковой планки для установки прицелов.
+  description: This model is part of the so-called “hundredth” series of Kalashnikov assault rifles and is distinguished by the complete replacement of wooden parts with polymer ones and the presence of a side bar for installing sights. Chambered in 7.62x39mm.
   components:
   - type: STWeight
     self: 4.3

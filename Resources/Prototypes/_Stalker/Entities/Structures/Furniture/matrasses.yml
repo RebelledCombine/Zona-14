@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: Bed
   id: STMatrassBedBase
-  name: матрас
+  name: mattress
   suffix: ST, Mapping
-  description: Старый, но всё ещё удобный матрас.
+  description: Old but still comfortable mattress.
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Furniture/beds.rsi

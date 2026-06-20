@@ -1,3 +1,4 @@
+# Zona14: translated Russian names/descriptions to English
 # 7.62x25
 
 - type: entity
@@ -25,7 +26,7 @@
 
 - type: entity
   id: STCartridge725PGL
-  name: Патрон (7,62x25)П гл
+  name: Cartridge (7.62x25) P gl
   parent: BaseSTCartridge725
   components:
   - type: CartridgeAmmo
@@ -33,7 +34,7 @@
 
 - type: entity
   id: STCartridge725PTGJ
-  name: Патрон (7,62x25)ПТ гж
+  name: Cartridge (7.62x25) PT gzh
   parent: BaseSTCartridge725
   components:
   - type: CartridgeAmmo
@@ -41,7 +42,7 @@
 
 - type: entity
   id: STCartridge725LRNPC
-  name: Патрон (7,62x25)LRNPC
+  name: Cartridge (7.62x25) LRNPC
   parent: BaseSTCartridge725
   components:
   - type: CartridgeAmmo
@@ -49,7 +50,7 @@
 
 - type: entity
   id: STCartridge725PSTGJ
-  name: Патрон (7,62x25)Пст гж
+  name: Cartridge (7.62x25) PST gzh
   parent: BaseSTCartridge725
   components:
   - type: CartridgeAmmo

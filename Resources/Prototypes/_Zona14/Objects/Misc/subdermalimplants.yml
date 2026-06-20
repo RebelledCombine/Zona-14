@@ -1,0 +1,32 @@
+- type: entity
+  parent: BaseSubdermalImplant
+  id: Z14STSeraBombImplant
+  suffix: Z14
+  name: self-destruct
+  description: Detonate your PDA with a guaranteed splitting of your Self into two whole parts in the name of the Son of the Star!
+  categories: [ HideSpawnMenu, Zona14 ]
+  components:
+    - type: SubdermalImplant
+      permanent: true
+      implantAction: STActivateSeraSuicideEvent
+    - type: TriggerOnActivateImplant
+    - type: TimerTrigger
+      delay: 3
+      initialBeepDelay: 0
+      beepSound:
+        path: /Audio/Machines/Nuke/general_beep.ogg
+        params:
+          volume: -2
+    - type: ExplodeOnTrigger
+      keysIn:
+      - timer
+    - type: Explosive
+      explosionType: Default
+      totalIntensity: 100
+      intensitySlope: 30
+      maxIntensity: 60
+      canCreateVacuum: false
+    - type: Tag
+      tags:
+        - SubdermalImplant
+        - HideContextMenu

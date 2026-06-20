@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: BaseItem
   id: STFactionRelationsCartridge
-  name: картридж с информационным приложением "Отношения гргуппировок"
-  description: Программа, показывающая отношения между группировками Зоны.
+  name: cartridge with information app "Faction Relations"
+  description: A program that displays the relations between factions of the Zone.
   components:
   - type: Sprite
     sprite: Objects/Devices/cartridge.rsi

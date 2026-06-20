@@ -1,3 +1,4 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: STBaseEntity
   id: BulletHolesBaseStalker
@@ -30,8 +31,8 @@
 - type: entity
   parent: BulletHolesBaseStalker
   id: BulletHoles1Stalker
-  name: "Дыры от пуль"
-  description: "Видимо треснуло"
+  name: Bullet holes
+  description: Apparently cracked
   suffix: ST, Mapping, 1
   components:
   - type: Sprite
@@ -40,8 +41,8 @@
 - type: entity
   parent: BulletHolesBaseStalker
   id: BulletHoles2Stalker
-  name: "Дыры от пуль"
-  description: "Видимо треснуло"
+  name: "{ ent-BulletHoles1Stalker }"
+  description: "{ ent-BulletHoles1Stalker.desc }"
   suffix: ST, Mapping, 2
   components:
   - type: Sprite
@@ -50,8 +51,8 @@
 - type: entity
   parent: BulletHolesBaseStalker
   id: BulletHoles3Stalker
-  name: "Дыры от пуль"
-  description: "Видимо треснуло"
+  name: "{ ent-BulletHoles1Stalker }"
+  description: "{ ent-BulletHoles1Stalker.desc }"
   suffix: ST, Mapping, 3
   components:
   - type: Sprite
@@ -60,8 +61,8 @@
 - type: entity
   parent: BulletHolesBaseStalker
   id: BulletHoles4Stalker
-  name: "Дыры от пуль"
-  description: "Видимо треснуло"
+  name: "{ ent-BulletHoles1Stalker }"
+  description: "{ ent-BulletHoles1Stalker.desc }"
   suffix: ST, Mapping, 4
   components:
   - type: Sprite

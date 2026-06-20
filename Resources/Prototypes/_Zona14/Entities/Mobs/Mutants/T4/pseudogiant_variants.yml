@@ -1,0 +1,40 @@
+- type: entity
+  parent: Z14MobMutantPseudogiant
+  id: Z14STMobMutantPseudogiantCommon
+  categories: [ Zona14 ]
+  name: Pseudogiant
+  suffix: Z14
+  components:
+  - type: STMobVariant
+    quality: Common
+    applied: true
+
+- type: entity
+  parent: Z14MobMutantPseudogiant
+  id: Z14STMobMutantPseudogiantUncommon
+  categories: [ Zona14 ]
+  name: Adapted Pseudogiant
+  suffix: Z14
+  components:
+  - type: STMobVariant
+    quality: Uncommon
+
+- type: entity
+  parent: Z14MobMutantPseudogiant
+  id: Z14STMobMutantPseudogiantRare
+  categories: [ Zona14 ]
+  name: Mutated Pseudogiant
+  suffix: Z14
+  components:
+  - type: STMobVariant
+    quality: Rare
+
+- type: entity
+  parent: Z14MobMutantPseudogiant
+  id: Z14STMobMutantPseudogiantLegendary
+  categories: [ Zona14 ]
+  name: Singular Pseudogiant
+  suffix: Z14
+  components:
+  - type: STMobVariant
+    quality: Legendary

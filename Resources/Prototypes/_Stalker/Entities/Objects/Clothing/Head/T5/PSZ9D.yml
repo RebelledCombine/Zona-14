@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   abstract: true
   parent: STClothingHeadBase
   id: STClothingHeadHelmetTacticalT5Base
-  name: база тактического шлема T5
+  name: T5 Tactical Helmet Base
   suffix: ST, T5, Tactical
   components:
   - type: IngestionBlocker
@@ -31,8 +32,8 @@
 - type: entity
   parent: STClothingHeadHelmetTacticalT5Base
   id: ClothingHeadHelmetPSZ9D
-  name: шлем «ПСЗ-9д»
-  description: Это шлем, специально разработанный для защиты от колющих атак. Есть устойчивость к другим видам повреждений.
+  name: PSZ-9D Helmet
+  description: This helmet was specially designed for protection against piercing attacks. It also has resistance to other types of damage.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/hats/psz9d_helm.rsi
@@ -42,8 +43,8 @@
 - type: entity
   parent: STClothingHeadHelmetTacticalT4Base
   id: ClothingHeadHelmet1SHBandit
-  name: шлем «ПСЗ-9д» бандитов
-  description: Крутой шлем для крутых пацанов.
+  name: PSZ-9D Helmet (Bandit)
+  description: A cool helmet for cool guys.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/hats/1SHBandit.rsi

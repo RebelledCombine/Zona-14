@@ -1,0 +1,87 @@
+- type: entity
+  id: Z14RandomLootBox1
+  name: Random loot spawn
+  categories: [ HideSpawnMenu, Zona14 ]
+  suffix: Z14
+  parent: FlexibleMarker
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: Objects/Specific/Xenoarchaeology/xeno_artifacts.rsi
+        state: ano01
+  - type: RandomSpawner
+    rarePrototypes:
+      - Z14MedkitAI2
+      - Z14STEnergyDrink
+      - Z14antiradpill
+      - Z14MedkitMilitary
+      - Defibrillator
+      - HandheldGPSBasic
+      - GeigerCounter
+      - CasseteTwoDonateRadio
+      - CasseteThreeDonateRadio
+      -  CasseteFourDonateRadio
+      -  CasseteFiveDonateRadio
+      -  CasseteSixDonateRadio
+      -  CasseteSevenDonateRadio
+      -  CasseteEightDonateRadio
+      -  CasseteNineDonateRadio
+      -  CasseteTenDonateRadio
+      -  CasseteElevenDonateRadio
+      -  CasseteTwelveDonateRadio
+      -  CasseteThirteenDonateRadio
+      -  CasseteFourteenDonateRadio
+      -  CasseteFiveteenDonateRadio
+      -  CasseteSixteenDonateRadio
+      -  CasseteSeventeenDonateRadio
+      -  CasseteEighteenDonateRadio
+      -  CasseteNineteenDonateRadio
+      -  CasseteTwentyOneDonateRadio
+      -  CasseteTwentyTwoDonateRadio
+      -  CasseteTwentyThreeDonateRadio
+      -  CasseteTwentyFourDonateRadio
+      -  CasseteTwentyFiveDonateRadio
+      -  CasseteTwentyDonateRadio
+      -  CasseteTwentySixDonateRadio
+      -  CasseteTwentySevenDonateRadio
+      -  CasseteTwentyEightDonateRadio
+      -  CasseteTwentyNineDonateRadio
+      -  CasseteThirtyOneDonateRadio
+      # EN additions
+      - Z14FoodSTRice
+      - Z14FoodSTFlour
+      - Z14FoodSTYeast
+      - Z14FoodSTBeans
+      - Z14FoodSTPotato
+      - Z14FoodSTOnion
+      - Z14FoodSTBeet
+      - STCookingPancakes
+      - STCookingBorscht
+      - STCookingHrechanyky
+    rareChance: 0.30
+    prototypes:
+      - DrinkVodkaBottleFull
+      - FoodTinMRE
+      - FoodSnackEnergy
+      - DrinkWaterBottleFull
+      - FoodKebabSkewer
+      - FoodCondimentPacketKetchup
+      - FoodTinPeaches
+      - FoodTinBeans
+      - FoodKebabSkewer
+      - FoodTofuSlice
+      - FoodPelmeniBowl
+      - FoodSnackChocolate
+      - FoodCondimentPacketSoy
+      - FoodCondimentPacketSalt
+      - Z14STFoodBreadPlain
+      - FoodSnackChips
+      # EN additions
+      - Z14FoodSTSpice
+      - Z14FoodSTSugar
+      - STCookingFreshCheese
+      - STCookingCakePlain
+    chance: 0.40
+    offset: 0.0
+

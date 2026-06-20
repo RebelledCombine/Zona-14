@@ -1,0 +1,49 @@
+- type: entity
+  parent: STBaseWeaponGameRevolver
+  id: Z14STWeaponRevolverSWModel325
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: S&W Model 325
+  description: A six-shooter revolver popular among gun enthusiasts in .45 ACP. It is about 4 inches of barrel length, providing comfortable wearing and good shooting accuracy.
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Weapons/Guns/Revolvers/s&w_model_325.rsi
+      scale: 0.9, 0.9
+      layers:
+      - state: icon
+        map: ["enum.GunVisualLayers.Base"]
+    - type: Gun
+      minAngle: 0
+      maxAngle: 40
+      fireRate: 4
+      angleIncrease: 12
+      angleDecay: 25
+      projectileSpeed: 50
+      selectedMode: SemiAuto
+      soundGunshot:
+        path: /Audio/_Stalker/Effects/Guns/revolver4.ogg
+    - type: RevolverAmmoProvider
+      whitelist:
+        tags:
+          - Cartridge45ACP
+          - STSpeedLoader45ACP
+      proto: null
+      capacity: 6
+      chambers: [ null, null, null, null, null, null ]
+      ammoSlots: [ null, null, null, null, null, null ]
+      soundEject:
+        path: /Audio/Weapons/Guns/MagOut/revolver_magout.ogg
+      soundInsert:
+        path: /Audio/Weapons/Guns/MagIn/revolver_magin.ogg
+    - type: STWeight
+      self: 1.58
+    - type: StaticPrice
+      price: 30
+    - type: UseDelay
+      delay: 1
+    - type: RepositoryItem
+      categoryName: Weapons
+    - type: STWeaponDamageFalloff
+      falloffMultiplier: 0.8
+    - type: STWeaponAccuracy
+      accuracyMultiplier: 1.44

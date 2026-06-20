@@ -1,7 +1,8 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: STClothingOuterArmorBodyBase
   id: STClothingOuterArmor6B13Base
-  name: 6Б13 #base
+  name: 6B13
   suffix: ST, T4, PvP
   abstract: true
   components:
@@ -27,8 +28,8 @@
 - type: entity
   parent: STClothingOuterArmor6B13Base
   id: ClothingOuterArmor6B13
-  name: 6Б13 военный
-  description: Стандартный бронежилет IV типа, обеспечивающий достойную защиту от большинства видов повреждений
+  name: 6B13 Military
+  description: Standard Type IV body armor, providing decent protection against most types of damage
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/outerClothing/6b13.rsi
@@ -38,8 +39,8 @@
 - type: entity
   parent: STClothingOuterArmor6B13Base
   id: ClothingOuterArmor6B13Sera
-  name: 6Б13 'Серафимов'
-  description: Стандартный бронежилет IV типа, обеспечивающий достойную защиту от большинства видов повреждений
+  name: 6B13 'Seraphim'
+  description: Standard Type IV body armor, providing decent protection against most types of damage
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/outerClothing/serafim-6b13.rsi
@@ -49,8 +50,8 @@
 - type: entity
   parent: STClothingOuterArmor6B13Base
   id: ClothingOuterArmor6B13Police
-  name: 6Б13 полицейский
-  description: Стандартный бронежилет IV типа, обеспечивающий достойную защиту от большинства видов повреждений
+  name: 6B13 Police
+  description: Standard Type IV body armor, providing decent protection against most types of damage
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/outerClothing/6b13_police.rsi
@@ -60,8 +61,8 @@
 - type: entity
   parent: STClothingOuterArmor6B13Base
   id: ClothingOuterArmorUNTAR
-  name: бронежилет UNTAR
-  description: Стандартный бронежилет IV типа, обеспечивающий достойную защиту от большинства видов повреждений. Адаптированный от 6Б13.
+  name: UNTAR Body Armor
+  description: Standard Type IV body armor that provides decent protection against most types of damage. Adapted from 6B13.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/outerClothing/Untar.rsi
@@ -71,8 +72,8 @@
 - type: entity
   parent: ClothingOuterArmorPSZ9D
   id: STClothingOuterArmorVolchankaFreedom
-  name: нагрудник «Волчанка»
-  description: Производимый ремесленниками группировки «Воля» усиленный нагрудник с защитой больше от пуль, чем от всего остального. Является кустарной модификацией 6б13.
+  name: Lupus chest plate
+  description: A reinforced chest plate produced by the Wola Group artisans that protects against bullets more than anything else. It is an artisanal modification of the 6b13.
   components:
     - type: Sprite
       sprite: _Stalker/Objects/Clothing/outerClothing/freedom_defender.rsi
@@ -98,8 +99,8 @@
 - type: entity
   parent: STClothingOuterArmor6B13Base
   id: ClothingOuterArmor6B13Zavet
-  name: 6Б13 завета
-  description: Стандартный бронежилет IV типа, обеспечивающий достойную защиту от большинства видов повреждений
+  name: 6B13 Zavet
+  description: A standard type IV body armor, providing decent protection from most types of damage.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/outerClothing/6b13_zavet.rsi

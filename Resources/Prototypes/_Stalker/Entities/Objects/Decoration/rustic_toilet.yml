@@ -1,5 +1,6 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
-  name: Деревенский туалет
+  name: Village toilet
   id: STrustictoilet
   parent: ClosetStalkerBase
   suffix: ST, Mapping

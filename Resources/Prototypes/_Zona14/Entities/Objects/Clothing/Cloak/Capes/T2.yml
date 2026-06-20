@@ -1,0 +1,222 @@
+# Swamp
+- type: entity
+  parent: Z14STClothingCloakBase
+  id: Z14ClothingOuterCoatBolotniy
+  categories: [ Zona14 ]
+  name: '"swamp" raincoat'
+  suffix: Z14
+  description: a thick cloak with leaf, grass, and stick camouflage applied on top.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/cloak/bolotniy.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/cloak/bolotniy.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetBolotniyCoat
+- type: entity
+  parent: STClothingHeadHatBase
+  id: Z14ClothingHeadHelmetBolotniyCoat
+  suffix: Z14
+  name: hood of the "swamp man" cloak
+  categories: [ HideSpawnMenu, Zona14 ]
+  description: Covers your head
+  components:
+  - type: STWeight
+    self: 4
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/bolotniy_hat.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/bolotniy_hat.rsi
+  - type: HideLayerClothing
+    slots:
+    - Hair
+
+# Black chainmail cloak
+
+- type: entity
+  parent: Z14STClothingCloakBase
+  id: Z14ClothingOuterCoatKolchyga
+  categories: [ Zona14 ]
+  name: chainmail black cloak
+  suffix: Z14
+  description: A thick cloak painted black, with chainmail lining.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/cloak/coat_pahan.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/cloak/coat_pahan.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetBlackCoat
+- type: entity
+  parent: STClothingHeadHatBase
+  id: Z14ClothingHeadHelmetBlackCoat
+  suffix: Z14
+  name: black hood
+  categories: [ HideSpawnMenu, Zona14 ]
+  description: Covers your head
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/coat_hat_pahan.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/coat_hat_pahan.rsi
+  - type: HideLayerClothing
+    slots:
+    - Hair
+
+- type: entity
+  parent: Z14ClothingOuterCoatKolchyga
+  id: Z14STClothingOuterCoatTihiy
+  categories: [ Zona14 ]
+  name: Silent Camo Cloak
+  suffix: Z14
+  description: A well-made cloak with thick lining and camouflage.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/cloak/coat_tihiy.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/cloak/coat_tihiy.rsi
+  - type: ToggleableClothing
+    clothingPrototype: STClothingHeadHelmetTihiy
+  - type: PersonalDamage
+    damage:
+      types:
+        Radiation: 18.01
+
+- type: entity
+  parent: STClothingHeadHatBase
+  id: Z14STClothingHeadHelmetTihiy
+  suffix: Z14
+  name: Camouflage Hood
+  description: Covers your head.
+  categories: [ HideSpawnMenu, Zona14 ]
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/coat_hat_tihiy.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/coat_hat_tihiy.rsi
+  - type: HideLayerClothing
+    slots:
+    - Hair
+
+# Leather cloak
+- type: entity
+  parent: Z14STClothingCloakBase
+  id: Z14ClothingOuterCoatStalker
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: leather raincoat
+  description: A standard black leather cloak. No significant protection — just keeps you warm at night and softens a blind dog's bite. Rather uncomfortable in the Zone, yet often used by bandits — possibly just for the look.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/cloak/coat_stalker.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/cloak/coat_stalker.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHatHoodCoatStalker
+- type: entity
+  parent: STClothingHeadHatBase
+  id: Z14ClothingHeadHatHoodCoatStalker
+  suffix: Z14
+  categories: [ HideSpawnMenu, Zona14 ]
+  name: hood
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/coat_hat_stalker.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/coat_hat_stalker.rsi
+  - type: HideLayerClothing
+    slots:
+    - Hair
+
+# Skins
+# QEWAEWA2
+- type: entity
+  parent: Z14STClothingCloakBase
+  id: Z14STClothingOuterCoatNovember
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Camouflage Cloak November
+  description: A well-made cloak with thick lining and late autumn forest camouflage
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/cloak/coat_november.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/cloak/coat_november.rsi
+  - type: ToggleableClothing
+    clothingPrototype: STClothingHeadHelmetNovember
+- type: entity
+  parent: STClothingHeadHatBase
+  id: Z14STClothingHeadHelmetNovember
+  suffix: Z14
+  name: Autumn Hood
+  categories: [ HideSpawnMenu, Zona14 ]
+  description: Covers your head
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/hood_november.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/hood_november.rsi
+  - type: HideLayerClothing
+    slots:
+    - Hair
+
+- type: entity
+  parent: Z14STClothingCloakBase
+  id: Z14STClothingOuterCoatHimera
+  categories: [ Zona14 ]
+  name: Chimera Camo Cloak
+  suffix: Z14
+  description: A well-made cloak with thick lining and camouflage.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/cloak/coat_himera.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/cloak/coat_himera.rsi
+  - type: ToggleableClothing
+    clothingPrototype: STClothingHeadHelmetHimera
+- type: entity
+  parent: STClothingHeadHatBase
+  id: Z14STClothingHeadHelmetHimera
+  suffix: Z14
+  name: Camouflage Hood
+  description: Covers your head.
+  categories: [ HideSpawnMenu, Zona14 ]
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/coat_hat_himera.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/coat_hat_himera.rsi
+  - type: HideLayerClothing
+    slots:
+    - Hair
+
+- type: entity
+  parent: Z14STClothingCloakBase
+  id: Z14STClothingCapeT2SerafimPrestige
+  categories: [ Zona14 ]
+  name: Seraphim Prestige Cloak
+  suffix: Z14
+  description: Made in a dark green color scheme with metal inserts
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/cloak/Sera_/cape_serafim_prestige.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/cloak/Sera_/cape_serafim_prestige.rsi
+  - type: ToggleableClothing
+    clothingPrototype: STClothingHeadHelmetprestiege
+
+- type: entity
+  parent: STClothingHeadHatBase
+  id: Z14STClothingHeadHelmetprestiege
+  suffix: Z14
+  name: camouflage hood
+  description: Covers your head and hides your face... a little...
+  categories: [ HideSpawnMenu, Zona14 ]
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/coat_hat_prestiege.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/coat_hat_prestiege.rsi
+  - type: HideLayerClothing
+    slots:
+    - Hair

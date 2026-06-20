@@ -1,7 +1,8 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: STBaseMobMutant
   id: BaseMobMutantBlindDog
-  name: база слепого пса
+  name: Blind Dog Base
   abstract: true
   components:
     - type: Damageable
@@ -80,8 +81,8 @@
 - type: entity
   parent: BaseMobMutantBlindDog
   id: MobMutantBlindDogSmall
-  name: слепой пёс
-  description: Мелкий слепой пёс, примесь бультерьера с радиацией.
+  name: Blind Dog
+  description: A small blind dog, a mix of bull terrier and radiation.
   components:
     - type: HTN
       rootTask:
@@ -180,8 +181,8 @@
 - type: entity
   parent: BaseMobMutantBlindDog
   id: MobMutantBlindDogTall
-  name: слепой пёс
-  description: Худощавый, высокий слепой пёс с длинными лапами, которые позволяют ему разгоняться до больших скоростей.
+  name: "{ ent-MobMutantBlindDogSmall }"
+  description: A lanky, tall blind dog with long legs that let it accelerate to high speeds.
   components:
     - type: HTN
       rootTask:
@@ -280,8 +281,8 @@
 - type: entity
   parent: BaseMobMutantBlindDog
   id: MobMutantBlindDogRed
-  name: слепой пёс
-  description: Слепой пёс средних габаритов, 80% кожи отсутствует на теле.
+  name: "{ ent-MobMutantBlindDogSmall }"
+  description: A medium-sized blind dog with 80% of its skin missing.
   components:
     - type: HTN
       rootTask:
@@ -364,8 +365,8 @@
 - type: entity
   parent: BaseMobMutantBlindDog
   id: MobMutantBlindDogWhitePackHead
-  name: глава стаи слепой пёс
-  description: Белый, огромный слепой пёс, походящий на примесь собаки и белого медведя, — вожак стаи.
+  name: Blind Dog Pack Leader
+  description: A huge, white blind dog resembling a cross between a dog and a polar bear — the leader of the pack.
   components:
     - type: HTN
       rootTask:

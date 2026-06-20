@@ -1,0 +1,24 @@
+- type: craftRecipe
+  id: Z14newrecipeSTClothingHeadTinfoil
+  resultProtos:
+    - STClothingHeadTinfoil
+  craftTime: 6
+  items:
+    STClothingHeadTinfoilBlueprint:
+      amount: 1
+      catalyzer: true
+    STCraftSheetIronT2:
+      amount: 1
+    STCraftTapeKitT2:
+      amount: 1
+
+- type: lightCraftingRecipe
+  id: Z14STCraftSkinClothingHeadHelmetInfantryProject
+  results:
+    - ClothingHeadHelmetInfantryProject
+  steps:
+    firstIngredient: STSkinsKitProject
+    secondIngredient: ClothingHeadHelmetInfantry
+    keepFirst: true
+    time: 5
+

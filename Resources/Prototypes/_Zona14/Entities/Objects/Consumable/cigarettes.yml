@@ -1,0 +1,86 @@
+- type: entity
+  description: "If you want to get cancer, might as well do it in style."
+  id: Z14STBaseSmokable
+  categories: [ Zona14 ]
+  parent: BaseItem
+  abstract: true
+  components:
+  - type: Smokable
+  - type: Sprite
+  - type: Appearance
+  - type: BurnStateVisuals
+  - type: Tag
+    tags:
+    - Trash
+  - type: SpaceGarbage
+  - type: StaticPrice
+    price: 5
+  - type: InjectableSolution
+    solution: smokable
+
+# Base for all cigars and cigarettes.
+- type: entity
+  parent: Z14STBaseSmokable
+  id: Z14STBaseCigar
+  categories: [ Zona14 ]
+  abstract: true
+  components:
+  - type: Smokable
+    exposeTemperature: 1173.15
+  - type: Cigar
+  - type: Tag
+    tags:
+    - Trash
+  - type: SolutionContainerManager
+    solutions:
+      smokable:
+        maxVol: 20
+        reagents:
+          - ReagentId: Nicotine
+            Quantity: 10
+
+
+- type: entity
+  id: Z14CigPackMarlboro
+  categories: [ Zona14 ]
+  parent: CigPackBase
+  name: Marlboro
+  description: The company's blending masters prepare smoking mixes from dozens of tobacco varieties. Leaves carefully selected by professional tasters. Raw materials undergo prolonged fermentation. Premium cigarettes, in short.
+  suffix: Z14
+  components:
+  - type: STWeight
+    self: 0.1
+  - type: Sprite
+    sprite: _Stalker/Cigarettes/Packs/marlboro.rsi
+  - type: Item
+    sprite: _Stalker/Cigarettes/Packs/marlboro.rsi
+
+- type: entity
+  id: Z14CigPackSuka
+  categories: [ Zona14 ]
+  parent: CigPackBase
+  name: Suka
+  description: Cigarettes, damn — only for the most influential bandits!
+  suffix: Z14
+  components:
+  - type: STWeight
+    self: 0.1
+  - type: Sprite
+    sprite: _Stalker/Cigarettes/Packs/suka.rsi
+  - type: Item
+    sprite: _Stalker/Cigarettes/Packs/suka.rsi
+
+- type: entity
+  id: Z14CigPackKosmos
+  categories: [ Zona14 ]
+  parent: CigPackBase
+  name: Kosmos
+  description: The most common cigarettes of the USSR era! Produced by nearly every tobacco factory in the Union — and notably, despite identical packaging, they varied in taste and quality.
+  suffix: Z14
+  components:
+  - type: STWeight
+    self: 0.1
+  - type: Sprite
+    sprite: _Stalker/Cigarettes/Packs/kosmos.rsi
+  - type: Item
+    sprite: _Stalker/Cigarettes/Packs/kosmos.rsi

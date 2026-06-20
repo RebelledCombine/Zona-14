@@ -1,0 +1,20 @@
+
+- type: entity
+  parent: BaseItem
+  id: Z14STMessangerCartridge
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Messenger
+  description: A program for communication between stalkers
+  components:
+    - type: Sprite
+      sprite: Objects/Devices/cartridge.rsi
+      state: cart-y
+    - type: UIFragment
+      ui: !type:MessengerUi
+    - type: Cartridge
+      programName: messenger-program-name
+      icon:
+        sprite: Structures/Machines/server.rsi
+        state: server
+    - type: PdaMessenger

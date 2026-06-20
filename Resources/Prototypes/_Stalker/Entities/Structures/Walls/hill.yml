@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: BaseWall
   id: HolmIndestructible
-  name: холм
-  description: Небольшая возвышенность, в плане округлой или овальной формы, с пологими склонами и слабо выраженным подножием.
+  name: hill
+  description: A small elevation, round or oval in plan, with gentle slopes and a poorly defined foot.
   suffix: ST, Mapping, indestructible
   components:
     - type: Tag

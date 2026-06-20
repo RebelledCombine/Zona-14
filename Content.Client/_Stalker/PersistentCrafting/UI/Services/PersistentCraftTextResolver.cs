@@ -287,8 +287,8 @@ public sealed class PersistentCraftTextResolver
 
     private static string FormatTagIngredientName(string tag)
     {
-        // Пробуем найти локализацию по ключу persistent-craft-tag-{tag}.
-        // Для добавления красивого имени к любому тегу достаточно добавить ключ в .ftl файл.
+        // Try to find localization by key persistent-craft-tag-{tag}. // Zona14: translated comment
+        // To add a display name for any tag, just add a key to the .ftl file. // Zona14: translated comment
         var tagLoc = TryLoc($"persistent-craft-tag-{tag}");
         if (!string.IsNullOrWhiteSpace(tagLoc))
             return tagLoc;

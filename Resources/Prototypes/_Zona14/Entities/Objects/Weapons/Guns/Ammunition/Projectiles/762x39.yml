@@ -3,7 +3,7 @@
 - type: entity
   id: Z14Bullet739FMJ
   suffix: Z14
-  name: bullet (7.62x39 FMJ)
+  name: bullet (7.62x39 rifle)
   parent: STBaseMRBullet
   categories: [ HideSpawnMenu, Zona14 ]
   components:
@@ -20,7 +20,7 @@
 - type: entity
   id: Z14Bullet739HP
   suffix: Z14
-  name: bullet (7.62x39 HP)
+  name: bullet (7.62x39 rifle)
   parent: Z14Bullet739FMJ
   categories: [ HideSpawnMenu, Zona14 ]
   components:
@@ -38,7 +38,7 @@
 - type: entity
   id: Z14Bullet739PC
   suffix: Z14
-  name: bullet (7.62x39 AP)
+  name: bullet (7.62x39 rifle)
   parent: Z14Bullet739FMJ
   categories: [ HideSpawnMenu, Zona14 ]
   components:
@@ -53,7 +53,7 @@
 - type: entity
   id: Z14Bullet739BP
   suffix: Z14
-  name: bullet (7.62x39 AP)
+  name: bullet (7.62x39 rifle)
   parent: Z14Bullet739FMJ
   categories: [ HideSpawnMenu, Zona14 ]
   components:

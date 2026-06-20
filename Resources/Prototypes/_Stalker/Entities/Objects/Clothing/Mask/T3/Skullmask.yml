@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: STClothingMaskGas
   id: STClothingMaskSeraphimSkull
-  name: стальная маска егеря серафимов
-  description: Маска всегда служила вещью, за которой можно было спрятать лицо, защититься от ядовитых газов или пуль. Но у этой маски цель устрашать.
+  name: steel skull mask
+  description: A mask has always been something to hide your face behind, or to protect against toxic gases or bullets. But this mask’s purpose is intimidation. Behind it hides only anger and hatred toward anyone who dares to look at it.
   suffix: ST, T3, Custom
   components:
   - type: Sprite

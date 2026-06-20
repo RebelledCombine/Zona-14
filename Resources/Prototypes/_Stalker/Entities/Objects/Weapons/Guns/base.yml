@@ -52,7 +52,7 @@
   - type: PullDoAfter
     pullTime: 2.5
   - type: RepositoryItem
-    categoryName: Оружие
+    categoryName: Weapons # Zona14: Оружие
   - type: Gun
     projectileSpeed: 50
     fireRate: 1

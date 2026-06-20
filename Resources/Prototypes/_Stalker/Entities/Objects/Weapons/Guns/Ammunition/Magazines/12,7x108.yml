@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 
 - type: entity
   id: 13x108Mag10
-  name: магазин 12,7x108 (10)
-  description: Магазин 12,7x108 для винтовок. Вместимость пуль 10. Продают пустым.
+  name: 12.7x108 magazine (10)
+  description: 12.7x108 magazine for rifles. Holds 10 rounds. Sold empty.
   parent: Base545Mag10
   suffix: Stalker
   components:

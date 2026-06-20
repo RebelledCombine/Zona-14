@@ -1,12 +1,13 @@
-# ЖЕЛЕЗНЫЕ БОЧКИ
+# Zona14: translated Russian names/descriptions to English
+# Zona14: ЖЕЛЕЗНЫЕ БОЧКИ
 
 - type: entity
   id: BaseBarrel
   abstract: true
   parent: STBaseStructure
-  name: бочка
+  name: barrel
   suffix: Stalker
-  description: Большой цилиндрический сосуд для жидкостей с двумя плоскими днищами и несколько выпуклыми стенками, которые стянуты обручами.
+  description: A large cylindrical vessel for liquids with two flat bottoms and slightly convex walls that are tightened by hoops.
   placement:
     mode: PlaceFree
   components:
@@ -37,8 +38,8 @@
 - type: entity
   id: BarrelExpl
   parent: BaseStructureDynamic
-  suffix: Stalker, НЕ МАППИТЬ
-  name: бочка
+  suffix: Stalker, DO NOT MAP # Zona14: Stalker, НЕ МАППИТЬ
+  name: "{ ent-BaseBarrel }"
   components:
   - type: InteractionOutline
   - type: Physics
@@ -95,11 +96,11 @@
     intensitySlope: 3
     totalIntensity: 300
 
-# ДЕРЕВЯННЫЕ БОЧКИ
+# Zona14: ДЕРЕВЯННЫЕ БОЧКИ
 
 - type: entity
   id: BarrelWooden1
-  name: деревянная бочка
+  name: wooden barrel
   suffix: Stalker
   parent: BaseBarrel
   components:

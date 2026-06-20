@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 # Base
 - type: entity
   parent: STClothingOuterArmorStorageBasic
   id: STClothingOuterArmorSSP99Base
-  name: ССП-99 # base
+  name: SSP-99
   abstract: true
   suffix: ST, T4, Env
   components:
@@ -57,8 +58,8 @@
 - type: entity
   parent: ClothingHeadHardsuitBase
   id: STClothingHeadHelmetSSP99Base
-  name: шлем зелёного «Эколога»
-  description: Лёгкий шлем с герметичным забралом, предназначенный для защиты лица от некоторых аномальных воздействий.
+  name: "Green Ecologist's helmet"
+  description: Protects against anomalies and radiation, but definitely not against bullets.
   categories: [ HideSpawnMenu ]
   abstract: true
   components:
@@ -97,8 +98,8 @@
 - type: entity
   parent: STClothingOuterArmorSSP99Base
   id: ClothingOuterArmorSSP99
-  name: ССП-99М
-  description: Высококачественный модифицированный комбинезон ССП-99. Добавлена защита торса от пулевого и осколочного повреждения. Опять же устарел, как и его младший собрат.
+  name: Green SSP-99 "Ecologist"
+  description: Gray Science Suit. Not expensive, and not difficult to make a protective suit. Similar ones are used in special laboratories or firefighters.
   components:
   - type: Armor
     armorLevels:
@@ -116,8 +117,8 @@
 - type: entity
   parent: STClothingHeadHelmetSSP99Base
   id: ClothingHeadHelmetSSP99
-  name: Шлем «Заслон»
-  description: Лёгкий шлем с герметичным забралом, предназначенный для защиты лица от некоторых аномальных воздействий.
+  name: "Green Ecologist's helmet"
+  description: Protects against anomalies and radiation, but definitely not against bullets.
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
@@ -130,8 +131,8 @@
 - type: entity
   parent: STClothingOuterArmorSSP99Base
   id: ClothingOuterArmorSSP99Zavet
-  name: ССП «Завет»
-  description: Броня ССП, используемый группировкой «Завет».
+  name: '"Covenant" Balanced Scorecard'
+  description: BSC armor used by the Covenant group.
   components:
     - type: Sprite
       sprite: _Stalker/Objects/Clothing/outerClothing/zavet_ssp/zavet_ssp.rsi
@@ -143,8 +144,8 @@
 - type: entity
   parent: STClothingHeadHelmetSSP99Base
   id: ClothingHeadHelmetSSPZavet
-  name: шлем «Завет»
-  description: Шлем для брони ССП, используемый группировкой «Завет».
+  name: Covenant Helmet
+  description: A helmet for SSP armor used by the Covenant Group.
   categories: [ HideSpawnMenu ]
   components:
     - type: Sprite
@@ -157,8 +158,8 @@
 - type: entity
   parent: STClothingOuterArmorSSP99Base
   id: ClothingOuterArmorSSP99Amber
-  name: ССП-99 «Эколог»
-  description: Созданный для работы в условиях Зоны защитный костюм. Уже давно устарел, но всё так же используется учёными за неимением нормального финансирования.
+  name: Orange SSP-99 "Amber"
+  description: The costume is a basic variation of the SSP-99 ecologist suit.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/outerClothing/ssp99red.rsi
@@ -170,8 +171,8 @@
 - type: entity
   parent: STClothingHeadHelmetSSP99Base
   id: ClothingHeadHelmetSSP99Amber
-  name: Шлем «Заслон»
-  description: Лёгкий шлем с герметичным забралом, предназначенный для защиты лица от некоторых аномальных воздействий.
+  name: Amber Orange Helmet
+  description: Protects against anomalies and radiation, but definitely not against bullets.
   categories: [ HideSpawnMenu ]
   components:
     - type: Sprite
@@ -184,8 +185,8 @@
 - type: entity
   parent: STClothingOuterArmorSSP99Base
   id: ClothingOuterArmorSSP99White
-  name: Белый ССП-99 «Алмаз»
-  description: Один из тех костюмов НИИ «ЧаЗ», которые можно назвать удачными.
+  name: White SSP-99 "Almaz"
+  description: One of those costumes of the Research Institute "ChaZ" that can be called successful.
   components:
   - type: Armor
     armorClass: 1
@@ -218,8 +219,8 @@
 - type: entity
   parent: STClothingHeadHelmetSSP99Base
   id: ClothingHeadHelmetSSP99White
-  name: шлем белого ССП-99 «Алмаз»
-  description: Защитит от аномалий и радиации, но точно не от пуль.
+  name: white helmet SSP-99 "Almaz"
+  description: Protects against anomalies and radiation, but definitely not against bullets.
   categories: [ HideSpawnMenu ]
   components:
     - type: Sprite
@@ -232,9 +233,9 @@
 - type: entity
   parent: STClothingOuterArmorSSP99Base
   id: STClothingOuterArmorSSP99Project
-  name: Костюм «ССП NJ-1»
+  name: '"NJ-1 SSP" suit'
   suffix: ST, T4, Env, Project
-  description: Специальный электрозащитный костюм версии NJ-1, в особом понимании изолирует слабые электрические воздействия как на костюм, так и на его носителя.
+  description: "A special electrical protective suit developed by the NJ-1 version of \"The Project\" specifically isolates mild electrical effects on both the suit and its wearer."
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/outerClothing/ssp_nj1.rsi
@@ -247,8 +248,8 @@
 - type: entity
   parent: STClothingHeadHelmetSSP99Base
   id: ClothingHeadHardsuitSevaHelmNJ1
-  name: Шлем ССП «NJ-1»
-  description: Несмотря, на преимущественно стеклянную состовляющую, довольно прочный.
+  name: "NJ-1 Helmet"
+  description: Despite the predominantly glass composition, it is quite durable.
   suffix: Stalker
   categories: [ HideSpawnMenu ]
   components:

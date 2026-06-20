@@ -1,0 +1,78 @@
+- type: entity
+  name: izlom (1) (10%) 30m
+  id: Z14STTriggerIzlom11030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger111030
+  suffix: Z14
+  components:
+  - type: SpawnOnApproach
+    prototypes:
+    - Z14STMobMutantIzlom
+    restricted:
+    - Z14STMobMutantIzlom
+
+- type: entity
+  name: izlom (1) (25%) 30m
+  id: Z14STTriggerIzlom12530
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger112530
+  suffix: Z14
+  components:
+  - type: SpawnOnApproach
+    prototypes:
+    - Z14STMobMutantIzlom
+    restricted:
+    - Z14STMobMutantIzlom
+
+- type: entity
+  name: izlom (1) (100%) 30m
+  id: Z14STTriggerIzlom110030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger1110030
+  suffix: Z14
+  components:
+  - type: SpawnOnApproach
+    prototypes:
+    - Z14STMobMutantIzlom
+    restricted:
+    - Z14STMobMutantIzlom
+
+
+- type: entity
+  name: izlom trigger (1) (100%) 30m
+  id: Z14STTriggerIzlom1110030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger1110030
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+      - Z14STMobMutantIzlom
+      restricted:
+      - Z14STMobMutantIzlom
+
+- type: entity
+  name: izlom trigger (2) (100%) 30m
+  id: Z14STTriggerIzlom2210030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger2210030
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+      - Z14STMobMutantIzlom
+      restricted:
+      - Z14STMobMutantIzlom
+
+- type: entity
+  name: izlom trigger (3) (100%) 30m
+  id: Z14STTriggerIzlom3310030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger3310030
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+      - Z14STMobMutantIzlom
+      restricted:
+      - Z14STMobMutantIzlom

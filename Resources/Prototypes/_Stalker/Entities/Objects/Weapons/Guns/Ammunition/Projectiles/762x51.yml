@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 #7.62x51
 
 - type: entity
   id: Bullet751M80
-  name: bullet (7.62х51 rifle)
+  name: bullet (7.62x51 rifle)
   parent: STBaseHRBullet
   categories: [ HideSpawnMenu ]
   components:
@@ -18,7 +19,7 @@
 
 - type: entity
   id: Bullet751Noiser
-  name: bullet (7.62х51 rifle)
+  name: "{ ent-Bullet751M80 }"
   parent: Bullet751M80
   categories: [ HideSpawnMenu ]
   components:
@@ -33,7 +34,7 @@
 
 - type: entity
   id: Bullet751M61
-  name: bullet (7.62х51 rifle)
+  name: "{ ent-Bullet751M80 }"
   parent: Bullet751M80
   categories: [ HideSpawnMenu ]
   components:
@@ -45,7 +46,7 @@
 
 - type: entity
   id: Bullet751M993
-  name: bullet (7.62х51 rifle)
+  name: "{ ent-Bullet751M80 }"
   parent: Bullet751M80
   categories: [ HideSpawnMenu ]
   components:
@@ -57,7 +58,7 @@
 
 - type: entity
   id: Bullet754R
-  name: bullet (7.62х54 R rifle)
+  name: bullet (7.62x54R rifle)
   parent: Bullet751M80
   categories: [ HideSpawnMenu ]
   components:

@@ -1,3 +1,4 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   abstract: true
   parent: STBaseIngridient
@@ -37,9 +38,9 @@
 - type: entity
   parent: STSheetMetalBase
   id: STCraftSheetCopperT1
-  name: пластины меди T1
-  description: Широко применяются для изготовления различного оборудования. T1
-  suffix: Stalker, крафт, T1
+  name: T1 Copper Plates
+  description: Widely used for the manufacture of various equipment. T1
+  suffix: Stalker, craft, T1 # Zona14: Stalker, крафт, T1
   components:
   - type: STWeight
     self: 0.7
@@ -55,14 +56,14 @@
   - type: Craftable
   - type: Appearance
   - type: RepositoryItem
-    categoryName: Крафты
+    categoryName: Crafting # Zona14: Крафты
 
 - type: entity
   parent: STSheetMetalBase
   id: STCraftSheetIronT2
-  name: железные пластины T2
-  description: Широко применяются для изготовления различного оборудования. T2
-  suffix: Stalker, крафт, T2
+  name: T2 Iron Plates
+  description: Widely used for the manufacture of various equipment. T2
+  suffix: Stalker, craft, T2 # Zona14: Stalker, крафт, T2
   components:
   - type: STWeight
     self: 1
@@ -78,14 +79,14 @@
   - type: Craftable
   - type: Appearance
   - type: RepositoryItem
-    categoryName: Крафты
+    categoryName: Crafting # Zona14: Крафты
 
 - type: entity
   parent: STSheetMetalBase
   id: STCraftSheetBrassT3
-  name: латунные пластины T3
-  description: Уникальный материал сочетающий в себе устоичивость к коррозии, проводник электричества, антимикробные свойства T3
-  suffix: Stalker, крафт, T3
+  name: T3 Brass Plates
+  description: Unique material that combines corrosion resistance, electrical conductor, antimicrobial properties of T3
+  suffix: Stalker, craft, T3 # Zona14: Stalker, крафт, T3
   components:
   - type: STWeight
     self: 1
@@ -101,14 +102,14 @@
   - type: Craftable
   - type: Appearance
   - type: RepositoryItem
-    categoryName: Крафты
+    categoryName: Crafting # Zona14: Крафты
 
 - type: entity
   parent: STSheetMetalBase
   id: STCraftSheetAluminumT4
-  name: пластины алюминия T4
-  description: Широко применяются для изготовления различного оборудования. T4
-  suffix: Stalker, крафт, T4
+  name: T4 Aluminum Plates
+  description: Widely used for the manufacture of various equipment. T4
+  suffix: Stalker, craft, T4 # Zona14: Stalker, крафт, T4
   components:
   - type: STWeight
     self: 0.5
@@ -124,14 +125,14 @@
   - type: Craftable
   - type: Appearance
   - type: RepositoryItem
-    categoryName: Крафты
+    categoryName: Crafting # Zona14: Крафты
 
 - type: entity
   parent: STSheetMetalBase
   id: STCraftSheetSteelT5
-  name: стальные пластины T5
-  description: Устойчивые и прочные листы, созданные из сплава железа с добавлением углерода и других элементов. T5
-  suffix: Stalker, крафт, T5
+  name: T5 Steel Plates
+  description: Stable and durable sheets created from an alloy of iron with the addition of carbon and other elements. T5
+  suffix: Stalker, craft, T5 # Zona14: Stalker, крафт, T5
   components:
   - type: STWeight
     self: 1.5
@@ -147,4 +148,4 @@
   - type: Craftable
   - type: Appearance
   - type: RepositoryItem
-    categoryName: Крафты
+    categoryName: Crafting # Zona14: Крафты

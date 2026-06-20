@@ -1,0 +1,27 @@
+ent-Z14ClothingOuterArmor6B13 = 6B13 Military
+    .desc = Standard Type IV body armor, providing decent protection against most types of damage
+    .suffix = Z14
+
+ent-Z14ClothingOuterArmor6B13Police = 6B13 Police
+    .desc = Standard Type IV body armor, providing decent protection against most types of damage
+    .suffix = Z14
+
+ent-Z14ClothingOuterArmor6B13Sera = 6B13 'Seraphim'
+    .desc = Standard Type IV body armor, providing decent protection against most types of damage
+    .suffix = Z14
+
+ent-Z14ClothingOuterArmor6B13Zavet = 6B13 Zavet
+    .desc = A standard type IV body armor, providing decent protection from most types of damage.
+    .suffix = Z14
+
+ent-Z14ClothingOuterArmorUNTAR = UNTAR Body Armor
+    .desc = Standard Type IV body armor that provides decent protection against most types of damage. Adapted from 6B13.
+    .suffix = Z14
+
+ent-Z14STClothingOuterArmor6B13Base = 6B13
+    .desc = A standard Type I armored vest that provides decent protection against most types of damage.
+    .suffix = Z14
+
+ent-Z14STClothingOuterArmorVolchankaFreedom = Lupus chest plate
+    .desc = A reinforced chest plate produced by the Wola Group artisans that protects against bullets more than anything else. It is an artisanal modification of the 6b13.
+    .suffix = Z14

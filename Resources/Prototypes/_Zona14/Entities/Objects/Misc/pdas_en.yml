@@ -1,0 +1,158 @@
+- type: entity
+  parent: BaseStalkerPDAEN
+  id: Z14MercPDA
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Mercenary's PDA
+  description: It's connected to the common network to allow communication; it also has a built in cassette player.
+  components:
+  - type: Appearance
+    appearanceDataInit:
+     enum.PdaVisuals.PdaType:
+       !type:String
+       merc_on
+  - type: PdaBorderColor
+    borderColor: "#12213a"
+  - type: Icon
+    sprite: _Stalker_EN/Objects/Devices/pda.rsi
+    state: merc_off
+  - type: Pda
+    penSlot:
+      startingItem: Pen
+      priority: 4
+      whitelist:
+        tags:
+        - Write
+  - type: Boombox
+  - type: ItemSlots
+    slots:
+      cassette_slot:
+        name: Cassete
+        priority: 3
+        whitelist:
+          tags:
+            - Cassete
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+        priority: 2
+        startingItem: PowerCellHyper
+      dogtag_slot:
+        name: Stalker PDA
+        priority: 1
+#        startingItem: ClothingNeckDogtagBrigand
+        whitelist:
+          tags:
+          - Dogtag
+  - type: PointLight
+    enabled: false
+    radius: 5
+    energy: 2.5
+    netsync: false
+
+# Militaries
+
+
+- type: entity
+  parent: BaseStalkerPDAEN
+  id: Z14STVoenPdaEN
+  categories: [ Zona14 ]
+  name: Military PDA
+  suffix: Z14
+  description: A secure, encrypted device designed for field communication, mission management, and data collection. Built with reinforced casing to withstand radiation, rumored to withstand a nuclear blast.
+  components:
+  - type: Appearance
+    appearanceDataInit:
+     enum.PdaVisuals.PdaType:
+       !type:String
+       mpda_on
+  - type: Unremoveable
+  - type: PdaBorderColor
+    borderColor: "#285714"
+  - type: Pda
+    penSlot:
+      startingItem: Pen
+      priority: 4
+      whitelist:
+        tags:
+        - Write
+  - type: Boombox
+  - type: ItemSlots
+    slots:
+      cassette_slot:
+        name: Cassete
+        priority: 3
+        whitelist:
+          tags:
+            - Cassete
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+        priority: 2
+        startingItem: PowerCellHyper
+      dogtag_slot:
+        name: Stalker PDA
+        priority: 1
+        startingItem: Z14ClothingNeckDogtagOfficial
+        whitelist:
+          tags:
+          - Dogtag
+  - type: Armor
+    armorClass: 0
+    modifiers:
+      flatReductions:
+        Radiation: 2
+        Psy: 2
+  - type: PointLight
+    enabled: false
+    radius: 5
+    energy: 2.5
+    netsync: false
+
+
+- type: entity
+  parent: BaseStalkerPDAEN
+  id: Z14STOKSOPPdaEN
+  categories: [ Zona14 ]
+  name: Military PDA
+  suffix: Z14
+  description: A secure, encrypted device designed for field communication, mission management, and data collection. Rumored to withstand a nuclear blast.
+  components:
+  - type: Appearance
+    appearanceDataInit:
+     enum.PdaVisuals.PdaType:
+       !type:String
+       mpda_on
+  - type: PdaBorderColor
+    borderColor: "#285714"
+  - type: Pda
+    penSlot:
+      startingItem: Pen
+      priority: 4
+      whitelist:
+        tags:
+        - Write
+  - type: Boombox
+  - type: ItemSlots
+    slots:
+      cassette_slot:
+        name: Cassete
+        priority: 3
+        whitelist:
+          tags:
+            - Cassete
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+        priority: 2
+        startingItem: PowerCellHyper
+      dogtag_slot:
+        name: Stalker PDA
+        priority: 1
+#        startingItem: ClothingNeckDogtagOfficial
+        whitelist:
+          tags:
+          - Dogtag
+  - type: PointLight
+    enabled: false
+    radius: 5
+    energy: 2.5
+    netsync: false
+

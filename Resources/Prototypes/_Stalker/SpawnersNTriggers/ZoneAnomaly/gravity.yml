@@ -1,7 +1,8 @@
-# Общий
+# Zona14: translated Russian names/descriptions to English
+# Zona14: Общий
 - type: entity
   id: SpawnerZoneAnomalyGravityGroupChance1
-  name: спавнер гравитационной аномалии (10% шанс появления)
+  name: gravity anomaly spawner (1% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   categories: [ Spawner, StSkipSpawnTest ]
@@ -26,7 +27,7 @@
 
 - type: entity
   id: SpawnerZoneAnomalyGravityGroupChance5
-  name: спавнер гравитационной аномалии (15% шанс появления)
+  name: gravity anomaly spawner (5% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   categories: [ Spawner, StSkipSpawnTest ]
@@ -51,7 +52,7 @@
 
 - type: entity
   id: SpawnerZoneAnomalyGravityGroupChance10
-  name: спавнер гравитационной аномалии (20% шанс появления)
+  name: gravity anomaly spawner (10% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   categories: [ Spawner, StSkipSpawnTest ]
@@ -76,7 +77,7 @@
 
 - type: entity
   id: SpawnerZoneAnomalyGravityGroupChance25
-  name: спавнер гравитационной аномалии (35% шанс появления)
+  name: gravity anomaly spawner (25% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   categories: [ Spawner, StSkipSpawnTest ]
@@ -101,7 +102,7 @@
 
 - type: entity
   id: SpawnerZoneAnomalyGravityGroupChance50
-  name: спавнер гравитационной аномалии (50% шанс появления)
+  name: gravity anomaly spawner (50% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   categories: [ Spawner, StSkipSpawnTest ]
@@ -126,7 +127,7 @@
 
 - type: entity
   id: SpawnerZoneAnomalyGravityGroupChance100
-  name: спавнер гравитационной аномалии (100% шанс появления)
+  name: gravity anomaly spawner (100% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   categories: [ Spawner, StSkipSpawnTest ]
@@ -149,10 +150,10 @@
     chance: 1.0
     offset: 0.0
 
-# Эпицентр (Epicentre)
+# Zona14: Эпицентр (Epicentre)
 - type: entity
   id: SpawnerZoneAnomalyEpicentreChance1
-  name: спавнер аномалии эпицентр (1% шанс появления)
+  name: epicentre anomaly spawner (1% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   categories: [ Spawner, StSkipSpawnTest ]
@@ -170,7 +171,7 @@
 
 - type: entity
   id: SpawnerZoneAnomalyEpicentreChance10
-  name: спавнер аномалии эпицентр (10% шанс появления)
+  name: epicentre anomaly spawner (10% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   categories: [ Spawner, StSkipSpawnTest ]
@@ -188,7 +189,7 @@
 
 - type: entity
   id: SpawnerZoneAnomalyEpicentreChance25
-  name: спавнер аномалии эпицентр (25% шанс появления)
+  name: epicentre anomaly spawner (25% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   categories: [ Spawner, StSkipSpawnTest ]
@@ -206,7 +207,7 @@
 
 - type: entity
   id: SpawnerZoneAnomalyEpicentreChance50
-  name: спавнер аномалии эпицентр (50% шанс появления)
+  name: epicentre anomaly spawner (50% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   categories: [ Spawner, StSkipSpawnTest ]
@@ -224,7 +225,7 @@
 
 - type: entity
   id: SpawnerZoneAnomalyEpicentreChance100
-  name: спавнер аномалии эпицентр (100% шанс появления)
+  name: epicentre anomaly spawner (100% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   categories: [ Spawner, StSkipSpawnTest ]
@@ -240,10 +241,10 @@
     chance: 1.0
     offset: 0.0
 
-# Воронка (Gravi)
+# Zona14: Воронка (Gravi)
 - type: entity
   id: SpawnerZoneAnomalyGraviChance1
-  name: спавнер аномалии воронка (10% шанс появления)
+  name: gravi anomaly spawner (1% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   categories: [ Spawner, StSkipSpawnTest ]
@@ -263,7 +264,7 @@
 
 - type: entity
   id: SpawnerZoneAnomalyGraviChance5
-  name: спавнер аномалии воронка (15% шанс появления)
+  name: gravi anomaly spawner (5% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   categories: [ Spawner, StSkipSpawnTest ]
@@ -283,7 +284,7 @@
 
 - type: entity
   id: SpawnerZoneAnomalyGraviChance10
-  name: спавнер аномалии воронка (20% шанс появления)
+  name: gravi anomaly spawner (10% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   categories: [ Spawner, StSkipSpawnTest ]
@@ -303,7 +304,7 @@
 
 - type: entity
   id: SpawnerZoneAnomalyGraviChance25
-  name: спавнер аномалии воронка (35% шанс появления)
+  name: gravi anomaly spawner (25% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   categories: [ Spawner, StSkipSpawnTest ]
@@ -323,7 +324,7 @@
 
 - type: entity
   id: SpawnerZoneAnomalyGraviChance50
-  name: спавнер аномалии воронка (50% шанс появления)
+  name: gravi anomaly spawner (50% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   categories: [ Spawner, StSkipSpawnTest ]
@@ -343,7 +344,7 @@
 
 - type: entity
   id: SpawnerZoneAnomalyGraviChance100
-  name: спавнер аномалии воронка (100% шанс появления)
+  name: gravi anomaly spawner (100% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   categories: [ Spawner, StSkipSpawnTest ]
@@ -361,10 +362,10 @@
     chance: 1.0
     offset: 0.0
 
-# Трамплин (Springboard)
+# Zona14: Трамплин (Springboard)
 - type: entity
   id: SpawnerZoneAnomalySpringboardChance1
-  name: спавнер аномалии трамплин (10% шанс появления)
+  name: springboard anomaly spawner (1% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   categories: [ Spawner, StSkipSpawnTest ]
@@ -384,7 +385,7 @@
 
 - type: entity
   id: SpawnerZoneAnomalySpringboardChance5
-  name: спавнер аномалии трамплин (15% шанс появления)
+  name: springboard anomaly spawner (5% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   categories: [ Spawner, StSkipSpawnTest ]
@@ -404,7 +405,7 @@
 
 - type: entity
   id: SpawnerZoneAnomalySpringboardChance10
-  name: спавнер аномалии трамплин (20% шанс появления)
+  name: springboard anomaly spawner (10% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   categories: [ Spawner, StSkipSpawnTest ]
@@ -424,7 +425,7 @@
 
 - type: entity
   id: SpawnerZoneAnomalySpringboardChance25
-  name: спавнер аномалии трамплин (35% шанс появления)
+  name: springboard anomaly spawner (25% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   categories: [ Spawner, StSkipSpawnTest ]
@@ -444,7 +445,7 @@
 
 - type: entity
   id: SpawnerZoneAnomalySpringboardChance50
-  name: спавнер аномалии трамплин (50% шанс появления)
+  name: springboard anomaly spawner (50% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   categories: [ Spawner, StSkipSpawnTest ]
@@ -464,7 +465,7 @@
 
 - type: entity
   id: SpawnerZoneAnomalySpringboardChance100
-  name: спавнер аномалии трамплин (100% шанс появления)
+  name: springboard anomaly spawner (100% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   categories: [ Spawner, StSkipSpawnTest ]
@@ -482,10 +483,10 @@
     chance: 1.0
     offset: 0.0
 
-# Инверсия (Inversion)
+# Zona14: Инверсия (Inversion)
 - type: entity
   id: SpawnerZoneAnomalyInversionChance1
-  name: спавнер аномалии инверсии (10% шанс появления)
+  name: inversion anomaly spawner (1% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   categories: [ Spawner, StSkipSpawnTest ]
@@ -505,7 +506,7 @@
 
 - type: entity
   id: SpawnerZoneAnomalyInversionChance5
-  name: спавнер аномалии инверсии (15% шанс появления)
+  name: inversion anomaly spawner (5% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   categories: [ Spawner, StSkipSpawnTest ]
@@ -525,7 +526,7 @@
 
 - type: entity
   id: SpawnerZoneAnomalyInversionChance10
-  name: спавнер аномалии инверсии (20% шанс появления)
+  name: inversion anomaly spawner (10% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   categories: [ Spawner, StSkipSpawnTest ]
@@ -545,7 +546,7 @@
 
 - type: entity
   id: SpawnerZoneAnomalyInversionChance25
-  name: спавнер аномалии инверсии (35% шанс появления)
+  name: inversion anomaly spawner (25% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   categories: [ Spawner, StSkipSpawnTest ]
@@ -565,7 +566,7 @@
 
 - type: entity
   id: SpawnerZoneAnomalyInversionChance50
-  name: спавнер аномалии инверсии (50% шанс появления)
+  name: inversion anomaly spawner (50% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   categories: [ Spawner, StSkipSpawnTest ]
@@ -585,7 +586,7 @@
 
 - type: entity
   id: SpawnerZoneAnomalyInversionChance100
-  name: спавнер аномалии инверсии (100% шанс появления)
+  name: inversion anomaly spawner (100% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   categories: [ Spawner, StSkipSpawnTest ]

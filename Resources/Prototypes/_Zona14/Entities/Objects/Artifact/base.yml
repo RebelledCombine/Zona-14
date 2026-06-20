@@ -1,0 +1,60 @@
+- type: entity
+  parent: BaseItem
+  id: Z14BaseArtifact
+  categories: [ Zona14 ]
+  name: Artifact
+  suffix: Z14
+  components:
+    - type: PsyonicsAbsorbable
+    - type: STWeight
+      self: 1
+    - type: PointLightDisableOnEquip
+    - type: ZoneArtifactDetectorTarget
+      detectable: true
+      detectedLevel: 1
+    - type: SpawnAnomalyZoneArtifact
+    - type: DetectorZoneArtifact
+    - type: Item
+      size: Normal
+      shape:
+      - 0,0,1,1
+    - type: Sprite
+      sprite: _Stalker/Objects/artifacts.rsi
+      state: soul
+    - type: Clothing
+      quickEquip: true
+      slots:
+        - ARTIFACT
+    - type: Tag
+      tags:
+      - Khabar
+      - STArtifact
+    - type: Material
+    - type: RepositoryItem
+      categoryName: Artifacts
+    - type: Craftable
+    - type: Currency
+      price:
+        Roubles: 1
+        Dollar: 1
+
+- type: entity
+  parent: Z14BaseArtifact
+  id: Z14BaseArtifactStorage
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+    - type: Item
+      size: Huge
+    - type: Storage
+      maxItemSize: Huge
+      grid:
+        - 0,0,3,3
+    - type: UserInterface
+      interfaces:
+        enum.StorageUiKey.Key:
+          type: StorageBoundUserInterface
+    - type: ContainerContainer
+      containers:
+        storagebase: !type:Container
+          ents: []

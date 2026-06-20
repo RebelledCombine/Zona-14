@@ -1,5 +1,6 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
-  name: "Паспорт Беларуси"
+  name: Belarus Passport
   id: PassportBelarus
   parent: BaseItem
   description: null
@@ -12,7 +13,7 @@
     time: 600
 
 - type: entity
-  name: "Паспорт России"
+  name: Russia Passport
   id: PassportRussia
   parent: BaseItem
   description: null
@@ -25,7 +26,7 @@
     time: 600
 
 - type: entity
-  name: "Паспорт Казахстана"
+  name: Kazakhstan Passport
   id: PassportKazakhstan
   parent: BaseItem
   description: null
@@ -38,7 +39,7 @@
     time: 600
 
 - type: entity
-  name: "Паспорт Украины"
+  name: Ukraine Passport
   id: PassportUkraine
   parent: BaseItem
   description: null
@@ -51,10 +52,10 @@
     time: 600
 
 - type: entity
-  name: "удостоверение СБУ"
+  name: SBU ID card
   id: PassportSBU
   parent: BaseItem
-  description: Подлинное удостоверение личности члена СБУ, на территории ЧЗО.
+  description: Authentic identity card of a member of the SBU, in the territory of the Chernobyl Exclusion Zone.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Misc/passports.rsi

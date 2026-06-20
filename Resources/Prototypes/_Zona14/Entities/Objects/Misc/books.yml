@@ -1,0 +1,49 @@
+- type: entity
+  parent: BaseItem
+  id: Z14BookCookingStalkerHomemade
+  categories: [ Zona14 ]
+  name: homemade cookbook
+  description: A hand-bound cookbook for storing recipes.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Misc/books.rsi
+    layers:
+    - state: cookbookhomemade
+  - type: STWeight
+    self: 1
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,3,5
+    quickInsert: true
+    areaInsert: true
+    whitelist:
+      tags:
+      - STCookingRecipe
+  - type: UserInterface
+    interfaces:
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+        ents: [ ]
+  - type: RepositoryItem # stalker-en change
+    categoryName: repository-miscellaneous-category
+
+# update this whenever a lightcraft food is added
+- type: entity
+  name: homemade cookbook
+  parent: BookBase
+  id: Z14BookCookingStalkerGuide
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: A cookbook detailing basic cooking techniques and recipes.
+  components:
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Misc/books.rsi
+    layers:
+    - state: cookbook
+  - type: Paper
+    content: book-text-guide-cooking-stalker

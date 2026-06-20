@@ -1,12 +1,13 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: WoodenBoxWithLoot
   parent: STBaseStructure
-  name: старая деревянная коробка
+  name: old wooden box
   suffix: ST, Mapping
   placement:
     mode: PlaceFree
   categories: [ HideSpawnMenu ]
-  description: Деревянная коробка, только старая. Если постараться, то с помощью небольших усилий можно её сломать. Интересно, лежит ли что-то внутри?
+  description: Wooden box, only old. If you try, then with a little effort you can break it. I wonder if there is something inside?
   components:
   - type: Temperature
     heatDamageThreshold: 325
@@ -53,29 +54,29 @@
             max: 2
 
 
-# БАЗОВАЯ СТРУКТУРА ДЕКОРА (ИСПОЛЬЗУЕТСЯ В ИГРЕ)
+# Zona14: БАЗОВАЯ СТРУКТУРА ДЕКОРА (ИСПОЛЬЗУЕТСЯ В ИГРЕ)
 
 - type: entity
   id: WoodenBox2
   parent: STBaseStructure
-  name: деревянная коробка
+  name: wooden box
   placement:
     mode: PlaceFree
   suffix: ST, Mapping
-  description: Универсальный предмет быта с широким спектром использования. Конструкции и габариты коробок могут быть различными в зависимости от предназначения – от подарочных декоративных вариантов до изделий для размещения овощей, фруктов и различной домашней утвари. Соответственно, каждый вид имеет свои особенности, позитивные и негативные стороны.
+  description: A versatile household item with a wide range of uses. The designs and dimensions of the boxes can be different depending on the purpose - from gift decorative options to products for placing vegetables, fruits and various household utensils. Accordingly, each type has its own characteristics, positive and negative aspects.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/boxes.rsi
     state: 2
 
-# МАЛЕНЬКИЕ ЯЩИКИ ДЕКОР
+# Zona14: МАЛЕНЬКИЕ ЯЩИКИ ДЕКОР
 
 - type: entity
   id: WoodenBox1
   parent: STBaseStructure
-  name: ящик
+  name: box
   suffix: ST, Mapping
-  description: Универсальный предмет быта с широким спектром использования. Конструкции и габариты коробок могут быть различными в зависимости от предназначения – от подарочных декоративных вариантов до изделий для размещения овощей, фруктов и различной домашней утвари. Соответственно, каждый вид имеет свои особенности, позитивные и негативные стороны.
+  description: "{ ent-WoodenBox2.desc }"
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/boxes.rsi
@@ -84,13 +85,13 @@
 - type: entity
   id: WoodenBox1a2
   parent: WoodenBox2
-  name: деревянные коробки
+  name: wooden boxes
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/boxes.rsi
     state: 1-2
 
-# ПРОЧИЕ ЯЩИКИ ДЕКОР
+# Zona14: ПРОЧИЕ ЯЩИКИ ДЕКОР
 
 - type: entity
   id: WoodenBox0
@@ -158,9 +159,9 @@
 
 - type: entity
   id: WoodenYaschik1
-  name: старая деревянная тумбочка
+  name: old wooden nightstand
   suffix: ST, Mapping
-  description: Старая деревянная тумбочка. Хм. не открывается. Наврядли там есть что-то ценное. Не стоит тратить нервы и силы на неё.
+  description: Old wooden nightstand. Hmm. does not open. There is hardly anything valuable there. Do not waste your nerves and energy on it.
   parent: WoodenBox2
   components:
   - type: Sprite
@@ -170,9 +171,9 @@
 - type: entity
   id: WoodenYaschik2
   parent: WoodenBox2
-  name: пустой ящик
+  name: empty box
   suffix: ST, Mapping
-  description: Старый деревянный ящик. Просто пустой ящик. Ничего интересного в нём, к сожалению, нет.
+  description: Old wooden box. Just an empty box. Unfortunately, there is nothing interesting in it.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/yashik.rsi
@@ -180,9 +181,9 @@
 
 - type: entity
   id: WoodenYaschik3
-  name: ящик с мешочками
+  name: Bag Box
   suffix: Stalker
-  description: Старый деревянный ящик, который наполнен кучей старых мешочков. В мешочках нет ничего ценного, один мусор, который не стоит внимания.
+  description: An old wooden box that is filled with a bunch of old pouches. There is nothing valuable in the bags, only garbage that is not worth attention.
   parent: WoodenBox2
   components:
   - type: Sprite
@@ -191,9 +192,9 @@
 
 - type: entity
   id: WoodenYaschik4
-  name: ящик с картоном
+  name: cardboard box
   suffix: ST, Mapping
-  description: Старый деревянный ящик, который наполнен кучей старых картонных коробок. Навряд ли там есть что-то ценное, Хотя, на одной из них виднеется надпись "Получатель Сергей" Дальше текст размыт. Наверное, из-за старости и погодных условий...
+  description: An old wooden box that is filled with a bunch of old cardboard boxes. It is unlikely that there is anything valuable there, Although, on one of them you can see the inscription "Recipient Sergey" Further the text is blurred. Probably because of old age and weather conditions...
   parent: WoodenBox2
   components:
   - type: Sprite
@@ -202,9 +203,9 @@
 
 - type: entity
   id: WoodenYaschik5
-  name: ящик с колбами
+  name: box with flasks
   suffix: ST, Mapping
-  description: Старый деревянный ящик, который наполнен кучей колб с разными размерами. Навряд ли стоит туда лезть, вдруг там что-то токсичное...
+  description: "An old wooden box that is filled with a bunch of flasks with different sizes. It's hardly worth climbing there, what if there is something toxic there..."
   parent: WoodenBox2
   components:
   - type: Sprite
@@ -213,8 +214,8 @@
 
 - type: entity
   id: WoodenKorzina1
-  name: корзина
-  description: Довольно таки старая. плетённая корзина, наполненная чем-то странным...
+  name: cart
+  description: Pretty old. a wicker basket filled with something strange...
   parent: WoodenBox2
   components:
   - type: Sprite
@@ -223,8 +224,8 @@
 
 - type: entity
   id: WoodenKorzina2
-  name: корзина
-  description: Довольно таки старая. плетённая корзина, ничем не наполненна.
+  name: "{ ent-WoodenKorzina1 }"
+  description: Pretty old. wicker basket, not filled with anything.
   parent: WoodenBox2
   components:
   - type: Sprite
@@ -233,8 +234,8 @@
 
 - type: entity
   id: WoodenKorzina3
-  name: корзина
-  description: Довольно таки старая. плетённая корзина, наполненная камнями?
+  name: "{ ent-WoodenKorzina1 }"
+  description: Pretty old. A wicker basket filled with stones?
   parent: WoodenBox2
   components:
   - type: Sprite
@@ -244,9 +245,9 @@
 - type: entity
   id: GreenBox
   parent: WoodenBox2
-  name: армейский ящик
+  name: Army Box
   suffix: ST, Mapping
-  description: Армейский ящик изготавливаемый по просто, но проверенной схеме. Он подходит в качестве упаковки для оружия, боеприпасов, оборудования и приборов.
+  description: Army crate made according to a simple but proven scheme. It is suitable as packaging for weapons, ammunition, equipment and devices.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Environment/environment.rsi
@@ -258,9 +259,9 @@
 - type: entity
   id: WoodenGreenBox1Center
   parent: BaseStructure
-  name: зелёный армейский ящик
-  suffix: ST, (Центр, структура), Mapping
-  description: Закрытый армейский ящик. Обычно такие используются для перевозки боеприпасов или для их хранения. Навряд ли вы узнаете, что хранится в нём, ведь он уже очень давно не открывается.
+  name: Green Army Box
+  suffix: ST, (Center, structure), Mapping # Zona14: ST, (Центр, структура), Mapping
+  description: Closed Army Crate. Usually these are used for transporting ammunition or for storing them. It is unlikely that you will know what is stored in it, because it has not been opened for a very long time.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/green_yashik.rsi
@@ -281,9 +282,9 @@
 - type: entity
   id: WoodenGreenBox1
   parent: WoodenBox2
-  name: зелёный армейский ящик
-  suffix: ST, (Свободный, ящик), Mapping
-  description: Закрытый армейский ящик. Обычно такие используются для перевозки боеприпасов или для их хранения. Навряд ли вы узнаете, что хранится в нём, ведь он уже очень давно не открывается.
+  name: "{ ent-WoodenGreenBox1Center }"
+  suffix: ST, (Free, box), Mapping # Zona14: ST, (Свободный, ящик), Mapping
+  description: "{ ent-WoodenGreenBox1Center.desc }"
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/green_yashik.rsi
@@ -302,7 +303,7 @@
 
 - type: entity
   id: WoodenGreenBox2
-  name: зелёный ящик
+  name: green box
   suffix: ST, Mapping
   description: null
   parent: WoodenBox2
@@ -324,9 +325,9 @@
 
 - type: entity
   id: WoodenGreenBox3
-  name: поддон зелёных ящиков
+  name: Green Box Pallet
   suffix: ST, Mapping
-  description: Закрытые старые ящики, которые не потеряли ещё свой зелёный цвет. Навряд ли вы сможете их открыть. Может оно и к лучшему. Очередная тайна Зоны не будет открыта.
+  description: "Closed old boxes that have not yet lost their green color. It is unlikely that you will be able to open them. Maybe it's for the best. Another secret of the Zone will not be revealed."
   parent: BaseStructure
   components:
   - type: Sprite
@@ -347,9 +348,9 @@
 
 - type: entity
   id: WoodenGreenBox4
-  name: старый зелёный ящик
+  name: old green box
   suffix: ST, Mapping
-  description: Закрытый старый ящик, который не потерял ещё свой зелёный цвет. На удивление его не открыть. Может оно и к лучшему. Очередная тайна Зоны не будет открыта.
+  description: A closed old box that hasn't lost its green color yet. Surprisingly, it is impossible to open it. Maybe it's for the best. Another secret of the Zone will not be revealed.
   parent: WoodenBox2
   components:
   - type: Sprite
@@ -369,9 +370,9 @@
 
 - type: entity
   id: WoodenGreenBox5
-  name: ржавый ящик
+  name: rusty box
   suffix: ST, Mapping
-  description: Закрытый старый и ржавый ящик, который некогда был зелёным. На удивление его не открыть. Может оно и к лучшему. Очередная тайна Зоны не будет открыта.
+  description: "A closed old and rusty box that was once green. Surprisingly, it is impossible to open it. Maybe it's for the best. Another secret of the Zone will not be revealed."
   parent: WoodenBox2
   components:
   - type: Sprite
@@ -391,9 +392,9 @@
 
 - type: entity
   id: STWoodenGreenBoxWeapon
-  name: ржавый ящик
+  name: "{ ent-WoodenGreenBox5 }"
   suffix: ST, Mapping
-  description: Закрытый старый и ржавый ящик, который некогда был зелёным. На удивление его не открыть. Может оно и к лучшему. Очередная тайна Зоны не будет открыта. На крышке картинка пистолета.
+  description: "A closed old and rusty box that was once green. Surprisingly, it is impossible to open it. Maybe it's for the best. Another secret of the Zone will not be revealed. On the lid there is a picture of a pistol."
   parent: WoodenBox2
   components:
   - type: Sprite
@@ -413,8 +414,8 @@
 
 - type: entity
   id: STWoodenGreenBoxMed
-  name: ржавый ящик
-  description: Закрытый старый и ржавый ящик, который некогда был зелёным. На удивление его не открыть. Может оно и к лучшему. Очередная тайна Зоны не будет открыта. На крышке картинка медицинского креста.
+  name: "{ ent-WoodenGreenBox5 }"
+  description: "A closed old and rusty box that was once green. Surprisingly, it is impossible to open it. Maybe it's for the best. Another secret of the Zone will not be revealed. On the lid there is a picture of a medical cross."
   parent: WoodenBox2
   components:
   - type: Sprite
@@ -432,12 +433,12 @@
         layer:
         - MachineLayer
 
-# РАЗРУШАЕМЫЕ ЯЩИКИ
+# Zona14: РАЗРУШАЕМЫЕ ЯЩИКИ
 - type: entity
   id: WoodenBoxWithLoot1
   parent: WoodenBoxWithLoot
-  name: старая деревянная коробка
-  description: Деревянная коробка, только старая. Если постараться, то с помощью небольших усилий можно её сломать. Интересно, лежит ли что-то внутри?
+  name: "{ ent-WoodenBoxWithLoot }"
+  description: "{ ent-WoodenBoxWithLoot.desc }"
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Environment/environment.rsi
@@ -471,9 +472,9 @@
 - type: entity
   id: WoodenBoxWithLoot0
   parent: WoodenBoxWithLoot
-  name: старая деревянная коробка
+  name: "{ ent-WoodenBoxWithLoot }"
   suffix: ST, Mapping
-  description: Деревянная коробка, только старая. Если постараться, то с помощью небольших усилий можно её сломать. Интересно, лежит ли что-то внутри?
+  description: "{ ent-WoodenBoxWithLoot.desc }"
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/boxes.rsi
@@ -503,7 +504,7 @@
 
 - type: entity
   id: WoodenBoxWithLoot2
-  name: старые деревянные коробки
+  name: old wooden boxes
   parent: WoodenBoxWithLoot
   components:
   - type: Sprite
@@ -743,12 +744,12 @@
             min: 1
             max: 2
 
-# СТАЛЬНАЯ КОРОБКА С ЛУТОМ
+# Zona14: СТАЛЬНАЯ КОРОБКА С ЛУТОМ
 
 - type: entity
   id: SteelBoxWithLoot1
-  name: старая стальная коробка
-  description: Стальная коробка, только старая. Если постараться, то с помощью небольших усилий можно её сломать. Интересно, лежит ли что-то внутри?
+  name: old steel box
+  description: Steel box, only old. If you try, then with a little effort you can break it. I wonder if there is something inside?
   suffix: ST, Mapping
   parent: WoodenBoxWithLoot
   components:

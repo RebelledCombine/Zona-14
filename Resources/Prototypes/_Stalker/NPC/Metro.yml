@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: NPCDoll
   id: NPCMetro
-  name: Неизвестный торговец
-  description: Продаёт всё подряд.
+  name: unknown trader
+  description: Sells anything and everything.
   suffix: Metro
   components:
   - type: Sprite

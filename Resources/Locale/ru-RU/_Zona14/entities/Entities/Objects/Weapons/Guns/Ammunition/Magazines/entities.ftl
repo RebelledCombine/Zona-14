@@ -1,0 +1,9 @@
+ent-Z14SpeedLoaderRemingtonMagnumAP = Быстрозарядник Ремингтон Магнум ББ
+    .desc = Магазин.
+    .suffix = Z14
+ent-Z14SpeedLoaderRemingtonMagnumEmpty = Быстрозарядник Ремингтон Магнум (пустой)
+    .desc = Магазин.
+    .suffix = Z14
+ent-Z14SpeedLoaderRemingtonMagnumHP = Быстрозарядник Ремингтон Магнум ЭП
+    .desc = Магазин.
+    .suffix = Z14

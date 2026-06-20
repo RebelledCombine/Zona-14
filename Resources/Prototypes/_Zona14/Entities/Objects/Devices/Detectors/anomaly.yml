@@ -1,0 +1,249 @@
+- type: entity
+  parent: BaseItem
+  id: Z14ZoneAnomalyBaseDetector
+  categories: [ Zona14 ]
+  abstract: true
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Devices/ZoneAnomalyDetectors/ad_1.rsi
+      layers:
+        - state: base
+        - state: screen_off
+          map: ["enum.ZoneAnomalyDetectorVisuals.Layer"]
+          shader: unshaded
+    - type: RepositoryItem
+      categoryName: Detectors
+    - type: Appearance
+    - type: GenericVisualizer
+      visuals:
+        enum.ZoneAnomalyDetectorVisuals.Enabled:
+          enum.ZoneAnomalyDetectorVisuals.Layer:
+            True: { state: screen_on }
+            False: { state: screen_off }
+    - type: ZoneAnomalyDetector
+      level: 0
+      distance: 7
+    - type: Item
+      size: Small
+
+- type: entity
+  parent: Z14ZoneAnomalyBaseDetector
+  id: Z14ZoneAnomalyDetectorAD1
+  categories: [ Zona14 ]
+  name: AD-1
+  description: A hand-held scanner built to collect information on various anomalous objects.
+  suffix: Z14
+  components:
+    - type: STWeight
+      self: 0.5
+    - type: Sprite
+      sprite: _Stalker/Objects/Devices/ZoneAnomalyDetectors/ad_1.rsi
+      layers:
+        - state: base
+        - state: screen_off
+          map: ["enum.ZoneAnomalyDetectorVisuals.Layer"]
+          shader: unshaded
+    - type: ZoneAnomalyDetector
+      beepSound: /Audio/_Stalker/Items/Detectors/Anomaly/da_beep2.ogg
+      maxBeepInterval: 4.5
+      minBeepInterval: 0.5
+      level: 0
+      distance: 10
+    - type: Craftable
+
+- type: entity
+  parent: Z14ZoneAnomalyBaseDetector
+  id: Z14ZoneAnomalyDetectorUpgradeAD1
+  categories: [ Zona14 ]
+  name: Advanced Model 1 Anomaly Detector (DA-1)
+  description: A modified handheld scanner with reduced range, designed for close-range anomaly detection
+  suffix: Z14
+  components:
+    - type: STWeight
+      self: 0.8
+    - type: Sprite
+      sprite: _Stalker/Objects/Devices/ZoneAnomalyDetectors/ad_1.rsi
+      layers:
+        - state: base
+        - state: screen_off
+          map: ["enum.ZoneAnomalyDetectorVisuals.Layer"]
+          shader: unshaded
+    - type: ZoneAnomalyDetector
+      beepSound: /Audio/_Stalker/Items/Detectors/Anomaly/da_beep2.ogg
+      maxBeepInterval: 4.5
+      minBeepInterval: 0.5
+      level: 0
+      distance: 5
+
+- type: entity
+  parent: Z14ZoneAnomalyBaseDetector
+  id: Z14ZoneAnomalyDetectorAD2
+  categories: [ Zona14 ]
+  name: AD-2
+  description: A hand-held scanner built to collect information on various anomalous objects.
+  suffix: Z14
+  components:
+    - type: STWeight
+      self: 1
+    - type: Sprite
+      sprite: _Stalker/Objects/Devices/ZoneAnomalyDetectors/ad_2.rsi
+      layers:
+        - state: base
+        - state: screen_off
+          map: ["enum.ZoneAnomalyDetectorVisuals.Layer"]
+          shader: unshaded
+    - type: ZoneAnomalyDetector
+      level: 1
+      beepSound: /Audio/_Stalker/Items/Detectors/Anomaly/da_beep2.ogg
+      maxBeepInterval: 2.5
+      minBeepInterval: 0.5
+      distance: 10
+    - type: Craftable
+
+- type: entity
+  parent: Z14ZoneAnomalyBaseDetector
+  id: Z14ZoneAnomalyDetectorUpgradeAD2
+  categories: [ Zona14 ]
+  name: Advanced Model 2 Anomaly Detector (DA-2)
+  description: A modified handheld scanner, more accurate but with reduced range, designed for close-range anomaly detection
+  suffix: Z14
+  components:
+    - type: STWeight
+      self: 1.2
+    - type: Sprite
+      sprite: _Stalker/Objects/Devices/ZoneAnomalyDetectors/ad_2.rsi
+      layers:
+        - state: base
+        - state: screen_off
+          map: ["enum.ZoneAnomalyDetectorVisuals.Layer"]
+          shader: unshaded
+    - type: ZoneAnomalyDetector
+      level: 1
+      beepSound: /Audio/_Stalker/Items/Detectors/Anomaly/da_beep2.ogg
+      distance: 5
+      maxBeepInterval: 0.5
+      minBeepInterval: 0.001
+
+- type: entity
+  parent: Z14ZoneAnomalyBaseDetector
+  id: Z14ZoneAnomalyDetectorBMT12
+  categories: [ Zona14 ]
+  name: TDC-12 Anomaly Detector
+  description:  Tereshkov Wave Module, a device developed after the Zone's reappearance at the Institute for anomaly detection, using entirely different detection principles.
+  suffix: Z14
+  components:
+    - type: STWeight
+      self: 0.8
+    - type: Sprite
+      sprite: _Stalker/Objects/Devices/ZoneAnomalyDetectors/ad_3.rsi
+      layers:
+        - state: base
+        - state: screen_off
+          map: ["enum.ZoneAnomalyDetectorVisuals.Layer"]
+          shader: unshaded
+    - type: ZoneAnomalyDetector
+      level: 2
+      beepSound: /Audio/_Stalker/Items/Detectors/Anomaly/da_beep3.ogg
+      distance: 5
+      maxBeepInterval: 0.5
+      minBeepInterval: 0.001
+
+#- type: entity
+#  parent: ZoneAnomalyBaseDetector
+#  id: ZoneAnomalyDetectorBMT15
+#  name: anomaly detector VMT-15
+#  description:  Tereshkov Wave Module, a device developed at the Institute after the Zone reappeared, using completely different anomaly detection principles.
+#  suffix: Stalker, Detector
+#  components:
+#    - type: Sprite
+#      sprite: _Stalker/Objects/Devices/ZoneAnomalyDetectors/ad_4.rsi
+#      layers:
+#        - state: base
+#        - state: screen_off
+#          map: ["enum.ZoneAnomalyDetectorVisuals.Layer"]
+#          shader: unshaded
+#    - type: ZoneAnomalyDetector
+#      level: 3
+#      beepSound: /Audio/Items/Detectors/Anomaly/da_beep3.ogg
+#      distance: 5
+#      maxBeepInterval: 0.5
+#      minBeepInterval: 0.001
+
+- type: entity
+  parent: Z14ZoneAnomalyBaseDetector
+  id: Z14ZoneAnomalyDetectorUAD14A
+  categories: [ Zona14 ]
+  name: UAD14A
+  description: A hand-held scanner built to collect information on various anomalous objects.
+  suffix: Z14
+  components:
+    - type: STWeight
+      self: 1.5
+    - type: Sprite
+      sprite: _Stalker/Objects/Devices/ZoneAnomalyDetectors/uad_14a.rsi
+      layers:
+        - state: base
+        - state: screen_off
+          map: ["enum.ZoneAnomalyDetectorVisuals.Layer"]
+          shader: unshaded
+    - type: ZoneAnomalyDetector
+      level: 3
+      distance: 15
+      maxBeepInterval: 5
+      minBeepInterval: 0.01
+    - type: ZoneAnomalyDetectorArtifactActivator
+      level: 3
+
+- type: entity
+  parent: Z14ZoneAnomalyBaseDetector
+  id: Z14ZoneAnomalyDetectorUAAL7B
+  categories: [ Zona14 ]
+  name: UAAL-7b
+  description: A hand-held scanner built to collect information on various anomalous objects.
+  suffix: Z14
+  components:
+    - type: STWeight
+      self: 1.8
+    - type: Sprite
+      sprite: _Stalker/Objects/Devices/ZoneAnomalyDetectors/uaal_7b.rsi
+      layers:
+        - state: base
+        - state: screen_off
+          map: ["enum.ZoneAnomalyDetectorVisuals.Layer"]
+          shader: unshaded
+    - type: ZoneAnomalyDetector
+      level: 4
+      distance: 25
+      maxBeepInterval: 5
+      minBeepInterval: 0.01
+    - type: ZoneAnomalyActivator
+      # level: 4 # Stalker-TODO: These fields do not exist in this component!
+      # distance: 10
+      # enabled: true
+    - type: ZoneAnomalyDetectorArtifactActivator
+      level: 5
+
+- type: entity
+  parent: Z14ZoneAnomalyBaseDetector
+  id: Z14ZoneAnomalyDetectorAD3
+  categories: [ Zona14 ]
+  name: Model 3 Anomaly Detector (DA-3)
+  description: Modified DA-2, developed by NII staff, capable of detecting level 4 anomalies thanks to new anomaly detection sensors. A "Battery" artifact is at the device's center.
+  suffix: Z14
+  components:
+    - type: STWeight
+      self: 2.8
+    - type: Sprite
+      sprite: _Stalker/Objects/Devices/ZoneAnomalyDetectors/ad_2m.rsi
+      layers:
+        - state: base
+        - state: screen_off
+          map: ["enum.ZoneAnomalyDetectorVisuals.Layer"]
+          shader: unshaded
+    - type: ZoneAnomalyDetector
+      level: 4
+      beepSound: /Audio/_Stalker/Items/Detectors/Anomaly/da_beep3.ogg
+      distance: 12
+      maxBeepInterval: 0.9
+      minBeepInterval: 0.05
+

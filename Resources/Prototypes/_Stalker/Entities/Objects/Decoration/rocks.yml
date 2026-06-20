@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: BaseRock
   id: StalkerRock02
-  name: валун
+  name: boulder
   suffix: ST, Mapping
-  description: Крупный окатанный обломок горной породы.
+  description: Coarse rounded rock fragment.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/rocks.rsi

@@ -100,7 +100,7 @@ public sealed class BoomboxSystem : EntitySystem
         component.CurrentPlaying = entComp;
 
         component.SoundTime = _audio.GetAudioLength(_audio.GetSound(casseteComponent.Music));
-        // And add this time to component.SoundEnd timeSpan (Чтобы в будущем фиксировать конец музыки для этого компонента)
+        // And add this time to component.SoundEnd timeSpan (to track music end for this component in the future) // Zona14: translated comment
         component.SoundEnd = component.SoundTime + _timing.CurTime;
     }
     private void AddRepeatToogleVerb(Entity<BoomboxComponent> ent, ref GetVerbsEvent<ActivationVerb> args)
@@ -110,9 +110,7 @@ public sealed class BoomboxSystem : EntitySystem
 
         ActivationVerb verb = new()
         {
-            Text = ent.Comp.RepeatOn
-                ? Loc.GetString("Повтор \u2717")
-                : Loc.GetString("Повтор \u2713"),
+            Text = Loc.GetString(ent.Comp.RepeatOn ? "st-boombox-repeat-off" : "st-boombox-repeat-on"), // Zona14: localized
 
             Icon = ent.Comp.RepeatOn
                 ? new SpriteSpecifier.Texture(new("/Textures/_Stalker/Interface/VerbIcons/refresh-slased.svg.192dpi.png"))

@@ -4,5 +4,5 @@
 public sealed partial class RepositoryItemComponent : Component
 {
     [DataField]
-    public string CategoryName = "Прочее";
+    public string CategoryName = "Other"; // Zona14: "Прочее"<"Other"
 }

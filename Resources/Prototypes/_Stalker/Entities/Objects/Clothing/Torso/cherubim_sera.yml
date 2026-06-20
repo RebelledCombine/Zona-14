@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: BaseClothingTorso
   id: STClothingTorsoSerafimCherubimFullReady
-  name: одеяние Херувима
-  description: Старая и потёртая форма херувима, которую он, кажись, не снимал уже несколько лет... от неё веет сильной аурой, присущей всей группировке Серафимов.
+  name: Cherubim robes
+  description: "The old and worn uniform of a Cherubim, which it seems he hasn't taken off for years... it carries the strong aura inherent to the entire Seraphim faction."
   components:
     - type: Sprite
       sprite: _Stalker/Objects/Clothing/Torso/Serafims/cherubim.rsi

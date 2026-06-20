@@ -1,10 +1,11 @@
- # БИНОКЛИ
+# Zona14: translated Russian names/descriptions to English
+ # Zona14: БИНОКЛИ
 
 - type: entity
   parent: BaseItem
   id: Binocularus1
-  name: старый бинокль
-  description: Старый советский армейский бинокль.
+  name: old binoculars
+  description: Old Soviet army binoculars.
   suffix: Stalker
   components:
   - type: Sprite

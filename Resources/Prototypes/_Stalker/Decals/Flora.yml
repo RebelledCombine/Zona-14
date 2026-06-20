@@ -160,7 +160,7 @@
     state: grassc_big1
 
 
-# Трава о которой мечтал Илюша
+# Zona14: Трава о которой мечтал Илюша
 - type: decal
   id: GreenGrass1
   tags: ["ST", "Flora"]

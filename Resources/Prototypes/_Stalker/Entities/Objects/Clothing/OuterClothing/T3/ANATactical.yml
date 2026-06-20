@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: STClothingOuterArmorStorageBasic
   id: STClothingOuterArmorLightPlateVestBaseANAgreen
-  name: Бронеразгрузка «Степь-4»
+  name: ANA Tactical Green
   suffix: ST, T3, PvP
-  description: Надёжный бронеразгруз 3 класса брони, вмещающий любого размера магазины в модном болотно-зелёном цвете.
+  description: Reliable armor load of armor class 3, accommodating magazines of any size in fashionable swamp green.
   components:
   - type: Trash
     time: 900
@@ -46,8 +47,8 @@
 - type: entity
   parent: STClothingOuterArmorLightPlateVestBaseANAgreen
   id: STClothingOuterArmorLightPlateVestBaseANAgray
-  name: Бронеразгрузка «Степь-4»
-  description: Надёжный бронеразгруз 3 класса брони, вмещающий любого размера магазины, в стильном чёрном цвете.
+  name: ANA Tactical Grey
+  description: Reliable armor load of armor class 3, accommodating magazines of any size, in stylish black.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/outerClothing/ANA/Gray.rsi
@@ -58,9 +59,9 @@
 - type: entity
   parent: STClothingOuterArmorLightPlateVestBaseANAgreen
   id: STClothingOuterArmorLightPlateVestBaseANAgreenOld
-  name: Бронеразгрузка «Степь-4»
-  suffix: ST, T3, PvP, Старое
-  description: Надёжный бронеразгруз 3 класса брони, вмещающий любого размера магазины в модном болотно-зелёном цвете. Этот вариант - очень потрёпанный, защитные свойства явно пострадали.
+  name: ANA Tactical "Steppe-4"
+  suffix: ST, T3, PvP, Old # Zona14: ST, T3, PvP, Старое
+  description: Reliable class 3 plate carrier that fits any magazine size, in fashionable swamp green. This version is heavily worn, with noticeably degraded protective capabilities.
   components:
   - type: Armor
     armorClass: 3
@@ -79,8 +80,8 @@
 - type: entity
   parent: STClothingOuterArmorLightPlateVestBaseANAgray
   id: STClothingOuterArmorLightPlateVestBaseANAgrayOld
-  name: Бронеразгрузка «Степь-4»
-  description: Надёжный бронеразгруз 3 класса брони, вмещающий любого размера магазины, в стильном чёрном цвете. Этот вариант - очень потрёпанный, защитные свойства явно пострадали.
+  name: "{ ent-STClothingOuterArmorLightPlateVestBaseANAgreenOld }"
+  description: Reliable class 3 plate carrier that fits any magazine size, in a stylish black color. This version is heavily worn, with noticeably degraded protective capabilities.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/outerClothing/ANA/Gray.rsi
@@ -105,8 +106,8 @@
 - type: entity
   parent: STClothingOuterArmorLightPlateVestBaseANAgreen
   id: STClothingOuterArmorLightPlateVestBaseANABlue
-  name: «Степь-4» 'Чистого Неба'
-  description: Надёжный бронеразгруз 3 класса брони, вмещающий любого размера магазины.
+  name: ANA Tactical 'Clear Sky'
+  description: Reliable armor load of armor class 3, accommodating magazines of any size.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/outerClothing/ANA/Blue.rsi
@@ -117,8 +118,8 @@
 - type: entity
   parent: STClothingOuterArmorLightPlateVestBaseANAgreen
   id: STClothingOuterArmorLightPlateVestBaseANAUN
-  name: Бронеразгрузка «Степь-4» ООН
-  description: Надёжный бронеразгруз 3 класса брони, вмещающий любого размера магазины.
+  name: ANA Tactical 'UN'
+  description: Reliable armor load of armor class 3, accommodating magazines of any size.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/outerClothing/ANA/UN.rsi
@@ -129,8 +130,8 @@
 - type: entity
   parent: STClothingOuterArmorLightPlateVestBaseANAgreen
   id: STClothingOuterArmorLightPlateVestBaseANAPilgrim
-  name: Паломническая бронеразгрузка «Степь-4»
-  description: Надёжный бронеразгруз 3 класса брони, вмещающий любого размера магазины либо библию и кадило
+  name: ANA Tactical 'Pilgrim'
+  description: Reliable armor load of armor class 3, accommodating magazines of any size, or a bible and censer.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/outerClothing/ANA/Pilgrim.rsi
@@ -150,8 +151,8 @@
 - type: entity
   parent: STClothingOuterArmorLightPlateVestBaseANAgreen # God dont change this anymore, i dont want to spend my time to replace it again.
   id: STClothingOuterArmorLightPlateVestSera
-  name: Бронеразгрузка «Заступник»
-  description: Надёжный бронеразгруз 3 класса брони, полный аналог «Степи-4», единственное различие - наличие напашника.
+  name: ANA Tactical "Defender"
+  description: Reliable 3rd class body armor, a full analog of the "Steppe-4", the only difference is the presence of a chest guard.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/outerClothing/_Sera/zastupnik.rsi
@@ -181,9 +182,9 @@
 - type: entity
   parent: STClothingOuterArmorLightPlateVestBaseANAgreen
   id: STClothingOuterArmorLightPlateVestBaseANAproject
-  name: Модифицированная бронеразгрузка «Степь-4»
+  name: ANA Tactical 'Project'
   suffix: ST, T3, PvP, Project
-  description: Надёжный бронеразгруз 3 класса брони, вмещающий любого размера магазины.
+  description: A reliable Class 3 carrier accommodating magazines of any size.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/outerClothing/ANA/Project.rsi
@@ -194,8 +195,8 @@
 - type: entity
   parent: STClothingOuterArmorLightPlateVestBaseANAgreen
   id: STClothingOuterArmorLightPlateVestBaseANAzavet
-  name: Бронеразгрузка «Степь-4» Завета
-  description: Надёжный бронеразгруз 3 класса брони, вмещающий любого размера магазины.
+  name: '"Steppe-4" armored rig of the Covenant'
+  description: A reliable class 3 armored rig that fits magazines of any size.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/outerClothing/ANA/Zavet.rsi

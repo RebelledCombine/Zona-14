@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: BaseItem
   id: StalkerGrinder
-  name: ручной измельчитель
-  description: Ручной измельчитель, подходит для трав и растенний.
+  name: Manual Grinder
+  description: Manual shredder, suitable for herbs and plants.
   suffix: Stalker
   components:
   - type: ReagentGrinder

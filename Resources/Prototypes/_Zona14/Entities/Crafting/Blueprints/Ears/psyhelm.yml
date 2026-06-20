@@ -1,0 +1,19 @@
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14ClothingEarsPsyHelmT2Blueprint
+  categories: [ Zona14 ]
+  name: psi-helm blueprint
+  suffix: Z14
+  components:
+  - type: STBlueprint
+    blueprint: recipeClothingEarsPsyHelmT2
+
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14ClothingEarsPsyHelmBlueprint
+  name: makeshift psi-helm blueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: STBlueprint
+    blueprint: recipeClothingEarsPsyHelm

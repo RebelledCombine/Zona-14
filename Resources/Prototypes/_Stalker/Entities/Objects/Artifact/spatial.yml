@@ -1,7 +1,8 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: BaseArtifact
   id: ZoneArtifactSoul
-  suffix: Stalker, Душа
+  suffix: Stalker, Soul # Zona14: Stalker, Душа
   components:
     - type: Sprite
       state: soul
@@ -49,7 +50,7 @@
 - type: entity
   parent: BaseArtifact
   id: ZoneArtifactFloodlight
-  suffix: Stalker, Артефакт-фонарь
+  suffix: Stalker, Artifact-lantern # Zona14: Stalker, Артефакт-фонарь
   components:
     - type: Sprite
       state: artifactFloodlight
@@ -91,7 +92,7 @@
 - type: entity
   parent: BaseArtifactStorage
   id: ZoneArtifactMagneticFlower
-  suffix: Stalker, Магнитный цветок
+  suffix: Stalker, Magnetic flower # Zona14: Stalker, Магнитный цветок
   components:
     - type: Sprite
       state: magnetic_flower
@@ -130,7 +131,7 @@
 - type: entity
   parent: BaseArtifactStorage
   id: ZoneArtifactCompass
-  suffix: Stalker, Компасс
+  suffix: Stalker, Compass # Zona14: Stalker, Компасс
   components:
     - type: Sprite
       state: compass
@@ -170,10 +171,10 @@
       - STArtifactTier4
 
 - type: entity
-  name: Распятие
+  name: Crucifix
   parent: BaseArtifact
   id: ZoneArtifactCrucifix
-  suffix: Stalker, Распятие
+  suffix: Stalker, Crucifix # Zona14: Stalker, Распятие
   components:
   - type: Sprite
     state: crucifix
@@ -209,7 +210,7 @@
 - type: entity
   parent: BaseArtifact
   id: ZoneArtifactThorn
-  suffix: Stalker, Шип
+  suffix: Stalker, Thorn # Zona14: Stalker, Шип
   components:
   - type: Sprite
     state: thorn
@@ -245,7 +246,7 @@
 - type: entity
   parent: BaseArtifactStorage
   id: ZoneArtifactAtom
-  suffix: Stalker, Атом
+  suffix: Stalker, Atom # Zona14: Stalker, Атом
   components:
     - type: Sprite
       state: atom
@@ -286,7 +287,7 @@
 - type: entity
   parent: BaseArtifact
   id: ZoneArtifactArf
-  suffix: Stalker, Арфа
+  suffix: Stalker, Harp # Zona14: Stalker, Арфа
   components:
   - type: Sprite
     state: arf
@@ -324,7 +325,7 @@
 - type: entity
   parent: BaseArtifactStorage
   id: ZoneArtifactDarkCube
-  suffix: Stalker, Тёмный куб
+  suffix: Stalker, Dark cube # Zona14: Stalker, Тёмный куб
   components:
   - type: Item
     size: Ginormous

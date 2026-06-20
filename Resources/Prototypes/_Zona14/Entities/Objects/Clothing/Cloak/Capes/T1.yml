@@ -1,0 +1,275 @@
+- type: entity
+  parent: Z14STClothingCloakBase
+  id: Z14ClothingOuterCoatDoshdevik
+  categories: [ Zona14 ]
+  name: raincoat
+  suffix: Z14
+  description: a thick cloak protecting from rain and some chemicals.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/cloak/doshdevik.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/cloak/doshdevik.rsi
+  - type: ToggleableClothing
+    slot: head
+    requiredSlot: CLOAK
+    clothingPrototype: ClothingHeadHelmetDoshdevikCoat
+
+- type: entity
+  parent: STClothingHeadHatBase
+  id: Z14ClothingHeadHelmetDoshdevikCoat
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: raincoat hood
+  description: Covers your head
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/cloak/doshdevik.rsi
+    state: icon-HELM
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/cloak/doshdevik.rsi
+
+# KKK
+- type: entity
+  parent: Z14STClothingCloakBase
+  id: Z14ClothingOuterCoatKKK
+  categories: [ Zona14 ]
+  name: KKK robe
+  suffix: Z14
+  description: The Ku Klux Klan's white robes are long white hooded garments that symbolize the anonymity and unity of the organization's members. These robes are often associated with the racist actions of the KKK, emphasizing their ideology of white supremacy.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/cloak/kkk.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/cloak/kkk.rsi
+  - type: ToggleableClothing
+    slot: head
+    requiredSlot: CLOAK
+    clothingPrototype: ClothingHeadHelmetKKKCoat
+- type: entity
+  parent: STClothingHeadHatBase
+  id: Z14ClothingHeadHelmetKKKCoat
+  suffix: Z14
+  name: capirote
+  categories: [ HideSpawnMenu, Zona14 ]
+  description: A medieval Spanish headdress, a pointed conical cap. Originally made of cardboard, capirotes were used by Spanish flagellants. During the Inquisition, cloth-covered capirotes were used, along with yellow capes, to dress those condemned to death.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/kkk_hood.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/kkk_hood.rsi
+
+# Boss's
+- type: entity
+  parent: Z14STClothingCloakBase
+  id: Z14ClothingOuterCoatPahan
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: ploughman's cloak
+  description: a thick cloak repainted black.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/cloak/coat_pahan.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/cloak/coat_pahan.rsi
+  - type: ToggleableClothing
+    slot: head
+    requiredSlot: CLOAK
+    clothingPrototype: ClothingHeadHelmetPahanCoat
+- type: entity
+  parent: STClothingHeadHatBase
+  id: Z14ClothingHeadHelmetPahanCoat
+  suffix: Z14
+  name: hood of the pahan's cloak
+  categories: [ HideSpawnMenu, Zona14 ]
+  description: Covers your head
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/coat_hat_pahan.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/coat_hat_pahan.rsi
+  - type: HideLayerClothing
+    slots:
+    - Hair
+
+# Poisk
+- type: entity
+  parent: Z14STClothingCloakBase
+  id: Z14ClothingOuterCoatPoisk
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: explorer's cloak
+  description: This cloak is not just decoration, it symbolizes the thirst for adventure and discovery.
+  components:
+  - type: UserInterface
+    interfaces:
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/cloak/poisk_plash.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/cloak/poisk_plash.rsi
+  - type: ToggleableClothing
+    clothingPrototype: Z14ClothingHeadHatHoodCoatStalker
+    slot: head
+- type: entity
+  parent: STClothingHeadHatBase
+  id: Z14ClothingHeadHatHoodCoatPoisk
+  suffix: Z14
+  categories: [ HideSpawnMenu, Zona14 ]
+  name: hood
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/Head/Hats/coat_hat_poisk.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/Head/Hats/coat_hat_poisk.rsi
+
+# Pilgrims
+- type: entity
+  parent: Z14STClothingCloakBase
+  id: Z14ClothingNeckCloakCassock
+  categories: [ Zona14 ]
+  name: pilgrim's cassock
+  description: made of coarse gray fabric, helps renounce the worldly
+  suffix: Z14
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/cloak/cassock.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/cloak/cassock.rsi
+    - type: ToggleableClothing
+      slot: head
+      requiredSlot: CLOAK
+      clothingPrototype: ClothingHeadCassock
+
+- type: entity
+  parent: STClothingHeadHatBase
+  id: Z14ClothingHeadCassock
+  suffix: Z14
+  name: cassock hood
+  description: hood made of coarse fabric from a monk's robe
+  categories: [ HideSpawnMenu, Zona14 ]
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/Head/Hats/cassock_hood.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/Head/Hats/cassock_hood.rsi
+
+# SKINS
+
+- type: entity
+  parent: Z14STClothingCloakBase
+  id: Z14ClothingTorsoTurtlenecksCamouflage
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Tattered Survivors' Cloak
+  description: A strange cloak, torn to shreds. Crudely repainted in some camo.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/cloak/camouflage.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/cloak/camouflage.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetSeraRuined
+    requiredSlot:
+    - neck
+    slot: head
+
+- type: entity
+  parent: STClothingHeadHatBase
+  id: Z14ClothingHeadHelmetSeraRuined
+  categories: [ Zona14 ]
+  name: hood
+  suffix: Z14
+  description: A tattered hood of a strange color.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/sh68_camouflage.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/sh68_camouflage.rsi
+  - type: HideLayerClothing
+    slots:
+    - Hair
+
+- type: entity
+  parent: Z14STClothingCloakBase
+  id: Z14ClothingCapeDeserters
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Deserter Cloak
+  description: A piece of fabric in dark gray pixel camo, can be worn as a cloak if desired
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/cloak/desertercape.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/cloak/desertercape.rsi
+
+- type: entity
+  parent: Z14ClothingOuterCoatDoshdevik
+  id: Z14STClothingCapeT1Serafim
+  categories: [ Zona14 ]
+  name: Seraphim Cloak
+  suffix: Z14
+  description: Made in a dark green color scheme
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/cloak/Sera_/cape_serafim.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/cloak/Sera_/cape_serafim.rsi
+  - type: ToggleableClothing
+    clothingPrototype: STClothingHeadHelmetSerafim
+- type: entity
+  parent: STClothingHeadHatBase
+  id: Z14STClothingHeadHelmetSerafim
+  suffix: Z14
+  name: Seraphim Cloak Hood
+  description: Covers your head
+  categories: [ HideSpawnMenu, Zona14 ]
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/Head/Sera_/coat_hat_serafim.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/Head/Sera_/coat_hat_serafim.rsi
+  - type: HideLayerClothing
+    slots:
+    - Hair
+
+- type: entity
+  parent: Z14STClothingCloakBase
+  id: Z14ClothingCapeRenegat
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Rogue Cloak
+  description: A piece of fabric in crap pixel camo, can be worn as a cloak if desired
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/cloak/renegatcape.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/cloak/renegatcape.rsi
+
+- type: entity
+  parent: Z14ClothingOuterCoatDoshdevik
+  id: Z14STClothingOldRoadCape
+  categories: [ Zona14 ]
+  name: old road cloak
+  suffix: Z14
+  description: A worn cloak protecting from dust and wind.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/cloak/oldroad.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/cloak/oldroad.rsi
+  - type: ToggleableClothing
+    clothingPrototype: STClothingHeadOldRoadHelmet
+- type: entity
+  parent: STClothingHeadHatBase
+  id: Z14STClothingHeadOldRoadHelmet
+  suffix: Z14
+  name: old road cloak hood
+  description: Covers your head
+  categories: [ HideSpawnMenu, Zona14 ]
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/Head/Hats/oldroad.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/Head/Hats/oldroad.rsi

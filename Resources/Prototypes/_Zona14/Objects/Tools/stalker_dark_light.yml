@@ -1,0 +1,32 @@
+- type: entity
+  id: Z14STDarkLight
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: dim light source
+  description: An invisible, non-physical source of illumination for use in completely dark areas.
+  # This prototype has no sprite or item components. It's purely a
+  # light emitter and can be spawned anywhere without a physical
+  # representation.
+  components:
+    - type: PointLight
+      radius: 4
+      color: "#a9bbda"
+      energy: 1
+      enabled: true
+      netsync: false
+    - type: Tag
+      tags:
+        - LightSource
+
+- type: entity
+  id: Z14STDarkLightSpawner
+  categories: [ Zona14 ]
+  name: dim light source spawner
+  suffix: Z14
+  parent: FlexibleMarker
+  components:
+    - type: RandomSpawner
+      prototypes:
+        - STDarkLight
+      chance: 1
+      offset: 0.0

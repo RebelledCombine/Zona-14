@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: STBaseMobMutant
   id: MutantPsidog
-  name: пси-пёс
+  name: psi-dog
   suffix: ST, T2
-  description: Мутировавший волк, обладающий существенными пси-способностями и способный создавать иллюзии. Редкая и очень опасная тварь.
+  description: A mutated wolf with significant psionic abilities and the ability to create illusions. A rare and very dangerous creature.
   components:
     - type: Damageable
       damageModifierSet: STMutantT2DamageModifierSet
@@ -140,9 +141,9 @@
 - type: entity
   parent: STBaseMobMutant
   id: MutantPsidogCopy
-  name: пси-пёс
-  description: Мутировавший волк, обладающий существенными пси-способностями и способный создавать иллюзии. Редкая и очень опасная тварь.
-  suffix: Stalker, Мутант, Копия
+  name: pseudodog
+  description: A mutated wolf with significant psionic abilities and the ability to create illusions. A rare and very dangerous creature.
+  suffix: Stalker, Mutant, Copy # Zona14: Stalker, Мутант, Копия
   components:
     - type: HTN
       rootTask:

@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: BowImprovised
   id: arbaletserih
-  name: Арбалет Серафимов
-  description: Сконструированый из жести, болтов, тетивы и приклада от СВД арбалет Серафимов-охотников. Экономное решение когда затраты на патроны слишком высоки и не хочется делать много шума. То что нужно для Фанатиков Зоны, выживающих в условиях дефицита патронов и когда для пропитания нужно убить Зверя.
+  name: Seraphim Crossbow
+  description: Constructed from tin, bolts, a bowstring, and an SVD stock—this crossbow is crafted by Seraphim hunters. A quiet, cost-effective solution when ammo is scarce. Ideal for Zone fanatics surviving off scraps and hunting beasts for sustenance.
   components:
   - type: Clothing
     sprite: _Stalker/Objects/Weapons/Guns/Snipers/arbalet.rsi

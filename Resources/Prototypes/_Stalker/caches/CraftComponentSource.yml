@@ -1,9 +1,10 @@
-#Источники микросхем
+# Zona14: translated Russian names/descriptions to English
+# Zona14: Источники микросхем
 - type: entity
   parent: STBaseStructure
   id: CraftComponentSourceT1PCB
-  suffix: Stalker, ИСТОЧНИК, Т1
-  name: кучка микросхем
+  suffix: Stalker, SOURCE, T1 # Zona14: Stalker, ИСТОЧНИК, Т1
+  name: chip pile
   components:
     - type: InteractionOutline
     - type: TimedDespawn
@@ -45,8 +46,8 @@
 - type: entity
   parent: STBaseStructure
   id: CraftComponentSourceT2PCB
-  suffix: Stalker, ИСТОЧНИК, Т2
-  name: коробка с платами
+  suffix: Stalker, SOURCE, T2 # Zona14: Stalker, ИСТОЧНИК, Т2
+  name: PCB box
   components:
     - type: TimedDespawn
       lifetime: 3610
@@ -89,8 +90,8 @@
 - type: entity
   parent: STBaseStructure
   id: CraftComponentSourceT3PCB
-  suffix: Stalker, ИСТОЧНИК, Т3
-  name: гражданское хранилище с электроникой
+  suffix: Stalker, SOURCE, T3 # Zona14: Stalker, ИСТОЧНИК, Т3
+  name: Civilian Storage with Electronics
   components:
     - type: InteractionOutline
     - type: TimedDespawn
@@ -134,8 +135,8 @@
 - type: entity
   parent: STBaseStructure
   id: CraftComponentSourceT4PCB
-  suffix: Stalker, ИСТОЧНИК, Т4
-  name: военное хранилище с электроникой
+  suffix: Stalker, SOURCE, T4 # Zona14: Stalker, ИСТОЧНИК, Т4
+  name: military storage with electronics
   components:
     - type: InteractionOutline
     - type: TimedDespawn
@@ -179,8 +180,8 @@
 - type: entity
   parent: STBaseStructure
   id: CraftComponentSourceT5PCB
-  suffix: Stalker, ИСТОЧНИК, Т5
-  name: научное хранилище с электроникой
+  suffix: Stalker, SOURCE, T5 # Zona14: Stalker, ИСТОЧНИК, Т5
+  name: Scientific Repository with Electronics
   components:
     - type: InteractionOutline
     - type: TimedDespawn
@@ -226,12 +227,12 @@
           prob: 0.05
 
 
-#Пластик
+# Zona14: Пластик
 - type: entity
   parent: STBaseStructure
   id: CraftComponentSourceT1PlasticFitting
-  suffix: Stalker, ИСТОЧНИК, Т1
-  name: куча пластика
+  suffix: Stalker, SOURCE, T1 # Zona14: Stalker, ИСТОЧНИК, Т1
+  name: A bunch of plastic
   components:
     - type: InteractionOutline
     - type: TimedDespawn
@@ -273,8 +274,8 @@
 - type: entity
   parent: STBaseStructure
   id: CraftComponentSourceT2PlasticFitting
-  suffix: Stalker, ИСТОЧНИК, Т2
-  name: коробка с пластиком
+  suffix: Stalker, SOURCE, T2 # Zona14: Stalker, ИСТОЧНИК, Т2
+  name: Box with plastic
   components:
     - type: InteractionOutline
     - type: TimedDespawn
@@ -316,8 +317,8 @@
 - type: entity
   parent: STBaseStructure
   id: CraftComponentSourceT3PlasticFitting
-  suffix: Stalker, ИСТОЧНИК, Т3
-  name: гражданское хранилище с пластиком
+  suffix: Stalker, SOURCE, T3 # Zona14: Stalker, ИСТОЧНИК, Т3
+  name: Civilian storage with plastic
   components:
     - type: InteractionOutline
     - type: TimedDespawn
@@ -361,8 +362,8 @@
 - type: entity
   parent: STBaseStructure
   id: CraftComponentSourceT4PlasticFitting
-  suffix: Stalker, ИСТОЧНИК, Т4
-  name: военное хранилище с пластиком
+  suffix: Stalker, SOURCE, T4 # Zona14: Stalker, ИСТОЧНИК, Т4
+  name: Military Storage With Plastic
   components:
     - type: InteractionOutline
     - type: TimedDespawn
@@ -405,8 +406,8 @@
 - type: entity
   parent: STBaseStructure
   id: CraftComponentSourceT5PlasticFitting
-  suffix: Stalker, ИСТОЧНИК, Т5
-  name: научное хранилище с пластиком
+  suffix: Stalker, SOURCE, T5 # Zona14: Stalker, ИСТОЧНИК, Т5
+  name: Scientific Repository with Plastic
   components:
     - type: InteractionOutline
     - type: TimedDespawn

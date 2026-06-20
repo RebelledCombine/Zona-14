@@ -1,0 +1,113 @@
+- type: entity
+  abstract: true
+  parent: Z14HelmetBase
+  id: Z14STClothingHeadHelmetEnvironmentT4Base
+  categories: [ Zona14 ]
+  name: T4 Environment Protection Helmet Base
+  components:
+  - type: BreathMask
+  - type: IngestionBlocker
+  - type: IdentityBlocker
+  - type: Tag
+    tags:
+      - BlockMask
+  - type: HideLayerClothing
+    slots:
+    - Hair
+    - Snout
+
+- type: entity
+  parent: Z14STClothingHeadHelmetEnvironmentT4Base #Need sprites for helmet with and without flashlight
+  id: Z14ClothingHeadHelmetBulatMercenary
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Mercenary Sphere-12 Helmet
+  description: A helmet designed for protection against piercing attacks. Has resistance to other damage types.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/bulat_helm_mercenary.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/bulat_helm_mercenary.rsi
+
+- type: entity
+  parent: Z14STClothingHeadHelmetCombatT3Base #Need sprites for helmet with and without flashlight
+  id: Z14ClothingHeadHelmetBulatMonolith
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Monolith's Sphere-12 helmet
+  description: Part of the Berill set.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/bulat_helm_monolit.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/bulat_helm_monolit.rsi
+  - type: IngestionBlocker
+  - type: IdentityBlocker
+  - type: PersonalDamage
+    damage:
+      types:
+        Radiation: 18.01
+
+- type: entity
+  parent: Z14STClothingHeadHelmetEnvironmentT4Base #Need sprites for helmet with and without flashlight
+  id: Z14ClothingHeadHelmetBulatMilitary
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Military Sphere-12 Helmet
+  description: Part of the Bulat set.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/bulat_helm_military.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/bulat_helm_military.rsi
+  - type: IngestionBlocker
+  - type: IdentityBlocker
+
+- type: entity
+  parent: Z14STClothingHeadHelmetEnvironmentT4Base
+  id: Z14ClothingHeadHelmetBulatCovenant
+  categories: [ Zona14 ]
+  name: Covenant Sphere-12 Helmet
+  description: Part of the Bulat set.
+  suffix: Z14
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/Head/Bulat/covenant.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/Head/Bulat/covenant.rsi
+
+# Clear Sky - 1 +
+
+- type: entity
+  parent: Z14STClothingHeadHelmetEnvironmentT4Base
+  id: Z14ClothingHeadHelmetBerill5MCN
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Clear Sky Sphere-12 Helmet
+  description: A helmet designed for protection against piercing attacks. Has resistance to other damage types.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/bulat_helm_cn.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/bulat_helm_cn.rsi
+- type: entity
+  parent: Z14HelmetBase
+  id: Z14ClothingHeadHelmetCN3b
+  categories: [ Zona14 ]
+  name: '"ChN-3b" helmet'
+  suffix: Z14
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/hats/cn3b_helm.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/hats/cn3b_helm.rsi
+    - type: BreathMask
+    - type: IngestionBlocker
+    - type: IdentityBlocker
+    - type: Tag
+      tags:
+        - BlockMask
+        - HidesNose
+    - type: HideLayerClothing
+      slots:
+      - Hair

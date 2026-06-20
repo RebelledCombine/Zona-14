@@ -1,0 +1,91 @@
+- type: entity
+  name: leshey trigger (1-4) (20%)
+  id: Z14STTriggerLeshiy142010
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger142010
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+        - Z14MobMutantLeshiy
+      restricted:
+        - Z14MobMutantLeshiy
+
+- type: entity
+  name: leshey trigger (1-4) (50%)
+  id: Z14STTriggerLeshiy145030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger145030
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+        - Z14MobMutantLeshiy
+      restricted:
+        - Z14MobMutantLeshiy
+
+- type: entity
+  name: leshey trigger (1-2) (10%)
+  id: Z14STTriggerLeshiy121010
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger121010
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+        - Z14MobMutantLeshiy
+      restricted:
+        - Z14MobMutantLeshiy
+
+- type: entity
+  name: leshey trigger (1-2) (50%)
+  id: Z14STTriggerLeshiy125030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger125030
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+        - Z14MobMutantLeshiy
+      restricted:
+        - Z14MobMutantLeshiy
+
+
+- type: entity
+  name: leshey trigger (1) (100%) 30m
+  id: Z14STTriggerLeshiy1110030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger1110030
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+      - Z14MobMutantLeshiy
+      restricted:
+      - Z14MobMutantLeshiy
+
+- type: entity
+  name: leshey trigger (2) (100%) 30m
+  id: Z14STTriggerLeshiy2210030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger2210030
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+      - Z14MobMutantLeshiy
+      restricted:
+      - Z14MobMutantLeshiy
+
+- type: entity
+  name: leshey trigger (3) (100%) 30m
+  id: Z14STTriggerLeshiy3310030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger3310030
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+      - Z14MobMutantLeshiy
+      restricted:
+      - Z14MobMutantLeshiy

@@ -1,4 +1,5 @@
-############### Мясо
+# Zona14: translated Russian names/descriptions to English
+# Zona14: ############## Мясо
 
 - type: reagent
   id: MToxin
@@ -61,11 +62,11 @@
             Radiation: -1
 
 - type: entity
-  name: сырое сало
+  name: raw lard
   parent: FoodMeatBase
   id: STFoodMeatSalo
-  description: Кусок сырого сала кабана.
-  suffix: Stalker, еда
+  description: A chunk of raw boar fat.
+  suffix: Stalker, food # Zona14: Stalker, еда
   components:
   - type: STWeight
     self: 1.0
@@ -97,11 +98,11 @@
   - type: Craftable
 
 - type: entity
-  name: приготовленное сало
+  name: cooked lard
   parent: FoodMeatBase
   id: STFoodMeatSaloCooked
-  description: Приготовленное сало кабана.
-  suffix: Stalker, еда
+  description: Cooked boar fat.
+  suffix: Stalker, food # Zona14: Stalker, еда
   components:
   - type: STWeight
     self: 0.8
@@ -145,7 +146,7 @@
   - node: salo
     entity: STFoodMeatSaloCooked
 
-###############Хлеб
+# Zona14: ##############Хлеб
 
 - type: entity
   parent: FoodInjectableBase
@@ -171,7 +172,7 @@
 - type: entity
   parent: STFoodBreadBase
   id: STFoodBreadSliceBase
-  suffix: Stalker, еда
+  suffix: Stalker, food # Zona14: Stalker, еда
   abstract: true
   components:
   - type: Item
@@ -191,11 +192,11 @@
     - Meat
 
 - type: entity
-  name: буханка хлеба
+  name: loaf of bread
   parent: STFoodBreadBase
   id: STFoodBreadPlain
-  description: Неизвестно, кто умудряется печь батоны на территории Зоны, или каким образом их протаскивают через периметр. Однако этот хлеб не заражён, не радиоактивен, достаточно свеж и вполне съедобен. Во всяком случае, никто из сталкеров пока не жаловался.
-  suffix: Stalker, еда
+  description: It is unknown who manages to bake loaves on site, or how they are smuggled through the perimeter. However, this bread is not contaminated, not radioactive, quite fresh and quite edible. In any case, none of the stalkers have complained yet.
+  suffix: Stalker, food # Zona14: Stalker, еда
   components:
   - type: Edible
   - type: Sprite
@@ -208,11 +209,11 @@
     - Cooked
 
 - type: entity
-  name: кусок хлеба
-  suffix: Stalker, еда
+  name: piece of bread
+  suffix: Stalker, food # Zona14: Stalker, еда
   parent: STFoodBreadBase
   id: STFoodBreadPlainSlice
-  description: Кусок хлеба. На первый взгляд достаточно свеж и вполне съедобен.
+  description: Slice of bread. At first glance, it is quite fresh and quite edible.
   components:
   - type: Edible
   - type: Sprite
@@ -229,14 +230,14 @@
 
 
 
-#############  Cалями
+# Zona14: ############  Cалями
 
 - type: entity
-  name: кусок колбасы
+  name: piece of sausage
   parent: FoodMeatBase
   id: STFoodMeatSalamiSlice
-  description:  Если присмотреться достаточно внимательно, можно заметить, что кусок колбасы состоит из мяса не самого высокого качества.
-  suffix: Stalker, еда
+  description: If you look closely enough, you'll notice that a piece of sausage isn't made up of the highest quality meat.
+  suffix: Stalker, food # Zona14: Stalker, еда
   components:
   - type: STWeight
     self: 0.2
@@ -253,11 +254,11 @@
 
 
 - type: entity
-  name: колбаса «Практическая»
+  name: '"Prakticheskaya" sausage'
   parent: FoodMeatBase
   id: STFoodMeatSalami
-  description: Часто за неимением лучшего, эта колбаса — смесь курятины и соевого заменителя — становится завтраком, обедом и ужином сталкера. Из-за большого количества консервантов довольно долго не портится
-  suffix: Stalker, еда
+  description: "Often, for lack of a better one, this sausage — a blend of chicken and soy substitute — becomes a stalker's breakfast, lunch, and dinner. Due to the large amount of preservatives, it does not spoil for a long time"
+  suffix: Stalker, food # Zona14: Stalker, еда
   components:
   - type: Sprite
     sprite: Objects/Consumable/Food/salami.rsi
@@ -280,11 +281,11 @@
     - Cooked
 
 - type: entity
-  name: колбаса «Зыряновская»
+  name: '"Zyryanovskaya" sausage'
   parent: FoodMeatBase
   id: STFoodMeatMeatbat
-  description: Колбаса, сделанная в посёлке Зыряновка, отличается тем, что очень много весит, вследствие чего ей можно очень больно ударить.
-  suffix: Stalker, еда
+  description: A sausage made in Zyryanovka settlement; it’s heavy enough to hit someone hard.
+  suffix: Stalker, food # Zona14: Stalker, еда
   components:
   - type: STWeight
     self: 20
@@ -308,14 +309,14 @@
     tags:
     - Cooked
 
-##### Кабан
+# Zona14: #### Кабан
 
 - type: entity
-  name: сырое мясо кабана
+  name: raw boar meat
   parent: FoodMeatRawBase
   id: FoodMeatBoar
-  description: Кусок сырого мяса кабана, лучше не думать, чем питался его бывший владелец.
-  suffix: Stalker, еда
+  description: A piece of raw boar meat.
+  suffix: Stalker, food # Zona14: Stalker, еда
   components:
   - type: STWeight
     self: 1.0
@@ -345,11 +346,11 @@
   - type: Craftable
 
 - type: entity
-  name: шашлык из мяса кабана
+  name: boar meat kebab
   parent: FoodMeatBase
   id: FoodMeatBoarCooked
-  description: Приготовленное мясо кабана, покрытое золотистой хрустящей корочкой, выглядит аппетитно.
-  suffix: Stalker, еда
+  description: Cooked boar meat.
+  suffix: Stalker, food # Zona14: Stalker, еда
   components:
   - type: STWeight
     self: 0.8
@@ -394,14 +395,14 @@
   - node: steak boar
     entity: FoodMeatBoarCooked
 
-######################## Пёсик
+# Zona14: ####################### Пёсик
 
 - type: entity
-  name: сырое мясо пса
+  name: raw dog meat
   parent: FoodMeatRawBase
   id: FoodMeatDog
-  description: Кусок сырого мяса мутировавшей собаки, содержит опасный для человеческого организма токсин, но если ты голодал последние несколько дней, токсины не кажутся такими уж смертельными.
-  suffix: Stalker, еда
+  description: A piece of raw dog meat.
+  suffix: Stalker, food # Zona14: Stalker, еда
   components:
   - type: STWeight
     self: 0.8
@@ -431,11 +432,11 @@
   - type: Craftable
 
 - type: entity
-  name: стейк из мяса пса
+  name: dog meat steak
   parent: FoodMeatBase
   id: FoodMeatDogCooked
-  description: Приготовленное мясо собаки, шутки про корейскую еду приветствуются.
-  suffix: Stalker, еда
+  description: Cooked dog meat.
+  suffix: Stalker, food # Zona14: Stalker, еда
   components:
   - type: STWeight
     self: 0.6
@@ -480,13 +481,13 @@
   - node: steak dog
     entity: FoodMeatDogCooked
 
-######################## Паук
+# Zona14: ####################### Паук
 - type: entity
-  name: сырое паучье мясо
+  name: raw spider meat
   parent: FoodMeatRawBase
   id: STFoodMeatSpider
-  description: Кусок сырого мяса паука. Выглядит тошнотворно.
-  suffix: Stalker, еда
+  description: A piece of raw spider meat. It looks sickening.
+  suffix: Stalker, food # Zona14: Stalker, еда
   components:
   - type: Sprite
     sprite: Objects/Consumable/Food/meat.rsi
@@ -507,11 +508,11 @@
   - type: Craftable
 
 - type: entity
-  name: стейк из мяса паука
+  name: spider meat steak
   parent: FoodMeatBase
   id: STFoodMeatSpiderCooked
-  description: Приготовленное мясо паука. Выглядит тошнотворно.
-  suffix: Stalker, еда
+  description: Cooked spider meat. It looks sickening.
+  suffix: Stalker, food # Zona14: Stalker, еда
   components:
   - type: STWeight
     self: 0.6
@@ -539,14 +540,14 @@
 
 
 ###################################
-#             НАПИТКИ             #
+# Zona14: НАПИТКИ             #
 ###################################
 
 - type: entity
   parent: DrinkBottleGlassBaseFull
   id: DrinkLemonadehBottleFull
-  name: бутылка с лимонадом «Дюшес»
-  description: "Один из сортов советского лимонада: безалкогольный сильногазированный тонизирующий напиток светло-жёлтого цвета. Помимо обычной лимонадной основы, оригинальный напиток содержит сироп-настой десертной южной груши сорта «Дюшес»"
+  name: Duchess Lemonade Bottle
+  description: "\"One of the varieties of Soviet lemonade: a non-alcoholic highly carbonated tonic drink of light yellow color. In addition to the usual lemonade base, the original drink contains a syrup-infusion of a dessert southern pear of the Duchess variety"
   components:
   - type: STWeight
     self: 1.5
@@ -572,11 +573,11 @@
 # Stalker
 
 - type: entity
-  name: печёный картофель
+  name: baked potato
   parent: FoodProduceBase
   id: FoodPotatoCooked
-  description: Печёный картофель, который может быть как простым, так и праздничным, изысканным блюдом.
-  suffix: Stalker, еда
+  description: Baked potatoes, which can be either simple or festive, gourmet dishes.
+  suffix: Stalker, food # Zona14: Stalker, еда
   components:
   - type: STWeight
     self: 0.36
@@ -609,11 +610,11 @@
 
 
 - type: entity
-  name: картофельные очистки
+  name: potato peels
   parent: FoodProduceBase
   id: FoodPotatoCleaning
-  description: Говорят, что из них делают чипсы.
-  suffix: Stalker, еда
+  description: They are said to make chips.
+  suffix: Stalker, food # Zona14: Stalker, еда
   components:
   - type: STWeight
     self: 0.01
@@ -639,11 +640,11 @@
     - Vegetable
 
 - type: entity
-  name: бутерброд c колбасой
+  name: sausage sandwich
   parent: STFoodBreadSliceBase
   id: STFoodMeatButerbrod
-  suffix: Stalker, Еда
-  description: Ломтик хлеба или булки с намазанной или уложенной сверху начинкой из какого-либо продукта, готового к употреблению.
+  suffix: Stalker, Food # Zona14: Stalker, Еда
+  description: A slice of bread or loaf with a ready-to-eat filling spread or placed on top.
   components:
   - type: STWeight
     self: 0.34

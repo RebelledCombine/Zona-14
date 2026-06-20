@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
-  name: диван
+  name: sofa
   id: STDivan
   suffix: ST, Mapping
   parent: ChairBase
-  description: Старый, но удобный диван с вмятинами на подушках и вытертыми подлокотниками, словно впитал в себя годы разговоров и тихих вечеров.
+  description: An old but comfortable sofa with dented pillows and worn armrests, as if it absorbed years of conversations and quiet evenings.
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Furniture/divan.rsi

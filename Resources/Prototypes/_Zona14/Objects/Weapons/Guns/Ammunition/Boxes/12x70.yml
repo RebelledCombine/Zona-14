@@ -1,0 +1,293 @@
+- type: entity
+  parent: BaseAmmoBoxStalker
+  id: Z147mmBuckshotBox
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: 7mm buckshot box
+  description: For shotguns, 10 pieces in a box. Useless against armor.
+  components:
+  - type: MagazineVisuals
+    magState: 1270red
+  - type: BallisticAmmoProvider
+    capacity: 10
+    proto: Cartridge7mmBuckshot
+    whitelist:
+      tags:
+        - ShellShotgun
+  - type: Sprite
+    layers:
+    - state: 1270
+      map: ["enum.GunVisualLayers.Base"]
+    - state: 1270red-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  parent: 7mmBuckshotBox
+  id: Z146mmBuckshotBox
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: 6.5mm "Express" Buckshot Box
+  description: For shotguns, 10 pieces in a box. Provides penetration of only 1 armor class.
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge6mmBuckshot
+  - type: Sprite
+    layers:
+    - state: 1270
+      map: ["enum.GunVisualLayers.Base"]
+    - state: 1270red-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: t2
+
+- type: entity
+  parent: 7mmBuckshotBox
+  id: Z148mmBuckshotBox
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: 8.5mm "Magnum" Buckshot Box
+  description: For shotguns, 10 pieces in a box. Provides penetration of armor class 2.
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge8mmBuckshot
+  - type: Sprite
+    layers:
+    - state: 1270
+      map: ["enum.GunVisualLayers.Base"]
+    - state: 1270red-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: t4
+
+- type: entity
+  parent: 7mmBuckshotBox
+  id: Z14ShotgunFlechette
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Flechette Box (12x70)
+  description: For shotguns, 10 pieces in a box. Provides penetration of armor class 3.
+  components:
+  - type: MagazineVisuals
+    magState: 1270gray
+  - type: BallisticAmmoProvider
+    proto: CartridgeShotgunFlechette
+  - type: Sprite
+    layers:
+    - state: 1270
+      map: ["enum.GunVisualLayers.Base"]
+    - state: 1270gray-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: antiarmor
+
+- type: entity
+  parent: 7mmBuckshotBox
+  id: Z14ShotgunBulletUnlethalBox
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Non-Lethal Bullet Box (12x70)
+  components:
+    - type: MagazineVisuals
+      magState: 1270green
+    - type: BallisticAmmoProvider
+      proto: ShellShotgunBeanbagStalker
+    - type: Sprite
+      layers:
+        - state: 1270solid
+          map: ["enum.GunVisualLayers.Base"]
+        - state: 1270green-1
+          map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  parent: 7mmBuckshotBox
+  id: Z14ShotgunBulletBox
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Bullet Box (12x70)
+  description: "For shotguns, 10 pieces in a box. Provides penetration of armor class 2."
+  components:
+  - type: MagazineVisuals
+    magState: 1270green
+  - type: BallisticAmmoProvider
+    proto: CartridgeShotgunBullet
+  - type: Sprite
+    layers:
+    - state: 1270solid
+      map: ["enum.GunVisualLayers.Base"]
+    - state: 1270green-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  parent: ShotgunBulletBox
+  id: Z14ShotgunBulletBoxRIP
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Bullet Box (12x70) RIP
+  description: "For shotguns, 10 pieces in a box. Useless against armor."
+  components:
+  - type: MagazineVisuals
+    magState: 1270green
+  - type: BallisticAmmoProvider
+    proto: CartridgeShotgunBulletRIP
+  - type: Sprite
+    layers:
+    - state: 1270solid
+      map: ["enum.GunVisualLayers.Base"]
+    - state: 1270green-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: exp
+
+- type: entity
+  parent: 7mmBuckshotBox
+  id: Z14ShotgunDarttBox
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Dart Box (12x70)
+  description: "For shotguns, 10 pieces in a box. Provides penetration of armor class 3."
+  components:
+  - type: MagazineVisuals
+    magState: 1270yellow
+  - type: BallisticAmmoProvider
+    proto: CartridgeShotgunDart
+  - type: Sprite
+    layers:
+    - state: 1270drot
+      map: ["enum.GunVisualLayers.Base"]
+    - state: 1270yellow-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  parent: BaseAmmoCinkBoxStalker
+  id: Z147mmBuckshotBoxCink
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: 7mm Large Buckshot Box
+  description: For shotguns, 100 pieces in a box. Useless against armor.
+  components:
+  - type: BallisticAmmoProvider
+    capacity: 100
+    proto: Cartridge7mmBuckshot
+    whitelist:
+      tags:
+        - ShellShotgun
+  - type: Sprite
+    layers:
+    - state: cink
+      map: ["enum.GunVisualLayers.Base"]
+    - state: cink
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  parent: 7mmBuckshotBoxCink
+  id: Z146mmBuckshotBoxCink
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: 6.5mm Express Large Buckshot Box
+  description: For shotguns, 100 pieces in a box. Provides penetration of only 1 armor class.
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge6mmBuckshot
+  - type: Sprite
+    layers:
+    - state: cink
+      map: ["enum.GunVisualLayers.Base"]
+    - state: cink
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  parent: 7mmBuckshotBoxCink
+  id: Z148mmBuckshotBoxCink
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: 8.5mm "Magnum" Large Buckshot Box
+  description: For shotguns, 100 pieces in a box. Provides penetration of armor class 2.
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge8mmBuckshot
+  - type: Sprite
+    layers:
+    - state: cink
+      map: ["enum.GunVisualLayers.Base"]
+    - state: cink
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  parent: 7mmBuckshotBoxCink
+  id: Z14ShotgunFlechetteCink
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Large Flechette Box (12x70)
+  description: For shotguns, 100 pieces in a box. Provides penetration of armor class 3.
+  components:
+  - type: BallisticAmmoProvider
+    proto: CartridgeShotgunFlechette
+  - type: Sprite
+    layers:
+    - state: cink
+      map: ["enum.GunVisualLayers.Base"]
+    - state: cink
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  parent: 7mmBuckshotBoxCink
+  id: Z14ShotgunBulletUnlethalBoxCink
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Large Non-Lethal Bullet Box (12x70)
+  components:
+    - type: BallisticAmmoProvider
+      proto: ShellShotgunBeanbagStalker
+    - type: Sprite
+      layers:
+        - state: cink
+          map: ["enum.GunVisualLayers.Base"]
+        - state: cink
+          map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  parent: 7mmBuckshotBoxCink
+  id: Z14ShotgunBulletBoxCink
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Large Bullet Box (12x70)
+  description: "For shotguns, 100 pieces in a box. Provides penetration of armor class 2."
+  components:
+  - type: BallisticAmmoProvider
+    proto: CartridgeShotgunBullet
+  - type: Sprite
+    layers:
+    - state: cink
+      map: ["enum.GunVisualLayers.Base"]
+    - state: cink
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  parent: ShotgunBulletBoxCink
+  id: Z14ShotgunBulletBoxRIPCink
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Large Bullet Box (12x70) RIP
+  description: "For shotguns, 100 pieces in a box. Useless against armor."
+  components:
+  - type: BallisticAmmoProvider
+    proto: CartridgeShotgunBulletRIP
+  - type: Sprite
+    layers:
+    - state: cink
+      map: ["enum.GunVisualLayers.Base"]
+    - state: cink
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  parent: 7mmBuckshotBoxCink
+  id: Z14ShotgunDarttBoxCink
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Large Dart Box (12x70)
+  description: "For shotguns, 100 pieces in a box. Provides penetration of armor class 3."
+  components:
+  - type: BallisticAmmoProvider
+    proto: CartridgeShotgunDart
+  - type: Sprite
+    layers:
+    - state: cink
+      map: ["enum.GunVisualLayers.Base"]
+    - state: cink
+      map: ["enum.GunVisualLayers.Mag"]

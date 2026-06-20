@@ -1,0 +1,25 @@
+﻿- type: entity
+  parent: UnsensoredClothingUniformSkirtBase
+  id: Z14ClothingTshirtOrange
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: orange t-shirt
+  description: A regular T-shirt, painted orange.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/TShirts/tshirt_orange.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/TShirts/tshirt_orange.rsi
+
+- type: entity
+  parent: UnsensoredClothingUniformSkirtBase
+  id: Z14ClothingTshirtBlue
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: blue t-shirt
+  description: A regular T-shirt, painted blue.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/TShirts/tshirt_blue.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/TShirts/tshirt_blue.rsi

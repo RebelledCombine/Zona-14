@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: Krest1
   parent: BaseStructureDynamic
-  name: надгробный крест
+  name: Grave Cross
   suffix: ST, Mapping
-  description: Мрачный памятник умершим.
+  description: A grim monument to the dead.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/krest.rsi
@@ -26,9 +27,9 @@
 - type: entity
   id: Krest2
   parent: BaseStructureDynamic
-  name: надгробный крест
+  name: "{ ent-Krest1 }"
   suffix: ST, Mapping
-  description: Мрачный памятник умершим.
+  description: "{ ent-Krest1.desc }"
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/krest.rsi
@@ -51,9 +52,9 @@
 - type: entity
   id: Krest3
   parent: BaseStructureDynamic
-  name: надгробный камень
+  name: Tombstone
   suffix: ST, Mapping
-  description: Мрачный памятник умершим.
+  description: "{ ent-Krest1.desc }"
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/krest32x64.rsi
@@ -76,9 +77,9 @@
 - type: entity
   id: Krest4
   parent: BaseStructureDynamic
-  name: надгробный крест
+  name: "{ ent-Krest1 }"
   suffix: ST, Mapping
-  description: Мрачный памятник умершим.
+  description: "{ ent-Krest1.desc }"
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/krest32x64.rsi

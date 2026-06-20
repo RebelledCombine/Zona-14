@@ -1,10 +1,11 @@
+# Zona14: translated Russian names/descriptions to English
 
 - type: entity
   parent: StalkerShop
   id: StalkerShopClown
-  name: Торгомат, Циркачи
-  description: Хахахахахаха хотя нет не смешно.
-  suffix: ST, Mapping, Циркачи
+  name: Vendomat, Circus
+  description: Hahahahahaha actually no, not funny.
+  suffix: ST, Mapping, Circus # Zona14: ST, Mapping, Циркачи
   components:
     - type: Sprite
       drawdepth: Objects

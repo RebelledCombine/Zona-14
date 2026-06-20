@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: BagPotato1
   parent: BaseStructureDynamic
-  name: мешок картошки
+  name: Sack of Potatoes
   suffix: ST, Mapping
-  description: Полный мешок картошки.
+  description: A full sack of potatoes.
   placement:
     mode: PlaceFree
   components:
@@ -29,9 +30,9 @@
 - type: entity
   id: BagPotato2
   parent: BaseStructureDynamic
-  name: мешок картошки
+  name: "{ ent-BagPotato1 }"
   suffix: ST, Mapping
-  description: Полный мешок картошки.
+  description: "{ ent-BagPotato1.desc }"
   placement:
     mode: PlaceFree
   components:
@@ -57,9 +58,9 @@
 - type: entity
   id: BagPotato3
   parent: BaseStructureDynamic
-  name: мешок картошки
+  name: "{ ent-BagPotato1 }"
   suffix: ST, Mapping
-  description: Полный мешок картошки.
+  description: "{ ent-BagPotato1.desc }"
   placement:
     mode: PlaceFree
   components:
@@ -85,9 +86,9 @@
 - type: entity
   id: BagPotato4
   parent: BaseStructureDynamic
-  name: мешок картошки
+  name: "{ ent-BagPotato1 }"
   suffix: ST, Mapping
-  description: Полный мешок картошки.
+  description: "{ ent-BagPotato1.desc }"
   placement:
     mode: PlaceFree
   components:

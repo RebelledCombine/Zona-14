@@ -49,30 +49,30 @@
     - name: shop-category-armor
       priority: 4
       items:
-        STClothingOuterArmorLightPlateVestSera: 20
-        STClothingOuterArmorLimaSeraphimStrash: 300
-        STClothingOuterArmorSeraphimStrash: 300
-        ClothingHeadAssaultHelmetSeraZastup: 30
-        ClothingHeadAssaultHelmetLimaSeraZastup: 30
-        ClothingHeadAltinHelmetLimaSera: 80
-        STClothingHeadHelmetSeraphimAltin: 80
-        STClothingMaskSeraphimSkull: 80
-        STClothingOuterCoatHimera: 5
-        STPsyHelm2: 20
+        Z14STClothingOuterArmorLightPlateVestSera: 20
+        Z14STClothingOuterArmorLimaSeraphimStrash: 300
+        Z14STClothingOuterArmorSeraphimStrash: 300
+        Z14ClothingHeadAssaultHelmetSeraZastup: 30
+        Z14ClothingHeadAssaultHelmetLimaSeraZastup: 30
+        Z14ClothingHeadAltinHelmetLimaSera: 80
+        Z14STClothingHeadHelmetSeraphimAltin: 80
+        Z14STClothingMaskSeraphimSkull: 80
+        Z14STClothingOuterCoatHimera: 5
+        Z14STPsyHelm2: 20
 
     - name: shop-category-storage-and-containers
       priority: 5
       items:
-        ClothingBackpackDuffelOliveTacticStalker: 40
-        ClothingBackpackDuffelMilitaryOlive: 40
+        Z14ClothingBackpackDuffelOliveTacticStalker: 40
+        Z14ClothingBackpackDuffelMilitaryOlive: 40
         ClothingBeltWebbingDoubleStalkerZaryaSmall: 10
 
     - name: shop-category-raincoats-and-gasmasks
       priority: 6
       items:
           # Gasmasks
-        ClothingMaskunix5000: 40
-        ClothingMaskRCBZ2: 30
+        Z14ClothingMaskunix5000: 40
+        Z14ClothingMaskRCBZ2: 30
 
     - name: shop-category-modules
       priority: 7

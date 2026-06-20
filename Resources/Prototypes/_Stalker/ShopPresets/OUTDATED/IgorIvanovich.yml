@@ -3,7 +3,7 @@
   itemsForSale:
     ZoneArtifactFlame: 1
   categories:
-    - name: Детекторы
+    - name: Detectors # Zona14: Детекторы
       priority: 1
       items:
         ZoneArtifactDetectorBarracuda: 52000

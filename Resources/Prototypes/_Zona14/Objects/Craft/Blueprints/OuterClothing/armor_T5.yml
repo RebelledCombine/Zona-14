@@ -1,0 +1,9 @@
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14ClothingOuterArmorSTClothingOuterHeavyRedutBlueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Recipe Heavy body armor "Redut"
+  components:
+    - type: STBlueprint
+      blueprint: newrecipeClothingOuterArmorSTClothingOuterHeavyRedut

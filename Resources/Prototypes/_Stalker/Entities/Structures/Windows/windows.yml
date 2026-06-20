@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: BaseStructure
   id: WindowsBrick
   suffix: ST, Mapping, windows
-  name: кирпичное окно
-  description: Окно
+  name: Brick Window
+  description: Window
   components:
   - type: WallMount
     arc: 360 # interact despite grilles
@@ -42,8 +43,8 @@
   parent: WindowsBrick
   id: WindowsBunker
   suffix: ST, Mapping, windows
-  name: окно бункера
-  description: Окно
+  name: Bunker Window
+  description: "{ ent-WindowsBrick.desc }"
   components:
     - type: Icon
       sprite: _Stalker/Structures/Windows/WindowsBunker.rsi
@@ -58,8 +59,8 @@
   parent: WindowsBrick
   id: WindowsConcrete
   suffix: ST, Mapping, windows
-  name: бетонное окно
-  description: Окно
+  name: Concrete Window
+  description: "{ ent-WindowsBrick.desc }"
   components:
     - type: Icon
       sprite: _Stalker/Structures/Windows/WindowsConcrete.rsi
@@ -74,8 +75,8 @@
   parent: WindowsBrick
   id: WindowsDoor
   suffix: ST, Mapping, windows
-  name: деревянное окно
-  description: Окно
+  name: Wooden Window
+  description: "{ ent-WindowsBrick.desc }"
   components:
     - type: Icon
       sprite: _Stalker/Structures/Windows/WindowsDoor.rsi
@@ -90,8 +91,8 @@
   parent: WindowsBrick
   id: WindowsDungeon
   suffix: ST, Mapping, windows
-  name: укрепленное окно
-  description: Окно
+  name: Reinforced Window
+  description: "{ ent-WindowsBrick.desc }"
   components:
     - type: Icon
       sprite: _Stalker/Structures/Windows/WindowsDungeon.rsi
@@ -106,8 +107,8 @@
   parent: WindowsBrick
   id: WindowsMetal
   suffix: ST, Mapping, windows
-  name: стальное окно
-  description: Окно
+  name: Steel Window
+  description: "{ ent-WindowsBrick.desc }"
   components:
     - type: Icon
       sprite: _Stalker/Structures/Windows/WindowsMetal.rsi
@@ -122,8 +123,8 @@
   parent: WindowsBrick
   id: WindowsPrison
   suffix: ST, Mapping, windows
-  name: тюремное окно
-  description: Окно
+  name: Prison Window
+  description: "{ ent-WindowsBrick.desc }"
   components:
     - type: Icon
       sprite: _Stalker/Structures/Windows/WindowsPrison.rsi
@@ -138,8 +139,8 @@
   parent: WindowsBrick
   id: WindowsRmetal
   suffix: ST, Mapping, windows
-  name: бронированное окно
-  description: Окно
+  name: Armored Window
+  description: "{ ent-WindowsBrick.desc }"
   components:
     - type: Icon
       sprite: _Stalker/Structures/Windows/WindowsRmetal.rsi
@@ -154,8 +155,8 @@
   parent: WindowsBrick
   id: WindowsRock
   suffix: ST, Mapping, windows
-  name: каменное окно
-  description: Окно
+  name: Stone Window
+  description: "{ ent-WindowsBrick.desc }"
   components:
     - type: Icon
       sprite: _Stalker/Structures/Windows/WindowsRock.rsi
@@ -170,8 +171,8 @@
   parent: WindowsBrick
   id: WindowsRrmetal
   suffix: ST, Mapping, windows
-  name: ржавое бронированное окно
-  description: Окно
+  name: Rusted Armored Window
+  description: "{ ent-WindowsBrick.desc }"
   components:
     - type: Icon
       sprite: _Stalker/Structures/Windows/WindowsRrmetal.rsi
@@ -186,8 +187,8 @@
   parent: WindowsBrick
   id: WindowsRustmetal
   suffix: ST, Mapping, windows
-  name: ржавое окно
-  description: Окно
+  name: Rusted Window
+  description: "{ ent-WindowsBrick.desc }"
   components:
     - type: Icon
       sprite: _Stalker/Structures/Windows/WindowsRustmetal.rsi
@@ -202,8 +203,8 @@
   parent: WindowsBrick
   id: WindowsScrap
   suffix: ST, Mapping, windows
-  name: профнастиловое окно
-  description: Окно
+  name: Corrugated Metal Window
+  description: "{ ent-WindowsBrick.desc }"
   components:
     - type: Icon
       sprite: _Stalker/Structures/Windows/WindowsScrap.rsi
@@ -218,8 +219,8 @@
   parent: WindowsBrick
   id: WindowsSewer
   suffix: ST, Mapping, windows
-  name: канализационное окно
-  description: Окно
+  name: Sewer Window
+  description: "{ ent-WindowsBrick.desc }"
   components:
     - type: Icon
       sprite: _Stalker/Structures/Windows/WindowsSewer.rsi
@@ -234,8 +235,8 @@
   parent: WindowsBrick
   id: WindowsSiding
   suffix: ST, Mapping, windows
-  name: пфх окно
-  description: Окно
+  name: PVC Window
+  description: "{ ent-WindowsBrick.desc }"
   components:
     - type: Icon
       sprite: _Stalker/Structures/Windows/WindowsSiding.rsi
@@ -250,8 +251,8 @@
   parent: WindowsBrick
   id: WindowsVault
   suffix: ST, Mapping, windows
-  name: окно убежища
-  description: Окно
+  name: Vault Window
+  description: "{ ent-WindowsBrick.desc }"
   components:
     - type: Icon
       sprite: _Stalker/Structures/Windows/WindowsVault.rsi

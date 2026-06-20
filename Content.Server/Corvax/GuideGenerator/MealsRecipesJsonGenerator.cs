@@ -93,7 +93,7 @@ public sealed class MealsRecipesJsonGenerator
                 .ToList();
 
 
-        var mixableRecipes = new Dictionary<string, Dictionary<string, string>>(); // this is a list because we have https://station14.ru/wiki/Модуль:Chemistry_Lookup that already has everything we need and does everything for us.
+        var mixableRecipes = new Dictionary<string, Dictionary<string, string>>(); // this is a list because we have the Chemistry_Lookup wiki module that already has everything we need and does everything for us. // Zona14: translated URL from Russian wiki
 
         foreach (var react in reactionPrototypes)
         {

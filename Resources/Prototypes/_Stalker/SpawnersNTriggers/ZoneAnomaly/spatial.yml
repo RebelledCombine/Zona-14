@@ -1,7 +1,8 @@
-# Разлом (Rift)
+# Zona14: translated Russian names/descriptions to English
+# Zona14: Разлом (Rift)
 - type: entity
   id: SpawnerZoneAnomalyRiftChance1
-  name: спавнер аномалии разлом (10% шанс появления)
+  name: rift anomaly spawner (1% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   categories: [ Spawner, StSkipSpawnTest ]
@@ -21,7 +22,7 @@
 
 - type: entity
   id: SpawnerZoneAnomalyRiftChance5
-  name: спавнер аномалии разлом (15% шанс появления)
+  name: rift anomaly spawner (5% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   categories: [ Spawner, StSkipSpawnTest ]
@@ -41,7 +42,7 @@
 
 - type: entity
   id: SpawnerZoneAnomalyRiftChance10
-  name: спавнер аномалии разлом (20% шанс появления)
+  name: rift anomaly spawner (10% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   categories: [ Spawner, StSkipSpawnTest ]
@@ -61,7 +62,7 @@
 
 - type: entity
   id: SpawnerZoneAnomalyRiftChance25
-  name: спавнер аномалии разлом (35% шанс появления)
+  name: rift anomaly spawner (25% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   categories: [ Spawner, StSkipSpawnTest ]
@@ -81,7 +82,7 @@
 
 - type: entity
   id: SpawnerZoneAnomalyRiftChance50
-  name: спавнер аномалии разлом (50% шанс появления)
+  name: rift anomaly spawner (50% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   categories: [ Spawner, StSkipSpawnTest ]
@@ -101,7 +102,7 @@
 
 - type: entity
   id: SpawnerZoneAnomalyRiftChance100
-  name: спавнер аномалии разлом (100% шанс появления)
+  name: rift anomaly spawner (100% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   categories: [ Spawner, StSkipSpawnTest ]
@@ -119,10 +120,10 @@
     chance: 1
     offset: 0.0
 
-# Барабашка (Barabashka)
+# Zona14: Барабашка (Barabashka)
 - type: entity
   id: SpawnerZoneAnomalyBarabashkaChance1
-  name: спавнер аномалии барабашка (10% шанс появления)
+  name: thief anomaly spawner (1% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   categories: [ Spawner, StSkipSpawnTest ]
@@ -142,7 +143,7 @@
 
 - type: entity
   id: SpawnerZoneAnomalyBarabashkaChance5
-  name: спавнер аномалии барабашка (15% шанс появления)
+  name: thief anomaly spawner (5% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   categories: [ Spawner, StSkipSpawnTest ]
@@ -162,7 +163,7 @@
 
 - type: entity
   id: SpawnerZoneAnomalyBarabashkaChance10
-  name: спавнер аномалии барабашка (20% шанс появления)
+  name: thief anomaly spawner (10% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   categories: [ Spawner, StSkipSpawnTest ]
@@ -182,7 +183,7 @@
 
 - type: entity
   id: SpawnerZoneAnomalyBarabashkaChance25
-  name: спавнер аномалии барабашка (35% шанс появления)
+  name: thief anomaly spawner (25% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   categories: [ Spawner, StSkipSpawnTest ]
@@ -202,7 +203,7 @@
 
 - type: entity
   id: SpawnerZoneAnomalyBarabashkaChance50
-  name: спавнер аномалии барабашка (50% шанс появления)
+  name: thief anomaly spawner (50% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   categories: [ Spawner, StSkipSpawnTest ]
@@ -222,7 +223,7 @@
 
 - type: entity
   id: SpawnerZoneAnomalyBarabashkaChance100
-  name: спавнер аномалии барабашка (100% шанс появления)
+  name: thief anomaly spawner (100% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   categories: [ Spawner, StSkipSpawnTest ]

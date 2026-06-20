@@ -1,0 +1,52 @@
+- type: entity
+  name: controller trigger (1) (25%)
+  id: Z14STTriggerController125
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger125
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+        - Z14STMutantController
+      restricted:
+        - Z14STMutantController
+
+
+- type: entity
+  name: controller trigger (1) (100%) 30m
+  id: Z14STTriggerController1110030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger1110030
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+      - Z14STMutantController
+      restricted:
+      - Z14STMutantController
+
+- type: entity
+  name: controller trigger (2) (100%) 30m
+  id: Z14STTriggerController2210030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger2210030
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+      - Z14STMutantController
+      restricted:
+      - Z14STMutantController
+
+- type: entity
+  name: controller trigger (3) (100%) 30m
+  id: Z14STTriggerController3310030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger3310030
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+      - Z14STMutantController
+      restricted:
+      - Z14STMutantController

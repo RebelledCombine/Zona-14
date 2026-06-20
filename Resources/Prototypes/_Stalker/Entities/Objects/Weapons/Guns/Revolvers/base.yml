@@ -3,7 +3,7 @@
   id: STBaseWeaponGameRevolver
   name: STBaseWeaponGameRevolver
   description: A rooty tooty point and shooty.
-  suffix: ST, Revolver, револьвер
+  suffix: ST, Revolver, revolver # Zona14: ST, Revolver, револьвер
   abstract: true
   components:
   - type: FarGunshot
@@ -17,7 +17,7 @@
     - 0,0,1,0
     - 0,1,0,1
   - type: RepositoryItem
-    categoryName: Оружие
+    categoryName: Weapons # Zona14: Оружие
   - type: Tag
     tags:
     - Sidearm

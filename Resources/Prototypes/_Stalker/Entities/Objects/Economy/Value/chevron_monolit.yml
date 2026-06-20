@@ -1,10 +1,11 @@
-﻿- type: Tag
+﻿# Zona14: translated Russian names/descriptions to English
+- type: Tag
   id: ChevronMonolit
 - type: entity
   parent: BaseItem
   id: ChevronMonolit
-  name: шеврон монолита
-  description: Шеврон сорванный с бойца монолита.
+  name: Monolith chevron
+  description: A chevron torn from a Monolith fighter.
   suffix: Stalker
   components:
     - type: Stack

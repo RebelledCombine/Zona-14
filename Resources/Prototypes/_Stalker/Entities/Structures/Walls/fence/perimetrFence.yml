@@ -1,3 +1,4 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: STBaseFenceMetal
   id: STFenceMetalBroken
@@ -34,8 +35,8 @@
 - type: entity
   parent: StalkerFenceMetalStraight
   id: StalkerFenceMetalStraightPerimetr
-  name: Колючая проволока Периметра
-  description: Материал, который используется для ограждения и защиты территории от несанкционированного проникновения. Эту колючку можно перекусить болторезом.
+  name: Perimeter Barbed Wire
+  description: Material that is used to fence and protect an area from unauthorized entry. This thorn can be snacked on with a bolt cutter.
   suffix: ST, Mapping, traight
   components:
   - type: Craftable
@@ -43,8 +44,8 @@
 - type: entity
   parent: StalkerFenceMetalBroken
   id: StalkerFenceMetalBrokenPerimetr
-  name: Колючая проволока
-  description: Материал, который используется для ограждения и защиты территории от несанкционированного проникновения. Эту часть перекусили болторезом, её можно восстановить.
+  name: Barbed Wire
+  description: Material that is used to fence and protect an area from unauthorized entry. This part was bitten off with a bolt cutter, it can be restored.
   suffix: ST, Mapping
   components:
   - type: Craftable

@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: STClothingOuterBaseLargeToggleable
   id: ClothingOuterArmorUzk5
-  name: костюм УЗК-5
+  name: UZK-5 suit
   suffix: ST, T3, Env
-  description: Тяжёлый костюм, разработанный специально, для работы наёмных единиц в особо опасных и токсичных условиях Чернобыльской зоны отчуждения. Имеет несколько лёгких броневых пластин и тонкую прорезиненную подложку, что защищает от ожогов и радиации.
+  description: A heavy suit designed specifically for the work of mercenary units in the highly dangerous and toxic conditions of the Chernobyl Exclusion Zone. It has several light armor plates and a thin rubberized substrate that protects against burns and radiation.
   components:
   - type: STWeight
     self: 10
@@ -44,8 +45,8 @@
 - type: entity  # T3
   parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
   id: ClothingHeadHardsuitUzk5Helm
-  name: шлем "УЗК-5"
-  description: Встроенный шлем УЗК-5 с фонарём.
+  name: '"UZK-5" helmet'
+  description: Built-in ultrasonic helmet with flashlight.
   categories: [ HideSpawnMenu ]
   components:
     - type: PointLight
@@ -85,9 +86,9 @@
 - type: entity
   parent: ClothingOuterArmorUzk5
   id: STClothingOuterArmorSkyWalker
-  name: Экзоскелет ПНБ-4УВХ
+  name: PNB-4UVH exoskeleton
   suffix: ST, T3, PvP
-  description: Превращает своего владельца в настоящий ходячий танк. Использованы керамические бронепластины 3 класса защиты, поясные крепления в боковой части имеют защитные экраны, обеспечивающие защиту боков, что повлекло за собой значительное увеличение веса. Стандартно комплектуется противогазом S10. Единственные недостатки - очень слабая защита от аномалий и пневматика экзоскелета давно изношена, как и сама конструкция пережила своё время.
+  description: Turns its wearer into a true walking tank. Uses class 3 ceramic armor plates, with side belt mounts featuring protective screens that shield the flanks - which significantly increased its weight. Standardly comes with an S10 gas mask. Its only drawbacks are very weak protection against anomalies and the long-worn pneumatics of the exoskeleton, with the construction itself having outlived its time.
   components:
   - type: STWeight
     self: 50

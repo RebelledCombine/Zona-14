@@ -1,0 +1,22 @@
+- type: entity
+  parent: Z14GasMaskBase
+  id: Z14STClothingMaskGasPPM88
+  categories: [ Zona14 ]
+  name: PPM88 Gas Mask
+  description: Gas mask consisting of a facepiece with panoramic glass, a filter-absorbing canister, and a connecting tube, developed in the Russian Federation
+  suffix: Z14
+  components:
+  - type: Tag
+    tags:
+      - BlockMask
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/mask/ppm_88.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/mask/ppm_88.rsi
+
+  - type: HideLayerClothing
+    slots:
+    - Snout
+    - HeadTop
+    - HeadSide
+    - FacialHair

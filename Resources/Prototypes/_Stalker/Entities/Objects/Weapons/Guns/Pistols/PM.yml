@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: STBaseWeaponPistol
   id: WeaponPistolStalkerPM
-  name: ПМм
+  name: PMm
   suffix: ST
-  description: Это распространённый в Зоне пистолет советского производства. Вряд ли можно найти более доступное и неприхотливое оружие для сталкера-новичка.
+  description: "This is a Soviet-made pistol common in the zone. Rookie stalkers won't find a more affordable option anywhere else. It uses 9x18mm ammo."
   components:
   - type: STWeight
     self: 0.5
@@ -74,9 +75,9 @@
 - type: entity
   parent: WeaponPistolStalkerPM
   id: WeaponPistolStalkerPMModifed
-  name: ПМм 9x19
+  name: 9x19 PMm
   suffix: ST
-  description: Пистолет ПМм теперь под калибром 9х19 на магазине Glock-19, увеличена удобность и повышена скорострельность. Пострадала незначительно отдача и скорость пули.
+  description: A PMm modified to use a 9x19mm loaded Glock-17 magazine. The rate of fire has been slightly improved but the recoil suffers for it.
   components:
     - type: STWeight
       self: 0.5

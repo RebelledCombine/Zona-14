@@ -1,0 +1,30 @@
+- type: entity
+  parent: BaseCraftItem
+  id: Z14TechCardCalibrationDosimeter
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: dosimeter calibration card
+  description: Used to configure new sensors for a universal dosimeter. Allows them to determine the nature of the radiation without complex calculations on the main microcontroller.
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Craft/tech_card.rsi
+      layers:
+        - state: base
+        - state: contacts_gold
+        - state: label_orange
+
+- type: entity
+  parent: BaseCraftItem
+  id: Z14HotelCard
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Hotel Access Card
+  description: The card is ONLY for authorized users. When it is passed along the door, it scans the retina of the person's eye.
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Craft/tech_card.rsi
+      layers:
+        - state: base
+        - state: contacts_gold
+        - state: label_orange
+    - type: CkeyAccess

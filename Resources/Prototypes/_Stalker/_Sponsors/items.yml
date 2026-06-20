@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
-  name: топор
+  name: axe
   parent: HatchetStalker
   id: STHatchetSponsor
-  description: Топор, можно срубать деревья.
-  suffix: ST, спонсор
+  description: A hatchet, can be used to cut down trees.
+  suffix: ST, sponsor # Zona14: ST, спонсор
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Tools/hatchet.rsi
@@ -17,14 +18,14 @@
     sprite: _Stalker/Objects/Tools/hatchet.rsi
   - type: Craftable
   - type: RepositoryItem
-    categoryName: Инструменты
+    categoryName: Tools # Zona14: Инструменты
  
 - type: entity
   parent: BaseKnife
   id: STSpanishKnife
-  name: испанский армейский нож
-  description: Нож и резак для проволки в одном
-  suffix: Stalker, Инструменты
+  name: Spanish Army Knife
+  description: A knife and wire cutter in one.
+  suffix: Stalker, Tools # Zona14: Stalker, Инструменты
   components:
     - type: STWeight
       self: 0.5
@@ -43,7 +44,7 @@
         path: /Audio/Items/ratchet.ogg
     - type: Craftable
     - type: RepositoryItem
-      categoryName: Инструменты
+      categoryName: Tools # Zona14: Инструменты
     - type: Tag
       tags:
       - STCombatKnife

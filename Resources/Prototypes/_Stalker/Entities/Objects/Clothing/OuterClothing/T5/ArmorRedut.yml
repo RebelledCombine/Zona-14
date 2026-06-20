@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: STClothingOuterArmorStorageBasic
   id: STClothingOuterHeavyRedut
-  name: Тяжёлый бронежилет "Редут"
-  description: Бронежилет V типа, обеспечивающий достойную защиту от большинства видов повреждений.
+  name: Heavy "Redut" Body Armor
+  description: Type V body armor providing solid protection from most types of damage.
   suffix: ST, T5, PVP
   components:
   - type: Sprite

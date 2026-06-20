@@ -1,4 +1,4 @@
-####################################Одиночки
+# Zona14: ###################################Одиночки
 
 - type: entity
   parent: MapTeleportBase
@@ -19,7 +19,7 @@
       allowAll: false
       portalName: Cordon-DerebasStalker
 
-####################################Общий
+# Zona14: ###################################Общий
 
 - type: entity
   parent: MapTeleportBase
@@ -39,7 +39,7 @@
       portalName: Bar-BarStalker
     - type: AccessReader
       access: [["Stalker"], ["SciBase"], ["Renegat"], ["Dolg"], ["CN"] ]
-####################################Монолит
+# Zona14: ###################################Монолит
 
 - type: entity
   parent: MapTeleportBase
@@ -82,7 +82,7 @@
   - type: AccessReader
     access: [["Monolith"]]
 
-####################################Бандиты
+# Zona14: ###################################Бандиты
 
 - type: entity
   parent: MapTeleportBase
@@ -104,7 +104,7 @@
       portalName: Cordon-SvalkaBand
     - type: AccessReader
       access: [["Bandit"]]
-####################################Военные (старый, удалить когда поставят новый)
+# Zona14: ###################################Военные (старый, удалить когда поставят новый)
 - type: entity
   parent: MapTeleportBase
   id: Cordon-MilBase
@@ -174,7 +174,7 @@
       portalName: Purgatory-Les
     - type: AccessReader
       access: [["SciBase"]]
-####################################Серафимы
+# Zona14: ###################################Серафимы
 - type: entity
   parent: MapTeleportBase
   id: Base-Sera
@@ -193,7 +193,7 @@
     - type: NewMapTeleport
       allowAll: false
       portalName: Base-Sera
-####################################Ренегаты
+# Zona14: ###################################Ренегаты
 - type: entity
   parent: MapTeleportBase
   id: Cordon-Rene1
@@ -275,7 +275,7 @@
     - type: AccessReader
       access: [["Renegat"]]
 
-########################################## Грех
+# Zona14: ######################################### Грех
 
 - type: entity
   parent: MapTeleportBase
@@ -316,7 +316,7 @@
     - type: NewMapTeleport
       portalName: RedForest-Oazis
 
-###################################### Чистое небо (старый, удалить когда поставят новый)
+# Zona14: ##################################### Чистое небо (старый, удалить когда поставят новый)
 
 - type: entity
   parent: MapTeleportBase
@@ -341,7 +341,7 @@
     - type: AccessReader
       access: [["CN"]]
 
-###################################### Проект
+# Zona14: ##################################### Проект
 
 - type: entity
   parent: MapTeleportBase
@@ -385,7 +385,7 @@
   - type: AccessReader
     access: [[Project]]
 
-####################################Отступники
+# Zona14: ###################################Отступники
 
 - type: entity
   parent: MapTeleportBase
@@ -409,7 +409,7 @@
     - type: AccessReader
       access: [["Deserter"]]
 
-####################################Наёмники
+# Zona14: ###################################Наёмники
 
 - type: entity
   parent: MapTeleportBase
@@ -432,7 +432,7 @@
     - type: AccessReader
       access: [["Merc"]]
 
-###################################Поиск
+# Zona14: ##################################Поиск
 
 - type: entity
   parent: MapTeleportBase
@@ -455,7 +455,7 @@
     - type: AccessReader
       access: [["Poisk"]]
 
-###################################Нейтралы
+# Zona14: ##################################Нейтралы
 
 - type: entity
   parent: MapTeleportBase
@@ -479,7 +479,7 @@
     - type: AccessReader
       access: [["Neutral"]]
 
-####################################Жабы
+# Zona14: ###################################Жабы
 
 - type: entity
   parent: MapTeleportBase
@@ -503,7 +503,7 @@
     - type: AccessReader
       access: [["Jaba"]]
 
-####################################Чистое Небо
+# Zona14: ###################################Чистое Небо
 
 - type: entity
   parent: MapTeleportBase
@@ -527,7 +527,7 @@
     - type: AccessReader
       access: [["CN"]]
 
-####################################Военные и ученые
+# Zona14: ###################################Военные и ученые
 
 - type: entity
   parent: MapTeleportBase
@@ -595,7 +595,7 @@
     - type: AccessReader
       access: [["SciBase"]]
 
-###Серафимы
+# Zona14: ##Серафимы
 
 - type: entity
   parent: MapTeleportBase
@@ -639,7 +639,7 @@
   - type: AccessReader
     access: [["Bandit"], ["Freedom"], ["Renegat"]]
 
-###Атом
+# Zona14: ##Атом
 
 - type: entity
   parent: MapTeleportBase

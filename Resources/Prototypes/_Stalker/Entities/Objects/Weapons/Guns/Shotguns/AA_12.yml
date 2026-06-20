@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: STBaseWeaponShotgunUSAS
   id: STWeaponShotgunAA
   name: AA-12
   description: Automatic Shotgun.
-  suffix: ST, Shotgun, Кастомка
+  suffix: ST, Shotgun, Custom # Zona14: ST, Shotgun, Кастомка
   components:
     - type: STWeight
       self: 5
@@ -42,9 +43,9 @@
 - type: entity
   parent: STWeaponShotgunAA
   id: STWeaponShotgunAArchangel
-  name: АА-12 'Архангел'
-  description: Изготовленное по спецзаказу автоматическое ружье-дробовик, которым вооружены Архангелы - лучшие войны Братства Серафимов. Является редким оружием не только у фанатиков, но и во всей Зоне. Крайне грозный аргумент не только в охоте на крупную дичь, но и на человека!
-  suffix: ST, Кастомка, Covenant
+  name: AA-12 'Archangel'
+  description: A specially commissioned automatic shotgun used by the Archangels — the top warriors of the Seraphim Brotherhood. A rare weapon not just among fanatics, but across the entire Zone. A terrifying tool not only for hunting big game, but for taking on humans too!
+  suffix: ST, Custom, Covenant # Zona14: ST, Кастомка, Covenant
   components:
     - type: Clothing
       sprite: _Stalker/Objects/Weapons/Guns/Shotguns/aa12/aaSera.rsi

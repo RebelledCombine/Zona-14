@@ -73,7 +73,7 @@ public sealed class BanWebhook
         {
             var expirationDate = DateTime.UtcNow.Add(TimeSpan.FromMinutes((double) minutes));
             banType = Loc.GetString("ban-embed-temp", ("time", minutes));
-            expires = $"**Истекает:** {expirationDate}\n";
+            expires = Loc.GetString("st-discord-ban-expires", ("date", expirationDate)) + "\n"; // Zona14: localized
             color = 0xFF9900;
         }
 
@@ -91,14 +91,16 @@ public sealed class BanWebhook
                         Text = Loc.GetString("ban-embed-footer", ("severity", severity)),
                         IconUrl = string.IsNullOrWhiteSpace(_footerIconUrl) ? null : _footerIconUrl
                     },
+                    // Zona14: localized
                     Description =
-                        $"**Нарушитель**: {user.Split(" ")[0]}\n" +
-                        $"**Администратор:** {admin}\n" +
+                        $"{Loc.GetString("st-discord-ban-offender")} {user.Split(" ")[0]}\n" +
+                        $"{Loc.GetString("st-discord-ban-admin")} {admin}\n" +
                         $"\n" +
-                        $"**Выдан:** {timeNow}\n" +
+                        $"{Loc.GetString("st-discord-ban-issued")} {timeNow}\n" +
                         expires +
                         $"\n" +
-                        $"**Причина:** {reason}"
+                        $"{Loc.GetString("st-discord-ban-reason")} {reason}"
+                    // End Zona14
                 }
             },
         };

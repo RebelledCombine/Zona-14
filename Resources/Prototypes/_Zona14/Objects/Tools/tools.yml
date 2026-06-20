@@ -1,0 +1,406 @@
+- type: entity
+  parent: BaseItem
+  id: Z14CraftLeatherbox
+  categories: [ Zona14 ]
+  name: Skin Processing Kit
+  description: A set with tools and tools for processing and tanning hides.
+  suffix: Z14
+  components:
+  - type: STWeight
+    self: 2.5
+  - type: Item
+    size: Normal
+    shape:
+    - 0,0,3,3
+  - type: Sprite
+    sprite: _Stalker/Objects/Tools/Craft/64.rsi
+    scale: 0.5, 0.5
+    state: leatherbox
+  - type: Craftable
+  - type: RepositoryItem
+    categoryName: Crafting
+
+- type: entity
+  parent: BaseCraftTool
+  id: Z14BoltCutter
+  categories: [ Zona14 ]
+  name: wire cutter
+  description: cuts grates
+  suffix: Z14
+  components:
+  - type: STWeight
+    self: 3
+  - type: Item
+    sprite: _Stalker/Objects/Tools/bolt_cutter.rsi
+  - type: Sprite
+    sprite: _Stalker/Objects/Tools/bolt_cutter.rsi
+  - type: StaminaDamageOnHit
+    damage: 40
+  - type: MeleeWeapon
+    wideAnimationRotation: -135
+    damage:
+      types:
+        Blunt: 10
+        Structural: 5
+  - type: Wieldable
+  - type: IncreaseDamageOnWield
+    damage:
+      types:
+        Blunt: 10
+        Structural: 10
+  - type: Tool
+    qualities:
+    - Biting
+    useSound:
+      path: /Audio/Items/ratchet.ogg
+  - type: Craftable
+  - type: RepositoryItem
+    categoryName: Tools
+
+- type: entity
+  parent: BaseCraftTool
+  id: Z14RazorWire
+  categories: [ Zona14 ]
+  name: coil of barbed wire
+  description: Coil of thorns to rebuild the Perimeter by the military. I hope that your thieving hands will be cut off.
+  suffix: Z14
+  components:
+  - type: STWeight
+    self: 5
+  - type: Item
+    shape:
+    - 0,0,2,2
+  - type: Sprite
+    sprite: _Stalker/Objects/Craft/craft.rsi
+    state: razor_wire
+  - type: Icon
+    sprite: _Stalker/Objects/Craft/craft.rsi
+    state: razor_wire
+  - type: Craftable
+
+
+############### Tools
+
+
+- type: entity
+  parent: BaseCraftTool
+  id: Z14ToolkitTearOne
+  categories: [ Zona14 ]
+  name: tools for rough work
+  description: Young Technician Toolbox. All the tools necessary for locksmith work are available. For an experienced technician, such a set is necessary for the simplest upgrades of armor and weapons. For an ordinary stalker, it will be a convenient tool when creating the simplest things.
+  suffix: Z14
+  components:
+  - type: STWeight
+    self: 5
+  - type: Item
+    shape:
+      - 0,0,5,1
+    sprite: _Stalker/Objects/Tools/Craft/32.rsi # Stalker-TODO: Need an inhand sprite for this item
+    size: Normal
+  - type: Sprite
+    sprite: _Stalker/Objects/Tools/Craft/32.rsi
+    state: tools_1
+    scale: 0.7,0.7
+  - type: MeleeWeapon
+    damage:
+      types:
+        Blunt: 6
+    soundHit:
+      path: /Audio/Weapons/smash.ogg
+  - type: Wieldable
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Items/toolbox_drop.ogg
+  - type: UserInterface
+    interfaces:
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+        ents: []
+  - type: Craftable
+  - type: RepositoryItem
+    categoryName: Tools
+
+- type: entity
+  parent: BaseCraftTool
+  id: Z14ToolkitTearTwo
+  categories: [ Zona14 ]
+  name: tools for fine work
+  description: Not a bad toolset. Apparently, it was carefully selected by an experienced master "for himself, his dear". Despite the years, all the tools are well preserved.
+  suffix: Z14
+  components:
+  - type: STWeight
+    self: 8
+  - type: Item
+    sprite: _Stalker/Objects/Tools/Craft/32.rsi # Stalker-TODO: Need an inhand sprite for this item
+    shape:
+      - 0,0,5,1
+    size: Large
+  - type: Sprite
+    sprite: _Stalker/Objects/Tools/Craft/32.rsi
+    scale: 0.7,0.7
+    state: tools_4
+  - type: MeleeWeapon
+    damage:
+      types:
+        Blunt: 8
+    soundHit:
+      path: /Audio/Weapons/smash.ogg
+  - type: Wieldable
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Items/toolbox_drop.ogg
+  - type: UserInterface
+    interfaces:
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+        ents: []
+  - type: Craftable
+  - type: RepositoryItem
+    categoryName: Tools
+
+- type: entity
+  parent: BaseCraftTool
+  id: Z14ToolkitTearThree
+  categories: [ Zona14 ]
+  name: calibration tools
+  description: Professional Fine-Tuning Toolkit. The inscription on the box says that the set was made in the GDR. What's included in the kit is enough to carry out almost any setup and calibration work.
+  suffix: Z14
+  components:
+  - type: STWeight
+    self: 3
+  - type: Item
+    shape:
+      - 0,0,4,1
+    sprite: _Stalker/Objects/Tools/Craft/32.rsi # Stalker-TODO: Need an inhand sprite for this item
+    size: Normal
+  - type: Sprite
+    sprite: _Stalker/Objects/Tools/Craft/32.rsi
+    state: tools_3
+    scale: 0.7,0.7
+  - type: MeleeWeapon
+    damage:
+      types:
+        Blunt: 6
+    soundHit:
+      path: /Audio/Weapons/smash.ogg
+  - type: Wieldable
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Items/toolbox_drop.ogg
+  - type: UserInterface
+    interfaces:
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+        ents: []
+  - type: Craftable
+  - type: RepositoryItem
+    categoryName: Tools
+
+
+
+
+
+- type: entity
+  parent: BaseItem
+  id: Z14STCraftMortarAndPestle
+  categories: [ Zona14 ]
+  name: mortar and pestle
+  description: At first, man came up with the idea of grinding with a stone. The next day he came up with the idea of grinding with two stones
+  suffix: Z14
+  components:
+    - type: STWeight
+      self: 1
+    - type: Item
+      size: Small
+      shape:
+        - 0,0,0,0
+    - type: Sprite
+      sprite: _Stalker/Objects/Tools/Craft/32.rsi
+      state: mortar_and_pestle
+    - type: Craftable
+    - type: RepositoryItem
+      categoryName: Tools
+
+- type: entity
+  parent: BaseItem
+  id: Z14CraftSaw
+  categories: [ Zona14 ]
+  name: saw
+  suffix: Z14
+  components:
+    - type: STWeight
+      self: 1.5
+    - type: Sprite
+      sprite: Objects/Specific/Medical/Surgery/saw.rsi
+      state: saw
+    - type: Item
+      sprite: Objects/Specific/Medical/Surgery/saw.rsi
+      storedRotation: 90
+      size: Normal
+      shape:
+        - 0,0,1,0
+    - type: Craftable
+    - type: RepositoryItem
+      categoryName: Tools
+
+- type: entity
+  name: saw
+  parent: BaseItem
+  id: Z14ChainsawStalker
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: A type of manual chainsaw equipped with an internal combustion engine, usually a two-stroke engine.
+  components:
+  - type: STWeight
+    self: 4.5
+  - type: Wieldable
+    wieldSound: !type:SoundPathSpecifier
+      path: /Audio/Weapons/chainsawwield.ogg
+      params:
+        volume: -3
+  - type: Sharp
+  - type: Sprite
+    sprite: _Stalker/Objects/Tools/chainsaw.rsi
+    state: icon
+  - type: MeleeWeapon
+    autoAttack: true
+    angle: 0
+    wideAnimationRotation: -135
+    attackRate: 4
+    damage:
+      types:
+        Slash: 15
+        Blunt: 5
+        Structural: 10
+    soundHit:
+      path: /Audio/Weapons/chainsaw.ogg
+      params:
+        volume: -3
+  - type: IncreaseDamageOnWield
+    damage:
+      types:
+        Slash: 10
+        Structural: 5
+  - type: Item
+    size: Normal
+    sprite: _Stalker/Objects/Tools/chainsaw.rsi
+  - type: DisarmMalus
+  - type: RefillableSolution
+    solution: Welder
+  - type: SolutionContainerManager
+    solutions:
+      Welder:
+        reagents:
+        - ReagentId: WeldingFuel
+          Quantity: 300
+        maxVol: 300
+  - type: UseDelay
+    delay: 1
+  - type: Craftable
+  - type: RepositoryItem
+    categoryName: Tools
+
+- type: entity
+  name: chainsaw
+  id: Z14SawStalker
+  categories: [ Zona14 ]
+  suffix: Z14
+  parent: Saw
+  description: A cutting tool in the form of a flat metal disc with teeth on the outer edge.
+  components:
+  - type: STWeight
+    self: 3.5
+  - type: Wieldable
+    wieldSound: !type:SoundPathSpecifier
+      path: /Audio/Items/drill_hit.ogg
+      params:
+        volume: -3
+  - type: Sharp
+  - type: Sprite
+    state: electric
+  - type: Item
+    heldPrefix: electric
+    storedRotation: 90
+  - type: MeleeWeapon
+    autoAttack: true
+    angle: 0
+    wideAnimationRotation: -135
+    attackRate: 4
+    damage:
+      types:
+        Slash: 20
+    soundHit:
+      path: /Audio/Items/drill_hit.ogg
+  - type: Tool
+    qualities:
+      - Sawing
+    speedModifier: 1.5
+  - type: IncreaseDamageOnWield
+    damage:
+      types:
+        Slash: 10
+        Structural: 5
+  - type: DisarmMalus
+  - type: RefillableSolution
+    solution: Welder
+  - type: SolutionContainerManager
+    solutions:
+      Welder:
+        reagents:
+        - ReagentId: WeldingFuel
+          Quantity: 300
+        maxVol: 300
+  - type: UseDelay
+    delay: 1
+  - type: Craftable
+  - type: RepositoryItem
+    categoryName: Tools
+
+# Utilities
+
+- type: entity
+  name: circular saw
+  parent: Shovel
+  id: Z14AAAAStalkerLopata
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: A shovel for digging up hidden caches.
+  components:
+    - type: StalkerShovel
+      canPlow: False
+    - type: Tool
+      qualities:
+        - Pulsing
+    - type: Craftable
+    - type: Item
+      size: Small
+
+- type: entity
+  parent: Shovel
+  name: Golden Shovel
+  id: Z14STGoldShovel
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: A brilliant piece of technology which can not only make graves, but also plow. Gifted to the owner for his botany balance job
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Tools/gold_shovel.rsi
+      state: icon
+    - type: Item
+      size: Normal
+      sprite: _Stalker/Objects/Tools/gold_shovel.rsi
+    - type: StalkerShovel
+      canPlow: True
+      canMakeGrave: True
+    - type: Tool
+      qualities:
+        - Pulsing

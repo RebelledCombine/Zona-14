@@ -1,3 +1,4 @@
+# Zona14: translated Russian names/descriptions to English
 #i hate construction graphs i hate nodes i hate crafting
 #hastag sloppycore but i dont feel like making a crafting directory...
 
@@ -39,7 +40,7 @@
   name: cooked bear meat
   parent: FoodMeatBase
   id: FoodMeatSTBearCooked
-  description: It's a little tough but what can you do.
+  description: "It's a little tough but what can you do."
   suffix: Stalker, Food
   components:
   - type: STWeight
@@ -634,10 +635,10 @@
 
 # bear
 - type: entity
-  name: пряное медвежье мясо
+  name: spiced bear meat
   parent: FoodMeatSTBear
   id: FoodMeatSTBearSpiced
-  description: Жирное сырое медвежье мясо. В мясо втерли специи, теперь его нужно оставить просушиваться.
+  description: Fatty raw bear meat. Spices have been rubbed into it; now it needs to be left to dry.
   suffix: Stalker, Food
   components:
   - type: STWeight
@@ -666,10 +667,10 @@
     - Meat
 
 - type: entity
-  name: вяленое мясо медведя
+  name: bear jerky
   parent: FoodMeatBase
   id: FoodMeatSTBearJerked
-  description: Мясо имеет специфический, жирный вкус, но хорошо хранится в длительных поездках и, похоже, не впитывает радиацию..
+  description: "The meat has a distinctive, fatty taste, but it keeps well on long trips and doesn't seem to absorb radiation."
   suffix: Stalker, Food
   components:
   - type: STWeight
@@ -699,11 +700,11 @@
     - Meat
 
 - type: entity
-  name: вяленое мясо медведя
+  name: bear jerky
   parent: FoodBase
   id: FoodMeatSTBearJerkedSingle
   suffix: Stalker, Food
-  description: Мясо имеет специфический, жирный вкус, но хорошо хранится в длительных поездках и, похоже, не впитывает радиацию.
+  description: "The meat has a distinctive, fatty taste, but it keeps well on long trips and doesn't seem to absorb radiation."
   components:
   - type: FlavorProfile
     flavors:
@@ -744,10 +745,10 @@
 
 # boar
 - type: entity
-  name: мясо кабана со специями
+  name: spiced boar meat
   parent: FoodMeatBoar
   id: FoodMeatSTBoarSpiced
-  description: Мясо кабана натирают смесью специй для консервации. Его нужно оставить подсохнуть на открытом воздухе.
+  description: Boar meat is rubbed with a spice mixture for preservation. It must be left to dry in the open air.
   suffix: Stalker, Food
   components:
   - type: STWeight
@@ -775,10 +776,10 @@
     - Meat
 
 - type: entity
-  name: вяленое мясо кабана
+  name: boar jerky
   parent: FoodMeatBase
   id: FoodMeatSTBoarJerked
-  description: Вяленое мясо кабана с насыщенным соленым вкусом. Хорошо хранится в длительных поездках.
+  description: Jerked boar meat with a rich, salty flavor. Keeps well on long trips.
   suffix: Stalker, Food
   components:
   - type: STWeight
@@ -808,11 +809,11 @@
     - Meat
 
 - type: entity
-  name: вяленое мясо кабана
+  name: boar jerky
   parent: FoodBase
   id: FoodMeatSTBoarJerkedSingle
   suffix: Stalker, Food
-  description: Вяленое мясо кабана с насыщенным соленым вкусом. Хорошо хранится в длительных поездках.
+  description: Jerked boar meat with a rich, salty flavor. Keeps well on long trips.
   components:
   - type: FlavorProfile
     flavors:
@@ -854,10 +855,10 @@
 
 # dog
 - type: entity
-  name: пряное собачье мясо
+  name: spiced dog meat
   parent: FoodMeatDog
   id: FoodMeatSTDogSpiced
-  description: Мясо слепых собак этого региона, обильно приправленное специями, помогает в процессе засолки. Его нужно оставить подсохнуть на некоторое время.
+  description: "Meat from the region's blind dogs, generously seasoned with spices to help the curing process. It needs to be left to dry for a while."
   suffix: Stalker, Food
   components:
   - type: STWeight
@@ -885,10 +886,10 @@
     - Meat
 
 - type: entity
-  name: вяленое мясо собаки
+  name: dog jerky
   parent: FoodMeatBase
   id: FoodMeatSTDogJerked
-  description: Это не самая вкусная вяленая говядина в мире, но любителям острых ощущений в этом регионе не приходится быть привередливыми. По крайней мере, она хорошо сохранится в поездках.
+  description: "It isn't the world's tastiest jerky, but thrill-seekers in this region can't afford to be picky. At least it keeps well on the road."
   suffix: Stalker, Food
   components:
   - type: STWeight
@@ -919,11 +920,11 @@
     - Meat
 
 - type: entity
-  name: вяленое мясо собаки
+  name: dog jerky
   parent: FoodBase
   id: FoodMeatSTDogJerkedSingle
   suffix: Stalker, Food
-  description: Это не самая вкусная вяленая говядина в мире, но любителям острых ощущений в этом регионе не приходится быть привередливыми. По крайней мере, она хорошо сохранится в поездках.
+  description: "It isn't the world's tastiest jerky, but thrill-seekers in this region can't afford to be picky. At least it keeps well on the road."
   components:
   - type: FlavorProfile
     flavors:
@@ -964,10 +965,10 @@
 
 # rat
 - type: entity
-  name: пряное мясо крысы
+  name: spiced rat meat
   parent: FoodMeatSTRatRaw
   id: FoodMeatSTRatSpiced
-  description: В нём больше специй, чем мяса. Высушится он довольно быстро.
+  description: "There's more spice on it than meat. It will dry out fairly quickly."
   suffix: Stalker, Food
   components:
   - type: STWeight
@@ -992,10 +993,10 @@
     - Meat
 
 - type: entity
-  name: крысиное вяленое мясо
+  name: rat jerky
   parent: FoodMeatBase
   id: FoodMeatSTRatJerked
-  description: Несколько кусочков ароматного крысиного мяса.
+  description: A few pieces of fragrant rat meat.
   suffix: Stalker, Food
   components:
   - type: STWeight
@@ -1030,10 +1031,10 @@
 
 # bloodsucker
 - type: entity
-  name: пряные щупальца кровососа
+  name: spiced bloodsucker tentacles
   parent: MutantPartBloodsuckerTentacles
   id: FoodSTSuckerSpiced
-  description: Щупальца кровососа, в которые втерты специи. Если их оставить на открытом воздухе, они высохнут, но это может занять некоторое время.
+  description: "Bloodsucker tentacles with spices rubbed into them. Left out in the open they'll dry, though it may take a while."
   suffix: Stalker, Food
   components:
   - type: STWeight
@@ -1050,10 +1051,10 @@
     - Meat
 
 - type: entity
-  name: вяленое мясо кровососа
+  name: bloodsucker jerky
   parent: FoodMeatBase
   id: FoodMeatSTSuckerJerked
-  description: Щупальца резиноподобные и волокнистые, с едва уловимым запахом железа, но для тех, кто достаточно болен, чтобы их есть, они хорошо сохраняются в длительных поездках. Некоторые охотники считают, что наличие вяленого мяса из этого кровососа приносит удачу.
+  description: The tentacles are rubbery and fibrous, with a faint smell of iron, but for those sick enough to eat them they keep well on long trips. Some hunters believe carrying jerky from this bloodsucker brings luck.
   suffix: Stalker, Food
   components:
   - type: STWeight
@@ -1085,11 +1086,11 @@
     - Meat
 
 - type: entity
-  name: вяленое мясо кровососа
+  name: bloodsucker jerky
   parent: FoodBase
   id: FoodMeatSTSuckerJerkedSingle
   suffix: Stalker, Food
-  description: Щупальца резиноподобные и волокнистые, с едва уловимым запахом железа, но для тех, кто достаточно болен, чтобы их есть, они хорошо сохраняются в длительных поездках. Некоторые охотники считают, что наличие вяленого мяса из этого кровососа приносит удачу.
+  description: The tentacles are rubbery and fibrous, with a faint smell of iron, but for those sick enough to eat them they keep well on long trips. Some hunters believe carrying jerky from this bloodsucker brings luck.
   components:
   - type: FlavorProfile
     flavors:

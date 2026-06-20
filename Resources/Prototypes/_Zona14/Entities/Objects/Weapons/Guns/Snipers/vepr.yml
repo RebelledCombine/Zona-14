@@ -83,7 +83,7 @@
   id: Z14STWeaponSniperVeprSeraphim
   suffix: Z14
   categories: [ Zona14 ]
-  name: Tactical VPO-129 "Seraphim"
+  name: 'Tactical VPO-129 "Seraphim"'
   description: Custom tactical VPO-129 variant with distinctive Seraphim faction markings and modifications. The white finish provides both visibility and intimidation factor in Zone operations.
   components:
     - type: Clothing

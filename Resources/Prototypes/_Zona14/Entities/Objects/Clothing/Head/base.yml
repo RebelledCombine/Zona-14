@@ -1,0 +1,11 @@
+# Shared Zona helmet/hat base — 1 kg, no protection.
+- type: entity
+  abstract: true
+  parent: STClothingHeadBase
+  id: Z14HelmetBase
+  categories: [ Zona14 ]
+  name: Helmet Base
+  components:
+  - type: STWeight
+    self: 1
+  - type: Craftable

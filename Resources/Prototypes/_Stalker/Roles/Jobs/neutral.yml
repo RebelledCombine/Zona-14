@@ -43,6 +43,7 @@
   id: NeutralGear
   equipment:
     id: StalkerPDA
+    neck: ClothingNeckDogtagNeutral # Zona14: add neutral dogtag
     torso: ClothingTorsoNeutral
     legs: ClothingLegsJeansNeutral
     shoes: STClothingShoesBootsCombatFilled

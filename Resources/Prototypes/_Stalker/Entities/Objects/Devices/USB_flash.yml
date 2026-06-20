@@ -1,6 +1,7 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
-  name: флешка
-  description: Запоминающее устройство, использующее в качестве носителя флеш-память, и подключаемое к компьютеру или иному считывающему устройству по интерфейсу. Может стоить немалых денег.
+  name: flash drive
+  description: A storage device using flash memory, connected to a computer or other reading device via interface. Can be worth a lot of money.
   suffix: Stalker
   id: USBFlash
   parent: BaseItem

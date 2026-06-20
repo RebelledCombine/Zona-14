@@ -1,0 +1,31 @@
+- type: entity
+  parent: STBaseBullet
+  id: Z14STBaseBulletTrigger
+  suffix: Z14
+  categories: [ HideSpawnMenu, Zona14 ]
+  components:
+  - type: TriggerOnCollide
+    fixtureID: projectile
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 7
+  - type: Fixtures
+    fixtures:
+      projectile:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.15,-0.45,0.15,0.15"
+        hard: false
+        mask:
+        - Impassable
+        - BulletImpassable
+      fly-by:
+        shape: !type:PhysShapeCircle
+          radius: 1.5
+        layer:
+        - Impassable
+        - MidImpassable
+        - HighImpassable
+        - LowImpassable
+        hard: False

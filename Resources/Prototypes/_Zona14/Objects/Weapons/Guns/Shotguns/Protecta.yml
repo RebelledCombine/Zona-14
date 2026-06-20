@@ -1,0 +1,25 @@
+- type: entity
+  parent: STBaseWeaponShotgunProtecta
+  id: Z14STWeaponShotgunProtecta
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Protecta Revolver Shotgun
+  description: South African revolver-type shotgun with 12-round capacity. A rarity in the Zone, likely smuggled via black market. Powerful and unusual choice for eccentric stalkers.
+
+- type: entity
+  parent: STBaseWeaponShotgunProtecta
+  id: Z14STweaponShotgunPRETecta
+  categories: [ Zona14 ]
+  name: Protecta "Stalker"
+  suffix: Z14
+  description: Modified Protecta with wooden stock and cloth wraps. Zone craftsmen attempted to adapt this exotic weapon for local conditions.
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Weapons/Guns/Shotguns/pRetecta.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Weapons/Guns/Shotguns/pRetecta.rsi
+    - type: Item
+      sprite: _Stalker/Objects/Weapons/Guns/Shotguns/pRetecta.rsi
+    - type: Gun
+      soundGunshot:
+        path: /Audio/_Stalker/Effects/Guns/saiga_shoot.ogg

@@ -1,0 +1,23 @@
+ # BINOCULARS
+
+- type: entity
+  parent: BaseItem
+  id: Z14Binocularus1
+  categories: [ Zona14 ]
+  name: old binoculars
+  description: An old Soviet military binoculars.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Devices/optic/t1.rsi
+    state: icon
+    scale: 0.8, 0.8
+  - type: Item
+    size: Small # Zona14 change
+    sprite: _Stalker/Objects/Devices/optic/t1.rsi
+  - type: Craftable
+  - type: Scope
+    zoom: 1.65
+    delay: 1
+    offset: 14
+    useInHand: true

@@ -1,3 +1,4 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   abstract: true
   parent: STBaseWeaponRifle
@@ -68,7 +69,7 @@
   parent: STBaseWeaponRifleL85
   id: STWeaponRifleL85
   name: L85
-  description: После того, как в армии Соединённого Королевства эта винтовка была заменена на более современную, она в большом количестве всплыла на чёрном рынке, а затем и в Зоне. Главными достоинствами данного оружия являются штатный 4-кратный оптический прицел и высокая точность первого выстрела. При стрельбе очередями точность боя резко падает, а основные механизмы демонстрируют недостаточную надёжность.
+  description: British bullpup assault rifle with unique layout. Extremely rare in the Zone, usually brought by UN military observers. Notable for exceptional accuracy but finicky maintenance. It uses 5.56mm ammo.
   components:
   - type: Gun
     soundGunshot:

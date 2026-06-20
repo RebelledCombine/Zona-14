@@ -1,10 +1,11 @@
+# Zona14: translated Russian names/descriptions to English
 
 - type: entity
   parent: STClothingMaskGas
   id: ClothingMaskGP7
   suffix: ST, T3, Caustic
-  name: противогаз ГП-7
-  description: Фильтрующее средство индивидуальной защиты органов дыхания, глаз и кожи лица человека. Прототип маски МГП из комплекта ГП-7 была изготовлена в 1979 году на ЭНПО «Неорганика», а прототип фильтра — ГП-7К — МКГ датирован 2-м кварталом 1980 года.  Защищает от токсинов.
+  name: GP-7 gas mask
+  description: Filtering personal protective equipment for human respiratory, eye, and facial skin. The prototype of the MGP mask from the GP-7 set was manufactured in 1979 at the Enpo Neorganika, and the prototype of the filter - GP-7K - MKG is dated the 2nd quarter of 1980.  Protects against radiation.
   components:
   - type: Tag
     tags:
@@ -26,8 +27,8 @@
 - type: entity
   parent: ClothingMaskGP7
   id: STClothingMaskGP7Neutral
-  name: противогаз ГП-7 нейтралов
-  description: Фильтрующее средство индивидуальной защиты органов дыхания, глаз и кожи лица человека. Прототип маски МГП из комплекта ГП-7 была изготовлена в 1979 году на ЭНПО «Неорганика», а прототип фильтра — ГП-7К — МКГ датирован 2-м кварталом 1980 года.  Защищает от токсинов.
+  name: GP-7 neutral gas mask
+  description: Filtering personal protective equipment for human respiratory, eye, and facial skin. The prototype of the MGP mask from the GP-7 set was manufactured in 1979 at the Enpo Neorganika, and the prototype of the filter - GP-7K - MKG is dated the 2nd quarter of 1980.  Protects against radiation.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/mask/gp7neutral.rsi
@@ -43,7 +44,7 @@
   id: STClothingMaskFoma
   name: Wierd Gasmask
   suffix: ST, T3, Sponsor
-  description: Wierd gasmask, made from part of SEVA helmet. Totally makeshift and you can't be sure that it will protect you.
+  description: "Wierd gasmask, made from part of SEVA helmet. Totally makeshift and you can't be sure that it will protect you."
   components:
   - type: Armor
     modifiers:

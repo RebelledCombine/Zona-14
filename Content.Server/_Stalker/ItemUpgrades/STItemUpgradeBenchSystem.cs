@@ -205,19 +205,21 @@ public sealed class STItemUpgradeBenchSystem : EntitySystem
         return false;
     }
 
-    private static string GetDurabilityState(float fraction)
+    // Zona14: localized
+    private string GetDurabilityState(float fraction)
     {
         if (fraction <= 0.2f)
-            return "сильно поношенное";
+            return Loc.GetString("st-durability-armor-heavily-worn");
 
         if (fraction <= 0.4f)
-            return "поношенное";
+            return Loc.GetString("st-durability-armor-worn");
 
         if (fraction <= 0.7f)
-            return "слегка поношенное";
+            return Loc.GetString("st-durability-armor-slightly-worn");
 
-        return "исправное";
+        return Loc.GetString("st-durability-armor-serviceable");
     }
+    // End Zona14
 
     private static int GetRepairSteelRequired(float fraction)
     {
@@ -445,25 +447,21 @@ public sealed class STItemUpgradeBenchSystem : EntitySystem
         return prototypeId;
     }
 
-    private static string ResolveMaterialName(string stackTypeId)
+    // Zona14: localized
+    private string ResolveMaterialName(string stackTypeId)
     {
         return stackTypeId switch
         {
-            "Steel" => "Сталь",
-            "Glass" => "Стекло",
-            "Cloth" => "Ткань",
-            "Plasma" => "Плазма",
-            "Plastic" => "Пластик",
-            "Wood" => "Дерево",
-            "SheetSteel1" => "Сталь",
-            "SheetSteel10" => "Сталь",
-            "SheetGlass1" => "Стекло",
-            "SheetGlass10" => "Стекло",
-            "SheetCloth1" => "Ткань",
-            "SheetCloth10" => "Ткань",
+            "Steel" or "SheetSteel1" or "SheetSteel10" => Loc.GetString("st-material-steel"),
+            "Glass" or "SheetGlass1" or "SheetGlass10" => Loc.GetString("st-material-glass"),
+            "Cloth" or "SheetCloth1" or "SheetCloth10" => Loc.GetString("st-material-cloth"),
+            "Plasma" => Loc.GetString("st-material-plasma"),
+            "Plastic" => Loc.GetString("st-material-plastic"),
+            "Wood" => Loc.GetString("st-material-wood"),
             _ => stackTypeId
         };
     }
+    // End Zona14
 
     private List<STItemUpgradeEntryView> BuildUpgradeViews(STItemUpgradesComponent comp)
     {

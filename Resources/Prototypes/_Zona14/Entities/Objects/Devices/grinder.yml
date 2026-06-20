@@ -1,0 +1,30 @@
+- type: entity
+  parent: BaseItem
+  id: Z14StalkerGrinder
+  categories: [ Zona14 ]
+  name: Manual Grinder
+  description: A hand grinder, suitable for herbs and plants.
+  suffix: Z14
+  components:
+  - type: ReagentGrinder
+  - type: Sprite
+    sprite: _Stalker/Objects/Devices/grinder.rsi
+    layers:
+    - state: grinder
+  - type: UserInterface
+    interfaces:
+      enum.ReagentGrinderUiKey.Key:
+        type: ReagentGrinderBoundUserInterface
+  - type: ActivatableUI
+    key: enum.ReagentGrinderUiKey.Key
+  - type: ContainerContainer
+    containers:
+      beakerSlot: !type:ContainerSlot {}
+      inputContainer: !type:Container
+        ents: []
+  - type: ItemSlots
+    slots:
+      beakerSlot:
+        whitelist:
+          components:
+          - FitsInDispenser

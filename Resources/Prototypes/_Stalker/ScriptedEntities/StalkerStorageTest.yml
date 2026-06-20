@@ -1,3 +1,4 @@
+# Zona14: translated Russian names/descriptions to English
 - type: vendingMachineInventory
   id: EmptyInventory
   startingInventory:
@@ -6,8 +7,8 @@
 - type: entity
   parent: VendingMachine
   id: AAAAAAAStalkerStogare
-  name: Хранилище
-  description: Сюда можно скидывать свой хабар. Можете не бояться что его украдут!
+  name: repository
+  description: "You can throw your swag here. You don't have to be afraid that it will be stolen!"
   components:
     - type: StalkerStorage
     - type: VendingMachine

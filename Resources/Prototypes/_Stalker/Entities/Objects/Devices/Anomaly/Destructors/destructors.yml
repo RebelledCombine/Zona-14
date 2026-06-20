@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: [ BaseItem, BaseFoldable ]
   id: BaseMachineAnomalyDestructor
-  name: Научное оборудорвание
-  description: Настолько сложный механизм, что только ученые могут использовать его.
+  name: Scientific Equipment
+  description: A mechanism so complex that only scientists can use it. This one appears to be calibrated to neutralize gravitational anomalies.
   suffix: Stalker
   components:
     - type: Tag
@@ -55,8 +56,8 @@
 - type: entity
   parent: BaseMachineAnomalyDestructor
   id: BaseMachineAnomalyDestructor1
-  name: Научное оборудорвание
-  description: Настолько сложный механизм, что только ученые могут использовать его.
+  name: "{ ent-BaseMachineAnomalyDestructor }"
+  description: A mechanism so complex that only scientists can use it. This one appears to be calibrated to neutralize chemical anomalies.
   suffix: Stalker
   components: 
     - type: Item
@@ -78,8 +79,8 @@
 - type: entity
   parent: BaseMachineAnomalyDestructor
   id: BaseMachineAnomalyDestructor2
-  name: Научное оборудорвание
-  description: Настолько сложный механизм, что только ученые могут использовать его.
+  name: "{ ent-BaseMachineAnomalyDestructor }"
+  description: A mechanism so complex that only scientists can use it. This one appears to be calibrated to neutralize thermal anomalies.
   suffix: Stalker
   components: 
     - type: Item
@@ -101,8 +102,8 @@
 - type: entity
   parent: BaseMachineAnomalyDestructor
   id: BaseMachineAnomalyDestructor3
-  name: Научное оборудорвание
-  description: Настолько сложный механизм, что только ученые могут использовать его.
+  name: "{ ent-BaseMachineAnomalyDestructor }"
+  description: A mechanism so complex that only scientists can use it. This one appears to be calibrated to neutralize electrical anomalies.
   suffix: Stalker
   components: 
     - type: Item
@@ -124,8 +125,8 @@
 - type: entity
   parent: BaseMachineAnomalyDestructor
   id: BaseMachineAnomalyDestructor4
-  name: Научное оборудорвание
-  description: Настолько сложный механизм, что только ученые могут использовать его.
+  name: "{ ent-BaseMachineAnomalyDestructor }"
+  description: "A mechanism so complex that only scientists can use it. This one appears to be calibrated to neutralize psycological and other anomalies. You see a note with permament marker that says: try it when others fail."
   suffix: Stalker
   components: 
     - type: Item

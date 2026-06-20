@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 
 - type: entity
   parent: STBaseWeaponGameRevolver
   id: STWeaponRevolverSWModel325
-  name: S&W Model 325
-  description: Шестизарядный популярный револьвер среди любителей оружия на калибре .45 ACP. Составляет около 4 дюймов длины ствола, обеспечивая удобство ношения и хорошую точность стрельбы.
+  name: "S&W Model 325"
+  description: A six-shooter revolver popular among gun enthusiasts in .45 ACP. It is about 4 inches of barrel length, providing comfortable wearing and good shooting accuracy.
   components:
     - type: Sprite
       sprite: _Stalker/Objects/Weapons/Guns/Revolvers/s&w_model_325.rsi
@@ -41,7 +42,7 @@
     - type: UseDelay
       delay: 1
     - type: RepositoryItem
-      categoryName: Оружие
+      categoryName: Weapons # Zona14: Оружие
     - type: STWeaponDamageFalloff
       falloffMultiplier: 0.8
     - type: STWeaponAccuracy

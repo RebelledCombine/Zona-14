@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: STBaseMonument
   id: STMonumentRitualPitTower
-  name: неизвестный памятник
-  description: На нем странная эмблема.
+  name: unknown monument
+  description: There is a strange emblem on it.
   suffix: ST, Mapping
   components:
   - type: Sprite

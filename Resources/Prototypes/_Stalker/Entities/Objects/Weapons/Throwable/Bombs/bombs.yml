@@ -1,10 +1,11 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
-  name: База Бомбы
-  description: Взрывчатка делает БУМ!
+  name: Bomb Base
+  description: Explosives go BOOM!
   abstract: true
   parent: BaseItem
   id: BaseBomb
-  suffix: Stalker, Бомба
+  suffix: Stalker, Bomb # Zona14: Stalker, Бомба
   components:
     - type: STWeight
       self: 1.5
@@ -76,14 +77,14 @@
     - type: Craftable
 
 - type: entity
-  name: динамитная шашка с фитилем
-  description: Динамитная шашка с фитилем представляет собой компактное оружие, способное принести разрушительный эффект.
+  name: dynamite stick with fuse
+  description: A dynamite stick with a fuse is a compact weapon capable of devastating effect.
   parent: BaseBomb
   id: DynamiteOne
 
 - type: entity
-  name: динамит с двумя шашками
-  description: Динамит с двумя шашками, привязанными с помощью изоленты, представляет собой усовершенствованную версию классического динамита, которая повышает его разрушительную мощь и эффективность в боевых условиях.
+  name: dynamite with two sticks
+  description: Dynamite with two sticks tied with electrical tape, an improved version of classic dynamite that increases its destructive power and combat effectiveness.
   parent: BaseBomb
   id: DynamiteTwo
   components:
@@ -142,8 +143,8 @@
     - type: Craftable
 
 - type: entity
-  name: динамит с тремя шашками
-  description: Ещё более разрушительная и мощная версия взрывного оружия, которое может быть использовано для проведения диверсионных операций.
+  name: dynamite with three sticks
+  description: An even more destructive and powerful version of explosive weaponry that can be used for sabotage operations.
   parent: BaseBomb
   id: DynamiteThree
   components:
@@ -202,8 +203,8 @@
     - type: Craftable
 
 - type: entity
-  name: динамит с четвермя шашками
-  description: Это самая разрушительная и мощная версия взрывного оружия, предназначенного для широкого спектра военных и диверсионных операций.
+  name: dynamite with four sticks
+  description: The most destructive and powerful version of explosive weaponry, designed for a wide range of military and sabotage operations.
   parent: BaseBomb
   id: DynamiteFour
   components:
@@ -262,11 +263,11 @@
     - type: Craftable
 
 - type: entity
-  name: самодельная взрывчатка с таймером
-  description: Самодельная взрывчатка на таймере, сложная конструкция ведь вам пришлось переделать детектор аномалий в таймер. Осторожно, он не настроен корректно.
+  name: homemade timed explosive
+  description: Homemade timed explosive, a complex construction since you had to convert an anomaly detector into a timer. Careful, it is not calibrated correctly.
   parent: BasePlasticExplosive
   id: StalkerTimerBombDynamite
-  suffix: Stalker, Бомба
+  suffix: Stalker, Bomb # Zona14: Stalker, Бомба
   components:
   - type: Item
     size: Normal
@@ -310,11 +311,11 @@
     - timer
 
 - type: entity
-  name: взрывчатка FL-2
-  description: Самая последняя версия качественной взрывчатки на таймере и на датчике управления, поражает врага мощной взрывной волной.
+  name: FL-2 explosive
+  description: The latest version of quality explosives on a timer and control sensor, hitting the enemy with a powerful blast wave.
   parent: BasePlasticExplosive
   id: StalkerDistBomb
-  suffix: Stalker, Бомба, Ивент
+  suffix: Stalker, Bomb, Event # Zona14: Stalker, Бомба, Ивент
   components:
   - type: Item
     size: Normal

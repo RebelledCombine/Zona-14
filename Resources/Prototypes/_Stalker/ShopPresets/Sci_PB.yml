@@ -66,11 +66,11 @@
     MutantPartPseudogiantHeart: 11700
     MutantPartZombieHand: 550
   categories:
-  - name: Водка
+  - name: Vodka # Zona14: Водка
     priority: 1
     items:
       DrinkVodkaBottleFull: 45
-  - name: Садоводство
+  - name: Gardening # Zona14: Садоводство
     priority: 2
     items:
       RobustHarvestChemistryBottleStalker: 50

@@ -17,7 +17,7 @@
 - type: entity
   id: STProjectRadioImplanter
   name: STProjectRadioImplanter
-  suffix: Админы
+  suffix: Admins # Zona14: Админы
   parent: BaseImplantOnlyImplanter
   components:
   - type: Implanter

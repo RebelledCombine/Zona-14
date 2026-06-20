@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   abstract: true
   parent: STClothingHeadBase
   id: STClothingHeadHelmetEnvironmentT4Base
-  name: база шлема защиты от окружения T4
+  name: T4 Environment Protection Helmet Base
   suffix: ST, T4, Env
   components:
   - type: BreathMask
@@ -35,10 +36,10 @@
 
 
 - type: entity
-  parent: STClothingHeadHelmetEnvironmentT4Base #Нужны спрайты под шлем с фонариком и без
+  parent: STClothingHeadHelmetEnvironmentT4Base # Zona14: Нужны спрайты под шлем с фонариком и без
   id: ClothingHeadHelmetBulatMercenary
-  name: шлем «Сфера-12» наёмников
-  description: Это шлем, специально разработанный для защиты от колющих атак. Есть устойчивость к другим видам повреждений.
+  name: Mercenary Sphere-12 Helmet
+  description: This is a helmet specifically designed to protect against stabbing attacks. There is resistance to other types of damage.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/hats/bulat_helm_mercenary.rsi
@@ -46,10 +47,10 @@
     sprite: _Stalker/Objects/Clothing/hats/bulat_helm_mercenary.rsi
 
 - type: entity
-  parent: STClothingHeadHelmetCombatT3Base #Нужны спрайты под шлем с фонариком и без
+  parent: STClothingHeadHelmetCombatT3Base # Zona14: Нужны спрайты под шлем с фонариком и без
   id: ClothingHeadHelmetBulatMonolith
-  name: шлем «Сфера-12» монолита
-  description: Является шлемом от Берилла.
+  name: "Monolith's Sphere-12 helmet"
+  description: Is a helmet from Beryl.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/hats/bulat_helm_monolit.rsi
@@ -63,10 +64,10 @@
         Radiation: 18.01
 
 - type: entity
-  parent: STClothingHeadHelmetEnvironmentT4Base #Нужны спрайты под шлем с фонариком и без
+  parent: STClothingHeadHelmetEnvironmentT4Base # Zona14: Нужны спрайты под шлем с фонариком и без
   id: ClothingHeadHelmetBulatMilitary
-  name: шлем «Сфера-12» военных
-  description: Является шлемом от Булата.
+  name: Military Sphere-12 Helmet
+  description: Is a helmet from Bulat.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/hats/bulat_helm_military.rsi
@@ -78,9 +79,9 @@
 - type: entity
   parent: STClothingHeadHelmetEnvironmentT4Base
   id: ClothingHeadHelmetBulatCovenant
-  name: шлем «Сфера-12» Завета
-  description: Является шлемом от Булата.
-  suffix: Stalker, Завет
+  name: Covenant Sphere-12 Helmet
+  description: Is a helmet from Bulat.
+  suffix: Stalker, Covenant # Zona14: Stalker, Завет
   components:
     - type: Sprite
       sprite: _Stalker/Objects/Clothing/Head/Bulat/covenant.rsi
@@ -92,8 +93,8 @@
 - type: entity
   parent: STClothingHeadHelmetEnvironmentT4Base
   id: ClothingHeadHelmetBerill5MCN
-  name: шлем «Сфера-12» 'Чистого Неба'
-  description: Это шлем, специально разработанный для защиты от колющих атак. Есть устойчивость к другим видам повреждений.
+  name: Clear Sky Sphere-12 Helmet
+  description: This is a helmet specifically designed to protect against stabbing attacks. There is resistance to other types of damage.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/hats/bulat_helm_cn.rsi
@@ -113,7 +114,7 @@
 - type: entity
   parent: STClothingHeadBase
   id: ClothingHeadHelmetCN3b
-  name: шлем «ЧН-3б»
+  name: '"ChN-3b" helmet'
   suffix: ST, T4, Env
   components:
     - type: Sprite

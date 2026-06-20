@@ -1,0 +1,108 @@
+- type: entity
+  name: Military Stamp
+  parent: RubberStampBase
+  id: Z14RubberStampArmy
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Stamp
+    stampedName: stamp-component-stamped-name-army
+    stampedColor: "#018029"
+    stampState: "paper_stamp-centcom"
+  - type: Sprite
+    sprite: Objects/Misc/stamps.rsi
+    state: stamp-centcom
+
+- type: entity
+  name: Military Stamp
+  parent: RubberStampBase
+  id: Z14RubberStampScience
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Stamp
+    stampedName: stamp-component-stamped-name-science
+    stampedColor: "#0082AE"
+    stampState: "paper_stamp-psychologist"
+  - type: Sprite
+    sprite: Corvax/Objects/Misc/stamps.rsi
+    state: stamp-psychologist
+
+- type: entity
+  name: Scientist's Seal
+  parent: RubberStampBase
+  id: Z14RubberStampUN
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Stamp
+    stampedName: stamp-component-stamped-name-UN
+    stampedColor: "#3681bb"
+    stampState: "paper_stamp-cap"
+  - type: Sprite
+    sprite: Objects/Misc/stamps.rsi
+    state: stamp-cap
+
+- type: entity
+  name: UN Stamp
+  parent: RubberStampBase
+  id: Z14RubberStampHeadMerc
+  categories: [ Zona14 ]
+  description: Ares Group Field Commander Seal
+  suffix: Z14
+  components:
+  - type: Stamp
+    stampedName: "Field Commander"
+    stampedColor: "#1e547d"
+    stampState: "paper_stamp-cap"
+  - type: Sprite
+    sprite: Objects/Misc/stamps.rsi
+    state: stamp-cap
+
+- type: entity
+  name: Field Commander Seal
+  parent: RubberStampBase
+  id: Z14RubberStampMerc
+  categories: [ Zona14 ]
+  description: Mercenary Seal, used for Ares Group contracts
+  suffix: Z14
+  components:
+  - type: Stamp
+    stampedName: "Mercenary"
+    stampedColor: "#1b6196"
+    stampState: "paper_stamp-cap"
+  - type: Sprite
+    sprite: Objects/Misc/stamps.rsi
+    state: stamp-cap
+
+- type: entity
+  name: Mercenary Seal
+  parent: RubberStampBase
+  id: Z14RubberStampCustomer
+  categories: [ Zona14 ]
+  description: Customer Seal, used for "Ares Group" contracts
+  suffix: Z14
+  components:
+  - type: Stamp
+    stampedName: "Customer"
+    stampedColor: "#23731a"
+    stampState: "paper_stamp-centcom"
+  - type: Sprite
+    sprite: Objects/Misc/stamps.rsi
+    state: stamp-centcom
+
+- type: entity
+  name: customer's seal
+  parent: RubberStampBase
+  id: Z14RubberStampAgentMerc
+  categories: [ Zona14 ]
+  description: Ares Group Agent Seal
+  suffix: Z14
+  components:
+  - type: Stamp
+    stampedName: "Agent"
+    stampedColor: "#58b6fc"
+    stampState: "paper_stamp-hop"
+  - type: Sprite
+    sprite: Objects/Misc/stamps.rsi
+    state: stamp-hop

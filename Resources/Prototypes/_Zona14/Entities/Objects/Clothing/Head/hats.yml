@@ -1,0 +1,88 @@
+- type: entity
+  parent: Z14HelmetBase
+  id: Z14ClothingHeadWildHat
+  categories: [ Zona14 ]
+  name: wild hat
+  description: A hat for true adventure lovers.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/Head/Hats/wild_hat.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/Head/Hats/wild_hat.rsi
+  - type: Tag
+    tags:
+    - ClothMade
+
+- type: entity
+  parent: Z14HelmetBase
+  id: Z14ClothingHeadWildHatAnomalist
+  categories: [ Zona14 ]
+  name: anomalist wild hat
+  description: A anomalists hat to jump through gravi.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/Head/Hats/wild_hat_anomalist.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/Head/Hats/wild_hat_anomalist.rsi
+  - type: Tag
+    tags:
+    - ClothMade
+
+- type: entity
+  parent: Z14HelmetBase
+  id: Z14ClothingHeadPilgrimDoctor
+  categories: [ Zona14 ]
+  name: beak mask
+  description: An unusual-looking pilgrim's hat.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/Head/Hats/pilgrim_hat.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/Head/Hats/pilgrim_hat.rsi
+  - type: Tag
+    tags:
+    - ClothMade
+
+- type: entity
+  parent: Z14HelmetBase
+  id: Z14ClothingHeadPsyHelm
+  categories: [ Zona14 ]
+  name: psy helmet
+  description: A customized prototype developed by scientists to protect against psi radiation.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/psyhelm.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/psyhelm.rsi
+  - type: Tag
+    tags:
+    - ClothMade
+- type: entity
+  parent: Z14HelmetBase
+  id: Z14STClothingHeadTankHelm
+  categories: [ Zona14 ]
+  name: tank helmet
+  description: Just an worn tank helmet. Nothing more.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/tank_helmet.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/tank_helmet.rsi
+
+- type: entity
+  parent: Z14HelmetBase
+  id: Z14STClothingHeadUshanka
+  categories: [ Zona14 ]
+  name: ushanka hat
+  description: Just an worn ushanka hat. Nothing more.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/ushanka.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/ushanka.rsi

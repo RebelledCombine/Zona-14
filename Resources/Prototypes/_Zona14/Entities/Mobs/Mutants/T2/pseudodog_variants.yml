@@ -1,0 +1,40 @@
+- type: entity
+  parent: Z14MobMutantPseudodog
+  id: Z14STMobMutantPseudodogCommon
+  categories: [ Zona14 ]
+  name: Pseudodog
+  suffix: Z14
+  components:
+  - type: STMobVariant
+    quality: Common
+    applied: true
+
+- type: entity
+  parent: Z14MobMutantPseudodog
+  id: Z14STMobMutantPseudodogUncommon
+  categories: [ Zona14 ]
+  name: Adapted Pseudodog
+  suffix: Z14
+  components:
+  - type: STMobVariant
+    quality: Uncommon
+
+- type: entity
+  parent: Z14MobMutantPseudodog
+  id: Z14STMobMutantPseudodogRare
+  categories: [ Zona14 ]
+  name: Mutated Pseudodog
+  suffix: Z14
+  components:
+  - type: STMobVariant
+    quality: Rare
+
+- type: entity
+  parent: Z14MobMutantPseudodog
+  id: Z14STMobMutantPseudodogLegendary
+  categories: [ Zona14 ]
+  name: Singular Pseudodog
+  suffix: Z14
+  components:
+  - type: STMobVariant
+    quality: Legendary

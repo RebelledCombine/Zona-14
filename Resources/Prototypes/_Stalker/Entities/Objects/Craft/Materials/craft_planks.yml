@@ -1,10 +1,11 @@
+# Zona14: translated Russian names/descriptions to English
 
 - type: entity
   parent: STBaseIngridient
   id: STCraftPinePlankT1
-  name: сосновые доски T1
-  description: древесина мягкая, легкая, используется в основном для изготовления фанеры, упаковок, коробок. T1
-  suffix: Stalker, крафт, T1
+  name: T1 Pine Planks
+  description: wood is soft, lightweight, used mainly for making plywood, packages, boxes. T1
+  suffix: Stalker, craft, T1 # Zona14: Stalker, крафт, T1
   components:
     - type: PhysicalComposition
       materialComposition:
@@ -17,14 +18,14 @@
       count: 1
     - type: Craftable
     - type: RepositoryItem
-      categoryName: Крафты
+      categoryName: Crafting # Zona14: Крафты
 
 - type: entity
   parent: STBaseIngridient
   id: STCraftBirchPlankT2
-  name: березовые доски T2
-  description: древесина прочная и твердая, используется в производстве мебели, фанеры, спортивного инвентаря и т.д. T2
-  suffix: Stalker, крафт, T2
+  name: T2 Birch Planks
+  description: wood is strong and hard, used in the production of furniture, plywood, sports equipment, etc. T2
+  suffix: Stalker, craft, T2 # Zona14: Stalker, крафт, T2
   components:
     - type: PhysicalComposition
       materialComposition:
@@ -37,14 +38,14 @@
       count: 1
     - type: Craftable
     - type: RepositoryItem
-      categoryName: Крафты
+      categoryName: Crafting # Zona14: Крафты
 
 - type: entity
   parent: STBaseIngridient
   id: STCraftOakPlankT3
-  name: дубовые доски T3
-  description: древесина очень прочная и твердая, используется в строительстве, мебельной промышленности, бочках для выдержки вина и виски. T3
-  suffix: Stalker, крафт, T3
+  name: T3 Oak Planks
+  description: wood is very durable and hard, used in construction, furniture industry, wine and whiskey aging barrels. T3
+  suffix: Stalker, craft, T3 # Zona14: Stalker, крафт, T3
   components:
     - type: PhysicalComposition
       materialComposition:
@@ -57,14 +58,14 @@
       count: 1
     - type: Craftable
     - type: RepositoryItem
-      categoryName: Крафты
+      categoryName: Crafting # Zona14: Крафты
 
 - type: entity
   parent: STBaseIngridient
   id: STCraftYewPlankT4
-  name: тисовые доски T4
-  description: древесина очень прочная и долговечная, используется для изготовления луков, инструментов, мебели, а также в декоративных целях. T4
-  suffix: Stalker, крафт, T4
+  name: T4 Yew Boards
+  description: wood is very strong and durable, used to make bows, tools, furniture, and also for decorative purposes. T4
+  suffix: Stalker, craft, T4 # Zona14: Stalker, крафт, T4
   components:
     - type: PhysicalComposition
       materialComposition:
@@ -77,14 +78,14 @@
       count: 1
     - type: Craftable
     - type: RepositoryItem
-      categoryName: Крафты
+      categoryName: Crafting # Zona14: Крафты
 
 - type: entity
   parent: STBaseIngridient
   id: STCraftRedWoodPlankT5
-  name: доски из красного дерева T5
-  description: древесина чрезвычайно прочная и твердая, используется для наружных и внутренних работ, строительства мостов, террас, паркета и других конструкций, требующих высокой прочности и долговечности. T5
-  suffix: Stalker, крафт, T5
+  name: T5 Mahogany Planks
+  description: wood is extremely strong and hard, used for exterior and interior work, construction of bridges, terraces, parquet and other structures that require high strength and durability. T5
+  suffix: Stalker, craft, T5 # Zona14: Stalker, крафт, T5
   components:
     - type: PhysicalComposition
       materialComposition:
@@ -97,4 +98,4 @@
       count: 1
     - type: Craftable
     - type: RepositoryItem
-      categoryName: Крафты
+      categoryName: Crafting # Zona14: Крафты

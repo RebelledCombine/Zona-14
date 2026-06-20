@@ -1,7 +1,8 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: Base939Mag10
-  name: магазин 9x39 (10)
-  description: Магазин 9x39 для автоматов и специальных снайперских виннтовок. Вместимость пуль 10. Продают пустым.
+  name: 9x39 magazine (10)
+  description: 9x39 magazine for assault rifles and special sniper vintifications. Bullet capacity 10. They sell empty.
   parent: Base545Mag10
   suffix: Stalker
   components:
@@ -67,8 +68,8 @@
 
 - type: entity
   id: Base939MagVSK
-  name: магазин ВСК-94
-  description: Магазин 9x39 для ВСК-94. Вместимость пуль 20. Продают пустым.
+  name: VSK-94 magazine
+  description: A 9x39 magazine for the VSK-94. Holds 20 rounds. Sold empty.
   parent: Base545Mag10
   suffix: Stalker
   components:
@@ -109,8 +110,8 @@
 
 - type: entity
   id: 939Mag20
-  name: магазин 9x39 (20)
-  description: Магазин 9x39 для автоматов и специальных снайперских виннтовок. Вместимость пуль 20. Продают пустым.
+  name: 9x39 magazine (20)
+  description: 9x39 magazine for assault rifles and special sniper vintifications. Bullet capacity 20. They sell empty.
   parent: Base939Mag10
   suffix: Stalker
   components:
@@ -148,8 +149,8 @@
 
 - type: entity
   id: 939Mag30
-  name: магазин 9x39 (30)
-  description: Магазин 9x39 для автоматов и специальных снайперских виннтовок. Вместимость пуль 30. Продают пустым.
+  name: 9x39 magazine (30)
+  description: 9x39 magazine for assault rifles and special sniper vintifications. Bullet capacity 30. They sell empty.
   parent: Base939Mag10
   suffix: Stalker
   components:
@@ -187,8 +188,8 @@
 
 - type: entity
   id: 939Mag45
-  name: магазин 9x39 (45)
-  description: Магазин 9x39 для автоматов и специальных снайперских виннтовок. Вместимость пуль 45. Продают пустым.
+  name: 9x39 magazine (45)
+  description: 9x39 magazine for assault rifles and special sniper vintifications. Bullet capacity 45. They sell empty.
   parent: Base939Mag10
   suffix: Stalker
   components:

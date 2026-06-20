@@ -1,6 +1,7 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
-  name: постовой базовый
-  suffix: Stalker, Т5, NPC
+  name: basic sentry
+  suffix: Stalker, T5, NPC # Zona14: Stalker, Т5, NPC
   parent: BaseMobMutant
   id: MobStalkerBaseGuard
   description:

@@ -1,0 +1,89 @@
+- type: lightCraftingRecipe
+  id: Z14STCraftSkinClothingOuterCoatIvyAnomalist
+  results:
+    - ClothingOuterCoatIvyAnomalist
+  steps:
+    firstIngredient: STSkinsKitAnomalist
+    secondIngredient: ClothingOuterJacketStalker
+    keepFirst: true
+    time: 5
+
+- type: lightCraftingRecipe
+  id: Z14STCraftSkinClothingOuterJacketBandit
+  results:
+    - ClothingOuterJacketBandit
+  steps:
+    firstIngredient: STSkinsKitBandits
+    secondIngredient: ClothingOuterJacketStalker
+    keepFirst: true
+    time: 5
+
+- type: lightCraftingRecipe
+  id: Z14STCraftSkinClothingOuterJacketCN
+  results:
+    - ClothingOuterJacketCN
+  steps:
+    firstIngredient: STSkinsKitClearSky
+    secondIngredient: ClothingOuterJacketStalker
+    keepFirst: true
+    time: 5
+
+- type: lightCraftingRecipe
+  id: Z14STCraftSkinClothingOuterJacketDolg
+  results:
+    - ClothingOuterJacketDolg
+  steps:
+    firstIngredient: STSkinsKitDolg
+    secondIngredient: ClothingOuterJacketStalker
+    keepFirst: true
+    time: 5
+
+- type: lightCraftingRecipe
+  id: Z14STCraftSkinClothingOuterJacketFreedom
+  results:
+    - ClothingOuterJacketFreedom
+  steps:
+    firstIngredient: STSkinsKitFreedom
+    secondIngredient: ClothingOuterJacketStalker
+    keepFirst: true
+    time: 5
+
+- type: lightCraftingRecipe
+  id: Z14STCraftSkinClothingOuterJacketMerc
+  results:
+    - ClothingOuterJacketMerc
+  steps:
+    firstIngredient: STSkinsKitMercenary
+    secondIngredient: ClothingOuterJacketStalker
+    keepFirst: true
+    time: 5
+
+- type: lightCraftingRecipe
+  id: Z14STCraftSkinClothingOuterJacketNeytral
+  results:
+    - ClothingOuterJacketNeytral
+  steps:
+    firstIngredient: STSkinsKitNeutral
+    secondIngredient: ClothingOuterJacketStalker
+    keepFirst: true
+    time: 5
+
+- type: lightCraftingRecipe
+  id: Z14STCraftSkinClothingOuterJacketDeserter
+  results:
+    - ClothingOuterJacketDeserter
+  steps:
+    firstIngredient: STSkinsKitDeserters
+    secondIngredient: ClothingOuterJacketStalker
+    keepFirst: true
+    time: 5
+
+- type: lightCraftingRecipe
+  id: Z14STCraftSkinClothingOuterJacketMonolith
+  results:
+    - ClothingOuterJacketMonolith
+  steps:
+    firstIngredient: STSkinsKitMonolith
+    secondIngredient: ClothingOuterJacketStalker
+    keepFirst: true
+    time: 5

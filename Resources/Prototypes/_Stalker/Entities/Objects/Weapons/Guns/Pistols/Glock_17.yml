@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   name: Glock-17
   parent: STBaseWeaponPistol
   suffix: ST
   id: WeaponPistolStalkerGlock
-  description: Один из самых популярных пистолетов в США под 9x19.
+  description: One of the most popular 9x19 pistols in the United States.
   components:
     - type: STWeight
       self: 1

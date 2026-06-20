@@ -79,7 +79,7 @@
   id: Z14STWeaponRifleAK74M
   suffix: Z14
   categories: [ Zona14 ]
-  name: AK-74M "Modern"
+  name: 'AK-74M "Modern"'
   description: Modern modification with polymer furniture and optics rail. Valued in the Zone for versatility and improved ergonomics.
   components:
   - type: STWeight
@@ -112,7 +112,7 @@
   id: Z14STWeaponRifleSaiga545
   suffix: Z14
   categories: [ Zona14 ]
-  name: saiga 5.45 "Hunter"
+  name: 'saiga 5.45 "Hunter"'
   description: Civilian version of AK-74M with fixed stock. Popular among stalkers for reliability and ammo availability.
   components:
   - type: STWeight
@@ -169,7 +169,7 @@
   parent: Z14STBaseWeaponRifleAKS74
   id: Z14STWeaponRifleA545
   categories: [ Zona14 ]
-  name: A-545 "Balalaika"
+  name: 'A-545 "Balalaika"'
   suffix: Z14, Custom
   description: Assault rifle with balanced recoil system. Rare in the Zone, usually comes with military expeditions. Nicknamed 'Balalaika' for distinctive sound.
   components:

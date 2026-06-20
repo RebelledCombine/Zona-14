@@ -1,6 +1,7 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: STDescentDecoration
-  name: Спуск
+  name: Descent
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/descent.rsi

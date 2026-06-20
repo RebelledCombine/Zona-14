@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
-  name: Конь
+  name: Horse
   parent: SimpleMobBase
   id: MobHorseStalkerTest
-  description: Конь, название вида "Артас".
+  description: Horse, the name of the species is "Artas".
   components:
   - type: BuckleNorthVisible
   - type: Sprite

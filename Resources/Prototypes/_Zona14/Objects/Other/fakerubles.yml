@@ -1,0 +1,75 @@
+- type: entity
+  parent: BaseItem
+  id: Z14RoublesFake
+  categories: [ Zona14 ]
+  name: rubles
+  description: National currency of the Russian Federation. An interesting fact is that 1 ruble is equal to 100 kopecks.
+  suffix: Z14
+  components:
+  - type: PhysicalComposition
+    materialComposition:
+      Credit: 1
+  - type: Stack
+    stackType: RoublesFake
+    count: 1
+    baseLayer: base
+    layerStates:
+    - cash
+    - cash_20
+    - cash_100
+  - type: Sprite
+    sprite: _Stalker/Objects/Economy/rubles.rsi
+    state: cash
+    layers:
+    - state: cash
+      map: ["base"]
+  - type: Physics
+    bodyType: Dynamic
+  - type: Fixtures
+    fixtures:
+      fix1:
+        density: 30
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.35,-0.2,0.25,0.1"
+        mask:
+        - ItemMask
+  - type: Appearance
+  - type: Tag
+    tags:
+    - RoublesFake
+- type: currency
+  id: Z14RoublesFake
+  displayName: store-currency-display-ruble
+  cash:
+    1: RoublesFake
+  canWithdraw: true
+- type: stack
+  id: Z14RoublesFake
+  name: stack-rouble
+  icon: { sprite: "/Textures/_Stalker/Objects/Economy/rubles.rsi", state: cash }
+  spawn: RoublesFake
+
+- type: entity
+  parent: RoublesFake
+  id: Z14RoublesFake20
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Icon
+    sprite: _Stalker/Objects/Economy/rubles.rsi
+    state: cash_100
+  - type: Stack
+    count: 100
+
+- type: entity
+  parent: RoublesFake
+  id: Z14RoublesFake1000
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Icon
+    sprite: _Stalker/Objects/Economy/rubles.rsi
+    state: cash_1000
+  - type: Stack
+    count: 1000

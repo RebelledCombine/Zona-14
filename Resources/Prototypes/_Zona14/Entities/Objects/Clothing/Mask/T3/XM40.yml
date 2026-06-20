@@ -1,0 +1,41 @@
+- type: entity
+  parent: Z14GasMaskBase
+  id: Z14ClothingMaskGasXM40
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Gas Mask XM40
+  description: Berill-5M kit gas mask.
+  components:
+  - type: Tag
+    tags:
+      - BlockMask
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/mask/xm40military.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/mask/xm40military.rsi
+  - type: IngestionBlocker
+  - type: IdentityBlocker
+## Skins
+#- type: entity
+#  parent: ClothingMaskGasXM40
+#  id: ClothingMaskGasXM40Military
+#  name: XM40 gas mask in military paint
+#  description: Smells of cheap paint.
+#  components:
+#  - type: Sprite
+#    sprite: _Stalker/Objects/Clothing/mask/xm40military.rsi
+#  - type: Clothing
+#    sprite: _Stalker/Objects/Clothing/mask/xm40military.rsi
+
+- type: entity
+  parent: Z14ClothingMaskGasXM40
+  id: Z14ClothingMaskGasXM40Project
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: modified XM40 gas mask
+  description: Filtering personal protective equipment for respiratory organs, eyes, and facial skin.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/mask/gasmask_project.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/mask/gasmask_project.rsi

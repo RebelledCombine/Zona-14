@@ -1,0 +1,51 @@
+- type: entity
+  parent: STBaseWeaponGameRevolver
+  id: Z14STWeaponRevolverDanWesson715
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Dan Wesson 715
+  description: A six-shot, high-precision and reliable revolver with extremely excellent performance on .45 ACP caliber. The most expensive and rare in the Zone, there are only a few such batches. Sponsored for some groups.
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Weapons/Guns/Revolvers/dan_wesson_715.rsi
+      scale: 0.9, 0.9
+      layers:
+      - state: icon
+        map: ["enum.GunVisualLayers.Base"]
+    - type: Gun
+      minAngle: 0
+      maxAngle: 10
+      fireRate: 3
+      angleIncrease: 5
+      angleDecay: 25
+      projectileSpeed: 55
+      selectedMode: SemiAuto
+      soundGunshot:
+        path: /Audio/_Stalker/Effects/Guns/revolver3.ogg
+        params:
+          volume: -4
+    - type: RevolverAmmoProvider
+      whitelist:
+        tags:
+          - Cartridge45ACP
+          - STSpeedLoader45ACP
+      proto: null
+      capacity: 6
+      chambers: [ null, null, null, null, null, null ]
+      ammoSlots: [ null, null, null, null, null, null ]
+      soundEject:
+        path: /Audio/Weapons/Guns/MagOut/revolver_magout.ogg
+      soundInsert:
+        path: /Audio/Weapons/Guns/MagIn/revolver_magin.ogg
+    - type: STWeight
+      self: 1.58
+    - type: StaticPrice
+      price: 30
+    - type: UseDelay
+      delay: 1
+    - type: RepositoryItem
+      categoryName: Weapons
+    - type: STWeaponDamageFalloff
+      falloffMultiplier: 0.8
+    - type: STWeaponAccuracy
+      accuracyMultiplier: 1.45

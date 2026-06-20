@@ -1,11 +1,12 @@
+# Zona14: translated Russian names/descriptions to English
 # Dolg - 1
 
 - type: entity
   parent: NPCDoll
   id: NPCDolg
-  name: Сержант Прокопьенко[→   ←]
+  name: Sergeant Prokopenko[→   ←]
   suffix: ST, Gruppirovki
-  description: Продает хорошее снаряжение для охоты и припасы очень важные для выживания в зоне.
+  description: Sells good hunting gear and supplies that are very important for survival in the zone.
   components:
   - type: Sprite
     sprite: _Stalker/NPC/Groups/Dolg.rsi
@@ -45,9 +46,9 @@
 - type: entity
   parent: NPCDoll
   id: NPCBand
-  name: Мафаний 'Барахло'[→   ←]
+  name: Mafaniy 'Junk'[→   ←]
   suffix: ST, Gruppirovki
-  description: Продает хорошее снаряжение для охоты и припасы очень важные для выживания в зоне.
+  description: "{ ent-NPCDolg.desc }"
   components:
   - type: Sprite
     sprite: _Stalker/NPC/Groups/Band.rsi
@@ -87,8 +88,8 @@
 - type: entity
   parent: NPCDoll
   id: NPCResearchInstitutes
-  name: Проф. Круглый [→   ←]
-  description: Говорят, что у профессора есть диплом об окончании МГУ. Стоит ли верить слухам?
+  name: Prof. Round [→   ←]
+  description: They say that the professor has a diploma from Moscow State University. Should we believe the rumors?
   components:
   - type: Sprite
     sprite: _Stalker/NPC/Scientist.rsi
@@ -126,8 +127,8 @@
 - type: entity
   parent: NPCDoll
   id: NPCResearchInstitutesPB
-  name: Проф. Хайзенберг [→   ←]
-  description: Верит в магию дружбы, готов обменять ваш хабар на хороший кэш
+  name: Prof. Heisenberg [→   ←]
+  description: Believes in the magic of friendship, ready to exchange your swag for good cash
   components:
   - type: Sprite
     sprite: _Stalker/NPC/Scientist.rsi
@@ -168,9 +169,9 @@
 - type: entity
   parent: NPCDoll
   id: NPCclearSky
-  name: Димка 'Почтмейтер'[→   ←]
+  name: Dimka 'Postmaster'[→   ←]
   suffix: ST, Gruppirovki
-  description: Продает хорошее снаряжение для охоты и припасы очень важные для выживания в зоне.
+  description: "{ ent-NPCDolg.desc }"
   components:
   - type: Sprite
     sprite: _Stalker/NPC/Groups/CN.rsi
@@ -210,9 +211,9 @@
 - type: entity
   parent: NPCDoll
   id: NPCFreedom
-  name: Васян 'Билибоб'[→   ←]
+  name: Vasyan 'Bilibob'[→   ←]
   suffix: ST, Gruppirovki
-  description: Сводный отец сталкера по имени 'Кебаб'. Продает хорошее снаряжение для охоты и припасы очень важные для выживания в зоне.
+  description: Stepfather of a stalker named 'Kebab'. Sells good hunting equipment and supplies that are very important for survival in the zone.
   components:
   - type: Sprite
     sprite: _Stalker/NPC/Groups/freedom.rsi
@@ -252,9 +253,9 @@
 - type: entity
   parent: NPCDoll
   id: NPCJaba
-  name: Евгений 'Сборщик'[→   ←]
+  name: Eugene 'Collector'[→   ←]
   suffix: ST, Gruppirovki
-  description: Продает хорошее снаряжение для охоты и припасы очень важные для выживания в зоне.
+  description: "{ ent-NPCDolg.desc }"
   components:
   - type: Sprite
     sprite: _Stalker/NPC/Groups/Jabs.rsi
@@ -294,9 +295,9 @@
 - type: entity
   parent: NPCDoll
   id: NPCMilitaryOKsop
-  name: Виталий 'Интендант'[→   ←]
+  name: Vitaly 'Quartermaster'[→   ←]
   suffix: ST, Gruppirovki
-  description: Продает хорошее снаряжение для охоты и припасы очень важные для выживания в зоне.
+  description: "{ ent-NPCDolg.desc }"
   components:
   - type: Sprite
     sprite: _Stalker/NPC/Groups/Military.rsi
@@ -336,9 +337,9 @@
 - type: entity
   parent: NPCDoll
   id: NPCMilitary
-  name: АХмед 'Газоотвод'[→   ←]
+  name: Ahmed 'Gas Drain'[→   ←]
   suffix: ST, Gruppirovki
-  description: Вечно носит противогаз, как дурак. Продает хорошее снаряжение для охоты и припасы очень важные для выживания в зоне.
+  description: He always wears a gas mask like a fool. Sells good hunting equipment and supplies that are very important for survival in the zone.
   components:
   - type: Sprite
     sprite: _Stalker/NPC/Groups/rene.rsi
@@ -378,9 +379,9 @@
 - type: entity
   parent: NPCDoll
   id: NPCStalk
-  name: Шакал [→   ←]
+  name: Jackal [→   ←]
   suffix: ST, Gruppirovki
-  description: Продает хорошее снаряжение для охоты и припасы очень важные для выживания в зоне.
+  description: "{ ent-NPCDolg.desc }"
   components:
   - type: Sprite
     sprite: _Stalker/NPC/Groups/stalkers.rsi
@@ -420,9 +421,9 @@
 - type: entity
   parent: NPCDoll
   id: NPCSabbatSerafim
-  name: Саббат [→   ←]
+  name: Sabbat [→   ←]
   suffix: ST, Serafim
-  description: Саббат, паладин, ветеран битв с Ложным Идолом сразивший множество рабов Идола, сейчас он помогает в поставках снаряжения и отправляет поставки провизии и медикаментов в северные ковены.
+  description: Sabbath, a paladin, veteran of battles with the False Idol who slew many slaves of the Idol, now he helps in the supply of equipment and sends supplies of provisions and medicine to the northern covens.
   components:
   - type: Sprite
     sprite: _Stalker/NPC/Sabbat.rsi
@@ -460,9 +461,9 @@
 - type: entity
   parent: NPCDoll
   id: NPCMilitaryPrapor
-  name: Прапор [→   ←]
+  name: Banner [→   ←]
   suffix: ST, Gruppirovki
-  description: Барыжит казённым имуществом среди солдат.
+  description: He sells government property among the soldiers.
   components:
   - type: Sprite
     sprite: _Stalker/NPC/Groups/prapor-military.rsi
@@ -502,8 +503,8 @@
 - type: entity
   parent: NPCDoll
   id: NPCMercHummingbird
-  name: Хамингбёрд [→   ←]
-  description: Массово закупает оружие в Европе и Америке и продаёт в зоне.
+  name: Hummingbird [→ ←]
+  description: He buys weapons in bulk in Europe and America and sells them in the zone.
   components:
   - type: Sprite
     sprite: _Stalker/NPC/Merc.rsi
@@ -541,8 +542,8 @@
 - type: entity
   parent: NPCDoll
   id: NPCDeserterMubarack
-  name: Мубарак [→   ←]
-  description: Мубарак, брат Абдула, дезертир из ОКСОП и почётный член банд-формирования "отступники", помогает брату перевозить оружие и броню с большой земли, совсем дурак.
+  name: Mubarak [→ ←]
+  description: "Mubarak, Abdul's brother, a deserter from the OKSOP and an honorary member of the \"renegades\" gang, helps his brother transport weapons and armor from the mainland, a complete idiot."
   components:
   - type: Sprite
     sprite: _Stalker/NPC/Deserter_mubarack.rsi
@@ -581,8 +582,8 @@
 - type: entity
   parent: NPCDoll
   id: NPCDeserterAbdul
-  name: Абдул [→   ←]
-  description: Абдул, брат Мубарака, дезертир из ОКСОП и почётный член банд-формирования "отступники", перевозит контрабанду через границу ЧЗО, умом не блещет.
+  name: Abdul [→ ←]
+  description: "Abdul, Mubarak's brother, a deserter from the OKSOP and an honorary member of the \"renegades\" gang, smuggles contraband across the border of the Chernobyl Exclusion Zone, and is not particularly bright."
   components:
   - type: Sprite
     sprite: _Stalker/NPC/Deserter_abdul.rsi
@@ -624,7 +625,7 @@
   id: NPCProject
   name: JEW-488 [→   ←]
   suffix: ST, Project
-  description: Обеспечивает неизвестную группу лиц снаряжением.
+  description: Provides an unknown group of people with equipment.
   components:
   - type: Sprite
     sprite: _Stalker/NPC/Security.rsi

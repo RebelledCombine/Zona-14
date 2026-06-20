@@ -6,7 +6,7 @@
     DrinkWaterBottleFull: 5
     DrinkSodaWaterBottleFull: 5
     DrinkVodkaBottleFull: 10
-    DrinkLemonadehBottleFull: 5
+    Z14DrinkLemonadehBottleFull: 5
     CigarSpent: 3
     CigarGoldSpent: 3
     CigaretteSpent: 3
@@ -14,7 +14,7 @@
     DrinkBeerBottleFull: 5
     DrinkTonicWaterBottleFull: 5
     DrinkBeerCan: 5
-    STEnergyDrink: 3
+    Z14STEnergyDrink: 3
     DrinkWineCan: 5
     BrokenBottle: 4
     Ash: 2

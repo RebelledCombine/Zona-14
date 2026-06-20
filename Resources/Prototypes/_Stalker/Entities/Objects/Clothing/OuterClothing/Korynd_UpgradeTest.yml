@@ -1,5 +1,6 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
-  name: Корунд (модифицированный)
+  name: Korund (modified)
   suffix: ST, TEST
   parent: ClothingOuterArmorBasic
   id: STKorundUpgradeTest

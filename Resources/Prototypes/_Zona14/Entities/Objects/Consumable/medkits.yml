@@ -1,0 +1,719 @@
+- type: entity
+  parent: BaseHealingItem
+  abstract: true
+  id: Z14STBaseHealingItem
+  categories: [ Zona14 ]
+  components:
+  - type: STBulkBuyable # stalker-14-en
+    maxQuantity: 5
+  - type: Healing
+    selfHealPenaltyMultiplier: 2.5
+  - type: Item
+    size: Tiny
+  - type: STWeight
+    self: 0.2
+
+- type: entity
+  parent: Z14STBaseHealingItem
+  id: Z14BaseMedkit
+  categories: [ Zona14 ]
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+      - Medkit
+  - type: Sprite
+    sprite: _Stalker/Objects/medicine.rsi
+  - type: RepositoryItem
+    categoryName: Medicine
+  - type: Healing
+    damageContainers:
+      - Biological
+    healingBeginSound:
+      path: "/Audio/Items/Medical/brutepack_begin.ogg"
+    healingEndSound:
+      path: "/Audio/Items/Medical/brutepack_end.ogg"
+  - type: Stack
+
+- type: entity
+  parent: [STBaseHealingItem, Brutepack]
+  id: Z14STBrutepack
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Bruise Kit
+  description: A plastic bag with band-aids, cotton, and antiseptic for treating minor injuries.
+  components:
+  - type: Healing
+    damageContainers:
+      - Biological
+    damage:
+      groups:
+        Brute: -24
+    delay: 4
+    healingBeginSound:
+      path: "/Audio/Items/Medical/brutepack_begin.ogg"
+    healingEndSound:
+      path: "/Audio/Items/Medical/brutepack_end.ogg"
+  - type: Stack
+    stackType: Z14STBrutepack
+    count: 10
+  - type: Item
+    sprite: _Stalker/Objects/medicine.rsi
+    heldPrefix: brutepack
+  - type: Sprite
+    sprite: _Stalker/Objects/medicine.rsi
+    state: brutepack
+
+- type: stack
+  id: Z14STBrutepack
+  name: stack-brutepack
+  icon:
+    sprite: _Stalker/Objects/medicine.rsi
+    state: brutepack
+  spawn: Z14STBrutepack
+  maxCount: 10
+
+- type: entity
+  parent: Z14STBaseHealingItem
+  id: Z14STTourniquet
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: tourniquet
+  description: Strongly compresses the limb, cutting off blood flow. If applied improperly, can tear skin and leave bruises.
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Specific/Medical/Other
+      state: esmarch
+      scale: 0.6, 0.6
+    - type: Healing
+      damageContainers:
+      - Biological
+      damage:
+        groups:
+          Brute: 1 # Tourniquets HURT!
+        types:
+          Asphyxiation: 2 # Essentially Stopping all blood reaching a part of your body
+      bloodlossModifier: -20 # Tourniquets stop bleeding
+      delay: 2
+      healingBeginSound:
+        path: "/Audio/Items/Medical/brutepack_begin.ogg"
+      healingEndSound:
+        path: "/Audio/Items/Medical/brutepack_end.ogg"
+
+- type: entity
+  parent: Z14STBrutepack
+  id: Z14STBrutepackSera
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: jar of ointment
+  description: A foul-smelling ointment made from ground comfrey root and crushed Flesh eye, excellent for treating bruises.
+  components:
+  - type: Stack
+    stackType: Z14STBrutepackSera
+    count: 10
+  - type: Item
+    sprite: _Stalker/Objects/Counsumable/Medicine/brutepacksera.rsi # Stalker-TODO: Need an inhand sprite for this item
+  - type: Sprite
+    sprite: _Stalker/Objects/Counsumable/Medicine/brutepacksera.rsi
+    state: icon
+
+- type: stack
+  id: Z14STBrutepackSera
+  name: stack-st-brutepack-sera
+  icon:
+    sprite: _Stalker/Objects/Counsumable/Medicine/brutepacksera.rsi
+    state: icon
+  spawn: Z14STBrutepackSera
+  maxCount: 10
+
+- type: entity
+  parent: [STBaseHealingItem, Ointment]
+  id: Z14STOintment
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: ointment
+  description: A cheap ointment from an unknown manufacturer, cools the application site and makes burns more tolerable.
+  components:
+  - type: Healing
+    damageContainers:
+      - Biological
+    damage:
+      types:
+        Cold: -3
+        Heat: -8
+        Caustic: -4
+        Shock: -4
+    delay: 4
+  - type: Stack
+    stackType: Z14STOintment
+    count: 10
+  - type: Item
+    sprite: _Stalker/Objects/medicine.rsi
+    heldPrefix: ointment
+  - type: Sprite
+    sprite: _Stalker/Objects/medicine.rsi
+    state: ointment
+
+- type: stack
+  id: Z14STOintment
+  name: stack-ointment
+  icon:
+    sprite: _Stalker/Objects/medicine.rsi
+    state: ointment
+  spawn: Z14STOintment
+  maxCount: 10
+
+- type: entity
+  parent: [STBaseHealingItem, Ointment]
+  id: Z14STOintmentGood
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: antibiotic ointment
+  description: An expensive ointment from a known manufacturer, contains antibiotic, numbs, disinfects, and effectively heals all types of burns — including frostbite.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Medicine/GoodOinment.rsi
+  - type: Item
+    sprite: _Stalker/Objects/Medicine/GoodOinment.rsi
+  - type: Healing
+    damageContainers:
+      - Biological
+    damage:
+      types:
+        Cold: -25
+        Heat: -25
+        Caustic: -15
+        Shock: -15
+    delay: 4
+  - type: Stack
+    stackType: Z14STOintmentGoodstack
+    count: 4
+
+- type: stack
+  id: Z14STOintmentGoodstack
+  name: stack-st-ointment-good
+  icon:
+    sprite: _Stalker/Objects/Medicine/GoodOinment.rsi
+    state: ointment
+  spawn: Z14STOintmentGood
+  maxCount: 4
+
+- type: entity
+  parent: Z14STOintment
+  id: Z14STOintmentSera
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: bitter ointment
+  description: A revolting viscous slime with a terrible smell, made from boar liver extract. Surprisingly good at healing chemical and radiation burns. Used by Seraphim also as a skin cancer treatment.
+  components:
+  - type: Stack
+    stackType: Z14STOintmentSera
+    count: 10
+  - type: Item
+    sprite: _Stalker/Objects/Counsumable/Medicine/ointmentsera.rsi
+  - type: Sprite
+    sprite: _Stalker/Objects/Counsumable/Medicine/ointmentsera.rsi
+    state: icon
+
+- type: stack
+  id: Z14STOintmentSera
+  name: stack-st-ointment-sera
+  icon:
+    sprite: _Stalker/Objects/Counsumable/Medicine/ointmentsera.rsi
+    state: icon
+  spawn: Z14STOintmentSera
+  maxCount: 10
+
+- type: entity
+  parent: [STBaseHealingItem, Gauze]
+  id: Z14STGauze
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: bandage
+  description: Used to stop bleeding and dress wounds. Effectively reduces infection risk when applied in time. Essential survival item, compact but can save lives in extreme conditions.
+  components:
+  - type: Healing
+    damageContainers:
+      - Biological
+    damage:
+      types:
+        Slash: -0
+        Piercing: -0
+    bloodlossModifier: -10
+    delay: 2.5
+    healingBeginSound:
+      path: "/Audio/Items/Medical/brutepack_begin.ogg"
+    healingEndSound:
+      path: "/Audio/Items/Medical/brutepack_end.ogg"
+  - type: Stack
+    stackType: Z14STGauze
+    count: 5
+  - type: Item
+    sprite: _Stalker/Objects/medicine.rsi # Stalker-TODO: Need an inhand sprite for this item
+  - type: Sprite
+    sprite: _Stalker/Objects/medicine.rsi
+    state: gauze
+  - type: Craftable
+
+- type: stack
+  id: Z14STGauze
+  name: stack-gauze
+  icon:
+    sprite: _Stalker/Objects/medicine.rsi
+    state: gauze
+  spawn: Z14STGauze
+  maxCount: 5
+
+- type: entity
+  parent: Z14STGauze
+  id: Z14STGauzeBarbaris
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: barberry-soaked bandage
+  description: Zone barberry pulp has strong antiseptic properties. Stalkers use it to soak bandages, effectively fighting infections and accelerating wound healing.
+  components:
+  - type: Healing
+    damageContainers:
+      - Biological
+    damage:
+      types:
+        Slash: -2
+        Piercing: -2
+    bloodlossModifier: -17
+    delay: 3
+    healingBeginSound:
+      path: "/Audio/Items/Medical/brutepack_begin.ogg"
+    healingEndSound:
+      path: "/Audio/Items/Medical/brutepack_end.ogg"
+  - type: Stack
+    stackType: Z14STGauzeBarbaris
+    count: 5
+  - type: Item
+    sprite: _Stalker/Objects/medicine.rsi
+  - type: Sprite
+    sprite: _Stalker/Objects/medicine.rsi
+    state: gauzebarbaris
+
+- type: stack
+  id: Z14STGauzeBarbaris
+  name: stack-st-gauze-barbaris
+  icon:
+    sprite: _Stalker/Objects/medicine.rsi
+    state: gauzebarbaris
+  spawn: Z14STGauzeBarbaris
+  maxCount: 5
+
+- type: entity
+  parent: Z14STGauze
+  id: Z14STGauzeUniversal
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: universal-salve-soaked bandage
+  description: A universal ointment made from a mix of various Zone berry and herb pulp, with powerful antiseptic properties promoting rapid wound healing.
+  components:
+  - type: Healing
+    damageContainers:
+      - Biological
+    damage:
+      types:
+        Heat: -10
+        Cold: -5
+        Shock: -5
+        Caustic: -10
+        Slash: -5
+        Blunt: -5
+    bloodlossModifier: -2
+    healingBeginSound:
+      path: "/Audio/Items/Medical/brutepack_begin.ogg"
+    healingEndSound:
+      path: "/Audio/Items/Medical/brutepack_end.ogg"
+  - type: Stack
+    stackType: Z14STGauzeUniversal
+    count: 5
+  - type: Item
+    sprite: _Stalker/Objects/medicine.rsi
+  - type: Sprite
+    sprite: _Stalker/Objects/medicine.rsi
+    state: cast
+
+- type: stack
+  id: Z14STGauzeUniversal
+  name: stack-st-gauze-barbaris
+  icon:
+    sprite: _Stalker/Objects/medicine.rsi
+    state: cast
+  spawn: Z14STGauzeUniversal
+  maxCount: 5
+
+- type: entity
+  parent: Z14STGauze
+  id: Z14STGauzeSera
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: piece of rag
+  description: Whether boiled cloth or an old bandage found in ruins, the Seraphim living in the Zone use it for wound dressing.
+  components:
+  - type: Stack
+    stackType: Z14STGauzeSera
+    count: 5
+  - type: Item
+    sprite: _Stalker/Objects/Counsumable/Medicine/gausesera.rsi # Stalker-TODO: Need an inhand sprite for this item
+  - type: Sprite
+    sprite: _Stalker/Objects/Counsumable/Medicine/gausesera.rsi
+    state: icon
+
+- type: stack
+  id: Z14STGauzeSera
+  name: stack-st-gauze-sera
+  icon:
+    sprite: _Stalker/Objects/Counsumable/Medicine/ointmentsera.rsi
+    state: icon
+  spawn: Z14STGauzeSera
+  maxCount: 5
+
+- type: entity
+  parent: Z14BaseMedkit
+  id: Z14MedkitAI2
+  categories: [ Zona14 ]
+  name: AI-2 first aid kit
+  suffix: Z14
+  description: Standard universal military medkit. Helps with bullet, slash, and other physical wounds, has a couple of anti-radiation ampoules, also helps with internal bleeding.
+  components:
+  - type: RepositoryItem
+    categoryName: Medicine
+  - type: Sprite
+    sprite: _Stalker/Objects/Medicine/medkit/ai1.rsi
+    state: medkit-1
+  - type: Item
+    sprite: _Stalker/Objects/Medicine/medkit/ai1.rsi
+    inhandVisuals:
+      left:
+      - state: inhand-left
+      right:
+      - state: inhand-right
+  - type: Healing
+    damage:
+      types:
+        Piercing: -20
+        Blunt: -15
+        Slash: -20
+        Radiation: -10
+        Compression: -15
+  - type: Stack
+    stackType: Z14MedkitAI2
+    count: 4
+
+- type: stack
+  id: Z14MedkitAI2
+  name: stack-medkit-ai-2
+  icon:
+    sprite: "_Stalker/Objects/Medicine/medkit/ai1.rsi"
+    state: medkit-1
+  spawn: Z14MedkitAI2
+  maxCount: 4
+
+- type: entity
+  parent: Z14MedkitAI2
+  id: Z14MedkitAI2Sera
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Homemade Medicine Kit
+  description: A cloth-wrapped set of various jars, vials, powders, and old surgical instruments. Used by Seraphim for thorough treatment of deep mutant bites and bullet/shrapnel wounds. Compared to modern medicine, extremely impractical, yet its creators use it having no alternative.
+  components:
+  - type: Stack
+    stackType: Z14MedkitAI2Sera
+    count: 4
+  - type: Item
+    sprite: _Stalker/Objects/Counsumable/Medicine/ai2sera.rsi # Stalker-TODO: Need an inhand sprite for this item
+  - type: Sprite
+    sprite: _Stalker/Objects/Counsumable/Medicine/ai2sera.rsi
+    state: icon
+
+- type: stack
+  id: Z14MedkitAI2Sera
+  name: stack-medkit-ai-2-sera
+  icon:
+    sprite: _Stalker/Objects/Counsumable/Medicine/ai2sera.rsi
+    state: icon
+  spawn: Z14MedkitAI2Sera
+  maxCount: 4
+
+- type: entity
+  parent: Z14BaseMedkit
+  id: Z14MedkitMilitary
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Army MedKit
+  description: Medical kit designed specifically for army units. More effective than the AI-2 kit, but contains no anti-radiation medicine. Won't stop bleeding, easy to use.
+  components:
+  - type: STWeight
+    self: 0.4
+  - type: RepositoryItem
+    categoryName: Medicine
+  - type: Sprite
+    sprite: _Stalker/Objects/Medicine/medkit/ai2.rsi
+    state: medkit-2
+  - type: Item
+    sprite: _Stalker/Objects/Medicine/medkit/ai2.rsi
+    inhandVisuals:
+      left:
+      - state: inhand-left
+      right:
+      - state: inhand-right
+  - type: Healing
+    damage:
+      types:
+        Piercing: -30
+        Blunt: -20
+        Slash: -30
+  - type: Stack
+    stackType: Z14MedkitMilitary
+    count: 4
+
+- type: stack
+  id: Z14MedkitMilitary
+  name: stack-medkit-military
+  icon:
+    sprite: "_Stalker/Objects/Medicine/medkit/ai2.rsi"
+    state: medkit-2
+  spawn: Z14MedkitMilitary
+  maxCount: 4
+
+- type: entity
+  parent: Z14BaseMedkit
+  id: Z14MedkitScience
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Scientific first aid kit
+  description: Medical kit designed for Zone work. Contains medication for most types of anomalous damage plus some saline. Doesn't help against psi effects, toxins, or radiation.
+  components:
+  - type: STWeight
+    self: 0.6
+  - type: RepositoryItem
+    categoryName: Medicine
+  - type: Sprite
+    sprite: _Stalker/Objects/Medicine/medkit/ai3.rsi
+    state: medkit-3
+  - type: Item
+    sprite: _Stalker/Objects/Medicine/medkit/ai3.rsi
+    inhandVisuals:
+      left:
+      - state: inhand-left
+      right:
+      - state: inhand-right
+  - type: Healing
+    damage:
+      groups:
+        Burn: -75
+        Airloss: -75
+      types:
+        Compression: -55
+  - type: Stack
+    stackType: Z14MedkitScience
+    count: 4
+
+- type: stack
+  id: Z14MedkitScience
+  name: stack-medkit-science
+  icon:
+    sprite: "_Stalker/Objects/Medicine/medkit/ai3.rsi"
+    state: medkit-3
+  spawn: Z14MedkitScience
+  maxCount: 4
+
+- type: entity
+  name: Elite Medkit
+  description: Advanced medical kit designed exclusively for toxin removal and CNS recovery.
+  parent: BaseHealingItem
+  id: Z14MedkitElite
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: STBulkBuyable # stalker-14-en
+    maxQuantity: 10
+  - type: STWeight
+    self: 1
+  - type: RepositoryItem
+    categoryName: Medicine
+  - type: Tag
+    tags:
+    - Brutepack
+  - type: Sprite
+    sprite: _Stalker/Objects/Medicine/medkit/ai4.rsi
+    state: medkit-4
+  - type: Item
+    sprite: _Stalker/Objects/Medicine/medkit/ai4.rsi
+    inhandVisuals:
+      left:
+      - state: inhand-left
+      right:
+      - state: inhand-right
+  - type: Healing
+    damage:
+      groups:
+        Toxin: -80
+        Genetic: -80
+      types:
+        Psy: -30
+    healingBeginSound:
+      path: "/Audio/Items/Medical/brutepack_begin.ogg"
+    healingEndSound:
+      path: "/Audio/Items/Medical/brutepack_end.ogg"
+  - type: Stack
+    stackType: Z14MedkitElite
+    count: 4
+
+- type: stack
+  id: Z14MedkitElite
+  name: stack-medkit-elite
+  icon:
+    sprite: "_Stalker/Objects/Medicine/medkit/ai4.rsi"
+    state: medkit-4
+  spawn: Z14MedkitElite
+  maxCount: 4
+
+- type: entity
+  name: LAR First Aid Kit
+  description: The ultimate LAR medical kit, designed for harsh Zone conditions. Full treatment for all anomalous damage types plus CNS and internal organ damage. Does not remove radiation.
+  parent: BaseHealingItem
+  id: Z14MedkitLAR
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: STBulkBuyable # stalker-14-en
+    maxQuantity: 10
+  - type: STWeight
+    self: 3
+  - type: Tag
+    tags:
+    - Brutepack
+  - type: RepositoryItem
+    categoryName: Medicine
+  - type: Sprite
+    sprite: _Stalker/Objects/Medicine/medkit/ai5.rsi
+    state: medkit-5
+  - type: Item
+    sprite: _Stalker/Objects/Medicine/medkit/ai5.rsi
+    inhandVisuals:
+      left:
+      - state: inhand-left
+      right:
+      - state: inhand-right
+  - type: Healing
+    damageContainers:
+      - Biological
+    damage:
+      groups:
+        Burn: -95
+        Genetic: -70
+      types:
+        Poison: -75
+        Caustic: -65
+        Compression: -45
+        Psy: -65
+    healingBeginSound:
+      path: "/Audio/Items/Medical/brutepack_begin.ogg"
+    healingEndSound:
+      path: "/Audio/Items/Medical/brutepack_end.ogg"
+  - type: Stack
+    stackType: Z14MedkitLAR
+    count: 4
+
+- type: stack
+  id: Z14MedkitLAR
+  name: stack-medkit-lar
+  icon:
+    sprite: "_Stalker/Objects/Medicine/medkit/ai5.rsi"
+    state: medkit-5
+  spawn: Z14MedkitLAR
+  maxCount: 4
+
+- type: entity
+  id: Z14STpillboxbase
+  categories: [ Zona14 ]
+  parent: BaseStorageItem
+  abstract: true
+  components:
+  - type: STBulkBuyable # stalker-14-en
+    maxQuantity: 10
+  - type: Item
+    size: Tiny
+  - type: Storage
+    grid:
+    - 0,0,4,1
+    quickInsert: true
+    areaInsert: true
+    areaInsertRadius: 1
+    storageInsertSound: /Audio/Effects/pill_insert.ogg
+    storageRemoveSound: /Audio/Effects/pill_remove.ogg
+    whitelist:
+      tags:
+      - Pill
+  - type: Dumpable
+  - type: Sprite
+    layers:
+      - map: [ base ]
+        state: icon
+  - type: Tag
+    tags:
+    - PillCanister
+  - type: GenericVisualizer
+    visuals:
+      enum.StorageVisuals.Open:
+        base:
+          True: { state: icon-open }
+          False: { state: icon }
+  - type: Appearance
+
+- type: entity
+  name: iododeradine pill pack
+  description: Pack of iodoradin pills, each pill weighs 10 grams. Helps remove radionuclides from the body. Take up to 30 grams at a time!
+  parent: Z14STpillboxbase
+  id: Z14STPillboxAntirad
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: StorageFill
+    contents:
+    - id: Z14antiradpill
+      amount: 10
+  - type: Sprite
+    sprite: _Stalker/Objects/Medicine/pillboxes/antirad.rsi
+    state: icon
+  - type: Item
+    sprite: _Stalker/Objects/Medicine/pillboxes/antirad.rsi
+
+- type: entity
+  name: probudophiline pill pack
+  description: Pack of wakeupophilin pills, each pill weighs 10 grams. Helps restore circulation and breathing. Take up to 20 grams at a time!
+  parent: Z14STpillboxbase
+  id: Z14STPillboxProbud
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: StorageFill
+    contents:
+    - id: Z14wakeuppill
+      amount: 10
+  - type: Sprite
+    sprite: _Stalker/Objects/Medicine/pillboxes/probud.rsi
+    state: icon
+  - type: Item
+    sprite: _Stalker/Objects/Medicine/pillboxes/probud.rsi
+
+- type: entity
+  name: fuflomycin pill pack
+  description: Pack of fuflomycin pills, each pill weighs 10 grams. Helps convince yourself of psi-wave immunity. Take up to 10 grams at a time!
+  parent: Z14STpillboxbase
+  id: Z14STPillboxShiza
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: StorageFill
+    contents:
+    - id: Z14shizopill
+      amount: 10
+  - type: Sprite
+    sprite: _Stalker/Objects/Medicine/pillboxes/shizabox.rsi # Stalker-TODO: Need an inhand sprite for this item
+  - type: Item
+    sprite: _Stalker/Objects/Medicine/pillboxes/shizabox.rsi

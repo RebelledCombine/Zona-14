@@ -1,0 +1,11 @@
+- type: entity
+  parent: Z14BaseClothingTorso
+  id: Z14ClothingTorsoJaba
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: jaba torso clothing
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/Torso/jaba.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/Torso/jaba.rsi

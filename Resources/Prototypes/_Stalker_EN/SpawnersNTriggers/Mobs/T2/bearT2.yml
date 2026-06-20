@@ -1,5 +1,6 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
-  name: mature bear trigger (1-2) (10%) 10м
+  name: mature bear trigger (1-2) (10%) 10m
   id: STTriggerBearT2121010
   parent: STBaseTrigger121010
   suffix: ST, T2, Trigger
@@ -11,7 +12,7 @@
     - STMobMutantBearT2
 
 - type: entity
-  name: mature bear trigger (1-2) (10%) 30м
+  name: mature bear trigger (1-2) (10%) 30m
   id: STTriggerBearT2121030
   parent: STBaseTrigger121030
   suffix: ST, T2, Trigger
@@ -23,7 +24,7 @@
     - STMobMutantBearT2
 
 - type: entity
-  name: mature bear trigger (1-2) (25%) 10м
+  name: mature bear trigger (1-2) (25%) 10m
   id: STTriggerBearT2122510
   parent: STBaseTrigger122510
   suffix: ST, T2, Trigger
@@ -35,7 +36,7 @@
     - STMobMutantBearT2
 
 - type: entity
-  name: mature bear trigger (1-2) (25%) 30м
+  name: mature bear trigger (1-2) (25%) 30m
   id: STTriggerBearT2122530
   parent: STBaseTrigger122530
   suffix: ST, T2, Trigger
@@ -47,7 +48,7 @@
     - STMobMutantBearT2
 
 - type: entity
-  name: mature bear trigger (1-2) (50%) 10м
+  name: mature bear trigger (1-2) (50%) 10m
   id: STTriggerBearT2125010
   parent: STBaseTrigger125010
   suffix: ST, T2, Trigger
@@ -59,7 +60,7 @@
     - STMobMutantBearT2
 
 - type: entity
-  name: mature bear trigger (1-2) (50%) 30м
+  name: mature bear trigger (1-2) (50%) 30m
   id: STTriggerBearT2125030
   parent: STBaseTrigger125030
   suffix: ST, T2, Trigger
@@ -71,7 +72,7 @@
     - STMobMutantBearT2
 
 - type: entity
-  name: mature bear trigger (1-2) (75%) 10м
+  name: mature bear trigger (1-2) (75%) 10m
   id: STTriggerBearT2127510
   parent: STBaseTrigger127510
   suffix: ST, T2, Trigger
@@ -83,7 +84,7 @@
     - STMobMutantBearT2
 
 - type: entity
-  name: mature bear trigger (1-2) (75%) 30м
+  name: mature bear trigger (1-2) (75%) 30m
   id: STTriggerBearT2127530
   parent: STBaseTrigger127530
   suffix: ST, T2, Trigger
@@ -95,7 +96,7 @@
     - STMobMutantBearT2
 
 - type: entity
-  name: mature bear trigger (1-2) (100%) 10м
+  name: mature bear trigger (1-2) (100%) 10m
   id: STTriggerBearT21210010
   parent: STBaseTrigger1210010
   suffix: ST, T2, Trigger

@@ -6,11 +6,11 @@
 [RegisterComponent]
 public sealed partial class StalkerPortalPersonalComponent : Component
 {
-    //Портал из которого игрок пришел в сталкер арену
+    //Portal from which the player entered the stalker arena // Zona14: translated comment
     [ViewVariables]
     public string ReturnPortal = string.Empty;
 
-    //Ентити айди портала из которого игрок пришел в сталкер арену, необоходимо для возвращения обратно
+    //Entity ID of the portal from which the player entered the stalker arena, needed for returning back // Zona14: translated comment
     [ViewVariables]
     public EntityUid ReturnPortalEntity;
 }

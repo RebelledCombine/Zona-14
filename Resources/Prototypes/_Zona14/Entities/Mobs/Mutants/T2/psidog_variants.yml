@@ -1,0 +1,40 @@
+- type: entity
+  parent: Z14MutantPsidog
+  id: Z14STMobMutantPsidogCommon
+  categories: [ Zona14 ]
+  name: Psi-Dog
+  suffix: Z14
+  components:
+  - type: STMobVariant
+    quality: Common
+    applied: true
+
+- type: entity
+  parent: Z14MutantPsidog
+  id: Z14STMobMutantPsidogUncommon
+  categories: [ Zona14 ]
+  name: Adapted Psi-Dog
+  suffix: Z14
+  components:
+  - type: STMobVariant
+    quality: Uncommon
+
+- type: entity
+  parent: Z14MutantPsidog
+  id: Z14STMobMutantPsidogRare
+  categories: [ Zona14 ]
+  name: Mutated Psi-Dog
+  suffix: Z14
+  components:
+  - type: STMobVariant
+    quality: Rare
+
+- type: entity
+  parent: Z14MutantPsidog
+  id: Z14STMobMutantPsidogLegendary
+  categories: [ Zona14 ]
+  name: Singular Psi-Dog
+  suffix: Z14
+  components:
+  - type: STMobVariant
+    quality: Legendary

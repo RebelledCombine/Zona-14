@@ -1,0 +1,69 @@
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14ClothingOuterArmorPSZ9DBlueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: PSZ-9d Recipe
+  components:
+    - type: STBlueprint
+      blueprint: newrecipeClothingOuterArmorPSZ9D
+
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14ClothingOuterArmorAborigineStalkerBlueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Native Armorsuit Recipe
+  components:
+    - type: STBlueprint
+      blueprint: newrecipeClothingOuterArmorAborigineStalker
+
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14STClothingOuterArmorLightPlateVestBasePSZ7Blueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: PSZ-7 Recipe
+  components:
+    - type: STBlueprint
+      blueprint: newrecipeSTClothingOuterArmorLightPlateVestBasePSZ7
+
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14ClothingOuterArmorSevaStalkerBlueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: SEVA suit recipe
+  components:
+    - type: STBlueprint
+      blueprint: newrecipeClothingOuterArmorSevaStalker
+
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14STClothingOuterArmorLightPlateVestBaseANAgrayBlueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: “Steppe‑4” body armor recipe
+  components:
+    - type: STBlueprint
+      blueprint: newrecipeSTClothingOuterArmorLightPlateVestBaseANAgray
+
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14ClothingOuterArmorStalkerBlueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: “Badger” body armor recipe
+  components:
+    - type: STBlueprint
+      blueprint: newrecipeClothingOuterArmorStalker
+
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14STClothingOuterArmorSeraphimStrashBlueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: “Guardian” armored suit recipe
+  components:
+    - type: STBlueprint
+      blueprint: newrecipeSTClothingOuterArmorSeraphimStrash

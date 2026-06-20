@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: STBaseIngridient
   id: STCraftGlassT1
-  name: низкокачественное стекло T1
-  description: простое стекло низкого качества, используется для временных конструкций и окон в незначительных постройках. T1
-  suffix: Stalker, крафт, T1
+  name: T1 Low-Quality Glass
+  description: plain glass of poor quality, used for temporary structures and windows in minor buildings. T1
+  suffix: Stalker, craft, T1 # Zona14: Stalker, крафт, T1
   components:
     - type: PhysicalComposition
       materialComposition:
@@ -16,14 +17,14 @@
       count: 1
     - type: Craftable
     - type: RepositoryItem
-      categoryName: Крафты
+      categoryName: Crafting # Zona14: Крафты
 
 - type: entity
   parent: STBaseIngridient
   id: STCraftGlassT2
-  name: стекло Т2
-  description: улучшенное стекло среднего качества, используется для стандартных окон и декоративных элементов. T2
-  suffix: Stalker, крафт, T2
+  name: T2 Glass
+  description: improved glass of medium quality, used for standard windows and decorative elements. T2
+  suffix: Stalker, craft, T2 # Zona14: Stalker, крафт, T2
   components:
     - type: PhysicalComposition
       materialComposition:
@@ -36,14 +37,14 @@
       count: 1
     - type: Craftable
     - type: RepositoryItem
-      categoryName: Крафты
+      categoryName: Crafting # Zona14: Крафты
 
 - type: entity
   parent: STBaseIngridient
   id: STCraftQuartzCrystalT3
-  name: кварцевый кристалл T3
-  description: высококачественный кварцевый кристалл, используется для оптических приборов и высококлассных конструкций. T3
-  suffix: Stalker, крафт, T3
+  name: T3 Quartz Crystal
+  description: high-quality quartz crystal, used for optical instruments and high-end designs. T3
+  suffix: Stalker, craft, T3 # Zona14: Stalker, крафт, T3
   components:
     - type: PhysicalComposition
       materialComposition:
@@ -56,14 +57,14 @@
       count: 1
     - type: Craftable
     - type: RepositoryItem
-      categoryName: Крафты
+      categoryName: Crafting # Zona14: Крафты
 
 - type: entity
   parent: STBaseIngridient
   id: STCraftSapphireCrystalT4
-  name: сапфировый кристалл T4
-  description: сапфировый кристалл премиум-класса с высокой прозрачностью и прочностью, используется в архитектурных и научных проектах. T4
-  suffix: Stalker, крафт, T4
+  name: T4 Sapphire Crystal
+  description: premium sapphire crystal with high transparency and strength, used in architectural and scientific projects. T4
+  suffix: Stalker, craft, T4 # Zona14: Stalker, крафт, T4
   components:
     # - type: PhysicalComposition
       # materialComposition:
@@ -76,14 +77,14 @@
       count: 1
     - type: Craftable
     - type: RepositoryItem
-      categoryName: Крафты
+      categoryName: Crafting # Zona14: Крафты
 
 - type: entity
   parent: STBaseIngridient
   id: STCraftAluminumOxideT5
-  name: оксид алюминия T5
-  description: высокопрочный и устойчивый к повреждениям оксид алюминия, используется в военной технике и передовых технологиях. T5
-  suffix: Stalker, крафт, T5
+  name: T5 Aluminum
+  description: high-strength and damage-resistant aluminum oxide, used in military equipment and advanced technology. T5
+  suffix: Stalker, craft, T5 # Zona14: Stalker, крафт, T5
   components:
     # - type: PhysicalComposition
       # materialComposition:
@@ -96,4 +97,4 @@
       count: 1
     - type: Craftable
     - type: RepositoryItem
-      categoryName: Крафты
+      categoryName: Crafting # Zona14: Крафты

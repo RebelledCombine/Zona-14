@@ -1,7 +1,8 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: STBaseTrashCache
   id: STTrashStorageFillT2
-  name: мусор
+  name: junk
   abstract: true
   suffix: ST, Cache, T2
   components:

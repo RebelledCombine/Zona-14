@@ -77,7 +77,7 @@
   parent: Z14WeaponPistolStalkerAPS
   id: Z14WeaponPistolStalkerAPSHugo
   categories: [ Zona14 ]
-  name: APS "Hugo"
+  name: AFS Hugo
   description: A massive and reliable pistol with a sturdy metal frame — a trusted companion for experienced stalkers. A weapon of last resort, ready to step in when a peaceful resolution is no longer possible.
   suffix: Z14, Skin
   components:

@@ -1,0 +1,35 @@
+# Brown
+
+- type: entity
+  parent: Z14ArmorBaseT1PvP
+  id: Z14ClothingOuterArmourCoatBanditBrown
+  categories: [ Zona14 ]
+  name: Bandit Chainmail Leather Cloak
+  description: A standard brown leather cloak with chainmail sewn into the lining. Rather uncomfortable in the Zone, yet often used by bandits — possibly just for the look.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/coat_bandit_brown.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/coat_bandit_brown.rsi
+  - type: ToggleableClothing
+    clothingPrototype: Z14ClothingHeadHatHoodCoatBanditBrown
+    slot: head
+
+# Black
+
+- type: entity
+  parent: Z14ArmorBaseT1PvP
+  id: Z14ClothingOuterArmourCoatBanditBlack
+  categories: [ Zona14 ]
+  name: Bandit Chainmail Leather Cloak
+  description: A standard black leather cloak with chainmail sewn into the lining. Rather uncomfortable in the Zone, yet often used by bandits — possibly just for the look.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/coat_bandit_black.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/coat_bandit_black.rsi
+  - type: ToggleableClothing
+    clothingPrototype: Z14ClothingHeadHatHoodCoatBanditBlack
+    slot: head

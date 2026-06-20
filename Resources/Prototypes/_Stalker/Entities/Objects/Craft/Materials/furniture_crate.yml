@@ -3,7 +3,7 @@
   id: STCraftFurniture
   name: furniture assembly kit
   description: Furniture can be assembled anywhere.
-  suffix: Stalker, крафт
+  suffix: Stalker, craft # Zona14: Stalker, крафт
   components:
     - type: Sprite
       state: kb2
@@ -13,7 +13,7 @@
       count: 1
     - type: Craftable
     - type: RepositoryItem
-      categoryName: Крафты
+      categoryName: Crafting # Zona14: Крафты
     - type: Tag
       tags:
       - FurnitureStalker

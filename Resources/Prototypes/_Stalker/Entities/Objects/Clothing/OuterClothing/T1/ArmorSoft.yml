@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: STClothingOuterArmorStorageBasic
   id: STClothingOuterSoftPlate
-  name: Мягкий бронежилет
-  description: Мягкий бронежилет
+  name: Soft Body Armor
+  description: Type I soft body armor providing basic protection.
   suffix: ST, T1, PVP
   components:
   - type: Sprite

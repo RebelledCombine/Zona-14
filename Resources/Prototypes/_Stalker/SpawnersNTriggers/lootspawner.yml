@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: RandomLootBox1
-  name: рандомный спавн лута
+  name: Random loot spawn
   categories: [ HideSpawnMenu ]
-  suffix: Stalker, НЕ МАППИТЬ
+  suffix: Stalker, DO NOT MAP # Zona14: Stalker, НЕ МАППИТЬ
   parent: FlexibleMarker
   components:
   - type: Sprite

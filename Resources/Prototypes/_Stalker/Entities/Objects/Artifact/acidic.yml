@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: BaseArtifact
-  name: Плёнка
+  name: Film
   id: ZoneArtifactPellicle
-  suffix: Stalker, Плёнка
+  suffix: Stalker, Film # Zona14: Stalker, Плёнка
   components:
   - type: Sprite
     state: pellicle
@@ -41,9 +42,9 @@
 
 - type: entity
   parent: BaseArtifact
-  name: Кровь Камня
+  name: Stone Blood
   id: ZoneArtifactBlood
-  suffix: Stalker, Кровь камня
+  suffix: Stalker, Blood stone # Zona14: Stalker, Кровь камня
   components:
   - type: Sprite
     state: blood
@@ -90,9 +91,9 @@
 
 - type: entity
   parent: BaseArtifact
-  name: Ломоть мяса
+  name: Meat slice
   id: ZoneArtifactMeat
-  suffix: Stalker, Ломоть мяса
+  suffix: Stalker, Chunk meat # Zona14: Stalker, Ломоть мяса
   components:
   - type: Sprite
     state: meat
@@ -138,9 +139,9 @@
 
 - type: entity
   parent: BaseArtifact
-  name: Слизь
+  name: Slime
   id: ZoneArtifactToxic
-  suffix: Stalker, Слизь
+  suffix: Stalker, Slime # Zona14: Stalker, Слизь
   components:
   - type: Sprite
     state: toxic
@@ -177,9 +178,9 @@
 
 - type: entity
   parent: BaseArtifact
-  name: Цитоплазма
+  name: Cytoplasm
   id: ZoneArtifactCytoplasm
-  suffix: Stalker, Цитоплазма
+  suffix: Stalker, Cytoplasm # Zona14: Stalker, Цитоплазма
   components:
   - type: Sprite
     state: cytoplasm
@@ -220,9 +221,9 @@
 
 - type: entity
   parent: BaseArtifact
-  name: Колобок
+  name: Kolobok
   id: ZoneArtifactKolobok
-  suffix: Stalker, Колобок
+  suffix: Stalker, Kolobok # Zona14: Stalker, Колобок
   components:
   - type: Sprite
     state: kolobok
@@ -270,7 +271,7 @@
 - type: entity
   parent: BaseArtifact
   id: ZoneArtifactBaloon
-  suffix: Stalker, Пузырь
+  suffix: Stalker, Bubble # Zona14: Stalker, Пузырь
   components:
   - type: Sprite
     state: buble

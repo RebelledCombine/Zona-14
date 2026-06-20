@@ -1,5 +1,5 @@
 - type: entity
-  name: AN-94 "Abakan"
+  name: 'AN-94 "Abakan"'
   parent: Z14STWeaponRifleAK74M
   id: Z14STWeaponRifleStalkerAbakan
   suffix: Z14

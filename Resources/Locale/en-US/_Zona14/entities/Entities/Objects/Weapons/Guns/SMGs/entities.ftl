@@ -1,0 +1,10 @@
+ent-Z14STBaseWeaponSMGFNP90 = Chamber
+ent-Z14STBaseWeaponSMGMP40 = Chamber
+ent-Z14STBaseWeaponSMGMP5 = Chamber
+ent-Z14STBaseWeaponSMGPP19 = Chamber
+ent-Z14STBaseWeaponSMGPP1901 = Chamber
+ent-Z14STBaseWeaponSMGPP2000 = Chamber
+ent-Z14STBaseWeaponSMGPP91 = Chamber
+ent-Z14STBaseWeaponSMGPPSh41 = Chamber
+ent-Z14STBaseWeaponSMGThompson = Chamber
+ent-Z14STBaseWeaponSMGViper = Chamber

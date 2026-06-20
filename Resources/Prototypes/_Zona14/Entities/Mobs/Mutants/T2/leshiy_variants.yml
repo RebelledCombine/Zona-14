@@ -1,0 +1,40 @@
+- type: entity
+  parent: Z14MobMutantLeshiy
+  id: Z14STMobMutantLeshiyCommon
+  categories: [ Zona14 ]
+  name: Leshiy
+  suffix: Z14
+  components:
+  - type: STMobVariant
+    quality: Common
+    applied: true
+
+- type: entity
+  parent: Z14MobMutantLeshiy
+  id: Z14STMobMutantLeshiyUncommon
+  categories: [ Zona14 ]
+  name: Adapted Leshiy
+  suffix: Z14
+  components:
+  - type: STMobVariant
+    quality: Uncommon
+
+- type: entity
+  parent: Z14MobMutantLeshiy
+  id: Z14STMobMutantLeshiyRare
+  categories: [ Zona14 ]
+  name: Mutated Leshiy
+  suffix: Z14
+  components:
+  - type: STMobVariant
+    quality: Rare
+
+- type: entity
+  parent: Z14MobMutantLeshiy
+  id: Z14STMobMutantLeshiyLegendary
+  categories: [ Zona14 ]
+  name: Singular Leshiy
+  suffix: Z14
+  components:
+  - type: STMobVariant
+    quality: Legendary

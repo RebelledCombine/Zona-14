@@ -73,7 +73,7 @@ public sealed class StoreSystemStructuredLoader : EntitySystem
     {
         if (comp.BuyPresets.Count == 0 && comp.SellPresets.Count == 0)
         {
-            Sawmill.Warning($"[NcStore] {ToPrettyString(uid)}: нет ни одного пресета (reason={reason})");
+            Sawmill.Warning($"[NcStore] {ToPrettyString(uid)}: no presets found (reason={reason})"); // Zona14: translated from Russian
             return;
         }
 
@@ -94,12 +94,12 @@ public sealed class StoreSystemStructuredLoader : EntitySystem
 
         if (total == 0)
         {
-            Sawmill.Warning($"[NcStore] {ToPrettyString(uid)}: ни одного лота не загружено (reason={reason})");
+            Sawmill.Warning($"[NcStore] {ToPrettyString(uid)}: no listings loaded (reason={reason})"); // Zona14: translated from Russian
             return;
         }
 
         Sawmill.Info(
-            $"[NcStore] {ToPrettyString(uid)}: загружено {total} лотов. " +
+            $"[NcStore] {ToPrettyString(uid)}: loaded {total} listings. " + // Zona14: translated from Russian
             $"BuyPresets=[{string.Join(", ", comp.BuyPresets)}], " +
             $"SellPresets=[{string.Join(", ", comp.SellPresets)}], reason={reason}");
     }
@@ -108,7 +108,7 @@ public sealed class StoreSystemStructuredLoader : EntitySystem
     {
         if (!_prototypes.TryIndex<StorePresetStructuredPrototype>(presetId, out var preset))
         {
-            Sawmill.Error($"[NcStore] Пресет '{presetId}' не найден");
+            Sawmill.Error($"[NcStore] Preset '{presetId}' not found"); // Zona14: translated from Russian
             return 0;
         }
 
@@ -121,7 +121,7 @@ public sealed class StoreSystemStructuredLoader : EntitySystem
         {
             if (!_prototypes.TryIndex<StoreCategoryStructuredPrototype>(categoryId, out var categoryProto))
             {
-                Sawmill.Error($"[NcStore] Категория '{categoryId}' не найдена (preset='{presetId}')");
+                Sawmill.Error($"[NcStore] Category '{categoryId}' not found (preset='{presetId}')"); // Zona14: translated from Russian
                 continue;
             }
 

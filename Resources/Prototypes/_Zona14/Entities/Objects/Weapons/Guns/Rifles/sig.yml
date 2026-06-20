@@ -73,7 +73,7 @@
   id: Z14STWeaponRifleSIG550
   suffix: Z14
   categories: [ Zona14 ]
-  name: SIG SG 550
+  name: SIG-550
   description: A representative of a relatively new family of assault rifles. Due to its high reliability, accuracy in combat and ease of use, it is one of the best examples of weapons of this class. It is rarely encountered in the Zone and costs a lot of money. Usually, it is specially ordered for themselves by experienced stalkers.
 
 - type: entity

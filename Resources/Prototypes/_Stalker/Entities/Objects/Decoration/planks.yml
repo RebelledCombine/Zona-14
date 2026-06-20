@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: PlanksStalker
   parent: BaseStructureDynamic
-  name: доски
+  name: boards
   suffix: ST, Mapping
-  description: Используются в строительстве домов, в мебельной промышленности, производстве тары и др.
+  description: Used in the construction of houses, in the furniture industry, in the production of containers, etc.
   placement:
     mode: PlaceFree
   components:

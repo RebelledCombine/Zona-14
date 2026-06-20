@@ -1,0 +1,302 @@
+- type: entity
+  parent: [DrinkVisualsAllFilled, DrinkBottleGlassBaseFull]
+  id: Z14DrinkCossackVodkaBottleFull
+  categories: [ Zona14 ]
+  name: cossacks vodka bottle
+  description: Vodka popular in the zone, it takes the edge and some of the radiation off.
+  suffix: Z14
+  components:
+  - type: Trash
+    time: 300
+  - type: STWeight
+    self: 0.8
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        reagents:
+        - ReagentId: CossackVodka
+          Quantity: 100
+  - type: Label
+    currentLabel: reagent-name-vodka
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Consumable/Drinks/cossackvodka.rsi
+  - type: Item
+    sprite: _Stalker_EN/Objects/Consumable/Drinks/cossackvodka.rsi
+  - type: Sealable
+
+- type: entity
+  parent: [DrinkBottleGlassBaseFull, DrinkVisualsAllFilled]
+  id: Z14STDrinkYevishWineBottleFull
+  categories: [ Zona14 ]
+  name: chef's wine
+  description: The label is a bit sloppy and clearly hand-printed, but the wine itself is excellent, clearly made by someone dedicated to creating a drink worth attention.
+  suffix: Z14
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        reagents:
+        - ReagentId: Wine
+          Quantity: 90
+  - type: Label
+    currentLabel: reagent-name-wine
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Consumable/Drinks/yevish_wine.rsi
+    layers:
+    - state: icon_empty
+      map: [ "enum.OpenableVisuals.Layer" ]
+    - state: fill-5
+      map: [ "enum.SolutionContainerLayers.Fill" ]
+  - type: SolutionContainerVisuals
+    maxFillLevels: 5
+    inHandsFillBaseName: null
+  - type: FitsInDispenser
+    solution: drink
+  - type: Tag
+    tags:
+    - Wine
+    - DrinkBottle
+
+- type: entity
+  parent: [ DrinkBaseMaterialGlass, DrinkBase, DrinkBaseOpenable, DrinkVisualsOpenable, DrinkVisualsFillOverlay ]
+  id: Z14STDrinkJar
+  categories: [ Zona14 ]
+  name: jar
+  description: An old jar.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Consumable/Drinks/jar.rsi
+    scale: 0.7,0.7
+    layers:
+    - state: icon
+      map: [ "enum.SolutionContainerLayers.Base" ]
+    - state: fill-1
+      map: [ "enum.SolutionContainerLayers.Fill" ]
+      visible: false
+    - state: icon-front
+      map: [ "enum.SolutionContainerLayers.Overlay" ]
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 50
+  - type: SolutionContainerVisuals
+    maxFillLevels: 5
+    fillBaseName: fill-
+    inHandsMaxFillLevels: 3
+    inHandsFillBaseName: -fill-
+  - type: ExaminableSolution
+    examinableWhileClosed: true
+    heldOnly: false
+  - type: Openable
+    sound:
+      collection: bottleOpenSounds
+    closeable: true
+    closeSound:
+      collection: bottleCloseSounds
+  - type: Tag
+    tags:
+    - DrinkBottle
+  - type: Craftable
+
+# various filled jars
+- type: entity
+  parent: Z14STDrinkJar
+  id: Z14STDrinkJarMoonshine
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 50
+        reagents:
+        - ReagentId: Moonshine
+          Quantity: 50
+
+- type: entity
+  parent: Z14STDrinkJar
+  id: Z14STDrinkJarDirtyWater
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 50
+        reagents:
+        - ReagentId: STToxicWater
+          Quantity: 20
+
+- type: entity
+  parent: Z14STDrinkJar
+  id: Z14STDrinkJarPiss
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 50
+        reagents:
+        - ReagentId: STPiss
+          Quantity: 20
+
+- type: entity
+  parent: Z14STDrinkJar
+  id: Z14STDrinkJarMold
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 50
+        reagents:
+        - ReagentId: Mold
+          Quantity: 6
+
+- type: entity
+  parent: Z14STDrinkJar
+  id: Z14STDrinkJarBlood
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 50
+        reagents:
+        - ReagentId: Blood
+          Quantity: 50
+
+- type: entity
+  parent: Z14STDrinkJar
+  id: Z14STDrinkJarSap
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 50
+        reagents:
+        - ReagentId: Sap
+          Quantity: 20
+
+- type: entity
+  parent: Z14STDrinkJar
+  id: Z14STDrinkJarJuicePotato
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 50
+        reagents:
+        - ReagentId: JuicePotato
+          Quantity: 30
+
+- type: entity
+  parent: Z14STDrinkJar
+  id: Z14STDrinkJarMilkSpoiled
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 50
+        reagents:
+        - ReagentId: MilkSpoiled
+          Quantity: 25
+
+# and lightcraft recipes to clean them
+- type: lightCraftingRecipe
+  id: Z14CleanJarPiss
+  results:
+  - Z14STDrinkJar
+  steps:
+    firstIngredient: STRag
+    secondIngredient: Z14STDrinkJarPiss
+    keepFirst: true
+    exactFirst: false
+    time: 3
+
+- type: lightCraftingRecipe
+  id: Z14CleanJarBlood
+  results:
+  - Z14STDrinkJar
+  steps:
+    firstIngredient: STRag
+    secondIngredient: Z14STDrinkJarBlood
+    keepFirst: true
+    exactFirst: false
+    time: 3
+
+- type: lightCraftingRecipe
+  id: Z14CleanJarMoonshine
+  results:
+  - Z14STDrinkJar
+  steps:
+    firstIngredient: STRag
+    secondIngredient: Z14STDrinkJarMoonshine
+    keepFirst: true
+    exactFirst: false
+    time: 3
+
+- type: lightCraftingRecipe
+  id: Z14CleanJarMilkSpoiled
+  results:
+  - Z14STDrinkJar
+  steps:
+    firstIngredient: STRag
+    secondIngredient: Z14STDrinkJarMilkSpoiled
+    keepFirst: true
+    exactFirst: false
+    time: 3
+
+- type: lightCraftingRecipe
+  id: Z14CleanJarJuicePotato
+  results:
+  - Z14STDrinkJar
+  steps:
+    firstIngredient: STRag
+    secondIngredient: Z14STDrinkJarJuicePotato
+    keepFirst: true
+    exactFirst: false
+    time: 3
+
+- type: lightCraftingRecipe
+  id: Z14CleanJarSap
+  results:
+  - Z14STDrinkJar
+  steps:
+    firstIngredient: STRag
+    secondIngredient: Z14STDrinkJarSap
+    keepFirst: true
+    exactFirst: false
+    time: 3
+
+- type: lightCraftingRecipe
+  id: Z14CleanJarMold
+  results:
+  - Z14STDrinkJar
+  steps:
+    firstIngredient: STRag
+    secondIngredient: Z14STDrinkJarMold
+    keepFirst: true
+    exactFirst: false
+    time: 3
+
+- type: lightCraftingRecipe
+  id: Z14CleanJarDirtWater
+  results:
+  - Z14STDrinkJar
+  steps:
+    firstIngredient: STRag
+    secondIngredient: Z14STDrinkJarDirtyWater
+    keepFirst: true
+    exactFirst: false
+    time: 3

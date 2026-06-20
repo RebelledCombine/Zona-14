@@ -1,0 +1,119 @@
+- type: entity
+  name: blind dog trigger (1-4) (20%)
+  id: Z14STTriggerBlindDog142010
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger142010
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+        - Z14MobMutantBlindDogRed
+        - Z14MobMutantBlindDogTall
+        - Z14MobMutantBlindDogSmall
+      restricted:
+        - Z14MobMutantBlindDogRed
+        - Z14MobMutantBlindDogTall
+        - Z14MobMutantBlindDogSmall
+
+- type: entity
+  name: blind dog trigger (1-4) (50%)
+  id: Z14STTriggerBlindDog145010
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger145010
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+        - Z14MobMutantBlindDogRed
+        - Z14MobMutantBlindDogTall
+        - Z14MobMutantBlindDogSmall
+      restricted:
+        - Z14MobMutantBlindDogRed
+        - Z14MobMutantBlindDogTall
+        - Z14MobMutantBlindDogSmall
+
+- type: entity
+  name: blind dog trigger (1-2) (10%)
+  id: Z14STTriggerBlindDog121010
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger121010
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+        - Z14MobMutantBlindDogRed
+        - Z14MobMutantBlindDogTall
+        - Z14MobMutantBlindDogSmall
+      restricted:
+        - Z14MobMutantBlindDogRed
+        - Z14MobMutantBlindDogTall
+        - Z14MobMutantBlindDogSmall
+
+- type: entity
+  name: blind dog trigger (1-2) (50%)
+  id: Z14STTriggerBlindDog125010
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger125010
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+        - Z14MobMutantBlindDogRed
+        - Z14MobMutantBlindDogTall
+        - Z14MobMutantBlindDogSmall
+      restricted:
+        - Z14MobMutantBlindDogRed
+        - Z14MobMutantBlindDogTall
+        - Z14MobMutantBlindDogSmall
+
+
+- type: entity
+  name: blind dog trigger (1) (100%) 30m
+  id: Z14STTriggerBlindDog1110030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger1110030
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+      - Z14MobMutantBlindDogRed
+      - Z14MobMutantBlindDogTall
+      - Z14MobMutantBlindDogSmall
+      restricted:
+      - Z14MobMutantBlindDogRed
+      - Z14MobMutantBlindDogTall
+      - Z14MobMutantBlindDogSmall
+
+- type: entity
+  name: blind dog trigger (2) (100%) 30m
+  id: Z14STTriggerBlindDog2210030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger2210030
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+      - Z14MobMutantBlindDogRed
+      - Z14MobMutantBlindDogTall
+      - Z14MobMutantBlindDogSmall
+      restricted:
+      - Z14MobMutantBlindDogRed
+      - Z14MobMutantBlindDogTall
+      - Z14MobMutantBlindDogSmall
+
+- type: entity
+  name: blind dog trigger (3) (100%) 30m
+  id: Z14STTriggerBlindDog3310030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger3310030
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+      - Z14MobMutantBlindDogRed
+      - Z14MobMutantBlindDogTall
+      - Z14MobMutantBlindDogSmall
+      restricted:
+      - Z14MobMutantBlindDogRed
+      - Z14MobMutantBlindDogTall
+      - Z14MobMutantBlindDogSmall

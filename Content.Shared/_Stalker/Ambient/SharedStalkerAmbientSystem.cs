@@ -6,7 +6,7 @@ using Robust.Shared.Random;
 using Robust.Shared.Timing;
 
 namespace Content.Shared._Stalker.Ambient;
-//TODO: Сделать проверку на повторение звука ибо неприятно ушкам.
+//TODO: Add check for sound repetition to avoid unpleasant audio. // Zona14: translated comment
 public sealed class SharedStalkerAmbientSystem : EntitySystem
 {
     [Dependency] private readonly IRobustRandom _random = default!;

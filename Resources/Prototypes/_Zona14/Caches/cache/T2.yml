@@ -60,37 +60,37 @@
           prob: 0.05
         - id: STZoneArtifactDetectorResponseBlueprint
           prob: 0.05
-        - id: STBrutepack
+        - id: Z14STBrutepack
           prob: 0.25
-        - id: STBrutepack
+        - id: Z14STBrutepack
           prob: 0.25
-        - id: STBrutepack
+        - id: Z14STBrutepack
           prob: 0.25
-        - id: STGauze
+        - id: Z14STGauze
           prob: 0.25
-        - id: STGauze
+        - id: Z14STGauze
           prob: 0.25
-        - id: STGauze
+        - id: Z14STGauze
           prob: 0.25
-        - id: STOintment
+        - id: Z14STOintment
           prob: 0.25
-        - id: STOintment
+        - id: Z14STOintment
           prob: 0.25
-        - id: STOintment
+        - id: Z14STOintment
           prob: 0.25
         - id: Tourniquet
           prob: 0.06
-        - id: antiradpill
+        - id: Z14antiradpill
           prob: 0.06
-        - id: MedkitAI2
+        - id: Z14MedkitAI2
           prob: 0.1
-        - id: MedkitMilitary
+        - id: Z14MedkitMilitary
           prob: 0.04
-        - id: MedkitScience
+        - id: Z14MedkitScience
           prob: 0.01
         - id: GeigerCounter
           prob: 0.03
-        - id: BaseRadio
+        - id: Z14BaseRadio
           prob: 0.03
         - id: HandheldGPSBasic
           prob: 0.03
@@ -98,7 +98,7 @@
           prob: 0.02
         - id: STFlashlightSeclite
           prob: 0.03
-        - id: STHeadLight
+        - id: Z14STHeadLight
           prob: 0.03
         - id: PowerCellHyper
           prob: 0.06
@@ -137,13 +137,13 @@
           prob: 0.05
         - id: STCookingBorscht
           prob: 0.05
-        - id: STDrinkJarDirtyWater
+        - id: Z14STDrinkJarDirtyWater
           prob: 0.08
-        - id: STDrinkJarBlood
+        - id: Z14STDrinkJarBlood
           prob: 0.01
-        - id: STDrinkJar
+        - id: Z14STDrinkJar
           prob: 0.03
-        - id: STDrinkJarMoonshine
+        - id: Z14STDrinkJarMoonshine
           prob: 0.01
         - id: STCookingPickledEggs
           prob: 0.02
@@ -162,7 +162,7 @@
       sprite: _Stalker/Objects/Other/Boxes/black_crate.rsi
       state: icon
     - type: SpawnOnDespawn
-      prototype: STCache1T2
+      prototype: Z14STCache1T2
 
 - type: entity
   parent: [ STCacheStorageFillT2, STBaseCache]
@@ -174,7 +174,7 @@
       sprite: _Stalker/Objects/Other/Boxes/blue_crate.rsi
       state: icon
     - type: SpawnOnDespawn
-      prototype: STCache2T2
+      prototype: Z14STCache2T2
 
 - type: entity
   parent: [ STCacheStorageFillT2, STBaseCache]
@@ -186,4 +186,4 @@
       sprite: _Stalker/Objects/Other/Boxes/green_crate.rsi
       state: icon
     - type: SpawnOnDespawn
-      prototype: STCache3T2
+      prototype: Z14STCache3T2

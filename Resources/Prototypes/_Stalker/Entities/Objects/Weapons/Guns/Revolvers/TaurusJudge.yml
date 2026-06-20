@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 
 - type: entity
   parent: STBaseWeaponGameRevolver
   id: STWeaponRevolverTaurusJudge
   name: Taurus Judge .45 ACP
-  description: Пятизарядный револьвер, самый дешёвый и худший револьвер имеющий плохую калибровку под .45 ACP калибр.
+  description: Five-shot revolver, the cheapest and worst revolver with poor calibration for .45 ACP caliber.
   components:
     - type: Sprite
       sprite: _Stalker/Objects/Weapons/Guns/Revolvers/taurus_judge.rsi
@@ -43,7 +44,7 @@
     - type: UseDelay
       delay: 1
     - type: RepositoryItem
-      categoryName: Оружие
+      categoryName: Weapons # Zona14: Оружие
     - type: STWeaponDamageFalloff
       falloffMultiplier: 0.8
     - type: STWeaponAccuracy

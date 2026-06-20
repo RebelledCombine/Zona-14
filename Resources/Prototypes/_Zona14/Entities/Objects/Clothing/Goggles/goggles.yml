@@ -1,0 +1,38 @@
+- type: entity
+  parent: ClothingEyesBase
+  id: Z14ClothingGogglesBase
+  categories: [ Zona14 ]
+  abstract: true
+  components:
+  - type: Clothing
+    slots:
+    - EYES
+    - HEAD
+
+- type: entity
+  parent: Z14ClothingGogglesBase
+  id: Z14ClothingEyesGogglesAnomalist
+  categories: [ Zona14 ]
+  name: anomalist goggles
+  description: Black stylish animalist goggles that protect him from flashes and add charm.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/Goggles/golden_anomalist.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/Goggles/golden_anomalist.rsi
+  - type: EyeProtection
+
+- type: entity
+  parent: ClothingEyesBase
+  id: Z14ClothingEyesGogglesBerill
+  categories: [ Zona14 ]
+  name: "'Beryl-5M' glasses"
+  description: Mask-type goggles from the Berill-5M special forces kit.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/Goggles/berill_goggles.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/Goggles/berill_goggles.rsi
+  - type: EyeProtection

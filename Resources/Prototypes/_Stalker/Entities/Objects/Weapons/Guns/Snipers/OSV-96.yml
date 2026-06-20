@@ -1,3 +1,4 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   abstract: true
   parent: STBaseWeaponSniper
@@ -62,8 +63,8 @@
 
 - type: entity
   parent: STBaseWeaponRifleOSV96
-  suffix: ST, Кастомка
+  suffix: ST, Custom # Zona14: ST, Кастомка
   id: STWeaponSniperOSV96
-  name: OSV-96 Взломщик
-  description: российская самозарядная крупнокалиберная снайперская винтовка под калибр 12,7x108мм. Разработана в Туле специалистами КБ приборостроения.
+  name: OSV-96 Vzlomshchik
+  description: A Russian semi-automatic large-caliber sniper rifle chambered in 12.7x108mm. Developed in Tula by specialists of the KBP Instrument Design Bureau.
 

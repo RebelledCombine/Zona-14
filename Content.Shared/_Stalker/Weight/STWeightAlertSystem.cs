@@ -29,13 +29,13 @@ public sealed class STWeightAlertSystem : EntitySystem
     {
         if (total >= 100f)
         {
-            _alerts.ShowAlert(uid, WeightAlert, 2); // красный
+            _alerts.ShowAlert(uid, WeightAlert, 2); // red // Zona14: translated comment
             return;
         }
 
         if (total >= 50f)
         {
-            _alerts.ShowAlert(uid, WeightAlert, 1); // желтый
+            _alerts.ShowAlert(uid, WeightAlert, 1); // yellow // Zona14: translated comment
             return;
         }
 

@@ -1,10 +1,11 @@
-# Кастомка серафимов, возможно в будущем станет общедоступной
+# Zona14: translated Russian names/descriptions to English
+# Zona14: Кастомка серафимов, возможно в будущем станет общедоступной
 - type: entity
-  name: СР-2 «Вереск»
-  suffix: ST, Скин
+  name: SR-2 "Veresk"
+  suffix: ST, Skin # Zona14: ST, Скин
   parent: STBaseWeaponSMG
   id: STWeaponSMGStalkerCP2Veresk
-  description: Компактный пистолет-пулемет, разработанный под мощный бронебойный патрон 9x21мм по заказу ФСБ и ФСО РФ. Этот пистолет-пулемёт является кустарной модификацией, позволяющей вести огонь калибром 9х19 Парабеллум.
+  description: A compact submachine gun developed for the powerful armor-piercing 9x21mm cartridge at the request of the FSB and FSO of Russia. This particular SMG is a homemade modification allowing it to fire 9x19mm Parabellum rounds.
   components:
     - type: STWeight
       self: 2.6
@@ -55,7 +56,7 @@
       accuracyMultiplier: 1.42
 
 - type: entity
-  name: СР-2 «Вереск» серафимов
+  name: SR-2 "Veresk" Seraphim
   parent: STWeaponSMGStalkerCP2Veresk
   id: STWeaponSMGStalkerCP2VereskSera
   components:
@@ -90,11 +91,11 @@
 # 9x21
 
 - type: entity
-  name: СР-2М «Вереск» 9х21
-  suffix: ST, Скин
+  name: SR-2M "Veresk" 9x21
+  suffix: ST, Skin # Zona14: ST, Скин
   parent: STBaseWeaponSMG
   id: STWeaponSMGStalkerCP2Veresk921
-  description: Компактный пистолет-пулемет, разработанный под мощный бронебойный патрон 9x21мм по заказу ФСБ и ФСО РФ. Теперь с оригинальным калибром!
+  description: A compact submachine gun designed for the powerful armor-piercing 9x21mm cartridge, ordered by the FSB and FSO of Russia. Now with the original caliber!
   components:
     - type: STWeight
       self: 2.2
@@ -135,7 +136,7 @@
               - STCartridge921PGJ
 
 - type: entity
-  name: СР-2М «Вереск» серафимов 9x21
+  name: SR-2M "Veresk" Seraphim 9x21
   parent: STWeaponSMGStalkerCP2Veresk921
   id: STWeaponSMGStalkerCP2VereskSera921
   components:

@@ -86,7 +86,7 @@
   parent: GrenadeBase
   id: Z14KhattabkaGrenade
   categories: [ Zona14 ]
-  name: Khattabka grenade
+  name: Khattabka Grenade
   description: Not the ultimate weapon, but extremely powerful.
   suffix: Z14, Grenade
   components:
@@ -114,7 +114,7 @@
           map: ["enum.TriggerVisualLayers.Base"]
 # MARK: Smoke & Signal Grenades
 - type: entity
-  name: signal flare
+  name: Signal Bomb
   description: Calls in mortar fire with smoke rounds.
   parent: GrenadeBase
   id: Z14SignalSmoke
@@ -171,7 +171,7 @@
   parent: GrenadeBase
   id: Z14MK3A2Grenade
   categories: [ Zona14 ]
-  name: MK3A2 grenade
+  name: MK3A2 Grenade
   description: A US concussion hand grenade. Designed to damage unarmored or lightly armored vehicles, small structures, and to incapacitate enemy combatants.
   suffix: Z14, Grenade
   components:
@@ -346,7 +346,7 @@
   parent: Clothing
   id: Z14STExplosionPack
   categories: [ Zona14 ]
-  name: Explosive pack
+  name: Explosive Package
   description: A backpack stuffed with explosives. Unfortunately, without a detonator — you'll need to find another way to set it off.
   suffix: Z14, Explosive
   components:
@@ -386,7 +386,7 @@
   parent: ClothingBeltTarzanBlack
   id: Z14STClothingBeltShahid
   categories: [ Zona14 ]
-  name: suicide belt
+  name: Shahid belt
   description: A belt and pouches densely packed with explosives.
   suffix: Z14, Explosive
   components:

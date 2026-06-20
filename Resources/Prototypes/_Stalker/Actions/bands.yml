@@ -1,7 +1,8 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: ActionChangeBand
-  name: сменить нашивку
-  description: Позволяет менять нашивку (значок или шеврон) на своем персонаже. Вы можете выбрать разные нашивки, чтобы подчеркнуть стиль или добиться желаемого внешнего вида своего героя.
+  name: change patch
+  description: Changes patch
   categories: [ HideSpawnMenu ]
   components:
     - type: Action

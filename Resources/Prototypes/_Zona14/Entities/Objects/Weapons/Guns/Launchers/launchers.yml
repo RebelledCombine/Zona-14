@@ -1,5 +1,5 @@
 - type: entity
-  name: BaseWeaponLauncher
+  name: Z14BaseWeaponLauncher
   parent: BaseItem
   id: Z14BaseWeaponLauncher
   suffix: Z14

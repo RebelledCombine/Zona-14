@@ -1,0 +1,57 @@
+- type: entity
+  parent: STBaseWeaponGameRevolver
+  id: Z14WeaponGameRevolverMateba
+  categories: [ Zona14 ]
+  name: Game Mateba
+  description: The iconic sidearm of the dreaded death squads. Uses .44 Remington Magnum ammo.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Revolvers/mateba.rsi
+  - type: Clothing
+    sprite: Objects/Weapons/Guns/Revolvers/mateba.rsi
+  - type: Gun
+    minAngle: 0
+    maxAngle: 15
+    fireRate: 4
+    angleIncrease: 5
+    angleDecay: 5
+    projectileSpeed: 55
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/mateba.ogg
+  - type: RevolverAmmoProvider
+    whitelist:
+      tags:
+      - CartridgeMagnum
+      - CartridgeRemingtonMagnum
+      - SpeedLoaderMagnum
+      - SpeedLoaderRemingtonMagnum
+    proto: CartridgeRemingtonMagnum
+  - type: STWeight
+    self: 1.57
+  - type: STWeaponDamageFalloff
+    falloffMultiplier: 0.8
+  - type: STWeaponAccuracy
+    accuracyMultiplier: 1.46
+
+# REDO-MODULES
+- type: entity
+  parent: WeaponGameRevolverMateba
+  id: Z14WeaponRevolverJoker
+  categories: [ Zona14 ]
+  name: Mateba Joker
+  description: A modified version of the "Mateba Autorevolver" revolver used by anomalists as a Joker in their sleeve. Uses .44 Remington Magnum ammunition.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Weapons/Guns/Revolvers/joker.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Weapons/Guns/Revolvers/joker.rsi
+  - type: Gun
+    fireRate: 3
+    selectedMode: FullAuto
+    availableModes:
+    - SemiAuto
+    - FullAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/mateba.ogg

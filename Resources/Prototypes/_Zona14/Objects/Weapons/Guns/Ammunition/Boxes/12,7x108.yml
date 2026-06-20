@@ -1,0 +1,64 @@
+- type: entity
+  parent: BaseAmmoBoxStalker
+  id: Z1413x108FMJBox
+  categories: [ Zona14 ]
+  name: pack of cartridges (12.7x108) FMJ
+  description: For the OSV-96 rifle, 10 rounds per pack. Provides penetration of armor class 4.
+  suffix: Z14
+  components:
+  - type: MagazineVisuals
+    magState: 76254ammo
+  - type: BallisticAmmoProvider
+    capacity: 10
+    proto: STCartridge13x108FMJ
+    whitelist:
+      tags:
+        - STCartridge13x108
+  - type: Sprite
+    layers:
+    - state: 13108
+      map: ["enum.GunVisualLayers.Base"]
+    - state: 76239ammo-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  parent: BaseAmmoBoxStalker
+  id: Z1413x108PCBox
+  categories: [ Zona14 ]
+  name: pack of cartridges (12.7x108) PS
+  description: For the OSV-96 rifle, 10 rounds per pack. Provides penetration of armor class 5.
+  suffix: Z14
+  components:
+    - type: MagazineVisuals
+      magState: 76254ammo
+    - type: BallisticAmmoProvider
+      capacity: 10
+      proto: STCartridge13x108PC
+      whitelist:
+        tags:
+          - STCartridge13x108
+    - type: Sprite
+      layers:
+        - state: 13108
+          map: ["enum.GunVisualLayers.Base"]
+        - state: 76239ammo-1
+          map: ["enum.GunVisualLayers.Mag"]
+        - state: t3
+
+- type: entity
+  parent: 13x108PCBox
+  id: Z1413x108HPBox
+  categories: [ Zona14 ]
+  name: pack of cartridges (12.7x108) HP BT
+  description: For the OSV-96 rifle, 10 rounds per pack. Useless against armor.
+  suffix: Z14
+  components:
+    - type: BallisticAmmoProvider
+      proto: STCartridge13x108HPBT
+    - type: Sprite
+      layers:
+        - state: 13108
+          map: ["enum.GunVisualLayers.Base"]
+        - state: 76239ammo-1
+          map: ["enum.GunVisualLayers.Mag"]
+        - state: exp

@@ -1,0 +1,63 @@
+- type: entity
+  parent: Z14ZoneAnomalyBase
+  id: Z14ZoneAnomalyBaseSpatial
+  categories: [ Zona14 ]
+  abstract: true
+
+- type: entity
+  parent: Z14ZoneAnomalyBaseSpatial
+  id: Z14ZoneAnomalyBarabashka
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: ZoneAnomalyTriggerStartCollide
+  - type: ZoneAnomalyEffectDestroy
+    whitelist:
+      tags:
+        - STBolt
+  - type: ZoneAnomalyEffectRemoveItem
+    count: 1
+  - type: ZoneAnomaly
+    detectedLevel: 4
+    preparingDelay: 0
+    activationDelay: 1
+    chargeTime: 4
+  - type: Sprite
+    sprite: _Stalker/Objects/Anomalies/barabashka.rsi
+    layers:
+      - state: idle
+        map: ["base"]
+  - type: GenericVisualizer
+    visuals:
+      enum.ZoneAnomalyVisuals.Layer:
+        base:
+          Activated: { state: active }
+          Idle: { state: idle }
+  - type: STAnomalyTips
+    icon:
+      sprite: /Textures/_Stalker/Interface/Overlays/anomaly_tips.rsi
+      state: unknown
+
+- type: entity
+  parent: Z14ZoneAnomalyBaseSpatial
+  id: Z14ZoneAnomalyPolymorph
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: ZoneAnomalyTriggerStartCollide
+  - type: ZoneAnomalyEffectDestroy
+    whitelist:
+      tags:
+        - STBolt
+  - type: ZoneAnomalyEffectPolymorph
+    polymorph:
+    - AnomalyMutantBoar
+  - type: ZoneAnomaly
+    detectedLevel: 4
+    preparingDelay: 0
+    activationDelay: 0
+    chargeTime: 5
+  - type: STAnomalyTips
+    icon:
+      sprite: /Textures/_Stalker/Interface/Overlays/anomaly_tips.rsi
+      state: unknown

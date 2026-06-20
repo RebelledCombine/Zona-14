@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
-  name: капкан
+  name: bear trap
   parent: BaseItem
   id: Beartrap
   suffix: Stalker
-  description: Полезная штука, чтоб ловить наглых животных. Очень полезная.
+  description: A useful thing to catch impudent animals. Very useful.
   components:
     - type: Sprite
       sprite: _Stalker/Objects/Tools/beartrap.rsi
@@ -64,12 +65,12 @@
     - type: Anchorable
 
 - type: entity
-  name: капкан
+  name: bear trap
   suffix: Stalker
   parent: Beartrap
   categories: [ HideSpawnMenu ]
   id: BeartrapArmed
-  description: Полезная штука, чтоб ловить наглых животных. Очень полезная.
+  description: "{ ent-Beartrap.desc }"
   components:
     - type: ItemToggle
       activated: true

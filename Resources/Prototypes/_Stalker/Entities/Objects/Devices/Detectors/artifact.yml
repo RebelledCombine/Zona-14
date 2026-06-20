@@ -1,3 +1,4 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: BaseItem
   id: ZoneArtifactBaseDetector
@@ -14,7 +15,7 @@
         map: ["base"]
         shader: unshaded
   - type: RepositoryItem
-    categoryName: Детекторы
+    categoryName: Detectors # Zona14: Детекторы
   - type: Appearance
   - type: GenericVisualizer
     visuals:
@@ -238,8 +239,8 @@
 - type: entity
   parent: ZoneArtifactBaseDetector
   id: ZoneArtifactDetectorResponseCvoboda
-  name: Детектор "Куст"
-  description: Детектор, способный обнаруживать артефакты первого типа, на небольшем дистанции
+  name: Freedom detector
+  description: A detector capable of detecting artifacts of the first type, at a short distance
   suffix: Stalker, Detector
   components:
   - type: STWeight
@@ -265,7 +266,7 @@
     sound: /Audio/_Stalker/Items/Detectors/Artefacts/art_beep1.ogg
   - type: ZoneArtifactDetectorAngleIndicator
 
-# Пиздец
+# Zona14: Пиздец
 - type: entity
   parent: ZoneArtifactBaseDetector
   id: ZoneArtifactDetectorDaDa

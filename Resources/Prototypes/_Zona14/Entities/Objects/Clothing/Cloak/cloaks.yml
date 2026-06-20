@@ -1,0 +1,323 @@
+- type: entity
+  parent: Z14STClothingCloakBase
+  id: Z14ClothingNeckCloakZavet
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Covenant Cloak
+  description: standard cloak used by the Covenant faction.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/cloak/zavet_plash.rsi
+  - type: StealTarget
+    stealGroup: HeadCloak
+
+- type: entity
+  parent: Z14STClothingCloakBase
+  id: Z14ClothingNeckCloakDolg
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Cloak of Duty
+  description: standard cloak used by the Duty faction.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/cloak/cape_dolg.rsi
+
+- type: entity
+  parent: Z14STClothingCloakBase
+  id: Z14ClothingCloakStalker
+  categories: [ Zona14 ]
+  name: Stalker's Cloak
+  description: Torn pieces of cloth from trash, give you experience and mystery.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/cloak/stalker.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/cloak/stalker.rsi
+
+- type: entity
+  parent: Z14STClothingCloakBase
+  id: Z14ClothingNeckAnomalistLurker
+  categories: [ Zona14 ]
+  name: Anomalist's Hidden Cloak
+  description: They won't shoot you if they can't find you.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/cloak/lurker_anomalist.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/cloak/lurker_anomalist.rsi
+
+- type: entity
+  parent: Z14STClothingCloakBase
+  id: Z14ClothingCloakShortCoverBlack
+  categories: [ Zona14 ]
+  name: Short Black Cover
+  description: Pieces of cloth that give you an air of experience and mystery.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/cloak/short_cover_black.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/cloak/short_cover_black.rsi
+
+- type: entity
+  parent: Z14STClothingCloakBase
+  id: Z14ClothingCloakBeige
+  categories: [ Zona14 ]
+  name: Beige Raincoat
+  description: Made from either mutant skin or human skin.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/cloak/beige.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/cloak/beige.rsi
+
+- type: entity
+  parent: Z14STClothingCloakBase
+  id: Z14ClothingCloakBlack
+  categories: [ Zona14 ]
+  name: Black Cloak
+  description: I'm Batman!
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/cloak/black.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/cloak/black.rsi
+
+- type: entity
+  parent: Z14STClothingCloakBase
+  id: Z14ClothingCloakBrown
+  categories: [ Zona14 ]
+  name: Brown Cloak
+  description: Worn by more experienced Stalkers, and buried in it too!
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/cloak/brown.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/cloak/blrown.rsi
+
+- type: entity
+  parent: Z14STClothingCloakBase
+  id: Z14ClothingCloakGreen
+  categories: [ Zona14 ]
+  name: Green Cloak
+  description: For fans of the "Swamp Doctor"
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/cloak/green.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/cloak/green.rsi
+
+- type: entity
+  parent: Z14STClothingCloakBase
+  id: Z14ClothingCloakNavy
+  categories: [ Zona14 ]
+  name: Navy Cloak
+  description: I didn't come up with a "funny" description for this cloak...
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/cloak/navy.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/cloak/navy.rsi
+
+- type: entity
+  parent: Z14STClothingCloakBase
+  id: Z14ClothingCloakFoma
+  categories: [ Zona14 ]
+  name: Black cloak
+  description: Black cloak
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/cloak/foma.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/cloak/foma.rsi
+- type: entity
+  parent: Z14STClothingCloakBase
+  id: Z14STClothingNeckExoskeletonSci
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Cargo-Type Exoskeleton
+  description: Developed by research institute scientists, this exoskeleton was designed for efficient heavy cargo transport without vehicles. No protection against anomalies, mutants, or bullets.
+  components:
+  - type: STWeight
+    self: 10
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/cloak/exoskelet_science.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/cloak/exoskelet_science.rsi
+  - type: STPoweredExoskeleton
+    overloadChange: 150
+    maximumChange: 200
+    toggleAction: ActionToggleExoskeleton
+  - type: PowerCellSlot
+    cellSlotId: cell_slot
+  - type: PowerCellDraw
+    drawRate: 0.4
+  - type: ContainerContainer
+    containers:
+      cell_slot: !type:ContainerSlot {}
+      storagebase: !type:Container
+        ents: []
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: Cargo-Type Exoskeleton
+        startingItem: PowerCellMedium
+  - type: Tag
+    tags: []
+
+- type: entity
+  parent: Z14STClothingCloakBase
+  id: Z14ClothingOuterCoatAugust
+  categories: [ Zona14 ]
+  name: August Raincoat
+  description: An unusual cloak made by Clear Sky technicians. Camouflage for Zone concealment. Lightened by removing the hood, with an insulation layer providing some chemical protection.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/cloak/august.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/cloak/august.rsi
+  - type: UserInterface
+    interfaces:
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
+  - type: ContainerContainer
+    containers:
+      toggleable-clothing: !type:ContainerSlot {}
+      storagebase: !type:Container { } # Zona14: pre-declare so SpawnAndDelete test doesn't trip ContainerContainer mutation
+- type: entity
+  parent: Z14STClothingCloakBase
+  id: Z14ClothingOuterCoatAugustM
+  categories: [ Zona14 ]
+  name: August-M Raincoat
+  description: An unusual cloak made by Clear Sky technicians. Zone camouflage. An improved version of the August cloak. Insulation layer for chemical protection. Sturdy hood with integrated gas mask for additional protection.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/cloak/august-m.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/cloak/august-m.rsi
+  - type: UserInterface
+    interfaces:
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetAugustM
+    requiredSlot:
+    - cloak
+    slot: head
+  - type: ContainerContainer
+    containers:
+      toggleable-clothing: !type:ContainerSlot {}
+      storagebase: !type:Container { }
+- type: entity
+  parent: STClothingHeadHatBase
+  id: Z14ClothingHeadHelmetAugustM
+  categories: [ Zona14 ]
+  name: August-M Hood
+  description: A sturdy hood concealing the owner's head.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/coat_hat_august-m.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/coat_hat_august-m.rsi
+    slots:
+      - mask
+      - head
+  - type: Armor
+    armorClass: 0
+    modifiers:
+      coefficients:
+        Caustic: 0.85
+        Radiation: 0.85
+  - type: HideLayerClothing
+    slots:
+    - Hair
+    - HeadTop
+
+
+- type: entity
+  parent: Z14STClothingCloakBase
+  id: Z14ClothingOuterCoatKrava
+  categories: [ Zona14 ]
+  name: '"Valkyrie" camouflage cloak'
+  description: Advanced Valkyrie camo cloak. Made of lightweight components that don't restrict movement.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/cloak/krava/cloak.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/cloak/krava/cloak.rsi
+  - type: UserInterface
+    interfaces:
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetKrava
+    requiredSlot:
+    - cloak
+    slot: head
+  - type: ContainerContainer
+    containers:
+      toggleable-clothing: !type:ContainerSlot {}
+      storagebase: !type:Container { }
+- type: entity
+  parent: STClothingHeadHatBase
+  id: Z14ClothingHeadHelmetKrava
+  categories: [ Zona14 ]
+  name: '"Valkyrie" cloak hood'
+  description: A sturdy hood concealing the owner's head.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/cloak/krava/hat.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/cloak/krava/hat.rsi
+    slots:
+      - mask
+      - head
+  - type: Armor
+    armorClass: 0
+    modifiers:
+      coefficients:
+        Caustic: 0.85
+        Radiation: 0.85
+  - type: HideLayerClothing
+    slots:
+    - Hair
+    - HeadTop
+
+- type: entity
+  parent: Z14ClothingOuterCoatAugust
+  id: Z14ClothingOuterCoatKevlarBlack
+  categories: [ Zona14 ]
+  name: kevlar cloak
+  description: Repainted Kevlar cloak.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/cloak/kevlaroviy_black.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/cloak/kevlaroviy_black.rsi
+
+- type: entity
+  parent: Z14ClothingOuterCoatAugust
+  id: Z14ClothingOuterCoatSevaWhite
+  categories: [ Zona14 ]
+  name: SEVA chainmail cloak
+  description: Repainted chainmail cloak.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/cloak/seva_white.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/cloak/seva_white.rsi

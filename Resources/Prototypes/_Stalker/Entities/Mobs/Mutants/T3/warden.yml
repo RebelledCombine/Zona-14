@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: BaseMobMutant
   id: MobMutantWarden
-  name: Гончая
+  name: warden
   suffix: ST, T3
-  description: после аварии эти существа стали одним из видов мутировавших собак, которые смогли пережить воздействие радиации и адаптироваться. Более выносливые, стайные и агрессивные, эти существа пытаются загнать свою жертву в ловушку. Когда в глухом лесу сталкеры слышат их вой, можно начать молиться.
+  description: "After the disaster, these creatures became one of the species of mutated dogs that managed to survive radiation exposure and adapt. Tougher, pack-oriented, and aggressive, these creatures try to corner their prey. When stalkers hear their howl in the deep forest, it's time to start praying."
   components:
     - type: Butcherable
       spawned:

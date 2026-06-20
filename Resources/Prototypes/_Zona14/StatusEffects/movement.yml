@@ -1,0 +1,13 @@
+- type: entity
+  parent: StatusEffectSlowdown
+  id: Z14BloodSuckerSlowdownStatusEffect
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: affected by sucking blood slowdown
+
+- type: entity
+  parent: StatusEffectSlowdown
+  id: Z14JumpscareSlowdownStatusEffect
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: fear slowdown

@@ -1,0 +1,76 @@
+- type: entity
+  parent: Z14STBaseMobMutant
+  id: Z14BaseMobMutantChurzik
+  categories: [ Zona14 ]
+  name: Kikimora
+  suffix: Z14
+  description: if there is a most pathetic, cowardly predator among the fauna of the Chernobyl Exclusion Zone, it's them. Their origin is hard to determine, but their thin tail hints that their ancestors may have been enormous rats that switched to a broader diet.
+  components:
+    - type: EmitSoundOnSpawn
+      sound:
+        path: /Audio/_Stalker/Mutants/churzik/Churzik_hit_1.ogg
+        params:
+          volume: 1
+          maxDistance: 20
+    - type: Damageable
+      damageModifierSet: Z14STMutantT1DamageModifierSet
+    - type: HTN
+      rootTask:
+        task: STBlindDogWhiteCompound
+      blackboard:
+        VisionRadius: !type:Single
+          25
+        AggroVisionRadius: !type:Single
+          15
+    - type: Butcherable
+      spawned:
+        - id: Z14MutantPartBlindDogTail
+          maxAmount: 1
+          prob: 1
+    - type: DamageStateVisuals
+      states:
+        Alive:
+          Base: churzik
+        Critical:
+          Base: dead
+        Dead:
+          Base: dead
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 140
+          behaviors:
+            - !type:PlaySoundBehavior
+              sound:
+                path: /Audio/_Stalker/Mutants/churzik/Churzik_death_1.ogg
+    - type: MobThresholds
+      thresholds:
+        0: Alive
+        140: Dead
+    - type: MeleeWeapon
+      attackRate: 2
+      angle: 20
+      range: 1.3
+      soundHit:
+        path: /Audio/_Stalker/Mutants/churzik/Churzik_attack_1.ogg
+      animation: WeaponArcClaw
+      wideAnimation: WeaponArcClaw
+      damage:
+        types:
+          Slash: 15
+    - type: BonusMeleeDamage
+      heavyDamageMultiplier: 1.5
+    - type: MovementSpeedModifier
+      baseWalkSpeed: 1.6
+      baseSprintSpeed: 3.6
+    - type: Sprite
+      sprite: /Textures/_Stalker/Mobs/Mutants/Churzik.rsi
+      layers:
+        - map: ["enum.DamageStateVisualLayers.Base"]
+          state: churzik
+    - type: SlowOnDamage
+    - type: StaminaDamageOnHit
+      damage: 5
+    - type: STWeight
+      self: 35

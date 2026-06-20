@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 
 - type: entity
   id: CatwalkRusty
   suffix: ST, Mapping
-  name: ржавый мостик
+  name: Rusty Bridge
   placement:
     mode: SnapgridCenter
   components:
@@ -33,7 +34,7 @@
 - type: entity
   id: CatwalkSteel
   suffix: ST, Mapping
-  name: стальной мостик
+  name: Steel Bridge
   placement:
     mode: SnapgridCenter
   components:
@@ -61,7 +62,7 @@
 - type: entity
   id: CatwalkOld
   suffix: ST, Mapping
-  name: старый мостик
+  name: Old Bridge
   placement:
     mode: SnapgridCenter
   components:

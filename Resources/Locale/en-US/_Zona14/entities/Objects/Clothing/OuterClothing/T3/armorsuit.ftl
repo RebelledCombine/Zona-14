@@ -1,0 +1,111 @@
+ent-Z14ClothingHeadHatHoodMerc = { ent-ClothingHeadHatHoodMercBandit }
+    .desc = Hoods, helmets and the like.
+    .suffix = Z14
+
+ent-Z14ClothingHeadHatHoodMerc2 = { ent-ClothingHeadHatHoodMercBandit }
+    .desc = Hoods, helmets and the like.
+    .suffix = Z14
+
+ent-Z14ClothingHeadHatHoodMercBandit = Hood
+    .desc = Hoods, helmets and the like.
+    .suffix = Z14
+
+ent-Z14ClothingHeadHelmetDolgPS5M = PS5-M Hood "Universal Protection"
+    .desc = Not very roomy while it’s on your head.
+    .suffix = Z14
+
+ent-Z14ClothingHeadHelmetFreedomDefender = Sentinel Hood
+    .desc = Not very loose as long as it sits on your head.
+    .suffix = Z14
+
+ent-Z14ClothingHeadHelmetFreedomWind = "Wind of Freedom" Hood
+    .desc = { ent-ClothingHeadHelmetDolgPS5M.desc }
+    .suffix = Z14
+
+ent-Z14ClothingHeadHelmetHatFirstbornSeraphimes = Firstborn hood
+    .desc = Hoods, helmets and the like.
+    .suffix = Z14
+
+ent-Z14ClothingHeadHelmetHatMonolith = Chernobyl hood
+    .desc = Hoods, helmets and the like.
+    .suffix = Z14
+
+ent-Z14ClothingOuterArmorBandits = Bandit Armored Coveralls
+    .desc = Cheap and protects against mutants with stalkers bandit jumpsuits. Provides protection class 3.
+    .suffix = Z14
+
+ent-Z14ClothingOuterArmorCN3a = ChN-3a Armored Coveralls
+    .desc = Clear Skies assault squads' standard equipment. The body armor is able to stop a pistol bullet, and the built-in gas mask and canvas overalls with special impregnation provide good protection against abnormal effects. Grade 3
+    .suffix = Z14
+
+ent-Z14ClothingOuterArmorDeserter = Apostate "Hoplite" Armored Coveralls
+    .desc = A cheap and reliable armored suit, providing good protection against mutants and bullets. Grade 3
+    .suffix = Z14
+
+ent-Z14ClothingOuterArmorDolgPS5M = PS5-M Suit "Universal Protection"
+    .desc = A modern suit model used by Duty. Better suited for recruits coming from stalker backgrounds, used to relatively light third-class protection suits. Unlike the PS3 series, it provides decent anomaly protection and can stop a pistol bullet. No artifact containers included, but compatible with auxiliary systems.
+    .suffix = Z14
+
+ent-Z14ClothingOuterArmorFirstbornSeraphimes = Firstborn suit
+    .desc = An old worn-out Monolith suit. Such suits were worn by the first Seraphim, who later named themselves the Firstborn.
+    .suffix = Z14
+
+ent-Z14ClothingOuterArmorFreedomDefender = Freedom Armored Coveralls
+    .desc = A reinforced stalker jumpsuit produced by the artisans of the "Freedom" group.
+    .suffix = Z14
+
+ent-Z14ClothingOuterArmorFreedomWind = "Wind of Freedom" Suit
+    .desc = A lightweight stalker suit crafted by the "Freedom" faction’s artisans. A light second-class army vest reinforced with kevlar plates. Offers protection against weak weapons. The suit's fabric is treated with a special solution to improve resistance to anomalies.
+    .suffix = Z14
+
+ent-Z14ClothingOuterArmorJaba = Drifter Armored Coveralls
+    .desc = A reliable Type III armored vehicle that provides good protection against anomalous effects and physical damage.
+    .suffix = Z14
+
+ent-Z14ClothingOuterArmorKeeper = 'Keeper' Armored Coveralls
+    .desc = Type II armored jumpsuit, providing little protection against most types of damage
+    .suffix = Z14
+
+ent-Z14ClothingOuterArmorMerc = Mercenary Armored Coveralls
+    .desc = Based on samples of special forces equipment of Western armies. Due to the special treatment of the fabric, the stability of the armor during the physical displacement of the plates is enhanced. In terms of protective characteristics, it is slightly superior to army body armor. Provides protection class 3.
+    .suffix = Z14
+
+ent-Z14ClothingOuterArmorMerc2 = Mercenary Armor Suit
+    .desc = Features "Berezka" camouflage in a gray color scheme. Based on equipment samples from Western special forces. Special fabric treatment enhances plate stability against physical displacement. Slightly outperforms military body armor in protection, providing armor class 3.
+    .suffix = Z14
+
+ent-Z14ClothingOuterArmorMonolith = "Chernobyl" Armored Coveralls
+    .desc = Reinforced jumpsuit produced by the Artisans of the Monolith Group. Grade 3
+    .suffix = Z14
+
+ent-Z14ClothingOuterArmorMonolithOld = Monolith Suit
+    .desc = A stalker suit of the "Monolith" faction, origin unknown. Rated as third-class armor, slightly inferior to the PSZ-9a military vest. Structurally resembles common stalker suits combining a ballistic vest and radiation protection suit. Provides moderate protection against weak firearms. Anomaly resistance is poor due to the lack of air filtration.
+    .suffix = Z14
+
+ent-Z14ClothingOuterArmorPilgrim = Inquisitor Armor
+    .desc = A cheap Inquisition overalls that protect against mutants and heretics. Provides protection class 3.
+    .suffix = Z14
+
+ent-Z14ClothingOuterArmorRenegate = Renegade 'II' Armored Coveralls
+    .desc = Renegades don't stand on ceremony with beauty. Made of rubber and metal, this suit is designed to survive in the Marsh and fend off any creature. Yellow inserts - to make it easier to find the dead in the mud.
+    .suffix = Z14
+
+ent-Z14ClothingOuterArmorStalker = Badger Armored Coveralls
+    .desc = Armored suit of the third class of protection manufactured by Podval Bara LLC.
+    .suffix = Z14
+
+ent-Z14STClothingHeadPeresvet = "Peresvet" armor suit helmet #base
+    .desc = Helmet from the "Peresvet" set.
+    .suffix = Z14
+
+ent-Z14STClothingOuterArmorBase = Base Armor Base
+    .desc = A standard Type I armored vest that provides decent protection against most types of damage.
+    .suffix = Z14
+
+ent-Z14STClothingOuterArmorKrava = "Valkyrie" camo Ratnik
+    .desc = Russian combat soldier gear, designed to improve the effectiveness and survivability of a serviceman on the battlefield. This particular model looks extremely worn out, but is still wearable.
+    .suffix = Z14
+
+ent-Z14STClothingOuterArmorPeresvet = "Peresvet" armor suit
+    .desc = An armor suit made by some craftsman with a peculiar appearance.
+    .suffix = Z14

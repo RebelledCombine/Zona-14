@@ -1,0 +1,32 @@
+# Resource
+- type: entity
+  parent: BoxBase
+  id: Z14ClothingBeltCrafterStalker
+  categories: [ Zona14 ]
+  name: Craftsman’s Bag
+  description: A spacious crafter bag, usually taken on hikes, but perfect for the Zone!
+  suffix: Z14
+  components:
+  - type: Clothing
+    quickEquip: false
+    slots:
+    - belt
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/belt/crafter_bag.rsi
+    state: icon
+  - type: Storage
+    areaInsert: true
+    maxItemSize: Normal
+    grid:
+    - 0,0,9,9
+    blacklist:
+      tags:
+      - STArtifact
+      - Khabar
+    whitelist:
+      components:
+        - Material
+  - type: Item
+    size: Ginormous
+    # shape:
+    # - 0,0,3,3

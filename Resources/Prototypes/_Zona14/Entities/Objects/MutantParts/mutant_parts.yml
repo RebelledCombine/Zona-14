@@ -1,0 +1,230 @@
+- type: entity
+  parent: Z14BaseMutantPart
+  id: Z14MutantPartBlindDogTail
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Blind Dog's Tail
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/MutantParts/blind_dog_tail.rsi
+    - type: Item
+      size: Small
+      shape:
+        - 0,0,0,1
+    - type: STWeight
+      self: 0.8
+
+- type: entity
+  parent: Z14BaseMutantPart
+  id: Z14MutantPartPseudodogTail
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: pseudodog's tail
+  components:
+    - type: STWeight
+      self: 1.6
+    - type: Sprite
+      sprite: _Stalker/Objects/MutantParts/pseudodog_tail.rsi
+    - type: Item
+      size: Small
+      shape:
+        - 0,0,0,1
+
+- type: entity
+  parent: Z14BaseMutantPart
+  id: Z14MutantPartPsiDogTail
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: psi-dog tail
+  components:
+    - type: STWeight
+      self: 1.6
+    - type: Sprite
+      sprite: _Stalker/Objects/MutantParts/pseudodog_tail.rsi
+    - type: Item
+      size: Small
+      shape:
+        - 0,0,0,1
+
+- type: entity
+  parent: Z14BaseMutantPart
+  id: Z14MutantPartPseudogiantHeart
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Pseudogiant Heart
+  components:
+    - type: STWeight
+      self: 8
+    - type: Sprite
+      sprite: _Stalker/Objects/MutantParts/pseudogiant_heart.rsi
+      scale: 0.4, 0.4
+    - type: Item
+      size: Small
+      shape:
+        - 0,0,2,2
+
+- type: entity
+  parent: Z14BaseMutantPart
+  id: Z14MutantPartOldBoarHoof
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: hoof of an old boar
+  components:
+    - type: STWeight
+      self: 2.5
+    - type: Sprite
+      sprite: _Stalker/Objects/MutantParts/Old_boar_hoof.rsi
+    - type: Item
+      size: Small
+      shape:
+        - 0,0,1,0
+        - 0,1,0,1
+
+- type: entity
+  parent: Z14BaseMutantPart
+  id: Z14MutantPartSeasonedBoarHoof
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: hoof of a seasoned boar
+  components:
+    - type: STWeight
+      self: 2.75
+    - type: Sprite
+      sprite: _Stalker/Objects/MutantParts/Seasoned_boar_hoof.rsi
+    - type: Item
+      size: Small
+      shape:
+        - 0,0,1,0
+        - 0,1,0,1
+
+- type: entity
+  parent: Z14BaseMutantPart
+  id: Z14MutantPartBoarHoof
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: hoof of a boar
+  components:
+    - type: STWeight
+      self: 3.25
+    - type: Sprite
+      sprite: _Stalker/Objects/MutantParts/boar_hoof.rsi
+    - type: Item
+      size: Small
+      shape:
+        - 0,0,1,0
+        - 0,1,0,1
+
+- type: entity
+  parent: Z14BaseMutantPart
+  id: Z14MutantPartFleshEye
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Eye of Flesh
+  components:
+    - type: Tag # ST14-EN: Ritual chasm
+      tags:
+      - STFleshRelated
+    - type: STWeight
+      self: 1.75
+    - type: Sprite
+      sprite: _Stalker/Objects/MutantParts/flesh_eye.rsi
+    - type: Item
+      size: Small
+      shape:
+        - 0,0,0,1
+
+- type: entity
+  parent: Z14BaseMutantPart
+  id: Z14MutantPartSnorkFoot
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Snork Foot
+  components:
+    - type: STWeight
+      self: 1.5
+    - type: Item
+      size: Small
+      shape:
+        - 0,0,1,1
+    - type: Sprite
+      sprite: _Stalker/Objects/MutantParts/snork_foot.rsi
+
+- type: entity
+  parent: Z14BaseMutantPart
+  id: Z14MutantPartBloodsuckerTentacles
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: bloodsucker tentacles
+  components:
+    - type: STWeight
+      self: 2.75
+    - type: Sprite
+      sprite: _Stalker/Objects/MutantParts/bloodsucker_tentacles.rsi
+    - type: Item
+      size: Small
+      shape:
+        - 0,0,1,1
+
+- type: entity
+  parent: Z14BaseMutantPart
+  id: Z14MutantPartBloodsuckerHead
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: bloodsucker Head
+  components:
+    - type: STWeight
+      self: 6
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/mask/bloodsucker.rsi
+    - type: Item
+      size: Small
+      shape:
+        - 0,0,1,1
+
+- type: entity
+  parent: Z14BaseMutantPart
+  id: Z14MutantPartOraculeEye
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Oracle Eye
+  components:
+    - type: STWeight
+      self: 3.25
+    - type: Item
+      size: Small
+      shape:
+        - 0,0,1,1
+    - type: Sprite
+      sprite: _Stalker/Objects/MutantParts/oracule_eye.rsi
+
+- type: entity
+  parent: Z14BaseMutantPart
+  id: Z14MutantPartZombieHand
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: zombified hand
+  components:
+    - type: STWeight
+      self: 3.25
+    - type: Item
+      size: Small
+      shape:
+        - 0,0,0,1
+    - type: Sprite
+      sprite: _Stalker/Objects/MutantParts/zombie_hand.rsi
+
+- type: entity
+  parent: Z14BaseMutantPart
+  id: Z14MutantPartLeshiyRoot
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Leshy root
+  components:
+    - type: STWeight
+      self: 2.75
+    - type: Item
+      size: Small
+      shape:
+        - 0,0,0,1
+    - type: Sprite
+      sprite: _Stalker/Objects/MutantParts/leshiy_root.rsi

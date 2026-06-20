@@ -1,3 +1,4 @@
+# Zona14: translated Russian names/descriptions to English
 # Temporary
 - type: Tag
   id: BlockMask
@@ -11,11 +12,11 @@
   id: BlockGloves
 
 ###============------------------------------------============###
-###============------------[New Одежда]------------============###
+# Zona14: ##============------------[New Одежда]------------============###
 ###============------------------------------------============###
 
 ###------------------------------###
-###------------[База]------------###
+# Zona14: ##------------[База]------------###
 ###------------------------------###
 
 - type: entity
@@ -25,7 +26,7 @@
   abstract: true
   components:
   - type: RepositoryItem
-    categoryName: Экипировка
+    categoryName: Equipment # Zona14: Экипировка
   - type: PullDoAfter
     pullTime: 6
 
@@ -36,7 +37,7 @@
   abstract: true
   components:
   - type: RepositoryItem
-    categoryName: Экипировка
+    categoryName: Equipment # Zona14: Экипировка
   - type: PullDoAfter
     pullTime: 2
   - type: HideLayerClothing
@@ -54,7 +55,7 @@
   abstract: true
   components:
   - type: RepositoryItem
-    categoryName: Броня
+    categoryName: Armor # Zona14: Броня
   - type: PullDoAfter
     pullTime: 6
 
@@ -77,7 +78,7 @@
 - type: entity
   parent: STClothingOuterArmorBodyBase
   id: STClothingOuterArmorStorageBasic
-  name: база бронекостюмов с подсумками
+  name: Armor Suit Base with Pouches
   suffix: ST
   categories: [ HideSpawnMenu ]
   # abstract: true
@@ -86,7 +87,7 @@
     tags:
       - Folder
   - type: RepositoryItem
-    categoryName: Экипировка
+    categoryName: Equipment # Zona14: Экипировка
   - type: Storage
     maxItemSize: Normal
     grid:
@@ -110,7 +111,7 @@
 - type: entity
   parent: ClothingOuterArmorBasic
   id: ClothingOuterArmorStorageToggleableBasic
-  name: база бронекостюмов с подсумками
+  name: "{ ent-STClothingOuterArmorStorageBasic }"
   suffix: ST
   categories: [ HideSpawnMenu ]
   abstract: true
@@ -130,7 +131,7 @@
       - BlockBelt
       - Folder
   - type: RepositoryItem
-    categoryName: Экипировка
+    categoryName: Equipment # Zona14: Экипировка
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHatHoodWinterDefault
     slot: head
@@ -148,9 +149,9 @@
 - type: entity
   abstract: true
   id: STClothingHeadHatBase
-  name: база встроенных голов
+  name: Built-in head base
   suffix: ST
-  description: Капюшоны, шлема и т.п. тема
+  description: Hoods, helmets etc theme
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
@@ -170,14 +171,14 @@
   abstract: true
   parent: Clothing
   id: STClothingHeadBase
-  name: База шлемов
+  name: Helmet Base
   suffix: ST
   components:
   - type: Clothing
     slots:
     - HEAD
   - type: RepositoryItem
-    categoryName: Экипировка
+    categoryName: Equipment # Zona14: Экипировка
   - type: Sprite
     state: icon
   - type: Tag
@@ -191,7 +192,7 @@
   abstract: true
   parent: STClothingHeadBase
   id: ClothingHeadStalkerLightBase
-  name: база шлемов с фонариком
+  name: Helmet base with flashlight
   suffix: ST
   categories: [ HideSpawnMenu ]
   components:
@@ -252,7 +253,7 @@
   parent: ClothingBeltBase
   id: ClothingBeltStorageStalkerBase
   suffix: ST
-  name: база РПС
+  name: RPS base
   components:
   - type: Storage
     maxItemSize: Large
@@ -266,7 +267,7 @@
   - type: Item
     size: Ginormous
   - type: RepositoryItem
-    categoryName: Снаряжение
+    categoryName: Gear # Zona14: Снаряжение
   - type: ContainerContainer
     containers:
       storagebase: !type:Container
@@ -286,7 +287,7 @@
   parent: ClothingNeckBase
   id: STClothingCapeBase
   suffix: ST
-  name: база плащей
+  name: Base of raincoats
   components:
   - type: Storage
     maxItemSize: Tiny
@@ -310,7 +311,7 @@
     slots:
     - CLOAK
   - type: RepositoryItem
-    categoryName: Экипировка
+    categoryName: Equipment # Zona14: Экипировка
   - type: Item
     size: Large
     shape:
@@ -341,7 +342,7 @@
       quickInsert: true
       areaInsert: true
     - type: RepositoryItem
-      categoryName: Снаряжение
+      categoryName: Gear # Zona14: Снаряжение
     - type: Dumpable
     - type: Tag
       tags:

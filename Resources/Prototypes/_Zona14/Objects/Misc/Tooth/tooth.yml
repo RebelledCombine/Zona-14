@@ -1,0 +1,76 @@
+- type: entity
+  name: pliers
+  parent: BaseItem
+  id: Z14PliersStalker
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: A tool that is used in wire bending, but someone else uses it differently.
+  components:
+  - type: STWeight
+    self: 0.5
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Items/wirecutter_drop.ogg
+  - type: Sprite
+    sprite: Objects/Tools/wirecutters.rsi
+    layers:
+      - state: cutters
+        map: [ "enum.DamageStateVisualLayers.Base" ]
+      - state: cutters-cutty-thingy
+  - type: MeleeWeapon
+    wideAnimationRotation: -90
+    damage:
+      types:
+        Piercing: 2
+    attackRate: 2
+    soundHit:
+      path: "/Audio/Items/wirecutter.ogg"
+  - type: RandomSprite
+    available:
+      - enum.DamageStateVisualLayers.Base:
+          cutters: Rainbow
+  - type: Item
+    sprite: Objects/Tools/wirecutters.rsi
+    storedRotation: -90
+  - type: Tag
+    tags:
+    - PliersStalker
+
+- type: entity
+  parent: BaseItem
+  id: Z14ToothStalker
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: tooth
+  description: An ordinary whole tooth.
+  components:
+  - type: PhysicalComposition
+    materialComposition:
+      Credit: 1
+  - type: Sprite
+    sprite: _Stalker/Objects/Misc/tooth.rsi
+    state: icon
+    scale: 0.3, 0.3
+  - type: Stack
+    stackType: ToothStalker
+    count: 1
+    baseLayer: base
+    layerStates:
+    - cash
+  - type: StackLayerThreshold
+    thresholds: [1]
+
+- type: currency
+  id: Z14ToothStalker
+  displayName: store-currency-display-tooth-stalker
+  cash:
+    1: ToothStalker
+  canWithdraw: true
+
+- type: stack
+  id: Z14ToothStalker
+  name: stack-teeth
+  icon: { sprite: /Textures/_Stalker/Objects/Misc/tooth.rsi, state: icon }
+  spawn: ToothStalker
+  splitAmounts: [1]
+  maxCount: 1

@@ -1,5 +1,6 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
-  name: Триггер стаи слепых псов (100%)
+  name: Blind Dog Pack Trigger (100%)
   id: BlinddogPackTrigger100
   parent: MarkerBase
   suffix: ST, T1
@@ -15,7 +16,7 @@
         - state: ai
 
 - type: entity
-  name: Триггер стаи пауков Лапачей (100%)
+  name: Lapach Spider Pack Trigger (100%)
   id: SpiderLapachPackTrigger100
   parent: MarkerBase
   suffix: ST, T1
@@ -31,7 +32,7 @@
         - state: ai
 
 - type: entity
-  name: Триггер контролёра с собаками (100%)
+  name: Controller with Dogs Trigger (100%)
   id: ControllerBlindDogPackTrigger100
   parent: MarkerBase
   suffix: ST, T3

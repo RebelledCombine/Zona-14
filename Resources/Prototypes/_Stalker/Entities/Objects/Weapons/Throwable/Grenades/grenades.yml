@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
-  name: граната Ф1
-  description: Она же "Лимонка", не ультимативное, но крайне мощное оружие, имеющее основным поражающим фактором осколки.
+  name: F1 grenade
+  description: Also known as "Limonka", not an ultimate weapon, but extremely powerful with fragmentation as its primary damage factor.
   parent: GrenadeBase
   id: FragGrenade
-  suffix: Stalker, Граната
+  suffix: Stalker, Grenade # Zona14: Stalker, Граната
   components:
     - type: Explosive
       explosionType: Default
@@ -29,11 +30,11 @@
           - stageTwo
 
 - type: entity
-  name: граната РГД-5
-  description: Советская наступательная ручная граната, относится к противопехотным осколочным ручным гранатам дистанционного действия наступательного типа.
+  name: RGD-5 grenade
+  description: Soviet offensive hand grenade, classified as an anti-personnel fragmentation hand grenade of the offensive type.
   parent: GrenadeBase
   id: RGD5Grenade
-  suffix: Stalker, Граната
+  suffix: Stalker, Grenade # Zona14: Stalker, Граната
   components:
     - type: Explosive
       explosionType: Default
@@ -81,9 +82,9 @@
 - type: entity
   parent: GrenadeBase
   id: KhattabkaGrenade
-  name: граната хаттабка
-  description: Не ультимативное, но крайне мощное оружие.
-  suffix: Stalker, Граната
+  name: Khattabka Grenade
+  description: Not the ultimate but extremely powerful weapon.
+  suffix: Stalker, Grenade # Zona14: Stalker, Граната
   components:
     - type: Explosive
       explosionType: Default
@@ -109,11 +110,11 @@
           map: ["enum.TriggerVisualLayers.Base"]
 # To be repaired
 - type: entity
-  name: сигнальная шашка
-  description: Вызывает миномётный огонь дымовыми боеприпасами.
+  name: signal flare
+  description: Calls mortar fire with smoke ammunition.
   parent: GrenadeBase
   id: SignalSmoke
-  suffix: Stalker, Граната
+  suffix: Stalker, Grenade # Zona14: Stalker, Граната
   components:
     - type: Sprite
       sprite: Objects/Weapons/Grenades/smoke.rsi
@@ -133,8 +134,8 @@
 - type: entity
   parent: SmokeGrenade
   id: TearGasGrenadeStalker
-  name: граната К-51
-  description: Советская граната со слезоточивым газом. Предназначалась не для разгона демонстраций, а для поля боя. Вдыхать дым крайне нежелательно.
+  name: K-51 grenade
+  description: Soviet tear gas grenade. It was intended not to disperse demonstrations, but for the battlefield. Inhaling smoke is highly undesirable.
   suffix: Stalker
   components:
   - type: Sprite
@@ -162,9 +163,9 @@
 - type: entity
   parent: GrenadeBase
   id: MK3A2Grenade
-  name: граната MK3A2
-  description: Ручная фугасная граната США. Предназначена для повреждения небронированной или легкобронированной техники, небольших сооружений и выведения из строя солдат противника.
-  suffix: Stalker, Граната
+  name: MK3A2 Grenade
+  description: US High Explosive Hand Grenade. It is designed to damage unarmored or lightly armored vehicles, small structures and incapacitate enemy soldiers.
+  suffix: Stalker, Grenade # Zona14: Stalker, Граната
   components:
     - type: Explosive
       explosionType: Default
@@ -196,11 +197,11 @@
             Unprimed: { state: icon }
 
 - type: entity
-  name: граната M84
-  description: Американская светозвуковая граната. Специальное средство несмертельного действия, оказывающие на человека светозвуковое и осколочное воздействие.
+  name: M84 grenade
+  description: American flashbang grenade. A special non-lethal device that affects a person with flash-bang and fragmentation effects.
   parent: GrenadeBase
   id: GrenadeFlashBangStalker
-  suffix: Stalker, Граната
+  suffix: Stalker, Grenade # Zona14: Stalker, Граната
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Weapons/Grenades/flashbang.rsi
@@ -222,8 +223,8 @@
 - type: entity
   parent: GrenadeBase
   id: DG05SmokeGrenade
-  name: граната ДГ-05
-  description: Ручная дымовая граната ДГ-05. Предназначена для установки дымового прикрытия.
+  name: DG-05 grenade
+  description: DG-05 hand smoke grenade. Designed to install a smoke cover.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Weapons/Grenades/dggrenade.rsi
@@ -247,8 +248,8 @@
   parent: GrenadeBase
   id: StielhandgranateM24Bundle
   name: Stielhandgranate M24 Bundle
-  description: Модифицированный вариант немецкой ручной гранаты Stielhandgranate M24, использовавшейся во время Второй мировой войны. Основное отличие пучка гранат от стандартной версии состоит в том, что к основной гранате Stielhandgranate M24 привязывается несколько дополнительных гранатных головок без ручек, что увеличивает разрушительную силу устройства.
-  suffix: Stalker, Граната
+  description: A modified variant of the German Stielhandgranate M24 hand grenade used during World War II. The main difference between the grenade bundle and the standard version is that several additional grenade heads without handles are tied to the main Stielhandgranate M24 grenade, which increases the destructive power of the device.
+  suffix: Stalker, Grenade # Zona14: Stalker, Граната
   components:
     - type: STWeight
       self: 3.6
@@ -287,8 +288,8 @@
   parent: GrenadeBase
   id: StielhandgranateM24
   name: Stielhandgranate M24
-  description: Немецкая осколочная граната, широко использовавшаяся во время Второй мировой войны. Она известна также под неофициальным названием "картофелемялка" из-за характерной формы с длинной рукояткой и цилиндрическим корпусом.
-  suffix: Stalker, Граната
+  description: German frag grenade used extensively during World War II. It is also known under the unofficial name "potato masher" because of its characteristic shape with a long handle and a cylindrical body.
+  suffix: Stalker, Grenade # Zona14: Stalker, Граната
   components:
     - type: STWeight
       self: 1.1
@@ -325,13 +326,13 @@
             Primed: { state: primed }
             Unprimed: { state: icon }
 
-######################## Шахиды
+# Zona14: ####################### Шахиды
 - type: entity
   parent: Clothing
   id: STExplosionPack
-  name: Взрывпакет
-  description: Рюкзак, набитый взрывчаткой. Увы, без взрывателя - придётся инициировать подрыв как-то ещё.
-  suffix: Stalker, Взрывчатка
+  name: Explosive Package
+  description: Backpack full of explosives. Alas, without a fuse - you will have to initiate the explosion in some other way.
+  suffix: Stalker, Explosive # Zona14: Stalker, Взрывчатка
   components:
   - type: STWeight
     self: 10
@@ -351,7 +352,7 @@
     slots:
     - back
   - type: RepositoryItem
-    categoryName: Оружие
+    categoryName: Weapons # Zona14: Оружие
   - type: Damageable
     damageContainer: Inorganic
   - type: Destructible
@@ -368,9 +369,9 @@
 - type: entity
   parent: ClothingBeltTarzanBlack
   id: STClothingBeltShahid
-  name: пояс шахида
-  description: Пояс и подсумки, забитые плотно взрывчаткой.
-  suffix: ST, Взрывчатка
+  name: Shahid belt
+  description: Belt and pouches packed tightly with explosives.
+  suffix: ST, Explosive # Zona14: ST, Взрывчатка
   components:
   - type: STWeight
     self: 5
@@ -387,7 +388,7 @@
   - type: Clothing
     sprite: _Stalker/Objects/Clothing/belt/belt_green.rsi
   - type: RepositoryItem
-    categoryName: Оружие
+    categoryName: Weapons # Zona14: Оружие
   - type: Damageable
     damageContainer: Inorganic
   - type: Destructible

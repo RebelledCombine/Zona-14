@@ -1,3 +1,4 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: Pit
   parent: BaseStructure
@@ -37,7 +38,7 @@
   parent: BaseStructure
   name: moonshine still
   suffix: ST, Mapping
-  description: Большое устройство, предназначенное для фильтрации спирта и преобразования его в самогон.
+  description: A large device designed to filter alcohol and convert it into moonshine.
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Furniture/MoonshineStill.rsi

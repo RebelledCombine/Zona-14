@@ -1,10 +1,11 @@
+# Zona14: translated Russian names/descriptions to English
 # Markers for contract spawn zones and delivery points.
 
 - type: entity
   id: MarkerTradeContractBounty
   parent: MarkerBase
-  name: контракт, охота
-  suffix: ST, КВЕСТЫ
+  name: contract, hunt
+  suffix: ST, QUESTS # Zona14: ST, КВЕСТЫ
   components:
   - type: Tag
     tags:
@@ -13,8 +14,8 @@
 - type: entity
   id: MarkerContractDeliveryBolotoEasy
   parent: MarkerBase
-  name: контракт, доставка, болото легкий
-  suffix: ST, КВЕСТЫ
+  name: contract, delivery, swamp easy
+  suffix: ST, QUESTS # Zona14: ST, КВЕСТЫ
   components:
   - type: Tag
     tags:
@@ -23,8 +24,8 @@
 - type: entity
   id: MarkerContractHuntBoarLair
   parent: MarkerBase
-  name: контракт, охота, логово кабанов, болото средний
-  suffix: ST, КВЕСТЫ
+  name: contract, hunt, boar lair, swamp medium
+  suffix: ST, QUESTS # Zona14: ST, КВЕСТЫ
   components:
   - type: Tag
     tags:
@@ -33,8 +34,8 @@
 - type: entity
   id: MarkerContractHuntPseudodog
   parent: MarkerBase
-  name: контракт, охота, логово псевдособак, болото средний
-  suffix: ST, КВЕСТЫ
+  name: contract, hunt, pseudodog lair, swamp medium
+  suffix: ST, QUESTS # Zona14: ST, КВЕСТЫ
   components:
   - type: Tag
     tags:
@@ -43,8 +44,8 @@
 - type: entity
   id: MarkerContractHuntMobMutantLeshiy
   parent: MarkerBase
-  name: контракт, охота, Леший, болото средний
-  suffix: ST, КВЕСТЫ
+  name: contract, hunt, Leshiy, swamp medium
+  suffix: ST, QUESTS # Zona14: ST, КВЕСТЫ
   components:
   - type: Tag
     tags:
@@ -53,8 +54,8 @@
 - type: entity
   id: MarkerContractHuntSTMobMutantBearT2Common
   parent: MarkerBase
-  name: контракт, охота, Медвэдь, болото средний
-  suffix: ST, КВЕСТЫ
+  name: contract, hunt, Bear, swamp medium
+  suffix: ST, QUESTS # Zona14: ST, КВЕСТЫ
   components:
   - type: Tag
     tags:
@@ -63,8 +64,8 @@
 - type: entity
   id: MarkerContractHuntMobMutantPoltergeistIce
   parent: MarkerBase
-  name: контракт, охота, Полтейргест, болото тяжелый
-  suffix: ST, КВЕСТЫ
+  name: contract, hunt, Poltergeist, swamp hard
+  suffix: ST, QUESTS # Zona14: ST, КВЕСТЫ
   components:
   - type: Tag
     tags:
@@ -73,8 +74,8 @@
 - type: entity
   id: MarkerContractHuntSTMobMutantBloodsuckerUncommon
   parent: MarkerBase
-  name: контракт, охота, Кровосос, болото тяжелый
-  suffix: ST, КВЕСТЫ
+  name: contract, hunt, Bloodsucker, swamp hard
+  suffix: ST, QUESTS # Zona14: ST, КВЕСТЫ
   components:
   - type: Tag
     tags:
@@ -83,8 +84,8 @@
 - type: entity
   id: MarkerContractHuntSTMobMutantBearPsiUncommon
   parent: MarkerBase
-  name: контракт, охота, Медвэдь, болото тяжелый
-  suffix: ST, КВЕСТЫ
+  name: contract, hunt, Bear, swamp hard
+  suffix: ST, QUESTS # Zona14: ST, КВЕСТЫ
   components:
   - type: Tag
     tags:

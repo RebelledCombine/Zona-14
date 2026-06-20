@@ -1,6 +1,7 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: SpawnerZoneAnomalyThermalGroupChance1
-  name: спавнер термической аномалии (10% шанс появления)
+  name: thermal anomaly spawner (1% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   components:
@@ -23,7 +24,7 @@
 
 - type: entity
   id: SpawnerZoneAnomalyThermalGroupChance5
-  name: спавнер термической аномалии (15% шанс появления)
+  name: thermal anomaly spawner (5% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   components:
@@ -46,7 +47,7 @@
 
 - type: entity
   id: SpawnerZoneAnomalyThermalGroupChance10
-  name: спавнер термической аномалии (20% шанс появления)
+  name: thermal anomaly spawner (10% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   components:
@@ -69,7 +70,7 @@
 
 - type: entity
   id: SpawnerZoneAnomalyThermalGroupChance25
-  name: спавнер термической аномалии (35% шанс появления)
+  name: thermal anomaly spawner (25% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   components:
@@ -92,7 +93,7 @@
 
 - type: entity
   id: SpawnerZoneAnomalyThermalGroupChance50
-  name: спавнер термической аномалии (50% шанс появления)
+  name: thermal anomaly spawner (50% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   components:
@@ -115,7 +116,7 @@
 
 - type: entity
   id: SpawnerZoneAnomalyThermalGroupChance100
-  name: спавнер термической аномалии (100% шанс появления)
+  name: thermal anomaly spawner (100% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   components:
@@ -136,10 +137,10 @@
     chance: 1.0
     offset: 0.0
 
-# Сильная жарка (Jarka strong)
+# Zona14: Сильная жарка (Jarka strong)
 - type: entity
   id: SpawnerZoneAnomalyJarkaStrongChance1
-  name: спавнер аномалии сильная жарка (10% шанс появления)
+  name: long burner anomaly spawner (1% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   components:
@@ -158,7 +159,7 @@
 
 - type: entity
   id: SpawnerZoneAnomalyJarkaStrongChance5
-  name: спавнер аномалии сильная жарка (15% шанс появления)
+  name: long burner anomaly spawner (5% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   components:
@@ -177,7 +178,7 @@
 
 - type: entity
   id: SpawnerZoneAnomalyJarkaStrongChance10
-  name: спавнер аномалии сильная жарка (20% шанс появления)
+  name: long burner anomaly spawner (10% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   components:
@@ -196,7 +197,7 @@
 
 - type: entity
   id: SpawnerZoneAnomalyJarkaStrongChance25
-  name: спавнер аномалии сильная жарка (35% шанс появления)
+  name: long burner anomaly spawner (25% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   components:
@@ -215,7 +216,7 @@
 
 - type: entity
   id: SpawnerZoneAnomalyJarkaStrongChance50
-  name: спавнер аномалии сильная жарка (50% шанс появления)
+  name: long burner anomaly spawner (50% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   components:
@@ -234,7 +235,7 @@
 
 - type: entity
   id: SpawnerZoneAnomalyJarkaStrongChance100
-  name: спавнер аномалии сильная жарка (100% шанс появления)
+  name: long burner anomaly spawner (100% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   components:
@@ -251,10 +252,10 @@
     chance: 1
     offset: 0.0
 
-# Жарка (Jarka)
+# Zona14: Жарка (Jarka)
 - type: entity
   id: SpawnerZoneAnomalyJarkaChance1
-  name: спавнер аномалии жарка (10% шанс появления)
+  name: burner anomaly spawner (1% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   components:
@@ -273,7 +274,7 @@
 
 - type: entity
   id: SpawnerZoneAnomalyJarkaChance5
-  name: спавнер аномалии жарка (15% шанс появления)
+  name: burner anomaly spawner (5% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   components:
@@ -292,7 +293,7 @@
 
 - type: entity
   id: SpawnerZoneAnomalyJarkaChance10
-  name: спавнер аномалии жарка (20% шанс появления)
+  name: burner anomaly spawner (10% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   components:
@@ -311,7 +312,7 @@
 
 - type: entity
   id: SpawnerZoneAnomalyJarkaChance25
-  name: спавнер аномалии жарка (35% шанс появления)
+  name: burner anomaly spawner (25% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   components:
@@ -330,7 +331,7 @@
 
 - type: entity
   id: SpawnerZoneAnomalyJarkaChance50
-  name: спавнер аномалии жарка (50% шанс появления)
+  name: burner anomaly spawner (50% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   components:
@@ -349,7 +350,7 @@
 
 - type: entity
   id: SpawnerZoneAnomalyJarkaChance100
-  name: спавнер аномалии жарка (100% шанс появления)
+  name: burner anomaly spawner (100% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   components:
@@ -366,10 +367,10 @@
     chance: 1
     offset: 0.0
 
-# Пар (Steam)
+# Zona14: Пар (Steam)
 - type: entity
   id: SpawnerZoneAnomalySteamChance1
-  name: спавнер аномалии пар (10% шанс появления)
+  name: steam anomaly spawner (1% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   components:
@@ -388,7 +389,7 @@
 
 - type: entity
   id: SpawnerZoneAnomalySteamChance5
-  name: спавнер аномалии пар (15% шанс появления)
+  name: steam anomaly spawner (5% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   components:
@@ -407,7 +408,7 @@
 
 - type: entity
   id: SpawnerZoneAnomalySteamChance10
-  name: спавнер аномалии пар (20% шанс появления)
+  name: steam anomaly spawner (10% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   components:
@@ -426,7 +427,7 @@
 
 - type: entity
   id: SpawnerZoneAnomalySteamChance25
-  name: спавнер аномалии пар (35% шанс появления)
+  name: steam anomaly spawner (25% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   components:
@@ -445,7 +446,7 @@
 
 - type: entity
   id: SpawnerZoneAnomalySteamChance50
-  name: спавнер аномалии пар (50% шанс появления)
+  name: steam anomaly spawner (50% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   components:
@@ -464,7 +465,7 @@
 
 - type: entity
   id: SpawnerZoneAnomalySteamChance100
-  name: спавнер аномалии пар (100% шанс появления)
+  name: steam anomaly spawner (100% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   components:
@@ -481,10 +482,10 @@
     chance: 1
     offset: 0.0
 
-# Солнце (Sol)
+# Zona14: Солнце (Sol)
 - type: entity
   id: SpawnerZoneAnomalySolChance1
-  name: спавнер аномалии солнце (10% шанс появления)
+  name: sun anomaly spawner (1% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   components:
@@ -503,7 +504,7 @@
 
 - type: entity
   id: SpawnerZoneAnomalySolChance5
-  name: спавнер аномалии солнце (15% шанс появления)
+  name: sun anomaly spawner (5% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   components:
@@ -522,7 +523,7 @@
 
 - type: entity
   id: SpawnerZoneAnomalySolChance10
-  name: спавнер аномалии солнце (20% шанс появления)
+  name: sun anomaly spawner (10% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   components:
@@ -541,7 +542,7 @@
 
 - type: entity
   id: SpawnerZoneAnomalySolChance25
-  name: спавнер аномалии солнце (35% шанс появления)
+  name: sun anomaly spawner (25% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   components:
@@ -560,7 +561,7 @@
 
 - type: entity
   id: SpawnerZoneAnomalySolChance50
-  name: спавнер аномалии солнце (50% шанс появления)
+  name: sun anomaly spawner (50% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   components:
@@ -579,7 +580,7 @@
 
 - type: entity
   id: SpawnerZoneAnomalySolChance100
-  name: спавнер аномалии солнце (100% шанс появления)
+  name: sun anomaly spawner (100% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   components:

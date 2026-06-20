@@ -1,0 +1,114 @@
+- type: entity
+  parent: ClothingOuterBase
+  id: Z14STClothingOuterBase
+  categories: [ Zona14 ]
+  abstract: true
+  components:
+  - type: RepositoryItem
+    categoryName: Equipment
+  - type: PullDoAfter
+    pullTime: 10
+
+
+- type: entity
+  parent: ClothingOuterBaseLarge
+  id: Z14STClothingOuterBaseLarge
+  categories: [ Zona14 ]
+  abstract: true
+  components:
+  - type: RepositoryItem
+    categoryName: Armor
+  - type: PullDoAfter
+    pullTime: 10
+
+
+- type: entity
+  abstract: true
+  parent: STClothingHeadBase
+  id: Z14ClothingHeadStalkerLightBase
+  name: Helmet base with flashlight
+  categories: [ HideSpawnMenu, Zona14 ]
+  components:
+  - type: Sprite
+    layers:
+    - state: icon
+    - state: icon-flash
+      visible: false
+      map: [ "light" ]
+  - type: Clothing
+    equippedPrefix: off
+  - type: Item
+    heldPrefix: off
+  - type: ToggleableLightVisuals
+  - type: PointLight
+    enabled: false
+    radius: 5
+    energy: 2.5
+    mask: /Textures/Effects/LightMasks/cone.png
+    autoRot: true
+    netsync: false
+  - type: Appearance
+  - type: HandheldLight
+    addPrefix: true
+    blinkingBehaviourId: blinking
+    radiatingBehaviourId: radiating
+  - type: LightBehaviour
+    behaviours:
+      - !type:FadeBehaviour
+        id: radiating
+        interpolate: Linear
+        maxDuration: 2.0
+        startValue: 3.0
+        endValue: 2.0
+        isLooped: true
+        reverseWhenFinished: true
+      - !type:PulseBehaviour
+        id: blinking
+        interpolate: Nearest
+        maxDuration: 1.0
+        startValue: 0.1
+        endValue: 2.0
+        isLooped: true
+  - type: PowerCellSlot
+    cellSlotId: cell_slot
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: Helmet base with flashlight
+        startingItem: PowerCellMedium
+  - type: ContainerContainer
+    containers:
+      cell_slot: !type:ContainerSlot {}
+  - type: Unremoveable
+
+
+- type: entity
+  parent: ClothingBackpackDuffel
+  id: Z14STClothingBackBase
+  categories: [ Zona14 ]
+  abstract: true
+  components:
+    - type: PullDoAfter
+      pullTime: 5
+    - type: ClothingSpeedModifier
+      walkModifier: 1
+      sprintModifier: 1
+    - type: STWeight
+      self: 5
+    - type: Storage
+      grid:
+        - 0,0,4,4
+      blacklist:
+        tags:
+        - STArtifact
+      quickInsert: true
+      areaInsert: true
+    - type: RepositoryItem
+      categoryName: Equipment
+    - type: Dumpable
+    - type: Tag
+      tags:
+      - Folder
+      - BlockBack
+    - type: Craftable
+

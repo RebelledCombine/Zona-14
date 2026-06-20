@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
-  name: Охранник долга
-  suffix: Stalker, Т6, NPC
+  name: Duty guard
+  suffix: Stalker, T6, NPC # Zona14: Stalker, Т6, NPC
   parent: MobStalkerBaseGuard
   id: MobDutySecurityLow
-  description: Охранник долга.
+  description: Duty guard.
   components:
   - type: NpcFactionMember
     factions:
@@ -47,11 +48,11 @@
         Brute: -1
 
 - type: entity
-  name: Охранник долга
-  suffix: Stalker, Т6, NPC
+  name: Duty guard
+  suffix: Stalker, T6, NPC # Zona14: Stalker, Т6, NPC
   parent: MobStalkerBaseGuard
   id: MobDutySecurityTop
-  description: Охранник долга.
+  description: Security guard for Duty.
   components:
   - type: NpcFactionMember
     factions:

@@ -1,0 +1,78 @@
+- type: entity
+  parent: BaseItem
+  id: Z14ChevronMonolit
+  categories: [ Zona14 ]
+  name: Monolith chevron
+  description: A chevron torn from a Monolith fighter.
+  suffix: Z14
+  components:
+    - type: Stack
+      stackType: ChevronMonolit
+      count: 1
+      baseLayer: base
+    - type: Sprite
+      sprite: _Stalker/Objects/Economy/monolith.rsi
+      state: monolith
+      scale: 0.5, 0.5
+      layers:
+      - state: monolith
+        map: ["base"]
+    - type: Item
+      sprite: _Stalker/Objects/Economy/monolith.rsi
+      size: Small
+    - type: Physics
+      bodyType: Dynamic
+    - type: Fixtures
+      fixtures:
+        fix1:
+          density: 30
+          shape:
+            !type:PhysShapeAabb
+            bounds: "-0.35,-0.2,0.25,0.1"
+          mask:
+            - ItemMask
+    - type: Appearance
+    - type: Tag
+      tags:
+        - ChevronMonolit
+
+- type: currency
+  id: Z14ChevronMonolit
+  displayName: store-currency-display-chevron-monolit
+  cash:
+    1: ChevronMonolit
+  canWithdraw: true
+
+- type: stack
+  id: Z14ChevronMonolit
+  name: stack-chevron-monolit
+  icon: { sprite: /Textures/_Stalker/Objects/Economy/monolith.rsi, state: monolith, scale: 0.5, 0.5 }
+  spawn: ChevronMonolit
+  maxCount: 100
+
+- type: entity
+  parent: ChevronMonolit
+  id: Z14ChevronMonolit10
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+    - type: Stack
+      count: 10
+
+- type: entity
+  parent: ChevronMonolit
+  id: Z14ChevronMonolit50
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+    - type: Stack
+      count: 50
+
+- type: entity
+  parent: ChevronMonolit
+  id: Z14ChevronMonolit100
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+    - type: Stack
+      count: 100

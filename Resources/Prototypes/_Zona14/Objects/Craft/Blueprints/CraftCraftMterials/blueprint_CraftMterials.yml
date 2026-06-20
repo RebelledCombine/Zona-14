@@ -1,0 +1,24 @@
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14STCraftLinenFabricT1Blueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: T1 Fabric Recipe
+  components:
+    - type: STBlueprint
+      blueprint: recipeSTCraftLinenFabricT1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

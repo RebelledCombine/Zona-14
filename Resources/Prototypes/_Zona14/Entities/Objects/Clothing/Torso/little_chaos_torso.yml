@@ -1,0 +1,12 @@
+- type: entity
+  parent: Z14BaseClothingTorso
+  id: Z14STClothingTorsoSerafimLittleChaos
+  categories: [ Zona14 ]
+  name: Special Son of the Star Follower Form
+  description: Material unknown. Size unknown. Sewing method unknown. What are these green threads?...
+  suffix: Z14
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/Torso/Serafims/little_chaos_torso.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/Torso/Serafims/little_chaos_torso.rsi

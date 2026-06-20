@@ -1,0 +1,320 @@
+# apparition spawners
+
+- type: entity
+  name: apparition trigger (1) (25%)
+  id: Z14STTriggerPsiSnork125
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger125
+  suffix: Z14
+  components:
+  - type: SpawnOnApproach
+    prototypes:
+    - Z14MobMutantApparitionBase
+    - Z14MobMutantApparitionDog
+    - Z14MobMutantApparitionBoar
+    - Z14MobMutantApparitionSnork
+    - Z14MobMutantApparitionSucker
+    restricted:
+    - Z14MobMutantApparitionBase
+    - Z14MobMutantApparitionDog
+    - Z14MobMutantApparitionBoar
+    - Z14MobMutantApparitionSnork
+    - Z14MobMutantApparitionSucker
+
+- type: entity
+  name: apparition trigger (1) (25%) 30m
+  id: Z14STTriggerPsiSnork112530
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger112530
+  suffix: Z14
+  components:
+  - type: SpawnOnApproach
+    prototypes:
+    - Z14MobMutantApparitionBase
+    - Z14MobMutantApparitionDog
+    - Z14MobMutantApparitionBoar
+    - Z14MobMutantApparitionSnork
+    - Z14MobMutantApparitionSucker
+    restricted:
+    - Z14MobMutantApparitionBase
+    - Z14MobMutantApparitionDog
+    - Z14MobMutantApparitionBoar
+    - Z14MobMutantApparitionSnork
+    - Z14MobMutantApparitionSucker
+
+- type: entity
+  name: apparition trigger (1) (50%) 30m
+  id: Z14STTriggerPsiSnork115030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger115030
+  suffix: Z14
+  components:
+  - type: SpawnOnApproach
+    prototypes:
+    - Z14MobMutantApparitionBase
+    - Z14MobMutantApparitionDog
+    - Z14MobMutantApparitionBoar
+    - Z14MobMutantApparitionSnork
+    - Z14MobMutantApparitionSucker
+    restricted:
+    - Z14MobMutantApparitionBase
+    - Z14MobMutantApparitionDog
+    - Z14MobMutantApparitionBoar
+    - Z14MobMutantApparitionSnork
+    - Z14MobMutantApparitionSucker
+
+- type: entity
+  name: apparition trigger (1) (75%) 30m
+  id: Z14STTriggerPsiSnork117530
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger117530
+  suffix: Z14
+  components:
+  - type: SpawnOnApproach
+    prototypes:
+    - Z14MobMutantApparitionBase
+    - Z14MobMutantApparitionDog
+    - Z14MobMutantApparitionBoar
+    - Z14MobMutantApparitionSnork
+    - Z14MobMutantApparitionSucker
+    restricted:
+    - Z14MobMutantApparitionBase
+    - Z14MobMutantApparitionDog
+    - Z14MobMutantApparitionBoar
+    - Z14MobMutantApparitionSnork
+    - Z14MobMutantApparitionSucker
+
+- type: entity
+  name: apparition trigger (1) (100%) 30m
+  id: Z14STTriggerPsiSnork1110030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger1110030
+  suffix: Z14
+  components:
+  - type: SpawnOnApproach
+    prototypes:
+    - Z14MobMutantApparitionBase
+    - Z14MobMutantApparitionDog
+    - Z14MobMutantApparitionBoar
+    - Z14MobMutantApparitionSnork
+    - Z14MobMutantApparitionSucker
+    restricted:
+    - Z14MobMutantApparitionBase
+    - Z14MobMutantApparitionDog
+    - Z14MobMutantApparitionBoar
+    - Z14MobMutantApparitionSnork
+    - Z14MobMutantApparitionSucker
+
+# Multi-spawn variants (1-2)
+
+- type: entity
+  name: apparition trigger (1-2) (25%) 30m
+  id: Z14STTriggerPsiSnork122530
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger122530
+  suffix: Z14
+  components:
+  - type: SpawnOnApproach
+    prototypes:
+    - Z14MobMutantApparitionBase
+    - Z14MobMutantApparitionDog
+    - Z14MobMutantApparitionBoar
+    - Z14MobMutantApparitionSnork
+    - Z14MobMutantApparitionSucker
+    restricted:
+    - Z14MobMutantApparitionBase
+    - Z14MobMutantApparitionDog
+    - Z14MobMutantApparitionBoar
+    - Z14MobMutantApparitionSnork
+    - Z14MobMutantApparitionSucker
+
+- type: entity
+  name: apparition trigger (1-2) (50%) 30m
+  id: Z14STTriggerPsiSnork125030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger125030
+  suffix: Z14
+  components:
+  - type: SpawnOnApproach
+    prototypes:
+    - Z14MobMutantApparitionBase
+    - Z14MobMutantApparitionDog
+    - Z14MobMutantApparitionBoar
+    - Z14MobMutantApparitionSnork
+    - Z14MobMutantApparitionSucker
+    restricted:
+    - Z14MobMutantApparitionBase
+    - Z14MobMutantApparitionDog
+    - Z14MobMutantApparitionBoar
+    - Z14MobMutantApparitionSnork
+    - Z14MobMutantApparitionSucker
+
+- type: entity
+  name: apparition trigger (1-2) (75%) 30m
+  id: Z14STTriggerPsiSnork127530
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger127530
+  suffix: Z14
+  components:
+  - type: SpawnOnApproach
+    prototypes:
+    - Z14MobMutantApparitionBase
+    - Z14MobMutantApparitionDog
+    - Z14MobMutantApparitionBoar
+    - Z14MobMutantApparitionSnork
+    - Z14MobMutantApparitionSucker
+    restricted:
+    - Z14MobMutantApparitionBase
+    - Z14MobMutantApparitionDog
+    - Z14MobMutantApparitionBoar
+    - Z14MobMutantApparitionSnork
+    - Z14MobMutantApparitionSucker
+
+- type: entity
+  name: apparition trigger (1-2) (100%) 30m
+  id: Z14STTriggerPsiSnork1210030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger1210030
+  suffix: Z14
+  components:
+  - type: SpawnOnApproach
+    prototypes:
+    - Z14MobMutantApparitionBase
+    - Z14MobMutantApparitionDog
+    - Z14MobMutantApparitionBoar
+    - Z14MobMutantApparitionSnork
+    - Z14MobMutantApparitionSucker
+    restricted:
+    - Z14MobMutantApparitionBase
+    - Z14MobMutantApparitionDog
+    - Z14MobMutantApparitionBoar
+    - Z14MobMutantApparitionSnork
+    - Z14MobMutantApparitionSucker
+
+# Multi-spawn variants (1-4)
+
+- type: entity
+  name: apparition trigger (1-4) (20%) 30m
+  id: Z14STTriggerPsiSnork142030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger142030
+  suffix: Z14
+  components:
+  - type: SpawnOnApproach
+    prototypes:
+    - Z14MobMutantApparitionBase
+    - Z14MobMutantApparitionDog
+    - Z14MobMutantApparitionBoar
+    - Z14MobMutantApparitionSnork
+    - Z14MobMutantApparitionSucker
+    restricted:
+    - Z14MobMutantApparitionBase
+    - Z14MobMutantApparitionDog
+    - Z14MobMutantApparitionBoar
+    - Z14MobMutantApparitionSnork
+    - Z14MobMutantApparitionSucker
+
+- type: entity
+  name: apparition trigger (1-4) (50%) 30m
+  id: Z14STTriggerPsiSnork145030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger145030
+  suffix: Z14
+  components:
+  - type: SpawnOnApproach
+    prototypes:
+    - Z14MobMutantApparitionBase
+    - Z14MobMutantApparitionDog
+    - Z14MobMutantApparitionBoar
+    - Z14MobMutantApparitionSnork
+    - Z14MobMutantApparitionSucker
+    restricted:
+    - Z14MobMutantApparitionBase
+    - Z14MobMutantApparitionDog
+    - Z14MobMutantApparitionBoar
+    - Z14MobMutantApparitionSnork
+    - Z14MobMutantApparitionSucker
+
+- type: entity
+  name: apparition trigger (1-4) (75%) 30m
+  id: Z14STTriggerPsiSnork147530
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger147530
+  suffix: Z14
+  components:
+  - type: SpawnOnApproach
+    prototypes:
+    - Z14MobMutantApparitionBase
+    - Z14MobMutantApparitionDog
+    - Z14MobMutantApparitionBoar
+    - Z14MobMutantApparitionSnork
+    - Z14MobMutantApparitionSucker
+    restricted:
+    - Z14MobMutantApparitionBase
+    - Z14MobMutantApparitionDog
+    - Z14MobMutantApparitionBoar
+    - Z14MobMutantApparitionSnork
+    - Z14MobMutantApparitionSucker
+
+- type: entity
+  name: apparition trigger (1-4) (100%) 30m
+  id: Z14STTriggerPsiSnork1410030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger1410030
+  suffix: Z14
+  components:
+  - type: SpawnOnApproach
+    prototypes:
+    - Z14MobMutantApparitionBase
+    - Z14MobMutantApparitionDog
+    - Z14MobMutantApparitionBoar
+    - Z14MobMutantApparitionSnork
+    - Z14MobMutantApparitionSucker
+    restricted:
+    - Z14MobMutantApparitionBase
+    - Z14MobMutantApparitionDog
+    - Z14MobMutantApparitionBoar
+    - Z14MobMutantApparitionSnork
+    - Z14MobMutantApparitionSucker
+
+- type: entity
+  name: apparition trigger (2) (100%) 30m
+  id: Z14STTriggerPsiSnork2210030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger2210030
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+      - Z14MobMutantApparitionBase
+      - Z14MobMutantApparitionDog
+      - Z14MobMutantApparitionBoar
+      - Z14MobMutantApparitionSnork
+      - Z14MobMutantApparitionSucker
+      restricted:
+      - Z14MobMutantApparitionBase
+      - Z14MobMutantApparitionDog
+      - Z14MobMutantApparitionBoar
+      - Z14MobMutantApparitionSnork
+      - Z14MobMutantApparitionSucker
+
+- type: entity
+  name: apparition trigger (3) (100%) 30m
+  id: Z14STTriggerPsiSnork3310030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger3310030
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+      - Z14MobMutantApparitionBase
+      - Z14MobMutantApparitionDog
+      - Z14MobMutantApparitionBoar
+      - Z14MobMutantApparitionSnork
+      - Z14MobMutantApparitionSucker
+      restricted:
+      - Z14MobMutantApparitionBase
+      - Z14MobMutantApparitionDog
+      - Z14MobMutantApparitionBoar
+      - Z14MobMutantApparitionSnork
+      - Z14MobMutantApparitionSucker

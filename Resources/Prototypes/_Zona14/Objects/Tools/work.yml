@@ -1,0 +1,242 @@
+- type: entity
+  parent: BaseStructure
+  id: Z14StalkerWorkbench
+  categories: [ Zona14 ]
+  name: Workbench
+  description: Vise Workbench for working with materials and devices.
+  suffix: Z14
+  components:
+    - type: Tag
+      tags:
+        - STWorkbench
+    - type: ContainerContainer
+      containers:
+        storagebase: !type:Container
+    - type: UserInterface
+      interfaces:
+        enum.StorageUiKey.Key:
+          type: StorageBoundUserInterface
+    - type: InteractionOutline
+    - type: Clickable
+    - type: Sprite
+      sprite: _Stalker/Objects/Devices/workbench.rsi
+      state: icon
+    - type: Transform
+      noRot: true
+    - type: Storage
+      craft: true
+      maxItemSize: Ginormous
+      grid:
+        - 0,0,12,12
+
+- type: entity
+  parent: StalkerWorkbench
+  id: Z14StalkerJabWorkbench
+  categories: [ Zona14 ]
+  name: Toad Workbench
+  description: A crafting table with a set of advanced tools for disassembling and researching things
+  suffix: Z14
+  components:
+    - type: ContainerContainer
+      containers:
+        storagebase: !type:Container
+    - type: UserInterface
+      interfaces:
+        enum.StorageUiKey.Key:
+          type: StorageBoundUserInterface
+    - type: InteractionOutline
+    - type: Clickable
+    - type: Sprite
+      sprite: _Stalker/Objects/Devices/workbench.rsi
+      state: jab
+    - type: Transform
+      noRot: true
+    - type: Storage
+      craft: true
+      disassemble: true
+      maxItemSize: Ginormous
+      grid:
+        - 0,0,12,12
+
+- type: entity
+  parent: ClothingBackpack
+  id: Z14ClothingBackpackWorkbench
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Backpack Workshop
+  description: Backpack with handy tools for crafting a variety of items.
+  components:
+    - type: Tag
+      tags:
+        - STWorkbench
+    - type: Sprite
+      sprite: Clothing/Back/Backpacks/engineering.rsi
+    - type: Storage
+      craft: true
+      maxItemSize: Large
+      grid:
+        - 0,0,4,8
+    - type: STWeight
+      self: 25
+
+- type: entity
+  parent: BaseStructure
+  id: Z14StalkerWorkbenchOFF
+  categories: [ Zona14 ]
+  name: Rented Workbench (Not Active)
+  description: Vise Workbench for working with materials and devices. To work on it, you need a coupon that allows you to work for 10 minutes. The owner is not responsible for the loss of items due to the end of the rental.
+  suffix: Z14
+  components:
+    - type: InteractionOutline
+    - type: Clickable
+    - type: Sprite
+      sprite: _Stalker/Objects/Devices/workbench.rsi
+      state: icon
+    - type: Transform
+      noRot: true
+    - type: Storage
+      grid:
+        - 0,0,12,12
+    - type: ContainerContainer
+      containers:
+        storagebase: !type:Container
+          ents: []
+    - type: Craftable
+    - type: ActivatableUI
+      key: enum.ShopUiKey.Key
+      singleUser: true
+    - type: UserInterface
+      interfaces:
+        enum.ShopUiKey.Key:
+          type: ShopBoundUserInterface
+    - type: Shop
+      moneyId: Roubles
+      shopPresetId: Work
+
+- type: shopPreset
+  id: Z14Work
+  categories:
+    - name: Rental
+      priority: 1
+      items:
+        Coupon: 500
+
+- type: entity
+  parent: StalkerWorkbench
+  id: Z14StalkerWorkbenchON
+  name: Rented Workbench (Active)
+  description: "Vise Workbench for working with materials and devices. To work on it, you need a coupon that allows you to work for 10 minutes. The owner is not responsible for the loss of items due to the end of the rental."
+  suffix: Z14
+  categories: [ HideSpawnMenu, Zona14 ]
+  components:
+  - type: TimedDespawn
+    lifetime: 600
+  - type: SpawnOnDespawn
+    prototype: StalkerWorkbenchOFF
+
+
+############### Lathes
+
+- type: entity
+  parent: StalkerWorkbench
+  id: Z14StalkerWorktable1
+  categories: [ Zona14 ]
+  name: lathe
+  description: A fixture used to machine parts, mostly made of metal.
+  suffix: Z14
+  components:
+    - type: InteractionOutline
+    - type: Clickable
+    - type: Sprite
+      sprite: _Stalker/Objects/Devices/worktables.rsi
+      state: worktable_1
+    - type: Transform
+      noRot: true
+    - type: Craftable
+
+- type: entity
+  parent: StalkerWorkbench
+  id: Z14StalkerTableCircularNew
+  categories: [ Zona14 ]
+  name: circular saw table
+  description: Circular saw or circular saw, as it is most often called, is needed for sawing a wide variety of wooden workpieces.
+  suffix: Z14
+  components:
+    - type: InteractionOutline
+    - type: Clickable
+    - type: Sprite
+      sprite: _Stalker/Objects/Devices/circular_table.rsi
+      state: ctn
+    - type: Transform
+      noRot: true
+
+- type: entity
+  parent: StalkerWorkbench
+  id: Z14StalkerTableCircularOld
+  categories: [ Zona14 ]
+  name: circular saw table
+  description: Circular saw or circular saw, as it is most often called, is needed for sawing a wide variety of wooden workpieces. Looks old...
+  suffix: Z14
+  components:
+    - type: InteractionOutline
+    - type: Clickable
+    - type: Sprite
+      sprite: _Stalker/Objects/Devices/circular_table.rsi
+      state: cto
+    - type: Transform
+      noRot: true
+
+- type: entity
+  parent: BaseStructure
+  id: Z14STBrockenSteel
+  categories: [ Zona14 ]
+  name: Broken Workbench
+  description: A broken workbench, dusty and stained with oil—silent as a witness to production halted in time.
+  suffix: Z14
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Decoration/steel_workbench.rsi
+      state: icon_stel
+    - type: Transform
+      noRot: true
+
+- type: entity
+  parent: BaseStructure
+  id: Z14STBrockenWorkbench
+  categories: [ Zona14 ]
+  name: Broken Lathe Table
+  description: A broken lathe table, covered in dust and oil stains, froze in silence like a silent witness to a halted production.
+  suffix: Z14
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Devices/worktables.rsi
+      state: worktable_broken
+    - type: Transform
+      noRot: true
+
+# Activation currency
+
+- type: entity
+  parent: BaseItem
+  id: Z14Coupon
+  categories: [ Zona14 ]
+  name: Coupon
+  description: Workbench rental coupon. Allows you to use the rented workbench for 10 minutes. The owner is not responsible for items lost due to the end of the rental.
+  suffix: Z14
+  components:
+    - type: STWeight
+      self: 0.05
+    - type: Sprite
+      sprite:  _Stalker/Objects/Misc/coupon.rsi
+      state: coupon
+    - type: Craftable
+
+- type: lightCraftingRecipe
+  id: Z14lightCraftActiveWorkbench
+  results:
+    - StalkerWorkbenchON
+  steps:
+    firstIngredient: StalkerWorkbenchOFF
+    secondIngredient: Coupon
+    time: 1
+

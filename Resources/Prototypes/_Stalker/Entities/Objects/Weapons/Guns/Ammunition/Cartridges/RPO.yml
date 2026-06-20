@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: CartridgeRocketRPO
-  name: Выстрел РПО
+  name: RPO Shot
   parent: BaseItem
-  description: Военные преступления 
+  description: War crimes
   components:
   - type: Item
     size: Small

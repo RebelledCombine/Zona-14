@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: STClothingOuterBaseLargeToggleable
   id: ClothingOuterArmorYeger
-  name: Егерь
-  description: Разработанный аномалистами костюм для ведение боевых действий в аномальных зонах. Благодоря пропитки в аномалии имеет отличную пулестойкость.
+  name: Jaeger
+  description: Animalist-designed suit for fighting in anomalous zones. Due to the impregnation in the anomaly, it has excellent bullet resistance.
   suffix: ST, T4, Env
   components:
   - type: STWeight
@@ -40,8 +41,8 @@
 - type: entity
   parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
   id: ClothingHeadHelmetYeger
-  name: шлем «Егеря»
-  description: Защитит от аномалий и радиации, но точно не от пуль.
+  name: Jaeger Helmet
+  description: Protects against anomalies and radiation, but definitely not against bullets.
   suffix: ST, T4
   categories: [ HideSpawnMenu ]
   components:
@@ -75,8 +76,8 @@
 - type: entity
   parent: ClothingOuterArmorYeger
   id: ClothingOuterArmorYegerFreedom
-  name: костюм «Кикимора»
-  description: Универсальный костюм Кикимора сделан умельцами из разнообразных защитных костюмов. Позволяет владельцу комфортно чувствовать себя в зонах с аномальной активностью. Имеет защиту от пуль. Сверху пришита маскировочная сетка.
+  name: Kikimora costume
+  description: "Kikimora's versatile costume is made by craftsmen from a variety of protective suits. Allows the wearer to feel comfortable in areas with abnormal activity. It has bullet protection. A camouflage net is sewn on top."
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/outerClothing/yeger-freedom.rsi
@@ -108,7 +109,7 @@
 - type: entity
   parent: ClothingHeadHelmetYeger
   id: ClothingHeadHelmetYegerFreedom
-  name: шлем «Кикиморы»
+  name: Kikimora Helmet
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite

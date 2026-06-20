@@ -1,0 +1,226 @@
+- type: entity
+  id: Z14Base545Mag10
+  categories: [ Zona14 ]
+  name: 5.45x39 magazine (10)
+  description: 5.45x39 magazine for AK. Bullet capacity 10. They sell empty.
+  parent: BaseItem
+  suffix: Z14
+  components:
+  - type: STBulkBuyable # stalker-14-en
+    maxQuantity: 10
+  - type: STWeight
+    self: 0.5
+  - type: Tag
+    tags:
+      - Magazine545
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - STCartridge545
+    capacity: 10
+  - type: Item
+    size: Small
+    shape:
+      - 0,0,0,0
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+      storagebase: !type:Container
+        ents: [ ]
+      item_slot: !type:ContainerSlot { }
+  - type: RepositoryItem
+    categoryName: Magazines
+  - type: Sprite
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Magazines/545/10.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
+  - type: ItemSlots
+    slots:
+      item_slot:
+        name: mop-bucket-slot-component-slot-name-item123
+        ejectVerbText: mop-bucket-slot-component-eject-verb123
+        whitelist:
+          tags:
+            - STElasticRubberRed
+            - STElasticRubberGreen
+            - STElasticRubberBlue
+  - type: ItemMapper
+    mapLayers:
+      red_10:
+        whitelist:
+          tags:
+            - STElasticRubberRed
+      green_10:
+        whitelist:
+          tags:
+            - STElasticRubberGreen
+      blue_10:
+        whitelist:
+          tags:
+            - STElasticRubberBlue
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Magazines/545/elastic_rubber.rsi
+
+- type: entity
+  id: Z14545Mag20
+  categories: [ Zona14 ]
+  name: 5.45x39 magazine (20)
+  description: 5.45x39 magazine for AK. Bullet capacity 20. They sell empty.
+  parent: Base545Mag10
+  suffix: Z14
+  components:
+  - type: STWeight
+    self: 0.15
+  - type: BallisticAmmoProvider
+    capacity: 20
+  - type: Item
+    size: Small
+    shape:
+      - 0,0,0,1
+  - type: Sprite
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Magazines/545/20.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: ItemMapper
+    mapLayers:
+      red_20:
+        whitelist:
+          tags:
+            - STElasticRubberRed
+      green_20:
+        whitelist:
+          tags:
+            - STElasticRubberGreen
+      blue_20:
+        whitelist:
+          tags:
+            - STElasticRubberBlue
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Magazines/545/elastic_rubber.rsi
+
+- type: entity
+  id: Z14545Mag30
+  categories: [ Zona14 ]
+  name: 5.45x39 magazine (30)
+  description: 5.45x39 magazine for AK. Bullet capacity 30. They sell empty.
+  parent: Base545Mag10
+  suffix: Z14
+  components:
+  - type: STWeight
+    self: 0.25
+  - type: BallisticAmmoProvider
+    capacity: 30
+  - type: Item
+    size: Small
+    shape:
+      - 0,0,0,1
+  - type: Sprite
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Magazines/545/30.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: ItemMapper
+    mapLayers:
+      red_30:
+        whitelist:
+          tags:
+            - STElasticRubberRed
+      green_30:
+        whitelist:
+          tags:
+            - STElasticRubberGreen
+      blue_30:
+        whitelist:
+          tags:
+            - STElasticRubberBlue
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Magazines/545/elastic_rubber.rsi
+
+- type: entity
+  id: Z14545Mag45
+  categories: [ Zona14 ]
+  name: 5.45x39 magazine (45)
+  description: 5.45x39 magazine for AK. Bullet capacity 45. They sell empty.
+  parent: Base545Mag10
+  suffix: Z14
+  components:
+  - type: STWeight
+    self: 0.35
+  - type: BallisticAmmoProvider
+    capacity: 45
+  - type: Item
+    size: Normal
+    shape:
+      - 0,0,2,0
+  - type: Sprite
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Magazines/545/45.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: ItemMapper
+    mapLayers:
+      red_45:
+        whitelist:
+          tags:
+            - STElasticRubberRed
+      green_45:
+        whitelist:
+          tags:
+            - STElasticRubberGreen
+      blue_45:
+        whitelist:
+          tags:
+            - STElasticRubberBlue
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Magazines/545/elastic_rubber.rsi
+
+- type: entity
+  id: Z14545Mag60
+  categories: [ Zona14 ]
+  name: 5.45x39 magazine (60)
+  description: 5.45x39 magazine for AK. Bullet capacity 60. They sell empty.
+  parent: Base545Mag10
+  suffix: Z14
+  components:
+  - type: STWeight
+    self: 0.5
+  - type: BallisticAmmoProvider
+    capacity: 60
+  - type: Item
+    size: Normal
+    shape:
+      - 0,0,1,1
+  - type: Sprite
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Magazines/545/60.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: ItemMapper
+    mapLayers:
+      red_60:
+        whitelist:
+          tags:
+            - STElasticRubberRed
+      green_60:
+        whitelist:
+          tags:
+            - STElasticRubberGreen
+      blue_60:
+        whitelist:
+          tags:
+            - STElasticRubberBlue
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Magazines/545/elastic_rubber.rsi

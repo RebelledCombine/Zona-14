@@ -42,7 +42,7 @@ public sealed class RDDeathScreenControl : RDControl
 
         _label = new Label
         {
-            Text = "потерян в зоне",
+            Text = Loc.GetString("st-death-screen-lost"), // Zona14: localized
             FontOverride = _resourceCache.GetFont("/Fonts/_RD/KosmoletFuturism.otf", 86),
             HorizontalAlignment = HAlignment.Center,
             VerticalAlignment = VAlignment.Center,

@@ -1,5 +1,6 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
-  name: Леший
+  name: Leshy
   parent: BaseMobMutant
   id: MobMutantLeshiy
   suffix: ST, T2

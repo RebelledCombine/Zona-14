@@ -1,5 +1,6 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
-  name: триггер нейтрал плоть (1-4) (20%)
+  name: neutral flesh trigger (1-4) (20%)
   id: STTriggerFleshNeutral142010
   parent: STBaseTrigger142010
   suffix: ST, T1, Trigger
@@ -11,7 +12,7 @@
         - MobMutantFleshNeutral
 
 - type: entity
-  name: триггер нейтрал плоть (1-4) (50%)
+  name: neutral flesh trigger (1-4) (50%)
   id: STTriggerFleshNeutral145010
   parent: STBaseTrigger145010
   suffix: ST, T1, Trigger
@@ -23,7 +24,7 @@
         - MobMutantFleshNeutral
 
 - type: entity
-  name: триггер нейтрал плоть (1-2) (10%)
+  name: neutral flesh trigger (1-2) (10%)
   id: STTriggerFleshNeutral121010
   parent: STBaseTrigger121010
   suffix: ST, T1, Trigger
@@ -35,7 +36,7 @@
         - MobMutantFleshNeutral
 
 - type: entity
-  name: триггер нейтрал плоть (1-2) (50%)
+  name: neutral flesh trigger (1-2) (50%)
   id: STTriggerFleshNeutral125010
   parent: STBaseTrigger125010
   suffix: ST, T1, Trigger
@@ -47,7 +48,7 @@
         - MobMutantFleshNeutral
 
 - type: entity
-  name: триггер плоть (1-4) (20%)
+  name: flesh trigger (1-4) (20%)
   id: STTriggerFlesh142010
   parent: STBaseTrigger142010
   suffix: ST, T1, Trigger
@@ -59,7 +60,7 @@
         - MobMutantFleshAgressive
 
 - type: entity
-  name: триггер плоть (1-4) (50%)
+  name: flesh trigger (1-4) (50%)
   id: STTriggerFlesh145010
   parent: STBaseTrigger145010
   suffix: ST, T1, Trigger
@@ -71,7 +72,7 @@
         - MobMutantFleshAgressive
 
 - type: entity
-  name: триггер плоть (1-2) (10%)
+  name: flesh trigger (1-2) (10%)
   id: STTriggerFlesh121010
   parent: STBaseTrigger121010
   suffix: ST, T1, Trigger
@@ -83,7 +84,7 @@
         - MobMutantFleshAgressive
 
 - type: entity
-  name: триггер плоть (1-2) (50%)
+  name: flesh trigger (1-2) (50%)
   id: STTriggerFlesh125010
   parent: STBaseTrigger125010
   suffix: ST, T1, Trigger

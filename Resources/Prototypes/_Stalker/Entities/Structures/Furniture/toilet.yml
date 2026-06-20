@@ -1,7 +1,8 @@
-﻿- type: entity
+﻿# Zona14: translated Russian names/descriptions to English
+- type: entity
   id: ToiletOld
-  name: грязный унитаз
-  description: Не стоит, садится на него.. я думаю.
+  name: dirty toilet
+  description: "I don't think you should sit on it."
   suffix: ST, Mapping, Dirty
   parent: SeatBase
   components:

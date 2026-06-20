@@ -1,6 +1,7 @@
+# Zona14: translated Russian names/descriptions to English
 - type: accessLevel
   id: Donate
-  name: донат
+  name: donation
 
 - type: entity
   parent: HermoDverTypeOne

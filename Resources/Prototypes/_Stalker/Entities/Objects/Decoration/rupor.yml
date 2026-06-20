@@ -1,9 +1,10 @@
-﻿- type: entity
+﻿# Zona14: translated Russian names/descriptions to English
+- type: entity
   parent: RadioBaseStalker
   id: STRuporDolg
-  suffix: ST, Долг
-  name: Рупор Долга
-  description: Труба в форме усечённого конуса, предназначенная для направленной передачи звука.
+  suffix: ST, Duty # Zona14: ST, Долг
+  name: Duty Loudspeaker
+  description: A truncated cone-shaped tube designed for directed sound transmission.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Other/rupor.rsi
@@ -17,9 +18,9 @@
 - type: entity
   parent: RadioBaseStalker
   id: STRuporProject
-  suffix: ST, Проект
-  name: Рупор Проекта
-  description: Труба в форме усечённого конуса, предназначенная для направленной передачи звука.
+  suffix: ST, Project # Zona14: ST, Проект
+  name: Project loudspeaker
+  description: A truncated cone-shaped tube designed for directional sound transmission.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Other/rupor.rsi

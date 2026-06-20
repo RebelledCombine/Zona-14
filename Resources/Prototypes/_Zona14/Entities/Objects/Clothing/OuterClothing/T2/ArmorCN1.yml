@@ -1,0 +1,64 @@
+- type: entity
+  parent: Z14ArmorBaseT1PvP
+  id: Z14ClothingOuterArmorZN1
+  categories: [ Zona14 ]
+  name: body armor with "ZN-1" overalls.
+  description: This body armor was developed for search operations in areas with low anomalous activity. Quality materials improved wear resistance.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/zn1.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/zn1.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetZN1
+
+- type: entity
+  parent: STClothingHeadHatBase
+  id: Z14ClothingHeadHelmetZN1
+  suffix: Z14
+  name: 'hood "ZN-1"'
+  categories: [ HideSpawnMenu, Zona14 ]
+  components:
+    - type: STWeight
+      self: 1
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/hats/zn1_helm.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/hats/zn1_helm.rsi
+    - type: HideLayerClothing
+      slots:
+      - Hair
+
+# Clear sky - 1
+
+- type: entity
+  parent: Z14ClothingOuterArmorZN1
+  id: Z14ClothingOuterArmorCN1
+  categories: [ Zona14 ]
+  name: body armor with "CH-1" overalls.
+  suffix: Z14
+  description: Standard Type II body armor providing solid protection against most damage types
+  components:
+  - type: STWeight
+    self: 5
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/cn1.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/cn1.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetCN1
+
+- type: entity
+  parent: Z14ClothingHeadHelmetZN1
+  id: Z14ClothingHeadHelmetCN1
+  suffix: Z14
+  name: 'hood "CH-1"'
+  categories: [ HideSpawnMenu, Zona14 ]
+  components:
+  - type: STWeight
+    self: 1
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/cn1_helm.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/cn1_helm.rsi

@@ -1,0 +1,150 @@
+- type: entity
+  parent: BaseItem
+  id: Z14Roubles
+  categories: [ Zona14 ]
+  name: roubles
+  description: National currency of the Russian Federation. An interesting fact is that 1 ruble is equal to 100 kopecks.
+  suffix: Z14
+  components:
+  - type: PhysicalComposition
+    materialComposition:
+      Credit: 1
+  - type: Stack
+    stackType: Roubles
+    count: 1
+    baseLayer: base
+    layerStates:
+    - cash
+    - cash_10
+    - cash_50
+    - cash_100
+    - cash_1000
+    - cash_2000
+    - cash_5000
+  - type: Sprite
+    sprite: _Stalker/Objects/Economy/rubles.rsi
+    state: cash
+    layers:
+    - state: cash
+      map: ["base"]
+  - type: Item
+    sprite: _Stalker/Objects/Economy/rubles.rsi
+    size: Small
+  - type: Physics
+    bodyType: Dynamic
+  - type: Fixtures
+    fixtures:
+      fix1:
+        density: 30
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.35,-0.2,0.25,0.1"
+        mask:
+        - ItemMask
+  - type: Appearance
+  - type: Tag
+    tags:
+    - Roubles
+  - type: RepositoryItem
+    categoryName: Currency
+
+- type: currency
+  id: Z14Roubles
+  displayName: store-currency-display-ruble
+  cash:
+    1: Roubles
+  canWithdraw: true
+
+- type: stack
+  id: Z14Roubles
+  name: stack-rouble
+  icon: { sprite: /Textures/_Stalker/Objects/Economy/rubles.rsi, state: cash }
+  spawn: Roubles
+  maxCount: 50000
+  splitAmounts: [10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 2000, 3000, 4000, 5000]
+
+- type: entity
+  parent: Roubles
+  id: Z14Roubles10
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Icon
+    sprite: _Stalker/Objects/Economy/rubles.rsi
+    state: cash_10
+  - type: Stack
+    count: 10
+
+
+- type: entity
+  parent: Roubles
+  id: Z14Roubles50
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Icon
+    sprite: _Stalker/Objects/Economy/rubles.rsi
+    state: cash_50
+  - type: Stack
+    count: 50
+
+- type: entity
+  parent: Roubles
+  id: Z14Roubles100
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Icon
+    sprite: _Stalker/Objects/Economy/rubles.rsi
+    state: cash_100
+  - type: Stack
+    count: 100
+
+- type: entity
+  parent: Roubles
+  id: Z14Roubles500
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Icon
+    sprite: _Stalker/Objects/Economy/rubles.rsi
+    state: cash_100
+  - type: Stack
+    count: 500
+
+- type: entity
+  parent: Roubles
+  id: Z14Roubles1000
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Icon
+    sprite: _Stalker/Objects/Economy/rubles.rsi
+    state: cash_1000
+  - type: Stack
+    count: 1000
+
+- type: entity
+  parent: Roubles
+  id: Z14Roubles2000
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Icon
+    sprite: _Stalker/Objects/Economy/rubles.rsi
+    state: cash_2000
+  - type: Stack
+    count: 2000
+
+
+- type: entity
+  parent: Roubles
+  id: Z14Roubles5000
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Icon
+    sprite: _Stalker/Objects/Economy/rubles.rsi
+    state: cash_5000
+  - type: Stack
+    count: 5000

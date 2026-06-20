@@ -1,0 +1,12 @@
+ent-Z14STEmissionEvent = Выброс
+    .desc = Обычный предмет, найденный в Зоне.
+    .suffix = Z14
+ent-Z14STEmissionEventDebug = Выброс (отладка)
+    .desc = Обычный предмет, найденный в Зоне.
+    .suffix = Z14
+ent-Z14STEmissionEventScheduler = Планировщик выбросов
+    .desc = Обычный предмет, найденный в Зоне.
+    .suffix = Z14
+ent-Z14STWeatherScheduler = Планировщик погоды
+    .desc = Обычный предмет, найденный в Зоне.
+    .suffix = Z14

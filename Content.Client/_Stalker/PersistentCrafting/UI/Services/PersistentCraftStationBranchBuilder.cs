@@ -24,7 +24,7 @@ public static class PersistentCraftStationBranchBuilder
         var searchText = viewModel.GetSearchText(branch);
         var craftableOnly = viewModel.GetCraftableOnly(branch);
 
-        // Каждый фильтр возвращает исходный список если фильтрация не нужна — без копирования.
+        // Each filter returns the original list if filtering is not needed — no copy. // Zona14: translated comment
         var filteredRecipes = selectedTier > 0
             ? FilterRecipesByTier(unlockedRecipes, selectedTier)
             : unlockedRecipes;
@@ -83,7 +83,7 @@ public static class PersistentCraftStationBranchBuilder
     {
         var query = searchText.Trim().ToLowerInvariant();
         if (string.IsNullOrWhiteSpace(query))
-            return recipes; // нет запроса — нет копии
+            return recipes; // no query — no copy // Zona14: translated comment
 
         var filtered = new List<PersistentCraftRecipePrototype>(recipes.Count);
         for (var i = 0; i < recipes.Count; i++)
@@ -122,7 +122,7 @@ public static class PersistentCraftStationBranchBuilder
         IReadOnlyDictionary<string, bool> craftabilityByRecipeId)
     {
         if (!craftableOnly)
-            return recipes; // фильтр выключен — нет копии
+            return recipes; // filter disabled — no copy // Zona14: translated comment
 
         var filtered = new List<PersistentCraftRecipePrototype>(recipes.Count);
         for (var i = 0; i < recipes.Count; i++)

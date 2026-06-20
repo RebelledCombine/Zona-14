@@ -64,7 +64,7 @@
   description: A physical marker for the Depo War Zone.
   components:
   - type: WarZone
-    proto: SvalkaDepo
+    proto: Z14SvalkaDepo
     portalName: Depo
   - type: Physics
     bodyType: Static
@@ -154,7 +154,7 @@
   description: A physical marker for the Depo War Zone.
   components:
   - type: WarZone
-    proto: LimanskLenin
+    proto: Z14LimanskLenin
     portalName: Lenin
   - type: Physics
     bodyType: Static
@@ -199,7 +199,7 @@
   description: A physical marker for the Depo War Zone.
   components:
   - type: WarZone
-    proto: KordonFerma
+    proto: Z14KordonFerma
     portalName: Ferma
   - type: Physics
     bodyType: Static
@@ -240,12 +240,12 @@
   categories: [ Zona14 ]
   suffix: Z14
   parent: MarkerBase
-  name: KordonATP War Zone
+  name: Z14KordonATP War Zone
   description: A physical marker for the Depo War Zone.
   components:
   - type: WarZone
-    proto: KordonATP
-    portalName: KordonATP
+    proto: Z14KordonATP
+    portalName: Z14KordonATP
   - type: Physics
     bodyType: Static
     canCollide: true
@@ -276,7 +276,7 @@
       price: 500
     - productEntity: Z14STWeaponSniperVSS
       price: 420
-    - productEntity: STClothingOuterArmorVeryHeavy
+    - productEntity: Z14STClothingOuterArmorVeryHeavy
       price: 400
     - productEntity: Z14STWeaponRifleOC14939
       price: 370
@@ -284,7 +284,7 @@
 #      price: 320
     - productEntity: Z14STWeaponSniperSVDS
       price: 310
-    - productEntity: ClothingHeadHelmetUlach
+    - productEntity: Z14ClothingHeadHelmetUlach
       price: 300
     - productEntity: Z14STWeaponRifleHK416
       price: 270
@@ -292,9 +292,9 @@
       price: 270
 #      productEntity: STShotgunKS23
 #      price: 240
-    - productEntity: ClothingBeltCrafterStalker
+    - productEntity: Z14ClothingBeltCrafterStalker
       price: 200
-    - productEntity: StalkerMedBandShopCrate
+    - productEntity: Z14StalkerMedBandShopCrate
       price: 75
     - productEntity: 939Mag30
       price: 45

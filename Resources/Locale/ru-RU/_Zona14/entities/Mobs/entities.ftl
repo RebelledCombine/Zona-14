@@ -1,0 +1,89 @@
+ent-Z14MobStalkerAnomalist = кукла аномалист (переименуй меня)
+    .desc = Существо Зоны.
+    .suffix = Z14
+ent-Z14MobStalkerCS = кукла член Чистого Неба (переименуй меня)
+    .desc = Существо Зоны.
+    .suffix = Z14
+ent-Z14MobStalkerClown = кукла циркач (переименуй меня)
+    .desc = Существо Зоны.
+    .suffix = Z14
+ent-Z14MobStalkerDolg = кукла Долговец (переименуй меня)
+    .desc = Существо Зоны.
+    .suffix = Z14
+ent-Z14MobStalkerFreeadom = кукла свободовец (переименуй меня)
+    .desc = Существо Зоны.
+    .suffix = Z14
+ent-Z14MobStalkerGreh = кукла греховец (переименуй меня)
+    .desc = Существо Зоны.
+    .suffix = Z14
+ent-Z14MobStalkerMerc = кукла наёмник (переименуй меня)
+    .desc = Существо Зоны.
+    .suffix = Z14
+ent-Z14MobStalkerMilitary = кукла ОКСОП (переименуй меня)
+    .desc = Существо Зоны.
+    .suffix = Z14
+ent-Z14MobStalkerMilitaryHead = кукла ОКСОП глава (переименуй меня)
+    .desc = Существо Зоны.
+    .suffix = Z14
+ent-Z14MobStalkerRene = кукла ренегат (переименуй меня)
+    .desc = Существо Зоны.
+    .suffix = Z14
+ent-Z14MobStalkerSBU = кукла СБУ (переименуй меня)
+    .desc = Существо Зоны.
+    .suffix = Z14
+ent-Z14MobStalkerSci = кукла учёный (переименуй меня)
+    .desc = Существо Зоны.
+    .suffix = Z14
+ent-Z14MobStalkerSeraphim = кукла серафим (переименуй меня)
+    .desc = Существо Зоны.
+    .suffix = Z14
+ent-Z14MobStalkerStalker = кукла Сталкера (переименуй меня)
+    .desc = Существо Зоны.
+    .suffix = Z14
+ent-Z14MobStalkerUN = кукла ООНовец (переименуй меня)
+    .desc = Существо Зоны.
+    .suffix = Z14
+ent-Z14MobStalkerZavet = кукла заветовец (переименуй меня)
+    .desc = Существо Зоны.
+    .suffix = Z14
+ent-Z14MobStalkerbandit = кукла бандит (переименуй меня)
+    .desc = Существо Зоны.
+    .suffix = Z14
+ent-Z14STMobStalker = Меченый
+    .desc = Существо Зоны.
+    .suffix = Z14
+ent-Z14STMobStalkerT4 = Меченый T4
+    .desc = Существо Зоны.
+    .suffix = Z14
+
+ent-Z14MobStalkerLastDay = кукла ренегат (переименуй меня)
+    .desc = Объект зоны.
+    .suffix = Z14
+
+ent-Z14MobStalkerMilitia = кукла Командир Ополчение (переименуй меня)
+    .desc = Объект зоны.
+    .suffix = Z14
+
+ent-Z14MobStalkerMilitiaCommander = кукла последний день (переименуй меня)
+    .desc = Объект зоны.
+    .suffix = Z14
+
+ent-Z14MobStalkerMonolith = кукла СБУ (переименуй меня)
+    .desc = Объект зоны.
+    .suffix = Z14
+
+ent-Z14MobStalkerProject = кукла циркач (переименуй меня)
+    .desc = Объект зоны.
+    .suffix = Z14
+
+ent-Z14MobStalkerSci_decan = кукла ректор (переименуй меня)
+    .desc = Объект зоны.
+    .suffix = Z14
+
+ent-Z14MobStalkerSci_rector = кукла бандит (переименуй меня)
+    .desc = Объект зоны.
+    .suffix = Z14
+
+ent-Z14MobStalkerToad = кукла заветовец (переименуй меня)
+    .desc = Объект зоны.
+    .suffix = Z14

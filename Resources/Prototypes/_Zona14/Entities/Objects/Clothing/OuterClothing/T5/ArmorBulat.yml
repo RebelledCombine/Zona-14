@@ -1,0 +1,97 @@
+# Base
+- type: entity
+  parent: Z14ArmorBaseT1PvP
+  id: Z14STClothingOuterArmorBulatBase
+  categories: [ Zona14 ]
+  abstract: true
+  name: damask
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/bulat_military.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/bulat_military.rsi
+    
+# Coventant
+
+- type: entity
+  parent: Z14STClothingOuterArmorBulatBase
+  id: Z14ClothingOuterArmorBulatCovenant
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Covenant Damask
+  description: Type V Bulat providing solid protection against most damage types.
+  components:
+    - type: STWeight
+      self: 5
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/outerClothing/Bulat/covenant.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/outerClothing/Bulat/covenant.rsi
+
+# Merc
+
+- type: entity
+  parent: Z14STClothingOuterArmorBulatBase
+  id: Z14ClothingOuterArmorBulatMercenary
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Mercenary Bulat
+  description: Type V Bulat providing solid protection against most damage types
+  components:
+  - type: STWeight
+    self: 5
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/bulat_mercenary.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/bulat_mercenary.rsi
+
+# Monolith
+
+- type: entity
+  parent: Z14STClothingOuterArmorBulatBase
+  id: Z14ClothingOuterArmorBulatMonolith
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Monolith Damask
+  description: Type V Bulat providing solid protection against most damage types
+  components:
+  - type: STWeight
+    self: 5
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/bulat_monolit.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/bulat_monolit.rsi
+
+# Military
+
+- type: entity
+  parent: Z14STClothingOuterArmorBulatBase
+  id: Z14ClothingOuterArmorBulatMilitary
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Military Bulat
+  description: Type V Bulat providing solid protection against most damage types
+  components:
+  - type: STWeight
+    self: 5
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/bulat_military.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/bulat_military.rsi
+
+# Deserters
+
+- type: entity
+  parent: Z14STClothingOuterArmorBulatBase
+  id: Z14ClothingOuterArmorLegatDeserter
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Renegade Legate
+  description: Deserters' Bulat providing excellent protection.
+  components:
+  - type: STWeight
+    self: 5
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/legat_deserter.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/legat_deserter.rsi

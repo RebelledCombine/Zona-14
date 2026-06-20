@@ -1,0 +1,86 @@
+- type: entity
+  parent: Z14ArmorBaseT1PvP
+  id: Z14STClothingOuterArmorLightPlateVestBasePSZ7
+  categories: [ Zona14 ]
+  name: PSZ-7 Officer
+  suffix: Z14
+  description: PSZ-7 series army body armor (personal protection system) provides protection sufficient for combat against lightly armed opponents. No anomaly protection. Officer variant, woodland camo.
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/outerClothing/psz7v2.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/outerClothing/psz7v2.rsi
+
+- type: entity
+  parent: Z14STClothingOuterArmorLightPlateVestBasePSZ7
+  id: Z14STClothingOuterArmorLightPlateVestBasePSZ7v1
+  categories: [ Zona14 ]
+  name: PSZ-7 Olive
+  suffix: Z14
+  description: PSZ-7 series army body armor (personal protection system) provides protection sufficient for combat against lightly armed opponents. No anomaly protection.
+  components:
+  - type: STWeight
+    self: 5
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/psz7v1.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/psz7v1.rsi
+
+- type: entity
+  parent: Z14STClothingOuterArmorLightPlateVestBasePSZ7
+  id: Z14STClothingOuterArmorLightPlateVestBasePSZ7v3
+  categories: [ Zona14 ]
+  name: PSZ-7
+  suffix: Z14
+  description: PSZ-7 series army body armor (personal protection system) provides protection sufficient for combat against lightly armed opponents. No anomaly protection.
+  components:
+  - type: STWeight
+    self: 5
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/psz7v3.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/psz7v3.rsi
+
+- type: entity
+  parent: Z14STClothingOuterArmorLightPlateVestBasePSZ7
+  id: Z14STClothingOuterArmorDesertersPSZ7
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Decurion Renegade PSZ-7
+  description: PSZ-7 series army body armor of the Deserters, identical to the base except for color scheme and shoulder pads
+  components:
+  - type: STWeight
+    self: 5
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/deserter_psz7.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/deserter_psz7.rsi
+
+- type: entity
+  parent: Z14STClothingOuterArmorLightPlateVestBasePSZ7
+  id: Z14STClothingOuterArmorLightPlateVestBasePSZ7Zavet
+  categories: [ Zona14 ]
+  name: PSZ-7 of the Covenant
+  suffix: Z14
+  description: PSZ-7 series army body armor of the Covenant, identical to the base except for color scheme
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/psz7_zavet.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/psz7_zavet.rsi
+  - type: STWeight
+    self: 5
+- type: entity
+  parent: Z14STClothingOuterArmorLightPlateVestBasePSZ7
+  id: Z14STClothingOuterArmorLightPlateVestBasePSZ7rene
+  categories: [ Zona14 ]
+  name: PSZ-7 'Fang'
+  suffix: Z14
+  description: A former military PSZ-7, now a walking nightmare. Brown jumpsuit, bone spikes sticking out in all directions, and a skull on the belt as a reminder. You are the prey. Renegades turned this armor into an embodiment of their madness.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/psz7-palionka.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/psz7-palionka.rsi
+  - type: STWeight
+    self: 5

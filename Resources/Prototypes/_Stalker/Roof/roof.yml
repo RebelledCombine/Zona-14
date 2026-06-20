@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: StalkerRoof
   parent: MarkerBase
-  name: крыша
-  description: Создаёт тень на тайле, как под крышей.
+  name: Roof
+  description: This is a roof, blocks lighting. Should probably use indoors.
   suffix: Stalker, Mapping
   components:
     - type: IsRoof

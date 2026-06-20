@@ -7,7 +7,7 @@
   - type: Sprite
     sprite: Objects/Weapons/Grenades/smoke.rsi
   - type: RepositoryItem # Stalker-Changes
-    categoryName: Оружие
+    categoryName: Weapons # Zona14: Оружие
   - type: SmokeOnTrigger
     keysIn:
     - timer

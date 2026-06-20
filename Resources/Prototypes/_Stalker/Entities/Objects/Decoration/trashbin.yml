@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: TrashBin
   parent: BaseStructure
-  name: зеленая урна
+  name: trash bin
   suffix: ST, Mapping
-  description: вы задавались вопросом сколько мусора ежегодно проходит через этих маленьких плохишей?
+  description: Have you wondered how much trash goes through these little bad guys every year?
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Other/trashbin.rsi
@@ -55,9 +56,9 @@
 - type: entity
   id: TrashBinBlue
   parent: TrashBin
-  name: синяя урна
+  name: blue trash bin
   suffix: ST, Mapping
-  description: вы задавались вопросом сколько мусора ежегодно проходит через этих маленьких плохишей?
+  description: Have you wondered how much trash goes through these little bad guys every year?
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Other/trashbin.rsi

@@ -414,7 +414,7 @@
                 STWeaponRifleAKS74UWhite: 650
                 STWeaponRifleAKMC: 5000
           SponsorOMind:
-            - name: О-сознание
+            - name: O-Consciousness # Zona14: О-сознание
               items:
                 STWeaponRifleSVDSWood: 800
   contributorCategories:

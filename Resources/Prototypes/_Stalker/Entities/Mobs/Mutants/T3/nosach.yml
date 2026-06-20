@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: BaseMobMutant
   id: MobMutantNosach
-  name: Вурдалак
+  name: ghoul
   suffix: ST, T3
-  description: во многих народных мифах и сказаниях упоминаются вурдалаки — покойники, встающие по ночам из могилы, вредящие людям и скоту. На деле лишь еще один из многих малоизвестных, редких мутантов, которые ведут чаще ночной образ жизни. Однако из-за голода они способны выходить из своих гнезд даже днем.
+  description: Many folk myths and tales mention ghouls - the dead who rise from the grave at night to harm people and livestock. In reality, just one of many little-known, rare mutants that lead a mostly nocturnal lifestyle. However, due to hunger they are capable of leaving their nests even during the day.
   components:
     - type: EmitSoundOnSpawn
       sound:

@@ -1,0 +1,19 @@
+ent-Z14545Mag20 = 5.45x39 magazine (20)
+    .desc = 5.45x39 magazine for AK. Bullet capacity 20. They sell empty.
+    .suffix = Z14
+
+ent-Z14545Mag30 = 5.45x39 magazine (30)
+    .desc = 5.45x39 magazine for AK. Bullet capacity 30. They sell empty.
+    .suffix = Z14
+
+ent-Z14545Mag45 = 5.45x39 magazine (45)
+    .desc = 5.45x39 magazine for AK. Bullet capacity 45. They sell empty.
+    .suffix = Z14
+
+ent-Z14545Mag60 = 5.45x39 magazine (60)
+    .desc = 5.45x39 magazine for AK. Bullet capacity 60. They sell empty.
+    .suffix = Z14
+
+ent-Z14Base545Mag10 = 5.45x39 magazine (10)
+    .desc = 5.45x39 magazine for AK. Bullet capacity 10. They sell empty.
+    .suffix = Z14

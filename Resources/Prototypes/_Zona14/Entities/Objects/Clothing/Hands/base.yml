@@ -1,0 +1,10 @@
+- type: entity
+  parent: ClothingHandsBase
+  id: Z14ClothingHandsBaseST
+  categories: [ Zona14 ]
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+    - BlockGloves
+

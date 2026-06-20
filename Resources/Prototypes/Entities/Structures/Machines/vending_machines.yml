@@ -1227,7 +1227,7 @@
 - type: entity
   parent: VendingMachine
   id: VendingMachineSovietSoda
-  name: ВОДА
+  name: WATER # Zona14: ВОДА<WATER
   description: An old vending machine containing sweet water.
   suffix: VODA
   components:

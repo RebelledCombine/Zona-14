@@ -1,0 +1,144 @@
+- type: entity
+  abstract: true
+  parent: Z14HelmetBase
+  id: Z14STClothingHeadHelmetEnvironmentT3Base
+  categories: [ Zona14 ]
+  name: T3 Environment Protection Helmet Base
+  components:
+  - type: HideLayerClothing
+    slots:
+    - Hair
+
+- type: entity
+  parent: Z14STClothingHeadHelmetEnvironmentT3Base
+  id: Z14ClothingHeadHelmetBerill5MMilitary
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Sphere-08 helmet
+  description: A helmet for fortunate soldiers and military stalkers, designed against piercing attacks. Part of the Berill-5M set.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/berill5m_helm_military.rsi
+    layers:
+    - state: icon
+    - state: light-icon
+      shader: unshaded
+      visible: false
+      map: [ "light" ]
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/berill5m_helm_military.rsi
+    equippedPrefix: off
+  - type: Item
+    heldPrefix: off
+  - type: ItemTogglePointLight
+  - type: PointLight
+    enabled: false
+    mask: /Textures/Effects/LightMasks/cone.png
+    autoRot: true
+    radius: 8
+    netsync: false
+  - type: Appearance
+  - type: HandheldLight
+    addPrefix: false
+    blinkingBehaviourId: blinking
+    radiatingBehaviourId: radiating
+  - type: LightBehaviour
+    behaviours:
+      - !type:FadeBehaviour
+        id: radiating
+        interpolate: Linear
+        maxDuration: 2.0
+        startValue: 3.0
+        endValue: 2.0
+        isLooped: true
+        reverseWhenFinished: true
+      - !type:PulseBehaviour
+        id: blinking
+        interpolate: Nearest
+        maxDuration: 1.0
+        startValue: 0.1
+        endValue: 2.0
+        isLooped: true
+  - type: ToggleableVisuals
+    spriteLayer: light
+    clothingVisuals:
+      head:
+      - state: on-equipped-HELMET
+  - type: PowerCellSlot
+    cellSlotId: cell_slot
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: Sphere-08 helmet
+        startingItem: PowerCellHyper
+  - type: ContainerContainer
+    containers:
+      cell_slot: !type:ContainerSlot
+
+- type: entity
+  parent: Z14STClothingHeadHelmetCombatT2Base
+  id: Z14ClothingHeadHelmetBerill5MMonolith
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Sphere-08 helmet
+  description: The fanatics' helmet, designed for protection against piercing attacks. Part of the Berill-5M set. Armor class 3.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/berill5m_helm_monolith.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/berill5m_helm_monolith.rsi
+  - type: PersonalDamage
+    damage:
+      types:
+        Radiation: 18.01
+
+- type: entity
+  parent: Z14STClothingHeadHelmetEnvironmentT3Base
+  id: Z14ClothingHeadHelmetBerill5MDolg
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Sphere-08 "Tower" helmet
+  description: This model is a modification of the Sphere-08 army helmet for Duty. Class 3 protection against blunt impacts, shrapnel, and to some extent class 1-2 penetration rounds. Reliable helmet at a fair price.
+  components:
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Clothing/hats/berill5m_helm_dolg.rsi
+  - type: Clothing
+    sprite: _Stalker_EN/Objects/Clothing/hats/berill5m_helm_dolg.rsi
+
+- type: entity
+  parent: Z14STClothingHeadHelmetEnvironmentT3Base
+  id: Z14ClothingHeadHelmetAborigine
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Sphere-08 "Turtle" helmet
+  description: This model is a modification of the Sphere-08 army helmet for Freedom. Class 3 protection against blunt impacts, shrapnel, and to some extent class 1-2 penetration rounds. Reliable helmet at a fair price.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/aborigine_stalker.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/aborigine_stalker.rsi
+
+- type: entity
+  parent: Z14ClothingHeadHelmetBerill5MMilitary
+  id: Z14ClothingHeadHelmetBerill5MProject
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: modified "Sfera-08" helmet
+  description: Modified Sphere-08 helmet with improved protection. Someone painted it purple. Part of the Berill-5M set. Armor class 3.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/berill5m_helm_project.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/berill5m_helm_project.rsi
+- type: entity
+  parent: Z14ClothingHeadHelmetBerill5MMilitary
+  id: Z14ClothingHeadHelmetBereza
+  categories: [ Zona14 ]
+  name: 'Sfera-8 "Listok"'
+  suffix: Z14
+  description: Protective helmet Sphere-8, modified and restitched in Birch camo. Provides reliable head protection from bullets and shrapnel. Equipped with a side flashlight for low-light conditions. Worn but protection level intact.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/sphere_bereza.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/sphere_bereza.rsi

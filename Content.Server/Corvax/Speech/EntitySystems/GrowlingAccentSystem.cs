@@ -32,13 +32,13 @@ public sealed class GrowlingAccentSystem : EntitySystem
             _random.Pick(new List<string> { "RR", "RRR" })
         );
 
-        // р => ррр
+        // Russian р => ррр (growling r sound) // Zona14: translated comment
         message = Regex.Replace(
             message,
             "р+",
             _random.Pick(new List<string> { "рр", "ррр" })
         );
-        // Р => РРР
+        // Russian Р => РРР (uppercase growling R) // Zona14: translated comment
         message = Regex.Replace(
             message,
             "Р+",

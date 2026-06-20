@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 # Base
 - type: entity
   parent: STClothingOuterArmorStorageBasic
   id: STClothingOuterArmorSevaBase
-  name: костюм "Сева" #base
-  description: "Разработанный Киевским НИИ костюм замкнутого цикла, предназначенный специально для работы в условиях Зоны."
+  name: Seva Suit
+  description: "A closed-cycle suit developed by the Kiev Research Institute, designed specifically for work in the conditions of the Zone."
   suffix: ST, T3, Env
   categories: [ HideSpawnMenu ]
   abstract: true
@@ -62,8 +63,8 @@
 - type: entity
   parent: ClothingHeadHardsuitBase
   id: STClothingHeadHardsuitSevaHelmBase
-  name: шлем севы #base
-  description: Несмотря, на преимущественно стеклянную состовляющую, довольно прочный.
+  name: Seva Helmet
+  description: Despite the predominantly glass composition, it is quite durable.
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
@@ -103,8 +104,8 @@
 - type: entity
   parent: STClothingOuterArmorSevaBase
   id: ClothingOuterArmorSevaStalker
-  name: костюм "Сева"
-  description: "Разработанный Киевским НИИ костюм замкнутого цикла, предназначенный специально для работы в условиях Зоны."
+  name: Seva Suit
+  description: "A closed-cycle suit developed by the Kiev Research Institute, designed specifically for work in the conditions of the Zone."
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/outerClothing/seva_stalker.rsi
@@ -116,8 +117,8 @@
 - type: entity
   parent: STClothingOuterArmorSevaBase
   id: ClothingOuterArmorSevaSciRed
-  name: костюм "Сева" Учёных
-  description: "Разработанный Киевским НИИ костюм замкнутого цикла, предназначенный специально для работы в условиях Зоны."
+  name: Scientist Seva suit
+  description: "A closed-cycle suit developed by the Kiev Research Institute, designed specifically for work in the conditions of the Zone."
   components:
     - type: Sprite
       sprite: _Stalker/Objects/Clothing/outerClothing/seva_red.rsi
@@ -127,8 +128,8 @@
 - type: entity
   parent: STClothingOuterArmorSevaBase
   id: ClothingOuterArmorSevaSciWhite
-  name: белый костюм "Сева" Учёных
-  description: "Разработанный Киевским НИИ костюм замкнутого цикла, предназначенный специально для работы в условиях Зоны со старым дизайном"
+  name: White Scientist Seva Suit
+  description: "Closed-cycle suit developed by the Kiev Research Institute, designed specifically for work in the conditions of the Zone with an old design"
   components:
     - type: Armor
       armorClass: 1
@@ -168,8 +169,8 @@
 - type: entity
   parent: STClothingHeadHardsuitSevaHelmBase
   id: ClothingHeadHardsuitSevaHelmSci
-  name: шлем севы
-  description: Несмотря, на преимущественно стеклянную состовляющую, довольно прочный.
+  name: Seva Helmet
+  description: Despite the predominantly glass composition, it is quite durable.
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
@@ -181,8 +182,8 @@
 - type: entity
   parent: STClothingOuterArmorSevaBase
   id: ClothingOuterArmorSevaMilitary
-  name: костюм "Сева-ЗБМ"
-  description: Научный костюм, вариант «СЕВЫ», производимый по заказу военных.
+  name: Seva-ZBM Suit
+  description: Scientific Suit, a variant of the "CEVA" produced by the military.
   components:
   - type: Storage
     maxItemSize: Normal
@@ -237,8 +238,8 @@
 - type: entity
   parent: STClothingHeadHardsuitSevaHelmBase
   id: ClothingHeadHardsuitSevaHelmMilitary
-  name: шлем севы
-  description: Несмотря, на преимущественно стеклянную состовляющую, довольно прочный.
+  name: seva helmet
+  description: Despite the predominantly glass composition, it is quite durable.
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
@@ -252,8 +253,8 @@
 - type: entity
   parent: STClothingOuterArmorSevaBase
   id: ClothingOuterArmorSevaMonolith
-  name: костюм "Сева" монолита
-  description: Научный костюм, вариант «СЕВЫ», производимый монолитовцами.
+  name: Monolith Seva suit
+  description: Scientific suit, a variant of "CHEVA" produced by the Monoliths.
   components:
   - type: Armor
     armorClass: 1
@@ -294,8 +295,8 @@
 - type: entity
   parent: STClothingHeadHardsuitSevaHelmBase
   id: ClothingHeadHardsuitSevaHelmMonolith
-  name: шлем севы монолита
-  description: Несмотря, на преимущественно стеклянную состовляющую, довольно прочный.
+  name: Seva Helmet
+  description: Despite the predominantly glass composition, it is quite durable.
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
@@ -308,8 +309,8 @@
 - type: entity
   parent: STClothingOuterArmorSevaBase
   id: ClothingOuterArmorSevaCN
-  name: костюм "Сева" Чистого Неба
-  description: "Разработанный Киевским НИИ костюм замкнутого цикла, предназначенный специально для работы в условиях Зоны. Имеет встроенный бронежилет. Имеет встроенный бронежилет и усиленную защиту по всем параметрам."
+  name: Clear Sky Seva suit
+  description: "A closed-cycle suit developed by the Kiev Research Institute, designed specifically for work in the conditions of the Zone. It has a built-in bulletproof vest. It has a built-in body armor and enhanced protection in all respects."
   components:
   - type: Armor
     armorClass: 1
@@ -345,8 +346,8 @@
 - type: entity
   parent: STClothingOuterArmorSevaBase
   id: ClothingOuterArmorSevaMerc
-  name: костюм "Сева" Наёмников
-  description: Научный костюм наёмников действующих в ЧЗО, вариант «СЕВЫ», производимый по заказу наёмников.
+  name: Mercenary Seva suit
+  description: Scientific suit for mercenaries operating in the ChEZ, a variant of the "CEVA" produced by the mercenaries.
   components:
   - type: Armor
     armorClass: 1
@@ -387,8 +388,8 @@
 - type: entity
   parent: STClothingHeadHardsuitSevaHelmBase
   id: ClothingHeadHardsuitSevaHelmMerc
-  name: шлем севы наёмников
-  description: Несмотря, на преимущественно стеклянную состовляющую, довольно прочный.
+  name: Mercenary Seva Helmet
+  description: Despite the predominantly glass composition, it is quite durable.
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
@@ -401,8 +402,8 @@
 - type: entity
   parent: STClothingOuterArmorSevaBase
   id: ClothingOuterArmorSevaPoisk
-  name: костюм «Сева» группы поиск
-  description: Модифицированный костюм замкнутого цикла, разработанный с учетом специфики работы в условиях Зоны для членов группировки "Поиск".
+  name: Search Seva suit
+  description: A modified closed-loop suit designed to meet the specifics of working in the Zone for members of the Poisk Group.
   components:
   - type: Armor
     armorClass: 1
@@ -438,8 +439,8 @@
 - type: entity
   parent: ClothingHeadHardsuitBase
   id: ClothingHeadHardsuitSevaHelmPoisk
-  name: шлем севы поиска
-  description: Несмотря, на преимущественно стеклянную состовляющую, довольно прочный.
+  name: Seva Helmet Search
+  description: Despite the predominantly glass composition, it is quite durable.
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
@@ -454,8 +455,8 @@
 - type: entity
   parent: STClothingOuterArmorSevaBase
   id: STClothingOuterArmorSevaNeutral
-  name: костюм "Сева" Нейтралов
-  description: "Разработанный Киевским НИИ костюм замкнутого цикла, был перекрашен членами группировки Нейтралов. Предназначен специально для работы в условиях Зоны."
+  name: Neutral Seva suit
+  description: "The closed-loop suit developed by the Kiev Research Institute was repainted by members of the Neutral group. Designed specifically for work in the conditions of the Zone."
   components:
     - type: Armor
       armorClass: 1
@@ -491,8 +492,8 @@
 - type: entity
   parent: STClothingOuterArmorSevaBase
   id: ClothingOuterArmorSevaCovenant
-  name: костюм Сева Завета
-  description: Разработанный Киевским НИИ костюм замкнутого цикла, предназначенный специально для работы в условиях Зоны. Имеет встроенный бронежилет. Имеет встроенный бронежилет и усиленную защиту по всем параметрам.
+  name: Covenant Seva suit
+  description: A closed-cycle suit developed by the Kiev Research Institute, designed specifically for operation in the Zone. It has a built-in bulletproof vest. It has a built-in body armor and enhanced protection in all respects.
   components:
     - type: Sprite
       sprite: _Stalker/Objects/Clothing/outerClothing/Seva/covenant.rsi
@@ -504,9 +505,9 @@
 - type: entity
   parent: STClothingHeadHardsuitSevaHelmBase
   id: ClothingHeadHardsuitSevaHelmCovenant
-  name: шлем севы Завета
-  description: Несмотря, на преимущественно стеклянную состовляющую, довольно прочный.
-  suffix: Stalker, Завет
+  name: Covenant Seva Helmet
+  description: Despite the predominantly glass composition, it is quite durable.
+  suffix: Stalker, Covenant # Zona14: Stalker, Завет
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
@@ -519,8 +520,8 @@
 - type: entity
   parent: STClothingOuterArmorSevaBase
   id: ClothingOuterArmorSevasera
-  name: костюм "Сева" Серафимов
-  description: "Разработанный Киевским НИИ костюм замкнутого цикла, предназначенный специально для работы в условиях Зоны. Имеет встроенный бронежилет. Имеет встроенный бронежилет и усиленную защиту по всем параметрам."
+  name: Seraphim Seva suit
+  description: "A closed-cycle suit developed by the Kiev Research Institute, designed specifically for work in the conditions of the Zone. It has a built-in bulletproof vest. It has a built-in body armor and enhanced protection in all respects."
   components:
     - type: Armor
       armorClass: 1
@@ -559,8 +560,8 @@
 - type: entity
   parent: STClothingHeadHardsuitSevaHelmBase
   id: ClothingHeadHardsuitSevaHelmSera
-  name: шлем севы серафимов
-  description: Несмотря, на преимущественно стеклянную состовляющую, довольно прочный.
+  name: Seraph Seva Helmet
+  description: Despite the predominantly glass composition, it is quite durable.
   categories: [ HideSpawnMenu ]
   components:
     - type: Sprite
@@ -576,9 +577,9 @@
 - type: entity
   parent: STClothingOuterArmorSevaBase
   id: ClothingOuterArmorSevaProjectGROM9
-  name: Костюм «Сева GROM-9»
+  name: GROM-9 Seva suit
   suffix: ST, T3, Env, Project
-  description: Модифицированный костюм Сева версии «GROM-9», надежный бронекостюм, обеспечивающий отличную защиту от пси-излучений и электрических разрядов.
+  description: "Seva's modified GROM-9 suit was designed by The Project as a reliable armor suit, providing excellent protection against psi radiation and electrical discharges."
   components:
   - type: Armor
     armorClass: 1
@@ -615,8 +616,8 @@
 - type: entity
   parent: STClothingHeadHardsuitSevaHelmBase
   id: ClothingHeadHardsuitSevaHelmProjectGROM9
-  name: Шлем севы «GROM-9»
-  description: Несмотря на преимущественно стеклянную составляющую, довольно прочный.
+  name: GROM-9 Seva Helmet
+  description: Despite the predominantly glass composition, it is quite durable.
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
@@ -629,8 +630,8 @@
 - type: entity
   parent: STClothingOuterArmorSevaBase
   id: ClothingOuterArmorSevaDolgRed
-  name: костюм "Сева" 'Долга'
-  description: "Разработанный Киевским НИИ костюм замкнутого цикла, предназначенный специально для работы в условиях Зоны."
+  name: Duty Seva suit
+  description: "A closed-cycle suit developed by the Kiev Research Institute, designed specifically for work in the conditions of the Zone."
   components:
     - type: Sprite
       sprite: _Stalker/Objects/Clothing/outerClothing/seva_dolg.rsi
@@ -667,8 +668,8 @@
 - type: entity
   parent: STClothingHeadHardsuitSevaHelmBase
   id: ClothingHeadHardsuitSevaHelmDolgRed
-  name: шлем севы долга
-  description: Несмотря, на преимущественно стеклянную состовляющую, довольно прочный.
+  name: Seva Helmet (Duty)
+  description: Despite being mostly made of glass, it’s fairly durable.
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
@@ -681,8 +682,8 @@
 - type: entity
   parent: STClothingOuterArmorSevaBase
   id: ClothingOuterArmorSevaFreedom
-  name: костюм "Сева" 'Свободы'
-  description: "Разработанный Киевским НИИ костюм замкнутого цикла, предназначенный специально для работы в условиях Зоны."
+  name: Freedom Seva Suit
+  description: A closed-cycle suit developed by the Kyiv Research Institute, specifically designed for working in Zone conditions.
   components:
     - type: Armor
       armorClass: 1
@@ -721,8 +722,8 @@
 - type: entity
   parent: STClothingHeadHardsuitSevaHelmBase
   id: ClothingHeadHardsuitSevaHelmFreedom
-  name: шлем севы свободы
-  description: Несмотря, на преимущественно стеклянную состовляющую, довольно прочный.
+  name: Seva Helmet (Freedom)
+  description: "{ ent-ClothingHeadHardsuitSevaHelmDolgRed.desc }"
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
@@ -736,8 +737,8 @@
 - type: entity
   parent: STClothingOuterArmorSevaBase
   id: ClothingOuterArmorSevarenegat
-  name: костюм "СЕВА" 'Ржавчина'
-  description: Эта "СЕВА" видела слишком многое в Зоне. Коричневая резина, баллон цвета хаки, оранжевая мазня и когтистая царапина на шлеме. Ренегаты говорят, что это отметина удачи… или проклятье.
+  name: Renegade Seva suit
+  description: "This \"SEVA\" has seen too much in the Zone. Brown rubber, khaki canister, orange daub and a clawed scratch on the helmet. Renegades say it's a mark of good luck... or curses."
   components:
     - type: STWeight
       self: 12
@@ -776,8 +777,8 @@
 - type: entity
   parent: STClothingHeadHardsuitSevaHelmBase
   id: ClothingHeadHardsuitSevaHelmRenegat
-  name: шлем севы ренегатов
-  description: Несмотря, на преимущественно стеклянную состовляющую, довольно прочный.
+  name: Rogue Seva Helmet
+  description: Despite the predominantly glass composition, it is quite durable.
   categories: [ HideSpawnMenu ]
   components:
     - type: Sprite
@@ -790,8 +791,8 @@
 - type: entity
   parent: STClothingOuterArmorSevaBase
   id: ClothingOuterArmorSevaVano
-  name: костюм "Сева" М1 V.A.N.O
-  description: "Сева, сделанная народным умельцем, имеет улучшенные характеристики как для боя с мутантами, так и с недоброжелателями. Модифицирована пластинами из композитных материалов и прошита поликарбонатной нитью. Руки и ноги окрашены белым цветом, нагрудник и шлем, напротив, - чёрным. На нагруднике виднеется белый череп."
+  name: '"SEVA" suit M1 V.A.N.O'
+  description: A SEVA suit made by a folk craftsman with improved characteristics for fighting both mutants and hostiles. Modified with composite plates and stitched with polycarbonate thread. The arms and legs are painted white, while the chestplate and helmet, by contrast, are black. A white skull is visible on the chestplate.
   components:
     - type: Sprite
       sprite: _Stalker/Objects/Clothing/outerClothing/seva_VANO.rsi
@@ -814,8 +815,8 @@
 - type: entity
   parent: STClothingHeadHardsuitSevaHelmBase
   id: ClothingHeadHardsuitSevaVano
-  name: шлем севы М1 V.A.N.O
-  description: Несмотря, на преимущественно стеклянную состовляющую, довольно прочный.
+  name: SEVA helmet M1 V.A.N.O
+  description: Despite being made primarily of glass, it is quite durable.
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite

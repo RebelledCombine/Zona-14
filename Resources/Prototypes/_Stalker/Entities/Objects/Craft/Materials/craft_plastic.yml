@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: STBaseIngridient
   id: STCraftPlasticFittingT1
-  name: пластиковая фурнитура T1
-  description: Базовая пластиковая фурнитура, изготовленная из дешевого и хрупкого пластика, подходит для временных конструкций и легких задач.
-  suffix: Stalker, крафт, T1
+  name: T1 Plastic Fittings
+  description: Basic plastic hardware, made from cheap and fragile plastic, is suitable for temporary structures and light tasks.
+  suffix: Stalker, craft, T1 # Zona14: Stalker, крафт, T1
   components:
     - type: PhysicalComposition
       materialComposition:
@@ -16,15 +17,15 @@
       count: 1
     - type: Craftable
     - type: RepositoryItem
-      categoryName: Крафты
+      categoryName: Crafting # Zona14: Крафты
 
 
 - type: entity
   parent: STBaseIngridient
   id: STCraftPlasticFittingT2
-  name: пластиковая фурнитура T2
-  description: Пластиковая фурнитура среднего качества, прочнее и долговечнее, чем T1, подходит для бытовых приборов и мебели.
-  suffix: Stalker, крафт, T2
+  name: T2 Plastic Fittings
+  description: Medium quality plastic hardware, stronger and more durable than T1, suitable for appliances and furniture.
+  suffix: Stalker, craft, T2 # Zona14: Stalker, крафт, T2
   components:
     - type: PhysicalComposition
       materialComposition:
@@ -37,15 +38,15 @@
       count: 1
     - type: Craftable
     - type: RepositoryItem
-      categoryName: Крафты
+      categoryName: Crafting # Zona14: Крафты
 
 
 - type: entity
   parent: STBaseIngridient
   id: STCraftPlasticFittingT3
-  name: пластиковая фурнитура T3
-  description: Высококачественная пластиковая фурнитура с хорошей прочностью и долговечностью, используется в бытовой и офисной мебели.
-  suffix: Stalker, крафт, T3
+  name: T3 Plastic Fittings
+  description: High quality plastic hardware with good strength and durability, used in household and office furniture.
+  suffix: Stalker, craft, T3 # Zona14: Stalker, крафт, T3
   components:
     - type: PhysicalComposition
       materialComposition:
@@ -58,15 +59,15 @@
       count: 1
     - type: Craftable
     - type: RepositoryItem
-      categoryName: Крафты
+      categoryName: Crafting # Zona14: Крафты
 
 
 - type: entity
   parent: STBaseIngridient
   id: STCraftPlasticFittingT4
-  name: пластиковая фурнитура T4
-  description: Пластиковая фурнитура премиум-класса с высокой прочностью и долговечностью, используется в автомобильных деталях и высококачественной мебели.
-  suffix: Stalker, крафт, T4
+  name: T4 Plastic Fittings
+  description: Premium plastic hardware with high strength and durability, used in automotive parts and high-end furniture.
+  suffix: Stalker, craft, T4 # Zona14: Stalker, крафт, T4
   components:
     - type: PhysicalComposition
       materialComposition:
@@ -79,15 +80,15 @@
       count: 1
     - type: Craftable
     - type: RepositoryItem
-      categoryName: Крафты
+      categoryName: Crafting # Zona14: Крафты
 
 
 - type: entity
   parent: STBaseIngridient
   id: STCraftPlasticFittingT5
-  name: пластиковая фурнитура T5
-  description: Самая высокая пластиковая фурнитура, изготовленная из высокопрочного пластика, используется в аэрокосмической и медицинской промышленности.
-  suffix: Stalker, крафт, T5
+  name: T5 Plastic Fittings
+  description: The tallest plastic hardware made of high-strength plastic is used in the aerospace and medical industries.
+  suffix: Stalker, craft, T5 # Zona14: Stalker, крафт, T5
   components:
     - type: PhysicalComposition
       materialComposition:
@@ -100,4 +101,4 @@
       count: 1
     - type: Craftable
     - type: RepositoryItem
-      categoryName: Крафты
+      categoryName: Crafting # Zona14: Крафты

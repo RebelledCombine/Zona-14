@@ -1,0 +1,318 @@
+- type: entity
+  parent: Z14ArmorBaseT1PvP
+  id: Z14STClothingOuterArmorLightPlateVestBase
+  categories: [ Zona14 ]
+  name: basic light body armor
+  abstract: true
+  description: Standard Type II body armor providing solid protection against most damage types
+  components:
+  - type: Trash
+    time: 900
+
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/plate_dolg.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/plate_dolg.rsi
+  - type: Craftable
+
+# Freedom - 1
+
+- type: entity
+  parent: Z14STClothingOuterArmorLightPlateVestBase
+  id: Z14STClothingOuterArmorLightPlateVestBaseFreedom
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Freedom Shield-2 body armor
+  description: Light class 2 body armor, the foundation of foundations.
+  components:
+  - type: STWeight
+    self: 5
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/plate_svoboda.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/plate_svoboda.rsi
+ # bonus
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+        ents: []
+
+      toggleable-clothing: !type:ContainerSlot {}
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+      - 0,3,0,5
+      - 2,3,2,4
+      - 2,0,3,1
+      - 4,3,4,4
+      - 5,0,6,1
+      - 6,3,6,4
+      - 8,3,8,5
+    blacklist:
+      tags:
+      - STArtifact
+- type: entity
+  parent: Z14STClothingOuterArmorLightPlateVestBase
+  id: Z14STClothingOuterArmorLightPlateVestBaseStalker
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Shield-2 body armor
+  description: Light class 2 body armor, the foundation of foundations.
+  components:
+  - type: STWeight
+    self: 5
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/plate_stalker.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/plate_stalker.rsi
+
+# Dolg - 3
+
+- type: entity
+  parent: Z14STClothingOuterArmorLightPlateVestBase
+  id: Z14STClothingOuterArmorLightPlateVestBaseDolg
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: "'Duty' Shield-2 body armor"
+  description: Standard Type II body armor providing solid protection against most damage types
+  components:
+  - type: STWeight
+    self: 5
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/plate_dolg.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/plate_dolg.rsi
+
+# Military - 4
+
+- type: entity
+  parent: Z14STClothingOuterArmorLightPlateVestBase
+  id: Z14STClothingOuterArmorLightPlateVestBaseMilitary
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Military Shield-2 body armor
+  description: Light class 2 body armor, the foundation of foundations.
+  components:
+  - type: STWeight
+    self: 5
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/plate_military.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/plate_military.rsi
+
+- type: entity
+  parent: Z14STClothingOuterArmorLightPlateVestBase
+  id: Z14STClothingOuterArmorLightPlateVestBasePolice
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Police Shield-2 body armor
+  description: Light class 2 body armor, the foundation of foundations.
+  components:
+  - type: STWeight
+    self: 5
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/plate_police.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/plate_police.rsi
+# Zavet - 5
+
+- type: entity
+  parent: Z14STClothingOuterArmorLightPlateVestBase
+  id: Z14STClothingOuterArmorLightPlateVestBaseZavet
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Covenant Shield-2 body armor
+  description: Light class 2 body armor, the foundation of foundations.
+  components:
+  - type: STWeight
+    self: 5
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/zavet_bronik.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/zavet_bronik.rsi
+
+# Bandit - 6
+
+- type: entity
+  parent: Z14STClothingOuterArmorLightPlateVestBase
+  id: Z14STClothingOuterArmorLightPlateVestBaseBand
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Bandit Shield-2 body armor
+  description: Light class 2 body armor, the foundation of foundations.
+  components:
+  - type: STWeight
+    self: 5
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/plate_band.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/plate_band.rsi
+  # bonus
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+        ents: []
+
+      toggleable-clothing: !type:ContainerSlot {}
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+      - 0,3,0,5
+      - 2,3,2,4
+      - 2,0,3,1
+      - 4,3,4,4
+      - 5,0,6,1
+      - 6,3,6,4
+      - 8,3,8,5
+    blacklist:
+      tags:
+      - STArtifact
+- type: entity
+  parent: Z14STClothingOuterArmorLightPlateVestBase
+  id: Z14STClothingOuterArmorLightPlateVestBaseSera
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: "'Seraphim' Shield-2 body armor"
+  description: Standard Type II body armor providing solid protection against most damage types
+  components:
+  - type: STWeight
+    self: 5
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/_Sera/serafim-light-armor.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/_Sera/serafim-light-armor.rsi
+
+
+
+# Old groups
+
+- type: entity
+  parent: Z14STClothingOuterArmorLightPlateVestBase
+  id: Z14STClothingOuterArmorLightPlateVestBaseMerc
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Mercenary Shield-2 body armor
+  description: Light class 2 body armor, the foundation of foundations.
+  components:
+  - type: STWeight
+    self: 5
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/plate_merc.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/plate_merc.rsi
+# bonus
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+        ents: []
+
+      toggleable-clothing: !type:ContainerSlot {}
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+      - 0,3,0,5
+      - 2,3,2,4
+      - 2,0,3,1
+      - 4,3,4,4
+      - 5,0,6,1
+      - 6,3,6,4
+      - 8,3,8,5
+    blacklist:
+      tags:
+      - STArtifact
+- type: entity
+  parent: Z14STClothingOuterArmorLightPlateVestBase
+  id: Z14STClothingOuterArmorLightPlateVestBaseUN
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: UN Shield-2 body armor
+  description: Light class 2 body armor, the foundation of foundations.
+  components:
+  - type: STWeight
+    self: 5
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/un_armor.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/un_armor.rsi
+
+- type: entity
+  parent: Z14STClothingOuterArmorLightPlateVestBase
+  id: Z14STClothingOuterArmorLightPlateVestBaseRenegate
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Dead Man's Grin Body Armor
+  description: This body armor has seen too much. Rusty metal, orange smudge, a skull staring into your soul... the asymmetric shoulder pad only adds to the madness. The owner clearly crossed a line.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/plate_rene.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/plate_rene.rsi
+  # Bonus
+  - type: STWeight
+    self: 5
+- type: entity
+  parent: Z14STClothingOuterArmorLightPlateVestBase
+  id: Z14STClothingOuterArmorLightPlateVestBaseMonolith
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Monolith Shield-2 body armor
+  description: Light class 2 body armor, the foundation of foundations.
+  components:
+  - type: STWeight
+    self: 5
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/plate_monolit.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/plate_monolit.rsi
+  - type: PersonalDamage
+    damage:
+      types:
+        Radiation: 18.01
+
+- type: entity
+  parent: Z14STClothingOuterArmorLightPlateVestBase
+  id: Z14STClothingOuterArmorLightPlateVestBasePilgrim
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Pilgrim's Shield-2 body armor
+  description: Light class 2 body armor, the foundation of foundations.
+  components:
+  - type: STWeight
+    self: 5
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/plate_pilgrim.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/plate_pilgrim.rsi
+  - type: ToggleableClothing
+    clothingPrototype: Z14ClothingHeadPilgrimDoctor
+    slot: head
+
+- type: entity
+  parent: Z14STClothingOuterArmorLightPlateVestBase
+  id: Z14STClothingOuterArmorLightPlateVestBaseClearSky
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Clear Sky Shield-2 body armor
+  description: Light class 2 body armor, the foundation of foundations.
+  components:
+  - type: STWeight
+    self: 5
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/clear_sky_armor.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/clear_sky_armor.rsi
+
+- type: entity
+  parent: Z14STClothingOuterArmorLightPlateVestBase
+  id: Z14STClothingOuterArmorLightPlateVestBaseProject
+  categories: [ Zona14 ]
+  name: Project Shield-2 body armor
+  suffix: Z14
+  description: Light class 2 body armor, the foundation of foundations.
+  components:
+  - type: STWeight
+    self: 5
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/plate_project.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/plate_project.rsi

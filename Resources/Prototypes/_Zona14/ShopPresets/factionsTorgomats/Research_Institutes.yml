@@ -3,101 +3,101 @@
   itemsForSale:
 # MARK: Artifacts
     # Thermal group - 1
-    ZoneArtifactFireball: 1008
-    ZoneArtifactEye: 1344
-    ZoneArtifactFlame: 2016
+    Z14ZoneArtifactFireball: 1008
+    Z14ZoneArtifactEye: 1344
+    Z14ZoneArtifactFlame: 2016
     # Thermal group - 2
-    ZoneArtifactCristall: 4032
-    ZoneArtifactLithosphere: 8064
+    Z14ZoneArtifactCristall: 4032
+    Z14ZoneArtifactLithosphere: 8064
     # Electrical group - 1
-    ZoneArtifactSparkler: 840
-    ZoneArtifactBattery: 1176
-    ZoneArtifactFlash: 2016
-    ArtMoon: 4032
-    ZoneArtifactTesla: 6048
-    ZoneArtifactIce: 8064
+    Z14ZoneArtifactSparkler: 840
+    Z14ZoneArtifactBattery: 1176
+    Z14ZoneArtifactFlash: 2016
+    Z14ArtMoon: 4032
+    Z14ZoneArtifactTesla: 6048
+    Z14ZoneArtifactIce: 8064
     # Gravity group - 1
-    ArtMedusa: 924
-    ZoneArtifactFlower: 1260
-    ZoneArtifactNightStar: 4032
+    Z14ArtMedusa: 924
+    Z14ZoneArtifactFlower: 1260
+    Z14ZoneArtifactNightStar: 4032
     # Gravity group - 2
-    ZoneArtifactVyvert: 1092
-    ZoneArtifactAmoeba: 1428
-    ZoneArtifactFloodlight: 972
-    ZoneArtifactGravi: 2016
-    ZoneArtifactGoldfish: 8064
-    ZoneArtifactSpring: 6048
-    ZoneArtifactFocus: 6048
-    ZoneArtifactStuntman: 8064
-    ZoneArtifactDistorter: 8064
-    ZoneArtifactSoul: 6048
+    Z14ZoneArtifactVyvert: 1092
+    Z14ZoneArtifactAmoeba: 1428
+    Z14ZoneArtifactFloodlight: 972
+    Z14ZoneArtifactGravi: 2016
+    Z14ZoneArtifactGoldfish: 8064
+    Z14ZoneArtifactSpring: 6048
+    Z14ZoneArtifactFocus: 6048
+    Z14ZoneArtifactStuntman: 8064
+    Z14ZoneArtifactDistorter: 8064
+    Z14ZoneArtifactSoul: 6048
 
     # Acidic group - 1
-    ZoneArtifactBlood: 2016
-    ZoneArtifactMeat: 4032
-    ZoneArtifactKolobok: 6048
+    Z14ZoneArtifactBlood: 2016
+    Z14ZoneArtifactMeat: 4032
+    Z14ZoneArtifactKolobok: 6048
     # Acidic group - 2
-    ZoneArtifactPellicle: 924
-    ZoneArtifactBaloon: 6048
+    Z14ZoneArtifactPellicle: 924
+    Z14ZoneArtifactBaloon: 6048
 
 # MARK: Mutant Parts
     # Mutant parts
 
     #Boars -------- Health * T * 0.45
-    MutantPartBoarHoof: 264 # T1
-    MutantPartSeasonedBoarHoof: 528 # T2
-    MutantPartOldBoarHoof: 780 # T3
+    Z14MutantPartBoarHoof: 264 # T1
+    Z14MutantPartSeasonedBoarHoof: 528 # T2
+    Z14MutantPartOldBoarHoof: 780 # T3
 
     #T1 -------- Health * 1
-    MutantPartBlindDogTail: 108
-    MutantPartFleshEye: 198
+    Z14MutantPartBlindDogTail: 108
+    Z14MutantPartFleshEye: 198
     FoodMeatSpiderLeg: 72
 
     #T2 -------- Health * 1.8
-    MutantPartLeshiyRoot: 840
-    MutantPartPseudodogTail: 360
-    MutantPartSnorkFoot: 540
+    Z14MutantPartLeshiyRoot: 840
+    Z14MutantPartPseudodogTail: 360
+    Z14MutantPartSnorkFoot: 540
 
     #T3 -------- Health * 3
-    MutantPartPsiDogTail: 564
-    MutantPartBloodsuckerTentacles: 1800
-    MutantPartOraculeEye: 2340
-    MutantPartPseudogiantHeart: 14040
-    MutantPartZombieHand: 660
+    Z14MutantPartPsiDogTail: 564
+    Z14MutantPartBloodsuckerTentacles: 1800
+    Z14MutantPartOraculeEye: 2340
+    Z14MutantPartPseudogiantHeart: 14040
+    Z14MutantPartZombieHand: 660
 
-    ZoneArtifactAccumulator: 1176
-    ZoneArtifactDiamond: 4032
-    ZoneArtifactCharger: 4032
-    ZoneArtifactToxic: 1176
-    ZoneArtifactCytoplasm: 1008
-    ZoneArtifactCompass: 4032
-    ZoneArtifactCrucifix: 8064
-    ZoneArtifactThorn: 1596
-    ZoneArtifactArf: 1176
-    ZoneArtifactDarkCube: 8064
-    ZoneArtifactBunch: 1596
-    ZoneArtifactRock: 1596
-    ZoneArtifactSun: 4032
-    ZoneArtifactRoot: 4032
-    ZoneArtifactConflagration: 1596
+    Z14ZoneArtifactAccumulator: 1176
+    Z14ZoneArtifactDiamond: 4032
+    Z14ZoneArtifactCharger: 4032
+    Z14ZoneArtifactToxic: 1176
+    Z14ZoneArtifactCytoplasm: 1008
+    Z14ZoneArtifactCompass: 4032
+    Z14ZoneArtifactCrucifix: 8064
+    Z14ZoneArtifactThorn: 1596
+    Z14ZoneArtifactArf: 1176
+    Z14ZoneArtifactDarkCube: 8064
+    Z14ZoneArtifactBunch: 1596
+    Z14ZoneArtifactRock: 1596
+    Z14ZoneArtifactSun: 4032
+    Z14ZoneArtifactRoot: 4032
+    Z14ZoneArtifactConflagration: 1596
 
     # Mutant parts EN
 
-    MutantPartCatGland: 100
-    MutantPartBearClaw: 300
-    MutantPartBearPaw: 576
-    MutantPartBearEye: 1710
-    MutantPartFrogLeg: 480
-    MutantPartIzlomArm: 3780
-    MutantPartChimeraTooth: 5400
+    Z14MutantPartCatGland: 100
+    Z14MutantPartBearClaw: 300
+    Z14MutantPartBearPaw: 576
+    Z14MutantPartBearEye: 1710
+    Z14MutantPartFrogLeg: 480
+    Z14MutantPartIzlomArm: 3780
+    Z14MutantPartChimeraTooth: 5400
 # MARK: Items to Buy
   categories:
   - name: shop-category-weapons
     priority: 1
     items:
       # Melee
-      STCombatKnife: 10
-      HuntingKnife: 150
+      Z14STCombatKnife: 10
+      Z14HuntingKnife: 150
       # Guns
       Z14WeaponPistolStalkerGlock: 200
       STWeaponShotgunTOZ34: 150
@@ -151,23 +151,23 @@
     priority: 4
     items:
       # Helmets #
-      STClothingHeadTinfoil: 200
-      ClothingHeadHelmetLight: 200
-      ClothingHeadHelmetInfantry: 600
-      ClothingHeadHelmetVityaz1C: 2000
-      ClothingHeadAssaultHelmet: 3000
+      Z14STClothingHeadTinfoil: 200
+      Z14ClothingHeadHelmetLight: 200
+      Z14ClothingHeadHelmetInfantry: 600
+      Z14ClothingHeadHelmetVityaz1C: 2000
+      Z14ClothingHeadAssaultHelmet: 3000
       # OuterClothing #
-      ClothingOuterJacketSCI: 70 # T1 - PVE
-      STClothingOuterArmorLightPlateVestBaseStalker: 900
-      ClothingOuterArmorSSP99Amber: 2750
-      ClothingOuterArmorSSP99White: 3750
-      ClothingOuterArmorSSP24Sapfire: 4225
-      ClothingOuterArmorSevaSciWhite: 4000
-      ClothingOuterArmorSSP99: 4100
-      ClothingOuterArmorSSP24Ruby: 4100
-      ClothingOuterArmorUzk5: 5500
-      STClothingNeckExoskeletonSci: 8000
-      STClothingOuterArmorVeryHeavySci: 8000
+      Z14ClothingOuterJacketSCI: 70 # T1 - PVE
+      Z14STClothingOuterArmorLightPlateVestBaseStalker: 900
+      Z14ClothingOuterArmorSSP99Amber: 2750
+      Z14ClothingOuterArmorSSP99White: 3750
+      Z14ClothingOuterArmorSSP24Sapfire: 4225
+      Z14ClothingOuterArmorSevaSciWhite: 4000
+      Z14ClothingOuterArmorSSP99: 4100
+      Z14ClothingOuterArmorSSP24Ruby: 4100
+      Z14ClothingOuterArmorUzk5: 5500
+      Z14STClothingNeckExoskeletonSci: 8000
+      Z14STClothingOuterArmorVeryHeavySci: 8000
   - name: shop-category-storage-and-containers
     priority: 5
     items:
@@ -185,32 +185,32 @@
     priority: 6
     items:
       # Cloaks
-      ClothingOuterCoatDoshdevik: 60 # T1
+      Z14ClothingOuterCoatDoshdevik: 60 # T1
       # Gasmasks
-      ClothingMaskGasM40: 200 # T2
-      ClothingMaskM51: 1000
+      Z14ClothingMaskGasM40: 200 # T2
+      Z14ClothingMaskM51: 1000
   - name: shop-category-research-equipment
     priority: 7
     items:
       STBoltBagFilled: 50
-      BoxArtcont: 250 # T1
-      ZoneAnomalyDetectorAD1: 250 # T1
-      ZoneAnomalyDetectorAD2: 1000 # T2
-      ZoneAnomalyDetectorAD3: 2400 # T3
+      Z14BoxArtcont: 250 # T1
+      Z14ZoneAnomalyDetectorAD1: 250 # T1
+      Z14ZoneAnomalyDetectorAD2: 1000 # T2
+      Z14ZoneAnomalyDetectorAD3: 2400 # T3
       # Detectors
-      ZoneArtifactDetectorPulse: 50 # T1
-      ZoneArtifactDetectorHunter: 100 # T2
-      ZoneArtifactDetectorResponse: 700 # T2
-      ZoneArtifactDetectorSpruce: 3200 # T2
-      Veles: 6200 # T3
-      ZoneArtifactDetectorBarracuda: 5500 # T3
+      Z14ZoneArtifactDetectorPulse: 50 # T1
+      Z14ZoneArtifactDetectorHunter: 100 # T2
+      Z14ZoneArtifactDetectorResponse: 700 # T2
+      Z14ZoneArtifactDetectorSpruce: 3200 # T2
+      Z14Veles: 6200 # T3
+      Z14ZoneArtifactDetectorBarracuda: 5500 # T3
       DetectorSvarogBlueprint: 5500
       #RP Shit
-      BaseMachineAnomalyDestructorFolded: 500
-      BaseMachineAnomalyDestructorFolded1: 500
-      BaseMachineAnomalyDestructorFolded2: 500
-      BaseMachineAnomalyDestructorFolded3: 500
-      BaseMachineAnomalyDestructorFolded4: 500
+      Z14BaseMachineAnomalyDestructorFolded: 500
+      Z14BaseMachineAnomalyDestructorFolded1: 500
+      Z14BaseMachineAnomalyDestructorFolded2: 500
+      Z14BaseMachineAnomalyDestructorFolded3: 500
+      Z14BaseMachineAnomalyDestructorFolded4: 500
   - name: shop-category-utilities
     priority: 8
     items:
@@ -219,26 +219,26 @@
       STElasticRubberBlue: 15
       STRadioHeadset: 150
       ToolkitTearTwo: 5000
-      STCombatKnife: 25
+      Z14STCombatKnife: 25
       BoxZiptie: 50
       BoxSafebox: 300
       CheapLighter: 5
       FlippoLighter: 200
       GeigerCounter: 50
-      BaseRadio: 50
+      Z14BaseRadio: 50
       STFlashlightSeclite: 50
       PowerCellHyper: 50
       HandheldGPSBasic: 50
       Paper: 2
       Pen: 5
-      Binocularus1: 750
+      Z14Binocularus1: 750
       BoxFlare: 60
       ClothingBackpackDuffelGreenStalkerHydroponic: 500
       Beaker: 40
       Syringe: 20
       LargeBeaker: 50
       BaseChemistryEmptyVial: 40
-      ClothingGoPro: 250
+      Z14ClothingGoPro: 250
       ExtendedEmergencyOxygenTankFilledStalker: 50
       TrashDetectorTier1: 200
       Matchbox: 10
@@ -249,40 +249,40 @@
   - name: shop-category-provisions
     priority: 9
     items:
-      STEnergyDrink: 200
-      STEnergyDrinkMonster: 200
-      STEnergyDrinkRevo: 150
-      STDrinkBeerCanBaltic: 90
+      Z14STEnergyDrink: 200
+      Z14STEnergyDrinkMonster: 200
+      Z14STEnergyDrinkRevo: 150
+      Z14STDrinkBeerCanBaltic: 90
       DrinkVodkaBottleFull: 55
-      STFoodBreadPlain: 35
+      Z14STFoodBreadPlain: 35
       DrinkFlaskOld: 30
       DrinkWaterBottleFull: 45
       FoodTinMRE: 120
-      DrinkLemonadehBottleFull: 50
-      STFoodMeatSalami: 350
+      Z14DrinkLemonadehBottleFull: 50
+      Z14STFoodMeatSalami: 350
   - name: shop-category-medicine # 50% discount from stalkers
     priority: 10
     items:
       # Cheap
-      STPillboxAntirad: 125
-      STGauze: 35
-      STOintment: 35
-      STBrutepack: 35
+      Z14STPillboxAntirad: 125
+      Z14STGauze: 35
+      Z14STOintment: 35
+      Z14STBrutepack: 35
       Bloodpack: 225
-      MedkitAI2: 67
+      Z14MedkitAI2: 67
       Defibrillator: 500
-      AntiRadMedipen: 150
-      STPillboxProbud: 250
-      MedkitMilitary: 200
-      MedkitScience: 225
-      MedkitElite: 750
-      MedkitLAR: 1600
-      STPillboxShiza: 5000
+      Z14AntiRadMedipen: 150
+      Z14STPillboxProbud: 250
+      Z14MedkitMilitary: 200
+      Z14MedkitScience: 225
+      Z14MedkitElite: 750
+      Z14MedkitLAR: 1600
+      Z14STPillboxShiza: 5000
   - name: shop-category-customization
     priority: 11
     items:
-      ClothingBandageStalkerKrest: 5
-      ClothingMaskNeckFacemask: 20
+      Z14ClothingBandageStalkerKrest: 5
+      Z14ClothingMaskNeckFacemask: 20
       ClothingHandsGlovesFingerless: 35
       ClothingHandsGlovesMercFingerless: 35
       ClothingHandsGlovesNitrile: 35
@@ -299,13 +299,13 @@
       ClothingOuterCoatLabSeniorResearcher: 100
       ClothingOuterBioScientist: 200
       ClothingHeadHatHoodBioScientist: 50
-      ClothingHeadHatSovietUshankaStalker: 40
+      Z14ClothingHeadHatSovietUshankaStalker: 40
       ClothingEyesGlassesCheapSunglasses: 35
       ClothingEyesGlasses: 35
-      ClothingHeadBeretUN: 100
-      ClothingBandageStalkerJid: 50
-      ClothingBandageStalkerBelarus: 50
-      ClothingHeadHatBeaniehat: 10
+      Z14ClothingHeadBeretUN: 100
+      Z14ClothingBandageStalkerJid: 50
+      Z14ClothingBandageStalkerBelarus: 50
+      Z14ClothingHeadHatBeaniehat: 10
       ClothingHeadBandMerc: 30
       ClothingHeadBandSkull: 30
       ClothingHeadHatUshanka: 30
@@ -314,44 +314,44 @@
       ClothingShoesLeather: 30
       ClothingHeadHatBlacksoft: 10
       ClothingHeadHatGreysoft: 10
-      ClothingCloakStalker: 30
-      ClothingLegsJeansBlue: 10
-      ClothingLegsJeansStalker: 10
-      ClothingLegsJeansGreenCargo: 10
-      ClothingLegsJeansGreyCargo: 10
-      ClothingLegsJeansBlackCargo: 10
-      ClothingLegsJeansBrownCargo: 10
-      ClothingLegsJeansSandCargo: 10
-      ClothingLegsJeansRussianPixel: 20
-      ClothingLegsJeansBlackNew: 20
-      ClothingLegsJeansGorka: 20
+      Z14ClothingCloakStalker: 30
+      Z14ClothingLegsJeansBlue: 10
+      Z14ClothingLegsJeansStalker: 10
+      Z14ClothingLegsJeansGreenCargo: 10
+      Z14ClothingLegsJeansGreyCargo: 10
+      Z14ClothingLegsJeansBlackCargo: 10
+      Z14ClothingLegsJeansBrownCargo: 10
+      Z14ClothingLegsJeansSandCargo: 10
+      Z14ClothingLegsJeansRussianPixel: 20
+      Z14ClothingLegsJeansBlackNew: 20
+      Z14ClothingLegsJeansGorka: 20
       ClothingShoesBootsCombat: 30
-      ClothingTorsoTShirtPivozavr: 30
-      ClothingTorsoTShirtSailorSuit: 30
-      ClothingTorsoTShirtColorBlack: 30
-      ClothingTorsoTurtlenecksBlack: 90
-      ClothingTorsoTurtlenecksGorka: 90
-      ClothingTorsoTurtlenecksGorka6: 90
-      ClothingTorsoTurtlenecksBereza: 90
-      ClothingLegsJeansBereza: 20
-      ClothingLegsJeansGorka6: 20
-      ClothingTorsoTurtlenecksGorkaRus: 90
-      ClothingOuterCoatKKK: 67
+      Z14ClothingTorsoTShirtPivozavr: 30
+      Z14ClothingTorsoTShirtSailorSuit: 30
+      Z14ClothingTorsoTShirtColorBlack: 30
+      Z14ClothingTorsoTurtlenecksBlack: 90
+      Z14ClothingTorsoTurtlenecksGorka: 90
+      Z14ClothingTorsoTurtlenecksGorka6: 90
+      Z14ClothingTorsoTurtlenecksBereza: 90
+      Z14ClothingLegsJeansBereza: 20
+      Z14ClothingLegsJeansGorka6: 20
+      Z14ClothingTorsoTurtlenecksGorkaRus: 90
+      Z14ClothingOuterCoatKKK: 67
       # new shit
-      ClothingLegsBattlePantsBlack: 50
-      ClothingLegsVeryBlueJenas: 50
-      ClothingLegsCombatForest: 50
-      ClothingLegsGorka5: 50
-      ClothingLegsGorka6b: 50
-      ClothingLegsNavyPants: 50
-      ClothingLegsRussianNumber: 50
-      ClothingTorsoTurtlenecksBattleTurtleneckbBlack: 50
-      ClothingTorsoTurtlenecksBlackTurtleneck: 50
-      ClothingTorsoTurtlenecksCombatForest: 50
-      ClothingTorsoTurtlenecksGorka5: 50
-      ClothingTorsoTurtlenecksGorka6B: 50
-      ClothingTorsoTurtlenecksKhakiTurtleneck: 50
-      ClothingTorsoTurtlenecksMatrosska: 50
+      Z14ClothingLegsBattlePantsBlack: 50
+      Z14ClothingLegsVeryBlueJenas: 50
+      Z14ClothingLegsCombatForest: 50
+      Z14ClothingLegsGorka5: 50
+      Z14ClothingLegsGorka6b: 50
+      Z14ClothingLegsNavyPants: 50
+      Z14ClothingLegsRussianNumber: 50
+      Z14ClothingTorsoTurtlenecksBattleTurtleneckbBlack: 50
+      Z14ClothingTorsoTurtlenecksBlackTurtleneck: 50
+      Z14ClothingTorsoTurtlenecksCombatForest: 50
+      Z14ClothingTorsoTurtlenecksGorka5: 50
+      Z14ClothingTorsoTurtlenecksGorka6B: 50
+      Z14ClothingTorsoTurtlenecksKhakiTurtleneck: 50
+      Z14ClothingTorsoTurtlenecksMatrosska: 50
   - name: shop-category-entertainment
     priority: 12
     items:

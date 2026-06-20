@@ -1,0 +1,23 @@
+- type: entity
+  abstract: true
+  parent: Z14HelmetBase
+  id: Z14STClothingHeadHelmetCombatT5Base
+  categories: [ Zona14 ]
+  name: T5 Combat Helmet Base
+  components:
+  - type: HideLayerClothing
+    slots:
+    - Hair
+
+- type: entity
+  parent: Z14STClothingHeadHelmetCombatT5Base
+  id: Z14STClothingHeadHelmetFASTNeutralBlack
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: FAST Helmet (Black)
+  description: Protects against slashing and blunt damage
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/fast_helm_neutral_black.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/fast_helm_neutral_black.rsi

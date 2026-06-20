@@ -122,7 +122,7 @@
   id: STWeaponRifleAUG
   name: AUG
   description: Australian assault rifle with integrated scope.
-  suffix: ST, Кастомка
+  suffix: ST, Custom # Zona14: ST, Кастомка
   components:
   - type: Item
     sprite: _Stalker/Objects/Weapons/Guns/Rifles/aug.rsi

@@ -1,0 +1,7 @@
+- type: entity
+  parent: STBaseWeaponShotgunMP133
+  id: Z14STWeaponShotgunMP133
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: MP-133 Pump-action
+  description: Reliable Russian pump-action shotgun. Popular among rookie stalkers for its simplicity and low cost. 6-round capacity but slow reload.

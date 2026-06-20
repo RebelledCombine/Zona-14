@@ -1,7 +1,8 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: BaseMP5Mag
-  name: магазин МП-5 9x19 (35)
-  description: Магазин 9x19 мм для МП-5 Гадюка. Вместимость пуль 35. Продают пустым.
+  name: 9x19 MP-5 magazine (35)
+  description: 9x19 mm magazine for MP-5 Viper. Bullet capacity 35. They sell empty.
   parent: BaseItem
   suffix: Stalker
   components:
@@ -42,7 +43,7 @@
     zeroVisible: false
   - type: Appearance
   - type: RepositoryItem
-    categoryName: Магазины
+    categoryName: Magazines # Zona14: Магазины
   - type: ItemSlots
     slots:
       item_slot:
@@ -71,8 +72,8 @@
 
 - type: entity
   id: BasePP2000Mag
-  name: магазин ПП-2000 9x19 (20)
-  description: Магазин 9x19 мм для ПП-2000. Вместимость пуль 20. Продают пустым.
+  name: PP-2000 9x19 magazine (20)
+  description: 9x19mm magazine for the PP-2000. Holds 20 rounds. Sold empty.
   parent: BaseItem
   suffix: Stalker
   components:
@@ -113,7 +114,7 @@
     zeroVisible: false
   - type: Appearance
   - type: RepositoryItem
-    categoryName: Магазины
+    categoryName: Magazines # Zona14: Магазины
   - type: ItemSlots
     slots:
       item_slot:
@@ -142,8 +143,8 @@
 
 - type: entity
   id: BaseOTS126Mag
-  name: магазин ОЦ-126 9x19 (10)
-  description: Магазин 9x19 мм для ОЦ-126. Вместимость пуль 10. Продают пустым.
+  name: OTs-126 9x19 magazine (10)
+  description: 9x19mm magazine for the OTs-126. Holds 10 rounds. Sold empty.
   parent: BaseItem
   suffix: Stalker
   components:
@@ -184,7 +185,7 @@
     zeroVisible: false
   - type: Appearance
   - type: RepositoryItem
-    categoryName: Магазины
+    categoryName: Magazines # Zona14: Магазины
   - type: ItemSlots
     slots:
       item_slot:
@@ -213,8 +214,8 @@
 
 - type: entity
   id: MP5Mag50
-  name: магазин магазин МП-5 (50)
-  description: Магазин на MP-5 9x19. Вместимость пуль 50. Продают пустым.
+  name: MP-5 Magazine (50)
+  description: MP-5 9x19 magazine. Bullet capacity 50. They sell empty.
   parent: BaseMP5Mag
   suffix: Stalker
   components:
@@ -251,8 +252,8 @@
 
 - type: entity
   id: BaseGlockMag10
-  name: магазин Glock 9x19 (10)
-  description: Магазин на Glock 9x19. Вместимость пуль 10. Продают пустым.
+  name: Glock 9x19 magazine (10)
+  description: Glock 9x19 magazine. Bullet capacity 10. They sell empty.
   parent: BaseMP5Mag
   suffix: Stalker
   components:
@@ -302,8 +303,8 @@
 
 - type: entity
   id: GlockMag17
-  name: магазин Glock 9x19 (17)
-  description: Магазин на Glock 9x19. Вместимость пуль 17. Продают пустым.
+  name: Glock 9x19 magazine (17)
+  description: Glock 9x19 magazine. Bullet capacity 17. They sell empty.
   parent: BaseGlockMag10
   suffix: Stalker
   components:
@@ -345,8 +346,8 @@
 
 - type: entity
   id: GlockMag24
-  name: магазин Glock 9x19 (24)
-  description: Магазин на Glock 9x19. Вместимость пуль 24. Продают пустым.
+  name: Glock 9x19 magazine (24)
+  description: Glock 9x19 magazine. Bullet capacity 24. They sell empty.
   parent: BaseGlockMag10
   suffix: Stalker
   components:
@@ -388,8 +389,8 @@
 
 - type: entity
   id: GlockMag33
-  name: магазин Glock 9x19 (33)
-  description: Магазин на Glock 9x19. Вместимость пуль 33. Продают пустым.
+  name: Glock 9x19 magazine (33)
+  description: Glock 9x19 magazine. Bullet capacity 33. They sell empty.
   parent: BaseGlockMag10
   suffix: Stalker
   components:
@@ -427,8 +428,8 @@
 
 - type: entity
   id: BaseGSH-18Mag10
-  name: магазин ГШ-18 9x19 (10)
-  description: Магазин на ГШ-18 9x19. Вместимость пуль 10. Продают пустым.
+  name: GSh-18 9x19 magazine (10)
+  description: Magazine on GSh-18 9x19. Bullet capacity 10. They sell empty.
   parent: BaseMP5Mag
   suffix: Stalker
   components:
@@ -482,8 +483,8 @@
 
 - type: entity
   id: GSH-18Mag18
-  name: магазин ГШ-18 9x19 (18)
-  description: Магазин на ГШ-18 9x19. Вместимость пуль 18. Продают пустым.
+  name: GSh-18 9x19 magazine (18)
+  description: Magazine on GSh-18 9x19. Bullet capacity 18. They sell empty.
   parent: BaseGSH-18Mag10
   suffix: Stalker
   components:
@@ -530,8 +531,8 @@
 
 - type: entity
   id: VityazMag
-  name: магазин ПП-19-01 9x19 (30)
-  description: Магазин 9x19 мм для Витязь. Вместимость пуль 30. Продают пустым.
+  name: PP-19-01 9x19 magazine (30)
+  description: 9x19 mm magazine for Vityaz. Bullet capacity 30. They sell empty.
   parent: BaseMP5Mag
   suffix: Stalker
   components:
@@ -585,8 +586,8 @@
 
 - type: entity
   id: BizonMag919
-  name: шнековый магазин 9x19 "Бизон" (64)
-  description: Шнековый магазин на Бизон под 9х19. Вместимость пуль 64. Изменён с помощью инструментов.
+  name: 9x19 "Bison" screw magazine (64)
+  description: Auger magazine for Bison under 9x19. Bullet capacity 64. Modified with tools.
   parent: VityazMag
   suffix: Stalker
   components:
@@ -641,8 +642,8 @@
 
 - type: entity
   id: BaseTEC9Mag
-  name: магазин TEC-9 9x19 (20)
-  description: Магазин 9x19 для TEC-9. Вместимость пуль 20. Продают пустым.
+  name: TEC-9 9x19 magazine (20)
+  description: 9x19 magazine for TEC-9. Bullet capacity 20. They sell empty.
   parent: BaseMP5Mag
   suffix: Stalker
   components:
@@ -682,8 +683,8 @@
 
 - type: entity
   id: MP40Mag
-  name: магазин MP-40 9x19 (30)
-  description: Магазин 9x19 мм для MP-40. Вместимость пуль 30. Продают пустым.
+  name: MP-40 9x19 magazine (30)
+  description: 9x19 mm magazine for MP-40. Bullet capacity 30. They sell empty.
   parent: BaseMP5Mag
   suffix: Stalker
   components:
@@ -733,8 +734,8 @@
 
 - type: entity
   id: PP91Mag
-  name: магазин ПП-91 9x19 (30)
-  description: Магазин 9x19 мм для ПП-91 "Кедр". Вместимость пуль 30. Продают пустым.
+  name: PP-91 9x19 magazine (30)
+  description: 9x19 mm magazine for PP-91 "Kedr". Bullet capacity 30. They sell empty.
   parent: BaseMP5Mag
   suffix: Stalker
   components:
@@ -788,8 +789,8 @@
 
 - type: entity
   id: P90Mag
-  name: магазин P90 9x19 (50)
-  description: Магазин 9x19 мм для P90. Вместимость пуль 50. Продают пустым.
+  name: P90 9x19 magazine (50)
+  description: 9x19mm magazine for the P90. Bullet capacity 50. They sell empty.
   parent: BaseMP5Mag
   suffix: Stalker
   components:
@@ -839,8 +840,8 @@
 
 - type: entity
   id: LP08Drum
-  name: барабан Люгера (32)
-  description: Барабан для Люгера. Вместимость пуль 32. Продают пустым.
+  name: Luger drum (32)
+  description: "A drum magazine for the Luger using 9x19. Capacity: 32 rounds. Sold empty."
   parent: BasePPSHMag
   suffix: Stalker
   components:

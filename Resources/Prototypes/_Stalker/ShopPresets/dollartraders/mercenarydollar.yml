@@ -1,4 +1,4 @@
-#-----------------------ДОЛЛАРЫ-----------------------
+# Zona14: -----------------------ДОЛЛАРЫ-----------------------
 - type: shopPreset
   id: STMercenaryDollarTrader
   itemsForSale:
@@ -8,7 +8,7 @@
     priority: 1
     items:
       STWeaponShotgunProtecta: 25
-      STWeaponSMGThompson: 350 #ну а хуле, почти пулемёт, даже, возможно, лучше
+      STWeaponSMGThompson: 350 # almost a machine gun, possibly even better
       STWeaponRifleM14: 125
       STWeaponRifleG36: 140
       STWeaponRifleSIG550: 150
@@ -50,10 +50,10 @@
     items:
       BoxMRE: 5
       Defibrillator: 10
-      STOintmentGood: 2 #лечит 40 терм. урона (Heat: -20 Caustic: -10 Shock: -10 delay: 8)
-      MedkitMilitary: 2 #лечит 50 физ. урона (Piercing: -20 Blunt: -10 Slash: -20 delay: 8)
-      MedkitScience: 5 #лечит 45 терм. урона и 20 рад. (Heat: -15 Caustic: -15 Shock: -15 Radiation: -20 delay: 9)
-      WakeUpMedipen: 5 #содержит аналог 2 таблеток wakeuppill (20 унций Bloodloss: -3 Asphyxiation: -2 за унцию)
+      STOintmentGood: 2 # heals 40 thermal damage (Heat: -20 Caustic: -10 Shock: -10 delay: 8)
+      MedkitMilitary: 2 # heals 50 physical damage (Piercing: -20 Blunt: -10 Slash: -20 delay: 8)
+      MedkitScience: 5 # Zona14: лечит 45 терм. урона и 20 рад. (Heat: -15 Caustic: -15 Shock: -15 Radiation: -20 delay: 9)
+      WakeUpMedipen: 5 # Zona14: содержит аналог 2 таблеток wakeuppill (20 унций Bloodloss: -3 Asphyxiation: -2 за унцию)
       MedkitAI2: 1
       AntiRadMedipen: 5
       STPillboxShiza: 100

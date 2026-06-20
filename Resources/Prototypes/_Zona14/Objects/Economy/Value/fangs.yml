@@ -1,0 +1,77 @@
+- type: entity
+  parent: BaseItem
+  id: Z14Fangs
+  categories: [ Zona14 ]
+  name: Fangs
+  description: Fangs torn out from the front jaws of various mutants... only a fanatic would do this!
+  suffix: Z14
+  components:
+  - type: PhysicalComposition
+    materialComposition:
+      Credit: 1
+  - type: Stack
+    stackType: Fangs
+    count: 1
+    baseLayer: base
+  - type: Sprite
+    sprite: _Stalker/Objects/Economy/fangs.rsi
+    state: cash
+    layers:
+    - state: cash
+      map: ["base"]
+  - type: Item
+    sprite: _Stalker/Objects/Economy/fangs.rsi
+    size: Small
+  - type: Physics
+    bodyType: Dynamic
+  - type: Fixtures
+    fixtures:
+      fix1:
+        density: 30
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.35,-0.2,0.25,0.1"
+        mask:
+        - ItemMask
+  - type: Appearance
+  - type: Tag
+    tags:
+    - Fangs
+
+- type: currency
+  id: Z14Fangs
+  displayName: store-currency-display-fangs
+  cash:
+    1: Fangs
+  canWithdraw: true
+
+- type: stack
+  id: Z14Fangs
+  name: stack-fang
+  maxCount: 5000
+  icon: { sprite: /Textures/_Stalker/Objects/Economy/fangs.rsi, state: cash }
+  spawn: Fangs
+
+- type: entity
+  parent: Fangs
+  id: Z14Fangs100
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Icon
+    sprite: _Stalker/Objects/Economy/fangs.rsi
+    state: cash_100
+  - type: Stack
+    count: 100
+
+- type: entity
+  parent: Fangs
+  id: Z14Fangs1000
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Icon
+    sprite: _Stalker/Objects/Economy/fangs.rsi
+    state: cash_1000
+  - type: Stack
+    count: 1000

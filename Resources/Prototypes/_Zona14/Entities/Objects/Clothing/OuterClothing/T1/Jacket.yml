@@ -1,0 +1,481 @@
+- type: entity
+  parent: Z14ArmorBaseT1PvP
+  id: Z14STClothingOuterJacketBase
+  categories: [ Zona14 ]
+  name: Basic Jacket
+  description: Base jacket description.
+  abstract: true
+  components:
+  - type: ToggleableClothing
+    clothingPrototype: STClothingHeadHatHoodBase
+    slot: head
+
+  - type: UserInterface
+    interfaces:
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
+  - type: Craftable
+
+- type: entity
+  parent: STClothingHeadHatBase
+  id: Z14STClothingHeadHatHoodBase
+  suffix: Z14
+  categories: [ HideSpawnMenu, Zona14 ]
+  name: hood
+  components:
+  - type: STWeight
+    self: 1
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/jacket_hat_stalker.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/jacket_hat_stalker.rsi
+  - type: HideLayerClothing
+    slots:
+    - Hair
+
+# Bandit
+
+- type: entity
+  parent: Z14ArmorBaseT1PvP
+  id: Z14ClothingOuterJacketBandit
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: bandit jacket
+  description: A black leather jacket — a traditional bandit attribute. Unlike rookie jackets, thin metal plates can slightly protect from pistol rounds. Won't survive anomalies or automatic fire, but helps in a rookie scuffle.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/jacket_bandit.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/jacket_bandit.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHatHoodJacketBandit
+    slot: head
+  # bandit's bonus
+- type: entity
+  parent: Z14STClothingHeadHatHoodBase
+  id: Z14ClothingHeadHatHoodJacketBandit
+  suffix: Z14
+  categories: [ HideSpawnMenu, Zona14 ]
+  name: hood
+  components:
+  - type: STWeight
+    self: 1
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/jacket_hat_bandit.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/jacket_hat_bandit.rsi
+
+# Stalker
+
+- type: entity
+  parent: Z14ArmorBaseT1PvP
+  id: Z14ClothingOuterJacketStalker
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Stalker Jacket
+  description: Standard beginner stalker clothing. Won't save from bullets or anomalies, but comfortable to wear.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/jacket_stalker.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/jacket_stalker.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHatHoodJacketStalker
+    slot: head
+
+- type: entity
+  parent: Z14STClothingHeadHatHoodBase
+  id: Z14ClothingHeadHatHoodJacketStalker
+  suffix: Z14
+  categories: [ HideSpawnMenu, Zona14 ]
+  name: hood
+  components:
+  - type: STWeight
+    self: 1
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/jacket_hat_stalker.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/jacket_hat_stalker.rsi
+
+# Stalker White
+
+- type: entity
+  parent: Z14ArmorBaseT1PvP
+  id: Z14ClothingOuterJacketStalkerWhite
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: White Stalker Jacket
+  description: Standard beginner stalker clothing. Won't save from bullets or anomalies, but comfortable to wear.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/jacket_stalker_white.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/jacket_stalker_white.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHatHoodJacketStalkerWhite
+    slot: head
+
+- type: entity
+  parent: Z14STClothingHeadHatHoodBase
+  id: Z14ClothingHeadHatHoodJacketStalkerWhite
+  suffix: Z14
+  categories: [ HideSpawnMenu, Zona14 ]
+  name: hood
+  components:
+  - type: STWeight
+    self: 1
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/jacket_hat_stalker_white.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/jacket_hat_stalker_white.rsi
+
+
+# Freedom
+
+- type: entity
+  parent: Z14ArmorBaseT1PvP
+  id: Z14ClothingOuterJacketFreedom
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Wola Jacket
+  description: Camouflaged jacket of the Volya faction, mostly used by newcomers for wearing in safe areas.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/jacket_svoboda.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/jacket_svoboda.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHatHoodJacketFreedom
+    slot: head
+  # Bonus
+- type: entity
+  parent: Z14STClothingHeadHatHoodBase
+  id: Z14ClothingHeadHatHoodJacketFreedom
+  suffix: Z14
+  categories: [ HideSpawnMenu, Zona14 ]
+  name: hood
+  components:
+  - type: STWeight
+    self: 1
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/jacket_hat_svoboda.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/jacket_hat_svoboda.rsi
+
+# Merc
+
+- type: entity
+  parent: Z14ArmorBaseT1PvP
+  id: Z14ClothingOuterJacketMerc
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Mercenary Jacket
+  description:  Design based on Western special forces suits. Special fabric treatment provides improved stability during physical movement.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/jacket_mercenary.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/jacket_mercenary.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHatHoodJacketMerc
+    slot: head
+  # Bonus
+- type: entity
+  parent: Z14STClothingHeadHatHoodBase
+  id: Z14ClothingHeadHatHoodJacketMerc
+  suffix: Z14
+  categories: [ HideSpawnMenu, Zona14 ]
+  name: hood
+  components:
+  - type: STWeight
+    self: 1
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/jacket_hat_mercenary.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/jacket_hat_mercenary.rsi
+
+# Clear Sky
+
+- type: entity
+  parent: Z14ArmorBaseT1PvP
+  id: Z14ClothingOuterJacketCN
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Clear Sky Jacket
+  description: A weakly protective jacket made for Clear Sky. Produced by Clear Sky craftsmen before it became outdated. Nearly identical to a regular leather jacket, but decent against bites, fire, and cold.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/jacket_cn.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/jacket_cn.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHatHoodJacketCN
+    slot: head
+- type: entity
+  parent: Z14STClothingHeadHatHoodBase
+  id: Z14ClothingHeadHatHoodJacketCN
+  suffix: Z14
+  categories: [ HideSpawnMenu, Zona14 ]
+  name: hood
+  components:
+  - type: STWeight
+    self: 1
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/jacket_hat_cn.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/jacket_hat_cn.rsi
+
+# Dolg
+
+- type: entity
+  parent: Z14ArmorBaseT1PvP
+  id: Z14ClothingOuterJacketDolg
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Debt Jacket
+  description: Armor set of pants, boots, and jacket with armored inserts and elbow pads. Minimal bullet and anomaly protection. Might save from a PM bullet — decent armor for fresh recruits defending Earth from Zone contamination.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/jacket_dolg.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/jacket_dolg.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHatHoodJacketDolg
+    slot: head
+  # bonus
+- type: entity
+  parent: Z14STClothingHeadHatHoodBase
+  id: Z14ClothingHeadHatHoodJacketDolg
+  suffix: Z14
+  categories: [ HideSpawnMenu, Zona14 ]
+  name: hood
+  components:
+  - type: STWeight
+    self: 1
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/jacket_hat_dolg.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/jacket_hat_dolg.rsi
+
+# Neutral
+
+- type: entity
+  parent: Z14ArmorBaseT1PvP
+  id: Z14ClothingOuterJacketNeytral
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: neutral jacket
+  description: Standard Neutral clothing. Won't save from bullets or anomalies, but comfortable to wear.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/jacket_neytralov.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/jacket_neytralov.rsi
+  - type: ToggleableClothing
+    clothingPrototype: Z14ClothingHeadHatHoodCoatStalker
+    slot: head
+
+# Anomalists
+- type: entity
+  parent: Z14ArmorBaseT1PvP
+  id: Z14ClothingOuterCoatIvyAnomalist
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: anomalist ivy jacket
+  description: anomalist jacket
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/outerClothing/Coats/ivy_anomalist.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/outerClothing/Coats/ivy_anomalist.rsi
+    - type: PersonalDamage
+      interval: 1
+      damage:
+        types:
+          Blunt: -0.1
+          Slash: -0.1
+          Piercing: -0.1
+
+- type: entity
+  parent: Z14ArmorBaseT1PvP
+  id: Z14ClothingOuterJacketDeserter
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Renegade Jacket
+  description: Dark gray pixel camo jacket used by the Deserters, has shoulder pads that only protect you from a boring look.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/jacket_deserters.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/jacket_deserters.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHatHoodJacketDeserter
+    slot: head
+
+- type: entity
+  parent: Z14STClothingHeadHatHoodBase
+  id: Z14ClothingHeadHatHoodJacketDeserter
+  suffix: Z14
+  categories: [ HideSpawnMenu, Zona14 ]
+  name: hood
+  components:
+  - type: STWeight
+    self: 1
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/jacket_hat_deserter.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/jacket_hat_deserter.rsi
+
+- type: entity
+  parent: Z14ArmorBaseT1PvP
+  id: Z14ClothingOuterJacketMonolith
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Monolith Jacket
+  description: Light gray pixel camo jacket used by Monolith, has shoulder pads that only protect you from a boring look.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/jacket_monolith.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/jacket_monolith.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHatHoodJacketMonolith
+    slot: head
+
+- type: entity
+  parent: Z14STClothingHeadHatHoodBase
+  id: Z14ClothingHeadHatHoodJacketMonolith
+  suffix: Z14
+  name: hood
+  categories: [ HideSpawnMenu, Zona14 ]
+  components:
+  - type: STWeight
+    self: 1
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/jacket_hat_monolith.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/jacket_hat_monolith.rsi
+
+# Skins
+
+- type: entity
+  parent: Z14ArmorBaseT1PvP
+  id: Z14ClothingJaketRealHuman
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: White Jacket
+  description: A white jacket with a scorpion design on the back. Makes you feel like a real person.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/jacket_realhuman.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/jacket_realhuman.rsi
+
+- type: entity
+  parent: Z14ArmorBaseT1PvP
+  id: Z14ClothingJaketGeneral
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: General's Uniform
+  description: Sound off, one, two!
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/jacket_general.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/jacket_general.rsi
+
+- type: entity
+  parent: Z14ArmorBaseT1PvP
+  id: Z14ClothingJaketGray
+  categories: [ Zona14 ]
+  name: pea coat
+  description: double-breasted coat with warm lining and turndown collar
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/jacket_gray.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/jacket_gray.rsi
+
+# Sci - 7
+
+- type: entity
+  parent: Z14ArmorBaseT1PvP
+  id: Z14ClothingOuterJacketSCI
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: jacket 'NIICHAZ'
+  description: Won't save from bullets or anomalies, but comfortable to wear. Smells like dry cleaning...
+  components:
+  - type: ToggleableClothing
+    clothingPrototype: ClothingJacketSci
+    slot: head
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/jacket_sci.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/jacket_sci.rsi
+
+- type: entity
+  parent: STClothingHeadHatBase
+  id: Z14ClothingJacketSci
+  suffix: Z14
+  categories: [ HideSpawnMenu, Zona14 ]
+  name: jacket
+  components:
+  - type: STWeight
+    self: 5
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/jacket_hat_sci.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/jacket_hat_sci.rsi
+  - type: HideLayerClothing
+    slots:
+    - Hair
+
+# Jabs - 9
+
+- type: entity
+  parent: Z14ArmorBaseT1PvP
+  id: Z14ClothingOuterJacketJaba
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: "'Toad' jacket"
+  description: Won't save from bullets or anomalies, but comfortable to wear. Made of genuine leather.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/jacket_jabs.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/jacket_jabs.rsi
+
+- type: entity
+  parent: Z14ArmorBaseT1PvP
+  id: Z14ClothingOuterJacketSera
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: "'Follower' Jacket"
+  description: A plain black jacket, partially painted olive.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/jacket-serafim.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/jacket-serafim.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingOuterJacketSeraHatHood
+    slot: head
+
+- type: entity
+  parent: STClothingHeadHatBase
+  id: Z14ClothingOuterJacketSeraHatHood
+  suffix: Z14
+  categories: [ HideSpawnMenu, Zona14 ]
+  name: jacket
+  components:
+  - type: STWeight
+    self: 5
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/jacket_hat_sera.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/jacket_hat_sera.rsi
+  - type: HideLayerClothing
+    slots:
+    - Hair

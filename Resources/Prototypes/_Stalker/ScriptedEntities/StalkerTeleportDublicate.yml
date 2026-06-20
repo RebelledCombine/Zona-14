@@ -1,3 +1,4 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   abstract: true
   id: StalkerDuplicateTeleportBase
@@ -34,9 +35,9 @@
 - type: entity
   parent: StalkerDuplicateTeleportBase
   id: StalkerDublicateWipeSafe
-  name: Сохранение чертежей
-  description: С помощью этого подвала вы сможете сохранить свои чертежи от вайпа
-  suffix: Teleport, Portal, Duplicate, Вайп, Teleport
+  name: Blueprint Save
+  description: With this cellar, you can save your blueprints from the wipe.
+  suffix: Teleport, Portal, Duplicate, Wipe, Teleport # Zona14: Teleport, Portal, Duplicate, Вайп, Teleport
   components:
   - type: Transform
     anchored: True
@@ -73,8 +74,8 @@
 - type: entity
   parent: StalkerDuplicateTeleportBase
   id: StalkerDublicateKordon
-  name: Подвал в логово
-  description: С помощью этого подвала вы можете попасть в своё логово.
+  name: Personal Storage
+  description: Store items in your repository to save them between rounds. Also starting 2k roubles inside!
   suffix: Teleport, Portal, Duplicate, Kordon
   components:
   - type: DuplicateTeleport
@@ -84,8 +85,8 @@
 - type: entity
   parent: StalkerDuplicateTeleportBase
   id: StalkerDublicateRedForest
-  name: Подвал в логово
-  description: С помощью этого подвала вы можете попасть в своё логово.
+  name: "{ ent-StalkerDublicateKordon }"
+  description: "{ ent-StalkerDublicateKordon.desc }"
   suffix: Teleport, Portal, Duplicate, OrangeForest
   components:
   - type: DuplicateTeleport
@@ -103,8 +104,8 @@
 - type: entity
   id: StalkerDublicateMilitary
   parent: StalkerDuplicateTeleportBase
-  name: Подвал в логово
-  description: С помощью этого подвала вы можете попасть в своё логово.
+  name: "{ ent-StalkerDublicateKordon }"
+  description: "{ ent-StalkerDublicateKordon.desc }"
   suffix: Teleport, Portal, Duplicate, Military
   components:
   - type: DuplicateTeleport
@@ -117,8 +118,8 @@
 - type: entity
   id: StalkerDublicateSci
   parent: StalkerDuplicateTeleportBase
-  name: Подвал в логово
-  description: С помощью этого подвала вы можете попасть в своё логово.
+  name: "{ ent-StalkerDublicateKordon }"
+  description: "{ ent-StalkerDublicateKordon.desc }"
   suffix: Teleport, Portal, Duplicate, Sci
   components:
   - type: DuplicateTeleport
@@ -131,8 +132,8 @@
 - type: entity
   id: StalkerDublicateBandit
   parent: StalkerDuplicateTeleportBase
-  name: Подвал в логово
-  description: С помощью этого подвала вы можете попасть в своё логово.
+  name: "{ ent-StalkerDublicateKordon }"
+  description: "{ ent-StalkerDublicateKordon.desc }"
   suffix: Teleport, Portal, Duplicate, Bandit
   components:
   - type: DuplicateTeleport
@@ -145,8 +146,8 @@
 - type: entity
   id: StalkerDublicateSeraphims
   parent: StalkerDuplicateTeleportBase
-  name: Подвал в логово
-  description: С помощью этого подвала вы можете попасть в своё логово.
+  name: "{ ent-StalkerDublicateKordon }"
+  description: "{ ent-StalkerDublicateKordon.desc }"
   suffix: Teleport, Portal, Duplicate, Seraphims
   components:
   - type: DuplicateTeleport
@@ -159,8 +160,8 @@
 - type: entity
   id: StalkerDublicateDolg
   parent: StalkerDuplicateTeleportBase
-  name: Подвал в логово
-  description: С помощью этого подвала вы можете попасть в своё логово.
+  name: "{ ent-StalkerDublicateKordon }"
+  description: "{ ent-StalkerDublicateKordon.desc }"
   suffix: Teleport, Portal, Duplicate, Dolg
   components:
   - type: DuplicateTeleport
@@ -173,8 +174,8 @@
 - type: entity
   id: StalkerDublicateFreedom
   parent: StalkerDuplicateTeleportBase
-  name: Подвал в логово
-  description: С помощью этого подвала вы можете попасть в своё логово.
+  name: "{ ent-StalkerDublicateKordon }"
+  description: "{ ent-StalkerDublicateKordon.desc }"
   suffix: Teleport, Portal, Duplicate, Freedom
   components:
   - type: DuplicateTeleport
@@ -187,8 +188,8 @@
 - type: entity
   id: StalkerDublicateRenegats
   parent: StalkerDuplicateTeleportBase
-  name: Подвал в логово
-  description: С помощью этого подвала вы можете попасть в своё логово.
+  name: "{ ent-StalkerDublicateKordon }"
+  description: "{ ent-StalkerDublicateKordon.desc }"
   suffix: Teleport, Portal, Duplicate, Renegat
   components:
   - type: DuplicateTeleport
@@ -201,8 +202,8 @@
 - type: entity
   id: StalkerDublicateCovenant
   parent: StalkerDuplicateTeleportBase
-  name: Подвал в логово
-  description: С помощью этого подвала вы можете попасть в своё логово.
+  name: "{ ent-StalkerDublicateKordon }"
+  description: "{ ent-StalkerDublicateKordon.desc }"
   suffix: Teleport, Portal, Duplicate, Covenant
   components:
   - type: DuplicateTeleport
@@ -215,8 +216,8 @@
 - type: entity
   id: StalkerDublicateAnomalists
   parent: StalkerDuplicateTeleportBase
-  name: Подвал в логово
-  description: С помощью этого подвала вы можете попасть в своё логово.
+  name: "{ ent-StalkerDublicateKordon }"
+  description: "{ ent-StalkerDublicateKordon.desc }"
   suffix: Teleport, Portal, Duplicate, Anomalist
   components:
   - type: DuplicateTeleport
@@ -229,8 +230,8 @@
 - type: entity
   id: StalkerDublicateMerc
   parent: StalkerDuplicateTeleportBase
-  name: Подвал в логово
-  description: С помощью этого подвала вы можете попасть в своё логово.
+  name: "{ ent-StalkerDublicateKordon }"
+  description: "{ ent-StalkerDublicateKordon.desc }"
   suffix: Teleport, Portal, Duplicate, Mercenary
   components:
   - type: DuplicateTeleport
@@ -243,8 +244,8 @@
 - type: entity
   id: StalkerDublicateGreh
   parent: StalkerDuplicateTeleportBase
-  name: Подвал в логово
-  description: С помощью этого подвала вы можете попасть в своё логово.
+  name: "{ ent-StalkerDublicateKordon }"
+  description: "{ ent-StalkerDublicateKordon.desc }"
   suffix: Teleport, Portal, Duplicate, Greh
   components:
   - type: DuplicateTeleport
@@ -257,8 +258,8 @@
 - type: entity
   id: StalkerDublicateClearSky
   parent: StalkerDuplicateTeleportBase
-  name: Подвал в логово
-  description: С помощью этого подвала вы можете попасть в своё логово.
+  name: "{ ent-StalkerDublicateKordon }"
+  description: "{ ent-StalkerDublicateKordon.desc }"
   suffix: Teleport, Portal, Duplicate, Clear Sky
   components:
   - type: DuplicateTeleport
@@ -271,8 +272,8 @@
 - type: entity
   id: StalkerDublicatePoisk
   parent: StalkerDuplicateTeleportBase
-  name: Подвал в логово
-  description: С помощью этого подвала вы можете попасть в своё логово.
+  name: "{ ent-StalkerDublicateKordon }"
+  description: "{ ent-StalkerDublicateKordon.desc }"
   suffix: Teleport, Portal, Duplicate, Poisk
   components:
   - type: DuplicateTeleport
@@ -285,8 +286,8 @@
 - type: entity
   id: StalkerDublicateNeutral
   parent: StalkerDuplicateTeleportBase
-  name: Подвал в логово
-  description: С помощью этого подвала вы можете попасть в своё логово.
+  name: "{ ent-StalkerDublicateKordon }"
+  description: "{ ent-StalkerDublicateKordon.desc }"
   suffix: Teleport, Portal, Duplicate, Neutral
   components:
   - type: DuplicateTeleport
@@ -299,8 +300,8 @@
 - type: entity
   id: StalkerDublicateDeserter
   parent: StalkerDuplicateTeleportBase
-  name: Подвал в логово
-  description: С помощью этого подвала вы можете попасть в своё логово.
+  name: "{ ent-StalkerDublicateKordon }"
+  description: "{ ent-StalkerDublicateKordon.desc }"
   suffix: Teleport, Portal, Duplicate, Deserter
   components:
   - type: DuplicateTeleport
@@ -311,8 +312,8 @@
 - type: entity
   id: StalkerDublicateJaba
   parent: StalkerDuplicateTeleportBase
-  name: Подвал в логово
-  description: С помощью этого подвала вы можете попасть в своё логово.
+  name: "{ ent-StalkerDublicateKordon }"
+  description: "{ ent-StalkerDublicateKordon.desc }"
   suffix: Teleport, Portal, Duplicate, Jaba
   components:
   - type: DuplicateTeleport
@@ -325,8 +326,8 @@
 - type: entity
   id: StalkerDublicateMechanic
   parent: StalkerDuplicateTeleportBase
-  name: Подвал в логово
-  description: С помощью этого подвала вы можете попасть в своё логово.
+  name: "{ ent-StalkerDublicateKordon }"
+  description: "{ ent-StalkerDublicateKordon.desc }"
   suffix: Teleport, Portal, Duplicate, Mechanic
   components:
   - type: DuplicateTeleport
@@ -337,8 +338,8 @@
 - type: entity
   id: StalkerDublicateProject
   parent: StalkerDuplicateTeleportBase
-  name: Подвал в логово
-  description: С помощью этого подвала вы можете попасть в своё логово.
+  name: "{ ent-StalkerDublicateKordon }"
+  description: "{ ent-StalkerDublicateKordon.desc }"
   suffix: Teleport, Portal, Duplicate, Project
   components:
   - type: DuplicateTeleport
@@ -349,8 +350,8 @@
 - type: entity
   id: StalkerDublicateBar
   parent: StalkerDuplicateTeleportBase
-  name: Подвал в логово
-  description: С помощью этого подвала вы можете попасть в своё логово.
+  name: "{ ent-StalkerDublicateKordon }"
+  description: "{ ent-StalkerDublicateKordon.desc }"
   suffix: Teleport, Portal, Duplicate, Bar
   components:
   - type: DuplicateTeleport
@@ -361,8 +362,8 @@
 - type: entity
   id: StalkerDublicateBoloto
   parent: StalkerDuplicateTeleportBase
-  name: Подвал в логово
-  description: С помощью этого подвала вы можете попасть в своё логово.
+  name: basement to lair
+  description: Using this basement, you can travel to your lair.
   suffix: Teleport, Portal, Duplicate, Boloto
   components:
   - type: DuplicateTeleport
@@ -372,8 +373,8 @@
 - type: entity
   id: StalkerDublicateAtom
   parent: StalkerDuplicateTeleportBase
-  name: Подвал в логово
-  description: С помощью этого подвала вы можете попасть в своё логово.
+  name: basement to lair
+  description: Using this basement, you can travel to your lair.
   suffix: Teleport, Portal, Duplicate, Atom
   components:
   - type: DuplicateTeleport

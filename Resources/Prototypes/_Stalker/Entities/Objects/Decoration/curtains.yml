@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: TulleCurtains
   parent: BaseCurtains
   suffix: ST, Mapping
-  name: шторы
-  description: Старые советские шторы.
+  name: Curtains
+  description: Old Soviet curtains.
   components:
   - type: Occluder
     boundingBox: "-0.5,-0.3,0.5,0.6"
@@ -47,8 +48,8 @@
   id: CommunalCurtains
   parent: BaseCurtains
   suffix: ST, Mapping
-  name: шторы
-  description: Старые советские шторы.
+  name: "{ ent-TulleCurtains }"
+  description: "{ ent-TulleCurtains.desc }"
   components:
   - type: Occluder
     boundingBox: "-0.5,-0.3,0.5,0.6"
@@ -92,8 +93,8 @@
   id: BushCurtains
   parent: BaseCurtains
   suffix: ST, Mapping
-  name: шторы
-  description: Старые советские шторы.
+  name: "{ ent-TulleCurtains }"
+  description: "{ ent-TulleCurtains.desc }"
   components:
   - type: Occluder
     boundingBox: "-0.5,-0.3,0.5,0.6"

@@ -1,7 +1,8 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: STSidorTrigger
   parent: MarkerBase
-  name: Сидорович Реплика
+  name: Sidorovich Replica
   description: Make a Sound and Text.
   suffix: Stalker SoundsTriggers
   components:
@@ -30,7 +31,7 @@
 - type: entity
   id: STBarmenTrigger
   parent: STSidorTrigger
-  name: Бармен Реплика
+  name: Barman vendor detection
   description: Make a Sound and Text.
   suffix: Stalker SoundsTriggers
   components:
@@ -54,7 +55,7 @@
 - type: entity
   id: STDolgTrigger
   parent: STSidorTrigger
-  name: Долг Реплика
+  name: Duty vendor detection
   description: Make a Sound and Text.
   suffix: Stalker SoundsTriggers
   components:
@@ -80,7 +81,7 @@
 - type: entity
   id: STSvobodaTrigger
   parent: STSidorTrigger
-  name: Свобода Реплика
+  name: Freedom vendor detection
   description: Make a Sound and Text.
   suffix: Stalker SoundsTriggers
   components:
@@ -106,7 +107,7 @@
 - type: entity
   id: STBanditTrigger
   parent: STSidorTrigger
-  name: Бандиты Реплика
+  name: Bandit vendor detection
   description: Make a Sound and Text.
   suffix: Stalker SoundsTriggers
   components:
@@ -132,7 +133,7 @@
 - type: entity
   id: STSciTrigger
   parent: STSidorTrigger
-  name: Учёные Реплика
+  name: Ecologist vendor detection
   description: Make a Sound and Text.
   suffix: Stalker SoundsTriggers
   components:

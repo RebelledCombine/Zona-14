@@ -1,0 +1,40 @@
+- type: entity
+  parent: Z14MobMutantCat
+  id: Z14STMobMutantCatCommon
+  categories: [ Zona14 ]
+  name: Bayun
+  suffix: Z14
+  components:
+  - type: STMobVariant
+    quality: Common
+    applied: true
+
+- type: entity
+  parent: Z14MobMutantCat
+  id: Z14STMobMutantCatUncommon
+  categories: [ Zona14 ]
+  name: Adapted Bayun
+  suffix: Z14
+  components:
+  - type: STMobVariant
+    quality: Uncommon
+
+- type: entity
+  parent: Z14MobMutantCat
+  id: Z14STMobMutantCatRare
+  categories: [ Zona14 ]
+  name: Mutated Bayun
+  suffix: Z14
+  components:
+  - type: STMobVariant
+    quality: Rare
+
+- type: entity
+  parent: Z14MobMutantCat
+  id: Z14STMobMutantCatLegendary
+  categories: [ Zona14 ]
+  name: Singular Bayun
+  suffix: Z14
+  components:
+  - type: STMobVariant
+    quality: Legendary

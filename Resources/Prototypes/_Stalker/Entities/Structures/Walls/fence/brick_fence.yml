@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: BaseStructure
   id: BaseFenceBrick
-  name: кирпичный забор
-  description: Забор, выполненный из кирпича.
+  name: brick fence
+  description: A fence made of brick.
   abstract: true
   components:
   - type: Sprite
@@ -130,9 +131,9 @@
 - type: entity
   parent: BaseFenceBrick
   id: FenceBrickBroken1
-  name: сломанный кирпичный забор
+  name: broken brick fence
   suffix: ST, Mapping
-  description: Забор, выполненный из кирпича. Интересно, кто же умудрился его сломать?
+  description: A fence made of brick. Wonder who managed to break it?
   components:
   - type: Sprite
     layers:
@@ -183,9 +184,9 @@
 - type: entity
   parent: BaseFenceBrick
   id: FenceBrickBroken2
-  name: сломанный кирпичный забор
+  name: broken brick fence
   suffix: ST, Mapping
-  description: Забор, выполненный из кирпича. Интересно, кто же умудрился его сломать?
+  description: A fence made of brick. Wonder who managed to break it?
   components:
   - type: Sprite
     layers:
@@ -236,9 +237,9 @@
 - type: entity
   parent: BaseFenceBrick
   id: FenceBrickBroken3
-  name: сломанный кирпичный забор
+  name: broken brick fence
   suffix: ST, Mapping
-  description: Забор, выполненный из кирпича. Интересно, кто же умудрился его сломать?
+  description: A fence made of brick. Wonder who managed to break it?
   components:
   - type: Sprite
     layers:
@@ -289,9 +290,9 @@
 - type: entity
   parent: BaseFenceBrick
   id: FenceBrickBroken4
-  name: сломанный кирпичный забор
+  name: broken brick fence
   suffix: ST, Mapping
-  description: Забор, выполненный из кирпича. Интересно, кто же умудрился его сломать?
+  description: A fence made of brick. Wonder who managed to break it?
   components:
   - type: Sprite
     layers:

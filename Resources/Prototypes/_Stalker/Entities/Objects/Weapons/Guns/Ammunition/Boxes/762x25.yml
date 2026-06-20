@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: BaseAmmoBoxStalker
   id: 725PBox
-  name: коробка патронов (7,62x25) П гл
-  description: Для ТТ и ППШ, в коробке 30 штук. Обеспечивает пробитие только 1 класса брони.
+  name: Ammo Box (7.62x25) P ch
+  description: For TT and PPSh, there are 30 pieces in a box. Provides penetration of only 1 armor class.
   suffix: Stalker
   components:
   - type: MagazineVisuals
@@ -23,8 +24,8 @@
 - type: entity
   parent: 725PBox
   id: 725PTBox
-  name: коробка патронов (7,62x25) ПТ гж
-  description: Для ТТ и ППШ, в коробке 30 штук. Обеспечивает пробитие 2 класса брони.
+  name: Ammo Box (7.62x25) PT gzh
+  description: For TT and PPSh, there are 30 pieces in a box. Provides penetration of armor class 2.
   suffix: Stalker
   components:
     - type: BallisticAmmoProvider
@@ -40,8 +41,8 @@
 - type: entity
   parent: 725PBox
   id: 725LRNPCBox
-  name: коробка патронов (7,62x25) LRNPC
-  description: Для ТТ и ППШ, в коробке 30 штук. Бесполезно против брони.
+  name: Ammo Box (7.62x25) LRNPC
+  description: For TT and PPSh, there are 30 pieces in a box. Useless against armor.
   suffix: Stalker
   components:
     - type: BallisticAmmoProvider
@@ -57,8 +58,8 @@
 - type: entity
   parent: 725PBox
   id: 725PSTBox
-  name: коробка патронов (7,62x25) Пст гж
-  description: Для ТТ и ППШ, в коробке 30 штук. Обеспечивает пробитие 3 класса брони.
+  name: Ammo Box (7.62x25) Pst gzh
+  description: For TT and PPSh, there are 30 pieces in a box. Provides penetration of armor class 3.
   suffix: Stalker
   components:
     - type: BallisticAmmoProvider
@@ -74,8 +75,8 @@
 - type: entity
   parent: BaseAmmoCinkBoxStalker
   id: 725PBoxCink
-  name: ящик патронов (7,62x25) П гл
-  description: Для ТТ и ППШ, в коробке 300 штук. Обеспечивает пробитие только 1 класса брони.
+  name: Large Ammo Box (7.62x25) P ch
+  description: For TT and PPSh, there are 300 pieces in a box. Provides penetration of only 1 armor class.
   suffix: Stalker
   components:
   - type: BallisticAmmoProvider
@@ -94,8 +95,8 @@
 - type: entity
   parent: 725PBoxCink
   id: 725PTBoxCink
-  name: ящик патронов (7,62x25) ПТ гж
-  description: Для ТТ и ППШ, в коробке 300 штук. Обеспечивает пробитие 2 класса брони.
+  name: Large Ammo Box (7.62x25) PT gzh
+  description: For TT and PPSh, there are 300 pieces in a box. Provides penetration of armor class 2.
   suffix: Stalker
   components:
     - type: BallisticAmmoProvider
@@ -110,8 +111,8 @@
 - type: entity
   parent: 725PBoxCink
   id: 725LRNPCBoxCink
-  name: ящик патронов (7,62x25) LRNPC
-  description: Для ТТ и ППШ, в коробке 300 штук. Бесполезно против брони.
+  name: Large Ammo Box (7.62x25) LRNPC
+  description: For TT and PPSh, there are 300 pieces in a box. Useless against armor.
   suffix: Stalker
   components:
     - type: BallisticAmmoProvider
@@ -126,8 +127,8 @@
 - type: entity
   parent: 725PBoxCink
   id: 725PSTBoxCink
-  name: ящик патронов (7,62x25) Пст гж
-  description: Для ТТ и ППШ, в коробке 300 штук. Обеспечивает пробитие 3 класса брони.
+  name: Large Ammo Box (7.62x25) PST gj
+  description: For TT and PPSh, there are 300 pieces in a box. Provides penetration of armor class 3.
   suffix: Stalker
   components:
     - type: BallisticAmmoProvider

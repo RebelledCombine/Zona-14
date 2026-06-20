@@ -1,7 +1,8 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
-  name: документы
-  description: Зафиксированная на материальном носителе информация в виде текста, может представлять из себя ценный предмет.
-  suffix: Stalker, документы
+  name: documents
+  description: Information recorded on a physical medium in text form, may be a valuable item.
+  suffix: Stalker, documents # Zona14: Stalker, документы
   id: DocsStalker1
   parent: BaseItem
   components:
@@ -11,9 +12,9 @@
     state: d1
 
 - type: entity
-  name: документы
-  description: Зафиксированная на материальном носителе информация в виде текста, может представлять из себя ценный предмет. На папке имеется надпись СЕКРЕТНО.
-  suffix: Stalker, документы
+  name: documents
+  description: Information recorded on a physical medium in text form, may be a valuable item. The folder is marked SECRET.
+  suffix: Stalker, documents # Zona14: Stalker, документы
   id: DocsStalker2
   parent: DocsStalker1
   components:
@@ -24,11 +25,11 @@
     state: d2
 
 - type: entity
-  name: разрешение на боевое оружие
+  name: combat weapon permit
   parent: BookBase
-  suffix: Stalker, документы
+  suffix: Stalker, documents # Zona14: Stalker, документы
   id: militaryLicense
-  description: Священный документ принимающийся во всех уголках зоны. Пахнет бюрократией
+  description: A sacred document accepted in all corners of the zone. Smells of bureaucracy
   components:
     - type: STWeight
       self: 0.2
@@ -55,11 +56,11 @@
     - type: PaperVisuals
 
 - type: entity
-  name: охотничья лицензия
+  name: hunting license
   id: hunterLicense
   parent: BookBase
-  suffix: Stalker, документы
-  description: Разрешение на легальню охоту. Покраска точно соответствует цвету крови кабанов в зоне.
+  suffix: Stalker, documents # Zona14: Stalker, документы
+  description: "Permit for legal hunting. The paint exactly matches the color of the boars' blood in the area."
   components:
     - type: STWeight
       self: 0.2
@@ -86,11 +87,11 @@
     - type: PaperVisuals
 
 - type: entity
-  name: пропуск в ЧЗО
+  name: Exclusion Zone pass
   id: propuskChZO
   parent: BookBase
-  suffix: Stalker, документы
-  description: Ламинированная бумажка с кучей подписей. Чуть важнее чем подставка для пива.
+  suffix: Stalker, documents # Zona14: Stalker, документы
+  description: Laminated piece of paper with a bunch of signatures. A little more important than a beer stand.
   components:
     - type: Clickable
     - type: InteractionOutline
@@ -114,11 +115,11 @@
     - type: PaperVisuals
 
 - type: entity
-  name: пропуск на военную базу
+  name: military base pass
   id: propuskVoenka
   parent: BookBase
-  suffix: Stalker, документы
-  description: Ламинированная бумажка свидетельствуящая о том что вы настолько важный, что вам позволенно посещать военную базу.
+  suffix: Stalker, documents # Zona14: Stalker, документы
+  description: A laminated piece of paper indicating that you are so important that you are allowed to visit a military base.
   components:
     - type: Clickable
     - type: InteractionOutline
@@ -144,9 +145,9 @@
 - type: entity
   parent: BookBase
   id: BookStalkerFAQ
-  name: Руководство по Зоне
-  description: Всё о зоне...
-  suffix: Stalker, книга
+  name: Zone Guide
+  description: All about the zone...
+  suffix: Stalker, book # Zona14: Stalker, книга
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Misc/books.rsi
@@ -156,7 +157,7 @@
     content: faq-stalker
     stampState: paper_stamp-cap
     stampedBy:
-    - stampedName: Правительство
+    - stampedName: Government # Zona14: Правительство
       stampedColor: "#3681bb"
   - type: ActivatableUI
     key: enum.PaperUiKey.Key
@@ -172,9 +173,9 @@
 - type: entity
   parent: BookBase
   id: BookStalkerSeraphimFAQ
-  name: Дневник
-  description: Дневник с странным символом. Подписан - под-кто-то-там Лекс.
-  suffix: Stalker, книга, PodpivAss_Lex
+  name: Diary
+  description: Diary with a strange symbol. Signed - under someone Lex.
+  suffix: Stalker, book, PodpivAss_Lex # Zona14: Stalker, книга, PodpivAss_Lex
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Misc/books.rsi
@@ -192,8 +193,8 @@
 - type: entity
   parent: BookBase
   id: STPilgrimBible
-  name: Завет
-  suffix: Stalker, книга, Паломники
+  name: Covenant
+  suffix: Stalker, book, Pilgrims # Zona14: Stalker, книга, Паломники
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Misc/books.rsi

@@ -1,3 +1,4 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   abstract: true
   parent: STBaseWeaponShotgunAuto
@@ -114,7 +115,7 @@
   parent: STWeaponShotgunSaiga12
   id: STWeaponShotgunOrigin12
   name: Origin-12
-  description: Полу-автоматический дробовик на базе АК. Расчитан под 12 калибр, идеально подходит для борьбы с мутантами.
+  description: A semi-automatic shotgun based on the AK platform. Chambered in 12 gauge, ideal for fighting mutants.
   components:
   - type: Clothing
     sprite: _Stalker/Objects/Weapons/Guns/Shotguns/origin12.rsi
@@ -157,9 +158,9 @@
   abstract: true
   parent: STBaseWeaponShotgunAuto
   id: STBaseWeaponShotgunVepr12De21Base
-  name: Вепрь-12
-  suffix: ST, Кастомка
-  description: Российское гладкоствольное самозарядное ружьё, разработанное на основе конструкции ручного пулемёта Калашникова.
+  name: Vepr-12
+  suffix: ST, Custom # Zona14: ST, Кастомка
+  description: A Russian smoothbore self-loading shotgun developed on the basis of the Kalashnikov light machine gun design.
   components:
   - type: STWeight
     self: 3.6
@@ -241,14 +242,14 @@
 - type: entity
   parent: STBaseWeaponShotgunVepr12De21Base
   id: STBaseWeaponShotgunVepr12De21
-  name: Вепрь-12
-  description: Российское гладкоствольное самозарядное ружьё, разработанное на основе конструкции ручного пулемёта Калашникова.
+  name: Vepr-12
+  description: A Russian smoothbore self-loading shotgun developed on the basis of the Kalashnikov light machine gun design.
 
 - type: entity
   parent: STBaseWeaponShotgunVepr12De21Base
   id: STBaseWeaponShotgunVepr12Molot
-  name: Вепрь-12 "Молото"
-  description: Российское гладкоствольное самозарядное ружьё, разработанное на основе конструкции ручного пулемёта Калашникова.
+  name: Vepr-12 "Molot"
+  description: A Russian smoothbore self-loading shotgun developed on the basis of the Kalashnikov light machine gun design.
   components:
   - type: Clothing
     sprite: _Stalker/Objects/Weapons/Guns/Shotguns/vepr_molot.rsi

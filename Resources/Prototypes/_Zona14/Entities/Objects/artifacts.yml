@@ -1,0 +1,620 @@
+- type: entity
+  name: Stone Blood
+  parent: Z14BaseArtifact
+  id: Z14ArtBlood
+  suffix: Z14
+  description: A gravitational artifact. Emits radiation but provides physical damage protection.
+  categories: [ HideSpawnMenu, Zona14 ]
+  components:
+  - type: RadiationSource
+    slope: 1
+    intensity: 1.5
+  - type: PointLight
+    radius: 1.5
+    energy: 3.0
+    color: "#FFA500"
+    castShadows: false
+  - type: Sprite
+    state: blood
+    scale: 0.5, 0.5
+  - type: Armor
+    armorClass: 8
+    modifiers:
+      coefficients:
+        Blunt: 0.95
+        Slash: 0.95
+        Piercing: 0.95
+
+
+- type: entity
+  name: artifact container
+  parent: BoxCardboard
+  id: Z14BoxArtcont
+  categories: [ Zona14 ]
+  description: Completely blocks all artifact properties.
+  suffix: Z14
+  components:
+  - type: ExplosionSafe
+  - type: PersonalDamageBlock
+  - type: Item
+    size: Normal
+    shape:
+    - 0,0,1,1
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,1,1
+    whitelist:
+      tags:
+        - STArtifact
+  - type: Clothing
+    quickEquip: true
+    slots:
+      - ARTIFACT
+  - type: RadiationBlockingContainer
+    resistance: 2
+  - type: SuppressArtifactContainer
+  # EN start
+  - type: Sprite
+    layers:
+      - map: [ base ]
+        sprite: _Stalker_EN/Objects/Misc/ArtCont/green.rsi
+        state: icon
+        scale: 0.8, 0.8
+  - type: GenericVisualizer
+    visuals:
+      enum.StorageVisuals.Open:
+        base:
+          True: { state: icon-open }
+          False: { state: icon }
+  - type: Appearance
+  - type: Craftable
+  # EN end
+  - type: STWeight
+    self: 0.1
+
+
+- type: entity
+  name: Advanced Artifact Container
+  parent: Z14BoxArtcont
+  id: Z14BoxArtcont1
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: Holds up to 3 artifacts and completely blocks their properties. An improved field-made version that's quite hard to find.
+  components:
+  - type: Item
+    size: Large
+    shape:
+    - 0,0,5,1
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,5,1
+    whitelist:
+      tags:
+        - STArtifact
+  - type: PersonalDamageBlock
+  - type: RadiationBlockingContainer
+    resistance: 5
+  - type: SuppressArtifactContainer
+  - type: Sprite # EN
+    layers:
+    - map: [ base ]
+      sprite: _Stalker_EN/Objects/Misc/ArtCont/advanced.rsi
+      state: icon
+      scale: 0.8, 0.8
+  - type: STWeight
+    self: 0.25
+
+
+# Artifacts 32x32
+
+
+- type: entity
+  name: Artifact
+  parent: Z14BaseArtifact
+  id: Z14Art1
+  suffix: Z14
+  description: Artifact
+  categories: [ HideSpawnMenu, Zona14 ]
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Other/Arts.rsi
+    state: art1
+    scale: 0.5, 0.5
+
+
+- type: entity
+  name: Artifact
+  parent: Z14BaseArtifact
+  id: Z14Art2
+  suffix: Z14
+  description: Artifact
+  categories: [ HideSpawnMenu, Zona14 ]
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Other/Arts.rsi
+    state: art2
+    scale: 0.5, 0.5
+
+
+- type: entity
+  name: Artifact
+  parent: Z14BaseArtifact
+  id: Z14Art3
+  suffix: Z14
+  description: Artifact
+  categories: [ HideSpawnMenu, Zona14 ]
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Other/Arts.rsi
+    state: art3
+    scale: 0.5, 0.5
+
+
+- type: entity
+  name: Artifact
+  parent: Z14BaseArtifact
+  id: Z14Art9
+  suffix: Z14
+  description: Artifact
+  categories: [ HideSpawnMenu, Zona14 ]
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Other/Arts.rsi
+    state: goldfish
+    scale: 0.5, 0.5
+
+
+- type: entity
+  name: Artifact
+  parent: Z14BaseArtifact
+  id: Z14Art10
+  suffix: Z14
+  description: Artifact
+  categories: [ HideSpawnMenu, Zona14 ]
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Other/Arts.rsi
+    state: art10
+    scale: 0.5, 0.5
+
+
+- type: entity
+  name: Artifact
+  parent: Z14BaseArtifact
+  id: Z14Art12
+  suffix: Z14
+  description: Artifact
+  categories: [ HideSpawnMenu, Zona14 ]
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Other/Arts.rsi
+    state: kolobok
+    scale: 0.5, 0.5
+
+
+- type: entity
+  name: Artifact
+  parent: Z14BaseArtifact
+  id: Z14Art13
+  suffix: Z14
+  description: Artifact
+  categories: [ HideSpawnMenu, Zona14 ]
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Other/Arts.rsi
+    state: art13
+    scale: 0.5, 0.5
+
+
+- type: entity
+  name: Artifact
+  parent: Z14BaseArtifact
+  id: Z14Art14
+  suffix: Z14
+  description: Artifact
+  categories: [ HideSpawnMenu, Zona14 ]
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Other/Arts.rsi
+    state: blood
+    scale: 0.5, 0.5
+
+
+- type: entity
+  name: Artifact
+  parent: Z14BaseArtifact
+  id: Z14Art15
+  suffix: Z14
+  description: Artifact
+  categories: [ HideSpawnMenu, Zona14 ]
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Other/Arts.rsi
+    state: meat
+    scale: 0.5, 0.5
+
+
+- type: entity
+  name: Artifact
+  parent: Z14BaseArtifact
+  id: Z14Art16
+  suffix: Z14
+  description: Artifact
+  categories: [ HideSpawnMenu, Zona14 ]
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Other/Arts.rsi
+    state: ice
+    scale: 0.5, 0.5
+
+
+- type: entity
+  name: Film
+  parent: Z14BaseArtifact
+  id: Z14Art19
+  suffix: Z14
+  description: A chemical artifact, elastic and pleasant to the touch.
+  categories: [ HideSpawnMenu, Zona14 ]
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Other/Arts.rsi
+    state: pellicle
+    scale: 0.5, 0.5
+
+
+- type: entity
+  name: Artifact
+  parent: Z14BaseArtifact
+  id: Z14Art20
+  suffix: Z14
+  description: Artifact
+  categories: [ HideSpawnMenu, Zona14 ]
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Other/Arts.rsi
+    state: baloon
+    scale: 0.5, 0.5
+
+
+- type: entity
+  name: Artifact
+  parent: Z14BaseArtifact
+  id: Z14Art21
+  suffix: Z14
+  description: Artifact
+  categories: [ HideSpawnMenu, Zona14 ]
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Other/Arts.rsi
+    state: spring
+    scale: 0.5, 0.5
+
+
+- type: entity
+  name: Artifact
+  parent: Z14BaseArtifact
+  id: Z14Art22
+  suffix: Z14
+  description: Artifact
+  categories: [ HideSpawnMenu, Zona14 ]
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Other/Arts.rsi
+    state: art22
+    scale: 0.5, 0.5
+
+
+- type: entity
+  name: Artifact
+  parent: Z14BaseArtifact
+  id: Z14Art23
+  suffix: Z14
+  description: Artifact
+  categories: [ HideSpawnMenu, Zona14 ]
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Other/Arts.rsi
+    state: art23
+    scale: 0.5, 0.5
+
+# Artifacts 64x64
+
+
+- type: entity
+  name: Artifact
+  parent: Z14BaseArtifact
+  id: Z1464Art1
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: Artifact
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Other/Arts64.rsi
+    state: art1
+    scale: 0.35, 0.35
+
+
+- type: entity
+  name: Artifact
+  parent: Z14BaseArtifact
+  id: Z1464Art2
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: Artifact
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Other/Arts64.rsi
+    state: art2
+    scale: 0.35, 0.35
+
+
+- type: entity
+  name: Artifact
+  parent: Z14BaseArtifact
+  id: Z1464Art3
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: Artifact
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Other/Arts64.rsi
+    state: art3
+    scale: 0.35, 0.35
+
+
+- type: entity
+  name: Artifact
+  parent: Z14BaseArtifact
+  id: Z1464Art4
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: Artifact
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Other/Arts64.rsi
+    state: art4
+    scale: 0.35, 0.35
+
+
+- type: entity
+  name: Artifact
+  parent: Z14BaseArtifact
+  id: Z1464Art5
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: Artifact
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Other/Arts64.rsi
+    state: art5
+    scale: 0.35, 0.35
+
+
+- type: entity
+  name: Artifact
+  parent: Z14BaseArtifact
+  id: Z1464Art6
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: Artifact
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Other/Arts64.rsi
+    state: art6
+    scale: 0.35, 0.35
+
+
+- type: entity
+  name: Artifact
+  parent: Z14BaseArtifact
+  id: Z1464Art7
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: Artifact
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Other/Arts64.rsi
+    state: art7
+    scale: 0.35, 0.35
+
+
+- type: entity
+  name: Artifact
+  parent: Z14BaseArtifact
+  id: Z1464Art8
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: Artifact
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Other/Arts64.rsi
+    state: art8
+    scale: 0.35, 0.35
+
+
+- type: entity
+  name: Artifact
+  parent: Z14BaseArtifact
+  id: Z1464Art9
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: Artifact
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Other/Arts64.rsi
+    state: art9
+    scale: 0.35, 0.35
+
+
+- type: entity
+  name: Artifact
+  parent: Z14BaseArtifact
+  id: Z1464Art10
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: Artifact
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Other/Arts64.rsi
+    state: art10
+    scale: 0.35, 0.35
+
+
+- type: entity
+  name: Artifact
+  parent: Z14BaseArtifact
+  id: Z1464Art11
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: Artifact
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Other/Arts64.rsi
+    state: art11
+    scale: 0.35, 0.35
+
+
+- type: entity
+  name: Artifact
+  parent: Z14BaseArtifact
+  id: Z1464Art12
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: Artifact
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Other/Arts64.rsi
+    state: art12
+    scale: 0.35, 0.35
+
+
+- type: entity
+  name: Artifact
+  parent: Z14BaseArtifact
+  id: Z1464Art13
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: Artifact
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Other/Arts64.rsi
+    state: art13
+    scale: 0.35, 0.35
+
+
+- type: entity
+  name: Artifact
+  parent: Z14BaseArtifact
+  id: Z1464Art14
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: Artifact
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Other/Arts64.rsi
+    state: art14
+    scale: 0.35, 0.35
+
+
+- type: entity
+  name: Artifact
+  parent: Z14BaseArtifact
+  id: Z1464Art15
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: Artifact
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Other/Arts64.rsi
+    state: art15
+    scale: 0.35, 0.35
+
+
+- type: entity
+  name: Artifact
+  parent: Z14BaseArtifact
+  id: Z1464Art16
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: Artifact
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Other/Arts64.rsi
+    state: art16
+    scale: 0.35, 0.35
+
+
+- type: entity
+  name: Artifact
+  parent: Z14BaseArtifact
+  id: Z1464Art17
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: Artifact
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Other/Arts64.rsi
+    state: art17
+    scale: 0.35, 0.35
+
+
+- type: entity
+  name: Artifact
+  parent: Z14BaseArtifact
+  id: Z1464Art18
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: Artifact
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Other/Arts64.rsi
+    state: art18
+    scale: 0.35, 0.35
+
+
+- type: entity
+  name: Artifact
+  parent: Z14BaseArtifact
+  id: Z1464Art19
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: Artifact
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Other/Arts64.rsi
+    state: art19
+    scale: 0.35, 0.35
+
+
+- type: entity
+  name: Artifact
+  parent: Z14BaseArtifact
+  id: Z1464Art20
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: Artifact
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Other/Arts64.rsi
+    state: art20
+    scale: 0.35, 0.35
+
+
+- type: entity
+  name: Artifact
+  parent: Z14BaseArtifact
+  id: Z1464Art21
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: Artifact
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Other/Arts64.rsi
+    state: art21
+    scale: 0.35, 0.35
+
+
+
+

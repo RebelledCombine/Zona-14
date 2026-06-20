@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: ConcreteMixerStalker
   parent: BaseStructureDynamic
-  name: бетономешалка
+  name: concrete mixer
   suffix: ST, Mapping
-  description: Строительная машина, предназначенная для приготовления бетонных смесей.
+  description: Construction machine designed for the preparation of concrete mixtures.
   placement:
     mode: PlaceFree
   components:

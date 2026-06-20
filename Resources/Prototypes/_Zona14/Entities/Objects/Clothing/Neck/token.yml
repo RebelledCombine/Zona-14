@@ -1,0 +1,43 @@
+- type: entity
+  parent: ClothingNeckBase
+  id: Z14ClothingStalkerNeckToken
+  categories: [ Zona14 ]
+  name: Warrior Token
+  description: military dog tag with the wearer's name and surname.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/Neck/token.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/Neck/token.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: Z14ClothingStalkerNeckTokenSeraphim
+  categories: [ Zona14 ]
+  name: Seraphim token
+  description: A unique military dog tag associated with the Seraphim faction. Its design reflects the group's symbolism — made of sturdy metal. The front is engraved with the Seraphim's core symbol of faith, possibly incorporating ancient language or sacred symbols. The back holds the owner's personal info — name, ID number, and faction rank.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/Neck/tag_seraphim.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/Neck/tag_seraphim.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: Z14ClothingStalkerNeckKulonSeraphim
+  categories: [ Zona14 ]
+  name: green pendant
+  description: A Seraphim pendant belonging to someone very important... it emits a dim glow, barely noticeable but meaningful... Perhaps it helps communicate with other covens? Or indicates artifacts? Only its owner would know.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/Neck/kulon_seraphim.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/Neck/kulon_seraphim.rsi
+  - type: Unremoveable
+  - type: ZoneArtifactDetector
+    level: 1
+    detectionDistance: 3
+    activationDistance: 2

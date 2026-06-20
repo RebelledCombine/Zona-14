@@ -1,0 +1,62 @@
+- type: entity
+  parent: STBaseWeaponRifle
+  id: Z14STMetroWeaponRifleVSV
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: VSV "Glukhar"
+  description: An accurate and powerful assault rifle for medium-range combat. Due to its low muzzle velocity, it fires quieter than others and doesn't have a very flat shooting range.
+  components:
+  - type: STWeight
+    self: 2
+  - type: PullDoAfter
+    pullTime: 2.5
+  - type: Clothing
+    sprite: _Stalker/Objects/Weapons/Guns/Rifles/vsv.rsi
+  - type: Item
+    sprite: _Stalker/Objects/Weapons/Guns/Rifles/vsv.rsi
+  - type: Sprite
+    sprite: _Stalker/Objects/Weapons/Guns/Rifles/vsv.rsi
+  - type: GunWieldBonus
+    minAngle: -55
+    maxAngle: -55
+  - type: Gun
+    soundGunshot:
+      path: /Audio/_Stalker/Effects/Guns/val_shoot.ogg
+    minAngle: 55
+    maxAngle: 105
+    projectileSpeed: 65
+    angleIncrease: 0.8
+    angleDecay: 5
+    fireRate: 5
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: Base545Mag10
+        insertSound: /Audio/_Stalker/Weapons/Guns/RifleGen/MagIn/rifle_magin.ogg
+        ejectSound: /Audio/_Stalker/Weapons/Guns/RifleGen/MagOut/rifle_magout.ogg
+        priority: 4
+        whitelist:
+          tags:
+          - Magazine545
+      gun_module_scope:
+        name: Scope
+        priority: 2
+        whitelist:
+          tags:
+          - STWeaponModuleRifleScopeRu
+      gun_chamber:
+        name: Chamber
+        priority: 1
+        whitelist:
+          tags:
+          - STCartridge545
+  - type: STWeaponDamageFalloff
+    falloffMultiplier: 0.8
+  - type: STWeaponAccuracy
+    accuracyMultiplier: 1.45
+  - type: FarGunshot
+    sound: /Audio/_DZ/Effects/FarGunshots/supressed1.ogg

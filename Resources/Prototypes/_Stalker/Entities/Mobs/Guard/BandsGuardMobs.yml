@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
-  name: Охранник бандитов
-  suffix: Stalker, Т6, NPC
+  name: Bandit guard
+  suffix: Stalker, T6, NPC # Zona14: Stalker, Т6, NPC
   parent: MobStalkerBaseGuard
   id: MobBanditSecurityLow
-  description: Охранник бандитов.
+  description: Bandit guard.
   components:
   - type: NpcFactionMember
     factions:
@@ -47,11 +48,11 @@
         Brute: -1
 
 - type: entity
-  name: Охранник бандитов
-  suffix: Stalker, Т6, NPC
+  name: Bandit guard
+  suffix: Stalker, T6, NPC # Zona14: Stalker, Т6, NPC
   parent: MobStalkerBaseGuard
   id: MobBanditSecurityTop
-  description: Охранник бандитов.
+  description: "Security guard for Bandits, I wouldn't mess with them..."
   components:
   - type: NpcFactionMember
     factions:

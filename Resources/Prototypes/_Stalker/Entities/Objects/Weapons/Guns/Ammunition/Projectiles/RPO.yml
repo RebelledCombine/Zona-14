@@ -1,7 +1,8 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: BulletRocket
   id: BulletRocketRPO
-  name: Выстрел РПО Шмель
+  name: RPO Shmel rocket
   categories: [ HideSpawnMenu ]
   components:
   - type: Explosive

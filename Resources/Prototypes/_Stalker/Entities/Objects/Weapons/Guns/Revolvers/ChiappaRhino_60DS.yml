@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 
 - type: entity
   parent: STBaseWeaponGameRevolver
   id: STWeaponRevolverChiappaRhino60DS
   name: Chiappa Rhino 60DS
-  description: Шестизарядный уникальный револьвер который отличается инновационным дизайном и высокой эффективностью на калибре .45 ACP. Имеет низкую отдачу и гораздо меньший разброс.
+  description: A six-shooter unique revolver that features an innovative design and high efficiency on the .357 Magnum caliber. It trades capacity for superb control.
   components:
     - type: Sprite
       sprite: _Stalker/Objects/Weapons/Guns/Revolvers/chiappa_rhino_60ds.rsi
@@ -43,7 +44,7 @@
     - type: UseDelay
       delay: 1
     - type: RepositoryItem
-      categoryName: Оружие
+      categoryName: Weapons # Zona14: Оружие
     - type: STWeaponDamageFalloff
       falloffMultiplier: 0.8
     - type: STWeaponAccuracy

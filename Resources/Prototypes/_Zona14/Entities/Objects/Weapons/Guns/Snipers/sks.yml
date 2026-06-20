@@ -52,7 +52,7 @@
   id: Z14STWeaponSniperSKSpersecutor
   suffix: Z14
   categories: [ Zona14 ]
-  name: Pursuer
+  name: Persecutor
   description: A Mondragon rifle, reworked and modified for the SKS caliber. Repainted black, with notches of unknown origin on the barrel.
   components:
   - type: Clothing

@@ -1,0 +1,49 @@
+- type: entity
+  parent: Z14BaseClothingTorso
+  id: Z14ClothingTorsoTShirtPivozavr
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: pivozavr t-shirt
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/Torso/TShirts/pivozavr.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/Torso/TShirts/pivozavr.rsi
+
+- type: entity
+  parent: Z14BaseClothingTorso
+  id: Z14ClothingTorsoTShirtSailorSuit
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: sailor suit t-shirt
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/Torso/TShirts/sailor_suit.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/Torso/TShirts/sailor_suit.rsi
+
+- type: entity
+  parent: Z14BaseClothingTorso
+  id: Z14ClothingTorsoTShirtColorBlack
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: black t-shirt
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/Torso/TShirts/Color/black.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/Torso/TShirts/Color/black.rsi
+
+- type: entity
+  parent: Z14BaseClothingTorso
+  id: Z14ClothingTorsoTShirtZavet
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Covenant uniform
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/Torso/Zavet.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/Torso/Zavet.rsi
+
+

@@ -1,5 +1,6 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
-  name: триггер кровосос (1-4) (20%)
+  name: bloodsucker trigger (1-4) (20%)
   id: STTriggerBloodSucker142010
   parent: STBaseTrigger142010
   suffix: ST, T3, Trigger
@@ -11,7 +12,7 @@
         - MobMutantBloodsucker
 
 - type: entity
-  name: триггер кровосос (1-4) (50%)
+  name: bloodsucker trigger (1-4) (50%)
   id: STTriggerBloodSucker145030
   parent: STBaseTrigger145030
   suffix: ST, T3, Trigger
@@ -23,7 +24,7 @@
         - MobMutantBloodsucker
 
 - type: entity
-  name: триггер кровосос (1-2) (10%)
+  name: bloodsucker trigger (1-2) (10%)
   id: STTriggerBloodSucker121010
   parent: STBaseTrigger121010
   suffix: ST, T3, Trigger
@@ -35,7 +36,7 @@
         - MobMutantBloodsucker
 
 - type: entity
-  name: триггер кровосос (1-2) (50%)
+  name: bloodsucker trigger (1-2) (50%)
   id: STTriggerBloodSucker125030
   parent: STBaseTrigger125030
   suffix: ST, T3, Trigger

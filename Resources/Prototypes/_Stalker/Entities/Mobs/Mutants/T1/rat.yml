@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: BaseMobMutant
   id: MobMutantRat
-  name: крыса
+  name: rat
   suffix: ST, T1
-  description: Злая, голодная, большая крыса.
+  description: Angry, hungry, big rat.
   components:
   - type: Fixtures
     fixtures:

@@ -1,0 +1,79 @@
+- type: entity
+  parent: STBaseModuleSilencerRifles
+  id: Z14STModuleSilencerRiflesT1Ru
+  categories: [ Zona14 ]
+  name: makeshift rifle silencer RU
+  suffix: Z14
+  components:
+    - type: Tag
+      tags:
+        - STWeaponModuleRifleSilencerRu
+    - type: STWeaponModule
+      effect:
+        soundGunshotVolumeAddition: -5
+        farshotSoundDecrease: 0.4
+    - type: Sprite
+      state: silencer_T1_ru
+    - type: Icon
+      state: silencer_T1_ru
+
+- type: entity
+  parent: STBaseModuleSilencerRifles
+  id: Z14STModuleSilencerRiflesT1Nato
+  categories: [ Zona14 ]
+  name: makeshift rifle silencer NATO
+  suffix: Z14
+  components:
+    - type: Tag
+      tags:
+        - STWeaponModuleRifleSilencerNato
+    - type: STWeaponModule
+      effect:
+        soundGunshotVolumeAddition: -5
+        farshotSoundDecrease: 0.4
+    - type: Sprite
+      state: silencer_T1_nato
+    - type: Icon
+      state: silencer_T1_nato
+
+#
+# Legal T2
+#
+
+- type: entity
+  parent: STBaseModuleSilencerRifles
+  id: Z14STModuleSilencerRiflesT2Ru
+  categories: [ Zona14 ]
+  name: rifle silencer RU
+  suffix: Z14
+  components:
+    - type: Tag
+      tags:
+        - STWeaponModuleRifleSilencerRu
+    - type: STWeaponModule
+      effect:
+        soundGunshotVolumeAddition: -10
+        farshotSoundDecrease: 0.2
+    - type: Sprite
+      state: silencer_T2_ru
+    - type: Icon
+      state: silencer_T2_ru
+
+- type: entity
+  parent: STBaseModuleSilencerRifles
+  id: Z14STModuleSilencerRiflesT2Nato
+  categories: [ Zona14 ]
+  name: rifle silencer NATO
+  suffix: Z14
+  components:
+    - type: Tag
+      tags:
+        - STWeaponModuleRifleSilencerNato
+    - type: STWeaponModule
+      effect:
+        soundGunshotVolumeAddition: -10
+        farshotSoundDecrease: 0.2
+    - type: Sprite
+      state: silencer_T2_nato
+    - type: Icon
+      state: silencer_T2_nato

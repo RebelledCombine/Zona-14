@@ -1,0 +1,29 @@
+- type: entity
+  id: Z14ZoneAnomalyBase
+  categories: [ Zona14 ]
+  name: anomaly
+  abstract: true
+  components:
+  - type: Physics
+    bodyType: Static
+    fixedRotation: true
+  - type: ZoneAnomaly
+  - type: Appearance
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.45
+        hard: false
+        mask:
+          - MobMask
+        layer:
+          - MobLayer
+          - LowImpassable
+  - type: ZoneArtifactDetectorTarget
+  - type: ZoneArtifactSpawner
+  - type: Tag
+    tags:
+    - HideContextMenu
+  - type: STAnomalyTips

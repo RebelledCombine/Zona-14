@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: StalkerShop
   id: StalkerShopJaba
-  name: Рублёвый Торгомат, Жабы
-  description: Как торговец туда поместился?
-  suffix: ST, Mapping, Жабы
+  name: Torgomat, Toads
+  description: How did the merchant fit there?
+  suffix: ST, Mapping, Toads # Zona14: ST, Mapping, Жабы
   components:
     - type: Sprite
       drawdepth: Objects

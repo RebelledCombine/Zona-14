@@ -1,0 +1,27 @@
+- type: entity
+  name: sapper spade
+  suffix: Z14
+  parent: BaseItem
+  id: Z14STspade
+  categories: [ Zona14 ]
+  description: Compact and durable metal blade tool designed for digging, loosening and moving soil in the field.
+  components:
+  - type: Tag
+    tags:
+    - BotanyShovel
+  - type: Sprite
+    sprite: Objects/Tools/Hydroponics/spade.rsi
+    state: icon
+  - type: MeleeWeapon
+    wideAnimationRotation: 45
+    damage:
+      types:
+        Blunt: 8
+        Piercing: 2 # I guess you can stab it into them?
+    soundHit:
+      collection: MetalThud
+  - type: Item
+    sprite: Objects/Tools/Hydroponics/spade.rsi
+  - type: Shovel
+    speedModifier: 0.75 # slower at digging than a full-sized shovel
+  - type: Craftable

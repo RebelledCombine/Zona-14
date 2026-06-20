@@ -1,10 +1,11 @@
+# Zona14: translated Russian names/descriptions to English
 - type: Tag
   id: Roubles
 - type: entity
   parent: BaseItem
   id: Roubles
-  name: рубли
-  description: Национальная валюта Российской Федерации. Интересный факт - 1 рубль равен 100 копейкам.
+  name: roubles
+  description: National currency of the Russian Federation. An interesting fact is that 1 ruble is equal to 100 kopecks.
   suffix: Stalker
   components:
   - type: PhysicalComposition
@@ -47,7 +48,7 @@
     tags:
     - Roubles
   - type: RepositoryItem
-    categoryName: Деньги
+    categoryName: Money # Zona14: Деньги
 
 - type: currency
   id: Roubles

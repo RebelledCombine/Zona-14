@@ -1,7 +1,8 @@
-﻿- type: entity
+﻿# Zona14: translated Russian names/descriptions to English
+- type: entity
   parent: BaseStructure
   id: DebugRepository
-  name: хранилище
+  name: storage
   suffix: Stalker
   components:
     - type: InteractionOutline
@@ -28,7 +29,7 @@
 - type: entity
   parent: BaseStructure
   id: STWipeSafeRepository
-  name: безопасное хранилище ДЛЯ ЧЕРТЕЖЕЙ
+  name: Secure storage FOR DRAWINGS
   suffix: Stalker
   components:
     - type: StalkerRepository

@@ -1,7 +1,8 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: [BaseWeaponLauncher, BaseGunWieldable]
   id: STWeaponLauncherRG6
-  name: РГ-6
+  name: RG-6
   suffix: ST, Event
   components:
   - type: Sprite
@@ -33,6 +34,6 @@
       path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
   - type: GunRequiresWield
   - type: RepositoryItem
-    categoryName: Оружие
+    categoryName: Weapons # Zona14: Оружие
   - type: STWeight
     self: 5.6 

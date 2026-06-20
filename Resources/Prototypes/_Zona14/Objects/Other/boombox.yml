@@ -1,0 +1,158 @@
+- type: entity
+  parent: BaseItem
+  id: Z14Boombox
+  name: Boombox
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Boombox
+  - type: ContainerContainer
+    containers:
+      cassette_slot: !type:ContainerSlot {}
+  - type: ItemSlots
+    slots:
+      cassette_slot:
+        name: Cassete
+        whitelist:
+          tags:
+            - Cassete
+  - type: Sprite
+    sprite: /Textures/_Stalker/Objects/Misc/boombox.rsi
+    state: full
+
+- type: entity
+  parent: BaseItem
+  id: Z14CasseteAphix
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Aphix-Twin
+  components:
+  - type: Cassete
+    sound: /Audio/_Stalker/Music/Boombox/Aphix.ogg
+  - type: Tag
+    tags:
+      - Cassete
+  - type: Sprite
+    sprite: /Textures/_Stalker/Objects/Devices/encryption_keys.rsi
+    state: crypt_gray
+
+- type: entity
+  parent: BaseItem
+  id: Z14CasseteSuffocation
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: CC-Suffocation
+  components:
+  - type: Cassete
+    sound: /Audio/_Stalker/Music/Boombox/Suffocation.ogg
+  - type: Tag
+    tags:
+      - Cassete
+  - type: Sprite
+    sprite: /Textures/_Stalker/Objects/Devices/encryption_keys.rsi
+    state: crypt_gray
+- type: entity
+  parent: BaseItem
+  id: Z14CasseteDeathHacker
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: DG-Hacker
+  components:
+  - type: Cassete
+    sound: /Audio/_Stalker/Music/Boombox/DeathHacker.ogg
+  - type: Tag
+    tags:
+      - Cassete
+  - type: Sprite
+    sprite: /Textures/_Stalker/Objects/Devices/encryption_keys.rsi
+    state: crypt_gray
+- type: entity
+  parent: BaseItem
+  id: Z14CasseteDeathSeenFootage
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: DG-SeenFootage
+  components:
+  - type: Cassete
+    sound: /Audio/_Stalker/Music/Boombox/DeathSeenFootage.ogg
+  - type: Tag
+    tags:
+      - Cassete
+  - type: Sprite
+    sprite: /Textures/_Stalker/Objects/Devices/encryption_keys.rsi
+    state: crypt_gray
+- type: entity
+  parent: BaseItem
+  id: Z14CasseteWitch
+  categories: [ Zona14 ]
+  name: KiSh - Witch and Donkey
+  suffix: Z14
+  components:
+  - type: Cassete
+    sound: /Audio/_Stalker/Music/Boombox/Witch.ogg
+  - type: Tag
+    tags:
+      - Cassete
+  - type: Sprite
+    sprite: /Textures/_Stalker/Objects/Devices/encryption_keys.rsi
+    state: crypt_gray
+- type: entity
+  parent: BaseItem
+  id: Z14CasseteBear
+  categories: [ Zona14 ]
+  name: KiSh - Medved
+  suffix: Z14
+  components:
+  - type: Cassete
+    sound: /Audio/_Stalker/Music/Boombox/Bear.ogg
+  - type: Tag
+    tags:
+      - Cassete
+  - type: Sprite
+    sprite: /Textures/_Stalker/Objects/Devices/encryption_keys.rsi
+    state: crypt_gray
+- type: entity
+  parent: BaseItem
+  id: Z14CasseteLyrics
+  categories: [ Zona14 ]
+  name: SG - Lyrics
+  suffix: Z14
+  components:
+  - type: Cassete
+    sound: /Audio/_Stalker/Music/Boombox/Lyrics.ogg
+  - type: Tag
+    tags:
+      - Cassete
+  - type: Sprite
+    sprite: /Textures/_Stalker/Objects/Devices/encryption_keys.rsi
+    state: crypt_gray
+- type: entity
+  parent: BaseItem
+  id: Z14CasseteAtaman
+  categories: [ Zona14 ]
+  name: SG - Ataman
+  suffix: Z14
+  components:
+  - type: Cassete
+    sound: /Audio/_Stalker/Music/Boombox/Ataman.ogg
+  - type: Tag
+    tags:
+      - Cassete
+  - type: Sprite
+    sprite: /Textures/_Stalker/Objects/Devices/encryption_keys.rsi
+    state: crypt_gray
+- type: entity
+  parent: BaseItem
+  id: Z14CasseteGulay
+  categories: [ Zona14 ]
+  name: SG - Gulyaj Muzhik
+  suffix: Z14
+  components:
+  - type: Cassete
+    sound: /Audio/_Stalker/Music/Boombox/Gulay.ogg
+  - type: Tag
+    tags:
+      - Cassete
+  - type: Sprite
+    sprite: /Textures/_Stalker/Objects/Devices/encryption_keys.rsi
+    state: crypt_gray

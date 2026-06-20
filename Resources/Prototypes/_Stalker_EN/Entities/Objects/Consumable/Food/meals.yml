@@ -1,3 +1,4 @@
+# Zona14: translated Russian names/descriptions to English
 # if adding new craftable recipes, refer to _cooking.txt
 
 # breads
@@ -220,7 +221,7 @@
   parent: FoodBase
   id: FoodSTDeruny
   suffix: Stalker, Food
-  description: What's better than fried potatoes?
+  description: "What's better than fried potatoes?"
   components:
   - type: FlavorProfile
     flavors:
@@ -250,7 +251,7 @@
   parent: FoodSTDeruny
   id: FoodSTDerunySingle
   suffix: Stalker, Food
-  description: What's better than fried potatoes?
+  description: "What's better than fried potatoes?"
   components:
   - type: FlavorProfile
     flavors:
@@ -280,7 +281,7 @@
   parent: FoodBase
   id: FoodSTHrechanyky
   suffix: Stalker, Food
-  description: What's better than fried buckwheat and meat?
+  description: "What's better than fried buckwheat and meat?"
   components:
   - type: FlavorProfile
     flavors:
@@ -310,7 +311,7 @@
   parent: FoodSTHrechanyky
   id: FoodSTHrechanykySingle
   suffix: Stalker, Food
-  description: What's better than fried buckwheat and meat?
+  description: "What's better than fried buckwheat and meat?"
   components:
   - type: FlavorProfile
     flavors:
@@ -340,7 +341,7 @@
   parent: FoodBase
   id: FoodSTSyrnyky
   suffix: Stalker, Food
-  description: What's better than fried cheese?
+  description: "What's better than fried cheese?"
   components:
   - type: FlavorProfile
     flavors:
@@ -371,7 +372,7 @@
   parent: FoodSTSyrnyky
   id: FoodSTSyrnykySingle
   suffix: Stalker, Food
-  description: What's better than fried cheese?
+  description: "What's better than fried cheese?"
   components:
   - type: FlavorProfile
     flavors:
@@ -402,7 +403,7 @@
   parent: FoodBase
   id: FoodSTPancakes
   suffix: Stalker, Food
-  description: What's better than pancakes?
+  description: "What's better than pancakes?"
   components:
   - type: FlavorProfile
     flavors:
@@ -430,7 +431,7 @@
   parent: FoodBase
   id: FoodSTOnionRings
   suffix: Stalker, Food
-  description: What's better than fried onions?
+  description: "What's better than fried onions?"
   components:
   - type: FlavorProfile
     flavors:
@@ -513,7 +514,7 @@
   parent: FoodBase
   id: FoodSTFrogLegs
   suffix: Stalker, Food
-  description: Frog legs tossed in spices and fried at a low temperature. They're surprisingly tender.
+  description: "Frog legs tossed in spices and fried at a low temperature. They're surprisingly tender."
   components:
   - type: FlavorProfile
     flavors:
@@ -604,7 +605,7 @@
   parent: FoodBase
   id: FoodSTCakeBerry
   suffix: Stalker, Food
-  description: Made of simple ingredients and berries from the zone, you won't find a sweeter treat.
+  description: "Made of simple ingredients and berries from the zone, you won't find a sweeter treat."
   components:
   - type: FlavorProfile
     flavors:
@@ -786,7 +787,7 @@
   parent: FoodBase
   id: FoodSTAmbrosia
   suffix: Stalker, Food
-  description: It's unclear what this is, but it seems like... food?
+  description: "It's unclear what this is, but it seems like... food?"
   components:
   - type: FlavorProfile
     flavors:
@@ -831,7 +832,7 @@
   parent: FoodBowlBase
   id: FoodSTOracleGumbo
   suffix: Stalker, Food
-  description: If you can get past how it looks and feels and tastes, it's not even that bad. Maybe even... good?
+  description: "If you can get past how it looks and feels and tastes, it's not even that bad. Maybe even... good?"
   components:
   - type: FlavorProfile
     flavors:
@@ -868,11 +869,11 @@
 
 # jarred and preserved goods
 - type: entity
-  name: консервированная еда
+  name: canned food
   parent: FoodBase
   id: STFoodJarBase
   suffix: Stalker, Food
-  description: Банка консервов.
+  description: A jar of preserves.
   abstract: true
   components:
   - type: Sprite
@@ -921,10 +922,10 @@
   - type: Craftable
 
 - type: entity
-  name: консервированная вишня
+  name: canned cherries
   parent: STFoodJarBase
   id: STFoodJarCherriesFresh
-  description: Вишни свежеочищенные от косточек и упакованные в банки для маринования. Перед маринованием их нужно будет оставить на некоторое время при комнатной температуре.
+  description: Freshly pitted cherries packed in jars for pickling. They will need to be left at room temperature for a while before pickling.
   components:
   - type: Sprite
     sprite: _Stalker_EN/Objects/Consumable/Food/jarred.rsi
@@ -946,10 +947,10 @@
     prototype: STFoodJarCherriesPickled
 
 - type: entity
-  name: маринованная вишня
+  name: pickled cherries
   parent: STFoodJarBase
   id: STFoodJarCherriesPickled
-  description: Кисло-сладкие маринованные вишни, настоянные на травах и специях. Идеально подходят для вареников или просто для перекуса.
+  description: Sweet and sour pickled cherries steeped in herbs and spices. Perfect for vareniki or just for a snack.
   components:
   - type: Sprite
     sprite: _Stalker_EN/Objects/Consumable/Food/jarred.rsi
@@ -967,10 +968,10 @@
           Quantity: 5
 
 - type: entity
-  name: консервированный угорь
+  name: canned eel
   parent: STFoodJarBase
   id: STFoodJarWholeEelFresh
-  description: Целый свежий угорь, замаринованный в уксусе и специях. Процесс брожения займет много времени.
+  description: A whole fresh eel pickled in vinegar and spices. The fermentation process will take a long time.
   components:
   - type: Sprite
     sprite: _Stalker_EN/Objects/Consumable/Food/jarred.rsi
@@ -992,10 +993,10 @@
     prototype: STFoodJarWholeEelFermented
 
 - type: entity
-  name: ферментированный угорь
+  name: fermented eel
   parent: STFoodJarBase
   id: STFoodJarWholeEelFermented
-  description: Целый ферментированный угорь, считающийся некоторыми деликатесом.
+  description: A whole fermented eel, considered a delicacy by some.
   components:
   - type: Sprite
     sprite: _Stalker_EN/Objects/Consumable/Food/jarred.rsi
@@ -1018,10 +1019,10 @@
           Quantity: 5
 
 - type: entity
-  name: кусочки консервированного угря
+  name: canned eel pieces
   parent: STFoodJarBase
   id: STFoodJarMeatEel
-  description: Консервированное мясо угря в масле и травах, выдержанное в банке.
+  description: Canned eel meat in oil and herbs, aged in a jar.
   components:
   - type: Sprite
     sprite: _Stalker_EN/Objects/Consumable/Food/jarred.rsi
@@ -1044,10 +1045,10 @@
           Quantity: 5
 
 - type: entity
-  name: маринованные яйца
+  name: pickled eggs
   parent: STFoodJarBase
   id: STFoodJarEggs
-  description: Маринованные яйца, плавающие в сладком уксусе.
+  description: Pickled eggs floating in sweet vinegar.
   components:
   - type: Sprite
     sprite: _Stalker_EN/Objects/Consumable/Food/jarred.rsi
@@ -1070,10 +1071,10 @@
           Quantity: 5
 
 - type: entity
-  name: консервированные рыбные стейки
+  name: canned fish steaks
   parent: STFoodJarBase
   id: STFoodJarMeatFishSteak
-  description: Консервированные рыбные стейки в масле с травами.
+  description: Canned fish steaks in oil with herbs.
   components:
   - type: Sprite
     sprite: _Stalker_EN/Objects/Consumable/Food/jarred.rsi
@@ -1096,10 +1097,10 @@
           Quantity: 5
 
 - type: entity
-  name: ягодное варенье
+  name: berry jam
   parent: STFoodJarBase
   id: STFoodJarJamBerry
-  description: Сладкое ягодное варенье, приготовленное из ягод, выращенных в этом регионе.
+  description: Sweet berry jam made from berries grown in this region.
   components:
   - type: Sprite
     sprite: _Stalker_EN/Objects/Consumable/Food/jarred.rsi
@@ -1120,10 +1121,10 @@
 
 # this sucks dont look at me
 - type: entity
-  name: ягодное варенье
+  name: berry jam
   parent: STFoodJarBase
   id: STFoodJarJamBerry2
-  description: Сладкое ягодное варенье, приготовленное из ягод, выращенных в этом регионе.
+  description: Sweet berry jam made from berries grown in this region.
   components:
   - type: Sprite
     sprite: _Stalker_EN/Objects/Consumable/Food/jarred.rsi
@@ -1143,10 +1144,10 @@
           Quantity: 5
 
 - type: entity
-  name: ягодное варенье
+  name: berry jam
   parent: STFoodJarBase
   id: STFoodJarJamBerry3
-  description: Сладкое ягодное варенье, приготовленное из ягод, выращенных в этом регионе.
+  description: Sweet berry jam made from berries grown in this region.
   components:
   - type: Sprite
     sprite: _Stalker_EN/Objects/Consumable/Food/jarred.rsi
@@ -1166,10 +1167,10 @@
           Quantity: 2
 
 - type: entity
-  name: ягодное варенье
+  name: berry jam
   parent: STFoodJarBase
   id: STFoodJarJamBerry4
-  description: Сладкое ягодное варенье, приготовленное из ягод, выращенных в этом регионе.
+  description: Sweet berry jam made from berries grown in this region.
   components:
   - type: Sprite
     sprite: _Stalker_EN/Objects/Consumable/Food/jarred.rsi
@@ -1189,10 +1190,10 @@
           Quantity: 1
 
 - type: entity
-  name: свекольный квас
+  name: beetroot kvass
   parent: STFoodJarBase
   id: STFoodJarKvassUnfermented
-  description: Свежая банка свекольного кваса. Процесс брожения может занять некоторое время, поэтому дайте ему время, он бродит целенаправленно.
+  description: A fresh jar of beet kvass. The fermentation process can take some time, so give it time, it ferments with purpose.
   components:
   - type: Sprite
     sprite: _Stalker_EN/Objects/Consumable/Food/jarred.rsi
@@ -1216,10 +1217,10 @@
     prototype: STFoodJarKvass
 
 - type: entity
-  name: квас
+  name: kvass
   parent: STFoodJarBase
   id: STFoodJarKvass
-  description: Квас, готовый к употреблению в любом случае.
+  description: Kvass, ready to drink in any case.
   components:
   - type: Sprite
     sprite: _Stalker_EN/Objects/Consumable/Food/jarred.rsi
@@ -1239,10 +1240,10 @@
           Quantity: 10
 
 - type: entity
-  name: печоночный тартар
+  name: liver tartare
   parent: STFoodJarBase
   id: STFoodJarMeatLiver
-  description: Печень, приправленная специями и консервированная... из... чего-то...
+  description: Liver, seasoned with spices and preserved... from... something...
   components:
   - type: Sprite
     sprite: _Stalker_EN/Objects/Consumable/Food/jarred.rsi
@@ -1260,10 +1261,10 @@
           Quantity: 5
 
 - type: entity
-  name: топленое сало
+  name: rendered lard
   parent: STFoodJarBase
   id: STFoodJarSalo
-  description: Отопленная сало, готовая к приготовлению пищи или использованию в качестве жира.
+  description: Rendered lard, ready for cooking or use as fat.
   components:
   - type: Sprite
     sprite: _Stalker_EN/Objects/Consumable/Food/jarred.rsi
@@ -1277,10 +1278,10 @@
           Quantity: 30
 
 - type: entity
-  name: сосиски
+  name: sausages
   parent: STFoodJarBase
   id: STFoodJarMeatSausageUnpickled
-  description: Нарезанные сосиски в маринаде. Их нужно немного подержать при комнатной температуре.
+  description: Sliced sausages in marinade. They need to sit at room temperature for a bit.
   components:
   - type: Sprite
     sprite: _Stalker_EN/Objects/Consumable/Food/jarred.rsi
@@ -1302,10 +1303,10 @@
     prototype: STFoodJarMeatSausage
 
 - type: entity
-  name: маринованные сосиски
+  name: pickled sausages
   parent: STFoodJarBase
   id: STFoodJarMeatSausage
-  description: Вкусная баночка маринованных колбасок.
+  description: A tasty jar of pickled sausages.
   components:
   - type: Sprite
     sprite: _Stalker_EN/Objects/Consumable/Food/jarred.rsi
@@ -1323,10 +1324,10 @@
           Quantity: 5
 
 - type: entity
-  name: консервированное рыбное филе
+  name: canned fish fillet
   parent: STFoodJarBase
   id: STFoodJarMeatFishFillet
-  description: Консервированная рыбная вырезка, маринованная в масле и травах.
+  description: Canned fish fillet pickled in oil and herbs.
   components:
   - type: Sprite
     sprite: _Stalker_EN/Objects/Consumable/Food/jarred.rsi

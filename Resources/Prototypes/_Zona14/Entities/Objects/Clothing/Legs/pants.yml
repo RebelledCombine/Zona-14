@@ -1,0 +1,400 @@
+- type: entity
+  parent: Z14BaseClothingLegs
+  id: Z14ClothingLegsJeansBlue
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: blue jeans
+  description: They look discreet to create the right image for business meetings or serious events.
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/Legs/Jeans/blue.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/Legs/Jeans/blue.rsi
+
+- type: entity
+  parent: Z14BaseClothingLegs
+  id: Z14ClothingLegsJeansStalker
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: stalker jeans
+  description: An essential piece of equipment for any experienced Zone explorer, these rugged trousers and pants are designed for survival in conditions where this piece of clothing must be as practical as possible.
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/Legs/Jeans/stalker.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/Legs/Jeans/stalker.rsi
+
+- type: entity
+  parent: Z14BaseClothingLegs
+  id: Z14ClothingLegsJeansRussianPixel
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: russian pixel jeans
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/Legs/Jeans/russiangorka.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/Legs/Jeans/russiangorka.rsi
+
+- type: entity
+  parent: Z14BaseClothingLegs
+  id: Z14ClothingLegsJeansBlackNew
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: black jeans
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/Legs/Jeans/black.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/Legs/Jeans/black.rsi
+
+- type: entity
+  parent: Z14BaseClothingLegs
+  id: Z14ClothingLegsJeansGorka
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: gorka 4 jeans
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/Legs/Jeans/gorka.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/Legs/Jeans/gorka.rsi
+
+- type: entity
+  parent: Z14BaseClothingLegs
+  id: Z14ClothingLegsJeansGorka6
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: gorka 6 jeans
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/Legs/Jeans/gorka6.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/Legs/Jeans/gorka6.rsi
+
+- type: entity
+  parent: Z14BaseClothingLegs
+  id: Z14ClothingLegsJeansBereza
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: bereza jeans
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/Legs/Jeans/bereza.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/Legs/Jeans/bereza.rsi
+
+- type: entity
+  parent: Z14BaseClothingLegs
+  id: Z14ClothingLegsJeansGreenCargo
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: green cargo jeans
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/Legs/Jeans/Cargo/green.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/Legs/Jeans/Cargo/green.rsi
+
+- type: entity
+  parent: Z14BaseClothingLegs
+  id: Z14ClothingLegsJeansGreyCargo
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: grey cargo jeans
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/Legs/Jeans/Cargo/grey.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/Legs/Jeans/Cargo/grey.rsi
+
+- type: entity
+  parent: Z14BaseClothingLegs
+  id: Z14ClothingLegsJeansBlackCargo
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: black cargo jeans
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/Legs/Jeans/Cargo/black.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/Legs/Jeans/Cargo/black.rsi
+
+- type: entity
+  parent: Z14BaseClothingLegs
+  id: Z14ClothingLegsJeansBrownCargo
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: brown cargo jeans
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/Legs/Jeans/Cargo/brown.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/Legs/Jeans/Cargo/brown.rsi
+
+- type: entity
+  parent: Z14BaseClothingLegs
+  id: Z14ClothingLegsJeansPolice
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: police cargo jeans
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/Legs/Jeans/Cargo/blue.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/Legs/Jeans/Cargo/blue.rsi
+
+- type: entity
+  parent: Z14BaseClothingLegs
+  id: Z14ClothingLegsJeansSandCargo
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: sand cargo jeans
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/Legs/Jeans/Cargo/sand.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/Legs/Jeans/Cargo/sand.rsi
+
+- type: entity
+  parent: Z14BaseClothingLegs
+  id: Z14ClothingLegsJeansFreedomCamouflage
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: freedom camouflage jeans
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/Legs/Jeans/Camouflage/freedom.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/Legs/Jeans/Camouflage/freedom.rsi
+
+- type: entity
+  parent: Z14BaseClothingLegs
+  id: Z14ClothingLegsJeansDolgCamouflage
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: dolg camouflage jeans
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/Legs/Jeans/Camouflage/dolg.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/Legs/Jeans/Camouflage/dolg.rsi
+
+- type: entity
+  parent: Z14BaseClothingLegs
+  id: Z14ClothingLegsJeansDeserterCamouflage
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: deserter camouflage jeans
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/Legs/Jeans/Camouflage/deserter.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/Legs/Jeans/Camouflage/deserter.rsi
+
+- type: entity
+  parent: Z14BaseClothingLegs
+  id: Z14ClothingLegsJeansProjectPeshka
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: project jeans
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/Legs/Jeans/Camouflage/project/peshka.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/Legs/Jeans/Camouflage/project/peshka.rsi
+
+
+- type: entity
+  parent: Z14BaseClothingLegs
+  id: Z14ClothingLegsJeansProjectLeader
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: project leader jeans
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/Legs/Jeans/Camouflage/project/leader.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/Legs/Jeans/Camouflage/project/leader.rsi
+
+- type: entity
+  parent: Z14BaseClothingLegs
+  id: Z14ClothingLegsJeansNeutral
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: neutral jeans
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/Legs/legs_neytral.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/Legs/legs_neytral.rsi
+
+- type: entity
+  parent: Z14BaseClothingLegs
+  id: Z14ClothingLegsJeansClearSky
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: clear sky jeans
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/Legs/Jeans/chn.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/Legs/Jeans/chn.rsi
+
+- type: entity
+  parent: Z14BaseClothingLegs
+  id: Z14ClothingLegsJeansJaba
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: jaba jeans
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/Legs/Jeans/jaba.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/Legs/Jeans/jaba.rsi
+
+- type: entity
+  parent: Z14BaseClothingLegs
+  id: Z14ClothingLegsJeansUa
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: ukrainian army jeans
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/Legs/Jeans/vsu.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/Legs/Jeans/vsu.rsi
+
+- type: entity
+  parent: Z14BaseClothingLegs
+  id: Z14ClothingLegsJeansUa2
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: ukrainian army jeans
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/Legs/Jeans/vsu2.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/Legs/Jeans/vsu2.rsi
+
+- type: entity
+  parent: Z14BaseClothingLegs
+  id: Z14ClothingLegsJeansGreh
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: greh jeans
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/Legs/Jeans/greh.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/Legs/Jeans/greh.rsi
+
+- type: entity
+  parent: Z14BaseClothingLegs
+  id: Z14STClothingLegsPantsGray
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: gray pants
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/Legs/Jeans/gray.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/Legs/Jeans/gray.rsi
+
+- type: entity
+  parent: Z14BaseClothingLegs
+  id: Z14ClothingLegsJeansMonolithCamouflage
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: monolith camouflage jeans
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/Legs/Jeans/Camouflage/monolith.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/Legs/Jeans/Camouflage/monolith.rsi
+    - type: Unremoveable
+
+- type: entity
+  parent: Z14BaseClothingLegs
+  id: Z14ClothingLegsBattlePantsBlack
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: battle pants black
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/Legs/Jeans/battle_pants_black.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/Legs/Jeans/battle_pants_black.rsi
+
+
+- type: entity
+  parent: Z14BaseClothingLegs
+  id: Z14ClothingLegsVeryBlueJenas
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: very blue jeans
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/Legs/Jeans/blue-jeans.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/Legs/Jeans/blue-jeans.rsi
+
+- type: entity
+  parent: Z14BaseClothingLegs
+  id: Z14ClothingLegsCombatForest
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: combat forest
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/Legs/Jeans/combat-forest.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/Legs/Jeans/combat-forest.rsi
+
+- type: entity
+  parent: Z14BaseClothingLegs
+  id: Z14ClothingLegsGorka5
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: gorka 5
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/Legs/Jeans/gorka5.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/Legs/Jeans/gorka5.rsi
+
+- type: entity
+  parent: Z14BaseClothingLegs
+  id: Z14ClothingLegsGorka6b
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: gorka 6b
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/Legs/Jeans/gorka6b.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/Legs/Jeans/gorka6b.rsi
+
+- type: entity
+  parent: Z14BaseClothingLegs
+  id: Z14ClothingLegsNavyPants
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: navy pants
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/Legs/Jeans/navy_pants.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/Legs/Jeans/navy_pants.rsi
+
+- type: entity
+  parent: Z14BaseClothingLegs
+  id: Z14ClothingLegsRussianNumber
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: russian pixel 2
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/Legs/Jeans/russian_number.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/Legs/Jeans/russian_number.rsi

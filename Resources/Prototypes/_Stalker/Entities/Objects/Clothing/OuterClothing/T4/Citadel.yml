@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: STClothingOuterArmorVeryHeavy
   id: STClothingOuterArmorLightPlateVestBaseHeavyBandit
-  name: Бандитский Бронежилет «Цитадель»
-  description: Стыренный и перекрашенный мусорской тяжёлый бронежилет V типа, обеспечивающий достойную защиту от большинства видов повреждений.
+  name: Bandit Citadel Body Armor
+  description: A scrapped and repainted Type IV heavy body armor that provides decent protection against most types of damage.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/outerClothing/plate_heavy_bandit.rsi

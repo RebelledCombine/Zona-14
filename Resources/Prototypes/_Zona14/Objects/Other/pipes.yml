@@ -1,0 +1,23 @@
+- type: entity
+  id: Z14pipeStalker
+  categories: [ Zona14 ]
+  parent: BaseStructure
+  name: reinforced concrete pipes
+  description: Reliable metal or polymer materials are most commonly used in the manufacture of pipelines. Instead of them, reinforced concrete pipes are used in road and construction works, which have rigidity and the ability to withstand heavy loads.
+  suffix: Z14
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Other/Pipes.rsi
+      state: pipes
+    - type: Physics
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeAabb
+            bounds: "-0.4,-0.6,0.4,0.6"
+          density: 155
+          mask:
+          - MachineMask
+          layer:
+          - WallLayer

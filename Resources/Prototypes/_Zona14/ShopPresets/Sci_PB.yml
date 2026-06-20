@@ -2,69 +2,69 @@
   id: Z14NpcSciPB # 1,5x
   itemsForSale:
     # Thermal group - 1
-    ZoneArtifactFireball: 600
-    ZoneArtifactEye: 800
-    ZoneArtifactFlame: 1200
+    Z14ZoneArtifactFireball: 600
+    Z14ZoneArtifactEye: 800
+    Z14ZoneArtifactFlame: 1200
     # Thermal group - 2
-    ZoneArtifactCristall: 2400
-    ZoneArtifactLithosphere: 4800
+    Z14ZoneArtifactCristall: 2400
+    Z14ZoneArtifactLithosphere: 4800
     # Electrical group - 1
-    ZoneArtifactSparkler: 550
-    ZoneArtifactBattery: 700
-    ZoneArtifactFlash: 1200
-    ArtMoon: 2400
-    ZoneArtifactTesla: 3600
-    ZoneArtifactIce: 4800
+    Z14ZoneArtifactSparkler: 550
+    Z14ZoneArtifactBattery: 700
+    Z14ZoneArtifactFlash: 1200
+    Z14ArtMoon: 2400
+    Z14ZoneArtifactTesla: 3600
+    Z14ZoneArtifactIce: 4800
     # Gravity group - 1
-    ArtMedusa: 550
-    ZoneArtifactFlower: 750
-    ZoneArtifactNightStar: 2400
+    Z14ArtMedusa: 550
+    Z14ZoneArtifactFlower: 750
+    Z14ZoneArtifactNightStar: 2400
     # Gravity group - 2
-    ZoneArtifactVyvert: 650
-    ZoneArtifactAmoeba: 850
-    ZoneArtifactFloodlight: 810
-    ZoneArtifactGravi: 1200
-    ZoneArtifactGoldfish: 4800
-    ZoneArtifactSpring: 3600
-    ZoneArtifactFocus: 3600
-    ZoneArtifactStuntman: 4800
-    ZoneArtifactDistorter: 4800
-    ZoneArtifactSoul: 3600
+    Z14ZoneArtifactVyvert: 650
+    Z14ZoneArtifactAmoeba: 850
+    Z14ZoneArtifactFloodlight: 810
+    Z14ZoneArtifactGravi: 1200
+    Z14ZoneArtifactGoldfish: 4800
+    Z14ZoneArtifactSpring: 3600
+    Z14ZoneArtifactFocus: 3600
+    Z14ZoneArtifactStuntman: 4800
+    Z14ZoneArtifactDistorter: 4800
+    Z14ZoneArtifactSoul: 3600
     # Food
-    FoodMeatDogCooked: 70
-    STFoodMeatSpiderCooked: 35
-    FoodMeatBoarCooked: 110
+    Z14FoodMeatDogCooked: 70
+    Z14STFoodMeatSpiderCooked: 35
+    Z14FoodMeatBoarCooked: 110
 
     # Acidic group - 1
-    ZoneArtifactBlood: 1200
-    ZoneArtifactMeat: 2400
-    ZoneArtifactKolobok: 3600
+    Z14ZoneArtifactBlood: 1200
+    Z14ZoneArtifactMeat: 2400
+    Z14ZoneArtifactKolobok: 3600
     # Acidic group - 2
-    ZoneArtifactPellicle: 550
-    ZoneArtifactBaloon: 3600
+    Z14ZoneArtifactPellicle: 550
+    Z14ZoneArtifactBaloon: 3600
 
     # Mutant parts
 
     #Boars -------- Health * T * 0.45
-    MutantPartBoarHoof: 220 # T1
-    MutantPartSeasonedBoarHoof: 440 # T2
-    MutantPartOldBoarHoof: 650 # T3
+    Z14MutantPartBoarHoof: 220 # T1
+    Z14MutantPartSeasonedBoarHoof: 440 # T2
+    Z14MutantPartOldBoarHoof: 650 # T3
 
     #T1 -------- Health * 1
-    MutantPartBlindDogTail: 90
-    MutantPartFleshEye: 165
+    Z14MutantPartBlindDogTail: 90
+    Z14MutantPartFleshEye: 165
     FoodMeatSpiderLeg: 60
 
     #T2 -------- Health * 1.8
-    MutantPartLeshiyRoot: 700
-    MutantPartPseudodogTail: 300
-    MutantPartSnorkFoot: 450
+    Z14MutantPartLeshiyRoot: 700
+    Z14MutantPartPseudodogTail: 300
+    Z14MutantPartSnorkFoot: 450
 
     #T3 -------- Health * 3
-    MutantPartBloodsuckerTentacles: 1000
-    MutantPartOraculeEye: 1300
-    MutantPartPseudogiantHeart: 11700
-    MutantPartZombieHand: 550
+    Z14MutantPartBloodsuckerTentacles: 1000
+    Z14MutantPartOraculeEye: 1300
+    Z14MutantPartPseudogiantHeart: 11700
+    Z14MutantPartZombieHand: 550
   categories:
   - name: Vodka
     priority: 1

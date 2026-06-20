@@ -1,0 +1,12 @@
+- type: entity
+  parent: Z14BaseClothingTorso
+  id: Z14STClothingTorsoSerafimFullReady
+  categories: [ Zona14 ]
+  name: Star Son Follower Form
+  description: Material unknown. Size unknown. Sewing method unknown. This is something very unusual...
+  suffix: Z14
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/Torso/Serafims/full_ready_torso.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/Torso/Serafims/full_ready_torso.rsi

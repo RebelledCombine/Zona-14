@@ -1,0 +1,207 @@
+- type: entity
+  parent: ClothingScarfBase
+  id: Z14ClothingNeckScarfArmy
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: military scarf
+  description: A tactical green scarf made of hydrophobic tear-resistant material. Nothing fancy but it'll keep your neck warm in the cold months.
+  components:
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Clothing/Neck/Scarves/army.rsi
+  - type: Clothing
+    sprite: _Stalker_EN/Objects/Clothing/Neck/Scarves/army.rsi
+
+- type: entity
+  parent: ClothingScarfBase
+  id: Z14ClothingNeckScarfBlack
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: tattered black scarf
+  description: An old black scarf that's seen better days. The fabric is wearing thin but it might last one more season.
+  components:
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Clothing/Neck/Scarves/black.rsi
+  - type: Clothing
+    sprite: _Stalker_EN/Objects/Clothing/Neck/Scarves/black.rsi
+
+- type: entity
+  parent: ClothingScarfBase
+  id: Z14ClothingNeckScarfDuty
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: scarf of duty
+  description: A heavy dual-color scarf. It isn't the softest thing in the world but it more than makes up for it by sheer volume.
+  components:
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Clothing/Neck/Scarves/duty.rsi
+  - type: Clothing
+    sprite: _Stalker_EN/Objects/Clothing/Neck/Scarves/duty.rsi
+
+- type: entity
+  parent: ClothingScarfBase
+  id: Z14ClothingNeckScarfSci
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: simple ecologist's scarf
+  description: A simple white scarf marked with the Ecology colors.
+  components:
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Clothing/Neck/Scarves/eco.rsi
+  - type: Clothing
+    sprite: _Stalker_EN/Objects/Clothing/Neck/Scarves/eco.rsi
+
+- type: entity
+  parent: ClothingScarfBase
+  id: Z14ClothingNeckScarfFreedom
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: scarf of freedom
+  description: A heavy dual-color scarf. It isn't the softest thing in the world but it more than makes up for it by sheer volume.
+  components:
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Clothing/Neck/Scarves/freedom.rsi
+  - type: Clothing
+    sprite: _Stalker_EN/Objects/Clothing/Neck/Scarves/freedom.rsi
+
+- type: entity
+  parent: ClothingScarfBase
+  id: Z14ClothingNeckScarfMerc
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: tattered blue scarf
+  description: An old blue scarf that's seen better days. The fabric is wearing thin but it might last one more season.
+  components:
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Clothing/Neck/Scarves/merc.rsi
+  - type: Clothing
+    sprite: _Stalker_EN/Objects/Clothing/Neck/Scarves/merc.rsi
+
+- type: entity
+  parent: ClothingScarfBase
+  id: Z14ClothingNeckScarfRainbow # nice
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: simple rainbow scarf
+  description: A simple scarf made of many different colors of yarn.
+  components:
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Clothing/Neck/Scarves/rainbow.rsi
+  - type: Clothing
+    sprite: _Stalker_EN/Objects/Clothing/Neck/Scarves/rainbow.rsi
+
+- type: entity
+  parent: ClothingScarfBase
+  id: Z14ClothingNeckScarfRenegade
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: renegade's scarf
+  description: Something that loosely passes as a scarf, the bulk is made of matted fur and material taken from less fortunate articles of clothing.
+  components:
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Clothing/Neck/Scarves/rene.rsi
+  - type: Clothing
+    sprite: _Stalker_EN/Objects/Clothing/Neck/Scarves/rene.rsi
+
+- type: entity
+  parent: ClothingScarfBase
+  id: Z14ClothingNeckScarfUkraine
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: simple ukraine scarf
+  description: A simple white scarf marked with the colors of the Ukrainian flag.
+  components:
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Clothing/Neck/Scarves/ukraine.rsi
+  - type: Clothing
+    sprite: _Stalker_EN/Objects/Clothing/Neck/Scarves/ukraine.rsi
+
+- type: entity
+  parent: ClothingScarfBase
+  id: Z14ClothingNeckScarfWhite
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: pale white scarf
+  description: A pale white scarf. The material is a little frayed but it remains free of stains.
+  components:
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Clothing/Neck/Scarves/white.rsi
+  - type: Clothing
+    sprite: _Stalker_EN/Objects/Clothing/Neck/Scarves/white.rsi
+
+- type: entity
+  parent: ClothingScarfBase
+  id: Z14ClothingNeckScarfNeutral
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: simple yellow scarf
+  description: A simple scarf with a free stalker patch sewn in to it.
+  components:
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Clothing/Neck/Scarves/neutral.rsi
+  - type: Clothing
+    sprite: _Stalker_EN/Objects/Clothing/Neck/Scarves/neutral.rsi
+
+- type: entity
+  parent: ClothingScarfBase
+  id: Z14ClothingNeckScarfBandit
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: bandit's scarf
+  description: A long black and white scarf made of cheap material.
+  components:
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Clothing/Neck/Scarves/band.rsi
+  - type: Clothing
+    sprite: _Stalker_EN/Objects/Clothing/Neck/Scarves/band.rsi
+
+- type: entity
+  parent: ClothingScarfBase
+  id: Z14ClothingNeckScarfBloody
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: blood soaked scarf
+  description: Blood has seeped into the material, staining it red at the edges.
+  components:
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Clothing/Neck/Scarves/bloody.rsi
+  - type: Clothing
+    sprite: _Stalker_EN/Objects/Clothing/Neck/Scarves/bloody.rsi
+
+- type: entity
+  parent: ClothingScarfBase
+  id: Z14ClothingNeckScarfBrown
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: simple brown scarf
+  description: A simple brown scarf made of a thick yarn, perfect for keeping warm in the winter.
+  components:
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Clothing/Neck/Scarves/brown.rsi
+  - type: Clothing
+    sprite: _Stalker_EN/Objects/Clothing/Neck/Scarves/brown.rsi
+
+- type: entity
+  parent: ClothingScarfBase
+  id: Z14ClothingNeckScarfGray
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: simple gray scarf
+  description: A simple gray scarf made of a thick yarn, perfect for keeping warm in the winter.
+  components:
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Clothing/Neck/Scarves/gray.rsi
+  - type: Clothing
+    sprite: _Stalker_EN/Objects/Clothing/Neck/Scarves/gray.rsi
+
+- type: entity
+  parent: ClothingScarfBase
+  id: Z14ClothingNeckScarfRed
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: crimson scarf
+  description: You're the main character, aren't you?
+  components:
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Clothing/Neck/Scarves/red.rsi
+  - type: Clothing
+    sprite: _Stalker_EN/Objects/Clothing/Neck/Scarves/red.rsi

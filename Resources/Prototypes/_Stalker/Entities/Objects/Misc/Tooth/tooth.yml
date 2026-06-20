@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
-  name: плоскогубцы
+  name: pliers
   parent: BaseItem
   id: PliersStalker
   suffix: Stalker
-  description: Инструмент который используется в сгибании проволоки, но кто-то его использует по другому.
+  description: A tool that is used in wire bending, but someone else uses it differently.
   components:
   - type: STWeight
     self: 0.5
@@ -41,8 +42,8 @@
 - type: entity
   parent: BaseItem
   id: ToothStalker
-  name: Зуб
-  description: Обычный целый зуб.
+  name: tooth
+  description: An ordinary whole tooth.
   components:
   - type: PhysicalComposition
     materialComposition:

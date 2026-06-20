@@ -76,7 +76,7 @@ public sealed partial class GroupTeleportSystem : SharedTeleportSystem
 
         if (link.LinkedEntities.Count <= 0)
         {
-            _popup.PopupEntity("Кажется проход здесь появится позже...", entity, subject, PopupType.Medium);
+            _popup.PopupEntity(Loc.GetString("st-teleport-not-available-yet"), entity, subject, PopupType.Medium); // Zona14: localized
             return;
         }
 

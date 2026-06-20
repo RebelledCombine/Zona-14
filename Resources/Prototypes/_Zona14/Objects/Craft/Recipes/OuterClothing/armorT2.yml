@@ -1,0 +1,216 @@
+- type: craftRecipe
+  id: Z14recipeZaryaHunter
+  resultProtos:
+    - ClothingOuterArmorZaryaStalker
+  craftTime: 10
+  items:
+    ClothingOuterArmorZaryaHunterBlueprint:
+      amount: 1
+      catalyzer: true
+    STCraftSheetIronT2:
+      amount: 2
+    STCraftHideT2:
+      amount: 2
+    STCraftPlasticFittingT2:
+      amount: 2
+    STCraftTapeKitT2:
+      amount: 1
+
+- type: craftRecipe
+  id: Z14newrecipeClothingOuterArmorZaryaStalkerModifedType1
+  resultProtos:
+    - ClothingOuterArmorZaryaStalkerModifedType1
+  craftTime: 10
+  items:
+    ClothingOuterArmorZaryaStalker:
+      amount: 1
+    ClothingOuterArmorZaryaStalkerModifedType1Blueprint:
+      amount: 1
+      catalyzer: true
+    STCraftSheetIronT2:
+      amount: 1
+    STCraftHideT2:
+      amount: 1
+    STCraftTapeKitT2:
+      amount: 1
+
+
+- type: craftRecipe
+  id: Z14newrecipeClothingOuterArmorZaryaStalkerModifedType2
+  resultProtos:
+    - ClothingOuterArmorZaryaStalkerModifedType2
+  craftTime: 10
+  items:
+    ClothingOuterArmorZaryaStalker:
+      amount: 1
+    ClothingOuterArmorZaryaStalkerModifedType2Blueprint:
+      amount: 1
+      catalyzer: true
+    STCraftSheetIronT2:
+      amount: 1
+    STCraftHideT2:
+      amount: 1
+    STCraftPlasticFittingT2:
+      amount: 1
+
+# 6B2
+- type: craftRecipe
+  id: Z14newrecipeClothingOuterArmor6B2
+  resultProtos:
+    - ClothingOuterArmor6B2
+  craftTime: 5
+  items:
+    STClothingOuterArmor6B2Blueprint:
+      amount: 1
+      catalyzer: true
+    STCraftSheetIronT2:
+      amount: 2
+    STCraftTapeKitT2:
+      amount: 1
+    STCraftHideT2:
+      amount: 2
+    STCraftPlasticFittingT2:
+      amount: 2
+
+- type: craftRecipe
+  id: Z14newrecipeSTClothingOuterArmorLightPlateVestBaseStalker
+  resultProtos:
+    - STClothingOuterArmorLightPlateVestBaseStalker
+  craftTime: 5
+  items:
+    STClothingOuterArmorLightPlateVestBaseStalkerBlueprint:
+      amount: 1
+      catalyzer: true
+    STCraftSheetIronT2:
+      amount: 1
+    STCraftTapeKitT2:
+      amount: 1
+    STCraftHideT2:
+      amount: 4
+    STCraftPlasticFittingT2:
+      amount: 2
+
+
+
+# ArmorCN1
+- type: craftRecipe
+  id: Z14newrecipeClothingOuterArmorCN1
+  resultProtos:
+    - ClothingOuterArmorCN1
+  craftTime: 5
+  items:
+    ClothingOuterArmorCN1Blueprint:
+      amount: 1
+      catalyzer: true
+    STCraftSheetIronT2:
+      amount: 3
+    STCraftTapeKitT2:
+      amount: 2
+    STCraftHideT2:
+      amount: 2
+    STCraftPlasticFittingT2:
+      amount: 4
+
+# Spark
+- type: craftRecipe
+  id: Z14newrecipeClothingOuterArmorSpark
+  resultProtos:
+    - ClothingOuterArmorSpark
+  craftTime: 5
+  items:
+    ClothingOuterArmorSparkBlueprint:
+      amount: 1
+      catalyzer: true
+    ClothingOuterArmorZaryaStalker:
+      amount: 1
+    STCraftBasicThreadKitT1:
+      amount: 1
+    ZoneArtifactPellicle:
+      amount: 1
+
+# Chainmail
+
+- type: craftRecipe
+  id: Z14newrecipeClothingOuterArmourJacketStalker
+  resultProtos:
+    - ClothingOuterArmourJacketStalker
+  craftTime: 5
+  items:
+    ClothingOuterArmourJacketStalkerBlueprint:
+      amount: 1
+      catalyzer: true
+    STCraftSheetIronT2 :
+      amount: 1
+    STCraftBasicThreadKitT1:
+      amount: 1
+    ClothingOuterJacketStalker:
+      amount: 1
+
+- type: craftRecipe
+  id: Z14newrecipeClothingOuterArmourJacketBandit
+  resultProtos:
+    - ClothingOuterArmourJacketBandit
+  craftTime: 5
+  items:
+    ClothingOuterArmourJacketBanditBlueprint:
+      amount: 1
+      catalyzer: true
+    STCraftSheetIronT2:
+      amount: 1
+    STCraftBasicThreadKitT1:
+      amount: 1
+    ClothingOuterJacketBandit:
+      amount: 1
+
+- type: craftRecipe
+  id: Z14newrecipeClothingOuterArmourCoatBanditBlack
+  resultProtos:
+    - ClothingOuterArmourCoatBanditBlack
+  craftTime: 5
+  items:
+    ClothingOuterArmourCoatBanditBlackBlueprint:
+      amount: 1
+      catalyzer: true
+    ClothingOuterCoatBanditBlack:
+      amount: 1
+    STCraftSheetIronT2:
+      amount: 2
+    STCraftTapeKitT2:
+      amount: 1
+
+- type: craftRecipe
+  id: Z14newrecipeClothingOuterArmourCoatBanditBrown
+  resultProtos:
+    - ClothingOuterArmourCoatBanditBrown
+  craftTime: 5
+  items:
+    ClothingOuterArmourCoatBanditBrownBlueprint:
+      amount: 1
+      catalyzer: true
+    ClothingOuterCoatBanditBrown:
+      amount: 1
+    STCraftSheetIronT2:
+      amount: 2
+    STCraftTapeKitT2:
+      amount: 1
+
+
+# ZN-1
+
+- type: craftRecipe
+  id: Z14newrecipeClothingOuterArmorZN1
+  resultProtos:
+    - ClothingOuterArmorZN1
+  craftTime: 15
+  items:
+    ClothingOuterArmorZN1Blueprint:
+      amount: 1
+      catalyzer: true
+    STCraftSheetIronT2:
+      amount: 3
+    STCraftTapeKitT2:
+      amount: 2
+    STCraftHideT2:
+      amount: 2
+    STCraftPlasticFittingT2:
+      amount: 4

@@ -1,0 +1,22 @@
+- type: entity
+  name: Korund (modified)
+  suffix: Z14
+  parent: ClothingOuterArmorBasic
+  id: Z14STKorundUpgradeTest
+  categories: [ Zona14 ]
+
+  components:
+  - type: STWeight
+    self: 5
+  - type: STItemUpgrades
+    tree: STKorundUpgradeTree
+
+  - type: STArmorDurability
+    maxDurability: 100
+    currentDurability: 100
+    durabilityLossPerDamage: 0.08
+    minProtectionFactor: 0.4
+    affectedDamageTypes:
+    - Blunt
+    - Piercing
+    - Heat

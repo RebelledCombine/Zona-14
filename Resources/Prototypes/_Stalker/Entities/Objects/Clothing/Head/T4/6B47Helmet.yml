@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   abstract: true
   parent: STClothingHeadBase
   id: STClothingHeadHelmetCombatT4Base
-  name: база боевого шлема T4
+  name: T4 Combat Helmet Base
   suffix: ST, T4, Combat
   components:
   - type: STWeight
@@ -27,8 +28,8 @@
 - type: entity
   parent: STClothingHeadHelmetCombatT4Base
   id: ClothingHeadRatnik
-  name: 6Б47
-  description: Шлем 6Б47 из комплекта «Ратник» специально разработанный для защиты от колющих атак.
+  name: 6B47
+  description: The 6B47 helmet from the Ratnik kit is specially designed to protect against piercing attacks.
   components:
     - type: Sprite
       sprite: _Stalker/Objects/Clothing/hats/6b47.rsi

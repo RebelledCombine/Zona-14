@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: STClothingHeadHelmetTacticalT3Base
   id: STClothingHeadHelmetSeraphimAltin
-  name: бронешлем «Страж»
-  description: Это усовершенствованная модификация классического шлема «Сфера-12» Монолита, разработанная и доработанная мастерами Серафимов для защиты в условиях Зоны. Его конструкция сочетает в себе прочность оригинала и новые элементы, отражающие идеологию Серафимов. Шлем покрыт специальным камуфляжем, характерным для группы, а его поверхность украшена молитвенными символами и защитными знаками, которые, по верованиям Серафимов, усиливают его способности. Внутренние системы модернизированы фильтрами и двойным покрытием, для повышеной защиты от Радиации и предотвращению Пси-Воздействия на организм носителя.
+  name: Armored helmet "Guardian"
+  description: This is an advanced modification of the Monolith's classic Sphere-12 helmet, designed and refined by Seraph masters for protection in the Zone. Its design combines the strength of the original and new elements that reflect the ideology of the Seraphim. The helmet is covered in special camouflage characteristic of the group, and its surface is decorated with prayer symbols and protective signs, which, according to the beliefs of the Seraphim, enhance his abilities. The internal systems are upgraded with filters and a double coating to increase protection against Radiation and prevent Psi-Effects on the host's body.
   suffix: ST, T3, Custom
   components:
   - type: Sprite
@@ -44,8 +45,8 @@
 - type: entity
   parent: STClothingHeadHelmetSeraphimAltin
   id: ClothingHeadAltinHelmetLimaSera
-  name: бронешлем «Страж»
-  description: Это усовершенствованная модификация классического шлема «Сфера-12» Монолита, разработанная и доработанная мастерами Серафимов для защиты в условиях Зоны. Его конструкция сочетает в себе прочность оригинала и новые элементы, отражающие идеологию Серафимов. Шлем покрыт специальным камуфляжем, характерным для группы, а его поверхность украшена молитвенными символами и защитными знаками, которые, по верованиям Серафимов, усиливают его способности. Внутренние системы модернизированы фильтрами и двойным покрытием, для повышеной защиты от Радиации и предотвращению Пси-Воздействия на организм носителя, покрашен в серый.
+  name: combat helmet "Guardian"
+  description: This is an improved modification of the classic Monolith "Sphere-12" helmet, developed and refined by the Seraphim masters for protection in Zone conditions. Its design combines the durability of the original with new elements reflecting Seraphim ideology. The helmet is covered with a special camouflage typical of the group, and its surface is adorned with prayer symbols and protective markings that, according to Seraphim beliefs, enhance its capabilities. The internal systems are upgraded with filters and dual coating to increase protection from radiation and prevent Psi exposure to the wearer. Now painted gray.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/hats/sera_limastrash.rsi

@@ -1,0 +1,83 @@
+# Flesh Neutral variants
+- type: entity
+  parent: Z14MobMutantFleshNeutral
+  id: Z14STMobMutantFleshNeutralCommon
+  categories: [ Zona14 ]
+  name: Flesh
+  suffix: Z14
+  components:
+  - type: STMobVariant
+    quality: Common
+    applied: true
+
+- type: entity
+  parent: Z14MobMutantFleshNeutral
+  id: Z14STMobMutantFleshNeutralUncommon
+  categories: [ Zona14 ]
+  name: Adapted Flesh
+  suffix: Z14
+  components:
+  - type: STMobVariant
+    quality: Uncommon
+
+- type: entity
+  parent: Z14MobMutantFleshNeutral
+  id: Z14STMobMutantFleshNeutralRare
+  categories: [ Zona14 ]
+  name: Mutated Flesh
+  suffix: Z14
+  components:
+  - type: STMobVariant
+    quality: Rare
+
+- type: entity
+  parent: Z14MobMutantFleshNeutral
+  id: Z14STMobMutantFleshNeutralLegendary
+  categories: [ Zona14 ]
+  name: Singular Flesh
+  suffix: Z14
+  components:
+  - type: STMobVariant
+    quality: Legendary
+
+# Flesh Aggressive variants
+- type: entity
+  parent: Z14MobMutantFleshAgressive
+  id: Z14STMobMutantFleshAgressiveCommon
+  categories: [ Zona14 ]
+  name: Aggressive Flesh
+  suffix: Z14
+  components:
+  - type: STMobVariant
+    quality: Common
+    applied: true
+
+- type: entity
+  parent: Z14MobMutantFleshAgressive
+  id: Z14STMobMutantFleshAgressiveUncommon
+  categories: [ Zona14 ]
+  name: Adapted Aggressive Flesh
+  suffix: Z14
+  components:
+  - type: STMobVariant
+    quality: Uncommon
+
+- type: entity
+  parent: Z14MobMutantFleshAgressive
+  id: Z14STMobMutantFleshAgressiveRare
+  categories: [ Zona14 ]
+  name: Mutated Aggressive Flesh
+  suffix: Z14
+  components:
+  - type: STMobVariant
+    quality: Rare
+
+- type: entity
+  parent: Z14MobMutantFleshAgressive
+  id: Z14STMobMutantFleshAgressiveLegendary
+  categories: [ Zona14 ]
+  name: Singular Aggressive Flesh
+  suffix: Z14
+  components:
+  - type: STMobVariant
+    quality: Legendary

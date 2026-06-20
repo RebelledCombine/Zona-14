@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
-  name: отвёртка
+  name: screwdriver
   id: STScrewdriver
   parent: BaseItem
-  description: Можно разобрать мебель.
-  suffix: ST, крафт
+  description: Can be used to disassemble furniture.
+  suffix: ST, craft # Zona14: ST, крафт
   components:
   - type: Sprite
     sprite: Objects/Tools/screwdriver.rsi

@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
-  name: АК-104 (модифицированный)
+  name: AK-104 (modified)
   suffix: ST, TEST
   parent: STWeaponRifleStalkerAK104
   id: STWeaponRifleStalkerAK104_UpgradeTest
-  description: Тестовое оружие для системы модификаций.
+  description: A test weapon for the modification system.
 
   components:
   - type: STItemUpgrades

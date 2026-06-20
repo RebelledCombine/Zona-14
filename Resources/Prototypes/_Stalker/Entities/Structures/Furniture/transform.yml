@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: TransformStalker
   parent: BaseStructure
-  name: трансформатор
+  name: transformer
   suffix: ST, Mapping
-  description: Статическое электромагнитное устройство, имеющее две или более индуктивно связанные обмотки на каком-либо магнитопроводе и предназначенное для преобразования посредством электромагнитной индукции одной или нескольких систем (напряжений) переменного тока в одну или несколько других систем (напряжений) без изменения частоты.
+  description: A static electromagnetic device having two or more inductively coupled windings on a magnetic core and designed to convert, by electromagnetic induction, one or more alternating current systems (voltages) into one or more other systems (voltages) without changing the frequency.
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Furniture/transform.rsi

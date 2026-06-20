@@ -1,0 +1,18 @@
+- type: lightCraftingRecipe
+  id: Z14STCraftSkinClothingOuterArmorBerill5MMonolith
+  results:
+    - ClothingOuterArmorBerill5MMonolith
+  steps:
+    firstIngredient: STSkinsKitMonolith
+    secondIngredient: STClothingOuterArmorBerill5M
+    keepFirst: true
+    time: 5
+- type: lightCraftingRecipe
+  id: Z14STCraftSkinClothingOuterArmorLepestokNeutral
+  results:
+    - STClothingOuterArmorLepestokNeutral
+  steps:
+    firstIngredient: STSkinsKitNeutral
+    secondIngredient: STClothingOuterArmorBerill5M
+    keepFirst: true
+    time: 5

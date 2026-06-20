@@ -1,7 +1,8 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: STBaseBlueprint
   id: TrashDetectorTier2Blueprint
-  name: Рецепт металлоискатель "Копатель"
+  name: Metal Detector "Digger" Recipe
   components:
     - type: STBlueprint
       blueprint: recipeTrashDetectorTier2
@@ -9,7 +10,7 @@
 - type: entity
   parent: STBaseBlueprint
   id: TrashDetectorTier3Blueprint
-  name: Рецепт металлоискатель "Шахтёр"
+  name: Metal Detector "Shakhter" Recipe
   components:
     - type: STBlueprint
       blueprint: recipeTrashDetectorTier3
@@ -17,7 +18,7 @@
 - type: entity
   parent: STBaseBlueprint
   id: TrashDetectorTier4Blueprint
-  name: Рецепт металлоискатель "Находка"
+  name: Metal Detector "Nakhodka" Recipe
   components:
     - type: STBlueprint
       blueprint: recipeTrashDetectorTier4
@@ -25,7 +26,7 @@
 - type: entity
   parent: STBaseBlueprint
   id: TrashDetectorTier5Blueprint
-  name: Рецепт металлоискатель "Аномалист"
+  name: Metal Detector "Anomalist" Recipe
   components:
     - type: STBlueprint
       blueprint: recipeTrashDetectorTier5

@@ -1,8 +1,9 @@
-﻿- type: entity
+﻿# Zona14: translated Russian names/descriptions to English
+- type: entity
   id: Zerkalo
   suffix: ST, Mapping
-  name: зеркало
-  description: Вы видите отражение себя, а вы стильный сталкер...
+  name: mirror
+  description: You see your reflection, and you are a stylish stalker...
   placement:
     mode: PlaceFree
   components:

@@ -1,3 +1,4 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   abstract: true
   parent: STBaseWeaponRifle
@@ -159,7 +160,7 @@
   parent: STBaseWeaponRifleAKS74
   id: STWeaponRifleA545
   name: A-545 "Balalaika"
-  suffix: ST, Кастомка
+  suffix: ST, Custom # Zona14: ST, Кастомка
   description: Assault rifle with balanced recoil system. Rare in the Zone, usually comes with military expeditions. Nicknamed 'Balalaika' for distinctive sound.
   components:
   - type: Clothing
@@ -210,7 +211,7 @@
   parent: STBaseWeaponRifleAKS74
   id: STWeaponRifleZastavaM92
   name: Zastava M92
-  suffix: ST, Кастомка
+  suffix: ST, Custom # Zona14: ST, Кастомка
   description: Yugoslav and Serbian assault rifle. Variant of the Zastava M85 assault rifle chambered for the 7.62 × 39 mm cartridge. It has a recoil capacitor, a PS-2 sight, and a handle.
   components:
   - type: STWeight
@@ -323,8 +324,8 @@
 - type: entity
   parent: STBaseWeaponRifleAKS74U
   id: STWeaponRifleAKS74USERAPH
-  name: Мученик
-  description: Неподлежащие ремонту АК и АКСу обретают новую жизнь, проходя через руки техников Братства Серафимов, превращаясь в оружие Мучеников Братства. Ненадежное, не точное и не эффективное, но все же его используют Серафимы-Смертники дабы вступить в последнюю схватку во имя своего Бога.
+  name: Martyr
+  description: AKs and AKSs beyond repair bring new life through Seraphim Brotherhood technicians, turning into Martyr weapons. Unreliable, inaccurate, inefficient—but still used by Suicide Seraphim in their final battle for their God. It uses 5.45x39mm ammo.
   components:
   - type: Clothing
     sprite: _Stalker/Objects/Weapons/Guns/Rifles/_Skins/aks74u-seraph.rsi
@@ -337,7 +338,7 @@
   parent: STWeaponRifleStalkerAK12
   id: STWeaponRifleAM17
   name: AM-17
-  suffix: ST, Кастомка
+  suffix: ST, Custom # Zona14: ST, Кастомка
   description: Russian compact assault rifle developed by the Kalashnikov Concern. This rifle was created to replace the AKS-74U assault rifles in special forces of the Russian Armed Forces and the Ministry of Internal Affairs.
   components:
   - type: STWeight
@@ -367,11 +368,11 @@
     accuracyMultiplier: 1.47
 
 - type: entity
-  name: АК-105 Болотная тварь
+  name: AK-105 Swamp Beast
   suffix: ST
   parent: STBaseWeaponRifle
   id: STWeaponRifleStalkerAK105SwampThing
-  description: АК-105 — автомат Калашникова «сотой серии» малогабаритный. Разработан под патрон 5,45х39 мм для российской армии и правоохранительных органов. Этот автомат модифицирован под нужды Чистого Неба и используется оперативниками группировки в самых разных уголках Зоны.
+  description: The AK-105 is a compact Kalashnikov assault rifle from the "hundredth series." Designed for the 5.45x39mm cartridge, it is used by the Russian military and law enforcement agencies. This rifle is modified to meet the needs of special operatives throughout the Zone.
   components:
   - type: STWeight
     self: 3.5

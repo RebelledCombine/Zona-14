@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: CalianStalker
   parent: BaseStructure
-  name: кальян
+  name: hookah
   suffix: ST, Mapping
-  description: Прибор для курения, отличительной особенностью которого является длинный путь прохождения дыма от его источника до рта курильщика, и наличие ёмкости с водой.
+  description: "A smoking device characterized by a long path of smoke from its source to the smoker's mouth, and the presence of a container of water."
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Furniture/calian.rsi

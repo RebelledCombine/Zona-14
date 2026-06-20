@@ -1,0 +1,497 @@
+# T-SHIRT WITH BEER DINOSAUR
+
+- type: entity
+  parent: ClothingUniformBase
+  id: Z14StalkerPivozavr
+  categories: [ Zona14 ]
+  name: Beer T-shirt
+  description: Maybe it'll be fashionable soon.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/uniform/Pivozavr.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/uniform/Pivozavr.rsi
+  - type: Trash
+    time: 300
+
+- type: entity
+  parent: ClothingUniformBase
+  id: Z14StalkerJumpsuitJocker
+  categories: [ Zona14 ]
+  name: Joker Costume
+  description: A non-standard suit, some think it's a joke. But it's not...
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/uniform/joker_suit.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/uniform/joker_suit.rsi
+  - type: Trash
+    time: 300
+
+- type: entity
+  parent: UnsensoredClothingUniformSkirtBase
+  id: Z14ClothingUniformJumpsuitBandit
+  categories: [ Zona14 ]
+  name: Tracksuit
+  description: Originally intended for sports as an over-garment for competitions, but in the Zone it's a decent comfortable outfit.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/uniform/bandit_uniform.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/uniform/bandit_uniform.rsi
+  - type: Trash
+    time: 300
+
+- type: entity
+  parent: UnsensoredClothingUniformSkirtBase
+  id: Z14ClothingUniformJumpsuitMerc
+  categories: [ Zona14 ]
+  name: Mercenary Uniform
+  description: Standard gray suit used by the Mercenaries.
+  suffix: Z14
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/uniform/mercenary_uniform.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/uniform/mercenary_uniform.rsi
+    - type: Trash
+      time: 300
+
+- type: entity
+  parent: UnsensoredClothingUniformSkirtBase
+  id: Z14ClothingUniformJumpsuitMilitary1
+  categories: [ Zona14 ]
+  name: OKSOP Uniform
+  description: Special OKSOP uniform sometimes seen on soldiers.
+  suffix: Z14
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/uniform/military1_uniform.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/uniform/military1_uniform.rsi
+    - type: Trash
+      time: 300
+
+- type: entity
+  parent: UnsensoredClothingUniformSkirtBase
+  id: Z14ClothingUniformJumpsuitMilitary2
+  categories: [ Zona14 ]
+  name: Military Uniform
+  description: Uniform traditionally worn by naval enlisted sailors. Unclear how it ended up in the CEZ.
+  suffix: Z14
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/uniform/military2_uniform.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/uniform/military2_uniform.rsi
+    - type: Trash
+      time: 300
+
+- type: entity
+  parent: UnsensoredClothingUniformSkirtBase
+  id: Z14ClothingUniformJumpsuitMilitaryRU
+  categories: [ Zona14 ]
+  name: uniform of the Armed Forces of the Russian Federation
+  description: A standard attribute of Russian Federation personnel in OKSOP ranks.
+  suffix: Z14
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/uniform/Military/ru.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/uniform/Military/ru.rsi
+    - type: Trash
+      time: 300
+
+- type: entity
+  parent: UnsensoredClothingUniformSkirtBase
+  id: Z14ClothingUniformJumpsuitMilitaryKZ
+  categories: [ Zona14 ]
+  name: uniform of the Armed Forces of Kazakhstan
+  description: A standard attribute of Kazakhstan personnel in OKSOP ranks.
+  suffix: Z14
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/uniform/Military/kz.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/uniform/Military/kz.rsi
+    - type: Trash
+      time: 300
+
+- type: entity
+  parent: UnsensoredClothingUniformSkirtBase
+  id: Z14ClothingUniformJumpsuitMilitaryUA
+  categories: [ Zona14 ]
+  name: APU uniform
+  description: Standard attribute of UAF personnel in OKSOP.
+  suffix: Z14
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/uniform/Military/ua.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/uniform/Military/ua.rsi
+    - type: Trash
+      time: 300
+
+- type: entity
+  parent: UnsensoredClothingUniformSkirtBase
+  id: Z14ClothingUniformJumpsuitMilitaryUA2
+  categories: [ Zona14 ]
+  name: APU uniform
+  description: Standard attribute of UAF personnel in OKSOP.
+  suffix: Z14
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/uniform/Military/ua2.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/uniform/Military/ua2.rsi
+    - type: Trash
+      time: 300
+
+- type: entity
+  parent: UnsensoredClothingUniformSkirtBase
+  id: Z14ClothingUniformJumpsuitMilitaryFR
+  categories: [ Zona14 ]
+  name: French Uniforms
+  description: French army uniform (not to be confused with the Foreign Legion).
+  suffix: Z14
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/uniform/Military/fr.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/uniform/Military/fr.rsi
+    - type: Trash
+      time: 300
+
+- type: entity
+  parent: UnsensoredClothingUniformSkirtBase
+  id: Z14ClothingUniformJumpsuitMilitaryLIT
+  categories: [ Zona14 ]
+  name: Lithuanian uniform
+  description: Lithuanian army uniform.
+  suffix: Z14
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/uniform/Military/lit.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/uniform/Military/lit.rsi
+    - type: Trash
+      time: 300
+
+- type: entity
+  parent: UnsensoredClothingUniformSkirtBase
+  id: Z14ClothingUniformJumpsuitMilitaryPOL
+  categories: [ Zona14 ]
+  name: uniform of Poland
+  description: Polish army uniform.
+  suffix: Z14
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/uniform/Military/pol.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/uniform/Military/pol.rsi
+    - type: Trash
+      time: 300
+
+- type: entity
+  parent: UnsensoredClothingUniformSkirtBase
+  id: Z14ClothingUniformJumpsuitStalker
+  categories: [ Zona14 ]
+  name: Stalker's Overalls
+  description: A basic combination of everyday clothing. Many come to the Zone wearing jeans.
+  suffix: Z14
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/uniform/stalker_uniform.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/uniform/stalker_uniform.rsi
+    - type: Trash
+      time: 300
+
+- type: entity
+  parent: UnsensoredClothingUniformSkirtBase
+  id: Z14ClothingUniformJumpsuitStalkerM85
+  categories: [ Zona14 ]
+  name: M85 Uniform
+  description: After Czechoslovakia's dissolution, huge amounts of uniforms hit the civilian market. This is one of the copies made based on the Czech kit.
+  suffix: Z14
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/uniform/Military/cz.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/uniform/Military/cz.rsi
+    - type: Trash
+      time: 600
+
+- type: entity
+  parent: UnsensoredClothingUniformSkirtBase
+  id: Z14ClothingUniformJumpsuitMonolith
+  categories: [ Zona14 ]
+  name: monolith Uniform
+  description: standard Monolith suit. Typically worn by assault troops, sentries, or scouts. Decent against light weapons. Poor anomaly protection due to lack of air filtration.
+  suffix: Z14
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/uniform/monolith_uniform.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/uniform/monolith_uniform.rsi
+    - type: Trash
+      time: 600
+
+- type: entity
+  parent: UnsensoredClothingUniformSkirtBase
+  id: Z14ClothingUniformJumpsuitUN
+  categories: [ Zona14 ]
+  name: UN uniform
+  description: UN uniform without identification marks — for UN personnel without borders.
+  suffix: Z14
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/uniform/un1.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/uniform/un1.rsi
+    - type: Trash
+      time: 300
+
+- type: entity
+  parent: UnsensoredClothingUniformSkirtBase
+  id: Z14ClothingUniformJumpsuitFreedom1
+  categories: [ Zona14 ]
+  name: Freedom Uniform
+  description: standard suit used by the Volya faction.
+  suffix: Z14
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/uniform/freedom1.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/uniform/freedom1.rsi
+    - type: Trash
+      time: 300
+
+- type: entity
+  parent: UnsensoredClothingUniformSkirtBase
+  id: Z14ClothingUniformJumpsuitFreedom2
+  categories: [ Zona14 ]
+  name: Flectarn's Freedom Uniform
+  description: standard suit used by the Volya faction. Camo borrowed from the Bundeswehr.
+  suffix: Z14
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/uniform/freedom2.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/uniform/freedom2.rsi
+    - type: Trash
+      time: 300
+
+- type: entity
+  parent: UnsensoredClothingUniformSkirtBase
+  id: Z14ClothingUniformJumpsuitDolg1
+  categories: [ Zona14 ]
+  name: Duty Uniform
+  description: standard suit used by the Duty faction.
+  suffix: Z14
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/uniform/dolg1.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/uniform/dolg1.rsi
+    - type: Trash
+      time: 300
+
+- type: entity
+  parent: UnsensoredClothingUniformSkirtBase
+  id: Z14ClothingUniformJumpsuitDolg2
+  categories: [ Zona14 ]
+  name: Duty Uniform Black
+  description: standard suit used by the Duty faction.
+  suffix: Z14
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/uniform/dolg2.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/uniform/dolg2.rsi
+    - type: Trash
+      time: 300
+
+- type: entity
+  parent: UnsensoredClothingUniformSkirtBase
+  id: Z14ClothingUniformJumpsuitZavetBoez
+  categories: [ Zona14 ]
+  name: Covenant Fighter Uniform
+  description: standard suit used by the Covenant faction.
+  suffix: Z14
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/uniform/zavet/zavet.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/uniform/zavet/zavet.rsi
+    - type: Trash
+      time: 300
+
+- type: entity
+  parent: UnsensoredClothingUniformSkirtBase
+  id: Z14ClothingUniformJumpsuitZavetLead
+  categories: [ Zona14 ]
+  name: Covenant Leader Uniform
+  description: standard suit used by the Covenant faction.
+  suffix: Z14
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/uniform/zavet/zavet_lead.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/uniform/zavet/zavet_lead.rsi
+    - type: Trash
+      time: 300
+
+- type: entity
+  parent: UnsensoredClothingUniformSkirtBase
+  id: Z14ClothingUniformJumpsuitMercV1
+  categories: [ Zona14 ]
+  name: Blue Mercenary Suit
+  description: Suit with a blue tint and dark pants. Used by the Mercenaries.
+  suffix: Z14
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/uniform/mercenary1_uniform.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/uniform/mercenary1_uniform.rsi
+    - type: Trash
+      time: 300
+
+- type: entity
+  parent: ClothingUniformBase
+  id: Z14ClothingUniformJumpsuitGreh
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Uniform of Sin
+  description: Old, torn, but holy.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/uniform/greh_uniform.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/uniform/greh_uniform.rsi
+  - type: Armor
+    modifiers:
+      flatReductions:
+        Radiation: 50
+  - type: Tag
+    tags:
+    - GrehCanTakeOnly
+  - type: Unremoveable
+  - type: PersonalDamage
+    damage:
+      types:
+        Radiation: -100
+        Psy: -100
+    interval: 1
+
+- type: entity
+  parent: UnsensoredClothingUniformSkirtBase
+  id: Z14ClothingUniformJumpsuitDeserter
+  categories: [ Zona14 ]
+  name: Renegade Uniform
+  description: Standard suit used by the Deserters faction.
+  suffix: Z14
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/uniform/deserter_uniform.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/uniform/deserter_uniform.rsi
+    - type: Trash
+      time: 300
+
+- type: entity
+  parent: UnsensoredClothingUniformSkirtBase
+  id: Z14ClothingUniformJumpsuitClearSky
+  categories: [ Zona14 ]
+  name: Clear Sky Uniform
+  description: Standard suit used by the Clear Sky faction.
+  suffix: Z14
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/uniform/uniform_chn.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/uniform/uniform_chn.rsi
+    - type: Trash
+      time: 300
+
+- type: entity
+  parent: UnsensoredClothingUniformSkirtBase
+  id: Z14ClothingUniformJumpsuitJaba
+  categories: [ Zona14 ]
+  name: Toad Uniform
+  description: Standard suit used by the Toads faction.
+  suffix: Z14
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/uniform/jaba_uniform.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/uniform/jaba_uniform.rsi
+    - type: Trash
+      time: 300
+
+- type: entity
+  parent: UnsensoredClothingUniformSkirtBase
+  id: Z14ClothingUniformAnomalistTechnician
+  categories: [ Zona14 ]
+  name: Anomalist Uniform
+  description: Work clothes that have been in many secret places in the zone, as well as anomalies. Not excluding fishing.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/Uniforms/Anomalist/technician.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/Uniforms/Anomalist/technician.rsi
+
+- type: entity
+  parent: UnsensoredClothingUniformSkirtBase
+  id: Z14ClothingUniformPolice
+  categories: [ Zona14 ]
+  name: Police Uniform
+  description: I am the law!
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/Uniforms/Police/base.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/Uniforms/Police/base.rsi
+- type: entity
+  parent: UnsensoredClothingUniformSkirtBase
+  id: Z14ClothingUniformSerafimFanatic
+  categories: [ Zona14 ]
+  name: Seraphim Uniform
+  description: Maybe it'll be fashionable soon.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/Uniforms/Serafim/fanatic.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/Uniforms/Serafim/fanatic.rsi
+
+- type: entity
+  parent: UnsensoredClothingUniformSkirtBase
+  id: Z14ClothingUniformSerafimFullReady
+  categories: [ Zona14 ]
+  name: Seraphim Uniform
+  description: Maybe it'll be fashionable soon.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/Uniforms/Serafim/full_ready.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/Uniforms/Serafim/full_ready.rsi
+
+- type: entity
+  parent: UnsensoredClothingUniformSkirtBase
+  id: Z14ClothingUniformSerafimLittleChaos
+  categories: [ Zona14 ]
+  name: Seraphim Uniform
+  description: Maybe it'll be fashionable soon.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/Uniforms/Serafim/little_chaos.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/Uniforms/Serafim/little_chaos.rsi

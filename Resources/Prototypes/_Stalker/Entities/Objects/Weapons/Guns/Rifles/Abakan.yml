@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
-  name: AN-94 «Абакан»
+  name: AN-94 "Abakan"
   suffix: ST
   parent: STWeaponRifleAK74M
   id: STWeaponRifleStalkerAbakan
-  description: Оружие элитных войск советской армии. Был разработан в качестве замены устаревшему АКС. В «Абакане» подвижны не только внутренние механизмы, но и вся ствольная коробка вместе со стволом, что позволяет снизить отдачу, тем самым значительно повысив точность боя.
+  description: A weapon of elite Soviet troops. Designed to replace the outdated AKS. In the Abakan, not only the internal mechanisms are movable, but the entire receiver and barrel, which helps reduce recoil and significantly increase accuracy in combat. It uses 5.45x39mm ammo.
   components:
   - type: STWeight
     self: 4.5
@@ -39,10 +40,10 @@
 
 - type: entity
   name: AEK-971
-  suffix: ST, Кастомка
+  suffix: ST, Custom # Zona14: ST, Кастомка
   parent: STWeaponRifleAK74M
   id: STWeaponRifleStalkerAek971
-  description: Советский автомат, разработанный в 1978 году на заводе имени Дегтярёва в Коврове под руководством Станислава Ивановича Кокшарова на основе автоматов систем Константинова.
+  description: A Soviet assault rifle, developed in 1978 at the Degtyarev plant in Kovrov under the leadership of Stanislav Ivanovich Koksharov, based on assault rifles of the Konstantinov system.
   components:
   - type: STWeight
     self: 3

@@ -1,7 +1,8 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: Base751Mag10
-  name: магазин 7,62x51 (10)
-  description: Магазин 7,62x51 для винтовок НАТО. Вместимость пуль 10. Продают пустым.
+  name: 7.62x51 magazine (10)
+  description: 7.62x51 magazine for NATO rifles. Bullet capacity 10. They sell empty.
   parent: Base545Mag10
   suffix: Stalker
   components:
@@ -67,8 +68,8 @@
 
 - type: entity
   id: 751Mag20
-  name: магазин 7,62x51 (20)
-  description: Магазин 7,62x51 для винтовок НАТО. Вместимость пуль 20. Продают пустым.
+  name: 7.62x51 magazine (20)
+  description: 7.62x51 magazine for NATO rifles. Bullet capacity 20. They sell empty.
   parent: Base751Mag10
   suffix: Stalker
   components:
@@ -116,8 +117,8 @@
 
 - type: entity
   id: 751Mag30
-  name: магазин 7,62x51 (30)
-  description: Магазин 7,62x51 для винтовок НАТО. Вместимость пуль 30. Продают пустым.
+  name: 7.62x51 magazine (30)
+  description: 7.62x51 magazine for NATO rifles. Bullet capacity 30. They sell empty.
   parent: Base751Mag10
   suffix: Stalker
   components:
@@ -166,8 +167,8 @@
 
 - type: entity
   id: Base754RMag30
-  name: магазин 7,62x54 R (30)
-  description: Магазин 7,62x54 R для винтовок НАТО. Вместимость пуль 30. Продают пустым.
+  name: magazine 7.62x54R (30)
+  description: A 7.62x54R magazine for NATO rifles. 30-round capacity. Sold empty.
   parent: Base545Mag10
   suffix: Stalker
   components:

@@ -1,0 +1,7 @@
+- type: entity
+  parent: STBaseWeaponShotgunMossbergM88
+  id: Z14STWeaponShotgunMossbergM88
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Mossberg M88 Cruiser
+  description: Compact pump-action shotgun with exceptional ergonomics. Perfect for CQB in Zone conditions, especially in tight spaces. Can be effectively operated one-handed.

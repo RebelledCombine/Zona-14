@@ -1,10 +1,11 @@
-# Повязки
+# Zona14: translated Russian names/descriptions to English
+# Zona14: Повязки
 - type: entity
   parent: ClothingNeckBase
   id: ClothingBandageStalkerBlue
-  name: синяя повязка
-  description: Синяя повязка на плечо.
-  suffix: Stalker, Повязка
+  name: CS Armband
+  description: An armband to represent CS.
+  suffix: Stalker, Bandage # Zona14: Stalker, Повязка
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_blue.rsi
@@ -14,9 +15,9 @@
 - type: entity
   parent: ClothingNeckBase
   id: ClothingBandageStalkerGreen
-  name: зелёная повязка
-  description: Зелёная поязка на плечо.
-  suffix: Stalker, Повязка
+  name: Freedom Armband
+  description: An armband to represent Freedom.
+  suffix: Stalker, Bandage # Zona14: Stalker, Повязка
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_green.rsi
@@ -26,9 +27,9 @@
 - type: entity
   parent: ClothingNeckBase
   id: ClothingBandageStalkerYellow
-  name: жёлтая повязка
-  description: Жёлтая поязка на плечо.
-  suffix: Stalker, Повязка
+  name: Renegade Armband
+  description: An armband to represent the Renegade.
+  suffix: Stalker, Bandage # Zona14: Stalker, Повязка
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_yellow.rsi
@@ -38,9 +39,9 @@
 - type: entity
   parent: ClothingNeckBase
   id: ClothingBandageStalkerPurple
-  name: фиолетовая повязка
-  description: Фиолетовая поязка на плечо.
-  suffix: Stalker, Повязка
+  name: Ecologist Armband
+  description: An armband to represent the Ecologists.
+  suffix: Stalker, Bandage # Zona14: Stalker, Повязка
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_purple.rsi
@@ -50,9 +51,9 @@
 - type: entity
   parent: ClothingNeckBase
   id: ClothingBandageStalkerRed
-  name: красная повязка
-  description: Красная поязка на плечо.
-  suffix: Stalker, Повязка
+  name: Duty Armband
+  description: An armband to represent Duty.
+  suffix: Stalker, Bandage # Zona14: Stalker, Повязка
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_red.rsi
@@ -62,9 +63,9 @@
 - type: entity
   parent: ClothingNeckBase
   id: ClothingBandageStalkerRus
-  name: повязка с русским флагом
-  description: повязка с русским флагом на плечо.
-  suffix: Stalker, Повязка
+  name: Armband with the Russian flag
+  description: Armband with the Russian flag on the shoulder.
+  suffix: Stalker, Bandage # Zona14: Stalker, Повязка
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_rus.rsi
@@ -74,9 +75,9 @@
 - type: entity
   parent: ClothingNeckBase
   id: ClothingBandageStalkerUk
-  name: повязка с украинским флагом
-  description: повязка с украинским флагом на плечо.
-  suffix: Stalker, Повязка
+  name: Ukrainian Military Armband
+  description: An armband to represent the Ukrainian Military.
+  suffix: Stalker, Bandage # Zona14: Stalker, Повязка
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_uk.rsi
@@ -86,9 +87,9 @@
 - type: entity
   parent: ClothingNeckBase
   id: ClothingBandageStalkerMerc
-  name: повязка наёмников
-  description: повязка с цветом символики наёмников.
-  suffix: Stalker, Повязка
+  name: Mercenary Armband
+  description: An armband to represent the Mercenarys.
+  suffix: Stalker, Bandage # Zona14: Stalker, Повязка
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_merc.rsi
@@ -99,9 +100,9 @@
 - type: entity
   parent: ClothingNeckBase
   id: ClothingBandageStalkerKrest
-  name: повязка с крестом
-  description: повязка с красным крестом на белом фоне.
-  suffix: Stalker, Повязка
+  name: Cross Armband
+  description: Armband with a red cross on a white background.
+  suffix: Stalker, Bandage # Zona14: Stalker, Повязка
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_krest.rsi
@@ -112,9 +113,9 @@
 - type: entity
   parent: ClothingNeckBase
   id: ClothingBandageStalkerPetuh
-  name: повязка с петухом
-  description: повязка с петухом кут - кудаАХ!
-  suffix: Stalker, Повязка
+  name: Rooster Armband
+  description: rooster bandage kut - kudaAH!
+  suffix: Stalker, Bandage # Zona14: Stalker, Повязка
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_petuh.rsi
@@ -124,9 +125,9 @@
 - type: entity
   parent: ClothingNeckBase
   id: ClothingBandageStalkerBelarus
-  name: повязка с беларуским флагом
-  description: повязка с флагом Беларуси.
-  suffix: Stalker, Повязка
+  name: Armband with the Belarusian flag
+  description: Armband with the flag of Belarus.
+  suffix: Stalker, Bandage # Zona14: Stalker, Повязка
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_belarus.rsi
@@ -136,9 +137,9 @@
 - type: entity
   parent: ClothingNeckBase
   id: ClothingBandageStalkerJid
-  name: повязка с израильским флагом
-  description: повязка с флагом Израиля.
-  suffix: Stalker, Повязка
+  name: Israeli flag Armband
+  description: Armband with the flag of Israel.
+  suffix: Stalker, Bandage # Zona14: Stalker, Повязка
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_jid.rsi
@@ -148,9 +149,9 @@
 - type: entity
   parent: ClothingNeckBase
   id: ClothingBandageStalkerWhite
-  name: белая повязка
-  description: белая повязка на плечо.
-  suffix: Stalker, Повязка
+  name: White Armband
+  description: white shoulder band.
+  suffix: Stalker, Bandage # Zona14: Stalker, Повязка
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_white.rsi
@@ -160,9 +161,9 @@
 - type: entity
   parent: ClothingNeckBase
   id: ClothingBandageStalkerPeace
-  name: повязка с флагом мира
-  description: повязка с флагом мира.
-  suffix: Stalker, Повязка
+  name: Peace Flag Armband
+  description: Peace flag Armband.
+  suffix: Stalker, Bandage # Zona14: Stalker, Повязка
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_peace.rsi
@@ -172,9 +173,9 @@
 - type: entity
   parent: ClothingNeckBase
   id: ClothingBandageStalkerEstonia
-  name: повязка с флагом Эстонии
-  description: повязка с флагом Эстонии
-  suffix: Stalker, Повязка
+  name: Estonia Flag Armband
+  description: Armband featuring the Estonian flag.
+  suffix: Stalker, Bandage # Zona14: Stalker, Повязка
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_est.rsi
@@ -184,9 +185,9 @@
 - type: entity
   parent: ClothingNeckBase
   id: ClothingBandageStalkerAustria
-  name: повязка с флагом Австрии
-  description: повязка с флагом Австрии
-  suffix: Stalker, Повязка
+  name: Austria Flag Armband
+  description: Armband featuring the Austrian flag.
+  suffix: Stalker, Bandage # Zona14: Stalker, Повязка
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_avs.rsi
@@ -196,9 +197,9 @@
 - type: entity
   parent: ClothingNeckBase
   id: ClothingBandageStalkerDNR
-  name: повязка с флагом ДНР
-  description: повязка с флагом ДНР
-  suffix: Stalker, Повязка
+  name: DNR Flag Armband
+  description: Armband featuring the DNR flag.
+  suffix: Stalker, Bandage # Zona14: Stalker, Повязка
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_dnr.rsi
@@ -208,9 +209,9 @@
 - type: entity
   parent: ClothingNeckBase
   id: ClothingBandageStalkerGermany
-  name: повязка с флагом Германии
-  description: повязка с флагом Германии
-  suffix: Stalker, Повязка
+  name: Germany Flag Armband
+  description: Armband featuring the German flag.
+  suffix: Stalker, Bandage # Zona14: Stalker, Повязка
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_er.rsi
@@ -220,9 +221,9 @@
 - type: entity
   parent: ClothingNeckBase
   id: ClothingBandageStalkerLNR
-  name: повязка с флагом ЛНР
-  description: повязка с флагом ЛНР
-  suffix: Stalker, Повязка
+  name: LNR Flag Armband
+  description: Armband featuring the LNR flag.
+  suffix: Stalker, Bandage # Zona14: Stalker, Повязка
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_lnr.rsi
@@ -232,9 +233,9 @@
 - type: entity
   parent: ClothingNeckBase
   id: ClothingBandageStalkerMoldova
-  name: повязка с флагом Молдовы
-  description: повязка с флагом Молдовы
-  suffix: Stalker, Повязка
+  name: Moldovan Flag Armband
+  description: Armband featuring the Moldovan flag.
+  suffix: Stalker, Bandage # Zona14: Stalker, Повязка
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_mol.rsi
@@ -244,9 +245,9 @@
 - type: entity
   parent: ClothingNeckBase
   id: ClothingBandageStalkerTransnistria
-  name: повязка с флагом Приднестровья
-  description: повязка с флагом Приднестровья
-  suffix: Stalker, Повязка
+  name: Transnistria Flag Armband
+  description: Armband featuring the Transnistrian flag.
+  suffix: Stalker, Bandage # Zona14: Stalker, Повязка
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_pml.rsi
@@ -256,9 +257,9 @@
 - type: entity
   parent: ClothingNeckBase
   id: ClothingBandageStalkerPoland
-  name: повязка с флагом Польши
-  description: повязка с флагом Польши
-  suffix: Stalker, Повязка
+  name: Polish Flag Armband
+  description: Armband featuring the Polish flag.
+  suffix: Stalker, Bandage # Zona14: Stalker, Повязка
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_pol.rsi
@@ -268,9 +269,9 @@
 - type: entity
   parent: ClothingNeckBase
   id: ClothingBandageStalkerSopOne
-  name: повязка с цифрой 1
-  description: повязка с цифрой 1
-  suffix: Stalker, Повязка
+  name: armband with number 1
+  description: armband with number 1
+  suffix: Stalker, Bandage # Zona14: Stalker, Повязка
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_sop/bandage_one.rsi
@@ -280,9 +281,9 @@
 - type: entity
   parent: ClothingNeckBase
   id: ClothingBandageStalkerSopTwo
-  name: повязка с цифрой 2
-  description: повязка с цифрой 2
-  suffix: Stalker, Повязка
+  name: armband with number 2
+  description: armband with number 2
+  suffix: Stalker, Bandage # Zona14: Stalker, Повязка
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_sop/bandage_two.rsi
@@ -292,9 +293,9 @@
 - type: entity
   parent: ClothingNeckBase
   id: ClothingBandageStalkerSopThree
-  name: повязка с цифрой 3
-  description: повязка с цифрой 3
-  suffix: Stalker, Повязка
+  name: armband with number 3
+  description: armband with number 3
+  suffix: Stalker, Bandage # Zona14: Stalker, Повязка
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_sop/bandage_three.rsi
@@ -304,9 +305,9 @@
 - type: entity
   parent: ClothingNeckBase
   id: ClothingBandageStalkerSopFour
-  name: повязка с цифрой 4
-  description: повязка с цифрой 4
-  suffix: Stalker, Повязка
+  name: armband with number 4
+  description: armband with number 4
+  suffix: Stalker, Bandage # Zona14: Stalker, Повязка
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_sop/bandage_four.rsi
@@ -316,9 +317,9 @@
 - type: entity
   parent: ClothingNeckBase
   id: ClothingBandageStalkerMP
-  name: повязка военной полиции
-  description: повязка военной полиции
-  suffix: Stalker, Повязка
+  name: military police armband
+  description: military police armband
+  suffix: Stalker, Bandage # Zona14: Stalker, Повязка
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_sop/bandage_mp.rsi

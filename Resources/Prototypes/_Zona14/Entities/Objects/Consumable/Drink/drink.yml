@@ -1,0 +1,81 @@
+- type: entity
+  id: Z14STEnergyDrink
+  categories: [ Zona14 ]
+  parent: DrinkCanBaseFull
+  name: energy drink
+  suffix: Z14
+  description: Often used by stalkers on multi-day hikes when there is no opportunity to stop and rest. The drink contains easily digestible carbohydrates, as well as drugs that cause the release of adrenaline into the blood.
+  components:
+  - type: STWeight
+    self: 0.8
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 15
+        reagents:
+        - ReagentId: STTaurine
+          Quantity: 15
+  - type: Sprite
+    sprite: Objects/Consumable/Drinks/energy_drink.rsi
+  - type: Item
+    sprite: Objects/Consumable/Drinks/energy_drink.rsi
+
+- type: entity
+  parent: DrinkBeerCan
+  id: Z14STDrinkBeerCanBaltic
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Baltika beer
+  description: Taste of childhood
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Counsumable/Drinks/baltic.yml
+  - type: Item
+    sprite: _Stalker/Objects/Counsumable/Drinks/baltic.yml
+
+- type: entity
+  parent: Z14STEnergyDrink
+  id: Z14STEnergyDrinkMonster
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Energy Monster
+  description: Unleash the beast
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Counsumable/Drinks/monster.yml
+  - type: Item
+    sprite: _Stalker/Objects/Counsumable/Drinks/monster.yml
+
+- type: entity
+  parent: Z14STEnergyDrink
+  id: Z14STEnergyDrinkRevo
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Energy Revo
+  description: Energy for your party!
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Counsumable/Drinks/revo.yml
+  - type: Item
+    sprite: _Stalker/Objects/Counsumable/Drinks/revo.yml
+
+- type: entity
+  parent: DrinkWaterBottleFull
+  id: Z14DrinkBorodaBottleFull
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Boroda's Tea
+  description: Boroda tea.
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        reagents:
+        - ReagentId: Water
+          Quantity: 20
+        - ReagentId: STTaurine
+          Quantity: 10
+  - type: Sprite
+    sprite: _Stalker/Objects/Counsumable/Drinks/boroda.yml
+  - type: Item
+    sprite: _Stalker/Objects/Counsumable/Drinks/boroda.yml

@@ -1,0 +1,3 @@
+ent-Z14STHeadLight = Налобный фонарик
+    .desc = Надеваеться на ухо...
+    .suffix = Z14

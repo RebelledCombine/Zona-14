@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: STClothingOuterArmorStorageBasic
   id: STClothingOuterIOTVGEN4
   name: IOTV GEN4
-  description: Бронежилет 4 класса защиты.
+  description: Bulletproof vest fitted with tier 4 armored plates.
   suffix: ST, T4, PVP
   components:
   - type: Sprite

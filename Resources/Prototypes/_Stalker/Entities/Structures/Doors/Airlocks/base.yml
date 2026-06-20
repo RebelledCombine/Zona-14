@@ -1,464 +1,465 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: HermoDverTypeOneArmyClosed
-  name: гермодверь Правительства
+  name: Government Hermetic Door
   parent: HermoDverTypeOne
-  description: Защитно-герметические и герметические устройства, которые используются для охраны защитных сооружений гражданской обороны от вредных воздействий различного характера.
-  suffix: ST, mapping, Офицалы
+  description: Protective-hermetic and hermetic devices that are used to protect protective structures of civil defense from harmful effects of various nature.
+  suffix: ST, mapping, Officials # Zona14: ST, mapping, Офицалы
   components:
   - type: AccessReader
     access: [["Military"]]
 
 - type: entity
   id: MetalAltDoorFalloutArmyClosed
-  name: стальная дверь Правительства
+  name: Government Steel Door
   parent: MetalAltDoorFallout
-  description: Крепкая стальная дверь с надёжным замком.
-  suffix: ST, mapping, Офицалы
+  description: Strong steel door with a secure lock.
+  suffix: ST, mapping, Officials # Zona14: ST, mapping, Офицалы
   components:
     - type: AccessReader
       access: [["Military"]]
 
 - type: entity
   id: MetalAltDoorFalloutMilitaryClosed
-  name: стальная дверь ОКСОП
+  name: Military Steel Door
   parent: MetalAltDoorFallout
-  description: Крепкая стальная дверь с надёжным замком.
-  suffix: ST, mapping, Военные
+  description: "{ ent-MetalAltDoorFalloutArmyClosed.desc }"
+  suffix: ST, mapping, Military # Zona14: ST, mapping, Военные
   components:
     - type: AccessReader
       access: [["MilitaryBarraks"]]
 
 - type: entity
   id: MetalAltDoorFalloutMilitaryStalkerClosed
-  name: стальная дверь Военсталов
+  name: Military Stalker Steel Door
   parent: MetalAltDoorFallout
-  description: Крепкая стальная дверь с надёжным замком.
-  suffix: ST, mapping, Военсталы
+  description: "{ ent-MetalAltDoorFalloutArmyClosed.desc }"
+  suffix: ST, mapping, Milstalkers # Zona14: ST, mapping, Военсталы
   components:
     - type: AccessReader
       access: [["MilitaryStalker"]]
 
 - type: entity
   id: MetalAltDoorFalloutMilitaryOfficerClosed
-  name: стальная дверь ОКСОП
+  name: "{ ent-MetalAltDoorFalloutMilitaryClosed }"
   parent: MetalAltDoorFallout
-  description: Крепкая стальная дверь с надёжным замком.
-  suffix: ST, mapping, Военные, Офицер
+  description: "{ ent-MetalAltDoorFalloutArmyClosed.desc }"
+  suffix: ST, mapping, Military, Officer # Zona14: ST, mapping, Военные, Офицер
   components:
     - type: AccessReader
       access: [["MilitaryOfficer"]]
 
 - type: entity
   id: MetalAltDoorFalloutUNClosed
-  name: стальная дверь Миротворцев
+  name: U.N. Steel Door
   parent: MetalAltDoorFallout
-  description: Крепкая стальная дверь с надёжным замком.
-  suffix: ST, mapping, ООН
+  description: "{ ent-MetalAltDoorFalloutArmyClosed.desc }"
+  suffix: ST, mapping, UN # Zona14: ST, mapping, ООН
   components:
     - type: AccessReader
       access: [["UN"]]
 
 - type: entity
   id: MetalAltDoorFalloutBanditClosed
-  name: стальная дверь бандитов
+  name: Bandit Steel Door
   parent: MetalAltDoorFallout
-  description: Крепкая стальная дверь с надёжным замком.
-  suffix: ST, mapping, Бандиты
+  description: "{ ent-MetalAltDoorFalloutArmyClosed.desc }"
+  suffix: ST, mapping, Bandits # Zona14: ST, mapping, Бандиты
   components:
   - type: AccessReader
     access: [["Bandit"]]
 
 - type: entity
   id: MetalGrateDoorFalloutMilitaryClosed
-  name: дверь КПЗ военных
+  name: Military Detention Facility Door
   parent: MetalGrateDoorFallout
-  description: Крепкая решётчатая дверь с надёжным замком.
-  suffix: ST, mapping, Военные
+  description: A strong lattice door with a reliable lock.
+  suffix: ST, mapping, Military # Zona14: ST, mapping, Военные
   components:
     - type: AccessReader
       access: [["MilitaryBarraks"]]
 
 - type: entity
   id: MetalAltDoorFalloutSciClosed
-  name: стальная дверь НИИ ЧАЗ
+  name: Scientist Steel Door
   parent: MetalAltDoorFallout
-  description: Крепкая стальная дверь с надёжным замком.
-  suffix: ST, mapping, Учёные
+  description: "{ ent-MetalAltDoorFalloutArmyClosed.desc }"
+  suffix: ST, mapping, Scientists # Zona14: ST, mapping, Учёные
   components:
     - type: AccessReader
       access: [["SciBase"]]
 
 - type: entity
   id: StalkerGateArmyClosed
-  name: ворота
+  name: Gate
   parent: StalkerGate
-  description: Высокие стальные ворота, через которые вряд-ли получится перемехануть.
-  suffix: ST, mapping, Офицалы, Левая
+  description: High steel gates, through which it is unlikely that you will be able to remove.
+  suffix: ST, mapping, Officials, Left # Zona14: ST, mapping, Офицалы, Левая
   components:
     - type: AccessReader
       access: [["Military"]]
 
 - type: entity
   id: StalkerGaterArmyClosed
-  name: ворота
+  name: "{ ent-StalkerGateArmyClosed }"
   parent: StalkerGater
-  description: Высокие стальные ворота, через которые вряд-ли получится перемехануть.
-  suffix: ST, mapping, Офицалы, Правая
+  description: "{ ent-StalkerGateArmyClosed.desc }"
+  suffix: ST, mapping, Officials, Right # Zona14: ST, mapping, Офицалы, Правая
   components:
     - type: AccessReader
       access: [["Military"]]
 
 - type: entity
   id: HermoDverTypeOneBanditsClosed
-  name: гермодверь
+  name: Hermetic Door
   parent: HermoDverTypeOne
-  description: Защитно-герметические и герметические устройства, которые используются для охраны защитных сооружений гражданской обороны от вредных воздействий различного характера.
-  suffix: ST, mapping, Бандиты
+  description: "{ ent-HermoDverTypeOneArmyClosed.desc }"
+  suffix: ST, mapping, Bandits # Zona14: ST, mapping, Бандиты
   components:
   - type: AccessReader
     access: [["Bandit"]]
 
 - type: entity
   id: HermoDverTypeOneJournalistClosed
-  name: гермодверь
+  name: "{ ent-HermoDverTypeOneBanditsClosed }"
   parent: HermoDverTypeOne
-  description: Защитно-герметические и герметические устройства, которые используются для охраны защитных сооружений гражданской обороны от вредных воздействий различного характера.
-  suffix: ST, mapping, Бандиты
+  description: "{ ent-HermoDverTypeOneArmyClosed.desc }"
+  suffix: ST, mapping, Bandits # Zona14: ST, mapping, Бандиты
   components:
   - type: AccessReader
     access: [["Journalist"]]
 
 - type: entity
   id: HermoDverTypeOneDolgClosed
-  name: гермодверь
+  name: "{ ent-HermoDverTypeOneBanditsClosed }"
   parent: HermoDverTypeOne
-  description: Защитно-герметические и герметические устройства, которые используются для охраны защитных сооружений гражданской обороны от вредных воздействий различного характера.
-  suffix: ST, mapping, Долг
+  description: "{ ent-HermoDverTypeOneArmyClosed.desc }"
+  suffix: ST, mapping, Duty # Zona14: ST, mapping, Долг
   components:
   - type: AccessReader
     access: [["Dolg"] , ["DolgNovice"]]
 
 - type: entity
   id: MetalAltDoorFalloutDolgClosed
-  name: стальная дверь
+  name: steel door
   parent: MetalAltDoorFallout
-  description: Крепкая стальная дверь с надёжным замком.
-  suffix: ST, mapping, Долг
+  description: "{ ent-MetalAltDoorFalloutArmyClosed.desc }"
+  suffix: ST, mapping, Duty # Zona14: ST, mapping, Долг
   components:
     - type: AccessReader
       access: [["Dolg"] , ["DolgNovice"]]
 
 - type: entity
   id: MetalAltDoorFalloutDolgOnlyClosed
-  name: стальная дверь
+  name: steel door
   parent: MetalAltDoorFallout
-  description: Крепкая стальная дверь с надёжным замком.
-  suffix: ST, mapping, Долг
+  description: A sturdy steel door with a reliable lock.
+  suffix: ST, mapping, Duty # Zona14: ST, mapping, Долг
   components:
     - type: AccessReader
       access: [["Dolg"]]
 
 - type: entity
   id: HermoDverTypeOneLibertyClosed
-  name: гермодверь
+  name: "{ ent-HermoDverTypeOneBanditsClosed }"
   parent: HermoDverTypeOne
-  description: Защитно-герметические и герметические устройства, которые используются для охраны защитных сооружений гражданской обороны от вредных воздействий различного характера.
-  suffix: ST, mapping, Свобода
+  description: "{ ent-HermoDverTypeOneArmyClosed.desc }"
+  suffix: ST, mapping, Freedom # Zona14: ST, mapping, Свобода
   components:
   - type: AccessReader
     access: [["Freedom"] , ["FreedomNovice"]]
 
 - type: entity
   id: MetalAltDoorFalloutFreedomClosed
-  name: стальная дверь
+  name: "{ ent-MetalAltDoorFalloutDolgClosed }"
   parent: MetalAltDoorFallout
-  description: Крепкая стальная дверь с надёжным замком.
-  suffix: ST, mapping, Свобода
+  description: "{ ent-MetalAltDoorFalloutArmyClosed.desc }"
+  suffix: ST, mapping, Freedom # Zona14: ST, mapping, Свобода
   components:
     - type: AccessReader
       access: [["Freedom"] , ["FreedomNovice"]]
 
 - type: entity
   id: MetalAltDoorFalloutFreedomOnlyClosed
-  name: стальная дверь
+  name: steel door
   parent: MetalAltDoorFallout
-  description: Крепкая стальная дверь с надёжным замком.
-  suffix: ST, mapping, Свобода
+  description: A sturdy steel door with a reliable lock.
+  suffix: ST, mapping, Freedom # Zona14: ST, mapping, Свобода
   components:
     - type: AccessReader
       access: [["Freedom"]]
 
 
-# Чистому небу
+# Zona14: Чистому небу
 
 - type: entity
   id: HermoDverTypeOneCNClosed
-  name: гермодверь
+  name: "{ ent-HermoDverTypeOneBanditsClosed }"
   parent: HermoDverTypeOne
-  description: Защитно-герметические и герметические устройства, которые используются для охраны защитных сооружений гражданской обороны от вредных воздействий различного характера.
-  suffix: ST, mapping, ЧН
+  description: "{ ent-HermoDverTypeOneArmyClosed.desc }"
+  suffix: ST, mapping, CS # Zona14: ST, mapping, ЧН
   components:
     - type: AccessReader
       access: [["CN"]]
 
 - type: entity
   id: WoodRedDoorCNClosed
-  name: красная деревянная дверь
+  name: red wooden door
   parent: WoodRedDoorFallout
-  description: Деревянная дверь, окрашена в красный цвет. Открывается быстрее обычной двери, с надёжным замком.
-  suffix: ST, mapping, ЧН
+  description: A wooden door painted red. Opens faster than a normal door, with a reliable lock.
+  suffix: ST, mapping, CS # Zona14: ST, mapping, ЧН
   components:
   - type: AccessReader
     access: [["CN"]]
 
 - type: entity
   id: MetalRedDoorFalloutCNClosed
-  name: красная стальная дверь
+  name: red steel door
   parent: MetalRedDoorFallout
-  description: Стальная дверь с надёжным замком. Окрашена в красный цвет.
-  suffix: ST, mapping, ЧН
+  description: A steel door with a reliable lock. Painted red.
+  suffix: ST, mapping, CS # Zona14: ST, mapping, ЧН
   components:
   - type: AccessReader
     access: [["CN"]]
 
 - type: entity
   id: MetalWindowDoorFalloutCNClosed
-  name: стальная дверь
+  name: steel door
   parent: MetalWindowDoorFallout
-  description: Крепкая стальная дверь, с окном и надёжным замком.
-  suffix: ST, mapping, ЧН
+  description: A sturdy steel door with a window and a reliable lock.
+  suffix: ST, mapping, CS # Zona14: ST, mapping, ЧН
   components:
   - type: AccessReader
     access: [["CN"]]
 
 - type: entity
   id: WoodDoorFalloutCN
-  name: Деревянная дверь
+  name: wooden door
   parent: WoodDoorFallout
-  description: Обычная деревянная дверь.
-  suffix: ST, mapping, ЧН
+  description: A regular wooden door.
+  suffix: ST, mapping, CS # Zona14: ST, mapping, ЧН
   components:
   - type: AccessReader
     access: [["CN"]]
 
 - type: entity
   id: STMetalBarDoorFalloutCNClosed
-  name: решетчатая дверь
+  name: barred door
   parent: MetalBarDoorFallout
-  description: Решётчатая дверь с надёжным замком.
-  suffix: ST, mapping, ЧН
+  description: A barred door with a reliable lock.
+  suffix: ST, mapping, CS # Zona14: ST, mapping, ЧН
   components:
   - type: AccessReader
     access: [["CN"]]
 
 - type: entity
   id: MetalAltDoorFalloutCNClosed
-  name: стальная дверь
+  name: "{ ent-MetalWindowDoorFalloutCNClosed }"
   parent: MetalAltDoorFallout
-  description: Крепкая стальная дверь с надёжным замком.
-  suffix: ST, mapping, ЧН
+  description: A sturdy steel door with a reliable lock.
+  suffix: ST, mapping, CS # Zona14: ST, mapping, ЧН
   components:
     - type: AccessReader
       access: [["CN"]]
 
-# Ренегату
+# Zona14: Ренегату
 
 - type: entity
   id: MetalAltDoorFalloutReneClosed
-  name: стальная дверь
+  name: "{ ent-MetalAltDoorFalloutDolgClosed }"
   parent: MetalAltDoorFallout
-  description: Крепкая стальная дверь с надёжным замком.
-  suffix: ST, mapping, Ренегаты
+  description: "{ ent-MetalAltDoorFalloutArmyClosed.desc }"
+  suffix: ST, mapping, Renegades # Zona14: ST, mapping, Ренегаты
   components:
     - type: AccessReader
       access: [["Renegat"]]
 
 - type: entity
   id: MetalAltDoorFalloutDeserterClosed
-  name: стальная дверь
+  name: "{ ent-MetalAltDoorFalloutDolgClosed }"
   parent: MetalAltDoorFallout
-  description: Крепкая стальная дверь с надёжным замком.
-  suffix: ST, mapping, Отступники
+  description: "{ ent-MetalAltDoorFalloutArmyClosed.desc }"
+  suffix: ST, mapping, Renegades # Zona14: ST, mapping, Отступники
   components:
     - type: AccessReader
       access: [["Deserter"]]
 
 - type: entity
   id: HermoDverTypeOneMercClosed
-  name: гермодверь
+  name: "{ ent-HermoDverTypeOneBanditsClosed }"
   parent: HermoDverTypeOne
-  description: Защитно-герметические и герметические устройства, которые используются для охраны защитных сооружений гражданской обороны от вредных воздействий различного характера.
-  suffix: ST, mapping, Наёмники
+  description: "{ ent-HermoDverTypeOneArmyClosed.desc }"
+  suffix: ST, mapping, Mercenaries # Zona14: ST, mapping, Наёмники
   components:
   - type: AccessReader
     access: [["Merc"]]
 
 - type: entity
   id: HermoDverTypeTwoMercClosed
-  name: гермодверь
+  name: "{ ent-HermoDverTypeOneBanditsClosed }"
   parent: HermoDverTypeTwo
-  description: Защитно-герметические и герметические устройства, которые используются для охраны защитных сооружений гражданской обороны от вредных воздействий различного характера.
-  suffix: ST, mapping, Наёмники
+  description: "{ ent-HermoDverTypeOneArmyClosed.desc }"
+  suffix: ST, mapping, Mercenaries # Zona14: ST, mapping, Наёмники
   components:
   - type: AccessReader
     access: [["Merc"]]
 
 - type: entity
   id: MetalDoorFalloutMercClosed
-  name: стальная дверь
+  name: "{ ent-MetalAltDoorFalloutDolgClosed }"
   parent: MetalDoorFallout
-  description: Крепкая стальная дверь с надёжным замком.
-  suffix: ST, mapping, Наёмники
+  description: "{ ent-MetalAltDoorFalloutArmyClosed.desc }"
+  suffix: ST, mapping, Mercenaries # Zona14: ST, mapping, Наёмники
   components:
   - type: AccessReader
     access: [["Merc"]]
 
 - type: entity
   id: MetalAltDoorFalloutMercClosed
-  name: стальная дверь
+  name: "{ ent-MetalAltDoorFalloutDolgClosed }"
   parent: MetalAltDoorFallout
-  description: Крепкая стальная дверь с надёжным замком.
-  suffix: ST, mapping, Наёмники
+  description: "{ ent-MetalAltDoorFalloutArmyClosed.desc }"
+  suffix: ST, mapping, Mercenaries # Zona14: ST, mapping, Наёмники
   components:
   - type: AccessReader
     access: [["Merc"]]
 
 - type: entity
   id: MetalWindowDoorFalloutMercClosed
-  name: стальная дверь
+  name: "{ ent-MetalAltDoorFalloutDolgClosed }"
   parent: MetalWindowDoorFallout
-  description: Крепкая стальная дверь, с окном и надёжным замком.
-  suffix: ST, mapping, Наёмники
+  description: Strong steel door, with a window and a reliable lock.
+  suffix: ST, mapping, Mercenaries # Zona14: ST, mapping, Наёмники
   components:
   - type: AccessReader
     access: [["Merc"]]
 
 - type: entity
   id: MetalGrateDoorFalloutMercClosed
-  name: укрепленная решетчатая дверь
+  name: Reinforced lattice door
   parent: MetalGrateDoorFallout
-  description: Крепкая решётчатая дверь с надёжным замком.
-  suffix: ST, mapping, Наёмники
+  description: "{ ent-MetalGrateDoorFalloutMilitaryClosed.desc }"
+  suffix: ST, mapping, Mercenaries # Zona14: ST, mapping, Наёмники
   components:
   - type: AccessReader
     access: [["Merc"]]
 
 - type: entity
   id: MetalBarDoorFalloutMercClosed
-  name: решетчатая дверь
+  name: Lattice door
   parent: MetalBarDoorFallout
-  description: Решётчатая дверь с надёжным замком.
-  suffix: ST, mapping, Наёмники
+  description: Lattice door with a secure lock.
+  suffix: ST, mapping, Mercenaries # Zona14: ST, mapping, Наёмники
   components:
   - type: AccessReader
     access: [["Merc"]]
 
 - type: entity
   id: MetalDoorFalloutSBUClosed
-  name: стальная дверь
+  name: "{ ent-MetalAltDoorFalloutDolgClosed }"
   parent: MetalDoorFallout
-  description: Крепкая стальная дверь с надёжным замком.
-  suffix: ST, mapping, СБУ
+  description: "{ ent-MetalAltDoorFalloutArmyClosed.desc }"
+  suffix: ST, mapping, SBU # Zona14: ST, mapping, СБУ
   components:
   - type: AccessReader
     access: [["MilitaryHead"]]
 
 - type: entity
   id: MetalAltDoorFalloutSBUClosed
-  name: стальная дверь
+  name: "{ ent-MetalAltDoorFalloutDolgClosed }"
   parent: MetalAltDoorFallout
-  description: Крепкая стальная дверь с надёжным замком.
-  suffix: ST, mapping, СБУ
+  description: "{ ent-MetalAltDoorFalloutArmyClosed.desc }"
+  suffix: ST, mapping, SBU # Zona14: ST, mapping, СБУ
   components:
   - type: AccessReader
     access: [["MilitaryHead"]]
 
 - type: entity
   id: MetalWindowDoorFalloutSBUClosed
-  name: стальная дверь
+  name: "{ ent-MetalAltDoorFalloutDolgClosed }"
   parent: MetalWindowDoorFallout
-  description: Крепкая стальная дверь, с окном и надёжным замком.
-  suffix: ST, mapping, СБУ
+  description: "{ ent-MetalWindowDoorFalloutMercClosed.desc }"
+  suffix: ST, mapping, SBU # Zona14: ST, mapping, СБУ
   components:
   - type: AccessReader
     access: [["MilitaryHead"]]
 
 - type: entity
   id: MetalGrateDoorFalloutSBUClosed
-  name: укрепленная решетчатая дверь
+  name: "{ ent-MetalGrateDoorFalloutMercClosed }"
   parent: MetalGrateDoorFallout
-  description: Крепкая решётчатая дверь с надёжным замком.
-  suffix: ST, mapping, СБУ
+  description: "{ ent-MetalGrateDoorFalloutMilitaryClosed.desc }"
+  suffix: ST, mapping, SBU # Zona14: ST, mapping, СБУ
   components:
   - type: AccessReader
     access: [["MilitaryHead"]]
 
 - type: entity
   id: HermoDverTypeOneGrehClosed
-  name: гермодверь
+  name: "{ ent-HermoDverTypeOneBanditsClosed }"
   parent: HermoDverTypeOne
-  description: Защитно-герметические и герметические устройства, которые используются для охраны защитных сооружений гражданской обороны от вредных воздействий различного характера.
-  suffix: ST, mapping, Грех
+  description: "{ ent-HermoDverTypeOneArmyClosed.desc }"
+  suffix: ST, mapping, Sin # Zona14: ST, mapping, Грех
   components:
   - type: AccessReader
     access: [["Greh"]]
 
 - type: entity
   id: HermoDverTypeTwoGrehClosed
-  name: гермодверь
+  name: "{ ent-HermoDverTypeOneBanditsClosed }"
   parent: HermoDverTypeTwo
-  description: Защитно-герметические и герметические устройства, которые используются для охраны защитных сооружений гражданской обороны от вредных воздействий различного характера.
-  suffix: ST, mapping, Грех
+  description: "{ ent-HermoDverTypeOneArmyClosed.desc }"
+  suffix: ST, mapping, Sin # Zona14: ST, mapping, Грех
   components:
   - type: AccessReader
     access: [["Greh"]]
 
 - type: entity
   id: MetalDoorFalloutGrehClosed
-  name: стальная дверь
+  name: "{ ent-MetalAltDoorFalloutDolgClosed }"
   parent: MetalDoorFallout
-  description: Крепкая стальная дверь с надёжным замком.
-  suffix: ST, mapping, Грех
+  description: "{ ent-MetalAltDoorFalloutArmyClosed.desc }"
+  suffix: ST, mapping, Sin # Zona14: ST, mapping, Грех
   components:
   - type: AccessReader
     access: [["Greh"]]
 
 - type: entity
   id: MetalAltDoorFalloutGrehClosed
-  name: стальная дверь
+  name: "{ ent-MetalAltDoorFalloutDolgClosed }"
   parent: MetalAltDoorFallout
-  description: Крепкая стальная дверь с надёжным замком.
-  suffix: ST, mapping, Грех
+  description: "{ ent-MetalAltDoorFalloutArmyClosed.desc }"
+  suffix: ST, mapping, Sin # Zona14: ST, mapping, Грех
   components:
   - type: AccessReader
     access: [["Greh"]]
 
 - type: entity
   id: MetalWindowDoorFalloutGrehClosed
-  name: стальная дверь
+  name: "{ ent-MetalAltDoorFalloutDolgClosed }"
   parent: MetalWindowDoorFallout
-  description: Крепкая стальная дверь, с окном и надёжным замком.
-  suffix: ST, mapping, Грех
+  description: "{ ent-MetalWindowDoorFalloutMercClosed.desc }"
+  suffix: ST, mapping, Sin # Zona14: ST, mapping, Грех
   components:
   - type: AccessReader
     access: [["Greh"]]
 
 - type: entity
   id: MetalBarDoorFalloutGrehClosed
-  name: решетчатая дверь
+  name: "{ ent-MetalBarDoorFalloutMercClosed }"
   parent: MetalBarDoorFallout
-  description: Решётчатая дверь с надёжным замком.
-  suffix: ST, mapping, Грех
+  description: "{ ent-MetalBarDoorFalloutMercClosed.desc }"
+  suffix: ST, mapping, Sin # Zona14: ST, mapping, Грех
   components:
   - type: AccessReader
     access: [["Greh"]]
 
 - type: entity
   id: MetalDoorFalloutJournalistClosed
-  name: стальная дверь
+  name: "{ ent-MetalAltDoorFalloutDolgClosed }"
   parent: MetalDoorFallout
-  description: Крепкая стальная дверь с надёжным замком.
-  suffix: ST, mapping, Журналисты
+  description: "{ ent-MetalAltDoorFalloutArmyClosed.desc }"
+  suffix: ST, mapping, Journalists # Zona14: ST, mapping, Журналисты
   components:
   - type: AccessReader
     access: [["Journalist"]]
@@ -466,110 +467,110 @@
 
 - type: entity
   id: HermoDverTypeOneSciClosed
-  name: гермодверь
+  name: "{ ent-HermoDverTypeOneBanditsClosed }"
   parent: HermoDverTypeOne
-  description: Защитно-герметические и герметические устройства, которые используются для охраны защитных сооружений гражданской обороны от вредных воздействий различного характера.
-  suffix: ST, mapping, Учёные
+  description: "{ ent-HermoDverTypeOneArmyClosed.desc }"
+  suffix: ST, mapping, Scientists # Zona14: ST, mapping, Учёные
   components:
   - type: AccessReader
     access: [["SciBase"]]
 
 - type: entity
   id: HermoDverTypeTwoSciClosed
-  name: гермодверь
+  name: "{ ent-HermoDverTypeOneBanditsClosed }"
   parent: HermoDverTypeTwo
-  description: Защитно-герметические и герметические устройства, которые используются для охраны защитных сооружений гражданской обороны от вредных воздействий различного характера.
-  suffix: ST, mapping, Учёные
+  description: "{ ent-HermoDverTypeOneArmyClosed.desc }"
+  suffix: ST, mapping, Scientists # Zona14: ST, mapping, Учёные
   components:
   - type: AccessReader
     access: [["SciBase"]]
 
 - type: entity
   id: MetalDoorFalloutSciClosed
-  name: стальная дверь
+  name: "{ ent-MetalAltDoorFalloutDolgClosed }"
   parent: MetalDoorFallout
-  description: Крепкая стальная дверь с надёжным замком.
-  suffix: ST, mapping, Учёные
+  description: "{ ent-MetalAltDoorFalloutArmyClosed.desc }"
+  suffix: ST, mapping, Scientists # Zona14: ST, mapping, Учёные
   components:
   - type: AccessReader
     access: [["SciBase"]]
 
 - type: entity
   id: MetalWindowDoorFalloutSciClosed
-  name: стальная дверь
+  name: "{ ent-MetalAltDoorFalloutDolgClosed }"
   parent: MetalWindowDoorFallout
-  description: Крепкая стальная дверь, с окном и надёжным замком.
-  suffix: ST, mapping, Учёные
+  description: "{ ent-MetalWindowDoorFalloutMercClosed.desc }"
+  suffix: ST, mapping, Scientists # Zona14: ST, mapping, Учёные
   components:
   - type: AccessReader
     access: [["SciBase"]]
 
 - type: entity
   id: MetalGrateDoorFalloutSciClosed
-  name: укрепленная решетчатая дверь
+  name: "{ ent-MetalGrateDoorFalloutMercClosed }"
   parent: MetalGrateDoorFallout
-  description: Крепкая решётчатая дверь с надёжным замком.
-  suffix: ST, mapping, Учёные
+  description: "{ ent-MetalGrateDoorFalloutMilitaryClosed.desc }"
+  suffix: ST, mapping, Scientists # Zona14: ST, mapping, Учёные
   components:
   - type: AccessReader
     access: [["SciBase"]]
 
 - type: entity
   id: MetalBarDoorFalloutSciClosed
-  name: решетчатая дверь
+  name: "{ ent-MetalBarDoorFalloutMercClosed }"
   parent: MetalBarDoorFallout
-  description: Решётчатая дверь с надёжным замком.
-  suffix: ST, mapping, Учёные
+  description: "{ ent-MetalBarDoorFalloutMercClosed.desc }"
+  suffix: ST, mapping, Scientists # Zona14: ST, mapping, Учёные
   components:
   - type: AccessReader
     access: [["SciBase"]]
 
 - type: entity
   id: MetalBarDoorFalloutSciHeadClosed
-  name: гермодверь
+  name: "{ ent-HermoDverTypeOneBanditsClosed }"
   parent: HermoDverTypeOne
-  description: Защитно-герметические и герметические устройства, которые используются для охраны защитных сооружений гражданской обороны от вредных воздействий различного характера.
-  suffix: ST, mapping, Учёные, Лидер
+  description: "{ ent-HermoDverTypeOneArmyClosed.desc }"
+  suffix: ST, mapping, Scientists, Leader # Zona14: ST, mapping, Учёные, Лидер
   components:
   - type: AccessReader
     access: [["SciHead"]]
 
 - type: entity
   id: WoodRedDoorSciHeadClosed
-  name: красная деревянная дверь
+  name: Red Wooden Door
   parent: WoodRedDoorFallout
-  description: Деревянная дверь, окрашена в красный цвет. Открывается быстрее обычной двери, с надёжным замком.
-  suffix: ST, mapping, Учёные, Лидер
+  description: Wooden door, painted red. It opens faster than a regular door, with a reliable lock.
+  suffix: ST, mapping, Scientists, Leader # Zona14: ST, mapping, Учёные, Лидер
   components:
   - type: AccessReader
     access: [["SciHead"]]
 
 - type: entity
   id: MetalRedDoorFalloutSciHeadClosed
-  name: красная стальная дверь
+  name: Red Steel Door
   parent: MetalRedDoorFallout
-  description: Стальная дверь с надёжным замком. Окрашена в красный цвет.
-  suffix: ST, mapping, Учёные, Лидер
+  description: Steel door with a secure lock. It is painted red.
+  suffix: ST, mapping, Scientists, Leader # Zona14: ST, mapping, Учёные, Лидер
   components:
   - type: AccessReader
     access: [["SciHead"]]
 
 - type: entity
   id: MetalDoorFalloutSciHeadClosed
-  name: стальная дверь
+  name: "{ ent-MetalAltDoorFalloutDolgClosed }"
   parent: MetalDoorFallout
-  description: Крепкая стальная дверь с надёжным замком.
-  suffix: ST, mapping, Учёные, Лидер
+  description: "{ ent-MetalAltDoorFalloutArmyClosed.desc }"
+  suffix: ST, mapping, Scientists, Leader # Zona14: ST, mapping, Учёные, Лидер
   components:
   - type: AccessReader
     access: [["SciHead"]]
 
 - type: entity
   id: MilitaryDoor1
-  name: военные ворота
+  name: Military Gate
   parent: STBaseMaterialDoor
-  description: Проезд в стене или ограде, запираемый створами.
-  suffix: ST, mapping, Военные
+  description: A passage in a wall or fence that is locked with alignments.
+  suffix: ST, mapping, Military # Zona14: ST, mapping, Военные
   components:
   - type: Occluder
     boundingBox: "-1.5,-0.5,1.5,0.5"
@@ -591,90 +592,90 @@
 
 - type: entity
   id: MetalWindowDoorFalloutNeutralsClosed
-  name: стальная дверь
+  name: "{ ent-MetalAltDoorFalloutDolgClosed }"
   parent: MetalWindowDoorFallout
-  description: Крепкая стальная дверь, с окном и надёжным замком.
-  suffix: ST, mapping, Нейтралы
+  description: "{ ent-MetalWindowDoorFalloutMercClosed.desc }"
+  suffix: ST, mapping, Neutrals # Zona14: ST, mapping, Нейтралы
   components:
   - type: AccessReader
     access: [["Neutral"]]
 
 - type: entity
   id: STMetalBarDoorFalloutNeutralsClosed
-  name: решетчатая дверь
+  name: "{ ent-MetalBarDoorFalloutMercClosed }"
   parent: MetalBarDoorFallout
-  description: Решётчатая дверь с надёжным замком.
-  suffix: ST, mapping, Нейтралы
+  description: "{ ent-MetalBarDoorFalloutMercClosed.desc }"
+  suffix: ST, mapping, Neutrals # Zona14: ST, mapping, Нейтралы
   components:
   - type: AccessReader
     access: [["Neutral"]]
 
 - type: entity
   id: STHermoDverTypeTwoNeutralsClosed
-  name: гермодверь
+  name: "{ ent-HermoDverTypeOneBanditsClosed }"
   parent: HermoDverTypeTwo
-  description: Защитно-герметические и герметические устройства, которые используются для охраны защитных сооружений гражданской обороны от вредных воздействий различного характера.
-  suffix: ST, mapping, Нейтралы
+  description: "{ ent-HermoDverTypeOneArmyClosed.desc }"
+  suffix: ST, mapping, Neutrals # Zona14: ST, mapping, Нейтралы
   components:
   - type: AccessReader
     access: [["Neutral"]]
 
 - type: entity
   id: STMetalAltDoorFalloutNeutralsClosed
-  name: стальная дверь нейтралов
+  name: Neutral Steel Door
   parent: MetalAltDoorFallout
-  description: Крепкая стальная дверь с надёжным замком.
-  suffix: ST, mapping, Нейтралы
+  description: "{ ent-MetalAltDoorFalloutArmyClosed.desc }"
+  suffix: ST, mapping, Neutrals # Zona14: ST, mapping, Нейтралы
   components:
   - type: AccessReader
     access: [["Neutral"]]
 
 - type: entity
   id: MetalWindowDoorFalloutPoiskClosed
-  name: стальная дверь
+  name: "{ ent-MetalAltDoorFalloutDolgClosed }"
   parent: MetalWindowDoorFallout
-  description: Крепкая стальная дверь, с окном и надёжным замком.
-  suffix: ST, mapping, Поиск
+  description: "{ ent-MetalWindowDoorFalloutMercClosed.desc }"
+  suffix: ST, mapping, Search # Zona14: ST, mapping, Поиск
   components:
   - type: AccessReader
     access: [["Poisk"]]
 
 - type: entity
   id: STMetalBarDoorFalloutPoiskClosed
-  name: решетчатая дверь
+  name: "{ ent-MetalBarDoorFalloutMercClosed }"
   parent: MetalBarDoorFallout
-  description: Решётчатая дверь с надёжным замком.
-  suffix: ST, mapping, Поиск
+  description: "{ ent-MetalBarDoorFalloutMercClosed.desc }"
+  suffix: ST, mapping, Search # Zona14: ST, mapping, Поиск
   components:
   - type: AccessReader
     access: [["Poisk"]]
 
 - type: entity
   id: STHermoDverTypeTwoPoiskClosed
-  name: гермодверь
+  name: "{ ent-HermoDverTypeOneBanditsClosed }"
   parent: HermoDverTypeTwo
-  description: Защитно-герметические и герметические устройства, которые используются для охраны защитных сооружений гражданской обороны от вредных воздействий различного характера.
-  suffix: ST, mapping, Поиск
+  description: "{ ent-HermoDverTypeOneArmyClosed.desc }"
+  suffix: ST, mapping, Search # Zona14: ST, mapping, Поиск
   components:
   - type: AccessReader
     access: [["Poisk"]]
 
 - type: entity
   id: STMetalAltDoorFalloutPoiskClosed
-  name: стальная дверь
+  name: "{ ent-MetalAltDoorFalloutDolgClosed }"
   parent: MetalAltDoorFallout
-  description: Крепкая стальная дверь с надёжным замком.
-  suffix: ST, mapping, Поиск
+  description: "{ ent-MetalAltDoorFalloutArmyClosed.desc }"
+  suffix: ST, mapping, Search # Zona14: ST, mapping, Поиск
   components:
   - type: AccessReader
     access: [["Poisk"]]
 
-# Жабам
+# Zona14: Жабам
 - type: entity
   id: WoodDoorFalloutJaba
-  name: Деревянная дверь
+  name: Wooden Door
   parent: WoodDoorFallout
-  description: Обычная деревянная дверь.
+  description: An ordinary wooden door.
   suffix: ST, mapping, Jaba
   components:
   - type: AccessReader
@@ -682,9 +683,9 @@
 
 - type: entity
   id: MetalDoorFalloutJabaClosed
-  name: стальная дверь
+  name: "{ ent-MetalAltDoorFalloutDolgClosed }"
   parent: MetalDoorFallout
-  description: Крепкая стальная дверь с надёжным замком.
+  description: "{ ent-MetalAltDoorFalloutArmyClosed.desc }"
   suffix: ST, mapping, Jaba
   components:
   - type: AccessReader
@@ -692,9 +693,9 @@
 
 - type: entity
   id: MetalWindowDoorFalloutJabaClosed
-  name: стальная дверь
+  name: "{ ent-MetalAltDoorFalloutDolgClosed }"
   parent: MetalWindowDoorFallout
-  description: Крепкая стальная дверь, с окном и надёжным замком.
+  description: "{ ent-MetalWindowDoorFalloutMercClosed.desc }"
   suffix: ST, mapping, Jaba
   components:
   - type: AccessReader
@@ -702,9 +703,9 @@
 
 - type: entity
   id: STMetalBarDoorFalloutJabaClosed
-  name: решетчатая дверь
+  name: "{ ent-MetalBarDoorFalloutMercClosed }"
   parent: MetalBarDoorFallout
-  description: Решётчатая дверь с надёжным замком.
+  description: "{ ent-MetalBarDoorFalloutMercClosed.desc }"
   suffix: ST, mapping, Jaba
   components:
   - type: AccessReader
@@ -742,12 +743,12 @@
     - type: AccessReader
       access: [["Jaba"]]
 
-# Серафимам
+# Zona14: Серафимам
 - type: entity
   id: WoodDoorFalloutSeraphims
-  name: Деревянная дверь
+  name: "{ ent-WoodDoorFalloutJaba }"
   parent: WoodDoorFallout
-  description: Обычная деревянная дверь.
+  description: "{ ent-WoodDoorFalloutJaba.desc }"
   suffix: ST, mapping, Seraphims
   components:
   - type: AccessReader
@@ -755,9 +756,9 @@
 
 - type: entity
   id: HermoDverTypeOneSeraClosed
-  name: гермодверь
+  name: "{ ent-HermoDverTypeOneBanditsClosed }"
   parent: HermoDverTypeOne
-  description: Защитно-герметические и герметические устройства, которые используются для охраны защитных сооружений гражданской обороны от вредных воздействий различного характера.
+  description: "{ ent-HermoDverTypeOneArmyClosed.desc }"
   suffix: ST, mapping, Seraphims
   components:
     - type: AccessReader
@@ -765,9 +766,9 @@
 
 - type: entity
   id: MetalWindowDoorFalloutSeraphimsClosed
-  name: стальная дверь
+  name: "{ ent-MetalAltDoorFalloutDolgClosed }"
   parent: MetalWindowDoorFallout
-  description: Крепкая стальная дверь, с окном и надёжным замком.
+  description: "{ ent-MetalWindowDoorFalloutMercClosed.desc }"
   suffix: ST, mapping, Seraphims
   components:
   - type: AccessReader
@@ -775,9 +776,9 @@
 
 - type: entity
   id: STMetalBarDoorFalloutSeraphimsClosed
-  name: решетчатая дверь
+  name: "{ ent-MetalBarDoorFalloutMercClosed }"
   parent: MetalBarDoorFallout
-  description: Решётчатая дверь с надёжным замком.
+  description: "{ ent-MetalBarDoorFalloutMercClosed.desc }"
   suffix: ST, mapping, Seraphims
   components:
   - type: AccessReader
@@ -815,34 +816,34 @@
     - type: AccessReader
       access: [["Seraphims"]]
 
-#Паломникам
+# Zona14: Паломникам
 - type: entity
   id: WoodDoorFalloutPilgrim
-  name: Деревянная дверь
+  name: "{ ent-WoodDoorFalloutJaba }"
   parent: WoodDoorFallout
-  description: Обычная деревянная дверь.
+  description: "{ ent-WoodDoorFalloutJaba.desc }"
   suffix: ST, mapping, Pilgrim
   components:
   - type: AccessReader
     access: [["Pilgrim"]]
 
-#Ополчению
+# Zona14: Ополчению
 - type: entity
   id: MetalDoorFalloutOpolchenciClosed
-  name: стальная дверь
+  name: Steel Door
   parent: MetalDoorFallout
-  description: Крепкая стальная дверь с надёжным замком.
+  description: Strong steel door with a secure lock.
   suffix: ST, mapping, Militia
   components:
   - type: AccessReader
     access: [["MilitiaAccess"]]
 
-#Монолиту
+# Zona14: Монолиту
 - type: entity
   id: WoodDoorFalloutMonolith
-  name: Деревянная дверь
+  name: Wooden door
   parent: WoodDoorFallout
-  description: Обычная деревянная дверь.
+  description: A regular wooden door.
   suffix: ST, mapping, Monolith
   components:
   - type: AccessReader
@@ -850,9 +851,9 @@
 
 - type: entity
   id: MetalDoorFalloutMonolithClosed
-  name: стальная дверь
+  name: Steel door
   parent: MetalDoorFallout
-  description: Крепкая стальная дверь с надёжным замком.
+  description: A sturdy steel door with a reliable lock.
   suffix: ST, mapping, Monolith
   components:
   - type: AccessReader
@@ -860,9 +861,9 @@
 
 - type: entity
   id: MetalWindowDoorFalloutMonolithClosed
-  name: стальная дверь
+  name: "{ ent-MetalDoorFalloutMonolithClosed }"
   parent: MetalWindowDoorFallout
-  description: Крепкая стальная дверь, с окном и надёжным замком.
+  description: A sturdy steel door with a window and a reliable lock.
   suffix: ST, mapping, Monolith
   components:
   - type: AccessReader
@@ -870,9 +871,9 @@
 
 - type: entity
   id: STMetalBarDoorFalloutMonolithClosed
-  name: решетчатая дверь
+  name: Grated door
   parent: MetalBarDoorFallout
-  description: Решётчатая дверь с надёжным замком.
+  description: A barred door with a reliable lock.
   suffix: ST, mapping, Monolith
   components:
   - type: AccessReader
@@ -912,274 +913,274 @@
 
 - type: entity
   id: MetalWindowDoorFalloutProjectClosed
-  name: стальная дверь
+  name: "{ ent-MetalAltDoorFalloutDolgClosed }"
   parent: MetalWindowDoorFallout
-  description: Крепкая стальная дверь, с окном и надёжным замком.
-  suffix: ST, mapping, Проект
+  description: "{ ent-MetalWindowDoorFalloutMercClosed.desc }"
+  suffix: ST, mapping, Project # Zona14: ST, mapping, Проект
   components:
   - type: AccessReader
     access: [["Project"]]
 
 - type: entity
   id: STMetalBarDoorFalloutProjectClosed
-  name: решетчатая дверь
+  name: "{ ent-MetalBarDoorFalloutMercClosed }"
   parent: MetalBarDoorFallout
-  description: Решётчатая дверь с надёжным замком.
-  suffix: ST, mapping, Проект
+  description: "{ ent-MetalBarDoorFalloutMercClosed.desc }"
+  suffix: ST, mapping, Project # Zona14: ST, mapping, Проект
   components:
   - type: AccessReader
     access: [["Project"]]
 
 - type: entity
   id: STHermoDverTypeTwoProjectClosed
-  name: гермодверь
+  name: "{ ent-HermoDverTypeOneBanditsClosed }"
   parent: HermoDverTypeTwo
-  description: Защитно-герметические и герметические устройства, которые используются для охраны защитных сооружений гражданской обороны от вредных воздействий различного характера.
-  suffix: ST, mapping, Проект
+  description: "{ ent-HermoDverTypeOneArmyClosed.desc }"
+  suffix: ST, mapping, Project # Zona14: ST, mapping, Проект
   components:
   - type: AccessReader
     access: [["Project"]]
 
 - type: entity
   id: STMetalAltDoorFalloutProjectClosed
-  name: стальная дверь
+  name: "{ ent-MetalAltDoorFalloutDolgClosed }"
   parent: MetalAltDoorFallout
-  description: Крепкая стальная дверь с надёжным замком.
-  suffix: ST, mapping, Проект
+  description: "{ ent-MetalAltDoorFalloutArmyClosed.desc }"
+  suffix: ST, mapping, Project # Zona14: ST, mapping, Проект
   components:
   - type: AccessReader
     access: [["Project"]]
 
 - type: entity
   id: STMetalDoorFalloutProjectOrchestratorClosed
-  name: стальная дверь
+  name: "{ ent-MetalAltDoorFalloutDolgClosed }"
   parent: MetalAltDoorFallout
-  description: Крепкая стальная дверь с надёжным замком.
-  suffix: ST, mapping, Оркестратор Проекта
+  description: "{ ent-MetalAltDoorFalloutArmyClosed.desc }"
+  suffix: ST, mapping, Orchestrator of Project # Zona14: ST, mapping, Оркестратор Проекта
   components:
   - type: AccessReader
     access: [["ProjectOrchestrator"]]
 
 - type: entity
   id: HermoDverTypeOneCircusClosed
-  name: гермодверь
+  name: hermetic door
   parent: HermoDverTypeOne
-  description: Защитно-герметические и герметические устройства, которые используются для охраны защитных сооружений гражданской обороны от вредных воздействий различного характера.
-  suffix: ST, mapping, Циркачи
+  description: Protective-hermetic and hermetic devices used to safeguard civil defense protective structures from various harmful effects.
+  suffix: ST, mapping, Circus # Zona14: ST, mapping, Циркачи
   components:
   - type: AccessReader
     access: [["Circus"]]
 
 - type: entity
   id: HermoDverTypeTwoCircusClosed
-  name: гермодверь
+  name: hermetic door
   parent: HermoDverTypeTwo
-  description: Защитно-герметические и герметические устройства, которые используются для охраны защитных сооружений гражданской обороны от вредных воздействий различного характера.
-  suffix: ST, mapping, Циркачи
+  description: Protective-hermetic and hermetic devices used to safeguard civil defense protective structures from various harmful effects.
+  suffix: ST, mapping, Circus # Zona14: ST, mapping, Циркачи
   components:
   - type: AccessReader
     access: [["Circus"]]
 
 - type: entity
   id: MetalDoorFalloutCircusClosed
-  name: стальная дверь
+  name: steel door
   parent: MetalDoorFallout
-  description: Крепкая стальная дверь с надёжным замком.
-  suffix: ST, mapping, Циркачи
+  description: A sturdy steel door with a reliable lock.
+  suffix: ST, mapping, Circus # Zona14: ST, mapping, Циркачи
   components:
   - type: AccessReader
     access: [["Circus"]]
 
 - type: entity
   id: MetalWindowDoorFalloutCircusClosed
-  name: стальная дверь
+  name: steel door
   parent: MetalWindowDoorFallout
-  description: Крепкая стальная дверь, с окном и надёжным замком.
-  suffix: ST, mapping, Циркачи
+  description: A sturdy steel door with a window and a reliable lock.
+  suffix: ST, mapping, Circus # Zona14: ST, mapping, Циркачи
   components:
   - type: AccessReader
     access: [["Circus"]]
 
 - type: entity
   id: MetalGrateDoorFalloutCircusClosed
-  name: укрепленная решетчатая дверь
+  name: reinforced grated door
   parent: MetalGrateDoorFallout
-  description: Крепкая решётчатая дверь с надёжным замком.
-  suffix: ST, mapping, Циркачи
+  description: A sturdy grated door with a reliable lock.
+  suffix: ST, mapping, Circus # Zona14: ST, mapping, Циркачи
   components:
   - type: AccessReader
     access: [["Circus"]]
 
 - type: entity
   id: MetalBarDoorFalloutCircusClosed
-  name: решетчатая дверь
+  name: grated door
   parent: MetalBarDoorFallout
-  description: Решётчатая дверь с надёжным замком.
-  suffix: ST, mapping, Циркачи
+  description: A grated door with a reliable lock.
+  suffix: ST, mapping, Circus # Zona14: ST, mapping, Циркачи
   components:
   - type: AccessReader
     access: [["Circus"]]
 
-# Свобода и наемники
+# Zona14: Свобода и наемники
 
 - type: entity
   id: HermoDverTypeOneMercAndFreedomClosed
-  name: гермодверь
+  name: Hermetic Door
   parent: HermoDverTypeOne
-  description: Защитно-герметические и герметические устройства, которые используются для охраны защитных сооружений гражданской обороны от вредных воздействий различного характера.
-  suffix: ST, mapping, Свобода
+  description: "{ ent-HermoDverTypeOneArmyClosed.desc }"
+  suffix: ST, mapping, Freedom # Zona14: ST, mapping, Свобода
   components:
   - type: AccessReader
     access: [["Freedom"] , ["FreedomNovice"]]
 
 - type: entity
   id: HermoDverTypeTwoMercAndFreedomClosed
-  name: гермодверь
+  name: Hermetic Door
   parent: HermoDverTypeTwo
-  description: Защитно-герметические и герметические устройства, которые используются для охраны защитных сооружений гражданской обороны от вредных воздействий различного характера.
-  suffix: ST, mapping, Свобода
+  description: "{ ent-HermoDverTypeOneArmyClosed.desc }"
+  suffix: ST, mapping, Freedom # Zona14: ST, mapping, Свобода
   components:
   - type: AccessReader
     access: [["Freedom"] , ["FreedomNovice"]]
 
 - type: entity
   id: MetalDoorFalloutMercAndFreedomClosed
-  name: стальная дверь
+  name: Steel Door
   parent: MetalDoorFallout
-  description: Крепкая стальная дверь с надёжным замком.
-  suffix: ST, mapping, Свобода
+  description: "{ ent-MetalAltDoorFalloutArmyClosed.desc }"
+  suffix: ST, mapping, Freedom # Zona14: ST, mapping, Свобода
   components:
   - type: AccessReader
     access: [["Freedom"] , ["FreedomNovice"]]
 
 - type: entity
   id: MetalAltDoorFalloutMercAndFreedomClosed
-  name: стальная дверь
+  name: Steel Door
   parent: MetalAltDoorFallout
-  description: Крепкая стальная дверь с надёжным замком.
-  suffix: ST, mapping, Свобода
+  description: "{ ent-MetalAltDoorFalloutArmyClosed.desc }"
+  suffix: ST, mapping, Freedom # Zona14: ST, mapping, Свобода
   components:
   - type: AccessReader
     access: [["Freedom"] , ["FreedomNovice"]]
 
 - type: entity
   id: MetalWindowDoorFalloutMercAndFreedomClosed
-  name: стальная дверь
+  name: Steel Door
   parent: MetalWindowDoorFallout
-  description: Крепкая стальная дверь, с окном и надёжным замком.
-  suffix: ST, mapping, Свобода
+  description: "{ ent-MetalAltDoorFalloutArmyClosed.desc }"
+  suffix: ST, mapping, Freedom # Zona14: ST, mapping, Свобода
   components:
   - type: AccessReader
     access: [["Freedom"] , ["FreedomNovice"]]
 
 - type: entity
   id: MetalGrateDoorFalloutMercAndFreedomClosed
-  name: укрепленная решетчатая дверь
+  name: Reinforced lattice door
   parent: MetalGrateDoorFallout
-  description: Крепкая решётчатая дверь с надёжным замком.
-  suffix: ST, mapping, Свобода
+  description: A strong lattice door with a reliable lock.
+  suffix: ST, mapping, Freedom # Zona14: ST, mapping, Свобода
   components:
   - type: AccessReader
     access: [["Freedom"] , ["FreedomNovice"]]
 
 - type: entity
   id: MetalBarDoorFalloutMercAndFreedomClosed
-  name: решетчатая дверь
+  name: "{ ent-MetalBarDoorFalloutMercClosed }"
   parent: MetalBarDoorFallout
-  description: Решётчатая дверь с надёжным замком.
-  suffix: ST, mapping, Свобода
+  description: Lattice door with a secure lock.
+  suffix: ST, mapping, Freedom # Zona14: ST, mapping, Свобода
   components:
   - type: AccessReader
     access: [["Freedom"] , ["FreedomNovice"]]
 
-# ветерану
+# Zona14: ветерану
 
 - type: entity
   id: HermoDverTypeOneVeteranClosed
-  name: гермодверь
+  name: hermetic door
   parent: HermoDverTypeOne
-  description: Защитно-герметические и герметические устройства, которые используются для охраны защитных сооружений гражданской обороны от вредных воздействий различного характера.
-  suffix: ST, mapping, Ветераны
+  description: Protective-hermetic and hermetic devices used to safeguard civil defense protective structures from various harmful effects.
+  suffix: ST, mapping, Veterans # Zona14: ST, mapping, Ветераны
   components:
     - type: AccessReader
       access: [["Veteran"]]
 
 - type: entity
   id: WoodRedDoorVeteranClosed
-  name: красная деревянная дверь
+  name: red wooden door
   parent: WoodRedDoorFallout
-  description: Деревянная дверь, окрашена в красный цвет. Открывается быстрее обычной двери, с надёжным замком.
-  suffix: ST, mapping, Ветераны
+  description: A wooden door painted red. Opens faster than a regular door, with a reliable lock.
+  suffix: ST, mapping, Veterans # Zona14: ST, mapping, Ветераны
   components:
   - type: AccessReader
     access: [["Veteran"]]
 
 - type: entity
   id: MetalRedDoorFalloutVeteranClosed
-  name: красная стальная дверь
+  name: red steel door
   parent: MetalRedDoorFallout
-  description: Стальная дверь с надёжным замком. Окрашена в красный цвет.
-  suffix: ST, mapping, Ветераны
+  description: A steel door with a reliable lock. Painted red.
+  suffix: ST, mapping, Veterans # Zona14: ST, mapping, Ветераны
   components:
   - type: AccessReader
     access: [["Veteran"]]
 
 - type: entity
   id: MetalWindowDoorFalloutVeteranClosed
-  name: стальная дверь
+  name: steel door
   parent: MetalWindowDoorFallout
-  description: Крепкая стальная дверь, с окном и надёжным замком.
-  suffix: ST, mapping, Ветераны
+  description: A sturdy steel door with a window and a reliable lock.
+  suffix: ST, mapping, Veterans # Zona14: ST, mapping, Ветераны
   components:
   - type: AccessReader
     access: [["Veteran"]]
 
 - type: entity
   id: WoodDoorFalloutVeteran
-  name: Деревянная дверь
+  name: wooden door
   parent: WoodDoorFallout
-  description: Обычная деревянная дверь.
-  suffix: ST, mapping, Ветераны
+  description: An ordinary wooden door.
+  suffix: ST, mapping, Veterans # Zona14: ST, mapping, Ветераны
   components:
   - type: AccessReader
     access: [["Veteran"]]
 
 - type: entity
   id: STMetalBarDoorFalloutVeteranClosed
-  name: решетчатая дверь
+  name: grated door
   parent: MetalBarDoorFallout
-  description: Решётчатая дверь с надёжным замком.
-  suffix: ST, mapping, Ветераны
+  description: A grated door with a reliable lock.
+  suffix: ST, mapping, Veterans # Zona14: ST, mapping, Ветераны
   components:
   - type: AccessReader
     access: [["Veteran"]]
 
 - type: entity
   id: MetalAltDoorFalloutVeteranClosed
-  name: стальная дверь
+  name: steel door
   parent: MetalAltDoorFallout
-  description: Крепкая стальная дверь с надёжным замком.
-  suffix: ST, mapping, Ветераны
+  description: A sturdy steel door with a reliable lock.
+  suffix: ST, mapping, Veterans # Zona14: ST, mapping, Ветераны
   components:
     - type: AccessReader
       access: [["Veteran"]]
 
 - type: entity
   id: MetalAltDoorFalloutGuideClosed
-  name: стальная дверь
+  name: steel door
   parent: MetalAltDoorFallout
-  description: Крепкая стальная дверь с надёжным замком.
-  suffix: ST, mapping, Проводник
+  description: A sturdy steel door with a reliable lock.
+  suffix: ST, mapping, Guide # Zona14: ST, mapping, Проводник
   components:
     - type: AccessReader
       access: [["Guide"]]
 
 - type: entity
   id: MetalAltDoorFalloutAtomClosed
-  name: стальная дверь
+  name: steel door
   parent: MetalAltDoorFallout
-  description: Крепкая стальная дверь с надёжным замком.
-  suffix: ST, mapping, Атом
+  description: A sturdy steel door with a reliable lock.
+  suffix: ST, mapping, Atom # Zona14: ST, mapping, Атом
   components:
     - type: AccessReader
       access: [["Atom"]]

@@ -35,7 +35,7 @@ public sealed class CardBinSystem : EntitySystem
         {
             args.Verbs.Add(new Verb()
             {
-                Text = Loc.GetString("Перемешать карты"),
+                Text = Loc.GetString("st-cards-shuffle"), // Zona14: localized
                 Icon = new SpriteSpecifier.Texture(new("/Textures/Interface/VerbIcons/dot.svg.192dpi.png")),
                 Act = () => Mix(uid),
                 Impact = LogImpact.Medium

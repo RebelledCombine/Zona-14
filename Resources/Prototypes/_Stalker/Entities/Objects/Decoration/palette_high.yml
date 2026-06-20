@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: PaletteHighStalker
   parent: PaletteStalker
   suffix: ST, Mapping
-  name: поддон с кирпичами
-  description: Платформа, на которую уложены глинянные кирпичи для удобства транспортировки.
+  name: pallet with bricks
+  description: A platform on which clay bricks are laid for easy transportation.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Other/palette_high.rsi
@@ -20,8 +21,8 @@
 - type: entity
   id: PaletteHighStalker3
   parent: PaletteHighStalker
-  name: Поддоны
-  description: Поддоны сложенные друг на друга для удобства транспортировки.
+  name: Pallets
+  description: Pallets stacked on top of each other for easy transport.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Other/palette_high.rsi
@@ -50,8 +51,8 @@
 - type: entity
   id: PaletteHighStalker5
   parent: PaletteHighStalker4
-  name: поддон с цементом
-  description: Платформа, на которую уложены мешки цемента для удобства транспортировки.
+  name: Cement Pallet
+  description: A platform on which bags of cement are stacked for easy transport.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Other/palette_high.rsi

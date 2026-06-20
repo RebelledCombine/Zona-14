@@ -1,0 +1,45 @@
+- type: entity
+  parent: STCartridge545PC
+  id: Z14Bullet545
+  categories: [ Zona14 ]
+  name: 5.45x39 bullet
+  description: Local currency.
+  suffix: Z14
+  components:
+  - type: PhysicalComposition
+    materialComposition:
+      Credit: 1
+  - type: Stack
+    stackType: Bullet545
+    count: 1
+    baseLayer: base
+  - type: Appearance
+  - type: Tag
+    tags:
+    - Bullet545
+    - Cartridge
+    - STCartridge545
+  - type: StaticPrice
+    price: 0
+
+- type: currency
+  id: Z14Bullet545
+  displayName: store-currency-display-bullet-545
+  cash:
+    1: Bullet545
+  canWithdraw: true
+
+- type: stack
+  id: Z14Bullet545
+  name: stack-bullet-545
+  icon: { sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi, state: base }
+  spawn: Bullet545
+
+- type: entity
+  parent: Bullet545
+  id: Z14Bullet54515
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Stack
+    count: 15

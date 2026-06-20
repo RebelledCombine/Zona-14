@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   abstract: true
   parent: STClothingHeadBase
   id: STClothingHeadHelmetEnvironmentT3Base
-  name: база шлема защиты от окружения T3
+  name: T3 Environment Protection Helmet Base
   suffix: ST, T3, Env
   components:
   - type: Craftable
@@ -29,8 +30,8 @@
 - type: entity
   parent: STClothingHeadHelmetEnvironmentT3Base
   id: ClothingHeadHelmetBerill5MMilitary
-  name: шлем «Сфера-08»
-  description: Шлем удачливых вояк и военсталов, разработанный для защиты от колющих атак. Является шлемом от «Берилл-5М».
+  name: Sphere-08 helmet
+  description: Sphere-08 helmet used by the Ukrainian Military. Lighter than other Class 3 helmets, it trades some ballistic protection for limited psi-shielding. Modified with a small headlamp.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/hats/berill5m_helm_military.rsi
@@ -93,8 +94,8 @@
 - type: entity
   parent: STClothingHeadHelmetCombatT2Base
   id: ClothingHeadHelmetBerill5MMonolith
-  name: шлем «Сфера-08» монолита
-  description: Шлем тех самых фанатиков, разработанный для защиты от колющих атак. Является шлемом от «Берилл-5М». Класс брони - 3.
+  name: Sphere-08 helmet
+  description: Sphere-08 helmet used by Monolith cultists. Lighter than other Class 3 helmets, it trades some ballistic protection for limited psi-shielding, which is unfortunately lost on its fanatical users.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/hats/berill5m_helm_monolith.rsi
@@ -108,8 +109,8 @@
 - type: entity
   parent: STClothingHeadHelmetEnvironmentT3Base
   id: ClothingHeadHelmetBerill5MDolg
-  name: шлем «Каланча»
-  description: Эта модель является модификацией армейского шлема Сфера-08, для группировки Долг. Обеспечивает защиту 3 класса, позволяя выдерживать тупые удары, осколки и в какой-то мере пули 1 и 2 класса пробития. Надёжный шлем, по достойной цене.
+  name: Sphere-08 "Tower" helmet
+  description: Sphere-08 helmet used by Duty fighters. Lighter than other Class 3 helmets, it trades some ballistic protection for limited psi-shielding. Modified with a ballistic face mask.
   components:
   - type: Sprite
     sprite: _Stalker_EN/Objects/Clothing/hats/berill5m_helm_dolg.rsi
@@ -119,8 +120,8 @@
 - type: entity
   parent: STClothingHeadHelmetEnvironmentT3Base
   id: ClothingHeadHelmetAborigine
-  name: Шлем "Туземец"
-  description: Эта модель является модификацией армейского шлема Сфера-08, для группировки Свобода. Обеспечивает защиту 3 класса, позволяя выдерживать тупые удары, осколки и в какой-то мере пули 1 и 2 класса пробития. Надёжный шлем, по достойной цене.
+  name: Sphere-08 "Turtle" helmet
+  description: Sphere-08 helmet used by Freedom fighters. Lighter than other Class 3 helmets, it trades some ballistic protection for limited psi-shielding. Modified with a Flecktarn pattern helmet cover.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/hats/aborigine_stalker.rsi
@@ -131,8 +132,8 @@
   parent: ClothingHeadHelmetBerill5MMilitary
   id: ClothingHeadHelmetBerill5MProject
   suffix: ST, T3, Env, Project
-  name: Модифицированный шлем «Сфера-08»
-  description: Модифицированная версия шлема «Сфера-08» с улучшенными защитными характеристиками. Её кто-то выкрасил в фиолетовый. Является шлемом от «Берилл-5М». Класс брони - 3.
+  name: modified "Sfera-08" helmet
+  description: A modified version of the "Sfera-08" helmet with improved protective characteristics. Someone has painted it purple. It is the helmet from the "Beryl-5M". Armor class 3.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/hats/berill5m_helm_project.rsi
@@ -155,9 +156,9 @@
 - type: entity
   parent: ClothingHeadHelmetBerill5MMilitary
   id: ClothingHeadHelmetBereza
-  name: Сфера-8 «Листок»
-  suffix: ST, Кастомка
-  description: Защитный шлем «Сфера-8», модифицированный и перешитый в камуфляж «Берёза». Обеспечивает надёжную защиту головы от пуль и осколков при сохранении. Оснащён боковым фонарём для работы в условиях низкой освещённости. По состоянию изношен, но уровень защиты не потерял.
+  name: Sfera-8 "Listok"
+  suffix: ST, Custom # Zona14: ST, Кастомка
+  description: A "Sfera-8" protective helmet, modified and reskinned in "Bereza" camouflage. Provides reliable protection of the head from bullets and shrapnel while maintaining its integrity. Equipped with a side flashlight for working in low-light conditions. Worn by use, but has not lost its level of protection.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/hats/sphere_bereza.rsi

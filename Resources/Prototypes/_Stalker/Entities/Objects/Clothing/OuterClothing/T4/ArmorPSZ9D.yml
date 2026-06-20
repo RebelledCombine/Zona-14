@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: STClothingOuterArmorVeryHeavy
   id: ClothingOuterArmorPSZ9D
-  name: ПСЗ-9Д Долга
-  description: Костюм Специального Назначения.
+  name: PSZ-9d "Duty Armor"
+  description: This early model of the Duty bodysuit is the Spetsnaz PSZ-9 body armor modified for the Zone. The suit is capable of stopping a rifle bullet, however, this level of protection comes at the cost of its weight, bulkiness and virtually non-existent anomaly protection.
   suffix: ST, T4, PvE
   components:
   - type: STWeight
@@ -30,8 +31,8 @@
 - type: entity
   parent: ClothingOuterArmorPSZ9D
   id: STClothingOuterArmorHeavySera
-  name: бронированный комбинезон OP-14 'Серафимов'
-  description: Создан на основе обыкновенного комбинезона, бронированный потому что повышена защита броневыми пластинами от большинства физических повреждений. Так-же увеличивает вес, но предоставленая отличная защита от снарядов для таких комбенизонов как этот.
+  name: OP-14 'Seraphim' Armored Coveralls
+  description: Based on a common jumpsuit, armored because it has increased protection from most physical damage by the armor plates. It also adds weight, but provides excellent projectile protection for combines such as this one.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/outerClothing/serafim-T4PVE.rsi

@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 #7.62x25
 
 - type: entity
   id: Bullet725PGL
-  name: bullet (7.62х25 rifle)
+  name: bullet (7.62x25 rifle)
   parent: STBasePistolBullet
   categories: [ HideSpawnMenu ]
   components:
@@ -18,7 +19,7 @@
 
 - type: entity
   id: Bullet725PTGJ
-  name: bullet (7.62х25 rifle)
+  name: "{ ent-Bullet725PGL }"
   parent: STBasePistolBullet
   categories: [ HideSpawnMenu ]
   components:
@@ -30,7 +31,7 @@
 
 - type: entity
   id: Bullet725LRNPC
-  name: bullet (7.62х25 rifle)
+  name: "{ ent-Bullet725PGL }"
   parent: STBasePistolBullet
   categories: [ HideSpawnMenu ]
   components:
@@ -45,7 +46,7 @@
 
 - type: entity
   id: Bullet725PSTGJ
-  name: bullet (7.62х25 rifle)
+  name: "{ ent-Bullet725PGL }"
   parent: STBasePistolBullet
   categories: [ HideSpawnMenu ]
   components:

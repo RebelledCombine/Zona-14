@@ -1,7 +1,8 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: Base556Mag10
-  name: магазин 5,56 (10)
-  description: Магазин 5,56 для штурмовых винтовок. Вместимость пуль 10. Продают пустым.
+  name: Magazine 5.56 (10)
+  description: 5.56 magazine for assault rifles. Bullet capacity 10. They sell empty.
   parent: Base545Mag10
   suffix: Stalker
   components:
@@ -63,8 +64,8 @@
 
 - type: entity
   id: 556Mag20
-  name: магазин 5,56 (20)
-  description: Магазин 5,56 для штурмовых винтовок. Вместимость пуль 20. Продают пустым.
+  name: Magazine 5.56 (20)
+  description: 5.56 magazine for assault rifles. Bullet capacity 20. They sell empty.
   parent: Base556Mag10
   suffix: Stalker
   components:
@@ -112,8 +113,8 @@
 
 - type: entity
   id: 556Mag30
-  name: магазин 5,56 (30)
-  description: Магазин 5,56 для штурмовых винтовок. Вместимость пуль 30. Продают пустым.
+  name: Magazine 5.56 (30)
+  description: 5.56 magazine for assault rifles. Bullet capacity 30. They sell empty.
   parent: Base556Mag10
   suffix: Stalker
   components:
@@ -161,8 +162,8 @@
 
 - type: entity
   id: 556Mag45
-  name: магазин 5,56 (45)
-  description: Магазин 5,56 для штурмовых винтовок. Вместимость пуль 45. Продают пустым.
+  name: Magazine 5.56 (45)
+  description: 5.56 magazine for assault rifles. Bullet capacity 45. They sell empty.
   parent: Base556Mag10
   suffix: Stalker
   components:
@@ -210,8 +211,8 @@
 
 - type: entity
   id: 556Mag60
-  name: магазин 5,56 (60)
-  description: Магазин 5,56 для штурмовых винтовок. Вместимость пуль 60. Продают пустым.
+  name: Magazine 5.56 (60)
+  description: 5.56 magazine for assault rifles. Bullet capacity 60. They sell empty.
   parent: Base556Mag10
   suffix: Stalker
   components:
@@ -259,8 +260,8 @@
 
 - type: entity
   id: 556box249
-  name: короб M249 (5,56)
-  description: Короб 5,56 для пулемёта M249. Вместимость пуль 100. Продают пустым.
+  name: box M249 (5.56)
+  description: 5.56 box for the M249 machine gun. Bullet capacity 100. They sell empty.
   parent: MagazineLightRifleBox
   components:
     - type: STWeight

@@ -1,3 +1,4 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: ClosetStalkerBase
   parent: BaseStructure
@@ -84,8 +85,8 @@
     stateDoorClosed: generic_door
 
 - type: entity
-  name: синий шкаф
-  description: Хозяйственный металлический шкафчик неплохо сохранился для своих лет, а также достаточно вместителен.
+  name: blue locker
+  description: A household metal locker that has survived well for its age and is quite spacious.
   id: LockerBig
   parent: ClosetStalkerBase
   suffix: ST, Mapping
@@ -96,8 +97,8 @@
     stateDoorClosed: lockerbig_door
 
 - type: entity
-  name: синий шкаф
-  description: Хозяйственный металлический шкафчик неплохо сохранился для своих лет, а также достаточно вместителен.
+  name: blue locker
+  description: A household metal locker that has survived well for its age and is quite spacious.
   id: LockerBigOne
   parent: ClosetStalkerBase
   suffix: ST, Mapping

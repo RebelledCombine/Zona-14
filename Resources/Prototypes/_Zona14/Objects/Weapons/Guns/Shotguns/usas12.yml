@@ -1,0 +1,22 @@
+- type: entity
+  parent: STBaseWeaponShotgunUSAS
+  id: Z14STWeaponShotgunUSAS
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: USAS-12 Auto Shotgun
+  description: Military-grade automatic shotgun with terrifying firepower. Considered overkill in the Zone - can literally 'erase' targets. Only used by experienced stalkers.
+
+- type: entity
+  parent: STBaseWeaponShotgunUSAS
+  id: Z14STWeaponShotgunUSASCovenant
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: USAS-12 "Covenant"
+  description: Exclusive USAS-12 variant with unique camouflage used by Covenant faction. Retains all devastating power of original.
+  components:
+    - type: Clothing
+      sprite: _Stalker/Objects/Weapons/Guns/Shotguns/usas/covenant_usas.rsi
+    - type: Item
+      sprite: _Stalker/Objects/Weapons/Guns/Shotguns/usas/covenant_usas.rsi
+    - type: Sprite
+      sprite: _Stalker/Objects/Weapons/Guns/Shotguns/usas/covenant_usas.rsi

@@ -1,0 +1,223 @@
+- type: entity
+  abstract: true
+  parent: Z14GasMaskBase
+  id: Z14STClothingMaskGasStandardT1Base
+  categories: [ Zona14 ]
+  name: T1 Standard Radiation Mask Base
+  components:
+  - type: Tag
+    tags:
+      - BlockMask
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/mask/gasmask_exoskelet.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/mask/gasmask_exoskelet.rsi
+  - type: IngestionBlocker
+  - type: IdentityBlocker
+  - type: HideLayerClothing
+    hideOnToggle: true
+
+- type: entity
+  parent: Z14STClothingMaskGasStandardT1Base
+  id: Z14ClothingMaskGasZarya
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: standard stalker gas mask
+  description: Cheap and effective. Protects from radiation.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/mask/gasmask_stalker.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/mask/gasmask_stalker.rsi
+
+- type: entity
+  parent: Z14STClothingMaskGasStandardT1Base
+  id: Z14ClothingMaskGasZaryaMono
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Monolens stalker gas mask
+  description: Cheap and effective. Protects from radiation. Distinctive mono-lens.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/mask/gasmask_stalker_mono.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/mask/gasmask_stalker_mono.rsi
+
+- type: entity
+  parent: Z14STClothingMaskGasStandardT1Base
+  id: Z14ClothingMaskGasExs
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: standard exoskeleton gas mask
+  description: No armor at all, even though it's from an exo.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/mask/gasmask_exoskelet.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/mask/gasmask_exoskelet.rsi
+
+- type: entity
+  parent: Z14STClothingMaskGasStandardT1Base
+  id: Z14ClothingMaskGasMono
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: standard Monolith gas mask
+  description: Hides eyes and evil thoughts. Protects from radiation.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/mask/gasmask_monolith.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/mask/gasmask_monolith.rsi
+  - type: PersonalDamage
+    damage:
+      types:
+        Radiation: 9
+
+- type: entity
+  parent: Z14STClothingMaskGasStandardT1Base
+  id: Z14ClothingMaskGasMercStalker
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Standard Mercenary Gas Mask
+  description: Hides eyes and evil thoughts. Protects from radiation.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/mask/gasmask_merc.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/mask/gasmask_merc.rsi
+
+- type: entity
+  parent: Z14STClothingMaskGasStandardT1Base
+  id: Z14ClothingMaskGasChN
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Standard Clear Sky Gas Mask
+  description: Perhaps a brilliant scientist is behind it, but more likely just a walking club. Protects from radiation.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/mask/gasmask_cn.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/mask/gasmask_cn.rsi
+
+  - type: HideLayerClothing
+    slots:
+    - Snout
+    - HeadTop
+    - HeadSide
+    - FacialHair
+
+- type: entity
+  parent: Z14STClothingMaskGasStandardT1Base
+  id: Z14ClothingMaskGasSera
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: standard Seraphim gas mask
+  description: Protects from questions about religion, and from radiation.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/mask/gasmask_sera.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/mask/gasmask_sera.rsi
+
+  - type: HideLayerClothing
+    slots:
+    - Snout
+    - HeadTop
+    - HeadSide
+    - FacialHair
+
+- type: entity
+  parent: Z14STClothingMaskGasStandardT1Base
+  id: Z14ClothingMaskGasDolg1
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: standard 'Duty' gas mask
+  description: He's unlikely to destroy the Zone, but he's trying hard. Protects from radiation.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/mask/gasmask_dolg1.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/mask/gasmask_dolg1.rsi
+
+- type: entity
+  parent: Z14STClothingMaskGasStandardT1Base
+  id: Z14ClothingMaskGasFreedom
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: standard Volia gas mask
+  description: Alas, not in the factory. Protects from radiation.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/mask/gasmask_freedom.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/mask/gasmask_freedom.rsi
+
+- type: entity
+  parent: Z14STClothingMaskGasStandardT1Base
+  id: Z14ClothingMaskGasRenegats
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Rogue Standard Gas Mask
+  description: Cheap and effective. Protects from radiation, still good at protecting from their own chemicals.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/mask/gasmask_renegat.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/mask/gasmask_renegat.rsi
+
+- type: entity
+  parent: Z14STClothingMaskGasStandardT1Base
+  id: Z14ClothingMaskGasAnomalists
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: standard anomalists gas mask
+  description: Perhaps there is an outstanding fisherman behind him. Protects against radiation.
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/mask/gasmask_cn.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/mask/gasmask_cn.rsi
+
+- type: entity
+  parent: Z14STClothingMaskGasStandardT1Base
+  id: Z14ClothingMaskGasMarlya
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Marlya Gas Mask
+  description: A green gauze bandage designed to protect respiratory organs from radioactive dust. Better than nothing.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/mask/marlya.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/mask/marlya.rsi
+
+- type: entity
+  parent: Z14STClothingMaskGasStandardT1Base
+  id: Z14ClothingMaskGasMarlyaRuined
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Dusty Gauze Mask
+  description: A dusty gauze bandage that turned gray from the enormous amount of radioactive dust that passed through it. Better nothing than this.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/mask/marlya_ruined.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/mask/marlya_ruined.rsi
+
+  - type: PersonalDamage
+    damage:
+      types:
+        Radiation: 9
+
+- type: entity
+  parent: Z14STClothingMaskGasStandardT1Base
+  id: Z14ClothingMaskGasSeraFirstborn
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Firstborn gas mask
+  description: An old gas mask with a green four-pointed star drawn on it — the sacred symbol of the Seraphim.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/mask/gasmask_firstbornsera.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/mask/gasmask_firstbornsera.rsi

@@ -1,6 +1,7 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: BulletGrenadeVOG25
-  name: ВОГ-25
+  name: VOG-25
   parent: BaseBulletTrigger
   categories: [ HideSpawnMenu ]
   components:
@@ -17,7 +18,7 @@
 
 - type: entity
   id: BulletGrenadeVOG25P
-  name: ВОГ-25П
+  name: VOG-25P
   parent: BaseBulletTrigger
   categories: [ HideSpawnMenu ]
   components:
@@ -34,7 +35,7 @@
 
 - type: entity
   id: BulletGrenadeVOG25Gvozd
-  name: ВОГ-25 гвоздь
+  name: VOG-25 Nail
   parent: BaseBulletTrigger
   categories: [ HideSpawnMenu ]
   components:
@@ -53,7 +54,7 @@
 
 - type: entity
   id: BulletGrenadeVDG40
-  name: ВДГ-40
+  name: VDG-40
   parent: BaseBulletTrigger
   categories: [ HideSpawnMenu ]
   components:

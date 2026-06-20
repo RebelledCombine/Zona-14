@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: CartonBoxWithLoot1
   parent: WoodenBoxWithLoot
-  name: старая картонная коробка
+  name: old cardboard box
   suffix: Stalker
-  description: Картонная коробка, только старая. Если постараться, то с помощью небольших усилий можно её сломать. Интересно, лежит ли что-то внутри?
+  description: Cardboard box, old only. If you try, then with a little effort you can break it. I wonder if there is something inside?
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Furniture/carton_box.rsi

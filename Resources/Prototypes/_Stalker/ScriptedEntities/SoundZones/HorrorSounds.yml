@@ -1,7 +1,8 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: STHorrorTrigger
   parent: MarkerBase
-  name: Падение камушков в пещере
+  name: falling pebbles in a cave
   description: Make a Sound and Text.
   suffix: Stalker SoundsTriggers
   components:

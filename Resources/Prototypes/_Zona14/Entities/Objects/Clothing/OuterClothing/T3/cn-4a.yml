@@ -1,0 +1,17 @@
+- type: entity
+  parent: Z14ArmorBaseT1PvP
+  id: Z14STClothingOuterArmorCN-4a
+  categories: [ Zona14 ]
+  name: CN-4A Seva Suit
+  description: An unofficial SEVA scientific suit for Clear Sky research teams, smuggled into the Zone. Still smells of the mainland.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/seva_cn.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/seva_cn.rsi
+  - type: ToggleableClothing
+    clothingPrototype: Z14STClothingHeadHardsuitSevaHelmBase
+    slot: head
+
+  - type: Craftable

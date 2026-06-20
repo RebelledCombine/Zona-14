@@ -1,0 +1,5 @@
+- type: localizedDataset
+  id: Z14STFishSize
+  values:
+    prefix: stalker-fish-size-
+    count: 17

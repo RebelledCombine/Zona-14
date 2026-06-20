@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   abstract: true
   parent: STClothingHeadBase
   id: STClothingHeadHelmetCombatT5Base
-  name: база боевого шлема T5
+  name: T5 Combat Helmet Base
   suffix: ST, T5, Combat
   components:
   - type: STWeight
@@ -27,8 +28,8 @@
 - type: entity
   parent: STClothingHeadHelmetCombatT5Base
   id: STClothingHeadHelmetFASTNeutralBlack
-  name: черный шлем «FAST»
-  description: Защищающий от режущего и тупого урона
+  name: FAST Helmet (Black)
+  description: Provides protection against cutting and blunt damage
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/hats/fast_helm_neutral_black.rsi

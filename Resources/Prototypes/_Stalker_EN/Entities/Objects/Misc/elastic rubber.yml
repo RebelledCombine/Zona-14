@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: STBaseItem
   id: STElasticRubberRed
-  name: красная элластичная резинка
-  description: По какой-то причине, глядя на них, единственная идея, которая приходит на ум, - это натянуть их на свой магазин.
+  name: red elastic band
+  description: For some reason, looking at them, the only idea that comes to mind is to stretch one over your magazine.
   components:
   - type: Sprite
     sprite: _Stalker_EN/Objects/Misc/elastic_rubber.rsi
@@ -16,8 +17,8 @@
 - type: entity
   parent: STBaseItem
   id: STElasticRubberGreen
-  name: зелёная элластичная резинка
-  description: По какой-то причине, глядя на них, единственная идея, которая приходит на ум, - это натянуть их на свой магазин.
+  name: green elastic band
+  description: For some reason, looking at them, the only idea that comes to mind is to stretch one over your magazine.
   components:
   - type: Sprite
     sprite: _Stalker_EN/Objects/Misc/elastic_rubber.rsi
@@ -31,8 +32,8 @@
 - type: entity
   parent: STBaseItem
   id: STElasticRubberBlue
-  name: синяя элластичная резинка
-  description: По какой-то причине, глядя на них, единственная идея, которая приходит на ум, - это натянуть их на свой магазин.
+  name: blue elastic band
+  description: For some reason, looking at them, the only idea that comes to mind is to stretch one over your magazine.
   components:
   - type: Sprite
     sprite: _Stalker_EN/Objects/Misc/elastic_rubber.rsi

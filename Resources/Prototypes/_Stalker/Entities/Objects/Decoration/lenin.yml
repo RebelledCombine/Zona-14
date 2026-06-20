@@ -1,7 +1,8 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: STStatueLenin
   parent: STBaseStructure
-  name: Статуя Ленина
+  name: Lenin Statue
   suffix: ST, mapping  
   components:
   - type: SpriteFade

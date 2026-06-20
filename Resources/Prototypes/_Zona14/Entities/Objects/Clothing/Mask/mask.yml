@@ -1,0 +1,206 @@
+- type: entity
+  parent: ClothingMaskPullableBase
+  id: Z14ClothingMaskNeckFacemask
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: mask
+  description: Face protective mask connectable to an air supply source.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/mask/facemask1.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/mask/facemask1.rsi
+  - type: IngestionBlocker
+  - type: IdentityBlocker
+  - type: Tag
+    tags:
+    - WhitelistChameleon
+
+- type: entity
+  parent: ClothingMaskBase
+  id: Z14ClothingMaskNeckBlackFace
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: mask
+  description: A mask with openings for eyes and nose.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/mask/blackface.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/mask/blackface.rsi
+  - type: IngestionBlocker
+  - type: IdentityBlocker
+  - type: HideLayerClothing
+    slots:
+    - Hair
+    # - FacialHair
+
+- type: entity
+  parent: ClothingMaskBase
+  id: Z14ClothingMaskNeckBloodSucker
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Bloodsucker Mask
+  description: A mask with a bloodsucker's face, of unknown origin.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/mask/bloodsucker.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/mask/bloodsucker.rsi
+  - type: IngestionBlocker
+  - type: IdentityBlocker
+  - type: HideLayerClothing
+    slots:
+    - Hair
+    # - FacialHair
+
+- type: entity
+  parent: ClothingMaskBase
+  id: Z14ClothingGagMuteStalker
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: gag
+  description: Designed to shut someone's mouth.
+  components:
+  - type: Item
+    size: Tiny
+  - type: Sprite
+    sprite: Clothing/Mask/muzzle.rsi
+  - type: Clothing
+    sprite: Clothing/Mask/muzzle.rsi
+  - type: IngestionBlocker
+  - type: AddAccentClothing
+    accent: ReplacementAccent
+    replacement: mumble
+
+- type: entity
+  parent: ClothingMaskBase
+  id: Z14ClothingMaskGreh
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Sin Mask
+  description: Sinners hide their ugly face behind it.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/mask/mask_greh.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/mask/mask_greh.rsi
+  - type: BreathMask
+  - type: IdentityBlocker
+  - type: Tag
+    tags:
+    - GrehCanTakeOnly
+  - type: Unremoveable
+
+- type: entity
+  parent: ClothingMaskBase
+  id: Z14ClothingMaskNeckFacemaskJoker
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Joker Mask
+  description: It conceals a cold-blooded killer, or just an ordinary psycho.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/mask/joker_mask.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/mask/joker_mask.rsi
+  - type: IngestionBlocker
+  - type: IdentityBlocker
+  - type: HideLayerClothing
+    slots:
+    - Hair
+    # - FacialHair
+
+- type: entity
+  parent: ClothingMaskBase
+  id: Z14ClothingMaskSkull
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Skull Mask
+  description: Looks terrifying, as if a depressed personality hides behind it.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/mask/mask_skull.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/mask/mask_skull.rsi
+  - type: BreathMask
+  - type: IdentityBlocker
+  - type: HideLayerClothing
+    slots:
+    - Hair
+    # - FacialHair
+
+- type: entity
+  parent: ClothingMaskBase
+  id: Z14ClothingMaskRenegate
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: "'Buffalo' welding helmet"
+  description: A welding mask turned weapon. Metal, horns, orange stripes — everything screams aggression. Looking this opponent in the face is already half the battle lost.
+  components:
+  - type: STWeight
+    self: 3
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/mask/tegilla_rene.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/mask/tegilla_rene.rsi
+  - type: Tag
+    tags:
+      - BlockMask
+  - type: HideLayerClothing
+    slots:
+    - Snout
+
+- type: entity
+  parent: ClothingMaskPullableBase
+  id: Z14ClothingMaskNeckFacemaskDS
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: mask
+  description: Black face protective mask
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/mask/facemaskDS.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/mask/facemaskDS.rsi
+  - type: IngestionBlocker
+  - type: IdentityBlocker
+  - type: Tag
+    tags:
+    - WhitelistChameleon
+
+- type: entity
+  parent: ClothingMaskBase
+  id: Z14STClothingMaskKufei
+  categories: [ Zona14 ]
+  name: Seraphim kufei
+  suffix: Z14
+  description: Lightweight fabric designed for head covering and face concealment, easy to breathe and move in.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/mask/kufei_sera.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/mask/kufei_sera.rsi
+  - type: IngestionBlocker
+  - type: IdentityBlocker
+  - type: HideLayerClothing
+    slots:
+    - Hair
+
+- type: entity
+  parent: ClothingMaskBase
+  id: Z14STClothingMaskLimaKufei
+  categories: [ Zona14 ]
+  name: Seraphim kufiyeh
+  suffix: Z14
+  description: Lightweight gray fabric designed to be worn on the head and cover the face, easy to breathe and move in.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/mask/kufei_limasera.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/mask/kufei_limasera.rsi
+  - type: IngestionBlocker
+  - type: IdentityBlocker
+  - type: HideLayerClothing
+    slots:
+    - Hair

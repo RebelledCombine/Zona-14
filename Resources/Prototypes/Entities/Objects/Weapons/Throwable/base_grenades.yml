@@ -18,7 +18,7 @@
   - type: TimerTrigger
     delay: 3
   - type: RepositoryItem # Stalker-Changes
-    categoryName: Оружие
+    categoryName: Weapons # Zona14: Оружие
   - type: Damageable
     damageContainer: Inorganic
   - type: Destructible

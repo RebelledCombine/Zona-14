@@ -1,10 +1,11 @@
+# Zona14: translated Russian names/descriptions to English
 
 - type: entity
   parent: BaseItem
   id: CraftLeatherbox
-  name: набор для обработки шкур
-  description: Набор с средствами и инструментами для обработки и дубления шкур.
-  suffix: Stalker, крафт
+  name: Skin Processing Kit
+  description: A set with tools and tools for processing and tanning hides.
+  suffix: Stalker, craft # Zona14: Stalker, крафт
   components:
   - type: STWeight
     self: 2.5
@@ -18,14 +19,14 @@
     state: leatherbox
   - type: Craftable
   - type: RepositoryItem
-    categoryName: Крафты
+    categoryName: Crafting # Zona14: Крафты
 
 - type: entity
   parent: BaseCraftTool
   id: BoltCutter
-  name: резак проволки
-  description: режет решётки
-  suffix: Stalker, Инструменты
+  name: wire cutter
+  description: cuts grates
+  suffix: Stalker, Tools # Zona14: Stalker, Инструменты
   components:
   - type: STWeight
     self: 3
@@ -54,14 +55,14 @@
       path: /Audio/Items/ratchet.ogg
   - type: Craftable
   - type: RepositoryItem
-    categoryName: Инструменты
+    categoryName: Tools # Zona14: Инструменты
 
 - type: entity
   parent: BaseCraftTool
   id: RazorWire
-  name: моток колючей проволоки
-  description: Моток колючки для восстановления Периметра силами военных. Надеюсь что ваши вороватые ручонки обрежутся.
-  suffix: Stalker, Инструменты
+  name: coil of barbed wire
+  description: Coil of thorns to rebuild the Perimeter by the military. I hope that your thieving hands will be cut off.
+  suffix: Stalker, Tools # Zona14: Stalker, Инструменты
   components:
   - type: STWeight
     self: 5
@@ -77,15 +78,15 @@
   - type: Craftable
 
 
-###############Инструменты
+# Zona14: ##############Инструменты
 
 
 - type: entity
   parent: BaseCraftTool
   id: ToolkitTearOne
-  name: инструменты для грубой работы
-  description: Набор инструментов "Юный техник". В наличии все необходимые для слесарной работы инструменты. Для опытного техника такой набор необходим для самых простых апгрейдов брони и оружия. Для обычного сталкера станет удобным инструментом при создании самых простых вещей.
-  suffix: Stalker, Инструменты
+  name: tools for rough work
+  description: Young Technician Toolbox. All the tools necessary for locksmith work are available. For an experienced technician, such a set is necessary for the simplest upgrades of armor and weapons. For an ordinary stalker, it will be a convenient tool when creating the simplest things.
+  suffix: Stalker, Tools # Zona14: Stalker, Инструменты
   components:
   - type: STWeight
     self: 5
@@ -118,14 +119,14 @@
         ents: []
   - type: Craftable
   - type: RepositoryItem
-    categoryName: Инструменты
+    categoryName: Tools # Zona14: Инструменты
 
 - type: entity
   parent: BaseCraftTool
   id: ToolkitTearTwo
-  name: инструменты для тонкой работы
-  description: Неплохой набор инструментов. Судя по всему, тщательно подобран опытным мастером «под себя, родного». Несмотря на годы, весь инструментарий хорошо сохранился.
-  suffix: Stalker, Инструменты
+  name: tools for fine work
+  description: Not a bad toolset. Apparently, it was carefully selected by an experienced master "for himself, his dear". Despite the years, all the tools are well preserved.
+  suffix: Stalker, Tools # Zona14: Stalker, Инструменты
   components:
   - type: STWeight
     self: 8
@@ -158,14 +159,14 @@
         ents: []
   - type: Craftable
   - type: RepositoryItem
-    categoryName: Инструменты
+    categoryName: Tools # Zona14: Инструменты
 
 - type: entity
   parent: BaseCraftTool
   id: ToolkitTearThree
-  name: инструменты для калибровки
-  description: Профессиональный набор инструментов для тонкой доводки оборудования. Надпись на ящике гласит, что набор произведён в ГДР. Того, что включено в комплект, достаточно для проведения почти любых работ по настройке и калибровке.
-  suffix: Stalker, Инструменты
+  name: calibration tools
+  description: "Professional Fine-Tuning Toolkit. The inscription on the box says that the set was made in the GDR. What's included in the kit is enough to carry out almost any setup and calibration work."
+  suffix: Stalker, Tools # Zona14: Stalker, Инструменты
   components:
   - type: STWeight
     self: 3
@@ -198,7 +199,7 @@
         ents: []
   - type: Craftable
   - type: RepositoryItem
-    categoryName: Инструменты
+    categoryName: Tools # Zona14: Инструменты
 
 
 
@@ -207,9 +208,9 @@
 - type: entity
   parent: BaseItem
   id: STCraftMortarAndPestle
-  name: ступка и пестик
-  description: сначало человек придумал измельчать камнем. на следующий день он придумал измельчать двумя камнями
-  suffix: Stalker, Инструменты
+  name: mortar and pestle
+  description: At first, man came up with the idea of grinding with a stone. The next day he came up with the idea of grinding with two stones
+  suffix: Stalker, Tools # Zona14: Stalker, Инструменты
   components:
     - type: STWeight
       self: 1
@@ -222,13 +223,13 @@
       state: mortar_and_pestle
     - type: Craftable
     - type: RepositoryItem
-      categoryName: Инструменты
+      categoryName: Tools # Zona14: Инструменты
 
 - type: entity
   parent: BaseItem
   id: CraftSaw
-  name: пила
-  suffix: Stalker, Инструменты
+  name: saw
+  suffix: Stalker, Tools # Zona14: Stalker, Инструменты
   components:
     - type: STWeight
       self: 1.5
@@ -243,13 +244,13 @@
         - 0,0,1,0
     - type: Craftable
     - type: RepositoryItem
-      categoryName: Инструменты
+      categoryName: Tools # Zona14: Инструменты
 
 - type: entity
-  name: бензопила
+  name: chainsaw
   parent: BaseItem
   id: ChainsawStalker
-  description: Разновидность ручной цепной пилы, снабжённая двигателем внутреннего сгорания, как правило, двухтактным.
+  description: A type of manual chainsaw equipped with an internal combustion engine, usually a two-stroke engine.
   components:
   - type: STWeight
     self: 4.5
@@ -298,13 +299,13 @@
     delay: 1
   - type: Craftable
   - type: RepositoryItem
-    categoryName: Инструменты
+    categoryName: Tools # Zona14: Инструменты
 
 - type: entity
-  name: циркулярная пила
+  name: circular saw
   id: SawStalker
   parent: Saw
-  description: Режущий инструмент в виде плоского металлического диска, на внешней кромке которого расположены зубья.
+  description: A cutting tool in the form of a flat metal disc with teeth on the outer edge.
   components:
   - type: STWeight
     self: 3.5
@@ -352,15 +353,15 @@
     delay: 1
   - type: Craftable
   - type: RepositoryItem
-    categoryName: Инструменты
+    categoryName: Tools # Zona14: Инструменты
 
-# Утилиты
+# Zona14: Утилиты
 
 - type: entity
-  name: Лопата для тайников
+  name: Cache shovel
   parent: Shovel
   id: AAAAStalkerLopata
-  description: Для тайников
+  description: A shovel for digging up hidden caches.
   components:
     - type: StalkerShovel
       canPlow: False

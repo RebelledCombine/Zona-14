@@ -1,0 +1,177 @@
+- type: entity
+  parent: Z14ArmorBaseT1PvP
+  id: Z14STClothingOuterArmorVeryHeavy
+  categories: [ Zona14 ]
+  name: KSN-13 Behemoth
+  description: Special Purpose Suit Behemoth, used by government operatives in the CEZ.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/begemot_armor.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/begemot_armor.rsi
+  - type: ToggleableClothing
+    clothingPrototype: Z14ClothingHeadHatHoodMerc
+    slot: head
+
+- type: entity
+  parent: Z14STClothingOuterArmorVeryHeavy
+  id: Z14STClothingOuterArmorVeryHeavySci
+  categories: [ Zona14 ]
+  name: KSN-13-M
+  description: Special Purpose Suit Behemoth, used by government operatives in the CEZ.
+  suffix: Z14
+  components:
+  - type: STWeight
+    self: 5
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/begemotM.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/begemotM.rsi
+  - type: Armor
+    modifiers:
+      flatReductions:
+        Blunt: 2
+        Slash: 2
+        Piercing: 2
+        Heat: 1
+        Cold: 1
+        Shock: 1
+        Radiation: 1
+        Caustic: 1
+        Compression: 1
+        Psy: 1
+      coefficients:
+        Blunt: 0.90
+        Slash: 0.90
+        Piercing: 0.90
+        Heat: 0.90
+        Cold: 0.90
+        Shock: 0.90
+        Radiation: 0.90
+        Caustic: 0.90
+        Compression: 0.90
+        Psy: 0.90
+  - type: GrantsArtifactSlots
+    slots: 4 # Stalker-Changes | Number of artifact slots this armor grants
+- type: entity
+  parent: Z14STClothingOuterArmorVeryHeavy
+  id: Z14STClothingOuterArmorVeryHeavyFreedom
+  categories: [ Zona14 ]
+  name: KSN-13 "Begemot" of Freedom
+  description: Special Purpose Suit Behemoth, modified by Freedom faction.
+  suffix: Z14
+  components:
+  - type: STWeight
+    self: 5
+  - type: Armor
+    modifiers:
+      flatReductions:
+        Blunt: 2
+        Slash: 2
+        Piercing: 2
+        Heat: 1
+        Cold: 1
+        Shock: 1
+        Radiation: 1
+        Caustic: 1
+        Compression: 1
+        Psy: 1
+      coefficients:
+        Blunt: 0.90
+        Slash: 0.90
+        Piercing: 0.90
+        Heat: 0.90
+        Cold: 0.90
+        Shock: 0.90
+        Radiation: 0.90
+        Caustic: 0.90
+        Compression: 0.90
+        Psy: 0.90
+  - type: GrantsArtifactSlots
+    slots: 4 # Stalker-Changes | Number of artifact slots this armor grants
+  - type: Reflect
+    reflectProb: 0.06
+    spread: 360
+    reflects:
+      - NonEnergy
+    soundOnReflect: /Audio/_Stalker/Effects/sear.ogg
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/begemot_freedom.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/begemot_freedom.rsi
+
+
+- type: entity
+  parent: Z14STClothingOuterArmorVeryHeavy
+  id: Z14STClothingOuterArmorGonchiy
+  categories: [ Zona14 ]
+  name: '"Gonchiy" armor suit'
+  description: A suit with camouflage elements designed for fast and comfortable movement in the Zone, at the cost of protection.
+  suffix: Z14
+  components:
+  - type: STWeight
+    self: 5
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/gonchiy.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/gonchiy.rsi
+  - type: ToggleableClothing
+    clothingPrototype: STClothingHeadHardsuitGonchiy
+    slot: head
+  - type: ClothingSpeedModifier
+    walkModifier: 1.1
+    sprintModifier: 1.1
+  - type: Armor
+    modifiers:
+      flatReductions:
+        Blunt: 2
+        Slash: 2
+        Piercing: 2
+        Heat: 1
+        Cold: 1
+        Shock: 1
+        Radiation: 1
+        Caustic: 1
+        Compression: 1
+        Psy: 1
+      coefficients:
+        Blunt: 0.90
+        Slash: 0.90
+        Piercing: 0.90
+        Heat: 0.90
+        Cold: 0.90
+        Shock: 0.90
+        Radiation: 0.90
+        Caustic: 0.90
+        Compression: 0.90
+        Psy: 0.90
+  - type: GrantsArtifactSlots
+    slots: 4 # Stalker-Changes | Number of artifact slots this armor grants
+- type: entity
+  parent: ClothingHeadHardsuitBase
+  id: Z14STClothingHeadHardsuitGonchiy
+  suffix: Z14
+  name: gonchiy helmet #base
+  description: Helmet from the Hound kit.
+  categories: [ HideSpawnMenu, Zona14 ]
+  components:
+  - type: STWeight
+    self: 1
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/gonchiy_helm.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/gonchiy_helm.rsi
+  - type: BreathMask
+  - type: IngestionBlocker
+  - type: IdentityBlocker
+  - type: Tag
+    tags:
+      - BlockMask
+  - type: PressureProtection
+    highPressureMultiplier: 0.1
+    lowPressureMultiplier: 1000
+  - type: HideLayerClothing
+    slots:
+    - Hair
+    - Snout

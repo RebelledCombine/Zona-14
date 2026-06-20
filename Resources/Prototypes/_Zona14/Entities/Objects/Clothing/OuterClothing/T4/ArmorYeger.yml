@@ -1,0 +1,123 @@
+- type: entity
+  parent: STClothingOuterBaseLargeToggleable
+  id: Z14ClothingOuterArmorYeger
+  categories: [ Zona14 ]
+  name: Jaeger
+  description: A suit developed by anomalists for combat in anomalous zones. Anomaly-treated for excellent bullet resistance.
+  suffix: Z14
+  components:
+  - type: STWeight
+    self: 5
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/yeger.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/yeger.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetYeger
+    slot: head
+  - type: Armor
+    modifiers:
+      flatReductions:
+        Blunt: 2
+        Slash: 2
+        Piercing: 2
+        Heat: 1
+        Cold: 1
+        Shock: 1
+        Radiation: 1
+        Caustic: 1
+        Compression: 1
+        Psy: 1
+      coefficients:
+        Blunt: 0.90
+        Slash: 0.90
+        Piercing: 0.90
+        Heat: 0.90
+        Cold: 0.90
+        Shock: 0.90
+        Radiation: 0.90
+        Caustic: 0.90
+        Compression: 0.90
+        Psy: 0.90
+  - type: GrantsArtifactSlots
+    slots: 4 # Stalker-Changes | Number of artifact slots this armor grants
+- type: entity
+  parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
+  id: Z14ClothingHeadHelmetYeger
+  name: Jaeger Helmet
+  description: Protects from anomalies and radiation, but definitely not from bullets.
+  suffix: Z14
+  categories: [ HideSpawnMenu, Zona14 ]
+  components:
+  - type: STWeight
+    self: 1
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/yeger_helm.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/yeger_helm.rsi
+  - type: IdentityBlocker
+  - type: IngestionBlocker
+  - type: PressureProtection
+    highPressureMultiplier: 0.1
+    lowPressureMultiplier: 1000
+  - type: PointLight
+    color: "#f9ffaf"
+  - type: HideLayerClothing
+    slots:
+    - Hair
+
+# Freedom - 1 +
+
+- type: entity
+  parent: Z14ClothingOuterArmorYeger
+  id: Z14ClothingOuterArmorYegerFreedom
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Kikimora costume
+  description: The universal Kikimora suit, made by craftsmen from various protective suits. Allows comfortable operation in anomalous areas. Bullet protection included. Camouflage netting sewn on top.
+  components:
+  - type: STWeight
+    self: 5
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/yeger-freedom.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/yeger-freedom.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetYegerFreedom
+  - type: Armor
+    modifiers:
+      flatReductions:
+        Blunt: 2
+        Slash: 2
+        Piercing: 2
+        Heat: 1
+        Cold: 1
+        Shock: 1
+        Radiation: 1
+        Caustic: 1
+        Compression: 1
+        Psy: 1
+      coefficients:
+        Blunt: 0.90
+        Slash: 0.90
+        Piercing: 0.90
+        Heat: 0.90
+        Cold: 0.90
+        Shock: 0.90
+        Radiation: 0.90
+        Caustic: 0.90
+        Compression: 0.90
+        Psy: 0.90
+- type: entity
+  parent: Z14ClothingHeadHelmetYeger
+  id: Z14ClothingHeadHelmetYegerFreedom
+  suffix: Z14
+  name: Kikimora Helmet
+  categories: [ HideSpawnMenu, Zona14 ]
+  components:
+  - type: STWeight
+    self: 1
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/yeger_helm.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/yeger_helm.rsi

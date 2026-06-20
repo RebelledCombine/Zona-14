@@ -1,11 +1,12 @@
+# Zona14: translated Russian names/descriptions to English
 - type: Tag
   id: Fangs
 - type: entity
   parent: BaseItem
   id: Fangs
-  name: Клыки
-  description: Вырванные клыки из передних челюстей разных мутантов... Да только фанатик бы стал таким заниматься!
-  suffix: ST, НЕ СПАВНИТЬ
+  name: Fangs
+  description: Fangs torn out from the front jaws of various mutants... only a fanatic would do this!
+  suffix: ST, DO NOT SPAWN # Zona14: ST, НЕ СПАВНИТЬ
   components:
   - type: PhysicalComposition
     materialComposition:
@@ -56,7 +57,7 @@
 - type: entity
   parent: Fangs
   id: Fangs100
-  suffix: Stalker, НЕ СПАВНИТЬ, 100
+  suffix: Stalker, DO NOT SPAWN, 100 # Zona14: Stalker, НЕ СПАВНИТЬ, 100
   components:
   - type: Icon
     sprite: _Stalker/Objects/Economy/fangs.rsi
@@ -67,7 +68,7 @@
 - type: entity
   parent: Fangs
   id: Fangs1000
-  suffix: Stalker, НЕ СПАВНИТЬ, 1000
+  suffix: Stalker, DO NOT SPAWN, 1000 # Zona14: Stalker, НЕ СПАВНИТЬ, 1000
   components:
   - type: Icon
     sprite: _Stalker/Objects/Economy/fangs.rsi

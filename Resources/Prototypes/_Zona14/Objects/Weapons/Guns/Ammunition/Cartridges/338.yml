@@ -1,0 +1,29 @@
+- type: entity
+  id: Z14STCartridge338FMJ
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: cartridge (.338 Lapua Magnum) FMJ
+  parent: BaseSTCartridge338
+  components:
+    - type: CartridgeAmmo
+      proto: Bullet338FMJ
+
+- type: entity
+  id: Z14STCartridge338Partition
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: cartridge (.338 Lapua Magnum) Partition
+  parent: BaseSTCartridge338
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet338Partition
+
+- type: entity
+  id: Z14STCartridge338FMJBT
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: cartridge (.338 Lapua Magnum) FMJBT
+  parent: BaseSTCartridge338
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet338FMJBT

@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: FireflyGreen3
-  name: Светлячки
-  description: Где тьма обладает всепоглощающей силой, светящиеся точки блеска привлекают внимание скитальцев.
-  suffix: Stalker, Большой
+  name: Fireflies
+  description: Where darkness has an all-consuming power, glowing points of brilliance attract the attention of wanderers.
+  suffix: Stalker, Large # Zona14: Stalker, Большой
   placement:
     mode: SnapgridCenter
     snap:
@@ -39,9 +40,9 @@
 
 - type: entity
   id: FireflyGreen2
-  name: Светлячки
-  description: Где тьма обладает всепоглощающей силой, светящиеся точки блеска привлекают внимание скитальцев.
-  suffix: Stalker, Средний
+  name: "{ ent-FireflyGreen3 }"
+  description: "{ ent-FireflyGreen3.desc }"
+  suffix: Stalker, Medium # Zona14: Stalker, Средний
   placement:
     mode: SnapgridCenter
     snap:
@@ -78,9 +79,9 @@
 
 - type: entity
   id: FireflyGreen1
-  name: Светлячки
-  description: Где тьма обладает всепоглощающей силой, светящиеся точки блеска привлекают внимание скитальцев.
-  suffix: Stalker, Маленький
+  name: "{ ent-FireflyGreen3 }"
+  description: "{ ent-FireflyGreen3.desc }"
+  suffix: Stalker, Small # Zona14: Stalker, Маленький
   placement:
     mode: SnapgridCenter
     snap:
@@ -114,9 +115,9 @@
 
 - type: entity
   id: FireflyYellow3
-  name: Светлячки
-  description: Где тьма обладает всепоглощающей силой, светящиеся точки блеска привлекают внимание скитальцев.
-  suffix: Stalker, Большой
+  name: "{ ent-FireflyGreen3 }"
+  description: "{ ent-FireflyGreen3.desc }"
+  suffix: Stalker, Large # Zona14: Stalker, Большой
   placement:
     mode: SnapgridCenter
     snap:
@@ -150,9 +151,9 @@
 
 - type: entity
   id: FireflyYellow2
-  name: Светлячки
-  description: Где тьма обладает всепоглощающей силой, светящиеся точки блеска привлекают внимание скитальцев.
-  suffix: Stalker, Средний
+  name: "{ ent-FireflyGreen3 }"
+  description: "{ ent-FireflyGreen3.desc }"
+  suffix: Stalker, Medium # Zona14: Stalker, Средний
   placement:
     mode: SnapgridCenter
     snap:
@@ -186,9 +187,9 @@
 
 - type: entity
   id: FireflyYellow1
-  name: Светлячки
-  description: Где тьма обладает всепоглощающей силой, светящиеся точки блеска привлекают внимание скитальцев.
-  suffix: Stalker, Маленький
+  name: "{ ent-FireflyGreen3 }"
+  description: "{ ent-FireflyGreen3.desc }"
+  suffix: Stalker, Small # Zona14: Stalker, Маленький
   placement:
     mode: SnapgridCenter
     snap:
@@ -220,12 +221,12 @@
   - type: TimedDespawn
     lifetime: 600
 
-#Спавнеры
+# Zona14: Спавнеры
 - type: entity
-  name: Триггер Светлячков (3-7) (100%)
+  name: Firefly Trigger (3-7) (100%)
   id: FireFlyYellowTrigger
   parent: MarkerBase
-  suffix: Stalker, КД 30 минут
+  suffix: Stalker, CD 30 minutes # Zona14: Stalker, КД 30 минут
   components:
     - type: ApproachTrigger
       # range: 20 # Stalker-TODO: These fields do not exist in this component!
@@ -258,10 +259,10 @@
         - FireflyYellow3
 
 - type: entity
-  name: Триггер Светлячков (3-7) (100%)
+  name: Firefly Trigger (3-7) (100%)
   id: FireFlyGreenTrigger
   parent: MarkerBase
-  suffix: Stalker, КД 30 минут
+  suffix: Stalker, CD 30 minutes # Zona14: Stalker, КД 30 минут
   components:
     - type: ApproachTrigger
       # range: 20 # Stalker-TODO: These fields do not exist in this component!

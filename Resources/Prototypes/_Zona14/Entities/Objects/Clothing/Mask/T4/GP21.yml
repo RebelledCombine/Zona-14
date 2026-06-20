@@ -1,0 +1,16 @@
+
+- type: entity
+  parent: Z14GasMaskBase
+  id: Z14ClothingMaskGP21
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: GP-21 gas mask
+  description: Designed to protect eyes and respiratory organs from a range of damaging factors. Intended for both civilians and non-military personnel involved in accident response. Protects from toxins.
+  components:
+  - type: Tag
+    tags:
+      - BlockMask
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/mask/gp21.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/mask/gp21.rsi

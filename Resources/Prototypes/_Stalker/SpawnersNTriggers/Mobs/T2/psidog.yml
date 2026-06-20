@@ -1,5 +1,6 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
-  name: триггер пси-пёс (1) (25%)
+  name: psi-dog trigger (1) (25%)
   id: STTriggerPsidog125
   parent: STBaseTrigger125
   suffix: ST, T2, Trigger

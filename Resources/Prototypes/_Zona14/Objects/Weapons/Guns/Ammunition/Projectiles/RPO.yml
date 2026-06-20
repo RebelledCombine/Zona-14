@@ -1,0 +1,17 @@
+- type: entity
+  parent: BulletRocket
+  id: Z14BulletRocketRPO
+  suffix: Z14
+  name: RPO Shmel rocket
+  categories: [ HideSpawnMenu, Zona14 ]
+  components:
+  - type: Explosive
+    explosionType: Default
+    maxIntensity: 75
+    intensitySlope: 3
+    totalIntensity: 600
+    canCreateVacuum: false
+  - type: PointLight
+    radius: 7
+    color: orange
+    energy: 0.51

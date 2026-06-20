@@ -1,0 +1,606 @@
+##############################
+#          WEAPONS           #
+##############################
+
+- type: entity
+  parent: SmokeGrenade
+  id: Z14ChlorineBalloonStalker
+  categories: [ Zona14 ]
+  name: chlorine cylinder
+  description: Chemical weapon banned after April 29, 1997, but chlorine canisters were found in CEZ laboratories. Ignoring the ban, used in large-scale battles — quite powerful and dangerous, capable of spreading over large areas. Best to stock up on oxygen tanks and gas masks.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Weapons/Chemical/chlorine_balloon_stalker.rsi
+  - type: SmokeOnTrigger
+    keysIn:
+    - timer
+    duration: 90
+    spreadAmount: 8000
+    solution:
+      reagents:
+      - ReagentId: Z14ChlorineStalker
+        Quantity: 100
+  - type: STWeight
+    self: 15.5
+  - type: Item
+    size: Ginormous
+  - type: TriggerOnUse
+  - type: TimerTrigger
+    delay: 1
+  - type: EmitSoundOnTrigger
+    keysIn:
+    - timer
+    sound: /Audio/Effects/smoke.ogg
+  - type: DeleteOnTrigger
+    keysIn:
+    - timer
+  - type: TimerTriggerVisuals
+    primingSound:
+      path: /Audio/Effects/Smoke-grenade.ogg
+
+- type: entity
+  parent: SmokeGrenade
+  id: Z14IpritGrenadeStalker
+  categories: [ Zona14 ]
+  name: mustard gas grenade
+  description: Low-damage chemical weapon, the cheapest of its type. Creates a small explosion releasing mustard gas.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Weapons/Chemical/ipritgrenade.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Weapons/Chemical/ipritgrenade.rsi
+  - type: ExplodeOnTrigger
+    keysIn:
+    - timer
+  - type: SmokeOnTrigger
+    keysIn:
+    - timer
+    duration: 20
+    spreadAmount: 10
+    solution:
+      reagents:
+      - ReagentId: Z14IpritStalker
+        Quantity: 20
+  - type: Explosive
+    explosionType: Default
+    maxIntensity: 2
+    intensitySlope: 2
+    totalIntensity: 2
+    canCreateVacuum: false
+  - type: STWeight
+    self: 0.1
+  - type: Item
+    size: Small
+  - type: TriggerOnUse
+  - type: TimerTrigger
+    delay: 3
+  - type: EmitSoundOnTrigger
+    keysIn:
+    - timer
+    sound: /Audio/Effects/smoke.ogg
+  - type: DeleteOnTrigger
+    keysIn:
+    - timer
+  - type: TimerTriggerVisuals
+    primingSound:
+      path: /Audio/Effects/Smoke-grenade.ogg
+
+- type: entity
+  parent: SmokeGrenade
+  id: Z14LewisiteGrenadeStalker
+  categories: [ Zona14 ]
+  name: Lewisite Gas Grenade
+  description: Medium-damage chemical weapon. Creates a small explosion releasing lewisite, more dangerous than mustard gas.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Weapons/Chemical/lewisitegrenade.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Weapons/Chemical/lewisitegrenade.rsi
+  - type: ExplodeOnTrigger
+    keysIn:
+    - timer
+  - type: SmokeOnTrigger
+    keysIn:
+    - timer
+    duration: 30
+    spreadAmount: 20
+    solution:
+      reagents:
+      - ReagentId: Z14LewisiteStalker
+        Quantity: 30
+  - type: Explosive
+    explosionType: Default
+    maxIntensity: 2
+    intensitySlope: 2
+    totalIntensity: 2
+    canCreateVacuum: false
+  - type: STWeight
+    self: 0.25
+  - type: Item
+    size: Small
+  - type: TriggerOnUse
+  - type: TimerTrigger
+    delay: 3
+  - type: EmitSoundOnTrigger
+    keysIn:
+    - timer
+    sound: /Audio/Effects/smoke.ogg
+  - type: DeleteOnTrigger
+  - type: TimerTriggerVisuals
+    primingSound:
+      path: /Audio/Effects/Smoke-grenade.ogg
+
+- type: entity
+  parent: SmokeGrenade
+  id: Z14HydrocyanicGrenadeStalker
+  categories: [ Zona14 ]
+  name: Cyclone-B gas bomb
+  description: Long-range, highly potent chemical weapon with the longest-lasting gas effect. Hydrogen cyanide is extremely toxic, causing lung damage — you'll likely die from oxygen deprivation and suffocation. Used in World War I. Stalkers found this in the CEZ, their fate unknown. Criminal groups use it for torture or execution. Not widely used due to its reportedly small area of effect.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Weapons/Chemical/hydrocyanicgrenade.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Weapons/Chemical/hydrocyanicgrenade.rsi
+  - type: ExplodeOnTrigger
+    keysIn:
+    - timer
+  - type: SmokeOnTrigger
+    keysIn:
+    - timer
+    duration: 180
+    spreadAmount: 20
+    solution:
+      reagents:
+      - ReagentId: Z14HydrocyanicStalker
+        Quantity: 50
+  - type: STWeight
+    self: 1.5
+  - type: Item
+    size: Normal
+    shape:
+    - 0,0,1,1
+  - type: TriggerOnUse
+  - type: TimerTrigger
+    delay: 5
+  - type: EmitSoundOnTrigger
+    keysIn:
+    - timer
+    sound: /Audio/Effects/smoke.ogg
+  - type: DeleteOnTrigger
+  - type: TimerTriggerVisuals
+    primingSound:
+      path: /Audio/Effects/Smoke-grenade.ogg
+
+- type: entity
+  parent: SmokeGrenade
+  id: Z14PhosphorusGrenadeStalker
+  categories: [ Zona14 ]
+  name: phosphorus garnet
+  description: A weapon designed for efficient killing and stunning, filled with phosphorus.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Weapons/Chemical/phosphorusgreande.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Weapons/Chemical/phosphorusgreande.rsi
+  - type: ExplodeOnTrigger
+    keysIn:
+    - timer
+  - type: SmokeOnTrigger
+    keysIn:
+    - timer
+    duration: 10
+    spreadAmount: 999
+    solution:
+      reagents:
+      - ReagentId: Z14PhosphorusStalker
+        Quantity: 9999
+  - type: Explosive
+    explosionType: Default
+    maxIntensity: 30
+    intensitySlope: 1
+    totalIntensity: 70
+    canCreateVacuum: false
+  - type: STWeight
+    self: 0.2
+  - type: Item
+    size: Normal
+    shape:
+    - 0,0,1,1
+  - type: TriggerOnUse
+  - type: TimerTrigger
+    delay: 3
+  - type: EmitSoundOnTrigger
+    keysIn:
+    - timer
+    sound: /Audio/Effects/smoke.ogg
+  - type: DeleteOnTrigger
+
+- type: entity
+  name: GL-1 Green Grenade
+  parent: BaseItem
+  id: Z14GL1Grenade
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: Chemical illumination grenade. Designed for illuminating terrain during night combat.
+  components:
+    - type: Trash
+      time: 600
+    - type: SpaceGarbage
+    - type: ExpendableLight
+      spentName: expendable-light-spent-gl-name
+      spentDesc: expendable-light-spent-gl-desc
+      glowDuration: 1800 # time in seconds
+      glowColorLit: "#d1ff7d"
+      fadeOutDuration: 300
+      turnOnBehaviourID: turn_on
+      fadeOutBehaviourID: fade_out
+      iconStateLit: gl_lit
+      iconStateSpent: gl_unlit
+      litSound:
+        path: /Audio/Items/Handcuffs/rope_breakout.ogg
+    - type: Sprite
+      sprite: _Stalker/Objects/Weapons/Grenades/gl.rsi
+      layers:
+      - map: [ enum.ExpendableLightVisualLayers.Base ]
+        state: gl_base
+      - map: [ enum.ExpendableLightVisualLayers.Glow ]
+        state: gl_glow
+        visible: false
+        shader: unshaded
+      - map: [ enum.ExpendableLightVisualLayers.Overlay ]
+        state: gl_unlit
+    - type: Item
+      sprite: _Stalker/Objects/Weapons/Grenades/gl.rsi
+      heldPrefix: unlit
+    - type: Appearance
+    - type: PointLight
+      enabled: false
+      color: "#d1ff7d"
+      radius: 7
+      energy: 0
+      netsync: false
+    - type: LightBehaviour
+      behaviours:
+        - !type:FadeBehaviour # slowly fade in once activated
+          id: turn_on
+          interpolate: Linear
+          maxDuration: 10.0
+          startValue: 0.0
+          endValue: 3.0
+          property: Energy
+        - !type:FadeBehaviour # fade out energy as it burns out
+          id: fade_out
+          interpolate: Linear
+          maxDuration: 10 # 300.0
+          startValue: 3.0
+          endValue: 0.2
+          property: Energy
+        - !type:FadeBehaviour # fade out radius as it burns out
+          id: fade_out
+          interpolate: Linear
+          maxDuration: 10 # 300.0
+          startValue: 5.0
+          endValue: 1.5
+
+- type: entity
+  name: GL-1 Blue Grenade
+  parent: Z14GL1Grenade
+  id: Z14GL2Grenade
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: Chemical illumination grenade. Designed for illuminating terrain during night combat.
+  components:
+    - type: ExpendableLight
+      glowColorLit: "#00bfff"    
+    - type: PointLight
+      enabled: false
+      color: "#00bfff"
+
+- type: entity
+  name: Orange GL-1 Grenade
+  parent: Z14GL1Grenade
+  id: Z14GL3Grenade
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: Chemical illumination grenade. Designed for illuminating terrain during night combat.
+  components:
+    - type: ExpendableLight
+      glowColorLit: "#ff4f00"    
+    - type: PointLight
+      enabled: false
+      color: "#ff4f00"
+##############################
+#          REAGENTS          #
+##############################
+
+- type: reagent
+  id: Z14ChlorineStalker
+  name: reagent-name-chlorine-stalker
+  group: Elements
+  desc: reagent-desc-chemical-weapon
+  physicalDesc: reagent-physical-desc-gaseous
+  flavor: bitter
+  color: "#d2ff85"
+  meltingPoint: -101.5
+  boilingPoint: -34.04
+  plantMetabolism:
+    - !type:PlantAdjustWater
+      amount: -0.5
+    - !type:PlantAdjustToxins
+      amount: 15
+    - !type:PlantAdjustWeeds
+      amount: -3
+    - !type:PlantAdjustHealth
+      amount: -1
+  metabolisms:
+    Poison:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Poison: 3
+    Narcotic:
+      effects:
+      - !type:PopupMessage
+        type: Local
+        probability: 0.08
+        messages: # Stalker-TODO: Localize these
+        - Your eyes are burning intensely.
+        - Your eye is bleeding.
+        - Your eyes are starting to water.
+        - You feel drowsiness and eye pain.
+        - You feel dizzy.
+        - Your lungs seem to stop breathing.
+        - You feel an incredibly sharp pain in your stomach!
+      - !type:PopupMessage
+        type: Local
+        visualType: MediumCaution
+        probability: 0.03
+        messages:
+        - Your eyes feel like they're disconnecting!
+        - Your eyes stop working!
+        - You feel your vision deteriorating.
+        - Your eyelids are twitching rapidly.
+        conditions:
+        - !type:ReagentCondition
+          reagent: Z14ChlorineStalker
+          min: 5
+      - !type:Emote
+        emote: STCrying
+        probability: 0.1
+      - !type:Emote
+        emote: STScream
+        probability: 0.2
+      - !type:GenericStatusEffect
+        key: TemporaryBlindness
+        component: TemporaryBlindness
+        conditions:
+        - !type:ReagentCondition
+          reagent: Z14ChlorineStalker
+          min: 1
+    Medicine:
+      effects:
+      - !type:Vomit
+        conditions:
+        - !type:ReagentCondition
+          reagent: Z14ChlorineStalker
+          min: 10
+        probability: 0.2
+
+- type: reagent
+  id: Z14IpritStalker
+  name: reagent-name-iprit-stalker
+  group: Elements
+  desc: reagent-desc-chemical-weapon
+  physicalDesc: reagent-physical-desc-gaseous
+  flavor: bitter
+  color: "#ffeb78"
+  meltingPoint: -101.5
+  boilingPoint: -34.04
+  metabolisms:
+    Poison:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Poison: 0.6
+            Heat: 0.5
+            Caustic: 0.25
+    Narcotic:
+      effects:
+      - !type:PopupMessage
+        type: Local
+        probability: 0.08
+        messages: # Stalker-TODO: Localize these
+        - Your skin is sizzling.
+        - You feel severe burns
+        - Your skin is peeling off.
+        - You feel poisoned
+        - You itch even more painfully
+        - Swelling forms on your skin
+        - Your skin is melting
+      - !type:PopupMessage
+        type: Local
+        visualType: MediumCaution
+        probability: 0.02
+        messages:
+        - Your skin has peeled off!
+        - You feel an elevated temperature.
+        conditions:
+        - !type:ReagentCondition
+          reagent: Z14IpritStalker
+          min: 5
+      - !type:Emote
+        emote: STCrying
+        probability: 0.3
+      - !type:GenericStatusEffect
+        key: TemporaryBlindness
+        component: TemporaryBlindness
+        conditions:
+        - !type:ReagentCondition
+          reagent: Z14IpritStalker
+          min: 4
+    Medicine:
+      effects:
+      - !type:Vomit
+        conditions:
+        - !type:ReagentCondition
+          reagent: Z14IpritStalker
+          min: 5
+        probability: 0.2
+
+- type: reagent
+  id: Z14LewisiteStalker
+  name: reagent-name-lewisite-stalker
+  group: Elements
+  desc: reagent-desc-chemical-weapon
+  physicalDesc: reagent-physical-desc-gaseous
+  flavor: bitter
+  color: "#b87502"
+  meltingPoint: -101.5
+  boilingPoint: -34.04
+  metabolisms:
+    Poison:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Poison: 2.50
+            Heat: 0.50
+            Caustic: 2
+    Narcotic:
+      effects:
+      - !type:PopupMessage
+        type: Local
+        probability: 0.08
+        messages: # Stalker-TODO: Localize these
+        - Your skin is sizzling.
+        - You feel severe burns
+        - Your skin is peeling off.
+        - You feel poisoned
+        - You itch even more painfully
+        - Swelling forms on your skin
+        - Your skin is melting
+        - You smell an irritating odor
+      - !type:PopupMessage
+        type: Local
+        visualType: MediumCaution
+        probability: 0.02
+        messages:
+        - Your skin has peeled off!
+        - You feel an elevated temperature.
+        conditions:
+        - !type:ReagentCondition
+          reagent: Z14LewisiteStalker
+          min: 5
+      - !type:Emote
+        emote: STCrying
+        probability: 0.3
+      - !type:Emote
+        emote: STScream
+        probability: 0.3
+      - !type:GenericStatusEffect
+        key: TemporaryBlindness
+        component: TemporaryBlindness
+        conditions:
+        - !type:ReagentCondition
+          reagent: Z14LewisiteStalker
+          min: 4
+    Medicine:
+      effects:
+      - !type:Vomit
+        conditions:
+        - !type:ReagentCondition
+          reagent: Z14LewisiteStalker
+          min: 5
+        probability: 0.2
+
+- type: reagent
+  id: Z14HydrocyanicStalker
+  name: reagent-name-hydrocyanic-stalker
+  group: Elements
+  desc: reagent-desc-chemical-weapon
+  physicalDesc: reagent-physical-desc-gaseous
+  flavor: bitter
+  color: "#fffcf2"
+  meltingPoint: -101.5
+  boilingPoint: -34.04
+  metabolisms:
+    Poison:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Poison: 0.5
+    Narcotic:
+      effects:
+      - !type:GenericStatusEffect
+        key: Muted
+        component: Muted
+        probability: 0.3
+      - !type:PopupMessage
+        type: Local
+        probability: 0.08
+        messages: # Stalker-TODO: Localize these
+        - You can't feel your lungs
+        - You're not breathing
+        - You've stopped breathing
+        - Your lungs are swelling
+        - You feel intense pain in your lungs
+        - You try to cough out the gas
+      - !type:PopupMessage
+        type: Local
+        visualType: MediumCaution
+        probability: 0.02
+        messages:
+        - Your lungs have failed!
+        - You're suffocating harder!
+        - Low oxygen level!
+        conditions:
+        - !type:ReagentCondition
+          reagent: Z14HydrocyanicStalker
+          min: 2
+      - !type:Emote
+        emote: Cough
+        probability: 0.4
+    Medicine:
+      effects:
+      - !type:HealthChange
+        damage:
+          groups:
+            Airloss: 15
+
+- type: reagent
+  id: Z14PhosphorusStalker
+  name: reagent-name-phosphorus-stalker
+  desc: reagent-desc-chemical-weapon
+  physicalDesc: reagent-physical-desc-gaseous
+  flavor: bitter
+  color: "#ffe7bf"
+  metabolisms:
+    Poison:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Heat: 30
+            Caustic: 30
+      - !type:Flammable
+        multiplier: 0.1
+      - !type:AdjustTemperature
+        amount: 120
+  reactiveEffects:
+    Flammable:
+      methods: [ Touch ]
+      effects:
+      - !type:Flammable
+        multiplier: 0.05
+      - !type:Ignite
+      - !type:Emote
+        emote: STScream
+        probability: 0.2

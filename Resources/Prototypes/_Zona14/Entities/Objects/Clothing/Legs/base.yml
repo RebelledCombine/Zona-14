@@ -1,0 +1,13 @@
+- type: entity
+  parent: Clothing
+  id: Z14BaseClothingLegs
+  categories: [ Zona14 ]
+  abstract: true
+  components:
+    - type: Sprite
+      state: icon
+    - type: Clothing
+      slots:
+        - LEGS
+      equipSound:
+        path: /Audio/Items/jumpsuit_equip.ogg

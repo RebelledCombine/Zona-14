@@ -1,0 +1,353 @@
+# Bandanas
+- type: entity
+  parent: ClothingNeckBase
+  id: Z14ClothingBandageStalkerBlue
+  categories: [ Zona14 ]
+  name: CS Armband
+  description: Blue shoulder band.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_blue.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_blue.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: Z14ClothingBandageStalkerGreen
+  categories: [ Zona14 ]
+  name: Freedom Armband
+  description: Green shoulder band.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_green.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_green.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: Z14ClothingBandageStalkerYellow
+  categories: [ Zona14 ]
+  name: Renegade Armband
+  description: Yellow shoulder band.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_yellow.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_yellow.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: Z14ClothingBandageStalkerPurple
+  categories: [ Zona14 ]
+  name: Ecologist Armband
+  description: Purple shoulder band.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_purple.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_purple.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: Z14ClothingBandageStalkerRed
+  categories: [ Zona14 ]
+  name: Duty Armband
+  description: Red shoulder band.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_red.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_red.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: Z14ClothingBandageStalkerRus
+  categories: [ Zona14 ]
+  name: Armband with the Russian flag
+  description: Russian flag shoulder band.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_rus.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_rus.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: Z14ClothingBandageStalkerUk
+  categories: [ Zona14 ]
+  name: Ukrainian Military Armband
+  description: Ukrainian flag shoulder band.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_uk.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_uk.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: Z14ClothingBandageStalkerMerc
+  categories: [ Zona14 ]
+  name: Mercenary Armband
+  description: band in mercenary faction colors.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_merc.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_merc.rsi
+
+
+- type: entity
+  parent: ClothingNeckBase
+  id: Z14ClothingBandageStalkerKrest
+  categories: [ Zona14 ]
+  name: Cross Armband
+  description: band with a red cross on white background.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_krest.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_krest.rsi
+
+
+- type: entity
+  parent: ClothingNeckBase
+  id: Z14ClothingBandageStalkerPetuh
+  categories: [ Zona14 ]
+  name: Rooster Armband
+  description: band with a rooster — cock-a-doodle-doo!
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_petuh.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_petuh.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: Z14ClothingBandageStalkerBelarus
+  categories: [ Zona14 ]
+  name: Armband with the Belarusian flag
+  description: Belarusian flag shoulder band.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_belarus.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_belarus.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: Z14ClothingBandageStalkerJid
+  categories: [ Zona14 ]
+  name: Israeli flag Armband
+  description: Israeli flag shoulder band.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_jid.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_jid.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: Z14ClothingBandageStalkerWhite
+  categories: [ Zona14 ]
+  name: White Armband
+  description: white shoulder band.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_white.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_white.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: Z14ClothingBandageStalkerPeace
+  categories: [ Zona14 ]
+  name: Peace Flag Armband
+  description: peace flag shoulder band.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_peace.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_peace.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: Z14ClothingBandageStalkerEstonia
+  categories: [ Zona14 ]
+  name: Estonia Flag Armband
+  description: Estonia Flag Armband
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_est.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_est.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: Z14ClothingBandageStalkerAustria
+  categories: [ Zona14 ]
+  name: Austria Flag Armband
+  description: Austria Flag Armband
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_avs.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_avs.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: Z14ClothingBandageStalkerDNR
+  categories: [ Zona14 ]
+  name: DNR Flag Armband
+  description: DNR Flag Armband
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_dnr.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_dnr.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: Z14ClothingBandageStalkerGermany
+  categories: [ Zona14 ]
+  name: Germany Flag Armband
+  description: Germany Flag Armband
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_er.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_er.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: Z14ClothingBandageStalkerLNR
+  categories: [ Zona14 ]
+  name: LNR Flag Armband
+  description: LNR Flag Armband
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_lnr.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_lnr.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: Z14ClothingBandageStalkerMoldova
+  categories: [ Zona14 ]
+  name: Moldovan Flag Armband
+  description: Moldovan Flag Armband
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_mol.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_mol.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: Z14ClothingBandageStalkerTransnistria
+  categories: [ Zona14 ]
+  name: Transnistria Flag Armband
+  description: Transnistria Flag Armband
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_pml.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_pml.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: Z14ClothingBandageStalkerPoland
+  categories: [ Zona14 ]
+  name: Polish Flag Armband
+  description: Polish Flag Armband
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_pol.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_pol.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: Z14ClothingBandageStalkerSopOne
+  categories: [ Zona14 ]
+  name: armband with number 1
+  description: armband with number 1
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_sop/bandage_one.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_sop/bandage_one.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: Z14ClothingBandageStalkerSopTwo
+  categories: [ Zona14 ]
+  name: armband with number 2
+  description: armband with number 2
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_sop/bandage_two.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_sop/bandage_two.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: Z14ClothingBandageStalkerSopThree
+  categories: [ Zona14 ]
+  name: armband with number 3
+  description: armband with number 3
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_sop/bandage_three.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_sop/bandage_three.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: Z14ClothingBandageStalkerSopFour
+  categories: [ Zona14 ]
+  name: armband with number 4
+  description: armband with number 4
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_sop/bandage_four.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_sop/bandage_four.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: Z14ClothingBandageStalkerMP
+  categories: [ Zona14 ]
+  name: military police armband
+  description: military police armband
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_sop/bandage_mp.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_sop/bandage_mp.rsi

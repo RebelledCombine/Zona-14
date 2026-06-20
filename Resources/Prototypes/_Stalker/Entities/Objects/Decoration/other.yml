@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: TrubaSoloStalker
   parent: BaseStructure
-  name: железобетонная труба
+  name: reinforced concrete pipe
   suffix: ST, Mapping
-  description: Старая железобетонная труба.
+  description: An old reinforced concrete pipe.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Other/truba(32x48).rsi
@@ -24,9 +25,9 @@
 - type: entity
   id: TrubaSolo2Stalker
   parent: BaseStructure
-  name: железобетонная труба
+  name: reinforced concrete pipe
   suffix: ST, Mapping
-  description: Старая железобетонная труба.
+  description: An old reinforced concrete pipe.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Other/truba(48x32).rsi
@@ -47,9 +48,9 @@
 - type: entity
   id: PlitaSoloStalker
   parent: BaseStructure
-  name: железобетонная плита
+  name: reinforced concrete slab
   suffix: ST, Mapping
-  description: Старая железобетонная плита.
+  description: An old reinforced concrete slab.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Other/plita.rsi
@@ -70,9 +71,9 @@
 - type: entity
   id: Plita2SoloStalker
   parent: BaseStructure
-  name: железобетонная плита
+  name: reinforced concrete slab
   suffix: ST, Mapping
-  description: Старая железобетонная плита.
+  description: An old reinforced concrete slab.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Other/plita.rsi
@@ -93,9 +94,9 @@
 - type: entity
   id: Plita3SoloStalker
   parent: BaseStructure
-  name: железобетонная плита
+  name: reinforced concrete slab
   suffix: ST, Mapping
-  description: Старая железобетонная плита.
+  description: An old reinforced concrete slab.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Other/plita.rsi
@@ -116,9 +117,9 @@
 - type: entity
   id: PlitkiStalker
   parent: BaseStructure
-  name: железобетонные плиты
+  name: reinforced concrete slabs
   suffix: ST, Mapping
-  description: Старые железобетонные плиты.
+  description: Old reinforced concrete slabs.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Other/plita.rsi
@@ -139,9 +140,9 @@
 - type: entity
   id: Plitki1Stalker
   parent: BaseStructure
-  name: железобетонные плиты
+  name: reinforced concrete slabs
   suffix: ST, Mapping
-  description: Старые железобетонные плиты.
+  description: Old reinforced concrete slabs.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Other/plita.rsi
@@ -162,9 +163,9 @@
 - type: entity
   id: Plitki2Stalker
   parent: BaseStructure
-  name: железобетонные плиты
+  name: reinforced concrete slabs
   suffix: ST, Mapping
-  description: Старые железобетонные плиты.
+  description: Old reinforced concrete slabs.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Other/plita.rsi
@@ -185,9 +186,9 @@
 - type: entity
   id: Plitki3Stalker
   parent: BaseStructure
-  name: железобетонные плиты
+  name: reinforced concrete slabs
   suffix: ST, Mapping
-  description: Старые железобетонные плиты.
+  description: Old reinforced concrete slabs.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Other/plita.rsi
@@ -208,9 +209,9 @@
 - type: entity
   id: Plitki4Stalker
   parent: BaseStructure
-  name: железобетонные плиты
+  name: reinforced concrete slabs
   suffix: ST, Mapping
-  description: Старые железобетонные плиты.
+  description: Old reinforced concrete slabs.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Other/plita(64x32).rsi
@@ -231,9 +232,9 @@
 - type: entity
   id: Plitki5Stalker
   parent: BaseStructure
-  name: железобетонные плиты
+  name: reinforced concrete slabs
   suffix: ST, Mapping
-  description: Старые железобетонные плиты.
+  description: Old reinforced concrete slabs.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Other/plita(64x32).rsi
@@ -254,9 +255,9 @@
 - type: entity
   id: Plitki6Stalker
   parent: BaseStructure
-  name: железобетонные плиты
+  name: reinforced concrete slabs
   suffix: ST, Mapping
-  description: Старые железобетонные плиты.
+  description: Old reinforced concrete slabs.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Other/plita(64x32).rsi
@@ -277,9 +278,9 @@
 - type: entity
   id: Plitki7Stalker
   parent: BaseStructure
-  name: железобетонные плиты
+  name: reinforced concrete slabs
   suffix: ST, Mapping
-  description: Старые железобетонные плиты.
+  description: Old reinforced concrete slabs.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Other/plita(64x32).rsi
@@ -300,9 +301,9 @@
 - type: entity
   id: Plitki8Stalker
   parent: BaseStructure
-  name: железобетонные плиты
+  name: reinforced concrete slabs
   suffix: ST, Mapping
-  description: Старые железобетонные плиты.
+  description: Old reinforced concrete slabs.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Other/plita(64x32).rsi
@@ -323,9 +324,9 @@
 - type: entity
   id: Plitki9Stalker
   parent: BaseStructure
-  name: железобетонные плиты
+  name: reinforced concrete slabs
   suffix: ST, Mapping
-  description: Старые железобетонные плиты.
+  description: Old reinforced concrete slabs.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Other/plita(64x32).rsi
@@ -346,9 +347,9 @@
 - type: entity
   id: HeadPikaStalker
   parent: BaseStructure
-  name: голова на пике
+  name: head on a pike
   suffix: ST, Mapping
-  description: Группа из пик с нанизанными на них головами несчастных.
+  description: A cluster of pikes with the heads of the unfortunate impaled on them.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Other/head_pika.rsi

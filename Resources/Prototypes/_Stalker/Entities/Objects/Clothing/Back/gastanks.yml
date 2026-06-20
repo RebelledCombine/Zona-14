@@ -1,3 +1,4 @@
+# Zona14: translated Russian names/descriptions to English
 # Base
 
 - type: entity
@@ -55,8 +56,8 @@
 - type: entity
   parent: STOxygenTanksBase
   id: STOxygenTanksZarya
-  name: кислородные баллоны из комплекта «Заря»
-  description: Кислородные баллоны из комплекта «Заря» - это ёмкости содержащие различные газы или жидкости под давлением. Используются с бронекомбинезоном «Заря».
+  name: Sunrise Set Oxygen Tanks
+  description: Oxygen tanks from the "Sunrise" set — containers holding various gases or liquids under pressure. Used with the "Sunrise" armored suit.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/backpacks/Tanks/zarya.rsi
@@ -68,8 +69,8 @@
 - type: entity
   parent: STOxygenTanksBase
   id: STOxygenTanksFractionalDuty
-  name: кислородные баллоны из комплекта ПС5-М «Универсальная защита»
-  description: Кислородные баллоны из комплекта «ПС» - это ёмкости содержащие различные газы или жидкости под давлением. Используются с такими бронекомбинезонами как «Страж свободы» и ПС5-М «Универсальная защита».
+  name: PS5-M "Universal Protection" Set Oxygen Tanks
+  description: Oxygen tanks from the "PS" set — containers holding various gases or liquids under pressure. Used with suits like "Freedom Defender" and PS5-M "Universal Protection".
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/backpacks/Tanks/duty.rsi
@@ -81,8 +82,8 @@
 - type: entity
   parent: STOxygenTanksBase
   id: STOxygenTanksFractionalFreedom
-  name: кислородные баллоны из комплекта «Страж свободы»
-  description: Кислородные баллоны из комплекта «Страж свободы» - это ёмкости содержащие различные газы или жидкости под давлением. Используются с бронекомбинезоном «Страж свободы».
+  name: '"Freedom Defender" Set Oxygen Tanks'
+  description: Oxygen tanks from the "Freedom Defender" set — containers holding various gases or liquids under pressure. Used with the "Freedom Defender" armored suit.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/backpacks/Tanks/freedom.rsi
@@ -92,8 +93,8 @@
 - type: entity
   parent: STOxygenTanksBase
   id: STOxygenTanksFractionalFreedom2
-  name: кислородные баллоны из комплекта «Ветер свободы»
-  description: Кислородные баллоны из комплекта «Ветер свободы» - это ёмкости содержащие различные газы или жидкости под давлением. Используются с бронекомбинезоном «Ветер свободы».
+  name: '"Wind of Freedom" Set Oxygen Tanks'
+  description: Oxygen tanks from the "Wind of Freedom" set — containers holding various gases or liquids under pressure. Used with the "Wind of Freedom" armored suit.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/backpacks/Tanks/freedom_2.rsi
@@ -105,8 +106,8 @@
 - type: entity
   parent: STOxygenTanksBase
   id: STOxygenTanksFractionalMonolith
-  name: ржавые кислородные баллоны из комплекта «Монолита»
-  description: Ржавые кислородные баллоны из комплекта «Монолита» - это ёмкости содержащие различные газы или жидкости под давлением. Время исчадно потрепало краску. Используются с бронекомбинезоном «Монолита».
+  name: Rusty "Monolith" Set Oxygen Tanks
+  description: Rusty oxygen tanks from the "Monolith" set — containers holding various gases or liquids under pressure. Time has heavily worn off the paint. Used with the "Monolith" armored suit.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/backpacks/Tanks/monolith.rsi

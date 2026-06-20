@@ -56,7 +56,7 @@ public sealed class STWeaponDurabilitySystem : EntitySystem
         var percent = GetDurabilityPercent(comp);
         var stateText = GetDurabilityStateText(percent);
 
-        args.PushMarkup($"[color=yellow]Состояние:[/color] {stateText}");
+        args.PushMarkup(Loc.GetString("st-durability-weapon-label", ("state", stateText))); // Zona14: localized
     }
 
     private void TryJamWeapon(EntityUid uid)
@@ -90,21 +90,23 @@ public sealed class STWeaponDurabilitySystem : EntitySystem
         return percent;
     }
 
-    public static string GetDurabilityStateText(int percent)
+    public string GetDurabilityStateText(int percent) // Zona14: removed static for Loc access
     {
+        // Zona14: localized
         if (percent >= 75)
-            return "отличное";
+            return Loc.GetString("st-durability-weapon-excellent");
 
         if (percent >= 50)
-            return "нормальное";
+            return Loc.GetString("st-durability-weapon-normal");
 
         if (percent >= 25)
-            return "поношенное";
+            return Loc.GetString("st-durability-weapon-worn");
 
         if (percent >= 10)
-            return "сильно поношенное";
+            return Loc.GetString("st-durability-weapon-heavily-worn");
 
-        return "аварийное";
+        return Loc.GetString("st-durability-weapon-critical");
+        // End Zona14
     }
 
     public static int GetRepairSteelRequired(int percent)

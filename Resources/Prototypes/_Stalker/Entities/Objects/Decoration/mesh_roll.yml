@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: MeshRollStalker
   parent: BaseStructureDynamic
-  name: рулон сетки
+  name: mesh roll
   suffix: ST, Mapping
-  description: Металлическая сетка, состоящая из проволоки из нержавеющей стали свёрнутая в рулон.
+  description: Metal mesh consisting of stainless steel wire rolled up.
   placement:
     mode: PlaceFree
   components:

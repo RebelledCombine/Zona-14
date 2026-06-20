@@ -95,13 +95,13 @@
         STWeaponSMGPP1901: 2000
         STWeaponRifleOC14: 5000
         STWeaponRifleOC14Alt: 5000
-          #БУМ-БАДА-БАМ!
+          # Zona14: БУМ-БАДА-БАМ!
         KhattabkaGrenade: 175
         DG05SmokeGrenade: 225
         TearGasGrenadeStalker: 750
         RGD5Grenade: 1000
         FragGrenade: 1200
-        DynamiteOne: 1500 #если что, взрыв-пакет, пояс шахида и то, что я ещё писал в списке, будет потом, ибо первые 2 не работают а на спрайты времени у меня сейчас нет :(
+        DynamiteOne: 1500 # Zona14: translated developer note
     - name: shop-category-magazines
       priority: 2
       items:
@@ -321,7 +321,7 @@
           STHatchetSponsor: 150
           STSpanishKnife: 100
     SponsorOMind:
-      - name: О-сознание
+      - name: O-Consciousness # Zona14: О-сознание
         items:
           STWeaponRifleSVDSWood: 800
           Base754Mag5: 400

@@ -3,7 +3,7 @@
 - type: entity
   id: Z14Bullet45ACPLFMJ
   suffix: Z14
-  name: bullet (.45 ACP FMJ)
+  name: bullet (.45 ACP Lasermatch FMJ magnum)
   parent: STBasePistolBullet
   categories: [ HideSpawnMenu, Zona14 ]
   components:
@@ -20,7 +20,7 @@
 - type: entity
   id: Z14Bullet45ACPMFMJ
   suffix: Z14
-  name: bullet (.45 ACP FMJ)
+  name: bullet (.45 ACP Match FMJ magnum)
   parent: Z14Bullet45ACPLFMJ
   categories: [ HideSpawnMenu, Zona14 ]
   components:
@@ -35,7 +35,7 @@
 - type: entity
   id: Z14Bullet45ACPHydroshock
   suffix: Z14
-  name: bullet (.45 ACP HP)
+  name: bullet (.45 ACP Hydra-Shok magnum)
   parent: Z14Bullet45ACPLFMJ
   categories: [ HideSpawnMenu, Zona14 ]
   components:
@@ -53,7 +53,7 @@
 - type: entity
   id: Z14Bullet45ACPRIP
   suffix: Z14
-  name: bullet (.45 ACP HP)
+  name: bullet (.45 ACP RIP magnum)
   parent: Z14Bullet45ACPLFMJ
   categories: [ HideSpawnMenu, Zona14 ]
   components:
@@ -71,7 +71,7 @@
 - type: entity
   id: Z14Bullet45ACPAP
   suffix: Z14
-  name: bullet (.45 ACP AP)
+  name: bullet (.45 ACP AP magnum)
   parent: Z14Bullet45ACPLFMJ
   categories: [ HideSpawnMenu, Zona14 ]
   components:

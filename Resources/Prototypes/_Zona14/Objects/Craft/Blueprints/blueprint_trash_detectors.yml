@@ -1,0 +1,39 @@
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14TrashDetectorTier2Blueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Metal Detector "Digger" Recipe
+  components:
+    - type: STBlueprint
+      blueprint: recipeTrashDetectorTier2
+
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14TrashDetectorTier3Blueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Metal Detector "Shakhter" Recipe
+  components:
+    - type: STBlueprint
+      blueprint: recipeTrashDetectorTier3
+
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14TrashDetectorTier4Blueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Metal Detector "Nakhodka" Recipe
+  components:
+    - type: STBlueprint
+      blueprint: recipeTrashDetectorTier4
+
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14TrashDetectorTier5Blueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Metal Detector "Anomalist" Recipe
+  components:
+    - type: STBlueprint
+      blueprint: recipeTrashDetectorTier5

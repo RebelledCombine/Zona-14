@@ -1,5 +1,6 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
-  name: триггер контролёр (1) (25%)
+  name: controller trigger (1) (25%)
   id: STTriggerController125
   parent: STBaseTrigger125
   suffix: ST, T3, Trigger

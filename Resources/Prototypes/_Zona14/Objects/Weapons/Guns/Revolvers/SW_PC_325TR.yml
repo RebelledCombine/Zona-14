@@ -1,0 +1,49 @@
+- type: entity
+  parent: STBaseWeaponGameRevolver
+  id: Z14STWeaponRevolverSWPC325TR
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: S&W PC 325 TR
+  description: A modern eight-shooter chambered in .357 magnum with a slick metal finish and rubber grip. Has less recoil then other revolvers but cant shoot as fast.
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Weapons/Guns/Revolvers/s&w_pc_325_tr.rsi
+      scale: 0.9, 0.9
+      layers:
+      - state: icon
+        map: ["enum.GunVisualLayers.Base"]
+    - type: Gun
+      minAngle: 0
+      maxAngle: 75
+      fireRate: 4
+      angleIncrease: 12
+      angleDecay: 12
+      projectileSpeed: 50
+      selectedMode: SemiAuto
+      soundGunshot:
+        path: /Audio/_Stalker/Effects/Guns/revolver4.ogg
+    - type: RevolverAmmoProvider
+      whitelist:
+        tags:
+          - Cartridge45ACP
+          - STSpeedLoader45ACP
+      proto: null
+      capacity: 6
+      chambers: [ null, null, null, null, null, null ]
+      ammoSlots: [ null, null, null, null, null, null ]
+      soundEject:
+        path: /Audio/Weapons/Guns/MagOut/revolver_magout.ogg
+      soundInsert:
+        path: /Audio/Weapons/Guns/MagIn/revolver_magin.ogg
+    - type: STWeight
+      self: 1.58
+    - type: StaticPrice
+      price: 30
+    - type: UseDelay
+      delay: 1
+    - type: RepositoryItem
+      categoryName: Weapons
+    - type: STWeaponDamageFalloff
+      falloffMultiplier: 0.8
+    - type: STWeaponAccuracy
+      accuracyMultiplier: 1.43

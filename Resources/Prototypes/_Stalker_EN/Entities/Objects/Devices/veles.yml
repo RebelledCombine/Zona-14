@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: BaseItem
   id: Veles
-  name: велес
-  description: Детектор, который отображает близлежащие артефакты на 360-градусном дисплее.
+  name: Veles
+  description: A detector that displays nearby artifacts on a 360-degree display.
   suffix: St
   components:
   - type: Item

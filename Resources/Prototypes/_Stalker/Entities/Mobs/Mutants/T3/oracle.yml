@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: BaseMobMutant
   id: MobMutantOraclesBrown
-  name: оракл
+  name: oracle
   suffix: ST, T3
-  description: Огромных размеров жаба, в животе которой поместиться не один кабан.
+  description: A huge toad that can fit more than one boar in its belly.
   components:
     - type: Butcherable
       spawned:

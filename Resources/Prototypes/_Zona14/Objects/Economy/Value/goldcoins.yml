@@ -1,0 +1,62 @@
+- type: entity
+  parent: BaseItem
+  id: Z14Goldcoins
+  categories: [ Zona14 ]
+  name: Gold Coin
+  description: It is said to be smelted from real gold. Wait, it's just a GTO badge...
+  suffix: Z14
+  components:
+  - type: PhysicalComposition
+    materialComposition:
+      Credit: 1
+  - type: Stack
+    stackType: Goldcoins
+    count: 1
+    baseLayer: base
+    layerStates:
+    - cash
+    - cash_5
+  - type: Sprite
+    sprite: _Stalker/Objects/Economy/coins.rsi
+    state: cash
+    layers:
+    - state: cash
+      map: ["base"]
+  - type: Physics
+    bodyType: Dynamic
+  - type: Fixtures
+    fixtures:
+      fix1:
+        density: 30
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.35,-0.2,0.25,0.1"
+        mask:
+        - ItemMask
+  - type: Appearance
+  - type: Tag
+    tags:
+    - Goldcoins
+- type: currency
+  id: Z14Goldcoins
+  displayName: store-currency-display-gold-coins
+  cash:
+    1: Goldcoins
+  canWithdraw: true
+- type: stack
+  id: Z14Goldcoins
+  name: stack-gold-coins
+  icon: { sprite: /Textures/_Stalker/Objects/Economy/coins.rsi, state: cash }
+  spawn: Goldcoins
+
+- type: entity
+  parent: Goldcoins
+  id: Z14Goldcoins5
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Icon
+    sprite: _Stalker/Objects/Economy/coins.rsi
+    state: cash_5
+  - type: Stack
+    count: 5

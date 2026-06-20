@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
-  name: охотничий нож
+  name: hunting knife
   parent: BaseKnife
   id: HuntingKnife
-  description: Инструмент для разделки туш животных. Он разделывает мясо быстрее, чем другие ножи, но наносит меньше урона.
+  description: A tool for butchering animal carcasses. It cuts meat faster than other knives, but deals less damage.
   suffix: ST
   components:
   - type: Tag

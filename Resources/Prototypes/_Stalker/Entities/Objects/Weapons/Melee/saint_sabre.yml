@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
-  name: святой меч инквизиции
+  name: holy inquisition sword
   parent: BaseKnife
   id: SaintSabre
   suffix: ST
-  description: Средний вариант для нарезания неверных.
+  description: Middle option for slicing the wrong ones.
   components:
   - type: STWeight
     self: -5

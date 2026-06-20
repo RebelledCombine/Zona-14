@@ -1,3 +1,4 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: STFloorWaterEntity
   name: water
@@ -75,8 +76,8 @@
 
 - type: entity
   parent: STFloorWaterEntity
-  name: вода
-  description: Мутная вода Зоны.
+  name: water
+  description: Murky water of the Zone.
   id: FloorWaterEntityStalker1
   suffix: Stalker
   placement:
@@ -168,8 +169,8 @@
 
 - type: entity
   parent: FloorWaterEntityStalker1
-  name: химические отходы
-  description: Яркие химические отходы Зоны.
+  name: chemical waste
+  description: Bright chemical waste of the Zone.
   id: FloorWaterEntityStalker5
   placement:
     mode: SnapgridCenter

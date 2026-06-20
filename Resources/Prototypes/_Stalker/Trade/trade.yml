@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: Trademachine
   abstract: true
-  name: Торговый автомат Города
-  description: Нужно срочно — он рядом. Выбирай, плати, забирай.
+  name: City vending machine
+  description: "Need it now - it's right here. Pick, pay, take."
   suffix: vendor, normal
   components:
   - type: UserInterface
@@ -42,9 +43,9 @@
 - type: entity
   id: TrademachineCity
   parent: Trademachine
-  name: Кайот
-  description: Выдаёт задания сталкерам.
-  suffix: ST, КВЕСТЫ
+  name: Kayot
+  description: Hands out tasks to stalkers.
+  suffix: ST, QUESTS # Zona14: ST, КВЕСТЫ
   components:
   - type: NcStore
     contractPresets:

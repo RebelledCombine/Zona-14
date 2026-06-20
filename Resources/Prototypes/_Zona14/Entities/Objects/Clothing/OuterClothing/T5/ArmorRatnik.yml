@@ -1,0 +1,45 @@
+# Base
+- type: entity
+  parent: Z14ArmorBaseT1PvP
+  id: Z14STClothingOuterArmorRatnikBase
+  categories: [ Zona14 ]
+  abstract: true
+  name: Warrior Bundle
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/ratnik_military.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/ratnik_military.rsi
+    
+# Stalker
+- type: entity
+  parent: Z14STClothingOuterArmorRatnikBase
+  id: Z14STClothingOuterArmorRatnik
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Warrior Bundle
+  description: The Ratnik-SN multifunctional clothing, gear, and footwear kit was developed for Russian Armed Forces special units. The latest innovative materials and technologies were used in its creation.
+  components:
+  - type: STWeight
+    self: 5
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/ratnik_military.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/ratnik_military.rsi
+
+# Neutral
+
+- type: entity
+  parent: Z14STClothingOuterArmorRatnikBase
+  id: Z14STClothingOuterArmorRatnikNeutral
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Neutral Ratnik Body Armor
+  description: Modernized body armor from the Ratnik kit
+  components:
+  - type: STWeight
+    self: 5
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/ratnik_neutral.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/ratnik_neutral.rsi

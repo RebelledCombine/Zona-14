@@ -1,0 +1,23 @@
+- type: entity
+  parent: BaseItem
+  id: Z14BaseMutantPart
+  categories: [ Zona14 ]
+  abstract: true
+  components:
+    - type: Craftable
+    - type: Material
+    - type: Sprite
+      state: icon
+    - type: Tag
+      tags:
+        - Khabar
+    - type: STWeight
+      self: 0.5
+    - type: Currency
+      price:
+        Roubles: 1
+        Dollar: 1
+        Fangs: 1
+    - type: STTrophy # stalker-en-changes: enables quality display on all mutant parts
+    - type: RepositoryItem # Stalker-EN
+      categoryName: repository-mutantparts-category

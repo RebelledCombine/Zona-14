@@ -27,9 +27,9 @@
   - yelled
   - yelling
   # RU
-  - кричит
-  - орет
-  - орёт
+  - screams # Zona14: кричит
+  - screams # Zona14: орет
+  - screams # Zona14: орёт
 
 - type: emote
   id: STLaugh
@@ -58,7 +58,7 @@
   - chortles
   - chortling
   # RU
-  - смеётся
+  - laughs # Zona14: смеётся
 
 - type: emote
   id: STSigh
@@ -75,7 +75,7 @@
   - sighs
   - sighed
   # RU
-  - вздыхает
+  - sighs # Zona14: вздыхает
 
 - type: emote
   id: STWhistle
@@ -92,7 +92,7 @@
   - whistles
   - whistleblowing
   # RU
-  - свистит
+  - whistles # Zona14: свистит
 
 - type: emote
   id: STCrying
@@ -112,4 +112,4 @@
   - sobs
   - sobbing
   # RU
-  - плачет
+  - cries # Zona14: плачет

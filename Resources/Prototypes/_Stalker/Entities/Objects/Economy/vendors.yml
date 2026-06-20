@@ -1,10 +1,11 @@
-### Военные
+# Zona14: translated Russian names/descriptions to English
+# Zona14: ## Военные
 
 - type: entity
   parent: VendingMachine
   id: VendingMachineMilitary
-  name: раздатчик военных
-  description: Заменил коптёра в современности.
+  name: Military Dispenser
+  description: Replaced the smoker in modern times.
   suffix: Stalker
   components:
     - type: VendingMachine
@@ -50,7 +51,7 @@
     545FMJBox: 50
     545PCBox: 5
     545HPBox: 7
-    # 545BPBox: 3 Убрано всё т4 по просьбе вииса
+    # Zona14: 545BPBox: 3 Убрано всё т4 по просьбе вииса
     739FMJBox: 5
     754FMJBox: 3
     919PBMBox: 10
@@ -76,7 +77,7 @@
     PowerCellHyper: 100
     BoxFlare: 50
     HandheldGPSBasic: 50
-    # Наборы
+    # Zona14: Наборы
     #ArmyAKSUCrate: 15
     ArmyCrateNewOfficer: 2
     ArmyCrateNewStandart: 10
@@ -84,8 +85,8 @@
 - type: entity
   parent: BaseVendingMachineRestock
   id: VendingMachineRestockMilitary
-  name: Снабжение военных
-  description: Ящик со всем, что вам нужно для уничтожения нелегалов.
+  name: Military Supply
+  description: A crate with everything you need to destroy illegal immigrants.
   categories: [ StSkipRestockTest ]
   components:
     - type: VendingMachineRestock
@@ -97,13 +98,13 @@
         - state: green_bit
           shader: unshaded
 
-#########################################Спавнер снабжения
+# Zona14: ########################################Спавнер снабжения
 
 - type: entity
-  name: спавнер военного снабжения
+  name: military supply spawner
   id: SupplySpawner
   parent: FlexibleMarkerTrigger
-  suffix: Stalker | КД 30 минут
+  suffix: Stalker | CD 30 minutes # Zona14: Stalker | КД 30 минут
   components:
     - type: Sprite
       layers:
@@ -119,13 +120,13 @@
           minimumEntitiesSpawned: 1
           maximumEntitiesSpawned: 1
 
-### Полиция
+# Zona14: ## Полиция
 
 - type: entity
   parent: VendingMachine
   id: VendingMachinePolice
-  name: раздатчик полиции
-  description: раздатчик полиции.
+  name: Police Dispenser
+  description: Police Dispenser.
   suffix: Stalker
   components:
     - type: VendingMachine
@@ -175,13 +176,13 @@
     hunterLicense: 5
     militaryLicense: 5
 
-### ООН
+# Zona14: ## ООН
 
 - type: entity
   parent: VendingMachine
   id: VendingMachineUN
-  name: раздатчик ООН
-  description: раздатчик ООН.
+  name: UN Dispenser
+  description: UN Dispenser.
   suffix: Stalker
   components:
     - type: VendingMachine
@@ -242,8 +243,8 @@
 - type: entity
   parent: BaseVendingMachineRestock
   id: VendingMachineRestockUN
-  name: Снабжение ООН
-  description: Ящик со всем, что вам нужно для выражения беспокойства.
+  name: UN Supply
+  description: A box with everything you need to express concern.
   categories: [ StSkipRestockTest ]
   components:
     - type: VendingMachineRestock
@@ -255,10 +256,10 @@
         - state: green_bit
           shader: unshaded
 
-#########################################Спавнер снабжения
+# Zona14: ########################################Спавнер снабжения
 
 - type: entity
-  name: спавнер снабжения ООН
+  name: UN supply spawner
   id: SupplyUNSpawner
   parent: FlexibleMarkerTrigger
   suffix: Stalker
@@ -277,13 +278,13 @@
           minimumEntitiesSpawned: 1
           maximumEntitiesSpawned: 1
 
-### ООН
+# Zona14: ## ООН
 
 - type: entity
   parent: VendingMachine
   id: VendingMachineLaborer
-  name: раздатчик грузчиков
-  description: раздатчик грузчиков. Отнесите ящики Лёшке барону, чтобы немного заработать
+  name: loader dispenser
+  description: Remover Dispenser. Take the boxes to Lyoshka to the baron to earn some money
   suffix: Stalker
   components:
     - type: VendingMachine
@@ -313,8 +314,8 @@
 - type: entity
   parent: BaseVendingMachineRestock
   id: VendingMachineRestockLaborer
-  name: Снабжение ящиков грузчиков
-  description: Ящик с ящиками для грузчиков
+  name: "Supply of loaders' boxes"
+  description: Loader Box
   categories: [ StSkipRestockTest ]
   components:
     - type: VendingMachineRestock
@@ -326,13 +327,13 @@
         - state: green_bit
           shader: unshaded
 
-############################################################################# СОП ПСЗ
+# Zona14: ############################################################################ СОП ПСЗ
 
 - type: entity
   parent: VendingMachine
   id: VendingMachineBoxesPSZMilitary
-  name: склад комплектов СОП
-  description: Склад армейских припасов с комплектами внутри.
+  name: OKSOP Kit Warehouse
+  description: Army Supply Depot with OKSOP kits inside.
   suffix: Stalker
   components:
     - type: VendingMachine
@@ -386,8 +387,8 @@
 - type: entity
   parent: BaseItem
   id: MilitaryPSZInventoryRestock
-  name: комплект ПСЗ пополнительный
-  description: Класть на склад.
+  name: PSZ Replenishment Kit
+  description: Put in stock.
   categories: [ StSkipRestockTest ]
   components:
     - type: VendingMachineRestock
@@ -403,13 +404,13 @@
       sprite: _Stalker/Structures/Furniture/olive_bag.rsi
       state: icon
 
-############################################################################# СОП ОФЦ ПСЗ
+# Zona14: ############################################################################ СОП ОФЦ ПСЗ
 
 - type: entity
   parent: VendingMachine
   id: VendingMachineBoxesPSZMilitaryOfficer
-  name: ящик с офицерскими комплектами СОП
-  description: Ящик, содержащий офицерские комплекты ПСЗ внутри.
+  name: OKSOP Officer Kit Box
+  description: A crate containing the PSZ officer kits inside.
   suffix: Stalker
   components:
     - type: VendingMachine
@@ -462,8 +463,8 @@
 - type: entity
   parent: BaseItem
   id: MilitaryPSZInventoryRestockOfficer
-  name: комплект ПСЗ офицерский пополнительный
-  description: Класть в офицерский ящик.
+  name: Officer Restocking Kit
+  description: "Put in the officer's box."
   categories: [ StSkipRestockTest ]
   components:
     - type: VendingMachineRestock
@@ -478,13 +479,13 @@
       sprite: _Stalker/Structures/Furniture/olive_bag.rsi
       state: icon
 
-############################################################################# МОНОЛИТ
+# Zona14: ############################################################################ МОНОЛИТ
 
 - type: entity
   parent: VendingMachineBoxesPSZMilitary
   id: VendingMachineBoxesMonolith
-  name: склад ящиков «Монолита»
-  description: Склад снаряжения группировки «Монолит».
+  name: Monolith Supply Crate Storage
+  description: Supply storage for the Monolith faction.
   suffix: ST
   components:
     - type: AccessReader
@@ -520,8 +521,8 @@
 - type: entity
   parent: BaseItem
   id: MonolithInventoryRestock
-  name: пополнительный ящик «Монолита»
-  description: Класть на склад.
+  name: Monolith Restock Crate
+  description: Place into storage.
   categories: [ StSkipRestockTest ]
   components:
     - type: VendingMachineRestock
@@ -536,13 +537,13 @@
       sprite: _Stalker/Structures/Furniture/Sets/military-box.rsi
       state: icon
 
-########## СЕРАФИМЫ
+# Zona14: ######### СЕРАФИМЫ
 
 - type: entity
   parent: VendingMachine
   id: VendingMachineSeraphim
-  name: раздатчик серафимов
-  description: Содержит базовое снаряжение для выживания в условиях севера Зоны.
+  name: Seraphim dispenser
+  description: Contains basic equipment for surviving in the conditions of the northern Zone.
   suffix: Stalker
   components:
     - type: VendingMachine
@@ -581,13 +582,13 @@
     545HPBox: 9
 
 
-#Отступы
+# Zona14: Отступы
 
 - type: entity
   parent: VendingMachine
   id: VendingMachineBoxesDeserter
-  name: ящик с наборами снаряжения Отступников
-  description: Ящик, содержащий снаряжение внутри.
+  name: crate of Deserter equipment kits
+  description: A crate containing equipment inside.
   suffix: Stalker
   components:
     - type: VendingMachine
@@ -633,13 +634,13 @@
   startingInventory:
     DesertirCrate: 8
 
-###ОДИНОЧКИ
+# Zona14: ##ОДИНОЧКИ
 
 - type: entity
   parent: VendingMachine
   id: VendingMachineBoxesVeteran
-  name: ящик с наборами снаряжения Сталкеров Ополченцев
-  description: Ящик, содержащий снаряжение внутри.
+  name: crate of Stalker Militia equipment kits
+  description: A crate containing equipment inside.
   suffix: Stalker
   components:
     - type: VendingMachine
@@ -685,13 +686,13 @@
   startingInventory:
     VeteranCrate: 8
 
-#БАНДИТЫ
+# Zona14: БАНДИТЫ
 
 - type: entity
   parent: VendingMachine
   id: VendingMachineBoxesBandit
-  name: ящик с наборами снаряжения Бандитов
-  description: Ящик, содержащий снаряжение внутри.
+  name: crate of Bandit equipment kits
+  description: A crate containing equipment inside.
   suffix: Stalker
   components:
     - type: VendingMachine
@@ -737,13 +738,13 @@
   startingInventory:
     BandityCrate: 8
 
-#СВОБОДА
+# Zona14: СВОБОДА
 
 - type: entity
   parent: VendingMachine
   id: VendingMachineBoxesFreedom
-  name: ящик с наборами снаряжения Наёмников
-  description: Ящик, содержащий снаряжение внутри.
+  name: crate of Mercenary equipment kits
+  description: A crate containing equipment inside.
   suffix: Stalker
   components:
     - type: VendingMachine
@@ -789,13 +790,13 @@
   startingInventory:
     FreedomCrate: 8
 
-#ЗАВЕТ
+# Zona14: ЗАВЕТ
 
 - type: entity
   parent: VendingMachine
   id: VendingMachineBoxesZavet
-  name: ящик с наборами снаряжения Завета
-  description: Ящик, содержащий снаряжение внутри.
+  name: crate of Zavet equipment kits
+  description: A crate containing equipment inside.
   suffix: Stalker
   components:
     - type: VendingMachine
@@ -841,13 +842,13 @@
   startingInventory:
     ZavetCrate: 8
 
-#СЕРАФИМЫ
+# Zona14: СЕРАФИМЫ
 
 - type: entity
   parent: VendingMachine
   id: VendingMachineBoxesSerafim
-  name: ящик с наборами снаряжения Серафимов
-  description: Ящик, содержащий снаряжение внутри.
+  name: crate of Seraphim equipment kits
+  description: A crate containing equipment inside.
   suffix: Stalker
   components:
     - type: VendingMachine
@@ -893,13 +894,13 @@
   startingInventory:
     SefirotCrate: 8
 
-#ДОЛГ
+# Zona14: ДОЛГ
 
 - type: entity
   parent: VendingMachine
   id: VendingMachineBoxesDuty
-  name: ящик с наборами снаряжения Долга
-  description: Ящик, содержащий снаряжение внутри.
+  name: crate of Duty equipment kits
+  description: A crate containing equipment inside.
   suffix: Stalker
   components:
     - type: VendingMachine
@@ -948,8 +949,8 @@
 - type: entity
   parent: VendingMachine
   id: VendingMachineBoxesMerc
-  name: ящик с наборами снаряжения Долга
-  description: Ящик, содержащий снаряжение внутри.
+  name: crate of Duty equipment kits
+  description: A crate containing equipment inside.
   suffix: Stalker
   components:
     - type: VendingMachine
@@ -990,7 +991,7 @@
       castShadows: false
       radius: 0
 
-#Проект
+# Zona14: Проект
 
 - type: vendingMachineInventory
   id: ProjectComplect
@@ -1003,8 +1004,8 @@
 - type: entity
   parent: VendingMachine
   id: VendingMachineBoxesProject
-  name: ящик с наборами снаряжения Проекта
-  description: Ящик, содержащий снаряжение внутри.
+  name: crate of Project equipment kits
+  description: A crate containing equipment inside.
   suffix: Stalker
   components:
     - type: VendingMachine

@@ -1,0 +1,11 @@
+# Shared Zona gas mask base — 1 kg, no protection.
+- type: entity
+  abstract: true
+  parent: STClothingMaskGas
+  id: Z14GasMaskBase
+  categories: [ Zona14 ]
+  name: Gas Mask Base
+  components:
+  - type: STWeight
+    self: 1
+  - type: Craftable

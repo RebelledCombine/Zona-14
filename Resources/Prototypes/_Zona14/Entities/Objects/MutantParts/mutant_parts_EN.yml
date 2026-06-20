@@ -1,0 +1,111 @@
+- type: entity
+  parent: Z14BaseMutantPart
+  id: Z14MutantPartChimeraTooth
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: chimera tooth
+  components:
+  - type: STWeight
+    self: 2.0
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/MutantParts/chimera_tooth.rsi
+  - type: Item
+    size: Small
+    shape:
+    - 0,0,0,1
+
+- type: entity
+  parent: Z14BaseMutantPart
+  id: Z14MutantPartCatGland
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: gland
+  components:
+  - type: STWeight
+    self: 0.5
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/MutantParts/cat_gland.rsi
+  - type: Item
+    size: Small
+    shape:
+    - 0,0,0,1
+
+- type: entity
+  parent: Z14BaseMutantPart
+  id: Z14MutantPartBearClaw
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: bear claw
+  components:
+  - type: STWeight
+    self: 0.3
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/MutantParts/bear_claw.rsi
+  - type: Item
+    size: Small
+    shape:
+    - 0,0,0,1
+
+- type: entity
+  parent: Z14BaseMutantPart
+  id: Z14MutantPartBearPaw
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: bear paw
+  components:
+  - type: STWeight
+    self: 0.5
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/MutantParts/bear_paw.rsi
+  - type: Item
+    size: Small
+    shape:
+    - 0,0,1,1
+
+- type: entity
+  parent: Z14BaseMutantPart
+  id: Z14MutantPartBearEye
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: bear eye
+  components:
+  - type: STWeight
+    self: 0.3
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/MutantParts/bear_eye.rsi
+  - type: Item
+    size: Small
+    shape:
+    - 0,0,0,1
+
+- type: entity
+  parent: Z14BaseMutantPart
+  id: Z14MutantPartIzlomArm
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: izlom arm
+  components:
+  - type: STWeight
+    self: 4.0
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/MutantParts/izlom_arm.rsi
+  - type: Item
+    size: Normal
+    shape:
+    - 0,0,1,2
+
+- type: entity
+  parent: Z14BaseMutantPart
+  id: Z14MutantPartFrogLeg
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: frog leg
+  components:
+  - type: STWeight
+    self: 2.0
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/MutantParts/frog_leg.rsi
+  - type: Item
+    size: Normal
+    shape:
+    - 0,0,0,1

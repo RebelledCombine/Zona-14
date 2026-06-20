@@ -1,0 +1,175 @@
+- type: entity
+  name: zombie trigger (1-4) (20%)
+  id: Z14STTriggerZombie142010
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger142010
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+        - Z14MobStalkerZombieBase
+        - Z14MobStalkerZombieISSG
+        - Z14MobStalkerZombieSosop
+        - Z14MobStalkerZombieGlod
+        - Z14MobStalkerZombieChN
+        - Z14MobStalkerZombieRHBZ
+        - Z14MobStalkerZombieMerc
+      restricted:
+        - Z14MobStalkerZombieBase
+        - Z14MobStalkerZombieISSG
+        - Z14MobStalkerZombieSosop
+        - Z14MobStalkerZombieGlod
+        - Z14MobStalkerZombieChN
+        - Z14MobStalkerZombieRHBZ
+        - Z14MobStalkerZombieMerc
+
+- type: entity
+  name: zombie trigger (1-4) (50%)
+  id: Z14STTriggerZombie145030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger145030
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+        - Z14MobStalkerZombieBase
+        - Z14MobStalkerZombieISSG
+        - Z14MobStalkerZombieSosop
+        - Z14MobStalkerZombieGlod
+        - Z14MobStalkerZombieChN
+        - Z14MobStalkerZombieRHBZ
+        - Z14MobStalkerZombieMerc
+      restricted:
+        - Z14MobStalkerZombieBase
+        - Z14MobStalkerZombieISSG
+        - Z14MobStalkerZombieSosop
+        - Z14MobStalkerZombieGlod
+        - Z14MobStalkerZombieChN
+        - Z14MobStalkerZombieRHBZ
+        - Z14MobStalkerZombieMerc
+
+- type: entity
+  name: zombie trigger (1-2) (10%)
+  id: Z14STTriggerZombie121010
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger121010
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+        - Z14MobStalkerZombieBase
+        - Z14MobStalkerZombieISSG
+        - Z14MobStalkerZombieSosop
+        - Z14MobStalkerZombieGlod
+        - Z14MobStalkerZombieChN
+        - Z14MobStalkerZombieRHBZ
+        - Z14MobStalkerZombieMerc
+      restricted:
+        - Z14MobStalkerZombieBase
+        - Z14MobStalkerZombieISSG
+        - Z14MobStalkerZombieSosop
+        - Z14MobStalkerZombieGlod
+        - Z14MobStalkerZombieChN
+        - Z14MobStalkerZombieRHBZ
+        - Z14MobStalkerZombieMerc
+
+- type: entity
+  name: zombie trigger (1-2) (50%)
+  id: Z14STTriggerZombie125010
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger125010
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+        - Z14MobStalkerZombieBase
+        - Z14MobStalkerZombieISSG
+        - Z14MobStalkerZombieSosop
+        - Z14MobStalkerZombieGlod
+        - Z14MobStalkerZombieChN
+        - Z14MobStalkerZombieRHBZ
+        - Z14MobStalkerZombieMerc
+      restricted:
+        - Z14MobStalkerZombieBase
+        - Z14MobStalkerZombieISSG
+        - Z14MobStalkerZombieSosop
+        - Z14MobStalkerZombieGlod
+        - Z14MobStalkerZombieChN
+        - Z14MobStalkerZombieRHBZ
+        - Z14MobStalkerZombieMerc
+
+
+- type: entity
+  name: zombie trigger (1) (100%) 30m
+  id: Z14STTriggerZombie1110030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger1110030
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+      - Z14MobStalkerZombieBase
+      - Z14MobStalkerZombieISSG
+      - Z14MobStalkerZombieSosop
+      - Z14MobStalkerZombieGlod
+      - Z14MobStalkerZombieChN
+      - Z14MobStalkerZombieRHBZ
+      - Z14MobStalkerZombieMerc
+      restricted:
+      - Z14MobStalkerZombieBase
+      - Z14MobStalkerZombieISSG
+      - Z14MobStalkerZombieSosop
+      - Z14MobStalkerZombieGlod
+      - Z14MobStalkerZombieChN
+      - Z14MobStalkerZombieRHBZ
+      - Z14MobStalkerZombieMerc
+
+- type: entity
+  name: zombie trigger (2) (100%) 30m
+  id: Z14STTriggerZombie2210030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger2210030
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+      - Z14MobStalkerZombieBase
+      - Z14MobStalkerZombieISSG
+      - Z14MobStalkerZombieSosop
+      - Z14MobStalkerZombieGlod
+      - Z14MobStalkerZombieChN
+      - Z14MobStalkerZombieRHBZ
+      - Z14MobStalkerZombieMerc
+      restricted:
+      - Z14MobStalkerZombieBase
+      - Z14MobStalkerZombieISSG
+      - Z14MobStalkerZombieSosop
+      - Z14MobStalkerZombieGlod
+      - Z14MobStalkerZombieChN
+      - Z14MobStalkerZombieRHBZ
+      - Z14MobStalkerZombieMerc
+
+- type: entity
+  name: zombie trigger (3) (100%) 30m
+  id: Z14STTriggerZombie3310030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger3310030
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+      - Z14MobStalkerZombieBase
+      - Z14MobStalkerZombieISSG
+      - Z14MobStalkerZombieSosop
+      - Z14MobStalkerZombieGlod
+      - Z14MobStalkerZombieChN
+      - Z14MobStalkerZombieRHBZ
+      - Z14MobStalkerZombieMerc
+      restricted:
+      - Z14MobStalkerZombieBase
+      - Z14MobStalkerZombieISSG
+      - Z14MobStalkerZombieSosop
+      - Z14MobStalkerZombieGlod
+      - Z14MobStalkerZombieChN
+      - Z14MobStalkerZombieRHBZ
+      - Z14MobStalkerZombieMerc

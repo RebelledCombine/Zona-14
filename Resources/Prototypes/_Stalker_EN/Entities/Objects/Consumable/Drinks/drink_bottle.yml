@@ -1,3 +1,4 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: [DrinkVisualsAllFilled, DrinkBottleGlassBaseFull]
   id: DrinkCossackVodkaBottleFull
@@ -26,8 +27,8 @@
 - type: entity
   parent: [DrinkBottleGlassBaseFull, DrinkVisualsAllFilled]
   id: STDrinkYevishWineBottleFull
-  name: поварское вино
-  description: Этикетка немного неаккуратная и явно напечатана вручную, но само вино превосходное и явно создано человеком, который посвятил себя созданию напитка, достойного внимания.
+  name: "chef's wine"
+  description: The label is a little messy and clearly hand-printed, but the wine itself is excellent and clearly made by someone who has dedicated themselves to creating a drink worthy of attention.
   suffix: ST, Food
   components:
   - type: SolutionContainerManager
@@ -58,8 +59,8 @@
 - type: entity
   parent: [ DrinkBaseMaterialGlass, DrinkBase, DrinkBaseOpenable, DrinkVisualsOpenable, DrinkVisualsFillOverlay ]
   id: STDrinkJar
-  name: банка
-  description: Старая банка.
+  name: jar
+  description: An old jar.
   suffix: ST
   components:
   - type: Sprite

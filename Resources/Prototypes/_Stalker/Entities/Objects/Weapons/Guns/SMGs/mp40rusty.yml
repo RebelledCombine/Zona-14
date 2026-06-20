@@ -1,3 +1,4 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   abstract: true
   parent: STBaseWeaponSMG
@@ -56,5 +57,5 @@
 - type: entity
   parent: STBaseWeaponSMGMP40rust
   id: STWeaponSMGMP40ruust
-  name: MP-40 ржавый
-  description: ФОМОЧКА, ТЫ ЧЕГО????
+  name: Rusty MP-40
+  description: FOMOCHKA, WHAT ARE YOU DOING????

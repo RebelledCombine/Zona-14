@@ -17,9 +17,9 @@ public sealed class PersistentCraftInventorySnapshot
         new Dictionary<string, int>());
 
     /// <summary>
-    /// Числовой хеш содержимого инвентаря для быстрого сравнения.
-    /// Используется только для определения "изменился ли инвентарь" в рамках одной сессии.
-    /// Возможны редкие коллизии — они безопасны: приведут лишь к пропуску одного обновления UI.
+    /// Numeric hash of inventory contents for quick comparison. // Zona14: translated comment
+    /// Used only to determine "has inventory changed" within a single session. // Zona14: translated comment
+    /// Rare collisions are possible — they are safe: will only skip one UI update. // Zona14: translated comment
     /// </summary>
     public int Signature { get; }
 

@@ -3,7 +3,7 @@
   id: Z14921PGJBox
   suffix: Z14
   categories: [ Zona14 ]
-  name: ammo box (9x21) P GZh
+  name: ammo pack (9x21) P (steel case)
   description: For SR-1 and SR-2M, 30 rounds per box. Penetrates class 2 armor.
   components:
   - type: Item
@@ -30,7 +30,7 @@
   id: Z14921PEGJBox
   suffix: Z14
   categories: [ Zona14 ]
-  name: ammo box (9x21) PE GZh
+  name: ammo pack (9x21) PE (steel case)
   description: For SR-1 and SR-2M, 30 rounds per box. Cannot penetrate armor, but deals massive damage to unarmored targets.
   components:
   - type: BallisticAmmoProvider
@@ -48,7 +48,7 @@
   id: Z14921BTGJBox
   suffix: Z14
   categories: [ Zona14 ]
-  name: ammo box (9x21) BT GZh
+  name: ammo pack (9x21) BT (steel case)
   description: For SR-1 and SR-2M, 30 rounds per box. Penetrates class 3 armor.
   components:
   - type: BallisticAmmoProvider
@@ -66,7 +66,7 @@
   id: Z149217N42Box
   suffix: Z14
   categories: [ Zona14 ]
-  name: ammo box (9x21) 7N42 "Zubilo"
+  name: 'ammo pack (9x21) 7N42 "Zubilo"'
   description: For SR-1 and SR-2M, 30 rounds per box. Penetrates class 4 armor.
   components:
   - type: BallisticAmmoProvider
@@ -84,7 +84,7 @@
   id: Z14921PGJBoxCink
   suffix: Z14
   categories: [ Zona14 ]
-  name: ammo crate (9x21) P GZh
+  name: ammo box (9x21) P (steel case)
   description: For SR-1 and SR-2M, 300 rounds per crate. Penetrates class 2 armor.
   components:
   - type: BallisticAmmoProvider
@@ -105,7 +105,7 @@
   id: Z14921PEGJBoxCink
   suffix: Z14
   categories: [ Zona14 ]
-  name: ammo crate (9x21) PE GZh
+  name: ammo box (9x21) PE (steel case)
   description: Expanding ammunition for SR-1 and SR-2M. Cannot penetrate armor, but deals massive damage to lightly armored or unarmored targets.
   components:
   - type: BallisticAmmoProvider
@@ -122,7 +122,7 @@
   id: Z14921BTGJBoxCink
   suffix: Z14
   categories: [ Zona14 ]
-  name: ammo crate (9x21) BT GZh
+  name: ammo box (9x21) BT (steel case)
   description: For SR-1 and SR-2M, 300 rounds per crate. Penetrates class 3 armor.
   components:
   - type: BallisticAmmoProvider
@@ -139,7 +139,7 @@
   id: Z149217N42BoxCink
   suffix: Z14
   categories: [ Zona14 ]
-  name: ammo crate (9x21) 7N42 "Zubilo"
+  name: 'ammo box (9x21) 7N42 "Zubilo"'
   description: For SR-1 and SR-2M, 300 rounds per crate. Penetrates class 4 armor.
   components:
   - type: BallisticAmmoProvider

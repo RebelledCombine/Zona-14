@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: STBaseWeaponPistol
   id: WeaponPistolStalkerLP08
-  name: Люгер
+  name: Luger
   suffix: ST
-  description: Люгер 9x19 — как мини-арсенал в кармане. Компактный, быстрый и готов к приключениям!
+  description: Luger 9x19 — like a mini arsenal in your pocket. Compact, fast, and ready for adventure!
   components:
     - type: STWeight
       self: 1.1

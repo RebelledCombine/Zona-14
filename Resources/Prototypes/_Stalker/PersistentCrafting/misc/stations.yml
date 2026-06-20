@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: BaseStructure
   id: PersistentCraftWorkbench
-  name: старый верстак ремесленника
-  description: Декоративный объект. Новое меню крафта теперь открывается активным навыком роли Atom.
+  name: "old craftsman's workbench"
+  description: Decorative object. The new crafting menu is now opened by the active skill of the Atom role.
   suffix: Stalker, persistent craft
   components:
     - type: Sprite

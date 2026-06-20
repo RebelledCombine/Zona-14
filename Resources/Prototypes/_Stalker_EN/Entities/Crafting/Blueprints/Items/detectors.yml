@@ -1,7 +1,8 @@
-﻿- type: entity
+﻿# Zona14: translated Russian names/descriptions to English
+- type: entity
   parent: STBaseBlueprint
   id: DetectorVelesBlueprint
-  name: чертёж детектора велес
+  name: Veles detector blueprint
   components:
   - type: STBlueprint
     blueprint: recipeDetectorVeles
@@ -9,7 +10,7 @@
 - type: entity
   parent: STBaseBlueprint
   id: DetectorSvarogBlueprint
-  name: чертёж детектора сварог
+  name: svarog detector blueprint
   components:
   - type: STBlueprint
     blueprint: recipeDetectorSvarog

@@ -1,0 +1,136 @@
+
+- type: entity
+  parent: Z14STClothingOuterArmorSevaBase
+  id: Z14ClothingOuterArmorHazmatRf
+  categories: [ Zona14 ]
+  name: Armored HAZMAT
+  suffix: Z14
+  description: A field-improved HAZMAT suit using anomalous materials, providing good all-around protection. Should be used with the built-in helmet.
+  components:
+    - type: STWeight
+      self: 5
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/outerClothing/armored_hazmat.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/outerClothing/armored_hazmat.rsi
+    - type: ToggleableClothing
+      clothingPrototype: ClothingHeadHazmat
+    - type: Armor
+      modifiers:
+        flatReductions:
+          Blunt: 2
+          Slash: 2
+          Piercing: 2
+          Heat: 1
+          Cold: 1
+          Shock: 1
+          Radiation: 1
+          Caustic: 1
+          Compression: 1
+          Psy: 1
+        coefficients:
+          Blunt: 0.90
+          Slash: 0.90
+          Piercing: 0.90
+          Heat: 0.90
+          Cold: 0.90
+          Shock: 0.90
+          Radiation: 0.90
+          Caustic: 0.90
+          Compression: 0.90
+          Psy: 0.90
+    - type: GrantsArtifactSlots
+      slots: 5 # Stalker-Changes | Number of artifact slots this armor grants
+
+- type: entity
+  parent: STClothingHeadHatBase
+  id: Z14ClothingHeadHazmat
+  suffix: Z14
+  name: HAZMAT helmet
+  description: A little hood))
+  categories: [ HideSpawnMenu, Zona14 ]
+  components:
+    - type: STWeight
+      self: 1
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/hats/hazmat_helm.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/hats/hazmat_helm.rsi
+    - type: BreathMask
+    - type: IngestionBlocker
+    - type: IdentityBlocker
+    - type: Tag
+      tags:
+        - BlockMask
+    - type: HideLayerClothing
+      slots:
+      - Hair
+      - Snout
+
+- type: entity
+  parent: Z14STClothingOuterArmorSevaBase
+  id: Z14ClothingOuterArmorHazmatRfWhite
+  categories: [ Zona14 ]
+  name: armored HAZMAT
+  suffix: Z14
+  description: A field-improved HAZMAT suit using anomalous materials, providing good all-around protection. Should be used with the built-in helmet. Developed by T.D.I. Inc.
+  components:
+    - type: STWeight
+      self: 5
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/outerClothing/armored_hazmat_white.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/outerClothing/armored_hazmat_white.rsi
+    - type: ToggleableClothing
+      clothingPrototype: ClothingHeadHazmatWhite
+    - type: Armor
+      modifiers:
+        flatReductions:
+          Blunt: 2
+          Slash: 2
+          Piercing: 2
+          Heat: 1
+          Cold: 1
+          Shock: 1
+          Radiation: 1
+          Caustic: 1
+          Compression: 1
+          Psy: 1
+        coefficients:
+          Blunt: 0.90
+          Slash: 0.90
+          Piercing: 0.90
+          Heat: 0.90
+          Cold: 0.90
+          Shock: 0.90
+          Radiation: 0.90
+          Caustic: 0.90
+          Compression: 0.90
+          Psy: 0.90
+    - type: GrantsArtifactSlots
+      slots: 5 # Stalker-Changes | Number of artifact slots this armor grants
+
+- type: entity
+  parent: STClothingHeadHatBase
+  id: Z14ClothingHeadHazmatWhite
+  suffix: Z14
+  name: HAZMAT helmet
+  description: A little hood))
+  categories: [ HideSpawnMenu, Zona14 ]
+  components:
+    - type: STWeight
+      self: 1
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/hats/hazmat_helm_white.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/hats/hazmat_helm_white.rsi
+    - type: BreathMask
+    - type: IngestionBlocker
+    - type: IdentityBlocker
+    - type: Tag
+      tags:
+        - BlockMask
+    - type: HideLayerClothing
+      slots:
+      - Hair
+      - Snout

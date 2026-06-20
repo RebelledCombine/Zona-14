@@ -1,0 +1,16 @@
+- type: entity
+  name: bear family trigger (100%)
+  id: Z14BearFamilyPackTrigger100
+  categories: [ Zona14 ]
+  parent: MarkerBase
+  suffix: Z14
+  components:
+  - type: STPackSpawner
+    protoId: Z14STBearFamilyPack
+  - type: ApproachTrigger
+  - type: Sprite
+    layers:
+    - state: blue
+    - sprite: Mobs/Aliens/Xenos/burrower.rsi
+      state: crit
+    - state: ai

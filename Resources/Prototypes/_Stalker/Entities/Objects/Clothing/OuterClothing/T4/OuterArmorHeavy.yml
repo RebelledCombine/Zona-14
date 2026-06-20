@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: ClothingOuterArmorPSZ9D
   id: STClothingOuterArmorHeavyM
-  name: бронекостюм "Туз"
+  name: armored coveralls
   suffix: ST, T4, PvP
-  description: Ну очень блатной комбез
+  description: Based on a common jumpsuit, armored because it has increased protection from most physical damage by the armor plates. It also adds weight, but provides excellent projectile protection for combines such as this one.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/outerClothing/merc_armor_2.rsi

@@ -121,7 +121,7 @@
         STClothingOuterArmorLightPlateVestBaseMerc: 1000
         ClothingHeadHelmetInfantryMerc: 300
         STClothingOuterArmorIOTVMerc: 8500
-    - name:  Хранилища и Контейнеры
+    - name:  Storage and Containers # Zona14: Хранилища и Контейнеры
       priority: 5
       items:
           # BackPacks

@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 # 9x21
 
 - type: entity
   id: STCartridge921
-  name: cartridge (9х21 auto)
+  name: cartridge (9x21 auto)
   parent: BaseCartridge
   abstract: true
   components:
@@ -20,7 +21,7 @@
 
 - type: entity
   id: STCartridge921PGJ
-  name: Патрон (9х21)П гж
+  name: cartridge (9x21) P bimetal jacket
   parent: STCartridge921
   components:
   - type: Sprite
@@ -39,7 +40,7 @@
 
 - type: entity
   id: STCartridge921PEGJ
-  name: Патрон (9х21)ПЭ гж
+  name: cartridge (9x21) PE bimetal jacket
   parent: STCartridge921
   components:
   - type: Sprite
@@ -54,7 +55,7 @@
 
 - type: entity
   id: STCartridge921BTGJ
-  name: Патрон (9х21)БТ гж
+  name: cartridge (9x21) BT bimetal jacket
   parent: STCartridge921
   components:
   - type: Sprite
@@ -69,7 +70,7 @@
 
 - type: entity
   id: STCartridge9217N42
-  name: Патрон (9х21)7Н42
+  name: cartridge (9x21) 7N42
   parent: STCartridge921
   components:
   - type: Sprite

@@ -1,7 +1,8 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: BaseWall
   id: WallWoodFallout
-  name: деревянная стена
+  name: Wooden wall
   suffix: ST, Mapping, wall, KMIN
   components:
   - type: Tag
@@ -23,7 +24,7 @@
 - type: entity
   parent: BaseWall
   id: WallWoodFalloutAlt
-  name: деревянная стена
+  name: wooden wall
   suffix: ST
   components:
   - type: Tag
@@ -45,7 +46,7 @@
 - type: entity
   parent: BaseWall
   id: WallSidingFallout
-  name: ПВХ стена
+  name: PVC Wall
   suffix: ST, Mapping, wall
   components:
   - type: Tag
@@ -67,7 +68,7 @@
 - type: entity
   parent: BaseWall
   id: WallSidingFalloutAlt
-  name: ПВХ стена
+  name: PVC wall
   suffix: ST
   components:
   - type: Tag
@@ -89,7 +90,7 @@
 - type: entity
   parent: BaseWall
   id: WallBrickFallout
-  name: кирпичная стена
+  name: Brick wall
   suffix: ST, Mapping, wall
   components:
   - type: Tag
@@ -111,7 +112,7 @@
 - type: entity
   parent: BaseWall
   id: WallBrickFalloutAlt
-  name: кирпичная стена
+  name: brick wall
   suffix: ST
   components:
   - type: Tag
@@ -133,7 +134,7 @@
 - type: entity
   parent: BaseWall
   id: WallBunkerFallout
-  name: бункерная стена
+  name: Bunker wall
   suffix: ST, Mapping, wall
   components:
   - type: Tag
@@ -155,7 +156,7 @@
 - type: entity
   parent: BaseWall
   id: WallBunkerFalloutAlt
-  name: бункерная стена
+  name: bunker wall
   suffix: ST
   components:
   - type: Tag
@@ -177,7 +178,7 @@
 - type: entity
   parent: BaseWall
   id: WallDungeonFallout
-  name: укрепленная стена
+  name: Fortified wall
   suffix: ST, Mapping, wall
   components:
   - type: Tag
@@ -199,7 +200,7 @@
 - type: entity
   parent: BaseWall
   id: WallDungeonFalloutAlt
-  name: укрепленная стена
+  name: reinforced wall
   suffix: ST
   components:
   - type: Tag
@@ -221,7 +222,7 @@
 - type: entity
   parent: BaseWall
   id: WallMetalFallout
-  name: стальная стена
+  name: Steel Wall
   suffix: ST, Mapping, wall
   components:
   - type: Tag
@@ -243,7 +244,7 @@
 - type: entity
   parent: BaseWall
   id: WallMetalFalloutAlt
-  name: стальная стена
+  name: steel wall
   suffix: ST
   components:
   - type: Tag
@@ -265,7 +266,7 @@
 - type: entity
   parent: BaseWall
   id: WallRustMetalFallout
-  name: ржавая стена
+  name: Rusty Wall
   suffix: ST, Mapping, wall
   components:
   - type: Tag
@@ -287,7 +288,7 @@
 - type: entity
   parent: BaseWall
   id: WallRustMetalFalloutAlt
-  name: ржавая стена
+  name: rusty wall
   suffix: ST
   components:
   - type: Tag
@@ -309,7 +310,7 @@
 - type: entity
   parent: BaseWall
   id: WallScrapFallout
-  name: профнастиловая стена
+  name: Corrugated Wall
   suffix: ST, Mapping, wall
   components:
   - type: Tag
@@ -331,7 +332,7 @@
 - type: entity
   parent: BaseWall
   id: WallScrapFalloutAlt
-  name: профнастиловая стена
+  name: corrugated metal wall
   suffix: ST
   components:
   - type: Tag
@@ -353,7 +354,7 @@
 - type: entity
   parent: BaseWall
   id: WallSewerFallout
-  name: канализационная стена
+  name: Sewer wall
   suffix: ST, Mapping, wall
   components:
   - type: Tag
@@ -375,7 +376,7 @@
 - type: entity
   parent: BaseWall
   id: WallSewerFalloutAlt
-  name: канализационная стена
+  name: sewer wall
   suffix: ST
   components:
   - type: Tag
@@ -397,7 +398,7 @@
 - type: entity
   parent: BaseWall
   id: WallReinfMetalFallout
-  name: бронированная стена
+  name: Armored wall
   suffix: ST, Mapping, wall
   components:
   - type: Tag
@@ -419,7 +420,7 @@
 - type: entity
   parent: BaseWall
   id: WallReinfMetalFalloutAlt
-  name: бронированная стена
+  name: armored wall
   suffix: ST
   components:
   - type: Tag
@@ -441,7 +442,7 @@
 - type: entity
   parent: BaseWall
   id: WallRustReinfMetalFallout
-  name: ржавая бронированная стена
+  name: Rusty armored wall
   suffix: ST, Mapping, wall
   components:
   - type: Tag
@@ -463,7 +464,7 @@
 - type: entity
   parent: BaseWall
   id: WallRustReinfMetalFalloutAlt
-  name: ржавая бронированная стена
+  name: rusty armored wall
   suffix: ST
   components:
   - type: Tag
@@ -485,7 +486,7 @@
 - type: entity
   parent: BaseWall
   id: WallVaultFallout
-  name: стена убежища
+  name: Shelter Wall
   suffix: ST, Mapping, wall
   components:
   - type: Tag
@@ -507,7 +508,7 @@
 - type: entity
   parent: BaseWall
   id: WallVaultFalloutAlt
-  name: стена убежища
+  name: vault wall
   suffix: ST
   components:
   - type: Tag
@@ -529,9 +530,9 @@
 - type: entity
   parent: BaseWall
   id: WallConcreteFallout
-  name: бетонная стена
+  name: Concrete Wall
   suffix: ST, Mapping, wall
-  description: Стена, для создания которой устраивается опалубка с железной арматурой внутри, в которую заливается жидкий бетон.
+  description: A wall to create a formwork with iron reinforcement inside, into which liquid concrete is poured.
   components:
   - type: Tag
     tags:
@@ -552,9 +553,9 @@
 - type: entity
   parent: BaseWall
   id: WallConcreteFalloutAlt
-  name: бетонная стена
+  name: concrete wall
   suffix: ST
-  description: Стена, для создания которой устраивается опалубка с железной арматурой внутри, в которую заливается жидкий бетон.
+  description: A wall built by erecting formwork with iron rebar inside, into which liquid concrete is poured.
   components:
   - type: Tag
     tags:
@@ -575,7 +576,7 @@
 - type: entity
   parent: BaseWall
   id: WallRockFallout
-  name: каменная стена
+  name: Stone Wall
   suffix: ST, Mapping, wall
   components:
   - type: Tag
@@ -597,7 +598,7 @@
 - type: entity
   parent: BaseWall
   id: WallRockFalloutAlt
-  name: каменная стена
+  name: stone wall
   suffix: ST
   components:
   - type: Tag
@@ -619,7 +620,7 @@
 - type: entity
   parent: BaseWall
   id: WallPrisonFallout
-  name: тюремная стена
+  name: Prison wall
   suffix: ST, Mapping, wall
   components:
   - type: Tag
@@ -641,7 +642,7 @@
 - type: entity
   parent: BaseWall
   id: WallPrisonFalloutAlt
-  name: тюремная стена
+  name: prison wall
   suffix: ST
   components:
   - type: Tag
@@ -663,9 +664,9 @@
 - type: entity
   parent: BaseWall
   id: WallConcreteFalloutDestructible
-  name: ветхая бетонная стена
-  description: Вот-вот разрушится, если по ней постучать.
-  suffix: ST, Mapping, wall, разрушимое
+  name: Dilapidated concrete wall
+  description: About to collapse if you knock on it.
+  suffix: ST, Mapping, wall, destructible # Zona14: ST, Mapping, wall, разрушимое
   components:
   - type: Tag
     tags:
@@ -694,8 +695,8 @@
 - type: entity
   parent: BaseWall
   id: WallConcreteFalloutDestructibleAlt
-  name: ветхая бетонная стена
-  description: Вот-вот разрушится, если по ней постучать.
+  name: decrepit concrete wall
+  description: "It looks like it's about to crumble if you knock on it."
   suffix: ST
   components:
   - type: Tag
@@ -746,8 +747,8 @@
 - type: entity
   id: WallRockBasaltDestructible
   suffix: ST, Mapping, wall, Destructible
-  name: Хрупкий базальт
-  description: Вот-вот разрушится, если по нему постучать.
+  name: Brittle Basalt
+  description: About to collapse if you knock on it.
   parent: WallRock
   components:
     - type: Sprite
@@ -778,7 +779,7 @@
   parent: BaseWall
   id: STWallNecropolis
   suffix: ST, Mapping, wall
-  name: стена чистилища
+  name: wall of purgatory
   components:
   - type: Tag
     tags:
@@ -800,7 +801,7 @@
   parent: BaseWall
   id: STWallLava
   suffix: ST, Mapping, wall
-  name: Стена из базальта
+  name: Basalt wall
   components:
   - type: Tag
     tags:

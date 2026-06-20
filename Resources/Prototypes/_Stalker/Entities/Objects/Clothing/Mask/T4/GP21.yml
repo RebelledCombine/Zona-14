@@ -1,10 +1,11 @@
+# Zona14: translated Russian names/descriptions to English
 
 - type: entity
   parent: STClothingMaskGas
   id: ClothingMaskGP21
   suffix: ST, T4, Caustic
-  name: противогаз ГП-21
-  description: Призван защитить органы зрения и дыхания от целого ряда поражающих факторов. Оборудование адресовано как гражданскому населению, так и участникам невоенизированных формирований, принимающих участие в мероприятиях по устранению последствий аварий. Защищает от токсинов.
+  name: GP-21 gas mask
+  description: Designed to protect the organs of vision and breathing from a range of damaging factors. The equipment is addressed to both the civilian population and members of non-paramilitary formations taking part in measures to eliminate the consequences of accidents. Protects against radiation.
   components:
   - type: Tag
     tags:

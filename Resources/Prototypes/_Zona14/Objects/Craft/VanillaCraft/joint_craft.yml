@@ -1,0 +1,164 @@
+- type: seed
+  id: Z14STcannabisGrow
+  name: cannabis sativa
+  # suffix: ST, Stalker, botany # This field does not exist!
+  displayName: cannabis sativa
+  plantRsi: Objects/Specific/Hydroponics/cannabis.rsi
+  packetPrototype: CannabisSeeds
+  productPrototypes:
+    - STLeavesCannabis
+  harvestRepeat: Repeat
+  lifespan: 75
+  maturation: 8
+  production: 12
+  yield: 2
+  potency: 20
+  growthStages: 3
+  waterConsumption: 0.40
+  idealLight: 9
+  idealHeat: 298
+  chemicals:
+    THC:
+      Min: 1
+      Max: 10
+      PotencyDivisor: 10
+
+- type: entity
+  id: Z14CannabisSeedsStalker
+  categories: [ Zona14 ]
+  parent: SeedBase
+  name: marijuana seeds
+  suffix: Z14
+  description: Just don't get caught by the cops.
+  components:
+    - type: Seed
+      seedId: STcannabisGrow
+    - type: Sprite
+      sprite: Objects/Specific/Hydroponics/cannabis.rsi
+
+- type: entity
+  name: marijuana seeds
+  parent: ProduceBase
+  id: Z14STLeavesCannabis
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: At first glance, ordinary marijuana buds. Probably due to the abnormal effect of the local soil on the seeds, the fruits acquired an unusual color.
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/rainbow_cannabis.rsi
+  - type: Produce
+    seedId: STcannabisGrow
+  - type: Edible
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: THC
+          Quantity: 15
+  - type: Craftable
+
+###############   STAGE 2 DRYING AND GRINDING
+
+- type: entity
+  name: barrels
+  parent: BaseItem
+  id: Z14STLeavesCannabisDried
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: Almost ready-to-eat dried marijuana fruit, but the buds are too large to be easy to smoke.
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: THC
+          Quantity: 12
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/cannabis.rsi
+    state: dried
+  - type: Craftable
+
+- type: entity
+  name: dried barrels
+  parent: BaseItem
+  id: Z14STGroundCannabis
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: Fully finished hand for tight jambing.
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/rainbow_cannabis.rsi
+    state: powderpile_rainbow
+    color: white
+  - type: Tag
+    tags:
+    - Cannabis
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: THC
+          Quantity: 20
+  - type: Craftable
+
+
+
+
+###############   STAGE 3 ROLLING AND SMOKING
+
+- type: entity
+  id: Z14STPaperRolling
+  categories: [ Zona14 ]
+  name: Roll-Up Paper
+  description: Roll-your-own paper is a thin and light material that is ideal for rolling tobacco yourself, providing even burning and a clean taste.
+  suffix: Z14
+  parent: BaseItem
+  components:
+  - type: Sprite
+    sprite: Objects/Consumable/Smokeables/Cigarettes/paper.rsi
+    state: cigpaper
+  - type: Item
+    sprite: Objects/Consumable/Smokeables/Cigarettes/paper.rsi
+    size: Tiny
+  - type: Tag
+    tags:
+    - RollingPaper
+    - Trash
+  - type: SpaceGarbage
+  - type: Craftable
+
+- type: entity
+  id: Z14STJoint
+  categories: [ Zona14 ]
+  suffix: Z14
+  parent: STBaseCigar
+  name: picket fence
+  description: A tightly packed picket of local sativa. Holding it in your teeth, you are overwhelmed with an intoxicating feeling of freedom. All that remains is to blow smoke and have a good time.
+  components:
+  - type: Sprite
+    sprite: Objects/Consumable/Smokeables/Cannabis/joint.rsi
+    state: unlit-icon
+  - type: Clothing
+    sprite: Objects/Consumable/Smokeables/Cannabis/joint.rsi
+    slots: [ mask ]
+  - type: Construction
+    graph: smokeableJointRainbow
+    node: jointRainbow
+  - type: SolutionContainerManager
+    solutions:
+      smokable:
+        maxVol: 20
+        reagents:
+        - ReagentId: THC
+          Quantity: 20
+        - ReagentId: SpaceDrugs
+          Quantity: 4
+        - ReagentId: Lipolicide
+          Quantity: 4
+        - ReagentId: MindbreakerToxin
+          Quantity: 2.66
+        - ReagentId: Happiness
+          Quantity: 2.66
+        - ReagentId: Psicodine
+          Quantity: 0.8
+

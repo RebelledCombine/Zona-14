@@ -1,7 +1,8 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: BasePMMag
-  name: магазин ПМм 9x18 (10)
-  description: Магазин 9x18 мм для ПМм. Вместимость пуль 10. Продают пустым.
+  name: 9x18 PM magazine (10)
+  description: 9x18 mm magazine for PMm. Bullet capacity 10. They sell empty.
   parent: BaseItem
   suffix: Stalker
   components:
@@ -41,12 +42,12 @@
     steps: 5
     zeroVisible: false
   - type: RepositoryItem
-    categoryName: Магазины
+    categoryName: Magazines # Zona14: Магазины
 
 - type: entity
   id: BaseAPSMag
-  name: магазин АПС 9x18 (20)
-  description: Магазин 9x18 Для пистолетов АПС. Вместимость пуль 20. Продают пустым.
+  name: 9x18 APS magazine (20)
+  description: 9x18 magazine for APS pistols. Bullet capacity 20. They sell empty.
   parent: BaseItem
   suffix: Stalker
   components:
@@ -82,13 +83,13 @@
       zeroVisible: false
     - type: Appearance
     - type: RepositoryItem
-      categoryName: Магазины
+      categoryName: Magazines # Zona14: Магазины
 
-######################### Бизон #########################
+# Zona14: ######################## Бизон #########################
 - type: entity
   id: BizonMag
-  name: шнековый магазин "Бизон" (64)
-  description: Шнековый магазин на Бизон под 9х18. Вместимость пуль 64. Продают пустым.
+  name: screw magazine "Bison" (64)
+  description: Auger magazine for Bison under 9x18. Bullet capacity 64. They sell empty.
   parent: VityazMag
   suffix: Stalker
   components:
@@ -126,13 +127,13 @@
   - type: Appearance
   - type: Craftable
   - type: RepositoryItem
-    categoryName: Магазины
+    categoryName: Magazines # Zona14: Магазины
 
-######################### Скорпион #########################
+# Zona14: ######################## Скорпион #########################
 - type: entity
   id: Vz61Mag
-  name: магазин vz. 61 "Скорпион" (20)
-  description: Магазин на компактного ПП "Скорпион". Вместимость пуль 20. Продают пустым.
+  name: vz store. 61 Skorpion (20)
+  description: 9x18 magazine for the compact SMG "Skorpion". Bullet capacity 20. They sell empty.
   parent: BizonMag
   suffix: Stalker
   components:

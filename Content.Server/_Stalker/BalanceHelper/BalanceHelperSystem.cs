@@ -16,7 +16,7 @@ namespace Content.Server._Stalker.BalanceHelper;
 
 public sealed partial class BalanceHelperSystem : EntitySystem
 {
-    // Находит русскую или английскую Т с цифрой. Это и будет тир
+    // Finds Russian or English T followed by a digit. This is the tier // Zona14: translated comment
     private static readonly Regex TIER_REGEX = new Regex(@"\b[TТ]\d\b", RegexOptions.Compiled);
 
     [Dependency] private readonly IPrototypeManager _proto = default!;

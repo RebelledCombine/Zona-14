@@ -1,5 +1,6 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
-  name: триггер зомби (1-4) (20%)
+  name: zombie trigger (1-4) (20%)
   id: STTriggerZombie142010
   parent: STBaseTrigger142010
   suffix: ST, T3, Trigger
@@ -23,7 +24,7 @@
         - MobStalkerZombieMerc
 
 - type: entity
-  name: триггер зомби (1-4) (50%)
+  name: zombie trigger (1-4) (50%)
   id: STTriggerZombie145030
   parent: STBaseTrigger145030
   suffix: ST, T3, Trigger
@@ -47,7 +48,7 @@
         - MobStalkerZombieMerc
 
 - type: entity
-  name: триггер зомби (1-2) (10%)
+  name: zombie trigger (1-2) (10%)
   id: STTriggerZombie121010
   parent: STBaseTrigger121010
   suffix: ST, T3, Trigger
@@ -71,7 +72,7 @@
         - MobStalkerZombieMerc
 
 - type: entity
-  name: триггер зомби (1-2) (50%)
+  name: zombie trigger (1-2) (50%)
   id: STTriggerZombie125010
   parent: STBaseTrigger125010
   suffix: ST, T3, Trigger

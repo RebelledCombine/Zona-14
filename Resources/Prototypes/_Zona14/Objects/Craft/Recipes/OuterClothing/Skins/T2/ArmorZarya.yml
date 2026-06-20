@@ -1,0 +1,79 @@
+- type: lightCraftingRecipe
+  id: Z14STCraftSkinClothingOuterArmorZaryaJabs
+  results:
+    - ClothingOuterArmorZaryaJabs
+  steps:
+    firstIngredient: STSkinsKitBandits
+    secondIngredient: ClothingOuterArmorZaryaStalker
+    keepFirst: true
+    time: 5
+
+- type: lightCraftingRecipe
+  id: Z14STCraftSkinSTClothingOuterArmorBandits
+  results:
+    - STClothingOuterArmorBandits
+  steps:
+    firstIngredient: STSkinsKitBandits
+    secondIngredient: ClothingOuterArmorZaryaStalker
+    keepFirst: true
+    time: 5
+
+- type: lightCraftingRecipe
+  id: Z14STCraftSkinClothingOuterArmorZaryaDolg
+  results:
+    - ClothingOuterArmorZaryaDolg
+  steps:
+    firstIngredient: STSkinsKitDolg
+    secondIngredient: ClothingOuterArmorZaryaStalker
+    keepFirst: true
+    time: 5
+
+- type: lightCraftingRecipe
+  id: Z14STCraftSkinClothingOuterArmorZaryaNeutral
+  results:
+    - ClothingOuterArmorZaryaNeutral
+  steps:
+    firstIngredient: STSkinsKitNeutral
+    secondIngredient: ClothingOuterArmorZaryaStalker
+    keepFirst: true
+    time: 5
+
+- type: lightCraftingRecipe
+  id: Z14STCraftSkinClothingOuterArmorZaryaPoisk
+  results:
+    - ClothingOuterArmorZaryaPoisk
+  steps:
+    firstIngredient: STSkinsKitPoisk
+    secondIngredient: ClothingOuterArmorZaryaStalker
+    keepFirst: true
+    time: 5
+
+- type: lightCraftingRecipe
+  id: Z14STCraftSkinSTClothingOuterArmorDesertersZarya
+  results:
+    - STClothingOuterArmorDesertersZarya
+  steps:
+    firstIngredient: STSkinsKitDeserters
+    secondIngredient: ClothingOuterArmorZaryaStalker
+    keepFirst: true
+    time: 5
+
+- type: lightCraftingRecipe
+  id: Z14STCraftSkinClothingOuterArmorZaryaRene
+  results:
+    - ClothingOuterArmorZaryaRene
+  steps:
+    firstIngredient: STSkinsKitRenegate
+    secondIngredient: ClothingOuterArmorZaryaStalker
+    keepFirst: true
+    time: 5
+
+- type: lightCraftingRecipe
+  id: Z14STCraftSkinSTClothingOuterArmorProjectZarya
+  results:
+  - STClothingOuterArmorProjectZarya
+  steps:
+    firstIngredient: STSkinsKitProject
+    secondIngredient: ClothingOuterArmorZaryaStalker
+    keepFirst: true
+    time: 5

@@ -3,7 +3,7 @@
   id: Z14918PGJBox
   suffix: Z14
   categories: [ Zona14 ]
-  name: ammo box (9x18) P GZh
+  name: Ammo Box (9x18) P gzh
   description: For PMm, 30 rounds per box. Penetrates only class 1 armor.
   components:
   - type: MagazineVisuals
@@ -26,7 +26,7 @@
   id: Z14918PSTBox
   suffix: Z14
   categories: [ Zona14 ]
-  name: ammo box (9x18) PST GZh
+  name: Ammo Box (9x18) PST gzh
   description: For PMm, 30 rounds per box. Penetrates class 2 armor.
   components:
   - type: BallisticAmmoProvider
@@ -44,7 +44,7 @@
   id: Z14918SP7Box
   suffix: Z14
   categories: [ Zona14 ]
-  name: ammo box (9x18) SP7 GZh
+  name: Ammo Box (9x18) SP7 gzh
   description: Expanding ammunition for former Warsaw Pact SMGs and pistols. Cannot penetrate armor, but deals massive damage to lightly armored or unarmored targets.
   components:
   - type: BallisticAmmoProvider
@@ -62,7 +62,7 @@
   id: Z14918PBMBox
   suffix: Z14
   categories: [ Zona14 ]
-  name: ammo box (9x18) PBM GZh
+  name: Ammo Box (9x18) PBM gzh
   description: For PMm, 30 rounds per box. Penetrates class 3 armor.
   components:
   - type: BallisticAmmoProvider
@@ -81,7 +81,7 @@
   id: Z14918PGJBoxCink
   suffix: Z14
   categories: [ Zona14 ]
-  name: ammo crate (9x18) P GZh
+  name: Large Ammo Box (9x18) P gzh
   description: For PMm, 300 rounds per crate. Penetrates only class 1 armor.
   components:
   - type: BallisticAmmoProvider
@@ -102,7 +102,7 @@
   id: Z14918PSTBoxCink
   suffix: Z14
   categories: [ Zona14 ]
-  name: ammo crate (9x18) PST GZh
+  name: Large Ammo Box (9x18) PST gzh
   description: For PMm, 300 rounds per crate. Penetrates class 2 armor.
   components:
   - type: BallisticAmmoProvider
@@ -119,7 +119,7 @@
   id: Z14918SP7BoxCink
   suffix: Z14
   categories: [ Zona14 ]
-  name: ammo crate (9x18) SP7 GZh
+  name: Large Ammo Box (9x18) SP7 gzh
   description: Expanding ammunition for former Warsaw Pact SMGs and pistols. Cannot penetrate armor, but deals massive damage to lightly armored or unarmored targets.
   components:
   - type: BallisticAmmoProvider
@@ -136,7 +136,7 @@
   id: Z14918PBMBoxCink
   suffix: Z14
   categories: [ Zona14 ]
-  name: ammo crate (9x18) PBM GZh
+  name: Large Ammo Box (9x18) PBM gzh
   description: For PMm, 300 rounds per crate. Penetrates class 3 armor.
   components:
   - type: BallisticAmmoProvider

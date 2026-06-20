@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 
 - type: entity
   parent: STBaseWeaponGameRevolver
   id: STWeaponRevolverRugerRedhawk
   name: Ruger Redhawk .44 Magnum
-  description: Шестизарядный надежный револьвер на калибре .44 Magnum. Имеет хорошую точность и малую отдачу, является популярным среди различных группировок.
+  description: Eight-shot reliable revolver in .357 Magnum. It is known for shooting fast while kicking hard, and is popular among various factions.
   components:
     - type: Sprite
       sprite: _Stalker/Objects/Weapons/Guns/Revolvers/ruger_redhawk_45acp.rsi
@@ -45,7 +46,7 @@
     - type: UseDelay
       delay: 1
     - type: RepositoryItem
-      categoryName: Оружие
+      categoryName: Weapons # Zona14: Оружие
     - type: STWeaponDamageFalloff
       falloffMultiplier: 0.8
     - type: STWeaponAccuracy

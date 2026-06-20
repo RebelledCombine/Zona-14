@@ -1,0 +1,335 @@
+- type: entity
+  parent: Z14ClothingNeckDogtagBase
+  id: Z14ClothingNeckDogtagLoner
+  categories: [ Zona14 ]
+  name: stalker dogtag
+  description: A standard metal dogtag engraved with an identifier. A common sight in the zone.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Clothing/Neck/Dogtags/loner.rsi
+  - type: TypingIndicatorClothing
+    proto: stalker
+  - type: Currency
+    price:
+      PremiumSupplyTalons: 1
+
+- type: entity
+  parent: Z14ClothingNeckDogtagBase
+  id: Z14ClothingNeckDogtagBandit
+  categories: [ Zona14 ]
+  name: bandit dogtag
+  description: A dark steel dogtag decorated with a skull.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Clothing/Neck/Dogtags/band.rsi
+  - type: TypingIndicatorClothing
+    proto: bandit
+  - type: Currency
+    price:
+      PremiumSupplyTalons: 2
+
+- type: entity
+  parent: Z14ClothingNeckDogtagBase
+  id: Z14ClothingNeckDogtagBanditPahan
+  categories: [ Zona14 ]
+  name: bandit pahan dogtag
+  description: A dark steel dogtag decorated with a skull wearing a crown.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Clothing/Neck/Dogtags/band_pahan.rsi
+  - type: TypingIndicatorClothing
+    proto: bandit
+  - type: Currency
+    price:
+      PremiumSupplyTalons: 2
+
+- type: entity
+  parent: Z14ClothingNeckDogtagBase
+  id: Z14ClothingNeckDogtagClearSky
+  categories: [ Zona14 ]
+  name: stalker dogtag
+  description: A lightweight galvanized dogtag in pale blue, an image of the sun is pressed into it.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Clothing/Neck/Dogtags/cs.rsi
+  - type: TypingIndicatorClothing
+    proto: cs
+  - type: Currency
+    price:
+      PremiumSupplyTalons: 1
+
+- type: entity
+  parent: Z14ClothingNeckDogtagBase
+  id: Z14ClothingNeckDogtagClearSkyLeader
+  categories: [ Zona14 ]
+  name: stalker dogtag
+  description: A lightweight galvanized dogtag in pale blue, an image of the sun is pressed into it and small, intricate birds decorate the back.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Clothing/Neck/Dogtags/cs_lead.rsi
+  - type: TypingIndicatorClothing
+    proto: cs
+  - type: Currency
+    price:
+      PremiumSupplyTalons: 1
+
+- type: entity
+  parent: Z14ClothingNeckDogtagBase
+  id: Z14ClothingNeckDogtagDuty
+  categories: [ Zona14 ]
+  name: duty dogtag
+  description: A durable reddog tag with a black rubber sleeve, an identifier is carved into it.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Clothing/Neck/Dogtags/duty.rsi
+  - type: TypingIndicatorClothing
+    proto: duty
+  - type: Currency
+    price:
+      PremiumSupplyTalons: 1
+
+- type: entity
+  parent: Z14ClothingNeckDogtagBase
+  id: Z14ClothingNeckDogtagDutyCommander
+  categories: [ Zona14 ]
+  name: duty commander dogtag
+  description: A durable reddog tag with a black rubber sleeve, a military rank and identifier are carved into it.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Clothing/Neck/Dogtags/duty_command.rsi
+  - type: TypingIndicatorClothing
+    proto: duty
+  - type: Currency
+    price:
+      PremiumSupplyTalons: 1
+
+- type: entity
+  parent: Z14ClothingNeckDogtagBase
+  id: Z14ClothingNeckDogtagEco
+  categories: [ Zona14 ]
+  name: scientist dogtag
+  description: A clean steel dogtag with a blue and red flask on the front and a barcode on the back.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Clothing/Neck/Dogtags/eco.rsi
+  - type: TypingIndicatorClothing
+    proto: ecologist
+  - type: Currency
+    price:
+      PremiumSupplyTalons: 0
+
+- type: entity
+  parent: Z14ClothingNeckDogtagBase
+  id: Z14ClothingNeckDogtagEcoLeader
+  categories: [ Zona14 ]
+  name: scientist leader dogtag
+  description: A clean steel dogtag with a blue and red flask overlayed with the Ukrainian flag. A barcode is printed on the back.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Clothing/Neck/Dogtags/eco_lead.rsi
+  - type: TypingIndicatorClothing
+    proto: ecologist
+  - type: Currency
+    price:
+      PremiumSupplyTalons: 0
+
+- type: entity
+  parent: Z14ClothingNeckDogtagBase
+  id: Z14ClothingNeckDogtagFreedom
+  categories: [ Zona14 ]
+  name: freedom dogtag
+  description: A dented metal dogtag with a dog crudely carved into it.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Clothing/Neck/Dogtags/free.rsi
+  - type: TypingIndicatorClothing
+    proto: freedom
+  - type: Currency
+    price:
+      PremiumSupplyTalons: 1
+
+- type: entity
+  parent: Z14ClothingNeckDogtagBase
+  id: Z14ClothingNeckDogtagFreedomAtaman
+  categories: [ Zona14 ]
+  name: freedom ataman dogtag
+  description: A dented metal dogtag with a dog crudely carved into it. It's been carefully painted.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Clothing/Neck/Dogtags/free_ataman.rsi
+  - type: TypingIndicatorClothing
+    proto: freedom
+  - type: Currency
+    price:
+      PremiumSupplyTalons: 1
+
+- type: entity
+  parent: Z14ClothingNeckDogtagBase
+  id: Z14ClothingNeckDogtagJournalist
+  categories: [ Zona14 ]
+  name: press ID
+  description: A laminated ID designating the owner as a reporter.
+  suffix: Z14
+  components:
+    - type: Sprite
+      sprite: _Stalker_EN/Objects/Clothing/Neck/Dogtags/journalist.rsi
+    - type: TypingIndicatorClothing
+      proto: journalist
+    - type: Currency
+      price:
+        PremiumSupplyTalons: 1
+
+- type: entity
+  parent: Z14ClothingNeckDogtagBase
+  id: Z14ClothingNeckDogtagMercenary
+  categories: [ Zona14 ]
+  name: mercenary dogtag
+  description: A lightweight dogtag in dark blue with identifying numbers carved into it.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Clothing/Neck/Dogtags/merc.rsi
+  - type: TypingIndicatorClothing
+    proto: mercenary
+  - type: Currency
+    price:
+      PremiumSupplyTalons: 2
+
+- type: entity
+  parent: Z14ClothingNeckDogtagBase
+  id: Z14ClothingNeckDogtagMercenaryCommander
+  categories: [ Zona14 ]
+  name: mercenary commander dogtag
+  description: A lightweight dogtag in dark blue with identifying numbers carved into it. It's dented and scratched.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Clothing/Neck/Dogtags/merc_command.rsi
+  - type: TypingIndicatorClothing
+    proto: mercenary
+  - type: Currency
+    price:
+      PremiumSupplyTalons: 2
+
+- type: entity
+  parent: Z14ClothingNeckDogtagBase
+  id: Z14ClothingNeckDogtagMilitary
+  categories: [ Zona14 ]
+  name: military dogtag
+  description: A military dogtag in standard green, a rank and identifying number has been engraved into it.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Clothing/Neck/Dogtags/mili.rsi
+  - type: TypingIndicatorClothing
+    proto: military
+  - type: Currency
+    price:
+      PremiumSupplyTalons: 0
+
+- type: entity
+  parent: Z14ClothingNeckDogtagBase
+  id: Z14ClothingNeckDogtagMilitaryCommander
+  categories: [ Zona14 ]
+  name: military commander dogtag
+  description: A military dogtag in standard green, a rank and identifying number has been engraved into it.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Clothing/Neck/Dogtags/mili_command.rsi
+  - type: TypingIndicatorClothing
+    proto: military
+  - type: Currency
+    price:
+      PremiumSupplyTalons: 0
+
+- type: entity
+  parent: Z14ClothingNeckDogtagBase
+  id: Z14ClothingNeckDogtagMonolith
+  categories: [ Zona14 ]
+  name: monolith dogtag
+  description: A pale white dogtag with no identifying features.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Clothing/Neck/Dogtags/mono.rsi
+  - type: TypingIndicatorClothing
+    proto: monolith
+  - type: Currency
+    price:
+      PremiumSupplyTalons: 2
+
+- type: entity
+  parent: Z14ClothingNeckDogtagBase
+  id: Z14ClothingNeckDogtagNeutral
+  categories: [ Zona14 ]
+  name: neutral dogtag
+  description: A metal dogtag on a reflective yellow lanyard, a blue free stalker symbol had been pressed into it.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Clothing/Neck/Dogtags/neutral.rsi
+  - type: TypingIndicatorClothing
+    proto: neutral
+  - type: Currency
+    price:
+      PremiumSupplyTalons: 1
+
+- type: entity
+  parent: Z14ClothingNeckDogtagBase
+  id: Z14ClothingNeckDogtagRenegade
+  categories: [ Zona14 ]
+  name: renegade dogtag
+  description: A dogtag caked in mud and grime, it's decorated with a gold and green scorpion.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Clothing/Neck/Dogtags/renegat.rsi
+  - type: TypingIndicatorClothing
+    proto: renegade
+  - type: Currency
+    price:
+      PremiumSupplyTalons: 2
+
+- type: entity
+  parent: Z14ClothingNeckDogtagBase
+  id: Z14ClothingNeckDogtagRenegadeLeader
+  categories: [ Zona14 ]
+  name: renegade leader dogtag
+  description: A dogtag caked in blood, it's decorated with a gold and green scorpion.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Clothing/Neck/Dogtags/renegat_lead.rsi
+  - type: TypingIndicatorClothing
+    proto: renegade
+  - type: Currency
+    price:
+      PremiumSupplyTalons: 2
+
+- type: entity
+  parent: Z14ClothingNeckDogtagBase
+  id: Z14ClothingNeckDogtagRookie
+  categories: [ Zona14 ]
+  name: rookie dogtag
+  description: A scratched, unmarked dogtag given to newcomers in the Zone. Sidorovich won't engrave a real Loner tag until you've proven you can survive.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Clothing/Neck/Dogtags/rookie.rsi
+  - type: TypingIndicatorClothing
+    proto: rookie
+  - type: Currency
+    price:
+      PremiumSupplyTalons: 0

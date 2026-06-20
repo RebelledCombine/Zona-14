@@ -1,0 +1,396 @@
+- type: entity
+  name: st-foldedflag-band
+  parent: BaseItem
+  id: Z14STFoldedFlagBand
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Fun/flags_folded.rsi
+    state: band
+  - type: Craftable
+  - type: Tag
+    tags:
+    - FoldedFlagBand
+
+- type: entity
+  name: st-foldedflag-CS
+  parent: BaseItem
+  id: Z14STFoldedFlagCS
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Fun/flags_folded.rsi
+    state: cs
+  - type: Craftable
+  - type: Tag
+    tags:
+    - FoldedFlagCS
+
+- type: entity
+  name: st-foldedflag-dolg
+  parent: BaseItem
+  id: Z14STFoldedFlagDuty
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Fun/flags_folded.rsi
+    state: duty
+  - type: Craftable
+  - type: Tag
+    tags:
+    - FoldedFlagDuty
+
+- type: entity
+  name: st-foldedflag-freedom
+  parent: BaseItem
+  id: Z14STFoldedFlagFree
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Fun/flags_folded.rsi
+    state: free
+  - type: Craftable
+  - type: Tag
+    tags:
+    - FoldedFlagFree
+
+- type: entity
+  name: st-foldedflag-helper
+  parent: BaseItem
+  id: Z14STFoldedFlagHelper
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Fun/flags_folded.rsi
+    state: helper
+  - type: Craftable
+  - type: Tag
+    tags:
+    - FoldedFlagHelper
+
+- type: entity
+  name: st-foldedflag-merc
+  parent: BaseItem
+  id: Z14STFoldedFlagMerc
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Fun/flags_folded.rsi
+    state: merc
+  - type: Craftable
+  - type: Tag
+    tags:
+    - FoldedFlagMerc
+
+- type: entity
+  name: st-foldedflag-mili
+  parent: BaseItem
+  id: Z14STFoldedFlagMili
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Fun/flags_folded.rsi
+    state: military
+  - type: Craftable
+  - type: Tag
+    tags:
+    - FoldedFlagMili
+
+- type: entity
+  name: st-foldedflag-mono
+  parent: BaseItem
+  id: Z14STFoldedFlagMono
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Fun/flags_folded.rsi
+    state: mono
+  - type: Craftable
+  - type: Tag
+    tags:
+    - FoldedFlagMono
+
+- type: entity
+  name: st-foldedflag-rene
+  parent: BaseItem
+  id: Z14STFoldedFlagRene
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Fun/flags_folded.rsi
+    state: rene
+  - type: Craftable
+  - type: Tag
+    tags:
+    - FoldedFlagRene
+
+# i fucking hate construction graphs
+#BAND
+- type: construction
+  id: Z14FlagBandCraft
+  graph: FlagBandCraft
+  startNode: start
+  targetNode: flagbandend
+  category: construction-category-structures
+  objectType: Structure
+  placementMode: SnapgridCenter
+  hide: false
+  canBuildInImpassable: true
+
+- type: constructionGraph
+  id: Z14FlagBandCraft
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: flagbandend
+          steps:
+            - tag: FoldedFlagBand
+              name: construction-step-st-foldedflag-band
+              icon:
+                sprite: _Stalker_EN/Objects/Fun/flags_folded.rsi
+                state: band
+              doAfter: 7
+    - node: flagbandend
+      entity: Banner1
+
+#DUTY
+- type: construction
+  id: Z14FlagDutyCraft
+  graph: FlagDutyCraft
+  startNode: start
+  targetNode: flagdutyend
+  category: construction-category-structures
+  objectType: Structure
+  placementMode: SnapgridCenter
+  hide: false
+  canBuildInImpassable: true
+
+- type: constructionGraph
+  id: Z14FlagDutyCraft
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: flagdutyend
+      steps:
+      - tag: FoldedFlagDuty
+        name: construction-step-st-foldedflag-duty
+        icon:
+          sprite: _Stalker_EN/Objects/Fun/flags_folded.rsi
+          state: duty
+        doAfter: 7
+  - node: flagdutyend
+    entity: Banner2
+
+# FREEDOM
+- type: construction
+  id: Z14FlagFreeCraft
+  graph: FlagFreeCraft
+  startNode: start
+  targetNode: flagfreeend
+  category: construction-category-structures
+  objectType: Structure
+  placementMode: SnapgridCenter
+  hide: false
+  canBuildInImpassable: true
+
+- type: constructionGraph
+  id: Z14FlagFreeCraft
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: flagfreeend
+      steps:
+      - tag: FoldedFlagFree
+        name: construction-step-st-foldedflag-freedom
+        icon:
+          sprite: _Stalker_EN/Objects/Fun/flags_folded.rsi
+          state: free
+        doAfter: 7
+  - node: flagfreeend
+    entity: Banner3
+
+# MERC
+- type: construction
+  id: Z14FlagMercCraft
+  graph: FlagMercCraft
+  startNode: start
+  targetNode: flagmercend
+  category: construction-category-structures
+  objectType: Structure
+  placementMode: SnapgridCenter
+  hide: false
+  canBuildInImpassable: true
+
+- type: constructionGraph
+  id: Z14FlagMercCraft
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: flagmercend
+      steps:
+      - tag: FoldedFlagMerc
+        name: construction-step-st-foldedflag-merc
+        icon:
+          sprite: _Stalker_EN/Objects/Fun/flags_folded.rsi
+          state: merc
+        doAfter: 7
+  - node: flagmercend
+    entity: Banner4
+
+# HELPER
+- type: construction
+  id: Z14FlagHelperCraft
+  graph: FlagHelperCraft
+  startNode: start
+  targetNode: flaghelperend
+  category: construction-category-structures
+  objectType: Structure
+  placementMode: SnapgridCenter
+  hide: false
+  canBuildInImpassable: true
+
+- type: constructionGraph
+  id: Z14FlagHelperCraft
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: flaghelperend
+      steps:
+      - tag: FoldedFlagHelper
+        name: construction-step-st-foldedflag-helper
+        icon:
+          sprite: _Stalker_EN/Objects/Fun/flags_folded.rsi
+          state: helper
+        doAfter: 7
+  - node: flaghelperend
+    entity: Banner7
+
+# RENEGADE
+- type: construction
+  id: Z14FlagReneCraft
+  graph: FlagReneCraft
+  startNode: start
+  targetNode: flagreneend
+  category: construction-category-structures
+  objectType: Structure
+  placementMode: SnapgridCenter
+  hide: false
+  canBuildInImpassable: true
+
+- type: constructionGraph
+  id: Z14FlagReneCraft
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: flagreneend
+      steps:
+      - tag: FoldedFlagRene
+        name: construction-step-st-foldedflag-rene
+        icon:
+          sprite: _Stalker_EN/Objects/Fun/flags_folded.rsi
+          state: rene
+        doAfter: 7
+  - node: flagreneend
+    entity: Banner8
+
+# CS
+- type: construction
+  id: Z14FlagCSCraft
+  graph: FlagCSCraft
+  startNode: start
+  targetNode: flagcsend
+  category: construction-category-structures
+  objectType: Structure
+  placementMode: SnapgridCenter
+  hide: false
+  canBuildInImpassable: true
+
+- type: constructionGraph
+  id: Z14FlagCSCraft
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: flagcsend
+      steps:
+      - tag: FoldedFlagCS
+        name: construction-step-st-foldedflag-cs
+        icon:
+          sprite: _Stalker_EN/Objects/Fun/flags_folded.rsi
+          state: cs
+        doAfter: 7
+  - node: flagcsend
+    entity: Banner14
+
+# MILITARY
+- type: construction
+  id: Z14FlagMiliCraft
+  graph: FlagMiliCraft
+  startNode: start
+  targetNode: flagmiliend
+  category: construction-category-structures
+  objectType: Structure
+  placementMode: SnapgridCenter
+  hide: false
+  canBuildInImpassable: true
+
+- type: constructionGraph
+  id: Z14FlagMiliCraft
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: flagmiliend
+      steps:
+      - tag: FoldedFlagMili
+        name: construction-step-st-foldedflag-mili
+        icon:
+          sprite: _Stalker_EN/Objects/Fun/flags_folded.rsi
+          state: military
+        doAfter: 7
+  - node: flagmiliend
+    entity: Banner18
+
+# MONOLITH
+- type: construction
+  id: Z14FlagMonoCraft
+  graph: FlagMonoCraft
+  startNode: start
+  targetNode: flagmonoend
+  category: construction-category-structures
+  objectType: Structure
+  placementMode: SnapgridCenter
+  hide: false
+  canBuildInImpassable: true
+
+- type: constructionGraph
+  id: Z14FlagMonoCraft
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: flagmonoend
+      steps:
+      - tag: FoldedFlagMono
+        name: construction-step-st-foldedflag-mono
+        icon:
+          sprite: _Stalker_EN/Objects/Fun/flags_folded.rsi
+          state: mono
+        doAfter: 7
+  - node: flagmonoend
+    entity: FactionFlagMonolith

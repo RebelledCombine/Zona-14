@@ -1,0 +1,88 @@
+- type: entity
+  name: Military Guard
+  suffix: Z14
+  parent: MobStalkerBaseGuard
+  id: Z14MobStalkerMilitaryGuard
+  categories: [ Zona14 ]
+  components:
+   - type: NpcFactionMember
+     factions:
+     - Sci
+
+- type: entity
+  name: Military Guard
+  suffix: Z14
+  parent: MobStalkerBaseGuard
+  id: Z14MobStalkerMilitaryVovaVist
+  categories: [ Zona14 ]
+  description: Vova Vist has excellent machine gun firing skills, combined with the anomalous power of his machine gun, which is enough to make a military man one of the most dangerous people in the Zone. Even such a legendary stalker as Scar demonstrated superhuman capabilities and all his skills, giving his all and receiving a huge portion of five-point pain to break into the Village of Rookies, avoiding the keen eye, brought to the limit of skill and deadly bullets of Vova Vista.
+  components:
+  - type: Sprite
+    sprite: /Textures/_Stalker/Mobs/Military/Vist.rsi
+  - type: PredictedBatterySelfRecharger
+    autoRechargeRate: 50
+  - type: PredictedBattery
+    maxCharge: 100
+    startingCharge: 100
+  - type: BatteryAmmoProvider
+    proto: Bullet918PGJ
+    fireCost: 1
+  - type: Gun
+    soundGunshot:
+      path: /Audio/_Stalker/Effects/Guns/pkm_shot.ogg
+    fireRate: 10
+    useKey: false
+    selectedMode: FullAuto
+    minAngle: 5
+    maxAngle: 20
+    angleIncrease: 1
+    angleDecay: 30
+    availableModes:
+    - FullAuto
+
+- type: entity
+  name: Vova Vist
+  suffix: Z14
+  parent: MobStalkerBaseGuard
+  id: Z14MobStalkerMilitarySniper
+  categories: [ Zona14 ]
+  description:
+  components:
+  - type: Sprite
+    sprite: /Textures/_Stalker/Mobs/Military/Sniper.rsi
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: alive
+      Critical:
+        Base: dead
+      Dead:
+        Base: dead
+  - type: HTN
+    rootTask:
+      task: STMonolith
+    blackboard:
+      VisionRadius: !type:Single
+        30
+      AggroVisionRadius: !type:Single
+        25
+  - type: PredictedBatterySelfRecharger
+    autoRechargeRate: 25
+  - type: PredictedBattery
+    maxCharge: 100
+    startingCharge: 100
+  - type: BatteryAmmoProvider
+    proto: Bullet754FMJ
+    fireCost: 80
+  - type: Gun
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/sniper.ogg
+    fireRate: 1
+    useKey: false
+    selectedMode: FullAuto
+    minAngle: 1
+    maxAngle: 1
+    angleIncrease: 1
+    angleDecay: 1
+    availableModes:
+    - FullAuto

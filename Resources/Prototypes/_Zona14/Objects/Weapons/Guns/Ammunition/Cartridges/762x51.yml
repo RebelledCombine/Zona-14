@@ -1,0 +1,49 @@
+- type: entity
+  id: Z14Cartridge751M80
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Cartridge (7.62x51) M80
+  parent: BaseCartridge751
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet751M80
+
+- type: entity
+  id: Z14Cartridge751Noiser
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Cartridge (7.62x51) Ultra Noiser
+  parent: BaseCartridge751
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet751Noiser
+
+- type: entity
+  id: Z14Cartridge751M61
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Cartridge (7.62x51) M61
+  parent: BaseCartridge751
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet751M61
+
+- type: entity
+  id: Z14Cartridge751M993
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Cartridge (7.62x51) M993
+  parent: BaseCartridge751
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet751M993
+
+- type: entity
+  id: Z14Cartridge754R
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: cartridge (7.62x54R) M993
+  parent: BaseCartridge754R
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet754R

@@ -1,0 +1,40 @@
+- type: entity
+  parent: Z14MobMutantSeasonedBoar
+  id: Z14STMobMutantSeasonedBoarCommon
+  categories: [ Zona14 ]
+  name: Seasoned Boar
+  suffix: Z14
+  components:
+  - type: STMobVariant
+    quality: Common
+    applied: true
+
+- type: entity
+  parent: Z14MobMutantSeasonedBoar
+  id: Z14STMobMutantSeasonedBoarUncommon
+  categories: [ Zona14 ]
+  name: Adapted Seasoned Boar
+  suffix: Z14
+  components:
+  - type: STMobVariant
+    quality: Uncommon
+
+- type: entity
+  parent: Z14MobMutantSeasonedBoar
+  id: Z14STMobMutantSeasonedBoarRare
+  categories: [ Zona14 ]
+  name: Mutated Seasoned Boar
+  suffix: Z14
+  components:
+  - type: STMobVariant
+    quality: Rare
+
+- type: entity
+  parent: Z14MobMutantSeasonedBoar
+  id: Z14STMobMutantSeasonedBoarLegendary
+  categories: [ Zona14 ]
+  name: Singular Seasoned Boar
+  suffix: Z14
+  components:
+  - type: STMobVariant
+    quality: Legendary

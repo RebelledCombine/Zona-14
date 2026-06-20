@@ -1,0 +1,29 @@
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14ClothingOuterCoatBolotniyBlueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Swamp Cloak Recipe
+  components:
+    - type: STBlueprint
+      blueprint: newrecipeClothingOuterCoatBolotniy
+
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14ClothingOuterCoatKolchygaBlueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Kolchuga Cloak Recipe
+  components:
+    - type: STBlueprint
+      blueprint: newrecipeClothingOuterCoatKolchyga
+
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14ClothingOuterCoatStalkerBlueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: leather coat recipe
+  components:
+    - type: STBlueprint
+      blueprint: newrecipeClothingOuterCoatStalker

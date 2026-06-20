@@ -4,13 +4,13 @@
   parent: VendingMachine
   id: Z14VendingMachineMilitary
   categories: [ Zona14 ]
-  name: military dispenser
+  name: Military Dispenser
   description: Replaced the quartermaster in modern times.
   suffix: Z14
   components:
     - type: VendingMachine
       ejectDelay: 0.1
-      pack: MilitaryInventory
+      pack: Z14MilitaryInventory
       dispenseOnHitChance: 0.0
       dispenseOnHitThreshold: 2
       offState: off
@@ -33,14 +33,14 @@
   id: Z14MilitaryInventory
   startingInventory:
     Syringe: 6
-    ClothingMaskGasM40Military: 6
+    Z14ClothingMaskGasM40Military: 6
     ExtendedEmergencyOxygenTankFilledStalker: 4
     DoubleEmergencyOxygenTankStalkerFilled: 2
-    GL1Grenade: 3
+    Z14GL1Grenade: 3
     Z14DG05SmokeGrenade: 2
     Z14RGD5Grenade: 2
-    ClothingHeadBandana1Military: 15
-    ClothingHeadBandana2Military: 15
+    Z14ClothingHeadBandana1Military: 15
+    Z14ClothingHeadBandana2Military: 15
     RazorWire: 200
     545Mag30: 30
     739Mag30: 5
@@ -57,21 +57,21 @@
     Z14919PBMBox: 10
     PillDexalin: 50
     # SelfSteampack: 10
-    MedkitAI2: 25
-    STBrutepack: 50
-    STGauze: 50
+    Z14MedkitAI2: 25
+    Z14STBrutepack: 50
+    Z14STGauze: 50
     # MilitarySteampack: 5
-    MedkitMilitary: 10
-    antiradpill: 5
-    STEnergyDrink: 5
+    Z14MedkitMilitary: 10
+    Z14antiradpill: 5
+    Z14STEnergyDrink: 5
     FoodBreadPlain: 100
-    STOintment: 50
+    Z14STOintment: 50
     DrinkFlaskOld: 50
     DrinkWaterBottleFull: 50
     FoodTinMRE: 50
     BoxSafebox: 5
     GeigerCounter: 10
-    BaseRadio: 30
+    Z14BaseRadio: 30
     STBolt: 1000
     FlashlightSeclite: 50
     PowerCellHyper: 100
@@ -79,20 +79,20 @@
     HandheldGPSBasic: 50
     # Kits
     #ArmyAKSUCrate: 15
-    ArmyCrateNewOfficer: 2
-    ArmyCrateNewStandart: 10
+    Z14ArmyCrateNewOfficer: 2
+    Z14ArmyCrateNewStandart: 10
 
 - type: entity
   parent: BaseVendingMachineRestock
   id: Z14VendingMachineRestockMilitary
   categories: [ Zona14, StSkipRestockTest ]
   suffix: Z14
-  name: military supply restock
+  name: Military Supply
   description: A crate with everything you need to eliminate illegals.
   components:
     - type: VendingMachineRestock
       canRestock:
-        - MilitaryInventory
+        - Z14MilitaryInventory
     - type: Sprite
       layers:
         - state: base
@@ -102,7 +102,7 @@
 # MARK: Military Supply Spawner
 
 - type: entity
-  name: military supply spawner
+  name: Military Supply Spawner
   id: Z14SupplySpawner
   categories: [ Zona14 ]
   parent: FlexibleMarkerTrigger
@@ -116,7 +116,7 @@
         - state: ai
         - type: TimedSpawner
           prototypes:
-            - VendingMachineRestockMilitary
+            - Z14VendingMachineRestockMilitary
           chance: 1
           intervalSeconds: 18000
           minimumEntitiesSpawned: 1
@@ -128,13 +128,13 @@
   parent: VendingMachine
   id: Z14VendingMachinePolice
   categories: [ Zona14 ]
-  name: police dispenser
+  name: Police Dispenser
   description: Police equipment dispenser.
   suffix: Z14
   components:
     - type: VendingMachine
       ejectDelay: 0.1
-      pack: PoliceInventory
+      pack: Z14PoliceInventory
       dispenseOnHitChance: 0.0
       dispenseOnHitThreshold: 2
       offState: off
@@ -155,16 +155,16 @@
   id: Z14PoliceInventory
   startingInventory:
     BoxHandcuff: 5
-    PoliceAKCrate: 2
-    PlicePmCrate: 15
+    Z14PoliceAKCrate: 2
+    Z14PlicePmCrate: 15
     PillDexalin: 50
-    MedkitAI2: 25
-    STBrutepack: 50
-    STGauze: 50
-    MedkitMilitary: 10
-    antiradpill: 5
+    Z14MedkitAI2: 25
+    Z14STBrutepack: 50
+    Z14STGauze: 50
+    Z14MedkitMilitary: 10
+    Z14antiradpill: 5
     FoodBreadPlain: 100
-    STOintment: 50
+    Z14STOintment: 50
     DrinkFlaskOld: 50
     DrinkWaterBottleFull: 50
     FoodTinMRE: 50
@@ -176,8 +176,8 @@
     Z14545BPBox: 10
     Z14TearGasGrenadeStalker: 5
     SecurityWhistle: 10
-    hunterLicense: 5
-    militaryLicense: 5
+    Z14hunterLicense: 5
+    Z14militaryLicense: 5
 
 # MARK: UN
 
@@ -185,13 +185,13 @@
   parent: VendingMachine
   id: Z14VendingMachineUN
   categories: [ Zona14 ]
-  name: UN dispenser
+  name: UN Dispenser
   description: UN equipment dispenser.
   suffix: Z14
   components:
     - type: VendingMachine
       ejectDelay: 0.1
-      pack: UNInventory
+      pack: Z14UNInventory
       dispenseOnHitChance: 0.0
       dispenseOnHitThreshold: 2
       offState: off
@@ -215,17 +215,17 @@
   startingInventory:
     BoxFlare: 50
     BoxZiptie: 5
-    UNstandartCrateT3: 10
+    Z14UNstandartCrateT3: 10
     Z14STWeaponSMGMP5: 10
     PillDexalin: 50
-    MedkitAI2: 25
-    STBrutepack: 50
-    STGauze: 50
-    MedkitMilitary: 10
-    antiradpill: 5
-    STEnergyDrink: 5
+    Z14MedkitAI2: 25
+    Z14STBrutepack: 50
+    Z14STGauze: 50
+    Z14MedkitMilitary: 10
+    Z14antiradpill: 5
+    Z14STEnergyDrink: 5
     FoodBreadPlain: 100
-    STOintment: 50
+    Z14STOintment: 50
     DrinkFlaskOld: 50
     DrinkWaterBottleFull: 50
     FoodTinMRE: 50
@@ -249,12 +249,12 @@
   id: Z14VendingMachineRestockUN
   categories: [ Zona14, StSkipRestockTest ]
   suffix: Z14
-  name: UN supply restock
+  name: UN Supply
   description: A crate with everything you need to express concern.
   components:
     - type: VendingMachineRestock
       canRestock:
-        - UNInventory
+        - Z14UNInventory
     - type: Sprite
       layers:
         - state: base
@@ -264,7 +264,7 @@
 # MARK: UN Supply Spawner
 
 - type: entity
-  name: UN supply spawner
+  name: UN Supply Spawner
   id: Z14SupplyUNSpawner
   categories: [ Zona14 ]
   parent: FlexibleMarkerTrigger
@@ -278,7 +278,7 @@
         - state: ai
         - type: TimedSpawner
           prototypes:
-            - VendingMachineRestockUN
+            - Z14VendingMachineRestockUN
           chance: 1
           intervalSeconds: 10800
           minimumEntitiesSpawned: 1
@@ -290,13 +290,13 @@
   parent: VendingMachine
   id: Z14VendingMachineLaborer
   categories: [ Zona14 ]
-  name: porter dispenser
+  name: loader dispenser
   description: Porter dispenser. Deliver crates to Baron Lyoshka to earn some money.
   suffix: Z14
   components:
     - type: VendingMachine
       ejectDelay: 0.1
-      pack: LaborerInventory
+      pack: Z14LaborerInventory
       dispenseOnHitChance: 0.0
       dispenseOnHitThreshold: 2
       offState: 1
@@ -316,19 +316,19 @@
 - type: vendingMachineInventory
   id: Z14LaborerInventory
   startingInventory:
-    STLoaderBox: 100
+    Z14STLoaderBox: 100
 
 - type: entity
   parent: BaseVendingMachineRestock
   id: Z14VendingMachineRestockLaborer
   categories: [ Zona14, StSkipRestockTest ]
   suffix: Z14
-  name: porter crate restock
+  name: Supply of loaders' boxes
   description: A crate of crates for porters.
   components:
     - type: VendingMachineRestock
       canRestock:
-        - LaborerInventory
+        - Z14LaborerInventory
     - type: Sprite
       layers:
         - state: base
@@ -341,13 +341,13 @@
   parent: VendingMachine
   id: Z14VendingMachineBoxesPSZMilitary
   categories: [ Zona14 ]
-  name: SOP kit storage
+  name: OKSOP Kit Warehouse
   description: Army supply storage with equipment kits inside.
   suffix: Z14
   components:
     - type: VendingMachine
       ejectDelay: 0.1
-      pack: MilitaryPSZInventory
+      pack: Z14MilitaryPSZInventory
       dispenseOnHitChance: 0.0
       dispenseOnHitThreshold: 2
       offState: off
@@ -386,25 +386,25 @@
 - type: vendingMachineInventory
   id: Z14MilitaryPSZInventory
   startingInventory:
-    ArmyAKCUCrate: 5
-    ArmyAKCCrate: 3
-    ArmyProvisionCrate: 5
-    ArmyMedkitMilitaryCrate: 5
-    Army545Mag30Crate: 5
-    Army545Crate: 5
+    Z14ArmyAKCUCrate: 5
+    Z14ArmyAKCCrate: 3
+    Z14ArmyProvisionCrate: 5
+    Z14ArmyMedkitMilitaryCrate: 5
+    Z14Army545Mag30Crate: 5
+    Z14Army545Crate: 5
 
 - type: entity
   parent: BaseItem
   id: Z14MilitaryPSZInventoryRestock
   categories: [ Zona14, StSkipRestockTest ]
   suffix: Z14
-  name: PSZ restock kit
+  name: PSZ Replenishment Kit
   description: Place on storage.
   components:
     - type: VendingMachineRestock
       canRestock:
-        - MilitaryPSZInventory
-        - MilitaryPSZInventoryOfficer
+        - Z14MilitaryPSZInventory
+        - Z14MilitaryPSZInventoryOfficer
     - type: STWeight
       self: 87.2
     - type: Item
@@ -420,13 +420,13 @@
   parent: VendingMachine
   id: Z14VendingMachineBoxesPSZMilitaryOfficer
   categories: [ Zona14 ]
-  name: SOP officer kit crate
+  name: OKSOP Officer Kit Box
   description: A crate containing officer PSZ kits inside.
   suffix: Z14
   components:
     - type: VendingMachine
       ejectDelay: 0.1
-      pack: MilitaryPSZInventoryOfficer
+      pack: Z14MilitaryPSZInventoryOfficer
       dispenseOnHitChance: 0.0
       dispenseOnHitThreshold: 2
       offState: off
@@ -465,23 +465,23 @@
 - type: vendingMachineInventory
   id: Z14MilitaryPSZInventoryOfficer
   startingInventory:
-    ArmyAKMOfficerCrate: 2
-    MilitaryPSZInventoryRestock: 6
+    Z14ArmyAKMOfficerCrate: 2
+    Z14MilitaryPSZInventoryRestock: 6
     Screwdriver: 1
-    ClothingBandageStalkerSopOne: 20
-    ClothingBandageStalkerSopTwo: 20
+    Z14ClothingBandageStalkerSopOne: 20
+    Z14ClothingBandageStalkerSopTwo: 20
 
 - type: entity
   parent: BaseItem
   id: Z14MilitaryPSZInventoryRestockOfficer
   categories: [ Zona14, StSkipRestockTest ]
   suffix: Z14
-  name: officer PSZ restock kit
+  name: Officer Restocking Kit
   description: Place in officer crate.
   components:
     - type: VendingMachineRestock
       canRestock:
-        - MilitaryPSZInventoryOfficer
+        - Z14MilitaryPSZInventoryOfficer
     - type: STWeight
       self: 87.2
     - type: Item
@@ -497,7 +497,7 @@
   parent: VendingMachineBoxesPSZMilitary
   id: Z14VendingMachineBoxesMonolith
   categories: [ Zona14 ]
-  name: Monolith crate storage
+  name: Monolith Supply Crate Storage
   description: Equipment storage of the Monolith faction.
   suffix: Z14
   components:
@@ -505,7 +505,7 @@
       access: [["MonolithFree"]]
     - type: VendingMachine
       ejectDelay: 0.1
-      pack: MonolithInventory
+      pack: Z14MonolithInventory
       dispenseOnHitChance: 0.0
       dispenseOnHitThreshold: 2
       offState: off
@@ -518,17 +518,17 @@
     SetMonolithBalaklavaBuyableCrate: 10
     SetMonolithGasBuyableCrate: 10
     SetMonolithOldBuyableCrate: 10
-    ClothingOuterArmorSevaMonolith: 10
-    MonolithCrateBasicTools: 10
-    MonolithCrateMedkit: 10
+    Z14ClothingOuterArmorSevaMonolith: 10
+    Z14MonolithCrateBasicTools: 10
+    Z14MonolithCrateMedkit: 10
     Z14STWeaponRifleAKS74Green: 10
     Z14STWeaponRifleL85: 10
     BoxZiptie: 5
     Z14STWeaponRifleSIG550: 10
-    MonolithCrate545Mag30: 10
-    MonolithCrate545PC: 10
-    MonolithCrate556Mag30: 10
-    MonolithCrate556M855: 10
+    Z14MonolithCrate545Mag30: 10
+    Z14MonolithCrate545PC: 10
+    Z14MonolithCrate556Mag30: 10
+    Z14MonolithCrate556M855: 10
     Screwdriver: 1
 
 - type: entity
@@ -536,12 +536,12 @@
   id: Z14MonolithInventoryRestock
   categories: [ Zona14, StSkipRestockTest ]
   suffix: Z14
-  name: Monolith restock crate
+  name: Monolith Restock Crate
   description: Place on storage.
   components:
     - type: VendingMachineRestock
       canRestock:
-        - MonolithInventory
+        - Z14MonolithInventory
     - type: STWeight
       self: 47.2
     - type: Item
@@ -563,7 +563,7 @@
   components:
     - type: VendingMachine
       ejectDelay: 0.1
-      pack: SeraphimInventory
+      pack: Z14SeraphimInventory
       dispenseOnHitChance: 0.0
       dispenseOnHitThreshold: 2
       offState: off
@@ -587,12 +587,12 @@
   startingInventory:
     Z14STWeaponRifleAKS74USERAPH: 3
     545Mag30: 18
-    MedkitAI2: 6
-    MedkitMilitary: 3
+    Z14MedkitAI2: 6
+    Z14MedkitMilitary: 3
     ClothingBackpackTacticSera: 3
-    ClothingHeadHelmetInfantrySera: 3
-    STClothingOuterArmorRassvetSera: 3
-    STGauze: 6
+    Z14ClothingHeadHelmetInfantrySera: 3
+    Z14STClothingOuterArmorRassvetSera: 3
+    Z14STGauze: 6
     Z14545PCBox: 9
     Z14545HPBox: 9
 
@@ -603,13 +603,13 @@
   parent: VendingMachine
   id: Z14VendingMachineBoxesDeserter
   categories: [ Zona14 ]
-  name: Deserter equipment kit crate
+  name: crate of Deserter equipment kits
   description: A crate containing equipment inside.
   suffix: Z14
   components:
     - type: VendingMachine
       ejectDelay: 0.1
-      pack: DeserterComplect
+      pack: Z14DeserterComplect
       dispenseOnHitChance: 0.0
       dispenseOnHitThreshold: 2
       offState: off
@@ -648,7 +648,7 @@
 - type: vendingMachineInventory
   id: Z14DeserterComplect
   startingInventory:
-    DesertirCrate: 8
+    Z14DesertirCrate: 8
 
 # MARK: Loners
 
@@ -656,13 +656,13 @@
   parent: VendingMachine
   id: Z14VendingMachineBoxesVeteran
   categories: [ Zona14 ]
-  name: Stalker Militia equipment kit crate
+  name: crate of Stalker Militia equipment kits
   description: A crate containing equipment inside.
   suffix: Z14
   components:
     - type: VendingMachine
       ejectDelay: 0.1
-      pack: VeteranComplect
+      pack: Z14VeteranComplect
       dispenseOnHitChance: 0.0
       dispenseOnHitThreshold: 2
       offState: off
@@ -701,7 +701,7 @@
 - type: vendingMachineInventory
   id: Z14VeteranComplect
   startingInventory:
-    VeteranCrate: 8
+    Z14VeteranCrate: 8
 
 # MARK: Bandits
 
@@ -709,13 +709,13 @@
   parent: VendingMachine
   id: Z14VendingMachineBoxesBandit
   categories: [ Zona14 ]
-  name: Bandit equipment kit crate
+  name: crate of Bandit equipment kits
   description: A crate containing equipment inside.
   suffix: Z14
   components:
     - type: VendingMachine
       ejectDelay: 0.1
-      pack: BanditComplect
+      pack: Z14BanditComplect
       dispenseOnHitChance: 0.0
       dispenseOnHitThreshold: 2
       offState: off
@@ -754,7 +754,7 @@
 - type: vendingMachineInventory
   id: Z14BanditComplect
   startingInventory:
-    BandityCrate: 8
+    Z14BandityCrate: 8
 
 # MARK: Freedom
 
@@ -762,13 +762,13 @@
   parent: VendingMachine
   id: Z14VendingMachineBoxesFreedom
   categories: [ Zona14 ]
-  name: Mercenary equipment kit crate
+  name: crate of Mercenary equipment kits
   description: A crate containing equipment inside.
   suffix: Z14
   components:
     - type: VendingMachine
       ejectDelay: 0.1
-      pack: FreedomComplect
+      pack: Z14FreedomComplect
       dispenseOnHitChance: 0.0
       dispenseOnHitThreshold: 2
       offState: off
@@ -807,7 +807,7 @@
 - type: vendingMachineInventory
   id: Z14FreedomComplect
   startingInventory:
-    FreedomCrate: 8
+    Z14FreedomCrate: 8
 
 # MARK: Covenant
 
@@ -815,13 +815,13 @@
   parent: VendingMachine
   id: Z14VendingMachineBoxesZavet
   categories: [ Zona14 ]
-  name: Covenant equipment kit crate
+  name: crate of Zavet equipment kits
   description: A crate containing equipment inside.
   suffix: Z14
   components:
     - type: VendingMachine
       ejectDelay: 0.1
-      pack: ZavetComplect
+      pack: Z14ZavetComplect
       dispenseOnHitChance: 0.0
       dispenseOnHitThreshold: 2
       offState: off
@@ -860,7 +860,7 @@
 - type: vendingMachineInventory
   id: Z14ZavetComplect
   startingInventory:
-    ZavetCrate: 8
+    Z14ZavetCrate: 8
 
 # MARK: Seraphim (Faction)
 
@@ -868,13 +868,13 @@
   parent: VendingMachine
   id: Z14VendingMachineBoxesSerafim
   categories: [ Zona14 ]
-  name: Seraphim equipment kit crate
+  name: crate of Seraphim equipment kits
   description: A crate containing equipment inside.
   suffix: Z14
   components:
     - type: VendingMachine
       ejectDelay: 0.1
-      pack: SerafimComplect
+      pack: Z14SerafimComplect
       dispenseOnHitChance: 0.0
       dispenseOnHitThreshold: 2
       offState: off
@@ -913,7 +913,7 @@
 - type: vendingMachineInventory
   id: Z14SerafimComplect
   startingInventory:
-    SefirotCrate: 8
+    Z14SefirotCrate: 8
 
 # MARK: Duty
 
@@ -921,13 +921,13 @@
   parent: VendingMachine
   id: Z14VendingMachineBoxesDuty
   categories: [ Zona14 ]
-  name: Duty equipment kit crate
+  name: crate of Duty equipment kits
   description: A crate containing equipment inside.
   suffix: Z14
   components:
     - type: VendingMachine
       ejectDelay: 0.1
-      pack: DolgComplect
+      pack: Z14DolgComplect
       dispenseOnHitChance: 0.0
       dispenseOnHitThreshold: 2
       offState: off
@@ -966,19 +966,19 @@
 - type: vendingMachineInventory
   id: Z14DolgComplect
   startingInventory:
-    DutyCrate: 8
+    Z14DutyCrate: 8
 
 - type: entity
   parent: VendingMachine
   id: Z14VendingMachineBoxesMerc
   categories: [ Zona14 ]
-  name: Duty equipment kit crate
+  name: crate of Duty equipment kits
   description: A crate containing equipment inside.
   suffix: Z14
   components:
     - type: VendingMachine
       ejectDelay: 0.1
-      pack: DolgComplect
+      pack: Z14DolgComplect
       dispenseOnHitChance: 0.0
       dispenseOnHitThreshold: 2
       offState: off
@@ -1019,22 +1019,22 @@
 - type: vendingMachineInventory
   id: Z14ProjectComplect
   startingInventory:
-    ProectENV: 4
-    ProectPVE: 4
-    ProectPVP: 4
-    ProectPVP2: 4
+    Z14ProectENV: 4
+    Z14ProectPVE: 4
+    Z14ProectPVP: 4
+    Z14ProectPVP2: 4
 
 - type: entity
   parent: VendingMachine
   id: Z14VendingMachineBoxesProject
   categories: [ Zona14 ]
-  name: Project equipment kit crate
+  name: crate of Project equipment kits
   description: A crate containing equipment inside.
   suffix: Z14
   components:
     - type: VendingMachine
       ejectDelay: 0.1
-      pack: ProjectComplect
+      pack: Z14ProjectComplect
       dispenseOnHitChance: 0.0
       dispenseOnHitThreshold: 2
       offState: off

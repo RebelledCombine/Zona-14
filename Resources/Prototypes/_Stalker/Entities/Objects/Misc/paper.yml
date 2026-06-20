@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
-  name: кровавая бумага
+  name: bloody paper
   parent: Paper
   id: BloodyPaper
-  description: Потрёпанная бумага, покрыта кровью.
+  description: Shabby paper, covered in blood.
   suffix: Stalker
   components:
   - type: Sprite
@@ -16,10 +17,10 @@
     backgroundImagePath: "/Textures/_Stalker/Interface/Paper/paper_background_default.svg.96dpi.png"
 
 - type: entity
-  name: старая бумага
+  name: old paper
   parent: Paper
   id: OldPaper
-  description: Потрёпанная бумага, вот-вот развалится.
+  description: A tattered piece of paper, about to fall apart.
   suffix: Stalker
   components:
   - type: Sprite
@@ -33,10 +34,10 @@
     backgroundImagePath: "/Textures/_Stalker/Interface/Paper/paper_background.svg.96dpi.png"
 
 - type: entity
-  name: Паспорт "Ганза"
+  name: '"Hanza" Passport'
   parent: Paper
   id: HanzaPassport
-  description: Небольшой кожаный паспорт станций Ганзы, хранит в себе информацию о личности человека, в том числе и его друга, если он имеет раздвоение личности.
+  description: "A small leather passport of the Hansa stations, holding information about a person's identity, including that of their friend should they have a split personality."
   suffix: Metro
   components:
   - type: Sprite

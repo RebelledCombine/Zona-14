@@ -1,6 +1,7 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: Brick
-  name: Кирпич
+  name: Brick
   suffix: ST, Mapping
   components:
   - type: Clickable

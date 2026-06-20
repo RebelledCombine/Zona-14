@@ -1,3 +1,4 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: FlexibleMarker
   name: ya dont need it
@@ -7,10 +8,10 @@
   placement:
     mode: PlaceFree
 
-# Рандомные аномалии
+# Zona14: Рандомные аномалии
 - type: entity
   id: RandomAnomaly1
-  name: рандомная аномалия (1% шанс появления)
+  name: Random Anomaly (1% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   categories: [ Spawner, StSkipSpawnTest ]
@@ -32,7 +33,7 @@
 
 - type: entity
   id: RandomAnomaly10
-  name: рандомная аномалия (10% шанс появления)
+  name: Random Anomaly (10% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   categories: [ Spawner, StSkipSpawnTest ]
@@ -56,7 +57,7 @@
 
 - type: entity
   id: RandomAnomaly25
-  name: рандомная аномалия (25% шанс появления)
+  name: Random Anomaly (25% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   categories: [ Spawner, StSkipSpawnTest ]
@@ -79,10 +80,10 @@
     chance: 0.25
     offset: 0.0
 
-# Рандомные редкие аномалии
+# Zona14: Рандомные редкие аномалии
 - type: entity
   id: RandomRareAnomaly1
-  name: рандомная редкая аномалия (1% шанс появления)
+  name: Random Rare Anomaly (1% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   categories: [ Spawner, StSkipSpawnTest ]
@@ -104,7 +105,7 @@
 
 - type: entity
   id: RandomRareAnomaly10
-  name: рандомная редкая аномалия (10% шанс появления)
+  name: Random Rare Anomaly (10% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   categories: [ Spawner, StSkipSpawnTest ]
@@ -126,7 +127,7 @@
 
 - type: entity
   id: RandomRareAnomaly25
-  name: рандомная редкая аномалия (25% шанс появления)
+  name: Random Rare Anomaly (25% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   categories: [ Spawner, StSkipSpawnTest ]
@@ -146,10 +147,10 @@
     chance: 0.25
     offset: 0.0
 
-# Воронка
+# Zona14: Воронка
 - type: entity
   id: SpawnerVoronka1
-  name: спавнер воронка (1 + 1% шанс появления)
+  name: funnel spawner (1 + 1% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   categories: [ Spawner, StSkipSpawnTest ]
@@ -170,7 +171,7 @@
 
 - type: entity
   id: SpawnerVoronka10
-  name: спавнер воронка (10 + 5% шанс появления)
+  name: funnel spawner (10 + 5% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   categories: [ Spawner, StSkipSpawnTest ]
@@ -191,7 +192,7 @@
 
 - type: entity
   id: SpawnerVoronka25
-  name: спавнер воронка (25 + 10% шанс появления)
+  name: funnel spawner (25 + 10% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   categories: [ Spawner, StSkipSpawnTest ]
@@ -212,7 +213,7 @@
 
 - type: entity
   id: SpawnerVoronka50
-  name: спавнер воронка (50 + 10% шанс появления)
+  name: funnel spawner (50 + 10% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   categories: [ Spawner, StSkipSpawnTest ]
@@ -231,10 +232,10 @@
     chance: 0.5
     offset: 0.0
 
-# Электра
+# Zona14: Электра
 - type: entity
   id: SpawnerElectra1
-  name: спавнер электра (1% шанс появления)
+  name: electra spawner (1% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   categories: [ Spawner, StSkipSpawnTest ]
@@ -252,7 +253,7 @@
 
 - type: entity
   id: SpawnerElectra10
-  name: спавнер электра (10% шанс появления)
+  name: electra spawner (10% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   categories: [ Spawner, StSkipSpawnTest ]
@@ -270,7 +271,7 @@
 
 - type: entity
   id: SpawnerElectra25
-  name: спавнер электра (25% шанс появления)
+  name: electra spawner (25% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   categories: [ Spawner, StSkipSpawnTest ]
@@ -288,7 +289,7 @@
 
 - type: entity
   id: SpawnerElectra50
-  name: спавнер электра (50% шанс появления)
+  name: electra spawner (50% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   categories: [ Spawner, StSkipSpawnTest ]
@@ -304,10 +305,10 @@
     chance: 0.5
     offset: 0.0
 
-# Жарка
+# Zona14: Жарка
 - type: entity
   id: SpawnerJarka1
-  name: спавнер жарка (1 + 1% шанс появления)
+  name: burner spawner (1% + 1% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   categories: [ Spawner, StSkipSpawnTest ]
@@ -325,7 +326,7 @@
 
 - type: entity
   id: SpawnerJarka10
-  name: спавнер жарка (10 + 5% шанс появления)
+  name: burner spawner (10% + 5% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   categories: [ Spawner, StSkipSpawnTest ]
@@ -343,7 +344,7 @@
 
 - type: entity
   id: SpawnerJarka25
-  name: спавнер жарка (25% + 10% шанс появления)
+  name: burner spawner (25% + 10% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   categories: [ Spawner, StSkipSpawnTest ]
@@ -361,7 +362,7 @@
 
 - type: entity
   id: SpawnerJarka50
-  name: спавнер жарка (50% + 15% шанс появления)
+  name: burner spawner (50% + 15% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   categories: [ Spawner, StSkipSpawnTest ]
@@ -377,10 +378,10 @@
     chance: 0.5
     offset: 0.0
 
-# Трамплин и Эпицентр
+# Zona14: Трамплин и Эпицентр
 - type: entity
   id: SpawnerEpicentre25
-  name: спавнер Эпицентр (25% шанс появления)
+  name: epicenter spawner (25% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   categories: [ Spawner, StSkipSpawnTest ]
@@ -398,7 +399,7 @@
 
 - type: entity
   id: SpawnerTramplin25
-  name: спавнер трамплин (25% шанс появления)
+  name: trampoline spawner (25% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   categories: [ Spawner, StSkipSpawnTest ]
@@ -414,11 +415,11 @@
     chance: 0.25
     offset: 0.0
 
-# Жарка без артефактов
+# Zona14: Жарка без артефактов
 - type: entity
   id: SpawnerJarka1NoArts
-  name: спавнер аномалии жарка (1% шанс появления)
-  suffix: Stalker, без артефактов
+  name: burner artifactless spawner (1% chance to spawn)
+  suffix: Stalker, without artifacts # Zona14: Stalker, без артефактов
   parent: FlexibleMarker
   categories: [ Spawner, StSkipSpawnTest ]
   components:
@@ -435,8 +436,8 @@
 
 - type: entity
   id: SpawnerJarka10NoArts
-  name: спавнер аномалии жарка (10% шанс появления)
-  suffix: Stalker, без артефактов
+  name: burner artifactless spawner (10% chance to spawn)
+  suffix: Stalker, without artifacts # Zona14: Stalker, без артефактов
   parent: FlexibleMarker
   categories: [ Spawner, StSkipSpawnTest ]
   components:
@@ -453,8 +454,8 @@
 
 - type: entity
   id: SpawnerJarka25NoArts
-  name: спавнер аномалии жарка (25% шанс появления)
-  suffix: Stalker, без артефактов
+  name: burner artifactless spawner (25% chance to spawn)
+  suffix: Stalker, without artifacts # Zona14: Stalker, без артефактов
   parent: FlexibleMarker
   categories: [ Spawner, StSkipSpawnTest ]
   components:
@@ -471,8 +472,8 @@
 
 - type: entity
   id: SpawnerJarka50NoArts
-  name: спавнер аномалии жарка (50% шанс появления)
-  suffix: Stalker, без артефактов
+  name: burner artifactless spawner (50% chance to spawn)
+  suffix: Stalker, without artifacts # Zona14: Stalker, без артефактов
   parent: FlexibleMarker
   categories: [ Spawner, StSkipSpawnTest ]
   components:
@@ -489,8 +490,8 @@
 
 - type: entity
   id: SpawnerJarka100NoArts
-  name: спавнер аномалии жарка (100% шанс появления)
-  suffix: Stalker, без артефактов
+  name: burner artifactless spawner (100% chance to spawn)
+  suffix: Stalker, without artifacts # Zona14: Stalker, без артефактов
   parent: FlexibleMarker
   categories: [ Spawner, StSkipSpawnTest ]
   components:

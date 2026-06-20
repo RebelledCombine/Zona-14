@@ -1,10 +1,11 @@
-#Источники чертежей
+# Zona14: translated Russian names/descriptions to English
+# Zona14: Источники чертежей
 - type: entity
   parent: STBaseStructure
   id: CraftBlueprintsSourceT4T5
-  suffix: Stalker, ИСТОЧНИК, Т4
-  name: кейс с бумагами
-  description: Возможно тут что-то очень важное
+  suffix: Stalker, SOURCE, T4 # Zona14: Stalker, ИСТОЧНИК, Т4
+  name: case with drawings
+  description: Perhaps there is something very important here
   components:
     - type: TimedDespawn
       lifetime: 3610
@@ -49,10 +50,10 @@
           prob: 0.3
 
 - type: entity
-  name: Триггер кейса с чертежами (10%)
+  name: Blueprint Case Trigger (10%)
   id: STCraftBlueprintsSourceT4T5Trigger
   parent: MarkerBase
-  suffix: ST | КД 4 часа
+  suffix: ST | CD 4 hours # Zona14: ST | КД 4 часа
   components:
     - type: ApproachTrigger
       # range: 10 # Stalker-TODO: These fields do not exist in this component!

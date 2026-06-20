@@ -1,6 +1,7 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: ActionToggleExoskeleton
-  name: включить/выключить экзоскелет
+  name: Toggle Exoskeleton
   categories: [ HideSpawnMenu ]
   components:
   - type: Action

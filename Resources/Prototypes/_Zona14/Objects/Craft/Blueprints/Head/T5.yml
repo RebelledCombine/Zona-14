@@ -1,0 +1,20 @@
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14ClothingHeadHelmetPSZ9DBlueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: PSZ-9d Helmet Recipe
+  components:
+    - type: STBlueprint
+      blueprint: newrecipeClothingHeadHelmetPSZ9D
+
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14STClothingHeadHelmetFASTNeutralBlackBlueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Black FAST Helmet Recipe
+  components:
+    - type: STBlueprint
+      blueprint: newrecipeSTClothingHeadHelmetFASTNeutralBlack
+

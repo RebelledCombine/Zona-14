@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   abstract: true
   parent: STClothingHeadBase
   id: STClothingHeadHelmetTacticalT3Base
-  name: база тактического шлема T3
+  name: T3 Tactical Helmet Base
   suffix: ST, T3, Tactical
   components:
   - type: Craftable
@@ -49,8 +50,8 @@
 - type: entity
   parent: STClothingHeadHelmetTacticalT3Base
   id: ClothingHeadHelmetVityaz1C
-  name: шлем "Витязь 1С"
-  description: Противоударный шлем "Витязь-С" изготавливался в НИИ Стали. Разработки над шлемом начались в конце 1980-ых годов. Шлем получил забралу, хоть и получился массивным.
+  name: Vityaz 1C helmet
+  description: The Vityaz-S shockproof helmet was manufactured at the Steel Research Institute. Development of the helmet began in the late 1980s. The helmet received a visor, although it turned out to be massive.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/hats/Vityaz1C.rsi
@@ -60,8 +61,8 @@
 - type: entity
   parent: STClothingHeadHelmetTacticalT3Base
   id: ClothingHeadHelmetVityaz1T
-  name: шлем "Витязь 1Т"
-  description: Противоударный шлем "Витязь 1С", модифицированный отступниками
+  name: Vityaz 1T helmet
+  description: Vityaz 1S shockproof helmet modified by renegades
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/hats/Vityaz1T.rsi
@@ -71,8 +72,8 @@
 - type: entity
   parent: STClothingHeadHelmetTacticalT3Base
   id: ClothingHeadHelmetVityaz1L
-  name: шлем "Витязь 1L"
-  description: Противоударный шлем "Витязь 1С", модифицированный Ренегатами.
+  name: Vityaz 1L helmet
+  description: Shockproof helmet "Vityaz 1C", modified by the Renegades.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/hats/Vityaz1L.rsi
@@ -82,8 +83,8 @@
 - type: entity
   parent: STClothingHeadHelmetTacticalT3Base
   id: ClothingHeadHelmetVityaz1B
-  name: шлем "Витязь 1Б"
-  description: Противоударный шлем "Витязь 1С", на который нанесены три полоски
+  name: Vityaz 1B helmet
+  description: Vityaz 1C shockproof helmet with three stripes
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/hats/Vityaz1B.rsi
@@ -93,8 +94,8 @@
 - type: entity
   parent: STClothingHeadHelmetTacticalT3Base
   id: ClothingHeadHelmetVityaz1P
-  name: шлем "Капелан"
-  description: Противоударный шлем "Витязь 1С", модифицированный Паломниками.
+  name: '"Capelan" helmet'
+  description: Shockproof helmet "Vityaz 1C", modified by the Pilgrims.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/hats/Kapelan.rsi
@@ -104,8 +105,8 @@
 - type: entity
   parent: STClothingHeadHelmetTacticalT3Base
   id: ClothingHeadHelmetVityaz1M
-  name: шлем "Витязь 1М" 'Долга'
-  description: Противоударный шлем "Витязь-М" изготавливался в НИИ Стали. Разработки над шлемом начались в конце 1980-ых годов. Шлем получил забралу, хоть и получился массивным.
+  name: Vityaz 1M 'Duty' helmet
+  description: The Vityaz-M shockproof helmet was manufactured at the Research Institute of Steel. Development of the helmet began in the late 1980s. The helmet received a visor, although it turned out to be massive.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/hats/Vityaz1M.rsi
@@ -115,8 +116,8 @@
 - type: entity
   parent: STClothingHeadHelmetTacticalT3Base
   id: ClothingHeadHelmetVityaz1Zavet
-  name: шлем "Витязь 1М" Завета
-  description: Противоударный шлем "Витязь-М" изготавливался в НИИ Стали. Разработки над шлемом начались в конце 1980-ых годов. Шлем получил забралу, хоть и получился массивным.
+  name: '"Vityaz 1M" helmet of the Covenant'
+  description: The "Vityaz-M" impact-resistant helmet was manufactured at the Steel Research Institute. Development began in the late 1980s. The helmet received a visor, though it ended up rather bulky.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/hats/Vityaz1Z.rsi
@@ -127,8 +128,8 @@
 - type: entity
   parent: STClothingHeadHelmetTacticalT3Base
   id: ClothingHeadHelmetVityazSkull1
-  name: рогатый череп
-  description: Череп рогатого животного со стальными пластинами внутри.
+  name: horned skull
+  description: The skull of a horned animal with steel plates inside.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/hats/VityazS1.rsi
@@ -139,8 +140,8 @@
 - type: entity
   parent: STClothingHeadHelmetTacticalT3Base
   id: ClothingHeadHelmetVityazSkull2
-  name: рогатый череп
-  description: Стальной череп рогатого животного.
+  name: horned skull
+  description: A steel skull of a horned animal.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/hats/VityazS2.rsi
@@ -151,8 +152,8 @@
 - type: entity
   parent: STClothingHeadHelmetTacticalT3Base
   id: ClothingHeadHelmetVityazSkull3
-  name: рогатый череп
-  description: Череп рогатого животного со стальными пластинами внутри.
+  name: horned skull
+  description: The skull of a horned animal with steel plates inside.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/hats/VityazS3.rsi
@@ -163,8 +164,8 @@
 - type: entity
   parent: STClothingHeadHelmetTacticalT3Base
   id: ClothingHeadHelmetVityazSkull4
-  name: рогатый череп
-  description: Стальной череп рогатого животного.
+  name: horned skull
+  description: A steel skull of a horned animal.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/hats/VityazS4.rsi

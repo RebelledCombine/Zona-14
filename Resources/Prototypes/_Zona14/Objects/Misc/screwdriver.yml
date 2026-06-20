@@ -1,0 +1,12 @@
+- type: entity
+  name: screwdriver
+  id: Z14STScrewdriver
+  categories: [ Zona14 ]
+  parent: BaseItem
+  description: Can be used to disassemble furniture.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: Objects/Tools/screwdriver.rsi
+    state: screwdriver-map
+  - type: Craftable

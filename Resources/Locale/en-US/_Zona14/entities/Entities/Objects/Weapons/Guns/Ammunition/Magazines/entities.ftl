@@ -1,0 +1,9 @@
+ent-Z14SpeedLoaderRemingtonMagnumAP = Speed Loader Remington Magnum AP
+    .desc = A magazine.
+    .suffix = Z14
+ent-Z14SpeedLoaderRemingtonMagnumEmpty = Speed Loader Remington Magnum Empty
+    .desc = A magazine.
+    .suffix = Z14
+ent-Z14SpeedLoaderRemingtonMagnumHP = Speed Loader Remington Magnum HP
+    .desc = A magazine.
+    .suffix = Z14

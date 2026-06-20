@@ -1,0 +1,7 @@
+- type: entity
+  parent: STBaseWeaponSMGMP40rust
+  id: Z14STWeaponSMGMP40ruust
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Rusty MP-40
+  description: FOMOCHKA, WHAT ARE YOU DOING????

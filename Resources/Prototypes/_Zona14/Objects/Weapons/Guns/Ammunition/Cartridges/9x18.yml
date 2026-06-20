@@ -1,0 +1,68 @@
+- type: entity
+  id: Z14STCartridge918PGJ
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Cartridge (9x18) P gzh
+  parent: BaseSTCartridge918
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: CartridgeAmmo
+    proto: Bullet918PGJ
+  - type: SpentAmmoVisuals
+    state: "base"
+
+- type: entity
+  id: Z14STCartridge918PST
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Cartridge (9x18) PST
+  parent: BaseSTCartridge918
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: CartridgeAmmo
+    proto: Bullet918PST
+  - type: SpentAmmoVisuals
+    state: "base"
+
+- type: entity
+  id: Z14STCartridge918SP7
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Cartridge (9x18) SP7 gzh
+  parent: BaseSTCartridge918
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: CartridgeAmmo
+    proto: Bullet918SP7
+  - type: SpentAmmoVisuals
+    state: "base"
+
+- type: entity
+  id: Z14STCartridge918PBM
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Cartridge (9x18) PBM
+  parent: BaseSTCartridge918
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: CartridgeAmmo
+    proto: Bullet918PBM
+  - type: SpentAmmoVisuals
+    state: "base"
+

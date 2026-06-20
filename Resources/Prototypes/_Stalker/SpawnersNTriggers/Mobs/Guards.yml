@@ -1,5 +1,6 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
-  name: триггер спавна постового сталкера (1) (100%)
+  name: Stalker sentry spawn trigger (1) (100%)
   id: STGuardSpawnerStalker
   parent: MarkerBase
   components:
@@ -23,7 +24,7 @@
       - MobStalkerGuard
 
 - type: entity
-  name: триггер спавна постового СОП (1) (100%)
+  name: SOP sentry spawn trigger (1) (100%)
   id: STGuardSpawnerMilitary
   parent: STGuardSpawnerStalker
   components:
@@ -34,7 +35,7 @@
     - MobStalkerMilitaryGuard
 
 - type: entity
-  name: триггер спавна агрессивного уёбка (1) (50%)
+  name: aggressive mutant spawn trigger (1) (50%)
   id: STGuardSpawnerHostile
   parent: STGuardSpawnerStalker
   components:
@@ -47,7 +48,7 @@
     - MobHostileGuardPatrool
 
 - type: entity
-  name: триггер спавна монолитовцев (2) (100%)
+  name: Monolith spawn trigger (2) (100%)
   id: STGuardSpawnerMonolith2100
   parent: STGuardSpawnerStalker
   components:
@@ -73,7 +74,7 @@
 
 
 - type: entity
-  name: триггер спавна монолитовцев (3-5) (50%)
+  name: Monolith spawn trigger (3-5) (50%)
   id: STGuardSpawnerMonolith3550
   parent: STGuardSpawnerStalker
   components:
@@ -102,7 +103,7 @@
     - MobMonolithGuardPatroolSevaAbakan
 
 - type: entity
-  name: триггер спавна патрульного свободы (1) (100%)
+  name: Freedom patrol spawn trigger (1) (100%)
   id: STGuardSpawnerFreedom
   parent: STGuardSpawnerStalker
   components:
@@ -123,7 +124,7 @@
     - MobFreedomSecurityTop
 
 - type: entity
-  name: триггер спавна патрульного бандитов (1) (100%)
+  name: Bandit patrol spawn trigger (1) (100%)
   id: STGuardSpawnerBandits
   parent: STGuardSpawnerStalker
   components:
@@ -142,7 +143,7 @@
     - MobBanditSecurityTop
 
 - type: entity
-  name: триггер спавна патрульного Долга (1) (100%)
+  name: Duty patrol spawn trigger (1) (100%)
   id: STGuardSpawnerDuty
   parent: STGuardSpawnerStalker
   components:
@@ -161,7 +162,7 @@
     - MobDutySecurityTop
 
 - type: entity
-  name: триггер спавна патрульного серафимов (1) (100%)
+  name: Seraphim patrol spawn trigger (1) (100%)
   id: STGuardSpawnerSeraphims
   parent: STGuardSpawnerStalker
   components:
@@ -176,7 +177,7 @@
     - MobSeraphimsGuardHeavy
 
 - type: entity
-  name: триггер спавна патрульного чистого неба (1) (100%)
+  name: Clear Sky patrol spawn trigger (1) (100%)
   id: STGuardSpawnerClearSky
   parent: STGuardSpawnerStalker
   components:
@@ -189,7 +190,7 @@
     - MobClearSkySecurityTop
 
 - type: entity
-  name: триггер спавна патрульного нейтралов (1) (100%)
+  name: Neutral patrol spawn trigger (1) (100%)
   id: STGuardSpawnerNeutral
   parent: STGuardSpawnerStalker
   components:
@@ -200,7 +201,7 @@
     - MobNeutralSecurity
 
 - type: entity
-  name: триггер спавна патрульного военсталов (1) (100%)
+  name: Military Stalker patrol spawn trigger (1) (100%)
   id: STGuardSpawnerVoenstal
   parent: STGuardSpawnerStalker
   components:

@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: TrashCanS1
   parent: STBaseStructure
-  name: мусорный контейнер
+  name: trash can
   suffix: ST, Mapping
-  description: Специализированная ёмкость, служащая для сбора бытовых или строительных отходов.
+  description: A specialized container used to collect household or construction waste.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Other/trashcan.rsi

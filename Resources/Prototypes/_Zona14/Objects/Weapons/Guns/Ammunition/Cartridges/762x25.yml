@@ -1,0 +1,39 @@
+- type: entity
+  id: Z14STCartridge725PGL
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Cartridge (7.62x25) P gl
+  parent: BaseSTCartridge725
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet725PGL
+
+- type: entity
+  id: Z14STCartridge725PTGJ
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Cartridge (7.62x25) PT gzh
+  parent: BaseSTCartridge725
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet725PTGJ
+
+- type: entity
+  id: Z14STCartridge725LRNPC
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Cartridge (7.62x25) LRNPC
+  parent: BaseSTCartridge725
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet725LRNPC
+
+- type: entity
+  id: Z14STCartridge725PSTGJ
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Cartridge (7.62x25) PST gzh
+  parent: BaseSTCartridge725
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet725PSTGJ

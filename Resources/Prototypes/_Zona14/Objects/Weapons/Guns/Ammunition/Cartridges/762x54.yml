@@ -1,0 +1,49 @@
+- type: entity
+  id: Z14STCartridge754FMJ
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Cartridge (7.62x54) FMJ
+  parent: BaseSTCartridge754
+  components:
+    - type: CartridgeAmmo
+      proto: Bullet754FMJ
+
+- type: entity
+  id: Z14STCartridge754PC
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Cartridge (7.62x54) PS
+  parent: BaseSTCartridge754
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet754PC
+
+- type: entity
+  id: Z14STCartridge754HPBT
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Cartridge (7.62x54) HP BT
+  parent: BaseSTCartridge754
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet754HPBT
+
+- type: entity
+  id: Z14STCartridge754BT
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Cartridge (7.62x54) BT
+  parent: BaseSTCartridge754
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet754BT
+
+- type: entity
+  id: Z14STCartridge754SNB
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Cartridge (7.62x54) SNB
+  parent: BaseSTCartridge754
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet754SAPB

@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: BaseSubdermalImplant
   id: STSeraBombImplant
-  name: самоуничтожение
-  description: Подрыв вашего кпк с гарантированным раздвоением вашего Я во имя Сына Звезды на целых две части!
+  name: self-destruct
+  description: Detonate your PDA with a guaranteed splitting of your Self into two whole parts in the name of the Son of the Star!
   categories: [ HideSpawnMenu ]
   components:
     - type: SubdermalImplant

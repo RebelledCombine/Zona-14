@@ -1,3 +1,4 @@
+# Zona14: translated Russian names/descriptions to English
 - type: job
   id: Seraphim
   name: job-seraphim
@@ -118,7 +119,7 @@
 
 - type: job
   id: SeraphimCherubim
-  name: Херувим серафимов
+  name: Seraphim cherub
   icon: seraphim_cherubim
   description: job-head-seraphim-desc
   playTimeTracker: JobCherubimSeraphims

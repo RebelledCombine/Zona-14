@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   abstract: true
   parent: STClothingMaskGas
   id: STClothingMaskGasStandardT1Base
-  name: база стандартного противогаза T1 от радиации
+  name: T1 Standard Radiation Mask Base
   suffix: ST, T1, Rad
   components:
   - type: Tag
@@ -28,8 +29,8 @@
 - type: entity
   parent: STClothingMaskGasStandardT1Base
   id: ClothingMaskGasZarya
-  name: стандартный противогаз сталкера
-  description: Дешёвый и эффективный.  Защищает от радиации.
+  name: standard stalker gas mask
+  description: Cheap and efficient.  Protects against radiation.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/mask/gasmask_stalker.rsi
@@ -39,8 +40,8 @@
 - type: entity
   parent: STClothingMaskGasStandardT1Base
   id: ClothingMaskGasZaryaMono
-  name: монолинзовый противогаз сталкера
-  description: Дешёвый и эффективный.  Защищает от радиации. Отличается монолинзой.
+  name: Monolens stalker gas mask
+  description: Cheap and effective. Protects against radiation. Features a monolens.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/mask/gasmask_stalker_mono.rsi
@@ -50,8 +51,8 @@
 - type: entity
   parent: STClothingMaskGasStandardT1Base
   id: ClothingMaskGasExs
-  name: стандартный противогаз экзоскелета
-  description: Ваще без брони, хоть и от экзы.
+  name: standard exoskeleton gas mask
+  description: Yours without armor, although from exa.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/mask/gasmask_exoskelet.rsi
@@ -61,8 +62,8 @@
 - type: entity
   parent: STClothingMaskGasStandardT1Base
   id: ClothingMaskGasMono
-  name: стандартный противогаз Монолита
-  description: Скрывает глаза и злые помыслы. Защищает от радиации.
+  name: standard Monolith gas mask
+  description: Hides eyes and evil thoughts. Protects against radiation.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/mask/gasmask_monolith.rsi
@@ -76,8 +77,8 @@
 - type: entity
   parent: STClothingMaskGasStandardT1Base
   id: ClothingMaskGasMercStalker
-  name: стандартный противогаз наёмников
-  description: Скрывает глаза и злые помыслы. Защищает от радиации.
+  name: Standard Mercenary Gas Mask
+  description: Hides the eyes and evil intentions. Protects against radiation.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/mask/gasmask_merc.rsi
@@ -87,8 +88,8 @@
 - type: entity
   parent: STClothingMaskGasStandardT1Base
   id: ClothingMaskGasChN
-  name: стандартный противогаз Чистого Неба
-  description: Возможно за ним выдающийся учёный, но скорее просто живая дубина.  Защищает от радиации.
+  name: Standard Clear Sky Gas Mask
+  description: Perhaps he is an outstanding scientist, but more likely just a living club.  Protects against radiation.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/mask/gasmask_cn.rsi
@@ -107,8 +108,8 @@
 - type: entity
   parent: STClothingMaskGasStandardT1Base
   id: ClothingMaskGasSera
-  name: стандартный противогаз Серафимов
-  description: Защищает от вопросов про религию, и от радиации.
+  name: standard Seraphim gas mask
+  description: Protects against questions about religion, and from radiation.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/mask/gasmask_sera.rsi
@@ -127,8 +128,8 @@
 - type: entity
   parent: STClothingMaskGasStandardT1Base
   id: ClothingMaskGasDolg1
-  name: стандартный противогаз 'Долга'
-  description: Вряд ли он уничтожит Зону, но он очень старается  Защищает от радиации.
+  name: standard 'Duty' gas mask
+  description: It is unlikely to destroy the Zone, but it tries very hard to protect from radiation.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/mask/gasmask_dolg1.rsi
@@ -138,8 +139,8 @@
 - type: entity
   parent: STClothingMaskGasStandardT1Base
   id: ClothingMaskGasFreedom
-  name: стандартный противогаз группировки «Воля»
-  description: Увы, не в фектарне. Защищает от радиации.
+  name: standard Volia gas mask
+  description: Alas, not in fectarn. Protects against radiation.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/mask/gasmask_freedom.rsi
@@ -149,8 +150,8 @@
 - type: entity
   parent: STClothingMaskGasStandardT1Base
   id: ClothingMaskGasRenegats
-  name: стандартный противогаз ренегатов
-  description: Дешёвый и эффективный. Защищает от радиации, но всё равно хорош в защите от своих химикатов.
+  name: Rogue Standard Gas Mask
+  description: Cheap and efficient. It protects against radiation.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/mask/gasmask_renegat.rsi
@@ -175,8 +176,8 @@
 - type: entity
   parent: STClothingMaskGasStandardT1Base
   id: ClothingMaskGasMarlya
-  name: марлевая повязка
-  description: Марлевая повязка зелёного цвета, предназначаемая для защиты органов дыхания человека от радиоактивной пыли. Лучше чем ничего.
+  name: Marlya Gas Mask
+  description: A green gauze mask designed to protect the human respiratory system from radioactive dust. Better than nothing.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/mask/marlya.rsi
@@ -190,8 +191,8 @@
 - type: entity
   parent: STClothingMaskGasStandardT1Base
   id: ClothingMaskGasMarlyaRuined
-  name: запыленная марлевая повязка
-  description: Запыленная марлевая повязка, приобрёвшая серый цвет из-за огромного количества радиоактивной пыли, прошедшей через неё. Уж лучше ничего, чем это.
+  name: Dusty Gauze Mask
+  description: "A dusty gauze mask turned gray from the massive amount of radioactive dust it's filtered. Honestly, nothing would be better than this."
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/mask/marlya_ruined.rsi
@@ -209,8 +210,8 @@
 - type: entity
   parent: STClothingMaskGasStandardT1Base
   id: ClothingMaskGasSeraFirstborn
-  name: Противогаз Перворожденного
-  description: Старый противогаз, с нарисованной на нем зеленой четырехлучевой звездой- сакральным символом Серафимов.
+  name: Firstborn gas mask
+  description: An old gas mask with a green four-pointed star painted on it - the sacred symbol of the Seraphim.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/mask/gasmask_firstbornsera.rsi

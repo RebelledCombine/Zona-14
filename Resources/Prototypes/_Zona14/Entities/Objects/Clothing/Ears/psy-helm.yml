@@ -1,0 +1,68 @@
+- type: entity
+  abstract: true
+  parent: Clothing
+  id: Z14STClothingPsyHelm
+  categories: [ Zona14 ]
+  components:
+  - type: Sprite
+    state: icon
+  - type: Item
+    size: Small
+  - type: Clothing
+    slots:
+    - ears
+    sprite: Clothing/Ears/Headsets/base.rsi
+
+- type: entity
+  parent: Z14STClothingPsyHelm
+  id: Z14STPsyHelm1
+  categories: [ Zona14 ]
+  name: Psi-Helmet
+  description: A makeshift prototype psi-radiation protection device. Externally looks like large headphones.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/Ears/psy-helm-1.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/Ears/psy-helm-1.rsi
+  - type: Armor
+    armorClass: 0
+    modifiers:
+      flatReductions:
+        Psy: 2
+
+- type: entity
+  parent: Z14STClothingPsyHelm
+  id: Z14STPsyHelm2
+  categories: [ Zona14 ]
+  name: Psi-Helmet
+  description: An uncalibrated prototype developed by scientists for psi-radiation protection. Looks like large headphones with electrodes touching the forehead and back of the head.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/Ears/psy-helm-2.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/Ears/psy-helm-2.rsi
+  - type: Armor
+    armorClass: 0
+    modifiers:
+      flatReductions:
+        Psy: 4
+
+- type: entity
+  parent: Z14STClothingPsyHelm
+  id: Z14STPsyHelm3
+  categories: [ Zona14 ]
+  name: Psi-Helmet
+  description: A calibrated prototype developed by scientists for psi-radiation protection. Looks like large headphones with electrodes touching the forehead, temples, and back of the head.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/Ears/psy-helm-3.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/Ears/psy-helm-3.rsi
+  - type: Armor
+    armorClass: 0
+    modifiers:
+      flatReductions:
+        Psy: 6

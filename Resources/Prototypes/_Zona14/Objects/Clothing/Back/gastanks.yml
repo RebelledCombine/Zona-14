@@ -1,0 +1,74 @@
+- type: entity
+  parent: STOxygenTanksBase
+  id: Z14STOxygenTanksZarya
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Sunrise Set Oxygen Tanks
+  description: Oxygen tanks from the "Sunrise" set — containers holding various gases or liquids under pressure. Used with the "Sunrise" armored suit.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/backpacks/Tanks/zarya.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/backpacks/Tanks/zarya.rsi
+
+# Duty
+
+- type: entity
+  parent: STOxygenTanksBase
+  id: Z14STOxygenTanksFractionalDuty
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: PS5-M "Universal Protection" Set Oxygen Tanks
+  description: Oxygen tanks from the "PS" set — containers holding various gases or liquids under pressure. Used with suits like "Freedom Defender" and PS5-M "Universal Protection".
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/backpacks/Tanks/duty.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/backpacks/Tanks/duty.rsi
+
+# Freedom
+
+- type: entity
+  parent: STOxygenTanksBase
+  id: Z14STOxygenTanksFractionalFreedom
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: '"Freedom Defender" Set Oxygen Tanks'
+  description: Oxygen tanks from the "Freedom Defender" set — containers holding various gases or liquids under pressure. Used with the "Freedom Defender" armored suit.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/backpacks/Tanks/freedom.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/backpacks/Tanks/freedom.rsi
+
+- type: entity
+  parent: STOxygenTanksBase
+  id: Z14STOxygenTanksFractionalFreedom2
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: '"Wind of Freedom" Set Oxygen Tanks'
+  description: Oxygen tanks from the "Wind of Freedom" set — containers holding various gases or liquids under pressure. Used with the "Wind of Freedom" armored suit.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/backpacks/Tanks/freedom_2.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/backpacks/Tanks/freedom_2.rsi
+
+# Monolith
+
+- type: entity
+  parent: STOxygenTanksBase
+  id: Z14STOxygenTanksFractionalMonolith
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Rusty "Monolith" Set Oxygen Tanks
+  description: Rusty oxygen tanks from the "Monolith" set — containers holding various gases or liquids under pressure. Time has heavily worn off the paint. Used with the "Monolith" armored suit.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/backpacks/Tanks/monolith.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/backpacks/Tanks/monolith.rsi
+  - type: PersonalDamage
+    damage:
+      types:
+        Radiation: 2.25

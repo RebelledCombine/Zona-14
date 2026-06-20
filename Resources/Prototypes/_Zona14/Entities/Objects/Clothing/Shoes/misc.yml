@@ -1,0 +1,139 @@
+
+- type: entity
+  parent: ClothingShoesBase
+  id: Z14ClothingShoesPortyanki
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: footcloths
+  description: Pieces of cloth for wrapping legs before putting on boots. Designed to protect feet from chafing.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/shoes/portyanki.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/shoes/portyanki.rsi
+
+- type: entity
+  parent: ClothingShoesBase
+  id: Z14ClothingShoesNovice
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Beginner's Boots
+  description: Simple leather boots made from leather scraps.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/shoes/boots_novice.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/shoes/boots_novice.rsi
+
+- type: entity
+  parent: ClothingShoesMilitaryBase
+  id: Z14STClothingShoesBootsCombat
+  categories: [ Zona14 ]
+  name: Combat Boots
+  suffix: Z14
+  description: Reliable army boots for combat operations. The fight is everything, the fight is forever.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/shoes/boots_army.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/shoes/boots_army.rsi
+
+- type: entity
+  parent: Z14STClothingShoesBootsCombat
+  id: Z14STClothingShoesBootsCombatFilled
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/shoes/boots_army.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/shoes/boots_army.rsi
+  - type: ContainerFill
+    containers:
+      item:
+      - CombatKnife
+
+- type: entity
+  parent: ClothingShoesBase
+  id: Z14ClothingShoesPVH
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: PVC Boots
+  description: Reliable protection from moisture, dirt, toxic waste, and harsh weather. Made of durable, flexible PVC that prevents reagents from reaching your feet.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/shoes/pvh.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/shoes/pvh.rsi
+  - type: Armor
+    armorClass: 0
+    modifiers:
+      flatReductions:
+        Caustic: 1
+  - type: ClothingSpeedModifier
+    walkModifier: 0.95
+    sprintModifier: 0.95
+
+- type: entity
+  parent: Z14STClothingShoesBootsCombat
+  id: Z14ClothingShoesPVHCastom
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: boots with frogs
+  description: Reliable protection from moisture, dirt, toxic waste, and harsh weather. Made of durable, flexible PVC that prevents reagents from reaching your feet.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/shoes/boots_farforik.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/shoes/boots_farforik.rsi
+  - type: ContainerFill
+    containers:
+      item:
+      - CombatKnife
+  - type: ClothingSpeedModifier
+    walkModifier: 1.0001
+    sprintModifier: 1.0001
+  - type: Armor
+    armorClass: 0
+    modifiers:
+      flatReductions:
+        Caustic: 1
+
+- type: entity
+  parent: ClothingShoesBase
+  id: Z14ClothingShoesBootsLeather
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: leather boots
+  description: Simple leather boots made from various leather scraps. Handmade, clearly crafted by a skilled maker.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/shoes/boots_leather.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/shoes/boots_leather.rsi
+
+- type: entity
+  parent: ClothingShoesBase
+  id: Z14ClothingShoesBootsFrogLeather
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: leather boots of toads
+  description: Leather boots repainted dark green. Unique footwear used by the Toads faction.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/shoes/boots_jaba.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/shoes/boots_jaba.rsi
+
+- type: entity
+  parent: ClothingShoesMilitaryBase
+  id: Z14STClothingShoesBootsSeraFilled
+  categories: [ Zona14 ]
+  name: Hunter Boots
+  suffix: Z14
+  description: Combat boots repainted dark green. Unique footwear used by the Seraphim faction.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/shoes/hunter_boots.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/shoes/hunter_boots.rsi

@@ -1,7 +1,8 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: tire1
   parent: BaseStructure
-  name: покрышка
+  name: Tire
   suffix: ST, Mapping
   components:
   - type: Clickable
@@ -42,7 +43,7 @@
 - type: entity
   id: tire2
   parent: tire1
-  name: покрышка
+  name: "{ ent-tire1 }"
   suffix: ST, Mapping
   components:
   - type: Sprite
@@ -52,7 +53,7 @@
 - type: entity
   id: tire3
   parent: tire1
-  name: покрышка
+  name: "{ ent-tire1 }"
   suffix: ST, Mapping
   components:
     - type: Sprite
@@ -62,7 +63,7 @@
 - type: entity
   id: tire4
   parent: tire1
-  name: покрышка
+  name: "{ ent-tire1 }"
   suffix: Stalker
   components:
     - type: Sprite
@@ -72,7 +73,7 @@
 - type: entity
   id: tire5
   parent: tire1
-  name: покрышка
+  name: "{ ent-tire1 }"
   suffix: ST, Mapping
   components:
     - type: Sprite

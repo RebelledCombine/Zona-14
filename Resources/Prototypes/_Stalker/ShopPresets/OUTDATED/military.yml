@@ -1,4 +1,4 @@
-#####################################################Вояки
+# Zona14: ####################################################Вояки
 
 - type: shopPreset
   id: MilitaryShopPreset
@@ -18,9 +18,9 @@
       priority: 2
       items:
         ClothingHeadAssaultHelmetMilitary: 5
-        # ClothingOuterArmor6B13: 15 Убрано всё т4 по просьбе вииса
+        # Zona14: ClothingOuterArmor6B13: 15 Убрано всё т4 по просьбе вииса
         ClothingHeadHelmetBulatMilitary: 4
-        # STClothingOuterArmorBerill5M: 15 Убрано всё т4 по просьбе вииса
+        # Zona14: STClothingOuterArmorBerill5M: 15 Убрано всё т4 по просьбе вииса
     - name: shop-category-paperwork
       priority: 3
       items:
@@ -329,7 +329,7 @@
         ZoneAnomalyDetectorAD1: 450 # T1
         ZoneAnomalyDetectorAD2: 1000 # T2
           # Detectors
-          # Пусто
+          # Zona14: Пусто
     - name: shop-category-utilities
       priority: 8
       items:
@@ -542,5 +542,5 @@
         ZoneAnomalyDetectorAD1: 450 # T1
         ZoneAnomalyDetectorAD2: 1000 # T2
           # Detectors
-          # Пусто
+          # Zona14: Пусто
 

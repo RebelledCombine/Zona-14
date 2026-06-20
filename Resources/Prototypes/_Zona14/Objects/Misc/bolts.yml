@@ -1,0 +1,43 @@
+- type: entity
+  parent: STBaseBolt
+  id: Z14STBolt
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: bolt
+  description: Rod-shaped fastener with male thread at one end. Now 100% carbon steel.
+  components:
+    - type: Sprite
+      state: icon
+    - type: Stack
+      stackType: STBolt
+      throwIndividually: true
+      count: 1
+
+- type: stack
+  id: Z14STBolt
+  name: stack-st-bolt
+  icon: { sprite: _Stalker/Objects/Misc/bolts.rsi, state: icon }
+  spawn: STBolt
+  maxCount: 3
+
+- type: entity
+  parent: STBaseBolt
+  id: Z14STBoltGolden
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: bolt golden
+  description: Now these bolts are gold plated, you can humiliate poverty with your anomaly detection skills.
+  components:
+    - type: Sprite
+      state: icon_golden
+    - type: Stack
+      stackType: STBoltGolden
+      throwIndividually: true
+      count: 1
+
+- type: stack
+  id: Z14STBoltGolden
+  name: stack-st-bolt-golden
+  icon: { sprite: _Stalker/Objects/Misc/bolts.rsi, state: icon_golden }
+  spawn: STBoltGolden
+  maxCount: 3

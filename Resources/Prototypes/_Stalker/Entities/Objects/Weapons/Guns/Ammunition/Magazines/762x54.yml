@@ -1,7 +1,8 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: Base754Mag5
-  name: магазин 7,62x54 (5)
-  description: Магазин 7,62x54 для винтовок. Вместимость пуль 5. Продают пустым.
+  name: 7.62x54 magazine (5)
+  description: 7.62x54 magazine for rifles. Bullet capacity 5. They sell empty.
   parent: Base545Mag10
   suffix: Stalker
   components:
@@ -67,8 +68,8 @@
 
 - type: entity
   id: 754Mag10
-  name: магазин 7,62x54 (10)
-  description: Магазин 7,62x54 для винтовок. Вместимость пуль 10. Продают пустым.
+  name: 7.62x54 magazine (10)
+  description: 7.62x54 magazine for rifles. Bullet capacity 10. They sell empty.
   parent: Base754Mag5
   suffix: Stalker
   components:
@@ -116,8 +117,8 @@
 
 - type: entity
   id: 754Mag20
-  name: магазин 7,62x54 (20)
-  description: Магазин 7,62x54 для винтовок. Вместимость пуль 20. Продают пустым.
+  name: 7.62x54 magazine (20)
+  description: 7.62x54 magazine for rifles. Bullet capacity 20. They sell empty.
   parent: Base754Mag5
   suffix: Stalker
   components:

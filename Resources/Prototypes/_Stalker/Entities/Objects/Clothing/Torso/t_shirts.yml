@@ -1,3 +1,4 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: BaseClothingTorso
   id: ClothingTorsoTShirtPivozavr
@@ -31,7 +32,7 @@
 - type: entity
   parent: BaseClothingTorso
   id: ClothingTorsoTShirtZavet
-  name: Форма Завета
+  name: Covenant uniform
   components:
     - type: Sprite
       sprite: _Stalker/Objects/Clothing/Torso/Zavet.rsi

@@ -1,7 +1,8 @@
-# Разлом (Rift)
+# Zona14: translated Russian names/descriptions to English
+# Zona14: Разлом (Rift)
 - type: entity
   id: SpawnerZoneAnomalyRandomWeakChance1
-  name: спавнер аномалии случайная слабая (10% шанс появления)
+  name: random weak anomaly spawner (1% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   categories: [ Spawner, StSkipSpawnTest ]
@@ -26,7 +27,7 @@
 
 - type: entity
   id: SpawnerZoneAnomalyRandomWeakChance5
-  name: спавнер аномалии случайная слабая (15% шанс появления)
+  name: random weak anomaly spawner (5% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   categories: [ Spawner, StSkipSpawnTest ]
@@ -51,7 +52,7 @@
 
 - type: entity
   id: SpawnerZoneAnomalyRandomWeakChance10
-  name: спавнер аномалии случайная слабая (20% шанс появления)
+  name: random weak anomaly spawner (10% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   categories: [ Spawner, StSkipSpawnTest ]
@@ -76,7 +77,7 @@
 
 - type: entity
   id: SpawnerZoneAnomalyRandomWeakChance25
-  name: спавнер аномалии случайная слабая (35% шанс появления)
+  name: random weak anomaly spawner (25% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   categories: [ Spawner, StSkipSpawnTest ]
@@ -101,7 +102,7 @@
 
 - type: entity
   id: SpawnerZoneAnomalyRandomWeakChance50
-  name: спавнер аномалии случайная слабая (50% шанс появления)
+  name: random weak anomaly spawner (50% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   categories: [ Spawner, StSkipSpawnTest ]
@@ -126,7 +127,7 @@
 
 - type: entity
   id: SpawnerZoneAnomalyRandomWeakChance100
-  name: спавнер аномалии случайная слабая (100% шанс появления)
+  name: random weak anomaly spawner (100% chance to spawn)
   suffix: Stalker
   parent: FlexibleMarker
   categories: [ Spawner, StSkipSpawnTest ]

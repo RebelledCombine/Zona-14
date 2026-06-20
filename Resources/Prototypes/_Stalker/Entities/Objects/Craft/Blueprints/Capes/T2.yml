@@ -1,7 +1,8 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: STBaseBlueprint
   id: ClothingOuterCoatBolotniyBlueprint
-  name: Рецепт болотного плаща
+  name: Swamp Cloak Recipe
   components:
     - type: STBlueprint
       blueprint: newrecipeClothingOuterCoatBolotniy
@@ -9,7 +10,7 @@
 - type: entity
   parent: STBaseBlueprint
   id: ClothingOuterCoatKolchygaBlueprint
-  name: Рецепт плаща Кольчуга
+  name: Kolchuga Cloak Recipe
   components:
     - type: STBlueprint
       blueprint: newrecipeClothingOuterCoatKolchyga
@@ -17,7 +18,7 @@
 - type: entity
   parent: STBaseBlueprint
   id: ClothingOuterCoatStalkerBlueprint
-  name: Рецепт кожанного плащя
+  name: leather coat recipe
   components:
     - type: STBlueprint
       blueprint: newrecipeClothingOuterCoatStalker

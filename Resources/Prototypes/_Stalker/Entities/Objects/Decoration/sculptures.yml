@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: weird_sculpture
   parent: BaseRock
-  name: скульптура
+  name: sculpture
   suffix: ST, Mapping
-  description: Страшная дворовая скульптура вымышленного героя.
+  description: Scary courtyard sculpture of a fictional hero.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Other/sculptures.rsi

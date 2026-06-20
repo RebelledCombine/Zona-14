@@ -3,7 +3,7 @@
 - type: entity
   id: Z14Bullet545FMJ
   suffix: Z14
-  name: bullet (5.45x39 FMJ)
+  name: bullet (5,45x39)
   parent: STBaseLRBullet
   categories: [ HideSpawnMenu, Zona14 ]
   components:
@@ -20,7 +20,7 @@
 - type: entity
   id: Z14Bullet545PC
   suffix: Z14
-  name: bullet (5.45x39 AP)
+  name: bullet (5,45x39)
   parent: Z14Bullet545FMJ
   categories: [ HideSpawnMenu, Zona14 ]
   components:
@@ -35,7 +35,7 @@
 - type: entity
   id: Z14Bullet545HP
   suffix: Z14
-  name: bullet (5.45x39 HP)
+  name: bullet (5,45x39)
   parent: Z14Bullet545FMJ
   categories: [ HideSpawnMenu, Zona14 ]
   components:
@@ -53,7 +53,7 @@
 - type: entity
   id: Z14Bullet545BP
   suffix: Z14
-  name: bullet (5.45x39 AP)
+  name: bullet (5,45x39)
   parent: Z14Bullet545FMJ
   categories: [ HideSpawnMenu, Zona14 ]
   components:
@@ -68,7 +68,7 @@
 - type: entity
   id: Z14Bullet545BS
   suffix: Z14
-  name: bullet (5.45x39 AP)
+  name: bullet (5,45x39)
   parent: Z14Bullet545FMJ
   categories: [ HideSpawnMenu, Zona14 ]
   components:
@@ -83,7 +83,7 @@
 - type: entity
   id: Z14Bullet545NE
   suffix: Z14
-  name: bullet (5.45x39 AP)
+  name: bullet (5,45x39)
   parent: Z14Bullet545FMJ
   categories: [ HideSpawnMenu, Zona14 ]
   components:

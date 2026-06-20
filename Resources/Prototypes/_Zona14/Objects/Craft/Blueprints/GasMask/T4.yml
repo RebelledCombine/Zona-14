@@ -1,0 +1,19 @@
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14STGasMaskM51Blueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: M51 Gas Mask Recipe
+  components:
+    - type: STBlueprint
+      blueprint: recipeGasMaskM51
+
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14STGasMaskGP21lueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: GP21 Gas Mask Recipe
+  components:
+    - type: STBlueprint
+      blueprint: recipeGasMaskGP21

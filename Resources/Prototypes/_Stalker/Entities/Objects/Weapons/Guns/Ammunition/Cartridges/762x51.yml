@@ -1,3 +1,4 @@
+# Zona14: translated Russian names/descriptions to English
 # 7.62x51
 
 - type: entity
@@ -25,7 +26,7 @@
 
 - type: entity
   id: Cartridge751M80
-  name: Патрон (7,62x51)M80
+  name: Cartridge (7.62x51) M80
   parent: BaseCartridge751
   components:
   - type: CartridgeAmmo
@@ -33,7 +34,7 @@
 
 - type: entity
   id: Cartridge751Noiser
-  name: Патрон (7,62x51)Ultra Noiser
+  name: Cartridge (7.62x51) Ultra Noiser
   parent: BaseCartridge751
   components:
   - type: CartridgeAmmo
@@ -41,7 +42,7 @@
 
 - type: entity
   id: Cartridge751M61
-  name: Патрон (7,62x51)M61
+  name: Cartridge (7.62x51) M61
   parent: BaseCartridge751
   components:
   - type: CartridgeAmmo
@@ -49,7 +50,7 @@
 
 - type: entity
   id: Cartridge751M993
-  name: Патрон (7,62x51)M993
+  name: Cartridge (7.62x51) M993
   parent: BaseCartridge751
   components:
   - type: CartridgeAmmo
@@ -80,7 +81,7 @@
 
 - type: entity
   id: Cartridge754R
-  name: Патрон (7,62x54 R)M993
+  name: cartridge (7.62x54R) M993
   parent: BaseCartridge754R
   components:
   - type: CartridgeAmmo

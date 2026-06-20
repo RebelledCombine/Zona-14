@@ -1,0 +1,41 @@
+- type: entity
+  parent: Z14ArmorBaseT1PvP
+  id: Z14STClothingOuterSlickBlack
+  categories: [ Zona14 ]
+  name: Black "Slick" Body Armor
+  description: Black class 3 body armor.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/Slick/Black.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/Slick/Black.rsi
+- type: entity
+  parent: Z14STClothingOuterSlickBlack
+  id: Z14STClothingOuterSlickGreen
+  categories: [ Zona14 ]
+  name: Green "Slick" Body Armor
+  description: Green class 3 body armor.
+  suffix: Z14
+  components:
+  - type: STWeight
+    self: 5
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/Slick/Green.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/Slick/Green.rsi
+
+- type: entity
+  parent: Z14STClothingOuterSlickBlack
+  id: Z14STClothingOuterSlickHaki
+  categories: [ Zona14 ]
+  name: '"Slick" Body Armor'
+  description: Class 3 body armor in khaki.
+  suffix: Z14
+  components:
+  - type: STWeight
+    self: 5
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/Slick/Haki.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/Slick/Haki.rsi

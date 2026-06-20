@@ -1,4 +1,5 @@
-# Я не знаю почему он здесь, может быть так надо, поэтому не трогаю
+# Zona14: translated Russian names/descriptions to English
+# Zona14: Я не знаю почему он здесь, может быть так надо, поэтому не трогаю
 - type: entity
   parent: PosterBaseStalker
   id: FactionFlagAnomalists
@@ -14,7 +15,7 @@
   parent: FactionFlagBaseEN # EN
   id: Banner1
   suffix: ST, Mapping
-  name: флаг бандитов
+  name: Bandit Flag
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Wallmounts/banners.rsi
@@ -26,7 +27,7 @@
 - type: entity
   parent: FactionFlagBaseEN # EN
   id: Banner2
-  name: флаг долга
+  name: Flag of Duty
   suffix: ST, Mapping
   components:
   - type: Sprite
@@ -39,7 +40,7 @@
 - type: entity
   parent: FactionFlagBaseEN # EN
   id: Banner3
-  name: флаг свободы
+  name: Flag of Liberty
   suffix: ST, Mapping
   components:
   - type: Sprite
@@ -52,7 +53,7 @@
 - type: entity
   parent: FactionFlagBaseEN # EN
   id: Banner4
-  name: флаг наёмников
+  name: Mercenary Flag
   suffix: ST, Mapping
   components:
   - type: Sprite
@@ -65,7 +66,7 @@
 - type: entity
   parent: FactionFlagBaseEN # EN
   id: Banner5
-  name: флаг завета
+  name: Flag of the Covenant
   suffix: ST, Mapping
   components:
   - type: Sprite
@@ -75,7 +76,7 @@
 - type: entity
   parent: FactionFlagBaseEN # EN
   id: Banner6
-  name: флаг конфедератов
+  name: Confederate flag
   suffix: ST, Mapping
   components:
   - type: Sprite
@@ -85,7 +86,7 @@
 - type: entity
   parent: FactionFlagBaseEN # EN
   id: Banner7
-  name: флаг добра и позитива
+  name: Flag of Kindness and Positivity
   suffix: ST, Mapping
   components:
   - type: Sprite
@@ -98,7 +99,7 @@
 - type: entity
   parent: FactionFlagBaseEN # EN
   id: Banner8
-  name: флаг ренегатов
+  name: Rogue Flag
   suffix: ST, Mapping
   components:
   - type: Sprite
@@ -111,7 +112,7 @@
 - type: entity
   parent: FactionFlagBaseEN # EN
   id: Banner9
-  name: флаг русичей
+  name: Flag of the Russians
   suffix: ST, Mapping
   components:
   - type: Sprite
@@ -121,7 +122,7 @@
 - type: entity
   parent: FactionFlagBaseEN # EN
   id: Banner10
-  name: флаг империи
+  name: Imperial Flag
   suffix: ST, Mapping
   components:
   - type: Sprite
@@ -131,7 +132,7 @@
 - type: entity
   parent: FactionFlagBaseEN # EN
   id: Banner11
-  name: флаг ООН
+  name: UN flag
   suffix: ST, Mapping
   components:
   - type: Sprite
@@ -141,7 +142,7 @@
 - type: entity
   parent: FactionFlagBaseEN # EN
   id: Banner12
-  name: флаг серафимов
+  name: Flag of the Seraphim
   suffix: ST, Mapping
   components:
   - type: Sprite
@@ -151,7 +152,7 @@
 - type: entity
   parent: FactionFlagBaseEN # EN
   id: Banner13
-  name: флаг греха
+  name: Flag of Sin
   suffix: ST, Mapping
   components:
   - type: Sprite
@@ -161,7 +162,7 @@
 - type: entity
   parent: FactionFlagBaseEN # EN
   id: Banner14
-  name: флаг чистого неба
+  name: Clear Sky Flag
   suffix: ST, Mapping
   components:
   - type: Sprite
@@ -174,7 +175,7 @@
 - type: entity
   parent: FactionFlagBaseEN # EN
   id: Banner15
-  name: флаг отступников
+  name: Apostate Flag
   suffix: ST, Mapping
   components:
   - type: Sprite
@@ -184,8 +185,8 @@
 - type: entity
   parent: FactionFlagBaseEN # EN
   id: Banner16
-  name: знамя ордена паломников
-  suffix: ST, Mapping, Баннер
+  name: Banner of the Order of Pilgrims
+  suffix: ST, Mapping, Banner # Zona14: ST, Mapping, Баннер
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Wallmounts/banners.rsi
@@ -194,8 +195,8 @@
 - type: entity
   parent: FactionFlagBaseEN # EN
   id: Banner17
-  name: флаг украины
-  suffix: ST, Mapping, Баннер
+  name: Project flag
+  suffix: ST, Mapping, Banner # Zona14: ST, Mapping, Баннер
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Wallmounts/banners.rsi
@@ -204,8 +205,8 @@
 - type: entity
   parent: FactionFlagBaseEN # EN
   id: Banner18
-  name: флаг украины c гербом
-  suffix: ST, Mapping, Баннер
+  name: Flag of Ukraine with the coat of arms
+  suffix: ST, Mapping, Banner # Zona14: ST, Mapping, Баннер
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Wallmounts/banners.rsi
@@ -217,8 +218,8 @@
 - type: entity
   parent: FactionFlagBaseEN # EN
   id: Banner19
-  name: флаг сил охраны периметра
-  suffix: ST, Mapping, Баннер
+  name: Flag of the Perimeter Guard Forces
+  suffix: ST, Mapping, Banner # Zona14: ST, Mapping, Баннер
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Wallmounts/banners.rsi
@@ -227,8 +228,8 @@
 - type: entity
   parent: FactionFlagBaseEN # EN
   id: Banner20
-  name: флаг проекта
-  suffix: ST, Mapping, Баннер
+  name: Project Flag
+  suffix: ST, Mapping, Banner # Zona14: ST, Mapping, Баннер
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Wallmounts/banners.rsi
@@ -237,8 +238,8 @@
 - type: entity
   parent: FactionFlagBaseEN # EN
   id: Banner21
-  name: флаг СССР
-  suffix: ST, Mapping, Баннер
+  name: USSR Flag
+  suffix: ST, Mapping, Banner # Zona14: ST, Mapping, Баннер
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Wallmounts/banners.rsi
@@ -247,8 +248,8 @@
 - type: entity
   parent: FactionFlagBaseEN # EN
   id: Banner22
-  name: флаг России
-  suffix: ST, Mapping, Баннер
+  name: flag of Russia
+  suffix: ST, Mapping, Banner # Zona14: ST, Mapping, Баннер
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Wallmounts/banners.rsi
@@ -257,8 +258,8 @@
 - type: entity
   parent: FactionFlagBaseEN # EN
   id: Banner23
-  name: флаг ДНР
-  suffix: ST, Mapping, Баннер
+  name: flag of DPR
+  suffix: ST, Mapping, Banner # Zona14: ST, Mapping, Баннер
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Wallmounts/banners.rsi
@@ -267,8 +268,8 @@
 - type: entity
   parent: FactionFlagBaseEN # EN
   id: Banner24
-  name: флаг Австрии
-  suffix: ST, Mapping, Баннер
+  name: flag of Austria
+  suffix: ST, Mapping, Banner # Zona14: ST, Mapping, Баннер
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Wallmounts/banners.rsi
@@ -277,8 +278,8 @@
 - type: entity
   parent: FactionFlagBaseEN # EN
   id: Banner25
-  name: флаг Польши
-  suffix: ST, Mapping, Баннер
+  name: flag of Poland
+  suffix: ST, Mapping, Banner # Zona14: ST, Mapping, Баннер
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Wallmounts/banners.rsi
@@ -287,8 +288,8 @@
 - type: entity
   parent: FactionFlagBaseEN # EN
   id: Banner26
-  name: флаг Сербской республики
-  suffix: ST, Mapping, Баннер
+  name: flag of the Serbian Republic
+  suffix: ST, Mapping, Banner # Zona14: ST, Mapping, Баннер
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Wallmounts/banners.rsi
@@ -297,8 +298,8 @@
 - type: entity
   parent: FactionFlagBaseEN # EN
   id: Banner27
-  name: флаг БЧБ
-  suffix: ST, Mapping, Баннер
+  name: BChB flag
+  suffix: ST, Mapping, Banner # Zona14: ST, Mapping, Баннер
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Wallmounts/banners.rsi
@@ -307,8 +308,8 @@
 - type: entity
   parent: FactionFlagBaseEN # EN
   id: Banner28
-  name: флаг Финских островов
-  suffix: ST, Mapping, Баннер
+  name: flag of the Finnish islands
+  suffix: ST, Mapping, Banner # Zona14: ST, Mapping, Баннер
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Wallmounts/banners.rsi

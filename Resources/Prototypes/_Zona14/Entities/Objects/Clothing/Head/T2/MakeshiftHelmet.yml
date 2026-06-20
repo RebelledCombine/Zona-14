@@ -1,0 +1,33 @@
+- type: entity
+  parent: Z14HelmetBase
+  id: Z14STClothingHeadHelmetMakeshiftTacticalT3
+  categories: [ Zona14 ]
+  name: Cyclops Helmet
+  description: A cheap helmet with an equally cheap visor attached in an extremely cheap way.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/Head/makeshift_helmet.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/Head/makeshift_helmet.rsi
+  - type: Tag
+    tags:
+      - BlockMask
+  - type: HideLayerClothing
+    slots:
+    - Hair
+
+# Jabs - 1
+
+- type: entity
+  parent: Z14STClothingHeadHelmetMakeshiftTacticalT3
+  id: Z14STClothingHeadHelmetMakeshiftTacticalT3Jabs
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Toad Cyclops Helmet
+  description: A handmade helmet from quality materials, perhaps not the most attractive, but protects well.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/makeshift_helmet_jabs.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/makeshift_helmet_jabs.rsi

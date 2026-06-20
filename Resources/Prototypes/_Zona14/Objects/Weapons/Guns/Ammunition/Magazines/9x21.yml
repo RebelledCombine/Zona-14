@@ -1,0 +1,115 @@
+- type: entity
+  id: Z14SR1Mag
+  categories: [ Zona14 ]
+  name: SR-1 magazine (18)
+  description: Magazine for the SR-1 "Gyurza". 18-round capacity. Sold empty.
+  parent: BaseGlockMag10
+  suffix: Z14
+  components:
+    - type: Tag
+      tags:
+        - MagazineSR1
+    - type: STWeight
+      self: 0.2
+    - type: BallisticAmmoProvider
+      mayTransfer: true
+      whitelist:
+        tags:
+          - STCartridge921
+      capacity: 18
+    - type: Item
+      size: Small
+      shape:
+        - 0,0,0,0
+    - type: Sprite
+      scale: 0.8, 0.8
+      sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Magazines/919/glock/17.rsi
+      layers:
+        - state: base
+          map: ["enum.GunVisualLayers.Base"]
+        - state: mag-1
+          map: ["enum.GunVisualLayers.Mag"]
+
+# 9x21 Veresk magazines
+
+- type: entity
+  id: Z14SR2MMag20
+  categories: [ Zona14 ]
+  name: SR-2M "Veresk" magazine 9x21 (20)
+  description: 9x21mm magazine for the SR-2M. 20-round capacity. Sold empty.
+  parent: BaseMP5Mag
+  suffix: Z14
+  components:
+  - type: STWeight
+    self: 0.1
+  - type: Tag
+    tags:
+      - MagazineSR2M
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - STCartridge921
+    capacity: 20
+  - type: Item
+    size: Small
+    shape:
+      - 0,0,0,1
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+      item_slot: !type:ContainerSlot { }
+  - type: Sprite
+    scale: 0.8, 0.8
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Magazines/919/pp-91.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  id: Z14SR2MMag30
+  categories: [ Zona14 ]
+  name: SR-2M "Veresk" magazine 9x21 (30)
+  description: 9x21mm magazine for the SR-2M. 30-round capacity. Sold empty.
+  parent: BaseMP5Mag
+  suffix: Z14
+  components:
+  - type: STWeight
+    self: 0.1
+  - type: Tag
+    tags:
+      - MagazineSR2M
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - STCartridge921
+    capacity: 30
+  - type: Item
+    size: Small
+    shape:
+      - 0,0,0,1
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+      item_slot: !type:ContainerSlot { }
+  - type: Sprite
+    scale: 0.8, 0.8
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Magazines/919/pp-91.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance

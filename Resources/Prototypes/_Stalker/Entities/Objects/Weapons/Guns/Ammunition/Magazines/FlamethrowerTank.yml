@@ -1,6 +1,7 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
-  name: Балон для огнемёта
-  description: Небольшой балон с топливом для огнемёта
+  name: Flamethrower canister
+  description: A small canister with fuel for a flamethrower
   id: STFlamethrowerTank
   suffix: ST, Full
   parent: BaseItem

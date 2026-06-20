@@ -1,0 +1,9 @@
+ent-Z14STCache1T1 = Cache1T1
+    .desc = A common item found in the Zone.
+    .suffix = Z14
+ent-Z14STCache2T1 = Cache2T1
+    .desc = A common item found in the Zone.
+    .suffix = Z14
+ent-Z14STCache3T1 = Cache3T1
+    .desc = A common item found in the Zone.
+    .suffix = Z14

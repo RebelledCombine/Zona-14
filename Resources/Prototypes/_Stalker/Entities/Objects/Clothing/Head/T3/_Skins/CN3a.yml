@@ -1,7 +1,8 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: STClothingHeadBase
   id: ClothingHeadHelmetCN3a
-  name: шлем «ЧН-3а»
+  name: CN-3a Helmet
   suffix: ST, T3, Env
   components:
     - type: Sprite

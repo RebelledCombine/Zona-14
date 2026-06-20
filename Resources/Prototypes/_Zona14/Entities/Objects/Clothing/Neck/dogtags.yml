@@ -1,0 +1,65 @@
+- type: entity
+  parent: ClothingNeckBase
+  id: Z14ClothingNeckDogtagBase
+  categories: [ Zona14 ]
+  abstract: true
+  name: dogtag
+  description: standard dog tag
+  components:
+  - type: Clothing
+    slots:
+    - dogtag
+  - type: StealTarget
+    stealGroup: HeadCloak
+  # need this to be able to insert it back in PDA
+  - type: Cartridge
+    programName: notekeeper-program-name
+  - type: Tag
+    tags: ["Dogtag"]
+  - type: Trash
+    time: 300
+
+- type: entity
+  parent: Z14ClothingNeckDogtagBase
+  id: Z14ClothingNeckDogtagBrigand
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/Neck/Dogtags/tag_brigand.rsi
+  - type: Currency
+    price:
+      PremiumSupplyTalons: 1
+
+- type: entity
+  parent: Z14ClothingNeckDogtagBase
+  id: Z14ClothingNeckDogtagOfficial
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/Neck/Dogtags/tag_official.rsi
+
+- type: entity
+  parent: Z14ClothingNeckDogtagBase
+  id: Z14ClothingNeckDogtagStalker
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/Neck/Dogtags/tag_stalker.rsi
+  - type: Currency
+    price:
+      PremiumSupplyTalons: 0
+
+- type: entity
+  parent: Z14ClothingNeckDogtagBase
+  id: Z14ClothingNeckDogtagPilgrim
+  categories: [ Zona14 ]
+  name: cross
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/Neck/Dogtags/tag_pilgrim.rsi
+  - type: Item
+    size: Tiny

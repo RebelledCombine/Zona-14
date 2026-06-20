@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: BaseItem
   id: KordonMapStack
-  name: Стопка карт кордона
-  description: Упаковка, содержащая карты севера и юга кордона.
+  name: Cordon Map Stack
+  description: A bundle containing maps of the north and south Cordon.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Other/Maps/kordonmapstack.rsi

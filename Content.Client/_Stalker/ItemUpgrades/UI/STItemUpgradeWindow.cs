@@ -38,7 +38,7 @@ public sealed class STItemUpgradeWindow : FancyWindow
         _currentWindow = this;
         OnClose += HandleClosed;
 
-        Title = "Модификация снаряжения";
+        Title = Loc.GetString("st-upgrades-window-title"); // Zona14: localized
         MinSize = new Vector2(1100, 760);
         SetSize = new Vector2(1100, 760);
 
@@ -274,7 +274,7 @@ public sealed class STItemUpgradeWindow : FancyWindow
 
             _topItems.AddChild(new Label
             {
-                Text = "НЕТ ПРЕДМЕТОВ",
+                Text = Loc.GetString("st-upgrades-no-items"), // Zona14: localized
                 HorizontalAlignment = HAlignment.Center,
                 VerticalAlignment = VAlignment.Center
             });
@@ -431,7 +431,7 @@ public sealed class STItemUpgradeWindow : FancyWindow
         {
             leftColumn.AddChild(new Label
             {
-                Text = "Выберите предмет",
+                Text = Loc.GetString("st-upgrades-select-item"), // Zona14: localized
                 HorizontalAlignment = HAlignment.Left,
                 VerticalAlignment = VAlignment.Center
             });
@@ -448,7 +448,7 @@ public sealed class STItemUpgradeWindow : FancyWindow
         {
             var resetButton = new Button
             {
-                Text = "Сбросить модификации",
+                Text = Loc.GetString("st-upgrades-reset"), // Zona14: localized
                 HorizontalAlignment = HAlignment.Left
             };
             ApplyButtonStyle(resetButton);
@@ -471,14 +471,14 @@ public sealed class STItemUpgradeWindow : FancyWindow
 
             confirmRow.AddChild(new Label
             {
-                Text = "Вы уверены?",
+                Text = Loc.GetString("st-upgrades-confirm"), // Zona14: localized
                 HorizontalAlignment = HAlignment.Left,
                 VerticalAlignment = VAlignment.Center
             });
 
             var yesButton = new Button
             {
-                Text = "Да"
+                Text = Loc.GetString("st-upgrades-yes") // Zona14: localized
             };
             ApplyButtonStyle(yesButton);
 
@@ -496,7 +496,7 @@ public sealed class STItemUpgradeWindow : FancyWindow
 
             var cancelButton = new Button
             {
-                Text = "Отмена"
+                Text = Loc.GetString("st-upgrades-cancel") // Zona14: localized
             };
             ApplyButtonStyle(cancelButton);
 
@@ -511,9 +511,11 @@ public sealed class STItemUpgradeWindow : FancyWindow
             leftColumn.AddChild(confirmRow);
         }
 
+        // Zona14: localized
         var repairButtonText = _selected.RepairSteelRequired > 0
-            ? "Починить"
-            : "Починка не требуется";
+            ? Loc.GetString("st-upgrades-repair")
+            : Loc.GetString("st-upgrades-repair-not-needed");
+        // End Zona14
 
         var repairButton = new Button
         {
@@ -541,7 +543,7 @@ public sealed class STItemUpgradeWindow : FancyWindow
         {
             centerColumn.AddChild(new Label
             {
-                Text = $"Нужно материалов: Сталь x{_selected.RepairSteelRequired}",
+                Text = Loc.GetString("st-upgrades-materials-needed", ("amount", _selected.RepairSteelRequired)), // Zona14: localized
                 HorizontalAlignment = HAlignment.Center
             });
 
@@ -549,7 +551,7 @@ public sealed class STItemUpgradeWindow : FancyWindow
             {
                 centerColumn.AddChild(new Label
                 {
-                    Text = $"Нужен инструмент: {tool.Name}",
+                    Text = Loc.GetString("st-upgrades-tool-needed", ("name", tool.Name)), // Zona14: localized
                     HorizontalAlignment = HAlignment.Center
                 });
             }
@@ -558,7 +560,7 @@ public sealed class STItemUpgradeWindow : FancyWindow
         {
             centerColumn.AddChild(new Label
             {
-                Text = "Предмет полностью исправен",
+                Text = Loc.GetString("st-upgrades-fully-functional"), // Zona14: localized
                 HorizontalAlignment = HAlignment.Center
             });
         }
@@ -578,7 +580,7 @@ public sealed class STItemUpgradeWindow : FancyWindow
         {
             _rightBottomPanel.AddChild(new Label
             {
-                Text = "Ничего не выбрано",
+                Text = Loc.GetString("st-upgrades-nothing-selected"), // Zona14: localized
                 HorizontalAlignment = HAlignment.Center,
                 VerticalAlignment = VAlignment.Center
             });
@@ -600,7 +602,7 @@ public sealed class STItemUpgradeWindow : FancyWindow
 
         box.AddChild(new Label
         {
-            Text = "Выбранный предмет:",
+            Text = Loc.GetString("st-upgrades-selected-item"), // Zona14: localized
             HorizontalAlignment = HAlignment.Left
         });
 
@@ -614,20 +616,20 @@ public sealed class STItemUpgradeWindow : FancyWindow
         {
             box.AddChild(new Label
             {
-                Text = $"Состояние: {_selected.DurabilityState}",
+                Text = Loc.GetString("st-upgrades-condition", ("state", _selected.DurabilityState)), // Zona14: localized
                 HorizontalAlignment = HAlignment.Left
             });
         }
 
         string buttonText;
         if (_selectedUpgrade == null)
-            buttonText = "Выберите модификацию";
+            buttonText = Loc.GetString("st-upgrades-select-modification"); // Zona14: localized
         else if (IsInstalledSelectedUpgrade())
-            buttonText = "Модификация уже установлена";
+            buttonText = Loc.GetString("st-upgrades-already-installed"); // Zona14: localized
         else if (!CanInstallSelectedUpgrade())
-            buttonText = "Модификация недоступна";
+            buttonText = Loc.GetString("st-upgrades-unavailable"); // Zona14: localized
         else
-            buttonText = "Установить модификацию";
+            buttonText = Loc.GetString("st-upgrades-install"); // Zona14: localized
 
         var button = new Button
         {
@@ -692,9 +694,9 @@ public sealed class STItemUpgradeWindow : FancyWindow
                 var title = ShortenNodeTitle(node.Name, 32);
 
                 if (installed)
-                    title = $"[УСТ] {title}";
+                    title = $"{Loc.GetString("st-upgrades-installed-prefix")} {title}"; // Zona14: localized
                 else if (!available)
-                    title = $"[БЛОК] {title}";
+                    title = $"{Loc.GetString("st-upgrades-blocked-prefix")} {title}"; // Zona14: localized
 
                 var panel = new Button
                 {
@@ -751,7 +753,7 @@ public sealed class STItemUpgradeWindow : FancyWindow
 
         _rightTopPanel.AddChild(new Label
         {
-            Text = "Правая панель описания",
+            Text = Loc.GetString("st-upgrades-right-panel"), // Zona14: localized
             HorizontalAlignment = HAlignment.Center,
             VerticalAlignment = VAlignment.Center
         });
@@ -783,7 +785,7 @@ public sealed class STItemUpgradeWindow : FancyWindow
         {
             box.AddChild(new Label
             {
-                Text = $"Ветка: {GetBranchDisplayName(_selectedUpgrade)}",
+                Text = Loc.GetString("st-upgrades-branch", ("name", GetBranchDisplayName(_selectedUpgrade))), // Zona14: localized
                 HorizontalAlignment = HAlignment.Left
             });
         }
@@ -792,7 +794,7 @@ public sealed class STItemUpgradeWindow : FancyWindow
         {
             box.AddChild(new Label
             {
-                Text = "Требуется:",
+                Text = Loc.GetString("st-upgrades-requires"), // Zona14: localized
                 HorizontalAlignment = HAlignment.Left
             });
 
@@ -810,7 +812,7 @@ public sealed class STItemUpgradeWindow : FancyWindow
         {
             box.AddChild(new Label
             {
-                Text = "Материалы:",
+                Text = Loc.GetString("st-upgrades-materials"), // Zona14: localized
                 HorizontalAlignment = HAlignment.Left
             });
 
@@ -828,7 +830,7 @@ public sealed class STItemUpgradeWindow : FancyWindow
         {
             box.AddChild(new Label
             {
-                Text = "Инструменты:",
+                Text = Loc.GetString("st-upgrades-tools"), // Zona14: localized
                 HorizontalAlignment = HAlignment.Left
             });
 
@@ -848,7 +850,7 @@ public sealed class STItemUpgradeWindow : FancyWindow
 
             box.AddChild(new Label
             {
-                Text = "Оружие:",
+                Text = Loc.GetString("st-upgrades-weapon"), // Zona14: localized
                 HorizontalAlignment = HAlignment.Left
             });
 
@@ -857,7 +859,7 @@ public sealed class STItemUpgradeWindow : FancyWindow
                 var percent = (gun.FireRateMultiplier - 1f) * 100f;
                 box.AddChild(new Label
                 {
-                    Text = $"{FormatPercent(percent)} скорострельности",
+                    Text = Loc.GetString("st-upgrades-fire-rate", ("percent", FormatPercent(percent))), // Zona14: localized
                     HorizontalAlignment = HAlignment.Left
                 });
             }
@@ -867,7 +869,7 @@ public sealed class STItemUpgradeWindow : FancyWindow
                 var percent = (gun.MinAngleMultiplier - 1f) * 100f;
                 box.AddChild(new Label
                 {
-                    Text = $"{FormatPercent(percent)} минимального разброса",
+                    Text = Loc.GetString("st-upgrades-min-spread", ("percent", FormatPercent(percent))), // Zona14: localized
                     HorizontalAlignment = HAlignment.Left
                 });
             }
@@ -877,7 +879,7 @@ public sealed class STItemUpgradeWindow : FancyWindow
                 var percent = (gun.MaxAngleMultiplier - 1f) * 100f;
                 box.AddChild(new Label
                 {
-                    Text = $"{FormatPercent(percent)} максимального разброса",
+                    Text = Loc.GetString("st-upgrades-max-spread", ("percent", FormatPercent(percent))), // Zona14: localized
                     HorizontalAlignment = HAlignment.Left
                 });
             }
@@ -887,7 +889,7 @@ public sealed class STItemUpgradeWindow : FancyWindow
                 var percent = (gun.AngleIncreaseMultiplier - 1f) * 100f;
                 box.AddChild(new Label
                 {
-                    Text = $"{FormatPercent(percent)} роста разброса",
+                    Text = Loc.GetString("st-upgrades-spread-increase", ("percent", FormatPercent(percent))), // Zona14: localized
                     HorizontalAlignment = HAlignment.Left
                 });
             }
@@ -897,7 +899,7 @@ public sealed class STItemUpgradeWindow : FancyWindow
                 var percent = (gun.AngleDecayMultiplier - 1f) * 100f;
                 box.AddChild(new Label
                 {
-                    Text = $"{FormatPercent(percent)} сброса разброса",
+                    Text = Loc.GetString("st-upgrades-spread-decay", ("percent", FormatPercent(percent))), // Zona14: localized
                     HorizontalAlignment = HAlignment.Left
                 });
             }
@@ -907,7 +909,7 @@ public sealed class STItemUpgradeWindow : FancyWindow
         {
             box.AddChild(new Label
             {
-                Text = "Броня:",
+                Text = Loc.GetString("st-upgrades-armor"), // Zona14: localized
                 HorizontalAlignment = HAlignment.Left
             });
 
@@ -934,7 +936,7 @@ public sealed class STItemUpgradeWindow : FancyWindow
         {
             box.AddChild(new Label
             {
-                Text = "Статус: уже установлена",
+                Text = Loc.GetString("st-upgrades-status-installed"), // Zona14: localized
                 HorizontalAlignment = HAlignment.Left
             });
         }
@@ -942,7 +944,7 @@ public sealed class STItemUpgradeWindow : FancyWindow
         {
             box.AddChild(new Label
             {
-                Text = "Статус: недоступна",
+                Text = Loc.GetString("st-upgrades-status-unavailable"), // Zona14: localized
                 HorizontalAlignment = HAlignment.Left
             });
         }
@@ -950,7 +952,7 @@ public sealed class STItemUpgradeWindow : FancyWindow
         {
             box.AddChild(new Label
             {
-                Text = "Статус: доступна",
+                Text = Loc.GetString("st-upgrades-status-available"), // Zona14: localized
                 HorizontalAlignment = HAlignment.Left
             });
         }

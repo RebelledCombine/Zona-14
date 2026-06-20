@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: STClothingOuterArmorStorageBasic
   id: STClothingOuterInterceptorOTV
-  name: Бронежилет "Интерцептор"
-  description: Бронежилет II типа, обеспечивающий неплохую защиту от некоторых видов повреждений.
+  name: Interceptor Body Armor
+  description: Type II bulletproof vest, providing good protection against some types of damage.
   suffix: ST, T2, PVP
   components:
   - type: Sprite

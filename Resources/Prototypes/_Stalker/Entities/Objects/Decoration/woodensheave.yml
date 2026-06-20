@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: woodensheave
   parent: STBaseStructure
-  name: кабельная катушка
+  name: cable reel
   suffix: ST, Mapping
-  description: Круглый предмет в форме барабана, такой как катушка, используемый для транспортировки различных типов электрических проводов.
+  description: A round drum-shaped object, such as a coil, used to transport various types of electrical wires.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/woodensheave.rsi

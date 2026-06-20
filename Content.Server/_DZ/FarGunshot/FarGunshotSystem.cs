@@ -43,7 +43,7 @@ public sealed class FarGunshotSystem : EntitySystem
         // Actually, i think we need to override .AddInRange(MapCoordinates mappos, float range)
         // so it would skip vanilla tiles, so we could decrease amount of iterations for each gunshot
         // but i want to take a look and how it actually work, and maybe after perfomance issue start to
-        // rewritign this (торнадыч сказал что лагать не будет)
+        // rewriting this (tornadych said it won't lag) // Zona14: translated from Russian
 
         // Play the distant gunshot sound globally:
         // - Enabled for replay recording

@@ -1,6 +1,7 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: Rad1
-  name: радиация (1 рад в центре, 9 тайлов)
+  name: radiation (1 rad in center, 9 tiles)
   suffix: Stalker
   parent: FlexibleMarker
   components:
@@ -15,7 +16,7 @@
 
 - type: entity
   id: Rad2
-  name: радиация (1 рад в центре, 16 тайлов)
+  name: radiation (1 rad in center, 16 tiles)
   suffix: Stalker
   parent: Rad1
   components:
@@ -31,7 +32,7 @@
 
 - type: entity
   id: Rad7
-  name: радиация (2 рад в центре, 8 тайлов)
+  name: radiation (2 rad in center, 8 tiles)
   suffix: Stalker
   parent: Rad1
   components:
@@ -46,7 +47,7 @@
 
 - type: entity
   id: Rad8
-  name: радиация (2 рад в центре, 20 тайлов)
+  name: radiation (2 rad in center, 20 tiles)
   suffix: Stalker
   parent: Rad1
   components:
@@ -61,7 +62,7 @@
 
 - type: entity
   id: Rad3
-  name: радиация (5 рад в центре, 6 тайлов)
+  name: radiation (5 rad in center, 6 tiles)
   suffix: Stalker
   parent: Rad1
   components:
@@ -76,7 +77,7 @@
 
 - type: entity
   id: Rad5
-  name: радиация (5 рад в центре, 10 тайлов)
+  name: radiation (5 rad in center, 10 tiles)
   suffix: Stalker
   parent: Rad1
   components:
@@ -91,7 +92,7 @@
 
 - type: entity
   id: Rad6
-  name: радиация (5 рад в центре, 25 тайлов)
+  name: radiation (5 rad in center, 25 tiles)
   suffix: Stalker
   parent: Rad1
   components:
@@ -106,7 +107,7 @@
 
 - type: entity
   id: Rad10
-  name: радиация (10 рад в центре, 6 тайлов)
+  name: radiation (10 rad at center, 6 tiles)
   suffix: Stalker
   parent: Rad1
   components:
@@ -121,7 +122,7 @@
 
 - type: entity
   id: Rad11
-  name: радиация (10 рад в центре, 10 тайлов)
+  name: radiation (10 rad at center, 10 tiles)
   suffix: Stalker
   parent: Rad1
   components:
@@ -136,7 +137,7 @@
 
 - type: entity
   id: Rad9
-  name: радиация (10 рад в центре, 25 тайлов)
+  name: radiation (10 rad at center, 25 tiles)
   suffix: Stalker
   parent: Rad1
   components:
@@ -150,11 +151,11 @@
     slope: 0.2
 
 #####################################################
-#Огненные источники
+# Zona14: Огненные источники
 #####################################################
 - type: entity
   id: AnomalyHeatSource1
-  name: жара (1 ед в центре, 20 тайлов)
+  name: heat (1 unit in center, 20 tiles)
   suffix: Stalker
   parent: Rad1
   components:
@@ -170,7 +171,7 @@
 
 - type: entity
   id: FireSource8
-  name: жара (2 ед в центре, 20 тайлов)
+  name: heat (2 unit in center, 20 tiles)
   suffix: Stalker
   parent: Rad1
   components:
@@ -186,7 +187,7 @@
 
 - type: entity
   id: AnomalyHeatSource3
-  name: жара (1 ед в центре, 10 тайлов)
+  name: heat (1 unit in center, 10 tiles)
   suffix: Stalker
   parent: Rad1
   components:
@@ -202,7 +203,7 @@
 
 - type: entity
   id: AnomalyHeatSource4
-  name: жара (2 ед в центре, 10 тайлов)
+  name: heat (2 unit in center, 10 tiles)
   suffix: Stalker
   parent: Rad1
   components:
@@ -218,7 +219,7 @@
 
 - type: entity
   id: FireSource9
-  name: жара (5 ед в центре, 10 тайлов)
+  name: heat (5 units at center, 10 tiles)
   suffix: Stalker
   parent: Rad1
   components:
@@ -234,7 +235,7 @@
 
 - type: entity
   id: FireSource10
-  name: жара (5 ед в центре, 20 тайлов)
+  name: heat (5 units at center, 20 tiles)
   suffix: Stalker
   parent: Rad1
   components:
@@ -250,7 +251,7 @@
 
 - type: entity
   id: FireSource11
-  name: жара (10 ед в центре, 10 тайлов)
+  name: heat (10 units at center, 10 tiles)
   suffix: Stalker
   parent: Rad1
   components:
@@ -266,7 +267,7 @@
 
 - type: entity
   id: FireSource12
-  name: жара (10 ед в центре, 20 тайлов)
+  name: heat (10 units at center, 20 tiles)
   suffix: Stalker
   parent: Rad1
   components:
@@ -281,11 +282,11 @@
     damageType: Heat
 
 #####################################################
-#ПСИ источники
+# Zona14: ПСИ источники
 #####################################################
 - type: entity
   id: AnomalyHeatPsy
-  name: источник пси (1 ед в центре, 20 тайлов)
+  name: psy source (1 unit in center, 20 tiles)
   suffix: Stalker
   parent: Rad1
   components:
@@ -301,7 +302,7 @@
 
 - type: entity
   id: AnomalyHeatPsy2
-  name: источник пси (2 ед в центре, 20 тайлов)
+  name: psy source (2 unit in center, 20 tiles)
   suffix: Stalker
   parent: Rad1
   components:
@@ -317,7 +318,7 @@
 
 - type: entity
   id: AnomalyHeatPsy3
-  name: источник пси (1 ед в центре, 10 тайлов)
+  name: psy source (1 unit in center, 10 tiles)
   suffix: Stalker
   parent: Rad1
   components:
@@ -333,7 +334,7 @@
 
 - type: entity
   id: AnomalyHeatPsy4
-  name: источник пси (2 ед в центре, 10 тайлов)
+  name: psy source (2 unit in center, 10 tiles)
   suffix: Stalker
   parent: Rad1
   components:
@@ -349,7 +350,7 @@
 
 - type: entity
   id: AnomalyHeatPsy5
-  name: источник пси (5 ед в центре, 10 тайлов)
+  name: psy source (5 units at center, 10 tiles)
   suffix: Stalker
   parent: Rad1
   components:
@@ -365,7 +366,7 @@
 
 - type: entity
   id: AnomalyHeatPsy6
-  name: источник пси (5 ед в центре, 20 тайлов)
+  name: psy source (5 units at center, 20 tiles)
   suffix: Stalker
   parent: Rad1
   components:
@@ -381,7 +382,7 @@
 
 - type: entity
   id: AnomalyHeatPsy7
-  name: источник пси (10 ед в центре, 10 тайлов)
+  name: psy source (10 units at center, 10 tiles)
   suffix: Stalker
   parent: Rad1
   components:
@@ -397,7 +398,7 @@
 
 - type: entity
   id: AnomalyHeatPsy8
-  name: источник пси (10 ед в центре, 20 тайлов)
+  name: psy source (10 units at center, 20 tiles)
   suffix: Stalker
   parent: Rad1
   components:
@@ -412,12 +413,12 @@
     damageType: Psy
 
 #####################################################
-#Токсичный источник
+# Zona14: Токсичный источник
 #####################################################
 
 - type: entity
   id: AnomalyChemSource1
-  name: источник токсинов (1 ед в центре, 20 тайлов)
+  name: caustic source (1 unit in center, 20 tiles)
   suffix: Stalker
   parent: Rad1
   components:
@@ -433,7 +434,7 @@
 
 - type: entity
   id: AnomalyChemSource2
-  name: источник токсинов (2 ед в центре, 20 тайлов)
+  name: caustic source (2 unit in center, 20 tiles)
   suffix: Stalker
   parent: Rad1
   components:
@@ -449,7 +450,7 @@
 
 - type: entity
   id: AnomalyChemSource3
-  name: источник токсинов (1 ед в центре, 10 тайлов)
+  name: caustic source (1 unit in center, 10 tiles)
   suffix: Stalker
   parent: Rad1
   components:
@@ -465,7 +466,7 @@
 
 - type: entity
   id: AnomalyChemSource4
-  name: источник токсинов (2 ед в центре, 10 тайлов)
+  name: caustic source (2 unit in center, 10 tiles)
   suffix: Stalker
   parent: Rad1
   components:
@@ -481,7 +482,7 @@
 
 - type: entity
   id: AnomalyChemSource5
-  name: источник токсинов (5 ед в центре, 6 тайлов)
+  name: caustic source (5 unit in center, 6 tiles)
   suffix: Stalker
   parent: Rad1
   components:
@@ -497,7 +498,7 @@
 
 - type: entity
   id: AnomalyChemSource6
-  name: источник токсинов (5 ед в центре, 10 тайлов)
+  name: caustic source (5 unit in center, 10 tiles)
   suffix: Stalker
   parent: Rad1
   components:
@@ -513,7 +514,7 @@
 
 - type: entity
   id: AnomalyChemSource7
-  name: источник токсинов (5 ед в центре, 25 тайлов)
+  name: caustic source (5 unit in center, 25 tiles)
   suffix: Stalker
   parent: Rad1
   components:
@@ -529,7 +530,7 @@
 
 - type: entity
   id: AnomalyChemSource8
-  name: источник токсинов (5 ед в центре, 35 тайлов)
+  name: caustic source (5 unit in center, 35 tiles)
   suffix: Stalker
   parent: Rad1
   components:
@@ -545,7 +546,7 @@
 
 - type: entity
   id: AnomalyChemSource9
-  name: источник токсинов (10 ед в центре, 6 тайлов)
+  name: toxin source (10 units at center, 6 tiles)
   suffix: Stalker
   parent: Rad1
   components:
@@ -561,7 +562,7 @@
 
 - type: entity
   id: AnomalyChemSource10
-  name: источник токсинов (10 ед в центре, 10 тайлов)
+  name: toxin source (10 units at center, 10 tiles)
   suffix: Stalker
   parent: Rad1
   components:
@@ -577,7 +578,7 @@
 
 - type: entity
   id: AnomalyChemSource11
-  name: источник токсинов (10 ед в центре, 25 тайлов)
+  name: toxin source (10 units at center, 25 tiles)
   suffix: Stalker
   parent: Rad1
   components:
@@ -593,7 +594,7 @@
 
 - type: entity
   id: AnomalyChemSource12
-  name: источник токсинов (10 ед в центре, 35 тайлов)
+  name: toxin source (10 units at center, 35 tiles)
   suffix: Stalker
   parent: Rad1
   components:

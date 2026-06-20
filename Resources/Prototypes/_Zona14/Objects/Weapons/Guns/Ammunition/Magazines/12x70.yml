@@ -1,0 +1,331 @@
+- type: entity
+  id: Z14Base1270Mag
+  categories: [ Zona14 ]
+  name: Saiga magazine 12x70 (5)
+  description: 12x70 Saiga magazine for AK shotguns. Fraction capacity 5. They sell empty.
+  parent: Base545Mag10
+  suffix: Z14
+  components:
+  - type: STWeight
+    self: 0.2
+  - type: Tag
+    tags:
+      - MagazineSaiga
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - ShellShotgun
+    capacity: 5
+  - type: Item
+    size: Small
+    shape:
+      - 0,0,0,1
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+      storagebase: !type:Container
+        ents: [ ]
+      item_slot: !type:ContainerSlot { }
+  - type: Sprite
+    scale: 0.8, 0.8
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Magazines/1270/Saiga/5.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
+  - type: ItemSlots
+    slots:
+      item_slot:
+        name: mop-bucket-slot-component-slot-name-item123
+        ejectVerbText: mop-bucket-slot-component-eject-verb123
+        whitelist:
+          tags:
+            - STElasticRubberRed
+            - STElasticRubberGreen
+            - STElasticRubberBlue
+  - type: ItemMapper
+    mapLayers:
+      red_5:
+        whitelist:
+          tags:
+            - STElasticRubberRed
+      green_5:
+        whitelist:
+          tags:
+            - STElasticRubberGreen
+      blue_5:
+        whitelist:
+          tags:
+            - STElasticRubberBlue
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Magazines/1270/Saiga/elastic_rubber.rsi
+
+- type: entity
+  id: Z14Saiga1270Mag10
+  categories: [ Zona14 ]
+  name: Saiga Shop 12x70 (10)
+  description: 12x70 Saiga magazine for AK shotguns. Fraction capacity 10. They sell empty.
+  parent: Base1270Mag
+  suffix: Z14
+  components:
+  - type: STWeight
+    self: 0.4
+  - type: BallisticAmmoProvider
+    capacity: 10
+  - type: Item
+    size: Normal
+    shape:
+      - 0,0,0,2
+  - type: Sprite
+    scale: 0.8, 0.8
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Magazines/1270/Saiga/10.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: ItemMapper
+    mapLayers:
+      red_10:
+        whitelist:
+          tags:
+            - STElasticRubberRed
+      green_10:
+        whitelist:
+          tags:
+            - STElasticRubberGreen
+      blue_10:
+        whitelist:
+          tags:
+            - STElasticRubberBlue
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Magazines/1270/Saiga/elastic_rubber.rsi
+
+- type: entity
+  id: Z14Saiga1270Drum
+  categories: [ Zona14 ]
+  name: Saiga Drum 12x70 (20)
+  description: Saiga drum 12x70 for AK shotguns. Fraction capacity 20. They sell empty.
+  parent: Base1270Mag
+  suffix: Z14
+  components:
+  - type: STWeight
+    self: 0.5
+  - type: BallisticAmmoProvider
+    capacity: 20
+  - type: Item
+    size: Normal
+    shape:
+      - 0,0,1,1
+  - type: Sprite
+    scale: 0.8, 0.8
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Magazines/1270/Saiga/drum.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: ItemMapper
+    mapLayers:
+      red_drum:
+        whitelist:
+          tags:
+            - STElasticRubberRed
+      green_drum:
+        whitelist:
+          tags:
+            - STElasticRubberGreen
+      blue_drum:
+        whitelist:
+          tags:
+            - STElasticRubberBlue
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Magazines/1270/Saiga/elastic_rubber.rsi
+
+- type: entity
+  parent: BaseMagazineUSAS12x70
+  id: Z14Magazine10USAS12x70
+  categories: [ Zona14 ]
+  name: magazine USAS 12x70 (10)
+  description: USAS 12x70 magazine for AK shotguns. Capacity of fractions is 10. Sold empty.
+  suffix: Z14
+  components:
+  - type: STWeight
+    self: 0.4
+  - type: BallisticAmmoProvider
+    capacity: 10
+  - type: Sprite
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Magazines/usas_10.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  parent: BaseMagazineUSAS12x70
+  id: Z14Magazine20USAS12x70
+  categories: [ Zona14 ]
+  name: drum USAS 12x70 (10)
+  description: USAS 12x70 drum for AK shotguns. Capacity of fractions is 20. Sold empty.
+  suffix: Z14
+  components:
+  - type: STWeight
+    self: 0.4
+  - type: BallisticAmmoProvider
+    capacity: 20
+  - type: Sprite
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Magazines/usas_20.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  parent: Base1270Mag
+  id: Z14DrumAutoAssSmall
+  categories: [ Zona14 ]
+  name: AA-12 Magazine (9)
+  description: AA 12x70 magazine for shotguns.
+  suffix: Z14
+  components:
+  - type: Sprite
+    scale: 0.8, 0.8
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Magazines/1270/aa12/9.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: STWeight
+    self: 0.9
+  - type: Tag
+    tags:
+    - DrumAutoAss
+  - type: BallisticAmmoProvider
+    capacity: 9
+  - type: Item
+    size: Normal
+    shape:
+    - 0,0,0,1
+  - type: ItemMapper
+    mapLayers:
+      red_9:
+        whitelist:
+          tags:
+            - STElasticRubberRed
+      green_9:
+        whitelist:
+          tags:
+            - STElasticRubberGreen
+      blue_9:
+        whitelist:
+          tags:
+            - STElasticRubberBlue
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Magazines/1270/aa12/elastic_rubber.rsi
+
+- type: entity
+  parent: DrumAutoAssSmall
+  id: Z14DrumAutoAssBig
+  categories: [ Zona14 ]
+  name: AA-12 Drum (20)
+  description: AA 12x70 magazine for shotguns.
+  suffix: Z14
+  components:
+  - type: Sprite
+    scale: 1, 1
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Magazines/1270/aa12/20.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: STWeight
+    self: 2
+  - type: BallisticAmmoProvider
+    capacity: 20
+  - type: Item
+    size: Normal
+    shape:
+    - 0,0,1,1
+  - type: ItemMapper
+    mapLayers:
+      red_20:
+        whitelist:
+          tags:
+            - STElasticRubberRed
+      green_20:
+        whitelist:
+          tags:
+            - STElasticRubberGreen
+      blue_20:
+        whitelist:
+          tags:
+            - STElasticRubberBlue
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Magazines/1270/aa12/elastic_rubber.rsi
+
+- type: entity
+  parent: DrumAutoAssSmall
+  id: Z14DrumAutoAssVeryBig
+  categories: [ Zona14 ]
+  name: AA-12 Drum (32)
+  description: AA 12x70 magazine for shotguns.
+  suffix: Z14
+  components:
+  - type: Sprite
+    scale: 1, 1
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Magazines/1270/aa12/20.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: STWeight
+    self: 3.2
+  - type: BallisticAmmoProvider
+    capacity: 32
+  - type: Item
+    size: Normal
+    shape:
+    - 0,0,2,2
+
+- type: entity
+  id: Z14Base1270OriginMag
+  categories: [ Zona14 ]
+  name: Origin-12 12x70 magazine (5)
+  description: Origin-12 12x70 magazine. Holds 5 shells. Sold empty.
+  parent: Base1270Mag
+  suffix: Z14
+  components:
+  - type: Tag
+    tags:
+      - MagazineOrigin12
+
+- type: entity
+  id: Z14Origin1270Mag10
+  categories: [ Zona14 ]
+  name: Origin-12 12x70 magazine (10)
+  description: Origin-12 12x70 magazine. Holds 10 shells. Sold empty.
+  parent: Saiga1270Mag10
+  suffix: Z14
+  components:
+  - type: Tag
+    tags:
+      - MagazineOrigin12
+
+- type: entity
+  id: Z14Origin1270Drum
+  categories: [ Zona14 ]
+  name: Origin-12 12x70 drum (20)
+  description: Origin-12 12x70 drum magazine. Holds 20 shells. Sold empty.
+  parent: Saiga1270Drum
+  suffix: Z14
+  components:
+  - type: Tag
+    tags:
+      - MagazineOrigin12

@@ -1,0 +1,523 @@
+- type: entity
+  parent: STBaseItem
+  id: Z14SetJacketNoviceBrezentBuyableCrate
+  categories: [ Zona14 ]
+  name: Beginner's Jacket Set
+  description: Normal clothing of a novice stalker. It does not save the wearer from either a bullet or anomalies, but it is comfortable to wear. Includes a jacket, a gas mask, black city backpack and a set of beginner's pouches.
+  suffix: Z14
+  components:
+    - type: STWeight
+      self: 10
+    - type: Item
+      size: Ginormous
+    - type: MultiHandedItem
+    - type: Sprite
+      sprite: _Stalker/Structures/Furniture/Sets/jacket-novice-brezent.rsi
+      state: icon
+    - type: SpawnItemsOnUse
+      items:
+        - id: ClothingOuterJacketStalker
+        - id: ClothingMaskGasMarlya
+        - id: ClothingBackpackTownBlackStalker
+        - id: ClothingBeltBandolierStalker
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+
+# White
+
+- type: entity
+  parent: STBaseItem
+  id: Z14SetJacketNoviceWhiteBuyableCrate
+  categories: [ Zona14 ]
+  name: White Beginner's Jacket Set
+  description: "Normal clothing of a novice stalker. It does not save the wearer from either a bullet or anomalies, but it is comfortable to wear. Includes a jacket, a gas mask, black city backpack and a set of beginner's pouches."
+  suffix: Z14
+  components:
+    - type: STWeight
+      self: 10
+    - type: Item
+      size: Ginormous
+    - type: MultiHandedItem
+    - type: Sprite
+      sprite: _Stalker/Structures/Furniture/Sets/jacket-novice-white.rsi
+      state: icon
+    - type: SpawnItemsOnUse
+      items:
+        - id: ClothingOuterJacketStalkerWhite
+        - id: ClothingMaskGasMarlya
+        - id: ClothingBackpackTownBlackStalker
+        - id: ClothingBeltBandolierStalker
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+
+# Bandit
+
+- type: entity
+  parent: STBaseItem
+  id: Z14SetJacketBanditBuyableCrate
+  categories: [ Zona14 ]
+  name: Bandit Leather Jacket Set
+  description: Traditional bandit attire is a leather jacket with sewn-in armor pieces. It gives protection, which is extremely insufficient in the harsh conditions of the Zone. The set includes a jacket, a gas mask, a white city backpack and a set of beginner's pouches.
+  suffix: Z14
+  components:
+    - type: STWeight
+      self: 10
+    - type: Item
+      size: Ginormous
+    - type: MultiHandedItem
+    - type: Sprite
+      sprite: _Stalker/Structures/Furniture/Sets/jacket-novice-bandit.rsi
+      state: icon
+    - type: SpawnItemsOnUse
+      items:
+        - id: ClothingOuterJacketBandit
+        - id: ClothingMaskGasMarlya
+        - id: ClothingBackpackTownWhiteStalker
+        - id: ClothingBeltBandolierStalker
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+
+################# Rookie Chainmail Jackets
+
+# Canvas
+
+- type: entity
+  parent: STBaseItem
+  id: Z14SetArmourJacketNoviceBrezentBuyableCrate
+  categories: [ Zona14 ]
+  name: Stalker Chainmail Jacket Set
+  description: Includes a chainmail stalker jacket, gauze mask, black urban backpack, and a novice pouch kit.
+  suffix: Z14
+  components:
+    - type: STWeight
+      self: 10
+    - type: Item
+      size: Ginormous
+    - type: MultiHandedItem
+    - type: Sprite
+      sprite: _Stalker/Structures/Furniture/Sets/jacket-novice-brezent.rsi
+      state: icon
+    - type: SpawnItemsOnUse
+      items:
+        - id: ClothingOuterArmourJacketStalker
+        - id: ClothingMaskGasMarlya
+        - id: ClothingBackpackTownBlackStalker
+        - id: ClothingBeltBandolierStalker
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+
+# White
+
+- type: entity
+  parent: STBaseItem
+  id: Z14SetArmourJacketNoviceWhiteBuyableCrate
+  categories: [ Zona14 ]
+  name: Stalker Chainmail Jacket Set
+  description: Includes a white chainmail stalker jacket, gauze mask, black urban backpack, and a novice pouch kit.
+  suffix: Z14
+  components:
+    - type: STWeight
+      self: 10
+    - type: Item
+      size: Ginormous
+    - type: MultiHandedItem
+    - type: Sprite
+      sprite: _Stalker/Structures/Furniture/Sets/jacket-novice-white.rsi
+      state: icon
+    - type: SpawnItemsOnUse
+      items:
+        - id: ClothingOuterArmourJacketStalkerWhite
+        - id: ClothingMaskGasMarlya
+        - id: ClothingBackpackTownBlackStalker
+        - id: ClothingBeltBandolierStalker
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+
+# Bandit
+
+- type: entity
+  parent: STBaseItem
+  id: Z14SetArmoutJacketBanditBuyableCrate
+  categories: [ Zona14 ]
+  name: Bandit Chainmail Jacket Set
+  description: Includes a bandit chainmail jacket, gauze mask, white urban backpack, and a novice pouch kit.
+  suffix: Z14
+  components:
+    - type: STWeight
+      self: 10
+    - type: Item
+      size: Ginormous
+    - type: MultiHandedItem
+    - type: Sprite
+      sprite: _Stalker/Structures/Furniture/Sets/jacket-novice-bandit.rsi
+      state: icon
+    - type: SpawnItemsOnUse
+      items:
+        - id: ClothingOuterArmourJacketBandit
+        - id: ClothingMaskGasMarlya
+        - id: ClothingBackpackTownWhiteStalker
+        - id: ClothingBeltBandolierStalker
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+
+################# Zarya
+
+# Stalker 1
+
+- type: entity
+  parent: STBaseItem
+  id: Z14SetZaryaStalkerBuyableCrate
+  categories: [ Zona14 ]
+  name: Sunrise set
+  description: The set includes a jumpsuit, gas mask, backpack, and a waist bag with holster.
+  suffix: Z14
+  components:
+    - type: STWeight
+      self: 10
+    - type: Item
+      size: Ginormous
+    - type: MultiHandedItem
+    - type: Sprite
+      sprite: _Stalker/Structures/Furniture/Sets/zarya.rsi
+      state: icon
+    - type: SpawnItemsOnUse
+      items:
+        - id: ClothingOuterArmorZaryaStalker
+        - id: ClothingMaskGasZarya
+        - id: ClothingBackpackStalkerZaryaGreen
+        - id: ClothingBeltWebbingHolsterStalkerZarya
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+
+# Mercenary Suit
+
+# Mercenary
+
+- type: entity
+  parent: STBaseItem
+  id: Z14SetMercBuyableCrate
+  categories: [ Zona14 ]
+  name: Mercenary Armor Set
+  description: Includes an armored jumpsuit, a gauze mask, and a belt pouch with a holster.
+  suffix: Z14
+  components:
+    - type: STWeight
+      self: 10
+    - type: Item
+      size: Ginormous
+    - type: MultiHandedItem
+    - type: Sprite
+      sprite: _Stalker/Structures/Furniture/Sets/merc.rsi
+      state: icon
+    - type: SpawnItemsOnUse
+      items:
+        - id: ClothingOuterArmorMerc
+        - id: ClothingMaskGasMercStalker
+        - id: ClothingBeltWebbingHolsterMerc
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  parent: STBaseItem
+  id: Z14SetMerc2BuyableCrate
+  categories: [ Zona14 ]
+  name: Mercenary Armor Set
+  description: Includes an armored jumpsuit, a gauze mask, and a belt pouch with a holster.
+  suffix: Z14
+  components:
+    - type: STWeight
+      self: 10
+    - type: Item
+      size: Ginormous
+    - type: MultiHandedItem
+    - type: Sprite
+      sprite: _Stalker/Structures/Furniture/Sets/merc_2.rsi
+      state: icon
+    - type: SpawnItemsOnUse
+      items:
+        - id: ClothingOuterArmorMerc2
+        - id: ClothingMaskGasMarlya
+        - id: ClothingBeltWebbingHolsterMerc2
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+
+# Bandit
+
+- type: entity
+  parent: STBaseItem
+  id: Z14SetMercBanditBuyableCrate
+  categories: [ Zona14 ]
+  name: '"Valet" Mercenary Armor Set'
+  description: Includes an armored jumpsuit, a gauze mask, and a belt pouch with a holster.
+  suffix: Z14
+  components:
+    - type: STWeight
+      self: 10
+    - type: Item
+      size: Ginormous
+    - type: MultiHandedItem
+    - type: Sprite
+      sprite: _Stalker/Structures/Furniture/Sets/merc_bandit.rsi
+      state: icon
+    - type: SpawnItemsOnUse
+      items:
+        - id: ClothingOuterArmorBandits
+        - id: ClothingMaskGasMarlya
+        - id: ClothingBeltWebbingHolsterMercBandit
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+
+# Stalker
+
+- type: entity
+  parent: STBaseItem
+  id: Z14SetMercLonerBuyableCrate
+  categories: [ Zona14 ]
+  name: Stalker overalls set
+  description: The set includes a jumpsuit, balaclava and a belt bag with a holster.
+  suffix: Z14
+  components:
+    - type: STWeight
+      self: 10
+    - type: Item
+      size: Ginormous
+    - type: MultiHandedItem
+    - type: Sprite
+      sprite: _Stalker/Structures/Furniture/Sets/merc_loner.rsi
+      state: icon
+    - type: SpawnItemsOnUse
+      items:
+        - id: ClothingOuterArmorStalker
+        - id: ClothingMaskNeckBalaklava1
+        - id: ClothingBeltWebbingHolsterLoner
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+
+############## Stalker suits +
+
+# Duty
+
+# PS-5M
+
+- type: entity
+  parent: STBaseItem
+  id: Z14SetPS5MDolgBuyableCrate
+  categories: [ Zona14 ]
+  name: PS5-M Set "Universal Protection"
+  description: Includes an armored suit, gas mask, and belt pouch with holster.
+  suffix: Z14
+  components:
+    - type: STWeight
+      self: 10
+    - type: Item
+      size: Ginormous
+    - type: MultiHandedItem
+    - type: Sprite
+      sprite: _Stalker/Structures/Furniture/Sets/ps5m.rsi
+      state: icon
+    - type: SpawnItemsOnUse
+      items:
+        - id: ClothingOuterArmorDolgPS5M
+        - id: ClothingMaskGasDolg1
+        - id: ClothingBeltWebbingHolsterDolgPS5M
+        - id: ClothingBackpackStalkerZaryaBlack
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+
+# Freedom
+
+# Guardian of Freedom
+
+- type: entity
+  parent: STBaseItem
+  id: Z14SetFreedomDefenderBuyableCrate
+  categories: [ Zona14 ]
+  name: '"Freedom Defender" Set'
+  description: "Includes an armored suit, gas mask, and belt pouch with holster."
+  suffix: Z14
+  components:
+    - type: STWeight
+      self: 10
+    - type: Item
+      size: Ginormous
+    - type: MultiHandedItem
+    - type: Sprite
+      sprite: _Stalker/Structures/Furniture/Sets/strazh.rsi
+      state: icon
+    - type: SpawnItemsOnUse
+      items:
+        - id: ClothingOuterArmorFreedomDefender
+        - id: ClothingMaskGasFreedom
+        - id: ClothingBeltWebbingHolsterFreedomDefender
+        - id: ClothingBackpackStalkerZaryaGreen
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+
+# Wind of Freedom
+
+- type: entity
+  parent: STBaseItem
+  id: Z14SetFreedomVeterBuyableCrate
+  categories: [ Zona14 ]
+  name: '"Wind of Freedom" Set'
+  description: "Includes an armored suit, gas mask, and belt pouch with holster."
+  suffix: Z14
+  components:
+    - type: STWeight
+      self: 10
+    - type: Item
+      size: Ginormous
+    - type: MultiHandedItem
+    - type: Sprite
+      sprite: _Stalker/Structures/Furniture/Sets/veter.rsi
+      state: icon
+    - type: SpawnItemsOnUse
+      items:
+        - id: ClothingOuterArmorFreedomWind
+        - id: ClothingMaskGasZaryaMono
+        - id: ClothingBeltWebbingDoubleFreedomVeterSmall
+        - id: ClothingBackpackStalkerZaryaGreen
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+
+# Monolith
+
+- type: entity
+  parent: STBaseItem
+  id: Z14SetMonolithMarlyaBuyableCrate
+  categories: [ Zona14 ]
+  name: '"Monolith" Set'
+  description: Includes an armored suit, gauze mask, backpack, and belt pouch with holster.
+  suffix: Z14
+  components:
+    - type: STWeight
+      self: 10
+    - type: Item
+      size: Ginormous
+    - type: MultiHandedItem
+    - type: Sprite
+      sprite: _Stalker/Structures/Furniture/Sets/monolith-marlya.rsi
+      state: icon
+    - type: SpawnItemsOnUse
+      items:
+        - id: ClothingOuterArmorMonolith
+        - id: ClothingMaskGasMarlyaRuined
+        - id: ClothingBeltWebbingHolsterMonolith
+        - id: ClothingBackpackStalkerZaryaGreen
+        - id: PowerCellHyper
+        - id: PowerCellHyper
+        - id: STCombatKnife
+        - id: Binocularus1
+        - id: BaseRadio
+        - id: FlashlightSeclite
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+    - type: PersonalDamage
+      damage:
+        types:
+          Radiation: 4.5
+
+- type: entity
+  parent: STBaseItem
+  id: Z14SetMonolithBalaklavaBuyableCrate
+  categories: [ Zona14 ]
+  name: '"Monolith" Set'
+  description: Includes an armored suit, balaclava, backpack, and belt pouch with holster.
+  suffix: Z14
+  components:
+    - type: STWeight
+      self: 10
+    - type: Item
+      size: Ginormous
+    - type: MultiHandedItem
+    - type: Sprite
+      sprite: _Stalker/Structures/Furniture/Sets/monolith-balaklava.rsi
+      state: icon
+    - type: SpawnItemsOnUse
+      items:
+        - id: ClothingOuterArmorMonolith
+        - id: ClothingMaskNeckBalaklava1
+        - id: ClothingBeltWebbingHolsterMonolith
+        - id: ClothingBackpackStalkerZaryaBlack
+        - id: PowerCellHyper
+        - id: PowerCellHyper
+        - id: STCombatKnife
+        - id: Binocularus1
+        - id: BaseRadio
+        - id: FlashlightSeclite
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+    - type: PersonalDamage
+      damage:
+        types:
+          Radiation: 4.5
+
+- type: entity
+  parent: STBaseItem
+  id: Z14SetMonolithGasBuyableCrate
+  categories: [ Zona14 ]
+  name: '"Monolith" Set'
+  description: Includes an armored suit, gas mask, backpack, and belt pouch with holster.
+  suffix: Z14
+  components:
+    - type: STWeight
+      self: 10
+    - type: Item
+      size: Ginormous
+    - type: MultiHandedItem
+    - type: Sprite
+      sprite: _Stalker/Structures/Furniture/Sets/monolith-gas.rsi
+      state: icon
+    - type: SpawnItemsOnUse
+      items:
+        - id: ClothingOuterArmorMonolith
+        - id: ClothingMaskGasZarya
+        - id: ClothingBeltWebbingHolsterMonolith
+        - id: ClothingBackpackStalkerZaryaGreen
+        - id: PowerCellHyper
+        - id: PowerCellHyper
+        - id: STCombatKnife
+        - id: Binocularus1
+        - id: BaseRadio
+        - id: FlashlightSeclite
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+    - type: PersonalDamage
+      damage:
+        types:
+          Radiation: 4.5
+
+- type: entity
+  parent: STBaseItem
+  id: Z14SetMonolithOldBuyableCrate
+  categories: [ Zona14 ]
+  name: '"Monolith" Set'
+  description: Includes an armored suit, gas mask, tanks, and two differently sized belt pouches.
+  suffix: Z14
+  components:
+    - type: STWeight
+      self: 10
+    - type: Item
+      size: Ginormous
+    - type: MultiHandedItem
+    - type: Sprite
+      sprite: _Stalker/Structures/Furniture/Sets/monolith-old.rsi
+      state: icon
+    - type: SpawnItemsOnUse
+      items:
+        - id: ClothingOuterArmorMonolithOld
+        - id: ClothingMaskGasMono
+        - id: ClothingBeltWebbingDoubleFreedomVeterSmall
+        - id: STOxygenTanksFractionalMonolith
+        - id: PowerCellHyper
+        - id: PowerCellHyper
+        - id: STCombatKnife
+        - id: Binocularus1
+        - id: BaseRadio
+        - id: FlashlightSeclite
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+    - type: PersonalDamage
+      damage:
+        types:
+          Radiation: 4.5

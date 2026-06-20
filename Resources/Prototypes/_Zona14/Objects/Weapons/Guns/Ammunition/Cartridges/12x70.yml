@@ -1,0 +1,151 @@
+- type: entity
+  id: Z14Cartridge7mmBuckshot
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: 12x70 Buckshot 7mm
+  parent: BaseShotgunBullet
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet7mmBuckshot
+  - type: Sprite
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Casings/shotgun_shell.rsi
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: SpentAmmoVisuals
+    state: "base"
+
+- type: entity
+  id: Z14Cartridge6mmBuckshot
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: 12x70 Buckshot 6.5mm "Express"
+  parent: BaseShotgunBullet
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet6mmBuckshot
+  - type: Sprite
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Casings/shotgun_shell.rsi
+    layers:
+      - state: express
+        map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: SpentAmmoVisuals
+    state: "express"
+
+- type: entity
+  id: Z14CartridgeShotgunBullet
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: 12x70 Slug
+  parent: BaseShotgunBullet
+  components:
+  - type: CartridgeAmmo
+    proto: BulletShotgunBullet
+  - type: Tag
+    tags:
+    - Cartridge
+    - ShellShotgun
+    - CartridgeShotgunBullet
+  - type: Sprite
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Casings/shotgun_shell.rsi
+    layers:
+      - state: bullet
+        map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: SpentAmmoVisuals
+    state: "bullet"
+
+- type: entity
+  id: Z14CartridgeShotgunBulletRIP
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: 12x70 Slug RIP
+  parent: BaseShotgunBullet
+  components:
+  - type: CartridgeAmmo
+    proto: BulletShotgunRIP
+  - type: Tag
+    tags:
+    - Cartridge
+    - ShellShotgun
+    - CartridgeShotgunBulletRIP
+  - type: Sprite
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Casings/shotgun_shell.rsi
+    layers:
+      - state: bullet_RIP
+        map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: SpentAmmoVisuals
+    state: "bullet_RIP"
+
+- type: entity
+  id: Z14CartridgeShotgunDart
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: 12x70 Dart
+  parent: BaseShotgunBullet
+  components:
+  - type: CartridgeAmmo
+    proto: BulletShotgunDart
+  - type: Tag
+    tags:
+    - Cartridge
+    - ShellShotgun
+    - CartridgeShotgunDart
+  - type: Sprite
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Casings/shotgun_shell.rsi
+    layers:
+      - state: zabIl
+        map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: SpentAmmoVisuals
+    state: "zabIl"
+
+- type: entity
+  id: Z14ShellShotgunBeanbagStalker
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: 12x70 Non-lethal
+  parent: BaseShellShotgun
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Casings/shotgun_shell.rsi
+      layers:
+      - state: beanbag
+        map: [ "enum.AmmoVisualLayers.Base" ]
+    - type: CartridgeAmmo
+      deleteOnSpawn: true
+      proto: PelletShotgunBeanbagStalker
+    - type: SpentAmmoVisuals
+      state: "beanbag"
+
+- type: entity
+  id: Z14Cartridge8mmBuckshot
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: 12x70 Buckshot 8.5mm "Magnum"
+  parent: BaseShotgunBullet
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet8mmBuckshot
+  - type: Sprite
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Casings/shotgun_shell.rsi
+    layers:
+      - state: magnum
+        map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: SpentAmmoVisuals
+    state: "magnum"
+
+- type: entity
+  id: Z14CartridgeShotgunFlechette
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: 12x70 Flechette
+  parent: BaseShotgunBullet
+  components:
+  - type: CartridgeAmmo
+    proto: BulletShotgunFlechette
+  - type: Sprite
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Casings/shotgun_shell.rsi
+    layers:
+      - state: flechette
+        map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: SpentAmmoVisuals
+    state: "flechette"

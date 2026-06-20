@@ -1,0 +1,59 @@
+- type: entity
+  id: Z14Cartridge556FMJ
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Cartridge (5.56x45) FMJ
+  parent: BaseCartridge556
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet556FMJ
+
+- type: entity
+  id: Z14Cartridge556M855
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Cartridge (5.56x45) M855
+  parent: BaseCartridge556
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet556M855
+
+- type: entity
+  id: Z14Cartridge556M856
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Cartridge (5.56x45) M856
+  parent: BaseCartridge556
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet556M856
+
+- type: entity
+  id: Z14Cartridge556Warmag
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Cartridge (5.56x45) Warmag
+  parent: BaseCartridge556
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet556Warmag
+
+- type: entity
+  id: Z14Cartridge556M995
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Cartridge (5.56x45) M995
+  parent: BaseCartridge556
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet556M995
+
+- type: entity
+  id: Z14Cartridge556SSAAP
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Cartridge (5.56x45) SSA AP
+  parent: BaseCartridge556
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet556SSAAP

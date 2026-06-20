@@ -1,0 +1,5 @@
+- type: entity
+  parent: BaseSpeciesDummy
+  id: Z14MobHumanFatDummy
+  suffix: Z14
+  categories: [ HideSpawnMenu, Zona14 ]

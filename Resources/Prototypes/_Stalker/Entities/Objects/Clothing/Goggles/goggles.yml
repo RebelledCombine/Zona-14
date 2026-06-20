@@ -1,3 +1,4 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: ClothingEyesBase
   id: ClothingGogglesBase
@@ -25,8 +26,8 @@
 - type: entity
   parent: ClothingEyesBase
   id: ClothingEyesGogglesBerill
-  name: очки 'Берилл-5М'
-  description: Очки масочного типа из армейского комплекта спецназа 'Берилл-5М'.
+  name: "'Beryl-5M' glasses"
+  description: Mask-type goggles from the Beryl-5M Special Forces Army Kit.
   suffix: Stalker, Goggles Berill
   components:
   - type: Sprite

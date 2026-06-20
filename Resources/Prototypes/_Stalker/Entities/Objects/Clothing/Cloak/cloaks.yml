@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: STClothingCapeBase
   id: ClothingNeckCloakZavet
-  suffix: Stalker, Завет
-  name: плащ Завета
-  description: стандартный плащ, используемый группировкой «Завет».
+  suffix: Stalker, Covenant # Zona14: Stalker, Завет
+  name: Covenant Cloak
+  description: standard cloak used by the Covenant group.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/cloak/zavet_plash.rsi
@@ -13,9 +14,9 @@
 - type: entity
   parent: STClothingCapeBase
   id: ClothingNeckCloakDolg
-  suffix: Stalker, Долг
-  name: плащ Долга
-  description: стандартный плащ, используемый группировкой «Долг».
+  suffix: Stalker, Duty # Zona14: Stalker, Долг
+  name: Cloak of Duty
+  description: standard cloak used by the Duty faction.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/cloak/cape_dolg.rsi
@@ -23,9 +24,9 @@
 - type: entity
   parent: STClothingCapeBase
   id: ClothingCloakStalker
-  name: плащ сталкера
-  description: Оторванные куски ткани из мусора, придают вам опыт и загадочность.
-  suffix: Stalker, Плащ
+  name: "Stalker's Cloak"
+  description: Torn pieces of cloth from the garbage, give you experience and mystery.
+  suffix: Stalker, Cloak # Zona14: Stalker, Плащ
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/cloak/stalker.rsi
@@ -35,9 +36,9 @@
 - type: entity
   parent: STClothingCapeBase
   id: ClothingNeckAnomalistLurker
-  name: плащ «Скрытень» аномалистов
-  description: Тебя не пристрелят, если не найдут.
-  suffix: Stalker, Плащ, Аномалисты
+  name: "Anomalist's Hidden Cloak"
+  description: You won't get shot if they don't find you.
+  suffix: Stalker, Cloak, Anomalists # Zona14: Stalker, Плащ, Аномалисты
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/cloak/lurker_anomalist.rsi
@@ -47,9 +48,9 @@
 - type: entity
   parent: STClothingCapeBase
   id: ClothingCloakShortCoverBlack
-  name: короткая чёрная накидка
-  description: Куски ткани, придают вам опыт и загадочность.
-  suffix: Stalker, Плащ
+  name: Short Black Cover
+  description: Pieces of cloth, give you experience and mystery.
+  suffix: Stalker, Cloak # Zona14: Stalker, Плащ
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/cloak/short_cover_black.rsi
@@ -59,9 +60,9 @@
 - type: entity
   parent: STClothingCapeBase
   id: ClothingCloakBeige
-  name: Бежевый плащ
-  description: Он сделанл либо из кожи мутанта, либо из кожи, человека.
-  suffix: Stalker, Плащ
+  name: Beige Raincoat
+  description: It was made of either mutant skin or human skin.
+  suffix: Stalker, Cloak # Zona14: Stalker, Плащ
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/cloak/beige.rsi
@@ -71,9 +72,9 @@
 - type: entity
   parent: STClothingCapeBase
   id: ClothingCloakBlack
-  name: Черный плащ
-  description: Я Бэтмэн!
-  suffix: Stalker, Плащ
+  name: Black Cloak
+  description: "I'm Batman!"
+  suffix: Stalker, Cloak # Zona14: Stalker, Плащ
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/cloak/black.rsi
@@ -83,9 +84,9 @@
 - type: entity
   parent: STClothingCapeBase
   id: ClothingCloakBrown
-  name: Коричневый плащ
-  description: Его, носят более опытные Сталкеры, в нем же хоронят!
-  suffix: Stalker, Плащ
+  name: Brown Cloak
+  description: It's worn by more experienced Stalkers, it's also used to bury people!
+  suffix: Stalker, Cloak # Zona14: Stalker, Плащ
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/cloak/brown.rsi
@@ -95,9 +96,9 @@
 - type: entity
   parent: STClothingCapeBase
   id: ClothingCloakGreen
-  name: Зеленый плащ
-  description: Для фанатов "Болотного доктора"
-  suffix: Stalker, Плащ
+  name: Green Cloak
+  description: For "Swamp Doctor" fans
+  suffix: Stalker, Cloak # Zona14: Stalker, Плащ
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/cloak/green.rsi
@@ -107,9 +108,9 @@
 - type: entity
   parent: STClothingCapeBase
   id: ClothingCloakNavy
-  name: Темно-синий плащ
-  description: Я не придумал, "смешное" описание для это плаща...
-  suffix: Stalker, Плащ
+  name: Navy Cloak
+  description: "I didn't come up with a \"funny\" description for this raincoat..."
+  suffix: Stalker, Cloak # Zona14: Stalker, Плащ
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/cloak/navy.rsi
@@ -144,8 +145,8 @@
   parent: STClothingCapeBase
   id: STClothingNeckExoskeletonSci
   suffix: Stalker
-  name: Экзоскелет грузового типа
-  description: Разработанный учеными НИИ, данный экзоскелет был для эффективного перемещения больших объемов грузов без использования транспорта. Никакой защиты против аномалий, мутантов или пуль нет.
+  name: Cargo-Type Exoskeleton
+  description: Developed by research institute scientists, this exoskeleton was designed for efficiently transporting large cargo loads without vehicles. Offers no protection against anomalies, mutants, or bullets.
   components:
   - type: STWeight
     self: 10
@@ -177,8 +178,8 @@
 - type: entity
   parent: STClothingCapeBase
   id: ClothingOuterCoatAugust
-  name: август
-  description: Необычный плащ, произведённый техниками Чистого Неба. Окрашен в камуфляж, помогающий скрыться в условиях Зоны. Облегчён засчёт отсутствия капюшона, имеет слой изоляционного материала, который предоставляет небольшую защиту от химических воздействий.
+  name: August Raincoat
+  description: An unusual cloak crafted by skilled technicians. It's painted in a camouflage pattern, helping conceal oneself in the Zone. It's lightweight due to the lack of a hood and has a layer of insulating material that provides some protection from chemical agents.
   suffix: ST, T3
   components:
   - type: STWeight
@@ -224,8 +225,8 @@
 - type: entity
   parent: STClothingCapeBase
   id: ClothingOuterCoatAugustM
-  name: Август-М
-  description: Необычный плащ, произведённый техниками Чистого Неба. Окрашен в камуфляж, помогающий скрыться в условиях Зоны. Является улучшенной версией одноимённого плаща Август. Имеет слой изоляционного материала, который предоставляет небольшую защиту от химических воздействий. Оснащён прочным капюшоном с комплектным противогазом, создающим дополнительную защиту от внешних воздействий.
+  name: August-M Raincoat
+  description: An unusual cloak crafted by skilled technicians. It features a camouflage pattern that helps conceal oneself in the Zone. It is an improved version of the August cloak of the same name. It features a layer of insulating material that provides some protection from chemical agents. It is equipped with a durable hood and a gas mask for additional protection from external influences.
   suffix: ST, T3
   components:
   - type: STWeight
@@ -276,8 +277,8 @@
 - type: entity
   parent: STClothingHeadHatBase
   id: ClothingHeadHelmetAugustM
-  name: Капюшон плаща Август-М
-  description: Прочный капюшон, скрывающий голову владельца.
+  name: August-M Hood
+  description: "A durable hood that hides the owner's head."
   suffix: ST
   components:
   - type: Sprite
@@ -302,9 +303,9 @@
 - type: entity
   parent: STClothingCapeBase
   id: ClothingOuterCoatKrava
-  name: камуфляжный плащ "Валькирия"
-  description: Продвинутый камуфляжный плащ "Валькирия". Изготовлен из легких компонентов и материалов которые не сковывают передвижения военнслужащего.
-  suffix: ST, кастомка
+  name: '"Valkyrie" camouflage cloak'
+  description: "An advanced \"Valkyrie\" camouflage cloak. Made from lightweight components and materials that do not restrict the wearer's movement."
+  suffix: ST, custom # Zona14: ST, кастомка
   components:
   - type: STWeight
     self: 6
@@ -354,8 +355,8 @@
 - type: entity
   parent: STClothingHeadHatBase
   id: ClothingHeadHelmetKrava
-  name: Капюшон плаща "Валькирия"
-  description: Прочный капюшон, скрывающий голову владельца.
+  name: '"Valkyrie" cloak hood'
+  description: "A sturdy hood that conceals the wearer's head."
   suffix: ST
   components:
   - type: Sprite
@@ -379,8 +380,8 @@
 - type: entity
   parent: ClothingOuterCoatAugust
   id: ClothingOuterCoatKevlarBlack
-  name: кевларовый плащ
-  description: Перекрашенный кевларовый плащ.
+  name: kevlar cloak
+  description: A repainted kevlar cloak.
   suffix: ST, T3
   components:
   - type: STWeight
@@ -393,8 +394,8 @@
 - type: entity
   parent: ClothingOuterCoatAugust
   id: ClothingOuterCoatSevaWhite
-  name: кольчужный плащ Сева
-  description: Перекрашенный кольчужный плащ.
+  name: SEVA chainmail cloak
+  description: A repainted chainmail cloak.
   suffix: ST, T3
   components:
   - type: STWeight

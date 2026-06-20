@@ -1,0 +1,132 @@
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14ClothingOuterArmorZaryaHunterBlueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Hunter's Dawn Recipe
+  components:
+    - type: STBlueprint
+      blueprint: recipeZaryaHunter
+
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14ClothingOuterArmorZaryaStalkerModifedType1Blueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Dawn Type 1 Modification Recipe
+  components:
+    - type: STBlueprint
+      blueprint: newrecipeClothingOuterArmorZaryaStalkerModifedType1
+
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14ClothingOuterArmorZaryaStalkerModifedType2Blueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Dawn Type 2 Modification Recipe
+  components:
+    - type: STBlueprint
+      blueprint: newrecipeClothingOuterArmorZaryaStalkerModifedType2
+
+# 6B2
+
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14STClothingOuterArmor6B2Blueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: 6B2 Body Armor Recipe
+  components:
+    - type: STBlueprint
+      blueprint: newrecipeClothingOuterArmor6B2
+
+# Shield-2
+
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14STClothingOuterArmorLightPlateVestBaseStalkerBlueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: “Shield‑2” body armor recipe
+  components:
+    - type: STBlueprint
+      blueprint: newrecipeSTClothingOuterArmorLightPlateVestBaseStalker
+
+
+# SN-1
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14ClothingOuterArmorCN1Blueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: CH-1 Armor Recipe
+  components:
+    - type: STBlueprint
+      blueprint: newrecipeClothingOuterArmorCN1
+
+# Spark
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14ClothingOuterArmorSparkBlueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Spark Costume Recipe
+  components:
+    - type: STBlueprint
+      blueprint: newrecipeClothingOuterArmorSpark
+
+# Chainmail
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14ClothingOuterArmourJacketStalkerBlueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: stalker chainmail jacket recipe
+  components:
+    - type: STBlueprint
+      blueprint: newrecipeClothingOuterArmourJacketStalker
+
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14ClothingOuterArmourJacketBanditBlueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: bandit chainmail jacket recipe
+  components:
+    - type: STBlueprint
+      blueprint: newrecipeClothingOuterArmourJacketBandit
+
+
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14ClothingOuterArmourCoatBanditBlackBlueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: black chainmail leather coat (bandit) recipe
+  components:
+    - type: STBlueprint
+      blueprint: newrecipeClothingOuterArmourCoatBanditBlack
+
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14ClothingOuterArmourCoatBanditBrownBlueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: brown chainmail leather coat (bandit) recipe
+  components:
+    - type: STBlueprint
+      blueprint: newrecipeClothingOuterArmourCoatBanditBrown
+
+# ZN-1 
+
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14ClothingOuterArmorZN1Blueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: ZN‑1 suit recipe
+  components:
+    - type: STBlueprint
+      blueprint: newrecipeClothingOuterArmorZN1
+
+  

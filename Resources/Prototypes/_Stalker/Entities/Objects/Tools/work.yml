@@ -1,12 +1,13 @@
+﻿# Zona14: translated Russian names/descriptions to English
 - type: Tag # This Tag we use in code to find all workbenches. Don't forget to add it on them and if you rename, rename in code as well
   id: STWorkbench
-###############Верстак
+# Zona14: ##############Верстак
 - type: entity
   parent: BaseStructure
   id: StalkerWorkbench
-  name: верстак
-  description: Верстак с тисками для работы с материалами и устройствами.
-  suffix: ST, крафт
+  name: Workbench
+  description: Vise Workbench for working with materials and devices.
+  suffix: ST, craft # Zona14: ST, крафт
   components:
     - type: Tag
       tags:
@@ -34,9 +35,9 @@
 - type: entity
   parent: StalkerWorkbench
   id: StalkerJabWorkbench
-  name: верстак Жаб
-  description: Верстак с набором продвинутых инструментов для разбора и исследования вещей
-  suffix: Stalker, DONATE, крафт
+  name: Toad Workbench
+  description: A crafting table with a set of advanced tools for disassembling and researching things
+  suffix: Stalker, DONATE, craft # Zona14: Stalker, DONATE, крафт
   components:
     - type: ContainerContainer
       containers:
@@ -62,8 +63,8 @@
 - type: entity
   parent: ClothingBackpack
   id: ClothingBackpackWorkbench
-  name: рюкзак-мастерская
-  description: Рюкзак с удобным инструментарием для создания с его помощью разнообразных предметов.
+  name: Backpack Workshop
+  description: Backpack with handy tools for crafting a variety of items.
   components:
     - type: Tag
       tags:
@@ -81,9 +82,9 @@
 - type: entity
   parent: BaseStructure
   id: StalkerWorkbenchOFF
-  name: арендованный верстак (Не активен)
-  description: Верстак с тисками для работы с материалами и устройствами. Для работы на нём нужен купон, позволяющий работать 10 минут. Владелец не несёт ответственности за утерю вещей из-за окончания аренды.
-  suffix: Stalker, крафт, аренда
+  name: Rented Workbench (Not Active)
+  description: Vise Workbench for working with materials and devices. To work on it, you need a coupon that allows you to work for 10 minutes. The owner is not responsible for the loss of items due to the end of the rental.
+  suffix: Stalker, craft, rental # Zona14: Stalker, крафт, аренда
   components:
     - type: InteractionOutline
     - type: Clickable
@@ -114,7 +115,7 @@
 - type: shopPreset
   id: Work
   categories:
-    - name: Аренда
+    - name: Rent # Zona14: Аренда
       priority: 1
       items:
         Coupon: 500
@@ -122,9 +123,9 @@
 - type: entity
   parent: StalkerWorkbench
   id: StalkerWorkbenchON
-  name: арендованный верстак (Активен)
-  description: Верстак с тисками для работы с материалами и устройствами. Для работы на нём нужен купон, позволяющий работать 10 минут. Владелец не несёт ответственности за утерю вещей из-за окончания аренды.
-  suffix: Stalker, крафт
+  name: Rented Workbench (Active)
+  description: "{ ent-StalkerWorkbenchOFF.desc }"
+  suffix: Stalker, craft # Zona14: Stalker, крафт
   categories: [ HideSpawnMenu ]
   components:
   - type: TimedDespawn
@@ -133,14 +134,14 @@
     prototype: StalkerWorkbenchOFF
 
 
-###############Токарные Станки
+# Zona14: ##############Токарные Станки
 
 - type: entity
   parent: StalkerWorkbench
   id: StalkerWorktable1
-  name: токарный станок
-  description: Приспособление, используемое для обработки деталей, в основном из металла.
-  suffix: ST, крафт
+  name: lathe
+  description: A fixture used to machine parts, mostly made of metal.
+  suffix: ST, craft # Zona14: ST, крафт
   components:
     - type: InteractionOutline
     - type: Clickable
@@ -154,8 +155,8 @@
 - type: entity
   parent: StalkerWorkbench
   id: StalkerTableCircularNew
-  name: стол с циркулярной пилой
-  description: Циркулярная пила или циркулярка, как ее чаще всего называют, нужна для распиловки самых разны деревянных заготовок.
+  name: circular saw table
+  description: Circular saw or circular saw, as it is most often called, is needed for sawing a wide variety of wooden workpieces.
   suffix: ST
   components:
     - type: InteractionOutline
@@ -169,8 +170,8 @@
 - type: entity
   parent: StalkerWorkbench
   id: StalkerTableCircularOld
-  name: стол с циркулярной пилой
-  description: Циркулярная пила или циркулярка, как ее чаще всего называют, нужна для распиловки самых разны деревянных заготовок. Выглядит старой...
+  name: "{ ent-StalkerTableCircularNew }"
+  description: Circular saw or circular saw, as it is most often called, is needed for sawing a wide variety of wooden workpieces. Looks old...
   suffix: ST
   components:
     - type: InteractionOutline
@@ -184,8 +185,8 @@
 - type: entity
   parent: BaseStructure
   id: STBrockenSteel
-  name: сломанный верстак
-  description: Сломанный верстак, покрытый пылью и масляными пятнами, застыл в тишине, как молчаливый свидетель остановленного производства.
+  name: Broken Workbench
+  description: A broken workbench, dusty and stained with oil—silent as a witness to production halted in time.
   suffix: ST, Mapping
   components:
     - type: Sprite
@@ -197,8 +198,8 @@
 - type: entity
   parent: BaseStructure
   id: STBrockenWorkbench
-  name: сломанный токарный стол
-  description: Сломанный токарный стол, покрытый пылью и масляными пятнами, застыл в тишине, как молчаливый свидетель остановленного производства.
+  name: Broken Lathe Table
+  description: A broken lathe table, covered in dust and oil stains, froze in silence like a silent witness to a halted production.
   suffix: ST, Mapping
   components:
     - type: Sprite
@@ -207,13 +208,13 @@
     - type: Transform
       noRot: true
 
-# Валюта активации
+# Zona14: Валюта активации
 
 - type: entity
   parent: BaseItem
   id: Coupon
-  name: Купон
-  description: Купон для аренды верстака. Позволяет пользоваться арендованным верстаком 10 минут. Владелец не несёт ответственности за утерянные из-за окончания аренды вещи.
+  name: Coupon
+  description: Workbench rental coupon. Allows you to use the rented workbench for 10 minutes. The owner is not responsible for items lost due to the end of the rental.
   suffix: Stalker
   components:
     - type: STWeight

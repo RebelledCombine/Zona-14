@@ -1,6 +1,7 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: FloorRitualChasmEntity
-  name: бездна
+  name: chasm
   description: The darkness is blinding.
   suffix: Ritual Chasm, Renegade
   placement:

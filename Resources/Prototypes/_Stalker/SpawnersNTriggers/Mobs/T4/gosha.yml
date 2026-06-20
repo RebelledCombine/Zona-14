@@ -1,5 +1,6 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
-  name: триггер гоша (1) (25%)
+  name: Gosha trigger (1) (25%)
   id: STTriggerGosha125
   parent: STBaseTrigger125
   suffix: ST, T4, Trigger

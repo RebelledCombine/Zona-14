@@ -1,3 +1,4 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: BaseSign
   id: MetroFlagBase
@@ -30,8 +31,8 @@
 - type: entity
   parent: MetroFlagBase
   id: MetroFlagAnarchy
-  name: "Флаг Гуляй-польской республики"
-  description: "Анархисты заявили о себе как о самостоятельной силе в конце войны Красной линии с Содружеством Станций Кольцевой линии.."
+  name: flag of the Gulyai-Polye Republic
+  description: The Anarchists declared themselves an independent force at the end of the war between the Red Line and the Hanseatic Commonwealth of Ring Line Stations.
   suffix: ST, Mapping
   components:
   - type: Sprite
@@ -40,8 +41,8 @@
 - type: entity
   parent: MetroFlagBase
   id: MetroFlagAnarchy2
-  name: "Флаг Гуляй-польской республики"
-  description: "Анархисты заявили о себе как о самостоятельной силе в конце войны Красной линии с Содружеством Станций Кольцевой линии.."
+  name: flag of the Gulyai-Polye Republic
+  description: The Anarchists declared themselves an independent force at the end of the war between the Red Line and the Hanseatic Commonwealth of Ring Line Stations.
   suffix: ST, Mapping
   components:
   - type: Sprite
@@ -50,8 +51,8 @@
 - type: entity
   parent: MetroFlagBase
   id: MetroFlagBandits
-  name: "Флаг Бандитов"
-  description: "Не плохие и не хорошие парни одновременно."
+  name: Bandits flag
+  description: Not bad guys and not good guys all at the same time.
   suffix: ST, Mapping
   components:
   - type: Sprite
@@ -60,8 +61,8 @@
 - type: entity
   parent: MetroFlagBase
   id: MetroFlagBaumanskyAlliance
-  name: "Флаг Бауманского Альянса"
-  description: "Например, у нас в Москве говорили, что есть такая реальная сила – бауманцы. То есть на станциях метро и в подземных бункерах рядом с Училищем имени Баумана, которое давно стало университетом, собрались не учёные, а инженеры и образовали свою технократическую коммуну. И в отличие от «чистеньких» университетских, бауманские занимались реальной инженерией, прикладными работами, многажды выходили на поверхность и незримо боролись с «университетскими» за власть. Впрочем, это были только слухи. Мы уже целую вечность жили в мире, в котором всё было построено на слухах, да только целую вечность мы научились этим слухам не доверять."
+  name: flag of the Bauman Alliance
+  description: For example, in our Moscow, people said there was a real force - the Baumanites. That is, in metro stations and underground bunkers near the Bauman School, which had long become a university, gathered not scientists but engineers, and they formed their own technocratic commune. Unlike the "clean" university folk, the Baumanites engaged in real engineering and applied work, repeatedly went to the surface, and waged an unseen struggle with the "university people" for power. Then again, those were only rumors. We had been living for an eternity in a world built on rumors, and over that eternity we had learned not to trust them.
   suffix: ST, Mapping
   components:
   - type: Sprite
@@ -70,8 +71,8 @@
 - type: entity
   parent: MetroFlagBase
   id: MetroFlagEmeraldTown
-  name: "Флаг Изумрудного Города"
-  description: "Интеллигент? – фантазируй об Изумрудном городе, а штаны протирай в Полисе. Удобная ведь система."
+  name: flag of the Emerald City
+  description: "An intellectual? - daydream about the Emerald City while wearing out your trousers in Polis. A handy system, isn't it."
   suffix: ST, Mapping
   components:
   - type: Sprite
@@ -80,8 +81,8 @@
 - type: entity
   parent: MetroFlagBase
   id: MetroFlagHanza1
-  name: "Флаг Ганзы"
-  description: "Ганзой называлось содружество станций Кольцевой линии."
+  name: Hansa flag
+  description: Hansa was the name of the commonwealth of stations on the Ring Line.
   suffix: ST, Mapping
   components:
   - type: Sprite
@@ -90,8 +91,8 @@
 - type: entity
   parent: MetroFlagBase
   id: MetroFlagHanza2
-  name: "Флаг Ганзы"
-  description: "Ганзой называлось содружество станций Кольцевой линии."
+  name: Hansa flag
+  description: Hansa was the name of the commonwealth of stations on the Ring Line.
   suffix: ST, Mapping
   components:
   - type: Sprite
@@ -100,8 +101,8 @@
 - type: entity
   parent: MetroFlagBase
   id: MetroFlagRedLine
-  name: "Флаг Красной Линии"
-  description: "Сокольническая линия всегда была особая. Взглянешь на карту — сразу на неё внимание обращаешь. Во-первых, прямая, как стрела. Во-вторых, ярко-красного цвета на всех картах. Да и названия станций там тоже — Красносельская, Красные Ворота, Комсомольская, Библиотека им. Ленина, и Ленинские, опять же, Горы. И то ли из-за таких названий, то ли по какой-то другой причине тянуло на эту линию всех ностальгирующих по славному прошлому."
+  name: flag of the Red Line
+  description: The Sokolnicheskaya Line was always special. Glance at the map and your eye is drawn to it at once. First, it is straight as an arrow. Second, it is bright red on every map. And the station names too - Krasnoselskaya, Krasnye Vorota, Komsomolskaya, Lenin Library, and Lenin Hills again. Whether because of names like these, or for some other reason, everyone nostalgic for the glorious past was drawn to that line.
   suffix: ST, Mapping
   components:
   - type: Sprite
@@ -110,8 +111,8 @@
 - type: entity
   parent: MetroFlagBase
   id: MetroFlagSparta
-  name: "Флаг Спарты"
-  description: "Представь, что весь метрополитен — это человеческий организм... Я — макрофаг. Это моя профессия. Любая опасность, достаточно серьезная, чтобы угрожать всему организму, должна быть ликвидирована. Это моя работа. Я — охотник. Макрофаг."
+  name: Sparta flag
+  description: Imagine that the entire metro is a human organism... I am a macrophage. That is my profession. Any threat serious enough to endanger the whole organism must be eliminated. That is my job. I am a hunter. A macrophage.
   suffix: ST, Mapping
   components:
   - type: Sprite
@@ -120,8 +121,8 @@
 - type: entity
   parent: MetroFlagBase
   id: MetroFlagVDNH1
-  name: "Флаг ВДНХ"
-  description: "Ботанический Сад и ВДНХ срослись вместе в одну темную, непроходимую чащобу, среди которой высились облупленные белые купола и крыши павильнов Выставки."
+  name: VDNKh flag
+  description: The Botanical Garden and VDNKh have grown together into a single dark, impassable thicket, amid which rise the peeling white domes and roofs of the Exhibition pavilions.
   suffix: ST, Mapping
   components:
   - type: Sprite
@@ -130,8 +131,8 @@
 - type: entity
   parent: MetroFlagBase
   id: MetroFlagVDNH2
-  name: "Флаг ВДНХ"
-  description: "Ботанический Сад и ВДНХ срослись вместе в одну темную, непроходимую чащобу, среди которой высились облупленные белые купола и крыши павильнов Выставки."
+  name: VDNKh flag
+  description: The Botanical Garden and VDNKh have grown together into a single dark, impassable thicket, amid which rise the peeling white domes and roofs of the Exhibition pavilions.
   suffix: ST, Mapping
   components:
   - type: Sprite

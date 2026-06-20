@@ -1,4 +1,4 @@
-# Костёр
+# Zona14: Костёр
 
 - type: lightCraftingRecipe
   id: BarbarisBonfireCraft
@@ -55,7 +55,7 @@
     exactSecond: false
     time: 10
 
-# Мякоть
+# Zona14: Мякоть
 
 - type: lightCraftingRecipe
   id: BarbarisPulbCraft

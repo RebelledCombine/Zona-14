@@ -1,3 +1,4 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: BaseCraftItem
   id: BaseTechCard
@@ -25,8 +26,8 @@
 - type: entity
   parent: BaseCraftItem
   id: HotelCard
-  name: карточка доступа отеля
-  description: Карточка ТОЛЬКО ДЛЯ АВТОРИЗОВАННЫХ пользователей. При проведении ей по двери сканирует сетчатку глаза человека.
+  name: Hotel Access Card
+  description: "The card is ONLY for authorized users. When it is passed along the door, it scans the retina of the person's eye."
   components:
     - type: Sprite
       sprite: _Stalker/Objects/Craft/tech_card.rsi

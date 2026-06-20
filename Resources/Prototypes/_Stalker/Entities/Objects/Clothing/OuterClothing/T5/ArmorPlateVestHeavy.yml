@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 # Base
 
 - type: entity
   parent: STClothingOuterArmorLightPlateVestBase
   id: STClothingOuterArmorHeavyPlateVestBase
-  name: тяжёлый бронежилет # base
+  name: Heavy Body Armor
   abstract: true
   suffix: ST, T5, PvP
   components:
@@ -36,8 +37,8 @@
 - type: entity
   parent: STClothingOuterArmorHeavyPlateVestBase
   id: STClothingOuterArmorLightPlateVestBaseHeavyMilitary
-  name: Военный Бронежилет «Цитадель»
-  description: Тяжёлый бронежилет V типа, обеспечивающий достойную защиту от большинства видов повреждений.
+  name: Military Citadel Body Armor
+  description: Heavy body armor type V, providing decent protection against most types of damage.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/outerClothing/plate_heavy_military.rsi
@@ -49,8 +50,8 @@
 - type: entity
   parent: STClothingOuterArmorHeavyPlateVestBase
   id: STClothingOuterArmorLightPlateVestBaseHeavyMonolith
-  name: Бронежилет «Цитадель» монолита
-  description: Тяжёлый бронежилет V типа, обеспечивающий достойную защиту от большинства видов повреждений.
+  name: Monolith Citadel Body Armor
+  description: "{ ent-STClothingOuterArmorLightPlateVestBaseHeavyMilitary.desc }"
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/outerClothing/plate_heavy_monolit.rsi
@@ -61,8 +62,8 @@
 - type: entity
   parent: STClothingOuterArmorHeavyPlateVestBase
   id: ClothingOuterArmorHeavyJaba
-  name: Бронежилет «Цитадель» жаб
-  description: Тяжёлый бронежилет IV типа, обеспечивающий достаточную защиту от физического урона.
+  name: Toad Citadel Body Armor
+  description: Heavy body armor Type IV that provides sufficient protection against physical damage.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/outerClothing/heavy_armor_jaba.rsi
@@ -84,8 +85,8 @@
 - type: entity
   parent: STClothingOuterArmorHeavyPlateVestBase
   id: ClothingOuterArmorHeavyUNTAR
-  name: Бронежилет UNTAR-H
-  description: Тяжёлый бронежилет V типа, обеспечивающий достойную защиту от большинства видов повреждений.
+  name: UNTAR-H Citadel  Body Armor
+  description: "{ ent-STClothingOuterArmorLightPlateVestBaseHeavyMilitary.desc }"
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/outerClothing/heavy_unstar.rsi
@@ -97,8 +98,8 @@
 - type: entity
   parent: STClothingOuterArmorHeavyPlateVestBase
   id: ClothingOuterArmorHeavyDebt
-  name: Бронежилет «Цитадель» Долга
-  description: тяжёлый бронежилет V типа, улучшенный умельцами Долга, специально для тяжёлых стычек между группировками.
+  name: Duty Citadel Body Armor
+  description: Type V heavy body armor, upgraded by Duty craftsmen, specifically for heavy skirmishes between factions.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/outerClothing/heavy_duty_armor.rsi

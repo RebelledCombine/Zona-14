@@ -1,0 +1,50 @@
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14ClothingHeadAssaultHelmetBlueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Assault Helmet Recipe
+  components:
+    - type: STBlueprint
+      blueprint: newrecipeClothingHeadAssaultHelmet
+
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14STClothingHeadHelmetMakeshiftTacticalT3Blueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Homemade Helmet Recipe
+  components:
+    - type: STBlueprint
+      blueprint: newrecipeSTClothingHeadHelmetMakeshiftTacticalT3
+
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14ClothingHeadHelmetVityaz1CBlueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: “Vityaz 1C” helmet recipe
+  components:
+    - type: STBlueprint
+      blueprint: newrecipeClothingHeadHelmetVityaz1C
+
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14STClothingHeadHelmetSeraphimAltinBlueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: “Guardian” combat helmet recipe
+  components:
+    - type: STBlueprint
+      blueprint: newrecipeSTClothingHeadHelmetSeraphimAltin
+
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14ClothingHeadAssaultHelmetDeserterBlueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: '"Guardian" combat helmet recipe'
+  components:
+    - type: STBlueprint
+      blueprint: newrecipeClothingHeadAssaultHelmetDeserter
+

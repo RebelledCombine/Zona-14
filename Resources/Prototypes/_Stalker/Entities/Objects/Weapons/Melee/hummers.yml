@@ -1,3 +1,4 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: BaseItem
   id: BaseHummer
@@ -42,10 +43,10 @@
 
 
 - type: entity
-  name: кувалда
+  name: sledgehammer
   parent: BaseItem
   id: SledgehammerRenegats
-  suffix: ST, ренегаты
+  suffix: ST, renegades # Zona14: ST, ренегаты
   description: Bonk!
   components:
   - type: Sprite

@@ -1,0 +1,7 @@
+- type: entity
+  parent: STBaseWeaponShotgunMP155T
+  id: Z14STWeaponShotgunMP155T
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: MP-155T
+  description: It's an extremely shortened, single-shot shotgun. “When you don't have money and you need to defend yourself.”

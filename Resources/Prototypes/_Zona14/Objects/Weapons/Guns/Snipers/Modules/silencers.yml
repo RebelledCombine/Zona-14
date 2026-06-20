@@ -1,0 +1,37 @@
+- type: entity
+  parent: STBaseModuleSilencerSniper
+  id: Z14STModuleSilencerSniperT1
+  categories: [ Zona14 ]
+  name: makeshift sniper rifle silencer
+  suffix: Z14
+  components:
+  - type: Tag
+    tags:
+      - STWeaponModuleSniperSilencer
+  - type: STWeaponModule
+    effect:
+      soundGunshotVolumeAddition: -7
+      farshotSoundDecrease: 0.4
+  - type: Sprite
+    state: sniper_silencer_T1
+  - type: Icon
+    state: sniper_silencer_T1
+
+- type: entity
+  parent: STBaseModuleSilencerSniper
+  id: Z14STModuleSilencerSniperT2
+  categories: [ Zona14 ]
+  name: legal sniper rifle silencer
+  suffix: Z14
+  components:
+  - type: Tag
+    tags:
+      - STWeaponModuleSniperSilencer
+  - type: STWeaponModule
+    effect:
+      soundGunshotVolumeAddition: -14
+      farshotSoundDecrease: 0.2
+  - type: Sprite
+    state: sniper_silencer_T2
+  - type: Icon
+    state: sniper_silencer_T2

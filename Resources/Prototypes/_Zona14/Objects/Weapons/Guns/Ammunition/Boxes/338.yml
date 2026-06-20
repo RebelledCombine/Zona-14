@@ -1,0 +1,57 @@
+- type: entity
+  parent: BaseAmmoBoxStalker
+  id: Z14338FMJBox
+  categories: [ Zona14 ]
+  name: ammo box (.338 Lapua Magnum) FMJ
+  description: For sniper rifles, 10 rounds per box. Provides class 4 armor penetration.
+  suffix: Z14
+  components:
+    - type: MagazineVisuals
+      magState: 76239ammo
+    - type: BallisticAmmoProvider
+      capacity: 10
+      proto: STCartridge338FMJ
+      whitelist:
+        tags:
+          - STCartridge338
+    - type: Sprite
+      layers:
+        - state: 338
+          map: ["enum.GunVisualLayers.Base"]
+        - state: 76239ammo-1
+          map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  parent: 338FMJBox
+  id: Z14338PartitionBox
+  categories: [ Zona14 ]
+  name: ammo box (.338 Lapua Magnum) Partition
+  description: For sniper rifles, 10 rounds per box. Useless against armor.
+  suffix: Z14
+  components:
+    - type: BallisticAmmoProvider
+      proto: STCartridge338Partition
+    - type: Sprite
+      layers:
+        - state: 338
+          map: ["enum.GunVisualLayers.Base"]
+        - state: 76239ammo-1
+          map: ["enum.GunVisualLayers.Mag"]
+        - state: t3
+
+- type: entity
+  parent: 338FMJBox
+  id: Z14338FMJBTBox
+  categories: [ Zona14 ]
+  name: ammo box (.338 Lapua Magnum) FMJ BT
+  description: For sniper rifles, 10 rounds per box. Provides class 5 armor penetration.
+  suffix: Z14
+  components:
+    - type: BallisticAmmoProvider
+      proto: STCartridge338FMJBT
+    - type: Sprite
+      layers:
+        - state: 338
+          map: ["enum.GunVisualLayers.Base"]
+        - state: 76239ammo-1
+          map: ["enum.GunVisualLayers.Mag"]

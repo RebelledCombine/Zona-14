@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
-  name: старая лампа
+  name: old lamp
   id: OldLampa
   parent: BaseLamp
   suffix: ST, Mapping
-  description: Старая, чудом работающая лампа.
+  description: An old lamp that miraculously still works.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/old_lamp.rsi
@@ -23,9 +24,9 @@
 - type: entity
   id: BrokenOldLampa
   parent: STBaseStructure
-  name: старая сломанная лампа
+  name: Broken Old Lamp
   suffix: ST, Mapping
-  description: Старая лампа, давно не работает.
+  description: "An old lamp that hasn't worked in a long time."
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/old_lamp.rsi

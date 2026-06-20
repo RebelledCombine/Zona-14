@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
-  name: Бензопила
+  name: Chainsaw
   parent: BaseItem
   id: STChainsaw
-  description: Бррррр
+  description: Brrrrrrr
   components:
   - type: Wieldable
     wieldSound: !type:SoundPathSpecifier

@@ -1,0 +1,47 @@
+
+# SEVA Cloak
+- type: entity
+  parent: Z14STClothingCloakBase
+  id: Z14STClothingCapeArmorChainmailSeva
+  categories: [ Zona14 ]
+  name: Seva's Chainmail Cloak
+  suffix: Z14
+  description: "A kit developed by the Kyiv Research Institute, supplemented with a chainmail cloak for additional protection."
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/cloak/seva_cloaks.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/cloak/seva_cloaks.rsi
+- type: entity
+  parent: Z14STClothingCapeArmorChainmailSeva
+  id: Z14STClothingCapeFreedomChain
+  categories: [ Zona14 ]
+  name: Freedom's Chainmail Cloak
+  description: Chainmail combined with a Freedom camo net.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/cloak/freechain.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/cloak/freechain.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHatChainFreedom
+    requiredSlot:
+    - cloak
+    slot: head
+
+- type: entity
+  parent: STClothingHeadHatBase
+  id: Z14ClothingHatChainFreedom
+  categories: [ Zona14 ]
+  name: hood
+  description: Freedom chainmail hood.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/coat_hat_freechain.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/coat_hat_freechain.rsi
+  - type: HideLayerClothing
+    slots:
+    - Hair

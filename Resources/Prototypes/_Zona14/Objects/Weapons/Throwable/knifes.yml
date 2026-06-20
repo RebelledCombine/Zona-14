@@ -1,0 +1,33 @@
+- type: entity
+  name: throwing knife
+  parent: STThrowingKnifeBase
+  id: Z14STThrowingknifeBlue
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Weapons/Melee/throwingknife_blue.rsi
+    state: icon
+  - type: Item
+    sprite: _Stalker/Objects/Weapons/Melee/throwingknife_blue.rsi
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Slash: 41
+
+- type: entity
+  name: throwing knife
+  parent: STThrowingKnifeBase
+  suffix: Z14
+  id: Z14STThrowingknifeYellow
+  categories: [ Zona14 ]
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Weapons/Melee/throwingknife_yellow.rsi
+    state: icon
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Slash: 51
+  - type: Item
+    sprite: _Stalker/Objects/Weapons/Melee/throwingknife_yellow.rsi

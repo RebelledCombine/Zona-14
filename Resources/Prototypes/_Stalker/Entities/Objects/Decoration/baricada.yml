@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: BarricadaStalker1
   parent: BaseStructure
-  name: баррикада
+  name: barricade
   suffix: ST, Mapping
-  description: Искусственное фортификационное заграждение, выполненное из подручных материалов и расположенное поперёк дороги, улицы
+  description: An artificial fortification barrier made of improvised materials and located across a road or street
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Other/baricada.rsi
@@ -21,13 +22,13 @@
         layer:
         - WallLayer
 
-# НА ПЛАНЫ
+# Zona14: НА ПЛАНЫ
 # - type: entity
 #   id: BarricadaStalker2
 #   parent: BaseStructure
-#   name: баррикада
-#   suffix: Stalker, Разрушаемый
-#   description: Искусственное фортификационное заграждение, выполненное из подручных материалов и расположенное поперёк дороги, улицы
+# Zona14: name: баррикада
+# Zona14: suffix: Stalker, Разрушаемый
+# Zona14: description: Искусственное фортификационное заграждение, выполненное из подручных материалов и расположенное поперёк дороги, улицы
 #   components:
 #   - type: Sprite
 #     sprite: _Stalker/Objects/Decoration/Other/baricada.rsi

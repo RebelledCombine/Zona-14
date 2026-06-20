@@ -204,7 +204,7 @@
   parent: Z14STBaseWeaponRifleSCARH
   id: Z14STWeaponRifleAK308
   categories: [ Zona14 ]
-  name: AK-308 "Valkyrie"
+  name: 'AK-308 "Valkyrie"'
   suffix: Z14, Custom
   description: Developed by Kalashnikov Concern for foreign customers requiring powerful and reliable automatic weapons chambered in 7.62x51. Only enters the Zone through special orders.
   components:

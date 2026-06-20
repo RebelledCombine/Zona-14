@@ -4,7 +4,7 @@
   parent: BaseItem
   id: Z14UNstandartCrate
   categories: [ Zona14 ]
-  name: UN kit
+  name: UN Kit
   description: Standard UN equipment supply kit, T4
   suffix: Z14, T4
   components:
@@ -21,15 +21,15 @@
     - type: SpawnItemsOnUse
       items:
         - id: ClothingBeltTarzanGreen
-        - id: ClothingOuterArmorUNTAR
-        - id: ClothingHeadHelmetUlachUN
-        - id: ClothingBackpackDuffelCommonStalker
-        - id: BaseRadio
+        - id: Z14ClothingOuterArmorUNTAR
+        - id: Z14ClothingHeadHelmetUlachUN
+        - id: Z14ClothingBackpackDuffelCommonStalker
+        - id: Z14BaseRadio
         - id: Brutepack
         - id: Brutepack
         - id: Brutepack
-        - id: MedkitMilitary
-        - id: MedkitMilitary
+        - id: Z14MedkitMilitary
+        - id: Z14MedkitMilitary
         - id: Z14556M856Box
         - id: Z14556M856Box
         - id: Z14556M856Box
@@ -49,7 +49,7 @@
   parent: BaseItem
   id: Z14UNstandartCrateT3
   categories: [ Zona14 ]
-  name: UN kit
+  name: UN Kit
   description: Standard UN equipment supply kit, T3.
   suffix: Z14, T3
   components:
@@ -66,15 +66,15 @@
     - type: SpawnItemsOnUse
       items:
         - id: ClothingBeltTarzanGreen
-        - id: STClothingOuterArmorLightPlateVestBaseANAUN
-        - id: ClothingHeadInfantryHelmetUN
-        - id: ClothingBackpackDuffelCommonStalker
-        - id: BaseRadio
+        - id: Z14STClothingOuterArmorLightPlateVestBaseANAUN
+        - id: Z14ClothingHeadInfantryHelmetUN
+        - id: Z14ClothingBackpackDuffelCommonStalker
+        - id: Z14BaseRadio
         - id: Brutepack
         - id: Brutepack
         - id: Brutepack
-        - id: MedkitMilitary
-        - id: MedkitMilitary
+        - id: Z14MedkitMilitary
+        - id: Z14MedkitMilitary
         - id: Z14919PBMBox
         - id: Z14919PBMBox
         - id: Z14919PBMBox
@@ -110,24 +110,24 @@
       state: icon
     - type: SpawnItemsOnUse
       items:
-        - id: STClothingOuterArmorLightPlateVestBasePSZ7v3
+        - id: Z14STClothingOuterArmorLightPlateVestBasePSZ7v3
         - id: Zipties
-        - id: ClothingHeatBagStalker
+        - id: Z14ClothingHeatBagStalker
         - id: PowerCellHyper
-        - id: Binocularus1
-        - id: ClothingHeadBandana2Military
+        - id: Z14Binocularus1
+        - id: Z14ClothingHeadBandana2Military
         - id: Z14STWeaponRifleAKS74U
         - id: ClothingBeltGreenWebbingStalker
         - id: DrinkMREFlask
         - id: DrinkMREFlask
         - id: Zipties
         - id: Zipties
-        - id: STCombatKnife
-        - id: MedkitMilitary
-        - id: MedkitMilitary
-        - id: MedkitMilitary
-        - id: MedkitMilitary
-        - id: MedkitMilitary
+        - id: Z14STCombatKnife
+        - id: Z14MedkitMilitary
+        - id: Z14MedkitMilitary
+        - id: Z14MedkitMilitary
+        - id: Z14MedkitMilitary
+        - id: Z14MedkitMilitary
         - id: 545Mag30
         - id: 545Mag30
         - id: 545Mag30
@@ -140,10 +140,10 @@
         - id: Z14545PCBox
         - id: Z14545PCBox
         - id: Z14545PCBox
-        - id: STFoodBreadPlain
-        - id: STFoodBreadPlain
+        - id: Z14STFoodBreadPlain
+        - id: Z14STFoodBreadPlain
         - id: FlashlightSeclite
-        - id: BaseRadio
+        - id: Z14BaseRadio
       sound:
         path: /Audio/Effects/unwrap.ogg
 
@@ -152,7 +152,7 @@
   id: Z14DuryAK2Crate
   categories: [ Zona14 ]
   suffix: Z14
-  name: AKSU kit with Duty jacket
+  name: AKSU kit and avant-garde jacket
   description: A kit for those who are completely broke.
   components:
     - type: Item
@@ -167,7 +167,7 @@
       state: kb3
     - type: SpawnItemsOnUse
       items:
-        - id: ClothingOuterJacketDolg
+        - id: Z14ClothingOuterJacketDolg
         - id: Z14STWeaponRifleAKS74U
         - id: 545Mag30
         - id: Base545Mag10
@@ -179,8 +179,8 @@
         - id: Gauze
         - id: FlashlightSeclite
         - id: PowerCellHyper
-        - id: BaseRadio
-        - id: STCombatKnife
+        - id: Z14BaseRadio
+        - id: Z14STCombatKnife
         - id: ClothingBackpackDuffelGreenStalker
       sound:
         path: /Audio/Effects/unwrap.ogg
@@ -189,7 +189,7 @@
   parent: BaseItem
   id: Z14ArmyAKCUCrate
   categories: [ Zona14 ]
-  name: SOP private kit
+  name: OKSOP Standard Issued Kit
   description: Basic army kit designed for SOP soldiers, modified for the Exclusion Zone.
   suffix: Z14, T3
   components:
@@ -203,11 +203,11 @@
       state: icon
     - type: SpawnItemsOnUse
       items:
-        - id: STClothingOuterArmorLightPlateVestBaseMilitary
+        - id: Z14STClothingOuterArmorLightPlateVestBaseMilitary
         - id: Zipties
         - id: Zipties
         - id: PowerCellHyper
-        - id: ClothingHeadHatMilitary
+        - id: Z14ClothingHeadHatMilitary
         - id: Z14STWeaponRifleAKS74U
         - id: ClothingBeltGreenWebbingStalker
         - id: ClothingBackpackTacticOliveStalker
@@ -216,16 +216,16 @@
         - id: FoodTinMRE
         - id: FoodTinMRE
         - id: Z14RGD5Grenade
-        - id: STFoodBreadPlain
-        - id: STCombatKnife
-        - id: MedkitAI2
-        - id: MedkitAI2
-        - id: MedkitMilitary
-        - id: MedkitMilitary
-        - id: MedkitScience
-        - id: STOintment
-        - id: STGauze
-        - id: STGauze
+        - id: Z14STFoodBreadPlain
+        - id: Z14STCombatKnife
+        - id: Z14MedkitAI2
+        - id: Z14MedkitAI2
+        - id: Z14MedkitMilitary
+        - id: Z14MedkitMilitary
+        - id: Z14MedkitScience
+        - id: Z14STOintment
+        - id: Z14STGauze
+        - id: Z14STGauze
         - id: 545Mag30
         - id: 545Mag30
         - id: 545Mag30
@@ -239,8 +239,8 @@
         - id: Z14545FMJBox
         - id: Z14545FMJBox
         - id: STFlashlightSeclite
-        - id: BaseRadio
-        - id: STPillboxProbud
+        - id: Z14BaseRadio
+        - id: Z14STPillboxProbud
       sound:
         path: /Audio/Effects/unwrap.ogg
 
@@ -248,7 +248,7 @@
   parent: UNstandartCrate
   id: Z14ArmyAKCCrate
   categories: [ Zona14 ]
-  name: SOP sergeant kit
+  name: OKSOP Sergeant Kit
   description: Sergeant army kit designed for SOP soldiers, modified for the Exclusion Zone.
   suffix: Z14, T3
   components:
@@ -262,11 +262,11 @@
       state: icon
     - type: SpawnItemsOnUse
       items:
-        - id: STClothingOuterArmorLightPlateVestBaseMilitary
+        - id: Z14STClothingOuterArmorLightPlateVestBaseMilitary
         - id: Zipties
         - id: Zipties
         - id: PowerCellHyper
-        - id: ClothingHeadHatMilitary
+        - id: Z14ClothingHeadHatMilitary
         - id: Z14STWeaponRifleAKS74
         - id: ClothingBeltGreenWebbingStalker
         - id: ClothingBackpackTacticOliveStalker
@@ -276,17 +276,17 @@
         - id: FoodTinMRE
         - id: Z14RGD5Grenade
         - id: Z14RGD5Grenade
-        - id: STFoodBreadPlain
-        - id: STCombatKnife
-        - id: MedkitAI2
-        - id: MedkitAI2
-        - id: MedkitMilitary
-        - id: MedkitMilitary
-        - id: MedkitScience
-        - id: STTourniquet
-        - id: STOintmentGood
-        - id: STGauze
-        - id: STGauze
+        - id: Z14STFoodBreadPlain
+        - id: Z14STCombatKnife
+        - id: Z14MedkitAI2
+        - id: Z14MedkitAI2
+        - id: Z14MedkitMilitary
+        - id: Z14MedkitMilitary
+        - id: Z14MedkitScience
+        - id: Z14STTourniquet
+        - id: Z14STOintmentGood
+        - id: Z14STGauze
+        - id: Z14STGauze
         - id: 545Mag30
         - id: 545Mag30
         - id: 545Mag30
@@ -300,9 +300,9 @@
         - id: Z14545FMJBox
         - id: Z14545FMJBox
         - id: STFlashlightSeclite
-        - id: BaseRadio
-        - id: Binocularus1
-        - id: STPillboxProbud
+        - id: Z14BaseRadio
+        - id: Z14Binocularus1
+        - id: Z14STPillboxProbud
       sound:
         path: /Audio/Effects/unwrap.ogg
 
@@ -310,7 +310,7 @@
   parent: BaseItem
   id: Z14ArmyAKMOfficerCrate
   categories: [ Zona14 ]
-  name: SOP officer kit
+  name: OKSOP Officer Kit
   description: Officer PSZ kit designed for SOP officers.
   suffix: Z14, T3
   components:
@@ -327,9 +327,9 @@
         - id: Zipties
         - id: Zipties
         - id: PowerCellHyper
-        - id: STClothingOuterArmorLightPlateVestBaseMilitary
+        - id: Z14STClothingOuterArmorLightPlateVestBaseMilitary
         - id: Z14STWeaponRifleAKS74
-        - id: ClothingHeadBeretMilitary
+        - id: Z14ClothingHeadBeretMilitary
         - id: ClothingBeltWebbingOfficerStalker
         - id: ClothingBackpackTacticOliveStalker
         - id: DrinkMREFlask
@@ -339,14 +339,14 @@
         - id: Z14RGD5Grenade
         - id: Z14RGD5Grenade
         - id: Z14RGD5Grenade
-        - id: STFoodBreadPlain
-        - id: STCombatKnife
+        - id: Z14STFoodBreadPlain
+        - id: Z14STCombatKnife
         - id: Z14WeaponPistolStalkerPM
         - id: BasePMMag
         - id: BasePMMag
         - id: Z14918PBMBox
-        - id: MedkitAI2
-        - id: MedkitAI2
+        - id: Z14MedkitAI2
+        - id: Z14MedkitAI2
         - id: 545Mag45
         - id: 545Mag45
         - id: 545Mag30
@@ -358,16 +358,16 @@
         - id: Z14545PCBox
         - id: Z14545PCBox
         - id: Z14545PCBox
-        - id: MedkitMilitary
-        - id: MedkitMilitary
-        - id: MedkitScience
-        - id: MedkitScience
-        - id: STTourniquet
-        - id: STOintmentGood
-        - id: STGauze
+        - id: Z14MedkitMilitary
+        - id: Z14MedkitMilitary
+        - id: Z14MedkitScience
+        - id: Z14MedkitScience
+        - id: Z14STTourniquet
+        - id: Z14STOintmentGood
+        - id: Z14STGauze
         - id: STFlashlightSeclite
-        - id: BaseRadio
-        - id: Binocularus1
+        - id: Z14BaseRadio
+        - id: Z14Binocularus1
         - id: Bloodpack
       sound:
         path: /Audio/Effects/unwrap.ogg
@@ -377,7 +377,7 @@
   id: Z14ArmySMGCrate
   categories: [ Zona14 ]
   suffix: Z14
-  name: OKSOP Vityaz kit
+  name: OKSOP Vityaz Kit
   description: Basic OKSOP equipment supply kit
   components:
     - type: Item
@@ -392,9 +392,9 @@
       state: kb3
     - type: SpawnItemsOnUse
       items:
-        - id: STClothingOuterArmorLightPlateVestBaseMilitary
-        - id: ClothingMaskXoma
-        - id: ClothingHeadHelmetBerill5MMilitary
+        - id: Z14STClothingOuterArmorLightPlateVestBaseMilitary
+        - id: Z14ClothingMaskXoma
+        - id: Z14ClothingHeadHelmetBerill5MMilitary
         - id: VityazMag
         - id: VityazMag
         - id: VityazMag
@@ -403,18 +403,18 @@
         - id: BoxMRE
         - id: BoxMRE
         - id: Z14STWeaponSMGPP1901
-        - id: ClothingBackpackDuffelCommonStalker
+        - id: Z14ClothingBackpackDuffelCommonStalker
         - id: Z14919PSTBox
         - id: Z14919PSTBox
         - id: Z14919PSTBox
         - id: Z14919PSTBox
         - id: Z14919PSTBox
         - id: Z14919PSTBox
-        - id: BaseRadio
+        - id: Z14BaseRadio
         - id: Brutepack
         - id: Brutepack
         - id: Brutepack
-        - id: MedkitMilitary
+        - id: Z14MedkitMilitary
       sound:
         path: /Audio/Effects/unwrap.ogg
 
@@ -423,7 +423,7 @@
   id: Z14ArmyAKSUCrate
   categories: [ Zona14 ]
   suffix: Z14
-  name: OKSOP Ksyukha kit
+  name: Ksyukha OKSOP Kit
   description: Improved OKSOP equipment supply kit
   components:
     - type: Item
@@ -439,9 +439,9 @@
     - type: SpawnItemsOnUse
       items:
         - id: ClothingBeltTarzanGreen
-        - id: STClothingOuterArmorLightPlateVestBasePSZ7
-        - id: ClothingMaskGP7
-        - id: ClothingHeadHelmetBerill5MMilitary
+        - id: Z14STClothingOuterArmorLightPlateVestBasePSZ7
+        - id: Z14ClothingMaskGP7
+        - id: Z14ClothingHeadHelmetBerill5MMilitary
         - id: 545Mag30
         - id: 545Mag30
         - id: 545Mag30
@@ -450,19 +450,19 @@
         - id: BoxMRE
         - id: BoxMRE
         - id: Z14STWeaponRifleAKS74U
-        - id: ClothingBackpackDuffelCommonStalker
+        - id: Z14ClothingBackpackDuffelCommonStalker
         - id: Z14545PCBox
         - id: Z14545PCBox
         - id: Z14545PCBox
         - id: Z14545PCBox
         - id: Z14545PCBox
         - id: Z14545PCBox
-        - id: BaseRadio
+        - id: Z14BaseRadio
         - id: Brutepack
         - id: Brutepack
         - id: Brutepack
-        - id: MedkitMilitary
-        - id: MedkitMilitary
+        - id: Z14MedkitMilitary
+        - id: Z14MedkitMilitary
       sound:
         path: /Audio/Effects/unwrap.ogg
 
@@ -473,7 +473,7 @@
   id: Z14ArmySergCrate
   categories: [ Zona14 ]
   suffix: Z14
-  name: OKSOP Sergeant kit
+  name: OKSOP Sgt Pack
   description: OKSOP equipment supply kit for squad leaders. Equivalent to class 4.
   components:
     - type: Item
@@ -489,16 +489,16 @@
     - type: SpawnItemsOnUse
       items:
         - id: ClothingBeltGreenWebbingStalker
-        - id: ClothingOuterArmor6B13
-        - id: ClothingMaskGP21
-        - id: ClothingHeadHelmetBulatMilitary
+        - id: Z14ClothingOuterArmor6B13
+        - id: Z14ClothingMaskGP21
+        - id: Z14ClothingHeadHelmetBulatMilitary
         - id: 545Mag45
         - id: 545Mag45
         - id: 545Mag30
         - id: 545Mag30
         - id: 545Mag30
         - id: Z14STWeaponRifleAKS74
-        - id: ClothingBackpackDuffelMilitaryOlive
+        - id: Z14ClothingBackpackDuffelMilitaryOlive
         - id: Z14545PCBox
         - id: Z14545PCBox
         - id: Z14545PCBox
@@ -507,14 +507,14 @@
         - id: Z14545PCBox
         - id: Z14545PCBox
         - id: Z14545PCBox
-        - id: BaseRadio
+        - id: Z14BaseRadio
         - id: Brutepack
         - id: Brutepack
         - id: BoxMRE
         - id: BoxMRE
-        - id: MedkitMilitary
-        - id: MedkitMilitary
-        - id: MedkitMilitary
+        - id: Z14MedkitMilitary
+        - id: Z14MedkitMilitary
+        - id: Z14MedkitMilitary
       sound:
         path: /Audio/Effects/unwrap.ogg
 
@@ -523,7 +523,7 @@
   id: Z14ArmyOffiCrate
   categories: [ Zona14 ]
   suffix: Z14
-  name: OKSOP Officer kit
+  name: OKSOP Officer Pack
   description: OKSOP equipment supply kit for commanders. Equivalent to class 5.
   components:
     - type: Item
@@ -538,9 +538,9 @@
       state: kb2
     - type: SpawnItemsOnUse
       items:
-        - id: ClothingHeadHelmetBulatMilitary
-        - id: ClothingMaskGP21
-        - id: STClothingOuterArmorLightPlateVestBaseHeavyMilitary
+        - id: Z14ClothingHeadHelmetBulatMilitary
+        - id: Z14ClothingMaskGP21
+        - id: Z14STClothingOuterArmorLightPlateVestBaseHeavyMilitary
         - id: ClothingHeadHatBeretSecurity
         - id: ClothingBeltWebbingOfficerStalker
         - id: 739Mag30
@@ -549,7 +549,7 @@
         - id: 739Mag30
         - id: Z14STWeaponRifleAK103
         - id: ClothingHeadsetStalker
-        - id: ClothingBackpackDuffelMilitaryOlive
+        - id: Z14ClothingBackpackDuffelMilitaryOlive
         - id: Z14739BPBox
         - id: Z14739BPBox
         - id: Z14739BPBox
@@ -558,13 +558,13 @@
         - id: Z14739FMJBox
         - id: Z14739FMJBox
         - id: Z14739FMJBox
-        - id: BaseRadio
+        - id: Z14BaseRadio
         - id: Brutepack
         - id: Brutepack
         - id: Brutepack
-        - id: MedkitMilitary
-        - id: MedkitMilitary
-        - id: MedkitMilitary
+        - id: Z14MedkitMilitary
+        - id: Z14MedkitMilitary
+        - id: Z14MedkitMilitary
         - id: BoxMRE
         - id: BoxMRE
       sound:
@@ -575,7 +575,7 @@
   id: Z14ArmySaigaCrate
   categories: [ Zona14 ]
   suffix: Z14
-  name: Saiga kit
+  name: Saiga Kit
   description: OKSOP equipment supply kit, includes only a Saiga with ammo and magazines.
   components:
     - type: Item
@@ -617,7 +617,7 @@
   id: Z14ArmySciCrate
   categories: [ Zona14 ]
   suffix: Z14
-  name: scientist kit
+  name: Scientist Recruitment
   description: Scientist equipment supply kit.
   components:
     - type: Item
@@ -642,10 +642,10 @@
         - id: Z14919RIPBox
         - id: Z14919RIPBox
         - id: Z14919RIPBox
-        - id: ClothingOuterArmorSSP99
-        - id: MedkitScience
-        - id: MedkitScience
-        - id: ClothingMaskGP7
+        - id: Z14ClothingOuterArmorSSP99
+        - id: Z14MedkitScience
+        - id: Z14MedkitScience
+        - id: Z14ClothingMaskGP7
         - id: GeigerCounter
         - id: BoxMRE
         - id: BoxMRE
@@ -662,7 +662,7 @@
   id: Z14AntiradCrate
   categories: [ Zona14 ]
   suffix: Z14
-  name: anti-radiation kit
+  name: Anti-Radiation Kit
   description: "Anti-radiation kit with an advertising sticker: 'Your reliable protection against harmful radiation'"
   components:
     - type: Item
@@ -679,8 +679,8 @@
       items:
         - id: DrinkVodkaBottleFull
         - id: PillCanister
-        - id: antiradpill
-        - id: antiradpill
+        - id: Z14antiradpill
+        - id: Z14antiradpill
         - id: DrinkShotGlass
       sound:
         path: /Audio/Effects/unwrap.ogg
@@ -690,7 +690,7 @@
   id: Z14SanitarCrate
   categories: [ Zona14 ]
   suffix: Z14
-  name: medic kit
+  name: Orderly Kit
   description: Kit intended for providing medical assistance.
   components:
     - type: Item
@@ -706,16 +706,16 @@
     - type: SpawnItemsOnUse
       items:
         - id: MedkitCMSStalker
-        - id: MedkitAI2
-        - id: MedkitAI2
-        - id: MedkitAI2
-        - id: MedkitAI2
-        - id: MedkitAI2
-        - id: MedkitAI2
-        - id: MedkitAI2
-        - id: MedkitAI2
-        - id: MedkitAI2
-        - id: MedkitAI2
+        - id: Z14MedkitAI2
+        - id: Z14MedkitAI2
+        - id: Z14MedkitAI2
+        - id: Z14MedkitAI2
+        - id: Z14MedkitAI2
+        - id: Z14MedkitAI2
+        - id: Z14MedkitAI2
+        - id: Z14MedkitAI2
+        - id: Z14MedkitAI2
+        - id: Z14MedkitAI2
         - id: Bloodpack
         - id: Tourniquet
       sound:
@@ -726,7 +726,7 @@
   id: Z14PolevoyVrachCrate
   categories: [ Zona14 ]
   suffix: Z14
-  name: field medic kit
+  name: Advanced Medical Box
   description: Extended version of the medical kit.
   components:
     - type: Item
@@ -742,16 +742,16 @@
     - type: SpawnItemsOnUse
       items:
         - id: MedkitGrizzlyStalker
-        - id: MedkitMilitary
-        - id: MedkitMilitary
-        - id: MedkitMilitary
-        - id: MedkitMilitary
-        - id: MedkitMilitary
-        - id: MedkitMilitary
-        - id: MedkitMilitary
-        - id: MedkitMilitary
-        - id: MedkitMilitary
-        - id: MedkitMilitary
+        - id: Z14MedkitMilitary
+        - id: Z14MedkitMilitary
+        - id: Z14MedkitMilitary
+        - id: Z14MedkitMilitary
+        - id: Z14MedkitMilitary
+        - id: Z14MedkitMilitary
+        - id: Z14MedkitMilitary
+        - id: Z14MedkitMilitary
+        - id: Z14MedkitMilitary
+        - id: Z14MedkitMilitary
         - id: Bloodpack
         - id: Bloodpack
         - id: Bloodpack
@@ -765,7 +765,7 @@
   id: Z14ResearcherCrate
   categories: [ Zona14 ]
   suffix: Z14
-  name: researcher kit
+  name: Artifact Hunter Crate
   description: Kit for searching for anomalous formations in the Zone.
   components:
     - type: Item
@@ -780,10 +780,10 @@
       state: kb2
     - type: SpawnItemsOnUse
       items:
-        - id: ClothingOuterArmorSpark
-        - id: ClothingMaskGP7
-        - id: ZoneArtifactDetectorResponse
-        - id: antiradpill
+        - id: Z14ClothingOuterArmorSpark
+        - id: Z14ClothingMaskGP7
+        - id: Z14ZoneArtifactDetectorResponse
+        - id: Z14antiradpill
         - id: GeigerCounter
         - id: GlockMag17
         - id: GlockMag17
@@ -799,7 +799,7 @@
   id: Z14SaviorCrate
   categories: [ Zona14 ]
   suffix: Z14
-  name: rescuer kit
+  name: Rescue Pack
   description: Ultimate version of the medical kit.
   components:
     - type: Item
@@ -815,21 +815,21 @@
     - type: SpawnItemsOnUse
       items:
         - id: MedkitGrizzlyStalker
-        - id: MedkitMilitary
-        - id: MedkitMilitary
-        - id: MedkitMilitary
-        - id: MedkitMilitary
-        - id: MedkitMilitary
-        - id: MedkitAI2
-        - id: MedkitAI2
-        - id: MedkitAI2
-        - id: MedkitAI2
-        - id: MedkitAI2
-        - id: MedkitAI2
-        - id: MedkitAI2
-        - id: MedkitAI2
-        - id: MedkitAI2
-        - id: MedkitAI2
+        - id: Z14MedkitMilitary
+        - id: Z14MedkitMilitary
+        - id: Z14MedkitMilitary
+        - id: Z14MedkitMilitary
+        - id: Z14MedkitMilitary
+        - id: Z14MedkitAI2
+        - id: Z14MedkitAI2
+        - id: Z14MedkitAI2
+        - id: Z14MedkitAI2
+        - id: Z14MedkitAI2
+        - id: Z14MedkitAI2
+        - id: Z14MedkitAI2
+        - id: Z14MedkitAI2
+        - id: Z14MedkitAI2
+        - id: Z14MedkitAI2
         - id: Defibrillator
       sound:
         path: /Audio/Effects/unwrap.ogg
@@ -840,7 +840,7 @@
   parent: BaseItem
   id: Z14TradeBox
   categories: [ Zona14 ]
-  name: contraband package
+  name: contraband briquette
   description: Contraband carefully disguised as an ordinary box.
   suffix: Z14, Economy, Contraband
   components:
@@ -862,7 +862,7 @@
   parent: BaseItem
   id: Z14TradeBox2
   categories: [ Zona14 ]
-  name: supplies and documents package for Sidorovich
+  name: briquette of stocks and documents to Sidorovich
   description: Contraband carefully disguised as an ordinary box.
   suffix: Z14, Economy, For Clear Sky
   components:
@@ -884,7 +884,7 @@
   parent: BaseItem
   id: Z14STLoaderBox
   categories: [ Zona14 ]
-  name: crate for the buyer
+  name: Fence Box
   description: Loader's work, hard but necessary labor
   suffix: Z14, Economy
   components:
@@ -908,7 +908,7 @@
   parent: BaseItem
   id: Z14STCannabisBox
   categories: [ Zona14 ]
-  name: premium herb package
+  name: selected grass briquette
   description: Carefully disguised as a carton of cigarettes
   suffix: Z14, Economy, Contraband
   components:
@@ -929,7 +929,7 @@
   parent: BaseItem
   id: Z14TradeBoxSera
   categories: [ Zona14 ]
-  name: Seraphim supplies package
+  name: Seraphim Supply Crate
   description: A box of Seraphim supplies, addressed to the northern Limansk coven from the southern coven
   suffix: Z14, Economy, Contraband
   components:
@@ -954,7 +954,7 @@
   id: Z14PoliceAKCrate
   categories: [ Zona14 ]
   suffix: Z14
-  name: police AKSU kit
+  name: CSSU Police Kit
   description: Basic AKSU kit for police
   components:
     - type: Item
@@ -969,8 +969,8 @@
       state: kb3
     - type: SpawnItemsOnUse
       items:
-        - id: STClothingOuterArmorLightPlateVestBasePolice
-        - id: ClothingHeadHatPoliceHat
+        - id: Z14STClothingOuterArmorLightPlateVestBasePolice
+        - id: Z14ClothingHeadHatPoliceHat
         - id: Z14STWeaponRifleAKS74U
         - id: ClothingBeltWebbingOfficerStalker
         - id: 545Mag30
@@ -987,18 +987,18 @@
         - id: Z14545PCBox
         - id: Z14545PCBox
         - id: Z14545PCBox
-        - id: MedkitMilitary
-        - id: MedkitMilitary
-        - id: MedkitMilitary
-        - id: MedkitMilitary
-        - id: MedkitMilitary
+        - id: Z14MedkitMilitary
+        - id: Z14MedkitMilitary
+        - id: Z14MedkitMilitary
+        - id: Z14MedkitMilitary
+        - id: Z14MedkitMilitary
         - id: Gauze
         - id: Gauze
         - id: FlashlightSeclite
         - id: PowerCellHyper
         - id: PowerCellHyper
-        - id: BaseRadio
-        - id: STCombatKnife
+        - id: Z14BaseRadio
+        - id: Z14STCombatKnife
         - id: DrinkFlaskOld
         - id: DrinkFlaskOld
         - id: FoodTinMRE
@@ -1014,7 +1014,7 @@
   id: Z14PlicePmCrate
   categories: [ Zona14 ]
   suffix: Z14
-  name: police PM kit
+  name: PM Police Kit
   description: PM kit for police
   components:
     - type: Item
@@ -1029,7 +1029,7 @@
       state: kb3
     - type: SpawnItemsOnUse
       items:
-        - id: STClothingOuterArmorLightPlateVestBasePolice
+        - id: Z14STClothingOuterArmorLightPlateVestBasePolice
         - id: Z14WeaponPistolStalkerPM
         - id: ClothingBeltWebbingOfficerStalker
         - id: BasePMMag
@@ -1042,18 +1042,18 @@
         - id: Z14918PBMBox
         - id: Z14918PBMBox
         - id: Z14918PBMBox
-        - id: MedkitMilitary
-        - id: MedkitMilitary
-        - id: MedkitMilitary
-        - id: MedkitMilitary
-        - id: MedkitMilitary
+        - id: Z14MedkitMilitary
+        - id: Z14MedkitMilitary
+        - id: Z14MedkitMilitary
+        - id: Z14MedkitMilitary
+        - id: Z14MedkitMilitary
         - id: Gauze
         - id: Gauze
         - id: FlashlightSeclite
         - id: PowerCellHyper
         - id: PowerCellHyper
-        - id: BaseRadio
-        - id: STCombatKnife
+        - id: Z14BaseRadio
+        - id: Z14STCombatKnife
         - id: DrinkFlaskOld
         - id: DrinkFlaskOld
         - id: FoodTinMRE
@@ -1069,7 +1069,7 @@
   id: Z14PoliceAK103Crate
   categories: [ Zona14 ]
   suffix: Z14
-  name: police special forces kit
+  name: Special Forces Police Kit
   description: Kit for martial law situations.
   components:
     - type: Item
@@ -1084,8 +1084,8 @@
       state: kb3
     - type: SpawnItemsOnUse
       items:
-        - id: ClothingOuterArmor6B13Police
-        - id: ClothingHeadHelmetUlach
+        - id: Z14ClothingOuterArmor6B13Police
+        - id: Z14ClothingHeadHelmetUlach
         - id: Z14STWeaponRifleAK103
         - id: ClothingBeltWebbingOfficerStalker
         - id: 739Mag30
@@ -1104,13 +1104,13 @@
         - id: Z14739PCBox
         - id: Z14739PCBox
         - id: Z14739PCBox
-        - id: MedkitMilitary
-        - id: MedkitMilitary
-        - id: MedkitMilitary
-        - id: MedkitMilitary
-        - id: MedkitMilitary
-        - id: MedkitMilitary
-        - id: MedkitMilitary
+        - id: Z14MedkitMilitary
+        - id: Z14MedkitMilitary
+        - id: Z14MedkitMilitary
+        - id: Z14MedkitMilitary
+        - id: Z14MedkitMilitary
+        - id: Z14MedkitMilitary
+        - id: Z14MedkitMilitary
         - id: Gauze
         - id: Gauze
         - id: Tourniquet
@@ -1119,7 +1119,7 @@
         - id: FlashlightSeclite
         - id: PowerCellHyper
         - id: PowerCellHyper
-        - id: BaseRadio
+        - id: Z14BaseRadio
         - id: DrinkFlaskOld
         - id: DrinkFlaskOld
         - id: FoodTinMRE
@@ -1133,7 +1133,7 @@
         - id: GrenadeFlashBang
         - id: GrenadeFlashBang
         - id: ClothingHandsGlovesColorBlack
-        - id: ClothingMaskNeckBalaklava3
+        - id: Z14ClothingMaskNeckBalaklava3
         - id: ClothingBackpackTacticBlackStalker
       sound:
         path: /Audio/Effects/unwrap.ogg
@@ -1141,7 +1141,7 @@
 # MARK: Miscellaneous Crates
 
 - type: entity
-  name: weapon case
+  name: Weapon Case
   parent: BriefcaseBase
   id: Z14BriefcaseWeapon
   categories: [ Zona14 ]
@@ -1167,7 +1167,7 @@
   parent: BaseItem
   id: Z14UNstandartCrateT3P90
   categories: [ Zona14 ]
-  name: UN kit with P90
+  name: UN Kit with p90
   description: Standard UN equipment supply kit, T3.
   suffix: Z14, T3
   components:
@@ -1184,15 +1184,15 @@
     - type: SpawnItemsOnUse
       items:
         - id: ClothingBeltTarzanGreen
-        - id: STClothingOuterArmorLightPlateVestBaseUN
-        - id: ClothingHeadAssaultHelmetUN
-        - id: ClothingBackpackDuffelCommonStalker
-        - id: BaseRadio
+        - id: Z14STClothingOuterArmorLightPlateVestBaseUN
+        - id: Z14ClothingHeadAssaultHelmetUN
+        - id: Z14ClothingBackpackDuffelCommonStalker
+        - id: Z14BaseRadio
         - id: Brutepack
         - id: Brutepack
         - id: Brutepack
-        - id: MedkitMilitary
-        - id: MedkitMilitary
+        - id: Z14MedkitMilitary
+        - id: Z14MedkitMilitary
         - id: Z14919PBMBox
         - id: Z14919PBMBox
         - id: Z14919PBMBox
@@ -1216,7 +1216,7 @@
   id: Z14ArmyCrateNewStandart
   categories: [ Zona14 ]
   suffix: Z14
-  name: new standard OKSOP kit
+  name: OKSOP New Standard Kit
   description: OKSOP equipment supply kit
   components:
     - type: Item
@@ -1237,11 +1237,11 @@
         - id: DrinkFlaskOld
         - id: DrinkWaterBottleFull
         - id: DrinkWaterBottleFull
-        - id: STGauze
-        - id: STGauze
-        - id: STClothingShoesBootsCombatFilled
-        - id: STClothingOuterArmorLightPlateVestBasePSZ7v3
-        - id: ClothingMaskGP7
+        - id: Z14STGauze
+        - id: Z14STGauze
+        - id: Z14STClothingShoesBootsCombatFilled
+        - id: Z14STClothingOuterArmorLightPlateVestBasePSZ7v3
+        - id: Z14ClothingMaskGP7
         - id: 545Mag30
         - id: 545Mag30
         - id: 545Mag30
@@ -1258,19 +1258,19 @@
         - id: FlashlightSeclite
         - id: PowerCellHigh
         - id: PowerCellHigh
-        - id: ClothingHeadHelmetBerill5MMilitary
+        - id: Z14ClothingHeadHelmetBerill5MMilitary
         - id: Z14545PCBox
         - id: Z14545PCBox
         - id: Z14545PCBox
         - id: Z14545PCBox
         - id: Z14545PCBox
         - id: Z14545PCBox
-        - id: BaseRadio
-        - id: STBrutepack
-        - id: STBrutepack
-        - id: STBrutepack
-        - id: MedkitMilitary
-        - id: MedkitMilitary
+        - id: Z14BaseRadio
+        - id: Z14STBrutepack
+        - id: Z14STBrutepack
+        - id: Z14STBrutepack
+        - id: Z14MedkitMilitary
+        - id: Z14MedkitMilitary
       sound:
         path: /Audio/Effects/unwrap.ogg
 
@@ -1279,7 +1279,7 @@
   id: Z14ArmyCrateNewOfficer
   categories: [ Zona14 ]
   suffix: Z14
-  name: new officer OKSOP kit
+  name: OKSOP Kit New Officer
   description: OKSOP equipment supply kit
   components:
     - type: Item
@@ -1300,11 +1300,11 @@
         - id: DrinkFlaskOld
         - id: DrinkWaterBottleFull
         - id: DrinkWaterBottleFull
-        - id: STGauze
-        - id: STGauze
-        - id: STClothingShoesBootsCombatFilled
-        - id: STClothingOuterArmorLightPlateVestBasePSZ7
-        - id: ClothingMaskGP21
+        - id: Z14STGauze
+        - id: Z14STGauze
+        - id: Z14STClothingShoesBootsCombatFilled
+        - id: Z14STClothingOuterArmorLightPlateVestBasePSZ7
+        - id: Z14ClothingMaskGP21
         - id: 739Mag30
         - id: 739Mag30
         - id: 739Mag30
@@ -1321,23 +1321,23 @@
         - id: FlashlightSeclite
         - id: PowerCellHigh
         - id: PowerCellHigh
-        - id: ClothingHeadHelmetBerill5MMilitary
+        - id: Z14ClothingHeadHelmetBerill5MMilitary
         - id: Z14739FMJBox
         - id: Z14739FMJBox
         - id: Z14739FMJBox
         - id: Z14739FMJBox
         - id: Z14739FMJBox
         - id: Z14739FMJBox
-        - id: BaseRadio
-        - id: STBrutepack
-        - id: STBrutepack
-        - id: STBrutepack
-        - id: MedkitMilitary
-        - id: MedkitMilitary
-        - id: MedkitMilitary
-        - id: MedkitMilitary
-        - id: MedkitMilitary
-        - id: ClothingHeadBeretMilitary
+        - id: Z14BaseRadio
+        - id: Z14STBrutepack
+        - id: Z14STBrutepack
+        - id: Z14STBrutepack
+        - id: Z14MedkitMilitary
+        - id: Z14MedkitMilitary
+        - id: Z14MedkitMilitary
+        - id: Z14MedkitMilitary
+        - id: Z14MedkitMilitary
+        - id: Z14ClothingHeadBeretMilitary
       sound:
         path: /Audio/Effects/unwrap.ogg
 
@@ -1346,7 +1346,7 @@
   id: Z14ArmyCrateIssgBase
   categories: [ Zona14 ]
   suffix: Z14
-  name: ISSG kit
+  name: ISSG Kit
   description: ISSG equipment supply kit
   components:
     - type: Item
@@ -1367,9 +1367,9 @@
         - id: DrinkFlaskOld
         - id: DrinkWaterBottleFull
         - id: DrinkWaterBottleFull
-        - id: STGauze
-        - id: STGauze
-        - id: STClothingShoesBootsCombatFilled
+        - id: Z14STGauze
+        - id: Z14STGauze
+        - id: Z14STClothingShoesBootsCombatFilled
         # - id: ClothingOuterArmorIssgSpark # Stalker-TODO: This prototype does not exist
         - id: BaseMP5Mag
         - id: BaseMP5Mag
@@ -1392,12 +1392,12 @@
         - id: Z14919PBMBox
         - id: Z14919PBMBox
         - id: Z14919PBMBox
-        - id: BaseRadio
-        - id: STBrutepack
-        - id: STBrutepack
-        - id: STBrutepack
-        - id: MedkitMilitary
-        - id: MedkitMilitary
+        - id: Z14BaseRadio
+        - id: Z14STBrutepack
+        - id: Z14STBrutepack
+        - id: Z14STBrutepack
+        - id: Z14MedkitMilitary
+        - id: Z14MedkitMilitary
       sound:
         path: /Audio/Effects/unwrap.ogg
 
@@ -1407,7 +1407,7 @@
   parent: BaseItem
   id: Z14ArmyProvisionCrate
   categories: [ Zona14 ]
-  name: army provisions kit
+  name: Army Provisioning Kit
   description: Basic army kit containing food supplies, designed for SOP soldiers.
   suffix: Z14
   components:
@@ -1425,10 +1425,10 @@
         - id: DrinkMREFlask
         - id: DrinkMREFlask
         - id: DrinkMREFlask
-        - id: STFoodBreadPlain
-        - id: STFoodBreadPlain
-        - id: STFoodBreadPlain
-        - id: STFoodBreadPlain
+        - id: Z14STFoodBreadPlain
+        - id: Z14STFoodBreadPlain
+        - id: Z14STFoodBreadPlain
+        - id: Z14STFoodBreadPlain
       sound:
         path: /Audio/Effects/unwrap.ogg
 
@@ -1436,7 +1436,7 @@
   parent: BaseItem
   id: Z14ArmyMedkitMilitaryCrate
   categories: [ Zona14 ]
-  name: army medkit kit
+  name: Army First Aid Kit
   description: Basic army kit containing military medkits, designed for SOP soldiers.
   suffix: Z14
   components:
@@ -1450,12 +1450,12 @@
       state: icon
     - type: SpawnItemsOnUse
       items:
-        - id: MedkitAI2
-        - id: MedkitAI2
-        - id: MedkitScience
-        - id: MedkitScience
-        - id: MedkitMilitary
-        - id: MedkitMilitary
+        - id: Z14MedkitAI2
+        - id: Z14MedkitAI2
+        - id: Z14MedkitScience
+        - id: Z14MedkitScience
+        - id: Z14MedkitMilitary
+        - id: Z14MedkitMilitary
       sound:
         path: /Audio/Effects/unwrap.ogg
 
@@ -1463,7 +1463,7 @@
   parent: BaseItem
   id: Z14Army545Mag30Crate
   categories: [ Zona14 ]
-  name: army 5.45 magazine kit
+  name: Army 5.45x39 Magazines Kit
   description: Basic army kit containing 30-round magazines for 5.45x39, designed for SOP soldiers.
   suffix: Z14
   components:
@@ -1490,7 +1490,7 @@
   parent: BaseItem
   id: Z14Army545Crate
   categories: [ Zona14 ]
-  name: army 5.45 PS ammo kit
+  name: Army 5.45x39 PS Ammo Boxes
   description: Basic army kit containing PS rounds in 5.45x39, designed for SOP soldiers.
   suffix: Z14, T3
   components:
@@ -1517,7 +1517,7 @@
   parent: BaseItem
   id: Z14Army739Crate
   categories: [ Zona14 ]
-  name: army 7.62 PS ammo kit
+  name: Army 7.62x39 FMJ Ammo Boxes Kit
   description: Basic army kit containing PS rounds in 7.62x39, designed for SOP soldiers.
   suffix: Z14, T3
   components:
@@ -1544,7 +1544,7 @@
   parent: BaseItem
   id: Z14Army739Mag30Crate
   categories: [ Zona14 ]
-  name: army 7.62 magazine kit
+  name: Army 7.62x39 Magazines Kit
   description: Basic army kit containing 30-round magazines for 7.62x39, designed for SOP soldiers.
   suffix: Z14, T3
   components:
@@ -1599,7 +1599,7 @@
   parent: BaseItem
   id: Z14MonolithCrateBasicTools
   categories: [ Zona14 ]
-  name: Monolith basic tools crate
+  name: Monolith Basic Tools Crate
   suffix: Z14, T3
   components:
     - type: STWeight
@@ -1614,9 +1614,9 @@
       items:
         - id: PowerCellHyper
         - id: PowerCellHyper
-        - id: STCombatKnife
-        - id: Binocularus1
-        - id: BaseRadio
+        - id: Z14STCombatKnife
+        - id: Z14Binocularus1
+        - id: Z14BaseRadio
         - id: FlashlightSeclite
       sound:
         path: /Audio/Effects/unwrap.ogg
@@ -1625,7 +1625,7 @@
   parent: BaseItem
   id: Z14MonolithCrateMedkit
   categories: [ Zona14 ]
-  name: Monolith medical crate
+  name: Monolith Medical Crate
   suffix: Z14, T3
   components:
     - type: STWeight
@@ -1638,17 +1638,17 @@
       state: icon
     - type: SpawnItemsOnUse
       items:
-        - id: MedkitMilitary
-        - id: MedkitMilitary
-        - id: MedkitScience
-        - id: MedkitScience
-        - id: MedkitScience
-        - id: MedkitAI2
-        - id: STOintmentGood
-        - id: STTourniquet
-        - id: STTourniquet
-        - id: STTourniquet
-        - id: STGauze
+        - id: Z14MedkitMilitary
+        - id: Z14MedkitMilitary
+        - id: Z14MedkitScience
+        - id: Z14MedkitScience
+        - id: Z14MedkitScience
+        - id: Z14MedkitAI2
+        - id: Z14STOintmentGood
+        - id: Z14STTourniquet
+        - id: Z14STTourniquet
+        - id: Z14STTourniquet
+        - id: Z14STGauze
       sound:
         path: /Audio/Effects/unwrap.ogg
 
@@ -1656,7 +1656,7 @@
   parent: BaseItem
   id: Z14MonolithCrate545Mag30
   categories: [ Zona14 ]
-  name: Monolith 5.45 magazine crate
+  name: Monolith 5.45 Magazines Crate
   suffix: Z14, T3
   components:
     - type: STWeight
@@ -1681,7 +1681,7 @@
   parent: BaseItem
   id: Z14MonolithCrate545PC
   categories: [ Zona14 ]
-  name: Monolith 5.45x39 PS ammo crate
+  name: Monolith 5.45x39 PS Ammo Crate
   suffix: Z14, T3
   components:
     - type: STWeight
@@ -1706,7 +1706,7 @@
   parent: BaseItem
   id: Z14MonolithCrate556Mag30
   categories: [ Zona14 ]
-  name: Monolith 5.56 magazine crate
+  name: Monolith 5.56 Magazines Crate
   suffix: Z14, T3
   components:
     - type: STWeight
@@ -1731,7 +1731,7 @@
   parent: BaseItem
   id: Z14MonolithCrate556M855
   categories: [ Zona14 ]
-  name: Monolith 5.56x45 M855 ammo crate
+  name: Monolith 5.56x45 M855 Ammo Crate
   suffix: Z14, T3
   components:
     - type: STWeight
@@ -1756,7 +1756,7 @@
   parent: BaseItem
   id: Z14MonolithCrate754Mag10
   categories: [ Zona14 ]
-  name: Monolith 7.62x54 magazine crate
+  name: Monolith 7.62x54 Magazines Crate
   suffix: Z14, T3
   components:
     - type: STWeight
@@ -1780,7 +1780,7 @@
   parent: BaseItem
   id: Z14MonolithCrate754FMJ
   categories: [ Zona14 ]
-  name: Monolith 7.62x54 FMJ ammo crate
+  name: Monolith 7.62x54 FMJ Ammo Crate
   suffix: Z14, T3
   components:
     - type: STWeight
@@ -1822,7 +1822,7 @@
       state: kb2
     - type: SpawnItemsOnUse
       items:
-        - id: ClothingOuterArmorZaryaStalker
+        - id: Z14ClothingOuterArmorZaryaStalker
         - id: ClothingBeltBandolierStalker
         - id: STWeaponShotgunTOZ34
         - id: 7mmBuckshotBox
@@ -1839,18 +1839,18 @@
         - id: Z14725LRNPCBox
         - id: Z14725LRNPCBox
         - id: ClothingBackpackTacticBlackStalker
-        - id: STGauze
-        - id: STGauze
-        - id: STBrutepack
-        - id: STBrutepack
-        - id: STCombatKnife
+        - id: Z14STGauze
+        - id: Z14STGauze
+        - id: Z14STBrutepack
+        - id: Z14STBrutepack
+        - id: Z14STCombatKnife
 
 
 - type: entity
   parent: BaseItem
   id: Z14StalkerArtefactHunterCrate
   categories: [ Zona14 ]
-  name: artifact hunter kit
+  name: artifact hunter’s kit
   description: Basic gear kit for artifact hunting.
   suffix: Z14
   components:
@@ -1866,8 +1866,8 @@
       state: kb2
     - type: SpawnItemsOnUse
       items:
-        - id: STClothingOuterArmorRCBZ
-        - id: ZoneArtifactDetectorResponse
+        - id: Z14STClothingOuterArmorRCBZ
+        - id: Z14ZoneArtifactDetectorResponse
         - id: Z14WeaponPistolStalkerTT
         - id: TTMag
         - id: TTMag
@@ -1875,12 +1875,12 @@
         - id: Z14725LRNPCBox
         - id: Z14725LRNPCBox
         - id: ClothingBackpackTacticBlackStalker
-        - id: STGauze
-        - id: MedkitAI2
-        - id: STCombatKnife
-        - id: BoxArtcont
-        - id: BoxArtcont
-        - id: BoxArtcont
+        - id: Z14STGauze
+        - id: Z14MedkitAI2
+        - id: Z14STCombatKnife
+        - id: Z14BoxArtcont
+        - id: Z14BoxArtcont
+        - id: Z14BoxArtcont
 
 
 - type: entity
@@ -1903,7 +1903,7 @@
       state: kb2
     - type: SpawnItemsOnUse
       items:
-        - id: ClothingOuterArmourJacketStalkerWhite
+        - id: Z14ClothingOuterArmourJacketStalkerWhite
         - id: Z14STWeaponRifleSaiga545
         - id: 545Mag20
         - id: 545Mag20
@@ -1912,11 +1912,11 @@
         - id: Z14545FMJBox
         - id: Z14545FMJBox
         - id: Z14545FMJBox
-        - id: MedkitAI2
-        - id: STCombatKnife
-        - id: ClothingHeadHelmetLight
-        - id: STGauze
-        - id: STGauze
+        - id: Z14MedkitAI2
+        - id: Z14STCombatKnife
+        - id: Z14ClothingHeadHelmetLight
+        - id: Z14STGauze
+        - id: Z14STGauze
 
 # MARK: Capture Point Kits
 
@@ -1924,7 +1924,7 @@
   parent: BaseItem
   id: Z14StalkerMedBandShopCrate
   categories: [ Zona14 ]
-  name: medical supplies kit
+  name: medical kit
   description: Kit containing various medical supplies.
   suffix: Z14
   components:
@@ -1940,32 +1940,32 @@
       state: kb2
     - type: SpawnItemsOnUse
       items:
-        - id: MedkitAI2
-        - id: MedkitAI2
-        - id: MedkitAI2
-        - id: MedkitAI2
-        - id: MedkitAI2
-        - id: MedkitAI2
-        - id: MedkitMilitary
-        - id: MedkitMilitary
-        - id: MedkitMilitary
-        - id: MedkitMilitary
-        - id: MedkitMilitary
-        - id: MedkitMilitary
-        - id: MedkitMilitary
-        - id: MedkitMilitary
-        - id: STGauze
-        - id: STGauze
-        - id: STGauze
-        - id: STGauze
-        - id: STGauze
-        - id: STGauze
-        - id: STGauze
-        - id: STGauze
-        - id: STGauze
-        - id: STGauze
-        - id: STPillboxProbud
-        - id: STPillboxAntirad
+        - id: Z14MedkitAI2
+        - id: Z14MedkitAI2
+        - id: Z14MedkitAI2
+        - id: Z14MedkitAI2
+        - id: Z14MedkitAI2
+        - id: Z14MedkitAI2
+        - id: Z14MedkitMilitary
+        - id: Z14MedkitMilitary
+        - id: Z14MedkitMilitary
+        - id: Z14MedkitMilitary
+        - id: Z14MedkitMilitary
+        - id: Z14MedkitMilitary
+        - id: Z14MedkitMilitary
+        - id: Z14MedkitMilitary
+        - id: Z14STGauze
+        - id: Z14STGauze
+        - id: Z14STGauze
+        - id: Z14STGauze
+        - id: Z14STGauze
+        - id: Z14STGauze
+        - id: Z14STGauze
+        - id: Z14STGauze
+        - id: Z14STGauze
+        - id: Z14STGauze
+        - id: Z14STPillboxProbud
+        - id: Z14STPillboxAntirad
         - id: Bloodpack
         - id: Bloodpack
         - id: Bloodpack
@@ -1979,7 +1979,7 @@
   id: Z14DesertirCrate
   categories: [ Zona14 ]
   suffix: Z14
-  name: Renegade gear kit
+  name: Renegades equipment kit
   description: Equipment kit
   components:
     - type: Item
@@ -1996,23 +1996,23 @@
       items:
         - id: FoodTinMRE
         - id: DrinkWaterBottleFull
-        - id: ClothingOuterArmorDeserter6B2
+        - id: Z14ClothingOuterArmorDeserter6B2
         - id: 545Mag30
         - id: 545Mag30
-        - id: STGauze
+        - id: Z14STGauze
         - id: Z14STWeaponRifleAKS74U
         - id: FlashlightSeclite
         - id: PowerCellHigh
-        - id: ClothingHeadHelmetLightDeserters
+        - id: Z14ClothingHeadHelmetLightDeserters
         - id: Z14545FMJBox
         - id: Z14545FMJBox
         - id: Z14545FMJBox
         - id: Z14545FMJBox
-        - id: STCombatKnife
-        - id: STBrutepack
-        - id: STBrutepack
-        - id: STBrutepack
-        - id: MedkitMilitary
+        - id: Z14STCombatKnife
+        - id: Z14STBrutepack
+        - id: Z14STBrutepack
+        - id: Z14STBrutepack
+        - id: Z14MedkitMilitary
       sound:
         path: /Audio/Effects/unwrap.ogg
 
@@ -2023,7 +2023,7 @@
   id: Z14VeteranCrate
   categories: [ Zona14 ]
   suffix: Z14
-  name: Stalker Militia gear kit
+  name: Stalker Militia equipment kit
   description: Equipment kit
   components:
     - type: Item
@@ -2038,25 +2038,25 @@
       state: kb2
     - type: SpawnItemsOnUse
       items:
-        - id: STClothingOuterKirasa
+        - id: Z14STClothingOuterKirasa
         - id: PP91Mag
         - id: PP91Mag
         - id: PP91Mag
-        - id: STGauze
+        - id: Z14STGauze
         - id: Z14STWeaponSMGPP91
         - id: FlashlightSeclite
         - id: PowerCellHigh
-        - id: ClothingHeadHelmetLight
+        - id: Z14ClothingHeadHelmetLight
         - id: Z14919PSTBox
         - id: Z14919PSTBox
         - id: Z14919PSTBox
         - id: Z14919PSTBox
         - id: Z14919PSTBox
-        - id: STCombatKnife
-        - id: STBrutepack
-        - id: STBrutepack
-        - id: STBrutepack
-        - id: MedkitMilitary
+        - id: Z14STCombatKnife
+        - id: Z14STBrutepack
+        - id: Z14STBrutepack
+        - id: Z14STBrutepack
+        - id: Z14MedkitMilitary
       sound:
         path: /Audio/Effects/unwrap.ogg
 
@@ -2067,7 +2067,7 @@
   id: Z14BandityCrate
   categories: [ Zona14 ]
   suffix: Z14
-  name: Bandit gear kit
+  name: Bandits equipment kit
   description: Equipment kit
   components:
     - type: Item
@@ -2082,23 +2082,23 @@
       state: kb2
     - type: SpawnItemsOnUse
       items:
-        - id: ClothingOuterArmourCoatBanditBlack
+        - id: Z14ClothingOuterArmourCoatBanditBlack
         - id: 545Mag30
         - id: 545Mag30
-        - id: STGauze
+        - id: Z14STGauze
         - id: Z14STWeaponRifleAKS74U
         - id: FlashlightSeclite
         - id: PowerCellHigh
-        - id: ClothingHeadHelmetLight
+        - id: Z14ClothingHeadHelmetLight
         - id: Z14545FMJBox
         - id: Z14545FMJBox
         - id: Z14545FMJBox
         - id: Z14545FMJBox
-        - id: STCombatKnife
-        - id: STBrutepack
-        - id: STBrutepack
-        - id: STBrutepack
-        - id: MedkitMilitary
+        - id: Z14STCombatKnife
+        - id: Z14STBrutepack
+        - id: Z14STBrutepack
+        - id: Z14STBrutepack
+        - id: Z14MedkitMilitary
       sound:
         path: /Audio/Effects/unwrap.ogg
 
@@ -2109,7 +2109,7 @@
   id: Z14FreedomCrate
   categories: [ Zona14 ]
   suffix: Z14
-  name: Freedom gear kit
+  name: Freedom equipment kit
   description: Equipment kit
   components:
     - type: Item
@@ -2124,23 +2124,23 @@
       state: kb2
     - type: SpawnItemsOnUse
       items:
-        - id: STClothingOuterArmorLightPlateVestBaseFreedom
+        - id: Z14STClothingOuterArmorLightPlateVestBaseFreedom
         - id: 556Mag30
         - id: 556Mag30
-        - id: STGauze
+        - id: Z14STGauze
         - id: Z14STWeaponRifleL85
         - id: FlashlightSeclite
         - id: PowerCellHigh
-        - id: ClothingHeadHelmetLight
+        - id: Z14ClothingHeadHelmetLight
         - id: Z14556FMJBox
         - id: Z14556FMJBox
         - id: Z14556FMJBox
         - id: Z14556FMJBox
-        - id: STCombatKnife
-        - id: STBrutepack
-        - id: STBrutepack
-        - id: STBrutepack
-        - id: MedkitMilitary
+        - id: Z14STCombatKnife
+        - id: Z14STBrutepack
+        - id: Z14STBrutepack
+        - id: Z14STBrutepack
+        - id: Z14MedkitMilitary
       sound:
         path: /Audio/Effects/unwrap.ogg
 
@@ -2151,7 +2151,7 @@
   id: Z14ZavetCrate
   categories: [ Zona14 ]
   suffix: Z14
-  name: Covenant gear kit
+  name: Covenant equipment kit
   description: Equipment kit
   components:
     - type: Item
@@ -2166,23 +2166,23 @@
       state: kb2
     - type: SpawnItemsOnUse
       items:
-        - id: STClothingOuterArmorLightPlateVestBaseZavet
+        - id: Z14STClothingOuterArmorLightPlateVestBaseZavet
         - id: 556Mag30
         - id: 556Mag30
-        - id: STGauze
+        - id: Z14STGauze
         - id: Z14STWeaponRifleL85
         - id: FlashlightSeclite
         - id: PowerCellHigh
-        - id: ClothingHeadHelmetLight
+        - id: Z14ClothingHeadHelmetLight
         - id: Z14556FMJBox
         - id: Z14556FMJBox
         - id: Z14556FMJBox
         - id: Z14556FMJBox
-        - id: STCombatKnife
-        - id: STBrutepack
-        - id: STBrutepack
-        - id: STBrutepack
-        - id: MedkitMilitary
+        - id: Z14STCombatKnife
+        - id: Z14STBrutepack
+        - id: Z14STBrutepack
+        - id: Z14STBrutepack
+        - id: Z14MedkitMilitary
       sound:
         path: /Audio/Effects/unwrap.ogg
 
@@ -2193,7 +2193,7 @@
   id: Z14SefirotCrate
   categories: [ Zona14 ]
   suffix: Z14
-  name: Seraphim gear kit
+  name: Seraphim equipment kit
   description: Equipment kit
   components:
     - type: Item
@@ -2208,23 +2208,23 @@
       state: kb2
     - type: SpawnItemsOnUse
       items:
-        - id: STClothingOuterArmorLightPlateVestBaseSera
+        - id: Z14STClothingOuterArmorLightPlateVestBaseSera
         - id: 545Mag30
         - id: 545Mag30
-        - id: STGauze
+        - id: Z14STGauze
         - id: Z14STWeaponRifleAKS74USERAPH
         - id: FlashlightSeclite
         - id: PowerCellHigh
-        - id: ClothingHeadHelmetLight
+        - id: Z14ClothingHeadHelmetLight
         - id: Z14545FMJBox
         - id: Z14545FMJBox
         - id: Z14545FMJBox
         - id: Z14545FMJBox
-        - id: STCombatKnife
-        - id: STBrutepack
-        - id: STBrutepack
-        - id: STBrutepack
-        - id: MedkitMilitary
+        - id: Z14STCombatKnife
+        - id: Z14STBrutepack
+        - id: Z14STBrutepack
+        - id: Z14STBrutepack
+        - id: Z14MedkitMilitary
       sound:
         path: /Audio/Effects/unwrap.ogg
 
@@ -2235,7 +2235,7 @@
   id: Z14DutyCrate
   categories: [ Zona14 ]
   suffix: Z14
-  name: Duty gear kit
+  name: Bandits equipment kit
   description: Equipment kit
   components:
     - type: Item
@@ -2250,22 +2250,22 @@
       state: kb2
     - type: SpawnItemsOnUse
       items:
-        - id: STClothingOuterArmorLightPlateVestBaseDolg
+        - id: Z14STClothingOuterArmorLightPlateVestBaseDolg
         - id: 545Mag30
         - id: 545Mag30
-        - id: STGauze
+        - id: Z14STGauze
         - id: Z14STWeaponRifleAKS74U
         - id: FlashlightSeclite
         - id: PowerCellHigh
-        - id: ClothingHeadHelmetLight
+        - id: Z14ClothingHeadHelmetLight
         - id: Z14545FMJBox
         - id: Z14545FMJBox
         - id: Z14545FMJBox
         - id: Z14545FMJBox
-        - id: STCombatKnife
-        - id: STBrutepack
-        - id: STBrutepack
-        - id: STBrutepack
-        - id: MedkitMilitary
+        - id: Z14STCombatKnife
+        - id: Z14STBrutepack
+        - id: Z14STBrutepack
+        - id: Z14STBrutepack
+        - id: Z14MedkitMilitary
       sound:
         path: /Audio/Effects/unwrap.ogg

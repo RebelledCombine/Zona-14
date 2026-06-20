@@ -1,0 +1,16 @@
+
+- type: entity
+  parent: Z14GasMaskBase
+  id: Z14ClothingMaskM51
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: M-51 gas mask
+  description: A lightweight protective mask system consisting of a mask, mask holder, and accessories. Protects from toxins.
+  components:
+  - type: Tag
+    tags:
+      - BlockMask
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/mask/m51.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/mask/m51.rsi

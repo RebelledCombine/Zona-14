@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: StalkerShop
   id: StalkerShopSera
-  name: Рублёвый Торгомат, Серафимы
-  description: Как торговец туда поместился?
-  suffix: ST, Mapping, Серафимы
+  name: Ruble Torgomat, Seraphim
+  description: How did the merchant fit there?
+  suffix: ST, Mapping, Seraphims # Zona14: ST, Mapping, Серафимы
   components:
     - type: Sprite
       drawdepth: Objects

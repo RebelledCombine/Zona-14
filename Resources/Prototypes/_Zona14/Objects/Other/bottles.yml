@@ -1,0 +1,15 @@
+- type: entity
+  id: Z14RobustHarvestChemistryBottleStalker
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: fertilizer
+  description: This will increase the potency of your plants.
+  parent: BaseChemistryBottleFilled
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: RobustHarvest
+          Quantity: 30

@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: StalkerMonolitBornFire
   parent: Bonfire
-  name: алтарь
+  name: altar
   suffix: ST, Mapping
-  description: Алтарь богов..
+  description: the altar of the gods...
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/bonfire.rsi
@@ -15,7 +16,7 @@
 - type: entity
   id: StalkerBarrelBonFire
   parent: STBonfire
-  name: костёр
+  name: Campfire
   suffix: ST, Mapping
   components:
   - type: Sprite
@@ -27,7 +28,7 @@
 - type: entity
   id: StalkerBonFire1
   parent: STBonfire
-  name: костёр
+  name: bonfire
   suffix: ST, Mapping
   components:
   - type: Sprite

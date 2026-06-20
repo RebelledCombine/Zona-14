@@ -1,0 +1,285 @@
+- type: entity
+  name: oracle trigger (1-1) (10%) 10m
+  id: Z14STTriggerOracle111010
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger111010
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+        - Z14MobMutantOraclesBrown
+      restricted:
+        - Z14MobMutantOraclesBrown
+
+- type: entity
+  name: oracle trigger (1-1) (10%) 30m
+  id: Z14STTriggerOracle111030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger111030
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+        - Z14MobMutantOraclesBrown
+      restricted:
+        - Z14MobMutantOraclesBrown
+
+- type: entity
+  name: oracle trigger (1-1) (25%) 10m
+  id: Z14STTriggerOracle112510
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger112510
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+        - Z14MobMutantOraclesBrown
+      restricted:
+        - Z14MobMutantOraclesBrown
+
+- type: entity
+  name: oracle trigger (1-1) (25%) 30m
+  id: Z14STTriggerOracle112530
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger112530
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+        - Z14MobMutantOraclesBrown
+      restricted:
+        - Z14MobMutantOraclesBrown
+
+- type: entity
+  name: oracle trigger (1-1) (50%) 10m
+  id: Z14STTriggerOracle115010
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger115010
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+        - Z14MobMutantOraclesBrown
+      restricted:
+        - Z14MobMutantOraclesBrown
+
+- type: entity
+  name: oracle trigger (1-1) (50%) 30m
+  id: Z14STTriggerOracle115030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger115030
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+        - Z14MobMutantOraclesBrown
+      restricted:
+        - Z14MobMutantOraclesBrown
+
+- type: entity
+  name: oracle trigger (1-1) (75%) 10m
+  id: Z14STTriggerOracle117510
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger117510
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+        - Z14MobMutantOraclesBrown
+      restricted:
+        - Z14MobMutantOraclesBrown
+
+- type: entity
+  name: oracle trigger (1-1) (75%) 30m
+  id: Z14STTriggerOracle117530
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger117530
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+        - Z14MobMutantOraclesBrown
+      restricted:
+        - Z14MobMutantOraclesBrown
+
+- type: entity
+  name: oracle trigger (1-1) (100%) 10m
+  id: Z14STTriggerOracle1110010
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger1110010
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+        - Z14MobMutantOraclesBrown
+      restricted:
+        - Z14MobMutantOraclesBrown
+
+- type: entity
+  name: oracle trigger (1-1) (100%) 30m
+  id: Z14STTriggerOracle1110030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger1110030
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+        - Z14MobMutantOraclesBrown
+      restricted:
+        - Z14MobMutantOraclesBrown
+
+- type: entity
+  name: oracle trigger (1-2) (10%) 10m
+  id: Z14STTriggerOracle121010
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger121010
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+        - Z14MobMutantOraclesBrown
+      restricted:
+        - Z14MobMutantOraclesBrown
+
+- type: entity
+  name: oracle trigger (1-2) (10%) 30m
+  id: Z14STTriggerOracle121030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger121030
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+        - Z14MobMutantOraclesBrown
+      restricted:
+        - Z14MobMutantOraclesBrown
+
+- type: entity
+  name: oracle trigger (1-2) (25%) 10m
+  id: Z14STTriggerOracle122510
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger122510
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+        - Z14MobMutantOraclesBrown
+      restricted:
+        - Z14MobMutantOraclesBrown
+
+- type: entity
+  name: oracle trigger (1-2) (25%) 30m
+  id: Z14STTriggerOracle122530
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger122530
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+        - Z14MobMutantOraclesBrown
+      restricted:
+        - Z14MobMutantOraclesBrown
+
+- type: entity
+  name: oracle trigger (1-2) (50%) 10m
+  id: Z14STTriggerOracle125010
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger125010
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+        - Z14MobMutantOraclesBrown
+      restricted:
+        - Z14MobMutantOraclesBrown
+
+- type: entity
+  name: oracle trigger (1-2) (50%) 30m
+  id: Z14STTriggerOracle125030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger125030
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+        - Z14MobMutantOraclesBrown
+      restricted:
+        - Z14MobMutantOraclesBrown
+
+- type: entity
+  name: oracle trigger (1-2) (75%) 10m
+  id: Z14STTriggerOracle127510
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger127510
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+        - Z14MobMutantOraclesBrown
+      restricted:
+        - Z14MobMutantOraclesBrown
+
+- type: entity
+  name: oracle trigger (1-2) (75%) 30m
+  id: Z14STTriggerOracle127530
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger127530
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+        - Z14MobMutantOraclesBrown
+      restricted:
+        - Z14MobMutantOraclesBrown
+
+- type: entity
+  name: oracle trigger (1-2) (100%) 10m
+  id: Z14STTriggerOracle1210010
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger1210010
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+        - Z14MobMutantOraclesBrown
+      restricted:
+        - Z14MobMutantOraclesBrown
+
+- type: entity
+  name: oracle trigger (1-2) (100%) 30m
+  id: Z14STTriggerOracle1210030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger1210030
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+        - Z14MobMutantOraclesBrown
+      restricted:
+        - Z14MobMutantOraclesBrown
+
+- type: entity
+  name: oracle trigger (2) (100%) 30m
+  id: Z14STTriggerOracle2210030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger2210030
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+      - Z14MobMutantOraclesBrown
+      restricted:
+      - Z14MobMutantOraclesBrown
+
+- type: entity
+  name: oracle trigger (3) (100%) 30m
+  id: Z14STTriggerOracle3310030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger3310030
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+      - Z14MobMutantOraclesBrown
+      restricted:
+      - Z14MobMutantOraclesBrown

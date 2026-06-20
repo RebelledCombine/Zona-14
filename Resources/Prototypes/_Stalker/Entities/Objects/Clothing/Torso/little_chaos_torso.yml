@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: BaseClothingTorso
   id: STClothingTorsoSerafimLittleChaos
-  name: особенная форма Последователя Сына Звезды
-  description: Материал неизвестен. Размер неизвестен. Метод пошива неизвестен. Что это за зелёные нити?..
+  name: Special Son of the Star Follower Form
+  description: Material unknown. Size unknown. The sewing method is unknown. What are these green threads?..
   suffix: Stalker, Torso, Serafim
   components:
     - type: Sprite

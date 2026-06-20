@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: STFountainWater
   parent: BaseStructure
-  name: Фонтан с водой
+  name: Water fountain
   suffix: ST, Mapping
-  description: Старенький фонтан совестких времен. Функционирует исправно.
+  description: Old fountain of Soviet times. It functions properly.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Other/fountains.rsi
@@ -25,9 +26,9 @@
 - type: entity
   id: STFountainShit
   parent: BaseStructure
-  name: Фонтан с фекалиями
+  name: Fecal fountain
   suffix: ST, Mapping
-  description: Старенький фонтан советских времен, неприятно пахнет. Не ясно как сюда попала эта жижа...
+  description: Old Soviet-era fountain, smells unpleasant. It is not clear how this slurry got here...
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Other/fountains.rsi
@@ -49,9 +50,9 @@
 - type: entity
   id: STFountainBlood
   parent: BaseStructure
-  name: Фонтан с кровью
+  name: Fountain of Blood
   suffix: ST, Mapping
-  description: Старенький фонтан советских времен. Наполнен кровью грешников.
+  description: Old Soviet-era fountain. Filled with the blood of sinners.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Other/fountains.rsi

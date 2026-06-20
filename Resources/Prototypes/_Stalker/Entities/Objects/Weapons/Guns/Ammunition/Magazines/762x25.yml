@@ -1,7 +1,8 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: TTMag
-  name: магазин ТТ 7,62x25 (8)
-  description: Магазин 7,62x25 для ТТ. Вместимость пуль 8. Продают пустым.
+  name: TT magazine 7.62x25 (8)
+  description: 7.62x25 magazine for TT. Bullet capacity 8. They sell empty.
   parent: BasePPSHMag
   suffix: Stalker
   components:
@@ -58,8 +59,8 @@
 
 - type: entity
   id: BasePPSHMag
-  name: магазин ППШ (35)
-  description: Магазин для ППШ-41. Вместимость пуль 35. Продают пустым.
+  name: PPSh magazine (35)
+  description: PPSh-41 7.62x25 magazine. Bullet capacity 35. They sell empty.
   parent: BaseItem
   suffix: Stalker
   components:
@@ -127,8 +128,8 @@
 
 - type: entity
   id: PPSHDrum
-  name: барабан ППШ (71)
-  description: Барабан для ППШ-41. Вместимость пуль 71. Продают пустым.
+  name: PPSH drum (71)
+  description: 7.62x25 drum for PPSh-41. Bullet capacity 71. They sell empty.
   parent: BasePPSHMag
   suffix: Stalker
   components:

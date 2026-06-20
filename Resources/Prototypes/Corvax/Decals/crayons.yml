@@ -1,131 +1,131 @@
 # Cyrillic letters
-- type: decal # Б
+- type: decal # Zona14: Б
   id: cyr_b
   tags: ["crayon"]
   sprite:
     sprite: Corvax/Effects/crayondecals.rsi
     state: cyr_b
 
-- type: decal # Ч
+- type: decal # Zona14: Ч
   id: cyr_ch
   tags: ["crayon"]
   sprite:
     sprite: Corvax/Effects/crayondecals.rsi
     state: cyr_ch
 
-- type: decal # Ц
+- type: decal # Zona14: Ц
   id: cyr_c
   tags: ["crayon"]
   sprite:
     sprite: Corvax/Effects/crayondecals.rsi
     state: cyr_c
 
-- type: decal # Д
+- type: decal # Zona14: Д
   id: cyr_d
   tags: ["crayon"]
   sprite:
     sprite: Corvax/Effects/crayondecals.rsi
     state: cyr_d
 
-- type: decal # Э
+- type: decal # Zona14: Э
   id: cyr_eh
   tags: ["crayon"]
   sprite:
     sprite: Corvax/Effects/crayondecals.rsi
     state: cyr_eh
 
-- type: decal # Ф
+- type: decal # Zona14: Ф
   id: cyr_f
   tags: ["crayon"]
   sprite:
     sprite: Corvax/Effects/crayondecals.rsi
     state: cyr_f
 
-- type: decal # Г
+- type: decal # Zona14: Г
   id: cyr_g
   tags: ["crayon"]
   sprite:
     sprite: Corvax/Effects/crayondecals.rsi
     state: cyr_g
 
-- type: decal # И
+- type: decal # Zona14: И
   id: cyr_i
   tags: ["crayon"]
   sprite:
     sprite: Corvax/Effects/crayondecals.rsi
     state: cyr_i
 
-- type: decal # Л
+- type: decal # Zona14: Л
   id: cyr_l
   tags: ["crayon"]
   sprite:
     sprite: Corvax/Effects/crayondecals.rsi
     state: cyr_l
 
-- type: decal # Ь
+- type: decal # Zona14: Ь
   id: cyr_soft_sign
   tags: ["crayon"]
   sprite:
     sprite: Corvax/Effects/crayondecals.rsi
     state: cyr_soft_sign
 
-- type: decal # П
+- type: decal # Zona14: П
   id: cyr_p
   tags: ["crayon"]
   sprite:
     sprite: Corvax/Effects/crayondecals.rsi
     state: cyr_p
 
-- type: decal # Щ
+- type: decal # Zona14: Щ
   id: cyr_shh
   tags: ["crayon"]
   sprite:
     sprite: Corvax/Effects/crayondecals.rsi
     state: cyr_shh
 
-- type: decal # Ш
+- type: decal # Zona14: Ш
   id: cyr_sh
   tags: ["crayon"]
   sprite:
     sprite: Corvax/Effects/crayondecals.rsi
     state: cyr_sh
 
-- type: decal # Ъ
+- type: decal # Zona14: Ъ
   id: cyr_hard_sign
   tags: ["crayon"]
   sprite:
     sprite: Corvax/Effects/crayondecals.rsi
     state: cyr_hard_sign
 
-- type: decal # Ю
+- type: decal # Zona14: Ю
   id: cyr_u
   tags: ["crayon"]
   sprite:
     sprite: Corvax/Effects/crayondecals.rsi
     state: cyr_u
 
-- type: decal # Я
+- type: decal # Zona14: Я
   id: cyr_ya
   tags: ["crayon"]
   sprite:
     sprite: Corvax/Effects/crayondecals.rsi
     state: cyr_ya
 
-- type: decal # Ы
+- type: decal # Zona14: Ы
   id: cyr_y
   tags: ["crayon"]
   sprite:
     sprite: Corvax/Effects/crayondecals.rsi
     state: cyr_y
 
-- type: decal # Ж
+- type: decal # Zona14: Ж
   id: cyr_zh
   tags: ["crayon"]
   sprite:
     sprite: Corvax/Effects/crayondecals.rsi
     state: cyr_zh
 
-- type: decal # З
+- type: decal # Zona14: З
   id: cyr_z
   tags: ["crayon"]
   sprite:

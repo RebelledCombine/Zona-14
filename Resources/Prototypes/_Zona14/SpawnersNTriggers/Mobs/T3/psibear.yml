@@ -1,0 +1,64 @@
+- type: entity
+  name: psibear trigger (1) (25%)
+  id: Z14STTriggerPsibear125
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger125
+  suffix: Z14
+  components:
+  - type: SpawnOnApproach
+    prototypes:
+    - Z14STMobMutantBearPsi
+    restricted:
+    - Z14STMobMutantBearPsi
+
+- type: entity
+  name: psibear trigger (1) (50%) (30m)
+  id: Z14STTriggerPsibear115030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger115030
+  suffix: Z14
+  components:
+  - type: SpawnOnApproach
+    prototypes:
+    - Z14STMobMutantBearPsi
+    restricted:
+    - Z14STMobMutantBearPsi
+
+- type: entity
+  name: psibear trigger (1) (100%) (30m)
+  id: Z14STTriggerPsibear1110030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger1110030
+  suffix: Z14
+  components:
+  - type: SpawnOnApproach
+    prototypes:
+    - Z14STMobMutantBearPsi
+    restricted:
+    - Z14STMobMutantBearPsi
+
+- type: entity
+  name: psibear trigger (2) (100%) 30m
+  id: Z14STTriggerPsibear2210030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger2210030
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+      - Z14STMobMutantBearPsi
+      restricted:
+      - Z14STMobMutantBearPsi
+
+- type: entity
+  name: psibear trigger (3) (100%) 30m
+  id: Z14STTriggerPsibear3310030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger3310030
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+      - Z14STMobMutantBearPsi
+      restricted:
+      - Z14STMobMutantBearPsi

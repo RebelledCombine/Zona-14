@@ -1,0 +1,118 @@
+- type: entity
+  name: Unknown Monolith
+  suffix: Z14
+  parent: MobMonolithGuardPatroolBase
+  id: Z14MobMonolithGuardPatroolMarlyaAKS
+  categories: [ Zona14 ]
+  components:
+  - type: Sprite
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: alive
+      sprite: /Textures/_Stalker/NPC/Random/Monolith/Suit/AKS-74/Armed/marlya.rsi
+  - type: BatteryAmmoProvider
+    proto: Bullet545PC
+    fireCost: 3.3
+  - type: Gun
+    soundGunshot:
+      path: /Audio/_Stalker/Effects/Guns/ak.ogg
+    fireRate: 6
+    minAngle: 7
+    maxAngle: 52
+    angleIncrease: 1.53
+  - type: STWeaponDamageFalloff
+    falloffMultiplier: 0.9
+  - type: STWeaponAccuracy
+    accuracyMultiplier: 5
+
+- type: entity
+  name: Unknown Monolith
+  suffix: Z14
+  parent: MobMonolithGuardPatroolBase
+  id: Z14MobMonolithGuardPatroolGas1L85
+  categories: [ Zona14 ]
+  components:
+  - type: Sprite
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: alive
+      sprite: /Textures/_Stalker/NPC/Random/Monolith/Suit/L85/Armed/gas1.rsi
+  - type: BatteryAmmoProvider
+    proto: Bullet556M855
+    fireCost: 3.3
+  - type: Gun
+    soundGunshot:
+      path: /Audio/_Stalker/Effects/Guns/n_l85_shot.ogg
+    fireRate: 6
+    minAngle: 0
+    maxAngle: 32
+    angleIncrease: 1
+  - type: STWeaponDamageFalloff
+    falloffMultiplier: 0.9
+  - type: STWeaponAccuracy
+    accuracyMultiplier: 5
+
+- type: entity
+  name: Unknown Monolith
+  suffix: Z14
+  parent: MobMonolithGuardPatroolBase
+  id: Z14MobMonolithGuardPatroolBalaLR300
+  categories: [ Zona14 ]
+  components:
+  - type: Sprite
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: alive
+      sprite: /Textures/_Stalker/NPC/Random/Monolith/Suit/LR-300/Armed/balaklava.rsi
+  - type: BatteryAmmoProvider
+    proto: Bullet556M855
+    fireCost: 3.3
+  - type: Gun
+    fireRate: 8
+    soundGunshot:
+      path: /Audio/_Stalker/Effects/Guns/t_lr300_shot.ogg
+    minAngle: 9
+    maxAngle: 62
+    angleIncrease: 1.5
+    selectedMode: FullAuto
+    availableModes:
+    - FullAuto
+  - type: STWeaponDamageFalloff
+    falloffMultiplier: 0.9
+  - type: STWeaponAccuracy
+    accuracyMultiplier: 5
+
+- type: entity
+  name: Unknown Monolith
+  suffix: Z14
+  parent: MobMonolithGuardPatroolBase
+  id: Z14MobMonolithGuardPatroolSevaAbakan
+  categories: [ Zona14 ]
+  components:
+  - type: Sprite
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: alive
+      sprite: /Textures/_Stalker/NPC/Random/Monolith/Seva/Abakan/Armed/standard.rsi
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      20: Critical
+      21: Dead
+  - type: BatteryAmmoProvider
+    proto: Bullet545PC
+    fireCost: 3.3
+  - type: Gun
+    soundGunshot:
+      path: /Audio/_Stalker/Effects/Guns/n_abakan_shot.ogg
+    minAngle: 7
+    maxAngle: 47
+    angleIncrease: 1
+    selectedMode: FullAuto
+    availableModes:
+    - FullAuto
+    fireRate: 8.5
+  - type: STWeaponDamageFalloff
+    falloffMultiplier: 0.8
+  - type: STWeaponAccuracy
+    accuracyMultiplier: 5

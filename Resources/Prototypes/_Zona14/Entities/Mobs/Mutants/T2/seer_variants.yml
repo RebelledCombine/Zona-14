@@ -1,0 +1,40 @@
+- type: entity
+  parent: Z14MobMutantSeer
+  id: Z14STMobMutantSeerCommon
+  categories: [ Zona14 ]
+  name: Seer
+  suffix: Z14
+  components:
+  - type: STMobVariant
+    quality: Common
+    applied: true
+
+- type: entity
+  parent: Z14MobMutantSeer
+  id: Z14STMobMutantSeerUncommon
+  categories: [ Zona14 ]
+  name: Adapted Seer
+  suffix: Z14
+  components:
+  - type: STMobVariant
+    quality: Uncommon
+
+- type: entity
+  parent: Z14MobMutantSeer
+  id: Z14STMobMutantSeerRare
+  categories: [ Zona14 ]
+  name: Mutated Seer
+  suffix: Z14
+  components:
+  - type: STMobVariant
+    quality: Rare
+
+- type: entity
+  parent: Z14MobMutantSeer
+  id: Z14STMobMutantSeerLegendary
+  categories: [ Zona14 ]
+  name: Singular Seer
+  suffix: Z14
+  components:
+  - type: STMobVariant
+    quality: Legendary

@@ -1,0 +1,40 @@
+- type: entity
+  parent: Z14MobMutantBloodsucker
+  id: Z14STMobMutantBloodsuckerCommon
+  categories: [ Zona14 ]
+  name: Bloodsucker
+  suffix: Z14
+  components:
+  - type: STMobVariant
+    quality: Common
+    applied: true
+
+- type: entity
+  parent: Z14MobMutantBloodsucker
+  id: Z14STMobMutantBloodsuckerUncommon
+  categories: [ Zona14 ]
+  name: Adapted Bloodsucker
+  suffix: Z14
+  components:
+  - type: STMobVariant
+    quality: Uncommon
+
+- type: entity
+  parent: Z14MobMutantBloodsucker
+  id: Z14STMobMutantBloodsuckerRare
+  categories: [ Zona14 ]
+  name: Mutated Bloodsucker
+  suffix: Z14
+  components:
+  - type: STMobVariant
+    quality: Rare
+
+- type: entity
+  parent: Z14MobMutantBloodsucker
+  id: Z14STMobMutantBloodsuckerLegendary
+  categories: [ Zona14 ]
+  name: Singular Bloodsucker
+  suffix: Z14
+  components:
+  - type: STMobVariant
+    quality: Legendary

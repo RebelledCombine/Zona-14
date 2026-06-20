@@ -1,0 +1,184 @@
+- type: entity
+  abstract: true
+  parent: Z14HelmetBase
+  id: Z14STClothingHeadHelmetCombatT3Base
+  categories: [ Zona14 ]
+  name: T3 Combat Helmet Base
+  components:
+  - type: HideLayerClothing
+    slots:
+    - Hair
+
+- type: entity
+  parent: Z14STClothingHeadHelmetCombatT3Base
+  id: Z14ClothingHeadAssaultHelmet
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Zenith helmet
+  description: Zenit combat helmet, class 3.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/assault_helm.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/assault_helm.rsi
+
+- type: entity
+  parent: Z14STClothingHeadHelmetCombatT3Base
+  id: Z14ClothingHeadAssaultHelmetUN
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: UN Zenith helmet
+  description: Zenit combat helmet, class 3, peacekeeper colors.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/un_head.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/un_head.rsi
+
+- type: entity
+  parent: Z14STClothingHeadHelmetCombatT3Base
+  id: Z14ClothingHeadAssaultHelmetDeserter
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Zenith-L helmet
+  description: Helmet fully covering the owner's head except the face, goggles welded to the helmet — don't try to remove them!
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/helm_legat_deserter.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/helm_legat_deserter.rsi
+
+- type: entity
+  parent: Z14STClothingHeadHelmetCombatT3Base
+  id: Z14ClothingHeadAssaultHelmetMilitary
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Military Zenith Helmet
+  description: Zenit combat helmet, class 3, green.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/assault_helm_military.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/assault_helm_military.rsi
+
+- type: entity
+  parent: Z14STClothingHeadHelmetCombatT3Base
+  id: Z14ClothingHeadAssaultHelmetBandit
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Bandit Zenith Helmet
+  description: Zenit combat helmet, class 3.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/assault_helm_bandit.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/assault_helm_bandit.rsi
+
+- type: entity
+  parent: Z14STClothingHeadHelmetCombatT3Base
+  id: Z14ClothingHeadAssaultHelmetDolg
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Duty Zenith Helmet
+  description: Zenit combat helmet, class 3.
+  components:
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Clothing/hats/assault_helm_dolg.rsi
+  - type: Clothing
+    sprite: _Stalker_EN/Objects/Clothing/hats/assault_helm_dolg.rsi
+
+- type: entity
+  parent: Z14STClothingHeadHelmetCombatT3Base
+  id: Z14ClothingHeadAssaultHelmetMerc
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Mercenary Zenith helmet
+  description: Zenit combat helmet, class 3.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/assault_helm_merc.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/assault_helm_merc.rsi
+
+- type: entity
+  parent: Z14STClothingHeadHelmetCombatT3Base
+  id: Z14ClothingHeadAssaultHelmetSeraZastup
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: helmet “Zastupnik”
+  description: Zenit combat helmet, class 3, with stripes.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/Head/Sera_/assault_helm_sera.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/Head/Sera_/assault_helm_sera.rsi
+
+- type: entity
+  parent: Z14STClothingHeadHelmetCombatT3Base
+  id: Z14ClothingHeadAssaultHelmetLimaSeraZastup
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: helmet “Zastupnik”
+  description: Zenit combat helmet, class 3, gray with stripes.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/Head/Sera_/assault_helm_serasera.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/Head/Sera_/assault_helm_serasera.rsi
+
+- type: entity
+  parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
+  id: Z14ClothingHeadArmorSkyWalkerHelm
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: '"SFERA S-10" exo-helmet'
+  description: A helmet with decent combat stats. Thanks to the built-in gas mask, it boasts good radiation protection. Other characteristics, particularly anomaly resistance, are quite poor.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/skywalker_helmet.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/skywalker_helmet.rsi
+  - type: PointLight
+    color: red
+    enabled: false
+    radius: 6
+    energy: 2
+  - type: Craftable
+  - type: STWeight
+    self: 1
+  - type: HideLayerClothing
+    slots:
+    - Hair
+    - Snout
+  - type: BreathMask
+  - type: IngestionBlocker
+  - type: IdentityBlocker
+  - type: Tag
+    tags:
+        - BlockMask
+
+- type: entity
+  parent: Z14STClothingHeadHelmetCombatT3Base
+  id: Z14ClothingHeadAssaultHelmetZavet
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: '"Zenit" helmet of Zavet'
+  description: Zenit combat helmet, class 3.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/Head/Zavet.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/Head/Zavet.rsi
+
+- type: entity
+  parent: Z14STClothingHeadHelmetCombatT3Base
+  id: Z14ClothingHeadAssaultHelmetFreedom
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: '"Zenit" helmet of Freedom'
+  description: Zenit combat helmet, class 3.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/freedom_zenit.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/freedom_zenit.rsi

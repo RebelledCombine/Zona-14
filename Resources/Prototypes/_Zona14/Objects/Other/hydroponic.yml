@@ -1,0 +1,253 @@
+- type: entity
+  parent: ClothingBackpackDuffelGreenStalker
+  id: Z14ClothingBackpackDuffelGreenStalkerHydroponic
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Botanical Kit
+  description: The set contains everything you need to start your botanist journey.
+  components:
+    - type: StorageFill
+      contents:
+        - id: Beaker
+          amount: 2
+        - id: Syringe
+          amount: 3
+        - id: BookHydroStalker
+        - id: StalkerGrinder
+        - id: HandLabeler
+
+- type: entity
+  name: Botanical Kit
+  id: Z14SoilStalker
+  categories: [ Zona14 ]
+  suffix: Z14
+  parent: hydroponicsSoil
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Clickable
+  - type: InteractionOutline
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.45,-0.45,0.45,0.1"
+        density: 190
+        hard: false
+        mask:
+        - FullTileMask
+        layer:
+        - FullTileMask
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 30
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+  - type: Sprite
+    sprite: Structures/Hydroponics/misc.rsi
+    state: soil
+    noRot: true
+  - type: PlantHolder
+    drawWarnings: true
+  - type: SolutionContainerManager
+    solutions:
+      soil:
+        maxVol: 200
+  - type: RefillableSolution
+    solution: soil
+    maxRefill: 50
+  - type: Transform
+    anchored: true
+  - type: Reactive
+    reactions:
+    - reagents: [Water]
+      methods: [Touch, Ingestion, Injection]
+      effects:
+      - !type:AddReagentToSolution
+        reagent: Water
+        solution: soil
+  - type: Appearance
+  - type: PlantHolderVisuals
+
+- type: entity
+  name: soil
+  parent: FoodBakingBase
+  id: Z14ManureStalker
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: Organic fertilizer used to improve soil fertility and promote plant growth, in a special case used immediately to create good soil.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - terrible
+  - type: Craftable
+  - type: Sprite
+    state: badrecipe
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 2
+        - ReagentId: GastroToxin
+          Quantity: 8
+        - ReagentId: RobustHarvest
+          Quantity: 10
+
+- type: entity
+  name: manure
+  parent: BaseItem
+  id: Z14HydroponicsToolScytheStalker
+  categories: [ Zona14 ]
+  description: Sharp and curved blade on a long fibermetal handle, this tool makes it easy to reap what you sow.
+  suffix: Z14
+  components:
+  - type: Sharp
+  - type: Sprite
+    sprite: Objects/Tools/Hydroponics/scythe.rsi
+    state: icon
+  - type: MeleeWeapon
+    wideAnimationRotation: 135
+    damage:
+      types:
+        Slash: 20
+        Piercing: 5
+  - type: Item
+    size: Normal
+  - type: Clothing
+    sprite: Objects/Tools/Hydroponics/scythe.rsi
+    slots:
+    - back
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape: !type:PhysShapeCircle
+          radius: 0.2
+        density: 5
+        mask:
+        - ItemMask
+        restitution: 0.3
+        friction: 0.2
+  - type: EmbeddableProjectile
+    sound: /Audio/Weapons/star_hit.ogg
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Slash: 15
+        Piercing: 35
+  - type: StaminaDamageOnCollide
+    damage: 25
+  - type: StaminaDamageOnEmbed
+    damage: 40
+  - type: RepositoryItem
+    categoryName: Tools
+
+- type: entity
+  name: scythe
+  parent: BaseItem
+  id: Z14HatchetStalker
+  categories: [ Zona14 ]
+  description: Hatchet, you can cut down trees.
+  suffix: Z14
+  components:
+  - type: Tag
+    tags:
+    - BotanyHatchet
+  - type: Sharp
+  - type: Sprite
+    sprite: Objects/Tools/Hydroponics/hatchet.rsi
+    state: icon
+  - type: MeleeWeapon
+    wideAnimationRotation: 135
+    swingLeft: true
+    damage:
+      types:
+        Slash: 8
+        Piercing: 6
+  - type: Item
+    sprite: Objects/Tools/Hydroponics/hatchet.rsi
+  - type: Craftable
+  - type: RepositoryItem
+    categoryName: Tools
+
+- type: entity
+  name: hatchet
+  parent: BaseItem
+  suffix: Z14
+  id: Z14HydroponicsToolMiniHoeStalker
+  categories: [ Zona14 ]
+  description: It is used to remove weeds.
+  components:
+  - type: Tag
+    tags:
+    - Hoe
+    - BotanyHoe
+  - type: Craftable
+  - type: Sprite
+    sprite: Objects/Tools/Hydroponics/hoe.rsi
+    state: icon
+  - type: MeleeWeapon
+    wideAnimationRotation: 135
+    swingLeft: true
+    damage:
+      types:
+        Slash: 5
+        Piercing: 3
+  - type: Item
+    sprite: Objects/Tools/Hydroponics/hoe.rsi
+  - type: RepositoryItem
+    categoryName: Tools
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape: !type:PhysShapeCircle
+          radius: 0.2
+        density: 5
+        mask:
+        - ItemMask
+        restitution: 0.3
+        friction: 0.2
+  - type: EmbeddableProjectile
+    sound: /Audio/Weapons/star_hit.ogg
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Slash: 3
+        Piercing: 12
+  - type: StaminaDamageOnCollide
+    damage: 20
+  - type: StaminaDamageOnEmbed
+    damage: 5
+
+- type: entity
+  name: small hoe
+  parent: BaseItem
+  suffix: Z14
+  id: Z14HydroponicsToolClippersStalker
+  categories: [ Zona14 ]
+  description: A tool used to take samples from plants, or extract seeds from a plant.
+  components:
+  - type: Tag
+    tags:
+    - PlantSampleTaker
+  - type: Sprite
+    sprite: Objects/Tools/Hydroponics/clippers.rsi
+    state: icon
+  - type: MeleeWeapon
+    wideAnimationRotation: 90
+    damage:
+      types:
+        Slash: 5
+  - type: Item
+    sprite: Objects/Tools/Hydroponics/clippers.rsi
+    storedRotation: -90

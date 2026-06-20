@@ -1,0 +1,53 @@
+- type: entity
+  abstract: true
+  parent: Z14HelmetBase
+  id: Z14STClothingHeadHelmetCombatT1Base
+  categories: [ Zona14 ]
+  name: T1 Combat Helmet Base
+- type: entity
+  parent: Z14STClothingHeadHelmetCombatT1Base
+  id: Z14ClothingHeadHelmetSH68
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: SH-68
+  description: A helmet specifically designed for protection against piercing attacks.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/sh68.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/sh68.rsi
+  - type: HideLayerClothing
+    slots:
+    - Hair
+
+- type: entity
+  parent: Z14STClothingHeadHelmetCombatT1Base
+  id: Z14ClothingHeadHelmetSH68Band
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: SH-68 Adidas
+  description: A classic old-school helmet repainted in bandit colors. Armor class 1.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/band_sh68.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/band_sh68.rsi
+  - type: HideLayerClothing
+    slots:
+    - Hair
+
+- type: entity
+  parent: Z14STClothingHeadHelmetCombatT1Base
+  id: Z14ClothingHeadHelmetSH6Renegate
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Scorpion SH-68
+  description: A helmet designed for protection against piercing attacks. Armor class 1.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/sh68_rene.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/sh68_rene.rsi
+  - type: HideLayerClothing
+    slots:
+    - Hair

@@ -1,0 +1,16 @@
+- type: entity
+  parent: Z14ClothingOuterArmorPSZ9D
+  id: Z14STClothingOuterArmorHeavyM
+  categories: [ Zona14 ]
+  name: armored coveralls
+  suffix: Z14
+  description: A very gangster suit
+  components:
+  - type: STWeight
+    self: 5
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/merc_armor_2.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/merc_armor_2.rsi
+  - type: GrantsArtifactSlots
+    slots: 4 # Stalker-Changes | Number of artifact slots this armor grants

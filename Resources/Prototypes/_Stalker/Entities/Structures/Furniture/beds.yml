@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: Bed
   id: STMBedBase
-  name: кровать
+  name: bed
   abstract: true
-  description: Старая, но всё ещё удобная кровать.
+  description: Old but still comfortable bed.
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Furniture/beds.rsi

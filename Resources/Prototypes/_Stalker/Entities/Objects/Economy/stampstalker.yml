@@ -1,5 +1,6 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
-  name: печать военного
+  name: military stamp
   parent: RubberStampBase
   id: RubberStampArmy
   suffix: DO NOT MAP
@@ -13,7 +14,7 @@
     state: stamp-centcom
 
 - type: entity
-  name: печать ученого
+  name: scientist stamp
   parent: RubberStampBase
   id: RubberStampScience
   suffix: DO NOT MAP
@@ -27,7 +28,7 @@
     state: stamp-psychologist
 
 - type: entity
-  name: печать ООН
+  name: UN stamp
   parent: RubberStampBase
   id: RubberStampUN
   suffix: DO NOT MAP
@@ -41,14 +42,14 @@
     state: stamp-cap
 
 - type: entity
-  name: печать полевого Командира
+  name: field commander stamp
   parent: RubberStampBase
   id: RubberStampHeadMerc
-  description: Печать полевого командира "Группа Арес"
+  description: Ares Group Field Commander Seal
   suffix: DO NOT MAP
   components:
   - type: Stamp
-    stampedName: "Полевой Командир"
+    stampedName: "Field Commander" # Zona14: Полевой Командир
     stampedColor: "#1e547d"
     stampState: "paper_stamp-cap"
   - type: Sprite
@@ -56,14 +57,14 @@
     state: stamp-cap
 
 - type: entity
-  name: печать наёмника
+  name: mercenary stamp
   parent: RubberStampBase
   id: RubberStampMerc
-  description: Печать наёмника, используется для контрактов "Группа Арес"
+  description: Mercenary Seal, used for Ares Group contracts
   suffix: DO NOT MAP
   components:
   - type: Stamp
-    stampedName: "Наёмник"
+    stampedName: "Mercenary" # Zona14: Наёмник
     stampedColor: "#1b6196"
     stampState: "paper_stamp-cap"
   - type: Sprite
@@ -71,14 +72,14 @@
     state: stamp-cap
 
 - type: entity
-  name: печать заказчика
+  name: client stamp
   parent: RubberStampBase
   id: RubberStampCustomer
-  description: Печать заказчика, используется для контрактов "Группа Арес"
+  description: Customer Seal, used for "Ares Group" contracts
   suffix: DO NOT MAP
   components:
   - type: Stamp
-    stampedName: "Заказчик"
+    stampedName: "Client" # Zona14: Заказчик
     stampedColor: "#23731a"
     stampState: "paper_stamp-centcom"
   - type: Sprite
@@ -86,14 +87,14 @@
     state: stamp-centcom
 
 - type: entity
-  name: печать агента
+  name: agent stamp
   parent: RubberStampBase
   id: RubberStampAgentMerc
-  description: Печать агента "Группа Арес"
+  description: Ares Group Agent Seal
   suffix: DO NOT MAP
   components:
   - type: Stamp
-    stampedName: "Агент"
+    stampedName: "Agent" # Zona14: Агент
     stampedColor: "#58b6fc"
     stampState: "paper_stamp-hop"
   - type: Sprite

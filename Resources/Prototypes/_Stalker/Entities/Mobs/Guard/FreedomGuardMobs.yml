@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
-  name: Свободовец
-  suffix: Stalker, Т6, NPC
+  name: Freedom member
+  suffix: Stalker, T6, NPC # Zona14: Stalker, Т6, NPC
   parent: MobHostileGuardPatrool
   id: MobFreedomGuardPatrool
-  description: Свободовец-патрульный.
+  description: A Freedom patrolman.
   components:
   - type: NpcFactionMember
     factions:
@@ -33,11 +34,11 @@
         acts: ["Destruction"]
 
 - type: entity
-  name: Охранник свободы
-  suffix: Stalker, Т6, NPC
+  name: Freedom guard
+  suffix: Stalker, T6, NPC # Zona14: Stalker, Т6, NPC
   parent: MobStalkerBaseGuard
   id: MobFreedomSecurityLow
-  description: Охранник свободы.
+  description: Security guard for Freedom.
   components:
   - type: NpcFactionMember
     factions:
@@ -81,11 +82,11 @@
         Brute: -1
 
 - type: entity
-  name: Охранник свободы
-  suffix: Stalker, Т6, NPC
+  name: Freedom guard
+  suffix: Stalker, T6, NPC # Zona14: Stalker, Т6, NPC
   parent: MobStalkerBaseGuard
   id: MobFreedomSecurityTop
-  description: Охранник свободы.
+  description: Security guard for Freedom.
   components:
   - type: NpcFactionMember
     factions:

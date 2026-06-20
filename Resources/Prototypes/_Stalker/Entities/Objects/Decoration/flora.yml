@@ -1,5 +1,6 @@
-#НОВАЯ 64x64!!!!!!
-#Береза
+# Zona14: translated Russian names/descriptions to English
+# Zona14: НОВАЯ 64x64!!!!!!
+# Zona14: Береза
 - type: entity
   parent: STBaseTree
   id: BirchTreeNew01
@@ -85,13 +86,13 @@
     state: birch05
   - type: Craftable
 
-#ЕЛЬ!!! (НИХУЯ ОБНОВА БЛЯТЬ!!!!)
+# Zona14: ЕЛЬ!!! (НИХУЯ ОБНОВА БЛЯТЬ!!!!)
 
 - type: entity
   parent: BaseStalkerTree
   id: SpruceTreeNew01
   suffix: ST, Mapping
-  name: Ель
+  name: Spruce
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Flora/spruce.rsi
@@ -102,7 +103,7 @@
   parent: BaseStalkerTree
   id: SpruceTreeNew02
   suffix: ST, Mapping
-  name: Ель
+  name: "{ ent-SpruceTreeNew01 }"
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Flora/spruce.rsi
@@ -113,7 +114,7 @@
   parent: BaseStalkerTree
   id: SpruceTreeNew03
   suffix: ST, Mapping
-  name: Ель
+  name: "{ ent-SpruceTreeNew01 }"
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Flora/flora_tree_new.rsi
@@ -124,20 +125,20 @@
   parent: BaseStalkerTree
   id: SpruceTreeNew04
   suffix: ST, Mapping
-  name: Ель
+  name: "{ ent-SpruceTreeNew01 }"
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Flora/flora_tree_new.rsi
     state: spruce04
   - type: Craftable
 
-#СОСНА!!
+# Zona14: СОСНА!!
 
 - type: entity
   parent: BaseStalkerTree
   id: PineTreeNew01
   suffix: ST, Mapping
-  name: Сосна
+  name: Pine
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Flora/pine.rsi
@@ -173,7 +174,7 @@
   parent: PineTreeNew01
   id: PineTreeNew02
   suffix: ST, Mapping
-  name: Сосна
+  name: "{ ent-PineTreeNew01 }"
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Flora/pine.rsi
@@ -184,7 +185,7 @@
   parent: PineTreeNew01
   id: PineTreeNew03
   suffix: ST, Mapping
-  name: Сосна
+  name: "{ ent-PineTreeNew01 }"
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Flora/flora_tree_new.rsi
@@ -195,7 +196,7 @@
   parent: PineTreeNew01
   id: PineTreeNew04
   suffix: ST, Mapping
-  name: Сосна
+  name: "{ ent-PineTreeNew01 }"
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Flora/flora_tree_new.rsi
@@ -206,7 +207,7 @@
   parent: PineTreeNew01
   id: PineTreeNew05
   suffix: ST, Mapping
-  name: Сосна
+  name: "{ ent-PineTreeNew01 }"
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Flora/flora_tree_new.rsi
@@ -217,20 +218,20 @@
   parent: PineTreeNew01
   id: PineTreeNew06
   suffix: ST, Mapping
-  name: Сосна
+  name: "{ ent-PineTreeNew01 }"
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Flora/flora_tree_new.rsi
     state: pine06
   - type: Craftable
 
-#ДУБ!!!!! АААААААААА!!!!
+# Zona14: ДУБ!!!!! АААААААААА!!!!
 
 - type: entity
   parent: BaseStalkerTree
   id: OakTreeNew01
   suffix: ST, Mapping
-  name: Сосна
+  name: Oak
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Flora/oak.rsi
@@ -241,7 +242,7 @@
   parent: BaseStalkerTree
   id: OakTreeNew02
   suffix: ST, Mapping
-  name: Сосна
+  name: "{ ent-OakTreeNew01 }"
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Flora/oak.rsi
@@ -252,7 +253,7 @@
   parent: BaseStalkerTree
   id: OakTreeNew03
   suffix: ST, Mapping
-  name: Сосна
+  name: pine tree
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Flora/oak.rsi
@@ -261,13 +262,13 @@
 
 ###################################
 
-# БЕРЁЗЫ
+# Zona14: БЕРЁЗЫ
 
 - type: entity
   parent: BirchTreeNew01
   id: BaseStalkerTree
   suffix: ST, Mapping
-  name: берёза
+  name: "{ ent-BirchTreeNew01 }"
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Flora/flora_trees.rsi
@@ -278,7 +279,7 @@
   parent: BirchTreeNew01
   id: BirchTree01
   suffix: ST, Mapping
-  name: берёза
+  name: "{ ent-BirchTreeNew01 }"
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Flora/flora_trees.rsi
@@ -289,7 +290,7 @@
   parent: BirchTreeNew01
   id: BirchTree02
   suffix: ST, Mapping
-  name: берёза
+  name: "{ ent-BirchTreeNew01 }"
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Flora/flora_trees.rsi
@@ -300,7 +301,7 @@
   parent: BirchTreeNew01
   id: BirchTree03
   suffix: ST, Mapping
-  name: берёза
+  name: "{ ent-BirchTreeNew01 }"
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Flora/flora_trees.rsi
@@ -311,20 +312,20 @@
   parent: BirchTreeNew01
   id: BirchTree04
   suffix: ST, Mapping
-  name: берёза
+  name: "{ ent-BirchTreeNew01 }"
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Flora/flora_trees.rsi
     state: birch04
   - type: Craftable
 
-# СОСНА
+# Zona14: СОСНА
 
 - type: entity
   parent: PineTreeNew01
   id: PineTree01
   suffix: ST, Mapping
-  name: сосна
+  name: Pine
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Flora/flora_trees.rsi
@@ -335,20 +336,20 @@
   parent: PineTreeNew01
   id: PineTree02
   suffix: ST, Mapping
-  name: сосна
+  name: "{ ent-PineTree01 }"
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Flora/flora_trees.rsi
     state: pine02
   - type: Craftable
 
-# ТОПОЛЬ
+# Zona14: ТОПОЛЬ
 
 - type: entity
   parent: BaseStalkerTree
   id: PoplarTree01
   suffix: ST, Mapping
-  name: тополь
+  name: Poplar
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Flora/flora_trees.rsi
@@ -359,20 +360,20 @@
   parent: BaseStalkerTree
   id: PoplarTree02
   suffix: ST, Mapping
-  name: тополь
+  name: "{ ent-PoplarTree01 }"
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Flora/flora_trees.rsi
     state: poplar02
   - type: Craftable
 
-# КУСТЫ
+# Zona14: КУСТЫ
 
 - type: entity
   id: Bush01
   suffix: ST, Mapping
-  name: куст
-  description: Древовидное растение, разветвляющееся от самого основания.
+  name: bush
+  description: A tree-like plant that branches from the very base.
   components:
   - type: Clickable
   - type: Physics
@@ -424,8 +425,8 @@
   parent: Bush01
   id: Bush02
   suffix: ST, Mapping
-  name: куст
-  description: Древовидное растение, разветвляющееся от самого основания.
+  name: "{ ent-Bush01 }"
+  description: "{ ent-Bush01.desc }"
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Flora/flora.rsi
@@ -435,8 +436,8 @@
   parent: Bush01
   id: Bush03
   suffix: ST, Mapping
-  name: куст
-  description: Древовидное растение, разветвляющееся от самого основания.
+  name: "{ ent-Bush01 }"
+  description: "{ ent-Bush01.desc }"
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Flora/flora.rsi
@@ -446,8 +447,8 @@
   parent: Bush01
   id: Bush04
   suffix: ST, Mapping
-  name: куст
-  description: Древовидное растение, разветвляющееся от самого основания.
+  name: "{ ent-Bush01 }"
+  description: "{ ent-Bush01.desc }"
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Flora/flora.rsi
@@ -457,8 +458,8 @@
   parent: Bush01
   id: Bush05
   suffix: ST, Mapping
-  name: куст
-  description: Древовидное растение, разветвляющееся от самого основания.
+  name: "{ ent-Bush01 }"
+  description: "{ ent-Bush01.desc }"
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Flora/flora.rsi
@@ -468,8 +469,8 @@
   parent: Bush01
   id: Bush06
   suffix: ST, Mapping
-  name: куст
-  description: Древовидное растение, разветвляющееся от самого основания.
+  name: "{ ent-Bush01 }"
+  description: "{ ent-Bush01.desc }"
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Flora/flora.rsi
@@ -479,8 +480,8 @@
   parent: Bush01
   id: Bush07
   suffix: ST, Mapping
-  name: большой куст
-  description: Древовидное растение, разветвляющееся от самого основания.
+  name: large bush
+  description: A tree-like plant that branches from its very base.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Flora/radar_bush.rsi
@@ -490,33 +491,33 @@
   parent: Bush01
   id: Bush08
   suffix: ST, Mapping
-  name: большой куст
-  description: Древовидное растение, разветвляющееся от самого основания.
+  name: large bush
+  description: A tree-like plant that branches from its very base.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Flora/radar_bush.rsi
     state: largebush02
 
-# КУВШИНКИ
+# Zona14: КУВШИНКИ
 
 - type: entity
   parent: Bush01
   id: kuvshinki
   suffix: ST, Mapping
-  name: кувшинки
-  description: Многолетнее водяное растение. У нее нет стебля. Листья крупные плавающие по воде.
+  name: water lilies
+  description: Perennial aquatic plant. It does not have a stem. The leaves are large, floating on water.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Flora/flora.rsi
     state: kuvshinki
 
-# ПНИ
+# Zona14: ПНИ
 
 - type: entity
   parent: Bush01
   id: peny
   suffix: ST, Mapping
-  name: пень
+  name: stump
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Flora/flora.rsi
@@ -526,31 +527,31 @@
   parent: Bush01
   id: penm
   suffix: ST, Mapping
-  name: пень
+  name: "{ ent-peny }"
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Flora/flora.rsi
     state: penm
 
-# КАМЫШЬ
+# Zona14: КАМЫШЬ
 
 - type: entity
   parent: Bush01
   id: kamysh
   suffix: ST, Mapping
-  name: камыш
-  description: Заселяет берега водоемов, мелководья, болота, канавы, заболоченные луга и различные сырые болотистые местности. Нередко образует сплошные заросли.
+  name: reeds
+  description: Inhabits shores of water bodies, shallow waters, swamps, ditches, wetland meadows, and various wet marshlands. It often forms continuous thickets.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Flora/flora.rsi
     state: kamysh
 
-# НОВЫЕ ДЕРЕВЬЯ
+# Zona14: НОВЫЕ ДЕРЕВЬЯ
 
 - type: entity
   parent: BaseTree
   id: FloraTreeRed01
-  name: Дерево
+  name: Tree
   suffix: ST, Mapping
   components:
   - type: Sprite
@@ -586,7 +587,7 @@
 - type: entity
   parent: FloraTreeRed01
   id: FloraTreeRed02
-  name: Дерево
+  name: "{ ent-FloraTreeRed01 }"
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Flora/flora_trees_red/flora_trees.rsi
@@ -597,7 +598,7 @@
 - type: entity
   parent: FloraTreeRed01
   id: FloraTreeRed03
-  name: Дерево
+  name: "{ ent-FloraTreeRed01 }"
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Flora/flora_trees_red/flora_trees.rsi
@@ -608,7 +609,7 @@
 - type: entity
   parent: FloraTreeRed01
   id: FloraTreeRed04
-  name: Дерево
+  name: "{ ent-FloraTreeRed01 }"
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Flora/flora_trees_red/flora_trees.rsi
@@ -619,7 +620,7 @@
 - type: entity
   parent: FloraTreeRed01
   id: FloraTreeRed05
-  name: Дерево
+  name: "{ ent-FloraTreeRed01 }"
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Flora/flora_trees_red/flora_trees.rsi
@@ -630,7 +631,7 @@
 - type: entity
   parent: FloraTreeRed01
   id: FloraTreeRed06
-  name: Дерево
+  name: "{ ent-FloraTreeRed01 }"
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Flora/flora_trees_red/flora_trees.rsi
@@ -641,7 +642,7 @@
 - type: entity
   parent: FloraTreeRed01
   id: FloraTreeLargeRed01
-  name: Дерево
+  name: "{ ent-FloraTreeRed01 }"
   suffix: ST, Mapping
   components:
   - type: Sprite
@@ -652,7 +653,7 @@
 - type: entity
   parent: FloraTreeLargeRed01
   id: FloraTreeLargeRed02
-  name: Дерево
+  name: "{ ent-FloraTreeRed01 }"
   suffix: ST, Mapping
   components:
   - type: Sprite
@@ -664,7 +665,7 @@
 - type: entity
   parent: FloraTreeLargeRed01
   id: FloraTreeDryLarge
-  name: Мёртвое дерево
+  name: dead tree
   suffix: ST, Mapping
   components:
   - type: Sprite
@@ -675,7 +676,7 @@
 - type: entity
   parent: FloraTreeLargeRed01
   id: FloraTreeDryLarge2
-  name: Мёртвое дерево
+  name: dead tree
   suffix: ST, Mapping
   components:
   - type: Sprite
@@ -686,7 +687,7 @@
 - type: entity
   parent: FloraTreeLargeRed01
   id: FloraTreeDryLarge3
-  name: Мёртвое дерево
+  name: dead tree
   suffix: ST, Mapping
   components:
   - type: Sprite
@@ -697,7 +698,7 @@
 - type: entity
   parent: FloraTreeLargeRed01
   id: FloraTreeDry
-  name: Мёртвое дерево
+  name: dead tree
   suffix: ST, Mapping
   components:
   - type: Sprite
@@ -708,7 +709,7 @@
 - type: entity
   parent: FloraTreeLargeRed01
   id: FloraTreeDry2
-  name: Мёртвое дерево
+  name: dead tree
   suffix: ST, Mapping
   components:
   - type: Sprite
@@ -719,7 +720,7 @@
 - type: entity
   parent: FloraTreeLargeRed01
   id: FloraTreeDry3
-  name: Мёртвое дерево
+  name: dead tree
   suffix: ST, Mapping
   components:
   - type: Sprite
@@ -730,7 +731,7 @@
 - type: entity
   parent: FloraTreeLargeRed01
   id: FloraTreeLargeRed03
-  name: Дерево
+  name: "{ ent-FloraTreeRed01 }"
   suffix: ST, Mapping
   components:
   - type: Sprite
@@ -742,7 +743,7 @@
 - type: entity
   parent: FloraTreeLargeRed01
   id: FloraTreeLargeRed04
-  name: Дерево
+  name: "{ ent-FloraTreeRed01 }"
   suffix: ST, Mapping
   components:
   - type: Sprite
@@ -754,7 +755,7 @@
 - type: entity
   parent: FloraTreeLargeRed01
   id: FloraTreeLargeRed05
-  name: Дерево
+  name: "{ ent-FloraTreeRed01 }"
   suffix: ST, Mapping
   components:
   - type: Sprite
@@ -766,7 +767,7 @@
 - type: entity
   parent: FloraTreeLargeRed01
   id: FloraTreeLargeRed06
-  name: Дерево
+  name: "{ ent-FloraTreeRed01 }"
   suffix: ST, Mapping
   components:
   - type: Sprite
@@ -777,7 +778,7 @@
 - type: entity
   parent: BaseTreeLarge
   id: FloraTreeWillow01
-  name: Дерево
+  name: "{ ent-FloraTreeRed01 }"
   suffix: ST, Mapping
   components:
   - type: Sprite
@@ -810,7 +811,7 @@
             min: 1
             max: 2
 
-# КАМНИ
+# Zona14: КАМНИ
 # moved to _Stalker
 - type: entity
   id: STBaseRock
@@ -869,12 +870,12 @@
   - type: Sprite
     state: rocksolid03
 
-# ДУБ small
+# Zona14: ДУБ small
 # moved to _Stalker
 
 - type: entity
   id: STBaseTree
-  description: Yep, it's a tree.
+  description: "Yep, it's a tree."
   parent: BaseTree
   suffix: ST, Mapping
   categories: [ HideSpawnMenu ]
@@ -1054,14 +1055,14 @@
   - type: Sprite
     state: treelarge06
 
-# болотный куст
+# Zona14: болотный куст
 
 - type: entity
   parent: Bush01
   id: Bigbush1
   suffix: ST, Mapping
-  name: куст
-  description: Древовидное растение, разветвляющееся от самого основания.
+  name: bush
+  description: A large bush with thick leaves.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Flora/flora_swampbush.rsi
@@ -1083,8 +1084,8 @@
   parent: Bush01
   id: Bigbush2
   suffix: ST, Mapping
-  name: куст
-  description: Древовидное растение, разветвляющееся от самого основания.
+  name: bush
+  description: A large bush with thick leaves.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Flora/flora_swampbush.rsi
@@ -1107,8 +1108,8 @@
   parent: Bush01
   id: Bigbush3
   suffix: ST, Mapping
-  name: куст
-  description: Древовидное растение, разветвляющееся от самого основания.
+  name: bush
+  description: A large bush with thick leaves.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Flora/flora_swampbush.rsi

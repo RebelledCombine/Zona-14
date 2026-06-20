@@ -1,7 +1,8 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: STBaseBlueprint
   id: ClothingHeadHelmetPSZ9DBlueprint
-  name: Рецепт шлема «ПСЗ-9д»
+  name: PSZ-9d Helmet Recipe
   components:
     - type: STBlueprint
       blueprint: newrecipeClothingHeadHelmetPSZ9D
@@ -9,7 +10,7 @@
 - type: entity
   parent: STBaseBlueprint
   id: STClothingHeadHelmetFASTNeutralBlackBlueprint
-  name: Рецепт черного шлема «FAST»
+  name: Black FAST Helmet Recipe
   components:
     - type: STBlueprint
       blueprint: newrecipeSTClothingHeadHelmetFASTNeutralBlack

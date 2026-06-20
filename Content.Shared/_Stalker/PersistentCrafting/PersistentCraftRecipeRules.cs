@@ -13,7 +13,7 @@ public static class PersistentCraftRecipeRules
         PersistentCraftRecipePrototype recipe,
         PersistentCraftIngredient ingredient)
     {
-        // Параметр recipe зарезервирован для будущих модификаторов (например, скидки от навыков).
+        // The recipe parameter is reserved for future modifiers (e.g. skill-based discounts). // Zona14: translated comment
         // ReSharper disable once UnusedParameter.Global
         return Math.Max(1, ingredient.Amount);
     }

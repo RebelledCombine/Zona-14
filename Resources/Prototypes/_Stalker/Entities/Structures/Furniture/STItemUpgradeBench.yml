@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: BaseStructure
   id: STItemUpgradeBench
-  name: верстак модификаций
-  description: Верстак для модификации и ремонта оружия и снаряжения.
+  name: modification workbench
+  description: A workbench for modifying and repairing weapons and equipment.
   suffix: ST, TEST
 
   components:

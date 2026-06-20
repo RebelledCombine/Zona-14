@@ -18,21 +18,21 @@
           prob: 0.1
         - id: STCraftBasicThreadKitT1
           prob: 0.1
-        - id: STBrutepack
+        - id: Z14STBrutepack
           prob: 0.2
-        - id: STGauze
+        - id: Z14STGauze
           prob: 0.2
-        - id: STOintment
+        - id: Z14STOintment
           prob: 0.2
-        - id: STOintment
+        - id: Z14STOintment
           prob: 0.2
-        - id: STOintment
+        - id: Z14STOintment
           prob: 0.2
         - id: Tourniquet
           prob: 0.03
-        - id: antiradpill
+        - id: Z14antiradpill
           prob: 0.03
-        - id: MedkitAI2
+        - id: Z14MedkitAI2
           prob: 0.05
         - id: STClothingOuterJacketStalkerUpgradeBlueprint
           prob: 0.05
@@ -66,13 +66,13 @@
           prob: 0.03
         - id: ST751UNBoxCinkBlueprint
           prob: 0.02
-        - id: MedkitMilitary
+        - id: Z14MedkitMilitary
           prob: 0.02
-        - id: MedkitScience
+        - id: Z14MedkitScience
           prob: 0.005
         - id: GeigerCounter
           prob: 0.015
-        - id: BaseRadio
+        - id: Z14BaseRadio
           prob: 0.015
         - id: HandheldGPSBasic
           prob: 0.015
@@ -80,7 +80,7 @@
           prob: 0.01
         - id: STFlashlightSeclite
           prob: 0.015
-        - id: STHeadLight
+        - id: Z14STHeadLight
           prob: 0.015
         - id: PowerCellHyper
           prob: 0.03
@@ -111,11 +111,11 @@
           prob: 0.05
         - id: STCookingSyrnyky
           prob: 0.05
-        - id: STDrinkJarDirtyWater
+        - id: Z14STDrinkJarDirtyWater
           prob: 0.1
-        - id: STDrinkJarBlood
+        - id: Z14STDrinkJarBlood
           prob: 0.01
-        - id: STDrinkJar
+        - id: Z14STDrinkJar
           prob: 0.03
           
 - type: entity
@@ -128,7 +128,7 @@
       sprite: _Stalker/Objects/Other/Boxes/black_crate.rsi
       state: icon
     - type: SpawnOnDespawn
-      prototype: STCache1T1
+      prototype: Z14STCache1T1
 
 - type: entity
   parent: [ STCacheStorageFillT1, STBaseCache]
@@ -140,7 +140,7 @@
       sprite: _Stalker/Objects/Other/Boxes/blue_crate.rsi
       state: icon
     - type: SpawnOnDespawn
-      prototype: STCache2T1
+      prototype: Z14STCache2T1
 
 - type: entity
   parent: [ STCacheStorageFillT1, STBaseCache]
@@ -152,4 +152,4 @@
       sprite: _Stalker/Objects/Other/Boxes/green_crate.rsi
       state: icon
     - type: SpawnOnDespawn
-      prototype: STCache3T1
+      prototype: Z14STCache3T1

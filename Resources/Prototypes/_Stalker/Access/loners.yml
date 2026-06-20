@@ -1,3 +1,4 @@
+# Zona14: translated Russian names/descriptions to English
 - type: accessLevel
   id: Stalker
   name: id-card-access-level-stalker
@@ -17,7 +18,7 @@
 
 - type: accessLevel
   id: Guide
-  name: Проводник
+  name: Guide
 
 - type: accessGroup
   id: Guide
@@ -26,7 +27,7 @@
 
 - type: accessLevel
   id: Atom
-  name: Атом
+  name: Atom
 
 - type: accessGroup
   id: Atom

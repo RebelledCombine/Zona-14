@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 # Base
 - type: entity
   abstract: true
   parent: STClothingCapeBase
   id: STClothingCapeT1Base
-  name: база плаща T1
+  name: T1 raincoat base
   suffix: ST, T1
   components:
   - type: STWeight
@@ -18,13 +19,13 @@
         Piercing: 0.95
         Heat: 0.95
 
-# Дождевик
+# Zona14: Дождевик
 - type: entity
   parent: STClothingCapeT1Base
   id: ClothingOuterCoatDoshdevik
-  name: дождевик
+  name: raincoat
   suffix: ST, T1
-  description: плотный плащ с защищающий вас от дождя и некоторых химикатов.
+  description: a thick raincoat that protects you from rain and certain chemicals.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/cloak/doshdevik.rsi
@@ -47,8 +48,8 @@
 - type: entity
   parent: STClothingHeadHatBase
   id: ClothingHeadHelmetDoshdevikCoat
-  name: капюшон дождевика
-  description: Покрывает вашу голову
+  name: raincoat hood
+  description: Covers your head
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/cloak/doshdevik.rsi
@@ -90,12 +91,12 @@
   - type: Clothing
     sprite: _Stalker/Objects/Clothing/hats/kkk_hood.rsi
 
-# Пахана
+# Zona14: Пахана
 - type: entity
   parent: STClothingCapeT1Base
   id: ClothingOuterCoatPahan
-  name: плащ пахана
-  description: плотный плащ перекрашенный в чёрный цвет.
+  name: "ploughman's cloak"
+  description: thick raincoat repainted black.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/cloak/coat_pahan.rsi
@@ -112,9 +113,9 @@
 - type: entity
   parent: STClothingHeadHatBase
   id: ClothingHeadHelmetPahanCoat
-  name: капюшон плаща пахана
+  name: "hood of the pahan's cloak"
   categories: [ HideSpawnMenu ]
-  description: Покрывает вашу голову
+  description: Covers your head
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/hats/coat_hat_pahan.rsi
@@ -128,8 +129,8 @@
 - type: entity
   parent: STClothingCapeT1Base
   id: ClothingOuterCoatPoisk
-  name: плащ исследователя
-  description: Этот плащ не просто украшение, он символизирует стремление к приключениям и жажду открытий.
+  name: "explorer's cloak"
+  description: This cape is not just a piece of jewelry, it symbolizes the desire for adventure and the thirst for discovery.
   components:
   - type: UserInterface
     interfaces:
@@ -150,20 +151,20 @@
   parent: STClothingHeadHatBase
   id: ClothingHeadHatHoodCoatPoisk
   categories: [ HideSpawnMenu ]
-  name: капюшон
+  name: hood
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/Head/Hats/coat_hat_poisk.rsi
   - type: Clothing
     sprite: _Stalker/Objects/Clothing/Head/Hats/coat_hat_poisk.rsi
 
-# Паломники
+# Zona14: Паломники
 - type: entity
   parent: STClothingCapeT1Base
   id: ClothingNeckCloakCassock
-  name: ряса паломника
-  description: сделана из грубой ткани серой ткани, помогает отречься от мирского
-  suffix: ST, паломники
+  name: "pilgrim's cassock"
+  description: made of coarse gray cloth, helps to renounce worldly things
+  suffix: ST, pilgrims # Zona14: ST, паломники
   components:
     - type: Sprite
       sprite: _Stalker/Objects/Clothing/cloak/cassock.rsi
@@ -177,8 +178,8 @@
 - type: entity
   parent: STClothingHeadHatBase
   id: ClothingHeadCassock
-  name: капюшон рясы
-  description: капюшон из грубой ткани от монашеской рясы
+  name: cassock hood
+  description: "hood made of coarse fabric from a monk's robe"
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
@@ -186,13 +187,13 @@
   - type: Clothing
     sprite: _Stalker/Objects/Clothing/Head/Hats/cassock_hood.rsi
 
-# СКИНЫ
+# Zona14: СКИНЫ
 
 - type: entity
   parent: STClothingCapeBase
   id: ClothingTorsoTurtlenecksCamouflage
-  name: рваный плащ выживших
-  description: Странный плащ, рваный в хлам. Кустарно перекрашен в какой-то камуфляж.
+  name: "Tattered Survivors' Cloak"
+  description: A strange cloak torn into trash. Handicraft repainted in some kind of camouflage.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/cloak/camouflage.rsi
@@ -207,9 +208,9 @@
 - type: entity
   parent: STClothingHeadHatBase
   id: ClothingHeadHelmetSeraRuined
-  name: капюшон
+  name: hood
   suffix: ST, PodpivAss_Lex
-  description: Драный капюшон странного цвета.
+  description: Tattered hood of a strange color.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/hats/sh68_camouflage.rsi
@@ -222,8 +223,8 @@
 - type: entity
   parent: STClothingCapeBase
   id: ClothingCapeDeserters
-  name: плащ дезертиров
-  description: Кусок ткани в пиксельном тёмно-сером камуфляже, при желании можно носить как плащ
+  name: Deserter Cloak
+  description: Piece of cloth in pixelated dark gray camouflage, can be worn as a raincoat if desired
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/cloak/desertercape.rsi
@@ -233,9 +234,9 @@
 - type: entity
   parent: ClothingOuterCoatDoshdevik
   id: STClothingCapeT1Serafim
-  name: плащ серафимов
-  suffix: ST, T1, Скин
-  description: Выполнен в тёмно-зелёной цветовой гамме
+  name: Seraphim Cloak
+  suffix: ST, T1, Skin # Zona14: ST, T1, Скин
+  description: Dark green
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/cloak/Sera_/cape_serafim.rsi
@@ -248,8 +249,8 @@
 - type: entity
   parent: STClothingHeadHatBase
   id: STClothingHeadHelmetSerafim
-  name: капюшон плаща серафимов
-  description: Покрывает вашу голову
+  name: Seraphim Cloak Hood
+  description: Covers your head
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
@@ -263,8 +264,8 @@
 - type: entity
   parent: STClothingCapeBase
   id: ClothingCapeRenegat
-  name: плащ ренегатов
-  description: Кусок ткани в пиксельном какашном камуфляже, при желании можно носить как плащ
+  name: Rogue Cloak
+  description: Piece of cloth in pixelated poop camouflage, can be worn as a raincoat if desired
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/cloak/renegatcape.rsi
@@ -274,9 +275,9 @@
 - type: entity
   parent: ClothingOuterCoatDoshdevik
   id: STClothingOldRoadCape
-  name: Старый дорожный плащ
-  suffix: ST, T1, Скин
-  description: Поношеный плащ, защищающий от пыли и ветра.
+  name: old road cloak
+  suffix: ST, T1, Skin # Zona14: ST, T1, Скин
+  description: A worn-out cloak that protects against dust and wind.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/cloak/oldroad.rsi
@@ -289,8 +290,8 @@
 - type: entity
   parent: STClothingHeadHatBase
   id: STClothingHeadOldRoadHelmet
-  name: капюшон старого дорожного плаща
-  description: Покрывает вашу голову
+  name: old road cloak hood
+  description: Covers your head.
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite

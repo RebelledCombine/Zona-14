@@ -1,0 +1,50 @@
+- type: entity
+  name: Bloody Paper
+  parent: Paper
+  id: Z14BloodyPaper
+  categories: [ Zona14 ]
+  description: Shabby paper, covered in blood.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Misc/bloody_paper.rsi
+    layers:
+    - state: bloody_paper
+    - state: paper_words
+      map: ["enum.PaperVisualLayers.Writing"]
+      visible: false
+  - type: PaperVisuals
+    backgroundImagePath: "/Textures/_Stalker/Interface/Paper/paper_background_default.svg.96dpi.png"
+
+- type: entity
+  name: Bloody Paper
+  parent: Paper
+  id: Z14OldPaper
+  categories: [ Zona14 ]
+  description: A tattered piece of paper, about to fall apart.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Misc/old_paper.rsi
+    layers:
+    - state: paper
+    - state: paper_words
+      map: ["enum.PaperVisualLayers.Writing"]
+      visible: false
+  - type: PaperVisuals
+    backgroundImagePath: "/Textures/_Stalker/Interface/Paper/paper_background.svg.96dpi.png"
+
+- type: entity
+  name: Old Paper
+  parent: Paper
+  id: Z14HanzaPassport
+  categories: [ Zona14 ]
+  description: A small leather passport of the Hansa stations, holding information about a person's identity, including that of their friend should they have a split personality.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Misc/hanza_passport.rsi
+    layers:
+    - state: paper
+  - type: PaperVisuals
+    backgroundImagePath: "/Textures/_Stalker/Interface/Paper/paper_background.svg.96dpi.png"

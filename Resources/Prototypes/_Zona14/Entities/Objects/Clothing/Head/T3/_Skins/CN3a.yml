@@ -1,0 +1,21 @@
+- type: entity
+  parent: Z14HelmetBase
+  id: Z14ClothingHeadHelmetCN3a
+  categories: [ Zona14 ]
+  name: CN-3a Helmet
+  suffix: Z14
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/hats/cn3a_helm.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/hats/cn3a_helm.rsi
+    - type: BreathMask
+    - type: IngestionBlocker
+    - type: IdentityBlocker
+    - type: Tag
+      tags:
+        - BlockMask
+        - HidesNose
+    - type: HideLayerClothing
+      slots:
+      - Hair

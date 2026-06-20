@@ -1,0 +1,43 @@
+- type: entity
+  name: candy
+  parent: FoodSnackBase
+  id: Z14FoodSnackCandy
+  categories: [ Zona14 ]
+  description: Sugar in a conveniently consumable form.
+  suffix: Z14
+  components:
+  - type: STWeight
+    self: 0.1
+  - type: Sprite
+    layers:
+      - sprite: _Stalker_EN/Objects/Consumable/Food/candy.rsi
+        state: 1
+        map: [ "enum.DamageStateVisualLayers.Base" ]
+  - type: RandomSprite
+    available:
+      - enum.DamageStateVisualLayers.Base:
+          1: ""
+          2: ""
+          3: ""
+          4: ""
+          5: ""
+          6: ""
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: Sugar
+          Quantity: 1
+
+- type: entity
+  parent: Z14FoodSnackCandy
+  id: Z14FoodSnackCandyPoison
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: Ipecac
+          Quantity: 5

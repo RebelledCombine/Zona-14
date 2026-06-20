@@ -193,7 +193,7 @@
       BoxArtcont: 250 # T1
       ZoneAnomalyDetectorAD1: 250 # T1
       ZoneAnomalyDetectorAD2: 1000 # T2
-      ZoneAnomalyDetectorAD3: 2400 # Т3
+      ZoneAnomalyDetectorAD3: 2400 # Zona14: Т3
       # Detectors
       ZoneArtifactDetectorPulse: 50 # T1
       ZoneArtifactDetectorHunter: 100 # T2
@@ -257,7 +257,7 @@
       FoodTinMRE: 120
       DrinkLemonadehBottleFull: 50
       STFoodMeatSalami: 350
-  - name: shop-category-medicine # 50% скидка от сталкеров
+  - name: shop-category-medicine # Zona14: 50% скидка от сталкеров
     priority: 10
     items:
       # Cheap

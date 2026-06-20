@@ -1,0 +1,39 @@
+- type: entity
+  id: Z14STCartridge739FMJ
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Cartridge (7.62x39) FMJ
+  parent: BaseSTCartridge739
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet739FMJ
+
+- type: entity
+  id: Z14STCartridge739HP
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Cartridge (7.62x39) HP
+  parent: BaseSTCartridge739
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet739HP
+
+- type: entity
+  id: Z14STCartridge739PC
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Cartridge (7.62x39) PS
+  parent: BaseSTCartridge739
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet739PC
+
+- type: entity
+  id: Z14STCartridge739BP
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Cartridge (7.62x39) BP
+  parent: BaseSTCartridge739
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet739BP

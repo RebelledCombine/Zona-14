@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: BaseTree
   id: WiseOak
-  name: мудрый дуб
-  description: Легендарный Мудрый Дуб.
+  name: Wise Oak
+  description: The legendary Wise Oak.
   suffix: ST, Mapping
   components:
   - type: Sprite

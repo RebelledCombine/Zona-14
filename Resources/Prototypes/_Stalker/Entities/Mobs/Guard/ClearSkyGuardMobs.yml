@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
-  name: Охранник чистого неба
-  suffix: Stalker, Т6, NPC
+  name: Clear Sky guard
+  suffix: Stalker, T6, NPC # Zona14: Stalker, Т6, NPC
   parent: MobStalkerBaseGuard
   id: MobClearSkySecurityLow
-  description: Охранник чистого неба.
+  description: Clear Sky guard.
   components:
   - type: NpcFactionMember
     factions:
@@ -47,11 +48,11 @@
         Brute: -1
 
 - type: entity
-  name: Охранник чистого неба
-  suffix: Stalker, Т6, NPC
+  name: Clear Sky guard
+  suffix: Stalker, T6, NPC # Zona14: Stalker, Т6, NPC
   parent: MobStalkerBaseGuard
   id: MobClearSkySecurityTop
-  description: Охранник чистого неба.
+  description: Security guard for Clear Sky.
   components:
   - type: NpcFactionMember
     factions:

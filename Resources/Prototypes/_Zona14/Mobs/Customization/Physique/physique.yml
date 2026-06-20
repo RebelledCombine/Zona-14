@@ -1,0 +1,27 @@
+- type: physique
+  id: Z14Plump
+  name: physique-name-Plump
+
+- type: physique
+  id: Z14Strong
+  name: physique-name-Strong
+
+- type: physique
+  id: Z14Normal
+  name: physique-name-Normal
+
+- type: physique
+  id: Z14Skinny
+  name: physique-name-Skinny
+
+- type: physique
+  id: Z14Frail
+  name: physique-name-Frail
+
+- type: physique
+  id: Z14Muscular
+  name: physique-name-Muscular
+
+- type: physique
+  id: Z14Femboy
+  name: physique-name-Femboy

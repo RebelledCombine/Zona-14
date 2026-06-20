@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 #7.62x39
 
 - type: entity
   id: Bullet739FMJ
-  name: bullet (7.62х39 rifle)
+  name: bullet (7.62x39 rifle)
   parent: STBaseMRBullet
   categories: [ HideSpawnMenu ]
   components:
@@ -18,7 +19,7 @@
 
 - type: entity
   id: Bullet739HP
-  name: bullet (7.62х39 rifle)
+  name: "{ ent-Bullet739FMJ }"
   parent: Bullet739FMJ
   categories: [ HideSpawnMenu ]
   components:
@@ -33,7 +34,7 @@
 
 - type: entity
   id: Bullet739PC
-  name: bullet (7.62х39 rifle)
+  name: "{ ent-Bullet739FMJ }"
   parent: Bullet739FMJ
   categories: [ HideSpawnMenu ]
   components:
@@ -45,7 +46,7 @@
 
 - type: entity
   id: Bullet739BP
-  name: bullet (7.62х39 rifle)
+  name: "{ ent-Bullet739FMJ }"
   parent: Bullet739FMJ
   categories: [ HideSpawnMenu ]
   components:

@@ -1,29 +1,30 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: PaperOffice
   id: NcTradeContractProofRepairPhoto
-  name: "фотокарточка ремонта"
-  description: "Небольшая фотокарточка с отметкой о том, что объект действительно был приведён в рабочее состояние."
+  name: repair photo
+  description: A small photograph with a note confirming that the object was indeed brought to working condition.
   categories: [ HideSpawnMenu ]
 
 - type: entity
   parent: PaperOffice
   id: NcTradeContractProofDeliveryReceipt
-  name: "накладная о доставке"
-  description: "Подтверждение того, что контрактный груз был доставлен в нужную точку и принят на месте."
+  name: delivery receipt
+  description: Confirmation that the contracted cargo was delivered to the required location and accepted on site.
   categories: [ HideSpawnMenu ]
 
 - type: entity
   parent: PaperScrap
   id: NcTradeContractProofGhoulTrophy
-  name: "трофейная метка с мутанта"
-  description: "Окровавленная контрактная метка, снятая с подтверждённой цели."
+  name: trophy tag from a mutant
+  description: A bloody contract tag taken from a confirmed target.
   categories: [ HideSpawnMenu ]
 
 - type: entity
   parent: BaseItem
   id: NcTradeContractProofBoarHoof
-  name: "копыто старого секача"
-  description: "Огромное, покрытое шрамами копыто, снятое с убитого вожака стаи. Отличный трофей и доказательство выполнения контракта."
+  name: "old boar's hoof"
+  description: A huge, scar-covered hoof taken from the slain pack leader. An excellent trophy and proof of a completed contract.
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite

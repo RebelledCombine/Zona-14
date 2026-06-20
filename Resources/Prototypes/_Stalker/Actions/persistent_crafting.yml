@@ -1,7 +1,8 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: ActionOpenPersistentCraftMenu
-  name: Карманный крафт
-  description: Открывает меню отдельного крафта персонажа.
+  name: pocket craft
+  description: "Opens the character's separate crafting menu."
   categories: [ HideSpawnMenu ]
   components:
     - type: Action

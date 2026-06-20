@@ -1,0 +1,13 @@
+- type: entity
+  parent: STClothingCapeBase
+  id: Z14ClothingNeckExoSpeed
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Exoskeleton
+  description: A leg exoskeleton version that allows faster running. Essentially — high-tech stilts.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/cloak/exo_speed.rsi
+  - type: ClothingSpeedModifier
+    walkModifier: 0.9
+    sprintModifier: 1.1

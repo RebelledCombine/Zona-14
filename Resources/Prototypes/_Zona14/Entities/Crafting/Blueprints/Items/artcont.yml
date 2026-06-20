@@ -1,0 +1,9 @@
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14MakeshiftArtContBlueprint
+  name: Makeshift Artifact Container Recipe
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: STBlueprint
+    blueprint: recipeMakeshiftArtifactContainer

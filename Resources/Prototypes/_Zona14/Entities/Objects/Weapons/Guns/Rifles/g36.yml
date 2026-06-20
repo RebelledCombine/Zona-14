@@ -88,7 +88,7 @@
   id: Z14STWeaponRifleG36
   suffix: Z14
   categories: [ Zona14 ]
-  name: HK G-36
+  name: 'HK G-36 "Outlander"'
   description: The embodiment of new trends in Western-made automatic weapons, the principle of operation of the automatic system is based not on a semi-free bolt, but on a short stroke of the gas piston. It must be said that the changes have clearly been beneficial, this assault rifle is a first-class example of a modern weapon - light, reliable and ergonomic.
 
 
@@ -113,7 +113,7 @@
   id: Z14STWeaponRifleG36Covenant
   suffix: Z14
   categories: [ Zona14 ]
-  name: HK G-36 "Prophet"
+  name: 'HK G-36 "Prophet"'
   description: Custom G-36 with Covenant markings. Distinctive rifle of Zone fanatics, repainted in ominous colors. Rumored to be loaded with "blessed" ammunition.
   components:
   - type: Item

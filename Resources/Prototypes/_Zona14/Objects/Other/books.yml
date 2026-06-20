@@ -1,0 +1,87 @@
+- type: entity
+  name: botanical reference
+  parent: BookBase
+  id: Z14BookHydroStalker
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: Botanical Handbook, all plants that contain useful oils are described here.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Misc/books.rsi
+    layers:
+    - state: book_hydroponics_pod_people
+  - type: Paper
+    content: 'Botanical Handbook.
+This handbook describes the properties of oils obtained from plants.
+
+1) Anti-bleeding:
+
+1.1) Barberry - type: Shrub.
+  Properties: Anti-bleeding.
+  One berry contains 10 units of barberry oil.
+
+1.2) Cloudberry - type: Shrub.
+  Properties: Anti-bleeding.
+  One berry contains 10 units of cloudberry oil.
+
+1.3) Eyebright - type: Herb.
+  Properties: Anti-bleeding.
+  One herb contains 10 units of eyebright oil.
+
+2) Anti-brute damage:
+
+2.1) White cinquefoil - type: Herb.
+  Properties: Heals 2.5 brute damage per unit.
+  One herb contains 10 units of cinquefoil oil.
+
+2.2) Sweet flag - type: Herb.
+  Properties: Heals 2.5 brute damage per unit.
+  One herb contains 10 units of sweet flag oil.
+
+2.3) Gooseberry - type: Shrub.
+  Properties: Heals 2.5 brute damage per unit.
+  One berry contains 10 units of gooseberry oil.
+
+3) Anti-radiation:
+
+3.1) Linden - type: Herb.
+  Properties: Heals 1 radiation damage per unit.
+  One herb contains 10 units of linden oil.
+
+3.2) Raspberry - type: Shrub.
+  Properties: Heals 1 radiation damage per unit.
+  One berry contains 10 units of raspberry oil.
+
+4) Anti-burn:
+
+4.1) Cranberry - type: Shrub.
+  Properties: Heals 2.5 burn damage per unit.
+  One berry contains 10 units of cranberry oil.
+
+4.2) Sea buckthorn - type: Shrub.
+  Properties: Heals 2.5 burn damage per unit.
+  One berry contains 10 units of sea buckthorn oil.
+
+5) Anti-poison:
+
+5.1) Spotted orchid - type: Herb.
+  Properties: Heals 2.5 poison damage per unit.
+  One herb contains 10 units of orchid oil.
+
+5.2) Goji - type: Shrub.
+  Properties: Heals 2.5 poison damage per unit.
+  One berry contains 10 units of goji oil.
+
+5.3) Serviceberry - type: Shrub.
+  Properties: Heals 2.5 poison damage per unit.
+  One berry contains 10 units of serviceberry oil.
+
+
+!!PLANTS THAT CONTAIN POISON!!
+
+Daphne, Baneberry, Lily of the Valley
+
+!!PLANTS THAT CONTAIN POISON!!
+
+These oils can be used in chemical reactions to create new medicinal substances.
+All other berries not described here do not contain useful oils.'

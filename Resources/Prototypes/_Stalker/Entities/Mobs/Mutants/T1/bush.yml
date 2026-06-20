@@ -1,7 +1,8 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: BaseMobMutant
   id: MobMutantBush
-  name: куст
+  name: bush
   suffix: ST, T1
   description: Wait, is he moving?
   components:

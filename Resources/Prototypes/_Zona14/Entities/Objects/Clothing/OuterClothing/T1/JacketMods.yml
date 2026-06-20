@@ -1,0 +1,119 @@
+- type: entity
+  parent: Z14ArmorBaseT1PvP
+  id: Z14ClothingOuterArmourJacketBandit
+  categories: [ Zona14 ]
+  name: Bandit Chainmail Jacket
+  description: A standard weak bandit body armor, but with chainmail sewn into the lining. Almost anyone can make one, but few have the patience.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/jacket_bandit.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/jacket_bandit.rsi
+  - type: ToggleableClothing
+    clothingPrototype: Z14ClothingHeadHatHoodJacketBandit
+    slot: head
+  # bandit's bonus
+- type: entity
+  parent: Z14ArmorBaseT1PvP
+  id: Z14ClothingOuterArmourJacketStalker
+  categories: [ Zona14 ]
+  name: Stalker Chainmail Jacket
+  description: A standard stalker jacket, but with chainmail sewn into the lining. Almost anyone can make one, but few have the patience.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/jacket_stalker.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/jacket_stalker.rsi
+  - type: ToggleableClothing
+    clothingPrototype: Z14ClothingHeadHatHoodJacketStalker
+    slot: head
+- type: entity
+  parent: Z14ArmorBaseT1PvP
+  id: Z14ClothingOuterArmourJacketStalkerWhite
+  categories: [ Zona14 ]
+  name: Stalker Chainmail Jacket
+  description: A standard white stalker jacket, but with chainmail sewn into the lining. Almost anyone can make one, but few have the patience.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/jacket_stalker_white.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/jacket_stalker_white.rsi
+  - type: ToggleableClothing
+    clothingPrototype: Z14ClothingHeadHatHoodJacketStalkerWhite
+    slot: head
+- type: entity
+  parent: Z14ArmorBaseT1PvP
+  id: Z14ClothingOuterJacketStalkerUpgrade
+  categories: [ Zona14 ]
+  name: Improved Stalker Jacket
+  description: A stalker jacket with slightly improved physical and anomaly protection. Unfortunately, the fabric doesn't look very durable.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/jacket_stalker.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/jacket_stalker.rsi
+  - type: ToggleableClothing
+    clothingPrototype: Z14ClothingHeadHatHoodJacketStalker
+    slot: head
+
+  - type: Craftable
+
+- type: entity
+  parent: Z14ArmorBaseT1PvP
+  id: Z14ClothingOuterAnomalyStalkerJacket
+  categories: [ Zona14 ]
+  name: Anomalous Stalker Jacket
+  description: Standard beginner stalker clothing. Won't save from bullets or anomalies, but comfortable to wear.
+  suffix: Z14
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/outerClothing/jacket_stalker.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/outerClothing/jacket_stalker.rsi
+    - type: ToggleableClothing
+      clothingPrototype: Z14ClothingHeadHatHoodJacketStalker
+      slot: head
+    - type: PersonalDamage
+      staminaDamage: -1
+      interval: 1
+
+- type: entity
+  parent: Z14ArmorBaseT1PvP
+  id: Z14ClothingOuterJacketStalkerUpgradeWhite
+  categories: [ Zona14 ]
+  name: Improved Stalker Jacket
+  description: A white stalker jacket with slightly improved physical and anomaly protection. Unfortunately, the fabric doesn't look very durable.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/jacket_stalker_white.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/jacket_stalker_white.rsi
+  - type: ToggleableClothing
+    clothingPrototype: Z14ClothingHeadHatHoodJacketStalker
+    slot: head
+
+  - type: Craftable
+
+- type: entity
+  parent: Z14ArmorBaseT1PvP
+  id: Z14ClothingOuterAnomalyStalkerJacketWhite
+  categories: [ Zona14 ]
+  name: Anomalous Stalker Jacket
+  description: Standard white beginner stalker clothing. Won't save from bullets or anomalies, but comfortable to wear.
+  suffix: Z14
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/outerClothing/jacket_stalker_white.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/outerClothing/jacket_stalker_white.rsi
+    - type: ToggleableClothing
+      clothingPrototype: Z14ClothingHeadHatHoodJacketStalker
+      slot: head
+    - type: PersonalDamage
+      staminaDamage: -1
+      interval: 1

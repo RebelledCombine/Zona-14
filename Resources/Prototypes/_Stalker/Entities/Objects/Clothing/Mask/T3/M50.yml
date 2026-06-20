@@ -1,10 +1,11 @@
+# Zona14: translated Russian names/descriptions to English
 
 - type: entity
   parent: STClothingMaskGas
   id: ClothingMaskM50
   suffix: ST, T3, Rad
-  name: противогаз M50
-  description: Фильтрующее средство индивидуальной защиты органов дыхания, глаз и кожи лица человека, разработанное и производящееся в Соединённых Штатах Америки. Защищает от токсинов.
+  name: M50 Gas Mask
+  description: Filtering personal protective equipment for human respiration, eyes, and facial skin, designed and manufactured in the United States of America. Protects against radiation.
   components:
   - type: Tag
     tags:

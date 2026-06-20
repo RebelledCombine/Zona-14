@@ -1,0 +1,51 @@
+
+- type: entity
+  parent: Z14ArmorBaseT1PvP
+  id: Z14ClothingOuterArmorReinger
+  name: Ranger Battle Armor
+  suffix: Z14
+  description: Reliable Type III armor with good all-around protection, includes a ranger helmet with additional protection.
+  categories: [ HideSpawnMenu, Zona14 ]
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/armor_reinger.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/armor_reinger.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetReinger
+    slot: head
+  - type: PersonalDamage
+    staminaDamage: -3
+    interval: 1
+    damage:
+      types:
+        Blunt: -0.1
+        Slash: -0.1
+        Piercing: -0.1
+
+- type: entity
+  parent: ClothingHeadHardsuitBase
+  id: Z14ClothingHeadHelmetReinger
+  name: ranger's helmet
+  suffix: Z14
+  categories: [ HideSpawnMenu, Zona14 ]
+  components:
+  - type: STWeight
+    self: 1
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/helm_reinger.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/helm_reinger.rsi
+  - type: BreathMask
+  - type: IngestionBlocker
+  - type: IdentityBlocker
+  - type: Tag
+    tags:
+      - BlockMask
+  - type: PressureProtection
+    highPressureMultiplier: 0.1
+    lowPressureMultiplier: 1000
+  - type: HideLayerClothing
+    slots:
+    - Hair
+    - Snout

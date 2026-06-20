@@ -1,11 +1,12 @@
+# Zona14: translated Russian names/descriptions to English
 
-# Плащ Севы
+# Zona14: Плащ Севы
 - type: entity
   parent: STClothingCapeBase
   id: STClothingCapeArmorChainmailSeva
-  name: кольчужный плащ Сева
+  name: "Seva's Chainmail Cloak"
   suffix: ST, T4
-  description: "Разработанный Киевским НИИ комплект, дополненный кольчужным плащом для дополнительной защиты."
+  description: "A closed-loop suit developed by the Kiev Research Institute, designed specifically for work in the Zone, complete with a chainmail cloak for additional protection."
   components:
   - type: Craftable
   - type: STWeight
@@ -28,8 +29,8 @@
 - type: entity
   parent: STClothingCapeArmorChainmailSeva
   id: STClothingCapeFreedomChain
-  name: кольчужный плащ свободы
-  description: Кольчуга совмещённая с маскировочной сетью в камуфляже свободы.
+  name: "Freedom's Chainmail Cloak"
+  description: Chain mail combined with a camouflage net in the camouflage of Freedom.
   suffix: ST, T4
   components:
   - type: Sprite
@@ -47,8 +48,8 @@
 - type: entity
   parent: STClothingHeadHatBase
   id: ClothingHatChainFreedom
-  name: капюшон
-  description: Капюшон кольчуги свободы.
+  name: hood
+  description: Freedom Chainmail hood
   suffix: ST
   components:
   - type: Sprite

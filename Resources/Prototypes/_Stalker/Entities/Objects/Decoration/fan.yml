@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: FanStalker
-  name: вентилятор
+  name: fan
   suffix: ST, Mapping
-  description: Механическое устройство для перемещения воздуха или другого газа (воздушный насос) с создаваемым полным напором. Удивительно, как он еще работает...
+  description: "A mechanical device for moving air or other gas (air pump) with a total head generated. It's amazing how it still works..."
   placement:
     mode: PlaceFree
   components:

@@ -1,6 +1,7 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
-  name: кукла ООНовец (переименуй меня)
-  suffix: Stalker, пешка с нашивкой
+  name: UN doll (rename me)
+  suffix: Stalker, pawn with patch # Zona14: Stalker, пешка с нашивкой
   parent: MobHuman
   id: MobStalkerUN
   components:
@@ -14,8 +15,8 @@
       prototypes: [ UNGear ]
 
 - type: entity
-  name: кукла ОКСОП (переименуй меня)
-  suffix: Stalker, пешка с нашивкой
+  name: OKSOP doll (rename me)
+  suffix: Stalker, pawn with patch # Zona14: Stalker, пешка с нашивкой
   parent: MobHuman
   id: MobStalkerMilitary
   components:
@@ -31,8 +32,8 @@
       prototypes: [ MilitaryGear ]
 
 - type: entity
-  name: кукла ОКСОП глава (переименуй меня)
-  suffix: Stalker, пешка с нашивкой
+  name: OKSOP leader doll (rename me)
+  suffix: Stalker, pawn with patch # Zona14: Stalker, пешка с нашивкой
   parent: MobHuman
   id: MobStalkerMilitaryHead
   components:
@@ -50,8 +51,8 @@
       prototypes: [ MilitaryGearHead ]
 
 - type: entity
-  name: кукла Ополчение (переименуй меня)
-  suffix: Stalker, пешка с нашивкой
+  name: Militia doll (rename me)
+  suffix: Stalker, pawn with patch # Zona14: Stalker, пешка с нашивкой
   parent: MobHuman
   id: MobStalkerMilitia
   components:
@@ -68,8 +69,8 @@
       prototypes: [ MilitiaGear ]
 
 - type: entity
-  name: кукла Командир Ополчение (переименуй меня)
-  suffix: Stalker, пешка с нашивкой
+  name: Militia Commander doll (rename me)
+  suffix: Stalker, pawn with patch # Zona14: Stalker, пешка с нашивкой
   parent: MobHuman
   id: MobStalkerMilitiaCommander
   components:
@@ -86,8 +87,8 @@
       prototypes: [ MilitiaCommanderGear ]
 
 - type: entity
-  name: кукла последний день (переименуй меня)
-  suffix: Stalker, пешка с нашивкой
+  name: last day doll (rename me)
+  suffix: Stalker, pawn with patch # Zona14: Stalker, пешка с нашивкой
   parent: MobHuman
   id: MobStalkerLastDay
   components:
@@ -98,8 +99,8 @@
       randomizeName: false
 
 - type: entity
-  name: кукла ренегат (переименуй меня)
-  suffix: Stalker, пешка с нашивкой
+  name: renegade doll (rename me)
+  suffix: Stalker, pawn with patch # Zona14: Stalker, пешка с нашивкой
   parent: MobHuman
   id: MobStalkerRene
   components:
@@ -113,8 +114,8 @@
       prototypes: [ ReneGear ]
 
 - type: entity
-  name: кукла свободовец (переименуй меня)
-  suffix: Stalker, пешка с нашивкой
+  name: Freedom doll (rename me)
+  suffix: Stalker, pawn with patch # Zona14: Stalker, пешка с нашивкой
   parent: MobHuman
   id: MobStalkerFreeadom
   components:
@@ -128,8 +129,8 @@
       prototypes: [ FreedomGear ]
 
 - type: entity
-  name: кукла Долговец (переименуй меня)
-  suffix: Stalker, пешка с нашивкой
+  name: Duty doll (rename me)
+  suffix: Stalker, pawn with patch # Zona14: Stalker, пешка с нашивкой
   parent: MobHuman
   id: MobStalkerDolg
   components:
@@ -143,8 +144,8 @@
       prototypes: [ DolgGear ]
 
 - type: entity
-  name: кукла учёный (переименуй меня)
-  suffix: Stalker, пешка с нашивкой
+  name: scientist doll (rename me)
+  suffix: Stalker, pawn with patch # Zona14: Stalker, пешка с нашивкой
   parent: MobHuman
   id: MobStalkerSci
   components:
@@ -161,8 +162,8 @@
       - Scientists
 
 - type: entity
-  name: кукла декан (переименуй меня)
-  suffix: Stalker, пешка с нашивкой
+  name: dean doll (rename me)
+  suffix: Stalker, pawn with patch # Zona14: Stalker, пешка с нашивкой
   parent: MobHuman
   id: MobStalkerSci_decan
   components:
@@ -179,8 +180,8 @@
       - Sci
 
 - type: entity
-  name: кукла ректор (переименуй меня)
-  suffix: Stalker, пешка с нашивкой
+  name: rector doll (rename me)
+  suffix: Stalker, pawn with patch # Zona14: Stalker, пешка с нашивкой
   parent: MobHuman
   id: MobStalkerSci_rector
   components:
@@ -197,8 +198,8 @@
       - Sci
 
 - type: entity
-  name: кукла бандит (переименуй меня)
-  suffix: Stalker, пешка с нашивкой
+  name: bandit doll (rename me)
+  suffix: Stalker, pawn with patch # Zona14: Stalker, пешка с нашивкой
   parent: MobHuman
   id: MobStalkerbandit
   components:
@@ -217,8 +218,8 @@
       prototypes: [ BandGear ]
 
 - type: entity
-  name: кукла жаба (переименуй меня)
-  suffix: Stalker, пешка с нашивкой
+  name: frog doll (rename me)
+  suffix: Stalker, pawn with patch # Zona14: Stalker, пешка с нашивкой
   parent: MobHuman
   id: MobStalkerToad
   components:
@@ -237,8 +238,8 @@
       prototypes: [ BandGear ]
 
 - type: entity
-  name: кукла заветовец (переименуй меня)
-  suffix: Stalker, пешка с нашивкой
+  name: covenant doll (rename me)
+  suffix: Stalker, pawn with patch # Zona14: Stalker, пешка с нашивкой
   parent: MobHuman
   id: MobStalkerZavet
   components:
@@ -252,8 +253,8 @@
       prototypes: [ StalkerZavetGear ]
 
 - type: entity
-  name: кукла греховец (переименуй меня)
-  suffix: Stalker, пешка с нашивкой
+  name: sinner doll (rename me)
+  suffix: Stalker, pawn with patch # Zona14: Stalker, пешка с нашивкой
   parent: MobHuman
   id: MobStalkerGreh
   components:
@@ -267,8 +268,8 @@
       prototypes: [ StalkerGrehGear ]
 
 - type: entity
-  name: кукла член Чистого Неба (переименуй меня)
-  suffix: Stalker, пешка с нашивкой
+  name: Clear Sky member doll (rename me)
+  suffix: Stalker, pawn with patch # Zona14: Stalker, пешка с нашивкой
   parent: MobHuman
   id: MobStalkerCS
   components:
@@ -283,8 +284,8 @@
       prototypes: [ StalkerClearSkyGear ]
 
 - type: entity
-  name: кукла член проекта (переименуй меня)
-  suffix: Stalker, пешка с нашивкой
+  name: project member doll (rename me)
+  suffix: Stalker, pawn with patch # Zona14: Stalker, пешка с нашивкой
   parent: MobHuman
   id: MobStalkerProject
   components:
@@ -302,8 +303,8 @@
     prototypes: [ ProjectPawnGear ]
 
 - type: entity
-  name: кукла циркач (переименуй меня)
-  suffix: Stalker, пешка с нашивкой
+  name: circus doll (rename me)
+  suffix: Stalker, pawn with patch # Zona14: Stalker, пешка с нашивкой
   parent: MobHuman
   id: MobStalkerClown
   components:
@@ -315,8 +316,8 @@
       bandIcon: clowns
 
 - type: entity
-  name: кукла наёмник (переименуй меня)
-  suffix: Stalker, пешка с нашивкой
+  name: mercenary doll (rename me)
+  suffix: Stalker, pawn with patch # Zona14: Stalker, пешка с нашивкой
   parent: MobHuman
   id: MobStalkerMerc
   components:
@@ -331,8 +332,8 @@
       prototypes: [ StalkerMercenaryGear ]
 
 - type: entity
-  name: кукла аномалист (переименуй меня)
-  suffix: Stalker, пешка с нашивкой
+  name: anomalist doll (rename me)
+  suffix: Stalker, pawn with patch # Zona14: Stalker, пешка с нашивкой
   parent: MobHuman
   id: MobStalkerAnomalist
   components:
@@ -346,8 +347,8 @@
       prototypes: [ AnomalistGear ]
 
 - type: entity
-  name: кукла серафим (переименуй меня)
-  suffix: Stalker, пешка с нашивкой
+  name: Seraphim doll (rename me)
+  suffix: Stalker, pawn with patch # Zona14: Stalker, пешка с нашивкой
   parent: MobHuman
   id: MobStalkerSeraphim
   components:
@@ -362,7 +363,7 @@
 
 # Stalker
 - type: entity
-  name: Меченый
+  name: Marked One
   parent: MobHuman
   id: STMobStalker
   components:
@@ -384,7 +385,7 @@
       prototypes: [ StalkerGear ]
 
 - type: entity
-  name: Меченый T4
+  name: Marked One T4
   parent: MobHuman
   id: STMobStalkerT4
   components:
@@ -406,8 +407,8 @@
       prototypes: [ StalkerGearT4 ]
 
 - type: entity
-  name: кукла Сталкера (переименуй меня)
-  suffix: Stalker, пешка с нашивкой
+  name: Stalker doll (rename me)
+  suffix: Stalker, pawn with patch # Zona14: Stalker, пешка с нашивкой
   parent: MobHuman
   id: MobStalkerStalker
   components:
@@ -421,8 +422,8 @@
       prototypes: [ StalkerGear ]
 
 - type: entity
-  name: кукла Монолита (переименуй меня)
-  suffix: Stalker, пешка с нашивкой
+  name: Monolith doll (rename me)
+  suffix: Stalker, pawn with patch # Zona14: Stalker, пешка с нашивкой
   parent: MobHuman
   id: MobStalkerMonolith
   components:
@@ -444,8 +445,8 @@
     - type: PersonalDamageBlock
 
 - type: entity
-  name: кукла СБУ (переименуй меня)
-  suffix: Stalker, пешка с нашивкой
+  name: SBU doll (rename me)
+  suffix: Stalker, pawn with patch # Zona14: Stalker, пешка с нашивкой
   parent: MobHuman
   id: MobStalkerSBU
   components:

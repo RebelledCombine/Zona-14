@@ -1,0 +1,188 @@
+- type: entity
+  parent: STClothingBackBase
+  id: Z14ClothingBackpackDuffelCommonStalker
+  categories: [ Zona14 ]
+  name: Army Backpack
+  description: A spacious backpack, usually for hiking, but perfect for the Zone!
+  suffix: Z14
+  components:
+  - type: STWeightInsideReduction
+    reductionFraction: 0.50
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/backpacks/Other/backpack1.rsi
+  - type: Storage #40  cells (can carry 2 assault rifles inside, GP only)
+    grid:
+    - 0,0,4,7
+
+##-------------------------------------------
+
+#pve backpacks (can carry more parts with the same number of cells)
+
+
+- type: entity
+  parent: STClothingBackBase
+  id: Z14ClothingBackpackDuffelMilitaryOlive
+  categories: [ Zona14 ]
+  name: Dark Green Hunting Backpack
+  description: An excellent backpack with extra compartments.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/backpacks/Other/backpackolive.rsi
+  - type: Storage #55 cells 56
+    grid:
+    - 0,0,7,6
+  - type: Tag
+    tags:
+    - STClothingBackpackT4
+    - BlockBack
+  - type: STWeightInsideReduction
+    reductionFraction: 0.50
+
+
+- type: entity
+  parent: STClothingBackBase
+  id: Z14ClothingBackpackDuffelBlackMilitaryTacticStalker
+  categories: [ Zona14 ]
+  name: Black Army Backpack
+  description: Designed for field use, multifunctional and suitable for various situations.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/backpacks/Other/backpackgray.rsi
+  - type: Storage #55 cells 56
+    grid:
+    - 0,0,7,6
+  - type: Tag
+    tags:
+    - STClothingBackpackT4
+    - BlockBack
+  - type: STWeightInsideReduction
+    reductionFraction: 0.50
+
+
+- type: entity
+  parent: STClothingBackBase
+  id: Z14ClothingBackpackDuffelBlackMilitaryTacticStalkerKrava
+  categories: [ Zona14 ]
+  name: 'camouflage bag "Valkyrie"'
+  description: A spacious bag suitable for carrying weapons and equipment.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/backpacks/krava.rsi
+  - type: Storage #55 cells 56
+    grid:
+    - 0,0,7,6
+  - type: Tag
+    tags:
+    - STClothingBackpackT4
+    - BlockBack
+  - type: STWeightInsideReduction
+    reductionFraction: 0.50
+
+
+- type: entity
+  parent: STClothingBackBase
+  id: Z14ClothingBackpackDuffelBlackTacticStalker
+  categories: [ Zona14 ]
+  name: Black Army Tactical Backpack
+  description: Designed for field use, multifunctional and suitable for various situations.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/backpacks/Military_tactic/black.rsi
+  - type: Storage #56 cells
+    grid:
+    - 0,0,7,6
+  - type: Tag
+    tags:
+    - STClothingBackpackT4
+    - BlockBack
+  - type: STWeightInsideReduction
+    reductionFraction: 0.50
+
+
+- type: entity
+  parent: STClothingBackBase
+  id: Z14ClothingBackpackDuffelOliveTacticStalker
+  categories: [ Zona14 ]
+  name: Olive Army Tactical Backpack
+  description: Designed for field use, multifunctional and suitable for various situations.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/backpacks/Military_tactic/olive.rsi
+  - type: Storage #56 cells
+    grid:
+    - 0,0,7,6
+  - type: Tag
+    tags:
+    - STClothingBackpackT4
+    - BlockBack
+  - type: STWeightInsideReduction
+    reductionFraction: 0.50
+
+# Tier - 5
+
+
+- type: entity
+  parent: STClothingBackBase
+  id: Z14ClothingBackpackDuffelSuperStalker
+  categories: [ Zona14 ]
+  name: Professional Green Backpack
+  description: A spacious backpack, usually for hiking, but perfect for the Zone!
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/backpacks/backpack-green.rsi
+  - type: Storage
+    grid:
+    - 0,0,7,7 #66 cells 64 managed
+  - type: Tag
+    tags:
+    - STClothingBackpackT5
+    - BlockBack
+  - type: STWeightInsideReduction
+    reductionFraction: 0.50
+
+
+- type: entity
+  parent: STClothingBackBase
+  id: Z14ClothingBackpackDuffelSuperStalkerGray
+  categories: [ Zona14 ]
+  name: Professional Grey Backpack
+  description: A spacious backpack, usually for hiking, but perfect for the Zone!
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/backpacks/backpack-gray.rsi
+  - type: Storage
+    grid:
+    - 0,0,7,7 #66 cells 64 managed
+  - type: Tag
+    tags:
+    - STClothingBackpackT5
+    - BlockBack
+  - type: STWeightInsideReduction
+    reductionFraction: 0.50
+# Tier - 6
+
+
+- type: entity
+  parent: STClothingBackBase
+  id: Z14ClothingBackpackDuffelRareStalker
+  categories: [ Zona14 ]
+  name: roomy backpack
+  description: A spacious backpack, usually for hiking, but perfect for the Zone!
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/backpacks/Other/hoarder.rsi
+  - type: Storage
+    grid:
+    - 0,0,8,7 #72 Cells
+  - type: STWeightInsideReduction
+    reductionFraction: 0.50
+# Anomalous
+

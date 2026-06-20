@@ -1,0 +1,64 @@
+- type: entity
+  parent: GrenadeVOGbase
+  id: Z14GrenadeVOG25
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: CartridgeAmmo
+    proto: BulletGrenadeVOG25
+  - type: Sprite
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Explosives/vog25.rsi
+    layers:
+    - state: vog25
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+
+
+- type: entity
+  parent: GrenadeVOGbase
+  id: Z14GrenadeVOG25P
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: CartridgeAmmo
+    proto: BulletGrenadeVOG25P
+  - type: Sprite
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Explosives/vog25.rsi
+    layers:
+    - state: vog25p
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+
+
+- type: entity
+  parent: GrenadeVOGbase
+  id: Z14GrenadeVOG25gvozd
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: CartridgeAmmo
+    proto: BulletGrenadeVOG25Gvozd
+  - type: Sprite
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Explosives/vog25.rsi
+    layers:
+    - state: vog-gvozd
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+
+
+- type: entity
+  parent: GrenadeVOGbase
+  id: Z14GrenadeVOG25smoke
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: CartridgeAmmo
+    proto: BulletGrenadeVDG40
+  - type: Sprite
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Explosives/vog25.rsi
+    layers:
+    - state: vog-smoke
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+
+

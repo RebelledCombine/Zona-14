@@ -1,5 +1,6 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
-  name: izlom (1) (10%) 30м
+  name: izlom (1) (10%) 30m
   id: STTriggerIzlom11030
   parent: STBaseTrigger111030
   suffix: ST, T4, Trigger
@@ -11,7 +12,7 @@
     - STMobMutantIzlom
 
 - type: entity
-  name: izlom (1) (25%) 30м
+  name: izlom (1) (25%) 30m
   id: STTriggerIzlom12530
   parent: STBaseTrigger112530
   suffix: ST, T4, Trigger
@@ -23,7 +24,7 @@
     - STMobMutantIzlom
 
 - type: entity
-  name: izlom (1) (100%) 30м
+  name: izlom (1) (100%) 30m
   id: STTriggerIzlom110030
   parent: STBaseTrigger1110030
   suffix: ST, T4, Trigger

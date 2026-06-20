@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 
 ##################### .45 ACP #############################
 
 - type: entity
   id: BaseSTSpeedLoader45ACP
-  name: спидлоадер (.45 ACP)
+  name: Speedloader (.45 ACP)
   suffix: Stalker
   parent: BaseItem
   abstract: true
@@ -29,8 +30,8 @@
 - type: entity
   parent: BaseSTSpeedLoader45ACP
   id: STSpeedLoader45ACP
-  categories: [ HideSpawnMenu ] # На будущее и на тесты
-  name: Спидлоадер (.45 ACP)
+  categories: [ HideSpawnMenu ] # Zona14: На будущее и на тесты
+  name: Speedloader (.45 ACP)
   suffix: Stalker
   components:
     - type: BallisticAmmoProvider
@@ -51,7 +52,7 @@
 - type: entity
   parent: STSpeedLoader45ACP
   id: STSpeedLoader45ACPEmpty
-  suffix: Stalker, Пустой
+  suffix: Stalker, Empty # Zona14: Stalker, Пустой
   components:
     - type: BallisticAmmoProvider
       proto: null
@@ -59,8 +60,8 @@
 
 - type: entity
   id: BaseTommyGunMag
-  name: магазин ПП Томпсона (40)
-  description: Магазин для "Томми гана". Вместимость пуль 40. Продают пустым.
+  name: "Thompson's SMG Magazine (40)"
+  description: Magazine for "Tommy Gun" using .45ACP. Bullet capacity 40. They sell empty.
   parent: BaseItem
   suffix: Stalker
   components:
@@ -101,8 +102,8 @@
 
 - type: entity
   id: TommyGunDrum
-  name: барабан ПП Томпсона (60)
-  description: Барабан для "Томми гана". Вместимость пуль 60. Продают пустым.
+  name: Thompson SMG drum (60)
+  description: Drum for "Tommy gun" using .45ACP. Bullet capacity 60. They sell empty.
   parent: BaseTommyGunMag
   suffix: Stalker
   components:
@@ -129,8 +130,8 @@
 
 - type: entity
   id: TommyGunDrum2
-  name: барабан ПП Томпсона оригинальной конструкции (60)
-  description: Барабан для "Томми гана". Вместимость пуль 60. Продают пустым.
+  name: original Thompson SMG drum (60)
+  description: "{ ent-TommyGunDrum.desc }"
   parent: BaseTommyGunMag
   suffix: Stalker
   components:
@@ -157,8 +158,8 @@
 
 - type: entity
   id: TommyGunBigDrum
-  name: барабан ПП Томпсона (100)
-  description: Огромный и редкий Барабан для "Томми гана". Вместимость пуль 100. Продают пустым.
+  name: Thompson SMG drum (100)
+  description: A huge and rare Drum for "Tommy Gun" using .45ACP. Bullet capacity 100. They sell empty.
   parent: BaseTommyGunMag
   suffix: Stalker
   components:
@@ -185,8 +186,8 @@
 
 - type: entity
   id: BasePP2000PearlMag
-  name: магазин PP-2000 (10)
-  description: Магазин для PP-2000. Вместимость пуль 10. Продают пустым.
+  name: PP-2000 magazine (10)
+  description: Magazine for the PP-2000. 10-round capacity. Sold empty.
   parent: BaseItem
   suffix: Stalker
   components:
@@ -252,8 +253,8 @@
 
 - type: entity
   id: BasePP2000PearlMag20
-  name: магазин PP-2000 (20)
-  description: Магазин для PP-2000. Вместимость пуль 20. Продают пустым.
+  name: PP-2000 magazine (20)
+  description: Magazine for the PP-2000. 20-round capacity. Sold empty.
   parent: BaseItem
   suffix: Stalker
   components:

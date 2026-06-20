@@ -1,0 +1,155 @@
+- type: entity
+  parent: [ BaseItem, BaseFoldable ]
+  id: Z14BaseMachineAnomalyDestructor
+  categories: [ Zona14 ]
+  name: Scientific Equipment
+  description: Such a complex mechanism that only scientists can use it.
+  suffix: Z14
+  components:
+    - type: Tag
+      tags:
+        - Structure
+    - type: STWeight
+      self: 7.5
+    - type: Item
+      sprite: _Stalker/Objects/Devices/Anomaly/Destructors/pad.rsi
+      size: Huge
+    - type: Sprite
+      noRot: true
+      sprite: _Stalker/Objects/Devices/Anomaly/Destructors/pad.rsi
+      layers:
+        - state: base
+          map: ["unfoldedLayer"]
+        - state: screen
+          map: ["screenUnfoldedLayer"]
+          shader: unshaded
+        - state: icon
+          map: ["foldedLayer"]
+          visible: false
+    - type: Appearance
+    - type: GenericVisualizer
+      visuals:
+        enum.FoldedVisuals.State:
+          foldedLayer:
+            True: {visible: true}
+            False: {visible: false}
+          unfoldedLayer:
+            True: {visible: false}
+            False: {visible: true}
+          screenUnfoldedLayer:
+            True: {visible: false}
+            False: {visible: true}
+    - type: PointLight
+      color: "#33b41f"
+      enabled: true
+      radius: 1.5
+      softness: 5
+
+- type: entity   
+  parent: Z14BaseMachineAnomalyDestructor
+  id: Z14BaseMachineAnomalyDestructorFolded
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+    - type: Foldable
+      folded: true
+
+- type: entity
+  parent: Z14BaseMachineAnomalyDestructor
+  id: Z14BaseMachineAnomalyDestructor1
+  categories: [ Zona14 ]
+  name: Scientific Equipment
+  description: Such a complex mechanism that only scientists can use it.
+  suffix: Z14
+  components: 
+    - type: Item
+      sprite: _Stalker/Objects/Devices/Anomaly/Destructors/pad1.rsi
+      size: Huge
+    - type: Sprite
+      noRot: true
+      sprite: _Stalker/Objects/Devices/Anomaly/Destructors/pad1.rsi
+
+
+- type: entity   
+  parent: Z14BaseMachineAnomalyDestructor1
+  id: Z14BaseMachineAnomalyDestructorFolded1
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+    - type: Foldable
+      folded: true
+
+- type: entity
+  parent: Z14BaseMachineAnomalyDestructor
+  id: Z14BaseMachineAnomalyDestructor2
+  categories: [ Zona14 ]
+  name: Scientific Equipment
+  description: Such a complex mechanism that only scientists can use it.
+  suffix: Z14
+  components: 
+    - type: Item
+      sprite: _Stalker/Objects/Devices/Anomaly/Destructors/pad2.rsi
+      size: Huge
+    - type: Sprite
+      noRot: true
+      sprite: _Stalker/Objects/Devices/Anomaly/Destructors/pad2.rsi
+
+
+- type: entity   
+  parent: Z14BaseMachineAnomalyDestructor2
+  id: Z14BaseMachineAnomalyDestructorFolded2
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+    - type: Foldable
+      folded: true
+
+- type: entity
+  parent: Z14BaseMachineAnomalyDestructor
+  id: Z14BaseMachineAnomalyDestructor3
+  categories: [ Zona14 ]
+  name: Scientific Equipment
+  description: Such a complex mechanism that only scientists can use it.
+  suffix: Z14
+  components: 
+    - type: Item
+      sprite: _Stalker/Objects/Devices/Anomaly/Destructors/pad3.rsi
+      size: Huge
+    - type: Sprite
+      noRot: true
+      sprite: _Stalker/Objects/Devices/Anomaly/Destructors/pad3.rsi
+
+
+- type: entity   
+  parent: Z14BaseMachineAnomalyDestructor3
+  id: Z14BaseMachineAnomalyDestructorFolded3
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+    - type: Foldable
+      folded: true
+
+- type: entity
+  parent: Z14BaseMachineAnomalyDestructor
+  id: Z14BaseMachineAnomalyDestructor4
+  categories: [ Zona14 ]
+  name: Scientific Equipment
+  description: Such a complex mechanism that only scientists can use it.
+  suffix: Z14
+  components: 
+    - type: Item
+      sprite: _Stalker/Objects/Devices/Anomaly/Destructors/pad4.rsi
+      size: Huge
+    - type: Sprite
+      noRot: true
+      sprite: _Stalker/Objects/Devices/Anomaly/Destructors/pad4.rsi
+
+
+- type: entity   
+  parent: Z14BaseMachineAnomalyDestructor4
+  id: Z14BaseMachineAnomalyDestructorFolded4
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+    - type: Foldable
+      folded: true

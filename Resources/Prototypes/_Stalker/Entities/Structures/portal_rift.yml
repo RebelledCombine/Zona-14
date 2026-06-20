@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: BaseFoldable
   id: STPortalRift
-  name: Портал разлома
-  description: Настолько сложный механизм, что только ученые могут использовать его.
+  name: Rift Portal
+  description: Such a complex mechanism that only scientists can use it.
   suffix: Stalker
   components:
     - type: Tag

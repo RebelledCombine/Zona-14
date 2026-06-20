@@ -1,10 +1,11 @@
+# Zona14: translated Russian names/descriptions to English
 
 - type: entity
   parent: STClothingOuterArmorStorageBasic
   id: ClothingOuterArmorReinger
-  name: боевая броня рейнджера
+  name: Ranger Battle Armor
   suffix: ST, T4, Universal
-  description: Надёжная броня III типа, обеспечивающая хорошую защиту практически от всего, в комплект входит шлем рейнджера который также имеет дополнительную защиту.
+  description: Reliable type IV armor that provides good protection against almost anything, the Ranger helmet is included which also has additional protection.
   categories: [ HideSpawnMenu ]
   components:
   - type: STWeight
@@ -67,7 +68,7 @@
 - type: entity
   parent: ClothingHeadHardsuitBase
   id: ClothingHeadHelmetReinger
-  name: шлем рейнджера
+  name: "ranger's helmet"
   suffix: ST, T3
   categories: [ HideSpawnMenu ]
   components:

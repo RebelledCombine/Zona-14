@@ -46,7 +46,7 @@ public abstract class SharedRespawnContainerSystem : EntitySystem
 
     public T GetData<T>(string record, RespawnContainerComponent component)
     {
-        // Джери еблан нельзятак делать, какой нахуй Debug
+        // Don't use Debug assertions like this in production code // Zona14: translated comment
         DebugTools.Assert(component.Data.TryGetValue(record, out _));
         return (T)component.Data[record];
     }

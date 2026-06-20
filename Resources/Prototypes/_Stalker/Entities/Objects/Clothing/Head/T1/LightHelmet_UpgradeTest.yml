@@ -1,5 +1,6 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
-  name: Шлем (тест модификаций)
+  name: Helmet (upgrade test)
   suffix: ST, TEST
   parent: ClothingHeadHelmetBasic
   id: STHelmetUpgradeTest

@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: STClothingOuterArmorStorageBasic
   id: STClothingOuterSlickBlack
-  name: Чёрный бронежилет "Слик"
-  description: Чёрный бронежилет 3 класса защиты.
+  name: Black "Slick" Body Armor
+  description: Bulletproof vest fitted with tier 3 armored plates.
   suffix: ST, T3, PVP
   components:
   - type: Sprite
@@ -30,8 +31,8 @@
 - type: entity
   parent: STClothingOuterSlickBlack
   id: STClothingOuterSlickGreen
-  name: Зелёный бронежилет "Слик"
-  description: Зелёный бронежилет 3 класса защиты.
+  name: Green "Slick" Body Armor
+  description: Bulletproof vest fitted with tier 3 armored plates.
   suffix: ST, T3, PVP
   components:
   - type: Sprite
@@ -42,8 +43,8 @@
 - type: entity
   parent: STClothingOuterSlickBlack
   id: STClothingOuterSlickHaki
-  name: Бронежилет "Слик"
-  description: Бронежилет 3 класса защиты в расцветке хаки.
+  name: '"Slick" Body Armor'
+  description: Bulletproof vest fitted with tier 3 armored plates.
   suffix: ST, T3, PVP
   components:
   - type: Sprite

@@ -193,11 +193,13 @@ public sealed class EmissionEventRuleSystem : StationEventSystem<EmissionEventRu
         _audio.PlayGlobal(sound, Filter.Empty().AddAllPlayers(_playerManager), true, AudioParams.Default.WithVolume(-8f));
     }
 
+    // Zona14: resolve locale key at dispatch time
     private void SendAnnouncement(string message, string sender)
     {
         var filter = Filter.Empty().AddWhere(GameTicker.UserHasJoinedGame);
-        _chatSystem.DispatchFilteredAnnouncement(filter, message, sender: sender, playSound: false, colorOverride: Color.Red);
+        _chatSystem.DispatchFilteredAnnouncement(filter, Loc.GetString(message), sender: sender, playSound: false, colorOverride: Color.Red);
     }
+    // End Zona14
 
     private void SetAmbientLightColor(EmissionEventRuleComponent emissionRuleComponent)
     {

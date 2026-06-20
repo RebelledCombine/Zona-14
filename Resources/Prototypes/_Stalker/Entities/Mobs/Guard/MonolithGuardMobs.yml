@@ -1,5 +1,6 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
-  name: Неизвестный монолитовец
+  name: Unknown Monolith member
   suffix: Stalker, NPC
   parent: MobStalkerBaseGuard
   id: MobMonolithGuardPatroolBase
@@ -67,7 +68,7 @@
         acts: ["Destruction"]
 
 - type: entity
-  name: Неизвестный монолитовец
+  name: Unknown Monolith member
   suffix: Stalker, NPC, T3
   parent: MobMonolithGuardPatroolBase
   id: MobMonolithGuardPatroolMarlyaAKS
@@ -93,7 +94,7 @@
     accuracyMultiplier: 5
 
 - type: entity
-  name: Неизвестный монолитовец
+  name: Unknown Monolith member
   suffix: Stalker, NPC, T3
   parent: MobMonolithGuardPatroolBase
   id: MobMonolithGuardPatroolGas1L85
@@ -119,7 +120,7 @@
     accuracyMultiplier: 5
 
 - type: entity
-  name: Неизвестный монолитовец
+  name: Unknown Monolith member
   suffix: Stalker, NPC, T3
   parent: MobMonolithGuardPatroolBase
   id: MobMonolithGuardPatroolBalaLR300
@@ -148,7 +149,7 @@
     accuracyMultiplier: 5
 
 - type: entity
-  name: Неизвестный монолитовец
+  name: Unknown Monolith member
   suffix: Stalker, NPC, T4
   parent: MobMonolithGuardPatroolBase
   id: MobMonolithGuardPatroolSevaAbakan

@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 
 
 - type: entity
   parent: STBaseBlueprint
   id: STCraftLinenFabricT1Blueprint
-  name: Рецепт Т1 ткани
+  name: T1 Fabric Recipe
   components:
     - type: STBlueprint
       blueprint: recipeSTCraftLinenFabricT1

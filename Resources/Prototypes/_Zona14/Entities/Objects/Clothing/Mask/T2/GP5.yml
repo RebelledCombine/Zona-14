@@ -1,0 +1,32 @@
+
+- type: entity
+  parent: Z14GasMaskBase
+  id: Z14ClothingMaskGP5
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: GP-5 gas mask
+  description: A Soviet gas mask designed for civilian use. The GP-5 is the most common gas mask in the post-Soviet space — unsurprisingly, as three times more GP-5s were produced than there were Soviet citizens. Protects from toxins.
+  components:
+  - type: Tag
+    tags:
+      - BlockMask
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/mask/gp5.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/mask/gp5.rsi
+
+# Skins
+- type: entity
+  parent: Z14ClothingMaskGP5
+  id: Z14ClothingMaskGP5Green
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: GP-5 Green Gas Mask
+  components:
+  - type: Tag
+    tags:
+      - BlockMask
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/mask/gp5_green.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/mask/gp5_green.rsi

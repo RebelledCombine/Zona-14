@@ -1,0 +1,16 @@
+- type: entity
+  parent: Z14ArmorBaseT1PvP
+  id: Z14STClothingOuterHeavyRedut
+  categories: [ Zona14 ]
+  name: Heavy "Redut" Body Armor
+  description: Type V body armor providing solid protection against most damage types.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/Redut.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/Redut.rsi
+
+  - type: ClothingSpeedModifier
+    walkModifier: 0.95
+    sprintModifier: 0.95

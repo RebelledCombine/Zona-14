@@ -1,0 +1,98 @@
+- type: entity
+  parent: Z14ZoneAnomalyBase
+  id: Z14ZoneAnomalyLamp
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: ZoneAnomalyUpdateTriggerCollide
+  - type: ZoneAnomalyEffectPointLight
+  - type: ZoneAnomaly
+    detectedLevel: 0
+    preparingDelay: 0
+    activationDelay: 60
+    chargeTime: 5
+  - type: Sprite
+    sprite: _Stalker/Objects/Anomalies/lamp.rsi
+    layers:
+    - state: idle
+      map: ["base"]
+  - type: PointLight
+    radius: 30
+    energy: 16
+    color: "#fce16e"
+    castShadows: true
+    enabled: false
+  - type: GenericVisualizer
+    visuals:
+      enum.ZoneAnomalyVisuals.Layer:
+        base:
+          Activated: { state: active }
+          Charging: { state: idle }
+          Idle: { state: idle2 }
+  - type: AmbientSound
+    volume: -22
+    range: 3
+    sound:
+      path: /Audio/_Stalker/Effects/electra_idle.ogg
+  - type: ZoneArtifactSpawner
+    artifacts:
+      - id: null
+        ratio: 140
+      - id: Z14ZoneArtifactFloodlight
+        tier: 1
+        ratio: 25
+      - id: Z14ZoneArtifactSoul
+        tier: 5
+        ratio: 10
+  - type: STAnomalyTips
+    icon:
+      sprite: /Textures/_Stalker/Interface/Overlays/anomaly_tips.rsi
+      state: unknown
+
+- type: entity
+  parent: Z14ZoneAnomalyBase
+  id: Z14ZoneAnomalyRift
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: ZoneAnomalyTriggerStartCollide
+  - type: ZoneAnomalyEffectDamage
+    damage:
+      types:
+        Psy: 80
+  - type: ZoneAnomalyEffectSpawn
+    entry:
+      - id: EffectEmpPulse
+  - type: ZoneAnomalyEffectStealth
+    idle: 0.3 # Zona14 change
+    activated: 0.5 # Zona14 change
+  - type: ZoneAnomalyEffectRandomTeleport
+  - type: ZoneAnomaly
+    detectedLevel: 4
+    preparingDelay: 0
+    activationDelay: 1
+    chargeTime: 1
+  - type: Stealth
+  - type: Sprite
+    sprite: _Stalker/Objects/Other/Anomalys/rift.rsi
+    layers:
+      - state: idle
+        map: ["base"]
+        shader: unshaded
+  - type: GenericVisualizer
+    visuals:
+      enum.ZoneAnomalyVisuals.Layer:
+        base:
+          Activated: { state: active }
+          Idle: { state: idle }
+  - type: ZoneArtifactSpawner
+    artifacts:
+      - id: null
+        ratio: 140
+      - id: Z14ZoneArtifactSoul
+        tier: 5
+        ratio: 10
+  - type: STAnomalyTips
+    icon:
+      sprite: /Textures/_Stalker/Interface/Overlays/anomaly_tips.rsi
+      state: unknown

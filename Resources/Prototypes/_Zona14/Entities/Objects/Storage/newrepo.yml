@@ -1,0 +1,26 @@
+- type: entity
+  parent: BaseStructure
+  id: Z14DebugRepository
+  name: repository
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+    - type: InteractionOutline
+    - type: StalkerRepository
+    - type: Sprite
+      sprite: _Stalker/Structures/Machines/VendingMachines/torgomat_mini.rsi
+      layers:
+        - state: "off"
+          map: [ "enum.VendingMachineVisualLayers.Base" ]
+        - state: "off"
+          map: [ "enum.VendingMachineVisualLayers.BaseUnshaded" ]
+          shader: unshaded
+        - state: torgomat_mini
+        - state: normal-unshaded
+    - type: ActivatableUI
+      key: enum.StalkerRepositoryUiKey.Key
+      singleUser: true
+    - type: UserInterface
+      interfaces:
+        enum.StalkerRepositoryUiKey.Key:
+          type: StalkerRepositoryBoundUserInterface

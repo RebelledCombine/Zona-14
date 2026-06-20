@@ -1,11 +1,12 @@
+# Zona14: translated Russian names/descriptions to English
 ### PROJECT ###
 
 
 - type: entity
   parent: ClothingHeadsetGrey
   id: ClothingHeadsetProject
-  name: "А.А.А."
-  description: Алгоритм активен, отключить Алгоритм невозможно, подчиняйтесь Алгоритму.
+  name: A.A.A.
+  description: Algorithm Active. Cannot deactivate. Obey the Algorithm.
   components:
     - type: ContainerContainer
       containers:
@@ -35,8 +36,8 @@
 - type: entity
   parent: BaseItem
   id: EncryptionKeyPROJECT
-  name: "чип А.А.А."
-  description: Алгоритм не активен, повторное включение Алгоритма невозможно, не подчиняйтесь Алгоритму.
+  name: A.A.A. Chip
+  description: Algorithm inactive. Reactivation impossible. Do not obey the Algorithm.
   components:
   - type: EncryptionKey
     channels:
@@ -84,8 +85,8 @@
 - type: entity
   parent: IDCardStandard
   id: PROJECTIDCard
-  name: ключ-карта Алгоритма
-  description: Алгоритм вечен!
+  name: Algorithm Keycard
+  description: The Algorithm is eternal!
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Misc/id_cards.rsi
@@ -98,7 +99,7 @@
 - type: entity
   parent: BaseItem
   id: ProjectPDA
-  name: "КПК &#@*$!^"
+  name: "PDA &#@*$!^"
   suffix: Project
   description: "&#@*$!^ Error Screen, A problem has been detected and &#@*$!^ has been shut down to prevent damage to your device. Technical Information: STOP: 0x0000008E (0xC0000005, 0x804E3B58, 0xBA4C7B28, 0x00000000) KERNEL_STACK_INPAGE_ERROR. Refer to your &#@*$!^ user manual or visit www.&#@*$!^.com/support for more information."
   components:
@@ -139,7 +140,7 @@
         tags:
           - Write
     idSlot:
-      name: ключ-карта Алгоритма
+      name: Algorithm Keycard
       ejectSound: /Audio/Machines/id_swipe.ogg
       insertSound: /Audio/Machines/id_insert.ogg
       whitelist:
@@ -162,9 +163,9 @@
 - type: entity
   parent: ClothingShoesMilitaryBase
   id: ClothingShoesBootsProject
-  name: Подкованные сапоги
+  name: Project Reinforced Boots
   suffix: ST, Project
-  description: Алгоритм не умрёт, Алгоритм вечен, Алгоритм ничего не боится!
+  description: The Algorithm won’t die. The Algorithm is eternal. The Algorithm fears nothing!
   components:
   - type: Sprite
     sprite: Corvax/Clothing/Shoes/Boots/jackboots_project.rsi
@@ -174,9 +175,9 @@
 - type: entity
   parent: ClothingBeltStorageBase
   id: ClothingBeltHolsterProject
-  name: Плечевая кобура
+  name: Project Shoulder Holster
   suffix: ST, Project
-  description: Кобура для ношения пистолета и боеприпасов.
+  description: A holster for carrying a pistol and ammo.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/belt/holster_project.rsi
@@ -189,9 +190,9 @@
 - type: entity
   parent: ClothingEyesBase
   id: ClothingEyesHudProject
-  name: Визор
+  name: Project Visor
   suffix: ST, Project
-  description: Смотря в него, вы видите весь алгоритм которому следуете..., но работает лишь если у вас в голове встроен сам-же чип.
+  description: Through it, you see the entire Algorithm... Only works with the chip installed in your head.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/eyes/project_hud.rsi

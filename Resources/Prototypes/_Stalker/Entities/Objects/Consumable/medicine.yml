@@ -1,3 +1,4 @@
+# Zona14: translated Russian names/descriptions to English
 
 - type: entity
   parent: BaseItem
@@ -9,7 +10,7 @@
   - type: Trash
     time: 900
   - type: RepositoryItem
-    categoryName: Медицина
+    categoryName: Medicine # Zona14: Медицина
   - type: Sprite
     sprite: _Stalker/Objects/Counsumable/Medicine/newmed.rsi
   # Inherited
@@ -56,9 +57,9 @@
 - type: entity
   id: antiradpill
   parent: BaseItem
-  name:  таблетка
+  name: Anti-radiation drugs
   suffix: Stalker
-  description: спобна вас вылечить... или убить, как повезёт.
+  description: A set of tablets with active substances that contribute to the elimination of radionuclides from the body. They are not able to protect the body from induced radiation, but they reduce the dose already received by a person.
   components:
   - type: Tag
     tags:
@@ -67,7 +68,7 @@
     size: Tiny
     sprite: _Stalker/Objects/medicine.rsi # Stalker-TODO: Need an inhand sprite for this item
   - type: RepositoryItem
-    categoryName: Медицина
+    categoryName: Medicine # Zona14: Медицина
   - type: Sprite
     sprite: _Stalker/Objects/medicine.rsi
     scale: 0.6, 0.6
@@ -108,10 +109,10 @@
 ####################################
 
 - type: entity
-  name: шприц йодорадина
+  name: iodoradine syringe
   parent: ChemicalMedipen
   id: AntiRadMedipen
-  description: Шприц с ампулой йодорадина, содержит оптимальный объём вещества.
+  description: Antirad injection in the form of a special syringe with ampoules. This type of antirad will act faster than in the form of pills.
   suffix: Stalker
   components:
   - type: STBulkBuyable # stalker-14-en
@@ -180,9 +181,9 @@
 - type: entity
   id: wakeuppill
   parent: BaseItem
-  name:  таблетка
+  name: wake-up pill
   suffix: Stalker
-  description: спобна вас вылечить... или убить, как повезёт.
+  description: capable of healing… or killing you, depending on luck.
   components:
   - type: Tag
     tags:
@@ -191,7 +192,7 @@
     size: Tiny
     sprite: _Stalker/Objects/medicine.rsi # Stalker-TODO: Need an inhand sprite for this item
   - type: RepositoryItem
-    categoryName: Медицина
+    categoryName: Medicine # Zona14: Медицина
   - type: Sprite
     sprite: _Stalker/Objects/medicine.rsi
     scale: 0.6, 0.6
@@ -232,10 +233,10 @@
 ####################################
 
 - type: entity
-  name: шприц пробудофилина
+  name: probudophilin syringe
   parent: ChemicalMedipen
   id: WakeUpMedipen
-  description: Шприц с ампулой пробудофилина, содержит оптимальный объём вещества.
+  description: Syringe with an ampule of probudophiline, containing an optimal dose.
   suffix: Stalker
   components:
   - type: Sprite
@@ -304,9 +305,9 @@
 - type: entity
   id: shizopill
   parent: BaseItem
-  name:  таблетка
+  name: "{ ent-wakeuppill }"
   suffix: Stalker
-  description: спобна вас вылечить... или убить, как повезёт.
+  description: "{ ent-wakeuppill.desc }"
   components:
   - type: Tag
     tags:
@@ -315,7 +316,7 @@
     size: Tiny
     sprite: _Stalker/Objects/medicine.rsi # Stalker-TODO: Need an inhand sprite for this item
   - type: RepositoryItem
-    categoryName: Медицина
+    categoryName: Medicine # Zona14: Медицина
   - type: Sprite
     sprite: _Stalker/Objects/medicine.rsi
     scale: 0.6, 0.6
@@ -356,11 +357,11 @@
 ####################################
 
 - type: entity
-  name: стимулятор монолита
+  name: Monolith stimulant
   parent: Stimpack
   id: BattleMedipenStalker
   suffix: Stalker
-  description: Стимуляторы отличаются от полноценных аптечек быстротой использования, самое то, в ситуациях требующих минимальной затраты времени на лечение.
+  description: Stimulants differ from full-fledged first-aid kits in the speed of use, just in situations that require minimal treatment time.
   components:
   - type: SolutionContainerManager
     solutions:
@@ -452,7 +453,7 @@
 
 
 - type: entity
-  name: база стимпака
+  name: stimpak base
   parent: BaseItem
   description: null
   id: BaseSteampack
@@ -486,7 +487,7 @@
     solution: pen
 
 - type: entity
-  name: самопальный стимулятор
+  name: homemade stimulant
   parent: BaseSteampack
   id: SelfSteampack
   description: null
@@ -545,7 +546,7 @@
             Asphyxiation: 10.5
 
 - type: entity
-  name: военный стимулятор
+  name: military stimulant
   parent: BaseSteampack
   id: MilitarySteampack
   description: null
@@ -607,7 +608,7 @@
             Asphyxiation: 10.5
 
 - type: entity
-  name: научный стимулятор
+  name: science stimulant
   parent: BaseSteampack
   id: SciSteampack
   description: null

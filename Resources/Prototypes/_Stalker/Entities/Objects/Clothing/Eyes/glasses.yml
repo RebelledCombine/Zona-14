@@ -1,8 +1,9 @@
-﻿- type: entity
+﻿# Zona14: translated Russian names/descriptions to English
+- type: entity
   parent: ClothingEyesBase
   id: ClothingEyesProtectionGlasses
-  name: защитные очки
-  description: Защитят глаза от пыли и мелких осколков, а также от ярких вспышек.
+  name: safety goggles
+  description: Protects eyes from dust and small fragments, as well as from bright flashes.
   suffix: ST
   components:
     - type: Sprite
@@ -26,9 +27,9 @@
 - type: entity
   parent: ClothingEyesBase
   id: ClothingEyesProtectionGlassesKrava
-  name: баллистические очки "Валькирия"
-  description: Новейшие баллистические очки, изготовленные из высококлассных материалов и компонентов.
-  suffix: ST, Кастомка
+  name: '"Valkyrie" ballistic glasses'
+  description: Brand-new ballistic glasses, made from top-grade materials and components.
+  suffix: ST, Custom # Zona14: ST, Кастомка
   components:
     - type: Sprite
       sprite: _Stalker/Objects/Clothing/eyes/krava.rsi

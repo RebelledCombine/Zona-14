@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 
 - type: entity
   parent: STBaseWeaponGameRevolver
   id: STWeaponRevolverSWPC325TR
-  name: S&W PC 325 TR
-  description: Шестизарядный револьвер для опытных стрелков с хорошими характеристиками скорострела под калибр .45 ACP. Большой разброс из-за отдачи, рекомендуется стрелять на дальних дистанциях не торопясь.
+  name: "S&W PC 325 TR"
+  description: A modern eight-shooter chambered in .357 magnum with a slick metal finish and rubber grip. Has less recoil then other revolvers but cant shoot as fast.
   components:
     - type: Sprite
       sprite: _Stalker/Objects/Weapons/Guns/Revolvers/s&w_pc_325_tr.rsi
@@ -41,7 +42,7 @@
     - type: UseDelay
       delay: 1
     - type: RepositoryItem
-      categoryName: Оружие
+      categoryName: Weapons # Zona14: Оружие
     - type: STWeaponDamageFalloff
       falloffMultiplier: 0.8
     - type: STWeaponAccuracy

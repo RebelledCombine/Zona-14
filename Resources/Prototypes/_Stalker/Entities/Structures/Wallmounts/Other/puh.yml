@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: PosterBaseStalker
   id: Puh1
-  name: жгучий пух
-  description: Лучше не прогать.
+  name: Burnt Fuzz
+  description: Best not to code this.
   suffix: ST, Mapping
   components:
   - type: Sprite
@@ -12,8 +13,8 @@
 - type: entity
   parent: PosterBaseStalker
   id: Puh2
-  name: жгучий пух
-  description: Лучше не прогать.
+  name: "{ ent-Puh1 }"
+  description: "{ ent-Puh1.desc }"
   suffix: ST, Mapping
   components:
   - type: Sprite
@@ -23,8 +24,8 @@
 - type: entity
   parent: PosterBaseStalker
   id: Puh3
-  name: жгучий пух
-  description: Лучше не прогать.
+  name: "{ ent-Puh1 }"
+  description: "{ ent-Puh1.desc }"
   suffix: ST, Mapping
   components:
   - type: Sprite
@@ -34,8 +35,8 @@
 - type: entity
   parent: PosterBaseStalker
   id: Puh4
-  name: жгучий пух
-  description: Лучше не прогать.
+  name: "{ ent-Puh1 }"
+  description: "{ ent-Puh1.desc }"
   suffix: ST, Mapping
   components:
   - type: Sprite
@@ -45,8 +46,8 @@
 - type: entity
   parent: PosterBaseStalker
   id: Puh5
-  name: жгучий пух
-  description: Лучше не прогать.
+  name: "{ ent-Puh1 }"
+  description: "{ ent-Puh1.desc }"
   suffix: ST, Mapping
   components:
   - type: Sprite

@@ -1,3 +1,4 @@
+# Zona14: translated Russian names/descriptions to English
 #NPC Base please don`t touch it - Start
 - type: entity
   save: true
@@ -48,8 +49,8 @@
 - type: entity
   parent: NPCDoll
   id: NPCAlexBaron
-  name: Лёшка Барон [→   ←]
-  description: Данный персонаж занимается очень важным делом - перепродажей ящиков. Стоит ли ему доверять?
+  name: Lyoshka Baron [Fence]
+  description: This character is engaged in a very important business - reselling crates. Should you trust him?
   components:
   - type: Sprite
     sprite: _Stalker/NPC/BoxBuyer.rsi
@@ -83,8 +84,8 @@
 - type: entity
   parent: NPCDoll
   id: NPCBarmen
-  name: Бармен [→   ←]
-  description: Бармен в баре. Чуть менее жадный, чем Сидор, но такой же скряга. Кстати, они братья?
+  name: Barman [→   ←]
+  description: Bartender in a bar. A little less greedy than Sidor, but the same miser. By the way, are they brothers?
   components:
   - type: Sprite
     sprite: _Stalker/NPC/Barmen.rsi
@@ -122,8 +123,8 @@
 - type: entity
   parent: NPCDoll
   id: NPCBuyer
-  name: Кеша [→ ? ←]
-  description: Очень плохой тип. Из-под Палы продаёт контрабанду. Лучше с ним не связываться, себе же дороже.
+  name: Kesha [→ ? ←]
+  description: Very bad type. From near Pala he sells contraband. It's better not to mess with him, it's more expensive for yourself.
   components:
   - type: Sprite
     sprite: _Stalker/NPC/Buyer.rsi
@@ -161,8 +162,8 @@
 - type: entity
   parent: NPCDoll
   id: NPCTourist
-  name: Турист [→   ←]
-  description: Добрый человек, по низким ценам, буквально за даром продаёт снаряжение. Также он готов пожертвовать последнюю аптечку, чтобы спасти брата - сталкера.
+  name: Tourist [→   ←]
+  description: A kind person, at low prices, literally sells equipment for free. He is also ready to donate the last first aid kit to save his brother - a stalker.
   components:
   - type: Sprite
     sprite: _Stalker/NPC/Tourist.rsi
@@ -200,8 +201,8 @@
 - type: entity
   parent: NPCDoll
   id: NPCGunmith
-  name: Миша Свинцовый Лоб [→   ←]
-  description: Почему свинцовый лоб? Из-за жадности. Продает охотничие оружие всем у кого есть лицензия.
+  name: Misha Lead Forehead [→   ←]
+  description: Why lead forehead? Because of greed. He sells hunting weapons to everyone who has a license.
   components:
   - type: Sprite
     sprite: _Stalker/NPC/Merc.rsi
@@ -240,8 +241,8 @@
 - type: entity
   parent: NPCDoll
   id: NPCGunmithAdvanced
-  name: Натаниэль Гросман [→   ←]
-  description: Приходя к Натаниэлю вы уйдете либо с отличным оружием, либо с деньгами. Но не вместе.
+  name: Nathaniel Grossman[→   ←]
+  description: When you come to Nathaniel, you will leave with either a great weapon or money. But not together. Requires a permit for military weapons.
   components:
   - type: Sprite
     sprite: _Stalker/NPC/BarahloSimp.rsi
@@ -279,7 +280,7 @@
 - type: entity
   parent: NPCDoll
   id: NPCIgorIvanovich
-  name: Игорь Иванович [→   ←]
+  name: Igor Ivanovich [→   ←]
   description:
   components:
   - type: Sprite
@@ -320,8 +321,8 @@
 - type: entity
   parent: NPCDoll
   id: NPCGrocer
-  name: Санька [→   ←]
-  description: Торгует едой. Также всегда готов налить тебе безмерное количество воды и обобрать тебя до нитки.
+  name: Sanka [→   ←]
+  description: Sells food. I am also always ready to pour you an immeasurable amount of water and rob you to the skin.
   components:
   - type: Sprite
     sprite: _Stalker/NPC/Grocer.rsi
@@ -359,8 +360,8 @@
 - type: entity
   parent: NPCDoll
   id: NPCClothingSalesMan
-  name: Рыжий [→   ←]
-  description: Довольно таки мутный тип. Про него мало что известно, Разве что только, что он торгует вещами.
+  name: Redhead [→   ←]
+  description: Pretty muddy type. Not much is known about him, except that he sells things.
   components:
   - type: Sprite
     sprite: _Stalker/NPC/ClothingSalesMan.rsi
@@ -398,8 +399,8 @@
 - type: entity
   parent: NPCDoll
   id: NPCPharmacist
-  name: Флюфер Щберц [→   ←]
-  description: У данного персонажа очень странное имя и фамилия. Также он говорит с акцентом. Скорей всего, он прибыл из-за границы. Больше ничего неизвестно.
+  name: Flufer Schbertz [→   ←]
+  description: This character has a very strange first and last name. He also speaks with an accent. Most likely, he arrived from abroad. Nothing else is known.
   components:
   - type: Sprite
     sprite: _Stalker/NPC/Lena.rsi
@@ -438,8 +439,8 @@
 - type: entity
   parent: NPCDoll
   id: NPCRadioPlayer
-  name: Радиолюбитель [→   ←]
-  description: Занимается конструированием, постройкой, модификацией и использованием радиотехнических и электронных устройств. Любит все, что связано с Советским Союзом. Пытается быть скрытным.
+  name: Radio Amateur [→   ←]
+  description: He is engaged in the design, construction, modification and use of radio engineering and electronic devices. He loves everything related to the Soviet Union. He tries to be secretive.
   components:
   - type: Sprite
     sprite: _Stalker/NPC/RadioPlayer.rsi
@@ -477,8 +478,8 @@
 - type: entity
   parent: NPCDoll
   id: NPCSecuritySimple
-  name: Гена Заноза [→ / ←]
-  description: О нём практически ничего неизвестно.
+  name: Gene Splinter [→ / ←]
+  description: Almost nothing is known about him.
   components:
   - type: Sprite
     sprite: _Stalker/NPC/Security.rsi
@@ -506,8 +507,8 @@
 - type: entity
   parent: NPCDoll
   id: NPCSecuritySimpleTwo
-  name: Русик Макака [→ / ←]
-  description: О нём практически ничего неизвестно.
+  name: Rusik Macaque [→ / ←]
+  description: "{ ent-NPCSecuritySimple.desc }"
   components:
   - type: Sprite
     sprite: _Stalker/NPC/Security.rsi
@@ -535,8 +536,8 @@
 - type: entity
   parent: NPCDoll
   id: NPCSecurityZhorik
-  name: Жорик
-  description: Проходи, не задерживайся!
+  name: Zhorik
+  description: "Move along, don't linger!"
   components:
   - type: Sprite
     sprite: _Stalker/NPC/Security.rsi
@@ -564,8 +565,8 @@
 - type: entity
   parent: NPCDoll
   id: NPCSecurityGarrik
-  name: Гаррик
-  description: Тебе сюда нельзя!
+  name: Garrik
+  description: "You're not allowed here!"
   components:
   - type: Sprite
     sprite: _Stalker/NPC/Security.rsi
@@ -593,8 +594,8 @@
 - type: entity
   parent: NPCDoll
   id: NPCPetrAlkash
-  name: Петруха [→   ←]
-  description: Заядлый алкаш и курильщик. Продаёт водку и сигареты. Покупает окурки и пустые бутылки из-под водки по достаточно хорошей цене. Основатель и CEO Б.О.М.Ж.
+  name: Petrukha [→   ←]
+  description: Heavy drinker and smoker. He sells vodka and cigarettes. He buys cigarette butts and empty vodka bottles at a fairly good price. Founder and CEO of B.O.M.J.
   components:
   - type: Sprite
     sprite: _Stalker/NPC/PetrAlkash.rsi
@@ -632,8 +633,8 @@
 - type: entity
   parent: NPCPetrAlkash
   id: NPCNikitaAlkash
-  name: Никитич [→   ←]
-  description: Брат-близнец Петрухи, но без его предпренимательской жилки. Вице-президент Б.О.М.Ж, которую основал его брат
+  name: Nikitich [→   ←]
+  description: "Petrukha's twin brother, but without his entrepreneurial streak. Vice-President of B.O.M.J., which was founded by his brother"
   components:
   - type: Shop
     moneyId: Roubles
@@ -642,8 +643,8 @@
 - type: entity
   parent: NPCDoll
   id: NPCCeremoniemeester
-  name: Церемониймейстер Фёдор Веселовский [→   ←]
-  description: виртуозный распорядитель праздников, чье обаяние и харизма способны украсить любое событие. Его неизменная элегантность и глубокое понимание традиций делают каждое торжество по-настоящему незабываемым.
+  name: Master of Ceremonies Fyodor Veselovsky [→   ←]
+  description: A virtuoso master of holidays, whose charm and charisma can decorate any event. Its timeless elegance and deep understanding of tradition make every celebration truly unforgettable.
   components:
   - type: Sprite
     sprite: _Stalker/NPC/NpcCeremoniemeester.rsi
@@ -681,8 +682,8 @@
 - type: entity
   parent: NPCDoll
   id: NPCVadikNarik
-  name: Вадик Гой [→ ? ←]
-  description: Обычный наркоман, который как торгует так и покупает всё, что связано с коноплёй.
+  name: Vadik Goy [→ ? ←]
+  description: An ordinary drug addict who both sells and buys everything related to cannabis.
   components:
   - type: Sprite
     sprite: _Stalker/NPC/VadikNarik.rsi
@@ -720,8 +721,8 @@
 - type: entity
   parent: NPCDoll
   id: NPCPovarGena
-  name: Гена [→   ←]
-  description: Готовит еду, продаёт и скупает ингредиенты. Достаточно важный человек в условиях зоны.
+  name: Gena [→   ←]
+  description: She cooks food, sells and buys ingredients. Quite an important person in the conditions of the zone.
   components:
   - type: Sprite
     sprite: _Stalker/NPC/PovarGena.rsi
@@ -759,8 +760,8 @@
 - type: entity
   parent: NPCDoll
   id: NPCTechnickVitya
-  name: Витя [→   ←]
-  description: Витя - опытный техник которому около 27 лет и всегда носит с собой набор инструментов и часто можно увидеть его в рабочей униформе, готовый к любой технической задаче.
+  name: Vitya [→   ←]
+  description: Vitya is an experienced technician who is about 27 years old and always carries a set of tools with him, and you can often see him in a work uniform, ready for any technical task.
   components:
   - type: Sprite
     sprite: _Stalker/NPC/Vitya.rsi
@@ -798,8 +799,8 @@
 - type: entity
   parent: NPCDoll
   id: NPCSalesmanViktor
-  name: Виктор [→   ←]
-  description: Работает в магазине уже более 7 лет и знает в лицо многих постоянных клиентов.
+  name: Viktor [→   ←]
+  description: He has been working in the store for more than 7 years and knows many regular customers by sight.
   components:
   - type: Sprite
     sprite: _Stalker/NPC/Viktor.rsi
@@ -837,8 +838,8 @@
 - type: entity
   parent: NPCDoll
   id: NPCBotanikMaks
-  name: Макс[→   ←]
-  description: Макс - искусный ботаник с зеленым пальцем и страстью к растениям. Он обладает глубокими знаниями о растениях и умением выращивать их в любых условиях.
+  name: Max [→   ←]
+  description: Max is a skilled botanist with a green thumb and a passion for plants. He has a deep knowledge of plants and the ability to grow them in any conditions.
   components:
   - type: Sprite
     sprite: _Stalker/NPC/BotanikMaks.rsi
@@ -876,8 +877,8 @@
 - type: entity
   parent: NPCDoll
   id: NPCFarmerSerega
-  name: Серёга [→   ←]
-  description: Серёга - добродушный фермер с глубокими знаниями о земледелии. Он всегда рад помочь советом или поделиться историями из своего опыта работы на ферме.
+  name: Sergey [→   ←]
+  description: Sergey is a good-natured farmer with deep knowledge of farming. He is always happy to help with advice or share stories from his experience on the farm.
   components:
   - type: Sprite
     sprite: _Stalker/NPC/FarmerSerega.rsi
@@ -912,13 +913,13 @@
     - Binary
     - Common
 
-# ПИТОМЦЫ
+# Zona14: ПИТОМЦЫ
 
 - type: entity
   parent: NPCDoll
   id: NPCCatPet
-  name: Васька [NPC]
-  description: Обычный кот, зовут Васька. Местная достопримечательность.
+  name: Vaska [NPC]
+  description: An ordinary cat, his name is Vaska. A local landmark.
   components:
   - type: Sprite
     sprite: Mobs/Pets/cat.rsi
@@ -990,8 +991,8 @@
 - type: entity
   parent: NPCDoll
   id: NPCCustomRadioPlayer
-  name: Даниил Крутило [→   ←]
-  description: О нём практически ничего неизвестно. Сделано на заказ для Димочки
+  name: Daniil Krutilo [→   ←]
+  description: Almost nothing is known about him. Made to order for Dima
   suffix: NPC, DONATE
   components:
   - type: Sprite
@@ -1030,8 +1031,8 @@
 - type: entity
   parent: NPCDoll
   id: NPCResearchInstitutesRechnov
-  name: Проф. Речнов [→   ←]
-  description: Верит в магию дружбы, готов обменять ваш хабар на последние разработки от НИИ. Иногда подержаные. Часто подержанные.
+  name: Prof. Rechnov [→   ←]
+  description: Believes in the magic of friendship, ready to exchange your swag for the latest developments from the Research Institute. Sometimes used. Often used.
   components:
   - type: Sprite
     sprite: _Stalker/NPC/Scientist.rsi
@@ -1060,8 +1061,8 @@
 - type: entity
   parent: NPCDoll
   id: NPCBlueprintComputer
-  name: Выйти в Интернет [→   ←]
-  description: Позволяет выйти в Интернет для покупки базовых чертежей
+  name: Go online [→   ←]
+  description: Allows you to access the Internet to purchase basic blueprints
   components:
   - type: Sprite
     sprite: _Stalker/Objects/NPCs/bluprint_computer.rsi
@@ -1078,14 +1079,14 @@
       enum.ShopUiKey.Key:
         type: ShopBoundUserInterface
 
-# Скупщики дракоценностей
+# Zona14: Скупщики дракоценностей
 
 - type: entity
   parent: NPCDoll
   id: NPCAlinaMorozova
-  name: Алина Морозова [→   ←]
-  description: Роскошь это не про деньги, это про требования к самому лучшему. Это отсутсвие компромиссов для самых изысканных потребилетей.
-  suffix: ST, скупка лучшие цены
+  name: Alina Morozova [→   ←]
+  description: "Luxury is not about money, it's about requirements for the best. It is a lack of compromise for the most sophisticated consumers."
+  suffix: ST, buyout best prices # Zona14: ST, скупка лучшие цены
   components:
   - type: Sprite
     sprite: _Stalker/Objects/NPCs/alina_morozova.rsi
@@ -1105,9 +1106,9 @@
 - type: entity
   parent: NPCDoll
   id: NPCErjanAlimov
-  name: Ержан Алимов [→   ←]
-  suffix: ST, скупка худшие цены
-  description: Скупаем драгоценности по добротным ценам
+  name: Yerzhan Alimov [→   ←]
+  suffix: ST, buyout worst prices # Zona14: ST, скупка худшие цены
+  description: We buy jewelry at good prices
   components:
   - type: Sprite
     sprite: _Stalker/Objects/NPCs/erjan_alimov.rsi
@@ -1127,9 +1128,9 @@
 - type: entity
   parent: NPCDoll
   id: NPCJuryIzvorotin
-  name: Юрий Изворотин [→   ←]
-  description: Скупаем драгоценности. Скользкий типтич. Другой бы при братве с таким бизнесом не выжил.
-  suffix: ST, скупка средние цены
+  name: Yuri Izvorotin [→   ←]
+  description: We buy jewelry. Slippery typical. Someone else would not have survived with such a business.
+  suffix: ST, buyout average prices # Zona14: ST, скупка средние цены
   components:
   - type: Sprite
     sprite: _Stalker/Objects/NPCs/jury_izvorotin.rsi
@@ -1146,13 +1147,13 @@
       enum.ShopUiKey.Key:
         type: ShopBoundUserInterface
 
-# Клерки
+# Zona14: Клерки
 
 - type: entity
   parent: NPCDoll
   id: NPCClerkAlexeySmirnov
-  name: Алексей Смирнов[→   ←]
-  description: Обычный Клерк. Покупать у него лицензии это плохая идея. У военных дешевле в разы.
+  name: Alexey Smirnov[→  ←]
+  description: normal clerk. Buying licenses from him is a bad idea. The military is several times cheaper.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/NPCs/clerk.rsi
@@ -1174,8 +1175,8 @@
 - type: entity
   parent: NPCDoll
   id: NPCMaksimka
-  name: Максимка [→   ←]
-  description: Бегает сюда из ближайшей деревни где проводит каникулы, чтобы немного подзаработать продавая баллончики
+  name: Maksimka [→  ←]
+  description: Runs here from the nearest village where he spends his holidays to earn a little extra money selling spray cans
   components:
   - type: Sprite
     sprite: _Stalker/Objects/NPCs/maksimka.rsi
@@ -1196,9 +1197,9 @@
 - type: entity
   parent: NPCDoll
   id: NPCGabrielSerafim
-  name: Габриэль [→   ←]
+  name: Gabriel [→  ←]
   suffix: ST, Serafim
-  description: Старый серафим вот уже 10 лет служил Сыну Звёзды, к сожалению он стал слишком стар для войны и охоты, сейчас он помогает в поставках снаряжения для южного ковена.
+  description: The old seraph has been serving the Son of the Star for 10 years, unfortunately he has become too old for war and hunting, now he helps in the supply of equipment for the southern coven.
   components:
   - type: Sprite
     sprite: _Stalker/NPC/Gabriel.rsi
@@ -1238,9 +1239,9 @@
 - type: entity
   parent: NPCDoll
   id: NPCAlekseiFilippov
-  name: Алексей Филиппов[→   ←]
+  name: Alexey Filippov[→  ←]
   suffix: ST, Gruppirovki
-  description: Продает хорошее снаряжение для охоты и припасы очень важные для выживания в зоне.
+  description: Sells good hunting gear and supplies that are very important for survival in the zone.
   components:
   - type: Sprite
     sprite: _Stalker/NPC/Merc.rsi
@@ -1278,9 +1279,9 @@
 - type: entity
   parent: NPCDoll
   id: NPCFil
-  name: Фил[→   ←]
+  name: Phil[→  ←]
   suffix: ST, bar
-  description: Продавец патронов множества калибров малого и среднего пробития.
+  description: Seller of a wide range of low to medium penetration calibers.
   components:
   - type: Sprite
     sprite: _Stalker/NPC/Merc.rsi
@@ -1318,9 +1319,9 @@
 - type: entity
   parent: NPCDoll
   id: NPCRasputin
-  name: Распутин[→   ←]
+  name: Rasputin[→  ←]
   suffix: ST, bar
-  description: Продавец патронов множества калибров высокого броневого пробития.
+  description: Dealer in a wide range of high penetration calibers.
   components:
   - type: Sprite
     sprite: _Stalker/NPC/BarahloSimp.rsi
@@ -1358,7 +1359,7 @@
 - type: entity
   parent: NPCDoll
   id: NPCHidenTrader
-  name: Неизвестный [→   ←]
+  name: Unknown [→ ←]
   description:
   components:
   - type: Sprite
@@ -1382,7 +1383,7 @@
     radius: 5
     
 - type: entity
-  name: триггер Скрытого Торговца
+  name: Hidden Trader trigger
   id: STTriggerHidenTrader
   parent: STBaseTrigger125
   suffix: ST, Dollar, Trigger
@@ -1398,8 +1399,8 @@
 - type: entity
   parent: NPCDoll
   id: NPCMolitChevron
-  name: Плеяда
-  description: Обменивает шевроны монолита на редкие вещи.
+  name: Pleiades
+  description: Exchanges monolith chevrons for rare items.
   components:
   - type: Sprite
     sprite: _Stalker/NPC/Pleyad.rsi
@@ -1437,8 +1438,8 @@
 - type: entity
   parent: NPCDoll
   id: NPCJa
-  name: Жаба [→ ? ←]
-  description: Главный торгаш на этой старой лодочной станции. Лучше с ним дружить.
+  name: Toad [-> ? <-]
+  description: The main trader at this old boat station. Better to be on his good side.
   components:
   - type: Sprite
     sprite: _Stalker/NPC/Jaba.rsi

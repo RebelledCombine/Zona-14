@@ -1,10 +1,11 @@
-﻿- type: Tag
+﻿# Zona14: translated Russian names/descriptions to English
+- type: Tag
   id: SupplyTalons
 - type: entity
   parent: BaseItem
   id: SupplyTalons
-  name: талоны снабжения
-  description: Талоны снабжения Института.
+  name: Supply Coupon
+  description: Institute supply coupons.
   suffix: Stalker
   components:
     - type: Stack

@@ -1,0 +1,365 @@
+# Reinforced cloak
+- type: entity
+  parent: Z14STClothingCloakBase
+  id: Z14STClothingCapeCoatReinforced
+  categories: [ Zona14 ]
+  name: reinforced cloak
+  description: Cloak with sewn-in chainmail and reinforced with aramid fabric, providing roughly class 3 protection. Heavy and won't fit body armor underneath.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/cloak/coat_stalker.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/cloak/coat_stalker.rsi
+- type: entity
+  parent: Z14STClothingCloakBase
+  id: Z14ClothingOuterCoatLoyalistLight
+  categories: [ Zona14 ]
+  name: Hunting Cloak
+  description: a cloak made specifically for hunting in extreme conditions such as the CEZ, painted in green camo.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/cloak/hunterskiy.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/cloak/hunterskiy.rsi
+  - type: UserInterface
+    interfaces:
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetLoyalistCoatlight
+    requiredSlot:
+    - cloak
+    slot: head
+  - type: ContainerContainer
+    containers:
+      toggleable-clothing: !type:ContainerSlot {}
+      storagebase: !type:Container
+        ents: []
+- type: entity
+  parent: STClothingHeadHatBase
+  id: Z14ClothingHeadHelmetLoyalistCoatlight
+  categories: [ Zona14 ]
+  name: Hunting Hood
+  description: protects the head... from rain... probably?
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/coat_hat_hunter.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/coat_hat_hunter.rsi
+  - type: HideLayerClothing
+    slots:
+    - Hair
+
+# Kevlar Cloak
+
+- type: entity
+  parent: Z14STClothingCloakBase
+  id: Z14ClothingOuterCoatLoyalist
+  categories: [ Zona14 ]
+  name: Kevlar Raincoat
+  description: A Zone-made cloak, surprisingly quality work. Made of quality leather, stitched with Kevlar, with some armor plates, painted in unusual camouflage.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/cloak/kevlaroviy.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/cloak/kevlaroviy.rsi
+  - type: UserInterface
+    interfaces:
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetLoyalistCoat
+    requiredSlot:
+    - cloak
+    slot: head
+  - type: ContainerContainer
+    containers:
+      toggleable-clothing: !type:ContainerSlot {}
+      storagebase: !type:Container
+        ents: []
+- type: entity
+  parent: STClothingHeadHatBase
+  id: Z14ClothingHeadHelmetLoyalistCoat
+  categories: [ Zona14 ]
+  name: Kevlar Hood
+  description: it has Kevlar in name only
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/coat_hat_kevlar.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/coat_hat_kevlar.rsi
+  - type: HideLayerClothing
+    slots:
+    - Hair
+
+# true Cloak of Sin
+- type: entity
+  parent: Z14STClothingCloakBase
+  id: Z14ClothingOuterCoatGrehLight
+  categories: [ Zona14 ]
+  name: Flagellant Cloak
+  description: Lightweight cloak of the faithful. Cloak of the Zone Mother's defender
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/cloak/coat_greh.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/cloak/coat_greh.rsi
+    equipDelay: 8
+    slots:
+    - outerClothing
+  - type: UserInterface
+    interfaces:
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetGrehCoat
+    requiredSlot:
+    - outerClothing
+    slot: head
+  - type: ContainerContainer
+    containers:
+      toggleable-clothing: !type:ContainerSlot {}
+      storagebase: !type:Container
+        ents: []
+  - type: Tag
+    tags:
+    - GrehCanTakeOnly
+  - type: ClothingSpeedModifier
+    walkModifier: 1.2
+    sprintModifier: 1.2
+# true Faithful of Sin
+
+- type: entity
+  parent: Z14STClothingCloakBase
+  id: Z14ClothingOuterCoatGreh
+  categories: [ Zona14 ]
+  name: Cloak of the Faithful
+  description: Cloak of the Zone Mother's defender
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/cloak/coat_greh.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/cloak/coat_greh.rsi
+    equipDelay: 8
+    slots:
+    - outerClothing
+  - type: UserInterface
+    interfaces:
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetGrehCoat
+    requiredSlot:
+    - outerClothing
+    slot: head
+  - type: ContainerContainer
+    containers:
+      toggleable-clothing: !type:ContainerSlot {}
+      storagebase: !type:Container
+        ents: []
+  - type: Tag
+    tags:
+    - GrehCanTakeOnly
+
+- type: entity
+  parent: STClothingHeadHatBase
+  id: Z14ClothingHeadHelmetGrehCoat
+  categories: [ Zona14 ]
+  name: Sin's Hood
+  description: Covers your head
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/coat_hat_greh.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/coat_hat_greh.rsi
+  - type: HideLayerClothing
+    slots:
+    - Hair
+
+##Skins
+
+- type: entity
+  parent: Z14ClothingOuterCoatLoyalist
+  id: Z14ClothingOuterCoatKevlarMonolith
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Kevlar Monolith Cloak
+  description: A Zone-made cloak, surprisingly quality work. Made of quality leather, stitched with Kevlar, with some armor plates, painted in unusual camouflage.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/cloak/kevlaroviy_monolith.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/cloak/kevlaroviy_monolith.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetKevlarMonolith
+    requiredSlot:
+    - cloak
+    slot: head
+  - type: ContainerContainer
+    containers:
+      toggleable-clothing: !type:ContainerSlot {}
+      storagebase: !type:Container
+        ents: []
+  - type: PersonalDamage
+    damage:
+      types:
+        Radiation: 18.01
+
+- type: entity
+  parent: Z14ClothingHeadHelmetLoyalistCoat
+  id: Z14ClothingHeadHelmetKevlarMonolith
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Kevlar Hood
+  description: it has Kevlar in name only
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/coat_head_kevlar_monolith.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/coat_head_kevlar_monolith.rsi
+  - type: HideLayerClothing
+    slots:
+    - Hair
+
+- type: entity
+  parent: Z14ClothingOuterCoatLoyalist
+  id: Z14ClothingOuterCoatRenegat
+  categories: [ Zona14 ]
+  name: Renegade's Kevlar Cloak
+  description: Cloak modified for the Renegades faction, painted in their faction colors.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/cloak/coat_renegat.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/cloak/coat_renegat.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetLoyalistCoatRenegat
+    requiredSlot:
+    - cloak
+    slot: head
+
+- type: entity
+  parent: STClothingHeadHatBase
+  id: Z14ClothingHeadHelmetLoyalistCoatRenegat
+  categories: [ Zona14 ]
+  name: Renegade Kevlar Hood
+  description: It has more than just Kevlar in name.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/coat_hat_renegat.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/coat_hat_renegat.rsi
+  - type: HideLayerClothing
+    slots:
+    - Hair
+
+- type: entity
+  parent: Z14ClothingOuterCoatLoyalist
+  id: Z14ClothingOuterCoatSeraphim
+  categories: [ Zona14 ]
+  name: Kevlar Seraphim Cloak
+  description: Cloak modified for the Seraphim faction, painted in their faction colors.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/cloak/Sera_/seraphim_kevlar_cape.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/cloak/Sera_/seraphim_kevlar_cape.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetLoyalistCoatSeraphim
+    requiredSlot:
+    - cloak
+    slot: head
+
+- type: entity
+  parent: STClothingHeadHatBase
+  id: Z14ClothingHeadHelmetLoyalistCoatSeraphim
+  categories: [ Zona14 ]
+  name: Kevlar Seraphim Hood
+  description: It has Kevlar in name only.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/Head/Sera_/coat_hat_kevlar_seraphim.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/Head/Sera_/coat_hat_kevlar_seraphim.rsi
+  - type: HideLayerClothing
+    slots:
+    - Hair
+
+- type: entity
+  parent: Z14ClothingOuterCoatLoyalist
+  id: Z14ClothingOuterCoatLimaSeraphim
+  categories: [ Zona14 ]
+  name: Seraphim kevlar coat
+  description: Cloak modified for the Seraphim faction, painted gray.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/cloak/Sera_/limaphim_kevlar_cape.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/cloak/Sera_/limaphim_kevlar_cape.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetLoyalistCoatLimaSeraphim
+    requiredSlot:
+    - cloak
+    slot: head
+
+- type: entity
+  parent: STClothingHeadHatBase
+  id: Z14ClothingHeadHelmetLoyalistCoatLimaSeraphim
+  categories: [ Zona14 ]
+  name: Seraphim kevlar hood
+  description: It has Kevlar in name only.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/Head/Sera_/coat_hat_kevlar_limaphim.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/Head/Sera_/coat_hat_kevlar_limaphim.rsi
+  - type: HideLayerClothing
+    slots:
+    - Hair
+
+- type: entity
+  parent: Z14ClothingOuterCoatLoyalist
+  id: Z14ClothingOuterCoatRet
+  categories: [ Zona14 ]
+  name: insulated Kevlar raincoat
+  description: A Zone-made cloak, surprisingly quality work. Made of quality leather, stitched with Kevlar, with some armor plates, painted brown with a sewn-on collar.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/cloak/coat_Ret.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/cloak/coat_Ret.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingOuterCoatRetHat
+    requiredSlot:
+    - cloak
+    slot: head
+
+- type: entity
+  parent: STClothingHeadHatBase
+  id: Z14ClothingOuterCoatRetHat
+  categories: [ Zona14 ]
+  name: Collar
+  description: just a Collar.
+  suffix: Z14
+  components:
+  - type: STWeight
+    self: 5
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/Head/Hats/Ret4hat.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/Head/Hats/Ret4hat.rsi

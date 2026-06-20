@@ -1,6 +1,7 @@
+# Zona14: translated Russian names/descriptions to English
 - type: persistentCraftNode
   id: PersistentCraftUtilityNodeArtifactContainerT1
-  name: контейнер артефактов T1
+  name: artifact container T1
   description: persistent-craft-node-sub-recipe-desc
   branch: Utility
   cost: 0
@@ -10,7 +11,7 @@
 
 - type: persistentCraftNode
   id: PersistentCraftUtilityNodeSafeboxT15
-  name: защитный кейс T1.5
+  name: protective case T1.5
   description: persistent-craft-node-sub-recipe-desc
   branch: Utility
   cost: 5
@@ -22,7 +23,7 @@
 
 - type: persistentCraftNode
   id: PersistentCraftUtilityNodeMedkitCMST15
-  name: аптечка CSM T1.5
+  name: CSM medkit T1.5
   description: persistent-craft-node-sub-recipe-desc
   branch: Utility
   cost: 5
@@ -34,7 +35,7 @@
 
 - type: persistentCraftNode
   id: PersistentCraftUtilityNodeMedkitGrizzlyT3
-  name: аптечка Grizzly T3
+  name: Grizzly medkit T3
   description: persistent-craft-node-sub-recipe-desc
   branch: Utility
   cost: 40
@@ -46,7 +47,7 @@
 
 - type: persistentCraftNode
   id: PersistentCraftUtilityNodeArtifactContainerAdvancedT4
-  name: продв. контейнер артефактов T4
+  name: advanced artifact container T4
   description: persistent-craft-node-sub-recipe-desc
   branch: Utility
   cost: 80
@@ -58,7 +59,7 @@
 
 - type: persistentCraftNode
   id: PersistentCraftUtilityNodeBackpackDuffelT1
-  name: вещмешок T1
+  name: duffel bag T1
   description: persistent-craft-node-sub-recipe-desc
   branch: Utility
   cost: 0
@@ -68,7 +69,7 @@
 
 - type: persistentCraftNode
   id: PersistentCraftUtilityNodeBackpackTacticT2
-  name: тактический рюкзак T2
+  name: tactical backpack T2
   description: persistent-craft-node-sub-recipe-desc
   branch: Utility
   cost: 7
@@ -80,7 +81,7 @@
 
 - type: persistentCraftNode
   id: PersistentCraftUtilityNodeBackpackArmyT3
-  name: армейский рюкзак T3
+  name: army backpack T3
   description: persistent-craft-node-sub-recipe-desc
   branch: Utility
   cost: 40
@@ -92,7 +93,7 @@
 
 - type: persistentCraftNode
   id: PersistentCraftUtilityNodeBackpackZaryaT3
-  name: рюкзак Заря T3
+  name: Zarya backpack T3
   description: persistent-craft-node-sub-recipe-desc
   branch: Utility
   cost: 40
@@ -104,7 +105,7 @@
 
 - type: persistentCraftNode
   id: PersistentCraftUtilityNodeBackpackHikingT3
-  name: походный рюкзак T3
+  name: hiking backpack T3
   description: persistent-craft-node-sub-recipe-desc
   branch: Utility
   cost: 40
@@ -116,7 +117,7 @@
 
 - type: persistentCraftNode
   id: PersistentCraftUtilityNodeBackpackBlueArmyT4
-  name: синий армейский рюкзак T4
+  name: blue army backpack T4
   description: persistent-craft-node-sub-recipe-desc
   branch: Utility
   cost: 80
@@ -128,7 +129,7 @@
 
 - type: persistentCraftNode
   id: PersistentCraftUtilityNodeBackpackArmyTacticT4
-  name: армейский такт. рюкзак T4
+  name: army tactical backpack T4
   description: persistent-craft-node-sub-recipe-desc
   branch: Utility
   cost: 80
@@ -140,7 +141,7 @@
 
 - type: persistentCraftNode
   id: PersistentCraftUtilityNodeBackpackProT4
-  name: проф. рюкзак T4
+  name: professional backpack T4
   description: persistent-craft-node-sub-recipe-desc
   branch: Utility
   cost: 80
@@ -152,7 +153,7 @@
 
 # - type: persistentCraftNode
 #   id: PersistentCraftUtilityNodeBackpackCapaciousT5
-#   name: вместительный рюкзак T5
+# Zona14: name: вместительный рюкзак T5
 #   description: persistent-craft-node-sub-recipe-desc
 #   branch: Utility
 #   cost: 320
@@ -165,7 +166,7 @@
 
 - type: persistentCraftNode
   id: PersistentCraftUtilityNodeBeltNoviceT1
-  name: подсумок новичка T1
+  name: "beginner's pouch T1"
   description: persistent-craft-node-sub-recipe-desc
   branch: Utility
   cost: 0
@@ -175,7 +176,7 @@
 
 - type: persistentCraftNode
   id: PersistentCraftUtilityNodeBeltZaryaT2
-  name: поясная сумка Заря T2
+  name: Zarya belt pouch T2
   description: persistent-craft-node-sub-recipe-desc
   branch: Utility
   cost: 7
@@ -187,7 +188,7 @@
 
 - type: persistentCraftNode
   id: PersistentCraftUtilityNodeBeltPszT2
-  name: поясная сумка ПСЗ T2
+  name: PSZ belt pouch T2
   description: persistent-craft-node-sub-recipe-desc
   branch: Utility
   cost: 7
@@ -199,7 +200,7 @@
 
 - type: persistentCraftNode
   id: PersistentCraftUtilityNodeBeltBerillT3
-  name: поясная сумка Берилл-5М T2.5
+  name: Berill-5M belt pouch T2.5
   description: persistent-craft-node-sub-recipe-desc
   branch: Utility
   cost: 40
@@ -211,7 +212,7 @@
 
 - type: persistentCraftNode
   id: PersistentCraftUtilityNodeBeltDoubleZaryaT4
-  name: двойная поясная сумка Заря T3.5
+  name: double Zarya belt pouch T3.5
   description: persistent-craft-node-sub-recipe-desc
   branch: Utility
   cost: 40

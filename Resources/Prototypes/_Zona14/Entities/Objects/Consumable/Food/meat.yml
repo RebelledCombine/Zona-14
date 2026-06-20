@@ -1,0 +1,1159 @@
+#i hate construction graphs i hate nodes i hate crafting
+#hastag sloppycore but i dont feel like making a crafting directory...
+
+# BEAR
+- type: entity
+  name: bear meat
+  parent: FoodMeatRawBase
+  id: Z14FoodMeatSTBear
+  categories: [ Zona14 ]
+  description: Greasy greasy raw bear meat.
+  suffix: Z14
+  components:
+  - type: STWeight
+    self: 1.0
+  - type: Sprite
+    sprite: Objects/Consumable/Food/meat.rsi
+    state: bear
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 10
+        - ReagentId: Fat
+          Quantity: 10
+        - ReagentId: Z14MToxin
+          Quantity: 10
+  - type: InternalTemperature
+    conductivity: 0.43
+  - type: Construction
+    graph: Z14MeatSteakSTBear
+    node: start
+    defaultTarget: steak stbear
+  - type: Tag
+    tags:
+    - Meat
+  - type: Craftable
+
+- type: entity
+  name: roasted bear meat
+  parent: FoodMeatBase
+  id: Z14FoodMeatSTBearCooked
+  categories: [ Zona14 ]
+  description: It's a little tough but what can you do.
+  suffix: Z14
+  components:
+  - type: STWeight
+    self: 0.8
+  - type: Craftable
+  - type: Tag
+    tags:
+    - Cooked
+    - Meat
+    - Steak
+  - type: Sprite
+    sprite: Objects/Consumable/Food/meat.rsi
+    state: product-cooked
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 7
+        - ReagentId: Protein
+          Quantity: 13
+        - ReagentId: Fat
+          Quantity: 5
+        - ReagentId: Z14MToxin
+          Quantity: 5
+  - type: Construction
+    graph: Z14MeatSteakSTBear
+    node: steak stbear
+
+- type: constructionGraph
+  id: Z14MeatSteakSTBear
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: steak stbear
+      completed:
+      - !type:PlaySound
+        sound: /Audio/Effects/sizzle.ogg
+      steps:
+      - minTemperature: 335
+  - node: steak stbear
+    entity: Z14FoodMeatSTBearCooked
+
+- type: lightCraftingRecipe
+  id: Z14MeatSTBearCraft
+  results:
+  - Z14FoodMeatSTBearCooked
+  steps:
+    firstIngredient: Z14FoodMeatSTBear
+    secondIngredient: STBonfire
+    keepSecond: true
+    exactSecond: false
+    time: 20
+
+- type: lightCraftingRecipe
+  id: Z14MeatSTBearCraftGas
+  results:
+  - Z14FoodMeatSTBearCooked
+  steps:
+    firstIngredient: Z14FoodMeatSTBear
+    secondIngredient: GasStoveS1
+    keepSecond: true
+    exactSecond: false
+    time: 20
+
+# FISH
+# this could have been done cleaner but refer to top of file comment
+
+# rotten
+- type: entity
+  name: rotten fish
+  id: Z14FoodMeatSTRottenFish
+  categories: [ Zona14 ]
+  suffix: Z14
+  parent: Z14FoodMeatRotten
+  components:
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Consumable/Food/meat.rsi
+    state: rottenfish
+  - type: Trash
+    time: 300
+
+# fillet
+- type: entity
+  name: raw fish fillet
+  parent: FoodMeatRawBase
+  id: Z14FoodMeatSTFishFilletRaw
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: STWeight
+    self: 0.25
+  - type: FlavorProfile
+    flavors:
+    - fishy
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Consumable/Food/meat.rsi
+    state: fillet_raw
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 5
+        - ReagentId: Z14MToxin
+          Quantity: 10
+  - type: InternalTemperature
+    conductivity: 0.43
+  - type: Construction
+    graph: Z14MeatFilletSTFish
+    node: start
+    defaultTarget: fillet stfish
+  - type: Tag
+    tags:
+    - Meat
+  - type: Craftable
+  - type: RotInto
+    entity: Z14FoodMeatSTRottenFish
+    stage: 1
+
+- type: entity
+  name: cooked fish fillet
+  parent: FoodMeatBase
+  id: Z14FoodMeatSTFishFilletCooked
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: STWeight
+    self: 0.25
+  - type: Craftable
+  - type: Tag
+    tags:
+    - Cooked
+    - Meat
+  - type: FlavorProfile
+    flavors:
+    - fishy
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Consumable/Food/meat.rsi
+    state: fillet_cooked
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: Protein
+          Quantity: 10
+  - type: Construction
+    graph: Z14MeatFilletSTFish
+    node: fillet stfish
+
+- type: constructionGraph
+  id: Z14MeatFilletSTFish
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: fillet stfish
+      completed:
+      - !type:PlaySound
+        sound: /Audio/Effects/sizzle.ogg
+      steps:
+      - minTemperature: 335
+  - node: fillet stfish
+    entity: Z14FoodMeatSTFishFilletCooked
+
+- type: lightCraftingRecipe
+  id: Z14MeatFilletSTFishCraft
+  results:
+  - Z14FoodMeatSTFishFilletCooked
+  steps:
+    firstIngredient: Z14FoodMeatSTFishFilletRaw
+    secondIngredient: STBonfire
+    keepSecond: true
+    exactSecond: false
+    time: 12
+
+- type: lightCraftingRecipe
+  id: Z14MeatFilletSTFishCraftGas
+  results:
+  - Z14FoodMeatSTFishFilletCooked
+  steps:
+    firstIngredient: Z14FoodMeatSTFishFilletRaw
+    secondIngredient: GasStoveS1
+    keepSecond: true
+    exactSecond: false
+    time: 12
+
+# steak
+- type: entity
+  name: raw fish steak
+  parent: FoodMeatRawBase
+  id: Z14FoodMeatSTFishSteakRaw
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: STWeight
+    self: 0.45
+  - type: FlavorProfile
+    flavors:
+    - fishy
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Consumable/Food/meat.rsi
+    state: steak_raw
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 10
+        - ReagentId: Z14MToxin
+          Quantity: 10
+  - type: InternalTemperature
+    conductivity: 0.43
+  - type: Construction
+    graph: Z14MeatSteakSTFish
+    node: start
+    defaultTarget: steak stfish
+  - type: Tag
+    tags:
+    - Meat
+  - type: Craftable
+  - type: RotInto
+    entity: Z14FoodMeatSTRottenFish
+    stage: 1
+
+- type: entity
+  name: fish steak
+  parent: FoodMeatBase
+  id: Z14FoodMeatSTFishSteakCooked
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: STWeight
+    self: 0.40
+  - type: Craftable
+  - type: Tag
+    tags:
+    - Cooked
+    - Meat
+  - type: FlavorProfile
+    flavors:
+    - fishy
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Consumable/Food/meat.rsi
+    state: steak_cooked
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 10
+        - ReagentId: Protein
+          Quantity: 10
+  - type: Construction
+    graph: Z14MeatSteakSTFish
+    node: steak stfish
+
+- type: constructionGraph
+  id: Z14MeatSteakSTFish
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: steak stfish
+      completed:
+      - !type:PlaySound
+        sound: /Audio/Effects/sizzle.ogg
+      steps:
+      - minTemperature: 335
+  - node: steak stfish
+    entity: Z14FoodMeatSTFishSteakCooked
+
+- type: lightCraftingRecipe
+  id: Z14MeatSteakSTFishCraft
+  results:
+  - Z14FoodMeatSTFishSteakCooked
+  steps:
+    firstIngredient: Z14FoodMeatSTFishSteakRaw
+    secondIngredient: STBonfire
+    keepSecond: true
+    exactSecond: false
+    time: 15
+
+- type: lightCraftingRecipe
+  id: Z14MeatSteakSTFishCraftGas
+  results:
+  - Z14FoodMeatSTFishSteakCooked
+  steps:
+    firstIngredient: Z14FoodMeatSTFishSteakRaw
+    secondIngredient: GasStoveS1
+    keepSecond: true
+    exactSecond: false
+    time: 15
+
+# eel
+- type: entity
+  name: raw eel
+  parent: FoodMeatRawBase
+  id: Z14FoodMeatSTEelRaw
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: STWeight
+    self: 0.25
+  - type: FlavorProfile
+    flavors:
+    - fishy
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Consumable/Food/meat.rsi
+    state: eel_raw
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 10
+  - type: InternalTemperature
+    conductivity: 0.43
+  - type: Construction
+    graph: Z14MeatSTEel
+    node: start
+    defaultTarget: meat steel
+  - type: Tag
+    tags:
+    - Meat
+  - type: Craftable
+  - type: RotInto
+    entity: Z14FoodMeatSTRottenFish
+    stage: 1
+
+- type: entity
+  name: roasted eel
+  parent: FoodMeatBase
+  id: Z14FoodMeatSTEelCooked
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: STWeight
+    self: 0.25
+  - type: Craftable
+  - type: Tag
+    tags:
+    - Cooked
+    - Meat
+  - type: FlavorProfile
+    flavors:
+    - fishy
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Consumable/Food/meat.rsi
+    state: eel_cooked
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: Protein
+          Quantity: 5
+  - type: Construction
+    graph: Z14MeatSTEel
+    node: meat steel
+
+- type: constructionGraph
+  id: Z14MeatSTEel
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: meat steel
+      completed:
+      - !type:PlaySound
+        sound: /Audio/Effects/sizzle.ogg
+      steps:
+      - minTemperature: 335
+  - node: meat steel
+    entity: Z14FoodMeatSTEelCooked
+
+- type: lightCraftingRecipe
+  id: Z14MeatSTEelCraft
+  results:
+  - Z14FoodMeatSTEelCooked
+  steps:
+    firstIngredient: Z14FoodMeatSTEelRaw
+    secondIngredient: STBonfire
+    keepSecond: true
+    exactSecond: false
+    time: 10
+
+- type: lightCraftingRecipe
+  id: Z14MeatSTEelCraftGas
+  results:
+  - Z14FoodMeatSTEelCooked
+  steps:
+    firstIngredient: Z14FoodMeatSTEelRaw
+    secondIngredient: GasStoveS1
+    keepSecond: true
+    exactSecond: false
+    time: 10
+
+# salo
+- type: entity
+  parent: Z14STFoodMeatSalo
+  id: Z14FoodSaloSlice
+  categories: [ Zona14 ]
+  name: slice of salo
+  description: A chunk of raw fat, perfect for frying.
+  suffix: Z14
+  components:
+  - type: Item
+    size: Tiny
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Consumable/Food/meat.rsi
+    state: salochunk
+  - type: Tag
+    tags:
+    - Slice
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 6
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 1
+        - ReagentId: Z14MToxin
+          Quantity: 3
+        - ReagentId: Fat
+          Quantity: 2
+  - type: SliceableFood
+    slice: Z14FoodSaloSlice
+    count: 1
+  - type: Construction
+    graph: Z14MeatSalo
+    node: meat salo
+
+- type: entity
+  name: cracklings
+  parent: FoodMeatBase
+  id: Z14STFoodMeatCvarci
+  categories: [ Zona14 ]
+  description: A bit of fried salo.
+  suffix: Z14
+  components:
+  - type: STWeight
+    self: 0.05
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Consumable/Food/meat.rsi
+    state: cvarci
+  - type: Tag
+    tags:
+    - Meat
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: Protein
+          Quantity: 2
+        - ReagentId: Nutriment
+          Quantity: 1
+  - type: Craftable
+
+- type: constructionGraph
+  id: Z14MeatSalo
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: meat salo
+      completed:
+      - !type:PlaySound
+        sound: /Audio/Effects/sizzle.ogg
+      steps:
+      - minTemperature: 335
+  - node: meat salo
+    entity: Z14STFoodMeatCvarci
+
+- type: lightCraftingRecipe
+  id: Z14MeatSaloCraft
+  results:
+  - Z14STFoodMeatCvarci
+  steps:
+    firstIngredient: Z14FoodSaloSlice
+    secondIngredient: STBonfire
+    keepSecond: true
+    exactSecond: false
+    time: 5
+
+- type: lightCraftingRecipe
+  id: Z14MeatSaloCraftGas
+  results:
+  - Z14STFoodMeatCvarci
+  steps:
+    firstIngredient: Z14FoodSaloSlice
+    secondIngredient: GasStoveS1
+    keepSecond: true
+    exactSecond: false
+    time: 5
+
+# rat
+- type: entity
+  name: raw rat meat
+  parent: FoodMeatRawBase
+  id: Z14FoodMeatSTRatRaw
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: STWeight
+    self: 0.01
+  - type: FlavorProfile
+    flavors:
+    - meaty
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Consumable/Food/meat.rsi
+    state: ratraw
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 1
+  - type: InternalTemperature
+    conductivity: 0.43
+  - type: Construction
+    graph: Z14MeatSTRat
+    node: start
+    defaultTarget: meat strat
+  - type: Tag
+    tags:
+    - Meat
+  - type: Craftable
+  - type: Trash
+    time: 300
+
+- type: entity
+  name: roasted rat meat
+  parent: FoodMeatBase
+  id: Z14FoodMeatSTRatCooked
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: STWeight
+    self: 0.01
+  - type: Craftable
+  - type: Tag
+    tags:
+    - Cooked
+    - Meat
+  - type: FlavorProfile
+    flavors:
+    - meaty
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Consumable/Food/meat.rsi
+    state: ratcooked
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: Protein
+          Quantity: 1
+  - type: Construction
+    graph: Z14MeatSTRat
+    node: meat strat
+
+- type: constructionGraph
+  id: Z14MeatSTRat
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: meat strat
+      completed:
+      - !type:PlaySound
+        sound: /Audio/Effects/sizzle.ogg
+      steps:
+      - minTemperature: 335
+  - node: meat strat
+    entity: Z14FoodMeatSTRatCooked
+
+- type: lightCraftingRecipe
+  id: Z14MeatSTRatCraft
+  results:
+  - Z14FoodMeatSTRatCooked
+  steps:
+    firstIngredient: Z14FoodMeatSTRatRaw
+    secondIngredient: STBonfire
+    keepSecond: true
+    exactSecond: false
+    time: 10
+
+- type: lightCraftingRecipe
+  id: Z14MeatSTRatCraftGas
+  results:
+  - Z14FoodMeatSTRatCooked
+  steps:
+    firstIngredient: Z14FoodMeatSTRatRaw
+    secondIngredient: GasStoveS1
+    keepSecond: true
+    exactSecond: false
+    time: 10
+
+# jerky
+
+# bear
+- type: entity
+  name: spiced bear meat
+  parent: Z14FoodMeatSTBear
+  id: Z14FoodMeatSTBearSpiced
+  categories: [ Zona14 ]
+  description: Fatty raw bear meat. Spices have been rubbed in, now it needs to be left to dry.
+  suffix: Z14
+  components:
+  - type: STWeight
+    self: 1.0
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Consumable/Food/meat.rsi
+    state: bearspiced
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 10
+        - ReagentId: Fat
+          Quantity: 10
+        - ReagentId: Z14MToxin
+          Quantity: 5
+        - ReagentId: TableSalt
+          Quantity: 5
+  - type: TimedDespawn
+    lifetime: 600 # 10 min
+  - type: SpawnOnDespawn
+    prototype: Z14FoodMeatSTBearJerked
+  - type: Tag
+    tags:
+    - Meat
+
+- type: entity
+  name: jerked bear meat
+  parent: FoodMeatBase
+  id: Z14FoodMeatSTBearJerked
+  categories: [ Zona14 ]
+  description: The meat has a specific, fatty taste but keeps well on long trips and apparently doesn't absorb radiation..
+  suffix: Z14
+  components:
+  - type: STWeight
+    self: 0.75
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Consumable/Food/meat.rsi
+    state: bearjerkedwhole
+  - type: FlavorProfile
+    flavors:
+    - meaty
+    - salty
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: Protein
+          Quantity: 10
+        - ReagentId: Nutriment
+          Quantity: 10
+        - ReagentId: TableSalt
+          Quantity: 5
+  - type: SliceableFood
+    slice: Z14FoodMeatSTBearJerkedSingle
+    count: 3
+  - type: Tag
+    tags:
+    - Meat
+
+- type: entity
+  name: jerked bear meat
+  parent: FoodBase
+  id: Z14FoodMeatSTBearJerkedSingle
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: The meat has a specific, fatty taste but keeps well on long trips and apparently doesn't absorb radiation.
+  components:
+  - type: FlavorProfile
+    flavors:
+    - meaty
+    - salty
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Consumable/Food/meat.rsi
+    state: bearjerked
+  - type: STWeight
+    self: 0.25
+  - type: Item
+    size: Tiny
+    shape:
+    - 0,0,0,0
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: Protein
+          Quantity: 5
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: TableSalt
+          Quantity: 2
+  - type: SliceableFood
+    slice: Z14FoodMeatSTBearJerkedSingle
+    count: 1
+  - type: Craftable # i still havent decided if this is redundant
+
+- type: lightCraftingRecipe
+  id: Z14MeatSTBearJerkyCraft
+  results:
+  - Z14FoodMeatSTBearSpiced
+  steps:
+    firstIngredient: Z14FoodMeatSTBear
+    secondIngredient: Z14FoodSTSpice
+    time: 3
+
+# boar
+- type: entity
+  name: spiced boar meat
+  parent: Z14FoodMeatBoar
+  id: Z14FoodMeatSTBoarSpiced
+  categories: [ Zona14 ]
+  description: Boar meat rubbed with a spice mix for preservation. Needs to dry in the open air.
+  suffix: Z14
+  components:
+  - type: STWeight
+    self: 1.0
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Consumable/Food/meat.rsi
+    state: boarspiced
+    scale: 0.9,0.9
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 10
+        - ReagentId: Z14MToxin
+          Quantity: 5
+        - ReagentId: TableSalt
+          Quantity: 10
+  - type: TimedDespawn
+    lifetime: 600 # 10 min
+  - type: SpawnOnDespawn
+    prototype: Z14FoodMeatSTBoarJerked
+  - type: Tag
+    tags:
+    - Meat
+
+- type: entity
+  name: jerked boar meat
+  parent: FoodMeatBase
+  id: Z14FoodMeatSTBoarJerked
+  categories: [ Zona14 ]
+  description: Jerked boar meat with a rich salty taste. Keeps well on long trips.
+  suffix: Z14
+  components:
+  - type: STWeight
+    self: 0.75
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Consumable/Food/meat.rsi
+    state: boarjerkedwhole
+  - type: FlavorProfile
+    flavors:
+    - meaty
+    - salty
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: Protein
+          Quantity: 10
+        - ReagentId: Nutriment
+          Quantity: 10
+        - ReagentId: TableSalt
+          Quantity: 5
+  - type: SliceableFood
+    slice: Z14FoodMeatSTBoarJerkedSingle
+    count: 4
+  - type: Tag
+    tags:
+    - Meat
+
+- type: entity
+  name: jerked boar meat
+  parent: FoodBase
+  id: Z14FoodMeatSTBoarJerkedSingle
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: Jerked boar meat with a rich salty taste. Keeps well on long trips.
+  components:
+  - type: FlavorProfile
+    flavors:
+    - meaty
+    - salty
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Consumable/Food/meat.rsi
+    state: boarjerked
+    scale: 0.9,0.9
+  - type: STWeight
+    self: 0.25
+  - type: Item
+    size: Tiny
+    shape:
+    - 0,0,0,0
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: Protein
+          Quantity: 5
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: TableSalt
+          Quantity: 2
+  - type: SliceableFood
+    slice: Z14FoodMeatSTBoarJerkedSingle
+    count: 1
+  - type: Craftable # i still havent decided if this is redundant
+
+- type: lightCraftingRecipe
+  id: Z14MeatSTBoarJerkyCraft
+  results:
+  - Z14FoodMeatSTBoarSpiced
+  steps:
+    firstIngredient: Z14FoodMeatBoar
+    secondIngredient: Z14FoodSTSpice
+    time: 3
+
+# dog
+- type: entity
+  name: spiced dog meat
+  parent: Z14FoodMeatDog
+  id: Z14FoodMeatSTDogSpiced
+  categories: [ Zona14 ]
+  description: Blind dog meat from this region, generously seasoned with spices for curing. Needs to dry for a while.
+  suffix: Z14
+  components:
+  - type: STWeight
+    self: 1.0
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Consumable/Food/meat.rsi
+    state: dogspiced
+    scale: 0.7,0.7
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 8
+        - ReagentId: Z14MToxin
+          Quantity: 10
+        - ReagentId: TableSalt
+          Quantity: 5
+  - type: TimedDespawn
+    lifetime: 300 # 5 min
+  - type: SpawnOnDespawn
+    prototype: Z14FoodMeatSTDogJerked
+  - type: Tag
+    tags:
+    - Meat
+
+- type: entity
+  name: jerked dog meat
+  parent: FoodMeatBase
+  id: Z14FoodMeatSTDogJerked
+  categories: [ Zona14 ]
+  description: Not the tastiest beef jerky in the world, but thrill-seekers in this region can't be picky. At least it keeps well on trips.
+  suffix: Z14
+  components:
+  - type: STWeight
+    self: 0.75
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Consumable/Food/meat.rsi
+    state: dogjerkedwhole
+    scale: 0.7,0.7
+  - type: FlavorProfile
+    flavors:
+    - meaty
+    - salty
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: Protein
+          Quantity: 6
+        - ReagentId: Nutriment
+          Quantity: 8
+        - ReagentId: TableSalt
+          Quantity: 5
+  - type: SliceableFood
+    slice: Z14FoodMeatSTDogJerkedSingle
+    count: 4
+  - type: Tag
+    tags:
+    - Meat
+
+- type: entity
+  name: jerked dog meat
+  parent: FoodBase
+  id: Z14FoodMeatSTDogJerkedSingle
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: Not the tastiest beef jerky in the world, but thrill-seekers in this region can't be picky. At least it keeps well on trips.
+  components:
+  - type: FlavorProfile
+    flavors:
+    - meaty
+    - salty
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Consumable/Food/meat.rsi
+    state: dogjerked
+  - type: STWeight
+    self: 0.25
+  - type: Item
+    size: Tiny
+    shape:
+    - 0,0,0,0
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: Protein
+          Quantity: 4
+        - ReagentId: Nutriment
+          Quantity: 4
+        - ReagentId: TableSalt
+          Quantity: 2
+  - type: SliceableFood
+    slice: Z14FoodMeatSTDogJerkedSingle
+    count: 1
+  - type: Craftable # i still havent decided if this is redundant
+
+- type: lightCraftingRecipe
+  id: Z14MeatSTDogJerkyCraft
+  results:
+  - Z14FoodMeatSTDogSpiced
+  steps:
+    firstIngredient: Z14FoodMeatDog
+    secondIngredient: Z14FoodSTSpice
+    time: 3
+
+# rat
+- type: entity
+  name: spiced rat meat
+  parent: Z14FoodMeatSTRatRaw
+  id: Z14FoodMeatSTRatSpiced
+  categories: [ Zona14 ]
+  description: More spices than meat. It will dry out fairly quickly.
+  suffix: Z14
+  components:
+  - type: STWeight
+    self: 0.1
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Consumable/Food/meat.rsi
+    state: ratspiced
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 1
+        - ReagentId: TableSalt
+          Quantity: 4
+  - type: TimedDespawn
+    lifetime: 20 # 20 seconds
+  - type: SpawnOnDespawn
+    prototype: Z14FoodMeatSTRatJerked
+  - type: Tag
+    tags:
+    - Meat
+
+- type: entity
+  name: jerked rat meat
+  parent: FoodMeatBase
+  id: Z14FoodMeatSTRatJerked
+  categories: [ Zona14 ]
+  description: Several pieces of aromatic rat meat.
+  suffix: Z14
+  components:
+  - type: STWeight
+    self: 0.1
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Consumable/Food/meat.rsi
+    state: ratjerked
+  - type: FlavorProfile
+    flavors:
+    - meaty
+    - salty
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: Protein
+          Quantity: 1
+        - ReagentId: TableSalt
+          Quantity: 4
+  - type: Tag
+    tags:
+    - Meat
+
+- type: lightCraftingRecipe
+  id: Z14MeatSTRatJerkyCraft
+  results:
+  - Z14FoodMeatSTRatSpiced
+  steps:
+    firstIngredient: Z14FoodMeatSTRatRaw
+    secondIngredient: Z14FoodSTSpice
+    time: 3
+
+# bloodsucker
+- type: entity
+  name: spiced bloodsucker tentacles
+  parent: MutantPartBloodsuckerTentacles
+  id: Z14FoodSTSuckerSpiced
+  categories: [ Zona14 ]
+  description: Bloodsucker tentacles rubbed with spices. Left in the open air they'll dry out, but it may take a while.
+  suffix: Z14
+  components:
+  - type: STWeight
+    self: 2.75
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Consumable/Food/meat.rsi
+    state: suckerspiced
+  - type: TimedDespawn
+    lifetime: 900 # 15 min
+  - type: SpawnOnDespawn
+    prototype: Z14FoodMeatSTSuckerJerked
+  - type: Tag
+    tags:
+    - Meat
+
+- type: entity
+  name: jerked bloodsucker meat
+  parent: FoodMeatBase
+  id: Z14FoodMeatSTSuckerJerked
+  categories: [ Zona14 ]
+  description: The tentacles are rubbery and fibrous, with a faint smell of iron. For those sick enough to eat them, they keep well on long trips. Some hunters believe carrying dried bloodsucker meat brings luck.
+  suffix: Z14
+  components:
+  - type: STWeight
+    self: 1.5
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Consumable/Food/meat.rsi
+    state: suckerjerkedwhole
+  - type: FlavorProfile
+    flavors:
+    - meaty
+    - salty
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: Protein
+          Quantity: 15
+        - ReagentId: Nutriment
+          Quantity: 15
+        - ReagentId: Saline
+          Quantity: 15
+        - ReagentId: TableSalt
+          Quantity: 5
+  - type: SliceableFood
+    slice: Z14FoodMeatSTSuckerJerkedSingle
+    count: 4
+  - type: Tag
+    tags:
+    - Meat
+
+- type: entity
+  name: jerked bloodsucker meat
+  parent: FoodBase
+  id: Z14FoodMeatSTSuckerJerkedSingle
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: The tentacles are rubbery and fibrous, with a faint smell of iron. For those sick enough to eat them, they keep well on long trips. Some hunters believe carrying dried bloodsucker meat brings luck.
+  components:
+  - type: FlavorProfile
+    flavors:
+    - meaty
+    - salty
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Consumable/Food/meat.rsi
+    state: suckerjerked
+  - type: STWeight
+    self: 0.25
+  - type: Item
+    size: Tiny
+    shape:
+    - 0,0,0,0
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: Protein
+          Quantity: 5
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: Saline
+          Quantity: 5
+        - ReagentId: TableSalt
+          Quantity: 2
+  - type: SliceableFood
+    slice: Z14FoodMeatSTSuckerJerkedSingle
+    count: 1
+  - type: Craftable # i still havent decided if this is redundant
+
+- type: lightCraftingRecipe
+  id: Z14MeatSTSuckerJerkyCraft
+  results:
+  - Z14FoodSTSuckerSpiced
+  steps:
+    firstIngredient: Z14MutantPartBloodsuckerTentacles
+    secondIngredient: Z14FoodSTSpice
+    time: 3

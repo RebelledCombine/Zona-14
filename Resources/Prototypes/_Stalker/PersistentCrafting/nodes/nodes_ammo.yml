@@ -1,6 +1,7 @@
+# Zona14: translated Russian names/descriptions to English
 - type: persistentCraftNode
   id: PersistentCraftWeaponAmmoNodeT1
-  name: Боеприпасы I
+  name: Ammunition I
   description: persistent-craft-node-sub-recipe-desc
   branch: Ammo
   cost: 0
@@ -10,7 +11,7 @@
 
 - type: persistentCraftNode
   id: PersistentCraftWeaponAmmoNodeT2
-  name: Боеприпасы II
+  name: Ammunition II
   description: persistent-craft-node-sub-recipe-desc
   branch: Ammo
   cost: 0
@@ -22,7 +23,7 @@
 
 - type: persistentCraftNode
   id: PersistentCraftWeaponAmmoNodeT3
-  name: Боеприпасы III
+  name: Ammunition III
   description: persistent-craft-node-sub-recipe-desc
   branch: Ammo
   cost: 0
@@ -34,7 +35,7 @@
 
 - type: persistentCraftNode
   id: PersistentCraftWeaponAmmoNodeT4
-  name: Боеприпасы IV
+  name: Ammunition IV
   description: persistent-craft-node-sub-recipe-desc
   branch: Ammo
   cost: 0
@@ -46,7 +47,7 @@
 
 - type: persistentCraftNode
   id: PersistentCraftWeaponAmmoNodeT5
-  name: Боеприпасы V
+  name: Ammunition V
   description: persistent-craft-node-sub-recipe-desc
   branch: Ammo
   cost: 0

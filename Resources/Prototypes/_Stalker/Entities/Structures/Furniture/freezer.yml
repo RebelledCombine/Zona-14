@@ -1,4 +1,5 @@
-# БАЗОВАЯ СТРУКТУРА ХОЛОДИЛЬНИКА
+# Zona14: translated Russian names/descriptions to English
+# Zona14: БАЗОВАЯ СТРУКТУРА ХОЛОДИЛЬНИКА
 
 - type: entity
   id: BaseStalkerFreezer
@@ -86,14 +87,14 @@
     stateDoorOpen: generic_open
     stateDoorClosed: generic_door
 
-# НЕ СТАТИЧНЫЙ ХОЛОДИЛЬНИК (РАБОТАЮЩИЙ)
+# Zona14: НЕ СТАТИЧНЫЙ ХОЛОДИЛЬНИК (РАБОТАЮЩИЙ)
 
 - type: entity
   id: LockerFreezerStalker
   parent: BaseStalkerFreezer
-  name: холодильник
+  name: refrigerator
   suffix: ST, Mapping (No static)
-  description: Устройство, поддерживающее низкую температуру в теплоизолированной камере. Применяется обычно для хранения пищи или предметов.
+  description: A device that maintains a low temperature in a thermally insulated chamber. It is usually used to store food or objects.
   components:
   - type: Appearance
   - type: EntityStorageVisuals
@@ -104,14 +105,14 @@
     damageCoefficient: 0.50
   - type: AntiRottingContainer
 
-# СТАТИЧНЫЙ ХОЛОДИЛЬНИК (НЕ РАБОТАЮЩИЙ)
+# Zona14: СТАТИЧНЫЙ ХОЛОДИЛЬНИК (НЕ РАБОТАЮЩИЙ)
 
 - type: entity
   id: FreezerStalker
   parent: BaseStructure
-  name: холодильник
+  name: "{ ent-LockerFreezerStalker }"
   suffix: ST, Mapping (static)
-  description: Устройство, поддерживающее низкую температуру в теплоизолированной камере. Применяется обычно для хранения пищи или предметов. Похоже, дверь заржавела. Он не открывается.
+  description: A device that maintains a low temperature in a thermally insulated chamber. It is usually used to store food or objects. It looks like the door is rusted. It does not open.
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Furniture/freezer/staticfreezer.rsi

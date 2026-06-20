@@ -1,0 +1,348 @@
+# Spawned by Electra, Garland
+- type: entity
+  parent: Z14BaseArtifact
+  id: Z14ZoneArtifactSparkler
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Sprite
+    state: sparkler
+    scale: 0.5, 0.5
+  - type: ZoneArtifact
+    anomaly: Z14ZoneAnomalyElectra
+  - type: ZoneArtifactDetectorTarget
+    detectedLevel: 1
+  - type: PointLight
+    radius: 1.5
+    energy: 4.5
+    color: "#09efff"
+    castShadows: false
+  - type: PersonalDamage
+    damage:
+      types:
+        Radiation: 0.5
+        Compression: -0.3
+        Shock: -0.6
+    interval: 1
+  - type: Armor
+    hiddenExamine: true
+    armorClass: 2
+    modifiers:
+      coefficients:
+        Shock: 0.9
+        Compression: 0.9
+  - type: Tag
+    tags:
+    - Khabar
+    - STArtifact
+    - STArtifactTier1
+
+- type: entity
+  parent: Z14BaseArtifact
+  id: Z14ZoneArtifactBattery
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Sprite
+    state: battery
+    scale: 0.5, 0.5
+  - type: ZoneArtifact
+    anomaly: Z14ZoneAnomalyGarland
+  - type: ZoneArtifactDetectorTarget
+    detectedLevel: 2
+  - type: PointLight
+    radius: 1.5
+    energy: 5.5
+    color: "#09efff"
+    castShadows: false
+  - type: PersonalDamage
+    staminaDamage: -3
+    damage:
+      types:
+        Shock: 0.3
+    interval: 1
+  - type: Armor
+    hiddenExamine: true
+    armorClass: 2
+    modifiers:
+      coefficients:
+        Blunt: 0.85
+        Radiation: 0.95
+  - type: Tag
+    tags:
+    - Khabar
+    - STArtifact
+    - STArtifactTier2
+
+- type: entity
+  parent: Z14BaseArtifact
+  id: Z14ZoneArtifactAccumulator
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Sprite
+    state: baccum
+    scale: 0.8, 0.8
+  - type: ZoneArtifact
+    anomaly: Z14ZoneAnomalyGarland
+  - type: ZoneArtifactDetectorTarget
+    detectedLevel: 2
+  - type: PointLight
+    radius: 1.5
+    energy: 5.5
+    color: "#09efff"
+    castShadows: false
+  - type: PersonalDamage
+    damage:
+      types:
+        Slash: -0.4
+        Blunt: -0.4
+        Shock: 0.5
+        Asphyxiation: -0.5
+    interval: 1
+  - type: Armor
+    hiddenExamine: true
+    armorClass: 2
+    modifiers:
+      coefficients:
+        Cold: 0.8
+  - type: Tag
+    tags:
+    - Khabar
+    - STArtifact
+    - STArtifactTier2
+
+- type: entity
+  parent: Z14BaseArtifact
+  id: Z14ZoneArtifactDiamond
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Sprite
+    state: diamond
+    scale: 0.8, 0.8
+  - type: ZoneArtifact
+    anomaly: Z14ZoneAnomalyGarland
+  - type: ZoneArtifactDetectorTarget
+    detectedLevel: 4
+  - type: PointLight
+    radius: 1.5
+    energy: 5.5
+    color: "#09efff"
+    castShadows: false
+  - type: PersonalDamage
+    damage:
+      types:
+        Cold: 2.3
+        Psy: -1.6
+    interval: 1
+  - type: STWeight
+    self: -1
+  - type: Armor
+    hiddenExamine: true
+    armorClass: 2
+    modifiers:
+      coefficients:
+        Piercing: 0.9
+        Radiation: 0.3
+  - type: Tag
+    tags:
+    - Khabar
+    - STArtifact
+    - STArtifactTier4
+
+- type: entity
+  parent: Z14BaseArtifact
+  id: Z14ZoneArtifactCharger
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Sprite
+    state: charger
+    scale: 0.8, 0.8
+  - type: ZoneArtifact
+    anomaly: Z14ZoneAnomalyGarland
+  - type: ZoneArtifactDetectorTarget
+    detectedLevel: 4
+  - type: PointLight
+    radius: 1.5
+    energy: 5.5
+    color: "#09efff"
+    castShadows: false
+  - type: PersonalDamage
+    staminaDamage: -1.5
+    damage:
+      types:
+        Shock: 2
+        Radiation: 2
+        Cold: 2
+    interval: 1
+  - type: ClothingSpeedModifier
+    walkModifier: 1.3
+    sprintModifier: 1.3
+  - type: Tag
+    tags:
+    - Khabar
+    - STArtifact
+    - STArtifactTier4
+
+- type: entity
+  parent: Z14BaseArtifact
+  id: Z14ZoneArtifactFlash
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Sprite
+    state: flash
+    scale: 0.5, 0.5
+  - type: ZoneArtifact
+    anomaly: Z14ZoneAnomalySource
+  - type: ZoneArtifactDetectorTarget
+    detectedLevel: 3
+  - type: PointLight
+    radius: 1.5
+    energy: 7.5
+    color: "#09efff"
+    castShadows: false
+  - type: PersonalDamage
+    staminaDamage: -6
+    damage:
+      types:
+        Radiation: 1
+        Cold: -1.5
+        Psy: -1
+    interval: 1
+  - type: Armor
+    hiddenExamine: true
+    armorClass: 2
+    modifiers:
+      coefficients:
+        Piercing: 1.2
+        Shock: 0.6
+        Cold: 0.
+  - type: Tag
+    tags:
+    - Khabar
+    - STArtifact
+    - STArtifactTier3
+
+# Spawned by Source
+- type: entity
+  parent: Z14BaseArtifact
+  id: Z14ArtMoon
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Sprite
+    state: moon
+    scale: 0.5, 0.5
+  - type: PointLight
+    radius: 1.5
+    energy: 7.5
+    color: "#1e90ff"
+    castShadows: false
+  - type: ZoneArtifact
+    anomaly: Z14ZoneAnomalySource
+  - type: ZoneArtifactDetectorTarget
+    detectedLevel: 4
+  - type: PersonalDamage
+    staminaDamage: -4
+    damage:
+      types:
+        Shock: -1.5
+    interval: 1
+  - type: Armor
+    hiddenExamine: true
+    armorClass: 2
+    modifiers:
+      flatReductions:
+        Psy: 2
+      coefficients:
+        Slash: 0.85
+        Compression: 0.8
+  - type: Tag
+    tags:
+    - Khabar
+    - STArtifact
+    - STArtifactTier4
+
+
+- type: entity
+  parent: Z14BaseArtifact
+  id: Z14ZoneArtifactTesla
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Sprite
+    state: tesla
+    scale: 0.5, 0.5
+  - type: PointLight
+    radius: 1.5
+    energy: 7.5
+    color: "#1e90ff"
+    castShadows: false
+  - type: ZoneArtifact
+    anomaly: Z14ZoneAnomalySource
+  - type: ZoneArtifactDetectorTarget
+    detectedLevel: 5
+  - type: PersonalDamage
+    staminaDamage: -5
+    damage:
+      types:
+        Radiation: -3
+    interval: 1
+  - type: Armor
+    hiddenExamine: true
+    armorClass: 2
+    modifiers:
+      coefficients:
+        Slash: 0.7
+        Shock: 0.2
+  - type: Tag
+    tags:
+    - Khabar
+    - STArtifact
+    - STArtifactTier5
+
+- type: entity
+  parent: Z14BaseArtifact
+  id: Z14ZoneArtifactIce
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Sprite
+    state: ice
+    scale: 0.5, 0.5
+  - type: PointLight
+    radius: 2.5
+    energy: 9.5
+    color: "#1e90ff"
+    castShadows: false
+  - type: ZoneArtifact
+    anomaly: Z14ZoneAnomalySource
+  - type: ZoneArtifactDetectorTarget
+    detectedLevel: 5
+  - type: PersonalDamage
+    staminaDamage: -3
+    damage:
+      types:
+        Radiation: 2
+        Caustic: -2
+        Heat: -2
+        Compression: -2
+        Shock: -2
+        Cold: -2
+        Psy: -2
+    interval: 1
+  - type: Armor
+    hiddenExamine: true
+    armorClass: 2
+    modifiers:
+      coefficients:
+        Psy: 0.4
+        Compression: 0.6
+  - type: Tag
+    tags:
+    - Khabar
+    - STArtifact
+    - STArtifactTier5

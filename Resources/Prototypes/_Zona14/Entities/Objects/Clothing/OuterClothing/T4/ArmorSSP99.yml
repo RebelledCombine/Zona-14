@@ -1,0 +1,267 @@
+# Base
+- type: entity
+  parent: Z14ArmorBaseT1PvP
+  id: Z14STClothingOuterArmorSSP99Base
+  categories: [ Zona14 ]
+  name: SSP-99
+  abstract: true
+  components:
+  - type: Craftable
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/ssp99.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/ssp99.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetSSP99
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+      - 0,0,5,3
+      - 7,0,12,3
+    blacklist:
+      tags:
+      - STArtifact
+  - type: ClothingSpeedModifier
+    walkModifier: 0.95
+    sprintModifier: 0.95
+- type: entity
+  parent: ClothingHeadHardsuitBase
+  id: Z14STClothingHeadHelmetSSP99Base
+  name: Green Ecologist's helmet
+  description: Lightweight helmet with a sealed visor, designed to protect the face from some anomalous effects.
+  categories: [ HideSpawnMenu, Zona14 ]
+  abstract: true
+  components:
+  - type: STWeight
+    self: 1
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/ssp99_helm.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/ssp99_helm.rsi
+  - type: IdentityBlocker
+  - type: IngestionBlocker
+  - type: PressureProtection
+    highPressureMultiplier: 0.1
+    lowPressureMultiplier: 1000
+
+# Stalker
+- type: entity
+  parent: Z14STClothingOuterArmorSSP99Base
+  id: Z14ClothingOuterArmorSSP99
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: 'Green SSP-99 "Ecologist"'
+  description: High-quality modified SSP-99 suit. Added torso protection from bullet and shrapnel damage. Again outdated, like its younger sibling.
+  components:
+  - type: STWeight
+    self: 5
+  - type: Armor
+    modifiers:
+      flatReductions:
+        Blunt: 2
+        Slash: 2
+        Piercing: 2
+        Heat: 1
+        Cold: 1
+        Shock: 1
+        Radiation: 1
+        Caustic: 1
+        Compression: 1
+        Psy: 1
+      coefficients:
+        Blunt: 0.90
+        Slash: 0.90
+        Piercing: 0.90
+        Heat: 0.90
+        Cold: 0.90
+        Shock: 0.90
+        Radiation: 0.90
+        Caustic: 0.90
+        Compression: 0.90
+        Psy: 0.90
+  - type: GrantsArtifactSlots
+    slots: 4 # Stalker-Changes | Number of artifact slots this armor grants
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/ssp99.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/ssp99.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetSSP99
+
+- type: entity
+  parent: Z14STClothingHeadHelmetSSP99Base
+  id: Z14ClothingHeadHelmetSSP99
+  suffix: Z14
+  name: Green Ecologist's helmet
+  description: Lightweight helmet with a sealed visor, designed to protect the face from some anomalous effects.
+  categories: [ HideSpawnMenu, Zona14 ]
+  components:
+  - type: STWeight
+    self: 1
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/ssp99_helm.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/ssp99_helm.rsi
+
+# Zavet
+
+- type: entity
+  parent: Z14STClothingOuterArmorSSP99Base
+  id: Z14ClothingOuterArmorSSP99Zavet
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: '"Covenant" Balanced Scorecard'
+  description: SSP armor used by the Covenant faction.
+  components:
+    - type: STWeight
+      self: 5
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/outerClothing/zavet_ssp/zavet_ssp.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/outerClothing/zavet_ssp/zavet_ssp.rsi
+    - type: ToggleableClothing
+      clothingPrototype: ClothingHeadHelmetSSPZavet
+
+- type: entity
+  parent: Z14STClothingHeadHelmetSSP99Base
+  id: Z14ClothingHeadHelmetSSPZavet
+  suffix: Z14
+  name: Covenant Helmet
+  description: SSP armor helmet used by the Covenant faction.
+  categories: [ HideSpawnMenu, Zona14 ]
+  components:
+    - type: STWeight
+      self: 1
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/outerClothing/zavet_ssp/helmet.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/outerClothing/zavet_ssp/helmet.rsi
+
+# Amber
+
+- type: entity
+  parent: Z14STClothingOuterArmorSSP99Base
+  id: Z14ClothingOuterArmorSSP99Amber
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: 'Orange SSP-99 "Amber"'
+  description: A protective suit created for Zone work. Long outdated but still used by scientists due to lack of proper funding.
+  components:
+  - type: STWeight
+    self: 5
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/ssp99red.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/ssp99red.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetSSP99Amber
+
+- type: entity
+  parent: Z14STClothingHeadHelmetSSP99Base
+  id: Z14ClothingHeadHelmetSSP99Amber
+  suffix: Z14
+  name: Amber Orange Helmet
+  description: Lightweight helmet with a sealed visor, designed to protect the face from some anomalous effects.
+  categories: [ HideSpawnMenu, Zona14 ]
+  components:
+    - type: STWeight
+      self: 1
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/hats/ssp99_red.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/hats/ssp99_red.rsi
+
+# Diamond
+
+- type: entity
+  parent: Z14STClothingOuterArmorSSP99Base
+  id: Z14ClothingOuterArmorSSP99White
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: 'White SSP-99 "Almaz"'
+  description: One of those ChAZ Research Institute suits that can be called successful.
+  components:
+  - type: STWeight
+    self: 5
+  - type: Armor
+    modifiers:
+      flatReductions:
+        Blunt: 2
+        Slash: 2
+        Piercing: 2
+        Heat: 1
+        Cold: 1
+        Shock: 1
+        Radiation: 1
+        Caustic: 1
+        Compression: 1
+        Psy: 1
+      coefficients:
+        Blunt: 0.90
+        Slash: 0.90
+        Piercing: 0.90
+        Heat: 0.90
+        Cold: 0.90
+        Shock: 0.90
+        Radiation: 0.90
+        Caustic: 0.90
+        Compression: 0.90
+        Psy: 0.90
+  - type: GrantsArtifactSlots
+    slots: 4 # Stalker-Changes | Number of artifact slots this armor grants
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/ssp99white.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/ssp99white.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetSSP99White
+
+- type: entity
+  parent: Z14STClothingHeadHelmetSSP99Base
+  id: Z14ClothingHeadHelmetSSP99White
+  suffix: Z14
+  name: 'white helmet SSP-99 "Almaz"'
+  description: Protects from anomalies and radiation, but definitely not from bullets.
+  categories: [ HideSpawnMenu, Zona14 ]
+  components:
+    - type: STWeight
+      self: 1
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/hats/ssp99_white.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/hats/ssp99_white.rsi
+
+# Project
+
+- type: entity
+  parent: Z14STClothingOuterArmorSSP99Base
+  id: Z14STClothingOuterArmorSSP99Project
+  categories: [ Zona14 ]
+  name: '"NJ-1 SSP" suit'
+  suffix: Z14
+  description: Special NJ-1 electrical protection suit that insulates against weak electrical effects on both the suit and wearer.
+  components:
+  - type: STWeight
+    self: 5
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/ssp_nj1.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/ssp_nj1.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHardsuitSevaHelmNJ1
+    slot: head
+
+- type: entity
+  parent: Z14STClothingHeadHelmetSSP99Base
+  id: Z14ClothingHeadHardsuitSevaHelmNJ1
+  name: '"NJ-1 Helmet"'
+  description: Despite being mostly glass, quite durable.
+  suffix: Z14
+  categories: [ HideSpawnMenu, Zona14 ]
+  components:
+  - type: STWeight
+    self: 1
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/ssp_helm_nj1.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/ssp_helm_nj1.rsi

@@ -1,0 +1,16 @@
+
+- type: entity
+  parent: Z14GasMaskBase
+  id: Z14ClothingMaskM50
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: M50 Gas Mask
+  description: Filtering personal protective equipment for respiratory organs, eyes, and facial skin, developed and manufactured in the USA. Protects from toxins.
+  components:
+  - type: Tag
+    tags:
+      - BlockMask
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/mask/m50.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/mask/m50.rsi

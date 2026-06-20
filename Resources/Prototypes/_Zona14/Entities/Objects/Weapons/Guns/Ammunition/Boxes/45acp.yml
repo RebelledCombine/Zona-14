@@ -3,7 +3,7 @@
   id: Z1445ACPLFMJBox
   suffix: Z14
   categories: [ Zona14 ]
-  name: ammo box (.45 ACP) Lasermatch FMJ
+  name: Ammo Box (.45 ACP) Lasermatch FMJ
   description: For select pistols and revolvers, 30 rounds per box. Penetrates only class 1 armor.
   components:
     - type: MagazineVisuals
@@ -26,7 +26,7 @@
   id: Z1445ACPMFMJBox
   suffix: Z14
   categories: [ Zona14 ]
-  name: ammo box (.45 ACP) Match FMJ
+  name: Ammo Box (.45 ACP) Match FMJ
   description: For select pistols and revolvers, 30 rounds per box. Penetrates class 2 armor.
   components:
     - type: MagazineVisuals
@@ -50,7 +50,7 @@
   id: Z1445ACPHydroshockBox
   suffix: Z14
   categories: [ Zona14 ]
-  name: ammo box (.45 ACP) Hydro-shock
+  name: Ammo Box (.45 ACP) Hydro-shock
   description: For select pistols and revolvers, 30 rounds per box. Penetrates class 1 armor.
   components:
     - type: MagazineVisuals
@@ -73,7 +73,7 @@
   id: Z1445ACPRIPBox
   suffix: Z14
   categories: [ Zona14 ]
-  name: ammo box (.45 ACP) RIP
+  name: Ammo Box (.45 ACP) RIP
   description: For select pistols and revolvers, 30 rounds per box. Useless against armor.
   components:
     - type: BallisticAmmoProvider
@@ -94,7 +94,7 @@
   id: Z1445ACPAPBox
   suffix: Z14
   categories: [ Zona14 ]
-  name: ammo box (.45 ACP) AP
+  name: Ammo Box (.45 ACP) AP
   description: For select pistols and revolvers, 30 rounds per box. Penetrates class 3 armor.
   components:
     - type: BallisticAmmoProvider
@@ -115,7 +115,7 @@
   id: Z1445ACPLFMJBoxCink
   suffix: Z14
   categories: [ Zona14 ]
-  name: ammo crate (.45 ACP) Lasermatch FMJ
+  name: Large Ammo Box (.45 ACP) Lasermatch FMJ
   description: For select pistols and revolvers, 30 rounds per box. Penetrates only class 1 armor.
   components:
     - type: BallisticAmmoProvider
@@ -136,7 +136,7 @@
   id: Z1445ACPMFMJBoxCink
   suffix: Z14
   categories: [ Zona14 ]
-  name: ammo crate (.45 ACP) Match FMJ
+  name: Large Ammo Box (.45 ACP) Match FMJ
   description: For select pistols and revolvers, 300 rounds per crate. Penetrates class 2 armor.
   components:
     - type: BallisticAmmoProvider
@@ -157,7 +157,7 @@
   id: Z1445ACPHydroshockBoxCink
   suffix: Z14
   categories: [ Zona14 ]
-  name: ammo crate (.45 ACP) Hydro-shock
+  name: Large Ammo Box (.45 ACP) Hydro-shock
   description: For select pistols and revolvers, 300 rounds per crate. Penetrates class 1 armor.
   components:
     - type: BallisticAmmoProvider
@@ -178,7 +178,7 @@
   id: Z1445ACPRIPBoxCink
   suffix: Z14
   categories: [ Zona14 ]
-  name: ammo crate (.45 ACP) RIP
+  name: Large Ammo Box (.45 ACP) RIP
   description: For select pistols and revolvers, 300 rounds per crate. Useless against armor.
   components:
     - type: BallisticAmmoProvider
@@ -199,7 +199,7 @@
   id: Z1445ACPAPBoxCink
   suffix: Z14
   categories: [ Zona14 ]
-  name: ammo crate (.45 ACP) AP
+  name: Large Ammo Box (.45 ACP) AP
   description: For select pistols and revolvers, 30 rounds per box. Penetrates class 3 armor.
   components:
     - type: BallisticAmmoProvider

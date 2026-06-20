@@ -1,3 +1,4 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: STBaseMaterialDoor
   parent: BaseStructure
@@ -50,9 +51,9 @@
 
 - type: entity
   id: StalkerMetalDoor
-  name: металическая дверь
+  name: metal door
   parent: STBaseMaterialDoor
-  description: Старая металическая дверь.
+  description: Old metal door.
   suffix: ST, mapping
   components:
   - type: Sprite
@@ -75,10 +76,10 @@
 ###KMIN Doors
 - type: entity
   id: MetalDoorFallout
-  name: Стальная дверь
+  name: Steel Door
   suffix: ST, Mapping, KMIN
   parent: STBaseMaterialDoor
-  description: Обычная стальная дверь.
+  description: Normal Steel Door.
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Doors/KMIN Doors/metal/metal.rsi
@@ -132,10 +133,10 @@
 
 - type: entity
   id: MetalRedDoorFallout
-  name: Красная стальная дверь
+  name: Red Steel Door
   suffix: ST, Mapping, KMIN
   parent: STBaseMaterialDoor
-  description: Обычная стальная дверь, окрашена в красный цвет.
+  description: Normal steel door, painted red.
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Doors/KMIN Doors/metal/metalred.rsi
@@ -161,10 +162,10 @@
 
 - type: entity
   id: MetalAltDoorFallout
-  name: Стальная дверь
+  name: "{ ent-MetalDoorFallout }"
   suffix: ST, Mapping, KMIN
   parent: STBaseMaterialDoor
-  description: Обычная стальная дверь.
+  description: "{ ent-MetalDoorFallout.desc }"
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Doors/KMIN Doors/metal/metalalt.rsi
@@ -190,10 +191,10 @@
 
 - type: entity
   id: MetalBarDoorFallout
-  name: Решетчатая дверь
+  name: Lattice Door
   suffix: ST, Mapping, KMIN
   parent: STBaseMaterialDoor
-  description: Обычная решетчатая дверь.
+  description: Normal lattice door.
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Doors/KMIN Doors/metal/metalbar.rsi
@@ -222,10 +223,10 @@
 
 - type: entity
   id: MetalGrateDoorFallout
-  name: Укрепленная решетчатая дверь
+  name: Reinforced Lattice Door
   suffix: ST, Mapping, KMIN
   parent: STBaseMaterialDoor
-  description: Обычная решетчатая дверь
+  description: Normal lattice door
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Doors/KMIN Doors/metal/metalgrate.rsi
@@ -254,10 +255,10 @@
 
 - type: entity
   id: MetalWindowDoorFallout
-  name: Оконная стальная дверь
+  name: Steel Window Door
   suffix: ST, Mapping, KMIN
   parent: STBaseMaterialDoor
-  description: Обычная стальная дверь, с окном.
+  description: Normal steel door, with a window.
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Doors/KMIN Doors/metal/metalwindow.rsi
@@ -286,10 +287,10 @@
 
 - type: entity
   id: WoodDoorFallout
-  name: Деревянная дверь
+  name: Wooden Door
   suffix: ST, Mapping, KMIN
   parent: STBaseMaterialDoor
-  description: Обычная деревянная дверь.
+  description: Normal wooden door.
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Doors/KMIN Doors/wood/wood.rsi
@@ -315,10 +316,10 @@
 
 - type: entity
   id: WoodWhiteDoorFallout
-  name: Белая деревянная дверь
+  name: White Wooden Door
   suffix: ST, Mapping, KMIN
   parent: STBaseMaterialDoor
-  description: Обычная деревянная дверь, окрашена в белый цвет.
+  description: Plain wooden door, painted white.
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Doors/KMIN Doors/wood/white.rsi
@@ -344,10 +345,10 @@
 
 - type: entity
   id: WoodGreenDoorFallout
-  name: Зелёная деревянная дверь
+  name: Green Wooden Door
   suffix: ST, Mapping, KMIN
   parent: STBaseMaterialDoor
-  description: Обычная деревянная дверь, окрашена в зелёный цвет.
+  description: Normal wooden door, painted green.
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Doors/KMIN Doors/wood/green.rsi
@@ -373,10 +374,10 @@
 
 - type: entity
   id: WoodRedDoorFallout
-  name: Красная деревянная дверь
+  name: Red Wooden Door
   suffix: ST, Mapping, KMIN
   parent: STBaseMaterialDoor
-  description: Обычная деревянная дверь, окрашена в красный цвет. Открывается быстрее обычной двери.
+  description: Normal wooden door, painted red. Opens faster than a regular door.
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Doors/KMIN Doors/wood/red.rsi
@@ -402,10 +403,10 @@
 
 - type: entity
   id: WoodBlueDoorFallout
-  name: Синяя деревянная дверь
+  name: Blue Wooden Door
   suffix: ST, Mapping, KMIN
   parent: STBaseMaterialDoor
-  description: Обычная деревянная дверь, окрашена в синий цвет.
+  description: Normal wooden door, painted blue.
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Doors/KMIN Doors/wood/blue.rsi

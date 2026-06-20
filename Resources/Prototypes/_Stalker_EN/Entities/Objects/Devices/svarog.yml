@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: Veles
   id: Svarog
-  name: сварог
-  description: Усовершенствованный детектор, сочетающий в себе и обнаружения артефактов и обнаружение аномалий. Обновленная версия велеса.
+  name: svarog
+  description: An advanced detector that combines both artifact detection and anomaly detection. An updated version of the veles.
   suffix: Stalker EN, Advanced Radar
   components:
   - type: RepositoryItem

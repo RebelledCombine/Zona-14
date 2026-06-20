@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: BaseArrow
   id: Arrowboltrust
-  name: Ржавый болт
-  description: На скорую руку сделаный из из ржавого гвоздя и изоленты болт. Дешевое, но не очень эффективное решение когда нужно убить небольшого мутанта.
+  name: Rusty Bolt
+  description: A makeshift bolt quickly assembled from a rusty nail and duct tape. Cheap but not very effective against small mutants.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/arrows.rsi
@@ -29,8 +30,8 @@
 - type: entity
   parent: BaseArrow
   id: Arrowboltpiercing
-  name: Бронебойный болт
-  description: Особенный болт серафимов, созданный из осколка радиоактивного артефакта и других сподручных материалов. Бронебойный. Возможно.
+  name: Armor-Piercing Bolt
+  description: A special Seraphim bolt made from radioactive artifact fragments and salvaged parts. Potentially armor-piercing.
   components:
   - type: Sprite
     layers:
@@ -52,8 +53,8 @@
 - type: entity
   parent: BaseArrow
   id: ArrowAnomalybolt
-  name: Аномальный болт
-  description: Особенный болт, наконечник которого создан из осколка гравитационного артефакта.
+  name: Anomalous Bolt
+  description: A unique bolt with a tip forged from a gravitational artifact fragment.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/arrows.rsi
@@ -80,8 +81,8 @@
 - type: entity
   parent: BaseArrow
   id: Arrowadmin
-  name: СУПЕР-БОЛТ
-  description: Особенный...
+  name: SUPER BOLT
+  description: Something special...
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/arrows.rsi

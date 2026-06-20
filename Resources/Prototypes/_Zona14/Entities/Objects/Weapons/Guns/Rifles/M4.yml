@@ -87,14 +87,14 @@
   id: Z14STWeaponRifleM4
   suffix: Z14
   categories: [ Zona14 ]
-  name: Colt M4 "Cobra"
+  name: M4
   description: American assault rifle that became an icon of modern warfare. Appears in the Zone with western mercenaries and military expeditions. Lightweight, accurate and reliable in any conditions.
 
 - type: entity
   parent: Z14STBaseWeaponRifleM4
   id: Z14STWeaponRifleHK416
   categories: [ Zona14 ]
-  name: HK416
+  name: HK-416
   suffix: Z14, Custom
   description: German M4 upgrade with G36's gas system. Considered a weapon of true professionals in the Zone - silent and lethal. Rumored to use special armor-piercing rounds.
   components:

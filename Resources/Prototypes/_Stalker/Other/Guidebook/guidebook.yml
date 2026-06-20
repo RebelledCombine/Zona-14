@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: BaseItem
   id: gbs_info
-  name: Информация о сервере
-  description: Читай текст ниже.
+  name: Server Information
+  description: Read the text below.
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite

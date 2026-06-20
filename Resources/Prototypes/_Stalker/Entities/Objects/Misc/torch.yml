@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
-  name: факел
+  name: torch
   parent: BaseItem
   id: STTorchSera
-  suffix: ST, Скин
+  suffix: ST, Skin # Zona14: ST, Скин
   components:
     - type: ExpendableLight
       spentName: expendable-light-burnt-torch-name

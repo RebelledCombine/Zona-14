@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: GasStoveS1
   parent: BaseStructure
-  name: газовая плита
+  name: gas stove
   suffix: ST, Mapping
-  description: Кухонная плита, использующая в качестве топлива горючий газ. Может использоваться природный газ из городской газовой сети или сжиженный газ.
+  description: A cookstove that uses combustible gas as fuel.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Other/gas_stove.rsi

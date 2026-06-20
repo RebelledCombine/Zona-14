@@ -1,0 +1,3 @@
+ent-Z14STWeaponSMGPPSh41 = PPSh-41 Submachine Gun
+    .desc = The iconic Soviet PPSh-41 submachine gun chambered in 7.62x25mm Tokarev. Known for its legendary reliability and high rate of fire, it remains surprisingly effective in Zone conditions despite its age.
+    .suffix = Z14

@@ -1,3 +1,4 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: BaseItem
   id: ZoneAnomalyBaseDetector
@@ -12,7 +13,7 @@
           map: ["enum.ZoneAnomalyDetectorVisuals.Layer"]
           shader: unshaded
     - type: RepositoryItem
-      categoryName: Детекторы
+      categoryName: Detectors # Zona14: Детекторы
     - type: Appearance
     - type: GenericVisualizer
       visuals:
@@ -53,9 +54,9 @@
 - type: entity
   parent: ZoneAnomalyBaseDetector
   id: ZoneAnomalyDetectorUpgradeAD1
-  name: улучшенный детектор аномалий 1-й модели (ДА-1)
-  description: Ручной сканер который был модифицирован, уменьшена дистанция и предназначенный для реагирования аномалий на близком расстоянии
-  suffix: Stalker, Детектор
+  name: Advanced Model 1 Anomaly Detector (DA-1)
+  description: Handheld scanner that has been modified, reduced distance and designed to react to anomalies at close range
+  suffix: Stalker, Detector # Zona14: Stalker, Детектор
   components:
     - type: STWeight
       self: 0.8
@@ -100,9 +101,9 @@
 - type: entity
   parent: ZoneAnomalyBaseDetector
   id: ZoneAnomalyDetectorUpgradeAD2
-  name: улучшенный детектор аномалий 2-й модели (ДА-2)
-  description: Ручной сканер который был модифицирован, стал более точным но уменьшена дистанция и предназначенный для реагирования аномалий на близком расстоянии
-  suffix: Stalker, Детектор
+  name: Advanced Model 2 Anomaly Detector (DA-2)
+  description: Handheld scanner that has been modified is more accurate, but has a reduced distance and is designed to react to anomalies at close range
+  suffix: Stalker, Detector # Zona14: Stalker, Детектор
   components:
     - type: STWeight
       self: 1.2
@@ -123,9 +124,9 @@
 - type: entity
   parent: ZoneAnomalyBaseDetector
   id: ZoneAnomalyDetectorBMT12
-  name: детектор аномалий ВМТ-12
-  description:  Волновой Модуль Терешкова, разработанное после повторного появления Зоны в Институте устройство для обнаружения аномалий, использующее совершенно иные принципы детекции аномалий.
-  suffix: Stalker, Детектор
+  name: TDC-12 Anomaly Detector
+  description: Tereshkov's Wave Module, an anomaly detection device developed after the Site's reappearance at the Institute, using completely different principles of anomaly detection.
+  suffix: Stalker, Detector # Zona14: Stalker, Детектор
   components:
     - type: STWeight
       self: 0.8
@@ -146,9 +147,9 @@
 #- type: entity
 #  parent: ZoneAnomalyBaseDetector
 #  id: ZoneAnomalyDetectorBMT15
-#  name: детектор аномалий ВМТ-15
-#  description:  Волновой Модуль Терешкова, разработанное после повторного появления Зоны в Институте устройство для обнаружения аномалий, использующее совершенно иные принципы детекции аномалий.
-#  suffix: Stalker, Детектор
+# Zona14: name: детектор аномалий ВМТ-15
+# Zona14: description:  Волновой Модуль Терешкова, разработанное после повторного появления Зоны в Институте устройство для обнаружения аномалий, использующее совершенно иные принципы детекции аномалий.
+# Zona14: suffix: Stalker, Детектор
 #  components:
 #    - type: Sprite
 #      sprite: _Stalker/Objects/Devices/ZoneAnomalyDetectors/ad_4.rsi
@@ -219,8 +220,8 @@
 - type: entity
   parent: ZoneAnomalyBaseDetector
   id: ZoneAnomalyDetectorAD3
-  name: Детектор аномалий 3-й модели (ДА-3)
-  description: Модифицированная версия ДА-2, разработонная сотрудниками НИИ, может обнаруживать аномалии 4 уровня, благодоря новым датчикам обнаружения аномалий. В центральной части устройства находится артефакт "Батарейка".
+  name: Model 3 Anomaly Detector (DA-3)
+  description: "A modified version of DA-2 developed by the R&D staff can detect level 4 anomalies, thanks to new anomaly detection sensors. In the central part of the device there is an artifact \"Battery\"."
   suffix: Stalker, Detector
   components:
     - type: STWeight

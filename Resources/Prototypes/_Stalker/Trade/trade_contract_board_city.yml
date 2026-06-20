@@ -1,9 +1,10 @@
-﻿- type: entity
+﻿# Zona14: translated Russian names/descriptions to English
+- type: entity
   id: TradeContractBoardCity
   parent: Trademachine
-  name: доска контрактов
-  description: доска с заказами на поставки, охоту, ремонт и особые цели
-  suffix: ST, КВЕСТЫ
+  name: contract board
+  description: a board with orders for deliveries, hunting, repairs and special targets
+  suffix: ST, QUESTS # Zona14: ST, КВЕСТЫ
   components:
   - type: Sprite
     drawdepth: WallMountedItems

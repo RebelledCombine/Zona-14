@@ -1,0 +1,34 @@
+- type: entity
+  name: turret box
+  suffix: Z14
+  parent: ToolboxElectrical
+  id: Z14ToolboxElectricalTurretStalker
+  categories: [ Zona14 ]
+  description: A special box for storing, storing, transporting (carrying) and using the RP-74 stationary machine gun. Activation occurs by any hit on the box. Once activated, the Sentry Gun can no longer be picked up.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Tools/Toolboxes/green.rsi
+    state: icon
+  - type: Item
+    sprite: _Stalker/Objects/Tools/Toolboxes/green.rsi
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 100
+        behaviors:
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+      - trigger:
+          !type:DamageTrigger
+          damage: 1
+        behaviors:
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+          - !type:SpawnEntitiesBehavior
+            spawn:
+              WeaponTurretNanoTrasenDisposableStalker:
+                min: 1
+                max: 1

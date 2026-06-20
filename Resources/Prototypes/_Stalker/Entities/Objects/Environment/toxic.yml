@@ -1,3 +1,4 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   abstract: true
   id: STBaseToxic
@@ -30,7 +31,7 @@
   id: STAcidBubbles
   parent: STBaseToxic
   name: acid bubbles
-  description: probably you shouldn't touch it, but who we are to give advises to a brave stalker?
+  description: "probably you shouldn't touch it, but who we are to give advises to a brave stalker?"
   suffix: ST, acid, toxic
   components:
     - type: Sprite
@@ -187,10 +188,10 @@
     state: barrel2
 
 - type: entity
-  name: Триггер кислотных Т3 стали и стекла (20%)
+  name: Acid T3 Steel and Glass Trigger (20%)
   id: STCraftGlassMetallT3Trigger
   parent: MarkerBase
-  suffix: ST | КД 1 часа
+  suffix: ST | CD 1 hours # Zona14: ST | КД 1 часа
   components:
     - type: ApproachTrigger
     - type: Sprite

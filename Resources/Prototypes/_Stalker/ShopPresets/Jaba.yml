@@ -82,7 +82,7 @@
     Goldcoins: 5670
 
   categories:
-  - name: Контрабанда
+  - name: Contraband # Zona14: Контрабанда
     priority: 0
     items:
       CannabisSeedsStalker: 200
@@ -392,7 +392,7 @@
         STHatchetSponsor: 150
         STSpanishKnife: 100
     SponsorOMind:
-    - name: О-сознание
+    - name: O-Consciousness # Zona14: О-сознание
       items:
         STWeaponRifleSVDSWood: 800
         Base754Mag5: 400

@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: ClothingBeltStorageStalkerBase
   id: ClothingBeltTarzanBlack
-  name: РПС "Тарзан"
-  description: Очень полезная чёрная РПС для переноски любых вещей, от рации до магазинов. Пользуется особой популярностью среди сталкерского сообщества.
+  name: RPS "Tarzan"
+  description: A very useful black RPS for carrying everything from walkie-talkies to magazines. It is especially popular among the stalker community.
   suffix: ST
   components:
   - type: STWeight
@@ -34,8 +35,8 @@
 - type: entity
   parent: ClothingBeltTarzanBlack
   id: ClothingBeltTarzanGreen
-  name: РПС "Тарзан"
-  description: Очень полезная зелёная РПС для переноски любых вещей, от рации до магазинов. Пользуется особой популярностью среди сталкерского сообщества.
+  name: RPS "Tarzan"
+  description: A very useful green RPS for carrying everything from walkie-talkies to shops. It is especially popular among the stalker community.
   suffix: ST
   components:
   - type: Sprite
@@ -46,8 +47,8 @@
 - type: entity
   parent: ClothingBeltTarzanBlack
   id: ClothingBeltTarzanOrange
-  name: РПС "Тарзан"
-  description: Очень полезная оранжевая РПС для переноски любых вещей, от рации до магазинов. Пользуется особой популярностью среди сталкерского сообщества.
+  name: RPS "Tarzan"
+  description: A very useful orange RPS for carrying everything from a walkie-talkie to magazines. It is especially popular among the stalker community.
   suffix: ST
   components:
   - type: Sprite
@@ -58,8 +59,8 @@
 - type: entity
   parent: ClothingBeltStorageStalkerBase
   id: ClothingBeltBandolierStalker
-  name: набор подсумков новичка
-  description: Подсумки для патронов любого калибра.
+  name: bandolier
+  description: Bandolier for cartridges of any caliber.
   components:
     - type: STWeight
       self: 0.5
@@ -84,8 +85,8 @@
 - type: entity
   parent: ClothingBeltStorageStalkerBase
   id: STClothingBeltThrowingKnifes
-  name: портупея
-  description: Позволяет удобно хранить и быстро доставать ножи
+  name: harness
+  description: Allows knives to be conveniently stored and quickly retrieved
   components:
     - type: STWeightInsideReduction
       reductionFraction: 0.50 # Zona14 change
@@ -118,8 +119,8 @@
 - type: entity
   parent: ClothingBeltStorageStalkerBase
   id: ClothingBeltGreenWebbingStalker
-  name: поясная сумка ПСЗ
-  description: Набор подсумков и поясная сумка старого зелёного варианта комплекта персональной системы защиты, не предназаченного для местности ЧЗО.
+  name: PSZ Waist Bag
+  description: A set of pouches and a belt bag of the old green version of the personal protection system kit, not intended for the Chernobyl terrain.
   suffix: ST
   components:
     - type: STWeightInsideReduction
@@ -142,8 +143,8 @@
 - type: entity
   parent: ClothingBeltStorageStalkerBase
   id: ClothingBeltWebbingOfficerStalker
-  name: поясная сумка с кобурой ПСЗ
-  description: Набор подсумков и поясная сумка офицерского комплекта персональной системы защиты в раскраске вудланд, имеющий пистолетную кобуру.
+  name: PSZ Holster Waist Bag
+  description: Pouch set and waist bag of the Woodland Personal Protection System Officer Kit with a pistol holster.
   suffix: ST
   components:
     - type: STWeightInsideReduction
@@ -168,8 +169,8 @@
 - type: entity
   parent: ClothingBeltStorageStalkerBase
   id: ClothingBeltWebbingHolsterStalkerZarya
-  name: поясная сумка с кобурой «Заря»
-  description: Поясной сумка из комплекта «Заря» с пистолетной кобурой.
+  name: waist bag with holster "Sunrise"
+  description: Waist bag from the "Sunrise" set with a pistol holster.
   suffix: ST
   components:
     - type: STWeightInsideReduction
@@ -191,8 +192,8 @@
 - type: entity
   parent: ClothingBeltStorageStalkerBase
   id: ClothingBeltWebbingDoubleStalkerZaryaSmall
-  name: двойная поясная сумка «Заря»
-  description: Поясной сумка из комплекта «Заря» со второй маленькой сумкой.
+  name: double waist bag "Sunrise"
+  description: Waist bag from the "Sunrise" set with a second small bag.
   suffix: ST
   components:
     - type: STWeightInsideReduction
@@ -213,8 +214,8 @@
 - type: entity
   parent: ClothingBeltTarzanBlack
   id: ClothingBeltWebbingBerill
-  name: поясная сумка с кобурой 'Берилл-5М'
-  description: Набор подсумков и поясная сумка комплекта 'Берилл-5М' в раскраске вудланд, имеющий пистолетную кобуру.
+  name: belt bag with holster 'Beryl-5M'
+  description: A set of pouches and a woodland Beryl-5M waist bag with a pistol holster.
   suffix: ST
   components:
     - type: STWeightInsideReduction
@@ -239,8 +240,8 @@
 - type: entity
   parent: ClothingBeltStorageStalkerBase
   id: ClothingBeltWebbingHolsterMerc
-  name: поясная сумка с кобурой наёмника
-  description: Поясной сумка из комплекта наёмника с пистолетной кобурой.
+  name: Mercenary Belt Pouch with Holster
+  description: Belt pouch from the mercenary set with a pistol holster.
   suffix: ST
   components:
     - type: STWeightInsideReduction
@@ -262,8 +263,8 @@
 - type: entity
   parent: ClothingBeltStorageStalkerBase
   id: ClothingBeltWebbingHolsterMerc2
-  name: поясная сумка с кобурой наёмника
-  description: Поясной сумка из комплекта берёзки наёмника с пистолетной кобурой.
+  name: "{ ent-ClothingBeltWebbingHolsterMerc }"
+  description: Belt pouch from the "Berezka" mercenary set with a pistol holster.
   suffix: ST
   components:
     - type: STWeightInsideReduction
@@ -285,8 +286,8 @@
 - type: entity
   parent: ClothingBeltStorageStalkerBase
   id: ClothingBeltWebbingHolsterMercBandit
-  name: поясная сумка с кобурой «Валет»
-  description: Поясной сумка из бандитского комплекта «Валет» с пистолетной кобурой.
+  name: '"Valet" Belt Pouch with Holster'
+  description: Belt pouch from the bandit "Valet" set with a pistol holster.
   suffix: ST
   components:
     - type: STWeightInsideReduction
@@ -308,8 +309,8 @@
 - type: entity
   parent: ClothingBeltStorageStalkerBase
   id: ClothingBeltWebbingHolsterLoner
-  name: поясная сумка с кобурой наёмного сталкера
-  description: Поясной сумка из комплекта наёмного сталкера с пистолетной кобурой.
+  name: "Stalker's waist bag with holster"
+  description: Belt bag from the stalker kit with a pistol holster.
   suffix: ST
   components:
     - type: STWeightInsideReduction
@@ -331,8 +332,8 @@
 - type: entity
   parent: ClothingBeltStorageStalkerBase
   id: ClothingBeltWebbingHolsterDolgPS5M
-  name: поясная сумка с кобурой ПС5-М «Универсальная защита»
-  description: Поясной сумка из комплекта ПС5-М «Универсальная защита» с пистолетной кобурой.
+  name: PS5-M Belt Pouch with Holster "Universal Protection"
+  description: Belt pouch from the PS5-M "Universal Protection" set with pistol holster.
   suffix: ST
   components:
     - type: STWeightInsideReduction
@@ -354,8 +355,8 @@
 - type: entity
   parent: ClothingBeltStorageStalkerBase
   id: ClothingBeltWebbingHolsterFreedomDefender
-  name: поясная сумка с кобурой «Страж свободы»
-  description: Поясной сумка из комплекта «Страж свободы» с пистолетной кобурой.
+  name: '"Freedom Defender" Belt Pouch with Holster'
+  description: Belt pouch from the "Freedom Defender" set with pistol holster.
   suffix: ST
   components:
     - type: STWeightInsideReduction
@@ -377,8 +378,8 @@
 - type: entity
   parent: ClothingBeltStorageStalkerBase
   id: ClothingBeltWebbingDoubleFreedomVeterSmall
-  name: двойная поясная сумка «Ветер свободы»
-  description: Поясной сумка из комплекта «Ветер свободы» со второй маленькой сумкой.
+  name: Double Belt Pouch "Wind of Freedom"
+  description: Belt pouch from the "Wind of Freedom" set with an additional small pouch.
   suffix: ST
   components:
     - type: STWeightInsideReduction
@@ -399,8 +400,8 @@
 - type: entity
   parent: ClothingBeltStorageStalkerBase
   id: ClothingBeltWebbingHolsterMonolith
-  name: поясная сумка с кобурой «Монолита»
-  description: Поясной сумка из комплекта «Монолита» с пистолетной кобурой.
+  name: '"Monolith" Belt Pouch with Holster'
+  description: Belt pouch from the "Monolith" set with pistol holster.
   suffix: ST
   components:
     - type: STWeightInsideReduction
@@ -426,8 +427,8 @@
 - type: entity
   parent: ClothingBeltTarzanBlack
   id: ClothingBeltTarzanDeserter
-  name: РПС "Тарзан" Отступников
-  description: Очень полезная РПС для переноски любых вещей, от рации до магазинов.
+  name: RPS "Tarzan" Otstepnikov
+  description: A very useful RPS for carrying anything from a radio to magazines.
   suffix: ST
   components:
   - type: Sprite
@@ -438,8 +439,8 @@
 - type: entity
   parent: ClothingBeltTarzanBlack
   id: ClothingBeltWebbingDeserter
-  name: поясная сумка с кобурой отступников
-  description: Набор подсумков и поясная сумка с пистолетной кобурой, окрашены в чёрно-серые цвета.
+  name: Deserter Belt Bag with Holster
+  description: A set of pouches and a belt bag with a pistol holster, painted in black and gray colors.
   suffix: ST
   components:
     - type: STWeight

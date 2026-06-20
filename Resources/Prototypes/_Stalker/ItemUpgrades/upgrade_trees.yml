@@ -1,12 +1,13 @@
-# ОРУЖИЕ
+# Zona14: translated Russian names/descriptions to English
+# Zona14: ОРУЖИЕ
 
-- type: stUpgradeTree # Это для теста.
+- type: stUpgradeTree # Zona14: Это для теста.
   id: STAK104UpgradeTree
   upgrades:
   - id: firerate_1
-    name: Усиленный газоотвод
+    name: Enhanced Gas Block
     branchId: handling
-    branchName: Обращение
+    branchName: "Handling" # Zona14: Обращение
     requiredMaterials:
       Steel: 2
     requiredTools:
@@ -16,9 +17,9 @@
       fireRateMultiplier: 1.2
 
   - id: recoil_1
-    name: Стабилизатор отдачи
+    name: Recoil Stabilizer
     branchId: handling
-    branchName: Обращение
+    branchName: "Handling" # Zona14: Обращение
     requiredUpgrades:
     - firerate_1
     requiredMaterials:
@@ -32,9 +33,9 @@
       maxAngleMultiplier: 0.85
 
   - id: precision_1
-    name: Полировка затвора
+    name: Bolt Polishing
     branchId: precision
-    branchName: Точность
+    branchName: "Accuracy" # Zona14: Точность
     requiredMaterials:
       Glass: 2
     requiredTools:
@@ -45,9 +46,9 @@
       maxAngleMultiplier: 0.9
 
   - id: precision_2
-    name: Подгонка ствольной группы
+    name: Barrel Group Fitting
     branchId: precision
-    branchName: Точность
+    branchName: "Accuracy" # Zona14: Точность
     requiredUpgrades:
     - precision_1
     requiredMaterials:
@@ -60,15 +61,15 @@
       minAngleMultiplier: 0.9
 
 
-# ШЛЕМЫ
+# Zona14: ШЛЕМЫ
 
-- type: stUpgradeTree # Это для теста.
+- type: stUpgradeTree # Zona14: Это для теста.
   id: STHelmetUpgradeTree
   upgrades:
   - id: armor_kevlar
-    name: Усиленный кевлар
+    name: Reinforced Kevlar
     branchId: protection
-    branchName: Защита
+    branchName: "Protection" # Zona14: Защита
     requiredMaterials:
       Cloth: 2
     requiredTools:
@@ -80,9 +81,9 @@
         multiplier: 0.85
 
   - id: armor_plate
-    name: Вставка бронепластины
+    name: Armor Plate Insert
     branchId: protection
-    branchName: Защита
+    branchName: "Protection" # Zona14: Защита
     requiredUpgrades:
     - armor_kevlar
     requiredMaterials:
@@ -96,15 +97,15 @@
         multiplier: 0.7
 
 
-# БРОНЕЖИЛЕТЫ
+# Zona14: БРОНЕЖИЛЕТЫ
 
-- type: stUpgradeTree # Это для теста.
+- type: stUpgradeTree # Zona14: Это для теста.
   id: STKorundUpgradeTree
   upgrades:
   - id: kevlar_layer
-    name: Дополнительный слой кевлара
+    name: Additional Kevlar Layer
     branchId: protection
-    branchName: Защита
+    branchName: "Protection" # Zona14: Защита
     requiredMaterials:
       Cloth: 3
     requiredTools:
@@ -116,9 +117,9 @@
         multiplier: 0.8
 
   - id: ceramic_plate
-    name: Керамическая бронеплита
+    name: Ceramic Armor Plate
     branchId: protection
-    branchName: Защита
+    branchName: "Protection" # Zona14: Защита
     requiredUpgrades:
     - kevlar_layer
     requiredMaterials:
@@ -132,9 +133,9 @@
         multiplier: 0.6
 
   - id: anomaly_resist
-    name: Аномальная пропитка
+    name: Anomalous Impregnation
     branchId: anomaly
-    branchName: Аномалии
+    branchName: "Anomalies" # Zona14: Аномалии
     requiredMaterials:
       Glass: 2
     requiredTools:

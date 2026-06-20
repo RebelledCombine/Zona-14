@@ -1,3 +1,4 @@
+# Zona14: translated Russian names/descriptions to English
 
 - type: entity
   name: combat knife
@@ -30,10 +31,10 @@
     malus: 0.225
 
 - type: entity
-  name: Финка ЛГБТ
+  name: Finka LGBT
   parent: STCombatKnife
   id: LgbtKnife
-  description: легендарная финка от знаменитых Кизлярских мастеров
+  description: legendary Finn from the famous Kizlyar craftsmen
   suffix: ST
   components:
   - type: Sprite
@@ -49,11 +50,11 @@
         Slash: 22
 
 - type: entity
-  name: нож сектантов
+  name: cultist knife
   parent: STCombatKnife
   id: STSeraKnife
-  description: Пахнет травами и маслами.
-  suffix: ST, Скин
+  description: Smells like herbs and oils.
+  suffix: ST, Skin # Zona14: ST, Скин
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Weapons/Melee/sera_knife.rsi

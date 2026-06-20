@@ -1,10 +1,11 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: STAnomalyGeneratorBlockerBase
   abstract: true
-  name: Защита от аномалий
+  name: Anomaly/Lightning blocker
   suffix: ST
   parent: FlexibleMarker
-  description: Делает так чтобы генератор аномалии не генерировал ничего в указанном радиусе
+  description: Makes it so that the anomaly generator and lightning spawners do not generate anything within the specified radius
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Anomalies/anomaly_generator_blocker.rsi
@@ -13,7 +14,7 @@
 - type: entity
   parent: STAnomalyGeneratorBlockerBase
   id: STAnomalyGeneratorBlocker5
-  name: Защита от аномалий/молний (5 тайлов)
+  name: Anomaly/Lightning blocker (5 tiles)
   components:
   - type: STAnomalyGeneratorSpawnBlocker
     size: 5
@@ -23,7 +24,7 @@
 - type: entity
   parent: STAnomalyGeneratorBlockerBase
   id: STAnomalyGeneratorBlocker10
-  name: Защита от аномалий/молний (10 тайлов)
+  name: Anomaly/Lightning blocker (10 tiles)
   components:
   - type: STAnomalyGeneratorSpawnBlocker
     size: 10
@@ -33,7 +34,7 @@
 - type: entity
   parent: STAnomalyGeneratorBlockerBase
   id: STAnomalyGeneratorBlocker20
-  name: Защита от аномалий/молний (20 тайлов)
+  name: Anomaly/Lightning blocker (20 tiles)
   components:
   - type: STAnomalyGeneratorSpawnBlocker
     size: 20
@@ -43,7 +44,7 @@
 - type: entity
   parent: STAnomalyGeneratorBlockerBase
   id: STAnomalyGeneratorBlocker50
-  name: Защита от аномалий/молний (50 тайлов)
+  name: Anomaly/Lightning blocker (50 tiles)
   components:
   - type: STAnomalyGeneratorSpawnBlocker
     size: 50
@@ -53,7 +54,7 @@
 - type: entity
   parent: STAnomalyGeneratorBlockerBase
   id: STAnomalyGeneratorBlocker100
-  name: Защита от аномалий/молний (100 тайлов)
+  name: Anomaly/Lightning blocker (100 tiles)
   components:
   - type: STAnomalyGeneratorSpawnBlocker
     size: 100

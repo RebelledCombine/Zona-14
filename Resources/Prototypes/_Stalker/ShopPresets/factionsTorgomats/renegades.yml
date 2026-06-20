@@ -219,7 +219,7 @@
         DrinkLemonadehBottleFull: 50
         STFoodMeatSalami: 350
         CigPackSuka: 100
-    - name: shop-category-medicine # 50% скидка от сталкеров
+    - name: shop-category-medicine # Zona14: 50% скидка от сталкеров
       priority: 10
       items:
         STPillboxAntirad: 150

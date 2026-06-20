@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
-  name: РПО-А "Шмель"
+  name: RPO-A "Bumblebee"
   suffix: ST
   parent: STWeaponLauncherRocket
   id: STWeaponLauncherRocketShmel
-  description: Советский одноразовый реактивный пехотный огнемёт, использующий термобарический боеприпас.
+  description: Miraculous tool of war crimes
   components:
   - type: Wieldable
   - type: GunRequiresWield

@@ -1,8 +1,9 @@
-﻿- type: entity
+﻿# Zona14: translated Russian names/descriptions to English
+- type: entity
   parent: ClothingHeadsetGrey
   id: ClothingHeadsetStalker
-  name: гарнитура
-  description: Для использования вставьте ключ шифрования.
+  name: headset
+  description: Insert an encryption key to use.
   components:
     - type: ContainerContainer
       containers:
@@ -19,8 +20,8 @@
   parent: ClothingHeadset
   id: ClothingHeadsetMercStalker
   suffix: ST
-  name: Гарнитура наёмников
-  description: Гарнитура используемая наёмниками
+  name: Mercenary Headset
+  description: Headset used by mercenaries
   components:
   - type: ContainerFill
     containers:

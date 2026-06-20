@@ -1,0 +1,174 @@
+- type: entity
+  id: Z14BasePMMag
+  categories: [ Zona14 ]
+  name: 9x18 PM magazine (10)
+  description: 9x18 mm magazine for PMm. Bullet capacity 10. They sell empty.
+  parent: BaseItem
+  suffix: Z14
+  components:
+  - type: STBulkBuyable # stalker-14-en
+    maxQuantity: 10
+  - type: Trash
+    time: 900
+  - type: STWeight
+    self: 0.15
+  - type: Tag
+    tags:
+      - MagazinePM
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - STCartridge918
+    capacity: 10
+  - type: Item
+    size: Small
+    shape:
+      - 0,0,0,0
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+      item_slot: !type:ContainerSlot { }
+  - type: Appearance
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Magazine/Pistol/pistol_mag.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-1
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 5
+    zeroVisible: false
+  - type: RepositoryItem
+    categoryName: Magazines
+
+- type: entity
+  id: Z14BaseAPSMag
+  categories: [ Zona14 ]
+  name: 9x18 APS magazine (20)
+  description: 9x18 magazine for APS pistols. Bullet capacity 20. They sell empty.
+  parent: BaseItem
+  suffix: Z14
+  components:
+    - type: STWeight
+      self: 0.15
+    - type: Tag
+      tags:
+        - MagazineAPS
+    - type: BallisticAmmoProvider
+      mayTransfer: true
+      whitelist:
+        tags:
+          - STCartridge918
+      capacity: 20
+    - type: Item
+      size: Small
+      shape:
+        - 0,0,0,0
+    - type: ContainerContainer
+      containers:
+        ballistic-ammo: !type:Container
+        item_slot: !type:ContainerSlot { }
+    - type: Sprite
+      sprite: Objects/Weapons/Guns/Ammunition/Magazine/Pistol/pistol_high_capacity_mag.rsi
+      layers:
+        - state: base
+          map: ["enum.GunVisualLayers.Base"]
+        - state: mag-1
+          map: ["enum.GunVisualLayers.Mag"]
+    - type: MagazineVisuals
+      magState: mag
+      steps: 6
+      zeroVisible: false
+    - type: Appearance
+    - type: RepositoryItem
+      categoryName: Magazines
+
+######################### Bizon #########################
+- type: entity
+  id: Z14BizonMag
+  categories: [ Zona14 ]
+  name: screw magazine "Bison" (64)
+  description: Auger magazine for Bison under 9x18. Bullet capacity 64. They sell empty.
+  parent: VityazMag
+  suffix: Z14
+  components:
+  - type: STWeight
+    self: 0.35
+  - type: Tag
+    tags:
+      - MagazineBizon
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - STCartridge918
+    capacity: 64
+  - type: Item
+    size: Normal
+    shape:
+      - 0,0,1,1
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+      item_slot: !type:ContainerSlot { }
+  - type: Sprite
+    scale: 0.8, 0.8
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Magazines/919/bizon.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
+  - type: Craftable
+  - type: RepositoryItem
+    categoryName: Magazines
+
+######################### Scorpion #########################
+- type: entity
+  id: Z14Vz61Mag
+  categories: [ Zona14 ]
+  name: vz store. 61 Skorpion (20)
+  description: 9x18 magazine for the compact SMG "Skorpion". Bullet capacity 20. They sell empty.
+  parent: BizonMag
+  suffix: Z14
+  components:
+  - type: STWeight
+    self: 0.2
+  - type: Tag
+    tags:
+      - MagazineVz61
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - STCartridge918
+    capacity: 20
+  - type: Item
+    size: Small
+    shape:
+      - 0,0,0,0
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+      item_slot: !type:ContainerSlot { }
+  - type: Sprite
+    scale: 0.8, 0.8
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Magazines/919/vz61.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance

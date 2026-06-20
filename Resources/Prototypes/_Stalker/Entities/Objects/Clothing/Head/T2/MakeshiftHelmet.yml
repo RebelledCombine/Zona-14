@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: STClothingHeadBase
   id: STClothingHeadHelmetMakeshiftTacticalT3
-  name: Шлем «Циклоп»
-  description: Дешёвый шлем с не менее дешёвым забралом приделанным к шлему крайне дешёвым способом.
+  name: Cyclops Helmet
+  description: a helmet made by hand from quality materials may not be the most attractive in appearance, but it protects well.
   suffix: ST, T2, Tactical
   components:
   - type: Sprite
@@ -39,8 +40,8 @@
 - type: entity
   parent: STClothingHeadHelmetMakeshiftTacticalT3
   id: STClothingHeadHelmetMakeshiftTacticalT3Jabs
-  name: Шлем «Циклоп» жаб
-  description: Сделанный вручную шлем из качественных материалов, может не самый привлекательный внешне, но защищает хорошо.
+  name: Toad Cyclops Helmet
+  description: A handmade helmet made of quality materials, may not be the most attractive in appearance, but it protects well.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/hats/makeshift_helmet_jabs.rsi

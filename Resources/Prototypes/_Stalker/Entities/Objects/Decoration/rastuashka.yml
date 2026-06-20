@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
-  name: растяжка
+  name: tripwire
   parent: BaseLandMine
   suffix: Stalker
-  description: Одна нога здесь, другая там.
+  description: One foot here, another there.
   id: RastuashkaStalker
   components:
   - type: ExplodeOnTrigger

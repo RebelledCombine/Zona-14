@@ -1,0 +1,11 @@
+- type: localizedDataset
+  id: Z14STAliasAdjectives
+  values:
+    prefix: st-alias-adjective-
+    count: 80
+
+- type: localizedDataset
+  id: Z14STAliasNouns
+  values:
+    prefix: st-alias-noun-
+    count: 80

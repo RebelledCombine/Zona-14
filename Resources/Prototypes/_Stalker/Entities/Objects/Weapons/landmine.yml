@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
-  name: мина ПФМ-1 "Лепесток"
+  name: PFM-1 "Petal" mine
   parent: BaseLandMine
   suffix: Stalker
-  description: Одна нога здесь, другая там.
+  description: One foot here, another there.
   id: LandMineExplosiveStalker
   components:
   - type: ExplodeOnTrigger
@@ -21,8 +22,8 @@
 - type: entity
   parent: BaseItem
   id: LandMineExplosiveStalkerCompact
-  name: неустановленная мина ПФМ-1 "Лепесток"
-  description: Одна нога здесь, другая там. Для установки положите на землю и слегка прикопайте саперной лопатой.
+  name: unidentified PFM-1 "Petal" mine
+  description: One foot here, the other there. For installation, put on the ground and lightly dig with a sapper shovel.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Misc/lepestok.rsi
@@ -33,7 +34,7 @@
 
 - type: entity
   id: RandomLandMineExplosiveStalker
-  name: спавнер мина ПФМ-1 "Лепесток" (ящик, 5% шанс, ресурсы)
+  name: PFM-1 Petal Mine Spawner (Crate, 5% Chance, Resources)
   suffix: Stalker
   parent: FlexibleMarker
   components:

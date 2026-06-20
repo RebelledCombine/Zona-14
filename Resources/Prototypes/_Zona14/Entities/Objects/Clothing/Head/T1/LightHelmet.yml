@@ -1,0 +1,85 @@
+- type: entity
+  abstract: true
+  parent: Z14HelmetBase
+  id: Z14STClothingHeadHelmetTacticalT1Base
+  categories: [ Zona14 ]
+  name: T1 Tactical Helmet Base
+- type: entity
+  parent: Z14STClothingHeadHelmetTacticalT1Base
+  id: Z14ClothingHeadHelmetLight
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Sieve Helmet
+  description: A lightweight helmet — a thin piece of metal capable of protecting your skull from buckshot.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/helm_light.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/helm_light.rsi
+  - type: HideLayerClothing
+    slots:
+    - Hair
+
+- type: entity
+  parent: Z14STClothingHeadHelmetTacticalT1Base
+  id: Z14ClothingHeadHelmetDolg
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Duty Sieve Helmet
+  description: A lightweight helmet — a thin piece of metal to protect your skull from buckshot, now in Duty colors!
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/helm_dolg.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/helm_dolg.rsi
+  - type: HideLayerClothing
+    slots:
+    - Hair
+
+- type: entity
+  parent: Z14STClothingHeadHelmetTacticalT1Base
+  id: Z14ClothingHeadMercLight
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Sieve Mercenary Helmet
+  description: A lightweight helmet — a thin piece of metal capable of protecting your skull from buckshot.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/merc_head_light.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/merc_head_light.rsi
+  - type: HideLayerClothing
+    slots:
+    - Hair
+
+- type: entity
+  parent: Z14STClothingHeadHelmetTacticalT1Base
+  id: Z14ClothingHeadHelmetLightDeserters
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Renegade Sieve Helmet
+  description: A lightweight helmet — a thin piece of metal capable of protecting your skull from buckshot and excessive government attention.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/helm_light_deserter.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/helm_light_deserter.rsi
+  - type: HideLayerClothing
+    slots:
+    - Hair
+
+- type: entity
+  parent: Z14STClothingHeadHelmetTacticalT1Base
+  id: Z14ClothingHeadHelmetLightProject
+  categories: [ Zona14 ]
+  name: Project Sieve Helmet
+  suffix: Z14
+  description: A lightweight helmet — a thin piece of metal capable of protecting your skull from buckshot and excessive government attention.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/helm_light_project.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/helm_light_project.rsi
+  - type: HideLayerClothing
+    slots:
+    - Hair

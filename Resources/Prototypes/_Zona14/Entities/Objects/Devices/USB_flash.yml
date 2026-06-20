@@ -1,0 +1,12 @@
+- type: entity
+  name: flash drive
+  description: A storage device using flash memory, connected to a computer via interface. Can be worth a lot of money.
+  suffix: Z14
+  id: Z14USBFlash
+  categories: [ Zona14 ]
+  parent: BaseItem
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Misc/usb_flash.rsi
+    scale: 0.6, 0.6
+    state: f1

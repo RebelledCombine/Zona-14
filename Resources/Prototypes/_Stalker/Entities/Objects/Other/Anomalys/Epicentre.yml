@@ -1,5 +1,6 @@
-﻿- type: entity
-  name: эпицентр
+﻿# Zona14: translated Russian names/descriptions to English
+- type: entity
+  name: epicentre
   id: AnomSEpicentre
   suffix: Stalker
   components:

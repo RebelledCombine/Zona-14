@@ -1,7 +1,8 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: STBaseBlueprint
   id: STGasMaskM50Blueprint
-  name: Рецепт противогаза M50
+  name: M50 Gas Mask Recipe
   components:
     - type: STBlueprint
       blueprint: recipeGasMaskM50

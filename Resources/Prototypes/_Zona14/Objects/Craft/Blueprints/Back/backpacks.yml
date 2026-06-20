@@ -1,0 +1,118 @@
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14ClothingBackpackDuffelCommonStalkerBlueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: army duffel backpack (T3) recipe
+  components:
+    - type: STBlueprint
+      blueprint: recipeClothingBackpackDuffelCommonStalker
+
+
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14ClothingBackpackDuffelMilitaryOliveBlueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: dark green army duffel backpack (T4) recipe
+  components:
+    - type: STBlueprint
+      blueprint: recipeClothingBackpackDuffelMilitaryOlive
+
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14ClothingBackpackDuffelBlackMilitaryTacticStalkerBlueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: black tactical duffel backpack (T4) recipe
+  components:
+    - type: STBlueprint
+      blueprint: recipeClothingBackpackDuffelBlackMilitaryTacticStalker
+
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14ClothingBackpackDuffelMilitaryBlueBlueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: blue army duffel backpack (T4) recipe
+  components:
+    - type: STBlueprint
+      blueprint: recipeClothingBackpackDuffelMilitaryBlue
+
+
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14ClothingBackpackDuffelHikingVSRFBlueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: hiking duffel backpack (T4) recipe
+  components:
+    - type: STBlueprint
+      blueprint: recipeClothingBackpackDuffelHikingVSRF
+
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14ClothingBackpackDuffelOliveTacticStalkerBlueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: olive tactical duffel backpack (T4) recipe
+  components:
+    - type: STBlueprint
+      blueprint: recipeClothingBackpackDuffelOliveTacticStalker
+
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14ClothingBackpackDuffelBlackTacticStalkerBlueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: black tactical duffel backpack (T4) recipe
+  components:
+    - type: STBlueprint
+      blueprint: recipeClothingBackpackDuffelBlackTacticStalker
+
+# Pseudo blueprint. To avoid making a separate craft for each reskinned item, tags should be used. But vanilla doesn't support this well, hence these workarounds.
+
+- type: entity
+  parent: BaseItem
+  name: black tactical duffel backpack (T4) recipe
+  description: Any (T4) backpack – 1, Tier 2 hide – 5, basic thread set T1 – 2, kifter artifact – 3.
+  id: Z14ClothingBackpackDuffelSuperStalkerGrayBlueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+    - type: Sprite
+      state: blueprint
+      sprite: _Stalker/Objects/Craft/blueprint.rsi
+    - type: Craftable
+    - type: RepositoryItem
+      categoryName: Crafting
+
+- type: entity
+  parent: BaseItem
+  name: professional gray duffel backpack (T5) recipe
+  description: Any (T4) backpack – 1, Tier 2 hide – 5, basic thread set T1 – 2, kifter artifact – 3.
+  id: Z14ClothingBackpackDuffelSuperStalkerBlueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+    - type: Sprite
+      state: blueprint
+      sprite: _Stalker/Objects/Craft/blueprint.rsi
+    - type: Craftable
+    - type: RepositoryItem
+      categoryName: Crafting
+
+- type: entity
+  parent: BaseItem
+  name: professional green duffel backpack (T5) recipe
+  description: "Any (T4) backpack – 1, Tier 2 hide – 5, basic thread set T1 – 2, kifter artifact – 3."
+  id: Z14ClothingBackpackDuffelRareStalkerBlueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+    - type: Sprite
+      state: blueprint
+      sprite: _Stalker/Objects/Craft/blueprint.rsi
+    - type: Craftable
+    - type: RepositoryItem
+      categoryName: Crafting

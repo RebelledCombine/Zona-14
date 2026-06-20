@@ -1,3 +1,4 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   abstract: true
   parent: STBaseWeaponSniper
@@ -47,8 +48,8 @@
 - type: entity
   parent: STBaseWeaponSniperSKS
   id: STWeaponSniperSKSpersecutor
-  name: Преследователь
-  description: Винтовка Мондрагона, переделанная и модифицированная под калибр СКС. Перекрашена в чёрныЙ, а на стволе неизвестного происхождения зарубки.
+  name: Persecutor
+  description: A Mondragon rifle, reworked and modified for the SKS caliber. Repainted black, with notches of unknown origin on the barrel.
   components:
   - type: Clothing
     sprite: _Stalker/Objects/Weapons/Guns/Snipers/persecutor.rsi

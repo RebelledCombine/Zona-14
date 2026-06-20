@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 
 - type: entity
   parent: BaseStructure
   id: BaseFenceWooden
-  name: деревянный забор
-  description: Старый деревянный забор - доски да гвозди
+  name: wooden fence
+  description: Old wooden fence - boards and nails
   abstract: true
   components:
   - type: Sprite
@@ -22,9 +23,9 @@
 - type: entity
   parent: BaseFenceWooden
   id: FenceWoodenBroken
-  name: сломанный деревянный забор
+  name: broken wooden fence
   suffix: ST, Mapping
-  description: Старый деревянный забор - доски да гвозди. Интересно, кто же умудрился его сломать?
+  description: Old wooden fence - boards and nails. I wonder who managed to break it?
   components:
   - type: Sprite
     layers:
@@ -148,8 +149,8 @@
 - type: entity
   parent: STBaseFenceMetal
   id: FenceMetalStraightConst
-  name: сетка-рабица
-  suffix: ST, Mapping, разбираемый
+  name: chain-link mesh
+  suffix: ST, Mapping, destructible # Zona14: ST, Mapping, разбираемый
   components:
   - type: Icon
     sprite: Structures/Walls/fence.rsi

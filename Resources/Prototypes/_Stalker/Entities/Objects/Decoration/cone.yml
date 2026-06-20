@@ -1,6 +1,7 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: STcone
-  name: дорожный конус
+  name: Traffic Cone
   description: Just an ordinary traffic cone.
   suffix: ST, Mapping
   placement:

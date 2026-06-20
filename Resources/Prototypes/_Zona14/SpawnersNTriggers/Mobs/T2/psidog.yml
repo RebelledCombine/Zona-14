@@ -1,0 +1,52 @@
+- type: entity
+  name: psy-dog trigger (1) (25%)
+  id: Z14STTriggerPsidog125
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger125
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+        - Z14MutantPsidog
+      restricted:
+        - Z14MutantPsidog
+
+
+- type: entity
+  name: psy-dog trigger (1) (100%) 30m
+  id: Z14STTriggerPsidog1110030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger1110030
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+      - Z14MutantPsidog
+      restricted:
+      - Z14MutantPsidog
+
+- type: entity
+  name: psy-dog trigger (2) (100%) 30m
+  id: Z14STTriggerPsidog2210030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger2210030
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+      - Z14MutantPsidog
+      restricted:
+      - Z14MutantPsidog
+
+- type: entity
+  name: psy-dog trigger (3) (100%) 30m
+  id: Z14STTriggerPsidog3310030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger3310030
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+      - Z14MutantPsidog
+      restricted:
+      - Z14MutantPsidog

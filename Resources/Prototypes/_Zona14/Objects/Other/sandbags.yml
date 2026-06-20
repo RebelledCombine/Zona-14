@@ -1,0 +1,40 @@
+- type: entity
+  id: Z14sandbag
+  categories: [ Zona14 ]
+  parent: TableBase
+  name: sandbags
+  description: A bag made of polypropylene, burlap or other durable materials, which is filled with sand or soil.
+  suffix: Z14
+  components:
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.3,-0.3,0.3,0.3"
+        density: 55
+        mask:
+        - TableMask
+        layer:
+        - MachineLayer
+  - type: Sprite
+    sprite: _Stalker/Structures/sandbags.rsi
+  - type: Icon
+    sprite: _Stalker/Structures/sandbags.rsi
+    state: full
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 500
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Effects/picaxe2.ogg
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          CraftBag:
+            min: 0
+            max: 1
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]

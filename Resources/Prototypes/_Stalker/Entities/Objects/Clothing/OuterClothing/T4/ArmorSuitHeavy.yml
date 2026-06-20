@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: STClothingOuterArmorStorageBasic
   id: STClothingOuterArmorVeryHeavy
-  name: КСН-13 «Бегемот»
-  description: Костюм Специального Назначения «Бегемот», используется государственными оперативниками в условиях ЧЗО.
+  name: KSN-13 Behemoth
+  description: Behemoth Special Purpose Suit, used by state operatives in the Chernobyl Exclusion Zone.
   suffix: ST, T4, PvE
   components:
   - type: STWeight
@@ -58,8 +59,8 @@
 - type: entity
   parent: STClothingOuterArmorVeryHeavy
   id: STClothingOuterArmorVeryHeavySci
-  name: КСН-13-М
-  description: Костюм Специального Назначения «Бегемот», используется государственными оперативниками в условиях ЧЗО.
+  name: KSN-13-M
+  description: The "Begemot" Special Purpose Suit, used by government operatives within the Zone of Exclusion.
   suffix: ST, T4, PvE
   components:
   - type: Sprite
@@ -92,8 +93,8 @@
 - type: entity
   parent: STClothingOuterArmorVeryHeavy
   id: STClothingOuterArmorVeryHeavyFreedom
-  name: КСН-13 «Бегемот» Свободы
-  description: Костюм Специального Назначения «Бегемот», переделанный группировкой Свобода.
+  name: KSN-13 "Begemot" of Freedom
+  description: The "Begemot" Special Purpose Suit, reworked by the Freedom faction.
   suffix: ST, T4, PvE
   components:
   - type: Armor
@@ -120,8 +121,8 @@
 - type: entity
   parent: STClothingOuterArmorVeryHeavy
   id: STClothingOuterArmorGonchiy
-  name: Бронекостюм "Гончий"
-  description: Костюм с маскировочными элементами, созданный для быстрого и комфортного передвижения по Зоне, в ущерб защитным показателям.
+  name: '"Gonchiy" armor suit'
+  description: A suit with camouflage elements, designed for fast and comfortable movement through the Zone, at the cost of protective qualities.
   suffix: ST, T4, PvE
   components:
   - type: Sprite
@@ -157,8 +158,8 @@
 - type: entity
   parent: ClothingHeadHardsuitBase
   id: STClothingHeadHardsuitGonchiy
-  name: шлем гончего #base
-  description: Шлем из комплекта "Гончий".
+  name: "gonchiy helmet #base"
+  description: A helmet from the "Gonchiy" set.
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite

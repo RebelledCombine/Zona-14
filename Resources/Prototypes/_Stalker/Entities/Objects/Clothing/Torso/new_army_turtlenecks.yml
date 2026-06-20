@@ -1,7 +1,8 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: BaseClothingTorso
   id: STClothingTosroTurtlenecksCZ
-  name: Сzechoslovakia army turtlenecks
+  name: Czechoslovakia army turtlenecks
   components:
     - type: Sprite
       sprite: _Stalker/Objects/Clothing/Torso/Turtlenecks/cz.rsi

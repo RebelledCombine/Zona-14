@@ -42,7 +42,7 @@ public sealed class StalkerStorageSystem : SharedStalkerStorageSystem
 
     private delegate List<object> DelegateItemStalkerConverter(EntityUid inputEntityUid);
 
-    //Коллекция конвентеров для предметов
+    //Collection of converters for items // Zona14: translated comment
     private readonly Dictionary<string, DelegateItemStalkerConverter> _convertersItemStalker = new(0);
     private readonly HashSet<Type> _blackListDelChildrenOnSpawnComponent = new(0);
     private readonly HashSet<string> _blackListContainerNames = new(0);
@@ -77,13 +77,13 @@ public sealed class StalkerStorageSystem : SharedStalkerStorageSystem
         SubscribeLocalEvent<StalkerStorageComponent, InteractUsingEvent>(OnInteractUsing);
         SubscribeLocalEvent<StalkerStorageComponent, VendingMachineEjectMessage>(OnInventoryEjectMessage);
 
-        // Обычный предмет
+        // Regular item // Zona14: translated comment
         _convertersItemStalker.Add("M", ConverterSimpleItemStalker);
 
-        // Предмет с патронами(например магазин)
+        // Item with ammunition (e.g. magazine) // Zona14: translated comment
         _convertersItemStalker.Add("MB", ConverterAmmoItemStalker);
 
-        // Предмет который имеет стак
+        // Item that has a stack // Zona14: translated comment
         _convertersItemStalker.Add("MS", ConverterStackItemStalker);
 
         _convertersItemStalker.Add("MP", ConverterPaperItemStalker);
@@ -91,7 +91,7 @@ public sealed class StalkerStorageSystem : SharedStalkerStorageSystem
         _convertersItemStalker.Add("ME", ConverterSolutionItemStalker); // Solutions
         _convertersItemStalker.Add("MC", ConverterCartridgeItemStalker);
         _convertersItemStalker.Add("MF", ConverterPhotoItemStalker); // stalker-en-changes: photo persistence
-        // Доделать еще конвентеры для предметов с жидкостями и т.д.
+        // TODO: add more converters for items with liquids, etc. // Zona14: translated comment
 
         foreach (var migration in _prototype.EnumeratePrototypes<STStashMigrationPrototype>())
         {
@@ -104,7 +104,7 @@ public sealed class StalkerStorageSystem : SharedStalkerStorageSystem
 
     #region HelperMethods
 
-    // Получить имя прототипа(например у лома имя прототипа будет "Crowbar") по его EntityUid
+    // Get the prototype name (e.g. for a crowbar it would be "Crowbar") by its EntityUid // Zona14: translated comment
     public string GetPrototypeName(EntityUid inputItemUid)
     {
         if (!TryComp(inputItemUid, out MetaDataComponent? metaData))
@@ -112,7 +112,7 @@ public sealed class StalkerStorageSystem : SharedStalkerStorageSystem
         return metaData.EntityPrototype?.ID == null ? "" : metaData.EntityPrototype.ID;
     }
 
-    // Получить название ентити(имя в мире, например "Лом") по его EntityUid
+    // Get the entity display name (in-world name, e.g. "Crowbar") by its EntityUid // Zona14: translated comment
     public string GetNameEntity(EntityUid inputItemUid)
     {
         return !TryComp(inputItemUid, out MetaDataComponent? metaData) ? "" : metaData.EntityName;
@@ -557,7 +557,7 @@ public sealed class StalkerStorageSystem : SharedStalkerStorageSystem
 
     #region ContainerOperations
 
-    //Получить содержимое всех контейнеров(в сумках, частях тела,частях оружия и т.д.)
+    //Get contents of all containers (in bags, body parts, weapon parts, etc.) // Zona14: translated comment
 
     private List<EntityUid> GetAllContainersUidItems(EntityUid inputItem)
     {
@@ -566,7 +566,7 @@ public sealed class StalkerStorageSystem : SharedStalkerStorageSystem
         return allContainerUids;
     }
 
-    //Получить контейнеры из ContainerManagerComponent
+    //Get containers from ContainerManagerComponent // Zona14: translated comment
     private List<EntityUid> GetContainerUids(EntityUid inputItemUid)
     {
         var containerUids = new List<EntityUid>(0);
@@ -581,17 +581,17 @@ public sealed class StalkerStorageSystem : SharedStalkerStorageSystem
 
             foreach (var entity in container.Value.ContainedEntities)
             {
-                //Добавляем предмет который внутри
+                //Add the item inside // Zona14: translated comment
                 containerUids.Add(entity);
 
-                //Добавляем еще предметы если они существуют внутри добавляемого обьекта
+                //Add more items if they exist inside the added object // Zona14: translated comment
                 containerUids.AddRange(GetAllContainersUidItems(entity));
             }
         }
         return containerUids;
     }
 
-    //Получить контейнеры из ContainerManagerComponent без черного списка
+    //Get containers from ContainerManagerComponent without blacklist // Zona14: translated comment
     public List<EntityUid> GetSomeContainerUidsWithoutBlackList(EntityUid inputItemUid)
     {
         var containerUids = new List<EntityUid>(0);
@@ -603,10 +603,10 @@ public sealed class StalkerStorageSystem : SharedStalkerStorageSystem
         {
             foreach (var entity in container.Value.ContainedEntities)
             {
-                //Добавляем предмет который внутри
+                //Add the item inside // Zona14: translated comment
                 containerUids.Add(entity);
 
-                //Добавляем еще предметы если они существуют внутри добавляемого обьекта
+                //Add more items if they exist inside the added object // Zona14: translated comment
                 containerUids.AddRange(GetSomeContainerUidsWithoutBlackList(entity));
             }
         }
@@ -645,7 +645,7 @@ public sealed class StalkerStorageSystem : SharedStalkerStorageSystem
             metaData.EntityPrototype?.ID == null)
             return;
 
-        //Вставляем предметы(их EntityUid) которые находятся внутри контейнеров в этом предмете
+        //Insert items (their EntityUids) that are inside containers in this item // Zona14: translated comment
         var itemsToAdd = GetAllContainersUidItems(args.Used);
         itemsToAdd.Add(args.Used);
 
@@ -675,7 +675,7 @@ public sealed class StalkerStorageSystem : SharedStalkerStorageSystem
         */
     }
 
-    //Добавить в VendingMachineComponent предмет по ключу и имени его прототипа
+    //Add an item to VendingMachineComponent by key and prototype name // Zona14: translated comment
     private void AddToVendingMachineProtoByName(string keyIdentifier, string protoName, StalkerRepositoryComponent _stalkerRepositoryComponent, object stalkerItem)
     {
         RepositoryItemInfo NewRepositoryItemInfo = _stalkerRepositorySystem.GenerateItemInfoByPrototype(protoName);
@@ -708,7 +708,7 @@ public sealed class StalkerStorageSystem : SharedStalkerStorageSystem
 
     #endregion
 
-    //Сохранить инвентарь
+    //Save inventory // Zona14: translated comment
     public void SaveStorage(StalkerRepositoryComponent _stalkerRepositoryComponent)
     {
         Console.WriteLine("SaveStorage");
@@ -873,7 +873,7 @@ public sealed class StalkerStorageSystem : SharedStalkerStorageSystem
         return playerInventory;
     }
 
-    //Получить количество незаспавненых снарядов/патронов из ентити (например из магазина АК47), возвращает количество и название снарядов/патронов
+    //Get the count of unspawned projectiles/ammo from an entity (e.g. from an AK47 magazine), returns count and ammo name // Zona14: translated comment
     public (int Count, string Name) GetAmmoUnSpawnedCount(EntityUid inputItemUid)
     {
         var returnProtoName = string.Empty;

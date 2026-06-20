@@ -1,4 +1,5 @@
-# Вертолет
+# Zona14: translated Russian names/descriptions to English
+# Zona14: Вертолет
 - type: entity
   id: helicopterStructure
   parent: BaseShippingContainer
@@ -23,7 +24,7 @@
         layer:
         - WallLayer
 
-# брошенная машина
+# Zona14: брошенная машина
 
 - type: entity
   id: STForgottenCar
@@ -37,7 +38,7 @@
     state: base
 
 
-# УАЗ (БУХАНКА)
+# Zona14: УАЗ (БУХАНКА)
 
 - type: entity
   id: UAZStructure
@@ -86,7 +87,7 @@
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Transport/uaz.rsi
     state: rusted
-# СТАРЫЕ МАШИНЫ (сломанные и тп)
+# Zona14: СТАРЫЕ МАШИНЫ (сломанные и тп)
 
 - type: entity
   id: OldCarGreen
@@ -214,7 +215,7 @@
         layer:
         - WallLayer
 
-# ЗИЛы
+# Zona14: ЗИЛы
 
 - type: entity
   id: ZIL
@@ -262,7 +263,7 @@
     scale: 1.1, 1.1
     state: z2
 
-# ЛОДКИ
+# Zona14: ЛОДКИ
 
 - type: entity
   id: boatStalker1
@@ -313,7 +314,7 @@
         layer:
         - WallLayer
 
-# МОСКВИЧ
+# Zona14: МОСКВИЧ
 
 - type: entity
   id: Moskvich
@@ -354,7 +355,7 @@
           - !type:DoActsBehavior
             acts: [ "Destruction" ]
 
-# КРАЗ
+# Zona14: КРАЗ
 
 - type: entity
   id: kraz
@@ -399,12 +400,12 @@
         layer:
         - WallLayer
 
-# Танк
+# Zona14: Танк
 
 - type: entity
   id: STtank
   parent: kraz
-  name: танк
+  name: Tank
   suffix: ST, Mapping
   description: An armored combat vehicle, on a tracked track, with cannon and additional machine-gun armament mounted in a rotating full-turn turret.
   components:
@@ -442,7 +443,7 @@
 - type: entity
   id: STbrdm2
   parent: kraz
-  name: БРДМ-2
+  name: BRDM-2
   suffix: ST, Mapping
   description: An armored reconnaissance and patrol vehicle on wheels, armed with two machine guns.
   components:

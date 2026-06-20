@@ -1,7 +1,8 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: Base1270Mag
-  name: магазин Сайги 12х70 (5)
-  description: Магазин Сайги 12х70 для дробовиков АК. Вместимость дробей 5. Продают пустым.
+  name: Saiga magazine 12x70 (5)
+  description: 12x70 Saiga magazine for AK shotguns. Fraction capacity 5. They sell empty.
   parent: Base545Mag10
   suffix: Stalker
   components:
@@ -67,8 +68,8 @@
 
 - type: entity
   id: Saiga1270Mag10
-  name: магазин Сайги 12х70 (10)
-  description: Магазин Сайги 12х70 для дробовиков АК. Вместимость дробей 10. Продают пустым.
+  name: Saiga Shop 12x70 (10)
+  description: 12x70 Saiga magazine for AK shotguns. Fraction capacity 10. They sell empty.
   parent: Base1270Mag
   suffix: Stalker
   components:
@@ -106,8 +107,8 @@
 
 - type: entity
   id: Saiga1270Drum
-  name: барабан Сайги 12х70 (20)
-  description: Барабан Сайги 12х70 для дробовиков АК. Вместимость дробей 20. Продают пустым.
+  name: Saiga Drum 12x70 (20)
+  description: Saiga drum 12x70 for AK shotguns. Fraction capacity 20. They sell empty.
   parent: Base1270Mag
   suffix: Stalker
   components:
@@ -219,7 +220,7 @@
 - type: entity
   parent: Base1270Mag
   id: DrumAutoAssSmall
-  name: Магазин AA-12 (9)
+  name: AA-12 Magazine (9)
   description: AA 12x70 magazine for shotguns.
   suffix: Stalker
   components:
@@ -261,7 +262,7 @@
 - type: entity
   parent: DrumAutoAssSmall
   id: DrumAutoAssBig
-  name: Барабан AA-12 (20)
+  name: AA-12 Drum (20)
   description: AA 12x70 magazine for shotguns.
   suffix: Stalker
   components:
@@ -300,7 +301,7 @@
 - type: entity
   parent: DrumAutoAssSmall
   id: DrumAutoAssVeryBig
-  name: Барабан AA-12 (32)
+  name: AA-12 Drum (32)
   description: AA 12x70 magazine for shotguns.
   suffix: Stalker
   components:
@@ -323,8 +324,8 @@
 
 - type: entity
   id: Base1270OriginMag
-  name: магазин Origin-12 12х70 (5)
-  description: Магазин Origin-12 12х70. Вместимость дробей 5. Продают пустым.
+  name: Origin-12 12x70 magazine (5)
+  description: Origin-12 12x70 magazine. Holds 5 shells. Sold empty.
   parent: Base1270Mag
   suffix: Stalker
   components:
@@ -334,8 +335,8 @@
 
 - type: entity
   id: Origin1270Mag10
-  name: магазин Origin-12 12х70 (10)
-  description: Магазин Origin-12 12х70. Вместимость дробей 10. Продают пустым.
+  name: Origin-12 12x70 magazine (10)
+  description: Origin-12 12x70 magazine. Holds 10 shells. Sold empty.
   parent: Saiga1270Mag10
   suffix: Stalker
   components:
@@ -345,8 +346,8 @@
 
 - type: entity
   id: Origin1270Drum
-  name: барабан Origin-12 12х70 (20)
-  description: Барабан Origin-12 12х70. Вместимость дробей 20. Продают пустым.
+  name: Origin-12 12x70 drum (20)
+  description: Origin-12 12x70 drum magazine. Holds 20 shells. Sold empty.
   parent: Saiga1270Drum
   suffix: Stalker
   components:

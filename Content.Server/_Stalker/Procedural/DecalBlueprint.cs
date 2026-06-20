@@ -29,7 +29,7 @@ public sealed class DecalBlueprint
         MaxPosY = SizeY;
         Console.WriteLine("StageGenerageSize");
 
-        //Генерация начинаеться с левого нижнего угла
+        //Generation starts from the bottom-left corner // Zona14: translated comment
         int PosXCur = 0;
         int PosYCur = 0;
 

@@ -65,7 +65,7 @@
   id: Z14STWeaponRifleRPK74Vedma
   suffix: Z14
   categories: [ Zona14 ]
-  name: RPK-74 "Witch's Broom"
+  name: 'RPK-74 "Witch''s Broom"'
   description: A light machine gun based on the AK-74.
   components:
   - type: GunWieldBonus

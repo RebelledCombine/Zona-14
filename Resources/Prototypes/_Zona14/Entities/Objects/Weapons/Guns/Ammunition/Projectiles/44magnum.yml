@@ -4,7 +4,7 @@
   parent: STBaseLRBullet
   id: Z14BulletRemingtonMagnum
   suffix: Z14
-  name: bullet (.44 Remington Magnum FMJ)
+  name: bullet (.44 remington magnum)
   categories: [ HideSpawnMenu, Zona14 ]
   components:
   - type: Projectile
@@ -19,7 +19,7 @@
   parent: STBaseLRBullet
   id: Z14BulletRemingtonMagnumAP
   suffix: Z14
-  name: bullet (.44 Remington Magnum AP)
+  name: bullet (.44 remington magnum armor-piercing)
   categories: [ HideSpawnMenu, Zona14 ]
   components:
   - type: Projectile

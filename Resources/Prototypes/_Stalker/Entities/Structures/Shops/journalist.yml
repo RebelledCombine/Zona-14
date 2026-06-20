@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: StalkerShop
   id: StalkerShopJournalist
-  name: Торгомат, Журналисты
-  description: Как торговец туда поместился?
-  suffix: ST, Mapping, Журналисты
+  name: vendomat, Journalists
+  description: How did the merchant fit in there?
+  suffix: ST, Mapping, Journalists # Zona14: ST, Mapping, Журналисты
   components:
     - type: Sprite
       drawdepth: Objects

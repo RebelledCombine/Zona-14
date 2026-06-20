@@ -25,20 +25,20 @@
     ZoneArtifactKolobok: 450
     # Acidic group - 2
     ZoneArtifactBaloon: 550
-    #############################Части Мутантов
+    # Zona14: ############################Части Мутантов
     MutantPartZombieHand: 125
     MutantPartSnorkFoot: 100
     MutantPartLeshiyRoot: 140
     MutantPartBloodsuckerTentacles: 250
     MutantPartOraculeEye: 800
   categories:
-    - name: Детекторы
+    - name: Detectors # Zona14: Детекторы
       priority: 1
       items:
         # Artifact detectors
         ZoneArtifactDetectorSpruce: 500
         ZoneArtifactDetectorBear: 5500
-    - name: Болты
+    - name: Bolts # Zona14: Болты
       priority: 2
       items:
         STBoltBagFilled: 10

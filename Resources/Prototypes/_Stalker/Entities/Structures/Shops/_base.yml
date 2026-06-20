@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: BaseStructure
   id: StalkerShop
-  name: торгомат, общий
-  description: Теперь ещё и покупает!
-  suffix: ST, Mapping, общий
+  name: Torgomat, General
+  description: Now he also buys!
+  suffix: ST, Mapping, general # Zona14: ST, Mapping, общий
   components:
   - type: Physics
     bodyType: Static
@@ -40,5 +41,5 @@
     moneyId: Roubles
     shopPresetId: NpcSidor
 
-# ТОРГОМАТЫ ГРУППИРОВОК
+# Zona14: ТОРГОМАТЫ ГРУППИРОВОК
 

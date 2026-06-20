@@ -1,0 +1,35 @@
+- type: entity
+  parent: STBaseModuleUnderbarrelSMG
+  id: Z14STModuleSMGGripT1
+  categories: [ Zona14 ]
+  name: makeshift SMG grip
+  suffix: Z14
+  components:
+  - type: Tag
+    tags:
+    - STWeaponModuleSMGGrip
+  - type: STWeaponModule
+    effect:
+      minAngleModifier: 0.9
+  - type: Sprite
+    state: smg_grip_T1
+  - type: Icon
+    state: smg_grip_T1
+
+- type: entity
+  parent: STBaseModuleUnderbarrelSMG
+  id: Z14STModuleSMGGripT2
+  categories: [ Zona14 ]
+  name: legal SMG grip
+  suffix: Z14
+  components:
+  - type: Tag
+    tags:
+    - STWeaponModuleSMGGrip
+  - type: STWeaponModule
+    effect:
+      minAngleModifier: 0.8
+  - type: Sprite
+    state: smg_grip_T2
+  - type: Icon
+    state: smg_grip_T2

@@ -1,7 +1,8 @@
+# Zona14: translated Russian names/descriptions to English
 
 - type: entity
   id: STActionGoliathTentacle
-  name: Тентакль
+  name: Tentacle
   categories: [ HideSpawnMenu ]
   description: Use your tentacles to grab and stun a target player!
   components:

@@ -1,0 +1,7 @@
+- type: entity
+  parent: STBaseWeaponShotgunSPAS
+  id: Z14STWeaponShotgunSPAS
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: SPAS-12 Combat Shotgun
+  description: Italian combat shotgun with dual pump-action/semi-auto firing modes. Highly valued in the Zone for its stopping power against mutants and reliability in harsh conditions.

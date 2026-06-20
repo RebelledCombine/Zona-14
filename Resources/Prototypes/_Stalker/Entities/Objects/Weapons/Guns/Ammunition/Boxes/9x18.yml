@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: BaseAmmoBoxStalker
   id: 918PGJBox
-  name: Коробка патронов (9х18) П гж
-  description: Для ПМм, в коробке 30 штук. Обеспечивает пробитие только 1 класса брони.
+  name: Ammo Box (9x18) P gzh
+  description: For PMm, there are 30 pieces in a box. Provides penetration of only 1 armor class.
   suffix: Stalker
   components:
   - type: MagazineVisuals
@@ -23,8 +24,8 @@
 - type: entity
   parent: 918PGJBox
   id: 918PSTBox
-  name: Коробка патронов (9х18) ПСТ гж
-  description: Для ПМм, в коробке 30 штук. Обеспечивает пробитие 2 класса брони.
+  name: Ammo Box (9x18) PST gzh
+  description: For PMm, there are 30 pieces in a box. Provides penetration of armor class 2.
   suffix: Stalker
   components:
   - type: BallisticAmmoProvider
@@ -40,8 +41,8 @@
 - type: entity
   parent: 918PGJBox
   id: 918SP7Box
-  name: Коробка патронов (9х18) СП7 гж
-  description: Экспансивные боеприпасы для ПП и пистолетов стран бывшего ОВД. Ничего не пробьют, но нанесут огромный урон по целям со слабой бронёй или без неё.
+  name: Ammo Box (9x18) SP7 gzh
+  description: Expansive ammunition for SMGs and pistols of the countries of the former Warsaw Pact. They will not penetrate anything, but will deal massive damage to targets with weak or no armor.
   suffix: Stalker
   components:
   - type: BallisticAmmoProvider
@@ -57,8 +58,8 @@
 - type: entity
   parent: 918PGJBox
   id: 918PBMBox
-  name: Коробка патронов (9х18) ПБМ гж
-  description: Для ПМм, в коробке 30 штук. Обеспечивает пробитие 3 класса брони.
+  name: Ammo Box (9x18) PBM gzh
+  description: For PMm, there are 30 pieces in a box. Provides penetration of armor class 3.
   suffix: Stalker
   components:
   - type: BallisticAmmoProvider
@@ -75,8 +76,8 @@
 - type: entity
   parent: BaseAmmoCinkBoxStalker
   id: 918PGJBoxCink
-  name: ящик патронов (9х18) П гж
-  description: Для ПМм, в коробке 300 штук. Обеспечивает пробитие только 1 класса брони.
+  name: Large Ammo Box (9x18) P gzh
+  description: For PMm, there are 300 pieces in a box. Provides penetration of only 1 armor class.
   suffix: Stalker
   components:
   - type: BallisticAmmoProvider
@@ -95,8 +96,8 @@
 - type: entity
   parent: 918PGJBoxCink
   id: 918PSTBoxCink
-  name: ящик патронов (9х18) ПСТ гж
-  description: Для ПМм, в коробке 300 штук. Обеспечивает пробитие 2 класса брони.
+  name: Large Ammo Box (9x18) PST gzh
+  description: For PMm, there are 300 pieces in a box. Provides penetration of armor class 2.
   suffix: Stalker
   components:
   - type: BallisticAmmoProvider
@@ -111,8 +112,8 @@
 - type: entity
   parent: 918PGJBoxCink
   id: 918SP7BoxCink
-  name: ящик патронов (9х18) СП7 гж
-  description: Экспансивные боеприпасы для ПП и пистолетов стран бывшего ОВД. Ничего не пробьют, но нанесут огромный урон по целям со слабой бронёй или без неё.
+  name: Large Ammo Box (9x18) SP7 gzh
+  description: "{ ent-918SP7Box.desc }"
   suffix: Stalker
   components:
   - type: BallisticAmmoProvider
@@ -127,8 +128,8 @@
 - type: entity
   parent: 918PGJBoxCink
   id: 918PBMBoxCink
-  name: ящик патронов (9х18) ПБМ гж
-  description: Для ПМм, в коробке 300 штук. Обеспечивает пробитие 3 класса брони.
+  name: Large Ammo Box (9x18) PBM gzh
+  description: For PMm, there are 300 pieces in a box. Provides penetration of armor class 3.
   suffix: Stalker
   components:
   - type: BallisticAmmoProvider

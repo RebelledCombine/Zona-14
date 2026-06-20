@@ -1,0 +1,18 @@
+- type: entity
+  name: I AM A MINE
+  parent: BaseLandMine
+  id: Z14LandMineRickRoll
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: TwoStageTrigger
+    triggerDelay: 0
+    components:
+      - type: AmbientSound
+        enabled: true
+        volume: -10
+        range: 14
+        sound:
+          path: /Audio/_Stalker/rickroll.ogg
+      - type: TimedDespawn
+        lifetime: 15

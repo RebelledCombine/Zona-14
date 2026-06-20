@@ -1,0 +1,16 @@
+- type: entity
+  parent: ClothingHeadset
+  id: Z14ClothingHeadsetMercStalker
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Mercenary Headset
+  description: Headset used by mercenaries
+  components:
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeyMercStalker
+  - type: Sprite
+    sprite: Clothing/Ears/Headsets/medical.rsi
+  - type: Clothing
+    sprite: Clothing/Ears/Headsets/medical.rsi

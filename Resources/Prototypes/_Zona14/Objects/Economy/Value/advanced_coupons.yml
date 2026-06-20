@@ -1,0 +1,104 @@
+- type: entity
+  parent: BaseItem
+  id: Z14PremiumSupplyTalons
+  categories: [ Zona14 ]
+  name: Premium Supply Coupon
+  description: Institute supply coupons.
+  suffix: Z14
+  components:
+    - type: Stack
+      stackType: PremiumSupplyTalons
+      count: 1
+      baseLayer: base
+    - type: Sprite
+      sprite: _Stalker/Objects/Economy/vex.rsi
+      state: green
+      layers:
+      - state: green
+        map: ["base"]
+    - type: Item
+      sprite: _Stalker/Objects/Economy/vex.rsi
+      size: Small
+    - type: Physics
+      bodyType: Dynamic
+    - type: Fixtures
+      fixtures:
+        fix1:
+          density: 30
+          shape:
+            !type:PhysShapeAabb
+            bounds: "-0.35,-0.2,0.25,0.1"
+          mask:
+            - ItemMask
+    - type: Appearance
+    - type: Tag
+      tags:
+        - PremiumSupplyTalons
+
+- type: currency
+  id: Z14PremiumSupplyTalons
+  displayName: store-currency-display-premium-supply-talons
+  cash:
+    1: PremiumSupplyTalons
+  canWithdraw: true
+
+- type: stack
+  id: Z14PremiumSupplyTalons
+  name: stack-premium-supply-talons
+  icon: { sprite: /Textures/_Stalker/Objects/Economy/vex.rsi, state: green }
+  spawn: PremiumSupplyTalons
+
+- type: entity
+  parent: PremiumSupplyTalons
+  id: Z14PremiumSupplyTalons10
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+    - type: Stack
+      count: 10
+
+- type: entity
+  parent: PremiumSupplyTalons
+  id: Z14PremiumSupplyTalons50
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+    - type: Stack
+      count: 50
+
+- type: entity
+  parent: PremiumSupplyTalons
+  id: Z14PremiumSupplyTalons100
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+    - type: Stack
+      count: 100
+
+- type: entity
+  parent: PremiumSupplyTalons
+  id: Z14PremiumSupplyTalons500
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+    - type: Stack
+      count: 500
+
+- type: entity
+  parent: PremiumSupplyTalons
+  id: Z14PremiumSupplyTalons1000
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+    - type: Stack
+      count: 1000
+
+
+- type: entity
+  parent: PremiumSupplyTalons
+  id: Z14PremiumSupplyTalons5000
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+    - type: Stack
+      count: 5000

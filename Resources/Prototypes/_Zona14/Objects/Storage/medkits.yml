@@ -1,0 +1,123 @@
+- type: entity
+  parent: ClothingBeltStorageStalkerBase
+  id: Z14ClothingBeltMedicalStalker
+  categories: [ Zona14 ]
+  name: Medical Belt
+  description: A portable medical belt used in combat to carry medicine.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/belt/medical_belt.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/belt/medical_belt.rsi
+  - type: Dumpable
+  - type: Storage
+    maxItemSize: Large
+    quickInsert: true
+    areaInsert: true
+    grid:
+    - 0,0,2,4
+    whitelist:
+      tags:
+        - Wrench
+        - Bottle
+        - Spray
+        - Brutepack
+        - Bloodpack
+        - Gauze
+        - Ointment
+        - CigPack
+        - PillCanister
+        - DiscreteHealthAnalyzer
+        - GlassBeaker
+        - Syringe
+        - Medkit
+        - SecBeltEquip
+      components:
+        - Hypospray
+        - Injector
+        - Pill
+        - Healing
+  - type: Item
+    size: Ginormous
+    shape:
+    - 0,0,2,4
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+        ents: []
+  - type: UserInterface
+    interfaces:
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
+
+- type: entity
+  parent: ClothingBackpackDuffelGreenStalker
+  id: Z14ClothingBackpackDuffelMedicalStalker
+  categories: [ Zona14 ]
+  name: Medical Bag
+  description: A portable bag used to carry a variety of medications.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/backpacks/Medical/medical.rsi
+    scale: 0.8, 0.8
+  - type: Dumpable
+  - type: Storage
+    maxItemSize: Large
+    quickInsert: true
+    areaInsert: true
+    grid:
+    - 0,0,4,4
+    whitelist:
+      tags:
+        - Wrench
+        - Bottle
+        - Spray
+        - Brutepack
+        - Bloodpack
+        - Gauze
+        - Ointment
+        - CigPack
+        - PillCanister
+        - Radio
+        - DiscreteHealthAnalyzer
+      components:
+        - Hypospray
+        - Injector
+        - Pill
+        - Healing
+
+- type: entity
+  parent: BaseStorageMedkitItem
+  id: Z14MedkitCMSStalker
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: CMS first aid kit
+  description: A compact first aid kit CMS used to carry a variety of medications can hold a defibrillator.
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/backpacks/Medical/medkit_cms.rsi
+      state: icon
+      scale: 0.8, 0.8
+    - type: Storage
+      maxItemSize: Large
+      grid:
+        - 0,0,3,3
+
+- type: entity
+  parent: BaseStorageMedkitItem
+  id: Z14MedkitGrizzlyStalker
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Grizzly Medkit
+  description: Grizzly Compact First Aid Kit, used to carry a variety of medications, can hold a defibrillator. More advanced version.
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/backpacks/Medical/medkit-grizzly.rsi
+      state: icon
+      scale: 0.8, 0.8
+    - type: Storage
+      maxItemSize: Large
+      grid:
+        - 0,0,4,4

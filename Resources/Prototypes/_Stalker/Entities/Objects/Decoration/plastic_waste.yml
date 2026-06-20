@@ -1,6 +1,7 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: PlasticWaste0
-  name: Мусор
+  name: Trash
   components:
   - type: Clickable
   - type: Sprite
@@ -10,7 +11,7 @@
 
 - type: entity
   id: PlasticWaste1
-  name: Мусор
+  name: "{ ent-PlasticWaste0 }"
   components:
   - type: Clickable
   - type: Sprite
@@ -20,7 +21,7 @@
 
 - type: entity
   id: PlasticWaste2
-  name: Мусор
+  name: "{ ent-PlasticWaste0 }"
   components:
   - type: Clickable
   - type: Sprite
@@ -30,7 +31,7 @@
 
 - type: entity
   id: PlasticWaste3
-  name: Мусор
+  name: "{ ent-PlasticWaste0 }"
   components:
   - type: Clickable
   - type: Sprite
@@ -39,7 +40,7 @@
     snapCardinals: true
 
 - type: entity
-  name: Мусорный пластиковый спавнер
+  name: Trash plastic spawner
   id: PlasticWasteSpawner
   parent: MarkerBase
   components:

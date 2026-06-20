@@ -52,7 +52,7 @@ namespace Content.Server.MemoryVaccine
                     NeedHand = true,
                     DistanceThreshold = 2f,
                 };
-                _popupSystem.PopupEntity("Ввод ампулы", target.Value, PopupType.LargeCaution);
+                _popupSystem.PopupEntity(Loc.GetString("st-memory-vaccine-injecting"), target.Value, PopupType.LargeCaution); // Zona14: localized
                 _doAfterSystem.TryStartDoAfter(doAfterArgs);
             }
 
@@ -65,7 +65,7 @@ namespace Content.Server.MemoryVaccine
                 return;
             var target = args.Args.Target.Value;
 
-            _popupSystem.PopupEntity("Ампула введена", uid, PopupType.LargeCaution);
+            _popupSystem.PopupEntity(Loc.GetString("st-memory-vaccine-injected"), uid, PopupType.LargeCaution); // Zona14: localized
             AddComp<MemoryLostComponent>(target);
             AddComp<SleepingComponent>(target);
 

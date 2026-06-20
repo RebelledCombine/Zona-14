@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
-  suffix: Stalker, крафт
+  suffix: Stalker, craft # Zona14: Stalker, крафт
   parent: BaseItem
   id: LogStalker
-  name: бревно
+  name: Log
   components:
   - type: Sprite
     sprite: Objects/Specific/Hydroponics/towercap.rsi
@@ -14,28 +15,28 @@
     - LogStalker
 
 - type: entity
-  suffix: Stalker, крафт
+  suffix: Stalker, craft # Zona14: Stalker, крафт
   parent: LogStalker
   id: STLogStalkerT1
-  name: бревно сосны
+  name: Pine log
 
 - type: entity
-  suffix: Stalker, крафт
+  suffix: Stalker, craft # Zona14: Stalker, крафт
   parent: LogStalker
   id: STLogStalkerT2
-  name: бревно берёзы
+  name: Birch log
 
 - type: entity
-  suffix: Stalker, крафт
+  suffix: Stalker, craft # Zona14: Stalker, крафт
   parent: LogStalker
   id: STLogStalkerT3
-  name: бревно рыжего леса
+  name: Log of the Red Forest
 
 - type: entity
-  suffix: Stalker, крафт
+  suffix: Stalker, craft # Zona14: Stalker, крафт
   parent: LogStalker
   id: STLogStalkerT4
-  name: бревно ивы
+  name: Willow Log
 
 - type: Tag
   id: LogStalker
@@ -49,7 +50,7 @@
     secondIngredient: BonfireOff
     time: 5
 
-# ##################### Деревья
+# Zona14: ##################### Деревья
 
 - type: lightCraftingRecipe
   id: CraftLogFromTree
@@ -106,7 +107,7 @@
     exactSecond: false
     time: 5
 
-## Деревья спонсоры
+# Zona14: # Деревья спонсоры
 - type: lightCraftingRecipe
   id: CraftLogFromTreeSponsor
   results:
@@ -162,4 +163,4 @@
     exactSecond: false
     time: 1
   
-# Спонсоры конец
+# Zona14: Спонсоры конец

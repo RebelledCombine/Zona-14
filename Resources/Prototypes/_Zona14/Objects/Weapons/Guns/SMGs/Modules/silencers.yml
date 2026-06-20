@@ -1,0 +1,37 @@
+- type: entity
+  parent: STBaseModuleSilencerSMG
+  id: Z14STModuleSilencerSMGT1
+  categories: [ Zona14 ]
+  name: makeshift SMG silencer RU
+  suffix: Z14
+  components:
+  - type: Tag
+    tags:
+    - STWeaponModuleSMGSilencer
+  - type: STWeaponModule
+    effect:
+      soundGunshotVolumeAddition: -8
+      farshotSoundDecrease: 0.4
+  - type: Sprite
+    state: smg_silencer_T1
+  - type: Icon
+    state: smg_silencer_T1
+
+- type: entity
+  parent: STBaseModuleSilencerSMG
+  id: Z14STModuleSilencerSMGT2
+  categories: [ Zona14 ]
+  name: legal SMG silencer
+  suffix: Z14
+  components:
+  - type: Tag
+    tags:
+    - STWeaponModuleSMGSilencer
+  - type: STWeaponModule
+    effect:
+      soundGunshotVolumeAddition: -13
+      farshotSoundDecrease: 0.2
+  - type: Sprite
+    state: smg_silencer_T2
+  - type: Icon
+    state: smg_silencer_T2

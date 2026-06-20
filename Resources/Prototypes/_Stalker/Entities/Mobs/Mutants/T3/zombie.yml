@@ -1,6 +1,7 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
-  name: зомбированный
-  suffix: Stalker, Т3
+  name: zombified
+  suffix: Stalker, T3 # Zona14: Stalker, Т3
   parent: BaseMobMutant
   id: MobStalkerZombieBase
   description:
@@ -178,8 +179,8 @@
           MutantPartZombieHand: STMutantPartLegendaryZombieHand
     # Stalker-EN end
 - type: entity
-  name: зомбированный
-  suffix: Stalker, Т3
+  name: zombified
+  suffix: Stalker, T3 # Zona14: Stalker, Т3
   parent: MobStalkerZombieBase
   id: MobStalkerZombieSosop
   description:
@@ -191,8 +192,8 @@
           sprite: /Textures/_Stalker/Mobs/Mutants/zombie/Sosop.rsi
 
 - type: entity
-  name: зомбированный
-  suffix: Stalker, Т3
+  name: zombified
+  suffix: Stalker, T3 # Zona14: Stalker, Т3
   parent: MobStalkerZombieBase
   id: MobStalkerZombieGlod
   description:
@@ -204,8 +205,8 @@
           sprite: /Textures/_Stalker/Mobs/Mutants/zombie/Glod.rsi
 
 - type: entity
-  name: зомбированный
-  suffix: Stalker, Т3
+  name: zombified
+  suffix: Stalker, T3 # Zona14: Stalker, Т3
   parent: MobStalkerZombieBase
   id: MobStalkerZombieISSG
   description:
@@ -233,8 +234,8 @@
         - FullAuto
 
 - type: entity
-  name: зомбированный
-  suffix: Stalker, Т3
+  name: zombified
+  suffix: Stalker, T3 # Zona14: Stalker, Т3
   parent: MobStalkerZombieBase
   id: MobStalkerZombieMerc
   description:
@@ -262,8 +263,8 @@
         - FullAuto
 
 - type: entity
-  name: зомбированный
-  suffix: Stalker, Т3
+  name: zombified
+  suffix: Stalker, T3 # Zona14: Stalker, Т3
   parent: MobStalkerZombieBase
   id: MobStalkerZombieRHBZ
   description:
@@ -291,8 +292,8 @@
         - FullAuto
 
 - type: entity
-  name: зомбированный
-  suffix: Stalker, Т3
+  name: zombified
+  suffix: Stalker, T3 # Zona14: Stalker, Т3
   parent: MobStalkerZombieBase
   id: MobStalkerZombieChN
   description:

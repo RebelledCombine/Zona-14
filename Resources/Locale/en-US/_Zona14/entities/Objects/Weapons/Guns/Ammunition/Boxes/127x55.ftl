@@ -1,0 +1,23 @@
+ent-Z14Ammobox1255BP = 12.7x55 BP Ammo Box
+    .desc = For RSh and ASh-12, 4th penetration class, 20 pieces
+    .suffix = Z14
+
+ent-Z14Ammobox1255BPCink = 12.7x55 BP Large Ammo Box
+    .desc = For RSh and ASh-12, 4th penetration class, 200 pieces
+    .suffix = Z14
+
+ent-Z14Ammobox1255PS12A = 12.7x55 PS12A Ammo Box
+    .desc = For RSh and ASh-12, 1st penetration class, 20 pieces
+    .suffix = Z14
+
+ent-Z14Ammobox1255PS12ACink = 12.7x55 PS12A Large Ammo Box
+    .desc = For RSh and ASh-12, 1st penetration class, 200 pieces
+    .suffix = Z14
+
+ent-Z14Ammobox1255TP = 12.7x55 TP Ammo Box
+    .desc = For RSh and ASh-12, 2nd penetration class, 20 pieces
+    .suffix = Z14
+
+ent-Z14Ammobox1255TPCink = 12.7x55 TP Large Ammo Box
+    .desc = For RSh and ASh-12, 2nd penetration class, 200 pieces
+    .suffix = Z14

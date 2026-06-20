@@ -8,7 +8,7 @@
     tags:
       - CartridgeCaselessRifle
   - type: RepositoryItem
-    categoryName: Боеприпасы
+    categoryName: Ammunition # Zona14: Боеприпасы
   - type: CartridgeAmmo
     deleteOnSpawn: true
   - type: Sprite

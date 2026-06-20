@@ -27,16 +27,18 @@ public sealed class STArmorDurabilitySystem : EntitySystem
     {
         var fraction = GetDurabilityFraction(component);
 
+        // Zona14: localized
         if (fraction <= 0.2f)
-            return "сильно поношенное";
+            return Loc.GetString("st-durability-armor-heavily-worn");
 
         if (fraction <= 0.4f)
-            return "поношенное";
+            return Loc.GetString("st-durability-armor-worn");
 
         if (fraction <= 0.7f)
-            return "слегка поношенное";
+            return Loc.GetString("st-durability-armor-slightly-worn");
 
-        return "исправное";
+        return Loc.GetString("st-durability-armor-serviceable");
+        // End Zona14
     }
 
     public void RestoreDurability(EntityUid uid, STArmorDurabilityComponent component)

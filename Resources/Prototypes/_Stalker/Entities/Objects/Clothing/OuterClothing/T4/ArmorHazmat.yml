@@ -1,10 +1,11 @@
+# Zona14: translated Russian names/descriptions to English
 
 - type: entity
   parent: STClothingOuterArmorSevaBase
   id: ClothingOuterArmorHazmatRf
-  name: Бронированный ХАЗМАТ
+  name: Armored HAZMAT
   suffix: ST, T4, Env
-  description: Кустарно улучшенный ХАЗМАТ с применением аномальных материалов, обеспечивающий хорошую защиту по всем фронтам. Следует использовать с встроенным шлемом.
+  description: A homecrafted HAZMAT with anomalous materials that provides good protection on all fronts. Should be used with a built-in helmet.
   components:
     - type: STWeight
       self: 12
@@ -39,8 +40,8 @@
 - type: entity
   parent: STClothingHeadHatBase
   id: ClothingHeadHazmat
-  name: шлем ХАЗМАТа
-  description: Капюшончик))
+  name: HAZMAT helmet
+  description: Built-in HAZMAT helmet with reinforced protection.
   categories: [ HideSpawnMenu ]
   components:
     - type: Sprite
@@ -70,9 +71,9 @@
 - type: entity
   parent: STClothingOuterArmorSevaBase
   id: ClothingOuterArmorHazmatRfWhite
-  name: Бронированный ХАЗМАТ
+  name: armored HAZMAT
   suffix: ST, T4, Env
-  description: Кустарно улучшенный ХАЗМАТ с применением аномальных материалов, обеспечивающий хорошую защиту по всем фронтам. Следует использовать с встроенным шлемом. Было разработано T.D.I.  Inc.
+  description: A homebrew-improved HAZMAT suit using anomalous materials, providing solid all-around protection. Should be used with the integrated helmet. Developed by T.D.I. Inc.
   components:
     - type: Sprite
       sprite: _Stalker/Objects/Clothing/outerClothing/armored_hazmat_white.rsi
@@ -105,8 +106,8 @@
 - type: entity
   parent: STClothingHeadHatBase
   id: ClothingHeadHazmatWhite
-  name: шлем ХАЗМАТа
-  description: Капюшончик))
+  name: HAZMAT helmet
+  description: A little hood))
   categories: [ HideSpawnMenu ]
   components:
     - type: Sprite

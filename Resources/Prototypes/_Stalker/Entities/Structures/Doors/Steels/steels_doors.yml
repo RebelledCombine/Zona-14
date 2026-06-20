@@ -1,10 +1,11 @@
-# ГЕРМОДВЕРИ
+# Zona14: translated Russian names/descriptions to English
+# Zona14: ГЕРМОДВЕРИ
 
 - type: entity
   id: HermoDverTypeOne
-  name: гермодверь
+  name: hermetic door
   parent: STBaseMaterialDoor
-  description: Защитно-герметические и герметические устройства, которые используются для охраны защитных сооружений гражданской обороны от вредных воздействий различного характера.
+  description: Protective-hermetic and hermetic devices that are used to protect civil defense protective structures from harmful effects of various nature.
   suffix: ST, mapping
   components:
   - type: Sprite
@@ -15,9 +16,9 @@
 
 - type: entity
   id: HermoDverTypeTwo
-  name: гермодверь
+  name: "{ ent-HermoDverTypeOne }"
   parent: STBaseMaterialDoor
-  description: Защитно-герметические и герметические устройства, которые используются для охраны защитных сооружений гражданской обороны от вредных воздействий различного характера.
+  description: "{ ent-HermoDverTypeOne.desc }"
   suffix: ST, mapping
   components:
   - type: Sprite
@@ -28,9 +29,9 @@
 
 - type: entity
   id: LatticeDoor
-  name: решётчатая дверь
+  name: lattice door
   parent: STBaseMaterialDoor
-  description: Это один из видов конструкций для установки в разные виды помещений с целью повышения безопасности.
+  description: This is one of the types of structures for installation in different types of rooms in order to increase safety.
   suffix: ST, mapping
   components:
   - type: Sprite
@@ -47,14 +48,14 @@
         layer:
         - TableLayer
 
-# СТВОРКИ
+# Zona14: СТВОРКИ
 
 - type: entity
   id: StalkerGate
-  name: Створка ворот
+  name: Gate
   parent: STBaseMaterialDoor
-  description: Жёсткая рама, которую изготавливают из трубы квадратного сечения. Облицовкой служит металлический профнастил, покрытый полимерным покрытием. Неплохо сохранилась для своих лет.
-  suffix: ST, mapping, левая
+  description: Rigid frame, which is made of square pipe. The cladding is a metal corrugated sheeting covered with a polymer coating. It is well preserved for its age.
+  suffix: ST, mapping, left # Zona14: ST, mapping, левая
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Doors/Gate/Gate.rsi
@@ -76,10 +77,10 @@
 
 - type: entity
   id: StalkerGater
-  name: Створка ворот
+  name: "{ ent-StalkerGate }"
   parent: STBaseMaterialDoor
-  description: Жёсткая рама, которую изготавливают из трубы квадратного сечения. Облицовкой служит металлический профнастил, покрытый полимерным покрытием. Неплохо сохранилась для своих лет.
-  suffix: ST, mapping, правая
+  description: "{ ent-StalkerGate.desc }"
+  suffix: ST, mapping, right # Zona14: ST, mapping, правая
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Doors/Gate/Gater.rsi
@@ -100,10 +101,10 @@
 
 - type: entity
   id: StalkerGateFixed
-  name: Створка ворот
+  name: "{ ent-StalkerGate }"
   parent: BaseStructure
-  description: Жёсткая рама, которую изготавливают из трубы квадратного сечения. Облицовкой служит металлический профнастил, покрытый полимерным покрытием. Неплохо сохранилась для своих лет.
-  suffix: ST, mapping, левая, незакрываемая
+  description: "{ ent-StalkerGate.desc }"
+  suffix: ST, mapping, left, non-closable # Zona14: ST, mapping, левая, незакрываемая
   components:
     - type: InteractionOutline
     - type: Sprite
@@ -125,22 +126,22 @@
 
 - type: entity
   id: StalkerGaterFixed
-  name: Створка ворот
+  name: "{ ent-StalkerGate }"
   parent: StalkerGateFixed
-  description: Жёсткая рама, которую изготавливают из трубы квадратного сечения. Облицовкой служит металлический профнастил, покрытый полимерным покрытием. Неплохо сохранилась для своих лет.
-  suffix: ST, mapping, правая, незакрываемая
+  description: "{ ent-StalkerGate.desc }"
+  suffix: ST, mapping, right, non-closable # Zona14: ST, mapping, правая, незакрываемая
   components:
     - type: Sprite
       layers:
         - state: closed
           map: ["enum.DoorVisualLayers.Base"]
-# ПРОЧЕЕ
+# Zona14: ПРОЧЕЕ
 
 - type: entity
   id: MilitaryDoor2
-  name: военные ворота
+  name: military gate
   parent: STBaseMaterialDoor
-  description: Проезд в стене или ограде, запираемый створами.
+  description: Passage in a wall or fence that is locked by gates.
   suffix: ST, mapping
   components:
   - type: Occluder
@@ -161,9 +162,9 @@
 
 - type: entity
   id: MilitaryDoorDolg
-  name: военные ворота Долга
+  name: Duty Military Gate
   parent: STBaseMaterialDoor
-  description: Проезд в стене или ограде, запираемый створами.
+  description: An entryway through a wall or barrier, secured with locking gates.
   suffix: ST, mapping
   components:
   - type: AccessReader

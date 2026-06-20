@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: ClothingMaskPullableBase
   id: ClothingMaskNeckFacemask
-  name: маска
-  description: Защитная маска для лица, подключаемая к источнику подачи воздуха.
+  name: mask
+  description: Protective face mask connected to an air supply source.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/mask/facemask1.rsi
@@ -17,8 +18,8 @@
 - type: entity
   parent: ClothingMaskBase
   id: ClothingMaskNeckBlackFace
-  name: маска
-  description: Представляет собой маску с отверстиями для глаз и носа.
+  name: mask
+  description: A mask with holes for the eyes and nose.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/mask/blackface.rsi
@@ -34,8 +35,8 @@
 - type: entity
   parent: ClothingMaskBase
   id: ClothingMaskNeckBloodSucker
-  name: маска кровососа
-  description: Маска с лицом кровососа, неизвестного происхождения.
+  name: Bloodsucker Mask
+  description: Mask with the face of a bloodsucker, of unknown origin.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/mask/bloodsucker.rsi
@@ -51,8 +52,8 @@
 - type: entity
   parent: ClothingMaskBase
   id: ClothingGagMuteStalker
-  name: кляп
-  description: Предназначен для того чтобы заткнуть рот человеку.
+  name: gag
+  description: Designed to silence a person.
   components:
   - type: Item
     size: Tiny
@@ -68,8 +69,8 @@
 - type: entity
   parent: ClothingMaskBase
   id: ClothingMaskGreh
-  name: маска греховца
-  description: Под ней греховцы прячут свое уродливое лицо.
+  name: Sin Mask
+  description: Under it, sinful people hide their ugly face.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/mask/mask_greh.rsi
@@ -85,8 +86,8 @@
 - type: entity
   parent: ClothingMaskBase
   id: ClothingMaskNeckFacemaskJoker
-  name: маска джокера
-  description: Она скрывает за собой хладнокровного убийцу, либо обычного психа.
+  name: Joker Mask
+  description: "She's hiding a cold-blooded killer or a normal psycho."
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/mask/joker_mask.rsi
@@ -102,8 +103,8 @@
 - type: entity
   parent: ClothingMaskBase
   id: ClothingMaskSkull
-  name: маска черепа
-  description: Выглядит устрашающее, как будто за ним скрывается депрессивная личность.
+  name: Skull Mask
+  description: Looks intimidating, as if there is a depressive personality behind it.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/mask/mask_skull.rsi
@@ -119,8 +120,8 @@
 - type: entity
   parent: ClothingMaskBase
   id: ClothingMaskRenegate
-  name: сварочная маска 'Буйвол'
-  description: Сварочная маска, превращенная в оружие. Металл, рога, оранжевые полосы - все кричит об агрессии. Смотреть в лицо такому противнику - уже наполовину проиграть.
+  name: "'Buffalo' welding helmet"
+  description: Welding helmet turned into a weapon. Metal, horns, orange stripes - everything screams aggression. To look into the face of such an opponent is already half a loss.
   components:
   - type: STWeight
     self: 3
@@ -146,8 +147,8 @@
 - type: entity
   parent: ClothingMaskPullableBase
   id: ClothingMaskNeckFacemaskDS
-  name: маска
-  description: Защитная маска для лица чёрного цвета
+  name: mask
+  description: Black Face Mask
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/mask/facemaskDS.rsi
@@ -162,9 +163,9 @@
 - type: entity
   parent: ClothingMaskBase
   id: STClothingMaskKufei
-  name: куфей Серафимов
-  suffix: ST, Скин
-  description: Легкая ткань, предназначенная для ношения на голове и для закрытия лица в которой легко дышать и активно двигаться.
+  name: Seraphim kufei
+  suffix: ST, Skin # Zona14: ST, Скин
+  description: A lightweight fabric designed to be worn on the head and to cover the face in which it is easy to breathe and move actively.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/mask/kufei_sera.rsi
@@ -179,9 +180,9 @@
 - type: entity
   parent: ClothingMaskBase
   id: STClothingMaskLimaKufei
-  name: куфей Серафимов
-  suffix: ST, Скин
-  description: Легкая ткань серого цвета, предназначенная для ношения на голове и для закрытия лица в которой легко дышать и активно двигаться.
+  name: Seraphim kufiyeh
+  suffix: ST, Skin # Zona14: ST, Скин
+  description: Lightweight gray cloth for covering the head and face, breathable and suited for active movement.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/mask/kufei_limasera.rsi

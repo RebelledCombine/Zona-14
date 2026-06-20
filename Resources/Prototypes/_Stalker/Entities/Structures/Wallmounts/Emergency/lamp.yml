@@ -1,7 +1,8 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: EmergencyLightStalker
-  name: аварийная лампа
-  description: На вид старая.
+  name: Emergency Lamp
+  description: It looks old.
   parent: AlwaysPoweredWallLight
   suffix: ST, Mapping
   components:

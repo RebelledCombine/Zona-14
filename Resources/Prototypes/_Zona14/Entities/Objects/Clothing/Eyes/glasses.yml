@@ -1,0 +1,42 @@
+﻿- type: entity
+  parent: ClothingEyesBase
+  id: Z14ClothingEyesProtectionGlasses
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Safety Glasses
+  description: Protects eyes from dust, small fragments, and bright flashes.
+  components:
+    - type: Sprite
+      sprite: Clothing/Eyes/Glasses/meson.rsi
+    - type: Clothing
+      sprite: Clothing/Eyes/Glasses/meson.rsi
+    - type: EyeProtection
+    - type: FlashImmunity
+
+- type: entity
+  parent: ClothingEyesBase
+  id: Z14ClothingEyesGlassesFoma
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: gar glasses
+  description: Go beyond impossible and kick reason to the curb!
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/eyes/foma.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/eyes/foma.rsi
+
+- type: entity
+  parent: ClothingEyesBase
+  id: Z14ClothingEyesProtectionGlassesKrava
+  categories: [ Zona14 ]
+  name: '"Valkyrie" ballistic glasses'
+  description: State-of-the-art ballistic goggles made from top-grade materials and components.
+  suffix: Z14
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/eyes/krava.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/eyes/krava.rsi
+    - type: EyeProtection
+    - type: FlashImmunity

@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 
 - type: entity
   parent: STBaseBlueprint
   id: STClothingCapeArmorChainmailSevaBlueprint
-  name: Рецепт плаща Сева
+  name: Seva Cloak Recipe
   components:
     - type: STBlueprint
       blueprint: newrecipeSTClothingCapeArmorChainmailSeva

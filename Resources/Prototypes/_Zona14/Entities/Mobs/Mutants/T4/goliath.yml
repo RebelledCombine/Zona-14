@@ -1,0 +1,59 @@
+- type: entity
+  id: Z14STMutantGoliath
+  categories: [ Zona14 ]
+  parent: Z14BaseMobMutant
+  name: Goliath
+  suffix: Z14
+  description: Illegitimate child of Nyarlathotep
+  components:
+  - type: Damageable
+    damageModifierSet: Z14STMutantT4DamageModifierSet
+  - type: Sprite
+    sprite: Mobs/Aliens/Asteroid/goliath.rsi
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: goliath
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: goliath
+      Dead:
+        Base: goliath_dead
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 2.50
+    baseSprintSpeed : 2.50
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      1500: Dead
+  - type: MeleeWeapon
+    soundHit:
+      path: "/Audio/Weapons/smash.ogg"
+    angle: 0
+    attackRate: 0.75
+    animation: WeaponArcPunch
+    damage:
+      types:
+        Slash: 35
+        Blunt: 40
+  - type: HTN
+    rootTask:
+      task: GoliathCompound
+    blackboard:
+      VisionRadius: !type:Single
+        6
+      AggroVisionRadius: !type:Single
+        10
+  - type: NPCUseActionOnTarget
+    actionId: Z14STActionGoliathTentacle
+  - type: Tag
+    tags:
+    - CannotSuicide
+    - Goliath
+    - FootstepSound
+  - type: NoSlip
+  - type: Butcherable
+    spawned:
+    - id: FoodMeatGoliath
+      amount: 3
+    - id: MaterialGoliathHide1

@@ -1,0 +1,90 @@
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14STDetectorAD1Blueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Anomaly Detector Model 1 (AD-1) Recipe
+  components:
+    - type: STBlueprint
+      blueprint: newrecipeDetectorAD1
+
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14STDetectorAD2Blueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Anomaly Detector Model 2 (AD-2) Recipe
+  components:
+    - type: STBlueprint
+      blueprint: newrecipeDetectorAD2
+
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14STDetectorAD3Blueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Anomaly Detector Model 3 (AD-3) Recipe
+  components:
+    - type: STBlueprint
+      blueprint: newrecipeDetectorAD3
+
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14STZoneArtifactDetectorBushBlueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Bush Artifact Detector Recipe
+  components:
+    - type: STBlueprint
+      blueprint: recipeZoneArtifactDetectorBush
+
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14STZoneArtifactDetectorResponseBlueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Response Artifact Detector Recipe
+  components:
+    - type: STBlueprint
+      blueprint: recipeZoneArtifactDetectorResponse
+
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14STZoneArtifactDetectorSpruceBlueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Pine Needle Artifact Detector Recipe
+  components:
+    - type: STBlueprint
+      blueprint: recipeZoneArtifactDetectorSpruce
+
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14STZoneArtifactDetectorBarracudaBlueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Barracuda Artifact Detector Recipe
+  components:
+    - type: STBlueprint
+      blueprint: recipeZoneArtifactDetectorBarracuda
+
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14STZoneArtifactDetectorBearBlueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Bear Artifact Detector Recipe
+  components:
+    - type: STBlueprint
+      blueprint: recipeZoneArtifactDetectorBear
+
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14STZoneArtifactDetectorWolfhoundBlueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Wolfhound Artifact Detector Recipe
+  components:
+    - type: STBlueprint
+      blueprint: recipeZoneArtifactDetectorWolfhound
+

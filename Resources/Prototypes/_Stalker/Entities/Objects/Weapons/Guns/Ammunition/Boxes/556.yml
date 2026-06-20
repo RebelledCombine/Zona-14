@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: BaseAmmoBoxStalker
   id: 556FMJBox
-  name: коробка патронов (5,56) FMJ
-  description: Для штурмовых винтовок, в коробке 30 штук. Обеспечивает пробитие 2 класса брони.
+  name: ammo box (5.56) FMJ
+  description: For assault rifles, 30 pieces in a box. Provides penetration of armor class 2.
   suffix: Stalker
   components:
     - type: MagazineVisuals
@@ -23,8 +24,8 @@
 - type: entity
   parent: 556FMJBox
   id: 556M855Box
-  name: Коробка патронов (5,56) M885
-  description: Для штурмовых винтовок, в коробке 30 штук. Обеспечивает пробитие 3 класса брони.
+  name: Ammo Box (5.56) M885
+  description: For assault rifles, 30 pieces in a box. Provides penetration of armor class 3.
   suffix: Stalker
   components:
     - type: BallisticAmmoProvider
@@ -40,8 +41,8 @@
 - type: entity
   parent: 556FMJBox
   id: 556WarmagBox
-  name: Коробка патронов (5,56) Warmag
-  description: Для штурмовых винтовок, в коробке 30 штук. Бесполезно против брони.
+  name: Ammo Box (5.56) Warmag
+  description: For assault rifles, 30 pieces in a box. Useless against armor.
   suffix: Stalker
   components:
     - type: BallisticAmmoProvider
@@ -57,8 +58,8 @@
 - type: entity
   parent: 556FMJBox
   id: 556M856Box
-  name: Коробка патронов (5,56) M856
-  description: Для штурмовых винтовок, в коробке 30 штук. Обеспечивает пробитие 4 класса брони.
+  name: Ammo Box (5.56) M856
+  description: For assault rifles, 30 pieces in a box. Provides penetration of armor class 4.
   suffix: Stalker
   components:
     - type: BallisticAmmoProvider
@@ -74,8 +75,8 @@
 - type: entity
   parent: 556FMJBox
   id: 545M995Box
-  name: Коробка патронов (5,56) M995
-  description: Для штурмовых винтовок, в коробке 30 штук. Обеспечивает пробитие 5 класса брони.
+  name: Ammo Box (5.56) M995
+  description: For assault rifles, 30 pieces in a box. Provides penetration of armor class 5.
   suffix: Stalker
   components:
     - type: BallisticAmmoProvider
@@ -91,8 +92,8 @@
 - type: entity
   parent: 556FMJBox
   id: 556SSAAPBox
-  name: Коробка патронов (5,56) SSA AP
-  description: Для штурмовых винтовок, в коробке 30 штук. Обеспечивает пробитие 6 класса брони.
+  name: Ammo Box (5.56) SSA AP
+  description: For assault rifles, 30 pieces in a box. Provides penetration of Armor Class 6.
   suffix: Stalker
   components:
     - type: BallisticAmmoProvider
@@ -108,8 +109,8 @@
 - type: entity
   parent: BaseAmmoCinkBoxStalker
   id: 556FMJBoxCink
-  name: ящик патронов (5,56) FMJ
-  description: Для штурмовых винтовок, в коробке 300 штук. Обеспечивает пробитие 2 класса брони.
+  name: Large Ammo Box (5.56) FMJ
+  description: For assault rifles, 300 in a box. Provides penetration of armor class 2.
   suffix: Stalker
   components:
     - type: BallisticAmmoProvider
@@ -128,8 +129,8 @@
 - type: entity
   parent: 556FMJBoxCink
   id: 556M855BoxCink
-  name: ящик патронов (5,56) M885
-  description: Для штурмовых винтовок, в коробке 300 штук. Обеспечивает пробитие 3 класса брони.
+  name: Large Ammo Box (5.56) M885
+  description: For assault rifles, 300 in a box. Provides penetration of armor class 3.
   suffix: Stalker
   components:
     - type: BallisticAmmoProvider
@@ -144,8 +145,8 @@
 - type: entity
   parent: 556FMJBoxCink
   id: 556WarmagBoxCink
-  name: ящик патронов (5,56) Warmag
-  description: Для штурмовых винтовок, в коробке 300 штук. Бесполезно против брони.
+  name: Large Ammo Box (5,56) Warmag
+  description: For assault rifles, 300 in a box. Useless against armor.
   suffix: Stalker
   components:
     - type: BallisticAmmoProvider
@@ -160,8 +161,8 @@
 - type: entity
   parent: 556FMJBoxCink
   id: 556M856BoxCink
-  name: ящик патронов (5,56) M856
-  description: Для штурмовых винтовок, в коробке 300 штук. Обеспечивает пробитие 4 класса брони.
+  name: Large Ammo Box (5.56) M856
+  description: For assault rifles, 300 in a box. Provides penetration of armor class 4.
   suffix: Stalker
   components:
     - type: BallisticAmmoProvider
@@ -176,8 +177,8 @@
 - type: entity
   parent: 556FMJBoxCink
   id: 545M995BoxCink
-  name: ящик патронов (5,56) M995
-  description: Для штурмовых винтовок, в коробке 30 штук. Обеспечивает пробитие 5 класса брони.
+  name: Large Ammo Box (5.56) M995
+  description: For assault rifles, 300 pieces in a box. Provides penetration of armor class 5.
   suffix: Stalker
   components:
     - type: BallisticAmmoProvider
@@ -192,8 +193,8 @@
 - type: entity
   parent: 556FMJBoxCink
   id: 556SSAAPBoxCink
-  name: ящик патронов (5,56) SSA AP
-  description: Для штурмовых винтовок, в коробке 300 штук. Обеспечивает пробитие 6 класса брони.
+  name: Large Ammo Box (5.56) SSA AP
+  description: For assault rifles, 300 in a box. Provides penetration of Armor Class 6.
   suffix: Stalker
   components:
     - type: BallisticAmmoProvider

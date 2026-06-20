@@ -1,0 +1,50 @@
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14STClothingOuterJacketStalkerUpgradeBlueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Improved Stalker Jacket Recipe
+  components:
+    - type: STBlueprint
+      blueprint: newrecipeJacketStalkerUpgrade
+
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14ClothingOuterAnomalyStalkerJacketBlueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Anomalous Stalker Jacket Recipe
+  components:
+    - type: STBlueprint
+      blueprint: newrecipeClothingOuterAnomalyStalkerJacket
+
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14ClothingOuterCoatBanditBlackBlueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: black bandit leather coat recipe
+  components:
+    - type: STBlueprint
+      blueprint: newrecipeClothingOuterCoatBanditBlack
+
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14ClothingOuterCoatBanditBrownBlueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: brown bandit leather coat recipe
+  components:
+    - type: STBlueprint
+      blueprint: newrecipeClothingOuterCoatBanditBrown
+
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14STClothingOuterArmorRCBZBlueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: NBC suit recipe
+  components:
+    - type: STBlueprint
+      blueprint: newrecipeCSTClothingOuterArmorRCBZ
+

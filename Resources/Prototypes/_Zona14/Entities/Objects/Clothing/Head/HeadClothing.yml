@@ -1,0 +1,291 @@
+- type: entity
+  parent: Z14HelmetBase
+  id: Z14ClothingHeadHatBeaniehat
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: hat
+  description: Black hat. Won't let your head freeze.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/beaniehat.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/beaniehat.rsi
+  - type: HideLayerClothing
+    slots:
+    - Hair
+    - HeadTop
+
+- type: entity
+  parent: Z14HelmetBase
+  id: Z14ClothingHeadHatMilitary
+  categories: [ Zona14 ]
+  name: military cap
+  description: Khaki cap, used by the military
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/militarycap.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/militarycap.rsi
+
+- type: entity
+  parent: Z14HelmetBase
+  id: Z14ClothingHeadBeretUN
+  categories: [ Zona14 ]
+  name: UN beret
+  description: Beret of the main UN contingent and senior officer corps of OKSOP.
+  suffix: Z14
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/hats/un_beret.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/hats/un_beret.rsi
+
+- type: entity
+  parent: Z14HelmetBase
+  id: Z14ClothingHeadBeretCN
+  categories: [ Zona14 ]
+  name: Clear Sky beret
+  description: Clear Sky faction beret. Made in the characteristic blue color, gradually transitioning to light blue.
+  suffix: Z14
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/hats/cn_beret.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/hats/cn_beret.rsi
+
+- type: entity
+  parent: Z14HelmetBase
+  id: Z14ClothingHeadHatSovietUshankaStalker
+  categories: [ Zona14 ]
+  name: Soviet Ushanka
+  description: "Welcome to the Moscow, da?"
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/soviet_ushanka.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/soviet_ushanka.rsi
+  - type: AddAccentClothing
+    accent: RussianAccent
+  - type: HideLayerClothing
+    slots:
+    - Hair
+    - HeadTop
+
+- type: entity
+  parent: [Z14HelmetBase, BaseFoldable]
+  id: Z14STClothingHeadHatFoma
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Old Ushanka
+  description: Gray Soviet ushanka — a practical winter hat made of thick cloth with fur flaps. Reliable frost protection, versatile and laconic. A classic of the Soviet era.
+  components:
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/foma.rsi
+  - type: Appearance
+  - type: AddAccentClothing
+    accent: RussianAccent
+  - type: Foldable
+    canFoldInsideContainer: true
+  - type: FoldableClothing
+    foldedEquippedPrefix: up
+    foldedHeldPrefix: up
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/foma.rsi
+    layers:
+    - state: icon
+      map: [ "unfoldedLayer" ]
+    - state: icon-up
+      map: ["foldedLayer"]
+      visible: false
+
+- type: entity
+  parent: Z14HelmetBase
+  id: Z14ClothingHeatBagStalker
+  categories: [ Zona14 ]
+  name: head bag
+  description: For kidnapping
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/bag.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/bag.rsi
+  - type: Blindfold
+  - type: FlashImmunity
+  - type: IdentityBlocker
+  - type: HideLayerClothing
+    slots:
+    - Hair
+    - HeadTop
+
+- type: entity
+  parent: Z14HelmetBase
+  id: Z14ClothingHeadHatUN
+  categories: [ Zona14 ]
+  name: UN Cap
+  description: Light blue cap with UN insignia, used by peacekeepers.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/uncap.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/uncap.rsi
+
+- type: entity
+  parent: Z14HelmetBase
+  id: Z14ClothingHeadHatUNModification
+  categories: [ Zona14 ]
+  name: cap with UN headset
+  description: Light blue cap with UN insignia, includes headset. Used by peacekeepers.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/uncap_modification.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/uncap_modification.rsi
+
+- type: entity
+  parent: Z14HelmetBase
+  id: Z14ClothingHeadBandana1Military
+  categories: [ Zona14 ]
+  name: Black Head Bandana
+  description: Black fabric covering the head.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/bandana-black.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/bandana-black.rsi
+
+- type: entity
+  parent: Z14HelmetBase
+  id: Z14ClothingHeadBandana2Military
+  categories: [ Zona14 ]
+  name: Camouflage Head Bandana
+  description: Green camo fabric from an old personal protection system kit, covering the head.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/bandana-camo-green.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/bandana-camo-green.rsi
+
+- type: entity
+  parent: Z14HelmetBase
+  id: Z14ClothingHeadBeretMilitary
+  categories: [ Zona14 ]
+  name: Beret Perimeter Guard Force
+  description: Black officer's beret of the Perimeter Protection Forces (S.O.P.).
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/beret-military.rsi
+    scale: 0.8, 0.8
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/beret-military.rsi
+
+- type: entity
+  parent: Z14HelmetBase
+  id: Z14ClothingHeadHatPoliceHat
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: police cap
+  description: For the top brass.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/police_hat.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/police_hat.rsi
+
+- type: entity
+  parent: Z14HelmetBase
+  id: Z14ClothingHeadHatGeneral
+  categories: [ Zona14 ]
+  name: General's Cap
+  description: Where's my PEAKED CAP?!
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/general_hat.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/general_hat.rsi
+
+- type: entity
+  parent: Z14HelmetBase
+  id: Z14STClothingHeadPeakCap
+  categories: [ Zona14 ]
+  name: visor
+  description: A sailor's cap, strange to see in the Zone.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/Head/Hats/peak_cap.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/Head/Hats/peak_cap.rsi
+
+- type: entity
+  parent: Z14HelmetBase
+  id: Z14ClothingHeadCapMerc
+  categories: [ Zona14 ]
+  name: merc's cap
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/merc_cap.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/merc_cap.rsi
+
+- type: entity
+  parent: Z14HelmetBase
+  id: Z14STClothingHeadBeretDolg
+  categories: [ Zona14 ]
+  name: Duty's beret
+  description: This is the Red Beret of the officers of the Duty.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/betet-dolg.rsi
+    scale: 0.8, 0.8
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/betet-dolg.rsi
+
+- type: entity
+  parent: Z14STClothingHeadHelmetTacticalT1Base
+  id: Z14ClothingHeadHatSerahat
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: green headband
+  description: Green headband with a Seraphim patch.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/serahat.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/serahat.rsi
+
+- type: entity
+  parent: Z14HelmetBase
+  id: Z14ClothingHeadCapDeserter
+  categories: [ Zona14 ]
+  name: Deserter Cap
+  description: Cap in black pixel camo.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/deserter_cap.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/deserter_cap.rsi
+
+- type: entity
+  parent: Z14HelmetBase
+  id: Z14ClothingHeadCapDeserterRadio
+  categories: [ Zona14 ]
+  name: Deserter Headset
+  description: Cap in black pixel camo, now with a headset.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/deserter_cap_radio.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/deserter_cap_radio.rsi

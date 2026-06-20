@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: TowerStalker1
   parent: BaseStructure
-  name: башня
+  name: tower
   suffix: ST, Mapping
-  description: Инженерное сооружение, отличающееся значительным преобладанием высоты над стороной или диаметром основания.
+  description: An engineering structure characterized by a significant predominance of height over the side or diameter of the base.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Other/towers.rsi

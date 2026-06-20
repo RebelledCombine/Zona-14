@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 
 - type: entity
   parent: STClothingHeadBase
   id: STClothingHeadTinfoil
-  name: шапочка из фольги
-  description: защищает от вышек 5G
+  name: foil cap
+  description: protects against 5G towers
   suffix: ST, T2, Env
   components:
   - type: Sprite

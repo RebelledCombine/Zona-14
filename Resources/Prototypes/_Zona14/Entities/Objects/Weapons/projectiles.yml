@@ -1,0 +1,93 @@
+- type: entity
+  id: Z14STBulletAcid
+  suffix: Z14
+  name: acid spit
+  parent: BaseBullet
+  categories: [ HideSpawnMenu, Zona14 ]
+  components:
+    - type: Projectile
+      damage:
+        types:
+          Caustic: 10
+    - type: Sprite
+      sprite: Objects/Weapons/Guns/Projectiles/xeno_toxic.rsi
+      layers:
+        - state: xeno_toxic
+    - type: Ammo
+      muzzleFlash: null
+
+
+- type: entity
+  id: Z14STBulletPsy
+  suffix: Z14
+  name: psy shot
+  parent: BaseBullet
+  categories: [ HideSpawnMenu, Zona14 ]
+  components:
+    - type: Projectile
+      damage:
+        types:
+          Psy: 10
+    - type: Sprite
+      sprite: Objects/Weapons/Guns/Projectiles/magic.rsi
+      layers:
+        - state: spell
+    - type: Ammo
+      muzzleFlash: null
+
+
+- type: entity
+  id: Z14STBulletBox
+  suffix: Z14
+  name: box bullet
+  parent: BaseBullet
+  categories: [ HideSpawnMenu, Zona14 ]
+  components:
+    - type: Projectile
+      projectileClass: 4
+      damage:
+        types:
+          Blunt: 150
+    - type: Sprite
+      sprite: _Stalker/Objects/Decoration/boxes.rsi
+      layers:
+        - state: 1
+    - type: Ammo
+      muzzleFlash: null
+
+
+- type: entity
+  id: Z14STBulletBolt
+  suffix: Z14
+  name: bolt bullet
+  parent: BaseBullet
+  categories: [ HideSpawnMenu, Zona14 ]
+  components:
+    - type: Projectile
+      projectileClass: 3
+      damage:
+        types:
+          Blunt: 75
+    - type: Sprite
+      sprite: _Stalker/Objects/Devices/Utilites.rsi
+      scale: 0.35, 0.35
+      layers:
+        - state: bolt
+    - type: Ammo
+      muzzleFlash: null
+
+
+- type: entity
+  id: Z14STBulletMeteor
+  suffix: Z14
+  name: meteor
+  parent: MeteorLarge
+  categories: [ HideSpawnMenu, Zona14 ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 100
+  - type: Sprite
+    scale: 2, 2
+

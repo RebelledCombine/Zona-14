@@ -1,0 +1,15 @@
+# Shared cosmetic cloak/cape base — no protection, Doshdevik storage.
+- type: entity
+  abstract: true
+  parent: STClothingCapeBase
+  id: Z14STClothingCloakBase
+  categories: [ Zona14 ]
+  name: Cloak Base
+  components:
+  - type: STWeight
+    self: 5
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+      - 0,0,1,1
+  - type: Craftable

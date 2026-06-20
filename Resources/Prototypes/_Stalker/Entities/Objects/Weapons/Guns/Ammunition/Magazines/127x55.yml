@@ -1,7 +1,8 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: AS12Mag
-  name: магазин АШ-12 (20)
-  description: Магазин 12,7x55 для АШ-12.
+  name: AS12 magazine (20)
+  description: 12.7x55 magazine for ASh-12.
   parent: BaseMP5Mag
   suffix: Stalker
   components:

@@ -1,0 +1,12 @@
+- type: entity
+  name: helmet (modification test)
+  suffix: Z14
+  parent: ClothingHeadHelmetBasic
+  id: Z14STHelmetUpgradeTest
+  categories: [ Zona14 ]
+
+  components:
+  - type: STWeight
+    self: 1
+  - type: STItemUpgrades
+    tree: STHelmetUpgradeTree

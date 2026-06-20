@@ -1,0 +1,1063 @@
+- type: entity
+  parent: Z14ArmorBaseT1PvP
+  id: Z14STClothingOuterArmorBase
+  categories: [ Zona14 ]
+  name: Base Armor Base
+  abstract: true
+  components:
+  - type: Item
+    size: Ginormous
+    shape:
+    - 0,0,9,3
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/renegade_armor.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/renegade_armor.rsi
+  - type: Craftable
+  - type: Tag
+    tags:
+    - BlockGloves
+
+# stalker
+- type: entity
+  parent: Z14STClothingOuterArmorBase
+  id: Z14ClothingOuterArmorStalker
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Badger Armored Coveralls
+  description: Mercenary stalker suit used by bar guards. Based on Western special forces equipment. Special fabric treatment improves armor stability. Slightly exceeds PSZ-7 body armor in protection.
+  components:
+  - type: STWeight
+    self: 5
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/merc_armor_loner.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/merc_armor_loner.rsi
+  - type: Armor
+    modifiers:
+      flatReductions:
+        Blunt: 2
+        Slash: 2
+        Piercing: 2
+        Heat: 1
+        Cold: 1
+        Shock: 1
+        Radiation: 1
+        Caustic: 1
+        Compression: 1
+        Psy: 1
+      coefficients:
+        Blunt: 0.90
+        Slash: 0.90
+        Piercing: 0.90
+        Heat: 0.90
+        Cold: 0.90
+        Shock: 0.90
+        Radiation: 0.90
+        Caustic: 0.90
+        Compression: 0.90
+        Psy: 0.90
+  - type: GrantsArtifactSlots
+    slots: 4 # Stalker-Changes | Number of artifact slots this armor grants
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHatHoodMerc2
+    slot: head
+  - type: ContainerContainer
+    containers:
+      toggleable-clothing: !type:ContainerSlot {}
+      storagebase: !type:Container
+        ents: []
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+      - 0,3,0,5
+      - 2,3,2,4
+      - 2,0,3,1
+      - 4,3,4,4
+      - 5,0,6,1
+      - 6,3,6,4
+      - 8,3,8,5
+    blacklist:
+      tags:
+      - STArtifact
+- type: entity
+  parent: Z14STClothingOuterArmorBase
+  id: Z14ClothingOuterArmorRenegate
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Renegade 'II' Armored Coveralls
+  description: Renegades don't bother with beauty. This rubber and metal suit is made to survive the Swamps and fend off any creature. Yellow inserts — to find the dead body in the mud more easily.
+  components:
+  - type: STWeight
+    self: 5
+  - type: Armor
+    modifiers:
+      flatReductions:
+        Blunt: 2
+        Slash: 2
+        Piercing: 2
+        Heat: 1
+        Cold: 1
+        Shock: 1
+        Radiation: 1
+        Caustic: 1
+        Compression: 1
+        Psy: 1
+      coefficients:
+        Blunt: 0.90
+        Slash: 0.90
+        Piercing: 0.90
+        Heat: 0.90
+        Cold: 0.90
+        Shock: 0.90
+        Radiation: 0.90
+        Caustic: 0.90
+        Compression: 0.90
+        Psy: 0.90
+  - type: GrantsArtifactSlots
+    slots: 4 # Stalker-Changes | Number of artifact slots this armor grants
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/renegate_il.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/renegate_il.rsi
+
+
+- type: entity
+  parent: Z14STClothingOuterArmorBase
+  id: Z14ClothingOuterArmorJaba
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Drifter Armored Coveralls
+  description: Reliable Type III armored suit with good anomaly and physical damage protection.
+  components:
+  - type: STWeight
+    self: 5
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/medium_armor_jaba.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/medium_armor_jaba.rsi
+
+- type: entity
+  parent: Z14STClothingOuterArmorBase
+  id: Z14ClothingOuterArmorBandits
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Bandit Armored Coveralls
+  description: A cheap bandit suit protecting from mutants and stalkers. Class 3 protection.
+  components:
+  - type: STWeight
+    self: 5
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/merc_armor_bandit.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/merc_armor_bandit.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHatHoodMercBandit
+    slot: head
+  - type: ContainerContainer
+    containers:
+      toggleable-clothing: !type:ContainerSlot {}
+      storagebase: !type:Container
+        ents: []
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+      - 0,3,0,5
+      - 2,3,2,4
+      - 2,0,3,1
+      - 4,3,4,4
+      - 5,0,6,1
+      - 6,3,6,4
+      - 8,3,8,5
+    blacklist:
+      tags:
+      - STArtifact
+  - type: Armor
+    modifiers:
+      flatReductions:
+        Blunt: 2
+        Slash: 2
+        Piercing: 2
+        Heat: 1
+        Cold: 1
+        Shock: 1
+        Radiation: 1
+        Caustic: 1
+        Compression: 1
+        Psy: 1
+      coefficients:
+        Blunt: 0.90
+        Slash: 0.90
+        Piercing: 0.90
+        Heat: 0.90
+        Cold: 0.90
+        Shock: 0.90
+        Radiation: 0.90
+        Caustic: 0.90
+        Compression: 0.90
+        Psy: 0.90
+- type: entity
+  parent: Z14STClothingHeadHatHoodBase
+  id: Z14ClothingHeadHatHoodMercBandit
+  suffix: Z14
+  categories: [ HideSpawnMenu, Zona14 ]
+  name: Hood
+  components:
+  - type: STWeight
+    self: 1
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/hood_merc_bandit.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/hood_merc_bandit.rsi
+
+- type: entity
+  parent: Z14STClothingOuterArmorBase
+  id: Z14ClothingOuterArmorDeserter
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Apostate "Hoplite" Armored Coveralls
+  description: A cheap and reliable Deserters armored suit, good protection from mutants and bullets. Class 3
+  components:
+  - type: STWeight
+    self: 5
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/deserter_armor.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/deserter_armor.rsi
+
+
+- type: entity
+  parent: Z14STClothingOuterArmorBase
+  id: Z14ClothingOuterArmorMerc
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Mercenary Armored Coveralls
+  description: Based on Western special forces equipment. Special fabric treatment improves armor stability. Slightly exceeds standard army body armor. Class 3 protection.
+  components:
+  - type: STWeight
+    self: 5
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/merc_armor.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/merc_armor.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHatHoodMerc
+    slot: head
+  - type: Armor
+    modifiers:
+      flatReductions:
+        Blunt: 2
+        Slash: 2
+        Piercing: 2
+        Heat: 1
+        Cold: 1
+        Shock: 1
+        Radiation: 1
+        Caustic: 1
+        Compression: 1
+        Psy: 1
+      coefficients:
+        Blunt: 0.90
+        Slash: 0.90
+        Piercing: 0.90
+        Heat: 0.90
+        Cold: 0.90
+        Shock: 0.90
+        Radiation: 0.90
+        Caustic: 0.90
+        Compression: 0.90
+        Psy: 0.90
+  - type: GrantsArtifactSlots
+    slots: 4 # Stalker-Changes | Number of artifact slots this armor grants
+  - type: ContainerContainer
+    containers:
+      toggleable-clothing: !type:ContainerSlot {}
+      storagebase: !type:Container
+        ents: []
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+      - 0,3,0,5
+      - 2,3,2,4
+      - 2,0,3,1
+      - 4,3,4,4
+      - 5,0,6,1
+      - 6,3,6,4
+      - 8,3,8,5
+    blacklist:
+      tags:
+      - STArtifact
+- type: entity
+  parent: Z14STClothingHeadHatHoodBase
+  id: Z14ClothingHeadHatHoodMerc
+  suffix: Z14
+  categories: [ HideSpawnMenu, Zona14 ]
+  name: Hood
+  components:
+  - type: STWeight
+    self: 1
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/hood_merc.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/hood_merc.rsi
+
+- type: entity
+  parent: Z14STClothingOuterArmorBase
+  id: Z14ClothingOuterArmorMerc2
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Mercenary Armor Suit
+  description: Birch camo in gray. Based on Western special forces equipment. Special fabric treatment improves armor stability. Slightly exceeds standard army body armor. Class 3 protection.
+  components:
+  - type: STWeight
+    self: 5
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/merc_armor_2.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/merc_armor_2.rsi
+  - type: ContainerContainer
+    containers:
+      toggleable-clothing: !type:ContainerSlot {}
+      storagebase: !type:Container
+        ents: []
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+      - 0,3,0,5
+      - 2,3,2,4
+      - 2,0,3,1
+      - 4,3,4,4
+      - 5,0,6,1
+      - 6,3,6,4
+      - 8,3,8,5
+    blacklist:
+      tags:
+      - STArtifact
+  - type: Armor
+    modifiers:
+      flatReductions:
+        Blunt: 2
+        Slash: 2
+        Piercing: 2
+        Heat: 1
+        Cold: 1
+        Shock: 1
+        Radiation: 1
+        Caustic: 1
+        Compression: 1
+        Psy: 1
+      coefficients:
+        Blunt: 0.90
+        Slash: 0.90
+        Piercing: 0.90
+        Heat: 0.90
+        Cold: 0.90
+        Shock: 0.90
+        Radiation: 0.90
+        Caustic: 0.90
+        Compression: 0.90
+        Psy: 0.90
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHatHoodMerc2
+    slot: head
+
+- type: entity
+  parent: Z14STClothingHeadHatHoodBase
+  id: Z14ClothingHeadHatHoodMerc2
+  suffix: Z14
+  categories: [ HideSpawnMenu, Zona14 ]
+  name: Hood
+  components:
+  - type: STWeight
+    self: 1
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/hood_merc_2.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/hood_merc_2.rsi
+
+- type: entity
+  parent: Z14STClothingOuterArmorBase
+  id: Z14ClothingOuterArmorDolgPS5M
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: 'PS5-M Suit "Universal Protection"'
+  description: Modern Duty suit model. Suited for stalker recruits accustomed to light class 3 suits. Unlike the PS3 series, provides good anomaly protection and can stop pistol bullets. No artifact containers, but various auxiliary systems can be installed.
+  components:
+  - type: STWeight
+    self: 5
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/ps5m.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/ps5m.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetDolgPS5M
+    slot: head
+  - type: Armor
+    modifiers:
+      flatReductions:
+        Blunt: 2
+        Slash: 2
+        Piercing: 2
+        Heat: 1
+        Cold: 1
+        Shock: 1
+        Radiation: 1
+        Caustic: 1
+        Compression: 1
+        Psy: 1
+      coefficients:
+        Blunt: 0.90
+        Slash: 0.90
+        Piercing: 0.90
+        Heat: 0.90
+        Cold: 0.90
+        Shock: 0.90
+        Radiation: 0.90
+        Caustic: 0.90
+        Compression: 0.90
+        Psy: 0.90
+  - type: GrantsArtifactSlots
+    slots: 4 # Stalker-Changes | Number of artifact slots this armor grants
+- type: entity
+  parent: STClothingHeadHatBase
+  id: Z14ClothingHeadHelmetDolgPS5M
+  suffix: Z14
+  name: 'PS5-M Hood "Universal Protection"'
+  categories: [ HideSpawnMenu, Zona14 ]
+  description: Not very free, as long as it sits on your head.
+  components:
+    - type: STWeight
+      self: 1
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/hats/hood_ps5m.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/hats/hood_ps5m.rsi
+
+- type: entity
+  parent: Z14STClothingOuterArmorBase
+  id: Z14ClothingOuterArmorFreedomDefender
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Freedom Armored Coveralls
+  description: Freedom craftsmen's reinforced stalker suit. Class 3 medium armor with zirconium reinforcements. Good protection from automatic fire and shrapnel. Two-layer construction of treated leather and asbestos-thread fabric provides some anomaly and radiation protection.
+  components:
+  - type: STWeight
+    self: 5
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/strazh.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/strazh.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetFreedomDefender
+    slot: head
+  - type: Armor
+    modifiers:
+      flatReductions:
+        Blunt: 2
+        Slash: 2
+        Piercing: 2
+        Heat: 1
+        Cold: 1
+        Shock: 1
+        Radiation: 1
+        Caustic: 1
+        Compression: 1
+        Psy: 1
+      coefficients:
+        Blunt: 0.90
+        Slash: 0.90
+        Piercing: 0.90
+        Heat: 0.90
+        Cold: 0.90
+        Shock: 0.90
+        Radiation: 0.90
+        Caustic: 0.90
+        Compression: 0.90
+        Psy: 0.90
+  - type: GrantsArtifactSlots
+    slots: 4 # Stalker-Changes | Number of artifact slots this armor grants
+- type: entity
+  parent: STClothingHeadHatBase
+  id: Z14ClothingHeadHelmetFreedomDefender
+  suffix: Z14
+  name: Sentinel Hood
+  categories: [ HideSpawnMenu, Zona14 ]
+  description: Not very free, as long as it sits on your head.
+  components:
+    - type: STWeight
+      self: 1
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/hats/hood_strazh.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/hats/hood_strazh.rsi
+
+- type: entity
+  parent: Z14STClothingOuterArmorZaryaBase
+  id: Z14ClothingOuterArmorFreedomWind
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: '"Wind of Freedom" Suit'
+  description: Freedom craftsmen's lightweight stalker suit. Class 2 light army body armor with reinforcing Kevlar plates. Protects against light weapons. Fabric treated for improved anomaly resistance.
+  components:
+  - type: STWeight
+    self: 5
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/veter.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/veter.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetFreedomWind
+    slot: head
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+      - 0,3,0,5
+      - 2,3,2,4
+      - 2,0,3,1
+      - 4,3,4,4
+      - 5,0,6,1
+      - 6,3,6,4
+      - 8,3,8,5
+    blacklist:
+      tags:
+      - STArtifact
+  - type: Armor
+    modifiers:
+      flatReductions:
+        Blunt: 2
+        Slash: 2
+        Piercing: 2
+        Heat: 1
+        Cold: 1
+        Shock: 1
+        Radiation: 1
+        Caustic: 1
+        Compression: 1
+        Psy: 1
+      coefficients:
+        Blunt: 0.90
+        Slash: 0.90
+        Piercing: 0.90
+        Heat: 0.90
+        Cold: 0.90
+        Shock: 0.90
+        Radiation: 0.90
+        Caustic: 0.90
+        Compression: 0.90
+        Psy: 0.90
+  - type: GrantsArtifactSlots
+    slots: 4 # Stalker-Changes | Number of artifact slots this armor grants
+  - type: ContainerContainer
+    containers:
+      toggleable-clothing: !type:ContainerSlot {}
+      storagebase: !type:Container
+        ents: []
+
+- type: entity
+  parent: STClothingHeadHatBase
+  id: Z14ClothingHeadHelmetFreedomWind
+  suffix: Z14
+  name: '"Wind of Freedom" Hood'
+  categories: [ HideSpawnMenu, Zona14 ]
+  description: Not very free, as long as it sits on your head.
+  components:
+    - type: STWeight
+      self: 1
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/hats/hood_veter.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/hats/hood_veter.rsi
+
+- type: entity
+  parent: Z14STClothingOuterArmorBase
+  id: Z14ClothingOuterArmorCN3a
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: ChN-3a Armored Coveralls
+  description: Standard equipment of Clear Sky assault squads. Body armor stops pistol bullets, built-in treated canvas suit provides good anomaly protection. Class 3
+  components:
+  - type: STWeight
+    self: 5
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/cn3a.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/cn3a.rsi
+# bonus
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+        ents: []
+
+      toggleable-clothing: !type:ContainerSlot {}
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+      - 0,3,0,5
+      - 2,3,2,4
+      - 2,0,3,1
+      - 4,3,4,4
+      - 5,0,6,1
+      - 6,3,6,4
+      - 8,3,8,5
+    blacklist:
+      tags:
+      - STArtifact
+  - type: Armor
+    modifiers:
+      flatReductions:
+        Blunt: 2
+        Slash: 2
+        Piercing: 2
+        Heat: 1
+        Cold: 1
+        Shock: 1
+        Radiation: 1
+        Caustic: 1
+        Compression: 1
+        Psy: 1
+      coefficients:
+        Blunt: 0.90
+        Slash: 0.90
+        Piercing: 0.90
+        Heat: 0.90
+        Cold: 0.90
+        Shock: 0.90
+        Radiation: 0.90
+        Caustic: 0.90
+        Compression: 0.90
+        Psy: 0.90
+  - type: GrantsArtifactSlots
+    slots: 4 # Stalker-Changes | Number of artifact slots this armor grants
+- type: entity
+  parent: Z14STClothingOuterArmorBase
+  id: Z14ClothingOuterArmorMonolith
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: '"Chernobyl" Armored Coveralls'
+  description: Monolith stalker suit, manufacturer unknown. Class 3 protection, slightly below PSZ-9a. Similar to common neutral stalker suits combining body armor with radiation protection. Decent against light weapons. Poor anomaly protection due to lack of air filtration.
+  components:
+  - type: STWeight
+    self: 5
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/monolith_armor.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/monolith_armor.rsi
+  - type: ContainerContainer
+    containers:
+      toggleable-clothing: !type:ContainerSlot {}
+      storagebase: !type:Container
+        ents: []
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+      - 0,3,0,5
+      - 2,3,2,4
+      - 2,0,3,1
+      - 4,3,4,4
+      - 5,0,6,1
+      - 6,3,6,4
+      - 8,3,8,5
+    blacklist:
+      tags:
+      - STArtifact
+  - type: Armor
+    modifiers:
+      flatReductions:
+        Blunt: 2
+        Slash: 2
+        Piercing: 2
+        Heat: 1
+        Cold: 1
+        Shock: 1
+        Radiation: 1
+        Caustic: 1
+        Compression: 1
+        Psy: 1
+      coefficients:
+        Blunt: 0.90
+        Slash: 0.90
+        Piercing: 0.90
+        Heat: 0.90
+        Cold: 0.90
+        Shock: 0.90
+        Radiation: 0.90
+        Caustic: 0.90
+        Compression: 0.90
+        Psy: 0.90
+  - type: GrantsArtifactSlots
+    slots: 4 # Stalker-Changes | Number of artifact slots this armor grants
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetHatMonolith
+    slot: head
+  - type: PersonalDamage
+    damage:
+      types:
+        Radiation: 18.01
+
+- type: entity
+  parent: STClothingHeadHatBase
+  id: Z14ClothingHeadHelmetHatMonolith
+  suffix: Z14
+  name: Chernobyl hood
+  categories: [ HideSpawnMenu, Zona14 ]
+  components:
+    - type: STWeight
+      self: 1
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/hats/hood_monolith.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/hats/hood_monolith.rsi
+
+- type: entity
+  parent: Z14STClothingOuterArmorBase
+  id: Z14ClothingOuterArmorMonolithOld
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Monolith Suit
+  description: Monolith stalker suit, manufacturer unknown. Class 3 protection, slightly below PSZ-9a. Similar to common neutral stalker suits combining body armor with radiation protection. Decent against light weapons. Poor anomaly protection due to lack of air filtration.
+  components:
+  - type: STWeight
+    self: 5
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/monolith_armor_old.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/monolith_armor_old.rsi
+  - type: ContainerContainer
+    containers:
+      toggleable-clothing: !type:ContainerSlot {}
+      storagebase: !type:Container
+        ents: []
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+      - 0,3,0,5
+      - 2,3,2,4
+      - 2,0,3,1
+      - 4,3,4,4
+      - 5,0,6,1
+      - 6,3,6,4
+      - 8,3,8,5
+    blacklist:
+      tags:
+      - STArtifact
+  - type: Armor
+    modifiers:
+      flatReductions:
+        Blunt: 2
+        Slash: 2
+        Piercing: 2
+        Heat: 1
+        Cold: 1
+        Shock: 1
+        Radiation: 1
+        Caustic: 1
+        Compression: 1
+        Psy: 1
+      coefficients:
+        Blunt: 0.90
+        Slash: 0.90
+        Piercing: 0.90
+        Heat: 0.90
+        Cold: 0.90
+        Shock: 0.90
+        Radiation: 0.90
+        Caustic: 0.90
+        Compression: 0.90
+        Psy: 0.90
+  - type: GrantsArtifactSlots
+    slots: 4 # Stalker-Changes | Number of artifact slots this armor grants
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetHatMonolith
+    slot: head
+  - type: PersonalDamage
+    damage:
+      types:
+        Radiation: 18.01
+
+- type: entity
+  parent: Z14STClothingOuterArmorBase
+  id: Z14ClothingOuterArmorPilgrim
+  categories: [ Zona14 ]
+  name: Inquisitor Armor
+  suffix: Z14
+  description: A cheap Inquisition suit protecting from mutants and heretics. Class 3 protection.
+  components:
+  - type: STWeight
+    self: 5
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/inquisitor_armor.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/inquisitor_armor.rsi
+
+- type: entity
+  parent: Z14ArmorBaseT1PvP
+  id: Z14ClothingOuterArmorKeeper
+  categories: [ Zona14 ]
+  name: "'Keeper' Armored Coveralls"
+  suffix: Z14
+  description: Type II armored suit providing minimal protection against most damage types
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/keeper.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/keeper.rsi
+  - type: HideLayerClothing
+    slots:
+    - Hair
+
+- type: entity
+  parent: Z14STClothingOuterArmorBase
+  id: Z14ClothingOuterArmorFirstbornSeraphimes
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Firstborn suit
+  description: An old worn Monolith suit. The first Seraphim wore these, later calling themselves the Firstborn.
+  components:
+  - type: STWeight
+    self: 5
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/seraphime_firstborn.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/seraphime_firstborn.rsi
+  - type: ContainerContainer
+    containers:
+      toggleable-clothing: !type:ContainerSlot {}
+      storagebase: !type:Container
+        ents: []
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+      - 0,3,0,5
+      - 2,3,2,4
+      - 2,0,3,1
+      - 4,3,4,4
+      - 5,0,6,1
+      - 6,3,6,4
+      - 8,3,8,5
+    blacklist:
+      tags:
+      - STArtifact
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetHatFirstbornSeraphimes
+    slot: head
+
+- type: entity
+  parent: STClothingHeadHatBase
+  id: Z14ClothingHeadHelmetHatFirstbornSeraphimes
+  suffix: Z14
+  name: Firstborn hood
+  categories: [ HideSpawnMenu, Zona14 ]
+  components:
+    - type: STWeight
+      self: 1
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/hats/hood_firstbornseraphimes.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/hats/hood_firstbornseraphimes.rsi
+
+- type: entity
+  parent: Z14ClothingOuterArmorPSZ9D
+  id: Z14STClothingOuterArmorSeraphimStrash
+  categories: [ Zona14 ]
+  name: '"Sentinel" Armored Suit'
+  description: An old, battle-hardened Bulat from the Monolith arsenal, bearing the marks of time and fierce battles. Despite its age, it remains a reliable shield. Seraphim camo gives it a unique look, and numerous prayer marks and sacred charms make it not just armor, but a true talisman of faith and strength.
+  suffix: Z14
+  components:
+  - type: STWeight
+    self: 5
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/_Sera/strash_seraphim.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/_Sera/strash_seraphim.rsi
+  - type: Armor
+    modifiers:
+      flatReductions:
+        Blunt: 2
+        Slash: 2
+        Piercing: 2
+        Heat: 1
+        Cold: 1
+        Shock: 1
+        Radiation: 1
+        Caustic: 1
+        Compression: 1
+        Psy: 1
+      coefficients:
+        Blunt: 0.90
+        Slash: 0.90
+        Piercing: 0.90
+        Heat: 0.90
+        Cold: 0.90
+        Shock: 0.90
+        Radiation: 0.90
+        Caustic: 0.90
+        Compression: 0.90
+        Psy: 0.90
+  - type: GrantsArtifactSlots
+    slots: 4 # Stalker-Changes | Number of artifact slots this armor grants
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+        ents: []
+
+      toggleable-clothing: !type:ContainerSlot {}
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+      - 0,3,0,5
+      - 2,3,2,4
+      - 2,0,3,1
+      - 4,3,4,4
+      - 5,0,6,1
+      - 6,3,6,4
+      - 8,3,8,5
+    blacklist:
+      tags:
+      - STArtifact
+- type: entity
+  parent: Z14STClothingOuterArmorSeraphimStrash
+  id: Z14STClothingOuterArmorLimaSeraphimStrash
+  categories: [ Zona14 ]
+  name: '"Sentinel" Armored Suit'
+  suffix: Z14
+  description: An old, battle-hardened Bulat from the Monolith arsenal, bearing the marks of time and fierce battles. Despite its age, it remains a reliable shield. Seraphim camo gives it a unique look, and numerous prayer marks and sacred charms make it not just armor, but a true talisman of faith and strength... Now gray!
+  components:
+  - type: STWeight
+    self: 5
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/_Sera/strash_limaphim.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/_Sera/strash_limaphim.rsi
+  - type: Armor
+    modifiers:
+      flatReductions:
+        Blunt: 2
+        Slash: 2
+        Piercing: 2
+        Heat: 1
+        Cold: 1
+        Shock: 1
+        Radiation: 1
+        Caustic: 1
+        Compression: 1
+        Psy: 1
+      coefficients:
+        Blunt: 0.90
+        Slash: 0.90
+        Piercing: 0.90
+        Heat: 0.90
+        Cold: 0.90
+        Shock: 0.90
+        Radiation: 0.90
+        Caustic: 0.90
+        Compression: 0.90
+        Psy: 0.90
+  - type: GrantsArtifactSlots
+    slots: 4 # Stalker-Changes | Number of artifact slots this armor grants
+- type: entity
+  parent: Z14STClothingOuterArmorSeraphimStrash
+  id: Z14STClothingOuterArmorPeresvet
+  categories: [ Zona14 ]
+  name: '"Peresvet" armor suit'
+  suffix: Z14
+  description: An armored suit made by some craftsman with a specific look.
+  components:
+  - type: STWeight
+    self: 5
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/peresvet/peresvet.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/peresvet/peresvet.rsi
+  - type: ToggleableClothing
+    clothingPrototype: STClothingHeadPeresvet
+    slot: head
+  - type: Armor
+    modifiers:
+      flatReductions:
+        Blunt: 2
+        Slash: 2
+        Piercing: 2
+        Heat: 1
+        Cold: 1
+        Shock: 1
+        Radiation: 1
+        Caustic: 1
+        Compression: 1
+        Psy: 1
+      coefficients:
+        Blunt: 0.90
+        Slash: 0.90
+        Piercing: 0.90
+        Heat: 0.90
+        Cold: 0.90
+        Shock: 0.90
+        Radiation: 0.90
+        Caustic: 0.90
+        Compression: 0.90
+        Psy: 0.90
+- type: entity
+  parent: ClothingHeadHardsuitBase
+  id: Z14STClothingHeadPeresvet
+  suffix: Z14
+  name: '"Peresvet" armor suit helmet #base'
+  description: Helmet from the Peresvet kit.
+  categories: [ HideSpawnMenu, Zona14 ]
+  components:
+  - type: STWeight
+    self: 1
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/peresvet/helmet.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/peresvet/helmet.rsi
+  - type: BreathMask
+  - type: IngestionBlocker
+  - type: IdentityBlocker
+  - type: Tag
+    tags:
+      - BlockMask
+  - type: PressureProtection
+    highPressureMultiplier: 0.1
+    lowPressureMultiplier: 1000
+  - type: HideLayerClothing
+    slots:
+    - Hair
+    - Snout
+
+- type: entity
+  parent: Z14STClothingOuterArmorSeraphimStrash
+  id: Z14STClothingOuterArmorKrava
+  categories: [ Zona14 ]
+  name: '"Valkyrie" camo Ratnik'
+  suffix: Z14
+  description: Russian combat soldier equipment designed for enhanced combat effectiveness and survivability. This model looks extremely worn but still wearable.
+  components:
+  - type: STWeight
+    self: 5
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/ratnik_krava.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/ratnik_krava.rsi
+  - type: Armor
+    modifiers:
+      flatReductions:
+        Blunt: 2
+        Slash: 2
+        Piercing: 2
+        Heat: 1
+        Cold: 1
+        Shock: 1
+        Radiation: 1
+        Caustic: 1
+        Compression: 1
+        Psy: 1
+      coefficients:
+        Blunt: 0.90
+        Slash: 0.90
+        Piercing: 0.90
+        Heat: 0.90
+        Cold: 0.90
+        Shock: 0.90
+        Radiation: 0.90
+        Caustic: 0.90
+        Compression: 0.90
+        Psy: 0.90

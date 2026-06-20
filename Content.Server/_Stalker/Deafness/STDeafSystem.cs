@@ -33,7 +33,7 @@ public sealed class STDeafSystem : EntitySystem
             or ChatChannel.LOOC)
             return;
 
-        var message = Loc.GetString(ent.Owner != args.Source ? "Кто-то рядом говорит." : "Вы не слышите свои слова.");
+        var message = Loc.GetString(ent.Owner != args.Source ? "st-deaf-someone-talking" : "st-deaf-cant-hear-self"); // Zona14: localized
 
         args.WrappedMessage = message;
         args.Message = message;

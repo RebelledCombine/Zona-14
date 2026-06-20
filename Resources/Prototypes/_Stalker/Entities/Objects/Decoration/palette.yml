@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: PaletteStalker
   parent: BaseStructure
-  name: поддон с плиткой
+  name: pallet with tiles
   suffix: ST, Mapping
-  description: Платформа, на которую уложена керамическая плитка для удобства транспортировки.
+  description: A platform on which ceramic tiles are laid for easy transport.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Other/palette.rsi

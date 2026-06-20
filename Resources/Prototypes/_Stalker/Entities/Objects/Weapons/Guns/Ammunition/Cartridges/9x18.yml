@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 # 9x18
 
 - type: entity
   id: BaseSTCartridge918
-  name: cartridge (9х18 auto)
+  name: Cartridge (9x18 Auto)
   parent: BaseCartridge
   abstract: true
   components:
@@ -20,7 +21,7 @@
 
 - type: entity
   id: STCartridge918PGJ
-  name: Патрон (9х18)П гж
+  name: Cartridge (9x18) P gzh
   parent: BaseSTCartridge918
   components:
   - type: Sprite
@@ -35,7 +36,7 @@
 
 - type: entity
   id: STCartridge918PST
-  name: Патрон (9х18)ПСТ
+  name: Cartridge (9x18) PST
   parent: BaseSTCartridge918
   components:
   - type: Sprite
@@ -50,7 +51,7 @@
 
 - type: entity
   id: STCartridge918SP7
-  name: Патрон (9х18)СП7 гж
+  name: Cartridge (9x18) SP7 gzh
   parent: BaseSTCartridge918
   components:
   - type: Sprite
@@ -65,7 +66,7 @@
 
 - type: entity
   id: STCartridge918PBM
-  name: Патрон (9х18)ПБМ
+  name: Cartridge (9x18) PBM
   parent: BaseSTCartridge918
   components:
   - type: Sprite

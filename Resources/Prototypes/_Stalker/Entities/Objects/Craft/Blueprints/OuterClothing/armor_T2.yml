@@ -1,8 +1,9 @@
-# Заря
+# Zona14: translated Russian names/descriptions to English
+# Zona14: Заря
 - type: entity
   parent: STBaseBlueprint
   id: ClothingOuterArmorZaryaHunterBlueprint
-  name: Рецепт зари охотника
+  name: "Hunter's Dawn Recipe"
   components:
     - type: STBlueprint
       blueprint: recipeZaryaHunter
@@ -10,7 +11,7 @@
 - type: entity
   parent: STBaseBlueprint
   id: ClothingOuterArmorZaryaStalkerModifedType1Blueprint
-  name: Рецепт модификации Зари тип 1
+  name: Dawn Type 1 Modification Recipe
   components:
     - type: STBlueprint
       blueprint: newrecipeClothingOuterArmorZaryaStalkerModifedType1
@@ -18,37 +19,37 @@
 - type: entity
   parent: STBaseBlueprint
   id: ClothingOuterArmorZaryaStalkerModifedType2Blueprint
-  name: Рецепт модификации Зари тип 2
+  name: Dawn Type 2 Modification Recipe
   components:
     - type: STBlueprint
       blueprint: newrecipeClothingOuterArmorZaryaStalkerModifedType2
 
-# 6Б2
+# Zona14: 6Б2
 
 - type: entity
   parent: STBaseBlueprint
   id: STClothingOuterArmor6B2Blueprint
-  name: Рецепт бронежилета 6Б2
+  name: 6B2 Body Armor Recipe
   components:
     - type: STBlueprint
       blueprint: newrecipeClothingOuterArmor6B2
 
-# Щиток-2
+# Zona14: Щиток-2
 
 - type: entity
   parent: STBaseBlueprint
   id: STClothingOuterArmorLightPlateVestBaseStalkerBlueprint
-  name: Рецепт бронежилет "Щиток-2"
+  name: “Shield‑2” body armor recipe
   components:
     - type: STBlueprint
       blueprint: newrecipeSTClothingOuterArmorLightPlateVestBaseStalker
 
 
-#СН-1
+# Zona14: СН-1
 - type: entity
   parent: STBaseBlueprint
   id: ClothingOuterArmorCN1Blueprint
-  name: Рецепт бронежилета СН-1
+  name: CH-1 Armor Recipe
   components:
     - type: STBlueprint
       blueprint: newrecipeClothingOuterArmorCN1
@@ -57,16 +58,16 @@
 - type: entity
   parent: STBaseBlueprint
   id: ClothingOuterArmorSparkBlueprint
-  name: Рецепт костюма Спарк
+  name: Spark Costume Recipe
   components:
     - type: STBlueprint
       blueprint: newrecipeClothingOuterArmorSpark
 
-# Кольчуга
+# Zona14: Кольчуга
 - type: entity
   parent: STBaseBlueprint
   id: ClothingOuterArmourJacketStalkerBlueprint
-  name: Рецепт кольчюжной куртки сталкера
+  name: stalker chainmail jacket recipe
   components:
     - type: STBlueprint
       blueprint: newrecipeClothingOuterArmourJacketStalker
@@ -74,7 +75,7 @@
 - type: entity
   parent: STBaseBlueprint
   id: ClothingOuterArmourJacketBanditBlueprint
-  name: Рецепт кольчюжной куртки бандитов
+  name: bandit chainmail jacket recipe
   components:
     - type: STBlueprint
       blueprint: newrecipeClothingOuterArmourJacketBandit
@@ -83,7 +84,7 @@
 - type: entity
   parent: STBaseBlueprint
   id: ClothingOuterArmourCoatBanditBlackBlueprint
-  name: Рецепт черного кольчужного кожаного плаща бандитов
+  name: black chainmail leather coat (bandit) recipe
   components:
     - type: STBlueprint
       blueprint: newrecipeClothingOuterArmourCoatBanditBlack
@@ -91,7 +92,7 @@
 - type: entity
   parent: STBaseBlueprint
   id: ClothingOuterArmourCoatBanditBrownBlueprint
-  name: Рецепт коричного кулчужного кожаного плаща бандитов
+  name: brown chainmail leather coat (bandit) recipe
   components:
     - type: STBlueprint
       blueprint: newrecipeClothingOuterArmourCoatBanditBrown
@@ -101,7 +102,7 @@
 - type: entity
   parent: STBaseBlueprint
   id: ClothingOuterArmorZN1Blueprint
-  name: Рецепт костюма ЗН-1
+  name: ZN‑1 suit recipe
   components:
     - type: STBlueprint
       blueprint: newrecipeClothingOuterArmorZN1

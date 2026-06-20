@@ -1,0 +1,119 @@
+- type: entity
+  parent: NPCIgorIvanovich
+  id: Z14NPCIgorIvanovichLoners
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: BandsManaging
+    shopListingsProto: STBandShopListings
+    faction: Loners
+
+- type: entity
+  parent: NPCIgorIvanovich
+  id: Z14NPCIgorIvanovichFreedom
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: BandsManaging
+    shopListingsProto: STBandShopListings
+    faction: Freedom
+
+- type: entity
+  parent: NPCIgorIvanovich
+  id: Z14NPCIgorIvanovichBandits
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: BandsManaging
+    shopListingsProto: STBandShopListings
+    faction: Bandits
+
+- type: entity
+  parent: NPCIgorIvanovich
+  id: Z14NPCIgorIvanovichDuty
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: BandsManaging
+    shopListingsProto: STBandShopListings
+    faction: Duty
+
+- type: entity
+  parent: NPCIgorIvanovich
+  id: Z14NPCIgorIvanovichEcologist
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: BandsManaging
+    shopListingsProto: STBandShopListings
+    faction: Ecologist
+
+- type: entity
+  parent: NPCIgorIvanovich
+  id: Z14NPCIgorIvanovichNeutrals
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: BandsManaging
+    shopListingsProto: STBandShopListings
+    faction: Neutrals
+
+- type: entity
+  parent: NPCIgorIvanovich
+  id: Z14NPCIgorIvanovichMercenaries
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: BandsManaging
+    shopListingsProto: STBandShopListings
+    faction: Mercenaries
+
+- type: entity
+  parent: NPCIgorIvanovich
+  id: Z14NPCIgorIvanovichMilitary
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: BandsManaging
+    shopListingsProto: STBandShopListings
+    faction: Military
+
+- type: entity
+  parent: NPCIgorIvanovich
+  id: Z14NPCIgorIvanovichMonolith
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: BandsManaging
+    shopListingsProto: STBandShopListings
+    faction: Monolith
+
+- type: entity
+  parent: NPCIgorIvanovich
+  id: Z14NPCIgorIvanovichClearSky
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: BandsManaging
+    shopListingsProto: STBandShopListings
+    faction: ClearSky
+
+- type: entity
+  parent: NPCIgorIvanovich
+  id: Z14NPCIgorIvanovichRenegades
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: BandsManaging
+    shopListingsProto: STBandShopListings
+    faction: Renegades
+
+- type: entity
+  parent: NPCIgorIvanovich
+  id: Z14NPCIgorIvanovichSeraphims
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: BandsManaging
+    shopListingsProto: STBandShopListings
+    faction: Seraphims

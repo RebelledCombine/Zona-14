@@ -1,7 +1,8 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: STBaseBlueprint
   id: ClothingHeadAssaultHelmetBlueprint
-  name: Рецепт штурмового шлема
+  name: Assault Helmet Recipe
   components:
     - type: STBlueprint
       blueprint: newrecipeClothingHeadAssaultHelmet
@@ -9,7 +10,7 @@
 - type: entity
   parent: STBaseBlueprint
   id: STClothingHeadHelmetMakeshiftTacticalT3Blueprint
-  name: Рецепт кустарного шлема
+  name: Homemade Helmet Recipe
   components:
     - type: STBlueprint
       blueprint: newrecipeSTClothingHeadHelmetMakeshiftTacticalT3
@@ -17,7 +18,7 @@
 - type: entity
   parent: STBaseBlueprint
   id: ClothingHeadHelmetVityaz1CBlueprint
-  name: Рецепт шлема "Витязь 1С"
+  name: “Vityaz 1C” helmet recipe
   components:
     - type: STBlueprint
       blueprint: newrecipeClothingHeadHelmetVityaz1C
@@ -25,7 +26,7 @@
 - type: entity
   parent: STBaseBlueprint
   id: STClothingHeadHelmetSeraphimAltinBlueprint
-  name: Рецепт бронешлема «Страж»
+  name: “Guardian” combat helmet recipe
   components:
     - type: STBlueprint
       blueprint: newrecipeSTClothingHeadHelmetSeraphimAltin
@@ -33,7 +34,7 @@
 - type: entity
   parent: STBaseBlueprint
   id: ClothingHeadAssaultHelmetDeserterBlueprint
-  name: Рецепт бронешлема «Страж»
+  name: "{ ent-STClothingHeadHelmetSeraphimAltinBlueprint }"
   components:
     - type: STBlueprint
       blueprint: newrecipeClothingHeadAssaultHelmetDeserter

@@ -1,0 +1,38 @@
+- type: entity
+  abstract: true
+  parent: Z14HelmetBase
+  id: Z14STClothingHeadHelmetTacticalT5Base
+  categories: [ Zona14 ]
+  name: T5 Tactical Helmet Base
+  components:
+  - type: IngestionBlocker
+  - type: IdentityBlocker
+  - type: HideLayerClothing
+    slots:
+    - Hair
+
+- type: entity
+  parent: Z14STClothingHeadHelmetTacticalT5Base
+  id: Z14ClothingHeadHelmetPSZ9D
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: PSZ-9D Helmet
+  description: A helmet designed for protection against piercing attacks. Has resistance to other damage types.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/psz9d_helm.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/psz9d_helm.rsi
+
+- type: entity
+  parent: Z14STClothingHeadHelmetTacticalT4Base
+  id: Z14ClothingHeadHelmet1SHBandit
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: PSZ-9D Helmet (Bandit)
+  description: A cool helmet for cool guys.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/1SHBandit.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/1SHBandit.rsi

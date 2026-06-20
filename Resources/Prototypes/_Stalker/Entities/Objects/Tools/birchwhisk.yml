@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: BaseItem
   id: BirchWhisk
-  name: берёзовый веник
-  description: идеальный способ почувствовать себя как в бане, даже если ты всего лишь попал в жарку
+  name: birch whisk
+  description: the perfect way to feel like you're in a bathhouse, even if you're just caught in the heat
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Weapons/Melee/birch_whisk.rsi

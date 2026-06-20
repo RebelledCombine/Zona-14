@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: ClothingHeadHatHardhatBase
   id: STHeadLight
-  name: Налобный фонарик
-  description: Надевается на ухо...
+  name: Headlamp
+  description: Put on the ear...
   suffix: ST
   components:
   - type: Sprite

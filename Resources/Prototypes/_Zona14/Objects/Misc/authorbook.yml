@@ -1,0 +1,35 @@
+- type: entity
+  parent: BookBase
+  id: Z14BookCookingStalker
+  categories: [ Zona14 ]
+  name: cooking
+  description: A book intended as a basic guide for cooks on cooking and culinary arts.
+  suffix: Z14
+  components:
+    - type: Paper
+      content: book-text-cooking-stalker
+
+- type: entity
+  parent: BookBase
+  id: Z14STArtGuide
+  categories: [ Zona14 ]
+  name: Battered book
+  description: A battered hardcover book with "By Ms Student♥" written on the spine.
+  suffix: Z14
+  components:
+    - type: Paper
+      content: ent-STArtGuide.content
+      stampState: paper_stamp-trader
+      stampedBy:
+      - stampedName: Student
+        stampedColor: "#dfb2f4"
+    - type: Sprite
+      sprite: Objects/Misc/books.rsi
+      layers:
+        - state: paper
+        - state: cover_old
+          color: "#8e795c"
+        - state: decor_wingette
+          color: "#453827"
+        - state: icon_stars
+    

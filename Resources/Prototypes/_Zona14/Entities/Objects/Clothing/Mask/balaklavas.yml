@@ -1,0 +1,97 @@
+- type: entity
+  parent: [ClothingMaskBaseButcherable, BaseFoldable]
+  id: Z14ClothingMaskBalaklavaBase
+  categories: [ Zona14 ]
+  abstract: true
+  components:
+  - type: Appearance
+  - type: Foldable
+    canFoldInsideContainer: true
+  - type: FoldableClothing
+    foldedSlots:
+    - HEAD
+    unfoldedSlots:
+    - MASK
+    foldedHideLayers: []
+    unfoldedHideLayers:
+    - Snout
+    - Hair
+    - FacialHair
+  - type: IdentityBlocker
+    enabled: true # _Zona14: matches post-init state set by FoldableClothing; otherwise UninitializedSaveTest flags a modify-on-spawn diff.
+    coverage: MOUTH
+  - type: Sprite
+    layers:
+    - state: icon_head
+      map: ["foldedLayer"]
+      visible: true
+    - state: icon
+      map: [ "unfoldedLayer" ]
+      visible: false
+  - type: HideLayerClothing
+    slots:
+    - Snout
+    - Hair
+    - FacialHair
+    hideOnToggle: true
+
+# Three-hole balaclava 
+
+- type: entity
+  parent: Z14ClothingMaskBalaklavaBase
+  id: Z14ClothingMaskNeckBalaklava1
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: three-hole balaclava
+  description: A knitted balaclava with three openings for eyes and mouth.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/mask/balaklava1.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/mask/balaklava1.rsi
+
+# Three-hole balaclava with large holes
+
+- type: entity
+  parent: Z14ClothingMaskBalaklavaBase
+  id: Z14ClothingMaskNeckBalaklava4
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: balaclava
+  description: A knitted balaclava with three openings for eyes and mouth.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/mask/balaklava4.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/mask/balaklava4.rsi
+
+# Ski mask with mouth opening
+
+- type: entity
+  parent: Z14ClothingMaskBalaklavaBase
+  id: Z14ClothingMaskNeckBalaklava2
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Mouth Ski Mask
+  description: A ski mask with eye and mouth slits.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/mask/balaklava2.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/mask/balaklava2.rsi
+
+# Ski mask
+
+- type: entity
+  parent: Z14ClothingMaskBalaklavaBase
+  id: Z14ClothingMaskNeckBalaklava3
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Ski Mask
+  description: A ski mask with eye slits.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/mask/balaklava3.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/mask/balaklava3.rsi
+  - type: IngestionBlocker

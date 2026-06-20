@@ -1,0 +1,780 @@
+- type: entity
+  abstract: true
+  parent: BaseItem
+  id: Z14BaseStalkerPDA
+  categories: [ Zona14 ]
+  name: PDA
+  description: Personal Data Assistant.
+  components:
+  - type: Appearance
+    appearanceDataInit:
+     enum.PdaVisuals.PdaType:
+       !type:String
+       stalker_on
+  - type: Trash
+    time: 600
+  - type: Craftable
+  - type: Sprite
+    sprite: _Stalker/Objects/Devices/pda.rsi
+    layers:
+    - map: [ "enum.PdaVisualLayers.Base" ]
+      state: "stalker_on"
+    - state: "light_overlay"
+      map: [ "enum.PdaVisualLayers.Flashlight" ]
+      shader: "unshaded"
+      visible: false
+    - state: "id_overlay"
+      map: [ "enum.PdaVisualLayers.IdLight" ]
+      shader: "unshaded"
+      visible: false
+  - type: Icon
+    sprite: _Stalker/Objects/Devices/pda.rsi
+    state: stalker_off
+  - type: Pda
+    paiSlot:
+      priority: -2
+      whitelist:
+        components:
+          - PAI
+    penSlot:
+      priority: 4
+      whitelist:
+        tags:
+          - Write
+    idSlot:
+      name: ID Card
+      ejectSound: /Audio/Machines/id_swipe.ogg
+      insertSound: /Audio/Machines/id_insert.ogg
+      whitelist:
+        components:
+          - IdCard
+  - type: Item
+    sprite: _Stalker/Objects/Devices/pda.rsi
+    storedRotation: -90
+    size: Small
+  - type: ContainerContainer
+    containers:
+      cell_slot: !type:ContainerSlot {}
+      PDA-id: !type:ContainerSlot {}
+      PDA-pen: !type:ContainerSlot {}
+      PDA-pai: !type:ContainerSlot {}
+      Cartridge-Slot: !type:ContainerSlot {}
+      dogtag_slot: !type:ContainerSlot {}
+      cassette_slot: !type:ContainerSlot {}
+      program-container: !type:Container
+        ents: []
+  - type: Boombox
+  - type: ItemSlots
+  - type: PowerCellSlot
+    cellSlotId: cell_slot
+  - type: Clothing
+    quickEquip: false
+    slots:
+    - idcard
+    - Belt
+  - type: Ringer
+  - type: CartridgeLoader
+    uiKey: enum.PdaUiKey.Key
+    preinstalled:
+      - NanoTaskCartridge
+      - NotekeeperCartridge
+      - STMessengerCartridge
+      - Z14STFactionRelationsCartridge
+      - STMercBoardCartridge
+      - STTradeBoardCartridge
+    cartridgeSlot:
+      priority: -1
+      name: PDA
+      ejectSound: /Audio/Machines/id_swipe.ogg
+      insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+      whitelist:
+        components:
+          - Cartridge
+  - type: ActivatableUI
+    key: enum.PdaUiKey.Key
+    singleUser: true
+    requireActiveHand: false
+  - type: STPdaPassword # stalker-en-changes: PDA password lock
+  - type: UserInterface
+    interfaces:
+      enum.PdaUiKey.Key:
+        type: PdaBoundUserInterface
+      enum.StoreUiKey.Key:
+        type: StoreBoundUserInterface
+      enum.RingerUiKey.Key:
+        type: RingerBoundUserInterface
+      enum.InstrumentUiKey.Key:
+        type: InstrumentBoundUserInterface
+      enum.HealthAnalyzerUiKey.Key:
+        type: HealthAnalyzerBoundUserInterface
+      enum.STPdaPasswordUiKey.Key: # stalker-en-changes: PDA password lock
+        type: STPdaPasswordBui
+  - type: Input
+    context: "human"
+  - type: StationRecordKeyStorage
+  - type: PdaVisuals
+  - type: HandheldGPS
+  - type: Tag
+    tags:
+    - GPS
+    - Flashlight
+  - type: HandheldLight
+    addPrefix: false
+    toggleOnInteract: false
+    blinkingBehaviourId: blinking
+    radiatingBehaviourId: radiating
+  - type: LightBehaviour
+    behaviours:
+      - !type:FadeBehaviour
+        id: radiating
+        maxDuration: 2.0
+        startValue: 3.0
+        endValue: 2.0
+        isLooped: true
+        reverseWhenFinished: true
+      - !type:PulseBehaviour
+        id: blinking
+        interpolate: Nearest
+        maxDuration: 1.0
+        startValue: 0.1
+        endValue: 2.0
+        isLooped: true
+  - type: ToggleableVisuals
+    spriteLayer: "enum.PdaVisualLayers.Flashlight"
+  - type: ItemTogglePointLight
+  - type: PointLight
+    enabled: false
+    mask: /Textures/Effects/LightMasks/cone.png
+    autoRot: true
+    radius: 5
+    energy: 2.5
+    netsync: false
+
+
+- type: entity
+  parent: Z14BaseStalkerPDA
+  id: Z14StalkerPDA
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Stalker PDA
+  description: Connected to a shared network for information exchange.
+  components:
+  - type: Pda
+    penSlot:
+      startingItem: Pen
+      priority: 4
+      whitelist:
+        tags:
+        - Write
+  - type: Boombox
+  - type: PdaBorderColor
+    borderColor: "#717059"
+  - type: ItemSlots
+    slots:
+      cassette_slot:
+        name: Cassete
+        priority: 3
+        whitelist:
+          tags:
+            - Cassete
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+        priority: 2
+        startingItem: PowerCellHyper
+      dogtag_slot:
+        name: Stalker PDA
+        priority: 1
+        startingItem: Z14ClothingNeckDogtagStalker
+        whitelist:
+          tags:
+            - Dogtag
+  - type: PointLight
+    enabled: false
+    radius: 5
+    energy: 2.5
+    netsync: false
+- type: entity
+  parent: [ Z14BaseStalkerPDA, GeigerCounter ]
+  id: Z14STSeraphimPDA
+  categories: [ Zona14 ]
+  name: Stalker PDA
+  suffix: Z14
+  description: Connected to a shared network for information exchange.
+  components:
+  - type: Pda
+    penSlot:
+      startingItem: Pen
+      priority: 4
+      whitelist:
+        tags:
+        - Write
+  - type: Boombox
+  - type: Unremoveable
+  - type: Icon
+    state: seraphim_off
+  - type: Appearance
+    appearanceDataInit:
+      enum.PdaVisuals.PdaType:
+        !type:String
+        seraphim_on
+  - type: PdaBorderColor
+    borderColor: "#3CB371"
+  - type: Geiger
+    showControl: true
+    showExamine: true
+  - type: ItemSlots
+    slots:
+      cassette_slot:
+        name: Cassete
+        priority: 3
+        whitelist:
+          tags:
+            - Cassete
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+        priority: 2
+        startingItem: PowerCellHyper
+      dogtag_slot:
+        name: Stalker PDA
+        priority: 1
+        startingItem: Z14ClothingNeckDogtagStalker
+        whitelist:
+          tags:
+            - Dogtag
+  - type: Armor
+    armorClass: 0
+    modifiers:
+      flatReductions:
+        Radiation: 2
+        Psy: 2
+  - type: PointLight
+    enabled: false
+    radius: 5
+    energy: 2.5
+    netsync: false
+
+
+- type: entity
+  parent: [ Z14BaseStalkerPDA, GeigerCounter ]
+  id: Z14AnomalistPDA
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Stalker PDA
+  description: Connected to a shared network for information exchange.
+  components:
+  - type: Pda
+    penSlot:
+      startingItem: Pen
+      priority: 4
+      whitelist:
+        tags:
+        - Write
+  - type: Boombox
+  - type: Icon
+    state: anom_off
+  - type: Appearance
+    appearanceDataInit:
+      enum.PdaVisuals.PdaType:
+        !type:String
+        anom_on
+  - type: HealthAnalyzer
+    scanDelay: 3
+    scanningEndSound:
+      path: "/Audio/Items/Medical/healthscanner.ogg"
+  - type: PdaBorderColor
+    borderColor: "#3c1a69"
+  - type: ItemSlots
+    slots:
+      cassette_slot:
+        name: Cassete
+        priority: 3
+        whitelist:
+          tags:
+            - Cassete
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+        priority: 2
+        startingItem: PowerCellHyper
+      dogtag_slot:
+        name: Stalker PDA
+        priority: 1
+        startingItem: Z14ClothingNeckDogtagStalker
+        whitelist:
+          tags:
+            - Dogtag
+  - type: PointLight
+    enabled: false
+    radius: 5
+    energy: 2.5
+    netsync: false
+- type: entity
+  parent: Z14BaseStalkerPDA
+  id: Z14ScientistPDA
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Stalker PDA
+  description: Connected to a shared network for information exchange.
+  components:
+  - type: Pda
+    penSlot:
+      startingItem: Pen
+      priority: 4
+      whitelist:
+        tags:
+        - Write
+  - type: Boombox
+  - type: Icon
+    state: scientific_off
+  - type: Appearance
+    appearanceDataInit:
+      enum.PdaVisuals.PdaType:
+        !type:String
+        scientific_on
+  - type: HealthAnalyzer
+    scanDelay: 0.5
+    scanningEndSound:
+      path: "/Audio/Items/Medical/healthscanner.ogg"
+  - type: PdaBorderColor
+    borderColor: "#094a83"
+  - type: ItemSlots
+    slots:
+      cassette_slot:
+        name: Cassete
+        priority: 3
+        whitelist:
+          tags:
+            - Cassete
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+        priority: 2
+        startingItem: PowerCellHyper
+      dogtag_slot:
+        name: Stalker PDA
+        priority: 1
+        startingItem: Z14ClothingNeckDogtagOfficial
+        whitelist:
+          tags:
+            - Dogtag
+  - type: PointLight
+    enabled: false
+    radius: 5
+    energy: 2.5
+    netsync: false
+- type: entity
+  parent: Z14BaseStalkerPDA
+  id: Z14BandPDA
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Stalker PDA
+  description: Connected to a shared network for information exchange.
+  components:
+  - type: Pda
+    penSlot:
+      startingItem: Pen
+      priority: 4
+      whitelist:
+        tags:
+        - Write
+  - type: PdaBorderColor
+    borderColor: "#010101"
+  - type: Icon
+    state: band_off
+  - type: Appearance
+    appearanceDataInit:
+      enum.PdaVisuals.PdaType:
+        !type:String
+        band_on
+  - type: Boombox
+  - type: ItemSlots
+    slots:
+      cassette_slot:
+        name: Cassete
+        priority: 3
+        whitelist:
+          tags:
+            - Cassete
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+        priority: 2
+        startingItem: PowerCellHyper
+      dogtag_slot:
+        name: Stalker PDA
+        priority: 1
+        startingItem: Z14ClothingNeckDogtagBrigand
+        whitelist:
+          tags:
+            - Dogtag
+  - type: PointLight
+    enabled: false
+    radius: 5
+    energy: 2.5
+    netsync: false
+- type: entity
+  parent: Z14BaseStalkerPDA
+  id: Z14DolgPDA
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Stalker PDA
+  description: Connected to a shared network for information exchange.
+  components:
+  - type: Pda
+    penSlot:
+      startingItem: Pen
+      priority: 4
+      whitelist:
+        tags:
+        - Write
+  - type: Boombox
+  - type: PdaBorderColor
+    borderColor: "#7a0200"
+  - type: Icon
+    state: dolg_off
+  - type: Appearance
+    appearanceDataInit:
+      enum.PdaVisuals.PdaType:
+        !type:String
+        dolg_on
+  - type: ItemSlots
+    slots:
+      cassette_slot:
+        name: Cassete
+        priority: 3
+        whitelist:
+          tags:
+            - Cassete
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+        priority: 2
+        startingItem: PowerCellHyper
+      dogtag_slot:
+        name: Stalker PDA
+        priority: 1
+        startingItem: Z14ClothingNeckDogtagStalker
+        whitelist:
+          tags:
+            - Dogtag
+  - type: PointLight
+    enabled: false
+    radius: 5
+    energy: 2.5
+    netsync: false
+
+
+- type: entity
+  parent: Z14BaseStalkerPDA
+  id: Z14FreedomPDA
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Stalker PDA
+  description: Connected to a shared network for information exchange. The PDA reeks of cheap port wine and cannabis.
+  components:
+  - type: Pda
+    penSlot:
+      startingItem: Pen
+      priority: 4
+      whitelist:
+        tags:
+        - Write
+  - type: Boombox
+  - type: PdaBorderColor
+    borderColor: "#2d7019"
+  - type: Icon
+    state: svo_off
+  - type: Appearance
+    appearanceDataInit:
+      enum.PdaVisuals.PdaType:
+        !type:String
+        svo_on
+  - type: ItemSlots
+    slots:
+      cassette_slot:
+        name: Cassete
+        priority: 3
+        whitelist:
+          tags:
+            - Cassete
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+        priority: 2
+        startingItem: PowerCellHyper
+      dogtag_slot:
+        name: Stalker PDA
+        priority: 1
+        startingItem: Z14ClothingNeckDogtagStalker
+        whitelist:
+          tags:
+            - Dogtag
+  - type: PointLight
+    enabled: false
+    radius: 5
+    energy: 2.5
+    netsync: false
+- type: entity
+  parent: Z14BaseStalkerPDA
+  id: Z14ClearSkyPDA
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Stalker PDA
+  description: Connected to a shared network for information exchange.
+  components:
+  - type: Pda
+    penSlot:
+      startingItem: Pen
+      priority: 4
+      whitelist:
+        tags:
+        - Write
+  - type: Boombox
+  - type: PdaBorderColor
+    borderColor: "#58d1ff"
+  - type: Icon
+    state: cn_off
+  - type: Appearance
+    appearanceDataInit:
+      enum.PdaVisuals.PdaType:
+        !type:String
+        cn_on
+  - type: HealthAnalyzer
+    scanDelay: 0.5
+    scanningEndSound:
+      path: "/Audio/Items/Medical/healthscanner.ogg"
+  - type: HandheldGPS
+  - type: Tag
+    tags:
+    - GPS
+    - Flashlight
+  - type: ItemSlots
+    slots:
+      cassette_slot:
+        name: Cassete
+        priority: 3
+        whitelist:
+          tags:
+            - Cassete
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+        priority: 2
+        startingItem: PowerCellHyper
+      dogtag_slot:
+        name: Stalker PDA
+        priority: 1
+        startingItem: Z14ClothingNeckDogtagStalker
+        whitelist:
+          tags:
+            - Dogtag
+  - type: PointLight
+    enabled: false
+    radius: 5
+    energy: 2.5
+    netsync: false
+- type: entity
+  parent: Z14BaseStalkerPDA
+  id: Z14MilitaryPDA
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Stalker PDA
+  description: This PDA will survive a nuclear blast. At least that's what the tender claims.
+  components:
+  - type: Pda
+    penSlot:
+      startingItem: Pen
+      priority: 4
+      whitelist:
+        tags:
+        - Write
+  - type: Boombox
+  - type: Icon
+    sprite: _Stalker/Objects/Devices/pda.rsi
+    state: svo_off
+  - type: Appearance
+    appearanceDataInit:
+      enum.PdaVisuals.PdaType:
+        !type:String
+        svo_on
+  - type: PdaBorderColor
+    borderColor: "#285714"
+  - type: ItemSlots
+    slots:
+      cassette_slot:
+        name: Cassete
+        priority: 3
+        whitelist:
+          tags:
+            - Cassete
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+        priority: 2
+        startingItem: PowerCellHyper
+      dogtag_slot:
+        name: Stalker PDA
+        priority: 1
+        startingItem: Z14ClothingNeckDogtagOfficial
+        whitelist:
+          tags:
+            - Dogtag
+  - type: PointLight
+    enabled: false
+    radius: 5
+    energy: 2.5
+    netsync: false
+
+
+
+- type: entity
+  parent: Z14BaseStalkerPDA
+  id: Z14PilgrimPDA
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Stalker PDA
+  description: Connected to a shared network for information exchange.
+  components:
+  - type: Pda
+    penSlot:
+      startingItem: Pen
+      priority: 4
+      whitelist:
+        tags:
+        - Write
+  - type: Boombox
+  - type: PdaBorderColor
+    borderColor: "#C0C0C0"
+  - type: Icon
+    state: pilgrim_off
+  - type: Appearance
+    appearanceDataInit:
+      enum.PdaVisuals.PdaType:
+        !type:String
+        pilgrim_on
+  - type: ItemSlots
+    slots:
+      cassette_slot:
+        name: Cassete
+        priority: 3
+        whitelist:
+          tags:
+            - Cassete
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+        priority: 2
+        startingItem: PowerCellHyper
+      dogtag_slot:
+        name: Stalker PDA
+        priority: 1
+        startingItem: Z14ClothingNeckDogtagPilgrim
+        whitelist:
+          tags:
+            - Dogtag
+  - type: PointLight
+    enabled: false
+    radius: 5
+    energy: 2.5
+    netsync: false
+- type: entity
+  parent: Z14BaseStalkerPDA
+  id: Z14MonolithPDA
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Stalker PDA
+  description: Connected to a shared network for information exchange.
+  components:
+  - type: Pda
+    penSlot:
+      startingItem: Pen
+      priority: 4
+      whitelist:
+        tags:
+        - Write
+  - type: Unremoveable
+  - type: PdaBorderColor
+    borderColor: "#797B80"
+  - type: Icon
+    state: mono_off
+  - type: Appearance
+    appearanceDataInit:
+      enum.PdaVisuals.PdaType:
+        !type:String
+        mono_on
+  - type: Boombox
+  - type: ItemSlots
+    slots:
+      cassette_slot:
+        name: Cassete
+        priority: 3
+        whitelist:
+          tags:
+            - Cassete
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+        priority: 2
+        startingItem: PowerCellHyper
+      dogtag_slot:
+        name: Stalker PDA
+        priority: 1
+        startingItem: Z14ClothingNeckDogtagBrigand
+        whitelist:
+          tags:
+            - Dogtag
+  - type: PersonalDamage
+    damage:
+      types:
+        Radiation: 1
+  - type: PointLight
+    enabled: false
+    radius: 5
+    energy: 2.5
+    netsync: false
+- type: entity
+  parent: Z14BaseStalkerPDA
+  id: Z14JabaPDA
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Stalker PDA
+  description: Connected to a shared network for information exchange.
+  components:
+  - type: Pda
+    penSlot:
+      startingItem: Pen
+      priority: 4
+      whitelist:
+        tags:
+        - Write
+  - type: Boombox
+  - type: PdaBorderColor
+    borderColor: "#010101"
+  - type: Icon
+    state: band_off
+  - type: Appearance
+    appearanceDataInit:
+      enum.PdaVisuals.PdaType:
+        !type:String
+        band_on
+  - type: ItemSlots
+    slots:
+      cassette_slot:
+        name: Cassete
+        priority: 3
+        whitelist:
+          tags:
+            - Cassete
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+        priority: 2
+        startingItem: PowerCellHyper
+      dogtag_slot:
+        name: Stalker PDA
+        priority: 1
+        startingItem: Z14ClothingNeckDogtagBrigand
+        whitelist:
+          tags:
+            - Dogtag
+  - type: Scope
+    zoom: 1.25
+    delay: 1
+    offset: 14
+    useInHand: true
+  - type: PointLight
+    enabled: false
+    radius: 5
+    energy: 2.5
+    netsync: false
+

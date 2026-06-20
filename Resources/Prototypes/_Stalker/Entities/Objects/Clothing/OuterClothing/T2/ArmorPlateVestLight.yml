@@ -1,10 +1,11 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: STClothingOuterArmorStorageBasic
   id: STClothingOuterArmorLightPlateVestBase
-  name: базовый лёгкий бронежилет #base
+  name: basic light body armor
   suffix: ST, T2, PvP
   abstract: true
-  description: Стандартный бронежилет II типа, обеспечивающий достойную защиту от большинства видов повреждений
+  description: Standard Type II body armor, providing decent protection against most types of damage
   components:
   - type: STWeight
     self: 5
@@ -55,8 +56,8 @@
 - type: entity
   parent: STClothingOuterArmorLightPlateVestBase
   id: STClothingOuterArmorLightPlateVestBaseFreedom
-  name: бронежилет «Щиток-2» Свободы
-  description: Лёгкий бронежилет второго класса защиты, основа основ.
+  name: Freedom Shield-2 body armor
+  description: Light body armor of the second class of protection, the basis of the basics.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/outerClothing/plate_svoboda.rsi
@@ -85,8 +86,8 @@
 - type: entity
   parent: STClothingOuterArmorLightPlateVestBase
   id: STClothingOuterArmorLightPlateVestBaseStalker
-  name: бронежилет "Щиток-2"
-  description: Лёгкий бронежилет второго класса защиты, основа основ.
+  name: Shield-2 body armor
+  description: Light body armor of the second class of protection, the basis of the basics.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/outerClothing/plate_stalker.rsi
@@ -98,8 +99,8 @@
 - type: entity
   parent: STClothingOuterArmorLightPlateVestBase
   id: STClothingOuterArmorLightPlateVestBaseDolg
-  name: лёгкий бронежилет 'Долга'
-  description: Стандартный бронежилет II типа, обеспечивающий достойную защиту от большинства видов повреждений
+  name: "'Duty' Shield-2 body armor"
+  description: Standard Type II body armor, providing decent protection against most types of damage
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/outerClothing/plate_dolg.rsi
@@ -111,8 +112,8 @@
 - type: entity
   parent: STClothingOuterArmorLightPlateVestBase
   id: STClothingOuterArmorLightPlateVestBaseMilitary
-  name: военный бронежилет «Щиток-2»
-  description: Лёгкий бронежилет второго класса защиты, основа основ.
+  name: Military Shield-2 body armor
+  description: Light body armor of the second class of protection, the basis of the basics.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/outerClothing/plate_military.rsi
@@ -122,8 +123,8 @@
 - type: entity
   parent: STClothingOuterArmorLightPlateVestBase
   id: STClothingOuterArmorLightPlateVestBasePolice
-  name: полицейский бронежилет «Щиток-2»
-  description: Лёгкий бронежилет второго класса защиты, основа основ.
+  name: Police Shield-2 body armor
+  description: Light body armor of the second class of protection, the basis of the basics.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/outerClothing/plate_police.rsi
@@ -134,8 +135,8 @@
 - type: entity
   parent: STClothingOuterArmorLightPlateVestBase
   id: STClothingOuterArmorLightPlateVestBaseZavet
-  name: бронежилет «Щиток-2» Завета
-  description: Лёгкий бронежилет второго класса защиты, основа основ.
+  name: Covenant Shield-2 body armor
+  description: Light body armor of the second class of protection, the basis of the basics.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/outerClothing/zavet_bronik.rsi
@@ -147,8 +148,8 @@
 - type: entity
   parent: STClothingOuterArmorLightPlateVestBase
   id: STClothingOuterArmorLightPlateVestBaseBand
-  name: бандитский бронежилет «Щиток-2»
-  description: Лёгкий бронежилет второго класса защиты, основа основ.
+  name: Bandit Shield-2 body armor
+  description: Light body armor of the second class of protection, the basis of the basics.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/outerClothing/plate_band.rsi
@@ -180,8 +181,8 @@
 - type: entity
   parent: STClothingOuterArmorLightPlateVestBase
   id: STClothingOuterArmorLightPlateVestBaseSera
-  name: бронежилет «Щиток-2» Серафимов
-  description: Стандартный бронежилет II типа, обеспечивающий достойную защиту от большинства видов повреждений
+  name: "'Seraphim' Shield-2 body armor"
+  description: Standard Type II body armor, providing decent protection against most types of damage
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/outerClothing/_Sera/serafim-light-armor.rsi
@@ -195,8 +196,8 @@
 - type: entity
   parent: STClothingOuterArmorLightPlateVestBase
   id: STClothingOuterArmorLightPlateVestBaseMerc
-  name: бронежилет «Щиток-2» наёмников
-  description: Лёгкий бронежилет второго класса защиты, основа основ.
+  name: Mercenary Shield-2 body armor
+  description: Light body armor of the second class of protection, the basis of the basics.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/outerClothing/plate_merc.rsi
@@ -219,8 +220,8 @@
 - type: entity
   parent: STClothingOuterArmorLightPlateVestBase
   id: STClothingOuterArmorLightPlateVestBaseUN
-  name: бронежилет «Щиток-2» ООН
-  description: Лёгкий бронежилет второго класса защиты, основа основ.
+  name: UN Shield-2 body armor
+  description: Light body armor of the second class of protection, the basis of the basics.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/outerClothing/un_armor.rsi
@@ -230,8 +231,8 @@
 - type: entity
   parent: STClothingOuterArmorLightPlateVestBase
   id: STClothingOuterArmorLightPlateVestBaseRenegate
-  name: бронежилет 'Ухмылка Мертвеца'
-  description: Этот бронежилет видел слишком много. Ржавый металл, оранжевая мазня, череп, смотрящий прямо в душу… асимметричный наплечник только добавляет безумия. Владелец явно перешел черту.
+  name: "Dead Man's Grin Body Armor"
+  description: This body armor has seen too much. Rusty metal, orange daub, a skull looking straight into the soul... The asymmetrical shoulder pad only adds to the madness. The owner has clearly crossed the line.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/outerClothing/plate_rene.rsi
@@ -244,8 +245,8 @@
 - type: entity
   parent: STClothingOuterArmorLightPlateVestBase
   id: STClothingOuterArmorLightPlateVestBaseMonolith
-  name: бронежилет «Щиток-2» монолита
-  description: Лёгкий бронежилет второго класса защиты, основа основ.
+  name: Monolith Shield-2 body armor
+  description: Light body armor of the second class of protection, the basis of the basics.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/outerClothing/plate_monolit.rsi
@@ -259,8 +260,8 @@
 - type: entity
   parent: STClothingOuterArmorLightPlateVestBase
   id: STClothingOuterArmorLightPlateVestBasePilgrim
-  name: бронежилет «Щиток-2» паломника
-  description: Лёгкий бронежилет второго класса защиты, основа основ.
+  name: "Pilgrim's Shield-2 body armor"
+  description: Light body armor of the second class of protection, the basis of the basics.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/outerClothing/plate_pilgrim.rsi
@@ -273,8 +274,8 @@
 - type: entity
   parent: STClothingOuterArmorLightPlateVestBase
   id: STClothingOuterArmorLightPlateVestBaseClearSky
-  name: бронежилет «Щиток-2» чистого неба
-  description: Лёгкий бронежилет второго класса защиты, основа основ.
+  name: Clear Sky Shield-2 body armor
+  description: Light body armor of the second class of protection, the basis of the basics.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/outerClothing/clear_sky_armor.rsi
@@ -284,9 +285,9 @@
 - type: entity
   parent: STClothingOuterArmorLightPlateVestBase
   id: STClothingOuterArmorLightPlateVestBaseProject
-  name: Модифицированный бронежилет «Щиток-2»
+  name: Project Shield-2 body armor
   suffix: ST, T2, PvP, Project
-  description: Лёгкий бронежилет второго класса защиты, основа основ.
+  description: A lightweight Class 2 protective vest, the foundation of protection.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/outerClothing/plate_project.rsi

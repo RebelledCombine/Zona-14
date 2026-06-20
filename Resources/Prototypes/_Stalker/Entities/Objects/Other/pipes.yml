@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: pipeStalker
   parent: BaseStructure
-  name: железобетонные трубы
-  description: Чаще всего при изготовлении трубопроводов используются надежные металлические или полимерные материалы. Вместо них при выполнении дорожных и строительных работ применяют трубы железобетонные, обладающие жесткостью и способностью выдерживать большие нагрузки.
+  name: reinforced concrete pipes
+  description: Reliable metal or polymer materials are most commonly used in the manufacture of pipelines. Instead of them, reinforced concrete pipes are used in road and construction works, which have rigidity and the ability to withstand heavy loads.
   suffix: Stalker
   components:
     - type: Sprite

@@ -1,3 +1,4 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   abstract: true
   parent: STBaseWeaponRifle
@@ -90,8 +91,8 @@
   parent: STBaseWeaponRifleM4
   id: STWeaponRifleHK416
   name: HK416
-  suffix: ST, Кастомка
-  description: German M4 upgrade with G36's gas system. Considered a weapon of true professionals in the Zone - silent and lethal. Rumored to use special armor-piercing rounds.
+  suffix: ST, Custom # Zona14: ST, Кастомка
+  description: "German M4 upgrade with G36's gas system. Considered a weapon of true professionals in the Zone - silent and lethal. Rumored to use special armor-piercing rounds."
   components:
   - type: STWeight
     self: 3
@@ -126,7 +127,7 @@
   parent: STBaseWeaponRifleM4
   id: STWeaponRifleLR300v1
   name: LR-300
-  description: Лёгкая винтовка с дальностью эффективного огня до 300 метров. Благодаря исключительно ровному спуску, высокой эргономике и небольшому весу данное оружие отличается высокой точностью боя, хотя высокая чувствительность к загрязнению делает её не всегда пригодной для использования в сложных полевых условиях.
+  description: A lightweight rifle with an effective range up to 300m. Renowned for its smooth trigger, ergonomics, and light weight—but its high susceptibility to dirt makes it less ideal for harsh conditions.
   components:
   - type: STWeight
     self: 3.3
@@ -163,7 +164,7 @@
   parent: STWeaponRifleLR300v1
   id: STWeaponRifleLR300v2
   name: LR-300
-  description: Новая ступень в развитии семейства знаменитой М-16. Благодаря исключительно ровному спуску, высокой эргономике и небольшому весу данное оружие отличается высокой точностью боя, хотя высокая чувствительность к загрязнению делает его малопригодным для использования в сложных условиях.
+  description: A new evolution in the M-16 family. Shares the same strengths but is equally vulnerable in dirty environments. It uses 5.56mm ammo.
   components:
   - type: Item
     sprite: _Stalker/Objects/Weapons/Guns/Rifles/_Skins/lr-300-alt.rsi
@@ -179,7 +180,7 @@
   parent: STWeaponRifleLR300v1
   id: STWeaponRifleLR300White
   name: LR-300
-  description: Новая ступень в развитии семейства знаменитой М-16. Благодаря исключительно ровному спуску, высокой эргономике и небольшому весу данное оружие отличается высокой точностью боя, хотя высокая чувствительность к загрязнению делает его малопригодным для использования в сложных условиях.
+  description: A new step in the development of the famous M-16 family. Thanks to its exceptionally smooth trigger, high ergonomics, and light weight, this weapon is highly accurate, although its high sensitivity to dirt makes it poorly suited for use in harsh conditions.
   components:
   - type: Item
     sprite: _Stalker/Objects/Weapons/Guns/Rifles/_Skins/lr-300-white.rsi
@@ -192,7 +193,7 @@
   parent: STBaseWeaponRifleM4
   id: STWeaponRifleSCARL
   name: SCAR-L
-  suffix: ST, Кастомка
+  suffix: ST, Custom # Zona14: ST, Кастомка
   description: Belgian battle rifle chambered in 5.56 NATO. Rare in the Zone, mostly used by western mercenaries. Powerful but maintenance-heavy weapon.
   components:
   - type: STWeight

@@ -1,10 +1,11 @@
+# Zona14: translated Russian names/descriptions to English
 
 - type: entity
   parent: STClothingOuterArmorStorageBasic
   id: ClothingOuterArmorAborigineStalker
-  name: бронекостюм "Туземец"
+  name: Native Armor Suit
   suffix: ST, T3, Universal
-  description: Были взяты за основу списаные бронекостюмы Берилл-5М, и модернизированы в кустарных условиях. Заметно упала защита от пуль но при этом выросли все остальные показатели что позволило сделать бронекостюм сбалансированным за свою цену для пребывания в условиях зоны.
+  description: Decommissioned Beryl-5M armored suits were taken as a basis, and modernized in artisanal conditions. Bullet protection has dropped noticeably, but at the same time, all other indicators have increased, which made it possible to make the armored suit balanced for its price for staying in the zone.
   components:
   - type: STWeight
     self: 12
@@ -55,9 +56,9 @@
 - type: entity
   parent: ClothingOuterArmorAborigineStalker
   id: ClothingOuterArmorAborigineFreedom
-  name: бронекостюм «Туземец»
+  name: Native Armor Suit
   suffix: ST, T3, Universal
-  description: За основу был взят списанный бронекостюм Берилл-5М, который затем модернизировали в кустарных условиях. Заметно упала защита от пуль но при этом выросли все остальные показатели что позволило сделать бронекостюм сбалансированным за свою цену для пребывания в условиях зоны.
+  description: Based on the decommissioned Beryl-5M armored suit, which was then modernized in artisanal conditions. Bullet protection has dropped noticeably, but at the same time, all other indicators have increased, which made it possible to make the armored suit balanced for its price for staying in the zone.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/outerClothing/aborigine_freedom.rsi

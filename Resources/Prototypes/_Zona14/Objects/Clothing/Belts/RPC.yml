@@ -1,0 +1,482 @@
+- type: entity
+  parent: ClothingBeltStorageStalkerBase
+  id: Z14ClothingBeltTarzanBlack
+  categories: [ Zona14 ]
+  name: RPS "Tarzan"
+  description: A very useful black RPS for carrying everything from walkie-talkies to magazines. It is especially popular among the stalker community.
+  suffix: Z14
+  components:
+  - type: STWeight
+    self: 1
+  - type: STWeightInsideReduction
+    reductionFraction: 0.50 # Zona14 change
+  - type: Storage
+    maxItemSize: Normal
+    quickInsert: true
+    areaInsert: true
+    areaInsertRadius: 2
+    grid:
+      - 0,2,0,3
+      - 1,0,1,0
+      - 2,2,2,3
+      - 3,0,3,0
+      - 4,2,4,3
+      - 5,0,5,0
+      - 6,2,6,3
+      - 7,0,7,0
+      - 8,2,8,3
+      - 9,0,9,0
+      - 10,2,10,3
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/belt/tarzan_black.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/belt/tarzan_black.rsi
+
+- type: entity
+  parent: ClothingBeltTarzanBlack
+  id: Z14ClothingBeltTarzanGreen
+  categories: [ Zona14 ]
+  name: RPS "Tarzan"
+  description: A very useful green RPS for carrying everything from walkie-talkies to shops. It is especially popular among the stalker community.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/belt/tarzan_green.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/belt/tarzan_green.rsi
+
+- type: entity
+  parent: ClothingBeltTarzanBlack
+  id: Z14ClothingBeltTarzanOrange
+  categories: [ Zona14 ]
+  name: RPS "Tarzan"
+  description: A very useful orange RPS for carrying everything from a walkie-talkie to magazines. It is especially popular among the stalker community.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/belt/tarzan_orange.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/belt/tarzan_orange.rsi
+
+- type: entity
+  parent: ClothingBeltStorageStalkerBase
+  id: Z14ClothingBeltBandolierStalker
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: bandolier
+  description: Bandolier for cartridges of any caliber.
+  components:
+    - type: STWeight
+      self: 0.5
+    - type: STWeightInsideReduction
+      reductionFraction: 0.50 # Zona14 change
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/belt/belt_novice.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/belt/belt_novice.rsi
+    - type: Item
+      size: Huge
+    - type: Storage
+      maxItemSize: Normal
+      grid:
+        - 0,0,7,7
+      whitelist:
+        tags:
+          - Cartridge
+        components:
+          - CartridgeAmmo
+
+- type: entity
+  parent: ClothingBeltStorageStalkerBase
+  id: Z14STClothingBeltThrowingKnifes
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: harness
+  description: Allows knives to be conveniently stored and quickly retrieved
+  components:
+    - type: STWeightInsideReduction
+      reductionFraction: 0.50 # Zona14 change
+    - type: STWeight
+      self: 0.5
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/Belts/knife_belt.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/Belts/knife_belt.rsi
+    - type: Item
+      size: Huge
+    - type: Storage
+      maxItemSize: Normal
+      grid:
+        - 0,0,7,7
+      quickInsert: true
+      areaInsert: true
+      whitelist:
+        tags:
+          - Knife
+    - type: ItemMapper
+      mapLayers:
+        knife:
+          whitelist:
+            tags:
+              - Knife
+      sprite: _Stalker/Objects/Clothing/Belts/knife_belt_overlay.rsi
+    - type: Appearance
+
+- type: entity
+  parent: ClothingBeltStorageStalkerBase
+  id: Z14ClothingBeltGreenWebbingStalker
+  categories: [ Zona14 ]
+  name: PSZ Waist Bag
+  description: A set of pouches and a belt bag of the old green version of the personal protection system kit, not intended for the Chernobyl terrain.
+  suffix: Z14
+  components:
+    - type: STWeightInsideReduction
+      reductionFraction: 0.50 # Zona14 change
+    - type: STWeight
+      self: 3
+    - type: Storage
+      maxItemSize: Large
+      grid:
+        - 2,0,7,3
+        - 0,4,0,2
+        - 1,0,0,2
+        - 0,0,0,0
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/belt/belt_green.rsi
+      state: icon
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/belt/belt_green.rsi
+
+- type: entity
+  parent: ClothingBeltStorageStalkerBase
+  id: Z14ClothingBeltWebbingOfficerStalker
+  categories: [ Zona14 ]
+  name: PSZ Holster Waist Bag
+  description: Pouch set and waist bag of the Woodland Personal Protection System Officer Kit with a pistol holster.
+  suffix: Z14
+  components:
+    - type: STWeightInsideReduction
+      reductionFraction: 0.50 # Zona14 change
+    - type: STWeight
+      self: 3
+    - type: Storage
+      maxItemSize: Large
+      grid:
+        - 4,0,9,3
+        - 0,1,0,1
+        - 0,0,1,0
+        - 0,4,0,2
+        - 1,0,0,2
+        - 2,2,2,2
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/belt/belt_officer.rsi
+      state: icon
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/belt/belt_officer.rsi
+
+- type: entity
+  parent: ClothingBeltStorageStalkerBase
+  id: Z14ClothingBeltWebbingHolsterStalkerZarya
+  categories: [ Zona14 ]
+  name: waist bag with holster "Sunrise"
+  description: Waist bag from the "Sunrise" set with a pistol holster.
+  suffix: Z14
+  components:
+    - type: STWeightInsideReduction
+      reductionFraction: 0.50 # Zona14 change
+    - type: STWeight
+      self: 3
+    - type: Storage
+      maxItemSize: Large
+      grid:
+        - 3,0,8,3
+        - 0,1,0,1
+        - 0,0,1,0
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/belt/belt_zarya_holster.rsi
+      state: icon
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/belt/belt_zarya_holster.rsi
+
+- type: entity
+  parent: ClothingBeltStorageStalkerBase
+  id: Z14ClothingBeltWebbingDoubleStalkerZaryaSmall
+  categories: [ Zona14 ]
+  name: double waist bag "Sunrise"
+  description: Waist bag from the "Sunrise" set with a second small bag.
+  suffix: Z14
+  components:
+    - type: STWeightInsideReduction
+      reductionFraction: 0.50 # Zona14 change
+    - type: STWeight
+      self: 5
+    - type: Storage
+      maxItemSize: Large
+      grid:
+        - 4,0,9,3
+        - 0,0,2,3
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/belt/belt_zarya_double_small.rsi
+      state: icon
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/belt/belt_zarya_double_small.rsi
+
+- type: entity
+  parent: ClothingBeltTarzanBlack
+  id: Z14ClothingBeltWebbingBerill
+  categories: [ Zona14 ]
+  name: belt bag with holster 'Beryl-5M'
+  description: A set of pouches and a woodland Beryl-5M waist bag with a pistol holster.
+  suffix: Z14
+  components:
+    - type: STWeightInsideReduction
+      reductionFraction: 0.50 # Zona14 change
+    - type: STWeight
+      self: 4
+    - type: Storage
+      maxItemSize: Large
+      grid:
+        - 4,0,9,3
+        - 0,1,0,1
+        - 0,0,1,0
+        - 0,4,0,2
+        - 1,0,0,2
+        - 2,2,2,2
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/belt/belt_berill.rsi
+      state: icon
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/belt/belt_berill.rsi
+
+- type: entity
+  parent: ClothingBeltStorageStalkerBase
+  id: Z14ClothingBeltWebbingHolsterMerc
+  categories: [ Zona14 ]
+  name: Mercenary Belt Pouch with Holster
+  description: Belt pouch from the mercenary set with a pistol holster.
+  suffix: Z14
+  components:
+    - type: STWeightInsideReduction
+      reductionFraction: 0.50 # Zona14 change
+    - type: STWeight
+      self: 3
+    - type: Storage
+      maxItemSize: Large
+      grid:
+        - 3,0,8,3
+        - 0,1,0,1
+        - 0,0,1,0
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/belt/belt_merc.rsi
+      state: icon
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/belt/belt_merc.rsi
+
+- type: entity
+  parent: ClothingBeltStorageStalkerBase
+  id: Z14ClothingBeltWebbingHolsterMerc2
+  categories: [ Zona14 ]
+  name: Mercenary Belt Pouch with Holster
+  description: Belt pouch from the "Berezka" mercenary set with a pistol holster.
+  suffix: Z14
+  components:
+    - type: STWeightInsideReduction
+      reductionFraction: 0.50 # Zona14 change
+    - type: STWeight
+      self: 3
+    - type: Storage
+      maxItemSize: Large
+      grid:
+        - 3,0,8,3
+        - 0,1,0,1
+        - 0,0,1,0
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/belt/belt_merc_2.rsi
+      state: icon
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/belt/belt_merc_2.rsi
+
+- type: entity
+  parent: ClothingBeltStorageStalkerBase
+  id: Z14ClothingBeltWebbingHolsterMercBandit
+  categories: [ Zona14 ]
+  name: '"Valet" Belt Pouch with Holster'
+  description: Belt pouch from the bandit "Valet" set with a pistol holster.
+  suffix: Z14
+  components:
+    - type: STWeightInsideReduction
+      reductionFraction: 0.50 # Zona14 change
+    - type: STWeight
+      self: 3
+    - type: Storage
+      maxItemSize: Large
+      grid:
+        - 3,0,8,3
+        - 0,1,0,1
+        - 0,0,1,0
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/belt/belt_merc_bandit.rsi
+      state: icon
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/belt/belt_merc_bandit.rsi
+
+- type: entity
+  parent: ClothingBeltStorageStalkerBase
+  id: Z14ClothingBeltWebbingHolsterLoner
+  categories: [ Zona14 ]
+  name: Stalker's waist bag with holster
+  description: Belt bag from the stalker kit with a pistol holster.
+  suffix: Z14
+  components:
+    - type: STWeightInsideReduction
+      reductionFraction: 0.50 # Zona14 change
+    - type: STWeight
+      self: 3
+    - type: Storage
+      maxItemSize: Large
+      grid:
+        - 3,0,8,3
+        - 0,1,0,1
+        - 0,0,1,0
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/belt/belt_merc_loner_holster.rsi
+      state: icon
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/belt/belt_merc_loner_holster.rsi
+
+- type: entity
+  parent: ClothingBeltStorageStalkerBase
+  id: Z14ClothingBeltWebbingHolsterDolgPS5M
+  categories: [ Zona14 ]
+  name: PS5-M Belt Pouch with Holster "Universal Protection"
+  description: Belt pouch from the PS5-M "Universal Protection" set with pistol holster.
+  suffix: Z14
+  components:
+    - type: STWeightInsideReduction
+      reductionFraction: 0.50 # Zona14 change
+    - type: STWeight
+      self: 3
+    - type: Storage
+      maxItemSize: Large
+      grid:
+        - 3,0,8,3
+        - 0,1,0,1
+        - 0,0,1,0
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/belt/belt_dolg_holster.rsi
+      state: icon
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/belt/belt_dolg_holster.rsi
+
+- type: entity
+  parent: ClothingBeltStorageStalkerBase
+  id: Z14ClothingBeltWebbingHolsterFreedomDefender
+  categories: [ Zona14 ]
+  name: '"Freedom Defender" Belt Pouch with Holster'
+  description: Belt pouch from the "Freedom Defender" set with pistol holster.
+  suffix: Z14
+  components:
+    - type: STWeightInsideReduction
+      reductionFraction: 0.50 # Zona14 change
+    - type: STWeight
+      self: 3
+    - type: Storage
+      maxItemSize: Large
+      grid:
+        - 3,0,8,3
+        - 0,1,0,1
+        - 0,0,1,0
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/belt/belt_freedom_holster.rsi
+      state: icon
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/belt/belt_freedom_holster.rsi
+
+- type: entity
+  parent: ClothingBeltStorageStalkerBase
+  id: Z14ClothingBeltWebbingDoubleFreedomVeterSmall
+  categories: [ Zona14 ]
+  name: Double Belt Pouch "Wind of Freedom"
+  description: Belt pouch from the "Wind of Freedom" set with an additional small pouch.
+  suffix: Z14
+  components:
+    - type: STWeightInsideReduction
+      reductionFraction: 0.50 # Zona14 change
+    - type: STWeight
+      self: 5
+    - type: Storage
+      maxItemSize: Large
+      grid:
+        - 4,0,9,3
+        - 0,0,2,3
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/belt/belt_veter_double_small.rsi
+      state: icon
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/belt/belt_veter_double_small.rsi
+
+- type: entity
+  parent: ClothingBeltStorageStalkerBase
+  id: Z14ClothingBeltWebbingHolsterMonolith
+  categories: [ Zona14 ]
+  name: '"Monolith" Belt Pouch with Holster'
+  description: Belt pouch from the "Monolith" set with pistol holster.
+  suffix: Z14
+  components:
+    - type: STWeightInsideReduction
+      reductionFraction: 0.50 # Zona14 change
+    - type: STWeight
+      self: 3
+    - type: Storage
+      maxItemSize: Large
+      grid:
+        - 3,0,8,3
+        - 0,1,0,1
+        - 0,0,1,0
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/belt/belt_monolith_holster.rsi
+      state: icon
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/belt/belt_monolith_holster.rsi
+    - type: PersonalDamage
+      damage:
+        types:
+          Radiation: 4.5
+
+- type: entity
+  parent: ClothingBeltTarzanBlack
+  id: Z14ClothingBeltTarzanDeserter
+  categories: [ Zona14 ]
+  name: RPS "Tarzan" Otstepnikov
+  description: A very useful RPS for carrying anything from a radio to magazines.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/belt/tarzan_deserter.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/belt/tarzan_deserter.rsi
+
+- type: entity
+  parent: ClothingBeltTarzanBlack
+  id: Z14ClothingBeltWebbingDeserter
+  categories: [ Zona14 ]
+  name: Deserter Belt Bag with Holster
+  description: A set of pouches and a belt bag with a pistol holster, painted in black and gray colors.
+  suffix: Z14
+  components:
+    - type: STWeight
+      self: 4
+    - type: Storage
+      maxItemSize: Large
+      grid:
+        - 4,0,9,3
+        - 0,1,0,1
+        - 0,0,1,0
+        - 0,4,0,2
+        - 1,0,0,2
+        - 2,2,2,2
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/belt/belt_deserter_holster.rsi
+      state: icon
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/belt/belt_deserter_holster.rsi

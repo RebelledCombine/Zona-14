@@ -3,7 +3,7 @@
   id: Z14739FMJBox
   suffix: Z14
   categories: [ Zona14 ]
-  name: ammo box (7.62x39) FMJ
+  name: Ammo Box (7.62x39) FMJ
   description: For select Kalashnikov rifle models, 30 rounds per box. Penetrates class 3 armor.
   components:
   - type: MagazineVisuals
@@ -26,7 +26,7 @@
   id: Z14739PCBox
   suffix: Z14
   categories: [ Zona14 ]
-  name: ammo box (7.62x39) PS
+  name: PS Ammo Box (7.62x39)
   description: For select Kalashnikov rifle models, 30 rounds per box. Penetrates class 4 armor.
   components:
   - type: BallisticAmmoProvider
@@ -44,7 +44,7 @@
   id: Z14739HPBox
   suffix: Z14
   categories: [ Zona14 ]
-  name: ammo box (7.62x39) HP
+  name: Ammo Box (7.62x39) HP
   description: For select Kalashnikov rifle models, 30 rounds per box. Useless against armor.
   components:
   - type: BallisticAmmoProvider
@@ -62,7 +62,7 @@
   id: Z14739BPBox
   suffix: Z14
   categories: [ Zona14 ]
-  name: ammo box (7.62x39) BP
+  name: Ammo Box (7.62x39) BP
   description: For select Kalashnikov rifle models, 30 rounds per box. Penetrates class 5 armor.
   components:
   - type: BallisticAmmoProvider
@@ -80,7 +80,7 @@
   id: Z14739FMJBoxCink
   suffix: Z14
   categories: [ Zona14 ]
-  name: ammo crate (7.62x39) FMJ
+  name: Large Ammo Box (7.62x39) FMJ
   description: For select Kalashnikov rifle models, 300 rounds per crate. Penetrates class 3 armor.
   components:
   - type: BallisticAmmoProvider
@@ -101,7 +101,7 @@
   id: Z14739PCBoxCink
   suffix: Z14
   categories: [ Zona14 ]
-  name: ammo crate (7.62x39) PS
+  name: Large Ammo Box (7.62x39) PS
   description: For select Kalashnikov rifle models, 300 rounds per crate. Penetrates class 4 armor.
   components:
   - type: BallisticAmmoProvider
@@ -118,7 +118,7 @@
   id: Z14739HPBoxCink
   suffix: Z14
   categories: [ Zona14 ]
-  name: ammo crate (7.62x39) HP
+  name: Large Ammo Box (7.62x39) HP
   description: For select Kalashnikov rifle models, 300 rounds per crate. Useless against armor.
   components:
   - type: BallisticAmmoProvider
@@ -135,7 +135,7 @@
   id: Z14739BPBoxCink
   suffix: Z14
   categories: [ Zona14 ]
-  name: ammo crate (7.62x39) BP
+  name: Large Ammo Box (7.62x39) BP
   description: For select Kalashnikov rifle models, 300 rounds per crate. Penetrates class 5 armor.
   components:
   - type: BallisticAmmoProvider

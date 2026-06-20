@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: STchairCraftable
   parent: OldWoodChairStalker
-  name: стул
-  description: Некогда этот стул был гордостью, но сейчас предмет, который занимает много места.
+  name: chair
+  description: "This chair was once a source of pride, but now it's just an item that takes up a lot of space."
   components:
   - type: Craftable
   - type: Construction
@@ -12,7 +13,7 @@
 - type: entity
   id: STTableCraftable
   parent: OldWoodTable6
-  name: стол
+  name: table
   components:
   - type: Craftable
   - type: Construction

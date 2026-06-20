@@ -1,0 +1,317 @@
+# fire
+- type: entity
+  name: fire poltergeist trigger (1-2) (10%) 10m
+  id: Z14STTriggerPoltergeistFire121010
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger121010
+  suffix: Z14
+  components:
+  - type: SpawnOnApproach
+    prototypes:
+    - Z14MobMutantPoltergeistFire
+    restricted:
+    - Z14MobMutantPoltergeistFire
+
+- type: entity
+  name: fire poltergeist trigger (1-2) (50%) 10m
+  id: Z14STTriggerPoltergeistFire125010
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger125010
+  suffix: Z14
+  components:
+  - type: SpawnOnApproach
+    prototypes:
+    - Z14MobMutantPoltergeistFire
+    restricted:
+    - Z14MobMutantPoltergeistFire
+
+- type: entity
+  name: fire poltergeist trigger (1) (50%) (30m)
+  id: Z14STTriggerPoltergeistFire115030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger115030
+  suffix: Z14
+  components:
+  - type: SpawnOnApproach
+    prototypes:
+    - Z14MobMutantPoltergeistFire
+    restricted:
+    - Z14MobMutantPoltergeistFire
+
+- type: entity
+  name: fire poltergeist trigger (1-2) (75%) 30m
+  id: Z14STTriggerPoltergeistFire127530
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger127530
+  suffix: Z14
+  components:
+  - type: SpawnOnApproach
+    prototypes:
+    - Z14MobMutantPoltergeistFire
+    restricted:
+    - Z14MobMutantPoltergeistFire
+
+- type: entity
+  name: fire poltergeist trigger (1-2) (100%) 10m
+  id: Z14STTriggerPoltergeistFire1210010
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger1210010
+  suffix: Z14
+  components:
+  - type: SpawnOnApproach
+    prototypes:
+    - Z14MobMutantPoltergeistFire
+    restricted:
+    - Z14MobMutantPoltergeistFire
+
+# lightning
+- type: entity
+  name: elec poltergeist trigger (1-2) (10%) 10m
+  id: Z14STTriggerPoltergeistElec121010
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger121010
+  suffix: Z14
+  components:
+  - type: SpawnOnApproach
+    prototypes:
+    - Z14MobMutantPoltergeistElec
+    restricted:
+    - Z14MobMutantPoltergeistElec
+
+- type: entity
+  name: elec poltergeist trigger (1-2) (50%) 10m
+  id: Z14STTriggerPoltergeistElec125010
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger125010
+  suffix: Z14
+  components:
+  - type: SpawnOnApproach
+    prototypes:
+    - Z14MobMutantPoltergeistElec
+    restricted:
+    - Z14MobMutantPoltergeistElec
+
+- type: entity
+  name: elec poltergeist trigger (1) (50%) (30m)
+  id: Z14STTriggerPoltergeistElec115030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger115030
+  suffix: Z14
+  components:
+  - type: SpawnOnApproach
+    prototypes:
+    - Z14MobMutantPoltergeistElec
+    restricted:
+    - Z14MobMutantPoltergeistElec
+
+- type: entity
+  name: elec poltergeist trigger (1-2) (75%) 30m
+  id: Z14STTriggerPoltergeistElec127530
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger127530
+  suffix: Z14
+  components:
+  - type: SpawnOnApproach
+    prototypes:
+    - Z14MobMutantPoltergeistElec
+    restricted:
+    - Z14MobMutantPoltergeistElec
+
+- type: entity
+  name: elec poltergeist trigger (1-2) (100%) 10m
+  id: Z14STTriggerPoltergeistElec1210010
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger1210010
+  suffix: Z14
+  components:
+  - type: SpawnOnApproach
+    prototypes:
+    - Z14MobMutantPoltergeistElec
+    restricted:
+    - Z14MobMutantPoltergeistElec
+
+# ice
+- type: entity
+  name: ice poltergeist trigger (1-2) (10%) 10m
+  id: Z14STTriggerPoltergeistIce121010
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger121010
+  suffix: Z14
+  components:
+  - type: SpawnOnApproach
+    prototypes:
+    - Z14MobMutantPoltergeistIce
+    restricted:
+    - Z14MobMutantPoltergeistIce
+
+- type: entity
+  name: ice poltergeist trigger (1-2) (50%) 10m
+  id: Z14STTriggerPoltergeistIce125010
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger125010
+  suffix: Z14
+  components:
+  - type: SpawnOnApproach
+    prototypes:
+    - Z14MobMutantPoltergeistIce
+    restricted:
+    - Z14MobMutantPoltergeistIce
+
+- type: entity
+  name: ice poltergeist trigger (1) (50%) (30m)
+  id: Z14STTriggerPoltergeistIce115030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger115030
+  suffix: Z14
+  components:
+  - type: SpawnOnApproach
+    prototypes:
+    - Z14MobMutantPoltergeistIce
+    restricted:
+    - Z14MobMutantPoltergeistIce
+
+- type: entity
+  name: ice poltergeist trigger (1-2) (75%) 30m
+  id: Z14STTriggerPoltergeistIce127530
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger127530
+  suffix: Z14
+  components:
+  - type: SpawnOnApproach
+    prototypes:
+    - Z14MobMutantPoltergeistIce
+    restricted:
+    - Z14MobMutantPoltergeistIce
+
+- type: entity
+  name: ice poltergeist trigger (1-2) (100%) 10m
+  id: Z14STTriggerPoltergeistIce1210010
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger1210010
+  suffix: Z14
+  components:
+  - type: SpawnOnApproach
+    prototypes:
+    - Z14MobMutantPoltergeistIce
+    restricted:
+    - Z14MobMutantPoltergeistIce
+
+# no spawners for rave
+
+
+- type: entity
+  name: fire poltergeist trigger (1) (100%) 30m
+  id: Z14STTriggerPoltergeistFire1110030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger1110030
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+      - Z14MobMutantPoltergeistFire
+      restricted:
+      - Z14MobMutantPoltergeistFire
+
+- type: entity
+  name: fire poltergeist trigger (2) (100%) 30m
+  id: Z14STTriggerPoltergeistFire2210030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger2210030
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+      - Z14MobMutantPoltergeistFire
+      restricted:
+      - Z14MobMutantPoltergeistFire
+
+- type: entity
+  name: fire poltergeist trigger (3) (100%) 30m
+  id: Z14STTriggerPoltergeistFire3310030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger3310030
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+      - Z14MobMutantPoltergeistFire
+      restricted:
+      - Z14MobMutantPoltergeistFire
+
+- type: entity
+  name: elec poltergeist trigger (1) (100%) 30m
+  id: Z14STTriggerPoltergeistElec1110030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger1110030
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+      - Z14MobMutantPoltergeistElec
+      restricted:
+      - Z14MobMutantPoltergeistElec
+
+- type: entity
+  name: elec poltergeist trigger (2) (100%) 30m
+  id: Z14STTriggerPoltergeistElec2210030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger2210030
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+      - Z14MobMutantPoltergeistElec
+      restricted:
+      - Z14MobMutantPoltergeistElec
+
+- type: entity
+  name: elec poltergeist trigger (3) (100%) 30m
+  id: Z14STTriggerPoltergeistElec3310030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger3310030
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+      - Z14MobMutantPoltergeistElec
+      restricted:
+      - Z14MobMutantPoltergeistElec
+
+- type: entity
+  name: ice poltergeist trigger (1) (100%) 30m
+  id: Z14STTriggerPoltergeistIce1110030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger1110030
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+      - Z14MobMutantPoltergeistIce
+      restricted:
+      - Z14MobMutantPoltergeistIce
+
+- type: entity
+  name: ice poltergeist trigger (2) (100%) 30m
+  id: Z14STTriggerPoltergeistIce2210030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger2210030
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+      - Z14MobMutantPoltergeistIce
+      restricted:
+      - Z14MobMutantPoltergeistIce
+
+- type: entity
+  name: ice poltergeist trigger (3) (100%) 30m
+  id: Z14STTriggerPoltergeistIce3310030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger3310030
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+      - Z14MobMutantPoltergeistIce
+      restricted:
+      - Z14MobMutantPoltergeistIce

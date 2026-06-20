@@ -1,4 +1,4 @@
-# MARK: SVD-S Base
+﻿# MARK: SVD-S Base
 - type: entity
   abstract: true
   parent: STBaseWeaponSniper
@@ -204,7 +204,7 @@
   parent: Z14STBaseWeaponRifleSVDS
   id: Z14STWeaponSniperSVUTop
   categories: [ Zona14 ]
-  name: SVU "Swamp"
+  name: 'SVU "Top"'
   suffix: Z14, Custom
   description: A shortened semi-automatic bullpup sniper rifle developed by TsKIB SOO based on the SVD. Development of a shortened SVD-based sniper rifle for Soviet airborne troops began at TsKIB SOO in 1977. The barrel is equipped with a massive suppressor designed by L. V. Bondarev. The suppressor reduces the sound of the shot by 10-12% compared to the SVD, nearly eliminates muzzle flash, and disperses the sound so that pinpointing the shooter's position becomes impossible. The furniture is made of polyamide. This particular specimen has most of its body, including the stock, wrapped in camouflage tape, with additional wrapping on the scope and muzzle device to break up the weapon's silhouette against vegetation.
   components:
@@ -232,11 +232,11 @@
     minAngle: -50
     maxAngle: -70
   - type: Clothing
-    sprite: _Stalker/Objects/Weapons/Guns/Revolvers/РР-2000.rsi
+    sprite: _Stalker/Objects/Weapons/Guns/Revolvers/PP-2000.rsi
   - type: Item
-    sprite: _Stalker/Objects/Weapons/Guns/Revolvers/РР-2000.rsi
+    sprite: _Stalker/Objects/Weapons/Guns/Revolvers/PP-2000.rsi
   - type: Sprite
-    sprite: _Stalker/Objects/Weapons/Guns/Revolvers/РР-2000.rsi
+    sprite: _Stalker/Objects/Weapons/Guns/Revolvers/PP-2000.rsi
   - type: Gun
     soundGunshot:
       path: /Audio/_Stalker/Effects/Guns/revolver.ogg

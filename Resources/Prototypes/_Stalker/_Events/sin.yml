@@ -1,7 +1,8 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
-  name: светящаяся уведомляшка для греха
+  name: glowing notification for sin
   id: GrehAlarmLightingnorth
-  suffix: север
+  suffix: north # Zona14: север
   parent: MarkerBase
   placement:
     mode: PlaceFree
@@ -12,7 +13,7 @@
     layers:
       - state: blue
   - type: SinLightPoint
-    side: церковь
+    side: church # Zona14: церковь
   - type: PointLight
     color: red
     energy: 0
@@ -20,9 +21,9 @@
     castShadows: false
 
 - type: entity
-  name: светящаяся уведомляшка для греха
+  name: glowing notification for sin
   id: GrehAlarmLightingeast
-  suffix: восток
+  suffix: east # Zona14: восток
   parent: MarkerBase
   placement:
     mode: PlaceFree
@@ -33,7 +34,7 @@
     layers:
       - state: blue
   - type: SinLightPoint
-    side: деревня
+    side: village # Zona14: деревня
   - type: PointLight
     color: red
     energy: 0
@@ -42,9 +43,9 @@
 
 
 - type: entity
-  name: светящаяся уведомляшка для греха
+  name: glowing notification for sin
   id: GrehAlarmLightingsouth
-  suffix: юг
+  suffix: south # Zona14: юг
   parent: MarkerBase
   placement:
     mode: PlaceFree
@@ -55,7 +56,7 @@
     layers:
       - state: blue
   - type: SinLightPoint
-    side: кладбище
+    side: cemetery # Zona14: кладбище
   - type: PointLight
     color: red
     energy: 0
@@ -63,9 +64,9 @@
     castShadows: false
 
 - type: entity
-  name: светящаяся уведомляшка для греха
+  name: glowing notification for sin
   id: GrehAlarmLightingwest
-  suffix: запад
+  suffix: west # Zona14: запад
   parent: MarkerBase
   placement:
     mode: PlaceFree
@@ -76,7 +77,7 @@
     layers:
       - state: blue
   - type: SinLightPoint
-    side: архи-аномалия
+    side: archi-anomaly # Zona14: архи-аномалия
   - type: PointLight
     color: red
     energy: 0
@@ -84,9 +85,9 @@
     castShadows: false
 
 - type: entity
-  name: триггер людей для греха
+  name: people trigger for sin
   id: GrehAlarmLightingnorthTrigger
-  suffix: север
+  suffix: north # Zona14: север
   parent: MarkerBase
   placement:
     mode: PlaceFree
@@ -97,12 +98,12 @@
     layers:
       - state: blue
   - type: SinAlarmPoint
-    side: церковь
+    side: church # Zona14: церковь
 
 - type: entity
-  name: триггер людей для греха
+  name: people trigger for sin
   id: GrehAlarmLightingeastTrigger
-  suffix: восток
+  suffix: east # Zona14: восток
   parent: MarkerBase
   placement:
     mode: PlaceFree
@@ -113,12 +114,12 @@
     layers:
       - state: blue
   - type: SinAlarmPoint
-    side: деревня
+    side: village # Zona14: деревня
 
 - type: entity
-  name: триггер людей для греха
+  name: people trigger for sin
   id: GrehAlarmLightingsouthTrigger
-  suffix: юг
+  suffix: south # Zona14: юг
   parent: MarkerBase
   placement:
     mode: PlaceFree
@@ -129,12 +130,12 @@
     layers:
       - state: blue
   - type: SinAlarmPoint
-    side: кладбище
+    side: cemetery # Zona14: кладбище
 
 - type: entity
-  name: триггер людей для греха
+  name: people trigger for sin
   id: GrehAlarmLightingwestTrigger
-  suffix: запад
+  suffix: west # Zona14: запад
   parent: MarkerBase
   placement:
     mode: PlaceFree
@@ -145,4 +146,4 @@
     layers:
       - state: blue
   - type: SinAlarmPoint
-    side: архи-аномалия
+    side: archi-anomaly # Zona14: архи-аномалия

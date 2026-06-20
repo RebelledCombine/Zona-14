@@ -1,0 +1,56 @@
+- type: entity
+  parent: Z14STClothingHeadHelmetTacticalT3Base
+  id: Z14STClothingHeadHelmetSeraphimAltin
+  categories: [ Zona14 ]
+  name: 'Armored helmet "Guardian"'
+  description: An advanced modification of the classic Monolith Sphere-12 helmet, refined by Seraphim craftsmen for Zone protection. Combines original durability with Seraphim ideology. Covered in faction-specific camo with prayer symbols and protective signs believed to enhance its abilities. Upgraded filters and double coating for improved radiation and psi protection.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/Head/Sera_/strash_seraphim_helm.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/Head/Sera_/strash_seraphim_helm.rsi
+#  - type: Craftable
+#  - type: Tag
+#    tags:
+#      - BlockMask
+#  - type: STWeight
+#    self: 2.5
+#  - type: Armor
+#    armorClass: 3
+#    modifiers:
+#      flatReductions:
+#        Psy: 1
+#      coefficients:
+#        Slash: 0.8
+#        Blunt: 0.8
+#        Psy: 0.95
+#  - type: ExplosionResistance
+#    damageCoefficient: 0.85
+#  - type: Reflect
+#    reflectProb: 0.12
+#    spread: 360
+#    reflects:
+#      - NonEnergy
+#    soundOnReflect: /Audio/_Stalker/Effects/sear.ogg
+#  - type: PersonalDamage
+#    interval: 1
+#    damage:
+#      types:
+#        Psy: -0.25
+#  - type: HideLayerClothing
+#    slots:
+#    - Hair
+
+- type: entity
+  parent: Z14STClothingHeadHelmetSeraphimAltin
+  id: Z14ClothingHeadAltinHelmetLimaSera
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: 'combat helmet "Guardian"'
+  description: An advanced modification of the classic Monolith Sphere-12 helmet, refined by Seraphim craftsmen for Zone protection. Combines original durability with Seraphim ideology. Covered in faction-specific camo with prayer symbols and protective signs believed to enhance its abilities. Upgraded filters and double coating for improved radiation and psi protection. Painted gray.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/sera_limastrash.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/sera_limastrash.rsi

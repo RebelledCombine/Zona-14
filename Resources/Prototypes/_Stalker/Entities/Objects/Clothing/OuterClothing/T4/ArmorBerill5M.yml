@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 # Base
 
 - type: entity
   parent: STClothingOuterArmorStorageBasic
   id: STClothingOuterArmorBerill5MBase
-  name: бронекостюм «Берилл-5М» # base
+  name: Beryl-5M Armored Suit
   abstract: true
   suffix: ST, T4, Universal
   components:
@@ -53,8 +54,8 @@
 - type: entity
   parent: STClothingOuterArmorBerill5MBase
   id: STClothingOuterArmorBerill5M
-  name: бронекостюм «Берилл-5М»
-  description: Модифицированная для работы в условиях Зоны, экипировка армейского спецназа - Берилл-5М.
+  name: Beryl-5M armored suit
+  description: Modified to work in the conditions of the Zone, the equipment of the army special forces is Beryl-5M.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/outerClothing/berill5m_military.rsi
@@ -66,8 +67,8 @@
 - type: entity
   parent: STClothingOuterArmorBerill5MBase
   id: ClothingOuterArmorBerill5MMonolith
-  name: бронекостюм «Берилл-5М» монолита
-  description: Бронекостюм, пренадлежащий группировке фанатиков. Обеспечивает отличную защиту по всем показателям, но делает из вас живую мишень.
+  name: "Monolith's Beryl-5M armored suit"
+  description: Armored suit belonging to a group of fanatics. Provides excellent protection in all respects, but makes you a living target.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/outerClothing/berill5m_monolith.rsi
@@ -79,8 +80,8 @@
 - type: entity
   parent: STClothingOuterArmorBerill5MBase
   id: STClothingOuterArmorLepestokNeutral
-  name: бронекомбез "Лепесток Берилла" нейтралов
-  description: Доработанный умельцем из Нейтралов "Синицей". С улучшенной тканью.
+  name: Neutral ArmorWithout "Beryl Petal" neutrals
+  description: Modified by the Neutral craftsman "Titmouse". With improved fabric.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/outerClothing/lepestok_neutral.rsi
@@ -106,8 +107,8 @@
   parent: STClothingOuterArmorBerill5MBase
   id: ClothingOuterArmorBerill5MProject
   suffix: ST, T4, Universal, Project
-  name: Модифицированный бронекостюм «Берилл-5М»
-  description: Необычная модификация бронекостюма «Берилл-5М», зачем-то выкрашенная в тёмно-фиолетовый.
+  name: modified Berill-5M armor suit
+  description: An unusual modification of the Berill-5M armor suit, painted dark purple for some reason.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/outerClothing/berill5m_project.rsi
@@ -117,9 +118,9 @@
 - type: entity
   parent: STClothingOuterArmorBerill5MBase
   id: STClothingOuterArmorBerillBereza
-  name: берилл-5Б «Береза»
-  suffix: ST, Кастомка
-  description: Комбинезон «Берилл-5Б», перешитый в камуфляж «Берёза». За счёт доработок владельца лучше подходит для маскировки в заросших и лесных участках Зоны. По состоянию изношен, но уровень защиты не потерял.
+  name: Berill-5B "Bereza"
+  suffix: ST, Custom # Zona14: ST, Кастомка
+  description: A Berill-5B suit re-tailored in "Bereza" (Birch) camouflage. Owner modifications make it better suited for camouflage in overgrown and forested areas of the Zone. Worn from use, but its protection level is intact.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/outerClothing/berill5m_bereza.rsi

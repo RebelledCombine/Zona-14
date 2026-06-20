@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: STBaseMobMutant
   id: BaseMobMutantChurzik
-  name: Кикимора
+  name: Kikimora
   suffix: ST, T1
-  description: если и есть наиболее жалкий, трусливый хищник среди фауны Чернобыльской Зоны Отчуждения, то это они. Происхождение их определить проблематично, но тонкий хвост невольно намекает, что их предками возможно были огромные крысы, которые перешли на более обширный рацион.
+  description: if there is a more pitiful, cowardly predator among the fauna of the Chernobyl Exclusion Zone, it is them. Their origin is hard to determine, but the thin tail involuntarily hints that their ancestors were perhaps huge rats that switched to a broader diet.
   components:
     - type: EmitSoundOnSpawn
       sound:

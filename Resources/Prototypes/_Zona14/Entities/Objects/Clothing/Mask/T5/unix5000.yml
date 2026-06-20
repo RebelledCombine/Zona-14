@@ -1,0 +1,16 @@
+
+- type: entity
+  parent: Z14GasMaskBase
+  id: Z14ClothingMaskunix5000
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: UNIX-5000 Gas Mask
+  description: Used to protect respiratory organs, face, and eyes from harmful substances in the form of gases, vapors, and aerosols. Protects from toxins.
+  components:
+  - type: Tag
+    tags:
+      - BlockMask
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/mask/unix5000.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/mask/unix5000.rsi

@@ -1,0 +1,8 @@
+- type: craftRecipe
+  id: Z14BaseBallBat
+  resultProtos:
+  - StalkerBallBat
+  craftTime: 5
+  items:
+    STCraftPinePlankT1:
+      amount: 1

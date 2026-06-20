@@ -1,0 +1,26 @@
+ent-Z14STAnomalyBarrier = Аномалия Барьер
+    .desc = Обычный предмет, найденный в Зоне.
+    .suffix = Z14
+ent-Z14STAnomalyBubble = Аномалия Пузырь
+    .desc = Обычный предмет, найденный в Зоне.
+    .suffix = Z14
+ent-Z14STAnomalyBubbleExit = Выход из Аномалии Пузырь
+    .desc = Обычный предмет, найденный в Зоне.
+    .suffix = Z14
+ent-Z14STAnomalyBubbleLima = Аномалия Пузырь Лима
+    .desc = Обычный предмет, найденный в Зоне.
+    .suffix = Z14
+ent-Z14STAnomalyBubbleLimaExit = Выход из Аномалии Пузырь Лима
+    .desc = Обычный предмет, найденный в Зоне.
+    .suffix = Z14
+ent-Z14STAnomalyDebug = Аномалия (отладка)
+    .desc = Обычный предмет, найденный в Зоне.
+    .suffix = Z14
+ent-Z14STAnomalyHush = Аномалия Тишина
+    .desc = Обычный предмет, найденный в Зоне.
+    .suffix = Z14
+ent-Z14STBulletCar = Пуля Кар
+    .desc = Боеприпас.
+    .suffix = Z14
+
+ent-Z14STAnomalyBase = аномалия

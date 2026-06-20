@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: STMutantController
   parent: BaseMobMutant
-  name: контроллёр
+  name: controller
   suffix: ST, T3
-  description: C какой-то стороны удачный эксперимент учёных по добавлению пси способностей монстрам
+  description: On the other hand, a successful experiment by scientists to add psi abilities to monsters
   components:
   - type: Damageable
     damageModifierSet: STMutantT3DamageModifierSet

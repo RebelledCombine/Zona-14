@@ -1,0 +1,28 @@
+- type: entity
+  parent: STBaseWeaponShotgunKS23
+  id: Z14STShotgunKS23
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: KS-23
+  description: A Soviet and Russian 23mm carbine. Originally a multi-purpose police special-purpose weapon, designed to suppress riots and for selective forceful, psychological, and chemical action against offenders. In the Zone it comes from the black market, but here its only purpose is to kill with mind-blowing power.
+
+- type: entity
+  parent: STBaseWeaponShotgunKS23
+  id: Z14STWeaponShotgunKS23M
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: KS-23M
+  description: A Soviet and Russian 23mm carbine. Originally a multi-purpose police special-purpose weapon, designed to suppress riots and for selective forceful, psychological, and chemical action against offenders. In the Zone it comes from the black market, but here its only purpose is to kill with mind-blowing power. Now in a modernized variant.
+  components:
+  - type: STWeight
+    self: 2.9 # Less weight
+  - type: Sprite
+    sprite: _Stalker/Objects/Weapons/Guns/Shotguns/ks23/ks-23m.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Weapons/Guns/Shotguns/ks23/ks-23m.rsi
+  - type: Item
+    sprite: _Stalker/Objects/Weapons/Guns/Shotguns/ks23/ks-23m.rsi
+  - type: Gun
+    fireRate: 0.7
+    angleIncrease: 18 #Slightly bigger kick
+    angleDecay: 8 # and Slightly faster recovery

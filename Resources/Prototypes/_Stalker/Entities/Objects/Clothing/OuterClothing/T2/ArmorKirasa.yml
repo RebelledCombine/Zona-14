@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: STClothingOuterArmorStorageBasic
   id: STClothingOuterKirasa
-  name: Бронежилет "Кираса"
-  description: Бронежилет II типа, обеспечивающий неплохую защиту от некоторых видов повреждений.
+  name: '"Kirasa" Body Armor'
+  description: Type II body armor providing decent protection from some types of damage.
   suffix: ST, T2, PVP
   components:
   - type: Sprite

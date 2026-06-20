@@ -1,11 +1,12 @@
+# Zona14: translated Russian names/descriptions to English
 
 - type: entity
   parent: BaseCraftTool
   abstract: true
-  name: Набор дял скинов
+  name: Skin Set
   id: STSkinsKitBase
   suffix: ST
-  description: Позволяет переделать обычную броню в броню своей фракции
+  description: Allows you to convert normal armor to armor of your own faction
   components:
     - type: Sprite
       sprite: _Stalker/Objects/Tools/skinskit.rsi
@@ -17,95 +18,95 @@
 
 - type: entity
   parent: STSkinsKitBase
-  name: Набор бандита
+  name: Bandit Set
   id: STSkinsKitBandits
 
 - type: entity
   parent: STSkinsKitBase
-  name: Набор Аномалиста
+  name: Anomalist Set
   id: STSkinsKitAnomalist
 
 - type: entity
   parent: STSkinsKitBase
-  name: Набор Чистого Неба #aka CN
+  name: Clear Sky Set
   id: STSkinsKitClearSky
 
 - type: entity
   parent: STSkinsKitBase
-  name: Набор Долга
+  name: Duty Set
   id: STSkinsKitDolg
 
 - type: entity
   parent: STSkinsKitBase
-  name: Набор «Воля»
+  name: '"Volya" Set'
   id: STSkinsKitFreedom
 
 - type: entity
   parent: STSkinsKitBase
-  name: Набор наёмников # aka Merc
-  id: STSkinsKitMercenary # куда?
+  name: Mercenary Set
+  id: STSkinsKitMercenary # Zona14: куда?
 
 - type: entity
   parent: STSkinsKitBase
-  name: Набор нейтралов
+  name: Neutral Set
   id: STSkinsKitNeutral
 
 - type: entity
   parent: STSkinsKitBase
-  name: Набор военных
+  name: Military Set
   id: STSkinsKitMilitary
 
 - type: entity
   parent: STSkinsKitBase
-  name: Набор Монолита
-  id: STSkinsKitMonolith # куда?
+  name: Monolith Set
+  id: STSkinsKitMonolith # Zona14: куда?
 
 - type: entity
   parent: STSkinsKitBase
-  name: Набор Ренегата
+  name: Renegade Set
   id: STSkinsKitRenegate
 
 - type: entity
   parent: STSkinsKitBase
-  name: Набор Завета # aka Zavet
-  id: STSkinsKitCovenant # куда?
+  name: Covenant Set
+  id: STSkinsKitCovenant # Zona14: куда?
 
 - type: entity
   parent: STSkinsKitBase
-  name: Набор Жаб
+  name: Frog Set
   id: STSkinsKitJabs
 
 - type: entity
   parent: STSkinsKitBase
-  name: Набор Поиска
+  name: Search Set
   id: STSkinsKitPoisk
 
 - type: entity
   parent: STSkinsKitBase
-  name: Набор Серафима
-  id: STSkinsKitSeraphim # куда? Туда
+  name: Seraphim Set
+  id: STSkinsKitSeraphim # Zona14: куда? Туда
 
 - type: entity
   parent: STSkinsKitBase
-  name: Набор отступников
-  id: STSkinsKitDeserters # куда?
+  name: Renegade Set
+  id: STSkinsKitDeserters # Zona14: куда?
 
 - type: entity
   parent: STSkinsKitBase
-  name: Набор Полиции
-  id: STSkinsKitPolice # куда?
+  name: Police Set
+  id: STSkinsKitPolice # Zona14: куда?
 
 - type: entity
   parent: STSkinsKitBase
-  name: Набор ООН #aka UN
-  id: STSkinsKitUnitar # куда?
+  name: UN Set
+  id: STSkinsKitUnitar # Zona14: куда?
 
 - type: entity
   parent: STSkinsKitBase
-  name: Набор Паломника
+  name: Pilgrim Set
   id: STSkinsKitPilgrim
 
 - type: entity
   parent: STSkinsKitBase
-  name: Набор проекта
+  name: Project Set
   id: STSkinsKitProject # add somehow

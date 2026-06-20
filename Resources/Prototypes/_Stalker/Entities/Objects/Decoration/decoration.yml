@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: GasStationstalker
   parent: BaseStructure
-  name: бензоколонка
+  name: gas station
   suffix: ST, Mapping
-  description: Старая бензоколонка, врядли она работает.
+  description: Old gas station, hardly it works.
   placement:
     mode: SnapgridCenter
   components:
@@ -52,9 +53,9 @@
 - type: entity
   id: GasStationstalkertwo
   parent: GasStationstalker
-  name: бензоколонка
+  name: gas station
   suffix: ST, Mapping
-  description: Старая бензоколонка, врядли она работает.
+  description: "An old gas station, it's unlikely that it works."
   placement:
     mode: SnapgridCenter
   components:
@@ -65,9 +66,9 @@
 - type: entity
   id: GasStationstalkernew
   parent: GasStationstalker
-  name: бензоколонка
+  name: "{ ent-GasStationstalkertwo }"
   suffix: ST, Mapping
-  description: Старая бензоколонка, врядли она работает.
+  description: "{ ent-GasStationstalkertwo.desc }"
   placement:
     mode: SnapgridCenter
   components:
@@ -78,9 +79,9 @@
 - type: entity
   id: GasStationstalkernewtwo
   parent: GasStationstalker
-  name: бензоколонка
+  name: "{ ent-GasStationstalkertwo }"
   suffix: ST, Mapping
-  description: Старая бензоколонка, врядли она работает.
+  description: "{ ent-GasStationstalkertwo.desc }"
   placement:
     mode: SnapgridCenter
   components:
@@ -91,9 +92,9 @@
 - type: entity
   id: TVStalker
   parent: BaseStructure
-  name: телевизор
+  name: TV
   suffix: ST, Mapping
-  description: Телевизионный приёмник.
+  description: TV receiver.
   placement:
     mode: SnapgridCenter
   components:
@@ -141,9 +142,9 @@
 
 - type: entity
   id: WoodenCrib
-  name: детская кроватка
+  name: Baby Crib
   suffix: ST, Mapping
-  description: Винтажная детская кроватка с потемневшими от времени бортиками и скрипучими креплениями. На изголовье заметны следы зубов и царапины — свидетели первых детских шагов и попыток выбраться на свободу.
+  description: A vintage baby crib with side rails darkened by time and squeaky fittings. The headboard bears teeth marks and scratches — signs of early childhood and escape attempts.
   parent: STBaseStructure
   components:
   - type: Sprite
@@ -152,9 +153,9 @@
 
 - type: entity
   id: WoodenPiano
-  name: фортопиано
+  name: Piano
   suffix: ST, Mapping
-  description: Советское пианино марки 'Беларусь' с характерным звучанием и прямыми линиями корпуса. Клавиши из слоновой кости местами потрескались, педали поскрипывают, но душа инструмента всё ещё жива в его глубоких басах и звонких верхних нотах.
+  description: A Soviet 'Belarus' brand piano with its distinct tone and straight body lines. The ivory keys are cracked in places, the pedals creak, but the soul of the instrument lives on in its deep bass and bright high notes.
   parent: STBaseStructure
   components:
   - type: Sprite
@@ -163,10 +164,10 @@
 
 - type: entity
   id: PhoneStalker
-  name: Стационарный телефон
+  name: Landline Telephone
   parent: FanStalker
   suffix: ST, Mapping
-  description: Массивный стационарный телефон советских времён с витым шнуром и пожелтевшей от времени трубкой. Несмотря на внешний вид, механизм внутри кажется вполне исправным. Символ эпохи, когда звонки были редкими и дорогими.
+  description: A massive Soviet-era landline telephone with a coiled cord and a handset yellowed by time. Despite its appearance, the mechanism inside seems to work just fine. A symbol of an era when calls were rare and costly.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Other/mapping.rsi
@@ -175,10 +176,10 @@
 
 - type: entity
   id: WoodenBench2
-  name: деревянная скамейка
+  name: Wooden Bench
   suffix: ST, Mapping
   parent: ChairBase
-  description: Простая деревянная скамейка с потертой до блеска поверхностью. Годы использования сгладили все углы и придали дереву особый, теплый оттенок. На ней удобно отдохнуть уставшим путникам.
+  description: A simple wooden bench with a surface worn to a shine. Years of use have rounded off its corners and given the wood a warm hue. Perfect for a tired traveler to rest on.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Other/mapping.rsi
@@ -186,9 +187,9 @@
 
 - type: entity
   id: RustySlide
-  name: ржавая горка
+  name: Rusty Slide
   suffix: ST, Mapping
-  description: Яркая детская горка с потёртыми от многочисленных спусков боковинами. Ступеньки давно стёрлись от тысяч маленьких ножек, а пластик местами выцвел на солнце, но весёлый скрип при скатывании остался неизменным.
+  description: "A brightly colored children's slide with worn sides from countless descents. The steps are worn smooth by thousands of tiny feet, and the plastic has faded in the sun — but the cheerful squeak when sliding down remains."
   parent: STBaseStructure
   components:
   - type: Sprite
@@ -209,9 +210,9 @@
 
 - type: entity
   id: HalfTire
-  name: половина покрышки
+  name: Half Tire
   suffix: ST, Mapping
-  description: Полуистлевшая автомобильная покрышка, наполовину погрузившаяся в землю. Резина потрескалась и потеряла эластичность, а внутренняя часть заполнена грязью и прошлогодними листьями. Безмолвный свидетель многих десятилетий, проведённых под открытым небом.
+  description: "A half-decayed car tire, half-buried in the ground. The rubber is cracked and no longer elastic, filled with mud and last year's leaves. A silent witness to decades under the open sky."
   parent: STBaseStructure
   components:
   - type: Sprite
@@ -232,9 +233,9 @@
 
 - type: entity
   id: StackBooks
-  name: стопка книг
+  name: Stack of Books
   suffix: ST, Mapping
-  description: Потрёпанная стопка книг с пожелтевшими от времени страницами и выцветшими обложками. Среди изданий можно заметить советские учебники, сборники классиков литературы и несколько научно-популярных журналов. Корешки некоторых томов потрескались от многочисленных прочтений, а на полях встречаются карандашные пометки прежних владельцев.
+  description: A tattered stack of books with yellowed pages and faded covers. Among them are Soviet textbooks, collections of literary classics, and a few popular science journals. Some spines are cracked from frequent reading, and the margins contain pencil notes from previous owners.
   parent: STBaseStructure
   components:
   - type: Sprite
@@ -255,9 +256,9 @@
 
 - type: entity
   id: OldGen
-  name: старый генератор
+  name: Old Generator
   suffix: ST, Mapping
-  description: Массивный дизельный генератор советской эпохи с облупившейся зеленоватой краской и многочисленными следами ремонта. Внушительные размеры и грубая конструкция говорят о его индустриальном прошлом. Несмотря на ржавчину, покрывающую металлические части, и пятна масла вокруг топливного бака, механизм внутри кажется способным заработать при правильном обращении. Его низкий гул когда-то был привычным звуком на многих объектах, где централизованное электроснабжение давало сбои.
+  description: A massive diesel generator from the Soviet era, covered in chipped green paint and signs of repeated repair. Its bulky size and rugged design speak to its industrial past. Despite the rust and oil stains around the fuel tank, the inner mechanism seems capable of starting again with proper handling. Its low hum was once a common sound at many facilities where centralized power often failed.
   parent: STBaseStructure
   components:
   - type: Sprite
@@ -266,9 +267,9 @@
 
 - type: entity
   id: WoodenKomod
-  name: старый советский комод
+  name: old Soviet dresser
   suffix: ST, Mapping
-  description: Громоздкий комод советской эпохи с характерными геометрическими узорами и металлическими накладками. Несмотря на неуклюжий вид, его прочность вызывает уважение — такая мебель переживёт любые перемены.
+  description: A bulky dresser from the Soviet era with characteristic geometric patterns and metal overlays. Despite its clumsy appearance, its sturdiness commands respect — such furniture will survive any changes.
   parent: WoodenYaschik1
   components:
   - type: Sprite

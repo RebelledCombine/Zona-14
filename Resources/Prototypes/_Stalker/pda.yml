@@ -1,3 +1,4 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   abstract: true
   parent: BaseItem
@@ -147,8 +148,8 @@
 - type: entity
   parent: BaseStalkerPDA
   id: StalkerPDA
-  name: КПК Сталкера
-  description: Объединены общей сетью и позволяют обмениваться информацией.
+  name: Stalker PDA
+  description: Connected by a common network and allow the exchange of information.
   components:
   - type: PdaBorderColor
     borderColor: "#717059"
@@ -167,9 +168,9 @@
 - type: entity
   parent: [ BaseStalkerPDA, GeigerCounter]
   id: STSeraphimPDA
-  name: КПК Серафима
+  name: "{ ent-StalkerPDA }"
   suffix: ST, Serafim
-  description: Объединены общей сетью и позволяют обмениваться информацией.
+  description: "{ ent-StalkerPDA.desc }"
   components:
   - type: Unremoveable
   - type: Icon
@@ -205,8 +206,8 @@
 - type: entity
   parent: [ BaseStalkerPDA, GeigerCounter ]
   id: AnomalistPDA
-  name: КПК Аномалиста
-  description: Объединены общей сетью и позволяют обмениваться информацией.
+  name: "{ ent-StalkerPDA }"
+  description: "{ ent-StalkerPDA.desc }"
   components:
   - type: Icon
     state: anom_off
@@ -236,8 +237,8 @@
 - type: entity
   parent: BaseStalkerPDA
   id: ScientistPDA
-  name: КПК Ученого
-  description: Объединены общей сетью и позволяют обмениваться информацией.
+  name: "{ ent-StalkerPDA }"
+  description: "{ ent-StalkerPDA.desc }"
   components:
   - type: Icon
     state: scientific_off
@@ -267,8 +268,8 @@
 - type: entity
   parent: BaseStalkerPDA
   id: BandPDA
-  name: КПК Бандита
-  description: Объединены общей сетью и позволяют обмениваться информацией.
+  name: "{ ent-StalkerPDA }"
+  description: "{ ent-StalkerPDA.desc }"
   components:
   - type: PdaBorderColor
     borderColor: "#010101"
@@ -300,8 +301,8 @@
 - type: entity
   parent: BaseStalkerPDA
   id: DolgPDA
-  name: КПК Долга
-  description: Объединены общей сетью и позволяют обмениваться информацией.
+  name: "{ ent-StalkerPDA }"
+  description: "{ ent-StalkerPDA.desc }"
   components:
   - type: PdaBorderColor
     borderColor: "#7a0200"
@@ -332,8 +333,8 @@
 - type: entity
   parent: BaseStalkerPDA
   id: FreedomPDA
-  name: КПК «Свободы»
-  description: Объединены общей сетью и позволяют обмениваться информацией. КПК пропитан запахом дешевого протвейна и канабиса.
+  name: "{ ent-StalkerPDA }"
+  description: "{ ent-StalkerPDA.desc }"
   components:
   - type: PdaBorderColor
     borderColor: "#2d7019"
@@ -359,8 +360,8 @@
 - type: entity
   parent: BaseStalkerPDA
   id: ClearSkyPDA
-  name: КПК Чистого Неба
-  description: Объединены общей сетью и позволяют обмениваться информацией.
+  name: "{ ent-StalkerPDA }"
+  description: "{ ent-StalkerPDA.desc }"
   components:
   - type: PdaBorderColor
     borderColor: "#58d1ff"
@@ -396,8 +397,8 @@
 - type: entity
   parent: BaseStalkerPDA
   id: MilitaryPDA
-  name: КПК Военного
-  description: Этот КПК пережевёт и ядерный взрыв. По крайней мере это закладывать в тендере.
+  name: "{ ent-StalkerPDA }"
+  description: "{ ent-StalkerPDA.desc }"
   components:
   - type: Icon
     sprite: _Stalker/Objects/Devices/pda.rsi
@@ -430,8 +431,8 @@
 - type: entity
   parent: BaseStalkerPDA
   id: PilgrimPDA
-  name: КПК Паломника
-  description: Объединены общей сетью и позволяют обмениваться информацией.
+  name: "{ ent-StalkerPDA }"
+  description: "{ ent-StalkerPDA.desc }"
   components:
   - type: PdaBorderColor
     borderColor: "#C0C0C0"
@@ -457,8 +458,8 @@
 - type: entity
   parent: BaseStalkerPDA
   id: MonolithPDA
-  name: КПК бойца «Монолита»
-  description: Объединены общей сетью и позволяют обмениваться информацией.
+  name: "{ ent-StalkerPDA }"
+  description: "{ ent-StalkerPDA.desc }"
   components:
   - type: Unremoveable
   - type: PdaBorderColor
@@ -491,8 +492,8 @@
 - type: entity
   parent: BaseStalkerPDA
   id: JabaPDA
-  name: КПК Жаб
-  description: Объединены общей сетью и позволяют обмениваться информацией.
+  name: "{ ent-StalkerPDA }"
+  description: "{ ent-StalkerPDA.desc }"
   components:
   - type: PdaBorderColor
     borderColor: "#010101"

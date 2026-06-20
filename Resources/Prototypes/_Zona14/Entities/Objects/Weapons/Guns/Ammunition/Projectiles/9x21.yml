@@ -20,7 +20,7 @@
 - type: entity
   id: Z14Bullet921PEGJ
   suffix: Z14
-  name: bullet (9x21 HP)
+  name: bullet (9x21 auto)
   parent: Z14Bullet921PGJ
   categories: [ HideSpawnMenu, Zona14 ]
   components:
@@ -38,7 +38,7 @@
 - type: entity
   id: Z14Bullet921BTGJ
   suffix: Z14
-  name: bullet (9x21 AP)
+  name: bullet (9x21 auto)
   parent: Z14Bullet921PGJ
   categories: [ HideSpawnMenu, Zona14 ]
   components:
@@ -53,7 +53,7 @@
 - type: entity
   id: Z14Bullet9217N42
   suffix: Z14
-  name: bullet (9x21 AP)
+  name: bullet (9x21 auto)
   parent: Z14Bullet921PGJ
   categories: [ HideSpawnMenu, Zona14 ]
   components:

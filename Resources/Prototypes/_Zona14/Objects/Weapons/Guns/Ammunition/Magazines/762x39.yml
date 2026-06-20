@@ -1,0 +1,229 @@
+- type: entity
+  id: Z14Base739Mag10
+  categories: [ Zona14 ]
+  name: 7.62x39 magazine (10)
+  description: 7.62x39 magazine for AK. Bullet capacity 10. They sell empty.
+  parent: Base545Mag10
+  suffix: Z14
+  components:
+  - type: STWeight
+    self: 0.2
+  - type: Tag
+    tags:
+      - Magazine739
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - STCartridge739
+    capacity: 10
+  - type: Item
+    size: Small
+    shape:
+      - 0,0,0,0
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+      storagebase: !type:Container
+        ents: [ ]
+      item_slot: !type:ContainerSlot { }
+  - type: Sprite
+    scale: 0.8, 0.8
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Magazines/739/10.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
+  - type: ItemSlots
+    slots:
+      item_slot:
+        name: mop-bucket-slot-component-slot-name-item123
+        ejectVerbText: mop-bucket-slot-component-eject-verb123
+        whitelist:
+          tags:
+            - STElasticRubberRed
+            - STElasticRubberGreen
+            - STElasticRubberBlue
+  - type: ItemMapper
+    mapLayers:
+      red_10:
+        whitelist:
+          tags:
+            - STElasticRubberRed
+      green_10:
+        whitelist:
+          tags:
+            - STElasticRubberGreen
+      blue_10:
+        whitelist:
+          tags:
+            - STElasticRubberBlue
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Magazines/739/elastic_rubber.rsi
+
+- type: entity
+  id: Z14739Mag30
+  categories: [ Zona14 ]
+  name: 7.62x39 magazine (30)
+  description: 7.62x39 magazine for AK. Bullet capacity 30. They sell empty.
+  parent: Base739Mag10
+  suffix: Z14
+  components:
+  - type: STWeight
+    self: 0.35
+  - type: BallisticAmmoProvider
+    capacity: 30
+  - type: Item
+    size: Small
+    shape:
+      - 0,0,0,1
+  - type: Sprite
+    scale: 0.8, 0.8
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Magazines/739/30.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: ItemSlots
+    slots:
+      item_slot:
+        name: mop-bucket-slot-component-slot-name-item123
+        ejectVerbText: mop-bucket-slot-component-eject-verb123
+        whitelist:
+          tags:
+            - STElasticRubberRed
+            - STElasticRubberGreen
+            - STElasticRubberBlue
+  - type: ItemMapper
+    mapLayers:
+      red_30:
+        whitelist:
+          tags:
+            - STElasticRubberRed
+      green_30:
+        whitelist:
+          tags:
+            - STElasticRubberGreen
+      blue_30:
+        whitelist:
+          tags:
+            - STElasticRubberBlue
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Magazines/739/elastic_rubber.rsi
+
+- type: entity
+  id: Z14739Mag45
+  categories: [ Zona14 ]
+  name: 7.62x39 magazine (45)
+  description: 7.62x39 magazine for AK. Bullet capacity 45. They sell empty.
+  parent: Base739Mag10
+  suffix: Z14
+  components:
+  - type: STWeight
+    self: 0.4
+  - type: BallisticAmmoProvider
+    capacity: 45
+  - type: Item
+    size: Normal
+    shape:
+      - 0,0,0,2
+  - type: Sprite
+    scale: 0.8, 0.8
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Magazines/739/45.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: ItemSlots
+    slots:
+      item_slot:
+        name: mop-bucket-slot-component-slot-name-item123
+        ejectVerbText: mop-bucket-slot-component-eject-verb123
+        whitelist:
+          tags:
+            - STElasticRubberRed
+            - STElasticRubberGreen
+            - STElasticRubberBlue
+  - type: ItemMapper
+    mapLayers:
+      red_45:
+        whitelist:
+          tags:
+            - STElasticRubberRed
+      green_45:
+        whitelist:
+          tags:
+            - STElasticRubberGreen
+      blue_45:
+        whitelist:
+          tags:
+            - STElasticRubberBlue
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Magazines/739/elastic_rubber.rsi
+
+- type: entity
+  id: Z14739Mag75
+  categories: [ Zona14 ]
+  name: 7.62x39 drum (75)
+  description: 7.62x39 drum for AK. Bullet capacity 75. They sell empty.
+  parent: Base739Mag10
+  suffix: Z14
+  components:
+  - type: STWeight
+    self: 0.7
+  - type: BallisticAmmoProvider
+    capacity: 75
+  - type: Item
+    size: Normal
+    shape:
+      - 0,0,1,1
+  - type: Sprite
+    scale: 0.8, 0.8
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Magazines/739/drum.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: ItemSlots
+    slots:
+      item_slot:
+        name: mop-bucket-slot-component-slot-name-item123
+        ejectVerbText: mop-bucket-slot-component-eject-verb123
+        whitelist:
+          tags:
+            - STElasticRubberRed
+            - STElasticRubberGreen
+            - STElasticRubberBlue
+  - type: ItemMapper
+    mapLayers:
+      red_drum:
+        whitelist:
+          tags:
+            - STElasticRubberRed
+      green_drum:
+        whitelist:
+          tags:
+            - STElasticRubberGreen
+      blue_drum:
+        whitelist:
+          tags:
+            - STElasticRubberBlue
+    sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Magazines/739/elastic_rubber.rsi
+
+- type: entity
+  parent: BaseMagazine762x39RPD
+  id: Z14Magazine762x39RPD
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: 7.62x39 RPD magazine (100)
+  components:
+    - type: Item
+      sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Magazines/rpd_100.rsi
+    - type: Sprite
+      sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Magazines/rpd_100.rsi

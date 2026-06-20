@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: STClothingCapeBase
   id: ClothingNeckExoSpeed
-  suffix: Stalker, Спонсор
-  name: экзоскелет
-  description: Версия экзоскелета на ноги, позволяющего быстрее бегать. По сути - технологичные ходули.
+  suffix: Stalker, Sponsor # Zona14: Stalker, Спонсор
+  name: Exoskeleton
+  description: Leg version of the exoskeleton that allows you to run faster. In fact, they are technological stilts.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/cloak/exo_speed.rsi

@@ -1,0 +1,17 @@
+
+
+- type: entity
+  parent: Z14GasMaskBase
+  id: Z14ClothingMaskRCBZ2
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: RChBZ gas mask of the second generation
+  description: Second-generation CBRN gas mask equipped with filters capable of effectively capturing and retaining hazardous substances. Its design ensures comfortable wear and good ventilation, maintaining high protection during prolonged use.
+  components:
+  - type: Tag
+    tags:
+      - BlockMask
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/mask/jaba_gasmask2.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/mask/jaba_gasmask2.rsi

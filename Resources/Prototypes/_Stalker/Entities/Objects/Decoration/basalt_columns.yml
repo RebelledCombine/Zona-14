@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: STBasaltColumn
   suffix: ST, Basalt, Mapping
-  name: Базальтовая колонна
-  description: Базальт – это широко распространённая вулканическая порода, которая образуется в результате быстрого охлаждения базальтовой лавы.
+  name: Basalt Column
+  description: Basalt is a widespread volcanic rock that is formed as a result of the rapid cooling of basaltic lava.
   abstract: true
   components:
   - type: Sprite
@@ -47,8 +48,8 @@
 - type: entity
   parent: STBasaltColumn
   id: STBasaltMediumColumnBroken
-  name: Разрушенная базальтовая колонна
-  description: Эта колонна представляет собой остатки вулканической породы. Многочисленные трещины на ее поверхности, а также обломки рассыпанные вокруг, свидетельствуют о мощи природы и времени.
+  name: Ruined Basalt Column
+  description: This column is the remains of volcanic rock. Numerous cracks on its surface, as well as debris scattered around, testify to the power of nature and time.
   components:
   - type: Sprite
     state: basalt-column-medium-broken

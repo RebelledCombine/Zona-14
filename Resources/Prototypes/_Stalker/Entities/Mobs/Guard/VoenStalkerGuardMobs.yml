@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
-  name: Охранник военных сталкеров
-  suffix: Stalker, Т6, NPC
+  name: Military Stalker guard
+  suffix: Stalker, T6, NPC # Zona14: Stalker, Т6, NPC
   parent: MobStalkerBaseGuard
   id: MobVoenstalSecurityTop
-  description: Охранник военных сталкеров.
+  description: Military Stalker guard.
   components:
   - type: NpcFactionMember
     factions:

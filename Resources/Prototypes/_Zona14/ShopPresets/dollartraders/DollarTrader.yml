@@ -4,73 +4,73 @@
   itemsForSale:
     # ---GRAVITY---
     #T2
-    ZoneArtifactFireball: 0
-    ZoneArtifactBattery: 3
-    ZoneArtifactAmoeba: 3
-    ZoneArtifactBlood: 5
-    ZoneArtifactEye: 3
+    Z14ZoneArtifactFireball: 0
+    Z14ZoneArtifactBattery: 3
+    Z14ZoneArtifactAmoeba: 3
+    Z14ZoneArtifactBlood: 5
+    Z14ZoneArtifactEye: 3
     #T3
-    ArtMedusa: 0
-    ZoneArtifactVyvert: 0
-    ZoneArtifactFlower: 10
+    Z14ArtMedusa: 0
+    Z14ZoneArtifactVyvert: 0
+    Z14ZoneArtifactFlower: 10
     #T4
-    ZoneArtifactGravi: 30
-    ZoneArtifactNightStar: 30
+    Z14ZoneArtifactGravi: 30
+    Z14ZoneArtifactNightStar: 30
     #T5
-    ZoneArtifactDistorter: 100
-    ZoneArtifactFocus: 100
-    ZoneArtifactGoldfish: 100
-    ZoneArtifactSpring: 100
-    ZoneArtifactStuntman: 100
+    Z14ZoneArtifactDistorter: 100
+    Z14ZoneArtifactFocus: 100
+    Z14ZoneArtifactGoldfish: 100
+    Z14ZoneArtifactSpring: 100
+    Z14ZoneArtifactStuntman: 100
     # ---THERMAL---
     #T3
-    ZoneArtifactFlame: 15
+    Z14ZoneArtifactFlame: 15
     #T4
-    ZoneArtifactCristall: 30
+    Z14ZoneArtifactCristall: 30
     #T5
-    ZoneArtifactLithosphere: 100
+    Z14ZoneArtifactLithosphere: 100
     # ---ELECTRICAL---
     #T3
-    ArtMoon: 20
-    ZoneArtifactFlash: 20
+    Z14ArtMoon: 20
+    Z14ZoneArtifactFlash: 20
     #T5
-    ZoneArtifactIce: 100
-    ZoneArtifactTesla: 100
+    Z14ZoneArtifactIce: 100
+    Z14ZoneArtifactTesla: 100
     # ---SPATIAL---
     #T5
-    ZoneArtifactSoul: 100
+    Z14ZoneArtifactSoul: 100
     # ---ACIDIC---
     #T3
-    ZoneArtifactMeat: 20
+    Z14ZoneArtifactMeat: 20
     #T4
-    ZoneArtifactBaloon: 35
-    ZoneArtifactKolobok: 35
+    Z14ZoneArtifactBaloon: 35
+    Z14ZoneArtifactKolobok: 35
     # Mutant parts
-    MutantPartBoarHoof: 0 # T1
-    MutantPartSeasonedBoarHoof: 0 # T2
-    MutantPartOldBoarHoof: 0 # T3
+    Z14MutantPartBoarHoof: 0 # T1
+    Z14MutantPartSeasonedBoarHoof: 0 # T2
+    Z14MutantPartOldBoarHoof: 0 # T3
 
     #T1 -------- Health * 1
-    MutantPartBlindDogTail: 0
-    MutantPartFleshEye: 0
+    Z14MutantPartBlindDogTail: 0
+    Z14MutantPartFleshEye: 0
     FoodMeatSpiderLeg: 0
-    MutantPartLeshiyRoot: 0
-    MutantPartPseudodogTail: 0
-    MutantPartSnorkFoot: 0
+    Z14MutantPartLeshiyRoot: 0
+    Z14MutantPartPseudodogTail: 0
+    Z14MutantPartSnorkFoot: 0
     #T3 -------- Health * 3
-    MutantPartBloodsuckerTentacles: 25
-    MutantPartOraculeEye: 30
-    MutantPartPseudogiantHeart: 320
-    MutantPartZombieHand: 2
-    MutantPartBloodsuckerHead: 130
-    MutantPartPsiDogTail: 20
+    Z14MutantPartBloodsuckerTentacles: 25
+    Z14MutantPartOraculeEye: 30
+    Z14MutantPartPseudogiantHeart: 320
+    Z14MutantPartZombieHand: 2
+    Z14MutantPartBloodsuckerHead: 130
+    Z14MutantPartPsiDogTail: 20
     #Other
     ChevronMonolit: 3
   categories:
   - name: shop-category-weapons
     priority: 1
     items:
-      STWeaponRifleFALo: 300
+      Z14STWeaponRifleFALo: 300
       Z14STWeaponRifleAK103: 300
       Z14STWeaponSniperSVDS: 250
       Z14STWeaponSniperVSS: 600
@@ -111,21 +111,21 @@
   - name: shop-category-armor
     priority: 4
     items:
-      ClothingHeadHelmetBerill5MMilitary: 20
-      ClothingHeadHelmetUlach: 75
-      ClothingOuterArmorStalkerCombat: 200
-      STClothingOuterArmorVeryHeavy: 350
-      ClothingOuterArmorHazmatRf: 200
+      Z14ClothingHeadHelmetBerill5MMilitary: 20
+      Z14ClothingHeadHelmetUlach: 75
+      Z14ClothingOuterArmorStalkerCombat: 200
+      Z14STClothingOuterArmorVeryHeavy: 350
+      Z14ClothingOuterArmorHazmatRf: 200
   - name: shop-category-research-equipment
     priority: 7
     items:
-      ZoneAnomalyDetectorAD3: 20
-      ZoneArtifactDetectorSpruce: 25
-      ZoneArtifactDetectorBear: 350
-      ZoneArtifactDetectorWolfhound: 1000
-      STPsyHelm2: 20
-      BoxArtcont1: 20
-      BoxArtcont: 5
+      Z14ZoneAnomalyDetectorAD3: 20
+      Z14ZoneArtifactDetectorSpruce: 25
+      Z14ZoneArtifactDetectorBear: 350
+      Z14ZoneArtifactDetectorWolfhound: 1000
+      Z14STPsyHelm2: 20
+      Z14BoxArtcont1: 20
+      Z14BoxArtcont: 5
       STBoltBagOliveGrayFilledGolden: 300
       TrashDetectorTier4: 100
       TrashDetectorTier5: 200
@@ -134,15 +134,15 @@
     items:
       BoxMRE: 5
       Defibrillator: 10
-      STOintmentGood: 2 #heals 40 thermal damage (Heat: -20 Caustic: -10 Shock: -10 delay: 8)
-      MedkitMilitary: 2 #heals 50 physical damage (Piercing: -20 Blunt: -10 Slash: -20 delay: 8)
-      MedkitScience: 5 #heals 45 thermal + 20 radiation damage (Heat: -15 Caustic: -15 Shock: -15 Radiation: -20 delay: 9)
-      WakeUpMedipen: 5 #contains equivalent of 2 wakeuppill tablets (20 units Bloodloss: -3 Asphyxiation: -2 per unit)
-      MedkitAI2: 1
-      AntiRadMedipen: 5
-      STPillboxShiza: 100
-      MedkitElite: 10
-      MedkitLAR: 25
+      Z14STOintmentGood: 2 #heals 40 thermal damage (Heat: -20 Caustic: -10 Shock: -10 delay: 8)
+      Z14MedkitMilitary: 2 #heals 50 physical damage (Piercing: -20 Blunt: -10 Slash: -20 delay: 8)
+      Z14MedkitScience: 5 #heals 45 thermal + 20 radiation damage (Heat: -15 Caustic: -15 Shock: -15 Radiation: -20 delay: 9)
+      Z14WakeUpMedipen: 5 #contains equivalent of 2 Z14wakeuppill tablets (20 units Bloodloss: -3 Asphyxiation: -2 per unit)
+      Z14MedkitAI2: 1
+      Z14AntiRadMedipen: 5
+      Z14STPillboxShiza: 100
+      Z14MedkitElite: 10
+      Z14MedkitLAR: 25
   - name: shop-category-modules
     priority: 11
     items:

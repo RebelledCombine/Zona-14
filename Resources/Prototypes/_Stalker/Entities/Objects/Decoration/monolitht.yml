@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: StalkerMonolith
   parent: BaseStructure
-  name: монолит
+  name: Monolith
   suffix: ST, Mapping
-  description: Услышь Его зов.
+  description: Hear His call.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/monolitht.rsi

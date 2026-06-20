@@ -1,10 +1,11 @@
-###############   СТАДИЯ 1 СЕМЕНА И ЛИСТЬЯ
+# Zona14: translated Russian names/descriptions to English
+# Zona14: ##############   СТАДИЯ 1 СЕМЕНА И ЛИСТЬЯ
 
 - type: seed
   id: STcannabisGrow
-  name: каннабис сатива
-  #suffix: ST, Stalker, ботаника # This field does not exist!
-  displayName: каннабис сатива
+  name: cannabis sativa
+  # Zona14: suffix: ST, Stalker, ботаника # This field does not exist!
+  displayName: cannabis sativa # Zona14: каннабис сатива
   plantRsi: Objects/Specific/Hydroponics/cannabis.rsi
   packetPrototype: CannabisSeeds
   productPrototypes:
@@ -28,9 +29,9 @@
 - type: entity
   id: CannabisSeedsStalker
   parent: SeedBase
-  name: семена марихуанны
-  suffix: ST, Stalker, craft, ботаника
-  description: Только не попадитесь с ней ментам.
+  name: marijuana seeds
+  suffix: ST, Stalker, craft, botanics # Zona14: ST, Stalker, craft, ботаника
+  description: "Just don't get caught by the cops."
   components:
     - type: Seed
       seedId: STcannabisGrow
@@ -38,11 +39,11 @@
       sprite: Objects/Specific/Hydroponics/cannabis.rsi
 
 - type: entity
-  name: бошечки
+  name: buds
   parent: ProduceBase
   id: STLeavesCannabis
   suffix: ST, Stalker, craft
-  description: На первый взгляд обычные шишки марихуанны. Вероятно из-за аномального воздействия местной почвы на семена, плоды преобрели необычный цвет.
+  description: At first glance, ordinary marijuana buds. Probably due to the abnormal effect of the local soil on the seeds, the fruits acquired an unusual color.
   components:
   - type: Sprite
     sprite: Objects/Specific/Hydroponics/rainbow_cannabis.rsi
@@ -57,14 +58,14 @@
           Quantity: 15
   - type: Craftable
 
-###############   СТАДИЯ 2 СУШКА И ПЕРЕМОЛКА
+# Zona14: ##############   СТАДИЯ 2 СУШКА И ПЕРЕМОЛКА
 
 - type: entity
-  name: сушенные бошечки
+  name: dried buds
   parent: BaseItem
   id: STLeavesCannabisDried
   suffix: ST, Stalker, craft
-  description: Практически готовые к употреблению высушенные плоды марихуанны, однако шишки слишком крупные чтобы их было удобно курить.
+  description: Almost ready-to-eat dried marijuana fruit, but the buds are too large to be easy to smoke.
   components:
   - type: SolutionContainerManager
     solutions:
@@ -78,11 +79,11 @@
   - type: Craftable
 
 - type: entity
-  name: измельченные бошки
+  name: ground buds
   parent: BaseItem
   id: STGroundCannabis
   suffix: ST, Stalker, craft
-  description: Полностью готовый ручничек для плотной забивки косячка.
+  description: Fully finished hand for tight jambing.
   components:
   - type: Sprite
     sprite: Objects/Specific/Hydroponics/rainbow_cannabis.rsi
@@ -102,12 +103,12 @@
 
 
 
-###############   СТАДИЯ 3 КРУТИМ И КУРИМ
+# Zona14: ##############   СТАДИЯ 3 КРУТИМ И КУРИМ
 
 - type: entity
   id: STPaperRolling
-  name: бумага для самокруток
-  description: Бумага для самокруток — это тонкий и легкий материал, идеально подходящий для самостоятельного скручивания табака, обеспечивающий ровное горение и чистый вкус.
+  name: Roll-Up Paper
+  description: Roll-your-own paper is a thin and light material that is ideal for rolling tobacco yourself, providing even burning and a clean taste.
   suffix: ST,Stalker,craft
   parent: BaseItem
   components:
@@ -128,8 +129,8 @@
   id: STJoint
   suffix: ST, Stalker, craft
   parent: STBaseCigar
-  name: штакет
-  description: Плотно забитый штакет местной сативы. Держа его в зубах, вас переполняет опьяняющее чувство свободы. Остается только пустить дымок и хорошо провести время.
+  name: picket fence
+  description: A tightly packed picket of local sativa. Holding it in your teeth, you are overwhelmed with an intoxicating feeling of freedom. All that remains is to blow smoke and have a good time.
   components:
   - type: Sprite
     sprite: Objects/Consumable/Smokeables/Cannabis/joint.rsi

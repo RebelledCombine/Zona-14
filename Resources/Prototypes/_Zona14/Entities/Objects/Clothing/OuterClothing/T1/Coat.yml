@@ -1,0 +1,89 @@
+- type: entity
+  parent: Z14ArmorBaseT1PvP
+  id: Z14STClothingOuterCoatBase
+  categories: [ Zona14 ]
+  name: Basic Cloak
+  description: Base coat description.
+  abstract: true
+  components:
+  - type: Item
+    size: Ginormous
+    shape:
+    - 0,0,9,3
+  - type: ToggleableClothing
+    clothingPrototype: STClothingHeadHatHoodBase
+    slot: head
+
+  - type: UserInterface
+    interfaces:
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
+  - type: Craftable
+  - type: Tag
+    tags:
+    - BlockCloak
+    - BlockGloves
+
+# Brown
+
+- type: entity
+  parent: Z14ArmorBaseT1PvP
+  id: Z14ClothingOuterCoatBanditBrown
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Bandit Leather Cloak
+  description: A standard brown leather cloak. No significant protection — just keeps you warm at night and softens a blind dog's bite. Rather uncomfortable in the Zone, yet often used by bandits — possibly just for the look.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/coat_bandit_brown.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/coat_bandit_brown.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHatHoodCoatBanditBrown
+    slot: head
+
+- type: entity
+  parent: Z14STClothingHeadHatHoodBase
+  id: Z14ClothingHeadHatHoodCoatBanditBrown
+  suffix: Z14
+  categories: [ HideSpawnMenu, Zona14 ]
+  name: hood
+  components:
+  - type: STWeight
+    self: 1
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/coat_bandit_hat_brown.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/coat_bandit_hat_brown.rsi
+
+# Black
+
+- type: entity
+  parent: Z14ArmorBaseT1PvP
+  id: Z14ClothingOuterCoatBanditBlack
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Bandit Leather Cloak
+  description: A standard black leather cloak. No significant protection — just keeps you warm at night and softens a blind dog's bite. Rather uncomfortable in the Zone, yet often used by bandits — possibly just for the look.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/coat_bandit_black.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/coat_bandit_black.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHatHoodCoatBanditBlack
+    slot: head
+
+- type: entity
+  parent: Z14STClothingHeadHatHoodBase
+  id: Z14ClothingHeadHatHoodCoatBanditBlack
+  suffix: Z14
+  categories: [ HideSpawnMenu, Zona14 ]
+  name: hood
+  components:
+  - type: STWeight
+    self: 1
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/coat_bandit_hat_black.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/coat_bandit_hat_black.rsi

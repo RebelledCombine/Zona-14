@@ -42,9 +42,9 @@
 
     # Announcements
     announcementSender: "S.T.A.L.K.E.R Network"
-    announcementStage1: "Внимание, сталкеры! Приближается выброс! Повторяю, приближается выброс. Немедленно ищите укрытие."
-    announcementStage2: "Внимание, сталкеры! Излучение начнётся в любую минуту. Ищите укрытие, если хотите выжить."
-    announcementStage3: "Сталкеры, выброс наконец-то закончился. Надеюсь, вы все целы и невредимы."
+    announcementStage1: "Attention, stalkers! An emission is approaching! I repeat, an emission is approaching. Find shelter immediately." # Zona14: Внимание, сталкеры! Приближается выброс! Повторяю, приближается выброс. Немедленно ищите укрытие.
+    announcementStage2: "Attention, stalkers! The radiation will begin any minute. Find shelter if you want to survive." # Zona14: Внимание, сталкеры! Излучение начнётся в любую минуту. Ищите укрытие, если хотите выжить.
+    announcementStage3: "Stalkers, the emission has finally ended. I hope you are all safe and sound." # Zona14: Сталкеры, выброс наконец-то закончился. Надеюсь, вы все целы и невредимы.
 
     # Rain configuration (starts 40 seconds before stage 3)
     rainStartBeforeEnd: 40

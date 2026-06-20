@@ -1,3 +1,4 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: ClothingHandsGlovesSyntheticBase
   id: ClothingHandsGlovesMitts
@@ -16,9 +17,9 @@
 - type: entity
   parent: ClothingHandsBaseST
   id: ClothingHandsGlovesJabs
-  name: перчатки жаб
+  name: toad gloves
   suffix: Stalker
-  description: Уникальные боевые перчатки группировки Жабы.
+  description: "Toad's Unique Battle Gloves."
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/gloves/hands_jaba.rsi
@@ -28,9 +29,9 @@
 - type: entity
   parent: ClothingHandsBaseST
   id: STClothingHandsGlovesSera
-  name: обмотки серафимов
-  suffix: ST, Скин
-  description: Обмотки из лоскутов ткани, заменяющие серафимам перчатки. Если приглядеться то можно увидеть что на лоскутах аккуратно написаны молитвы серафимов к их Богу.
+  name: Seraphim Windings
+  suffix: ST, Skin # Zona14: ST, Скин
+  description: "Cloth flap wrappings to replace the seraph's gloves. If you look closely, you can see that the prayers of the seraphim to their God are neatly written on the rags."
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/gloves/gloves_sera.rsi
@@ -54,9 +55,9 @@
 - type: entity
   parent: ClothingHandsBaseST
   id: STClothingHandsGlovesFoma
-  name: тактические перчатки
-  suffix: ST, Скин
-  description: Тактические перчатки – износостойкие, с усиленными ладонями, защитой костяшек и тактильной чувствительностью для оружия и работы.
+  name: Tactical Gloves
+  suffix: ST, Skin # Zona14: ST, Скин
+  description: Tactical gloves are hard-wearing, with reinforced palms, knuckle protection and tactile sensitivity for weapons and work.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/gloves/foma.rsi
@@ -66,9 +67,9 @@
 - type: entity
   parent: ClothingHandsBaseST
   id: STClothingHandsGlovesKrava
-  name: беспалые боевые перчатки
-  suffix: ST, Кастомка
-  description: Тактические перчатки изготовленные для удобного ношения военнослужащих.
+  name: fingerless combat gloves
+  suffix: ST, Custom # Zona14: ST, Кастомка
+  description: Tactical gloves made for comfortable wear by military personnel.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/gloves/gloves_krava.rsi

@@ -1,0 +1,14 @@
+- type: entity
+  parent: ClothingHeadHatHardhatBase
+  id: Z14STHeadLight
+  categories: [ Zona14 ]
+  name: Headlamp
+  description: Worn on the ear...
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/Ears/headlight.rsi
+  - type: Clothing
+    slots:
+    - ears
+    sprite: _Stalker/Objects/Clothing/Ears/headlight.rsi

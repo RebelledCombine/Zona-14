@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   abstract: true
   parent: STClothingHeadBase
   id: STClothingHeadHelmetCombatT3Base
-  name: база боевого шлема T3
+  name: T3 Combat Helmet Base
   suffix: ST, T3, Combat
   components:
   - type: Craftable
@@ -30,8 +31,8 @@
 - type: entity
   parent: STClothingHeadHelmetCombatT3Base
   id: ClothingHeadAssaultHelmet
-  name: шлем «Зенит»
-  description: боевой шлем марки «Зенит» третьего класса защиты.
+  name: Zenith helmet
+  description: Zenith combat helmet of the third class of protection.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/hats/assault_helm.rsi
@@ -41,8 +42,8 @@
 - type: entity
   parent: STClothingHeadHelmetCombatT3Base
   id: ClothingHeadAssaultHelmetUN
-  name: шлем «Зенит» ООН
-  description: боевой шлем марки «Зенит» третьего класса защиты в цветах миротворцев.
+  name: UN Zenith helmet
+  description: Zenith Class III combat helmet in the colors of the Peacekeepers.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/hats/un_head.rsi
@@ -52,8 +53,8 @@
 - type: entity
   parent: STClothingHeadHelmetCombatT3Base
   id: ClothingHeadAssaultHelmetDeserter
-  name: шлем «Зенит-Л»
-  description: Шлем полностью покрывающий всю голову владельца кроме лица, очки приварены к шлему, не пытайтесь их снять!
+  name: Zenith-L helmet
+  description: "Helmet that completely covers the wearer's entire head except for the face, goggles are welded to the helmet, do not try to take them off!"
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/hats/helm_legat_deserter.rsi
@@ -63,8 +64,8 @@
 - type: entity
   parent: STClothingHeadHelmetCombatT3Base
   id: ClothingHeadAssaultHelmetMilitary
-  name: военный шлем «Зенит»
-  description: боевой шлем марки «Зенит» третьего класса защиты в зелёном цвете.
+  name: Military Zenith Helmet
+  description: Zenith combat helmet of the third class of protection in green.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/hats/assault_helm_military.rsi
@@ -74,8 +75,8 @@
 - type: entity
   parent: STClothingHeadHelmetCombatT3Base
   id: ClothingHeadAssaultHelmetBandit
-  name: бандитский шлем «Зенит»
-  description: боевой шлем марки «Зенит» третьего класса защиты.
+  name: Bandit Zenith Helmet
+  description: Zenith combat helmet of the third class of protection.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/hats/assault_helm_bandit.rsi
@@ -85,8 +86,8 @@
 - type: entity
   parent: STClothingHeadHelmetCombatT3Base
   id: ClothingHeadAssaultHelmetDolg
-  name: шлем «Зенит» Долга
-  description: боевой шлем марки «Зенит» третьего класса защиты.
+  name: Duty Zenith Helmet
+  description: Zenith combat helmet of the third class of protection.
   components:
   - type: Sprite
     sprite: _Stalker_EN/Objects/Clothing/hats/assault_helm_dolg.rsi
@@ -96,8 +97,8 @@
 - type: entity
   parent: STClothingHeadHelmetCombatT3Base
   id: ClothingHeadAssaultHelmetMerc
-  name: шлем «Зенит» Наёмников
-  description: боевой шлем марки «Зенит» третьего класса защиты.
+  name: Mercenary Zenith helmet
+  description: Zenith combat helmet of the third class of protection.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/hats/assault_helm_merc.rsi
@@ -107,8 +108,8 @@
 - type: entity
   parent: STClothingHeadHelmetCombatT3Base
   id: ClothingHeadAssaultHelmetSeraZastup
-  name: шлем «Заступник»
-  description: боевой шлем марки «Зенит» третьего класса защиты с нанесёнными на него полосами.
+  name: helmet “Zastupnik”
+  description: combat helmet “Zenit,” third-class protection, with painted stripes.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/Head/Sera_/assault_helm_sera.rsi
@@ -118,8 +119,8 @@
 - type: entity
   parent: STClothingHeadHelmetCombatT3Base
   id: ClothingHeadAssaultHelmetLimaSeraZastup
-  name: шлем «Заступник»
-  description: боевой шлем марки «Зенит» третьего класса защиты серого цвета с нанесёнными на него полосами.
+  name: "{ ent-ClothingHeadAssaultHelmetSeraZastup }"
+  description: gray combat helmet “Zenit,” third-class protection, with painted stripes.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/Head/Sera_/assault_helm_serasera.rsi
@@ -129,8 +130,8 @@
 - type: entity
   parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
   id: ClothingHeadArmorSkyWalkerHelm
-  name: Экзошлем "СФЕРА S-10"
-  description: Шлем предоставляющий неплохие боевые показатели, так же благодаря встроенному противогазу шлем может похвастаться довольно хорошей радиозащитой. По остальным характеристикам, в частности аномальным всё довольно плохо.
+  name: '"SFERA S-10" exo-helmet'
+  description: A helmet that offers decent combat performance, and thanks to a built-in gas mask it boasts fairly good radiation protection. Other characteristics, particularly anomaly resistance, are quite poor.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/hats/skywalker_helmet.rsi
@@ -173,8 +174,8 @@
 - type: entity
   parent: STClothingHeadHelmetCombatT3Base
   id: ClothingHeadAssaultHelmetZavet
-  name: шлем «Зенит» Завета
-  description: боевой шлем марки «Зенит» третьего класса защиты.
+  name: '"Zenit" helmet of Zavet'
+  description: A "Zenit" combat helmet of the third protection class.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/Head/Zavet.rsi
@@ -184,8 +185,8 @@
 - type: entity
   parent: STClothingHeadHelmetCombatT3Base
   id: ClothingHeadAssaultHelmetFreedom
-  name: шлем «Зенит» Свободы
-  description: боевой шлем марки «Зенит» третьего класса защиты.
+  name: '"Zenit" helmet of Freedom'
+  description: A "Zenit" combat helmet of the third protection class.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/hats/freedom_zenit.rsi

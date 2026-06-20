@@ -42,26 +42,26 @@
     - name: shop-category-armor
       priority: 4
       items:
-        ClothingOuterArmorDolgPS5M: 20
-        ClothingOuterArmorPSZ9D: 300
-        ClothingHeadHelmetBerill5MDolg: 30
-        ClothingHeadAssaultHelmetDolg: 45
-        ClothingHeadHelmetUlach: 80
-        STPsyHelm2: 20
+        Z14ClothingOuterArmorDolgPS5M: 20
+        Z14ClothingOuterArmorPSZ9D: 300
+        Z14ClothingHeadHelmetBerill5MDolg: 30
+        Z14ClothingHeadAssaultHelmetDolg: 45
+        Z14ClothingHeadHelmetUlach: 80
+        Z14STPsyHelm2: 20
 
     - name: shop-category-storage-and-containers
       priority: 5
       items:
-        ClothingBackpackDuffelBlackTacticStalker: 40
-        ClothingBackpackDuffelBlackMilitaryTacticStalker: 40
+        Z14ClothingBackpackDuffelBlackTacticStalker: 40
+        Z14ClothingBackpackDuffelBlackMilitaryTacticStalker: 40
         ClothingBeltWebbingDoubleStalkerZaryaSmall: 10
 
     - name: shop-category-raincoats-and-gasmasks
       priority: 6
       items:
           # Gasmasks
-        ClothingMaskunix5000: 40
-        ClothingMaskRCBZ2: 30
+        Z14ClothingMaskunix5000: 40
+        Z14ClothingMaskRCBZ2: 30
 
     - name: shop-category-modules
       priority: 7

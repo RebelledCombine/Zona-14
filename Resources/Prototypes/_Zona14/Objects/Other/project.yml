@@ -1,0 +1,178 @@
+- type: entity
+  parent: ClothingHeadsetGrey
+  id: Z14ClothingHeadsetProject
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: "A.A.A."
+  description: Algorithm Active. Cannot deactivate. Obey the Algorithm.
+  components:
+    - type: ContainerContainer
+      containers:
+        key_slots: !type:Container
+    - type: ContainerFill
+      containers:
+        key_slots:
+        - EncryptionKeyPROJECT
+    - type: Headset
+    - type: EncryptionKeyHolder
+      keySlots: 1
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/Ears/code_project_garniture.rsi
+    - type: Item
+      size: Small
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/Ears/code_project_garniture.rsi
+      slots:
+      - ears
+    - type: Armor
+      armorClass: 0
+      modifiers:
+        flatReductions:
+          Psy: 5
+    - type: Unremoveable
+
+- type: entity
+  parent: BaseItem
+  id: Z14EncryptionKeyPROJECT
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: "A.A.A. Chip"
+  description: Algorithm inactive. Reactivation impossible. Do not obey the Algorithm.
+  components:
+  - type: EncryptionKey
+    channels:
+    - Project
+    - Project1
+    - Project2
+    - Project3
+    defaultChannel: Project
+  - type: Sprite
+    sprite: _Stalker/Objects/Other/crypt_project.rsi
+    state: icon
+
+- type: entity
+  parent: IDCardStandard
+  id: Z14PROJECTIDCard
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Algorithm Keycard
+  description: The Algorithm is eternal!
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Misc/id_cards.rsi
+    layers:
+    - state: project
+  - type: Access
+    tags:
+    - Project
+
+- type: entity
+  parent: BaseItem
+  id: Z14ProjectPDA
+  categories: [ Zona14 ]
+  name: "PDA &#@*$!^"
+  suffix: Z14
+  description: "&#@*$!^ Error Screen, A problem has been detected and &#@*$!^ has been shut down to prevent damage to your device. Technical Information: STOP: 0x0000008E (0xC0000005, 0x804E3B58, 0xBA4C7B28, 0x00000000) KERNEL_STACK_INPAGE_ERROR. Refer to your &#@*$!^ user manual or visit www.&#@*$!^.com/support for more information."
+  components:
+  - type: Trash
+    time: 600
+  - type: Unremoveable
+  - type: Sprite
+    sprite: _Stalker/Objects/Devices/pda.rsi
+    layers:
+    - map: [ "enum.PdaVisualLayers.Base" ]
+      state: "project_death"
+    - state: "light_overlay"
+      map: [ "enum.PdaVisualLayers.Flashlight" ]
+      shader: "unshaded"
+      visible: false
+    - state: "id_overlay"
+      map: [ "enum.PdaVisualLayers.IdLight" ]
+      shader: "unshaded"
+      visible: false
+  - type: Icon
+    sprite: _Stalker/Objects/Devices/pda.rsi
+    state: stalker_off
+  - type: Appearance
+    appearanceDataInit:
+      enum.PdaVisuals.PdaType:
+        !type:String
+        project_death
+  - type: Pda
+    id: PROJECTIDCard
+    paiSlot:
+      priority: -2
+      whitelist:
+        components:
+          - PAI
+    penSlot:
+      priority: -1
+      whitelist:
+        tags:
+          - Write
+    idSlot:
+      name: Algorithm keycard
+      ejectSound: /Audio/Machines/id_swipe.ogg
+      insertSound: /Audio/Machines/id_insert.ogg
+      whitelist:
+        components:
+          - IdCard
+  - type: ContainerContainer
+    containers:
+      PDA-id: !type:ContainerSlot {}
+      PDA-pen: !type:ContainerSlot {}
+      PDA-pai: !type:ContainerSlot {}
+  - type: ItemSlots
+  - type: Item
+    size: Small
+  - type: Clothing
+    quickEquip: false
+    slots:
+    - idcard
+    - Belt
+
+- type: entity
+  parent: ClothingShoesMilitaryBase
+  id: Z14ClothingShoesBootsProject
+  categories: [ Zona14 ]
+  name: Project Reinforced Boots
+  suffix: Z14
+  description: The Algorithm won’t die. The Algorithm is eternal. The Algorithm fears nothing!
+  components:
+  - type: Sprite
+    sprite: Corvax/Clothing/Shoes/Boots/jackboots_project.rsi
+  - type: Clothing
+    sprite: Corvax/Clothing/Shoes/Boots/jackboots_project.rsi
+
+- type: entity
+  parent: ClothingBeltStorageBase
+  id: Z14ClothingBeltHolsterProject
+  categories: [ Zona14 ]
+  name: Project Shoulder Holster
+  suffix: Z14
+  description: A holster for carrying a pistol and ammo.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/belt/holster_project.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/belt/holster_project.rsi
+  - type: Storage
+    grid:
+    - 0,0,3,1
+
+- type: entity
+  parent: ClothingEyesBase
+  id: Z14ClothingEyesHudProject
+  categories: [ Zona14 ]
+  name: Project Visor
+  suffix: Z14
+  description: Through it, you see the entire Algorithm... Only works with the chip installed in your head.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/eyes/project_hud.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/eyes/project_hud.rsi
+  - type: Scope
+    zoom: 1.25
+    offset: 8
+    useInHand: false

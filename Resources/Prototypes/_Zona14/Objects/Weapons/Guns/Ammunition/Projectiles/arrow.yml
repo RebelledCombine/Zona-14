@@ -1,0 +1,113 @@
+- type: entity
+  parent: BaseArrow
+  id: Z14Arrowboltrust
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Rusty Bolt
+  description: A makeshift bolt quickly assembled from a rusty nail and duct tape. Cheap but not very effective against small mutants.
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/arrows.rsi
+    layers:
+    - state: tail
+      color: white
+    - state: rod
+      color: darkgray
+    - state: tip
+      color: green
+    - state: solution1
+      map: ["enum.SolutionContainerLayers.Fill"]
+      visible: false
+  - type: Projectile
+    projectileClass: 1
+    damage:
+      types:
+        Piercing: 10
+        Mutant: 50
+  - type: Construction
+    graph: ImprovisedArrowUranium
+    node: ImprovisedArrowUranium
+
+- type: entity
+  parent: BaseArrow
+  id: Z14Arrowboltpiercing
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Armor-Piercing Bolt
+  description: A special Seraphim bolt made from radioactive artifact fragments and salvaged parts. Potentially armor-piercing.
+  components:
+  - type: Sprite
+    layers:
+    - state: tail
+      color: red
+    - state: rod
+      color: brown
+    - state: tip
+    - state: solution1
+      map: ["enum.SolutionContainerLayers.Fill"]
+      visible: false
+  - type: Projectile
+    projectileClass: 3
+    damage:
+      types:
+        Piercing: 35
+        Radiation: 15
+
+- type: entity
+  parent: BaseArrow
+  id: Z14ArrowAnomalybolt
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Anomalous Bolt
+  description: A unique bolt with a tip forged from a gravitational artifact fragment.
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/arrows.rsi
+    layers:
+    - state: tail
+      color: white
+    - state: rod
+      color: darkgray
+    - state: tip
+      color: lightblue
+    - state: solution1
+      map: ["enum.SolutionContainerLayers.Fill"]
+      visible: false
+  - type: Projectile
+    projectileClass: 1
+    damage:
+      types:
+        Piercing: 10
+        Mutant: 150
+  - type: Construction
+    graph: ImprovisedArrow
+    node: ImprovisedArrow
+
+- type: entity
+  parent: BaseArrow
+  id: Z14Arrowadmin
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: SUPER BOLT
+  description: Something special...
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/arrows.rsi
+    layers:
+    - state: tail
+      color: white
+    - state: rod
+      color: darkgray
+    - state: tip
+      color: purple
+    - state: solution1
+      map: ["enum.SolutionContainerLayers.Fill"]
+      visible: false
+  - type: Projectile
+    projectileClass: 5
+    damage:
+      types:
+        Piercing: 1000
+  - type: Construction
+    graph: ImprovisedArrowPlasma
+    node: ImprovisedArrowPlasma

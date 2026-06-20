@@ -14,7 +14,7 @@ public sealed class ApproachEmitterSystem : EntitySystem
     private TimeSpan _lastUpdateTime;
     public override void Update(float frameTime)
     {
-        if (_timing.CurTime < _lastUpdateTime.Add(TimeSpan.FromSeconds(2f))) // Decrease it to increase check frequency | Уменьши значение чтобы увеличить частоту проверки.
+        if (_timing.CurTime < _lastUpdateTime.Add(TimeSpan.FromSeconds(2f))) // Decrease it to increase check frequency // Zona14: translated comment
             return;
         _lastUpdateTime = _timing.CurTime;
         var query = EntityQueryEnumerator<ApproachEmitterComponent>();

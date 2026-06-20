@@ -1,3 +1,4 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: STBaseWeaponRifleAKS74
   id: STWeaponRifleRPK74
@@ -61,8 +62,8 @@
 - type: entity
   parent: STBaseWeaponRifleAKS74
   id: STWeaponRifleRPK74Vedma
-  name: РПК-74 "Ведьмина метла"
-  description: Лёгкий пулемёт на основе AK-74.
+  name: "RPK-74 \"Witch's Broom\""
+  description: A light machine gun based on the AK-74.
   components:
   - type: GunWieldBonus
     minAngle: -45

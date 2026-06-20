@@ -1,0 +1,19 @@
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14STClothingCapeCoatReinforcedBlueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Reinforced Coat Recipe
+  components:
+    - type: STBlueprint
+      blueprint: newrecipeReinforcedCoat
+
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14ClothingOuterCoatLoyalistBlueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: loyalist coat recipe
+  components:
+    - type: STBlueprint
+      blueprint: newrecipeClothingOuterCoatLoyalist

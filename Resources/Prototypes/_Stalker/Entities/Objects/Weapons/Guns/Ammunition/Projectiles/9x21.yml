@@ -1,3 +1,4 @@
+# Zona14: translated Russian names/descriptions to English
 #9x21
 
 - type: entity
@@ -18,7 +19,7 @@
 
 - type: entity
   id: Bullet921PEGJ
-  name: bullet (9х21 auto)
+  name: bullet (9x21 auto)
   parent: Bullet921PGJ
   categories: [ HideSpawnMenu ]
   components:
@@ -33,7 +34,7 @@
 
 - type: entity
   id: Bullet921BTGJ
-  name: bullet (9х21 auto)
+  name: bullet (9x21 auto)
   parent: Bullet921PGJ
   categories: [ HideSpawnMenu ]
   components:
@@ -45,7 +46,7 @@
 
 - type: entity
   id: Bullet9217N42
-  name: bullet (9х21 auto)
+  name: bullet (9x21 auto)
   parent: Bullet921PGJ
   categories: [ HideSpawnMenu ]
   components:

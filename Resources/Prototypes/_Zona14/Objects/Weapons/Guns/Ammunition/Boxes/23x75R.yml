@@ -1,0 +1,77 @@
+- type: entity
+  parent: BaseAmmoBoxStalker
+  id: Z142375ShrapnelBuckshotBox
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: box of "Shrapnel 25" buckshot 23x75mm R
+  description: For the KS-23, 10 rounds per box. Provides class 1 armor penetration.
+  components:
+  - type: MagazineVisuals
+    magState: 1270red
+  - type: BallisticAmmoProvider
+    capacity: 10
+    proto: CartridgeShrapnel25Buckshot
+    whitelist:
+      tags:
+        - ShellKS23
+  - type: Sprite
+    layers:
+    - state: 1270
+      map: ["enum.GunVisualLayers.Base"]
+    - state: 1270red-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  parent: 7mmBuckshotBox
+  id: Z142375BarricadaBulletBox
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: box of "Barricada" slugs 23x75mm R
+  description: For the KS-23, 10 rounds per box. Provides class 3 armor penetration.
+  components:
+  - type: MagazineVisuals
+    magState: 1270gray
+  - type: BallisticAmmoProvider
+    proto: CartridgeShotgunBarricadaBullet
+  - type: Sprite
+    layers:
+    - state: 1270solid
+      map: ["enum.GunVisualLayers.Base"]
+    - state: 1270gray-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  parent: 7mmBuckshotBox
+  id: Z142375VolnaRBulletBox
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: box of "VolnaR" slugs 23x75mm R
+  description: For the KS-23, 10 rounds per box. Useless against armor, but can fold an enemy in half without dealing much damage.
+  components:
+  - type: MagazineVisuals
+    magState: 1270gray
+  - type: BallisticAmmoProvider
+    proto: CartridgeShotgunVolnaRBullet
+  - type: Sprite
+    layers:
+    - state: 1270solid
+      map: ["enum.GunVisualLayers.Base"]
+    - state: 1270gray-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+#- type: entity
+#  parent: 7mmBuckshotBox
+#  id: 2375ZvezdaBulletBox
+#  name: "Zvezda" bullet box 23x75mm R
+#  description: For KS-23, 10 in a box. Just a flashbang round, nothing more. Does NOT deal damage.
+#  components:
+#  - type: MagazineVisuals
+#    magState: 1270yellow
+#  - type: BallisticAmmoProvider
+#    proto: CartridgeShotgunZvezdaBullet
+#  - type: Sprite
+#    layers:
+#    - state: 1270solid
+#      map: ["enum.GunVisualLayers.Base"]
+#    - state: 1270yellow-1
+#      map: ["enum.GunVisualLayers.Mag"]

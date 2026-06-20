@@ -1,11 +1,12 @@
+# Zona14: translated Russian names/descriptions to English
 - type: Tag
   id: Bullet545
 
 - type: entity
   parent: STCartridge545PC
   id: Bullet545
-  name: пуля 5.45x39
-  description: Местная валюта.
+  name: 5.45x39 bullet
+  description: Local currency.
   suffix: Stalker, Metro
   components:
   - type: PhysicalComposition

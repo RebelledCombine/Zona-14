@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: RussianOven
   parent: STBaseStructure
   suffix: ST, Mapping
-  name: Русская печка
-  description: Даже просто смотря на неё вы чувствуете запах пирожков, хоть их и не готовили в неё уже лет 30
+  name: Russian stove
+  description: "Even just looking at it, you can smell pies, even though they haven't been cooked in it for 30 years"
   placement:
     mode: PlaceFree
   components:

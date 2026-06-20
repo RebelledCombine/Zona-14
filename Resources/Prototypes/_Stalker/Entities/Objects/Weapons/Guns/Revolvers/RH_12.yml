@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 
 - type: entity
   parent: STBaseWeaponGameRevolver
   id: STWeaponRevolverRH12
-  name: Револьвер Штурмовой-12,7x55
-  description: Револьвер тульского КБП. Револьвер стал побочным продуктом программы «Выхлоп», согласно которой был произведен штурмовой автомат АШ-12.
+  name: Assault Revolver-12.7x55
+  description: Revolver of the Tula KBP. The revolver was a by-product of the Vykhlop program, according to which the ASh-12 assault rifle was produced.
   components:
     - type: Item
       size: Small
@@ -51,4 +52,4 @@
     - type: UseDelay
       delay: 1
     - type: RepositoryItem
-      categoryName: Оружие
+      categoryName: Weapons # Zona14: Оружие

@@ -1,0 +1,3 @@
+ent-Z14STClothingTorsoSerafimFullReady = Star Son Follower Form
+    .desc = Material unknown. Size unknown. The sewing method is unknown. This is something very unusual...
+    .suffix = Z14

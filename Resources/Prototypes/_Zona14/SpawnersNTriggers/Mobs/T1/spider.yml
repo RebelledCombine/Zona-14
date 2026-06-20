@@ -1,0 +1,91 @@
+- type: entity
+  name: spider trigger (1-4) (20%)
+  id: Z14STTriggerSpider142010
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger142010
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+        - Z14MobMutantSpiderLapach
+      restricted:
+        - Z14MobMutantSpiderLapach
+
+- type: entity
+  name: spider trigger (1-4) (50%)
+  id: Z14STTriggerSpider145010
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger145010
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+        - Z14MobMutantSpiderLapach
+      restricted:
+        - Z14MobMutantSpiderLapach
+
+- type: entity
+  name: spider trigger (1-2) (10%)
+  id: Z14STTriggerSpider121010
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger121010
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+        - Z14MobMutantSpiderLapach
+      restricted:
+        - Z14MobMutantSpiderLapach
+
+- type: entity
+  name: spider trigger (1-2) (50%)
+  id: Z14STTriggerSpider125010
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger125010
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+        - Z14MobMutantSpiderLapach
+      restricted:
+        - Z14MobMutantSpiderLapach
+
+
+- type: entity
+  name: spider trigger (1) (100%) 30m
+  id: Z14STTriggerSpider1110030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger1110030
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+      - Z14MobMutantSpiderLapach
+      restricted:
+      - Z14MobMutantSpiderLapach
+
+- type: entity
+  name: spider trigger (2) (100%) 30m
+  id: Z14STTriggerSpider2210030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger2210030
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+      - Z14MobMutantSpiderLapach
+      restricted:
+      - Z14MobMutantSpiderLapach
+
+- type: entity
+  name: spider trigger (3) (100%) 30m
+  id: Z14STTriggerSpider3310030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger3310030
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+      - Z14MobMutantSpiderLapach
+      restricted:
+      - Z14MobMutantSpiderLapach

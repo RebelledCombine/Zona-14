@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: BaseItem
   id: BookCookingStalkerHomemade
-  name: домашняя поварская книга
-  description: Переплетенная вручную кулинарная книга для хранения рецептов.
+  name: homemade cookbook
+  description: A hand-bound cookbook for storing recipes.
   suffix: Stalker, cooking
   components:
   - type: Sprite
@@ -33,11 +34,11 @@
 
 # update this whenever a lightcraft food is added
 - type: entity
-  name: поварская книга
+  name: cookbook
   parent: BookBase
   id: BookCookingStalkerGuide
   suffix: Stalker, cooking
-  description: Поваренная книга с подробным описанием основных техник приготовления и рецептов.
+  description: A cookbook detailing basic cooking techniques and recipes.
   components:
   - type: Sprite
     sprite: _Stalker_EN/Objects/Misc/books.rsi

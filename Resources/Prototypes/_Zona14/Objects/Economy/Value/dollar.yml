@@ -1,0 +1,107 @@
+- type: entity
+  parent: BaseItem
+  id: Z14Dollar
+  categories: [ Zona14 ]
+  name: Dollars
+  description: The monetary unit of the United States, one of the main reserve currencies of the world.
+  suffix: Z14
+  components:
+  - type: PhysicalComposition
+    materialComposition:
+      Credit: 1
+  - type: Stack
+    stackType: Dollar
+    count: 1
+    baseLayer: base
+    layerStates:
+    - cash
+    - cash_20
+    - cash_100
+    - cash_1000
+    - cash_5000
+  - type: Sprite
+    sprite: _Stalker/Objects/Economy/dollar.rsi
+    state: cash
+    layers:
+    - state: cash
+      map: ["base"]
+  - type: Physics
+    bodyType: Dynamic
+  - type: Fixtures
+    fixtures:
+      fix1:
+        density: 30
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.35,-0.2,0.25,0.1"
+        mask:
+        - ItemMask
+  - type: Appearance
+  - type: Tag
+    tags:
+    - Dollar
+  - type: RepositoryItem
+    categoryName: Currency
+
+
+- type: currency
+  id: Z14Dollar
+  displayName: store-currency-display-dollar
+  cash:
+    1: Dollar
+  canWithdraw: true
+
+- type: stack
+  id: Z14Dollar
+  name: stack-dollar
+  maxCount: 5000
+  icon: { sprite: /Textures/_Stalker/Objects/Economy/dollar.rsi, state: cash }
+  spawn: Dollar
+
+- type: entity
+  parent: Dollar
+  id: Z14Dollar20
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Icon
+    sprite: _Stalker/Objects/Economy/dollar.rsi
+    state: cash_20
+  - type: Stack
+    count: 20
+
+- type: entity
+  parent: Dollar
+  id: Z14Dollar100
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Icon
+    sprite: _Stalker/Objects/Economy/dollar.rsi
+    state: cash_100
+  - type: Stack
+    count: 100
+
+- type: entity
+  parent: Dollar
+  id: Z14Dollar1000
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Icon
+    sprite: _Stalker/Objects/Economy/dollar.rsi
+    state: cash_1000
+  - type: Stack
+    count: 1000
+
+- type: entity
+  parent: Dollar
+  id: Z14Dollar5000
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Icon
+    sprite: _Stalker/Objects/Economy/dollar.rsi
+    state: cash_5000
+  - type: Stack
+    count: 5000

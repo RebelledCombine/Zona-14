@@ -1,0 +1,91 @@
+- type: entity
+  name: goliath trigger (1-4) (20%)
+  id: Z14STTriggerGoliath142030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger142030
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+        - Z14STMutantGoliath
+      restricted:
+        - Z14STMutantGoliath
+
+- type: entity
+  name: goliath trigger (1-4) (50%)
+  id: Z14STTriggerGoliath145030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger145030
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+        - Z14STMutantGoliath
+      restricted:
+        - Z14STMutantGoliath
+
+- type: entity
+  name: goliath trigger (1-2) (10%)
+  id: Z14STTriggerGoliath121030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger121030
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+        - Z14STMutantGoliath
+      restricted:
+        - Z14STMutantGoliath
+
+- type: entity
+  name: goliath trigger (1-2) (50%)
+  id: Z14STTriggerGoliath125030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger125030
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+        - Z14STMutantGoliath
+      restricted:
+        - Z14STMutantGoliath
+
+
+- type: entity
+  name: goliath trigger (1) (100%) 30m
+  id: Z14STTriggerGoliath1110030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger1110030
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+      - Z14STMutantGoliath
+      restricted:
+      - Z14STMutantGoliath
+
+- type: entity
+  name: goliath trigger (2) (100%) 30m
+  id: Z14STTriggerGoliath2210030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger2210030
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+      - Z14STMutantGoliath
+      restricted:
+      - Z14STMutantGoliath
+
+- type: entity
+  name: goliath trigger (3) (100%) 30m
+  id: Z14STTriggerGoliath3310030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger3310030
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+      - Z14STMutantGoliath
+      restricted:
+      - Z14STMutantGoliath

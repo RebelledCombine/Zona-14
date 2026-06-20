@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 # monolith
 - type: entity
   parent: STBaseStructure
   id: STMonolithCrate
-  suffix: Stalker, монолит
-  name: чёрный ящик монолита
+  suffix: Stalker, monolith # Zona14: Stalker, монолит
+  name: Black Box of the Monolith
   components:
     - type: Storage
       maxItemSize: Ginormous

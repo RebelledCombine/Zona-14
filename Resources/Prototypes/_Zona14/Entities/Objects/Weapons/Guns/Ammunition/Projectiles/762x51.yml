@@ -3,7 +3,7 @@
 - type: entity
   id: Z14Bullet751M80
   suffix: Z14
-  name: bullet (7.62x51 FMJ)
+  name: bullet (7.62x51 rifle)
   parent: STBaseHRBullet
   categories: [ HideSpawnMenu, Zona14 ]
   components:
@@ -20,7 +20,7 @@
 - type: entity
   id: Z14Bullet751Noiser
   suffix: Z14
-  name: bullet (7.62x51 HP)
+  name: bullet (7.62x51 rifle)
   parent: Z14Bullet751M80
   categories: [ HideSpawnMenu, Zona14 ]
   components:
@@ -38,7 +38,7 @@
 - type: entity
   id: Z14Bullet751M61
   suffix: Z14
-  name: bullet (7.62x51 AP)
+  name: bullet (7.62x51 rifle)
   parent: Z14Bullet751M80
   categories: [ HideSpawnMenu, Zona14 ]
   components:
@@ -53,7 +53,7 @@
 - type: entity
   id: Z14Bullet751M993
   suffix: Z14
-  name: bullet (7.62x51 AP)
+  name: bullet (7.62x51 rifle)
   parent: Z14Bullet751M80
   categories: [ HideSpawnMenu, Zona14 ]
   components:
@@ -69,7 +69,7 @@
 - type: entity
   id: Z14Bullet754R
   suffix: Z14
-  name: bullet (7.62x54R FMJ)
+  name: bullet (7.62x54R rifle)
   parent: Z14Bullet751M80
   categories: [ HideSpawnMenu, Zona14 ]
   components:

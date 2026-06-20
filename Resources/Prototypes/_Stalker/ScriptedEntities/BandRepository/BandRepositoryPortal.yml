@@ -1,3 +1,4 @@
+# Zona14: translated Russian names/descriptions to English
 # Base Band Teleport Please dot`t touch it - Start
 - type: entity
   id: BandRepositoryBase
@@ -40,7 +41,7 @@
 - type: entity
   parent: BandRepositoryBase
   id: PortalBandFreedomRepository
-  suffix: 1000 # Zona14 change
+  suffix: "1000 # Zona14 change"
   name: Band-Freedom-Repository
   description: Band-Freedom-Repository-desc
   components:
@@ -56,9 +57,9 @@
 - type: entity
   parent: BandRepositoryBase
   id: PortalBandSerafimRepository
-  suffix: 1000 # Zona14 change
+  suffix: "1000 # Zona14 change"
   name: Band-Serafim-Repository
-  description: Подвал охотников... Пфф, ничего интересного...
+  description: "Hunters' Basement... Pfft, nothing interesting..."
   components:
     - type: AccessReader
       access: [["Seraphims"]]
@@ -73,7 +74,7 @@
 - type: entity
   parent: BandRepositoryBase
   id: PortalBandDebtRepository
-  suffix: 1000 # Zona14 change
+  suffix: "1000 # Zona14 change"
   name: Band-Debt-Repository
   description: Band-Debt-Repository-desc
   components:
@@ -90,7 +91,7 @@
 - type: entity
   parent: BandRepositoryBase
   id: PortalBandRenegadesRepository
-  suffix: 1000 # Zona14 change
+  suffix: "1000 # Zona14 change"
   name: Band-Renegades-Repository
   description: Band-Renegades-Repository-desc
   components:
@@ -108,7 +109,7 @@
 - type: entity
   parent: BandRepositoryBase
   id: PortalBandMilitaryRepository
-  suffix: 1000 # Zona14 change
+  suffix: "1000 # Zona14 change"
   name: Band-Military-Repository
   description: Band-Military-Repository-desc
   components:
@@ -125,9 +126,9 @@
 - type: entity
   parent: BandRepositoryBase
   id: PortalBandJabaRepository
-  suffix: 1000 # Zona14 change
+  suffix: "1000 # Zona14 change"
   name: Band-Jaba-Repository
-  description: Подвал гениев крафтов... Не может быть! Там-...
+  description: Basement of Crafting Geniuses... No way! Over there-...
   components:
     - type: AccessReader
       access: [["Jaba"]]
@@ -143,7 +144,7 @@
 - type: entity
   parent: BandRepositoryBase
   id: PortalBandsRepository
-  suffix: 1000 # Zona14 change
+  suffix: "1000 # Zona14 change"
   name: Band-s-Repository
   description: Band-s-Repository-desc
   components:
@@ -158,7 +159,7 @@
 - type: entity
   parent: BandRepositoryBase
   id: PortalBandResearchInstitutesRepository-Kordon
-  suffix: Кордон
+  suffix: Cordon # Zona14: Кордон
   name: Band-ResearchInstitutes-Repository
   description: Band-ResearchInstitutes-Repository-desc
   components:
@@ -171,7 +172,7 @@
 - type: entity
   parent: BandRepositoryBase
   id: PortalBandResearchInstitutesRepository
-  suffix: 1000 # Zona14 change
+  suffix: "1000 # Zona14 change"
   name: Band-ResearchInstitutes-Repository
   description: Band-ResearchInstitutes-Repository-desc
   components:
@@ -188,7 +189,7 @@
 - type: entity
   parent: BandRepositoryBase
   id: PortalBandCovenantRepository
-  suffix: 1000 # Zona14 change
+  suffix: "1000 # Zona14 change"
   name: Band-Covenant-Repository
   description: Band-Covenant-Repository-desc
   components:
@@ -205,7 +206,7 @@
 - type: entity
   parent: BandRepositoryBase
   id: PortalBandBanditsRepository
-  suffix: 1000 # Zona14 change
+  suffix: "1000 # Zona14 change"
   name: Band-Bandits-Repository
   description: Band-Bandits-Repository-desc
   components:
@@ -222,7 +223,7 @@
 - type: entity
   parent: BandRepositoryBase
   id: PortalBandSinRepository
-  suffix: 1000 # Zona14 change
+  suffix: "1000 # Zona14 change"
   name: Band-Sin-Repository
   description: Band-Sin-Repository-desc
   components:
@@ -239,7 +240,7 @@
 - type: entity
   parent: BandRepositoryBase
   id: PortalBandClearskyRepository
-  suffix: 1000 # Zona14 change
+  suffix: "1000 # Zona14 change"
   name: Band-Clearsky-Repository
   description: Band-Clearsky-Repository-desc
   components:
@@ -252,7 +253,7 @@
 - type: entity
   parent: BandRepositoryBase
   id: PortalBandClearskyRepositoryDolina
-  suffix: 1000 # Zona14 change
+  suffix: "1000 # Zona14 change"
   name: Band-Clearsky-Repository-Dolina
   description: Band-Clearsky-Repository-desc
   components:
@@ -269,7 +270,7 @@
 - type: entity
   parent: BandRepositoryBase
   id: PortalBandMercenariesRepository
-  suffix: 1000 # Zona14 change
+  suffix: "1000 # Zona14 change"
   name: Band-Mercenaries-Repository
   description: Band-Mercenaries-Repository-desc
   components:
@@ -286,7 +287,7 @@
 - type: entity
   parent: BandRepositoryBase
   id: PortalBandUNRepository
-  suffix: 1000 # Zona14 change
+  suffix: "1000 # Zona14 change"
   name: Band-UN-Repository
   description: Band-UN-Repository-desc
   components:
@@ -303,7 +304,7 @@
 - type: entity
   parent: BandRepositoryBase
   id: PortalBandAnomalistRepository
-  suffix: 1000 # Zona14 change
+  suffix: "1000 # Zona14 change"
   name: Band-Anomalist-Repository
   description: Band-Anomalist-Repository-desc
   components:
@@ -320,7 +321,7 @@
 - type: entity
   parent: BandRepositoryBase
   id: PortalBandMilitaryStalkerRepository
-  suffix: 1000 # Zona14 change
+  suffix: "1000 # Zona14 change"
   name: Band-MilitaryStalker-Repository
   description: Band-MilitaryStalker-Repository-desc
   components:
@@ -336,7 +337,7 @@
 - type: entity
   parent: BandRepositoryBase
   id: PortalBandNeutralsRepository
-  suffix: 1000 # Zona14 change
+  suffix: "1000 # Zona14 change"
   name: Band-Neutrals-Repository
   description: Band-MilitaryStalker-Repository-desc
   components:
@@ -351,7 +352,7 @@
 - type: entity
   parent: BandRepositoryBase
   id: PortalBandPoiskRepository
-  suffix: 1000 # Zona14 change
+  suffix: "1000 # Zona14 change"
   name: Band-Poisk-Repository
   description: Band-MilitaryStalker-Repository-desc
   components:
@@ -366,7 +367,7 @@
 - type: entity
   parent: BandRepositoryBase
   id: PortalBandMonolithRepository
-  suffix: 1000 # Zona14 change
+  suffix: "1000 # Zona14 change"
   name: Band-Monolith-Repository
   description: Band-MilitaryStalker-Repository-desc
   components:
@@ -381,7 +382,7 @@
 - type: entity
   parent: BandRepositoryBase
   id: PortalBandProjectRepository
-  suffix: 1000 # Zona14 change
+  suffix: "1000 # Zona14 change"
   name: Band-Project-Repository
   description: Band-MilitaryStalker-Repository-desc
   components:

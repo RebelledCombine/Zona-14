@@ -1,3 +1,4 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   description: "If you want to get cancer, might as well do it in style."
   id: STBaseSmokable
@@ -42,8 +43,8 @@
   id: CigPackMarlboro
   parent: CigPackBase
   name: Marlboro
-  description: Мастера купажа компании готовят курительные смеси на основе десятков сортов табака. Листья тщательно отбирают профессиональные дегустаторы. Сырье подвергают длительной ферментации. Короче премиум сигареты.
-  suffix: Stalker, мальборо
+  description: "The company's blenders prepare smoking mixtures based on dozens of tobacco varieties. The leaves are carefully selected by professional tasters. Raw materials are subjected to long-term fermentation. In short, premium cigarettes."
+  suffix: Stalker, Marlboro # Zona14: Stalker, мальборо
   components:
   - type: STWeight
     self: 0.1
@@ -56,8 +57,8 @@
   id: CigPackSuka
   parent: CigPackBase
   name: Suka
-  description: Сигареты сука - только для самых влиятельных бандитов!
-  suffix: Stalker, сука
+  description: Bitch cigarettes - only for the most powerful bandits!
+  suffix: Stalker, damn # Zona14: Stalker, сука
   components:
   - type: STWeight
     self: 0.1
@@ -69,9 +70,9 @@
 - type: entity
   id: CigPackKosmos
   parent: CigPackBase
-  name: Космос
-  description: Самые распространённые сигареты времён СССР! Их выпускали едва ли не все табачные фабрики Союза и, что примечательно, не смотря на одинаковый дизайн, сигареты отличались и вкусом, и качеством.
-  suffix: Stalker, космос
+  name: Kosmos
+  description: The most common cigarettes of the USSR! They were produced by almost all tobacco factories in the Union and, remarkably, despite the same design, the cigarettes differed in both taste and quality.
+  suffix: Stalker, space # Zona14: Stalker, космос
   components:
   - type: STWeight
     self: 0.1

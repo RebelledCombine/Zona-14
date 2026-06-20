@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: psyUnit
   parent: BaseStructure
-  name: компактная пси-установка
+  name: compact psi unit
   suffix: ST, Mapping
-  description: Предмет неизвестного происхождения и предназначения. Известен лишь тот факт, что некоторые образцы во включённом состоянии способны нанести вред нервной системе человека.
+  description: Item of unknown origin and purpose. It is only known that some samples in the switched on state can harm the human nervous system.
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Machines/compactpsyunit.rsi
@@ -21,7 +22,7 @@
         - MachineMask
         layer:
         - WallLayer
-  - type: RadiationSource   # 5 В центре, 50 тайлов
+  - type: RadiationSource   # Zona14: 5 В центре, 50 тайлов
     intensity: 5
     slope: 0.02
     damageType: Psy
@@ -43,7 +44,7 @@
 - type: entity
   id: psyUnitBreakable
   parent: psyUnit
-  name: Компактная пси-установка
+  name: Compact psi-setup
   suffix: ST, Mapping, Breakable
   components:
   - type: Damageable

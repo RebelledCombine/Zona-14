@@ -1,7 +1,8 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: WarBarrierWireEnd
-  name: колючая проволка
-  description: Вам, кажется, не стоит в неё наступать.
+  name: Barbed Wire
+  description: You probably shouldn’t step on it.
   suffix: ST, Mapping, End
   components:
   - type: SpriteFade
@@ -60,8 +61,8 @@
 - type: entity
   parent: WarBarrierWireEnd
   id: WarBarrierWire
-  name: колючая проволка
-  description: Вам, кажется, не стоит в неё наступать.
+  name: "{ ent-WarBarrierWireEnd }"
+  description: "{ ent-WarBarrierWireEnd.desc }"
   suffix: ST, Mapping
   components:
   - type: Sprite

@@ -1,0 +1,52 @@
+- type: entity
+  name: cuckold spawner (1) (100%)
+  id: Z14STTriggerRogonosets1100
+  categories: [ Zona14 ]
+  parent: Z14STBaseTriggerBoss
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+        - Z14MobMutantRogonosets
+      restricted:
+        - Z14MobMutantRogonosets
+
+
+- type: entity
+  name: cuckold trigger (1) (100%) 30m
+  id: Z14STTriggerRogonosets1110030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger1110030
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+      - Z14MobMutantRogonosets
+      restricted:
+      - Z14MobMutantRogonosets
+
+- type: entity
+  name: cuckold trigger (2) (100%) 30m
+  id: Z14STTriggerRogonosets2210030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger2210030
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+      - Z14MobMutantRogonosets
+      restricted:
+      - Z14MobMutantRogonosets
+
+- type: entity
+  name: cuckold trigger (3) (100%) 30m
+  id: Z14STTriggerRogonosets3310030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger3310030
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+      - Z14MobMutantRogonosets
+      restricted:
+      - Z14MobMutantRogonosets

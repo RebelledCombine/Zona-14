@@ -1,4 +1,5 @@
-# ПРОЧЕЕ
+# Zona14: translated Russian names/descriptions to English
+# Zona14: ПРОЧЕЕ
 
 - type: entity
   name: entities sign name
@@ -68,13 +69,13 @@
         layer:
           - LowImpassable
 
-# ПРЕДУПРЕЖДАЮЩИЕ ЗНАКИ
+# Zona14: ПРЕДУПРЕЖДАЮЩИЕ ЗНАКИ
 
 - type: entity
   parent: STBaseStructure
   id: StalkerCheSign1
-  name: Знак "Химическая опасность"
-  description: На знаке изображён символ химической опасности, который информирует о химической опасности за знаком. Может, не стоит туда идти?
+  name: Chemical Hazard Sign
+  description: "The sign depicts a chemical hazard symbol that informs about the chemical hazard behind the sign. Maybe you shouldn't go there?"
   suffix: ST, Mapping
   components:
   - type: Sprite
@@ -115,8 +116,8 @@
 - type: entity
   parent: STBaseStructure
   id: StalkerCheSign2
-  name: Знак "Химическая опасность"
-  description: На знаке изображён символ химической опасности, который информирует о химической опасности за знаком. Может, не стоит туда идти?
+  name: "{ ent-StalkerCheSign1 }"
+  description: "{ ent-StalkerCheSign1.desc }"
   suffix: ST, Mapping
   components:
   - type: Sprite
@@ -157,8 +158,8 @@
 - type: entity
   parent: STBaseStructure
   id: StalkerCheSign3
-  name: Знак "Химическая опасность"
-  description: На знаке изображён символ химической опасности, который информирует о химической опасности за знаком. Может, не стоит туда идти?
+  name: "{ ent-StalkerCheSign1 }"
+  description: "{ ent-StalkerCheSign1.desc }"
   suffix: ST, Mapping
   components:
   - type: Sprite
@@ -199,8 +200,8 @@
 - type: entity
   parent: STBaseStructure
   id: StalkerRadSign1
-  name: Знак "Радиация"
-  description: На знаке изображён символ радиоактивной опасности, который информирует о радиоактивной опасности за знаком. Может, не стоит туда идти?
+  name: Radiation Sign
+  description: "The sign depicts a radioactive hazard symbol that informs about the radioactive hazard behind the sign. Maybe you shouldn't go there?"
   suffix: ST, Mapping
   components:
   - type: Sprite
@@ -241,8 +242,8 @@
 - type: entity
   parent: STBaseStructure
   id: StalkerRadSign2
-  name: Знак "Радиация"
-  description: На знаке изображён символ радиоактивной опасности, который информирует о радиоактивной опасности за знаком. Может, не стоит туда идти?
+  name: "{ ent-StalkerRadSign1 }"
+  description: "{ ent-StalkerRadSign1.desc }"
   suffix: ST, Mapping
   components:
   - type: Sprite
@@ -283,8 +284,8 @@
 - type: entity
   parent: STBaseStructure
   id: StalkerRadSign3
-  name: Знак "Радиация"
-  description: На знаке изображён символ радиоактивной опасности, который информирует о радиоактивной опасности за знаком. Может, не стоит туда идти?
+  name: "{ ent-StalkerRadSign1 }"
+  description: "{ ent-StalkerRadSign1.desc }"
   suffix: ST, Mapping
   components:
   - type: Sprite

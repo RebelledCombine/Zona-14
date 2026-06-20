@@ -3,7 +3,7 @@
 - type: entity
   id: Z14Bullet556FMJ
   suffix: Z14
-  name: bullet (5.56x45 FMJ)
+  name: bullet (5,56x45 rifle)
   parent: STBaseLRBullet
   categories: [ HideSpawnMenu, Zona14 ]
   components:
@@ -20,7 +20,7 @@
 - type: entity
   id: Z14Bullet556M855
   suffix: Z14
-  name: bullet (5.56x45 FMJ)
+  name: bullet (5,56x45 rifle)
   parent: Z14Bullet556FMJ
   categories: [ HideSpawnMenu, Zona14 ]
   components:
@@ -35,7 +35,7 @@
 - type: entity
   id: Z14Bullet556M856
   suffix: Z14
-  name: bullet (5.56x45 FMJ)
+  name: bullet (5,56x45 rifle)
   parent: Z14Bullet556FMJ
   categories: [ HideSpawnMenu, Zona14 ]
   components:
@@ -50,7 +50,7 @@
 - type: entity
   id: Z14Bullet556Warmag
   suffix: Z14
-  name: bullet (5.56x45 HP)
+  name: bullet (5,56x45 rifle)
   parent: Z14Bullet556FMJ
   categories: [ HideSpawnMenu, Zona14 ]
   components:
@@ -68,7 +68,7 @@
 - type: entity
   id: Z14Bullet556M995
   suffix: Z14
-  name: bullet (5.56x45 AP)
+  name: bullet (5,56x45 rifle)
   parent: Z14Bullet556FMJ
   categories: [ HideSpawnMenu, Zona14 ]
   components:
@@ -83,7 +83,7 @@
 - type: entity
   id: Z14Bullet556SSAAP
   suffix: Z14
-  name: bullet (5.56x45 AP)
+  name: bullet (5,56x45 rifle)
   parent: Z14Bullet556FMJ
   categories: [ HideSpawnMenu, Zona14 ]
   components:

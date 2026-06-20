@@ -1,0 +1,47 @@
+- type: entity
+  name: Marked One T4 Spawner
+  id: Z14STSpawnMobStalkerT4
+  categories: [ Zona14 ]
+  parent: MarkerBase
+  suffix: Z14
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - sprite: Mobs/Species/Human/parts.rsi
+      state: full
+  - type: ConditionalSpawner
+    prototypes:
+    - STMobStalkerT4
+
+- type: entity
+  name: Marked One T4 Spawner
+  id: Z14STSpawnMobStalker
+  categories: [ Zona14 ]
+  parent: MarkerBase
+  suffix: Z14
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - sprite: Mobs/Species/Human/parts.rsi
+      state: full
+  - type: ConditionalSpawner
+    prototypes:
+    - STMobStalker
+
+
+- type: entity
+  id: Z14STSpawnPointStalker
+  categories: [ Zona14 ]
+  suffix: Z14
+  parent: SpawnPointJobBase
+  name: stalker
+  components:
+  - type: SpawnPoint
+    job_id: Stalker
+    spawn_type: LateJoin
+  - type: Sprite
+    layers:
+      - state: green
+      - state: miner

@@ -1,0 +1,1411 @@
+# if adding new craftable recipes, refer to _cooking.txt
+
+# breads
+# this sucks and theres probably a better way to do it
+- type: lightCraftingRecipe
+  id: Z14STJellyToastCraft1
+  results:
+  - FoodBreadJellySlice
+  - Z14STFoodJarJamBerry2
+  steps:
+    firstIngredient: Z14STFoodBreadPlainSlice
+    secondIngredient: Z14STFoodJarJamBerry
+    time: 2
+
+- type: lightCraftingRecipe
+  id: Z14STJellyToastCraft2
+  results:
+  - FoodBreadJellySlice
+  - Z14STFoodJarJamBerry3
+  steps:
+    firstIngredient: Z14STFoodBreadPlainSlice
+    secondIngredient: Z14STFoodJarJamBerry2
+    time: 2
+
+- type: lightCraftingRecipe
+  id: Z14STJellyToastCraft3
+  results:
+  - FoodBreadJellySlice
+  - Z14STFoodJarJamBerry4
+  steps:
+    firstIngredient: Z14STFoodBreadPlainSlice
+    secondIngredient: Z14STFoodJarJamBerry3
+    time: 2
+
+- type: lightCraftingRecipe
+  id: Z14STJellyToastCraft4
+  results:
+  - FoodBreadJellySlice
+  - Z14STDrinkJar
+  steps:
+    firstIngredient: Z14STFoodBreadPlainSlice
+    secondIngredient: Z14STFoodJarJamBerry4
+    time: 2
+
+# soups
+- type: entity
+  name: borscht
+  parent: FoodBowlBase
+  id: Z14FoodSTBorscht
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: A beet and meat soup. Comforting.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - cabbage
+      - meaty
+      - sweet
+      - sour
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Consumable/Food/meals.rsi
+    state: borscht
+  - type: Edible
+    trash:
+    - FoodBowlBig
+    utensil: Spoon
+  - type: STWeight
+    self: 1
+  - type: Item
+    size: Small
+    shape:
+      - 0,0,1,0
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 25
+  - type: Craftable
+
+- type: entity
+  name: snork-leg soup
+  parent: FoodBowlBase
+  id: Z14FoodSTSnorkSoup
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: Discomfort food for the unwell.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - salty
+      - meaty
+      - spicy
+      - bitter
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Consumable/Food/meals.rsi
+    state: snorksoup
+  - type: Edible
+    trash:
+      - FoodBowlBig
+    utensil:
+      - Spoon
+      - Fork
+  - type: STWeight
+    self: 1
+  - type: Item
+    size: Small
+    shape:
+      - 0,0,1,0
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 15
+        - ReagentId: Z14MToxin
+          Quantity: 10
+  - type: Craftable
+
+- type: entity
+  name: cabbage soup
+  parent: FoodBowlBase
+  id: Z14FoodSTCabbageSoup
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: The bulk of this soup is cabbage with some shreds of whatever meat was around. Filling when you need it.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - cabbage
+      - meaty
+  - type: Sprite # TO DO
+    sprite: Objects/Consumable/Food/bowl.rsi
+    layers:
+    - state: bowl
+    - state: coleslaw
+  - type: Edible
+    trash:
+      - FoodBowlBig
+    utensil: Spoon
+  - type: STWeight
+    self: 1
+  - type: Item
+    size: Small
+    shape:
+      - 0,0,1,0
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 20
+  - type: Craftable
+
+- type: entity
+  name: meat stew
+  parent: FoodBowlBase
+  id: Z14FoodSTMeatStew
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: A hearty stew of freshly hunted meat and costly spices, a rare comfort in the zone.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - meaty
+      - spicy
+  - type: Sprite # TO DO
+    sprite: Objects/Consumable/Food/bowl.rsi
+    layers:
+    - state: bowl
+    - state: monkeydelight
+  - type: Edible
+    trash:
+    - FoodBowlBig
+    utensil: Spoon
+  - type: STWeight
+    self: 1
+  - type: Item
+    size: Small
+    shape:
+      - 0,0,1,0
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 30
+  - type: Craftable
+
+- type: entity
+  name: rice
+  parent: FoodBowlBase
+  id: Z14FoodSTRiceCooked
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: A simple bowl of rice.
+  components:
+  - type: Sprite # TO DO
+    sprite: Objects/Consumable/Food/bowl.rsi
+    layers:
+    - state: bowl
+    - state: rice
+  - type: Edible
+    trash:
+      - FoodBowlBig
+    utensil: Spoon
+  - type: STWeight
+    self: 1
+  - type: Item
+    size: Small
+    shape:
+      - 0,0,1,0
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 15
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 10
+  - type: Craftable
+
+# fried foods
+- type: entity
+  name: deruny
+  parent: FoodBase
+  id: Z14FoodSTDeruny
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: What's better than fried potatoes?
+  components:
+  - type: FlavorProfile
+    flavors:
+      - potatoes
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Consumable/Food/meals.rsi
+    state: deruny
+  - type: STWeight
+    self: 1
+  - type: Item
+    size: Small
+    shape:
+      - 0,0,1,0
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 15
+  - type: SliceableFood
+    slice: Z14FoodSTDerunySingle
+    count: 3
+  - type: Craftable
+
+- type: entity
+  name: deruny
+  parent: Z14FoodSTDeruny
+  id: Z14FoodSTDerunySingle
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: What's better than fried potatoes?
+  components:
+  - type: FlavorProfile
+    flavors:
+      - potatoes
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Consumable/Food/meals.rsi
+    state: deruny2
+  - type: STWeight
+    self: 0.25
+  - type: Item
+    size: Tiny
+    shape:
+    - 0,0,0,0
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+  - type: SliceableFood
+    slice: Z14FoodSTDerunySingle
+    count: 1
+  - type: Craftable # i think craftable isnt necessary on slices
+
+- type: entity
+  name: hrechanyky
+  parent: FoodBase
+  id: Z14FoodSTHrechanyky
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: What's better than fried buckwheat and meat?
+  components:
+  - type: FlavorProfile
+    flavors:
+      - meaty
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Consumable/Food/meals.rsi
+    state: hrechanyky
+  - type: STWeight
+    self: 1
+  - type: Item
+    size: Small
+    shape:
+    - 0,0,1,0
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 15
+  - type: SliceableFood
+    slice: Z14FoodSTHrechanykySingle
+    count: 3
+  - type: Craftable
+
+- type: entity
+  name: hrechanyky
+  parent: Z14FoodSTHrechanyky
+  id: Z14FoodSTHrechanykySingle
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: What's better than fried buckwheat and meat?
+  components:
+  - type: FlavorProfile
+    flavors:
+      - meaty
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Consumable/Food/meals.rsi
+    state: hrechanyky2
+  - type: STWeight
+    self: 0.25
+  - type: Item
+    size: Tiny
+    shape:
+    - 0,0,0,0
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: Protein
+          Quantity: 5
+  - type: SliceableFood
+    slice: Z14FoodSTHrechanykySingle
+    count: 1
+  - type: Craftable # i think craftable isnt necessary on slices
+
+- type: entity
+  name: syrnyky
+  parent: FoodBase
+  id: Z14FoodSTSyrnyky
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: What's better than fried cheese?
+  components:
+  - type: FlavorProfile
+    flavors:
+      - cheesy
+      - sweet
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Consumable/Food/meals.rsi
+    state: syrnyk
+  - type: STWeight
+    self: 1
+  - type: Item
+    size: Small
+    shape:
+    - 0,0,1,0
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 15
+  - type: SliceableFood
+    slice: Z14FoodSTSyrnykySingle
+    count: 3
+  - type: Craftable
+
+- type: entity
+  name: syrnyky
+  parent: Z14FoodSTSyrnyky
+  id: Z14FoodSTSyrnykySingle
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: What's better than fried cheese?
+  components:
+  - type: FlavorProfile
+    flavors:
+      - cheesy
+      - sweet
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Consumable/Food/meals.rsi
+    state: syrnyk2
+  - type: STWeight
+    self: 0.25
+  - type: Item
+    size: Tiny
+    shape:
+    - 0,0,0,0
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+  - type: SliceableFood
+    slice: Z14FoodSTSyrnykySingle
+    count: 1
+  - type: Craftable # i think craftable isnt necessary on slices
+
+- type: entity
+  name: pancakes
+  parent: FoodBase
+  id: Z14FoodSTPancakes
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: What's better than pancakes?
+  components:
+  - type: FlavorProfile
+    flavors:
+      - sweet
+  - type: Sprite # TO DO
+    sprite: Objects/Consumable/Food/Baked/misc.rsi
+    state: pancakes1
+  - type: STWeight
+    self: 1
+  - type: Item
+    size: Small
+    shape:
+    - 0,0,1,0
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 10
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+  - type: Craftable
+
+- type: entity
+  name: onion rings
+  parent: FoodBase
+  id: Z14FoodSTOnionRings
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: What's better than fried onions?
+  components:
+  - type: FlavorProfile
+    flavors:
+      - onion
+  - type: Sprite # TO DO
+    sprite: Objects/Consumable/Food/Baked/misc.rsi
+    state: onionrings
+  - type: STWeight
+    self: 0.5
+  - type: Item
+    size: Small
+    shape:
+    - 0,0,1,0
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 10
+  - type: Craftable
+
+- type: entity
+  name: eggs
+  parent: FoodBase
+  id: Z14FoodSTFriedEggs
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: A simple meal.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - egg
+  - type: Sprite # TO DO
+    sprite: Objects/Consumable/Food/meals.rsi
+    state: friedegg
+  - type: STWeight
+    self: 0.5
+  - type: Item
+    size: Small
+    shape:
+    - 0,0,1,0
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 15
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 10
+  - type: Craftable
+
+- type: entity
+  name: fried fish
+  parent: FoodBase
+  id: Z14FoodSTFriedFish
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: Battered and fried fish. A little more flavorful than just gutting and cooking your catch, if nothing else.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - fishy
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Consumable/Food/meals.rsi
+    state: fishfry
+  - type: STWeight
+    self: 1
+  - type: Item
+    size: Small
+    shape:
+    - 0,0,1,0
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 15
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 15
+  - type: Craftable
+
+- type: entity
+  name: frog legs
+  parent: FoodBase
+  id: Z14FoodSTFrogLegs
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: Frog legs tossed in spices and fried at a low temperature. They're surprisingly tender.
+  components:
+  - type: FlavorProfile
+    flavors:
+    - meaty
+    - spicy
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Consumable/Food/meals.rsi
+    state: froglegs
+  - type: STWeight
+    self: 1
+  - type: Item
+    size: Small
+    shape:
+    - 0,0,0,1
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 15
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: Protein
+          Quantity: 5
+  - type: Craftable
+
+# deserts
+- type: entity
+  name: plain cake
+  parent: FoodBase
+  id: Z14FoodSTCakePlain
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: It's simple but sometimes that's all you need.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - sweet
+  - type: Sprite # TO DO
+    sprite: Objects/Consumable/Food/Baked/cake.rsi
+    state: plain
+  - type: STWeight
+    self: 3
+  - type: Item
+    size: Normal
+    shape:
+    - 0,0,1,1
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 30
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 20
+  - type: SliceableFood
+    slice: Z14FoodSTCakePlainSlice
+    count: 4
+  - type: Craftable
+
+- type: entity
+  name: slice of plain cake
+  parent: Z14FoodSTCakePlain
+  id: Z14FoodSTCakePlainSlice
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: A slice of plain white cake.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - sweet
+  - type: Sprite # TO DO
+    sprite: Objects/Consumable/Food/Baked/cake.rsi
+    state: plain-slice
+  - type: STWeight
+    self: 0.5
+  - type: Item
+    size: Small
+    shape:
+    - 0,0,0,1
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 10
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+  - type: Craftable # i think craftable isnt necessary on slices
+
+- type: entity
+  name: berry-glazed cake
+  parent: FoodBase
+  id: Z14FoodSTCakeBerry
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: Made of simple ingredients and berries from the zone, you won't find a sweeter treat.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - sweet
+      - fruity
+  - type: Sprite # TO DO
+    sprite: Objects/Consumable/Food/Baked/cake.rsi
+    state: berry_delight
+  - type: STWeight
+    self: 3
+  - type: Item
+    size: Normal
+    shape:
+    - 0,0,1,1
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 40
+  - type: SliceableFood
+    slice: Z14FoodSTCakeBerrySlice
+    count: 4
+  - type: Craftable
+
+- type: entity
+  name: slice of berry-glazed cake
+  parent: Z14FoodSTCakeBerry
+  id: Z14FoodSTCakeBerrySlice
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: A slice of cake with a berry filling.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - sweet
+      - fruity
+  - type: Sprite # TO DO
+    sprite: Objects/Consumable/Food/Baked/cake.rsi
+    state: berry_delight_slice
+  - type: STWeight
+    self: 0.5
+  - type: Item
+    size: Small
+    shape:
+    - 0,0,0,1
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 10
+  - type: Craftable # i think craftable isnt necessary on slices
+
+- type: entity
+  name: ice cream
+  parent: FoodBase
+  id: Z14FoodSTIceCream
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: At first this seems like normal ice cream but no matter how long it sits out it never seems to melt. How odd.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - sweet
+      - cold
+  - type: Sprite # TO DO
+    sprite: Objects/Consumable/Food/frozen.rsi
+    state: sundae
+  - type: STWeight
+    self: 0.5
+  - type: Item
+    size: Small
+    shape:
+    - 0,0,1,0
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: FrostOil
+          Quantity: 10
+  - type: PersonalDamage
+    damage:
+      types:
+        Cold: 0.05
+  - type: Craftable
+
+# misc
+- type: entity
+  name: '"braids"'
+  parent: FoodBase
+  id: Z14FoodSTBraid
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: From far away it just looks like jerky but upon closer inspection... Wait, what is this?
+  components:
+  - type: FlavorProfile
+    flavors:
+      - meaty
+      - sweet
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Consumable/Food/meals.rsi
+    state: braid
+  - type: STWeight
+    self: 2
+  - type: Item
+    size: Small
+    shape:
+    - 0,0,0,1
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 15
+        reagents:
+        - ReagentId: Saline
+          Quantity: 15
+  - type: Craftable
+
+- type: entity
+  name: meat kebab
+  parent: FoodBase
+  id: Z14FoodSTKebabMeat
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: Skewered and roasted meat and veggies.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - meaty
+      - tomatoes
+  - type: Edible
+    trash:
+      - FoodKebabSkewer
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Consumable/Food/meals.rsi
+    state: kebabmeat
+  - type: STWeight
+    self: 2
+  - type: Item
+    size: Small
+    shape:
+    - 0,0,0,2
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 15
+  - type: Craftable
+
+- type: entity
+  name: vegetable kebab
+  parent: FoodBase
+  id: Z14FoodSTKebabVeggie
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: Skewered and roasted veggies.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - tomatoes
+  - type: Edible
+    trash:
+      - FoodKebabSkewer
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Consumable/Food/meals.rsi
+    state: kebabveggie
+  - type: STWeight
+    self: 2
+  - type: Item
+    size: Small
+    shape:
+    - 0,0,0,2
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 15
+  - type: Craftable
+
+- type: entity
+  name: ambrosia
+  parent: FoodBase
+  id: Z14FoodSTAmbrosia
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: It's unclear what this is, but it seems like... food?
+  components:
+  - type: FlavorProfile
+    flavors:
+      - sweet
+    ignoreReagents:
+      - Nutriment
+      - Omnizine
+      - Razorium
+      - Lexorin
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Consumable/Food/meals.rsi
+    state: ambrosia
+  - type: STWeight
+    self: 10
+  - type: Item
+    size: Small
+    shape:
+    - 0,0,1,1
+  - type: ZoneArtifactDetectorTarget
+    detectedLevel: 5
+  - type: PointLight
+    radius: 1.5
+    energy: 4
+    color: "#a1f7ee"
+    castShadows: false
+  - type: SolutionContainerManager # this does about 190 damage if you eat it all at once
+    solutions:
+      food:
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 10
+        - ReagentId: Omnizine
+          Quantity: 10
+        - ReagentId: Razorium
+          Quantity: 20
+        - ReagentId: Lexorin
+          Quantity: 10
+  - type: Craftable
+
+- type: entity
+  name: oracle gumbo
+  parent: FoodBowlBase
+  id: Z14FoodSTOracleGumbo
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: If you can get past how it looks and feels and tastes, it's not even that bad. Maybe even... good?
+  components:
+  - type: FlavorProfile
+    flavors:
+      - meaty
+      - spicy
+      - tomato
+      - slimy
+    ignoreReagents:
+      - THC
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Consumable/Food/meals.rsi
+    state: oraclegumbo
+  - type: Edible
+    trash:
+    - FoodBowlBig
+    utensil:
+    - Spoon
+    - Fork
+  - type: STWeight
+    self: 2
+  - type: Item
+    size: Small
+    shape:
+    - 0,0,1,0
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 15
+        - ReagentId: THC
+          Quantity: 15
+  - type: Craftable
+
+# jarred and preserved goods
+- type: entity
+  name: canned food
+  parent: FoodBase
+  id: Z14STFoodJarBase
+  categories: [ Zona14 ]
+  description: A can of preserved food.
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Consumable/Drinks/jar.rsi
+    state: icon
+    scale: 0.7,0.7
+  - type: Edible
+    trash:
+    - Z14STDrinkJar
+  - type: STWeight
+    self: 2
+  - type: Item
+    size: Small
+    shape:
+    - 0,0,0,1
+  - type: DamageOnLand
+    damage:
+      types:
+        Blunt: 5
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Blunt: 5
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 20
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: GlassBreak
+          params:
+            volume: -8
+      - !type:SpillBehavior { }
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          ShardGlass:
+            min: 1
+            max: 1
+      - !type:SpillBehavior { }
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: Craftable
+
+- type: entity
+  name: canned cherries
+  parent: Z14STFoodJarBase
+  id: Z14STFoodJarCherriesFresh
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: Freshly pitted cherries packed in jars for pickling. They need to sit at room temperature for a while before pickling.
+  components:
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Consumable/Food/jarred.rsi
+    state: cherries
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 30
+        reagents:
+        - ReagentId: Vinegar
+          Quantity: 10
+        - ReagentId: JuiceCherry
+          Quantity: 15
+        - ReagentId: Sugar
+          Quantity: 5
+  - type: TimedDespawn
+    lifetime: 900 # 15 min
+  - type: SpawnOnDespawn
+    prototype: Z14STFoodJarCherriesPickled
+
+- type: entity
+  name: pickled cherries
+  parent: Z14STFoodJarBase
+  id: Z14STFoodJarCherriesPickled
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: Sweet and sour pickled cherries infused with herbs and spices. Perfect for dumplings or just snacking.
+  components:
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Consumable/Food/jarred.rsi
+    state: cherries2
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 30
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 10
+        - ReagentId: JuiceCherry
+          Quantity: 15
+        - ReagentId: Sugar
+          Quantity: 5
+
+- type: entity
+  name: canned eel
+  parent: Z14STFoodJarBase
+  id: Z14STFoodJarWholeEelFresh
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: A whole fresh eel marinated in vinegar and spices. Fermentation will take a long time.
+  components:
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Consumable/Food/jarred.rsi
+    state: eel1
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 30
+        reagents:
+        - ReagentId: Vinegar
+          Quantity: 10
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 15
+        - ReagentId: Sugar
+          Quantity: 5
+  - type: TimedDespawn
+    lifetime: 2700 # 45 min
+  - type: SpawnOnDespawn
+    prototype: Z14STFoodJarWholeEelFermented
+
+- type: entity
+  name: fermented eel
+  parent: Z14STFoodJarBase
+  id: Z14STFoodJarWholeEelFermented
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: A whole fermented eel, considered a delicacy by some.
+  components:
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Consumable/Food/jarred.rsi
+    state: eel2
+  - type: FlavorProfile
+    flavors:
+    - fishy
+    - sour
+    - salty
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 30
+        reagents:
+        - ReagentId: TableSalt
+          Quantity: 10
+        - ReagentId: Protein
+          Quantity: 15
+        - ReagentId: Sugar
+          Quantity: 5
+
+- type: entity
+  name: canned eel pieces
+  parent: Z14STFoodJarBase
+  id: Z14STFoodJarMeatEel
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: Canned eel meat in oil and herbs, aged in a jar.
+  components:
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Consumable/Food/jarred.rsi
+    state: eelmeat
+  - type: FlavorProfile
+    flavors:
+    - fishy
+    - savory
+    - oily
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 30
+        reagents:
+        - ReagentId: TableSalt
+          Quantity: 10
+        - ReagentId: Protein
+          Quantity: 20
+        - ReagentId: Sugar
+          Quantity: 5
+
+- type: entity
+  name: pickled eggs
+  parent: Z14STFoodJarBase
+  id: Z14STFoodJarEggs
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: Pickled eggs floating in sweet vinegar.
+  components:
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Consumable/Food/jarred.rsi
+    state: eggs
+  - type: FlavorProfile
+    flavors:
+    - egg
+    - sour
+    - sweet
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 30
+        reagents:
+        - ReagentId: TableSalt
+          Quantity: 10
+        - ReagentId: Nutriment
+          Quantity: 20
+        - ReagentId: Sugar
+          Quantity: 5
+
+- type: entity
+  name: canned fish steaks
+  parent: Z14STFoodJarBase
+  id: Z14STFoodJarMeatFishSteak
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: Canned fish steaks in oil with herbs.
+  components:
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Consumable/Food/jarred.rsi
+    state: fishsteak
+  - type: FlavorProfile
+    flavors:
+    - fishy
+    - savory
+    - oily
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 30
+        reagents:
+        - ReagentId: TableSalt
+          Quantity: 10
+        - ReagentId: Protein
+          Quantity: 20
+        - ReagentId: Sugar
+          Quantity: 5
+
+- type: entity
+  name: berry jam
+  parent: Z14STFoodJarBase
+  id: Z14STFoodJarJamBerry
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: Sweet berry jam made from berries grown in this region.
+  components:
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Consumable/Food/jarred.rsi
+    state: jamberry1
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 30
+        reagents:
+        - ReagentId: Z14StalkerJuiceBrusnika
+          Quantity: 5
+        - ReagentId: Z14StalkerJuiceKlubnika
+          Quantity: 5
+        - ReagentId: Z14StalkerOilMalina
+          Quantity: 10
+        - ReagentId: Sugar
+          Quantity: 10
+
+# this sucks dont look at me
+- type: entity
+  name: berry jam
+  parent: Z14STFoodJarBase
+  id: Z14STFoodJarJamBerry2
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: Sweet berry jam made from berries grown in this region.
+  components:
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Consumable/Food/jarred.rsi
+    state: jamberry2
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Z14StalkerJuiceBrusnika
+          Quantity: 5
+        - ReagentId: Z14StalkerJuiceKlubnika
+          Quantity: 5
+        - ReagentId: Z14StalkerOilMalina
+          Quantity: 5
+        - ReagentId: Sugar
+          Quantity: 5
+
+- type: entity
+  name: berry jam
+  parent: Z14STFoodJarBase
+  id: Z14STFoodJarJamBerry3
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: Sweet berry jam made from berries grown in this region.
+  components:
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Consumable/Food/jarred.rsi
+    state: jamberry3
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 10
+        reagents:
+        - ReagentId: Z14StalkerJuiceBrusnika
+          Quantity: 2
+        - ReagentId: Z14StalkerJuiceKlubnika
+          Quantity: 2
+        - ReagentId: Z14StalkerOilMalina
+          Quantity: 4
+        - ReagentId: Sugar
+          Quantity: 2
+
+- type: entity
+  name: berry jam
+  parent: Z14STFoodJarBase
+  id: Z14STFoodJarJamBerry4
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: Sweet berry jam made from berries grown in this region.
+  components:
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Consumable/Food/jarred.rsi
+    state: jamberry4
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 5
+        reagents:
+        - ReagentId: Z14StalkerJuiceBrusnika
+          Quantity: 1
+        - ReagentId: Z14StalkerJuiceKlubnika
+          Quantity: 1
+        - ReagentId: Z14StalkerOilMalina
+          Quantity: 2
+        - ReagentId: Sugar
+          Quantity: 1
+
+- type: entity
+  name: beet kvass
+  parent: Z14STFoodJarBase
+  id: Z14STFoodJarKvassUnfermented
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: A fresh jar of beet kvass. Fermentation may take some time, so give it time — it ferments with purpose.
+  components:
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Consumable/Food/jarred.rsi
+    state: kvass1
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 40
+        reagents:
+        - ReagentId: Water
+          Quantity: 10
+        - ReagentId: Sugar
+          Quantity: 15
+        - ReagentId: TableSalt
+          Quantity: 5
+        - ReagentId: Nutriment
+          Quantity: 10
+  - type: TimedDespawn
+    lifetime: 2700 # 45 min
+  - type: SpawnOnDespawn
+    prototype: Z14STFoodJarKvass
+
+- type: entity
+  name: kvass
+  parent: Z14STFoodJarBase
+  id: Z14STFoodJarKvass
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: Kvass, ready to drink in any case.
+  components:
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Consumable/Food/jarred.rsi
+    state: kvass2
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 40
+        reagents:
+        - ReagentId: Vinegar
+          Quantity: 10
+        - ReagentId: Sugar
+          Quantity: 15
+        - ReagentId: TableSalt
+          Quantity: 5
+        - ReagentId: Nutriment
+          Quantity: 10
+
+- type: entity
+  name: liver tartare
+  parent: Z14STFoodJarBase
+  id: Z14STFoodJarMeatLiver
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: Liver seasoned with spices and preserved... from... something...
+  components:
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Consumable/Food/jarred.rsi
+    state: liver
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 30
+        reagents:
+        - ReagentId: Protein
+          Quantity: 15
+        - ReagentId: Fat
+          Quantity: 10
+        - ReagentId: TableSalt
+          Quantity: 5
+
+- type: entity
+  name: rendered lard
+  parent: Z14STFoodJarBase
+  id: Z14STFoodJarSalo
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: Rendered fat, ready for cooking or use as lard.
+  components:
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Consumable/Food/jarred.rsi
+    state: salo
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 30
+        reagents:
+        - ReagentId: Fat
+          Quantity: 30
+
+- type: entity
+  name: sausages
+  parent: Z14STFoodJarBase
+  id: Z14STFoodJarMeatSausageUnpickled
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: Sliced sausages in marinade. Need to sit at room temperature briefly.
+  components:
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Consumable/Food/jarred.rsi
+    state: sausage1
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 30
+        reagents:
+        - ReagentId: Protein
+          Quantity: 10
+        - ReagentId: TableSalt
+          Quantity: 10
+        - ReagentId: Sugar
+          Quantity: 10
+  - type: TimedDespawn
+    lifetime: 600 # 10 min
+  - type: SpawnOnDespawn
+    prototype: Z14STFoodJarMeatSausage
+
+- type: entity
+  name: pickled sausages
+  parent: Z14STFoodJarBase
+  id: Z14STFoodJarMeatSausage
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: A tasty jar of pickled sausages.
+  components:
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Consumable/Food/jarred.rsi
+    state: sausage2
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 30
+        reagents:
+        - ReagentId: Protein
+          Quantity: 20
+        - ReagentId: TableSalt
+          Quantity: 5
+        - ReagentId: Sugar
+          Quantity: 5
+
+- type: entity
+  name: canned fish fillet
+  parent: Z14STFoodJarBase
+  id: Z14STFoodJarMeatFishFillet
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: Canned fish fillet marinated in oil and herbs.
+  components:
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Consumable/Food/jarred.rsi
+    state: whitefish
+  - type: FlavorProfile
+    flavors:
+    - fishy
+    - savory
+    - oily
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 30
+        reagents:
+        - ReagentId: TableSalt
+          Quantity: 10
+        - ReagentId: Protein
+          Quantity: 20
+        - ReagentId: Sugar
+          Quantity: 5

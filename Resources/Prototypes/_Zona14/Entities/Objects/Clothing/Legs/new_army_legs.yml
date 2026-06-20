@@ -1,0 +1,83 @@
+- type: entity
+  parent: Z14BaseClothingLegs
+  id: Z14STClothingLegsJeansCz
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Czechoslovakia army jeans
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/Legs/Jeans/cz.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/Legs/Jeans/cz.rsi
+
+- type: entity
+  parent: Z14BaseClothingLegs
+  id: Z14STClothingLegsJeansFr
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: France army jeans
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/Legs/Jeans/fr.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/Legs/Jeans/fr.rsi
+
+- type: entity
+  parent: Z14BaseClothingLegs
+  id: Z14STClothingLegsJeanskz
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Kazakhstan army jeans
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/Legs/Jeans/kz.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/Legs/Jeans/kz.rsi
+
+- type: entity
+  parent: Z14BaseClothingLegs
+  id: Z14STClothingLegsJeansLit
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Litva army jeans
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/Legs/Jeans/lit.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/Legs/Jeans/lit.rsi
+
+- type: entity
+  parent: Z14BaseClothingLegs
+  id: Z14STClothingLegsJeansPol
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Poland army jeans
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/Legs/Jeans/pol.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/Legs/Jeans/pol.rsi
+
+- type: entity
+  parent: Z14BaseClothingLegs
+  id: Z14STClothingLegsJeansRus
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Russian army jeans
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/Legs/Jeans/ru.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/Legs/Jeans/ru.rsi
+
+- type: entity
+  parent: Z14BaseClothingLegs
+  id: Z14ClothingLegsBoxersMilitary
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: military boxers
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/Legs/Military/boxersmilitary.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/Legs/Military/boxersmilitary.rsi

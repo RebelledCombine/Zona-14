@@ -1,10 +1,11 @@
+# Zona14: translated Russian names/descriptions to English
 
 - type: entity
   parent: StalkerShop
   id: StalkerShopMerc
-  name: Торгомат, Наёмники
-  description: Как торговец туда поместился?
-  suffix: ST, Mapping, Наёмники
+  name: Torgomat, Mercenaries
+  description: How did the merchant fit there?
+  suffix: ST, Mapping, Mercenaries # Zona14: ST, Mapping, Наёмники
   components:
     - type: Sprite
       drawdepth: Objects
@@ -20,9 +21,9 @@
 - type: entity
   parent: StalkerShop
   id: StalkerShopMercDollar
-  name: Торгомат, Наёмники, Долларовый
-  description: Как торговец туда поместился?
-  suffix: ST, Mapping, Наёмники
+  name: Trade machine, Mercenaries, Dollar
+  description: How did the trader fit in there?
+  suffix: ST, Mapping, Mercenaries # Zona14: ST, Mapping, Наёмники
   components:
     - type: Sprite
       drawdepth: Objects

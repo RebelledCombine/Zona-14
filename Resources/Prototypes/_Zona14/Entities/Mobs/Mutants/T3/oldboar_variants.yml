@@ -1,0 +1,40 @@
+- type: entity
+  parent: Z14MobMutantOldBoar
+  id: Z14STMobMutantOldBoarCommon
+  categories: [ Zona14 ]
+  name: Old Boar
+  suffix: Z14
+  components:
+  - type: STMobVariant
+    quality: Common
+    applied: true
+
+- type: entity
+  parent: Z14MobMutantOldBoar
+  id: Z14STMobMutantOldBoarUncommon
+  categories: [ Zona14 ]
+  name: Adapted Old Boar
+  suffix: Z14
+  components:
+  - type: STMobVariant
+    quality: Uncommon
+
+- type: entity
+  parent: Z14MobMutantOldBoar
+  id: Z14STMobMutantOldBoarRare
+  categories: [ Zona14 ]
+  name: Mutated Old Boar
+  suffix: Z14
+  components:
+  - type: STMobVariant
+    quality: Rare
+
+- type: entity
+  parent: Z14MobMutantOldBoar
+  id: Z14STMobMutantOldBoarLegendary
+  categories: [ Zona14 ]
+  name: Singular Old Boar
+  suffix: Z14
+  components:
+  - type: STMobVariant
+    quality: Legendary

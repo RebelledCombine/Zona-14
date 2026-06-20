@@ -1,3 +1,4 @@
+# Zona14: translated Russian names/descriptions to English
 # 12x70
 
 - type: entity
@@ -22,7 +23,7 @@
 
 - type: entity
   id: Cartridge7mmBuckshot
-  name: 12x70 Картечь 7мм
+  name: 12x70 Buckshot 7mm
   parent: BaseShotgunBullet
   components:
   - type: CartridgeAmmo
@@ -37,7 +38,7 @@
 
 - type: entity
   id: Cartridge6mmBuckshot
-  name: 12x70 Картечь 6.5мм "Экспресс"
+  name: 12x70 Buckshot 6.5mm "Express"
   parent: BaseShotgunBullet
   components:
   - type: CartridgeAmmo
@@ -52,7 +53,7 @@
 
 - type: entity
   id: CartridgeShotgunBullet
-  name: 12x70 Пуля
+  name: 12x70 Slug
   parent: BaseShotgunBullet
   components:
   - type: CartridgeAmmo
@@ -72,7 +73,7 @@
 
 - type: entity
   id: CartridgeShotgunBulletRIP
-  name: 12x70 Пуля RIP
+  name: 12x70 Slug RIP
   parent: BaseShotgunBullet
   components:
   - type: CartridgeAmmo
@@ -92,7 +93,7 @@
 
 - type: entity
   id: CartridgeShotgunDart
-  name: 12x70 Дротик
+  name: 12x70 Dart
   parent: BaseShotgunBullet
   components:
   - type: CartridgeAmmo
@@ -112,7 +113,7 @@
 
 - type: entity
   id: ShellShotgunBeanbagStalker
-  name: 12х70 нелетальный
+  name: 12x70 Non-lethal
   parent: BaseShellShotgun
   components:
     - type: Sprite
@@ -128,7 +129,7 @@
 
 - type: entity
   id: Cartridge8mmBuckshot
-  name: 12x70 Картечь 8.5мм "Магнум"
+  name: 12x70 Buckshot 8.5mm "Magnum"
   parent: BaseShotgunBullet
   components:
   - type: CartridgeAmmo
@@ -143,7 +144,7 @@
 
 - type: entity
   id: CartridgeShotgunFlechette
-  name: 12x70 Флешетта
+  name: 12x70 Flechette
   parent: BaseShotgunBullet
   components:
   - type: CartridgeAmmo

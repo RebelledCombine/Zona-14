@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: BaseCraftItem
   id: BypassCard
-  name: карточка доступа Привратника
-  description: Карточка для разблокировки шлюза Предбанника в подземке. Открывает его на 30 секунд.
+  name: Gatekeeper Access Card
+  description: Card to unlock the Anteroom Gateway in the subway. Unlocks it for 30 seconds.
   suffix: ST, card
   components:
     - type: Sprite
@@ -25,17 +26,17 @@
 - type: entity
   parent: BlastDoor
   id: BypassDeactivated
-  name: гермошлюз Привратника
-  description: Для разблокировки этого шлюза нужна специальная одноразовая карточка.
+  name: "Gatekeeper's hermetic gateway"
+  description: A special single-use card is needed to unlock this gateway.
   components:
   - type: Craftable
 
 
 - type: entity
   id: BypassActivated
-  name: гермошлюз Привратника
+  name: "{ ent-BypassDeactivated }"
   parent: BlastDoorOpen
-  description: для разблокировки этого шлюза нужна специальная одноразовая карточка. Разблокирован.
+  description: A special single-use card is needed to unlock this gateway. Unlocked.
   suffix: Stalker
   categories: [ HideSpawnMenu ]
   components:
@@ -44,12 +45,12 @@
   - type: SpawnOnDespawn
     prototype: BypassDeactivated
 
-# Билет на вертолёт до Рыжего леса
+# Zona14: Билет на вертолёт до Рыжего леса
 - type: entity
   parent: BypassCard
   id: STHelicopterToRedForestTicket
-  name: билет на вертолёт до рыжего леса
-  description: билет на вертолёт до рыжего леса. Перепродажа и подделка билетов преследуется по закону.
+  name: Helicopter ticket to the Red Forest
+  description: helicopter ticket to the Red Forest. Resale and forgery of tickets are prosecuted by law.
   suffix: ST, card
 
 - type: lightCraftingRecipe
@@ -64,8 +65,8 @@
 - type: entity
   parent: BypassDeactivated
   id: STHelicopterBypassDeactivated
-  name: гермошлюз вертолёта
-  description: для разблокировки шлюза вам нужно купить билет
+  name: helicopter airlock
+  description: to unlock the gateway you need to buy a ticket
   components:
   - type: Craftable
 
@@ -73,8 +74,8 @@
 - type: entity
   parent: BypassActivated
   id: STHelicopterBypassActivated
-  name: гермошлюз вертолёта
-  description: для разблокировки шлюза вам нужно купить билет Разблокирован.
+  name: "{ ent-STHelicopterBypassDeactivated }"
+  description: to unlock the gateway you need to buy the ticket Unlocked.
   suffix: Stalker
   categories: [ HideSpawnMenu ]
   components:
@@ -84,12 +85,12 @@
     prototype: STHelicopterBypassDeactivated
 
 
-# Обменник баксов
+# Zona14: Обменник баксов
 - type: entity
   parent: BypassCard
   id: DollarBypassCard
-  name: карточка доступа чёрного рынка
-  description: Карточка доступа к обменнику долларов в подземельях Ч-4, открывает дверь на 5 минут.
+  name: Black Market Access Card
+  description: Dollar Exchanger Access Card in Dungeons Ch-4, opens the door for 5 minutes.
   suffix: ST, card
 
 - type: lightCraftingRecipe
@@ -105,8 +106,8 @@
 - type: entity
   parent: BypassDeactivated
   id: DollarBypassDeactivated
-  name: гермошлюз обменщика
-  description: Для разблокировки этого шлюза нужна специальная одноразовая карточка.
+  name: exchanger hermetic gateway
+  description: "{ ent-BypassDeactivated.desc }"
   components:
   - type: Craftable
 
@@ -114,8 +115,8 @@
 - type: entity
   parent: BypassActivated
   id: DollarBypassActivated
-  name: гермошлюз обменщика
-  description: для разблокировки этого шлюза нужна специальная одноразовая карточка. Разблокирован.
+  name: "{ ent-DollarBypassDeactivated }"
+  description: "{ ent-BypassActivated.desc }"
   suffix: Stalker
   categories: [ HideSpawnMenu ]
   components:
@@ -124,12 +125,12 @@
   - type: SpawnOnDespawn
     prototype: DollarBypassDeactivated
 
-# Доступ в фитнес-центр
+# Zona14: Доступ в фитнес-центр
 - type: entity
   parent: BypassCard
   id: FitnessCenterCard
-  name: карточка доступа фитнес-центра
-  description: Карточка доступа к фитнес-центру, открывает дверь на время
+  name: Fitness Center Access Card
+  description: Fitness Center Access Card, Opens the door temporarily
   suffix: ST, card
   components:
     - type: Sprite
@@ -150,16 +151,16 @@
 - type: entity
   parent: BypassDeactivated
   id: FitnessBypassDeactivated
-  name: гермошлюз фитнес-центра
-  description: Для разблокировки этого шлюза нужна карточка фитнес-центра.
+  name: Fitness Center Hermetic Door
+  description: To unlock this gateway, you need a fitness center card.
   components:
     - type: Craftable
 
 - type: entity
   parent: BypassActivated
   id: FitnessBypassActivated
-  name: гермошлюз фитнес-центра
-  description: для разблокировки этого шлюза нужна карточка фитнес-центра. Разблокирован.
+  name: "{ ent-FitnessBypassDeactivated }"
+  description: To unlock this gateway, you need a fitness center card. Unlocked.
   suffix: Stalker
   categories: [ HideSpawnMenu ]
   components:

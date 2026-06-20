@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: STOldicarus
-  name: старый ikarus-280
+  name: old ikarus-280
   suffix: ST, Mapping
-  description: Венгерский городской сочленённый высокопольный среднеприводный автобус особо большой вместимости фирмы Ikarus. Выглядит старым.
+  description: Hungarian Urban Articulated High-Floor Medium-Drive Bus with Extra Large Capacity by Ikarus. Looks old.
   parent: kraz
   components:
   - type: Sprite
@@ -23,8 +24,8 @@
 - type: entity
   id: STOldNiva
   parent: OldCarGreen
-  name: Нива
-  description: Старая Нива производства СССР.
+  name: Niva
+  description: Staraya Niva produced in the USSR.
   suffix: ST, Mapping
   components:
   - type: Sprite
@@ -35,8 +36,8 @@
 - type: entity
   id: STOldLincoln
   parent: OldCarGreen
-  name: Линкольн
-  description: Старый Линкольн времен холодной войны.
+  name: Lincoln
+  description: Old Lincoln from the Cold War.
   suffix: ST, Mapping
   components:
   - type: Sprite

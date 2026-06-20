@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 # 12.7x55
 
 - type: entity
   id: STCartridge1255PS12A
-  name: Патрон (12,7x55) ПС12А
+  name: Cartridge (12.7x55) PS12A
   parent: BaseCartridgeCaselessRifle
   components:
   - type: CartridgeAmmo
@@ -22,7 +23,7 @@
 
 - type: entity
   id: STCartridge1255TP
-  name: Патрон (12,7x55) ТП
+  name: Cartridge (12.7x55) TP
   parent: STCartridge1255PS12A
   components:
   - type: CartridgeAmmo
@@ -31,7 +32,7 @@
 
 - type: entity
   id: STCartridge1255BP
-  name: Патрон (12,7x55) БП
+  name: Cartridge (12.7x55) BP
   parent: STCartridge1255PS12A
   components:
   - type: CartridgeAmmo

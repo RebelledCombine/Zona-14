@@ -1,0 +1,131 @@
+- type: entity
+  name: seer trigger (1-2) (10%) 30m
+  id: Z14STTriggerSeer121030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger121030
+  suffix: Z14
+  components:
+  - type: SpawnOnApproach
+    prototypes:
+    - Z14MobMutantSeer
+    restricted:
+    - Z14MobMutantSeer
+
+- type: entity
+  name: seer trigger (1-2) (25%) 30m
+  id: Z14STTriggerSeer122530
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger122530
+  suffix: Z14
+  components:
+  - type: SpawnOnApproach
+    prototypes:
+    - Z14MobMutantSeer
+    restricted:
+    - Z14MobMutantSeer
+
+
+- type: entity
+  name: seer trigger (1-2) (50%) 30m
+  id: Z14STTriggerSeer125030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger125030
+  suffix: Z14
+  components:
+  - type: SpawnOnApproach
+    prototypes:
+    - Z14MobMutantSeer
+    restricted:
+    - Z14MobMutantSeer
+
+- type: entity
+  name: seer trigger (1-2) (75%) 30m
+  id: Z14STTriggerSeer127530
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger127530
+  suffix: Z14
+  components:
+  - type: SpawnOnApproach
+    prototypes:
+    - Z14MobMutantSeer
+    restricted:
+    - Z14MobMutantSeer
+
+- type: entity
+  name: seer trigger (1-4) (25%) 30m
+  id: Z14STTriggerSeer142530
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger142530
+  suffix: Z14
+  components:
+  - type: SpawnOnApproach
+    prototypes:
+    - Z14MobMutantSeer
+    restricted:
+    - Z14MobMutantSeer
+
+- type: entity
+  name: seer trigger (1-4) (50%) 30m
+  id: Z14STTriggerSeer145030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger145010
+  suffix: Z14
+  components:
+  - type: SpawnOnApproach
+    prototypes:
+    - Z14MobMutantSeer
+    restricted:
+    - Z14MobMutantSeer
+
+- type: entity
+  name: seer trigger (1-4) (75%) 30m
+  id: Z14STTriggerSeer145070
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger147530
+  suffix: Z14
+  components:
+  - type: SpawnOnApproach
+    prototypes:
+    - Z14MobMutantSeer
+    restricted:
+    - Z14MobMutantSeer
+
+
+- type: entity
+  name: seer trigger (1) (100%) 30m
+  id: Z14STTriggerSeer1110030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger1110030
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+      - Z14MobMutantSeer
+      restricted:
+      - Z14MobMutantSeer
+
+- type: entity
+  name: seer trigger (2) (100%) 30m
+  id: Z14STTriggerSeer2210030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger2210030
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+      - Z14MobMutantSeer
+      restricted:
+      - Z14MobMutantSeer
+
+- type: entity
+  name: seer trigger (3) (100%) 30m
+  id: Z14STTriggerSeer3310030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger3310030
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+      - Z14MobMutantSeer
+      restricted:
+      - Z14MobMutantSeer

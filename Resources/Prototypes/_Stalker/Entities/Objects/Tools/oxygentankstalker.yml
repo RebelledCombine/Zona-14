@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: EmergencyOxygenTank
   id: ExtendedEmergencyOxygenTankStalker
-  name: малой кислородный баллон
-  suffix: Stalker, Пустой
-  description: Малый кислородный контейнер воздуха, в особенном случае используется лишь для окружающей среды на ЧЗО. Он очень компактен и дешев. Но не сможет надолго вас защитить от непригодной атмосферы.
+  name: Small Oxygen Tank
+  suffix: Stalker, Empty # Zona14: Stalker, Пустой
+  description: Small oxygen air container, especially used only for the environment in the Chernobyl Exclusion Zone. It is very compact and cheap. But it will not be able to protect you from an unsuitable atmosphere for a long time.
   components:
   - type: Trash
     time: 300
@@ -26,7 +27,7 @@
 - type: entity
   id: ExtendedEmergencyOxygenTankFilledStalker
   parent: ExtendedEmergencyOxygenTankStalker
-  suffix: Stalker, Заполненный
+  suffix: Stalker, Filled # Zona14: Stalker, Заполненный
   components:
   - type: GasTank
     outputPressure: 21.3
@@ -40,9 +41,9 @@
 - type: entity
   parent: ExtendedEmergencyOxygenTank
   id: DoubleEmergencyOxygenTankStalker
-  name: двойной кислородный баллон
-  suffix: Stalker, Пустой
-  description: Высококачественный контейнер воздуха с двумя баллонами. Он вмещает большое количество кислорода при своих небольших размерах. Может использоваться для защиты от непригодной атмосферы на ЧЗО, а также в других ситуациях.
+  name: Double Oxygen Tank
+  suffix: Stalker, Empty # Zona14: Stalker, Пустой
+  description: High quality air container with two cylinders. It holds a large amount of oxygen with its small size. It can be used to protect against unsuitable atmosphere in the Chernobyl Exclusion Zone, as well as in other situations.
   components:
   - type: Trash
     time: 600
@@ -70,7 +71,7 @@
 - type: entity
   id: DoubleEmergencyOxygenTankStalkerFilled
   parent: DoubleEmergencyOxygenTankStalker
-  suffix: Stalker, Заполненный
+  suffix: Stalker, Filled # Zona14: Stalker, Заполненный
   components:
   - type: GasTank
     outputPressure: 21.3

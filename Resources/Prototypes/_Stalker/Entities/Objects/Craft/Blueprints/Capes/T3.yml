@@ -1,7 +1,8 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: STBaseBlueprint
   id: STClothingCapeCoatReinforcedBlueprint
-  name: Рецепт укреплённого плаща
+  name: Reinforced Coat Recipe
   components:
     - type: STBlueprint
       blueprint: newrecipeReinforcedCoat
@@ -9,7 +10,7 @@
 - type: entity
   parent: STBaseBlueprint
   id: ClothingOuterCoatLoyalistBlueprint
-  name: Рецепт плащя лоялиста
+  name: loyalist coat recipe
   components:
     - type: STBlueprint
       blueprint: newrecipeClothingOuterCoatLoyalist

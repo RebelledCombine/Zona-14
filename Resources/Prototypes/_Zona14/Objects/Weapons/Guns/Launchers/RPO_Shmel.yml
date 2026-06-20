@@ -1,0 +1,21 @@
+- type: entity
+  name: RPO Shmel
+  suffix: Z14
+  parent: STWeaponLauncherRocket
+  id: Z14STWeaponLauncherRocketShmel
+  categories: [ Zona14 ]
+  description: Miraculous tool of war crimes
+  components:
+  - type: Wieldable
+  - type: GunRequiresWield
+  - type: BallisticAmmoProvider
+    whitelist: Null
+    proto: CartridgeRocketRPO
+    capacity: 1
+  - type: Sprite
+    sprite: _Stalker/Objects/Weapons/Guns/Launchers/rpo-shmel.rsi
+    layers:
+      - state: icon
+        map: ["enum.GunVisualLayers.Base"]
+  - type: Clothing
+    sprite: _Stalker/Objects/Weapons/Guns/Launchers/rpo-shmel.rsi

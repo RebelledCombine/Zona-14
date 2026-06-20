@@ -1,3 +1,4 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: BaseItem
   id: STBaseBolt
@@ -34,7 +35,7 @@
   parent: STBaseBolt
   id: STBolt
   name: bolt
-  description: Крепёжное изделие в форме стержня с наружной резьбой на одном конце. Теперь на 100% из углеродистой стали.
+  description: Rod-shaped fastener with male thread at one end. Now 100% carbon steel.
   components:
     - type: Sprite
       state: icon

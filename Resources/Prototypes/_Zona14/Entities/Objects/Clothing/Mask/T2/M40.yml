@@ -1,0 +1,31 @@
+- type: entity
+  parent: Z14GasMaskBase
+  id: Z14ClothingMaskGasM40
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: M40 gas mask
+  description: Hides one's secrets. An American gas mask, protects from radiation and slightly from toxins. This gas mask was never mass-produced.
+  components:
+  - type: Tag
+    tags:
+      - BlockMask
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/mask/m40.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/mask/m40.rsi
+  - type: IngestionBlocker
+  - type: IdentityBlocker
+
+## Skins
+- type: entity
+  parent: Z14ClothingMaskGasM40
+  id: Z14ClothingMaskGasM40Military
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: M40 Gas Mask in Military Livery
+  description: Smells of cheap paint.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/mask/m40military.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/mask/m40military.rsi

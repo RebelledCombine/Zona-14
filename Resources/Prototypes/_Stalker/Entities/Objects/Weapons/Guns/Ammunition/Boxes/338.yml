@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: BaseAmmoBoxStalker
   id: 338FMJBox
-  name: Коробка патронов (.338 Lapua Magnum) FMJ
-  description: Для снайперских винтовок, в коробке 10 штук. Обеспечивает пробитие 4 класса брони.
+  name: ammo box (.338 Lapua Magnum) FMJ
+  description: For sniper rifles, 10 rounds per box. Provides class 4 armor penetration.
   suffix: Stalker
   components:
     - type: MagazineVisuals
@@ -23,8 +24,8 @@
 - type: entity
   parent: 338FMJBox
   id: 338PartitionBox
-  name: Коробка патронов (.338 Lapua Magnum) Partition
-  description: Для снайперских винтовок, в коробке 10 штук. Бесполезно против брони.
+  name: ammo box (.338 Lapua Magnum) Partition
+  description: For sniper rifles, 10 rounds per box. Useless against armor.
   suffix: Stalker
   components:
     - type: BallisticAmmoProvider
@@ -40,8 +41,8 @@
 - type: entity
   parent: 338FMJBox
   id: 338FMJBTBox
-  name: Коробка патронов (.338 Lapua Magnum) FMJ BT
-  description: Для снайперских винтовок, в коробке 10 штук. Обеспечивает пробитие 5 класса брони.
+  name: ammo box (.338 Lapua Magnum) FMJ BT
+  description: For sniper rifles, 10 rounds per box. Provides class 5 armor penetration.
   suffix: Stalker
   components:
     - type: BallisticAmmoProvider

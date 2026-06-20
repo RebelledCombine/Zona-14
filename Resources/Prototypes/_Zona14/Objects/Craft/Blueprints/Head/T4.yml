@@ -1,0 +1,33 @@
+- type: entity
+  parent: STBaseBlueprint
+  id:   Z14ClothingHeadHelmetBulatMilitaryBlueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Military Helmet "Sphere-12" Recipe
+  components:
+    - type: STBlueprint
+      blueprint: newrecipeClothingHeadHelmetBulatMilitary
+
+
+
+- type: entity
+  parent: STBaseBlueprint
+  id:   Z14ClothingHeadHelmetUlachBlueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Ulach Helmet Recipe
+  components:
+    - type: STBlueprint
+      blueprint: newrecipeClothingHeadUlachHelmet
+
+
+
+- type: entity
+  parent: STBaseBlueprint
+  id:   Z14ClothingHeadHelmetRatnikBlueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: 6B47 Helmet Recipe
+  components:
+    - type: STBlueprint
+      blueprint: newrecipeClothingHeadRatnikHelmet

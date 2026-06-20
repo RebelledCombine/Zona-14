@@ -1,10 +1,11 @@
+# Zona14: translated Russian names/descriptions to English
 
 - type: entity
   parent: BaseItem
   id: CraftGunpowderBank
-  name: баночка с порохом
-  description:  Предназначенна для хранения пороха, используемого в огнестрельном оружии или пиротехнических устройства. В частом случае создания боеприпасов.
-  suffix: Stalker, крафт
+  name: Gunpowder Can
+  description: Used to store gunpowder used in firearms or pyrotechnic devices. In the often case of creating ammunition.
+  suffix: Stalker, craft # Zona14: Stalker, крафт
   components:
   - type: STWeight
     self: 1
@@ -29,9 +30,9 @@
   - type: ItemSlots
     slots:
       item:
-        name: порох
-        insertVerbText: засыпать порох
-        ejectVerbText: высыпать порох
+        name: gunpowder
+        insertVerbText: pour gunpowder # Zona14: засыпать порох
+        ejectVerbText: dump gunpowder # Zona14: высыпать порох
         whitelist:
           tags:
           - CraftMaterialGunpowder
@@ -43,14 +44,14 @@
           - CraftMaterialGunpowder
   - type: Appearance
   - type: RepositoryItem
-    categoryName: Крафты
+    categoryName: Crafting # Zona14: Крафты
 
 - type: entity
   parent: MaterialBase
   id: CraftMaterialGunpowder
-  name: чёрный порох
-  description: Взрывчатое соединение.
-  suffix: Stalker, крафт
+  name: black powder
+  description: Explosive compound.
+  suffix: Stalker, craft # Zona14: Stalker, крафт
   components:
   - type: STWeight
     self: 0.1
@@ -82,7 +83,7 @@
       types:
         Heat: 1000
   - type: RepositoryItem
-    categoryName: Крафты
+    categoryName: Crafting # Zona14: Крафты
   - type: Craftable
   - type: Destructible
     thresholds:
@@ -110,9 +111,9 @@
 - type: entity
   parent: BaseItem
   id: CraftHide
-  name: шкура
-  description: Необработанная шкура животного.
-  suffix: Stalker, крафт
+  name: hide
+  description: Raw animal skin.
+  suffix: Stalker, craft # Zona14: Stalker, крафт
   components:
     - type: STWeight
       self: 3.5
@@ -126,13 +127,13 @@
       scale: 0.4, 0.4
     - type: Craftable
     - type: RepositoryItem
-      categoryName: Крафты
+      categoryName: Crafting # Zona14: Крафты
 
 - type: entity
   parent: PartBase
   id: PartRodMetalStalker
-  name: металические трубы
-  suffix: Stalker, крафт
+  name: Metal Pipes
+  suffix: Stalker, craft # Zona14: Stalker, крафт
   components:
     - type: STWeight
       self: 1.2
@@ -147,13 +148,13 @@
       size: Normal
     - type: Craftable
     - type: RepositoryItem
-      categoryName: Крафты
+      categoryName: Crafting # Zona14: Крафты
 
 - type: entity
   parent: BaseItem
   id: CraftBag
-  name: мешок
-  suffix: Stalker, крафт
+  name: bag
+  suffix: Stalker, craft # Zona14: Stalker, крафт
   components:
     - type: STWeight
       self: 0.5
@@ -168,14 +169,14 @@
       state: bag1
     - type: Craftable
     - type: RepositoryItem
-      categoryName: Крафты
+      categoryName: Crafting # Zona14: Крафты
 
 - type: entity
   parent: BaseItem
   id: CraftFerments
-  name: набор ферментизации
-  description: Одноразовый набор ферментизации, следует применять крайне осторожно.
-  suffix: Stalker, крафт
+  name: fermentation kit
+  description: One-time fermentation kit, should be used with extreme caution.
+  suffix: Stalker, craft # Zona14: Stalker, крафт
   components:
     - type: STWeight
       self: 1.5
@@ -189,14 +190,14 @@
       layers:
         - state: beakernoreact
     - type: RepositoryItem
-      categoryName: Крафты
+      categoryName: Crafting # Zona14: Крафты
 
 - type: entity
   parent: BaseItem
   id: CraftLargeCardboard
-  name: большой картон
-  description: Картон из под какой-то большой коробки.
-  suffix: Stalker, крафт
+  name: large cardboard
+  description: Cardboard from under some large box.
+  suffix: Stalker, craft # Zona14: Stalker, крафт
   components:
   - type: STWeight
     self: 0.5
@@ -210,14 +211,14 @@
   - type: Craftable
   - type: Appearance
   - type: RepositoryItem
-    categoryName: Крафты
+    categoryName: Crafting # Zona14: Крафты
 
 - type: entity
   id: CraftSmallCardboard
   parent: BaseItem
-  name: маленький картон
-  suffix: Stalker, крафт
-  description: Картон из под какой-то коробки либо подрезанный.
+  name: small cardboard
+  suffix: Stalker, craft # Zona14: Stalker, крафт
+  description: Cardboard from under a box or cut.
   components:
   - type: STWeight
     self: 0.1
@@ -231,14 +232,14 @@
   - type: SpaceGarbage
   - type: Craftable
   - type: RepositoryItem
-    categoryName: Крафты
+    categoryName: Crafting # Zona14: Крафты
 
 - type: entity
   id: CraftCardboardTube
   parent: BaseItem
-  name: картонная труба
-  suffix: Stalker, крафт
-  description: Труба из картона, видимо кто-то хочет сделать подзорную трубу либо взрывчатку.
+  name: cardboard tube
+  suffix: Stalker, craft # Zona14: Stalker, крафт
+  description: A cardboard pipe, apparently someone wants to make a spyglass or explosives.
   components:
   - type: STWeight
     self: 0.1
@@ -253,12 +254,12 @@
   - type: SpaceGarbage
   - type: Craftable
   - type: RepositoryItem
-    categoryName: Крафты
+    categoryName: Crafting # Zona14: Крафты
 
 
 - type: entity
-  name: динамитная шашка без фитиля
-  description: То что может взоваться если её попытаться сломать.
+  name: dynamite stick without fuse
+  description: Something that can explode if you try to break it.
   parent: BasePlasticExplosive
   id: StickDynamite
   components:
@@ -281,15 +282,15 @@
   - type: ExplodeOnTrigger
   - type: Craftable
   - type: RepositoryItem
-    categoryName: Крафты
+    categoryName: Crafting # Zona14: Крафты
 
 
 - type: entity
   parent: BaseItem
   id: CraftFitil
-  name: фитиль
-  description: Скрутка из фитиля, используется для поджигания или поддержания огня, особенно в свечах.
-  suffix: Stalker, крафт
+  name: wick
+  description: Wick roll, used to light or maintain a fire, especially in candles.
+  suffix: Stalker, craft # Zona14: Stalker, крафт
   components:
     - type: STWeight
       self: 0.2
@@ -301,14 +302,14 @@
       scale: 0.7, 0.7
     - type: Craftable
     - type: RepositoryItem
-      categoryName: Крафты
+      categoryName: Crafting # Zona14: Крафты
 
 - type: entity
   parent: BaseItem
   id: CraftHideBloodSucker
-  name: шкура мутанта
-  description: Необработанная шкура кровососа, достаточно крепкая.
-  suffix: Stalker, крафт
+  name: Mutant Hide
+  description: Raw bloodsucker hide, quite strong.
+  suffix: Stalker, craft # Zona14: Stalker, крафт
   components:
     - type: STWeight
       self: 5
@@ -322,4 +323,4 @@
       scale: 0.8, 0.8
     - type: Craftable
     - type: RepositoryItem
-      categoryName: Крафты
+      categoryName: Crafting # Zona14: Крафты

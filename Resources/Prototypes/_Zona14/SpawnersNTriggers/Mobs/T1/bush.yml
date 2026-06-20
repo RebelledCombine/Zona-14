@@ -1,0 +1,91 @@
+- type: entity
+  name: bush trigger (1-4) (20%)
+  id: Z14STTriggerBush142010
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger142010
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+        - Z14MobMutantBush
+      restricted:
+        - Z14MobMutantBush
+
+- type: entity
+  name: bush trigger (1-4) (50%)
+  id: Z14STTriggerBush145010
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger145010
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+        - Z14MobMutantBush
+      restricted:
+        - Z14MobMutantBush
+
+- type: entity
+  name: bush trigger (1-2) (10%)
+  id: Z14STTriggerBush121010
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger121010
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+        - Z14MobMutantBush
+      restricted:
+        - Z14MobMutantBush
+
+- type: entity
+  name: bush trigger (1-2) (50%)
+  id: Z14STTriggerBush125010
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger125010
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+        - Z14MobMutantBush
+      restricted:
+        - Z14MobMutantBush
+
+
+- type: entity
+  name: bush trigger (1) (100%) 30m
+  id: Z14STTriggerBush1110030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger1110030
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+      - Z14MobMutantBush
+      restricted:
+      - Z14MobMutantBush
+
+- type: entity
+  name: bush trigger (2) (100%) 30m
+  id: Z14STTriggerBush2210030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger2210030
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+      - Z14MobMutantBush
+      restricted:
+      - Z14MobMutantBush
+
+- type: entity
+  name: bush trigger (3) (100%) 30m
+  id: Z14STTriggerBush3310030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger3310030
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+      - Z14MobMutantBush
+      restricted:
+      - Z14MobMutantBush

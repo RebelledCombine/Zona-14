@@ -1,0 +1,76 @@
+- type: entity
+  parent: BaseItem
+  id: Z14KordonMapStack
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Cordon Map Stack
+  description: A bundle containing maps of the north and south Cordon.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Other/Maps/kordonmapstack.rsi
+    state: kordonmapstack
+  - type: SpawnItemsOnUse
+    items:
+      - id: KordonNorthMap
+      - id: KordonSouthMap
+    sound:
+      path: /Audio/Effects/unwrap.ogg
+
+
+
+- type: entity
+  parent: BaseItem
+  id: Z14SwampMap
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: SwampMap
+  description: SwampMap-desc
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Other/Maps/swampmap.rsi
+    state: swampmap
+  - type: UserInterface
+    interfaces:
+      enum.TopographyMapUIKey.Key:
+        type: TopographyMapBoundUserInterface
+  - type: TopographyMap
+    mapTexturePath: _Stalker/Objects/Other/Maps/maptextures/swampmap_tabletop.png
+    mapTextureName: swamp-button-name
+
+- type: entity
+  parent: BaseItem
+  id: Z14KordonSouthMap
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: KordonSouthMap
+  description: KordonSouthMap-desc
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Other/Maps/kordonsouthmap.rsi
+    state: kordonsouthmap
+  - type: UserInterface
+    interfaces:
+      enum.TopographyMapUIKey.Key:
+        type: TopographyMapBoundUserInterface
+  - type: TopographyMap
+    mapTexturePath: _Stalker/Objects/Other/Maps/maptextures/kordonsouthmap_tabletop.png
+    mapTextureName: kordonsouth-button-name
+
+- type: entity
+  parent: BaseItem
+  id: Z14KordonNorthMap
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: KordonNorthMap
+  description: KordonNorthMap-desc
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Other/Maps/kordonnorthmap.rsi
+    state: kordonnorthmap
+  - type: UserInterface
+    interfaces:
+      enum.TopographyMapUIKey.Key:
+        type: TopographyMapBoundUserInterface
+  - type: TopographyMap
+    mapTexturePath: _Stalker/Objects/Other/Maps/maptextures/kordonnorthmap_tabletop.png
+    mapTextureName: kordonnorth-button-name

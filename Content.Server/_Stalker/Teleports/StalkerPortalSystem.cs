@@ -46,12 +46,12 @@ public sealed class StalkerPortalSystem : SharedTeleportSystem
     private ISawmill _sawmill = default!;
 
 
-    //Путь к карте сталкер арены
+    //Path to the stalker arena map // Zona14: translated comment
     public const string ArenaMapPath = "/Maps/_StalkerMaps/PersonalStalkerArena/StalkerMap.yml";
     public Dictionary<NetUserId, EntityUid> ArenaMap { get; } = new();
     public Dictionary<NetUserId, EntityUid?> ArenaGrid { get; } = new();
 
-    //Список сталкер арен игроков(данные о карте и гриде на котором находиться сталкер арена)
+    //List of player stalker arenas (map and grid data where the stalker arena is located) // Zona14: translated comment
     public List<StalkerArenaData> StalkerArenaDataList = new(0);
 
     public override void Initialize()
@@ -77,7 +77,7 @@ public sealed class StalkerPortalSystem : SharedTeleportSystem
         });
     }
 
-    // При столкновении с порталом вне сталкер арены, происходит телепортация в сталкер арену
+    // When colliding with a portal outside the stalker arena, teleport to the stalker arena // Zona14: translated comment
     private void OnCollideStalkerPortal(EntityUid uid, StalkerPortalComponent component, ref StartCollideEvent args)
     {
         HandleStalkerPortals(uid, component, args.OtherEntity, args.OurEntity);
@@ -173,7 +173,7 @@ public sealed class StalkerPortalSystem : SharedTeleportSystem
 
 
 
-    // При столкновении с телепортом в сталкер арене происходит телепортация в тот телепорт из которого был выполнен вход в сталкер арену
+    // When colliding with a teleport in the stalker arena, teleport back to the portal from which the player entered // Zona14: translated comment
     private void OnCollideStalkerPortalPersonal(EntityUid uid, StalkerPortalPersonalComponent component, ref StartCollideEvent args)
     {
         HandleStalkerPortalPersonal(uid, component, args.OtherEntity, args.OurEntity);
@@ -209,7 +209,7 @@ public sealed class StalkerPortalSystem : SharedTeleportSystem
     }
 
 
-    // Создание сталкер арены и её первичная настройка если она ещё не была создана, в конце возвращает координаты сталкер индивидуальной арены для игрока
+    // Create the stalker arena and perform initial setup if not yet created; returns the player's individual arena coordinates // Zona14: translated comment
     public (EntityUid Map, EntityUid? Grid) StalkerAssertArenaLoaded(ICommonSession admin, string teleportName, EntityUid? returnTeleportEntityUid)
     {
         if (InStalkerTeleportDataList(admin.Name) == true)
@@ -274,7 +274,7 @@ public sealed class StalkerPortalSystem : SharedTeleportSystem
 
 
 
-    //Назначаем в персональный телепорт(который в сталкер арене) ентити айди телепорта в который необходимо вернуться при входе уже в персональный телепорт
+    //Assign to the personal teleport (in the stalker arena) the entity ID of the teleport to return to // Zona14: translated comment
     public void SetReturnPortal(EntityUid? teleport, string teleportName, EntityUid? returnTeleportEntityUid)
     {
         if (!TryComp(teleport, out TransformComponent? transformComponent))
@@ -297,7 +297,7 @@ public sealed class StalkerPortalSystem : SharedTeleportSystem
         }
     }
 
-    //Проверка по логину игрока есть ли в списке сталкер арена
+    //Check by player login whether a stalker arena exists in the list // Zona14: translated comment
     public bool InStalkerTeleportDataList(string inputLogin)
     {
         foreach (var data in StalkerArenaDataList)
@@ -310,7 +310,7 @@ public sealed class StalkerPortalSystem : SharedTeleportSystem
         return false;
     }
 
-    //Возвращаем данные сталкер арены
+    //Return stalker arena data // Zona14: translated comment
     public StalkerArenaData GetFromStalkerTeleportDataList(string inputLogin)
     {
         foreach (var data in StalkerArenaDataList)
@@ -324,14 +324,14 @@ public sealed class StalkerPortalSystem : SharedTeleportSystem
     }
 
 
-    //Данные о сталкер арене
+    //Stalker arena data // Zona14: translated comment
     public sealed class StalkerArenaData
     {
-        //Логин игрока
+        //Player login // Zona14: translated comment
         public string Login;
-        //Айди карты на котрой сталкер арена
+        //Map ID where the stalker arena is located // Zona14: translated comment
         public EntityUid MapId;
-        //Айди грида на котрой сталкер арена
+        //Grid ID where the stalker arena is located // Zona14: translated comment
         public EntityUid? GridId;
 
         public StalkerArenaData(string login, EntityUid mapId, EntityUid? gridId)

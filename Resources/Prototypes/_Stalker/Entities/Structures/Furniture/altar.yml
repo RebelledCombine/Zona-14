@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: STAltarPilgrim
   parent: AltarConvertFestival
   suffix: ST, Mapping
-  name: алтарь паломников
+  name: "Pilgrims' Altar"
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Furniture/pilgrim_altar.rsi
@@ -26,7 +27,7 @@
 - type: entity
   id: STSeraAltar
   parent: AltarBase
-  name: алтарь серафимов
+  name: Altar of Seraphim
   suffix: ST, Mapping
   components:
   - type: PsyonicsAbsorbable
@@ -70,7 +71,7 @@
 - type: entity
   id: STSeraAltar2
   parent: STSeraAltar
-  name: алтарь серафимов
+  name: "{ ent-STSeraAltar }"
   suffix: ST, Mapping
   components:
   - type: Sprite

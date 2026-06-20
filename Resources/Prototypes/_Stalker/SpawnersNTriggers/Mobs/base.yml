@@ -1,3 +1,4 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: FlexibleMarkerTrigger
   abstract: true
@@ -34,12 +35,12 @@
   id: FlexibleMarkerTrigger50
   parent: FlexibleMarkerTrigger
   abstract: true
-  suffix: ST, КД 40 МИНУТ
+  suffix: ST, CD 40 MINUTES # Zona14: ST, КД 40 МИНУТ
   components:
   - type: ApproachTrigger
 
 - type: entity
-  name: базовый триггер (1-4) (20%)
+  name: basic trigger (1-4) (20%)
   abstract: true
   id: STBaseTrigger1420
   parent: MarkerBase
@@ -60,7 +61,7 @@
       chance: 0.2
 
 - type: entity
-  name: базовый триггер (1-4) (20%) 20м
+  name: basic trigger (1-4) (20%) 20m
   abstract: true
   id: STBaseTrigger142010
   parent: MarkerBase
@@ -81,7 +82,7 @@
       chance: 0.2
 
 - type: entity
-  name: базовый триггер (1-4) (20%) 30м
+  name: basic trigger (1-4) (20%) 30m
   abstract: true
   id: STBaseTrigger142030
   parent: MarkerBase
@@ -102,7 +103,7 @@
       chance: 0.2
 
 - type: entity
-  name: базовый триггер (1-4) (10%) 20м
+  name: basic trigger (1-4) (10%) 20m
   abstract: true
   id: STBaseTrigger141010
   parent: MarkerBase
@@ -123,7 +124,7 @@
       chance: 0.1
 
 - type: entity
-  name: базовый триггер (1-4) (10%) 30м
+  name: basic trigger (1-4) (10%) 30m
   abstract: true
   id: STBaseTrigger141030
   parent: MarkerBase
@@ -144,7 +145,7 @@
       chance: 0.1
 
 - type: entity
-  name: базовый триггер (1-4) (25%) 20м
+  name: basic trigger (1-4) (25%) 20m
   abstract: true
   id: STBaseTrigger142510
   parent: MarkerBase
@@ -165,7 +166,7 @@
       chance: 0.25
 
 - type: entity
-  name: базовый триггер (1-4) (25%) 30м
+  name: basic trigger (1-4) (25%) 30m
   abstract: true
   id: STBaseTrigger142530
   parent: MarkerBase
@@ -186,7 +187,7 @@
       chance: 0.25
 
 - type: entity
-  name: базовый триггер (1-4) (50%) 20м
+  name: basic trigger (1-4) (50%) 20m
   abstract: true
   id: STBaseTrigger145010
   parent: MarkerBase
@@ -207,7 +208,7 @@
       chance: 0.5
 
 - type: entity
-  name: базовый триггер (1-4) (50%) 30м
+  name: basic trigger (1-4) (50%) 30m
   abstract: true
   id: STBaseTrigger145030
   parent: MarkerBase
@@ -228,7 +229,7 @@
       chance: 0.5
 
 - type: entity
-  name: базовый триггер (1-4) (75%) 20м
+  name: basic trigger (1-4) (75%) 20m
   abstract: true
   id: STBaseTrigger147510
   parent: MarkerBase
@@ -249,7 +250,7 @@
       chance: 0.75
 
 - type: entity
-  name: базовый триггер (1-4) (75%) 30м
+  name: basic trigger (1-4) (75%) 30m
   abstract: true
   id: STBaseTrigger147530
   parent: MarkerBase
@@ -270,7 +271,7 @@
       chance: 0.75
 
 - type: entity
-  name: базовый триггер (1-4) (100%) 20м
+  name: basic trigger (1-4) (100%) 20m
   abstract: true
   id: STBaseTrigger1410010
   parent: MarkerBase
@@ -291,7 +292,7 @@
       chance: 1
 
 - type: entity
-  name: базовый триггер (1-4) (100%) 30м
+  name: basic trigger (1-4) (100%) 30m
   abstract: true
   id: STBaseTrigger1410030
   parent: MarkerBase
@@ -312,7 +313,7 @@
       chance: 1
 
 - type: entity
-  name: базовый триггер (1-2) (10%) 20м
+  name: basic trigger (1-2) (10%) 20m
   id: STBaseTrigger121010
   parent: MarkerBase
   abstract: true
@@ -333,7 +334,7 @@
       chance: 0.10
 
 - type: entity
-  name: базовый триггер (1-2) (10%) 30м
+  name: basic trigger (1-2) (10%) 30m
   id: STBaseTrigger121030
   parent: MarkerBase
   abstract: true
@@ -354,7 +355,7 @@
       chance: 0.10
 
 - type: entity
-  name: базовый триггер (1-2) (25%) 20м
+  name: basic trigger (1-2) (25%) 20m
   id: STBaseTrigger122510
   parent: MarkerBase
   abstract: true
@@ -375,7 +376,7 @@
       chance: 0.25
 
 - type: entity
-  name: базовый триггер (1-2) (25%) 30м
+  name: basic trigger (1-2) (25%) 30m
   id: STBaseTrigger122530
   parent: MarkerBase
   abstract: true
@@ -396,7 +397,7 @@
       chance: 0.25
 
 - type: entity
-  name: базовый триггер (1-2) (50%) 20м
+  name: basic trigger (1-2) (50%) 20m
   id: STBaseTrigger125010
   parent: MarkerBase
   abstract: true
@@ -417,7 +418,7 @@
       chance: 0.50
 
 - type: entity
-  name: базовый триггер (1-2) (50%) 30м
+  name: basic trigger (1-2) (50%) 30m
   id: STBaseTrigger125030
   parent: MarkerBase
   abstract: true
@@ -438,7 +439,7 @@
       chance: 0.50
 
 - type: entity
-  name: базовый триггер (1-2) (75%) 20м
+  name: basic trigger (1-2) (75%) 20m
   id: STBaseTrigger127510
   parent: MarkerBase
   abstract: true
@@ -459,7 +460,7 @@
       chance: 0.75
 
 - type: entity
-  name: базовый триггер (1-2) (75%) 30м
+  name: basic trigger (1-2) (75%) 30m
   id: STBaseTrigger127530
   parent: MarkerBase
   abstract: true
@@ -480,7 +481,7 @@
       chance: 0.75
 
 - type: entity
-  name: базовый триггер (1-2) (100%) 20м
+  name: basic trigger (1-2) (100%) 20m
   id: STBaseTrigger1210010
   abstract: true
   parent: MarkerBase
@@ -501,7 +502,7 @@
       chance: 0.5
 
 - type: entity
-  name: базовый триггер (1-2) (100%) 30м
+  name: basic trigger (1-2) (100%) 30m
   id: STBaseTrigger1210030
   abstract: true
   parent: MarkerBase
@@ -522,7 +523,7 @@
       chance: 1
 
 - type: entity
-  name: базовый триггер (1-1) (10%) 20м
+  name: basic trigger (1-1) (10%) 20m
   id: STBaseTrigger111010
   parent: MarkerBase
   abstract: true
@@ -543,7 +544,7 @@
       chance: 0.10
 
 - type: entity
-  name: базовый триггер (1-1) (10%) 30м
+  name: basic trigger (1-1) (10%) 30m
   id: STBaseTrigger111030
   parent: MarkerBase
   abstract: true
@@ -564,7 +565,7 @@
       chance: 0.10
 
 - type: entity
-  name: базовый триггер (1-1) (25%) 20м
+  name: basic trigger (1-1) (25%) 20m
   id: STBaseTrigger112510
   parent: MarkerBase
   abstract: true
@@ -585,7 +586,7 @@
       chance: 0.25
 
 - type: entity
-  name: базовый триггер (1-1) (25%) 30м
+  name: basic trigger (1-1) (25%) 30m
   id: STBaseTrigger112530
   parent: MarkerBase
   abstract: true
@@ -606,7 +607,7 @@
       chance: 0.25
 
 - type: entity
-  name: базовый триггер (1-1) (50%) 20м
+  name: basic trigger (1-1) (50%) 20m
   id: STBaseTrigger115010
   parent: MarkerBase
   abstract: true
@@ -627,7 +628,7 @@
       chance: 0.5
 
 - type: entity
-  name: базовый триггер (1-1) (50%) 30м
+  name: basic trigger (1-1) (50%) 30m
   id: STBaseTrigger115030
   parent: MarkerBase
   abstract: true
@@ -648,7 +649,7 @@
       chance: 0.5
 
 - type: entity
-  name: базовый триггер (1-1) (75%) 20м
+  name: basic trigger (1-1) (75%) 20m
   id: STBaseTrigger117510
   parent: MarkerBase
   abstract: true
@@ -669,7 +670,7 @@
       chance: 0.75
 
 - type: entity
-  name: базовый триггер (1-1) (75%) 30м
+  name: basic trigger (1-1) (75%) 30m
   id: STBaseTrigger117530
   parent: MarkerBase
   abstract: true
@@ -690,7 +691,7 @@
       chance: 0.75
 
 - type: entity
-  name: базовый триггер (1-1) (100%) 20м
+  name: basic trigger (1-1) (100%) 20m
   id: STBaseTrigger1110010
   parent: MarkerBase
   abstract: true
@@ -711,7 +712,7 @@
       chance: 1
 
 - type: entity
-  name: базовый триггер (1-1) (100%) 30м
+  name: basic trigger (1-1) (100%) 30m
   id: STBaseTrigger1110030
   parent: MarkerBase
   abstract: true
@@ -733,7 +734,7 @@
 
 
 - type: entity
-  name: триггер редкий моб (1) (25%)
+  name: rare mob trigger (1) (25%)
   id: STBaseTrigger125
   abstract: true
   parent: MarkerBase
@@ -754,7 +755,7 @@
       chance: 0.25
 
 - type: entity
-  name: триггер босс (1) (100%)
+  name: boss trigger (1) (100%)
   id: STBaseTriggerBoss
   abstract: true
   parent: MarkerBase

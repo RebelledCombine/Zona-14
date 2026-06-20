@@ -1,7 +1,8 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: STClothingOuterArmorStorageBasic
   id: STClothingOuterHeavyTor
-  name: Тяжёлый бронежилет "Тор"
+  name: Heavy "Thor" Body Armor
   description: 
   suffix: ST, T6, PVP
   components:

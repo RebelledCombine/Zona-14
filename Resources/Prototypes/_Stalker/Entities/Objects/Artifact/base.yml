@@ -1,7 +1,8 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: BaseItem
   id: BaseArtifact
-  name: артефакт
+  name: Artifact
   suffix: Stalker
   components:
     - type: PsyonicsAbsorbable
@@ -30,7 +31,7 @@
       - STArtifact
     - type: Material
     - type: RepositoryItem
-      categoryName: Артефакты
+      categoryName: Artifacts # Zona14: Артефакты
     - type: Craftable
     - type: Currency
       price:

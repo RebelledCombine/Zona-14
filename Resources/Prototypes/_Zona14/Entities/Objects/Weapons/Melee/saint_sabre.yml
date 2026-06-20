@@ -1,0 +1,31 @@
+- type: entity
+  name: Holy Sword of the Inquisition
+  parent: BaseKnife
+  id: Z14SaintSabre
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: Medium option for slicing infidels.
+  components:
+  - type: STWeight
+    self: -5
+  - type: Clothing
+    slots: [belt]
+    sprite: _Stalker/Objects/Weapons/Melee/saint_sabre.rsi
+  - type: Sprite
+    sprite: _Stalker/Objects/Weapons/Melee/saint_sabre.rsi
+    state: icon
+  - type: Item
+    sprite: _Stalker/Objects/Weapons/Melee/saint_sabre.rsi
+  - type: MeleeWeapon
+    attackRate: 1.8
+    range: 1.6
+    damage:
+      types:
+        Slash: 45
+        Heat: 10
+  - type: Reflect
+    reflectProb: 0.1
+    spread: 45
+  - type: Tag
+    tags:
+      - CaptainSabre

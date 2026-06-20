@@ -1,7 +1,8 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: 338Mag10
-  name: магазин .338 Lapua Magnum (10)
-  description: Магазин .338 Lapua Magnum для снайперских винтовок. Вместимость пуль 10. Продают пустым.
+  name: .338 Lapua Magnum magazine (10)
+  description: .338 Lapua Magnum magazine for sniper rifles. 10-round capacity. Sold empty.
   parent: Base545Mag10
   suffix: Stalker
   components:

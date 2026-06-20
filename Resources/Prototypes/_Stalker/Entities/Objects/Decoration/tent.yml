@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: tent
   parent: BaseRock
-  name: палатка
+  name: tent
   suffix: ST, Mapping
-  description: Палатка, что укроет от дождя - но не от мутантов.
+  description: A tent that will shelter you from the rain - but not from mutants.
   components:
   - type: Sprite
     scale: 1.5, 1.5
@@ -14,9 +15,9 @@
 - type: entity
   id: tent2
   parent: BaseRock
-  name: палатка
+  name: "{ ent-tent }"
   suffix: ST, Mapping
-  description: Палатка, что укроет от дождя - но не от мутантов.
+  description: "{ ent-tent.desc }"
   components:
   - type: Sprite
     noRot: false

@@ -1,0 +1,36 @@
+- type: craftRecipe
+  id: Z14recipeFoodSTGauzeBarbaris
+  resultProtos:
+    - STGauzeBarbaris
+  craftTime: 3
+  items:
+    StalkerFoodBarbarisPulb:
+      amount: 1
+    STGauze:
+      amount: 5
+
+- type: craftRecipe
+  id: Z14recipeStalkerFoodUniPulb
+  resultProtos:
+    - StalkerFoodUniPulb
+  craftTime: 3
+  items:
+    StalkerFoodBarbarisPulb:
+      amount: 1
+    StalkerFoodGojiPulb:
+      amount: 1
+    StalkerFoodIrgaPulb:
+      amount: 1
+    StalkerFoodVolkPulb:
+      amount: 1
+
+- type: craftRecipe
+  id: Z14recipeFoodSTGauzeUni
+  resultProtos:
+    - STGauzeUniversal
+  craftTime: 3
+  items:
+    StalkerFoodUniPulb:
+      amount: 1
+    STGauze:
+      amount: 5

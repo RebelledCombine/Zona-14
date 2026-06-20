@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: longrangemetaldetector
   parent: BaseItem
-  name: Металлодетектор дальнего действия
-  description: Аномальный ручной металлодетектор, был узконаправленно модифицирован для поиска тайников.
+  name: Long-range metal detector
+  description: "A metal detector that's been modified to detect hidden caches from a distance."
   suffix: ST
   components:
   - type: Sprite
@@ -40,8 +41,8 @@
 - type: entity
   parent: BaseItem
   id: longrangemetaldetectorBox
-  name: Коробка из тайника
-  description: Ящик из тайника
+  name: Cache box
+  description: Cache Crate
   components:
     - type: Item
       size: Large
@@ -115,8 +116,8 @@
 - type: entity
   id: longrangemetaldetectorCrate
   parent: BaseStructure
-  name: Тайник (Невидимый)
-  description: Закопанный Тайник
+  name: Geocache (Invisible)
+  description: Buried Stash
   components:
   - type: Transform
     anchored: true
@@ -143,7 +144,7 @@
       - HideContextMenu
 
 - type: entity
-  name: тайник спавнер невидимый (25 %)
+  name: invisible cache spawner (25%)
   id: longrangemetaldetectorCrateSpawner25
   parent: MarkerBase
   components:
@@ -158,7 +159,7 @@
       chance: 0.25
 
 - type: entity
-  name: тайник спавнер невидимый (10 %)
+  name: invisible cache spawner (10%)
   id: longrangemetaldetectorCrateSpawner
   parent: MarkerBase
   components:
@@ -173,7 +174,7 @@
       chance: 0.1
 
 - type: entity
-  name: тайник спавнер невидимый (5 %)
+  name: invisible cache spawner (5%)
   id: longrangemetaldetectorCrateSpawner05
   parent: MarkerBase
   components:
@@ -188,7 +189,7 @@
       chance: 0.05
 
 - type: entity
-  name: тайник спавнер невидимый (1 %)
+  name: invisible cache spawner (1%)
   id: longrangemetaldetectorCrateSpawner01
   parent: MarkerBase
   components:
@@ -205,8 +206,8 @@
 - type: entity
   id: longrangemetaldetectorCrategrass
   parent: BaseStructure
-  name: Тайник (спрайт травы)
-  description: Закопанный Тайник, Трава
+  name: Cache (grass sprite)
+  description: Buried Cache, Grass
   components:
   - type: Transform
     anchored: true
@@ -233,7 +234,7 @@
       - HideContextMenu
 
 - type: entity
-  name: тайник спавнер трава (10 %)
+  name: grass cache spawner (10%)
   id: longrangemetaldetectorCrategrassSpawner
   parent: MarkerBase
   components:
@@ -248,7 +249,7 @@
       chance: 0.1
 
 - type: entity
-  name: тайник спавнер трава (5 %)
+  name: grass cache spawner (5%)
   id: longrangemetaldetectorCrategrassSpawner05
   parent: MarkerBase
   components:
@@ -263,7 +264,7 @@
       chance: 0.05
 
 - type: entity
-  name: тайник спавнер трава (1 %)
+  name: grass cache spawner (1%)
   id: longrangemetaldetectorCrategrassSpawner01
   parent: MarkerBase
   components:

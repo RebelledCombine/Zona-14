@@ -1,7 +1,8 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: Base545MagRPK
-  name: магазин РПК
-  description: Магазин 5.45х39 для РПК.
+  name: RPK magazine
+  description: A 5.45x39 magazine for the RPK.
   parent: BaseItem
   suffix: Stalker
   components:
@@ -29,7 +30,7 @@
         ents: [ ]
       item_slot: !type:ContainerSlot { }
   - type: RepositoryItem
-    categoryName: Магазины
+    categoryName: Magazines # Zona14: Магазины
   - type: Sprite
     sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Magazines/545/60.rsi
     layers:

@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: CementBag
   parent: BaseStructureDynamic
-  name: Мешок с цементом
+  name: Bag of cement
   suffix: ST, Mapping
-  description: Картонный мешок с цементом, вероятно залежавшимся.
+  description: Cardboard bag with cement, probably stale.
   placement:
     mode: PlaceFree
   components:

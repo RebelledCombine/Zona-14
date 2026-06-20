@@ -1,5 +1,6 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
-  name: Меченый T4 Spawner
+  name: Marked One T4 Spawner
   id: STSpawnMobStalkerT4
   parent: MarkerBase
   suffix: DEBUG
@@ -14,7 +15,7 @@
     - STMobStalkerT4
 
 - type: entity
-  name: Меченый Spawner
+  name: Marked One Spawner
   id: STSpawnMobStalker
   parent: MarkerBase
   suffix: DEBUG

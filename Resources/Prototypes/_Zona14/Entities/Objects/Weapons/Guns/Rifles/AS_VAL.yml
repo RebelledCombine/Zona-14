@@ -77,7 +77,7 @@
   id: Z14STWeaponRifleASVALSelebra
   suffix: Z14
   categories: [ Zona14 ]
-  name: AS-VAL "Selebra"
+  name: 'AS-VAL "Selebra"'
   description: Custom AS VAL with "Poisk" camouflage pattern. Often used by experienced lone stalkers who prefer to work quietly and efficiently.
   components:
   - type: Clothing

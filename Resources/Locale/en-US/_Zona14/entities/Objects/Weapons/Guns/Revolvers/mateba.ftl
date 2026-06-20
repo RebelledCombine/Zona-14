@@ -1,0 +1,7 @@
+ent-Z14WeaponGameRevolverMateba = Game Mateba
+    .desc = The iconic sidearm of the dreaded death squads. Uses .44 Remington Magnum ammo.
+    .suffix = Z14
+
+ent-Z14WeaponRevolverJoker = Mateba Joker
+    .desc = A modified version of the "Mateba Autorevolver" revolver used by anomalists as a Joker in their sleeve. Uses .44 Remington Magnum ammunition.
+    .suffix = Z14

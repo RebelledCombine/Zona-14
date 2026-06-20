@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
-  name: РПГ-7
+  name: RPG-7
   parent: BaseWeaponLauncher
   suffix: ST
   id: STWeaponLauncherRocket
-  description: Оружие возмездия СОПа
+  description: SOP Retaliation Weapon
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Weapons/Guns/Launchers/rpg-7.rsi
@@ -35,7 +36,7 @@
   - type: PullDoAfter
     pullTime: 2.0
   - type: RepositoryItem
-    categoryName: Оружие
+    categoryName: Weapons # Zona14: Оружие
   - type: Wieldable
   - type: GunRequiresWield
 

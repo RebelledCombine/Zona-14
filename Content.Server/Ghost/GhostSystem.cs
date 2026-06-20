@@ -465,7 +465,7 @@ namespace Content.Server.Ghost
         public EntityUid? SpawnGhost(Entity<MindComponent?> mind, EntityCoordinates? spawnPosition = null,
             bool canReturn = false, bool? adminObserve = false)
         {
-            // stalker-changes-start Сталкер воскресе из мертвых, смертью смерть поправ.
+            // stalker-changes-start Stalker rose from the dead. // Zona14: translated from Russian
             var userId = mind.Comp?.UserId;
             ICommonSession? session = null;
 

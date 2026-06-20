@@ -1,0 +1,693 @@
+############### Meat
+
+- type: reagent
+  id: Z14MToxin
+  name: reagent-name-mtoxin
+  parent: Toxin
+  desc: reagent-desc-mtoxin
+  physicalDesc: reagent-physical-desc-sweet
+  flavor: salty
+  color: "#660099"
+  metabolisms:
+    Poison:
+      metabolismRate: 0.2
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Poison: 0.3
+
+- type: entity
+  name: rotten meat
+  parent: FoodMeatBase
+  id: Z14FoodMeatRotten
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: Halfway to becoming fertilizer for your garden.
+  components:
+  - type: Tag
+    tags:
+    - Raw
+    - Meat
+    - Trash
+    - Recyclable
+  - type: Sprite
+    state: rotten
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 5
+        - ReagentId: GastroToxin
+          Quantity: 4
+        - ReagentId: Fat
+          Quantity: 4
+  - type: Trash
+    time: 300
+
+- type: reagent
+  id: Z14MRadin
+  name: reagent-name-mradin
+  group: Medicine
+  desc: reagent-desc-mradin
+  physicalDesc: reagent-physical-desc-cloudy
+  flavor: medicine
+  color: "#bd5902"
+  metabolisms:
+    Medicine:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Radiation: -1
+
+- type: entity
+  name: raw salo (fat)
+  parent: FoodMeatBase
+  id: Z14STFoodMeatSalo
+  categories: [ Zona14 ]
+  description: A piece of raw boar fat.
+  suffix: Z14
+  components:
+  - type: STWeight
+    self: 1.0
+  - type: Sprite
+    sprite: _Stalker_EN/Objects/Consumable/Food/meat.rsi # EN
+    state: salo # EN
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 9
+        - ReagentId: Fat
+          Quantity: 9
+        - ReagentId: Z14MToxin
+          Quantity: 10
+  - type: InternalTemperature
+    conductivity: 0.43
+  - type: SliceableFood # EN
+    slice: Z14FoodSaloSlice
+    count: 3
+  - type: Construction
+    graph: Z14MeatSaloCook
+    node: start
+    defaultTarget: salo
+  - type: Tag
+    tags:
+    - Meat
+  - type: Craftable
+
+- type: entity
+  name: cooked salo
+  parent: FoodMeatBase
+  id: Z14STFoodMeatSaloCooked
+  categories: [ Zona14 ]
+  description: Cooked boar fat.
+  suffix: Z14
+  components:
+  - type: STWeight
+    self: 0.8
+  - type: Craftable
+  - type: Tag
+    tags:
+    - Cooked
+    - Meat
+    - Steak
+  - type: Sprite
+    layers:
+    - state: goliath-cooked
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 10
+        - ReagentId: Protein
+          Quantity: 5
+        - ReagentId: Z14MRadin
+          Quantity: 10
+  - type: Construction
+    graph: Z14MeatSaloCook
+    node: salo
+
+- type: constructionGraph
+  id: Z14MeatSaloCook
+  start: start
+  graph:
+
+  - node: start
+    edges:
+    - to: salo
+      completed:
+      - !type:PlaySound
+        sound: /Audio/Effects/sizzle.ogg
+      steps:
+      - minTemperature: 335
+
+  - node: salo
+    entity: Z14STFoodMeatSaloCooked
+
+###############Bread
+
+- type: entity
+  parent: FoodInjectableBase
+  id: Z14STFoodBreadBase
+  categories: [ Zona14 ]
+  abstract: true
+  components:
+  - type: FlavorProfile
+    flavors:
+      - bread
+  - type: Edible
+  - type: Sprite
+    sprite: Objects/Consumable/Food/Baked/bread.rsi
+  - type: RepositoryItem
+    categoryName: repository-misc-category
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 26
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 20
+
+- type: entity
+  parent: Z14STFoodBreadBase
+  id: Z14STFoodBreadSliceBase
+  categories: [ Zona14 ]
+  abstract: true
+  components:
+  - type: Item
+    size: Tiny
+  - type: FlavorProfile
+    flavors:
+      - bread
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 8
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 4
+  - type: Tag
+    tags:
+    - Meat
+
+- type: entity
+  name: loaf of bread
+  parent: Z14STFoodBreadBase
+  id: Z14STFoodBreadPlain
+  categories: [ Zona14 ]
+  description: No one knows who bakes bread in the Zone or how it gets through the perimeter. But this bread is uncontaminated, non-radioactive, fresh enough, and edible. At least no stalker has complained yet.
+  suffix: Z14
+  components:
+  - type: Edible
+  - type: Sprite
+    layers:
+    - state: plain
+  - type: SliceableFood
+    slice: Z14STFoodBreadPlainSlice
+  - type: Tag
+    tags:
+    - Cooked
+
+- type: entity
+  name: slice of bread
+  suffix: Z14
+  parent: Z14STFoodBreadBase
+  id: Z14STFoodBreadPlainSlice
+  categories: [ Zona14 ]
+  description: A piece of bread. At first glance, fresh enough and edible.
+  components:
+  - type: Edible
+  - type: Sprite
+    layers:
+    - state: plain-slice
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 8
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 4
+  - type: Craftable
+
+
+
+#############  Salami
+
+- type: entity
+  name: Sausage Slice
+  parent: FoodMeatBase
+  id: Z14STFoodMeatSalamiSlice
+  categories: [ Zona14 ]
+  description:  Looking closely enough, you can notice the sausage is made of not the highest quality meat.
+  suffix: Z14
+  components:
+  - type: STWeight
+    self: 0.2
+  - type: Sprite
+    state: salami-slice
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 8
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 4
+  - type: Craftable
+
+
+- type: entity
+  name: '"Practical" sausage'
+  parent: FoodMeatBase
+  id: Z14STFoodMeatSalami
+  categories: [ Zona14 ]
+  description: Often for lack of anything better, this sausage — a mix of chicken and soy substitute — becomes a stalker's breakfast, lunch, and dinner. Lasts a long time due to heavy preservatives
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: Objects/Consumable/Food/salami.rsi
+    state: salami
+  - type: SliceableFood
+    slice: Z14STFoodMeatSalamiSlice
+  - type: MeleeWeapon
+    wideAnimationRotation: 100
+    damage:
+      types:
+        Blunt: 6
+  - type: Wieldable
+  - type: Craftable
+  - type: IncreaseDamageOnWield
+    damage:
+      types:
+        Blunt: 2
+  - type: Tag
+    tags:
+    - Cooked
+
+- type: entity
+  name: “Zyryanovskaya” sausage
+  parent: FoodMeatBase
+  id: Z14STFoodMeatMeatbat
+  categories: [ Zona14 ]
+  description: Sausage made in Zyryanovka village, notable for being very heavy — heavy enough to hurt someone with.
+  suffix: Z14
+  components:
+  - type: STWeight
+    self: 20
+  - type: Sprite
+    sprite: Objects/Consumable/Food/salami.rsi
+    state: salami
+  - type: SliceableFood
+    slice: Z14STFoodMeatSalamiSlice
+  - type: MeleeWeapon
+    wideAnimationRotation: 110
+    damage:
+      types:
+        Blunt: 10
+  - type: Wieldable
+  - type: Craftable
+  - type: IncreaseDamageOnWield
+    damage:
+      types:
+        Blunt: 40
+  - type: Tag
+    tags:
+    - Cooked
+
+##### Boar
+
+- type: entity
+  name: raw boar meat
+  parent: FoodMeatRawBase
+  id: Z14FoodMeatBoar
+  categories: [ Zona14 ]
+  description: A piece of raw boar meat — better not to think about what its former owner ate.
+  suffix: Z14
+  components:
+  - type: STWeight
+    self: 1.0
+  - type: Sprite
+    sprite: _Stalker/Objects/Counsumable/Food/meat
+    state: boarraw
+    scale: 0.9, 0.9
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 13
+        - ReagentId: Fat
+          Quantity: 5
+        - ReagentId: Z14MToxin
+          Quantity: 10
+  - type: InternalTemperature
+    conductivity: 0.43
+  - type: Construction
+    graph: Z14MeatSteakBoar
+    node: start
+    defaultTarget: steak boar
+  - type: Tag
+    tags:
+    - Meat
+  - type: Craftable
+
+- type: entity
+  name: wild boar steak
+  parent: FoodMeatBase
+  id: Z14FoodMeatBoarCooked
+  categories: [ Zona14 ]
+  description: Cooked boar meat covered in a golden crispy crust, looks appetizing.
+  suffix: Z14
+  components:
+  - type: STWeight
+    self: 0.8
+  - type: Craftable
+  - type: Tag
+    tags:
+    - Cooked
+    - Meat
+    - Steak
+  - type: Sprite
+    sprite: _Stalker/Objects/Counsumable/Food/meat
+    state: boarcook
+    scale: 0.9, 0.9
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 7
+        - ReagentId: Protein
+          Quantity: 13
+        - ReagentId: Z14MToxin
+          Quantity: 5
+  - type: Construction
+    graph: Z14MeatSteakBoar
+    node: steak boar
+
+- type: constructionGraph
+  id: Z14MeatSteakBoar
+  start: start
+  graph:
+
+  - node: start
+    edges:
+    - to: steak boar
+      completed:
+      - !type:PlaySound
+        sound: /Audio/Effects/sizzle.ogg
+      steps:
+      - minTemperature: 335
+
+  - node: steak boar
+    entity: Z14FoodMeatBoarCooked
+
+######################## Dog
+
+- type: entity
+  name: raw dog meat
+  parent: FoodMeatRawBase
+  id: Z14FoodMeatDog
+  categories: [ Zona14 ]
+  description: A piece of raw mutant dog meat containing toxins dangerous to humans, but if you've been starving for days, toxins don't seem so deadly.
+  suffix: Z14
+  components:
+  - type: STWeight
+    self: 0.8
+  - type: Sprite
+    sprite: _Stalker/Objects/Counsumable/Food/meat
+    state: dograw
+    scale: 0.7, 0.7
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 6
+        - ReagentId: Fat
+          Quantity: 4
+        - ReagentId: Z14MToxin
+          Quantity: 13
+  - type: InternalTemperature
+    conductivity: 0.43
+  - type: Construction
+    graph: Z14MeatSteakDog
+    node: start
+    defaultTarget: steak dog
+  - type: Tag
+    tags:
+    - Meat
+  - type: Craftable
+
+- type: entity
+  name: Dog Meat Steak
+  parent: FoodMeatBase
+  id: Z14FoodMeatDogCooked
+  categories: [ Zona14 ]
+  description: Cooked dog meat, Korean food jokes welcome.
+  suffix: Z14
+  components:
+  - type: STWeight
+    self: 0.6
+  - type: Craftable
+  - type: Tag
+    tags:
+    - Cooked
+    - Meat
+    - Steak
+  - type: Sprite
+    sprite: _Stalker/Objects/Counsumable/Food/meat
+    state: dogcook
+    scale: 0.7, 0.7
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 4
+        - ReagentId: Protein
+          Quantity: 6
+        - ReagentId: Z14MToxin
+          Quantity: 7
+  - type: Construction
+    graph: Z14MeatSteakDog
+    node: steak dog
+
+- type: constructionGraph
+  id: Z14MeatSteakDog
+  start: start
+  graph:
+
+  - node: start
+    edges:
+    - to: steak dog
+      completed:
+      - !type:PlaySound
+        sound: /Audio/Effects/sizzle.ogg
+      steps:
+      - minTemperature: 335
+
+  - node: steak dog
+    entity: Z14FoodMeatDogCooked
+
+######################## Spider
+- type: entity
+  name: raw spider meat
+  parent: FoodMeatRawBase
+  id: Z14STFoodMeatSpider
+  categories: [ Zona14 ]
+  description: A piece of raw spider meat. Looks revolting.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: Objects/Consumable/Food/meat.rsi
+    state: spider
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 9
+        - ReagentId: Fat
+          Quantity: 9
+        - ReagentId: Ipecac
+          Quantity: 5
+  - type: Tag
+    tags:
+    - Meat
+  - type: Craftable
+
+- type: entity
+  name: spider meat steak
+  parent: FoodMeatBase
+  id: Z14STFoodMeatSpiderCooked
+  categories: [ Zona14 ]
+  description: Cooked spider meat. Looks revolting.
+  suffix: Z14
+  components:
+  - type: STWeight
+    self: 0.6
+  - type: Craftable
+  - type: Tag
+    tags:
+    - Cooked
+    - Meat
+    - Steak
+  - type: Sprite
+    layers:
+    - state: spidercutlet-cooked
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 4
+        - ReagentId: Protein
+          Quantity: 2
+        - ReagentId: Z14MRadin
+          Quantity: 3
+        - ReagentId: Ipecac
+          Quantity: 2
+
+
+###################################
+#             DRINKS             #
+###################################
+
+- type: entity
+  parent: DrinkBottleGlassBaseFull
+  id: Z14DrinkLemonadehBottleFull
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Duchess Lemonade Bottle
+  description: "One of the Soviet lemonade varieties: a non-alcoholic, highly carbonated tonic drink of light yellow color. Besides the standard lemonade base, the original drink contains syrup infused with southern dessert pear of the Duchess variety"
+  components:
+  - type: STWeight
+    self: 1.5
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        reagents:
+        - ReagentId: Lemonade
+          Quantity: 50
+        - ReagentId: SodaWater
+          Quantity: 50
+  - type: Label
+    currentLabel: lemonade
+  - type: Sprite
+    sprite: _Stalker/Objects/Counsumable/Drinks/lemonade.rsi
+  - type: Sealable
+  - type: Trash
+    time: 300
+
+
+
+
+# Stalker
+
+- type: entity
+  name: baked potatoes
+  parent: FoodProduceBase
+  id: Z14FoodPotatoCooked
+  categories: [ Zona14 ]
+  description: Baked potato that can be both simple and festive, an exquisite dish.
+  suffix: Z14
+  components:
+  - type: STWeight
+    self: 0.36
+  - type: Craftable
+  - type: FlavorProfile
+    flavors:
+      - potatoescooking
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 16
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 14
+        - ReagentId: Vitamin
+          Quantity: 2
+  - type: Sprite
+    sprite: Objects/Weapons/Bombs/hot_potato.rsi
+    state: icon
+    layers:
+    - state: icon
+      map: ["base"]
+  - type: Item
+    sprite: Objects/Weapons/Bombs/hot_potato.rsi
+    size: Small
+  - type: Tag
+    tags:
+    - Potato
+    - Vegetable
+
+
+- type: entity
+  name: potato peelings
+  parent: FoodProduceBase
+  id: Z14FoodPotatoCleaning
+  categories: [ Zona14 ]
+  description: They say chips are made from these.
+  suffix: Z14
+  components:
+  - type: STWeight
+    self: 0.01
+  - type: Craftable
+  - type: FlavorProfile
+    flavors:
+      - potatoes
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 2
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 1
+        - ReagentId: Vitamin
+          Quantity: 1
+  - type: Sprite
+    sprite: _Stalker/Objects/Specific/Hydroponics/potato.rsi
+    state: potato_cut
+  - type: Tag
+    tags:
+    - Potato
+    - Vegetable
+
+- type: entity
+  name: sausage sandwich
+  parent: Z14STFoodBreadSliceBase
+  id: Z14STFoodMeatButerbrod
+  categories: [ Zona14 ]
+  suffix: Z14
+  description: A bread or roll slice with a spread or topping of some ready-to-eat product.
+  components:
+  - type: STWeight
+    self: 0.34
+  - type: Craftable
+  - type: Sprite
+    sprite: _Stalker/Objects/Counsumable/Food/meat_buterbread.rsi
+    state: icon
+  - type: FlavorProfile
+    flavors:
+      - meaty
+      - bread
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 11
+        - ReagentId: Protein
+          Quantity: 6
+        - ReagentId: Vitamin
+          Quantity: 5
+  - type: Tag
+    tags:
+    - Meat
+    - Bread
+    - Slice

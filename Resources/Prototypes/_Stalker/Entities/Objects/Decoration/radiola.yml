@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: RadiolaStalker
   parent: BaseStructure
-  name: радиола
+  name: radiola
   suffix: ST, Mapping
-  description: Бытовое радиоэлектронное устройство, конструктивно объединяющее в одном корпусе радиоприёмник и электрофон.
+  description: A household electronic device that structurally combines a radio receiver and an electrophone in one case.
   components:
   - type: AmbientOnPowered
   - type: AmbientSound

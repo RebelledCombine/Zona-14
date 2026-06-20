@@ -1,0 +1,12 @@
+- type: entity
+  parent: Z14ArmorBaseT1PvP
+  id: Z14STClothingOuterInterceptorOTV
+  categories: [ Zona14 ]
+  name: Interceptor Body Armor
+  description: Type II body armor providing decent protection against some damage types.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/Interceptor_OTV.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/Interceptor_OTV.rsi

@@ -1,10 +1,11 @@
+# Zona14: translated Russian names/descriptions to English
 
 - type: entity
   parent: StalkerShop
   id: StalkerShopNeutrals
-  name: Торгомат, Нейтралы
-  description: Как торговец туда поместился?
-  suffix: ST, Mapping, Нейтралы
+  name: Torgomat, Neutrals
+  description: How did the merchant fit there?
+  suffix: ST, Mapping, Neutrals # Zona14: ST, Mapping, Нейтралы
   components:
   - type: Sprite
     drawdepth: Objects
@@ -20,9 +21,9 @@
 - type: entity
   parent: StalkerShop
   id: StalkerShopNeutralsDollar
-  name: Торгомат, Нейтралы
-  description: Как торговец туда поместился?
-  suffix: ST, Mapping, Нейтралы T4
+  name: "{ ent-StalkerShopNeutrals }"
+  description: "{ ent-StalkerShopNeutrals.desc }"
+  suffix: ST, Mapping, Neutrals T4 # Zona14: ST, Mapping, Нейтралы T4
   components:
   - type: Sprite
     drawdepth: Objects

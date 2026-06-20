@@ -1,3 +1,4 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   name: chimera (1) (25%)
   id: STTriggerChimera125
@@ -11,7 +12,7 @@
         - STMobMutantChimera
 
 - type: entity
-  name: chimera (1) (10%) 30м
+  name: chimera (1) (10%) 30m
   id: STTriggerChimera11030
   parent: STBaseTrigger111030
   suffix: ST, T4, Trigger
@@ -23,7 +24,7 @@
       - STMobMutantChimera
 
 - type: entity
-  name: chimera (1) (25%) 30м
+  name: chimera (1) (25%) 30m
   id: STTriggerChimera12530
   parent: STBaseTrigger112530
   suffix: ST, T4, Trigger
@@ -35,7 +36,7 @@
       - STMobMutantChimera
 
 - type: entity
-  name: chimera (1) (100%) 30м
+  name: chimera (1) (100%) 30m
   id: STTriggerChimera110030
   parent: STBaseTrigger1110030
   suffix: ST, T4, Trigger

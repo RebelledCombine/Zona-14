@@ -90,14 +90,14 @@ public sealed class PersistentCraftingSystem : EntitySystem
     public override void Shutdown()
     {
         base.Shutdown();
-        // Отменяем retry-циклы сохранений — иначе сервер ждёт до 15 секунд при выключении
+        // Cancel save retry loops — otherwise the server waits up to 15 seconds on shutdown // Zona14: translated comment
         _shutdownCts.Cancel();
         _shutdownCts.Dispose();
     }
 
     /// <summary>
-    /// Возвращает true если игрок отправляет запросы слишком часто.
-    /// Обновляет время последнего запроса при разрешении.
+    /// Returns true if the player is sending requests too frequently. // Zona14: translated comment
+    /// Updates the last request time when allowed. // Zona14: translated comment
     /// </summary>
     private bool IsRateLimited(
         NetUserId userId,
@@ -779,7 +779,7 @@ public sealed class PersistentCraftingSystem : EntitySystem
             }
             catch (OperationCanceledException)
             {
-                // Сервер выключается — прерываем retry без ошибки
+                // Server is shutting down — abort retry without error // Zona14: translated comment
                 Log.Info($"[PersistentCraft] Save for '{snapshot.CharacterName}' cancelled on shutdown (attempt {attempt}/{maxAttempts}).");
                 return;
             }

@@ -1,6 +1,7 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
-  name: кейс
-  description: Представляет из себя коробку, используемую для хранения и транспортировки ценных вещей.
+  name: case
+  description: A box used for storing and transporting valuable items.
   suffix: Stalker
   id: CaseStalkerQ1
   parent: BaseItem
@@ -11,7 +12,7 @@
     state: b1
 
 - type: entity
-  name: ржавый кейс
+  name: rusty case
   id: CaseStalkerQ2
   parent: CaseStalkerQ1
   components:

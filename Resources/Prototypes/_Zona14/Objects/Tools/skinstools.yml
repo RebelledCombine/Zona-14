@@ -1,0 +1,132 @@
+- type: entity
+  parent: STSkinsKitBase
+  name: Bandit Kit
+  id: Z14STSkinsKitBandits
+  categories: [ Zona14 ]
+  suffix: Z14
+
+- type: entity
+  parent: STSkinsKitBase
+  name: Bandit Kit
+  id: Z14STSkinsKitAnomalist
+  categories: [ Zona14 ]
+  suffix: Z14
+
+- type: entity
+  parent: STSkinsKitBase
+  name: Anomalist Kit
+  id: Z14STSkinsKitClearSky
+  categories: [ Zona14 ]
+  suffix: Z14
+
+- type: entity
+  parent: STSkinsKitBase
+  name: Clear Sky Kit
+  id: Z14STSkinsKitDolg
+  categories: [ Zona14 ]
+  suffix: Z14
+
+- type: entity
+  parent: STSkinsKitBase
+  name: Duty Set
+  id: Z14STSkinsKitFreedom
+  categories: [ Zona14 ]
+  suffix: Z14
+
+- type: entity
+  parent: STSkinsKitBase
+  name: Freedom Kit
+  id: Z14STSkinsKitMercenary # where?
+  categories: [ Zona14 ]
+  suffix: Z14
+
+- type: entity
+  parent: STSkinsKitBase
+  name: Mercenary Set
+  id: Z14STSkinsKitNeutral
+  categories: [ Zona14 ]
+  suffix: Z14
+
+- type: entity
+  parent: STSkinsKitBase
+  name: Neutral Set
+  id: Z14STSkinsKitMilitary
+  categories: [ Zona14 ]
+  suffix: Z14
+
+- type: entity
+  parent: STSkinsKitBase
+  name: Military Kit
+  id: Z14STSkinsKitMonolith # where?
+  categories: [ Zona14 ]
+  suffix: Z14
+
+- type: entity
+  parent: STSkinsKitBase
+  name: Monolith Set
+  id: Z14STSkinsKitRenegate
+  categories: [ Zona14 ]
+  suffix: Z14
+
+- type: entity
+  parent: STSkinsKitBase
+  name: Renegade Kit
+  id: Z14STSkinsKitCovenant # where?
+  categories: [ Zona14 ]
+  suffix: Z14
+
+- type: entity
+  parent: STSkinsKitBase
+  name: Covenant Set
+  id: Z14STSkinsKitJabs
+  categories: [ Zona14 ]
+  suffix: Z14
+
+- type: entity
+  parent: STSkinsKitBase
+  name: Toad Set
+  id: Z14STSkinsKitPoisk
+  categories: [ Zona14 ]
+  suffix: Z14
+
+- type: entity
+  parent: STSkinsKitBase
+  name: Search Set
+  id: Z14STSkinsKitSeraphim # where? There
+  categories: [ Zona14 ]
+  suffix: Z14
+
+- type: entity
+  parent: STSkinsKitBase
+  name: Seraphim Kit
+  id: Z14STSkinsKitDeserters # where?
+  categories: [ Zona14 ]
+  suffix: Z14
+
+- type: entity
+  parent: STSkinsKitBase
+  name: Deserter Kit
+  id: Z14STSkinsKitPolice # where?
+  categories: [ Zona14 ]
+  suffix: Z14
+
+- type: entity
+  parent: STSkinsKitBase
+  name: Police Kit
+  id: Z14STSkinsKitUnitar # where?
+  categories: [ Zona14 ]
+  suffix: Z14
+
+- type: entity
+  parent: STSkinsKitBase
+  name: UN Kit
+  id: Z14STSkinsKitPilgrim
+  categories: [ Zona14 ]
+  suffix: Z14
+
+- type: entity
+  parent: STSkinsKitBase
+  name: Pilgrim Kit
+  id: Z14STSkinsKitProject # add somehow
+  categories: [ Zona14 ]
+  suffix: Z14

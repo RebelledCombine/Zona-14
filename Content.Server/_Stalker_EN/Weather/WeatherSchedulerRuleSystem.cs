@@ -75,7 +75,7 @@ public sealed class WeatherSchedulerRuleSystem : GameRuleSystem<WeatherScheduler
         var query = EntityQueryEnumerator<MapComponent>();
         while (query.MoveNext(out var mapUid, out var mapComp))
         {
-            // Полное отключение погоды на карте отдельным компонентом
+            // Complete weather disable on map via separate component // Zona14: translated from Russian
             if (HasComp<DisableMapWeatherComponent>(mapUid))
             {
                 _weather.SetWeather(mapComp.MapId, null, _timing.CurTime + WeatherComponent.ShutdownTime);

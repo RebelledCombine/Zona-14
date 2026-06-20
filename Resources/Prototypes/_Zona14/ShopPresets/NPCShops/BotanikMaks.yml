@@ -2,26 +2,26 @@
   id: Z14STFoodBotanicPreset
   minSellPrice: 5
   itemsForSale:
-    FoodSTTomato: 30
-    FoodSTPotato: 25
-    FoodSTCarrot: 25
-    FoodSTCabbage: 25
-    FoodSTOnion: 25
-    FoodSTBeet: 30
+    Z14FoodSTTomato: 30
+    Z14FoodSTPotato: 25
+    Z14FoodSTCarrot: 25
+    Z14FoodSTCabbage: 25
+    Z14FoodSTOnion: 25
+    Z14FoodSTBeet: 30
 
   categories:
   - name: shop-category-provisions
     priority: 1
     items:
-      FoodSTTomato: 65
-      FoodSTPotato: 50
-      FoodSTCarrot: 50
-      FoodSTCabbage: 50
-      FoodSTOnion: 50
-      FoodSTCorn: 55
-      FoodSTBeet: 45
-      FoodSTBeans: 100
-      FoodSTRice: 100
+      Z14FoodSTTomato: 65
+      Z14FoodSTPotato: 50
+      Z14FoodSTCarrot: 50
+      Z14FoodSTCabbage: 50
+      Z14FoodSTOnion: 50
+      Z14FoodSTCorn: 55
+      Z14FoodSTBeet: 45
+      Z14FoodSTBeans: 100
+      Z14FoodSTRice: 100
   - name: shop-category-blueprints
     priority: 2
     items:

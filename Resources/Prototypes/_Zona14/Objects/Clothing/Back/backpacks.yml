@@ -1,0 +1,346 @@
+- type: entity
+  parent: STClothingBackBase
+  id: Z14ClothingBackpackDuffelGreenStalker
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Clothing Backpack Duffel Green Stalker
+  description: A backpack for carrying items.
+  components:
+    - type: STWeight
+      self: 1.7
+    - type: STWeightInsideReduction
+      reductionFraction: 0.50 # Zona14 change
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/backpacks/Duffels/duffel.rsi
+    - type: Storage # 6 slots in a row + 1 extra slot (7 total)
+      grid:
+        - 0,0,2,3
+        - 3,0,3,0
+      quickInsert: true
+      areaInsert: true
+
+- type: entity
+  parent: ClothingBackpackDuffelGreenStalker
+  id: Z14ClothingBackpackDuffelBlackStalker
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Clothing Backpack Duffel Black Stalker
+  description: A backpack for carrying items.
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/backpacks/Duffels/duffel_gray.rsi
+
+# Tier - 1
+
+- type: entity
+  parent: STClothingBackBase
+  id: Z14ClothingBackpackTownBlackStalker
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Clothing Backpack Town Black Stalker
+  description: A backpack for carrying items.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/backpacks/town_black.rsi
+  - type: STWeightInsideReduction
+    reductionFraction: 0.50 # Zona14 change
+  - type: Storage # 14 slots
+    grid:
+        - 0,0,1,0
+        - 0,1,0,1
+        - 3,0,4,0
+        - 4,1,4,1
+        - 0,3,4,3
+        - 1,2,3,2
+
+- type: entity
+  parent: ClothingBackpackTownBlackStalker
+  id: Z14ClothingBackpackTownWhiteStalker
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Clothing Backpack Town White Stalker
+  description: A backpack for carrying items.
+  components:
+  - type: STWeightInsideReduction
+    reductionFraction: 0.50 # Zona14 change
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/backpacks/town_white.rsi
+
+# Tier - 2
+
+- type: entity
+  id: Z14ClothingBackpackTacticBase
+  categories: [ HideSpawnMenu, Zona14 ]
+  # abstract: true
+  parent: ClothingBackpackDuffelGreenStalker
+  suffix: Z14
+  components:
+  - type: STWeightInsideReduction
+    reductionFraction: 0.50 # Zona14 change
+  - type: Craftable
+  - type: Storage
+    grid:
+    - 0,0,3,0 # 26 slots (can fit a submachine gun inside)
+    - 0,2,3,2
+    - 1,3,2,5
+    - 0,6,3,7
+    - 0,2,0,2
+    - 3,2,3,2
+
+- type: entity
+  parent: ClothingBackpackTacticBase
+  id: Z14ClothingBackpackTacticBeigeStalker
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Clothing Backpack Tactic Beige Stalker
+  description: A backpack for carrying items.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/backpacks/Tactical/beige.rsi
+
+- type: entity
+  parent: ClothingBackpackTacticBase
+  id: Z14ClothingBackpackTacticBlackStalker
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Clothing Backpack Tactic Black Stalker
+  description: A backpack for carrying items.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/backpacks/Tactical/black.rsi
+
+- type: entity
+  parent: ClothingBackpackTacticBase
+  id: Z14ClothingBackpackTacticBlackRadStalker
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Clothing Backpack Tactic Black Rad Stalker
+  description: A backpack for carrying items.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/backpacks/Tactical/black-red.rsi
+
+- type: entity
+  parent: ClothingBackpackTacticBase
+  id: Z14ClothingBackpackTacticGreenStalker
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Clothing Backpack Tactic Green Stalker
+  description: A backpack for carrying items.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/backpacks/Tactical/green.rsi
+
+- type: entity
+  parent: ClothingBackpackTacticBase
+  id: Z14ClothingBackpackTacticOliveStalker
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Clothing Backpack Tactic Olive Stalker
+  description: A backpack for carrying items.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/backpacks/Tactical/olive.rsi
+
+- type: entity
+  parent: ClothingBackpackTacticBase
+  id: Z14STClothingBackpackDuffelHikingNeutral
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Clothing Backpack Duffel Hiking Neutral
+  description: A backpack for carrying items.
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/backpacks/Hiking/hiking_neutral.rsi
+
+# Tier - 3
+
+# PVP backpacks (can carry weapons inside, but inconvenient for mutant parts)
+
+- type: entity
+  parent: STClothingBackBase
+  id: Z14ClothingBackpackStalkerZaryaGreen
+  categories: [ Zona14 ]
+  name: Clothing Backpack Stalker Zarya Green
+  description: A backpack for carrying items.
+  suffix: Z14
+  components:
+  - type: Storage # 41 slots (1 SMG or 14 stacks inside)
+    grid:
+    - 0,0,5,4
+    - 0,5,1,7
+    quickInsert: true
+    areaInsert: true
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/backpacks/stalker.rsi
+  - type: STWeightInsideReduction
+    reductionFraction: 0.50
+
+
+- type: entity
+  parent: ClothingBackpackStalkerZaryaGreen
+  id: Z14ClothingBackpackStalkerZaryaBlack
+  categories: [ Zona14 ]
+  name: Clothing Backpack Stalker Zarya Black
+  description: A backpack for carrying items.
+  suffix: Z14
+  components:
+  - type: STWeightInsideReduction
+    reductionFraction: 0.50
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/backpacks/stalker_black.rsi
+
+- type: entity
+  parent: STClothingBackBase
+  id: Z14ClothingBackpackMercStalker
+  categories: [ Zona14 ]
+  name: Clothing Backpack Merc Stalker
+  description: A backpack for carrying items.
+  suffix: Z14
+  components:
+  - type: Storage # 34 slots (can fit a rifle + SMG inside, or carry 11 boar stacks)
+    grid:
+    - 0,0,5,0
+    - 4,8,5,8
+    - 2,6,3,7
+    - 5,2,5,7
+    - 2,1,3,3
+    - 0,2,0,7
+    - 1,1,1,6
+    - 4,1,4,6
+    - 0,8,1,8
+    quickInsert: true
+    areaInsert: true
+  - type: STWeightInsideReduction
+    reductionFraction: 0.50 # Zona14 change
+  - type: Sprite
+    sprite: Clothing/Back/Backpacks/merc.rsi
+
+# Tier - 4
+
+- type: entity
+  parent: ClothingBackpackTacticBase
+  id: Z14STClothingBackpackT4
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Clothing Backpack T4
+  description: A backpack for carrying items.
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/backpacks/Hiking/hiking_neutral.rsi
+
+
+##-------------------------------------------
+
+# PVE backpacks (can carry more parts with the same number of slots)
+
+- type: entity
+  parent: STClothingBackBase
+  id: Z14ClothingBackpackDuffelMilitaryBlue
+  categories: [ Zona14 ]
+  name: Clothing Backpack Duffel Military Blue
+  description: A backpack for carrying items.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/backpacks/Other/backpackblue.rsi
+  - type: Storage # 40 slots, mostly small squares for carrying artifacts
+    grid:
+    - 0,0,0,7
+    - 1,0,1,1
+    - 1,6,1,7
+    - 2,2,5,5
+    - 3,7,4,7
+    - 7,0,7,7
+    - 3,4,3,4
+    - 6,0,6,1
+    - 6,3,6,4
+    - 6,6,6,7
+  - type: Tag
+    tags:
+    - STClothingBackpackT4
+    - BlockBack
+  - type: STWeightInsideReduction
+    reductionFraction: 0.50 # Zona14 change
+
+- type: entity
+  parent: STClothingBackBase
+  id: Z14ClothingBackpackDuffelHikingVSRF
+  categories: [ Zona14 ]
+  name: Clothing Backpack Duffel Hiking VSRF
+  description: A backpack for carrying items.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/backpacks/Hiking/VS_RF.rsi
+  - type: Storage # 54 slots
+    grid:
+    - 0,0,6,1
+    - 0,7,4,7
+    - 0,6,6,6
+    - 0,2,0,5
+    - 3,2,3,5
+    - 5,2,6,5
+    - 1,3,2,3
+    - 1,5,2,5
+    - 4,3,4,3
+    - 4,5,4,5
+  - type: Tag
+    tags:
+    - STClothingBackpackT4
+    - BlockBack
+  - type: STWeightInsideReduction
+    reductionFraction: 0.50 # Zona14 change
+
+- type: entity
+  parent: ClothingBackpackDuffelHikingVSRF
+  id: Z14ClothingBackpackDuffelHikingCommon
+  categories: [ Zona14 ]
+  name: Clothing Backpack Duffel Hiking Common
+  description: A backpack for carrying items.
+  suffix: Z14
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/backpacks/Hiking/common.rsi
+
+
+# Universal backpacks (squares, ideally most expensive with +20% cost per tier)
+
+- type: entity
+  parent: STClothingBackBase
+  id: Z14STClothingBackpackT5
+  categories: [ Zona14 ]
+  name: Clothing Backpack T5
+  description: A backpack for carrying items.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/backpacks/backpack-green.rsi
+  - type: Storage
+    grid:
+    - 0,0,7,7 # 66 slots
+
+
+
+# Universal backpacks (squares, ideally most expensive with +20% cost per tier)
+- type: entity
+  parent: ClothingBackpackDuffelHikingVSRF
+  id: Z14ClothingBackpackDuffelHikingVSRFAnomaly
+  categories: [ Zona14 ]
+  name: Clothing Backpack Duffel Hiking VSRF Anomaly
+  suffix: Z14
+  components:
+  - type: STWeight
+    self: -15
+
+  # Skin
+- type: entity
+  parent: STClothingBackTacticBase
+  id: Z14ClothingBackpackTacticSera
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Clothing Backpack Tactic Sera
+  description: A backpack for carrying items.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/backpacks/Tactical/tacticsera.rsi

@@ -1,5 +1,6 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
-  name: триггер рогоносец (1) (100%)
+  name: horned trigger (1) (100%)
   id: STTriggerRogonosets1100
   parent: STBaseTriggerBoss
   suffix: ST, Boss, Trigger

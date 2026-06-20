@@ -1,15 +1,16 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   abstract: true
   parent: BaseItem
   id: BaseAmmoBoxStalker
-  name: Базовая коробка сталкера
+  name: Stalker Base Box
   categories: [ HideSpawnMenu ]
   suffix: Stalker
   components:
   - type: STBulkBuyable # stalker-14-en
     maxQuantity: 10
   - type: RepositoryItem
-    categoryName: Боеприпасы
+    categoryName: Ammunition # Zona14: Боеприпасы
   - type: STWeight
     self: 0.5
   - type: BallisticAmmoProvider
@@ -40,7 +41,7 @@
   abstract: true
   parent: BaseItem
   id: BaseAmmoCinkBoxStalker
-  name: Базовый ящик сталкера
+  name: Stalker Base Box
   categories: [ HideSpawnMenu ]
   suffix: Stalker
   components:
@@ -49,7 +50,7 @@
   - type: Trash
     time: 900
   - type: RepositoryItem
-    categoryName: Патроны
+    categoryName: Cartridges # Zona14: Патроны
   - type: STWeight
     self: 20
   - type: BallisticAmmoProvider

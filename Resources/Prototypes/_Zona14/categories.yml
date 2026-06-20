@@ -1,0 +1,7 @@
+- type: entityCategory
+  id: Z14StSkipRestockTest
+  name: entity-category-name-st-skip-restock-test
+
+- type: entityCategory
+  id: Z14StSkipSpawnTest
+  name: entity-category-name-st-skip-spawn-test

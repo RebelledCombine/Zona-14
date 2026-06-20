@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: STBasaltCube
   suffix: ST, Basalt, Mapping
-  name: Базальтовый куб
-  description:  Загадочный геологический объект с необычной симметрией, состоящий из вулканических образований.
+  name: Basalt Cube
+  description: A mysterious geological object with unusual symmetry, made of volcanic formations.
   abstract: true
   components:
   - type: Sprite
@@ -46,8 +47,8 @@
     
 - type: entity
   parent: STBaseItem
-  name: Небольшой базальтовый куб
-  description: Приятный на ощупь небольшой куб из базальта.
+  name: Small basalt cube
+  description: A pleasant-to-touch small basalt cube.
   id: STBasaltCubeSmall
   components:
   - type: STWeight

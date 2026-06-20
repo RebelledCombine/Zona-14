@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: STClothingOuterBaseLarge
   id: STClothingOuterArmorRCBZ
-  name: костюм РХБЗ «Искатель»
+  name: Seeker CBRN Suit
   suffix: ST, T2, Env
-  description: Разработанный для работы в условиях радиационной, химической и биологической защиты (РХБЗ). Применяется в экспедициях на опасные химические зоны для обеспечения безопасности носителя. Не предназначен для боевых действий, а специализирован для обеспечения защиты и безопасности в условиях угрозы от радиации, химических и биологических веществ.
+  description: Designed to operate in radiation, chemical, and biological shielding (CBRN) environments. It is used in expeditions to hazardous chemical areas to ensure the safety of the carrier. It is not designed for combat operations, but is specialized to provide protection and safety in the face of the threat from radiation, chemical and biological substances.
   components:
   - type: STWeight
     self: 4
@@ -42,9 +43,9 @@
   parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
   id: ClothingHelmRCBZ
   suffix: ST, T2, Env
-  name: маска РХБЗ
+  name: CBRN Mask
   categories: [ HideSpawnMenu ]
-  description: Эффективное средство индивидуальной защиты от различных видов химических, биологических и радиоактивных угроз. Они обеспечивают надёжную фильтрацию воздуха, задерживая вредные вещества и частицы, что позволяет защитить дыхательные пути и кожу от воздействия опасных веществ.
+  description: Effective personal protective equipment against various types of chemical, biological and radioactive threats. They provide reliable air filtration, trapping harmful substances and particles, which protects the respiratory tract and skin from exposure to hazardous substances.
   components:
   - type: Tag
     tags:
@@ -81,8 +82,8 @@
 - type: entity
   parent: STClothingOuterArmorRCBZ
   id: ClothingOuterArmorRCBZDolg
-  name: костюм «РХБЗ» 'Долга'
-  description: Разработанный для работы в условиях радиационной, химической и биологической защиты (РХБЗ). Применяется в экспедициях на опасные химические зоны для обеспечения безопасности носителя. Не предназначен для боевых действий, а специализирован для обеспечения защиты и безопасности в условиях угрозы от радиации, химических и биологических веществ.
+  name: "'Duty' CBRN Suit"
+  description: Designed to operate in radiation, chemical, and biological shielding (CBRN) environments. It is used in expeditions to hazardous chemical areas to ensure the safety of the carrier. It is not designed for combat operations, but is specialized to provide protection and safety in the face of the threat from radiation, chemical and biological substances.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/outerClothing/rcbz-dolg.rsi
@@ -106,8 +107,8 @@
 - type: entity
   parent: STClothingOuterArmorRCBZ
   id: ClothingOuterArmorRCBZFreedom
-  name: костюм «РХБЗ» 'Свободы'
-  description: Разработанный для работы в условиях радиационной, химической и биологической защиты (РХБЗ). Применяется в экспедициях на опасные химические зоны для обеспечения безопасности носителя. Не предназначен для боевых действий, а специализирован для обеспечения защиты и безопасности в условиях угрозы от радиации, химических и биологических веществ.
+  name: "'Freedom' CBRN Suit"
+  description: Designed to operate in radiation, chemical, and biological shielding (CBRN) environments. It is used in expeditions to hazardous chemical areas to ensure the safety of the carrier. It is not designed for combat operations, but is specialized to provide protection and safety in the face of the threat from radiation, chemical and biological substances.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/outerClothing/rcbz-freedom.rsi
@@ -131,8 +132,8 @@
 - type: entity
   parent: STClothingOuterArmorRCBZ
   id: ClothingOuterArmorRCBZJabs
-  name: костюм «РХБЗ» 'Жаб'
-  description: Разработанный для работы в условиях радиационной, химической и биологической защиты (РХБЗ). Применяется в экспедициях на опасные химические зоны для обеспечения безопасности носителя. Не предназначен для боевых действий, а специализирован для обеспечения защиты и безопасности в условиях угрозы от радиации, химических и биологических веществ.
+  name: RChBZ Toad Suit
+  description: Designed to operate in radiation, chemical, and biological shielding (CBRN) environments. It is used in expeditions to hazardous chemical areas to ensure the safety of the carrier. It is not designed for combat operations, but is specialized to provide protection and safety in the face of the threat from radiation, chemical and biological substances.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/outerClothing/rcbz-jabs.rsi
@@ -144,8 +145,8 @@
 - type: entity
   parent: STClothingOuterArmorRCBZ
   id: ClothingOuterArmorRCBZRene
-  name: костюм «РХБЗ» 'Ренегатов'
-  description: Разработанный для работы в условиях радиационной, химической и биологической защиты (РХБЗ). Применяется в экспедициях на опасные химические зоны для обеспечения безопасности носителя. Не предназначен для боевых действий, а специализирован для обеспечения защиты и безопасности в условиях угрозы от радиации, химических и биологических веществ.
+  name: "'Renegade' CBRN Outfit"
+  description: Designed to operate in radiation, chemical, and biological shielding (CBRN) environments. It is used in expeditions to hazardous chemical areas to ensure the safety of the carrier. It is not designed for combat operations, but is specialized to provide protection and safety in the face of the threat from radiation, chemical and biological substances.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/outerClothing/rcbz-renegate.rsi
@@ -169,8 +170,8 @@
 - type: entity
   parent: STClothingOuterArmorRCBZ
   id: ClothingOuterArmorRCBZSera
-  name: костюм «РХБЗ» 'Серафимов'
-  description: Разработанный для работы в условиях радиационной, химической и биологической защиты (РХБЗ). Применяется в экспедициях на опасные химические зоны для обеспечения безопасности носителя. Не предназначен для боевых действий, а специализирован для обеспечения защиты и безопасности в условиях угрозы от радиации, химических и биологических веществ.
+  name: "'RHBZ' 'Seraphim' Suit"
+  description: Designed to operate in radiation, chemical, and biological shielding (CBRN) environments. It is used in expeditions to hazardous chemical areas to ensure the safety of the carrier. It is not designed for combat operations, but is specialized to provide protection and safety in the face of the threat from radiation, chemical and biological substances.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/outerClothing/RCBZ-Serafim.rsi
@@ -194,8 +195,8 @@
 - type: entity
   parent: STClothingOuterArmorRCBZ
   id: ClothingOuterArmorRCBZCN
-  name: костюм «РХБЗ» 'Чистого Неба'
-  description: Разработанный для работы в условиях радиационной, химической и биологической защиты (РХБЗ). Применяется в экспедициях на опасные химические зоны для обеспечения безопасности носителя. Не предназначен для боевых действий, а специализирован для обеспечения защиты и безопасности в условиях угрозы от радиации, химических и биологических веществ.
+  name: "'RChBZ' 'Clear Sky' Suit"
+  description: Designed to operate in radiation, chemical, and biological shielding (CBRN) environments. It is used in expeditions to hazardous chemical areas to ensure the safety of the carrier. It is not designed for combat operations, but is specialized to provide protection and safety in the face of the threat from radiation, chemical and biological substances.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/outerClothing/rhbz-clearsky.rsi
@@ -219,8 +220,8 @@
 - type: entity
   parent: STClothingOuterArmorRCBZ
   id: ClothingOuterArmorRCBZJournalists
-  name: костюм «РХБЗ» Журналистов
-  description: Разработанный для работы в условиях радиационной, химической и биологической защиты (РХБЗ). Применяется в экспедициях на опасные химические зоны для обеспечения безопасности носителя. Не предназначен для боевых действий, а специализирован для обеспечения защиты и безопасности в условиях угрозы от радиации, химических и биологических веществ.
+  name: '"RCBZ" Journalists suit'
+  description: Designed for working in conditions requiring radiation, chemical and biological protection (RCBZ). Used in expeditions to dangerous chemical zones to ensure the safety of the wearer. Not intended for combat operations, but specialized for providing protection and safety in conditions of threats from radiation, chemical and biological substances.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/outerClothing/rhbz-journalists.rsi
@@ -246,9 +247,9 @@
 - type: entity
   parent: STClothingOuterArmorRCBZ
   id: ClothingOuterArmorRCBZProjectPJ5
-  name: Костюм «РХБЗ PJ-5»
+  name: RChBZ PJ-5 suit
   suffix: ST, T2, Env, Project
-  description: Прототип костюма РХБЗ версии «PJ-5» которое представляет собой защитное снаряжение, специально разработанное для обеспечения максимальной защиты в условиях химических, биологических и радиационных атмосфер.
+  description: Universal development of the "Project" prototype of the "PJ-5" version of the CBRN suit, which is protective equipment specially designed to provide maximum protection in chemical, biological and radiation atmospheres.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/outerClothing/rcbz_pj5.rsi
@@ -261,8 +262,8 @@
   parent: ClothingHelmRCBZ
   id: ClothingHelmRCBZProjectPJ5
   categories: [ HideSpawnMenu ]
-  name: Маска РХБЗ «PJ-5»
-  description: Эффективное средство индивидуальной защиты от химических, биологических и радиационных угроз версии «PJ-5», является первым прототипом шлема, который обеспечивает надежную фильтрацию воздуха, задерживая вредные вещества и частицы, и защищает дыхательные пути и кожу от воздействия опасных факторов.
+  name: Mask "PJ-5"
+  description: The PJ-5 version of the Effective Personal Protective Equipment for Chemical, Biological and Radiation Hazards developed by Proekt is the first prototype helmet that provides reliable air filtration by trapping harmful substances and particles, and protects the respiratory tract and skin from the effects of hazardous factors.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/hats/rcbz_helm_pj5.rsi

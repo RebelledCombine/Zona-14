@@ -1,0 +1,65 @@
+- type: entity
+  parent: BaseWeaponRPKTurret
+  id: Z14WeaponRPKTurretSyndicate
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+    - type: NpcFactionMember
+      factions:
+        - Syndicate
+
+- type: entity
+  parent: BaseWeaponRPKTurret
+  id: Z14WeaponRPKTurretNanoTrasen
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: NpcFactionMember
+    factions:
+    - NanoTrasen
+
+- type: entity
+  parent: BaseWeaponRPKTurret
+  name: Stationary RP-74
+  id: Z14WeaponTurretNanoTrasenDisposableStalker
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+    - type: NpcFactionMember
+      factions:
+        - NanoTrasen
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 100
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+        - trigger:
+            !type:DamageTrigger
+            damage: 50
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+            - !type:TriggerBehavior
+    - type: Gun
+      fireRate: 2
+      selectedMode: FullAuto
+      availableModes:
+        - FullAuto
+      soundGunshot: /Audio/Weapons/Guns/Gunshots/gun_sentry.ogg
+    - type: BallisticAmmoProvider
+      proto: CartridgePistol
+      capacity: 50
+    - type: Repairable
+      qualityNeeded: "Anchoring"
+      doAfterDelay: 3
+    - type: TriggerOnEmptyGunshot
+    - type: ExplodeOnTrigger
+    - type: Explosive
+      explosionType: Default
+      maxIntensity: 10
+      intensitySlope: 1.5
+      totalIntensity: 30
+      canCreateVacuum: false

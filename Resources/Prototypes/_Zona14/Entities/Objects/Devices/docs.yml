@@ -1,0 +1,218 @@
+- type: entity
+  name: Documents
+  description: Information recorded on a physical medium in text form, may be a valuable item.
+  suffix: Z14
+  id: Z14DocsStalker1
+  categories: [ Zona14 ]
+  parent: BaseItem
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Misc/docs.rsi
+    scale: 0.8, 0.8
+    state: d1
+
+- type: entity
+  name: Documents
+  description: Information recorded on a physical medium in text form, may be a valuable item. The folder is marked SECRET.
+  suffix: Z14
+  id: Z14DocsStalker2
+  categories: [ Zona14 ]
+  parent: Z14DocsStalker1
+  components:
+  - type: STWeight
+    self: 0.3
+  - type: Sprite
+    sprite: _Stalker/Objects/Misc/docs.rsi
+    state: d2
+
+- type: entity
+  name: military weapons permit
+  parent: BookBase
+  suffix: Z14
+  id: Z14militaryLicense
+  categories: [ Zona14 ]
+  description: A sacred document accepted in every corner of the Zone. Smells of bureaucracy
+  components:
+    - type: STWeight
+      self: 0.2
+    - type: Clickable
+    - type: InteractionOutline
+    - type: Pullable
+    - type: Sprite
+      sprite: _Stalker/Objects/Misc/books.rsi
+      scale: 0.8, 0.8
+      layers:
+      - state: docs4
+    - type: Item
+      size: Small
+    - type: Paper
+    - type: ActivatableUI
+      key: enum.PaperUiKey.Key
+      requiresComplex: false
+    - type: Tag
+      tags:
+      - Document
+      - Paper
+      - License
+    - type: Appearance
+    - type: PaperVisuals
+
+- type: entity
+  name: hunting license
+  id: Z14hunterLicense
+  categories: [ Zona14 ]
+  parent: BookBase
+  suffix: Z14
+  description: A legal hunting permit. The paint matches the exact color of boar blood in the Zone.
+  components:
+    - type: STWeight
+      self: 0.2
+    - type: Clickable
+    - type: InteractionOutline
+    - type: Pullable
+    - type: Sprite
+      sprite: _Stalker/Objects/Misc/books.rsi
+      scale: 0.8, 0.8
+      layers:
+      - state: docs3
+    - type: Item
+      size: Small
+    - type: Paper
+    - type: ActivatableUI
+      key: enum.PaperUiKey.Key
+      requiresComplex: false
+    - type: Tag
+      tags:
+      - Document
+      - Paper
+      - License
+    - type: Appearance
+    - type: PaperVisuals
+
+- type: entity
+  name: pass to the DEF
+  id: Z14propuskChZO
+  categories: [ Zona14 ]
+  parent: BookBase
+  suffix: Z14
+  description: A laminated paper with lots of signatures. Slightly more important than a beer coaster.
+  components:
+    - type: Clickable
+    - type: InteractionOutline
+    - type: Pullable
+    - type: Sprite
+      sprite: _Stalker/Objects/Misc/books.rsi
+      scale: 0.8, 0.8
+      layers:
+      - state: docs1
+    - type: Item
+      size: Tiny
+    - type: Paper
+    - type: ActivatableUI
+      key: enum.PaperUiKey.Key
+      requiresComplex: false
+    - type: Tag
+      tags:
+      - Document
+      - Paper
+    - type: Appearance
+    - type: PaperVisuals
+
+- type: entity
+  name: Military Base Pass
+  id: Z14propuskVoenka
+  categories: [ Zona14 ]
+  parent: BookBase
+  suffix: Z14
+  description: A laminated paper certifying you're important enough to visit the military base.
+  components:
+    - type: Clickable
+    - type: InteractionOutline
+    - type: Pullable
+    - type: Sprite
+      sprite: _Stalker/Objects/Misc/books.rsi
+      scale: 0.8, 0.8
+      layers:
+      - state: docs1
+    - type: Item
+      size: Tiny
+    - type: Paper
+    - type: ActivatableUI
+      key: enum.PaperUiKey.Key
+      requiresComplex: false
+    - type: Tag
+      tags:
+      - Document
+      - Paper
+    - type: Appearance
+    - type: PaperVisuals
+
+- type: entity
+  parent: BookBase
+  id: Z14BookStalkerFAQ
+  categories: [ Zona14 ]
+  name: Zone Guide
+  description: Everything about the Zone...
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Misc/books.rsi
+    layers:
+    - state: stalker_book
+  - type: Paper
+    content: faq-stalker
+    stampState: paper_stamp-cap
+    stampedBy:
+    - stampedName: Government
+      stampedColor: "#3681bb"
+  - type: ActivatableUI
+    key: enum.PaperUiKey.Key
+    requireActiveHand: true
+    requiresComplex: true
+  - type: UserInterface
+    interfaces:
+      enum.PaperUiKey.Key:
+        type: PaperBoundUserInterface
+  - type: Trash
+    time: 240
+
+- type: entity
+  parent: BookBase
+  id: Z14BookStalkerSeraphimFAQ
+  categories: [ Zona14 ]
+  name: Diary
+  description: A diary with a strange symbol. Signed — sub-something Lex.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Misc/books.rsi
+    layers:
+    - state: book_seraphim
+  - type: ActivatableUI
+    key: enum.PaperUiKey.Key
+    requireActiveHand: true
+    requiresComplex: true
+  - type: UserInterface
+    interfaces:
+      enum.PaperUiKey.Key:
+        type: PaperBoundUserInterface
+
+- type: entity
+  parent: BookBase
+  id: Z14STPilgrimBible
+  categories: [ Zona14 ]
+  name: Covenant
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Misc/books.rsi
+    layers:
+    - state: pilgrim_bible
+  - type: ActivatableUI
+    key: enum.PaperUiKey.Key
+    requireActiveHand: true
+    requiresComplex: true
+  - type: UserInterface
+    interfaces:
+      enum.PaperUiKey.Key:
+        type: PaperBoundUserInterface

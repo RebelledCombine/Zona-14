@@ -1,0 +1,6 @@
+- type: entity
+  parent: STBaseItem
+  id: Z14STBaseWeapon
+  categories: [ Zona14 ]
+  abstract: true
+

@@ -4,7 +4,7 @@
   parent: STBaseHRBullet
   id: Z14Bullet754HPBT
   suffix: Z14
-  name: bullet (7.62x54 HP)
+  name: bullet (7.62x54 rifle)
   categories: [ HideSpawnMenu, Zona14 ]
   components:
   - type: Projectile
@@ -22,7 +22,7 @@
   parent: STBaseHRBullet
   id: Z14Bullet754FMJ
   suffix: Z14
-  name: bullet (7.62x54 FMJ)
+  name: bullet (7.62x54 rifle)
   categories: [ HideSpawnMenu, Zona14 ]
   components:
   - type: Projectile
@@ -37,7 +37,7 @@
   parent: STBaseHRBullet
   id: Z14Bullet754PC
   suffix: Z14
-  name: bullet (7.62x54 AP)
+  name: bullet (7.62x54 rifle)
   categories: [ HideSpawnMenu, Zona14 ]
   components:
   - type: Projectile
@@ -52,7 +52,7 @@
   parent: STBaseHRBullet
   id: Z14Bullet754BT
   suffix: Z14
-  name: bullet (7.62x54 AP)
+  name: bullet (7.62x54 rifle)
   categories: [ HideSpawnMenu, Zona14 ]
   components:
   - type: Projectile
@@ -67,7 +67,7 @@
   parent: STBaseHRBullet
   id: Z14Bullet754SAPB
   suffix: Z14
-  name: bullet (7.62x54 AP)
+  name: bullet (7.62x54 rifle)
   categories: [ HideSpawnMenu, Zona14 ]
   components:
   - type: Projectile

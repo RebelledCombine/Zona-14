@@ -38,7 +38,7 @@
   id: Z14STWeaponShotgunSawedOf
   suffix: Z14
   categories: [ Zona14 ]
-  name: Sawed-off Shotgun
+  name: Sawed-off TOZ-34
   description: Crudely shortened double-barreled shotgun. The weapon of choice for rookie stalkers - cheap, angry and fits under a trenchcoat. Only effective point-blank.
 
 - type: entity
@@ -46,7 +46,7 @@
   id: Z14STWeaponShotgunSawedOfAnomaly
   suffix: Z14
   categories: [ Zona14 ]
-  name: Anomalous Sawed-off
+  name: Anomalous Sawed-off TOZ-34
   description: Anomaly-tainted sawed-off shotgun. Barrels glow faintly and capacity defies physics. 'The Zone loves to distort even simple weapons'.
   components:
   - type: STWeight

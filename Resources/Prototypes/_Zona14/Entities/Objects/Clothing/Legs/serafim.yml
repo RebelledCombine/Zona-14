@@ -1,0 +1,26 @@
+- type: entity
+  parent: Z14BaseClothingLegs
+  id: Z14STClothingLegsSerafimPants
+  categories: [ Zona14 ]
+  name: pants of the follower of the son of the star
+  description: Material unknown. Size unknown. Sewing method unknown. This is something very unusual...
+  suffix: Z14
+  components:
+    - type: Unremoveable
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/Legs/Serafims/serafim_legs.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/Legs/Serafims/serafim_legs.rsi
+
+- type: entity
+  parent: Z14STClothingLegsSerafimPants
+  id: Z14STClothingLegsSerafimCherubimPants
+  categories: [ Zona14 ]
+  name: pants of a follower of the Son of the Star
+  suffix: Z14
+  components:
+    - type: Unremoveable
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/Legs/Serafims/cherubim.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/Legs/Serafims/cherubim.rsi

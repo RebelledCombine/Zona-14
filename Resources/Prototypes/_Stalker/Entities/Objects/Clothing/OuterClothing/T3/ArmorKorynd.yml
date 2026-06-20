@@ -1,8 +1,9 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: STClothingOuterArmorStorageBasic
   id: STClothingOuterKorynd
-  name: Бронежилет "Корунд"
-  description: Бронежилет 3 класса защиты.
+  name: '"Korund" Body Armor'
+  description: Type III body armor providing good protection from most types of damage.
   suffix: ST, T3, PVP
   components:
   - type: Sprite

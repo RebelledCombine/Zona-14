@@ -1,0 +1,77 @@
+- type: entity
+  id: Z14STMutantKarlik
+  categories: [ Zona14 ]
+  parent: Z14BaseMobMutant
+  name: Karlik
+  suffix: Z14
+  description: Dweller of dungeons and catacombs. They say they are victims of scientists, and now their inner rage for all atrocities and pain has burst out. Weak psionics capable of resisting a stalker and luring them into a trap.
+  components:
+  - type: EmitSoundOnSpawn
+    sound:
+      path: /Audio/_Stalker/Mutants/karlik/karlik_start.ogg
+      params:
+        volume: 1
+        maxDistance: 20
+  - type: Sprite
+    sprite: _Stalker/Mobs/Mutants/karlik.rsi
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: karlik
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: karlik
+      Dead:
+        Base: dead
+  - type: Damageable
+    damageModifierSet: Z14STMutantT2DamageModifierSet
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      200: Dead
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 200
+        behaviors:
+          - !type:PlaySoundBehavior
+            sound:
+              path: /Audio/_Stalker/Mutants/karlik/karlik_dead.ogg
+  - type: MeleeWeapon
+    soundHit:
+      path: "/Audio/Weapons/smash.ogg"
+    angle: 0
+    attackRate: 0.75
+    animation: WeaponArcPunch
+    damage:
+      types:
+        Slash: 15
+        Blunt: 5
+  - type: HTN
+    rootTask:
+      task: SimpleRangedHostileCompound
+    blackboard:
+      VisionRadius: !type:Single
+        20
+      AggroVisionRadius: !type:Single
+        15
+  - type: RechargeBasicEntityAmmo
+    rechargeCooldown: 1.5
+  - type: BasicEntityAmmoProvider
+    proto: Z14STBulletBolt
+    capacity: 1
+    count: 1
+  - type: Gun
+    fireRate: 0.5
+    useKey: false
+    projectileSpeed: 15
+    selectedMode: FullAuto
+    availableModes:
+      - FullAuto
+    soundGunshot: /Audio/_Stalker/Mutants/karlik/karlik_attack.ogg
+  - type: Butcherable
+    spawned:
+    - id: Roubles100
+      amount: 3
+      prob: 1

@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: STClothingOuterArmorStorageBasic
   id: ClothingOuterArmorSpark
-  name: костюм «Искра»
+  name: Spark Costume
   suffix: ST, T2, Env
-  description: Самопальный костюм, производимый умельцами «НИИ» из подручных предметов. Пассивно выводит радиацию по 0.1 в секунду
+  description: A homemade suit made by NII craftsmen from improvised objects. Passively removes radiation at a rate of 0.1 per second
   components:
     - type: STWeight
       self: 4.5
@@ -60,8 +61,8 @@
 - type: entity
   parent: STClothingHeadHatBase
   id: ClothingHeadHelmetSpark
-  name: капюшон «Искры»
-  description: Плотный кусок резины на вашей голове.
+  name: Spark Hood
+  description: A dense piece of rubber on your head.
   categories: [ HideSpawnMenu ]
   components:
     - type: Sprite
@@ -78,9 +79,9 @@
 - type: entity
   parent: ClothingOuterArmorSpark
   id: ClothingOuterArmorMilitarySpark
-  name: костюм «ITF» 'Военных'
+  name: "'ITF' 'Military' Outfit"
   suffix: ST, T2, Env
-  description: Комбинезон ISSG, более неизвестно. Пассивно выводит радиацию по 0.25 в секунду
+  description: ISSG overalls, more unknown. Passively removes radiation at a rate of 0.25 per second
   components:
     - type: STWeight
       self: 2.5
@@ -130,8 +131,8 @@
 - type: entity
   parent: ClothingHeadHelmetSpark
   id: ClothingHeadHelmetMilitarySpark
-  name: капюшон «ITF» 'Военных'
-  description: Плотный кусок резины на вашей голове.
+  name: "'ITF' 'Military' hood"
+  description: A dense piece of rubber on your head.
   components:
     - type: Sprite
       sprite: _Stalker/Objects/Clothing/outerClothing/Jewelry/military-spark.rsi

@@ -3,7 +3,7 @@
   id: Z14751M80Box
   suffix: Z14
   categories: [ Zona14 ]
-  name: ammo box (7.62x51) M80
+  name: Ammo Box (7.62x51) M80
   description: For NATO rifles, 30 rounds per box. Penetrates class 3 armor.
   components:
     - type: MagazineVisuals
@@ -26,7 +26,7 @@
   id: Z14751UNBox
   suffix: Z14
   categories: [ Zona14 ]
-  name: ammo box (7.62x51) Ultra Noiser
+  name: Ammo Box (7.62x51) Ultra Noiser
   description: For NATO rifles, 30 rounds per box. Useless against armor.
   components:
     - type: BallisticAmmoProvider
@@ -44,7 +44,7 @@
   id: Z14751M61Box
   suffix: Z14
   categories: [ Zona14 ]
-  name: ammo box (7.62x51) M61
+  name: Ammo Box (7.62x51) M61
   description: For NATO rifles, 30 rounds per box. Penetrates class 4 armor.
   components:
     - type: BallisticAmmoProvider
@@ -61,7 +61,7 @@
   id: Z14751M993Box
   suffix: Z14
   categories: [ Zona14 ]
-  name: ammo box (7.62x51) M993
+  name: Ammo Box (7.62x51) M993
   description: For NATO rifles, 30 rounds per box. Penetrates class 5 armor.
   components:
     - type: BallisticAmmoProvider
@@ -79,7 +79,7 @@
   id: Z14751M80BoxCink
   suffix: Z14
   categories: [ Zona14 ]
-  name: ammo crate (7.62x51) M80
+  name: Large Ammo Box (7.62x51) M80
   description: For NATO rifles, 300 rounds per crate. Penetrates class 3 armor.
   components:
     - type: BallisticAmmoProvider
@@ -100,7 +100,7 @@
   id: Z14751UNBoxCink
   suffix: Z14
   categories: [ Zona14 ]
-  name: ammo crate (7.62x51) Ultra Noiser
+  name: Large Ammo Box (7.62x51) Ultra Noiser
   description: For NATO rifles, 300 rounds per crate. Useless against armor.
   components:
     - type: BallisticAmmoProvider
@@ -117,7 +117,7 @@
   id: Z14751M61BoxCink
   suffix: Z14
   categories: [ Zona14 ]
-  name: ammo crate (7.62x51) M61
+  name: Large Ammo Box (7.62x51) M61
   description: For NATO rifles, 300 rounds per crate. Penetrates class 4 armor.
   components:
     - type: BallisticAmmoProvider
@@ -134,7 +134,7 @@
   id: Z14751M993BoxCink
   suffix: Z14
   categories: [ Zona14 ]
-  name: ammo crate (7.62x51) M993
+  name: Large Ammo Box (7.62x51) M993
   description: For NATO rifles, 300 rounds per crate. Penetrates class 5 armor.
   components:
     - type: BallisticAmmoProvider
@@ -151,7 +151,7 @@
   id: Z14754RBox
   suffix: Z14
   categories: [ Zona14 ]
-  name: ammo box (7.62x54mm) R
+  name: ammo box (7.62x54mm R)
   description: Penetrates class 4 armor.
   components:
     - type: MagazineVisuals

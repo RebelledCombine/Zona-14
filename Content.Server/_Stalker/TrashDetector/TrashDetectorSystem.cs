@@ -58,7 +58,7 @@ namespace Content.Server.TrashDetector
                 }
                 else
                 {
-                    _popupSystem.PopupEntity("Эту кучу уже недавно проверяли", user, PopupType.LargeCaution);
+                    _popupSystem.PopupEntity(Loc.GetString("st-trash-detector-already-checked"), user, PopupType.LargeCaution); // Zona14: localized
                 }
             }
 
@@ -74,7 +74,7 @@ namespace Content.Server.TrashDetector
             if (_random.Prob(comp.Probability))
             {
                 trash.TimeBeforeNextSearch = 900f;
-                _popupSystem.PopupEntity("Прибор пищит", uid, PopupType.LargeCaution);
+                _popupSystem.PopupEntity(Loc.GetString("st-trash-detector-beeping"), uid, PopupType.LargeCaution); // Zona14: localized
                 var xform = Transform(uid);
                 var coords = xform.Coordinates;
                 Spawn(comp.Loot, coords);
@@ -82,7 +82,7 @@ namespace Content.Server.TrashDetector
             else
             {
                 trash.TimeBeforeNextSearch = 900f;
-                _popupSystem.PopupEntity("Прибор не издает звука", uid, PopupType.LargeCaution);
+                _popupSystem.PopupEntity(Loc.GetString("st-trash-detector-silent"), uid, PopupType.LargeCaution); // Zona14: localized
             }
 
             args.Handled = true;

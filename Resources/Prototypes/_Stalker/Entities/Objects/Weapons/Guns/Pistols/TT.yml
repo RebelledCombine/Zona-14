@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: STBaseWeaponPistol
   id: WeaponPistolStalkerTT
-  name: Тульский Токарев
+  name: Tula Tokarev
   suffix: ST
-  description: Легендарный пистолет калибра 7.62х25, разработанный в СССР и прошедший множество войн.
+  description: A legendary 7.62x25 pistol developed in the USSR and through many wars.
   components:
   - type: STWeight
     self: 0.5

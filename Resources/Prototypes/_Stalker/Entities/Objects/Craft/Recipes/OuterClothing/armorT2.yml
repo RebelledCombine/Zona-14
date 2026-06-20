@@ -1,4 +1,4 @@
-# Заря
+# Zona14: Заря
 - type: craftRecipe
   id: recipeZaryaHunter
   resultProtos:
@@ -54,7 +54,7 @@
     STCraftPlasticFittingT2:
       amount: 1
 
-# 6Б2
+# Zona14: 6Б2
 - type: craftRecipe
   id: newrecipeClothingOuterArmor6B2
   resultProtos:
@@ -129,7 +129,7 @@
     ZoneArtifactPellicle:
       amount: 1
 
-# Кольчуга
+# Zona14: Кольчуга
 
 - type: craftRecipe
   id: newrecipeClothingOuterArmourJacketStalker
@@ -196,7 +196,7 @@
       amount: 1
 
 
-#ЗН-1
+# Zona14: ЗН-1
 
 - type: craftRecipe
   id: newrecipeClothingOuterArmorZN1

@@ -1,0 +1,32 @@
+
+- type: entity
+  parent: Z14ArmorBaseT1PvP
+  id: Z14ClothingOuterArmorAborigineStalker
+  categories: [ Zona14 ]
+  name: Native Armor Suit
+  suffix: Z14
+  description: Based on decommissioned Berill-5M armored suits, field-modified. Bullet protection dropped noticeably but all other parameters improved, making the suit balanced for its price in Zone conditions.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/aborigine.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/aborigine.rsi
+  - type: Craftable
+  - type: PressureProtection
+    highPressureMultiplier: 0.1
+    lowPressureMultiplier: 1000
+
+- type: entity
+  parent: Z14ClothingOuterArmorAborigineStalker
+  id: Z14ClothingOuterArmorAborigineFreedom
+  categories: [ Zona14 ]
+  name: Native Armor Suit
+  suffix: Z14
+  description: Based on a decommissioned Berill-5M armored suit, field-modified. Bullet protection dropped but all other parameters improved, making it balanced for its price in Zone conditions.
+  components:
+  - type: STWeight
+    self: 5
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/aborigine_freedom.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/aborigine_freedom.rsi

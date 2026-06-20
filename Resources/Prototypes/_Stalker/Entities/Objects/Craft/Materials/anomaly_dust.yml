@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: STBaseIngridient
   id: STCraftAnomalyDust
-  name: аномальная эссенция
-  description: нестабильная аномальная субстанция. Используется в разборе и сборке.
-  suffix: Stalker, крафт, аномальная эссенция
+  name: anomalous essence
+  description: an unstable anomalous substance. Used in disassembly and assembly.
+  suffix: Stalker, craft, anomalous essence # Zona14: Stalker, крафт, аномальная эссенция
   components:
     - type: Sprite
       state: core
@@ -15,4 +16,4 @@
       count: 1
     - type: Craftable
     - type: RepositoryItem
-      categoryName: Крафты
+      categoryName: Crafting # Zona14: Крафты

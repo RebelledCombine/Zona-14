@@ -1,0 +1,40 @@
+- type: entity
+  parent: Z14STMobMutantIzlom
+  id: Z14STMobMutantIzlomCommon
+  categories: [ Zona14 ]
+  name: Izlom
+  suffix: Z14
+  components:
+  - type: STMobVariant
+    quality: Common
+    applied: true
+
+- type: entity
+  parent: Z14STMobMutantIzlom
+  id: Z14STMobMutantIzlomUncommon
+  categories: [ Zona14 ]
+  name: Adapted Izlom
+  suffix: Z14
+  components:
+  - type: STMobVariant
+    quality: Uncommon
+
+- type: entity
+  parent: Z14STMobMutantIzlom
+  id: Z14STMobMutantIzlomRare
+  categories: [ Zona14 ]
+  name: Mutated Izlom
+  suffix: Z14
+  components:
+  - type: STMobVariant
+    quality: Rare
+
+- type: entity
+  parent: Z14STMobMutantIzlom
+  id: Z14STMobMutantIzlomLegendary
+  categories: [ Zona14 ]
+  name: Singular Izlom
+  suffix: Z14
+  components:
+  - type: STMobVariant
+    quality: Legendary

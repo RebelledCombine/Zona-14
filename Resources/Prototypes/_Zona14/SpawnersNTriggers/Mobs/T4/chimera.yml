@@ -1,0 +1,91 @@
+- type: entity
+  name: chimera (1) (25%)
+  id: Z14STTriggerChimera125
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger125
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+        - Z14STMobMutantChimera
+      restricted:
+        - Z14STMobMutantChimera
+
+- type: entity
+  name: chimera (1) (10%) 30m
+  id: Z14STTriggerChimera11030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger111030
+  suffix: Z14
+  components:
+  - type: SpawnOnApproach
+    prototypes:
+      - Z14STMobMutantChimera
+    restricted:
+      - Z14STMobMutantChimera
+
+- type: entity
+  name: chimera (1) (25%) 30m
+  id: Z14STTriggerChimera12530
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger112530
+  suffix: Z14
+  components:
+  - type: SpawnOnApproach
+    prototypes:
+      - Z14STMobMutantChimera
+    restricted:
+      - Z14STMobMutantChimera
+
+- type: entity
+  name: chimera (1) (100%) 30m
+  id: Z14STTriggerChimera110030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger1110030
+  suffix: Z14
+  components:
+  - type: SpawnOnApproach
+    prototypes:
+      - Z14STMobMutantChimera
+    restricted:
+      - Z14STMobMutantChimera
+
+
+- type: entity
+  name: chimera trigger (1) (100%) 30m
+  id: Z14STTriggerChimera1110030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger1110030
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+      - Z14STMobMutantChimera
+      restricted:
+      - Z14STMobMutantChimera
+
+- type: entity
+  name: chimera trigger (2) (100%) 30m
+  id: Z14STTriggerChimera2210030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger2210030
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+      - Z14STMobMutantChimera
+      restricted:
+      - Z14STMobMutantChimera
+
+- type: entity
+  name: chimera trigger (3) (100%) 30m
+  id: Z14STTriggerChimera3310030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger3310030
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+      - Z14STMobMutantChimera
+      restricted:
+      - Z14STMobMutantChimera

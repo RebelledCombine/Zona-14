@@ -1,0 +1,40 @@
+- type: entity
+  parent: Z14STMobMutantBearT3
+  id: Z14STMobMutantBearT3Common
+  categories: [ Zona14 ]
+  name: Old Bear
+  suffix: Z14
+  components:
+  - type: STMobVariant
+    quality: Common
+    applied: true
+
+- type: entity
+  parent: Z14STMobMutantBearT3
+  id: Z14STMobMutantBearT3Uncommon
+  categories: [ Zona14 ]
+  name: Adapted Old Bear
+  suffix: Z14
+  components:
+  - type: STMobVariant
+    quality: Uncommon
+
+- type: entity
+  parent: Z14STMobMutantBearT3
+  id: Z14STMobMutantBearT3Rare
+  categories: [ Zona14 ]
+  name: Mutated Old Bear
+  suffix: Z14
+  components:
+  - type: STMobVariant
+    quality: Rare
+
+- type: entity
+  parent: Z14STMobMutantBearT3
+  id: Z14STMobMutantBearT3Legendary
+  categories: [ Zona14 ]
+  name: Singular Old Bear
+  suffix: Z14
+  components:
+  - type: STMobVariant
+    quality: Legendary

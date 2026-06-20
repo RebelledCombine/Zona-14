@@ -1,0 +1,49 @@
+- type: entity
+  id: Z14Cartridge45ACPLFMJ
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Cartridge (.45 ACP) Lasermatch FMJ
+  parent: BaseCartridge45ACP
+  components:
+    - type: CartridgeAmmo
+      proto: Bullet45ACPLFMJ
+
+- type: entity
+  id: Z14Cartridge45ACPMFMJ
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Cartridge (.45 ACP) Match FMJ
+  parent: BaseCartridge45ACP
+  components:
+    - type: CartridgeAmmo
+      proto: Bullet45ACPMFMJ
+
+- type: entity
+  id: Z14Cartridge45ACPHydroshock
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Cartridge (.45 ACP) Hydro-shock
+  parent: BaseCartridge45ACP
+  components:
+    - type: CartridgeAmmo
+      proto: Bullet45ACPHydroshock
+
+- type: entity
+  id: Z14Cartridge45ACPRIP
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Cartridge (.45 ACP) RIP
+  parent: BaseCartridge45ACP
+  components:
+    - type: CartridgeAmmo
+      proto: Bullet45ACPRIP
+
+- type: entity
+  id: Z14Cartridge45ACPAP
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Cartridge (.45 ACP) AP
+  parent: BaseCartridge45ACP
+  components:
+    - type: CartridgeAmmo
+      proto: Bullet45ACPAP

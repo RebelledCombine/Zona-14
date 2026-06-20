@@ -1,0 +1,645 @@
+- type: entity
+  parent: BaseCard
+  id: Z14Clubs2
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Card
+    reserveState: clubs-2
+
+- type: entity
+  parent: BaseCard
+  id: Z14Clubs3
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Card
+    reserveState: clubs-3
+
+- type: entity
+  parent: BaseCard
+  id: Z14Clubs4
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Card
+    reserveState: clubs-4
+
+- type: entity
+  parent: BaseCard
+  id: Z14Clubs5
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Card
+    reserveState: clubs-5
+
+- type: entity
+  parent: BaseCard
+  id: Z14Clubs6
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Card
+    reserveState: clubs-6
+
+- type: entity
+  parent: BaseCard
+  id: Z14Clubs7
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Card
+    reserveState: clubs-7
+
+- type: entity
+  parent: BaseCard
+  id: Z14Clubs8
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Card
+    reserveState: clubs-8
+
+- type: entity
+  parent: BaseCard
+  id: Z14Clubs9
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Card
+    reserveState: clubs-9
+
+- type: entity
+  parent: BaseCard
+  id: Z14Clubs10
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Card
+    reserveState: clubs-10
+
+- type: entity
+  parent: BaseCard
+  id: Z14ClubsA
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Card
+    reserveState: clubs-a
+
+- type: entity
+  parent: BaseCard
+  id: Z14ClubsJ
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Card
+    reserveState: clubs-j
+
+- type: entity
+  parent: BaseCard
+  id: Z14ClubsK
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Card
+    reserveState: clubs-k
+
+- type: entity
+  parent: BaseCard
+  id: Z14ClubsQ
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Card
+    reserveState: clubs-q
+
+- type: entity
+  parent: BaseCard
+  id: Z14Diamonds2
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Card
+    reserveState: diamonds-2
+
+- type: entity
+  parent: BaseCard
+  id: Z14Diamonds3
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Card
+    reserveState: diamonds-3
+
+- type: entity
+  parent: BaseCard
+  id: Z14Diamonds4
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Card
+    reserveState: diamonds-4
+
+- type: entity
+  parent: BaseCard
+  id: Z14Diamonds5
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Card
+    reserveState: diamonds-5
+
+- type: entity
+  parent: BaseCard
+  id: Z14Diamonds6
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Card
+    reserveState: diamonds-6
+
+
+- type: entity
+  parent: BaseCard
+  id: Z14Diamonds7
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Card
+    reserveState: diamonds-7
+
+- type: entity
+  parent: BaseCard
+  id: Z14Diamonds8
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Card
+    reserveState: diamonds-8
+
+- type: entity
+  parent: BaseCard
+  id: Z14Diamonds9
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Card
+    reserveState: diamonds-9
+
+- type: entity
+  parent: BaseCard
+  id: Z14Diamonds10
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Card
+    reserveState: diamonds-10
+
+- type: entity
+  parent: BaseCard
+  id: Z14DiamondsA
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Card
+    reserveState: diamonds-a
+
+- type: entity
+  parent: BaseCard
+  id: Z14DiamondsJ
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Card
+    reserveState: diamonds-j
+
+- type: entity
+  parent: BaseCard
+  id: Z14DiamondsK
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Card
+    reserveState: diamonds-k
+
+- type: entity
+  parent: BaseCard
+  id: Z14DiamondsQ
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Card
+    reserveState: diamonds-q
+
+- type: entity
+  parent: BaseCard
+  id: Z14Hearts2
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Card
+    reserveState: hearts-2
+
+- type: entity
+  parent: BaseCard
+  id: Z14Hearts3
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Card
+    reserveState: hearts-3
+
+- type: entity
+  parent: BaseCard
+  id: Z14Hearts4
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Card
+    reserveState: hearts-4
+
+- type: entity
+  parent: BaseCard
+  id: Z14Hearts5
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Card
+    reserveState: hearts-5
+
+- type: entity
+  parent: BaseCard
+  id: Z14Hearts6
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Card
+    reserveState: hearts-6
+
+- type: entity
+  parent: BaseCard
+  id: Z14Hearts7
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Card
+    reserveState: hearts-7
+
+- type: entity
+  parent: BaseCard
+  id: Z14Hearts8
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Card
+    reserveState: hearts-8
+
+- type: entity
+  parent: BaseCard
+  id: Z14Hearts9
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Card
+    reserveState: hearts-9
+
+- type: entity
+  parent: BaseCard
+  id: Z14Hearts10
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Card
+    reserveState: hearts-10
+
+- type: entity
+  parent: BaseCard
+  id: Z14HeartsA
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Card
+    reserveState: hearts-a
+
+- type: entity
+  parent: BaseCard
+  id: Z14HeartsJ
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Card
+    reserveState: hearts-j
+
+- type: entity
+  parent: BaseCard
+  id: Z14HeartsK
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Card
+    reserveState: hearts-k
+
+- type: entity
+  parent: BaseCard
+  id: Z14HeartsQ
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Card
+    reserveState: hearts-q
+
+- type: entity
+  parent: BaseCard
+  id: Z14Spades6
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Card
+    reserveState: spades-6
+
+- type: entity
+  parent: BaseCard
+  id: Z14Spades2
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Card
+    reserveState: spades-2
+
+- type: entity
+  parent: BaseCard
+  id: Z14Spades3
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Card
+    reserveState: spades-3
+
+- type: entity
+  parent: BaseCard
+  id: Z14Spades4
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Card
+    reserveState: spades-4
+
+
+- type: entity
+  parent: BaseCard
+  id: Z14Spades5
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Card
+    reserveState: spades-5
+
+- type: entity
+  parent: BaseCard
+  id: Z14Spades7
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Card
+    reserveState: spades-7
+
+- type: entity
+  parent: BaseCard
+  id: Z14Spades8
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Card
+    reserveState: spades-8
+
+- type: entity
+  parent: BaseCard
+  id: Z14Spades9
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Card
+    reserveState: spades-9
+
+- type: entity
+  parent: BaseCard
+  id: Z14Spades10
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Card
+    reserveState: spades-10
+
+- type: entity
+  parent: BaseCard
+  id: Z14SpadesA
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Card
+    reserveState: spades-a
+
+- type: entity
+  parent: BaseCard
+  id: Z14SpadesJ
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Card
+    reserveState: spades-j
+
+- type: entity
+  parent: BaseCard
+  id: Z14SpadesK
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Card
+    reserveState: spades-k
+
+- type: entity
+  parent: BaseCard
+  id: Z14SpadesQ
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: Card
+    reserveState: spades-q
+
+- type: entity
+  parent: BaseItem
+  id: Z14BaseCardBin
+  suffix: Z14
+  categories: [ HideSpawnMenu, Zona14 ]
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Misc/cards/cardbin.rsi
+    state: card_bin0
+    drawdepth: SmallObjects
+    noRot: true
+  - type: Appearance
+  - type: ItemMapper
+    sprite: _Stalker/Objects/Misc/cards/cardbin.rsi
+    mapLayers:
+      card_bin1:
+        whitelist:
+          tags:
+          - Card
+  - type: InteractionOutline
+  - type: CardBin
+  - type: Bin
+    maxItems: 37
+    whitelist:
+      tags:
+      - Card
+  - type: ContainerContainer
+    containers:
+      bin-container: !type:Container
+
+- type: entity
+  parent: BaseCardBin
+  id: Z14CardBinEmpty
+  categories: [ Zona14 ]
+  name: Deck of cards
+  description: A deck of cards for those who really have nothing else to do.
+  suffix: Z14
+  components:
+  - type: Bin
+    maxItems: 37
+    whitelist:
+      tags:
+      - Card
+
+- type: entity
+  parent: BaseCardBin
+  id: Z14PokerCardBinEmpty
+  categories: [ Zona14 ]
+  name: Deck of cards
+  description: A poker deck of cards for those who really have nothing else to do.
+  suffix: Z14
+  components:
+  - type: Bin
+    maxItems: 53
+    whitelist:
+      tags:
+      - Card
+
+- type: entity
+  parent: BaseCardBin
+  id: Z14PokerCardBin
+  categories: [ Zona14 ]
+  name: Deck of cards
+  description: A poker deck of cards for those who really have nothing else to do.
+  suffix: Z14
+  components:
+  - type: Bin
+    maxItems: 53
+    initialContents:
+    - Clubs2
+    - Clubs3
+    - Clubs4
+    - Clubs5
+    - Clubs6
+    - Clubs7
+    - Clubs8
+    - Clubs9
+    - Clubs10
+    - ClubsA
+    - ClubsJ
+    - ClubsK
+    - ClubsQ
+    - Diamonds2
+    - Diamonds3
+    - Diamonds4
+    - Diamonds5
+    - Diamonds6
+    - Diamonds7
+    - Diamonds8
+    - Diamonds9
+    - Diamonds10
+    - DiamondsA
+    - DiamondsJ
+    - DiamondsK
+    - DiamondsQ
+    - Hearts2
+    - Hearts3
+    - Hearts4
+    - Hearts5
+    - Hearts6
+    - Hearts7
+    - Hearts8
+    - Hearts9
+    - Hearts10
+    - HeartsA
+    - HeartsJ
+    - HeartsK
+    - HeartsQ
+    - Spades2
+    - Spades3
+    - Spades4
+    - Spades5
+    - Spades6
+    - Spades7
+    - Spades8
+    - Spades9
+    - Spades10
+    - SpadesA
+    - SpadesJ
+    - SpadesK
+    - SpadesQ
+    whitelist:
+      tags:
+      - Card
+
+- type: entity
+  parent: BaseCardBin
+  id: Z14CardBin
+  categories: [ Zona14 ]
+  name: Deck of cards
+  description: A deck of cards for those who really have nothing else to do.
+  suffix: Z14
+  components:
+  - type: Bin
+    maxItems: 37
+    initialContents:
+    - Clubs6
+    - Clubs7
+    - Clubs8
+    - Clubs9
+    - Clubs10
+    - ClubsA
+    - ClubsJ
+    - ClubsK
+    - ClubsQ
+    - Diamonds6
+    - Diamonds7
+    - Diamonds8
+    - Diamonds9
+    - Diamonds10
+    - DiamondsA
+    - DiamondsJ
+    - DiamondsK
+    - DiamondsQ
+    - Hearts6
+    - Hearts7
+    - Hearts8
+    - Hearts9
+    - Hearts10
+    - HeartsA
+    - HeartsJ
+    - HeartsK
+    - HeartsQ
+    - Spades6
+    - Spades7
+    - Spades8
+    - Spades9
+    - Spades10
+    - SpadesA
+    - SpadesJ
+    - SpadesK
+    - SpadesQ
+    whitelist:
+      tags:
+      - Card

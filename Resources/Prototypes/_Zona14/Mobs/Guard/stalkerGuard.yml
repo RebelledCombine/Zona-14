@@ -1,0 +1,33 @@
+- type: entity
+  id: Z14GuardFactionControllerOffAction
+  name: Stop the attack
+  description: Makes all nearby people unattackable by mutants. Humans will be attacked by mutants again, either after 2 minutes or if this is canceled.
+  suffix: Z14
+  categories: [ HideSpawnMenu, Zona14 ]
+  components:
+  - type: Action
+    useDelay: 1
+    checkCanInteract: false
+    checkConsciousness: false
+    icon:
+      sprite: _Stalker/Interface/Actions/sin.rsi
+      state: off
+  - type: InstantAction
+    event: !type:GuardFactionControllerOffActionEvent
+
+- type: entity
+  id: Z14GuardFactionControllerOnAction
+  name: Into battle
+  description: Tells all nearby mutants to continue attacking.
+  suffix: Z14
+  categories: [ HideSpawnMenu, Zona14 ]
+  components:
+  - type: Action
+    useDelay: 1
+    checkCanInteract: false
+    checkConsciousness: false
+    icon:
+      sprite: _Stalker/Interface/Actions/sin.rsi
+      state: on
+  - type: InstantAction
+    event: !type:GuardFactionControllerOnActionEvent

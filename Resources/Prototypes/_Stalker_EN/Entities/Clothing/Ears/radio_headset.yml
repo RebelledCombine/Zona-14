@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: STRadioHeadset
   parent: BaseItem
-  name: Радиогарнитура
+  name: radio headset
   suffix: ST
-  description: Компактная радиогарнитура. Динамик всегда включен, если он установлен; включите микрофон с помощью кнопки действия.
+  description: A compact radio headset. The speaker is always on if it is installed; toggle the microphone with the action button.
   components:
   - type: RadioMicrophone
     powerRequired: false

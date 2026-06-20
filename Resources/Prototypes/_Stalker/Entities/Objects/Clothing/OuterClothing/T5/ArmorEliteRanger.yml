@@ -1,10 +1,11 @@
-# Бронька Владимера
+# Zona14: translated Russian names/descriptions to English
+# Zona14: Бронька Владимера
 - type: entity
   parent: ClothingOuterArmorReinger
   id: ClothingOuterArmorReingerElite
-  name: элитная боевая броня рейнджера
+  name: Ranger Elite Battle Armor
   suffix: ST, T6, Lord, ADMIN, Universal
-  description: Элитная боевая броня... Из будущего?? В любом случае, она явно имеет аномальные свойства.
+  description: Elite Battle Armor... From the future?? In any case, it clearly has anomalous properties.
   categories: [ HideSpawnMenu ]
   components:
   - type: STWeight

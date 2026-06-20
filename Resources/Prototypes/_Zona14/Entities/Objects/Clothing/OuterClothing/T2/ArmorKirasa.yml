@@ -1,0 +1,12 @@
+- type: entity
+  parent: Z14ArmorBaseT1PvP
+  id: Z14STClothingOuterKirasa
+  categories: [ Zona14 ]
+  name: '"Kirasa" Body Armor'
+  description: Type II body armor providing decent protection against some damage types.
+  suffix: Z14
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/Kirasa.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/Kirasa.rsi

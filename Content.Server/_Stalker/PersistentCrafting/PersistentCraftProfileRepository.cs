@@ -152,13 +152,13 @@ public sealed class PersistentCraftProfileRepository
             return false;
         }
 
-        // Цепочка миграций: каждый case мигрирует до следующей версии и проваливается дальше.
-        // При добавлении версии N: добавь case (N-1) с методом MigrateV{N-1}ToV{N},
-        // поставь changed = true и убери break — goto case N сделает остальное.
+        // Migration chain: each case migrates to the next version and falls through. // Zona14: translated comment
+        // When adding version N: add case (N-1) with MigrateV{N-1}ToV{N} method, // Zona14: translated comment
+        // set changed = true and remove break — goto case N handles the rest. // Zona14: translated comment
         switch (data.Version)
         {
             case 1:
-                // v1 → v2: структура идентична, только обновляем номер версии.
+                // v1 → v2: structure is identical, only update the version number. // Zona14: translated comment
                 data.Version = 2;
                 changed = true;
                 goto case 2;
@@ -168,8 +168,8 @@ public sealed class PersistentCraftProfileRepository
                 return true;
 
             default:
-                // Версия 0 никогда не существовала в production.
-                // Любая неизвестная старая версия трактуется как чистый профиль.
+                // Version 0 never existed in production. // Zona14: translated comment
+                // Any unknown old version is treated as a clean profile. // Zona14: translated comment
                 migrated = data;
                 changed = true;
                 return true;
@@ -183,7 +183,7 @@ public sealed class PersistentCraftProfileRepository
         var normalized = CreateDefaultSaveData();
         normalized.Version = data.Version;
 
-        // Используем одну переменную, без двойного вычисления
+        // Use a single variable, avoid double computation // Zona14: translated comment
         var sourceUnlockedNodes = data.UnlockedNodes ?? new List<string>();
         normalized.UnlockedNodes = sourceUnlockedNodes
             .Where(id => !string.IsNullOrWhiteSpace(id))

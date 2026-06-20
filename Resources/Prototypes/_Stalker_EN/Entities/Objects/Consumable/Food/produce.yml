@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 # wholesale just taking any vegetable code we need so i dont have to comment a bunch of upstream files
 # nothing is sliceable because we don't need to overcomplicate this
 # you arent a chef, youre a stalker. put the whole onion in that pot, soldier.
 - type: entity
   name: tomato
-  description: Legally, it's both a fruit and a vegetable.
+  description: "Legally, it's both a fruit and a vegetable."
   parent: [FoodProduceBase, ItemHeftyBase]
   id: FoodSTTomato
   suffix: Stalker, Food, Ingredient
@@ -179,8 +180,8 @@
     - type: Craftable
 
 - type: entity
-  name: початок кукурузы
-  description: Один целый початок.
+  name: ear of corn
+  description: One whole ear of corn.
   parent: FoodProduceBase
   id: FoodSTCorn
   suffix: Stalker, Food, Ingredient
@@ -251,7 +252,7 @@
 
 - type: entity
   name: beet
-  description: Don't underestimate the many culinary uses of a good beet.
+  description: "Don't underestimate the many culinary uses of a good beet."
   parent: FoodProduceBase
   id: FoodSTBeet
   suffix: Stalker, Food, Ingredient

@@ -1,11 +1,12 @@
+# Zona14: translated Russian names/descriptions to English
 
 
 - type: entity
   parent: STClothingMaskGas
   id: ClothingMaskRCBZ2
   suffix: ST, T5, Caustic
-  name: противогаз РХБЗ II поколения
-  description: Противогаз (РХБЗ) второго поколения оснащен фильтрами, способными эффективно улавливать и задерживать опасные вещества, что делает его незаменимым средством защиты в экстремальных условиях. Его конструкция обеспечивает комфортное ношение и хорошую вентиляцию, что позволяет сохранить высокую степень защиты при длительном использовании.
+  name: RChBZ gas mask of the second generation
+  description: The second generation gas mask (CBRN) is equipped with filters that can effectively capture and trap hazardous substances, making it an indispensable means of protection in extreme conditions. Its design provides comfortable wearing and good ventilation, which allows you to maintain a high degree of protection during long-term use.
   components:
   - type: Tag
     tags:

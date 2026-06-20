@@ -1,3 +1,4 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   abstract: true
   parent: BaseItem
@@ -31,8 +32,8 @@
   parent: EncryptionKey
   id: EncryptionKeyMercStalker
   suffix: Stalker
-  name: Ключ шифрования наёмников
-  description: Ключ шифрования Наёмников с закрытым каналом связи
+  name: Mercenary Encryption Key
+  description: Mercenary Encryption Key with a closed communication channel
   components:
   - type: EncryptionKey
     channels:

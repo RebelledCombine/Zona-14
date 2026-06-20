@@ -1,0 +1,19 @@
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14DetectorSvarogBlueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Svarog detector blueprint
+  components:
+  - type: STBlueprint
+    blueprint: recipeDetectorSvarog
+
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14DetectorVelesBlueprint
+  name: Veles detector blueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: STBlueprint
+    blueprint: recipeDetectorVeles

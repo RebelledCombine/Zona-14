@@ -1,7 +1,8 @@
+﻿# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: StalkerRail
-  name: рельсы #коммент чтобы сука заработало
-  description: Старые ЖД пути, шпалы которых уже прогнили, а метал проржавел.
+  name: rails
+  description: Old railway tracks, the sleepers of which are already rotten, and the metal is rusted.
   suffix: ST, Mapping
   placement:
     mode: AlignTileAny
@@ -23,13 +24,13 @@
       params:
         volume: 8
 
-# ВАГОНЫ С ЦИСТЕРНАМИ
+# Zona14: ВАГОНЫ С ЦИСТЕРНАМИ
 
 - type: entity
   id: StalkerCargoTank
   parent: BaseStructure
-  name: Вагон с цистерной
-  description: Вид подвижного состава железных дорог для перевозки жидкостей, в том числе нефти и продуктов её переработки, химически активных и агрессивных жидких веществ.
+  name: Wagon with tank
+  description: A type of railway rolling stock for the transportation of liquids, including oil and its refined products, chemically active and corrosive liquid substances.
   suffix: ST, Mapping
   placement:
     mode: AlignTileAny
@@ -58,8 +59,8 @@
 - type: entity
   id: StalkerCargoTank1
   parent: BaseStructure
-  name: Вагон с цистерной
-  description: Вид подвижного состава железных дорог для перевозки жидкостей, в том числе нефти и продуктов её переработки, химически активных и агрессивных жидких веществ.
+  name: "{ ent-StalkerCargoTank }"
+  description: "{ ent-StalkerCargoTank.desc }"
   suffix: ST, Mapping
   placement:
     mode: AlignTileAny
@@ -85,13 +86,13 @@
         - WallLayer
   - type: Appearance
 
-# ТЕПЛОВОЗЫ
+# Zona14: ТЕПЛОВОЗЫ
 
 - type: entity
   id: StalkerPassHead
   parent: BaseStructure
-  name: Тепловоз М62
-  description: Советский магистральный шестиосный тепловоз, изначально разработанный для эксплуатации в странах СЭВ. Выпускался Луганским тепловозостроительным заводом с 1965 года.
+  name: Diesel locomotive M62
+  description: Soviet mainline six-axle diesel locomotive, originally developed for operation in the CMEA countries. It has been produced by the Lugansk Diesel Locomotive Plant since 1965.
   suffix: ST, Mapping
   placement:
     mode: AlignTileAny
@@ -120,8 +121,8 @@
 - type: entity
   id: StalkerCargoHead
   parent: BaseStructure
-  name: Тепловоз ТЭМ6-001
-  description: Советский шестиосный маневровый тепловоз, производства Брянского завода. Создавался как универсальный локомотив, который после замены тележек или колёсных пар мог работать на железных дорогах с шириной колеи 1000, 1067, 1435 и 1520 мм, причём в условиях как умеренного, так и тропического климата.
+  name: Diesel locomotive TEM6-001
+  description: Soviet six-axle shunting diesel locomotive, manufactured by the Bryansk plant. It was created as a universal locomotive, which, after replacing bogies or wheelsets, could operate on railways with a gauge of 1000, 1067, 1435 and 1520 mm, and in both temperate and tropical climates.
   suffix: ST, Mapping
   placement:
     mode: AlignTileAny
@@ -150,8 +151,8 @@
 - type: entity
   id: StalkerCargoHead1
   parent: BaseStructure
-  name: Тепловоз М62
-  description: Советский магистральный шестиосный тепловоз, изначально разработанный для эксплуатации в странах СЭВ. Выпускался Луганским тепловозостроительным заводом с 1965 года.
+  name: "{ ent-StalkerPassHead }"
+  description: "{ ent-StalkerPassHead.desc }"
   suffix: ST, Mapping
   placement:
     mode: AlignTileAny
@@ -159,7 +160,7 @@
   - type: Sprite
     sprite: _Stalker/Structures/Railroad/Train.rsi
     layers:
-      - state: сargo_head
+      - state: cargo_head # Zona14: fixed Cyrillic с→c
   - type: Transform
     anchored: true
   - type: Physics
@@ -180,8 +181,8 @@
 - type: entity
   id: StalkerCargoHead2
   parent: BaseStructure
-  name: Тепловоз ТЭМ6-001
-  description: Советский шестиосный маневровый тепловоз, производства Брянского завода. Создавался как универсальный локомотив, который после замены тележек или колёсных пар мог работать на железных дорогах с шириной колеи 1000, 1067, 1435 и 1520 мм, причём в условиях как умеренного, так и тропического климата.
+  name: "{ ent-StalkerCargoHead }"
+  description: "{ ent-StalkerCargoHead.desc }"
   suffix: ST, Mapping
   placement:
     mode: AlignTileAny
@@ -189,7 +190,7 @@
   - type: Sprite
     sprite: _Stalker/Structures/Railroad/Train.rsi
     layers:
-      - state: сargo_head2
+      - state: cargo_head2 # Zona14: fixed Cyrillic с→c
   - type: Transform
     anchored: true
   - type: Physics
@@ -207,13 +208,13 @@
         - WallLayer
   - type: Appearance
 
-# ПАССАЖИРСКИЕ ВАГОНЫ
+# Zona14: ПАССАЖИРСКИЕ ВАГОНЫ
 
 - type: entity
   id: StalkerPassTrain
   parent: BaseStructure
-  name: пассажирский вагон
-  description: Единица подвижного состава, предназначенная для перевозки пассажиров.
+  name: passenger car
+  description: A unit of rolling stock intended for the carriage of passengers.
   suffix: ST, Mapping
   placement:
     mode: AlignTileAny
@@ -242,8 +243,8 @@
 - type: entity
   id: StalkerPassTrain1
   parent: BaseStructure
-  name: пассажирский вагон
-  description: Единица подвижного состава, предназначенная для перевозки пассажиров.
+  name: "{ ent-StalkerPassTrain }"
+  description: "{ ent-StalkerPassTrain.desc }"
   suffix: ST, Mapping
   placement:
     mode: AlignTileAny
@@ -272,8 +273,8 @@
 - type: entity
   id: StalkerPassTrain2
   parent: BaseStructure
-  name: пассажирский вагон
-  description: Единица подвижного состава, предназначенная для перевозки пассажиров.
+  name: "{ ent-StalkerPassTrain }"
+  description: "{ ent-StalkerPassTrain.desc }"
   suffix: ST, Mapping
   placement:
     mode: AlignTileAny
@@ -299,13 +300,13 @@
         - WallLayer
   - type: Appearance
 
-# ГРУЗОВЫЕ ВАГОНЫ
+# Zona14: ГРУЗОВЫЕ ВАГОНЫ
 
 - type: entity
   id: StalkerCargo
   parent: BaseStructure
-  name: грузовой вагон
-  description: Представляет собой железнодорожное транспортное средство без двигателя, которое использовалось для перевозки грузов.
+  name: freight wagon
+  description: Is a non-powered railway vehicle that was used to transport goods.
   suffix: ST, Mapping
   placement:
     mode: AlignTileAny
@@ -313,7 +314,7 @@
   - type: Sprite
     sprite: _Stalker/Structures/Railroad/Train.rsi
     layers:
-      - state: сargo
+      - state: cargo # Zona14: fixed Cyrillic с→c
   - type: Transform
     anchored: true
   - type: Physics
@@ -334,8 +335,8 @@
 - type: entity
   id: StalkerCargo1
   parent: BaseStructure
-  name: грузовой вагон
-  description: Представляет собой железнодорожное транспортное средство без двигателя, которое использовалось для перевозки грузов.
+  name: "{ ent-StalkerCargo }"
+  description: "{ ent-StalkerCargo.desc }"
   suffix: ST, Mapping
   placement:
     mode: AlignTileAny
@@ -343,7 +344,7 @@
   - type: Sprite
     sprite: _Stalker/Structures/Railroad/Train.rsi
     layers:
-      - state: сargo1
+      - state: cargo1 # Zona14: fixed Cyrillic с→c
   - type: Transform
     anchored: true
   - type: Physics
@@ -364,8 +365,8 @@
 - type: entity
   id: StalkerCargo2
   parent: BaseStructure
-  name: грузовой вагон
-  description: Представляет собой железнодорожное транспортное средство без двигателя, которое использовалось для перевозки грузов.
+  name: "{ ent-StalkerCargo }"
+  description: "{ ent-StalkerCargo.desc }"
   suffix: ST, Mapping
   placement:
     mode: AlignTileAny
@@ -373,7 +374,7 @@
   - type: Sprite
     sprite: _Stalker/Structures/Railroad/Train.rsi
     layers:
-      - state: сargo2
+      - state: cargo2 # Zona14: fixed Cyrillic с→c
   - type: Transform
     anchored: true
   - type: Physics
@@ -394,8 +395,8 @@
 - type: entity
   id: StalkerCargo3
   parent: BaseStructure
-  name: грузовой вагон
-  description: Представляет собой железнодорожное транспортное средство без двигателя, которое использовалось для перевозки грузов.
+  name: "{ ent-StalkerCargo }"
+  description: "{ ent-StalkerCargo.desc }"
   suffix: ST, Mapping
   placement:
     mode: AlignTileAny
@@ -403,7 +404,7 @@
   - type: Sprite
     sprite: _Stalker/Structures/Railroad/Train.rsi
     layers:
-      - state: сargo3
+      - state: cargo3 # Zona14: fixed Cyrillic с→c
   - type: Transform
     anchored: true
   - type: Physics
@@ -424,8 +425,8 @@
 - type: entity
   id: StalkerCargo4
   parent: BaseStructure
-  name: грузовой вагон
-  description: Представляет собой железнодорожное транспортное средство без двигателя, которое использовалось для перевозки грузов.
+  name: "{ ent-StalkerCargo }"
+  description: "{ ent-StalkerCargo.desc }"
   suffix: ST, Mapping
   placement:
     mode: AlignTileAny
@@ -433,7 +434,7 @@
   - type: Sprite
     sprite: _Stalker/Structures/Railroad/Train.rsi
     layers:
-      - state: сargo4
+      - state: cargo4 # Zona14: fixed Cyrillic с→c
   - type: Transform
     anchored: true
   - type: Physics
@@ -454,8 +455,8 @@
 - type: entity
   id: StalkerCargo5
   parent: BaseStructure
-  name: грузовой вагон
-  description: Представляет собой железнодорожное транспортное средство без двигателя, которое использовалось для перевозки грузов.
+  name: "{ ent-StalkerCargo }"
+  description: "{ ent-StalkerCargo.desc }"
   suffix: ST, Mapping
   placement:
     mode: AlignTileAny
@@ -463,7 +464,7 @@
   - type: Sprite
     sprite: _Stalker/Structures/Railroad/Train.rsi
     layers:
-      - state: сargo5
+      - state: cargo5 # Zona14: fixed Cyrillic с→c
   - type: Transform
     anchored: true
   - type: Physics
@@ -484,8 +485,8 @@
 - type: entity
   id: StalkerCargo6
   parent: BaseStructure
-  name: грузовой вагон
-  description: Представляет собой железнодорожное транспортное средство без двигателя, которое использовалось для перевозки грузов.
+  name: "{ ent-StalkerCargo }"
+  description: "{ ent-StalkerCargo.desc }"
   suffix: ST, Mapping
   placement:
     mode: AlignTileAny
@@ -493,7 +494,7 @@
   - type: Sprite
     sprite: _Stalker/Structures/Railroad/Train.rsi
     layers:
-      - state: сargo6
+      - state: cargo6 # Zona14: fixed Cyrillic с→c
   - type: Transform
     anchored: true
   - type: Physics
@@ -514,8 +515,8 @@
 - type: entity
   id: StalkerCargo7
   parent: BaseStructure
-  name: грузовой вагон
-  description: Представляет собой железнодорожное транспортное средство без двигателя, которое использовалось для перевозки грузов.
+  name: "{ ent-StalkerCargo }"
+  description: "{ ent-StalkerCargo.desc }"
   suffix: ST, Mapping
   placement:
     mode: AlignTileAny
@@ -523,7 +524,7 @@
   - type: Sprite
     sprite: _Stalker/Structures/Railroad/Train.rsi
     layers:
-      - state: сargo7
+      - state: cargo7 # Zona14: fixed Cyrillic с→c
   - type: Transform
     anchored: true
   - type: Physics

@@ -1,0 +1,118 @@
+- type: entity
+  name: bayun (1) (25%)
+  id: Z14STTriggerBayun125
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger125
+  suffix: Z14
+  components:
+  - type: SpawnOnApproach
+    prototypes:
+    - Z14MobMutantCat
+    restricted:
+    - Z14MobMutantCat
+
+- type: entity
+  name: bayun (1-1) (75%) 30m
+  id: Z14STTriggerBayun117530
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger117530
+  suffix: Z14
+  components:
+  - type: SpawnOnApproach
+    prototypes:
+    - Z14MobMutantCat
+    restricted:
+    - Z14MobMutantCat
+
+- type: entity
+  name: bayun (1-2) (75%) 30m
+  id: Z14STTriggerBayun127530
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger127530
+  suffix: Z14
+  components:
+  - type: SpawnOnApproach
+    prototypes:
+    - Z14MobMutantCat
+    restricted:
+    - Z14MobMutantCat
+
+- type: entity
+  name: bayun (1-2) (25%) 30m
+  id: Z14STTriggerBayun122530
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger122530
+  suffix: Z14
+  components:
+  - type: SpawnOnApproach
+    prototypes:
+    - Z14MobMutantCat
+    restricted:
+    - Z14MobMutantCat
+
+# spawners for if you want someone to take a nap
+- type: entity
+  name: bayun (1-4) (25%) 30m
+  id: Z14STTriggerBayun142530
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger142530
+  suffix: Z14
+  components:
+  - type: SpawnOnApproach
+    prototypes:
+    - Z14MobMutantCat
+    restricted:
+    - Z14MobMutantCat
+
+- type: entity
+  name: bayun (1-4) (100%) 30m
+  id: Z14STTriggerBayun1410030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger1410030
+  suffix: Z14
+  components:
+  - type: SpawnOnApproach
+    prototypes:
+    - Z14MobMutantCat
+    restricted:
+    - Z14MobMutantCat
+
+
+- type: entity
+  name: bayun trigger (1) (100%) 30m
+  id: Z14STTriggerBayun1110030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger1110030
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+      - Z14MobMutantCat
+      restricted:
+      - Z14MobMutantCat
+
+- type: entity
+  name: bayun trigger (2) (100%) 30m
+  id: Z14STTriggerBayun2210030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger2210030
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+      - Z14MobMutantCat
+      restricted:
+      - Z14MobMutantCat
+
+- type: entity
+  name: bayun trigger (3) (100%) 30m
+  id: Z14STTriggerBayun3310030
+  categories: [ Zona14 ]
+  parent: Z14STBaseTrigger3310030
+  suffix: Z14
+  components:
+    - type: SpawnOnApproach
+      prototypes:
+      - Z14MobMutantCat
+      restricted:
+      - Z14MobMutantCat

@@ -1,0 +1,53 @@
+- type: entity
+  abstract: true
+  parent: [ BaseItem, ConstructibleMachine ]
+  id: Z14GoProSTOP
+  categories: [ Zona14 ]
+  name: wireless camera
+  description: A camera. It's watching you. Kinda.
+  components:
+    - type: InteractionOutline
+    - type: Eye
+    - type: WirelessNetworkConnection
+      range: 200
+    - type: Damageable
+      damageContainer: Inorganic
+      damageModifierSet: Metallic
+    - type: SurveillanceCameraMicrophone
+      blacklist:
+        components:
+          - SurveillanceCamera
+          - SurveillanceCameraMonitor
+          - RadioSpeaker
+    - type: ActiveListener
+      range: 10
+    - type: UserInterface
+      interfaces:
+        enum.SurveillanceCameraSetupUiKey.Camera:
+          type: SurveillanceCameraSetupBoundUi
+
+- type: entity
+  parent: Z14GoProSTOP
+  id: Z14ClothingGoPro
+  categories: [ Zona14 ]
+  name: GoPro
+  suffix: Z14
+  description: A GoPro camera. Records high-quality video.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/Neck/Misc/gopro.rsi
+    state: icon
+    scale: 0.6, 0.6
+  - type: Item
+    size: Small
+  - type: DeviceNetwork
+    deviceNetId: Wireless
+    receiveFrequencyId: SurveillanceCameraEntertainment
+    transmitFrequencyId: SurveillanceCamera
+  - type: SurveillanceCamera
+    setupAvailableNetworks:
+      - SurveillanceCameraEntertainment
+  - type: Clothing
+    quickEquip: true
+    slots:
+    - neck

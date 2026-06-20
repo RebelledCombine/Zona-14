@@ -1,9 +1,10 @@
+# Zona14: translated Russian names/descriptions to English
 - type: entity
   id: BathroomStalker
   parent: BaseStructure
-  name: ванна
+  name: bathtub
   suffix: ST, Mapping
-  description: Резервуар для обмывания и погружения разных частей тела в воду.
+  description: A tank for washing and submerging different parts of the body in water.
   components:
   - type: InteractionOutline
   - type: Strap

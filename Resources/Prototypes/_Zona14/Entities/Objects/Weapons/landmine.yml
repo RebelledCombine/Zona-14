@@ -1,0 +1,54 @@
+- type: entity
+  name: 'PFM-1 "Lepestok" mine'
+  parent: BaseLandMine
+  suffix: Z14
+  description: One foot here, another there.
+  id: Z14LandMineExplosiveStalker
+  categories: [ Zona14 ]
+  components:
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: Default
+    maxIntensity: 6.7
+    intensitySlope: 4
+    totalIntensity: 60 # about a ~4 tile radius
+    canCreateVacuum: false
+  - type: DeleteOnTrigger
+  - type: Sprite
+    sprite: _Stalker/Objects/Misc/lepestok.rsi
+    layers:
+    - state: armed
+
+
+- type: entity
+  parent: BaseItem
+  id: Z14LandMineExplosiveStalkerCompact
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: unidentified PFM-1 "Petal" mine
+  description: One foot here, another there. To install, place on the ground and lightly cover with a sapper shovel.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Misc/lepestok.rsi
+    state: unarmed
+  - type: Flatpack
+    entity: Z14LandMineExplosiveStalker
+  - type: Appearance
+
+
+- type: entity
+  id: Z14RandomLandMineExplosiveStalker
+  categories: [ Zona14 ]
+  name: PFM-1 Petal Mine Spawner (Crate, 5% Chance, Resources)
+  suffix: Z14
+  parent: FlexibleMarker
+  components:
+    - type: Sprite
+      layers:
+      - state: red
+    - type: RandomSpawner
+      prototypes:
+        - Z14LandMineExplosiveStalker
+      chance: 0.05
+      offset: 0.5
+
