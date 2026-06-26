@@ -2,9 +2,9 @@ meta:
   format: 7
   category: Map
   engineVersion: 268.0.0
-  forkId: ""
-  forkVersion: ""
-  time: 06/06/2026 18:02:27
+  forkId: zona14
+  forkVersion: 24f756065fd703c1e97fd61072059865ab2b9ca3
+  time: 06/25/2026 15:16:28
   entityCount: 8069
 maps:
 - 1
@@ -9505,252 +9505,9 @@ entities:
       markerLayers: []
       loadedMarkers: {}
       pendingMarkers: {}
-      loadedChunks:
-      - -32,-32
-      - -32,-24
-      - -32,-16
-      - -32,-8
-      - -32,0
-      - -32,8
-      - -32,16
-      - -32,24
-      - -32,32
-      - -24,-32
-      - -24,-24
-      - -24,-16
-      - -24,-8
-      - -24,0
-      - -24,8
-      - -24,16
-      - -24,24
-      - -24,32
-      - -16,-32
-      - -16,-24
-      - -16,-16
-      - -16,-8
-      - -16,0
-      - -16,8
-      - -16,16
-      - -16,24
-      - -16,32
-      - -8,-32
-      - -8,-24
-      - -8,-16
-      - -8,-8
-      - -8,0
-      - -8,8
-      - -8,16
-      - -8,24
-      - -8,32
-      - 0,-32
-      - 0,-24
-      - 0,-16
-      - 0,-8
-      - 0,0
-      - 0,8
-      - 0,16
-      - 0,24
-      - 0,32
-      - 8,-32
-      - 8,-24
-      - 8,-16
-      - 8,-8
-      - 8,0
-      - 8,8
-      - 8,16
-      - 8,24
-      - 8,32
-      - 16,-32
-      - 16,-24
-      - 16,-16
-      - 16,-8
-      - 16,0
-      - 16,8
-      - 16,16
-      - 16,24
-      - 16,32
-      - 24,-32
-      - 24,-24
-      - 24,-16
-      - 24,-8
-      - 24,0
-      - 24,8
-      - 24,16
-      - 24,24
-      - 24,32
-      - 32,-32
-      - 32,-24
-      - 32,-16
-      - 32,-8
-      - 32,0
-      - 32,8
-      - 32,16
-      - 32,24
-      - 32,32
-      entities:
-        -32,-32: {}
-        -32,-24: {}
-        -32,-16: {}
-        -32,-8: {}
-        -32,0: {}
-        -32,8: {}
-        -32,16: {}
-        -32,24: {}
-        -32,32: {}
-        -24,-32: {}
-        -24,-24: {}
-        -24,-16: {}
-        -24,-8: {}
-        -24,0: {}
-        -24,8: {}
-        -24,16: {}
-        -24,24: {}
-        -24,32: {}
-        -16,-32: {}
-        -16,-24: {}
-        -16,-16: {}
-        -16,-8: {}
-        -16,0: {}
-        -16,8: {}
-        -16,16: {}
-        -16,24: {}
-        -16,32: {}
-        -8,-32: {}
-        -8,-24: {}
-        -8,-16: {}
-        -8,-8: {}
-        -8,0: {}
-        -8,8: {}
-        -8,16: {}
-        -8,24: {}
-        -8,32: {}
-        0,-32: {}
-        0,-24: {}
-        0,-16: {}
-        0,-8: {}
-        0,0: {}
-        0,8: {}
-        0,16: {}
-        0,24: {}
-        0,32: {}
-        8,-32: {}
-        8,-24: {}
-        8,-16: {}
-        8,-8: {}
-        8,0: {}
-        8,8: {}
-        8,16: {}
-        8,24: {}
-        8,32: {}
-        16,-32: {}
-        16,-24: {}
-        16,-16: {}
-        16,-8: {}
-        16,0: {}
-        16,8: {}
-        16,16: {}
-        16,24: {}
-        16,32: {}
-        24,-32: {}
-        24,-24: {}
-        24,-16: {}
-        24,-8: {}
-        24,0: {}
-        24,8: {}
-        24,16: {}
-        24,24: {}
-        24,32: {}
-        32,-32: {}
-        32,-24: {}
-        32,-16: {}
-        32,-8: {}
-        32,0: {}
-        32,8: {}
-        32,16: {}
-        32,24: {}
-        32,32: {}
-      decals:
-        -32,-32: {}
-        -32,-24: {}
-        -32,-16: {}
-        -32,-8: {}
-        -32,0: {}
-        -32,8: {}
-        -32,16: {}
-        -32,24: {}
-        -32,32: {}
-        -24,-32: {}
-        -24,-24: {}
-        -24,-16: {}
-        -24,-8: {}
-        -24,0: {}
-        -24,8: {}
-        -24,16: {}
-        -24,24: {}
-        -24,32: {}
-        -16,-32: {}
-        -16,-24: {}
-        -16,-16: {}
-        -16,-8: {}
-        -16,0: {}
-        -16,8: {}
-        -16,16: {}
-        -16,24: {}
-        -16,32: {}
-        -8,-32: {}
-        -8,-24: {}
-        -8,-16: {}
-        -8,-8: {}
-        -8,0: {}
-        -8,8: {}
-        -8,16: {}
-        -8,24: {}
-        -8,32: {}
-        0,-32: {}
-        0,-24: {}
-        0,-16: {}
-        0,-8: {}
-        0,0: {}
-        0,8: {}
-        0,16: {}
-        0,24: {}
-        0,32: {}
-        8,-32: {}
-        8,-24: {}
-        8,-16: {}
-        8,-8: {}
-        8,0: {}
-        8,8: {}
-        8,16: {}
-        8,24: {}
-        8,32: {}
-        16,-32: {}
-        16,-24: {}
-        16,-16: {}
-        16,-8: {}
-        16,0: {}
-        16,8: {}
-        16,16: {}
-        16,24: {}
-        16,32: {}
-        24,-32: {}
-        24,-24: {}
-        24,-16: {}
-        24,-8: {}
-        24,0: {}
-        24,8: {}
-        24,16: {}
-        24,24: {}
-        24,32: {}
-        32,-32: {}
-        32,-24: {}
-        32,-16: {}
-        32,-8: {}
-        32,0: {}
-        32,8: {}
-        32,16: {}
-        32,24: {}
-        32,32: {}
+      loadedChunks: []
+      entities: {}
+      decals: {}
       modifiedTiles:
         32,-32:
         - 32,-32
@@ -34512,7 +34269,7 @@ entities:
       pos: -3.5,-54.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -100891.57
+      secondsUntilStateChange: -109157.52
       state: Opening
   - uid: 46
     components:
@@ -34520,7 +34277,7 @@ entities:
       pos: 0.5,-54.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -100891.24
+      secondsUntilStateChange: -109157.195
       state: Opening
 - proto: BaseStalkerTree
   entities:
@@ -49099,7 +48856,7 @@ entities:
       pos: 18.5,114.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -5858.653
+      secondsUntilStateChange: -14124.605
       state: Opening
   - uid: 7906
     components:
@@ -49116,7 +48873,7 @@ entities:
       pos: -22.5,-46.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -81629.26
+      secondsUntilStateChange: -89895.21
       state: Opening
   - uid: 2021
     components:
@@ -49205,7 +48962,7 @@ entities:
       pos: 20.5,112.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -3506.6885
+      secondsUntilStateChange: -11772.642
       state: Opening
   - uid: 7903
     components:
@@ -52212,7 +51969,7 @@ entities:
       pos: -27.5,71.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -30196.428
+      secondsUntilStateChange: -38462.38
       state: Opening
   - uid: 7904
     components:
@@ -52233,7 +51990,7 @@ entities:
       pos: -27.5,70.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -30195.562
+      secondsUntilStateChange: -38461.516
       state: Opening
   - uid: 7905
     components:
@@ -77257,7 +77014,7 @@ entities:
       pos: 4.5,-12.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -137969
+      secondsUntilStateChange: -146234.95
       state: Opening
   - uid: 3138
     components:
@@ -77533,7 +77290,7 @@ entities:
       pos: -11.5,-22.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -31723.861
+      secondsUntilStateChange: -39989.812
       state: Opening
   - uid: 1151
     components:
@@ -77548,7 +77305,7 @@ entities:
       pos: -11.5,-14.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -49516.07
+      secondsUntilStateChange: -57782.023
       state: Opening
   - uid: 3144
     components:
@@ -77557,7 +77314,7 @@ entities:
       pos: -14.5,-14.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -49514.504
+      secondsUntilStateChange: -57780.457
       state: Opening
   - uid: 3146
     components:
@@ -77572,7 +77329,7 @@ entities:
       pos: -14.5,-22.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -31721.793
+      secondsUntilStateChange: -39987.746
       state: Opening
   - uid: 3166
     components:
@@ -77592,7 +77349,7 @@ entities:
       pos: 28.5,58.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -25907.236
+      secondsUntilStateChange: -34173.188
       state: Opening
   - uid: 5328
     components:
@@ -77601,7 +77358,7 @@ entities:
       pos: 26.5,56.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -27148.365
+      secondsUntilStateChange: -35414.316
       state: Opening
   - uid: 5392
     components:
