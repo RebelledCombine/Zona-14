@@ -291,4 +291,12 @@
   id: 29
   time: '2026-06-07T21:39:30Z'
   url: https://github.com/Zona-14/Zona-14/pull/46
+- author: RebelledCombine
+  changes:
+  - message: 'MAPS: Updated the Cordon, Darkscape, Dytiatky, Garbage and Swamps maps
+      to the latest server state.'
+    type: Tweak
+  id: 30
+  time: '2026-06-27T07:32:22Z'
+  url: https://github.com/Zona-14/Zona-14/pull/49
 Order: 0
