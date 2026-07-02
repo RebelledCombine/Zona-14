@@ -1,0 +1,17 @@
+author: Roland410
+time: '2026-07-02T08:38:58Z'
+url: https://github.com/Zona-14/Zona-14/pull/51
+changes:
+- type: Add
+  message: Added 14 new war zones across Cordon, Darkscape, Swamps and Garbage.
+- type: Tweak
+  message: Standardized PvP armor stats onto shared tier bases while keeping integrated
+    hoods and helmets.
+- type: Tweak
+  message: Reworked Seraphim gear to be plain green-colored variants, with no cult
+    references.
+- type: Tweak
+  message: Rewrote weapon descriptions to match their real-life counterparts.
+- type: Fix
+  message: Fixed the "Tosro", "Serasera" and "Cementery" typos.
+category: Main
