@@ -4,7 +4,7 @@
   parent: STWeaponLauncherRocket
   id: Z14STWeaponLauncherRocketShmel
   categories: [ Zona14 ]
-  description: Miraculous tool of war crimes
+  description: Soviet man-portable, single-use rocket infantry flamethrower firing a thermobaric warhead. Devastating against fortified positions and clustered targets - its blast wave and heat leave little behind.
   components:
   - type: Wieldable
   - type: GunRequiresWield

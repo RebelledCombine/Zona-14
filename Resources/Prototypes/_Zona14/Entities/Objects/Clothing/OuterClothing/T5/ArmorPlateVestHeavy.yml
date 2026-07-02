@@ -45,7 +45,7 @@
 # Military
 
 - type: entity
-  parent: Z14STClothingOuterArmorHeavyPlateVestBase
+  parent: [ Z14ArmorBaseT4PvP, Z14STClothingOuterArmorHeavyPlateVestBase ]
   id: Z14STClothingOuterArmorLightPlateVestBaseHeavyMilitary
   categories: [ Zona14 ]
   suffix: Z14
@@ -62,7 +62,7 @@
 # Monolith
 
 - type: entity
-  parent: Z14STClothingOuterArmorHeavyPlateVestBase
+  parent: [ Z14ArmorBaseT4PvP, Z14STClothingOuterArmorHeavyPlateVestBase ]
   id: Z14STClothingOuterArmorLightPlateVestBaseHeavyMonolith
   categories: [ Zona14 ]
   suffix: Z14

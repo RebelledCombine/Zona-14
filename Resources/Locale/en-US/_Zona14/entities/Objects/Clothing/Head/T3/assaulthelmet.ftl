@@ -22,8 +22,8 @@ ent-Z14ClothingHeadAssaultHelmetFreedom = "Zenit" helmet of Freedom
     .desc = A "Zenit" combat helmet of the third protection class.
     .suffix = Z14
 
-ent-Z14ClothingHeadAssaultHelmetLimaSeraZastup = { ent-ClothingHeadAssaultHelmetSeraZastup }
-    .desc = gray combat helmet “Zenit,” third-class protection, with painted stripes.
+ent-Z14ClothingHeadAssaultHelmetLimaSeraZastup = combat helmet "Zenit" (Green)
+    .desc = A green combat helmet "Zenit," third-class protection, with painted stripes.
     .suffix = Z14
 
 ent-Z14ClothingHeadAssaultHelmetMerc = Mercenary Zenith helmet
@@ -34,8 +34,8 @@ ent-Z14ClothingHeadAssaultHelmetMilitary = Military Zenith Helmet
     .desc = Zenith combat helmet of the third class of protection in green.
     .suffix = Z14
 
-ent-Z14ClothingHeadAssaultHelmetSeraZastup = helmet “Zastupnik”
-    .desc = combat helmet “Zenit,” third-class protection, with painted stripes.
+ent-Z14ClothingHeadAssaultHelmetSeraZastup = combat helmet "Zenit" (Green)
+    .desc = A green combat helmet "Zenit," third-class protection, with painted stripes.
     .suffix = Z14
 
 ent-Z14ClothingHeadAssaultHelmetUN = UN Zenith helmet

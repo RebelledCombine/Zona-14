@@ -31,5 +31,5 @@ ent-Z14STClothingShoesBootsCombatFilled = { ent-STClothingShoesBootsCombat }
     .suffix = Z14
 
 ent-Z14STClothingShoesBootsSeraFilled = Hunter Boots
-    .desc = Combat boots repainted in a dark green shade. A unique shoe used by members of the Seraphim's faction.
+    .desc = Combat boots repainted in a dark green shade.
     .suffix = Z14

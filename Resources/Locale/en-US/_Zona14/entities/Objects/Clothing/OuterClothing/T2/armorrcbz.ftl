@@ -34,7 +34,7 @@ ent-Z14ClothingOuterArmorRCBZRene = 'Renegade' CBRN Outfit
     .desc = Designed to operate in radiation, chemical, and biological shielding (CBRN) environments. It is used in expeditions to hazardous chemical areas to ensure the safety of the carrier. It is not designed for combat operations, but is specialized to provide protection and safety in the face of the threat from radiation, chemical and biological substances.
     .suffix = Z14
 
-ent-Z14ClothingOuterArmorRCBZSera = 'RHBZ' 'Seraphim' Suit
+ent-Z14ClothingOuterArmorRCBZSera = "RHBZ" Suit (Green)
     .desc = Designed to operate in radiation, chemical, and biological shielding (CBRN) environments. It is used in expeditions to hazardous chemical areas to ensure the safety of the carrier. It is not designed for combat operations, but is specialized to provide protection and safety in the face of the threat from radiation, chemical and biological substances.
     .suffix = Z14
 

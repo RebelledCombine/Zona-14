@@ -3,8 +3,8 @@
   id: Z14arbaletserih
   categories: [ Zona14 ]
   suffix: Z14
-  name: Seraphim Crossbow
-  description: Constructed from tin, bolts, a bowstring, and an SVD stock—this crossbow is crafted by Seraphim hunters. A quiet, cost-effective solution when ammo is scarce. Ideal for Zone fanatics surviving off scraps and hunting beasts for sustenance.
+  name: Makeshift Zone Crossbow
+  description: Constructed from tin, bolts, a bowstring, and an SVD stock—this crossbow is crafted by Zone hunters. A quiet, cost-effective solution when ammo is scarce. Ideal for Zone survivors living off scraps and hunting beasts for sustenance.
   components:
   - type: Clothing
     sprite: _Stalker/Objects/Weapons/Guns/Snipers/arbalet.rsi

@@ -267,8 +267,8 @@
   parent: Z14ClothingOuterCoatLoyalist
   id: Z14ClothingOuterCoatSeraphim
   categories: [ Zona14 ]
-  name: Kevlar Seraphim Cloak
-  description: Cloak modified for the Seraphim faction, painted in their faction colors.
+  name: Green Kevlar Cloak
+  description: A kevlar-lined cloak dyed deep green.
   suffix: Z14
   components:
   - type: Sprite
@@ -285,8 +285,8 @@
   parent: STClothingHeadHatBase
   id: Z14ClothingHeadHelmetLoyalistCoatSeraphim
   categories: [ Zona14 ]
-  name: Kevlar Seraphim Hood
-  description: It has Kevlar in name only.
+  name: Green Kevlar Hood
+  description: From Kevlar, it's not just the name.
   suffix: Z14
   components:
   - type: Sprite
@@ -301,8 +301,8 @@
   parent: Z14ClothingOuterCoatLoyalist
   id: Z14ClothingOuterCoatLimaSeraphim
   categories: [ Zona14 ]
-  name: Seraphim kevlar coat
-  description: Cloak modified for the Seraphim faction, painted gray.
+  name: Green Kevlar Coat (Worn)
+  description: A reinforced kevlar-lined coat, painted green.
   suffix: Z14
   components:
   - type: Sprite
@@ -319,8 +319,8 @@
   parent: STClothingHeadHatBase
   id: Z14ClothingHeadHelmetLoyalistCoatLimaSeraphim
   categories: [ Zona14 ]
-  name: Seraphim kevlar hood
-  description: It has Kevlar in name only.
+  name: Green Kevlar Hood (Worn)
+  description: It's kevlar only in name.
   suffix: Z14
   components:
   - type: Sprite

@@ -1,1 +1,596 @@
 #Zona 14 specific warzones to be placed here
+
+# MARK: War Zone Meta-Prototypes
+# Reward of 100 points per period is a temporary placeholder until balance is finalized.
+
+# ── Cordon ──────────────────────────────────────────────
+
+- type: stWarZone
+  id: Z14CordonRailwayCheckpoint # Zone ID. Persisted in DB, do not change.
+  rewardPointsPerPeriod: 100 # Temporary placeholder until balance is finalized
+  rewardPeriod: 1230 # Reward period in seconds
+  captureCooldownHours: 2
+  captureTime: 10 # Capture time in seconds
+  requirements:
+    - !type:ZoneOwnershipRequirenment
+      requiredZones: []
+
+- type: stWarZone
+  id: Z14CordonFleshFarm # Zone ID. Persisted in DB, do not change.
+  rewardPointsPerPeriod: 100 # Temporary placeholder until balance is finalized
+  rewardPeriod: 1230 # Reward period in seconds
+  captureCooldownHours: 2
+  captureTime: 10 # Capture time in seconds
+  requirements:
+    - !type:ZoneOwnershipRequirenment
+      requiredZones: [ Z14CordonRailwayCheckpoint ]
+
+- type: stWarZone
+  id: Z14CordonNorthernRuins # Zone ID. Persisted in DB, do not change.
+  rewardPointsPerPeriod: 100 # Temporary placeholder until balance is finalized
+  rewardPeriod: 1230 # Reward period in seconds
+  captureCooldownHours: 2
+  captureTime: 10 # Capture time in seconds
+  requirements:
+    - !type:ZoneOwnershipRequirenment
+      requiredZones: [ Z14CordonFleshFarm ]
+
+- type: stWarZone
+  id: Z14CordonGasStation # Zone ID. Persisted in DB, do not change.
+  rewardPointsPerPeriod: 100 # Temporary placeholder until balance is finalized
+  rewardPeriod: 1230 # Reward period in seconds
+  captureCooldownHours: 2
+  captureTime: 10 # Capture time in seconds
+  requirements:
+    - !type:ZoneOwnershipRequirenment
+      requiredZones: [ Z14CordonFleshFarm ]
+
+- type: stWarZone
+  id: Z14CordonSouthernRuins # Zone ID. Persisted in DB, do not change.
+  rewardPointsPerPeriod: 100 # Temporary placeholder until balance is finalized
+  rewardPeriod: 1230 # Reward period in seconds
+  captureCooldownHours: 2
+  captureTime: 10 # Capture time in seconds
+  requirements:
+    - !type:ZoneOwnershipRequirenment
+      requiredZones: [ Z14CordonFleshFarm ]
+
+# ── Darkscape ──────────────────────────────────────────────
+
+- type: stWarZone
+  id: Z14DarkscapeAbandonedTank # Zone ID. Persisted in DB, do not change.
+  rewardPointsPerPeriod: 100 # Temporary placeholder until balance is finalized
+  rewardPeriod: 1230 # Reward period in seconds
+  captureCooldownHours: 2
+  captureTime: 10 # Capture time in seconds
+  requirements:
+    - !type:ZoneOwnershipRequirenment
+      requiredZones: [ Z14CordonSouthernRuins ]
+
+- type: stWarZone
+  id: Z14DarkscapeGasStation # Zone ID. Persisted in DB, do not change.
+  rewardPointsPerPeriod: 100 # Temporary placeholder until balance is finalized
+  rewardPeriod: 1230 # Reward period in seconds
+  captureCooldownHours: 2
+  captureTime: 10 # Capture time in seconds
+  requirements:
+    - !type:ZoneOwnershipRequirenment
+      requiredZones: [ Z14DarkscapeAbandonedTank ]
+
+- type: stWarZone
+  id: Z14DarkscapeTruckCemetery # Zone ID. Persisted in DB, do not change.
+  rewardPointsPerPeriod: 100 # Temporary placeholder until balance is finalized
+  rewardPeriod: 1230 # Reward period in seconds
+  captureCooldownHours: 2
+  captureTime: 10 # Capture time in seconds
+  requirements:
+    - !type:ZoneOwnershipRequirenment
+      requiredZones: [ Z14DarkscapeGasStation ]
+
+# ── Swamps ──────────────────────────────────────────────
+
+- type: stWarZone
+  id: Z14SwampsBridge # Zone ID. Persisted in DB, do not change.
+  rewardPointsPerPeriod: 100 # Temporary placeholder until balance is finalized
+  rewardPeriod: 1230 # Reward period in seconds
+  captureCooldownHours: 2
+  captureTime: 10 # Capture time in seconds
+  requirements:
+    - !type:ZoneOwnershipRequirenment
+      requiredZones: [ Z14CordonGasStation ]
+
+- type: stWarZone
+  id: Z14SwampsChapel # Zone ID. Persisted in DB, do not change.
+  rewardPointsPerPeriod: 100 # Temporary placeholder until balance is finalized
+  rewardPeriod: 1230 # Reward period in seconds
+  captureCooldownHours: 2
+  captureTime: 10 # Capture time in seconds
+  requirements:
+    - !type:ZoneOwnershipRequirenment
+      requiredZones: [ Z14SwampsBridge ]
+
+- type: stWarZone
+  id: Z14SwampsTrainStation # Zone ID. Persisted in DB, do not change.
+  rewardPointsPerPeriod: 100 # Temporary placeholder until balance is finalized
+  rewardPeriod: 1230 # Reward period in seconds
+  captureCooldownHours: 2
+  captureTime: 10 # Capture time in seconds
+  requirements:
+    - !type:ZoneOwnershipRequirenment
+      requiredZones: [ Z14SwampsChapel ]
+
+# ── Garbage ──────────────────────────────────────────────
+
+- type: stWarZone
+  id: Z14GarbageContainerYard # Zone ID. Persisted in DB, do not change.
+  rewardPointsPerPeriod: 100 # Temporary placeholder until balance is finalized
+  rewardPeriod: 1230 # Reward period in seconds
+  captureCooldownHours: 2
+  captureTime: 10 # Capture time in seconds
+  requirements:
+    - !type:ZoneOwnershipRequirenment
+      requiredZones: []
+
+- type: stWarZone
+  id: Z14GarbageCollapsedBridge # Zone ID. Persisted in DB, do not change.
+  rewardPointsPerPeriod: 100 # Temporary placeholder until balance is finalized
+  rewardPeriod: 1230 # Reward period in seconds
+  captureCooldownHours: 2
+  captureTime: 10 # Capture time in seconds
+  requirements:
+    - !type:ZoneOwnershipRequirenment
+      requiredZones: [ Z14GarbageContainerYard ]
+
+- type: stWarZone
+  id: Z14GarbageWaterTreatmentPlant # Zone ID. Persisted in DB, do not change.
+  rewardPointsPerPeriod: 100 # Temporary placeholder until balance is finalized
+  rewardPeriod: 1230 # Reward period in seconds
+  captureCooldownHours: 2
+  captureTime: 10 # Capture time in seconds
+  requirements:
+    - !type:ZoneOwnershipRequirenment
+      requiredZones: [ Z14GarbageCollapsedBridge ]
+
+# MARK: War Zone Entities (place these markers on the maps)
+
+# ── Cordon ──────────────────────────────────────────────
+
+- type: entity
+  id: Z14WarZoneEntity_CordonRailwayCheckpoint
+  categories: [ Zona14 ]
+  suffix: Z14
+  parent: MarkerBase
+  name: Cordon - Railway Checkpoint
+  description: A physical marker for the Cordon Railway Checkpoint War Zone.
+  components:
+    - type: WarZone
+      proto: Z14CordonRailwayCheckpoint
+      portalName: Railway Checkpoint
+    - type: Physics
+      bodyType: Static
+      canCollide: true
+    - type: Fixtures
+      fixtures:
+        trigger:
+          shape:
+            !type:PhysShapeCircle
+            radius: 5
+          hard: false
+          mask:
+            - MobMask
+          layer:
+            - MidImpassable
+    - type: PointLight
+      enabled: true
+      radius: 15
+      color: Cyan
+      energy: 1
+
+- type: entity
+  id: Z14WarZoneEntity_CordonFleshFarm
+  categories: [ Zona14 ]
+  suffix: Z14
+  parent: MarkerBase
+  name: Cordon - Flesh Farm
+  description: A physical marker for the Cordon Flesh Farm War Zone.
+  components:
+    - type: WarZone
+      proto: Z14CordonFleshFarm
+      portalName: Flesh Farm
+    - type: Physics
+      bodyType: Static
+      canCollide: true
+    - type: Fixtures
+      fixtures:
+        trigger:
+          shape:
+            !type:PhysShapeCircle
+            radius: 5
+          hard: false
+          mask:
+            - MobMask
+          layer:
+            - MidImpassable
+    - type: PointLight
+      enabled: true
+      radius: 15
+      color: Cyan
+      energy: 1
+
+- type: entity
+  id: Z14WarZoneEntity_CordonNorthernRuins
+  categories: [ Zona14 ]
+  suffix: Z14
+  parent: MarkerBase
+  name: Cordon - Northern Ruins
+  description: A physical marker for the Cordon Northern Ruins War Zone.
+  components:
+    - type: WarZone
+      proto: Z14CordonNorthernRuins
+      portalName: Northern Ruins
+    - type: Physics
+      bodyType: Static
+      canCollide: true
+    - type: Fixtures
+      fixtures:
+        trigger:
+          shape:
+            !type:PhysShapeCircle
+            radius: 5
+          hard: false
+          mask:
+            - MobMask
+          layer:
+            - MidImpassable
+    - type: PointLight
+      enabled: true
+      radius: 15
+      color: Cyan
+      energy: 1
+
+- type: entity
+  id: Z14WarZoneEntity_CordonGasStation
+  categories: [ Zona14 ]
+  suffix: Z14
+  parent: MarkerBase
+  name: Cordon - Gas Station
+  description: A physical marker for the Cordon Gas Station war zone.
+  components:
+    - type: WarZone
+      proto: Z14CordonGasStation
+      portalName: Gas Station
+    - type: Physics
+      bodyType: Static
+      canCollide: true
+    - type: Fixtures
+      fixtures:
+        trigger:
+          shape:
+            !type:PhysShapeCircle
+            radius: 5
+          hard: false
+          mask:
+            - MobMask
+          layer:
+            - MidImpassable
+    - type: PointLight
+      enabled: true
+      radius: 15
+      color: Cyan
+      energy: 1
+
+- type: entity
+  id: Z14WarZoneEntity_CordonSouthernRuins
+  categories: [ Zona14 ]
+  suffix: Z14
+  parent: MarkerBase
+  name: Cordon - Southern Ruins
+  description: A physical marker for the Cordon Southern Ruins War Zone.
+  components:
+    - type: WarZone
+      proto: Z14CordonSouthernRuins
+      portalName: Southern Ruins
+    - type: Physics
+      bodyType: Static
+      canCollide: true
+    - type: Fixtures
+      fixtures:
+        trigger:
+          shape:
+            !type:PhysShapeCircle
+            radius: 5
+          hard: false
+          mask:
+            - MobMask
+          layer:
+            - MidImpassable
+    - type: PointLight
+      enabled: true
+      radius: 15
+      color: Cyan
+      energy: 1
+
+# ── Darkscape ──────────────────────────────────────────────
+
+- type: entity
+  id: Z14WarZoneEntity_DarkscapeAbandonedTank
+  categories: [ Zona14 ]
+  suffix: Z14
+  parent: MarkerBase
+  name: Darkscape - Abandoned Tank
+  description: A physical marker for the Darkscape Abandoned Tank War Zone.
+  components:
+    - type: WarZone
+      proto: Z14DarkscapeAbandonedTank
+      portalName: Abandoned Tank
+    - type: Physics
+      bodyType: Static
+      canCollide: true
+    - type: Fixtures
+      fixtures:
+        trigger:
+          shape:
+            !type:PhysShapeCircle
+            radius: 5
+          hard: false
+          mask:
+            - MobMask
+          layer:
+            - MidImpassable
+    - type: PointLight
+      enabled: true
+      radius: 15
+      color: Cyan
+      energy: 1
+
+- type: entity
+  id: Z14WarZoneEntity_DarkscapeGasStation
+  categories: [ Zona14 ]
+  suffix: Z14
+  parent: MarkerBase
+  name: Darkscape - Gas Station
+  description: A physical marker for the Darkscape Gas Station war zone.
+  components:
+    - type: WarZone
+      proto: Z14DarkscapeGasStation
+      portalName: Gas Station
+    - type: Physics
+      bodyType: Static
+      canCollide: true
+    - type: Fixtures
+      fixtures:
+        trigger:
+          shape:
+            !type:PhysShapeCircle
+            radius: 5
+          hard: false
+          mask:
+            - MobMask
+          layer:
+            - MidImpassable
+    - type: PointLight
+      enabled: true
+      radius: 15
+      color: Cyan
+      energy: 1
+
+- type: entity
+  id: Z14WarZoneEntity_DarkscapeTruckCemetery
+  categories: [ Zona14 ]
+  suffix: Z14
+  parent: MarkerBase
+  name: Darkscape - Truck Cemetery
+  description: A physical marker for the Darkscape Truck Cemetery War Zone.
+  components:
+    - type: WarZone
+      proto: Z14DarkscapeTruckCemetery
+      portalName: Truck Cemetery
+    - type: Physics
+      bodyType: Static
+      canCollide: true
+    - type: Fixtures
+      fixtures:
+        trigger:
+          shape:
+            !type:PhysShapeCircle
+            radius: 5
+          hard: false
+          mask:
+            - MobMask
+          layer:
+            - MidImpassable
+    - type: PointLight
+      enabled: true
+      radius: 15
+      color: Cyan
+      energy: 1
+
+# ── Swamps ──────────────────────────────────────────────
+
+- type: entity
+  id: Z14WarZoneEntity_SwampsBridge
+  categories: [ Zona14 ]
+  suffix: Z14
+  parent: MarkerBase
+  name: Swamps - Bridge
+  description: A physical marker for the Swamps Bridge War Zone.
+  components:
+    - type: WarZone
+      proto: Z14SwampsBridge
+      portalName: Bridge
+    - type: Physics
+      bodyType: Static
+      canCollide: true
+    - type: Fixtures
+      fixtures:
+        trigger:
+          shape:
+            !type:PhysShapeCircle
+            radius: 5
+          hard: false
+          mask:
+            - MobMask
+          layer:
+            - MidImpassable
+    - type: PointLight
+      enabled: true
+      radius: 15
+      color: Cyan
+      energy: 1
+
+- type: entity
+  id: Z14WarZoneEntity_SwampsChapel
+  categories: [ Zona14 ]
+  suffix: Z14
+  parent: MarkerBase
+  name: Swamps - Chapel
+  description: A physical marker for the Swamps Chapel War Zone.
+  components:
+    - type: WarZone
+      proto: Z14SwampsChapel
+      portalName: Chapel
+    - type: Physics
+      bodyType: Static
+      canCollide: true
+    - type: Fixtures
+      fixtures:
+        trigger:
+          shape:
+            !type:PhysShapeCircle
+            radius: 5
+          hard: false
+          mask:
+            - MobMask
+          layer:
+            - MidImpassable
+    - type: PointLight
+      enabled: true
+      radius: 15
+      color: Cyan
+      energy: 1
+
+- type: entity
+  id: Z14WarZoneEntity_SwampsTrainStation
+  categories: [ Zona14 ]
+  suffix: Z14
+  parent: MarkerBase
+  name: Swamps - Train Station
+  description: A physical marker for the Swamps Train Station War Zone.
+  components:
+    - type: WarZone
+      proto: Z14SwampsTrainStation
+      portalName: Train Station
+    - type: Physics
+      bodyType: Static
+      canCollide: true
+    - type: Fixtures
+      fixtures:
+        trigger:
+          shape:
+            !type:PhysShapeCircle
+            radius: 5
+          hard: false
+          mask:
+            - MobMask
+          layer:
+            - MidImpassable
+    - type: PointLight
+      enabled: true
+      radius: 15
+      color: Cyan
+      energy: 1
+
+# ── Garbage ──────────────────────────────────────────────
+
+- type: entity
+  id: Z14WarZoneEntity_GarbageContainerYard
+  categories: [ Zona14 ]
+  suffix: Z14
+  parent: MarkerBase
+  name: Garbage - Container Yard
+  description: A physical marker for the Garbage Container Yard War Zone.
+  components:
+    - type: WarZone
+      proto: Z14GarbageContainerYard
+      portalName: Container Yard
+    - type: Physics
+      bodyType: Static
+      canCollide: true
+    - type: Fixtures
+      fixtures:
+        trigger:
+          shape:
+            !type:PhysShapeCircle
+            radius: 5
+          hard: false
+          mask:
+            - MobMask
+          layer:
+            - MidImpassable
+    - type: PointLight
+      enabled: true
+      radius: 15
+      color: Cyan
+      energy: 1
+
+- type: entity
+  id: Z14WarZoneEntity_GarbageCollapsedBridge
+  categories: [ Zona14 ]
+  suffix: Z14
+  parent: MarkerBase
+  name: Garbage - Collapsed Bridge
+  description: A physical marker for the Garbage Collapsed Bridge War Zone.
+  components:
+    - type: WarZone
+      proto: Z14GarbageCollapsedBridge
+      portalName: Collapsed Bridge
+    - type: Physics
+      bodyType: Static
+      canCollide: true
+    - type: Fixtures
+      fixtures:
+        trigger:
+          shape:
+            !type:PhysShapeCircle
+            radius: 5
+          hard: false
+          mask:
+            - MobMask
+          layer:
+            - MidImpassable
+    - type: PointLight
+      enabled: true
+      radius: 15
+      color: Cyan
+      energy: 1
+
+- type: entity
+  id: Z14WarZoneEntity_GarbageWaterTreatmentPlant
+  categories: [ Zona14 ]
+  suffix: Z14
+  parent: MarkerBase
+  name: Garbage - Water Treatment Plant
+  description: A physical marker for the Garbage Water Treatment Plant War Zone.
+  components:
+    - type: WarZone
+      proto: Z14GarbageWaterTreatmentPlant
+      portalName: Water Treatment Plant
+    - type: Physics
+      bodyType: Static
+      canCollide: true
+    - type: Fixtures
+      fixtures:
+        trigger:
+          shape:
+            !type:PhysShapeCircle
+            radius: 5
+          hard: false
+          mask:
+            - MobMask
+          layer:
+            - MidImpassable
+    - type: PointLight
+      enabled: true
+      radius: 15
+      color: Cyan
+      energy: 1

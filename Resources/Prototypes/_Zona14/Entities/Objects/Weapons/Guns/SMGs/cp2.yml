@@ -56,7 +56,7 @@
       accuracyMultiplier: 1.42
 
 - type: entity
-  name: 'SR-2 "Veresk" Seraphim'
+  name: 'SR-2 "Veresk" (Emerald)'
   parent: Z14STWeaponSMGStalkerCP2Veresk
   id: Z14STWeaponSMGStalkerCP2VereskSera
   suffix: Z14
@@ -139,7 +139,7 @@
               - STCartridge921PGJ
 
 - type: entity
-  name: 'SR-2M "Veresk" Seraphim 9x21'
+  name: 'SR-2M "Veresk" 9x21 (Emerald)'
   parent: Z14STWeaponSMGStalkerCP2Veresk921
   id: Z14STWeaponSMGStalkerCP2VereskSera921
   suffix: Z14

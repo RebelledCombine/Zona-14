@@ -6,6 +6,6 @@ ent-Z14STCombatKnife = combat knife
     .desc = A deadly knife intended for melee confrontations.
     .suffix = Z14
 
-ent-Z14STSeraKnife = cultist knife
-    .desc = Smells like herbs and oils.
+ent-Z14STSeraKnife = green knife
+    .desc = A simple knife with a green-wrapped handle. Smells faintly of herbs and oils.
     .suffix = Z14

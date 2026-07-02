@@ -929,8 +929,8 @@
   parent: BaseItem
   id: Z14TradeBoxSera
   categories: [ Zona14 ]
-  name: Seraphim Supply Crate
-  description: A box of Seraphim supplies, addressed to the northern Limansk coven from the southern coven
+  name: Zealot Supply Crate
+  description: A box of Zealot supplies, addressed to the northern Limansk coven from the southern coven.
   suffix: Z14, Economy, Contraband
   components:
     - type: STWeight
@@ -2193,7 +2193,7 @@
   id: Z14SefirotCrate
   categories: [ Zona14 ]
   suffix: Z14
-  name: Seraphim equipment kit
+  name: Zealot equipment kit
   description: Equipment kit
   components:
     - type: Item

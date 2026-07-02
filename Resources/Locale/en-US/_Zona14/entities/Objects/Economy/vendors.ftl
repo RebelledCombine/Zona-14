@@ -54,7 +54,7 @@ ent-Z14VendingMachineBoxesProject = crate of Project equipment kits
     .desc = A crate containing equipment inside.
     .suffix = Z14
 
-ent-Z14VendingMachineBoxesSerafim = crate of Seraphim equipment kits
+ent-Z14VendingMachineBoxesSerafim = crate of Zealot equipment kits
     .desc = A crate containing equipment inside.
     .suffix = Z14
 
@@ -90,7 +90,7 @@ ent-Z14VendingMachineRestockUN = UN Supply
     .desc = A box with everything you need to express concern.
     .suffix = Z14
 
-ent-Z14VendingMachineSeraphim = Seraphim dispenser
+ent-Z14VendingMachineSeraphim = Zealot dispenser
     .desc = Contains basic equipment for surviving in the conditions of the northern Zone.
     .suffix = Z14
 

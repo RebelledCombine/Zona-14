@@ -1,5 +1,5 @@
 - type: entity
-  parent: Z14ArmorBaseT1PvP
+  parent: Z14ArmorBaseT3PvP
   id: Z14STClothingOuterIOTVGEN4
   categories: [ Zona14 ]
   name: IOTV GEN4

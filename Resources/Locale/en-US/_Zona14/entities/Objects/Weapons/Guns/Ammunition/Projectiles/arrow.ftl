@@ -7,7 +7,7 @@ ent-Z14Arrowadmin = SUPER BOLT
     .suffix = Z14
 
 ent-Z14Arrowboltpiercing = Armor-Piercing Bolt
-    .desc = A special Seraphim bolt made from radioactive artifact fragments and salvaged parts. Potentially armor-piercing.
+    .desc = A special bolt made from radioactive artifact fragments and salvaged parts. Potentially armor-piercing.
     .suffix = Z14
 
 ent-Z14Arrowboltrust = Rusty Bolt

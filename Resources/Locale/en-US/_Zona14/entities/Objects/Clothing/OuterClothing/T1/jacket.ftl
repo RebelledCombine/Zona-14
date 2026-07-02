@@ -94,11 +94,11 @@ ent-Z14ClothingOuterJacketSCI = jacket 'NIICHAZ'
     .desc = Does not save the wearer from bullets or anomalies, but is comfortable to wear. It smells like chemical cleaning...
     .suffix = Z14
 
-ent-Z14ClothingOuterJacketSera = 'Follower' Jacket
-    .desc = Does not save the wearer from bullets or anomalies, but is comfortable to wear. It smells like some kind of pollen...
+ent-Z14ClothingOuterJacketSera = Green Jacket
+    .desc = Does not save the wearer from bullets or anomalies, but is comfortable to wear. It smells faintly of pollen...
     .suffix = Z14
 
-ent-Z14ClothingOuterJacketSeraHatHood = { ent-ClothingJacketSci }
+ent-Z14ClothingOuterJacketSeraHatHood = Green Jacket Hood
     .desc = Hoods, helmets and the like.
     .suffix = Z14
 

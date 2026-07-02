@@ -2,8 +2,8 @@ ent-Z14STWeaponShotgunBenelliM4Super90 = benelli M4 Super 90
     .desc = Elite Italian semi-automatic. Rare in the Zone, more often found among professional mutant hunters.
     .suffix = Z14
 
-ent-Z14STWeaponShotgunBenelliM4Super90Seraphim = benelli M4 "Seraphim"
-    .desc = Ritual weapon of seraphim hunters. Decorated with amulets and marks of victories over anomalies.
+ent-Z14STWeaponShotgunBenelliM4Super90Seraphim = Benelli M4 "Emerald"
+    .desc = A green-finished Benelli M4 — a semi-automatic combat shotgun prized by Zone hunters for its reliability.
     .suffix = Z14
 
 ent-Z14STWeaponShotgunMP153 = MP-153

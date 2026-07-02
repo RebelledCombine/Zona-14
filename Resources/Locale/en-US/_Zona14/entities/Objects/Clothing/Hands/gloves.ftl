@@ -18,6 +18,6 @@ ent-Z14STClothingHandsGlovesKrava = fingerless combat gloves
     .desc = Tactical gloves made for comfortable wear by military personnel.
     .suffix = Z14
 
-ent-Z14STClothingHandsGlovesSera = Seraphim Windings
-    .desc = Cloth flap wrappings to replace the seraph's gloves. If you look closely, you can see that the prayers of the seraphim to their God are neatly written on the rags.
+ent-Z14STClothingHandsGlovesSera = Green Hand Wrappings
+    .desc = Cloth wrappings worn in place of gloves, dyed green.
     .suffix = Z14

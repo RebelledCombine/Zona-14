@@ -130,8 +130,8 @@
   id: Z14STWeaponSniperSVUSeraphim
   suffix: Z14
   categories: [ Zona14 ]
-  name: Seraphim SVU Sniper Rifle
-  description: An elite SVU variant used by the mysterious Seraphim faction. Features advanced modifications and distinctive white finish, making it both deadly and recognizable in the Zone's harsh environment.
+  name: 'SVU Sniper Rifle "Emerald"'
+  description: An elite SVU variant of unknown origin. Features advanced modifications and a distinctive green finish, making it both deadly and recognizable in the Zone's harsh environment.
   components:
   - type: Clothing
     sprite: _Stalker/Objects/Weapons/Guns/Snipers/SVU/seraphim.rsi

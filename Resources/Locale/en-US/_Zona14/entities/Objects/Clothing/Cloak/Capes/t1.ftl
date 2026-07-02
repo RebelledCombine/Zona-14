@@ -23,7 +23,7 @@ ent-Z14ClothingHeadHelmetPahanCoat = hood of the pahan's cloak
     .suffix = Z14
 
 ent-Z14ClothingHeadHelmetSeraRuined = hood
-    .desc = Tattered hood of a strange color.
+    .desc = A tattered hood, faded to a dull green.
     .suffix = Z14
 
 ent-Z14ClothingNeckCloakCassock = pilgrim's cassock
@@ -46,11 +46,11 @@ ent-Z14ClothingTorsoTurtlenecksCamouflage = Tattered Survivors' Cloak
     .desc = A strange cloak torn into trash. Handicraft repainted in some kind of camouflage.
     .suffix = Z14
 
-ent-Z14STClothingCapeT1Serafim = Seraphim Cloak
-    .desc = Dark green
+ent-Z14STClothingCapeT1Serafim = Green Cloak
+    .desc = A simple cloak dyed dark green.
     .suffix = Z14
 
-ent-Z14STClothingHeadHelmetSerafim = Seraphim Cloak Hood
+ent-Z14STClothingHeadHelmetSerafim = Green Cloak Hood
     .desc = Covers your head
     .suffix = Z14
 

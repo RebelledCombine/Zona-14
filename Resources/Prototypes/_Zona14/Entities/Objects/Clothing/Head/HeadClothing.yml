@@ -257,7 +257,7 @@
   categories: [ Zona14 ]
   suffix: Z14
   name: green headband
-  description: Green headband with a Seraphim patch.
+  description: A green headband.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/hats/serahat.rsi

@@ -14,8 +14,7 @@ ent-Z14ClothingHeadCapDeserterRadio = гарнитура отступников
     .desc = Кепка в чёрно-чером пиксельном камуфляже, теперь с гарнитурой.
     .suffix = Z14
 
-ent-Z14ClothingHeadHatSerahat = зелёная повязка
-    .desc = Зелёная повязка на голову с нашивкой серафимов на ней.
+ent-Z14ClothingHeadHatSerahat = Зелёная повязка
+    .desc = Простая зелёная повязка.
     .suffix = Z14
-
 ent-Z14HelmetBase = Базовый шлем

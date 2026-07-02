@@ -31,7 +31,7 @@
 # Merc
 
 - type: entity
-  parent: Z14STClothingOuterArmorBulatBase
+  parent: [ Z14ArmorBaseT4PvP, Z14STClothingOuterArmorBulatBase ]
   id: Z14ClothingOuterArmorBulatMercenary
   categories: [ Zona14 ]
   suffix: Z14
@@ -48,7 +48,7 @@
 # Monolith
 
 - type: entity
-  parent: Z14STClothingOuterArmorBulatBase
+  parent: [ Z14ArmorBaseT4PvP, Z14STClothingOuterArmorBulatBase ]
   id: Z14ClothingOuterArmorBulatMonolith
   categories: [ Zona14 ]
   suffix: Z14
@@ -65,7 +65,7 @@
 # Military
 
 - type: entity
-  parent: Z14STClothingOuterArmorBulatBase
+  parent: [ Z14ArmorBaseT4PvP, Z14STClothingOuterArmorBulatBase ]
   id: Z14ClothingOuterArmorBulatMilitary
   categories: [ Zona14 ]
   suffix: Z14

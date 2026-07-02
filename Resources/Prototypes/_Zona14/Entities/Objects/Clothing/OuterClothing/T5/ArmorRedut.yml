@@ -1,5 +1,5 @@
 - type: entity
-  parent: Z14ArmorBaseT1PvP
+  parent: Z14ArmorBaseT5PvP
   id: Z14STClothingOuterHeavyRedut
   categories: [ Zona14 ]
   name: Heavy "Redut" Body Armor

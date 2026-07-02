@@ -6,10 +6,9 @@ ent-Z14ClothingHeadHelmetInfantryProject = Модифицированный шл
     .desc = Пехотный шлем марки «Восток» второго класса защиты, производитель неизвестен.
     .suffix = Z14
 
-ent-Z14ClothingHeadHelmetInfantrySera = шлем «Восток» серафимов
-    .desc = Пехотный шлем «Восток» с нанесенными на него полосами.
+ent-Z14ClothingHeadHelmetInfantrySera = Пехотный шлем «Восток» (Зелёный)
+    .desc = Шлем «Восток», окрашенный в зелёный.
     .suffix = Z14
-
-ent-Z14ClothingHeadHelmetInfantrySerasera = шлем «Восток» серафимов
-    .desc = Пехотный шлем «Восток» серого цвета с нанесенными на него полосами.
+ent-Z14ClothingHeadHelmetInfantrySerasera = Пехотный шлем «Восток» (Зелёный)
+    .desc = Зелёный шлем «Восток» с полосами.
     .suffix = Z14

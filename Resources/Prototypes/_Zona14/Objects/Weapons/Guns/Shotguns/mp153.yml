@@ -63,8 +63,8 @@
   id: Z14STWeaponShotgunBenelliM4Super90Seraphim
   categories: [ Zona14 ]
   suffix: Z14
-  name: benelli M4 "Seraphim"
-  description: Ritual weapon of seraphim hunters. Decorated with amulets and marks of victories over anomalies.
+  name: 'Benelli M4 "Emerald"'
+  description: A green-finished Benelli M4 — a semi-automatic combat shotgun prized by Zone hunters for its reliability.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Weapons/Guns/Shotguns/benelisera.rsi

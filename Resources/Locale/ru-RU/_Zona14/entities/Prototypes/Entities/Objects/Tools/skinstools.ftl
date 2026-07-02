@@ -66,10 +66,9 @@ ent-Z14STSkinsKitRenegate = Набор Ренегата
     .desc = Сущность Зоны.
     .suffix = Z14
 
-ent-Z14STSkinsKitSeraphim = Набор Серафима
-    .desc = Сущность Зоны.
+ent-Z14STSkinsKitSeraphim = Набор перекраски
+    .desc = Набор для перекраски и изменения внешнего вида снаряжения в зелёные оттенки.
     .suffix = Z14
-
 ent-Z14STSkinsKitUnitar = Набор ООН
     .desc = Сущность Зоны.
     .suffix = Z14

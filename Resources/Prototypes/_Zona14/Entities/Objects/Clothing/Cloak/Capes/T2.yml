@@ -194,9 +194,9 @@
   parent: Z14STClothingCloakBase
   id: Z14STClothingCapeT2SerafimPrestige
   categories: [ Zona14 ]
-  name: Seraphim Prestige Cloak
+  name: Ornate Green Cloak
   suffix: Z14
-  description: Made in a dark green color scheme with metal inserts
+  description: A dark green cloak finished with polished metal accents.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/cloak/Sera_/cape_serafim_prestige.rsi

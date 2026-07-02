@@ -2,14 +2,12 @@ ent-Z14ClothingHatChainFreedom = капюшон
     .desc = Капюшон кольчуги свободы.
     .suffix = Z14
 
-ent-Z14ClothingHeadHelmetLoyalistCoatLimaSeraphim = кевларовый капюшон серафимов
-    .desc = От кевлара в нем только название.
+ent-Z14ClothingHeadHelmetLoyalistCoatLimaSeraphim = Изношенный зелёный кевларовый капюшон
+    .desc = Кевларовый капюшон, окрашенный в зелёный.
     .suffix = Z14
-
-ent-Z14ClothingOuterCoatLimaSeraphim = кевларовый плащ серафимов
-    .desc = Плащ, модифицированный под нужды группировки Серафимов, окрашенный в серый цвет.
+ent-Z14ClothingOuterCoatLimaSeraphim = Изношенный зелёный кевларовый плащ
+    .desc = Усиленный кевларовый плащ, окрашенный в зелёный.
     .suffix = Z14
-
 ent-Z14ClothingOuterCoatRet = утеплённый кевларовый плащ
     .desc = Плащ, сделанный в условиях зоны, на удивление качественная работа, сделан из качественной кожи и прошит кевларом,кое-где вставлены бронепластины, окрашен в коричневый с пришитым воротником.
     .suffix = Z14

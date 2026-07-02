@@ -3,7 +3,7 @@ ent-Z14MedkitAI2 = AI-2 first aid kit
     .suffix = Z14
 
 ent-Z14MedkitAI2Sera = Homemade Medicine Kit
-    .desc = A cloth-wrapped set of different jars, flasks, and powders, as well as old surgical instruments. It is used by seraphim for the thorough treatment of both deep bites of mutants and bullet and shrapnel wounds. In comparison with modern medicine, it is an extremely impractical way of providing medical care to the wounded, and nevertheless, its creators use it, having no other alternative.
+    .desc = A cloth-wrapped set of different jars, flasks, and powders, as well as old surgical instruments. It is used for the thorough treatment of both deep mutant bites and bullet and shrapnel wounds. In comparison with modern medicine it is an extremely impractical way of treating the wounded, and nevertheless, its makers use it for lack of any alternative.
     .suffix = Z14
 
 ent-Z14MedkitElite = Elite Medkit
@@ -37,7 +37,7 @@ ent-Z14STGauzeBarbaris = barberry-soaked bandage
     .suffix = Z14
 
 ent-Z14STGauzeSera = piece of rag
-    .desc = Whether it's boiled cloth or an old bandage found in the rubble, those living in the Seraphim zone use this to bandage wounds.
+    .desc = Whether it's boiled cloth or an old bandage found in the rubble, the people of the Zone use this to bandage wounds.
     .suffix = Z14
 
 ent-Z14STGauzeUniversal = universal-salve-soaked bandage
@@ -52,7 +52,7 @@ ent-Z14STOintmentGood = antibiotic ointment
     .suffix = Z14
 
 ent-Z14STOintmentSera = bitter ointment
-    .desc = A disgusting, viscous goo with a horrible smell made from Boar liver pomace, but it is still surprisingly good at healing chemical and radiation burns. It is used by seraphim, among other things, as a means of combating skin cancer.
+    .desc = A disgusting, viscous goo with a horrible smell made from Boar liver pomace, but it is still surprisingly good at healing chemical and radiation burns. It is also used as a means of combating skin cancer.
     .suffix = Z14
 
 ent-Z14STPillboxAntirad = iododeradine pill pack

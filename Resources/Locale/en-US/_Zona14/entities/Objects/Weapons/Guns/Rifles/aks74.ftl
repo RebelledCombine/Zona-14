@@ -22,8 +22,8 @@ ent-Z14STWeaponRifleAKS74UBlack = AKS-74U (Night)
     .desc = An AKS-74 with a shiny black finish. It uses 5.45x39mm ammo.
     .suffix = Z14
 
-ent-Z14STWeaponRifleAKS74USERAPH = Martyr
-    .desc = AKs and AKSs beyond repair bring new life through Seraphim Brotherhood technicians, turning into Martyr weapons. Unreliable, inaccurate, inefficient—but still used by Suicide Seraphim in their final battle for their God. It uses 5.45x39mm ammo.
+ent-Z14STWeaponRifleAKS74USERAPH = AKS-74U "Emerald"
+    .desc = A worn-out AKS-74U pulled from the scrap heap and given new life by Zone gunsmiths, then finished in green. Unreliable and inaccurate, but better than going unarmed. It uses 5.45x39mm ammo.
     .suffix = Z14
 
 ent-Z14STWeaponRifleAKS74UWhite = AKS-74U (Winter)

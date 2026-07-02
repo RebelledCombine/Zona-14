@@ -52,11 +52,11 @@
         Slash: 22
 
 - type: entity
-  name: cultist knife
+  name: green knife
   parent: Z14STCombatKnife
   id: Z14STSeraKnife
   categories: [ Zona14 ]
-  description: Smells of herbs and oils.
+  description: A simple knife with a green-wrapped handle. Smells faintly of herbs and oils.
   suffix: Z14
   components:
   - type: Sprite

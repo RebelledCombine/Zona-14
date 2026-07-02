@@ -1,7 +1,7 @@
 ent-Z14STWeaponShotgunAA = AA-12
-    .desc = Automatic Shotgun.
+    .desc = An American fully-automatic combat shotgun built almost entirely from stainless steel. Its low-recoil design and large drum magazines let it lay down a devastating wall of 12-gauge fire, making it brutally effective against packs of mutants.
     .suffix = Z14
 
-ent-Z14STWeaponShotgunAArchangel = AA-12 'Archangel'
-    .desc = A specially commissioned automatic shotgun used by the Archangels — the top warriors of the Seraphim Brotherhood. A rare weapon not just among fanatics, but across the entire Zone. A terrifying tool not only for hunting big game, but for taking on humans too!
+ent-Z14STWeaponShotgunAArchangel = AA-12 "Emerald"
+    .desc = A green-finished AA-12. This American fully-automatic combat shotgun is built almost entirely from stainless steel; its low recoil and large drum magazines lay down a devastating wall of 12-gauge fire, brutal against packs of mutants and men alike.
     .suffix = Z14

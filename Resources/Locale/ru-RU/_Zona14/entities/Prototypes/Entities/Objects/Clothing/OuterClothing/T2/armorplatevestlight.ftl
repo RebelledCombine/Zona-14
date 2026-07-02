@@ -42,10 +42,9 @@ ent-Z14STClothingOuterArmorLightPlateVestBaseRenegate = бронежилет 'У
     .desc = Этот бронежилет видел слишком много. Ржавый металл, оранжевая мазня, череп, смотрящий прямо в душу… асимметричный наплечник только добавляет безумия. Владелец явно перешел черту.
     .suffix = Z14
 
-ent-Z14STClothingOuterArmorLightPlateVestBaseSera = лёгкий бронежилет 'Серафимов'
-    .desc = Стандартный бронежилет II типа, обеспечивающий достойную защиту от большинства видов повреждений
+ent-Z14STClothingOuterArmorLightPlateVestBaseSera = Бронежилет Shield-2 (Зелёный)
+    .desc = Стандартный бронежилет второго класса защиты, окрашенный в зелёный, обеспечивающий неплохую защиту от большинства типов урона.
     .suffix = Z14
-
 ent-Z14STClothingOuterArmorLightPlateVestBaseStalker = бронежилет "Щиток-2"
     .desc = Лёгкий бронежилет второго класса защиты, основа основ.
     .suffix = Z14

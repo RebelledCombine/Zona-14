@@ -131,7 +131,7 @@
   categories: [ Zona14 ]
   name: Hunter Boots
   suffix: Z14
-  description: Combat boots repainted dark green. Unique footwear used by the Seraphim faction.
+  description: Combat boots repainted in a dark green shade.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/shoes/hunter_boots.rsi

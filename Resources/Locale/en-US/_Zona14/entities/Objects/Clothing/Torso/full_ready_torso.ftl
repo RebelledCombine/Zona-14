@@ -1,3 +1,3 @@
-ent-Z14STClothingTorsoSerafimFullReady = Star Son Follower Form
-    .desc = Material unknown. Size unknown. The sewing method is unknown. This is something very unusual...
+ent-Z14STClothingTorsoSerafimFullReady = Green Field Uniform
+    .desc = A green field uniform of unusual make.
     .suffix = Z14

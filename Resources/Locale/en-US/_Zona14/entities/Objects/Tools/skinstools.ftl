@@ -66,7 +66,7 @@ ent-Z14STSkinsKitRenegate = Renegade Kit
     .desc = { ent-STSkinsKitBase.desc }
     .suffix = Z14
 
-ent-Z14STSkinsKitSeraphim = Seraphim Kit
+ent-Z14STSkinsKitSeraphim = Skins Kit
     .desc = { ent-STSkinsKitBase.desc }
     .suffix = Z14
 

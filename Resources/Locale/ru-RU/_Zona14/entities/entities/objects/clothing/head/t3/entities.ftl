@@ -6,14 +6,12 @@ ent-Z14ClothingHeadAssaultHelmetFreedom = шлем «Зенит» Свободы
     .desc = боевой шлем марки «Зенит» третьего класса защиты.
     .suffix = Z14
 
-ent-Z14ClothingHeadAssaultHelmetLimaSeraZastup = шлем «Заступник»
-    .desc = боевой шлем марки «Зенит» третьего класса защиты серого цвета с нанесёнными на него полосами.
+ent-Z14ClothingHeadAssaultHelmetLimaSeraZastup = Боевой шлем «Зенит» (Зелёный)
+    .desc = Зелёный боевой шлем «Зенит», третий класс защиты, с нанесёнными полосами.
     .suffix = Z14
-
-ent-Z14ClothingHeadAssaultHelmetSeraZastup = шлем «Заступник»
-    .desc = боевой шлем марки «Зенит» третьего класса защиты с нанесёнными на него полосами.
+ent-Z14ClothingHeadAssaultHelmetSeraZastup = Боевой шлем «Зенит» (Зелёный)
+    .desc = Зелёный боевой шлем «Зенит», третий класс защиты, с нанесёнными полосами.
     .suffix = Z14
-
 ent-Z14ClothingHeadAssaultHelmetZavet = шлем «Зенит» Завета
     .desc = боевой шлем марки «Зенит» третьего класса защиты.
     .suffix = Z14

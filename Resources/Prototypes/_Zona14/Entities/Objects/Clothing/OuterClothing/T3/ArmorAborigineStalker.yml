@@ -1,6 +1,6 @@
 
 - type: entity
-  parent: Z14ArmorBaseT1PvP
+  parent: Z14ArmorBaseT3PvP
   id: Z14ClothingOuterArmorAborigineStalker
   categories: [ Zona14 ]
   name: Native Armor Suit
@@ -17,7 +17,7 @@
     lowPressureMultiplier: 1000
 
 - type: entity
-  parent: Z14ClothingOuterArmorAborigineStalker
+  parent: [ Z14ArmorBaseT3PvP, Z14ClothingOuterArmorAborigineStalker ]
   id: Z14ClothingOuterArmorAborigineFreedom
   categories: [ Zona14 ]
   name: Native Armor Suit

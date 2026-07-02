@@ -174,7 +174,7 @@ ent-Z14SaviorCrate = Rescue Pack
     .desc = Grizly, Medkits, defib, GO!
     .suffix = Z14
 
-ent-Z14SefirotCrate = Seraphim equipment kit
+ent-Z14SefirotCrate = Zealot equipment kit
     .desc = An equipment kit.
     .suffix = Z14
 
@@ -202,8 +202,8 @@ ent-Z14TradeBox2 = briquette of stocks and documents to Sidorovich
     .desc = { ent-TradeBox.desc }
     .suffix = Z14, Economy, For Clear Sky
 
-ent-Z14TradeBoxSera = Seraphim Supply Crate
-    .desc = A supply crate from the Seraphim, addressed to the northern Limansk coven from the southern one.
+ent-Z14TradeBoxSera = Zealot Supply Crate
+    .desc = A supply crate from the zealots, addressed to the northern Limansk coven from the southern one.
     .suffix = Z14, Economy, Contraband
 
 ent-Z14UNstandartCrate = UN Kit

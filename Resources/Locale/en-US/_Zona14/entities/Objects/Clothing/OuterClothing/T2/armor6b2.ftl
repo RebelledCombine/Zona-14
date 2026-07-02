@@ -10,6 +10,6 @@ ent-Z14ClothingOuterArmorRene6B2 = 6B2 'Renegade' Body Armor
     .desc = Type II body armor that provides little protection against most types of damage
     .suffix = Z14
 
-ent-Z14ClothingOuterArmorSera6b2 = 6B5 body armor
-    .desc = Type II body armor that provides little protection against most types of damage
+ent-Z14ClothingOuterArmorSera6b2 = 6B5 body armor (Green)
+    .desc = Type II body armor, painted green, that provides little protection against most types of damage.
     .suffix = Z14

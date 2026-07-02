@@ -1,5 +1,5 @@
 - type: entity
-  parent: Z14ArmorBaseT1PvP
+  parent: Z14ArmorBaseT2PvP
   id: Z14STClothingOuterArmorLightPlateVestBaseANAgreen
   categories: [ Zona14 ]
   name: ANA Tactical Green
@@ -16,7 +16,7 @@
   - type: Craftable
 
 - type: entity
-  parent: Z14ArmorBaseT1PvP
+  parent: Z14ArmorBaseT2PvP
   id: Z14STClothingOuterArmorLightPlateVestBaseANAgray
   categories: [ Zona14 ]
   suffix: Z14
@@ -55,7 +55,7 @@
     sprite: _Stalker/Objects/Clothing/outerClothing/ANA/Gray.rsi
   - type: Craftable
 - type: entity
-  parent: Z14ArmorBaseT1PvP
+  parent: Z14ArmorBaseT2PvP
   id: Z14STClothingOuterArmorLightPlateVestBaseANABlue
   categories: [ Zona14 ]
   suffix: Z14

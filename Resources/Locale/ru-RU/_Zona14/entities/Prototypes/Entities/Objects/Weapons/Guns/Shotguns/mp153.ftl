@@ -2,10 +2,9 @@ ent-Z14STWeaponShotgunBenelliM4Super90 = Benelli M4 Super 90
     .desc = Элитный итальянский полуавтомат. Редкость в Зоне, чаще встречается у профессиональных охотников на мутантов.
     .suffix = Z14
 
-ent-Z14STWeaponShotgunBenelliM4Super90Seraphim = benelli M4 "Серафимов"
-    .desc = Ритуальное оружие охотников-серафимов. Украшен оберегами и отметками о победах над аномалиями.
+ent-Z14STWeaponShotgunBenelliM4Super90Seraphim = Benelli M4 «Изумруд»
+    .desc = Benelli M4 с зелёной окраской — полуавтоматический боевой дробовик, ценимый охотниками Зоны за надёжность.
     .suffix = Z14
-
 ent-Z14STWeaponShotgunMP153 = МР-153
     .desc = Полуавтоматический дробовик - доступная альтернатива дорогим импортным аналогам. Любим сталкерами за безотказность в условиях Зоны.
     .suffix = Z14

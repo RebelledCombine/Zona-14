@@ -38,10 +38,10 @@ ent-Z14ClothingMaskSkull = Skull Mask
     .desc = Looks intimidating, as if there is a depressive personality behind it.
     .suffix = Z14
 
-ent-Z14STClothingMaskKufei = Seraphim kufei
+ent-Z14STClothingMaskKufei = Green Keffiyeh
     .desc = A lightweight fabric designed to be worn on the head and to cover the face in which it is easy to breathe and move actively.
     .suffix = Z14
 
-ent-Z14STClothingMaskLimaKufei = Seraphim kufiyeh
-    .desc = Lightweight gray cloth for covering the head and face, breathable and suited for active movement.
+ent-Z14STClothingMaskLimaKufei = Green Keffiyeh
+    .desc = Lightweight green cloth for covering the head and face, breathable and suited for active movement.
     .suffix = Z14

@@ -557,7 +557,7 @@
   parent: VendingMachine
   id: Z14VendingMachineSeraphim
   categories: [ Zona14 ]
-  name: Seraphim dispenser
+  name: Zealot dispenser
   description: Contains basic survival equipment for the northern Zone.
   suffix: Z14
   components:
@@ -868,7 +868,7 @@
   parent: VendingMachine
   id: Z14VendingMachineBoxesSerafim
   categories: [ Zona14 ]
-  name: crate of Seraphim equipment kits
+  name: crate of Zealot equipment kits
   description: A crate containing equipment inside.
   suffix: Z14
   components:

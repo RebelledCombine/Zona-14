@@ -70,7 +70,7 @@
     falloffMultiplier: 0.7
 
 - type: entity
-  name: AK-12 Seraphim
+  name: 'AK-12 "Emerald"'
   parent: Z14STWeaponRifleStalkerAK12
   id: Z14STWeaponRifleStalkerAK12Sera
   suffix: Z14

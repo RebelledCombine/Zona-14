@@ -208,9 +208,9 @@
   parent: Z14ClothingOuterCoatDoshdevik
   id: Z14STClothingCapeT1Serafim
   categories: [ Zona14 ]
-  name: Seraphim Cloak
+  name: Green Cloak
   suffix: Z14
-  description: Made in a dark green color scheme
+  description: A simple cloak dyed dark green.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/cloak/Sera_/cape_serafim.rsi
@@ -222,8 +222,8 @@
   parent: STClothingHeadHatBase
   id: Z14STClothingHeadHelmetSerafim
   suffix: Z14
-  name: Seraphim Cloak Hood
-  description: Covers your head
+  name: Green Cloak Hood
+  description: Covers your head.
   categories: [ HideSpawnMenu, Zona14 ]
   components:
   - type: Sprite

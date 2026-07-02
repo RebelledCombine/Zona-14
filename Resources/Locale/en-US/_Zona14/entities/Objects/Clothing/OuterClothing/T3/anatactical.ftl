@@ -35,5 +35,5 @@ ent-Z14STClothingOuterArmorLightPlateVestBaseANAzavet = "Steppe-4" armored rig o
     .suffix = Z14
 
 ent-Z14STClothingOuterArmorLightPlateVestSera = ANA Tactical "Defender"
-    .desc = Reliable 3rd class body armor, a full analog of the "Steppe-4", the only difference is the presence of a chest guard.
+    .desc = Reliable 3rd class body armor, a full analog of the "Steppe-4", the only difference being the chest guard. Finished in green.
     .suffix = Z14

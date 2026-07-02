@@ -34,7 +34,7 @@
   categories: [ Zona14 ]
   suffix: Z14
   name: Armor-Piercing Bolt
-  description: A special Seraphim bolt made from radioactive artifact fragments and salvaged parts. Potentially armor-piercing.
+  description: A special bolt made from radioactive artifact fragments and salvaged parts. Potentially armor-piercing.
   components:
   - type: Sprite
     layers:

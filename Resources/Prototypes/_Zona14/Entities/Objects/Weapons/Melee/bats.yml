@@ -97,8 +97,8 @@
   parent: Z14StalkerBallBat
   id: Z14STBatMolitoslov
   categories: [ Zona14 ]
-  name: siddur seraphim
-  description: A collection of prayers, hymns, and texts through which people address God.
+  name: heavy tome
+  description: A thick, hardcover tome, dense and heavy enough to swing as a blunt weapon.
   suffix: Z14
   components:
     - type: Sprite

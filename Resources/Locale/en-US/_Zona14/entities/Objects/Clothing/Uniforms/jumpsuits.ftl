@@ -110,15 +110,15 @@ ent-Z14ClothingUniformPolice = Police Uniform
     .desc = I'm the law here!
     .suffix = Z14
 
-ent-Z14ClothingUniformSerafimFanatic = Seraphim Uniform
+ent-Z14ClothingUniformSerafimFanatic = Green Uniform
     .desc = Maybe it will become fashionable soon.
     .suffix = Z14
 
-ent-Z14ClothingUniformSerafimFullReady = Seraphim Uniform
+ent-Z14ClothingUniformSerafimFullReady = Green Uniform
     .desc = Maybe it will become fashionable soon.
     .suffix = Z14
 
-ent-Z14ClothingUniformSerafimLittleChaos = Seraphim Uniform
+ent-Z14ClothingUniformSerafimLittleChaos = Green Uniform
     .desc = Maybe it will become fashionable soon.
     .suffix = Z14
 

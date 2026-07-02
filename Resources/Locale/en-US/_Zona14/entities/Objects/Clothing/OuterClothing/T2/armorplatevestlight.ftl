@@ -46,8 +46,8 @@ ent-Z14STClothingOuterArmorLightPlateVestBaseRenegate = Dead Man's Grin Body Arm
     .desc = This body armor has seen too much. Rusty metal, orange daub, a skull looking straight into the soul... The asymmetrical shoulder pad only adds to the madness. The owner has clearly crossed the line.
     .suffix = Z14
 
-ent-Z14STClothingOuterArmorLightPlateVestBaseSera = 'Seraphim' Shield-2 body armor
-    .desc = Standard Type II body armor, providing decent protection against most types of damage
+ent-Z14STClothingOuterArmorLightPlateVestBaseSera = Shield-2 body armor (Green)
+    .desc = Standard Type II body armor, painted green, providing decent protection against most types of damage.
     .suffix = Z14
 
 ent-Z14STClothingOuterArmorLightPlateVestBaseStalker = Shield-2 body armor

@@ -25,8 +25,8 @@
   id: Z14STWeaponShotgunSaiga12Seraphim
   categories: [ Zona14 ]
   suffix: Z14
-  name: Saiga-12 "Seraphim"
-  description: Lightweight Saiga-12 variant with Seraphim faction camouflage. Retains all original advantages while offering improved ergonomics.
+  name: 'Saiga-12 "Emerald"'
+  description: Lightweight Saiga-12 variant wrapped in a custom emerald-green finish. Retains all original advantages while offering improved ergonomics.
   components:
   - type: Clothing
     sprite: _Stalker/Objects/Weapons/Guns/Shotguns/saiga/saiga-sera.rsi

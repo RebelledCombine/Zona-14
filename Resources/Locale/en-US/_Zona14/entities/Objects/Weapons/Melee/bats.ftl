@@ -1,5 +1,5 @@
-ent-Z14STBatMolitoslov = siddur seraphim
-    .desc = A collection of prayers or prayer chants, texts by which people turn to God.
+ent-Z14STBatMolitoslov = heavy tome
+    .desc = A thick, hardcover tome, dense and heavy enough to swing as a blunt weapon.
     .suffix = Z14
 
 ent-Z14SpikyBallBat = spiky ball bat

@@ -6,6 +6,6 @@ ent-Z14STWeaponSniperVeprGrass = VPO-129 "Grass" Camo
     .desc = A bushman's dream - this Vepr variant features custom camouflage netting and vegetation attachments for maximum concealment in the Zone's wilderness.
     .suffix = Z14, Custom
 
-ent-Z14STWeaponSniperVeprSeraphim = Tactical VPO-129 "Seraphim"
-    .desc = Custom tactical VPO-129 variant with distinctive Seraphim faction markings and modifications. The white finish provides both visibility and intimidation factor in Zone operations.
+ent-Z14STWeaponSniperVeprSeraphim = Tactical VPO-129 "Emerald"
+    .desc = Custom tactical VPO-129 variant with distinctive markings and modifications. The green finish provides both visibility and an intimidation factor in Zone operations.
     .suffix = Z14

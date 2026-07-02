@@ -1125,3 +1125,11 @@ ToySkeleton: ToyFigurineSkeleton
 
 # 2025-10-28
 DrinkKiraSpecial: DrinkOrangeLimeSodaGlass
+
+# 2026-06-30 Zona14: fix "Tosro" typo -> "Torso"
+Z14STClothingTosroTurtlenecksCZ: Z14STClothingTorsoTurtlenecksCZ
+Z14STClothingTosroTurtlenecksFr: Z14STClothingTorsoTurtlenecksFr
+Z14STClothingTosroTurtlenecksKz: Z14STClothingTorsoTurtlenecksKz
+Z14STClothingTosroTurtlenecksLit: Z14STClothingTorsoTurtlenecksLit
+Z14STClothingTosroTurtlenecksPol: Z14STClothingTorsoTurtlenecksPol
+Z14STClothingTosroTurtlenecksRu: Z14STClothingTorsoTurtlenecksRu

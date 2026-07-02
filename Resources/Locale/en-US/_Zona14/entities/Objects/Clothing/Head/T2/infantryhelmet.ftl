@@ -22,12 +22,12 @@ ent-Z14ClothingHeadHelmetInfantryProject = modified "Vostok" helmet
     .desc = A "Vostok" infantry helmet of the second protection class, manufacturer unknown.
     .suffix = Z14
 
-ent-Z14ClothingHeadHelmetInfantrySera = “Vostok” infantry helmet (Seraphim)
-    .desc = “Vostok” infantry helmet with painted stripes.
+ent-Z14ClothingHeadHelmetInfantrySera = "Vostok" infantry helmet (Green)
+    .desc = A "Vostok" infantry helmet painted green.
     .suffix = Z14
 
-ent-Z14ClothingHeadHelmetInfantrySerasera = { ent-ClothingHeadHelmetInfantrySera }
-    .desc = Gray “Vostok” infantry helmet with painted stripes.
+ent-Z14ClothingHeadHelmetInfantrySerasera = "Vostok" infantry helmet (Green)
+    .desc = A green "Vostok" infantry helmet with painted stripes.
     .suffix = Z14
 
 ent-Z14ClothingHeadHelmetKeeper = Guardian Helmet

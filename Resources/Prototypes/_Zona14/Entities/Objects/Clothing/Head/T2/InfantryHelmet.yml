@@ -131,8 +131,8 @@
   id: Z14ClothingHeadHelmetInfantrySera
   categories: [ Zona14 ]
   suffix: Z14
-  name: “Vostok” infantry helmet (Seraphim)
-  description: Vostok infantry helmet with stripes.
+  name: '"Vostok" infantry helmet (Green)'
+  description: 'A "Vostok" infantry helmet painted green.'
   components:
     - type: Sprite
       sprite: _Stalker/Objects/Clothing/hats/pehhelm_sera.rsi
@@ -144,8 +144,8 @@
   id: Z14ClothingHeadHelmetInfantrySerasera
   categories: [ Zona14 ]
   suffix: Z14
-  name: “Vostok” infantry helmet (Seraphim)
-  description: Gray Vostok infantry helmet with stripes.
+  name: '"Vostok" infantry helmet (Green)'
+  description: 'A green "Vostok" infantry helmet with painted stripes.'
   components:
     - type: Sprite
       sprite: _Stalker/Objects/Clothing/hats/pehhelm_serasera.rsi

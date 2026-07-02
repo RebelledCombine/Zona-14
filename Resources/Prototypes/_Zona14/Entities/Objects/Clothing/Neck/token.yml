@@ -15,8 +15,8 @@
   parent: ClothingNeckBase
   id: Z14ClothingStalkerNeckTokenSeraphim
   categories: [ Zona14 ]
-  name: Seraphim token
-  description: A unique military dog tag associated with the Seraphim faction. Its design reflects the group's symbolism — made of sturdy metal. The front is engraved with the Seraphim's core symbol of faith, possibly incorporating ancient language or sacred symbols. The back holds the owner's personal info — name, ID number, and faction rank.
+  name: engraved token
+  description: A military insignia made of durable metal, finished in green. The reverse side is left blank for the owner's name and identification number.
   suffix: Z14
   components:
   - type: Sprite
@@ -29,7 +29,7 @@
   id: Z14ClothingStalkerNeckKulonSeraphim
   categories: [ Zona14 ]
   name: green pendant
-  description: A Seraphim pendant belonging to someone very important... it emits a dim glow, barely noticeable but meaningful... Perhaps it helps communicate with other covens? Or indicates artifacts? Only its owner would know.
+  description: A green pendant that gives off a dim glow. What it means, no one can say.
   suffix: Z14
   components:
   - type: Sprite

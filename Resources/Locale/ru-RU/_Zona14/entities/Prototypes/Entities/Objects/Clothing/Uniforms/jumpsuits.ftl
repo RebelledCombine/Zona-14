@@ -110,18 +110,15 @@ ent-Z14ClothingUniformPolice = полицейская униформа
     .desc = Я здесь закон!
     .suffix = Z14
 
-ent-Z14ClothingUniformSerafimFanatic = Футболка с пивозавром
-    .desc = Может быть это скоро станет модным.
+ent-Z14ClothingUniformSerafimFanatic = Зелёная форма
+    .desc = Простая форма, окрашенная в зелёный.
     .suffix = Z14
-
-ent-Z14ClothingUniformSerafimFullReady = Футболка с пивозавром
-    .desc = Может быть это скоро станет модным.
+ent-Z14ClothingUniformSerafimFullReady = Зелёная форма
+    .desc = Простая форма, окрашенная в зелёный.
     .suffix = Z14
-
-ent-Z14ClothingUniformSerafimLittleChaos = Футболка с пивозавром
-    .desc = Может быть это скоро станет модным.
+ent-Z14ClothingUniformSerafimLittleChaos = Зелёная форма
+    .desc = Простая форма, окрашенная в зелёный.
     .suffix = Z14
-
 ent-Z14StalkerJumpsuitJocker = костюм джокера
     .desc = Нестандартный костюм, некоторые думают что он шуточный. Но как-бы не так...
     .suffix = Z14

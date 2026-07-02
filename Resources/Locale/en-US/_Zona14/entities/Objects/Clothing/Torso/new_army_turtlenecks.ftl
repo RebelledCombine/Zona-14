@@ -2,26 +2,26 @@ ent-Z14ClothingTorsoTankMilitary = military tank
     .desc = A piece of zone equipment.
     .suffix = Z14
 
-ent-Z14STClothingTosroTurtlenecksCZ = Czechoslovakia army turtlenecks
+ent-Z14STClothingTorsoTurtlenecksCZ = Czechoslovakia army turtlenecks
     .desc = A piece of zone equipment.
     .suffix = Z14
 
-ent-Z14STClothingTosroTurtlenecksFr = France army turtlenecks
+ent-Z14STClothingTorsoTurtlenecksFr = France army turtlenecks
     .desc = A piece of zone equipment.
     .suffix = Z14
 
-ent-Z14STClothingTosroTurtlenecksKz = Kazakhstan army turtlenecks
+ent-Z14STClothingTorsoTurtlenecksKz = Kazakhstan army turtlenecks
     .desc = A piece of zone equipment.
     .suffix = Z14
 
-ent-Z14STClothingTosroTurtlenecksLit = Litva army turtlenecks
+ent-Z14STClothingTorsoTurtlenecksLit = Litva army turtlenecks
     .desc = A piece of zone equipment.
     .suffix = Z14
 
-ent-Z14STClothingTosroTurtlenecksPol = Poland army turtlenecks
+ent-Z14STClothingTorsoTurtlenecksPol = Poland army turtlenecks
     .desc = A piece of zone equipment.
     .suffix = Z14
 
-ent-Z14STClothingTosroTurtlenecksRu = Russian army turtlenecks
+ent-Z14STClothingTorsoTurtlenecksRu = Russian army turtlenecks
     .desc = A piece of zone equipment.
     .suffix = Z14

@@ -26,6 +26,6 @@ ent-Z14STClothingShoesBootsCombatFilled = { ent-STClothingShoesBootsCombat }
     .desc = { ent-STClothingShoesBootsCombat.desc }
     .suffix = Z14
 
-ent-Z14STClothingShoesBootsSeraFilled = ботинки охотника
-    .desc = Боевые ботинки, перекрашенные в тёмно-зелёный оттенок. Уникальная обувь, используемая членами группировки Серафимы.
+ent-Z14STClothingShoesBootsSeraFilled = Охотничьи ботинки
+    .desc = Ботинки, перекрашенные в тёмно-зелёный.
     .suffix = Z14

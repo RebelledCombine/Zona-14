@@ -129,7 +129,7 @@
   id: Z14STWeaponRifleAUG
   categories: [ Zona14 ]
   name: AUG
-  description: Australian assault rifle with integrated scope.
+  description: Austrian bullpup assault rifle with an integrated optical sight.
   suffix: Z14, Custom
   components:
   - type: Item

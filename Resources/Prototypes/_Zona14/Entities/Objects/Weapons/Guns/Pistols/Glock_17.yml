@@ -4,7 +4,7 @@
   id: Z14WeaponPistolStalkerGlock
   suffix: Z14
   categories: [ Zona14 ]
-  description: One of the most popular pistols in the USA, chambered in 9x19.
+  description: Austrian-made striker-fired pistol chambered in 9x19mm. Its polymer frame, light weight and legendary reliability make it one of the most popular handguns in the world.
   components:
     - type: STWeight
       self: 1

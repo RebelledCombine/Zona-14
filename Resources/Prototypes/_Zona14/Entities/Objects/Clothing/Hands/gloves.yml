@@ -31,9 +31,9 @@
   parent: Z14ClothingHandsBaseST
   id: Z14STClothingHandsGlovesSera
   categories: [ Zona14 ]
-  name: Seraphim Windings
+  name: Green Hand Wrappings
   suffix: Z14
-  description: Cloth wrappings that replace gloves for the Seraphim. Looking closely, you can see prayers to their God neatly written on the fabric.
+  description: Cloth wrappings worn in place of gloves, dyed green.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/gloves/gloves_sera.rsi

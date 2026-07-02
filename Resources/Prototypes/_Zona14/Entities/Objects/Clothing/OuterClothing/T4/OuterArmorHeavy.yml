@@ -1,5 +1,5 @@
 - type: entity
-  parent: Z14ClothingOuterArmorPSZ9D
+  parent: [ Z14ArmorBaseT3PvP, Z14ClothingOuterArmorPSZ9D ]
   id: Z14STClothingOuterArmorHeavyM
   categories: [ Zona14 ]
   name: armored coveralls
@@ -12,5 +12,3 @@
     sprite: _Stalker/Objects/Clothing/outerClothing/merc_armor_2.rsi
   - type: Clothing
     sprite: _Stalker/Objects/Clothing/outerClothing/merc_armor_2.rsi
-  - type: GrantsArtifactSlots
-    slots: 4 # Stalker-Changes | Number of artifact slots this armor grants

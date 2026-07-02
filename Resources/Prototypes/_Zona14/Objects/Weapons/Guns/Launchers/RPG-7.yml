@@ -4,7 +4,7 @@
   suffix: Z14
   id: Z14STWeaponLauncherRocket
   categories: [ Zona14 ]
-  description: SOP Retaliation Weapon
+  description: Soviet reusable, shoulder-fired rocket-propelled grenade launcher firing a fin-stabilized rocket. One of the most widespread anti-armor weapons in the world; in the Zone it cracks open the toughest mutants and vehicles.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Weapons/Guns/Launchers/rpg-7.rsi

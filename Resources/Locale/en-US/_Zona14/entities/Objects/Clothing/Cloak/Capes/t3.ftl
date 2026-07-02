@@ -10,15 +10,15 @@ ent-Z14ClothingHeadHelmetLoyalistCoat = Kevlar Hood
     .desc = From Kevlar, it's not just the name.
     .suffix = Z14
 
-ent-Z14ClothingHeadHelmetLoyalistCoatLimaSeraphim = Seraphim kevlar hood
-    .desc = It’s kevlar only in name.
+ent-Z14ClothingHeadHelmetLoyalistCoatLimaSeraphim = Green Kevlar Hood (Worn)
+    .desc = It's kevlar only in name.
     .suffix = Z14
 
 ent-Z14ClothingHeadHelmetLoyalistCoatRenegat = Renegade Kevlar Hood
     .desc = From Kevlar, it's not just the name.
     .suffix = Z14
 
-ent-Z14ClothingHeadHelmetLoyalistCoatSeraphim = Kevlar Seraphim Hood
+ent-Z14ClothingHeadHelmetLoyalistCoatSeraphim = Green Kevlar Hood
     .desc = From Kevlar, it's not just the name.
     .suffix = Z14
 
@@ -38,8 +38,8 @@ ent-Z14ClothingOuterCoatKevlarMonolith = Kevlar Monolith Cloak
     .desc = The raincoat, made in the conditions of the zone, is surprisingly high-quality workmanship, made of high-quality leather and stitched with Kevlar, armor plates inserted here and there, painted in unusual camouflage.
     .suffix = Z14
 
-ent-Z14ClothingOuterCoatLimaSeraphim = Seraphim kevlar coat
-    .desc = A cloak modified for the needs of the Seraphim faction, painted gray.
+ent-Z14ClothingOuterCoatLimaSeraphim = Green Kevlar Coat (Worn)
+    .desc = A reinforced kevlar-lined coat, painted green.
     .suffix = Z14
 
 ent-Z14ClothingOuterCoatLoyalist = Kevlar Raincoat
@@ -62,8 +62,8 @@ ent-Z14ClothingOuterCoatRetHat = Collar
     .desc = just Collar.
     .suffix = Z14
 
-ent-Z14ClothingOuterCoatSeraphim = Kevlar Seraphim Cloak
-    .desc = Cloak modified for the needs of the Seraph faction, dyed in "native" colors.
+ent-Z14ClothingOuterCoatSeraphim = Green Kevlar Cloak
+    .desc = A kevlar-lined cloak dyed deep green.
     .suffix = Z14
 
 ent-Z14STClothingCapeCoatReinforced = reinforced cloak

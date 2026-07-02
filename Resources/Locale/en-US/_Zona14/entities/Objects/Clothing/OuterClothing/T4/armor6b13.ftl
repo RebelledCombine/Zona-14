@@ -6,8 +6,8 @@ ent-Z14ClothingOuterArmor6B13Police = 6B13 Police
     .desc = Standard Type IV body armor, providing decent protection against most types of damage
     .suffix = Z14
 
-ent-Z14ClothingOuterArmor6B13Sera = 6B13 'Seraphim'
-    .desc = Standard Type IV body armor, providing decent protection against most types of damage
+ent-Z14ClothingOuterArmor6B13Sera = 6B13 body armor (Green)
+    .desc = Standard Type IV body armor, painted green, providing decent protection against most types of damage.
     .suffix = Z14
 
 ent-Z14ClothingOuterArmor6B13Zavet = 6B13 Zavet

@@ -1,5 +1,5 @@
 ent-Z14BaseClothingLegs = Базовая одежда для ног
 
-ent-Z14STClothingLegsSerafimCherubimPants = штаны последователя сына звезды
-    .desc = Экипировка зоны.
+ent-Z14STClothingLegsSerafimCherubimPants = Зелёные боевые штаны
+    .desc = Прочные боевые штаны, окрашенные в тёмно-зелёный.
     .suffix = Z14

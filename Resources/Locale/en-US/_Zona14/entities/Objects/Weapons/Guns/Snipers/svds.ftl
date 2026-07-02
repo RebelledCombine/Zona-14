@@ -22,8 +22,8 @@ ent-Z14STWeaponSniperSVU = SVU Compact Sniper Rifle
     .desc = A bullpup conversion of the SVDS designed for urban operations in the Zone. The shortened barrel reduces range but improves handling in tight spaces, while still delivering 7.62x54mmR stopping power.
     .suffix = Z14, Custom
 
-ent-Z14STWeaponSniperSVUSeraphim = Seraphim SVU Sniper Rifle
-    .desc = An elite SVU variant used by the mysterious Seraphim faction. Features advanced modifications and distinctive white finish, making it both deadly and recognizable in the Zone's harsh environment.
+ent-Z14STWeaponSniperSVUSeraphim = SVU Sniper Rifle "Emerald"
+    .desc = An elite SVU variant of unknown origin. Features advanced modifications and a distinctive green finish, making it both deadly and recognizable in the Zone's harsh environment.
     .suffix = Z14
 
 ent-Z14STWeaponSniperSVUTop = SVU "Top"

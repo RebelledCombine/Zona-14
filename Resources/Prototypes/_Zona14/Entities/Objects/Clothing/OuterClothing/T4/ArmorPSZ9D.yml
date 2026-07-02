@@ -1,5 +1,5 @@
 - type: entity
-  parent: Z14STClothingOuterArmorVeryHeavy
+  parent: [ Z14ArmorBaseT4PvP, Z14STClothingOuterArmorVeryHeavy ]
   id: Z14ClothingOuterArmorPSZ9D
   categories: [ Zona14 ]
   name: 'PSZ-9d "Duty Armor"'
@@ -12,40 +12,14 @@
     sprite: _Stalker/Objects/Clothing/outerClothing/psz9d.rsi
   - type: Clothing
     sprite: _Stalker/Objects/Clothing/outerClothing/psz9d.rsi
-  - type: Armor
-    modifiers:
-      flatReductions:
-        Blunt: 2
-        Slash: 2
-        Piercing: 2
-        Heat: 1
-        Cold: 1
-        Shock: 1
-        Radiation: 1
-        Caustic: 1
-        Compression: 1
-        Psy: 1
-      coefficients:
-        Blunt: 0.90
-        Slash: 0.90
-        Piercing: 0.90
-        Heat: 0.90
-        Cold: 0.90
-        Shock: 0.90
-        Radiation: 0.90
-        Caustic: 0.90
-        Compression: 0.90
-        Psy: 0.90
-  - type: GrantsArtifactSlots
-    slots: 4 # Stalker-Changes | Number of artifact slots this armor grants
 
 - type: entity
   parent: Z14ClothingOuterArmorPSZ9D
   id: Z14STClothingOuterArmorHeavySera
   categories: [ Zona14 ]
   suffix: Z14
-  name: OP-14 'Seraphim' Armored Coveralls
-  description: Based on a standard suit, armored with plates for improved physical protection. Adds weight but provides excellent projectile protection for suits of this class.
+  name: OP-14 Armored Coveralls (Green)
+  description: Based on a common jumpsuit, armored because it has increased protection from most physical damage by the armor plates. It also adds weight, but provides excellent projectile protection for combines such as this one.
   components:
   - type: STWeight
     self: 5

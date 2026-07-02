@@ -461,8 +461,8 @@
   parent: UnsensoredClothingUniformSkirtBase
   id: Z14ClothingUniformSerafimFanatic
   categories: [ Zona14 ]
-  name: Seraphim Uniform
-  description: Maybe it'll be fashionable soon.
+  name: Green Uniform
+  description: Maybe it will become fashionable soon.
   suffix: Z14
   components:
   - type: Sprite
@@ -474,8 +474,8 @@
   parent: UnsensoredClothingUniformSkirtBase
   id: Z14ClothingUniformSerafimFullReady
   categories: [ Zona14 ]
-  name: Seraphim Uniform
-  description: Maybe it'll be fashionable soon.
+  name: Green Uniform
+  description: Maybe it will become fashionable soon.
   suffix: Z14
   components:
   - type: Sprite
@@ -487,8 +487,8 @@
   parent: UnsensoredClothingUniformSkirtBase
   id: Z14ClothingUniformSerafimLittleChaos
   categories: [ Zona14 ]
-  name: Seraphim Uniform
-  description: Maybe it'll be fashionable soon.
+  name: Green Uniform
+  description: Maybe it will become fashionable soon.
   suffix: Z14
   components:
   - type: Sprite

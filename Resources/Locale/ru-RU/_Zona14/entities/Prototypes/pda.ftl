@@ -37,7 +37,7 @@ ent-Z14PilgrimPDA = КПК Паломника
     .desc = { ent-StalkerPDA.desc }
     .suffix = Z14
 
-ent-Z14STSeraphimPDA = КПК Серафима
+ent-Z14STSeraphimPDA = КПК фанатика
     .desc = { ent-StalkerPDA.desc }
     .suffix = Z14
 

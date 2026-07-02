@@ -3,7 +3,7 @@
   id: Z14STClothingHeadHelmetSeraphimAltin
   categories: [ Zona14 ]
   name: 'Armored helmet "Guardian"'
-  description: An advanced modification of the classic Monolith Sphere-12 helmet, refined by Seraphim craftsmen for Zone protection. Combines original durability with Seraphim ideology. Covered in faction-specific camo with prayer symbols and protective signs believed to enhance its abilities. Upgraded filters and double coating for improved radiation and psi protection.
+  description: 'An advanced modification of the classic "Sphere-12" helmet, refined for protection in the Zone. Its internal systems are upgraded with filters and a double coating to increase protection against radiation and prevent Psi effects. Finished in green camouflage.'
   suffix: Z14
   components:
   - type: Sprite
@@ -48,7 +48,7 @@
   categories: [ Zona14 ]
   suffix: Z14
   name: 'combat helmet "Guardian"'
-  description: An advanced modification of the classic Monolith Sphere-12 helmet, refined by Seraphim craftsmen for Zone protection. Combines original durability with Seraphim ideology. Covered in faction-specific camo with prayer symbols and protective signs believed to enhance its abilities. Upgraded filters and double coating for improved radiation and psi protection. Painted gray.
+  description: 'An improved modification of the classic "Sphere-12" helmet, refined for protection in Zone conditions. Its internal systems are upgraded with filters and a dual coating to increase protection from radiation and prevent Psi exposure. Finished in green camouflage.'
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/hats/sera_limastrash.rsi

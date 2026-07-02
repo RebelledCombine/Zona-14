@@ -18,7 +18,7 @@
 # Freedom - 1
 
 - type: entity
-  parent: Z14STClothingOuterArmorLightPlateVestBase
+  parent: [ Z14ArmorBaseT2PvP, Z14STClothingOuterArmorLightPlateVestBase ]
   id: Z14STClothingOuterArmorLightPlateVestBaseFreedom
   categories: [ Zona14 ]
   suffix: Z14
@@ -52,7 +52,7 @@
       tags:
       - STArtifact
 - type: entity
-  parent: Z14STClothingOuterArmorLightPlateVestBase
+  parent: [ Z14ArmorBaseT2PvP, Z14STClothingOuterArmorLightPlateVestBase ]
   id: Z14STClothingOuterArmorLightPlateVestBaseStalker
   categories: [ Zona14 ]
   suffix: Z14
@@ -69,7 +69,7 @@
 # Dolg - 3
 
 - type: entity
-  parent: Z14STClothingOuterArmorLightPlateVestBase
+  parent: [ Z14ArmorBaseT2PvP, Z14STClothingOuterArmorLightPlateVestBase ]
   id: Z14STClothingOuterArmorLightPlateVestBaseDolg
   categories: [ Zona14 ]
   suffix: Z14
@@ -86,7 +86,7 @@
 # Military - 4
 
 - type: entity
-  parent: Z14STClothingOuterArmorLightPlateVestBase
+  parent: [ Z14ArmorBaseT2PvP, Z14STClothingOuterArmorLightPlateVestBase ]
   id: Z14STClothingOuterArmorLightPlateVestBaseMilitary
   categories: [ Zona14 ]
   suffix: Z14
@@ -101,7 +101,7 @@
     sprite: _Stalker/Objects/Clothing/outerClothing/plate_military.rsi
 
 - type: entity
-  parent: Z14STClothingOuterArmorLightPlateVestBase
+  parent: [ Z14ArmorBaseT2PvP, Z14STClothingOuterArmorLightPlateVestBase ]
   id: Z14STClothingOuterArmorLightPlateVestBasePolice
   categories: [ Zona14 ]
   suffix: Z14
@@ -134,7 +134,7 @@
 # Bandit - 6
 
 - type: entity
-  parent: Z14STClothingOuterArmorLightPlateVestBase
+  parent: [ Z14ArmorBaseT2PvP, Z14STClothingOuterArmorLightPlateVestBase ]
   id: Z14STClothingOuterArmorLightPlateVestBaseBand
   categories: [ Zona14 ]
   suffix: Z14
@@ -172,8 +172,8 @@
   id: Z14STClothingOuterArmorLightPlateVestBaseSera
   categories: [ Zona14 ]
   suffix: Z14
-  name: "'Seraphim' Shield-2 body armor"
-  description: Standard Type II body armor providing solid protection against most damage types
+  name: Shield-2 body armor (Green)
+  description: Standard Type II body armor, painted green, providing decent protection against most types of damage.
   components:
   - type: STWeight
     self: 5
@@ -187,7 +187,7 @@
 # Old groups
 
 - type: entity
-  parent: Z14STClothingOuterArmorLightPlateVestBase
+  parent: [ Z14ArmorBaseT2PvP, Z14STClothingOuterArmorLightPlateVestBase ]
   id: Z14STClothingOuterArmorLightPlateVestBaseMerc
   categories: [ Zona14 ]
   suffix: Z14
@@ -251,7 +251,7 @@
   - type: STWeight
     self: 5
 - type: entity
-  parent: Z14STClothingOuterArmorLightPlateVestBase
+  parent: [ Z14ArmorBaseT2PvP, Z14STClothingOuterArmorLightPlateVestBase ]
   id: Z14STClothingOuterArmorLightPlateVestBaseMonolith
   categories: [ Zona14 ]
   suffix: Z14
@@ -288,7 +288,7 @@
     slot: head
 
 - type: entity
-  parent: Z14STClothingOuterArmorLightPlateVestBase
+  parent: [ Z14ArmorBaseT2PvP, Z14STClothingOuterArmorLightPlateVestBase ]
   id: Z14STClothingOuterArmorLightPlateVestBaseClearSky
   categories: [ Zona14 ]
   suffix: Z14

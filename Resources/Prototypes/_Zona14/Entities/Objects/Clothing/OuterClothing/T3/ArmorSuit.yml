@@ -20,7 +20,7 @@
 
 # stalker
 - type: entity
-  parent: Z14STClothingOuterArmorBase
+  parent: [ Z14ArmorBaseT3PvP, Z14STClothingOuterArmorBase ]
   id: Z14ClothingOuterArmorStalker
   categories: [ Zona14 ]
   suffix: Z14
@@ -33,32 +33,6 @@
     sprite: _Stalker/Objects/Clothing/outerClothing/merc_armor_loner.rsi
   - type: Clothing
     sprite: _Stalker/Objects/Clothing/outerClothing/merc_armor_loner.rsi
-  - type: Armor
-    modifiers:
-      flatReductions:
-        Blunt: 2
-        Slash: 2
-        Piercing: 2
-        Heat: 1
-        Cold: 1
-        Shock: 1
-        Radiation: 1
-        Caustic: 1
-        Compression: 1
-        Psy: 1
-      coefficients:
-        Blunt: 0.90
-        Slash: 0.90
-        Piercing: 0.90
-        Heat: 0.90
-        Cold: 0.90
-        Shock: 0.90
-        Radiation: 0.90
-        Caustic: 0.90
-        Compression: 0.90
-        Psy: 0.90
-  - type: GrantsArtifactSlots
-    slots: 4 # Stalker-Changes | Number of artifact slots this armor grants
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHatHoodMerc2
     slot: head
@@ -138,7 +112,7 @@
     sprite: _Stalker/Objects/Clothing/outerClothing/medium_armor_jaba.rsi
 
 - type: entity
-  parent: Z14STClothingOuterArmorBase
+  parent: [ Z14ArmorBaseT3PvP, Z14STClothingOuterArmorBase ]
   id: Z14ClothingOuterArmorBandits
   categories: [ Zona14 ]
   suffix: Z14
@@ -172,30 +146,6 @@
     blacklist:
       tags:
       - STArtifact
-  - type: Armor
-    modifiers:
-      flatReductions:
-        Blunt: 2
-        Slash: 2
-        Piercing: 2
-        Heat: 1
-        Cold: 1
-        Shock: 1
-        Radiation: 1
-        Caustic: 1
-        Compression: 1
-        Psy: 1
-      coefficients:
-        Blunt: 0.90
-        Slash: 0.90
-        Piercing: 0.90
-        Heat: 0.90
-        Cold: 0.90
-        Shock: 0.90
-        Radiation: 0.90
-        Caustic: 0.90
-        Compression: 0.90
-        Psy: 0.90
 - type: entity
   parent: Z14STClothingHeadHatHoodBase
   id: Z14ClothingHeadHatHoodMercBandit
@@ -227,7 +177,7 @@
 
 
 - type: entity
-  parent: Z14STClothingOuterArmorBase
+  parent: [ Z14ArmorBaseT3PvP, Z14STClothingOuterArmorBase ]
   id: Z14ClothingOuterArmorMerc
   categories: [ Zona14 ]
   suffix: Z14
@@ -243,32 +193,6 @@
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHatHoodMerc
     slot: head
-  - type: Armor
-    modifiers:
-      flatReductions:
-        Blunt: 2
-        Slash: 2
-        Piercing: 2
-        Heat: 1
-        Cold: 1
-        Shock: 1
-        Radiation: 1
-        Caustic: 1
-        Compression: 1
-        Psy: 1
-      coefficients:
-        Blunt: 0.90
-        Slash: 0.90
-        Piercing: 0.90
-        Heat: 0.90
-        Cold: 0.90
-        Shock: 0.90
-        Radiation: 0.90
-        Caustic: 0.90
-        Compression: 0.90
-        Psy: 0.90
-  - type: GrantsArtifactSlots
-    slots: 4 # Stalker-Changes | Number of artifact slots this armor grants
   - type: ContainerContainer
     containers:
       toggleable-clothing: !type:ContainerSlot {}
@@ -302,7 +226,7 @@
     sprite: _Stalker/Objects/Clothing/hats/hood_merc.rsi
 
 - type: entity
-  parent: Z14STClothingOuterArmorBase
+  parent: [ Z14ArmorBaseT3PvP, Z14STClothingOuterArmorBase ]
   id: Z14ClothingOuterArmorMerc2
   categories: [ Zona14 ]
   suffix: Z14
@@ -333,30 +257,6 @@
     blacklist:
       tags:
       - STArtifact
-  - type: Armor
-    modifiers:
-      flatReductions:
-        Blunt: 2
-        Slash: 2
-        Piercing: 2
-        Heat: 1
-        Cold: 1
-        Shock: 1
-        Radiation: 1
-        Caustic: 1
-        Compression: 1
-        Psy: 1
-      coefficients:
-        Blunt: 0.90
-        Slash: 0.90
-        Piercing: 0.90
-        Heat: 0.90
-        Cold: 0.90
-        Shock: 0.90
-        Radiation: 0.90
-        Caustic: 0.90
-        Compression: 0.90
-        Psy: 0.90
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHatHoodMerc2
     slot: head
@@ -376,7 +276,7 @@
     sprite: _Stalker/Objects/Clothing/hats/hood_merc_2.rsi
 
 - type: entity
-  parent: Z14STClothingOuterArmorBase
+  parent: [ Z14ArmorBaseT3PvP, Z14STClothingOuterArmorBase ]
   id: Z14ClothingOuterArmorDolgPS5M
   categories: [ Zona14 ]
   suffix: Z14
@@ -392,32 +292,6 @@
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetDolgPS5M
     slot: head
-  - type: Armor
-    modifiers:
-      flatReductions:
-        Blunt: 2
-        Slash: 2
-        Piercing: 2
-        Heat: 1
-        Cold: 1
-        Shock: 1
-        Radiation: 1
-        Caustic: 1
-        Compression: 1
-        Psy: 1
-      coefficients:
-        Blunt: 0.90
-        Slash: 0.90
-        Piercing: 0.90
-        Heat: 0.90
-        Cold: 0.90
-        Shock: 0.90
-        Radiation: 0.90
-        Caustic: 0.90
-        Compression: 0.90
-        Psy: 0.90
-  - type: GrantsArtifactSlots
-    slots: 4 # Stalker-Changes | Number of artifact slots this armor grants
 - type: entity
   parent: STClothingHeadHatBase
   id: Z14ClothingHeadHelmetDolgPS5M
@@ -434,7 +308,7 @@
       sprite: _Stalker/Objects/Clothing/hats/hood_ps5m.rsi
 
 - type: entity
-  parent: Z14STClothingOuterArmorBase
+  parent: [ Z14ArmorBaseT3PvP, Z14STClothingOuterArmorBase ]
   id: Z14ClothingOuterArmorFreedomDefender
   categories: [ Zona14 ]
   suffix: Z14
@@ -450,32 +324,6 @@
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetFreedomDefender
     slot: head
-  - type: Armor
-    modifiers:
-      flatReductions:
-        Blunt: 2
-        Slash: 2
-        Piercing: 2
-        Heat: 1
-        Cold: 1
-        Shock: 1
-        Radiation: 1
-        Caustic: 1
-        Compression: 1
-        Psy: 1
-      coefficients:
-        Blunt: 0.90
-        Slash: 0.90
-        Piercing: 0.90
-        Heat: 0.90
-        Cold: 0.90
-        Shock: 0.90
-        Radiation: 0.90
-        Caustic: 0.90
-        Compression: 0.90
-        Psy: 0.90
-  - type: GrantsArtifactSlots
-    slots: 4 # Stalker-Changes | Number of artifact slots this armor grants
 - type: entity
   parent: STClothingHeadHatBase
   id: Z14ClothingHeadHelmetFreedomDefender
@@ -492,7 +340,7 @@
       sprite: _Stalker/Objects/Clothing/hats/hood_strazh.rsi
 
 - type: entity
-  parent: Z14STClothingOuterArmorZaryaBase
+  parent: [ Z14ArmorBaseT2PvP, Z14STClothingOuterArmorZaryaBase ]
   id: Z14ClothingOuterArmorFreedomWind
   categories: [ Zona14 ]
   suffix: Z14
@@ -521,32 +369,6 @@
     blacklist:
       tags:
       - STArtifact
-  - type: Armor
-    modifiers:
-      flatReductions:
-        Blunt: 2
-        Slash: 2
-        Piercing: 2
-        Heat: 1
-        Cold: 1
-        Shock: 1
-        Radiation: 1
-        Caustic: 1
-        Compression: 1
-        Psy: 1
-      coefficients:
-        Blunt: 0.90
-        Slash: 0.90
-        Piercing: 0.90
-        Heat: 0.90
-        Cold: 0.90
-        Shock: 0.90
-        Radiation: 0.90
-        Caustic: 0.90
-        Compression: 0.90
-        Psy: 0.90
-  - type: GrantsArtifactSlots
-    slots: 4 # Stalker-Changes | Number of artifact slots this armor grants
   - type: ContainerContainer
     containers:
       toggleable-clothing: !type:ContainerSlot {}
@@ -569,7 +391,7 @@
       sprite: _Stalker/Objects/Clothing/hats/hood_veter.rsi
 
 - type: entity
-  parent: Z14STClothingOuterArmorBase
+  parent: [ Z14ArmorBaseT3PvP, Z14STClothingOuterArmorBase ]
   id: Z14ClothingOuterArmorCN3a
   categories: [ Zona14 ]
   suffix: Z14
@@ -602,34 +424,8 @@
     blacklist:
       tags:
       - STArtifact
-  - type: Armor
-    modifiers:
-      flatReductions:
-        Blunt: 2
-        Slash: 2
-        Piercing: 2
-        Heat: 1
-        Cold: 1
-        Shock: 1
-        Radiation: 1
-        Caustic: 1
-        Compression: 1
-        Psy: 1
-      coefficients:
-        Blunt: 0.90
-        Slash: 0.90
-        Piercing: 0.90
-        Heat: 0.90
-        Cold: 0.90
-        Shock: 0.90
-        Radiation: 0.90
-        Caustic: 0.90
-        Compression: 0.90
-        Psy: 0.90
-  - type: GrantsArtifactSlots
-    slots: 4 # Stalker-Changes | Number of artifact slots this armor grants
 - type: entity
-  parent: Z14STClothingOuterArmorBase
+  parent: [ Z14ArmorBaseT3PvP, Z14STClothingOuterArmorBase ]
   id: Z14ClothingOuterArmorMonolith
   categories: [ Zona14 ]
   suffix: Z14
@@ -660,32 +456,6 @@
     blacklist:
       tags:
       - STArtifact
-  - type: Armor
-    modifiers:
-      flatReductions:
-        Blunt: 2
-        Slash: 2
-        Piercing: 2
-        Heat: 1
-        Cold: 1
-        Shock: 1
-        Radiation: 1
-        Caustic: 1
-        Compression: 1
-        Psy: 1
-      coefficients:
-        Blunt: 0.90
-        Slash: 0.90
-        Piercing: 0.90
-        Heat: 0.90
-        Cold: 0.90
-        Shock: 0.90
-        Radiation: 0.90
-        Caustic: 0.90
-        Compression: 0.90
-        Psy: 0.90
-  - type: GrantsArtifactSlots
-    slots: 4 # Stalker-Changes | Number of artifact slots this armor grants
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHatMonolith
     slot: head
@@ -810,8 +580,8 @@
   id: Z14ClothingOuterArmorFirstbornSeraphimes
   categories: [ Zona14 ]
   suffix: Z14
-  name: Firstborn suit
-  description: An old worn Monolith suit. The first Seraphim wore these, later calling themselves the Firstborn.
+  name: Worn Monolith Suit (Green)
+  description: An old, worn-out Monolith suit, repainted in green.
   components:
   - type: STWeight
     self: 5
@@ -845,7 +615,7 @@
   parent: STClothingHeadHatBase
   id: Z14ClothingHeadHelmetHatFirstbornSeraphimes
   suffix: Z14
-  name: Firstborn hood
+  name: Green Hood
   categories: [ HideSpawnMenu, Zona14 ]
   components:
     - type: STWeight
@@ -860,7 +630,7 @@
   id: Z14STClothingOuterArmorSeraphimStrash
   categories: [ Zona14 ]
   name: '"Sentinel" Armored Suit'
-  description: An old, battle-hardened Bulat from the Monolith arsenal, bearing the marks of time and fierce battles. Despite its age, it remains a reliable shield. Seraphim camo gives it a unique look, and numerous prayer marks and sacred charms make it not just armor, but a true talisman of faith and strength.
+  description: An old, battle-worn bulat suit from Monolith's arsenal, marked by time and fierce combat. Despite its age, it remains a reliable shield in the Zone. Its green camouflage finish gives it a distinctive look.
   suffix: Z14
   components:
   - type: STWeight
@@ -918,9 +688,9 @@
   parent: Z14STClothingOuterArmorSeraphimStrash
   id: Z14STClothingOuterArmorLimaSeraphimStrash
   categories: [ Zona14 ]
-  name: '"Sentinel" Armored Suit'
+  name: '"Sentinel" Armored Suit (Worn)'
   suffix: Z14
-  description: An old, battle-hardened Bulat from the Monolith arsenal, bearing the marks of time and fierce battles. Despite its age, it remains a reliable shield. Seraphim camo gives it a unique look, and numerous prayer marks and sacred charms make it not just armor, but a true talisman of faith and strength... Now gray!
+  description: Same as the Sentinel — now in green!
   components:
   - type: STWeight
     self: 5
@@ -955,7 +725,7 @@
   - type: GrantsArtifactSlots
     slots: 4 # Stalker-Changes | Number of artifact slots this armor grants
 - type: entity
-  parent: Z14STClothingOuterArmorSeraphimStrash
+  parent: [ Z14ArmorBaseT3PvP, Z14STClothingOuterArmorSeraphimStrash ]
   id: Z14STClothingOuterArmorPeresvet
   categories: [ Zona14 ]
   name: '"Peresvet" armor suit'
@@ -971,30 +741,6 @@
   - type: ToggleableClothing
     clothingPrototype: STClothingHeadPeresvet
     slot: head
-  - type: Armor
-    modifiers:
-      flatReductions:
-        Blunt: 2
-        Slash: 2
-        Piercing: 2
-        Heat: 1
-        Cold: 1
-        Shock: 1
-        Radiation: 1
-        Caustic: 1
-        Compression: 1
-        Psy: 1
-      coefficients:
-        Blunt: 0.90
-        Slash: 0.90
-        Piercing: 0.90
-        Heat: 0.90
-        Cold: 0.90
-        Shock: 0.90
-        Radiation: 0.90
-        Caustic: 0.90
-        Compression: 0.90
-        Psy: 0.90
 - type: entity
   parent: ClothingHeadHardsuitBase
   id: Z14STClothingHeadPeresvet

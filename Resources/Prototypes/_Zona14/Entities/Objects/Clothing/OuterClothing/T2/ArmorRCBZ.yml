@@ -108,7 +108,7 @@
 # Dolg - 1
 
 - type: entity
-  parent: Z14STClothingOuterArmorRCBZ
+  parent: [ Z14ArmorBaseT2PvP, Z14STClothingOuterArmorRCBZ ]
   id: Z14ClothingOuterArmorRCBZDolg
   categories: [ Zona14 ]
   suffix: Z14
@@ -140,7 +140,7 @@
 # Freedom - 2 +
 
 - type: entity
-  parent: Z14STClothingOuterArmorRCBZ
+  parent: [ Z14ArmorBaseT2PvP, Z14STClothingOuterArmorRCBZ ]
   id: Z14ClothingOuterArmorRCBZFreedom
   categories: [ Zona14 ]
   suffix: Z14
@@ -221,12 +221,12 @@
 # Serafims - 5
 
 - type: entity
-  parent: Z14STClothingOuterArmorRCBZ
+  parent: [ Z14ArmorBaseT2PvP, Z14STClothingOuterArmorRCBZ ]
   id: Z14ClothingOuterArmorRCBZSera
   categories: [ Zona14 ]
   suffix: Z14
-  name: "'RHBZ' 'Seraphim' Suit"
-  description: Designed for CBRN protection. Used in expeditions to hazardous chemical zones. Not intended for combat, specialized for radiation, chemical, and biological threat protection.
+  name: '"RHBZ" Suit (Green)'
+  description: Designed to operate in radiation, chemical, and biological shielding (CBRN) environments. It is used in expeditions to hazardous chemical areas to ensure the safety of the carrier. It is not designed for combat operations, but is specialized to provide protection and safety in the face of the threat from radiation, chemical and biological substances.
   components:
   - type: STWeight
     self: 5
@@ -253,7 +253,7 @@
 # Clear Sky - 7 +
 
 - type: entity
-  parent: Z14STClothingOuterArmorRCBZ
+  parent: [ Z14ArmorBaseT2PvP, Z14STClothingOuterArmorRCBZ ]
   id: Z14ClothingOuterArmorRCBZCN
   categories: [ Zona14 ]
   suffix: Z14
@@ -285,7 +285,7 @@
 # Journalists - 8 +
 
 - type: entity
-  parent: Z14STClothingOuterArmorRCBZ
+  parent: [ Z14ArmorBaseT2PvP, Z14STClothingOuterArmorRCBZ ]
   id: Z14ClothingOuterArmorRCBZJournalists
   categories: [ Zona14 ]
   suffix: Z14
@@ -319,7 +319,7 @@
 # Project
 
 - type: entity
-  parent: Z14STClothingOuterArmorRCBZ
+  parent: [ Z14ArmorBaseT2PvP, Z14STClothingOuterArmorRCBZ ]
   id: Z14ClothingOuterArmorRCBZProjectPJ5
   categories: [ Zona14 ]
   name: RChBZ PJ-5 suit

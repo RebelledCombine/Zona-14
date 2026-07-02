@@ -3,8 +3,8 @@
   id: Z14STClothingTorsoSerafimCherubimFullReady
   categories: [ Zona14 ]
   suffix: Z14
-  name: Cherubim robes
-  description: An old, worn cherub uniform that hasn't been removed in years... it emanates the strong aura characteristic of the Seraphim faction.
+  name: Green Robes
+  description: An old and worn set of green robes that look like they haven't been taken off in years.
   components:
     - type: Sprite
       sprite: _Stalker/Objects/Clothing/Torso/Serafims/cherubim.rsi

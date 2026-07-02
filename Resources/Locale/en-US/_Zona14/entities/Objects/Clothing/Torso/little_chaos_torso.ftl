@@ -1,3 +1,3 @@
-ent-Z14STClothingTorsoSerafimLittleChaos = Special Son of the Star Follower Form
-    .desc = Material unknown. Size unknown. The sewing method is unknown. What are these green threads?..
+ent-Z14STClothingTorsoSerafimLittleChaos = Reinforced Green Field Uniform
+    .desc = A green field uniform of unusual make, shot through with curious green threads.
     .suffix = Z14

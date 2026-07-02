@@ -38,7 +38,7 @@ ent-Z14ClothingHeadHardsuitSevaHelmSci = Seva Helmet
     .desc = Despite the predominantly glass composition, it is quite durable.
     .suffix = Z14
 
-ent-Z14ClothingHeadHardsuitSevaHelmSera = Seraph Seva Helmet
+ent-Z14ClothingHeadHardsuitSevaHelmSera = Seva Helmet (Green)
     .desc = Despite the predominantly glass composition, it is quite durable.
     .suffix = Z14
 
@@ -102,8 +102,8 @@ ent-Z14ClothingOuterArmorSevarenegat = Renegade Seva suit
     .desc = This "SEVA" has seen too much in the Zone. Brown rubber, khaki canister, orange daub and a clawed scratch on the helmet. Renegades say it's a mark of good luck... or curses.
     .suffix = Z14
 
-ent-Z14ClothingOuterArmorSevasera = Seraphim Seva suit
-    .desc = "A closed-cycle suit developed by the Kiev Research Institute, designed specifically for work in the conditions of the Zone. It has a built-in bulletproof vest. It has a built-in body armor and enhanced protection in all respects."
+ent-Z14ClothingOuterArmorSevasera = Seva Suit (Green)
+    .desc = "A closed-cycle suit developed by the Kiev Research Institute for work in the conditions of the Zone, with built-in body armor and enhanced protection in all respects. Finished in green."
     .suffix = Z14
 
 ent-Z14STClothingHeadHardsuitSevaHelmBase = Seva Helmet

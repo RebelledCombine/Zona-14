@@ -17,10 +17,10 @@ ent-Z14STBaseWeaponSMGVector9 = { "" }
     .desc = Оружие зоны.
     .suffix = Z14, Custom
 
-ent-Z14STWeaponSMGStalkerCP2Veresk921 = СР-2М «Вереск» серафимов 9x21
+ent-Z14STWeaponSMGStalkerCP2Veresk921 = СР-2М «Вереск» 9x21
     .desc = Компактный пистолет-пулемет, разработанный под мощный бронебойный патрон 9x21мм по заказу ФСБ и ФСО РФ. Теперь с оригинальным калибром!
 
-ent-Z14STWeaponSMGStalkerCP2VereskSera921 = СР-2М «Вереск» Серафим 9x21
+ent-Z14STWeaponSMGStalkerCP2VereskSera921 = СР-2М «Вереск» 9x21 (Изумруд)
     .desc = Оружие зоны.
     .suffix = Z14
 

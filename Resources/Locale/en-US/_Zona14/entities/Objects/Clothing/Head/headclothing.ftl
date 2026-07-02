@@ -47,7 +47,7 @@ ent-Z14ClothingHeadHatPoliceHat = police cap
     .suffix = Z14
 
 ent-Z14ClothingHeadHatSerahat = green headband
-    .desc = Green headband with Seraphim patch.
+    .desc = A green headband.
     .suffix = Z14
 
 ent-Z14ClothingHeadHatSovietUshankaStalker = Soviet Ushanka

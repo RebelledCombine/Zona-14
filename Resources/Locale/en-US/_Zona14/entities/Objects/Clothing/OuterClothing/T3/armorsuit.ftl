@@ -22,7 +22,7 @@ ent-Z14ClothingHeadHelmetFreedomWind = "Wind of Freedom" Hood
     .desc = { ent-ClothingHeadHelmetDolgPS5M.desc }
     .suffix = Z14
 
-ent-Z14ClothingHeadHelmetHatFirstbornSeraphimes = Firstborn hood
+ent-Z14ClothingHeadHelmetHatFirstbornSeraphimes = Green Hood
     .desc = Hoods, helmets and the like.
     .suffix = Z14
 
@@ -46,8 +46,8 @@ ent-Z14ClothingOuterArmorDolgPS5M = PS5-M Suit "Universal Protection"
     .desc = A modern suit model used by Duty. Better suited for recruits coming from stalker backgrounds, used to relatively light third-class protection suits. Unlike the PS3 series, it provides decent anomaly protection and can stop a pistol bullet. No artifact containers included, but compatible with auxiliary systems.
     .suffix = Z14
 
-ent-Z14ClothingOuterArmorFirstbornSeraphimes = Firstborn suit
-    .desc = An old worn-out Monolith suit. Such suits were worn by the first Seraphim, who later named themselves the Firstborn.
+ent-Z14ClothingOuterArmorFirstbornSeraphimes = Worn Monolith Suit (Green)
+    .desc = An old, worn-out Monolith suit, repainted in green.
     .suffix = Z14
 
 ent-Z14ClothingOuterArmorFreedomDefender = Freedom Armored Coveralls

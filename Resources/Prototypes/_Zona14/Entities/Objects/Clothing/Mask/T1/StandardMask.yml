@@ -111,8 +111,8 @@
   id: Z14ClothingMaskGasSera
   categories: [ Zona14 ]
   suffix: Z14
-  name: standard Seraphim gas mask
-  description: Protects from questions about religion, and from radiation.
+  name: Green Gas Mask
+  description: A standard gas mask painted green. Protects against radiation and toxic fumes.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/mask/gasmask_sera.rsi
@@ -214,8 +214,8 @@
   id: Z14ClothingMaskGasSeraFirstborn
   categories: [ Zona14 ]
   suffix: Z14
-  name: Firstborn gas mask
-  description: An old gas mask with a green four-pointed star drawn on it — the sacred symbol of the Seraphim.
+  name: Green Star Gas Mask
+  description: An old gas mask with a green four-pointed star painted on it.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/mask/gasmask_firstbornsera.rsi

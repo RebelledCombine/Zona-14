@@ -3,7 +3,7 @@ ent-Z14STWeaponRifleAM17 = AM-17
     .suffix = Z14, Custom
 
 ent-Z14STWeaponRifleRPK74 = RPK-74
-    .desc = The Kalashnikov light machine gun built on the AK-74 platform.
+    .desc = Soviet light machine gun chambered in 5.45x39mm, built on the AK-74 platform with a longer, heavier barrel and a folding bipod. Feeds from 45-round magazines for the sustained fire prized in the Zone.
     .suffix = Z14
 
 ent-Z14STWeaponRifleZastavaM92 = Zastava M92

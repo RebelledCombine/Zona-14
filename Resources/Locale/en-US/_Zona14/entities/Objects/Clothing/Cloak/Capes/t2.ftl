@@ -22,8 +22,8 @@ ent-Z14ClothingOuterCoatStalker = leather raincoat
     .desc = Normal black leather cloak. It does not provide noticeable protection to the carrier. Except that it will not let you freeze at night and soften the bite of a blind dog. Quite inconvenient in the conditions of the Zone, but, nevertheless, it is often used by bandits - perhaps solely because of its appearance.
     .suffix = Z14
 
-ent-Z14STClothingCapeT2SerafimPrestige = Seraphim Prestige Cloak
-    .desc = Dark green with metal accents
+ent-Z14STClothingCapeT2SerafimPrestige = Ornate Green Cloak
+    .desc = A dark green cloak finished with polished metal accents.
     .suffix = Z14
 
 ent-Z14STClothingHeadHelmetHimera = Camouflage Hood

@@ -173,9 +173,9 @@
   parent: ClothingMaskBase
   id: Z14STClothingMaskKufei
   categories: [ Zona14 ]
-  name: Seraphim kufei
+  name: Green Keffiyeh
   suffix: Z14
-  description: Lightweight fabric designed for head covering and face concealment, easy to breathe and move in.
+  description: A lightweight fabric designed to be worn on the head and to cover the face in which it is easy to breathe and move actively.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/mask/kufei_sera.rsi
@@ -191,9 +191,9 @@
   parent: ClothingMaskBase
   id: Z14STClothingMaskLimaKufei
   categories: [ Zona14 ]
-  name: Seraphim kufiyeh
+  name: Green Keffiyeh
   suffix: Z14
-  description: Lightweight gray fabric designed to be worn on the head and cover the face, easy to breathe and move in.
+  description: Lightweight green cloth for covering the head and face, breathable and suited for active movement.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/mask/kufei_limasera.rsi

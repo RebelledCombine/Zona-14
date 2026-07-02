@@ -1,5 +1,5 @@
 ent-Z14STWeaponRifleAUG = AUG
-    .desc = Australian assault rifle with integrated scope. It uses 5.56mm ammo.
+    .desc = Austrian bullpup assault rifle with an integrated optical sight. It uses 5.56mm ammo.
     .suffix = Z14, Custom
 
 ent-Z14STWeaponRifleG36 = HK G-36 "Outlander"

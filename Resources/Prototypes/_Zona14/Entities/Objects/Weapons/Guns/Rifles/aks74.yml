@@ -349,8 +349,8 @@
   id: Z14STWeaponRifleAKS74USERAPH
   suffix: Z14
   categories: [ Zona14 ]
-  name: Martyr
-  description: Irreparable AK and AKS rifles get a second life after passing through the hands of the Seraphim Brotherhood technicians, becoming the weapon of the Brotherhood's Martyrs. Unreliable, inaccurate and ineffective, but still used by Seraphim suicide fighters for their final battle in the name of their God.
+  name: 'AKS-74U "Emerald"'
+  description: A worn-out AKS-74U pulled from the scrap heap and given new life by Zone gunsmiths, then finished in green. Unreliable and inaccurate, but better than going unarmed.
   components:
   - type: Clothing
     sprite: _Stalker/Objects/Weapons/Guns/Rifles/_Skins/aks74u-seraph.rsi

@@ -26,10 +26,9 @@ ent-Z14ClothingHeadHelmetPahanCoat = капюшон плаща пахана
     .desc = Покрывает вашу голову
     .suffix = Z14
 
-ent-Z14ClothingHeadHelmetSeraRuined = капюшон
-    .desc = Драный капюшон странного цвета.
+ent-Z14ClothingHeadHelmetSeraRuined = Капюшон
+    .desc = Потрёпанный капюшон, выцветший до тускло-зелёного оттенка.
     .suffix = Z14
-
 ent-Z14ClothingNeckCloakCassock = ряса паломника
     .desc = сделана из грубой ткани серой ткани, помогает отречься от мирского
     .suffix = Z14
@@ -54,10 +53,9 @@ ent-Z14ClothingTorsoTurtlenecksCamouflage = рваный плащ выживши
     .desc = Странный плащ, рваный в хлам. Кустарно перекрашен в какой-то камуфляж.
     .suffix = Z14
 
-ent-Z14STClothingCapeT1Serafim = плащ серафимов
-    .desc = Выполнен в тёмно-зелёной цветовой гамме
+ent-Z14STClothingCapeT1Serafim = Зелёный плащ
+    .desc = Простой плащ, окрашенный в тёмно-зелёный цвет.
     .suffix = Z14
-
-ent-Z14STClothingHeadHelmetSerafim = капюшон плаща серафимов
-    .desc = Покрывает вашу голову
+ent-Z14STClothingHeadHelmetSerafim = Капюшон зелёного плаща
+    .desc = Закрывает голову.
     .suffix = Z14

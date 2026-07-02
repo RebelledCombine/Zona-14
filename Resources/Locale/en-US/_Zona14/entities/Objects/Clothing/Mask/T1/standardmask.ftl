@@ -38,12 +38,12 @@ ent-Z14ClothingMaskGasRenegats = Rogue Standard Gas Mask
     .desc = Cheap and efficient. It protects against radiation.
     .suffix = Z14
 
-ent-Z14ClothingMaskGasSera = standard Seraphim gas mask
-    .desc = Protects against questions about religion, and from radiation.
+ent-Z14ClothingMaskGasSera = Green Gas Mask
+    .desc = A standard gas mask painted green. Protects against radiation and toxic fumes.
     .suffix = Z14
 
-ent-Z14ClothingMaskGasSeraFirstborn = Firstborn gas mask
-    .desc = An old gas mask with a green four-pointed star painted on it - the sacred symbol of the Seraphim.
+ent-Z14ClothingMaskGasSeraFirstborn = Green Star Gas Mask
+    .desc = An old gas mask with a green four-pointed star painted on it.
     .suffix = Z14
 
 ent-Z14ClothingMaskGasZarya = standard stalker gas mask

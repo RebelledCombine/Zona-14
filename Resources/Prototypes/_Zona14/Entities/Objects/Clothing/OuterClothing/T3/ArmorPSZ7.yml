@@ -1,5 +1,5 @@
 - type: entity
-  parent: Z14ArmorBaseT1PvP
+  parent: Z14ArmorBaseT2PvP
   id: Z14STClothingOuterArmorLightPlateVestBasePSZ7
   categories: [ Zona14 ]
   name: PSZ-7 Officer
@@ -12,7 +12,7 @@
       sprite: _Stalker/Objects/Clothing/outerClothing/psz7v2.rsi
 
 - type: entity
-  parent: Z14STClothingOuterArmorLightPlateVestBasePSZ7
+  parent: [ Z14ArmorBaseT2PvP, Z14STClothingOuterArmorLightPlateVestBasePSZ7 ]
   id: Z14STClothingOuterArmorLightPlateVestBasePSZ7v1
   categories: [ Zona14 ]
   name: PSZ-7 Olive
@@ -27,7 +27,7 @@
     sprite: _Stalker/Objects/Clothing/outerClothing/psz7v1.rsi
 
 - type: entity
-  parent: Z14STClothingOuterArmorLightPlateVestBasePSZ7
+  parent: [ Z14ArmorBaseT2PvP, Z14STClothingOuterArmorLightPlateVestBasePSZ7 ]
   id: Z14STClothingOuterArmorLightPlateVestBasePSZ7v3
   categories: [ Zona14 ]
   name: PSZ-7
@@ -42,7 +42,7 @@
     sprite: _Stalker/Objects/Clothing/outerClothing/psz7v3.rsi
 
 - type: entity
-  parent: Z14STClothingOuterArmorLightPlateVestBasePSZ7
+  parent: [ Z14ArmorBaseT3PvP, Z14STClothingOuterArmorLightPlateVestBasePSZ7 ]
   id: Z14STClothingOuterArmorDesertersPSZ7
   categories: [ Zona14 ]
   suffix: Z14

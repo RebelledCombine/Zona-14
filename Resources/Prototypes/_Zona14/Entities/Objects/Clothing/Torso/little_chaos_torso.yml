@@ -2,8 +2,8 @@
   parent: Z14BaseClothingTorso
   id: Z14STClothingTorsoSerafimLittleChaos
   categories: [ Zona14 ]
-  name: Special Son of the Star Follower Form
-  description: Material unknown. Size unknown. Sewing method unknown. What are these green threads?...
+  name: Reinforced Green Field Uniform
+  description: A green field uniform of unusual make, shot through with curious green threads.
   suffix: Z14
   components:
     - type: Sprite

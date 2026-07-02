@@ -46,8 +46,8 @@ ent-Z14ClothingOuterArmorZaryaRene = Sunrise Scarecrow Costume
     .desc = Brown jumpsuit stained with orange paint, rusty plates screwed with anything... this "Sunrise" looks as if it was collected from the garbage in the garbage. You don't know what is more terrible - the owner or the armor itself.
     .suffix = Z14
 
-ent-Z14ClothingOuterArmorZaryaSeraRuined = Sunrise jumpsuit
-    .desc = Homemade repainted and trash "Sunrise"
+ent-Z14ClothingOuterArmorZaryaSeraRuined = Sunrise jumpsuit (Worn)
+    .desc = A homemade, repainted and battered "Sunrise" jumpsuit, finished in green.
     .suffix = Z14
 
 ent-Z14ClothingOuterArmorZaryaStalker = Sunrise suit
@@ -78,6 +78,6 @@ ent-Z14STClothingOuterArmorProjectZarya = Sunrise made according to an incompreh
     .desc = A strange Sunrise made by who knows who and why
     .suffix = Z14
 
-ent-Z14STClothingOuterArmorRassvetSera = Sunrise Jumpsuit
-    .desc = Sunrise Jumpsuit, used by the Seraphim for tactical missions with increased protection against aggressive fauna.
+ent-Z14STClothingOuterArmorRassvetSera = Sunrise Jumpsuit (Green)
+    .desc = A "Sunrise" jumpsuit finished in green, fitted for tactical missions with increased protection against aggressive fauna.
     .suffix = Z14

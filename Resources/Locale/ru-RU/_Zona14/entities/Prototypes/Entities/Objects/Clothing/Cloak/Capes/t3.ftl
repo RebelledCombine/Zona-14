@@ -14,10 +14,9 @@ ent-Z14ClothingHeadHelmetLoyalistCoatRenegat = кевларовый капюшо
     .desc = От кевлара в нем не только название.
     .suffix = Z14
 
-ent-Z14ClothingHeadHelmetLoyalistCoatSeraphim = кевларовый капюшон серафимов
-    .desc = От кевлара в нем не только название.
+ent-Z14ClothingHeadHelmetLoyalistCoatSeraphim = Зелёный кевларовый капюшон
+    .desc = Кевларовый капюшон, окрашенный в тёмно-зелёный.
     .suffix = Z14
-
 ent-Z14ClothingHeadHelmetLoyalistCoatlight = охотничий капюшон
     .desc = защитит голову... от дождя... наверное?
     .suffix = Z14
@@ -46,10 +45,9 @@ ent-Z14ClothingOuterCoatRenegat = кевларовый плащ Ренегата
     .desc = Плащ, модифицированный под нужды группировки Ренегаты, окрашенный в "родные" цвета.
     .suffix = Z14
 
-ent-Z14ClothingOuterCoatSeraphim = кевларовый плащ серафимов
-    .desc = Плащ, модифицированный под нужды группировки Серафимов, окрашенный в "родные" цвета.
+ent-Z14ClothingOuterCoatSeraphim = Зелёный кевларовый плащ
+    .desc = Кевларовый плащ, окрашенный в тёмно-зелёный.
     .suffix = Z14
-
 ent-Z14STClothingCapeCoatReinforced = укреплённый плащ
     .desc = Плащ с вшитой кольчугой и укреплённый армидной тканью, что суммарно даёт защиту около 3 класса. Сам по себе тяжёлый и не уместит броник.
     .suffix = Z14

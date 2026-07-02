@@ -2,8 +2,8 @@
   parent: Z14BaseClothingLegs
   id: Z14STClothingLegsSerafimPants
   categories: [ Zona14 ]
-  name: pants of the follower of the son of the star
-  description: Material unknown. Size unknown. Sewing method unknown. This is something very unusual...
+  name: Green Trousers
+  description: Plain trousers dyed green.
   suffix: Z14
   components:
     - type: Unremoveable
@@ -16,7 +16,7 @@
   parent: Z14STClothingLegsSerafimPants
   id: Z14STClothingLegsSerafimCherubimPants
   categories: [ Zona14 ]
-  name: pants of a follower of the Son of the Star
+  name: Green Combat Trousers
   suffix: Z14
   components:
     - type: Unremoveable
