@@ -1,11 +1,11 @@
 # Zona14: translated Russian names/descriptions to English
-# Zona14: ##############   СТАДИЯ 1 СЕМЕНА И ЛИСТЬЯ
+# Zona14: ##############   STAGE 1 SEEDS AND LEAVES
 
 - type: seed
   id: STcannabisGrow
   name: cannabis sativa
-  # Zona14: suffix: ST, Stalker, ботаника # This field does not exist!
-  displayName: cannabis sativa # Zona14: каннабис сатива
+  # Zona14: suffix: ST, Stalker, botany # This field does not exist!
+  displayName: cannabis sativa # Zona14: Cannabis sativa
   plantRsi: Objects/Specific/Hydroponics/cannabis.rsi
   packetPrototype: CannabisSeeds
   productPrototypes:
@@ -30,7 +30,7 @@
   id: CannabisSeedsStalker
   parent: SeedBase
   name: marijuana seeds
-  suffix: ST, Stalker, craft, botanics # Zona14: ST, Stalker, craft, ботаника
+  suffix: ST, Stalker, craft, botanics # Zona14: ST, Stalker, craft, botany
   description: "Just don't get caught by the cops."
   components:
     - type: Seed
@@ -58,7 +58,7 @@
           Quantity: 15
   - type: Craftable
 
-# Zona14: ##############   СТАДИЯ 2 СУШКА И ПЕРЕМОЛКА
+# Zona14: ##############   STAGE 2 DRYING AND GRINDING
 
 - type: entity
   name: dried buds
@@ -103,7 +103,7 @@
 
 
 
-# Zona14: ##############   СТАДИЯ 3 КРУТИМ И КУРИМ
+# Zona14: ##############   STAGE 3 ROLLING AND SMOKING
 
 - type: entity
   id: STPaperRolling

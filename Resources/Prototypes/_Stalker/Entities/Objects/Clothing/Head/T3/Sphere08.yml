@@ -157,7 +157,7 @@
   parent: ClothingHeadHelmetBerill5MMilitary
   id: ClothingHeadHelmetBereza
   name: Sfera-8 "Listok"
-  suffix: ST, Custom # Zona14: ST, Кастомка
+  suffix: ST, Custom # Zona14: ST, Custom
   description: A "Sfera-8" protective helmet, modified and reskinned in "Bereza" camouflage. Provides reliable protection of the head from bullets and shrapnel while maintaining its integrity. Equipped with a side flashlight for working in low-light conditions. Worn by use, but has not lost its level of protection.
   components:
   - type: Sprite

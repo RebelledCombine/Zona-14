@@ -34,6 +34,6 @@
       path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
   - type: GunRequiresWield
   - type: RepositoryItem
-    categoryName: Weapons # Zona14: Оружие
+    categoryName: Weapons # Zona14: Weapons
   - type: STWeight
     self: 5.6 

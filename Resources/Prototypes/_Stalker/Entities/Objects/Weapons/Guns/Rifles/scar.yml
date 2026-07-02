@@ -97,7 +97,7 @@
   parent: STBaseWeaponRifleSCARH
   id: STWeaponRifleARX160
   name: beretta ARX-160
-  suffix: ST, Custom # Zona14: ST, Кастомка
+  suffix: ST, Custom # Zona14: ST, Custom
   description: Italian assault rifle from 'Soldier of the Future' program. Appeared in the Zone via private military companies. Lighter but less powerful than SCAR.
   components:
   - type: STWeight
@@ -130,7 +130,7 @@
   parent: STBaseWeaponRifleSCARH
   id: STWeaponRifleSCARSSR
   name: SCAR-SSR
-  suffix: ST, Custom # Zona14: ST, Кастомка
+  suffix: ST, Custom # Zona14: ST, Custom
   description: Belgian battle rifle chambered in 7.62x51mm NATO. Rare in the Zone, mostly used by western mercenaries. Powerful but maintenance-heavy weapon.
   components:
   - type: STWeight
@@ -195,7 +195,7 @@
   parent: STBaseWeaponRifleSCARH
   id: STWeaponRifleAK308
   name: AK-308 "Valkyrie"
-  suffix: ST, Custom # Zona14: ST, Кастомка
+  suffix: ST, Custom # Zona14: ST, Custom
   description: A development by the Kalashnikov Concern to meet the demands of foreign customers in need of a powerful and reliable automatic firearm chambered in 7.62x51. It only enters the Zone through special orders.
   components:
   - type: STWeight

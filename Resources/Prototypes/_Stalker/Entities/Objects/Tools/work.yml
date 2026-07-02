@@ -1,13 +1,13 @@
 ﻿# Zona14: translated Russian names/descriptions to English
 - type: Tag # This Tag we use in code to find all workbenches. Don't forget to add it on them and if you rename, rename in code as well
   id: STWorkbench
-# Zona14: ##############Верстак
+# Zona14: ##############Workbench
 - type: entity
   parent: BaseStructure
   id: StalkerWorkbench
   name: Workbench
   description: Vise Workbench for working with materials and devices.
-  suffix: ST, craft # Zona14: ST, крафт
+  suffix: ST, craft # Zona14: ST, craft
   components:
     - type: Tag
       tags:
@@ -37,7 +37,7 @@
   id: StalkerJabWorkbench
   name: Toad Workbench
   description: A crafting table with a set of advanced tools for disassembling and researching things
-  suffix: Stalker, DONATE, craft # Zona14: Stalker, DONATE, крафт
+  suffix: Stalker, DONATE, craft # Zona14: Stalker, DONATE, craft
   components:
     - type: ContainerContainer
       containers:
@@ -84,7 +84,7 @@
   id: StalkerWorkbenchOFF
   name: Rented Workbench (Not Active)
   description: Vise Workbench for working with materials and devices. To work on it, you need a coupon that allows you to work for 10 minutes. The owner is not responsible for the loss of items due to the end of the rental.
-  suffix: Stalker, craft, rental # Zona14: Stalker, крафт, аренда
+  suffix: Stalker, craft, rental # Zona14: Stalker, craft, rent
   components:
     - type: InteractionOutline
     - type: Clickable
@@ -115,7 +115,7 @@
 - type: shopPreset
   id: Work
   categories:
-    - name: Rent # Zona14: Аренда
+    - name: Rent # Zona14: Rent
       priority: 1
       items:
         Coupon: 500
@@ -125,7 +125,7 @@
   id: StalkerWorkbenchON
   name: Rented Workbench (Active)
   description: "{ ent-StalkerWorkbenchOFF.desc }"
-  suffix: Stalker, craft # Zona14: Stalker, крафт
+  suffix: Stalker, craft # Zona14: Stalker, craft
   categories: [ HideSpawnMenu ]
   components:
   - type: TimedDespawn
@@ -134,14 +134,14 @@
     prototype: StalkerWorkbenchOFF
 
 
-# Zona14: ##############Токарные Станки
+# Zona14: ##############Lathes
 
 - type: entity
   parent: StalkerWorkbench
   id: StalkerWorktable1
   name: lathe
   description: A fixture used to machine parts, mostly made of metal.
-  suffix: ST, craft # Zona14: ST, крафт
+  suffix: ST, craft # Zona14: ST, craft
   components:
     - type: InteractionOutline
     - type: Clickable
@@ -208,7 +208,7 @@
     - type: Transform
       noRot: true
 
-# Zona14: Валюта активации
+# Zona14: Activation currency
 
 - type: entity
   parent: BaseItem

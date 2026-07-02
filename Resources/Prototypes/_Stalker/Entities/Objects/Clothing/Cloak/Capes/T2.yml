@@ -24,7 +24,7 @@
     requiredSlot: CLOAK
   - type: Craftable
 
-# Zona14: Болотный
+# Zona14: Swamp
 - type: entity
   parent: STClothingCapeT2Base
   id: ClothingOuterCoatBolotniy
@@ -61,7 +61,7 @@
     slots:
     - Hair
 
-# Zona14: Черный кольчужный плащ
+# Zona14: Black chainmail cloak
 
 - type: entity
   parent: STClothingCapeT2Base
@@ -133,7 +133,7 @@
     slots:
     - Hair
 
-# Zona14: кожанный плащ
+# Zona14: Leather cloak
 - type: entity
   parent: STClothingCapeT2Base
   id: ClothingOuterCoatStalker
@@ -164,7 +164,7 @@
     slots:
     - Hair
 
-# Zona14: Скинчики
+# Zona14: Skins
 # QEWAEWA2
 - type: entity
   parent: STClothingCapeT2Base
@@ -234,7 +234,7 @@
   parent: STClothingCapeT2Base
   id: STClothingCapeT2SerafimPrestige
   name: Seraphim Prestige Cloak
-  suffix: ST, T2, Skin # Zona14: ST, T2, Скин
+  suffix: ST, T2, Skin # Zona14: ST, T2, Skin
   description: Dark green with metal accents
   components:
   - type: STWeight

@@ -36,7 +36,7 @@
     hideOnToggle: true
 
 
-# Zona14: Трёхдырчатая балаклава
+# Zona14: Three-hole balaclava
 
 - type: entity
   parent: ClothingMaskBalaklavaBase
@@ -49,7 +49,7 @@
   - type: Clothing
     sprite: _Stalker/Objects/Clothing/mask/balaklava1.rsi
 
-# Zona14: Трёхдырчатая балаклава с большими дырками
+# Zona14: Three-hole balaclava with large holes
 
 - type: entity
   parent: ClothingMaskBalaklavaBase
@@ -62,7 +62,7 @@
   - type: Clothing
     sprite: _Stalker/Objects/Clothing/mask/balaklava4.rsi
 
-# Zona14: Лыжная  маска со ртом
+# Zona14: Ski mask with mouth opening
 
 - type: entity
   parent: ClothingMaskBalaklavaBase
@@ -75,7 +75,7 @@
   - type: Clothing
     sprite: _Stalker/Objects/Clothing/mask/balaklava2.rsi
 
-# Zona14: Лыжная маска
+# Zona14: Ski mask
 
 - type: entity
   parent: ClothingMaskBalaklavaBase

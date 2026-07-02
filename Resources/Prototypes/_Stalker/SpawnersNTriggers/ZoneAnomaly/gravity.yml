@@ -1,5 +1,5 @@
 # Zona14: translated Russian names/descriptions to English
-# Zona14: Общий
+# Zona14: General
 - type: entity
   id: SpawnerZoneAnomalyGravityGroupChance1
   name: gravity anomaly spawner (1% chance to spawn)
@@ -150,7 +150,7 @@
     chance: 1.0
     offset: 0.0
 
-# Zona14: Эпицентр (Epicentre)
+# Zona14: Epicentre
 - type: entity
   id: SpawnerZoneAnomalyEpicentreChance1
   name: epicentre anomaly spawner (1% chance to spawn)
@@ -241,7 +241,7 @@
     chance: 1.0
     offset: 0.0
 
-# Zona14: Воронка (Gravi)
+# Zona14: Funnel (Gravi)
 - type: entity
   id: SpawnerZoneAnomalyGraviChance1
   name: gravi anomaly spawner (1% chance to spawn)
@@ -362,7 +362,7 @@
     chance: 1.0
     offset: 0.0
 
-# Zona14: Трамплин (Springboard)
+# Zona14: Springboard
 - type: entity
   id: SpawnerZoneAnomalySpringboardChance1
   name: springboard anomaly spawner (1% chance to spawn)
@@ -483,7 +483,7 @@
     chance: 1.0
     offset: 0.0
 
-# Zona14: Инверсия (Inversion)
+# Zona14: Inversion
 - type: entity
   id: SpawnerZoneAnomalyInversionChance1
   name: inversion anomaly spawner (1% chance to spawn)

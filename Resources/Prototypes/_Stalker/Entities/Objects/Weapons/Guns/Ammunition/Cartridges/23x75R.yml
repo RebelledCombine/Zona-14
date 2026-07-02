@@ -58,7 +58,7 @@
 
 #- type: entity
 #  id: CartridgeShotgunZvezdaBullet
-# Zona14: name: 23х75мм R "Звезда"
+# Zona14: name: 23x75mm R "Zvezda"
 #  parent: BaseShotgunBullet
 #  components:
 #  - type: CartridgeAmmo

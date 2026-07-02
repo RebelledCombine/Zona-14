@@ -1,7 +1,7 @@
 # Zona14: translated Russian names/descriptions to English
-# Zona14: ################ ООН
+# Zona14: ################ UN
 
-# Zona14: ## Т4 СЕТ
+# Zona14: ## T4 SET
 
 - type: entity
   parent: BaseItem
@@ -1351,7 +1351,7 @@
       sound:
         path: /Audio/Effects/unwrap.ogg
 
-# Zona14: ## ПРОВИЗИЯ СОП
+# Zona14: ## PROVISIONS SOP
 
 - type: entity
   parent: BaseItem
@@ -1536,7 +1536,7 @@
     sound:
       path: /Audio/Effects/unwrap.ogg
 
-# Zona14: ## МОНОЛИТ
+# Zona14: ## MONOLITH
 
 - type: entity
   parent: BaseItem
@@ -1735,7 +1735,7 @@
       sound:
         path: /Audio/Effects/unwrap.ogg
 
-# Zona14: ## СТАЛКЕРСКИЕ НАБОРЫ
+# Zona14: ## STALKER SETS
 
 - type: entity
   parent: BaseItem
@@ -1850,7 +1850,7 @@
         - id: STGauze
         - id: STGauze
 
-# Zona14: ## НАБОРЫ ЗА ОЧКИ С ТОЧЕК ЗАХВАТА
+# Zona14: ## SETS FOR CAPTURE POINT SCORES
 
 - type: entity
   parent: BaseItem
@@ -1903,7 +1903,7 @@
 
 
 
-# Zona14: Отступы
+# Zona14: Deserters
 
 - type: entity
   parent: UNstandartCrate
@@ -1945,7 +1945,7 @@
       sound:
         path: /Audio/Effects/unwrap.ogg
 
-# Zona14: ##ОДИНОЧКИ
+# Zona14: ##LONERS
 
 - type: entity
   parent: UNstandartCrate
@@ -1987,7 +1987,7 @@
       sound:
         path: /Audio/Effects/unwrap.ogg
 
-# Zona14: БАНДИТЫ
+# Zona14: BANDITS
 
 - type: entity
   parent: UNstandartCrate
@@ -2027,7 +2027,7 @@
       sound:
         path: /Audio/Effects/unwrap.ogg
 
-# Zona14: Свобода
+# Zona14: Freedom
 
 - type: entity
   parent: UNstandartCrate
@@ -2067,7 +2067,7 @@
       sound:
         path: /Audio/Effects/unwrap.ogg
 
-# Zona14: ЗАВЕТ
+# Zona14: COVENANT
 
 - type: entity
   parent: UNstandartCrate
@@ -2107,7 +2107,7 @@
       sound:
         path: /Audio/Effects/unwrap.ogg
 
-# Zona14: СЕРАФИМЫ
+# Zona14: SERAPHIM
 
 - type: entity
   parent: UNstandartCrate
@@ -2147,7 +2147,7 @@
       sound:
         path: /Audio/Effects/unwrap.ogg
 
-# Zona14: ДОЛГ
+# Zona14: DUTY
 
 - type: entity
   parent: UNstandartCrate

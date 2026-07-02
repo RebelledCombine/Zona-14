@@ -137,7 +137,7 @@
     chance: 1.0
     offset: 0.0
 
-# Zona14: Сильная жарка (Jarka strong)
+# Zona14: Strong frying (Jarka strong)
 - type: entity
   id: SpawnerZoneAnomalyJarkaStrongChance1
   name: long burner anomaly spawner (1% chance to spawn)
@@ -252,7 +252,7 @@
     chance: 1
     offset: 0.0
 
-# Zona14: Жарка (Jarka)
+# Zona14: Frying (Jarka)
 - type: entity
   id: SpawnerZoneAnomalyJarkaChance1
   name: burner anomaly spawner (1% chance to spawn)
@@ -367,7 +367,7 @@
     chance: 1
     offset: 0.0
 
-# Zona14: Пар (Steam)
+# Zona14: Steam
 - type: entity
   id: SpawnerZoneAnomalySteamChance1
   name: steam anomaly spawner (1% chance to spawn)
@@ -482,7 +482,7 @@
     chance: 1
     offset: 0.0
 
-# Zona14: Солнце (Sol)
+# Zona14: Sun (Sol)
 - type: entity
   id: SpawnerZoneAnomalySolChance1
   name: sun anomaly spawner (1% chance to spawn)

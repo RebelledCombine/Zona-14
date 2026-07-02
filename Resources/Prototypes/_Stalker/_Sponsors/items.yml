@@ -4,7 +4,7 @@
   parent: HatchetStalker
   id: STHatchetSponsor
   description: A hatchet, can be used to cut down trees.
-  suffix: ST, sponsor # Zona14: ST, спонсор
+  suffix: ST, sponsor # Zona14: ST, sponsor
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Tools/hatchet.rsi
@@ -18,14 +18,14 @@
     sprite: _Stalker/Objects/Tools/hatchet.rsi
   - type: Craftable
   - type: RepositoryItem
-    categoryName: Tools # Zona14: Инструменты
+    categoryName: Tools # Zona14: Tools
  
 - type: entity
   parent: BaseKnife
   id: STSpanishKnife
   name: Spanish Army Knife
   description: A knife and wire cutter in one.
-  suffix: Stalker, Tools # Zona14: Stalker, Инструменты
+  suffix: Stalker, Tools # Zona14: Stalker, Tools
   components:
     - type: STWeight
       self: 0.5
@@ -44,7 +44,7 @@
         path: /Audio/Items/ratchet.ogg
     - type: Craftable
     - type: RepositoryItem
-      categoryName: Tools # Zona14: Инструменты
+      categoryName: Tools # Zona14: Tools
     - type: Tag
       tags:
       - STCombatKnife

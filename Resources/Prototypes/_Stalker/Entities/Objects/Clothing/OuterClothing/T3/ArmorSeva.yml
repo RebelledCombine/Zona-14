@@ -507,7 +507,7 @@
   id: ClothingHeadHardsuitSevaHelmCovenant
   name: Covenant Seva Helmet
   description: Despite the predominantly glass composition, it is quite durable.
-  suffix: Stalker, Covenant # Zona14: Stalker, Завет
+  suffix: Stalker, Covenant # Zona14: Stalker, Covenant
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite

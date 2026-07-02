@@ -1,22 +1,22 @@
 # Zona14: translated Russian names/descriptions to English
-# Zona14: 1. Создание прототипа зоны
+# Zona14: 1. Creating zone prototype
 - type: stWarZone
-  id: KordonVillage # Zona14: Идентификатор зоны. Сохраняется в БД, поэтому не меняйте его.
-  rewardPointsPerPeriod: 1 # Zona14: Сколько очков будет начисляться за период
-  rewardPeriod: 1230 # Zona14: Период начисления очков в секундах
-  captureCooldownHours: 2 # Zona14: Время перезарядки захвата зоны в часах
-  captureTime: 10 # Zona14: Время захвата зоны в секундах. 30 минут.
+  id: KordonVillage # Zona14: Zone identifier. Saved in DB, so don't change it.
+  rewardPointsPerPeriod: 1 # Zona14: Points awarded per period
+  rewardPeriod: 1230 # Zona14: Point accrual period in seconds
+  captureCooldownHours: 2 # Zona14: Zone capture cooldown in hours
+  captureTime: 10 # Zona14: Zone capture time in seconds. 30 minutes.
   requirements:
     - !type:ZoneOwnershipRequirenment
-      requiredZones: [] # Zona14: Здесь можно указать зоны, которые должны быть захвачены для захвата этой зоны. Не тестил.
+      requiredZones: [] # Zona14: Zones that must be captured before this one can be captured. Not tested.
 
 - type: stWarZone
   id: SvalkaDepo
   rewardPointsPerPeriod: 1
-  rewardPeriod: 1230 # Zona14: Период начисления очков в секундах
+  rewardPeriod: 1230 # Zona14: Point accrual period in seconds
   captureCooldownHours: 96
   shouldAwardWhenDefenderPresent: true
-  captureTime: 850 # Zona14: Время захвата зоны в секундах.
+  captureTime: 850 # Zona14: Zone capture time in seconds.
   requirements:
   - !type:ZoneOwnershipRequirenment
     requiredZones: []
@@ -31,7 +31,7 @@
   name: Kordon Village War Zone
   description: A physical marker for the Kordon War Zone.
   components:
-    - type: WarZone # Zona14: Нужен этот компонент. Он будет сохранять состояние.
+    - type: WarZone # Zona14: This component is needed. It will save state.
       proto: KordonVillage
       portalName: Kordon Village
     - type: Physics
@@ -42,13 +42,13 @@
         trigger:
           shape:
             !type:PhysShapeCircle
-            radius: 3 # Zona14: Радиус зоны захвата. Выйти за зону и захват прекратиться
+            radius: 3 # Zona14: Capture zone radius. Leaving the zone stops capture
           hard: false
           mask:
             - MobMask
           layer:
             - MidImpassable
-    - type: PointLight # Zona14: Подсвечивает зону
+    - type: PointLight # Zona14: Highlights the zone
       enabled: true
       radius: 4
       color: Cyan
@@ -86,10 +86,10 @@
 - type: stWarZone
   id: SvalkaCemetery # Zona14: fixed Cyrillic С→C
   rewardPointsPerPeriod: 1
-  rewardPeriod: 1230 # Zona14: Период начисления очков в секундах
+  rewardPeriod: 1230 # Zona14: Point accrual period in seconds
   captureCooldownHours: 96
   shouldAwardWhenDefenderPresent: true
-  captureTime: 800 # Zona14: Время захвата зоны в секундах.
+  captureTime: 800 # Zona14: Zone capture time in seconds.
   requirements:
   - !type:ZoneOwnershipRequirenment
     requiredZones: []
@@ -129,10 +129,10 @@
 - type: stWarZone
   id: LimanskLenin
   rewardPointsPerPeriod: 1
-  rewardPeriod: 1230 # Zona14: Период начисления очков в секундах
+  rewardPeriod: 1230 # Zona14: Point accrual period in seconds
   captureCooldownHours: 96
   shouldAwardWhenDefenderPresent: true
-  captureTime: 850 # Zona14: Время захвата зоны в секундах.
+  captureTime: 850 # Zona14: Zone capture time in seconds.
   requirements:
   - !type:ZoneOwnershipRequirenment
     requiredZones: []
@@ -172,10 +172,10 @@
 - type: stWarZone
   id: KordonFerma
   rewardPointsPerPeriod: 1
-  rewardPeriod: 1230 # Zona14: Период начисления очков в секундах
+  rewardPeriod: 1230 # Zona14: Point accrual period in seconds
   captureCooldownHours: 96
   shouldAwardWhenDefenderPresent: true
-  captureTime: 875 # Zona14: Время захвата зоны в секундах.
+  captureTime: 875 # Zona14: Zone capture time in seconds.
   requirements:
   - !type:ZoneOwnershipRequirenment
     requiredZones: []
@@ -215,10 +215,10 @@
 - type: stWarZone
   id: KordonATP
   rewardPointsPerPeriod: 1
-  rewardPeriod: 1230 # Zona14: Период начисления очков в секундах
+  rewardPeriod: 1230 # Zona14: Point accrual period in seconds
   captureCooldownHours: 96
   shouldAwardWhenDefenderPresent: true
-  captureTime: 875 # Zona14: Время захвата зоны в секундах.
+  captureTime: 875 # Zona14: Zone capture time in seconds.
   requirements:
   - !type:ZoneOwnershipRequirenment
     requiredZones: []
@@ -259,7 +259,7 @@
 - type: stBandShopListings
   id: STBandShopListings
   items:
-  # Zona14: прочее
+  # Zona14: misc
     - productEntity: FitnessCenterCard
       price: 500
     - productEntity: STWeaponSniperVSS
@@ -299,7 +299,7 @@
 #    - productEntity: 2375VolnaRBulletBox
 #      price: 15
 
-  # Zona14: патроны
+  # Zona14: ammo
 #    - productEntity: 921PEGJBoxCink
 #      price: 70
     - productEntity: 918PBMBoxCink

@@ -422,7 +422,7 @@
   id: CardBinEmpty
   name: Deck of cards
   description: A deck of cards for those who really have nothing else to do.
-  suffix: Empty # Zona14: Пустая
+  suffix: Empty # Zona14: Empty
   components:
   - type: Bin
     maxItems: 37
@@ -435,7 +435,7 @@
   id: PokerCardBinEmpty
   name: "{ ent-CardBinEmpty }"
   description: A poker deck of cards for those who really have nothing else to do.
-  suffix: Empty # Zona14: Пустая
+  suffix: Empty # Zona14: Empty
   components:
   - type: Bin
     maxItems: 53

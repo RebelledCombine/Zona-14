@@ -1,5 +1,5 @@
 # Zona14: translated Russian names/descriptions to English
-# Zona14: ## Военные
+# Zona14: ## Military
 
 - type: entity
   parent: VendingMachine
@@ -51,7 +51,7 @@
     545FMJBox: 50
     545PCBox: 5
     545HPBox: 7
-    # Zona14: 545BPBox: 3 Убрано всё т4 по просьбе вииса
+    # Zona14: 545BPBox: 3 Removed all T4 at Viis request
     739FMJBox: 5
     754FMJBox: 3
     919PBMBox: 10
@@ -77,7 +77,7 @@
     PowerCellHyper: 100
     BoxFlare: 50
     HandheldGPSBasic: 50
-    # Zona14: Наборы
+    # Zona14: Sets
     #ArmyAKSUCrate: 15
     ArmyCrateNewOfficer: 2
     ArmyCrateNewStandart: 10
@@ -98,13 +98,13 @@
         - state: green_bit
           shader: unshaded
 
-# Zona14: ########################################Спавнер снабжения
+# Zona14: ########################################Supply Spawner
 
 - type: entity
   name: military supply spawner
   id: SupplySpawner
   parent: FlexibleMarkerTrigger
-  suffix: Stalker | CD 30 minutes # Zona14: Stalker | КД 30 минут
+  suffix: Stalker | CD 30 minutes # Zona14: Stalker | CD 30 minutes
   components:
     - type: Sprite
       layers:
@@ -120,7 +120,7 @@
           minimumEntitiesSpawned: 1
           maximumEntitiesSpawned: 1
 
-# Zona14: ## Полиция
+# Zona14: ## Police
 
 - type: entity
   parent: VendingMachine
@@ -176,7 +176,7 @@
     hunterLicense: 5
     militaryLicense: 5
 
-# Zona14: ## ООН
+# Zona14: ## UN
 
 - type: entity
   parent: VendingMachine
@@ -256,7 +256,7 @@
         - state: green_bit
           shader: unshaded
 
-# Zona14: ########################################Спавнер снабжения
+# Zona14: ########################################Supply Spawner
 
 - type: entity
   name: UN supply spawner
@@ -278,7 +278,7 @@
           minimumEntitiesSpawned: 1
           maximumEntitiesSpawned: 1
 
-# Zona14: ## ООН
+# Zona14: ## UN
 
 - type: entity
   parent: VendingMachine
@@ -327,7 +327,7 @@
         - state: green_bit
           shader: unshaded
 
-# Zona14: ############################################################################ СОП ПСЗ
+# Zona14: ############################################################################ SOP PSZ
 
 - type: entity
   parent: VendingMachine
@@ -404,7 +404,7 @@
       sprite: _Stalker/Structures/Furniture/olive_bag.rsi
       state: icon
 
-# Zona14: ############################################################################ СОП ОФЦ ПСЗ
+# Zona14: ############################################################################ SOP OFC PSZ
 
 - type: entity
   parent: VendingMachine
@@ -479,7 +479,7 @@
       sprite: _Stalker/Structures/Furniture/olive_bag.rsi
       state: icon
 
-# Zona14: ############################################################################ МОНОЛИТ
+# Zona14: ############################################################################ MONOLITH
 
 - type: entity
   parent: VendingMachineBoxesPSZMilitary
@@ -537,7 +537,7 @@
       sprite: _Stalker/Structures/Furniture/Sets/military-box.rsi
       state: icon
 
-# Zona14: ######### СЕРАФИМЫ
+# Zona14: ######### SERAPHIM
 
 - type: entity
   parent: VendingMachine
@@ -582,7 +582,7 @@
     545HPBox: 9
 
 
-# Zona14: Отступы
+# Zona14: Deserters
 
 - type: entity
   parent: VendingMachine
@@ -634,7 +634,7 @@
   startingInventory:
     DesertirCrate: 8
 
-# Zona14: ##ОДИНОЧКИ
+# Zona14: ##LONERS
 
 - type: entity
   parent: VendingMachine
@@ -686,7 +686,7 @@
   startingInventory:
     VeteranCrate: 8
 
-# Zona14: БАНДИТЫ
+# Zona14: BANDITS
 
 - type: entity
   parent: VendingMachine
@@ -738,7 +738,7 @@
   startingInventory:
     BandityCrate: 8
 
-# Zona14: СВОБОДА
+# Zona14: FREEDOM
 
 - type: entity
   parent: VendingMachine
@@ -790,7 +790,7 @@
   startingInventory:
     FreedomCrate: 8
 
-# Zona14: ЗАВЕТ
+# Zona14: COVENANT
 
 - type: entity
   parent: VendingMachine
@@ -842,7 +842,7 @@
   startingInventory:
     ZavetCrate: 8
 
-# Zona14: СЕРАФИМЫ
+# Zona14: SERAPHIM
 
 - type: entity
   parent: VendingMachine
@@ -894,7 +894,7 @@
   startingInventory:
     SefirotCrate: 8
 
-# Zona14: ДОЛГ
+# Zona14: DUTY
 
 - type: entity
   parent: VendingMachine
@@ -991,7 +991,7 @@
       castShadows: false
       radius: 0
 
-# Zona14: Проект
+# Zona14: Project
 
 - type: vendingMachineInventory
   id: ProjectComplect

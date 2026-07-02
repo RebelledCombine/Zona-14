@@ -1,6 +1,6 @@
 - type: entity
   abstract: true
-  parent: STBaseWeaponShotgun # Zona14: Не знаю зачем вы заменили базу в прошлый раз, но это ломает отображение спрайтов.
+  parent: STBaseWeaponShotgun # Zona14: I don't know why you replaced the base last time, but it breaks sprite rendering.
   id: STBaseWeaponShotgunCompact
   components:
   - type: STWeight

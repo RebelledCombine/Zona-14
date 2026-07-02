@@ -2,7 +2,7 @@
   id: PersonalLordVladimerShop
   username: LordVladimer
   categories:
-    - name: Lulrd # Zona14: Лулрд
+    - name: Lulrd # Zona14: Lulrd
       items:
         STWeaponRifleAKS74UWhite: 50
         STWeaponRifleASVAL: 800
@@ -23,7 +23,7 @@
   id: PersonalTornadoTechShop
   username: TornadoTech
   categories:
-    - name: Deal # Zona14: Договорняк
+    - name: Deal # Zona14: Deal
       items:
         STWeaponSniperVSSOracle: 12000
         STModuleSniperSightT2: 1200
@@ -35,7 +35,7 @@
   id: PersonalNazoltofShop
   username: nazoltof
   categories:
-    - name: Personal category # Zona14: Персональная категория
+    - name: Personal category # Zona14: Personal category
       items:
         STWeaponSniperSVDSGrass: 12000
 
@@ -43,7 +43,7 @@
   id: PersonalKLeymiShop
   username: KLeymi
   categories:
-    - name: Personal category # Zona14: Персональная категория
+    - name: Personal category # Zona14: Personal category
       items:
         STWeaponSniperOSV96: 15000
         13x108Mag10: 390
@@ -61,7 +61,7 @@
   id: PersonalQEWAEWA2Shop
   username: QEWAEWA2
   categories:
-    - name: Personal category # Zona14: Персональная категория
+    - name: Personal category # Zona14: Personal category
       items:
         STClothingOuterCoatNovember: 500
         STWeaponRifleHK416: 3500
@@ -74,7 +74,7 @@
   id: PersonalDelikoShop
   username: Deliko
   categories:
-    - name: Personal category # Zona14: Персональная категория
+    - name: Personal category # Zona14: Personal category
       items:
         ClothingJaketGray: 50
         STClothingHeadPeakCap: 50
@@ -83,7 +83,7 @@
   id: PersonalPodpivAssLexShop
   username: PodpivAss_Lex
   categories:
-    - name: Personal category # Zona14: Персональная категория
+    - name: Personal category # Zona14: Personal category
       items:
         ClothingMaskGP5Green: 50
         ClothingTorsoTurtlenecksCamouflage: 50
@@ -97,7 +97,7 @@
   id: PersonalFarforikShop
   username: farforik
   categories:
-    - name: Personal category # Zona14: Персональная категория
+    - name: Personal category # Zona14: Personal category
       items:
         STWeaponSniperVeprGrass: 8000
         STWeaponShotgunShizoToz34: 800
@@ -108,7 +108,7 @@
   id: PersonalRet4Shop
   username: Ret4
   categories:
-    - name: Personal category # Zona14: Персональная категория
+    - name: Personal category # Zona14: Personal category
       items:
         ClothingOuterCoatRet: 1754
         STweaponShotgunPRETecta: 2900
@@ -120,7 +120,7 @@
   id: PersonalResadsShop
   username: Resads
   categories:
-    - name: Personal category # Zona14: Персональная категория
+    - name: Personal category # Zona14: Personal category
       items:
         STWeaponRifleSIG739: 10000
 
@@ -128,7 +128,7 @@
   id: PersonalNekoGeckoShop
   username: Neko_Gecko
   categories:
-    - name: Personal category # Zona14: Персональная категория
+    - name: Personal category # Zona14: Personal category
       items:
         STWeaponSMGVector9Black: 4000
         STWeaponSMGVector9: 4000
@@ -139,7 +139,7 @@
   id: PersonalDesaylerShop
   username: Desayler
   categories:
-    - name: Personal category # Zona14: Персональная категория
+    - name: Personal category # Zona14: Personal category
       items:
         ClothingNeckExoSpeed: 10000
         STWeaponRifleStalkerRPK16Camo: 8000
@@ -148,7 +148,7 @@
   id: PersonalFomaaShop
   username: Fomaa
   categories:
-    - name: Personal category # Zona14: Персональная категория
+    - name: Personal category # Zona14: Personal category
       items:
         STClothingMaskFoma: 800
         STClothingHeadHatFoma: 100
@@ -160,7 +160,7 @@
   id: PersonalSamura1Shop
   username: Samura1
   categories:
-    - name: Personal category # Zona14: Персональная категория
+    - name: Personal category # Zona14: Personal category
       items:
         STWeaponRifleAUG: 4000
 
@@ -168,7 +168,7 @@
   id: PersonalLeopard2a7Shop
   username: Leopard2a7
   categories:
-    - name: Personal category # Zona14: Персональная категория
+    - name: Personal category # Zona14: Personal category
       items:
         WeaponPistolStalkerLP08: 900
         LP08Drum : 300
@@ -177,7 +177,7 @@
   id: PersonalSandmitShop
   username: sandmit
   categories:
-  - name: Personal category # Zona14: Персональная категория
+  - name: Personal category # Zona14: Personal category
     items:
       CasseteFiftyEightRadio: 250
       STWeaponSniperHK417: 15000
@@ -187,7 +187,7 @@
   id: PersonalSkywalkerShop
   username: SkyWalker88
   categories:
-  - name: Personal category # Zona14: Персональная категория
+  - name: Personal category # Zona14: Personal category
     items:
       STClothingOuterArmorSkyWalker: 8500
 
@@ -195,7 +195,7 @@
   id: PersonalkenkonShop
   username: kenkon
   categories:
-  - name: Personal category # Zona14: Персональная категория
+  - name: Personal category # Zona14: Personal category
     items:
       STWeaponRifleAM17: 10000
 
@@ -203,7 +203,7 @@
   id: PersonalDanILDO655Shop
   username: DanILDO655
   categories:
-  - name: Personal category # Zona14: Персональная категория
+  - name: Personal category # Zona14: Personal category
     items:
       STWeaponRifleSCARL: 3000
       STWeaponRifleOC14AltSkin1: 5000
@@ -214,7 +214,7 @@
   id: PersonalHLoRka_202Shop
   username: HLoRka_202
   categories:
-  - name: Personal category # Zona14: Персональная категория
+  - name: Personal category # Zona14: Personal category
     items:
       STWeaponSniperSVUTop: 12000
       WeaponPistolGyrzaTactikal: 700
@@ -223,7 +223,7 @@
   id: Personalclown_228Shop
   username: clown_228
   categories:
-  - name: Personal category # Zona14: Персональная категория
+  - name: Personal category # Zona14: Personal category
     items:
       ClothingOuterArmorSevaVano: 8500
 
@@ -231,7 +231,7 @@
   id: PersonalmuhakaShop
   username: muhaka
   categories:
-  - name: Personal category # Zona14: Персональная категория
+  - name: Personal category # Zona14: Personal category
     items:
       claymoreBattle: 3500
       STClothingOuterArmorPeresvet: 8500
@@ -240,7 +240,7 @@
   id: PersonalDasiusWLShop
   username: DasiusWL
   categories:
-  - name: Personal category # Zona14: Персональная категория
+  - name: Personal category # Zona14: Personal category
     items:
       CasseteSixtyOneDonateRadio: 500
 
@@ -248,7 +248,7 @@
   id: PersonalGleb_TreikShop
   username: Gleb_Treik
   categories:
-  - name: Personal category # Zona14: Персональная категория
+  - name: Personal category # Zona14: Personal category
     items:
       STWeaponSniperSKSpersecutor: 3500
 
@@ -256,7 +256,7 @@
   id: PersonalK981vzShop
   username: K981vz
   categories:
-  - name: Personal category # Zona14: Персональная категория
+  - name: Personal category # Zona14: Personal category
     items:
       CasseteSixtyTwoDonateRadioAnimaciya: 500
 
@@ -264,7 +264,7 @@
   id: Personalde21_Shop
   username: de21_
   categories:
-  - name: Personal category # Zona14: Персональная категория
+  - name: Personal category # Zona14: Personal category
     items:
       STWeaponSniperVSK94: 4500
       Base939MagVSK: 300
@@ -278,7 +278,7 @@
   id: Personalnikita2282288Shop
   username: nikita2282288
   categories:
-  - name: Personal category # Zona14: Персональная категория
+  - name: Personal category # Zona14: Personal category
     items:
       STWeaponRifleSCARSSR: 4500
       754RBox: 3100
@@ -288,7 +288,7 @@
   id: PersonalPearllovekaShop
   username: Pearlloveka
   categories:
-  - name: Personal category # Zona14: Персональная категория
+  - name: Personal category # Zona14: Personal category
     items:
       STWeaponSniperPP2000Pearl: 4500
       BasePP2000PearlMag: 200
@@ -298,7 +298,7 @@
   id: PersonalkravaShop
   username: krava
   categories:
-  - name: Personal category # Zona14: Персональная категория
+  - name: Personal category # Zona14: Personal category
     items:
       STWeaponRifleAK308: 4500
       751M80Box: 2200
@@ -314,7 +314,7 @@
   id: PersonalgeneralfimozShop
   username: generalfimoz
   categories:
-  - name: Personal category # Zona14: Персональная категория
+  - name: Personal category # Zona14: Personal category
     items:
       STWeaponShotgunOrigin12: 3000
       Origin1270Drum: 400
@@ -323,7 +323,7 @@
   id: PersonalXhedaieShop
   username: Xhedaie
   categories:
-  - name: Personal category # Zona14: Персональная категория
+  - name: Personal category # Zona14: Personal category
     items:
       STBaseWeaponShotgunVepr12Molot: 6200
       Base1270Mag: 300
@@ -332,7 +332,7 @@
   id: PersonalRUTShop
   username: RUT
   categories:
-  - name: Personal category # Zona14: Персональная категория
+  - name: Personal category # Zona14: Personal category
     items:
       ClothingOuterArmorHazmatRfWhite: 25000
       Base1270Mag: 300
@@ -348,7 +348,7 @@
   id: PersonalHolicShop
   username: Holic
   categories:
-  - name: Personal category # Zona14: Персональная категория
+  - name: Personal category # Zona14: Personal category
     items:
       STWeaponRifleRPK74Vedma: 5000
       Base545MagRPK: 300

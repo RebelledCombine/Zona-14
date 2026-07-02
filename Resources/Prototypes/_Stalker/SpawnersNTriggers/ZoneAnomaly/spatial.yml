@@ -1,5 +1,5 @@
 # Zona14: translated Russian names/descriptions to English
-# Zona14: Разлом (Rift)
+# Zona14: Rift
 - type: entity
   id: SpawnerZoneAnomalyRiftChance1
   name: rift anomaly spawner (1% chance to spawn)
@@ -120,7 +120,7 @@
     chance: 1
     offset: 0.0
 
-# Zona14: Барабашка (Barabashka)
+# Zona14: Barabashka
 - type: entity
   id: SpawnerZoneAnomalyBarabashkaChance1
   name: thief anomaly spawner (1% chance to spawn)

@@ -13,7 +13,7 @@
           map: ["enum.ZoneAnomalyDetectorVisuals.Layer"]
           shader: unshaded
     - type: RepositoryItem
-      categoryName: Detectors # Zona14: Детекторы
+      categoryName: Detectors # Zona14: Detectors
     - type: Appearance
     - type: GenericVisualizer
       visuals:
@@ -56,7 +56,7 @@
   id: ZoneAnomalyDetectorUpgradeAD1
   name: Advanced Model 1 Anomaly Detector (DA-1)
   description: Handheld scanner that has been modified, reduced distance and designed to react to anomalies at close range
-  suffix: Stalker, Detector # Zona14: Stalker, Детектор
+  suffix: Stalker, Detector # Zona14: Stalker, Detector
   components:
     - type: STWeight
       self: 0.8
@@ -103,7 +103,7 @@
   id: ZoneAnomalyDetectorUpgradeAD2
   name: Advanced Model 2 Anomaly Detector (DA-2)
   description: Handheld scanner that has been modified is more accurate, but has a reduced distance and is designed to react to anomalies at close range
-  suffix: Stalker, Detector # Zona14: Stalker, Детектор
+  suffix: Stalker, Detector # Zona14: Stalker, Detector
   components:
     - type: STWeight
       self: 1.2
@@ -126,7 +126,7 @@
   id: ZoneAnomalyDetectorBMT12
   name: TDC-12 Anomaly Detector
   description: Tereshkov's Wave Module, an anomaly detection device developed after the Site's reappearance at the Institute, using completely different principles of anomaly detection.
-  suffix: Stalker, Detector # Zona14: Stalker, Детектор
+  suffix: Stalker, Detector # Zona14: Stalker, Detector
   components:
     - type: STWeight
       self: 0.8
@@ -147,9 +147,9 @@
 #- type: entity
 #  parent: ZoneAnomalyBaseDetector
 #  id: ZoneAnomalyDetectorBMT15
-# Zona14: name: детектор аномалий ВМТ-15
-# Zona14: description:  Волновой Модуль Терешкова, разработанное после повторного появления Зоны в Институте устройство для обнаружения аномалий, использующее совершенно иные принципы детекции аномалий.
-# Zona14: suffix: Stalker, Детектор
+# Zona14: name: VMT-15 anomaly detector
+# Zona14: description: Tereshkov Wave Module, a device developed after the Zone's reappearance at the Institute for detecting anomalies, using entirely different anomaly detection principles.
+# Zona14: suffix: Stalker, Detector
 #  components:
 #    - type: Sprite
 #      sprite: _Stalker/Objects/Devices/ZoneAnomalyDetectors/ad_4.rsi

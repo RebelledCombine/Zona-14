@@ -2,7 +2,7 @@
   id: SalesmanViktor
   sponsorCategories:
     SponsorBread:
-      - name: Special goods # Zona14: Специальные товары
+      - name: Special goods # Zona14: Special goods
         items:
           DrinkCampariBottleFull: 99
           FoodBreadBanana: 199
@@ -19,7 +19,7 @@
           CigarGoldCase: 29
           FlippoEngravedLighter: 19
   categories:
-    - name: Products # Zona14: Продукты
+    - name: Products # Zona14: Products
       priority: 1
       items:
         FoodCorn: 89
@@ -84,7 +84,7 @@
         FoodCondimentBottleEnzyme: 249
         FoodCondimentBottleVinegar: 99
         ReagentContainerOliveoil: 249
-    - name: Drinks # Zona14: Напитки
+    - name: Drinks # Zona14: Drinks
       priority: 2
       items:
         DrinkSodaWaterBottleFull: 99
@@ -112,7 +112,7 @@
         STEnergyDrinkMonster: 100
         STEnergyDrinkRevo: 75
         STDrinkBeerCanBaltic: 45
-    - name: Meat # Zona14: Мясное
+    - name: Meat # Zona14: Meat products
       priority: 3
       items:
         FoodMeat: 99
@@ -121,7 +121,7 @@
         FoodMeatChicken: 79
         STFoodMeatSalami: 59
         FoodMeatCrab: 99
-    - name: Fast food # Zona14: Быстрое питание
+    - name: Fast food # Zona14: Fast food
       priority: 4
       items:
         FoodBoxDonkpocketStonk: 999

@@ -111,7 +111,7 @@
     2: StalkerDolg
     3: StalkerHeadDolg
 
-# Zona14: Рядовой
+# Zona14: Private
 
 - type: job
   id: StalkerNoviceDolg

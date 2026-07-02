@@ -24,7 +24,7 @@
       params:
         volume: 8
 
-# Zona14: ВАГОНЫ С ЦИСТЕРНАМИ
+# Zona14: TANKER WAGONS
 
 - type: entity
   id: StalkerCargoTank
@@ -86,7 +86,7 @@
         - WallLayer
   - type: Appearance
 
-# Zona14: ТЕПЛОВОЗЫ
+# Zona14: DIESEL LOCOMOTIVES
 
 - type: entity
   id: StalkerPassHead
@@ -208,7 +208,7 @@
         - WallLayer
   - type: Appearance
 
-# Zona14: ПАССАЖИРСКИЕ ВАГОНЫ
+# Zona14: PASSENGER WAGONS
 
 - type: entity
   id: StalkerPassTrain
@@ -300,7 +300,7 @@
         - WallLayer
   - type: Appearance
 
-# Zona14: ГРУЗОВЫЕ ВАГОНЫ
+# Zona14: FREIGHT WAGONS
 
 - type: entity
   id: StalkerCargo

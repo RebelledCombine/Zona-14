@@ -517,7 +517,7 @@
     sprite: _Stalker/Objects/Clothing/hats/Bandit_zarya_cap.rsi
 
 
-# Zona14: СКИНЫ
+# Zona14: SKINS
 
 - type: entity
   parent: STClothingOuterArmorZaryaBase

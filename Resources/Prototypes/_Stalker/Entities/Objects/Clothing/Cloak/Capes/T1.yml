@@ -19,7 +19,7 @@
         Piercing: 0.95
         Heat: 0.95
 
-# Zona14: Дождевик
+# Zona14: Raincoat
 - type: entity
   parent: STClothingCapeT1Base
   id: ClothingOuterCoatDoshdevik
@@ -91,7 +91,7 @@
   - type: Clothing
     sprite: _Stalker/Objects/Clothing/hats/kkk_hood.rsi
 
-# Zona14: Пахана
+# Zona14: Boss
 - type: entity
   parent: STClothingCapeT1Base
   id: ClothingOuterCoatPahan
@@ -158,13 +158,13 @@
   - type: Clothing
     sprite: _Stalker/Objects/Clothing/Head/Hats/coat_hat_poisk.rsi
 
-# Zona14: Паломники
+# Zona14: Pilgrims
 - type: entity
   parent: STClothingCapeT1Base
   id: ClothingNeckCloakCassock
   name: "pilgrim's cassock"
   description: made of coarse gray cloth, helps to renounce worldly things
-  suffix: ST, pilgrims # Zona14: ST, паломники
+  suffix: ST, pilgrims # Zona14: ST, Pilgrims
   components:
     - type: Sprite
       sprite: _Stalker/Objects/Clothing/cloak/cassock.rsi
@@ -187,7 +187,7 @@
   - type: Clothing
     sprite: _Stalker/Objects/Clothing/Head/Hats/cassock_hood.rsi
 
-# Zona14: СКИНЫ
+# Zona14: SKINS
 
 - type: entity
   parent: STClothingCapeBase
@@ -235,7 +235,7 @@
   parent: ClothingOuterCoatDoshdevik
   id: STClothingCapeT1Serafim
   name: Seraphim Cloak
-  suffix: ST, T1, Skin # Zona14: ST, T1, Скин
+  suffix: ST, T1, Skin # Zona14: ST, T1, Skin
   description: Dark green
   components:
   - type: Sprite
@@ -276,7 +276,7 @@
   parent: ClothingOuterCoatDoshdevik
   id: STClothingOldRoadCape
   name: old road cloak
-  suffix: ST, T1, Skin # Zona14: ST, T1, Скин
+  suffix: ST, T1, Skin # Zona14: ST, T1, Skin
   description: A worn-out cloak that protects against dust and wind.
   components:
   - type: Sprite

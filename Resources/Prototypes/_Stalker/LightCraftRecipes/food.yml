@@ -1,4 +1,4 @@
-﻿# Zona14: Костёр
+﻿# Zona14: Campfire
 
 - type: lightCraftingRecipe
   id: MeatBoarCraft
@@ -67,7 +67,7 @@
     time: 5
 
 
-# Zona14: Газовая плита
+# Zona14: Gas stove
 
 - type: lightCraftingRecipe
   id: MeatBoarCraftGas
@@ -115,10 +115,10 @@
 
 
 
-# Zona14: ПРОЧЕЕ
+# Zona14: MISC
 
 
-# Zona14: Бутерброд
+# Zona14: Sandwich
 - type: lightCraftingRecipe
   id: STFoodMeatButerbrodCraft # Zona14: fixed Cyrillic С→C
   results:
@@ -130,7 +130,7 @@
     time: 2
 
 
-# Zona14: Чистка картофеля
+# Zona14: Potato peeling
 
 - type: lightCraftingRecipe
   id: cleaningpotatoes

@@ -25,7 +25,7 @@
   - type: Sprite
     sprite: _Stalker/Objects/medicine.rsi
   - type: RepositoryItem
-    categoryName: Medicine # Zona14: Медицина
+    categoryName: Medicine # Zona14: Medicine
   - type: Healing
     damageContainers:
       - Biological
@@ -100,7 +100,7 @@
 - type: entity
   parent: STBrutepack
   id: STBrutepackSera
-  suffix: ST, Skin, T1 # Zona14: ST, Скин, T1
+  suffix: ST, Skin, T1 # Zona14: ST, Skin, T1
   name: jar of ointment
   description: A foul-smelling ointment made from ground Larkspur root and the crushed eye of Flesh is great for treating bruises.
   components:
@@ -195,7 +195,7 @@
 - type: entity
   parent: STOintment
   id: STOintmentSera
-  suffix: ST, Skin, T1 # Zona14: ST, Скин, T1
+  suffix: ST, Skin, T1 # Zona14: ST, Skin, T1
   name: bitter ointment
   description: A disgusting, viscous goo with a horrible smell made from Boar liver pomace, but it is still surprisingly good at healing chemical and radiation burns. It is used by seraphim, among other things, as a means of combating skin cancer.
   components:
@@ -338,7 +338,7 @@
 - type: entity
   parent: STGauze
   id: STGauzeSera
-  suffix: ST, Skin, T1 # Zona14: ST, Скин, T1
+  suffix: ST, Skin, T1 # Zona14: ST, Skin, T1
   name: piece of rag
   description: "Whether it's boiled cloth or an old bandage found in the rubble, those living in the Seraphim zone use this to bandage wounds."
   components:
@@ -368,7 +368,7 @@
   description: Regular Military Universal First Aid Kit. With its help, you can cope with injuries such as cuts, burns, bullet and shrapnel wounds, poisoning and others. Includes a standard set of medicines. Easy to use.
   components:
   - type: RepositoryItem
-    categoryName: Medicine # Zona14: Медицина
+    categoryName: Medicine # Zona14: Medicine
   - type: Sprite
     sprite: _Stalker/Objects/Medicine/medkit/ai1.rsi
     state: medkit-1
@@ -403,7 +403,7 @@
 - type: entity
   parent: MedkitAI2
   id: MedkitAI2Sera
-  suffix: ST, Skin, T2 # Zona14: ST, Скин, T2
+  suffix: ST, Skin, T2 # Zona14: ST, Skin, T2
   name: Homemade Medicine Kit
   description: A cloth-wrapped set of different jars, flasks, and powders, as well as old surgical instruments. It is used by seraphim for the thorough treatment of both deep bites of mutants and bullet and shrapnel wounds. In comparison with modern medicine, it is an extremely impractical way of providing medical care to the wounded, and nevertheless, its creators use it, having no other alternative.
   components:
@@ -435,7 +435,7 @@
   - type: STWeight
     self: 0.4
   - type: RepositoryItem
-    categoryName: Medicine # Zona14: Медицина
+    categoryName: Medicine # Zona14: Medicine
   - type: Sprite
     sprite: _Stalker/Objects/Medicine/medkit/ai2.rsi
     state: medkit-2
@@ -475,7 +475,7 @@
   - type: STWeight
     self: 0.6
   - type: RepositoryItem
-    categoryName: Medicine # Zona14: Медицина
+    categoryName: Medicine # Zona14: Medicine
   - type: Sprite
     sprite: _Stalker/Objects/Medicine/medkit/ai3.rsi
     state: medkit-3
@@ -518,7 +518,7 @@
   - type: STWeight
     self: 1
   - type: RepositoryItem
-    categoryName: Medicine # Zona14: Медицина
+    categoryName: Medicine # Zona14: Medicine
   - type: Tag
     tags:
     - Brutepack
@@ -571,7 +571,7 @@
     tags:
     - Brutepack
   - type: RepositoryItem
-    categoryName: Medicine # Zona14: Медицина
+    categoryName: Medicine # Zona14: Medicine
   - type: Sprite
     sprite: _Stalker/Objects/Medicine/medkit/ai5.rsi
     state: medkit-5

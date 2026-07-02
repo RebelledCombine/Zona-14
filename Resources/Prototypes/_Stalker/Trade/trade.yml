@@ -45,7 +45,7 @@
   parent: Trademachine
   name: Kayot
   description: Hands out tasks to stalkers.
-  suffix: ST, QUESTS # Zona14: ST, КВЕСТЫ
+  suffix: ST, QUESTS # Zona14: ST, QUESTS
   components:
   - type: NcStore
     contractPresets:

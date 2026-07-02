@@ -3,7 +3,7 @@
   id: BarrierBlockStalker
   parent: BaseShippingContainer
   name: barrier
-  suffix: ST, not opens, Mapping # Zona14: ST, не открывается, Mapping
+  suffix: ST, not opens, Mapping # Zona14: ST, does not open, Mapping
   description: A device for quickly blocking and clearing the way.
   components:
   - type: Sprite
@@ -27,7 +27,7 @@
 - type: entity
   id: BarrierBlockDynamicStalker
   name: "{ ent-BarrierBlockStalker }"
-  suffix: ST, Opens, Mapping # Zona14: ST, Открывается, Mapping
+  suffix: ST, Opens, Mapping # Zona14: ST, Opens, Mapping
   description: "{ ent-BarrierBlockStalker.desc }"
   parent: BaseMaterialDoor
   components:

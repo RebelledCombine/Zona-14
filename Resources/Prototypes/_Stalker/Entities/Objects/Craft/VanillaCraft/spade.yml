@@ -1,7 +1,7 @@
 # Zona14: translated Russian names/descriptions to English
 - type: entity
   name: sapper shovel
-  suffix: ST, Stalker, botanics, craft # Zona14: ST, Stalker, ботаника, craft
+  suffix: ST, Stalker, botanics, craft # Zona14: ST, Stalker, botany, craft
   parent: BaseItem
   id: STspade
   description: Compact and durable metal blade tool designed for digging, loosening and moving soil in the field.

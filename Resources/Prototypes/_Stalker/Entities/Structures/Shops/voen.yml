@@ -4,7 +4,7 @@
   id: StalkerShopVoen
   name: Torgomat, Military Stalkers
   description: How did the merchant fit there?
-  suffix: ST, Mapping, Milstalkers # Zona14: ST, Mapping, Военсталы
+  suffix: ST, Mapping, Milstalkers # Zona14: ST, Mapping, Military Stalkers
   components:
     - type: Sprite
       drawdepth: Objects

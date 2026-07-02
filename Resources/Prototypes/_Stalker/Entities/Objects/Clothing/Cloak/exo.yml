@@ -2,7 +2,7 @@
 - type: entity
   parent: STClothingCapeBase
   id: ClothingNeckExoSpeed
-  suffix: Stalker, Sponsor # Zona14: Stalker, Спонсор
+  suffix: Stalker, Sponsor # Zona14: Stalker, Sponsor
   name: Exoskeleton
   description: Leg version of the exoskeleton that allows you to run faster. In fact, they are technological stilts.
   components:

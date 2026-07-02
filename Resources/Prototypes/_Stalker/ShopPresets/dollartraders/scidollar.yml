@@ -1,4 +1,4 @@
-# Zona14: -----------------------ДОЛЛАРЫ-----------------------
+# Zona14: -----------------------DOLLARS-----------------------
 - type: shopPreset
   id: SciDollarTorgomat
   itemsForSale:
@@ -64,8 +64,8 @@
       Defibrillator: 10
       STOintmentGood: 2 # heals 40 thermal damage (Heat: -20 Caustic: -10 Shock: -10 delay: 8)
       MedkitMilitary: 2 # heals 50 physical damage (Piercing: -20 Blunt: -10 Slash: -20 delay: 8)
-      MedkitScience: 5 # Zona14: лечит 45 терм. урона и 20 рад. (Heat: -15 Caustic: -15 Shock: -15 Radiation: -20 delay: 9)
-      WakeUpMedipen: 5 # Zona14: содержит аналог 2 таблеток wakeuppill (20 унций Bloodloss: -3 Asphyxiation: -2 за унцию)
+      MedkitScience: 5 # Zona14: Heals 45 thermal damage and 20 rad. (Heat: -15 Caustic: -15 Shock: -15 Radiation: -20 delay: 9)
+      WakeUpMedipen: 5 # Zona14: Contains equivalent of 2 wakeuppill tablets (20 oz Bloodloss: -3 Asphyxiation: -2 per oz)
       MedkitAI2: 1
       AntiRadMedipen: 5
       STPillboxShiza: 100

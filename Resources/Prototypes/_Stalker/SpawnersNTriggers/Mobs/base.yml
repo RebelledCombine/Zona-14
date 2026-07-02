@@ -35,7 +35,7 @@
   id: FlexibleMarkerTrigger50
   parent: FlexibleMarkerTrigger
   abstract: true
-  suffix: ST, CD 40 MINUTES # Zona14: ST, КД 40 МИНУТ
+  suffix: ST, CD 40 MINUTES # Zona14: ST, CD 40 MINUTES
   components:
   - type: ApproachTrigger
 

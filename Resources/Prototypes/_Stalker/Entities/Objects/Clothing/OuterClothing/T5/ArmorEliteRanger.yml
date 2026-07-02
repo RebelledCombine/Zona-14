@@ -1,5 +1,5 @@
 # Zona14: translated Russian names/descriptions to English
-# Zona14: Бронька Владимера
+# Zona14: Vladimir's armor
 - type: entity
   parent: ClothingOuterArmorReinger
   id: ClothingOuterArmorReingerElite

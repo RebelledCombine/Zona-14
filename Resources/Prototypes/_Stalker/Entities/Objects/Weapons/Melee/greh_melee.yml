@@ -181,7 +181,7 @@
     tags:
     - GrehCanTakeOnly
 
-# Zona14: Кастомки
+# Zona14: Customs
 - type: entity
   name: claymore
   parent: BaseItem

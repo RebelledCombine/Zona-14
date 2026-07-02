@@ -12,11 +12,11 @@
     CasseteGDNineRadio: 150
     CasseteGDTenRadio: 150
   categories:
-    - name: Electronics # Zona14: Электроника
+    - name: Electronics # Zona14: Electronics
       priority: 1
       items:
         RadioStalkerPlayer: 2500
-    - name: Donation cassettes # Zona14: Донатные кассеты
+    - name: Donation cassettes # Zona14: Donation cassettes
       priority: 2
       items:
          CasseteGDOneRadio: 250

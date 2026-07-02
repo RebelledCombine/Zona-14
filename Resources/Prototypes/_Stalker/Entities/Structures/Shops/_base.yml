@@ -4,7 +4,7 @@
   id: StalkerShop
   name: Torgomat, General
   description: Now he also buys!
-  suffix: ST, Mapping, general # Zona14: ST, Mapping, общий
+  suffix: ST, Mapping, general # Zona14: ST, Mapping, general
   components:
   - type: Physics
     bodyType: Static
@@ -41,5 +41,5 @@
     moneyId: Roubles
     shopPresetId: NpcSidor
 
-# Zona14: ТОРГОМАТЫ ГРУППИРОВОК
+# Zona14: FACTION VENDING MACHINES
 

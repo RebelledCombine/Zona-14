@@ -98,7 +98,7 @@
 
 # - type: persistentCraftNode
 #   id: PersistentCraftArmorNodeRedutT5
-# Zona14: name: Редут T5
+# Zona14: name: Redut T5
 #   description: persistent-craft-node-sub-recipe-desc
 #   branch: Armor
 #   cost: 320
@@ -110,7 +110,7 @@
 
 # - type: persistentCraftNode
 #   id: PersistentCraftArmorNodeRatnikT5
-# Zona14: name: Ратник T5
+# Zona14: name: Ratnik T5
 #   description: persistent-craft-node-sub-recipe-desc
 #   branch: Armor
 #   cost: 320

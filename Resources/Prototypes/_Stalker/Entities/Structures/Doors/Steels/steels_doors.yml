@@ -1,5 +1,5 @@
 # Zona14: translated Russian names/descriptions to English
-# Zona14: ГЕРМОДВЕРИ
+# Zona14: BLAST DOORS
 
 - type: entity
   id: HermoDverTypeOne
@@ -48,14 +48,14 @@
         layer:
         - TableLayer
 
-# Zona14: СТВОРКИ
+# Zona14: SHUTTERS
 
 - type: entity
   id: StalkerGate
   name: Gate
   parent: STBaseMaterialDoor
   description: Rigid frame, which is made of square pipe. The cladding is a metal corrugated sheeting covered with a polymer coating. It is well preserved for its age.
-  suffix: ST, mapping, left # Zona14: ST, mapping, левая
+  suffix: ST, mapping, left # Zona14: ST, mapping, left
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Doors/Gate/Gate.rsi
@@ -80,7 +80,7 @@
   name: "{ ent-StalkerGate }"
   parent: STBaseMaterialDoor
   description: "{ ent-StalkerGate.desc }"
-  suffix: ST, mapping, right # Zona14: ST, mapping, правая
+  suffix: ST, mapping, right # Zona14: ST, mapping, right
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Doors/Gate/Gater.rsi
@@ -104,7 +104,7 @@
   name: "{ ent-StalkerGate }"
   parent: BaseStructure
   description: "{ ent-StalkerGate.desc }"
-  suffix: ST, mapping, left, non-closable # Zona14: ST, mapping, левая, незакрываемая
+  suffix: ST, mapping, left, non-closable # Zona14: ST, mapping, left, non-closable
   components:
     - type: InteractionOutline
     - type: Sprite
@@ -129,13 +129,13 @@
   name: "{ ent-StalkerGate }"
   parent: StalkerGateFixed
   description: "{ ent-StalkerGate.desc }"
-  suffix: ST, mapping, right, non-closable # Zona14: ST, mapping, правая, незакрываемая
+  suffix: ST, mapping, right, non-closable # Zona14: ST, mapping, right, non-closable
   components:
     - type: Sprite
       layers:
         - state: closed
           map: ["enum.DoorVisualLayers.Base"]
-# Zona14: ПРОЧЕЕ
+# Zona14: MISC
 
 - type: entity
   id: MilitaryDoor2

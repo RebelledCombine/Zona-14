@@ -1,4 +1,4 @@
-# Zona14: Сталкеры
+# Zona14: Stalkers
 - type: roleLoadout
   id: JobStalker
   groups:
@@ -143,7 +143,7 @@
   - STStorageAmmunition
   - STGlasses
 
-# Zona14: Бандиты
+# Zona14: Bandits
 - type: roleLoadout
   id: JobStalkerBandit
   groups:
@@ -180,7 +180,7 @@
   - STGlasses
   - STOuterClothingBandit
 
-# Zona14: Долг
+# Zona14: Duty
 - type: roleLoadout
   id: JobStalkerDolg
   groups:
@@ -235,7 +235,7 @@
   - STGlasses
   - STOuterClothingDolg
 
-# Zona14: Свобода
+# Zona14: Freedom
 - type: roleLoadout
   id: JobStalkerFreedom
   groups:
@@ -290,7 +290,7 @@
   - STGlasses
   - STOuterClothingFreedom
 
-# Zona14: Ученые
+# Zona14: Scientists
 - type: roleLoadout
   id: Jobsci
   groups:
@@ -345,7 +345,7 @@
   - STGlasses
   - STOuterClothingSci
 
-# Zona14: Серафимы
+# Zona14: Seraphim
 - type: roleLoadout
   id: JobSeraphim
   groups:
@@ -400,7 +400,7 @@
   - STGlasses
   - STOuterClothingSeraphims
 
-# Zona14: Чистое небо
+# Zona14: Clear Sky
 - type: roleLoadout
   id: JobStalkerClearSky
   groups:
@@ -437,7 +437,7 @@
   - STGlasses
   - STOuterClothingStalkerClearSky
 
-# Zona14: Ренегаты
+# Zona14: Renegades
 
 - type: roleLoadout
   id: JobStalkerRene

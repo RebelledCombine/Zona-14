@@ -36,7 +36,7 @@
   - type: PullDoAfter
     pullTime: 2.0
   - type: RepositoryItem
-    categoryName: Weapons # Zona14: Оружие
+    categoryName: Weapons # Zona14: Weapons
   - type: Wieldable
   - type: GunRequiresWield
 

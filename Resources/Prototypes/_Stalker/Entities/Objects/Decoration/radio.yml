@@ -1,11 +1,11 @@
 # Zona14: translated Russian names/descriptions to English
-# Zona14: ПЕРЕНОСНОЙ ПЛЕЕР
+# Zona14: PORTABLE PLAYER
 
 - type: entity
   parent: BaseItem
   id: RadioStalkerPlayer
   name: Cassette Player
-  suffix: ST, portable # Zona14: ST, переносной
+  suffix: ST, portable # Zona14: ST, portable
   description: A cassette player introduced in 1983 and made in an ultra-compact case, which is smaller than even the audio cassette itself. This became possible due to the sliding design, which made it possible to install the cassette inside.
   components:
   - type: STWeight
@@ -40,19 +40,19 @@
   parent: RadioStalkerPlayer
   id: RadioBandPlayer
   name: Bandit Cassette Player
-  suffix: ST, portable # Zona14: ST, переносной
+  suffix: ST, portable # Zona14: ST, portable
   description: "{ ent-RadioStalkerPlayer.desc }"
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Devices/mp3playerband.rsi
     state: base
 
-# Zona14: КАССЕТЫ
+# Zona14: CASSETTES
 
 - type: entity
   parent: BaseItem
   id: CasseteOneRadio
-  suffix: Stalker, cassette (I am a soldier) # Zona14: Stalker, кассета (Я солдат)
+  suffix: Stalker, cassette (I am a soldier) # Zona14: Stalker, cassette (I Am a Soldier)
   name: "cassette #1 \"I am a soldier\""
   description: An old, tattered cassette tape. Presumably, it contains a song. There is some illegible writing on the front of the tape.
   components:
@@ -70,7 +70,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteTwoRadio
-  suffix: Stalker, cassette (Is only moment) # Zona14: Stalker, кассета (Есть только миг)
+  suffix: Stalker, cassette (Is only moment) # Zona14: Stalker, cassette (There Is Only a Moment)
   name: "cassette #2 \"There is only a moment"
   description: "{ ent-CasseteOneRadio.desc }"
   components:
@@ -88,7 +88,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteThreeRadio
-  suffix: Stalker, cassette (Freedom embed) # Zona14: Stalker, кассета (Свобода эмбенд)
+  suffix: Stalker, cassette (Freedom embed) # Zona14: Stalker, cassette (Freedom Emband)
   name: "cassette #3 \"Freedom, Embed\""
   description: "{ ent-CasseteOneRadio.desc }"
   components:
@@ -106,7 +106,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteFourRadio
-  suffix: Stalker, cassette (Black stalker) # Zona14: Stalker, кассета (Чёрный сталкер)
+  suffix: Stalker, cassette (Black stalker) # Zona14: Stalker, cassette (Black Stalker)
   name: "cassette #4 \"Black Stalker\""
   description: "{ ent-CasseteOneRadio.desc }"
   components:
@@ -124,7 +124,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteFiveRadio
-  suffix: Stalker, cassette (City which no) # Zona14: Stalker, кассета (Город которого нет)
+  suffix: Stalker, cassette (City which no) # Zona14: Stalker, cassette (City That Does Not Exist)
   name: "cassette #5 \"The City That Doesn't Exist\""
   description: "{ ent-CasseteOneRadio.desc }"
   components:
@@ -142,7 +142,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteSixRadio
-  suffix: Stalker, cassette (Judgment night) # Zona14: Stalker, кассета (Судная ночь)
+  suffix: Stalker, cassette (Judgment night) # Zona14: Stalker, cassette (Purge Night)
   name: "cassette #6 (strange)"
   description: An old, tattered cassette tape. Presumably, it contains a song. There is some illegible writing on the front of the tape. This tape looks very strange...
   components:
@@ -160,7 +160,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteSevenRadio
-  suffix: Stalker, cassette (Bar clear sky) # Zona14: Stalker, кассета (Бар чистое небо)
+  suffix: Stalker, cassette (Bar clear sky) # Zona14: Stalker, cassette (Bar Clear Sky)
   name: "cassette #7 \"Clear Sky Bar\""
   description: "{ ent-CasseteOneRadio.desc }"
   components:
@@ -178,7 +178,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteEightRadio
-  suffix: Stalker, cassette (Soviet March) # Zona14: Stalker, кассета (Советский марш)
+  suffix: Stalker, cassette (Soviet March) # Zona14: Stalker, cassette (Soviet March)
   name: "cassette #8 \"Soviet March\""
   description: "{ ent-CasseteOneRadio.desc }"
   components:
@@ -196,7 +196,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteNineRadio
-  suffix: Stalker, cassette (Moscow-Vladieast) # Zona14: Stalker, кассета (Москва-Владивосток)
+  suffix: Stalker, cassette (Moscow-Vladieast) # Zona14: Stalker, cassette (Moscow-Vladivostok)
   name: "cassette #9 \"Moscow-Vladivostok\""
   description: "{ ent-CasseteOneRadio.desc }"
   components:
@@ -214,7 +214,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteTenRadio
-  suffix: Stalker, cassette (Magic Moments) # Zona14: Stalker, кассета (Magic Moments)
+  suffix: Stalker, cassette (Magic Moments) # Zona14: Stalker, cassette (Magic Moments)
   name: "cassette #10 \"Magic Moments\""
   description: "{ ent-CasseteOneRadio.desc }"
   components:
@@ -232,7 +232,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteElevenRadio
-  suffix: Stalker, cassette (In the army now) # Zona14: Stalker, кассета (In the army now)
+  suffix: Stalker, cassette (In the army now) # Zona14: Stalker, cassette (In the army now)
   name: cassette No. 11 "In the army now"
   description: "{ ent-CasseteOneRadio.desc }"
   components:
@@ -250,7 +250,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteTwelveRadio
-  suffix: Stalker, cassette (Faina) # Zona14: Stalker, кассета (Фаина)
+  suffix: Stalker, cassette (Faina) # Zona14: Stalker, cassette (Faina)
   name: "cassette #12 \"Faina\""
   description: "{ ent-CasseteOneRadio.desc }"
   components:
@@ -268,7 +268,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteThirteeneRadio
-  suffix: Stalker, cassette (Let's go you all) # Zona14: Stalker, кассета (Пошли вы все)
+  suffix: Stalker, cassette (Let's go you all) # Zona14: Stalker, cassette (Screw You All)
   name: "cassette #13 \"Fuck you all\""
   description: "{ ent-CasseteOneRadio.desc }"
   components:
@@ -286,7 +286,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteFourteenRadio
-  suffix: Stalker, cassette (White roses) # Zona14: Stalker, кассета (Белые розы)
+  suffix: Stalker, cassette (White roses) # Zona14: Stalker, cassette (White Roses)
   name: "cassette #14 \"White Night\""
   description: "{ ent-CasseteOneRadio.desc }"
   components:
@@ -304,7 +304,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteFifteenRadio
-  suffix: Stalker, cassette (Holding Out For A Hero) # Zona14: Stalker, кассета (Holding Out For A Hero)
+  suffix: Stalker, cassette (Holding Out For A Hero) # Zona14: Stalker, cassette (Holding Out For A Hero)
   name: "Cassette #15 \"Holding Out For A Hero\""
   description: "{ ent-CasseteOneRadio.desc }"
   components:
@@ -319,12 +319,12 @@
     sprite: _Stalker/Objects/Misc/casete.rsi
     state: c1
 
-# Zona14: ДОНАТНЫЕ КАССЕТЫ
+# Zona14: DONATION CASSETTES
 
 - type: entity
   parent: BaseItem
   id: CasseteOneDonateRadio
-  suffix: Stalker, cassette (Alert about emission) # Zona14: Stalker, кассета (Оповещение о выбросе)
+  suffix: Stalker, cassette (Alert about emission) # Zona14: Stalker, cassette (Emission Alert)
   name: Cassette "Donate Notification"
   description: An old, tattered cassette tape. Presumably, it contains a song. There is an illegible inscription on the front of the tape. Made to order for KekSeLot
   components:
@@ -342,7 +342,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteTwoDonateRadio
-  suffix: Stalker, cassette (Bosanska Artiljeria) # Zona14: Stalker, кассета (Bosanska Artiljeria)
+  suffix: Stalker, cassette (Bosanska Artiljeria) # Zona14: Stalker, cassette (Bosanska Artiljeria)
   name: cassette "Bosanska Artiljeria"
   description: An old, tattered cassette tape. Presumably, it contains a song. There is some illegible writing on the front of the tape. Custom made for nexmev
   components:
@@ -360,7 +360,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteThreeDonateRadio
-  suffix: Stalker, cassette (Cuckoo) # Zona14: Stalker, кассета (Кукушка)
+  suffix: Stalker, cassette (Cuckoo) # Zona14: Stalker, cassette (Cuckoo)
   name: Cassette "Kukushka"
   description: An old, tattered cassette tape. Presumably, it contains a song. There is some illegible writing on the front of the tape. Custom made for SHIRDAN
   components:
@@ -378,7 +378,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteFourDonateRadio
-  suffix: Stalker, cassette (Dark-skinned girl Moldovanka) # Zona14: Stalker, кассета (Смуглянка Молдованка)
+  suffix: Stalker, cassette (Dark-skinned girl Moldovanka) # Zona14: Stalker, cassette (Dark-Skinned Moldovan Girl)
   name: Cassette "Smuglyanka Moldovanka"
   description: "{ ent-CasseteThreeDonateRadio.desc }"
   components:
@@ -396,7 +396,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteFiveDonateRadio
-  suffix: Stalker, cassette (The Man Who Sold The World) # Zona14: Stalker, кассета (The Man Who Sold The World)
+  suffix: Stalker, cassette (The Man Who Sold The World) # Zona14: Stalker, cassette (The Man Who Sold The World)
   name: '"The Man Who Sold The World" cassette'
   description: An old, tattered cassette tape. Presumably it contains a song. There is some illegible writing on the front of the tape. Custom made for Titehunter
   components:
@@ -414,7 +414,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteSixDonateRadio
-  suffix: Stalker, cassette (Sun, buy me guitar) # Zona14: Stalker, кассета (Солнце, купи мне гитару)
+  suffix: Stalker, cassette (Sun, buy me guitar) # Zona14: Stalker, cassette (Sun, Buy Me a Guitar)
   name: cassette "Sun, buy me a guitar"
   description: An old, tattered cassette tape. Presumably, it contains a song. There is some illegible writing on the front of the tape. Custom made for Seripes
   components:
@@ -432,7 +432,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteSevenDonateRadio
-  suffix: Stalker, cassette (3 September) # Zona14: Stalker, кассета (3 сентября)
+  suffix: Stalker, cassette (3 September) # Zona14: Stalker, cassette (September 3rd)
   name: Cassette "September 3"
   description: An old, tattered cassette tape. Presumably, it contains a song. There is some illegible writing on the front of the tape. Made to order for AktuBHblu_roMeC
   components:
@@ -450,7 +450,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteEightDonateRadio
-  suffix: "Stalker, cassette (Don't stop the fight)" # Zona14: "Stalker, кассета (Don't stop the fight)"
+  suffix: "Stalker, cassette (Don't stop the fight)" # Zona14: "Stalker, cassette (Don't stop the fight)"
   name: "\"Don't stop the fight\" cassette"
   description: "{ ent-CasseteSevenDonateRadio.desc }"
   components:
@@ -468,7 +468,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteNineDonateRadio
-  suffix: Stalker, cassette (Bride executioner) # Zona14: Stalker, кассета (Невеста палача)
+  suffix: Stalker, cassette (Bride executioner) # Zona14: Stalker, cassette (Executioner Bride)
   name: "\"The Executioner's Bride\" cassette"
   description: "{ ent-CasseteSevenDonateRadio.desc }"
   components:
@@ -486,7 +486,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteTenDonateRadio
-  suffix: Stalker, cassette (600 maybe) # Zona14: Stalker, кассета (600 мб)
+  suffix: Stalker, cassette (600 maybe) # Zona14: Stalker, cassette (600 MB)
   name: cassette "600 mb"
   description: An old, tattered cassette tape. Presumably, it contains a song. There is some illegible writing on the front of the tape. Made to order for christraitor
   components:
@@ -504,7 +504,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteElevenDonateRadio
-  suffix: Stalker, cassette (Author) # Zona14: Stalker, кассета (Автор)
+  suffix: Stalker, cassette (Author) # Zona14: Stalker, cassette (Author)
   name: Cassette "Author"
   description: "{ ent-CasseteTenDonateRadio.desc }"
   components:
@@ -522,7 +522,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteTwelveDonateRadio
-  suffix: Stalker, cassette (Chapaevskaya shoal) # Zona14: Stalker, кассета (Чапаевская мель)
+  suffix: Stalker, cassette (Chapaevskaya shoal) # Zona14: Stalker, cassette (Chapayev Shoal)
   name: '"Chapaevskaya Mel" cassette'
   description: "{ ent-CasseteTenDonateRadio.desc }"
   components:
@@ -540,7 +540,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteThirteenDonateRadio
-  suffix: Stalker, cassette (Day) # Zona14: Stalker, кассета (День)
+  suffix: Stalker, cassette (Day) # Zona14: Stalker, cassette (Day)
   name: Cassette "Day"
   description: "{ ent-CasseteTenDonateRadio.desc }"
   components:
@@ -558,7 +558,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteFourteenDonateRadio
-  suffix: Stalker, cassette (Comet) # Zona14: Stalker, кассета (Комета)
+  suffix: Stalker, cassette (Comet) # Zona14: Stalker, cassette (Comet)
   name: Comet Cassette
   description: "{ ent-CasseteTenDonateRadio.desc }"
   components:
@@ -576,7 +576,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteFiveteenDonateRadio
-  suffix: Stalker, cassette (Ice axe) # Zona14: Stalker, кассета (Ледоруб)
+  suffix: Stalker, cassette (Ice axe) # Zona14: Stalker, cassette (Ice Axe)
   name: Ice Pick Cassette
   description: "{ ent-CasseteTenDonateRadio.desc }"
   components:
@@ -594,7 +594,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteSixteenDonateRadio
-  suffix: Stalker, cassette (Cartridges) # Zona14: Stalker, кассета (Патроны)
+  suffix: Stalker, cassette (Cartridges) # Zona14: Stalker, cassette (Ammo)
   name: '"Cartridges" cassette'
   description: "{ ent-CasseteTenDonateRadio.desc }"
   components:
@@ -612,7 +612,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteSeventeenDonateRadio
-  suffix: Stalker, cassette (Time) # Zona14: Stalker, кассета (Время)
+  suffix: Stalker, cassette (Time) # Zona14: Stalker, cassette (Time)
   name: Cassette "Time"
   description: "{ ent-CasseteTenDonateRadio.desc }"
   components:
@@ -630,7 +630,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteEighteenDonateRadio
-  suffix: Stalker, cassette (Wake up Donbass) # Zona14: Stalker, кассета (Вставай Донбасс)
+  suffix: Stalker, cassette (Wake up Donbass) # Zona14: Stalker, cassette (Rise Up Donbass)
   name: Cassette "Vstavai Donbass"
   description: An old, tattered cassette tape. Presumably it contains a song. There is some illegible writing on the front of the tape. Custom made for Denison
   components:
@@ -648,7 +648,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteNineteenDonateRadio
-  suffix: Stalker, cassette (Heathens) # Zona14: Stalker, кассета (Heathens)
+  suffix: Stalker, cassette (Heathens) # Zona14: Stalker, cassette (Heathens)
   name: '"Heathens" cassette'
   description: An old, tattered cassette tape. Presumably it contains a song. There is some illegible writing on the front of the tape. Custom made for Cinnamon Bun
   components:
@@ -666,7 +666,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteTwentyOneDonateRadio
-  suffix: Stalker, cassette (Party Like A Russian) # Zona14: Stalker, кассета (Party Like A Russian)
+  suffix: Stalker, cassette (Party Like A Russian) # Zona14: Stalker, cassette (Party Like A Russian)
   name: '"Party Like A Russian" cassette'
   description: "{ ent-CasseteNineteenDonateRadio.desc }"
   components:
@@ -684,7 +684,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteTwentyTwoDonateRadio
-  suffix: "Stalker, cassette (It's raining men, Tombstone remix)" # Zona14: "Stalker, кассета (It's raining men, Tombstone remix)"
+  suffix: "Stalker, cassette (It's raining men, Tombstone remix)" # Zona14: "Stalker, cassette (It's raining men, Tombstone remix)"
   name: "\"It's Raining Men\" cassette"
   description: "{ ent-CasseteNineteenDonateRadio.desc }"
   components:
@@ -702,7 +702,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteTwentyThreeDonateRadio
-  suffix: Stalker, cassette (Wind Rose Diggy Diggy Hole) # Zona14: Stalker, кассета (Wind Rose Diggy Diggy Hole)
+  suffix: Stalker, cassette (Wind Rose Diggy Diggy Hole) # Zona14: Stalker, cassette (Wind Rose Diggy Diggy Hole)
   name: '"Wind Rose Diggy Diggy Hole" cassette'
   description: "{ ent-CasseteNineteenDonateRadio.desc }"
   components:
@@ -720,7 +720,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteTwentyFourDonateRadio
-  suffix: Stalker, cassette (Welcome to Va 11 HALL-A) # Zona14: Stalker, кассета (Welcome to Va 11 HALL-A)
+  suffix: Stalker, cassette (Welcome to Va 11 HALL-A) # Zona14: Stalker, cassette (Welcome to Va 11 HALL-A)
   name: '"Welcome to Va 11 HALL-A" cassette'
   description: "{ ent-CasseteNineteenDonateRadio.desc }"
   components:
@@ -738,7 +738,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteTwentyFiveDonateRadio
-  suffix: Stalker, cassette (Liquid Nights & Disco Lights) # Zona14: Stalker, кассета (Liquid Nights & Disco Lights)
+  suffix: Stalker, cassette (Liquid Nights & Disco Lights) # Zona14: Stalker, cassette (Liquid Nights & Disco Lights)
   name: '"Liquid Nights & Disco Lights" cassette'
   description: "{ ent-CasseteNineteenDonateRadio.desc }"
   components:
@@ -756,7 +756,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteTwentyDonateRadio
-  suffix: Stalker, cassette (Nightcall Kavinsky) # Zona14: Stalker, кассета (Nightcall Kavinsky)
+  suffix: Stalker, cassette (Nightcall Kavinsky) # Zona14: Stalker, cassette (Nightcall Kavinsky)
   name: '"Nightcall Kavinsky" cassette'
   description: An old, tattered cassette tape. Presumably, it contains some song. There is an illegible inscription on the front of the tape. Made to order for dikay_sove
   components:
@@ -774,7 +774,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteTwentySixDonateRadio
-  suffix: Stalker, cassette (N.R.M. - Bamžy) # Zona14: Stalker, кассета (N.R.M. - Bamžy)
+  suffix: Stalker, cassette (N.R.M. - Bamžy) # Zona14: Stalker, cassette (N.R.M. - Bamžy)
   name: cassette "NRM - Bamžy"
   description: "{ ent-CasseteTwentyDonateRadio.desc }"
   components:
@@ -792,7 +792,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteTwentySevenDonateRadio
-  suffix: Stalker, cassette (Warriors light) # Zona14: Stalker, кассета (Воины света)
+  suffix: Stalker, cassette (Warriors light) # Zona14: Stalker, cassette (Warriors of Light)
   name: Cassette "Warriors of Light"
   description: "{ ent-CasseteTwentyDonateRadio.desc }"
   components:
@@ -810,7 +810,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteTwentyEightDonateRadio
-  suffix: Stalker, cassette (Nie ma nieba) # Zona14: Stalker, кассета (Nie ma nieba)
+  suffix: Stalker, cassette (Nie ma nieba) # Zona14: Stalker, cassette (Nie ma nieba)
   name: '"Nie ma nieba" cassette'
   description: "{ ent-CasseteTwentyDonateRadio.desc }"
   components:
@@ -828,7 +828,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteTwentyNineDonateRadio
-  suffix: Stalker, cassette (The serpent) # Zona14: Stalker, кассета (The serpent)
+  suffix: Stalker, cassette (The serpent) # Zona14: Stalker, cassette (The serpent)
   name: '"The Serpent" cassette'
   description: "{ ent-CasseteTwentyDonateRadio.desc }"
   components:
@@ -846,7 +846,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteThirtyOneDonateRadio
-  suffix: Stalker, cassette (Gimme! Gimme!) # Zona14: Stalker, кассета (Gimme! Gimme!)
+  suffix: Stalker, cassette (Gimme! Gimme!) # Zona14: Stalker, cassette (Gimme! Gimme!)
   name: cassette "Gimme! Gimme!"
   description: "{ ent-CasseteTwentyDonateRadio.desc }"
   components:
@@ -864,7 +864,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteSixty0neDonateRadio
-  suffix: "Stalker, cassette (The Rolling Stones - Mother's Little Helper)" # Zona14: "Stalker, кассета (The Rolling Stones - Mother's Little Helper)"
+  suffix: "Stalker, cassette (The Rolling Stones - Mother's Little Helper)" # Zona14: "Stalker, cassette (The Rolling Stones - Mother's Little Helper)"
   name: "Cassette: “The Rolling Stones – Mother’s Little Helper”"
   description: An old, worn cassette. Presumed to contain a song. The label is barely legible. Custom-made for dikay_sove.
   components:
@@ -882,7 +882,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteSixtyTwoDonateRadio
-  suffix: Stalker, cassette (Sleg KlaS) # Zona14: Stalker, кассета (Sleg KlaS)
+  suffix: Stalker, cassette (Sleg KlaS) # Zona14: Stalker, cassette (Sleg KlaS)
   name: '"Sleg KlaS" cassette'
   description: "{ ent-CasseteTwentyDonateRadio.desc }"
   components:
@@ -900,7 +900,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteSixtyThreeDonateRadio
-  suffix: Stalker, cassette (Stillborn) # Zona14: Stalker, кассета (Stillborn)
+  suffix: Stalker, cassette (Stillborn) # Zona14: Stalker, cassette (Stillborn)
   name: '"Stillborn" cassette'
   description: "{ ent-CasseteTwentyDonateRadio.desc }"
   components:
@@ -918,7 +918,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteSixtyFourDonateRadio
-  suffix: Stalker, cassette (Fear Of God) # Zona14: Stalker, кассета (Fear Of God)
+  suffix: Stalker, cassette (Fear Of God) # Zona14: Stalker, cassette (Fear Of God)
   name: '"Fear Of God" cassette'
   description: "{ ent-CasseteTwentyDonateRadio.desc }"
   components:
@@ -936,7 +936,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteSixtyFiveDonateRadio
-  suffix: Stalker, cassette (Nezhegol - Ukraine) # Zona14: Stalker, кассета (Нежеголь - Украина)
+  suffix: Stalker, cassette (Nezhegol - Ukraine) # Zona14: Stalker, cassette (Nezhegol - Ukraine)
   name: '"Nezhegol - Ukraine" cassette'
   description: "{ ent-CasseteTwentyDonateRadio.desc }"
   components:
@@ -954,7 +954,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteSixtySixDonateRadio
-  suffix: Stalker, cassette (Abolish Government) # Zona14: Stalker, кассета (Abolish Government)
+  suffix: Stalker, cassette (Abolish Government) # Zona14: Stalker, cassette (Abolish Government)
   name: '"Abolish Government" cassette'
   description: "{ ent-CasseteTwentyDonateRadio.desc }"
   components:
@@ -972,7 +972,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteSixtySevenDonateRadio
-  suffix: Stalker, cassette (Sunday Bloody Sunday) # Zona14: Stalker, кассета (Sunday Bloody Sunday)
+  suffix: Stalker, cassette (Sunday Bloody Sunday) # Zona14: Stalker, cassette (Sunday Bloody Sunday)
   name: '"Sunday Bloody Sunday" cassette'
   description: "{ ent-CasseteTwentyDonateRadio.desc }"
   components:
@@ -990,7 +990,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteThirtyDonateRadio
-  suffix: Stalker, cassette (2nd Warning) # Zona14: Stalker, кассета (2nd Warning)
+  suffix: Stalker, cassette (2nd Warning) # Zona14: Stalker, cassette (2nd Warning)
   name: '"2nd Warning" cassette'
   description: An old, tattered cassette tape. Presumably it contains a song. There is some illegible writing on the front of the tape. Custom made for Carpenters2394
   components:
@@ -1008,7 +1008,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteThirtyTwoDonateRadio
-  suffix: Stalker, cassette (Tryn grass) # Zona14: Stalker, кассета (Трын трава)
+  suffix: Stalker, cassette (Tryn grass) # Zona14: Stalker, cassette (Tryn Trava)
   name: Cassette "Tryn trava"
   description: An old, tattered cassette tape. Presumably, it contains a song. There is some illegible writing on the front of the tape. Made to order for IWordoloNi
   components:
@@ -1026,7 +1026,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteThirtyThreeDonateRadio
-  suffix: Stalker, cassette (Hit) # Zona14: Stalker, кассета (Бей)
+  suffix: Stalker, cassette (Hit) # Zona14: Stalker, cassette (Hit)
   name: Cassette "Bey"
   description: "{ ent-CasseteThirtyTwoDonateRadio.desc }"
   components:
@@ -1044,7 +1044,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteThirtyFourDonateRadio
-  suffix: Stalker, cassette (Finnish knife) # Zona14: Stalker, кассета (Финский нож)
+  suffix: Stalker, cassette (Finnish knife) # Zona14: Stalker, cassette (Finnish Knife)
   name: Cassette "Finnish Knife"
   description: "{ ent-CasseteThirtyTwoDonateRadio.desc }"
   components:
@@ -1062,7 +1062,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteThirtyFiveDonateRadio
-  suffix: Stalker, cassette (The Mercenary Song) # Zona14: Stalker, кассета (The Mercenary Song)
+  suffix: Stalker, cassette (The Mercenary Song) # Zona14: Stalker, cassette (The Mercenary Song)
   name: '"The Mercenary Song" cassette'
   description: An old, tattered cassette tape. Presumably it contains a song. There is some illegible writing on the front of the tape. Custom made for Punk220
   components:
@@ -1080,7 +1080,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteThirtySixDonateRadio
-  suffix: Stalker, cassette (Parties for losers PAFL) # Zona14: Stalker, кассета (Вечеринки для неудачников PAFL)
+  suffix: Stalker, cassette (Parties for losers PAFL) # Zona14: Stalker, cassette (Parties for Losers PAFL)
   name: Cassette "Parties for Losers. PAFL"
   description: An old, tattered cassette tape. Presumably, it contains a song. There is some illegible writing on the front of the tape. Made to order for FOKMA
   components:
@@ -1098,7 +1098,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteThirtySevenDonateRadio
-  suffix: Stalker, cassette (ABSOLUTE TERRITORY) # Zona14: Stalker, кассета (ABSOLUTE TERRITORY)
+  suffix: Stalker, cassette (ABSOLUTE TERRITORY) # Zona14: Stalker, cassette (ABSOLUTE TERRITORY)
   name: cassette "ABSOLUTE TERRITORY"
   description: An old, tattered cassette tape. Presumably it contains a song. There is some illegible writing on the front of the tape. Custom made for rene
   components:
@@ -1116,7 +1116,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteThirtyEightDonateRadio
-  suffix: Stalker, cassette (Here and died Vova Whist) # Zona14: Stalker, кассета (Вот и помер Вова Вист)
+  suffix: Stalker, cassette (Here and died Vova Whist) # Zona14: Stalker, cassette (Vova Vist Has Died)
   name: cassette "So Vova Vist Died"
   description: "{ ent-CasseteThirtySevenDonateRadio.desc }"
   components:
@@ -1134,7 +1134,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteThirtyNineDonateRadio
-  suffix: "Stalker, cassette (Gangsta's Paradise)" # Zona14: "Stalker, кассета (Gangsta's Paradise)"
+  suffix: "Stalker, cassette (Gangsta's Paradise)" # Zona14: "Stalker, cassette (Gangsta's Paradise)"
   name: "\"Gangsta's Paradise\" cassette"
   description: "{ ent-CasseteThirtySevenDonateRadio.desc }"
   components:
@@ -1152,7 +1152,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteFortyDonateRadio
-  suffix: Stalker, cassette (Octavia, Cekkist of Storms) # Zona14: Stalker, кассета (Octavia, Cekkist of Storms)
+  suffix: Stalker, cassette (Octavia, Cekkist of Storms) # Zona14: Stalker, cassette (Octavia, Cekkist of Storms)
   name: '"Octavia, Cekkist of Storms" cassette'
   description: An old, tattered cassette tape. Presumably it contains a song. There is some illegible writing on the front of the tape. Custom made for Booba
   components:
@@ -1170,7 +1170,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteFortyOneDonateRadio
-  suffix: Stalker, cassette (We Are The Helldivers) # Zona14: Stalker, кассета (We Are The Helldivers)
+  suffix: Stalker, cassette (We Are The Helldivers) # Zona14: Stalker, cassette (We Are The Helldivers)
   name: '"We Are The Helldivers" cassette'
   description: "{ ent-CasseteFortyDonateRadio.desc }"
   components:
@@ -1188,7 +1188,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteFortyTwoDonateRadio
-  suffix: Stalker, cassette (Muck truck) # Zona14: Stalker, кассета (Говновоз)
+  suffix: Stalker, cassette (Muck truck) # Zona14: Stalker, cassette (Dung Carrier)
   name: '"Shit Truck" cassette'
   description: An old tattered cassette tape. Presumably, it contains a song. There is some illegible writing on the front of the tape. Custom made for ironlex
   components:
@@ -1206,7 +1206,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteFortyThreeDonateRadio
-  suffix: Stalker, cassette (Ramstain) # Zona14: Stalker, кассета (Ramstain)
+  suffix: Stalker, cassette (Ramstain) # Zona14: Stalker, cassette (Ramstain)
   name: '"Ramstain" cassette'
   description: "{ ent-CasseteSevenDonateRadio.desc }"
   components:
@@ -1224,7 +1224,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteFortyFourDonateRadio
-  suffix: Stalker, cassette (Accept) # Zona14: Stalker, кассета (Accept)
+  suffix: Stalker, cassette (Accept) # Zona14: Stalker, cassette (Accept)
   name: cassette "Accept"
   description: "{ ent-CasseteSevenDonateRadio.desc }"
   components:
@@ -1242,7 +1242,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteFortyFiveDonateRadio
-  suffix: Stalker, cassette (Laura Branigan) # Zona14: Stalker, кассета (Laura Branigan)
+  suffix: Stalker, cassette (Laura Branigan) # Zona14: Stalker, cassette (Laura Branigan)
   name: '"Laura Branigan" cassette'
   description: "{ ent-CasseteSevenDonateRadio.desc }"
   components:
@@ -1260,7 +1260,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteFortySixDonateRadio
-  suffix: Stalker, cassette (Horse Soldier) # Zona14: Stalker, кассета (Horse Soldier)
+  suffix: Stalker, cassette (Horse Soldier) # Zona14: Stalker, cassette (Horse Soldier)
   name: '"Horse Soldier" cassette'
   description: "{ ent-CasseteThirtyFiveDonateRadio.desc }"
   components:
@@ -1278,7 +1278,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteFortySevenDonateRadio
-  suffix: Stalker, cassette (FiftyFifty - Cupid) # Zona14: Stalker, кассета (FiftyFifty - Cupid)
+  suffix: Stalker, cassette (FiftyFifty - Cupid) # Zona14: Stalker, cassette (FiftyFifty - Cupid)
   name: cassette "FiftyFifty - Cupid"
   description: An old, tattered cassette tape. Presumably, it contains a song. There is some illegible writing on the front of the tape. Custom made for xsainteer
   components:
@@ -1296,7 +1296,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteFortyEightDonateRadio
-  suffix: Stalker, cassette (Commander - Lyube) # Zona14: Stalker, кассета (Комбат - Любэ)
+  suffix: Stalker, cassette (Commander - Lyube) # Zona14: Stalker, cassette (Combat - Lyube)
   name: cassette "Combat - Lube"
   description: An old, tattered cassette tape. Presumably it contains a song. There is some illegible writing on the front of the tape. Custom made for Cristicolor
   components:
@@ -1314,7 +1314,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteFortyNineDonateRadio
-  suffix: Stalker, cassette (coffee with cig) # Zona14: Stalker, кассета (кофе с сигой)
+  suffix: Stalker, cassette (coffee with cig) # Zona14: Stalker, cassette (Coffee with Cig)
   name: '"Coffee with Cigarette" cassette'
   description: An old, tattered cassette tape. Presumably it contains a song. There is some illegible writing on the front of the tape. Custom made for Neko-Gecko
   components:
@@ -1332,7 +1332,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteFiftyDonateRadio
-  suffix: Stalker, cassette (vacation on Mars) # Zona14: Stalker, кассета (каникулы на марсе)
+  suffix: Stalker, cassette (vacation on Mars) # Zona14: Stalker, cassette (Vacation on Mars)
   name: '"Holiday on Mars" cassette'
   description: "{ ent-CasseteFortyNineDonateRadio.desc }"
   components:
@@ -1350,7 +1350,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteFiftyOneDonateRadio
-  suffix: Stalker, cassette (restless - again) # Zona14: Stalker, кассета (беспокойник - снова)
+  suffix: Stalker, cassette (restless - again) # Zona14: Stalker, cassette (Bespokoynik - Again)
   name: Cassette "Restless - Again"
   description: "{ ent-CasseteFortyNineDonateRadio.desc }"
   components:
@@ -1368,7 +1368,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteFiftyTwoDonateRadio
-  suffix: Stalker, cassette (Eye-eaters - Cure me) # Zona14: Stalker, кассета (Глазоеды - Вылечи меня)
+  suffix: Stalker, cassette (Eye-eaters - Cure me) # Zona14: Stalker, cassette (Glazoyedy - Heal Me)
   name: cassette "Glazoedy - Cure Me"
   description: "{ ent-CasseteFortyNineDonateRadio.desc }"
   components:
@@ -1386,7 +1386,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteFiftyThreeDonateRadio
-  suffix: Stalker, cassette (Eagles - Hotel California) # Zona14: Stalker, кассета (Eagles - Hotel California)
+  suffix: Stalker, cassette (Eagles - Hotel California) # Zona14: Stalker, cassette (Eagles - Hotel California)
   name: '"Eagles - Hotel California" cassette'
   description: "{ ent-CasseteFortyNineDonateRadio.desc }"
   components:
@@ -1404,7 +1404,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteFiftyFourDonateRadio
-  suffix: Stalker, cassette (gqtis - Poor) # Zona14: Stalker, кассета (gqtis - Poor)
+  suffix: Stalker, cassette (gqtis - Poor) # Zona14: Stalker, cassette (gqtis - Poor)
   name: cassette "gqtis - Poor"
   description: "{ ent-CasseteFortyNineDonateRadio.desc }"
   components:
@@ -1422,7 +1422,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteFiftyFiveDonateRadio
-  suffix: Stalker, cassette (Noize MC — 26.04) # Zona14: Stalker, кассета (Noize MC — 26.04)
+  suffix: Stalker, cassette (Noize MC — 26.04) # Zona14: Stalker, cassette (Noize MC - 26.04)
   name: cassette "Noize MC - 26.04"
   description: An old, tattered cassette tape. Presumably it contains a song. There is some illegible writing on the front of the tape. Custom made for Retardo Cringos
   components:
@@ -1440,7 +1440,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteFiftySixDonateRadio
-  suffix: Stalker, cassette (Meg Myers - Desire) # Zona14: Stalker, кассета (Meg Myers - Desire)
+  suffix: Stalker, cassette (Meg Myers - Desire) # Zona14: Stalker, cassette (Meg Myers - Desire)
   name: cassette "Meg Myers - Desire"
   description: "{ ent-CasseteFiftyFiveDonateRadio.desc }"
   components:
@@ -1458,7 +1458,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteFiftySevenDonateRadio
-  suffix: Stalker, cassette (Noize MC — Rake) # Zona14: Stalker, кассета (Noize MC — Грабли)
+  suffix: Stalker, cassette (Noize MC — Rake) # Zona14: Stalker, cassette (Noize MC - Rake)
   name: cassette "Noize MC — Rake"
   description: "{ ent-CasseteFiftyFiveDonateRadio.desc }"
   components:
@@ -1476,7 +1476,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteFiftyEightDonateRadio
-  suffix: Stalker, cassette, (nx chvxs - KharmaGuess) # Zona14: Stalker, кассета, (nx chvxs - KharmaGuess)
+  suffix: Stalker, cassette, (nx chvxs - KharmaGuess) # Zona14: Stalker, cassette, (nx chvxs - KharmaGuess)
   name: cassette "nx chvxs - KharmaGuess"
   description: An old, tattered cassette tape. Presumably it contains a song. There is some illegible writing on the front of the tape. Custom made for Ret4.
   components:
@@ -1494,7 +1494,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteFiftyNineDonateRadio
-  suffix: Stalker, cassette, (Aramis - Futuro) # Zona14: Stalker, кассета, (Aramis - Futuro)
+  suffix: Stalker, cassette, (Aramis - Futuro) # Zona14: Stalker, cassette, (Aramis - Futuro)
   name: '"Aramis - Futuro" cassette'
   description: "{ ent-CasseteFiftyEightDonateRadio.desc }"
   components:
@@ -1512,7 +1512,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteSixtyDonateRadio
-  suffix: Stalker, cassette, (bad taste - records) # Zona14: Stalker, кассета, (дурной вкус - пластинки)
+  suffix: Stalker, cassette, (bad taste - records) # Zona14: Stalker, cassette, (Bad Taste - Records)
   name: cassette "bad taste - records"
   description: "{ ent-CasseteFiftyEightDonateRadio.desc }"
   components:
@@ -1530,7 +1530,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteSixtyOneDonateRadio
-  suffix: Stalker, cassette, (Khimki - goodtimes) # Zona14: Stalker, кассета, (химки - гудтаймс)
+  suffix: Stalker, cassette, (Khimki - goodtimes) # Zona14: Stalker, cassette, (Khimki - Good Times)
   name: cassette "Khimki, Summer, Sodomy - Goodtimes"
   description: An old, worn-out cassette. Supposedly, some kind of song is recorded on it. There is an illegible inscription on the front of the cassette. Custom-made for Ret4.
   components:
@@ -1548,7 +1548,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteSixtyTwoDonateRadioAnimaciya
-  suffix: Stalker, cassette, (animation) # Zona14: Stalker, кассета, (анимация)
+  suffix: Stalker, cassette, (animation) # Zona14: Stalker, cassette, (animation)
   name: cassette "Animation"
   description: An old, worn-out cassette. Supposedly, some kind of song is recorded on it. There is an illegible inscription on the front of the cassette. Custom-made for Ret4.
   components:
@@ -1570,7 +1570,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteGDOneRadio
-  suffix: Stalker, cassette (Aidamir Mugu - black eyes) # Zona14: Stalker, кассета (Айдамир мугу - черные глаза)
+  suffix: Stalker, cassette (Aidamir Mugu - black eyes) # Zona14: Stalker, cassette (Aidamir Mugu - Black Eyes)
   name: cassette "Aidamir Mugu - Black Eyes"
   description: An old, tattered cassette tape. Presumably, it contains some song. There is an illegible inscription on the front of the tape. Made to order for Dimochka
   components:
@@ -1588,7 +1588,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteGDTwoRadio
-  suffix: Stalker, cassette (Damn nature) # Zona14: Stalker, кассета (Блядская натура)
+  suffix: Stalker, cassette (Damn nature) # Zona14: Stalker, cassette (Damn Nature)
   name: Cassette "Bljadskaya natur"
   description: "{ ent-CasseteGDOneRadio.desc }"
   components:
@@ -1606,7 +1606,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteGDThreeRadio
-  suffix: Stalker, cassette (Rosenbaum - sucker, fat sucker) # Zona14: Stalker, кассета (Розенбаум - фраер, толстый фраер)
+  suffix: Stalker, cassette (Rosenbaum - sucker, fat sucker) # Zona14: Stalker, cassette (Rozenbaum - Frayir, Fat Frayir)
   name: cassette "Rosenbaum is a sucker, a fat sucker"
   description: "{ ent-CasseteGDOneRadio.desc }"
   components:
@@ -1624,7 +1624,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteGDFourRadio
-  suffix: Stalker, cassette (Mikhail circle - tattooist) # Zona14: Stalker, кассета (Михаил круг - кольщик)
+  suffix: Stalker, cassette (Mikhail circle - tattooist) # Zona14: Stalker, cassette (Mikhail Krug - Kolshchik)
   name: cassette "Mikhail Krug - the piercer"
   description: "{ ent-CasseteGDOneRadio.desc }"
   components:
@@ -1642,7 +1642,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteGDFiveRadio
-  suffix: Stalker, cassette (Mikhail circle - golden ku) # Zona14: Stalker, кассета (Михаил круг - золотые купола)
+  suffix: Stalker, cassette (Mikhail circle - golden ku) # Zona14: Stalker, cassette (Mikhail Krug - Golden Domes)
   name: cassette "Mikhail Krug - Golden Domes"
   description: "{ ent-CasseteGDOneRadio.desc }"
   components:
@@ -1660,7 +1660,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteGDSixRadio
-  suffix: Stalker, cassette (Mikhail circle - sucker) # Zona14: Stalker, кассета (Михаил круг - фраер)
+  suffix: Stalker, cassette (Mikhail circle - sucker) # Zona14: Stalker, cassette (Mikhail Krug - Frayir)
   name: cassette "Mikhail Krug - Friar"
   description: "{ ent-CasseteGDOneRadio.desc }"
   components:
@@ -1678,7 +1678,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteGDSevenRadio
-  suffix: Stalker, cassette (Mikhail circle - Vladimirsky central) # Zona14: Stalker, кассета (Михаил круг - Владимирский централ)
+  suffix: Stalker, cassette (Mikhail circle - Vladimirsky central) # Zona14: Stalker, cassette (Mikhail Krug - Vladimir Central)
   name: cassette "Mikhail Krug - Vladimir Central"
   description: "{ ent-CasseteGDOneRadio.desc }"
   components:
@@ -1696,7 +1696,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteGDEightRadio
-  suffix: Stalker, cassette (Mikhail circle - hooligan lemon) # Zona14: Stalker, кассета (Михаил круг - жиган лимон)
+  suffix: Stalker, cassette (Mikhail circle - hooligan lemon) # Zona14: Stalker, cassette (Mikhail Krug - Zhigan Limon)
   name: cassette "Mikhail Krug - Zhigan Lemon"
   description: "{ ent-CasseteGDOneRadio.desc }"
   components:
@@ -1714,7 +1714,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteGDNineRadio
-  suffix: Stalker, cassette (Milana Khametova - LP) # Zona14: Stalker, кассета (Милана Хаметова - ЛП)
+  suffix: Stalker, cassette (Milana Khametova - LP) # Zona14: Stalker, cassette (Milana Khametova - LP)
   name: Cassette "Milana Khametova - LP"
   description: "{ ent-CasseteGDOneRadio.desc }"
   components:
@@ -1732,7 +1732,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteGDTenRadio
-  suffix: Stalker, cassette (Rosenbaum - gop stop) # Zona14: Stalker, кассета (Розенбаум - гоп стоп)
+  suffix: Stalker, cassette (Rosenbaum - gop stop) # Zona14: Stalker, cassette (Rozenbaum - Gop Stop)
   name: Cassette "Rosenbaum - Gop Stop"
   description: "{ ent-CasseteGDOneRadio.desc }"
   components:
@@ -1750,7 +1750,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteFiftyEightRadio
-  suffix: Stalker, cassette (SHAMAN - I Russian) # Zona14: Stalker, кассета (SHAMAN - Я русский)
+  suffix: Stalker, cassette (SHAMAN - I Russian) # Zona14: Stalker, cassette (SHAMAN - I Am Russian)
   name: "Cassette: “SHAMAN – I’m Russian”"
   description: An old, worn cassette. Presumed to contain a song. The label is barely legible. Custom-made for sandmita.
   components:
@@ -1770,7 +1770,7 @@
 - type: entity
   parent: BaseItem
   id: CassetePremiumOneRadio
-  suffix: Stalker, cassette (Your eyes — cold carti) # Zona14: Stalker, кассета (Твоими глазами — cold carti)
+  suffix: Stalker, cassette (Your eyes — cold carti) # Zona14: Stalker, cassette (Through Your Eyes - cold carti)
   name: cassette "Through Your Eyes - Cold Carti"
   description: An old, tattered cassette tape. Presumably, it contains a song. There is some illegible writing on the front of the tape. Made to order for Miron
   components:
@@ -1788,7 +1788,7 @@
 - type: entity
   parent: BaseItem
   id: CassetePremiumTwoRadio
-  suffix: Stalker, cassette (Saluki — We'll cure) # Zona14: Stalker, кассета (Saluki — Вылечим)
+  suffix: Stalker, cassette (Saluki — We'll cure) # Zona14: Stalker, cassette (Saluki - We Will Heal)
   name: cassette "Saluki - We will cure"
   description: "{ ent-CassetePremiumOneRadio.desc }"
   components:
@@ -1806,7 +1806,7 @@
 - type: entity
   parent: BaseItem
   id: CassetePremiumThreeRadio
-  suffix: Stalker, cassette (Galafo — why snowdrifts this city) # Zona14: Stalker, кассета (Galafo — зачем сугробы этому городу)
+  suffix: Stalker, cassette (Galafo — why snowdrifts this city) # Zona14: Stalker, cassette (Galafo - Why Does This City Need Snowdrifts)
   name: cassette "Galafo - why does this city need snowdrifts"
   description: "{ ent-CassetePremiumOneRadio.desc }"
   components:
@@ -1824,7 +1824,7 @@
 - type: entity
   parent: BaseItem
   id: CassetePremiumFourRadio
-  suffix: Stalker, cassette (Boulevard depot Neonbones) # Zona14: Stalker, кассета (Бульвар депо Neonbones)
+  suffix: Stalker, cassette (Boulevard depot Neonbones) # Zona14: Stalker, cassette (Boulevard Depo Neonbones)
   name: cassette "Boulevard Depot Neonbones"
   description: "{ ent-CassetePremiumOneRadio.desc }"
   components:
@@ -1842,7 +1842,7 @@
 - type: entity
   parent: BaseItem
   id: CassetePremiumFiveRadio
-  suffix: Stalker, cassette (Scriptonite — One and the same) # Zona14: Stalker, кассета (Скриптонит — Одно и то же)
+  suffix: Stalker, cassette (Scriptonite — One and the same) # Zona14: Stalker, cassette (Scriptonite - Same Old)
   name: Cassette "Scriptonite - Same Thing"
   description: "{ ent-CassetePremiumOneRadio.desc }"
   components:
@@ -1860,7 +1860,7 @@
 - type: entity
   parent: BaseItem
   id: CassetePremiumSixRadio
-  suffix: Stalker, cassette (Scriptonite — again people will go) # Zona14: Stalker, кассета (Скриптонит — снова люди пойдут)
+  suffix: Stalker, cassette (Scriptonite — again people will go) # Zona14: Stalker, cassette (Scriptonite - People Will Go Again)
   name: Cassette "Scriptonite - People Will Go Again"
   description: "{ ent-CassetePremiumOneRadio.desc }"
   components:
@@ -1878,7 +1878,7 @@
 - type: entity
   parent: BaseItem
   id: CassetePremiumSevenRadio
-  suffix: Stalker, cassette (Date — Caucasus) # Zona14: Stalker, кассета (Свидание — Кавказ)
+  suffix: Stalker, cassette (Date — Caucasus) # Zona14: Stalker, cassette (Date - Caucasus)
   name: cassette "Date - Caucasus"
   description: "{ ent-CassetePremiumOneRadio.desc }"
   components:
@@ -1896,7 +1896,7 @@
 - type: entity
   parent: BaseItem
   id: CassetePremiumEightRadio
-  suffix: Stalker, cassette (Mcht — Last snow) # Zona14: Stalker, кассета (Мчт — Последний снег)
+  suffix: Stalker, cassette (Mcht — Last snow) # Zona14: Stalker, cassette (Mcht - Last Snow)
   name: cassette "Mcht - The Last Snow"
   description: "{ ent-CassetePremiumOneRadio.desc }"
   components:
@@ -1914,7 +1914,7 @@
 - type: entity
   parent: BaseItem
   id: CassetePremiumNineRadio
-  suffix: Stalker, cassette (Makulatura — beach) # Zona14: Stalker, кассета (Макулатура — пляж)
+  suffix: Stalker, cassette (Makulatura — beach) # Zona14: Stalker, cassette (Makulatura - Beach)
   name: cassette "Wastepaper - Beach"
   description: "{ ent-CassetePremiumOneRadio.desc }"
   components:
@@ -1932,7 +1932,7 @@
 - type: entity
   parent: BaseItem
   id: CassetePremiumTenRadio
-  suffix: Stalker, cassette (Partizaneokolo — ardor yes torments) # Zona14: Stalker, кассета (Партизанеоколо — задор да изводы)
+  suffix: Stalker, cassette (Partizaneokolo — ardor yes torments) # Zona14: Stalker, cassette (Partizaneokolo - Zest and Torments)
   name: cassette "Partizaneokolo - zador da izvody"
   description: "{ ent-CassetePremiumOneRadio.desc }"
   components:
@@ -1950,7 +1950,7 @@
 - type: entity
   parent: BaseItem
   id: CassetePremiumElevenRadio
-  suffix: Stalker, cassette (Kiss another — Dorn) # Zona14: Stalker, кассета (Целовать другого — Дорн)
+  suffix: Stalker, cassette (Kiss another — Dorn) # Zona14: Stalker, cassette (Kissing Another - Dorn)
   name: Cassette "Kissing Another - Dorn"
   description: "{ ent-CassetePremiumOneRadio.desc }"
   components:
@@ -1968,7 +1968,7 @@
 - type: entity
   parent: BaseItem
   id: CassetePremiumTwelveRadio
-  suffix: Stalker, cassette (Uniqueness - galafo) # Zona14: Stalker, кассета (Незаурядность - galafo)
+  suffix: Stalker, cassette (Uniqueness - galafo) # Zona14: Stalker, cassette (Uniqueness - galafo)
   name: cassette "Uncommonness - galafo"
   description: "{ ent-CassetePremiumOneRadio.desc }"
   components:
@@ -1986,7 +1986,7 @@
 - type: entity
   parent: BaseItem
   id: CassetePremiumThirteenRadio
-  suffix: Stalker, cassette (Summer give me nights — Omonra) # Zona14: Stalker, кассета (Лето подари мне ночи — омонра)
+  suffix: Stalker, cassette (Summer give me nights — Omonra) # Zona14: Stalker, cassette (Summer Give Me Nights - Omonra)
   name: cassette "Summer give me nights - omonra"
   description: "{ ent-CassetePremiumOneRadio.desc }"
   components:
@@ -2004,7 +2004,7 @@
 - type: entity
   parent: BaseItem
   id: CassetePremiumFourteenRadio
-  suffix: Stalker, cassette (Nocturne — Husky) # Zona14: Stalker, кассета (Ноктюрн — хаски)
+  suffix: Stalker, cassette (Nocturne — Husky) # Zona14: Stalker, cassette (Nocturne - Husky)
   name: Cassette "Nocturne - Husky"
   description: "{ ent-CassetePremiumOneRadio.desc }"
   components:
@@ -2022,7 +2022,7 @@
 - type: entity
   parent: BaseItem
   id: CassetePremiumFifteenRadio
-  suffix: Stalker, cassette (all my fellas Frizk) # Zona14: Stalker, кассета (all my fellas Frizk)
+  suffix: Stalker, cassette (all my fellas Frizk) # Zona14: Stalker, cassette (all my fellas Frizk)
   name: '"all my fellas Frizk" cassette'
   description: "{ ent-CassetePremiumOneRadio.desc }"
   components:
@@ -2040,7 +2040,7 @@
 - type: entity
   parent: BaseItem
   id: CassetePremiumSixteenRadio
-  suffix: Stalker, cassette (Scriptonite some-what better me) # Zona14: Stalker, кассета (Скриптонит кое-что лучше меня)
+  suffix: Stalker, cassette (Scriptonite some-what better me) # Zona14: Stalker, cassette (Scriptonite - Something Better Than Me)
   name: Cassette "Scriptonite Something Better Than Me"
   description: "{ ent-CassetePremiumOneRadio.desc }"
   components:
@@ -2058,7 +2058,7 @@
 - type: entity
   parent: BaseItem
   id: CassetePremiumSeventeenRadio
-  suffix: Stalker, cassette (Boombox - summer rain) # Zona14: Stalker, кассета (Бумбокс - летний дождь)
+  suffix: Stalker, cassette (Boombox - summer rain) # Zona14: Stalker, cassette (Boombox - Summer Rain)
   name: cassette "Boombox - summer rain"
   description: "{ ent-CassetePremiumOneRadio.desc }"
   components:
@@ -2076,7 +2076,7 @@
 - type: entity
   parent: BaseItem
   id: CassetePremiumEighteenRadio
-  suffix: Stalker, cassette (chris de burgh — moonlight and vodka) # Zona14: Stalker, кассета (chris de burgh — moonlight and vodka)
+  suffix: Stalker, cassette (chris de burgh — moonlight and vodka) # Zona14: Stalker, cassette (chris de burgh — moonlight and vodka)
   name: cassette "chris de burgh - moonlight and vodka"
   description: "{ ent-CassetePremiumOneRadio.desc }"
   components:
@@ -2094,7 +2094,7 @@
 - type: entity
   parent: BaseItem
   id: CassetePremiumNineteenRadio
-  suffix: Stalker, cassette (partizaneokolo - Slavic ghetto) # Zona14: Stalker, кассета (партизанеоколо - славянское гетто)
+  suffix: Stalker, cassette (partizaneokolo - Slavic ghetto) # Zona14: Stalker, cassette (Partizaneokolo - Slavic Ghetto)
   name: cassette "partisanneokolo - slavic ghetto"
   description: "{ ent-CassetePremiumOneRadio.desc }"
   components:
@@ -2112,7 +2112,7 @@
 - type: entity
   parent: BaseItem
   id: CassetePremiumTwentyRadio
-  suffix: Stalker, cassette (galafo - what maybe be better) # Zona14: Stalker, кассета (galafo - что может быть лучше)
+  suffix: Stalker, cassette (galafo - what maybe be better) # Zona14: Stalker, cassette (galafo - What Could Be Better)
   name: cassette "galafo - what could be better"
   description: "{ ent-CassetePremiumOneRadio.desc }"
   components:
@@ -2130,7 +2130,7 @@
 - type: entity
   parent: BaseItem
   id: CassetePremiumTwentyOneRadio
-  suffix: Stalker, cassette (degrees sweeps) # Zona14: Stalker, кассета (градусы заметает)
+  suffix: Stalker, cassette (degrees sweeps) # Zona14: Stalker, cassette (Gradusy - Sweeping)
   name: cassette "sweeps degrees"
   description: "{ ent-CassetePremiumOneRadio.desc }"
   components:
@@ -2148,7 +2148,7 @@
 - type: entity
   parent: BaseItem
   id: CassetePremiumTwentyTwoRadio
-  suffix: Stalker, cassette (central cee obsessed with you) # Zona14: Stalker, кассета (central cee obsessed with you)
+  suffix: Stalker, cassette (central cee obsessed with you) # Zona14: Stalker, cassette (central cee obsessed with you)
   name: cassette "central cee obsessed with you"
   description: "{ ent-CassetePremiumOneRadio.desc }"
   components:
@@ -2166,7 +2166,7 @@
 - type: entity
   parent: BaseItem
   id: CassetePremiumTwentyThreeRadio
-  suffix: Stalker, cassette (Silhouettes) # Zona14: Stalker, кассета (Силуэты)
+  suffix: Stalker, cassette (Silhouettes) # Zona14: Stalker, cassette (Silhouettes)
   name: Cassette "Silhouettes"
   description: An old, tattered cassette tape. Presumably it contains a song. There is some illegible writing on the front of the tape. Custom made for Neko-Gekko.
   components:
@@ -2184,7 +2184,7 @@
 - type: entity
   parent: BaseItem
   id: CassetePremiumTwentyFourRadio
-  suffix: Stalker, cassette (I'll remember) # Zona14: Stalker, кассета (Запомню)
+  suffix: Stalker, cassette (I'll remember) # Zona14: Stalker, cassette (I Will Remember)
   name: "\"I'll Remember\" cassette"
   description: "{ ent-CassetePremiumTwentyThreeRadio.desc }"
   components:
@@ -2202,7 +2202,7 @@
 - type: entity
   parent: BaseItem
   id: CassetePremiumTwentyFiveRadio
-  suffix: "Stalker, cassette (Low Roar - \"I'll Keep Coming\")" # Zona14: "Stalker, кассета (Low Roar - \"I'll Keep Coming\")"
+  suffix: "Stalker, cassette (Low Roar - \"I'll Keep Coming\")" # Zona14: "Stalker, cassette (Low Roar - \"I'll Keep Coming\")"
   name: "\"Low Roar - I'll Keep Coming\" cassette"
   description: "{ ent-CassetePremiumTwentyThreeRadio.desc }"
   components:
@@ -2255,7 +2255,7 @@
 - type: entity
   parent: CasetsConBag
   id: CasetsConBagFilled
-  suffix: Stalker, Contributors, Full # Zona14: Stalker, Contributors, Полный
+  suffix: Stalker, Contributors, Full # Zona14: Stalker, Contributors, Full
   components:
     - type: StorageFill
       contents:
@@ -2317,7 +2317,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteChinaContributorRadio
-  suffix: Stalker, cassette, (Red Sun In The Sky) # Zona14: Stalker, кассета, (Red Sun In The Sky)
+  suffix: Stalker, cassette, (Red Sun In The Sky) # Zona14: Stalker, cassette, (Red Sun In The Sky)
   name: '"Red Sun In The Sky" cassette'
   description: "{ ent-CasseteArstotzkaOneContributorRadio.desc }"
   components:
@@ -2334,7 +2334,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteUSSRContributorRadio
-  suffix: Stalker, cassette, (Soviet March 2) # Zona14: Stalker, кассета, (Советский марш 2)
+  suffix: Stalker, cassette, (Soviet March 2) # Zona14: Stalker, cassette, (Soviet March 2)
   name: cassette "Soviet March 2"
   description: "{ ent-CasseteArstotzkaOneContributorRadio.desc }"
   components:
@@ -2351,7 +2351,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteAction1ContributorRadio
-  suffix: Stalker, cassette, (Action 1) # Zona14: Stalker, кассета, (Экшн 1)
+  suffix: Stalker, cassette, (Action 1) # Zona14: Stalker, cassette, (Action 1)
   name: Cassette "Unknown Action"
   description: Brand new cassette tape. Presumably, it has a song recorded on it. On the front of the tape is an encrypted note Contributor
   components:
@@ -2368,7 +2368,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteGeneralReleaseContributorRadio
-  suffix: Stalker, cassette, (General Release) # Zona14: Stalker, кассета, (General Release)
+  suffix: Stalker, cassette, (General Release) # Zona14: Stalker, cassette, (General Release)
   name: '"General Release" cassette'
   description: "{ ent-CasseteArstotzkaOneContributorRadio.desc }"
   components:
@@ -2385,7 +2385,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteGrooveDealersContributorRadio
-  suffix: Stalker, cassette, (Groove Dealers Salam 1996) # Zona14: Stalker, кассета, (Groove Dealers Salam 1996)
+  suffix: Stalker, cassette, (Groove Dealers Salam 1996) # Zona14: Stalker, cassette, (Groove Dealers Salam 1996)
   name: '"Salam 1996" cassette'
   description: "{ ent-CasseteArstotzkaOneContributorRadio.desc }"
   components:
@@ -2402,7 +2402,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteInTheHouseInAHeartbeatContributorRadio
-  suffix: Stalker, cassette, (In The House In A Heartbeat) # Zona14: Stalker, кассета, (In The House In A Heartbeat)
+  suffix: Stalker, cassette, (In The House In A Heartbeat) # Zona14: Stalker, cassette, (In The House In A Heartbeat)
   name: '"In The House In A Heartbeat" cassette'
   description: "{ ent-CasseteArstotzkaOneContributorRadio.desc }"
   components:
@@ -2419,7 +2419,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteGambit
-  suffix: Stalker, cassette, (Gambit "Bayu Bai") # Zona14: Stalker, кассета, (Gambit "Баю Бай")
+  suffix: Stalker, cassette, (Gambit "Bayu Bai") # Zona14: Stalker, cassette, (Gambit "Lullaby")
   name: cassette "Gambit Bayu Bay"
   description: Sometimes, music can make you cry.
   components:
@@ -2436,7 +2436,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteAtomicHeartKomarovoContributorRadio
-  suffix: Stalker, cassette, (Atomic Heart) # Zona14: Stalker, кассета, (Atomic Heart)
+  suffix: Stalker, cassette, (Atomic Heart) # Zona14: Stalker, cassette, (Atomic Heart)
   name: cassette "Atomic Heart Komarovo"
   description: "{ ent-CasseteArstotzkaOneContributorRadio.desc }"
   components:
@@ -2453,7 +2453,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteLinkinParkIntheEndContributorRadio
-  suffix: Stalker, cassette, (Linkin Park In the End) # Zona14: Stalker, кассета, (Linkin Park In the End)
+  suffix: Stalker, cassette, (Linkin Park In the End) # Zona14: Stalker, cassette, (Linkin Park In the End)
   name: '"In the End" cassette'
   description: "{ ent-CasseteArstotzkaOneContributorRadio.desc }"
   components:
@@ -2471,7 +2471,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteTheWindofFjordsContributorRadio
-  suffix: Stalker, cassette, (The Windof Fjords) # Zona14: Stalker, кассета, (The Windof Fjords)
+  suffix: Stalker, cassette, (The Windof Fjords) # Zona14: Stalker, cassette, (The Windof Fjords)
   name: '"The Windof Fjords" cassette'
   description: "{ ent-CasseteArstotzkaOneContributorRadio.desc }"
   components:
@@ -2489,7 +2489,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteNapoleonContributorRadio
-  suffix: Stalker, cassette, (Amour plastique Napoleon) # Zona14: Stalker, кассета, (Amour plastique Napoleon)
+  suffix: Stalker, cassette, (Amour plastique Napoleon) # Zona14: Stalker, cassette, (Amour plastique Napoleon)
   name: cassette "Amour plastique Napoleon"
   description: "{ ent-CasseteArstotzkaOneContributorRadio.desc }"
   components:
@@ -2506,7 +2506,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteFDJContributorRadio
-  suffix: Stalker, cassette, (FDJ) # Zona14: Stalker, кассета, (FDJ)
+  suffix: Stalker, cassette, (FDJ) # Zona14: Stalker, cassette, (FDJ)
   name: Cassette "FDJ"
   description: "{ ent-CasseteArstotzkaOneContributorRadio.desc }"
   components:
@@ -2524,7 +2524,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteCounterStrikeContributorRadio
-  suffix: Stalker, cassette, (Counter-Strike) # Zona14: Stalker, кассета, (Counter-Strike)
+  suffix: Stalker, cassette, (Counter-Strike) # Zona14: Stalker, cassette, (Counter-Strike)
   name: '"Counter-Strike" cassette'
   description: "{ ent-CasseteArstotzkaOneContributorRadio.desc }"
   components:
@@ -2542,7 +2542,7 @@
 - type: entity
   parent: BaseItem
   id: CassetePrussiaGloryContributorRadio
-  suffix: Stalker, cassette, (Preußens Gloria) # Zona14: Stalker, кассета, (Preußens Gloria)
+  suffix: Stalker, cassette, (Preußens Gloria) # Zona14: Stalker, cassette, (Preußens Gloria)
   name: cassette "Preußens Gloria"
   description: "{ ent-CasseteArstotzkaOneContributorRadio.desc }"
   components:
@@ -2559,7 +2559,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteGimnUSSRContributorRadio
-  suffix: Stalker, cassette, (Anthem USSR) # Zona14: Stalker, кассета, (Гимн СССР)
+  suffix: Stalker, cassette, (Anthem USSR) # Zona14: Stalker, cassette, (USSR Anthem)
   name: cassette "USSR Anthem"
   description: "{ ent-CasseteArstotzkaOneContributorRadio.desc }"
   components:
@@ -2577,7 +2577,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteJusttheTwoofUsAICoverContributorRadio
-  suffix: Stalker, cassette, (Hitler AI Cover) # Zona14: Stalker, кассета, (Hitler AI Cover)
+  suffix: Stalker, cassette, (Hitler AI Cover) # Zona14: Stalker, cassette, (Hitler AI Cover)
   name: cassette "Just the Two of Us?"
   description: "{ ent-CasseteArstotzkaOneContributorRadio.desc }"
   components:
@@ -2595,7 +2595,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteBattotaiContributorRadio
-  suffix: Stalker, cassette, (Battotai) # Zona14: Stalker, кассета, (Battotai)
+  suffix: Stalker, cassette, (Battotai) # Zona14: Stalker, cassette, (Battotai)
   name: cassette "Battotai"
   description: "{ ent-CasseteArstotzkaOneContributorRadio.desc }"
   components:
@@ -2613,7 +2613,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteAfterDarkContributorRadio
-  suffix: Stalker, cassette, (After Dark) # Zona14: Stalker, кассета, (After Dark)
+  suffix: Stalker, cassette, (After Dark) # Zona14: Stalker, cassette, (After Dark)
   name: '"After Dark" cassette'
   description: "{ ent-CasseteArstotzkaOneContributorRadio.desc }"
   components:
@@ -2631,7 +2631,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteLittleDarkAgeContributorRadio
-  suffix: Stalker, cassette, (Little Dark Age) # Zona14: Stalker, кассета, (Little Dark Age)
+  suffix: Stalker, cassette, (Little Dark Age) # Zona14: Stalker, cassette, (Little Dark Age)
   name: '"Little Dark Age" cassette'
   description: "{ ent-CasseteArstotzkaOneContributorRadio.desc }"
   components:
@@ -2649,7 +2649,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteYaochenustalContributorRadio
-  suffix: Stalker, cassette, (I am very tired) # Zona14: Stalker, кассета, (Я очень устал)
+  suffix: Stalker, cassette, (I am very tired) # Zona14: Stalker, cassette, (I Am Very Tired)
   name: "cassette \"I'm very tired\""
   description: "{ ent-CasseteArstotzkaOneContributorRadio.desc }"
   components:
@@ -2667,7 +2667,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteFluxxwaveContributorRadio
-  suffix: Stalker, cassette, (Fluxxwave) # Zona14: Stalker, кассета, (Fluxxwave)
+  suffix: Stalker, cassette, (Fluxxwave) # Zona14: Stalker, cassette, (Fluxxwave)
   name: cassette "Fluxxwave"
   description: "{ ent-CasseteArstotzkaOneContributorRadio.desc }"
   components:
@@ -2685,7 +2685,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteOtmenyajContributorRadio
-  suffix: Stalker, cassette, (Cancel) # Zona14: Stalker, кассета, (Отменяй)
+  suffix: Stalker, cassette, (Cancel) # Zona14: Stalker, cassette, (Cancel)
   name: cassette "Otmenyaj"
   description: "{ ent-CasseteArstotzkaOneContributorRadio.desc }"
   components:
@@ -2703,7 +2703,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteOstrovContributorRadio
-  suffix: Stalker, cassette, (We - Island) # Zona14: Stalker, кассета, (Мы - Остров)
+  suffix: Stalker, cassette, (We - Island) # Zona14: Stalker, cassette, (We Are the Island)
   name: Cassette "We are an Island"
   description: "{ ent-CasseteArstotzkaOneContributorRadio.desc }"
   components:
@@ -2720,7 +2720,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteS1keContributorRadio
-  suffix: Stalker, cassette, (S1KE) # Zona14: Stalker, кассета, (S1KE)
+  suffix: Stalker, cassette, (S1KE) # Zona14: Stalker, cassette, (S1KE)
   name: cassette "S1KE"
   description: "{ ent-CasseteArstotzkaOneContributorRadio.desc }"
   components:
@@ -2738,7 +2738,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteSHADOWContributorRadio
-  suffix: Stalker, cassette, (SHADOW) # Zona14: Stalker, кассета, (SHADOW)
+  suffix: Stalker, cassette, (SHADOW) # Zona14: Stalker, cassette, (SHADOW)
   name: cassette "SHADOW"
   description: "{ ent-CasseteArstotzkaOneContributorRadio.desc }"
   components:
@@ -2756,7 +2756,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteTokyoRainContributorRadio
-  suffix: Stalker, cassette, (Tokyo Rain) # Zona14: Stalker, кассета, (Tokyo Rain)
+  suffix: Stalker, cassette, (Tokyo Rain) # Zona14: Stalker, cassette, (Tokyo Rain)
   name: '"Tokyo Rain" cassette'
   description: "{ ent-CasseteArstotzkaOneContributorRadio.desc }"
   components:
@@ -2774,7 +2774,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteFunkedUpContributorRadio
-  suffix: Stalker, cassette, (Funked Up) # Zona14: Stalker, кассета, (Funked Up)
+  suffix: Stalker, cassette, (Funked Up) # Zona14: Stalker, cassette, (Funked Up)
   name: '"Funked Up" cassette'
   description: "{ ent-CasseteArstotzkaOneContributorRadio.desc }"
   components:
@@ -2792,7 +2792,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteLoseMyMindInHysteriaContributorRadio
-  suffix: Stalker, cassette, (Lose My Mind In Hysteria) # Zona14: Stalker, кассета, (Lose My Mind In Hysteria)
+  suffix: Stalker, cassette, (Lose My Mind In Hysteria) # Zona14: Stalker, cassette, (Lose My Mind In Hysteria)
   name: '"Lose My Mind In Hysteria" cassette'
   description: "{ ent-CasseteArstotzkaOneContributorRadio.desc }"
   components:
@@ -2810,7 +2810,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteOurBenefactorsContributorRadio
-  suffix: Stalker, cassette, (Our Benefactors) # Zona14: Stalker, кассета, (Our Benefactors)
+  suffix: Stalker, cassette, (Our Benefactors) # Zona14: Stalker, cassette, (Our Benefactors)
   name: '"Our Benefactors" cassette'
   description: "{ ent-CasseteArstotzkaOneContributorRadio.desc }"
   components:
@@ -2828,7 +2828,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteHLCombineContributorRadio
-  suffix: Stalker, cassette, (Combine Harvester) # Zona14: Stalker, кассета, (Combine Harvester)
+  suffix: Stalker, cassette, (Combine Harvester) # Zona14: Stalker, cassette, (Combine Harvester)
   name: cassette "Combine Harvester"
   description: "{ ent-CasseteArstotzkaOneContributorRadio.desc }"
   components:
@@ -2846,7 +2846,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteTriageAtDawnContributorRadio
-  suffix: Stalker, cassette, (Triage at Dawn) # Zona14: Stalker, кассета, (Triage at Dawn)
+  suffix: Stalker, cassette, (Triage at Dawn) # Zona14: Stalker, cassette, (Triage at Dawn)
   name: '"Triage at Dawn" cassette'
   description: "{ ent-CasseteArstotzkaOneContributorRadio.desc }"
   components:
@@ -2864,7 +2864,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteCPViolationContributorRadio
-  suffix: Stalker, cassette, (CP Violation) # Zona14: Stalker, кассета, (CP Violation)
+  suffix: Stalker, cassette, (CP Violation) # Zona14: Stalker, cassette, (CP Violation)
   name: '"CP Violation" cassette'
   description: "{ ent-CasseteArstotzkaOneContributorRadio.desc }"
   components:
@@ -2882,7 +2882,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteYAuyduContributorRadio
-  suffix: Stalker, cassette, (I will leave) # Zona14: Stalker, кассета, (Я уйду)
+  suffix: Stalker, cassette, (I will leave) # Zona14: Stalker, cassette, (I Will Leave)
   name: "cassette \"I'll leave\""
   description: "{ ent-CasseteArstotzkaOneContributorRadio.desc }"
   components:
@@ -2899,7 +2899,7 @@
 - type: entity
   parent: BaseItem
   id: CassetePogasliSvechiContributorRadio
-  suffix: Stalker, cassette, (Went out candles) # Zona14: Stalker, кассета, (Погасли свечи)
+  suffix: Stalker, cassette, (Went out candles) # Zona14: Stalker, cassette, (Candles Went Out)
   name: cassette "PogasliSvechi"
   description: "{ ent-CasseteArstotzkaOneContributorRadio.desc }"
   components:
@@ -2916,7 +2916,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteMamaPriyezzhayIMenyaZaberiContributorRadio
-  suffix: Stalker, cassette, (Mom come and me take) # Zona14: Stalker, кассета, (Мама приезжай и меня забери)
+  suffix: Stalker, cassette, (Mom come and me take) # Zona14: Stalker, cassette, (Mom Come and Take Me)
   name: cassette "Mama come and take me"
   description: "{ ent-CasseteArstotzkaOneContributorRadio.desc }"
   components:
@@ -2933,7 +2933,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteGSN1ContributorRadio
-  suffix: Stalker, cassette, (GSN - And I higher will roll up sleeves) # Zona14: Stalker, кассета, (ГСН - А я повыше закатаю рукава)
+  suffix: Stalker, cassette, (GSN - And I higher will roll up sleeves) # Zona14: Stalker, cassette, (GSN - I Will Roll Up My Sleeves Higher)
   name: "cassette \"GSN - And I'll roll up my sleeves higher\""
   description: "{ ent-CasseteArstotzkaOneContributorRadio.desc }"
   components:
@@ -2950,7 +2950,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteGSN2ContributorRadio
-  suffix: Stalker, cassette, (GSN - Russian Spetsnaz) # Zona14: Stalker, кассета, (ГСН - Российский Спецназ)
+  suffix: Stalker, cassette, (GSN - Russian Spetsnaz) # Zona14: Stalker, cassette, (GSN - Russian Spetsnaz)
   name: cassette "GSN - Russian Special Forces"
   description: "{ ent-CasseteArstotzkaOneContributorRadio.desc }"
   components:
@@ -2967,7 +2967,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteGeranContributorRadio
-  suffix: Stalker, cassette, (Blooms geranium) # Zona14: Stalker, кассета, (Цветёт герань)
+  suffix: Stalker, cassette, (Blooms geranium) # Zona14: Stalker, cassette, (Geranium Blooms)
   name: Cassette "Geranium Blooms"
   description: "{ ent-CasseteArstotzkaOneContributorRadio.desc }"
   components:
@@ -2985,7 +2985,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteIsolationContributorRadio
-  suffix: Stalker, cassette, (Isolation) # Zona14: Stalker, кассета, (Isolation)
+  suffix: Stalker, cassette, (Isolation) # Zona14: Stalker, cassette, (Isolation)
   name: '"Isolation" cassette'
   description: "{ ent-CasseteArstotzkaOneContributorRadio.desc }"
   components:
@@ -3003,7 +3003,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteXDContributorRadio
-  suffix: Stalker, cassette, (XD Meme) # Zona14: Stalker, кассета, (XD Meme)
+  suffix: Stalker, cassette, (XD Meme) # Zona14: Stalker, cassette, (XD Meme)
   name: cassette "XD"
   description: "{ ent-CasseteArstotzkaOneContributorRadio.desc }"
   components:
@@ -3021,7 +3021,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteHaydiCihadaContributorRadio
-  suffix: Stalker, cassette, (Haydi Cihada) # Zona14: Stalker, кассета, (Haydi Cihada)
+  suffix: Stalker, cassette, (Haydi Cihada) # Zona14: Stalker, cassette, (Haydi Cihada)
   name: '"Haydi Cihada" cassette'
   description: "{ ent-CasseteArstotzkaOneContributorRadio.desc }"
   components:
@@ -3039,7 +3039,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteitaggiahContributorRadio
-  suffix: Stalker, cassette, (itaggiah) # Zona14: Stalker, кассета, (itaggiah)
+  suffix: Stalker, cassette, (itaggiah) # Zona14: Stalker, cassette, (itaggiah)
   name: cassette "itaggiah"
   description: "{ ent-CasseteArstotzkaOneContributorRadio.desc }"
   components:
@@ -3057,7 +3057,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteHorrorContributorRadio
-  suffix: Stalker, cassette, (Horror) # Zona14: Stalker, кассета, (Horror)
+  suffix: Stalker, cassette, (Horror) # Zona14: Stalker, cassette, (Horror)
   name: cassette "???"
   description: "{ ent-CasseteArstotzkaOneContributorRadio.desc }"
   components:
@@ -3075,7 +3075,7 @@
 - type: entity
   parent: BaseItem
   id: Cassete9mmContributorRadio
-  suffix: Stalker, cassette, (9mm) # Zona14: Stalker, кассета, (9mm)
+  suffix: Stalker, cassette, (9mm) # Zona14: Stalker, cassette, (9mm)
   name: cassette "9mm"
   description: "{ ent-CasseteArstotzkaOneContributorRadio.desc }"
   components:
@@ -3093,7 +3093,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteHelpUserlfContributorRadio
-  suffix: Stalker, cassette, (help_userlf) # Zona14: Stalker, кассета, (help_userlf)
+  suffix: Stalker, cassette, (help_userlf) # Zona14: Stalker, cassette, (help_userlf)
   name: cassette "help_userlf"
   description: "{ ent-CasseteArstotzkaOneContributorRadio.desc }"
   components:
@@ -3111,7 +3111,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteEcstacyContributorRadio
-  suffix: Stalker, cassette, (ecstacy) # Zona14: Stalker, кассета, (ecstacy)
+  suffix: Stalker, cassette, (ecstacy) # Zona14: Stalker, cassette, (ecstacy)
   name: cassette "ecstacy"
   description: "{ ent-CasseteArstotzkaOneContributorRadio.desc }"
   components:
@@ -3129,7 +3129,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteAlliWantIsYouContributorRadio
-  suffix: Stalker, cassette, (all i want is you) # Zona14: Stalker, кассета, (all i want is you)
+  suffix: Stalker, cassette, (all i want is you) # Zona14: Stalker, cassette, (all i want is you)
   name: cassette "all i want is you"
   description: "{ ent-CasseteArstotzkaOneContributorRadio.desc }"
   components:
@@ -3147,7 +3147,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteStayWithMeContributorRadio
-  suffix: Stalker, cassette, (Stay With Me) # Zona14: Stalker, кассета, (Stay With Me)
+  suffix: Stalker, cassette, (Stay With Me) # Zona14: Stalker, cassette, (Stay With Me)
   name: '"Stay With Me" cassette'
   description: "{ ent-CasseteArstotzkaOneContributorRadio.desc }"
   components:
@@ -3165,7 +3165,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteInHeatXBloodPopContributorRadio
-  suffix: Stalker, cassette, (In Heat X BloodPop!) # Zona14: Stalker, кассета, (In Heat X BloodPop!)
+  suffix: Stalker, cassette, (In Heat X BloodPop!) # Zona14: Stalker, cassette, (In Heat X BloodPop!)
   name: cassette "In Heat X BloodPop!"
   description: "{ ent-CasseteArstotzkaOneContributorRadio.desc }"
   components:
@@ -3183,7 +3183,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteUntrustUsContributorRadio
-  suffix: Stalker, cassette, (Untrust Us) # Zona14: Stalker, кассета, (Untrust Us)
+  suffix: Stalker, cassette, (Untrust Us) # Zona14: Stalker, cassette, (Untrust Us)
   name: cassette "Untrust Us"
   description: "{ ent-CasseteArstotzkaOneContributorRadio.desc }"
   components:
@@ -3201,7 +3201,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteFUNKESTRANHOContributorRadio
-  suffix: Stalker, cassette, (FUNK ESTRANHO) # Zona14: Stalker, кассета, (FUNK ESTRANHO)
+  suffix: Stalker, cassette, (FUNK ESTRANHO) # Zona14: Stalker, cassette, (FUNK ESTRANHO)
   name: cassette "FUNK ESTRANHO"
   description: "{ ent-CasseteArstotzkaOneContributorRadio.desc }"
   components:
@@ -3219,7 +3219,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteCUTEDEPRESSEDContributorRadio
-  suffix: Stalker, cassette, (CUTE DEPRESSED) # Zona14: Stalker, кассета, (CUTE DEPRESSED)
+  suffix: Stalker, cassette, (CUTE DEPRESSED) # Zona14: Stalker, cassette, (CUTE DEPRESSED)
   name: cassette "CUTE DEPRESSED"
   description: "{ ent-CasseteArstotzkaOneContributorRadio.desc }"
   components:
@@ -3237,7 +3237,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteCUTEDEPRESSEDLOWEDContributorRadio
-  suffix: Stalker, cassette, (CUTE DEPRESSED SLOWED) # Zona14: Stalker, кассета, (CUTE DEPRESSED SLOWED)
+  suffix: Stalker, cassette, (CUTE DEPRESSED SLOWED) # Zona14: Stalker, cassette, (CUTE DEPRESSED SLOWED)
   name: cassette "CUTE DEPRESSED SLOWED"
   description: "{ ent-CasseteArstotzkaOneContributorRadio.desc }"
   components:
@@ -3255,7 +3255,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteParentIssuesContributorRadio
-  suffix: Stalker, cassette, (Parent issues) # Zona14: Stalker, кассета, (Parent issues)
+  suffix: Stalker, cassette, (Parent issues) # Zona14: Stalker, cassette, (Parent issues)
   name: '"Parent issues" cassette'
   description: "{ ent-CasseteArstotzkaOneContributorRadio.desc }"
   components:
@@ -3273,7 +3273,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteSPEEDISLIFEContributorRadio
-  suffix: Stalker, cassette, (SPEED IS LIFE) # Zona14: Stalker, кассета, (SPEED IS LIFE)
+  suffix: Stalker, cassette, (SPEED IS LIFE) # Zona14: Stalker, cassette, (SPEED IS LIFE)
   name: '"SPEED IS LIFE" cassette'
   description: "{ ent-CasseteArstotzkaOneContributorRadio.desc }"
   components:
@@ -3290,7 +3290,7 @@
 - type: entity
   parent: BaseItem
   id: CassetevietnamContributorRadio
-  suffix: Stalker, cassette, (Fortunate Son) # Zona14: Stalker, кассета, (Fortunate Son)
+  suffix: Stalker, cassette, (Fortunate Son) # Zona14: Stalker, cassette, (Fortunate Son)
   name: '"Fortunate Son" cassette'
   description: "{ ent-CasseteArstotzkaOneContributorRadio.desc }"
   components:
@@ -3307,7 +3307,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteHerzContributorRadio
-  suffix: Stalker, cassette, (Herz) # Zona14: Stalker, кассета, (Herz)
+  suffix: Stalker, cassette, (Herz) # Zona14: Stalker, cassette, (Herz)
   name: Cassette "Herz"
   description: A brand new cassette tape. Presumably, it contains a song. The front of the tape has an encrypted message Contributor
   components:
@@ -3324,7 +3324,7 @@
 - type: entity
   parent: BaseItem
   id: CasseteJewishTailorContributorRadio
-  suffix: Stalker, cassette, (Jewish tailor) # Zona14: Stalker, кассета, (Еврейский портной)
+  suffix: Stalker, cassette, (Jewish tailor) # Zona14: Stalker, cassette, (Jewish Tailor)
   name: Cassette "Jewish Tailor"
   description: "{ ent-CasseteHerzContributorRadio.desc }"
   components:
@@ -3339,13 +3339,13 @@
       sprite: _Stalker/Objects/Misc/casete.rsi
       state: c6
 
-# Zona14: СТАТИЧЕСКОЕ РАДИО
+# Zona14: STATIC RADIO
 
 - type: entity
   id: RadioBaseStalker
   parent: BaseStructure
   name: radio
-  suffix: Stalker, without music # Zona14: Stalker, без музыки
+  suffix: Stalker, without music # Zona14: Stalker, without music
   description: The first wireless communication. The carrier of the signal is radio waves propagating in space.
   abstract: true
   components:
@@ -3398,7 +3398,7 @@
 - type: entity
   id: RadioStalkerMig
   parent: RadioBaseStalker
-  suffix: Stalker, there is only moment # Zona14: Stalker, есть только миг
+  suffix: Stalker, there is only moment # Zona14: Stalker, there is only a moment
   components:
   - type: AmbientSound
     enabled: true
@@ -3408,7 +3408,7 @@
 - type: entity
   id: RadioStandStalkerBandits
   parent: RadioBaseStalker
-  suffix: Stalker, bandits # Zona14: Stalker, бандиты
+  suffix: Stalker, bandits # Zona14: Stalker, Bandits
   components:
   - type: AmbientSound
     volume: -8
@@ -3419,7 +3419,7 @@
 - type: entity
   id: RadioStandStalkerBanditsDistant
   parent: RadioBaseStalker
-  suffix: Stalker, bandits 20 tiles # Zona14: Stalker, бандиты 20 тайлов
+  suffix: Stalker, bandits 20 tiles # Zona14: Stalker, Bandits 20 tiles
   components:
   - type: AmbientSound
     volume: -8
@@ -3431,7 +3431,7 @@
 - type: entity
   id: RadioStandStalkerBarCHN
   parent: RadioBaseStalker
-  suffix: Stalker, bar clear sky # Zona14: Stalker, бар чистое небо
+  suffix: Stalker, bar clear sky # Zona14: Stalker, bar clear sky
   components:
   - type: AmbientSound
     volume: -6
@@ -3443,7 +3443,7 @@
 - type: entity
   id: RadioStandStalkerFreedom
   parent: RadioBaseStalker
-  suffix: Stalker, freedom # Zona14: Stalker, свобода
+  suffix: Stalker, freedom # Zona14: Stalker, Freedom
   components:
   - type: AmbientSound
     volume: -6
@@ -3454,7 +3454,7 @@
 - type: entity
   id: RadioStandStalkerBS
   parent: RadioBaseStalker
-  suffix: Stalker, black stalker # Zona14: Stalker, чёрный сталкер
+  suffix: Stalker, black stalker # Zona14: Stalker, black stalker
   components:
   - type: AmbientSound
     volume: -6
@@ -3465,7 +3465,7 @@
 - type: entity
   id: RadioStandStalkerFon1
   parent: RadioBaseStalker
-  suffix: Stalker, background 1 # Zona14: Stalker, фоновая 1
+  suffix: Stalker, background 1 # Zona14: Stalker, ambient 1
   components:
   - type: AmbientSound
     volume: -6
@@ -3476,7 +3476,7 @@
 - type: entity
   id: RadioStandStalkerFon2
   parent: RadioBaseStalker
-  suffix: Stalker, background 2 # Zona14: Stalker, фоновая 2
+  suffix: Stalker, background 2 # Zona14: Stalker, ambient 2
   components:
   - type: AmbientSound
     volume: -8
@@ -3487,7 +3487,7 @@
 - type: entity
   id: RadioStandStalkerBar100
   parent: RadioBaseStalker
-  suffix: Stalker, bar 100 X-ray # Zona14: Stalker, бар 100 рентген
+  suffix: Stalker, bar 100 X-ray # Zona14: Stalker, bar 100 roentgen
   components:
   - type: AmbientSound
     volume: -6
@@ -3509,7 +3509,7 @@
 - type: entity
   id: RadioStandStalkerGorod
   parent: RadioBaseStalker
-  suffix: Stalker, Cities which no # Zona14: Stalker, Города которого нет
+  suffix: Stalker, Cities which no # Zona14: Stalker, City That Does Not Exist
   components:
   - type: AmbientSound
     volume: 1
@@ -3520,7 +3520,7 @@
 - type: entity
   id: RadioStandStalkerArmy1
   parent: RadioBaseStalker
-  suffix: Stalker, military # Zona14: Stalker, военные
+  suffix: Stalker, military # Zona14: Stalker, Military
   components:
   - type: AmbientSound
     volume: 4
@@ -3531,7 +3531,7 @@
 - type: entity
   id: RadioStandStalkerArmy2
   parent: RadioBaseStalker
-  suffix: Stalker, military # Zona14: Stalker, военные
+  suffix: Stalker, military # Zona14: Stalker, Military
   components:
   - type: AmbientSound
     volume: 7
@@ -3542,7 +3542,7 @@
 - type: entity
   id: RadioStandStalkerArmy3
   parent: RadioBaseStalker
-  suffix: Stalker, military # Zona14: Stalker, военные
+  suffix: Stalker, military # Zona14: Stalker, Military
   components:
   - type: AmbientSound
     volume: 2
@@ -3553,7 +3553,7 @@
 - type: entity
   id: RadioStandStalkerUN1
   parent: RadioBaseStalker
-  suffix: Stalker, UN # Zona14: Stalker, оон
+  suffix: Stalker, UN # Zona14: Stalker, UN
   components:
   - type: AmbientSound
     volume: 9
@@ -3564,7 +3564,7 @@
 - type: entity
   id: RadioStandStalkerUN2
   parent: RadioBaseStalker
-  suffix: Stalker, UN # Zona14: Stalker, оон
+  suffix: Stalker, UN # Zona14: Stalker, UN
   components:
   - type: AmbientSound
     volume: -4
@@ -3575,7 +3575,7 @@
 - type: entity
   id: RadioStandStalkerUA
   parent: RadioBaseStalker
-  suffix: Stalker, Ukrainian theme # Zona14: Stalker, украинская тема
+  suffix: Stalker, Ukrainian theme # Zona14: Stalker, Ukrainian theme
   components:
   - type: AmbientSound
     volume: -5
@@ -3586,7 +3586,7 @@
 - type: entity
   id: RadioStandStalkerUADistand
   parent: RadioBaseStalker
-  suffix: Stalker, Ukrainian theme 20 tiles # Zona14: Stalker, украинская тема 20 тайлов
+  suffix: Stalker, Ukrainian theme 20 tiles # Zona14: Stalker, Ukrainian theme 20 tiles
   components:
   - type: AmbientSound
     volume: -5
@@ -3598,7 +3598,7 @@
 - type: entity
   id: RadioStandStalkerRUS1
   parent: RadioBaseStalker
-  suffix: Stalker, Russian theme 1 # Zona14: Stalker, российская тема 1
+  suffix: Stalker, Russian theme 1 # Zona14: Stalker, Russian theme 1
   components:
   - type: AmbientSound
     volume: -5
@@ -3609,7 +3609,7 @@
 - type: entity
   id: RadioStandStalkerRUS2
   parent: RadioBaseStalker
-  suffix: Stalker, Russian theme 2 # Zona14: Stalker, российская тема 2
+  suffix: Stalker, Russian theme 2 # Zona14: Stalker, Russian theme 2
   components:
   - type: AmbientSound
     volume: -5
@@ -3620,7 +3620,7 @@
 - type: entity
   id: RadioStandStalkerRUS2Distand
   parent: RadioBaseStalker
-  suffix: Stalker, Russian theme 2 20 tiles # Zona14: Stalker, российская тема 2 20 тайлов
+  suffix: Stalker, Russian theme 2 20 tiles # Zona14: Stalker, Russian theme 2 20 tiles
   components:
   - type: AmbientSound
     volume: -5
@@ -3632,7 +3632,7 @@
 - type: entity
   id: RadioStandStalkerIzvozchik
   parent: RadioBaseStalker
-  suffix: Stalker, Cabman # Zona14: Stalker, Извозчик
+  suffix: Stalker, Cabman # Zona14: Stalker, Coachman
   components:
   - type: AmbientSound
     volume: -4
@@ -3643,7 +3643,7 @@
 - type: entity
   id: RadioStandStalkerRenegats
   parent: RadioBaseStalker
-  suffix: Stalker, renegades # Zona14: Stalker, ренегаты
+  suffix: Stalker, renegades # Zona14: Stalker, Renegades
   components:
   - type: AmbientSound
     volume: 4
@@ -3654,7 +3654,7 @@
 - type: entity
   id: RadioStalkerUN3
   parent: RadioBaseStalker
-  suffix: Stalker, UN # Zona14: Stalker, оон
+  suffix: Stalker, UN # Zona14: Stalker, UN
   components:
   - type: AmbientSound
     volume: -8
@@ -3665,7 +3665,7 @@
 - type: entity
   id: RadioStalkerUN3Distand
   parent: RadioBaseStalker
-  suffix: Stalker, UN 20 tiles # Zona14: Stalker, оон 20 тайлов
+  suffix: Stalker, UN 20 tiles # Zona14: Stalker, UN 20 tiles
   components:
   - type: AmbientSound
     volume: -8
@@ -3736,7 +3736,7 @@
 - type: entity
   id: RadioStandStalkerSerafimDistant
   parent: RadioBaseStalker
-  suffix: Stalker, Serafim 10 tiles # Zona14: Stalker, Serafim 10 тайлов
+  suffix: Stalker, Serafim 10 tiles # Zona14: Stalker, Serafim 10 tiles
   components:
   - type: AmbientSound
     volume: -8
@@ -3750,7 +3750,7 @@
   id: RadioStalkerJukebox
   parent: BaseStructure
   name: Radio
-  suffix: Stalker, switchable # Zona14: Stalker, переключаемое
+  suffix: Stalker, switchable # Zona14: Stalker, switchable
   description: The first wireless communication. The carrier of the signal is radio waves propagating in space.
   components:
   - type: Sprite

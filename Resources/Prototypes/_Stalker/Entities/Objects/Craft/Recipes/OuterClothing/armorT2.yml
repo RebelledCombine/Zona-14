@@ -1,4 +1,4 @@
-# Zona14: Заря
+# Zona14: Zarya
 - type: craftRecipe
   id: recipeZaryaHunter
   resultProtos:
@@ -129,7 +129,7 @@
     ZoneArtifactPellicle:
       amount: 1
 
-# Zona14: Кольчуга
+# Zona14: Chainmail
 
 - type: craftRecipe
   id: newrecipeClothingOuterArmourJacketStalker

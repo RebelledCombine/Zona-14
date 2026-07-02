@@ -4,7 +4,7 @@
   id: StalkerShopGuide
   name: Vendomat, Guide
   description: How did a merchant fit in there?
-  suffix: ST, Mapping, Guide # Zona14: ST, Mapping, Проводник
+  suffix: ST, Mapping, Guide # Zona14: ST, Mapping, Guide
   components:
     - type: Sprite
       drawdepth: Objects

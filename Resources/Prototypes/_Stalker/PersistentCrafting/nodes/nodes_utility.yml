@@ -153,7 +153,7 @@
 
 # - type: persistentCraftNode
 #   id: PersistentCraftUtilityNodeBackpackCapaciousT5
-# Zona14: name: вместительный рюкзак T5
+# Zona14: name: spacious backpack T5
 #   description: persistent-craft-node-sub-recipe-desc
 #   branch: Utility
 #   cost: 320

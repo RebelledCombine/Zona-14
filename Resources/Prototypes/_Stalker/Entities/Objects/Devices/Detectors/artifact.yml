@@ -15,7 +15,7 @@
         map: ["base"]
         shader: unshaded
   - type: RepositoryItem
-    categoryName: Detectors # Zona14: Детекторы
+    categoryName: Detectors # Zona14: Detectors
   - type: Appearance
   - type: GenericVisualizer
     visuals:
@@ -266,7 +266,7 @@
     sound: /Audio/_Stalker/Items/Detectors/Artefacts/art_beep1.ogg
   - type: ZoneArtifactDetectorAngleIndicator
 
-# Zona14: Пиздец
+# Zona14: Nightmare
 - type: entity
   parent: ZoneArtifactBaseDetector
   id: ZoneArtifactDetectorDaDa

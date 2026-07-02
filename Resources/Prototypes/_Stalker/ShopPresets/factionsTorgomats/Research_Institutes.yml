@@ -257,7 +257,7 @@
       FoodTinMRE: 120
       DrinkLemonadehBottleFull: 50
       STFoodMeatSalami: 350
-  - name: shop-category-medicine # Zona14: 50% скидка от сталкеров
+  - name: shop-category-medicine # Zona14: 50% discount from stalkers
     priority: 10
     items:
       # Cheap

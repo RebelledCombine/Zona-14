@@ -4,7 +4,7 @@
   id: StalkerShopJaba
   name: Torgomat, Toads
   description: How did the merchant fit there?
-  suffix: ST, Mapping, Toads # Zona14: ST, Mapping, Жабы
+  suffix: ST, Mapping, Toads # Zona14: ST, Mapping, Toads
   components:
     - type: Sprite
       drawdepth: Objects

@@ -1,6 +1,6 @@
 # Zona14: translated Russian names/descriptions to English
 
-# Zona14: Плащ Севы
+# Zona14: Seva's cloak
 - type: entity
   parent: STClothingCapeBase
   id: STClothingCapeArmorChainmailSeva

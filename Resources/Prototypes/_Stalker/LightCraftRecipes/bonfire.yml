@@ -1,6 +1,6 @@
 # Zona14: translated Russian names/descriptions to English
 - type: entity
-  suffix: Stalker, craft # Zona14: Stalker, крафт
+  suffix: Stalker, craft # Zona14: Stalker, craft
   parent: BaseItem
   id: LogStalker
   name: Log
@@ -15,25 +15,25 @@
     - LogStalker
 
 - type: entity
-  suffix: Stalker, craft # Zona14: Stalker, крафт
+  suffix: Stalker, craft # Zona14: Stalker, craft
   parent: LogStalker
   id: STLogStalkerT1
   name: Pine log
 
 - type: entity
-  suffix: Stalker, craft # Zona14: Stalker, крафт
+  suffix: Stalker, craft # Zona14: Stalker, craft
   parent: LogStalker
   id: STLogStalkerT2
   name: Birch log
 
 - type: entity
-  suffix: Stalker, craft # Zona14: Stalker, крафт
+  suffix: Stalker, craft # Zona14: Stalker, craft
   parent: LogStalker
   id: STLogStalkerT3
   name: Log of the Red Forest
 
 - type: entity
-  suffix: Stalker, craft # Zona14: Stalker, крафт
+  suffix: Stalker, craft # Zona14: Stalker, craft
   parent: LogStalker
   id: STLogStalkerT4
   name: Willow Log
@@ -50,7 +50,7 @@
     secondIngredient: BonfireOff
     time: 5
 
-# Zona14: ##################### Деревья
+# Zona14: ##################### Trees
 
 - type: lightCraftingRecipe
   id: CraftLogFromTree
@@ -107,7 +107,7 @@
     exactSecond: false
     time: 5
 
-# Zona14: # Деревья спонсоры
+# Zona14: # Sponsor trees
 - type: lightCraftingRecipe
   id: CraftLogFromTreeSponsor
   results:
@@ -163,4 +163,4 @@
     exactSecond: false
     time: 1
   
-# Zona14: Спонсоры конец
+# Zona14: Sponsors end

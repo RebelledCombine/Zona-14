@@ -24,7 +24,7 @@
     ClothingNeckBling: 1000
     TreasureCoinAdamantine: 300
   categories:
-    - name: Items # Zona14: Предметы
+    - name: Items # Zona14: Items
       priority: 1
       items:
         ClothingMaskBandGold: 300
@@ -39,7 +39,7 @@
         ClothingHeadBandGold: 300
         GoldenPlunger: 10000
         FlippoEngravedLighter: 5000
-    - name: Consumables # Zona14: Потребление
+    - name: Consumables # Zona14: Consumption
       priority: 2
       items:
         CigarGold: 50

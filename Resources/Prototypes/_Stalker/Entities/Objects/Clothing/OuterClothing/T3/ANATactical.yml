@@ -60,7 +60,7 @@
   parent: STClothingOuterArmorLightPlateVestBaseANAgreen
   id: STClothingOuterArmorLightPlateVestBaseANAgreenOld
   name: ANA Tactical "Steppe-4"
-  suffix: ST, T3, PvP, Old # Zona14: ST, T3, PvP, Старое
+  suffix: ST, T3, PvP, Old # Zona14: ST, T3, PvP, Old
   description: Reliable class 3 plate carrier that fits any magazine size, in fashionable swamp green. This version is heavily worn, with noticeably degraded protective capabilities.
   components:
   - type: Armor

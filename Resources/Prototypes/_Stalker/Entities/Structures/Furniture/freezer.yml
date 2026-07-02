@@ -1,5 +1,5 @@
 # Zona14: translated Russian names/descriptions to English
-# Zona14: БАЗОВАЯ СТРУКТУРА ХОЛОДИЛЬНИКА
+# Zona14: BASE FRIDGE STRUCTURE
 
 - type: entity
   id: BaseStalkerFreezer
@@ -87,7 +87,7 @@
     stateDoorOpen: generic_open
     stateDoorClosed: generic_door
 
-# Zona14: НЕ СТАТИЧНЫЙ ХОЛОДИЛЬНИК (РАБОТАЮЩИЙ)
+# Zona14: NON-STATIC FRIDGE (WORKING)
 
 - type: entity
   id: LockerFreezerStalker
@@ -105,7 +105,7 @@
     damageCoefficient: 0.50
   - type: AntiRottingContainer
 
-# Zona14: СТАТИЧНЫЙ ХОЛОДИЛЬНИК (НЕ РАБОТАЮЩИЙ)
+# Zona14: STATIC FRIDGE (NOT WORKING)
 
 - type: entity
   id: FreezerStalker

@@ -1,7 +1,7 @@
 - type: shopPreset
   id: TechnickVitya
   categories:
-    - name: Tools # Zona14: Инструменты
+    - name: Tools # Zona14: Tools
       priority: 1
       items:
         ToolkitTearOne: 20000

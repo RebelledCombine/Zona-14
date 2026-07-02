@@ -1,7 +1,7 @@
 # Zona14: translated Russian names/descriptions to English
 - type: entity
   name: SOP sentry
-  suffix: Stalker, T5, feeble, NPC # Zona14: Stalker, Т5, немощный, NPC
+  suffix: Stalker, T5, feeble, NPC # Zona14: Stalker, T5, weak, NPC
   parent: MobStalkerBaseGuard
   id: MobStalkerMilitaryGuard
   components:
@@ -11,7 +11,7 @@
 
 - type: entity
   name: Vova Vist
-  suffix: Stalker, T6, mega-powerful, NPC # Zona14: Stalker, Т6, мега-мощный, NPC
+  suffix: Stalker, T6, mega-powerful, NPC # Zona14: Stalker, T6, mega-powerful, NPC
   parent: MobStalkerBaseGuard
   id: MobStalkerMilitaryVovaVist
   description: Vova Vist has excellent machine gun firing skills, combined with the anomalous power of his machine gun, which is enough to make a military man one of the most dangerous people in the Zone. Even such a legendary stalker as Scar demonstrated superhuman capabilities and all his skills, giving his all and receiving a huge portion of five-point pain to break into the Village of Rookies, avoiding the keen eye, brought to the limit of skill and deadly bullets of Vova Vista.
@@ -41,7 +41,7 @@
 
 - type: entity
   name: Private Okovchuk
-  suffix: Stalker, T5, powerful, NPC # Zona14: Stalker, Т5, мощный, NPC
+  suffix: Stalker, T5, powerful, NPC # Zona14: Stalker, T5, powerful, NPC
   parent: MobStalkerBaseGuard
   id: MobStalkerMilitarySniper
   description:

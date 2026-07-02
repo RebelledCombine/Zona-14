@@ -1,5 +1,5 @@
 # Zona14: translated Russian names/descriptions to English
-# Zona14: Разлом (Rift)
+# Zona14: Rift
 - type: entity
   id: SpawnerZoneAnomalyRandomWeakChance1
   name: random weak anomaly spawner (1% chance to spawn)

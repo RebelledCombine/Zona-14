@@ -137,7 +137,7 @@
     chance: 1.0
     offset: 0.0
 
-# Zona14: Электра (Electra)
+# Zona14: Electra
 - type: entity
   id: SpawnerZoneAnomalyElectraChance1
   name: electra anomaly spawner (1% chance to spawn)
@@ -252,7 +252,7 @@
     chance: 1
     offset: 0.0
 
-# Zona14: Аномалия ЭМИ
+# Zona14: EMP Anomaly
 - type: entity
   id: SpawnerZoneAnomalyEMPChance1
   name: EMP anomaly spawner (1% chance to spawn)
@@ -367,7 +367,7 @@
     chance: 1
     offset: 0.0
 
-# Zona14: Источник (Source)
+# Zona14: Source
 - type: entity
   id: SpawnerZoneAnomalySource1
   name: source anomaly spawner (1% chance to spawn)
@@ -482,7 +482,7 @@
     chance: 1
     offset: 0.0
 
-# Zona14: Гирлянда (Garland)
+# Zona14: Garland
 - type: entity
   id: SpawnerZoneAnomalyGarland1
   name: garland anomaly spawner (1% chance to spawn)

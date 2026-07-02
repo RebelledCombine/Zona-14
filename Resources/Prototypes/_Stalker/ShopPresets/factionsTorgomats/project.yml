@@ -324,7 +324,7 @@
         STHatchetSponsor: 150
         STSpanishKnife: 100
     SponsorOMind:
-    - name: O-Consciousness # Zona14: О-сознание
+    - name: O-Consciousness # Zona14: O-Consciousness
       items:
         STWeaponRifleSVDSWood: 800
         Base754Mag5: 400

@@ -86,7 +86,7 @@
   weather: true
   indestructible: true
 
-# Zona14: Песок
+# Zona14: Sand
 - type: tile
   id: FloorPlanetSand
   name: sand Stalker
@@ -118,7 +118,7 @@
   indestructible: true
 
 
-# Zona14: Щебёнка
+# Zona14: Gravel
 - type: tile
   id: FloorScheben
   name: gravel Stalker

@@ -8,7 +8,7 @@
     - protoId: ZoneAnomalyJarka
     - protoId: ZoneAnomalyElectra
 
-# Zona14: Кордон
+# Zona14: Cordon
 - type: stAnomalyGenerationOptions
   id: STKordonGenerationOptions
   options:
@@ -28,7 +28,7 @@
     - protoId: ZoneAnomalyLamp
       weight: 0.1
 
-# Zona14: Свалка
+# Zona14: Dump
 - type: stAnomalyGenerationOptions
   id: STSvalkaGenerationOptions
   options:
@@ -50,7 +50,7 @@
     # Psy
     - protoId: ZoneAnomalyLamp
 
-# Zona14: Болота
+# Zona14: Swamps
 - type: stAnomalyGenerationOptions
   id: STBolotaGenerationOptions
   options:
@@ -74,7 +74,7 @@
     - protoId: ZoneAnomalySteam
       weight: 2
 
-# Zona14: Агропром
+# Zona14: Agroprom
 - type: stAnomalyGenerationOptions
   id: STAgropromGenerationOptions
   options:
@@ -110,7 +110,7 @@
     - protoId: ZoneAnomalyRift
       weight: 0.1
 
-# Zona14: Тёмная лощина
+# Zona14: Dark Dell
 - type: stAnomalyGenerationOptions
   id: STTemnajLohinaGenerationOptions
   options:
@@ -133,7 +133,7 @@
     - protoId: ZoneAnomalyElectra
       weight: 2
 
-# Zona14: Тёмная долина
+# Zona14: Dark Valley
 - type: stAnomalyGenerationOptions
   id: STTemnajDolinaGenerationOptions
   options:
@@ -151,7 +151,7 @@
     - protoId: ZoneAnomalyJarkaStrong
     - protoId: ZoneAnomalyJarka
 
-# Zona14: Топи
+# Zona14: Swamps
 - type: stAnomalyGenerationOptions
   id: STTopiGenerationOptions
   options:
@@ -184,7 +184,7 @@
     - protoId: ZoneAnomalySteam
       weight: 2
 
-# Zona14: Рыжий лес XXX
+# Zona14: Red Forest XXX
 - type: stAnomalyGenerationOptions
   id: STRedForestGenerationOptions
   options:
@@ -250,7 +250,7 @@
     - protoId: ZoneAnomalySteam
       weight: 2
 
-# Zona14: Лима
+# Zona14: Lima
 - type: stAnomalyGenerationOptions
   id: STLimaGenerationOptions
   options:

@@ -1,5 +1,5 @@
 # Zona14: translated Russian names/descriptions to English
-# Zona14: Магазины СР-1
+# Zona14: SR-1 magazines
 
 - type: entity
   id: SR1Mag
@@ -32,7 +32,7 @@
         - state: mag-1
           map: ["enum.GunVisualLayers.Mag"]
 
-# Zona14: Магазины 9х21 Вереска
+# Zona14: 9x21 Veresk magazines
 
 - type: entity
   id: SR2MMag20

@@ -12,9 +12,9 @@
       - Dwarf
       - Gingerbread
       - HumanFat
-    # Zona14: Обнулил требования, так как люди не могут зайти за сталкера когда их турнули
-    # Zona14: c ГП. И по сути не могут играть вообще. Я хз как это сделать лучше, но то что есть сейчас
-    # Zona14: не даёт людям вообще играть.
+    # Zona14: Reset requirements since people cannot join as stalker when kicked
+    # Zona14: from GP. And essentially can't play at all. I don't know how to make it better, but what we have now
+    # Zona14: doesn't let people play at all.
     # - !type:DepartmentTimeRequirement
     #   department: StalkerAdvanced
     #   time: 1

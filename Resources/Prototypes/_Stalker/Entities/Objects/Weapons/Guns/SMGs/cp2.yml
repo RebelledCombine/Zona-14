@@ -1,8 +1,8 @@
 # Zona14: translated Russian names/descriptions to English
-# Zona14: Кастомка серафимов, возможно в будущем станет общедоступной
+# Zona14: Seraphim custom, may become publicly available in the future
 - type: entity
   name: SR-2 "Veresk"
-  suffix: ST, Skin # Zona14: ST, Скин
+  suffix: ST, Skin # Zona14: ST, Skin
   parent: STBaseWeaponSMG
   id: STWeaponSMGStalkerCP2Veresk
   description: A compact submachine gun developed for the powerful armor-piercing 9x21mm cartridge at the request of the FSB and FSO of Russia. This particular SMG is a homemade modification allowing it to fire 9x19mm Parabellum rounds.
@@ -92,7 +92,7 @@
 
 - type: entity
   name: SR-2M "Veresk" 9x21
-  suffix: ST, Skin # Zona14: ST, Скин
+  suffix: ST, Skin # Zona14: ST, Skin
   parent: STBaseWeaponSMG
   id: STWeaponSMGStalkerCP2Veresk921
   description: A compact submachine gun designed for the powerful armor-piercing 9x21mm cartridge, ordered by the FSB and FSO of Russia. Now with the original caliber!

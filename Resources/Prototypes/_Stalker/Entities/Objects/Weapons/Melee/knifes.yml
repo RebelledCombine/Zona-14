@@ -54,7 +54,7 @@
   parent: STCombatKnife
   id: STSeraKnife
   description: Smells like herbs and oils.
-  suffix: ST, Skin # Zona14: ST, Скин
+  suffix: ST, Skin # Zona14: ST, Skin
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Weapons/Melee/sera_knife.rsi

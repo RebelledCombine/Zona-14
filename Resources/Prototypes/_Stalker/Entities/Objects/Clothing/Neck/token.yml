@@ -4,7 +4,7 @@
   id: ClothingStalkerNeckToken
   name: Warrior Token
   description: military dog tag, with the name and surname of the bearer.
-  suffix: Stalker, Bandage # Zona14: Stalker, Повязка
+  suffix: Stalker, Bandage # Zona14: Stalker, Bandana
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/Neck/token.rsi
@@ -16,7 +16,7 @@
   id: ClothingStalkerNeckTokenSeraphim
   name: Seraphim token
   description: This is a unique military insignia associated with the Seraphim's religious faction. Its design reflects the symbolism of the group - it is made of durable metal. The obverse of the token is engraved with the main creed of the Seraphim, possibly incorporating elements of ancient languages or sacred signs. The reverse side is for the owner's personal information - name, identification number, and possibly rank in the group.
-  suffix: Stalker, Bandage # Zona14: Stalker, Повязка
+  suffix: Stalker, Bandage # Zona14: Stalker, Bandana
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/Neck/tag_seraphim.rsi
@@ -28,7 +28,7 @@
   id: ClothingStalkerNeckKulonSeraphim
   name: green pendant
   description: A Seraphim pendant belonging to someone extremely important... it gives off a dim color that, while not noticeable, still means something... Maybe it helps communicate with other covens? Or it indicates artifacts? However, no one but it itself will ever know.
-  suffix: Stalker, Bandage # Zona14: Stalker, Повязка
+  suffix: Stalker, Bandage # Zona14: Stalker, Bandana
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/Neck/kulon_seraphim.rsi

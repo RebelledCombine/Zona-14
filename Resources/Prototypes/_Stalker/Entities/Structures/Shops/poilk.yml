@@ -4,7 +4,7 @@
   id: StalkerShopPoisk
   name: Torgomat, Search
   description: How did the merchant fit there?
-  suffix: ST, Mapping, Search # Zona14: ST, Mapping, Поиск
+  suffix: ST, Mapping, Search # Zona14: ST, Mapping, Search
   components:
   - type: Sprite
     drawdepth: Objects

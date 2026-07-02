@@ -8,7 +8,7 @@
   placement:
     mode: PlaceFree
 
-# Zona14: Рандомные аномалии
+# Zona14: Random anomalies
 - type: entity
   id: RandomAnomaly1
   name: Random Anomaly (1% chance to spawn)
@@ -80,7 +80,7 @@
     chance: 0.25
     offset: 0.0
 
-# Zona14: Рандомные редкие аномалии
+# Zona14: Random rare anomalies
 - type: entity
   id: RandomRareAnomaly1
   name: Random Rare Anomaly (1% chance to spawn)
@@ -147,7 +147,7 @@
     chance: 0.25
     offset: 0.0
 
-# Zona14: Воронка
+# Zona14: Funnel
 - type: entity
   id: SpawnerVoronka1
   name: funnel spawner (1 + 1% chance to spawn)
@@ -232,7 +232,7 @@
     chance: 0.5
     offset: 0.0
 
-# Zona14: Электра
+# Zona14: Electra
 - type: entity
   id: SpawnerElectra1
   name: electra spawner (1% chance to spawn)
@@ -305,7 +305,7 @@
     chance: 0.5
     offset: 0.0
 
-# Zona14: Жарка
+# Zona14: Frying
 - type: entity
   id: SpawnerJarka1
   name: burner spawner (1% + 1% chance to spawn)
@@ -378,7 +378,7 @@
     chance: 0.5
     offset: 0.0
 
-# Zona14: Трамплин и Эпицентр
+# Zona14: Springboard and Epicentre
 - type: entity
   id: SpawnerEpicentre25
   name: epicenter spawner (25% chance to spawn)
@@ -415,11 +415,11 @@
     chance: 0.25
     offset: 0.0
 
-# Zona14: Жарка без артефактов
+# Zona14: Frying without artifacts
 - type: entity
   id: SpawnerJarka1NoArts
   name: burner artifactless spawner (1% chance to spawn)
-  suffix: Stalker, without artifacts # Zona14: Stalker, без артефактов
+  suffix: Stalker, without artifacts # Zona14: Stalker, without artifacts
   parent: FlexibleMarker
   categories: [ Spawner, StSkipSpawnTest ]
   components:
@@ -437,7 +437,7 @@
 - type: entity
   id: SpawnerJarka10NoArts
   name: burner artifactless spawner (10% chance to spawn)
-  suffix: Stalker, without artifacts # Zona14: Stalker, без артефактов
+  suffix: Stalker, without artifacts # Zona14: Stalker, without artifacts
   parent: FlexibleMarker
   categories: [ Spawner, StSkipSpawnTest ]
   components:
@@ -455,7 +455,7 @@
 - type: entity
   id: SpawnerJarka25NoArts
   name: burner artifactless spawner (25% chance to spawn)
-  suffix: Stalker, without artifacts # Zona14: Stalker, без артефактов
+  suffix: Stalker, without artifacts # Zona14: Stalker, without artifacts
   parent: FlexibleMarker
   categories: [ Spawner, StSkipSpawnTest ]
   components:
@@ -473,7 +473,7 @@
 - type: entity
   id: SpawnerJarka50NoArts
   name: burner artifactless spawner (50% chance to spawn)
-  suffix: Stalker, without artifacts # Zona14: Stalker, без артефактов
+  suffix: Stalker, without artifacts # Zona14: Stalker, without artifacts
   parent: FlexibleMarker
   categories: [ Spawner, StSkipSpawnTest ]
   components:
@@ -491,7 +491,7 @@
 - type: entity
   id: SpawnerJarka100NoArts
   name: burner artifactless spawner (100% chance to spawn)
-  suffix: Stalker, without artifacts # Zona14: Stalker, без артефактов
+  suffix: Stalker, without artifacts # Zona14: Stalker, without artifacts
   parent: FlexibleMarker
   categories: [ Spawner, StSkipSpawnTest ]
   components:

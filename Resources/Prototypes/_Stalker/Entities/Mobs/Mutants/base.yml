@@ -182,7 +182,7 @@
     active: False
   - type: STMobWeightVariance # Stalker-EN
 
-# Zona14: временно так, до перевода всех мобов на новые HTN
+# Zona14: Temporary, until all mobs are migrated to new HTN
 
 - type: entity
   parent:

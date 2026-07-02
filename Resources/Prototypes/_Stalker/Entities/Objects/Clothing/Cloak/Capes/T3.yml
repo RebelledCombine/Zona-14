@@ -1,5 +1,5 @@
 # Zona14: translated Russian names/descriptions to English
-# Zona14: Укреплённый плащ
+# Zona14: Reinforced cloak
 - type: entity
   parent: STClothingCapeBase
   id: STClothingCapeCoatReinforced
@@ -24,7 +24,7 @@
         Heat: 0.85
 
 
-# Zona14: Охотничий Плащ
+# Zona14: Hunter Cloak
 - type: entity
   parent: STClothingCapeBase
   id: ClothingOuterCoatLoyalistLight
@@ -83,7 +83,7 @@
     slots:
     - Hair
 
-# Zona14: Кевларовый Плащ
+# Zona14: Kevlar Cloak
 
 - type: entity
   parent: STClothingCapeBase
@@ -151,7 +151,7 @@
     slots:
     - Hair
 
-# Zona14: настойщий Плащ Греха
+# Zona14: true Sin's Cloak
 - type: entity
   parent: STClothingCapeBase
   id: ClothingOuterCoatGrehLight
@@ -207,7 +207,7 @@
   - type: ClothingSpeedModifier
     walkModifier: 1.2
     sprintModifier: 1.2
-# Zona14: настойщий Верный Греха
+# Zona14: true Sin's Faithful
 
 - type: entity
   parent: STClothingCapeBase
@@ -360,7 +360,7 @@
   id: ClothingOuterCoatSeraphim
   name: Kevlar Seraphim Cloak
   description: Cloak modified for the needs of the Seraph faction, dyed in "native" colors.
-  suffix: ST, T3, Skin # Zona14: ST, T3, Скин
+  suffix: ST, T3, Skin # Zona14: ST, T3, Skin
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/cloak/Sera_/seraphim_kevlar_cape.rsi
@@ -377,7 +377,7 @@
   id: ClothingHeadHelmetLoyalistCoatSeraphim
   name: Kevlar Seraphim Hood
   description: "From Kevlar, it's not just the name."
-  suffix: ST, Skin # Zona14: ST, Скин
+  suffix: ST, Skin # Zona14: ST, Skin
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/Head/Sera_/coat_hat_kevlar_seraphim.rsi
@@ -392,7 +392,7 @@
   id: ClothingOuterCoatLimaSeraphim
   name: Seraphim kevlar coat
   description: A cloak modified for the needs of the Seraphim faction, painted gray.
-  suffix: ST, T3, Skin # Zona14: ST, T3, Скин
+  suffix: ST, T3, Skin # Zona14: ST, T3, Skin
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/cloak/Sera_/limaphim_kevlar_cape.rsi
@@ -409,7 +409,7 @@
   id: ClothingHeadHelmetLoyalistCoatLimaSeraphim
   name: Seraphim kevlar hood
   description: It’s kevlar only in name.
-  suffix: ST, Skin # Zona14: ST, Скин
+  suffix: ST, Skin # Zona14: ST, Skin
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/Head/Sera_/coat_hat_kevlar_limaphim.rsi
@@ -441,7 +441,7 @@
   id: ClothingOuterCoatRetHat
   name: Collar
   description: just Collar.
-  suffix: ST, Skin # Zona14: ST, Скин
+  suffix: ST, Skin # Zona14: ST, Skin
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/Head/Hats/Ret4hat.rsi

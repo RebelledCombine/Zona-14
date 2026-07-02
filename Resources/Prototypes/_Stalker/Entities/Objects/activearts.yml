@@ -1,5 +1,5 @@
 ﻿# Zona14: translated Russian names/descriptions to English
-# Zona14: ###########################Медуза
+# Zona14: ###########################Jellyfish
 - type: entity
   name: Jellyfish
   parent: BaseArtifact
@@ -62,7 +62,7 @@
       totalIntensity: 120
       canCreateVacuum: false
 
-# Zona14: ###########################Огненный шар
+# Zona14: ###########################Fireball
 - type: entity
   name: Fireball
   parent: BaseArtifact

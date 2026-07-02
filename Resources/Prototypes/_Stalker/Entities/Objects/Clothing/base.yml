@@ -12,11 +12,11 @@
   id: BlockGloves
 
 ###============------------------------------------============###
-# Zona14: ##============------------[New Одежда]------------============###
+# Zona14: ##============------------[New Clothing]------------============###
 ###============------------------------------------============###
 
 ###------------------------------###
-# Zona14: ##------------[База]------------###
+# Zona14: ##------------[Base]------------###
 ###------------------------------###
 
 - type: entity
@@ -26,7 +26,7 @@
   abstract: true
   components:
   - type: RepositoryItem
-    categoryName: Equipment # Zona14: Экипировка
+    categoryName: Equipment # Zona14: Equipment
   - type: PullDoAfter
     pullTime: 6
 
@@ -37,7 +37,7 @@
   abstract: true
   components:
   - type: RepositoryItem
-    categoryName: Equipment # Zona14: Экипировка
+    categoryName: Equipment # Zona14: Equipment
   - type: PullDoAfter
     pullTime: 2
   - type: HideLayerClothing
@@ -55,7 +55,7 @@
   abstract: true
   components:
   - type: RepositoryItem
-    categoryName: Armor # Zona14: Броня
+    categoryName: Armor # Zona14: Armor
   - type: PullDoAfter
     pullTime: 6
 
@@ -87,7 +87,7 @@
     tags:
       - Folder
   - type: RepositoryItem
-    categoryName: Equipment # Zona14: Экипировка
+    categoryName: Equipment # Zona14: Equipment
   - type: Storage
     maxItemSize: Normal
     grid:
@@ -131,7 +131,7 @@
       - BlockBelt
       - Folder
   - type: RepositoryItem
-    categoryName: Equipment # Zona14: Экипировка
+    categoryName: Equipment # Zona14: Equipment
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHatHoodWinterDefault
     slot: head
@@ -178,7 +178,7 @@
     slots:
     - HEAD
   - type: RepositoryItem
-    categoryName: Equipment # Zona14: Экипировка
+    categoryName: Equipment # Zona14: Equipment
   - type: Sprite
     state: icon
   - type: Tag
@@ -267,7 +267,7 @@
   - type: Item
     size: Ginormous
   - type: RepositoryItem
-    categoryName: Gear # Zona14: Снаряжение
+    categoryName: Gear # Zona14: Equipment
   - type: ContainerContainer
     containers:
       storagebase: !type:Container
@@ -311,7 +311,7 @@
     slots:
     - CLOAK
   - type: RepositoryItem
-    categoryName: Equipment # Zona14: Экипировка
+    categoryName: Equipment # Zona14: Equipment
   - type: Item
     size: Large
     shape:
@@ -342,7 +342,7 @@
       quickInsert: true
       areaInsert: true
     - type: RepositoryItem
-      categoryName: Gear # Zona14: Снаряжение
+      categoryName: Gear # Zona14: Equipment
     - type: Dumpable
     - type: Tag
       tags:

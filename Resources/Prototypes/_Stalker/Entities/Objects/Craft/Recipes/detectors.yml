@@ -1,7 +1,7 @@
 
-# Zona14: Новые Крафты
+# Zona14: New Crafts
 
-# Zona14: Детекторы Аномалий
+# Zona14: Anomaly Detectors
 - type: craftRecipe
   id: newrecipeDetectorAD1
   resultProtos:
@@ -60,7 +60,7 @@
     STCraftTransformer:
       amount: 1
 
-# Zona14: Детекторы Артефактов
+# Zona14: Artifact Detectors
 - type: craftRecipe
   id: recipeZoneArtifactDetectorBush
   resultProtos:
@@ -187,7 +187,7 @@
     STCraftQuartzCrystalT3:
       amount: 1
 
-# Zona14: Металлоискатели
+# Zona14: Metal detectors
 
 - type: craftRecipe
   id: recipeTrashDetectorTier2

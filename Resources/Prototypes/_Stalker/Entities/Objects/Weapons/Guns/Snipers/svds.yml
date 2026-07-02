@@ -79,7 +79,7 @@
   parent: STBaseWeaponRifleSVDS
   id: STWeaponSniperSVDSGrass
   name: SVDS Ghillie Sniper Rifle
-  suffix: ST, Custom # Zona14: ST, Кастомка
+  suffix: ST, Custom # Zona14: ST, Custom
   description: "A carefully modified SVDS with camouflage netting and minor tuning for maximum concealment in the Zone's wilderness. The 7.62x54mmR rounds ensure no mutant walks away from a well-placed shot."
   components:
   - type: Clothing
@@ -106,7 +106,7 @@
   parent: STBaseWeaponRifleSVDS
   id: STWeaponSniperSVU
   name: SVU Compact Sniper Rifle
-  suffix: ST, Custom # Zona14: ST, Кастомка
+  suffix: ST, Custom # Zona14: ST, Custom
   description: A bullpup conversion of the SVDS designed for urban operations in the Zone. The shortened barrel reduces range but improves handling in tight spaces, while still delivering 7.62x54mmR stopping power.
   components:
   - type: Clothing
@@ -133,7 +133,7 @@
   parent: STBaseWeaponRifleSVDS
   id: STWeaponRifleSVDSWood
   name: Selfmade chatter
-  suffix: ST, Custom # Zona14: ST, Кастомка
+  suffix: ST, Custom # Zona14: ST, Custom
   description: A selfmade rifle for an SVD magazine. Oblique, but wildly lethal.
   components:
     - type: STWeight
@@ -191,7 +191,7 @@
   parent: STBaseWeaponRifleSVDS
   id: STWeaponSniperSVUTop
   name: SVU "Top"
-  suffix: ST, Custom # Zona14: ST, Кастомка
+  suffix: ST, Custom # Zona14: ST, Custom
   description: The shortened sniper rifle - a self-loading sniper rifle of bullpup layout, developed by TsKIB SOO on the basis of the SVD. Development of a shortened SVD-based sniper rifle for the USSR airborne troops began at TsKIB SOO in 1977. In 1979 demonstration samples of designer L. V. Bondarev's SVU rifle were offered to the airborne forces, but it did not reach production at that time. Serial production of the SVU began in 1991, and the first production rifles entered service with the 106th Guards Airborne Division, where they underwent field trials. The barrel is fitted with a massive masking muzzle device designed by L. V. Bondarev. The suppressor reduces the sound level of the shot by 10-12% compared to the SVD, almost completely eliminates muzzle flash, and disperses the sound of the shot in such a way that determining the shooter's exact position becomes impossible. The furniture is made of polyamide. On this example, the bulk of the body, including the stock, is wrapped in camouflage tape, with additional wrapping on the scope and muzzle device that breaks up the silhouette of the weapon against vegetation.
   components:
   - type: Clothing

@@ -1,4 +1,4 @@
-# Zona14: Штурмовой шлем
+# Zona14: Assault helmet
 
 - type: lightCraftingRecipe
   id:  STCraftSkinClothingHeadAssaultHelmetUN
@@ -40,7 +40,7 @@
     keepFirst: true
     time: 5
 
-# Zona14: Сфера 08 шлем
+# Zona14: Sfera 08 helmet
 
 - type: lightCraftingRecipe
   id:  STCraftSkinClothingHeadHelmetBerill5MMonolith
@@ -62,7 +62,7 @@
     keepFirst: true
     time: 5
 
-# Zona14: Витязь
+# Zona14: Vityaz
 
 - type: lightCraftingRecipe
   id:  STCraftSkinClothingHeadHelmetVityaz1M

@@ -95,7 +95,7 @@
         STWeaponSMGPP1901: 2000
         STWeaponRifleOC14: 5000
         STWeaponRifleOC14Alt: 5000
-          # Zona14: БУМ-БАДА-БАМ!
+          # Zona14: BOOM-BADA-BAM!
         KhattabkaGrenade: 175
         DG05SmokeGrenade: 225
         TearGasGrenadeStalker: 750
@@ -321,7 +321,7 @@
           STHatchetSponsor: 150
           STSpanishKnife: 100
     SponsorOMind:
-      - name: O-Consciousness # Zona14: О-сознание
+      - name: O-Consciousness # Zona14: O-Consciousness
         items:
           STWeaponRifleSVDSWood: 800
           Base754Mag5: 400

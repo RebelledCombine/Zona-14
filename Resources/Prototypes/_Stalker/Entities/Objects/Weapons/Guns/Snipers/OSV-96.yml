@@ -63,7 +63,7 @@
 
 - type: entity
   parent: STBaseWeaponRifleOSV96
-  suffix: ST, Custom # Zona14: ST, Кастомка
+  suffix: ST, Custom # Zona14: ST, Custom
   id: STWeaponSniperOSV96
   name: OSV-96 Vzlomshchik
   description: A Russian semi-automatic large-caliber sniper rifle chambered in 12.7x108mm. Developed in Tula by specialists of the KBP Instrument Design Bureau.

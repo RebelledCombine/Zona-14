@@ -191,7 +191,7 @@
   name: Acid T3 Steel and Glass Trigger (20%)
   id: STCraftGlassMetallT3Trigger
   parent: MarkerBase
-  suffix: ST | CD 1 hours # Zona14: ST | КД 1 часа
+  suffix: ST | CD 1 hours # Zona14: ST | CD 1 hour
   components:
     - type: ApproachTrigger
     - type: Sprite

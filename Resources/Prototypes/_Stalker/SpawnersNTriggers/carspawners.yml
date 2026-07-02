@@ -3,7 +3,7 @@
   name: Vehicle Trigger (20%)
   id: STCarsTrigger
   parent: MarkerBase
-  suffix: ST | CD 30 minutes # Zona14: ST | КД 30 минут
+  suffix: ST | CD 30 minutes # Zona14: ST | CD 30 minutes
   components:
     - type: ApproachTrigger
       # range: 20 # Stalker-TODO: These fields does not exist in this component!

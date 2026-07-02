@@ -4,7 +4,7 @@
   name: Government Hermetic Door
   parent: HermoDverTypeOne
   description: Protective-hermetic and hermetic devices that are used to protect protective structures of civil defense from harmful effects of various nature.
-  suffix: ST, mapping, Officials # Zona14: ST, mapping, Офицалы
+  suffix: ST, mapping, Officials # Zona14: ST, mapping, Officials
   components:
   - type: AccessReader
     access: [["Military"]]
@@ -14,7 +14,7 @@
   name: Government Steel Door
   parent: MetalAltDoorFallout
   description: Strong steel door with a secure lock.
-  suffix: ST, mapping, Officials # Zona14: ST, mapping, Офицалы
+  suffix: ST, mapping, Officials # Zona14: ST, mapping, Officials
   components:
     - type: AccessReader
       access: [["Military"]]
@@ -24,7 +24,7 @@
   name: Military Steel Door
   parent: MetalAltDoorFallout
   description: "{ ent-MetalAltDoorFalloutArmyClosed.desc }"
-  suffix: ST, mapping, Military # Zona14: ST, mapping, Военные
+  suffix: ST, mapping, Military # Zona14: ST, mapping, Military
   components:
     - type: AccessReader
       access: [["MilitaryBarraks"]]
@@ -34,7 +34,7 @@
   name: Military Stalker Steel Door
   parent: MetalAltDoorFallout
   description: "{ ent-MetalAltDoorFalloutArmyClosed.desc }"
-  suffix: ST, mapping, Milstalkers # Zona14: ST, mapping, Военсталы
+  suffix: ST, mapping, Milstalkers # Zona14: ST, mapping, Military Stalkers
   components:
     - type: AccessReader
       access: [["MilitaryStalker"]]
@@ -44,7 +44,7 @@
   name: "{ ent-MetalAltDoorFalloutMilitaryClosed }"
   parent: MetalAltDoorFallout
   description: "{ ent-MetalAltDoorFalloutArmyClosed.desc }"
-  suffix: ST, mapping, Military, Officer # Zona14: ST, mapping, Военные, Офицер
+  suffix: ST, mapping, Military, Officer # Zona14: ST, mapping, Military, Officer
   components:
     - type: AccessReader
       access: [["MilitaryOfficer"]]
@@ -54,7 +54,7 @@
   name: U.N. Steel Door
   parent: MetalAltDoorFallout
   description: "{ ent-MetalAltDoorFalloutArmyClosed.desc }"
-  suffix: ST, mapping, UN # Zona14: ST, mapping, ООН
+  suffix: ST, mapping, UN # Zona14: ST, mapping, UN
   components:
     - type: AccessReader
       access: [["UN"]]
@@ -64,7 +64,7 @@
   name: Bandit Steel Door
   parent: MetalAltDoorFallout
   description: "{ ent-MetalAltDoorFalloutArmyClosed.desc }"
-  suffix: ST, mapping, Bandits # Zona14: ST, mapping, Бандиты
+  suffix: ST, mapping, Bandits # Zona14: ST, mapping, Bandits
   components:
   - type: AccessReader
     access: [["Bandit"]]
@@ -74,7 +74,7 @@
   name: Military Detention Facility Door
   parent: MetalGrateDoorFallout
   description: A strong lattice door with a reliable lock.
-  suffix: ST, mapping, Military # Zona14: ST, mapping, Военные
+  suffix: ST, mapping, Military # Zona14: ST, mapping, Military
   components:
     - type: AccessReader
       access: [["MilitaryBarraks"]]
@@ -84,7 +84,7 @@
   name: Scientist Steel Door
   parent: MetalAltDoorFallout
   description: "{ ent-MetalAltDoorFalloutArmyClosed.desc }"
-  suffix: ST, mapping, Scientists # Zona14: ST, mapping, Учёные
+  suffix: ST, mapping, Scientists # Zona14: ST, mapping, Scientists
   components:
     - type: AccessReader
       access: [["SciBase"]]
@@ -94,7 +94,7 @@
   name: Gate
   parent: StalkerGate
   description: High steel gates, through which it is unlikely that you will be able to remove.
-  suffix: ST, mapping, Officials, Left # Zona14: ST, mapping, Офицалы, Левая
+  suffix: ST, mapping, Officials, Left # Zona14: ST, mapping, Officials, Left
   components:
     - type: AccessReader
       access: [["Military"]]
@@ -104,7 +104,7 @@
   name: "{ ent-StalkerGateArmyClosed }"
   parent: StalkerGater
   description: "{ ent-StalkerGateArmyClosed.desc }"
-  suffix: ST, mapping, Officials, Right # Zona14: ST, mapping, Офицалы, Правая
+  suffix: ST, mapping, Officials, Right # Zona14: ST, mapping, Officials, Right
   components:
     - type: AccessReader
       access: [["Military"]]
@@ -114,7 +114,7 @@
   name: Hermetic Door
   parent: HermoDverTypeOne
   description: "{ ent-HermoDverTypeOneArmyClosed.desc }"
-  suffix: ST, mapping, Bandits # Zona14: ST, mapping, Бандиты
+  suffix: ST, mapping, Bandits # Zona14: ST, mapping, Bandits
   components:
   - type: AccessReader
     access: [["Bandit"]]
@@ -124,7 +124,7 @@
   name: "{ ent-HermoDverTypeOneBanditsClosed }"
   parent: HermoDverTypeOne
   description: "{ ent-HermoDverTypeOneArmyClosed.desc }"
-  suffix: ST, mapping, Bandits # Zona14: ST, mapping, Бандиты
+  suffix: ST, mapping, Bandits # Zona14: ST, mapping, Bandits
   components:
   - type: AccessReader
     access: [["Journalist"]]
@@ -134,7 +134,7 @@
   name: "{ ent-HermoDverTypeOneBanditsClosed }"
   parent: HermoDverTypeOne
   description: "{ ent-HermoDverTypeOneArmyClosed.desc }"
-  suffix: ST, mapping, Duty # Zona14: ST, mapping, Долг
+  suffix: ST, mapping, Duty # Zona14: ST, mapping, Duty
   components:
   - type: AccessReader
     access: [["Dolg"] , ["DolgNovice"]]
@@ -144,7 +144,7 @@
   name: steel door
   parent: MetalAltDoorFallout
   description: "{ ent-MetalAltDoorFalloutArmyClosed.desc }"
-  suffix: ST, mapping, Duty # Zona14: ST, mapping, Долг
+  suffix: ST, mapping, Duty # Zona14: ST, mapping, Duty
   components:
     - type: AccessReader
       access: [["Dolg"] , ["DolgNovice"]]
@@ -154,7 +154,7 @@
   name: steel door
   parent: MetalAltDoorFallout
   description: A sturdy steel door with a reliable lock.
-  suffix: ST, mapping, Duty # Zona14: ST, mapping, Долг
+  suffix: ST, mapping, Duty # Zona14: ST, mapping, Duty
   components:
     - type: AccessReader
       access: [["Dolg"]]
@@ -164,7 +164,7 @@
   name: "{ ent-HermoDverTypeOneBanditsClosed }"
   parent: HermoDverTypeOne
   description: "{ ent-HermoDverTypeOneArmyClosed.desc }"
-  suffix: ST, mapping, Freedom # Zona14: ST, mapping, Свобода
+  suffix: ST, mapping, Freedom # Zona14: ST, mapping, Freedom
   components:
   - type: AccessReader
     access: [["Freedom"] , ["FreedomNovice"]]
@@ -174,7 +174,7 @@
   name: "{ ent-MetalAltDoorFalloutDolgClosed }"
   parent: MetalAltDoorFallout
   description: "{ ent-MetalAltDoorFalloutArmyClosed.desc }"
-  suffix: ST, mapping, Freedom # Zona14: ST, mapping, Свобода
+  suffix: ST, mapping, Freedom # Zona14: ST, mapping, Freedom
   components:
     - type: AccessReader
       access: [["Freedom"] , ["FreedomNovice"]]
@@ -184,13 +184,13 @@
   name: steel door
   parent: MetalAltDoorFallout
   description: A sturdy steel door with a reliable lock.
-  suffix: ST, mapping, Freedom # Zona14: ST, mapping, Свобода
+  suffix: ST, mapping, Freedom # Zona14: ST, mapping, Freedom
   components:
     - type: AccessReader
       access: [["Freedom"]]
 
 
-# Zona14: Чистому небу
+# Zona14: Clear Sky
 
 - type: entity
   id: HermoDverTypeOneCNClosed
@@ -262,14 +262,14 @@
     - type: AccessReader
       access: [["CN"]]
 
-# Zona14: Ренегату
+# Zona14: Renegade
 
 - type: entity
   id: MetalAltDoorFalloutReneClosed
   name: "{ ent-MetalAltDoorFalloutDolgClosed }"
   parent: MetalAltDoorFallout
   description: "{ ent-MetalAltDoorFalloutArmyClosed.desc }"
-  suffix: ST, mapping, Renegades # Zona14: ST, mapping, Ренегаты
+  suffix: ST, mapping, Renegades # Zona14: ST, mapping, Renegades
   components:
     - type: AccessReader
       access: [["Renegat"]]
@@ -279,7 +279,7 @@
   name: "{ ent-MetalAltDoorFalloutDolgClosed }"
   parent: MetalAltDoorFallout
   description: "{ ent-MetalAltDoorFalloutArmyClosed.desc }"
-  suffix: ST, mapping, Renegades # Zona14: ST, mapping, Отступники
+  suffix: ST, mapping, Renegades # Zona14: ST, mapping, Deserters
   components:
     - type: AccessReader
       access: [["Deserter"]]
@@ -289,7 +289,7 @@
   name: "{ ent-HermoDverTypeOneBanditsClosed }"
   parent: HermoDverTypeOne
   description: "{ ent-HermoDverTypeOneArmyClosed.desc }"
-  suffix: ST, mapping, Mercenaries # Zona14: ST, mapping, Наёмники
+  suffix: ST, mapping, Mercenaries # Zona14: ST, mapping, Mercenaries
   components:
   - type: AccessReader
     access: [["Merc"]]
@@ -299,7 +299,7 @@
   name: "{ ent-HermoDverTypeOneBanditsClosed }"
   parent: HermoDverTypeTwo
   description: "{ ent-HermoDverTypeOneArmyClosed.desc }"
-  suffix: ST, mapping, Mercenaries # Zona14: ST, mapping, Наёмники
+  suffix: ST, mapping, Mercenaries # Zona14: ST, mapping, Mercenaries
   components:
   - type: AccessReader
     access: [["Merc"]]
@@ -309,7 +309,7 @@
   name: "{ ent-MetalAltDoorFalloutDolgClosed }"
   parent: MetalDoorFallout
   description: "{ ent-MetalAltDoorFalloutArmyClosed.desc }"
-  suffix: ST, mapping, Mercenaries # Zona14: ST, mapping, Наёмники
+  suffix: ST, mapping, Mercenaries # Zona14: ST, mapping, Mercenaries
   components:
   - type: AccessReader
     access: [["Merc"]]
@@ -319,7 +319,7 @@
   name: "{ ent-MetalAltDoorFalloutDolgClosed }"
   parent: MetalAltDoorFallout
   description: "{ ent-MetalAltDoorFalloutArmyClosed.desc }"
-  suffix: ST, mapping, Mercenaries # Zona14: ST, mapping, Наёмники
+  suffix: ST, mapping, Mercenaries # Zona14: ST, mapping, Mercenaries
   components:
   - type: AccessReader
     access: [["Merc"]]
@@ -329,7 +329,7 @@
   name: "{ ent-MetalAltDoorFalloutDolgClosed }"
   parent: MetalWindowDoorFallout
   description: Strong steel door, with a window and a reliable lock.
-  suffix: ST, mapping, Mercenaries # Zona14: ST, mapping, Наёмники
+  suffix: ST, mapping, Mercenaries # Zona14: ST, mapping, Mercenaries
   components:
   - type: AccessReader
     access: [["Merc"]]
@@ -339,7 +339,7 @@
   name: Reinforced lattice door
   parent: MetalGrateDoorFallout
   description: "{ ent-MetalGrateDoorFalloutMilitaryClosed.desc }"
-  suffix: ST, mapping, Mercenaries # Zona14: ST, mapping, Наёмники
+  suffix: ST, mapping, Mercenaries # Zona14: ST, mapping, Mercenaries
   components:
   - type: AccessReader
     access: [["Merc"]]
@@ -349,7 +349,7 @@
   name: Lattice door
   parent: MetalBarDoorFallout
   description: Lattice door with a secure lock.
-  suffix: ST, mapping, Mercenaries # Zona14: ST, mapping, Наёмники
+  suffix: ST, mapping, Mercenaries # Zona14: ST, mapping, Mercenaries
   components:
   - type: AccessReader
     access: [["Merc"]]
@@ -359,7 +359,7 @@
   name: "{ ent-MetalAltDoorFalloutDolgClosed }"
   parent: MetalDoorFallout
   description: "{ ent-MetalAltDoorFalloutArmyClosed.desc }"
-  suffix: ST, mapping, SBU # Zona14: ST, mapping, СБУ
+  suffix: ST, mapping, SBU # Zona14: ST, mapping, SBU
   components:
   - type: AccessReader
     access: [["MilitaryHead"]]
@@ -369,7 +369,7 @@
   name: "{ ent-MetalAltDoorFalloutDolgClosed }"
   parent: MetalAltDoorFallout
   description: "{ ent-MetalAltDoorFalloutArmyClosed.desc }"
-  suffix: ST, mapping, SBU # Zona14: ST, mapping, СБУ
+  suffix: ST, mapping, SBU # Zona14: ST, mapping, SBU
   components:
   - type: AccessReader
     access: [["MilitaryHead"]]
@@ -379,7 +379,7 @@
   name: "{ ent-MetalAltDoorFalloutDolgClosed }"
   parent: MetalWindowDoorFallout
   description: "{ ent-MetalWindowDoorFalloutMercClosed.desc }"
-  suffix: ST, mapping, SBU # Zona14: ST, mapping, СБУ
+  suffix: ST, mapping, SBU # Zona14: ST, mapping, SBU
   components:
   - type: AccessReader
     access: [["MilitaryHead"]]
@@ -389,7 +389,7 @@
   name: "{ ent-MetalGrateDoorFalloutMercClosed }"
   parent: MetalGrateDoorFallout
   description: "{ ent-MetalGrateDoorFalloutMilitaryClosed.desc }"
-  suffix: ST, mapping, SBU # Zona14: ST, mapping, СБУ
+  suffix: ST, mapping, SBU # Zona14: ST, mapping, SBU
   components:
   - type: AccessReader
     access: [["MilitaryHead"]]
@@ -399,7 +399,7 @@
   name: "{ ent-HermoDverTypeOneBanditsClosed }"
   parent: HermoDverTypeOne
   description: "{ ent-HermoDverTypeOneArmyClosed.desc }"
-  suffix: ST, mapping, Sin # Zona14: ST, mapping, Грех
+  suffix: ST, mapping, Sin # Zona14: ST, mapping, Sin
   components:
   - type: AccessReader
     access: [["Greh"]]
@@ -409,7 +409,7 @@
   name: "{ ent-HermoDverTypeOneBanditsClosed }"
   parent: HermoDverTypeTwo
   description: "{ ent-HermoDverTypeOneArmyClosed.desc }"
-  suffix: ST, mapping, Sin # Zona14: ST, mapping, Грех
+  suffix: ST, mapping, Sin # Zona14: ST, mapping, Sin
   components:
   - type: AccessReader
     access: [["Greh"]]
@@ -419,7 +419,7 @@
   name: "{ ent-MetalAltDoorFalloutDolgClosed }"
   parent: MetalDoorFallout
   description: "{ ent-MetalAltDoorFalloutArmyClosed.desc }"
-  suffix: ST, mapping, Sin # Zona14: ST, mapping, Грех
+  suffix: ST, mapping, Sin # Zona14: ST, mapping, Sin
   components:
   - type: AccessReader
     access: [["Greh"]]
@@ -429,7 +429,7 @@
   name: "{ ent-MetalAltDoorFalloutDolgClosed }"
   parent: MetalAltDoorFallout
   description: "{ ent-MetalAltDoorFalloutArmyClosed.desc }"
-  suffix: ST, mapping, Sin # Zona14: ST, mapping, Грех
+  suffix: ST, mapping, Sin # Zona14: ST, mapping, Sin
   components:
   - type: AccessReader
     access: [["Greh"]]
@@ -439,7 +439,7 @@
   name: "{ ent-MetalAltDoorFalloutDolgClosed }"
   parent: MetalWindowDoorFallout
   description: "{ ent-MetalWindowDoorFalloutMercClosed.desc }"
-  suffix: ST, mapping, Sin # Zona14: ST, mapping, Грех
+  suffix: ST, mapping, Sin # Zona14: ST, mapping, Sin
   components:
   - type: AccessReader
     access: [["Greh"]]
@@ -449,7 +449,7 @@
   name: "{ ent-MetalBarDoorFalloutMercClosed }"
   parent: MetalBarDoorFallout
   description: "{ ent-MetalBarDoorFalloutMercClosed.desc }"
-  suffix: ST, mapping, Sin # Zona14: ST, mapping, Грех
+  suffix: ST, mapping, Sin # Zona14: ST, mapping, Sin
   components:
   - type: AccessReader
     access: [["Greh"]]
@@ -459,7 +459,7 @@
   name: "{ ent-MetalAltDoorFalloutDolgClosed }"
   parent: MetalDoorFallout
   description: "{ ent-MetalAltDoorFalloutArmyClosed.desc }"
-  suffix: ST, mapping, Journalists # Zona14: ST, mapping, Журналисты
+  suffix: ST, mapping, Journalists # Zona14: ST, mapping, Journalists
   components:
   - type: AccessReader
     access: [["Journalist"]]
@@ -470,7 +470,7 @@
   name: "{ ent-HermoDverTypeOneBanditsClosed }"
   parent: HermoDverTypeOne
   description: "{ ent-HermoDverTypeOneArmyClosed.desc }"
-  suffix: ST, mapping, Scientists # Zona14: ST, mapping, Учёные
+  suffix: ST, mapping, Scientists # Zona14: ST, mapping, Scientists
   components:
   - type: AccessReader
     access: [["SciBase"]]
@@ -480,7 +480,7 @@
   name: "{ ent-HermoDverTypeOneBanditsClosed }"
   parent: HermoDverTypeTwo
   description: "{ ent-HermoDverTypeOneArmyClosed.desc }"
-  suffix: ST, mapping, Scientists # Zona14: ST, mapping, Учёные
+  suffix: ST, mapping, Scientists # Zona14: ST, mapping, Scientists
   components:
   - type: AccessReader
     access: [["SciBase"]]
@@ -490,7 +490,7 @@
   name: "{ ent-MetalAltDoorFalloutDolgClosed }"
   parent: MetalDoorFallout
   description: "{ ent-MetalAltDoorFalloutArmyClosed.desc }"
-  suffix: ST, mapping, Scientists # Zona14: ST, mapping, Учёные
+  suffix: ST, mapping, Scientists # Zona14: ST, mapping, Scientists
   components:
   - type: AccessReader
     access: [["SciBase"]]
@@ -500,7 +500,7 @@
   name: "{ ent-MetalAltDoorFalloutDolgClosed }"
   parent: MetalWindowDoorFallout
   description: "{ ent-MetalWindowDoorFalloutMercClosed.desc }"
-  suffix: ST, mapping, Scientists # Zona14: ST, mapping, Учёные
+  suffix: ST, mapping, Scientists # Zona14: ST, mapping, Scientists
   components:
   - type: AccessReader
     access: [["SciBase"]]
@@ -510,7 +510,7 @@
   name: "{ ent-MetalGrateDoorFalloutMercClosed }"
   parent: MetalGrateDoorFallout
   description: "{ ent-MetalGrateDoorFalloutMilitaryClosed.desc }"
-  suffix: ST, mapping, Scientists # Zona14: ST, mapping, Учёные
+  suffix: ST, mapping, Scientists # Zona14: ST, mapping, Scientists
   components:
   - type: AccessReader
     access: [["SciBase"]]
@@ -520,7 +520,7 @@
   name: "{ ent-MetalBarDoorFalloutMercClosed }"
   parent: MetalBarDoorFallout
   description: "{ ent-MetalBarDoorFalloutMercClosed.desc }"
-  suffix: ST, mapping, Scientists # Zona14: ST, mapping, Учёные
+  suffix: ST, mapping, Scientists # Zona14: ST, mapping, Scientists
   components:
   - type: AccessReader
     access: [["SciBase"]]
@@ -530,7 +530,7 @@
   name: "{ ent-HermoDverTypeOneBanditsClosed }"
   parent: HermoDverTypeOne
   description: "{ ent-HermoDverTypeOneArmyClosed.desc }"
-  suffix: ST, mapping, Scientists, Leader # Zona14: ST, mapping, Учёные, Лидер
+  suffix: ST, mapping, Scientists, Leader # Zona14: ST, mapping, Scientists, Leader
   components:
   - type: AccessReader
     access: [["SciHead"]]
@@ -540,7 +540,7 @@
   name: Red Wooden Door
   parent: WoodRedDoorFallout
   description: Wooden door, painted red. It opens faster than a regular door, with a reliable lock.
-  suffix: ST, mapping, Scientists, Leader # Zona14: ST, mapping, Учёные, Лидер
+  suffix: ST, mapping, Scientists, Leader # Zona14: ST, mapping, Scientists, Leader
   components:
   - type: AccessReader
     access: [["SciHead"]]
@@ -550,7 +550,7 @@
   name: Red Steel Door
   parent: MetalRedDoorFallout
   description: Steel door with a secure lock. It is painted red.
-  suffix: ST, mapping, Scientists, Leader # Zona14: ST, mapping, Учёные, Лидер
+  suffix: ST, mapping, Scientists, Leader # Zona14: ST, mapping, Scientists, Leader
   components:
   - type: AccessReader
     access: [["SciHead"]]
@@ -560,7 +560,7 @@
   name: "{ ent-MetalAltDoorFalloutDolgClosed }"
   parent: MetalDoorFallout
   description: "{ ent-MetalAltDoorFalloutArmyClosed.desc }"
-  suffix: ST, mapping, Scientists, Leader # Zona14: ST, mapping, Учёные, Лидер
+  suffix: ST, mapping, Scientists, Leader # Zona14: ST, mapping, Scientists, Leader
   components:
   - type: AccessReader
     access: [["SciHead"]]
@@ -570,7 +570,7 @@
   name: Military Gate
   parent: STBaseMaterialDoor
   description: A passage in a wall or fence that is locked with alignments.
-  suffix: ST, mapping, Military # Zona14: ST, mapping, Военные
+  suffix: ST, mapping, Military # Zona14: ST, mapping, Military
   components:
   - type: Occluder
     boundingBox: "-1.5,-0.5,1.5,0.5"
@@ -595,7 +595,7 @@
   name: "{ ent-MetalAltDoorFalloutDolgClosed }"
   parent: MetalWindowDoorFallout
   description: "{ ent-MetalWindowDoorFalloutMercClosed.desc }"
-  suffix: ST, mapping, Neutrals # Zona14: ST, mapping, Нейтралы
+  suffix: ST, mapping, Neutrals # Zona14: ST, mapping, Neutrals
   components:
   - type: AccessReader
     access: [["Neutral"]]
@@ -605,7 +605,7 @@
   name: "{ ent-MetalBarDoorFalloutMercClosed }"
   parent: MetalBarDoorFallout
   description: "{ ent-MetalBarDoorFalloutMercClosed.desc }"
-  suffix: ST, mapping, Neutrals # Zona14: ST, mapping, Нейтралы
+  suffix: ST, mapping, Neutrals # Zona14: ST, mapping, Neutrals
   components:
   - type: AccessReader
     access: [["Neutral"]]
@@ -615,7 +615,7 @@
   name: "{ ent-HermoDverTypeOneBanditsClosed }"
   parent: HermoDverTypeTwo
   description: "{ ent-HermoDverTypeOneArmyClosed.desc }"
-  suffix: ST, mapping, Neutrals # Zona14: ST, mapping, Нейтралы
+  suffix: ST, mapping, Neutrals # Zona14: ST, mapping, Neutrals
   components:
   - type: AccessReader
     access: [["Neutral"]]
@@ -625,7 +625,7 @@
   name: Neutral Steel Door
   parent: MetalAltDoorFallout
   description: "{ ent-MetalAltDoorFalloutArmyClosed.desc }"
-  suffix: ST, mapping, Neutrals # Zona14: ST, mapping, Нейтралы
+  suffix: ST, mapping, Neutrals # Zona14: ST, mapping, Neutrals
   components:
   - type: AccessReader
     access: [["Neutral"]]
@@ -635,7 +635,7 @@
   name: "{ ent-MetalAltDoorFalloutDolgClosed }"
   parent: MetalWindowDoorFallout
   description: "{ ent-MetalWindowDoorFalloutMercClosed.desc }"
-  suffix: ST, mapping, Search # Zona14: ST, mapping, Поиск
+  suffix: ST, mapping, Search # Zona14: ST, mapping, Search
   components:
   - type: AccessReader
     access: [["Poisk"]]
@@ -645,7 +645,7 @@
   name: "{ ent-MetalBarDoorFalloutMercClosed }"
   parent: MetalBarDoorFallout
   description: "{ ent-MetalBarDoorFalloutMercClosed.desc }"
-  suffix: ST, mapping, Search # Zona14: ST, mapping, Поиск
+  suffix: ST, mapping, Search # Zona14: ST, mapping, Search
   components:
   - type: AccessReader
     access: [["Poisk"]]
@@ -655,7 +655,7 @@
   name: "{ ent-HermoDverTypeOneBanditsClosed }"
   parent: HermoDverTypeTwo
   description: "{ ent-HermoDverTypeOneArmyClosed.desc }"
-  suffix: ST, mapping, Search # Zona14: ST, mapping, Поиск
+  suffix: ST, mapping, Search # Zona14: ST, mapping, Search
   components:
   - type: AccessReader
     access: [["Poisk"]]
@@ -665,12 +665,12 @@
   name: "{ ent-MetalAltDoorFalloutDolgClosed }"
   parent: MetalAltDoorFallout
   description: "{ ent-MetalAltDoorFalloutArmyClosed.desc }"
-  suffix: ST, mapping, Search # Zona14: ST, mapping, Поиск
+  suffix: ST, mapping, Search # Zona14: ST, mapping, Search
   components:
   - type: AccessReader
     access: [["Poisk"]]
 
-# Zona14: Жабам
+# Zona14: For Toads
 - type: entity
   id: WoodDoorFalloutJaba
   name: Wooden Door
@@ -743,7 +743,7 @@
     - type: AccessReader
       access: [["Jaba"]]
 
-# Zona14: Серафимам
+# Zona14: Seraphimам
 - type: entity
   id: WoodDoorFalloutSeraphims
   name: "{ ent-WoodDoorFalloutJaba }"
@@ -816,7 +816,7 @@
     - type: AccessReader
       access: [["Seraphims"]]
 
-# Zona14: Паломникам
+# Zona14: For Pilgrims
 - type: entity
   id: WoodDoorFalloutPilgrim
   name: "{ ent-WoodDoorFalloutJaba }"
@@ -827,7 +827,7 @@
   - type: AccessReader
     access: [["Pilgrim"]]
 
-# Zona14: Ополчению
+# Zona14: For Militia
 - type: entity
   id: MetalDoorFalloutOpolchenciClosed
   name: Steel Door
@@ -838,7 +838,7 @@
   - type: AccessReader
     access: [["MilitiaAccess"]]
 
-# Zona14: Монолиту
+# Zona14: Monolithу
 - type: entity
   id: WoodDoorFalloutMonolith
   name: Wooden door
@@ -916,7 +916,7 @@
   name: "{ ent-MetalAltDoorFalloutDolgClosed }"
   parent: MetalWindowDoorFallout
   description: "{ ent-MetalWindowDoorFalloutMercClosed.desc }"
-  suffix: ST, mapping, Project # Zona14: ST, mapping, Проект
+  suffix: ST, mapping, Project # Zona14: ST, mapping, Project
   components:
   - type: AccessReader
     access: [["Project"]]
@@ -926,7 +926,7 @@
   name: "{ ent-MetalBarDoorFalloutMercClosed }"
   parent: MetalBarDoorFallout
   description: "{ ent-MetalBarDoorFalloutMercClosed.desc }"
-  suffix: ST, mapping, Project # Zona14: ST, mapping, Проект
+  suffix: ST, mapping, Project # Zona14: ST, mapping, Project
   components:
   - type: AccessReader
     access: [["Project"]]
@@ -936,7 +936,7 @@
   name: "{ ent-HermoDverTypeOneBanditsClosed }"
   parent: HermoDverTypeTwo
   description: "{ ent-HermoDverTypeOneArmyClosed.desc }"
-  suffix: ST, mapping, Project # Zona14: ST, mapping, Проект
+  suffix: ST, mapping, Project # Zona14: ST, mapping, Project
   components:
   - type: AccessReader
     access: [["Project"]]
@@ -946,7 +946,7 @@
   name: "{ ent-MetalAltDoorFalloutDolgClosed }"
   parent: MetalAltDoorFallout
   description: "{ ent-MetalAltDoorFalloutArmyClosed.desc }"
-  suffix: ST, mapping, Project # Zona14: ST, mapping, Проект
+  suffix: ST, mapping, Project # Zona14: ST, mapping, Project
   components:
   - type: AccessReader
     access: [["Project"]]
@@ -956,7 +956,7 @@
   name: "{ ent-MetalAltDoorFalloutDolgClosed }"
   parent: MetalAltDoorFallout
   description: "{ ent-MetalAltDoorFalloutArmyClosed.desc }"
-  suffix: ST, mapping, Orchestrator of Project # Zona14: ST, mapping, Оркестратор Проекта
+  suffix: ST, mapping, Orchestrator of Project # Zona14: ST, mapping, Project Orchestrator
   components:
   - type: AccessReader
     access: [["ProjectOrchestrator"]]
@@ -966,7 +966,7 @@
   name: hermetic door
   parent: HermoDverTypeOne
   description: Protective-hermetic and hermetic devices used to safeguard civil defense protective structures from various harmful effects.
-  suffix: ST, mapping, Circus # Zona14: ST, mapping, Циркачи
+  suffix: ST, mapping, Circus # Zona14: ST, mapping, Circus
   components:
   - type: AccessReader
     access: [["Circus"]]
@@ -976,7 +976,7 @@
   name: hermetic door
   parent: HermoDverTypeTwo
   description: Protective-hermetic and hermetic devices used to safeguard civil defense protective structures from various harmful effects.
-  suffix: ST, mapping, Circus # Zona14: ST, mapping, Циркачи
+  suffix: ST, mapping, Circus # Zona14: ST, mapping, Circus
   components:
   - type: AccessReader
     access: [["Circus"]]
@@ -986,7 +986,7 @@
   name: steel door
   parent: MetalDoorFallout
   description: A sturdy steel door with a reliable lock.
-  suffix: ST, mapping, Circus # Zona14: ST, mapping, Циркачи
+  suffix: ST, mapping, Circus # Zona14: ST, mapping, Circus
   components:
   - type: AccessReader
     access: [["Circus"]]
@@ -996,7 +996,7 @@
   name: steel door
   parent: MetalWindowDoorFallout
   description: A sturdy steel door with a window and a reliable lock.
-  suffix: ST, mapping, Circus # Zona14: ST, mapping, Циркачи
+  suffix: ST, mapping, Circus # Zona14: ST, mapping, Circus
   components:
   - type: AccessReader
     access: [["Circus"]]
@@ -1006,7 +1006,7 @@
   name: reinforced grated door
   parent: MetalGrateDoorFallout
   description: A sturdy grated door with a reliable lock.
-  suffix: ST, mapping, Circus # Zona14: ST, mapping, Циркачи
+  suffix: ST, mapping, Circus # Zona14: ST, mapping, Circus
   components:
   - type: AccessReader
     access: [["Circus"]]
@@ -1016,19 +1016,19 @@
   name: grated door
   parent: MetalBarDoorFallout
   description: A grated door with a reliable lock.
-  suffix: ST, mapping, Circus # Zona14: ST, mapping, Циркачи
+  suffix: ST, mapping, Circus # Zona14: ST, mapping, Circus
   components:
   - type: AccessReader
     access: [["Circus"]]
 
-# Zona14: Свобода и наемники
+# Zona14: Freedom and Mercenaries
 
 - type: entity
   id: HermoDverTypeOneMercAndFreedomClosed
   name: Hermetic Door
   parent: HermoDverTypeOne
   description: "{ ent-HermoDverTypeOneArmyClosed.desc }"
-  suffix: ST, mapping, Freedom # Zona14: ST, mapping, Свобода
+  suffix: ST, mapping, Freedom # Zona14: ST, mapping, Freedom
   components:
   - type: AccessReader
     access: [["Freedom"] , ["FreedomNovice"]]
@@ -1038,7 +1038,7 @@
   name: Hermetic Door
   parent: HermoDverTypeTwo
   description: "{ ent-HermoDverTypeOneArmyClosed.desc }"
-  suffix: ST, mapping, Freedom # Zona14: ST, mapping, Свобода
+  suffix: ST, mapping, Freedom # Zona14: ST, mapping, Freedom
   components:
   - type: AccessReader
     access: [["Freedom"] , ["FreedomNovice"]]
@@ -1048,7 +1048,7 @@
   name: Steel Door
   parent: MetalDoorFallout
   description: "{ ent-MetalAltDoorFalloutArmyClosed.desc }"
-  suffix: ST, mapping, Freedom # Zona14: ST, mapping, Свобода
+  suffix: ST, mapping, Freedom # Zona14: ST, mapping, Freedom
   components:
   - type: AccessReader
     access: [["Freedom"] , ["FreedomNovice"]]
@@ -1058,7 +1058,7 @@
   name: Steel Door
   parent: MetalAltDoorFallout
   description: "{ ent-MetalAltDoorFalloutArmyClosed.desc }"
-  suffix: ST, mapping, Freedom # Zona14: ST, mapping, Свобода
+  suffix: ST, mapping, Freedom # Zona14: ST, mapping, Freedom
   components:
   - type: AccessReader
     access: [["Freedom"] , ["FreedomNovice"]]
@@ -1068,7 +1068,7 @@
   name: Steel Door
   parent: MetalWindowDoorFallout
   description: "{ ent-MetalAltDoorFalloutArmyClosed.desc }"
-  suffix: ST, mapping, Freedom # Zona14: ST, mapping, Свобода
+  suffix: ST, mapping, Freedom # Zona14: ST, mapping, Freedom
   components:
   - type: AccessReader
     access: [["Freedom"] , ["FreedomNovice"]]
@@ -1078,7 +1078,7 @@
   name: Reinforced lattice door
   parent: MetalGrateDoorFallout
   description: A strong lattice door with a reliable lock.
-  suffix: ST, mapping, Freedom # Zona14: ST, mapping, Свобода
+  suffix: ST, mapping, Freedom # Zona14: ST, mapping, Freedom
   components:
   - type: AccessReader
     access: [["Freedom"] , ["FreedomNovice"]]
@@ -1088,19 +1088,19 @@
   name: "{ ent-MetalBarDoorFalloutMercClosed }"
   parent: MetalBarDoorFallout
   description: Lattice door with a secure lock.
-  suffix: ST, mapping, Freedom # Zona14: ST, mapping, Свобода
+  suffix: ST, mapping, Freedom # Zona14: ST, mapping, Freedom
   components:
   - type: AccessReader
     access: [["Freedom"] , ["FreedomNovice"]]
 
-# Zona14: ветерану
+# Zona14: for veteran
 
 - type: entity
   id: HermoDverTypeOneVeteranClosed
   name: hermetic door
   parent: HermoDverTypeOne
   description: Protective-hermetic and hermetic devices used to safeguard civil defense protective structures from various harmful effects.
-  suffix: ST, mapping, Veterans # Zona14: ST, mapping, Ветераны
+  suffix: ST, mapping, Veterans # Zona14: ST, mapping, Veterans
   components:
     - type: AccessReader
       access: [["Veteran"]]
@@ -1110,7 +1110,7 @@
   name: red wooden door
   parent: WoodRedDoorFallout
   description: A wooden door painted red. Opens faster than a regular door, with a reliable lock.
-  suffix: ST, mapping, Veterans # Zona14: ST, mapping, Ветераны
+  suffix: ST, mapping, Veterans # Zona14: ST, mapping, Veterans
   components:
   - type: AccessReader
     access: [["Veteran"]]
@@ -1120,7 +1120,7 @@
   name: red steel door
   parent: MetalRedDoorFallout
   description: A steel door with a reliable lock. Painted red.
-  suffix: ST, mapping, Veterans # Zona14: ST, mapping, Ветераны
+  suffix: ST, mapping, Veterans # Zona14: ST, mapping, Veterans
   components:
   - type: AccessReader
     access: [["Veteran"]]
@@ -1130,7 +1130,7 @@
   name: steel door
   parent: MetalWindowDoorFallout
   description: A sturdy steel door with a window and a reliable lock.
-  suffix: ST, mapping, Veterans # Zona14: ST, mapping, Ветераны
+  suffix: ST, mapping, Veterans # Zona14: ST, mapping, Veterans
   components:
   - type: AccessReader
     access: [["Veteran"]]
@@ -1140,7 +1140,7 @@
   name: wooden door
   parent: WoodDoorFallout
   description: An ordinary wooden door.
-  suffix: ST, mapping, Veterans # Zona14: ST, mapping, Ветераны
+  suffix: ST, mapping, Veterans # Zona14: ST, mapping, Veterans
   components:
   - type: AccessReader
     access: [["Veteran"]]
@@ -1150,7 +1150,7 @@
   name: grated door
   parent: MetalBarDoorFallout
   description: A grated door with a reliable lock.
-  suffix: ST, mapping, Veterans # Zona14: ST, mapping, Ветераны
+  suffix: ST, mapping, Veterans # Zona14: ST, mapping, Veterans
   components:
   - type: AccessReader
     access: [["Veteran"]]
@@ -1160,7 +1160,7 @@
   name: steel door
   parent: MetalAltDoorFallout
   description: A sturdy steel door with a reliable lock.
-  suffix: ST, mapping, Veterans # Zona14: ST, mapping, Ветераны
+  suffix: ST, mapping, Veterans # Zona14: ST, mapping, Veterans
   components:
     - type: AccessReader
       access: [["Veteran"]]
@@ -1170,7 +1170,7 @@
   name: steel door
   parent: MetalAltDoorFallout
   description: A sturdy steel door with a reliable lock.
-  suffix: ST, mapping, Guide # Zona14: ST, mapping, Проводник
+  suffix: ST, mapping, Guide # Zona14: ST, mapping, Guide
   components:
     - type: AccessReader
       access: [["Guide"]]
@@ -1180,7 +1180,7 @@
   name: steel door
   parent: MetalAltDoorFallout
   description: A sturdy steel door with a reliable lock.
-  suffix: ST, mapping, Atom # Zona14: ST, mapping, Атом
+  suffix: ST, mapping, Atom # Zona14: ST, mapping, Atom
   components:
     - type: AccessReader
       access: [["Atom"]]

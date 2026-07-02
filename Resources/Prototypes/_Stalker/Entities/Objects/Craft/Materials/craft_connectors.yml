@@ -4,7 +4,7 @@
   id: STCraftBasicThreadKitT1
   name: T1 Basic Thread Set
   description: a simple set of threads of different colors and strengths, used for sewing and light repair of clothes. T1
-  suffix: Stalker, craft, T1 # Zona14: Stalker, крафт, T1
+  suffix: Stalker, craft, T1 # Zona14: Stalker, craft, T1
   components:
     - type: Sprite
       state: basic_thread_kit_t1
@@ -15,14 +15,14 @@
       count: 1
     - type: Craftable
     - type: RepositoryItem
-      categoryName: Crafting # Zona14: Крафты
+      categoryName: Crafting # Zona14: Crafts
 
 - type: entity
   parent: STBaseIngridient
   id: STCraftTapeKitT2
   name: T2 Tape and Glue Set
   description: the set includes different types of tape and glue, used for temporary repairs and fastening materials. T2
-  suffix: Stalker, craft, T2 # Zona14: Stalker, крафт, T2
+  suffix: Stalker, craft, T2 # Zona14: Stalker, craft, T2
   components:
     - type: Sprite
       state: tape_kit_t2
@@ -33,14 +33,14 @@
       count: 1
     - type: Craftable
     - type: RepositoryItem
-      categoryName: Crafting # Zona14: Крафты
+      categoryName: Crafting # Zona14: Crafts
 
 - type: entity
   parent: STBaseIngridient
   id: STCraftGlueKitT3
   name: T3 Glue Kit
   description: includes various types of adhesive for permanent repairs and bonding of materials. T3
-  suffix: Stalker, craft, T3 # Zona14: Stalker, крафт, T3
+  suffix: Stalker, craft, T3 # Zona14: Stalker, craft, T3
   components:
     - type: Sprite
       state: glue_kit_t3
@@ -51,14 +51,14 @@
       count: 1
     - type: Craftable
     - type: RepositoryItem
-      categoryName: Crafting # Zona14: Крафты
+      categoryName: Crafting # Zona14: Crafts
 
 - type: entity
   parent: STBaseIngridient
   id: STCraftIndustrialThreadStaplesKitT4
   name: T4 Industrial Thread and Staple Set
   description: includes high-strength threads and metal staples for repairing and fastening heavy materials. T4
-  suffix: Stalker, craft, T4 # Zona14: Stalker, крафт, T4
+  suffix: Stalker, craft, T4 # Zona14: Stalker, craft, T4
   components:
     - type: Sprite
       state: industrial_staples_kit_t4
@@ -69,14 +69,14 @@
       count: 1
     - type: Craftable
     - type: RepositoryItem
-      categoryName: Crafting # Zona14: Крафты
+      categoryName: Crafting # Zona14: Crafts
 
 - type: entity
   parent: STBaseIngridient
   id: STCraftHighStrengthKitT5
   name: T5 High Strength Adhesive and Staple Set
   description: includes high-quality materials for maximum strength and durability, used for the most reliable connections and repairs. T5
-  suffix: Stalker, craft, T5 # Zona14: Stalker, крафт, T5
+  suffix: Stalker, craft, T5 # Zona14: Stalker, craft, T5
   components:
     - type: Sprite
       state: high_strength_kit_t5
@@ -87,4 +87,4 @@
       count: 1
     - type: Craftable
     - type: RepositoryItem
-      categoryName: Crafting # Zona14: Крафты
+      categoryName: Crafting # Zona14: Crafts

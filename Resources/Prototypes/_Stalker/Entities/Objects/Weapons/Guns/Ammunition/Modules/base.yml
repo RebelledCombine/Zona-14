@@ -22,5 +22,5 @@
     - type: Sprite
       state: icon
     - type: RepositoryItem
-      categoryName: Weapons # Zona14: Оружие
+      categoryName: Weapons # Zona14: Weapons
       

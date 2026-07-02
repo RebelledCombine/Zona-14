@@ -913,7 +913,7 @@
     - Binary
     - Common
 
-# Zona14: ПИТОМЦЫ
+# Zona14: PETS
 
 - type: entity
   parent: NPCDoll
@@ -1079,14 +1079,14 @@
       enum.ShopUiKey.Key:
         type: ShopBoundUserInterface
 
-# Zona14: Скупщики дракоценностей
+# Zona14: Jewelry pawnbrokers
 
 - type: entity
   parent: NPCDoll
   id: NPCAlinaMorozova
   name: Alina Morozova [→   ←]
   description: "Luxury is not about money, it's about requirements for the best. It is a lack of compromise for the most sophisticated consumers."
-  suffix: ST, buyout best prices # Zona14: ST, скупка лучшие цены
+  suffix: ST, buyout best prices # Zona14: ST, pawnshop best prices
   components:
   - type: Sprite
     sprite: _Stalker/Objects/NPCs/alina_morozova.rsi
@@ -1107,7 +1107,7 @@
   parent: NPCDoll
   id: NPCErjanAlimov
   name: Yerzhan Alimov [→   ←]
-  suffix: ST, buyout worst prices # Zona14: ST, скупка худшие цены
+  suffix: ST, buyout worst prices # Zona14: ST, pawnshop worst prices
   description: We buy jewelry at good prices
   components:
   - type: Sprite
@@ -1130,7 +1130,7 @@
   id: NPCJuryIzvorotin
   name: Yuri Izvorotin [→   ←]
   description: We buy jewelry. Slippery typical. Someone else would not have survived with such a business.
-  suffix: ST, buyout average prices # Zona14: ST, скупка средние цены
+  suffix: ST, buyout average prices # Zona14: ST, pawnshop average prices
   components:
   - type: Sprite
     sprite: _Stalker/Objects/NPCs/jury_izvorotin.rsi
@@ -1147,7 +1147,7 @@
       enum.ShopUiKey.Key:
         type: ShopBoundUserInterface
 
-# Zona14: Клерки
+# Zona14: Clerks
 
 - type: entity
   parent: NPCDoll

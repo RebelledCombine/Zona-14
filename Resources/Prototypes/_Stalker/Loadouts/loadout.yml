@@ -1,4 +1,4 @@
-# Zona14: Сталкеры
+# Zona14: Stalkers
 - type: loadout
   id: STOuterClothingStalker
   equipment:
@@ -19,9 +19,9 @@
   equipment:
     outerClothing: ClothingOuterJacketNeytral
 
-# Zona14: Общее
+# Zona14: General
 
-    # Zona14: Штаны
+    # Zona14: Pants
 - type: loadout
   id: STlegsSTClothingLegsSerafimPants
   equipment:
@@ -197,7 +197,7 @@
   equipment:
     legs: ClothingLegsRussianNumber
 
-    # Zona14: обувь
+    # Zona14: footwear
 - type: loadout
   id: STClothingShoesBootsSeraFilled
   equipment:
@@ -222,7 +222,7 @@
   id: ClothingShoesBootsLeather
   equipment:
     shoes: ClothingShoesBootsLeather
-    # Zona14: Торс
+    # Zona14: Torso
 - type: loadout
   id: STTorsoSTClothingTorsoSerafimCherubimFullReady
   equipment:
@@ -468,7 +468,7 @@
   equipment:
     torso: ClothingTorsoTankMilitary
 
-    # Zona14: Безделушки в рюкзак
+    # Zona14: Trinkets in backpack
 - type: loadout
   id: Suka
   storage:
@@ -487,7 +487,7 @@
     back:
     - Blunt
 
-    # Zona14: Начальное снаряжение в рюкзаке
+    # Zona14: Starting equipment in backpack
 - type: loadout
   id: BaseGlockMag10
   storage:
@@ -529,7 +529,7 @@
   storage:
     back:
     - FoodTinPeaches
-    # Zona14: Оружие
+    # Zona14: Weapons
 - type: loadout
   id: STSuitstorageSTWeaponShotgunMP155T
   equipment:
@@ -545,7 +545,7 @@
   equipment:
     suitstorage: STWeaponRifleSaiga545
 
-    # Zona14: Патроны
+    # Zona14: Ammo
 - type: loadout
   id: 7mmBuckshotBox
   storage:
@@ -593,7 +593,7 @@
   storage:
     back:
     - 918PGJBox
-    # Zona14: Карман 1
+    # Zona14: Pocket 1
 - type: loadout
   id: STBoltBagFilled
   equipment:
@@ -613,12 +613,12 @@
   id: WeaponPistolStalkerGlock
   equipment:
     pocket1: WeaponPistolStalkerGlock
-    # Zona14: Карман 2
+    # Zona14: Pocket 2
 - type: loadout
   id: STCombatKnife
   equipment:
     pocket2: STCombatKnife
-    # Zona14: Рюкзаки
+    # Zona14: Backpacks
 - type: loadout
   id: STBackpack
   equipment:
@@ -633,7 +633,7 @@
   id: ClothingBackpackTownBlackStalker
   equipment:
     back: ClothingBackpackTownBlackStalker
-    # Zona14: Маски
+    # Zona14: Masks
 - type: loadout
   id: STMaskStalker
   equipment:
@@ -673,12 +673,12 @@
   id: ClothingMaskNeckBalaklava2
   equipment:
     mask: ClothingMaskNeckBalaklava2
-    # Zona14: Пояса
+    # Zona14: Belts
 - type: loadout
   id: STBeltStalker
   equipment:
     belt: ClothingBeltBandolierStalker
-    # Zona14: Очки
+    # Zona14: Points
 - type: loadout
   id: ClothingEyesGlassesCheapSunglasses
   equipment:
@@ -693,43 +693,43 @@
   id: ClothingEyesGlasses
   equipment:
     eyes: ClothingEyesGlasses
-# Zona14: Бандиты
+# Zona14: Bandits
 - type: loadout
   id: STOuterClothingStalkerBandit
   equipment:
     outerClothing: ClothingOuterJacketBandit
 
-# Zona14: Долг
+# Zona14: Duty
 - type: loadout
   id: STOuterClothingStalkerDolg
   equipment:
     outerClothing: ClothingOuterJacketDolg
 
-# Zona14: Свобода
+# Zona14: Freedom
 - type: loadout
   id: STOuterClothingStalkerFreedom
   equipment:
     outerClothing: ClothingOuterJacketFreedom
 
-# Zona14: Ученые
+# Zona14: Scientists
 - type: loadout
   id: STOuterClothingStalkerSci
   equipment:
     outerClothing: ClothingOuterJacketSCI
 
-# Zona14: Серафимы
+# Zona14: Seraphim
 - type: loadout
   id: STOuterClothingStalkerSeraphims
   equipment:
     outerClothing: ClothingOuterJacketSera
 
-# Zona14: Чистое небо
+# Zona14: Clear Sky
 - type: loadout
   id: STOuterClothingStalkerClearSky
   equipment:
     outerClothing: ClothingOuterJacketCN
 
-# Zona14: Ренегаты
+# Zona14: Renegades
 
 - type: loadout
   id: ClothingJaketRealHuman

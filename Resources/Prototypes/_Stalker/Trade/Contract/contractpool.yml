@@ -1,139 +1,139 @@
-# Zona14: Пул наград - Лёгкий
+# Zona14: Reward pool - Light
 - type: ncContractRewardPool
   id: ContractRewardEasy
   entries:
   - type: Item
-    id: MedkitAI2 # Zona14: Аптечка АИ-2
+    id: MedkitAI2 # Zona14: First aid kit AI-2
     amount: { min: 3, max: 6 }
     weight: 3
   - type: Item
-    id: MedkitMilitary # Zona14: Военная аптечка
+    id: MedkitMilitary # Zona14: Military first aid kit
     amount: { min: 2, max: 5 }
     weight: 2
   - type: Item
-    id: MedkitScience # Zona14: Научная аптечка
+    id: MedkitScience # Zona14: Scientific first aid kit
     amount: { min: 1, max: 2 }
     weight: 1
   - type: Item
-    id: ClothingOuterArmorZaryaStalkerModifedType2 # Zona14: Броня "Заря" (модиф. тип 2)
+    id: ClothingOuterArmorZaryaStalkerModifedType2 # Zona14: Armor "Zarya" (mod type 2)
     weight: 1
   - type: Item
-    id: ClothingOuterArmorZaryaStalkerModifedType1 # Zona14: Броня "Заря" (модиф. тип 1)
+    id: ClothingOuterArmorZaryaStalkerModifedType1 # Zona14: Armor "Zarya" (mod type 1)
     weight: 1
   - type: Item
-    id: ClothingOuterArmorZaryaStalker # Zona14: Броня "Заря"
+    id: ClothingOuterArmorZaryaStalker # Zona14: Armor "Zarya"
     weight: 1
   - type: Item
-    id: SetZaryaStalkerBuyableCrate # Zona14: Набор "Заря" (ящик)
+    id: SetZaryaStalkerBuyableCrate # Zona14: Set "Zarya" (crate)
     weight: 1
   - type: Item
-    id: ClothingBeltWebbingHolsterStalkerZarya # Zona14: Кобура "Заря"
+    id: ClothingBeltWebbingHolsterStalkerZarya # Zona14: Holster "Zarya"
     weight: 1
   - type: Item
-    id: ClothingBackpackStalkerZaryaGreen # Zona14: Рюкзак "Заря" (зелёный)
+    id: ClothingBackpackStalkerZaryaGreen # Zona14: Backpack "Zarya" (green)
     weight: 1
   - type: Item
-    id: ClothingBackpackStalkerZaryaBlack # Zona14: Рюкзак "Заря" (чёрный)
+    id: ClothingBackpackStalkerZaryaBlack # Zona14: Backpack "Zarya" (black)
     weight: 1
   - type: Item
-    id: STWeaponShotgunMP133 # Zona14: Дробовик МП-133
+    id: STWeaponShotgunMP133 # Zona14: Shotgun MP-133
     weight: 1
   - type: Item
-    id: STWeaponShotgunMossbergM88 # Zona14: Дробовик Mossberg M88
+    id: STWeaponShotgunMossbergM88 # Zona14: Shotgun Mossberg M88
     weight: 1
   - type: Item
-    id: ZoneArtifactDetectorResponse # Zona14: Детектор "Отклик"
+    id: ZoneArtifactDetectorResponse # Zona14: Detector "Otklik"
     weight: 1
   - type: Item
-    id: LgbtKnife # Zona14: Нож
+    id: LgbtKnife # Zona14: Knife
     weight: 1
   - type: Item
-    id: ClothingOuterArmorSpark # Zona14: Броня «Искра»
+    id: ClothingOuterArmorSpark # Zona14: Armor "Iskra"
     weight: 1
   - type: Item
-    id: ClothingOuterArmor6B2 # Zona14: Бронежилет 6Б2
+    id: ClothingOuterArmor6B2 # Zona14: Body armor 6B2
     weight: 1
   - type: Item
-    id: ClothingOuterArmorZN1 # Zona14: Броня ЗН-1
+    id: ClothingOuterArmorZN1 # Zona14: Armor ZN-1
     weight: 1
   - type: Item
-    id: 545Mag45 # Zona14: Магазин 5.45x39 (45 шт.)
+    id: 545Mag45 # Zona14: Magazine 5.45x39 (45 rds.)
     weight: 1
   - type: Item
-    id: 556Mag45 # Zona14: Магазин 5.56 NATO (45 шт.)
+    id: 556Mag45 # Zona14: Magazine 5.56 NATO (45 rds.)
     weight: 1
   - type: Item
-    id: STWeaponShotgunBenelliM4Super90 # Zona14: Магазин 5.56 NATO (45 шт.)
+    id: STWeaponShotgunBenelliM4Super90 # Zona14: Magazine 5.56 NATO (45 rds.)
     weight: 1
   - type: Item
-    id: STWeaponShotgunCompact # Zona14: Магазин 5.56 NATO (45 шт.)
+    id: STWeaponShotgunCompact # Zona14: Magazine 5.56 NATO (45 rds.)
     weight: 1
   - type: Item
-    id: STWeaponSniperSKS # Zona14: Магазин 5.56 NATO (45 шт.)
+    id: STWeaponSniperSKS # Zona14: Magazine 5.56 NATO (45 rds.)
     weight: 1
   - type: Item
-    id: ArmyProvisionCrate # Zona14: Магазин 5.56 NATO (45 шт.)
+    id: ArmyProvisionCrate # Zona14: Magazine 5.56 NATO (45 rds.)
     weight: 1
   - type: Item
-    id: ArmyMedkitMilitaryCrate # Zona14: Магазин 5.56 NATO (45 шт.)
+    id: ArmyMedkitMilitaryCrate # Zona14: Magazine 5.56 NATO (45 rds.)
     weight: 1
   - type: Item
-    id: ClothingBackpackDuffelCommonStalker # Zona14: Магазин 5.56 NATO (45 шт.)
+    id: ClothingBackpackDuffelCommonStalker # Zona14: Magazine 5.56 NATO (45 rds.)
     weight: 1
   - type: Item
-    id: SanitarCrate # Zona14: Магазин 5.56 NATO (45 шт.)
+    id: SanitarCrate # Zona14: Magazine 5.56 NATO (45 rds.)
     weight: 1
 
-# Zona14: Пул наград - Средний
+# Zona14: Reward pool - Medium
 - type: ncContractRewardPool
   id: ContractRewardMedium
   entries:
   - type: Item
-    id: MedkitAI2 # Zona14: Аптечка АИ-2
+    id: MedkitAI2 # Zona14: First aid kit AI-2
     amount: { min: 3, max: 6 }
     weight: 3
   - type: Item
-    id: MedkitMilitary # Zona14: Военная аптечка
+    id: MedkitMilitary # Zona14: Military first aid kit
     amount: { min: 3, max: 6 }
     weight: 2
   - type: Item
-    id: MedkitScience # Zona14: Научная аптечка
+    id: MedkitScience # Zona14: Scientific first aid kit
     amount: { min: 2, max: 3 }
     weight: 1
   - type: Item
-    id: BoxArtcont # Zona14: Контейнер для артефактов
+    id: BoxArtcont # Zona14: Artifact container
     amount: { min: 1, max: 3 }
     weight: 2
   - type: Item
-    id: STWeaponRifleSaiga739 # Zona14: Сайга 739
+    id: STWeaponRifleSaiga739 # Zona14: Saiga 739
     weight: 1
   - type: Item
-    id: STWeaponRifleGalatz # Zona14: Галац
+    id: STWeaponRifleGalatz # Zona14: Galatz
     weight: 1
   - type: Item
-    id: 6mmBuckshotBoxCink # Zona14: Цинк Дроби
+    id: 6mmBuckshotBoxCink # Zona14: Buckshot zinc
     amount: { min: 1, max: 2 }
     weight: 2
   - type: Item
-    id: LgbtKnife # Zona14: Нож
+    id: LgbtKnife # Zona14: Knife
     weight: 1
   - type: Item
-    id: STWeaponSMGMP5 # Zona14: Пистолет-пулемёт MP5
+    id: STWeaponSMGMP5 # Zona14: Submachine gun MP5
     weight: 1
   - type: Item
-    id: ClothingOuterArmorSpark # Zona14: Броня «Искра»
+    id: ClothingOuterArmorSpark # Zona14: Armor "Iskra"
     weight: 1
   - type: Item
-    id: ClothingOuterArmorMilitarySpark # Zona14: Военная броня «Искра»
+    id: ClothingOuterArmorMilitarySpark # Zona14: Military armor "Iskra"
     weight: 1
   - type: Item
-    id: ClothingOuterArmorZN1 # Zona14: Броня ЗН-1
+    id: ClothingOuterArmorZN1 # Zona14: Armor ZN-1
     weight: 1
   - type: Item
-    id: STWeaponShotgunSPAS # Zona14: Дробовик SPAS-12
+    id: STWeaponShotgunSPAS # Zona14: Shotgun SPAS-12
     weight: 1
   - type: Item
-    id: STWeaponRifleAKS74 # Zona14: АКС-74
+    id: STWeaponRifleAKS74 # Zona14: AKS-74
     weight: 1
   - type: Item
     id: 545Mag45
@@ -144,103 +144,103 @@
     amount: { min: 2, max: 3 }
     weight: 1
   - type: Item
-    id: STWeaponRifleAKM # Zona14: АКС-74
+    id: STWeaponRifleAKM # Zona14: AKS-74
     weight: 1
   - type: Item
-    id: STClothingOuterKorynd # Zona14: АКС-74
+    id: STClothingOuterKorynd # Zona14: AKS-74
     weight: 1
   - type: Item
-    id: STWeaponShotgunBenelliM4Super90 # Zona14: Магазин 5.56 NATO (45 шт.)
+    id: STWeaponShotgunBenelliM4Super90 # Zona14: Magazine 5.56 NATO (45 rds.)
     weight: 1
   - type: Item
-    id: STWeaponSMGPP19919 # Zona14: Магазин 5.56 NATO (45 шт.)
+    id: STWeaponSMGPP19919 # Zona14: Magazine 5.56 NATO (45 rds.)
     weight: 1
   - type: Item
-    id: STWeaponSMGPP1901 # Zona14: Магазин 5.56 NATO (45 шт.)
+    id: STWeaponSMGPP1901 # Zona14: Magazine 5.56 NATO (45 rds.)
     weight: 1
   - type: Item
-    id: Veles # Zona14: Магазин 5.56 NATO (45 шт.)
+    id: Veles # Zona14: Magazine 5.56 NATO (45 rds.)
     weight: 1
   - type: Item
-    id: STWeaponSMGPP2000 # Zona14: Магазин 5.56 NATO (45 шт.)
+    id: STWeaponSMGPP2000 # Zona14: Magazine 5.56 NATO (45 rds.)
     weight: 1
 
 
 
-# Zona14: Пул наград - Тяжёлый
+# Zona14: Reward pool - Heavy
 - type: ncContractRewardPool
   id: ContractRewardHard
   entries:
   - type: Item
-    id: STCraftSheetBrassT3 # Zona14: Листы латуни Т3
+    id: STCraftSheetBrassT3 # Zona14: Brass sheets T3
     amount: { min: 2, max: 5 }
     weight: 2
   - type: Item
-    id: ClothingOuterArmorSevaStalker # Zona14: Бронекостюм "Сева"
+    id: ClothingOuterArmorSevaStalker # Zona14: Armored suit "Seva"
     weight: 1
   - type: Item
-    id: ClothingOuterArmorMilitarySpark # Zona14: Военная броня «Искра»
+    id: ClothingOuterArmorMilitarySpark # Zona14: Military armor "Iskra"
     weight: 1
   - type: Item
-    id: STClothingOuterArmorLightPlateVestBaseANAgreen # Zona14: Лёгкий плитник АНА (зелёный)
+    id: STClothingOuterArmorLightPlateVestBaseANAgreen # Zona14: Light ANA plate carrier (green)
     weight: 1
   - type: Item
-    id: STClothingOuterArmorLightPlateVestBaseANAgray # Zona14: Лёгкий плитник АНА (серый)
+    id: STClothingOuterArmorLightPlateVestBaseANAgray # Zona14: Light ANA plate carrier (gray)
     weight: 1
   - type: Item
-    id: STWeaponShotgunSPAS # Zona14: Дробовик SPAS-12
+    id: STWeaponShotgunSPAS # Zona14: Shotgun SPAS-12
     weight: 1
   - type: Item
-    id: STWeaponRifleAKS74 # Zona14: АКС-74
+    id: STWeaponRifleAKS74 # Zona14: AKS-74
     weight: 1
   - type: Item
-    id: Dollar # Zona14: доллары
+    id: Dollar # Zona14: dollars
     amount: { min: 10, max: 20 }
     weight: 2
   - type: Item
-    id: MedkitElite # Zona14: доллары
+    id: MedkitElite # Zona14: dollars
     amount: { min: 4, max: 8 }
     weight: 1
   - type: Item
-    id: STWeaponRifleG36 # Zona14: АКС-74
+    id: STWeaponRifleG36 # Zona14: AKS-74
     weight: 1
   - type: Item
-    id: STWeaponRifleG36Alt # Zona14: АКС-74
+    id: STWeaponRifleG36Alt # Zona14: AKS-74
     weight: 1
   - type: Item
-    id: STClothingOuterKorynd # Zona14: АКС-74
+    id: STClothingOuterKorynd # Zona14: AKS-74
     weight: 1
   - type: Item
-    id: STClothingOuterIOTVGEN4 # Zona14: АКС-74
+    id: STClothingOuterIOTVGEN4 # Zona14: AKS-74
     weight: 1
   - type: Item
-    id: STWeaponShotgunSaiga12 # Zona14: АКС-74
+    id: STWeaponShotgunSaiga12 # Zona14: AKS-74
     weight: 1
   - type: Item
-    id: STWeaponSniperVepr # Zona14: АКС-74
+    id: STWeaponSniperVepr # Zona14: AKS-74
     weight: 1
   - type: Item
-    id: STClothingOuterArmorLightPlateVestBasePSZ7 # Zona14: АКС-74
+    id: STClothingOuterArmorLightPlateVestBasePSZ7 # Zona14: AKS-74
     weight: 1
   - type: Item
-    id: STWeaponRifleM14 # Zona14: АКС-74
+    id: STWeaponRifleM14 # Zona14: AKS-74
     weight: 1
   - type: Item
-    id: STWeaponShotgunBenelliM4Super90 # Zona14: Магазин 5.56 NATO (45 шт.)
+    id: STWeaponShotgunBenelliM4Super90 # Zona14: Magazine 5.56 NATO (45 rds.)
     weight: 1
   - type: Item
-    id: STWeaponSMGPP19919 # Zona14: Магазин 5.56 NATO (45 шт.)
+    id: STWeaponSMGPP19919 # Zona14: Magazine 5.56 NATO (45 rds.)
     weight: 1
   - type: Item
-    id: STWeaponSMGPP1901 # Zona14: Магазин 5.56 NATO (45 шт.)
+    id: STWeaponSMGPP1901 # Zona14: Magazine 5.56 NATO (45 rds.)
     weight: 1
   - type: Item
-    id: Veles # Zona14: Магазин 5.56 NATO (45 шт.)
+    id: Veles # Zona14: Magazine 5.56 NATO (45 rds.)
     weight: 1
   - type: Item
-    id: STZoneArtifactDetectorBarracudaBlueprint # Zona14: Магазин 5.56 NATO (45 шт.)
+    id: STZoneArtifactDetectorBarracudaBlueprint # Zona14: Magazine 5.56 NATO (45 rds.)
     weight: 1
   - type: Item
-    id: StalkerMedBandShopCrate # Zona14: Магазин 5.56 NATO (45 шт.)
+    id: StalkerMedBandShopCrate # Zona14: Magazine 5.56 NATO (45 rds.)
     weight: 1
 

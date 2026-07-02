@@ -150,7 +150,7 @@
   parent: STBaseFenceMetal
   id: FenceMetalStraightConst
   name: chain-link mesh
-  suffix: ST, Mapping, destructible # Zona14: ST, Mapping, разбираемый
+  suffix: ST, Mapping, destructible # Zona14: ST, Mapping, disassemblable
   components:
   - type: Icon
     sprite: Structures/Walls/fence.rsi

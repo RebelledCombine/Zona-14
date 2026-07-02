@@ -54,7 +54,7 @@
   id: ClothingHeadHelmetUlachZavet
   name: Covenant Ulach
   description: Ulac, used by the Covenant group.
-  suffix: Stalker, Covenant # Zona14: Stalker, Завет
+  suffix: Stalker, Covenant # Zona14: Stalker, Covenant
   components:
     - type: Sprite
       sprite: _Stalker/Objects/Clothing/hats/zavet_ulach.rsi
@@ -77,7 +77,7 @@
   parent: STClothingHeadHelmetTacticalT4Base
   id: ClothingHeadHelmetUlachEasy
   name: lightweight
-  suffix: Stalker, Mercenaries # Zona14: Stalker, Наёмники
+  suffix: Stalker, Mercenaries # Zona14: Stalker, Mercenaries
   description: This is a helmet specifically designed for piercing protection and mobility for the Mercenaries faction. Armor class - 2.
   components:
   - type: Sprite

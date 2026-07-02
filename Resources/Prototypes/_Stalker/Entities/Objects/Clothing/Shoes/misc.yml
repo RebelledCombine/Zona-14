@@ -116,7 +116,7 @@
   parent: ClothingShoesMilitaryBase
   id: STClothingShoesBootsSeraFilled
   name: Hunter Boots
-  suffix: ST, Skin # Zona14: ST, Скин
+  suffix: ST, Skin # Zona14: ST, Skin
   description: "Combat boots repainted in a dark green shade. A unique shoe used by members of the Seraphim's faction."
   components:
   - type: Sprite

@@ -94,28 +94,28 @@
         # - id: Bloodloss
           # Zona14: name: П.В.
         # - id: Blunt
-          # Zona14: name: мех
+          # Zona14: name: mech
         # - id: Piercing
-          # Zona14: name: мех
+          # Zona14: name: mech
         # - id: Slash
-          # Zona14: name: мех
+          # Zona14: name: mech
         # - id: Heat
-          # Zona14: name: физ
+          # Zona14: name: phys
         # - id: Shock
-          # Zona14: name: физ
+          # Zona14: name: phys
         # - id: Cold
-          # Zona14: name: физ
+          # Zona14: name: phys
         # - id: Caustic
-          # Zona14: name: физ
+          # Zona14: name: phys
         # - id: Radiation
-          # Zona14: name: рад
+          # Zona14: name: rad
         # - id: Poison
-          # Zona14: name: токсин
+          # Zona14: name: toxin
         # - id: Cellular
-          # Zona14: name: ген
+          # Zona14: name: genetic
         # - id: Psy
-          # Zona14: name: пси
+          # Zona14: name: psi
         # - id: Compression
-          # Zona14: name: сжат
+          # Zona14: name: compressed
         # - id: Structural
-          # Zona14: name: стркут
+          # Zona14: name: structural

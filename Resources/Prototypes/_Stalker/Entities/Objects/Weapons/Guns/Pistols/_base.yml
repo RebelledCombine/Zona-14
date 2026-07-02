@@ -9,7 +9,7 @@
     range: 120
     sound: /Audio/_DZ/Effects/FarGunshots/pistol1.ogg
   - type: RepositoryItem
-    categoryName: Weapons # Zona14: Оружие
+    categoryName: Weapons # Zona14: Weapons
   - type: Craftable
   - type: Sprite
     layers:

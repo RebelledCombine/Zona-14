@@ -44,7 +44,7 @@
 - type: entity
   parent: STSkinsKitBase
   name: Mercenary Set
-  id: STSkinsKitMercenary # Zona14: куда?
+  id: STSkinsKitMercenary # Zona14: where?
 
 - type: entity
   parent: STSkinsKitBase
@@ -59,7 +59,7 @@
 - type: entity
   parent: STSkinsKitBase
   name: Monolith Set
-  id: STSkinsKitMonolith # Zona14: куда?
+  id: STSkinsKitMonolith # Zona14: where?
 
 - type: entity
   parent: STSkinsKitBase
@@ -69,7 +69,7 @@
 - type: entity
   parent: STSkinsKitBase
   name: Covenant Set
-  id: STSkinsKitCovenant # Zona14: куда?
+  id: STSkinsKitCovenant # Zona14: where?
 
 - type: entity
   parent: STSkinsKitBase
@@ -84,22 +84,22 @@
 - type: entity
   parent: STSkinsKitBase
   name: Seraphim Set
-  id: STSkinsKitSeraphim # Zona14: куда? Туда
+  id: STSkinsKitSeraphim # Zona14: Where? There
 
 - type: entity
   parent: STSkinsKitBase
   name: Renegade Set
-  id: STSkinsKitDeserters # Zona14: куда?
+  id: STSkinsKitDeserters # Zona14: where?
 
 - type: entity
   parent: STSkinsKitBase
   name: Police Set
-  id: STSkinsKitPolice # Zona14: куда?
+  id: STSkinsKitPolice # Zona14: where?
 
 - type: entity
   parent: STSkinsKitBase
   name: UN Set
-  id: STSkinsKitUnitar # Zona14: куда?
+  id: STSkinsKitUnitar # Zona14: where?
 
 - type: entity
   parent: STSkinsKitBase

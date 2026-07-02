@@ -4,7 +4,7 @@
   id: StalkerShopZavet
   name: Vendomat, Covenant
   description: How did the trader fit in there?
-  suffix: ST, Mapping, Covenant # Zona14: ST, Mapping, Завет
+  suffix: ST, Mapping, Covenant # Zona14: ST, Mapping, Covenant
   components:
     - type: Sprite
       drawdepth: Objects

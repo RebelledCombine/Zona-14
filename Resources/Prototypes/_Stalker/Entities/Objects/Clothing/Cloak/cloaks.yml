@@ -2,7 +2,7 @@
 - type: entity
   parent: STClothingCapeBase
   id: ClothingNeckCloakZavet
-  suffix: Stalker, Covenant # Zona14: Stalker, Завет
+  suffix: Stalker, Covenant # Zona14: Stalker, Covenant
   name: Covenant Cloak
   description: standard cloak used by the Covenant group.
   components:
@@ -14,7 +14,7 @@
 - type: entity
   parent: STClothingCapeBase
   id: ClothingNeckCloakDolg
-  suffix: Stalker, Duty # Zona14: Stalker, Долг
+  suffix: Stalker, Duty # Zona14: Stalker, Duty
   name: Cloak of Duty
   description: standard cloak used by the Duty faction.
   components:
@@ -26,7 +26,7 @@
   id: ClothingCloakStalker
   name: "Stalker's Cloak"
   description: Torn pieces of cloth from the garbage, give you experience and mystery.
-  suffix: Stalker, Cloak # Zona14: Stalker, Плащ
+  suffix: Stalker, Cloak # Zona14: Stalker, Cloak
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/cloak/stalker.rsi
@@ -38,7 +38,7 @@
   id: ClothingNeckAnomalistLurker
   name: "Anomalist's Hidden Cloak"
   description: You won't get shot if they don't find you.
-  suffix: Stalker, Cloak, Anomalists # Zona14: Stalker, Плащ, Аномалисты
+  suffix: Stalker, Cloak, Anomalists # Zona14: Stalker, Cloak, Anomalists
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/cloak/lurker_anomalist.rsi
@@ -50,7 +50,7 @@
   id: ClothingCloakShortCoverBlack
   name: Short Black Cover
   description: Pieces of cloth, give you experience and mystery.
-  suffix: Stalker, Cloak # Zona14: Stalker, Плащ
+  suffix: Stalker, Cloak # Zona14: Stalker, Cloak
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/cloak/short_cover_black.rsi
@@ -62,7 +62,7 @@
   id: ClothingCloakBeige
   name: Beige Raincoat
   description: It was made of either mutant skin or human skin.
-  suffix: Stalker, Cloak # Zona14: Stalker, Плащ
+  suffix: Stalker, Cloak # Zona14: Stalker, Cloak
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/cloak/beige.rsi
@@ -74,7 +74,7 @@
   id: ClothingCloakBlack
   name: Black Cloak
   description: "I'm Batman!"
-  suffix: Stalker, Cloak # Zona14: Stalker, Плащ
+  suffix: Stalker, Cloak # Zona14: Stalker, Cloak
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/cloak/black.rsi
@@ -86,7 +86,7 @@
   id: ClothingCloakBrown
   name: Brown Cloak
   description: It's worn by more experienced Stalkers, it's also used to bury people!
-  suffix: Stalker, Cloak # Zona14: Stalker, Плащ
+  suffix: Stalker, Cloak # Zona14: Stalker, Cloak
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/cloak/brown.rsi
@@ -98,7 +98,7 @@
   id: ClothingCloakGreen
   name: Green Cloak
   description: For "Swamp Doctor" fans
-  suffix: Stalker, Cloak # Zona14: Stalker, Плащ
+  suffix: Stalker, Cloak # Zona14: Stalker, Cloak
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/cloak/green.rsi
@@ -110,7 +110,7 @@
   id: ClothingCloakNavy
   name: Navy Cloak
   description: "I didn't come up with a \"funny\" description for this raincoat..."
-  suffix: Stalker, Cloak # Zona14: Stalker, Плащ
+  suffix: Stalker, Cloak # Zona14: Stalker, Cloak
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/cloak/navy.rsi
@@ -305,7 +305,7 @@
   id: ClothingOuterCoatKrava
   name: '"Valkyrie" camouflage cloak'
   description: "An advanced \"Valkyrie\" camouflage cloak. Made from lightweight components and materials that do not restrict the wearer's movement."
-  suffix: ST, custom # Zona14: ST, кастомка
+  suffix: ST, custom # Zona14: ST, custom
   components:
   - type: STWeight
     self: 6

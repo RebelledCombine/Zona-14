@@ -1,5 +1,5 @@
 # Zona14: translated Russian names/descriptions to English
-# Zona14: ПРОЧЕЕ
+# Zona14: MISC
 
 - type: entity
   name: entities sign name
@@ -69,7 +69,7 @@
         layer:
           - LowImpassable
 
-# Zona14: ПРЕДУПРЕЖДАЮЩИЕ ЗНАКИ
+# Zona14: WARNING SIGNS
 
 - type: entity
   parent: STBaseStructure

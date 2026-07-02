@@ -3,7 +3,7 @@
   id: RandomLootBox1
   name: Random loot spawn
   categories: [ HideSpawnMenu ]
-  suffix: Stalker, DO NOT MAP # Zona14: Stalker, НЕ МАППИТЬ
+  suffix: Stalker, DO NOT MAP # Zona14: Stalker, DO NOT MAP
   parent: FlexibleMarker
   components:
   - type: Sprite

@@ -104,7 +104,7 @@
   id: STWeaponShotgunShizoToz34
   name: Wierd TOZ
   description: Wierd TOZ, modified by someone really mad.
-  suffix: ST, Custom # Zona14: ST, Кастомка
+  suffix: ST, Custom # Zona14: ST, Custom
   components:
   - type: STWeight
     self: 5

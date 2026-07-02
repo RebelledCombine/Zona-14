@@ -1,5 +1,5 @@
 # Use https://auburn.github.io/FastNoiseLite/ to Preview
-# Zona14: Базовый биом лугов.
+# Zona14: Base meadow biome.
 
 - type: biomeTemplate
   id: STGrassland
@@ -168,10 +168,10 @@
     #   # entities:
     #   #   - CP14GatherableWildSage
 
-# Zona14: Подбиомы лугов
+# Zona14: Meadow sub-biomes
 
 - type: biomeTemplate
-  id: STGrasslandForest # Zona14: Лес
+  id: STGrasslandForest # Zona14: Forest
   layers:
     - !type:BiomeMetaLayer
       template: STGrassland
@@ -189,7 +189,7 @@
         - FloraTreeLarge
 
 - type: biomeTemplate
-  id: STGrasslandHills # Zona14: Холмы
+  id: STGrasslandHills # Zona14: Hills
   layers:
     - !type:BiomeMetaLayer
       template: STGrasslandForest

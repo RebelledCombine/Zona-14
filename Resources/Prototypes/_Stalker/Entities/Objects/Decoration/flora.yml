@@ -1,6 +1,6 @@
 # Zona14: translated Russian names/descriptions to English
-# Zona14: НОВАЯ 64x64!!!!!!
-# Zona14: Береза
+# Zona14: NEW 64x64!!!!!!
+# Zona14: Birch
 - type: entity
   parent: STBaseTree
   id: BirchTreeNew01
@@ -86,7 +86,7 @@
     state: birch05
   - type: Craftable
 
-# Zona14: ЕЛЬ!!! (НИХУЯ ОБНОВА БЛЯТЬ!!!!)
+# Zona14: FIR!!! (HUGE UPDATE!!!)
 
 - type: entity
   parent: BaseStalkerTree
@@ -132,7 +132,7 @@
     state: spruce04
   - type: Craftable
 
-# Zona14: СОСНА!!
+# Zona14: PINE!!
 
 - type: entity
   parent: BaseStalkerTree
@@ -225,7 +225,7 @@
     state: pine06
   - type: Craftable
 
-# Zona14: ДУБ!!!!! АААААААААА!!!!
+# Zona14: OAK!!!!! AAAAAAAAA!!!!
 
 - type: entity
   parent: BaseStalkerTree
@@ -262,7 +262,7 @@
 
 ###################################
 
-# Zona14: БЕРЁЗЫ
+# Zona14: BIRCH TREES
 
 - type: entity
   parent: BirchTreeNew01
@@ -319,7 +319,7 @@
     state: birch04
   - type: Craftable
 
-# Zona14: СОСНА
+# Zona14: PINE
 
 - type: entity
   parent: PineTreeNew01
@@ -343,7 +343,7 @@
     state: pine02
   - type: Craftable
 
-# Zona14: ТОПОЛЬ
+# Zona14: POPLAR
 
 - type: entity
   parent: BaseStalkerTree
@@ -367,7 +367,7 @@
     state: poplar02
   - type: Craftable
 
-# Zona14: КУСТЫ
+# Zona14: BUSHES
 
 - type: entity
   id: Bush01
@@ -498,7 +498,7 @@
     sprite: _Stalker/Objects/Decoration/Flora/radar_bush.rsi
     state: largebush02
 
-# Zona14: КУВШИНКИ
+# Zona14: WATER LILIES
 
 - type: entity
   parent: Bush01
@@ -511,7 +511,7 @@
     sprite: _Stalker/Objects/Decoration/Flora/flora.rsi
     state: kuvshinki
 
-# Zona14: ПНИ
+# Zona14: STUMPS
 
 - type: entity
   parent: Bush01
@@ -533,7 +533,7 @@
     sprite: _Stalker/Objects/Decoration/Flora/flora.rsi
     state: penm
 
-# Zona14: КАМЫШЬ
+# Zona14: REEDS
 
 - type: entity
   parent: Bush01
@@ -546,7 +546,7 @@
     sprite: _Stalker/Objects/Decoration/Flora/flora.rsi
     state: kamysh
 
-# Zona14: НОВЫЕ ДЕРЕВЬЯ
+# Zona14: NEW TREES
 
 - type: entity
   parent: BaseTree
@@ -811,7 +811,7 @@
             min: 1
             max: 2
 
-# Zona14: КАМНИ
+# Zona14: ROCKS
 # moved to _Stalker
 - type: entity
   id: STBaseRock
@@ -870,7 +870,7 @@
   - type: Sprite
     state: rocksolid03
 
-# Zona14: ДУБ small
+# Zona14: OAK small
 # moved to _Stalker
 
 - type: entity
@@ -1055,7 +1055,7 @@
   - type: Sprite
     state: treelarge06
 
-# Zona14: болотный куст
+# Zona14: Swamp bush
 
 - type: entity
   parent: Bush01

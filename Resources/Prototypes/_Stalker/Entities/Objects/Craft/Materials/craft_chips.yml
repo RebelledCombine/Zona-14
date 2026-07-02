@@ -4,7 +4,7 @@
   id: STCraftBasicPCBT1
   name: T1 Basic PCB
   description: single-sided board with a minimum number of components, used for simple electrical circuits. T1
-  suffix: Stalker, craft, T1 # Zona14: Stalker, крафт, T1
+  suffix: Stalker, craft, T1 # Zona14: Stalker, craft, T1
   components:
     - type: PhysicalComposition
       materialComposition:
@@ -19,14 +19,14 @@
       count: 1
     - type: Craftable
     - type: RepositoryItem
-      categoryName: Crafting # Zona14: Крафты
+      categoryName: Crafting # Zona14: Crafts
 
 - type: entity
   parent: STBaseIngridient
   id: STCraftStandardPCBT2
   name: T2 Standard PCB
   description: double-sided board with a basic set of components, used in consumer electronics. T2
-  suffix: Stalker, craft, T2 # Zona14: Stalker, крафт, T2
+  suffix: Stalker, craft, T2 # Zona14: Stalker, craft, T2
   components:
     - type: PhysicalComposition
       materialComposition:
@@ -41,14 +41,14 @@
       count: 1
     - type: Craftable
     - type: RepositoryItem
-      categoryName: Crafting # Zona14: Крафты
+      categoryName: Crafting # Zona14: Crafts
 
 - type: entity
   parent: STBaseIngridient
   id: STCraftMultilayerPCBT3
   name: T3 Multilayer PCB
   description: multi-layer board, provides greater circuit complexity and component density, used in computers. T3
-  suffix: Stalker, craft, T3 # Zona14: Stalker, крафт, T3
+  suffix: Stalker, craft, T3 # Zona14: Stalker, craft, T3
   components:
     - type: PhysicalComposition
       materialComposition:
@@ -63,14 +63,14 @@
       count: 1
     - type: Craftable
     - type: RepositoryItem
-      categoryName: Crafting # Zona14: Крафты
+      categoryName: Crafting # Zona14: Crafts
 
 - type: entity
   parent: STBaseIngridient
   id: STCraftHighPerformanceChipT4
   name: T4 High-Performance Microprocessor
   description: a complex chip with many transistors, provides high performance, used in high-end computers. T4
-  suffix: Stalker, craft, T4 # Zona14: Stalker, крафт, T4
+  suffix: Stalker, craft, T4 # Zona14: Stalker, craft, T4
   components:
     - type: PhysicalComposition
       # materialComposition:
@@ -86,14 +86,14 @@
       count: 1
     - type: Craftable
     - type: RepositoryItem
-      categoryName: Crafting # Zona14: Крафты
+      categoryName: Crafting # Zona14: Crafts
 
 - type: entity
   parent: STBaseIngridient
   id: STCraftNanoChipT5
   name: T5 Nanoelectronic Chip
   description: state-of-the-art chip, uses nanotechnology for maximum density and performance, applied in the latest technology. T5
-  suffix: Stalker, craft, T5 # Zona14: Stalker, крафт, T5
+  suffix: Stalker, craft, T5 # Zona14: Stalker, craft, T5
   components:
     - type: PhysicalComposition
       materialComposition:
@@ -109,4 +109,4 @@
       count: 1
     - type: Craftable
     - type: RepositoryItem
-      categoryName: Crafting # Zona14: Крафты
+      categoryName: Crafting # Zona14: Crafts

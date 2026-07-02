@@ -2,19 +2,19 @@
   abstract: true
   parent: BaseItem
   id: STBaseBlueprint
-  suffix: ST, craft # Zona14: ST, крафт
+  suffix: ST, craft # Zona14: ST, craft
   components:
     - type: Sprite
       state: blueprint
       sprite: _Stalker/Objects/Craft/blueprint.rsi
     - type: Craftable
     - type: RepositoryItem
-      categoryName: Crafting # Zona14: Крафты
+      categoryName: Crafting # Zona14: Crafts
 
 # - type: entity
   # parent: STBaseBlueprint
   # id: STExempleDetectorAD1Blueprint
-  # Zona14: name: рецепт улучшенный детектор аномалий 1-й модели (ДА-1)
+  # Zona14: name: improved anomaly detector model 1 recipe (DA-1)
   # components:
     # - type: STBlueprint
       # blueprint: newrecipeDetectorAD1

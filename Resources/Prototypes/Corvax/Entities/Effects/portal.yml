@@ -1,4 +1,4 @@
-# Zona14: Временное решение, просто респрайт порталов. Нужно будет удалить когда гейтвеи нормально починят
+# Zona14: Temporary solution, just a portal resprite. Should be removed when gateways are properly fixed
 - type: entity
   id: PortalGate
   parent: BasePortal

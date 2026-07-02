@@ -1,5 +1,5 @@
 # Zona14: translated Russian names/descriptions to English
-# Zona14: деревянный пол
+# Zona14: Wooden floor
 - type: entity
   id: WoodenFloorBasicFallout
   name: Wood Floor Base
@@ -797,7 +797,7 @@
         - 0:
             wood_wide_broken47: ''
 
-# Zona14: плиточный пол
+# Zona14: Tile floor
 - type: entity
   id: BrickFloorBasicFallout
   name: Stone Floor Base
@@ -1862,7 +1862,7 @@
             - !type:DoActsBehavior
               acts: [ "Destruction" ]
 
-# Zona14: стальной пол
+# Zona14: Steel floor
 - type: entity
   id: SteelFloorBasicFallout
   name: Steel Floor Base

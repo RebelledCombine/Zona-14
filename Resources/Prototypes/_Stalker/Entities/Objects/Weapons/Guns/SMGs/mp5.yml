@@ -83,7 +83,7 @@
   abstract: true
   parent: STBaseWeaponSMGMP5 # Kekw
   id: STBaseWeaponSMGVector9
-  suffix: ST, Custom # Zona14: ST, Кастомка
+  suffix: ST, Custom # Zona14: ST, Custom
   components:
   - type: STWeight
     self: 2

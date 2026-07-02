@@ -120,7 +120,7 @@
     sprite: _Stalker/Structures/Furniture/Tables/old_table7.rsi
     state: full
 
-# Zona14: БИЛЬЯРДНЫЙ СТОЛ
+# Zona14: POOL TABLE
 
 - type: entity
   id: BiliardTableStalker
@@ -145,7 +145,7 @@
         layer:
         - LowImpassable
 
-# Zona14: ДРУГИЕ СТОЛЫ
+# Zona14: OTHER TABLES
 
 - type: entity
   id: TableOneStalker

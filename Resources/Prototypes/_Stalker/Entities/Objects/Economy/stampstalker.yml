@@ -49,7 +49,7 @@
   suffix: DO NOT MAP
   components:
   - type: Stamp
-    stampedName: "Field Commander" # Zona14: Полевой Командир
+    stampedName: "Field Commander" # Zona14: Field Commander
     stampedColor: "#1e547d"
     stampState: "paper_stamp-cap"
   - type: Sprite
@@ -64,7 +64,7 @@
   suffix: DO NOT MAP
   components:
   - type: Stamp
-    stampedName: "Mercenary" # Zona14: Наёмник
+    stampedName: "Mercenary" # Zona14: Mercenary
     stampedColor: "#1b6196"
     stampState: "paper_stamp-cap"
   - type: Sprite
@@ -79,7 +79,7 @@
   suffix: DO NOT MAP
   components:
   - type: Stamp
-    stampedName: "Client" # Zona14: Заказчик
+    stampedName: "Client" # Zona14: Client
     stampedColor: "#23731a"
     stampState: "paper_stamp-centcom"
   - type: Sprite
@@ -94,7 +94,7 @@
   suffix: DO NOT MAP
   components:
   - type: Stamp
-    stampedName: "Agent" # Zona14: Агент
+    stampedName: "Agent" # Zona14: Agent
     stampedColor: "#58b6fc"
     stampState: "paper_stamp-hop"
   - type: Sprite

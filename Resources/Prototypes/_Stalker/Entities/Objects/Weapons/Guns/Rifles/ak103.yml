@@ -74,7 +74,7 @@
   parent: STBaseWeaponRifleAK103
   id: STWeaponRifleAK103Kamo
   name: AK-103 "Veteran"
-  suffix: ST, Custom # Zona14: ST, Кастомка
+  suffix: ST, Custom # Zona14: ST, Custom
   description: Carefully modified AK-103 with improved characteristics. Shows signs of numerous customizations - clearly a weapon of an experienced stalker.
   components:
   - type: Clothing
@@ -91,7 +91,7 @@
 - type: entity
   parent: STBaseWeaponRifleAK103
   id: STWeaponRifleAK203
-  suffix: ST, Custom # Zona14: ST, Кастомка
+  suffix: ST, Custom # Zona14: ST, Custom
   name: AK-203
   description: Latest evolution of Kalashnikov rifle. Rare in the Zone, usually comes with military expeditions. Retains all advantages of 103 model with improved ergonomics.
   components:
@@ -203,7 +203,7 @@
 - type: entity
   name: AK-15
   parent: STWeaponRifleStalkerAK12
-  suffix: ST, Custom # Zona14: ST, Кастомка
+  suffix: ST, Custom # Zona14: ST, Custom
   id: STWeaponRifleStalkerAK15
   description: "This model is the pinnacle of the AK system's development and differs from previous generations in its well-thought-out ergonomics, adaptability to all-day use, and increased accuracy and consistency of fire."
   components:

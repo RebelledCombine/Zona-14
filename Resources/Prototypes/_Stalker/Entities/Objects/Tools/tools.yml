@@ -5,7 +5,7 @@
   id: CraftLeatherbox
   name: Skin Processing Kit
   description: A set with tools and tools for processing and tanning hides.
-  suffix: Stalker, craft # Zona14: Stalker, крафт
+  suffix: Stalker, craft # Zona14: Stalker, craft
   components:
   - type: STWeight
     self: 2.5
@@ -19,14 +19,14 @@
     state: leatherbox
   - type: Craftable
   - type: RepositoryItem
-    categoryName: Crafting # Zona14: Крафты
+    categoryName: Crafting # Zona14: Crafts
 
 - type: entity
   parent: BaseCraftTool
   id: BoltCutter
   name: wire cutter
   description: cuts grates
-  suffix: Stalker, Tools # Zona14: Stalker, Инструменты
+  suffix: Stalker, Tools # Zona14: Stalker, Tools
   components:
   - type: STWeight
     self: 3
@@ -55,14 +55,14 @@
       path: /Audio/Items/ratchet.ogg
   - type: Craftable
   - type: RepositoryItem
-    categoryName: Tools # Zona14: Инструменты
+    categoryName: Tools # Zona14: Tools
 
 - type: entity
   parent: BaseCraftTool
   id: RazorWire
   name: coil of barbed wire
   description: Coil of thorns to rebuild the Perimeter by the military. I hope that your thieving hands will be cut off.
-  suffix: Stalker, Tools # Zona14: Stalker, Инструменты
+  suffix: Stalker, Tools # Zona14: Stalker, Tools
   components:
   - type: STWeight
     self: 5
@@ -78,7 +78,7 @@
   - type: Craftable
 
 
-# Zona14: ##############Инструменты
+# Zona14: ##############Tools
 
 
 - type: entity
@@ -86,7 +86,7 @@
   id: ToolkitTearOne
   name: tools for rough work
   description: Young Technician Toolbox. All the tools necessary for locksmith work are available. For an experienced technician, such a set is necessary for the simplest upgrades of armor and weapons. For an ordinary stalker, it will be a convenient tool when creating the simplest things.
-  suffix: Stalker, Tools # Zona14: Stalker, Инструменты
+  suffix: Stalker, Tools # Zona14: Stalker, Tools
   components:
   - type: STWeight
     self: 5
@@ -119,14 +119,14 @@
         ents: []
   - type: Craftable
   - type: RepositoryItem
-    categoryName: Tools # Zona14: Инструменты
+    categoryName: Tools # Zona14: Tools
 
 - type: entity
   parent: BaseCraftTool
   id: ToolkitTearTwo
   name: tools for fine work
   description: Not a bad toolset. Apparently, it was carefully selected by an experienced master "for himself, his dear". Despite the years, all the tools are well preserved.
-  suffix: Stalker, Tools # Zona14: Stalker, Инструменты
+  suffix: Stalker, Tools # Zona14: Stalker, Tools
   components:
   - type: STWeight
     self: 8
@@ -159,14 +159,14 @@
         ents: []
   - type: Craftable
   - type: RepositoryItem
-    categoryName: Tools # Zona14: Инструменты
+    categoryName: Tools # Zona14: Tools
 
 - type: entity
   parent: BaseCraftTool
   id: ToolkitTearThree
   name: calibration tools
   description: "Professional Fine-Tuning Toolkit. The inscription on the box says that the set was made in the GDR. What's included in the kit is enough to carry out almost any setup and calibration work."
-  suffix: Stalker, Tools # Zona14: Stalker, Инструменты
+  suffix: Stalker, Tools # Zona14: Stalker, Tools
   components:
   - type: STWeight
     self: 3
@@ -199,7 +199,7 @@
         ents: []
   - type: Craftable
   - type: RepositoryItem
-    categoryName: Tools # Zona14: Инструменты
+    categoryName: Tools # Zona14: Tools
 
 
 
@@ -210,7 +210,7 @@
   id: STCraftMortarAndPestle
   name: mortar and pestle
   description: At first, man came up with the idea of grinding with a stone. The next day he came up with the idea of grinding with two stones
-  suffix: Stalker, Tools # Zona14: Stalker, Инструменты
+  suffix: Stalker, Tools # Zona14: Stalker, Tools
   components:
     - type: STWeight
       self: 1
@@ -223,13 +223,13 @@
       state: mortar_and_pestle
     - type: Craftable
     - type: RepositoryItem
-      categoryName: Tools # Zona14: Инструменты
+      categoryName: Tools # Zona14: Tools
 
 - type: entity
   parent: BaseItem
   id: CraftSaw
   name: saw
-  suffix: Stalker, Tools # Zona14: Stalker, Инструменты
+  suffix: Stalker, Tools # Zona14: Stalker, Tools
   components:
     - type: STWeight
       self: 1.5
@@ -244,7 +244,7 @@
         - 0,0,1,0
     - type: Craftable
     - type: RepositoryItem
-      categoryName: Tools # Zona14: Инструменты
+      categoryName: Tools # Zona14: Tools
 
 - type: entity
   name: chainsaw
@@ -299,7 +299,7 @@
     delay: 1
   - type: Craftable
   - type: RepositoryItem
-    categoryName: Tools # Zona14: Инструменты
+    categoryName: Tools # Zona14: Tools
 
 - type: entity
   name: circular saw
@@ -353,9 +353,9 @@
     delay: 1
   - type: Craftable
   - type: RepositoryItem
-    categoryName: Tools # Zona14: Инструменты
+    categoryName: Tools # Zona14: Tools
 
-# Zona14: Утилиты
+# Zona14: Utilities
 
 - type: entity
   name: Cache shovel

@@ -44,7 +44,7 @@
     - type: UseDelay
       delay: 1
     - type: RepositoryItem
-      categoryName: Weapons # Zona14: Оружие
+      categoryName: Weapons # Zona14: Weapons
     - type: STWeaponDamageFalloff
       falloffMultiplier: 0.8
     - type: STWeaponAccuracy

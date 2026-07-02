@@ -1,8 +1,8 @@
 # Zona14: translated Russian names/descriptions to English
-# Zona14: Кастомка серафимов
+# Zona14: Seraphim custom
 - type: entity
   name: AK-12
-  suffix: ST, t4, Custom # Zona14: ST, t4, Кастомка
+  suffix: ST, t4, Custom # Zona14: ST, t4, Custom
   parent: STBaseWeaponRifle
   id: STWeaponRifleStalkerAK12
   description: This model is the pinnacle of the development of the AK system and differs from previous generations in well-thought-out ergonomics, adaptation to all-day use and increased accuracy and accuracy of fire.
@@ -87,7 +87,7 @@
   parent: STWeaponRifleStalkerAK12
   id: STWeaponRifleStalkerRPK16
   description: A variation of the AK-12 for a platoon light machine gun.
-  suffix: ST, Custom # Zona14: ST, Кастомка
+  suffix: ST, Custom # Zona14: ST, Custom
   components:
   - type: Clothing
     sprite: _Stalker/Objects/Weapons/Guns/Rifles/_Skins/rpk16.rsi
@@ -113,7 +113,7 @@
   parent: STWeaponRifleStalkerRPK16
   id: STWeaponRifleStalkerRPK16Camo
   description: A variation of the AK-12 for the platoon light machine gun in autumn camouflage.
-  suffix: ST, Custom # Zona14: ST, Кастомка
+  suffix: ST, Custom # Zona14: ST, Custom
   components:
   - type: Clothing
     sprite: _Stalker/Objects/Weapons/Guns/Rifles/_Skins/rpk16camo.rsi

@@ -3,7 +3,7 @@
   name: torch
   parent: BaseItem
   id: STTorchSera
-  suffix: ST, Skin # Zona14: ST, Скин
+  suffix: ST, Skin # Zona14: ST, Skin
   components:
     - type: ExpendableLight
       spentName: expendable-light-burnt-torch-name

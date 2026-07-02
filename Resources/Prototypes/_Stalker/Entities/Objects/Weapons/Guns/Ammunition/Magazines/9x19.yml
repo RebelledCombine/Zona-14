@@ -43,7 +43,7 @@
     zeroVisible: false
   - type: Appearance
   - type: RepositoryItem
-    categoryName: Magazines # Zona14: Магазины
+    categoryName: Magazines # Zona14: Magazines
   - type: ItemSlots
     slots:
       item_slot:
@@ -114,7 +114,7 @@
     zeroVisible: false
   - type: Appearance
   - type: RepositoryItem
-    categoryName: Magazines # Zona14: Магазины
+    categoryName: Magazines # Zona14: Magazines
   - type: ItemSlots
     slots:
       item_slot:
@@ -185,7 +185,7 @@
     zeroVisible: false
   - type: Appearance
   - type: RepositoryItem
-    categoryName: Magazines # Zona14: Магазины
+    categoryName: Magazines # Zona14: Magazines
   - type: ItemSlots
     slots:
       item_slot:

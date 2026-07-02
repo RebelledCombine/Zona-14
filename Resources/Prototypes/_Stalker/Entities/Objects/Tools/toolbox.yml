@@ -1,7 +1,7 @@
 # Zona14: translated Russian names/descriptions to English
 - type: entity
   name: turret crate
-  suffix: Stalker, turret [DO NOT MAP] # Zona14: Stalker, турель [НЕ МАППИТЬ]
+  suffix: Stalker, turret [DO NOT MAP] # Zona14: Stalker, turret [DO NOT MAP]
   parent: ToolboxElectrical
   id: ToolboxElectricalTurretStalker
   description: A special box for storing, storing, transporting (carrying) and using the RP-74 stationary machine gun. Activation occurs by any hit on the box. Once activated, the Sentry Gun can no longer be picked up.

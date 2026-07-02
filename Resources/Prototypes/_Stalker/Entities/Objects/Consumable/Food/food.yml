@@ -1,5 +1,5 @@
 # Zona14: translated Russian names/descriptions to English
-# Zona14: ############## Мясо
+# Zona14: ############## Meat
 
 - type: reagent
   id: MToxin
@@ -66,7 +66,7 @@
   parent: FoodMeatBase
   id: STFoodMeatSalo
   description: A chunk of raw boar fat.
-  suffix: Stalker, food # Zona14: Stalker, еда
+  suffix: Stalker, food # Zona14: Stalker, food
   components:
   - type: STWeight
     self: 1.0
@@ -102,7 +102,7 @@
   parent: FoodMeatBase
   id: STFoodMeatSaloCooked
   description: Cooked boar fat.
-  suffix: Stalker, food # Zona14: Stalker, еда
+  suffix: Stalker, food # Zona14: Stalker, food
   components:
   - type: STWeight
     self: 0.8
@@ -146,7 +146,7 @@
   - node: salo
     entity: STFoodMeatSaloCooked
 
-# Zona14: ##############Хлеб
+# Zona14: ##############Bread
 
 - type: entity
   parent: FoodInjectableBase
@@ -172,7 +172,7 @@
 - type: entity
   parent: STFoodBreadBase
   id: STFoodBreadSliceBase
-  suffix: Stalker, food # Zona14: Stalker, еда
+  suffix: Stalker, food # Zona14: Stalker, food
   abstract: true
   components:
   - type: Item
@@ -196,7 +196,7 @@
   parent: STFoodBreadBase
   id: STFoodBreadPlain
   description: It is unknown who manages to bake loaves on site, or how they are smuggled through the perimeter. However, this bread is not contaminated, not radioactive, quite fresh and quite edible. In any case, none of the stalkers have complained yet.
-  suffix: Stalker, food # Zona14: Stalker, еда
+  suffix: Stalker, food # Zona14: Stalker, food
   components:
   - type: Edible
   - type: Sprite
@@ -210,7 +210,7 @@
 
 - type: entity
   name: piece of bread
-  suffix: Stalker, food # Zona14: Stalker, еда
+  suffix: Stalker, food # Zona14: Stalker, food
   parent: STFoodBreadBase
   id: STFoodBreadPlainSlice
   description: Slice of bread. At first glance, it is quite fresh and quite edible.
@@ -230,14 +230,14 @@
 
 
 
-# Zona14: ############  Cалями
+# Zona14: ############  Salami
 
 - type: entity
   name: piece of sausage
   parent: FoodMeatBase
   id: STFoodMeatSalamiSlice
   description: If you look closely enough, you'll notice that a piece of sausage isn't made up of the highest quality meat.
-  suffix: Stalker, food # Zona14: Stalker, еда
+  suffix: Stalker, food # Zona14: Stalker, food
   components:
   - type: STWeight
     self: 0.2
@@ -258,7 +258,7 @@
   parent: FoodMeatBase
   id: STFoodMeatSalami
   description: "Often, for lack of a better one, this sausage — a blend of chicken and soy substitute — becomes a stalker's breakfast, lunch, and dinner. Due to the large amount of preservatives, it does not spoil for a long time"
-  suffix: Stalker, food # Zona14: Stalker, еда
+  suffix: Stalker, food # Zona14: Stalker, food
   components:
   - type: Sprite
     sprite: Objects/Consumable/Food/salami.rsi
@@ -285,7 +285,7 @@
   parent: FoodMeatBase
   id: STFoodMeatMeatbat
   description: A sausage made in Zyryanovka settlement; it’s heavy enough to hit someone hard.
-  suffix: Stalker, food # Zona14: Stalker, еда
+  suffix: Stalker, food # Zona14: Stalker, food
   components:
   - type: STWeight
     self: 20
@@ -309,14 +309,14 @@
     tags:
     - Cooked
 
-# Zona14: #### Кабан
+# Zona14: #### Boar
 
 - type: entity
   name: raw boar meat
   parent: FoodMeatRawBase
   id: FoodMeatBoar
   description: A piece of raw boar meat.
-  suffix: Stalker, food # Zona14: Stalker, еда
+  suffix: Stalker, food # Zona14: Stalker, food
   components:
   - type: STWeight
     self: 1.0
@@ -350,7 +350,7 @@
   parent: FoodMeatBase
   id: FoodMeatBoarCooked
   description: Cooked boar meat.
-  suffix: Stalker, food # Zona14: Stalker, еда
+  suffix: Stalker, food # Zona14: Stalker, food
   components:
   - type: STWeight
     self: 0.8
@@ -395,14 +395,14 @@
   - node: steak boar
     entity: FoodMeatBoarCooked
 
-# Zona14: ####################### Пёсик
+# Zona14: ####################### Doggy
 
 - type: entity
   name: raw dog meat
   parent: FoodMeatRawBase
   id: FoodMeatDog
   description: A piece of raw dog meat.
-  suffix: Stalker, food # Zona14: Stalker, еда
+  suffix: Stalker, food # Zona14: Stalker, food
   components:
   - type: STWeight
     self: 0.8
@@ -436,7 +436,7 @@
   parent: FoodMeatBase
   id: FoodMeatDogCooked
   description: Cooked dog meat.
-  suffix: Stalker, food # Zona14: Stalker, еда
+  suffix: Stalker, food # Zona14: Stalker, food
   components:
   - type: STWeight
     self: 0.6
@@ -481,13 +481,13 @@
   - node: steak dog
     entity: FoodMeatDogCooked
 
-# Zona14: ####################### Паук
+# Zona14: ####################### Spider
 - type: entity
   name: raw spider meat
   parent: FoodMeatRawBase
   id: STFoodMeatSpider
   description: A piece of raw spider meat. It looks sickening.
-  suffix: Stalker, food # Zona14: Stalker, еда
+  suffix: Stalker, food # Zona14: Stalker, food
   components:
   - type: Sprite
     sprite: Objects/Consumable/Food/meat.rsi
@@ -512,7 +512,7 @@
   parent: FoodMeatBase
   id: STFoodMeatSpiderCooked
   description: Cooked spider meat. It looks sickening.
-  suffix: Stalker, food # Zona14: Stalker, еда
+  suffix: Stalker, food # Zona14: Stalker, food
   components:
   - type: STWeight
     self: 0.6
@@ -540,7 +540,7 @@
 
 
 ###################################
-# Zona14: НАПИТКИ             #
+# Zona14: DRINKS             #
 ###################################
 
 - type: entity
@@ -577,7 +577,7 @@
   parent: FoodProduceBase
   id: FoodPotatoCooked
   description: Baked potatoes, which can be either simple or festive, gourmet dishes.
-  suffix: Stalker, food # Zona14: Stalker, еда
+  suffix: Stalker, food # Zona14: Stalker, food
   components:
   - type: STWeight
     self: 0.36
@@ -614,7 +614,7 @@
   parent: FoodProduceBase
   id: FoodPotatoCleaning
   description: They are said to make chips.
-  suffix: Stalker, food # Zona14: Stalker, еда
+  suffix: Stalker, food # Zona14: Stalker, food
   components:
   - type: STWeight
     self: 0.01
@@ -643,7 +643,7 @@
   name: sausage sandwich
   parent: STFoodBreadSliceBase
   id: STFoodMeatButerbrod
-  suffix: Stalker, Food # Zona14: Stalker, Еда
+  suffix: Stalker, Food # Zona14: Stalker, Food
   description: A slice of bread or loaf with a ready-to-eat filling spread or placed on top.
   components:
   - type: STWeight

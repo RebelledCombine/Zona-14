@@ -22,7 +22,7 @@
         - MachineMask
         layer:
         - WallLayer
-  - type: RadiationSource   # Zona14: 5 В центре, 50 тайлов
+  - type: RadiationSource   # Zona14: 5 At center, 50 tiles
     intensity: 5
     slope: 0.02
     damageType: Psy

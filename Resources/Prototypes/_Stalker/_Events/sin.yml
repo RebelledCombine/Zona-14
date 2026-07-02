@@ -2,7 +2,7 @@
 - type: entity
   name: glowing notification for sin
   id: GrehAlarmLightingnorth
-  suffix: north # Zona14: север
+  suffix: north # Zona14: north
   parent: MarkerBase
   placement:
     mode: PlaceFree
@@ -13,7 +13,7 @@
     layers:
       - state: blue
   - type: SinLightPoint
-    side: church # Zona14: церковь
+    side: church # Zona14: church
   - type: PointLight
     color: red
     energy: 0
@@ -23,7 +23,7 @@
 - type: entity
   name: glowing notification for sin
   id: GrehAlarmLightingeast
-  suffix: east # Zona14: восток
+  suffix: east # Zona14: east
   parent: MarkerBase
   placement:
     mode: PlaceFree
@@ -34,7 +34,7 @@
     layers:
       - state: blue
   - type: SinLightPoint
-    side: village # Zona14: деревня
+    side: village # Zona14: village
   - type: PointLight
     color: red
     energy: 0
@@ -56,7 +56,7 @@
     layers:
       - state: blue
   - type: SinLightPoint
-    side: cemetery # Zona14: кладбище
+    side: cemetery # Zona14: cemetery
   - type: PointLight
     color: red
     energy: 0
@@ -66,7 +66,7 @@
 - type: entity
   name: glowing notification for sin
   id: GrehAlarmLightingwest
-  suffix: west # Zona14: запад
+  suffix: west # Zona14: west
   parent: MarkerBase
   placement:
     mode: PlaceFree
@@ -77,7 +77,7 @@
     layers:
       - state: blue
   - type: SinLightPoint
-    side: archi-anomaly # Zona14: архи-аномалия
+    side: archi-anomaly # Zona14: archi-anomaly
   - type: PointLight
     color: red
     energy: 0
@@ -87,7 +87,7 @@
 - type: entity
   name: people trigger for sin
   id: GrehAlarmLightingnorthTrigger
-  suffix: north # Zona14: север
+  suffix: north # Zona14: north
   parent: MarkerBase
   placement:
     mode: PlaceFree
@@ -98,12 +98,12 @@
     layers:
       - state: blue
   - type: SinAlarmPoint
-    side: church # Zona14: церковь
+    side: church # Zona14: church
 
 - type: entity
   name: people trigger for sin
   id: GrehAlarmLightingeastTrigger
-  suffix: east # Zona14: восток
+  suffix: east # Zona14: east
   parent: MarkerBase
   placement:
     mode: PlaceFree
@@ -114,7 +114,7 @@
     layers:
       - state: blue
   - type: SinAlarmPoint
-    side: village # Zona14: деревня
+    side: village # Zona14: village
 
 - type: entity
   name: people trigger for sin
@@ -130,12 +130,12 @@
     layers:
       - state: blue
   - type: SinAlarmPoint
-    side: cemetery # Zona14: кладбище
+    side: cemetery # Zona14: cemetery
 
 - type: entity
   name: people trigger for sin
   id: GrehAlarmLightingwestTrigger
-  suffix: west # Zona14: запад
+  suffix: west # Zona14: west
   parent: MarkerBase
   placement:
     mode: PlaceFree
@@ -146,4 +146,4 @@
     layers:
       - state: blue
   - type: SinAlarmPoint
-    side: archi-anomaly # Zona14: архи-аномалия
+    side: archi-anomaly # Zona14: archi-anomaly

@@ -46,7 +46,7 @@
   name: sledgehammer
   parent: BaseItem
   id: SledgehammerRenegats
-  suffix: ST, renegades # Zona14: ST, ренегаты
+  suffix: ST, renegades # Zona14: ST, Renegades
   description: Bonk!
   components:
   - type: Sprite

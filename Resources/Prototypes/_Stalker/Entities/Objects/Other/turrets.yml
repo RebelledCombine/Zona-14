@@ -5,7 +5,7 @@
   parent: BaseStructure
   id: BaseWeaponRPKTurret
   name: Stationary RP-74
-  suffix: Stalker, turret [DO NOT MAP] # Zona14: Stalker, турель [НЕ МАППИТЬ]
+  suffix: Stalker, turret [DO NOT MAP] # Zona14: Stalker, turret [DO NOT MAP]
   description: It is a RP-74 machine gun mounted on a bipod (or mount). Apparently, it differs from the regular RP-74 only in greater firepower and an enlarged machine gun belt. It is impossible to move with this machine gun.
   abstract: true
   components:
@@ -96,7 +96,7 @@
 - type: entity
   parent: BaseWeaponRPKTurret
   id: WeaponRPKTurretSyndicate
-  suffix: Stalker, syndicate [DO NOT MAP] # Zona14: Stalker, синдикат [НЕ МАППИТЬ]
+  suffix: Stalker, syndicate [DO NOT MAP] # Zona14: Stalker, syndicate [DO NOT MAP]
   components:
     - type: NpcFactionMember
       factions:
@@ -105,7 +105,7 @@
 - type: entity
   parent: BaseWeaponRPKTurret
   id: WeaponRPKTurretNanoTrasen
-  suffix: Stalker, NanoTrasen [DO NOT MAP] # Zona14: Stalker, NanoTrasen [НЕ МАППИТЬ]
+  suffix: Stalker, NanoTrasen [DO NOT MAP] # Zona14: Stalker, NanoTrasen [DO NOT MAP]
   components:
   - type: NpcFactionMember
     factions:
@@ -115,7 +115,7 @@
   parent: BaseWeaponRPKTurret
   name: stationary disposable RP-74
   id: WeaponTurretNanoTrasenDisposableStalker
-  suffix: NanoTrasen, disposable [DO NOT MAP] # Zona14: NanoTrasen, одноразовая [НЕ МАППИТЬ]
+  suffix: NanoTrasen, disposable [DO NOT MAP] # Zona14: NanoTrasen, disposable [DO NOT MAP]
   components:
     - type: NpcFactionMember
       factions:

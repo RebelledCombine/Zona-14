@@ -29,7 +29,7 @@
   id: ClothingEyesProtectionGlassesKrava
   name: '"Valkyrie" ballistic glasses'
   description: Brand-new ballistic glasses, made from top-grade materials and components.
-  suffix: ST, Custom # Zona14: ST, Кастомка
+  suffix: ST, Custom # Zona14: ST, Custom
   components:
     - type: Sprite
       sprite: _Stalker/Objects/Clothing/eyes/krava.rsi

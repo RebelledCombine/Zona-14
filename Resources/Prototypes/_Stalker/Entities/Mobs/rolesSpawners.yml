@@ -1,7 +1,7 @@
 # Zona14: translated Russian names/descriptions to English
 - type: entity
   name: UN doll (rename me)
-  suffix: Stalker, pawn with patch # Zona14: Stalker, пешка с нашивкой
+  suffix: Stalker, pawn with patch # Zona14: Stalker, pawn with patch
   parent: MobHuman
   id: MobStalkerUN
   components:
@@ -16,7 +16,7 @@
 
 - type: entity
   name: OKSOP doll (rename me)
-  suffix: Stalker, pawn with patch # Zona14: Stalker, пешка с нашивкой
+  suffix: Stalker, pawn with patch # Zona14: Stalker, pawn with patch
   parent: MobHuman
   id: MobStalkerMilitary
   components:
@@ -33,7 +33,7 @@
 
 - type: entity
   name: OKSOP leader doll (rename me)
-  suffix: Stalker, pawn with patch # Zona14: Stalker, пешка с нашивкой
+  suffix: Stalker, pawn with patch # Zona14: Stalker, pawn with patch
   parent: MobHuman
   id: MobStalkerMilitaryHead
   components:
@@ -52,7 +52,7 @@
 
 - type: entity
   name: Militia doll (rename me)
-  suffix: Stalker, pawn with patch # Zona14: Stalker, пешка с нашивкой
+  suffix: Stalker, pawn with patch # Zona14: Stalker, pawn with patch
   parent: MobHuman
   id: MobStalkerMilitia
   components:
@@ -70,7 +70,7 @@
 
 - type: entity
   name: Militia Commander doll (rename me)
-  suffix: Stalker, pawn with patch # Zona14: Stalker, пешка с нашивкой
+  suffix: Stalker, pawn with patch # Zona14: Stalker, pawn with patch
   parent: MobHuman
   id: MobStalkerMilitiaCommander
   components:
@@ -88,7 +88,7 @@
 
 - type: entity
   name: last day doll (rename me)
-  suffix: Stalker, pawn with patch # Zona14: Stalker, пешка с нашивкой
+  suffix: Stalker, pawn with patch # Zona14: Stalker, pawn with patch
   parent: MobHuman
   id: MobStalkerLastDay
   components:
@@ -100,7 +100,7 @@
 
 - type: entity
   name: renegade doll (rename me)
-  suffix: Stalker, pawn with patch # Zona14: Stalker, пешка с нашивкой
+  suffix: Stalker, pawn with patch # Zona14: Stalker, pawn with patch
   parent: MobHuman
   id: MobStalkerRene
   components:
@@ -115,7 +115,7 @@
 
 - type: entity
   name: Freedom doll (rename me)
-  suffix: Stalker, pawn with patch # Zona14: Stalker, пешка с нашивкой
+  suffix: Stalker, pawn with patch # Zona14: Stalker, pawn with patch
   parent: MobHuman
   id: MobStalkerFreeadom
   components:
@@ -130,7 +130,7 @@
 
 - type: entity
   name: Duty doll (rename me)
-  suffix: Stalker, pawn with patch # Zona14: Stalker, пешка с нашивкой
+  suffix: Stalker, pawn with patch # Zona14: Stalker, pawn with patch
   parent: MobHuman
   id: MobStalkerDolg
   components:
@@ -145,7 +145,7 @@
 
 - type: entity
   name: scientist doll (rename me)
-  suffix: Stalker, pawn with patch # Zona14: Stalker, пешка с нашивкой
+  suffix: Stalker, pawn with patch # Zona14: Stalker, pawn with patch
   parent: MobHuman
   id: MobStalkerSci
   components:
@@ -163,7 +163,7 @@
 
 - type: entity
   name: dean doll (rename me)
-  suffix: Stalker, pawn with patch # Zona14: Stalker, пешка с нашивкой
+  suffix: Stalker, pawn with patch # Zona14: Stalker, pawn with patch
   parent: MobHuman
   id: MobStalkerSci_decan
   components:
@@ -181,7 +181,7 @@
 
 - type: entity
   name: rector doll (rename me)
-  suffix: Stalker, pawn with patch # Zona14: Stalker, пешка с нашивкой
+  suffix: Stalker, pawn with patch # Zona14: Stalker, pawn with patch
   parent: MobHuman
   id: MobStalkerSci_rector
   components:
@@ -199,7 +199,7 @@
 
 - type: entity
   name: bandit doll (rename me)
-  suffix: Stalker, pawn with patch # Zona14: Stalker, пешка с нашивкой
+  suffix: Stalker, pawn with patch # Zona14: Stalker, pawn with patch
   parent: MobHuman
   id: MobStalkerbandit
   components:
@@ -219,7 +219,7 @@
 
 - type: entity
   name: frog doll (rename me)
-  suffix: Stalker, pawn with patch # Zona14: Stalker, пешка с нашивкой
+  suffix: Stalker, pawn with patch # Zona14: Stalker, pawn with patch
   parent: MobHuman
   id: MobStalkerToad
   components:
@@ -239,7 +239,7 @@
 
 - type: entity
   name: covenant doll (rename me)
-  suffix: Stalker, pawn with patch # Zona14: Stalker, пешка с нашивкой
+  suffix: Stalker, pawn with patch # Zona14: Stalker, pawn with patch
   parent: MobHuman
   id: MobStalkerZavet
   components:
@@ -254,7 +254,7 @@
 
 - type: entity
   name: sinner doll (rename me)
-  suffix: Stalker, pawn with patch # Zona14: Stalker, пешка с нашивкой
+  suffix: Stalker, pawn with patch # Zona14: Stalker, pawn with patch
   parent: MobHuman
   id: MobStalkerGreh
   components:
@@ -269,7 +269,7 @@
 
 - type: entity
   name: Clear Sky member doll (rename me)
-  suffix: Stalker, pawn with patch # Zona14: Stalker, пешка с нашивкой
+  suffix: Stalker, pawn with patch # Zona14: Stalker, pawn with patch
   parent: MobHuman
   id: MobStalkerCS
   components:
@@ -285,7 +285,7 @@
 
 - type: entity
   name: project member doll (rename me)
-  suffix: Stalker, pawn with patch # Zona14: Stalker, пешка с нашивкой
+  suffix: Stalker, pawn with patch # Zona14: Stalker, pawn with patch
   parent: MobHuman
   id: MobStalkerProject
   components:
@@ -304,7 +304,7 @@
 
 - type: entity
   name: circus doll (rename me)
-  suffix: Stalker, pawn with patch # Zona14: Stalker, пешка с нашивкой
+  suffix: Stalker, pawn with patch # Zona14: Stalker, pawn with patch
   parent: MobHuman
   id: MobStalkerClown
   components:
@@ -317,7 +317,7 @@
 
 - type: entity
   name: mercenary doll (rename me)
-  suffix: Stalker, pawn with patch # Zona14: Stalker, пешка с нашивкой
+  suffix: Stalker, pawn with patch # Zona14: Stalker, pawn with patch
   parent: MobHuman
   id: MobStalkerMerc
   components:
@@ -333,7 +333,7 @@
 
 - type: entity
   name: anomalist doll (rename me)
-  suffix: Stalker, pawn with patch # Zona14: Stalker, пешка с нашивкой
+  suffix: Stalker, pawn with patch # Zona14: Stalker, pawn with patch
   parent: MobHuman
   id: MobStalkerAnomalist
   components:
@@ -348,7 +348,7 @@
 
 - type: entity
   name: Seraphim doll (rename me)
-  suffix: Stalker, pawn with patch # Zona14: Stalker, пешка с нашивкой
+  suffix: Stalker, pawn with patch # Zona14: Stalker, pawn with patch
   parent: MobHuman
   id: MobStalkerSeraphim
   components:
@@ -408,7 +408,7 @@
 
 - type: entity
   name: Stalker doll (rename me)
-  suffix: Stalker, pawn with patch # Zona14: Stalker, пешка с нашивкой
+  suffix: Stalker, pawn with patch # Zona14: Stalker, pawn with patch
   parent: MobHuman
   id: MobStalkerStalker
   components:
@@ -423,7 +423,7 @@
 
 - type: entity
   name: Monolith doll (rename me)
-  suffix: Stalker, pawn with patch # Zona14: Stalker, пешка с нашивкой
+  suffix: Stalker, pawn with patch # Zona14: Stalker, pawn with patch
   parent: MobHuman
   id: MobStalkerMonolith
   components:
@@ -446,7 +446,7 @@
 
 - type: entity
   name: SBU doll (rename me)
-  suffix: Stalker, pawn with patch # Zona14: Stalker, пешка с нашивкой
+  suffix: Stalker, pawn with patch # Zona14: Stalker, pawn with patch
   parent: MobHuman
   id: MobStalkerSBU
   components:

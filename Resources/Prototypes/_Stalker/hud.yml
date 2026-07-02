@@ -12,36 +12,36 @@
 
 #- type: hudTheme
 #  id: BanditsTheme
-# Zona14: name: Бандит
+# Zona14: name: Bandit
 #  path: Bandits
 #  order: 8
 #
 #- type: hudTheme
 #  id: NeutralTheme
-# Zona14: name: Одиночка
+# Zona14: name: Loner
 #  path: Bandits
 #  order: 7
 #
 #- type: hudTheme
 #  id: MilitaryTheme
-# Zona14: name: Военный
+# Zona14: name: Military
 #  path: Military
 #  order: 9
 #
 #- type: hudTheme
 #  id: DutyTheme
-# Zona14: name: Долг
+# Zona14: name: Duty
 #  path: Duty
 #  order: 10
 #
 #- type: hudTheme
 #  id: FreedomTheme
-# Zona14: name: Свобода
+# Zona14: name: Freedom
 #  path: Freedom
 #  order: 11
 #
 #- type: hudTheme
 #  id: PoiskTheme
-# Zona14: name: Поиск
+# Zona14: name: Search
 #  path: Poisk
 #  order: 12

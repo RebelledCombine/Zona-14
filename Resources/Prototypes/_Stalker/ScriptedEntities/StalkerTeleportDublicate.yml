@@ -37,7 +37,7 @@
   id: StalkerDublicateWipeSafe
   name: Blueprint Save
   description: With this cellar, you can save your blueprints from the wipe.
-  suffix: Teleport, Portal, Duplicate, Wipe, Teleport # Zona14: Teleport, Portal, Duplicate, Вайп, Teleport
+  suffix: Teleport, Portal, Duplicate, Wipe, Teleport # Zona14: Teleport, Portal, Duplicate, Wipe, Teleport
   components:
   - type: Transform
     anchored: True

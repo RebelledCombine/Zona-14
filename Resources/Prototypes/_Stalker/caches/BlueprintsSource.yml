@@ -1,9 +1,9 @@
 # Zona14: translated Russian names/descriptions to English
-# Zona14: Источники чертежей
+# Zona14: Blueprint sources
 - type: entity
   parent: STBaseStructure
   id: CraftBlueprintsSourceT4T5
-  suffix: Stalker, SOURCE, T4 # Zona14: Stalker, ИСТОЧНИК, Т4
+  suffix: Stalker, SOURCE, T4 # Zona14: Stalker, SOURCE, T4
   name: case with drawings
   description: Perhaps there is something very important here
   components:
@@ -53,7 +53,7 @@
   name: Blueprint Case Trigger (10%)
   id: STCraftBlueprintsSourceT4T5Trigger
   parent: MarkerBase
-  suffix: ST | CD 4 hours # Zona14: ST | КД 4 часа
+  suffix: ST | CD 4 hours # Zona14: ST | CD 4 hours
   components:
     - type: ApproachTrigger
       # range: 10 # Stalker-TODO: These fields do not exist in this component!

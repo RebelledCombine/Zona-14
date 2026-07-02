@@ -184,11 +184,11 @@
 - type: playTimeTracker
   id: JobStalkerBartender
 
-# Zona14: Херувим серафимов
+# Zona14: Seraphim Cherub
 - type: playTimeTracker
   id: JobCherubimSeraphims
 
-# Zona14: Эволверы и их группировки
+# Zona14: Evolvers and their factions
 - type: playTimeTracker
   id: JobEvolver
 

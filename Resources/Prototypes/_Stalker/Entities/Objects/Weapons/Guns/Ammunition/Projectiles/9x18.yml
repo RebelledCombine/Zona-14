@@ -112,7 +112,7 @@
 
 # - type: entity
 #   id: STCartridge918Tranq
-# Zona14: name: Патрон (9х18) tranq
+# Zona14: name: Round (9x18) tranq
 #   parent: BaseSTCartridge918
 #   components:
 #   - type: CartridgeAmmo
@@ -155,7 +155,7 @@
 
 # - type: entity
 #   id: STCartridge918Freezing
-# Zona14: name: Патрон (9х18) freeze
+# Zona14: name: Round (9x18) freeze
 #   parent: BaseSTCartridge918
 #   components:
 #   - type: CartridgeAmmo

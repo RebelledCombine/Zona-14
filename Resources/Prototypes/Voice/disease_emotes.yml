@@ -29,9 +29,9 @@
     - coughs!
     - coughed!
     # Stalker-RU
-    - cough # Zona14: кашель
-    - coughs # Zona14: кашляет
-    - coughed # Zona14: кашлянул
+    - cough # Zona14: cough
+    - coughs # Zona14: coughs
+    - coughed # Zona14: coughed
 #
 # - type: emote
 #   id: CatMeow
@@ -73,8 +73,8 @@
     - yawn
     - yawns
     # Stalker-RU
-    - yawn # Zona14: зевок
-    - yawns # Zona14: зевает
+    - yawn # Zona14: yawn
+    - yawns # Zona14: yawns
 
 - type: emote
   id: Snore

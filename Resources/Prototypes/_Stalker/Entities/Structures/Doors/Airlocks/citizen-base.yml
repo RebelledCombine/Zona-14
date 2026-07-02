@@ -1,11 +1,11 @@
 # Zona14: translated Russian names/descriptions to English
-# Zona14: Мэр
+# Zona14: Mayor
 - type: entity
   id: MetalGrateDoorFalloutMayorClosed
   name: Reinforced lattice door
   parent: MetalGrateDoorFallout
   description: A strong lattice door with a reliable lock.
-  suffix: ST, mapping, Mayor # Zona14: ST, mapping, Мэр
+  suffix: ST, mapping, Mayor # Zona14: ST, mapping, Mayor
   components:
   - type: AccessReader
     access: [["MayorCity"]]
@@ -15,7 +15,7 @@
   name: steel door
   parent: MetalDoorFallout
   description: Strong steel door with a secure lock.
-  suffix: ST, mapping, Mayor # Zona14: ST, mapping, Мэр
+  suffix: ST, mapping, Mayor # Zona14: ST, mapping, Mayor
   components:
   - type: AccessReader
     access: [["MayorCity"]]
@@ -25,7 +25,7 @@
   name: "{ ent-MetalDoorFalloutMayorClosed }"
   parent: MetalWindowDoorFallout
   description: Strong steel door, with a window and a reliable lock.
-  suffix: ST, mapping, Mayor # Zona14: ST, mapping, Мэр
+  suffix: ST, mapping, Mayor # Zona14: ST, mapping, Mayor
   components:
   - type: AccessReader
     access: [["MayorCity"]]
@@ -36,7 +36,7 @@
   name: "{ ent-MetalGrateDoorFalloutMayorClosed }"
   parent: MetalGrateDoorFallout
   description: "{ ent-MetalGrateDoorFalloutMayorClosed.desc }"
-  suffix: ST, mapping, Prosecutor # Zona14: ST, mapping, Прокурор
+  suffix: ST, mapping, Prosecutor # Zona14: ST, mapping, Prosecutor
   components:
   - type: AccessReader
     access: [["Prokuror"]]
@@ -46,7 +46,7 @@
   name: "{ ent-MetalDoorFalloutMayorClosed }"
   parent: MetalDoorFallout
   description: "{ ent-MetalDoorFalloutMayorClosed.desc }"
-  suffix: ST, mapping, Prosecutor # Zona14: ST, mapping, Прокурор
+  suffix: ST, mapping, Prosecutor # Zona14: ST, mapping, Prosecutor
   components:
   - type: AccessReader
     access: [["Prokuror"]]
@@ -56,7 +56,7 @@
   name: "{ ent-MetalDoorFalloutMayorClosed }"
   parent: MetalWindowDoorFallout
   description: "{ ent-MetalWindowDoorFalloutMayorClosed.desc }"
-  suffix: ST, mapping, Prosecutor # Zona14: ST, mapping, Прокурор
+  suffix: ST, mapping, Prosecutor # Zona14: ST, mapping, Prosecutor
   components:
   - type: AccessReader
     access: [["Prokuror"]]
@@ -67,7 +67,7 @@
   name: "{ ent-MetalGrateDoorFalloutMayorClosed }"
   parent: MetalGrateDoorFallout
   description: "{ ent-MetalGrateDoorFalloutMayorClosed.desc }"
-  suffix: ST, mapping, Judge # Zona14: ST, mapping, Судья
+  suffix: ST, mapping, Judge # Zona14: ST, mapping, Judge
   components:
   - type: AccessReader
     access: [["Magistrate"]]
@@ -77,7 +77,7 @@
   name: "{ ent-MetalDoorFalloutMayorClosed }"
   parent: MetalDoorFallout
   description: "{ ent-MetalDoorFalloutMayorClosed.desc }"
-  suffix: ST, mapping, Judge # Zona14: ST, mapping, Судья
+  suffix: ST, mapping, Judge # Zona14: ST, mapping, Judge
   components:
   - type: AccessReader
     access: [["Magistrate"]]
@@ -87,7 +87,7 @@
   name: "{ ent-MetalDoorFalloutMayorClosed }"
   parent: MetalWindowDoorFallout
   description: "{ ent-MetalWindowDoorFalloutMayorClosed.desc }"
-  suffix: ST, mapping, Judge # Zona14: ST, mapping, Судья
+  suffix: ST, mapping, Judge # Zona14: ST, mapping, Judge
   components:
   - type: AccessReader
     access: [["Magistrate"]]
@@ -98,7 +98,7 @@
   name: "{ ent-MetalGrateDoorFalloutMayorClosed }"
   parent: MetalGrateDoorFallout
   description: "{ ent-MetalGrateDoorFalloutMayorClosed.desc }"
-  suffix: ST, mapping, Priest # Zona14: ST, mapping, Священик
+  suffix: ST, mapping, Priest # Zona14: ST, mapping, Priest
   components:
   - type: AccessReader
     access: [["Priest"]]
@@ -108,7 +108,7 @@
   name: "{ ent-MetalDoorFalloutMayorClosed }"
   parent: MetalDoorFallout
   description: "{ ent-MetalDoorFalloutMayorClosed.desc }"
-  suffix: ST, mapping, Priest # Zona14: ST, mapping, Священик
+  suffix: ST, mapping, Priest # Zona14: ST, mapping, Priest
   components:
   - type: AccessReader
     access: [["Priest"]]
@@ -118,7 +118,7 @@
   name: "{ ent-MetalDoorFalloutMayorClosed }"
   parent: MetalWindowDoorFallout
   description: "{ ent-MetalWindowDoorFalloutMayorClosed.desc }"
-  suffix: ST, mapping, Priest # Zona14: ST, mapping, Священик
+  suffix: ST, mapping, Priest # Zona14: ST, mapping, Priest
   components:
   - type: AccessReader
     access: [["Priest"]]
@@ -129,7 +129,7 @@
   name: "{ ent-MetalGrateDoorFalloutMayorClosed }"
   parent: MetalGrateDoorFallout
   description: "{ ent-MetalGrateDoorFalloutMayorClosed.desc }"
-  suffix: ST, mapping, Bartender # Zona14: ST, mapping, Бармен
+  suffix: ST, mapping, Bartender # Zona14: ST, mapping, Barman
   components:
   - type: AccessReader
     access: [["Barthender"]]
@@ -139,7 +139,7 @@
   name: "{ ent-MetalDoorFalloutMayorClosed }"
   parent: MetalDoorFallout
   description: "{ ent-MetalDoorFalloutMayorClosed.desc }"
-  suffix: ST, mapping, Bartender # Zona14: ST, mapping, Бармен
+  suffix: ST, mapping, Bartender # Zona14: ST, mapping, Barman
   components:
   - type: AccessReader
     access: [["Barthender"]]
@@ -149,7 +149,7 @@
   name: "{ ent-MetalDoorFalloutMayorClosed }"
   parent: MetalWindowDoorFallout
   description: "{ ent-MetalWindowDoorFalloutMayorClosed.desc }"
-  suffix: ST, mapping, Bartender # Zona14: ST, mapping, Бармен
+  suffix: ST, mapping, Bartender # Zona14: ST, mapping, Barman
   components:
   - type: AccessReader
     access: [["Barthender"]]
@@ -160,7 +160,7 @@
   name: "{ ent-MetalGrateDoorFalloutMayorClosed }"
   parent: MetalGrateDoorFallout
   description: "{ ent-MetalGrateDoorFalloutMayorClosed.desc }"
-  suffix: ST, mapping, Doctor # Zona14: ST, mapping, Врач
+  suffix: ST, mapping, Doctor # Zona14: ST, mapping, Doctor
   components:
   - type: AccessReader
     access: [["Doctor"]]
@@ -170,7 +170,7 @@
   name: "{ ent-MetalDoorFalloutMayorClosed }"
   parent: MetalDoorFallout
   description: "{ ent-MetalDoorFalloutMayorClosed.desc }"
-  suffix: ST, mapping, Doctor # Zona14: ST, mapping, Врач
+  suffix: ST, mapping, Doctor # Zona14: ST, mapping, Doctor
   components:
   - type: AccessReader
     access: [["Doctor"]]
@@ -180,7 +180,7 @@
   name: "{ ent-MetalDoorFalloutMayorClosed }"
   parent: MetalWindowDoorFallout
   description: "{ ent-MetalWindowDoorFalloutMayorClosed.desc }"
-  suffix: ST, mapping, Doctor # Zona14: ST, mapping, Врач
+  suffix: ST, mapping, Doctor # Zona14: ST, mapping, Doctor
   components:
   - type: AccessReader
     access: [["Doctor"]]
@@ -191,7 +191,7 @@
   name: "{ ent-MetalGrateDoorFalloutMayorClosed }"
   parent: MetalGrateDoorFallout
   description: "{ ent-MetalGrateDoorFalloutMayorClosed.desc }"
-  suffix: ST, mapping, Chief Doctor # Zona14: ST, mapping, Главный врач
+  suffix: ST, mapping, Chief Doctor # Zona14: ST, mapping, Chief Doctor
   components:
   - type: AccessReader
     access: [["HeadDoctor"]]
@@ -201,7 +201,7 @@
   name: "{ ent-MetalDoorFalloutMayorClosed }"
   parent: MetalDoorFallout
   description: "{ ent-MetalDoorFalloutMayorClosed.desc }"
-  suffix: ST, mapping, Chief Doctor # Zona14: ST, mapping, Главный врач
+  suffix: ST, mapping, Chief Doctor # Zona14: ST, mapping, Chief Doctor
   components:
   - type: AccessReader
     access: [["HeadDoctor"]]
@@ -211,7 +211,7 @@
   name: "{ ent-MetalDoorFalloutMayorClosed }"
   parent: MetalWindowDoorFallout
   description: "{ ent-MetalWindowDoorFalloutMayorClosed.desc }"
-  suffix: ST, mapping, Chief Doctor # Zona14: ST, mapping, Главный врач
+  suffix: ST, mapping, Chief Doctor # Zona14: ST, mapping, Chief Doctor
   components:
   - type: AccessReader
     access: [["HeadDoctor"]]

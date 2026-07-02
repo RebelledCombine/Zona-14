@@ -5,7 +5,7 @@
   name: Starter Set
   categories: [ HideSpawnMenu ]
   description: Cheapest donation set, issued with the "Bread" subscription
-  suffix: Stalker, SPONSOR # Zona14: Stalker, СПОНСОР
+  suffix: Stalker, SPONSOR # Zona14: Stalker, SPONSOR
   components:
     - type: Item
       size: Large
@@ -60,7 +60,7 @@
   name: stalkerware set
   categories: [ HideSpawnMenu ]
   description: Medium stalker donation kit is issued with a "Backer" subscription.
-  suffix: Stalker, SPONSOR # Zona14: Stalker, СПОНСОР
+  suffix: Stalker, SPONSOR # Zona14: Stalker, SPONSOR
   components:
     - type: Item
       size: Large
@@ -100,7 +100,7 @@
   name: Seeker Kit
   categories: [ HideSpawnMenu ]
   description: "Seeker's Unique Donation Kit is issued with an \"O-Consciousness Agent\" subscription."
-  suffix: Stalker, SPONSOR # Zona14: Stalker, СПОНСОР
+  suffix: Stalker, SPONSOR # Zona14: Stalker, SPONSOR
   components:
     - type: Item
       size: Large
@@ -146,7 +146,7 @@
   name: contributor set
   categories: [ HideSpawnMenu ]
   description: Contributor set is issued only to Contributors.
-  suffix: Stalker, SPONSOR # Zona14: Stalker, СПОНСОР
+  suffix: Stalker, SPONSOR # Zona14: Stalker, SPONSOR
   components:
     - type: Item
       size: Large

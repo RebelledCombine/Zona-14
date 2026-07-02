@@ -4,7 +4,7 @@
   id: BookCookingStalker
   name: cooking
   description: A book intended as a basic guide for cooks on cooking and culinary arts.
-  suffix: Stalker, guides # Zona14: Stalker, гайды
+  suffix: Stalker, guides # Zona14: Stalker, guides
   components:
     - type: Paper
       content: book-text-cooking-stalker
@@ -20,7 +20,7 @@
       content: ent-STArtGuide.content
       stampState: paper_stamp-trader
       stampedBy:
-      - stampedName: Student # Zona14: Студентка
+      - stampedName: Student # Zona14: Student
         stampedColor: "#dfb2f4"
     - type: Sprite
       sprite: Objects/Misc/books.rsi

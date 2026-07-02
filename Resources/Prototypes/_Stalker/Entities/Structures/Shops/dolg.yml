@@ -5,7 +5,7 @@
   id: StalkerShopDolg
   name: Torgomat, Duty
   description: How did the merchant fit there?
-  suffix: ST, Mapping, Duty # Zona14: ST, Mapping, Долг
+  suffix: ST, Mapping, Duty # Zona14: ST, Mapping, Duty
   components:
     - type: Sprite
       drawdepth: Objects
@@ -23,7 +23,7 @@
   id: StalkerDollarShopDolg
   name: "{ ent-StalkerShopDolg }"
   description: "{ ent-StalkerShopDolg.desc }"
-  suffix: ST, Mapping, Duty T4 # Zona14: ST, Mapping, Долг Т4
+  suffix: ST, Mapping, Duty T4 # Zona14: ST, Mapping, Duty T4
   components:
     - type: Sprite
       drawdepth: Objects

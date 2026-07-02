@@ -4,7 +4,7 @@
   id: STCraftAnomalyDust
   name: anomalous essence
   description: an unstable anomalous substance. Used in disassembly and assembly.
-  suffix: Stalker, craft, anomalous essence # Zona14: Stalker, крафт, аномальная эссенция
+  suffix: Stalker, craft, anomalous essence # Zona14: Stalker, craft, anomalous essence
   components:
     - type: Sprite
       state: core
@@ -16,4 +16,4 @@
       count: 1
     - type: Craftable
     - type: RepositoryItem
-      categoryName: Crafting # Zona14: Крафты
+      categoryName: Crafting # Zona14: Crafts

@@ -4,7 +4,7 @@
   id: STCraftCottonFabricT1
   name: T1 Cotton Fabric
   description: natural material made from linen fibers, used for lightweight clothing and basic protection. T1
-  suffix: Stalker, craft, T1 # Zona14: Stalker, крафт, T1
+  suffix: Stalker, craft, T1 # Zona14: Stalker, craft, T1
   components:
     # - type: PhysicalComposition
       # materialComposition:
@@ -17,14 +17,14 @@
       count: 1
     - type: Craftable
     - type: RepositoryItem
-      categoryName: Crafting # Zona14: Крафты
+      categoryName: Crafting # Zona14: Crafts
 
 - type: entity
   parent: STBaseIngridient
   id: STCraftHideT2
   name: T2 Skin
   description: natural animal skin, used for more durable clothing and lighter armor. T2
-  suffix: Stalker, craft, T2 # Zona14: Stalker, крафт, T2
+  suffix: Stalker, craft, T2 # Zona14: Stalker, craft, T2
   components:
     # - type: PhysicalComposition
       # materialComposition:
@@ -37,14 +37,14 @@
       count: 1
     - type: Craftable
     - type: RepositoryItem
-      categoryName: Crafting # Zona14: Крафты
+      categoryName: Crafting # Zona14: Crafts
 
 - type: entity
   parent: STBaseIngridient
   id: STCraftSturdyHideT3
   name: T3 Tough Hide
   description: reinforced hide, which provides high protection and durability, is used for reliable armor and durable clothing. T3
-  suffix: Stalker, craft, T3 # Zona14: Stalker, крафт, T3
+  suffix: Stalker, craft, T3 # Zona14: Stalker, craft, T3
   components:
     # - type: PhysicalComposition
       # materialComposition:
@@ -57,14 +57,14 @@
       count: 1
     - type: Craftable
     - type: RepositoryItem
-      categoryName: Crafting # Zona14: Крафты
+      categoryName: Crafting # Zona14: Crafts
 
 - type: entity
   parent: STBaseIngridient
   id: STCraftPolymerFabricT4
   name: T4 Polymer Fabric
   description: a high-quality synthetic material that provides excellent protection and durability, used for quality armor and protective clothing. T4
-  suffix: Stalker, craft, T4 # Zona14: Stalker, крафт, T4
+  suffix: Stalker, craft, T4 # Zona14: Stalker, craft, T4
   components:
     # - type: PhysicalComposition
       # materialComposition:
@@ -77,14 +77,14 @@
       count: 1
     - type: Craftable
     - type: RepositoryItem
-      categoryName: Crafting # Zona14: Крафты
+      categoryName: Crafting # Zona14: Crafts
 
 - type: entity
   parent: STBaseIngridient
   id: STCraftCompositeMaterialT5
   name: T5 Composite Material
   description: an advanced multi-layer synthetic material that provides maximum protection and functionality, used for advanced armor and specialized clothing. T5
-  suffix: Stalker, craft, T5 # Zona14: Stalker, крафт, T5
+  suffix: Stalker, craft, T5 # Zona14: Stalker, craft, T5
   components:
     - type: PhysicalComposition
       materialComposition:
@@ -98,4 +98,4 @@
       count: 1
     - type: Craftable
     - type: RepositoryItem
-      categoryName: Crafting # Zona14: Крафты
+      categoryName: Crafting # Zona14: Crafts

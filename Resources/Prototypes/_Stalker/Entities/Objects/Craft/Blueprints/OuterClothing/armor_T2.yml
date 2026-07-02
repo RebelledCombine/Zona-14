@@ -1,5 +1,5 @@
 # Zona14: translated Russian names/descriptions to English
-# Zona14: Заря
+# Zona14: Zarya
 - type: entity
   parent: STBaseBlueprint
   id: ClothingOuterArmorZaryaHunterBlueprint
@@ -34,7 +34,7 @@
     - type: STBlueprint
       blueprint: newrecipeClothingOuterArmor6B2
 
-# Zona14: Щиток-2
+# Zona14: Shield-2
 
 - type: entity
   parent: STBaseBlueprint
@@ -63,7 +63,7 @@
     - type: STBlueprint
       blueprint: newrecipeClothingOuterArmorSpark
 
-# Zona14: Кольчуга
+# Zona14: Chainmail
 - type: entity
   parent: STBaseBlueprint
   id: ClothingOuterArmourJacketStalkerBlueprint

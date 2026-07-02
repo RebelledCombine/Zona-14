@@ -1,6 +1,6 @@
 # Zona14: translated Russian names/descriptions to English
 
-# Zona14: Ресурсные
+# Zona14: Resource
 - type: entity
   parent: BoxBase
   id: ClothingBeltCrafterStalker

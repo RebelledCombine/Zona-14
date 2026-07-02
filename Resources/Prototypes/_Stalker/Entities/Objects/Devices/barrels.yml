@@ -1,5 +1,5 @@
 # Zona14: translated Russian names/descriptions to English
-# Zona14: ЖЕЛЕЗНЫЕ БОЧКИ
+# Zona14: IRON BARRELS
 
 - type: entity
   id: BaseBarrel
@@ -38,7 +38,7 @@
 - type: entity
   id: BarrelExpl
   parent: BaseStructureDynamic
-  suffix: Stalker, DO NOT MAP # Zona14: Stalker, НЕ МАППИТЬ
+  suffix: Stalker, DO NOT MAP # Zona14: Stalker, DO NOT MAP
   name: "{ ent-BaseBarrel }"
   components:
   - type: InteractionOutline
@@ -96,7 +96,7 @@
     intensitySlope: 3
     totalIntensity: 300
 
-# Zona14: ДЕРЕВЯННЫЕ БОЧКИ
+# Zona14: WOODEN BARRELS
 
 - type: entity
   id: BarrelWooden1

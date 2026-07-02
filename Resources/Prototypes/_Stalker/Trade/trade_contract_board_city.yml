@@ -4,7 +4,7 @@
   parent: Trademachine
   name: contract board
   description: a board with orders for deliveries, hunting, repairs and special targets
-  suffix: ST, QUESTS # Zona14: ST, КВЕСТЫ
+  suffix: ST, QUESTS # Zona14: ST, QUESTS
   components:
   - type: Sprite
     drawdepth: WallMountedItems

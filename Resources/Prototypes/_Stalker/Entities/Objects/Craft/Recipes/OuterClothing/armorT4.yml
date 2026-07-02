@@ -262,7 +262,7 @@
     STCraftSheetIronT2:
       amount: 2
 
-# Zona14: ПСЗ-9Д
+# Zona14: PSZ-9D
 - type: craftRecipe
   id: newrecipeClothingOuterArmorPSZ9D
   resultProtos:

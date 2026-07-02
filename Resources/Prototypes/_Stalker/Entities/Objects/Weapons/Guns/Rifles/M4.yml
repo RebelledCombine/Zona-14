@@ -91,7 +91,7 @@
   parent: STBaseWeaponRifleM4
   id: STWeaponRifleHK416
   name: HK416
-  suffix: ST, Custom # Zona14: ST, Кастомка
+  suffix: ST, Custom # Zona14: ST, Custom
   description: "German M4 upgrade with G36's gas system. Considered a weapon of true professionals in the Zone - silent and lethal. Rumored to use special armor-piercing rounds."
   components:
   - type: STWeight
@@ -193,7 +193,7 @@
   parent: STBaseWeaponRifleM4
   id: STWeaponRifleSCARL
   name: SCAR-L
-  suffix: ST, Custom # Zona14: ST, Кастомка
+  suffix: ST, Custom # Zona14: ST, Custom
   description: Belgian battle rifle chambered in 5.56 NATO. Rare in the Zone, mostly used by western mercenaries. Powerful but maintenance-heavy weapon.
   components:
   - type: STWeight

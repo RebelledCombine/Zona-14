@@ -4,7 +4,7 @@
   id: STCraftPlasticFittingT1
   name: T1 Plastic Fittings
   description: Basic plastic hardware, made from cheap and fragile plastic, is suitable for temporary structures and light tasks.
-  suffix: Stalker, craft, T1 # Zona14: Stalker, крафт, T1
+  suffix: Stalker, craft, T1 # Zona14: Stalker, craft, T1
   components:
     - type: PhysicalComposition
       materialComposition:
@@ -17,7 +17,7 @@
       count: 1
     - type: Craftable
     - type: RepositoryItem
-      categoryName: Crafting # Zona14: Крафты
+      categoryName: Crafting # Zona14: Crafts
 
 
 - type: entity
@@ -25,7 +25,7 @@
   id: STCraftPlasticFittingT2
   name: T2 Plastic Fittings
   description: Medium quality plastic hardware, stronger and more durable than T1, suitable for appliances and furniture.
-  suffix: Stalker, craft, T2 # Zona14: Stalker, крафт, T2
+  suffix: Stalker, craft, T2 # Zona14: Stalker, craft, T2
   components:
     - type: PhysicalComposition
       materialComposition:
@@ -38,7 +38,7 @@
       count: 1
     - type: Craftable
     - type: RepositoryItem
-      categoryName: Crafting # Zona14: Крафты
+      categoryName: Crafting # Zona14: Crafts
 
 
 - type: entity
@@ -46,7 +46,7 @@
   id: STCraftPlasticFittingT3
   name: T3 Plastic Fittings
   description: High quality plastic hardware with good strength and durability, used in household and office furniture.
-  suffix: Stalker, craft, T3 # Zona14: Stalker, крафт, T3
+  suffix: Stalker, craft, T3 # Zona14: Stalker, craft, T3
   components:
     - type: PhysicalComposition
       materialComposition:
@@ -59,7 +59,7 @@
       count: 1
     - type: Craftable
     - type: RepositoryItem
-      categoryName: Crafting # Zona14: Крафты
+      categoryName: Crafting # Zona14: Crafts
 
 
 - type: entity
@@ -67,7 +67,7 @@
   id: STCraftPlasticFittingT4
   name: T4 Plastic Fittings
   description: Premium plastic hardware with high strength and durability, used in automotive parts and high-end furniture.
-  suffix: Stalker, craft, T4 # Zona14: Stalker, крафт, T4
+  suffix: Stalker, craft, T4 # Zona14: Stalker, craft, T4
   components:
     - type: PhysicalComposition
       materialComposition:
@@ -80,7 +80,7 @@
       count: 1
     - type: Craftable
     - type: RepositoryItem
-      categoryName: Crafting # Zona14: Крафты
+      categoryName: Crafting # Zona14: Crafts
 
 
 - type: entity
@@ -88,7 +88,7 @@
   id: STCraftPlasticFittingT5
   name: T5 Plastic Fittings
   description: The tallest plastic hardware made of high-strength plastic is used in the aerospace and medical industries.
-  suffix: Stalker, craft, T5 # Zona14: Stalker, крафт, T5
+  suffix: Stalker, craft, T5 # Zona14: Stalker, craft, T5
   components:
     - type: PhysicalComposition
       materialComposition:
@@ -101,4 +101,4 @@
       count: 1
     - type: Craftable
     - type: RepositoryItem
-      categoryName: Crafting # Zona14: Крафты
+      categoryName: Crafting # Zona14: Crafts

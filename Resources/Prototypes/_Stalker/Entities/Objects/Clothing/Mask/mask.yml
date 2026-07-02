@@ -164,7 +164,7 @@
   parent: ClothingMaskBase
   id: STClothingMaskKufei
   name: Seraphim kufei
-  suffix: ST, Skin # Zona14: ST, Скин
+  suffix: ST, Skin # Zona14: ST, Skin
   description: A lightweight fabric designed to be worn on the head and to cover the face in which it is easy to breathe and move actively.
   components:
   - type: Sprite
@@ -181,7 +181,7 @@
   parent: ClothingMaskBase
   id: STClothingMaskLimaKufei
   name: Seraphim kufiyeh
-  suffix: ST, Skin # Zona14: ST, Скин
+  suffix: ST, Skin # Zona14: ST, Skin
   description: Lightweight gray cloth for covering the head and face, breathable and suited for active movement.
   components:
   - type: Sprite

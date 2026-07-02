@@ -2,7 +2,7 @@
 - type: entity
   name: documents
   description: Information recorded on a physical medium in text form, may be a valuable item.
-  suffix: Stalker, documents # Zona14: Stalker, документы
+  suffix: Stalker, documents # Zona14: Stalker, documents
   id: DocsStalker1
   parent: BaseItem
   components:
@@ -14,7 +14,7 @@
 - type: entity
   name: documents
   description: Information recorded on a physical medium in text form, may be a valuable item. The folder is marked SECRET.
-  suffix: Stalker, documents # Zona14: Stalker, документы
+  suffix: Stalker, documents # Zona14: Stalker, documents
   id: DocsStalker2
   parent: DocsStalker1
   components:
@@ -27,7 +27,7 @@
 - type: entity
   name: combat weapon permit
   parent: BookBase
-  suffix: Stalker, documents # Zona14: Stalker, документы
+  suffix: Stalker, documents # Zona14: Stalker, documents
   id: militaryLicense
   description: A sacred document accepted in all corners of the zone. Smells of bureaucracy
   components:
@@ -59,7 +59,7 @@
   name: hunting license
   id: hunterLicense
   parent: BookBase
-  suffix: Stalker, documents # Zona14: Stalker, документы
+  suffix: Stalker, documents # Zona14: Stalker, documents
   description: "Permit for legal hunting. The paint exactly matches the color of the boars' blood in the area."
   components:
     - type: STWeight
@@ -90,7 +90,7 @@
   name: Exclusion Zone pass
   id: propuskChZO
   parent: BookBase
-  suffix: Stalker, documents # Zona14: Stalker, документы
+  suffix: Stalker, documents # Zona14: Stalker, documents
   description: Laminated piece of paper with a bunch of signatures. A little more important than a beer stand.
   components:
     - type: Clickable
@@ -118,7 +118,7 @@
   name: military base pass
   id: propuskVoenka
   parent: BookBase
-  suffix: Stalker, documents # Zona14: Stalker, документы
+  suffix: Stalker, documents # Zona14: Stalker, documents
   description: A laminated piece of paper indicating that you are so important that you are allowed to visit a military base.
   components:
     - type: Clickable
@@ -147,7 +147,7 @@
   id: BookStalkerFAQ
   name: Zone Guide
   description: All about the zone...
-  suffix: Stalker, book # Zona14: Stalker, книга
+  suffix: Stalker, book # Zona14: Stalker, book
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Misc/books.rsi
@@ -157,7 +157,7 @@
     content: faq-stalker
     stampState: paper_stamp-cap
     stampedBy:
-    - stampedName: Government # Zona14: Правительство
+    - stampedName: Government # Zona14: Government
       stampedColor: "#3681bb"
   - type: ActivatableUI
     key: enum.PaperUiKey.Key
@@ -175,7 +175,7 @@
   id: BookStalkerSeraphimFAQ
   name: Diary
   description: Diary with a strange symbol. Signed - under someone Lex.
-  suffix: Stalker, book, PodpivAss_Lex # Zona14: Stalker, книга, PodpivAss_Lex
+  suffix: Stalker, book, PodpivAss_Lex # Zona14: Stalker, book, PodpivAss_Lex
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Misc/books.rsi
@@ -194,7 +194,7 @@
   parent: BookBase
   id: STPilgrimBible
   name: Covenant
-  suffix: Stalker, book, Pilgrims # Zona14: Stalker, книга, Паломники
+  suffix: Stalker, book, Pilgrims # Zona14: Stalker, book, Pilgrims
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Misc/books.rsi

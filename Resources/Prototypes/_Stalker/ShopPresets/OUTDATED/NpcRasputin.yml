@@ -1,7 +1,7 @@
 - type: shopPreset
   id: NpcRasput
   categories:
-    - name: Ammunition # Zona14: Боеприпасы
+    - name: Ammunition # Zona14: Ammunition
       priority: 1
       items:
         Ammobox1255TP: 2000
@@ -11,4 +11,4 @@
         751M61Box: 620
         754PCBox: 500
         STBox9x39SP6: 650
-        # Zona14: Все ценны примерные для рассмотрения клейми и ореха отталкивался от пробития и силы калибра то есть 12,55 самый дорого 9,39 потом 7.39/7.51 и т.д.
+        # Zona14: All prices are approximate based on penetration and caliber power, i.e. 12.55 is the most expensive, then 9.39, then 7.39/7.51, etc.

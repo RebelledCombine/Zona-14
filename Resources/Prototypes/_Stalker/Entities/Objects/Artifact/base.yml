@@ -31,7 +31,7 @@
       - STArtifact
     - type: Material
     - type: RepositoryItem
-      categoryName: Artifacts # Zona14: Артефакты
+      categoryName: Artifacts # Zona14: Artifacts
     - type: Craftable
     - type: Currency
       price:

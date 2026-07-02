@@ -1,5 +1,5 @@
-# Zona14: Эта штука просто пиздец. Если в игре есть дробь пробивающая броню, то эта штука будет выносить всё живое и неживое
-# Zona14: Надо как-то это балансить. Отдачей там или ещё чем я хз.
+# Zona14: This thing is insane. If the game has armor-piercing buckshot, this thing will destroy everything alive and dead
+# Zona14: Need to balance this somehow. With recoil or something, I don't know.
 - type: entity
   abstract: true
   parent: STBaseWeaponShotgunAuto

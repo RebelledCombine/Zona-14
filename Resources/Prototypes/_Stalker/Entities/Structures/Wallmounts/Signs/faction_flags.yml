@@ -1,5 +1,5 @@
 # Zona14: translated Russian names/descriptions to English
-# Zona14: Я не знаю почему он здесь, может быть так надо, поэтому не трогаю
+# Zona14: I don't know why this is here, maybe it's needed, so I'm not touching it
 - type: entity
   parent: PosterBaseStalker
   id: FactionFlagAnomalists
@@ -186,7 +186,7 @@
   parent: FactionFlagBaseEN # EN
   id: Banner16
   name: Banner of the Order of Pilgrims
-  suffix: ST, Mapping, Banner # Zona14: ST, Mapping, Баннер
+  suffix: ST, Mapping, Banner # Zona14: ST, Mapping, Banner
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Wallmounts/banners.rsi
@@ -196,7 +196,7 @@
   parent: FactionFlagBaseEN # EN
   id: Banner17
   name: Project flag
-  suffix: ST, Mapping, Banner # Zona14: ST, Mapping, Баннер
+  suffix: ST, Mapping, Banner # Zona14: ST, Mapping, Banner
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Wallmounts/banners.rsi
@@ -206,7 +206,7 @@
   parent: FactionFlagBaseEN # EN
   id: Banner18
   name: Flag of Ukraine with the coat of arms
-  suffix: ST, Mapping, Banner # Zona14: ST, Mapping, Баннер
+  suffix: ST, Mapping, Banner # Zona14: ST, Mapping, Banner
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Wallmounts/banners.rsi
@@ -219,7 +219,7 @@
   parent: FactionFlagBaseEN # EN
   id: Banner19
   name: Flag of the Perimeter Guard Forces
-  suffix: ST, Mapping, Banner # Zona14: ST, Mapping, Баннер
+  suffix: ST, Mapping, Banner # Zona14: ST, Mapping, Banner
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Wallmounts/banners.rsi
@@ -229,7 +229,7 @@
   parent: FactionFlagBaseEN # EN
   id: Banner20
   name: Project Flag
-  suffix: ST, Mapping, Banner # Zona14: ST, Mapping, Баннер
+  suffix: ST, Mapping, Banner # Zona14: ST, Mapping, Banner
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Wallmounts/banners.rsi
@@ -239,7 +239,7 @@
   parent: FactionFlagBaseEN # EN
   id: Banner21
   name: USSR Flag
-  suffix: ST, Mapping, Banner # Zona14: ST, Mapping, Баннер
+  suffix: ST, Mapping, Banner # Zona14: ST, Mapping, Banner
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Wallmounts/banners.rsi
@@ -249,7 +249,7 @@
   parent: FactionFlagBaseEN # EN
   id: Banner22
   name: flag of Russia
-  suffix: ST, Mapping, Banner # Zona14: ST, Mapping, Баннер
+  suffix: ST, Mapping, Banner # Zona14: ST, Mapping, Banner
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Wallmounts/banners.rsi
@@ -259,7 +259,7 @@
   parent: FactionFlagBaseEN # EN
   id: Banner23
   name: flag of DPR
-  suffix: ST, Mapping, Banner # Zona14: ST, Mapping, Баннер
+  suffix: ST, Mapping, Banner # Zona14: ST, Mapping, Banner
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Wallmounts/banners.rsi
@@ -269,7 +269,7 @@
   parent: FactionFlagBaseEN # EN
   id: Banner24
   name: flag of Austria
-  suffix: ST, Mapping, Banner # Zona14: ST, Mapping, Баннер
+  suffix: ST, Mapping, Banner # Zona14: ST, Mapping, Banner
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Wallmounts/banners.rsi
@@ -279,7 +279,7 @@
   parent: FactionFlagBaseEN # EN
   id: Banner25
   name: flag of Poland
-  suffix: ST, Mapping, Banner # Zona14: ST, Mapping, Баннер
+  suffix: ST, Mapping, Banner # Zona14: ST, Mapping, Banner
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Wallmounts/banners.rsi
@@ -289,7 +289,7 @@
   parent: FactionFlagBaseEN # EN
   id: Banner26
   name: flag of the Serbian Republic
-  suffix: ST, Mapping, Banner # Zona14: ST, Mapping, Баннер
+  suffix: ST, Mapping, Banner # Zona14: ST, Mapping, Banner
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Wallmounts/banners.rsi
@@ -299,7 +299,7 @@
   parent: FactionFlagBaseEN # EN
   id: Banner27
   name: BChB flag
-  suffix: ST, Mapping, Banner # Zona14: ST, Mapping, Баннер
+  suffix: ST, Mapping, Banner # Zona14: ST, Mapping, Banner
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Wallmounts/banners.rsi
@@ -309,7 +309,7 @@
   parent: FactionFlagBaseEN # EN
   id: Banner28
   name: flag of the Finnish islands
-  suffix: ST, Mapping, Banner # Zona14: ST, Mapping, Баннер
+  suffix: ST, Mapping, Banner # Zona14: ST, Mapping, Banner
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Wallmounts/banners.rsi

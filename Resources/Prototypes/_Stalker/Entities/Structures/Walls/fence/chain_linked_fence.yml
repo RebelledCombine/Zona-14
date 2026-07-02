@@ -1,6 +1,6 @@
 # Zona14: translated Russian names/descriptions to English
 
-# Zona14: КОЛЮЧАЯ ПРОВОЛОКА
+# Zona14: BARBED WIRE
 - type: entity
   parent: BaseStructure
   id: STBaseFenceMetal
@@ -96,7 +96,7 @@
   id: StalkerFenceMetalStraightConst
   name: "{ ent-StalkerFenceMetalStraight }"
   description: "{ ent-StalkerFenceMetalBroken.desc }"
-  suffix: ST, Mapping, traight, destructible # Zona14: ST, Mapping, traight, разбираемый
+  suffix: ST, Mapping, traight, destructible # Zona14: ST, Mapping, traight, disassemblable
   components:
   - type: Icon
     sprite: _Stalker/Structures/Walls/fencerazor.rsi

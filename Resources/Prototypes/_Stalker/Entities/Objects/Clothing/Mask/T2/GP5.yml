@@ -23,7 +23,7 @@
         Caustic: 0.85
         Radiation: 0.9
 
-# Zona14: скины
+# Zona14: skins
 - type: entity
   parent: ClothingMaskGP5
   id: ClothingMaskGP5Green

@@ -1,11 +1,11 @@
 # Zona14: translated Russian names/descriptions to English
-# Zona14: Повязки
+# Zona14: Bandanas
 - type: entity
   parent: ClothingNeckBase
   id: ClothingBandageStalkerBlue
   name: CS Armband
   description: An armband to represent CS.
-  suffix: Stalker, Bandage # Zona14: Stalker, Повязка
+  suffix: Stalker, Bandage # Zona14: Stalker, Bandana
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_blue.rsi
@@ -17,7 +17,7 @@
   id: ClothingBandageStalkerGreen
   name: Freedom Armband
   description: An armband to represent Freedom.
-  suffix: Stalker, Bandage # Zona14: Stalker, Повязка
+  suffix: Stalker, Bandage # Zona14: Stalker, Bandana
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_green.rsi
@@ -29,7 +29,7 @@
   id: ClothingBandageStalkerYellow
   name: Renegade Armband
   description: An armband to represent the Renegade.
-  suffix: Stalker, Bandage # Zona14: Stalker, Повязка
+  suffix: Stalker, Bandage # Zona14: Stalker, Bandana
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_yellow.rsi
@@ -41,7 +41,7 @@
   id: ClothingBandageStalkerPurple
   name: Ecologist Armband
   description: An armband to represent the Ecologists.
-  suffix: Stalker, Bandage # Zona14: Stalker, Повязка
+  suffix: Stalker, Bandage # Zona14: Stalker, Bandana
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_purple.rsi
@@ -53,7 +53,7 @@
   id: ClothingBandageStalkerRed
   name: Duty Armband
   description: An armband to represent Duty.
-  suffix: Stalker, Bandage # Zona14: Stalker, Повязка
+  suffix: Stalker, Bandage # Zona14: Stalker, Bandana
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_red.rsi
@@ -65,7 +65,7 @@
   id: ClothingBandageStalkerRus
   name: Armband with the Russian flag
   description: Armband with the Russian flag on the shoulder.
-  suffix: Stalker, Bandage # Zona14: Stalker, Повязка
+  suffix: Stalker, Bandage # Zona14: Stalker, Bandana
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_rus.rsi
@@ -77,7 +77,7 @@
   id: ClothingBandageStalkerUk
   name: Ukrainian Military Armband
   description: An armband to represent the Ukrainian Military.
-  suffix: Stalker, Bandage # Zona14: Stalker, Повязка
+  suffix: Stalker, Bandage # Zona14: Stalker, Bandana
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_uk.rsi
@@ -89,7 +89,7 @@
   id: ClothingBandageStalkerMerc
   name: Mercenary Armband
   description: An armband to represent the Mercenarys.
-  suffix: Stalker, Bandage # Zona14: Stalker, Повязка
+  suffix: Stalker, Bandage # Zona14: Stalker, Bandana
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_merc.rsi
@@ -102,7 +102,7 @@
   id: ClothingBandageStalkerKrest
   name: Cross Armband
   description: Armband with a red cross on a white background.
-  suffix: Stalker, Bandage # Zona14: Stalker, Повязка
+  suffix: Stalker, Bandage # Zona14: Stalker, Bandana
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_krest.rsi
@@ -115,7 +115,7 @@
   id: ClothingBandageStalkerPetuh
   name: Rooster Armband
   description: rooster bandage kut - kudaAH!
-  suffix: Stalker, Bandage # Zona14: Stalker, Повязка
+  suffix: Stalker, Bandage # Zona14: Stalker, Bandana
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_petuh.rsi
@@ -127,7 +127,7 @@
   id: ClothingBandageStalkerBelarus
   name: Armband with the Belarusian flag
   description: Armband with the flag of Belarus.
-  suffix: Stalker, Bandage # Zona14: Stalker, Повязка
+  suffix: Stalker, Bandage # Zona14: Stalker, Bandana
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_belarus.rsi
@@ -139,7 +139,7 @@
   id: ClothingBandageStalkerJid
   name: Israeli flag Armband
   description: Armband with the flag of Israel.
-  suffix: Stalker, Bandage # Zona14: Stalker, Повязка
+  suffix: Stalker, Bandage # Zona14: Stalker, Bandana
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_jid.rsi
@@ -151,7 +151,7 @@
   id: ClothingBandageStalkerWhite
   name: White Armband
   description: white shoulder band.
-  suffix: Stalker, Bandage # Zona14: Stalker, Повязка
+  suffix: Stalker, Bandage # Zona14: Stalker, Bandana
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_white.rsi
@@ -163,7 +163,7 @@
   id: ClothingBandageStalkerPeace
   name: Peace Flag Armband
   description: Peace flag Armband.
-  suffix: Stalker, Bandage # Zona14: Stalker, Повязка
+  suffix: Stalker, Bandage # Zona14: Stalker, Bandana
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_peace.rsi
@@ -175,7 +175,7 @@
   id: ClothingBandageStalkerEstonia
   name: Estonia Flag Armband
   description: Armband featuring the Estonian flag.
-  suffix: Stalker, Bandage # Zona14: Stalker, Повязка
+  suffix: Stalker, Bandage # Zona14: Stalker, Bandana
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_est.rsi
@@ -187,7 +187,7 @@
   id: ClothingBandageStalkerAustria
   name: Austria Flag Armband
   description: Armband featuring the Austrian flag.
-  suffix: Stalker, Bandage # Zona14: Stalker, Повязка
+  suffix: Stalker, Bandage # Zona14: Stalker, Bandana
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_avs.rsi
@@ -199,7 +199,7 @@
   id: ClothingBandageStalkerDNR
   name: DNR Flag Armband
   description: Armband featuring the DNR flag.
-  suffix: Stalker, Bandage # Zona14: Stalker, Повязка
+  suffix: Stalker, Bandage # Zona14: Stalker, Bandana
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_dnr.rsi
@@ -211,7 +211,7 @@
   id: ClothingBandageStalkerGermany
   name: Germany Flag Armband
   description: Armband featuring the German flag.
-  suffix: Stalker, Bandage # Zona14: Stalker, Повязка
+  suffix: Stalker, Bandage # Zona14: Stalker, Bandana
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_er.rsi
@@ -223,7 +223,7 @@
   id: ClothingBandageStalkerLNR
   name: LNR Flag Armband
   description: Armband featuring the LNR flag.
-  suffix: Stalker, Bandage # Zona14: Stalker, Повязка
+  suffix: Stalker, Bandage # Zona14: Stalker, Bandana
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_lnr.rsi
@@ -235,7 +235,7 @@
   id: ClothingBandageStalkerMoldova
   name: Moldovan Flag Armband
   description: Armband featuring the Moldovan flag.
-  suffix: Stalker, Bandage # Zona14: Stalker, Повязка
+  suffix: Stalker, Bandage # Zona14: Stalker, Bandana
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_mol.rsi
@@ -247,7 +247,7 @@
   id: ClothingBandageStalkerTransnistria
   name: Transnistria Flag Armband
   description: Armband featuring the Transnistrian flag.
-  suffix: Stalker, Bandage # Zona14: Stalker, Повязка
+  suffix: Stalker, Bandage # Zona14: Stalker, Bandana
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_pml.rsi
@@ -259,7 +259,7 @@
   id: ClothingBandageStalkerPoland
   name: Polish Flag Armband
   description: Armband featuring the Polish flag.
-  suffix: Stalker, Bandage # Zona14: Stalker, Повязка
+  suffix: Stalker, Bandage # Zona14: Stalker, Bandana
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_pol.rsi
@@ -271,7 +271,7 @@
   id: ClothingBandageStalkerSopOne
   name: armband with number 1
   description: armband with number 1
-  suffix: Stalker, Bandage # Zona14: Stalker, Повязка
+  suffix: Stalker, Bandage # Zona14: Stalker, Bandana
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_sop/bandage_one.rsi
@@ -283,7 +283,7 @@
   id: ClothingBandageStalkerSopTwo
   name: armband with number 2
   description: armband with number 2
-  suffix: Stalker, Bandage # Zona14: Stalker, Повязка
+  suffix: Stalker, Bandage # Zona14: Stalker, Bandana
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_sop/bandage_two.rsi
@@ -295,7 +295,7 @@
   id: ClothingBandageStalkerSopThree
   name: armband with number 3
   description: armband with number 3
-  suffix: Stalker, Bandage # Zona14: Stalker, Повязка
+  suffix: Stalker, Bandage # Zona14: Stalker, Bandana
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_sop/bandage_three.rsi
@@ -307,7 +307,7 @@
   id: ClothingBandageStalkerSopFour
   name: armband with number 4
   description: armband with number 4
-  suffix: Stalker, Bandage # Zona14: Stalker, Повязка
+  suffix: Stalker, Bandage # Zona14: Stalker, Bandana
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_sop/bandage_four.rsi
@@ -319,7 +319,7 @@
   id: ClothingBandageStalkerMP
   name: military police armband
   description: military police armband
-  suffix: Stalker, Bandage # Zona14: Stalker, Повязка
+  suffix: Stalker, Bandage # Zona14: Stalker, Bandana
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/Neck/bandages/bandage_sop/bandage_mp.rsi

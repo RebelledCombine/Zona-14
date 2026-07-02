@@ -30,7 +30,7 @@
         ents: [ ]
       item_slot: !type:ContainerSlot { }
   - type: RepositoryItem
-    categoryName: Magazines # Zona14: Магазины
+    categoryName: Magazines # Zona14: Magazines
   - type: Sprite
     sprite: _Stalker/Objects/Weapons/Guns/Ammunition/Magazines/545/60.rsi
     layers:

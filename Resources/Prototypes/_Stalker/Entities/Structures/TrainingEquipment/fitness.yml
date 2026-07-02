@@ -11,7 +11,7 @@
   - type: Clickable
   - type: InteractionOutline
 
-# Zona14: Штанги (сила)
+# Zona14: Barbells (strength)
 
 - type: entity
   parent: STFitnessBase
@@ -58,7 +58,7 @@
     minValue: 50
     maxValue: 75
 
-# Zona14: Боксёрские груши
+# Zona14: Punching bags
 
 - type: entity
   parent: STFitnessBase
@@ -90,7 +90,7 @@
     minValue: 25
     maxValue: 50
 
-# Zona14: Беговые дорожки
+# Zona14: Treadmills
 
 - type: entity
   parent: STFitnessBase

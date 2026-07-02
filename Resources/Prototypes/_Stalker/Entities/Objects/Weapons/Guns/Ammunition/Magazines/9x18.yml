@@ -42,7 +42,7 @@
     steps: 5
     zeroVisible: false
   - type: RepositoryItem
-    categoryName: Magazines # Zona14: Магазины
+    categoryName: Magazines # Zona14: Magazines
 
 - type: entity
   id: BaseAPSMag
@@ -83,9 +83,9 @@
       zeroVisible: false
     - type: Appearance
     - type: RepositoryItem
-      categoryName: Magazines # Zona14: Магазины
+      categoryName: Magazines # Zona14: Magazines
 
-# Zona14: ######################## Бизон #########################
+# Zona14: ######################## Bison #########################
 - type: entity
   id: BizonMag
   name: screw magazine "Bison" (64)
@@ -127,9 +127,9 @@
   - type: Appearance
   - type: Craftable
   - type: RepositoryItem
-    categoryName: Magazines # Zona14: Магазины
+    categoryName: Magazines # Zona14: Magazines
 
-# Zona14: ######################## Скорпион #########################
+# Zona14: ######################## Scorpion #########################
 - type: entity
   id: Vz61Mag
   name: vz store. 61 Skorpion (20)

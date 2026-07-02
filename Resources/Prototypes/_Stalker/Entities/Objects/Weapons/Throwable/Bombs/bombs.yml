@@ -5,7 +5,7 @@
   abstract: true
   parent: BaseItem
   id: BaseBomb
-  suffix: Stalker, Bomb # Zona14: Stalker, Бомба
+  suffix: Stalker, Bomb # Zona14: Stalker, Bomb
   components:
     - type: STWeight
       self: 1.5
@@ -267,7 +267,7 @@
   description: Homemade timed explosive, a complex construction since you had to convert an anomaly detector into a timer. Careful, it is not calibrated correctly.
   parent: BasePlasticExplosive
   id: StalkerTimerBombDynamite
-  suffix: Stalker, Bomb # Zona14: Stalker, Бомба
+  suffix: Stalker, Bomb # Zona14: Stalker, Bomb
   components:
   - type: Item
     size: Normal
@@ -315,7 +315,7 @@
   description: The latest version of quality explosives on a timer and control sensor, hitting the enemy with a powerful blast wave.
   parent: BasePlasticExplosive
   id: StalkerDistBomb
-  suffix: Stalker, Bomb, Event # Zona14: Stalker, Бомба, Ивент
+  suffix: Stalker, Bomb, Event # Zona14: Stalker, Bomb, Event
   components:
   - type: Item
     size: Normal

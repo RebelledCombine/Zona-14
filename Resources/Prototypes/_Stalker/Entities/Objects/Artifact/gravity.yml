@@ -1,10 +1,10 @@
 # Zona14: translated Russian names/descriptions to English
-# Zona14: Пораждаемая Трамплином, Воронкой, Лифтом
+# Zona14: Spawned by Springboard, Funnel, Elevator
 - type: entity
   parent: BaseArtifact
   id: ArtMedusa
-# Zona14: а куда ты делась в мастере? Нипон
-  suffix: Stalker, Jellyfish # Zona14: Stalker, Медуза
+# Zona14: Where did you go in master? No idea
+  suffix: Stalker, Jellyfish # Zona14: Stalker, Jellyfish
   components:
   - type: Butcherable
     spawned:
@@ -45,7 +45,7 @@
 - type: entity
   parent: BaseArtifact
   id: ZoneArtifactFlower
-  suffix: Stalker, Stone flower # Zona14: Stalker, Каменный цветок
+  suffix: Stalker, Stone flower # Zona14: Stalker, Stone flower
   components:
   - type: Sprite
     state: flower
@@ -87,7 +87,7 @@
   name: Night Star
   parent: BaseArtifact
   id: ZoneArtifactNightStar
-  suffix: Stalker, Night star # Zona14: Stalker, Ночная звезда
+  suffix: Stalker, Night star # Zona14: Stalker, Night star
   components:
   - type: Sprite
     state: night_star
@@ -125,12 +125,12 @@
     - STArtifact
     - STArtifactTier4
 
-# Zona14: Пораждаемая эпицентром, каруселью
+# Zona14: Spawned by Epicentre, Carousel
 - type: entity
   parent: BaseArtifact
   name: Vyvert
   id: ZoneArtifactVyvert
-  suffix: Stalker, Twist # Zona14: Stalker, Выверт
+  suffix: Stalker, Twist # Zona14: Stalker, Twist
   components:
   - type: Sprite
     state: vyvert
@@ -167,7 +167,7 @@
 - type: entity
   parent: BaseArtifact
   id: ZoneArtifactAmoeba
-  suffix: Stalker, Amoeba # Zona14: Stalker, Амеба
+  suffix: Stalker, Amoeba # Zona14: Stalker, Amoeba
   components:
   - type: Sprite
     state: amoeba
@@ -211,7 +211,7 @@
 - type: entity
   parent: BaseArtifact
   id: ZoneArtifactGravi
-  suffix: Stalker, Gravi # Zona14: Stalker, Грави
+  suffix: Stalker, Gravi # Zona14: Stalker, Gravi
   components:
   - type: Sprite
     state: gravi
@@ -252,7 +252,7 @@
 - type: entity
   parent: BaseArtifact
   id: ZoneArtifactGoldfish
-  suffix: Stalker, Golden fish # Zona14: Stalker, Золотая рыбка
+  suffix: Stalker, Golden fish # Zona14: Stalker, Golden fish
   components:
   - type: Sprite
     state: goldfish
@@ -296,7 +296,7 @@
 - type: entity
   parent: BaseArtifact
   id: ZoneArtifactSpring
-  suffix: Stalker, Spring # Zona14: Stalker, Пружина
+  suffix: Stalker, Spring # Zona14: Stalker, Spring
   components:
   - type: Sprite
     state: spring
@@ -333,11 +333,11 @@
     - STArtifact
     - STArtifactTier5
 
-# Zona14: Пораждаемая инверсией
+# Zona14: Spawned by Inversion
 - type: entity
   parent: BaseArtifact
   id: ZoneArtifactFocus
-  suffix: Stalker, Focus # Zona14: Stalker, Фокус
+  suffix: Stalker, Focus # Zona14: Stalker, Focus
   components:
   - type: Sprite
     state: focus
@@ -377,7 +377,7 @@
 - type: entity
   parent: BaseArtifact
   id: ZoneArtifactStuntman
-  suffix: Stalker, Trickster # Zona14: Stalker, Трюкач
+  suffix: Stalker, Trickster # Zona14: Stalker, Trickster
   components:
   - type: Sprite
     state: stuntman
@@ -424,7 +424,7 @@
 - type: entity
   parent: BaseArtifact
   id: ZoneArtifactDistorter
-  suffix: Stalker, Distorter # Zona14: Stalker, Исказитель
+  suffix: Stalker, Distorter # Zona14: Stalker, Distorter
   components:
   - type: Sprite
     state: distorter

@@ -102,7 +102,7 @@
     self: 0.25
 
 
-# Zona14: Артефакты 32x32
+# Zona14: Artifacts 32x32
 
 - type: entity
   name: artifact
@@ -284,7 +284,7 @@
     state: art23
     scale: 0.5, 0.5
 
-# Zona14: Артефакты 64x64
+# Zona14: Artifacts 64x64
 
 - type: entity
   name: artifact

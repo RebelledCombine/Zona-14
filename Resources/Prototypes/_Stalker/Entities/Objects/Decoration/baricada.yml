@@ -22,13 +22,13 @@
         layer:
         - WallLayer
 
-# Zona14: НА ПЛАНЫ
+# Zona14: FOR PLANS
 # - type: entity
 #   id: BarricadaStalker2
 #   parent: BaseStructure
-# Zona14: name: баррикада
-# Zona14: suffix: Stalker, Разрушаемый
-# Zona14: description: Искусственное фортификационное заграждение, выполненное из подручных материалов и расположенное поперёк дороги, улицы
+# Zona14: name: barricade
+# Zona14: suffix: Stalker, Destructible
+# Zona14: description: An artificial fortification barrier made from improvised materials and placed across a road or street
 #   components:
 #   - type: Sprite
 #     sprite: _Stalker/Objects/Decoration/Other/baricada.rsi

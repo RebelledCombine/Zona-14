@@ -143,7 +143,7 @@
   id: MutantPsidogCopy
   name: pseudodog
   description: A mutated wolf with significant psionic abilities and the ability to create illusions. A rare and very dangerous creature.
-  suffix: Stalker, Mutant, Copy # Zona14: Stalker, Мутант, Копия
+  suffix: Stalker, Mutant, Copy # Zona14: Stalker, Mutant, Copy
   components:
     - type: HTN
       rootTask:

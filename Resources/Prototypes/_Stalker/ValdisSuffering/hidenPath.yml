@@ -45,7 +45,7 @@
   - type: SpawnOnDespawn
     prototype: BypassDeactivated
 
-# Zona14: Билет на вертолёт до Рыжего леса
+# Zona14: Helicopter ticket to Red Forest
 - type: entity
   parent: BypassCard
   id: STHelicopterToRedForestTicket
@@ -85,7 +85,7 @@
     prototype: STHelicopterBypassDeactivated
 
 
-# Zona14: Обменник баксов
+# Zona14: Dollar exchange
 - type: entity
   parent: BypassCard
   id: DollarBypassCard
@@ -125,7 +125,7 @@
   - type: SpawnOnDespawn
     prototype: DollarBypassDeactivated
 
-# Zona14: Доступ в фитнес-центр
+# Zona14: Gym access
 - type: entity
   parent: BypassCard
   id: FitnessCenterCard

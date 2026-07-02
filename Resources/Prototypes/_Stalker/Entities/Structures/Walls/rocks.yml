@@ -1,5 +1,5 @@
 # Zona14: translated Russian names/descriptions to English
-# Zona14: ГОРЫ (ВОСТОК -> ЗАПАД)
+# Zona14: MOUNTAINS (EAST -> WEST)
 
 - type: entity
   parent: BaseStructure
@@ -28,7 +28,7 @@
 - type: entity
   parent: REWStalkerBase
   id: REWStalker1
-  suffix: Stalker, 1 (EAST->WEST) # Zona14: Stalker, 1 (ВОС->ЗАП)
+  suffix: Stalker, 1 (EAST->WEST) # Zona14: Stalker, 1 (EAST->WEST)
   components:
   - type: Sprite
     layers:
@@ -50,7 +50,7 @@
 - type: entity
   parent: REWStalkerBase
   id: REWStalker2
-  suffix: ST, Mapping, 2 (EAST->WEST) # Zona14: ST, Mapping, 2 (ВОС->ЗАП)
+  suffix: ST, Mapping, 2 (EAST->WEST) # Zona14: ST, Mapping, 2 (EAST->WEST)
   components:
   - type: Sprite
     layers:
@@ -59,7 +59,7 @@
 - type: entity
   parent: REWStalkerBase
   id: REWStalker3
-  suffix: ST, Mapping, 3 (EAST->WEST) # Zona14: ST, Mapping, 3 (ВОС->ЗАП)
+  suffix: ST, Mapping, 3 (EAST->WEST) # Zona14: ST, Mapping, 3 (EAST->WEST)
   components:
   - type: Sprite
     layers:
@@ -81,7 +81,7 @@
 - type: entity
   parent: REWStalkerBase
   id: REWStalker4
-  suffix: ST, Mapping, 4 (EAST->WEST) # Zona14: ST, Mapping, 4 (ВОС->ЗАП)
+  suffix: ST, Mapping, 4 (EAST->WEST) # Zona14: ST, Mapping, 4 (EAST->WEST)
   components:
   - type: Sprite
     layers:
@@ -103,7 +103,7 @@
 - type: entity
   parent: REWStalkerBase
   id: REWStalker5
-  suffix: ST, Mapping, 5 (EAST->WEST) # Zona14: ST, Mapping, 5 (ВОС->ЗАП)
+  suffix: ST, Mapping, 5 (EAST->WEST) # Zona14: ST, Mapping, 5 (EAST->WEST)
   components:
   - type: Sprite
     layers:
@@ -122,7 +122,7 @@
         - MidImpassable
         - LowImpassable
 
-# Zona14: ГОРЫ (ЮГ -> СЕВЕР)
+# Zona14: MOUNTAINS (SOUTH -> NORTH)
 
 - type: entity
   parent: BaseStructure
@@ -151,7 +151,7 @@
 - type: entity
   parent: SNStalkerBase
   id: SNStalker1
-  suffix: ST, Mapping, 1 (SOUTH->NORTH) # Zona14: ST, Mapping, 1 (ЮГ->СЕВ)
+  suffix: ST, Mapping, 1 (SOUTH->NORTH) # Zona14: ST, Mapping, 1 (SOUTH->NORTH)
   components:
   - type: Sprite
     layers:
@@ -173,7 +173,7 @@
 - type: entity
   parent: SNStalkerBase
   id: SNStalker2
-  suffix: ST, Mapping, 2 (SOUTH->NORTH) # Zona14: ST, Mapping, 2 (ЮГ->СЕВ)
+  suffix: ST, Mapping, 2 (SOUTH->NORTH) # Zona14: ST, Mapping, 2 (SOUTH->NORTH)
   components:
   - type: Sprite
     layers:
@@ -195,7 +195,7 @@
 - type: entity
   parent: SNStalkerBase
   id: SNStalker3
-  suffix: ST, Mapping, 3 (SOUTH->NORTH) # Zona14: ST, Mapping, 3 (ЮГ->СЕВ)
+  suffix: ST, Mapping, 3 (SOUTH->NORTH) # Zona14: ST, Mapping, 3 (SOUTH->NORTH)
   components:
   - type: Sprite
     layers:
@@ -217,7 +217,7 @@
 - type: entity
   parent: SNStalkerBase
   id: SNStalker4
-  suffix: ST, Mapping, 4 (SOUTH->NORTH) # Zona14: ST, Mapping, 4 (ЮГ->СЕВ)
+  suffix: ST, Mapping, 4 (SOUTH->NORTH) # Zona14: ST, Mapping, 4 (SOUTH->NORTH)
   components:
   - type: Sprite
     layers:
@@ -240,7 +240,7 @@
 - type: entity
   parent: SNStalkerBase
   id: SNStalker5
-  suffix: ST, Mapping, 5 (SOUTH->NORTH) # Zona14: ST, Mapping, 5 (ЮГ->СЕВ)
+  suffix: ST, Mapping, 5 (SOUTH->NORTH) # Zona14: ST, Mapping, 5 (SOUTH->NORTH)
   components:
   - type: Sprite
     layers:
@@ -259,7 +259,7 @@
         - MidImpassable
         - LowImpassable
 
-# Zona14: УГЛЫ
+# Zona14: CORNERS
 
 - type: entity
   parent: BaseStructure
@@ -288,7 +288,7 @@
 - type: entity
   parent: UTStalkerBase
   id: UTStalker1
-  suffix: ST, Mapping, 1 (corner, BOTTOM->LEFT) # Zona14: ST, Mapping, 1 (угол, НИЖ->ЛЕВ)
+  suffix: ST, Mapping, 1 (corner, BOTTOM->LEFT) # Zona14: ST, Mapping, 1 (corner, BOTTOM->LEFT)
   components:
   - type: Sprite
     layers:
@@ -310,7 +310,7 @@
 - type: entity
   parent: UTStalkerBase
   id: UTStalker2
-  suffix: ST, Mapping, 2 (corner, BOTTOM->LEFT) # Zona14: ST, Mapping, 2 (угол, НИЖ->ЛЕВ)
+  suffix: ST, Mapping, 2 (corner, BOTTOM->LEFT) # Zona14: ST, Mapping, 2 (corner, BOTTOM->LEFT)
   components:
   - type: Sprite
     layers:
@@ -332,7 +332,7 @@
 - type: entity
   parent: UTStalkerBase
   id: UTStalker3
-  suffix: ST, Mapping, 1 (corner, BOTTOM->RIGHT) # Zona14: ST, Mapping, 1 (угол, НИЖ->ПРАВ)
+  suffix: ST, Mapping, 1 (corner, BOTTOM->RIGHT) # Zona14: ST, Mapping, 1 (corner, BOTTOM->RIGHT)
   components:
   - type: Sprite
     layers:
@@ -354,7 +354,7 @@
 - type: entity
   parent: UTStalkerBase
   id: UTStalker4
-  suffix: ST, Mapping, 2 (corner, BOTTOM->RIGHT) # Zona14: ST, Mapping, 2 (угол, НИЖ->ПРАВ)
+  suffix: ST, Mapping, 2 (corner, BOTTOM->RIGHT) # Zona14: ST, Mapping, 2 (corner, BOTTOM->RIGHT)
   components:
   - type: Sprite
     layers:
@@ -376,7 +376,7 @@
 - type: entity
   parent: UTStalkerBase
   id: UTStalker5
-  suffix: ST, Mapping, 1 (corner, TOP->LEFT) # Zona14: ST, Mapping, 1 (угол, ВЕРХ->ЛЕВ)
+  suffix: ST, Mapping, 1 (corner, TOP->LEFT) # Zona14: ST, Mapping, 1 (corner, TOP->LEFT)
   components:
   - type: Sprite
     layers:
@@ -398,7 +398,7 @@
 - type: entity
   parent: UTStalkerBase
   id: UTStalker6
-  suffix: ST, Mapping, 2 (corner, TOP->LEFT) # Zona14: ST, Mapping, 2 (угол, ВЕРХ->ЛЕВ)
+  suffix: ST, Mapping, 2 (corner, TOP->LEFT) # Zona14: ST, Mapping, 2 (corner, TOP->LEFT)
   components:
   - type: Sprite
     layers:
@@ -420,7 +420,7 @@
 - type: entity
   parent: UTStalkerBase
   id: UTStalker7
-  suffix: ST, Mapping, 1 (corner, TOP->RIGHT) # Zona14: ST, Mapping, 1 (угол, ВЕРХ->ПРАВ)
+  suffix: ST, Mapping, 1 (corner, TOP->RIGHT) # Zona14: ST, Mapping, 1 (corner, TOP->RIGHT)
   components:
   - type: Sprite
     layers:
@@ -442,7 +442,7 @@
 - type: entity
   parent: UTStalkerBase
   id: UTStalker8
-  suffix: ST, Mapping, 2 (corner, TOP->RIGHT) # Zona14: ST, Mapping, 2 (угол, ВЕРХ->ПРАВ)
+  suffix: ST, Mapping, 2 (corner, TOP->RIGHT) # Zona14: ST, Mapping, 2 (corner, TOP->RIGHT)
   components:
   - type: Sprite
     layers:

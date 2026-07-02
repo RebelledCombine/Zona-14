@@ -133,7 +133,7 @@
   id: ClothingOuterAnomalyStalkerJacket
   name: Anomalous Stalker Jacket
   description: Normal clothing of a novice stalker. It does not save the wearer from either a bullet or anomalies, but it is comfortable to wear.
-  suffix: ST, T1, Anomalous # Zona14: ST, T1, Аномальное
+  suffix: ST, T1, Anomalous # Zona14: ST, T1, Anomalous
   components:
     - type: Sprite
       sprite: _Stalker/Objects/Clothing/outerClothing/jacket_stalker.rsi
@@ -184,7 +184,7 @@
   id: ClothingOuterAnomalyStalkerJacketWhite
   name: Anomalous Stalker Jacket
   description: A regular outfit for a novice stalker in white. It won’t protect the wearer from bullets or anomalies, but it’s comfortable to wear.
-  suffix: ST, T1, Anomalous # Zona14: ST, T1, Аномальное
+  suffix: ST, T1, Anomalous # Zona14: ST, T1, Anomalous
   components:
     - type: Sprite
       sprite: _Stalker/Objects/Clothing/outerClothing/jacket_stalker_white.rsi

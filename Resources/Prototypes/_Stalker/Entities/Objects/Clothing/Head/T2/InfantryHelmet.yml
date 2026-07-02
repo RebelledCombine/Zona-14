@@ -109,7 +109,7 @@
   parent: STClothingHeadHelmetCombatT2Base
   id: ClothingHeadHelmetKeeper
   name: Guardian Helmet
-  suffix: ST, T2, Custom # Zona14: ST, T2, Кастомка
+  suffix: ST, T2, Custom # Zona14: ST, T2, Custom
   description: Class II Guardian helmet, manufacturer unknown.
   components:
     - type: Sprite
@@ -121,7 +121,7 @@
   parent: STClothingHeadHelmetCombatT2Base
   id: ClothingHeadHelmetInfantryMerc
   name: Mercenary "Bastion" helmet
-  suffix: ST, T2, Skin # Zona14: ST, T2, Скин
+  suffix: ST, T2, Skin # Zona14: ST, T2, Skin
   description: '"Bastion" helmet of the second class of protection, manufacturer unknown.'
   components:
     - type: Sprite

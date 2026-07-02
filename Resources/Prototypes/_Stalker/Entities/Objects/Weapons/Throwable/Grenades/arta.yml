@@ -105,7 +105,7 @@
 - type: entity
   name: intensive mortar strike call
   id: HowitzerTimedSpawnerIntensive
-  suffix: Minute # Zona14: Минута
+  suffix: Minute # Zona14: Minute
   parent: MarkerBase
   categories: [ Spawner, StSkipSpawnTest ]
   components:
@@ -126,7 +126,7 @@
 - type: entity
   name: mortar strike call
   id: HowitzerTimedSpawnerfast
-  suffix: Minute # Zona14: Минута
+  suffix: Minute # Zona14: Minute
   parent: MarkerBase
   categories: [ Spawner, StSkipSpawnTest ]
   components:
@@ -147,7 +147,7 @@
 - type: entity
   name: mortar strike call
   id: HowitzerTimedSpawnerLong
-  suffix: 3 minutes # Zona14: 3 минуты
+  suffix: 3 minutes # Zona14: 3 minutes
   parent: MarkerBase
   categories: [ Spawner, StSkipSpawnTest ]
   components:
@@ -187,7 +187,7 @@
 - type: entity
   name: MLRS strike call
   id: ArtilleryTimedSpawnerIntensive
-  suffix: Minute # Zona14: Минута
+  suffix: Minute # Zona14: Minute
   parent: MarkerBase
   categories: [ Spawner, StSkipSpawnTest ]
   components:
@@ -208,7 +208,7 @@
 - type: entity
   name: call for 152mm bombardment
   id: ArtilleryTimedSpawnerLong
-  suffix: 3 minutes # Zona14: 3 минуты
+  suffix: 3 minutes # Zona14: 3 minutes
   parent: MarkerBase
   categories: [ Spawner, StSkipSpawnTest ]
   components:
@@ -230,7 +230,7 @@
   parent: ArtilleryTimedSpawnerLong
   name: call for 152mm bombardment
   id: ArtilleryTimedSpawnerFast
-  suffix: Minute # Zona14: Минута
+  suffix: Minute # Zona14: Minute
   components:
   - type: TimedDespawn
     lifetime: 60 

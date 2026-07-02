@@ -687,7 +687,7 @@
   parent: STClothingOuterArmorStorageBasic
   id: ClothingOuterArmorKeeper
   name: "'Keeper' Armored Coveralls"
-  suffix: ST, Custom # Zona14: ST, Кастомка
+  suffix: ST, Custom # Zona14: ST, Custom
   description: Type II armored jumpsuit, providing little protection against most types of damage
   components:
   - type: Sprite
@@ -907,7 +907,7 @@
   parent: STClothingOuterArmorSeraphimStrash
   id: STClothingOuterArmorKrava
   name: '"Valkyrie" camo Ratnik'
-  suffix: ST, T3, custom # Zona14: ST, T3, кастомка
+  suffix: ST, T3, custom # Zona14: ST, T3, custom
   description: Russian combat soldier gear, designed to improve the effectiveness and survivability of a serviceman on the battlefield. This particular model looks extremely worn out, but is still wearable.
   components:
   - type: Sprite

@@ -74,7 +74,7 @@
   id: WeaponPistolStalkerAPSHugo
   name: AFS Hugo
   description: A massive and reliable pistol with a sturdy metal frame - a faithful companion of an experienced stalker. It is a weapon of last chance, ready to come to the rescue when a peaceful solution to a conflict becomes impossible. It uses 9x18mm ammo.
-  suffix: ST, Skin # Zona14: ST, Скин
+  suffix: ST, Skin # Zona14: ST, Skin
   components:
   - type: Clothing
     sprite: _Stalker/Objects/Weapons/Guns/Pistols/_Skins/apshugo.rsi

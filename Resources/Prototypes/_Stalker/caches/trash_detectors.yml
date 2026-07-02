@@ -26,7 +26,7 @@
 
 
       rarePrototypes:
-        # Zona14: Tier 3 Crafting Materials (перенесены в редкие)
+        # Zona14: Tier 3 Crafting Materials (moved to rare)
         - STCraftMultilayerPCBT3
         - STCraftGlueKitT3
         - STCraftSturdyHideT3
@@ -50,7 +50,7 @@
         - DoubleEmergencyOxygenTankStalkerFilled
         - ExtendedEmergencyOxygenTankFilledStalker
         - Binocularus1
-      rareChance: 0.05 # Zona14: 5% шанс спавна редкого предмета
+      rareChance: 0.05 # Zona14: 5% rare item spawn chance
       chance: 1
       offset: 0.5
 
@@ -59,7 +59,7 @@
   id: TrashDetectorTier1
   name: Metal Detector "Prostofil"
   description: Made of shit and sticks, but if you rummage through it in large piles of garbage, you may find something.
-  suffix: Stalker, metal detector # Zona14: Stalker, металлоискатель
+  suffix: Stalker, metal detector # Zona14: Stalker, metal detector
   components:
     - type: STWeight
       self: 6
@@ -79,7 +79,7 @@
   id: TrashDetectorTier2
   name: Metal Detector "Digger"
   description: A good metal detector, well made. If you rummage through large piles of garbage, you may find something.
-  suffix: Stalker, metal detector # Zona14: Stalker, металлоискатель
+  suffix: Stalker, metal detector # Zona14: Stalker, metal detector
   components:
     - type: STWeight
       self: 4.5
@@ -99,7 +99,7 @@
   id: TrashDetectorTier3
   name: Metal Detector "Shakhter"
   description: Expensive, imported metal detector. Straight from Germany. If you rummage through large piles of garbage, you may find something.
-  suffix: Stalker, metal detector # Zona14: Stalker, металлоискатель
+  suffix: Stalker, metal detector # Zona14: Stalker, metal detector
   components:
     - type: STWeight
       self: 3.5
@@ -119,7 +119,7 @@
   id: TrashDetectorTier4
   name: Metal Detector "Nakhodka"
   description: Very expensive, a metal detector modified with gravity artifact parts. If you rummage through large piles of garbage, then with a high probability you will find something.
-  suffix: Stalker, metal detector # Zona14: Stalker, металлоискатель
+  suffix: Stalker, metal detector # Zona14: Stalker, metal detector
   components:
     - type: STWeight
       self: 0.5
@@ -139,7 +139,7 @@
   id: TrashDetectorTier5
   name: Metal Detector "Anomalist"
   description: The extremely expensive metal detector is an improved version of the Nakhodka metal detector. It has exceptional properties in the search for assembly components. If you rummage through large piles of garbage, you will definitely find something.
-  suffix: Stalker, metal detector # Zona14: Stalker, металлоискатель
+  suffix: Stalker, metal detector # Zona14: Stalker, metal detector
   components:
     - type: STWeight
       self: -2

@@ -1,5 +1,5 @@
 # Zona14: translated Russian names/descriptions to English
-# Zona14: #########################ПОДЗЕМКА КОРДОНА-КОРДОН
+# Zona14: #########################CORDON SUBWAY-CORDON
 - type: entity
   parent: MapTeleportBase
   id: Kordon-Kordondown3
@@ -79,7 +79,7 @@
   components:
     - type: NewMapTeleport
       portalName: Cordon-Basement5
-# Zona14: #########################ВОЕННАЯ БАЗА-КОРДОН
+# Zona14: #########################MILITARY BASE-CORDON
 - type: entity
   parent: MapTeleportBase
   id: Cordon-MilBase2
@@ -91,7 +91,7 @@
       cooldownTime: 30
       #godmodeCooldown: 5 # Stalker-TODO: This field does not exist!
 
-# Zona14: ######################### ПБ - Подземка кордона
+# Zona14: ######################### PB - Cordon subway
 - type: entity
   parent: MapTeleportBase
   id: Podzem-PB
@@ -125,7 +125,7 @@
       cooldownTime: 30
       #godmodeCooldown: 5 # Stalker-TODO: This field does not exist!
 
-# Zona14: ######################## ПБ - Лощина
+# Zona14: ######################## PB - Dell
 - type: entity
   parent: MapTeleportBase
   id: LohinaPB
@@ -148,7 +148,7 @@
       cooldownTime: 30
       #godmodeCooldown: 5 # Stalker-TODO: This field does not exist!
 
-# Zona14: #########################СВАЛКА- лощина
+# Zona14: #########################DUMP-DELL
 - type: entity
   parent: MapTeleportBase
   id: Svalka-Lohina
@@ -160,7 +160,7 @@
       cooldownTime: 30
       #godmodeCooldown: 5 # Stalker-TODO: This field does not exist!
 
-# Zona14: #########################СВАЛКА-КОРДОН
+# Zona14: #########################DUMP-CORDON
 - type: entity
   parent: MapTeleportBase
   id: Cordon-Svalka
@@ -204,7 +204,7 @@
       cooldownEnabled: true
       cooldownTime: 30
       #godmodeCooldown: 5 # Stalker-TODO: This field does not exist!
-# Zona14: #########################СВАЛКА-ПОДЗЕМКА СВАЛКИ
+# Zona14: #########################DUMP-DUMP SUBWAY
 - type: entity
   parent: MapTeleportBase
   id: Svalka-UndergrundSvalka
@@ -381,7 +381,7 @@
     - type: NewMapTeleport
       portalName: Svalka-UndergrundSvalka10
 
-# Zona14: #########################СВАЛКА-СКЛАД ПОДЗЕМЕЛЬЯ СВАЛКИ
+# Zona14: #########################DUMP-DUMP DUNGEON WAREHOUSE
 - type: entity
   parent: MapTeleportBase
   id: Svalka-UndergrundSvalkaStock
@@ -398,7 +398,7 @@
     - type: NewMapTeleport
       portalName: Svalka-UndergrundSvalkaStock
 
-# Zona14: #####################################################Кордон-Лощина
+# Zona14: #####################################################Cordon-Dell
 - type: entity
   parent: MapTeleportBase
   id: Cordon-TL1
@@ -421,7 +421,7 @@
       cooldownTime: 30
       #godmodeCooldown: 5 # Stalker-TODO: This field does not exist!
 
-# Zona14: #####################################################Свалка-Агропром
+# Zona14: #####################################################Dump-Agroprom
 
 - type: entity
   parent: MapTeleportBase
@@ -456,7 +456,7 @@
       cooldownTime: 30
       #godmodeCooldown: 5 # Stalker-TODO: This field does not exist!
 
-# Zona14: #####################################################Свалка-Болота
+# Zona14: #####################################################Dump-Swamps
 - type: entity
   parent: MapTeleportBase
   id: Bolota-Svalka1
@@ -468,7 +468,7 @@
       cooldownTime: 30
       #godmodeCooldown: 5 # Stalker-TODO: This field does not exist!
 
-# Zona14: #####################################################Кордон-Болота
+# Zona14: #####################################################Cordon-Swamps
 - type: entity
   parent: MapTeleportBase
   id: Bolota-Cordon1
@@ -501,7 +501,7 @@
       cooldownEnabled: true
       cooldownTime: 30
       #godmodeCooldown: 5 # Stalker-TODO: This field does not exist!
-# Zona14: #####################################################Агропром-Болота
+# Zona14: #####################################################Agroprom-Swamps
 
 - type: entity
   parent: MapTeleportBase
@@ -515,7 +515,7 @@
       #godmodeCooldown: 5 # Stalker-TODO: This field does not exist!
 
 
-# Zona14: #################################################### Свалка-Грех
+# Zona14: #################################################### Dump-Sin
 
 - type: entity
   parent: MapTeleportBase
@@ -528,7 +528,7 @@
       cooldownTime: 30
       #godmodeCooldown: 5 # Stalker-TODO: This field does not exist!
 
-# Zona14: ####################################### Свалка - Топь
+# Zona14: ####################################### Dump - Swamp
 
 - type: entity
   parent: MapTeleportBase
@@ -541,7 +541,7 @@
       cooldownTime: 30
       #godmodeCooldown: 5 # Stalker-TODO: This field does not exist!
 
-# Zona14: ####################################### Агропром - Топь
+# Zona14: ####################################### Agroprom - Swamp
 
 - type: entity
   parent: MapTeleportBase
@@ -554,13 +554,13 @@
       cooldownTime: 30
       #godmodeCooldown: 5 # Stalker-TODO: This field does not exist!
 
-# Zona14: ####################################### Чистилище - Предбанник - Кордон - НИИ
+# Zona14: ####################################### Purgatory - Vestibule - Cordon - Research Institute
 
 - type: entity
   parent: MapTeleportBase
   id: PurgatoryShop1
   name: Purgatory-Shop
-  suffix: Purgatory - Shop # Zona14: Чистилище - Магазин
+  suffix: Purgatory - Shop # Zona14: Purgatory - Shop
   components:
     - type: NewMapTeleport
       portalName: PurgatoryShopPortal1
@@ -571,7 +571,7 @@
   parent: MapTeleportBase
   id: PurgatoryShop2
   name: Purgatory-Shop
-  suffix: Purgatory - Shop # Zona14: Чистилище - Магазин
+  suffix: Purgatory - Shop # Zona14: Purgatory - Shop
   components:
     - type: NewMapTeleport
       portalName: PurgatoryShopPortal2
@@ -582,7 +582,7 @@
   parent: MapTeleportBaseUncollide
   id: PurgatoryShopUncollibe1
   name: Purgatory-Shop
-  suffix: Purgatory - Shop # Zona14: Чистилище - Магазин
+  suffix: Purgatory - Shop # Zona14: Purgatory - Shop
   components:
     - type: NewMapTeleport
       portalName: PurgatoryShopPortal1
@@ -593,7 +593,7 @@
   parent: MapTeleportBaseUncollide
   id: PurgatoryShopUncollibe2
   name: Purgatory-Shop
-  suffix: Purgatory - Shop # Zona14: Чистилище - Магазин
+  suffix: Purgatory - Shop # Zona14: Purgatory - Shop
   components:
     - type: NewMapTeleport
       portalName: PurgatoryShopPortal2
@@ -604,7 +604,7 @@
   parent: MapTeleportBase
   id: PurgatoryMedical1
   name: Purgatory-Medbay
-  suffix: Purgatory - Hospital # Zona14: Чистилище - Больница
+  suffix: Purgatory - Hospital # Zona14: Purgatory - Hospital
   components:
     - type: NewMapTeleport
       portalName: PurgatoryMedicalPortal1
@@ -615,7 +615,7 @@
   parent: MapTeleportBase
   id: PurgatoryMedical2
   name: Purgatory-Medbay
-  suffix: Purgatory - Hospital # Zona14: Чистилище - Больница
+  suffix: Purgatory - Hospital # Zona14: Purgatory - Hospital
   components:
     - type: NewMapTeleport
       portalName: PurgatoryMedicalPortal2
@@ -626,7 +626,7 @@
   parent: MapTeleportBaseUncollide
   id: PurgatoryMedicalUncollibe1
   name: Purgatory-Medbay
-  suffix: Purgatory - Hospital # Zona14: Чистилище - Больница
+  suffix: Purgatory - Hospital # Zona14: Purgatory - Hospital
   components:
     - type: NewMapTeleport
       portalName: PurgatoryMedicalPortal1
@@ -637,7 +637,7 @@
   parent: MapTeleportBaseUncollide
   id: PurgatoryMedicalUncollibe2
   name: Purgatory-Medbay
-  suffix: Purgatory - Hospital # Zona14: Чистилище - Больница
+  suffix: Purgatory - Hospital # Zona14: Purgatory - Hospital
   components:
     - type: NewMapTeleport
       portalName: PurgatoryMedicalPortal2
@@ -648,7 +648,7 @@
   parent: MapTeleportBase
   id: PurgatoryTrainStation1
   name: Purgatory-TrainStation
-  suffix: Purgatory - Station # Zona14: Чистилище - Вокзал
+  suffix: Purgatory - Station # Zona14: Purgatory - Station
   components:
     - type: NewMapTeleport
       portalName: PurgatoryTrainStationPortal1
@@ -659,7 +659,7 @@
   parent: MapTeleportBase
   id: PurgatoryTrainStation2
   name: Purgatory-TrainStation
-  suffix: Purgatory - Station # Zona14: Чистилище - Вокзал
+  suffix: Purgatory - Station # Zona14: Purgatory - Station
   components:
     - type: NewMapTeleport
       portalName: PurgatoryTrainStationPortal2
@@ -670,7 +670,7 @@
   parent: MapTeleportBase
   id: PurgatoryTrainStation3
   name: Purgatory-TrainStation
-  suffix: Purgatory - Station # Zona14: Чистилище - Вокзал
+  suffix: Purgatory - Station # Zona14: Purgatory - Station
   components:
     - type: NewMapTeleport
       portalName: PurgatoryTrainStationPortal3
@@ -681,7 +681,7 @@
   parent: MapTeleportBaseUncollide
   id: PurgatoryTrainStationUncollibe1
   name: Purgatory-TrainStation
-  suffix: Purgatory - Station # Zona14: Чистилище - Вокзал
+  suffix: Purgatory - Station # Zona14: Purgatory - Station
   components:
     - type: NewMapTeleport
       portalName: PurgatoryTrainStationPortal1
@@ -692,7 +692,7 @@
   parent: MapTeleportBaseUncollide
   id: PurgatoryTrainStationUncollibe2
   name: Purgatory-TrainStation
-  suffix: Purgatory - Station # Zona14: Чистилище - Вокзал
+  suffix: Purgatory - Station # Zona14: Purgatory - Station
   components:
     - type: NewMapTeleport
       portalName: PurgatoryTrainStationPortal2
@@ -703,7 +703,7 @@
   parent: MapTeleportBaseUncollide
   id: PurgatoryTrainStationUncollibe3
   name: Purgatory-TrainStation
-  suffix: Purgatory - Station # Zona14: Чистилище - Вокзал
+  suffix: Purgatory - Station # Zona14: Purgatory - Station
   components:
     - type: NewMapTeleport
       portalName: PurgatoryTrainStationPortal3
@@ -713,7 +713,7 @@
 - type: entity
   parent: MapTeleportBase
   id: TrainStationCordon
-  suffix: Station - Cordon # Zona14: Вокзал - Кордон
+  suffix: Station - Cordon # Zona14: Station - Cordon
   name: TrainStation-Cordon
   components:
     - type: NewMapTeleport
@@ -724,7 +724,7 @@
 - type: entity
   parent: MapTeleportBaseUncollide
   id: TrainStationCordonUncollide
-  suffix: Station - Cordon # Zona14: Вокзал - Кордон
+  suffix: Station - Cordon # Zona14: Station - Cordon
   name: TrainStation-Cordon
   components:
     - type: NewMapTeleport
@@ -735,7 +735,7 @@
 - type: entity
   parent: MapTeleportBase
   id: TrainStationCordonOfficial
-  suffix: Station - Cordon # Zona14: Вокзал - Кордон
+  suffix: Station - Cordon # Zona14: Station - Cordon
   name: TrainStation-Cordon
   components:
     - type: AccessReader
@@ -749,7 +749,7 @@
 - type: entity
   parent: MapTeleportBaseUncollide
   id: TrainStationCordonOfficialUncollide
-  suffix: Station - Cordon # Zona14: Вокзал - Кордон
+  suffix: Station - Cordon # Zona14: Station - Cordon
   name: TrainStation-Cordon
   components:
     - type: AccessReader
@@ -762,7 +762,7 @@
 - type: entity
   parent: MapTeleportBase
   id: PredbannikResearchInstitute
-  suffix: Lobby - Research Institute # Zona14: Предбанник - НИИ
+  suffix: Lobby - Research Institute # Zona14: Vestibule - Research Institute
   name: Predbannik-ResearchInstitute
   components:
     - type: NewMapTeleport
@@ -770,12 +770,12 @@
       cooldownTime: 0
       #godmodeCooldown: 0 # Stalker-TODO: This field does not exist!
 
-# Zona14: ##################################################### НИИ Порталы этажей
+# Zona14: ##################################################### Research Institute floor portals
 
 - type: entity
   parent: MapTeleportBase
   id: ResearchInstituteToResearchInstituteFirstFloor
-  suffix: NRI - Research Institute first floor # Zona14: ННИ - НИИ первый этаж
+  suffix: NRI - Research Institute first floor # Zona14: NNI - Research Institute 1st floor
   name: ResearchInstitute - ResearchInstitute first floor
   components:
     - type: NewMapTeleport
@@ -786,7 +786,7 @@
 - type: entity
   parent: MapTeleportBase
   id: ResearchInstituteFirstFloorToSecondFloor
-  suffix: Research Institute first floor - Research Institute second floor # Zona14: НИИ первый этаж - НИИ второй этаж
+  suffix: Research Institute first floor - Research Institute second floor # Zona14: Research Institute 1st floor - 2nd floor
   name: ResearchInstitute first - floor ResearchInstitute second floor
   components:
     - type: NewMapTeleport
@@ -794,7 +794,7 @@
       cooldownTime: 0
       #godmodeCooldown: 0 # Stalker-TODO: This field does not exist!
 
-# Zona14: ##################################################### Жабы Порталы этажей
+# Zona14: ##################################################### Toad floor portals
 
 - type: entity
   parent: MapTeleportBase
@@ -807,7 +807,7 @@
       cooldownTime: 0
       #godmodeCooldown: 0 # Stalker-TODO: This field does not exist!
 
-# Zona14: #####################################################Предбанник-Болота
+# Zona14: #####################################################Vestibule-Swamps
 - type: entity
   parent: MapTeleportBase
   id: BolotoPB
@@ -841,7 +841,7 @@
       cooldownTime: 60
       #godmodeCooldown: 5 # Stalker-TODO: This field does not exist!
 
-# Zona14: #####################################################Предбанник-Кордон
+# Zona14: #####################################################Vestibule-Cordon
 - type: entity
   parent: MapTeleportBase
   id: CordonPB
@@ -875,7 +875,7 @@
       cooldownTime: 60
       #godmodeCooldown: 5 # Stalker-TODO: This field does not exist!
 
-# Zona14: ##################################################Предбанник-MBase
+# Zona14: ##################################################Vestibule-MBase
 - type: entity
   parent: MapTeleportBase
   id: Predbannik-MilBase1
@@ -901,7 +901,7 @@
     - type: AccessReader
       access: [["Military"]]
 
-# Zona14: ################################################## Топи, Свалка - Рыжий лес
+# Zona14: ################################################## Swamps, Dump - Red Forest
 
 - type: entity
   parent: MapTeleportBase
@@ -942,7 +942,7 @@
       cooldownTime: 5
       #godmodeCooldown: 5 # Stalker-TODO: This field does not exist!
 
-# Zona14: ################################################## Рыжий лес, Свалка, Оазис - Бар
+# Zona14: ################################################## Red Forest, Dump, Oasis - Bar
 
 - type: entity
   parent: MapTeleportBase
@@ -1028,7 +1028,7 @@
       cooldownTime: 5
       #godmodeCooldown: 5 # Stalker-TODO: This field does not exist!
 
-# Zona14: ################################################## Оазис, Бар - Барьер
+# Zona14: ################################################## Oasis, Bar - Barrier
 
 - type: entity
   parent: MapTeleportBase
@@ -1056,7 +1056,7 @@
       access: [["MonolithFree"]]
       #godmodeCooldown: 5 # Stalker-TODO: This field does not exist!
 
-# Zona14: ################################################## Тёмная лощина - Подземка Проекта
+# Zona14: ################################################## Dark Dell - Project subway
 
 - type: entity
   parent: MapTeleportBase
@@ -1069,7 +1069,7 @@
       cooldownEnabled: true
       cooldownTime: 5
       #godmodeCooldown: 5 # Stalker-TODO: This field does not exist!
-# Zona14: ################################################## Подземка свалки - Подземка Бара
+# Zona14: ################################################## Dump subway - Bar subway
 - type: entity
   parent: MapTeleportBase
   id: UndergrundBar-UndergrundSvalka
@@ -1105,7 +1105,7 @@
       cooldownEnabled: true
       cooldownTime: 5
       #godmodeCooldown: 5 # Stalker-TODO: This field does not exist!
-# Zona14: ######################################################## глобал апдате 2025
+# Zona14: ######################################################## Global update 2025
 - type: entity
   parent: GroupedTeleportBase
   id: EnterOnTopi
@@ -1261,7 +1261,7 @@
     cooldownTime: 5
     #godmodeCooldown: 5 # Stalker-TODO: This field does not exist!
 
-# Zona14: ################################################## Вход в бункер учёных на кордоне
+# Zona14: ################################################## Entrance to scientists bunker at Cordon
 
 - type: entity
   parent: MapTeleportBase
@@ -1280,7 +1280,7 @@
       portalName: Kordon-Bunker
 
 
-# Zona14: ####### Лощина
+# Zona14: ####### Hazel
 
 - type: entity
   parent: MapTeleportBase
@@ -1331,7 +1331,7 @@
       cooldownTime: 30
       #godmodeCooldown: 5 # Stalker-TODO: This field does not exist!
 
-# Zona14: ####### СВОБОДА
+# Zona14: ####### FREEDOM
 - type: entity
   parent: MapTeleportBase
   id: Freedom_basement1
@@ -1348,7 +1348,7 @@
   - type: NewMapTeleport
     portalName: Freedom_basement
 
-# Zona14: ## Агропром - кордон
+# Zona14: ## Agroprom - Cordon
 
 - type: entity
   parent: MapTeleportBase
@@ -1366,7 +1366,7 @@
     - type: NewMapTeleport
       portalName: Agro-Kordon
 
-# Zona14: ## Долина - кордон
+# Zona14: ## Valley - Cordon
 
 - type: entity
   parent: MapTeleportBase
@@ -1384,7 +1384,7 @@
     - type: NewMapTeleport
       portalName: Dolina-Kordon
 
-# Zona14: ## Долина - рыжий лес
+# Zona14: ## Valley - Red Forest
 
 - type: entity
   parent: MapTeleportBase
@@ -1402,7 +1402,7 @@
     - type: NewMapTeleport
       portalName: Dolina-RedForest
 
-# Zona14: ## Чн - база на долине
+# Zona14: ## CS - Valley base
 
 - type: entity
   parent: MapTeleportBase

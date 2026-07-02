@@ -18,7 +18,7 @@
         useInHand: false
 
 #
-# Zona14: Самопальные T1
+# Zona14: Homemade T1
 #
 - type: entity
   parent: STBaseModuleScopeRifles
@@ -62,7 +62,7 @@
     - type: Icon
       state: scope_T1_nato
 #
-# Zona14: Легальные T2
+# Zona14: Legal T2
 #
 
 - type: entity

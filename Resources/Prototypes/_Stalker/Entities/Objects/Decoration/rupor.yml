@@ -2,7 +2,7 @@
 - type: entity
   parent: RadioBaseStalker
   id: STRuporDolg
-  suffix: ST, Duty # Zona14: ST, Долг
+  suffix: ST, Duty # Zona14: ST, Duty
   name: Duty Loudspeaker
   description: A truncated cone-shaped tube designed for directed sound transmission.
   components:
@@ -18,7 +18,7 @@
 - type: entity
   parent: RadioBaseStalker
   id: STRuporProject
-  suffix: ST, Project # Zona14: ST, Проект
+  suffix: ST, Project # Zona14: ST, Project
   name: Project loudspeaker
   description: A truncated cone-shaped tube designed for directional sound transmission.
   components:

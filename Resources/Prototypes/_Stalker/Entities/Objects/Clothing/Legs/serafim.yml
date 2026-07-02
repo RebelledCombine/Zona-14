@@ -4,7 +4,7 @@
   id: STClothingLegsSerafimPants
   name: pants of the follower of the son of the star
   description: Material unknown. Size unknown. The sewing method is unknown. This is something very unusual...
-  suffix: Stalker, Legs, CSeraphims # Zona14: Stalker, Legs, Cерафимы
+  suffix: Stalker, Legs, CSeraphims # Zona14: Stalker, Legs, Seraphim
   components:
     - type: Unremoveable
     - type: Sprite
@@ -16,7 +16,7 @@
   parent: STClothingLegsSerafimPants
   id: STClothingLegsSerafimCherubimPants
   name: pants of a follower of the Son of the Star
-  suffix: Stalker, Legs, CSeraphims # Zona14: Stalker, Legs, Cерафимы
+  suffix: Stalker, Legs, CSeraphims # Zona14: Stalker, Legs, Seraphim
   components:
     - type: Unremoveable
     - type: Sprite

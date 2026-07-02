@@ -36,7 +36,7 @@
 
 
 - type: entity
-  parent: STClothingHeadHelmetEnvironmentT4Base # Zona14: Нужны спрайты под шлем с фонариком и без
+  parent: STClothingHeadHelmetEnvironmentT4Base # Zona14: Need sprites for helmet with and without flashlight
   id: ClothingHeadHelmetBulatMercenary
   name: Mercenary Sphere-12 Helmet
   description: This is a helmet specifically designed to protect against stabbing attacks. There is resistance to other types of damage.
@@ -47,7 +47,7 @@
     sprite: _Stalker/Objects/Clothing/hats/bulat_helm_mercenary.rsi
 
 - type: entity
-  parent: STClothingHeadHelmetCombatT3Base # Zona14: Нужны спрайты под шлем с фонариком и без
+  parent: STClothingHeadHelmetCombatT3Base # Zona14: Need sprites for helmet with and without flashlight
   id: ClothingHeadHelmetBulatMonolith
   name: "Monolith's Sphere-12 helmet"
   description: Is a helmet from Beryl.
@@ -64,7 +64,7 @@
         Radiation: 18.01
 
 - type: entity
-  parent: STClothingHeadHelmetEnvironmentT4Base # Zona14: Нужны спрайты под шлем с фонариком и без
+  parent: STClothingHeadHelmetEnvironmentT4Base # Zona14: Need sprites for helmet with and without flashlight
   id: ClothingHeadHelmetBulatMilitary
   name: Military Sphere-12 Helmet
   description: Is a helmet from Bulat.
@@ -81,7 +81,7 @@
   id: ClothingHeadHelmetBulatCovenant
   name: Covenant Sphere-12 Helmet
   description: Is a helmet from Bulat.
-  suffix: Stalker, Covenant # Zona14: Stalker, Завет
+  suffix: Stalker, Covenant # Zona14: Stalker, Covenant
   components:
     - type: Sprite
       sprite: _Stalker/Objects/Clothing/Head/Bulat/covenant.rsi

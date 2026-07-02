@@ -17,13 +17,13 @@
     - clapping
     - clapped
     # RU
-    - claps # Zona14: хлопает
-    - clapped # Zona14: хлопнул
-    - clapped # Zona14: хлопнула
-    - claps hands # Zona14: хлопает в ладоши
-    - clapped hands # Zona14: хлопнул в ладоши
-    - clapped hands # Zona14: хлопнула в ладоши
-    - applauds # Zona14: апплодирует
+    - claps # Zona14: claps
+    - clapped # Zona14: clapped
+    - clapped # Zona14: clapped
+    - claps hands # Zona14: claps hands
+    - clapped hands # Zona14: clapped hands
+    - clapped hands # Zona14: clapped hands
+    - applauds # Zona14: applauds
 
 - type: emote
   id: STClapSingle
@@ -42,8 +42,8 @@
   - claps his hands together
   - claps its hands together
   # RU
-  - clap # Zona14: хлоп
-  - clap-clap # Zona14: хлоп-хлоп
+  - clap # Zona14: clap
+  - clap-clap # Zona14: clap-clap
 
 - type: emote
   id: STSnap
@@ -66,10 +66,10 @@
   - snapping fingers
   - snapped fingers
   # RU
-  - snap # Zona14: щёлк
-  - snap # Zona14: щелк
-  - snaps # Zona14: щелкает
-  - snaps # Zona14: щёлкает
+  - snap # Zona14: snap
+  - snap # Zona14: snap
+  - snaps # Zona14: snaps
+  - snaps # Zona14: snaps
 
 - type: emote
   id: STSalute
@@ -85,8 +85,8 @@
   - salute
   - salutes
   # RU
-  - salutes # Zona14: салютует
-  - salutes # Zona14: отдает честь
+  - salutes # Zona14: salutes
+  - salutes # Zona14: salutes
 
 - type: emote
   id: STGasp
@@ -101,7 +101,7 @@
   - gasps
   - gasped
   # RU
-  - gasps # Zona14: задыхается
+  - gasps # Zona14: gasps
 
 - type: emote
   id: STDefaultDeathgasp
@@ -115,5 +115,5 @@
   # EN
   - deathgasp
   # RU
-  - death gasp # Zona14: предсмертный вздох
-  - death rattle # Zona14: предсмертный хрип
+  - death gasp # Zona14: death sigh
+  - death rattle # Zona14: death rattle

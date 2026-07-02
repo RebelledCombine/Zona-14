@@ -57,46 +57,46 @@
     - type: STBlueprint
       blueprint: recipeClothingBackpackDuffelBlackTacticStalker
 
-# Zona14: Псевдо чертеж. Короче, чтобы не делать для каждый крафт для одно предмета, в котором используеться один и тот же объект но с разным рескином нужно, использовать теги. Но увы, в ванили такой хуйни, это поэтому такие уостыли.
+# Zona14: Pseudo blueprint. In short, to avoid making a separate craft for each item that uses the same object but with a different reskin, tags should be used. But unfortunately vanilla does not support this, which is why these workarounds exist.
 
 - type: entity
   parent: BaseItem
   name: Professional gray backpack recipe (T5)
   description: Any backpack (T4) - 1pc, T2 hide - 5pcs, basic thread set T1 - 2pcs, Vyvert artifact - 3pcs.
   id: ClothingBackpackDuffelSuperStalkerGrayBlueprint
-  suffix: ST, craft # Zona14: ST, крафт
+  suffix: ST, craft # Zona14: ST, craft
   components:
     - type: Sprite
       state: blueprint
       sprite: _Stalker/Objects/Craft/blueprint.rsi
     - type: Craftable
     - type: RepositoryItem
-      categoryName: Crafting # Zona14: Крафты
+      categoryName: Crafting # Zona14: Crafts
 
 - type: entity
   parent: BaseItem
   name: Professional green backpack recipe (T5)
   description: Any backpack (T4) - 1pc, T2 hide - 5pcs, basic thread set T1 - 2pcs, Vyvert artifact - 3pcs.
   id: ClothingBackpackDuffelSuperStalkerBlueprint
-  suffix: ST, craft # Zona14: ST, крафт
+  suffix: ST, craft # Zona14: ST, craft
   components:
     - type: Sprite
       state: blueprint
       sprite: _Stalker/Objects/Craft/blueprint.rsi
     - type: Craftable
     - type: RepositoryItem
-      categoryName: Crafting # Zona14: Крафты
+      categoryName: Crafting # Zona14: Crafts
 
 - type: entity
   parent: BaseItem
   name: Professional backpack recipe (T6)
   description: Any backpack (T5) - 1pc, T3 sturdy hide - 1pc, basic thread set T1 - 2pcs, Amoeba artifact - 2pcs.
   id: ClothingBackpackDuffelRareStalkerBlueprint
-  suffix: ST, craft # Zona14: ST, крафт
+  suffix: ST, craft # Zona14: ST, craft
   components:
     - type: Sprite
       state: blueprint
       sprite: _Stalker/Objects/Craft/blueprint.rsi
     - type: Craftable
     - type: RepositoryItem
-      categoryName: Crafting # Zona14: Крафты
+      categoryName: Crafting # Zona14: Crafts

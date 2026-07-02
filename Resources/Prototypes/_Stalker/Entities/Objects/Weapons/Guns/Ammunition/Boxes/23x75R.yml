@@ -57,8 +57,8 @@
 #- type: entity
 #  parent: 7mmBuckshotBox
 #  id: 2375ZvezdaBulletBox
-# Zona14: name: Коробка пуль "Звезда" 23х75мм R
-# Zona14: description: Для КС-23, в коробке 10 штук. Это просто ослепительный снаряд, не более. НЕ наносит урона.
+# Zona14: name: "Zvezda" 23x75mm R bullet box
+# Zona14: description: For KS-23, 10 in a box. This is just a flashbang round, nothing more. Does NOT deal damage.
 #  components:
 #  - type: MagazineVisuals
 #    magState: 1270yellow

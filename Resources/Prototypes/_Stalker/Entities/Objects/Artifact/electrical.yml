@@ -1,8 +1,8 @@
-# Zona14: Пораждаемая Электрой, Гирляндой
+# Zona14: Spawned by Electra, Garland
 - type: entity
   parent: BaseArtifact
   id: ZoneArtifactSparkler
-  suffix: Stalker, Bengal fire # Zona14: Stalker, Бенгальский огонь
+  suffix: Stalker, Bengal fire # Zona14: Stalker, Sparkler
   components:
   - type: Sprite
     state: sparkler
@@ -39,7 +39,7 @@
 - type: entity
   parent: BaseArtifact
   id: ZoneArtifactBattery
-  suffix: Stalker, Battery # Zona14: Stalker, Батарейка
+  suffix: Stalker, Battery # Zona14: Stalker, Battery
   components:
   - type: Sprite
     state: battery
@@ -75,7 +75,7 @@
 - type: entity
   parent: BaseArtifact
   id: ZoneArtifactAccumulator
-  suffix: Stalker, Accumulator # Zona14: Stalker, Аккумулятор
+  suffix: Stalker, Accumulator # Zona14: Stalker, Accumulator
   components:
   - type: Sprite
     state: baccum
@@ -112,7 +112,7 @@
 - type: entity
   parent: BaseArtifact
   id: ZoneArtifactDiamond
-  suffix: Stalker, Diamond # Zona14: Stalker, Алмаз
+  suffix: Stalker, Diamond # Zona14: Stalker, Diamond
   components:
   - type: Sprite
     state: diamond
@@ -150,7 +150,7 @@
 - type: entity
   parent: BaseArtifact
   id: ZoneArtifactCharger
-  suffix: Stalker, Charge # Zona14: Stalker, Заряд
+  suffix: Stalker, Charge # Zona14: Stalker, Charge
   components:
   - type: Sprite
     state: charger
@@ -184,7 +184,7 @@
 - type: entity
   parent: BaseArtifact
   id: ZoneArtifactFlash
-  suffix: Stalker, Flash # Zona14: Stalker, Вспышка
+  suffix: Stalker, Flash # Zona14: Stalker, Flash
   components:
   - type: Sprite
     state: flash
@@ -220,11 +220,11 @@
     - STArtifact
     - STArtifactTier3
 
-# Zona14: Пораждаемая Источником
+# Zona14: Spawned by Source
 - type: entity
   parent: BaseArtifact
   id: ArtMoon
-  suffix: Stalker, Lunar light # Zona14: Stalker, Лунный свет
+  suffix: Stalker, Lunar light # Zona14: Stalker, Moonlight
   components:
   - type: Sprite
     state: moon
@@ -263,7 +263,7 @@
 - type: entity
   parent: BaseArtifact
   id: ZoneArtifactTesla
-  suffix: Stalker, Tesla # Zona14: Stalker, Тесла
+  suffix: Stalker, Tesla # Zona14: Stalker, Tesla
   components:
   - type: Sprite
     state: tesla
@@ -299,7 +299,7 @@
 - type: entity
   parent: BaseArtifact
   id: ZoneArtifactIce
-  suffix: Stalker, Snowflake # Zona14: Stalker, Снежинка
+  suffix: Stalker, Snowflake # Zona14: Stalker, Snowflake
   components:
   - type: Sprite
     state: ice

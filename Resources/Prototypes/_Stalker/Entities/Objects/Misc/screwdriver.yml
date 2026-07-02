@@ -4,7 +4,7 @@
   id: STScrewdriver
   parent: BaseItem
   description: Can be used to disassemble furniture.
-  suffix: ST, craft # Zona14: ST, крафт
+  suffix: ST, craft # Zona14: ST, craft
   components:
   - type: Sprite
     sprite: Objects/Tools/screwdriver.rsi

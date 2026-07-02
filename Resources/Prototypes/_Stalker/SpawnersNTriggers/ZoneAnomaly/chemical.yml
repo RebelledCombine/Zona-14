@@ -143,7 +143,7 @@
     chance: 1
     offset: 0.0
 
-# Zona14: Кисель (Kissel)
+# Zona14: Kissel
 - type: entity
   id: SpawnerZoneAnomalyKisselChance1
   name: kissel anomaly spawner (1% chance to spawn)
@@ -258,7 +258,7 @@
     chance: 1
     offset: 0.0
 
-# Zona14: Газировка (Gazirovka)
+# Zona14: Soda (Gazirovka)
 - type: entity
   id: SpawnerZoneAnomalyGazirovkaChance1
   name: soda anomaly spawner (1% chance to spawn)

@@ -5,7 +5,7 @@
   id: StalkerShopPilgrim
   name: Torgomat, Pilgrims
   description: How did the merchant fit there?
-  suffix: ST, Mapping, Pilgrims # Zona14: ST, Mapping, Паломники
+  suffix: ST, Mapping, Pilgrims # Zona14: ST, Mapping, Pilgrims
   components:
     - type: Sprite
       drawdepth: Objects

@@ -5,7 +5,7 @@
   id: StalkerShopMerc
   name: Torgomat, Mercenaries
   description: How did the merchant fit there?
-  suffix: ST, Mapping, Mercenaries # Zona14: ST, Mapping, Наёмники
+  suffix: ST, Mapping, Mercenaries # Zona14: ST, Mapping, Mercenaries
   components:
     - type: Sprite
       drawdepth: Objects
@@ -23,7 +23,7 @@
   id: StalkerShopMercDollar
   name: Trade machine, Mercenaries, Dollar
   description: How did the trader fit in there?
-  suffix: ST, Mapping, Mercenaries # Zona14: ST, Mapping, Наёмники
+  suffix: ST, Mapping, Mercenaries # Zona14: ST, Mapping, Mercenaries
   components:
     - type: Sprite
       drawdepth: Objects

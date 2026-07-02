@@ -304,7 +304,7 @@
     clothingPrototype: ClothingHeadHatHoodCoatStalker
     slot: head
 
-# Zona14: Аномалисты
+# Zona14: Anomalists
 - type: entity
   parent: STClothingOuterJacketBase
   id: ClothingOuterCoatIvyAnomalist
@@ -373,7 +373,7 @@
   - type: Clothing
     sprite: _Stalker/Objects/Clothing/hats/jacket_hat_monolith.rsi
 
-# Zona14: Скинчики
+# Zona14: Skins
 
 - type: entity
   parent: STClothingOuterJacketBase

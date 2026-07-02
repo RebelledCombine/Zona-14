@@ -2,7 +2,7 @@
   parent: BaseGrenade
   id: GrenadeVOGbase
   name: vog25 base
-  suffix: ST, VOG-25 # Zona14: ST, ВОГ-25
+  suffix: ST, VOG-25 # Zona14: ST, VOG-25
   abstract: true
   components:
   - type: CartridgeAmmo

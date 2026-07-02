@@ -5,7 +5,7 @@
   id: StalkerShopRenegat
   name: Torgomat, Renegades
   description: How did the merchant fit there?
-  suffix: ST, Mapping, Renegades # Zona14: ST, Mapping, Ренегаты
+  suffix: ST, Mapping, Renegades # Zona14: ST, Mapping, Renegades
   components:
     - type: Sprite
       drawdepth: Objects
@@ -23,7 +23,7 @@
   id: StalkerShopRenegatZone
   name: "{ ent-StalkerShopRenegat }"
   description: "{ ent-StalkerShopRenegat.desc }"
-  suffix: ST, Mapping, Renegades, Zone # Zona14: ST, Mapping, Ренегаты, Zone
+  suffix: ST, Mapping, Renegades, Zone # Zona14: ST, Mapping, Renegades, Zone
   components:
     - type: Sprite
       drawdepth: Objects

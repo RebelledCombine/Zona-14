@@ -3,7 +3,7 @@
   parent: BaseArtifact
   name: Fireball
   id: ZoneArtifactFireball
-  suffix: Stalker, Fiery sphere # Zona14: Stalker, Огненный шар
+  suffix: Stalker, Fiery sphere # Zona14: Stalker, Fireball
   components:
   - type: Sprite
     state: fireball
@@ -43,7 +43,7 @@
   parent: BaseArtifact
   name: Cluster
   id: ZoneArtifactBunch
-  suffix: Stalker, Cluster # Zona14: Stalker, Гроздь
+  suffix: Stalker, Cluster # Zona14: Stalker, Cluster
   components:
   - type: Sprite
     state: bunch
@@ -86,7 +86,7 @@
   parent: BaseArtifact
   name: Eye
   id: ZoneArtifactEye
-  suffix: Stalker, Eye # Zona14: Stalker, Глаз
+  suffix: Stalker, Eye # Zona14: Stalker, Eye
   components:
   - type: Sprite
     state: glaz
@@ -135,7 +135,7 @@
   parent: BaseArtifact
   name: Rock
   id: ZoneArtifactRock
-  suffix: Stalker, Rock # Zona14: Stalker, Скала
+  suffix: Stalker, Rock # Zona14: Stalker, Rock
   components:
   - type: Sprite
     state: rock
@@ -175,7 +175,7 @@
   parent: BaseArtifact
   name: Flame
   id: ZoneArtifactFlame
-  suffix: Stalker, Flame # Zona14: Stalker, Пламя
+  suffix: Stalker, Flame # Zona14: Stalker, Flame
   components:
   - type: Sprite
     state: flame
@@ -219,7 +219,7 @@
   parent: BaseArtifact
   name: Sun
   id: ZoneArtifactSun
-  suffix: Stalker, Sun # Zona14: Stalker, Солнце
+  suffix: Stalker, Sun # Zona14: Stalker, Sun
   components:
   - type: Sprite
     state: sun
@@ -257,7 +257,7 @@
   parent: BaseArtifact
   name: Root
   id: ZoneArtifactRoot
-  suffix: Stalker, Root # Zona14: Stalker, Корень
+  suffix: Stalker, Root # Zona14: Stalker, Root
   components:
   - type: Sprite
     state: root
@@ -293,7 +293,7 @@
   parent: BaseArtifact
   name: Conflagration
   id: ZoneArtifactConflagration
-  suffix: Stalker, Conflagration # Zona14: Stalker, Пожарище
+  suffix: Stalker, Conflagration # Zona14: Stalker, Conflagration
   components:
   - type: Sprite
     state: conflagration
@@ -333,7 +333,7 @@
 - type: entity
   parent: BaseArtifact
   id: ZoneArtifactCristall
-  suffix: Stalker, Crystal # Zona14: Stalker, Кристалл
+  suffix: Stalker, Crystal # Zona14: Stalker, Crystal
   components:
   - type: Sprite
     state: crystall
@@ -379,7 +379,7 @@
 - type: entity
   parent: BaseArtifact
   id: ZoneArtifactLithosphere
-  suffix: Stalker, Lithosphere # Zona14: Stalker, Литосфера
+  suffix: Stalker, Lithosphere # Zona14: Stalker, Lithosphere
   components:
   - type: Sprite
     state: lithosphere

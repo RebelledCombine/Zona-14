@@ -35,7 +35,7 @@
     - type: LocalTeleport
       portalName: Basement52
 
-# Zona14: ############################Военка
+# Zona14: ############################Military base
 
 - type: entity
   parent: LocalTeleportBase
@@ -64,7 +64,7 @@
     - type: LocalTeleport
       portalName: MilBase3
 
-# Zona14: ###############################Подземка Свалки
+# Zona14: ###############################Dump subway
 
 - type: entity
   parent: LocalTeleportBase
@@ -84,7 +84,7 @@
     - type: LocalTeleport
       portalName: SvUnderground2
 
-# Zona14: ###############################Этажи для жаб
+# Zona14: ###############################Floors for toads
 - type: entity
   parent: LocalTeleportBase
   id: LocalTeleportJabasFloors
@@ -94,7 +94,7 @@
     - type: LocalTeleport
       portalName: JabasFloors
 
-# Zona14: ###############################Вход в базу монолита
+# Zona14: ###############################Entrance to Monolith base
 - type: entity
   parent: LocalTeleportBase
   id: LocalTeleportmonolith

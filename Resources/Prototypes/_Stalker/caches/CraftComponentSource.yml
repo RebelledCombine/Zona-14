@@ -1,9 +1,9 @@
 # Zona14: translated Russian names/descriptions to English
-# Zona14: Источники микросхем
+# Zona14: Microchip sources
 - type: entity
   parent: STBaseStructure
   id: CraftComponentSourceT1PCB
-  suffix: Stalker, SOURCE, T1 # Zona14: Stalker, ИСТОЧНИК, Т1
+  suffix: Stalker, SOURCE, T1 # Zona14: Stalker, SOURCE, T1
   name: chip pile
   components:
     - type: InteractionOutline
@@ -46,7 +46,7 @@
 - type: entity
   parent: STBaseStructure
   id: CraftComponentSourceT2PCB
-  suffix: Stalker, SOURCE, T2 # Zona14: Stalker, ИСТОЧНИК, Т2
+  suffix: Stalker, SOURCE, T2 # Zona14: Stalker, SOURCE, T2
   name: PCB box
   components:
     - type: TimedDespawn
@@ -90,7 +90,7 @@
 - type: entity
   parent: STBaseStructure
   id: CraftComponentSourceT3PCB
-  suffix: Stalker, SOURCE, T3 # Zona14: Stalker, ИСТОЧНИК, Т3
+  suffix: Stalker, SOURCE, T3 # Zona14: Stalker, SOURCE, T3
   name: Civilian Storage with Electronics
   components:
     - type: InteractionOutline
@@ -135,7 +135,7 @@
 - type: entity
   parent: STBaseStructure
   id: CraftComponentSourceT4PCB
-  suffix: Stalker, SOURCE, T4 # Zona14: Stalker, ИСТОЧНИК, Т4
+  suffix: Stalker, SOURCE, T4 # Zona14: Stalker, SOURCE, T4
   name: military storage with electronics
   components:
     - type: InteractionOutline
@@ -180,7 +180,7 @@
 - type: entity
   parent: STBaseStructure
   id: CraftComponentSourceT5PCB
-  suffix: Stalker, SOURCE, T5 # Zona14: Stalker, ИСТОЧНИК, Т5
+  suffix: Stalker, SOURCE, T5 # Zona14: Stalker, SOURCE, T5
   name: Scientific Repository with Electronics
   components:
     - type: InteractionOutline
@@ -227,11 +227,11 @@
           prob: 0.05
 
 
-# Zona14: Пластик
+# Zona14: Plastic
 - type: entity
   parent: STBaseStructure
   id: CraftComponentSourceT1PlasticFitting
-  suffix: Stalker, SOURCE, T1 # Zona14: Stalker, ИСТОЧНИК, Т1
+  suffix: Stalker, SOURCE, T1 # Zona14: Stalker, SOURCE, T1
   name: A bunch of plastic
   components:
     - type: InteractionOutline
@@ -274,7 +274,7 @@
 - type: entity
   parent: STBaseStructure
   id: CraftComponentSourceT2PlasticFitting
-  suffix: Stalker, SOURCE, T2 # Zona14: Stalker, ИСТОЧНИК, Т2
+  suffix: Stalker, SOURCE, T2 # Zona14: Stalker, SOURCE, T2
   name: Box with plastic
   components:
     - type: InteractionOutline
@@ -317,7 +317,7 @@
 - type: entity
   parent: STBaseStructure
   id: CraftComponentSourceT3PlasticFitting
-  suffix: Stalker, SOURCE, T3 # Zona14: Stalker, ИСТОЧНИК, Т3
+  suffix: Stalker, SOURCE, T3 # Zona14: Stalker, SOURCE, T3
   name: Civilian storage with plastic
   components:
     - type: InteractionOutline
@@ -362,7 +362,7 @@
 - type: entity
   parent: STBaseStructure
   id: CraftComponentSourceT4PlasticFitting
-  suffix: Stalker, SOURCE, T4 # Zona14: Stalker, ИСТОЧНИК, Т4
+  suffix: Stalker, SOURCE, T4 # Zona14: Stalker, SOURCE, T4
   name: Military Storage With Plastic
   components:
     - type: InteractionOutline
@@ -406,7 +406,7 @@
 - type: entity
   parent: STBaseStructure
   id: CraftComponentSourceT5PlasticFitting
-  suffix: Stalker, SOURCE, T5 # Zona14: Stalker, ИСТОЧНИК, Т5
+  suffix: Stalker, SOURCE, T5 # Zona14: Stalker, SOURCE, T5
   name: Scientific Repository with Plastic
   components:
     - type: InteractionOutline

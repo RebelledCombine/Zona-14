@@ -202,7 +202,7 @@
   id: STTeleportReturnPersonal
   name: Exit from the lair
   description: With these stairs, you can exit the lair
-  suffix: personal # Zona14: персональный
+  suffix: personal # Zona14: personal
   components:
     - type: Transform
       anchored: True

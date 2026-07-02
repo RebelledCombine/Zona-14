@@ -10,7 +10,7 @@
   - type: Trash
     time: 900
   - type: RepositoryItem
-    categoryName: Medicine # Zona14: Медицина
+    categoryName: Medicine # Zona14: Medicine
   - type: Sprite
     sprite: _Stalker/Objects/Counsumable/Medicine/newmed.rsi
   # Inherited
@@ -68,7 +68,7 @@
     size: Tiny
     sprite: _Stalker/Objects/medicine.rsi # Stalker-TODO: Need an inhand sprite for this item
   - type: RepositoryItem
-    categoryName: Medicine # Zona14: Медицина
+    categoryName: Medicine # Zona14: Medicine
   - type: Sprite
     sprite: _Stalker/Objects/medicine.rsi
     scale: 0.6, 0.6
@@ -192,7 +192,7 @@
     size: Tiny
     sprite: _Stalker/Objects/medicine.rsi # Stalker-TODO: Need an inhand sprite for this item
   - type: RepositoryItem
-    categoryName: Medicine # Zona14: Медицина
+    categoryName: Medicine # Zona14: Medicine
   - type: Sprite
     sprite: _Stalker/Objects/medicine.rsi
     scale: 0.6, 0.6
@@ -316,7 +316,7 @@
     size: Tiny
     sprite: _Stalker/Objects/medicine.rsi # Stalker-TODO: Need an inhand sprite for this item
   - type: RepositoryItem
-    categoryName: Medicine # Zona14: Медицина
+    categoryName: Medicine # Zona14: Medicine
   - type: Sprite
     sprite: _Stalker/Objects/medicine.rsi
     scale: 0.6, 0.6

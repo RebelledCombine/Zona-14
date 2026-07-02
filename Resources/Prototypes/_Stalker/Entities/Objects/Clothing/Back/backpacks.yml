@@ -1,5 +1,5 @@
 # Zona14: translated Russian names/descriptions to English
-# Zona14: Tier 0,5 - бесплатные
+# Zona14: Tier 0.5 - free
 
 - type: entity
   parent: STClothingBackBase
@@ -13,7 +13,7 @@
       reductionFraction: 0.50 # Zona14 change
     - type: Sprite
       sprite: _Stalker/Objects/Clothing/backpacks/Duffels/duffel.rsi
-    - type: Storage # Zona14: 6 клеток подряд + доп 1 клетка отдельно (всего 7)
+    - type: Storage # Zona14: 6 cells in a row + 1 extra cell separately (7 total)
       grid:
         - 0,0,2,3
         - 3,0,3,0
@@ -41,7 +41,7 @@
     sprite: _Stalker/Objects/Clothing/backpacks/town_black.rsi
   - type: STWeightInsideReduction
     reductionFraction: 0.50 # Zona14 change
-  - type: Storage # Zona14: 14 клеток
+  - type: Storage # Zona14: 14 cells
     grid:
         - 0,0,1,0
         - 0,1,0,1
@@ -75,7 +75,7 @@
   - type: Craftable
   - type: Storage
     grid:
-    - 0,0,3,0 # Zona14: 26 клеток (появляется возможность носить внутри ппшку)
+    - 0,0,3,0 # Zona14: 26 cells (can carry a submachine gun inside)
     - 0,2,3,2
     - 1,3,2,5
     - 0,6,3,7
@@ -138,7 +138,7 @@
 
 # Tier - 3
 
-# Zona14: pvp рюкзаки (можно носить оружия внутри, но неудобен для частей мутантов)
+# Zona14: PVP backpacks (can carry weapons inside, but inconvenient for mutant parts)
 
 - type: entity
   parent: STClothingBackBase
@@ -147,7 +147,7 @@
   description: Spacious stalker backpack in olive color from the "Sunrise" set, often used as a stash.
   suffix: ST
   components:
-  - type: Storage # Zona14: 41 клеток (1 ппшка или 14 стоп внутрь)
+  - type: Storage # Zona14: 41 cells (1 SMG or 14 stacks inside)
     grid:
     - 0,0,5,4
     - 0,5,1,7
@@ -182,13 +182,13 @@
     reductionFraction: 0.60
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/backpacks/Other/backpack1.rsi
-  - type: Storage # Zona14: 40  клеток (способен носить 2 втомата внутри, доступен только гп)
+  - type: Storage # Zona14: 40 cells (can carry 2 assault rifles inside, available only to GP)
     grid:
     - 0,0,4,7
 
 ##-------------------------------------------
 
-# Zona14: pve рюкзаки (можно носить побольше частей с тем же кол-вом клеток)
+# Zona14: PVE backpacks (can carry more parts with same cell count)
 
 - type: entity
   parent: STClothingBackBase
@@ -197,7 +197,7 @@
   description: Roomy backpack, usually taken on hikes, but in the zone just right!
   suffix: ST
   components:
-  - type: Storage # Zona14: 34 (возможность взять автомат + ппшку внутрь. Или способен унести 11 стоп кабанов. доступен сталкерам)
+  - type: Storage # Zona14: 34 (can fit assault rifle + SMG inside. Or carry 11 stacks of boar parts. Available to stalkers)
     grid:
     - 0,0,5,0
     - 4,8,5,8
@@ -229,7 +229,7 @@
 
 ##-------------------------------------------
 
-# Zona14: pve рюкзаки (можно носить побольше частей с тем же кол-вом клеток)
+# Zona14: PVE backpacks (can carry more parts with same cell count)
 
 - type: entity
   parent: STClothingBackBase
@@ -240,7 +240,7 @@
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/backpacks/Other/backpackblue.rsi
-  - type: Storage # Zona14: 40 клеток преимущественно мелкими квадратами под ношение артов
+  - type: Storage # Zona14: 40 cells mostly small squares for carrying artifacts
     grid:
     - 0,0,0,7
     - 1,0,1,1
@@ -268,7 +268,7 @@
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/backpacks/Hiking/VS_RF.rsi
-  - type: Storage # Zona14: 54 клеток 56 бы
+  - type: Storage # Zona14: 54 cells (would be 56)
     grid:
     - 0,0,6,1
     - 0,7,4,7
@@ -298,7 +298,7 @@
       sprite: _Stalker/Objects/Clothing/backpacks/Hiking/common.rsi
 
 
-# Zona14: универсал рюкзаки (квадраты. по идеи самые дорогие и +20% к стоимости внутри тира)
+# Zona14: Universal backpacks (squares, should be the most expensive and +20% to cost within tier)
 
 - type: entity
   parent: STClothingBackBase
@@ -309,7 +309,7 @@
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/backpacks/Other/backpackolive.rsi
-  - type: Storage # Zona14: 55 клеток 56
+  - type: Storage # Zona14: 55 cells (56)
     grid:
     - 0,0,7,6
   - type: Tag
@@ -328,7 +328,7 @@
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/backpacks/Other/backpackgray.rsi
-  - type: Storage # Zona14: 55 клеток 56
+  - type: Storage # Zona14: 55 cells (56)
     grid:
     - 0,0,7,6
   - type: Tag
@@ -343,11 +343,11 @@
   id: ClothingBackpackDuffelBlackMilitaryTacticStalkerKrava
   name: camouflage bag "Valkyrie"
   description: A spacious bag suitable for carrying weapons and equipment.
-  suffix: ST, custom # Zona14: ST, кастомка
+  suffix: ST, custom # Zona14: ST, custom
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/backpacks/krava.rsi
-  - type: Storage # Zona14: 55 клеток 56
+  - type: Storage # Zona14: 55 cells (56)
     grid:
     - 0,0,7,6
   - type: Tag
@@ -366,7 +366,7 @@
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/backpacks/Military_tactic/black.rsi
-  - type: Storage # Zona14: 56 клеток
+  - type: Storage # Zona14: 56 cells
     grid:
     - 0,0,7,6
   - type: Tag
@@ -385,7 +385,7 @@
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/backpacks/Military_tactic/olive.rsi
-  - type: Storage # Zona14: 56 клеток
+  - type: Storage # Zona14: 56 cells
     grid:
     - 0,0,7,6
   - type: Tag
@@ -408,11 +408,11 @@
     sprite: _Stalker/Objects/Clothing/backpacks/backpack-green.rsi
   - type: Storage
     grid:
-    - 0,0,7,7 # Zona14: 66 клеток 64 смог
+    - 0,0,7,7 # Zona14: 66 cells (managed 64)
 
 
 
-# Zona14: универсал рюкзаки (квадраты. по идеи самые дорогие и +20% к стоимости внутри тира)
+# Zona14: Universal backpacks (squares, should be the most expensive and +20% to cost within tier)
 - type: entity
   parent: STClothingBackBase
   id: ClothingBackpackDuffelSuperStalker
@@ -424,7 +424,7 @@
     sprite: _Stalker/Objects/Clothing/backpacks/backpack-green.rsi
   - type: Storage
     grid:
-    - 0,0,7,7 # Zona14: 66 клеток 64 смог
+    - 0,0,7,7 # Zona14: 66 cells (managed 64)
   - type: Tag
     tags:
     - STClothingBackpackT5
@@ -443,7 +443,7 @@
     sprite: _Stalker/Objects/Clothing/backpacks/backpack-gray.rsi
   - type: Storage
     grid:
-    - 0,0,7,7 # Zona14: 66 клеток 64 смог
+    - 0,0,7,7 # Zona14: 66 cells (managed 64)
   - type: Tag
     tags:
     - STClothingBackpackT5
@@ -463,10 +463,10 @@
     sprite: _Stalker/Objects/Clothing/backpacks/Other/hoarder.rsi
   - type: Storage
     grid:
-    - 0,0,8,7 # Zona14: 72 Клеткок
+    - 0,0,8,7 # Zona14: 72 Cells
   - type: STWeightInsideReduction
     reductionFraction: 0.60
-# Zona14: Аномальные
+# Zona14: Anomalous
 
 
 - type: entity

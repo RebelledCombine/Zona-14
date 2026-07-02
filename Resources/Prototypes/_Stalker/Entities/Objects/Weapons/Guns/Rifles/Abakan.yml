@@ -40,7 +40,7 @@
 
 - type: entity
   name: AEK-971
-  suffix: ST, Custom # Zona14: ST, Кастомка
+  suffix: ST, Custom # Zona14: ST, Custom
   parent: STWeaponRifleAK74M
   id: STWeaponRifleStalkerAek971
   description: A Soviet assault rifle, developed in 1978 at the Degtyarev plant in Kovrov under the leadership of Stanislav Ivanovich Koksharov, based on assault rifles of the Konstantinov system.

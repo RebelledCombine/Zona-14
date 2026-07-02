@@ -5,7 +5,7 @@
   id: MarkerTradeContractBounty
   parent: MarkerBase
   name: contract, hunt
-  suffix: ST, QUESTS # Zona14: ST, КВЕСТЫ
+  suffix: ST, QUESTS # Zona14: ST, QUESTS
   components:
   - type: Tag
     tags:
@@ -15,7 +15,7 @@
   id: MarkerContractDeliveryBolotoEasy
   parent: MarkerBase
   name: contract, delivery, swamp easy
-  suffix: ST, QUESTS # Zona14: ST, КВЕСТЫ
+  suffix: ST, QUESTS # Zona14: ST, QUESTS
   components:
   - type: Tag
     tags:
@@ -25,7 +25,7 @@
   id: MarkerContractHuntBoarLair
   parent: MarkerBase
   name: contract, hunt, boar lair, swamp medium
-  suffix: ST, QUESTS # Zona14: ST, КВЕСТЫ
+  suffix: ST, QUESTS # Zona14: ST, QUESTS
   components:
   - type: Tag
     tags:
@@ -35,7 +35,7 @@
   id: MarkerContractHuntPseudodog
   parent: MarkerBase
   name: contract, hunt, pseudodog lair, swamp medium
-  suffix: ST, QUESTS # Zona14: ST, КВЕСТЫ
+  suffix: ST, QUESTS # Zona14: ST, QUESTS
   components:
   - type: Tag
     tags:
@@ -45,7 +45,7 @@
   id: MarkerContractHuntMobMutantLeshiy
   parent: MarkerBase
   name: contract, hunt, Leshiy, swamp medium
-  suffix: ST, QUESTS # Zona14: ST, КВЕСТЫ
+  suffix: ST, QUESTS # Zona14: ST, QUESTS
   components:
   - type: Tag
     tags:
@@ -55,7 +55,7 @@
   id: MarkerContractHuntSTMobMutantBearT2Common
   parent: MarkerBase
   name: contract, hunt, Bear, swamp medium
-  suffix: ST, QUESTS # Zona14: ST, КВЕСТЫ
+  suffix: ST, QUESTS # Zona14: ST, QUESTS
   components:
   - type: Tag
     tags:
@@ -65,7 +65,7 @@
   id: MarkerContractHuntMobMutantPoltergeistIce
   parent: MarkerBase
   name: contract, hunt, Poltergeist, swamp hard
-  suffix: ST, QUESTS # Zona14: ST, КВЕСТЫ
+  suffix: ST, QUESTS # Zona14: ST, QUESTS
   components:
   - type: Tag
     tags:
@@ -75,7 +75,7 @@
   id: MarkerContractHuntSTMobMutantBloodsuckerUncommon
   parent: MarkerBase
   name: contract, hunt, Bloodsucker, swamp hard
-  suffix: ST, QUESTS # Zona14: ST, КВЕСТЫ
+  suffix: ST, QUESTS # Zona14: ST, QUESTS
   components:
   - type: Tag
     tags:
@@ -85,7 +85,7 @@
   id: MarkerContractHuntSTMobMutantBearPsiUncommon
   parent: MarkerBase
   name: contract, hunt, Bear, swamp hard
-  suffix: ST, QUESTS # Zona14: ST, КВЕСТЫ
+  suffix: ST, QUESTS # Zona14: ST, QUESTS
   components:
   - type: Tag
     tags:

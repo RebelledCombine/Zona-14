@@ -43,7 +43,7 @@
     tags:
     - Dollar
   - type: RepositoryItem
-    categoryName: Money # Zona14: Деньги
+    categoryName: Money # Zona14: Money
 
 
 - type: currency

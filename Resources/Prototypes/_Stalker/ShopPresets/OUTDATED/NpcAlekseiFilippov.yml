@@ -61,7 +61,7 @@
     MutantPartZombieHand: 225
 
   categories:
-    - name: Weapons # 1.5 # Zona14: Оружие
+    - name: Weapons # 1.5 # Zona14: Weapons
       priority: 1
       items:
         STWeaponShotgunTOZ34: 300
@@ -76,7 +76,7 @@
         STWeaponRifleSaiga545: 1650
         STWeaponRifleFAL: 5475
         STWeaponSniperMosin: 3675
-    - name: Magazines # 1.5 # Zona14: Магазины
+    - name: Magazines # 1.5 # Zona14: Magazines
       priority: 2
       items:
         BasePMMag: 113
@@ -87,7 +87,7 @@
         751Mag20: 368
         BaseGSH-18Mag10: 85
         BaseMP5Mag: 125
-    - name: Ammunition # 1.5 # Zona14: Боеприпасы
+    - name: Ammunition # 1.5 # Zona14: Ammunition
       priority: 3
       items:
         6mmBuckshotBox: 450
@@ -112,7 +112,7 @@
         556FMJBox: 450
         # 7.54
         754FMJBox : 975
-    - name: Armor and equipment # Sidorovich price * 2 # Zona14: Броня и снаряжение
+    - name: Armor and equipment # Sidorovich price * 2 # Zona14: Armor and equipment
       priority: 4
       items:
         ClothingOuterJacketStalker: 78
@@ -122,22 +122,22 @@
         ClothingOuterCoatStalker: 698
         ClothingMaskGasM40: 266
         ClothingMaskGP5: 244
-    - name: Backpacks # Zona14: Рюкзаки
+    - name: Backpacks # Zona14: Backpacks
       priority: 5
       items:
         ClothingBackpackDuffelGreenStalker: 30
         ClothingBackpackDuffelBlackStalker: 30
         ClothingBackpackDuffelMedicalStalker: 150
-    - name: Belts # Zona14: Пояса
+    - name: Belts # Zona14: Belts
       priority: 6
       items:
         ClothingBeltBandolierStalker: 20
-    - name: Anomalies # Zona14: Аномалии
+    - name: Anomalies # Zona14: Anomalies
       priority: 7
       items:
         STBoltBagFilled: 100
         STBoltBagOliveGrayFilled: 100
-    - name: Provisions # Zona14: Провизия
+    - name: Provisions # Zona14: Provisions
       priority: 8
       items:
         STEnergyDrink: 650
@@ -148,7 +148,7 @@
         FoodTinMRE: 120
         DrinkLemonadehBottleFull: 50
         STFoodMeatSalami: 350
-    - name: Medicine # bar prices * 1.5 # Zona14: Медицина
+    - name: Medicine # bar prices * 1.5 # Zona14: Medicine
       priority: 9
       items:
         PillDexalin: 15

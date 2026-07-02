@@ -3,7 +3,7 @@
   id: FireflyGreen3
   name: Fireflies
   description: Where darkness has an all-consuming power, glowing points of brilliance attract the attention of wanderers.
-  suffix: Stalker, Large # Zona14: Stalker, Большой
+  suffix: Stalker, Large # Zona14: Stalker, Large
   placement:
     mode: SnapgridCenter
     snap:
@@ -42,7 +42,7 @@
   id: FireflyGreen2
   name: "{ ent-FireflyGreen3 }"
   description: "{ ent-FireflyGreen3.desc }"
-  suffix: Stalker, Medium # Zona14: Stalker, Средний
+  suffix: Stalker, Medium # Zona14: Stalker, Medium
   placement:
     mode: SnapgridCenter
     snap:
@@ -81,7 +81,7 @@
   id: FireflyGreen1
   name: "{ ent-FireflyGreen3 }"
   description: "{ ent-FireflyGreen3.desc }"
-  suffix: Stalker, Small # Zona14: Stalker, Маленький
+  suffix: Stalker, Small # Zona14: Stalker, Small
   placement:
     mode: SnapgridCenter
     snap:
@@ -117,7 +117,7 @@
   id: FireflyYellow3
   name: "{ ent-FireflyGreen3 }"
   description: "{ ent-FireflyGreen3.desc }"
-  suffix: Stalker, Large # Zona14: Stalker, Большой
+  suffix: Stalker, Large # Zona14: Stalker, Large
   placement:
     mode: SnapgridCenter
     snap:
@@ -153,7 +153,7 @@
   id: FireflyYellow2
   name: "{ ent-FireflyGreen3 }"
   description: "{ ent-FireflyGreen3.desc }"
-  suffix: Stalker, Medium # Zona14: Stalker, Средний
+  suffix: Stalker, Medium # Zona14: Stalker, Medium
   placement:
     mode: SnapgridCenter
     snap:
@@ -189,7 +189,7 @@
   id: FireflyYellow1
   name: "{ ent-FireflyGreen3 }"
   description: "{ ent-FireflyGreen3.desc }"
-  suffix: Stalker, Small # Zona14: Stalker, Маленький
+  suffix: Stalker, Small # Zona14: Stalker, Small
   placement:
     mode: SnapgridCenter
     snap:
@@ -221,12 +221,12 @@
   - type: TimedDespawn
     lifetime: 600
 
-# Zona14: Спавнеры
+# Zona14: Spawners
 - type: entity
   name: Firefly Trigger (3-7) (100%)
   id: FireFlyYellowTrigger
   parent: MarkerBase
-  suffix: Stalker, CD 30 minutes # Zona14: Stalker, КД 30 минут
+  suffix: Stalker, CD 30 minutes # Zona14: Stalker, CD 30 minutes
   components:
     - type: ApproachTrigger
       # range: 20 # Stalker-TODO: These fields do not exist in this component!
@@ -262,7 +262,7 @@
   name: Firefly Trigger (3-7) (100%)
   id: FireFlyGreenTrigger
   parent: MarkerBase
-  suffix: Stalker, CD 30 minutes # Zona14: Stalker, КД 30 минут
+  suffix: Stalker, CD 30 minutes # Zona14: Stalker, CD 30 minutes
   components:
     - type: ApproachTrigger
       # range: 20 # Stalker-TODO: These fields do not exist in this component!

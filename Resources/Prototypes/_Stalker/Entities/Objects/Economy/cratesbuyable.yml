@@ -1,7 +1,7 @@
 # Zona14: translated Russian names/descriptions to English
-# Zona14: ################ Куртки Новичка
+# Zona14: ################ Novice Jackets
 
-# Zona14: Брезентовая
+# Zona14: Canvas
 
 - type: entity
   parent: STBaseItem
@@ -27,7 +27,7 @@
       sound:
         path: /Audio/Effects/unwrap.ogg
 
-# Zona14: Белая
+# Zona14: White
 
 - type: entity
   parent: STBaseItem
@@ -53,7 +53,7 @@
       sound:
         path: /Audio/Effects/unwrap.ogg
 
-# Zona14: Бандитская
+# Zona14: Bandit
 
 - type: entity
   parent: STBaseItem
@@ -79,9 +79,9 @@
       sound:
         path: /Audio/Effects/unwrap.ogg
 
-# Zona14: ################ Кольчужные Куртки Новичка
+# Zona14: ################ Chainmail Novice Jackets
 
-# Zona14: Брезентовая
+# Zona14: Canvas
 
 - type: entity
   parent: STBaseItem
@@ -107,7 +107,7 @@
       sound:
         path: /Audio/Effects/unwrap.ogg
 
-# Zona14: Белая
+# Zona14: White
 
 - type: entity
   parent: STBaseItem
@@ -133,7 +133,7 @@
       sound:
         path: /Audio/Effects/unwrap.ogg
 
-# Zona14: Бандитская
+# Zona14: Bandit
 
 - type: entity
   parent: STBaseItem
@@ -159,9 +159,9 @@
       sound:
         path: /Audio/Effects/unwrap.ogg
 
-# Zona14: ################ Заря
+# Zona14: ################ Zarya
 
-# Zona14: Сталкерская 1
+# Zona14: Stalker 1
 
 - type: entity
   parent: STBaseItem
@@ -187,9 +187,9 @@
       sound:
         path: /Audio/Effects/unwrap.ogg
 
-# Zona14: Комбинезон Наёмника
+# Zona14: Mercenary Jumpsuit
 
-# Zona14: Наёмник
+# Zona14: Mercenary
 
 - type: entity
   parent: STBaseItem
@@ -237,7 +237,7 @@
       sound:
         path: /Audio/Effects/unwrap.ogg
 
-# Zona14: Бандит
+# Zona14: Bandit
 
 - type: entity
   parent: STBaseItem
@@ -262,7 +262,7 @@
       sound:
         path: /Audio/Effects/unwrap.ogg
 
-# Zona14: Сталкер
+# Zona14: Stalker
 
 - type: entity
   parent: STBaseItem
@@ -287,9 +287,9 @@
       sound:
         path: /Audio/Effects/unwrap.ogg
 
-# Zona14: ############# Сталкерские комбинезоны +
+# Zona14: ############# Stalker jumpsuits +
 
-# Zona14: Долг
+# Zona14: Duty
 
 # Zona14: ПС-5М
 
@@ -317,9 +317,9 @@
       sound:
         path: /Audio/Effects/unwrap.ogg
 
-# Zona14: Свобода
+# Zona14: Freedom
 
-# Zona14: Страж Свободы
+# Zona14: Freedom Guardian
 
 - type: entity
   parent: STBaseItem
@@ -345,7 +345,7 @@
       sound:
         path: /Audio/Effects/unwrap.ogg
 
-# Zona14: Ветер Свободы
+# Zona14: Freedom Wind
 
 - type: entity
   parent: STBaseItem
@@ -371,7 +371,7 @@
       sound:
         path: /Audio/Effects/unwrap.ogg
 
-# Zona14: Монолит
+# Zona14: Monolith
 
 - type: entity
   parent: STBaseItem

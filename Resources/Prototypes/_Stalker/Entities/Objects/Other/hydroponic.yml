@@ -147,7 +147,7 @@
   - type: StaminaDamageOnEmbed
     damage: 40
   - type: RepositoryItem
-    categoryName: Tools # Zona14: Инструменты
+    categoryName: Tools # Zona14: Tools
 
 - type: entity
   name: hatchet
@@ -174,7 +174,7 @@
     sprite: Objects/Tools/Hydroponics/hatchet.rsi
   - type: Craftable
   - type: RepositoryItem
-    categoryName: Tools # Zona14: Инструменты
+    categoryName: Tools # Zona14: Tools
 
 - type: entity
   name: small hoe
@@ -201,7 +201,7 @@
   - type: Item
     sprite: Objects/Tools/Hydroponics/hoe.rsi
   - type: RepositoryItem
-    categoryName: Tools # Zona14: Инструменты
+    categoryName: Tools # Zona14: Tools
   - type: Fixtures
     fixtures:
       fix1:

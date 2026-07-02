@@ -119,7 +119,7 @@
   parent: STClothingOuterArmorBerill5MBase
   id: STClothingOuterArmorBerillBereza
   name: Berill-5B "Bereza"
-  suffix: ST, Custom # Zona14: ST, Кастомка
+  suffix: ST, Custom # Zona14: ST, Custom
   description: A Berill-5B suit re-tailored in "Bereza" (Birch) camouflage. Owner modifications make it better suited for camouflage in overgrown and forested areas of the Zone. Worn from use, but its protection level is intact.
   components:
   - type: Sprite

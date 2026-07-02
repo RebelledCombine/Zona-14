@@ -4,7 +4,7 @@
   id: StalkerShopJournalist
   name: vendomat, Journalists
   description: How did the merchant fit in there?
-  suffix: ST, Mapping, Journalists # Zona14: ST, Mapping, Журналисты
+  suffix: ST, Mapping, Journalists # Zona14: ST, Mapping, Journalists
   components:
     - type: Sprite
       drawdepth: Objects

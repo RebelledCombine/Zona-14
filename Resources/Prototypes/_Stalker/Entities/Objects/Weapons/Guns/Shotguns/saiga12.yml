@@ -159,7 +159,7 @@
   parent: STBaseWeaponShotgunAuto
   id: STBaseWeaponShotgunVepr12De21Base
   name: Vepr-12
-  suffix: ST, Custom # Zona14: ST, Кастомка
+  suffix: ST, Custom # Zona14: ST, Custom
   description: A Russian smoothbore self-loading shotgun developed on the basis of the Kalashnikov light machine gun design.
   components:
   - type: STWeight

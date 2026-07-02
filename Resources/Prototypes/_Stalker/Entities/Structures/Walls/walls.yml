@@ -666,7 +666,7 @@
   id: WallConcreteFalloutDestructible
   name: Dilapidated concrete wall
   description: About to collapse if you knock on it.
-  suffix: ST, Mapping, wall, destructible # Zona14: ST, Mapping, wall, разрушимое
+  suffix: ST, Mapping, wall, destructible # Zona14: ST, Mapping, wall, destructible
   components:
   - type: Tag
     tags:

@@ -13,7 +13,7 @@
       scale: 0.5, 0.5
 
 #
-# Zona14: Самопальные T1
+# Zona14: Homemade T1
 #
 - type: entity
   parent: STBaseModuleSilencerRifles
@@ -52,7 +52,7 @@
       state: silencer_T1_nato
 
 #
-# Zona14: Легальные T2
+# Zona14: Legal T2
 #
 
 - type: entity

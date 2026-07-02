@@ -1,7 +1,7 @@
 - type: shopPreset
   id: NPCClerkAlexeySmirnov
   categories:
-    - name: Unfavorable Licenses # Zona14: Невыгодные Лицензии
+    - name: Unfavorable Licenses # Zona14: Unfavorable Licenses
       priority: 1
       items:
         hunterLicense: 4000

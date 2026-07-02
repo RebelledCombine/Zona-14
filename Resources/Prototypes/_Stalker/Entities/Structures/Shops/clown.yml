@@ -5,7 +5,7 @@
   id: StalkerShopClown
   name: Vendomat, Circus
   description: Hahahahahaha actually no, not funny.
-  suffix: ST, Mapping, Circus # Zona14: ST, Mapping, Циркачи
+  suffix: ST, Mapping, Circus # Zona14: ST, Mapping, Circus
   components:
     - type: Sprite
       drawdepth: Objects

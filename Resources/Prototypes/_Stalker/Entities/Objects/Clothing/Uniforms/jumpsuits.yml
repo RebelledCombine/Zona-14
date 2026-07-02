@@ -1,5 +1,5 @@
 # Zona14: translated Russian names/descriptions to English
-# Zona14: МАЙКА С ПИВОЗАВРОМ
+# Zona14: TANK TOP WITH BEER DINOSAUR
 
 - type: entity
   parent: ClothingUniformBase
@@ -300,7 +300,7 @@
   id: ClothingUniformJumpsuitZavetBoez
   name: Covenant Fighter Uniform
   description: standard jumpsuit used by the Covenant Group.
-  suffix: Stalker, Covenant # Zona14: Stalker, Завет
+  suffix: Stalker, Covenant # Zona14: Stalker, Covenant
   components:
     - type: Sprite
       sprite: _Stalker/Objects/Clothing/uniform/zavet/zavet.rsi
@@ -314,7 +314,7 @@
   id: ClothingUniformJumpsuitZavetLead
   name: Covenant Leader Uniform
   description: standard jumpsuit used by the Covenant Group.
-  suffix: Stalker, Covenant # Zona14: Stalker, Завет
+  suffix: Stalker, Covenant # Zona14: Stalker, Covenant
   components:
     - type: Sprite
       sprite: _Stalker/Objects/Clothing/uniform/zavet/zavet_lead.rsi

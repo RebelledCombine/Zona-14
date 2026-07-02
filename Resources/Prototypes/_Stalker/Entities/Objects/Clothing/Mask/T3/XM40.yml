@@ -25,12 +25,12 @@
         Caustic: 0.9
   - type: Craftable
 
-# Zona14: # Скины
+# Zona14: # Skins
 #- type: entity
 #  parent: ClothingMaskGasXM40
 #  id: ClothingMaskGasXM40Military
-# Zona14: name: противогаз XМ40 в раскраске военных
-# Zona14: description: Чувствуется запах дешёвой краски.
+# Zona14: name: XM40 gas mask in military paint
+# Zona14: description: Smells like cheap paint.
 #  components:
 #  - type: Sprite
 #    sprite: _Stalker/Objects/Clothing/mask/xm40military.rsi

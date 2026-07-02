@@ -2,7 +2,7 @@
 - type: entity
   parent: BaseArtifact
   id: ZoneArtifactSoul
-  suffix: Stalker, Soul # Zona14: Stalker, Душа
+  suffix: Stalker, Soul # Zona14: Stalker, Soul
   components:
     - type: Sprite
       state: soul
@@ -50,7 +50,7 @@
 - type: entity
   parent: BaseArtifact
   id: ZoneArtifactFloodlight
-  suffix: Stalker, Artifact-lantern # Zona14: Stalker, Артефакт-фонарь
+  suffix: Stalker, Artifact-lantern # Zona14: Stalker, Artifact lantern
   components:
     - type: Sprite
       state: artifactFloodlight
@@ -92,7 +92,7 @@
 - type: entity
   parent: BaseArtifactStorage
   id: ZoneArtifactMagneticFlower
-  suffix: Stalker, Magnetic flower # Zona14: Stalker, Магнитный цветок
+  suffix: Stalker, Magnetic flower # Zona14: Stalker, Magnetic flower
   components:
     - type: Sprite
       state: magnetic_flower
@@ -131,7 +131,7 @@
 - type: entity
   parent: BaseArtifactStorage
   id: ZoneArtifactCompass
-  suffix: Stalker, Compass # Zona14: Stalker, Компасс
+  suffix: Stalker, Compass # Zona14: Stalker, Compass
   components:
     - type: Sprite
       state: compass
@@ -174,7 +174,7 @@
   name: Crucifix
   parent: BaseArtifact
   id: ZoneArtifactCrucifix
-  suffix: Stalker, Crucifix # Zona14: Stalker, Распятие
+  suffix: Stalker, Crucifix # Zona14: Stalker, Crucifix
   components:
   - type: Sprite
     state: crucifix
@@ -210,7 +210,7 @@
 - type: entity
   parent: BaseArtifact
   id: ZoneArtifactThorn
-  suffix: Stalker, Thorn # Zona14: Stalker, Шип
+  suffix: Stalker, Thorn # Zona14: Stalker, Spike
   components:
   - type: Sprite
     state: thorn
@@ -246,7 +246,7 @@
 - type: entity
   parent: BaseArtifactStorage
   id: ZoneArtifactAtom
-  suffix: Stalker, Atom # Zona14: Stalker, Атом
+  suffix: Stalker, Atom # Zona14: Stalker, Atom
   components:
     - type: Sprite
       state: atom
@@ -287,7 +287,7 @@
 - type: entity
   parent: BaseArtifact
   id: ZoneArtifactArf
-  suffix: Stalker, Harp # Zona14: Stalker, Арфа
+  suffix: Stalker, Harp # Zona14: Stalker, Harp
   components:
   - type: Sprite
     state: arf
@@ -325,7 +325,7 @@
 - type: entity
   parent: BaseArtifactStorage
   id: ZoneArtifactDarkCube
-  suffix: Stalker, Dark cube # Zona14: Stalker, Тёмный куб
+  suffix: Stalker, Dark cube # Zona14: Stalker, Dark cube
   components:
   - type: Item
     size: Ginormous
