@@ -316,4 +316,11 @@
   id: 31
   time: '2026-07-02T08:38:58Z'
   url: https://github.com/Zona-14/Zona-14/pull/51
+- author: RebelledCombine
+  changes:
+  - message: Updated the Darkscape, Garbage, and Swamps maps.
+    type: Tweak
+  id: 32
+  time: '2026-07-02T20:05:40Z'
+  url: https://github.com/Zona-14/Zona-14/pull/52
 Order: 0
