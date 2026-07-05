@@ -1,4 +1,5 @@
-﻿using Content.Server.Mind;
+using Content.Server.Mind;
+using Content.Shared._Stalker.Stagger;
 using Content.Shared.Mobs;
 using Content.Shared.Mobs.Components;
 using Content.Shared.Mobs.Systems;
@@ -7,6 +8,9 @@ using Robust.Server.GameObjects;
 
 namespace Content.Server._Stalker.Stagger;
 
+// Zona14: server computes the stagger slowdown scalar (needs mind/lookup data) and writes it to the
+// networked StaggerComponent. The modifier is applied in the shared SharedStaggerSystem so movement
+// prediction stays in sync with the server.
 public sealed class StaggerSystem : EntitySystem
 {
     [Dependency] private readonly EntityLookupSystem _entityLookup = default!;
@@ -17,11 +21,6 @@ public sealed class StaggerSystem : EntitySystem
 
     public const float UpdateDelay = 0.7f;
     private float _updateTime = 0;
-
-    public override void Initialize()
-    {
-        SubscribeLocalEvent<StaggerComponent, RefreshMovementSpeedModifiersEvent>(OnRefreshMovementSpeedModifiers);
-    }
 
     public override void Update(float frameTime)
     {
@@ -68,20 +67,16 @@ public sealed class StaggerSystem : EntitySystem
                 finded = true;
             }
 
-            if (!finded)
-            {
-                stagger.MovementSpeedModifier = 1f;
-                _movementSpeedModifier.RefreshMovementSpeedModifiers(uid);
-                continue;
-            }
+            var newModifier = finded
+                ? Math.Min(stagger.SlownessDistanceMax, closestDistance + stagger.SlownessDistanceMin) / stagger.SlownessDistanceMax
+                : 1f;
 
-            stagger.MovementSpeedModifier = Math.Min(stagger.SlownessDistanceMax, closestDistance + stagger.SlownessDistanceMin) / stagger.SlownessDistanceMax;
+            if (MathHelper.CloseTo(newModifier, stagger.MovementSpeedModifier))
+                continue;
+
+            stagger.MovementSpeedModifier = newModifier;
+            Dirty(uid, stagger);
             _movementSpeedModifier.RefreshMovementSpeedModifiers(uid);
         }
-    }
-
-    private void OnRefreshMovementSpeedModifiers(Entity<StaggerComponent> ent, ref RefreshMovementSpeedModifiersEvent args)
-    {
-        args.ModifySpeed(ent.Comp.MovementSpeedModifier, ent.Comp.MovementSpeedModifier);
     }
 }
