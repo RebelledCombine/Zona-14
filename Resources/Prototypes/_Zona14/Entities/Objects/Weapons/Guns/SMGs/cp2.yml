@@ -26,7 +26,7 @@
     - type: Gun
       minAngle: 18
       maxAngle: 71.5
-      fireRate: 9
+      fireRate: 8
       angleIncrease: 2
       angleDecay: 9
       projectileSpeed: 55
@@ -116,7 +116,7 @@
       maxAngle: 71.5
       angleIncrease: 2
       angleDecay: 9
-      fireRate: 9
+      fireRate: 8
       soundGunshot:
         path: /Audio/_Stalker/Effects/Guns/919.ogg
     - type: ItemSlots

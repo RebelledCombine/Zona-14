@@ -10,7 +10,7 @@
       spawned:
         - id: Z14MutantPartSnorkFoot
     - type: Damageable
-      damageModifierSet: Z14STMutantT3DamageModifierSet
+      damageModifierSet: Z14STMutantT2DamageModifierSet
     - type: DamageStateVisuals
       states:
         Alive:
