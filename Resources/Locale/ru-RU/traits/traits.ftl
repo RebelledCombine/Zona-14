@@ -21,8 +21,7 @@ trait-accentless-name = Отсутствие акцента
 trait-accentless-desc = У вас нет того акцента, который характерен для представителей вашего вида.
 trait-frontal-lisp-name = Сигматизм
 trait-frontal-lisp-desc = У ваф имеютшя проблемы ш произношением.
-trait-socialanxiety-name = Заикание
-trait-socialanxiety-desc = Вы заикаетесь.
+# Zona14: removed SocialAnxiety (Stutter) trait
 trait-southern-name = Диалект юга США
 trait-southern-desc = У вас другая манера речи. Работает только с английским.
 trait-snoring-name = Храп

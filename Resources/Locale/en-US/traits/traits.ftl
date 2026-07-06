@@ -36,9 +36,7 @@ trait-accentless-desc = You don't have the accent that your species would usuall
 trait-frontal-lisp-name = Frontal lisp
 trait-frontal-lisp-desc = You thpeak with a lithp.
 
-trait-socialanxiety-name = Stutter
-trait-socialanxiety-desc = You speak with a stutter.
-
+# Zona14: removed SocialAnxiety (Stutter) trait
 trait-southern-name = Southern drawl
 trait-southern-desc = You have a different way of speakin'.
 
