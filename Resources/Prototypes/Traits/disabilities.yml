@@ -1,16 +1,6 @@
 # If you add a new trait, make sure to add the corresponding component to the whitelist in \Resources\Prototypes\Entities\Mobs\Player\clone.yml so it gets copied to clones correctly!
 
-- type: trait
-  id: Blindness
-  name: trait-blindness-name
-  description: trait-blindness-desc
-  traitGear: WhiteCane
-  category: Disabilities
-  whitelist:
-    components:
-      - Blindable
-  components:
-    - type: PermanentBlindness
+# Zona14: removed Blindness trait
 
 - type: trait
   id: PoorVision
@@ -25,17 +15,7 @@
     - type: PermanentBlindness
       blindness: 4
 
-- type: trait
-  id: Narcolepsy
-  name: trait-narcolepsy-name
-  description: trait-narcolepsy-desc
-  category: Disabilities
-  components:
-    - type: Narcolepsy
-      maxTimeBetweenIncidents: 600
-      minTimeBetweenIncidents: 300
-      maxDurationOfIncident: 30
-      minDurationOfIncident: 10
+# Zona14: removed Narcolepsy trait
 
 - type: trait
   id: Unrevivable
@@ -54,16 +34,7 @@
   components:
   - type: BlackAndWhiteOverlay
 
-- type: trait
-  id: Muted
-  name: trait-muted-name
-  description: trait-muted-desc
-  category: Disabilities
-  blacklist:
-    components:
-      - BorgChassis
-  components:
-    - type: Muted
+# Zona14: removed Muted trait
 
 - type: trait
   id: Paracusia
@@ -94,11 +65,4 @@
   components:
   - type: Hemophilia
 
-- type: trait
-  id: ImpairedMobility
-  name: trait-impaired-mobility-name
-  description: trait-impaired-mobility-desc
-  traitGear: OffsetCane
-  category: Disabilities
-  components:
-    - type: ImpairedMobility
+# Zona14: removed ImpairedMobility trait

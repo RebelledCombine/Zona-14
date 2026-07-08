@@ -27,14 +27,7 @@
   components:
   - type: SouthernAccent
 
-- type: trait
-  id: PirateAccent
-  name: trait-pirate-accent-name
-  description: trait-pirate-accent-desc
-  category: SpeechTraits
-  cost: 1
-  components:
-  - type: PirateAccent
+# Zona14: removed PirateAccent trait
 
 - type: trait
   id: CowboyAccent
@@ -97,11 +90,4 @@
 
 # Zona14: removed SocialAnxiety (Stutter) trait
 
-- type: trait
-  id: FrontalLisp
-  name: trait-frontal-lisp-name
-  description: trait-frontal-lisp-desc
-  category: SpeechTraits
-  cost: 2
-  components:
-  - type: FrontalLisp
+# Zona14: removed FrontalLisp trait
