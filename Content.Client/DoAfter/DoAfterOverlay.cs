@@ -9,6 +9,7 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
 using Robust.Shared.Utility;
 using Robust.Shared.Containers;
+using Content.Shared.Weapons.Ranged.Components; // Zona14: gun-ready gear visual
 
 namespace Content.Client.DoAfter;
 
@@ -27,6 +28,18 @@ public sealed class DoAfterOverlay : Overlay
 
     private readonly Texture _barTexture;
     private readonly ShaderInstance _unshadedShader;
+
+    // Zona14: when the item being drawn into hands is a gun, show a spinning revolver
+    // chamber instead of the generic progress bar. One frame per loaded-bullet count
+    // (0..6); the frame tracks do-after progress. Null if the RSI is missing, in which
+    // case we fall back to the normal bar rather than crashing the client.
+    private readonly Texture[]? _gunChamberFrames;
+
+    /// <summary>
+    ///     Zona14: chamber spin speed in radians/second (cosmetic flourish, on top of the
+    ///     progress-driven bullet count).
+    /// </summary>
+    private const float GunChamberSpinSpeed = 8f;
 
     /// <summary>
     ///     Flash time for cancelled DoAfters
@@ -51,6 +64,22 @@ public sealed class DoAfterOverlay : Overlay
         _sprite = _entManager.System<SpriteSystem>();
         var sprite = new SpriteSpecifier.Rsi(new("/Textures/Interface/Misc/progress_bar.rsi"), "icon");
         _barTexture = _entManager.EntitySysManager.GetEntitySystem<SpriteSystem>().Frame0(sprite);
+
+        // Zona14: load the revolver-chamber frames (states "0".."6"); tolerate them being absent.
+        try
+        {
+            var frames = new Texture[7];
+            for (var i = 0; i < frames.Length; i++)
+            {
+                var frameSprite = new SpriteSpecifier.Rsi(new("/Textures/_Zona14/Interface/Misc/revolver_chamber.rsi"), i.ToString());
+                frames[i] = _sprite.Frame0(frameSprite);
+            }
+            _gunChamberFrames = frames;
+        }
+        catch
+        {
+            _gunChamberFrames = null;
+        }
 
         _unshadedShader = protoManager.Index(UnshadedShader).Instance();
     }
@@ -123,6 +152,59 @@ public sealed class DoAfterOverlay : Overlay
                 // Use the sprite itself if we know its bounds. This means short or tall sprites don't get overlapped
                 // by the bar.
                 var yOffset = _sprite.GetLocalBounds((uid, sprite)).Height / 2f + 0.05f;
+
+                // Zona14: if the item being drawn into hands is a gun, show a spinning revolver
+                // chamber instead of the generic progress bar. The number of loaded bullets
+                // tracks progress (0 at the start of the draw, 6 when it completes). Covers
+                // every "pull a gun into hands" path (inventory draw, holster, storage,
+                // smart-equip) because they all raise a DoAfter whose Used entity is the gun.
+                if (_gunChamberFrames != null &&
+                    doAfter.Args.Used is { } usedItem &&
+                    _entManager.HasComponent<GunComponent>(usedItem))
+                {
+                    // Progress ratio, matching how the bar treats cancellation (freeze at cancel point).
+                    float chamberRatio;
+                    if (doAfter.CancelledTime != null)
+                    {
+                        var cancelled = doAfter.CancelledTime.Value - doAfter.StartTime;
+                        chamberRatio = (float)Math.Min(1, cancelled.TotalSeconds / doAfter.Args.Delay.TotalSeconds);
+                    }
+                    else
+                    {
+                        var elapsed = time - doAfter.StartTime;
+                        chamberRatio = (float)Math.Min(1, elapsed.TotalSeconds / doAfter.Args.Delay.TotalSeconds);
+                    }
+
+                    var lastFrame = _gunChamberFrames.Length - 1; // 6 bullets
+                    var frameIndex = Math.Clamp((int)MathF.Round(chamberRatio * lastFrame), 0, lastFrame);
+                    var chamberTexture = _gunChamberFrames[frameIndex];
+
+                    var chamberAlpha = alpha;
+                    if (doAfter.CancelledTime != null)
+                    {
+                        // Flash on/off while cancelling, mirroring the bar's behaviour.
+                        var cancelElapsed = (time - doAfter.CancelledTime.Value).TotalSeconds;
+                        if (Math.Floor(cancelElapsed / FlashTime) % 2 != 0)
+                            chamberAlpha = 0f;
+                    }
+
+                    var chamberSize = new Vector2(chamberTexture.Width, chamberTexture.Height) / EyeManager.PixelsPerMeter;
+                    var chamberCentre = new Vector2(0f,
+                        yOffset / scale + offset / EyeManager.PixelsPerMeter * scale + chamberSize.Y / 2f);
+
+                    var spin = Matrix3Helpers.CreateRotation(new Angle(time.TotalSeconds * GunChamberSpinSpeed));
+                    var toCentre = Matrix3Helpers.CreateTranslation(chamberCentre);
+                    var chamberLocal = Matrix3x2.Multiply(spin, toCentre);      // spin about own centre, then lift above head
+                    var chamberMatrix = Matrix3x2.Multiply(chamberLocal, matty); // then camera/scale/world
+
+                    handle.SetTransform(chamberMatrix);
+                    handle.DrawTexture(chamberTexture, -chamberSize / 2f, Color.White.WithAlpha(chamberAlpha));
+
+                    // Restore the entity transform for any other do-afters on this entity.
+                    handle.SetTransform(matty);
+                    offset += chamberTexture.Height / scale;
+                    continue;
+                }
 
                 // Position above the entity (we've already applied the matrix transform to the entity itself)
                 // Offset by the texture size for every do_after we have.
