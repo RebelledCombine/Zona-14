@@ -5,7 +5,7 @@ public static class StalkerHairPalette
     public const float MaxSaturation = 0.55f;
     public const float MinValue = 0.05f;
     // Cap brightness (HSV Value) so bright/light hair is impossible — doesn't fit the S.T.A.L.K.E.R. setting.
-    public const float MaxValue = 0.50f;
+    public const float MaxValue = 0.70f;
 
     public static Color Clamp(Color color)
     {
