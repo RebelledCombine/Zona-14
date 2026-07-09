@@ -1,10 +1,1 @@
-- type: marking
-  id: FoxEars
-  bodyPart: HeadTop
-  markingCategory: HeadTop
-  speciesRestriction: [Human]
-  sprites:
-  - sprite: Corvax/Mobs/Customization/fox_parts.rsi
-    state: ears_fox_outer
-  - sprite: Corvax/Mobs/Customization/fox_parts.rsi
-    state: ears_fox_inner
+# Zona14: removed the human FoxEars (Head Top) marking — animal-ear cosmetics don't fit the S.T.A.L.K.E.R. setting.

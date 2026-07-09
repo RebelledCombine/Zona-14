@@ -1,51 +1,4 @@
-- type: marking
-  id: HumanHairAfricanPigtails
-  bodyPart: Hair
-  markingCategory: Hair
-  sprites:
-    - sprite: Corvax/Mobs/Customization/human_hair.rsi
-      state: africanpigtails
-
-- type: marking
-  id: HumanHairAfropuffdouble
-  bodyPart: Hair
-  markingCategory: Hair
-  sprites:
-    - sprite: Corvax/Mobs/Customization/human_hair.rsi
-      state: afropuffdouble
-
-- type: marking
-  id: HumanHairAfropuffleft
-  bodyPart: Hair
-  markingCategory: Hair
-  sprites:
-    - sprite: Corvax/Mobs/Customization/human_hair.rsi
-      state: afropuffleft
-
-- type: marking
-  id: HumanHairAfropuffright
-  bodyPart: Hair
-  markingCategory: Hair
-  sprites:
-    - sprite: Corvax/Mobs/Customization/human_hair.rsi
-      state: afropuffright
-
-- type: marking
-  id: HumanHairAmazon
-  bodyPart: Hair
-  markingCategory: Hair
-  sprites:
-    - sprite: Corvax/Mobs/Customization/human_hair.rsi
-      state: amazon
-
-- type: marking
-  id: HumanHairAstolfo
-  bodyPart: Hair
-  markingCategory: Hair
-  sprites:
-    - sprite: Corvax/Mobs/Customization/human_hair.rsi
-      state: astolfo
-
+# Zona14: removed anime/bright/joke hairstyles and all slime-themed hairs that don't fit the S.T.A.L.K.E.R. setting (see PR). Kept the rest.
 - type: marking
   id: HumanHairBaum
   bodyPart: Hair
@@ -61,22 +14,6 @@
   sprites:
     - sprite: Corvax/Mobs/Customization/human_hair.rsi
       state: beachwave
-
-- type: marking
-  id: HumanHairBluntbangs
-  bodyPart: Hair
-  markingCategory: Hair
-  sprites:
-    - sprite: Corvax/Mobs/Customization/human_hair.rsi
-      state: bluntbangs
-
-- type: marking
-  id: HumanHairBluntbangsAlt
-  bodyPart: Hair
-  markingCategory: Hair
-  sprites:
-    - sprite: Corvax/Mobs/Customization/human_hair.rsi
-      state: bluntbangs_alt
 
 - type: marking
   id: HumanHairBobcutAlt
@@ -111,22 +48,6 @@
       state: combedbob
 
 - type: marking
-  id: HumanHairCotton
-  bodyPart: Hair
-  markingCategory: Hair
-  sprites:
-    - sprite: Corvax/Mobs/Customization/human_hair.rsi
-      state: cotton
-
-- type: marking
-  id: HumanHairCurly
-  bodyPart: Hair
-  markingCategory: Hair
-  sprites:
-    - sprite: Corvax/Mobs/Customization/human_hair.rsi
-      state: curly
-
-- type: marking
   id: HumanHairDave
   bodyPart: Hair
   markingCategory: Hair
@@ -151,44 +72,12 @@
       state: emoshort
 
 - type: marking
-  id: HumanHairFingerwave
-  bodyPart: Hair
-  markingCategory: Hair
-  sprites:
-    - sprite: Corvax/Mobs/Customization/human_hair.rsi
-      state: fingerwave
-
-- type: marking
   id: HumanHairFluffyShort
   bodyPart: Hair
   markingCategory: Hair
   sprites:
     - sprite: Corvax/Mobs/Customization/human_hair.rsi
       state: fluffy_short
-
-- type: marking
-  id: HumanHairFortuneteller
-  bodyPart: Hair
-  markingCategory: Hair
-  sprites:
-    - sprite: Corvax/Mobs/Customization/human_hair.rsi
-      state: fortuneteller
-
-- type: marking
-  id: HumanHairFortunetellerAlt
-  bodyPart: Hair
-  markingCategory: Hair
-  sprites:
-    - sprite: Corvax/Mobs/Customization/human_hair.rsi
-      state: fortuneteller_alt
-
-- type: marking
-  id: HumanHairFroofylong
-  bodyPart: Hair
-  markingCategory: Hair
-  sprites:
-    - sprite: Corvax/Mobs/Customization/human_hair.rsi
-      state: froofylong
 
 - type: marking
   id: HumanHairGeisha
@@ -319,14 +208,6 @@
       state: long4
 
 - type: marking
-  id: HumanHairLongdtails
-  bodyPart: Hair
-  markingCategory: Hair
-  sprites:
-    - sprite: Corvax/Mobs/Customization/human_hair.rsi
-      state: longdtails
-
-- type: marking
   id: HumanHairLongerAlt
   bodyPart: Hair
   markingCategory: Hair
@@ -343,14 +224,6 @@
       state: longovereye_alt
 
 - type: marking
-  id: HumanHairLongsidepartstraight
-  bodyPart: Hair
-  markingCategory: Hair
-  sprites:
-    - sprite: Corvax/Mobs/Customization/human_hair.rsi
-      state: longsidepartstraight
-
-- type: marking
   id: HumanHairLooseSlicked
   bodyPart: Hair
   markingCategory: Hair
@@ -365,14 +238,6 @@
   sprites:
     - sprite: Corvax/Mobs/Customization/human_hair.rsi
       state: mediumbraid
-
-- type: marking
-  id: HumanHairNewyou
-  bodyPart: Hair
-  markingCategory: Hair
-  sprites:
-    - sprite: Corvax/Mobs/Customization/human_hair.rsi
-      state: newyou
 
 - type: marking
   id: HumanHairPonytailAlt
@@ -399,14 +264,6 @@
       state: poofy2
 
 - type: marking
-  id: HumanHairQuadcurls
-  bodyPart: Hair
-  markingCategory: Hair
-  sprites:
-    - sprite: Corvax/Mobs/Customization/human_hair.rsi
-      state: quadcurls
-
-- type: marking
   id: HumanHairSabitsuki
   bodyPart: Hair
   markingCategory: Hair
@@ -429,14 +286,6 @@
   sprites:
     - sprite: Corvax/Mobs/Customization/human_hair.rsi
       state: shorthair4
-
-- type: marking
-  id: HumanHairShy
-  bodyPart: Hair
-  markingCategory: Hair
-  sprites:
-    - sprite: Corvax/Mobs/Customization/human_hair.rsi
-      state: shy
 
 - type: marking
   id: HumanHairSimplePonytail
@@ -463,60 +312,12 @@
       state: slightlymessy
 
 - type: marking
-  id: HumanHairSlimedroplet
-  bodyPart: Hair
-  markingCategory: Hair
-  sprites:
-    - sprite: Corvax/Mobs/Customization/human_hair.rsi
-      state: slimedroplet
-
-- type: marking
-  id: HumanHairSlimedropletAlt
-  bodyPart: Hair
-  markingCategory: Hair
-  sprites:
-    - sprite: Corvax/Mobs/Customization/human_hair.rsi
-      state: slimedroplet_alt
-
-- type: marking
-  id: HumanHairSlimespikes
-  bodyPart: Hair
-  markingCategory: Hair
-  sprites:
-    - sprite: Corvax/Mobs/Customization/human_hair.rsi
-      state: slimespikes
-
-- type: marking
-  id: HumanHairSlimetendrils
-  bodyPart: Hair
-  markingCategory: Hair
-  sprites:
-    - sprite: Corvax/Mobs/Customization/human_hair.rsi
-      state: slimetendrils
-
-- type: marking
-  id: HumanHairSlimetendrilsAlt
-  bodyPart: Hair
-  markingCategory: Hair
-  sprites:
-    - sprite: Corvax/Mobs/Customization/human_hair.rsi
-      state: slimetendrils_alt
-
-- type: marking
   id: HumanHairSpicy
   bodyPart: Hair
   markingCategory: Hair
   sprites:
     - sprite: Corvax/Mobs/Customization/human_hair.rsi
       state: spicy
-
-- type: marking
-  id: HumanHairTwintailFloor
-  bodyPart: Hair
-  markingCategory: Hair
-  sprites:
-    - sprite: Corvax/Mobs/Customization/human_hair.rsi
-      state: twintail_floor
 
 - type: marking
   id: HumanHairVeryshortovereye
@@ -527,28 +328,12 @@
       state: veryshortovereye
 
 - type: marking
-  id: HumanHairVictory
-  bodyPart: Hair
-  markingCategory: Hair
-  sprites:
-    - sprite: Corvax/Mobs/Customization/human_hair.rsi
-      state: victory
-
-- type: marking
   id: HumanHairViper
   bodyPart: Hair
   markingCategory: Hair
   sprites:
     - sprite: Corvax/Mobs/Customization/human_hair.rsi
       state: viper
-
-- type: marking
-  id: HumanHairWife
-  bodyPart: Hair
-  markingCategory: Hair
-  sprites:
-    - sprite: Corvax/Mobs/Customization/human_hair.rsi
-      state: wife
 
 - type: marking
   id: HumanHairZiegler
