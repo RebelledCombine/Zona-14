@@ -10,6 +10,7 @@ using Robust.Shared.Timing;
 using Robust.Shared.Utility;
 using Robust.Shared.Containers;
 using Content.Shared.Weapons.Ranged.Components; // Zona14: gun-ready gear visual
+using Content.Shared.Hands.EntitySystems; // Zona14: draw-vs-holster direction
 
 namespace Content.Client.DoAfter;
 
@@ -25,6 +26,7 @@ public sealed class DoAfterOverlay : Overlay
     private readonly ProgressColorSystem _progressColor;
     private readonly SharedContainerSystem _container;
     private readonly SpriteSystem _sprite;
+    private readonly SharedHandsSystem _hands; // Zona14: draw-vs-holster direction
 
     private readonly Texture _barTexture;
     private readonly ShaderInstance _unshadedShader;
@@ -67,6 +69,7 @@ public sealed class DoAfterOverlay : Overlay
         _container = _entManager.EntitySysManager.GetEntitySystem<SharedContainerSystem>();
         _progressColor = _entManager.System<ProgressColorSystem>();
         _sprite = _entManager.System<SpriteSystem>();
+        _hands = _entManager.System<SharedHandsSystem>(); // Zona14: draw-vs-holster direction
         var sprite = new SpriteSpecifier.Rsi(new("/Textures/Interface/Misc/progress_bar.rsi"), "icon");
         _barTexture = _entManager.EntitySysManager.GetEntitySystem<SpriteSystem>().Frame0(sprite);
 
@@ -180,8 +183,14 @@ public sealed class DoAfterOverlay : Overlay
                         chamberRatio = (float)Math.Min(1, elapsed.TotalSeconds / doAfter.Args.Delay.TotalSeconds);
                     }
 
+                    // Holstering (gun currently in the user's hands and going away) runs the
+                    // chamber in reverse: de-load 6->0 and spin the other way. Drawing it out
+                    // of a slot/container loads 0->6.
+                    var isHolstering = _hands.IsHolding(uid, usedItem);
+                    var displayRatio = isHolstering ? 1f - chamberRatio : chamberRatio;
+
                     var lastFrame = _gunChamberFrames.Length - 1; // 6 bullets
-                    var frameIndex = Math.Clamp((int)MathF.Round(chamberRatio * lastFrame), 0, lastFrame);
+                    var frameIndex = Math.Clamp((int)MathF.Round(displayRatio * lastFrame), 0, lastFrame);
                     var chamberTexture = _gunChamberFrames[frameIndex];
 
                     var chamberAlpha = alpha;
@@ -199,7 +208,8 @@ public sealed class DoAfterOverlay : Overlay
                         yOffset / scale + offset / EyeManager.PixelsPerMeter * scale + drawnSize.Y / 2f);
 
                     var chamberScale = Matrix3Helpers.CreateScale(new Vector2(GunChamberScale));
-                    var spin = Matrix3Helpers.CreateRotation(new Angle(time.TotalSeconds * GunChamberSpinSpeed));
+                    var spinDir = isHolstering ? -1f : 1f;
+                    var spin = Matrix3Helpers.CreateRotation(new Angle(time.TotalSeconds * GunChamberSpinSpeed * spinDir));
                     var toCentre = Matrix3Helpers.CreateTranslation(chamberCentre);
                     var chamberLocal = Matrix3x2.Multiply(Matrix3x2.Multiply(chamberScale, spin), toCentre); // shrink + spin about own centre, then lift above head
                     var chamberMatrix = Matrix3x2.Multiply(chamberLocal, matty); // then camera/scale/world
