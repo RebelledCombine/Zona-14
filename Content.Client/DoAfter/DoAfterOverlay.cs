@@ -39,7 +39,12 @@ public sealed class DoAfterOverlay : Overlay
     ///     Zona14: chamber spin speed in radians/second (cosmetic flourish, on top of the
     ///     progress-driven bullet count).
     /// </summary>
-    private const float GunChamberSpinSpeed = 8f;
+    private const float GunChamberSpinSpeed = 4f;
+
+    /// <summary>
+    ///     Zona14: on-screen scale of the chamber relative to its native texture size.
+    /// </summary>
+    private const float GunChamberScale = 0.65f;
 
     /// <summary>
     ///     Flash time for cancelled DoAfters
@@ -188,21 +193,23 @@ public sealed class DoAfterOverlay : Overlay
                             chamberAlpha = 0f;
                     }
 
-                    var chamberSize = new Vector2(chamberTexture.Width, chamberTexture.Height) / EyeManager.PixelsPerMeter;
+                    var nativeSize = new Vector2(chamberTexture.Width, chamberTexture.Height) / EyeManager.PixelsPerMeter;
+                    var drawnSize = nativeSize * GunChamberScale;
                     var chamberCentre = new Vector2(0f,
-                        yOffset / scale + offset / EyeManager.PixelsPerMeter * scale + chamberSize.Y / 2f);
+                        yOffset / scale + offset / EyeManager.PixelsPerMeter * scale + drawnSize.Y / 2f);
 
+                    var chamberScale = Matrix3Helpers.CreateScale(new Vector2(GunChamberScale));
                     var spin = Matrix3Helpers.CreateRotation(new Angle(time.TotalSeconds * GunChamberSpinSpeed));
                     var toCentre = Matrix3Helpers.CreateTranslation(chamberCentre);
-                    var chamberLocal = Matrix3x2.Multiply(spin, toCentre);      // spin about own centre, then lift above head
+                    var chamberLocal = Matrix3x2.Multiply(Matrix3x2.Multiply(chamberScale, spin), toCentre); // shrink + spin about own centre, then lift above head
                     var chamberMatrix = Matrix3x2.Multiply(chamberLocal, matty); // then camera/scale/world
 
                     handle.SetTransform(chamberMatrix);
-                    handle.DrawTexture(chamberTexture, -chamberSize / 2f, Color.White.WithAlpha(chamberAlpha));
+                    handle.DrawTexture(chamberTexture, -nativeSize / 2f, Color.White.WithAlpha(chamberAlpha));
 
                     // Restore the entity transform for any other do-afters on this entity.
                     handle.SetTransform(matty);
-                    offset += chamberTexture.Height / scale;
+                    offset += chamberTexture.Height * GunChamberScale / scale;
                     continue;
                 }
 
