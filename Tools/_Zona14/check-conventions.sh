@@ -7,22 +7,35 @@
 
 set -u
 
-if [[ $# -ne 2 ]]; then
-    echo "Usage: $0 <base-ref> <head-ref>" >&2
-    exit 2
-fi
-
-BASE="$1"
-HEAD="$2"
 FAIL=0
 WARN=0
+CACHED=0
+
+if [[ $# -eq 1 && "$1" == "--cached" ]]; then
+    CACHED=1
+    BASE="HEAD"
+    HEAD="HEAD"
+elif [[ $# -eq 2 ]]; then
+    BASE="$1"
+    HEAD="$2"
+else
+    echo "Usage: $0 <base-ref> <head-ref>" >&2
+    echo "       $0 --cached" >&2
+    exit 2
+fi
 
 if ! command -v jq >/dev/null 2>&1; then
     echo "ERROR: 'jq' is required. Install with: sudo apt install jq  (or: brew install jq)" >&2
     exit 2
 fi
 
-COMMIT_MSGS="$(git log --format=%B "$BASE..$HEAD" 2>/dev/null || echo "")"
+if [[ "$CACHED" == 1 ]]; then
+    COMMIT_MSGS=""
+    CHANGED_FILES="$(git diff --name-status --cached 2>/dev/null || true)"
+else
+    COMMIT_MSGS="$(git log --format=%B "$BASE..$HEAD" 2>/dev/null || echo "")"
+    CHANGED_FILES="$(git diff --name-status "$BASE..$HEAD" 2>/dev/null || true)"
+fi
 PR_TITLE="${PR_TITLE:-}"
 
 is_upstream_port() {
@@ -32,8 +45,6 @@ is_upstream_port() {
 is_custom_license() {
     grep -qF '[custom-license]' <<<"$PR_TITLE$COMMIT_MSGS"
 }
-
-CHANGED_FILES="$(git diff --name-status "$BASE..$HEAD" 2>/dev/null || true)"
 
 fail() {
     echo "FAIL: $*" >&2
@@ -100,11 +111,19 @@ check_upstream_edit_marker() {
             *)                      continue ;;
         esac
 
-        added=$(git diff "$BASE..$HEAD" -- "$path" 2>/dev/null \
-                    | grep -E '^\+[^+]' \
-                    | sed 's/^.//' \
-                    | grep -v '^[[:space:]]*$' \
-                    || true)
+        if [[ "$CACHED" == 1 ]]; then
+            added=$(git diff --cached -- "$path" 2>/dev/null \
+                        | grep -E '^\+[^+]' \
+                        | sed 's/^.//' \
+                        | grep -v '^[[:space:]]*$' \
+                        || true)
+        else
+            added=$(git diff "$BASE..$HEAD" -- "$path" 2>/dev/null \
+                        | grep -E '^\+[^+]' \
+                        | sed 's/^.//' \
+                        | grep -v '^[[:space:]]*$' \
+                        || true)
+        fi
         [[ -z "$added" ]] && continue
 
         if ! grep -qF "$marker" <<<"$added"; then
@@ -233,10 +252,47 @@ check_no_global_attempt_subscribers() {
 }
 
 # ============================================================
+# Check 8: YAML data-prototype `categories`/`suffix` guard
+# ============================================================
+check_yaml_data_prototypes() {
+    local yaml_files=()
+    while IFS=$'\t' read -r status path; do
+        [[ -z "${status:-}" ]] && continue
+        [[ "$status" == A || "$status" == M || "$status" == R* ]] || continue
+        [[ "$path" == *.yml || "$path" == *.yaml ]] || continue
+        yaml_files+=("$path")
+    done <<<"$CHANGED_FILES"
+
+    if [[ ${#yaml_files[@]} -eq 0 ]]; then
+        return 0
+    fi
+
+    if ! command -v python3 >/dev/null 2>&1; then
+        warn "python3 not available; skipping YAML data-prototype check"
+        return 0
+    fi
+
+    local script
+    script="$(dirname "$0")/check-yaml-data-prototypes.py"
+    if [[ ! -f "$script" ]]; then
+        warn "check-yaml-data-prototypes.py not found; skipping YAML data-prototype check"
+        return 0
+    fi
+
+    if ! python3 "$script" "${yaml_files[@]}"; then
+        FAIL=1
+    fi
+}
+
+# ============================================================
 # Run
 # ============================================================
 
-echo "=== Zona-14 convention check: $BASE..$HEAD ==="
+if [[ "$CACHED" == 1 ]]; then
+    echo "=== Zona-14 convention check: staged changes ==="
+else
+    echo "=== Zona-14 convention check: $BASE..$HEAD ==="
+fi
 is_upstream_port && echo "(PR is tagged [upstream-port]; checks 2 and 4 are skipped)"
 is_custom_license && echo "(PR is tagged [custom-license]; check 6 allows non-allowlist SPDX values)"
 echo
@@ -248,6 +304,7 @@ check_greenfield
 check_key_file_delete
 check_meta_json_license
 check_no_global_attempt_subscribers
+check_yaml_data_prototypes
 
 echo
 if [[ $FAIL -eq 0 ]]; then
