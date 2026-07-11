@@ -1,0 +1,8 @@
+author: RebelledCombine
+time: '2026-07-11T11:01:59Z'
+url: https://github.com/Zona-14/Zona-14/pull/53
+changes:
+- type: Fix
+  message: Fixed movement stutter and rubber-banding when walking over water and other
+    slowdown tiles.
+category: Main
