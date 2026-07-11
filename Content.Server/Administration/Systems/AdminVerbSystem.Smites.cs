@@ -567,25 +567,9 @@ public sealed partial class AdminVerbSystem
             args.Verbs.Add(ghostKick);
         }
 
-        if (TryComp<InventoryComponent>(args.Target, out var inventory))
+        if (TryComp<InventoryComponent>(args.Target, out _))
         {
-            var nyanifyName = Loc.GetString("admin-smite-nyanify-name").ToLowerInvariant();
-            Verb nyanify = new()
-            {
-                Text = nyanifyName,
-                Category = VerbCategory.Smite,
-                Icon = new SpriteSpecifier.Rsi(new("/Textures/Clothing/Head/Hats/catears.rsi"), "icon"),
-                Act = () =>
-                {
-                    var ears = Spawn("ClothingHeadHatCatEars", Transform(args.Target).Coordinates);
-                    EnsureComp<UnremoveableComponent>(ears);
-                    _inventorySystem.TryUnequip(args.Target, "head", true, true, false, inventory);
-                    _inventorySystem.TryEquip(args.Target, ears, "head", true, true, false, inventory);
-                },
-                Impact = LogImpact.Extreme,
-                Message = string.Join(": ", nyanifyName, Loc.GetString("admin-smite-nyanify-description"))
-            };
-            args.Verbs.Add(nyanify);
+            // Zona14: removed Cat Ears (nyanify) smite
 
             var killSignName = Loc.GetString("admin-smite-kill-sign-name").ToLowerInvariant();
             Verb killSign = new()

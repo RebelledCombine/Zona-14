@@ -56,7 +56,7 @@ admin-smite-super-slip-name = Super Slip
 admin-smite-creampie-name = Cream
 admin-smite-vomit-organs-name = Vomit Organs
 admin-smite-ghostkick-name = Ghost Kick
-admin-smite-nyanify-name = Cat Ears
+# Zona14: removed Cat Ears (nyanify) smite
 admin-smite-kill-sign-name = Kill Sign
 admin-smite-omni-accent-name = Omni-Accent
 admin-smite-crawler-name = Crawler
@@ -80,7 +80,7 @@ admin-smite-pinball-description = Turns them into a super bouncy ball, flinging 
 admin-smite-yeet-description = Banishes them into the depths of space by turning on no-clip and tossing them.
 admin-smite-become-bread-description = It turns them into bread. Really, that's all it does.
 admin-smite-ghostkick-description = Silently kicks the user, dropping their connection.
-admin-smite-nyanify-description = Forcibly add cat ears, there is no escape.
+# Zona14: removed Cat Ears (nyanify) smite
 admin-smite-kill-sign-description = Marks a player for death by their fellows.
 admin-smite-cluwne-description = Cluwnes them. The suit cannot be removed and the station's crew may murder them freely.
 admin-smite-anger-pointing-arrows-description = Angers the pointing arrows, causing them to assault this entity explosively.
