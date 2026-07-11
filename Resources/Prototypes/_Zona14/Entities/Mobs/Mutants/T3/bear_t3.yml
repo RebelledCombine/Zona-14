@@ -10,7 +10,7 @@
     rootTask:
       task: STBearT3Compound
   - type: Damageable
-    damageModifierSet: Z14STMutantT4DamageModifierSet # might be a bit much idk
+    damageModifierSet: Z14STMutantT3DamageModifierSet
   - type: DamageStateVisuals
     states:
       Alive:
