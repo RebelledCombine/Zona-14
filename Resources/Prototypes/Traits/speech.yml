@@ -28,16 +28,7 @@
   - type: SouthernAccent
 
 # Zona14: removed PirateAccent trait
-
-- type: trait
-  id: CowboyAccent
-  name: trait-cowboy-name
-  description: trait-cowboy-desc
-  category: SpeechTraits
-  cost: 1
-  components:
-  - type: ReplacementAccent
-    accent: cowboy
+# Zona14: removed CowboyAccent trait
 
 - type: trait
   id: GermanAccent

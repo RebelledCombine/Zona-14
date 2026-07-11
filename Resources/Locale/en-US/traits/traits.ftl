@@ -40,8 +40,7 @@ trait-snoring-desc = You will snore while sleeping.
 trait-liar-name = Pathological liar
 trait-liar-desc = You can hardly bring yourself to tell the truth. Sometimes you lie anyway.
 
-trait-cowboy-name = Cowboy accent
-trait-cowboy-desc = You speak with a distinct cowboy accent!
+# Zona14: removed CowboyAccent trait
 
 trait-german-name = German accent
 trait-german-desc = You seem to come from space Germany.

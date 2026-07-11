@@ -22,8 +22,7 @@ trait-snoring-name = Храп
 trait-snoring-desc = Вы храпите во время сна.
 trait-liar-name = Патологический лжец
 trait-liar-desc = Вы с трудом заставляете себя говорить правду. Иногда вы всё равно лжёте.
-trait-cowboy-name = Ковбойский акцент
-trait-cowboy-desc = Вы говорите с заметным ковбойским акцентом!
+# Zona14: removed CowboyAccent trait
 trait-german-name = Немецкий акцент
 trait-german-desc = Вы, кажется, родом из Космической Германии.
 trait-italian-name = Итальянский акцент
