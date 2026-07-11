@@ -594,6 +594,59 @@
     accent-russian-words-4: accent-russian-words-replace-4
     accent-russian-words-5: accent-russian-words-replace-5
     accent-russian-words-6: accent-russian-words-replace-6
+    # Zona14: extended Russian accent — common words + transliterated swears (see accent/russian.ftl)
+    accent-russian-words-7: accent-russian-words-replace-7
+    accent-russian-words-8: accent-russian-words-replace-8
+    accent-russian-words-9: accent-russian-words-replace-9
+    accent-russian-words-10: accent-russian-words-replace-10
+    accent-russian-words-11: accent-russian-words-replace-11
+    accent-russian-words-12: accent-russian-words-replace-12
+    accent-russian-words-13: accent-russian-words-replace-13
+    accent-russian-words-14: accent-russian-words-replace-14
+    accent-russian-words-15: accent-russian-words-replace-15
+    accent-russian-words-16: accent-russian-words-replace-16
+    accent-russian-words-17: accent-russian-words-replace-17
+    accent-russian-words-18: accent-russian-words-replace-18
+    accent-russian-words-19: accent-russian-words-replace-19
+    accent-russian-words-20: accent-russian-words-replace-20
+    accent-russian-words-21: accent-russian-words-replace-21
+    accent-russian-words-22: accent-russian-words-replace-22
+    accent-russian-words-23: accent-russian-words-replace-23
+    accent-russian-words-24: accent-russian-words-replace-24
+    accent-russian-words-25: accent-russian-words-replace-25
+    accent-russian-words-26: accent-russian-words-replace-26
+    accent-russian-words-27: accent-russian-words-replace-27
+    accent-russian-words-28: accent-russian-words-replace-28
+    accent-russian-words-29: accent-russian-words-replace-29
+    accent-russian-words-30: accent-russian-words-replace-30
+    accent-russian-words-31: accent-russian-words-replace-31
+    accent-russian-words-32: accent-russian-words-replace-32
+    accent-russian-words-33: accent-russian-words-replace-33
+    accent-russian-words-34: accent-russian-words-replace-34
+    accent-russian-words-35: accent-russian-words-replace-35
+    accent-russian-words-36: accent-russian-words-replace-36
+    accent-russian-words-37: accent-russian-words-replace-37
+    accent-russian-words-38: accent-russian-words-replace-38
+    accent-russian-words-39: accent-russian-words-replace-39
+    accent-russian-words-40: accent-russian-words-replace-40
+    accent-russian-words-41: accent-russian-words-replace-41
+    accent-russian-words-42: accent-russian-words-replace-42
+    accent-russian-words-43: accent-russian-words-replace-43
+    accent-russian-words-44: accent-russian-words-replace-44
+    accent-russian-words-45: accent-russian-words-replace-45
+    accent-russian-words-46: accent-russian-words-replace-46
+    accent-russian-words-47: accent-russian-words-replace-47
+    accent-russian-words-48: accent-russian-words-replace-48
+    accent-russian-words-49: accent-russian-words-replace-49
+    accent-russian-words-50: accent-russian-words-replace-50
+    accent-russian-words-51: accent-russian-words-replace-51
+    accent-russian-words-52: accent-russian-words-replace-52
+    accent-russian-words-53: accent-russian-words-replace-53
+    accent-russian-words-54: accent-russian-words-replace-54
+    accent-russian-words-55: accent-russian-words-replace-55
+    accent-russian-words-56: accent-russian-words-replace-56
+    accent-russian-words-57: accent-russian-words-replace-57
+    accent-russian-words-58: accent-russian-words-replace-58
 
 - type: accent
   id: skeleton

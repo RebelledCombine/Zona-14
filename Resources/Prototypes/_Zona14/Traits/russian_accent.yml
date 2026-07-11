@@ -1,0 +1,11 @@
+# Zona14: character-creation trait granting the Russian accent (see
+# _Zona14/Accents/russian.yml). Always replaces (ReplacementChance defaults to 1).
+- type: trait
+  id: RussianAccent
+  name: trait-russian-accent-name
+  description: trait-russian-accent-desc
+  category: SpeechTraits
+  cost: 1
+  components:
+  - type: ReplacementAccent
+    accent: russian
