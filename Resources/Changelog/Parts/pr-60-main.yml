@@ -1,0 +1,8 @@
+author: RebelledCombine
+time: '2026-07-11T14:36:24Z'
+url: https://github.com/Zona-14/Zona-14/pull/60
+changes:
+- type: Add
+  message: Added a selectable "Ukrainian accent" speech trait that peppers your character's
+    speech with transliterated Ukrainian words and swears.
+category: Main
