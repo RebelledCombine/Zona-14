@@ -323,4 +323,26 @@
   id: 32
   time: '2026-07-02T20:05:40Z'
   url: https://github.com/Zona-14/Zona-14/pull/52
+- author: RebelledCombine
+  changes:
+  - message: Reduced the fire rate of the VSS Vintorez and VSK-94.
+    type: Tweak
+  - message: Slightly lowered the fire rate of the FN P90, Veresk, and PP-91.
+    type: Tweak
+  - message: HP ammunition is now more effective against high-tier mutants.
+    type: Tweak
+  - message: Rebalanced snork and bear mutant damage resistances.
+    type: Tweak
+  id: 33
+  time: '2026-07-11T08:42:07Z'
+  url: https://github.com/Zona-14/Zona-14/pull/54
+- author: RebelledCombine
+  changes:
+  - message: Removed the Blindness, Narcolepsy, Muted, Impaired Mobility, Pacifist,
+      Pirate accent, Frontal lisp, and Stutter character traits from the trait selection
+      menu.
+    type: Remove
+  id: 34
+  time: '2026-07-11T08:25:48Z'
+  url: https://github.com/Zona-14/Zona-14/pull/55
 Order: 0
