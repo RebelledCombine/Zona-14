@@ -1,0 +1,14 @@
+author: RebelledCombine
+time: '2026-07-11T12:48:37Z'
+url: https://github.com/Zona-14/Zona-14/pull/56
+changes:
+- type: Remove
+  message: Removed many non-Stalker hairstyles (anime/bright/joke styles and all slime-themed
+    hairs) from character creation.
+- type: Remove
+  message: Removed cat ears, fox ears, elf long-ears, and cosmetic cat tails from
+    character creation.
+- type: Tweak
+  message: "Hair, facial hair, and eye colors can no longer be set bright \u2014 brightness\
+    \ is now capped for a grimmer, setting-appropriate look."
+category: Main
