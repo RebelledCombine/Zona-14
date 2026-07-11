@@ -1,0 +1,9 @@
+author: RebelledCombine
+time: '2026-07-11T08:25:48Z'
+url: https://github.com/Zona-14/Zona-14/pull/55
+changes:
+- type: Remove
+  message: Removed the Blindness, Narcolepsy, Muted, Impaired Mobility, Pacifist,
+    Pirate accent, Frontal lisp, and Stutter character traits from the trait selection
+    menu.
+category: Main
