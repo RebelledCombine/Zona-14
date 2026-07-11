@@ -1,0 +1,137 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Generated placeholders for Zona-14 do-after animations, 2026. Replace with custom art.",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "armor_0"
+        },
+        {
+            "name": "armor_1"
+        },
+        {
+            "name": "armor_2"
+        },
+        {
+            "name": "armor_3"
+        },
+        {
+            "name": "armor_4"
+        },
+        {
+            "name": "armor_5"
+        },
+        {
+            "name": "armor_6"
+        },
+        {
+            "name": "clothing_0"
+        },
+        {
+            "name": "clothing_1"
+        },
+        {
+            "name": "clothing_2"
+        },
+        {
+            "name": "clothing_3"
+        },
+        {
+            "name": "clothing_4"
+        },
+        {
+            "name": "clothing_5"
+        },
+        {
+            "name": "clothing_6"
+        },
+        {
+            "name": "eat_0"
+        },
+        {
+            "name": "eat_1"
+        },
+        {
+            "name": "eat_2"
+        },
+        {
+            "name": "eat_3"
+        },
+        {
+            "name": "eat_4"
+        },
+        {
+            "name": "eat_5"
+        },
+        {
+            "name": "eat_6"
+        },
+        {
+            "name": "drink_0"
+        },
+        {
+            "name": "drink_1"
+        },
+        {
+            "name": "drink_2"
+        },
+        {
+            "name": "drink_3"
+        },
+        {
+            "name": "drink_4"
+        },
+        {
+            "name": "drink_5"
+        },
+        {
+            "name": "drink_6"
+        },
+        {
+            "name": "pill_0"
+        },
+        {
+            "name": "pill_1"
+        },
+        {
+            "name": "pill_2"
+        },
+        {
+            "name": "pill_3"
+        },
+        {
+            "name": "pill_4"
+        },
+        {
+            "name": "pill_5"
+        },
+        {
+            "name": "pill_6"
+        },
+        {
+            "name": "ammo_0"
+        },
+        {
+            "name": "ammo_1"
+        },
+        {
+            "name": "ammo_2"
+        },
+        {
+            "name": "ammo_3"
+        },
+        {
+            "name": "ammo_4"
+        },
+        {
+            "name": "ammo_5"
+        },
+        {
+            "name": "ammo_6"
+        }
+    ]
+}
