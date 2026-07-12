@@ -1741,6 +1741,23 @@ namespace Content.Server.Database.Migrations.Postgres
                     b.ToTable("stalker_news_reactions", (string)null);
                 });
 
+            modelBuilder.Entity("Content.Server.Database.StalkerPdaPassword", b =>
+                {
+                    b.Property<string>("CharacterName")
+                        .HasColumnType("text")
+                        .HasColumnName("character_name");
+
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("password");
+
+                    b.HasKey("CharacterName")
+                        .HasName("PK_stalker_pda_passwords");
+
+                    b.ToTable("stalker_pda_passwords", (string)null);
+                });
+
             modelBuilder.Entity("Content.Server.Database.StalkerPersistentCraftProfile", b =>
                 {
                     b.Property<Guid>("UserId")
@@ -1762,21 +1779,53 @@ namespace Content.Server.Database.Migrations.Postgres
                     b.ToTable("stalker_persistent_craft_profiles", (string)null);
                 });
 
-            modelBuilder.Entity("Content.Server.Database.StalkerPdaPassword", b =>
+            modelBuilder.Entity("Content.Server.Database.StalkerPersonalCache", b =>
                 {
-                    b.Property<string>("CharacterName")
-                        .HasColumnType("text")
-                        .HasColumnName("character_name");
+                    b.Property<Guid>("CacheId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid")
+                        .HasColumnName("cache_id");
 
-                    b.Property<string>("Password")
+                    b.Property<string>("ContentsJson")
                         .IsRequired()
                         .HasColumnType("text")
-                        .HasColumnName("password");
+                        .HasColumnName("contents_json");
 
-                    b.HasKey("CharacterName")
-                        .HasName("PK_stalker_pda_passwords");
+                    b.Property<float>("CurrentWeight")
+                        .HasColumnType("real")
+                        .HasColumnName("current_weight");
 
-                    b.ToTable("stalker_pda_passwords", (string)null);
+                    b.Property<bool>("Hidden")
+                        .HasColumnType("boolean")
+                        .HasColumnName("hidden");
+
+                    b.Property<string>("MapKey")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("map_key");
+
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uuid")
+                        .HasColumnName("user_id");
+
+                    b.Property<float>("X")
+                        .HasColumnType("real")
+                        .HasColumnName("x");
+
+                    b.Property<float>("Y")
+                        .HasColumnType("real")
+                        .HasColumnName("y");
+
+                    b.Property<float>("Z")
+                        .HasColumnType("real")
+                        .HasColumnName("z");
+
+                    b.HasKey("CacheId")
+                        .HasName("PK_stalker_personal_caches");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("stalker_personal_caches", (string)null);
                 });
 
             modelBuilder.Entity("Content.Server.Database.StalkerStats", b =>

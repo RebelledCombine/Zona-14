@@ -63,6 +63,7 @@ namespace Content.Server.Database
         public DbSet<StalkerCharacterRank> StalkerCharacterRanks { get; set; } = null!; // stalker-en-changes
         public DbSet<StalkerPersistentCraftProfile> StalkerPersistentCraftProfiles { get; set; } = null!; // stalker-en-changes
         public DbSet<StalkerNewsArticlePhoto> StalkerNewsArticlePhotos { get; set; } = null!; // stalker-en-changes
+        public DbSet<StalkerPersonalCache> StalkerPersonalCaches { get; set; } = null!; // Zona14
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Preference>()
@@ -423,6 +424,14 @@ namespace Content.Server.Database
             modelBuilder.Entity<StalkerPersistentCraftProfile>()
                 .HasKey(p => new { p.UserId, p.CharacterName });
             // stalker-en-changes-end
+
+            // Zona14: personal cache persistence
+            modelBuilder.Entity<StalkerPersonalCache>()
+                .HasKey(c => c.CacheId);
+
+            modelBuilder.Entity<StalkerPersonalCache>()
+                .HasIndex(c => c.UserId);
+            // End Zona14
 
             // Changes for modern HWID integration
             modelBuilder.Entity<Player>()
@@ -1803,6 +1812,43 @@ namespace Content.Server.Database
         public string ProfileJson { get; set; } = "{}";
     }
     // stalker-en-changes-end
+
+    // Zona14: personal cache persistence
+    /// <summary>
+    /// Persistent per-account hidden world cache.
+    /// Keyed by CacheId.
+    /// </summary>
+    public sealed class StalkerPersonalCache
+    {
+        [Key]
+        [Required]
+        public Guid CacheId { get; set; }
+
+        [Required]
+        public Guid UserId { get; set; }
+
+        [Required]
+        public string MapKey { get; set; } = default!;
+
+        [Required]
+        public float X { get; set; }
+
+        [Required]
+        public float Y { get; set; }
+
+        [Required]
+        public float Z { get; set; }
+
+        [Required]
+        public bool Hidden { get; set; }
+
+        [Required]
+        public float CurrentWeight { get; set; }
+
+        [Required]
+        public string ContentsJson { get; set; } = "{}";
+    }
+    // End Zona14
 
     #endregion
 }

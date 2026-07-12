@@ -2727,6 +2727,81 @@ INSERT INTO player_round (players_id, rounds_id) VALUES ({players[player]}, {id}
         }
         // stalker-en-changes-end
 
+        // Zona14: personal cache persistence
+        public async Task<StalkerPersonalCache?> GetStalkerPersonalCacheAsync(Guid cacheId)
+        {
+            await using var db = await GetDb();
+            return await db.DbContext.StalkerPersonalCaches
+                .FirstOrDefaultAsync(c => c.CacheId == cacheId);
+        }
+
+        public async Task<List<StalkerPersonalCache>> GetStalkerPersonalCachesByUserAsync(Guid userId)
+        {
+            await using var db = await GetDb();
+            return await db.DbContext.StalkerPersonalCaches
+                .Where(c => c.UserId == userId)
+                .ToListAsync();
+        }
+
+        public async Task<List<StalkerPersonalCache>> GetStalkerPersonalCachesByMapKeyAsync(string mapKey)
+        {
+            await using var db = await GetDb();
+            return await db.DbContext.StalkerPersonalCaches
+                .Where(c => c.MapKey == mapKey)
+                .ToListAsync();
+        }
+
+        public async Task<List<StalkerPersonalCache>> GetAllStalkerPersonalCachesAsync()
+        {
+            await using var db = await GetDb();
+            return await db.DbContext.StalkerPersonalCaches.ToListAsync();
+        }
+
+        public async Task SetStalkerPersonalCacheAsync(StalkerPersonalCache cache)
+        {
+            await using var db = await GetDb();
+            var existing = await db.DbContext.StalkerPersonalCaches
+                .FirstOrDefaultAsync(c => c.CacheId == cache.CacheId);
+
+            if (existing is null)
+            {
+                db.DbContext.StalkerPersonalCaches.Add(cache);
+            }
+            else
+            {
+                existing.UserId = cache.UserId;
+                existing.MapKey = cache.MapKey;
+                existing.X = cache.X;
+                existing.Y = cache.Y;
+                existing.Z = cache.Z;
+                existing.Hidden = cache.Hidden;
+                existing.CurrentWeight = cache.CurrentWeight;
+                existing.ContentsJson = cache.ContentsJson;
+            }
+
+            await db.DbContext.SaveChangesAsync();
+        }
+
+        public async Task DeleteStalkerPersonalCacheAsync(Guid cacheId)
+        {
+            await using var db = await GetDb();
+            var existing = await db.DbContext.StalkerPersonalCaches
+                .FirstOrDefaultAsync(c => c.CacheId == cacheId);
+            if (existing is null)
+                return;
+            db.DbContext.StalkerPersonalCaches.Remove(existing);
+            await db.DbContext.SaveChangesAsync();
+        }
+
+        public async Task DeleteStalkerPersonalCachesByUserAsync(Guid userId)
+        {
+            await using var db = await GetDb();
+            await db.DbContext.StalkerPersonalCaches
+                .Where(c => c.UserId == userId)
+                .ExecuteDeleteAsync();
+        }
+        // End Zona14
+
         #endregion
         #region Job Whitelists
 
