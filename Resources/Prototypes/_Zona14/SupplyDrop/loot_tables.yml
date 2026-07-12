@@ -1,0 +1,35 @@
+- type: entityTable
+  id: Z14SupplyDropLoot
+  table: !type:GroupSelector
+    rolls: !type:RangeNumberSelector
+      range: 3, 6
+    children:
+    - id: DrinkWaterBottleFull
+      weight: 2
+      amount: !type:RangeNumberSelector
+        range: 1, 3
+    - id: FoodSnackChocolate
+      weight: 1
+    - id: MedkitFilled
+      weight: 1
+    - id: MagazinePistol
+      weight: 1
+    - id: STWeaponRifleAKM
+      weight: 0.5
+
+- type: entityTable
+  id: Z14SupplyDropGuardians
+  table: !type:GroupSelector
+    rolls: !type:RangeNumberSelector
+      range: 3, 5
+    children:
+    - id: MobStalkerRogueBanditT0
+      weight: 1
+    - id: MobStalkerRogueFreedom
+      weight: 1
+    - id: MobStalkerRogueDolg
+      weight: 1
+    - id: MobStalkerRogueMerc1
+      weight: 0.8
+    - id: MobStalkerRogueVoen
+      weight: 0.8
