@@ -8,6 +8,7 @@ using Robust.Shared.Map;
 using Robust.Shared.Physics;
 using Robust.Client.GameObjects;
 using Robust.Shared.Timing;
+using Content.Shared._Zona14.Administration.Logs; // Zona14
 
 namespace Content.Client._Stalker.Bands;
 /// <summary>
@@ -71,12 +72,14 @@ public sealed class BandsSystem : SharedBandsSystem
                 {
                     case RecognitionState.Unknown:
                         // Stay unknown
+                        data.Logged = false; // Zona14
                         break;
 
                     case RecognitionState.Recognizing:
                         // Reset to unknown
                         data.State = RecognitionState.Unknown;
                         data.RecognitionStartTime = null;
+                        data.Logged = false; // Zona14
                         break;
 
                     case RecognitionState.Known:
@@ -90,11 +93,13 @@ public sealed class BandsSystem : SharedBandsSystem
                             // Timer expired
                             data.State = RecognitionState.Expired;
                             data.RecognizedTime = null;
+                            data.Logged = false; // Zona14
                         }
                         break;
 
                     case RecognitionState.Expired:
                         // Stay expired
+                        data.Logged = false; // Zona14
                         break;
                 }
             }
@@ -107,6 +112,7 @@ public sealed class BandsSystem : SharedBandsSystem
                         // Start recognition
                         data.State = RecognitionState.Recognizing;
                         data.RecognitionStartTime = currentTime;
+                        data.Logged = false; // Zona14
                         break;
 
                     case RecognitionState.Recognizing:
@@ -116,6 +122,13 @@ public sealed class BandsSystem : SharedBandsSystem
                         {
                             data.State = RecognitionState.Known;
                             data.RecognizedTime = null; // No timer while in range
+
+                            // Zona14: notify server to log the identification
+                            if (!data.Logged)
+                            {
+                                RaiseNetworkEvent(new STBandPatchIdentifiedEvent(GetNetEntity(player.Value), GetNetEntity(uid)));
+                                data.Logged = true;
+                            }
                         }
                         break;
 
@@ -128,6 +141,7 @@ public sealed class BandsSystem : SharedBandsSystem
                         // Start recognition again
                         data.State = RecognitionState.Recognizing;
                         data.RecognitionStartTime = currentTime;
+                        data.Logged = false; // Zona14
                         break;
                 }
             }
@@ -213,6 +227,7 @@ public sealed class BandsSystem : SharedBandsSystem
         public RecognitionState State = RecognitionState.Unknown;
         public TimeSpan? RecognitionStartTime;
         public TimeSpan? RecognizedTime;
+        public bool Logged; // Zona14: prevent duplicate network events
     }
 
     /// <summary>

@@ -105,6 +105,13 @@ namespace Content.Server.Database
             ImmutableArray<ImmutableArray<byte>>? modernHWIds,
             bool includeUnbanned=true);
 
+        /// <summary>
+        ///     Looks up every ban in the database.
+        /// </summary>
+        /// <param name="includeUnbanned">If true, bans that have been expired or pardoned are also included.</param>
+        /// <returns>All bans in the database.</returns>
+        Task<List<ServerBanDef>> GetAllServerBansAsync(bool includeUnbanned = true); // Zona14
+
         Task AddServerBanAsync(ServerBanDef serverBan);
         Task AddServerUnbanAsync(ServerUnbanDef serverBan);
 
@@ -161,6 +168,13 @@ namespace Content.Server.Database
             ImmutableArray<ImmutableArray<byte>>? modernHWIds,
             bool includeUnbanned = true);
 
+        /// <summary>
+        ///     Looks up every role ban in the database.
+        /// </summary>
+        /// <param name="includeUnbanned">If true, bans that have been expired or pardoned are also included.</param>
+        /// <returns>All role bans in the database.</returns>
+        Task<List<ServerRoleBanDef>> GetAllServerRoleBansAsync(bool includeUnbanned = true); // Zona14
+
         Task<ServerRoleBanDef> AddServerRoleBanAsync(ServerRoleBanDef serverBan);
         Task AddServerRoleUnbanAsync(ServerRoleUnbanDef serverBan);
 
@@ -199,6 +213,16 @@ namespace Content.Server.Database
             ImmutableTypedHwid? hwId);
         Task<PlayerRecord?> GetPlayerRecordByUserName(string userName, CancellationToken cancel = default);
         Task<PlayerRecord?> GetPlayerRecordByUserId(NetUserId userId, CancellationToken cancel = default);
+
+        /// <summary>
+        ///     Returns all players whose last seen username contains the supplied query.
+        /// </summary>
+        Task<List<PlayerRecord>> SearchPlayersByName(string query, CancellationToken cancel = default); // Zona14
+
+        /// <summary>
+        ///     Returns the user IDs of every whitelisted player.
+        /// </summary>
+        Task<List<NetUserId>> GetAllWhitelistedAsync(CancellationToken cancel = default); // Zona14
         #endregion
 
         #region Connection Logs
@@ -658,6 +682,12 @@ namespace Content.Server.Database
             return RunDbCommand(() => _db.GetServerBansAsync(address, userId, hwId, modernHWIds, includeUnbanned));
         }
 
+        public Task<List<ServerBanDef>> GetAllServerBansAsync(bool includeUnbanned = true)
+        {
+            DbReadOpsMetric.Inc();
+            return RunDbCommand(() => _db.GetAllServerBansAsync(includeUnbanned));
+        }
+
         public Task AddServerBanAsync(ServerBanDef serverBan)
         {
             DbWriteOpsMetric.Inc();
@@ -704,6 +734,12 @@ namespace Content.Server.Database
         {
             DbReadOpsMetric.Inc();
             return RunDbCommand(() => _db.GetServerRoleBansAsync(address, userId, hwId, modernHWIds, includeUnbanned));
+        }
+
+        public Task<List<ServerRoleBanDef>> GetAllServerRoleBansAsync(bool includeUnbanned = true)
+        {
+            DbReadOpsMetric.Inc();
+            return RunDbCommand(() => _db.GetAllServerRoleBansAsync(includeUnbanned));
         }
 
         public Task<ServerRoleBanDef> AddServerRoleBanAsync(ServerRoleBanDef serverRoleBan)
@@ -761,6 +797,18 @@ namespace Content.Server.Database
         {
             DbReadOpsMetric.Inc();
             return RunDbCommand(() => _db.GetPlayerRecordByUserId(userId, cancel));
+        }
+
+        public Task<List<PlayerRecord>> SearchPlayersByName(string query, CancellationToken cancel = default)
+        {
+            DbReadOpsMetric.Inc();
+            return RunDbCommand(() => _db.SearchPlayersByName(query, cancel));
+        }
+
+        public Task<List<NetUserId>> GetAllWhitelistedAsync(CancellationToken cancel = default)
+        {
+            DbReadOpsMetric.Inc();
+            return RunDbCommand(() => _db.GetAllWhitelistedAsync(cancel));
         }
 
         public Task<int> AddConnectionLogAsync(

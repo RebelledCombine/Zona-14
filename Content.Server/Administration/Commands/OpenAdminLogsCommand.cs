@@ -23,5 +23,6 @@ public sealed class OpenAdminLogsCommand : LocalizedEntityCommands
 
         var ui = new AdminLogsEui();
         _euiManager.OpenEui(ui, player);
+        // Zona14: the client triggers RequestLogs after receiving the initial state in AdminLogsEui.HandleState.
     }
 }

@@ -1,8 +1,11 @@
 ﻿using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
+using Content.Server.Administration.Logs;
 using Content.Server.Database;
+using Content.Shared._Zona14.Administration.Logs;
 using Content.Shared.CCVar;
+using Content.Shared.Database;
 using Content.Shared.Players.JobWhitelist;
 using Content.Shared.Roles;
 using Robust.Server.Player;
@@ -22,6 +25,7 @@ public sealed partial class JobWhitelistManager : IPostInjectInit // Stalker-Cha
     [Dependency] private readonly IPlayerManager _player = default!;
     [Dependency] private readonly IPrototypeManager _prototypes = default!;
     [Dependency] private readonly UserDbDataManager _userDb = default!;
+    [Dependency] private readonly IAdminLogManager _adminLog = default!;
 
     private readonly Dictionary<NetUserId, HashSet<string>> _whitelists = new();
 
@@ -53,6 +57,11 @@ public sealed partial class JobWhitelistManager : IPostInjectInit // Stalker-Cha
             whitelists.Add(job);
 
         await _db.AddJobWhitelist(player, job);
+
+        // Zona14: log job whitelist grant
+        var name = await GetPlayerName(player);
+        _adminLog.Add(LogType.AdminMessage, LogImpact.Medium,
+            $"job whitelist granted: {new AdminLogPlayerValue(player, name):subject} -> {job}");
 
         if (_player.TryGetSessionById(player, out var session))
             SendJobWhitelist(session);
@@ -94,8 +103,21 @@ public sealed partial class JobWhitelistManager : IPostInjectInit // Stalker-Cha
         _whitelists.GetValueOrDefault(player)?.Remove(job);
         await _db.RemoveJobWhitelist(player, job);
 
+        // Zona14: log job whitelist removal
+        var name = await GetPlayerName(player);
+        _adminLog.Add(LogType.AdminMessage, LogImpact.Medium,
+            $"job whitelist removed: {new AdminLogPlayerValue(player, name):subject} -> {job}");
+
         if (_player.TryGetSessionById(new NetUserId(player), out var session))
             SendJobWhitelist(session);
+    }
+
+    private async Task<string> GetPlayerName(NetUserId userId)
+    {
+        if (_player.TryGetSessionById(userId, out var session))
+            return session.Name;
+
+        return (await _db.GetPlayerRecordByUserId(userId))?.LastSeenUserName ?? userId.ToString();
     }
 
     public void SendJobWhitelist(ICommonSession player)

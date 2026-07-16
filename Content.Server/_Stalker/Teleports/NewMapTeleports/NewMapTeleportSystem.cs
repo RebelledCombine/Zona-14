@@ -8,6 +8,7 @@ using Content.Server.GameTicking.Events;
 using Content.Server.Mind;
 using Content.Server.Players.PlayTimeTracking;
 using Content.Shared._Stalker.Teleport;
+using Content.Shared._Zona14.CCVar; // Zona14: newmap_teleport_preload CVar
 using Content.Shared.Access.Systems;
 using Content.Shared.CombatMode.Pacification;
 using Content.Shared.Damage.Components;
@@ -18,6 +19,7 @@ using Content.Shared.Popups;
 using Content.Shared.Teleportation.Components;
 using Content.Shared.Teleportation.Systems;
 using Robust.Server.GameObjects;
+using Robust.Shared.Configuration; // Zona14: IConfigurationManager for newmap_teleport_preload CVar
 using Robust.Shared.EntitySerialization;
 using Robust.Shared.EntitySerialization.Systems;
 using Robust.Shared.Map;
@@ -43,6 +45,7 @@ public sealed class NewMapTeleportSystem : SharedTeleportSystem
     [Dependency] private readonly SharedGodmodeSystem _godmode = default!;
     [Dependency] private readonly IEntityManager _entMan = default!;
     [Dependency] private readonly ILogManager _logManager = default!;
+    [Dependency] private readonly IConfigurationManager _cfg = default!; // Zona14: newmap_teleport_preload CVar
     [Dependency] private readonly PlayTimeTrackingManager _playTimeTrackingManager = default!;
     [Dependency] private readonly MindSystem _mindSystem = default!;
     [Dependency] private readonly SharedPopupSystem _popup = default!;
@@ -61,16 +64,18 @@ public sealed class NewMapTeleportSystem : SharedTeleportSystem
     }
     private void OnPostGameMapLoad(PostGameMapLoad args)
     {
-#if !DEBUG
-        var prototypes = _protoMan.EnumeratePrototypes<MapLoaderPrototype>();
-        foreach (var prototype in prototypes)
+        // Zona14: preloading all new-map teleport targets is controlled by the zona14.newmap_teleport_preload CVar.
+        if (_cfg.GetCVar(Zona14CVars.NewMapTeleportPreload))
         {
-            foreach (var path in prototype.MapPaths.Values)
+            var prototypes = _protoMan.EnumeratePrototypes<MapLoaderPrototype>();
+            foreach (var prototype in prototypes)
             {
-                LoadMap(path);
+                foreach (var path in prototype.MapPaths.Values)
+                {
+                    LoadMap(path);
+                }
             }
         }
-#endif
 
         UpdateLinks();
         var ev = new MapsLoadedEvent();
@@ -121,7 +126,19 @@ public sealed class NewMapTeleportSystem : SharedTeleportSystem
 
     private void LoadMap(string path)
     {
-        _mapLoader.TryLoadMap(new ResPath(path), out _, out _, DeserializationOptions.Default with { InitializeMaps = true });
+        // Zona14: log map load failures so broken MapLoader targets don't crash the server.
+        try
+        {
+            if (!_mapLoader.TryLoadMap(new ResPath(path), out _, out _, DeserializationOptions.Default with { InitializeMaps = true }))
+            {
+                _sawmill.Error($"Failed to preload new-map teleport target: {path}");
+            }
+        }
+        catch (Exception e)
+        {
+            _sawmill.Error($"Failed to preload new-map teleport target: {path}");
+            _sawmill.Error(e.ToString());
+        }
     }
     private void OnStartCollide(EntityUid uid, NewMapTeleportComponent component, ref StartCollideEvent args)
     {

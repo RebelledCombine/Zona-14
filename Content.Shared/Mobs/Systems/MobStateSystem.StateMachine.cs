@@ -1,6 +1,7 @@
-﻿using Content.Shared.Database;
+using Content.Shared.Database;
 using Content.Shared.Humanoid;
 using Content.Shared.Mobs.Components;
+using Content.Shared._Zona14.Administration.Logs; // Zona14
 using Robust.Shared.Player;
 
 namespace Content.Shared.Mobs.Systems;
@@ -116,6 +117,19 @@ public partial class MobStateSystem
             _adminLogger.Add(LogType.Damaged, LogImpact.High, $"{ToPrettyString(origin):player} caused {ToPrettyString(target):player} state to change from {oldState} to {newState}");
         else
             _adminLogger.Add(LogType.Damaged, oldState == MobState.Alive ? LogImpact.Low : LogImpact.Medium, $"{ToPrettyString(target):user} state changed from {oldState} to {newState}");
+
+        // Zona14: log player kills as their own log type for anti-cheat/alerting.
+        if (newState == MobState.Dead &&
+            origin != null &&
+            TryComp<ActorComponent>(origin.Value, out var originActor) &&
+            TryComp<ActorComponent>(target, out var targetActor))
+        {
+            var actor = new AdminLogPlayerValue(originActor.PlayerSession.UserId, originActor.PlayerSession.Name);
+            var victim = new AdminLogPlayerValue(targetActor.PlayerSession.UserId, targetActor.PlayerSession.Name);
+            _adminLogger.Add(LogType.Kill, LogImpact.High, $"{actor} killed {victim}");
+        }
+        // End Zona14
+
         Dirty(target, component);
     }
 

@@ -1,6 +1,9 @@
 using System.Linq;
 using Content.Server.Administration;
+using Content.Server.Administration.Logs;
 using Content.Server.Mind;
+using Content.Shared._Zona14.Administration.Logs;
+using Content.Shared.Database;
 using Content.Shared.Players;
 using Robust.Server.Player;
 using Robust.Shared.Console;
@@ -14,6 +17,7 @@ namespace Content.Server.GameTicking.Commands
         [Dependency] private readonly IPlayerLocator _locator = default!;
         [Dependency] private readonly GameTicker _gameTicker = default!;
         [Dependency] private readonly MindSystem _mind = default!;
+        [Dependency] private readonly IAdminLogManager _adminLog = default!;
 
         public override string Command => "respawn";
 
@@ -60,10 +64,29 @@ namespace Content.Server.GameTicking.Commands
 
                 _mind.WipeMind(data.ContentData()?.Mind);
                 shell.WriteError(Loc.GetString("cmd-respawn-player-not-online"));
+
+                // Zona14: log offline respawn / mind wipe
+                var offlineAdminName = player?.Name ?? Loc.GetString("system-user");
+                _adminLog.Add(LogType.Mind, LogImpact.Extreme,
+                    $"{offlineAdminName} wiped mind of {new AdminLogPlayerValue(userId, userId.ToString()):player} (offline respawn)");
                 return;
             }
 
             _gameTicker.Respawn(targetPlayer);
+
+            // Zona14: log respawn
+            var respawnAdminName = player?.Name ?? Loc.GetString("system-user");
+            var respawnImpact = args.Length == 0 ? LogImpact.Low : LogImpact.Extreme;
+            if (player is { } respawnAdmin)
+            {
+                _adminLog.Add(LogType.Respawn, respawnImpact,
+                    $"{respawnAdmin:player} respawned {targetPlayer:player}");
+            }
+            else
+            {
+                _adminLog.Add(LogType.Respawn, respawnImpact,
+                    $"{respawnAdminName} respawned {targetPlayer:player}");
+            }
         }
 
       public override CompletionResult GetCompletion(IConsoleShell shell, string[] args)

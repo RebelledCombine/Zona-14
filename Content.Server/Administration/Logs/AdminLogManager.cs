@@ -1,10 +1,12 @@
-﻿using System.Collections.Concurrent;
+using System; // Zona14
+using System.Collections.Concurrent;
 using System.Text.Json;
 using System.Threading;
 using System.Threading.Tasks;
 using Content.Server.Administration.Systems;
 using Content.Server.Database;
 using Content.Server.GameTicking;
+using Content.Server._Zona14.Administration.Logs; // Zona14
 using Content.Shared.Administration.Logs;
 using Content.Shared.CCVar;
 using Content.Shared.Chat;
@@ -94,6 +96,9 @@ public sealed partial class AdminLogManager : SharedAdminLogManager, IAdminLogMa
     // 1 when saving, 0 otherwise
     private int _savingLogs;
     private int _logsDropped;
+
+    // Zona14: raised after each admin log is added so anti-cheat/alerting systems can react without polling.
+    public event EventHandler<AdminLogAddedEventArgs>? OnAdminLogAdded;
 
     public void Initialize()
     {
@@ -308,7 +313,9 @@ public sealed partial class AdminLogManager : SharedAdminLogManager, IAdminLogMa
     {
         var message = handler.ToStringAndClear();
         if (!Enabled)
+        {
             return;
+        }
 
         var preRound = _runLevel == GameRunLevel.PreRoundLobby;
         var count = preRound ? _preRoundLogQueue.Count : _logQueue.Count;
@@ -352,6 +359,9 @@ public sealed partial class AdminLogManager : SharedAdminLogManager, IAdminLogMa
             _logQueue.Enqueue(log);
             CacheLog(log);
         }
+
+        // Zona14: let anti-cheat/alerting systems react to the new log.
+        OnAdminLogAdded?.Invoke(this, new AdminLogAddedEventArgs(log, handler.Values));
     }
 
     private List<AdminLogPlayer> GetPlayers(Dictionary<string, object?> values, int logId)
@@ -549,6 +559,16 @@ public sealed partial class AdminLogManager : SharedAdminLogManager, IAdminLogMa
     {
         if (TrySearchCache(filter, out var results))
         {
+            // Zona14: copy cache results into the pooled list so SendLogs returns a pool list instead
+            // of the internal cache list, which would be cleared by the pool policy.
+            if (listProvider != null)
+            {
+                var pooledList = listProvider();
+                pooledList.EnsureCapacity(results.Count);
+                pooledList.AddRange(results);
+                return pooledList;
+            }
+
             return results;
         }
 

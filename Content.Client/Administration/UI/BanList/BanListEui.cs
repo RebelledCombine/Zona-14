@@ -3,6 +3,7 @@ using Content.Client.Administration.UI.BanList.Bans;
 using Content.Client.Administration.UI.BanList.RoleBans;
 using Content.Client.Eui;
 using Content.Shared.Administration.BanList;
+using Content.Shared._Zona14.Administration.BanList; // Zona14: PardonBanMessage
 using Content.Shared.Eui;
 using JetBrains.Annotations;
 using Robust.Client.UserInterface;
@@ -23,9 +24,11 @@ public sealed class BanListEui : BaseEui
 
         BanControl = BanWindow.BanList;
         BanControl.LineIdsClicked += OnLineIdsClicked;
+        BanControl.PardonBanClicked += OnPardonBan; // Zona14
 
         RoleBanControl = BanWindow.RoleBanList;
         RoleBanControl.LineIdsClicked += OnLineIdsClicked;
+        RoleBanControl.PardonRoleBanClicked += OnPardonRoleBan; // Zona14
     }
 
     private BanListWindow BanWindow { get; }
@@ -114,4 +117,22 @@ public sealed class BanListEui : BaseEui
         var box = UIBox2.FromDimensions(_ui.MousePositionScaled.Position, new Vector2(1, 1));
         _popup.Open(box);
     }
+
+    // Zona14: send pardon request to the server
+    private void OnPardonBan(BanListLine line)
+    {
+        if (line.Ban.Id is not { } id)
+            return;
+
+        SendMessage(new PardonBanMessage(id, false));
+    }
+
+    private void OnPardonRoleBan(RoleBanListLine line)
+    {
+        if (line.Ban.Id is not { } id)
+            return;
+
+        SendMessage(new PardonBanMessage(id, true));
+    }
+    // End Zona14
 }

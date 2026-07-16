@@ -1,3 +1,4 @@
+using Content.Server.Administration.Logs; // Zona14
 using Content.Server.Afk.Events;
 using Content.Server.Database;
 using Content.Server.GameTicking;
@@ -13,6 +14,7 @@ using Robust.Shared.Console;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
+using Content.Shared.Database; // Zona14
 
 namespace Content.Server._Stalker_EN.CharacterRank;
 
@@ -28,6 +30,7 @@ public sealed class STCharacterRankSystem : EntitySystem
     [Dependency] private readonly PlayTimeTrackingManager _playtime = default!;
     [Dependency] private readonly MobStateSystem _mobState = default!;
     [Dependency] private readonly SharedActionsSystem _actions = default!;
+    [Dependency] private readonly IAdminLogManager _adminLog = default!; // Zona14
 
     private static readonly ProtoId<STCharacterRankPrototype> DefaultConfig = "Default";
 
@@ -423,7 +426,7 @@ public sealed class STCharacterRankSystem : EntitySystem
     /// <summary>
     /// Sets accumulated time for an entity and recalculates rank. Used by admin commands.
     /// </summary>
-    public void SetAccumulatedTime(EntityUid uid, TimeSpan time)
+    public void SetAccumulatedTime(EntityUid uid, TimeSpan time, ICommonSession? actor = null)
     {
         if (!_tracked.TryGetValue(uid, out var data))
             return;
@@ -434,6 +437,19 @@ public sealed class STCharacterRankSystem : EntitySystem
         data.AccumulatedTime = time;
         UpdateRank(uid, comp, data);
         SaveSingleToDb(data);
+
+        // Zona14: log character rank set
+        var rank = CalculateRank(data.AccumulatedTime);
+        if (actor is { } actorSession)
+        {
+            _adminLog.Add(LogType.STCharacterRank, LogImpact.Extreme,
+                $"{actorSession:player} set rank of {ToPrettyString(uid):subject} to {rank.Name} ({time.TotalHours:F1}h)");
+        }
+        else
+        {
+            _adminLog.Add(LogType.STCharacterRank, LogImpact.Extreme,
+                $"System set rank of {ToPrettyString(uid):subject} to {rank.Name} ({time.TotalHours:F1}h)");
+        }
     }
 
     /// <summary>
@@ -479,7 +495,7 @@ public sealed class STCharacterRankSystem : EntitySystem
     /// Transfers accumulated time from an old character name to the currently tracked entity.
     /// Writes success/failure output to the provided shell.
     /// </summary>
-    public async void TransferRankAsync(EntityUid uid, string oldCharacterName, string username, IConsoleShell shell)
+    public async void TransferRankAsync(EntityUid uid, string oldCharacterName, string username, IConsoleShell shell, ICommonSession? actor = null)
     {
         try
         {
@@ -508,6 +524,19 @@ public sealed class STCharacterRankSystem : EntitySystem
             data.AccumulatedTime = record.TimeSpent;
             UpdateRank(uid, comp, data);
             SaveSingleToDb(data);
+
+            // Zona14: log character rank transfer
+            var rank = CalculateRank(data.AccumulatedTime);
+            if (actor is { } actorSession)
+            {
+                _adminLog.Add(LogType.STCharacterRank, LogImpact.Extreme,
+                    $"{actorSession:player} transferred rank from {oldCharacterName} to {newName} ({rank.Name}, {record.TimeSpent.TotalHours:F1}h)");
+            }
+            else
+            {
+                _adminLog.Add(LogType.STCharacterRank, LogImpact.Extreme,
+                    $"System transferred rank from {oldCharacterName} to {newName} ({rank.Name}, {record.TimeSpent.TotalHours:F1}h)");
+            }
 
             shell.WriteLine(Loc.GetString("cmd-strank-transfer-success",
                 ("time", $"{record.TimeSpent.TotalHours:F1}h"),

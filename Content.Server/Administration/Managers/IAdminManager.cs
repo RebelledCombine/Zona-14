@@ -69,5 +69,12 @@ namespace Content.Server.Administration.Managers
         void PromoteHost(ICommonSession player);
 
         bool TryGetCommandFlags(CommandSpec command, out AdminFlags[]? flags);
+
+        // Zona14: string-based command flag lookup
+        /// <summary>
+        ///     Looks up the required admin flags for a console command by its name.
+        ///     Returns <c>null</c> flags for <see cref="AnyCommandAttribute"/> commands.
+        /// </summary>
+        bool TryGetCommandFlags(string commandName, out AdminFlags[]? flags);
     }
 }

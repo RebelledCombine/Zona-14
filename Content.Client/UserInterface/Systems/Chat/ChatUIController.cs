@@ -86,6 +86,7 @@ public sealed partial class ChatUIController : UIController
         {SharedChatSystem.EmotesPrefix, ChatSelectChannel.Emotes},
         {SharedChatSystem.EmotesAltPrefix, ChatSelectChannel.Emotes},
         {SharedChatSystem.AdminPrefix, ChatSelectChannel.Admin},
+        {SharedChatSystem.MentorPrefix, ChatSelectChannel.MentorChat}, // Zona14: mentor chat prefix
         {SharedChatSystem.RadioCommonPrefix, ChatSelectChannel.Radio},
         {SharedChatSystem.DeadPrefix, ChatSelectChannel.Dead},
         {SharedChatSystem.NarrationPrefix, ChatSelectChannel.Narration}
@@ -100,6 +101,7 @@ public sealed partial class ChatUIController : UIController
         {ChatSelectChannel.OOC, SharedChatSystem.OOCPrefix},
         {ChatSelectChannel.Emotes, SharedChatSystem.EmotesPrefix},
         {ChatSelectChannel.Admin, SharedChatSystem.AdminPrefix},
+        {ChatSelectChannel.MentorChat, SharedChatSystem.MentorPrefix}, // Zona14: mentor chat prefix
         {ChatSelectChannel.Radio, SharedChatSystem.RadioCommonPrefix},
         {ChatSelectChannel.Dead, SharedChatSystem.DeadPrefix},
         {ChatSelectChannel.Narration, SharedChatSystem.NarrationPrefix}
@@ -216,6 +218,9 @@ public sealed partial class ChatUIController : UIController
 
         _input.SetInputCommand(ContentKeyFunctions.FocusAdminChat,
             InputCmdHandler.FromDelegate(_ => FocusChannel(ChatSelectChannel.Admin)));
+
+        _input.SetInputCommand(ContentKeyFunctions.FocusMentorChat, // Zona14: focus mentor chat
+            InputCmdHandler.FromDelegate(_ => FocusChannel(ChatSelectChannel.MentorChat)));
 
         _input.SetInputCommand(ContentKeyFunctions.FocusRadio,
             InputCmdHandler.FromDelegate(_ => FocusChannel(ChatSelectChannel.Radio)));
@@ -567,6 +572,13 @@ public sealed partial class ChatUIController : UIController
             FilterableChannels |= ChatChannel.AdminAlert;
             FilterableChannels |= ChatChannel.AdminChat;
             CanSendChannels |= ChatSelectChannel.Admin;
+        }
+
+        // Zona14: mentors and admins can see / filter msay
+        if (_admin.HasFlag(AdminFlags.Admin) || _admin.HasFlag(AdminFlags.Mentor))
+        {
+            FilterableChannels |= ChatChannel.MentorChat;
+            CanSendChannels |= ChatSelectChannel.MentorChat;
         }
 
         // only admins with Fun flag can send narration

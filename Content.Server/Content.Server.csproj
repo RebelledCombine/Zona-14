@@ -13,6 +13,7 @@
     <Nullable>enable</Nullable>
     <ServerGarbageCollection>true</ServerGarbageCollection>
   </PropertyGroup>
+  <!-- Zona14: ZONA14_PRELOAD_MAPS compile constant removed; preloading is now controlled by the zona14.newmap_teleport_preload CVar. -->
   <ItemGroup>
     <PackageReference Include="JetBrains.Annotations" PrivateAssets="All" />
     <PackageReference Include="NetCord" />

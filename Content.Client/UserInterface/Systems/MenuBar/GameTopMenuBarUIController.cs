@@ -1,6 +1,7 @@
 using Content.Client.UserInterface.Systems.Actions;
 using Content.Client.UserInterface.Systems.Admin;
 using Content.Client.UserInterface.Systems.Bwoink;
+using Content.Client._Zona14.UserInterface.Systems.MentorHelp;
 using Content.Client.UserInterface.Systems.Character;
 using Content.Client.UserInterface.Systems.Crafting;
 using Content.Client.UserInterface.Systems.Emotes;
@@ -20,6 +21,7 @@ public sealed class GameTopMenuBarUIController : UIController
     [Dependency] private readonly CharacterUIController _character = default!;
     [Dependency] private readonly CraftingUIController _crafting = default!;
     [Dependency] private readonly AHelpUIController _ahelp = default!;
+    [Dependency] private readonly MentorHelpUIController _mhelp = default!; // Zona14: mentor help
     [Dependency] private readonly ActionUIController _action = default!;
     [Dependency] private readonly SandboxUIController _sandbox = default!;
     [Dependency] private readonly GuidebookUIController _guidebook = default!;
@@ -44,6 +46,7 @@ public sealed class GameTopMenuBarUIController : UIController
         _character.UnloadButton();
         _crafting.UnloadButton();
         _ahelp.UnloadButton();
+        _mhelp.UnloadButton(); // Zona14
         _action.UnloadButton();
         _sandbox.UnloadButton();
         _emotes.UnloadButton();
@@ -57,6 +60,7 @@ public sealed class GameTopMenuBarUIController : UIController
         _character.LoadButton();
         _crafting.LoadButton();
         _ahelp.LoadButton();
+        _mhelp.LoadButton(); // Zona14
         _action.LoadButton();
         _sandbox.LoadButton();
         _emotes.LoadButton();

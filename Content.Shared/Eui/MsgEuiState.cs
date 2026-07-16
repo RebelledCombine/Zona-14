@@ -30,6 +30,7 @@ namespace Content.Shared.Eui
 
             ser.Serialize(stream, State);
             var length = (int)stream.Length;
+
             buffer.WriteVariableInt32(length);
             buffer.Write(stream.GetBuffer().AsSpan(0, length));
         }

@@ -1,7 +1,10 @@
-﻿using System.Text.Json;
+using System; // Zona14
+using System.Collections.Generic;
+using System.Text.Json;
 using System.Threading.Tasks;
 using Content.Server.Database;
 using Content.Server.GameTicking;
+using Content.Server._Zona14.Administration.Logs; // Zona14
 using Content.Shared.Administration.Logs;
 
 namespace Content.Server.Administration.Logs;
@@ -24,4 +27,10 @@ public interface IAdminLogManager : ISharedAdminLogManager
     IAsyncEnumerable<JsonDocument> CurrentRoundJson(LogFilter? filter = null);
     Task<Round> CurrentRound();
     Task<int> CountLogs(int round);
+
+    // Zona14: expose player ids from cached admin logs so the log viewer can select them even when the round player list is not yet updated.
+    IEnumerable<Guid> GetCachedRoundPlayers(int roundId);
+
+    // Zona14: raised after each admin log is added so anti-cheat/alerting systems can react without polling.
+    event EventHandler<AdminLogAddedEventArgs> OnAdminLogAdded;
 }

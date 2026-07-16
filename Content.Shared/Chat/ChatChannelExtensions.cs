@@ -14,6 +14,7 @@ public static class ChatChannelExtensions
             ChatChannel.Admin => Color.Red,
             ChatChannel.AdminAlert => Color.Red,
             ChatChannel.AdminChat => Color.HotPink,
+            ChatChannel.MentorChat => Color.Purple, // Zona14: mentor chat color
             ChatChannel.Whisper => Color.DarkGray,
             _ => Color.LightGray
         };

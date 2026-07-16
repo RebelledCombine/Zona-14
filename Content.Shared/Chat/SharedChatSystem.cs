@@ -33,6 +33,7 @@ public abstract partial class SharedChatSystem : EntitySystem
     public const char AdminPrefix = ']';
     public const char WhisperPrefix = ',';
     public const char NarrationPrefix = '!';
+    public const char MentorPrefix = '}'; // Zona14: mentor chat prefix
     public const char DefaultChannelKey = 'h';
 
     public const int VoiceRange = 10; // how far voice goes in world units

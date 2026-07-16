@@ -5,9 +5,11 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using Content.Server._Stalker.Discord;
+using Content.Server.Administration.Logs;
 using Content.Server.Chat.Managers;
 using Content.Server.Database;
 using Content.Server.GameTicking;
+using Content.Shared._Zona14.Administration.Logs;
 using Content.Shared.CCVar;
 using Content.Shared.Database;
 using Content.Shared.Players;
@@ -40,6 +42,7 @@ public sealed partial class BanManager : IBanManager, IPostInjectInit
     [Dependency] private readonly IEntitySystemManager _systems = default!;
     [Dependency] private readonly ITaskManager _taskManager = default!;
     [Dependency] private readonly UserDbDataManager _userDbData = default!;
+    [Dependency] private readonly IAdminLogManager _adminLog = default!;
     [Dependency] private readonly BanWebhook _webhook = default!; // stalker-changes
 
     private ISawmill _sawmill = default!;
@@ -181,6 +184,18 @@ public sealed partial class BanManager : IBanManager, IPostInjectInit
         var lastBan = await _db.GetLastServerBanAsync();
         _webhook.GenerateWebhook(adminName, targetName, lastBan?.Id.ToString(), severityLoc, minutes, reason); // stalker-changes-end
 
+        // Zona14: log server ban creation
+        if (target is { } targetUid)
+        {
+            _adminLog.Add(LogType.AdminCommands, LogImpact.Extreme,
+                $"{adminName} created server ban for {new AdminLogPlayerValue(targetUid, targetUsername ?? targetUid.ToString()):player} ({addressRangeString}, {hwidString}) - {reason} ({expiresString})");
+        }
+        else
+        {
+            _adminLog.Add(LogType.AdminCommands, LogImpact.Extreme,
+                $"{adminName} created server ban for {targetName} ({addressRangeString}, {hwidString}) - {reason} ({expiresString})");
+        }
+
         KickMatchingConnectedPlayers(banDef, "newly placed ban");
     }
 
@@ -218,6 +233,51 @@ public sealed partial class BanManager : IBanManager, IPostInjectInit
         var message = def.FormatBanMessage(_cfg, _localizationManager);
         player.Channel.Disconnect(message);
     }
+
+    // Zona14: pardon a server ban by id
+    public async Task<string> PardonBan(int banId, NetUserId? unbanningAdmin, DateTimeOffset unbanTime)
+    {
+        var ban = await _db.GetServerBanAsync(banId);
+
+        if (ban == null)
+        {
+            return $"No ban found with id {banId}";
+        }
+
+        if (ban.Unban != null)
+        {
+            var response = new StringBuilder("This ban has already been pardoned");
+
+            if (ban.Unban.UnbanningAdmin != null)
+            {
+                response.Append($" by {ban.Unban.UnbanningAdmin.Value}");
+            }
+
+            response.Append($" in {ban.Unban.UnbanTime}.");
+            return response.ToString();
+        }
+
+        await _db.AddServerUnbanAsync(new ServerUnbanDef(banId, unbanningAdmin, unbanTime));
+
+        var pardonAdminName = unbanningAdmin == null
+            ? Loc.GetString("system-user")
+            : (await _db.GetPlayerRecordByUserId(unbanningAdmin.Value))?.LastSeenUserName ?? Loc.GetString("system-user");
+
+        if (ban.UserId is { } pardonTargetUid)
+        {
+            var targetName = (await _db.GetPlayerRecordByUserId(pardonTargetUid))?.LastSeenUserName ?? pardonTargetUid.ToString();
+            _adminLog.Add(LogType.AdminCommands, LogImpact.Extreme,
+                $"{pardonAdminName} pardoned server ban #{banId} for {new AdminLogPlayerValue(pardonTargetUid, targetName):player}");
+        }
+        else
+        {
+            _adminLog.Add(LogType.AdminCommands, LogImpact.Extreme,
+                $"{pardonAdminName} pardoned server ban #{banId}");
+        }
+
+        return Loc.GetString("cmd-pardon-success", ("id", banId));
+    }
+    // End Zona14
 
     #endregion
 
@@ -298,6 +358,22 @@ public sealed partial class BanManager : IBanManager, IPostInjectInit
         var length = expires == null ? Loc.GetString("cmd-roleban-inf") : Loc.GetString("cmd-roleban-until", ("expires", expires));
         _chat.SendAdminAlert(Loc.GetString("cmd-roleban-success", ("target", targetUsername ?? "null"), ("role", role), ("reason", reason), ("length", length)));
 
+        // Zona14: log role ban creation
+        var roleAdminName = banningAdmin == null
+            ? Loc.GetString("system-user")
+            : (await _db.GetPlayerRecordByUserId(banningAdmin.Value))?.LastSeenUserName ?? Loc.GetString("system-user");
+
+        if (target is { } roleTargetUid)
+        {
+            _adminLog.Add(LogType.AdminCommands, LogImpact.Extreme,
+                $"{roleAdminName} created role ban for {new AdminLogPlayerValue(roleTargetUid, targetUsername ?? roleTargetUid.ToString()):player} on {role} - {reason} ({length})");
+        }
+        else
+        {
+            _adminLog.Add(LogType.AdminCommands, LogImpact.Extreme,
+                $"{roleAdminName} created role ban for {targetUsername ?? "null"} on {role} - {reason} ({length})");
+        }
+
         if (target is not null && _playerManager.TryGetSessionById(target.Value, out var session))
             SendRoleBans(session);
     }
@@ -346,6 +422,23 @@ public sealed partial class BanManager : IBanManager, IPostInjectInit
         {
             roleBans.RemoveAll(roleBan => roleBan.Id == ban.Id);
             SendRoleBans(session);
+        }
+
+        // Zona14: log role ban pardon
+        var pardonAdminName = unbanningAdmin == null
+            ? Loc.GetString("system-user")
+            : (await _db.GetPlayerRecordByUserId(unbanningAdmin.Value))?.LastSeenUserName ?? Loc.GetString("system-user");
+
+        if (ban.UserId is { } pardonTargetUid)
+        {
+            var targetName = (await _db.GetPlayerRecordByUserId(pardonTargetUid))?.LastSeenUserName ?? pardonTargetUid.ToString();
+            _adminLog.Add(LogType.AdminCommands, LogImpact.Extreme,
+                $"{pardonAdminName} pardoned role ban #{banId} for {new AdminLogPlayerValue(pardonTargetUid, targetName):player}");
+        }
+        else
+        {
+            _adminLog.Add(LogType.AdminCommands, LogImpact.Extreme,
+                $"{pardonAdminName} pardoned role ban #{banId}");
         }
 
         return $"Pardoned ban with id {banId}";

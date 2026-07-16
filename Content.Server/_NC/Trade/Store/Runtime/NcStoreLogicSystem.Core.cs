@@ -1,5 +1,7 @@
 using Content.Shared.Storage.Components;
+using Content.Server.Administration.Logs; // Zona14
 using Content.Server.Storage.EntitySystems;
+using Content.Shared.Database; // Zona14
 using Content.Shared.Hands.Components;
 using Content.Shared.Hands.EntitySystems;
 using Content.Shared.Movement.Pulling.Components;
@@ -17,6 +19,7 @@ public sealed partial class NcStoreLogicSystem : EntitySystem
 
     [Dependency] private readonly IComponentFactory _compFactory = default!;
     [Dependency] public readonly NcStoreCurrencySystem _currency = default!;
+    [Dependency] private readonly IAdminLogManager _adminLog = default!; // Zona14
     [Dependency] private readonly EntityStorageSystem _entityStorage = default!;
     [Dependency] public readonly IEntityManager _ents = default!;
     [Dependency] private readonly SharedHandsSystem _hands = default!;

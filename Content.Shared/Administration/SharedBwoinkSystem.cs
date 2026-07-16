@@ -21,7 +21,7 @@ namespace Content.Shared.Administration
             // Specific side code in target.
         }
 
-        protected void LogBwoink(BwoinkTextMessage message)
+        protected virtual void LogBwoink(BwoinkTextMessage message) // Zona14: made overridable for server-side logging
         {
         }
 

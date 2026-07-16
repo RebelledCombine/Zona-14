@@ -1,5 +1,6 @@
 using Content.Shared._Stalker.Shop;
 using Content.Shared._Stalker_EN.Shop;
+using Content.Shared.Database; // Zona14
 using Content.Shared.FixedPoint;
 using Robust.Shared.Prototypes;
 
@@ -70,5 +71,9 @@ public sealed partial class ShopSystem
         listing.PurchaseAmount += count;
         component.CurrentBalance = balance;
         UpdateShopUI(buyer, uid, component.CurrentBalance, component);
+
+        // Zona14: log bulk shop purchase
+        _adminLog.Add(LogType.STShop, LogImpact.Low,
+            $"{ToPrettyString(buyer):player} bulk bought {count}x {listing.Name ?? "Unknown"} from {ToPrettyString(uid):shop} for {totalCost}");
     }
 }

@@ -9,6 +9,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using Content.Server.Administration.Logs;
 using Content.Server.Administration.Managers;
+using Content.Server.IP;
 using Content.Shared._Stalker.Bands;
 using Content.Shared._Stalker.Characteristics;
 using Content.Shared._Stalker.WarZone;
@@ -517,6 +518,138 @@ namespace Content.Server.Database
             return flags ?? ServerBanExemptFlags.None;
         }
 
+        // Zona14: global ban list support
+        public virtual async Task<List<ServerBanDef>> GetAllServerBansAsync(bool includeUnbanned = true)
+        {
+            await using var db = await GetDb();
+
+            var query = db.DbContext.Ban.Include(b => b.Unban);
+            if (!includeUnbanned)
+            {
+                var now = DateTime.UtcNow;
+                return (await query.ToListAsync())
+                    .Where(b => b.Unban == null && (b.ExpirationTime == null || b.ExpirationTime.Value > now))
+                    .Select(ConvertBanDef)
+                    .Where(b => b != null)
+                    .ToList()!;
+            }
+
+            return (await query.ToListAsync())
+                .Select(ConvertBanDef)
+                .Where(b => b != null)
+                .ToList()!;
+        }
+
+        public virtual async Task<List<ServerRoleBanDef>> GetAllServerRoleBansAsync(bool includeUnbanned = true)
+        {
+            await using var db = await GetDb();
+
+            var query = db.DbContext.RoleBan.Include(b => b.Unban);
+            if (!includeUnbanned)
+            {
+                var now = DateTime.UtcNow;
+                return (await query.ToListAsync())
+                    .Where(b => b.Unban == null && (b.ExpirationTime == null || b.ExpirationTime.Value > now))
+                    .Select(ConvertRoleBanDef)
+                    .Where(b => b != null)
+                    .ToList()!;
+            }
+
+            return (await query.ToListAsync())
+                .Select(ConvertRoleBanDef)
+                .Where(b => b != null)
+                .ToList()!;
+        }
+
+        private ServerBanDef? ConvertBanDef(ServerBan? ban)
+        {
+            if (ban == null)
+                return null;
+
+            NetUserId? uid = null;
+            if (ban.PlayerUserId is { } guid)
+                uid = new NetUserId(guid);
+
+            NetUserId? aUid = null;
+            if (ban.BanningAdmin is { } aGuid)
+                aUid = new NetUserId(aGuid);
+
+            return new ServerBanDef(
+                ban.Id,
+                uid,
+                ban.Address.ToTuple(),
+                ban.HWId,
+                new DateTimeOffset(NormalizeDatabaseTime(ban.BanTime)),
+                ban.ExpirationTime == null ? null : new DateTimeOffset(NormalizeDatabaseTime(ban.ExpirationTime.Value)),
+                ban.RoundId,
+                ban.PlaytimeAtNote,
+                ban.Reason,
+                ban.Severity,
+                aUid,
+                ConvertUnbanDef(ban.Unban),
+                ban.ExemptFlags);
+        }
+
+        private ServerRoleBanDef? ConvertRoleBanDef(ServerRoleBan? ban)
+        {
+            if (ban == null)
+                return null;
+
+            NetUserId? uid = null;
+            if (ban.PlayerUserId is { } guid)
+                uid = new NetUserId(guid);
+
+            NetUserId? aUid = null;
+            if (ban.BanningAdmin is { } aGuid)
+                aUid = new NetUserId(aGuid);
+
+            return new ServerRoleBanDef(
+                ban.Id,
+                uid,
+                ban.Address.ToTuple(),
+                ban.HWId,
+                new DateTimeOffset(NormalizeDatabaseTime(ban.BanTime)),
+                ban.ExpirationTime == null ? null : new DateTimeOffset(NormalizeDatabaseTime(ban.ExpirationTime.Value)),
+                ban.RoundId,
+                ban.PlaytimeAtNote,
+                ban.Reason,
+                ban.Severity,
+                aUid,
+                ConvertRoleUnbanDef(ban.Unban),
+                ban.RoleId);
+        }
+
+        private ServerUnbanDef? ConvertUnbanDef(ServerUnban? unban)
+        {
+            if (unban == null)
+                return null;
+
+            NetUserId? aUid = null;
+            if (unban.UnbanningAdmin is { } aGuid)
+                aUid = new NetUserId(aGuid);
+
+            return new ServerUnbanDef(
+                unban.Id,
+                aUid,
+                new DateTimeOffset(NormalizeDatabaseTime(unban.UnbanTime)));
+        }
+
+        private ServerRoleUnbanDef? ConvertRoleUnbanDef(ServerRoleUnban? unban)
+        {
+            if (unban == null)
+                return null;
+
+            NetUserId? aUid = null;
+            if (unban.UnbanningAdmin is { } aGuid)
+                aUid = new NetUserId(aGuid);
+
+            return new ServerRoleUnbanDef(
+                unban.Id,
+                aUid,
+                new DateTimeOffset(NormalizeDatabaseTime(unban.UnbanTime)));
+        }
+        // End Zona14
+
         #endregion
 
         #region Role Bans
@@ -680,6 +813,30 @@ namespace Content.Server.Database
 
             return record == null ? null : MakePlayerRecord(record);
         }
+
+        // Zona14: whitelist support
+        public async Task<List<PlayerRecord>> SearchPlayersByName(string query, CancellationToken cancel)
+        {
+            await using var db = await GetDb(cancel);
+
+            var records = await db.DbContext.Player
+                .Where(p => p.LastSeenUserName.Contains(query))
+                .ToListAsync(cancel);
+
+            return records.Select(MakePlayerRecord)
+                .Where(r => r != null)
+                .ToList()!;
+        }
+
+        public async Task<List<NetUserId>> GetAllWhitelistedAsync(CancellationToken cancel)
+        {
+            await using var db = await GetDb(cancel);
+
+            return await db.DbContext.Whitelist
+                .Select(w => new NetUserId(w.UserId))
+                .ToListAsync(cancel);
+        }
+        // End Zona14
 
         protected async Task<bool> PlayerRecordExists(DbGuard db, NetUserId userId)
         {

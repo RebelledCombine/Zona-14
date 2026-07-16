@@ -1,6 +1,7 @@
 using System.Threading.Tasks;
 using Content.Shared._Stalker.WarZone.Requirenments;
 using Robust.Shared.Player;
+using Content.Server.Administration.Logs; // Zona14
 using Content.Server.Database;
 using Content.Shared._Stalker.WarZone;
 using Robust.Shared.Prototypes;
@@ -9,6 +10,7 @@ using Robust.Shared.Physics.Events;
 using Content.Server.Chat.Managers;
 using Content.Server.Popups;
 using Content.Shared._Stalker.Bands;
+using Content.Shared.Database; // Zona14
 using Content.Shared.NPC.Prototypes;
 using Content.Shared.Chat;
 using Content.Server.Chat.Systems;
@@ -25,6 +27,7 @@ public sealed partial class WarZoneSystem : EntitySystem
     [Dependency] private readonly IChatManager _chatManager = default!;
     [Dependency] private readonly PopupSystem _popup = default!;
     [Dependency] private readonly SharedTransformSystem _transformSystem = default!;
+    [Dependency] private readonly IAdminLogManager _adminLog = default!; // Zona14
     private readonly Dictionary<string, float> _bandPoints = new();
     private readonly Dictionary<string, float> _factionPoints = new();
     private readonly Dictionary<EntityUid, TimeSpan> _lastRewardTimes = new();
@@ -36,11 +39,19 @@ public sealed partial class WarZoneSystem : EntitySystem
     public void SetBandPoints(string protoId, float points)
     {
         _bandPoints[protoId] = points;
+
+        // Zona14: log band points set
+        _adminLog.Add(LogType.STWarZone, LogImpact.Medium,
+            $"Band {protoId} points set to {points}");
     }
 
     public void SetFactionPoints(string protoId, float points)
     {
         _factionPoints[protoId] = points;
+
+        // Zona14: log faction points set
+        _adminLog.Add(LogType.STWarZone, LogImpact.Medium,
+            $"Faction {protoId} points set to {points}");
     }
 
     /// <summary>
@@ -87,6 +98,10 @@ public sealed partial class WarZoneSystem : EntitySystem
         // We don't necessarily need to wait for this to complete before returning true,
         // as the in-memory value is updated. Error handling for DB failure might be needed.
         _dbManager.SetStalkerBandAsync(new ProtoId<STBandPrototype>(bandProtoId), newPoints);
+
+        // Zona14: log band point modification
+        _adminLog.Add(LogType.STWarZone, LogImpact.Low,
+            $"Band {bandProtoId} points modified by {delta}. New total: {newPoints}");
 
         Logger.DebugS("warzone", $"Modified points for band {bandProtoId} by {delta}. New total: {newPoints}");
         return true;
@@ -459,6 +474,10 @@ public sealed partial class WarZoneSystem : EntitySystem
             ("zone", comp.PortalName ?? "Unknown"),
             ("attacker", finalOwnerName)));
 
+        // Zona14: log war zone capture
+        _adminLog.Add(LogType.STWarZone, LogImpact.High,
+            $"Zone {comp.PortalName ?? "Unknown"} captured by {finalOwnerName}");
+
         // Reset Reward Timer
         _lastRewardTimes[zone] = _gameTiming.CurTime;
 
@@ -513,6 +532,11 @@ public sealed partial class WarZoneSystem : EntitySystem
             _bandPoints[bandProtoId] = newPoints;
             _dbManager.SetStalkerBandAsync(new ProtoId<STBandPrototype>(bandProtoId), newPoints);
             Logger.InfoS("warzone", $"Awarded {points} points to band {bandProtoId} (total: {newPoints}) for controlling {wzComp.PortalName}");
+
+            // Zona14: log war zone reward
+            _adminLog.Add(LogType.STWarZone, LogImpact.Low,
+                $"Awarded {points} points to band {bandProtoId} (total: {newPoints}) for controlling {wzComp.PortalName}");
+
             rewarded = true;
         }
         // Otherwise, reward Faction if a faction is defending (and no band)
@@ -524,6 +548,11 @@ public sealed partial class WarZoneSystem : EntitySystem
             _factionPoints[factionProtoId] = newPoints;
             _dbManager.SetStalkerFactionAsync(new ProtoId<NpcFactionPrototype>(factionProtoId), newPoints);
             Logger.InfoS("warzone", $"Awarded {points} points to faction {factionProtoId} (total: {newPoints}) for controlling {wzComp.PortalName}");
+
+            // Zona14: log war zone reward
+            _adminLog.Add(LogType.STWarZone, LogImpact.Low,
+                $"Awarded {points} points to faction {factionProtoId} (total: {newPoints}) for controlling {wzComp.PortalName}");
+
             rewarded = true;
         }
 
@@ -805,6 +834,10 @@ public sealed partial class WarZoneSystem : EntitySystem
             var mapCoords = _transformSystem.GetMapCoordinates(zoneUid);
             var filter = Filter.Empty().AddInRange(mapCoords, ChatSystem.VoiceRange); // Use appropriate range
             _chatManager.ChatMessageToManyFiltered(filter, ChatChannel.Emotes, message, message, zoneUid, false, true, colorOverride: null); // Consider ChatChannel choice
+
+            // Zona14: log war zone capture abandonment
+            _adminLog.Add(LogType.STWarZone, LogImpact.Low,
+                $"Capture abandoned on {wzComp.PortalName ?? "Unknown"} by {attackerName} ({reason})");
         }
 
         // Attacker info is reset in the main UpdateCaptureAsync logic where abandonment is detected
@@ -817,6 +850,10 @@ public sealed partial class WarZoneSystem : EntitySystem
         var mapCoords = _transformSystem.GetMapCoordinates(zoneUid);
         var filter = Filter.Empty().AddInRange(mapCoords, ChatSystem.VoiceRange);
         _chatManager.ChatMessageToManyFiltered(filter, ChatChannel.Emotes, message, message, zoneUid, false, true, colorOverride: null);
+
+        // Zona14: log war zone capture start
+        _adminLog.Add(LogType.STWarZone, LogImpact.Low,
+            $"Capture started on {wzComp.PortalName ?? "Unknown"} by {attackerName}");
     }
 
 

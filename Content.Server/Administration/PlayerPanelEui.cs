@@ -153,6 +153,9 @@ public sealed class PlayerPanelEui : BaseEui
                     return;
 
                 _follower.StartFollowingEntity(Player.AttachedEntity.Value, session.AttachedEntity.Value);
+                // Zona14: log player panel follow
+                _adminLog.Add(LogType.Action, LogImpact.Low,
+                    $"{Player:actor} started following {_entity.ToPrettyString(session.AttachedEntity):subject}");
                 break;
         }
     }

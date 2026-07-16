@@ -105,7 +105,7 @@ public sealed class STRankTransferCommand : LocalizedCommands
 
         var oldCharacterName = string.Join(" ", args[1..]);
         var rankSystem = _entities.System<STCharacterRankSystem>();
-        rankSystem.TransferRankAsync(uid, oldCharacterName, session.Name, shell);
+        rankSystem.TransferRankAsync(uid, oldCharacterName, session.Name, shell, session); // Zona14: pass actor for logging
     }
 
     public override CompletionResult GetCompletion(IConsoleShell shell, string[] args)
@@ -163,7 +163,7 @@ public sealed class STRankSetCommand : LocalizedCommands
             return;
         }
 
-        rankSystem.SetAccumulatedTime(uid, rank.TimeRequired);
+        rankSystem.SetAccumulatedTime(uid, rank.TimeRequired, session); // Zona14: pass actor for logging
 
         shell.WriteLine(Loc.GetString("cmd-strank-set-success",
             ("username", session.Name),

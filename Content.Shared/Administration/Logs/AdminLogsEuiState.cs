@@ -7,11 +7,12 @@ namespace Content.Shared.Administration.Logs;
 [Serializable, NetSerializable]
 public sealed class AdminLogsEuiState : EuiStateBase
 {
-    public AdminLogsEuiState(int roundId, Dictionary<Guid, string> players, int roundLogs)
+    public AdminLogsEuiState(int roundId, Dictionary<Guid, string> players, int roundLogs, HashSet<Guid>? selectedPlayers = null)
     {
         RoundId = roundId;
         Players = players;
         RoundLogs = roundLogs;
+        SelectedPlayers = selectedPlayers;
     }
 
     public bool IsLoading { get; set; }
@@ -21,6 +22,8 @@ public sealed class AdminLogsEuiState : EuiStateBase
     public Dictionary<Guid, string> Players { get; }
 
     public int RoundLogs { get; }
+
+    public HashSet<Guid>? SelectedPlayers { get; }
 }
 
 public static class AdminLogsEuiMsg
@@ -28,16 +31,23 @@ public static class AdminLogsEuiMsg
     [Serializable, NetSerializable]
     public sealed class SetLogFilter : EuiMessageBase
     {
-        public SetLogFilter(string? search = null, bool invertTypes = false, HashSet<LogType>? types = null)
+        // Zona14: extended with impacts/invertImpacts and players
+        public SetLogFilter(string? search = null, bool invertTypes = false, HashSet<LogType>? types = null, bool invertImpacts = false, HashSet<LogImpact>? impacts = null, HashSet<Guid>? players = null)
         {
             Search = search;
             InvertTypes = invertTypes;
             Types = types;
+            InvertImpacts = invertImpacts;
+            Impacts = impacts;
+            Players = players;
         }
 
         public string? Search { get; set; }
         public bool InvertTypes { get; set; }
         public HashSet<LogType>? Types { get; set; }
+        public bool InvertImpacts { get; set; }
+        public HashSet<LogImpact>? Impacts { get; set; }
+        public HashSet<Guid>? Players { get; set; }
     }
 
     [Serializable, NetSerializable]

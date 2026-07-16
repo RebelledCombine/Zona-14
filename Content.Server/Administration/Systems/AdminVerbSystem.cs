@@ -208,6 +208,23 @@ namespace Content.Server.Administration.Systems
                         Act = () => _console.ExecuteCommand(player, $"playerpanel \"{targetActor.PlayerSession.UserId}\""),
                         Impact = LogImpact.Low
                     });
+
+                    // Zona14: open admin logs filtered to this player.
+                    if (_adminManager.HasAdminFlag(player, AdminFlags.Logs))
+                    {
+                        args.Verbs.Add(new Verb
+                        {
+                            Text = Loc.GetString("admin-verbs-admin-logs-player"),
+                            Category = VerbCategory.Admin,
+                            Act = () =>
+                            {
+                                var ui = new AdminLogsEui();
+                                _euiManager.OpenEui(ui, player);
+                                ui.SetLogFilter(players: new HashSet<Guid> { targetActor.PlayerSession.UserId.UserId });
+                            },
+                            Impact = LogImpact.Low
+                        });
+                    }
                 }
 
                 if (_mindSystem.TryGetMind(args.Target, out var mindId, out var mindComp) && mindComp.UserId != null)
@@ -317,7 +334,8 @@ namespace Content.Server.Administration.Systems
                         {
                             var ui = new AdminLogsEui();
                             _euiManager.OpenEui(ui, player);
-                            ui.SetLogFilter(search:args.Target.Id.ToString());
+                            // Zona14: search for the entity's uid/nuid pattern in the formatted log string.
+                            ui.SetLogFilter(search:$"{args.Target.Id}/n");
                         },
                         Impact = LogImpact.Low
                     };

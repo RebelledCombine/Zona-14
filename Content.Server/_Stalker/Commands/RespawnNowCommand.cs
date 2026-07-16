@@ -1,4 +1,7 @@
+using Content.Server.Administration.Logs; // Zona14
 using Content.Server.GameTicking;
+using Content.Shared._Zona14.Administration.Logs; // Zona14
+using Content.Shared.Database; // Zona14
 using Content.Shared.Mind;
 using Content.Shared.Mobs;
 using Content.Shared.Mobs.Components;
@@ -29,6 +32,7 @@ public sealed class RespawnNowCommand : IConsoleCommand
    // [Dependency] private readonly DamageableSystem _damageableSystem = default!;
     [Dependency] private readonly IPrototypeManager _protoMan = default!;
     [Dependency] private readonly IEntityManager _entMan = default!;
+    [Dependency] private readonly IAdminLogManager _adminLog = default!; // Zona14
 
     public void Execute(IConsoleShell shell, string argStr, string[] args)
     {
@@ -105,6 +109,9 @@ public sealed class RespawnNowCommand : IConsoleCommand
                     shell.WriteLine("Respawning from head...");
 
                     ticker.Respawn(targetPlayer);
+                    _adminLog.Add(LogType.Respawn, LogImpact.Low, // Zona14: log respawnnow
+                        $"{targetPlayer:player} used respawnnow from head");
+
                     var newEnt = targetPlayer.AttachedEntity;
                     if (newEnt != null)
                         _entMan.EventBus.RaiseLocalEvent(newEnt.Value, new RespawnedByCommandEvent(_entMan.GetNetEntity(PlayerEntity)));
@@ -131,6 +138,9 @@ public sealed class RespawnNowCommand : IConsoleCommand
                 shell.WriteLine("Respawning...");
 
                 ticker.Respawn(targetPlayer);
+                _adminLog.Add(LogType.Respawn, LogImpact.Low, // Zona14: log respawnnow
+                    $"{targetPlayer:player} used respawnnow (dead)");
+
                 var newEnt = targetPlayer.AttachedEntity;
                 if (newEnt != null)
                     _entMan.EventBus.RaiseLocalEvent(newEnt.Value, new RespawnedByCommandEvent(_entMan.GetNetEntity(PlayerEntity)));

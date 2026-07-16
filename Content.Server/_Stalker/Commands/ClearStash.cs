@@ -27,7 +27,7 @@ public sealed class ClearStash : IConsoleCommand
 
         try
         {
-            stalkerDb.ClearStorages(args[0]);
+            stalkerDb.ClearStorages(args[0], shell.Player); // Zona14: pass actor for logging
             shell.WriteError(Loc.GetString("clear-stash-command-process"));
         }
         catch (Exception exception)

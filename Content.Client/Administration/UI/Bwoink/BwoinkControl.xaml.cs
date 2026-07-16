@@ -1,6 +1,7 @@
 using System.Linq;
 using System.Text;
 using Content.Client.Administration.Managers;
+using Content.Client.Administration.Systems; // Zona14: BwoinkSystem for AHelp assignment
 using Content.Client.Administration.UI.CustomControls;
 using Content.Client.UserInterface.Systems.Bwoink;
 using Content.Shared.Administration;
@@ -10,8 +11,10 @@ using Robust.Client.Console;
 using Robust.Client.UserInterface;
 using Robust.Client.UserInterface.Controls;
 using Robust.Client.UserInterface.XAML;
+using Robust.Shared.GameObjects; // Zona14: IEntityManager for BwoinkSystem
 using Robust.Shared.Network;
 using Robust.Shared.Configuration;
+using Robust.Client.Player; // Zona14: IPlayerManager for assignment text
 using Robust.Shared.Utility;
 
 namespace Content.Client.Administration.UI.Bwoink
@@ -26,14 +29,19 @@ namespace Content.Client.Administration.UI.Bwoink
         [Dependency] private readonly IClientConsoleHost _console = default!;
         [Dependency] private readonly IUserInterfaceManager _ui = default!;
         [Dependency] private readonly IConfigurationManager _cfg = default!;
+        [Dependency] private readonly IPlayerManager _playerManager = default!; // Zona14: assignment text
         public AdminAHelpUIHandler AHelpHelper = default!;
 
+        private BwoinkSystem _bwoinkSystem = default!; // Zona14: AHelp assignment
         private PlayerInfo? _currentPlayer;
 
         public BwoinkControl()
         {
             RobustXamlLoader.Load(this);
             IoCManager.InjectDependencies(this);
+
+            _bwoinkSystem = IoCManager.Resolve<IEntityManager>().System<BwoinkSystem>(); // Zona14
+            _bwoinkSystem.OnAssignUpdated += OnAssignUpdated; // Zona14
 
             var newPlayerThreshold = 0;
             _cfg.OnValueChanged(CCVars.NewPlayerThreshold, (val) => { newPlayerThreshold = val; }, true);
@@ -82,6 +90,10 @@ namespace Content.Client.Administration.UI.Bwoink
                 // Mark new players with symbol
                 if (IsNewPlayer(info))
                     sb.Append(new Rune(0x23F2)); // ⏲
+
+                // Zona14: show assigned admin in the channel list
+                if (_bwoinkSystem.TryGetAssignedAdmin(info.SessionId, out var adminName) && adminName != null)
+                    sb.Append($"[A: {adminName}] ");
 
                 sb.AppendFormat("\"{0}\"", text);
 
@@ -194,6 +206,24 @@ namespace Content.Client.Administration.UI.Bwoink
                     _console.ExecuteCommand($"respawn \"{_currentPlayer.Username}\"");
             };
 
+            // Zona14: AHelp assignment and transcript buttons
+            Assign.OnPressed += _ =>
+            {
+                if (_currentPlayer is not null)
+                {
+                    var unassign = _bwoinkSystem.TryGetAssignedAdmin(_currentPlayer.SessionId, out var adminName)
+                                   && adminName == _playerManager.LocalSession?.Name;
+                    _bwoinkSystem.SendAssign(_currentPlayer.SessionId, unassign);
+                }
+            };
+
+            Transcript.OnPressed += _ =>
+            {
+                if (_currentPlayer is not null)
+                    _console.ExecuteCommand($"ahelptranscript \"{_currentPlayer.Username}\"");
+            };
+            // End Zona14
+
             PopOut.OnPressed += _ =>
             {
                 uiController.PopOut();
@@ -245,6 +275,14 @@ namespace Content.Client.Administration.UI.Bwoink
 
             Follow.Visible = _adminManager.CanCommand("follow");
             Follow.Disabled = !Follow.Visible || disabled;
+
+            // Zona14: AHelp assignment and transcript buttons
+            Assign.Visible = _adminManager.HasFlag(AdminFlags.Adminhelp);
+            Assign.Disabled = !Assign.Visible || disabled;
+
+            Transcript.Visible = _adminManager.HasFlag(AdminFlags.Adminhelp);
+            Transcript.Disabled = !Transcript.Visible || disabled;
+            // End Zona14
         }
 
         private string FormatTabTitle(ItemList.Item li, PlayerInfo? pl = default)
@@ -287,7 +325,42 @@ namespace Content.Client.Administration.UI.Bwoink
             {
                 var panel = AHelpHelper.EnsurePanel(ch.Value);
                 panel.Visible = true;
+
+                // Zona14: show current handler and update assign button text
+                var assigned = _bwoinkSystem.TryGetAssignedAdmin(ch.Value, out var adminName) ? adminName : null;
+                panel.SetHandler(assigned);
+                UpdateAssignButton(assigned, ch.Value);
             }
+        }
+
+        // Zona14: update the Assign button text to reflect the current assignment
+        private void UpdateAssignButton(string? assignedAdmin, NetUserId channel)
+        {
+            if (_playerManager.LocalSession?.Name == assignedAdmin)
+                Assign.Text = Loc.GetString("admin-ahelp-unassign");
+            else
+                Assign.Text = Loc.GetString("admin-ahelp-assign");
+
+            ChannelSelector.PlayerListContainer.DirtyList();
+        }
+
+        // Zona14: refresh assignment state when the server broadcasts a change
+        private void OnAssignUpdated(NetUserId channel, string? adminName)
+        {
+            if (_currentPlayer?.SessionId == channel)
+            {
+                UpdateAssignButton(adminName, channel);
+                if (AHelpHelper.TryGetChannel(channel, out var panel))
+                    panel.SetHandler(adminName);
+            }
+
+            ChannelSelector.PlayerListContainer.DirtyList();
+        }
+
+        protected override void Dispose(bool disposing)
+        {
+            base.Dispose(disposing);
+            _bwoinkSystem.OnAssignUpdated -= OnAssignUpdated;
         }
 
         public void PopulateList()

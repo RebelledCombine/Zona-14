@@ -5,6 +5,7 @@ hud-chatbox-info-unbound = Click here to talk.
 
 hud-chatbox-select-name-prefixed = {$prefix} {$name}
 hud-chatbox-select-channel-Admin = Admin
+hud-chatbox-select-channel-MentorChat = Mentor # Zona14
 hud-chatbox-select-channel-Console = Console
 hud-chatbox-select-channel-Dead = Dead
 hud-chatbox-select-channel-Emotes = Emotes
@@ -19,6 +20,7 @@ hud-chatbox-select-channel-Radio = Radio
 hud-chatbox-channel-Admin = Admin Misc
 hud-chatbox-channel-AdminAlert = Admin Alert
 hud-chatbox-channel-AdminChat = Admin Chat
+hud-chatbox-channel-MentorChat = Mentor Chat # Zona14
 hud-chatbox-channel-Dead = Dead
 hud-chatbox-channel-Emotes = Emotes
 hud-chatbox-channel-Local = Local

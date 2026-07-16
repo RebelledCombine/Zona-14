@@ -1,6 +1,8 @@
+using Content.Server.Administration.Logs;
 using Content.Server.EUI;
 using Content.Server.GameTicking;
 using Content.Shared._Stalker_EN.RespawnConfirm;
+using Content.Shared.Database;
 using Content.Shared._RD.DeathScreen;
 using Content.Shared.Eui;
 using Robust.Shared.Localization;
@@ -70,6 +72,7 @@ public sealed class STRespawnConfirmSystem : EntitySystem
     [Dependency] private readonly EuiManager _euiManager = default!;
     [Dependency] private readonly GameTicker _gameTicker = default!;
     [Dependency] private readonly IGameTiming _timing = default!;
+    [Dependency] private readonly IAdminLogManager _adminLog = default!;
 
     /// <summary>
     /// Track sessions with pending respawns (after death screen shown)
@@ -108,6 +111,9 @@ public sealed class STRespawnConfirmSystem : EntitySystem
             if (_timing.CurTime >= respawnTime)
             {
                 _gameTicker.Respawn(session);
+                // Zona14: log respawn confirmation
+                _adminLog.Add(LogType.Respawn, LogImpact.Low,
+                    $"{session:player} respawned via confirmation dialog");
                 toRemove.Add(session);
             }
         }

@@ -22648,12 +22648,6 @@ entities:
     - type: Transform
       pos: -58.502327,38.54943
       parent: 1
-- proto: ActionToggleLight
-  entities:
-  - uid: 5
-    components:
-    - type: Transform
-      parent: 4
 - proto: AltarSpaceChristian
   entities:
   - uid: 6
@@ -31107,18 +31101,12 @@ entities:
       pos: -14.570855,47.688553
       parent: 1
     - type: HandheldLight
-      toggleActionEntity: 5
     - type: ContainerContainer
       containers:
         cell_slot: !type:ContainerSlot
           showEnts: False
           occludes: True
           ent: null
-        actions: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - 5
     - type: Physics
       canCollide: True
     - type: ActionsContainer

@@ -126,6 +126,10 @@ binds:
 - function: FocusAdminChatWindow
   type: State
   key: RBracket
+- function: FocusMentorChatWindow # Zona14: focus mentor chat
+  type: State
+  mod1: Shift
+  key: RBracket
 - function: FocusDeadChatWindow
   type: State
   key: Backslash
@@ -243,6 +247,10 @@ binds:
   key: NumpadNum0
 - function: OpenAHelp
   type: State
+  key: F1
+- function: OpenMentorHelp # Zona14: open mentor help
+  type: State
+  mod1: Shift
   key: F1
 - function: OpenInventoryMenu
   type: State
@@ -486,6 +494,9 @@ binds:
 - function: OpenAdminMenu
   type: State
   key: F7
+- function: OpenZ14Dashboard # Zona14: dashboard hotkey
+  type: State
+  key: F12
 - function: OpenDecalSpawnWindow
   type: State
   key: F8
