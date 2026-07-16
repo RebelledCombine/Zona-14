@@ -1,6 +1,8 @@
+using Content.Shared.Damage.Prototypes;
 using Content.Shared.Radiation.Systems;
 using Robust.Shared.Audio;
 using Robust.Shared.GameStates;
+using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization;
 
 namespace Content.Shared.Radiation.Components;
@@ -52,11 +54,39 @@ public sealed partial class GeigerComponent : Component
         {GeigerDangerLevel.Extreme, new SoundPathSpecifier("/Audio/Items/Geiger/ext.ogg")}
     };
 
+    // Zona14: configurable damage types for advanced dosimeters (e.g. modified/universal).
+    /// <summary>
+    ///     Damage types this dosimeter sums. If empty, it falls back to Radiation.
+    /// </summary>
+    [DataField, AutoNetworkedField]
+    public List<GeigerDamageType> DamageTypes = new();
+
+    // Zona14: custom unit label shown in UI and examine. Treated as a Fluent key; if empty, defaults to "rads".
+    /// <summary>
+    ///     Custom unit label (Fluent key, e.g. "geiger-prefix-ceu"). Empty string uses the default "rads" locale.
+    /// </summary>
+    [DataField, AutoNetworkedField]
+    public string Prefix = string.Empty;
+
+    // Zona14: if true, examine and item control show per-damage-type readouts.
+    /// <summary>
+    ///     If true, the examine and item control show a per-damage-type readout.
+    /// </summary>
+    [DataField, AutoNetworkedField]
+    public bool ShowAll;
+
     /// <summary>
     ///     Current radiation level in rad per second.
     /// </summary>
     [ViewVariables(VVAccess.ReadOnly), AutoNetworkedField]
     public float CurrentRadiation;
+
+    // Zona14: per-damage-type current readings used by ShowAll.
+    /// <summary>
+    ///     Per-damage-type current readings in damage per second.
+    /// </summary>
+    [ViewVariables(VVAccess.ReadOnly), AutoNetworkedField]
+    public Dictionary<string, float> CurrentDamage = new();
 
     /// <summary>
     ///     Estimated radiation danger level.
@@ -101,6 +131,20 @@ public sealed partial class GeigerComponent : Component
     /// </summary>
     [DataField]
     public float Volume = -4f;
+}
+
+// Zona14: entry used to configure which damage types a dosimeter displays and how they are labeled.
+[DataDefinition, Serializable, NetSerializable]
+public sealed partial class GeigerDamageType
+{
+    [DataField]
+    public ProtoId<DamageTypePrototype> Id = "Radiation";
+
+    /// <summary>
+    ///     Fluent key for the damage-type label (e.g. "geiger-damage-heat"). If the key is not found, the raw value is used.
+    /// </summary>
+    [DataField]
+    public string Name = string.Empty;
 }
 
 [Serializable, NetSerializable]

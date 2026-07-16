@@ -45,36 +45,38 @@
     - type: Item
       sprite: _Stalker/Objects/Tools/geiger_modified.rsi
     - type: Geiger
-      # Zona14: prefix: У.Е.В. # Stalker-TODO: These fields do not exist in this component!
-      # damageTypes:
-        # - id: Asphyxiation
-          # Zona14: name: У.Е.В.
-        # - id: Bloodloss
-          # Zona14: name: У.Е.В.
-        # - id: Blunt
-          # Zona14: name: У.Е.В.
-        # - id: Piercing
-          # Zona14: name: У.Е.В.
-        # - id: Slash
-          # Zona14: name: У.Е.В.
-        # - id: Heat
-          # Zona14: name: У.Е.В.
-        # - id: Shock
-          # Zona14: name: У.Е.В.
-        # - id: Cold
-          # Zona14: name: У.Е.В.
-        # - id: Caustic
-          # Zona14: name: У.Е.В.
-        # - id: Poison
-          # Zona14: name: У.Е.В.
-        # - id: Cellular
-          # Zona14: name: У.Е.В.
-        # - id: Psy
-          # Zona14: name: У.Е.В.
-        # - id: Compression
-          # Zona14: name: У.Е.В.
-        # - id: Structural
-          # Zona14: name: У.Е.В.
+      # Zona14: configured advanced dosimeter fields (prefix + summed damageTypes + ShowAll)
+      showAll: true
+      prefix: geiger-prefix-ceu # Zona14: localized unit key
+      damageTypes:
+        - id: Asphyxiation
+          name: geiger-damage-asphyxiation
+        - id: Bloodloss
+          name: geiger-damage-bloodloss
+        - id: Blunt
+          name: geiger-damage-blunt
+        - id: Piercing
+          name: geiger-damage-piercing
+        - id: Slash
+          name: geiger-damage-slash
+        - id: Heat
+          name: geiger-damage-heat
+        - id: Shock
+          name: geiger-damage-shock
+        - id: Cold
+          name: geiger-damage-cold
+        - id: Caustic
+          name: geiger-damage-caustic
+        - id: Poison
+          name: geiger-damage-poison
+        - id: Cellular
+          name: geiger-damage-cellular
+        - id: Psy
+          name: geiger-damage-psy
+        - id: Compression
+          name: geiger-damage-compression
+        - id: Structural
+          name: geiger-damage-structural
 
 - type: entity
   parent: BaseDosimeter
@@ -87,35 +89,37 @@
     - type: Item
       sprite: _Stalker/Objects/Tools/geiger_universal.rsi
     - type: Geiger
-      # Zona14: prefix: У.Е.В. # Stalker-TODO: These fields do not exist in this component!
-      # damageTypes:
-        # - id: Asphyxiation
-          # Zona14: name: П.В.
-        # - id: Bloodloss
-          # Zona14: name: П.В.
-        # - id: Blunt
-          # Zona14: name: mech
-        # - id: Piercing
-          # Zona14: name: mech
-        # - id: Slash
-          # Zona14: name: mech
-        # - id: Heat
-          # Zona14: name: phys
-        # - id: Shock
-          # Zona14: name: phys
-        # - id: Cold
-          # Zona14: name: phys
-        # - id: Caustic
-          # Zona14: name: phys
-        # - id: Radiation
-          # Zona14: name: rad
-        # - id: Poison
-          # Zona14: name: toxin
-        # - id: Cellular
-          # Zona14: name: genetic
-        # - id: Psy
-          # Zona14: name: psi
-        # - id: Compression
-          # Zona14: name: compressed
-        # - id: Structural
-          # Zona14: name: structural
+      # Zona14: configured advanced dosimeter fields (prefix + summed damageTypes + ShowAll)
+      showAll: true
+      prefix: geiger-prefix-ceu # Zona14: localized unit key
+      damageTypes:
+        - id: Asphyxiation
+          name: geiger-damage-asphyxiation
+        - id: Bloodloss
+          name: geiger-damage-bloodloss
+        - id: Blunt
+          name: geiger-damage-blunt
+        - id: Piercing
+          name: geiger-damage-piercing
+        - id: Slash
+          name: geiger-damage-slash
+        - id: Heat
+          name: geiger-damage-heat
+        - id: Shock
+          name: geiger-damage-shock
+        - id: Cold
+          name: geiger-damage-cold
+        - id: Caustic
+          name: geiger-damage-caustic
+        - id: Radiation
+          name: geiger-damage-radiation
+        - id: Poison
+          name: geiger-damage-poison
+        - id: Cellular
+          name: geiger-damage-cellular
+        - id: Psy
+          name: geiger-damage-psy
+        - id: Compression
+          name: geiger-damage-compression
+        - id: Structural
+          name: geiger-damage-structural
