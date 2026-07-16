@@ -81,7 +81,22 @@ public static class Z14AdminDashboardEuiMsg
             Command = command;
         }
 
-        public string Command { get; set; }
+        public string Command { get; set; } = string.Empty;
+    }
+
+    [Serializable, NetSerializable]
+    public sealed class FeatureOutput : EuiMessageBase
+    {
+        public FeatureOutput(string title, string command, string text)
+        {
+            Title = title;
+            Command = command;
+            Text = text;
+        }
+
+        public string Title { get; set; } = string.Empty;
+        public string Command { get; set; } = string.Empty;
+        public string Text { get; set; } = string.Empty;
     }
 
     [Serializable, NetSerializable]

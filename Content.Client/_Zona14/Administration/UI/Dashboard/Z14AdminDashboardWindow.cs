@@ -6,6 +6,7 @@ using System.Linq;
 using System.Numerics;
 using Content.Client.Administration.Managers;
 using Content.Client.Stylesheets;
+using Content.Shared._Stalker.Characteristics;
 using Content.Shared._Zona14.Administration.Dashboard;
 using Content.Shared.Administration;
 using Content.Shared.Administration.Logs;
@@ -52,6 +53,7 @@ public sealed class Z14AdminDashboardWindow : DefaultWindow
     private LineEdit _eventFilter = null!;
 
     private RichTextLabel _commandHint = null!;
+    private Label _statusLabel = null!;
 
     private Button _pauseEventsButton = null!;
     private Button _clearEventsButton = null!;
@@ -101,7 +103,24 @@ public sealed class Z14AdminDashboardWindow : DefaultWindow
         _tabContainer.AddChild(MakeMentorhelpTab());
         _tabContainer.AddChild(MakeAdminToolsTab());
 
-        Contents.AddChild(_tabContainer);
+        _statusLabel = new Label
+        {
+            Text = "Ready",
+            StyleClasses = { StyleClass.LabelSubText },
+            HorizontalExpand = true,
+            Margin = new Thickness(4, 2),
+        };
+
+        var root = new BoxContainer
+        {
+            Orientation = BoxContainer.LayoutOrientation.Vertical,
+            SeparationOverride = 0,
+            HorizontalExpand = true,
+            VerticalExpand = true,
+        };
+        root.AddChild(_tabContainer);
+        root.AddChild(_statusLabel);
+        Contents.AddChild(root);
     }
 
     #region Tab construction
@@ -204,7 +223,11 @@ public sealed class Z14AdminDashboardWindow : DefaultWindow
         AddActionButton(_actionButtons, "Ban List", "banlistall", AdminFlags.Ban);
         AddActionButton(_actionButtons, "AHelp", "openahelp", AdminFlags.Adminhelp, true);
         AddActionButton(_actionButtons, "Admin Activity", "adminactivity", AdminFlags.Logs);
-        AddActionButton(_actionButtons, "Refresh", null, AdminFlags.Admin, custom: _ => OnRefresh?.Invoke());
+        AddActionButton(_actionButtons, "Refresh", null, AdminFlags.Admin, custom: _ =>
+        {
+            SetStatus("Refreshing...");
+            OnRefresh?.Invoke();
+        });
 
         return MakeSection("Quick Actions", _actionButtons);
     }
@@ -458,8 +481,8 @@ public sealed class Z14AdminDashboardWindow : DefaultWindow
         AddArgCommand(toolsBox, "All Prototypes", "id", "all_prototype", "", AdminFlags.Host);
         AddArgCommand(toolsBox, "Reload Grouped Portals", "", "reload_grouped", "", AdminFlags.Debug);
         AddArgCommand(toolsBox, "Delayed Restart", "seconds", "delayed_restart", "60", AdminFlags.Round);
-        AddArgCommand(toolsBox, "Set Characteristic Level", "uid type level", "characteristic_set_levels", "", AdminFlags.Host);
-        AddArgCommand(toolsBox, "Get Characteristic Level", "uid type", "characteristic_get_levels", "", AdminFlags.Host);
+        AddCharacteristicCommand(toolsBox, "Set Characteristic Level", true, "characteristic_set_levels", AdminFlags.Host);
+        AddCharacteristicCommand(toolsBox, "Get Characteristic Level", false, "characteristic_get_levels", AdminFlags.Host);
         AddArgCommand(toolsBox, "Add Character Marking", "username slot markingId [colors...]", "st_character_add_marking", "", AdminFlags.Host);
         box.AddChild(MakeSection("Stalker Tools", toolsBox));
 
@@ -515,6 +538,7 @@ public sealed class Z14AdminDashboardWindow : DefaultWindow
         {
             _eventsPaused = !_eventsPaused;
             _pauseEventsButton.Text = _eventsPaused ? "Resume" : "Pause";
+            SetStatus(_eventsPaused ? "Events paused" : "Events resumed");
             if (!_eventsPaused)
                 ApplyEventFilter();
         };
@@ -526,6 +550,7 @@ public sealed class Z14AdminDashboardWindow : DefaultWindow
             _allEvents.Clear();
             ApplyEventFilter();
             ApplyAlertFilter();
+            SetStatus("Event feed cleared");
         };
         controls.AddChild(_clearEventsButton);
 
@@ -609,7 +634,11 @@ public sealed class Z14AdminDashboardWindow : DefaultWindow
         };
 
         var openAHelp = new Button { Text = "Open AHelp" };
-        openAHelp.OnPressed += _ => _consoleHost.ExecuteCommand("openahelp");
+        openAHelp.OnPressed += _ =>
+        {
+            SetStatus("Opening AHelp...");
+            _consoleHost.ExecuteCommand("openahelp");
+        };
         box.AddChild(openAHelp);
 
         AddArgCommand(box, "AHelp Transcript", "username", "ahelptranscript", "", AdminFlags.Adminhelp);
@@ -713,7 +742,7 @@ public sealed class Z14AdminDashboardWindow : DefaultWindow
         AddArgCommand(logsGrid, "Admin Activity", "", "adminactivity", "", AdminFlags.Logs);
         AddArgCommand(logsGrid, "Door Logs", "", "doorlogs", "", AdminFlags.Logs);
         AddArgCommand(logsGrid, "Z14 Info", "", "z14admininfo", "", AdminFlags.Admin);
-        AddArgCommand(logsGrid, "War Zone Info", "", "warzoneinfo", "", AdminFlags.Admin);
+        AddArgCommand(logsGrid, "War Zone Info", "zones", "st_warzoneinfo", "zones", AdminFlags.Admin);
         box.AddChild(MakeSection("Logs / Info", logsGrid));
 
         scroll.AddChild(box);
@@ -755,6 +784,11 @@ public sealed class Z14AdminDashboardWindow : DefaultWindow
         return new Label { Text = text, StyleClasses = { StyleClass.LabelSubText } };
     }
 
+    private void SetStatus(string text)
+    {
+        _statusLabel.Text = text;
+    }
+
     private static Label MakeValue()
     {
         return new Label { Text = "-" };
@@ -775,11 +809,19 @@ public sealed class Z14AdminDashboardWindow : DefaultWindow
         }
         else if (client && !string.IsNullOrEmpty(command))
         {
-            button.OnPressed += _ => _consoleHost.ExecuteCommand(command!);
+            button.OnPressed += _ =>
+            {
+                SetStatus($"Running {command}...");
+                _consoleHost.ExecuteCommand(command!);
+            };
         }
         else if (!string.IsNullOrEmpty(command))
         {
-            button.OnPressed += _ => OnFeatureCommand?.Invoke(command!);
+            button.OnPressed += _ =>
+            {
+                SetStatus($"Running {command}...");
+                OnFeatureCommand?.Invoke(command!);
+            };
         }
 
         container.AddChild(button);
@@ -827,6 +869,90 @@ public sealed class Z14AdminDashboardWindow : DefaultWindow
         {
             var arg = input.Text.Trim();
             var full = string.IsNullOrEmpty(arg) ? command : $"{command} {arg}";
+            SetStatus($"Running {full}...");
+            OnFeatureCommand?.Invoke(full);
+        };
+        inputRow.AddChild(button);
+
+        row.AddChild(inputRow);
+        container.AddChild(row);
+    }
+
+    private void AddCharacteristicCommand(BoxContainer container, string labelText, bool setLevel, string command, AdminFlags flag)
+    {
+        var row = new BoxContainer
+        {
+            Orientation = BoxContainer.LayoutOrientation.Vertical,
+            SeparationOverride = 2,
+            HorizontalExpand = true,
+        };
+
+        var label = new RichTextLabel
+        {
+            Text = labelText,
+            HorizontalExpand = true,
+        };
+        row.AddChild(label);
+
+        var inputRow = new BoxContainer
+        {
+            Orientation = BoxContainer.LayoutOrientation.Horizontal,
+            SeparationOverride = 5,
+            HorizontalExpand = true,
+        };
+
+        var uidInput = new LineEdit
+        {
+            PlaceHolder = "uid",
+            HorizontalExpand = true,
+            MinSize = new Vector2(80, 0),
+        };
+        inputRow.AddChild(uidInput);
+
+        var typeNames = Enum.GetNames<CharacteristicType>();
+        var typeDropdown = new OptionButton { MinWidth = 120 };
+        foreach (var name in typeNames)
+        {
+            typeDropdown.AddItem(name);
+        }
+
+        if (typeNames.Length > 0)
+            typeDropdown.SelectId(0);
+
+        inputRow.AddChild(typeDropdown);
+
+        LineEdit? levelInput = null;
+        if (setLevel)
+        {
+            levelInput = new LineEdit
+            {
+                PlaceHolder = "level",
+                MinSize = new Vector2(60, 0),
+            };
+            inputRow.AddChild(levelInput);
+        }
+
+        var button = new Button
+        {
+            Text = "Run",
+            Disabled = !_adminManager.HasFlag(flag),
+        };
+        _buttonFlags[button] = flag;
+        button.OnPressed += _ =>
+        {
+            var uid = uidInput.Text.Trim();
+            if (string.IsNullOrWhiteSpace(uid))
+            {
+                SetStatus($"{labelText}: enter a target UID");
+                return;
+            }
+
+            var type = typeNames[typeDropdown.SelectedId];
+            var full = setLevel
+                ? $"{command} {uid} {type} {levelInput?.Text.Trim()}"
+                : $"{command} {uid} {type}";
+
+            SetStatus($"Running {full}...");
             OnFeatureCommand?.Invoke(full);
         };
         inputRow.AddChild(button);
@@ -872,7 +998,9 @@ public sealed class Z14AdminDashboardWindow : DefaultWindow
         if (selected?.Metadata is not Z14AdminDashboardMap map)
             return;
 
-        OnFeatureCommand?.Invoke($"tp 0 0 {map.MapId}");
+        var cmd = $"tp 0 0 {map.MapId}";
+        SetStatus($"Running {cmd}...");
+        OnFeatureCommand?.Invoke(cmd);
     }
 
     private void RunCommandLine()
@@ -881,6 +1009,8 @@ public sealed class Z14AdminDashboardWindow : DefaultWindow
         if (string.IsNullOrWhiteSpace(text))
             return;
 
+        UserInterfaceManager.ClickSound();
+        SetStatus($"Running {text}...");
         OnFeatureCommand?.Invoke(text);
         _commandLine.Text = string.Empty;
     }

@@ -22,6 +22,7 @@ using Robust.Shared.Console;
 using Robust.Shared.Map;
 using Robust.Shared.Player;
 using Robust.Shared.Timing;
+using Robust.Shared.Utility;
 using static Content.Shared._Zona14.Administration.Dashboard.Z14AdminDashboardEuiMsg;
 
 namespace Content.Server._Zona14.Administration.UI.Dashboard;
@@ -336,6 +337,31 @@ public sealed class Z14AdminDashboardEui : BaseEui
         {
             _sawmill.Warning($"Dashboard blocked command {firstWord} due to permissions");
             return;
+        }
+
+        if (_consoleHost.AvailableCommands.TryGetValue(firstWord, out var cmd))
+        {
+            var args = new List<string>();
+            CommandParsing.ParseArguments(command, args);
+            if (args.Count > 0)
+                args.RemoveAt(0);
+
+            var shell = new Z14DashboardCommandShell(_consoleHost, Player);
+            try
+            {
+                cmd.Execute(shell, command, args.ToArray());
+            }
+            catch (Exception e)
+            {
+                shell.WriteError($"Exception while executing {firstWord}: {e.Message}");
+            }
+
+            var output = shell.OutputText;
+            if (!string.IsNullOrWhiteSpace(output))
+            {
+                SendMessage(new FeatureOutput($"Output: {firstWord}", command, output.TrimEnd()));
+                return;
+            }
         }
 
         _consoleHost.ExecuteCommand(Player, command);
