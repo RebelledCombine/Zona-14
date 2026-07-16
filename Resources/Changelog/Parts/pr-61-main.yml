@@ -1,0 +1,28 @@
+author: Roland410
+time: '2026-07-16T14:08:03Z'
+url: https://github.com/Zona-14/Zona-14/pull/61
+changes:
+- type: Add
+  message: Added a Mentor role and MentorHelp system for game-mechanics questions.
+- type: Add
+  message: Added MentorChat (msay) and mentor keybinds.
+- type: Add
+  message: Added a Mentorhelp tab to the admin dashboard.
+- type: Add
+  message: Added whole-codebase admin logging for kills, door destruction, inventory
+    equip/unequip, anti-cheat alerts, stash actions, drag-teleports, and admin commands.
+- type: Add
+  message: Expanded the admin dashboard with tabs, wrapping layouts, and a command
+    palette.
+- type: Add
+  message: Added `MapLoaderPrototypeTest` and Zona-14 integration tests for dashboard,
+    mentor help, cheat detection, door/inventory logs, and map loading.
+- type: Tweak
+  message: NewMapTeleportSystem preloading is now controlled by the `zona14.newmap_teleport_preload`
+    CVar and disabled in integration tests.
+- type: Fix
+  message: Fixed invalid runtime references in Darkscape, Swamps, and Cordon maps.
+- type: Fix
+  message: Stabilized `TestAdminLogsWindow` by snapshotting EUI state and serializing
+    log send requests.
+category: Main
