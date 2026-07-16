@@ -289,3 +289,26 @@ Follow SS14's [effective-changelog rules](https://docs.spacestation14.com/en/gen
 ### Maintainer merge workflow
 
 After merging PR, maintainer runs manual merger documented in [`Tools/_Zona14/changelog/README.md`](Tools/_Zona14/changelog/README.md). Automation (webhook bot) planned; manual flow covers gap until then.
+
+## 13. Local test workflow
+
+Before pushing, run the core local checks:
+
+```bash
+# Build
+dotnet build --configuration Tools
+
+# Zona-14 convention / marker check
+bash Tools/_Zona14/check-conventions.sh origin/master HEAD
+
+# YAML prototype linter
+dotnet run --project Content.YAMLLinter/Content.YAMLLinter.csproj -- --configuration Tools
+
+# Unit tests
+dotnet test --configuration Tools Content.Tests/Content.Tests.csproj
+
+# Integration tests (full run needs ~16 GB; on 8 GB machines use --filter by namespace/class)
+dotnet test --configuration Tools Content.IntegrationTests/Content.IntegrationTests.csproj
+```
+
+The `zona14.newmap_teleport_preload` CVar controls whether the server preloads all `MapLoaderPrototype` targets at startup. It is enabled in `Resources/ConfigPresets/StalkerBuild/sttools.toml` and `strelease.toml` for tools/release builds, and disabled by `Content.IntegrationTests/PoolManager.Cvars.cs` so integration tests do not preload every map.

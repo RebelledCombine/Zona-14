@@ -1,4 +1,5 @@
 using Content.Shared._NC.Trade;
+using Content.Shared.Database; // Zona14
 using Robust.Shared.Prototypes;
 
 
@@ -31,7 +32,13 @@ public sealed partial class NcStoreLogicSystem
             plan.UnitsPerPurchase);
         _inventory.InvalidateInventoryCache(user);
 
-        return FinalizeBuy(user, listing, plan, spawnedUnits);
+        if (!FinalizeBuy(user, listing, plan, spawnedUnits))
+            return false;
+
+        // Zona14: log NC store purchase
+        _adminLog.Add(LogType.STShop, LogImpact.Low,
+            $"{ToPrettyString(user):player} bought {listing.ProductEntity} x{plan.Purchases} from {ToPrettyString(machine):shop} for {plan.TotalPrice} {plan.Currency}");
+        return true;
     }
 
     private bool TryPrepareBuy(
@@ -174,7 +181,7 @@ public sealed partial class NcStoreLogicSystem
     {
         if (store == null)
             return false;
-        return TrySellScenario(listingId, store, user, user, count, out _);
+        return TrySellScenario(listingId, machine, store, user, user, count, out _);
     }
 
     public bool TrySellFromContainer(
@@ -188,12 +195,13 @@ public sealed partial class NcStoreLogicSystem
     {
         if (store == null)
             return false;
-        return TrySellScenario(listingId, store, user, container, count, out var sold) &&
-            LogSellFromContainer(sold, listingId, store, container);
+        return TrySellScenario(listingId, machine, store, user, container, count, out var sold) &&
+            LogSellFromContainer(machine, sold, listingId, store, container);
     }
 
     private bool TrySellScenario(
         string listingId,
+        EntityUid machine,
         NcStoreComponent store,
         EntityUid user,
         EntityUid root,
@@ -248,11 +256,18 @@ public sealed partial class NcStoreLogicSystem
         sold = actual;
 
         if (root == user)
+        {
             Sawmill.Info($"TrySell: OK {listing.ProductEntity} x{actual} for {unitPrice} {currency} each");
+
+            // Zona14: log NC store sale
+            _adminLog.Add(LogType.STShop, LogImpact.Low,
+                $"{ToPrettyString(user):player} sold {actual}x {listing.ProductEntity} to {ToPrettyString(machine):shop} for {totalL} {currency}");
+        }
+
         return true;
     }
 
-    private bool LogSellFromContainer(int sold, string listingId, NcStoreComponent store, EntityUid container)
+    private bool LogSellFromContainer(EntityUid machine, int sold, string listingId, NcStoreComponent store, EntityUid container)
     {
         if (sold <= 0)
             return false;
@@ -264,6 +279,11 @@ public sealed partial class NcStoreLogicSystem
             return true;
         Sawmill.Info(
             $"TrySellFromContainer: OK {listing.ProductEntity} x{sold} for {unitPrice} {currency} each (container={ToPrettyString(container)})");
+
+        // Zona14: log NC store sale from container
+        var total = unitPrice * sold;
+        _adminLog.Add(LogType.STShop, LogImpact.Low,
+            $"{ToPrettyString(container):container} sold {sold}x {listing.ProductEntity} to {ToPrettyString(machine):shop} for {total} {currency}");
         return true;
     }
 
@@ -307,6 +327,10 @@ public sealed partial class NcStoreLogicSystem
         GiveCurrency(user, currencyId, (int) totalRewardL);
         _inventory.InvalidateInventoryCache(user);
         listing.RemainingCount = 0;
+
+        // Zona14: log NC store exchange
+        _adminLog.Add(LogType.STShop, LogImpact.Low,
+            $"{ToPrettyString(user):player} exchanged {requiredCount}x {listing.ProductEntity} at {ToPrettyString(machine):shop} for {totalRewardL} {currencyId}");
         return true;
     }
 }

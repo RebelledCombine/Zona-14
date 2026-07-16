@@ -16,6 +16,7 @@ using Content.Shared.CartridgeLoader;
 using Content.Shared.Chemistry.Components;
 using Content.Shared.Clothing.Components;
 using Content.Shared.Database;
+using Content.Shared._Zona14.Administration.Logs; // Zona14
 using Content.Shared.Hands;
 using Content.Shared.Implants.Components;
 using Content.Shared.Interaction;
@@ -33,6 +34,7 @@ using Robust.Server.GameObjects;
 using Robust.Server.Player;
 using Robust.Shared.Containers;
 using Robust.Shared.Map;
+using Robust.Shared.Network; // Zona14
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization.Manager;
@@ -139,6 +141,10 @@ public sealed class StalkerRepositorySystem : EntitySystem
 
         Task.Run(() => _sponsors.SetGiven(session.UserId, true));
         _stalkerStorageSystem.SaveStorage(component);
+
+        // Zona14: log sponsor items added to repository
+        _adminLogger.Add(LogType.STStorage, LogImpact.Low,
+            $"{session:player} received sponsor items in {ToPrettyString(uid):repo}");
     }
 
     public void GiveLoadout(Entity<StalkerRepositoryComponent> entity, List<EntProtoId> items)
@@ -149,6 +155,19 @@ public sealed class StalkerRepositorySystem : EntitySystem
             InsertToRepo(entity, info);
         }
         _stalkerStorageSystem.SaveStorage(entity);
+
+        // Zona14: log loadout items inserted into repository
+        var owner = entity.Comp.StorageOwner;
+        if (_playerManager.TryGetSessionByUsername(owner, out var session))
+        {
+            _adminLogger.Add(LogType.STStorage, LogImpact.Medium,
+                $"{session:player} received loadout items in {ToPrettyString(entity.Owner):repo}");
+        }
+        else
+        {
+            _adminLogger.Add(LogType.STStorage, LogImpact.Medium,
+                $"{owner} received loadout items in {ToPrettyString(entity.Owner):repo}");
+        }
     }
 
     #endregion
@@ -295,7 +314,7 @@ public sealed class StalkerRepositorySystem : EntitySystem
                     component.ContainedItems.Remove(item);
 
                 EjectItems(GetEntity(msg.Entity), item, msg.Count);
-                _adminLogger.Add(LogType.Action, LogImpact.Low, $"Player {Name(msg.Actor):user} ejected {msg.Count} {msg.Item.Name} from repository");
+                _adminLogger.Add(LogType.STStorage, LogImpact.Low, $"{ToPrettyString(msg.Actor):user} ejected {msg.Count} {msg.Item.Name} from {ToPrettyString(uid):repo}");
                 _stalkerStorageSystem.SaveStorage(component);
                 UpdateUiState(msg.Actor, GetEntity(msg.Entity), component);
                 _loadoutSystem.SendLoadoutStateUpdate(GetEntity(msg.Entity), component, msg.Actor);
@@ -343,7 +362,7 @@ public sealed class StalkerRepositorySystem : EntitySystem
         RemoveItems(msg.Actor, toDelete.Value.Item1, toDelete.Value.Item2);
 
         // logging, saving, ui updating
-        _adminLogger.Add(LogType.Action, LogImpact.Low, $"Player {Name(msg.Actor):user} inserted {msg.Count} {msg.Item.Name} into repository");
+        _adminLogger.Add(LogType.STStorage, LogImpact.Low, $"{ToPrettyString(msg.Actor):user} inserted {msg.Count} {msg.Item.Name} into {ToPrettyString(uid):repo}");
         _stalkerStorageSystem.SaveStorage(component);
         RaiseLocalEvent(msg.Actor, new RepositoryItemInjectedEvent(uid, msg.Item));
         UpdateUiState(msg.Actor, GetEntity(msg.Entity), component);
@@ -369,7 +388,7 @@ public sealed class StalkerRepositorySystem : EntitySystem
         var toDelete = InsertToRepositoryRecursively(args.User, (uid, component), itemInfo);
 
         // logging, saving, event raising
-        _adminLogger.Add(LogType.Action, LogImpact.Low, $"Player {Name(args.User):user} inserted 1 {Name(args.Used)} into repository");
+        _adminLogger.Add(LogType.STStorage, LogImpact.Low, $"{ToPrettyString(args.User):user} inserted {ToPrettyString(args.Used):item} into {ToPrettyString(uid):repo}");
         _stalkerStorageSystem.SaveStorage(component);
         RaiseLocalEvent(args.User, new RepositoryItemInjectedEvent(args.Target, itemInfo));
         _loadoutSystem.SendLoadoutStateUpdate(uid, component, args.User);
@@ -1027,7 +1046,25 @@ public sealed class StalkerRepositorySystem : EntitySystem
         if (ckey != null && newRecordOnly && !_newRecords.Contains(ckey))
             return 0;
 
-        return RemoveItemsInternal(entity, id, amount);
+        var removedCount = RemoveItemsInternal(entity, id, amount);
+
+        // Zona14: log item removal from repository
+        if (removedCount > 0)
+        {
+            var owner = ckey ?? entity.Comp.StorageOwner;
+            if (_playerManager.TryGetSessionByUsername(owner, out var session))
+            {
+                _adminLogger.Add(LogType.STStorage, LogImpact.Medium,
+                    $"{session:player} removed {removedCount}x {id} from {ToPrettyString(entity.Owner):repo}");
+            }
+            else
+            {
+                _adminLogger.Add(LogType.STStorage, LogImpact.Medium,
+                    $"{owner} removed {removedCount}x {id} from {ToPrettyString(entity.Owner):repo}");
+            }
+        }
+
+        return removedCount;
     }
 
 
@@ -1115,6 +1152,11 @@ public sealed class StalkerRepositorySystem : EntitySystem
 
         // Delete the original item
         RemoveItems(user, toDelete.Value.Item1, toDelete.Value.Item2);
+
+        // Zona14: log loadout quick-store
+        _adminLogger.Add(LogType.STLoadout, LogImpact.Low,
+            $"{ToPrettyString(user):player} quick-stored {ToPrettyString(item):item} into {ToPrettyString(repository.Owner):repo}");
+
         return true;
     }
 

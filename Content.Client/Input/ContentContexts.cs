@@ -20,6 +20,7 @@ namespace Content.Client.Input
             common.AddFunction(ContentKeyFunctions.FocusLOOC);
             common.AddFunction(ContentKeyFunctions.FocusOOC);
             common.AddFunction(ContentKeyFunctions.FocusAdminChat);
+            common.AddFunction(ContentKeyFunctions.FocusMentorChat); // Zona14: mentor chat focus
             common.AddFunction(ContentKeyFunctions.FocusConsoleChat);
             common.AddFunction(ContentKeyFunctions.FocusDeadChat);
             common.AddFunction(ContentKeyFunctions.CycleChatChannelForward);
@@ -27,6 +28,7 @@ namespace Content.Client.Input
             common.AddFunction(ContentKeyFunctions.EscapeContext);
             common.AddFunction(ContentKeyFunctions.ExamineEntity);
             common.AddFunction(ContentKeyFunctions.OpenAHelp);
+            common.AddFunction(ContentKeyFunctions.OpenMentorHelp); // Zona14: mentor help key
             common.AddFunction(ContentKeyFunctions.TakeScreenshot);
             common.AddFunction(ContentKeyFunctions.TakeScreenshotNoUI);
             common.AddFunction(ContentKeyFunctions.ToggleFullscreen);
@@ -131,6 +133,7 @@ namespace Content.Client.Input
             common.AddFunction(ContentKeyFunctions.OpenTileSpawnWindow);
             common.AddFunction(ContentKeyFunctions.OpenDecalSpawnWindow);
             common.AddFunction(ContentKeyFunctions.OpenAdminMenu);
+            common.AddFunction(ContentKeyFunctions.OpenZ14Dashboard); // Zona14: dashboard hotkey
             common.AddFunction(ContentKeyFunctions.OpenGuidebook);
         }
     }

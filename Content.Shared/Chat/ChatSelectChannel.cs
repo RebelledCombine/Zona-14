@@ -7,7 +7,7 @@
     ///     Maps to <see cref="ChatChannel"/>, giving better names.
     /// </remarks>
     [Flags]
-    public enum ChatSelectChannel : ushort
+    public enum ChatSelectChannel : uint // Zona14: expanded to uint to fit MentorChat
     {
         None = 0,
 
@@ -56,6 +56,12 @@
         /// <summary>
         ///     Narration - Admin/GM scene descriptions
         /// </summary>
-        Narration = (ushort) (1 << 15)
+        Narration = ChatChannel.Narration,
+
+        // Zona14: mentor chat channel
+        /// <summary>
+        ///     Mentor chat.
+        /// </summary>
+        MentorChat = ChatChannel.MentorChat
     }
 }

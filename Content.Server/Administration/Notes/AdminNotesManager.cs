@@ -1,9 +1,11 @@
 using System.Text;
 using System.Threading.Tasks;
+using Content.Server.Administration.Logs;
 using Content.Server.Administration.Managers;
 using Content.Server.Database;
 using Content.Server.EUI;
 using Content.Server.GameTicking;
+using Content.Shared._Zona14.Administration.Logs;
 using Content.Shared.Administration;
 using Content.Shared.Administration.Notes;
 using Content.Shared.CCVar;
@@ -23,6 +25,7 @@ public sealed class AdminNotesManager : IAdminNotesManager, IPostInjectInit
     [Dependency] private readonly EuiManager _euis = default!;
     [Dependency] private readonly IEntitySystemManager _systems = default!;
     [Dependency] private readonly IConfigurationManager _config = default!;
+    [Dependency] private readonly IAdminLogManager _adminLog = default!;
 
     public const string SawmillId = "admin.notes";
 
@@ -75,7 +78,8 @@ public sealed class AdminNotesManager : IAdminNotesManager, IPostInjectInit
         // There's a foreign key constraint in place here. If there's no player record, it will fail.
         // Not like there's much use in adding notes on accounts that have never connected.
         // You can still ban them just fine, which is why we should allow admins to view their bans with the notes panel
-        if (await _db.GetPlayerRecordByUserId((NetUserId) player) is null)
+        var playerRecord = await _db.GetPlayerRecordByUserId((NetUserId) player);
+        if (playerRecord is null)
             return;
 
         var sb = new StringBuilder($"{createdBy.Name} added a");
@@ -163,6 +167,10 @@ public sealed class AdminNotesManager : IAdminNotesManager, IPostInjectInit
             seen
         );
         NoteAdded?.Invoke(note);
+
+        // Zona14: log admin note addition
+        _adminLog.Add(LogType.Action, LogImpact.High,
+            $"{createdBy:player} added {type} note for {new AdminLogPlayerValue((NetUserId) player, playerRecord.LastSeenUserName):subject}: {message}");
     }
 
     private async Task<SharedAdminNote?> GetAdminRemark(int id, NoteType type)
@@ -212,6 +220,11 @@ public sealed class AdminNotesManager : IAdminNotesManager, IPostInjectInit
 
         _sawmill.Info($"{deletedBy.Name} has deleted {type} {noteId}");
         NoteDeleted?.Invoke(note);
+
+        // Zona14: log admin note deletion
+        var deletedTargetName = await GetPlayerName(note.Player);
+        _adminLog.Add(LogType.Action, LogImpact.Extreme,
+            $"{deletedBy:player} deleted {type} note {noteId} for {new AdminLogPlayerValue(note.Player, deletedTargetName):subject}");
     }
 
     public async Task ModifyAdminRemark(int noteId, NoteType type, ICommonSession editedBy, string message, NoteSeverity? severity, bool secret, DateTime? expiryTime)
@@ -304,6 +317,17 @@ public sealed class AdminNotesManager : IAdminNotesManager, IPostInjectInit
             ExpiryTime = expiryTime
         };
         NoteModified?.Invoke(newNote);
+
+        // Zona14: log admin note modification
+        var modifiedImpact = type is NoteType.ServerBan or NoteType.RoleBan ? LogImpact.Extreme : LogImpact.Medium;
+        var modifiedTargetName = await GetPlayerName(note.Player);
+        _adminLog.Add(LogType.Action, modifiedImpact,
+            $"{editedBy:player} modified {type} note {noteId} for {new AdminLogPlayerValue(note.Player, modifiedTargetName):subject}");
+    }
+
+    private async Task<string> GetPlayerName(NetUserId userId)
+    {
+        return (await _db.GetPlayerRecordByUserId(userId))?.LastSeenUserName ?? userId.ToString();
     }
 
     public async Task<List<IAdminRemarksRecord>> GetAllAdminRemarks(Guid player)

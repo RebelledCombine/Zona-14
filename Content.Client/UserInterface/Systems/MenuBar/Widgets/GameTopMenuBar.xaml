@@ -93,6 +93,17 @@
         HorizontalExpand="True"
         AppendStyleClass="{x:Static style:StyleClass.ButtonSquare}"
         />
+    <!-- // Zona14: MHelp button -->
+    <ui:MenuButton
+        Name="MHelpButton"
+        Access="Internal"
+        Icon="{xe:Tex '/Textures/Interface/info.svg.192dpi.png'}"
+        BoundKey="{x:Static is:ContentKeyFunctions.OpenMentorHelp}"
+        ToolTip="{Loc 'ui-options-function-open-mentor-help'}"
+        MinSize="42 64"
+        HorizontalExpand="True"
+        AppendStyleClass="{x:Static style:StyleClass.ButtonSquare}"
+        />
     <ui:MenuButton
         Name="AHelpButton"
         Access="Internal"

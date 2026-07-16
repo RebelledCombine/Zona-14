@@ -34,8 +34,7 @@ public sealed class AdminLogsEui : BaseEui
         LogsWindow.OnClose += OnCloseWindow;
         LogsControl = LogsWindow.Logs;
 
-        LogsControl.LogSearch.OnTextEntered += _ => RequestLogs();
-        LogsControl.RefreshButton.OnPressed += _ => RequestLogs();
+        LogsControl.RequestLogs += RequestLogs; // Zona14: centralized request trigger for filter presets
         LogsControl.NextButton.OnPressed += _ => NextLogs();
         LogsControl.PopOutButton.OnPressed += _ => PopOut();
         LogsControl.ExportLogs.OnPressed += _ => ExportLogs();
@@ -66,11 +65,15 @@ public sealed class AdminLogsEui : BaseEui
 
     private void RequestLogs()
     {
+        // Zona14: don't send requests until the first state has been received and the player list initialized.
+        if (FirstState)
+            return;
+
         var request = new LogsRequest(
-            LogsControl.SelectedRoundId,
+            LogsControl.SelectedRoundId, // Zona14: keep explicit round id, 0 is valid for pre-round logs
             LogsControl.Search,
             LogsControl.SelectedTypes.ToHashSet(),
-            null,
+            LogsControl.SelectedImpacts.ToHashSet(),
             null,
             null,
             LogsControl.SelectedPlayers.Count != 0,
@@ -196,7 +199,8 @@ public sealed class AdminLogsEui : BaseEui
         }
 
         LogsControl.SetCurrentRound(s.RoundId);
-        LogsControl.SetPlayers(s.Players);
+        // Zona14: only pre-select players on the first state; later updates preserve the user's selection.
+        LogsControl.SetPlayers(s.Players, FirstState ? s.SelectedPlayers : null);
         LogsControl.UpdateCount(round: s.RoundLogs);
 
         if (!FirstState)
@@ -206,6 +210,7 @@ public sealed class AdminLogsEui : BaseEui
 
         FirstState = false;
         LogsControl.SetRoundSpinBox(s.RoundId);
+        // Zona14: initial load is triggered here so the round spin box is initialized before RequestLogs.
         RequestLogs();
     }
 
@@ -235,6 +240,17 @@ public sealed class AdminLogsEui : BaseEui
                 if (setLogFilter.Types != null)
                     LogsControl.SetTypesSelection(setLogFilter.Types, setLogFilter.InvertTypes);
 
+                if (setLogFilter.Impacts != null)
+                    LogsControl.SetImpactsSelection(setLogFilter.Impacts, setLogFilter.InvertImpacts);
+
+                // Zona14: pre-select players from SetLogFilter so the request filter matches.
+                if (setLogFilter.Players != null)
+                    LogsControl.SetPlayersSelection(setLogFilter.Players);
+
+                // Zona14: only request logs from SetLogFilter once the initial state has been received.
+                // HandleState will call RequestLogs if SetLogFilter arrives before the first state.
+                if (!FirstState)
+                    RequestLogs();
                 break;
         }
     }

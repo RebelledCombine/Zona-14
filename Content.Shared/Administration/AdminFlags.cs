@@ -124,6 +124,12 @@
         /// </summary>
         NameColor = 1 << 21,
 
+        // Zona14: mentor flag
+        /// <summary>
+        ///     Lets you use the mentor help system and mentor chat.
+        /// </summary>
+        Mentor = 1u << 22,
+
         /// <summary>
         ///     Dangerous host permissions like scsi.
         /// </summary>

@@ -56,6 +56,10 @@ def validate_prototype(prototype: Any, file_path: Path, errors: list[str]) -> No
 
 def validate_file(file_path: Path) -> list[str]:
     errors: list[str] = []
+    # Zona14: map files contain engine-specific tags (e.g. !type:SoundPathSpecifier)
+    # and are validated by the YAML linter, not this data-prototype check.
+    if "Resources/Maps" in str(file_path):
+        return errors
     try:
         with open(file_path, "r", encoding="utf-8") as f:
             data = yaml.safe_load(f)

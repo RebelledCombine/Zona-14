@@ -1,12 +1,13 @@
 using System;
 using Content.Server._Stalker.WarZone;
+using Content.Server.Administration.Logs; // Zona14
 using Content.Server.Database;
 using Content.Shared.Administration;
+using Content.Shared.Database; // Zona14
 using Content.Shared._Stalker.WarZone;
 using Robust.Shared.Console;
 using Robust.Shared.IoC;
 using Robust.Shared.Prototypes;
-using Robust.Shared.Console;
 using Content.Server.Administration;
 
 namespace Content.Server._Stalker.WarZone.Commands;
@@ -17,6 +18,7 @@ public sealed class WarZoneAdminCommand : IConsoleCommand
     [Dependency] private readonly EntityManager _entityManager = default!;
     [Dependency] private readonly IServerDbManager _dbManager = default!;
     [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
+    [Dependency] private readonly IAdminLogManager _adminLog = default!; // Zona14
     public string Command => "st_warzoneadmin";
     public string Description => "Admin command to modify warzone points and ownership.";
     public string Help => "Usage:\n" +
@@ -28,6 +30,8 @@ public sealed class WarZoneAdminCommand : IConsoleCommand
 
     public async void Execute(IConsoleShell shell, string argStr, string[] args)
     {
+        IoCManager.InjectDependencies(this); // Zona14: ensure dependencies for IConsoleCommand
+
         if (args.Length < 2)
         {
             shell.WriteLine(Help);
@@ -126,6 +130,10 @@ public sealed class WarZoneAdminCommand : IConsoleCommand
 
             await _dbManager.SetStalkerZoneOwnershipAsync(zoneProtoId, bandProtoId, factionProtoId);
             shell.WriteLine($"Set owner of warzone {zoneProtoId} to {target} '{protoId}'");
+
+            // Zona14: log war zone owner change
+            _adminLog.Add(LogType.STWarZone, LogImpact.Extreme,
+                $"{shell.Player:player} set warzone {zoneProtoId} owner to {target} {protoId}");
             return;
         }
 
@@ -162,6 +170,10 @@ public sealed class WarZoneAdminCommand : IConsoleCommand
             await _dbManager.ClearStalkerZoneOwnershipAsync(zoneProtoId);
 
             shell.WriteLine($"Cleared ownership of warzone {zoneProtoId}");
+
+            // Zona14: log war zone ownership clear
+            _adminLog.Add(LogType.STWarZone, LogImpact.Extreme,
+                $"{shell.Player:player} cleared warzone {zoneProtoId} ownership");
             return;
         }
 

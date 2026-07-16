@@ -8,12 +8,34 @@ using Content.IntegrationTests.Tests.Interaction;
 using Content.Server.Administration.Commands;
 using Content.Server.Administration.Logs;
 using Content.Shared.Database;
+using Robust.Client.UserInterface;
 
 namespace Content.IntegrationTests.Tests.Administration.Logs;
 
 public sealed class LogWindowTest : InteractionTest
 {
     protected override PoolSettings Settings => new() { Connected = true, Dirty = true, AdminLogsEnabled = true, DummyTicker = false };
+
+    // Zona14: poll the logs container for visible labels after a refresh until the server response arrives.
+    private async Task<AdminLogLabel[]> WaitForVisibleLogs(Control container, int timeoutTicks)
+    {
+        AdminLogLabel[] result = Array.Empty<AdminLogLabel>();
+
+        // Check every few ticks to keep latency low, but cap the number of ticks to avoid a long poll.
+        for (var i = 0; i < timeoutTicks; i++)
+        {
+            await RunTicks(5);
+            await Client.WaitPost(() =>
+            {
+                result = container.Children.Where(x => x.Visible && x is AdminLogLabel).Cast<AdminLogLabel>().ToArray();
+            });
+
+            if (result.Length >= 1)
+                break;
+        }
+
+        return result;
+    }
 
     [Test]
     public async Task TestAdminLogsWindow()
@@ -40,8 +62,8 @@ public sealed class LogWindowTest : InteractionTest
         // Search for the log we added earlier.
         await Client.WaitPost(() => search.Text = guid.ToString());
         await ClickControl(refresh);
-        await RunTicks(5);
-        var searchResult = cont.Children.Where(x => x.Visible && x is AdminLogLabel).Cast<AdminLogLabel>().ToArray();
+        // Zona14: wait for the NewLogs response rather than a fixed number of ticks.
+        var searchResult = await WaitForVisibleLogs(cont, timeoutTicks: 3);
         Assert.That(searchResult.Length, Is.EqualTo(1));
         Assert.That(searchResult[0].Log.Message, Contains.Substring($" test log 1: {guid}"));
 
@@ -52,8 +74,8 @@ public sealed class LogWindowTest : InteractionTest
         // Update the search and refresh
         await Client.WaitPost(() => search.Text = guid.ToString());
         await ClickControl(refresh);
-        await RunTicks(5);
-        searchResult = cont.Children.Where(x => x.Visible && x is AdminLogLabel).Cast<AdminLogLabel>().ToArray();
+        // Zona14: wait for the NewLogs response rather than a fixed number of ticks.
+        searchResult = await WaitForVisibleLogs(cont, timeoutTicks: 3);
         Assert.That(searchResult.Length, Is.EqualTo(1));
         Assert.That(searchResult[0].Log.Message, Contains.Substring($" test log 2: {guid}"));
     }

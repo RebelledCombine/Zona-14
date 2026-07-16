@@ -2,7 +2,10 @@ delete-verb-get-data-text = Удалить
 edit-solutions-verb-get-data-text = Редактировать растворы
 explode-verb-get-data-text = Взорвать
 ahelp-verb-get-data-text = Написать
+# Zona14: entity/player history admin verbs
 admin-verbs-admin-logs-entity = Логи сущности
+admin-verbs-admin-logs-player = Логи игрока
+# End Zona14
 admin-verbs-teleport-to = Телепортироваться к
 admin-verbs-teleport-here = Телепортировать сюда
 admin-verbs-freeze = Заморозить

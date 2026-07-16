@@ -1,4 +1,5 @@
 using System.Linq;
+using Content.Server.Administration.Logs; // Zona14
 using Content.Server.CartridgeLoader;
 using Content.Server.Chat.Systems;
 using Content.Server.Database;
@@ -13,6 +14,7 @@ using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Robust.Shared.Timing;
+using Content.Shared.Database; // Zona14
 
 namespace Content.Server._Stalker_EN.FactionRelations;
 
@@ -32,6 +34,7 @@ public sealed class STFactionRelationsCartridgeSystem : EntitySystem
     [Dependency] private readonly IPrototypeManager _protoManager = default!;
     [Dependency] private readonly IRobustRandom _random = default!;
     [Dependency] private readonly SharedSTFactionResolutionSystem _factionResolution = default!;
+    [Dependency] private readonly IAdminLogManager _adminLog = default!; // Zona14
 
     private static ProtoId<STFactionRelationDefaultsPrototype> DefaultsProtoId => SharedSTFactionResolutionSystem.DefaultsProtoId;
 
@@ -536,6 +539,10 @@ public sealed class STFactionRelationsCartridgeSystem : EntitySystem
         initiatingFaction = ResolvePrimary(initiatingFaction);
         targetFaction = ResolvePrimary(targetFaction);
 
+        ICommonSession? actor = null;
+        if (TryComp<ActorComponent>(initiatorUid, out var actorComp))
+            actor = actorComp.PlayerSession;
+
         var factionIds = GetFactionIds();
         if (factionIds == null || !factionIds.Contains(initiatingFaction) || !factionIds.Contains(targetFaction))
             return STFactionRelationChangeResult.InvalidFaction;
@@ -589,6 +596,19 @@ public sealed class STFactionRelationsCartridgeSystem : EntitySystem
             }
 
             BroadcastUiUpdate();
+
+            // Zona14: log faction relation proposal
+            if (actor is { } actorSession)
+            {
+                _adminLog.Add(LogType.STFactionRelation, LogImpact.Medium,
+                    $"{actorSession:player} proposed faction relation {initiatingFaction} -> {targetFaction} to {proposedRelation}");
+            }
+            else
+            {
+                _adminLog.Add(LogType.STFactionRelation, LogImpact.Medium,
+                    $"System proposed faction relation {initiatingFaction} -> {targetFaction} to {proposedRelation}");
+            }
+
             return STFactionRelationChangeResult.ProposalCreated;
         }
 
@@ -596,7 +616,8 @@ public sealed class STFactionRelationsCartridgeSystem : EntitySystem
         SetRelation(initiatingFaction, targetFaction, proposedRelation,
             broadcast: true,
             customMessage: customMessage,
-            kind: STFactionRelationAnnouncementKind.DirectChange);
+            kind: STFactionRelationAnnouncementKind.DirectChange,
+            actor: actor);
 
         return STFactionRelationChangeResult.Success;
     }
@@ -617,10 +638,27 @@ public sealed class STFactionRelationsCartridgeSystem : EntitySystem
         _pendingProposals.Remove(proposalKey);
         DeleteProposalAsync(initiatingFaction, acceptingFaction);
 
+        ICommonSession? actor = null;
+        if (TryComp<ActorComponent>(acceptorUid, out var actorComp))
+            actor = actorComp.PlayerSession;
+
         SetRelation(initiatingFaction, acceptingFaction, proposal.ProposedRelation,
             broadcast: true,
             customMessage: proposal.CustomMessage,
-            kind: STFactionRelationAnnouncementKind.ProposalAccepted);
+            kind: STFactionRelationAnnouncementKind.ProposalAccepted,
+            actor: actor);
+
+        // Zona14: log faction relation proposal acceptance
+        if (actor is { } actorSession)
+        {
+            _adminLog.Add(LogType.STFactionRelation, LogImpact.Medium,
+                $"{actorSession:player} accepted faction relation {initiatingFaction} <-> {acceptingFaction} to {proposal.ProposedRelation}");
+        }
+        else
+        {
+            _adminLog.Add(LogType.STFactionRelation, LogImpact.Medium,
+                $"System accepted faction relation {initiatingFaction} <-> {acceptingFaction} to {proposal.ProposedRelation}");
+        }
 
         return STFactionRelationChangeResult.ProposalAccepted;
     }
@@ -651,6 +689,11 @@ public sealed class STFactionRelationsCartridgeSystem : EntitySystem
         }
 
         BroadcastUiUpdate();
+
+        // Zona14: log faction relation proposal rejection
+        _adminLog.Add(LogType.STFactionRelation, LogImpact.Medium,
+            $"Faction {rejectingFaction} rejected relation proposal {initiatingFaction} -> {proposal.ProposedRelation}");
+
         return STFactionRelationChangeResult.ProposalRejected;
     }
 
@@ -666,6 +709,10 @@ public sealed class STFactionRelationsCartridgeSystem : EntitySystem
         _pendingProposals.Remove(proposalKey);
         DeleteProposalAsync(initiatingFaction, targetFaction);
         BroadcastUiUpdate();
+
+        // Zona14: log faction relation proposal cancellation
+        _adminLog.Add(LogType.STFactionRelation, LogImpact.Medium,
+            $"Faction {initiatingFaction} cancelled relation proposal to {targetFaction}");
     }
 
     /// <summary>
@@ -677,7 +724,8 @@ public sealed class STFactionRelationsCartridgeSystem : EntitySystem
         STFactionRelationType type,
         bool broadcast = true,
         string? customMessage = null,
-        STFactionRelationAnnouncementKind kind = STFactionRelationAnnouncementKind.DirectChange)
+        STFactionRelationAnnouncementKind kind = STFactionRelationAnnouncementKind.DirectChange,
+        ICommonSession? actor = null)
     {
         // Resolve aliases so DB stores under the primary faction
         factionA = ResolvePrimary(factionA);
@@ -703,6 +751,21 @@ public sealed class STFactionRelationsCartridgeSystem : EntitySystem
         // Remove any pending proposals between these factions since the relation just changed
         RemoveProposalsBetween(factionA, factionB);
 
+        // Zona14: log faction relation change
+        if (oldRelation != type)
+        {
+            if (actor is { } actorSession)
+            {
+                _adminLog.Add(LogType.STFactionRelation, LogImpact.High,
+                    $"{actorSession:player} set faction relation {factionA} <-> {factionB} from {oldRelation} to {type}");
+            }
+            else
+            {
+                _adminLog.Add(LogType.STFactionRelation, LogImpact.High,
+                    $"System set faction relation {factionA} <-> {factionB} from {oldRelation} to {type}");
+            }
+        }
+
         BroadcastUiUpdate();
     }
 
@@ -710,7 +773,7 @@ public sealed class STFactionRelationsCartridgeSystem : EntitySystem
     /// Clears all DB overrides and reverts to YAML defaults.
     /// Also clears all pending proposals.
     /// </summary>
-    public void ResetAllRelations()
+    public void ResetAllRelations(ICommonSession? actor = null)
     {
         _dbOverrides.Clear();
         _pendingProposals.Clear();
@@ -718,6 +781,18 @@ public sealed class STFactionRelationsCartridgeSystem : EntitySystem
         ClearRelationsAsync();
         ClearProposalsAsync();
         BroadcastUiUpdate();
+
+        // Zona14: log all faction relations reset
+        if (actor is { } actorSession)
+        {
+            _adminLog.Add(LogType.STFactionRelation, LogImpact.Extreme,
+                $"{actorSession:player} reset all faction relations");
+        }
+        else
+        {
+            _adminLog.Add(LogType.STFactionRelation, LogImpact.Extreme,
+                $"System reset all faction relations");
+        }
     }
 
     #endregion

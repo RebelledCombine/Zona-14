@@ -106,6 +106,23 @@ namespace Content.Client.Administration.UI.Bwoink
             UpdateTypingIndicator();
         }
 
+        // Zona14: show the assigned admin for this AHelp ticket
+        public void SetHandler(string? adminName)
+        {
+            if (string.IsNullOrEmpty(adminName))
+            {
+                HandlerLabel.Visible = false;
+                return;
+            }
+
+            var msg = new FormattedMessage();
+            msg.PushColor(Color.LightBlue);
+            msg.AddText(Loc.GetString("admin-ahelp-assigned-to", ("admin", adminName)));
+            msg.Pop();
+            HandlerLabel.SetMessage(msg);
+            HandlerLabel.Visible = true;
+        }
+
         protected override void Dispose(bool disposing)
         {
             base.Dispose(disposing);

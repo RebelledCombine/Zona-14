@@ -13,7 +13,7 @@ namespace Content.Client.UserInterface.Systems.Chat.Controls;
 public sealed partial class ChannelFilterPopup : Popup
 {
     // Some builds might not include ChatChannel.Narration, so we treat it as a bitflag constant.
-    private const ChatChannel NarrationChannel = (ChatChannel) (1 << 15);
+    private const ChatChannel NarrationChannel = (ChatChannel) (1u << 15); // Zona14: use unsigned literal
 
     // order in which the available channel filters show up when available
     private static readonly ChatChannel[] ChannelFilterOrder =
@@ -30,6 +30,7 @@ public sealed partial class ChannelFilterPopup : Popup
         ChatChannel.Admin,
         ChatChannel.AdminAlert,
         ChatChannel.AdminChat,
+        ChatChannel.MentorChat, // Zona14: mentor chat filter
         ChatChannel.Server
     };
 

@@ -257,6 +257,9 @@ internal sealed partial class ChatManager : IChatManager
             case OOCChatType.Admin:
                 SendAdminChat(player, message);
                 break;
+            case OOCChatType.Mentor: // Zona14: mentor chat
+                SendMentorChat(player, message);
+                break;
         }
     }
 
@@ -325,6 +328,44 @@ internal sealed partial class ChatManager : IChatManager
 
         _discordLink.SendMessage(message, player.Name, ChatChannel.AdminChat);
         _adminLogger.Add(LogType.Chat, $"Admin chat from {player:Player}: {message}");
+    }
+
+    // Zona14: mentor chat
+    private void SendMentorChat(ICommonSession player, string message)
+    {
+        var adminData = _adminManager.GetAdminData(player);
+        if (adminData?.HasFlag(AdminFlags.Admin) != true && adminData?.HasFlag(AdminFlags.Mentor) != true)
+        {
+            _adminLogger.Add(LogType.Chat, LogImpact.Extreme, $"{player:Player} attempted to send mentor message but was not mentor/admin");
+            return;
+        }
+
+        var clients = _adminManager.ActiveAdmins
+            .Where(p =>
+            {
+                var data = _adminManager.GetAdminData(p);
+                return data?.HasFlag(AdminFlags.Admin) == true || data?.HasFlag(AdminFlags.Mentor) == true;
+            })
+            .Select(p => p.Channel);
+
+        var wrappedMessage = Loc.GetString("chat-manager-send-mentor-chat-wrap-message",
+            ("mentorChannelName", Loc.GetString("chat-manager-mentor-channel-name")),
+            ("playerName", player.Name),
+            ("message", FormattedMessage.EscapeText(message)));
+
+        foreach (var client in clients)
+        {
+            var isSource = client != player.Channel;
+            ChatMessageToOne(ChatChannel.MentorChat,
+                message,
+                wrappedMessage,
+                default,
+                false,
+                client,
+                author: player.UserId);
+        }
+
+        _adminLogger.Add(LogType.Chat, $"Mentor chat from {player:Player}: {message}");
     }
 
     #endregion
@@ -433,5 +474,6 @@ internal sealed partial class ChatManager : IChatManager
 public enum OOCChatType : byte
 {
     OOC,
-    Admin
+    Admin,
+    Mentor // Zona14: mentor chat
 }
