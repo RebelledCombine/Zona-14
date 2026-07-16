@@ -1,0 +1,14 @@
+author: Roland410
+time: '2026-07-16T14:08:56Z'
+url: https://github.com/Zona-14/Zona-14/pull/65
+changes:
+- type: Add
+  message: Crashed-vehicle supply drops can now occur during the round. A warning
+    is sent near the drop zone, then an explosion spawns a crashed vehicle, a reward
+    crate, and guards.
+- type: Add
+  message: Admins can trigger supply drops with the `z14supplydrop [helicopter|truck|any]
+    [here|<zoneNetEntity>]` command.
+- type: Fix
+  message: Lock unlock do-after now correctly uses `UnlockTime` instead of `LockTime`.
+category: Main
