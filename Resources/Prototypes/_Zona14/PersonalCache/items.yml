@@ -1,0 +1,31 @@
+- type: entity
+  parent: BaseItem
+  id: Z14PersonalCacheKit
+  name: personal cache kit
+  suffix: Z14
+  categories: [Zona14]
+  components:
+  - type: Sprite
+    sprite: _Zona14/Objects/Tools/personal_cache_kit.rsi
+    state: icon
+  - type: Item
+    size: Normal
+  - type: Z14PersonalCacheKit
+
+- type: entity
+  parent: BasePDACartridge
+  id: Z14PersonalCacheCartridge
+  name: personal cache PDA cartridge
+  suffix: Z14
+  categories: [Zona14]
+  components:
+  - type: Sprite
+    state: cart-b
+  - type: UIFragment
+    ui: !type:Z14PersonalCacheUi
+  - type: Cartridge
+    programName: z14-personal-cache-cartridge-program
+    icon:
+      sprite: Interface/Misc/program_icons.rsi
+      state: news_read
+  - type: Z14PersonalCacheCartridge

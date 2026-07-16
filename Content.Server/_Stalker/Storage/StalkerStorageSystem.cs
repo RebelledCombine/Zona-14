@@ -11,6 +11,8 @@ using Robust.Shared.Containers;
 using System.Text.Json.Nodes;
 using Content.Server._Stalker.StalkerDB;
 using Content.Server._Stalker.StalkerRepository;
+using Content.Server.Database; // Zona14
+using Content.Shared._Zona14.PersonalCache; // Zona14
 using Content.Server.Power.Components;
 using Content.Server.Power.EntitySystems;
 using Content.Shared._Stalker.StalkerRepository;
@@ -38,6 +40,7 @@ public sealed class StalkerStorageSystem : SharedStalkerStorageSystem
 {
     [Dependency] private readonly IEntityManager _entityManager = default!;
     [Dependency] private readonly StalkerDbSystem _stalkerDbSystem = default!;
+    [Dependency] private readonly IServerDbManager _dbManager = default!; // Zona14
     [Dependency] private readonly BatterySystem _batterySys = default!;
     [Dependency] private readonly StalkerRepositorySystem _stalkerRepositorySystem = default!;
     [Dependency] private readonly SharedAppearanceSystem _appearance = default!;
@@ -746,6 +749,24 @@ public sealed class StalkerStorageSystem : SharedStalkerStorageSystem
         }
 
         var json = InventoryToJson(inventory);
+
+        // Zona14: personal caches persist to their own table, not the Stalkers table
+        if (TryComp<Z14PersonalCacheComponent>(_stalkerRepositoryComponent.Owner, out var cacheComp))
+        {
+            _ = _dbManager.SetStalkerPersonalCacheAsync(new StalkerPersonalCache
+            {
+                CacheId = Guid.Parse(cacheComp.CacheId), // Zona14
+                UserId = Guid.Parse(cacheComp.OwnerUserId), // Zona14
+                MapKey = cacheComp.MapKey,
+                X = cacheComp.X,
+                Y = cacheComp.Y,
+                Z = cacheComp.Z,
+                Hidden = cacheComp.Hidden,
+                CurrentWeight = _stalkerRepositoryComponent.CurrentWeight,
+                ContentsJson = json
+            });
+            return;
+        }
 
         _stalkerDbSystem.SetInventoryJson(_stalkerRepositoryComponent.StorageOwner, json);
     }

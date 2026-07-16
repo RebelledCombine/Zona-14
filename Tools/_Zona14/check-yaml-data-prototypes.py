@@ -28,6 +28,26 @@ def _type_constructor(loader: yaml.SafeLoader, tag_suffix: str, node: yaml.Node)
 
 yaml.SafeLoader.add_multi_constructor("!type:", _type_constructor)
 
+# RobustToolbox uses `!type:<SomeType>` tagged scalars/mappings for type
+# discriminators. We do not need the real type, only a valid Python object so
+# the YAML parses. Register a multi-constructor that reconstructs the value
+# using the appropriate base method.
+class Zona14YamlLoader(yaml.SafeLoader):
+    pass
+
+
+def _construct_type_tag(loader: yaml.SafeLoader, suffix: str, node: yaml.Node):
+    if isinstance(node, yaml.ScalarNode):
+        return loader.construct_scalar(node)
+    if isinstance(node, yaml.MappingNode):
+        return loader.construct_mapping(node)
+    if isinstance(node, yaml.SequenceNode):
+        return loader.construct_sequence(node)
+    return None
+
+
+Zona14YamlLoader.add_multi_constructor("!type:", _construct_type_tag)
+
 # Prototype types where `categories` is not a valid field at all.
 CATEGORIES_FORBIDDEN_TYPES = {
     "stWarZone",

@@ -494,6 +494,16 @@ namespace Content.Server.Database
         Task SetStalkerPersistentCraftProfileAsync(Guid userId, string characterName, string profileJson);
         Task DeleteAllStalkerPersistentCraftProfilesAsync();
         // stalker-en-changes-end
+
+        // Zona14: personal cache persistence
+        Task<StalkerPersonalCache?> GetStalkerPersonalCacheAsync(Guid cacheId);
+        Task<List<StalkerPersonalCache>> GetStalkerPersonalCachesByUserAsync(Guid userId);
+        Task<List<StalkerPersonalCache>> GetStalkerPersonalCachesByMapKeyAsync(string mapKey);
+        Task<List<StalkerPersonalCache>> GetAllStalkerPersonalCachesAsync();
+        Task SetStalkerPersonalCacheAsync(StalkerPersonalCache cache);
+        Task DeleteStalkerPersonalCacheAsync(Guid cacheId);
+        Task DeleteStalkerPersonalCachesByUserAsync(Guid userId);
+        // End Zona14
         #endregion
     }
     /// <summary>
@@ -1492,6 +1502,50 @@ namespace Content.Server.Database
             return RunDbCommand(() => _db.DeleteAllStalkerPersistentCraftProfilesAsync());
         }
         // stalker-en-changes-end
+
+        // Zona14: personal cache persistence
+        public Task<StalkerPersonalCache?> GetStalkerPersonalCacheAsync(Guid cacheId)
+        {
+            DbReadOpsMetric.Inc();
+            return RunDbCommand(() => _db.GetStalkerPersonalCacheAsync(cacheId));
+        }
+
+        public Task<List<StalkerPersonalCache>> GetStalkerPersonalCachesByUserAsync(Guid userId)
+        {
+            DbReadOpsMetric.Inc();
+            return RunDbCommand(() => _db.GetStalkerPersonalCachesByUserAsync(userId));
+        }
+
+        public Task<List<StalkerPersonalCache>> GetStalkerPersonalCachesByMapKeyAsync(string mapKey)
+        {
+            DbReadOpsMetric.Inc();
+            return RunDbCommand(() => _db.GetStalkerPersonalCachesByMapKeyAsync(mapKey));
+        }
+
+        public Task<List<StalkerPersonalCache>> GetAllStalkerPersonalCachesAsync()
+        {
+            DbReadOpsMetric.Inc();
+            return RunDbCommand(() => _db.GetAllStalkerPersonalCachesAsync());
+        }
+
+        public Task SetStalkerPersonalCacheAsync(StalkerPersonalCache cache)
+        {
+            DbWriteOpsMetric.Inc();
+            return RunDbCommand(() => _db.SetStalkerPersonalCacheAsync(cache));
+        }
+
+        public Task DeleteStalkerPersonalCacheAsync(Guid cacheId)
+        {
+            DbWriteOpsMetric.Inc();
+            return RunDbCommand(() => _db.DeleteStalkerPersonalCacheAsync(cacheId));
+        }
+
+        public Task DeleteStalkerPersonalCachesByUserAsync(Guid userId)
+        {
+            DbWriteOpsMetric.Inc();
+            return RunDbCommand(() => _db.DeleteStalkerPersonalCachesByUserAsync(userId));
+        }
+        // End Zona14
 
         public Task SetStalkerBandAsync(ProtoId<STBandPrototype> band, float rewardPoints)
         {
