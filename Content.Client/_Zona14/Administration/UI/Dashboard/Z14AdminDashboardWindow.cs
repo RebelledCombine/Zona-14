@@ -13,6 +13,11 @@ using Content.Shared.Administration.Logs;
 using Content.Shared.Database;
 using Content.Client._Zona14.Administration.UI.MentorHelp;
 using Content.Client._Zona14.UserInterface.Systems.MentorHelp;
+using Content.Shared._Stalker.Anomaly.Prototypes;
+using Content.Shared._Stalker.Bands;
+using Content.Shared._Stalker.WarZone;
+using Content.Shared.NPC.Prototypes;
+using Content.Shared.Weather;
 using Robust.Client.Input;
 using Robust.Client.UserInterface;
 using Robust.Client.UserInterface.Controls;
@@ -21,6 +26,7 @@ using Robust.Shared.Console;
 using Robust.Shared.IoC;
 using Robust.Shared.Input;
 using Robust.Shared.Maths;
+using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
 using static Content.Shared._Zona14.Administration.Dashboard.Z14AdminDashboardEuiMsg;
 
@@ -31,6 +37,7 @@ public sealed class Z14AdminDashboardWindow : DefaultWindow
     [Dependency] private readonly IClientAdminManager _adminManager = default!;
     [Dependency] private readonly IConsoleHost _consoleHost = default!;
     [Dependency] private readonly IInputManager _inputManager = default!;
+    [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
 
     private Label _roundLabel = null!;
     private Label _durationLabel = null!;
@@ -64,11 +71,15 @@ public sealed class Z14AdminDashboardWindow : DefaultWindow
 
     private AdminFlags _flags;
     private List<Z14AdminDashboardPlayer> _allPlayers = new();
+    private List<Z14AdminDashboardMap> _allMaps = new();
     private List<SharedAdminLog> _allEvents = new();
     private List<Z14AdminDashboardCommandInfo> _allowedCommands = new();
     private HashSet<string> _allowedCommandNames = new();
     private bool _eventsPaused;
     private TabContainer _tabContainer = null!;
+
+    private readonly List<OptionButton> _playerDropdowns = new();
+    private readonly List<OptionButton> _mapDropdowns = new();
 
     private List<string> _commandLineMatches = new();
     private int _commandLineMatchIndex = -1;
@@ -404,7 +415,7 @@ public sealed class Z14AdminDashboardWindow : DefaultWindow
             SeparationOverride = 5,
         };
 
-        AddArgCommand(featureBox, "Map Radiation (list/enable/disable)", "z14mapradiation list", "z14mapradiation", "list");
+        AddMapRadiationCommand(featureBox, AdminFlags.Admin);
         AddArgCommand(featureBox, "Trigger Anomaly Migration", "z14anomigrate", "z14anomigrate", "");
         AddArgCommand(featureBox, "Trigger Supply Drop", "z14supplydrop", "z14supplydrop", "");
         AddArgCommand(featureBox, "List Personal Caches", "z14listcaches", "z14listcaches", "");
@@ -444,7 +455,9 @@ public sealed class Z14AdminDashboardWindow : DefaultWindow
         AddArgCommand(warBox, "War Zone Info (zones)", "zones", "st_warzoneinfo", "zones", AdminFlags.Admin);
         AddArgCommand(warBox, "War Zone Info (bands)", "bands", "st_warzoneinfo", "bands", AdminFlags.Admin);
         AddArgCommand(warBox, "War Zone Info (factions)", "factions", "st_warzoneinfo", "factions", AdminFlags.Admin);
-        AddArgCommand(warBox, "War Zone Admin", "setpoints band <id> <points>", "st_warzoneadmin", "", AdminFlags.Admin);
+        AddWarzoneSetPointsCommand(warBox, AdminFlags.Admin);
+        AddWarzoneSetOwnerCommand(warBox, AdminFlags.Admin);
+        AddWarzoneClearOwnerCommand(warBox, AdminFlags.Admin);
         box.AddChild(MakeSection("War Zone", warBox));
 
         var anomalyBox = new BoxContainer
@@ -454,8 +467,8 @@ public sealed class Z14AdminDashboardWindow : DefaultWindow
         };
         AddArgCommand(anomalyBox, "Anomaly Get Active", "", "st_anomaly_generation_get_active", "", AdminFlags.Host);
         AddArgCommand(anomalyBox, "Anomaly Get Data UID", "", "st_anomaly_generation_get_data_uid", "", AdminFlags.Host);
-        AddArgCommand(anomalyBox, "Anomaly Clear", "mapId", "st_anomaly_generation_clear", "", AdminFlags.Host);
-        AddArgCommand(anomalyBox, "Anomaly Start", "mapId protoId", "st_anomaly_generation_start", "", AdminFlags.Host);
+        AddMapDropdownCommand(anomalyBox, "Anomaly Clear", "st_anomaly_generation_clear", AdminFlags.Host);
+        AddAnomalyStartCommand(anomalyBox, AdminFlags.Host);
         box.AddChild(MakeSection("Anomaly Generation", anomalyBox));
 
         var stashBox = new BoxContainer
@@ -463,8 +476,8 @@ public sealed class Z14AdminDashboardWindow : DefaultWindow
             Orientation = BoxContainer.LayoutOrientation.Vertical,
             SeparationOverride = 5,
         };
-        AddArgCommand(stashBox, "Clear Stash", "username", "clear_stash", "", AdminFlags.Ban);
-        AddArgCommand(stashBox, "Persistent Craft Reset", "username", "st_pcraft_reset", "", AdminFlags.Host);
+        AddPlayerDropdownCommand(stashBox, "Clear Stash", "clear_stash", AdminFlags.Ban);
+        AddPlayerDropdownCommand(stashBox, "Persistent Craft Reset", "st_pcraft_reset", AdminFlags.Host);
         AddArgCommand(stashBox, "Persistent Craft Reset Offline", "userId characterName", "st_pcraft_reset_offline", "", AdminFlags.Host);
         AddArgCommand(stashBox, "Persistent Craft Reset All", "confirm", "st_pcraft_reset_all", "", AdminFlags.Host);
         box.AddChild(MakeSection("Stash / Crafting", stashBox));
@@ -475,7 +488,7 @@ public sealed class Z14AdminDashboardWindow : DefaultWindow
             SeparationOverride = 5,
         };
         AddArgCommand(toolsBox, "Trash Cleanup", "seconds", "request_trash_cleanup", "60", AdminFlags.Spawn);
-        AddArgCommand(toolsBox, "Set Character Changeable", "username changeable slot", "st_set_character_changeable", "", AdminFlags.Admin);
+        AddSetCharacterChangeableCommand(toolsBox, AdminFlags.Admin);
         AddArgCommand(toolsBox, "Regenerate Sniper Map", "", "st_sniper_regenerate_map", "", AdminFlags.Host);
         AddArgCommand(toolsBox, "All Entities Info", "name", "allentsinfo", "", AdminFlags.Spawn);
         AddArgCommand(toolsBox, "All Prototypes", "id", "all_prototype", "", AdminFlags.Host);
@@ -483,7 +496,7 @@ public sealed class Z14AdminDashboardWindow : DefaultWindow
         AddArgCommand(toolsBox, "Delayed Restart", "seconds", "delayed_restart", "60", AdminFlags.Round);
         AddCharacteristicCommand(toolsBox, "Set Characteristic Level", true, "characteristic_set_levels", AdminFlags.Host);
         AddCharacteristicCommand(toolsBox, "Get Characteristic Level", false, "characteristic_get_levels", AdminFlags.Host);
-        AddArgCommand(toolsBox, "Add Character Marking", "username slot markingId [colors...]", "st_character_add_marking", "", AdminFlags.Host);
+        AddAddMarkingCommand(toolsBox, AdminFlags.Host);
         box.AddChild(MakeSection("Stalker Tools", toolsBox));
 
         var balanceBox = new BoxContainer
@@ -705,7 +718,7 @@ public sealed class Z14AdminDashboardWindow : DefaultWindow
         AddArgCommand(roundGrid, "Restart Round", "", "restartround", "", AdminFlags.Round);
         AddArgCommand(roundGrid, "Restart Round Now", "", "restartroundnow", "", AdminFlags.Round);
         AddArgCommand(roundGrid, "End Round", "", "endround", "", AdminFlags.Round);
-        AddArgCommand(roundGrid, "Toggle Late Join", "true/false", "toggledisallowlatejoin", "true", AdminFlags.Round);
+        AddToggleCommand(roundGrid, "Toggle Late Join", "toggledisallowlatejoin", AdminFlags.Round, "true (disallow)", "false (allow)");
         AddArgCommand(roundGrid, "Force Map", "map prototype", "forcemap", "", AdminFlags.Round);
         AddArgCommand(roundGrid, "Set Game Preset", "preset [rounds] [decoy]", "setgamepreset", "", AdminFlags.Round);
         AddArgCommand(roundGrid, "List Game Maps", "", "listgamemaps", "", AdminFlags.Round);
@@ -720,7 +733,7 @@ public sealed class Z14AdminDashboardWindow : DefaultWindow
         AddArgCommand(serverGrid, "Panic Bunker Disable With Admins", "", "panicbunker_disable_with_admins", "", AdminFlags.Server);
         AddArgCommand(serverGrid, "Panic Bunker Enable Without Admins", "", "panicbunker_enable_without_admins", "", AdminFlags.Server);
         AddArgCommand(serverGrid, "Set MOTD", "message", "set-motd", "", AdminFlags.Moderator);
-        AddArgCommand(serverGrid, "Set Weather", "mapId proto [seconds]", "weather", "0 Storm 300", AdminFlags.Fun);
+        AddWeatherCommand(serverGrid, AdminFlags.Fun);
         box.AddChild(MakeSection("Server", serverGrid));
 
         var chatGrid = new BoxContainer
@@ -961,6 +974,730 @@ public sealed class Z14AdminDashboardWindow : DefaultWindow
         container.AddChild(row);
     }
 
+    private void AddToggleCommand(Control container, string labelText, string command, AdminFlags flag,
+        string trueValue = "true", string falseValue = "false")
+    {
+        var row = new BoxContainer
+        {
+            Orientation = BoxContainer.LayoutOrientation.Horizontal,
+            SeparationOverride = 5,
+            HorizontalExpand = true,
+        };
+
+        var label = new Label { Text = labelText, HorizontalExpand = true };
+        row.AddChild(label);
+
+        var dropdown = new OptionButton { MinWidth = 80 };
+        dropdown.AddItem(trueValue, 0);
+        dropdown.AddItem(falseValue, 1);
+        dropdown.SelectId(0);
+        row.AddChild(dropdown);
+
+        var button = new Button
+        {
+            Text = "Run",
+            Disabled = !_adminManager.HasFlag(flag),
+        };
+        _buttonFlags[button] = flag;
+        button.OnPressed += _ =>
+        {
+            var value = dropdown.SelectedId == 0 ? trueValue : falseValue;
+            var full = $"{command} {value}";
+            SetStatus($"Running {full}...");
+            OnFeatureCommand?.Invoke(full);
+        };
+        row.AddChild(button);
+
+        container.AddChild(row);
+    }
+
+    private void AddPlayerDropdownCommand(Control container, string labelText, string command, AdminFlags flag,
+        string? extraPlaceholder = null, string? defaultExtra = null)
+    {
+        var row = new BoxContainer
+        {
+            Orientation = BoxContainer.LayoutOrientation.Horizontal,
+            SeparationOverride = 5,
+            HorizontalExpand = true,
+        };
+
+        var label = new Label { Text = labelText, HorizontalExpand = true };
+        row.AddChild(label);
+
+        var playerDropdown = new OptionButton { MinWidth = 150 };
+        _playerDropdowns.Add(playerDropdown);
+        PopulatePlayerDropdown(playerDropdown);
+        row.AddChild(playerDropdown);
+
+        LineEdit? extraInput = null;
+        if (extraPlaceholder != null)
+        {
+            extraInput = new LineEdit
+            {
+                PlaceHolder = extraPlaceholder,
+                Text = defaultExtra ?? string.Empty,
+                MinSize = new Vector2(80, 0),
+            };
+            row.AddChild(extraInput);
+        }
+
+        var button = new Button
+        {
+            Text = "Run",
+            Disabled = !_adminManager.HasFlag(flag),
+        };
+        _buttonFlags[button] = flag;
+        button.OnPressed += _ =>
+        {
+            if (playerDropdown.SelectedMetadata is not Z14AdminDashboardPlayer selected)
+            {
+                SetStatus($"{labelText}: select a player");
+                return;
+            }
+
+            var extra = extraInput?.Text.Trim();
+            var full = string.IsNullOrWhiteSpace(extra) ? $"{command} {selected.Name}" : $"{command} {selected.Name} {extra}";
+            SetStatus($"Running {full}...");
+            OnFeatureCommand?.Invoke(full);
+        };
+        row.AddChild(button);
+
+        container.AddChild(row);
+    }
+
+    private void AddMapDropdownCommand(Control container, string labelText, string command, AdminFlags flag,
+        string? extraPlaceholder = null, string? defaultExtra = null)
+    {
+        var row = new BoxContainer
+        {
+            Orientation = BoxContainer.LayoutOrientation.Horizontal,
+            SeparationOverride = 5,
+            HorizontalExpand = true,
+        };
+
+        var label = new Label { Text = labelText, HorizontalExpand = true };
+        row.AddChild(label);
+
+        var mapDropdown = new OptionButton { MinWidth = 180 };
+        _mapDropdowns.Add(mapDropdown);
+        PopulateMapDropdown(mapDropdown);
+        row.AddChild(mapDropdown);
+
+        LineEdit? extraInput = null;
+        if (extraPlaceholder != null)
+        {
+            extraInput = new LineEdit
+            {
+                PlaceHolder = extraPlaceholder,
+                Text = defaultExtra ?? string.Empty,
+                MinSize = new Vector2(80, 0),
+            };
+            row.AddChild(extraInput);
+        }
+
+        var button = new Button
+        {
+            Text = "Run",
+            Disabled = !_adminManager.HasFlag(flag),
+        };
+        _buttonFlags[button] = flag;
+        button.OnPressed += _ =>
+        {
+            if (mapDropdown.SelectedMetadata is not Z14AdminDashboardMap selected)
+            {
+                SetStatus($"{labelText}: select a map");
+                return;
+            }
+
+            var extra = extraInput?.Text.Trim();
+            var full = string.IsNullOrWhiteSpace(extra) ? $"{command} {selected.MapId}" : $"{command} {selected.MapId} {extra}";
+            SetStatus($"Running {full}...");
+            OnFeatureCommand?.Invoke(full);
+        };
+        row.AddChild(button);
+
+        container.AddChild(row);
+    }
+
+    private void AddWeatherCommand(Control container, AdminFlags flag)
+    {
+        var row = new BoxContainer
+        {
+            Orientation = BoxContainer.LayoutOrientation.Horizontal,
+            SeparationOverride = 5,
+            HorizontalExpand = true,
+        };
+
+        var label = new Label { Text = "Set Weather", HorizontalExpand = true };
+        row.AddChild(label);
+
+        var mapDropdown = new OptionButton { MinWidth = 140 };
+        _mapDropdowns.Add(mapDropdown);
+        PopulateMapDropdown(mapDropdown);
+        row.AddChild(mapDropdown);
+
+        var protoDropdown = new OptionButton { MinWidth = 120 };
+        PopulatePrototypeDropdown<WeatherPrototype>(protoDropdown, "null");
+        row.AddChild(protoDropdown);
+
+        var secondsInput = new LineEdit
+        {
+            PlaceHolder = "seconds",
+            Text = "300",
+            MinSize = new Vector2(60, 0),
+        };
+        row.AddChild(secondsInput);
+
+        var button = new Button
+        {
+            Text = "Run",
+            Disabled = !_adminManager.HasFlag(flag),
+        };
+        _buttonFlags[button] = flag;
+        button.OnPressed += _ =>
+        {
+            if (mapDropdown.SelectedMetadata is not Z14AdminDashboardMap map)
+            {
+                SetStatus("Set Weather: select a map");
+                return;
+            }
+
+            var protoId = protoDropdown.SelectedMetadata as string ?? "null";
+            var full = $"weather {map.MapId} {protoId} {secondsInput.Text.Trim()}";
+            SetStatus($"Running {full}...");
+            OnFeatureCommand?.Invoke(full);
+        };
+        row.AddChild(button);
+
+        container.AddChild(row);
+    }
+
+    private void AddAnomalyStartCommand(Control container, AdminFlags flag)
+    {
+        var row = new BoxContainer
+        {
+            Orientation = BoxContainer.LayoutOrientation.Horizontal,
+            SeparationOverride = 5,
+            HorizontalExpand = true,
+        };
+
+        var label = new Label { Text = "Anomaly Start", HorizontalExpand = true };
+        row.AddChild(label);
+
+        var mapDropdown = new OptionButton { MinWidth = 140 };
+        _mapDropdowns.Add(mapDropdown);
+        PopulateMapDropdown(mapDropdown);
+        row.AddChild(mapDropdown);
+
+        var protoDropdown = new OptionButton { MinWidth = 180 };
+        PopulatePrototypeDropdown<STAnomalyGenerationOptionsPrototype>(protoDropdown);
+        row.AddChild(protoDropdown);
+
+        var button = new Button
+        {
+            Text = "Run",
+            Disabled = !_adminManager.HasFlag(flag),
+        };
+        _buttonFlags[button] = flag;
+        button.OnPressed += _ =>
+        {
+            if (mapDropdown.SelectedMetadata is not Z14AdminDashboardMap map)
+            {
+                SetStatus("Anomaly Start: select a map");
+                return;
+            }
+
+            var protoId = protoDropdown.SelectedMetadata as string;
+            if (string.IsNullOrWhiteSpace(protoId))
+            {
+                SetStatus("Anomaly Start: select a prototype");
+                return;
+            }
+
+            var full = $"st_anomaly_generation_start {map.MapId} {protoId}";
+            SetStatus($"Running {full}...");
+            OnFeatureCommand?.Invoke(full);
+        };
+        row.AddChild(button);
+
+        container.AddChild(row);
+    }
+
+    private void AddSetCharacterChangeableCommand(Control container, AdminFlags flag)
+    {
+        var row = new BoxContainer
+        {
+            Orientation = BoxContainer.LayoutOrientation.Horizontal,
+            SeparationOverride = 5,
+            HorizontalExpand = true,
+        };
+
+        var label = new Label { Text = "Set Character Changeable", HorizontalExpand = true };
+        row.AddChild(label);
+
+        var playerDropdown = new OptionButton { MinWidth = 140 };
+        _playerDropdowns.Add(playerDropdown);
+        PopulatePlayerDropdown(playerDropdown);
+        row.AddChild(playerDropdown);
+
+        var changeableDropdown = new OptionButton { MinWidth = 80 };
+        changeableDropdown.AddItem("true", 0);
+        changeableDropdown.AddItem("false", 1);
+        changeableDropdown.SelectId(0);
+        row.AddChild(changeableDropdown);
+
+        var slotInput = new LineEdit
+        {
+            PlaceHolder = "slot",
+            Text = "0",
+            MinSize = new Vector2(50, 0),
+        };
+        row.AddChild(slotInput);
+
+        var button = new Button
+        {
+            Text = "Run",
+            Disabled = !_adminManager.HasFlag(flag),
+        };
+        _buttonFlags[button] = flag;
+        button.OnPressed += _ =>
+        {
+            if (playerDropdown.SelectedMetadata is not Z14AdminDashboardPlayer player)
+            {
+                SetStatus("Set Character Changeable: select a player");
+                return;
+            }
+
+            var changeable = changeableDropdown.SelectedId == 0 ? "true" : "false";
+            var full = $"st_set_character_changeable {player.Name} {changeable} {slotInput.Text.Trim()}";
+            SetStatus($"Running {full}...");
+            OnFeatureCommand?.Invoke(full);
+        };
+        row.AddChild(button);
+
+        container.AddChild(row);
+    }
+
+    private void AddAddMarkingCommand(Control container, AdminFlags flag)
+    {
+        var row = new BoxContainer
+        {
+            Orientation = BoxContainer.LayoutOrientation.Horizontal,
+            SeparationOverride = 5,
+            HorizontalExpand = true,
+        };
+
+        var label = new Label { Text = "Add Character Marking", HorizontalExpand = true };
+        row.AddChild(label);
+
+        var playerDropdown = new OptionButton { MinWidth = 120 };
+        _playerDropdowns.Add(playerDropdown);
+        PopulatePlayerDropdown(playerDropdown);
+        row.AddChild(playerDropdown);
+
+        var slotInput = new LineEdit
+        {
+            PlaceHolder = "slot",
+            Text = "0",
+            MinSize = new Vector2(40, 0),
+        };
+        row.AddChild(slotInput);
+
+        var markingInput = new LineEdit
+        {
+            PlaceHolder = "markingId",
+            MinSize = new Vector2(80, 0),
+        };
+        row.AddChild(markingInput);
+
+        var colorsInput = new LineEdit
+        {
+            PlaceHolder = "colors",
+            ToolTip = "Optional colors, e.g. #FF0000 #00FF00",
+            MinSize = new Vector2(80, 0),
+        };
+        row.AddChild(colorsInput);
+
+        var button = new Button
+        {
+            Text = "Run",
+            Disabled = !_adminManager.HasFlag(flag),
+        };
+        _buttonFlags[button] = flag;
+        button.OnPressed += _ =>
+        {
+            if (playerDropdown.SelectedMetadata is not Z14AdminDashboardPlayer player)
+            {
+                SetStatus("Add Character Marking: select a player");
+                return;
+            }
+
+            var marking = markingInput.Text.Trim();
+            if (string.IsNullOrWhiteSpace(marking))
+            {
+                SetStatus("Add Character Marking: enter a markingId");
+                return;
+            }
+
+            var colors = colorsInput.Text.Trim();
+            var full = string.IsNullOrWhiteSpace(colors)
+                ? $"st_character_add_marking {player.Name} {slotInput.Text.Trim()} {marking}"
+                : $"st_character_add_marking {player.Name} {slotInput.Text.Trim()} {marking} {colors}";
+            SetStatus($"Running {full}...");
+            OnFeatureCommand?.Invoke(full);
+        };
+        row.AddChild(button);
+
+        container.AddChild(row);
+    }
+
+    private void AddMapRadiationCommand(Control container, AdminFlags flag)
+    {
+        var row = new BoxContainer
+        {
+            Orientation = BoxContainer.LayoutOrientation.Horizontal,
+            SeparationOverride = 5,
+            HorizontalExpand = true,
+        };
+
+        var label = new Label { Text = "Map Radiation", HorizontalExpand = true };
+        row.AddChild(label);
+
+        var actionDropdown = new OptionButton { MinWidth = 90 };
+        var actions = new[] { "list", "enable", "disable", "interval", "damage" };
+        for (var i = 0; i < actions.Length; i++)
+        {
+            actionDropdown.AddItem(actions[i], i);
+            actionDropdown.SetItemMetadata(actionDropdown.ItemCount - 1, actions[i]);
+        }
+
+        actionDropdown.SelectId(0);
+        row.AddChild(actionDropdown);
+
+        var mapDropdown = new OptionButton { MinWidth = 140 };
+        _mapDropdowns.Add(mapDropdown);
+        PopulateMapDropdown(mapDropdown);
+        row.AddChild(mapDropdown);
+
+        var valueInput = new LineEdit
+        {
+            PlaceHolder = "value",
+            ToolTip = "For interval: seconds. For damage: type amount (e.g. Radiation 5).",
+            MinSize = new Vector2(100, 0),
+        };
+        row.AddChild(valueInput);
+
+        var button = new Button
+        {
+            Text = "Run",
+            Disabled = !_adminManager.HasFlag(flag),
+        };
+        _buttonFlags[button] = flag;
+        button.OnPressed += _ =>
+        {
+            var action = actionDropdown.SelectedMetadata as string ?? "list";
+            if (action == "list")
+            {
+                SetStatus("Running z14mapradiation list...");
+                OnFeatureCommand?.Invoke("z14mapradiation list");
+                return;
+            }
+
+            if (mapDropdown.SelectedMetadata is not Z14AdminDashboardMap map)
+            {
+                SetStatus("Map Radiation: select a map");
+                return;
+            }
+
+            var value = valueInput.Text.Trim();
+            string full;
+            if (action == "enable")
+                full = $"z14mapradiation {map.MapId} enabled true";
+            else if (action == "disable")
+                full = $"z14mapradiation {map.MapId} enabled false";
+            else if (string.IsNullOrWhiteSpace(value))
+            {
+                SetStatus($"Map Radiation: enter a value for {action}");
+                return;
+            }
+            else
+                full = $"z14mapradiation {map.MapId} {action} {value}";
+
+            SetStatus($"Running {full}...");
+            OnFeatureCommand?.Invoke(full);
+        };
+        row.AddChild(button);
+
+        container.AddChild(row);
+    }
+
+    private void AddWarzoneSetPointsCommand(Control container, AdminFlags flag)
+    {
+        var row = new BoxContainer
+        {
+            Orientation = BoxContainer.LayoutOrientation.Horizontal,
+            SeparationOverride = 5,
+            HorizontalExpand = true,
+        };
+
+        var label = new Label { Text = "Warzone Set Points", HorizontalExpand = true };
+        row.AddChild(label);
+
+        var typeDropdown = new OptionButton { MinWidth = 80 };
+        typeDropdown.AddItem("band", 0);
+        typeDropdown.SetItemMetadata(typeDropdown.ItemCount - 1, "band");
+        typeDropdown.AddItem("faction", 1);
+        typeDropdown.SetItemMetadata(typeDropdown.ItemCount - 1, "faction");
+        typeDropdown.SelectId(0);
+        row.AddChild(typeDropdown);
+
+        var protoDropdown = new OptionButton { MinWidth = 140 };
+        row.AddChild(protoDropdown);
+
+        var pointsInput = new LineEdit
+        {
+            PlaceHolder = "points",
+            Text = "0",
+            MinSize = new Vector2(60, 0),
+        };
+        row.AddChild(pointsInput);
+
+        var button = new Button
+        {
+            Text = "Run",
+            Disabled = !_adminManager.HasFlag(flag),
+        };
+        _buttonFlags[button] = flag;
+
+        void RefreshProtoDropdown()
+        {
+            var selectedType = typeDropdown.SelectedMetadata as string ?? "band";
+            protoDropdown.Clear();
+            if (selectedType == "band")
+                PopulatePrototypeDropdown<STBandPrototype>(protoDropdown);
+            else
+                PopulatePrototypeDropdown<NpcFactionPrototype>(protoDropdown);
+        }
+
+        typeDropdown.OnItemSelected += _ => RefreshProtoDropdown();
+        RefreshProtoDropdown();
+
+        button.OnPressed += _ =>
+        {
+            var type = typeDropdown.SelectedMetadata as string ?? "band";
+            var protoId = protoDropdown.SelectedMetadata as string;
+            if (string.IsNullOrWhiteSpace(protoId))
+            {
+                SetStatus("Warzone Set Points: select a prototype");
+                return;
+            }
+
+            var full = $"st_warzoneadmin setpoints {type} {protoId} {pointsInput.Text.Trim()}";
+            SetStatus($"Running {full}...");
+            OnFeatureCommand?.Invoke(full);
+        };
+        row.AddChild(button);
+
+        container.AddChild(row);
+    }
+
+    private void AddWarzoneSetOwnerCommand(Control container, AdminFlags flag)
+    {
+        var row = new BoxContainer
+        {
+            Orientation = BoxContainer.LayoutOrientation.Horizontal,
+            SeparationOverride = 5,
+            HorizontalExpand = true,
+        };
+
+        var label = new Label { Text = "Warzone Set Owner", HorizontalExpand = true };
+        row.AddChild(label);
+
+        var zoneDropdown = new OptionButton { MinWidth = 120 };
+        PopulatePrototypeDropdown<STWarZonePrototype>(zoneDropdown);
+        row.AddChild(zoneDropdown);
+
+        var ownerTypeDropdown = new OptionButton { MinWidth = 80 };
+        ownerTypeDropdown.AddItem("band", 0);
+        ownerTypeDropdown.SetItemMetadata(ownerTypeDropdown.ItemCount - 1, "band");
+        ownerTypeDropdown.AddItem("faction", 1);
+        ownerTypeDropdown.SetItemMetadata(ownerTypeDropdown.ItemCount - 1, "faction");
+        ownerTypeDropdown.SelectId(0);
+        row.AddChild(ownerTypeDropdown);
+
+        var ownerProtoDropdown = new OptionButton { MinWidth = 120 };
+        row.AddChild(ownerProtoDropdown);
+
+        var button = new Button
+        {
+            Text = "Run",
+            Disabled = !_adminManager.HasFlag(flag),
+        };
+        _buttonFlags[button] = flag;
+
+        void RefreshOwnerProtoDropdown()
+        {
+            var selectedType = ownerTypeDropdown.SelectedMetadata as string ?? "band";
+            ownerProtoDropdown.Clear();
+            if (selectedType == "band")
+                PopulatePrototypeDropdown<STBandPrototype>(ownerProtoDropdown);
+            else
+                PopulatePrototypeDropdown<NpcFactionPrototype>(ownerProtoDropdown);
+        }
+
+        ownerTypeDropdown.OnItemSelected += _ => RefreshOwnerProtoDropdown();
+        RefreshOwnerProtoDropdown();
+
+        button.OnPressed += _ =>
+        {
+            var zoneId = zoneDropdown.SelectedMetadata as string;
+            var ownerType = ownerTypeDropdown.SelectedMetadata as string ?? "band";
+            var ownerProtoId = ownerProtoDropdown.SelectedMetadata as string;
+            if (string.IsNullOrWhiteSpace(zoneId))
+            {
+                SetStatus("Warzone Set Owner: select a zone");
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(ownerProtoId))
+            {
+                SetStatus("Warzone Set Owner: select an owner prototype");
+                return;
+            }
+
+            var full = $"st_warzoneadmin setowner {zoneId} {ownerType} {ownerProtoId}";
+            SetStatus($"Running {full}...");
+            OnFeatureCommand?.Invoke(full);
+        };
+        row.AddChild(button);
+
+        container.AddChild(row);
+    }
+
+    private void AddWarzoneClearOwnerCommand(Control container, AdminFlags flag)
+    {
+        var row = new BoxContainer
+        {
+            Orientation = BoxContainer.LayoutOrientation.Horizontal,
+            SeparationOverride = 5,
+            HorizontalExpand = true,
+        };
+
+        var label = new Label { Text = "Warzone Clear Owner", HorizontalExpand = true };
+        row.AddChild(label);
+
+        var zoneDropdown = new OptionButton { MinWidth = 180 };
+        PopulatePrototypeDropdown<STWarZonePrototype>(zoneDropdown);
+        row.AddChild(zoneDropdown);
+
+        var button = new Button
+        {
+            Text = "Run",
+            Disabled = !_adminManager.HasFlag(flag),
+        };
+        _buttonFlags[button] = flag;
+        button.OnPressed += _ =>
+        {
+            var zoneId = zoneDropdown.SelectedMetadata as string;
+            if (string.IsNullOrWhiteSpace(zoneId))
+            {
+                SetStatus("Warzone Clear Owner: select a zone");
+                return;
+            }
+
+            var full = $"st_warzoneadmin clearowner {zoneId}";
+            SetStatus($"Running {full}...");
+            OnFeatureCommand?.Invoke(full);
+        };
+        row.AddChild(button);
+
+        container.AddChild(row);
+    }
+
+    private void PopulatePlayerDropdown(OptionButton dropdown)
+    {
+        dropdown.Clear();
+        var id = 0;
+        foreach (var player in _allPlayers.OrderBy(p => p.Name))
+        {
+            dropdown.AddItem(player.Name, id);
+            dropdown.SetItemMetadata(dropdown.ItemCount - 1, player);
+            id++;
+        }
+    }
+
+    private void PopulateMapDropdown(OptionButton dropdown)
+    {
+        dropdown.Clear();
+        var id = 0;
+        foreach (var map in _allMaps.OrderBy(m => m.Name))
+        {
+            var label = $"{map.Name} ({map.MapId})";
+            dropdown.AddItem(label, id);
+            dropdown.SetItemMetadata(dropdown.ItemCount - 1, map);
+            id++;
+        }
+    }
+
+    private void PopulatePrototypeDropdown<T>(OptionButton dropdown, string? noneItem = null) where T : class, IPrototype
+    {
+        dropdown.Clear();
+        var id = 0;
+        if (noneItem != null)
+        {
+            dropdown.AddItem($"(none)", id);
+            dropdown.SetItemMetadata(dropdown.ItemCount - 1, "null");
+            id++;
+        }
+
+        foreach (var proto in _prototypeManager.EnumeratePrototypes<T>().OrderBy(p => p.ID))
+        {
+            dropdown.AddItem(proto.ID, id);
+            dropdown.SetItemMetadata(dropdown.ItemCount - 1, proto.ID);
+            id++;
+        }
+    }
+
+    private void UpdatePlayerDropdowns()
+    {
+        foreach (var dropdown in _playerDropdowns)
+        {
+            var selectedName = dropdown.ItemCount > 0 && dropdown.SelectedMetadata is Z14AdminDashboardPlayer prev ? prev.Name : null;
+            PopulatePlayerDropdown(dropdown);
+            if (selectedName != null)
+            {
+                for (var i = 0; i < dropdown.ItemCount; i++)
+                {
+                    if (dropdown.GetItemMetadata(i) is Z14AdminDashboardPlayer p && p.Name == selectedName)
+                    {
+                        dropdown.Select(i);
+                        break;
+                    }
+                }
+            }
+        }
+    }
+
+    private void UpdateMapDropdowns()
+    {
+        foreach (var dropdown in _mapDropdowns)
+        {
+            var selectedId = dropdown.ItemCount > 0 && dropdown.SelectedMetadata is Z14AdminDashboardMap prev ? (int?)prev.MapId : null;
+            PopulateMapDropdown(dropdown);
+            if (selectedId != null)
+            {
+                for (var i = 0; i < dropdown.ItemCount; i++)
+                {
+                    if (dropdown.GetItemMetadata(i) is Z14AdminDashboardMap m && m.MapId == selectedId)
+                    {
+                        dropdown.Select(i);
+                        break;
+                    }
+                }
+            }
+        }
+    }
+
     #endregion
 
     #region Event handlers
@@ -1139,6 +1876,7 @@ public sealed class Z14AdminDashboardWindow : DefaultWindow
     {
         _allPlayers = players;
         ApplyPlayerFilter();
+        UpdatePlayerDropdowns();
     }
 
     private void ApplyPlayerFilter()
@@ -1174,6 +1912,7 @@ public sealed class Z14AdminDashboardWindow : DefaultWindow
 
     private void UpdateMapList(List<Z14AdminDashboardMap> maps)
     {
+        _allMaps = maps;
         _mapList.Clear();
 
         foreach (var map in maps)
@@ -1182,6 +1921,8 @@ public sealed class Z14AdminDashboardWindow : DefaultWindow
             item.Metadata = map;
             item.TooltipText = $"MapId: {map.MapId}";
         }
+
+        UpdateMapDropdowns();
     }
 
     private void UpdateEventCounts(Dictionary<string, int> counts)
