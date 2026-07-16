@@ -1,0 +1,125 @@
+- type: entity
+  id: Z14MutantLair
+  parent: BaseStructure
+  name: mutant lair (T1)
+  description: A twisted nest of mutant biomass. Destroy it before it spawns more mutants.
+  suffix: Z14
+  categories: [ Zona14 ]
+  components:
+  - type: Sprite
+    sprite: _Zona14/Structures/MutantLair/lair.rsi
+    state: icon
+    noRot: true
+  - type: InteractionOutline
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: Web
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 200
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: BlowoutTarget
+  - type: Z14MutantLair
+    maxMutants: 3
+    maxSpawns: 12
+    spawnInterval: 30
+    spawnRadius: 4
+    rewardCount: 2
+    mutantPrototypes:
+    - Z14MobMutantFleshAgressive
+    - Z14MobMutantBlindDogSmall
+    - Z14MobMutantBoar
+    rewardPrototypes:
+    - Z14MutantPartFleshEye
+    - Z14MutantPartBlindDogTail
+    - Z14MutantPartBoarHoof
+
+- type: entity
+  id: Z14MutantLairT2
+  parent: Z14MutantLair
+  name: mutant lair (T2)
+  description: A hardened mutant nest. More dangerous beasts wait inside.
+  suffix: Z14
+  categories: [ Zona14 ]
+  components:
+  - type: Z14MutantLair
+    maxMutants: 4
+    maxSpawns: 12
+    spawnInterval: 30
+    spawnRadius: 5
+    rewardCount: 3
+    mutantPrototypes:
+    - Z14MobMutantPseudodog
+    - Z14MobMutantSnork
+    - Z14MobMutantSeasonedBoar
+    rewardPrototypes:
+    - Z14MutantPartSnorkFoot
+    - Z14MutantPartPseudodogTail
+    - Z14MutantPartSeasonedBoarHoof
+    - Z14MutantPartLeshiyRoot
+
+- type: entity
+  id: Z14MutantLairT3
+  parent: Z14MutantLair
+  name: mutant lair (T3)
+  description: A vicious, high-tier mutant nest. Only well-armed stalkers should approach.
+  suffix: Z14
+  categories: [ Zona14 ]
+  components:
+  - type: Z14MutantLair
+    maxMutants: 5
+    maxSpawns: 12
+    spawnInterval: 30
+    spawnRadius: 6
+    rewardCount: 4
+    mutantPrototypes:
+    - Z14MobMutantBloodsucker
+    - Z14STMobMutantZombieCommon
+    - Z14MobMutantOldBoar
+    rewardPrototypes:
+    - Z14MutantPartBloodsuckerTentacles
+    - Z14MutantPartBloodsuckerHead
+    - Z14MutantPartZombieHand
+    - Z14MutantPartOldBoarHoof
+
+- type: entity
+  id: Z14MutantLairZone
+  parent: MarkerBase
+  name: mutant lair zone (T1)
+  description: Mapper-placed zone where a mutant lair may spawn.
+  suffix: Z14
+  categories: [ Zona14 ]
+  components:
+  - type: Sprite
+    sprite: Markers/cross.rsi
+    layers:
+    - state: red
+  - type: Z14MutantLairZone
+    lairPrototype: Z14MutantLair
+    tier: T1
+
+- type: entity
+  id: Z14MutantLairZoneT2
+  parent: Z14MutantLairZone
+  name: mutant lair zone (T2)
+  suffix: Z14
+  categories: [ Zona14 ]
+  components:
+  - type: Z14MutantLairZone
+    lairPrototype: Z14MutantLairT2
+    tier: T2
+
+- type: entity
+  id: Z14MutantLairZoneT3
+  parent: Z14MutantLairZone
+  name: mutant lair zone (T3)
+  suffix: Z14
+  categories: [ Zona14 ]
+  components:
+  - type: Z14MutantLairZone
+    lairPrototype: Z14MutantLairT3
+    tier: T3

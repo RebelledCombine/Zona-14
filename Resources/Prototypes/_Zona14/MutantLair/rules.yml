@@ -1,0 +1,30 @@
+- type: entity
+  id: Z14MutantLairScheduler
+  parent: BaseGameRule
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: BasicStationEventScheduler
+    minimumTimeUntilFirstEvent: 0
+    minMaxEventTiming:
+      min: 3600
+      max: 7200
+    scheduledGameRules: !type:EntSelector
+      id: Z14MutantLairRule
+
+- type: entity
+  id: Z14MutantLairRule
+  parent: BaseGameRule
+  categories: [ HideSpawnMenu, Zona14 ]
+  suffix: Z14
+  components:
+  - type: StationEvent
+    earliestStart: 60
+    reoccurrenceDelay: 60
+    duration: 1
+    startAnnouncement: z14-mutant-lair-announcement
+    startAudio:
+      path: /Audio/Effects/alert.ogg
+  - type: Z14MutantLairRule
+    maxLairsPerEvent: 1
+    maxLairsPerMap: 2

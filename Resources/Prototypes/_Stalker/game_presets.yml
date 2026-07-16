@@ -10,4 +10,5 @@
     - STWeatherScheduler
     # Zona14: crashed-vehicle supply drop scheduler
     - Z14SupplyDropScheduler
+    - Z14MutantLairScheduler # Zona14: mutant lair event scheduler
   supportedMaps: STDefaultMapPool
