@@ -7,4 +7,6 @@
   rules:
     - STEmissionEventScheduler
     - STWeatherScheduler
+    # Zona14: crashed-vehicle supply drop scheduler
+    - Z14SupplyDropScheduler
   supportedMaps: STDefaultMapPool

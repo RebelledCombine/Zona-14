@@ -14,6 +14,7 @@ from pathlib import Path
 from typing import Any
 
 import yaml
+from yaml import MappingNode, SequenceNode, ScalarNode
 
 # Prototype types where `categories` is not a valid field at all.
 CATEGORIES_FORBIDDEN_TYPES = {
@@ -25,6 +26,21 @@ CATEGORIES_FORBIDDEN_TYPES = {
 
 # Prototype types where `suffix` is not a valid field at all.
 SUFFIX_FORBIDDEN_TYPES = CATEGORIES_FORBIDDEN_TYPES | {"shopPreset"}
+
+
+class Z14SafeLoader(yaml.SafeLoader):
+    """SafeLoader that ignores RobustToolbox type tags (e.g. !type:GroupSelector)."""
+
+
+def _z14_type_constructor(loader: yaml.SafeLoader, tag_suffix: str, node: yaml.Node) -> Any:
+    if isinstance(node, MappingNode):
+        return loader.construct_mapping(node)
+    if isinstance(node, SequenceNode):
+        return loader.construct_sequence(node)
+    return loader.construct_scalar(node)
+
+
+Z14SafeLoader.add_multi_constructor("!type:", _z14_type_constructor)
 
 
 def is_categories_tag(value: Any) -> bool:
@@ -62,7 +78,7 @@ def validate_file(file_path: Path) -> list[str]:
         return errors
     try:
         with open(file_path, "r", encoding="utf-8") as f:
-            data = yaml.safe_load(f)
+            data = yaml.load(f, Loader=Z14SafeLoader)
     except yaml.YAMLError as exc:
         errors.append(f"{file_path}: YAML parse error: {exc}")
         return errors

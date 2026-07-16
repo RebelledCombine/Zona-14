@@ -249,13 +249,13 @@ public sealed class LockSystem : EntitySystem
         if (!skipDoAfter && lockComp.UnlockTime != TimeSpan.Zero)
         {
             return _doAfter.TryStartDoAfter(
-                new DoAfterArgs(EntityManager, user, lockComp.LockTime, new UnlockDoAfter(), uid, uid)
+                new DoAfterArgs(EntityManager, user, lockComp.UnlockTime, new UnlockDoAfter(), uid, uid)
                 {
                     BreakOnDamage = true,
                     BreakOnMove = true,
                     NeedHand = true,
                     BreakOnDropItem = false,
-                });
+                }); // Zona14: use UnlockTime for unlock do-after
         }
 
         Unlock(uid, user, lockComp);

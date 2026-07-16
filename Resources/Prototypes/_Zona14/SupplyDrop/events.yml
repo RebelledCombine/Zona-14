@@ -1,0 +1,28 @@
+- type: entity
+  id: Z14SupplyDropScheduler
+  parent: BasicStationEventScheduler
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: BasicStationEventScheduler
+    scheduledGameRules: !type:NestedSelector
+      tableId: Z14SupplyDropRulesTable
+
+- type: entityTable
+  id: Z14SupplyDropRulesTable
+  table: !type:GroupSelector
+    children:
+    - id: Z14SupplyDropRule
+      weight: 1
+
+- type: entity
+  id: Z14SupplyDropRule
+  parent: BaseGameRule
+  categories: [ Zona14 ]
+  suffix: Z14
+  components:
+  - type: StationEvent
+    weight: 10
+    duration: 1
+    maxDuration: 1
+  - type: Z14SupplyDropRule
