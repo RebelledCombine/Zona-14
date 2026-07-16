@@ -1,0 +1,9 @@
+author: Roland410
+time: '2026-07-16T14:08:28Z'
+url: https://github.com/Zona-14/Zona-14/pull/63
+changes:
+- type: Add
+  message: Added per-action busy animations above players during DoAfters for drawing/holstering
+    guns, equipping/unequipping armor or clothing, eating, drinking, taking pills,
+    and loading ammunition.
+category: Main
