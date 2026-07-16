@@ -1,0 +1,15 @@
+author: Roland410
+time: '2026-07-16T14:08:43Z'
+url: https://github.com/Zona-14/Zona-14/pull/64
+changes:
+- type: Add
+  message: Added MapRadiation ambient map-wide damage and per-type Geiger readout
+    (ShowAll) to advanced dosimeters.
+- type: Fix
+  message: Finished DosimeterModified / DosimeterUniversal and Z14 clones with localized
+    per-damage-type labels and working item/examine displays.
+- type: Add
+  message: Added RadiationSource prototypes for all dosimeter damage types (Cold,
+    Poison, Cellular, Compression, Structural, Shock, Asphyxiation, Bloodloss, Blunt,
+    Piercing, Slash).
+category: Main
