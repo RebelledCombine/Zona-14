@@ -23,6 +23,7 @@ namespace Content.Shared.Input
         public static readonly BoundKeyFunction FocusLOOC = "FocusLOOCWindow";
         public static readonly BoundKeyFunction FocusOOC = "FocusOOCWindow";
         public static readonly BoundKeyFunction FocusAdminChat = "FocusAdminChatWindow";
+        public static readonly BoundKeyFunction FocusMentorChat = "FocusMentorChatWindow"; // Zona14: mentor chat focus
         public static readonly BoundKeyFunction FocusDeadChat = "FocusDeadChatWindow";
         public static readonly BoundKeyFunction FocusConsoleChat = "FocusConsoleChatWindow";
         public static readonly BoundKeyFunction CycleChatChannelForward = "CycleChatChannelForward";
@@ -42,6 +43,7 @@ namespace Content.Shared.Input
         public static readonly BoundKeyFunction OpenBackpack = "OpenBackpack";
         public static readonly BoundKeyFunction OpenBelt = "OpenBelt";
         public static readonly BoundKeyFunction OpenAHelp = "OpenAHelp";
+        public static readonly BoundKeyFunction OpenMentorHelp = "OpenMentorHelp"; // Zona14: mentor help key
         public static readonly BoundKeyFunction SwapHands = "SwapHands";
         public static readonly BoundKeyFunction SwapHandsReverse = "SwapHandsReverse";
         public static readonly BoundKeyFunction MoveStoredItem = "MoveStoredItem";
@@ -61,6 +63,7 @@ namespace Content.Shared.Input
         public static readonly BoundKeyFunction OpenTileSpawnWindow = "OpenTileSpawnWindow";
         public static readonly BoundKeyFunction OpenDecalSpawnWindow = "OpenDecalSpawnWindow";
         public static readonly BoundKeyFunction OpenAdminMenu = "OpenAdminMenu";
+        public static readonly BoundKeyFunction OpenZ14Dashboard = "OpenZ14Dashboard"; // Zona14: dashboard hotkey
         public static readonly BoundKeyFunction TakeScreenshot = "TakeScreenshot";
         public static readonly BoundKeyFunction TakeScreenshotNoUI = "TakeScreenshotNoUI";
         public static readonly BoundKeyFunction ToggleFullscreen = "ToggleFullscreen";

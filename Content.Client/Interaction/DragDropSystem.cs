@@ -1,4 +1,5 @@
 using System.Numerics;
+using Content.Client._Zona14.Administration.Events;
 using Content.Client.CombatMode;
 using Content.Client.Gameplay;
 using Content.Client.Outline;
@@ -395,6 +396,19 @@ public sealed class DragDropSystem : SharedDragDropSystem
             EndDrag();
             return true;
         }
+
+        // Zona14: Allow admin drag-teleport systems to intercept a drag ending on empty space.
+        if (!outOfRange)
+        {
+            var dragNoTargetEv = new DragNoTargetEvent(_draggedEntity.Value, coords);
+            RaiseLocalEvent(dragNoTargetEv);
+            if (dragNoTargetEv.Handled)
+            {
+                EndDrag();
+                return true;
+            }
+        }
+        // End Zona14
 
         if (outOfRange)
         {

@@ -1,0 +1,9 @@
+admin-ahelp-assign = Назначить
+admin-ahelp-unassign = Снять назначение
+admin-ahelp-transcript = Транскрипт
+admin-ahelp-assigned-to = Ведёт: { $admin }
+cmd-ahelptranscript-desc = Вывести транскрипт AHelp для игрока.
+cmd-ahelptranscript-help = Использование: ahelptranscript <имя>
+cmd-ahelptranscript-not-found = Игрок '{ $target }' не найден.
+cmd-ahelptranscript-empty = Для '{ $target }' не найдено сообщений AHelp.
+cmd-ahelptranscript-header = Транскрипт AHelp для { $target } (сообщений: { $count }):

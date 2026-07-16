@@ -1,6 +1,7 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using Content.Server.Actions;
+using Content.Server.Administration.Logs; // Zona14
 using Content.Server.Cargo.Systems;
 using Content.Server.Mind;
 using Content.Server.Store.Components;
@@ -9,6 +10,7 @@ using Content.Shared._Stalker.Shop.Prototypes;
 using Content.Shared.Body.Organ;
 using Content.Shared.Body.Part;
 using Content.Shared.Chemistry.Components.SolutionManager;
+using Content.Shared.Database; // Zona14
 using Content.Shared.FixedPoint;
 using Content.Shared.Hands;
 using Content.Shared.Hands.EntitySystems;
@@ -42,6 +44,7 @@ public sealed partial class ShopSystem : SharedShopSystem
     [Dependency] private readonly SharedPopupSystem _popup = default!;
     [Dependency] private readonly SharedContainerSystem _container = default!;
     [Dependency] private readonly ISharedPlayerManager _player = default!;
+    [Dependency] private readonly IAdminLogManager _adminLog = default!; // Zona14
     private ISawmill _sawmill = default!;
     private PriceCache _priceCache = new();
 
@@ -564,6 +567,10 @@ public sealed partial class ShopSystem : SharedShopSystem
         component.CurrentBalance = balance;
         _sawmill.Debug($"Sent balance to client(buy listing): {component.CurrentBalance}");
         UpdateShopUI(buyer, uid, component.CurrentBalance, component);
+
+        // Zona14: log shop purchase
+        _adminLog.Add(LogType.STShop, LogImpact.Low,
+            $"{ToPrettyString(buyer):player} bought {listing.Name ?? "Unknown"} from {ToPrettyString(uid):shop} for {money.Int()}");
     }
 
     private void OnSellListing(EntityUid uid, ShopComponent component, ShopRequestSellMessage msg)
@@ -623,6 +630,9 @@ public sealed partial class ShopSystem : SharedShopSystem
                 msg.Count);
         }
 
+        // Zona14: log shop sale
+        _adminLog.Add(LogType.STShop, LogImpact.Low,
+            $"{ToPrettyString(seller):player} sold {msg.Count}x {listing.Name ?? "Unknown"} to {ToPrettyString(uid):shop} for {cost}");
     }
     #endregion
 

@@ -5,6 +5,9 @@
     HorizontalExpand="True">
     <OutputPanel Name="TextOutput" VerticalExpand="true" />
     <RichTextLabel Name="TypingIndicator" Access="Public" />
+    <!-- // Zona14: show assigned admin for this ticket -->
+    <RichTextLabel Name="HandlerLabel" Access="Public" Visible="False" />
+    <!-- // End Zona14 -->
     <HistoryLineEdit Name="SenderLineEdit" />
     <RichTextLabel Name="RelayedToDiscordLabel" Access="Public" Visible="False" />
 </BoxContainer>

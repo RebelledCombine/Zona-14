@@ -60,20 +60,42 @@ public sealed partial class AdminLogManager
     {
         // TODO ADMIN LOGS remove redundant data and don't do a dictionary lookup per log
         var cache = _roundsLogCache[_currentRoundId];
-        cache.Add(log);
-        CacheLogCount.Set(cache.Count);
+
+        // Zona14: AdminLogManager can be accessed from the server thread (Add/CacheLog) and from
+        // background tasks spawned by AdminLogsEui.SendLogs. Lock the per-round cache list to
+        // ensure the search cache sees newly cached logs and to protect List<T> enumeration.
+        lock (cache)
+        {
+            cache.Add(log);
+            CacheLogCount.Set(cache.Count);
+        }
     }
 
     private void CacheLogs(IEnumerable<SharedAdminLog> logs)
     {
         var cache = _roundsLogCache[_currentRoundId];
-        cache.AddRange(logs);
-        CacheLogCount.Set(cache.Count);
+        lock (cache)
+        {
+            cache.AddRange(logs);
+            CacheLogCount.Set(cache.Count);
+        }
     }
 
     private bool TryGetCache(int roundId, [NotNullWhen(true)] out List<SharedAdminLog>? cache)
     {
         return _roundsLogCache.TryGetValue(roundId, out cache);
+    }
+
+    // Zona14: include players from cached admin logs so the log viewer can select them even when the round player list is not yet updated.
+    public IEnumerable<Guid> GetCachedRoundPlayers(int roundId)
+    {
+        if (!TryGetCache(roundId, out var cache))
+            return Enumerable.Empty<Guid>();
+
+        lock (cache)
+        {
+            return cache.SelectMany(log => log.Players).Distinct().ToArray();
+        }
     }
 
     private bool TrySearchCache(LogFilter? filter, [NotNullWhen(true)] out List<SharedAdminLog>? results)
@@ -84,75 +106,80 @@ public sealed partial class AdminLogManager
             return false;
         }
 
-        // TODO ADMIN LOGS a better heuristic than linq spaghetti
-        var query = cache.AsEnumerable();
-
-        query = filter.DateOrder switch
+        // Zona14: lock the per-round cache list so CacheLog and TrySearchCache (which may run on
+        // different threads due to AdminLogsEui.SendLogs using Task.Run) have a consistent view.
+        lock (cache)
         {
-            DateOrder.Ascending => query,
-            DateOrder.Descending => query.Reverse(),
-            _ => throw new ArgumentOutOfRangeException(nameof(filter),
-                $"Unknown {nameof(DateOrder)} value {filter.DateOrder}")
-        };
+            // TODO ADMIN LOGS a better heuristic than linq spaghetti
+            var query = cache.AsEnumerable();
 
-        if (filter.Search != null)
-        {
-            query = query.Where(log => log.Message.Contains(filter.Search, StringComparison.OrdinalIgnoreCase));
-        }
-
-        if (filter.Types != null && filter.Types.Count != _logTypes)
-        {
-            query = query.Where(log => filter.Types.Contains(log.Type));
-        }
-
-        if (filter.Impacts != null)
-        {
-            query = query.Where(log => filter.Impacts.Contains(log.Impact));
-        }
-
-        if (filter.Before != null)
-        {
-            query = query.Where(log => log.Date < filter.Before);
-        }
-
-        if (filter.After != null)
-        {
-            query = query.Where(log => log.Date > filter.After);
-        }
-
-        if (filter.IncludePlayers)
-        {
-            if (filter.AnyPlayers != null)
+            query = filter.DateOrder switch
             {
-                query = query.Where(log =>
-                    filter.AnyPlayers.Any(filterPlayer => log.Players.Contains(filterPlayer)) ||
-                    log.Players.Length == 0 && filter.IncludeNonPlayers);
+                DateOrder.Ascending => query,
+                DateOrder.Descending => query.Reverse(),
+                _ => throw new ArgumentOutOfRangeException(nameof(filter),
+                    $"Unknown {nameof(DateOrder)} value {filter.DateOrder}")
+            };
+
+            if (filter.Search != null)
+            {
+                query = query.Where(log => log.Message.Contains(filter.Search, StringComparison.OrdinalIgnoreCase));
             }
 
-            if (filter.AllPlayers != null)
+            if (filter.Types != null && filter.Types.Count != _logTypes)
             {
-                query = query.Where(log =>
-                    filter.AllPlayers.All(filterPlayer => log.Players.Contains(filterPlayer)) ||
-                    log.Players.Length == 0 && filter.IncludeNonPlayers);
+                query = query.Where(log => filter.Types.Contains(log.Type));
             }
-        }
-        else
-        {
-            query = query.Where(log => log.Players.Length == 0);
-        }
 
-        if (filter.LogsSent != 0)
-        {
-            query = query.Skip(filter.LogsSent);
-        }
+            if (filter.Impacts != null)
+            {
+                query = query.Where(log => filter.Impacts.Contains(log.Impact));
+            }
 
-        if (filter.Limit != null)
-        {
-            query = query.Take(filter.Limit.Value);
-        }
+            if (filter.Before != null)
+            {
+                query = query.Where(log => log.Date < filter.Before);
+            }
 
-        // TODO ADMIN LOGS array pool
-        results = query.ToList();
-        return true;
+            if (filter.After != null)
+            {
+                query = query.Where(log => log.Date > filter.After);
+            }
+
+            if (filter.IncludePlayers)
+            {
+                if (filter.AnyPlayers != null)
+                {
+                    query = query.Where(log =>
+                        filter.AnyPlayers.Any(filterPlayer => log.Players.Contains(filterPlayer)) ||
+                        log.Players.Length == 0 && filter.IncludeNonPlayers);
+                }
+
+                if (filter.AllPlayers != null)
+                {
+                    query = query.Where(log =>
+                        filter.AllPlayers.All(filterPlayer => log.Players.Contains(filterPlayer)) ||
+                        log.Players.Length == 0 && filter.IncludeNonPlayers);
+                }
+            }
+            else
+            {
+                query = query.Where(log => log.Players.Length == 0);
+            }
+
+            if (filter.LogsSent != 0)
+            {
+                query = query.Skip(filter.LogsSent);
+            }
+
+            if (filter.Limit != null)
+            {
+                query = query.Take(filter.Limit.Value);
+            }
+
+            // TODO ADMIN LOGS array pool
+            results = query.ToList();
+            return true;
+        }
     }
 }

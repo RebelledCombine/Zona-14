@@ -25,6 +25,9 @@ public interface IBanManager
     /// <param name="reason">Reason for the ban</param>
     public void CreateServerBan(NetUserId? target, string? targetUsername, NetUserId? banningAdmin, (IPAddress, int)? addressRange, ImmutableTypedHwid? hwid, uint? minutes, NoteSeverity severity, string reason);
 
+    // Zona14: pardon a server ban by id
+    public Task<string> PardonBan(int banId, NetUserId? unbanningAdmin, DateTimeOffset unbanTime);
+
     /// <summary>
     /// Gets a list of prefixed prototype IDs with the player's role bans.
     /// </summary>

@@ -1,6 +1,7 @@
 using Content.Shared._Stalker.Shop;
 using Content.Shared._Stalker.Shop.Prototypes;
 using Content.Shared._Stalker_EN.Shop.Buyback;
+using Content.Shared.Database; // Zona14
 using Content.Shared.FixedPoint;
 using Content.Shared.GameTicking;
 using Content.Shared.Store;
@@ -161,6 +162,10 @@ public sealed partial class ShopSystem
         var newBalance = GetMoneyFromList(GetContainersElements(buyer), component);
         component.CurrentBalance = newBalance;
         UpdateShopUI(buyer, uid, newBalance, component);
+
+        // Zona14: log buyback purchase
+        _adminLog.Add(LogType.STShop, LogImpact.Low,
+            $"{ToPrettyString(buyer):player} bought back {targetEntry.Name} from {ToPrettyString(uid):shop} for {targetEntry.BuybackPrice}");
     }
 
     private void OnBuybackRoundCleanup(RoundRestartCleanupEvent ev)

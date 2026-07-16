@@ -504,4 +504,104 @@ public enum LogType
     /// Camera photo actions (capture, delete, admin purge).
     /// </summary>
     STPhoto = 196, // stalker-en-changes
+
+    // Zona14: Stalker/Zona-14 admin logging additions
+    /// <summary>
+    /// Stalker storage/repository actions (deposit, withdraw, clear, admin set).
+    /// </summary>
+    STStorage = 197,
+
+    /// <summary>
+    /// Stalker shop/vendor transactions (buy, sell, bulk buy, buyback, NC store).
+    /// </summary>
+    STShop = 198,
+
+    /// <summary>
+    /// Stalker band management actions (member add/remove, ranks, bank, relations, purchases).
+    /// </summary>
+    STBand = 199,
+
+    /// <summary>
+    /// Stalker band patch identification (who identified who and what armor both were wearing).
+    /// </summary>
+    STBandPatchIdentified = 200, // Zona14
+
+    /// <summary>
+    /// Stalker faction relation actions (proposals, accept/reject/cancel/reset).
+    /// </summary>
+    STFactionRelation = 201,
+
+    /// <summary>
+    /// Stalker character rank admin commands (strank_set, strank_transfer).
+    /// </summary>
+    STCharacterRank = 202,
+
+    /// <summary>
+    /// Stalker loadout actions (save, load, delete, rename, quick store).
+    /// </summary>
+    STLoadout = 203,
+
+    /// <summary>
+    /// Stalker sponsor admin commands (st_give_loadout, st_make_wipe, etc).
+    /// </summary>
+    STSponsor = 204,
+
+    /// <summary>
+    /// Stalker war zone actions (point/zone changes, captures).
+    /// </summary>
+    STWarZone = 205,
+
+    /// <summary>
+    /// Zona-14 mutant lair event/admin actions.
+    /// </summary>
+    Z14MutantLair = 206,
+
+    /// <summary>
+    /// Zona-14 anomaly migration event/admin actions.
+    /// </summary>
+    Z14AnomalyMigration = 207,
+
+    /// <summary>
+    /// Zona-14 supply drop event/admin actions.
+    /// </summary>
+    Z14SupplyDrop = 208,
+
+    /// <summary>
+    /// Zona-14 personal cache actions (place, hide/unhide, PDA list, admin commands).
+    /// </summary>
+    Z14PersonalCache = 209,
+
+    /// <summary>
+    /// Zona-14 map radiation admin actions and state changes.
+    /// </summary>
+    Z14MapRadiation = 210,
+
+    /// <summary>
+    /// Zona-14 door and window destruction log.
+    /// </summary>
+    Z14Door = 211, // Zona14
+
+    // Zona14: anti-cheat/alerting and inventory log types
+    /// <summary>
+    /// Player kill between actors.
+    /// </summary>
+    Kill = 212,
+
+    /// <summary>
+    /// Anomaly / anti-cheat detection alert.
+    /// </summary>
+    AdminAlert = 213,
+
+    // Zona14: inventory/equipment log type
+    /// <summary>
+    /// Zona-14 inventory equip and unequip events.
+    /// </summary>
+    Z14Inventory = 214, // Zona14
+
+    // Zona14: mentor help log type
+    /// <summary>
+    /// A mentor help message was sent or received.
+    /// </summary>
+    MentorHelp = 215, // Zona14
+    // End Zona14
 }

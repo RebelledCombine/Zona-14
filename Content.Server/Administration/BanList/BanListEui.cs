@@ -4,6 +4,7 @@ using Content.Server.Database;
 using Content.Server.EUI;
 using Content.Shared.Administration;
 using Content.Shared.Administration.BanList;
+using Content.Shared._Zona14.Administration.BanList; // Zona14: PardonBanMessage
 using Content.Shared.Eui;
 using Robust.Shared.Network;
 
@@ -14,6 +15,7 @@ public sealed class BanListEui : BaseEui
     [Dependency] private readonly IAdminManager _admins = default!;
     [Dependency] private readonly IPlayerLocator _playerLocator = default!;
     [Dependency] private readonly IServerDbManager _db = default!;
+    [Dependency] private readonly IBanManager _banManager = default!; // Zona14: pardon support
 
     public BanListEui()
     {
@@ -39,6 +41,31 @@ public sealed class BanListEui : BaseEui
         _admins.OnPermsChanged -= OnPermsChanged;
     }
 
+    // Zona14: handle pardon requests from the ban list UI
+    public override void HandleMessage(EuiMessageBase msg)
+    {
+        base.HandleMessage(msg);
+
+        if (msg is not PardonBanMessage pardon)
+            return;
+
+        OnPardon(pardon);
+    }
+
+    private async void OnPardon(PardonBanMessage pardon)
+    {
+        if (!_admins.HasAdminFlag(Player, AdminFlags.Ban))
+            return;
+
+        if (pardon.IsRoleBan)
+            await _banManager.PardonRoleBan(pardon.BanId, Player.UserId, DateTimeOffset.Now);
+        else
+            await _banManager.PardonBan(pardon.BanId, Player.UserId, DateTimeOffset.Now);
+
+        await LoadFromDb();
+    }
+    // End Zona14
+
     public override EuiStateBase GetNewState()
     {
         return new BanListEuiState(BanListPlayerName, Bans, RoleBans);
@@ -52,9 +79,14 @@ public sealed class BanListEui : BaseEui
         }
     }
 
-    private async Task LoadBans(NetUserId userId)
+    // Zona14: load all bans when no user is selected (global ban list)
+    private async Task LoadBans(NetUserId? userId)
     {
-        foreach (var ban in await _db.GetServerBansAsync(null, userId, null, null))
+        var bans = userId.HasValue
+            ? await _db.GetServerBansAsync(null, userId, null, null)
+            : await _db.GetAllServerBansAsync();
+
+        foreach (var ban in bans)
         {
             SharedServerUnban? unban = null;
             if (ban.Unban is { } unbanDef)
@@ -92,10 +124,16 @@ public sealed class BanListEui : BaseEui
             ));
         }
     }
+    // End Zona14
 
-    private async Task LoadRoleBans(NetUserId userId)
+    // Zona14: load all role bans when no user is selected (global ban list)
+    private async Task LoadRoleBans(NetUserId? userId)
     {
-        foreach (var ban in await _db.GetServerRoleBansAsync(null, userId, null, null))
+        var bans = userId.HasValue
+            ? await _db.GetServerRoleBansAsync(null, userId, null, null)
+            : await _db.GetAllServerRoleBansAsync();
+
+        foreach (var ban in bans)
         {
             SharedServerUnban? unban = null;
             if (ban.Unban is { } unbanDef)
@@ -133,21 +171,33 @@ public sealed class BanListEui : BaseEui
             ));
         }
     }
+    // End Zona14
 
+    // Zona14: load all bans when BanListPlayer is Guid.Empty
     private async Task LoadFromDb()
     {
         Bans.Clear();
         RoleBans.Clear();
 
-        var userId = new NetUserId(BanListPlayer);
-        BanListPlayerName = (await _playerLocator.LookupIdAsync(userId))?.Username ??
-                            string.Empty;
+        if (BanListPlayer == Guid.Empty)
+        {
+            BanListPlayerName = Loc.GetString("ban-list-all");
+            await LoadBans(null);
+            await LoadRoleBans(null);
+        }
+        else
+        {
+            var userId = new NetUserId(BanListPlayer);
+            BanListPlayerName = (await _playerLocator.LookupIdAsync(userId))?.Username ??
+                                string.Empty;
 
-        await LoadBans(userId);
-        await LoadRoleBans(userId);
+            await LoadBans(userId);
+            await LoadRoleBans(userId);
+        }
 
         StateDirty();
     }
+    // End Zona14
 
     public async Task ChangeBanListPlayer(Guid banListPlayer)
     {

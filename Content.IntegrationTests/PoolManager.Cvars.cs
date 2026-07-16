@@ -1,5 +1,6 @@
 #nullable enable
 using Content.Shared.CCVar;
+using Content.Shared._Zona14.CCVar; // Zona14: newmap_teleport_preload CVar
 
 namespace Content.IntegrationTests;
 
@@ -31,6 +32,7 @@ public static partial class PoolManager
         (CCVars.GameLobbyEnabled.Name, "false"),
         (CCVars.ConfigPresetDevelopment.Name, "false"),
         (CCVars.AdminLogsEnabled.Name, "false"),
+        (Zona14CVars.NewMapTeleportPreload.Name, "false"), // Zona14: disable map preloading in tests
         (CCVars.AutosaveEnabled.Name, "false"),
         (CCVars.InteractionRateLimitCount.Name, "9999999"),
         (CCVars.InteractionRateLimitPeriod.Name, "0.1"),

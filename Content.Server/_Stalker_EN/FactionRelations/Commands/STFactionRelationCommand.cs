@@ -109,7 +109,7 @@ public sealed class STFactionRelationCommand : IConsoleCommand
         if (system.IsRelationRestricted(factionA, factionB, relation))
             shell.WriteLine($"Note: {relation} is YAML-forbidden for {factionA} <-> {factionB}. Overriding as admin.");
 
-        system.SetRelation(factionA, factionB, relation, broadcast: broadcast);
+        system.SetRelation(factionA, factionB, relation, broadcast: broadcast, actor: shell.Player); // Zona14: pass actor for logging
         shell.WriteLine($"Set relation {factionA} <-> {factionB} to {relation}{(broadcast ? " (announced)" : " (silent)")}");
     }
 
@@ -130,7 +130,7 @@ public sealed class STFactionRelationCommand : IConsoleCommand
 
     private static void HandleReset(IConsoleShell shell, STFactionRelationsCartridgeSystem system)
     {
-        system.ResetAllRelations();
+        system.ResetAllRelations(shell.Player); // Zona14: pass actor for logging
         shell.WriteLine("All faction relation overrides and proposals cleared. Reverted to YAML defaults.");
     }
 
@@ -170,7 +170,7 @@ public sealed class STFactionRelationCommand : IConsoleCommand
                 break;
             }
             case "clear":
-                system.ResetAllRelations(); // This also clears proposals
+                system.ResetAllRelations(shell.Player); // Zona14: pass actor for logging; this also clears proposals
                 shell.WriteLine("All proposals cleared (along with relation overrides).");
                 break;
             case "delete":

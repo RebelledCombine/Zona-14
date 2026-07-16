@@ -1,6 +1,8 @@
 using System.Linq;
 using System.Text.Json;
+using Content.Server.Administration.Logs; // Zona14
 using Content.Server.VendingMachines;
+using Robust.Shared.Player; // Zona14: ICommonSession for ClearStorages
 using Content.Shared.Interaction;
 using Content.Shared.VendingMachines;
 using Content.Shared.Weapons.Ranged.Components;
@@ -17,6 +19,7 @@ using Content.Shared.Chemistry.Components.SolutionManager;
 using Content.Shared.Chemistry.Reagent;
 using Content.Shared.Clothing.Components;
 using Content.Shared.Containers.ItemSlots;
+using Content.Shared.Database; // Zona14
 using Content.Shared.FixedPoint;
 using Content.Shared.Light.Components;
 using Content.Shared.Paper;
@@ -39,6 +42,7 @@ public sealed class StalkerStorageSystem : SharedStalkerStorageSystem
     [Dependency] private readonly StalkerRepositorySystem _stalkerRepositorySystem = default!;
     [Dependency] private readonly SharedAppearanceSystem _appearance = default!;
     [Dependency] private readonly IPrototypeManager _prototype = default!;
+    [Dependency] private readonly IAdminLogManager _adminLog = default!; // Zona14
 
     private delegate List<object> DelegateItemStalkerConverter(EntityUid inputEntityUid);
 
@@ -350,7 +354,18 @@ public sealed class StalkerStorageSystem : SharedStalkerStorageSystem
         if (!TryComp(inputEntity, out StalkerRepositoryComponent? stalkerRepositoryComponent) || stalkerRepositoryComponent.LoadedDbJson == string.Empty)
             return;
 
-        var fromDbPlayerInventory = InventoryFromJson(stalkerRepositoryComponent.LoadedDbJson);
+        AllStorageInventory? fromDbPlayerInventory = null;
+        try
+        {
+            fromDbPlayerInventory = InventoryFromJson(stalkerRepositoryComponent.LoadedDbJson);
+        }
+        catch (Exception e)
+        {
+            // Zona14: log stash JSON deserialization failures
+            _adminLog.Add(LogType.STStorage, LogImpact.High,
+                $"Stash load failed for {ToPrettyString(inputEntity):repo}: {e.Message}");
+            return;
+        }
 
         foreach (var item in fromDbPlayerInventory.AllItems)
         {
@@ -387,7 +402,12 @@ public sealed class StalkerStorageSystem : SharedStalkerStorageSystem
             prototype = newPrototype;
 
         if (!_prototype.HasIndex(prototype))
+        {
             Log.Error($"A non-existent prototype entity in the stash {prototype}");
+            // Zona14: log prototype mapping failures for stash loads
+            _adminLog.Add(LogType.STStorage, LogImpact.High,
+                $"Stash load failed: prototype {prototype} not found");
+        }
 
         return prototype;
     }
@@ -742,9 +762,13 @@ public sealed class StalkerStorageSystem : SharedStalkerStorageSystem
         LoadStalkerItemsByEntityUid(uid);
 
         _stalkerDbSystem.ClearInventoryJson(comp.StorageOwner);
+
+        // Zona14: log stash clear
+        _adminLog.Add(LogType.STStorage, LogImpact.Extreme,
+            $"Cleared storage {ToPrettyString(uid):repo} (owner: {comp.StorageOwner})");
     }
 
-    public void ClearStorages(string? login)
+    public void ClearStorages(string? login, ICommonSession? actor = null)
     {
         if (login == null)
             return;
@@ -769,6 +793,18 @@ public sealed class StalkerStorageSystem : SharedStalkerStorageSystem
 
         // Clear the repositories in db
         _stalkerDbSystem.ClearAllRepositories(login);
+
+        // Zona14: log bulk stash clear
+        if (actor is { } actorSession)
+        {
+            _adminLog.Add(LogType.STStorage, LogImpact.Extreme,
+                $"{actorSession:player} cleared all storages matching login {login}");
+        }
+        else
+        {
+            _adminLog.Add(LogType.STStorage, LogImpact.Extreme,
+                $"Cleared all storages matching login {login}");
+        }
     }
 
     public static string InventoryToJson(AllStorageInventory inputAllStorageInventory)

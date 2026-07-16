@@ -6,5 +6,7 @@ admin-player-actions-window-permissions = Панель доступов
 admin-player-actions-window-announce = Сделать объявление
 admin-player-actions-window-shuttle = Вызвать/отозвать шаттл
 admin-player-actions-window-admin-logs = Админ логи
+# Zona14: admin activity button
+admin-player-actions-window-admin-activity = Админ активность
 admin-player-actions-window-admin-notes = Админ заметки
 admin-player-actions-window-admin-fax = Админ факс

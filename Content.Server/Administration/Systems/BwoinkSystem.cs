@@ -5,14 +5,18 @@ using System.Text.Json;
 using System.Text.Json.Nodes;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using Content.Server.Administration.Logs; // Zona14
 using Content.Server.Administration.Managers;
 using Content.Server.Afk;
 using Content.Server.Database;
 using Content.Server.Discord;
+using Content.Shared._Zona14.Administration.Logs; // Zona14
+using Content.Shared._Zona14.Administration.Bwoink; // Zona14: AHelp assignment
 using Content.Server.GameTicking;
 using Content.Server.Players.RateLimiting;
 using Content.Shared.Administration;
 using Content.Shared.CCVar;
+using Content.Shared.Database; // Zona14
 using Content.Shared.GameTicking;
 using Content.Shared.Mind;
 using Content.Shared.Players.RateLimiting;
@@ -43,6 +47,7 @@ namespace Content.Server.Administration.Systems
         [Dependency] private readonly IAfkManager _afkManager = default!;
         [Dependency] private readonly IServerDbManager _dbManager = default!;
         [Dependency] private readonly PlayerRateLimitManager _rateLimit = default!;
+        [Dependency] private readonly IAdminLogManager _adminLog = default!; // Zona14
 
         [GeneratedRegex(@"^https://discord\.com/api/webhooks/(\d+)/((?!.*/).*)$")]
         private static partial Regex DiscordRegex();
@@ -81,6 +86,7 @@ namespace Content.Server.Administration.Systems
 
         private int _maxAdditionalChars;
         private readonly Dictionary<NetUserId, DateTime> _activeConversations = new();
+        private readonly Dictionary<NetUserId, NetUserId> _assignedAdmins = new(); // Zona14: channel -> assigned admin
 
         public override void Initialize()
         {
@@ -108,6 +114,7 @@ namespace Content.Server.Administration.Systems
 
             SubscribeLocalEvent<GameRunLevelChangedEvent>(OnGameRunLevelChanged);
             SubscribeNetworkEvent<BwoinkClientTypingUpdated>(OnClientTypingUpdated);
+            SubscribeNetworkEvent<BwoinkAssignMessage>(OnAssignMessage); // Zona14
             SubscribeLocalEvent<RoundRestartCleanupEvent>(_ => _activeConversations.Clear());
 
         	_rateLimit.Register(
@@ -329,6 +336,57 @@ namespace Content.Server.Administration.Systems
                 RaiseNetworkEvent(update, admin);
             }
         }
+
+        // Zona14: handle AHelp ticket assignment/unassignment
+        private void OnAssignMessage(BwoinkAssignMessage msg, EntitySessionEventArgs args)
+        {
+            if (args.SenderSession is not ICommonSession sender)
+                return;
+
+            var adminData = _adminManager.GetAdminData(sender);
+            if (adminData?.HasFlag(AdminFlags.Adminhelp) != true)
+                return;
+
+            var targetName = GetBwoinkPlayerName(msg.Channel);
+            string? assigneeName = null;
+
+            if (msg.Unassign)
+            {
+                if (!_assignedAdmins.Remove(msg.Channel))
+                    return;
+
+                _adminLog.Add(LogType.AdminMessage, LogImpact.Medium,
+                    $"AHelp ticket for {new AdminLogPlayerValue(msg.Channel, targetName):subject} was unassigned");
+                BroadcastAssign(msg.Channel, null);
+                return;
+            }
+
+            if (_assignedAdmins.TryGetValue(msg.Channel, out var existing) && existing == sender.UserId)
+            {
+                // Clicking assign while already assigned to self unassigns
+                _assignedAdmins.Remove(msg.Channel);
+                _adminLog.Add(LogType.AdminMessage, LogImpact.Medium,
+                    $"AHelp ticket for {new AdminLogPlayerValue(msg.Channel, targetName):subject} was unassigned");
+                BroadcastAssign(msg.Channel, null);
+                return;
+            }
+
+            _assignedAdmins[msg.Channel] = sender.UserId;
+            assigneeName = sender.Name;
+            _adminLog.Add(LogType.AdminMessage, LogImpact.Medium,
+                $"AHelp ticket for {new AdminLogPlayerValue(msg.Channel, targetName):subject} assigned to {new AdminLogPlayerValue(sender.UserId, assigneeName):player}");
+            BroadcastAssign(msg.Channel, sender.Name);
+        }
+
+        private void BroadcastAssign(NetUserId channel, string? adminName)
+        {
+            var update = new BwoinkAssignUpdated(channel, adminName);
+            foreach (var admin in GetTargetAdmins())
+            {
+                RaiseNetworkEvent(update, admin);
+            }
+        }
+        // End Zona14
 
         private void OnServerNameChanged(string obj)
         {
@@ -772,6 +830,24 @@ namespace Content.Server.Administration.Systems
             var systemText = Loc.GetString("bwoink-system-starmute-message-no-other-users");
             var starMuteMsg = new BwoinkTextMessage(message.UserId, SystemUserId, systemText);
             RaiseNetworkEvent(starMuteMsg, senderSession.Channel);
+        }
+
+        // Zona14: log AHelp messages
+        protected override void LogBwoink(BwoinkTextMessage message)
+        {
+            var senderName = GetBwoinkPlayerName(message.TrueSender);
+            var recipientName = GetBwoinkPlayerName(message.UserId);
+
+            _adminLog.Add(LogType.AdminMessage, LogImpact.Low,
+                $"{new AdminLogPlayerValue(message.TrueSender, senderName):player} -> {new AdminLogPlayerValue(message.UserId, recipientName):subject}: {message.Text}");
+        }
+
+        private string GetBwoinkPlayerName(NetUserId userId)
+        {
+            if (_playerManager.TryGetSessionById(userId, out var session))
+                return session.Name;
+
+            return userId.ToString();
         }
 
         private IList<INetChannel> GetNonAfkAdmins()

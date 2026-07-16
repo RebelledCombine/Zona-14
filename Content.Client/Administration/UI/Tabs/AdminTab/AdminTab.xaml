@@ -13,6 +13,8 @@
             <cc:CommandButton Command="announceui" Text="{Loc admin-player-actions-window-announce}"/>
             <cc:UICommandButton Command="callshuttle" Text="{Loc admin-player-actions-window-shuttle}" WindowType="{x:Type at:AdminShuttleWindow}"/>
             <cc:CommandButton Command="adminlogs" Text="{Loc admin-player-actions-window-admin-logs}"/>
+            <!-- // Zona14: admin activity button -->
+            <cc:CommandButton Command="adminactivity" Text="{Loc admin-player-actions-window-admin-activity}"/>
             <cc:CommandButton Command="faxui" Text="{Loc admin-player-actions-window-admin-fax}"/>
             <cc:CommandButton Command="achatwindow" Text="{Loc admin-player-actions-window-admin-chat}"/>
         </GridContainer>

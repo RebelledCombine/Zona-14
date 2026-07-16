@@ -1,6 +1,7 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Threading.Tasks;
+using Content.Server.Administration.Logs; // Zona14
 using Content.Server.Database;
 using Content.Server.Mind;
 using Content.Shared._Stalker.Bands;
@@ -18,6 +19,7 @@ using Content.Server._Stalker.WarZone;
 using Content.Server._Stalker_EN.FactionRelations; // stalker-en-changes
 using Content.Shared._Stalker_EN.FactionRelations; // stalker-en-changes
 using Content.Shared._Stalker_EN.Portraits; // stalker-en-changes
+using Content.Shared.Database; // Zona14
 using Content.Shared.Hands.EntitySystems;
 using Robust.Shared.Player;
 
@@ -38,6 +40,7 @@ namespace Content.Server._Stalker.Bands
         [Dependency] private readonly IEntityManager _entityManager = default!;
         [Dependency] private readonly ISharedPlayerManager _player = default!;
         [Dependency] private readonly STFactionRelationsCartridgeSystem _factionRelations = default!; // stalker-en-changes
+        [Dependency] private readonly IAdminLogManager _adminLog = default!; // Zona14
         private sealed record ServerBandInfo(STBandPrototype Prototype, StalkerBand? DbBand = null);
 
         private Dictionary<EntityUid, List<BandShopItem>> _loadedShopItems = new();
@@ -317,6 +320,10 @@ namespace Content.Server._Stalker.Bands
 
             // Update UI state after modification
             UpdateUiState((uid, component), msg.Actor);
+
+            // Zona14: log band member addition
+            _adminLog.Add(LogType.STBand, LogImpact.Medium,
+                $"{session:player} added {msg.PlayerName} to band {leaderBandInfo.Prototype.ID}");
         }
 
         private async void OnRemoveMember(EntityUid uid, BandsManagingComponent component, BandsManagingRemoveMemberMessage msg)
@@ -364,6 +371,10 @@ namespace Content.Server._Stalker.Bands
 
             // Update UI state after modification
             UpdateUiState((uid, component), msg.Actor);
+
+            // Zona14: log band member removal
+            _adminLog.Add(LogType.STBand, LogImpact.Medium,
+                $"{session:player} removed {msg.PlayerUserId} from band {leaderBandInfo.Prototype.ID}");
         }
 
         // --- Methods from SharedBandsSystem ---
@@ -741,6 +752,10 @@ namespace Content.Server._Stalker.Bands
             _hands.PickupOrDrop(buyer, product); // Use PickupOrDrop as requested
 
             Logger.InfoS("bands", $"Player {buyerUserId} (Band: {bandProtoId}) bought item {msg.ItemId} for {itemToBuy.Price} points.");
+
+            // Zona14: log band item purchase
+            _adminLog.Add(LogType.STBand, LogImpact.Medium,
+                $"{session:player} bought band item {ToPrettyString(product):item} for {itemToBuy.Price} points for {bandProtoId}");
 
             // 8. Update UI state for all clients viewing this UI
             UpdateUiState((uid, component), buyer);

@@ -12,6 +12,8 @@ namespace Content.Tests.Shared.Administration
         [TestCase("ADMIN", AdminFlags.Admin)]
         [TestCase("ADMIN,DEBUG", AdminFlags.Admin | AdminFlags.Debug)]
         [TestCase("ADMIN,DEBUG,HOST", AdminFlags.Admin | AdminFlags.Debug | AdminFlags.Host)]
+        [TestCase("MENTOR", AdminFlags.Mentor)] // Zona14: mentor flag round-trip
+        [TestCase("ADMIN,MENTOR", AdminFlags.Admin | AdminFlags.Mentor)] // Zona14: combined admin+mentor round-trip
         [TestCase("", AdminFlags.None)]
         public void TestNamesToFlags(string namesConcat, AdminFlags flags)
         {
@@ -24,6 +26,8 @@ namespace Content.Tests.Shared.Administration
         [TestCase("ADMIN", AdminFlags.Admin)]
         [TestCase("ADMIN,DEBUG", AdminFlags.Admin | AdminFlags.Debug)]
         [TestCase("ADMIN,DEBUG,HOST", AdminFlags.Admin | AdminFlags.Debug | AdminFlags.Host)]
+        [TestCase("MENTOR", AdminFlags.Mentor)] // Zona14: mentor flag round-trip
+        [TestCase("ADMIN,MENTOR", AdminFlags.Admin | AdminFlags.Mentor)] // Zona14: combined admin+mentor round-trip
         [TestCase("", AdminFlags.None)]
         public void TestFlagsToNames(string namesConcat, AdminFlags flags)
         {

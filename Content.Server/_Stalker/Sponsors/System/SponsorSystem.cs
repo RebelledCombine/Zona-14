@@ -5,10 +5,12 @@ using System.Threading.Tasks;
 using Content.Server._Stalker.Sponsors.SponsorManager;
 using Content.Server._Stalker.StalkerRepository;
 using Content.Server.Administration;
+using Content.Server.Administration.Logs; // Zona14
 using Content.Shared._Stalker.CCCCVars;
 using Content.Shared._Stalker.Sponsors;
 using Content.Shared._Stalker.StalkerRepository;
 using Content.Shared.Administration;
+using Content.Shared.Database; // Zona14
 using Content.Shared.Ghost;
 using Content.Shared.Hands.EntitySystems;
 using Robust.Server.Player;
@@ -27,6 +29,7 @@ public sealed partial class SponsorSystem : EntitySystem
     [Dependency] private readonly IPrototypeManager _prototype = default!;
     [Dependency] private readonly SharedHandsSystem _hands = default!;
     [Dependency] private readonly IConfigurationManager _cfg = default!;
+    [Dependency] private readonly IAdminLogManager _adminLog = default!; // Zona14
 
     private bool _sponsorsEnabled = false;
 
@@ -95,6 +98,7 @@ public sealed partial class SponsorSystem : EntitySystem
         }
 
         List<EntProtoId> items;
+        var sponsorLevel = sponsorPrototypeIndex.ID;
         if (!useLevelSpecified)
         {
             var rawItems = sponsorPrototypeIndex.RepositoryItems.ToList();
@@ -104,6 +108,7 @@ public sealed partial class SponsorSystem : EntitySystem
         {
             var rawItems = userSpecifiedSponsorPrototype.RepositoryItems.ToList();
             items = rawItems.ConvertAll(a => new EntProtoId(a));
+            sponsorLevel = userSpecifiedSponsorPrototype.ID;
         }
         else
         {
@@ -118,6 +123,10 @@ public sealed partial class SponsorSystem : EntitySystem
                 if (GiveHands(ckey, items, out var reason))
                 {
                     shell.WriteLine($"Successfully gave loadout to {ckey}");
+
+                    // Zona14: log sponsor loadout given
+                    _adminLog.Add(LogType.STSponsor, LogImpact.Extreme,
+                        $"{shell.Player:player} gave sponsor loadout to {session:player} mode {mode} level {sponsorLevel} ({items.Count} items)");
                     return;
                 }
                 shell.WriteError(reason);
@@ -128,6 +137,10 @@ public sealed partial class SponsorSystem : EntitySystem
                 if (GiveRepository(ckey, items, out var reason))
                 {
                     shell.WriteLine($"Successfully gave loadout to {ckey}");
+
+                    // Zona14: log sponsor loadout given
+                    _adminLog.Add(LogType.STSponsor, LogImpact.Extreme,
+                        $"{shell.Player:player} gave sponsor loadout to {session:player} mode {mode} level {sponsorLevel} ({items.Count} items)");
                     return;
                 }
                 shell.WriteError(reason);
@@ -260,6 +273,7 @@ public sealed partial class SponsorSystem : EntitySystem
             .ToList();
 
         var items = rawItems.ConvertAll(a => new EntProtoId(a));
+        var sponsorLevel = _sponsors.ContributorPrototype?.ID ?? "contributor";
 
         switch (mode)
         {
@@ -268,6 +282,10 @@ public sealed partial class SponsorSystem : EntitySystem
                 if (GiveHands(ckey, items, out var reason))
                 {
                     shell.WriteLine($"Successfully gave loadout to {ckey}");
+
+                    // Zona14: log contributor loadout given
+                    _adminLog.Add(LogType.STSponsor, LogImpact.Extreme,
+                        $"{shell.Player:player} gave contributor loadout to {session:player} mode {mode} level {sponsorLevel} ({items.Count} items)");
                     return;
                 }
                 shell.WriteError(reason);
@@ -278,6 +296,10 @@ public sealed partial class SponsorSystem : EntitySystem
                 if (GiveRepository(ckey, items, out var reason))
                 {
                     shell.WriteLine($"Successfully gave loadout to {ckey}");
+
+                    // Zona14: log contributor loadout given
+                    _adminLog.Add(LogType.STSponsor, LogImpact.Extreme,
+                        $"{shell.Player:player} gave contributor loadout to {session:player} mode {mode} level {sponsorLevel} ({items.Count} items)");
                     return;
                 }
                 shell.WriteError(reason);
@@ -349,6 +371,10 @@ public sealed partial class SponsorSystem : EntitySystem
         }
 
         shell.WriteLine($"{ckey} status is: {(data.IsGiven ? "GIVEN" : "NOT GIVEN")}");
+
+        // Zona14: log sponsor status check
+        _adminLog.Add(LogType.STSponsor, LogImpact.Low,
+            $"{shell.Player:player} checked sponsor status of {session:player}: {(data.IsGiven ? "GIVEN" : "NOT GIVEN")}");
     }
 
     #endregion
@@ -360,6 +386,10 @@ public sealed partial class SponsorSystem : EntitySystem
     {
         Task.Run(() => _sponsors.MakeWipe());
         shell.WriteLine("Wipe request sent!");
+
+        // Zona14: log sponsor wipe
+        _adminLog.Add(LogType.STSponsor, LogImpact.Extreme,
+            $"{shell.Player:player} wiped sponsor data");
     }
 
     #endregion
@@ -370,6 +400,10 @@ public sealed partial class SponsorSystem : EntitySystem
     public void ListSponsors(IConsoleShell shell, string argStr, string[] argv)
     {
         var sponsors = _sponsors.Sponsors;
+
+        // Zona14: log sponsor list
+        _adminLog.Add(LogType.STSponsor, LogImpact.Low,
+            $"{shell.Player:player} listed sponsors ({sponsors.Count} entries)");
 
         var builder = new StringBuilder();
 

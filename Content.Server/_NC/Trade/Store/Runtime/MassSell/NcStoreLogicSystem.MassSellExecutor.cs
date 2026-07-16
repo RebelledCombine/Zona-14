@@ -1,4 +1,6 @@
+using System.Linq;
 using Content.Shared._NC.Trade;
+using Content.Shared.Database; // Zona14
 
 namespace Content.Server._NC.Trade;
 
@@ -65,6 +67,11 @@ public sealed partial class NcStoreLogicSystem
 
         _inventory.InvalidateInventoryCache(container);
         _inventory.InvalidateInventoryCache(user);
+
+        // Zona14: log NC store mass sell
+        var incomeSummary = string.Join(", ", incomeActual.Select(kv => $"{kv.Value} {kv.Key}"));
+        _adminLog.Add(LogType.STShop, LogImpact.Low,
+            $"{ToPrettyString(user):player} mass-sold from {ToPrettyString(container):container} at {ToPrettyString(machine):shop} for {incomeSummary}");
         return true;
     }
 }

@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using Content.Server._Stalker.StalkerDB;
 using Content.Server._Stalker.StalkerRepository;
 using Content.Server._Stalker.Storage;
+using Content.Server.Administration.Logs; // Zona14
 using Content.Server.Database;
 using Content.Server.Players.RateLimiting;
 using Content.Shared._Stalker_EN.CCVar;
@@ -55,6 +56,7 @@ public sealed class LoadoutSystem : EntitySystem
     [Dependency] private readonly SharedStorageSystem _storage = default!;
     [Dependency] private readonly PlayerRateLimitManager _rateLimitManager = default!;
     [Dependency] private readonly SharedItemSystem _itemSystem = default!;
+    [Dependency] private readonly IAdminLogManager _adminLog = default!; // Zona14
 
     private ISawmill _sawmill = default!;
 
@@ -266,6 +268,10 @@ public sealed class LoadoutSystem : EntitySystem
             await SaveLoadoutAsync(owner, loadout, msg.IsQuickSave);
             _popup.PopupEntity(Loc.GetString("loadout-saved"), msg.Actor, msg.Actor, PopupType.Small);
             await SendLoadoutStateUpdateAsync(uid, component, msg.Actor);
+
+            // Zona14: log loadout save
+            _adminLog.Add(LogType.STLoadout, LogImpact.Low,
+                $"{ToPrettyString(msg.Actor):player} saved loadout {name} in {ToPrettyString(uid):repo}");
         }
         catch (Exception e)
         {
@@ -346,6 +352,10 @@ public sealed class LoadoutSystem : EntitySystem
                 {
                     _popup.PopupEntity(Loc.GetString("loadout-loaded"), msg.Actor, msg.Actor, PopupType.Small);
                 }
+
+                // Zona14: log loadout load
+                _adminLog.Add(LogType.STLoadout, LogImpact.Low,
+                    $"{ToPrettyString(msg.Actor):player} loaded loadout {loadout.Name} in {ToPrettyString(uid):repo} (missing {result.MissingCount})");
             }
             else
             {
@@ -421,6 +431,10 @@ public sealed class LoadoutSystem : EntitySystem
 
             _popup.PopupEntity(Loc.GetString("loadout-deleted"), msg.Actor, msg.Actor, PopupType.Small);
             await SendLoadoutStateUpdateAsync(uid, freshComponent, msg.Actor);
+
+            // Zona14: log loadout deletion
+            _adminLog.Add(LogType.STLoadout, LogImpact.Medium,
+                $"{ToPrettyString(msg.Actor):player} deleted loadout {loadout.Name} from {ToPrettyString(uid):repo}");
         }
         catch (Exception e)
         {
@@ -490,6 +504,10 @@ public sealed class LoadoutSystem : EntitySystem
                 return;
 
             await SendLoadoutStateUpdateAsync(uid, freshComponent, msg.Actor);
+
+            // Zona14: log loadout rename
+            _adminLog.Add(LogType.STLoadout, LogImpact.Medium,
+                $"{ToPrettyString(msg.Actor):player} renamed loadout {loadout.Id} to {newName} in {ToPrettyString(uid):repo}");
         }
         catch (Exception e)
         {

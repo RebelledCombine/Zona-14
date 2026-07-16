@@ -1,0 +1,9 @@
+admin-ahelp-assign = Assign
+admin-ahelp-unassign = Unassign
+admin-ahelp-transcript = Transcript
+admin-ahelp-assigned-to = Handling: { $admin }
+cmd-ahelptranscript-desc = Print the AHelp transcript for a player.
+cmd-ahelptranscript-help = Usage: ahelptranscript <username>
+cmd-ahelptranscript-not-found = Could not find player '{ $target }'.
+cmd-ahelptranscript-empty = No AHelp messages found for '{ $target }'.
+cmd-ahelptranscript-header = AHelp transcript for { $target } ({ $count } messages):

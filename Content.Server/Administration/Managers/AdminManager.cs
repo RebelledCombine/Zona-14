@@ -532,6 +532,35 @@ namespace Content.Server.Administration.Managers
             return false;
         }
 
+        // Zona14: string-based command flag lookup
+        public bool TryGetCommandFlags(string commandName, out AdminFlags[]? flags)
+        {
+            if (_commandPermissions.AnyCommands.Contains(commandName))
+            {
+                flags = null;
+                return true;
+            }
+
+            if (_commandPermissions.AdminCommands.TryGetValue(commandName, out flags))
+            {
+                return true;
+            }
+
+            if (_toolshedCommandPermissions.AnyCommands.Contains(commandName))
+            {
+                flags = null;
+                return true;
+            }
+
+            if (_toolshedCommandPermissions.AdminCommands.TryGetValue(commandName, out flags))
+            {
+                return true;
+            }
+
+            flags = null;
+            return false;
+        }
+
         public bool CanCommand(ICommonSession session, string cmdName)
         {
             if (_commandPermissions.AnyCommands.Contains(cmdName))

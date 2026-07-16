@@ -3,7 +3,10 @@ delete-verb-get-data-text = Delete
 edit-solutions-verb-get-data-text = Edit Solutions
 explode-verb-get-data-text = Explode
 ahelp-verb-get-data-text = Message
+# Zona14: entity/player history admin verbs
 admin-verbs-admin-logs-entity = Entity Logs
+admin-verbs-admin-logs-player = Player Logs
+# End Zona14
 admin-verbs-teleport-to = Teleport To
 admin-verbs-teleport-here = Teleport Here
 admin-verbs-freeze = Freeze

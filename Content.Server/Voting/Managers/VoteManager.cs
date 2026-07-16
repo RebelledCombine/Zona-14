@@ -131,6 +131,11 @@ namespace Content.Server.Voting.Managers
 
             v.VotesDirty.Add(player);
             v.Dirty = true;
+
+            // Zona14: log vote cast
+            var optionText = option != null ? v.Entries[option.Value].Text : "removed vote";
+            _adminLogger.Add(LogType.Vote, LogImpact.Low,
+                $"{player:player} voted on \"{v.Title}\" ({optionText})");
         }
 
         private bool IsValidOption(VoteReg voteReg, int? option)
