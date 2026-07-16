@@ -1,0 +1,26 @@
+- type: entity
+  id: Z14AnomalyMigrationRule
+  parent: BaseGameRule
+  categories: [ HideSpawnMenu, Zona14 ]
+  suffix: Z14
+  components:
+  - type: GameRule
+    minPlayers: 0
+    delay:
+      min: 20
+      max: 40
+  - type: StationEvent
+    weight: 10
+    earliestStart: 30
+    reoccurrenceDelay: 60
+    duration: 0
+    startAudio: /Audio/Announcements/attention.ogg
+    startAnnouncement: z14-anomaly-migration-warning
+    endAudio: /Audio/Effects/alert.ogg
+  - type: Z14AnomalyMigrationRule
+    regenerateDelay: 2
+    skipSafeMaps: true
+    allowFallback: false
+    migrationCount: 0
+    mapOverrides: {}
+    migrateAll: false
