@@ -312,6 +312,43 @@ public sealed class Z14AdminDashboardEui : BaseEui
         }
     }
 
+    private static bool ShouldShowOutputWindow(string command, string output)
+    {
+        // Always show errors, multi-line output, or long output that is clearly a report/list.
+        if (output.Contains("[Error]", StringComparison.OrdinalIgnoreCase)
+            || output.Contains('\n')
+            || output.Trim().Length > 120)
+        {
+            return true;
+        }
+
+        // Some commands are expected to produce list/info output; always show if they wrote anything.
+        var listCommands = new HashSet<string>(StringComparer.OrdinalIgnoreCase)
+        {
+            "st_warzoneinfo",
+            "z14listcaches",
+            "z14admininfo",
+            "z14cacheinfo",
+            "st_anomaly_generation_get_active",
+            "st_anomaly_generation_get_data_uid",
+            "ahelptranscript",
+            "playerlogs",
+            "allentsinfo",
+            "all_prototype",
+            "listgamemaps",
+            "adminactivity",
+            "doorlogs",
+            "adminlogs",
+        };
+
+        var firstWord = command.Split(' ', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries).FirstOrDefault() ?? string.Empty;
+        if (listCommands.Contains(firstWord))
+            return true;
+
+        // Short single-line success/status messages (e.g. teleport confirmation, toggles) don't need a panel.
+        return false;
+    }
+
     private void HandleFeatureCommand(string command)
     {
         if (!_adminManager.HasAdminFlag(Player, AdminFlags.Admin))
@@ -357,7 +394,7 @@ public sealed class Z14AdminDashboardEui : BaseEui
             }
 
             var output = shell.OutputText;
-            if (!string.IsNullOrWhiteSpace(output))
+            if (!string.IsNullOrWhiteSpace(output) && ShouldShowOutputWindow(command, output))
             {
                 SendMessage(new FeatureOutput($"Output: {firstWord}", command, output.TrimEnd()));
                 return;

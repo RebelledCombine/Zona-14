@@ -106,13 +106,10 @@ public sealed class Z14AdminDashboardWindow : DefaultWindow
         _tabContainer.AddChild(MakeOverviewTab());
         _tabContainer.AddChild(MakePlayersTab());
         _tabContainer.AddChild(MakeMapsTab());
-        _tabContainer.AddChild(MakeZ14ControlsTab());
-        _tabContainer.AddChild(MakeStalkerTab());
         _tabContainer.AddChild(MakeLiveEventsTab());
         _tabContainer.AddChild(MakeAlertsTab());
         _tabContainer.AddChild(MakeAHelpTab());
         _tabContainer.AddChild(MakeMentorhelpTab());
-        _tabContainer.AddChild(MakeAdminToolsTab());
 
         _statusLabel = new Label
         {
@@ -391,129 +388,6 @@ public sealed class Z14AdminDashboardWindow : DefaultWindow
         return scroll;
     }
 
-    private Control MakeZ14ControlsTab()
-    {
-        var scroll = new ScrollContainer
-        {
-            VerticalExpand = true,
-            HorizontalExpand = true,
-            HScrollEnabled = false,
-        };
-        TabContainer.SetTabTitle(scroll, "Z14 Controls");
-
-        var box = new BoxContainer
-        {
-            Orientation = BoxContainer.LayoutOrientation.Vertical,
-            SeparationOverride = 8,
-            Margin = new Thickness(6),
-            HorizontalExpand = true,
-        };
-
-        var featureBox = new BoxContainer
-        {
-            Orientation = BoxContainer.LayoutOrientation.Vertical,
-            SeparationOverride = 5,
-        };
-
-        AddMapRadiationCommand(featureBox, AdminFlags.Admin);
-        AddArgCommand(featureBox, "Trigger Anomaly Migration", "z14anomigrate", "z14anomigrate", "");
-        AddArgCommand(featureBox, "Trigger Supply Drop", "z14supplydrop", "z14supplydrop", "");
-        AddArgCommand(featureBox, "List Personal Caches", "z14listcaches", "z14listcaches", "");
-        AddArgCommand(featureBox, "Clear Personal Cache", "z14clearcache <id>", "z14clearcache", "");
-        AddArgCommand(featureBox, "Spawn Mutant Lair", "z14spawnlair", "z14spawnlair", "");
-        AddArgCommand(featureBox, "Z14 Info", "z14admininfo", "z14admininfo", "");
-
-        box.AddChild(MakeSection("Feature Controls", featureBox));
-
-        scroll.AddChild(box);
-        return scroll;
-    }
-
-    private Control MakeStalkerTab()
-    {
-        var scroll = new ScrollContainer
-        {
-            VerticalExpand = true,
-            HorizontalExpand = true,
-            HScrollEnabled = false,
-        };
-        TabContainer.SetTabTitle(scroll, "Stalker");
-
-        var box = new BoxContainer
-        {
-            Orientation = BoxContainer.LayoutOrientation.Vertical,
-            SeparationOverride = 8,
-            Margin = new Thickness(6),
-            HorizontalExpand = true,
-        };
-
-        var warBox = new BoxContainer
-        {
-            Orientation = BoxContainer.LayoutOrientation.Vertical,
-            SeparationOverride = 5,
-        };
-        AddArgCommand(warBox, "War Zone Info (zones)", "zones", "st_warzoneinfo", "zones", AdminFlags.Admin);
-        AddArgCommand(warBox, "War Zone Info (bands)", "bands", "st_warzoneinfo", "bands", AdminFlags.Admin);
-        AddArgCommand(warBox, "War Zone Info (factions)", "factions", "st_warzoneinfo", "factions", AdminFlags.Admin);
-        AddWarzoneSetPointsCommand(warBox, AdminFlags.Admin);
-        AddWarzoneSetOwnerCommand(warBox, AdminFlags.Admin);
-        AddWarzoneClearOwnerCommand(warBox, AdminFlags.Admin);
-        box.AddChild(MakeSection("War Zone", warBox));
-
-        var anomalyBox = new BoxContainer
-        {
-            Orientation = BoxContainer.LayoutOrientation.Vertical,
-            SeparationOverride = 5,
-        };
-        AddArgCommand(anomalyBox, "Anomaly Get Active", "", "st_anomaly_generation_get_active", "", AdminFlags.Host);
-        AddArgCommand(anomalyBox, "Anomaly Get Data UID", "", "st_anomaly_generation_get_data_uid", "", AdminFlags.Host);
-        AddMapDropdownCommand(anomalyBox, "Anomaly Clear", "st_anomaly_generation_clear", AdminFlags.Host);
-        AddAnomalyStartCommand(anomalyBox, AdminFlags.Host);
-        box.AddChild(MakeSection("Anomaly Generation", anomalyBox));
-
-        var stashBox = new BoxContainer
-        {
-            Orientation = BoxContainer.LayoutOrientation.Vertical,
-            SeparationOverride = 5,
-        };
-        AddPlayerDropdownCommand(stashBox, "Clear Stash", "clear_stash", AdminFlags.Ban);
-        AddPlayerDropdownCommand(stashBox, "Persistent Craft Reset", "st_pcraft_reset", AdminFlags.Host);
-        AddArgCommand(stashBox, "Persistent Craft Reset Offline", "userId characterName", "st_pcraft_reset_offline", "", AdminFlags.Host);
-        AddArgCommand(stashBox, "Persistent Craft Reset All", "confirm", "st_pcraft_reset_all", "", AdminFlags.Host);
-        box.AddChild(MakeSection("Stash / Crafting", stashBox));
-
-        var toolsBox = new BoxContainer
-        {
-            Orientation = BoxContainer.LayoutOrientation.Vertical,
-            SeparationOverride = 5,
-        };
-        AddArgCommand(toolsBox, "Trash Cleanup", "seconds", "request_trash_cleanup", "60", AdminFlags.Spawn);
-        AddSetCharacterChangeableCommand(toolsBox, AdminFlags.Admin);
-        AddArgCommand(toolsBox, "Regenerate Sniper Map", "", "st_sniper_regenerate_map", "", AdminFlags.Host);
-        AddArgCommand(toolsBox, "All Entities Info", "name", "allentsinfo", "", AdminFlags.Spawn);
-        AddArgCommand(toolsBox, "All Prototypes", "id", "all_prototype", "", AdminFlags.Host);
-        AddArgCommand(toolsBox, "Reload Grouped Portals", "", "reload_grouped", "", AdminFlags.Debug);
-        AddArgCommand(toolsBox, "Delayed Restart", "seconds", "delayed_restart", "60", AdminFlags.Round);
-        AddCharacteristicCommand(toolsBox, "Set Characteristic Level", true, "characteristic_set_levels", AdminFlags.Host);
-        AddCharacteristicCommand(toolsBox, "Get Characteristic Level", false, "characteristic_get_levels", AdminFlags.Host);
-        AddAddMarkingCommand(toolsBox, AdminFlags.Host);
-        box.AddChild(MakeSection("Stalker Tools", toolsBox));
-
-        var balanceBox = new BoxContainer
-        {
-            Orientation = BoxContainer.LayoutOrientation.Vertical,
-            SeparationOverride = 5,
-        };
-        AddArgCommand(balanceBox, "Balance Shop Armor", "", "st_balance:shoparmor", "", AdminFlags.Round);
-        AddArgCommand(balanceBox, "Balance Shop Guns", "", "st_balance:shopguns", "", AdminFlags.Round);
-        AddArgCommand(balanceBox, "Balance Guns", "", "st_balance:guns", "", AdminFlags.Round);
-        AddArgCommand(balanceBox, "Balance Armor", "", "st_balance:armor", "", AdminFlags.Round);
-        box.AddChild(MakeSection("Balance", balanceBox));
-
-        scroll.AddChild(box);
-        return scroll;
-    }
-
     private Control MakeLiveEventsTab()
     {
         var scroll = new ScrollContainer
@@ -687,76 +561,6 @@ public sealed class Z14AdminDashboardWindow : DefaultWindow
             VerticalExpand = true,
         };
         box.AddChild(control);
-
-        scroll.AddChild(box);
-        return scroll;
-    }
-
-    private Control MakeAdminToolsTab()
-    {
-        var scroll = new ScrollContainer
-        {
-            VerticalExpand = true,
-            HorizontalExpand = true,
-            HScrollEnabled = false,
-        };
-        TabContainer.SetTabTitle(scroll, "Admin Tools");
-
-        var box = new BoxContainer
-        {
-            Orientation = BoxContainer.LayoutOrientation.Vertical,
-            SeparationOverride = 8,
-            Margin = new Thickness(6),
-            HorizontalExpand = true,
-        };
-
-        var roundGrid = new BoxContainer
-        {
-            Orientation = BoxContainer.LayoutOrientation.Vertical,
-            SeparationOverride = 5,
-        };
-        AddArgCommand(roundGrid, "Restart Round", "", "restartround", "", AdminFlags.Round);
-        AddArgCommand(roundGrid, "Restart Round Now", "", "restartroundnow", "", AdminFlags.Round);
-        AddArgCommand(roundGrid, "End Round", "", "endround", "", AdminFlags.Round);
-        AddToggleCommand(roundGrid, "Toggle Late Join", "toggledisallowlatejoin", AdminFlags.Round, "true (disallow)", "false (allow)");
-        AddArgCommand(roundGrid, "Force Map", "map prototype", "forcemap", "", AdminFlags.Round);
-        AddArgCommand(roundGrid, "Set Game Preset", "preset [rounds] [decoy]", "setgamepreset", "", AdminFlags.Round);
-        AddArgCommand(roundGrid, "List Game Maps", "", "listgamemaps", "", AdminFlags.Round);
-        box.AddChild(MakeSection("Round", roundGrid));
-
-        var serverGrid = new BoxContainer
-        {
-            Orientation = BoxContainer.LayoutOrientation.Vertical,
-            SeparationOverride = 5,
-        };
-        AddArgCommand(serverGrid, "Panic Bunker", "", "panicbunker", "", AdminFlags.Server);
-        AddArgCommand(serverGrid, "Panic Bunker Disable With Admins", "", "panicbunker_disable_with_admins", "", AdminFlags.Server);
-        AddArgCommand(serverGrid, "Panic Bunker Enable Without Admins", "", "panicbunker_enable_without_admins", "", AdminFlags.Server);
-        AddArgCommand(serverGrid, "Set MOTD", "message", "set-motd", "", AdminFlags.Moderator);
-        AddWeatherCommand(serverGrid, AdminFlags.Fun);
-        box.AddChild(MakeSection("Server", serverGrid));
-
-        var chatGrid = new BoxContainer
-        {
-            Orientation = BoxContainer.LayoutOrientation.Vertical,
-            SeparationOverride = 5,
-        };
-        AddArgCommand(chatGrid, "Set OOC", "", "setooc", "", AdminFlags.Admin);
-        AddArgCommand(chatGrid, "Set LOOC", "", "setlooc", "", AdminFlags.Admin);
-        AddArgCommand(chatGrid, "Admin Chat", "message", "asay", "", AdminFlags.Adminchat);
-        AddArgCommand(chatGrid, "Show Rules", "", "showrules", "", AdminFlags.Admin);
-        box.AddChild(MakeSection("Chat", chatGrid));
-
-        var logsGrid = new BoxContainer
-        {
-            Orientation = BoxContainer.LayoutOrientation.Vertical,
-            SeparationOverride = 5,
-        };
-        AddArgCommand(logsGrid, "Admin Activity", "", "adminactivity", "", AdminFlags.Logs);
-        AddArgCommand(logsGrid, "Door Logs", "", "doorlogs", "", AdminFlags.Logs);
-        AddArgCommand(logsGrid, "Z14 Info", "", "z14admininfo", "", AdminFlags.Admin);
-        AddArgCommand(logsGrid, "War Zone Info", "zones", "st_warzoneinfo", "zones", AdminFlags.Admin);
-        box.AddChild(MakeSection("Logs / Info", logsGrid));
 
         scroll.AddChild(box);
         return scroll;
