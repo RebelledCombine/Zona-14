@@ -1,0 +1,12 @@
+author: Roland410
+time: '2026-07-16T14:09:21Z'
+url: https://github.com/Zona-14/Zona-14/pull/67
+changes:
+- type: Add
+  message: Added personal cache kits and caches. Buy a kit, place a 30 kg cache, hide
+    it with a shovel, and track it through a PDA cartridge.
+- type: Add
+  message: Added admin console commands for managing personal caches.
+- type: Add
+  message: Added item insert/eject logging to StalkerRepository.
+category: Main
