@@ -1,0 +1,21 @@
+author: Roland410
+time: '2026-07-16T14:30:23Z'
+url: https://github.com/Zona-14/Zona-14/pull/69
+changes:
+- type: Fix
+  message: Removed internal `#Zona14` markers from player-visible labels in lobby,
+    chat channels, and keybind options.
+- type: Add
+  message: Admin dashboard commands that print to console now open a dedicated output
+    window with Refresh and Copy buttons.
+- type: Add
+  message: '"Set Characteristic Level" and "Get Characteristic Level" dashboard tools
+    now use a dropdown for characteristic types.'
+- type: Add
+  message: Dashboard fields for weather, anomaly generation, stash/crafting, character
+    changeable, character markings, map radiation, and war zone admin now use dropdown
+    selectors where possible.
+- type: Tweak
+  message: Admin dashboard buttons and command palette now show status feedback and
+    play click sounds.
+category: Main
