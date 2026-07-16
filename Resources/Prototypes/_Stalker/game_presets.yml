@@ -5,6 +5,7 @@
   name: game-preset-stalker-title
   description: game-preset-stalker-description
   rules:
-    - STEmissionEventScheduler
+    # Zona14: use Z14-specific emission event so Z14AnomalyMigrationRule runs during emissions
+    - Z14STEmissionEventScheduler
     - STWeatherScheduler
   supportedMaps: STDefaultMapPool

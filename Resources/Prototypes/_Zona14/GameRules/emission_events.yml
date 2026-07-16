@@ -10,7 +10,7 @@
       min: 7200   # 2 hours
       max: 14400  # 4 hours
     scheduledGameRules: !type:EntSelector
-      id: STEmissionEvent
+      id: Z14STEmissionEvent
 
 - type: entity
   parent: BaseGameRule
@@ -59,11 +59,13 @@
     lightningSpawnRadius: 17.5 # slightly smaller than PVS range which is 25
     lightningIntervalRange: 4, 15
     lightningEffectProtoId: EmissionLightningEffect
+  # Zona14: anomaly migration is handled by Z14AnomalyMigrationRule, disable the default emission regen
   - type: EmissionAnomalyRegen
-    deletionDelay: 30               # 30s after Stage 2 starts
-    deletionStaggerInterval: 5      # 5s between each map's deletion
-    regenerationDelay: 10           # 10s after all deletions complete
-    regenerationStaggerInterval: 15  # 15s between each map's regen start
+    enabled: false
+  - type: Z14AnomalyMigrationEmission
+    triggerAtStart: true
+    triggerAtEnd: false
+    migrateAll: true
 
 - type: entity
   parent: STEmissionEvent
@@ -79,8 +81,10 @@
     damageStartDelay: 15   # Damage begins
     redHueBeforeEndDelay: 30
     damageEndDelay: 50     # Damage ends, stage 3 plays, red hue clears
+  # Zona14: anomaly migration is handled by Z14AnomalyMigrationRule, disable the default emission regen
   - type: EmissionAnomalyRegen
-    deletionDelay: 5
-    deletionStaggerInterval: 1
-    regenerationDelay: 3
-    regenerationStaggerInterval: 3
+    enabled: false
+  - type: Z14AnomalyMigrationEmission
+    triggerAtStart: true
+    triggerAtEnd: false
+    migrateAll: true
