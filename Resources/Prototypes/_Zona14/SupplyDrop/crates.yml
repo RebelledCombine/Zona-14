@@ -1,0 +1,14 @@
+- type: entity
+  id: Z14SupplyDropCrate
+  parent: CrateBaseSecure
+  name: supply drop crate
+  suffix: Z14
+  categories: [ Zona14 ]
+  description: A military crate that can be forced open with a bit of patience.
+  components:
+  - type: Z14SupplyDropCrate
+  - type: Lock
+    allowRepeatedLocking: false
+    unlockTime: 60
+  - type: EntityStorage
+    capacity: 100

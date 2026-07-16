@@ -1,0 +1,11 @@
+- type: entity
+  id: Z14SupplyDropZone
+  name: supply drop zone
+  suffix: Z14
+  categories: [ Zona14 ]
+  description: A designated zone for crashed-vehicle supply drops.
+  parent: MarkerBase
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Z14SupplyDropZone

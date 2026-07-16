@@ -1,0 +1,14 @@
+- type: explosion
+  id: Z14SupplyDropExplosion
+  damagePerIntensity:
+    types:
+      Heat: 3
+      Blunt: 2
+      Piercing: 2
+  tileBreakChance: [0]
+  tileBreakIntensity: [0]
+  tileBreakRerollReduction: 0
+  lightColor: Orange
+  texturePath: /Textures/Effects/fire.rsi
+  fireStates: 3
+  intensityPerState: 2
