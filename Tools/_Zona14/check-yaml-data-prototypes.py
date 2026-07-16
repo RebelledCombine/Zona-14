@@ -16,6 +16,18 @@ from typing import Any
 import yaml
 from yaml import MappingNode, SequenceNode, ScalarNode
 
+# Zona14: RobustToolbox uses !type:<TypeName> YAML tags for polymorphic data
+# definitions. The standard safe loader does not know them, so we parse them as
+# the underlying mapping/sequence/scalar value without interpreting the tag.
+def _type_constructor(loader: yaml.SafeLoader, tag_suffix: str, node: yaml.Node) -> Any:
+    if isinstance(node, yaml.MappingNode):
+        return loader.construct_mapping(node)
+    if isinstance(node, yaml.SequenceNode):
+        return loader.construct_sequence(node)
+    return loader.construct_scalar(node)
+
+yaml.SafeLoader.add_multi_constructor("!type:", _type_constructor)
+
 # Prototype types where `categories` is not a valid field at all.
 CATEGORIES_FORBIDDEN_TYPES = {
     "stWarZone",
