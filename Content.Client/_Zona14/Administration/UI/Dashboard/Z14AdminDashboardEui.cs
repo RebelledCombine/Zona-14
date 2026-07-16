@@ -1,5 +1,6 @@
 // SPDX-License-Identifier: MIT
 
+using System.Collections.Generic;
 using Content.Client.Eui;
 using Content.Shared._Zona14.Administration.Dashboard;
 using Content.Shared.Eui;
@@ -11,6 +12,7 @@ namespace Content.Client._Zona14.Administration.UI.Dashboard;
 public sealed class Z14AdminDashboardEui : BaseEui
 {
     private Z14AdminDashboardWindow? _window;
+    private readonly Dictionary<string, Z14DashboardOutputWindow> _outputWindows = new();
 
     public Z14AdminDashboardEui()
     {
@@ -32,6 +34,13 @@ public sealed class Z14AdminDashboardEui : BaseEui
         base.Closed();
         _window?.Dispose();
         _window = null;
+
+        foreach (var (_, outputWindow) in _outputWindows)
+        {
+            outputWindow.Close();
+        }
+
+        _outputWindows.Clear();
     }
 
     public override void HandleState(EuiStateBase state)
@@ -46,10 +55,35 @@ public sealed class Z14AdminDashboardEui : BaseEui
     {
         base.HandleMessage(msg);
 
-        if (msg is NewEvents newEvents)
+        switch (msg)
         {
-            _window?.AddEvents(newEvents.Events);
+            case NewEvents newEvents:
+                _window?.AddEvents(newEvents.Events);
+                break;
+
+            case FeatureOutput output:
+                ShowOutputWindow(output.Title, output.Command, output.Text);
+                break;
         }
+    }
+
+    private void ShowOutputWindow(string title, string command, string text)
+    {
+        if (!_outputWindows.TryGetValue(command, out var window))
+        {
+            window = new Z14DashboardOutputWindow(title, command);
+            window.OnRefresh += cmd => SendMessage(new FeatureCommand(cmd));
+            window.OnClose += () =>
+            {
+                _outputWindows.Remove(command);
+            };
+            _outputWindows[command] = window;
+        }
+
+        window.SetText(text);
+
+        if (!window.IsOpen)
+            window.OpenCentered();
     }
 
     private void OnClose()

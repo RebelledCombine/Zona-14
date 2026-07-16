@@ -40,16 +40,18 @@ chat-manager-send-ooc-patron-wrap-message = OOC: [bold][color={$patronColor}]{$p
 
 chat-manager-send-dead-chat-wrap-message = {$deadChannelName}: [bold][BubbleHeader]{$playerName}[/BubbleHeader]:[/bold] [BubbleContent]{$message}[/BubbleContent]
 chat-manager-send-admin-dead-chat-wrap-message = {$adminChannelName}: [bold]([BubbleHeader]{$userName}[/BubbleHeader]):[/bold] [BubbleContent]{$message}[/BubbleContent]
+# Zona14: removed trailing marker from visible chat wrap message
 chat-manager-send-admin-chat-wrap-message = {$adminChannelName}: [bold]{$playerName}:[/bold] {$message}
-chat-manager-send-mentor-chat-wrap-message = {$mentorChannelName}: [bold]{$playerName}:[/bold] {$message} # Zona14
+chat-manager-send-mentor-chat-wrap-message = {$mentorChannelName}: [bold]{$playerName}:[/bold] {$message}
 chat-manager-send-admin-announcement-wrap-message = [bold]{$adminChannelName}: {$message}[/bold]
 
 chat-manager-send-hook-ooc-wrap-message = OOC: [bold](D){$senderName}:[/bold] {$message}
 chat-manager-send-hook-admin-wrap-message = ADMIN: [bold](D){$senderName}:[/bold] {$message}
 
+# Zona14: removed trailing marker from visible channel name
 chat-manager-dead-channel-name = DEAD
 chat-manager-admin-channel-name = ADMIN
-chat-manager-mentor-channel-name = MENTOR # Zona14
+chat-manager-mentor-channel-name = MENTOR
 
 chat-manager-rate-limited = You are sending messages too quickly!
 chat-manager-rate-limit-admin-announcement = Rate limit warning: { $player }
