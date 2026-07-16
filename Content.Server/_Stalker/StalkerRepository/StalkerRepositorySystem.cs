@@ -45,6 +45,8 @@ using Content.Shared.StatusEffectNew.Components;
 using Content.Server._Stalker_EN.Loadout;
 using Content.Shared._Stalker_EN.Loadout;
 using Content.Shared.Verbs;
+using Content.Server._Stalker.Shovel; // Zona14
+using Content.Shared._Zona14.PersonalCache; // Zona14
 
 namespace Content.Server._Stalker.StalkerRepository;
 public sealed class StalkerRepositorySystem : EntitySystem
@@ -276,6 +278,9 @@ public sealed class StalkerRepositorySystem : EntitySystem
         if (msg.Actor == null || _currentlyProcessingEjects.Contains(msg.Actor))
             return;
 
+        // Zona14: This system may not know the real entity for cache logging
+        var repoEntity = GetEntity(msg.Entity);
+
         // Block operations during loadout processing to prevent race conditions
         if (component.LoadoutOperationInProgress)
         {
@@ -313,11 +318,15 @@ public sealed class StalkerRepositorySystem : EntitySystem
                 if (item.Count <= 0)
                     component.ContainedItems.Remove(item);
 
-                EjectItems(GetEntity(msg.Entity), item, msg.Count);
-                _adminLogger.Add(LogType.STStorage, LogImpact.Low, $"{ToPrettyString(msg.Actor):user} ejected {msg.Count} {msg.Item.Name} from {ToPrettyString(uid):repo}");
+                EjectItems(repoEntity, item, msg.Count);
+                // Zona14: personal cache logging
+                if (TryComp<Z14PersonalCacheComponent>(repoEntity, out var cacheComp))
+                    _adminLogger.Add(LogType.STStorage, LogImpact.Low, $"{ToPrettyString(msg.Actor):user} ejected {msg.Count} {msg.Item.Name} from personal cache {cacheComp.CacheId}");
+                else
+                    _adminLogger.Add(LogType.STStorage, LogImpact.Low, $"{ToPrettyString(msg.Actor):user} ejected {msg.Count} {msg.Item.Name} from {ToPrettyString(uid):repo}");
                 _stalkerStorageSystem.SaveStorage(component);
-                UpdateUiState(msg.Actor, GetEntity(msg.Entity), component);
-                _loadoutSystem.SendLoadoutStateUpdate(GetEntity(msg.Entity), component, msg.Actor);
+                UpdateUiState(msg.Actor, repoEntity, component);
+                _loadoutSystem.SendLoadoutStateUpdate(repoEntity, component, msg.Actor);
             }
         }
         finally
@@ -362,7 +371,11 @@ public sealed class StalkerRepositorySystem : EntitySystem
         RemoveItems(msg.Actor, toDelete.Value.Item1, toDelete.Value.Item2);
 
         // logging, saving, ui updating
-        _adminLogger.Add(LogType.STStorage, LogImpact.Low, $"{ToPrettyString(msg.Actor):user} inserted {msg.Count} {msg.Item.Name} into {ToPrettyString(uid):repo}");
+        // Zona14: personal cache logging
+        if (TryComp<Z14PersonalCacheComponent>(uid, out var cacheComp))
+            _adminLogger.Add(LogType.STStorage, LogImpact.Low, $"{ToPrettyString(msg.Actor):user} inserted {msg.Count} {msg.Item.Name} into personal cache {cacheComp.CacheId}");
+        else
+            _adminLogger.Add(LogType.STStorage, LogImpact.Low, $"{ToPrettyString(msg.Actor):user} inserted {msg.Count} {msg.Item.Name} into {ToPrettyString(uid):repo}");
         _stalkerStorageSystem.SaveStorage(component);
         RaiseLocalEvent(msg.Actor, new RepositoryItemInjectedEvent(uid, msg.Item));
         UpdateUiState(msg.Actor, GetEntity(msg.Entity), component);
@@ -372,6 +385,10 @@ public sealed class StalkerRepositorySystem : EntitySystem
     private void OnInteractUsing(EntityUid uid, StalkerRepositoryComponent component, InteractUsingEvent args)
     {
         if (args.Handled)
+            return;
+
+        // Zona14: caches are hidden/unhidden with a shovel, not used as a storage item
+        if (HasComp<Z14PersonalCacheComponent>(uid) && HasComp<StalkerShovelComponent>(args.Used))
             return;
 
         // generate new item info for clicked entity
@@ -388,7 +405,11 @@ public sealed class StalkerRepositorySystem : EntitySystem
         var toDelete = InsertToRepositoryRecursively(args.User, (uid, component), itemInfo);
 
         // logging, saving, event raising
-        _adminLogger.Add(LogType.STStorage, LogImpact.Low, $"{ToPrettyString(args.User):user} inserted {ToPrettyString(args.Used):item} into {ToPrettyString(uid):repo}");
+        // Zona14: personal cache logging
+        if (TryComp<Z14PersonalCacheComponent>(uid, out var cacheComp))
+            _adminLogger.Add(LogType.STStorage, LogImpact.Low, $"{ToPrettyString(args.User):user} inserted 1 {ToPrettyString(args.Used):item} into personal cache {cacheComp.CacheId}");
+        else
+            _adminLogger.Add(LogType.STStorage, LogImpact.Low, $"{ToPrettyString(args.User):user} inserted 1 {ToPrettyString(args.Used):item} into {ToPrettyString(uid):repo}");
         _stalkerStorageSystem.SaveStorage(component);
         RaiseLocalEvent(args.User, new RepositoryItemInjectedEvent(args.Target, itemInfo));
         _loadoutSystem.SendLoadoutStateUpdate(uid, component, args.User);

@@ -1,0 +1,23 @@
+- type: entity
+  parent: BaseStructure
+  id: Z14PersonalCache
+  name: personal cache
+  suffix: Z14
+  categories: [Zona14]
+  components:
+  - type: Sprite
+    sprite: _Zona14/Structures/Storage/personal_cache.rsi
+    state: icon
+  - type: InteractionOutline
+  - type: Stealth
+    enabled: true
+  - type: StalkerRepository
+    maxWeight: 30
+  - type: ActivatableUI
+    key: enum.StalkerRepositoryUiKey.Key
+    singleUser: true
+  - type: UserInterface
+    interfaces:
+      enum.StalkerRepositoryUiKey.Key:
+        type: StalkerRepositoryBoundUserInterface
+  - type: Z14PersonalCache
