@@ -1,9 +1,0 @@
-author: RebelledCombine
-time: '2026-07-11T11:01:06Z'
-url: https://github.com/Zona-14/Zona-14/pull/57
-changes:
-- type: Add
-  message: Drawing a gun now shows a spinning revolver chamber that loads bullets
-    as it readies, in place of the generic progress bar. Holstering it plays the same
-    animation in reverse.
-category: Main

@@ -1,9 +1,0 @@
-author: Roland410
-time: '2026-07-16T14:09:34Z'
-url: https://github.com/Zona-14/Zona-14/pull/68
-changes:
-- type: Add
-  message: Added mutant lair zones, a station event, and admin command `z14spawnlair`.
-- type: Add
-  message: Lairs periodically spawn mutants and drop parts when the nest is destroyed.
-category: Main

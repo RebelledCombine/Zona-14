@@ -345,4 +345,186 @@
   id: 34
   time: '2026-07-11T08:25:48Z'
   url: https://github.com/Zona-14/Zona-14/pull/55
+- author: RebelledCombine
+  changes:
+  - message: Fixed movement stutter and rubber-banding when walking over water and
+      other slowdown tiles.
+    type: Fix
+  id: 35
+  time: '2026-07-11T11:01:59Z'
+  url: https://github.com/Zona-14/Zona-14/pull/53
+- author: RebelledCombine
+  changes:
+  - message: Removed many non-Stalker hairstyles (anime/bright/joke styles and all
+      slime-themed hairs) from character creation.
+    type: Remove
+  - message: Removed cat ears, fox ears, elf long-ears, and cosmetic cat tails from
+      character creation.
+    type: Remove
+  - message: "Hair, facial hair, and eye colors can no longer be set bright \u2014\
+      \ brightness is now capped for a grimmer, setting-appropriate look."
+    type: Tweak
+  id: 36
+  time: '2026-07-11T12:48:37Z'
+  url: https://github.com/Zona-14/Zona-14/pull/56
+- author: RebelledCombine
+  changes:
+  - message: Drawing a gun now shows a spinning revolver chamber that loads bullets
+      as it readies, in place of the generic progress bar. Holstering it plays the
+      same animation in reverse.
+    type: Add
+  id: 37
+  time: '2026-07-11T11:01:06Z'
+  url: https://github.com/Zona-14/Zona-14/pull/57
+- author: RebelledCombine
+  changes:
+  - message: Added a selectable "Russian accent" speech trait that peppers your character's
+      speech with transliterated Russian words and swears.
+    type: Add
+  id: 38
+  time: '2026-07-11T14:04:31Z'
+  url: https://github.com/Zona-14/Zona-14/pull/59
+- author: RebelledCombine
+  changes:
+  - message: Added a selectable "Ukrainian accent" speech trait that peppers your
+      character's speech with transliterated Ukrainian words and swears.
+    type: Add
+  id: 39
+  time: '2026-07-11T14:36:24Z'
+  url: https://github.com/Zona-14/Zona-14/pull/60
+- author: Roland410
+  changes:
+  - message: Added a Mentor role and MentorHelp system for game-mechanics questions.
+    type: Add
+  - message: Added MentorChat (msay) and mentor keybinds.
+    type: Add
+  - message: Added a Mentorhelp tab to the admin dashboard.
+    type: Add
+  - message: Added whole-codebase admin logging for kills, door destruction, inventory
+      equip/unequip, anti-cheat alerts, stash actions, drag-teleports, and admin commands.
+    type: Add
+  - message: Expanded the admin dashboard with tabs, wrapping layouts, and a command
+      palette.
+    type: Add
+  - message: Added `MapLoaderPrototypeTest` and Zona-14 integration tests for dashboard,
+      mentor help, cheat detection, door/inventory logs, and map loading.
+    type: Add
+  - message: NewMapTeleportSystem preloading is now controlled by the `zona14.newmap_teleport_preload`
+      CVar and disabled in integration tests.
+    type: Tweak
+  - message: Fixed invalid runtime references in Darkscape, Swamps, and Cordon maps.
+    type: Fix
+  - message: Stabilized `TestAdminLogsWindow` by snapshotting EUI state and serializing
+      log send requests.
+    type: Fix
+  id: 40
+  time: '2026-07-16T14:08:03Z'
+  url: https://github.com/Zona-14/Zona-14/pull/61
+- author: Roland410
+  changes:
+  - message: Added per-action busy animations above players during DoAfters for drawing/holstering
+      guns, equipping/unequipping armor or clothing, eating, drinking, taking pills,
+      and loading ammunition.
+    type: Add
+  id: 41
+  time: '2026-07-16T14:08:28Z'
+  url: https://github.com/Zona-14/Zona-14/pull/63
+- author: Roland410
+  changes:
+  - message: Added MapRadiation ambient map-wide damage and per-type Geiger readout
+      (ShowAll) to advanced dosimeters.
+    type: Add
+  - message: Finished DosimeterModified / DosimeterUniversal and Z14 clones with localized
+      per-damage-type labels and working item/examine displays.
+    type: Fix
+  - message: Added RadiationSource prototypes for all dosimeter damage types (Cold,
+      Poison, Cellular, Compression, Structural, Shock, Asphyxiation, Bloodloss, Blunt,
+      Piercing, Slash).
+    type: Add
+  id: 42
+  time: '2026-07-16T14:08:43Z'
+  url: https://github.com/Zona-14/Zona-14/pull/64
+- author: Roland410
+  changes:
+  - message: Crashed-vehicle supply drops can now occur during the round. A warning
+      is sent near the drop zone, then an explosion spawns a crashed vehicle, a reward
+      crate, and guards.
+    type: Add
+  - message: Admins can trigger supply drops with the `z14supplydrop [helicopter|truck|any]
+      [here|<zoneNetEntity>]` command.
+    type: Add
+  - message: Lock unlock do-after now correctly uses `UnlockTime` instead of `LockTime`.
+    type: Fix
+  id: 43
+  time: '2026-07-16T14:08:56Z'
+  url: https://github.com/Zona-14/Zona-14/pull/65
+- author: Roland410
+  changes:
+  - message: Anomaly migration now runs during emissions and can re-roll all anomaly-generator
+      maps.
+    type: Add
+  - message: '`z14anomigrate all` admin command for manual all-map migration.'
+    type: Add
+  - message: '`Z14STEmissionEvent` disables the default `EmissionAnomalyRegen` in
+      favor of `Z14AnomalyMigrationRule`.'
+    type: Tweak
+  - message: Removed the standalone `Z14AnomalyMigrationScheduler`.
+    type: Remove
+  id: 44
+  time: '2026-07-16T14:09:08Z'
+  url: https://github.com/Zona-14/Zona-14/pull/66
+- author: Roland410
+  changes:
+  - message: Added personal cache kits and caches. Buy a kit, place a 30 kg cache,
+      hide it with a shovel, and track it through a PDA cartridge.
+    type: Add
+  - message: Added admin console commands for managing personal caches.
+    type: Add
+  - message: Added item insert/eject logging to StalkerRepository.
+    type: Add
+  id: 45
+  time: '2026-07-16T14:09:21Z'
+  url: https://github.com/Zona-14/Zona-14/pull/67
+- author: Roland410
+  changes:
+  - message: Added mutant lair zones, a station event, and admin command `z14spawnlair`.
+    type: Add
+  - message: Lairs periodically spawn mutants and drop parts when the nest is destroyed.
+    type: Add
+  id: 46
+  time: '2026-07-16T14:09:34Z'
+  url: https://github.com/Zona-14/Zona-14/pull/68
+- author: Roland410
+  changes:
+  - message: Removed internal `#Zona14` markers from player-visible labels in lobby,
+      chat channels, and keybind options.
+    type: Fix
+  - message: Admin dashboard commands that print to console now open a dedicated output
+      window with Refresh and Copy buttons.
+    type: Add
+  - message: '"Set Characteristic Level" and "Get Characteristic Level" dashboard
+      tools now use a dropdown for characteristic types.'
+    type: Add
+  - message: Dashboard fields for weather, anomaly generation, stash/crafting, character
+      changeable, character markings, map radiation, and war zone admin now use dropdown
+      selectors where possible.
+    type: Add
+  - message: Admin dashboard buttons and command palette now show status feedback
+      and play click sounds.
+    type: Tweak
+  id: 47
+  time: '2026-07-16T14:30:23Z'
+  url: https://github.com/Zona-14/Zona-14/pull/69
+- author: Roland410
+  changes:
+  - message: Removed the redundant `Z14 Controls`, `Stalker`, and `Admin Tools` tabs
+      from the admin dashboard; those commands are available through the command palette.
+    type: Remove
+  - message: Short and obvious command outputs (teleports, toggles, set commands)
+      no longer open a popup panel in the admin dashboard; only list/info output and
+      errors do.
+    type: Tweak
+  id: 48
+  time: '2026-07-16T14:34:51Z'
+  url: https://github.com/Zona-14/Zona-14/pull/70
 Order: 0
