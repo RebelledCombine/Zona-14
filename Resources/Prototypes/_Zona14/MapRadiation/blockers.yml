@@ -1,0 +1,63 @@
+- type: entity
+  id: Z14MapRadiationBlocker
+  parent: FlexibleMarker
+  abstract: true
+  categories: [ Zona14 ]
+  name: Radiation blocker
+  description: A marker that blocks ambient map radiation within its radius.
+  components:
+    - type: MapRadiationBlocker
+      enabled: true
+    - type: Sprite
+      sprite: _Stalker/Objects/Anomalies/anomaly_generator_blocker.rsi
+      state: icon
+
+- type: entity
+  id: Z14MapRadiationBlocker5
+  parent: Z14MapRadiationBlocker
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Radiation blocker (5 m)
+  components:
+    - type: MapRadiationBlocker
+      radius: 5
+
+- type: entity
+  id: Z14MapRadiationBlocker10
+  parent: Z14MapRadiationBlocker
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Radiation blocker (10 m)
+  components:
+    - type: MapRadiationBlocker
+      radius: 10
+
+- type: entity
+  id: Z14MapRadiationBlocker20
+  parent: Z14MapRadiationBlocker
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Radiation blocker (20 m)
+  components:
+    - type: MapRadiationBlocker
+      radius: 20
+
+- type: entity
+  id: Z14MapRadiationBlocker50
+  parent: Z14MapRadiationBlocker
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Radiation blocker (50 m)
+  components:
+    - type: MapRadiationBlocker
+      radius: 50
+
+- type: entity
+  id: Z14MapRadiationBlocker100
+  parent: Z14MapRadiationBlocker
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Radiation blocker (100 m)
+  components:
+    - type: MapRadiationBlocker
+      radius: 100
