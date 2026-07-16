@@ -1,5 +1,7 @@
+using System.Linq; // Zona14
 using Content.Server.Radiation.Components;
 using Content.Server.Radiation.Events;
+using Content.Server._Zona14.MapRadiation; // Zona14
 using Content.Shared.Hands;
 using Content.Shared.Interaction;
 using Content.Shared.Inventory.Events;
@@ -16,6 +18,7 @@ public sealed class GeigerSystem : SharedGeigerSystem
 {
     [Dependency] private readonly SharedAppearanceSystem _appearance = default!;
     [Dependency] private readonly RadiationSystem _radiation = default!;
+    [Dependency] private readonly MapRadiationSystem _mapRadiation = default!; // Zona14
     [Dependency] private readonly AudioSystem _audio = default!;
     [Dependency] private readonly IPlayerManager _player = default!;
 
@@ -80,10 +83,44 @@ public sealed class GeigerSystem : SharedGeigerSystem
         var query = EntityQueryEnumerator<GeigerComponent, RadiationReceiverComponent>();
         while (query.MoveNext(out var uid, out var geiger, out var receiver))
         {
-            if (receiver?.CurrentDamage != null && receiver.CurrentDamage.TryGetValue("Radiation", out var rads)) // stalker-changes
-                SetCurrentRadiation(uid, geiger, rads); // stalker-changes
+            // Zona14: support configurable damage types and ambient map radiation
+            var types = geiger.DamageTypes.Count > 0
+                ? geiger.DamageTypes
+                : DefaultRadiationTypes;
+
+            var currentDamage = new Dictionary<string, float>();
+            var rads = 0f;
+            foreach (var damageType in types)
+            {
+                var typeId = damageType.Id.ToString();
+                var value = 0f;
+                if (receiver?.CurrentDamage != null &&
+                    receiver.CurrentDamage.TryGetValue(typeId, out var receiverValue))
+                {
+                    value += receiverValue;
+                }
+
+                if (geiger.User is {} user)
+                {
+                    value += _mapRadiation.GetAmbientRadiation(user, typeId);
+                }
+
+                currentDamage[typeId] = value;
+                rads += value;
+            }
+
+            geiger.CurrentDamage = currentDamage;
+            SetCurrentRadiation(uid, geiger, rads);
+            Dirty(uid, geiger);
+            // End Zona14
         }
     }
+
+    // Zona14: fallback list used when a geiger has no configured damage types
+    private static readonly List<GeigerDamageType> DefaultRadiationTypes = new()
+    {
+        new GeigerDamageType { Id = "Radiation" }
+    };
 
     private void SetCurrentRadiation(EntityUid uid, GeigerComponent component, float rads)
     {
@@ -92,7 +129,7 @@ public sealed class GeigerSystem : SharedGeigerSystem
             return;
 
         var curLevel = component.DangerLevel;
-        var newLevel = RadsToLevel(rads);
+        var newLevel = RadsToLevel(rads); // Zona14: uses shared helper now
 
         component.CurrentRadiation = rads;
         component.DangerLevel = newLevel;
@@ -169,15 +206,4 @@ public sealed class GeigerSystem : SharedGeigerSystem
             component.Stream = _audio.PlayGlobal(sound, session, param)?.Entity;
     }
 
-    public static GeigerDangerLevel RadsToLevel(float rads)
-    {
-        return rads switch
-        {
-            < 0.2f => GeigerDangerLevel.None,
-            < 1f => GeigerDangerLevel.Low,
-            < 3f => GeigerDangerLevel.Med,
-            < 6f => GeigerDangerLevel.High,
-            _ => GeigerDangerLevel.Extreme
-        };
-    }
 }

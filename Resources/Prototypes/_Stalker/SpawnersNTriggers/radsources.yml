@@ -607,3 +607,180 @@
     intensity: 10
     slope: 0.1
     damageType: Caustic
+
+# Zona14: add missing damage-type source prototypes so all dosimeter types are detectable
+- type: entity
+  id: AnomalyColdSource
+  name: cold source (1 unit in center, 20 tiles)
+  suffix: Stalker
+  parent: Rad1
+  components:
+  - type: Sprite
+    layers:
+    - state: red
+    - sprite: Objects/Magic/magicactions.rsi
+      state: fireball
+  - type: RadiationSource
+    intensity: 1
+    slope: 0.05
+    damageType: Cold
+
+- type: entity
+  id: AnomalyPoisonSource
+  name: poison source (1 unit in center, 20 tiles)
+  suffix: Stalker
+  parent: Rad1
+  components:
+  - type: Sprite
+    layers:
+    - state: red
+    - sprite: Objects/Magic/magicactions.rsi
+      state: fireball
+  - type: RadiationSource
+    intensity: 1
+    slope: 0.05
+    damageType: Poison
+
+- type: entity
+  id: AnomalyCellularSource
+  name: cellular source (1 unit in center, 20 tiles)
+  suffix: Stalker
+  parent: Rad1
+  components:
+  - type: Sprite
+    layers:
+    - state: red
+    - sprite: Objects/Magic/magicactions.rsi
+      state: fireball
+  - type: RadiationSource
+    intensity: 1
+    slope: 0.05
+    damageType: Cellular
+
+- type: entity
+  id: AnomalyCompressionSource
+  name: compression source (1 unit in center, 20 tiles)
+  suffix: Stalker
+  parent: Rad1
+  components:
+  - type: Sprite
+    layers:
+    - state: red
+    - sprite: Objects/Magic/magicactions.rsi
+      state: fireball
+  - type: RadiationSource
+    intensity: 1
+    slope: 0.05
+    damageType: Compression
+
+- type: entity
+  id: AnomalyStructuralSource
+  name: structural source (1 unit in center, 20 tiles)
+  suffix: Stalker
+  parent: Rad1
+  components:
+  - type: Sprite
+    layers:
+    - state: red
+    - sprite: Objects/Magic/magicactions.rsi
+      state: fireball
+  - type: RadiationSource
+    intensity: 1
+    slope: 0.05
+    damageType: Structural
+
+- type: entity
+  id: AnomalyShockSource
+  name: shock source (1 unit in center, 20 tiles)
+  suffix: Stalker
+  parent: Rad1
+  components:
+  - type: Sprite
+    layers:
+    - state: red
+    - sprite: Objects/Magic/magicactions.rsi
+      state: fireball
+  - type: RadiationSource
+    intensity: 1
+    slope: 0.05
+    damageType: Shock
+
+- type: entity
+  id: AnomalyAsphyxiationSource
+  name: asphyxiation source (1 unit in center, 20 tiles)
+  suffix: Stalker
+  parent: Rad1
+  components:
+  - type: Sprite
+    layers:
+    - state: red
+    - sprite: Objects/Magic/magicactions.rsi
+      state: fireball
+  - type: RadiationSource
+    intensity: 1
+    slope: 0.05
+    damageType: Asphyxiation
+
+- type: entity
+  id: AnomalyBloodlossSource
+  name: bloodloss source (1 unit in center, 20 tiles)
+  suffix: Stalker
+  parent: Rad1
+  components:
+  - type: Sprite
+    layers:
+    - state: red
+    - sprite: Objects/Magic/magicactions.rsi
+      state: fireball
+  - type: RadiationSource
+    intensity: 1
+    slope: 0.05
+    damageType: Bloodloss
+
+- type: entity
+  id: AnomalyBluntSource
+  name: blunt source (1 unit in center, 20 tiles)
+  suffix: Stalker
+  parent: Rad1
+  components:
+  - type: Sprite
+    layers:
+    - state: red
+    - sprite: Objects/Magic/magicactions.rsi
+      state: fireball
+  - type: RadiationSource
+    intensity: 1
+    slope: 0.05
+    damageType: Blunt
+
+- type: entity
+  id: AnomalyPiercingSource
+  name: piercing source (1 unit in center, 20 tiles)
+  suffix: Stalker
+  parent: Rad1
+  components:
+  - type: Sprite
+    layers:
+    - state: red
+    - sprite: Objects/Magic/magicactions.rsi
+      state: fireball
+  - type: RadiationSource
+    intensity: 1
+    slope: 0.05
+    damageType: Piercing
+
+- type: entity
+  id: AnomalySlashSource
+  name: slash source (1 unit in center, 20 tiles)
+  suffix: Stalker
+  parent: Rad1
+  components:
+  - type: Sprite
+    layers:
+    - state: red
+    - sprite: Objects/Magic/magicactions.rsi
+      state: fireball
+  - type: RadiationSource
+    intensity: 1
+    slope: 0.05
+    damageType: Slash

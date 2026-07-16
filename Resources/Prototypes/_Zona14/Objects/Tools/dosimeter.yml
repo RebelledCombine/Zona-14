@@ -11,36 +11,39 @@
     - type: Item
       sprite: _Stalker/Objects/Tools/geiger_modified.rsi
     - type: Geiger
-      # prefix: C.E.U. # Stalker-TODO: These fields do not exist in this component!
-      # damageTypes:
-        # - id: Asphyxiation
-          # name: C.E.U.
-        # - id: Bloodloss
-          # name: C.E.U.
-        # - id: Blunt
-          # name: C.E.U.
-        # - id: Piercing
-          # name: C.E.U.
-        # - id: Slash
-          # name: C.E.U.
-        # - id: Heat
-          # name: C.E.U.
-        # - id: Shock
-          # name: C.E.U.
-        # - id: Cold
-          # name: C.E.U.
-        # - id: Caustic
-          # name: C.E.U.
-        # - id: Poison
-          # name: C.E.U.
-        # - id: Cellular
-          # name: C.E.U.
-        # - id: Psy
-          # name: C.E.U.
-        # - id: Compression
-          # name: C.E.U.
-        # - id: Structural
-          # name: C.E.U.
+      showControl: true
+      showExamine: true
+      showAll: true
+      prefix: geiger-prefix-ceu
+      damageTypes:
+        - id: Asphyxiation
+          name: geiger-damage-asphyxiation
+        - id: Bloodloss
+          name: geiger-damage-bloodloss
+        - id: Blunt
+          name: geiger-damage-blunt
+        - id: Piercing
+          name: geiger-damage-piercing
+        - id: Slash
+          name: geiger-damage-slash
+        - id: Heat
+          name: geiger-damage-heat
+        - id: Shock
+          name: geiger-damage-shock
+        - id: Cold
+          name: geiger-damage-cold
+        - id: Caustic
+          name: geiger-damage-caustic
+        - id: Poison
+          name: geiger-damage-poison
+        - id: Cellular
+          name: geiger-damage-cellular
+        - id: Psy
+          name: geiger-damage-psy
+        - id: Compression
+          name: geiger-damage-compression
+        - id: Structural
+          name: geiger-damage-structural
 
 - type: entity
   parent: BaseDosimeter
@@ -55,35 +58,38 @@
     - type: Item
       sprite: _Stalker/Objects/Tools/geiger_universal.rsi
     - type: Geiger
-      # prefix: C.E.U. # Stalker-TODO: These fields do not exist in this component!
-      # damageTypes:
-        # - id: Asphyxiation
-          # name: P.V.
-        # - id: Bloodloss
-          # name: P.V.
-        # - id: Blunt
-          # name: mech
-        # - id: Piercing
-          # name: mech
-        # - id: Slash
-          # name: mech
-        # - id: Heat
-          # name: phys
-        # - id: Shock
-          # name: phys
-        # - id: Cold
-          # name: phys
-        # - id: Caustic
-          # name: phys
-        # - id: Radiation
-          # name: rad
-        # - id: Poison
-          # name: toxin
-        # - id: Cellular
-          # name: gene
-        # - id: Psy
-          # name: psi
-        # - id: Compression
-          # name: compress
-        # - id: Structural
-          # name: struct
+      showControl: true
+      showExamine: true
+      showAll: true
+      prefix: geiger-prefix-ceu
+      damageTypes:
+        - id: Asphyxiation
+          name: geiger-damage-asphyxiation
+        - id: Bloodloss
+          name: geiger-damage-bloodloss
+        - id: Blunt
+          name: geiger-damage-blunt
+        - id: Piercing
+          name: geiger-damage-piercing
+        - id: Slash
+          name: geiger-damage-slash
+        - id: Heat
+          name: geiger-damage-heat
+        - id: Shock
+          name: geiger-damage-shock
+        - id: Cold
+          name: geiger-damage-cold
+        - id: Caustic
+          name: geiger-damage-caustic
+        - id: Radiation
+          name: geiger-damage-radiation
+        - id: Poison
+          name: geiger-damage-poison
+        - id: Cellular
+          name: geiger-damage-cellular
+        - id: Psy
+          name: geiger-damage-psy
+        - id: Compression
+          name: geiger-damage-compression
+        - id: Structural
+          name: geiger-damage-structural
