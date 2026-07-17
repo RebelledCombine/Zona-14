@@ -1,7 +1,0 @@
-author: teecoding
-time: '2026-07-17T13:25:38Z'
-url: https://github.com/Zona-14/Zona-14/pull/72
-changes:
-- type: Fix
-  message: Shotguns no longer show doubled tracers for the player firing them.
-category: Main
