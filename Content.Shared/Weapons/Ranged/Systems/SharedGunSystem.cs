@@ -522,16 +522,24 @@ public abstract partial class SharedGunSystem : EntitySystem
                     if (!cartridge.Spent)
                     {
                         var uid = Spawn(cartridge.Prototype, fromEnt);
-                        CreateAndFireProjectiles(uid, cartridge);
-                        spawned.Add(uid);
-                        MarkPredicted(uid, spawned.Count - 1);
+                        // Zona14: untagged server pellets stay visible on the shooter's client and
+                        //         render over their predicted pellets (double tracers).
+                        var fired = CreateAndFireProjectiles(uid, cartridge);
+                        foreach (var projectile in fired)
+                        {
+                            spawned.Add(projectile);
+                            MarkPredicted(projectile, spawned.Count - 1);
+                        }
 
-                        // Zona14: delete client-predicted projectile for guns that skip prediction (launchers).
+                        // Zona14: delete client-predicted projectiles for guns that skip prediction (launchers).
                         // Matches RMC-14 SharedGunSystem.cs@2f5dc02e44 line 571-575.
                         if (_netManager.IsClient && HasComp<GunIgnorePredictionComponent>(gunUid))
                         {
-                            spawned.Remove(uid);
-                            QueueDel(uid);
+                            foreach (var projectile in fired)
+                            {
+                                spawned.Remove(projectile);
+                                QueueDel(projectile);
+                            }
                         }
 
                         // stalker-changes-start
@@ -574,9 +582,13 @@ public abstract partial class SharedGunSystem : EntitySystem
                     if (ent == null)
                         break;
 
-                    CreateAndFireProjectiles(ent.Value, newAmmo);
-                    spawned.Add(ent.Value);
-                    MarkPredicted(ent.Value, spawned.Count - 1);
+                    // Zona14: every pellet needs tagging, as above.
+                    var firedAmmo = CreateAndFireProjectiles(ent.Value, newAmmo);
+                    foreach (var projectile in firedAmmo)
+                    {
+                        spawned.Add(projectile);
+                        MarkPredicted(projectile, spawned.Count - 1);
+                    }
                     break;
 
                 case HitscanAmmoComponent:
@@ -615,8 +627,11 @@ public abstract partial class SharedGunSystem : EntitySystem
 
         return spawned;
 
-        void CreateAndFireProjectiles(EntityUid ammoEnt, AmmoComponent ammoComp)
+        // Zona14: spawn order is load-bearing — MarkPredicted pairs pellets to the client's
+        //         predicted ids by index.
+        List<EntityUid> CreateAndFireProjectiles(EntityUid ammoEnt, AmmoComponent ammoComp)
         {
+            var fired = new List<EntityUid>();
             if (TryComp<ProjectileSpreadComponent>(ammoEnt, out var ammoSpreadComp))
             {
                 var spreadEvent = new GunGetAmmoSpreadEvent(ammoSpreadComp.Spread);
@@ -627,23 +642,27 @@ public abstract partial class SharedGunSystem : EntitySystem
 
                 ShootOrThrow(ammoEnt, angles[0].ToVec(), gunVelocity, gun, gunUid, user);
                 shotProjectiles.Add(ammoEnt);
+                fired.Add(ammoEnt);
 
                 for (var i = 1; i < ammoSpreadComp.Count; i++)
                 {
                     var newuid = Spawn(ammoSpreadComp.Proto, fromEnt);
                     ShootOrThrow(newuid, angles[i].ToVec(), gunVelocity, gun, gunUid, user);
                     shotProjectiles.Add(newuid);
+                    fired.Add(newuid);
                 }
             }
             else
             {
                 ShootOrThrow(ammoEnt, mapDirection, gunVelocity, gun, gunUid, user);
                 shotProjectiles.Add(ammoEnt);
+                fired.Add(ammoEnt);
             }
 
             MuzzleFlash(gunUid, ammoComp, mapDirection.ToAngle(), user);
             Audio.PlayPredicted(gun.SoundGunshotModified, gunUid, user);
             Recoil(user, mapDirection, gun.CameraRecoilScalarModified);
+            return fired;
         }
     }
 
