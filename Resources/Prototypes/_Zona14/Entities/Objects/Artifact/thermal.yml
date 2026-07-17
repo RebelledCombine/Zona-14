@@ -20,10 +20,10 @@
   - type: PersonalDamage
     damage:
       types:
-        Blunt: -0.5
-        Slash: -0.5
-        Heat: -1
-        Cold: 0.3
+        Blunt: -0.05
+        Slash: -0.05
+        Heat: -0.15
+        Cold: 0.2
     interval: 1
   - type: Armor
     hiddenExamine: true
@@ -61,16 +61,17 @@
   - type: PersonalDamage
     damage:
       types:
-        Blunt: -0.3
-        Slash: -0.3
-        Heat: 0.7
+        Blunt: -0.1
+        Slash: -0.1
+        Heat: 0.4
     interval: 1
+  - type: ArtifactSelfRadiation
+    rads: 1.0
   - type: Armor
     hiddenExamine: true
     armorClass: 2
     modifiers:
       coefficients:
-        Radiation: 0.7
         Caustic: 0.95
         Compression: 0.6
       flatReductions:
@@ -105,10 +106,10 @@
   - type: PersonalDamage
     damage:
       types:
-        Heat: 1.2
-        Compression: -1
-        Cold: -1.5
-        Bloodloss: -1
+        Compression: -0.15
+        Cold: -0.15
+        Bloodloss: -0.1
+        Heat: 0.6
     interval: 1
   - type: Armor
     hiddenExamine: true
@@ -155,10 +156,12 @@
   - type: PersonalDamage
     damage:
       types:
-        Blunt: -1
-        Slash: -1
-        Heat: 0.8
+        Blunt: -0.15
+        Slash: -0.15
+        Heat: 0.4
     interval: 1
+  - type: ArtifactSelfRadiation
+    rads: 1.0
   - type: Armor
     hiddenExamine: true
     armorClass: 2
@@ -198,6 +201,8 @@
       types:
         Heat: 0.3
     interval: 1
+  - type: ArtifactSelfRadiation
+    rads: 1.0
   - type: Armor
     hiddenExamine: true
     armorClass: 2
@@ -208,7 +213,6 @@
         Heat: 3
         Cold: 2
       coefficients:
-        Radiation: 0.6
         Heat: 0.4
         Cold: 0.2
   - type: ExplosionResistance
@@ -241,8 +245,10 @@
   - type: PersonalDamage
     damage:
       types:
-        Cold: -2.5
+        Cold: -0.25
     interval: 1
+  - type: ArtifactSelfRadiation
+    rads: 2.0
   - type: Armor
     hiddenExamine: true
     armorClass: 2
@@ -278,10 +284,10 @@
     color: "#ff0000"
     castShadows: false
   - type: PersonalDamage
-    staminaDamage: 8
+    staminaDamage: 2
     damage:
       types:
-        Bloodloss: -3
+        Bloodloss: -0.25
     interval: 1
   - type: Armor
     hiddenExamine: true
@@ -358,8 +364,11 @@
   - type: PersonalDamage
     damage:
       types:
-        Heat: 2.5
-        Compression: -3
+        Compression: -0.25
+        Heat: 1.0
+    interval: 1
+  - type: ArtifactSelfRadiation
+    rads: 2.0
   - type: Armor
     hiddenExamine: true
     armorClass: 2
@@ -405,11 +414,13 @@
   - type: PersonalDamage
     damage:
       types:
-        Caustic: 1.4
-        Heat: -1
-        Bloodloss: -5
-        Shock: 1.7
+        Heat: -0.2
+        Bloodloss: -0.3
+        Caustic: 0.7
+        Shock: 0.8
     interval: 1
+  - type: ArtifactSelfRadiation
+    rads: 3.5
   - type: Armor
     hiddenExamine: true
     armorClass: 2

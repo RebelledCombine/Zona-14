@@ -59,7 +59,7 @@ public sealed class PersonalDamageSystem : EntitySystem
         if (!_inventory.TryGetContainingSlot((uid, xform, meta), out var slotDef) || slotDef == null)
             return false;
 
-        var name = slotDef.Name;
-        return name == "artifact1" || name == "artifact2" || name == "artifact3" || name == "artifact4";
+        // Zona14: honor every ARTIFACT slot (armor grants up to 6), not just artifact1-4
+        return (slotDef.SlotFlags & SlotFlags.ARTIFACT) != 0;
     }
 }

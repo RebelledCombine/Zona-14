@@ -28,6 +28,13 @@ def _type_constructor(loader: yaml.SafeLoader, tag_suffix: str, node: yaml.Node)
 
 yaml.SafeLoader.add_multi_constructor("!type:", _type_constructor)
 
+# SS14 serializes polymorphic component data with custom `!type:<Name>` YAML
+# tags (e.g. `!type:Container`, `!type:PhysShapeCircle`). Plain safe_load raises
+# on these, which would make this checker fail on any entity file that uses
+# fixtures/containers. We only inspect top-level `type`/`categories`/`suffix`,
+# so map every `!type:` tag to None rather than choking on it.
+yaml.SafeLoader.add_multi_constructor("!type:", lambda loader, suffix, node: None)
+
 # Prototype types where `categories` is not a valid field at all.
 CATEGORIES_FORBIDDEN_TYPES = {
     "stWarZone",

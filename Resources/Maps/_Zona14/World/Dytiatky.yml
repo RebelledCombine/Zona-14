@@ -51117,7 +51117,7 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 11.5,-17.5
       parent: 1
-- proto: SpawnerZoneAnomalyElectraChance100
+- proto: Z14SpawnerZoneAnomalyElectraChance100
   entities:
   - uid: 6605
     components:
@@ -51189,7 +51189,7 @@ entities:
     - type: Transform
       pos: -34.5,132.5
       parent: 1
-- proto: SpawnerZoneAnomalyGraviChance100
+- proto: Z14SpawnerZoneAnomalyGraviChance100
   entities:
   - uid: 6297
     components:
@@ -51236,7 +51236,7 @@ entities:
     - type: Transform
       pos: -25.5,137.5
       parent: 1
-- proto: SpawnerZoneAnomalyJarkaChance100
+- proto: Z14SpawnerZoneAnomalyJarkaChance100
   entities:
   - uid: 6513
     components:

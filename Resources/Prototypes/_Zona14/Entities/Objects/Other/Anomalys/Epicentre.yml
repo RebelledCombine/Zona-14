@@ -62,29 +62,29 @@
             - type: TimedDespawn
               lifetime: 3
             - type: SpawnOnTrigger
-              proto: AnomSEpicentre
+              proto: Z14AnomSEpicentre
     - type: ZoneArtifactSpawner
       artifacts:
       - id: null
         ratio: 500
-      - id: ZoneArtifactVyvert
+      - id: Z14ZoneArtifactVyvert
         tier: 1
         ratio: 5
-      - id: ZoneArtifactAmoeba
+      - id: Z14ZoneArtifactAmoeba
         tier: 2
         ratio: 5
-      - id: ZoneArtifactGravi
+      - id: Z14ZoneArtifactGravi
         tier: 4
         ratio: 3
-      - id: ZoneArtifactGoldfish
+      - id: Z14ZoneArtifactGoldfish
         tier: 5
         ratio: 2
-      - id: ZoneArtifactSpring
+      - id: Z14ZoneArtifactSpring
         tier: 5
         ratio: 1
-      - id: ZoneArtifactCompass
+      - id: Z14ZoneArtifactCompass
         tier: 4
         ratio: 1
-      - id: ZoneArtifactCrucifix
+      - id: Z14ZoneArtifactCrucifix
         tier: 5
         ratio: 3
