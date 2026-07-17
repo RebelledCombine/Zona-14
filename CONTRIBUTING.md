@@ -176,7 +176,7 @@ Validator fails PR if `license` or `copyright` field was present on `base` and i
 
 - **Target branch**: `master`.
 - **PR title**: short imperative, one line. Include `[upstream-port]` for pure merges from `stalker14-project`. Include `[custom-license]` if any asset uses license outside allowlist.
-- **PR body**: fill in `.github/PULL_REQUEST_TEMPLATE.md` sections. Include media (screenshots / GIFs / video) for anything visible in-game; upload larger videos to [Zona-14 Discord](https://discord.gg/57S48NzbZ9) and link them.
+- **PR body**: fill in `.github/PULL_REQUEST_TEMPLATE.md` sections. Include media (screenshots / GIFs / video) for anything visible in-game; upload larger videos to [Zona-14 Discord](https://discord.gg/NMWhRspejA) and link them.
 - **PR behavior** follows [SS14 pull-request guidelines](https://docs.spacestation14.com/en/general-development/codebase-info/pull-request-guidelines.html): separate PRs for features / bug fixes / refactors; test in-game before opening; no GitHub web editor; no force-push after reviewer comments.
 
 ## 8. Commit style
@@ -224,8 +224,8 @@ Requirements: `git`, `grep`, `awk`, `jq`. Install `jq` with `sudo apt install jq
 
 ## 11. Where to discuss
 
-- **Bug reports, player feedback, feature requests**: this repo's [Issues tab](https://github.com/Zona-14/Zona-14/issues) or [Zona-14 Discord](https://discord.gg/57S48NzbZ9). Anyone can open an issue.
-- **Community, news, updates, playtests, media uploads**: [Zona-14 Discord](https://discord.gg/57S48NzbZ9).
+- **Bug reports, player feedback, feature requests**: this repo's [Issues tab](https://github.com/Zona-14/Zona-14/issues) or [Zona-14 Discord](https://discord.gg/NMWhRspejA). Anyone can open an issue.
+- **Community, news, updates, playtests, media uploads**: [Zona-14 Discord](https://discord.gg/NMWhRspejA).
 - **Code changes**: GitHub Pull Requests on this repo.
 
 ## 12. Changelog

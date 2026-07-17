@@ -13,7 +13,7 @@ jobs:
     steps:
     - uses: superbrothers/close-pull-request@v3
       with:
-        comment: "Thank you for your contribution! It appears you created a pull request from your fork's master (or another main) branch. This is [something you should avoid doing](https://jmeridth.com/posts/do-not-issue-pull-requests-from-your-master-branch/), so this PR has been automatically closed. \n \n Please read Zona-14's [branch / PR conventions](https://github.com/Zona-14/Zona-14/blob/master/CONTRIBUTING.md#7-branch--pr-conventions) — PRs should come from a feature branch, not from `master`. \n \n To move your current work onto a new branch, follow [these commands](https://ohshitgit.com/#accidental-commit-master), then open a new PR from that branch. \n \n Questions? Ask on the [Zona-14 Discord](https://discord.gg/57S48NzbZ9)."
+        comment: "Thank you for your contribution! It appears you created a pull request from your fork's master (or another main) branch. This is [something you should avoid doing](https://jmeridth.com/posts/do-not-issue-pull-requests-from-your-master-branch/), so this PR has been automatically closed. \n \n Please read Zona-14's [branch / PR conventions](https://github.com/Zona-14/Zona-14/blob/master/CONTRIBUTING.md#7-branch--pr-conventions) — PRs should come from a feature branch, not from `master`. \n \n To move your current work onto a new branch, follow [these commands](https://ohshitgit.com/#accidental-commit-master), then open a new PR from that branch. \n \n Questions? Ask on the [Zona-14 Discord](https://discord.gg/NMWhRspejA)."
 
     # If you prefer to just comment on the pr and not close it, uncomment the below and comment the above
 

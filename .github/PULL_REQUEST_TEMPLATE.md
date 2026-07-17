@@ -4,7 +4,7 @@ Thanks for contributing to Zona-14. Before you submit:
 - Follow the SS14 PR guidelines:
   https://docs.spacestation14.com/en/general-development/codebase-info/pull-request-guidelines.html
 - For general discussion, playtests, or uploading large media files, join the
-  Zona-14 Discord: https://discord.gg/57S48NzbZ9
+  Zona-14 Discord: https://discord.gg/NMWhRspejA
 -->
 
 ## About the PR
@@ -23,7 +23,7 @@ the problem it solves or the effect on gameplay. -->
 Attach before/after screenshots, GIFs, or short videos of the change in-game.
 Small files (≤10 MB) can be dropped directly into this text area.
 
-For larger videos, upload them to the Zona-14 Discord (https://discord.gg/57S48NzbZ9)
+For larger videos, upload them to the Zona-14 Discord (https://discord.gg/NMWhRspejA)
 and paste the message link here.
 
 Tips:
