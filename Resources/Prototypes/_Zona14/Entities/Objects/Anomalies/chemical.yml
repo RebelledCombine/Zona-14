@@ -4,6 +4,16 @@
   categories: [ Zona14 ]
   abstract: true
   components:
+    # Poison/acid gas — inhaled, so only a gas-mask filter helps (not armor). A slow killer, not instant.
+    - type: AirborneHazard
+      radius: 4
+      damage:
+        types:
+          Poison: 0.5
+          Caustic: 0.5
+    # Constant green-gas particle haze marking the dangerous radius (visual only; damage is AirborneHazard above).
+    - type: Z14AnomalyHaze
+      effect: Z14ParticleGasToxic
     - type: PointLight
       radius: 3
       energy: 3

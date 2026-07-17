@@ -1,0 +1,15 @@
+# HUD gauge for gas-mask filter charge (always shown while a filter is installed).
+# Placeholder: reuses the filter item icon for every severity until a dedicated gauge (full/low/spent) is drawn.
+- type: alert
+  id: Z14GasFilter
+  icons:
+    - sprite: _Zona14/Objects/Clothing/Mask/filter.rsi
+      state: icon # severity 0: healthy
+    - sprite: _Zona14/Objects/Clothing/Mask/filter.rsi
+      state: icon # severity 1: low
+    - sprite: _Zona14/Objects/Clothing/Mask/filter.rsi
+      state: icon # severity 2: spent
+  minSeverity: 0
+  maxSeverity: 2
+  name: zona14-alert-gasfilter-name
+  description: zona14-alert-gasfilter-desc

@@ -1,0 +1,19 @@
+# Zona gas-mask filter — a consumable cartridge installed into a gas mask's gas_filter slot.
+# Blocks airborne hazards (radiation / ash / gas) until its charge runs out, then it is spent and ejected.
+- type: entity
+  parent: BaseItem
+  id: Z14GasMaskFilter
+  name: gas mask filter
+  suffix: Z14
+  categories: [ Zona14 ]
+  description: A replaceable particulate-and-gas filter cartridge for a gas mask. Blocks airborne hazards until its charge is used up, then it must be swapped for a fresh one.
+  components:
+  - type: Sprite
+    sprite: _Zona14/Objects/Clothing/Mask/filter.rsi
+    state: icon
+  - type: Item
+    size: Tiny
+  - type: GasMaskFilter
+  - type: STWeight
+    self: 0.2
+  - type: Craftable

@@ -4,6 +4,15 @@
   categories: [ Zona14 ]
   abstract: true
   components:
+  # Searing ash — inhaled, so only a gas-mask filter helps (not armor). A slow killer, not instant.
+  - type: AirborneHazard
+    radius: 4
+    damage:
+      types:
+        Heat: 0.8
+  # Constant ash-particle haze marking the dangerous radius (visual only; damage is AirborneHazard above).
+  - type: Z14AnomalyHaze
+    effect: Z14ParticleAshFire
   - type: STAnomalyTips
     icon:
       sprite: /Textures/_Stalker/Interface/Overlays/anomaly_tips.rsi

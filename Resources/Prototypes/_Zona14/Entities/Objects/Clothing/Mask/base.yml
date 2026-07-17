@@ -1,4 +1,5 @@
-# Shared Zona gas mask base — 1 kg, no protection.
+# Shared Zona gas mask base — 1 kg. Accepts a replaceable gas-mask filter (Z14GasMaskFilter) in its
+# gas_filter slot to block airborne hazards (emissions, contaminated air, anomaly gas); ships with one installed.
 - type: entity
   abstract: true
   parent: STClothingMaskGas
@@ -9,3 +10,13 @@
   - type: STWeight
     self: 1
   - type: Craftable
+  # Appearance carries the filter-charge tier (Z14GasFilterVisuals) for a future on-icon overlay.
+  - type: Appearance
+  - type: ItemSlots
+    slots:
+      gas_filter:
+        name: filter
+        startingItem: Z14GasMaskFilter
+        whitelist:
+          components:
+          - GasMaskFilter

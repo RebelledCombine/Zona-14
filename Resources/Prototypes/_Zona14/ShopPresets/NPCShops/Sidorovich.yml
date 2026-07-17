@@ -339,6 +339,7 @@
         Z14ClothingMaskGasZarya: 775 # T1
         Z14ClothingMaskGasZaryaMono: 775 # T1
         Z14ClothingMaskGP5: 500 # T1
+        Z14GasMaskFilter: 150 # replaceable filter cartridge
 
     - name: shop-category-research-equipment
       priority: 9

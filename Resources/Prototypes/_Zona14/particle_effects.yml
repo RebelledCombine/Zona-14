@@ -1,0 +1,89 @@
+# Constant particle hazes anomalies emit to telegraph their airborne-hazard radius (visual only —
+# damage comes from AirborneHazardComponent). CircleFill over the danger radius, drifting up like ash/gas.
+# Tuned dense/opaque so the danger area reads clearly at a glance.
+# Ashfall: fine grey ash flecks drifting DOWN across the danger area (not rising smoke).
+- type: particleEffect
+  id: Z14ParticleAshFire
+  sprite:
+    sprite: _Starfall/Particles/generic.rsi
+    state: dot
+  startColor: "#b8b0a6F0" # light ash grey
+  endColor: "#6b655c00"
+  sizeOverLifetime:
+    - time: 0.0
+      value: 1.0
+    - time: 1.0
+      value: 0.75
+  alphaOverLifetime:
+    - time: 0.0
+      value: 0.0
+    - time: 0.15
+      value: 0.95
+    - time: 0.85
+      value: 0.85
+    - time: 1.0
+      value: 0.0
+  lifetime: 3.2
+  lifetimeVariance: 0.9
+  speed: 0.35
+  speedVariance: 0.25
+  particleSize: 0.22
+  sizeVariance: 0.6
+  emissionRate: 24
+  maxCount: 110
+  burst: false
+  duration: 0 # continuous
+  gravity: 0.45 # ash falls
+  drag: 0.25
+  noiseStrength: 0.18
+  noiseFrequency: 0.5
+  spreadAngle: 60
+  emitAngle: 0
+  startRotationVariance: 180
+  rotationSpeedVariance: 30
+  shape:
+    type: CircleFill
+    radius: 4.5
+
+- type: particleEffect
+  id: Z14ParticleGasToxic
+  sprite:
+    sprite: Effects/chemsmoke.rsi
+    state: chemsmoke
+  startColor: "#7ba84dD8" # sickly green, fairly opaque
+  endColor: "#4d6b2e00"
+  sizeOverLifetime:
+    - time: 0.0
+      value: 0.5
+    - time: 1.0
+      value: 1.5
+  alphaOverLifetime:
+    - time: 0.0
+      value: 0.0
+    - time: 0.2
+      value: 0.85
+    - time: 0.75
+      value: 0.7
+    - time: 1.0
+      value: 0.0
+  lifetime: 2.8
+  lifetimeVariance: 0.6
+  speed: 0.28
+  speedVariance: 0.15
+  particleSize: 0.9
+  sizeVariance: 0.5
+  emissionRate: 14
+  maxCount: 120
+  burst: false
+  duration: 0 # continuous
+  gravity: -0.15 # heavier gas, drifts up slowly
+  drag: 0.5
+  noiseStrength: 0.12
+  noiseFrequency: 0.6
+  spreadAngle: 360
+  emitAngle: 0
+  startRotationVariance: 180
+  rotationSpeedVariance: 20
+  shape:
+    type: CircleFill
+    radius: 4
