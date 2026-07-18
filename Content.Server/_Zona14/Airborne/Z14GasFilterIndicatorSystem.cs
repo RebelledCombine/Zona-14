@@ -60,7 +60,11 @@ public sealed class Z14GasFilterIndicatorSystem : EntitySystem
 
         if (!_inventory.TryGetSlotEntity(wearer, "mask", out var maskUid))
             return false;
-        if (!_itemSlots.TryGetSlot(maskUid.Value, AirborneHazardSystem.FilterSlotId, out var slot))
+        // Masks without a filter socket (most upstream masks) have no ItemSlots — resolve it ourselves,
+        // because TryGetSlot logs an error when it can't resolve the component.
+        if (!TryComp<ItemSlotsComponent>(maskUid.Value, out var slots))
+            return false;
+        if (!_itemSlots.TryGetSlot(maskUid.Value, AirborneHazardSystem.FilterSlotId, out var slot, slots))
             return false;
         if (slot.Item is not { } filterUid || !TryComp(filterUid, out GasMaskFilterComponent? comp))
             return false;

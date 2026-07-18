@@ -211,7 +211,12 @@ public sealed class AirborneHazardSystem : EntitySystem
         if (!_inventory.TryGetSlotEntity(mob, "mask", out var mask))
             return 0f;
 
-        if (!_itemSlots.TryGetSlot(mask.Value, FilterSlotId, out var slot))
+        // Masks without a filter socket (most upstream masks) have no ItemSlots — resolve it ourselves,
+        // because TryGetSlot logs an error when it can't resolve the component.
+        if (!TryComp<ItemSlotsComponent>(mask.Value, out var slots))
+            return 0f;
+
+        if (!_itemSlots.TryGetSlot(mask.Value, FilterSlotId, out var slot, slots))
             return 0f;
 
         if (slot.Item is not { } filterUid
