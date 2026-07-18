@@ -8,9 +8,11 @@
   categories: [ Zona14 ]
   description: A replaceable particulate-and-gas filter cartridge for a gas mask. Blocks airborne hazards until its charge is used up, then it must be swapped for a fresh one.
   components:
+  # Placeholder sprite (atmospherics gas filter) — a dedicated filter sprite exists but is
+  # licensed All-Rights-Reserved and is not distributed under this PR.
   - type: Sprite
-    sprite: _Zona14/Objects/Clothing/Mask/filter.rsi
-    state: icon
+    sprite: Structures/Piping/Atmospherics/gasfilter.rsi
+    state: gasFilter
   - type: Item
     size: Tiny
   - type: GasMaskFilter
