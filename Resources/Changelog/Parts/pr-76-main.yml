@@ -1,0 +1,13 @@
+author: RebelledCombine
+time: '2026-07-18T16:34:17Z'
+url: https://github.com/Zona-14/Zona-14/pull/76
+changes:
+- type: Tweak
+  message: All armour now provides anomalous/radiation protection scaled to its tier,
+    so matching-tier armour lets you survive its own radiation zone.
+- type: Tweak
+  message: Armour equip time reduced from 10s to 4s.
+- type: Tweak
+  message: Armour is now bulky enough that you can't carry a spare set in a normal
+    backpack.
+category: Main
