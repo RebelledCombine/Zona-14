@@ -173,6 +173,9 @@
   - type: FloatingVisuals
   - type: Puller
     needsHands: false
+  # Zona14: let mutant corpses be dragged (Z14STBaseMobMutant already has this); drag weight scales
+  # with the mutant's STWeight via STPulledWeightSystem, so heavier mutants are harder to haul.
+  - type: Pullable
   - type: Hands
   - type: Trash
     time: 900
