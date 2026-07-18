@@ -1,0 +1,14 @@
+author: RebelledCombine
+time: '2026-07-18T16:35:06Z'
+url: https://github.com/Zona-14/Zona-14/pull/74
+changes:
+- type: Add
+  message: The air in the Zone can now hurt you. Contaminated areas, fire-anomaly
+    ash and chemical-anomaly gas deal damage that armour does not stop.
+- type: Add
+  message: Gas masks now take replaceable filter cartridges that block airborne hazards
+    until they run out; a HUD gauge shows the remaining charge.
+- type: Add
+  message: SEVA and scientist suits are closed-cycle and shrug off airborne hazards
+    without a filter, but only while fully sealed with the helmet deployed.
+category: Main
