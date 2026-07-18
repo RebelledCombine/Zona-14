@@ -19,15 +19,16 @@
     - type: PersonalDamage
       damage:
         types:
-          Radiation: -5
-          Asphyxiation: -2
+          Asphyxiation: -0.4
+          Psy: -0.3
       interval: 1
+    - type: ArtifactSelfRadiation
+      rads: 3.5
     - type: Armor
       hiddenExamine: true
       armorClass: 2
       modifiers:
         flatReductions:
-          Radiation: 2
           Caustic: 1
           Heat: 1
           Compression: 1
@@ -35,7 +36,6 @@
           Cold: 1
           Psy: 3
         coefficients:
-          Radiation: 0.5
           Caustic: 0.5
           Compression: 0.5
           Heat: 0.5
@@ -74,11 +74,6 @@
       energy: 8
       color: "#c2a41f"
       netsync: false
-    - type: PersonalDamage
-      damage:
-        types:
-          Radiation: 0.1
-      interval: 1
     - type: Armor
       hiddenExamine: true
       modifiers:
@@ -110,9 +105,9 @@
     - type: PersonalDamage
       damage:
         types:
-          Piercing: -0.3
-          Slash: -0.5
-          Blunt: -0.5
+          Piercing: -0.1
+          Slash: -0.1
+          Blunt: -0.1
           Heat: 0.3
       interval: 1
     - type: Storage
@@ -140,7 +135,7 @@
       state: compass
       scale: 0.8, 0.8
     - type: ZoneArtifact
-      anomaly: AnomSEpicentre
+      anomaly: Z14AnomSEpicentre
     - type: ZoneArtifactDetectorTarget
       detectedLevel: 4
     - type: PointLight
@@ -150,9 +145,10 @@
     - type: PersonalDamage
       damage:
         types:
-          Radiation: 6
-          Cold: 2
+          Cold: 0.4
       interval: 1
+    - type: ArtifactSelfRadiation
+      rads: 3.5
     - type: Storage
       grid:
         - 0,0,3,3
@@ -186,7 +182,7 @@
   - type: ZoneArtifact
     anomaly: Z14ZoneAnomalyNoGravity
   - type: ZoneArtifactDetectorTarget
-    detectedLevel: 5
+    detectedLevel: 2
   - type: PointLight
     radius: 1.5
     energy: 5.5
@@ -195,10 +191,11 @@
   - type: PersonalDamage
     damage:
       types:
-        Piercing: -3
-        Radiation: 1
-        Cold: 3.5
+        Piercing: -0.15
+        Cold: 0.4
     interval: 1
+  - type: ArtifactSelfRadiation
+    rads: 2.0
   - type: Armor
     hiddenExamine: true
     armorClass: 2
@@ -223,7 +220,7 @@
   - type: ZoneArtifact
     anomaly: Z14ZoneAnomalyPulse
   - type: ZoneArtifactDetectorTarget
-    detectedLevel: 3
+    detectedLevel: 2
   - type: PointLight
     radius: 1.5
     energy: 5.5
@@ -269,9 +266,10 @@
       staminaDamage: -3
       damage:
         types:
-          Radiation: 1
-          Psy: 1
+          Psy: 0.5
       interval: 1
+    - type: ArtifactSelfRadiation
+      rads: 2.0
     - type: Armor
       hiddenExamine: true
       modifiers:
@@ -300,7 +298,7 @@
     state: arf
     scale: 0.8, 0.8
   - type: ZoneArtifact
-    anomaly: AnomSEpicentre
+    anomaly: Z14AnomSEpicentre
   - type: ZoneArtifactDetectorTarget
     detectedLevel: 2
   - type: PointLight
@@ -314,9 +312,10 @@
         Caustic: 0.1
         Heat: 0.4
         Compression: 0.2
-        Radiation: 0.3
-        Psy: -0.3
+        Psy: -0.15
     interval: 1
+  - type: ArtifactSelfRadiation
+    rads: 1.0
   - type: Armor
     hiddenExamine: true
     armorClass: 2

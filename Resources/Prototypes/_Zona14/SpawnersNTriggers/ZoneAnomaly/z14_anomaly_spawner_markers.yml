@@ -1,0 +1,1073 @@
+# Zona14: Z14 clones of the upstream anomaly spawner markers, overriding their
+# spawn lists to the Z14 anomaly set. The Zona14 world maps reference these
+# instead of the upstream markers, so the activation stays merge-safe (no edits
+# to _Stalker spawner files). Sprite/name are inherited from the upstream parent.
+
+- type: entity
+  parent: RandomAnomaly1
+  id: Z14RandomAnomaly1
+  suffix: Z14
+  categories: [ Spawner, StSkipSpawnTest, Zona14 ]
+  components:
+  - type: RandomSpawner
+    prototypes:
+      - Z14ZoneAnomalySpringboard
+      - Z14ZoneAnomalyGravi
+      - Z14ZoneAnomalyJarka
+      - Z14ZoneAnomalyElectra
+    chance: 0.01
+    rareChance: 0.002
+    offset: 0.0
+
+- type: entity
+  parent: RandomAnomaly10
+  id: Z14RandomAnomaly10
+  suffix: Z14
+  categories: [ Spawner, StSkipSpawnTest, Zona14 ]
+  components:
+  - type: RandomSpawner
+    prototypes:
+      - Z14ZoneAnomalySpringboard
+      - Z14ZoneAnomalyGravi
+      - Z14ZoneAnomalyJarka
+      - Z14ZoneAnomalyElectra
+    rarePrototypes:
+      - Z14AnomSEpicentre
+    chance: 0.1
+    rareChance: 0.02
+    offset: 0.0
+
+- type: entity
+  parent: RandomAnomaly25
+  id: Z14RandomAnomaly25
+  suffix: Z14
+  categories: [ Spawner, StSkipSpawnTest, Zona14 ]
+  components:
+  - type: RandomSpawner
+    prototypes:
+      - Z14ZoneAnomalySpringboard
+      - Z14ZoneAnomalyGravi
+      - Z14ZoneAnomalyJarka
+      - Z14ZoneAnomalyElectra
+    rarePrototypes:
+      - Z14ZoneAnomalySource
+      - Z14AnomSEpicentre
+    chance: 0.25
+    rareChance: 0.025
+    offset: 0.0
+
+- type: entity
+  parent: RandomRareAnomaly1
+  id: Z14RandomRareAnomaly1
+  suffix: Z14
+  categories: [ Spawner, StSkipSpawnTest, Zona14 ]
+  components:
+  - type: RandomSpawner
+    prototypes:
+      - Z14ZoneAnomalyRift
+      - Z14ZoneAnomalySource
+      - Z14ZoneAnomalyNoGravity
+      - Z14ZoneAnomalyEMP
+    chance: 0.01
+    offset: 0.0
+
+- type: entity
+  parent: SpawnerElectra1
+  id: Z14SpawnerElectra1
+  suffix: Z14
+  categories: [ Spawner, StSkipSpawnTest, Zona14 ]
+  components:
+  - type: RandomSpawner
+    prototypes:
+      - Z14ZoneAnomalyElectra
+    chance: 0.01
+    offset: 0.0
+
+- type: entity
+  parent: SpawnerJarka1
+  id: Z14SpawnerJarka1
+  suffix: Z14
+  categories: [ Spawner, StSkipSpawnTest, Zona14 ]
+  components:
+  - type: RandomSpawner
+    prototypes:
+      - Z14ZoneAnomalyJarka
+    chance: 0.01
+    offset: 0.0
+
+- type: entity
+  parent: SpawnerJarka100NoArts
+  id: Z14SpawnerJarka100NoArts
+  suffix: Z14
+  categories: [ Spawner, StSkipSpawnTest, Zona14 ]
+  components:
+  - type: RandomSpawner
+    prototypes:
+      - Z14ZoneAnomalyJarkaNoArts
+    chance: 0.7
+    offset: 0.0
+
+- type: entity
+  parent: SpawnerJarka10NoArts
+  id: Z14SpawnerJarka10NoArts
+  suffix: Z14
+  categories: [ Spawner, StSkipSpawnTest, Zona14 ]
+  components:
+  - type: RandomSpawner
+    prototypes:
+      - Z14ZoneAnomalyJarkaNoArts
+    chance: 0.05
+    offset: 0.0
+
+- type: entity
+  parent: SpawnerJarka1NoArts
+  id: Z14SpawnerJarka1NoArts
+  suffix: Z14
+  categories: [ Spawner, StSkipSpawnTest, Zona14 ]
+  components:
+  - type: RandomSpawner
+    prototypes:
+      - Z14ZoneAnomalyJarkaNoArts
+    chance: 0.01
+    offset: 0.0
+
+- type: entity
+  parent: SpawnerJarka25NoArts
+  id: Z14SpawnerJarka25NoArts
+  suffix: Z14
+  categories: [ Spawner, StSkipSpawnTest, Zona14 ]
+  components:
+  - type: RandomSpawner
+    prototypes:
+      - Z14ZoneAnomalyJarkaNoArts
+    chance: 0.12
+    offset: 0.0
+
+- type: entity
+  parent: SpawnerJarka50
+  id: Z14SpawnerJarka50
+  suffix: Z14
+  categories: [ Spawner, StSkipSpawnTest, Zona14 ]
+  components:
+  - type: RandomSpawner
+    prototypes:
+      - Z14ZoneAnomalyJarka
+    chance: 0.5
+    offset: 0.0
+
+- type: entity
+  parent: SpawnerJarka50NoArts
+  id: Z14SpawnerJarka50NoArts
+  suffix: Z14
+  categories: [ Spawner, StSkipSpawnTest, Zona14 ]
+  components:
+  - type: RandomSpawner
+    prototypes:
+      - Z14ZoneAnomalyJarkaNoArts
+    chance: 0.3
+    offset: 0.0
+
+- type: entity
+  parent: SpawnerVoronka1
+  id: Z14SpawnerVoronka1
+  suffix: Z14
+  categories: [ Spawner, StSkipSpawnTest, Zona14 ]
+  components:
+  - type: RandomSpawner
+    prototypes:
+      - Z14ZoneAnomalyGravi
+    rarePrototypes:
+      - Z14ZoneAnomalyGravi
+    chance: 0.01
+    rareChance: 0.01
+    offset: 0.0
+
+- type: entity
+  parent: SpawnerVoronka10
+  id: Z14SpawnerVoronka10
+  suffix: Z14
+  categories: [ Spawner, StSkipSpawnTest, Zona14 ]
+  components:
+  - type: RandomSpawner
+    prototypes:
+      - Z14ZoneAnomalyGravi
+    rarePrototypes:
+      - Z14ZoneAnomalyGravi
+    chance: 0.1
+    rareChance: 0.05
+    offset: 0.0
+
+- type: entity
+  parent: SpawnerVoronka25
+  id: Z14SpawnerVoronka25
+  suffix: Z14
+  categories: [ Spawner, StSkipSpawnTest, Zona14 ]
+  components:
+  - type: RandomSpawner
+    prototypes:
+      - Z14ZoneAnomalyGravi
+    rarePrototypes:
+      - Z14ZoneAnomalyGravi
+    chance: 0.25
+    rareChance: 0.1
+    offset: 0.0
+
+- type: entity
+  parent: SpawnerVoronka50
+  id: Z14SpawnerVoronka50
+  suffix: Z14
+  categories: [ Spawner, StSkipSpawnTest, Zona14 ]
+  components:
+  - type: RandomSpawner
+    prototypes:
+      - Z14ZoneAnomalyGravi
+    rarePrototypes:
+      - Z14ZoneAnomalyGravi
+    chance: 0.5
+    rareChance: 0.1
+    offset: 0.0
+
+- type: entity
+  parent: SpawnerZoneAnomalyChemicalGroupChance1
+  id: Z14SpawnerZoneAnomalyChemicalGroupChance1
+  suffix: Z14
+  categories: [ Spawner, StSkipSpawnTest, Zona14 ]
+  components:
+  - type: RandomSpawner
+    prototypes:
+      - Z14ZoneAnomalyKissel
+      - Z14ZoneAnomalyGazirovka
+      - Z14ZoneAnomalySmoke
+    rarePrototypes:
+      - Z14ZoneAnomalyKissel
+    chance: 0.05
+    rareChance: 0.1
+    offset: 0.0
+
+- type: entity
+  parent: SpawnerZoneAnomalyChemicalGroupChance10
+  id: Z14SpawnerZoneAnomalyChemicalGroupChance10
+  suffix: Z14
+  categories: [ Spawner, StSkipSpawnTest, Zona14 ]
+  components:
+  - type: RandomSpawner
+    prototypes:
+      - Z14ZoneAnomalyKissel
+      - Z14ZoneAnomalyGazirovka
+      - Z14ZoneAnomalySmoke
+    rarePrototypes:
+      - Z14ZoneAnomalyKissel
+    chance: 0.15
+    rareChance: 0.1
+    offset: 0.0
+
+- type: entity
+  parent: SpawnerZoneAnomalyChemicalGroupChance25
+  id: Z14SpawnerZoneAnomalyChemicalGroupChance25
+  suffix: Z14
+  categories: [ Spawner, StSkipSpawnTest, Zona14 ]
+  components:
+  - type: RandomSpawner
+    prototypes:
+      - Z14ZoneAnomalyKissel
+      - Z14ZoneAnomalyGazirovka
+      - Z14ZoneAnomalySmoke
+    rarePrototypes:
+      - Z14ZoneAnomalyKissel
+    chance: 0.35
+    rareChance: 0.1
+    offset: 0.0
+
+- type: entity
+  parent: SpawnerZoneAnomalyChemicalGroupChance5
+  id: Z14SpawnerZoneAnomalyChemicalGroupChance5
+  suffix: Z14
+  categories: [ Spawner, StSkipSpawnTest, Zona14 ]
+  components:
+  - type: RandomSpawner
+    prototypes:
+      - Z14ZoneAnomalyKissel
+      - Z14ZoneAnomalyGazirovka
+      - Z14ZoneAnomalySmoke
+    rarePrototypes:
+      - Z14ZoneAnomalyKissel
+    chance: 0.1
+    rareChance: 0.1
+    offset: 0.0
+
+- type: entity
+  parent: SpawnerZoneAnomalyChemicalGroupChance50
+  id: Z14SpawnerZoneAnomalyChemicalGroupChance50
+  suffix: Z14
+  categories: [ Spawner, StSkipSpawnTest, Zona14 ]
+  components:
+  - type: RandomSpawner
+    prototypes:
+      - Z14ZoneAnomalyKissel
+      - Z14ZoneAnomalyGazirovka
+      - Z14ZoneAnomalySmoke
+    rarePrototypes:
+      - Z14ZoneAnomalyKissel
+    chance: 0.5
+    rareChance: 0.1
+    offset: 0.0
+
+- type: entity
+  parent: SpawnerZoneAnomalyEMPChance100
+  id: Z14SpawnerZoneAnomalyEMPChance100
+  suffix: Z14
+  categories: [ Spawner, StSkipSpawnTest, Zona14 ]
+  components:
+  - type: RandomSpawner
+    prototypes:
+      - Z14ZoneAnomalyEMP
+    chance: 1
+    offset: 0.0
+
+- type: entity
+  parent: SpawnerZoneAnomalyElectraChance1
+  id: Z14SpawnerZoneAnomalyElectraChance1
+  suffix: Z14
+  categories: [ Spawner, StSkipSpawnTest, Zona14 ]
+  components:
+  - type: RandomSpawner
+    prototypes:
+      - Z14ZoneAnomalyElectra
+    chance: 0.1
+    offset: 0.0
+
+- type: entity
+  parent: SpawnerZoneAnomalyElectraChance10
+  id: Z14SpawnerZoneAnomalyElectraChance10
+  suffix: Z14
+  categories: [ Spawner, StSkipSpawnTest, Zona14 ]
+  components:
+  - type: RandomSpawner
+    prototypes:
+      - Z14ZoneAnomalyElectra
+    chance: 0.2
+    offset: 0.0
+
+- type: entity
+  parent: SpawnerZoneAnomalyElectraChance100
+  id: Z14SpawnerZoneAnomalyElectraChance100
+  suffix: Z14
+  categories: [ Spawner, StSkipSpawnTest, Zona14 ]
+  components:
+  - type: RandomSpawner
+    prototypes:
+      - Z14ZoneAnomalyElectra
+    chance: 1
+    offset: 0.0
+
+- type: entity
+  parent: SpawnerZoneAnomalyElectraChance25
+  id: Z14SpawnerZoneAnomalyElectraChance25
+  suffix: Z14
+  categories: [ Spawner, StSkipSpawnTest, Zona14 ]
+  components:
+  - type: RandomSpawner
+    prototypes:
+      - Z14ZoneAnomalyElectra
+    chance: 0.35
+    offset: 0.0
+
+- type: entity
+  parent: SpawnerZoneAnomalyElectraChance5
+  id: Z14SpawnerZoneAnomalyElectraChance5
+  suffix: Z14
+  categories: [ Spawner, StSkipSpawnTest, Zona14 ]
+  components:
+  - type: RandomSpawner
+    prototypes:
+      - Z14ZoneAnomalyElectra
+    chance: 0.15
+    offset: 0.0
+
+- type: entity
+  parent: SpawnerZoneAnomalyElectraChance50
+  id: Z14SpawnerZoneAnomalyElectraChance50
+  suffix: Z14
+  categories: [ Spawner, StSkipSpawnTest, Zona14 ]
+  components:
+  - type: RandomSpawner
+    prototypes:
+      - Z14ZoneAnomalyElectra
+    chance: 0.5
+    offset: 0.0
+
+- type: entity
+  parent: SpawnerZoneAnomalyElectricalGroupChance1
+  id: Z14SpawnerZoneAnomalyElectricalGroupChance1
+  suffix: Z14
+  categories: [ Spawner, StSkipSpawnTest, Zona14 ]
+  components:
+  - type: RandomSpawner
+    prototypes:
+      - Z14ZoneAnomalyElectra
+      - Z14ZoneAnomalyGarland
+    rarePrototypes:
+      - Z14ZoneAnomalySource
+    chance: 0.1
+    rareChance: 0.05
+    offset: 0.0
+
+- type: entity
+  parent: SpawnerZoneAnomalyElectricalGroupChance10
+  id: Z14SpawnerZoneAnomalyElectricalGroupChance10
+  suffix: Z14
+  categories: [ Spawner, StSkipSpawnTest, Zona14 ]
+  components:
+  - type: RandomSpawner
+    prototypes:
+      - Z14ZoneAnomalyElectra
+      - Z14ZoneAnomalyGarland
+    rarePrototypes:
+      - Z14ZoneAnomalySource
+    chance: 0.2
+    rareChance: 0.05
+    offset: 0.0
+
+- type: entity
+  parent: SpawnerZoneAnomalyElectricalGroupChance100
+  id: Z14SpawnerZoneAnomalyElectricalGroupChance100
+  suffix: Z14
+  categories: [ Spawner, StSkipSpawnTest, Zona14 ]
+  components:
+  - type: RandomSpawner
+    prototypes:
+      - Z14ZoneAnomalyElectra
+      - Z14ZoneAnomalyGarland
+    rarePrototypes:
+      - Z14ZoneAnomalySource
+    chance: 1.0
+    rareChance: 0.05
+    offset: 0.0
+
+- type: entity
+  parent: SpawnerZoneAnomalyElectricalGroupChance25
+  id: Z14SpawnerZoneAnomalyElectricalGroupChance25
+  suffix: Z14
+  categories: [ Spawner, StSkipSpawnTest, Zona14 ]
+  components:
+  - type: RandomSpawner
+    prototypes:
+      - Z14ZoneAnomalyElectra
+      - Z14ZoneAnomalyGarland
+    rarePrototypes:
+      - Z14ZoneAnomalySource
+    chance: 0.35
+    rareChance: 0.05
+    offset: 0.0
+
+- type: entity
+  parent: SpawnerZoneAnomalyElectricalGroupChance5
+  id: Z14SpawnerZoneAnomalyElectricalGroupChance5
+  suffix: Z14
+  categories: [ Spawner, StSkipSpawnTest, Zona14 ]
+  components:
+  - type: RandomSpawner
+    prototypes:
+      - Z14ZoneAnomalyElectra
+      - Z14ZoneAnomalyGarland
+    rarePrototypes:
+      - Z14ZoneAnomalySource
+    chance: 0.15
+    rareChance: 0.05
+    offset: 0.0
+
+- type: entity
+  parent: SpawnerZoneAnomalyElectricalGroupChance50
+  id: Z14SpawnerZoneAnomalyElectricalGroupChance50
+  suffix: Z14
+  categories: [ Spawner, StSkipSpawnTest, Zona14 ]
+  components:
+  - type: RandomSpawner
+    prototypes:
+      - Z14ZoneAnomalyElectra
+      - Z14ZoneAnomalyGarland
+    rarePrototypes:
+      - Z14ZoneAnomalySource
+    chance: 0.5
+    rareChance: 0.04
+    offset: 0.0
+
+- type: entity
+  parent: SpawnerZoneAnomalyGarland1
+  id: Z14SpawnerZoneAnomalyGarland1
+  suffix: Z14
+  categories: [ Spawner, StSkipSpawnTest, Zona14 ]
+  components:
+  - type: RandomSpawner
+    prototypes:
+      - Z14ZoneAnomalyGarland
+    chance: 0.1
+    offset: 0.0
+
+- type: entity
+  parent: SpawnerZoneAnomalyGarland25
+  id: Z14SpawnerZoneAnomalyGarland25
+  suffix: Z14
+  categories: [ Spawner, StSkipSpawnTest, Zona14 ]
+  components:
+  - type: RandomSpawner
+    prototypes:
+      - Z14ZoneAnomalyGarland
+    chance: 0.35
+    offset: 0.0
+
+- type: entity
+  parent: SpawnerZoneAnomalyGazirovkaChance10
+  id: Z14SpawnerZoneAnomalyGazirovkaChance10
+  suffix: Z14
+  categories: [ Spawner, StSkipSpawnTest, Zona14 ]
+  components:
+  - type: RandomSpawner
+    prototypes:
+      - Z14ZoneAnomalyGazirovka
+    chance: 0.2
+    offset: 0.0
+
+- type: entity
+  parent: SpawnerZoneAnomalyGazirovkaChance25
+  id: Z14SpawnerZoneAnomalyGazirovkaChance25
+  suffix: Z14
+  categories: [ Spawner, StSkipSpawnTest, Zona14 ]
+  components:
+  - type: RandomSpawner
+    prototypes:
+      - Z14ZoneAnomalyGazirovka
+    chance: 0.35
+    offset: 0.0
+
+- type: entity
+  parent: SpawnerZoneAnomalyGazirovkaChance5
+  id: Z14SpawnerZoneAnomalyGazirovkaChance5
+  suffix: Z14
+  categories: [ Spawner, StSkipSpawnTest, Zona14 ]
+  components:
+  - type: RandomSpawner
+    prototypes:
+      - Z14ZoneAnomalyGazirovka
+    chance: 0.15
+    offset: 0.0
+
+- type: entity
+  parent: SpawnerZoneAnomalyGazirovkaChance50
+  id: Z14SpawnerZoneAnomalyGazirovkaChance50
+  suffix: Z14
+  categories: [ Spawner, StSkipSpawnTest, Zona14 ]
+  components:
+  - type: RandomSpawner
+    prototypes:
+      - Z14ZoneAnomalyGazirovka
+    chance: 0.5
+    offset: 0.0
+
+- type: entity
+  parent: SpawnerZoneAnomalyGraviChance1
+  id: Z14SpawnerZoneAnomalyGraviChance1
+  suffix: Z14
+  categories: [ Spawner, StSkipSpawnTest, Zona14 ]
+  components:
+  - type: RandomSpawner
+    prototypes:
+      - Z14ZoneAnomalyGravi
+    chance: 0.1
+    offset: 0.0
+
+- type: entity
+  parent: SpawnerZoneAnomalyGraviChance10
+  id: Z14SpawnerZoneAnomalyGraviChance10
+  suffix: Z14
+  categories: [ Spawner, StSkipSpawnTest, Zona14 ]
+  components:
+  - type: RandomSpawner
+    prototypes:
+      - Z14ZoneAnomalyGravi
+    chance: 0.2
+    offset: 0.0
+
+- type: entity
+  parent: SpawnerZoneAnomalyGraviChance100
+  id: Z14SpawnerZoneAnomalyGraviChance100
+  suffix: Z14
+  categories: [ Spawner, StSkipSpawnTest, Zona14 ]
+  components:
+  - type: RandomSpawner
+    prototypes:
+      - Z14ZoneAnomalyGravi
+    chance: 1.0
+    offset: 0.0
+
+- type: entity
+  parent: SpawnerZoneAnomalyGraviChance25
+  id: Z14SpawnerZoneAnomalyGraviChance25
+  suffix: Z14
+  categories: [ Spawner, StSkipSpawnTest, Zona14 ]
+  components:
+  - type: RandomSpawner
+    prototypes:
+      - Z14ZoneAnomalyGravi
+    chance: 0.35
+    offset: 0.0
+
+- type: entity
+  parent: SpawnerZoneAnomalyGraviChance5
+  id: Z14SpawnerZoneAnomalyGraviChance5
+  suffix: Z14
+  categories: [ Spawner, StSkipSpawnTest, Zona14 ]
+  components:
+  - type: RandomSpawner
+    prototypes:
+      - Z14ZoneAnomalyGravi
+    chance: 0.15
+    offset: 0.0
+
+- type: entity
+  parent: SpawnerZoneAnomalyGraviChance50
+  id: Z14SpawnerZoneAnomalyGraviChance50
+  suffix: Z14
+  categories: [ Spawner, StSkipSpawnTest, Zona14 ]
+  components:
+  - type: RandomSpawner
+    prototypes:
+      - Z14ZoneAnomalyGravi
+    chance: 0.5
+    offset: 0.0
+
+- type: entity
+  parent: SpawnerZoneAnomalyGravityGroupChance1
+  id: Z14SpawnerZoneAnomalyGravityGroupChance1
+  suffix: Z14
+  categories: [ Spawner, StSkipSpawnTest, Zona14 ]
+  components:
+  - type: RandomSpawner
+    prototypes:
+      - Z14ZoneAnomalyGravi
+      - Z14ZoneAnomalySpringboard
+    rarePrototypes:
+      - Z14ZoneAnomalyGrabber
+      - Z14AnomSEpicentre
+    chance: 0.1
+    rareChance: 0.01
+    offset: 0.0
+
+- type: entity
+  parent: SpawnerZoneAnomalyGravityGroupChance10
+  id: Z14SpawnerZoneAnomalyGravityGroupChance10
+  suffix: Z14
+  categories: [ Spawner, StSkipSpawnTest, Zona14 ]
+  components:
+  - type: RandomSpawner
+    prototypes:
+      - Z14ZoneAnomalyGravi
+      - Z14ZoneAnomalySpringboard
+    rarePrototypes:
+      - Z14ZoneAnomalyGrabber
+      - Z14AnomSEpicentre
+    chance: 0.2
+    rareChance: 0.01
+    offset: 0.0
+
+- type: entity
+  parent: SpawnerZoneAnomalyGravityGroupChance25
+  id: Z14SpawnerZoneAnomalyGravityGroupChance25
+  suffix: Z14
+  categories: [ Spawner, StSkipSpawnTest, Zona14 ]
+  components:
+  - type: RandomSpawner
+    prototypes:
+      - Z14ZoneAnomalyGravi
+      - Z14ZoneAnomalySpringboard
+    rarePrototypes:
+      - Z14ZoneAnomalyGrabber
+      - Z14AnomSEpicentre
+    chance: 0.35
+    rareChance: 0.01
+    offset: 0.0
+
+- type: entity
+  parent: SpawnerZoneAnomalyGravityGroupChance5
+  id: Z14SpawnerZoneAnomalyGravityGroupChance5
+  suffix: Z14
+  categories: [ Spawner, StSkipSpawnTest, Zona14 ]
+  components:
+  - type: RandomSpawner
+    prototypes:
+      - Z14ZoneAnomalyGravi
+      - Z14ZoneAnomalySpringboard
+    rarePrototypes:
+      - Z14ZoneAnomalyGrabber
+      - Z14AnomSEpicentre
+    chance: 0.15
+    rareChance: 0.01
+    offset: 0.0
+
+- type: entity
+  parent: SpawnerZoneAnomalyJarkaChance1
+  id: Z14SpawnerZoneAnomalyJarkaChance1
+  suffix: Z14
+  categories: [ Spawner, StSkipSpawnTest, Zona14 ]
+  components:
+  - type: RandomSpawner
+    prototypes:
+      - Z14ZoneAnomalyJarka
+    chance: 0.1
+    offset: 0.0
+
+- type: entity
+  parent: SpawnerZoneAnomalyJarkaChance10
+  id: Z14SpawnerZoneAnomalyJarkaChance10
+  suffix: Z14
+  categories: [ Spawner, StSkipSpawnTest, Zona14 ]
+  components:
+  - type: RandomSpawner
+    prototypes:
+      - Z14ZoneAnomalyJarka
+    chance: 0.2
+    offset: 0.0
+
+- type: entity
+  parent: SpawnerZoneAnomalyJarkaChance100
+  id: Z14SpawnerZoneAnomalyJarkaChance100
+  suffix: Z14
+  categories: [ Spawner, StSkipSpawnTest, Zona14 ]
+  components:
+  - type: RandomSpawner
+    prototypes:
+      - Z14ZoneAnomalyJarka
+    chance: 1
+    offset: 0.0
+
+- type: entity
+  parent: SpawnerZoneAnomalyJarkaChance25
+  id: Z14SpawnerZoneAnomalyJarkaChance25
+  suffix: Z14
+  categories: [ Spawner, StSkipSpawnTest, Zona14 ]
+  components:
+  - type: RandomSpawner
+    prototypes:
+      - Z14ZoneAnomalyJarka
+    chance: 0.35
+    offset: 0.0
+
+- type: entity
+  parent: SpawnerZoneAnomalyJarkaChance5
+  id: Z14SpawnerZoneAnomalyJarkaChance5
+  suffix: Z14
+  categories: [ Spawner, StSkipSpawnTest, Zona14 ]
+  components:
+  - type: RandomSpawner
+    prototypes:
+      - Z14ZoneAnomalyJarka
+    chance: 0.15
+    offset: 0.0
+
+- type: entity
+  parent: SpawnerZoneAnomalyJarkaChance50
+  id: Z14SpawnerZoneAnomalyJarkaChance50
+  suffix: Z14
+  categories: [ Spawner, StSkipSpawnTest, Zona14 ]
+  components:
+  - type: RandomSpawner
+    prototypes:
+      - Z14ZoneAnomalyJarka
+    chance: 0.5
+    offset: 0.0
+
+- type: entity
+  parent: SpawnerZoneAnomalyJarkaStrongChance25
+  id: Z14SpawnerZoneAnomalyJarkaStrongChance25
+  suffix: Z14
+  categories: [ Spawner, StSkipSpawnTest, Zona14 ]
+  components:
+  - type: RandomSpawner
+    prototypes:
+      - Z14ZoneAnomalyJarkaStrong
+    chance: 0.35
+    offset: 0.0
+
+- type: entity
+  parent: SpawnerZoneAnomalyKisselChance1
+  id: Z14SpawnerZoneAnomalyKisselChance1
+  suffix: Z14
+  categories: [ Spawner, StSkipSpawnTest, Zona14 ]
+  components:
+  - type: RandomSpawner
+    prototypes:
+      - Z14ZoneAnomalyKissel
+    chance: 0.1
+    offset: 0.0
+
+- type: entity
+  parent: SpawnerZoneAnomalyKisselChance10
+  id: Z14SpawnerZoneAnomalyKisselChance10
+  suffix: Z14
+  categories: [ Spawner, StSkipSpawnTest, Zona14 ]
+  components:
+  - type: RandomSpawner
+    prototypes:
+      - Z14ZoneAnomalyKissel
+    chance: 0.2
+    offset: 0.0
+
+- type: entity
+  parent: SpawnerZoneAnomalyKisselChance100
+  id: Z14SpawnerZoneAnomalyKisselChance100
+  suffix: Z14
+  categories: [ Spawner, StSkipSpawnTest, Zona14 ]
+  components:
+  - type: RandomSpawner
+    prototypes:
+      - Z14ZoneAnomalyKissel
+    chance: 1
+    offset: 0.0
+
+- type: entity
+  parent: SpawnerZoneAnomalyKisselChance25
+  id: Z14SpawnerZoneAnomalyKisselChance25
+  suffix: Z14
+  categories: [ Spawner, StSkipSpawnTest, Zona14 ]
+  components:
+  - type: RandomSpawner
+    prototypes:
+      - Z14ZoneAnomalyKissel
+    chance: 0.35
+    offset: 0.0
+
+- type: entity
+  parent: SpawnerZoneAnomalyKisselChance50
+  id: Z14SpawnerZoneAnomalyKisselChance50
+  suffix: Z14
+  categories: [ Spawner, StSkipSpawnTest, Zona14 ]
+  components:
+  - type: RandomSpawner
+    prototypes:
+      - Z14ZoneAnomalyKissel
+    chance: 0.5
+    offset: 0.0
+
+- type: entity
+  parent: SpawnerZoneAnomalyRandomWeakChance1
+  id: Z14SpawnerZoneAnomalyRandomWeakChance1
+  suffix: Z14
+  categories: [ Spawner, StSkipSpawnTest, Zona14 ]
+  components:
+  - type: RandomSpawner
+    prototypes:
+      - Z14ZoneAnomalyLamp
+      - Z14ZoneAnomalySpringboard
+      - Z14ZoneAnomalyGravi
+      - Z14ZoneAnomalyJarka
+      - Z14ZoneAnomalyElectra
+      - Z14ZoneAnomalyBurden
+    chance: 0.1
+    offset: 0.0
+
+- type: entity
+  parent: SpawnerZoneAnomalyRandomWeakChance10
+  id: Z14SpawnerZoneAnomalyRandomWeakChance10
+  suffix: Z14
+  categories: [ Spawner, StSkipSpawnTest, Zona14 ]
+  components:
+  - type: RandomSpawner
+    prototypes:
+      - Z14ZoneAnomalyLamp
+      - Z14ZoneAnomalySpringboard
+      - Z14ZoneAnomalyGravi
+      - Z14ZoneAnomalyJarka
+      - Z14ZoneAnomalyElectra
+      - Z14ZoneAnomalyBurden
+    chance: 0.2
+    offset: 0.0
+
+- type: entity
+  parent: SpawnerZoneAnomalyRandomWeakChance5
+  id: Z14SpawnerZoneAnomalyRandomWeakChance5
+  suffix: Z14
+  categories: [ Spawner, StSkipSpawnTest, Zona14 ]
+  components:
+  - type: RandomSpawner
+    prototypes:
+      - Z14ZoneAnomalyLamp
+      - Z14ZoneAnomalySpringboard
+      - Z14ZoneAnomalyGravi
+      - Z14ZoneAnomalyJarka
+      - Z14ZoneAnomalyElectra
+      - Z14ZoneAnomalyBurden
+    chance: 0.15
+    offset: 0.0
+
+- type: entity
+  parent: SpawnerZoneAnomalyRandomWeakChance50
+  id: Z14SpawnerZoneAnomalyRandomWeakChance50
+  suffix: Z14
+  categories: [ Spawner, StSkipSpawnTest, Zona14 ]
+  components:
+  - type: RandomSpawner
+    prototypes:
+      - Z14ZoneAnomalyLamp
+      - Z14ZoneAnomalySpringboard
+      - Z14ZoneAnomalyGravi
+      - Z14ZoneAnomalyJarka
+      - Z14ZoneAnomalyElectra
+      - Z14ZoneAnomalyBurden
+    chance: 0.5
+    offset: 0.0
+
+- type: entity
+  parent: SpawnerZoneAnomalySource50
+  id: Z14SpawnerZoneAnomalySource50
+  suffix: Z14
+  categories: [ Spawner, StSkipSpawnTest, Zona14 ]
+  components:
+  - type: RandomSpawner
+    prototypes:
+      - Z14ZoneAnomalySource
+    chance: 0.5
+    offset: 0.0
+
+- type: entity
+  parent: SpawnerZoneAnomalySpringboardChance1
+  id: Z14SpawnerZoneAnomalySpringboardChance1
+  suffix: Z14
+  categories: [ Spawner, StSkipSpawnTest, Zona14 ]
+  components:
+  - type: RandomSpawner
+    prototypes:
+      - Z14ZoneAnomalySpringboard
+    chance: 0.1
+    offset: 0.0
+
+- type: entity
+  parent: SpawnerZoneAnomalySpringboardChance10
+  id: Z14SpawnerZoneAnomalySpringboardChance10
+  suffix: Z14
+  categories: [ Spawner, StSkipSpawnTest, Zona14 ]
+  components:
+  - type: RandomSpawner
+    prototypes:
+      - Z14ZoneAnomalySpringboard
+    chance: 0.2
+    offset: 0.0
+
+- type: entity
+  parent: SpawnerZoneAnomalySpringboardChance25
+  id: Z14SpawnerZoneAnomalySpringboardChance25
+  suffix: Z14
+  categories: [ Spawner, StSkipSpawnTest, Zona14 ]
+  components:
+  - type: RandomSpawner
+    prototypes:
+      - Z14ZoneAnomalySpringboard
+    chance: 0.35
+    offset: 0.0
+
+- type: entity
+  parent: SpawnerZoneAnomalySpringboardChance5
+  id: Z14SpawnerZoneAnomalySpringboardChance5
+  suffix: Z14
+  categories: [ Spawner, StSkipSpawnTest, Zona14 ]
+  components:
+  - type: RandomSpawner
+    prototypes:
+      - Z14ZoneAnomalySpringboard
+    chance: 0.15
+    offset: 0.0
+
+- type: entity
+  parent: SpawnerZoneAnomalySpringboardChance50
+  id: Z14SpawnerZoneAnomalySpringboardChance50
+  suffix: Z14
+  categories: [ Spawner, StSkipSpawnTest, Zona14 ]
+  components:
+  - type: RandomSpawner
+    prototypes:
+      - Z14ZoneAnomalySpringboard
+    chance: 0.5
+    offset: 0.0
+
+- type: entity
+  parent: SpawnerZoneAnomalySteamChance1
+  id: Z14SpawnerZoneAnomalySteamChance1
+  suffix: Z14
+  categories: [ Spawner, StSkipSpawnTest, Zona14 ]
+  components:
+  - type: RandomSpawner
+    prototypes:
+      - Z14ZoneAnomalySteam
+    chance: 0.1
+    offset: 0.0
+
+- type: entity
+  parent: SpawnerZoneAnomalySteamChance25
+  id: Z14SpawnerZoneAnomalySteamChance25
+  suffix: Z14
+  categories: [ Spawner, StSkipSpawnTest, Zona14 ]
+  components:
+  - type: RandomSpawner
+    prototypes:
+      - Z14ZoneAnomalySteam
+    chance: 0.35
+    offset: 0.0
+
+- type: entity
+  parent: SpawnerZoneAnomalySteamChance5
+  id: Z14SpawnerZoneAnomalySteamChance5
+  suffix: Z14
+  categories: [ Spawner, StSkipSpawnTest, Zona14 ]
+  components:
+  - type: RandomSpawner
+    prototypes:
+      - Z14ZoneAnomalySteam
+    chance: 0.15
+    offset: 0.0
+
+- type: entity
+  parent: SpawnerZoneAnomalyThermalGroupChance10
+  id: Z14SpawnerZoneAnomalyThermalGroupChance10
+  suffix: Z14
+  categories: [ Spawner, StSkipSpawnTest, Zona14 ]
+  components:
+  - type: RandomSpawner
+    prototypes:
+      - Z14ZoneAnomalyJarka
+    rarePrototypes:
+      - Z14ZoneAnomalySol
+      - Z14ZoneAnomalyWitchesCircle
+    chance: 0.2
+    rareChance: 0.05
+    offset: 0.0
+
+- type: entity
+  parent: SpawnerZoneAnomalyThermalGroupChance25
+  id: Z14SpawnerZoneAnomalyThermalGroupChance25
+  suffix: Z14
+  categories: [ Spawner, StSkipSpawnTest, Zona14 ]
+  components:
+  - type: RandomSpawner
+    prototypes:
+      - Z14ZoneAnomalyJarka
+    rarePrototypes:
+      - Z14ZoneAnomalySol
+      - Z14ZoneAnomalyWitchesCircle
+    chance: 0.35
+    rareChance: 0.05
+    offset: 0.0
+
+- type: entity
+  parent: SpawnerZoneAnomalyThermalGroupChance50
+  id: Z14SpawnerZoneAnomalyThermalGroupChance50
+  suffix: Z14
+  categories: [ Spawner, StSkipSpawnTest, Zona14 ]
+  components:
+  - type: RandomSpawner
+    prototypes:
+      - Z14ZoneAnomalyJarka
+    rarePrototypes:
+      - Z14ZoneAnomalySol
+      - Z14ZoneAnomalyWitchesCircle
+    chance: 0.5
+    rareChance: 0.05
+    offset: 0.0
