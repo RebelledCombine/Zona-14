@@ -12,6 +12,11 @@
   - type: Craftable
   # Appearance carries the filter-charge tier (Z14GasFilterVisuals) for a future on-icon overlay.
   - type: Appearance
+  # Declared explicitly so the filter slot's container exists in the prototype rather than being
+  # added on spawn (UninitializedSaveTest fails on components gained at spawn).
+  - type: ContainerContainer
+    containers:
+      gas_filter: !type:ContainerSlot {}
   - type: ItemSlots
     slots:
       gas_filter:
