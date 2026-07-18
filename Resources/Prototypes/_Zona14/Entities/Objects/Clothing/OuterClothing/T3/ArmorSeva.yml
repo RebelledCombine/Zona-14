@@ -7,6 +7,8 @@
   categories: [ HideSpawnMenu, Zona14 ]
   abstract: true
   components:
+  # Closed-cycle: supplies its own air, so no gas-mask filter is needed against airborne hazards.
+  - type: Z14SealedSuit
   - type: Item
     size: Ginormous
   - type: Sprite

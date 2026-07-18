@@ -1,0 +1,48 @@
+# Mapper-placed contaminated-air pockets. Drop these onto spots whose air is radioactive so that
+# breathing there without a charged gas-mask filter irradiates you — lets a single map have both
+# clean and contaminated areas. Radius circles, mirroring the Z14MapRadiationBlocker markers.
+- type: entity
+  id: Z14AirborneHazardZone
+  parent: FlexibleMarker
+  abstract: true
+  categories: [ Zona14 ]
+  name: Contaminated air
+  description: A marker whose air is contaminated within its radius; breathing here needs a gas-mask filter.
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Anomalies/anomaly_generator_blocker.rsi
+      state: icon
+    - type: AirborneHazard
+      damage:
+        types:
+          Radiation: 2
+
+- type: entity
+  id: Z14AirborneHazardZone5
+  parent: Z14AirborneHazardZone
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Contaminated air (5 m)
+  components:
+    - type: AirborneHazard
+      radius: 5
+
+- type: entity
+  id: Z14AirborneHazardZone10
+  parent: Z14AirborneHazardZone
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Contaminated air (10 m)
+  components:
+    - type: AirborneHazard
+      radius: 10
+
+- type: entity
+  id: Z14AirborneHazardZone20
+  parent: Z14AirborneHazardZone
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Contaminated air (20 m)
+  components:
+    - type: AirborneHazard
+      radius: 20

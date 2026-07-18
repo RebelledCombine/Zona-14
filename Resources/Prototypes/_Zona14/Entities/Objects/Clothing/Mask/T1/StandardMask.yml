@@ -72,6 +72,15 @@
     damage:
       types:
         Radiation: 9
+  # Cursed mask: filter socket is welded shut — no filter, no airborne protection ever.
+  - type: ItemSlots
+    slots:
+      gas_filter:
+        name: filter
+        locked: true
+        whitelist:
+          components:
+          - GasMaskFilter
 
 - type: entity
   parent: Z14STClothingMaskGasStandardT1Base
@@ -208,6 +217,15 @@
     damage:
       types:
         Radiation: 9
+  # Spent gauze: filter socket is clogged solid — no filter, no airborne protection ever.
+  - type: ItemSlots
+    slots:
+      gas_filter:
+        name: filter
+        locked: true
+        whitelist:
+          components:
+          - GasMaskFilter
 
 - type: entity
   parent: Z14STClothingMaskGasStandardT1Base

@@ -6,6 +6,8 @@
   description: An unofficial SEVA scientific suit, extensively modified by Novikov, a Clear Sky technician. Highly ergonomic for mobility in anomalous fields. Extremely popular among veteran researchers.
   suffix: Z14
   components:
+  # Closed-cycle SEVA-derived scientist suit: supplies its own air, no filter needed vs airborne hazards.
+  - type: Z14SealedSuit
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/outerClothing/seva_cn.rsi
   - type: Clothing

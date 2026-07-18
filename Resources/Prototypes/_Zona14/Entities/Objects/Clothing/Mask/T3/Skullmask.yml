@@ -18,6 +18,7 @@
   - type: ContainerContainer
     containers:
       toggleable-clothing: !type:ContainerSlot {}
+      gas_filter: !type:ContainerSlot {} # re-declare the inherited filter slot's container
   - type: ToggleableClothing
     slot: head
     requiredSlot: mask
