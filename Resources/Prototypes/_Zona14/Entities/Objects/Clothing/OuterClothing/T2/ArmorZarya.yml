@@ -168,7 +168,7 @@
 # Serafims - 3
 
 - type: entity
-  parent: Z14STClothingOuterArmorZaryaBase
+  parent: [ Z14ArmorBaseT2PvP, Z14STClothingOuterArmorZaryaBase ]
   id: Z14STClothingOuterArmorRassvetSera
   categories: [ Zona14 ]
   name: Sunrise Jumpsuit (Green)
@@ -312,7 +312,7 @@
 # Mods
 
 - type: entity
-  parent: Z14STClothingOuterArmorZaryaBase
+  parent: [ Z14ArmorBaseT2PvP, Z14STClothingOuterArmorZaryaBase ]
   id: Z14ClothingOuterArmorZaryaStalkerModifedType1
   categories: [ Zona14 ]
   suffix: Z14
@@ -353,7 +353,7 @@
     slots: 4 # Stalker-Changes | Number of artifact slots this armor grants
 
 - type: entity
-  parent: Z14STClothingOuterArmorZaryaBase
+  parent: [ Z14ArmorBaseT2PvP, Z14STClothingOuterArmorZaryaBase ]
   id: Z14ClothingOuterArmorZaryaStalkerModifedType2
   categories: [ Zona14 ]
   suffix: Z14
@@ -398,7 +398,7 @@
 # Old groups
 
 - type: entity
-  parent: Z14STClothingOuterArmorZaryaBase
+  parent: [ Z14ArmorBaseT2PvP, Z14STClothingOuterArmorZaryaBase ]
   id: Z14STClothingOuterArmorProjectZarya
   categories: [ Zona14 ]
   name: Sunrise made according to an incomprehensible project
@@ -498,7 +498,7 @@
 #SKINS
 
 - type: entity
-  parent: Z14STClothingOuterArmorZaryaBase
+  parent: [ Z14ArmorBaseT2PvP, Z14STClothingOuterArmorZaryaBase ]
   id: Z14ClothingOuterArmorZaryaSeraRuined
   categories: [ Zona14 ]
   suffix: Z14

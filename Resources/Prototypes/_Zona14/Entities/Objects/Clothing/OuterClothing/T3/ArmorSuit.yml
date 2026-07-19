@@ -55,7 +55,7 @@
       tags:
       - STArtifact
 - type: entity
-  parent: Z14STClothingOuterArmorBase
+  parent: [ Z14ArmorBaseT3PvP, Z14STClothingOuterArmorBase ]
   id: Z14ClothingOuterArmorRenegate
   categories: [ Zona14 ]
   suffix: Z14
@@ -97,7 +97,7 @@
 
 
 - type: entity
-  parent: Z14STClothingOuterArmorBase
+  parent: [ Z14ArmorBaseT3PvP, Z14STClothingOuterArmorBase ]
   id: Z14ClothingOuterArmorJaba
   categories: [ Zona14 ]
   suffix: Z14
@@ -161,7 +161,7 @@
     sprite: _Stalker/Objects/Clothing/hats/hood_merc_bandit.rsi
 
 - type: entity
-  parent: Z14STClothingOuterArmorBase
+  parent: [ Z14ArmorBaseT3PvP, Z14STClothingOuterArmorBase ]
   id: Z14ClothingOuterArmorDeserter
   categories: [ Zona14 ]
   suffix: Z14
@@ -479,7 +479,7 @@
       sprite: _Stalker/Objects/Clothing/hats/hood_monolith.rsi
 
 - type: entity
-  parent: Z14STClothingOuterArmorBase
+  parent: [ Z14ArmorBaseT3PvP, Z14STClothingOuterArmorBase ]
   id: Z14ClothingOuterArmorMonolithOld
   categories: [ Zona14 ]
   suffix: Z14
@@ -545,7 +545,7 @@
         Radiation: 18.01
 
 - type: entity
-  parent: Z14STClothingOuterArmorBase
+  parent: [ Z14ArmorBaseT3PvP, Z14STClothingOuterArmorBase ]
   id: Z14ClothingOuterArmorPilgrim
   categories: [ Zona14 ]
   name: Inquisitor Armor

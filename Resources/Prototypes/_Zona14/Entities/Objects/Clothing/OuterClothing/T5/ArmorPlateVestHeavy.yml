@@ -78,7 +78,7 @@
 
 # Jab
 - type: entity
-  parent: Z14STClothingOuterArmorHeavyPlateVestBase
+  parent: [ Z14ArmorBaseT4PvP, Z14STClothingOuterArmorHeavyPlateVestBase ]
   id: Z14ClothingOuterArmorHeavyJaba
   categories: [ Zona14 ]
   suffix: Z14
@@ -116,7 +116,7 @@
         Compression: 0.90
         Psy: 0.90
 - type: entity
-  parent: Z14STClothingOuterArmorHeavyPlateVestBase
+  parent: [ Z14ArmorBaseT4PvP, Z14STClothingOuterArmorHeavyPlateVestBase ]
   id: Z14ClothingOuterArmorHeavyUNTAR
   categories: [ Zona14 ]
   suffix: Z14
@@ -133,7 +133,7 @@
 # Dolg
 
 - type: entity
-  parent: Z14STClothingOuterArmorHeavyPlateVestBase
+  parent: [ Z14ArmorBaseT4PvP, Z14STClothingOuterArmorHeavyPlateVestBase ]
   id: Z14ClothingOuterArmorHeavyDebt
   categories: [ Zona14 ]
   suffix: Z14

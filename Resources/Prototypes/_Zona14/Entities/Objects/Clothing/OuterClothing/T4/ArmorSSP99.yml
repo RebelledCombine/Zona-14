@@ -80,7 +80,7 @@
 # Zavet
 
 - type: entity
-  parent: Z14STClothingOuterArmorSSP99Base
+  parent: [ Z14ArmorBaseT3PvP, Z14STClothingOuterArmorSSP99Base ]
   id: Z14ClothingOuterArmorSSP99Zavet
   categories: [ Zona14 ]
   suffix: Z14
@@ -182,7 +182,7 @@
 # Project
 
 - type: entity
-  parent: Z14STClothingOuterArmorSSP99Base
+  parent: [ Z14ArmorBaseT3PvP, Z14STClothingOuterArmorSSP99Base ]
   id: Z14STClothingOuterArmorSSP99Project
   categories: [ Zona14 ]
   name: '"NJ-1 SSP" suit'
