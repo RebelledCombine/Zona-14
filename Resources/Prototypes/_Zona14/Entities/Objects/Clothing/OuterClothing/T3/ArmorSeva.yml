@@ -56,7 +56,7 @@
 # Stalker
 
 - type: entity
-  parent: [ Z14ArmorBaseT3PvP, Z14STClothingOuterArmorSevaBase ]
+  parent: [ Z14ArmorBaseT3PvE, Z14STClothingOuterArmorSevaBase ]
   id: Z14ClothingOuterArmorSevaStalker
   categories: [ Zona14 ]
   suffix: Z14
@@ -69,11 +69,13 @@
     sprite: _Stalker/Objects/Clothing/outerClothing/seva_stalker.rsi
   - type: Clothing
     sprite: _Stalker/Objects/Clothing/outerClothing/seva_stalker.rsi
+  - type: Armor
+    armorClass: 0
 
 # Sci
 
 - type: entity
-  parent: [ Z14ArmorBaseT3PvP, Z14STClothingOuterArmorSevaBase ]
+  parent: [ Z14ArmorBaseT3PvE, Z14STClothingOuterArmorSevaBase ]
   id: Z14ClothingOuterArmorSevaSciRed
   categories: [ Zona14 ]
   suffix: Z14
@@ -86,9 +88,11 @@
       sprite: _Stalker/Objects/Clothing/outerClothing/seva_red.rsi
     - type: Clothing
       sprite: _Stalker/Objects/Clothing/outerClothing/seva_red.rsi
+    - type: Armor
+      armorClass: 0
 
 - type: entity
-  parent: [ Z14ArmorBaseT5PvP, Z14STClothingOuterArmorSevaBase ]
+  parent: [ Z14ArmorBaseT5PvE, Z14STClothingOuterArmorSevaBase ]
   id: Z14ClothingOuterArmorSevaSciWhite
   categories: [ Zona14 ]
   suffix: Z14
@@ -104,6 +108,8 @@
     - type: ToggleableClothing
       clothingPrototype: ClothingHeadHardsuitSevaHelmSci
       slot: head
+    - type: Armor
+      armorClass: 2
 
 - type: entity
   parent: Z14STClothingHeadHardsuitSevaHelmBase
@@ -122,7 +128,7 @@
 # Military
 
 - type: entity
-  parent: [ Z14ArmorBaseT3PvP, Z14STClothingOuterArmorSevaBase ]
+  parent: [ Z14ArmorBaseT3PvE, Z14STClothingOuterArmorSevaBase ]
   id: Z14ClothingOuterArmorSevaMilitary
   categories: [ Zona14 ]
   suffix: Z14
@@ -160,6 +166,8 @@
     interfaces:
       enum.StorageUiKey.Key:
         type: StorageBoundUserInterface
+  - type: Armor
+    armorClass: 0
 
 - type: entity
   parent: Z14STClothingHeadHardsuitSevaHelmBase
@@ -180,7 +188,7 @@
 # monolith
 
 - type: entity
-  parent: [ Z14ArmorBaseT3PvP, Z14STClothingOuterArmorSevaBase ]
+  parent: [ Z14ArmorBaseT3PvE, Z14STClothingOuterArmorSevaBase ]
   id: Z14ClothingOuterArmorSevaMonolith
   categories: [ Zona14 ]
   suffix: Z14
@@ -200,6 +208,8 @@
     damage:
       types:
         Radiation: 18.01
+  - type: Armor
+    armorClass: 0
 
 - type: entity
   parent: Z14STClothingHeadHardsuitSevaHelmBase
@@ -219,7 +229,7 @@
 # Clear sky
 
 - type: entity
-  parent: [ Z14ArmorBaseT3PvP, Z14STClothingOuterArmorSevaBase ]
+  parent: [ Z14ArmorBaseT3PvE, Z14STClothingOuterArmorSevaBase ]
   id: Z14ClothingOuterArmorSevaCN
   categories: [ Zona14 ]
   suffix: Z14
@@ -232,11 +242,13 @@
     sprite: _Stalker/Objects/Clothing/outerClothing/seva_cn.rsi
   - type: Clothing
     sprite: _Stalker/Objects/Clothing/outerClothing/seva_cn.rsi
+  - type: Armor
+    armorClass: 0
 
 # Merc
 
 - type: entity
-  parent: [ Z14ArmorBaseT3PvP, Z14STClothingOuterArmorSevaBase ]
+  parent: [ Z14ArmorBaseT3PvE, Z14STClothingOuterArmorSevaBase ]
   id: Z14ClothingOuterArmorSevaMerc
   categories: [ Zona14 ]
   suffix: Z14
@@ -256,6 +268,8 @@
     interfaces:
       enum.StorageUiKey.Key:
         type: StorageBoundUserInterface
+  - type: Armor
+    armorClass: 0
 
 - type: entity
   parent: Z14STClothingHeadHardsuitSevaHelmBase
@@ -275,7 +289,7 @@
 # Poisk
 
 - type: entity
-  parent: [ Z14ArmorBaseT3PvP, Z14STClothingOuterArmorSevaBase ]
+  parent: [ Z14ArmorBaseT3PvE, Z14STClothingOuterArmorSevaBase ]
   id: Z14ClothingOuterArmorSevaPoisk
   categories: [ Zona14 ]
   suffix: Z14
@@ -285,6 +299,7 @@
   - type: STWeight
     self: 5
   - type: Armor
+    armorClass: 0
     modifiers:
       flatReductions:
         Blunt: 2
@@ -342,7 +357,7 @@
 # Neutral
 
 - type: entity
-  parent: [ Z14ArmorBaseT3PvP, Z14STClothingOuterArmorSevaBase ]
+  parent: [ Z14ArmorBaseT3PvE, Z14STClothingOuterArmorSevaBase ]
   id: Z14STClothingOuterArmorSevaNeutral
   categories: [ Zona14 ]
   suffix: Z14
@@ -352,6 +367,7 @@
     - type: STWeight
       self: 5
     - type: Armor
+      armorClass: 0
       modifiers:
         flatReductions:
           Blunt: 2
@@ -385,7 +401,7 @@
 # Covenant
 
 - type: entity
-  parent: [ Z14ArmorBaseT3PvP, Z14STClothingOuterArmorSevaBase ]
+  parent: [ Z14ArmorBaseT3PvE, Z14STClothingOuterArmorSevaBase ]
   id: Z14ClothingOuterArmorSevaCovenant
   categories: [ Zona14 ]
   suffix: Z14
@@ -400,6 +416,8 @@
       sprite: _Stalker/Objects/Clothing/outerClothing/Seva/covenant.rsi
     - type: ToggleableClothing
       clothingPrototype: ClothingHeadHardsuitSevaHelmCovenant
+    - type: Armor
+      armorClass: 0
 
 - type: entity
   parent: Z14STClothingHeadHardsuitSevaHelmBase
@@ -419,7 +437,7 @@
 # Seraphim
 
 - type: entity
-  parent: [ Z14ArmorBaseT3PvP, Z14STClothingOuterArmorSevaBase ]
+  parent: [ Z14ArmorBaseT3PvE, Z14STClothingOuterArmorSevaBase ]
   id: Z14ClothingOuterArmorSevasera
   categories: [ Zona14 ]
   suffix: Z14
@@ -427,6 +445,7 @@
   description: A closed-cycle suit developed by the Kiev Research Institute for work in the conditions of the Zone, with built-in body armor and enhanced protection in all respects. Finished in green.
   components:
     - type: Armor
+      armorClass: 0
       modifiers:
         flatReductions:
           Blunt: 2
@@ -483,7 +502,7 @@
 # Project
 
 - type: entity
-  parent: [ Z14ArmorBaseT3PvP, Z14STClothingOuterArmorSevaBase ]
+  parent: [ Z14ArmorBaseT3PvE, Z14STClothingOuterArmorSevaBase ]
   id: Z14ClothingOuterArmorSevaProjectGROM9
   categories: [ Zona14 ]
   name: GROM-9 Seva suit
@@ -493,6 +512,7 @@
   - type: STWeight
     self: 5
   - type: Armor
+    armorClass: 0
     modifiers:
       flatReductions:
         Blunt: 2
@@ -544,7 +564,7 @@
 # Dolg
 
 - type: entity
-  parent: [ Z14ArmorBaseT3PvP, Z14STClothingOuterArmorSevaBase ]
+  parent: [ Z14ArmorBaseT3PvE, Z14STClothingOuterArmorSevaBase ]
   id: Z14ClothingOuterArmorSevaDolgRed
   categories: [ Zona14 ]
   suffix: Z14
@@ -560,6 +580,9 @@
     - type: ToggleableClothing
       clothingPrototype: ClothingHeadHardsuitSevaHelmDolgRed
       slot: head
+    - type: Armor
+      armorClass: 0
+
 - type: entity
   parent: Z14STClothingHeadHardsuitSevaHelmBase
   id: Z14ClothingHeadHardsuitSevaHelmDolgRed
@@ -578,7 +601,7 @@
 # Freedom
 
 - type: entity
-  parent: [ Z14ArmorBaseT3PvP, Z14STClothingOuterArmorSevaBase ]
+  parent: [ Z14ArmorBaseT3PvE, Z14STClothingOuterArmorSevaBase ]
   id: Z14ClothingOuterArmorSevaFreedom
   categories: [ Zona14 ]
   suffix: Z14
@@ -594,6 +617,8 @@
     - type: ToggleableClothing
       clothingPrototype: ClothingHeadHardsuitSevaHelmFreedom
       slot: head
+    - type: Armor
+      armorClass: 0
 
 - type: entity
   parent: Z14STClothingHeadHardsuitSevaHelmBase
@@ -614,7 +639,7 @@
   # Renegaty
 
 - type: entity
-  parent: [ Z14ArmorBaseT3PvP, Z14STClothingOuterArmorSevaBase ]
+  parent: [ Z14ArmorBaseT3PvE, Z14STClothingOuterArmorSevaBase ]
   id: Z14ClothingOuterArmorSevarenegat
   categories: [ Zona14 ]
   suffix: Z14
@@ -624,6 +649,7 @@
     - type: STWeight
       self: 5
     - type: Armor
+      armorClass: 0
       modifiers:
         flatReductions:
           Blunt: 2
@@ -675,7 +701,7 @@
     - type: IngestionBlocker
 
 - type: entity
-  parent: [ Z14ArmorBaseT3PvP, Z14STClothingOuterArmorSevaBase ]
+  parent: [ Z14ArmorBaseT3PvE, Z14STClothingOuterArmorSevaBase ]
   id: Z14ClothingOuterArmorSevaVano
   categories: [ Zona14 ]
   suffix: Z14
@@ -691,6 +717,9 @@
     - type: ToggleableClothing
       clothingPrototype: ClothingHeadHardsuitSevaVano
       slot: head
+    - type: Armor
+      armorClass: 0
+
 - type: entity
   parent: Z14STClothingHeadHardsuitSevaHelmBase
   id: Z14ClothingHeadHardsuitSevaVano

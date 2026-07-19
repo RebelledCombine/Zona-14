@@ -100,7 +100,7 @@
 # Dolg - 1
 
 - type: entity
-  parent: [ Z14ArmorBaseT2PvP, Z14STClothingOuterArmorRCBZ ]
+  parent: [ Z14ArmorBaseT2PvE, Z14STClothingOuterArmorRCBZ ]
   id: Z14ClothingOuterArmorRCBZDolg
   categories: [ Zona14 ]
   suffix: Z14
@@ -115,6 +115,8 @@
     sprite: _Stalker/Objects/Clothing/outerClothing/rcbz-dolg.rsi
   - type: ToggleableClothing
     clothingPrototype: ClothingHelmRCBZDolg
+  - type: Armor
+    armorClass: 0
 
 - type: entity
   parent: Z14ClothingHelmRCBZ
@@ -132,7 +134,7 @@
 # Freedom - 2 +
 
 - type: entity
-  parent: [ Z14ArmorBaseT2PvP, Z14STClothingOuterArmorRCBZ ]
+  parent: [ Z14ArmorBaseT2PvE, Z14STClothingOuterArmorRCBZ ]
   id: Z14ClothingOuterArmorRCBZFreedom
   categories: [ Zona14 ]
   suffix: Z14
@@ -147,6 +149,8 @@
     sprite: _Stalker/Objects/Clothing/outerClothing/rcbz-freedom.rsi
   - type: ToggleableClothing
     clothingPrototype: ClothingHelmRCBZFreedom
+  - type: Armor
+    armorClass: 0
 
 - type: entity
   parent: Z14ClothingHelmRCBZ
@@ -213,7 +217,7 @@
 # Serafims - 5
 
 - type: entity
-  parent: [ Z14ArmorBaseT2PvP, Z14STClothingOuterArmorRCBZ ]
+  parent: [ Z14ArmorBaseT2PvE, Z14STClothingOuterArmorRCBZ ]
   id: Z14ClothingOuterArmorRCBZSera
   categories: [ Zona14 ]
   suffix: Z14
@@ -228,6 +232,8 @@
     sprite: _Stalker/Objects/Clothing/outerClothing/RCBZ-Serafim.rsi
   - type: ToggleableClothing
     clothingPrototype: ClothingHelmRCBZSera
+  - type: Armor
+    armorClass: 0
 
 - type: entity
   parent: Z14ClothingHelmRCBZ
@@ -277,7 +283,7 @@
 # Journalists - 8 +
 
 - type: entity
-  parent: [ Z14ArmorBaseT2PvP, Z14STClothingOuterArmorRCBZ ]
+  parent: [ Z14ArmorBaseT2PvE, Z14STClothingOuterArmorRCBZ ]
   id: Z14ClothingOuterArmorRCBZJournalists
   categories: [ Zona14 ]
   suffix: Z14
@@ -292,6 +298,8 @@
     sprite: _Stalker/Objects/Clothing/outerClothing/rhbz-journalists.rsi
   - type: ToggleableClothing
     clothingPrototype: ClothingHelmRCBZJournalists
+  - type: Armor
+    armorClass: 0
 
 - type: entity
   parent: Z14ClothingHelmRCBZ
