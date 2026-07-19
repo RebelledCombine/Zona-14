@@ -48,6 +48,11 @@
     slots:
     - Hair
     - Snout
+  - type: Armor
+    modifiers:
+      coefficients:
+        Heat: 0.9
+        Radiation: 0.25
 # Stalker
 
 - type: entity
@@ -328,6 +333,11 @@
     sprite: _Stalker/Objects/Clothing/Head/Seva/poisk.rsi
   - type: IdentityBlocker
   - type: IngestionBlocker
+  - type: Armor
+    modifiers:
+      coefficients:
+        Heat: 0.9
+        Radiation: 0.25
 
 # Neutral
 

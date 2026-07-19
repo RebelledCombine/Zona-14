@@ -43,8 +43,14 @@
   - type: PressureProtection
     highPressureMultiplier: 0.1
     lowPressureMultiplier: 1000
+  - type: Armor
+    modifiers:
+      coefficients:
+        Heat: 0.9
+        Radiation: 0.25
 
 # Stalker
+
 - type: entity
   parent: [ Z14ArmorBaseT3PvP, Z14STClothingOuterArmorSSP99Base ]
   id: Z14ClothingOuterArmorSSP99

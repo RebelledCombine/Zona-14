@@ -49,3 +49,9 @@
     slots:
     - Hair
     - Snout
+  - type: Armor
+    modifiers:
+      coefficients:
+        Heat: 0.9
+        Radiation: 0.25
+

@@ -47,6 +47,11 @@
   - type: HideLayerClothing
     slots:
     - Hair
+  - type: Armor
+    modifiers:
+      coefficients:
+        Heat: 0.9
+        Radiation: 0.25
 # Ruby
 
 - type: entity

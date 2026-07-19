@@ -153,3 +153,9 @@
   - type: IngestionBlocker
   - type: PointLight
     color: white
+  - type: Armor
+    modifiers:
+      coefficients:
+        Heat: 0.9
+        Radiation: 0.25
+

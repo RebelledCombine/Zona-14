@@ -768,6 +768,11 @@
     slots:
     - Hair
     - Snout
+  - type: Armor
+    modifiers:
+      coefficients:
+        Heat: 0.9
+        Radiation: 0.25
 
 - type: entity
   parent: Z14STClothingOuterArmorSeraphimStrash
