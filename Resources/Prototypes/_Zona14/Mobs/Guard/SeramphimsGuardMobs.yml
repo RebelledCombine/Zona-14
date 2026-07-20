@@ -24,7 +24,7 @@
     availableModes:
     - FullAuto
   - type: BatteryAmmoProvider
-    proto: Bullet919PST
+    proto: Z14Bullet919PST
     fireCost: 5
   - type: Sprite
     sprite: /Textures/_Stalker/Mobs/Guards/Seraphims/Lite.rsi
@@ -55,7 +55,7 @@
     availableModes:
     - FullAuto
   - type: BatteryAmmoProvider
-    proto: Bullet919PST
+    proto: Z14Bullet919PST
     fireCost: 5
   - type: Sprite
     sprite: /Textures/_Stalker/Mobs/Guards/Seraphims/Medium.rsi
@@ -86,7 +86,7 @@
     availableModes:
     - FullAuto
   - type: BatteryAmmoProvider
-    proto: Bullet919PST
+    proto: Z14Bullet919PST
     fireCost: 5
   - type: Sprite
     sprite: /Textures/_Stalker/Mobs/Guards/Seraphims/Heavy.rsi
@@ -109,7 +109,7 @@
   - type: PredictedBatterySelfRecharger
     autoRechargeRate: 2
   - type: BatteryAmmoProvider
-    proto: Bullet545PC
+    proto: Z14Bullet545PC
     fireCost: 5
   - type: Gun
     soundGunshot:
@@ -158,7 +158,7 @@
   - type: PredictedBatterySelfRecharger
     autoRechargeRate: 2
   - type: BatteryAmmoProvider
-    proto: Bullet545PC
+    proto: Z14Bullet545PC
     fireCost: 5
   - type: Gun
     soundGunshot:
@@ -207,7 +207,7 @@
   - type: PredictedBatterySelfRecharger
     autoRechargeRate: 2
   - type: BatteryAmmoProvider
-    proto: Bullet545PC
+    proto: Z14Bullet545PC
     fireCost: 5
   - type: Gun
     soundGunshot:
