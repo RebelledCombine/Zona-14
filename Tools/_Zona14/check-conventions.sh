@@ -60,7 +60,9 @@ warn() {
 # Check 1: Namespace-folder alignment for files under _Zona14/
 # ============================================================
 check_namespace_alignment() {
-    while IFS=$'\t' read -r status path; do
+    while IFS=$'\t' read -r status path newpath; do
+        # Renames arrive as "R<score>\told\tnew"; act on the new path.
+        [[ "${status:-}" == R* && -n "${newpath:-}" ]] && path="$newpath"
         [[ -z "${status:-}" ]] && continue
         [[ "$status" == A || "$status" == M ]] || continue
         [[ "$path" == *.cs ]] || continue
@@ -95,7 +97,9 @@ check_namespace_alignment() {
 check_upstream_edit_marker() {
     is_upstream_port && return 0
 
-    while IFS=$'\t' read -r status path; do
+    while IFS=$'\t' read -r status path newpath; do
+        # Renames arrive as "R<score>\told\tnew"; act on the new path.
+        [[ "${status:-}" == R* && -n "${newpath:-}" ]] && path="$newpath"
         [[ -z "${status:-}" ]] && continue
         [[ "$status" == A || "$status" == M ]] || continue
         [[ "$path" == *"/_Zona14/"* ]] && continue
@@ -136,7 +140,9 @@ check_upstream_edit_marker() {
 # Check 3: Misfiled namespace
 # ============================================================
 check_misfiled_namespace() {
-    while IFS=$'\t' read -r status path; do
+    while IFS=$'\t' read -r status path newpath; do
+        # Renames arrive as "R<score>\told\tnew"; act on the new path.
+        [[ "${status:-}" == R* && -n "${newpath:-}" ]] && path="$newpath"
         [[ -z "${status:-}" ]] && continue
         [[ "$status" == A || "$status" == M ]] || continue
         [[ "$path" == *.cs ]] || continue
@@ -155,7 +161,9 @@ check_misfiled_namespace() {
 check_greenfield() {
     is_upstream_port && return 0
 
-    while IFS=$'\t' read -r status path; do
+    while IFS=$'\t' read -r status path newpath; do
+        # Renames arrive as "R<score>\told\tnew"; act on the new path.
+        [[ "${status:-}" == R* && -n "${newpath:-}" ]] && path="$newpath"
         [[ -z "${status:-}" ]] && continue
         [[ "$status" == A ]] || continue
         [[ "$path" == *"/_Zona14/"* ]] && continue
@@ -178,7 +186,9 @@ check_greenfield() {
 # Check 5: Key-file delete guard
 # ============================================================
 check_key_file_delete() {
-    while IFS=$'\t' read -r status path; do
+    while IFS=$'\t' read -r status path newpath; do
+        # Renames arrive as "R<score>\told\tnew"; act on the new path.
+        [[ "${status:-}" == R* && -n "${newpath:-}" ]] && path="$newpath"
         [[ "$status" == D ]] || continue
         case "$path" in
             README.md|README.ru.md|LICENSE.TXT|CONTRIBUTING.md|.github/PULL_REQUEST_TEMPLATE.md)
@@ -194,7 +204,9 @@ check_key_file_delete() {
 ALLOWED_LICENSES_RE='^(CC-BY-SA-3\.0|CC-BY-SA-4\.0|CC-BY-4\.0|CC0-1\.0|OFL-1\.1|Apache-2\.0|MIT)$'
 
 check_meta_json_license() {
-    while IFS=$'\t' read -r status path; do
+    while IFS=$'\t' read -r status path newpath; do
+        # Renames arrive as "R<score>\told\tnew"; act on the new path.
+        [[ "${status:-}" == R* && -n "${newpath:-}" ]] && path="$newpath"
         [[ -z "${status:-}" ]] && continue
         [[ "$status" == A || "$status" == M ]] || continue
         [[ "$path" == Resources/* ]] || continue
@@ -256,7 +268,9 @@ check_no_global_attempt_subscribers() {
 # ============================================================
 check_yaml_data_prototypes() {
     local yaml_files=()
-    while IFS=$'\t' read -r status path; do
+    while IFS=$'\t' read -r status path newpath; do
+        # Renames arrive as "R<score>\told\tnew"; act on the new path.
+        [[ "${status:-}" == R* && -n "${newpath:-}" ]] && path="$newpath"
         [[ -z "${status:-}" ]] && continue
         [[ "$status" == A || "$status" == M || "$status" == R* ]] || continue
         [[ "$path" == *.yml || "$path" == *.yaml ]] || continue
