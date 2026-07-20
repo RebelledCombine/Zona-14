@@ -10,7 +10,7 @@
       magState: 556ammo
     - type: BallisticAmmoProvider
       capacity: 30
-      proto: Cartridge556FMJ
+      proto: Z14Cartridge556FMJ
       whitelist:
         tags:
           - STCartridge556
@@ -30,7 +30,7 @@
   description: For assault rifles, 30 rounds per box. Penetrates class 3 armor.
   components:
     - type: BallisticAmmoProvider
-      proto: Cartridge556M855
+      proto: Z14Cartridge556M855
     - type: Sprite
       layers:
         - state: 556
@@ -48,7 +48,7 @@
   description: For assault rifles, 30 rounds per box. Useless against armor.
   components:
     - type: BallisticAmmoProvider
-      proto: Cartridge556Warmag
+      proto: Z14Cartridge556Warmag
     - type: Sprite
       layers:
         - state: 556
@@ -66,7 +66,7 @@
   description: For assault rifles, 30 rounds per box. Penetrates class 4 armor.
   components:
     - type: BallisticAmmoProvider
-      proto: Cartridge556M856
+      proto: Z14Cartridge556M856
     - type: Sprite
       layers:
         - state: 556
@@ -84,7 +84,7 @@
   description: For assault rifles, 30 rounds per box. Penetrates class 5 armor.
   components:
     - type: BallisticAmmoProvider
-      proto: Cartridge556M995
+      proto: Z14Cartridge556M995
     - type: Sprite
       layers:
         - state: 556
@@ -102,7 +102,7 @@
   description: For assault rifles, 30 rounds per box. Penetrates class 6 armor.
   components:
     - type: BallisticAmmoProvider
-      proto: Cartridge556SSAAP
+      proto: Z14Cartridge556SSAAP
     - type: Sprite
       layers:
         - state: 556
@@ -121,7 +121,7 @@
   components:
     - type: BallisticAmmoProvider
       capacity: 300
-      proto: Cartridge556FMJ
+      proto: Z14Cartridge556FMJ
       whitelist:
         tags:
           - STCartridge556
@@ -141,7 +141,7 @@
   description: For assault rifles, 300 rounds per crate. Penetrates class 3 armor.
   components:
     - type: BallisticAmmoProvider
-      proto: Cartridge556M855
+      proto: Z14Cartridge556M855
     - type: Sprite
       layers:
         - state: cink
@@ -158,7 +158,7 @@
   description: For assault rifles, 300 rounds per crate. Useless against armor.
   components:
     - type: BallisticAmmoProvider
-      proto: Cartridge556Warmag
+      proto: Z14Cartridge556Warmag
     - type: Sprite
       layers:
         - state: cink
@@ -175,7 +175,7 @@
   description: For assault rifles, 300 rounds per crate. Penetrates class 4 armor.
   components:
     - type: BallisticAmmoProvider
-      proto: Cartridge556M856
+      proto: Z14Cartridge556M856
     - type: Sprite
       layers:
         - state: cink
@@ -192,7 +192,7 @@
   description: For assault rifles, 300 rounds per crate. Penetrates class 5 armor.
   components:
     - type: BallisticAmmoProvider
-      proto: Cartridge556M995
+      proto: Z14Cartridge556M995
     - type: Sprite
       layers:
         - state: cink
@@ -209,7 +209,7 @@
   description: For assault rifles, 300 rounds per crate. Penetrates class 6 armor.
   components:
     - type: BallisticAmmoProvider
-      proto: Cartridge556SSAAP
+      proto: Z14Cartridge556SSAAP
     - type: Sprite
       layers:
         - state: cink

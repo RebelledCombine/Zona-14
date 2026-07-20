@@ -47,7 +47,7 @@
           - Magazine545
       gun_chamber:
         name: Chamber
-        startingItem: STCartridge545FMJ
+        startingItem: Z14STCartridge545FMJ
         priority: 1
         whitelist:
           tags:

@@ -10,7 +10,7 @@
     magState: 76254ammo
   - type: BallisticAmmoProvider
     capacity: 10
-    proto: STCartridge754FMJ
+    proto: Z14STCartridge754FMJ
     whitelist:
       tags:
         - STCartridge754
@@ -33,7 +33,7 @@
       magState: 76254ammo
     - type: BallisticAmmoProvider
       capacity: 10
-      proto: STCartridge754PC
+      proto: Z14STCartridge754PC
       whitelist:
         tags:
           - STCartridge754
@@ -54,7 +54,7 @@
   description: For Mosin rifle, 10 rounds per box. Useless against armor.
   components:
     - type: BallisticAmmoProvider
-      proto: STCartridge754HPBT
+      proto: Z14STCartridge754HPBT
     - type: Sprite
       layers:
         - state: 76254
@@ -72,7 +72,7 @@
   description: For Mosin rifle, 10 rounds per box. Penetrates class 5 armor.
   components:
     - type: BallisticAmmoProvider
-      proto: STCartridge754BT
+      proto: Z14STCartridge754BT
     - type: Sprite
       layers:
         - state: 76254
@@ -90,7 +90,7 @@
   description: For Mosin rifle, 10 rounds per box. Penetrates class 6 armor.
   components:
     - type: BallisticAmmoProvider
-      proto: STCartridge754SNB
+      proto: Z14STCartridge754SNB
     - type: Sprite
       layers:
         - state: 76254
@@ -109,7 +109,7 @@
   components:
   - type: BallisticAmmoProvider
     capacity: 100
-    proto: STCartridge754FMJ
+    proto: Z14STCartridge754FMJ
     whitelist:
       tags:
         - STCartridge754
@@ -130,7 +130,7 @@
   components:
     - type: BallisticAmmoProvider
       capacity: 100
-      proto: STCartridge754PC
+      proto: Z14STCartridge754PC
       whitelist:
         tags:
           - STCartridge754
@@ -150,7 +150,7 @@
   description: For Mosin rifle, 100 rounds per crate. Useless against armor.
   components:
     - type: BallisticAmmoProvider
-      proto: STCartridge754HPBT
+      proto: Z14STCartridge754HPBT
     - type: Sprite
       layers:
         - state: cink
@@ -167,7 +167,7 @@
   description: For Mosin rifle, 100 rounds per crate. Penetrates class 5 armor.
   components:
     - type: BallisticAmmoProvider
-      proto: STCartridge754BT
+      proto: Z14STCartridge754BT
     - type: Sprite
       layers:
         - state: cink
@@ -184,7 +184,7 @@
   description: For Mosin rifle, 100 rounds per crate. Penetrates class 6 armor.
   components:
     - type: BallisticAmmoProvider
-      proto: STCartridge754SNB
+      proto: Z14STCartridge754SNB
     - type: Sprite
       layers:
         - state: cink

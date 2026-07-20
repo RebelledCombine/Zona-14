@@ -37,7 +37,7 @@
         8mmBuckshotBoxCink: 35
         Z14545BPBoxCink: 100
         Z14739PCBoxCink: 120
-        939SP6BoxCink: 150
+        Z14939SP6BoxCink: 150
 
     - name: shop-category-armor
       priority: 4

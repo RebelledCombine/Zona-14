@@ -52,7 +52,7 @@
           - STWeaponModuleSMGGrip
       gun_chamber:
         name: Chamber
-        startingItem: STCartridge918PGJ
+        startingItem: Z14STCartridge918PGJ
         priority: 1
         whitelist:
           tags:

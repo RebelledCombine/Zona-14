@@ -25,7 +25,7 @@
   categories: [ Zona14 ]
   suffix: Z14
   name: Cartridge (12.7x55) TP
-  parent: STCartridge1255PS12A
+  parent: Z14STCartridge1255PS12A
   components:
   - type: CartridgeAmmo
     proto: Z14Bullet1255TP
@@ -36,7 +36,7 @@
   categories: [ Zona14 ]
   suffix: Z14
   name: Cartridge (12.7x55) BP
-  parent: STCartridge1255PS12A
+  parent: Z14STCartridge1255PS12A
   components:
   - type: CartridgeAmmo
     proto: Z14Bullet1255BP

@@ -133,8 +133,8 @@
 - type: craftRecipe
   id: Z14newrecipe545FMJBoxCink
   resultProtos:
-    - 545FMJBoxCink
-    - 545FMJBoxCink
+    - Z14545FMJBoxCink
+    - Z14545FMJBoxCink
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
@@ -149,9 +149,9 @@
 - type: craftRecipe
   id: Z14newrecipe545PCBoxCink
   resultProtos:
-    - 545PCBoxCink
-    - 545PCBoxCink
-    - 545PCBoxCink
+    - Z14545PCBoxCink
+    - Z14545PCBoxCink
+    - Z14545PCBoxCink
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
@@ -166,8 +166,8 @@
 - type: craftRecipe
   id: Z14newrecipe545HPBoxCink
   resultProtos:
-    - 545HPBoxCink
-    - 545HPBoxCink
+    - Z14545HPBoxCink
+    - Z14545HPBoxCink
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
@@ -182,10 +182,10 @@
 - type: craftRecipe
   id: Z14newrecipe545BPBoxCink
   resultProtos:
-    - 545BPBoxCink
-    - 545BPBoxCink
-    - 545BPBoxCink
-    - 545BPBoxCink
+    - Z14545BPBoxCink
+    - Z14545BPBoxCink
+    - Z14545BPBoxCink
+    - Z14545BPBoxCink
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
@@ -200,11 +200,11 @@
 - type: craftRecipe
   id: Z14newrecipe545BSBoxCink
   resultProtos:
-    - 545BSBoxCink
-    - 545BSBoxCink
-    - 545BSBoxCink
-    - 545BSBoxCink
-    - 545BSBoxCink
+    - Z14545BSBoxCink
+    - Z14545BSBoxCink
+    - Z14545BSBoxCink
+    - Z14545BSBoxCink
+    - Z14545BSBoxCink
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
@@ -219,10 +219,10 @@
 - type: craftRecipe
   id: Z14newrecipe545NCBoxCink
   resultProtos:
-    - 545NCBoxCink
-    - 545NCBoxCink
-    - 545NCBoxCink
-    - 545NCBoxCink
+    - Z14545NCBoxCink
+    - Z14545NCBoxCink
+    - Z14545NCBoxCink
+    - Z14545NCBoxCink
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
@@ -239,7 +239,7 @@
 - type: craftRecipe
   id: Z14newrecipe918PGJBoxCink
   resultProtos:
-    - 918PGJBoxCink
+    - Z14918PGJBoxCink
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
@@ -254,8 +254,8 @@
 - type: craftRecipe
   id: Z14newrecipe918PSTBoxCink
   resultProtos:
-    - 918PSTBoxCink
-    - 918PSTBoxCink
+    - Z14918PSTBoxCink
+    - Z14918PSTBoxCink
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
@@ -270,8 +270,8 @@
 - type: craftRecipe
   id: Z14newrecipe918SP7BoxCink
   resultProtos:
-    - 918SP7BoxCink
-    - 918SP7BoxCink
+    - Z14918SP7BoxCink
+    - Z14918SP7BoxCink
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
@@ -286,9 +286,9 @@
 - type: craftRecipe
   id: Z14newrecipe918PBMBoxCink
   resultProtos:
-    - 918PBMBoxCink
-    - 918PBMBoxCink
-    - 918PBMBoxCink
+    - Z14918PBMBoxCink
+    - Z14918PBMBoxCink
+    - Z14918PBMBoxCink
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
@@ -305,7 +305,7 @@
 - type: craftRecipe
   id: Z14newrecipe919PSOGJBoxCink
   resultProtos:
-    - 919PSOGJBoxCink
+    - Z14919PSOGJBoxCink
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
@@ -320,8 +320,8 @@
 - type: craftRecipe
   id: Z14newrecipe919PSTBoxCink
   resultProtos:
-    - 919PSTBoxCink
-    - 919PSTBoxCink
+    - Z14919PSTBoxCink
+    - Z14919PSTBoxCink
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
@@ -336,8 +336,8 @@
 - type: craftRecipe
   id: Z14newrecipe919RIPBoxCink
   resultProtos:
-    - 919RIPBoxCink
-    - 919RIPBoxCink
+    - Z14919RIPBoxCink
+    - Z14919RIPBoxCink
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
@@ -352,9 +352,9 @@
 - type: craftRecipe
   id: Z14newrecipe919PBMBoxCink
   resultProtos:
-    - 919PBMBoxCink
-    - 919PBMBoxCink
-    - 919PBMBoxCink
+    - Z14919PBMBoxCink
+    - Z14919PBMBoxCink
+    - Z14919PBMBoxCink
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
@@ -371,8 +371,8 @@
 - type: craftRecipe
   id: Z14newrecipe556FMJBoxCink
   resultProtos:
-    - 556FMJBoxCink
-    - 556FMJBoxCink
+    - Z14556FMJBoxCink
+    - Z14556FMJBoxCink
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
@@ -387,9 +387,9 @@
 - type: craftRecipe
   id: Z14newrecipe556M855BoxCink
   resultProtos:
-    - 556M855BoxCink
-    - 556M855BoxCink
-    - 556M855BoxCink
+    - Z14556M855BoxCink
+    - Z14556M855BoxCink
+    - Z14556M855BoxCink
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
@@ -404,8 +404,8 @@
 - type: craftRecipe
   id: Z14newrecipe556WarmagBoxCink
   resultProtos:
-    - 556WarmagBoxCink
-    - 556WarmagBoxCink
+    - Z14556WarmagBoxCink
+    - Z14556WarmagBoxCink
   craftTime: 35
   requiredWorkbench: StalkerWorktable1
   items:
@@ -420,10 +420,10 @@
 - type: craftRecipe
   id: Z14newrecipe556M856BoxCink
   resultProtos:
-    - 556M856BoxCink
-    - 556M856BoxCink
-    - 556M856BoxCink
-    - 556M856BoxCink
+    - Z14556M856BoxCink
+    - Z14556M856BoxCink
+    - Z14556M856BoxCink
+    - Z14556M856BoxCink
   craftTime: 35
   requiredWorkbench: StalkerWorktable1
   items:
@@ -438,10 +438,10 @@
 - type: craftRecipe
   id: Z14newrecipe545M995BoxCink
   resultProtos:
-    - 545M995BoxCink
-    - 545M995BoxCink
-    - 545M995BoxCink
-    - 545M995BoxCink
+    - Z14545M995BoxCink
+    - Z14545M995BoxCink
+    - Z14545M995BoxCink
+    - Z14545M995BoxCink
   craftTime: 35
   requiredWorkbench: StalkerWorktable1
   items:
@@ -456,10 +456,10 @@
 - type: craftRecipe
   id: Z14newrecipe556SSAAPBoxCink
   resultProtos:
-    - 556SSAAPBoxCink
-    - 556SSAAPBoxCink
-    - 556SSAAPBoxCink
-    - 556SSAAPBoxCink
+    - Z14556SSAAPBoxCink
+    - Z14556SSAAPBoxCink
+    - Z14556SSAAPBoxCink
+    - Z14556SSAAPBoxCink
   craftTime: 35
   requiredWorkbench: StalkerWorktable1
   items:
@@ -476,7 +476,7 @@
 - type: craftRecipe
   id: Z14newrecipe725PBoxCink
   resultProtos:
-    - 725PBoxCink
+    - Z14725PBoxCink
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
@@ -491,8 +491,8 @@
 - type: craftRecipe
   id: Z14newrecipe725PTBoxCink
   resultProtos:
-    - 725PTBoxCink
-    - 725PTBoxCink
+    - Z14725PTBoxCink
+    - Z14725PTBoxCink
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
@@ -507,9 +507,9 @@
 - type: craftRecipe
   id: Z14newrecipe725LRNPCBoxCink
   resultProtos:
-    - 725LRNPCBoxCink
-    - 725LRNPCBoxCink
-    - 725LRNPCBoxCink
+    - Z14725LRNPCBoxCink
+    - Z14725LRNPCBoxCink
+    - Z14725LRNPCBoxCink
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
@@ -524,9 +524,9 @@
 - type: craftRecipe
   id: Z14newrecipe725PSTBoxCink
   resultProtos:
-    - 725PSTBoxCink
-    - 725PSTBoxCink
-    - 725PSTBoxCink
+    - Z14725PSTBoxCink
+    - Z14725PSTBoxCink
+    - Z14725PSTBoxCink
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
@@ -543,9 +543,9 @@
 - type: craftRecipe
   id: Z14newrecipe739FMJBoxCink
   resultProtos:
-    - 739FMJBoxCink
-    - 739FMJBoxCink
-    - 739FMJBoxCink
+    - Z14739FMJBoxCink
+    - Z14739FMJBoxCink
+    - Z14739FMJBoxCink
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
@@ -560,10 +560,10 @@
 - type: craftRecipe
   id: Z14newrecipe739PCBoxCink
   resultProtos:
-    - 739PCBoxCink
-    - 739PCBoxCink
-    - 739PCBoxCink
-    - 739PCBoxCink
+    - Z14739PCBoxCink
+    - Z14739PCBoxCink
+    - Z14739PCBoxCink
+    - Z14739PCBoxCink
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
@@ -578,9 +578,9 @@
 - type: craftRecipe
   id: Z14newrecipe739HPBoxCink
   resultProtos:
-    - 739HPBoxCink
-    - 739HPBoxCink
-    - 739HPBoxCink
+    - Z14739HPBoxCink
+    - Z14739HPBoxCink
+    - Z14739HPBoxCink
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
@@ -595,11 +595,11 @@
 - type: craftRecipe
   id: Z14newrecipe739BPBoxCink
   resultProtos:
-    - 739BPBoxCink
-    - 739BPBoxCink
-    - 739BPBoxCink
-    - 739BPBoxCink
-    - 739BPBoxCink
+    - Z14739BPBoxCink
+    - Z14739BPBoxCink
+    - Z14739BPBoxCink
+    - Z14739BPBoxCink
+    - Z14739BPBoxCink
   craftTime: 39
   requiredWorkbench: StalkerWorktable1
   items:
@@ -616,9 +616,9 @@
 - type: craftRecipe
   id: Z14newrecipe751M80BoxCink
   resultProtos:
-    - 751M80BoxCink
-    - 751M80BoxCink
-    - 751M80BoxCink
+    - Z14751M80BoxCink
+    - Z14751M80BoxCink
+    - Z14751M80BoxCink
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
@@ -633,9 +633,9 @@
 - type: craftRecipe
   id: Z14newrecipe751UNBoxCink
   resultProtos:
-    - 751UNBoxCink
-    - 751UNBoxCink
-    - 751UNBoxCink
+    - Z14751UNBoxCink
+    - Z14751UNBoxCink
+    - Z14751UNBoxCink
   craftTime: 60
   requiredWorkbench: StalkerWorktable1
   items:
@@ -650,10 +650,10 @@
 - type: craftRecipe
   id: Z14newrecipe751M61BoxCink
   resultProtos:
-    - 751M61BoxCink
-    - 751M61BoxCink
-    - 751M61BoxCink
-    - 751M61BoxCink
+    - Z14751M61BoxCink
+    - Z14751M61BoxCink
+    - Z14751M61BoxCink
+    - Z14751M61BoxCink
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
@@ -668,11 +668,11 @@
 - type: craftRecipe
   id: Z14newrecipe751M993BoxCink
   resultProtos:
-    - 751M993BoxCink
-    - 751M993BoxCink
-    - 751M993BoxCink
-    - 751M993BoxCink
-    - 751M993BoxCink
+    - Z14751M993BoxCink
+    - Z14751M993BoxCink
+    - Z14751M993BoxCink
+    - Z14751M993BoxCink
+    - Z14751M993BoxCink
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
@@ -689,7 +689,7 @@
 - type: craftRecipe
   id: Z14newrecipe45ACPLFMJBoxCink
   resultProtos:
-    - 45ACPLFMJBoxCink
+    - Z1445ACPLFMJBoxCink
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
@@ -704,8 +704,8 @@
 - type: craftRecipe
   id: Z14newrecipe45ACPMFMJBoxCink
   resultProtos:
-    - 45ACPMFMJBoxCink
-    - 45ACPMFMJBoxCink
+    - Z1445ACPMFMJBoxCink
+    - Z1445ACPMFMJBoxCink
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
@@ -720,8 +720,8 @@
 - type: craftRecipe
   id: Z14newrecipe45ACPHydroshockBoxCink
   resultProtos:
-    - 45ACPHydroshockBoxCink
-    - 45ACPHydroshockBoxCink
+    - Z1445ACPHydroshockBoxCink
+    - Z1445ACPHydroshockBoxCink
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
@@ -736,8 +736,8 @@
 - type: craftRecipe
   id: Z14newrecipe45ACPRIPBoxCink
   resultProtos:
-    - 45ACPRIPBoxCink
-    - 45ACPRIPBoxCink
+    - Z1445ACPRIPBoxCink
+    - Z1445ACPRIPBoxCink
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
@@ -752,9 +752,9 @@
 - type: craftRecipe
   id: Z14newrecipe45ACPAPBoxCink
   resultProtos:
-    - 45ACPAPBoxCink
-    - 45ACPAPBoxCink
-    - 45ACPAPBoxCink
+    - Z1445ACPAPBoxCink
+    - Z1445ACPAPBoxCink
+    - Z1445ACPAPBoxCink
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
@@ -771,8 +771,8 @@
 - type: craftRecipe
   id: Z14newrecipe939SP5BoxCink
   resultProtos:
-    - 939SP5BoxCink
-    - 939SP5BoxCink
+    - Z14939SP5BoxCink
+    - Z14939SP5BoxCink
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
@@ -787,9 +787,9 @@
 - type: craftRecipe
   id: Z14newrecipe939SP6BoxCink
   resultProtos:
-    - 939SP6BoxCink
-    - 939SP6BoxCink
-    - 939SP6BoxCink
+    - Z14939SP6BoxCink
+    - Z14939SP6BoxCink
+    - Z14939SP6BoxCink
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
@@ -804,10 +804,10 @@
 - type: craftRecipe
   id: Z14newrecipe939BPBoxCink
   resultProtos:
-    - 939BPBoxCink
-    - 939BPBoxCink
-    - 939BPBoxCink
-    - 939BPBoxCink
+    - Z14939BPBoxCink
+    - Z14939BPBoxCink
+    - Z14939BPBoxCink
+    - Z14939BPBoxCink
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
@@ -824,7 +824,7 @@
 - type: craftRecipe
   id: Z14newrecipe1255PS12ACink
   resultProtos:
-    - Ammobox1255PS12ACink
+    - Z14Ammobox1255PS12ACink
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
@@ -839,8 +839,8 @@
 - type: craftRecipe
   id: Z14newrecipe1255TPCink
   resultProtos:
-    - Ammobox1255TPCink
-    - Ammobox1255TPCink
+    - Z14Ammobox1255TPCink
+    - Z14Ammobox1255TPCink
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
@@ -855,10 +855,10 @@
 - type: craftRecipe
   id: Z14newrecipe1255BPCink
   resultProtos:
-    - Ammobox1255BPCink
-    - Ammobox1255BPCink
-    - Ammobox1255BPCink
-    - Ammobox1255BPCink
+    - Z14Ammobox1255BPCink
+    - Z14Ammobox1255BPCink
+    - Z14Ammobox1255BPCink
+    - Z14Ammobox1255BPCink
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
@@ -875,9 +875,9 @@
 - type: craftRecipe
   id: Z14newrecipe754FMJBoxCink
   resultProtos:
-    - 754FMJBoxCink
-    - 754FMJBoxCink
-    - 754FMJBoxCink
+    - Z14754FMJBoxCink
+    - Z14754FMJBoxCink
+    - Z14754FMJBoxCink
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
@@ -892,10 +892,10 @@
 - type: craftRecipe
   id: Z14newrecipe754PCBoxCink
   resultProtos:
-    - 754PCBoxCink
-    - 754PCBoxCink
-    - 754PCBoxCink
-    - 754PCBoxCink
+    - Z14754PCBoxCink
+    - Z14754PCBoxCink
+    - Z14754PCBoxCink
+    - Z14754PCBoxCink
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
@@ -910,8 +910,8 @@
 - type: craftRecipe
   id: Z14newrecipe754HPBoxCink
   resultProtos:
-    - 754HPBoxCink
-    - 754HPBoxCink
+    - Z14754HPBoxCink
+    - Z14754HPBoxCink
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
@@ -926,10 +926,10 @@
 - type: craftRecipe
   id: Z14newrecipe754BTBoxCink
   resultProtos:
-    - 754BTBoxCink
-    - 754BTBoxCink
-    - 754BTBoxCink
-    - 754BTBoxCink
+    - Z14754BTBoxCink
+    - Z14754BTBoxCink
+    - Z14754BTBoxCink
+    - Z14754BTBoxCink
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
@@ -944,10 +944,10 @@
 - type: craftRecipe
   id: Z14newrecipe754SNBBoxCink
   resultProtos:
-    - 754SNBBoxCink
-    - 754SNBBoxCink
-    - 754SNBBoxCink
-    - 754SNBBoxCink
+    - Z14754SNBBoxCink
+    - Z14754SNBBoxCink
+    - Z14754SNBBoxCink
+    - Z14754SNBBoxCink
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:

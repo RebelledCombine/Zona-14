@@ -13,7 +13,7 @@
   - type: MagazineVisuals
     magState: 919ammo
   - type: BallisticAmmoProvider
-    proto: STCartridge921PGJ
+    proto: Z14STCartridge921PGJ
     capacity: 30
     whitelist:
       tags:
@@ -34,7 +34,7 @@
   description: For SR-1 and SR-2M, 30 rounds per box. Cannot penetrate armor, but deals massive damage to unarmored targets.
   components:
   - type: BallisticAmmoProvider
-    proto: STCartridge921PEGJ
+    proto: Z14STCartridge921PEGJ
   - type: Sprite
     layers:
     - state: 921
@@ -52,7 +52,7 @@
   description: For SR-1 and SR-2M, 30 rounds per box. Penetrates class 3 armor.
   components:
   - type: BallisticAmmoProvider
-    proto: STCartridge921BTGJ
+    proto: Z14STCartridge921BTGJ
   - type: Sprite
     layers:
     - state: 921
@@ -70,7 +70,7 @@
   description: For SR-1 and SR-2M, 30 rounds per box. Penetrates class 4 armor.
   components:
   - type: BallisticAmmoProvider
-    proto: STCartridge9217N42
+    proto: Z14STCartridge9217N42
   - type: Sprite
     layers:
     - state: 921
@@ -88,7 +88,7 @@
   description: For SR-1 and SR-2M, 300 rounds per crate. Penetrates class 2 armor.
   components:
   - type: BallisticAmmoProvider
-    proto: STCartridge921PGJ
+    proto: Z14STCartridge921PGJ
     capacity: 300
     whitelist:
       tags:
@@ -109,7 +109,7 @@
   description: Expanding ammunition for SR-1 and SR-2M. Cannot penetrate armor, but deals massive damage to lightly armored or unarmored targets.
   components:
   - type: BallisticAmmoProvider
-    proto: STCartridge921PEGJ
+    proto: Z14STCartridge921PEGJ
   - type: Sprite
     layers:
     - state: cink
@@ -126,7 +126,7 @@
   description: For SR-1 and SR-2M, 300 rounds per crate. Penetrates class 3 armor.
   components:
   - type: BallisticAmmoProvider
-    proto: STCartridge921BTGJ
+    proto: Z14STCartridge921BTGJ
   - type: Sprite
     layers:
     - state: cink
@@ -143,7 +143,7 @@
   description: For SR-1 and SR-2M, 300 rounds per crate. Penetrates class 4 armor.
   components:
   - type: BallisticAmmoProvider
-    proto: STCartridge9217N42
+    proto: Z14STCartridge9217N42
   - type: Sprite
     layers:
     - state: cink

@@ -10,7 +10,7 @@
     magState: 545ammo
   - type: BallisticAmmoProvider
     capacity: 30
-    proto: STCartridge545FMJ
+    proto: Z14STCartridge545FMJ
     whitelist:
       tags:
         - STCartridge545
@@ -30,7 +30,7 @@
   description: For various Kalashnikov rifle models, 30 rounds per box. Enhanced bullet. Penetrates class 3 armor.
   components:
   - type: BallisticAmmoProvider
-    proto: STCartridge545PC
+    proto: Z14STCartridge545PC
   - type: Sprite
     layers:
     - state: 545
@@ -48,7 +48,7 @@
   description: For various Kalashnikov rifle models, 30 rounds per box. Cannot penetrate armor, but deals devastating damage including behind-armor damage.
   components:
   - type: BallisticAmmoProvider
-    proto: STCartridge545HP
+    proto: Z14STCartridge545HP
   - type: Sprite
     layers:
     - state: 545
@@ -66,7 +66,7 @@
   description: For various Kalashnikov rifle models, 30 rounds per box. Penetrates class 4 armor.
   components:
   - type: BallisticAmmoProvider
-    proto: STCartridge545BP
+    proto: Z14STCartridge545BP
   - type: Sprite
     layers:
     - state: 545
@@ -84,7 +84,7 @@
   description: For various Kalashnikov rifle models, 30 rounds per box. Penetrates class 5 armor.
   components:
   - type: BallisticAmmoProvider
-    proto: STCartridge545BS
+    proto: Z14STCartridge545BS
   - type: Sprite
     layers:
     - state: 545
@@ -102,7 +102,7 @@
   description: For various Kalashnikov rifle models, 30 rounds per box. Penetrates class 6 armor.
   components:
   - type: BallisticAmmoProvider
-    proto: STCartridge545NE
+    proto: Z14STCartridge545NE
   - type: Sprite
     layers:
     - state: 545
@@ -121,7 +121,7 @@
   components:
   - type: BallisticAmmoProvider
     capacity: 300
-    proto: STCartridge545FMJ
+    proto: Z14STCartridge545FMJ
     whitelist:
       tags:
         - STCartridge545
@@ -141,7 +141,7 @@
   description: For various Kalashnikov rifle models, 300 rounds per crate. Enhanced bullet. Penetrates class 3 armor.
   components:
   - type: BallisticAmmoProvider
-    proto: STCartridge545PC
+    proto: Z14STCartridge545PC
   - type: Sprite
     layers:
     - state: cink
@@ -158,7 +158,7 @@
   description: For various Kalashnikov rifle models, 300 rounds per crate. Cannot penetrate armor, but deals devastating damage including behind-armor damage.
   components:
   - type: BallisticAmmoProvider
-    proto: STCartridge545HP
+    proto: Z14STCartridge545HP
   - type: Sprite
     layers:
     - state: cink
@@ -175,7 +175,7 @@
   description: For various Kalashnikov rifle models, 300 rounds per crate. Penetrates class 4 armor.
   components:
   - type: BallisticAmmoProvider
-    proto: STCartridge545BP
+    proto: Z14STCartridge545BP
   - type: Sprite
     layers:
     - state: cink
@@ -192,7 +192,7 @@
   description: For various Kalashnikov rifle models, 300 rounds per crate. Penetrates class 5 armor.
   components:
   - type: BallisticAmmoProvider
-    proto: STCartridge545BS
+    proto: Z14STCartridge545BS
   - type: Sprite
     layers:
     - state: cink
@@ -209,7 +209,7 @@
   description: For various Kalashnikov rifle models, 300 rounds per crate. Penetrates class 6 armor.
   components:
   - type: BallisticAmmoProvider
-    proto: STCartridge545NE
+    proto: Z14STCartridge545NE
   - type: Sprite
     layers:
     - state: cink

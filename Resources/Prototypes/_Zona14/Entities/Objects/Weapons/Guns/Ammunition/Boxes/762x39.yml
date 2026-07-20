@@ -10,7 +10,7 @@
     magState: 76239ammo
   - type: BallisticAmmoProvider
     capacity: 30
-    proto: STCartridge739FMJ
+    proto: Z14STCartridge739FMJ
     whitelist:
       tags:
         - STCartridge739
@@ -30,7 +30,7 @@
   description: For select Kalashnikov rifle models, 30 rounds per box. Penetrates class 4 armor.
   components:
   - type: BallisticAmmoProvider
-    proto: STCartridge739PC
+    proto: Z14STCartridge739PC
   - type: Sprite
     layers:
     - state: 76239
@@ -48,7 +48,7 @@
   description: For select Kalashnikov rifle models, 30 rounds per box. Useless against armor.
   components:
   - type: BallisticAmmoProvider
-    proto: STCartridge739HP
+    proto: Z14STCartridge739HP
   - type: Sprite
     layers:
     - state: 76239
@@ -66,7 +66,7 @@
   description: For select Kalashnikov rifle models, 30 rounds per box. Penetrates class 5 armor.
   components:
   - type: BallisticAmmoProvider
-    proto: STCartridge739BP
+    proto: Z14STCartridge739BP
   - type: Sprite
     layers:
     - state: 76239
@@ -85,7 +85,7 @@
   components:
   - type: BallisticAmmoProvider
     capacity: 300
-    proto: STCartridge739FMJ
+    proto: Z14STCartridge739FMJ
     whitelist:
       tags:
         - STCartridge739
@@ -105,7 +105,7 @@
   description: For select Kalashnikov rifle models, 300 rounds per crate. Penetrates class 4 armor.
   components:
   - type: BallisticAmmoProvider
-    proto: STCartridge739PC
+    proto: Z14STCartridge739PC
   - type: Sprite
     layers:
     - state: cink
@@ -122,7 +122,7 @@
   description: For select Kalashnikov rifle models, 300 rounds per crate. Useless against armor.
   components:
   - type: BallisticAmmoProvider
-    proto: STCartridge739HP
+    proto: Z14STCartridge739HP
   - type: Sprite
     layers:
     - state: cink
@@ -139,7 +139,7 @@
   description: For select Kalashnikov rifle models, 300 rounds per crate. Penetrates class 5 armor.
   components:
   - type: BallisticAmmoProvider
-    proto: STCartridge739BP
+    proto: Z14STCartridge739BP
   - type: Sprite
     layers:
     - state: cink

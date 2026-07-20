@@ -51,7 +51,7 @@
             - STModuleAutoSear
       gun_chamber:
         name: Chamber
-        startingItem: STCartridge918PGJ
+        startingItem: Z14STCartridge918PGJ
         priority: 1
         whitelist:
           tags:
@@ -107,7 +107,7 @@
               - MagazineGlock
         gun_chamber:
           name: Chamber
-          startingItem: STCartridge919PSOGJ
+          startingItem: Z14STCartridge919PSOGJ
           priority: 1
           whitelist:
             tags:

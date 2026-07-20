@@ -10,7 +10,7 @@
       magState: 45ammo
     - type: BallisticAmmoProvider
       capacity: 30
-      proto: Cartridge45ACPLFMJ
+      proto: Z14Cartridge45ACPLFMJ
       whitelist:
         tags:
           - Cartridge45ACP
@@ -33,7 +33,7 @@
       magState: 45ammo1
     - type: BallisticAmmoProvider
       capacity: 30
-      proto: Cartridge45ACPMFMJ
+      proto: Z14Cartridge45ACPMFMJ
       whitelist:
         tags:
           - Cartridge45ACP
@@ -57,7 +57,7 @@
       magState: 45ammo2
     - type: BallisticAmmoProvider
       capacity: 30
-      proto: Cartridge45ACPHydroshock
+      proto: Z14Cartridge45ACPHydroshock
       whitelist:
         tags:
           - Cartridge45ACP
@@ -78,7 +78,7 @@
   components:
     - type: BallisticAmmoProvider
       capacity: 30
-      proto: Cartridge45ACPRIP
+      proto: Z14Cartridge45ACPRIP
       whitelist:
         tags:
           - Cartridge45ACP
@@ -99,7 +99,7 @@
   components:
     - type: BallisticAmmoProvider
       capacity: 30
-      proto: Cartridge45ACPAP
+      proto: Z14Cartridge45ACPAP
       whitelist:
         tags:
           - Cartridge45ACP
@@ -120,7 +120,7 @@
   components:
     - type: BallisticAmmoProvider
       capacity: 300
-      proto: Cartridge45ACPLFMJ
+      proto: Z14Cartridge45ACPLFMJ
       whitelist:
         tags:
           - Cartridge45ACP
@@ -141,7 +141,7 @@
   components:
     - type: BallisticAmmoProvider
       capacity: 300
-      proto: Cartridge45ACPMFMJ
+      proto: Z14Cartridge45ACPMFMJ
       whitelist:
         tags:
           - Cartridge45ACP
@@ -162,7 +162,7 @@
   components:
     - type: BallisticAmmoProvider
       capacity: 300
-      proto: Cartridge45ACPHydroshock
+      proto: Z14Cartridge45ACPHydroshock
       whitelist:
         tags:
           - Cartridge45ACP
@@ -183,7 +183,7 @@
   components:
     - type: BallisticAmmoProvider
       capacity: 300
-      proto: Cartridge45ACPRIP
+      proto: Z14Cartridge45ACPRIP
       whitelist:
         tags:
           - Cartridge45ACP
@@ -204,7 +204,7 @@
   components:
     - type: BallisticAmmoProvider
       capacity: 30
-      proto: Cartridge45ACPAP
+      proto: Z14Cartridge45ACPAP
       whitelist:
         tags:
           - Cartridge45ACP

@@ -92,12 +92,12 @@
   - name: shop-category-ammunition
     priority: 3
     items:
-      338FMJBox: 20
-      338PartitionBox: 5
-      338FMJBTBox: 40
+      Z14338FMJBox: 20
+      Z14338PartitionBox: 5
+      Z14338FMJBTBox: 40
       Z14918PBMBoxCink: 20
-      939SP5BoxCink: 30
-      939BPBoxCink: 55
+      Z14939SP5BoxCink: 30
+      Z14939BPBoxCink: 55
       Z14556M855BoxCink: 30
       Z14751M80BoxCink: 35
       Z14545PCBoxCink: 25

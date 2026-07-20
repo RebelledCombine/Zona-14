@@ -41,7 +41,7 @@
   id: Z14PersistentCraftAmmo_newrecipe1255PS12ACink
   name: persistent-craft-recipe-generic-name
   description: persistent-craft-recipe-generic-desc
-  displayProto: Ammobox1255PS12A
+  displayProto: Z14Ammobox1255PS12A
   branch: Ammo
   tier: 1
   requiredNode: PersistentCraftWeaponAmmoNodeT1
@@ -51,7 +51,7 @@
   - proto: STCraftAnomalyDust
     amount: 1
   results:
-  - proto: Ammobox1255PS12A
+  - proto: Z14Ammobox1255PS12A
     amount: 4
   category: ammo
   subCategory: tier-1

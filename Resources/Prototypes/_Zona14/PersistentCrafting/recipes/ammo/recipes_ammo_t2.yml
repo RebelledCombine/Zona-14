@@ -136,7 +136,7 @@
   id: Z14PersistentCraftAmmo_newrecipe1255TPCink
   name: persistent-craft-recipe-generic-name
   description: persistent-craft-recipe-generic-desc
-  displayProto: Ammobox1255TP
+  displayProto: Z14Ammobox1255TP
   branch: Ammo
   tier: 2
   requiredNode: PersistentCraftWeaponAmmoNodeT2
@@ -146,7 +146,7 @@
   - proto: STCraftAnomalyDust
     amount: 3
   results:
-  - proto: Ammobox1255TP
+  - proto: Z14Ammobox1255TP
     amount: 4
   category: ammo
   subCategory: tier-2
