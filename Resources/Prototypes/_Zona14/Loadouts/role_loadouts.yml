@@ -21,11 +21,12 @@
   - STBeltStalkerGroup
   - STlegsGroup
   - STTorsoGroupBandit
-  - STSuitstorageGroup
+  - Z14StarterWeaponGroup
   - STStorage
   - STStorageAmmunition
   - STGlasses
   - STOuterClothingBandit
+  - Z14StarterSuppliesGroup
 
 - type: roleLoadout
   id: JobStalkerScout
@@ -39,11 +40,12 @@
   - STBeltStalkerGroup
   - STlegsGroupFreedom
   - STTorsoGroupFreedom
-  - STSuitstorageGroup
+  - Z14StarterWeaponGroup
   - STStorage
   - STStorageAmmunition
   - STGlasses
   - STOuterClothingFreedom
+  - Z14StarterSuppliesGroup
 
 - type: roleLoadout
   id: JobStalkerDutyNCO
@@ -57,8 +59,10 @@
   - STBeltStalkerGroup
   - STlegsGroup
   - STTorsoGroupDolg
-  - STSuitstorageGroup
+  - Z14StarterWeaponGroup
   - STStorage
   - STStorageAmmunition
   - STGlasses
   - STOuterClothingDolg
+  - Z14StarterSuppliesGroup
+

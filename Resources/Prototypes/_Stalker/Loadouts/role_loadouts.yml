@@ -12,10 +12,12 @@
   - STBeltStalkerGroup
   - STlegsGroup
   - STTorsoGroup
-  - STSuitstorageGroup
+  # Zona14: rookie starter kit; was STSuitstorageGroup
+  - Z14StarterWeaponGroup
   - STStorage
   - STStorageAmmunition
   - STGlasses
+  - Z14StarterSuppliesGroup
 
 - type: roleLoadout
   id: JobStalkerMercenary
@@ -102,10 +104,12 @@
   - STBeltStalkerGroup
   - STlegsGroup
   - STTorsoGroup
-  - STSuitstorageGroup
+  # Zona14: rookie starter kit; was STSuitstorageGroup
+  - Z14StarterWeaponGroup
   - STStorage
   - STStorageAmmunition
   - STGlasses
+  - Z14StarterSuppliesGroup
 
 - type: roleLoadout
   id: JobStalkerVeteran
@@ -120,10 +124,12 @@
   - STBeltStalkerGroup
   - STlegsGroupVeteran
   - STTorsoGroupVeteran
-  - STSuitstorageGroup
+  # Zona14: rookie starter kit; was STSuitstorageGroup
+  - Z14StarterWeaponGroup
   - STStorage
   - STStorageAmmunition
   - STGlasses
+  - Z14StarterSuppliesGroup
 
 - type: roleLoadout
   id: JobStalkerGuide
@@ -156,11 +162,13 @@
   - STBeltStalkerGroup
   - STlegsGroup
   - STTorsoGroupBandit
-  - STSuitstorageGroup
+  # Zona14: rookie starter kit; was STSuitstorageGroup
+  - Z14StarterWeaponGroup
   - STStorage
   - STStorageAmmunition
   - STGlasses
   - STOuterClothingBandit
+  - Z14StarterSuppliesGroup
 
 - type: roleLoadout
   id: JobStalkerHeadBandit
@@ -174,13 +182,16 @@
   - STBeltStalkerGroup
   - STlegsGroup
   - STTorsoGroupBandit
-  - STSuitstorageGroup
+  # Zona14: rookie starter kit; was STSuitstorageGroup
+  - Z14StarterWeaponGroup
   - STStorage
   - STStorageAmmunition
   - STGlasses
   - STOuterClothingBandit
+  - Z14StarterSuppliesGroup
 
 # Zona14: Duty
+
 - type: roleLoadout
   id: JobStalkerDolg
   groups:
@@ -193,11 +204,13 @@
   - STBeltStalkerGroup
   - STlegsGroup
   - STTorsoGroupDolg
-  - STSuitstorageGroup
+  # Zona14: rookie starter kit; was STSuitstorageGroup
+  - Z14StarterWeaponGroup
   - STStorage
   - STStorageAmmunition
   - STGlasses
   - STOuterClothingDolg
+  - Z14StarterSuppliesGroup
 
 - type: roleLoadout
   id: JobStalkerNoviceDolg
@@ -229,13 +242,16 @@
   - STBeltStalkerGroup
   - STlegsGroup
   - STTorsoGroupDolg
-  - STSuitstorageGroup
+  # Zona14: rookie starter kit; was STSuitstorageGroup
+  - Z14StarterWeaponGroup
   - STStorage
   - STStorageAmmunition
   - STGlasses
   - STOuterClothingDolg
+  - Z14StarterSuppliesGroup
 
 # Zona14: Freedom
+
 - type: roleLoadout
   id: JobStalkerFreedom
   groups:
@@ -248,11 +264,13 @@
   - STBeltStalkerGroup
   - STlegsGroupFreedom
   - STTorsoGroupFreedom
-  - STSuitstorageGroup
+  # Zona14: rookie starter kit; was STSuitstorageGroup
+  - Z14StarterWeaponGroup
   - STStorage
   - STStorageAmmunition
   - STGlasses
   - STOuterClothingFreedom
+  - Z14StarterSuppliesGroup
 
 - type: roleLoadout
   id: JobStalkerNoviceFreedom
@@ -284,13 +302,16 @@
   - STBeltStalkerGroup
   - STlegsGroupFreedom
   - STTorsoGroupFreedom
-  - STSuitstorageGroup
+  # Zona14: rookie starter kit; was STSuitstorageGroup
+  - Z14StarterWeaponGroup
   - STStorage
   - STStorageAmmunition
   - STGlasses
   - STOuterClothingFreedom
+  - Z14StarterSuppliesGroup
 
 # Zona14: Scientists
+
 - type: roleLoadout
   id: Jobsci
   groups:
@@ -303,11 +324,13 @@
   - STBeltStalkerGroup
   - STlegsGroup
   - STTorsoGroupSci
-  - STSuitstorageGroup
+  # Zona14: rookie starter kit; was STSuitstorageGroup
+  - Z14StarterWeaponGroup
   - STStorage
   - STStorageAmmunition
   - STGlasses
   - STOuterClothingSci
+  - Z14StarterSuppliesGroup
 
 - type: roleLoadout
   id: Jobsci_decan
@@ -321,11 +344,13 @@
   - STBeltStalkerGroup
   - STlegsGroup
   - STTorsoGroupSci
-  - STSuitstorageGroup
+  # Zona14: rookie starter kit; was STSuitstorageGroup
+  - Z14StarterWeaponGroup
   - STStorage
   - STStorageAmmunition
   - STGlasses
   - STOuterClothingSci
+  - Z14StarterSuppliesGroup
 
 - type: roleLoadout
   id: Jobsci_rector
@@ -339,13 +364,16 @@
   - STBeltStalkerGroup
   - STlegsGroup
   - STTorsoGroupSci
-  - STSuitstorageGroup
+  # Zona14: rookie starter kit; was STSuitstorageGroup
+  - Z14StarterWeaponGroup
   - STStorage
   - STStorageAmmunition
   - STGlasses
   - STOuterClothingSci
+  - Z14StarterSuppliesGroup
 
 # Zona14: Seraphim
+
 - type: roleLoadout
   id: JobSeraphim
   groups:

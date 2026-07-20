@@ -1,0 +1,81 @@
+# Zona-14 rookie starter kit.
+#
+# Replaces STSuitstorageGroup on the roster jobs, which forced every player to spawn
+# with a long gun — including a Saiga-545, a 5.45 rifle on tier-3 ammo. A rookie should
+# start with a sidearm or a cheap scattergun, not a service rifle.
+#
+# These point at the Z14 weapon prototypes, not the upstream ones. That matters: the
+# upstream Makarov fires at 6 rounds/sec while Z14WeaponPistolStalkerPM fires at 3.5,
+# so the old loadout handed out a pistol 71% faster than the balanced version.
+#
+# Every weapon ships with exactly one magazine or one box of shells — enough to survive
+# a first encounter, not enough to go hunting, so the rookie vendor still matters.
+
+# ── Weapon: mandatory, pick exactly one ─────────────────────
+
+- type: loadout
+  id: Z14LoadoutStarterPM
+  equipment:
+    pocket1: Z14WeaponPistolStalkerPM
+  storage:
+    back:
+    - Z14BasePMMag
+
+- type: loadout
+  id: Z14LoadoutStarterSawedOff
+  equipment:
+    suitstorage: Z14STWeaponShotgunSawedOf
+  storage:
+    back:
+    - Z1462mmBuckshotBox
+
+- type: loadout
+  id: Z14LoadoutStarterTOZ106
+  equipment:
+    suitstorage: Z14STBaseWeaponShotgunTOZ106
+  storage:
+    back:
+    - Z14TOZ106Mag5
+
+- type: loadoutGroup
+  id: Z14StarterWeaponGroup
+  name: loadout-group-z14-starter-weapon
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - Z14LoadoutStarterPM
+  - Z14LoadoutStarterSawedOff
+  - Z14LoadoutStarterTOZ106
+
+# ── Supplies: all three, no choice ──────────────────────────
+# minLimit == maxLimit == number of options, so every rookie gets the lot.
+# Bolts previously competed with the pistol inside STTrinketsGroupOne, so a player
+# had to choose between anomaly detection and a sidearm. Now they get both.
+
+- type: loadout
+  id: Z14LoadoutStarterMedkit
+  storage:
+    back:
+    - Z14MedkitAI2
+
+- type: loadout
+  id: Z14LoadoutStarterBandage
+  storage:
+    back:
+    - STGauze
+
+- type: loadout
+  id: Z14LoadoutStarterBolts
+  storage:
+    back:
+    - STBoltBagFilled
+
+- type: loadoutGroup
+  id: Z14StarterSuppliesGroup
+  name: loadout-group-z14-starter-supplies
+  minLimit: 3
+  maxLimit: 3
+  loadouts:
+  - Z14LoadoutStarterMedkit
+  - Z14LoadoutStarterBandage
+  - Z14LoadoutStarterBolts
