@@ -215,28 +215,28 @@
         7mmBuckshotBox: 50 # T0
         6mmBuckshotBox: 275 # T1
         # 5.45
-        Z14545FMJBox: 700 # T2
-        Z14545HPBox: 500 # Mutant
+        Z14545FMJBox: 600 # T2
+        Z14545HPBox: 600 # Mutant
         # 7.39
-        Z14739HPBox: 750 # Mutant
+        Z14739HPBox: 800 # Mutant
         # 7.54
-        Z14754HPBox: 850 # Mutant
+        Z14754HPBox: 800 # Mutant
         # 9.18
-        Z14918PGJBox: 80 # T1
-        Z14918PSTBox: 245 # T2
-        Z14918SP7Box: 625 # Mutant
+        Z14918PGJBox: 250 # T1
+        Z14918PSTBox: 450 # T2
+        Z14918SP7Box: 250 # Mutant
         # 9.19
-        Z14919PSOGJBox: 100 # T1
-        Z14919PSTBox: 265 # T2
-        Z14919RIPBox: 625 # Mutant
+        Z14919PSOGJBox: 500 # T1
+        Z14919PSTBox: 900 # T2
+        Z14919RIPBox: 500 # Mutant
         # 7.25
-        Z14725PBox: 100 # T1
-        Z14725LRNPCBox: 625 # Mutant
-        Z14725PTBox: 465 # T2
+        Z14725PBox: 250 # T1
+        Z14725LRNPCBox: 250 # Mutant
+        Z14725PTBox: 450 # T2
         # .45
-        Z1445ACPLFMJBox: 100 # T1
-        Z1445ACPRIPBox: 675 # Mutant
-        Z1445ACPMFMJBox: 275 # T2
+        Z1445ACPLFMJBox: 500 # T1
+        Z1445ACPRIPBox: 500 # Mutant
+        Z1445ACPMFMJBox: 500 # T2
 
     - name: shop-category-medicine
       priority: 4
@@ -291,11 +291,10 @@
         Z14STClothingOuterArmorLightPlateVestBaseStalker: 1250 # T2 - PvP
         SetArmourJacketNoviceBrezentBuyableCrate: 1500 # T2 - PvP
         SetArmourJacketNoviceWhiteBuyableCrate: 1500 # T2 - PvP
-        Z14ClothingOuterArmor6B2: 2000
-        Z14STClothingOuterArmorRCBZ: 1800 # T2 - ENV
-        Z14ClothingOuterArmorZaryaStalker: 2000 # T2 - PVE
+        Z14ClothingOuterArmor6B2: 1250
+        Z14STClothingOuterArmorRCBZ: 1250 # T2 - ENV
+        Z14ClothingOuterArmorZaryaStalker: 1250 # T2 - PVE
         SetZaryaStalkerBuyableCrate: 3300 # T2 - ENV
-        Z14ClothingOuterArmorSevaStalker: 5000 # T3 - ENV
 
     - name: shop-category-storage-and-containers
       priority: 7

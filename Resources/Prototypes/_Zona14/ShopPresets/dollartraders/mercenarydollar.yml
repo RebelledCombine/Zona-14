@@ -26,21 +26,18 @@
   - name: shop-category-ammunition
     priority: 3
     items:
-      Z14556M855BoxCink: 80
-      Z14751M80BoxCink: 120
-      Z14754PCBox: 10
-      Z14556M856BoxCink: 80
-      Z14739PCBoxCink: 80
-      Z14751M61BoxCink: 80
+      Z14556M855BoxCink: 21000
+      Z14751M80BoxCink: 20000
+      Z14754PCBox: 1440
+      Z14556M856BoxCink: 21000
+      Z14739PCBoxCink: 57600
+      Z14751M61BoxCink: 36000
   - name: shop-category-armor
     priority: 4
     items:
-      Z14ClothingOuterArmorMerc: 20
-      Z14ClothingOuterArmorMerc2: 20
       Z14ClothingHeadHelmetUlachEasy: 80
       Z14ClothingHeadHelmetBulatMercenary: 80
-      Z14STClothingOuterArmorIOTVMerc: 300
-      Z14STClothingOuterArmorVeryHeavy: 350
+      Z14STClothingOuterArmorIOTVMerc: 1250
   - name: shop-category-storage-and-containers
     priority: 5
     items:

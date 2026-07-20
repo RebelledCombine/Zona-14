@@ -65,45 +65,43 @@
       7mmBuckshotBox: 20
       8mmBuckshotBox: 400
       # 7.25
-      Z14725PBox: 100
-      Z14725PTBox: 500
-      Z14725PSTBox: 2000
-      Z14725LRNPCBox: 50
+      Z14725PBox: 250
+      Z14725PTBox: 450
+      Z14725PSTBox: 450
+      Z14725LRNPCBox: 250
       # 9.19
-      Z14919PSOGJBox: 65
-      Z14919PSTBox: 400
-      Z14919RIPBox: 200
-      Z14919PBMBox: 1000
+      Z14919PSOGJBox: 500
+      Z14919PSTBox: 900
+      Z14919RIPBox: 500
+      Z14919PBMBox: 900
       # 5.56
-      Z14556FMJBox: 700
-      Z14556M855Box: 1500
-      Z14556WarmagBox: 300
+      Z14556FMJBox: 400
+      Z14556M855Box: 400
+      Z14556WarmagBox: 400
       # 5.45
-      Z14545FMJBox: 700
-      Z14545HPBox: 200
-      Z14545PCBox: 1500
+      Z14545FMJBox: 600
+      Z14545HPBox: 600
+      Z14545PCBox: 1080
       # .45
-      Z1445ACPLFMJBox: 100
-      Z1445ACPMFMJBox: 450
-      Z1445ACPRIPBox: 300
-      Z1445ACPAPBox: 1000
+      Z1445ACPLFMJBox: 500
+      Z1445ACPMFMJBox: 500
+      Z1445ACPRIPBox: 500
+      Z1445ACPAPBox: 900
 
   - name: shop-category-armor
     priority: 4
     items:
       # OuterClothing #
-      Z14STClothingOuterArmorRCBZ: 2000
-      Z14STClothingOuterArmorLightPlateVestBaseStalker: 2000
-      Z14ClothingOuterArmor6B2: 3000
+      Z14STClothingOuterArmorRCBZ: 1250
+      Z14STClothingOuterArmorLightPlateVestBaseStalker: 1250
+      Z14ClothingOuterArmor6B2: 1250
       Z14ClothingHeadHelmetInfantry: 400
       Z14STClothingHeadHelmetMakeshiftTacticalT3: 1500
-      Z14ClothingOuterArmorSpark: 1500
-      Z14ClothingOuterArmorZaryaStalkerModifedType2: 2000
-      Z14ClothingOuterArmorZaryaStalkerModifedType1: 3500
-      Z14ClothingOuterArmorZaryaHunter: 2000
+      Z14ClothingOuterArmorSpark: 500
+      Z14ClothingOuterArmorZaryaStalkerModifedType2: 1250
+      Z14ClothingOuterArmorZaryaStalkerModifedType1: 1250
+      Z14ClothingOuterArmorZaryaHunter: 1250
       Z14ClothingHeadHelmetVityaz1C: 3500
-      Z14ClothingOuterArmorAborigineStalker: 6000
-      Z14ClothingOuterArmorStalker: 7500
   - name: shop-category-storage-and-containers
     priority: 5
     items:
@@ -360,13 +358,13 @@
 
     #.45 acp
     STWeaponRevolverRugerRedhawk: 150
-    STWeaponRevolverSWPC325TR: 425
+    STWeaponRevolverSWPC325TR: 100
     STWeaponRevolverChiappaRhino60DS: 450
     STWeaponRevolverSWModel325: 200
     STWeaponRevolverSWModel625: 725
 
     #medical
-    Defibrillator: 650
+    Defibrillator: 350
 
     #values
     TradeBox: 3000
@@ -413,41 +411,41 @@
         7mmBuckshotBox: 45
         8mmBuckshotBox: 650
          # 7.25
-        Z14725PBox: 120
-        Z14725PTBox: 280
-        Z14725PSTBox: 1325
-        Z14725LRNPCBox: 600
+        Z14725PBox: 250
+        Z14725PTBox: 450
+        Z14725PSTBox: 450
+        Z14725LRNPCBox: 250
         # 9.19
-        Z14919PSOGJBox: 75
-        Z14919PSTBox: 525
-        Z14919RIPBox: 575
-        Z14919PBMBox: 1325
+        Z14919PSOGJBox: 500
+        Z14919PSTBox: 900
+        Z14919RIPBox: 500
+        Z14919PBMBox: 900
         # 5.56
-        Z14556FMJBox: 600
-        Z14556M855Box: 1500
-        Z14556WarmagBox: 655
+        Z14556FMJBox: 400
+        Z14556M855Box: 400
+        Z14556WarmagBox: 400
         # 5.45
-        Z14545FMJBox: 625
-        Z14545HPBox: 690
-        Z14545PCBox: 1500
+        Z14545FMJBox: 600
+        Z14545HPBox: 600
+        Z14545PCBox: 1080
          # .45
-        Z1445ACPLFMJBox: 80
-        Z1445ACPMFMJBox: 550
-        Z1445ACPRIPBox: 625
-        Z1445ACPAPBox: 1400
+        Z1445ACPLFMJBox: 500
+        Z1445ACPMFMJBox: 500
+        Z1445ACPRIPBox: 500
+        Z1445ACPAPBox: 900
 
     - name: shop-category-armor
       priority: 4
       items:
           # OuterClothing #
         Z14STClothingOuterArmorLightPlateVestBaseStalker: 1250
-        Z14ClothingOuterArmor6B2: 2000
+        Z14ClothingOuterArmor6B2: 1250
         Z14ClothingHeadHelmetInfantry: 400
         Z14STClothingHeadHelmetMakeshiftTacticalT3: 1000
-        Z14ClothingOuterArmorSpark: 1750
-        Z14ClothingOuterArmorZaryaStalkerModifedType2: 2500
-        Z14ClothingOuterArmorZaryaStalkerModifedType1: 3800
-        Z14ClothingOuterArmorZaryaHunter: 2500
+        Z14ClothingOuterArmorSpark: 500
+        Z14ClothingOuterArmorZaryaStalkerModifedType2: 1250
+        Z14ClothingOuterArmorZaryaStalkerModifedType1: 1250
+        Z14ClothingOuterArmorZaryaHunter: 1250
     - name: shop-category-storage-and-containers
       priority: 5
       items:

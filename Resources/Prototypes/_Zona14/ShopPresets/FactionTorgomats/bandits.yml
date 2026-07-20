@@ -186,39 +186,39 @@
         7mmBuckshotBox: 75 # T0
         8mmBuckshotBox: 800 # T2
         # 7.25
-        Z14725PBox: 90 # T1
-        Z14725LRNPCBox: 625 # Mutant
-        Z14725PTBox: 200 # T2
-        Z14725PSTBox: 1450 # T3
+        Z14725PBox: 250 # T1
+        Z14725LRNPCBox: 250 # Mutant
+        Z14725PTBox: 450 # T2
+        Z14725PSTBox: 450 # T3
         # 9.19
-        Z14919PSOGJBox: 100 # T1
-        Z14919PSTBox: 500 # T2
-        Z14919PBMBox: 1450 # T3
-        Z14919RIPBox: 625 # Mutant
+        Z14919PSOGJBox: 500 # T1
+        Z14919PSTBox: 900 # T2
+        Z14919PBMBox: 900 # T3
+        Z14919RIPBox: 500 # Mutant
         # 9.18
-        Z14918PGJBox: 100 # T1
-        Z14918PSTBox: 500 # T2
-        Z14918PBMBox: 1450 # T3
-        Z14918SP7Box: 625 # Mutant
+        Z14918PGJBox: 250 # T1
+        Z14918PSTBox: 450 # T2
+        Z14918PBMBox: 450 # T3
+        Z14918SP7Box: 250 # Mutant
         # 5.45
-        Z14545FMJBox: 500 # T2
-        Z14545HPBox: 725 # Mutant
-        Z14545PCBox: 1650 # T3
+        Z14545FMJBox: 600 # T2
+        Z14545HPBox: 600 # Mutant
+        Z14545PCBox: 1080 # T3
         # 5.56
-        Z14556FMJBox: 500 # T2
-        Z14556WarmagBox: 725 # Mutant
-        Z14556M855Box: 1650 # T3
+        Z14556FMJBox: 400 # T2
+        Z14556WarmagBox: 400 # Mutant
+        Z14556M855Box: 400 # T3
         # 7.39
-        Z14739HPBox: 850 # Mutant
-        Z14739FMJBox: 1950 # T3
+        Z14739HPBox: 800 # Mutant
+        Z14739FMJBox: 800 # T3
         # 7.54
-        Z14754FMJBox: 2500 # T3
-        Z14754HPBox: 1350 # Mutant
+        Z14754FMJBox: 800 # T3
+        Z14754HPBox: 800 # Mutant
         # .45
-        Z1445ACPLFMJBox: 110 # T1
-        Z1445ACPMFMJBox: 550 # T2
-        Z1445ACPAPBox: 1550 # T3
-        Z1445ACPRIPBox: 750 # Mutant
+        Z1445ACPLFMJBox: 500 # T1
+        Z1445ACPMFMJBox: 500 # T2
+        Z1445ACPAPBox: 900 # T3
+        Z1445ACPRIPBox: 500 # Mutant
 
     - name: shop-category-medicine # 50% discount from stalkers
       priority: 4
@@ -263,15 +263,14 @@
         Z14ClothingHeadHelmetVityaz1B: 3500 # T3 - PVE
         Z14ClothingHeadAssaultHelmetBandit: 3000 # T3 - PVP
           # OuterClothing #
-        Z14ClothingOuterCoatBanditBrown: 550 # T1 - uni
-        Z14ClothingOuterCoatBanditBlack: 550 # T1 - uni
-        Z14STClothingOuterArmorLightPlateVestBaseBand: 1000 # T2 - PvP
+        Z14ClothingOuterCoatBanditBrown: 500 # T1 - uni
+        Z14ClothingOuterCoatBanditBlack: 500 # T1 - uni
+        Z14STClothingOuterArmorLightPlateVestBaseBand: 1250 # T2 - PvP
         SetArmoutJacketBanditBuyableCrate: 1025 # T2 - PvP
-        Z14ClothingOuterArmourCoatBanditBrown: 1050 # T2 - PvP
-        Z14ClothingOuterArmourCoatBanditBlack: 1050 # T2 - PvP
-        Z14STClothingOuterArmorBandits: 2000 #T2
-        Z14STClothingOuterArmorRCBZ: 2000
-        Z14ClothingOuterArmorBandits: 13000 #T3
+        Z14ClothingOuterArmourCoatBanditBrown: 500 # T2 - PvP
+        Z14ClothingOuterArmourCoatBanditBlack: 500 # T2 - PvP
+        Z14STClothingOuterArmorBandits: 1250 #T2
+        Z14STClothingOuterArmorRCBZ: 1250
 
     - name: shop-category-storage-and-containers
       priority: 7

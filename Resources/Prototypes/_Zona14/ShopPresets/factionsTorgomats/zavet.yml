@@ -111,29 +111,29 @@
         7mmBuckshotBox: 45
         8mmBuckshotBox: 300
         # 9.19
-        Z14919PSOGJBox: 75
-        Z14919PSTBox: 250
-        Z14919PBMBox: 500
-        Z14919RIPBox: 300
-        Z14918PGJBox: 80
-        Z14918PSTBox: 250
-        Z14918PBMBox: 500
-        Z14918SP7Box: 200
+        Z14919PSOGJBox: 500
+        Z14919PSTBox: 900
+        Z14919PBMBox: 900
+        Z14919RIPBox: 500
+        Z14918PGJBox: 250
+        Z14918PSTBox: 450
+        Z14918PBMBox: 450
+        Z14918SP7Box: 250
         # 5.56
-        Z14556FMJBox: 500
-        Z14556WarmagBox: 250
-        Z14556M855Box: 1500
-        Z14556M856Box: 2100
+        Z14556FMJBox: 400
+        Z14556WarmagBox: 400
+        Z14556M855Box: 400
+        Z14556M856Box: 400
         # 7.51
-        Z14751M80Box: 1500
-        Z14751UNBox: 500
+        Z14751M80Box: 800
+        Z14751UNBox: 800
         # 7.54
-        Z14754FMJBox: 1200
+        Z14754FMJBox: 800
         # .45
-        Z1445ACPLFMJBox: 100
-        Z1445ACPMFMJBox: 550
-        Z1445ACPAPBox: 1000
-        Z1445ACPRIPBox: 400
+        Z1445ACPLFMJBox: 500
+        Z1445ACPMFMJBox: 500
+        Z1445ACPAPBox: 900
+        Z1445ACPRIPBox: 500
     - name: shop-category-armor
       priority: 4
       items:
@@ -142,15 +142,12 @@
         Z14ClothingHeadHelmetVityaz1Zavet: 2250 # T2 - PVE
         Z14ClothingHeadAssaultHelmetZavet: 3250
           # OuterClothing #
-        Z14ClothingOuterJacketStalker: 60 # T1 - PVE
-        Z14STClothingOuterArmorLightPlateVestBaseZavet: 1000 # T2 - PvP
-        Z14STClothingOuterArmorRCBZ: 1700 # T2 - ENV
-        Z14ClothingOuterArmorZaryaStalker: 2000
-        Z14STClothingOuterArmorLightPlateVestBaseANAzavet: 2000
-        Z14ClothingOuterArmorSevaCovenant: 5000
-        Z14STClothingOuterArmorLightPlateVestBasePSZ7Zavet: 5500
-        Z14ClothingOuterArmorSSP99Zavet: 7000
-        Z14ClothingOuterArmor6B13Zavet: 10000
+        Z14ClothingOuterJacketStalker: 500 # T1 - PVE
+        Z14STClothingOuterArmorLightPlateVestBaseZavet: 1250 # T2 - PvP
+        Z14STClothingOuterArmorRCBZ: 1250 # T2 - ENV
+        Z14ClothingOuterArmorZaryaStalker: 1250
+        Z14STClothingOuterArmorLightPlateVestBaseANAzavet: 500
+        Z14STClothingOuterArmorLightPlateVestBasePSZ7Zavet: 1250
     - name: shop-category-storage-and-containers
       priority: 5
       items:

@@ -35,15 +35,13 @@
       priority: 3
       items:
         8mmBuckshotBoxCink: 35
-        Z14545BPBoxCink: 100
-        Z14739PCBoxCink: 120
-        Z14939SP6BoxCink: 150
+        Z14545BPBoxCink: 48600
+        Z14739PCBoxCink: 57600
+        Z14939SP6BoxCink: 13500
 
     - name: shop-category-armor
       priority: 4
       items:
-        Z14ClothingOuterArmorDolgPS5M: 20
-        Z14ClothingOuterArmorPSZ9D: 300
         Z14ClothingHeadHelmetBerill5MDolg: 30
         Z14ClothingHeadAssaultHelmetDolg: 45
         Z14ClothingHeadHelmetUlach: 80

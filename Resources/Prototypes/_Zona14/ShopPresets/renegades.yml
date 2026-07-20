@@ -16,7 +16,7 @@
     priority: 3
     items:
       # .45
-      Z1445ACPAPBox: 4 # T3
+      Z1445ACPAPBox: 900 # T3
   - name: shop-category-medicine
     priority: 4
     items:
@@ -25,7 +25,7 @@
     priority: 6
     items:
       # ARMOR
-      Z14STClothingOuterArmorLightPlateVestBasePSZ7rene: 22
+      Z14STClothingOuterArmorLightPlateVestBasePSZ7rene: 1250
       Z14ClothingHeadHelmetVityazSkull1: 2 #rueco
       Z14ClothingHeadHelmetVityazSkull2: 2 #rueco
       Z14ClothingHeadHelmetVityazSkull3: 2 #rueco

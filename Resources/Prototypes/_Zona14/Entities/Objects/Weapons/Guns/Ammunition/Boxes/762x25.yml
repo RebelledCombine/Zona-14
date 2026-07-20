@@ -4,12 +4,12 @@
   suffix: Z14
   categories: [ Zona14 ]
   name: Ammo Box (7.62x25) P ch
-  description: For TT and PPSh, 30 rounds per box. Penetrates only class 1 armor.
+  description: For TT and PPSh, 50 rounds per box. Penetrates only class 1 armor.
   components:
   - type: MagazineVisuals
     magState: 76225ammo
   - type: BallisticAmmoProvider
-    capacity: 30
+    capacity: 50
     proto: Z14STCartridge725PGL
     whitelist:
       tags:
@@ -27,7 +27,7 @@
   suffix: Z14
   categories: [ Zona14 ]
   name: Ammo Box (7.62x25) PT gzh
-  description: For TT and PPSh, 30 rounds per box. Penetrates class 2 armor.
+  description: For TT and PPSh, 50 rounds per box. Penetrates class 2 armor.
   components:
     - type: BallisticAmmoProvider
       proto: Z14STCartridge725PTGJ
@@ -45,7 +45,7 @@
   suffix: Z14
   categories: [ Zona14 ]
   name: Ammo Box (7.62x25) LRNPC
-  description: For TT and PPSh, 30 rounds per box. Useless against armor.
+  description: For TT and PPSh, 50 rounds per box. Useless against armor.
   components:
     - type: BallisticAmmoProvider
       proto: Z14STCartridge725LRNPC
@@ -63,7 +63,7 @@
   suffix: Z14
   categories: [ Zona14 ]
   name: Ammo Box (7.62x25) Pst gzh
-  description: For TT and PPSh, 30 rounds per box. Penetrates class 3 armor.
+  description: For TT and PPSh, 50 rounds per box. Penetrates class 3 armor.
   components:
     - type: BallisticAmmoProvider
       proto: Z14STCartridge725PSTGJ
@@ -81,10 +81,10 @@
   suffix: Z14
   categories: [ Zona14 ]
   name: Large Ammo Box (7.62x25) P ch
-  description: For TT and PPSh, 300 rounds per crate. Penetrates only class 1 armor.
+  description: For TT and PPSh, 1120 rounds per crate. Penetrates only class 1 armor.
   components:
   - type: BallisticAmmoProvider
-    capacity: 300
+    capacity: 1120
     proto: Z14STCartridge725PGL
     whitelist:
       tags:
@@ -102,7 +102,7 @@
   suffix: Z14
   categories: [ Zona14 ]
   name: Large Ammo Box (7.62x25) PT gzh
-  description: For TT and PPSh, 300 rounds per crate. Penetrates class 2 armor.
+  description: For TT and PPSh, 1120 rounds per crate. Penetrates class 2 armor.
   components:
     - type: BallisticAmmoProvider
       proto: Z14STCartridge725PTGJ
@@ -119,7 +119,7 @@
   suffix: Z14
   categories: [ Zona14 ]
   name: Large Ammo Box (7.62x25) LRNPC
-  description: For TT and PPSh, 300 rounds per crate. Useless against armor.
+  description: For TT and PPSh, 1120 rounds per crate. Useless against armor.
   components:
     - type: BallisticAmmoProvider
       proto: Z14STCartridge725LRNPC
@@ -136,7 +136,7 @@
   suffix: Z14
   categories: [ Zona14 ]
   name: Large Ammo Box (7.62x25) PST gj
-  description: For TT and PPSh, 300 rounds per crate. Penetrates class 3 armor.
+  description: For TT and PPSh, 1120 rounds per crate. Penetrates class 3 armor.
   components:
     - type: BallisticAmmoProvider
       proto: Z14STCartridge725PSTGJ

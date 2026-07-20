@@ -34,7 +34,7 @@
     # Food
     Z14FoodMeatDogCooked: 84
     Z14STFoodMeatSpiderCooked: 42
-    Z14FoodMeatBoarCooked: 132
+    Z14FoodMeatBoarCooked: 80
 
     # Acidic group - 1
     Z14ZoneArtifactBlood: 1944
@@ -140,25 +140,25 @@
         7mmBuckshotBox: 40
         8mmBuckshotBox: 170
         # 7.25
-        Z14725PBox: 90
-        Z14725LRNPCBox: 100
+        Z14725PBox: 250
+        Z14725LRNPCBox: 250
         # 9.19
-        Z14919PSOGJBox: 80
-        Z14919PSTBox: 250
-        Z14919PBMBox: 500
-        Z14919RIPBox: 200
-        Z14918PGJBox: 80
-        Z14918PSTBox: 250
-        Z14918PBMBox: 500
-        Z14918SP7Box: 200
+        Z14919PSOGJBox: 500
+        Z14919PSTBox: 900
+        Z14919PBMBox: 900
+        Z14919RIPBox: 500
+        Z14918PGJBox: 250
+        Z14918PSTBox: 450
+        Z14918PBMBox: 450
+        Z14918SP7Box: 250
         # 5.45
-        Z14545FMJBox: 500
-        Z14545HPBox: 100
-        Z14545PCBox: 1500
-        Z14545BPBox: 2300
+        Z14545FMJBox: 600
+        Z14545HPBox: 600
+        Z14545PCBox: 1080
+        Z14545BPBox: 1080
         # 7.39
-        Z14739FMJBox: 1540
-        Z14739HPBox: 400
+        Z14739FMJBox: 800
+        Z14739HPBox: 800
 
     - name: shop-category-armor
       priority: 4
@@ -174,13 +174,11 @@
         Z14ClothingHeadAssaultHelmetLimaSeraZastup: 2500
         Z14ClothingHeadAssaultHelmetSeraZastup: 2500
           # OuterClothing #
-        Z14ClothingOuterJacketSera: 70 # T1 - PVE
-        Z14STClothingOuterArmorLightPlateVestBaseSera: 900 # T2 - PvP
-        Z14ClothingOuterArmorRCBZSera: 1500 # T2 - ENV
-        Z14STClothingOuterArmorRassvetSera: 1200 # T2 - universal
-        Z14STClothingOuterArmorLightPlateVestSera: 5000 # T3 - PvP
-        Z14ClothingOuterArmorSevasera: 6000 # T3 - ENV
-        Z14STClothingOuterArmorSeraphimStrash: 9000
+        Z14ClothingOuterJacketSera: 500 # T1 - PVE
+        Z14STClothingOuterArmorLightPlateVestBaseSera: 1250 # T2 - PvP
+        Z14ClothingOuterArmorRCBZSera: 1250 # T2 - ENV
+        Z14STClothingOuterArmorRassvetSera: 1250 # T2 - universal
+        Z14STClothingOuterArmorLightPlateVestSera: 500 # T3 - PvP
     - name: shop-category-storage-and-containers
       priority: 5
       items:

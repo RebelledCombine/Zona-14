@@ -41,17 +41,15 @@
       priority: 3
       items:
         8mmBuckshotBoxCink: 35
-        Z14545BPBoxCink: 80
-        Z14739PCBoxCink: 120
-        Z14939SP6BoxCink: 150
-        Z14754PCBoxCink: 200
-        Z14556M856BoxCink: 100
+        Z14545BPBoxCink: 48600
+        Z14739PCBoxCink: 57600
+        Z14939SP6BoxCink: 13500
+        Z14754PCBoxCink: 39600
+        Z14556M856BoxCink: 21000
     - name: shop-category-armor
       priority: 4
       items:
-        Z14STClothingOuterArmorLightPlateVestSera: 20
-        Z14STClothingOuterArmorLimaSeraphimStrash: 300
-        Z14STClothingOuterArmorSeraphimStrash: 300
+        Z14STClothingOuterArmorLightPlateVestSera: 500
         Z14ClothingHeadAssaultHelmetSeraZastup: 30
         Z14ClothingHeadAssaultHelmetLimaSeraZastup: 30
         Z14ClothingHeadAltinHelmetLimaSera: 80

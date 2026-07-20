@@ -4,7 +4,7 @@
   suffix: Z14
   categories: [ Zona14 ]
   name: Ammo Box (9x19) PSO gzh
-  description: For MP-5 Viper, 30 rounds per box. Penetrates only class 1 armor.
+  description: For MP-5 Viper, 50 rounds per box. Penetrates only class 1 armor.
   components:
   - type: Item
     size: Small
@@ -14,7 +14,7 @@
     magState: 919ammo
   - type: BallisticAmmoProvider
     proto: Z14STCartridge919PSOGJ
-    capacity: 30
+    capacity: 50
     whitelist:
       tags:
         - STCartridge919
@@ -31,7 +31,7 @@
   suffix: Z14
   categories: [ Zona14 ]
   name: Ammo Box (9x19) PST gzh
-  description: For MP-5 Viper, 30 rounds per box. Penetrates only class 2 armor.
+  description: For MP-5 Viper, 50 rounds per box. Penetrates only class 2 armor.
   components:
   - type: BallisticAmmoProvider
     proto: Z14STCartridge919PST
@@ -67,7 +67,7 @@
   suffix: Z14
   categories: [ Zona14 ]
   name: Ammo Box (9x19) PBM gzh
-  description: For MP-5 Viper, 30 rounds per box. Penetrates only class 3 armor.
+  description: For MP-5 Viper, 50 rounds per box. Penetrates only class 3 armor.
   components:
   - type: BallisticAmmoProvider
     proto: Z14STCartridge919PBM
@@ -86,11 +86,11 @@
   suffix: Z14
   categories: [ Zona14 ]
   name: Large Ammo Box (9x19) PSO gzh
-  description: For MP-5 Viper, 300 rounds per crate. Penetrates only class 1 armor.
+  description: For MP-5 Viper, 1000 rounds per crate. Penetrates only class 1 armor.
   components:
   - type: BallisticAmmoProvider
     proto: Z14STCartridge919PSOGJ
-    capacity: 300
+    capacity: 1000
     whitelist:
       tags:
         - STCartridge919
@@ -107,7 +107,7 @@
   suffix: Z14
   categories: [ Zona14 ]
   name: Large Ammo Box (9x19) PST gzh
-  description: For MP-5 Viper, 300 rounds per crate. Penetrates only class 2 armor.
+  description: For MP-5 Viper, 1000 rounds per crate. Penetrates only class 2 armor.
   components:
   - type: BallisticAmmoProvider
     proto: Z14STCartridge919PST
@@ -141,7 +141,7 @@
   suffix: Z14
   categories: [ Zona14 ]
   name: Large Ammo Box (9x19) PBM gzh
-  description: For MP-5 Viper, 300 rounds per crate. Penetrates only class 3 armor.
+  description: For MP-5 Viper, 1000 rounds per crate. Penetrates only class 3 armor.
   components:
   - type: BallisticAmmoProvider
     proto: Z14STCartridge919PBM

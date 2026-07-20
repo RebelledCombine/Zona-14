@@ -159,35 +159,35 @@
       7mmBuckshotBox: 30 # T0
       6mmBuckshotBox: 275 # T2
       # 5.45
-      Z14545FMJBox: 700 # T2
-      Z14545HPBox: 425 # Mutant
-      Z14545PCBox: 1650 # T3
+      Z14545FMJBox: 600 # T2
+      Z14545HPBox: 600 # Mutant
+      Z14545PCBox: 1080 # T3
       # 7.39
-      Z14739HPBox: 700 # Mutant
-      Z14739FMJBox: 1950 # T3
+      Z14739HPBox: 800 # Mutant
+      Z14739FMJBox: 800 # T3
       # 7.54
-      Z14754HPBox: 775 # Mutant
-      Z14754FMJBox: 2500 # T3
+      Z14754HPBox: 800 # Mutant
+      Z14754FMJBox: 800 # T3
       # 9.18
-      Z14918PGJBox: 65 # T1
-      Z14918SP7Box: 595 # Mutant
+      Z14918PGJBox: 250 # T1
+      Z14918SP7Box: 250 # Mutant
       Z14918PSTBox: 450 # T2
-      Z14918PBMBox: 1450 # T3
+      Z14918PBMBox: 450 # T3
       # 9.19
-      Z14919PSOGJBox: 65 # T1
-      Z14919RIPBox: 595 # Mutant
-      Z14919PBMBox: 1450 # T3
-      Z14919PSTBox: 450 # T2
+      Z14919PSOGJBox: 500 # T1
+      Z14919RIPBox: 500 # Mutant
+      Z14919PBMBox: 900 # T3
+      Z14919PSTBox: 900 # T2
       # 7.25
-      Z14725PBox: 75 # T1
-      Z14725LRNPCBox: 595 # Mutant
-      Z14725PTBox: 465 # T2
-      Z14725PSTBox: 1450 # T3
+      Z14725PBox: 250 # T1
+      Z14725LRNPCBox: 250 # Mutant
+      Z14725PTBox: 450 # T2
+      Z14725PSTBox: 450 # T3
       #45
-      Z1445ACPRIPBox: 625 # Mutant
-      Z1445ACPLFMJBox: 100 # T1
-      Z1445ACPMFMJBox: 1550 # T2
-      Z1445ACPAPBox: 1950 # T3
+      Z1445ACPRIPBox: 500 # Mutant
+      Z1445ACPLFMJBox: 500 # T1
+      Z1445ACPMFMJBox: 500 # T2
+      Z1445ACPAPBox: 900 # T3
 
   - name: shop-category-medicine
     priority: 4
@@ -229,13 +229,12 @@
       Z14STClothingHeadHelmetFASTNeutral: 800 # T2 - uni
       Z14ClothingHeadHelmetSH68: 250 # T1 - PVP:
       # OuterClothing #
-      Z14ClothingOuterJacketNeytral: 100 # T1 - uni
+      Z14ClothingOuterJacketNeytral: 500 # T1 - uni
       Z14STClothingOuterArmorLightPlateVestBaseStalker: 1250 # T2 - PvP
-      Z14ClothingOuterArmor6B2: 2000
-      Z14STClothingOuterArmorRCBZ: 1800 # T2 - ENV
-      Z14ClothingOuterArmorZaryaNeutral: 2000 # T2 - PVE
+      Z14ClothingOuterArmor6B2: 1250
+      Z14STClothingOuterArmorRCBZ: 1250 # T2 - ENV
+      Z14ClothingOuterArmorZaryaNeutral: 1250 # T2 - PVE
       STSkinsKitNeutral: 500
-      Z14STClothingOuterArmorSevaNeutral: 4500
 
   - name: shop-category-storage-and-containers
     priority: 7

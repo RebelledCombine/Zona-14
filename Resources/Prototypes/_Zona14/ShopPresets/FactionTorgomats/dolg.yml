@@ -87,29 +87,29 @@
         7mmBuckshotBox: 50 # T0
         8mmBuckshotBox: 750 # T2
         # 7.25
-        Z14725PBox: 90 # T1
-        Z14725LRNPCBox: 500 # Mutant
+        Z14725PBox: 150 # T1
+        Z14725LRNPCBox: 150 # Mutant
         # 9.19
-        Z14919PSOGJBox: 100 # T1
-        Z14919PSTBox: 450 # T2
-        Z14919PBMBox: 1450 # T3
-        Z14919RIPBox: 500 # Mutant
+        Z14919PSOGJBox: 600 # T1
+        Z14919PSTBox: 1080 # T2
+        Z14919PBMBox: 1080 # T3
+        Z14919RIPBox: 600 # Mutant
         # 9.18
-        Z14918PGJBox: 100 # T1
-        Z14918PSTBox: 450 # T2
-        Z14918PBMBox: 1450 # T3
-        Z14918SP7Box: 500 # Mutant
+        Z14918PGJBox: 150 # T1
+        Z14918PSTBox: 270 # T2
+        Z14918PBMBox: 270 # T3
+        Z14918SP7Box: 150 # Mutant
         # 5.45
-        Z14545FMJBox: 500 # T2
-        Z14545HPBox: 625 # Mutant
-        Z14545PCBox: 1650 # T3
+        Z14545FMJBox: 360 # T2
+        Z14545HPBox: 360 # Mutant
+        Z14545PCBox: 650 # T3
         # 7.39
-        Z14739FMJBox: 1950 # T3
-        Z14739HPBox: 750 # Mutant
+        Z14739FMJBox: 480 # T3
+        Z14739HPBox: 480 # Mutant
 
         # 7.54
-        Z14754FMJBox: 2500 # T3
-        Z14754HPBox: 1250 # Mutant
+        Z14754FMJBox: 480 # T3
+        Z14754HPBox: 480 # Mutant
         # Other
 
     - name: shop-category-medicine
@@ -155,11 +155,10 @@
         Z14ClothingHeadHelmetVityaz1M: 3000 #T3
         Z14ClothingHeadAssaultHelmetDolg: 3500 #T3
           # OuterClothing #
-        Z14ClothingOuterJacketDolg: 60 # T1 - PVE
-        Z14STClothingOuterArmorLightPlateVestBaseDolg: 2000 # T2 - PvP
-        Z14ClothingOuterArmorRCBZDolg: 1700 # T2 - ENV
-        Z14ClothingOuterArmorZaryaDolg: 2000 # T2 - Universal
-        Z14ClothingOuterArmorSevaDolgRed: 5250 # T3 - ENV
+        Z14ClothingOuterJacketDolg: 500 # T1 - PVE
+        Z14STClothingOuterArmorLightPlateVestBaseDolg: 1250 # T2 - PvP
+        Z14ClothingOuterArmorRCBZDolg: 1250 # T2 - ENV
+        Z14ClothingOuterArmorZaryaDolg: 1250 # T2 - Universal
         SetPS5MDolgBuyableCrate: 12000 #T3 - PvP
 
     - name: shop-category-storage-and-containers

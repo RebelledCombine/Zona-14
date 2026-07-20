@@ -39,24 +39,22 @@
       priority: 3
       items:
         8mmBuckshotBoxCink: 10
-        Z14754PCBox: 15
-        Z14545BPBoxCink: 10
-        Z14739PCBoxCink: 10
-        Z14939BPBoxCink: 10
-        Z14754HPBoxCink: 10
-        Z14739HPBoxCink: 10
-        Z14545HPBoxCink: 10
+        Z14754PCBox: 1440
+        Z14545BPBoxCink: 48600
+        Z14739PCBoxCink: 57600
+        Z14939BPBoxCink: 13500
+        Z14754HPBoxCink: 22000
+        Z14739HPBoxCink: 32000
+        Z14545HPBoxCink: 27000
         DeathAcidifierImplanter: 1
 
     - name: shop-category-armor
       priority: 4
       items:
-        Z14STClothingOuterArmorBerill5M: 300
         Z14ClothingHeadHelmetBerill5MMilitary: 30
         Z14ClothingHeadAssaultHelmetMilitary: 45
         Z14ClothingHeadHelmetUlach: 80
         Z14ClothingHeadRatnik: 180
-        Z14ClothingOuterArmorBulatMilitary: 500
 
     - name: shop-category-storage-and-containers
       priority: 5

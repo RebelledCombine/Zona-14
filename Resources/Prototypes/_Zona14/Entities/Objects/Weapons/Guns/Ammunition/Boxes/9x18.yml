@@ -4,13 +4,13 @@
   suffix: Z14
   categories: [ Zona14 ]
   name: Ammo Box (9x18) P gzh
-  description: For PMm, 30 rounds per box. Penetrates only class 1 armor.
+  description: For PMm, 50 rounds per box. Penetrates only class 1 armor.
   components:
   - type: MagazineVisuals
     magState: 919ammo2
   - type: BallisticAmmoProvider
     proto: Z14STCartridge918PGJ
-    capacity: 30
+    capacity: 50
     whitelist:
       tags:
         - STCartridge918
@@ -27,7 +27,7 @@
   suffix: Z14
   categories: [ Zona14 ]
   name: Ammo Box (9x18) PST gzh
-  description: For PMm, 30 rounds per box. Penetrates class 2 armor.
+  description: For PMm, 50 rounds per box. Penetrates class 2 armor.
   components:
   - type: BallisticAmmoProvider
     proto: Z14STCartridge918PST
@@ -63,7 +63,7 @@
   suffix: Z14
   categories: [ Zona14 ]
   name: Ammo Box (9x18) PBM gzh
-  description: For PMm, 30 rounds per box. Penetrates class 3 armor.
+  description: For PMm, 50 rounds per box. Penetrates class 3 armor.
   components:
   - type: BallisticAmmoProvider
     proto: Z14STCartridge918PBM
@@ -82,11 +82,11 @@
   suffix: Z14
   categories: [ Zona14 ]
   name: Large Ammo Box (9x18) P gzh
-  description: For PMm, 300 rounds per crate. Penetrates only class 1 armor.
+  description: For PMm, 1280 rounds per crate. Penetrates only class 1 armor.
   components:
   - type: BallisticAmmoProvider
     proto: Z14STCartridge918PGJ
-    capacity: 300
+    capacity: 1280
     whitelist:
       tags:
         - STCartridge918
@@ -103,7 +103,7 @@
   suffix: Z14
   categories: [ Zona14 ]
   name: Large Ammo Box (9x18) PST gzh
-  description: For PMm, 300 rounds per crate. Penetrates class 2 armor.
+  description: For PMm, 1280 rounds per crate. Penetrates class 2 armor.
   components:
   - type: BallisticAmmoProvider
     proto: Z14STCartridge918PST
@@ -137,7 +137,7 @@
   suffix: Z14
   categories: [ Zona14 ]
   name: Large Ammo Box (9x18) PBM gzh
-  description: For PMm, 300 rounds per crate. Penetrates class 3 armor.
+  description: For PMm, 1280 rounds per crate. Penetrates class 3 armor.
   components:
   - type: BallisticAmmoProvider
     proto: Z14STCartridge918PBM

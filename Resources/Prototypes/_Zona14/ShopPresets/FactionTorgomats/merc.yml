@@ -149,20 +149,20 @@
         6mmBuckshotBox: 320 # T1
         7mmBuckshotBox: 45 # T0
         # 9.19
-        Z14919PSOGJBox: 100 # T1
-        Z14919PSTBox: 200 # T2
-        Z14919PBMBox: 1425 # T3
+        Z14919PSOGJBox: 300 # T1
+        Z14919PSTBox: 540 # T2
+        Z14919PBMBox: 540 # T3
         # .45
-        Z1445ACPLFMJBox: 110 # T1
-        Z1445ACPMFMJBox: 220 # T2
-        Z1445ACPAPBox: 1500 # T3
+        Z1445ACPLFMJBox: 300 # T1
+        Z1445ACPMFMJBox: 300 # T2
+        Z1445ACPAPBox: 540 # T3
         # 5.56
-        Z14556FMJBox: 300
-        Z14556M855Box: 1650 # T3
-        Z14556WarmagBox: 550 # Mutant
+        Z14556FMJBox: 240
+        Z14556M855Box: 240 # T3
+        Z14556WarmagBox: 240 # Mutant
         # 7.51
-        Z14751M80Box: 1950 # T3
-        Z14751UNBox: 850 # Mutant
+        Z14751M80Box: 480 # T3
+        Z14751UNBox: 480 # Mutant
 
     - name: shop-category-medicine
       priority: 4
@@ -197,9 +197,8 @@
     - name: shop-category-armor
       priority: 6
       items:
-        Z14ClothingOuterJacketMerc: 50 # T1
-        Z14STClothingOuterArmorLightPlateVestBaseMerc: 1100 # T2 - PvP
-        Z14ClothingOuterArmorSevaMerc: 4600 # T3 - ENV
+        Z14ClothingOuterJacketMerc: 500 # T1
+        Z14STClothingOuterArmorLightPlateVestBaseMerc: 1250 # T2 - PvP
         SetMerc2BuyableCrate: 12000 # T3 - PvP
         SetMercBuyableCrate: 12000 # T3 - PvP
         #Helmets

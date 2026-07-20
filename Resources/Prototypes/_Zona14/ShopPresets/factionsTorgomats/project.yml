@@ -34,7 +34,7 @@
     # Food
     Z14FoodMeatDogCooked: 84
     Z14STFoodMeatSpiderCooked: 42
-    Z14FoodMeatBoarCooked: 132
+    Z14FoodMeatBoarCooked: 80
 
     # Acidic group - 1
     Z14ZoneArtifactBlood: 1440
@@ -142,29 +142,27 @@
     items:
       6mmBuckshotBox: 100
       8mmBuckshotBox: 350
-      Z1445ACPRIPBox: 300
-      Z1445ACPMFMJBox: 150
-      Z1445ACPAPBox: 600
-      Z14556WarmagBox: 250
-      Z14556M855Box: 1300
-      Z14754FMJBox: 1500
-      Z14545HPBox: 150
-      Z14545PCBox: 1250
-      Z14545BPBox: 1900
-      Z14918PBMBox: 600
+      Z1445ACPRIPBox: 500
+      Z1445ACPMFMJBox: 500
+      Z1445ACPAPBox: 900
+      Z14556WarmagBox: 400
+      Z14556M855Box: 400
+      Z14754FMJBox: 800
+      Z14545HPBox: 600
+      Z14545PCBox: 1080
+      Z14545BPBox: 1080
+      Z14918PBMBox: 450
       Z14751UNBox: 800
-      Z14751M80Box: 1600
+      Z14751M80Box: 800
   - name: shop-category-armor
     priority: 4
     items:
-      Z14STClothingOuterArmorProjectZarya: 1200
-      Z14ClothingOuterArmorSevaProjectGROM9: 4500
-      Z14STClothingOuterArmorLightPlateVestBaseProject: 1000
-      Z14STClothingOuterArmorLightPlateVestBaseANAproject: 1500
+      Z14STClothingOuterArmorProjectZarya: 1250
+      Z14STClothingOuterArmorLightPlateVestBaseProject: 1250
+      Z14STClothingOuterArmorLightPlateVestBaseANAproject: 500
       Z14ClothingHeadHelmetInfantryProject: 300
       Z14ClothingHeadHelmetLightProject: 150
       Z14ClothingHeadHelmetBerill5MProject: 3250
-      Z14ClothingOuterArmorBerill5MProject: 10000
   - name: shop-category-storage-and-containers
     priority: 5
     items:

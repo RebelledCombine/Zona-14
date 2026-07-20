@@ -56,19 +56,18 @@
         8mmBuckshotBox: 8
         Arrowboltpiercing: 6
         Arrowboltrust: 5
-        Z14545FMJBox: 10
-        Z14725PTBox: 10
-        Z14918PSTBox: 10
-        Z14754FMJBox: 25
-        Z14739FMJBox: 25
+        Z14545FMJBox: 600
+        Z14725PTBox: 450
+        Z14918PSTBox: 450
+        Z14754FMJBox: 800
+        Z14739FMJBox: 800
     - name: shop-category-armor
       priority: 4
       items:
-        Z14ClothingOuterArmor6B2: 20
+        Z14ClothingOuterArmor6B2: 1250
         ClothingOuterSuitRad: 30
-        Z14STClothingOuterKirasa: 25
-        Z14STClothingOuterArmorLightPlateVestBaseStalker: 40
-        Z14ClothingOuterArmorSSP99: 40
+        Z14STClothingOuterKirasa: 500
+        Z14STClothingOuterArmorLightPlateVestBaseStalker: 1250
     - name: shop-category-storage-and-containers
       priority: 5
       items:

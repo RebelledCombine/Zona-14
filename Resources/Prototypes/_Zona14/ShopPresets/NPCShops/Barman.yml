@@ -215,37 +215,37 @@
         6mmBuckshotBox: 375 # T1
         8mmBuckshotBox: 825 # T2
         # .45
-        Z1445ACPLFMJBox: 100 # T1
-        Z1445ACPMFMJBox: 590 # T2
-        Z1445ACPRIPBox: 750 # Mutant
-        Z1445ACPAPBox: 1600 # T3
+        Z1445ACPLFMJBox: 500 # T1
+        Z1445ACPMFMJBox: 500 # T2
+        Z1445ACPRIPBox: 500 # Mutant
+        Z1445ACPAPBox: 900 # T3
         # 7.25
-        Z14725PBox: 130 # T1
-        Z14725PTBox: 300 # T2
-        Z14725LRNPCBox: 625 # Mutant
-        Z14725PSTBox: 1450 # T3
+        Z14725PBox: 250 # T1
+        Z14725PTBox: 450 # T2
+        Z14725LRNPCBox: 250 # Mutant
+        Z14725PSTBox: 450 # T3
         # 9.19
-        Z14919PSOGJBox: 80 # T1
-        Z14919PSTBox: 560 # T2
-        Z14919RIPBox: 625 # Mutant
-        Z14919PBMBox: 1450 # T3
+        Z14919PSOGJBox: 500 # T1
+        Z14919PSTBox: 900 # T2
+        Z14919RIPBox: 500 # Mutant
+        Z14919PBMBox: 900 # T3
         # 9.18
-        Z14918PGJBox: 80 # T1
-        Z14918PSTBox: 560 # T2
-        Z14918SP7Box: 625 # Mutant
-        Z14918PBMBox: 1425 # T3
+        Z14918PGJBox: 250 # T1
+        Z14918PSTBox: 450 # T2
+        Z14918SP7Box: 250 # Mutant
+        Z14918PBMBox: 450 # T3
         # 5.45
-        Z14545FMJBox: 650 # T2
-        Z14545HPBox: 725 # Mutant
-        Z14545PCBox: 1650 # T3
+        Z14545FMJBox: 600 # T2
+        Z14545HPBox: 600 # Mutant
+        Z14545PCBox: 1080 # T3
         # 5.56
-        Z14556FMJBox: 650 # T2
-        Z14556M855Box: 1650 # T3
-        Z14556WarmagBox: 725 # Mutant
+        Z14556FMJBox: 400 # T2
+        Z14556M855Box: 400 # T3
+        Z14556WarmagBox: 400 # Mutant
         # 7.62
-        Z14739FMJBox: 1950 # T3
-        Z14739HPBox: 850 # Mutant
-        Z14751UNBox: 850 # Mutant
+        Z14739FMJBox: 800 # T3
+        Z14739HPBox: 800 # Mutant
+        Z14751UNBox: 800 # Mutant
 
     - name: shop-category-medicine
       priority: 4
@@ -325,13 +325,10 @@
         # Body Armor
         SetArmourJacketNoviceBrezentBuyableCrate: 1500 # T2 - PvP
         SetArmourJacketNoviceWhiteBuyableCrate: 1500 # T2 - PvP
-        Z14STClothingOuterArmorLightPlateVestBaseANAgreenOld: 2000 # T3 - Weak
-        Z14STClothingOuterArmorLightPlateVestBaseANAgrayOld: 2000 # T3 - Weak
-        Z14ClothingOuterArmorSevaStalker: 7000 # T3 - ENV
+        Z14STClothingOuterArmorLightPlateVestBaseANAgreenOld: 500 # T3 - Weak
+        Z14STClothingOuterArmorLightPlateVestBaseANAgrayOld: 500 # T3 - Weak
         SetZaryaStalkerBuyableCrate: 2250 # T2 - PVE
-        Z14ClothingOuterArmorStalker: 14000 # T3 - PvP
-        Z14ClothingOuterArmorAborigineStalker: 10000 # T3 - PvE
-        Z14ClothingOuterArmor6B2: 2250 # T2
+        Z14ClothingOuterArmor6B2: 1250 # T2
         # Helmet
         Z14ClothingHeadHelmetVityaz1C: 3500 # T3 - PvP
         Z14ClothingHeadHelmetInfantry: 500 # T2

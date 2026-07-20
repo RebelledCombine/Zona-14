@@ -130,30 +130,30 @@
         6mmBuckshotBox: 150
         8mmBuckshotBox: 300
         # 5.45
-        Z14545FMJBox: 500
-        Z14545HPBox: 250
-        Z14545PCBox: 1250
+        Z14545FMJBox: 600
+        Z14545HPBox: 600
+        Z14545PCBox: 1080
         # 7.39
-        Z14739HPBox: 400
-        Z14739FMJBox: 1350
+        Z14739HPBox: 800
+        Z14739FMJBox: 800
         # 7.54
-        Z14754HPBox: 500
-        Z14754FMJBox: 1675
+        Z14754HPBox: 800
+        Z14754FMJBox: 800
         # 9.18
-        Z14918PGJBox: 80
-        Z14918PSTBox: 560
-        Z14918PBMBox: 1000
+        Z14918PGJBox: 250
+        Z14918PSTBox: 450
+        Z14918PBMBox: 450
         Z14918SP7Box: 250
         # 9.19
-        Z14919PSOGJBox: 80
-        Z14919PSTBox: 560
-        Z14919RIPBox: 250
-        Z14919PBMBox: 1000
+        Z14919PSOGJBox: 500
+        Z14919PSTBox: 900
+        Z14919RIPBox: 500
+        Z14919PBMBox: 900
         # 7.25
-        Z14725PBox: 100
-        Z14725LRNPCBox: 50
-        Z14725PTBox: 465
-        Z14725PSTBox: 1000
+        Z14725PBox: 250
+        Z14725LRNPCBox: 250
+        Z14725PTBox: 450
+        Z14725PSTBox: 450
     - name: shop-category-armor
       priority: 4
       items:
@@ -163,10 +163,8 @@
         Z14ClothingHeadHelmetVityaz1T: 2700
         Z14ClothingHeadAssaultHelmetDeserter: 3000
           # OuterClothing #
-        Z14ClothingOuterArmorDeserter6B2: 2000
-        Z14STClothingOuterArmorDesertersZarya: 2000 # T2 - PVE
-        Z14STClothingOuterArmorDesertersPSZ7: 5800
-        Z14STClothingOuterIOTVGEN4: 10000
+        Z14ClothingOuterArmorDeserter6B2: 1250
+        Z14STClothingOuterArmorDesertersZarya: 1250 # T2 - PVE
         # belt
         ClothingBeltWebbingDeserter: 325
         ClothingBeltTarzanDeserter: 150
