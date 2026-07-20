@@ -145,15 +145,15 @@
       Z1445ACPRIPBox: 500
       Z1445ACPMFMJBox: 500
       Z1445ACPAPBox: 900
-      Z14556WarmagBox: 400
-      Z14556M855Box: 400
+      Z14556WarmagBox: 1200
+      Z14556M855Box: 1200
       Z14754FMJBox: 800
-      Z14545HPBox: 600
-      Z14545PCBox: 1080
-      Z14545BPBox: 1080
+      Z14545HPBox: 1200
+      Z14545PCBox: 2160
+      Z14545BPBox: 2160
       Z14918PBMBox: 450
-      Z14751UNBox: 800
-      Z14751M80Box: 800
+      Z14751UNBox: 1600
+      Z14751M80Box: 1600
   - name: shop-category-armor
     priority: 4
     items:

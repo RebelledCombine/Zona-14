@@ -12,9 +12,9 @@
       Z14919PBMBox: 900
       Z14918PBMBox: 450
       # 5.56
-      Z14556M856Box: 400
+      Z14556M856Box: 1200
       # 5.45
-      Z14545BPBox: 1080
+      Z14545BPBox: 2160
       # .45
       Z1445ACPAPBox: 900
   # armor category removed: its only stock was a T3 suit, and T3+ is crafted, not sold

@@ -56,11 +56,11 @@
         8mmBuckshotBox: 8
         Arrowboltpiercing: 6
         Arrowboltrust: 5
-        Z14545FMJBox: 600
+        Z14545FMJBox: 1200
         Z14725PTBox: 450
         Z14918PSTBox: 450
         Z14754FMJBox: 800
-        Z14739FMJBox: 800
+        Z14739FMJBox: 2400
     - name: shop-category-armor
       priority: 4
       items:

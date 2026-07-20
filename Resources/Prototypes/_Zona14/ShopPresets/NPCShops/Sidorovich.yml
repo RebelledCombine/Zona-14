@@ -215,10 +215,10 @@
         7mmBuckshotBox: 50 # T0
         6mmBuckshotBox: 275 # T1
         # 5.45
-        Z14545FMJBox: 600 # T2
-        Z14545HPBox: 600 # Mutant
+        Z14545FMJBox: 1200 # T2
+        Z14545HPBox: 1200 # Mutant
         # 7.39
-        Z14739HPBox: 800 # Mutant
+        Z14739HPBox: 2400 # Mutant
         # 7.54
         Z14754HPBox: 800 # Mutant
         # 9.18

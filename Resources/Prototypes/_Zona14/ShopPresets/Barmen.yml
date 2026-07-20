@@ -195,18 +195,18 @@
         Z14918PBMBox: 450
         Z14918SP7Box: 250
         # 5.45
-        Z14545FMJBox: 600
-        Z14545HPBox: 600
-        Z14545PCBox: 1080
+        Z14545FMJBox: 1200
+        Z14545HPBox: 1200
+        Z14545PCBox: 2160
 
         # 5.56
-        Z14556FMJBox: 400
-        Z14556M855Box: 400
-        Z14556WarmagBox: 400
+        Z14556FMJBox: 1200
+        Z14556M855Box: 1200
+        Z14556WarmagBox: 1200
 
         # 7.39
-        Z14739FMJBox: 800
-        Z14739HPBox: 800
+        Z14739FMJBox: 2400
+        Z14739HPBox: 2400
     - name: shop-category-armor
       priority: 3
       items:

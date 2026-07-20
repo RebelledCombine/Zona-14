@@ -130,12 +130,12 @@
         6mmBuckshotBox: 150
         8mmBuckshotBox: 300
         # 5.45
-        Z14545FMJBox: 600
-        Z14545HPBox: 600
-        Z14545PCBox: 1080
+        Z14545FMJBox: 1200
+        Z14545HPBox: 1200
+        Z14545PCBox: 2160
         # 7.39
-        Z14739HPBox: 800
-        Z14739FMJBox: 800
+        Z14739HPBox: 2400
+        Z14739FMJBox: 2400
         # 7.54
         Z14754HPBox: 800
         Z14754FMJBox: 800

@@ -235,17 +235,17 @@
         Z14918SP7Box: 250 # Mutant
         Z14918PBMBox: 450 # T3
         # 5.45
-        Z14545FMJBox: 600 # T2
-        Z14545HPBox: 600 # Mutant
-        Z14545PCBox: 1080 # T3
+        Z14545FMJBox: 1200 # T2
+        Z14545HPBox: 1200 # Mutant
+        Z14545PCBox: 2160 # T3
         # 5.56
-        Z14556FMJBox: 400 # T2
-        Z14556M855Box: 400 # T3
-        Z14556WarmagBox: 400 # Mutant
+        Z14556FMJBox: 1200 # T2
+        Z14556M855Box: 1200 # T3
+        Z14556WarmagBox: 1200 # Mutant
         # 7.62
-        Z14739FMJBox: 800 # T3
-        Z14739HPBox: 800 # Mutant
-        Z14751UNBox: 800 # Mutant
+        Z14739FMJBox: 2400 # T3
+        Z14739HPBox: 2400 # Mutant
+        Z14751UNBox: 1600 # Mutant
 
     - name: shop-category-medicine
       priority: 4

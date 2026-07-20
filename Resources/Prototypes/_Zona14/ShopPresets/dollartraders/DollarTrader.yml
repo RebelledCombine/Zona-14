@@ -106,7 +106,7 @@
       Z14725PSTBoxCink: 12600
       8mmBuckshotBoxCink: 40
       Z14754PCBox: 1440
-      Z14STBox9x39PSO: 400
+      Z14STBox9x39PSO: 800
       ShotgunBulletBoxRIP: 5
   - name: shop-category-armor
     priority: 4

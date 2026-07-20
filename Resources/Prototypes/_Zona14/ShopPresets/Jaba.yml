@@ -158,14 +158,14 @@
       7mmBuckshotBox: 40
       6mmBuckshotBox: 150
       # 5.56
-      Z14556FMJBox: 400
-      Z14556WarmagBox: 400
+      Z14556FMJBox: 1200
+      Z14556WarmagBox: 1200
       # 5.45
-      Z14545FMJBox: 600
-      Z14545HPBox: 600
+      Z14545FMJBox: 1200
+      Z14545HPBox: 1200
       # 7.39
-      Z14739HPBox: 800
-      Z14739FMJBox: 800
+      Z14739HPBox: 2400
+      Z14739FMJBox: 2400
       # 7.54
       Z14754HPBox: 800
       Z14754FMJBox: 800
@@ -182,8 +182,8 @@
       Z14725LRNPCBox: 250
       Z14725PTBox: 450
       # 7.51
-      Z14751UNBox: 800
-      Z14751M80Box: 800
+      Z14751UNBox: 1600
+      Z14751M80Box: 1600
       #45
       Z1445ACPRIPBox: 500
       Z1445ACPLFMJBox: 500

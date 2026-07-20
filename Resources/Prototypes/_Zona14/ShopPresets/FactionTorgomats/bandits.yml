@@ -186,39 +186,39 @@
         7mmBuckshotBox: 75 # T0
         8mmBuckshotBox: 800 # T2
         # 7.25
-        Z14725PBox: 250 # T1
-        Z14725LRNPCBox: 250 # Mutant
-        Z14725PTBox: 450 # T2
-        Z14725PSTBox: 450 # T3
+        Z14725PBox: 150 # T1
+        Z14725LRNPCBox: 150 # Mutant
+        Z14725PTBox: 270 # T2
+        Z14725PSTBox: 270 # T3
         # 9.19
-        Z14919PSOGJBox: 500 # T1
-        Z14919PSTBox: 900 # T2
-        Z14919PBMBox: 900 # T3
-        Z14919RIPBox: 500 # Mutant
+        Z14919PSOGJBox: 300 # T1
+        Z14919PSTBox: 540 # T2
+        Z14919PBMBox: 540 # T3
+        Z14919RIPBox: 300 # Mutant
         # 9.18
-        Z14918PGJBox: 250 # T1
-        Z14918PSTBox: 450 # T2
-        Z14918PBMBox: 450 # T3
-        Z14918SP7Box: 250 # Mutant
+        Z14918PGJBox: 150 # T1
+        Z14918PSTBox: 270 # T2
+        Z14918PBMBox: 270 # T3
+        Z14918SP7Box: 150 # Mutant
         # 5.45
-        Z14545FMJBox: 600 # T2
-        Z14545HPBox: 600 # Mutant
-        Z14545PCBox: 1080 # T3
+        Z14545FMJBox: 1440 # T2
+        Z14545HPBox: 1440 # Mutant
+        Z14545PCBox: 2590 # T3
         # 5.56
-        Z14556FMJBox: 400 # T2
-        Z14556WarmagBox: 400 # Mutant
-        Z14556M855Box: 400 # T3
+        Z14556FMJBox: 1440 # T2
+        Z14556WarmagBox: 1440 # Mutant
+        Z14556M855Box: 1440 # T3
         # 7.39
-        Z14739HPBox: 800 # Mutant
-        Z14739FMJBox: 800 # T3
+        Z14739HPBox: 2880 # Mutant
+        Z14739FMJBox: 2880 # T3
         # 7.54
-        Z14754FMJBox: 800 # T3
-        Z14754HPBox: 800 # Mutant
+        Z14754FMJBox: 960 # T3
+        Z14754HPBox: 960 # Mutant
         # .45
-        Z1445ACPLFMJBox: 500 # T1
-        Z1445ACPMFMJBox: 500 # T2
-        Z1445ACPAPBox: 900 # T3
-        Z1445ACPRIPBox: 500 # Mutant
+        Z1445ACPLFMJBox: 300 # T1
+        Z1445ACPMFMJBox: 300 # T2
+        Z1445ACPAPBox: 540 # T3
+        Z1445ACPRIPBox: 300 # Mutant
 
     - name: shop-category-medicine # 50% discount from stalkers
       priority: 4

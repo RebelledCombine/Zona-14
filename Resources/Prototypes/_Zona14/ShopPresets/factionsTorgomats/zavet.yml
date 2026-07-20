@@ -120,13 +120,13 @@
         Z14918PBMBox: 450
         Z14918SP7Box: 250
         # 5.56
-        Z14556FMJBox: 400
-        Z14556WarmagBox: 400
-        Z14556M855Box: 400
-        Z14556M856Box: 400
+        Z14556FMJBox: 1200
+        Z14556WarmagBox: 1200
+        Z14556M855Box: 1200
+        Z14556M856Box: 1200
         # 7.51
-        Z14751M80Box: 800
-        Z14751UNBox: 800
+        Z14751M80Box: 1600
+        Z14751UNBox: 1600
         # 7.54
         Z14754FMJBox: 800
         # .45

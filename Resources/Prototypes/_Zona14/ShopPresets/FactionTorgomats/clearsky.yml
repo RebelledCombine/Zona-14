@@ -222,19 +222,19 @@
       Z1445ACPRIPBox: 500 # Mutant
       Z1445ACPAPBox: 900 # T3
       # 5.45
-      Z14545HPBox: 600 # Mutant
-      Z14545PCBox: 1080 # T3
-      Z14545FMJBox: 600 # T2
+      Z14545HPBox: 1200 # Mutant
+      Z14545PCBox: 2160 # T3
+      Z14545FMJBox: 1200 # T2
       # 5.56
-      Z14556WarmagBox: 400 # Mutant
-      Z14556FMJBox: 400 # T2
-      Z14556M855Box: 400 # T3
+      Z14556WarmagBox: 1200 # Mutant
+      Z14556FMJBox: 1200 # T2
+      Z14556M855Box: 1200 # T3
       # 7.39
-      Z14739HPBox: 800 # Mutant
-      Z14739FMJBox: 800 # T3
+      Z14739HPBox: 2400 # Mutant
+      Z14739FMJBox: 2400 # T3
       # 7.51
-      Z14751UNBox: 800 # Mutant
-      Z14751M80Box: 800 # T3
+      Z14751UNBox: 1600 # Mutant
+      Z14751M80Box: 1600 # T3
       # 7.54
       Z14754HPBox: 800 # Mutant
       Z14754FMJBox: 800 # T3

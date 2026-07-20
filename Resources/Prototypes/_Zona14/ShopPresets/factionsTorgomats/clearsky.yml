@@ -157,17 +157,17 @@
         Z14918PBMBox: 450
         Z14918SP7Box: 250
         # 9.21 #ADDED(ALL 9. 21)
-        Z14921PEGJBox: 400
-        Z14921PGJBox: 400
-        Z14921BTGJBox: 720
+        Z14921PEGJBox: 800
+        Z14921PGJBox: 800
+        Z14921BTGJBox: 1440
         # 5.56
-        Z14556FMJBox: 400
-        Z14556WarmagBox: 400
-        Z14545FMJBox: 600
-        Z14545HPBox: 600
+        Z14556FMJBox: 1200
+        Z14556WarmagBox: 1200
+        Z14545FMJBox: 1200
+        Z14545HPBox: 1200
         # 7.51
-        Z14751UNBox: 800 #ADDED
-        Z14751M80Box: 800 #CHANGED
+        Z14751UNBox: 1600 #ADDED
+        Z14751M80Box: 1600 #CHANGED
         # 7.54
         Z14754FMJBox: 800
 

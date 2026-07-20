@@ -11,7 +11,7 @@
     steps: 2
     zeroVisible: false
   - type: BallisticAmmoProvider
-    capacity: 20
+    capacity: 40
     proto: Z14STCartridge9x39SP5
     whitelist:
       tags:

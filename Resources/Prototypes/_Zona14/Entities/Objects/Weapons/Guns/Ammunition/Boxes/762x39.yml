@@ -4,12 +4,12 @@
   suffix: Z14
   categories: [ Zona14 ]
   name: Ammo Box (7.62x39) FMJ
-  description: For select Kalashnikov rifle models, 20 rounds per box. Penetrates class 3 armor.
+  description: For select Kalashnikov rifle models, 60 rounds per box. Penetrates class 3 armor.
   components:
   - type: MagazineVisuals
     magState: 76239ammo
   - type: BallisticAmmoProvider
-    capacity: 20
+    capacity: 60
     proto: Z14STCartridge739FMJ
     whitelist:
       tags:
@@ -27,7 +27,7 @@
   suffix: Z14
   categories: [ Zona14 ]
   name: PS Ammo Box (7.62x39)
-  description: For select Kalashnikov rifle models, 20 rounds per box. Penetrates class 4 armor.
+  description: For select Kalashnikov rifle models, 60 rounds per box. Penetrates class 4 armor.
   components:
   - type: BallisticAmmoProvider
     proto: Z14STCartridge739PC
@@ -45,7 +45,7 @@
   suffix: Z14
   categories: [ Zona14 ]
   name: Ammo Box (7.62x39) HP
-  description: For select Kalashnikov rifle models, 20 rounds per box. Useless against armor.
+  description: For select Kalashnikov rifle models, 60 rounds per box. Useless against armor.
   components:
   - type: BallisticAmmoProvider
     proto: Z14STCartridge739HP
@@ -63,7 +63,7 @@
   suffix: Z14
   categories: [ Zona14 ]
   name: Ammo Box (7.62x39) BP
-  description: For select Kalashnikov rifle models, 20 rounds per box. Penetrates class 5 armor.
+  description: For select Kalashnikov rifle models, 60 rounds per box. Penetrates class 5 armor.
   components:
   - type: BallisticAmmoProvider
     proto: Z14STCartridge739BP

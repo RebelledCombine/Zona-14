@@ -157,12 +157,12 @@
         Z1445ACPMFMJBox: 300 # T2
         Z1445ACPAPBox: 540 # T3
         # 5.56
-        Z14556FMJBox: 240
-        Z14556M855Box: 240 # T3
-        Z14556WarmagBox: 240 # Mutant
+        Z14556FMJBox: 720
+        Z14556M855Box: 720 # T3
+        Z14556WarmagBox: 720 # Mutant
         # 7.51
-        Z14751M80Box: 480 # T3
-        Z14751UNBox: 480 # Mutant
+        Z14751M80Box: 960 # T3
+        Z14751UNBox: 960 # Mutant
 
     - name: shop-category-medicine
       priority: 4

@@ -100,12 +100,12 @@
         Z14918PBMBox: 270 # T3
         Z14918SP7Box: 150 # Mutant
         # 5.45
-        Z14545FMJBox: 360 # T2
-        Z14545HPBox: 360 # Mutant
-        Z14545PCBox: 650 # T3
+        Z14545FMJBox: 720 # T2
+        Z14545HPBox: 720 # Mutant
+        Z14545PCBox: 1295 # T3
         # 7.39
-        Z14739FMJBox: 480 # T3
-        Z14739HPBox: 480 # Mutant
+        Z14739FMJBox: 1440 # T3
+        Z14739HPBox: 1440 # Mutant
 
         # 7.54
         Z14754FMJBox: 480 # T3

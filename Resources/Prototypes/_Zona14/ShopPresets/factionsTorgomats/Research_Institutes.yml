@@ -141,12 +141,12 @@
       8mmBuckshotBox: 420
       Z14MagazineBoxRemingtonMagnum: 320
       Z14MagazineBoxRemingtonMagnumAP: 520
-      Z14545HPBox: 600
-      Z14545FMJBox: 600
-      Z14545PCBox: 1080
-      Z14556WarmagBox: 400
-      Z14556FMJBox: 400
-      Z14556M855Box: 400
+      Z14545HPBox: 1200
+      Z14545FMJBox: 1200
+      Z14545PCBox: 2160
+      Z14556WarmagBox: 1200
+      Z14556FMJBox: 1200
+      Z14556M855Box: 1200
   - name: shop-category-armor
     priority: 4
     items:
