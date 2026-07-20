@@ -92,18 +92,18 @@
     priority: 4
     items:
       # OuterClothing #
-      STClothingOuterArmorRCBZ: 2000
-      STClothingOuterArmorLightPlateVestBaseStalker: 2000
-      ClothingOuterArmor6B2: 3000
-      ClothingHeadHelmetInfantry: 400
-      STClothingHeadHelmetMakeshiftTacticalT3: 1500
-      ClothingOuterArmorSpark: 1500
-      ClothingOuterArmorZaryaStalkerModifedType2: 2000
-      ClothingOuterArmorZaryaStalkerModifedType1: 3500
-      ClothingOuterArmorZaryaHunter: 2000
-      ClothingHeadHelmetVityaz1C: 3500
-      ClothingOuterArmorAborigineStalker: 6000
-      ClothingOuterArmorStalker: 7500
+      Z14STClothingOuterArmorRCBZ: 2000
+      Z14STClothingOuterArmorLightPlateVestBaseStalker: 2000
+      Z14ClothingOuterArmor6B2: 3000
+      Z14ClothingHeadHelmetInfantry: 400
+      Z14STClothingHeadHelmetMakeshiftTacticalT3: 1500
+      Z14ClothingOuterArmorSpark: 1500
+      Z14ClothingOuterArmorZaryaStalkerModifedType2: 2000
+      Z14ClothingOuterArmorZaryaStalkerModifedType1: 3500
+      Z14ClothingOuterArmorZaryaHunter: 2000
+      Z14ClothingHeadHelmetVityaz1C: 3500
+      Z14ClothingOuterArmorAborigineStalker: 6000
+      Z14ClothingOuterArmorStalker: 7500
   - name: shop-category-storage-and-containers
     priority: 5
     items:
@@ -119,9 +119,9 @@
   - name: shop-category-raincoats-and-gasmasks
     priority: 6
     items:
-      ClothingMaskXoma: 100 # T1
-      ClothingMaskGP5: 200 # T2
-      ClothingMaskGP7: 600 # T3
+      Z14ClothingMaskXoma: 100 # T1
+      Z14ClothingMaskGP5: 200 # T2
+      Z14ClothingMaskGP7: 600 # T3
   - name: shop-category-research-equipment
     priority: 7
     items:
@@ -180,7 +180,7 @@
       Bloodpack: 1000
       MedkitAI2: 200
       Defibrillator: 1000
-      AntiRadMedipen: 200
+      Z14AntiRadMedipen: 200
   - name: shop-category-modules
     priority: 11
     items:
@@ -203,8 +203,8 @@
     # Thermal group - 1
     ZoneArtifactFireball: 400
     ZoneArtifactEye: 600
-    ZoneArtifactFlame: 1200
-    ZoneArtifactBunch: 1150
+    Z14ZoneArtifactFlame: 1200
+    Z14ZoneArtifactBunch: 1150
     ZoneArtifactRock: 1000
     ZoneArtifactSun: 1900
     ZoneArtifactRoot: 2100
@@ -214,10 +214,10 @@
     ZoneArtifactLithosphere: 4800
     # Electrical group - 1
     ZoneArtifactSparkler: 400
-    ZoneArtifactBattery: 600
-    ZoneArtifactFlash: 1200
+    Z14ZoneArtifactBattery: 600
+    Z14ZoneArtifactFlash: 1200
     ZoneArtifactAccumulator: 900
-    ZoneArtifactDiamond: 1900
+    Z14ZoneArtifactDiamond: 1900
     ZoneArtifactCharger: 1900
     ArtMoon: 2400
     ZoneArtifactTesla: 3600
@@ -239,23 +239,23 @@
     ZoneArtifactGoldfish: 4800
     ZoneArtifactSpring: 3600
     ZoneArtifactFocus: 3600
-    ZoneArtifactStuntman: 4800
+    Z14ZoneArtifactStuntman: 4800
     ZoneArtifactDistorter: 4800
-    ZoneArtifactSoul: 3600
+    Z14ZoneArtifactSoul: 3600
     ZoneArtifactCompass: 2450
     ZoneArtifactCrucifix: 2800
-    ZoneArtifactThorn: 2500 # kesha whimsy
+    Z14ZoneArtifactThorn: 2500 # kesha whimsy
     ZoneArtifactArf: 410
     # Acidic group - 1
     ZoneArtifactToxic: 500
     ZoneArtifactCytoplasm: 2100
     ZoneArtifactBlood: 1200
-    ZoneArtifactMeat: 2400
-    ZoneArtifactKolobok: 3600
+    Z14ZoneArtifactMeat: 2400
+    Z14ZoneArtifactKolobok: 3600
     ZoneArtifactBeer: 750
     # Acidic group - 2
     ZoneArtifactPellicle: 400
-    ZoneArtifactBaloon: 3600
+    Z14ZoneArtifactBaloon: 3600
 
 # MARK: Mutant Parts
      # Mutant parts
@@ -440,14 +440,14 @@
       priority: 4
       items:
           # OuterClothing #
-        STClothingOuterArmorLightPlateVestBaseStalker: 1250
-        ClothingOuterArmor6B2: 2000
-        ClothingHeadHelmetInfantry: 400
-        STClothingHeadHelmetMakeshiftTacticalT3: 1000
-        ClothingOuterArmorSpark: 1750
-        ClothingOuterArmorZaryaStalkerModifedType2: 2500
-        ClothingOuterArmorZaryaStalkerModifedType1: 3800
-        ClothingOuterArmorZaryaHunter: 2500
+        Z14STClothingOuterArmorLightPlateVestBaseStalker: 1250
+        Z14ClothingOuterArmor6B2: 2000
+        Z14ClothingHeadHelmetInfantry: 400
+        Z14STClothingHeadHelmetMakeshiftTacticalT3: 1000
+        Z14ClothingOuterArmorSpark: 1750
+        Z14ClothingOuterArmorZaryaStalkerModifedType2: 2500
+        Z14ClothingOuterArmorZaryaStalkerModifedType1: 3800
+        Z14ClothingOuterArmorZaryaHunter: 2500
     - name: shop-category-storage-and-containers
       priority: 5
       items:
@@ -463,9 +463,9 @@
     - name: shop-category-raincoats-and-gasmasks
       priority: 6
       items:
-        ClothingMaskXoma: 600 # T1
-        ClothingMaskGP5: 500 # T1
-        ClothingMaskGP7: 3800 # T3
+        Z14ClothingMaskXoma: 600 # T1
+        Z14ClothingMaskGP5: 500 # T1
+        Z14ClothingMaskGP7: 3800 # T3
     - name: shop-category-research-equipment
       priority: 7
       items:
@@ -528,7 +528,7 @@
         Bloodpack: 1000
         MedkitAI2: 200
         Defibrillator: 1000
-        AntiRadMedipen: 200
+        Z14AntiRadMedipen: 200
     - name: shop-category-modules
       priority: 11
       items:

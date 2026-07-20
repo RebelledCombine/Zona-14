@@ -7,7 +7,7 @@
     priority: 1
     items:
       # 5,45x39
-      STWeaponRifleAKS74U: 3
+      Z14STWeaponRifleAKS74U: 3
   - name: shop-category-magazines
     priority: 2
     items:
@@ -25,11 +25,11 @@
     priority: 6
     items:
       # ARMOR
-      STClothingOuterArmorLightPlateVestBasePSZ7rene: 22
-      ClothingHeadHelmetVityazSkull1: 2 #rueco
-      ClothingHeadHelmetVityazSkull2: 2 #rueco
-      ClothingHeadHelmetVityazSkull3: 2 #rueco
-      ClothingHeadHelmetVityazSkull4: 2 #rueco
+      Z14STClothingOuterArmorLightPlateVestBasePSZ7rene: 22
+      Z14ClothingHeadHelmetVityazSkull1: 2 #rueco
+      Z14ClothingHeadHelmetVityazSkull2: 2 #rueco
+      Z14ClothingHeadHelmetVityazSkull3: 2 #rueco
+      Z14ClothingHeadHelmetVityazSkull4: 2 #rueco
   # - name: shop-category-storage-and-containers
   #   priority: 7
   #   items:
