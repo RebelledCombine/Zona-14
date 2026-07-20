@@ -1,7 +1,7 @@
 - type: craftRecipe
   id: Z14newrecipeClothingHeadHelmetBulatMilitary
   resultProtos:
-    - ClothingHeadHelmetBulatMilitary
+    - Z14ClothingHeadHelmetBulatMilitary
   craftTime: 10
   items:
     ClothingHeadHelmetBulatMilitaryBlueprint:
@@ -26,7 +26,7 @@
 - type: craftRecipe
   id: Z14newrecipeClothingHeadUlachHelmet
   resultProtos:
-    - ClothingHeadHelmetUlach
+    - Z14ClothingHeadHelmetUlach
   craftTime: 12
   items:
     ClothingHeadHelmetUlachBlueprint:
@@ -49,7 +49,7 @@
 - type: craftRecipe
   id: Z14newrecipeClothingHeadRatnikHelmet
   resultProtos:
-    - ClothingHeadRatnik
+    - Z14ClothingHeadRatnik
   craftTime: 12
   items:
     ClothingHeadHelmetRatnikBlueprint:

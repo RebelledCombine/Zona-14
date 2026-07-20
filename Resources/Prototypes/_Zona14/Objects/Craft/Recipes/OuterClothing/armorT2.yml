@@ -1,7 +1,7 @@
 - type: craftRecipe
   id: Z14recipeZaryaHunter
   resultProtos:
-    - ClothingOuterArmorZaryaStalker
+    - Z14ClothingOuterArmorZaryaStalker
   craftTime: 10
   items:
     ClothingOuterArmorZaryaHunterBlueprint:
@@ -19,10 +19,10 @@
 - type: craftRecipe
   id: Z14newrecipeClothingOuterArmorZaryaStalkerModifedType1
   resultProtos:
-    - ClothingOuterArmorZaryaStalkerModifedType1
+    - Z14ClothingOuterArmorZaryaStalkerModifedType1
   craftTime: 10
   items:
-    ClothingOuterArmorZaryaStalker:
+    Z14ClothingOuterArmorZaryaStalker:
       amount: 1
     ClothingOuterArmorZaryaStalkerModifedType1Blueprint:
       amount: 1
@@ -38,10 +38,10 @@
 - type: craftRecipe
   id: Z14newrecipeClothingOuterArmorZaryaStalkerModifedType2
   resultProtos:
-    - ClothingOuterArmorZaryaStalkerModifedType2
+    - Z14ClothingOuterArmorZaryaStalkerModifedType2
   craftTime: 10
   items:
-    ClothingOuterArmorZaryaStalker:
+    Z14ClothingOuterArmorZaryaStalker:
       amount: 1
     ClothingOuterArmorZaryaStalkerModifedType2Blueprint:
       amount: 1
@@ -57,7 +57,7 @@
 - type: craftRecipe
   id: Z14newrecipeClothingOuterArmor6B2
   resultProtos:
-    - ClothingOuterArmor6B2
+    - Z14ClothingOuterArmor6B2
   craftTime: 5
   items:
     STClothingOuterArmor6B2Blueprint:
@@ -75,7 +75,7 @@
 - type: craftRecipe
   id: Z14newrecipeSTClothingOuterArmorLightPlateVestBaseStalker
   resultProtos:
-    - STClothingOuterArmorLightPlateVestBaseStalker
+    - Z14STClothingOuterArmorLightPlateVestBaseStalker
   craftTime: 5
   items:
     STClothingOuterArmorLightPlateVestBaseStalkerBlueprint:
@@ -96,7 +96,7 @@
 - type: craftRecipe
   id: Z14newrecipeClothingOuterArmorCN1
   resultProtos:
-    - ClothingOuterArmorCN1
+    - Z14ClothingOuterArmorCN1
   craftTime: 5
   items:
     ClothingOuterArmorCN1Blueprint:
@@ -115,13 +115,13 @@
 - type: craftRecipe
   id: Z14newrecipeClothingOuterArmorSpark
   resultProtos:
-    - ClothingOuterArmorSpark
+    - Z14ClothingOuterArmorSpark
   craftTime: 5
   items:
     ClothingOuterArmorSparkBlueprint:
       amount: 1
       catalyzer: true
-    ClothingOuterArmorZaryaStalker:
+    Z14ClothingOuterArmorZaryaStalker:
       amount: 1
     STCraftBasicThreadKitT1:
       amount: 1
@@ -133,7 +133,7 @@
 - type: craftRecipe
   id: Z14newrecipeClothingOuterArmourJacketStalker
   resultProtos:
-    - ClothingOuterArmourJacketStalker
+    - Z14ClothingOuterArmourJacketStalker
   craftTime: 5
   items:
     ClothingOuterArmourJacketStalkerBlueprint:
@@ -143,13 +143,13 @@
       amount: 1
     STCraftBasicThreadKitT1:
       amount: 1
-    ClothingOuterJacketStalker:
+    Z14ClothingOuterJacketStalker:
       amount: 1
 
 - type: craftRecipe
   id: Z14newrecipeClothingOuterArmourJacketBandit
   resultProtos:
-    - ClothingOuterArmourJacketBandit
+    - Z14ClothingOuterArmourJacketBandit
   craftTime: 5
   items:
     ClothingOuterArmourJacketBanditBlueprint:
@@ -159,19 +159,19 @@
       amount: 1
     STCraftBasicThreadKitT1:
       amount: 1
-    ClothingOuterJacketBandit:
+    Z14ClothingOuterJacketBandit:
       amount: 1
 
 - type: craftRecipe
   id: Z14newrecipeClothingOuterArmourCoatBanditBlack
   resultProtos:
-    - ClothingOuterArmourCoatBanditBlack
+    - Z14ClothingOuterArmourCoatBanditBlack
   craftTime: 5
   items:
     ClothingOuterArmourCoatBanditBlackBlueprint:
       amount: 1
       catalyzer: true
-    ClothingOuterCoatBanditBlack:
+    Z14ClothingOuterCoatBanditBlack:
       amount: 1
     STCraftSheetIronT2:
       amount: 2
@@ -181,13 +181,13 @@
 - type: craftRecipe
   id: Z14newrecipeClothingOuterArmourCoatBanditBrown
   resultProtos:
-    - ClothingOuterArmourCoatBanditBrown
+    - Z14ClothingOuterArmourCoatBanditBrown
   craftTime: 5
   items:
     ClothingOuterArmourCoatBanditBrownBlueprint:
       amount: 1
       catalyzer: true
-    ClothingOuterCoatBanditBrown:
+    Z14ClothingOuterCoatBanditBrown:
       amount: 1
     STCraftSheetIronT2:
       amount: 2
@@ -200,7 +200,7 @@
 - type: craftRecipe
   id: Z14newrecipeClothingOuterArmorZN1
   resultProtos:
-    - ClothingOuterArmorZN1
+    - Z14ClothingOuterArmorZN1
   craftTime: 15
   items:
     ClothingOuterArmorZN1Blueprint:

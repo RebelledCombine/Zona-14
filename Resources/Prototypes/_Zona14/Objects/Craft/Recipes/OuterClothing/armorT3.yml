@@ -1,7 +1,7 @@
 - type: craftRecipe
   id: Z14newrecipeClothingOuterArmorAborigineStalker
   resultProtos:
-    - ClothingOuterArmorAborigineStalker
+    - Z14ClothingOuterArmorAborigineStalker
   craftTime: 6
   items:
     ClothingOuterArmorAborigineStalkerBlueprint:
@@ -26,7 +26,7 @@
 - type: craftRecipe
   id: Z14newrecipeSTClothingOuterArmorLightPlateVestBasePSZ7
   resultProtos:
-    - STClothingOuterArmorLightPlateVestBasePSZ7
+    - Z14STClothingOuterArmorLightPlateVestBasePSZ7
   craftTime: 10
   items:
     STClothingOuterArmorLightPlateVestBasePSZ7Blueprint:
@@ -48,7 +48,7 @@
 - type: craftRecipe
   id: Z14newrecipeClothingOuterArmorSevaStalker
   resultProtos:
-    - ClothingOuterArmorSevaStalker
+    - Z14ClothingOuterArmorSevaStalker
   craftTime: 20
   items:
     ClothingOuterArmorSevaStalkerBlueprint:
@@ -75,7 +75,7 @@
 - type: craftRecipe
   id: Z14newrecipeSTClothingOuterArmorLightPlateVestBaseANAgray
   resultProtos:
-    - STClothingOuterArmorLightPlateVestBaseANAgray
+    - Z14STClothingOuterArmorLightPlateVestBaseANAgray
   craftTime: 10
   items:
     STClothingOuterArmorLightPlateVestBaseANAgrayBlueprint:
@@ -98,7 +98,7 @@
 - type: craftRecipe
   id: Z14newrecipeSTClothingOuterArmorSeraphimStrash
   resultProtos:
-    - STClothingOuterArmorSeraphimStrash
+    - Z14STClothingOuterArmorSeraphimStrash
   craftTime: 10
   items:
     STClothingOuterArmorSeraphimStrashBlueprint:
@@ -121,7 +121,7 @@
 - type: craftRecipe
   id: Z14newrecipeClothingOuterArmorStalker
   resultProtos:
-    - ClothingOuterArmorStalker
+    - Z14ClothingOuterArmorStalker
   craftTime: 10
   items:
     ClothingOuterArmorStalkerBlueprint:

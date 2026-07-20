@@ -12,7 +12,7 @@
 - type: craftRecipe
   id: Z14recipeStalkerFoodUniPulb
   resultProtos:
-    - StalkerFoodUniPulb
+    - Z14StalkerFoodUniPulb
   craftTime: 3
   items:
     StalkerFoodBarbarisPulb:
@@ -21,7 +21,7 @@
       amount: 1
     StalkerFoodIrgaPulb:
       amount: 1
-    StalkerFoodVolkPulb:
+    Z14StalkerFoodVolkPulb:
       amount: 1
 
 - type: craftRecipe
@@ -30,7 +30,7 @@
     - STGauzeUniversal
   craftTime: 3
   items:
-    StalkerFoodUniPulb:
+    Z14StalkerFoodUniPulb:
       amount: 1
     STGauze:
       amount: 5

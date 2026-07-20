@@ -1,7 +1,7 @@
 - type: craftRecipe
   id: Z14newrecipeSTClothingCapeArmorChainmailSeva
   resultProtos:
-    - STClothingCapeArmorChainmailSeva
+    - Z14STClothingCapeArmorChainmailSeva
   craftTime: 10
   items:
     ToolkitTearTwo:
@@ -10,7 +10,7 @@
     STClothingCapeArmorChainmailSevaBlueprint:
       amount: 1
       catalyzer: true
-    ClothingOuterCoatLoyalist:
+    Z14ClothingOuterCoatLoyalist:
       amount: 1
     STCraftPolymerFabricT4:
       amount: 2

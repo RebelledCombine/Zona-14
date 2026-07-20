@@ -51,7 +51,7 @@
       amount: 1
     ZoneAnomalyDetectorAD2:
       amount: 1
-    ZoneArtifactBattery:
+    Z14ZoneArtifactBattery:
       amount: 1
     STCraftTransformer:
       amount: 1
@@ -130,7 +130,7 @@
       amount: 2
     STCraftCoil:
       amount: 1
-    ZoneArtifactBattery:
+    Z14ZoneArtifactBattery:
       amount: 1
 
 - type: craftRecipe

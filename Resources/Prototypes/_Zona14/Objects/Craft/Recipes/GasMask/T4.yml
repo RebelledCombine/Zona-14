@@ -1,7 +1,7 @@
 - type: craftRecipe
   id: Z14recipeGasMaskGP21
   resultProtos:
-    - ClothingMaskGP21
+    - Z14ClothingMaskGP21
   craftTime: 10
   items:
     STGasMaskGP21lueprint:
@@ -18,7 +18,7 @@
 - type: craftRecipe
   id: Z14recipeGasMaskM51
   resultProtos:
-    - ClothingMaskM51
+    - Z14ClothingMaskM51
   craftTime: 10
   items:
     STGasMaskM51Blueprint:

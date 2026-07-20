@@ -1,7 +1,7 @@
 - type: craftRecipe
   id: Z14newrecipeSTClothingHeadTinfoil
   resultProtos:
-    - STClothingHeadTinfoil
+    - Z14STClothingHeadTinfoil
   craftTime: 6
   items:
     STClothingHeadTinfoilBlueprint:
@@ -15,10 +15,10 @@
 - type: lightCraftingRecipe
   id: Z14STCraftSkinClothingHeadHelmetInfantryProject
   results:
-    - ClothingHeadHelmetInfantryProject
+    - Z14ClothingHeadHelmetInfantryProject
   steps:
     firstIngredient: STSkinsKitProject
-    secondIngredient: ClothingHeadHelmetInfantry
+    secondIngredient: Z14ClothingHeadHelmetInfantry
     keepFirst: true
     time: 5
 

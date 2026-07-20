@@ -1,7 +1,7 @@
 - type: craftRecipe
   id: Z14newrecipeClothingHeadHelmetPSZ9D
   resultProtos:
-    - ClothingHeadHelmetPSZ9D
+    - Z14ClothingHeadHelmetPSZ9D
   craftTime: 20
   items:
     ClothingHeadHelmetPSZ9DBlueprint:
@@ -24,7 +24,7 @@
 - type: craftRecipe
   id: Z14newrecipeSTClothingHeadHelmetFASTNeutralBlack
   resultProtos:
-    - STClothingHeadHelmetFASTNeutralBlack
+    - Z14STClothingHeadHelmetFASTNeutralBlack
   craftTime: 20
   items:
     STClothingHeadHelmetFASTNeutralBlackBlueprint:
