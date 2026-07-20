@@ -12,7 +12,7 @@
     - type: Clothing
       sprite: _Stalker/Objects/Clothing/outerClothing/Jewelry/spark.rsi
     - type: ToggleableClothing
-      clothingPrototype: ClothingHeadHelmetSpark
+      clothingPrototype: Z14ClothingHeadHelmetSpark
     - type: ClothingSpeedModifier
       walkModifier: 1
       sprintModifier: 1
@@ -53,7 +53,7 @@
     - type: Clothing
       sprite: _Stalker/Objects/Clothing/outerClothing/Jewelry/military-spark.rsi
     - type: ToggleableClothing
-      clothingPrototype: ClothingHeadHelmetMilitarySpark
+      clothingPrototype: Z14ClothingHeadHelmetMilitarySpark
     - type: PersonalDamage
       interval: 1
       damage:

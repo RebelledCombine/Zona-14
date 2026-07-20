@@ -344,7 +344,7 @@
   - type: Clothing
     sprite: _Stalker/Objects/Clothing/cloak/coat_Ret.rsi
   - type: ToggleableClothing
-    clothingPrototype: ClothingOuterCoatRetHat
+    clothingPrototype: Z14ClothingOuterCoatRetHat
     requiredSlot:
     - cloak
     slot: head

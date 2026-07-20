@@ -13,7 +13,7 @@
   - type: Clothing
     sprite: _Stalker/Objects/Clothing/outerClothing/yeger.rsi
   - type: ToggleableClothing
-    clothingPrototype: ClothingHeadHelmetYeger
+    clothingPrototype: Z14ClothingHeadHelmetYeger
     slot: head
   - type: GrantsArtifactSlots
     slots: 4 # Stalker-Changes | Number of artifact slots this armor grants
@@ -64,7 +64,7 @@
   - type: Clothing
     sprite: _Stalker/Objects/Clothing/outerClothing/yeger-freedom.rsi
   - type: ToggleableClothing
-    clothingPrototype: ClothingHeadHelmetYegerFreedom
+    clothingPrototype: Z14ClothingHeadHelmetYegerFreedom
 - type: entity
   parent: Z14ClothingHeadHelmetYeger
   id: Z14ClothingHeadHelmetYegerFreedom

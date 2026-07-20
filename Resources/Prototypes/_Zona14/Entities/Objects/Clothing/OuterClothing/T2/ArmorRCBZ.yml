@@ -14,7 +14,7 @@
   - type: Clothing
     sprite: _Stalker/Objects/Clothing/outerClothing/rhbz_iskatel.rsi
   - type: ToggleableClothing
-    clothingPrototype: ClothingHelmRCBZ
+    clothingPrototype: Z14ClothingHelmRCBZ
     slot: head
   - type: Armor
     armorClass: 0
@@ -92,7 +92,7 @@
   - type: Clothing
     sprite: _Stalker/Objects/Clothing/outerClothing/rcbz-dolg.rsi
   - type: ToggleableClothing
-    clothingPrototype: ClothingHelmRCBZDolg
+    clothingPrototype: Z14ClothingHelmRCBZDolg
   - type: Armor
     armorClass: 0
 
@@ -126,7 +126,7 @@
   - type: Clothing
     sprite: _Stalker/Objects/Clothing/outerClothing/rcbz-freedom.rsi
   - type: ToggleableClothing
-    clothingPrototype: ClothingHelmRCBZFreedom
+    clothingPrototype: Z14ClothingHelmRCBZFreedom
   - type: Armor
     armorClass: 0
 
@@ -179,7 +179,7 @@
   - type: Clothing
     sprite: _Stalker/Objects/Clothing/outerClothing/rcbz-renegate.rsi
   - type: ToggleableClothing
-    clothingPrototype: ClothingHelmRCBZRene
+    clothingPrototype: Z14ClothingHelmRCBZRene
   - type: Armor
     armorClass: 0
 
@@ -213,7 +213,7 @@
   - type: Clothing
     sprite: _Stalker/Objects/Clothing/outerClothing/RCBZ-Serafim.rsi
   - type: ToggleableClothing
-    clothingPrototype: ClothingHelmRCBZSera
+    clothingPrototype: Z14ClothingHelmRCBZSera
   - type: Armor
     armorClass: 0
 
@@ -247,7 +247,7 @@
   - type: Clothing
     sprite: _Stalker/Objects/Clothing/outerClothing/rhbz-clearsky.rsi
   - type: ToggleableClothing
-    clothingPrototype: ClothingHelmRCBZCN
+    clothingPrototype: Z14ClothingHelmRCBZCN
 
 - type: entity
   parent: Z14ClothingHelmRCBZ
@@ -279,7 +279,7 @@
   - type: Clothing
     sprite: _Stalker/Objects/Clothing/outerClothing/rhbz-journalists.rsi
   - type: ToggleableClothing
-    clothingPrototype: ClothingHelmRCBZJournalists
+    clothingPrototype: Z14ClothingHelmRCBZJournalists
   - type: Armor
     armorClass: 0
 
@@ -315,7 +315,7 @@
   - type: Clothing
     sprite: _Stalker/Objects/Clothing/outerClothing/rcbz_pj5.rsi
   - type: ToggleableClothing
-    clothingPrototype: ClothingHelmRCBZProjectPJ5
+    clothingPrototype: Z14ClothingHelmRCBZProjectPJ5
 
 - type: entity
   parent: Z14ClothingHelmRCBZ

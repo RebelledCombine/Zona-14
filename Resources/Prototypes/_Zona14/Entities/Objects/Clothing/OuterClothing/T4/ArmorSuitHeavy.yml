@@ -67,7 +67,7 @@
   - type: Clothing
     sprite: _Stalker/Objects/Clothing/outerClothing/gonchiy.rsi
   - type: ToggleableClothing
-    clothingPrototype: STClothingHeadHardsuitGonchiy
+    clothingPrototype: Z14STClothingHeadHardsuitGonchiy
     slot: head
   - type: ClothingSpeedModifier
     walkModifier: 1.1

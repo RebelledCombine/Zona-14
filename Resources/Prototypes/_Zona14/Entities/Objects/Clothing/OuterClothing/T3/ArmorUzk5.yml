@@ -13,7 +13,7 @@
   - type: Clothing
     sprite: _Stalker/Objects/Clothing/outerClothing/uzk5.rsi
   - type: ToggleableClothing
-    clothingPrototype: ClothingHeadHardsuitUzk5Helm
+    clothingPrototype: Z14ClothingHeadHardsuitUzk5Helm
     slot: head
   - type: ClothingSpeedModifier
     walkModifier: 1

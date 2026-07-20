@@ -14,7 +14,7 @@
     - type: Clothing
       sprite: _Stalker/Objects/Clothing/outerClothing/armored_hazmat.rsi
     - type: ToggleableClothing
-      clothingPrototype: ClothingHeadHazmat
+      clothingPrototype: Z14ClothingHeadHazmat
     - type: Armor
       armorClass: 1
 
@@ -58,7 +58,7 @@
     - type: Clothing
       sprite: _Stalker/Objects/Clothing/outerClothing/armored_hazmat_white.rsi
     - type: ToggleableClothing
-      clothingPrototype: ClothingHeadHazmatWhite
+      clothingPrototype: Z14ClothingHeadHazmatWhite
     - type: GrantsArtifactSlots
       slots: 5 # Stalker-Changes | Number of artifact slots this armor grants
 

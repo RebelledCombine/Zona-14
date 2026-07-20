@@ -31,7 +31,7 @@
   - type: Clothing
     sprite: _Stalker/Objects/Clothing/outerClothing/zarya_stalker.rsi
   - type: ToggleableClothing
-    clothingPrototype: ClothingHeadHelmetZaryaStalker
+    clothingPrototype: Z14ClothingHeadHelmetZaryaStalker
     slot: head
 
 - type: entity
@@ -158,7 +158,7 @@
     - type: Clothing
       sprite: _Stalker/Objects/Clothing/outerClothing/_Sera/rassvet.rsi
     - type: ToggleableClothing
-      clothingPrototype: ClothingHeadCapoSera
+      clothingPrototype: Z14ClothingHeadCapoSera
       slot: head
 - type: entity
   parent: STClothingHeadHatBase
@@ -316,7 +316,7 @@
   - type: Clothing
     sprite: _Stalker/Objects/Clothing/outerClothing/project_zarya.rsi
   - type: ToggleableClothing
-    clothingPrototype: ClothingHeadCapoProject
+    clothingPrototype: Z14ClothingHeadCapoProject
     slot: head
 
 - type: entity

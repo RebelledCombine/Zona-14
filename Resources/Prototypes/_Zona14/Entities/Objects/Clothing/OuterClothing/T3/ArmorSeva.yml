@@ -16,7 +16,7 @@
   - type: Clothing
     sprite: _Stalker/Objects/Clothing/outerClothing/seva_stalker.rsi
   - type: ToggleableClothing
-    clothingPrototype: STClothingHeadHardsuitSevaHelmBase
+    clothingPrototype: Z14STClothingHeadHardsuitSevaHelmBase
     slot: head
 
   - type: Craftable
@@ -106,7 +106,7 @@
     - type: Clothing
       sprite: _Stalker/Objects/Clothing/outerClothing/seva_sci.rsi
     - type: ToggleableClothing
-      clothingPrototype: ClothingHeadHardsuitSevaHelmSci
+      clothingPrototype: Z14ClothingHeadHardsuitSevaHelmSci
       slot: head
     - type: Armor
       armorClass: 2
@@ -160,7 +160,7 @@
   - type: Clothing
     sprite: _Stalker/Objects/Clothing/outerClothing/seva_military.rsi
   - type: ToggleableClothing
-    clothingPrototype: ClothingHeadHardsuitSevaHelmMilitary
+    clothingPrototype: Z14ClothingHeadHardsuitSevaHelmMilitary
     slot: head
   - type: UserInterface
     interfaces:
@@ -202,7 +202,7 @@
   - type: Clothing
     sprite: _Stalker/Objects/Clothing/outerClothing/seva_monolith.rsi
   - type: ToggleableClothing
-    clothingPrototype: ClothingHeadHardsuitSevaHelmMonolith
+    clothingPrototype: Z14ClothingHeadHardsuitSevaHelmMonolith
     slot: head
   - type: PersonalDamage
     damage:
@@ -262,7 +262,7 @@
   - type: Clothing
     sprite: _Stalker/Objects/Clothing/outerClothing/seva_merc.rsi
   - type: ToggleableClothing
-    clothingPrototype: ClothingHeadHardsuitSevaHelmMerc
+    clothingPrototype: Z14ClothingHeadHardsuitSevaHelmMerc
     slot: head
   - type: UserInterface
     interfaces:
@@ -330,7 +330,7 @@
   - type: Clothing
     sprite: _Stalker/Objects/Clothing/outerClothing/seva_poisk.rsi
   - type: ToggleableClothing
-    clothingPrototype: ClothingHeadHardsuitSevaHelmPoisk
+    clothingPrototype: Z14ClothingHeadHardsuitSevaHelmPoisk
 
 - type: entity
   parent: ClothingHeadHardsuitBase
@@ -415,7 +415,7 @@
     - type: Clothing
       sprite: _Stalker/Objects/Clothing/outerClothing/Seva/covenant.rsi
     - type: ToggleableClothing
-      clothingPrototype: ClothingHeadHardsuitSevaHelmCovenant
+      clothingPrototype: Z14ClothingHeadHardsuitSevaHelmCovenant
     - type: Armor
       armorClass: 0
 
@@ -478,7 +478,7 @@
     - type: Clothing
       sprite: _Stalker/Objects/Clothing/outerClothing/_Sera/seva.rsi
     - type: ToggleableClothing
-      clothingPrototype: ClothingHeadHardsuitSevaHelmSera
+      clothingPrototype: Z14ClothingHeadHardsuitSevaHelmSera
       slot: head
 
 - type: entity
@@ -543,7 +543,7 @@
   - type: Clothing
     sprite: _Stalker/Objects/Clothing/outerClothing/seva_project.rsi
   - type: ToggleableClothing
-    clothingPrototype: ClothingHeadHardsuitSevaHelmProjectGROM9
+    clothingPrototype: Z14ClothingHeadHardsuitSevaHelmProjectGROM9
     slot: head
 
 - type: entity
@@ -578,7 +578,7 @@
     - type: Clothing
       sprite: _Stalker/Objects/Clothing/outerClothing/seva_dolg.rsi
     - type: ToggleableClothing
-      clothingPrototype: ClothingHeadHardsuitSevaHelmDolgRed
+      clothingPrototype: Z14ClothingHeadHardsuitSevaHelmDolgRed
       slot: head
     - type: Armor
       armorClass: 0
@@ -615,7 +615,7 @@
     - type: Clothing
       sprite: _Stalker/Objects/Clothing/outerClothing/seva_freedom.rsi
     - type: ToggleableClothing
-      clothingPrototype: ClothingHeadHardsuitSevaHelmFreedom
+      clothingPrototype: Z14ClothingHeadHardsuitSevaHelmFreedom
       slot: head
     - type: Armor
       armorClass: 0
@@ -680,7 +680,7 @@
     - type: Clothing
       sprite: _Stalker/Objects/Clothing/outerClothing/seva_renegat.rsi
     - type: ToggleableClothing
-      clothingPrototype: ClothingHeadHardsuitSevaHelmRenegat
+      clothingPrototype: Z14ClothingHeadHardsuitSevaHelmRenegat
       slot: head
 
 - type: entity
@@ -715,7 +715,7 @@
     - type: Clothing
       sprite: _Stalker/Objects/Clothing/outerClothing/seva_VANO.rsi
     - type: ToggleableClothing
-      clothingPrototype: ClothingHeadHardsuitSevaVano
+      clothingPrototype: Z14ClothingHeadHardsuitSevaVano
       slot: head
     - type: Armor
       armorClass: 0

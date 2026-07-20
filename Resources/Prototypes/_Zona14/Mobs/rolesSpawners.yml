@@ -506,10 +506,10 @@
     torso: ClothingTorsoSweaterStalkerGreen
     legs: ClothingLegsJeansBlue
     shoes: STClothingShoesBootsCombatFilled
-    cloak: ClothingOuterCoatLoyalist
-    outerClothing: ClothingOuterArmorStalkerCombat
+    cloak: Z14ClothingOuterCoatLoyalist
+    outerClothing: Z14ClothingOuterArmorStalkerCombat
     back: ClothingBackpackMercStalker
     pocket1: STWeaponShotgunSawedOfAnomaly
     pocket2: 8mmBuckshotBox
-    head: ClothingHeadRatnik
-    mask: ClothingMaskM51
+    head: Z14ClothingHeadRatnik
+    mask: Z14ClothingMaskM51
