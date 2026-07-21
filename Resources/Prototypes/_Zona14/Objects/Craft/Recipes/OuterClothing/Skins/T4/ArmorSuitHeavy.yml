@@ -11,7 +11,7 @@
 - type: lightCraftingRecipe
   id: Z14STCraftSkinClothingHeadHelmetUlachFreedomFreedom
   results:
-    - ClothingHeadHelmetUlachFreedom
+    - Z14ClothingHeadHelmetUlachFreedom
   steps:
     firstIngredient: STSkinsKitFreedom
     secondIngredient: Z14ClothingHeadHelmetUlach
