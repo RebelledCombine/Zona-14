@@ -5,7 +5,7 @@
   suffix: Z14
   components:
   - type: BandsManaging
-    shopListingsProto: STBandShopListings
+    shopListingsProto: Z14STBandShopListings
     faction: Loners
 
 - type: entity
@@ -15,7 +15,7 @@
   suffix: Z14
   components:
   - type: BandsManaging
-    shopListingsProto: STBandShopListings
+    shopListingsProto: Z14STBandShopListingsFreedom
     faction: Freedom
 
 - type: entity
@@ -25,7 +25,7 @@
   suffix: Z14
   components:
   - type: BandsManaging
-    shopListingsProto: STBandShopListings
+    shopListingsProto: Z14STBandShopListingsBandits
     faction: Bandits
 
 - type: entity
@@ -35,7 +35,7 @@
   suffix: Z14
   components:
   - type: BandsManaging
-    shopListingsProto: STBandShopListings
+    shopListingsProto: Z14STBandShopListingsDuty
     faction: Duty
 
 - type: entity
@@ -45,7 +45,7 @@
   suffix: Z14
   components:
   - type: BandsManaging
-    shopListingsProto: STBandShopListings
+    shopListingsProto: Z14STBandShopListingsEcologist
     faction: Ecologist
 
 - type: entity
@@ -55,7 +55,7 @@
   suffix: Z14
   components:
   - type: BandsManaging
-    shopListingsProto: STBandShopListings
+    shopListingsProto: Z14STBandShopListings
     faction: Neutrals
 
 - type: entity
@@ -65,7 +65,7 @@
   suffix: Z14
   components:
   - type: BandsManaging
-    shopListingsProto: STBandShopListings
+    shopListingsProto: Z14STBandShopListingsMercenaries
     faction: Mercenaries
 
 - type: entity
@@ -75,7 +75,7 @@
   suffix: Z14
   components:
   - type: BandsManaging
-    shopListingsProto: STBandShopListings
+    shopListingsProto: Z14STBandShopListingsMilitary
     faction: Military
 
 - type: entity
@@ -85,7 +85,7 @@
   suffix: Z14
   components:
   - type: BandsManaging
-    shopListingsProto: STBandShopListings
+    shopListingsProto: Z14STBandShopListingsMonolith
     faction: Monolith
 
 - type: entity
@@ -115,5 +115,5 @@
   suffix: Z14
   components:
   - type: BandsManaging
-    shopListingsProto: STBandShopListings
+    shopListingsProto: Z14STBandShopListingsSeraphims
     faction: Seraphims

@@ -155,25 +155,13 @@
           prob: 0.04
         - id: MakeshiftArtContBlueprint
           prob: 0.05
-        - id: Z14ClothingOuterArmorDolgPS5MBlueprint
-          prob: 0.03
         - id: Z14ClothingOuterArmorCN3bBlueprint
           prob: 0.03
-        - id: Z14ClothingOuterArmorMerc2Blueprint
-          prob: 0.03
-        - id: Z14ClothingOuterArmorMonolithOldBlueprint
-          prob: 0.03
         - id: Z14ClothingOuterArmorSSP99AmberBlueprint
-          prob: 0.03
-        - id: Z14ClothingOuterArmorSevaFreedomBlueprint
-          prob: 0.03
-        - id: Z14ClothingOuterArmorSevaSciRedBlueprint
           prob: 0.03
         - id: Z14ClothingOuterArmorSevaVanoBlueprint
           prob: 0.03
         - id: Z14ClothingOuterArmorStalkerCombatCNBlueprint
-          prob: 0.03
-        - id: Z14STClothingOuterArmorCN-4aResearcherBlueprint
           prob: 0.03
         - id: Z14STClothingOuterArmorHeavyMBlueprint
           prob: 0.03

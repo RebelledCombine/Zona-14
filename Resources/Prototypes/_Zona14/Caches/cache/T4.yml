@@ -114,8 +114,6 @@
           prob: 0.02
         - id: STCraftTransformer
           prob: 0.02
-        - id: Z14ClothingOuterArmorBulatMilitaryBlueprint
-          prob: 0.03
         - id: Z14RGD5Grenade
           prob: 0.1
         - id: Z14RGD5Grenade
@@ -143,17 +141,9 @@
           prob: 0.02
         - id: Z14ClothingOuterArmorBulatCovenantBlueprint
           prob: 0.02
-        - id: Z14ClothingOuterArmorBulatMonolithBlueprint
-          prob: 0.02
         - id: Z14ClothingOuterArmorHazmatRfBlueprint
           prob: 0.02
-        - id: Z14ClothingOuterArmorHeavyDebtBlueprint
-          prob: 0.02
         - id: Z14ClothingOuterArmorHeavyJabaBlueprint
-          prob: 0.02
-        - id: Z14ClothingOuterArmorHeavyUNTARBlueprint
-          prob: 0.02
-        - id: Z14ClothingOuterArmorLegatDeserterBlueprint
           prob: 0.02
         - id: Z14ClothingOuterArmorUzk5Blueprint
           prob: 0.02
@@ -163,19 +153,7 @@
           prob: 0.02
         - id: Z14STClothingOuterArmorGonchiyBlueprint
           prob: 0.02
-        - id: Z14STClothingOuterArmorHeavySeraBlueprint
-          prob: 0.02
         - id: Z14STClothingOuterArmorKravaBlueprint
-          prob: 0.02
-        - id: Z14STClothingOuterArmorLightPlateVestBaseHeavyBanditBlueprint
-          prob: 0.02
-        - id: Z14STClothingOuterArmorLightPlateVestBaseHeavyMilitaryBlueprint
-          prob: 0.02
-        - id: Z14STClothingOuterArmorLightPlateVestBaseHeavyMonolithBlueprint
-          prob: 0.02
-        - id: Z14STClothingOuterArmorLimaSeraphimStrashBlueprint
-          prob: 0.02
-        - id: Z14STClothingOuterArmorVeryHeavySciBlueprint
           prob: 0.02
 
 - type: entity
