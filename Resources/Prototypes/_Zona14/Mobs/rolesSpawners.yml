@@ -284,44 +284,46 @@
     - type: Loadout
       prototypes: [ StalkerGrehGear ]
 
-- type: entity
-  name: sin doll (rename me)
-  suffix: Z14
-  parent: MobHuman
-  id: Z14MobStalkerCS
-  categories: [ Zona14 ]
-  components:
-    - type: Access
-      tags:
-        - CN
-    - type: Bands
-      band: Stalker
-      bandIcon: cn
-      altBand: stalker
-    - type: Loadout
-      prototypes: [ StalkerClearSkyGear ]
-
-# Project is not a faction in Zona-14 - disabled, not deleted.
-# Orphaned already (nothing spawned it); commented so it also leaves the admin spawn menu.
+# Clear Sky is not a faction in Zona-14 - disabled, not deleted.
+# Matches how its trader and Igor variant were retired.
 # - type: entity
-#   name: clear sky doll (rename me)
+#   name: sin doll (rename me)
 #   suffix: Z14
 #   parent: MobHuman
-#   id: Z14MobStalkerProject
+#   id: Z14MobStalkerCS
 #   categories: [ Zona14 ]
 #   components:
-#   - type: Access
-#     tags:
-#     - Project
-#     #- ProjectPawn # Stalker-TODO: This access does not exist
-#     - Stalker
-#   - type: Bands
-#     band: Stalker
-#     bandIcon: project-1
-#     altBand: stalker
-#     canChange: true
-#   - type: Loadout
-#     prototypes: [ ProjectPawnGear ]
+#     - type: Access
+#       tags:
+#         - CN
+#     - type: Bands
+#       band: Stalker
+#       bandIcon: cn
+#       altBand: stalker
+#     - type: Loadout
+#       prototypes: [ StalkerClearSkyGear ]
+
+# # Project is not a faction in Zona-14 - disabled, not deleted.
+# # Orphaned already (nothing spawned it); commented so it also leaves the admin spawn menu.
+# # - type: entity
+# #   name: clear sky doll (rename me)
+# #   suffix: Z14
+# #   parent: MobHuman
+# #   id: Z14MobStalkerProject
+# #   categories: [ Zona14 ]
+# #   components:
+# #   - type: Access
+# #     tags:
+# #     - Project
+# #     #- ProjectPawn # Stalker-TODO: This access does not exist
+# #     - Stalker
+# #   - type: Bands
+# #     band: Stalker
+# #     bandIcon: project-1
+# #     altBand: stalker
+# #     canChange: true
+# #   - type: Loadout
+# #     prototypes: [ ProjectPawnGear ]
 
 - type: entity
   name: Project doll (rename me)
