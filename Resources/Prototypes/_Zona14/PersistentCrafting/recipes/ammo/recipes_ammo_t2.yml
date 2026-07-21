@@ -10,8 +10,10 @@
   craftTime: 6
   pointReward: 0
   ingredients:
-  - proto: STCraftAnomalyDust
-    amount: 3
+  - proto: STCraftSheetIronT2
+    amount: 1
+  - proto: CraftMaterialGunpowder
+    amount: 2
   results:
   - proto: Z14919PSOGJBox
     amount: 4
@@ -29,8 +31,10 @@
   craftTime: 6
   pointReward: 0
   ingredients:
-  - proto: STCraftAnomalyDust
-    amount: 3
+  - proto: STCraftSheetIronT2
+    amount: 1
+  - proto: CraftMaterialGunpowder
+    amount: 2
   results:
   - proto: Z1445ACPLFMJBox
     amount: 4
@@ -48,8 +52,10 @@
   craftTime: 6
   pointReward: 0
   ingredients:
-  - proto: STCraftAnomalyDust
-    amount: 3
+  - proto: STCraftSheetIronT2
+    amount: 1
+  - proto: CraftMaterialGunpowder
+    amount: 2
   results:
   - proto: Z1445ACPHydroshockBox
     amount: 4
@@ -67,8 +73,10 @@
   craftTime: 6
   pointReward: 0
   ingredients:
-  - proto: STCraftAnomalyDust
-    amount: 3
+  - proto: STCraftSheetIronT2
+    amount: 1
+  - proto: CraftMaterialGunpowder
+    amount: 2
   results:
   - proto: Z14919RIPBox
     amount: 4
@@ -86,8 +94,10 @@
   craftTime: 6
   pointReward: 0
   ingredients:
-  - proto: STCraftAnomalyDust
-    amount: 3
+  - proto: STCraftSheetIronT2
+    amount: 1
+  - proto: CraftMaterialGunpowder
+    amount: 2
   results:
   - proto: Z1445ACPRIPBox
     amount: 4
@@ -105,8 +115,12 @@
   craftTime: 6
   pointReward: 0
   ingredients:
-  - proto: STCraftAnomalyDust
-    amount: 3
+  - proto: STCraftSheetIronT2
+    amount: 1
+  - proto: CraftMaterialGunpowder
+    amount: 2
+  - proto: STCraftSheetBrassT3
+    amount: 1
   results:
   - proto: Z14919PSTBox
     amount: 4
@@ -124,8 +138,10 @@
   craftTime: 6
   pointReward: 0
   ingredients:
-  - proto: STCraftAnomalyDust
-    amount: 3
+  - proto: STCraftSheetIronT2
+    amount: 1
+  - proto: CraftMaterialGunpowder
+    amount: 2
   results:
   - proto: Z1445ACPMFMJBox
     amount: 4
@@ -143,8 +159,10 @@
   craftTime: 6
   pointReward: 0
   ingredients:
-  - proto: STCraftAnomalyDust
-    amount: 3
+  - proto: STCraftSheetIronT2
+    amount: 1
+  - proto: CraftMaterialGunpowder
+    amount: 2
   results:
   - proto: 8mmBuckshotBox
     amount: 6
@@ -162,8 +180,10 @@
   craftTime: 6
   pointReward: 0
   ingredients:
-  - proto: STCraftAnomalyDust
-    amount: 3
+  - proto: STCraftSheetIronT2
+    amount: 1
+  - proto: CraftMaterialGunpowder
+    amount: 2
   results:
   - proto: ShotgunBulletBox
     amount: 6
@@ -181,8 +201,12 @@
   craftTime: 6
   pointReward: 0
   ingredients:
-  - proto: STCraftAnomalyDust
-    amount: 3
+  - proto: STCraftSheetIronT2
+    amount: 1
+  - proto: CraftMaterialGunpowder
+    amount: 2
+  - proto: STCraftSheetBrassT3
+    amount: 1
   results:
   - proto: Z14919PBMBox
     amount: 4
@@ -200,8 +224,12 @@
   craftTime: 6
   pointReward: 0
   ingredients:
-  - proto: STCraftAnomalyDust
-    amount: 3
+  - proto: STCraftSheetIronT2
+    amount: 1
+  - proto: CraftMaterialGunpowder
+    amount: 2
+  - proto: STCraftSheetBrassT3
+    amount: 1
   results:
   - proto: Z1445ACPAPBox
     amount: 4

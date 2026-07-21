@@ -10,8 +10,10 @@
   craftTime: 6
   pointReward: 0
   ingredients:
-  - proto: STCraftAnomalyDust
-    amount: 15
+  - proto: STCraftSheetAluminumT4
+    amount: 2
+  - proto: CraftMaterialGunpowder
+    amount: 5
   results:
   - proto: Z14Ammobox1255PS12A
     amount: 4
@@ -29,8 +31,10 @@
   craftTime: 6
   pointReward: 0
   ingredients:
-  - proto: STCraftAnomalyDust
-    amount: 15
+  - proto: STCraftSheetAluminumT4
+    amount: 2
+  - proto: CraftMaterialGunpowder
+    amount: 5
   results:
   - proto: Z14739HPBox
     amount: 4
@@ -48,8 +52,10 @@
   craftTime: 12
   pointReward: 0
   ingredients:
-  - proto: STCraftAnomalyDust
-    amount: 15
+  - proto: STCraftSheetAluminumT4
+    amount: 2
+  - proto: CraftMaterialGunpowder
+    amount: 5
   results:
   - proto: Z14751UNBox
     amount: 4
@@ -67,8 +73,10 @@
   craftTime: 6
   pointReward: 0
   ingredients:
-  - proto: STCraftAnomalyDust
-    amount: 15
+  - proto: STCraftSheetAluminumT4
+    amount: 2
+  - proto: CraftMaterialGunpowder
+    amount: 5
   results:
   - proto: Z14754HPBox
     amount: 4
@@ -86,8 +94,10 @@
   craftTime: 6
   pointReward: 0
   ingredients:
-  - proto: STCraftAnomalyDust
-    amount: 15
+  - proto: STCraftSheetAluminumT4
+    amount: 2
+  - proto: CraftMaterialGunpowder
+    amount: 5
   results:
   - proto: Z14Ammobox1255TP
     amount: 4
@@ -105,8 +115,10 @@
   craftTime: 6
   pointReward: 0
   ingredients:
-  - proto: STCraftAnomalyDust
-    amount: 15
+  - proto: STCraftSheetAluminumT4
+    amount: 2
+  - proto: CraftMaterialGunpowder
+    amount: 5
   results:
   - proto: Z14739FMJBox
     amount: 4
@@ -124,8 +136,10 @@
   craftTime: 6
   pointReward: 0
   ingredients:
-  - proto: STCraftAnomalyDust
-    amount: 15
+  - proto: STCraftSheetAluminumT4
+    amount: 2
+  - proto: CraftMaterialGunpowder
+    amount: 5
   results:
   - proto: Z14751M80Box
     amount: 4
@@ -143,8 +157,10 @@
   craftTime: 6
   pointReward: 0
   ingredients:
-  - proto: STCraftAnomalyDust
-    amount: 15
+  - proto: STCraftSheetAluminumT4
+    amount: 2
+  - proto: CraftMaterialGunpowder
+    amount: 5
   results:
   - proto: Z14754FMJBox
     amount: 4
@@ -162,8 +178,12 @@
   craftTime: 6
   pointReward: 0
   ingredients:
-  - proto: STCraftAnomalyDust
-    amount: 15
+  - proto: STCraftSheetAluminumT4
+    amount: 2
+  - proto: CraftMaterialGunpowder
+    amount: 5
+  - proto: STCraftSheetSteelT5
+    amount: 1
   results:
   - proto: Z14739PCBox
     amount: 4
@@ -181,8 +201,12 @@
   craftTime: 6
   pointReward: 0
   ingredients:
-  - proto: STCraftAnomalyDust
-    amount: 15
+  - proto: STCraftSheetAluminumT4
+    amount: 2
+  - proto: CraftMaterialGunpowder
+    amount: 5
+  - proto: STCraftSheetSteelT5
+    amount: 1
   results:
   - proto: Z14751M61Box
     amount: 4
@@ -200,8 +224,12 @@
   craftTime: 6
   pointReward: 0
   ingredients:
-  - proto: STCraftAnomalyDust
-    amount: 15
+  - proto: STCraftSheetAluminumT4
+    amount: 2
+  - proto: CraftMaterialGunpowder
+    amount: 5
+  - proto: STCraftSheetSteelT5
+    amount: 1
   results:
   - proto: Z14754PCBox
     amount: 4
