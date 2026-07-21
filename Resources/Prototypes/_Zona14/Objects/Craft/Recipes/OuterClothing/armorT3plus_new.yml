@@ -4,12 +4,17 @@
 # Formula (crafting-scheme.md §2), by SUIT tier - the Z14ArmorBaseT<n> it inherits,
 # not armorClass, which is the plate tier:
 #
-#   T3  blueprint + ToolkitTearOne   + 2 tier-3 mats + 2x T2 mutant part
-#   T4  blueprint + ToolkitTearTwo   + 3 tier-4 mats + 2x T3 mutant part + 1x T3 suit
-#   T5  blueprint + ToolkitTearThree + 3 tier-5 mats + 2x T4 mutant part + 1x T4 suit + artifact
+#   T3  blueprint + ToolkitTearOne   + 2x tier-2 mats + 2x low-tier mutant drop
+#   T4  blueprint + ToolkitTearTwo   + 4x tier-3 mats + 2x T2 part + 1x T3 suit
+#   T5  blueprint + ToolkitTearThree + 4x tier-4 mats + 2x T3 part + 1x T4 suit + artifact
 #
-# The chain is the point: T5 consumes a T4, which consumes a T3. With vendors capped
-# at T2 the progression is buy T2 -> craft T3 -> craft T4 from it -> craft T5 from that.
+# INGREDIENTS COME FROM ONE TIER BELOW THE ITEM. Asking for tier-N materials to
+# build a tier-N suit makes the top of the tree unreachable, because the materials
+# only drop where you already need the suit to survive.
+#
+# Lower-tier suits are consumed as the base, so a craft reads as an UPGRADE of the
+# thing you already own rather than a fresh build. T5 eats a T4, which eats a T3.
+# With vendors capped at T2: buy T2 -> craft T3 -> upgrade to T4 -> upgrade to T5.
 #
 # Material and toolkit ids are the UPSTREAM ones on purpose - crafting matches
 # ingredients by exact prototype ID and every loot table grants those. Mutant parts
@@ -30,11 +35,9 @@
     ToolkitTearOne:
       amount: 1
       catalyzer: true
-    STCraftSheetBrassT3:
+    STCraftSheetIronT2:
       amount: 2
-    STCraftSturdyHideT3:
-      amount: 2
-    Z14MutantPartSnorkFoot:
+    CraftHide:
       amount: 2
 
 # ── T4 ──────────────────────────────────────────────
@@ -53,13 +56,11 @@
       catalyzer: true
     Z14ClothingOuterArmorStalker:
       amount: 1
-    STCraftSheetAluminumT4:
+    STCraftSheetBrassT3:
       amount: 2
-    STCraftPolymerFabricT4:
+    STCraftSturdyHideT3:
       amount: 2
-    STCraftIndustrialThreadStaplesKitT4:
-      amount: 1
-    Z14MutantPartBloodsuckerTentacles:
+    Z14MutantPartSnorkFoot:
       amount: 2
 
 # ── T5 ──────────────────────────────────────────────
@@ -78,13 +79,11 @@
       catalyzer: true
     Z14ClothingOuterArmorBulatMilitary:
       amount: 1
-    STCraftSheetSteelT5:
-      amount: 3
-    STCraftCompositeMaterialT5:
+    STCraftSheetAluminumT4:
       amount: 2
-    STCraftNanoChipT5:
-      amount: 1
-    Z14MutantPartChimeraTooth:
+    STCraftPolymerFabricT4:
+      amount: 2
+    Z14MutantPartBloodsuckerTentacles:
       amount: 2
     Z14ZoneArtifactBattery:
       amount: 1
