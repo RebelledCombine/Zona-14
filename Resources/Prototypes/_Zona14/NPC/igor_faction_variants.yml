@@ -78,42 +78,47 @@
     shopListingsProto: Z14STBandShopListingsMilitary
     faction: Military
 
-- type: entity
-  parent: NPCIgorIvanovich
-  id: Z14NPCIgorIvanovichMonolith
-  categories: [ Zona14 ]
-  suffix: Z14
-  components:
-  - type: BandsManaging
-    shopListingsProto: Z14STBandShopListingsMonolith
-    faction: Monolith
+# Monolith is an EVENT faction - admin-spawned, not player-run - so it has no
+# vendor and no blueprints. Commented rather than deleted in case that changes.
+# - type: entity
+#   parent: NPCIgorIvanovich
+#   id: Z14NPCIgorIvanovichMonolith
+#   categories: [ Zona14 ]
+#   suffix: Z14
+#   components:
+#   - type: BandsManaging
+#     shopListingsProto: Z14STBandShopListingsMonolith
+#     faction: Monolith
 
-- type: entity
-  parent: NPCIgorIvanovich
-  id: Z14NPCIgorIvanovichClearSky
-  categories: [ Zona14 ]
-  suffix: Z14
-  components:
-  - type: BandsManaging
-    shopListingsProto: STBandShopListings
-    faction: ClearSky
+# Clear Sky will not exist in Zona-14 - disabled, not deleted.
+# - type: entity
+#   parent: NPCIgorIvanovich
+#   id: Z14NPCIgorIvanovichClearSky
+#   categories: [ Zona14 ]
+#   suffix: Z14
+#   components:
+#   - type: BandsManaging
+#     shopListingsProto: STBandShopListings
+#     faction: ClearSky
 
-- type: entity
-  parent: NPCIgorIvanovich
-  id: Z14NPCIgorIvanovichRenegades
-  categories: [ Zona14 ]
-  suffix: Z14
-  components:
-  - type: BandsManaging
-    shopListingsProto: STBandShopListings
-    faction: Renegades
+# Renegades will not exist in Zona-14 - disabled, not deleted.
+# - type: entity
+#   parent: NPCIgorIvanovich
+#   id: Z14NPCIgorIvanovichRenegades
+#   categories: [ Zona14 ]
+#   suffix: Z14
+#   components:
+#   - type: BandsManaging
+#     shopListingsProto: STBandShopListings
+#     faction: Renegades
 
-- type: entity
-  parent: NPCIgorIvanovich
-  id: Z14NPCIgorIvanovichSeraphims
-  categories: [ Zona14 ]
-  suffix: Z14
-  components:
-  - type: BandsManaging
-    shopListingsProto: Z14STBandShopListingsSeraphims
-    faction: Seraphims
+# Seraphim will never be a faction in Zona-14 - disabled, not deleted.
+# - type: entity
+#   parent: NPCIgorIvanovich
+#   id: Z14NPCIgorIvanovichSeraphims
+#   categories: [ Zona14 ]
+#   suffix: Z14
+#   components:
+#   - type: BandsManaging
+#     shopListingsProto: Z14STBandShopListingsSeraphims
+#     faction: Seraphims

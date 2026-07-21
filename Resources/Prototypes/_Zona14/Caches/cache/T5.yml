@@ -122,10 +122,6 @@
           prob: 0.1
         - id: Z14RGD5Grenade
           prob: 0.1
-        - id: Z14ClothingOuterArmorExoSevaProjectBlueprint
-          prob: 0.02
-        - id: Z14ClothingOuterArmorExoskeletonCovenantBlueprint
-          prob: 0.02
         - id: Z14STClothingOuterArmorSkyWalkerBlueprint
           prob: 0.02
         - id: Z14STClothingOuterHeavyTorBlueprint

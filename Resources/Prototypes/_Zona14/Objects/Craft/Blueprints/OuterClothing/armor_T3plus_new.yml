@@ -36,56 +36,6 @@
 
 - type: entity
   parent: STBaseBlueprint
-  id: Z14ClothingHeadHelmetExoskeletMonolithBlueprint
-  categories: [ Zona14 ]
-  suffix: Z14
-  name: Helmet Exoskelet Monolith Recipe
-  components:
-    - type: STBlueprint
-      blueprint: Z14newrecipeClothingHeadHelmetExoskeletMonolith
-
-- type: entity
-  parent: STBaseBlueprint
-  id: Z14ClothingOuterArmor6B13ZavetBlueprint
-  categories: [ Zona14 ]
-  suffix: Z14
-  name: Armor 6 B13 Zavet Recipe
-  components:
-    - type: STBlueprint
-      blueprint: Z14newrecipeClothingOuterArmor6B13Zavet
-
-- type: entity
-  parent: STBaseBlueprint
-  id: Z14ClothingOuterArmorBerill5MProjectBlueprint
-  categories: [ Zona14 ]
-  suffix: Z14
-  name: Armor Berill5 MProject Recipe
-  components:
-    - type: STBlueprint
-      blueprint: Z14newrecipeClothingOuterArmorBerill5MProject
-
-- type: entity
-  parent: STBaseBlueprint
-  id: Z14ClothingOuterArmorBulatCovenantBlueprint
-  categories: [ Zona14 ]
-  suffix: Z14
-  name: Armor Bulat Covenant Recipe
-  components:
-    - type: STBlueprint
-      blueprint: Z14newrecipeClothingOuterArmorBulatCovenant
-
-- type: entity
-  parent: STBaseBlueprint
-  id: Z14ClothingOuterArmorBulatMonolithBlueprint
-  categories: [ Zona14 ]
-  suffix: Z14
-  name: Armor Bulat Monolith Recipe
-  components:
-    - type: STBlueprint
-      blueprint: Z14newrecipeClothingOuterArmorBulatMonolith
-
-- type: entity
-  parent: STBaseBlueprint
   id: Z14ClothingOuterArmorCN3bBlueprint
   categories: [ Zona14 ]
   suffix: Z14
@@ -93,36 +43,6 @@
   components:
     - type: STBlueprint
       blueprint: Z14newrecipeClothingOuterArmorCN3b
-
-- type: entity
-  parent: STBaseBlueprint
-  id: Z14ClothingOuterArmorExoSevaProjectBlueprint
-  categories: [ Zona14 ]
-  suffix: Z14
-  name: Armor Exo Seva Project Recipe
-  components:
-    - type: STBlueprint
-      blueprint: Z14newrecipeClothingOuterArmorExoSevaProject
-
-- type: entity
-  parent: STBaseBlueprint
-  id: Z14ClothingOuterArmorExoskeletMonolithBlueprint
-  categories: [ Zona14 ]
-  suffix: Z14
-  name: Armor Exoskelet Monolith Recipe
-  components:
-    - type: STBlueprint
-      blueprint: Z14newrecipeClothingOuterArmorExoskeletMonolith
-
-- type: entity
-  parent: STBaseBlueprint
-  id: Z14ClothingOuterArmorExoskeletonCovenantBlueprint
-  categories: [ Zona14 ]
-  suffix: Z14
-  name: Armor Exoskeleton Covenant Recipe
-  components:
-    - type: STBlueprint
-      blueprint: Z14newrecipeClothingOuterArmorExoskeletonCovenant
 
 - type: entity
   parent: STBaseBlueprint
@@ -143,16 +63,6 @@
   components:
     - type: STBlueprint
       blueprint: Z14newrecipeClothingOuterArmorHeavyDebt
-
-- type: entity
-  parent: STBaseBlueprint
-  id: Z14ClothingOuterArmorHeavyJabaBlueprint
-  categories: [ Zona14 ]
-  suffix: Z14
-  name: Armor Heavy Jaba Recipe
-  components:
-    - type: STBlueprint
-      blueprint: Z14newrecipeClothingOuterArmorHeavyJaba
 
 - type: entity
   parent: STBaseBlueprint
@@ -183,16 +93,6 @@
   components:
     - type: STBlueprint
       blueprint: Z14newrecipeClothingOuterArmorMerc2
-
-- type: entity
-  parent: STBaseBlueprint
-  id: Z14ClothingOuterArmorMonolithOldBlueprint
-  categories: [ Zona14 ]
-  suffix: Z14
-  name: Armor Monolith Old Recipe
-  components:
-    - type: STBlueprint
-      blueprint: Z14newrecipeClothingOuterArmorMonolithOld
 
 - type: entity
   parent: STBaseBlueprint
@@ -316,16 +216,6 @@
 
 - type: entity
   parent: STBaseBlueprint
-  id: Z14STClothingOuterArmorHeavySeraBlueprint
-  categories: [ Zona14 ]
-  suffix: Z14
-  name: Armor Heavy Sera Recipe
-  components:
-    - type: STBlueprint
-      blueprint: Z14newrecipeSTClothingOuterArmorHeavySera
-
-- type: entity
-  parent: STBaseBlueprint
   id: Z14STClothingOuterArmorKravaBlueprint
   categories: [ Zona14 ]
   suffix: Z14
@@ -353,26 +243,6 @@
   components:
     - type: STBlueprint
       blueprint: Z14newrecipeSTClothingOuterArmorLightPlateVestBaseHeavyMilitary
-
-- type: entity
-  parent: STBaseBlueprint
-  id: Z14STClothingOuterArmorLightPlateVestBaseHeavyMonolithBlueprint
-  categories: [ Zona14 ]
-  suffix: Z14
-  name: Armor Light Plate Vest Base Heavy Monolith Recipe
-  components:
-    - type: STBlueprint
-      blueprint: Z14newrecipeSTClothingOuterArmorLightPlateVestBaseHeavyMonolith
-
-- type: entity
-  parent: STBaseBlueprint
-  id: Z14STClothingOuterArmorLimaSeraphimStrashBlueprint
-  categories: [ Zona14 ]
-  suffix: Z14
-  name: Armor Lima Seraphim Strash Recipe
-  components:
-    - type: STBlueprint
-      blueprint: Z14newrecipeSTClothingOuterArmorLimaSeraphimStrash
 
 - type: entity
   parent: STBaseBlueprint
