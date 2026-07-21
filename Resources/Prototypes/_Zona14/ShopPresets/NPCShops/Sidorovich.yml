@@ -180,17 +180,11 @@
 
         Z14STWeaponShotgunMP155T: 1250
 
-        Z14STWeaponShotgunSaiga12: 1250
 
-        Z14STWeaponShotgunSaiga12Auto: 1250
 
-        Z14STBaseWeaponShotgunVepr12De21: 1250
 
-        Z14STBaseWeaponShotgunVepr12Molot: 1250
 
-        Z14STShotgunKS23: 1250
 
-        Z14STWeaponShotgunKS23M: 1250
 
         Z14STWeaponShotgunTOZ54: 1250
 
@@ -210,19 +204,12 @@
 
         Z14STWeaponSMGVector9Forest: 1250
 
-        Z14STWeaponShotgunBenelliM4Super90: 1250
 
-        Z14STWeaponShotgunSPAS: 1250
 
-        Z14STWeaponShotgunMossbergM88: 1250
 
-        Z14STWeaponShotgunOrigin12: 1250
 
-        Z14STWeaponShotgunUSAS: 1250
 
-        Z14STWeaponShotgunProtecta: 1250
 
-        Z14STWeaponShotgunAA: 1250
 
         Z14STWeaponShotgunCompact: 1250
 
@@ -244,8 +231,6 @@
         STThrowingknifeBlue: 250
         # Shotguns
         Z14STWeaponShotgunTOZ34: 250 # T1
-        Z14STWeaponShotgunMP133: 500 # T2
-        Z14STWeaponShotgunMP153: 1700 # T2
         # Pistols
         Z14WeaponPistolStalkerPM: 50 #T1
         Z14WeaponPistolStalkerTT: 50 #T1

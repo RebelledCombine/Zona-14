@@ -213,6 +213,18 @@
           prob: 0.02
         - id: Z14STWeaponSniperVeprSeraphimBlueprint
           prob: 0.02
+        - id: Z14STBaseWeaponShotgunVepr12De21Blueprint
+          prob: 0.02
+        - id: Z14STBaseWeaponShotgunVepr12MolotBlueprint
+          prob: 0.02
+        - id: Z14STShotgunKS23Blueprint
+          prob: 0.02
+        - id: Z14STWeaponShotgunProtectaBlueprint
+          prob: 0.02
+        - id: Z14STWeaponShotgunSPASBlueprint
+          prob: 0.02
+        - id: Z14STWeaponShotgunSaiga12AutoBlueprint
+          prob: 0.02
 
 - type: entity
   parent: [ Z14STCacheStorageFillT4, STBaseCache]

@@ -1326,3 +1326,260 @@
       amount: 3
     STCraftPlasticFittingT4:
       amount: 2
+
+# ── shotguns re-tiered on capacity and fire mode ────
+
+- type: craftRecipe
+  id: Z14newrecipeSTWeaponShotgunBenelliM4Super90
+  resultProtos:
+    - Z14STWeaponShotgunBenelliM4Super90
+  craftTime: 12
+  items:
+    Z14STWeaponShotgunBenelliM4Super90Blueprint:
+      amount: 1
+      catalyzer: true
+    ToolkitTearOne:
+      amount: 1
+      catalyzer: true
+    STCraftSheetIronT2:
+      amount: 3
+    STCraftPlasticFittingT2:
+      amount: 2
+
+- type: craftRecipe
+  id: Z14newrecipeSTWeaponShotgunMP133
+  resultProtos:
+    - Z14STWeaponShotgunMP133
+  craftTime: 12
+  items:
+    Z14STWeaponShotgunMP133Blueprint:
+      amount: 1
+      catalyzer: true
+    ToolkitTearOne:
+      amount: 1
+      catalyzer: true
+    STCraftSheetIronT2:
+      amount: 3
+    STCraftPlasticFittingT2:
+      amount: 2
+
+- type: craftRecipe
+  id: Z14newrecipeSTWeaponShotgunMP153
+  resultProtos:
+    - Z14STWeaponShotgunMP153
+  craftTime: 12
+  items:
+    Z14STWeaponShotgunMP153Blueprint:
+      amount: 1
+      catalyzer: true
+    ToolkitTearOne:
+      amount: 1
+      catalyzer: true
+    STCraftSheetIronT2:
+      amount: 3
+    STCraftPlasticFittingT2:
+      amount: 2
+
+- type: craftRecipe
+  id: Z14newrecipeSTWeaponShotgunMossbergM88
+  resultProtos:
+    - Z14STWeaponShotgunMossbergM88
+  craftTime: 12
+  items:
+    Z14STWeaponShotgunMossbergM88Blueprint:
+      amount: 1
+      catalyzer: true
+    ToolkitTearOne:
+      amount: 1
+      catalyzer: true
+    STCraftSheetIronT2:
+      amount: 3
+    STCraftPlasticFittingT2:
+      amount: 2
+
+- type: craftRecipe
+  id: Z14newrecipeSTWeaponShotgunOrigin12
+  resultProtos:
+    - Z14STWeaponShotgunOrigin12
+  craftTime: 12
+  items:
+    Z14STWeaponShotgunOrigin12Blueprint:
+      amount: 1
+      catalyzer: true
+    ToolkitTearOne:
+      amount: 1
+      catalyzer: true
+    STCraftSheetIronT2:
+      amount: 3
+    STCraftPlasticFittingT2:
+      amount: 2
+
+- type: craftRecipe
+  id: Z14newrecipeSTWeaponShotgunSaiga12
+  resultProtos:
+    - Z14STWeaponShotgunSaiga12
+  craftTime: 12
+  items:
+    Z14STWeaponShotgunSaiga12Blueprint:
+      amount: 1
+      catalyzer: true
+    ToolkitTearOne:
+      amount: 1
+      catalyzer: true
+    STCraftSheetIronT2:
+      amount: 3
+    STCraftPlasticFittingT2:
+      amount: 2
+
+- type: craftRecipe
+  id: Z14newrecipeSTBaseWeaponShotgunVepr12De21
+  resultProtos:
+    - Z14STBaseWeaponShotgunVepr12De21
+  craftTime: 16
+  items:
+    Z14STBaseWeaponShotgunVepr12De21Blueprint:
+      amount: 1
+      catalyzer: true
+    ToolkitTearTwo:
+      amount: 1
+      catalyzer: true
+    STCraftSheetBrassT3:
+      amount: 3
+    STCraftPlasticFittingT3:
+      amount: 2
+
+- type: craftRecipe
+  id: Z14newrecipeSTBaseWeaponShotgunVepr12Molot
+  resultProtos:
+    - Z14STBaseWeaponShotgunVepr12Molot
+  craftTime: 16
+  items:
+    Z14STBaseWeaponShotgunVepr12MolotBlueprint:
+      amount: 1
+      catalyzer: true
+    ToolkitTearTwo:
+      amount: 1
+      catalyzer: true
+    STCraftSheetBrassT3:
+      amount: 3
+    STCraftPlasticFittingT3:
+      amount: 2
+
+- type: craftRecipe
+  id: Z14newrecipeSTShotgunKS23
+  resultProtos:
+    - Z14STShotgunKS23
+  craftTime: 16
+  items:
+    Z14STShotgunKS23Blueprint:
+      amount: 1
+      catalyzer: true
+    ToolkitTearTwo:
+      amount: 1
+      catalyzer: true
+    STCraftSheetBrassT3:
+      amount: 3
+    STCraftPlasticFittingT3:
+      amount: 2
+
+- type: craftRecipe
+  id: Z14newrecipeSTWeaponShotgunProtecta
+  resultProtos:
+    - Z14STWeaponShotgunProtecta
+  craftTime: 16
+  items:
+    Z14STWeaponShotgunProtectaBlueprint:
+      amount: 1
+      catalyzer: true
+    ToolkitTearTwo:
+      amount: 1
+      catalyzer: true
+    STCraftSheetBrassT3:
+      amount: 3
+    STCraftPlasticFittingT3:
+      amount: 2
+
+- type: craftRecipe
+  id: Z14newrecipeSTWeaponShotgunSPAS
+  resultProtos:
+    - Z14STWeaponShotgunSPAS
+  craftTime: 16
+  items:
+    Z14STWeaponShotgunSPASBlueprint:
+      amount: 1
+      catalyzer: true
+    ToolkitTearTwo:
+      amount: 1
+      catalyzer: true
+    STCraftSheetBrassT3:
+      amount: 3
+    STCraftPlasticFittingT3:
+      amount: 2
+
+- type: craftRecipe
+  id: Z14newrecipeSTWeaponShotgunSaiga12Auto
+  resultProtos:
+    - Z14STWeaponShotgunSaiga12Auto
+  craftTime: 16
+  items:
+    Z14STWeaponShotgunSaiga12AutoBlueprint:
+      amount: 1
+      catalyzer: true
+    ToolkitTearTwo:
+      amount: 1
+      catalyzer: true
+    STCraftSheetBrassT3:
+      amount: 3
+    STCraftPlasticFittingT3:
+      amount: 2
+
+- type: craftRecipe
+  id: Z14newrecipeSTWeaponShotgunAA
+  resultProtos:
+    - Z14STWeaponShotgunAA
+  craftTime: 20
+  items:
+    Z14STWeaponShotgunAABlueprint:
+      amount: 1
+      catalyzer: true
+    ToolkitTearThree:
+      amount: 1
+      catalyzer: true
+    STCraftSheetAluminumT4:
+      amount: 3
+    STCraftPlasticFittingT4:
+      amount: 2
+
+- type: craftRecipe
+  id: Z14newrecipeSTWeaponShotgunKS23M
+  resultProtos:
+    - Z14STWeaponShotgunKS23M
+  craftTime: 20
+  items:
+    Z14STWeaponShotgunKS23MBlueprint:
+      amount: 1
+      catalyzer: true
+    ToolkitTearThree:
+      amount: 1
+      catalyzer: true
+    STCraftSheetAluminumT4:
+      amount: 3
+    STCraftPlasticFittingT4:
+      amount: 2
+
+- type: craftRecipe
+  id: Z14newrecipeSTWeaponShotgunUSAS
+  resultProtos:
+    - Z14STWeaponShotgunUSAS
+  craftTime: 20
+  items:
+    Z14STWeaponShotgunUSASBlueprint:
+      amount: 1
+      catalyzer: true
+    ToolkitTearThree:
+      amount: 1
+      catalyzer: true
+    STCraftSheetAluminumT4:
+      amount: 3
+    STCraftPlasticFittingT4:
+      amount: 2

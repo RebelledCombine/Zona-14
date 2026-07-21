@@ -88,7 +88,6 @@
       items:
         Z14STWeaponShotgunSawedOf: 1250
         Z14STBaseWeaponShotgunTOZ106: 1250
-        Z14STWeaponShotgunMP133: 1250
         Z14WeaponPistolStalkerLP08: 500
         Z14WeaponPistolStalkerPMModifed: 1250
         Z14WeaponStalkerPistolTec9: 1250
@@ -99,11 +98,6 @@
         Z14STWeaponSMGVector9: 1250
         Z14STWeaponSMGVector9Black: 1250
         Z14STWeaponSMGVector9Forest: 1250
-        Z14STWeaponShotgunBenelliM4Super90: 1250
-        Z14STWeaponShotgunOrigin12: 1250
-        Z14STWeaponShotgunUSAS: 1250
-        Z14STWeaponShotgunProtecta: 1250
-        Z14STWeaponShotgunAA: 1250
         Z14STWeaponShotgunCompact: 1250
         # Pistols
         STWeaponRevolverRugerRedhawk: 850
@@ -111,8 +105,6 @@
         Z14WeaponPistolStalkerGlock: 400
         # Shotguns
         Z14STWeaponShotgunTOZ34: 225 # T2
-        Z14STWeaponShotgunMossbergM88: 500 # T2
-        Z14STWeaponShotgunSPAS: 2000 # T3
         # SMGs
         Z14STWeaponSMGMP5: 1800 # T3
         Z14STWeaponSMGThompson: 3800

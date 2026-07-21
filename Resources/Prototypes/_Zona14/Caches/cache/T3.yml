@@ -257,6 +257,18 @@
           prob: 0.03
         - id: Z14WeaponPistolGyrzaTactikalBlueprint
           prob: 0.03
+        - id: Z14STWeaponShotgunBenelliM4Super90Blueprint
+          prob: 0.03
+        - id: Z14STWeaponShotgunMP133Blueprint
+          prob: 0.03
+        - id: Z14STWeaponShotgunMP153Blueprint
+          prob: 0.03
+        - id: Z14STWeaponShotgunMossbergM88Blueprint
+          prob: 0.03
+        - id: Z14STWeaponShotgunOrigin12Blueprint
+          prob: 0.03
+        - id: Z14STWeaponShotgunSaiga12Blueprint
+          prob: 0.03
           
 - type: entity
   parent: [ Z14STCacheStorageFillT3, STBaseCache]

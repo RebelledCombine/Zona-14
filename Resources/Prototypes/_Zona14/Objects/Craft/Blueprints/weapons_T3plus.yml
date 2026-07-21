@@ -779,3 +779,153 @@
   components:
     - type: STBlueprint
       blueprint: Z14newrecipeSTWeaponSniperSV98
+
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14STWeaponShotgunBenelliM4Super90Blueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Shotgun Benelli M4 Super90 Recipe
+  components:
+    - type: STBlueprint
+      blueprint: Z14newrecipeSTWeaponShotgunBenelliM4Super90
+
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14STWeaponShotgunMP133Blueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Shotgun MP133 Recipe
+  components:
+    - type: STBlueprint
+      blueprint: Z14newrecipeSTWeaponShotgunMP133
+
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14STWeaponShotgunMP153Blueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Shotgun MP153 Recipe
+  components:
+    - type: STBlueprint
+      blueprint: Z14newrecipeSTWeaponShotgunMP153
+
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14STWeaponShotgunMossbergM88Blueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Shotgun Mossberg M88 Recipe
+  components:
+    - type: STBlueprint
+      blueprint: Z14newrecipeSTWeaponShotgunMossbergM88
+
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14STWeaponShotgunOrigin12Blueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Shotgun Origin12 Recipe
+  components:
+    - type: STBlueprint
+      blueprint: Z14newrecipeSTWeaponShotgunOrigin12
+
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14STWeaponShotgunSaiga12Blueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Shotgun Saiga12 Recipe
+  components:
+    - type: STBlueprint
+      blueprint: Z14newrecipeSTWeaponShotgunSaiga12
+
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14STBaseWeaponShotgunVepr12De21Blueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: STBase Weapon Shotgun Vepr12 De21 Recipe
+  components:
+    - type: STBlueprint
+      blueprint: Z14newrecipeSTBaseWeaponShotgunVepr12De21
+
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14STBaseWeaponShotgunVepr12MolotBlueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: STBase Weapon Shotgun Vepr12 Molot Recipe
+  components:
+    - type: STBlueprint
+      blueprint: Z14newrecipeSTBaseWeaponShotgunVepr12Molot
+
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14STShotgunKS23Blueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: STShotgun KS23 Recipe
+  components:
+    - type: STBlueprint
+      blueprint: Z14newrecipeSTShotgunKS23
+
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14STWeaponShotgunProtectaBlueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Shotgun Protecta Recipe
+  components:
+    - type: STBlueprint
+      blueprint: Z14newrecipeSTWeaponShotgunProtecta
+
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14STWeaponShotgunSPASBlueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Shotgun SPAS Recipe
+  components:
+    - type: STBlueprint
+      blueprint: Z14newrecipeSTWeaponShotgunSPAS
+
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14STWeaponShotgunSaiga12AutoBlueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Shotgun Saiga12 Auto Recipe
+  components:
+    - type: STBlueprint
+      blueprint: Z14newrecipeSTWeaponShotgunSaiga12Auto
+
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14STWeaponShotgunAABlueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Shotgun AA Recipe
+  components:
+    - type: STBlueprint
+      blueprint: Z14newrecipeSTWeaponShotgunAA
+
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14STWeaponShotgunKS23MBlueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Shotgun KS23 M Recipe
+  components:
+    - type: STBlueprint
+      blueprint: Z14newrecipeSTWeaponShotgunKS23M
+
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14STWeaponShotgunUSASBlueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Shotgun USAS Recipe
+  components:
+    - type: STBlueprint
+      blueprint: Z14newrecipeSTWeaponShotgunUSAS
