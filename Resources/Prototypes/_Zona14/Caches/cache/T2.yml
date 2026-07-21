@@ -153,7 +153,7 @@
           prob: 0.05
 
 - type: entity
-  parent: [ STCacheStorageFillT2, STBaseCache]
+  parent: [ Z14STCacheStorageFillT2, STBaseCache]
   id: Z14STCache1T2
   categories: [ HideSpawnMenu , Zona14 ]
   suffix: Z14
@@ -165,7 +165,7 @@
       prototype: Z14STCache1T2
 
 - type: entity
-  parent: [ STCacheStorageFillT2, STBaseCache]
+  parent: [ Z14STCacheStorageFillT2, STBaseCache]
   id: Z14STCache2T2
   categories: [ HideSpawnMenu , Zona14 ]
   suffix: Z14
@@ -177,7 +177,7 @@
       prototype: Z14STCache2T2
 
 - type: entity
-  parent: [ STCacheStorageFillT2, STBaseCache]
+  parent: [ Z14STCacheStorageFillT2, STBaseCache]
   id: Z14STCache3T2
   categories: [ HideSpawnMenu , Zona14 ]
   suffix: Z14
