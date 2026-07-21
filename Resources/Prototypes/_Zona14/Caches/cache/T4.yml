@@ -137,6 +137,46 @@
           prob: 0.01
         - id: STCookingFermentedEel
           prob: 0.08
+        - id: Z14ClothingOuterArmor6B13ZavetBlueprint
+          prob: 0.02
+        - id: Z14ClothingOuterArmorBerill5MProjectBlueprint
+          prob: 0.02
+        - id: Z14ClothingOuterArmorBulatCovenantBlueprint
+          prob: 0.02
+        - id: Z14ClothingOuterArmorBulatMonolithBlueprint
+          prob: 0.02
+        - id: Z14ClothingOuterArmorHazmatRfBlueprint
+          prob: 0.02
+        - id: Z14ClothingOuterArmorHeavyDebtBlueprint
+          prob: 0.02
+        - id: Z14ClothingOuterArmorHeavyJabaBlueprint
+          prob: 0.02
+        - id: Z14ClothingOuterArmorHeavyUNTARBlueprint
+          prob: 0.02
+        - id: Z14ClothingOuterArmorLegatDeserterBlueprint
+          prob: 0.02
+        - id: Z14ClothingOuterArmorUzk5Blueprint
+          prob: 0.02
+        - id: Z14ClothingOuterArmorYegerBlueprint
+          prob: 0.02
+        - id: Z14STClothingOuterArmorBerillBerezaBlueprint
+          prob: 0.02
+        - id: Z14STClothingOuterArmorGonchiyBlueprint
+          prob: 0.02
+        - id: Z14STClothingOuterArmorHeavySeraBlueprint
+          prob: 0.02
+        - id: Z14STClothingOuterArmorKravaBlueprint
+          prob: 0.02
+        - id: Z14STClothingOuterArmorLightPlateVestBaseHeavyBanditBlueprint
+          prob: 0.02
+        - id: Z14STClothingOuterArmorLightPlateVestBaseHeavyMilitaryBlueprint
+          prob: 0.02
+        - id: Z14STClothingOuterArmorLightPlateVestBaseHeavyMonolithBlueprint
+          prob: 0.02
+        - id: Z14STClothingOuterArmorLimaSeraphimStrashBlueprint
+          prob: 0.02
+        - id: Z14STClothingOuterArmorVeryHeavySciBlueprint
+          prob: 0.02
 
 - type: entity
   parent: [ Z14STCacheStorageFillT4, STBaseCache]
