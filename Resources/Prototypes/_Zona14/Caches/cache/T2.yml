@@ -151,6 +151,60 @@
           prob: 0.02
         - id: MakeshiftArtContBlueprint
           prob: 0.05
+        - id: ClothingBackpackDuffelBlackMilitaryTacticStalkerBlueprint
+          prob: 0.04
+        - id: ClothingBackpackDuffelBlackTacticStalkerBlueprint
+          prob: 0.04
+        - id: ClothingBackpackDuffelHikingVSRFBlueprint
+          prob: 0.04
+        - id: ClothingBackpackDuffelMilitaryBlueBlueprint
+          prob: 0.04
+        - id: ClothingBackpackDuffelMilitaryOliveBlueprint
+          prob: 0.04
+        - id: ClothingBackpackDuffelOliveTacticStalkerBlueprint
+          prob: 0.04
+        - id: ClothingBackpackDuffelSuperStalkerBlueprint
+          prob: 0.04
+        - id: ClothingBackpackDuffelSuperStalkerGrayBlueprint
+          prob: 0.04
+        - id: ClothingOuterArmorCN1Blueprint
+          prob: 0.04
+        - id: ClothingOuterArmorZN1Blueprint
+          prob: 0.04
+        - id: ClothingOuterArmorZaryaStalkerModifedType1Blueprint
+          prob: 0.04
+        - id: ClothingOuterArmorZaryaStalkerModifedType2Blueprint
+          prob: 0.04
+        - id: ClothingOuterArmourCoatBanditBlackBlueprint
+          prob: 0.04
+        - id: ClothingOuterArmourCoatBanditBrownBlueprint
+          prob: 0.04
+        - id: ClothingOuterArmourJacketBanditBlueprint
+          prob: 0.04
+        - id: ClothingOuterCoatBolotniyBlueprint
+          prob: 0.04
+        - id: ClothingOuterCoatKolchygaBlueprint
+          prob: 0.04
+        - id: ClothingOuterCoatStalkerBlueprint
+          prob: 0.04
+        - id: ST1255TPCinkBlueprint
+          prob: 0.04
+        - id: ST45ACPHydroshockBoxCinkBlueprint
+          prob: 0.04
+        - id: ST45ACPLFMJBoxCinkBlueprint
+          prob: 0.04
+        - id: ST45ACPMFMJBoxCinkBlueprint
+          prob: 0.04
+        - id: ST939SP5BoxCinkBlueprint
+          prob: 0.04
+        - id: STClothingHeadTinfoilBlueprint
+          prob: 0.04
+        - id: STShotgunBulletBoxRIPCinkBlueprint
+          prob: 0.04
+        - id: STShotgunBulletUnlethalBoxCinkBlueprint
+          prob: 0.04
+        - id: TrashDetectorTier3Blueprint
+          prob: 0.04
 
 - type: entity
   parent: [ Z14STCacheStorageFillT2, STBaseCache]

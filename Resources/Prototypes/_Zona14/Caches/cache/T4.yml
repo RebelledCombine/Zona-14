@@ -225,6 +225,52 @@
           prob: 0.02
         - id: Z14STWeaponShotgunSaiga12AutoBlueprint
           prob: 0.02
+        - id: ClothingEarsPsyHelmT2Blueprint
+          prob: 0.02
+        - id: ClothingHeadHelmetBulatMilitaryBlueprint
+          prob: 0.02
+        - id: ClothingHeadHelmetRatnikBlueprint
+          prob: 0.02
+        - id: ClothingHeadHelmetUlachBlueprint
+          prob: 0.02
+        - id: ClothingOuterArmorAVSplateblackBlueprint
+          prob: 0.02
+        - id: ClothingOuterArmorSSP24SapfireBlueprint
+          prob: 0.02
+        - id: ClothingOuterArmorSSP24TopazBlueprint
+          prob: 0.02
+        - id: ClothingOuterArmorStalkerCombatBlueprint
+          prob: 0.02
+        - id: ST1255BPCinkBlueprint
+          prob: 0.02
+        - id: ST545BPBoxCinkBlueprint
+          prob: 0.02
+        - id: ST556M856BoxCinkBlueprint
+          prob: 0.02
+        - id: ST739PCBoxCinkBlueprint
+          prob: 0.02
+        - id: ST751M61BoxCinkBlueprint
+          prob: 0.02
+        - id: ST754PCBoxCinkBlueprint
+          prob: 0.02
+        - id: ST939BPBoxCinkBlueprint
+          prob: 0.02
+        - id: STClothingCapeArmorChainmailSevaBlueprint
+          prob: 0.02
+        - id: STClothingOuterArmor6B13Blueprint
+          prob: 0.02
+        - id: STClothingOuterArmorBerill5MBlueprint
+          prob: 0.02
+        - id: STClothingOuterArmorHeavyBlueprint
+          prob: 0.02
+        - id: STClothingOuterArmorIOTVGreenBlueprint
+          prob: 0.02
+        - id: STClothingOuterArmorSSP99Blueprint
+          prob: 0.02
+        - id: STClothingOuterArmorYegerFreedomBlueprint
+          prob: 0.02
+        - id: TrashDetectorTier5Blueprint
+          prob: 0.02
 
 - type: entity
   parent: [ Z14STCacheStorageFillT4, STBaseCache]

@@ -136,6 +136,22 @@
           prob: 0.02
         - id: Z14STWeaponShotgunUSASBlueprint
           prob: 0.02
+        - id: ST545BSBoxCinkBlueprint
+          prob: 0.02
+        - id: ST545M995BoxCinkBlueprint
+          prob: 0.02
+        - id: ST545NCBoxCinkBlueprint
+          prob: 0.02
+        - id: ST556SSAAPBoxCinkBlueprint
+          prob: 0.02
+        - id: ST739BPBoxCinkBlueprint
+          prob: 0.02
+        - id: ST751M993BoxCinkBlueprint
+          prob: 0.02
+        - id: ST754BTBoxCinkBlueprint
+          prob: 0.02
+        - id: ST754SNBBoxCinkBlueprint
+          prob: 0.02
 
 - type: entity
   parent: [ Z14STCacheStorageFillT5, STBaseCache]

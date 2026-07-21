@@ -117,6 +117,26 @@
           prob: 0.01
         - id: Z14STDrinkJar
           prob: 0.03
+        - id: ClothingBackpackDuffelCommonStalkerBlueprint
+          prob: 0.05
+        - id: ClothingOuterArmorSparkBlueprint
+          prob: 0.05
+        - id: ClothingOuterCoatBanditBlackBlueprint
+          prob: 0.05
+        - id: ClothingOuterCoatBanditBrownBlueprint
+          prob: 0.05
+        - id: ClothingOuterCoatDoshdevikBlueprint
+          prob: 0.05
+        - id: ClothingOuterCoatPahanBlueprint
+          prob: 0.05
+        - id: ClothingOuterCoatPoiskBlueprint
+          prob: 0.05
+        - id: ST1255PS12ACinkBlueprint
+          prob: 0.05
+        - id: STCraftLinenFabricT1Blueprint
+          prob: 0.05
+        - id: TrashDetectorTier2Blueprint
+          prob: 0.05
           
 - type: entity
   parent: [ Z14STCacheStorageFillT1, STBaseCache]
