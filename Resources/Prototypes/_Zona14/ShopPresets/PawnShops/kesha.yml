@@ -42,7 +42,6 @@
       Z14STWeaponSMGMP5: 2500
       Z14STWeaponSMGPP91: 2000
       # Other
-      Z14STWeaponRifleGalatz: 3500
       STWeaponRevolverSWPC325TR: 140
       STWeaponRevolverChiappaRhino60DS: 1100
   - name: shop-category-magazines
@@ -385,7 +384,6 @@
         Z14STWeaponSMGPP91: 2750
         Z14STWeaponSMGStalkerCP2Veresk: 5000
         # Other
-        Z14STWeaponRifleSaiga739: 1400
         Z14WeaponPistolStalkerTT: 250
         Z14WeaponPistolStalkerAPS: 500
         STWeaponRevolverSWPC325TR: 1000

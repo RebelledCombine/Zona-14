@@ -144,17 +144,11 @@
         STWeaponShotgunMossbergM88: 500 # T2
         STWeaponShotgunMP153: 1000 # T3
         # Rifles
-        Z14STWeaponRifleSaiga545: 1200
-        Z14STWeaponRifleAKS74U: 2000
-        Z14STWeaponRifleL85: 3000
-        Z14STWeaponRifleAKS74: 3000
         # SMGs
         Z14STWeaponSMGMP5: 2000
         Z14STWeaponSMGMP40: 500
         Z14STWeaponSMGPP19: 3000
         # Snipers
-        Z14STWeaponSniperMosin: 1000
-        Z14STWeaponSniperSKS: 1500
 
     - name: shop-category-magazines
       priority: 2

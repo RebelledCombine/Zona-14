@@ -130,11 +130,7 @@
       Z14STWeaponSMGPPSh41: 2250
       Z14STWeaponSMGPP91: 2850
       # Rifles
-      Z14STWeaponRifleSaiga545: 1750 # T3
-      Z14STWeaponRifleAKS74U: 2000
       # Snipers
-      Z14STWeaponSniperSKS: 1850 # T2
-      Z14STWeaponSniperMosin: 1500
 
   - name: shop-category-magazines
     priority: 2

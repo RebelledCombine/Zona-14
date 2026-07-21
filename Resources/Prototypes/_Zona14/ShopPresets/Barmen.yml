@@ -126,14 +126,10 @@
         Z14HuntingKnife: 250
         STWeaponShotgunMP153: 500
         STWeaponShotgunSPAS: 1200
-        Z14STWeaponRifleAKS74: 3000
-        Z14STWeaponRifleA545: 13000
-        Z14STWeaponRifleLR300v1: 13000
         Z14STWeaponSMGPP91: 1500
         Z14STWeaponSMGPPSh41: 2000
         WeaponGameRevolverMateba: 4000
         Z14STWeaponSMGPP2000: 3500
-        Z14STWeaponRifleRPK74: 4500
         Z14STBaseWeaponShotgunTOZ106: 800 # T1
         STWeaponShotgunOrigin12: 5600
 

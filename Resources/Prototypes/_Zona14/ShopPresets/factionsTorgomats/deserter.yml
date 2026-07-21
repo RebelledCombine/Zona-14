@@ -86,18 +86,11 @@
         STWeaponShotgunMP153: 1700 # T2
         Z14WeaponPistolStalkerPM: 50 #T1
         Z14WeaponPistolStalkerTT: 50 #T1
-        Z14STWeaponRifleAKS74UBlack: 1200
-        Z14STWeaponRifleAKS74Green: 3900
         Z14WeaponPistolStalkerAPS: 900 #T2
-        Z14STWeaponSniperSKS: 1850 # T2
-        Z14STWeaponSniperMosin: 1500
         Z14STWeaponSMGPPSh41: 2500
         Z14STWeaponSMGPP91: 3000
-        Z14STWeaponRifleAKM: 6700
         Z14STWeaponSMGPP19: 3300
         Z14STWeaponSMGPP1901: 2000
-        Z14STWeaponRifleOC14: 5000
-        Z14STWeaponRifleOC14Alt: 5000
           #BOOM-BA-DA-BAM!
         Z14KhattabkaGrenade: 175
         Z14DG05SmokeGrenade: 225

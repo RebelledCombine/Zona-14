@@ -182,11 +182,6 @@
         Z14STWeaponSMGPP19: 3300
         Z14STWeaponSMGPP1901: 2000
         # Rifles
-        Z14STWeaponRifleAKS74U: 3000
-        Z14STWeaponRifleAKS74: 5500
-        Z14STWeaponRifleL85: 2250
-        Z14STWeaponRifleAKM: 6700
-        Z14STWeaponRifleFAL: 3000
 
     - name: shop-category-magazines
       priority: 2

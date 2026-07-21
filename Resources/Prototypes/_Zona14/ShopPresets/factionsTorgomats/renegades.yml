@@ -90,8 +90,6 @@
          Z14STWeaponSMGPPSh41: 2200
          Z14STWeaponSMGPP19: 3000
          Z14STWeaponSMGPP91: 2200
-         Z14STWeaponRifleAKS74U: 1600
-         Z14STWeaponSniperMosin: 1600
     - name: shop-category-magazines
       priority: 2
       items:

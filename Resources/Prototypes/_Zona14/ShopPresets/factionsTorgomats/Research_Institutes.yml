@@ -104,9 +104,7 @@
       STWeaponRevolverRugerRedhawk: 2750
       STWeaponShotgunSPAS: 1350
       STWeaponRevolverSWModel625: 1650
-      Z14STWeaponRifleAKS74U: 1300
       Z14STWeaponSMGPP19: 1600
-      Z14STWeaponRifleM16: 3000
       Z14WeaponPistolStalkerPM: 100
   - name: shop-category-magazines
     priority: 2

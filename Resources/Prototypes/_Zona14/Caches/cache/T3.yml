@@ -171,6 +171,92 @@
           prob: 0.03
         - id: Z14STClothingOuterKoryndBlueprint
           prob: 0.03
+        - id: Z14STMetroWeaponRifleVSVBlueprint
+          prob: 0.03
+        - id: Z14STWeaponMachineGunM249SAWBlueprint
+          prob: 0.03
+        - id: Z14STWeaponRifleA545Blueprint
+          prob: 0.03
+        - id: Z14STWeaponRifleAKS74GreenBlueprint
+          prob: 0.03
+        - id: Z14STWeaponRifleAKS74UBlackBlueprint
+          prob: 0.03
+        - id: Z14STWeaponRifleAKS74USERAPHBlueprint
+          prob: 0.03
+        - id: Z14STWeaponRifleAKS74UWhiteBlueprint
+          prob: 0.03
+        - id: Z14STWeaponRifleAM17Blueprint
+          prob: 0.03
+        - id: Z14STWeaponRifleASVALBlueprint
+          prob: 0.03
+        - id: Z14STWeaponRifleASVALSelebraBlueprint
+          prob: 0.03
+        - id: Z14STWeaponRifleAUGBlueprint
+          prob: 0.03
+        - id: Z14STWeaponRifleF2000Blueprint
+          prob: 0.03
+        - id: Z14STWeaponRifleG36Blueprint
+          prob: 0.03
+        - id: Z14STWeaponRifleG36AltBlueprint
+          prob: 0.03
+        - id: Z14STWeaponRifleG36CovenantBlueprint
+          prob: 0.03
+        - id: Z14STWeaponRifleGalilBlueprint
+          prob: 0.03
+        - id: Z14STWeaponRifleHK416Blueprint
+          prob: 0.03
+        - id: Z14STWeaponRifleL85WhiteStrawberryBlueprint
+          prob: 0.03
+        - id: Z14STWeaponRifleLR300WhiteBlueprint
+          prob: 0.03
+        - id: Z14STWeaponRifleLR300v1Blueprint
+          prob: 0.03
+        - id: Z14STWeaponRifleLR300v2Blueprint
+          prob: 0.03
+        - id: Z14STWeaponRifleOC14Blueprint
+          prob: 0.03
+        - id: Z14STWeaponRifleOC14939Blueprint
+          prob: 0.03
+        - id: Z14STWeaponRifleOC14AltBlueprint
+          prob: 0.03
+        - id: Z14STWeaponRifleOC14AltSkin1Blueprint
+          prob: 0.03
+        - id: Z14STWeaponRifleRPK74VedmaBlueprint
+          prob: 0.03
+        - id: Z14STWeaponRifleSCARLBlueprint
+          prob: 0.03
+        - id: Z14STWeaponRifleSIG550BlackBlueprint
+          prob: 0.03
+        - id: Z14STWeaponRifleSaiga545Blueprint
+          prob: 0.03
+        - id: Z14STWeaponRifleSaiga545AutoBlueprint
+          prob: 0.03
+        - id: Z14STWeaponRifleStalkerAK105SwampThingBlueprint
+          prob: 0.03
+        - id: Z14STWeaponRifleStalkerAK12Blueprint
+          prob: 0.03
+        - id: Z14STWeaponRifleStalkerAK12SeraBlueprint
+          prob: 0.03
+        - id: Z14STWeaponRifleStalkerAbakanBlueprint
+          prob: 0.03
+        - id: Z14STWeaponRifleStalkerAek971Blueprint
+          prob: 0.03
+        - id: Z14STWeaponRifleStalkerRPK16Blueprint
+          prob: 0.03
+        - id: Z14STWeaponRifleStalkerRPK16CamoBlueprint
+          prob: 0.03
+        - id: Z14STWeaponSMGStalkerCP2Veresk921Blueprint
+          prob: 0.03
+        - id: Z14STWeaponSMGStalkerCP2VereskSera921Blueprint
+          prob: 0.03
+        - id: Z14STWeaponSniperVSK94Blueprint
+          prob: 0.03
+        - id: Z14STWeaponSniperVSSBlueprint
+          prob: 0.03
+        - id: Z14STWeaponSniperVSSOracleBlueprint
+          prob: 0.03
+        - id: Z14WeaponPistolGyrzaTactikalBlueprint
+          prob: 0.03
           
 - type: entity
   parent: [ Z14STCacheStorageFillT3, STBaseCache]

@@ -98,13 +98,7 @@
         Z14STWeaponSMGMP5: 1800 # T3
         Z14STWeaponSMGThompson: 3800
         # Nato Rifles
-        Z14STWeaponRifleM16: 2500 # T2
-        Z14STWeaponRifleSCARH: 6000 # T3
-        Z14STWeaponRifleFAL: 1750 # T3
-        Z14STWeaponRifleFALo: 8000 # T3
-        Z14STWeaponRifleGalil: 7000 # T3
         # Snipers
-        Z14STWeaponSniperMosin: 1200
 
     - name: shop-category-magazines
       priority: 2

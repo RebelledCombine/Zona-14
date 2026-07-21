@@ -107,17 +107,8 @@
         STWeaponShotgunTOZ34: 125 # T2
         STWeaponShotgunSPAS: 1350
           # Nato
-        Z14STWeaponRifleAKS74U: 1300 #CHANGED
-        Z14STWeaponRifleL85: 1500 #CHANGED
-        Z14STWeaponRifleM16: 2400 #ADDED
-        Z14STWeaponRifleStalkerAK105SwampThing: 4400
-        Z14STWeaponRifleSIG550: 4000 #ADDED
-        Z14STWeaponRifleSIG550Black: 4000 #ADDED
-        Z14STWeaponRifleM14: 3500 #ADDED
-        Z14STWeaponSniperVepr: 5500 #ADDED
           # Smg
         Z14STWeaponSMGMP5: 2300
-        Z14STWeaponSMGStalkerCP2Veresk921: 4000 #ADDED
           # Other
         Z14WeaponPistolStalkerGlock: 400
         STWeaponRevolverSWPC325TR: 850

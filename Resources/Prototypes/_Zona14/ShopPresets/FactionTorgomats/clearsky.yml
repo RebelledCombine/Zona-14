@@ -154,15 +154,8 @@
       Z14STWeaponSMGPP19: 2000
       Z14STWeaponSMGMP5: 2000
       # Rifles
-      Z14STWeaponRifleFAL: 1500
-      Z14STWeaponRifleM4: 3000
-      Z14STWeaponRifleM14: 3750
-      Z14STWeaponRifleAKS74: 2800
-      Z14STWeaponRifleAKM: 3500
-      Z14STWeaponRifleStalkerAK105SwampThing: 4000
       STMetroWeaponRifleVSV: 5000
       # Snipers
-      Z14STWeaponSniperVepr: 4000
 
   - name: shop-category-magazines
     priority: 2

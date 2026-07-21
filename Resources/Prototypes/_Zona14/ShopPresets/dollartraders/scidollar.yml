@@ -9,7 +9,6 @@
     items:
       Z14STWeaponSMGVector9: 35
       STWeaponShotgunSaiga12: 25
-      Z14STWeaponRifleSIG550: 170
   - name: shop-category-magazines
     priority: 2
     items:

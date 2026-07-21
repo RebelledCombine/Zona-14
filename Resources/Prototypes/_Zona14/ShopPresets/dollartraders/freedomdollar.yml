@@ -11,15 +11,9 @@
         STWeaponShotgunBenelliM4Super90: 10
         STWeaponShotgunProtecta: 25
           # 5,45x39
-        Z14STWeaponRifleG36: 140
-        Z14STWeaponRifleM4: 200
-        Z14STWeaponRifleASVAL: 500
-        Z14STWeaponRifleAK103: 300
-        Z14STWeaponRifleSIG550: 150
         Z14KhattabkaGrenade: 1
         Z14TearGasGrenadeStalker: 7
         Z14RGD5Grenade: 10
-        Z14STWeaponRifleStalkerRPK16: 1000
     - name: shop-category-magazines
       priority: 2
       items:

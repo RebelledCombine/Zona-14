@@ -47,19 +47,11 @@
         STWeaponShotgunMP133: 340
         STWeaponShotgunMP153: 800
         # Rifles
-        Z14STWeaponRifleSaiga545: 1000
-        Z14STWeaponRifleAKS74U: 1500
-        Z14STWeaponRifleAKS74: 4000
-        Z14STWeaponRifleOC14: 5650
-        Z14STWeaponRifleAK103: 8000
-        Z14STWeaponRifleAKM: 6000
         # SMGs
         Z14STWeaponSMGPP91: 1200
         Z14STWeaponSMGStalkerCP2Veresk: 2000
         Z14STWeaponSMGPP19: 3000
         # Snipers
-        Z14STWeaponSniperMosin: 1200
-        Z14STWeaponSniperSKS: 1500
 
     - name: shop-category-magazines
       priority: 2

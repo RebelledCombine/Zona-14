@@ -107,11 +107,6 @@
       # 7,62x25
       Z14WeaponPistolStalkerTT: 250 #T1
       # 5,45x39
-      Z14STWeaponRifleSaiga545: 900 # T3
-      Z14STWeaponRifleAKS74U: 1400
-      Z14STWeaponRifleAKS74UBlack: 1400
-      Z14STWeaponRifleAKS74: 4000
-      Z14STWeaponRifleAKS74Green: 4000
       # Other
 
       STWeaponRevolverSWPC325TR: 850
@@ -119,14 +114,9 @@
       Z14WeaponStalkerPistolTec9: 250
       Z14STWeaponSMGMP40: 1000
       Z14WeaponPistolStalkerAPS: 500 #T2
-      Z14STWeaponSniperSKS: 1850 # T2
-      Z14STWeaponSniperMosin: 1500
-      Z14STWeaponRifleL85: 1700
       Z14STWeaponSMGPPSh41: 2500
       Z14STWeaponSMGPP19: 2000
       Z14STWeaponSMGPP91: 2500
-      Z14STWeaponRifleFAL: 1600
-      Z14STWeaponRifleM16: 2500
       Z14STWeaponSMGOTS126: 1000
   - name: shop-category-magazines
     priority: 2

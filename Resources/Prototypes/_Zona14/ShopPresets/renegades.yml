@@ -3,11 +3,7 @@
   # minSellPrice: 0
   # itemsForSale:
   categories:
-  - name: shop-category-weapons
-    priority: 1
-    items:
-      # 5,45x39
-      Z14STWeaponRifleAKS74U: 3
+  # shop-category-weapons removed: its entire stock was T3+ weapons, which are crafted now
   - name: shop-category-magazines
     priority: 2
     items:

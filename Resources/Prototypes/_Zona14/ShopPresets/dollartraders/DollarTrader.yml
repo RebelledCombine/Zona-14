@@ -67,15 +67,7 @@
     #Other
     ChevronMonolit: 3
   categories:
-  - name: shop-category-weapons
-    priority: 1
-    items:
-      Z14STWeaponRifleFALo: 300
-      Z14STWeaponRifleAK103: 300
-      Z14STWeaponSniperSVDS: 250
-      Z14STWeaponSniperVSS: 600
-      Z14STWeaponSniperSV98: 350
-      Z14STWeaponMachineGunRPD: 2000
+  # shop-category-weapons removed: its entire stock was T3+ weapons, which are crafted now
   - name: shop-category-magazines
     priority: 2
     items:

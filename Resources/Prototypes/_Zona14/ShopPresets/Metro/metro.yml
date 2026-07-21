@@ -32,15 +32,11 @@
       priority: 1
       items:
         Z14STCombatKnife: 10
-        Z14STWeaponRifleAKS74Green: 90
         Z14WeaponPistolStalkerPM: 20
         Z14WeaponPistolStalkerTT: 25
         STWeaponShotgunTOZ34: 30
         Z14STWeaponShotgunSawedOf: 25
-        Z14STWeaponRifleAKS74USERAPH: 45
         arbaletserih: 35
-        Z14STWeaponRifleSVDSWood: 45
-        Z14STWeaponRifleSaiga739: 100
     - name: shop-category-magazines
       priority: 2
       items:

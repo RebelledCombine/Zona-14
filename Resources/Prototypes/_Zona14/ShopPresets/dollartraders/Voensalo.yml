@@ -10,11 +10,6 @@
           # 7mm
         STWeaponShotgunSaiga12: 40
           # 5,45x39
-        Z14STWeaponRifleAK74M: 140
-        Z14STWeaponRifleASVAL: 500
-        Z14STWeaponRifleAK103: 300
-        Z14STWeaponRifleOC14: 150
-        Z14STWeaponSniperSVDS: 250
         Z14KhattabkaGrenade: 1
         Z14DG05SmokeGrenade: 2
         Z14TearGasGrenadeStalker: 7

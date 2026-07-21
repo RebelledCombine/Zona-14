@@ -147,6 +147,72 @@
           prob: 0.02
         - id: Z14STClothingOuterArmorKravaBlueprint
           prob: 0.02
+        - id: Z14STBaseWeaponRifleAKMPSO1MBlueprint
+          prob: 0.02
+        - id: Z14STWeaponMachineGunRPDBlueprint
+          prob: 0.02
+        - id: Z14STWeaponRifleAH12Blueprint
+          prob: 0.02
+        - id: Z14STWeaponRifleAK103Blueprint
+          prob: 0.02
+        - id: Z14STWeaponRifleAK103KamoBlueprint
+          prob: 0.02
+        - id: Z14STWeaponRifleAK203Blueprint
+          prob: 0.02
+        - id: Z14STWeaponRifleAK308Blueprint
+          prob: 0.02
+        - id: Z14STWeaponRifleAKMBlueprint
+          prob: 0.02
+        - id: Z14STWeaponRifleAKMCBlueprint
+          prob: 0.02
+        - id: Z14STWeaponRifleARX160Blueprint
+          prob: 0.02
+        - id: Z14STWeaponRifleFALoBlueprint
+          prob: 0.02
+        - id: Z14STWeaponRifleM14Blueprint
+          prob: 0.02
+        - id: Z14STWeaponRifleOC14LiturgiaBlueprint
+          prob: 0.02
+        - id: Z14STWeaponRifleSCARHShortBlueprint
+          prob: 0.02
+        - id: Z14STWeaponRifleSCARSSRBlueprint
+          prob: 0.02
+        - id: Z14STWeaponRifleSIG739Blueprint
+          prob: 0.02
+        - id: Z14STWeaponRifleSVDSWoodBlueprint
+          prob: 0.02
+        - id: Z14STWeaponRifleSaiga739AutoBlueprint
+          prob: 0.02
+        - id: Z14STWeaponRifleStalkerAK104Blueprint
+          prob: 0.02
+        - id: Z14STWeaponRifleStalkerAK104_UpgradeTestBlueprint
+          prob: 0.02
+        - id: Z14STWeaponRifleStalkerAK15Blueprint
+          prob: 0.02
+        - id: Z14STWeaponRifleZastavaM92Blueprint
+          prob: 0.02
+        - id: Z14STWeaponSniperHK417Blueprint
+          prob: 0.02
+        - id: Z14STWeaponSniperSKSpersecutorBlueprint
+          prob: 0.02
+        - id: Z14STWeaponSniperSVDSBlueprint
+          prob: 0.02
+        - id: Z14STWeaponSniperSVDSCovenantBlueprint
+          prob: 0.02
+        - id: Z14STWeaponSniperSVDSGrassBlueprint
+          prob: 0.02
+        - id: Z14STWeaponSniperSVUBlueprint
+          prob: 0.02
+        - id: Z14STWeaponSniperSVUSeraphimBlueprint
+          prob: 0.02
+        - id: Z14STWeaponSniperSVUTopBlueprint
+          prob: 0.02
+        - id: Z14STWeaponSniperVeprBlueprint
+          prob: 0.02
+        - id: Z14STWeaponSniperVeprGrassBlueprint
+          prob: 0.02
+        - id: Z14STWeaponSniperVeprSeraphimBlueprint
+          prob: 0.02
 
 - type: entity
   parent: [ Z14STCacheStorageFillT4, STBaseCache]

@@ -126,6 +126,10 @@
           prob: 0.02
         - id: Z14STClothingOuterHeavyTorBlueprint
           prob: 0.02
+        - id: Z14STWeaponSniperOSV96Blueprint
+          prob: 0.02
+        - id: Z14STWeaponSniperSV98Blueprint
+          prob: 0.02
 
 - type: entity
   parent: [ Z14STCacheStorageFillT5, STBaseCache]

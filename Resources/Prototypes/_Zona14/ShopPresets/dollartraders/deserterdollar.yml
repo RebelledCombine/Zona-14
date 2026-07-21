@@ -5,11 +5,7 @@
     ChevronMonolit: 3
 
   categories:
-  - name: shop-category-weapons
-    priority: 1
-    items:
-      Z14STWeaponRifleAK74M: 140
-      Z14STWeaponSniperSVDS: 250
+  # shop-category-weapons removed: its entire stock was T3+ weapons, which are crafted now
   - name: shop-category-magazines
     priority: 2
     items:
