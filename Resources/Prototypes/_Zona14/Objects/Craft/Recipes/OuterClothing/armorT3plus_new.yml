@@ -1,0 +1,90 @@
+# Recipes for T3+ suits that had none. Vendors stop at T2, so without these the
+# suits are unobtainable except by loot.
+#
+# Formula (crafting-scheme.md §2), by SUIT tier - the Z14ArmorBaseT<n> it inherits,
+# not armorClass, which is the plate tier:
+#
+#   T3  blueprint + ToolkitTearOne   + 2 tier-3 mats + 2x T2 mutant part
+#   T4  blueprint + ToolkitTearTwo   + 3 tier-4 mats + 2x T3 mutant part + 1x T3 suit
+#   T5  blueprint + ToolkitTearThree + 3 tier-5 mats + 2x T4 mutant part + 1x T4 suit + artifact
+#
+# The chain is the point: T5 consumes a T4, which consumes a T3. With vendors capped
+# at T2 the progression is buy T2 -> craft T3 -> craft T4 from it -> craft T5 from that.
+#
+# Material and toolkit ids are the UPSTREAM ones on purpose - crafting matches
+# ingredients by exact prototype ID and every loot table grants those. Mutant parts
+# use the Z14 ids, because _Zona14 spawners are what place mutants (23:1) and the
+# shops already trade in Z14 parts (385:32).
+
+# ── T3 ──────────────────────────────────────────────
+
+- type: craftRecipe
+  id: Z14newrecipeClothingOuterArmorDolgPS5M
+  resultProtos:
+    - Z14ClothingOuterArmorDolgPS5M
+  craftTime: 15
+  items:
+    Z14ClothingOuterArmorDolgPS5MBlueprint:
+      amount: 1
+      catalyzer: true
+    ToolkitTearOne:
+      amount: 1
+      catalyzer: true
+    STCraftSheetBrassT3:
+      amount: 2
+    STCraftSturdyHideT3:
+      amount: 2
+    Z14MutantPartSnorkFoot:
+      amount: 2
+
+# ── T4 ──────────────────────────────────────────────
+
+- type: craftRecipe
+  id: Z14newrecipeClothingOuterArmorBulatMilitary
+  resultProtos:
+    - Z14ClothingOuterArmorBulatMilitary
+  craftTime: 18
+  items:
+    Z14ClothingOuterArmorBulatMilitaryBlueprint:
+      amount: 1
+      catalyzer: true
+    ToolkitTearTwo:
+      amount: 1
+      catalyzer: true
+    Z14ClothingOuterArmorStalker:
+      amount: 1
+    STCraftSheetAluminumT4:
+      amount: 2
+    STCraftPolymerFabricT4:
+      amount: 2
+    STCraftIndustrialThreadStaplesKitT4:
+      amount: 1
+    Z14MutantPartBloodsuckerTentacles:
+      amount: 2
+
+# ── T5 ──────────────────────────────────────────────
+
+- type: craftRecipe
+  id: Z14newrecipeClothingOuterArmorExoskelet
+  resultProtos:
+    - Z14ClothingOuterArmorExoskelet
+  craftTime: 22
+  items:
+    Z14ClothingOuterArmorExoskeletBlueprint:
+      amount: 1
+      catalyzer: true
+    ToolkitTearThree:
+      amount: 1
+      catalyzer: true
+    Z14ClothingOuterArmorBulatMilitary:
+      amount: 1
+    STCraftSheetSteelT5:
+      amount: 3
+    STCraftCompositeMaterialT5:
+      amount: 2
+    STCraftNanoChipT5:
+      amount: 1
+    Z14MutantPartChimeraTooth:
+      amount: 2
+    Z14ZoneArtifactBattery:
+      amount: 1

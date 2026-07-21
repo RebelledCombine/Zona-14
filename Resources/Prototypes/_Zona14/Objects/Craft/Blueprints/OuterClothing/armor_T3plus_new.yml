@@ -1,0 +1,35 @@
+# Blueprints for the T3+ suits that had no recipe. Every armour craftRecipe in the
+# repo takes a blueprint as catalyzer (37 of 37), so a recipe without one would be
+# the odd exception rather than a shortcut.
+#
+# `blueprint:` names the craftRecipe id this unlocks.
+
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14ClothingOuterArmorDolgPS5MBlueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: PS5-M Recipe
+  components:
+    - type: STBlueprint
+      blueprint: Z14newrecipeClothingOuterArmorDolgPS5M
+
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14ClothingOuterArmorBulatMilitaryBlueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Bulat Military Recipe
+  components:
+    - type: STBlueprint
+      blueprint: Z14newrecipeClothingOuterArmorBulatMilitary
+
+- type: entity
+  parent: STBaseBlueprint
+  id: Z14ClothingOuterArmorExoskeletBlueprint
+  categories: [ Zona14 ]
+  suffix: Z14
+  name: Exoskeleton Recipe
+  components:
+    - type: STBlueprint
+      blueprint: Z14newrecipeClothingOuterArmorExoskelet
