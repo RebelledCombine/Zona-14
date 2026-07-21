@@ -37,6 +37,17 @@
     back:
     - Z14TOZ106Mag5
 
+# The rusty MP-40 is a deliberate rookie option: a 9x19 blowback SMG at 5 shots/sec
+# - 500 RPM under the RPM/100 rule - that sprays at minAngle/maxAngle 360, so it
+# trades accuracy for volume. One magazine, like every other starter weapon.
+- type: loadout
+  id: Z14LoadoutStarterMP40
+  equipment:
+    suitstorage: Z14STWeaponSMGMP40ruust
+  storage:
+    back:
+    - Z14MP40Mag
+
 - type: loadoutGroup
   id: Z14StarterWeaponGroup
   name: loadout-group-z14-starter-weapon
@@ -46,6 +57,7 @@
   - Z14LoadoutStarterPM
   - Z14LoadoutStarterSawedOff
   - Z14LoadoutStarterTOZ106
+  - Z14LoadoutStarterMP40
 
 # ── Supplies: all three, no choice ──────────────────────────
 # minLimit == maxLimit == number of options, so every rookie gets the lot.

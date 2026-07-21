@@ -165,19 +165,93 @@
     - name: shop-category-weapons
       priority: 1
       items:
+
+        Z14STWeaponShotgunSawedOf: 1250
+
+        Z14STBaseWeaponShotgunTOZ106: 1250
+
+        Z14WeaponPistolStalkerLP08: 500
+
+        Z14WeaponPistolStalkerPMModifed: 1250
+
+        Z14WeaponPistolStalkerAPSHugo: 500
+
+        Z14STWeaponSMGVZ61: 500
+
+        Z14STWeaponShotgunMP155T: 1250
+
+        Z14STWeaponShotgunSaiga12: 1250
+
+        Z14STWeaponShotgunSaiga12Auto: 1250
+
+        Z14STBaseWeaponShotgunVepr12De21: 1250
+
+        Z14STBaseWeaponShotgunVepr12Molot: 1250
+
+        Z14STShotgunKS23: 1250
+
+        Z14STWeaponShotgunKS23M: 1250
+
+        Z14STWeaponShotgunTOZ54: 1250
+
+        Z14WeaponStalkerPistolTec9: 1250
+
+        Z14STWeaponSMGFNP90: 1250
+
+        Z14STWeaponSMGOTS126: 1250
+
+        Z14STWeaponSMGPP19919: 1250
+
+        Z14STWeaponSMGPP2000: 1250
+
+        Z14STWeaponSMGVector9: 1250
+
+        Z14STWeaponSMGVector9Black: 1250
+
+        Z14STWeaponSMGVector9Forest: 1250
+
+        Z14STWeaponShotgunBenelliM4Super90: 1250
+
+        Z14STWeaponShotgunSPAS: 1250
+
+        Z14STWeaponShotgunMossbergM88: 1250
+
+        Z14STWeaponShotgunOrigin12: 1250
+
+        Z14STWeaponShotgunUSAS: 1250
+
+        Z14STWeaponShotgunProtecta: 1250
+
+        Z14STWeaponShotgunAA: 1250
+
+        Z14STWeaponShotgunCompact: 1250
+
+        Z14STWeaponRevolverChiappaRhino60DS: 1250
+
+        Z14STWeaponRevolverDanWesson715: 1250
+
+        Z14STWeaponRevolverRH12: 1250
+
+        Z14STWeaponRevolverRugerRedhawk: 1250
+
+        Z14STWeaponRevolverSWModel625: 1250
+
+        Z14STWeaponRevolverTaurusJudge: 1250
+
+        Z14STWeaponRevolverTaurusTracker455: 1250
         # Melee
         Z14StalkerBallBat: 50
         STThrowingknifeBlue: 250
         # Shotguns
-        STWeaponShotgunTOZ34: 250 # T1
-        STWeaponShotgunMP133: 500 # T2
-        STWeaponShotgunMP153: 1700 # T2
+        Z14STWeaponShotgunTOZ34: 250 # T1
+        Z14STWeaponShotgunMP133: 500 # T2
+        Z14STWeaponShotgunMP153: 1700 # T2
         # Pistols
         Z14WeaponPistolStalkerPM: 50 #T1
         Z14WeaponPistolStalkerTT: 50 #T1
-        STWeaponRevolverSWModel325: 500
+        Z14STWeaponRevolverSWModel325: 500
         Z14WeaponPistolStalkerAPS: 900 #T2
-        STWeaponRevolverSWPC325TR: 1000
+        Z14STWeaponRevolverSWPC325TR: 1000
         # SMGs
         Z14STWeaponSMGMP40: 1000
         Z14STWeaponSMGPPSh41: 2500
