@@ -7,6 +7,12 @@
   name: crate
   description: A rather old crate. It might be worth searching. You may find something useful inside.
   components:
+    # Zona-14 tables carry far more entries than upstream's (blueprints for all
+    # T3+ crafting live here), and TestSufficientSpaceForFill demands the grid
+    # fit the WORST-CASE fill - every prob entry spawning at once.
+    - type: Storage
+      grid:
+        - 0,0,17,17
     - type: InteractionOutline
     - type: StorageFill
       contents:

@@ -23,9 +23,14 @@
   - type: ClothingSpeedModifier
     walkModifier: 1
     sprintModifier: 1
+  # ContainerContainer is a single DataField, so this declaration REPLACES the
+  # parent's wholesale - omitting storagebase here wipes it from the declared
+  # state while Storage recreates it at spawn, and UninitializedSaveTest flags
+  # the mismatch. Declare both.
   - type: ContainerContainer
     containers:
       toggleable-clothing: !type:ContainerSlot {}
+      storagebase: !type:Container {}
 
 - type: entity
   parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
