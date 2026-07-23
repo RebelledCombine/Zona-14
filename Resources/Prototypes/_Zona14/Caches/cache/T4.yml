@@ -1,6 +1,15 @@
 # Zona14: cloned from _Stalker/Caches/cache/T4.yml so the high tiers
-# have a Zona-14 loot table. Consumables use the Z14 twins; materials and
-# blueprints stay on the upstream ids because recipes match by exact id.
+# have a Zona-14 loot table. Consumables and BLUEPRINTS use the Z14 twins;
+# raw materials stay on the upstream ids.
+# Zona14: the split is deliberate and load-bearing - crafting matches ingredients
+# by exact prototype id (SharedCraftingSystem.DictEquals), so:
+#   - materials: every loot table grants the upstream id, so recipes must ask for
+#     the upstream id or they silently never match.
+#   - blueprints: the Z14 recipe asks for the Z14 blueprint. That is what keeps it
+#     distinguishable from its _Stalker twin, which has identical ingredients and a
+#     different result - recipe selection is first-match-and-return over an
+#     arbitrarily ordered enumeration, so identical ingredient sets are a coin flip.
+#     If this table hands out the upstream blueprint, the Z14 recipe is uncraftable.
 # Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: STBaseCache
@@ -139,7 +148,7 @@
           prob: 0.01
         - id: STDrinkJarJuicePotato
           prob: 0.01
-        - id: STCookingFermentedEel
+        - id: Z14STCookingFermentedEel
           prob: 0.08
         - id: Z14ClothingOuterArmorHazmatRfBlueprint
           prob: 0.02
@@ -231,51 +240,51 @@
           prob: 0.02
         - id: Z14STWeaponShotgunSaiga12AutoBlueprint
           prob: 0.02
-        - id: ClothingEarsPsyHelmT2Blueprint
+        - id: Z14ClothingEarsPsyHelmT2Blueprint
           prob: 0.02
-        - id: ClothingHeadHelmetBulatMilitaryBlueprint
+        - id: Z14ClothingHeadHelmetBulatMilitaryBlueprint
           prob: 0.02
-        - id: ClothingHeadHelmetRatnikBlueprint
+        - id: Z14ClothingHeadHelmetRatnikBlueprint
           prob: 0.02
-        - id: ClothingHeadHelmetUlachBlueprint
+        - id: Z14ClothingHeadHelmetUlachBlueprint
           prob: 0.02
-        - id: ClothingOuterArmorAVSplateblackBlueprint
+        - id: Z14ClothingOuterArmorAVSplateblackBlueprint
           prob: 0.02
-        - id: ClothingOuterArmorSSP24SapfireBlueprint
+        - id: Z14ClothingOuterArmorSSP24SapfireBlueprint
           prob: 0.02
-        - id: ClothingOuterArmorSSP24TopazBlueprint
+        - id: Z14ClothingOuterArmorSSP24TopazBlueprint
           prob: 0.02
-        - id: ClothingOuterArmorStalkerCombatBlueprint
+        - id: Z14ClothingOuterArmorStalkerCombatBlueprint
           prob: 0.02
-        - id: ST1255BPCinkBlueprint
+        - id: Z14ST1255BPCinkBlueprint
           prob: 0.02
-        - id: ST545BPBoxCinkBlueprint
+        - id: Z14ST545BPBoxCinkBlueprint
           prob: 0.02
-        - id: ST556M856BoxCinkBlueprint
+        - id: Z14ST556M856BoxCinkBlueprint
           prob: 0.02
-        - id: ST739PCBoxCinkBlueprint
+        - id: Z14ST739PCBoxCinkBlueprint
           prob: 0.02
-        - id: ST751M61BoxCinkBlueprint
+        - id: Z14ST751M61BoxCinkBlueprint
           prob: 0.02
-        - id: ST754PCBoxCinkBlueprint
+        - id: Z14ST754PCBoxCinkBlueprint
           prob: 0.02
-        - id: ST939BPBoxCinkBlueprint
+        - id: Z14ST939BPBoxCinkBlueprint
           prob: 0.02
-        - id: STClothingCapeArmorChainmailSevaBlueprint
+        - id: Z14STClothingCapeArmorChainmailSevaBlueprint
           prob: 0.02
-        - id: STClothingOuterArmor6B13Blueprint
+        - id: Z14STClothingOuterArmor6B13Blueprint
           prob: 0.02
-        - id: STClothingOuterArmorBerill5MBlueprint
+        - id: Z14STClothingOuterArmorBerill5MBlueprint
           prob: 0.02
-        - id: STClothingOuterArmorHeavyBlueprint
+        - id: Z14STClothingOuterArmorHeavyBlueprint
           prob: 0.02
-        - id: STClothingOuterArmorIOTVGreenBlueprint
+        - id: Z14STClothingOuterArmorIOTVGreenBlueprint
           prob: 0.02
-        - id: STClothingOuterArmorSSP99Blueprint
+        - id: Z14STClothingOuterArmorSSP99Blueprint
           prob: 0.02
-        - id: STClothingOuterArmorYegerFreedomBlueprint
+        - id: Z14STClothingOuterArmorYegerFreedomBlueprint
           prob: 0.02
-        - id: TrashDetectorTier5Blueprint
+        - id: Z14TrashDetectorTier5Blueprint
           prob: 0.02
 
 - type: entity

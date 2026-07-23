@@ -4,7 +4,7 @@
     - Z14STClothingOuterArmorIOTVBlack
   craftTime: 15
   items:
-    ClothingOuterArmorAVSplateblackBlueprint:
+    Z14ClothingOuterArmorAVSplateblackBlueprint:
       amount: 1
       catalyzer: true
     ToolkitTearTwo:
@@ -25,7 +25,7 @@
     - Z14ClothingOuterArmorStalkerCombat
   craftTime: 15
   items:
-    ClothingOuterArmorStalkerCombatBlueprint:
+    Z14ClothingOuterArmorStalkerCombatBlueprint:
       amount: 1
       catalyzer: true
     ToolkitTearTwo:
@@ -48,7 +48,7 @@
     - Z14STClothingOuterArmorIOTVGreen
   craftTime: 10
   items:
-    STClothingOuterArmorIOTVGreenBlueprint:
+    Z14STClothingOuterArmorIOTVGreenBlueprint:
       amount: 1
       catalyzer: true
     ToolkitTearTwo:
@@ -69,7 +69,7 @@
     - Z14ClothingOuterArmor6B13
   craftTime: 11
   items:
-    STClothingOuterArmor6B13Blueprint:
+    Z14STClothingOuterArmor6B13Blueprint:
       amount: 1
       catalyzer: true
     ToolkitTearTwo:
@@ -90,7 +90,7 @@
     - Z14STClothingOuterArmorBerill5M
   craftTime: 12
   items:
-    STClothingOuterArmorBerill5MBlueprint:
+    Z14STClothingOuterArmorBerill5MBlueprint:
       amount: 1
       catalyzer: true
     ToolkitTearTwo:
@@ -113,7 +113,7 @@
     - Z14STClothingOuterArmorVeryHeavy
   craftTime: 9
   items:
-    STClothingOuterArmorHeavyBlueprint:
+    Z14STClothingOuterArmorHeavyBlueprint:
       amount: 1
       catalyzer: true
     ToolkitTearTwo:
@@ -136,7 +136,7 @@
     - Z14ClothingOuterArmorSSP99
   craftTime: 6
   items:
-    STClothingOuterArmorSSP99Blueprint:
+    Z14STClothingOuterArmorSSP99Blueprint:
       amount: 1
       catalyzer: true
     ToolkitTearTwo:
@@ -159,7 +159,7 @@
     - Z14ClothingOuterArmorYegerFreedom
   craftTime: 6
   items:
-    STClothingOuterArmorYegerFreedomBlueprint:
+    Z14STClothingOuterArmorYegerFreedomBlueprint:
       amount: 1
       catalyzer: true
     ToolkitTearTwo:
@@ -184,7 +184,7 @@
     - Z14ClothingOuterArmorSSP99White
   craftTime: 6
   items:
-    STClothingOuterArmorSSP99Blueprint:
+    Z14STClothingOuterArmorSSP99Blueprint:
       amount: 1
       catalyzer: true
     ToolkitTearTwo:
@@ -203,7 +203,7 @@
     - Z14ClothingOuterArmorSSP24Topaz
   craftTime: 6
   items:
-    ClothingOuterArmorSSP24TopazBlueprint:
+    Z14ClothingOuterArmorSSP24TopazBlueprint:
       amount: 1
       catalyzer: true
     ToolkitTearTwo:
@@ -224,7 +224,7 @@
     - Z14ClothingOuterArmorSSP24Sapfire
   craftTime: 6
   items:
-    ClothingOuterArmorSSP24SapfireBlueprint:
+    Z14ClothingOuterArmorSSP24SapfireBlueprint:
       amount: 1
       catalyzer: true
     ToolkitTearTwo:
@@ -245,7 +245,7 @@
     - Z14ClothingOuterArmorSSP24Ruby
   craftTime: 6
   items:
-    ClothingOuterArmorSSP24SapfireBlueprint:
+    Z14ClothingOuterArmorSSP24SapfireBlueprint:
       amount: 1
       catalyzer: true
     ToolkitTearTwo:
@@ -269,7 +269,7 @@
     - Z14ClothingOuterArmorPSZ9D
   craftTime: 6
   items:
-    ClothingOuterArmorPSZ9DBlueprint:
+    Z14ClothingOuterArmorPSZ9DBlueprint:
       amount: 1
       catalyzer: true
     ToolkitTearTwo:

@@ -34,37 +34,37 @@
           prob: 0.03
         - id: Z14MedkitAI2
           prob: 0.05
-        - id: STClothingOuterJacketStalkerUpgradeBlueprint
+        - id: Z14STClothingOuterJacketStalkerUpgradeBlueprint
           prob: 0.05
-        - id: STClothingOuterArmorRCBZBlueprint
+        - id: Z14STClothingOuterArmorRCBZBlueprint
           prob: 0.05
-        - id: ST7mmBuckshotBoxCinkBluePrint
+        - id: Z14ST7mmBuckshotBoxCinkBluePrint
           prob: 0.05
-        - id: ST6mmBuckshotBoxCinkBluePrint
+        - id: Z14ST6mmBuckshotBoxCinkBluePrint
           prob: 0.02
-        - id: ST918PGJBoxCinkBlueprint
+        - id: Z14ST918PGJBoxCinkBlueprint
           prob: 0.05
-        - id: ST918SP7BoxCinkBlueprint
+        - id: Z14ST918SP7BoxCinkBlueprint
           prob: 0.05
-        - id: ST545HPBoxCinkBlueprint
+        - id: Z14ST545HPBoxCinkBlueprint
           prob: 0.05
-        - id: ST919PSOGJBoxCinkBlueprint
+        - id: Z14ST919PSOGJBoxCinkBlueprint
           prob: 0.05
-        - id: ST919RIPBoxCinkBlueprint
+        - id: Z14ST919RIPBoxCinkBlueprint
           prob: 0.05
-        - id: ST754HPBoxCinkBlueprint
+        - id: Z14ST754HPBoxCinkBlueprint
           prob: 0.01
-        - id: ST556WarmagBoxCinkBlueprint
+        - id: Z14ST556WarmagBoxCinkBlueprint
           prob: 0.05
-        - id: ST725PBoxCinkBlueprint
+        - id: Z14ST725PBoxCinkBlueprint
           prob: 0.05
-        - id: ST725LRNPCBoxCinkBlueprint
+        - id: Z14ST725LRNPCBoxCinkBlueprint
           prob: 0.05
-        - id: STZoneArtifactDetectorBushBlueprint
+        - id: Z14STZoneArtifactDetectorBushBlueprint
           prob: 0.05
-        - id: ST739HPBoxCinkBlueprint
+        - id: Z14ST739HPBoxCinkBlueprint
           prob: 0.03
-        - id: ST751UNBoxCinkBlueprint
+        - id: Z14ST751UNBoxCinkBlueprint
           prob: 0.02
         - id: Z14MedkitMilitary
           prob: 0.02
@@ -105,11 +105,11 @@
         - id: STCraftGlassT2
           prob: 0.001
         # EN additions
-        - id: STCookingDeruny
+        - id: Z14STCookingDeruny
           prob: 0.05
-        - id: STCookingHrechanyky
+        - id: Z14STCookingHrechanyky
           prob: 0.05
-        - id: STCookingSyrnyky
+        - id: Z14STCookingSyrnyky
           prob: 0.05
         - id: Z14STDrinkJarDirtyWater
           prob: 0.1
@@ -117,25 +117,25 @@
           prob: 0.01
         - id: Z14STDrinkJar
           prob: 0.03
-        - id: ClothingBackpackDuffelCommonStalkerBlueprint
+        - id: Z14ClothingBackpackDuffelCommonStalkerBlueprint
           prob: 0.05
-        - id: ClothingOuterArmorSparkBlueprint
+        - id: Z14ClothingOuterArmorSparkBlueprint
           prob: 0.05
-        - id: ClothingOuterCoatBanditBlackBlueprint
+        - id: Z14ClothingOuterCoatBanditBlackBlueprint
           prob: 0.05
-        - id: ClothingOuterCoatBanditBrownBlueprint
+        - id: Z14ClothingOuterCoatBanditBrownBlueprint
           prob: 0.05
-        - id: ClothingOuterCoatDoshdevikBlueprint
+        - id: Z14ClothingOuterCoatDoshdevikBlueprint
           prob: 0.05
-        - id: ClothingOuterCoatPahanBlueprint
+        - id: Z14ClothingOuterCoatPahanBlueprint
           prob: 0.05
-        - id: ClothingOuterCoatPoiskBlueprint
+        - id: Z14ClothingOuterCoatPoiskBlueprint
           prob: 0.05
-        - id: ST1255PS12ACinkBlueprint
+        - id: Z14ST1255PS12ACinkBlueprint
           prob: 0.05
-        - id: STCraftLinenFabricT1Blueprint
+        - id: Z14STCraftLinenFabricT1Blueprint
           prob: 0.05
-        - id: TrashDetectorTier2Blueprint
+        - id: Z14TrashDetectorTier2Blueprint
           prob: 0.05
           
 - type: entity

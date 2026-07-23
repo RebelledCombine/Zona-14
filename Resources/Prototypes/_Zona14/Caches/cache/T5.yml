@@ -1,6 +1,15 @@
 # Zona14: cloned from _Stalker/Caches/cache/T5.yml so the high tiers
-# have a Zona-14 loot table. Consumables use the Z14 twins; materials and
-# blueprints stay on the upstream ids because recipes match by exact id.
+# have a Zona-14 loot table. Consumables and BLUEPRINTS use the Z14 twins;
+# raw materials stay on the upstream ids.
+# Zona14: the split is deliberate and load-bearing - crafting matches ingredients
+# by exact prototype id (SharedCraftingSystem.DictEquals), so:
+#   - materials: every loot table grants the upstream id, so recipes must ask for
+#     the upstream id or they silently never match.
+#   - blueprints: the Z14 recipe asks for the Z14 blueprint. That is what keeps it
+#     distinguishable from its _Stalker twin, which has identical ingredients and a
+#     different result - recipe selection is first-match-and-return over an
+#     arbitrarily ordered enumeration, so identical ingredient sets are a coin flip.
+#     If this table hands out the upstream blueprint, the Z14 recipe is uncraftable.
 # Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: STBaseCache
@@ -142,21 +151,21 @@
           prob: 0.02
         - id: Z14STWeaponShotgunUSASBlueprint
           prob: 0.02
-        - id: ST545BSBoxCinkBlueprint
+        - id: Z14ST545BSBoxCinkBlueprint
           prob: 0.02
-        - id: ST545M995BoxCinkBlueprint
+        - id: Z14ST545M995BoxCinkBlueprint
           prob: 0.02
-        - id: ST545NCBoxCinkBlueprint
+        - id: Z14ST545NCBoxCinkBlueprint
           prob: 0.02
-        - id: ST556SSAAPBoxCinkBlueprint
+        - id: Z14ST556SSAAPBoxCinkBlueprint
           prob: 0.02
-        - id: ST739BPBoxCinkBlueprint
+        - id: Z14ST739BPBoxCinkBlueprint
           prob: 0.02
-        - id: ST751M993BoxCinkBlueprint
+        - id: Z14ST751M993BoxCinkBlueprint
           prob: 0.02
-        - id: ST754BTBoxCinkBlueprint
+        - id: Z14ST754BTBoxCinkBlueprint
           prob: 0.02
-        - id: ST754SNBBoxCinkBlueprint
+        - id: Z14ST754SNBBoxCinkBlueprint
           prob: 0.02
 
 - type: entity

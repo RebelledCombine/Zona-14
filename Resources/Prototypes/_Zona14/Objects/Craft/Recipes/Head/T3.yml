@@ -4,7 +4,7 @@
     - Z14ClothingHeadAssaultHelmet
   craftTime: 6
   items:
-    ClothingHeadAssaultHelmetBlueprint:
+    Z14ClothingHeadAssaultHelmetBlueprint:
       amount: 1
       catalyzer: true
     ToolkitTearOne:
@@ -27,7 +27,7 @@
     - Z14STClothingHeadHelmetMakeshiftTacticalT3
   craftTime: 6
   items:
-    STClothingHeadHelmetMakeshiftTacticalT3Blueprint:
+    Z14STClothingHeadHelmetMakeshiftTacticalT3Blueprint:
       amount: 1
       catalyzer: true
     ToolkitTearOne:
@@ -48,7 +48,7 @@
     - Z14ClothingHeadHelmetVityaz1C
   craftTime: 6
   items:
-    ClothingHeadHelmetVityaz1CBlueprint:
+    Z14ClothingHeadHelmetVityaz1CBlueprint:
       amount: 1
       catalyzer: true
     ToolkitTearOne:
@@ -71,7 +71,7 @@
     - Z14STClothingHeadHelmetSeraphimAltin
   craftTime: 6
   items:
-    STClothingHeadHelmetSeraphimAltinBlueprint:
+    Z14STClothingHeadHelmetSeraphimAltinBlueprint:
       amount: 1
       catalyzer: true
     ToolkitTearOne:
@@ -94,7 +94,7 @@
     - Z14ClothingHeadAssaultHelmetDeserter
   craftTime: 6
   items:
-    ClothingHeadAssaultHelmetDeserterBlueprint:
+    Z14ClothingHeadAssaultHelmetDeserterBlueprint:
       amount: 1
       catalyzer: true
     ToolkitTearOne:

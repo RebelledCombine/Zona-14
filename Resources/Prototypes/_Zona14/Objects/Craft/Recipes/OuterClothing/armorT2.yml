@@ -4,7 +4,7 @@
     - Z14ClothingOuterArmorZaryaStalker
   craftTime: 10
   items:
-    ClothingOuterArmorZaryaHunterBlueprint:
+    Z14ClothingOuterArmorZaryaHunterBlueprint:
       amount: 1
       catalyzer: true
     STCraftSheetIronT2:
@@ -24,7 +24,7 @@
   items:
     Z14ClothingOuterArmorZaryaStalker:
       amount: 1
-    ClothingOuterArmorZaryaStalkerModifedType1Blueprint:
+    Z14ClothingOuterArmorZaryaStalkerModifedType1Blueprint:
       amount: 1
       catalyzer: true
     STCraftSheetIronT2:
@@ -43,7 +43,7 @@
   items:
     Z14ClothingOuterArmorZaryaStalker:
       amount: 1
-    ClothingOuterArmorZaryaStalkerModifedType2Blueprint:
+    Z14ClothingOuterArmorZaryaStalkerModifedType2Blueprint:
       amount: 1
       catalyzer: true
     STCraftSheetIronT2:
@@ -60,7 +60,7 @@
     - Z14ClothingOuterArmor6B2
   craftTime: 5
   items:
-    STClothingOuterArmor6B2Blueprint:
+    Z14STClothingOuterArmor6B2Blueprint:
       amount: 1
       catalyzer: true
     STCraftSheetIronT2:
@@ -78,7 +78,7 @@
     - Z14STClothingOuterArmorLightPlateVestBaseStalker
   craftTime: 5
   items:
-    STClothingOuterArmorLightPlateVestBaseStalkerBlueprint:
+    Z14STClothingOuterArmorLightPlateVestBaseStalkerBlueprint:
       amount: 1
       catalyzer: true
     STCraftSheetIronT2:
@@ -99,7 +99,7 @@
     - Z14ClothingOuterArmorCN1
   craftTime: 5
   items:
-    ClothingOuterArmorCN1Blueprint:
+    Z14ClothingOuterArmorCN1Blueprint:
       amount: 1
       catalyzer: true
     STCraftSheetIronT2:
@@ -118,7 +118,7 @@
     - Z14ClothingOuterArmorSpark
   craftTime: 5
   items:
-    ClothingOuterArmorSparkBlueprint:
+    Z14ClothingOuterArmorSparkBlueprint:
       amount: 1
       catalyzer: true
     Z14ClothingOuterArmorZaryaStalker:
@@ -136,7 +136,7 @@
     - Z14ClothingOuterArmourJacketStalker
   craftTime: 5
   items:
-    ClothingOuterArmourJacketStalkerBlueprint:
+    Z14ClothingOuterArmourJacketStalkerBlueprint:
       amount: 1
       catalyzer: true
     STCraftSheetIronT2 :
@@ -152,7 +152,7 @@
     - Z14ClothingOuterArmourJacketBandit
   craftTime: 5
   items:
-    ClothingOuterArmourJacketBanditBlueprint:
+    Z14ClothingOuterArmourJacketBanditBlueprint:
       amount: 1
       catalyzer: true
     STCraftSheetIronT2:
@@ -168,7 +168,7 @@
     - Z14ClothingOuterArmourCoatBanditBlack
   craftTime: 5
   items:
-    ClothingOuterArmourCoatBanditBlackBlueprint:
+    Z14ClothingOuterArmourCoatBanditBlackBlueprint:
       amount: 1
       catalyzer: true
     Z14ClothingOuterCoatBanditBlack:
@@ -184,7 +184,7 @@
     - Z14ClothingOuterArmourCoatBanditBrown
   craftTime: 5
   items:
-    ClothingOuterArmourCoatBanditBrownBlueprint:
+    Z14ClothingOuterArmourCoatBanditBrownBlueprint:
       amount: 1
       catalyzer: true
     Z14ClothingOuterCoatBanditBrown:
@@ -203,7 +203,7 @@
     - Z14ClothingOuterArmorZN1
   craftTime: 15
   items:
-    ClothingOuterArmorZN1Blueprint:
+    Z14ClothingOuterArmorZN1Blueprint:
       amount: 1
       catalyzer: true
     STCraftSheetIronT2:

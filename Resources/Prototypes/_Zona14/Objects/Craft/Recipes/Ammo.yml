@@ -5,7 +5,7 @@
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
-    ST7mmBuckshotBoxCinkBluePrint:
+    Z14ST7mmBuckshotBoxCinkBluePrint:
       amount: 1
       catalyzer: true
     CraftMaterialGunpowder:
@@ -20,7 +20,7 @@
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
-    ST6mmBuckshotBoxCinkBluePrint:
+    Z14ST6mmBuckshotBoxCinkBluePrint:
       amount: 1
       catalyzer: true
     CraftMaterialGunpowder:
@@ -36,7 +36,7 @@
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
-    ST8mmBuckshotBoxCinkBlueprint:
+    Z14ST8mmBuckshotBoxCinkBlueprint:
       amount: 1
       catalyzer: true
     CraftMaterialGunpowder:
@@ -53,7 +53,7 @@
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
-    STShotgunFlechetteCinkBlueprint:
+    Z14STShotgunFlechetteCinkBlueprint:
       amount: 1
       catalyzer: true
     CraftMaterialGunpowder:
@@ -70,7 +70,7 @@
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
-    STShotgunBulletUnlethalBoxCinkBlueprint:
+    Z14STShotgunBulletUnlethalBoxCinkBlueprint:
       amount: 1
       catalyzer: true
     CraftMaterialGunpowder:
@@ -87,7 +87,7 @@
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
-    STShotgunBulletBoxCinkBlueprint:
+    Z14STShotgunBulletBoxCinkBlueprint:
       amount: 1
       catalyzer: true
     CraftMaterialGunpowder:
@@ -103,7 +103,7 @@
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
-    STShotgunBulletBoxRIPCinkBlueprint:
+    Z14STShotgunBulletBoxRIPCinkBlueprint:
       amount: 1
       catalyzer: true
     CraftMaterialGunpowder:
@@ -120,7 +120,7 @@
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
-    STShotgunDarttBoxCinkBlueprint:
+    Z14STShotgunDarttBoxCinkBlueprint:
       amount: 1
       catalyzer: true
     CraftMaterialGunpowder:
@@ -138,7 +138,7 @@
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
-    ST545FMJBoxCinkBlueprint:
+    Z14ST545FMJBoxCinkBlueprint:
       amount: 1
       catalyzer: true
     CraftMaterialGunpowder:
@@ -155,7 +155,7 @@
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
-    ST545PCBoxCinkBlueprint:
+    Z14ST545PCBoxCinkBlueprint:
       amount: 1
       catalyzer: true
     CraftMaterialGunpowder:
@@ -171,7 +171,7 @@
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
-    ST545HPBoxCinkBlueprint:
+    Z14ST545HPBoxCinkBlueprint:
       amount: 1
       catalyzer: true
     CraftMaterialGunpowder:
@@ -189,7 +189,7 @@
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
-    ST545BPBoxCinkBlueprint:
+    Z14ST545BPBoxCinkBlueprint:
       amount: 1
       catalyzer: true
     CraftMaterialGunpowder:
@@ -208,7 +208,7 @@
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
-    ST545BSBoxCinkBlueprint:
+    Z14ST545BSBoxCinkBlueprint:
       amount: 1
       catalyzer: true
     CraftMaterialGunpowder:
@@ -226,7 +226,7 @@
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
-    ST545NCBoxCinkBlueprint:
+    Z14ST545NCBoxCinkBlueprint:
       amount: 1
       catalyzer: true
     CraftMaterialGunpowder:
@@ -243,7 +243,7 @@
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
-    ST918PGJBoxCinkBlueprint:
+    Z14ST918PGJBoxCinkBlueprint:
       amount: 1
       catalyzer: true
     CraftMaterialGunpowder:
@@ -259,7 +259,7 @@
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
-    ST918PSTBoxCinkBlueprint:
+    Z14ST918PSTBoxCinkBlueprint:
       amount: 1
       catalyzer: true
     CraftMaterialGunpowder:
@@ -275,7 +275,7 @@
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
-    ST918SP7BoxCinkBlueprint:
+    Z14ST918SP7BoxCinkBlueprint:
       amount: 1
       catalyzer: true
     CraftMaterialGunpowder:
@@ -292,7 +292,7 @@
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
-    ST918PBMBoxCinkBlueprint:
+    Z14ST918PBMBoxCinkBlueprint:
       amount: 1
       catalyzer: true
     CraftMaterialGunpowder:
@@ -309,7 +309,7 @@
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
-    ST919PSOGJBoxCinkBlueprint:
+    Z14ST919PSOGJBoxCinkBlueprint:
       amount: 1
       catalyzer: true
     CraftMaterialGunpowder:
@@ -325,7 +325,7 @@
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
-    ST919PSTBoxCinkBlueprint:
+    Z14ST919PSTBoxCinkBlueprint:
       amount: 1
       catalyzer: true
     CraftMaterialGunpowder:
@@ -341,7 +341,7 @@
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
-    ST919RIPBoxCinkBlueprint:
+    Z14ST919RIPBoxCinkBlueprint:
       amount: 1
       catalyzer: true
     CraftMaterialGunpowder:
@@ -358,7 +358,7 @@
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
-    ST919PBMBoxCinkBlueprint:
+    Z14ST919PBMBoxCinkBlueprint:
       amount: 1
       catalyzer: true
     CraftMaterialGunpowder:
@@ -376,7 +376,7 @@
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
-    ST556FMJBoxCinkBlueprint:
+    Z14ST556FMJBoxCinkBlueprint:
       amount: 1
       catalyzer: true
     CraftMaterialGunpowder:
@@ -393,7 +393,7 @@
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
-    ST556M855BoxCinkBlueprint:
+    Z14ST556M855BoxCinkBlueprint:
       amount: 1
       catalyzer: true
     CraftMaterialGunpowder:
@@ -409,7 +409,7 @@
   craftTime: 35
   requiredWorkbench: StalkerWorktable1
   items:
-    ST556WarmagBoxCinkBlueprint:
+    Z14ST556WarmagBoxCinkBlueprint:
       amount: 1
       catalyzer: true
     CraftMaterialGunpowder:
@@ -427,7 +427,7 @@
   craftTime: 35
   requiredWorkbench: StalkerWorktable1
   items:
-    ST556M856BoxCinkBlueprint:
+    Z14ST556M856BoxCinkBlueprint:
       amount: 1
       catalyzer: true
     CraftMaterialGunpowder:
@@ -445,7 +445,7 @@
   craftTime: 35
   requiredWorkbench: StalkerWorktable1
   items:
-    ST545M995BoxCinkBlueprint:
+    Z14ST545M995BoxCinkBlueprint:
       amount: 1
       catalyzer: true
     CraftMaterialGunpowder:
@@ -463,7 +463,7 @@
   craftTime: 35
   requiredWorkbench: StalkerWorktable1
   items:
-    ST556SSAAPBoxCinkBlueprint:
+    Z14ST556SSAAPBoxCinkBlueprint:
       amount: 1
       catalyzer: true
     CraftMaterialGunpowder:
@@ -480,7 +480,7 @@
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
-    ST725PBoxCinkBlueprint:
+    Z14ST725PBoxCinkBlueprint:
       amount: 1
       catalyzer: true
     CraftMaterialGunpowder:
@@ -496,7 +496,7 @@
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
-    ST725PTBoxCinkBlueprint:
+    Z14ST725PTBoxCinkBlueprint:
       amount: 1
       catalyzer: true
     CraftMaterialGunpowder:
@@ -513,7 +513,7 @@
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
-    ST725LRNPCBoxCinkBlueprint:
+    Z14ST725LRNPCBoxCinkBlueprint:
       amount: 1
       catalyzer: true
     CraftMaterialGunpowder:
@@ -530,7 +530,7 @@
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
-    ST725PSTBoxCinkBlueprint:
+    Z14ST725PSTBoxCinkBlueprint:
       amount: 1
       catalyzer: true
     CraftMaterialGunpowder:
@@ -549,7 +549,7 @@
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
-    ST739FMJBoxCinkBlueprint:
+    Z14ST739FMJBoxCinkBlueprint:
       amount: 1
       catalyzer: true
     CraftMaterialGunpowder:
@@ -567,7 +567,7 @@
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
-    ST739PCBoxCinkBlueprint:
+    Z14ST739PCBoxCinkBlueprint:
       amount: 1
       catalyzer: true
     CraftMaterialGunpowder:
@@ -584,7 +584,7 @@
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
-    ST739HPBoxCinkBlueprint:
+    Z14ST739HPBoxCinkBlueprint:
       amount: 1
       catalyzer: true
     CraftMaterialGunpowder:
@@ -603,7 +603,7 @@
   craftTime: 39
   requiredWorkbench: StalkerWorktable1
   items:
-    ST739BPBoxCinkBlueprint:
+    Z14ST739BPBoxCinkBlueprint:
       amount: 1
       catalyzer: true
     CraftMaterialGunpowder:
@@ -622,7 +622,7 @@
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
-    ST751M80BoxCinkBlueprint:
+    Z14ST751M80BoxCinkBlueprint:
       amount: 1
       catalyzer: true
     CraftMaterialGunpowder:
@@ -639,7 +639,7 @@
   craftTime: 60
   requiredWorkbench: StalkerWorktable1
   items:
-    ST751UNBoxCinkBlueprint:
+    Z14ST751UNBoxCinkBlueprint:
       amount: 1
       catalyzer: true
     CraftMaterialGunpowder:
@@ -657,7 +657,7 @@
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
-    ST751M61BoxCinkBlueprint:
+    Z14ST751M61BoxCinkBlueprint:
       amount: 1
       catalyzer: true
     CraftMaterialGunpowder:
@@ -676,7 +676,7 @@
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
-    ST751M993BoxCinkBlueprint:
+    Z14ST751M993BoxCinkBlueprint:
       amount: 1
       catalyzer: true
     CraftMaterialGunpowder:
@@ -693,7 +693,7 @@
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
-    ST45ACPLFMJBoxCinkBlueprint:
+    Z14ST45ACPLFMJBoxCinkBlueprint:
       amount: 1
       catalyzer: true
     CraftMaterialGunpowder:
@@ -709,7 +709,7 @@
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
-    ST45ACPMFMJBoxCinkBlueprint:
+    Z14ST45ACPMFMJBoxCinkBlueprint:
       amount: 1
       catalyzer: true
     CraftMaterialGunpowder:
@@ -725,7 +725,7 @@
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
-    ST45ACPHydroshockBoxCinkBlueprint:
+    Z14ST45ACPHydroshockBoxCinkBlueprint:
       amount: 1
       catalyzer: true
     CraftMaterialGunpowder:
@@ -741,7 +741,7 @@
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
-    ST45ACPRIPBoxCinkBlueprint:
+    Z14ST45ACPRIPBoxCinkBlueprint:
       amount: 1
       catalyzer: true
     CraftMaterialGunpowder:
@@ -758,7 +758,7 @@
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
-    ST45ACPAPBoxCinkBlueprint:
+    Z14ST45ACPAPBoxCinkBlueprint:
       amount: 1
       catalyzer: true
     CraftMaterialGunpowder:
@@ -776,7 +776,7 @@
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
-    ST939SP5BoxCinkBlueprint:
+    Z14ST939SP5BoxCinkBlueprint:
       amount: 1
       catalyzer: true
     CraftMaterialGunpowder:
@@ -793,7 +793,7 @@
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
-    ST939SP6BoxCinkBlueprint:
+    Z14ST939SP6BoxCinkBlueprint:
       amount: 1
       catalyzer: true
     CraftMaterialGunpowder:
@@ -811,7 +811,7 @@
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
-    ST939BPBoxCinkBlueprint:
+    Z14ST939BPBoxCinkBlueprint:
       amount: 1
       catalyzer: true
     CraftMaterialGunpowder:
@@ -828,7 +828,7 @@
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
-    ST1255PS12ACinkBlueprint:
+    Z14ST1255PS12ACinkBlueprint:
       amount: 1
       catalyzer: true
     CraftMaterialGunpowder:
@@ -844,7 +844,7 @@
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
-    ST1255TPCinkBlueprint:
+    Z14ST1255TPCinkBlueprint:
       amount: 1
       catalyzer: true
     CraftMaterialGunpowder:
@@ -862,7 +862,7 @@
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
-    ST1255BPCinkBlueprint:
+    Z14ST1255BPCinkBlueprint:
       amount: 1
       catalyzer: true
     CraftMaterialGunpowder:
@@ -881,7 +881,7 @@
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
-    ST754FMJBoxCinkBlueprint:
+    Z14ST754FMJBoxCinkBlueprint:
       amount: 1
       catalyzer: true
     CraftMaterialGunpowder:
@@ -899,7 +899,7 @@
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
-    ST754PCBoxCinkBlueprint:
+    Z14ST754PCBoxCinkBlueprint:
       amount: 1
       catalyzer: true
     CraftMaterialGunpowder:
@@ -915,7 +915,7 @@
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
-    ST754HPBoxCinkBlueprint:
+    Z14ST754HPBoxCinkBlueprint:
       amount: 1
       catalyzer: true
     CraftMaterialGunpowder:
@@ -933,7 +933,7 @@
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
-    ST754BTBoxCinkBlueprint:
+    Z14ST754BTBoxCinkBlueprint:
       amount: 1
       catalyzer: true
     CraftMaterialGunpowder:
@@ -951,7 +951,7 @@
   craftTime: 30
   requiredWorkbench: StalkerWorktable1
   items:
-    ST754SNBBoxCinkBlueprint:
+    Z14ST754SNBBoxCinkBlueprint:
       amount: 1
       catalyzer: true
     CraftMaterialGunpowder:

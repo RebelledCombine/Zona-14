@@ -4,7 +4,7 @@
     - Z14ClothingMaskGP21
   craftTime: 10
   items:
-    STGasMaskGP21lueprint:
+    Z14STGasMaskGP21lueprint:
       amount: 1
       catalyzer: true
     ToolkitTearOne:
@@ -21,7 +21,7 @@
     - Z14ClothingMaskM51
   craftTime: 10
   items:
-    STGasMaskM51Blueprint:
+    Z14STGasMaskM51Blueprint:
       amount: 1
       catalyzer: true
     ToolkitTearOne:

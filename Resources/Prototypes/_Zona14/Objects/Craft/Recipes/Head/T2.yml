@@ -4,7 +4,7 @@
     - Z14STClothingHeadTinfoil
   craftTime: 6
   items:
-    STClothingHeadTinfoilBlueprint:
+    Z14STClothingHeadTinfoilBlueprint:
       amount: 1
       catalyzer: true
     STCraftSheetIronT2:

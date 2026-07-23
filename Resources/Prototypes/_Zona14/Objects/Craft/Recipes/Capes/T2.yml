@@ -4,7 +4,7 @@
   - Z14ClothingOuterCoatBolotniy
   craftTime: 10
   items:
-    ClothingOuterCoatBolotniyBlueprint:
+    Z14ClothingOuterCoatBolotniyBlueprint:
       amount: 1
       catalyzer: true
     Z14ClothingOuterCoatStalker:
@@ -21,7 +21,7 @@
   - Z14ClothingOuterCoatKolchyga
   craftTime: 10
   items:
-    ClothingOuterCoatKolchygaBlueprint:
+    Z14ClothingOuterCoatKolchygaBlueprint:
       amount: 1
       catalyzer: true
     Z14ClothingOuterCoatStalker:
@@ -39,7 +39,7 @@
   - Z14ClothingOuterCoatStalker
   craftTime: 10
   items:
-    ClothingOuterCoatStalkerBlueprint:
+    Z14ClothingOuterCoatStalkerBlueprint:
       amount: 1
       catalyzer: true
     STCraftBasicThreadKitT1:

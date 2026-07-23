@@ -7,7 +7,7 @@
     ToolkitTearOne:
       amount: 1
       catalyzer: true
-    STClothingCapeCoatReinforcedBlueprint:
+    Z14STClothingCapeCoatReinforcedBlueprint:
       amount: 1
       catalyzer: true
     Z14ClothingOuterCoatStalker:
@@ -28,7 +28,7 @@
     ToolkitTearOne:
       amount: 1
       catalyzer: true
-    ClothingOuterCoatLoyalistBlueprint:
+    Z14ClothingOuterCoatLoyalistBlueprint:
       amount: 1
       catalyzer: true
     Z14ClothingOuterCoatStalker:

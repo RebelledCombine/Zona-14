@@ -4,7 +4,7 @@
     - Z14ClothingHeadHelmetBulatMilitary
   craftTime: 10
   items:
-    ClothingHeadHelmetBulatMilitaryBlueprint:
+    Z14ClothingHeadHelmetBulatMilitaryBlueprint:
       amount: 1
       catalyzer: true
     ToolkitTearTwo:
@@ -29,7 +29,7 @@
     - Z14ClothingHeadHelmetUlach
   craftTime: 12
   items:
-    ClothingHeadHelmetUlachBlueprint:
+    Z14ClothingHeadHelmetUlachBlueprint:
       amount: 1
       catalyzer: true
     ToolkitTearTwo:
@@ -52,7 +52,7 @@
     - Z14ClothingHeadRatnik
   craftTime: 12
   items:
-    ClothingHeadHelmetRatnikBlueprint:
+    Z14ClothingHeadHelmetRatnikBlueprint:
       amount: 1
       catalyzer: true
     ToolkitTearTwo:

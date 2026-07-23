@@ -10,7 +10,7 @@
       amount: 1
     STCraftBasicThreadKitT1:
       amount: 1
-    STClothingOuterJacketStalkerUpgradeBlueprint:
+    Z14STClothingOuterJacketStalkerUpgradeBlueprint:
       amount: 1
       catalyzer: true
 
@@ -20,7 +20,7 @@
   - Z14ClothingOuterAnomalyStalkerJacket
   craftTime: 10
   items:
-    ClothingOuterAnomalyStalkerJacketBlueprint:
+    Z14ClothingOuterAnomalyStalkerJacketBlueprint:
       amount: 1
       catalyzer: true
     Z14ClothingOuterJacketStalker:
@@ -34,7 +34,7 @@
   - Z14ClothingOuterCoatBanditBlack
   craftTime: 10
   items:
-    ClothingOuterCoatBanditBlackBlueprint:
+    Z14ClothingOuterCoatBanditBlackBlueprint:
       amount: 1
       catalyzer: true
     STCraftCottonFabricT1:
@@ -50,7 +50,7 @@
   - Z14ClothingOuterCoatBanditBrown
   craftTime: 10
   items:
-    ClothingOuterCoatBanditBrownBlueprint:
+    Z14ClothingOuterCoatBanditBrownBlueprint:
       amount: 1
       catalyzer: true
     STCraftCottonFabricT1:
@@ -66,7 +66,7 @@
   - Z14STClothingOuterArmorRCBZ
   craftTime: 10
   items:
-    STClothingOuterArmorRCBZBlueprint:
+    Z14STClothingOuterArmorRCBZBlueprint:
       amount: 1
       catalyzer: true
     STCraftBasicThreadKitT1:

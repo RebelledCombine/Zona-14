@@ -4,7 +4,7 @@
     - Z14ClothingOuterArmorAborigineStalker
   craftTime: 6
   items:
-    ClothingOuterArmorAborigineStalkerBlueprint:
+    Z14ClothingOuterArmorAborigineStalkerBlueprint:
       amount: 1
       catalyzer: true
     ToolkitTearOne:
@@ -29,7 +29,7 @@
     - Z14STClothingOuterArmorLightPlateVestBasePSZ7
   craftTime: 10
   items:
-    STClothingOuterArmorLightPlateVestBasePSZ7Blueprint:
+    Z14STClothingOuterArmorLightPlateVestBasePSZ7Blueprint:
       amount: 1
       catalyzer: true
     ToolkitTearOne:
@@ -51,7 +51,7 @@
     - Z14ClothingOuterArmorSevaStalker
   craftTime: 20
   items:
-    ClothingOuterArmorSevaStalkerBlueprint:
+    Z14ClothingOuterArmorSevaStalkerBlueprint:
       amount: 1
       catalyzer: true
     ToolkitTearOne:
@@ -78,7 +78,7 @@
     - Z14STClothingOuterArmorLightPlateVestBaseANAgray
   craftTime: 10
   items:
-    STClothingOuterArmorLightPlateVestBaseANAgrayBlueprint:
+    Z14STClothingOuterArmorLightPlateVestBaseANAgrayBlueprint:
       amount: 1
       catalyzer: true
     ToolkitTearOne:
@@ -101,7 +101,7 @@
     - Z14STClothingOuterArmorSeraphimStrash
   craftTime: 10
   items:
-    STClothingOuterArmorSeraphimStrashBlueprint:
+    Z14STClothingOuterArmorSeraphimStrashBlueprint:
       amount: 1
       catalyzer: true
     ToolkitTearOne:
@@ -124,7 +124,7 @@
     - Z14ClothingOuterArmorStalker
   craftTime: 10
   items:
-    ClothingOuterArmorStalkerBlueprint:
+    Z14ClothingOuterArmorStalkerBlueprint:
       amount: 1
       catalyzer: true
     ToolkitTearOne:

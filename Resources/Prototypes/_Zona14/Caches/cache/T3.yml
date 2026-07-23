@@ -1,6 +1,15 @@
 # Zona14: cloned from _Stalker/Caches/cache/T3.yml so the high tiers
-# have a Zona-14 loot table. Consumables use the Z14 twins; materials and
-# blueprints stay on the upstream ids because recipes match by exact id.
+# have a Zona-14 loot table. Consumables and BLUEPRINTS use the Z14 twins;
+# raw materials stay on the upstream ids.
+# Zona14: the split is deliberate and load-bearing - crafting matches ingredients
+# by exact prototype id (SharedCraftingSystem.DictEquals), so:
+#   - materials: every loot table grants the upstream id, so recipes must ask for
+#     the upstream id or they silently never match.
+#   - blueprints: the Z14 recipe asks for the Z14 blueprint. That is what keeps it
+#     distinguishable from its _Stalker twin, which has identical ingredients and a
+#     different result - recipe selection is first-match-and-return over an
+#     arbitrarily ordered enumeration, so identical ingredient sets are a coin flip.
+#     If this table hands out the upstream blueprint, the Z14 recipe is uncraftable.
 # Zona14: translated Russian names/descriptions to English
 - type: entity
   parent: STBaseCache
@@ -28,39 +37,39 @@
           prob: 0.1
         - id: STCraftGlueKitT3
           prob: 0.1
-        - id: ST8mmBuckshotBoxCinkBlueprint
+        - id: Z14ST8mmBuckshotBoxCinkBlueprint
           prob: 0.05
-        - id: STShotgunFlechetteCinkBlueprint
+        - id: Z14STShotgunFlechetteCinkBlueprint
           prob: 0.03
-        - id: ST545PCBoxCinkBlueprint
+        - id: Z14ST545PCBoxCinkBlueprint
           prob: 0.05
-        - id: ST918PBMBoxCinkBlueprint
+        - id: Z14ST918PBMBoxCinkBlueprint
           prob: 0.05
-        - id: ST919PBMBoxCinkBlueprint
+        - id: Z14ST919PBMBoxCinkBlueprint
           prob: 0.05
-        - id: ST754FMJBoxCinkBlueprint
+        - id: Z14ST754FMJBoxCinkBlueprint
           prob: 0.03
-        - id: ST556M855BoxCinkBlueprint
+        - id: Z14ST556M855BoxCinkBlueprint
           prob: 0.05
-        - id: ST725PSTBoxCinkBlueprint
+        - id: Z14ST725PSTBoxCinkBlueprint
           prob: 0.05
-        - id: ST739FMJBoxCinkBlueprint
+        - id: Z14ST739FMJBoxCinkBlueprint
           prob: 0.05
-        - id: ST751M80BoxCinkBlueprint
+        - id: Z14ST751M80BoxCinkBlueprint
           prob: 0.05
-        - id: STClothingOuterArmorLightPlateVestBasePSZ7Blueprint
+        - id: Z14STClothingOuterArmorLightPlateVestBasePSZ7Blueprint
           prob: 0.03
-        - id: ClothingOuterArmorSevaStalkerBlueprint
+        - id: Z14ClothingOuterArmorSevaStalkerBlueprint
           prob: 0.03
-        - id: STClothingOuterArmorLightPlateVestBaseANAgrayBlueprint
+        - id: Z14STClothingOuterArmorLightPlateVestBaseANAgrayBlueprint
           prob: 0.03
-        - id: ClothingOuterArmorStalkerBlueprint
+        - id: Z14ClothingOuterArmorStalkerBlueprint
           prob: 0.03
-        - id: ClothingHeadAssaultHelmetBlueprint
+        - id: Z14ClothingHeadAssaultHelmetBlueprint
           prob: 0.03
-        - id: ClothingHeadHelmetVityaz1CBlueprint
+        - id: Z14ClothingHeadHelmetVityaz1CBlueprint
           prob: 0.03
-        - id: STZoneArtifactDetectorSpruceBlueprint
+        - id: Z14STZoneArtifactDetectorSpruceBlueprint
           prob: 0.02
         - id: Z14STBrutepack
           prob: 0.3
@@ -141,7 +150,7 @@
         - id: Z14RGD5Grenade
           prob: 0.1
         # EN additions
-        - id: STCookingSnorkSoup
+        - id: Z14STCookingSnorkSoup
           prob: 0.05
         - id: Z14STDrinkJarDirtyWater
           prob: 0.08
@@ -155,9 +164,9 @@
           prob: 0.01
         - id: STDrinkJarJuicePotato
           prob: 0.01
-        - id: STCookingFermentedEel
+        - id: Z14STCookingFermentedEel
           prob: 0.02
-        - id: STCookingKvass
+        - id: Z14STCookingKvass
           prob: 0.04
         - id: MakeshiftArtContBlueprint
           prob: 0.05
@@ -275,23 +284,23 @@
           prob: 0.03
         - id: Z14STWeaponShotgunSaiga12Blueprint
           prob: 0.03
-        - id: ClothingBackpackDuffelRareStalkerBlueprint
+        - id: Z14ClothingBackpackDuffelRareStalkerBlueprint
           prob: 0.03
-        - id: ClothingHeadAssaultHelmetDeserterBlueprint
+        - id: Z14ClothingHeadAssaultHelmetDeserterBlueprint
           prob: 0.03
-        - id: ClothingOuterCoatLoyalistBlueprint
+        - id: Z14ClothingOuterCoatLoyalistBlueprint
           prob: 0.03
-        - id: ST45ACPAPBoxCinkBlueprint
+        - id: Z14ST45ACPAPBoxCinkBlueprint
           prob: 0.03
-        - id: ST45ACPRIPBoxCinkBlueprint
+        - id: Z14ST45ACPRIPBoxCinkBlueprint
           prob: 0.03
-        - id: STClothingHeadHelmetSeraphimAltinBlueprint
+        - id: Z14STClothingHeadHelmetSeraphimAltinBlueprint
           prob: 0.03
-        - id: STClothingOuterArmorSeraphimStrashBlueprint
+        - id: Z14STClothingOuterArmorSeraphimStrashBlueprint
           prob: 0.03
-        - id: STShotgunBulletBoxCinkBlueprint
+        - id: Z14STShotgunBulletBoxCinkBlueprint
           prob: 0.03
-        - id: TrashDetectorTier4Blueprint
+        - id: Z14TrashDetectorTier4Blueprint
           prob: 0.03
           
 - type: entity

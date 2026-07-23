@@ -4,7 +4,7 @@
     - Z14STClothingOuterHeavyRedut
   craftTime: 15
   items:
-    ClothingOuterArmorSTClothingOuterHeavyRedutBlueprint:
+    Z14ClothingOuterArmorSTClothingOuterHeavyRedutBlueprint:
       amount: 1
       catalyzer: true
     ToolkitTearTwo:

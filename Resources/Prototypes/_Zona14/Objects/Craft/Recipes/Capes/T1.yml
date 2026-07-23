@@ -4,7 +4,7 @@
   - Z14ClothingOuterCoatPahan
   craftTime: 10
   items:
-    ClothingOuterCoatPahanBlueprint:
+    Z14ClothingOuterCoatPahanBlueprint:
       amount: 1
       catalyzer: true
     Z14ClothingOuterCoatDoshdevik:
@@ -18,7 +18,7 @@
   - Z14ClothingOuterCoatDoshdevik
   craftTime: 10
   items:
-    ClothingOuterCoatDoshdevikBlueprint:
+    Z14ClothingOuterCoatDoshdevikBlueprint:
       amount: 1
       catalyzer: true
     STCraftCottonFabricT1:
@@ -30,7 +30,7 @@
   - Z14ClothingOuterCoatPoisk
   craftTime: 10
   items:
-    ClothingOuterCoatPoiskBlueprint:
+    Z14ClothingOuterCoatPoiskBlueprint:
       amount: 1
       catalyzer: true
     Z14ClothingOuterCoatDoshdevik:
