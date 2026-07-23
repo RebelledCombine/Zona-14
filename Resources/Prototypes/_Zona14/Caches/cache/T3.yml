@@ -147,6 +147,13 @@
           prob: 0.001
         - id: STCraftIndustrialThreadStaplesKitT4
           prob: 0.001
+        # Zona14: the only launch-reachable source of T5 steel. Per crafting-scheme.md
+        # an AP recipe costs "+1 sheet metal of the next tier up", so the three T4 AP
+        # ammo recipes (7.62x39 PC, 7.62x51 M61, 7.62x54 PC) need steel while every
+        # T4/T5 cache spawner still sits on a disabled map. Rarer than the T4 sheets
+        # above because it gates the AP tier rather than the base tier.
+        - id: STCraftSheetSteelT5
+          prob: 0.0005
         - id: Z14RGD5Grenade
           prob: 0.1
         # EN additions
