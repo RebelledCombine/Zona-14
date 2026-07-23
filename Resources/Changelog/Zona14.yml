@@ -534,4 +534,71 @@
   id: 49
   time: '2026-07-17T13:25:38Z'
   url: https://github.com/Zona-14/Zona-14/pull/72
+- author: RebelledCombine
+  changes:
+  - message: Dragging or throwing loaded backpacks and crates now counts their weight
+      against your carry limit, closing the no-weight loot-hauling exploit.
+    type: Fix
+  - message: Mutant corpses can now be dragged, and heavier mutants are harder to
+      haul.
+    type: Add
+  id: 50
+  time: '2026-07-18T16:35:20Z'
+  url: https://github.com/Zona-14/Zona-14/pull/73
+- author: RebelledCombine
+  changes:
+  - message: The air in the Zone can now hurt you. Contaminated areas, fire-anomaly
+      ash and chemical-anomaly gas deal damage that armour does not stop.
+    type: Add
+  - message: Gas masks now take replaceable filter cartridges that block airborne
+      hazards until they run out; a HUD gauge shows the remaining charge.
+    type: Add
+  - message: SEVA and scientist suits are closed-cycle and shrug off airborne hazards
+      without a filter, but only while fully sealed with the helmet deployed.
+    type: Add
+  id: 51
+  time: '2026-07-18T16:35:06Z'
+  url: https://github.com/Zona-14/Zona-14/pull/74
+- author: RebelledCombine
+  changes:
+  - message: Rebalanced all Zona-14 artifacts and made them spawn from anomalies in
+      the world.
+    type: Tweak
+  - message: Artifacts no longer irradiate the area around you; instead a rad-emitting
+      artifact only irradiates its wearer, reduced by armour, so carrying several
+      is survivable in the right gear.
+    type: Tweak
+  - message: "Radiation now ticks on the Cordon, Swamps and Darkscape maps \u2014\
+      \ armour gates how deep you can go."
+    type: Add
+  id: 52
+  time: '2026-07-18T16:34:53Z'
+  url: https://github.com/Zona-14/Zona-14/pull/75
+- author: RebelledCombine
+  changes:
+  - message: All armour now provides anomalous/radiation protection scaled to its
+      tier, so matching-tier armour lets you survive its own radiation zone.
+    type: Tweak
+  - message: Armour equip time reduced from 10s to 4s.
+    type: Tweak
+  - message: Armour is now bulky enough that you can't carry a spare set in a normal
+      backpack.
+    type: Tweak
+  id: 53
+  time: '2026-07-18T16:34:17Z'
+  url: https://github.com/Zona-14/Zona-14/pull/76
+- author: teecoding
+  changes:
+  - message: Removed the rank icon that appeared next to characters.
+    type: Remove
+  id: 54
+  time: '2026-07-18T13:21:36Z'
+  url: https://github.com/Zona-14/Zona-14/pull/77
+- author: pierow
+  changes:
+  - message: Map PDA program and paper map now exist.
+    type: Add
+  id: 55
+  time: '2026-07-19T16:41:21Z'
+  url: https://github.com/Zona-14/Zona-14/pull/79
 Order: 0
