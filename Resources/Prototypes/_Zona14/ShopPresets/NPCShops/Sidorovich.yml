@@ -180,12 +180,6 @@
 
         Z14STWeaponShotgunMP155T: 1250
 
-
-
-
-
-
-
         Z14STWeaponShotgunTOZ54: 1250
 
         Z14WeaponStalkerPistolTec9: 1250
@@ -203,13 +197,6 @@
         Z14STWeaponSMGVector9Black: 1250
 
         Z14STWeaponSMGVector9Forest: 1250
-
-
-
-
-
-
-
 
         Z14STWeaponShotgunCompact: 1250
 
@@ -230,7 +217,7 @@
         Z14StalkerBallBat: 50
         STThrowingknifeBlue: 250
         # Shotguns
-        Z14STWeaponShotgunTOZ34: 250 # T1
+        Z14STWeaponShotgunTOZ34: 250 # T2
         # Pistols
         Z14WeaponPistolStalkerPM: 50 #T1
         Z14WeaponPistolStalkerTT: 50 #T1
@@ -241,7 +228,6 @@
         Z14STWeaponSMGMP40: 1000
         Z14STWeaponSMGPPSh41: 2500
         Z14STWeaponSMGPP91: 3000
-        # Rifles
         # Snipers
 
     - name: shop-category-magazines
@@ -487,8 +473,6 @@
         # HANDS
         ClothingHandsGlovesFingerless: 30
         ClothingHandsGlovesMercFingerless: 60
-        # OUTERCLOTHING
-        # CLOAK
         # LEGS
         Z14ClothingLegsJeansBlue: 10
         Z14ClothingLegsJeansStalker: 10

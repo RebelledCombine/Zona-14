@@ -108,7 +108,6 @@
         # SMGs
         Z14STWeaponSMGMP5: 1800 # T3
         Z14STWeaponSMGThompson: 3800
-        # Nato Rifles
         # Snipers
 
     - name: shop-category-magazines
@@ -364,7 +363,6 @@
         # HANDS
         ClothingHandsGlovesFingerless: 30
         ClothingHandsGlovesMercFingerless: 60
-        # OUTERCLOTHING
         # CLOAK
         Z14ClothingCloakStalker: 30
         # LEGS

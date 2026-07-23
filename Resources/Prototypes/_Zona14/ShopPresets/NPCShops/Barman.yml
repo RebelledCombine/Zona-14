@@ -192,7 +192,6 @@
         STWeaponRevolverSWModel325: 1000
         STWeaponRevolverSWModel625: 1450
         STWeaponRevolverSWPC325TR: 350
-        # Shotguns
         # SMGs
         Z14STWeaponSMGMP5: 2600
         Z14STWeaponSMGPP19: 3300
@@ -499,8 +498,6 @@
         # HANDS
         ClothingHandsGlovesFingerless: 30
         ClothingHandsGlovesMercFingerless: 60
-        # OUTERCLOTHING
-        # CLOAK
         # LEGS
         Z14ClothingLegsJeansBlue: 10
         Z14ClothingLegsJeansStalker: 10

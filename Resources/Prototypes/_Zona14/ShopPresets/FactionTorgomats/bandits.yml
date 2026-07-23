@@ -155,7 +155,6 @@
         Z14STWeaponShotgunTOZ34: 100 # T2
         STWeaponShotgunMossbergM88: 500 # T2
         STWeaponShotgunMP153: 1000 # T3
-        # Rifles
         # SMGs
         Z14STWeaponSMGMP5: 2000
         Z14STWeaponSMGMP40: 500
@@ -408,7 +407,6 @@
         Z14ClothingMaskNeckBalaklava3: 10
         # faction
         Z14ClothingMaskSkull: 100
-        # NECK
         # faction
         Z14ClothingNeckScarfBandit: 100
         # TORSO
@@ -432,8 +430,6 @@
         Z14ClothingTorsoJacketAdidasRed: 5
         # HANDS
         ClothingHandsGlovesFingerless: 30
-        # OUTERCLOTHING
-        # CLOAK
         # LEGS
         Z14ClothingLegsJeansBlue: 10
         Z14ClothingLegsJeansStalker: 10

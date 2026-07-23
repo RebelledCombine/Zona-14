@@ -60,7 +60,6 @@
     Z14ZoneArtifactPellicle: 400
     Z14ZoneArtifactBaloon: 3600
 
-
 # MARK: Mutant Parts
      # Mutant parts
 
@@ -96,7 +95,6 @@
     MutantPartBurerBrain: 1000
     MutantPartControllerBrain: 2000
 
-
 # MARK: Items to Buy
   categories:
     - name: shop-category-weapons
@@ -117,7 +115,6 @@
         Z14STWeaponSMGVector9Forest: 1250
         Z14STWeaponShotgunCompact: 1250
         Z14STCombatKnife: 10
-        # Shotguns
         # Pistols
         Z14WeaponPistolStalkerGlock: 200
         STWeaponRevolverSWPC325TR: 350
@@ -361,8 +358,6 @@
         # HANDS
         ClothingHandsGlovesFingerless: 30
         ClothingHandsGlovesMercFingerless: 60
-        # OUTERCLOTHING
-        # CLOAK
         # LEGS
         Z14ClothingLegsJeansBlue: 10
         Z14ClothingLegsJeansStalker: 10

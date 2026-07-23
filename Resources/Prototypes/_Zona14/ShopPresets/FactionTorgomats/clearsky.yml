@@ -123,7 +123,6 @@
     STFishJellyfish: 600
     STFishPallidSturgeon: 1200
 
-    # Special
     # gonna need adjusting
     STJunkHardDrive: 750
     STJunkHardDriveBroken: 200
@@ -447,7 +446,6 @@
       # faction
       ClothingHandsGlovesLatex: 5
       ClothingHandsGlovesNitrile: 5
-      # OUTERCLOTHING
       # CLOAK
       Z14ClothingCloakStalker: 30
       # LEGS

@@ -52,7 +52,6 @@
         Z14WeaponPistolStalkerTT: 250
         # Shotguns
         Z14STWeaponShotgunTOZ34: 200
-        # Rifles
         # SMGs
         Z14STWeaponSMGPP91: 1200
         Z14STWeaponSMGStalkerCP2Veresk: 2000
@@ -305,8 +304,6 @@
         # HANDS
         ClothingHandsGlovesFingerless: 30
         ClothingHandsGlovesMercFingerless: 60
-        # OUTERCLOTHING
-        # CLOAK
         # faction
         Z14ClothingNeckCloakDolg: 250
         # LEGS

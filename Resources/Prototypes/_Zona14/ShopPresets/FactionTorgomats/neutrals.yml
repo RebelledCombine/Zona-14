@@ -126,13 +126,12 @@
       STWeaponRevolverSWPC325TR: 1000
       Z14WeaponPistolStalkerAPS: 900 # T2
       # Shotguns
-      Z14STWeaponShotgunTOZ34: 250 # T1
+      Z14STWeaponShotgunTOZ34: 250 # T2
       STWeaponShotgunMossbergM88: 650
       # SMGs
       Z14STWeaponSMGMP40: 1000
       Z14STWeaponSMGPPSh41: 2250
       Z14STWeaponSMGPP91: 2850
-      # Rifles
       # Snipers
 
   - name: shop-category-magazines
@@ -381,8 +380,6 @@
       # HANDS
       ClothingHandsGlovesFingerless: 30
       ClothingHandsGlovesMercFingerless: 60
-      # OUTERCLOTHING
-      # CLOAK
       # LEGS
       Z14ClothingLegsJeansBlue: 10
       Z14ClothingLegsJeansStalker: 10
