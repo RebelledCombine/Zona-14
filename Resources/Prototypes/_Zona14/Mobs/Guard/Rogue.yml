@@ -34,7 +34,7 @@
         Dead:
           Base: dead
     - type: Damageable
-      damageModifierSet: STRogueT3DamageModifierSet
+      damageModifierSet: Z14STRogueT3DamageModifierSet
     - type: Destructible
       thresholds:
         - trigger:
@@ -176,7 +176,7 @@
       availableModes:
         - SemiAuto
     - type: Damageable
-      damageModifierSet: STRogueT0DamageModifierSet
+      damageModifierSet: Z14STRogueT0DamageModifierSet
     
 - type: damageModifierSet
   id: Z14STRogueT0DamageModifierSet
@@ -222,7 +222,7 @@
       availableModes:
         - FullAuto
     - type: Damageable
-      damageModifierSet: STRogueT3DamageModifierSet
+      damageModifierSet: Z14STRogueT3DamageModifierSet
     - type: EmitSoundOnTrigger
       sound:
        collection: FreedomAttack
@@ -259,7 +259,7 @@
       availableModes:
         - FullAuto
     - type: Damageable
-      damageModifierSet: STRogueT3DamageModifierSet
+      damageModifierSet: Z14STRogueT3DamageModifierSet
     - type: EmitSoundOnTrigger
       sound:
        collection: DutyAttack
@@ -296,7 +296,7 @@
       availableModes:
         - FullAuto
     - type: Damageable
-      damageModifierSet: STRogueT3DamageModifierSet
+      damageModifierSet: Z14STRogueT3DamageModifierSet
     - type: EmitSoundOnTrigger
       sound:
        collection: MercAttack
@@ -345,7 +345,7 @@
       availableModes:
         - FullAuto
     - type: Damageable
-      damageModifierSet: STRogueT3DamageModifierSet
+      damageModifierSet: Z14STRogueT3DamageModifierSet
     - type: EmitSoundOnTrigger
       sound:
        collection: MilitaryAttack
