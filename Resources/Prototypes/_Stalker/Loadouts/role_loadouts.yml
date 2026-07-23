@@ -17,8 +17,7 @@
   - STStorage
   - STStorageAmmunition
   - STGlasses
-  - Z14StarterSuppliesGroup
-
+  - Z14StarterSuppliesGroup  # Zona14: added
 - type: roleLoadout
   id: JobStalkerMercenary
   groups:
@@ -109,8 +108,7 @@
   - STStorage
   - STStorageAmmunition
   - STGlasses
-  - Z14StarterSuppliesGroup
-
+  - Z14StarterSuppliesGroup  # Zona14: added
 - type: roleLoadout
   id: JobStalkerVeteran
   groups:
@@ -129,8 +127,7 @@
   - STStorage
   - STStorageAmmunition
   - STGlasses
-  - Z14StarterSuppliesGroup
-
+  - Z14StarterSuppliesGroup  # Zona14: added
 - type: roleLoadout
   id: JobStalkerGuide
   groups:
@@ -168,8 +165,7 @@
   - STStorageAmmunition
   - STGlasses
   - STOuterClothingBandit
-  - Z14StarterSuppliesGroup
-
+  - Z14StarterSuppliesGroup  # Zona14: added
 - type: roleLoadout
   id: JobStalkerHeadBandit
   groups:
@@ -188,8 +184,7 @@
   - STStorageAmmunition
   - STGlasses
   - STOuterClothingBandit
-  - Z14StarterSuppliesGroup
-
+  - Z14StarterSuppliesGroup  # Zona14: added
 # Zona14: Duty
 
 - type: roleLoadout
@@ -210,8 +205,7 @@
   - STStorageAmmunition
   - STGlasses
   - STOuterClothingDolg
-  - Z14StarterSuppliesGroup
-
+  - Z14StarterSuppliesGroup  # Zona14: added
 - type: roleLoadout
   id: JobStalkerNoviceDolg
   groups:
@@ -248,8 +242,7 @@
   - STStorageAmmunition
   - STGlasses
   - STOuterClothingDolg
-  - Z14StarterSuppliesGroup
-
+  - Z14StarterSuppliesGroup  # Zona14: added
 # Zona14: Freedom
 
 - type: roleLoadout
@@ -270,8 +263,7 @@
   - STStorageAmmunition
   - STGlasses
   - STOuterClothingFreedom
-  - Z14StarterSuppliesGroup
-
+  - Z14StarterSuppliesGroup  # Zona14: added
 - type: roleLoadout
   id: JobStalkerNoviceFreedom
   groups:
@@ -308,8 +300,7 @@
   - STStorageAmmunition
   - STGlasses
   - STOuterClothingFreedom
-  - Z14StarterSuppliesGroup
-
+  - Z14StarterSuppliesGroup  # Zona14: added
 # Zona14: Scientists
 
 - type: roleLoadout
@@ -330,8 +321,7 @@
   - STStorageAmmunition
   - STGlasses
   - STOuterClothingSci
-  - Z14StarterSuppliesGroup
-
+  - Z14StarterSuppliesGroup  # Zona14: added
 - type: roleLoadout
   id: Jobsci_decan
   groups:
@@ -350,8 +340,7 @@
   - STStorageAmmunition
   - STGlasses
   - STOuterClothingSci
-  - Z14StarterSuppliesGroup
-
+  - Z14StarterSuppliesGroup  # Zona14: added
 - type: roleLoadout
   id: Jobsci_rector
   groups:
@@ -370,8 +359,7 @@
   - STStorageAmmunition
   - STGlasses
   - STOuterClothingSci
-  - Z14StarterSuppliesGroup
-
+  - Z14StarterSuppliesGroup  # Zona14: added
 # Zona14: Seraphim
 
 - type: roleLoadout

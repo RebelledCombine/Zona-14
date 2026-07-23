@@ -88,8 +88,6 @@
     Z14ZoneArtifactBattery:
       amount: 1
 
-# ── batch: the remaining T3+ suits ──────────────────
-
 - type: craftRecipe
   id: Z14newrecipeClothingOuterArmorCN3b
   resultProtos:
