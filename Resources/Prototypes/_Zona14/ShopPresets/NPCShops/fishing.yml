@@ -60,8 +60,8 @@
     - name: Cooking
       priority: 3
       items:
-        STCookingFriedFish: 2000
-        STCookingFrogLegs: 2000
-        STCookingPreservedFishFillets: 1000
-        STCookingPreservedFishSteak: 2000
-        STCookingPreservedEel: 3000
+        Z14STCookingFriedFish: 2000
+        Z14STCookingFrogLegs: 2000
+        Z14STCookingPreservedFishFillets: 1000
+        Z14STCookingPreservedFishSteak: 2000
+        Z14STCookingPreservedEel: 3000

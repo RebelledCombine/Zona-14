@@ -396,7 +396,7 @@
         STModuleSilencerSMGT1: 600
         STModuleSniperSightT1: 600
         STModuleSilencerSniperT1: 400
-        STCookingPickledCherries: 2000
+        Z14STCookingPickledCherries: 2000
     - name: shop-category-raincoats-and-gasmasks
       priority: 12
       items:

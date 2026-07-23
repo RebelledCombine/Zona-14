@@ -194,7 +194,7 @@
       Z14ZoneArtifactDetectorSpruce: 3200 # T2
       Z14Veles: 6200 # T3
       Z14ZoneArtifactDetectorBarracuda: 5500 # T3
-      DetectorSvarogBlueprint: 5500
+      Z14DetectorSvarogBlueprint: 5500
       #RP Shit
       Z14BaseMachineAnomalyDestructorFolded: 500
       Z14BaseMachineAnomalyDestructorFolded1: 500
@@ -362,13 +362,13 @@
     items:
       # Tech cards
       TechCardCalibrationDosimeter: 100
-      STDetectorAD1Blueprint: 1000
-      STDetectorAD2Blueprint: 1000
-      STDetectorAD3Blueprint: 3000
+      Z14STDetectorAD1Blueprint: 1000
+      Z14STDetectorAD2Blueprint: 1000
+      Z14STDetectorAD3Blueprint: 3000
       STZoneArtifactDetectorBushBlueprint: 3000
       STZoneArtifactDetectorResponseBlueprint: 6000
       STZoneArtifactDetectorSpruceBlueprint: 12000
-      STZoneArtifactDetectorBarracudaBlueprint: 18000
-      STZoneArtifactDetectorBearBlueprint: 25000
-      STZoneArtifactDetectorWolfhoundBlueprint: 40000
+      Z14STZoneArtifactDetectorBarracudaBlueprint: 18000
+      Z14STZoneArtifactDetectorBearBlueprint: 25000
+      Z14STZoneArtifactDetectorWolfhoundBlueprint: 40000
 

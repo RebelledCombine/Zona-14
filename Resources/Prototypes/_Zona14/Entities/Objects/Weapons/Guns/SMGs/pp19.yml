@@ -30,7 +30,7 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: BizonMag
+        startingItem: Z14BizonMag
         insertSound: /Audio/_Stalker/Weapons/Guns/RifleGen/MagIn/rifle_magin.ogg
         ejectSound: /Audio/_Stalker/Weapons/Guns/RifleGen/MagOut/rifle_magout.ogg
         priority: 4
@@ -81,7 +81,7 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: BizonMag919
+        startingItem: Z14BizonMag919
         insertSound: /Audio/_Stalker/Weapons/Guns/RifleGen/MagIn/rifle_magin.ogg
         ejectSound: /Audio/_Stalker/Weapons/Guns/RifleGen/MagOut/rifle_magout.ogg
         priority: 4

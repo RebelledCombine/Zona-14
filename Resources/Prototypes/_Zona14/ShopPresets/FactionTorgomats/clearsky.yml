@@ -484,4 +484,4 @@
     priority: 13
     items:
       DetectorVelesBlueprint: 6500
-      DetectorSvarogBlueprint: 20000
+      Z14DetectorSvarogBlueprint: 20000

@@ -217,7 +217,7 @@
         Z14ZoneArtifactDetectorPulse: 50 # T1
         Z14ZoneArtifactDetectorResponse: 1000 # T2
         Z14ZoneArtifactDetectorSpruce: 4200
-        STZoneArtifactDetectorBarracudaBlueprint: 3000
+        Z14STZoneArtifactDetectorBarracudaBlueprint: 3000
     - name: shop-category-utilities
       priority: 8
       items:

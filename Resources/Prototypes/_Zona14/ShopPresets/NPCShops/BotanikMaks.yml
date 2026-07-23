@@ -30,6 +30,6 @@
   - name: shop-category-blueprints
     priority: 2
     items:
-      STCookingRice: 2000
+      Z14STCookingRice: 2000
       STCookingCabbageSoup: 2000
       STCookingKebabVeggie: 2000

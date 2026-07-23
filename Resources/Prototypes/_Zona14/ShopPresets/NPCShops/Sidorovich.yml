@@ -537,9 +537,9 @@
     - name: shop-category-blueprints
       priority: 13
       items:
-        STDetectorAD1Blueprint: 2000
+        Z14STDetectorAD1Blueprint: 2000
         STZoneArtifactDetectorBushBlueprint: 4000
         STZoneArtifactDetectorResponseBlueprint: 8000
         DetectorVelesBlueprint: 12000
         STClothingOuterJacketStalkerUpgradeBlueprint: 2000
-        ClothingOuterAnomalyStalkerJacketBlueprint: 2000
+        Z14ClothingOuterAnomalyStalkerJacketBlueprint: 2000

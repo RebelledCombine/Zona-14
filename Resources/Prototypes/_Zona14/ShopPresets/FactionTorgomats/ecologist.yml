@@ -415,17 +415,17 @@
       items:
         # Tech cards
         TechCardCalibrationDosimeter: 100
-        STDetectorAD1Blueprint: 1000
-        STDetectorAD2Blueprint: 1000
-        STDetectorAD3Blueprint: 3000
+        Z14STDetectorAD1Blueprint: 1000
+        Z14STDetectorAD2Blueprint: 1000
+        Z14STDetectorAD3Blueprint: 3000
         STZoneArtifactDetectorBushBlueprint: 3000
         ClothingEarsPsyHelmBlueprint: 5000
         STZoneArtifactDetectorResponseBlueprint: 6000
         STZoneArtifactDetectorSpruceBlueprint: 12000
         DetectorVelesBlueprint: 10000
-        STZoneArtifactDetectorBarracudaBlueprint: 18000
-        STZoneArtifactDetectorBearBlueprint: 25000
-        # STZoneArtifactDetectorWolfhoundBlueprint: 40000 Disabled for now
+        Z14STZoneArtifactDetectorBarracudaBlueprint: 18000
+        Z14STZoneArtifactDetectorBearBlueprint: 25000
+        # Z14STZoneArtifactDetectorWolfhoundBlueprint: 40000 Disabled for now
 
     - name: shop-category-entertainment
       priority: 13
