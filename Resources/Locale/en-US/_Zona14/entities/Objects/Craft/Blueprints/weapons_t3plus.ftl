@@ -325,7 +325,7 @@ ent-Z14STWeaponSniperSVDSBlueprint = SVDS (Dragunov Sniper Rifle) Recipe
     .desc = A zone entity.
     .suffix = Z14
 
-ent-Z14STWeaponSniperSVDSCovenantBlueprint = Covenant SVDS Sniper Rifle Recipe
+ent-Z14STWeaponSniperSVDSCovenantBlueprint = SVDS Sniper Rifle "Emerald" Recipe
     .desc = A zone entity.
     .suffix = Z14
 
