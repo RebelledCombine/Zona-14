@@ -64,8 +64,6 @@
   components:
   - type: STWeight
     self: 5
-  - type: GrantsArtifactSlots
-    slots: 4 # Stalker-Changes | Number of artifact slots this armor grants
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/outerClothing/renegate_il.rsi
   - type: Clothing
@@ -486,8 +484,6 @@
     blacklist:
       tags:
       - STArtifact
-  - type: GrantsArtifactSlots
-    slots: 4 # Stalker-Changes | Number of artifact slots this armor grants
   - type: ToggleableClothing
     clothingPrototype: Z14ClothingHeadHelmetHatMonolith
     slot: head
@@ -591,8 +587,6 @@
     sprite: _Stalker/Objects/Clothing/outerClothing/_Sera/strash_seraphim.rsi
   - type: Clothing
     sprite: _Stalker/Objects/Clothing/outerClothing/_Sera/strash_seraphim.rsi
-  - type: GrantsArtifactSlots
-    slots: 4 # Stalker-Changes | Number of artifact slots this armor grants
   - type: ContainerContainer
     containers:
       storagebase: !type:Container
@@ -626,8 +620,6 @@
     sprite: _Stalker/Objects/Clothing/outerClothing/_Sera/strash_limaphim.rsi
   - type: Clothing
     sprite: _Stalker/Objects/Clothing/outerClothing/_Sera/strash_limaphim.rsi
-  - type: GrantsArtifactSlots
-    slots: 4 # Stalker-Changes | Number of artifact slots this armor grants
 - type: entity
   parent: [ Z14ArmorBaseT3PvP, Z14STClothingOuterArmorSeraphimStrash ]
   id: Z14STClothingOuterArmorPeresvet

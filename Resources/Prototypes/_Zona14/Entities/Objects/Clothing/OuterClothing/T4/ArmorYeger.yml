@@ -15,8 +15,6 @@
   - type: ToggleableClothing
     clothingPrototype: Z14ClothingHeadHelmetYeger
     slot: head
-  - type: GrantsArtifactSlots
-    slots: 4 # Stalker-Changes | Number of artifact slots this armor grants
 - type: entity
   parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
   id: Z14ClothingHeadHelmetYeger

@@ -103,5 +103,3 @@
     sprite: _Stalker/Objects/Clothing/outerClothing/6B2_deserter.rsi
   - type: Clothing
     sprite: _Stalker/Objects/Clothing/outerClothing/6B2_deserter.rsi
-  - type: GrantsArtifactSlots
-    slots: 4 # Stalker-Changes | Number of artifact slots this armor grants

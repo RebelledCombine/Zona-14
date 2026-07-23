@@ -18,8 +18,6 @@
     slot: head
   - type: Armor
     armorClass: 0
-  - type: GrantsArtifactSlots
-    slots: 4 # Stalker-Changes | Number of artifact slots this armor grants
   - type: ClothingSpeedModifier
     walkModifier: 1
     sprintModifier: 1

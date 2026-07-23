@@ -59,8 +59,6 @@
       damage:
         types:
           Radiation: -0.25
-    - type: GrantsArtifactSlots
-      slots: 4 # Stalker-Changes | Number of artifact slots this armor grants
     - type: ContainerContainer
       containers:
         toggleable-clothing: !type:ContainerSlot {}

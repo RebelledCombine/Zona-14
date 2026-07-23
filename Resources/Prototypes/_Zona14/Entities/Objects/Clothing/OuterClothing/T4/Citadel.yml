@@ -12,5 +12,3 @@
     sprite: _Stalker/Objects/Clothing/outerClothing/plate_heavy_bandit.rsi
   - type: Clothing
     sprite: _Stalker/Objects/Clothing/outerClothing/plate_heavy_bandit.rsi
-  - type: GrantsArtifactSlots
-    slots: 4 # Stalker-Changes | Number of artifact slots this armor grants

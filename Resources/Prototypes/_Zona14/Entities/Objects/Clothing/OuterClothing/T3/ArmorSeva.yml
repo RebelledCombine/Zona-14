@@ -300,8 +300,6 @@
     self: 5
   - type: Armor
     armorClass: 0
-  - type: GrantsArtifactSlots
-    slots: 4 # Stalker-Changes | Number of artifact slots this armor grants
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/outerClothing/seva_poisk.rsi
   - type: Clothing
@@ -345,8 +343,6 @@
       self: 5
     - type: Armor
       armorClass: 0
-    - type: GrantsArtifactSlots
-      slots: 4 # Stalker-Changes | Number of artifact slots this armor grants
     - type: Sprite
       sprite: _Stalker/Objects/Clothing/outerClothing/seva_neutral.rsi
     - type: Clothing
@@ -400,8 +396,6 @@
   components:
     - type: Armor
       armorClass: 0
-    - type: GrantsArtifactSlots
-      slots: 4 # Stalker-Changes | Number of artifact slots this armor grants
     - type: STWeight
       self: 5
     - type: Sprite
@@ -444,8 +438,6 @@
     self: 5
   - type: Armor
     armorClass: 0
-  - type: GrantsArtifactSlots
-    slots: 4 # Stalker-Changes | Number of artifact slots this armor grants
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/outerClothing/seva_project.rsi
   - type: Clothing
@@ -558,8 +550,6 @@
       self: 5
     - type: Armor
       armorClass: 0
-    - type: GrantsArtifactSlots
-      slots: 4 # Stalker-Changes | Number of artifact slots this armor grants
     - type: Sprite
       sprite: _Stalker/Objects/Clothing/outerClothing/seva_renegat.rsi
     - type: Clothing

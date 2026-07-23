@@ -9,5 +9,3 @@
   components:
   - type: STWeight
     self: 5
-  - type: GrantsArtifactSlots
-    slots: 4 # Stalker-Changes | Number of artifact slots this armor grants

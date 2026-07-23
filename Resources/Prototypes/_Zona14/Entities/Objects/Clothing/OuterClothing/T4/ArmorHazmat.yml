@@ -44,7 +44,7 @@
       - Snout
 
 - type: entity
-  parent: Z14STClothingOuterArmorSevaBase
+  parent: [ Z14ArmorBaseT4PvE, Z14STClothingOuterArmorSevaBase ]
   id: Z14ClothingOuterArmorHazmatRfWhite
   categories: [ Zona14 ]
   name: armored HAZMAT
@@ -59,8 +59,6 @@
       sprite: _Stalker/Objects/Clothing/outerClothing/armored_hazmat_white.rsi
     - type: ToggleableClothing
       clothingPrototype: Z14ClothingHeadHazmatWhite
-    - type: GrantsArtifactSlots
-      slots: 5 # Stalker-Changes | Number of artifact slots this armor grants
 
 - type: entity
   parent: STClothingHeadHatBase

@@ -125,7 +125,7 @@
 # Renegates - 4 +
 
 - type: entity
-  parent: Z14STClothingOuterArmorZaryaBase
+  parent: [ Z14ArmorBaseT2PvP, Z14STClothingOuterArmorZaryaBase ]
   id: Z14ClothingOuterArmorZaryaRene
   categories: [ Zona14 ]
   suffix: Z14
@@ -138,8 +138,6 @@
     sprite: _Stalker/Objects/Clothing/outerClothing/rene_zarya.rsi
   - type: Clothing
     sprite: _Stalker/Objects/Clothing/outerClothing/rene_zarya.rsi
-  - type: GrantsArtifactSlots
-    slots: 4 # Stalker-Changes | Number of artifact slots this armor grants
 
 # Serafims - 3
 
@@ -277,8 +275,6 @@
     sprite: _Stalker/Objects/Clothing/outerClothing/zarya_stalker.rsi
   - type: Clothing
     sprite: _Stalker/Objects/Clothing/outerClothing/zarya_stalker.rsi
-  - type: GrantsArtifactSlots
-    slots: 4 # Stalker-Changes | Number of artifact slots this armor grants
 
 - type: entity
   parent: [ Z14ArmorBaseT2PvP, Z14STClothingOuterArmorZaryaBase ]
@@ -294,8 +290,6 @@
     sprite: _Stalker/Objects/Clothing/outerClothing/zarya_stalker.rsi
   - type: Clothing
     sprite: _Stalker/Objects/Clothing/outerClothing/zarya_stalker.rsi
-  - type: GrantsArtifactSlots
-    slots: 4 # Stalker-Changes | Number of artifact slots this armor grants
 
 # Mods
 

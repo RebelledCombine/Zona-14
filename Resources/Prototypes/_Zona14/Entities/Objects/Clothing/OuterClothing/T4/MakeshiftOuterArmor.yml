@@ -43,8 +43,6 @@
     blacklist:
       tags:
       - STArtifact
-  - type: GrantsArtifactSlots
-    slots: 4 # Stalker-Changes | Number of artifact slots this armor grants
 - type: entity
   parent: [ Z14ArmorBaseT3PvP, Z14ClothingOuterArmorStalkerCombatCN ]
   id: Z14ClothingOuterArmorCN3b

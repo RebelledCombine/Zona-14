@@ -38,8 +38,6 @@
   components:
   - type: STWeight
     self: 5
-  - type: GrantsArtifactSlots
-    slots: 4 # Stalker-Changes | Number of artifact slots this armor grants
   - type: Reflect
     reflectProb: 0.06
     spread: 360
@@ -72,8 +70,6 @@
   - type: ClothingSpeedModifier
     walkModifier: 1.1
     sprintModifier: 1.1
-  - type: GrantsArtifactSlots
-    slots: 4 # Stalker-Changes | Number of artifact slots this armor grants
 - type: entity
   parent: ClothingHeadHardsuitBase
   id: Z14STClothingHeadHardsuitGonchiy
