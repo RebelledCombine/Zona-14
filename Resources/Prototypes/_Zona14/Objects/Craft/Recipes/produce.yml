@@ -9,10 +9,16 @@
     STGauze:
       amount: 5
 
+# The berry pulps stay on the upstream ids, like Z14recipeFoodSTGauzeBarbaris above.
+# Nothing produces the Z14 pulp clones - every mortar-and-pestle lightcraft that makes a
+# pulp lives in _Stalker/LightCraftRecipes/produce.yml and grants the upstream id - so a
+# Z14 ingredient here matches nothing and the whole uni-pulp -> gauze chain goes dead.
+# Result ids are upstream for the same reason: identical ingredients AND identical output
+# make this a harmless duplicate of the upstream recipe rather than an ambiguous one.
 - type: craftRecipe
   id: Z14recipeStalkerFoodUniPulb
   resultProtos:
-    - Z14StalkerFoodUniPulb
+    - StalkerFoodUniPulb
   craftTime: 3
   items:
     StalkerFoodBarbarisPulb:
@@ -21,7 +27,7 @@
       amount: 1
     StalkerFoodIrgaPulb:
       amount: 1
-    Z14StalkerFoodVolkPulb:
+    StalkerFoodVolkPulb:
       amount: 1
 
 - type: craftRecipe
@@ -30,7 +36,7 @@
     - STGauzeUniversal
   craftTime: 3
   items:
-    Z14StalkerFoodUniPulb:
+    StalkerFoodUniPulb:
       amount: 1
     STGauze:
       amount: 5
