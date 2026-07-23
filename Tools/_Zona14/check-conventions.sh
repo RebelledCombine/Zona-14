@@ -36,6 +36,28 @@ else
     COMMIT_MSGS="$(git log --format=%B "$BASE..$HEAD" 2>/dev/null || echo "")"
     CHANGED_FILES="$(git diff --name-status "$BASE..$HEAD" 2>/dev/null || true)"
 fi
+
+# Normalise renames before anything reads CHANGED_FILES.
+#
+# git reports a rename as a three-field row "R<score>\told\tnew". Every check below
+# filters on a two-field "status\tpath" shape, and all but one accept only A/M (or D),
+# so an unnormalised R row is silently dropped - a renamed file could be edited without
+# a marker and sail through the §3 gate. Expand each rename into the two events it
+# actually is: the new path was added/modified, the old path was deleted.
+normalise_renames() {
+    local status path newpath
+    while IFS=$'\t' read -r status path newpath; do
+        [[ -z "${status:-}" ]] && continue
+        if [[ "$status" == R* && -n "${newpath:-}" ]]; then
+            printf 'M\t%s\n' "$newpath"
+            printf 'D\t%s\n' "$path"
+        else
+            printf '%s\t%s\n' "$status" "$path"
+        fi
+    done
+}
+CHANGED_FILES="$(normalise_renames <<<"$CHANGED_FILES")"
+
 PR_TITLE="${PR_TITLE:-}"
 
 is_upstream_port() {
@@ -61,8 +83,6 @@ warn() {
 # ============================================================
 check_namespace_alignment() {
     while IFS=$'\t' read -r status path newpath; do
-        # Renames arrive as "R<score>\told\tnew"; act on the new path.
-        [[ "${status:-}" == R* && -n "${newpath:-}" ]] && path="$newpath"
         [[ -z "${status:-}" ]] && continue
         [[ "$status" == A || "$status" == M ]] || continue
         [[ "$path" == *.cs ]] || continue
@@ -98,8 +118,6 @@ check_upstream_edit_marker() {
     is_upstream_port && return 0
 
     while IFS=$'\t' read -r status path newpath; do
-        # Renames arrive as "R<score>\told\tnew"; act on the new path.
-        [[ "${status:-}" == R* && -n "${newpath:-}" ]] && path="$newpath"
         [[ -z "${status:-}" ]] && continue
         [[ "$status" == A || "$status" == M ]] || continue
         [[ "$path" == *"/_Zona14/"* ]] && continue
@@ -141,8 +159,6 @@ check_upstream_edit_marker() {
 # ============================================================
 check_misfiled_namespace() {
     while IFS=$'\t' read -r status path newpath; do
-        # Renames arrive as "R<score>\told\tnew"; act on the new path.
-        [[ "${status:-}" == R* && -n "${newpath:-}" ]] && path="$newpath"
         [[ -z "${status:-}" ]] && continue
         [[ "$status" == A || "$status" == M ]] || continue
         [[ "$path" == *.cs ]] || continue
@@ -162,8 +178,6 @@ check_greenfield() {
     is_upstream_port && return 0
 
     while IFS=$'\t' read -r status path newpath; do
-        # Renames arrive as "R<score>\told\tnew"; act on the new path.
-        [[ "${status:-}" == R* && -n "${newpath:-}" ]] && path="$newpath"
         [[ -z "${status:-}" ]] && continue
         [[ "$status" == A ]] || continue
         [[ "$path" == *"/_Zona14/"* ]] && continue
@@ -187,8 +201,6 @@ check_greenfield() {
 # ============================================================
 check_key_file_delete() {
     while IFS=$'\t' read -r status path newpath; do
-        # Renames arrive as "R<score>\told\tnew"; act on the new path.
-        [[ "${status:-}" == R* && -n "${newpath:-}" ]] && path="$newpath"
         [[ "$status" == D ]] || continue
         case "$path" in
             README.md|README.ru.md|LICENSE.TXT|CONTRIBUTING.md|.github/PULL_REQUEST_TEMPLATE.md)
@@ -205,8 +217,6 @@ ALLOWED_LICENSES_RE='^(CC-BY-SA-3\.0|CC-BY-SA-4\.0|CC-BY-4\.0|CC0-1\.0|OFL-1\.1|
 
 check_meta_json_license() {
     while IFS=$'\t' read -r status path newpath; do
-        # Renames arrive as "R<score>\told\tnew"; act on the new path.
-        [[ "${status:-}" == R* && -n "${newpath:-}" ]] && path="$newpath"
         [[ -z "${status:-}" ]] && continue
         [[ "$status" == A || "$status" == M ]] || continue
         [[ "$path" == Resources/* ]] || continue
@@ -269,8 +279,6 @@ check_no_global_attempt_subscribers() {
 check_yaml_data_prototypes() {
     local yaml_files=()
     while IFS=$'\t' read -r status path newpath; do
-        # Renames arrive as "R<score>\told\tnew"; act on the new path.
-        [[ "${status:-}" == R* && -n "${newpath:-}" ]] && path="$newpath"
         [[ -z "${status:-}" ]] && continue
         [[ "$status" == A || "$status" == M || "$status" == R* ]] || continue
         [[ "$path" == *.yml || "$path" == *.yaml ]] || continue
